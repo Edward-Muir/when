@@ -84,12 +84,12 @@ export function formatYear(year: number): string {
 
 // Category color mapping
 const categoryColors: Record<Category, { bg: string; border: string }> = {
-  'conflict': { bg: 'bg-red-600', border: 'border-red-700' },
-  'disasters': { bg: 'bg-gray-700', border: 'border-gray-800' },
-  'exploration': { bg: 'bg-teal-600', border: 'border-teal-700' },
-  'cultural': { bg: 'bg-purple-600', border: 'border-purple-700' },
-  'infrastructure': { bg: 'bg-amber-600', border: 'border-amber-700' },
-  'diplomatic': { bg: 'bg-blue-600', border: 'border-blue-700' },
+  'conflict': { bg: 'bg-red-600', border: 'border-red-400' },
+  'disasters': { bg: 'bg-gray-700', border: 'border-gray-500' },
+  'exploration': { bg: 'bg-teal-600', border: 'border-teal-400' },
+  'cultural': { bg: 'bg-purple-600', border: 'border-purple-400' },
+  'infrastructure': { bg: 'bg-amber-600', border: 'border-amber-400' },
+  'diplomatic': { bg: 'bg-blue-600', border: 'border-blue-400' },
 };
 
 export function getCategoryColorClass(category: Category): string {

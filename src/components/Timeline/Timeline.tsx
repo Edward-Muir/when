@@ -64,14 +64,15 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
 
+      {/* Vertical timeline line - positioned to align with date ticks */}
+      <div className="absolute left-[calc(3.5rem+0.5rem+2px)] sm:left-[calc(4rem+0.5rem+2px)] top-0 bottom-0 w-1 bg-amber-400 rounded-full z-0" />
+
       {/* Scrollable timeline content */}
       <div
         ref={scrollRef}
-        className="h-full overflow-y-auto timeline-scroll-vertical py-12"
+        className="h-full overflow-y-auto timeline-scroll-vertical py-12 relative z-10"
       >
-        <div className="relative flex flex-col items-center min-h-full">
-          {/* Vertical connecting line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-amber-400 -translate-x-1/2 rounded-full" />
+        <div className="relative flex flex-col items-start min-h-full pl-2">
 
           {/* Top placement button */}
           <PlacementButton

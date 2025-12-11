@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { HistoricalEvent } from '../types';
-import { formatYear, getCategoryColorClass } from '../utils/gameLogic';
 import CategoryIcon from './CategoryIcon';
 
 interface CardProps {
   event: HistoricalEvent;
-  showYear: boolean;
   isRevealing?: boolean;
   className?: string;
   rotation?: number;
@@ -13,21 +11,32 @@ interface CardProps {
   size?: 'normal' | 'large';
 }
 
-const getCategoryRibbonColor = (category: string): string => {
+const getCategoryBorderColor = (category: string): string => {
   const colors: Record<string, string> = {
-    'conflict': 'bg-red-500',
-    'disasters': 'bg-gray-600',
-    'exploration': 'bg-teal-500',
-    'cultural': 'bg-purple-500',
-    'infrastructure': 'bg-amber-500',
-    'diplomatic': 'bg-blue-500',
+    'conflict': 'border-red-400',
+    'disasters': 'border-gray-500',
+    'exploration': 'border-teal-400',
+    'cultural': 'border-purple-400',
+    'infrastructure': 'border-amber-400',
+    'diplomatic': 'border-blue-400',
   };
-  return colors[category] || 'bg-gray-500';
+  return colors[category] || 'border-gray-400';
+};
+
+const getCategoryTitleBg = (category: string): string => {
+  const colors: Record<string, string> = {
+    'conflict': 'bg-red-100',
+    'disasters': 'bg-gray-200',
+    'exploration': 'bg-teal-100',
+    'cultural': 'bg-purple-100',
+    'infrastructure': 'bg-amber-100',
+    'diplomatic': 'bg-blue-100',
+  };
+  return colors[category] || 'bg-gray-100';
 };
 
 const Card: React.FC<CardProps> = ({
   event,
-  showYear,
   isRevealing = false,
   className = '',
   rotation = 0,
@@ -35,8 +44,8 @@ const Card: React.FC<CardProps> = ({
   size = 'normal',
 }) => {
   const [imageError, setImageError] = useState(false);
-  const bgColor = getCategoryColorClass(event.category);
-  const ribbonColor = getCategoryRibbonColor(event.category);
+  const borderColor = getCategoryBorderColor(event.category);
+  const titleBg = getCategoryTitleBg(event.category);
 
   const rotationStyle = {
     transform: `rotate(${rotation}deg)`,
@@ -46,78 +55,47 @@ const Card: React.FC<CardProps> = ({
 
   const sizeClasses = size === 'large'
     ? 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]'
-    : 'w-[119px] h-[161px] sm:w-[144px] sm:h-[194px]';
+    : 'w-[144px] h-[176px] sm:w-[160px] sm:h-[192px]';
 
   return (
     <div
       className={`
-        p-[3px] rounded-lg
-        bg-gradient-to-br from-amber-300 via-yellow-500 to-amber-600
-        shadow-card-rest
+        rounded-lg overflow-hidden
+        border-2 ${borderColor}
+        bg-white
+        shadow-md
         transition-all duration-fast
         ${isRevealing ? 'reveal-year' : ''}
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
+        ${sizeClasses}
+        flex flex-col
       `}
       style={rotationStyle}
       onClick={onClick}
     >
-      <div
-        className={`
-          relative rounded-md overflow-hidden
-          ${sizeClasses}
-          ${bgColor}
-          flex flex-col justify-between
-          card-worn-edge
-        `}
-      >
-        {/* Category ribbon */}
-        <div className={`absolute top-2 right-2 z-20 w-4 h-4 sm:w-5 sm:h-5 rounded-full ${ribbonColor} border-2 border-white/50 shadow-sm`} />
+      {/* Title bar at top */}
+      <div className={`${titleBg} px-2 py-1.5 border-b ${borderColor}`}>
+        <span className="text-sketch text-xs font-medium leading-tight line-clamp-2 block">
+          {event.friendly_name}
+        </span>
+      </div>
 
-        {/* Background image or category icon */}
+      {/* Image area - full opacity, no overlay */}
+      <div className="flex-1 relative">
         {hasImage ? (
-          <>
-            <img
-              src={event.image_url}
-              alt=""
-              loading="lazy"
-              onError={() => setImageError(true)}
-              className="absolute inset-0 w-full h-full object-cover opacity-60"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-          </>
+          <img
+            src={event.image_url}
+            alt=""
+            loading="lazy"
+            onError={() => setImageError(true)}
+            className="w-full h-full object-cover"
+          />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <CategoryIcon category={event.category} className="text-white" />
+          <div className="w-full h-full flex items-center justify-center bg-gray-100">
+            <CategoryIcon category={event.category} className="text-gray-400 w-12 h-12" />
           </div>
         )}
-
-        {/* Card content */}
-        <div className="relative z-10 flex-1 flex items-center justify-center p-2 sm:p-3">
-          <h3
-            className={`text-white text-center leading-tight ${size === 'large' ? 'text-lg sm:text-xl' : 'text-base sm:text-lg'}`}
-            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 1px 2px rgba(0,0,0,0.9)' }}
-          >
-            {event.friendly_name}
-          </h3>
-        </div>
-
-        {/* Year section */}
-        <div className={`
-          relative z-10 mx-2 mb-2 sm:mx-3 sm:mb-3
-          ${size === 'large' ? 'h-12 sm:h-14' : 'h-10 sm:h-12'}
-          rounded-md flex items-center justify-center
-          ${showYear ? 'bg-white/90' : 'bg-white/20 border-2 border-dashed border-white/40'}
-          transition-all duration-fast
-        `}>
-          {showYear ? (
-            <span className={`text-sketch font-bold ${size === 'large' ? 'text-xl sm:text-2xl' : 'text-lg sm:text-xl'}`}>
-              {formatYear(event.year)}
-            </span>
-          ) : (
-            <span className="text-white/60 text-lg">?</span>
-          )}
-        </div>
       </div>
     </div>
   );

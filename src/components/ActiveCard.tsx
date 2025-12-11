@@ -11,7 +11,6 @@ interface ActiveCardProps {
 
 const ActiveCard: React.FC<ActiveCardProps> = ({ event, onTap, lastResult, isAnimating }) => {
   const isRevealing = isAnimating && lastResult && !lastResult.success;
-  const showYear = Boolean(isRevealing);
 
   // Determine animation classes
   let animationClass = '';
@@ -29,7 +28,6 @@ const ActiveCard: React.FC<ActiveCardProps> = ({ event, onTap, lastResult, isAni
       <div className={`transition-all duration-300 ${animationClass}`}>
         <Card
           event={event}
-          showYear={showYear}
           isRevealing={Boolean(isRevealing)}
           size="normal"
           onClick={onTap}
