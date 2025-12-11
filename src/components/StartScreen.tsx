@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Clock, Play, ChevronRight } from 'lucide-react';
+import { Play, ChevronRight } from 'lucide-react';
 import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ERA_DEFINITIONS, ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
@@ -73,13 +73,8 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart, isLoading = false, a
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-cream">
       <div className="bg-paper rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
-        {/* Logo */}
-        <div className="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
-          <Clock className="w-12 h-12 text-white" />
-        </div>
-
         {/* Title */}
-        <h1 className="text-4xl font-bold text-sketch mb-2">When?</h1>
+        <h1 className="text-5xl font-bold text-sketch mb-2 mt-4">When?</h1>
         <p className="text-sketch/60 text-lg mb-8">The Timeline Game</p>
 
         {/* Instructions */}
