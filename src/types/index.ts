@@ -8,6 +8,15 @@ export type Category =
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
+export type Era = 'prehistory' | 'ancient' | 'medieval' | 'earlyModern' | 'industrial' | 'worldWars' | 'coldWar' | 'modern';
+
+export interface EraDefinition {
+  id: Era;
+  name: string;
+  startYear: number;
+  endYear: number;
+}
+
 export interface HistoricalEvent {
   name: string;           // Internal ID (e.g., "wwi-end")
   friendly_name: string;  // Display name (e.g., "World War I Ends")
@@ -44,4 +53,11 @@ export interface EventManifest {
     name: Category;
     files: string[];
   }[];
+}
+
+export interface GameConfig {
+  totalTurns: number;
+  selectedDifficulties: Difficulty[];
+  selectedCategories: Category[];
+  selectedEras: Era[];
 }

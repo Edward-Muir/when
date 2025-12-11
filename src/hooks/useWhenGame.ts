@@ -1,13 +1,14 @@
 import { useState, useCallback, useEffect } from 'react';
-import { HistoricalEvent, WhenGameState, PlacementResult } from '../types';
-import { loadAllEvents } from '../utils/eventLoader';
+import { HistoricalEvent, WhenGameState, PlacementResult, GameConfig } from '../types';
+import { loadAllEvents, filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import { shuffleArray, sortByYear, isPlacementCorrect, findCorrectPosition, insertIntoTimeline } from '../utils/gameLogic';
 
 const DEFAULT_TOTAL_TURNS = 8;
 
 interface UseWhenGameReturn {
   state: WhenGameState;
-  startGame: (totalTurns?: number) => void;
+  allEvents: HistoricalEvent[];
+  startGame: (config: GameConfig) => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
   resetGame: () => void;
   clearLastResult: () => void;
@@ -42,15 +43,22 @@ export function useWhenGame(): UseWhenGameReturn {
     });
   }, []);
 
-  const startGame = useCallback((totalTurns: number = DEFAULT_TOTAL_TURNS) => {
-    if (allEvents.length < totalTurns + 1) {
+  const startGame = useCallback((config: GameConfig) => {
+    const { totalTurns, selectedDifficulties, selectedCategories, selectedEras } = config;
+
+    // Apply filters to get available events
+    let filteredEvents = filterByDifficulty(allEvents, selectedDifficulties);
+    filteredEvents = filterByCategory(filteredEvents, selectedCategories);
+    filteredEvents = filterByEra(filteredEvents, selectedEras);
+
+    if (filteredEvents.length < totalTurns + 1) {
       console.error('Not enough events to start the game');
       return;
     }
 
-    const shuffled = shuffleArray(allEvents);
+    const shuffled = shuffleArray(filteredEvents);
 
-    // Pick 1 event for the starting timeline
+    // Pick 1 event for the starting timeline (always 1)
     const timelineEvents = sortByYear([shuffled[0]]);
 
     // Take totalTurns cards for the deck (cards to play)
@@ -143,6 +151,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
   return {
     state,
+    allEvents,
     startGame,
     placeCard,
     resetGame,

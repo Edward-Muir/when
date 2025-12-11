@@ -19,6 +19,23 @@ const Timeline: React.FC<TimelineProps> = ({
   newEventName,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const hasInitialScrolled = useRef(false);
+
+  // Center the timeline content vertically on initial load
+  useEffect(() => {
+    if (!hasInitialScrolled.current && scrollRef.current && events.length > 0) {
+      // Small delay to allow the DOM to render
+      setTimeout(() => {
+        const container = scrollRef.current;
+        if (container) {
+          // Scroll to center the content vertically
+          const scrollTop = (container.scrollHeight - container.clientHeight) / 2;
+          container.scrollTop = scrollTop;
+          hasInitialScrolled.current = true;
+        }
+      }, 50);
+    }
+  }, [events.length]);
 
   // Auto-scroll to show the new event when added
   useEffect(() => {

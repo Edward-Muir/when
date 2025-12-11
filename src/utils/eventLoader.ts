@@ -1,4 +1,5 @@
-import { HistoricalEvent, EventManifest } from '../types';
+import { HistoricalEvent, EventManifest, Difficulty, Category, Era } from '../types';
+import { ERA_DEFINITIONS } from './eras';
 
 /**
  * Loads all historical events from JSON files in the public/events directory.
@@ -51,4 +52,39 @@ function deduplicateEvents(events: HistoricalEvent[]): HistoricalEvent[] {
   }
 
   return unique;
+}
+
+/**
+ * Filter events by difficulty
+ */
+export function filterByDifficulty(
+  events: HistoricalEvent[],
+  difficulties: Difficulty[]
+): HistoricalEvent[] {
+  return events.filter((e) => difficulties.includes(e.difficulty));
+}
+
+/**
+ * Filter events by category
+ */
+export function filterByCategory(
+  events: HistoricalEvent[],
+  categories: Category[]
+): HistoricalEvent[] {
+  return events.filter((e) => categories.includes(e.category));
+}
+
+/**
+ * Filter events by era (time period)
+ */
+export function filterByEra(
+  events: HistoricalEvent[],
+  eras: Era[]
+): HistoricalEvent[] {
+  return events.filter((event) => {
+    return eras.some((era) => {
+      const def = ERA_DEFINITIONS.find((d) => d.id === era);
+      return def && event.year >= def.startYear && event.year <= def.endYear;
+    });
+  });
 }

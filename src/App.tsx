@@ -1,5 +1,6 @@
 import React from 'react';
 import { useWhenGame } from './hooks/useWhenGame';
+import { GameConfig } from './types';
 import StartScreen from './components/StartScreen';
 import Game from './components/Game';
 import GameOver from './components/GameOver';
@@ -7,6 +8,7 @@ import GameOver from './components/GameOver';
 function App() {
   const {
     state,
+    allEvents,
     startGame,
     placeCard,
     resetGame,
@@ -15,8 +17,8 @@ function App() {
     closeModal,
   } = useWhenGame();
 
-  const handleStart = () => {
-    startGame(8); // 8 turns
+  const handleStart = (config: GameConfig) => {
+    startGame(config);
   };
 
   const handlePlayAgain = () => {
@@ -26,14 +28,14 @@ function App() {
   // Loading state
   if (state.phase === 'loading') {
     return (
-      <StartScreen onStart={handleStart} isLoading={true} />
+      <StartScreen onStart={handleStart} isLoading={true} allEvents={allEvents} />
     );
   }
 
   // Ready to start
   if (state.phase === 'ready') {
     return (
-      <StartScreen onStart={handleStart} />
+      <StartScreen onStart={handleStart} allEvents={allEvents} />
     );
   }
 
