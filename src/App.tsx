@@ -3,7 +3,6 @@ import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
 import StartScreen from './components/StartScreen';
 import Game from './components/Game';
-import GameOver from './components/GameOver';
 
 function App() {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
@@ -31,6 +30,7 @@ function App() {
     startGame,
     placeCard,
     resetGame,
+    restartGame,
     modalEvent,
     openModal,
     closeModal,
@@ -58,18 +58,7 @@ function App() {
     );
   }
 
-  // Game over
-  if (state.phase === 'gameOver') {
-    return (
-      <GameOver
-        score={state.correctPlacements}
-        total={state.totalTurns}
-        onPlayAgain={handlePlayAgain}
-      />
-    );
-  }
-
-  // Playing
+  // Playing or Game Over - show game with timeline visible
   return (
     <Game
       state={state}
@@ -77,6 +66,8 @@ function App() {
       modalEvent={modalEvent}
       openModal={openModal}
       closeModal={closeModal}
+      onRestart={restartGame}
+      onNewGame={handlePlayAgain}
     />
   );
 }

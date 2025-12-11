@@ -29,6 +29,8 @@ body {
 
 #root {
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 /* Safe area padding utilities */

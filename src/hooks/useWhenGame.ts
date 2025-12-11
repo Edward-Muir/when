@@ -11,6 +11,7 @@ interface UseWhenGameReturn {
   startGame: (config: GameConfig) => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
   resetGame: () => void;
+  restartGame: () => void;
   clearLastResult: () => void;
   // Modal state
   modalEvent: HistoricalEvent | null;
@@ -28,6 +29,7 @@ const initialState: WhenGameState = {
   correctPlacements: 0,
   lastPlacementResult: null,
   isAnimating: false,
+  lastConfig: null,
 };
 
 export function useWhenGame(): UseWhenGameReturn {
@@ -77,6 +79,7 @@ export function useWhenGame(): UseWhenGameReturn {
       correctPlacements: 0,
       lastPlacementResult: null,
       isAnimating: false,
+      lastConfig: config,
     });
   }, [allEvents]);
 
@@ -141,6 +144,12 @@ export function useWhenGame(): UseWhenGameReturn {
     setState({ ...initialState, phase: 'ready' });
   }, []);
 
+  const restartGame = useCallback(() => {
+    if (state.lastConfig) {
+      startGame(state.lastConfig);
+    }
+  }, [state.lastConfig, startGame]);
+
   const openModal = useCallback((event: HistoricalEvent) => {
     setModalEvent(event);
   }, []);
@@ -155,6 +164,7 @@ export function useWhenGame(): UseWhenGameReturn {
     startGame,
     placeCard,
     resetGame,
+    restartGame,
     clearLastResult,
     modalEvent,
     openModal,

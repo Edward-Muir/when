@@ -72,7 +72,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart, isLoading = false, a
 
   return (
     <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-6 bg-cream pt-safe pb-safe overflow-auto">
-      <div className="bg-paper rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
+      <div className="bg-paper rounded-2xl shadow-xl p-8 max-w-md w-full text-center relative z-10">
         {/* Title */}
         <h1 className="text-5xl font-bold text-sketch mb-2 mt-4">When?</h1>
         <p className="text-sketch/60 text-lg mb-8">The Timeline Game</p>

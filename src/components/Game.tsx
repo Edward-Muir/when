@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ConfettiExplosion from 'react-confetti-explosion';
+import { RotateCcw, Settings } from 'lucide-react';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
 import Header from './Header';
 import ActiveCard from './ActiveCard';
@@ -12,6 +13,8 @@ interface GameProps {
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
+  onRestart: () => void;
+  onNewGame: () => void;
 }
 
 const Game: React.FC<GameProps> = ({
@@ -20,6 +23,8 @@ const Game: React.FC<GameProps> = ({
   modalEvent,
   openModal,
   closeModal,
+  onRestart,
+  onNewGame,
 }) => {
   const [showConfetti, setShowConfetti] = useState(false);
   const [screenShake, setScreenShake] = useState(false);
@@ -79,19 +84,57 @@ const Game: React.FC<GameProps> = ({
           currentTurn={state.currentTurn}
           totalTurns={state.totalTurns}
           correctPlacements={state.correctPlacements}
+          isGameOver={state.phase === 'gameOver'}
         />
 
-        {/* Spacer to push active card to bottom */}
+        {/* Spacer to push content to bottom */}
         <div className="flex-1" />
 
-        {/* Active Card Area */}
-        {state.activeCard && (
-          <ActiveCard
-            event={state.activeCard}
-            onTap={handleActiveCardTap}
-            lastResult={state.lastPlacementResult}
-            isAnimating={state.isAnimating}
-          />
+        {/* Active Card Area (during play) or Game Over Controls */}
+        {state.phase === 'gameOver' ? (
+          <div className="flex flex-col gap-3">
+            <button
+              onClick={onRestart}
+              className="
+                w-full py-3 px-4
+                bg-gradient-to-r from-amber-500 to-amber-600
+                hover:from-amber-600 hover:to-amber-700
+                text-white text-sm font-medium
+                rounded-xl shadow-lg
+                transition-all duration-200
+                flex items-center justify-center gap-2
+                active:scale-95
+              "
+            >
+              <RotateCcw className="w-4 h-4" />
+              Restart
+            </button>
+            <button
+              onClick={onNewGame}
+              className="
+                w-full py-3 px-4
+                bg-paper border border-amber-300
+                hover:bg-amber-50
+                text-sketch text-sm font-medium
+                rounded-xl shadow
+                transition-all duration-200
+                flex items-center justify-center gap-2
+                active:scale-95
+              "
+            >
+              <Settings className="w-4 h-4" />
+              New Game
+            </button>
+          </div>
+        ) : (
+          state.activeCard && (
+            <ActiveCard
+              event={state.activeCard}
+              onTap={handleActiveCardTap}
+              lastResult={state.lastPlacementResult}
+              isAnimating={state.isAnimating}
+            />
+          )
         )}
       </div>
 

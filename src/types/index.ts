@@ -46,6 +46,7 @@ export interface WhenGameState {
   correctPlacements: number;
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
+  lastConfig: GameConfig | null;
 }
 
 export interface EventManifest {
