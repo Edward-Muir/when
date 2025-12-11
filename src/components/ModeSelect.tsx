@@ -104,9 +104,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         <div className="bg-paper rounded-2xl shadow-xl p-6 max-w-sm w-full text-center">
           <h1 className="text-4xl font-bold text-sketch mb-1">When?</h1>
           <p className="text-sketch/60 text-sm mb-6">The Timeline Game</p>
-          <div className="flex items-center justify-center gap-2 text-sketch/60 text-sm">
-            <div className="w-4 h-4 border-2 border-amber-500/30 border-t-amber-500 rounded-full animate-spin" />
-            Loading...
+          <div className="text-xl font-medium text-sketch mb-2">Loading historical events...</div>
+          <div className="animate-pulse text-sm text-sketch/60">
+            Gathering history from across time
           </div>
         </div>
       </div>
