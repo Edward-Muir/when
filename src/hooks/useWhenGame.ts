@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { HistoricalEvent, WhenGameState, PlacementResult, GameConfig } from '../types';
 import { loadAllEvents, filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-import { shuffleArray, sortByYear, isPlacementCorrect, findCorrectPosition, insertIntoTimeline } from '../utils/gameLogic';
+import { shuffleArray, shuffleArraySeeded, sortByYear, isPlacementCorrect, findCorrectPosition, insertIntoTimeline } from '../utils/gameLogic';
 
 const DEFAULT_TOTAL_TURNS = 8;
 
@@ -21,6 +21,7 @@ interface UseWhenGameReturn {
 
 const initialState: WhenGameState = {
   phase: 'loading',
+  gameMode: null,
   timeline: [],
   activeCard: null,
   deck: [],
@@ -41,41 +42,51 @@ export function useWhenGame(): UseWhenGameReturn {
   useEffect(() => {
     loadAllEvents().then((events) => {
       setAllEvents(events);
-      setState((prev) => ({ ...prev, phase: 'ready' }));
+      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
     });
   }, []);
 
   const startGame = useCallback((config: GameConfig) => {
-    const { totalTurns, selectedDifficulties, selectedCategories, selectedEras } = config;
+    const { mode, totalTurns, selectedDifficulties, selectedCategories, selectedEras, dailySeed } = config;
 
     // Apply filters to get available events
     let filteredEvents = filterByDifficulty(allEvents, selectedDifficulties);
     filteredEvents = filterByCategory(filteredEvents, selectedCategories);
     filteredEvents = filterByEra(filteredEvents, selectedEras);
 
-    if (filteredEvents.length < totalTurns + 1) {
+    // For sudden death, we need at least 2 cards
+    const minRequired = mode === 'suddenDeath' ? 2 : totalTurns + 1;
+    if (filteredEvents.length < minRequired) {
       console.error('Not enough events to start the game');
       return;
     }
 
-    const shuffled = shuffleArray(filteredEvents);
+    // Use seeded shuffle for daily mode, regular shuffle otherwise
+    const shuffled = mode === 'daily' && dailySeed
+      ? shuffleArraySeeded(filteredEvents, dailySeed)
+      : shuffleArray(filteredEvents);
 
     // Pick 1 event for the starting timeline (always 1)
     const timelineEvents = sortByYear([shuffled[0]]);
 
-    // Take totalTurns cards for the deck (cards to play)
-    const deckEvents = shuffled.slice(1, totalTurns + 1);
+    // For sudden death, use all remaining cards; otherwise use totalTurns
+    const deckSize = mode === 'suddenDeath' ? shuffled.length - 1 : totalTurns;
+    const deckEvents = shuffled.slice(1, deckSize + 1);
 
     // First card becomes the active card
     const [firstCard, ...remainingDeck] = deckEvents;
 
+    // For sudden death, totalTurns is effectively the deck size (for display purposes)
+    const effectiveTotalTurns = mode === 'suddenDeath' ? deckEvents.length : totalTurns;
+
     setState({
       phase: 'playing',
+      gameMode: mode,
       timeline: timelineEvents,
       activeCard: firstCard,
       deck: remainingDeck,
       currentTurn: 1,
-      totalTurns,
+      totalTurns: effectiveTotalTurns,
       correctPlacements: 0,
       lastPlacementResult: null,
       isAnimating: false,
@@ -117,7 +128,15 @@ export function useWhenGame(): UseWhenGameReturn {
         // Draw next card
         const [nextCard, ...remainingDeck] = prev.deck;
         const newTurn = prev.currentTurn + 1;
-        const isGameOver = newTurn > prev.totalTurns;
+
+        // Determine if game is over
+        // Sudden death: game over on first wrong answer OR if no more cards
+        // Other modes: game over when turns are exhausted
+        const isSuddenDeath = prev.gameMode === 'suddenDeath';
+        const suddenDeathLoss = isSuddenDeath && !isCorrect;
+        const noMoreCards = !nextCard && remainingDeck.length === 0;
+        const turnsExhausted = newTurn > prev.totalTurns;
+        const isGameOver = suddenDeathLoss || noMoreCards || (!isSuddenDeath && turnsExhausted);
 
         return {
           ...prev,
@@ -141,7 +160,7 @@ export function useWhenGame(): UseWhenGameReturn {
   }, []);
 
   const resetGame = useCallback(() => {
-    setState({ ...initialState, phase: 'ready' });
+    setState({ ...initialState, phase: 'modeSelect' });
   }, []);
 
   const restartGame = useCallback(() => {

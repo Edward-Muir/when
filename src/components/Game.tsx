@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Settings } from 'lucide-react';
+import { RotateCcw, Home, Share2 } from 'lucide-react';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
 import Header from './Header';
 import ActiveCard from './ActiveCard';
@@ -85,6 +85,7 @@ const Game: React.FC<GameProps> = ({
           totalTurns={state.totalTurns}
           correctPlacements={state.correctPlacements}
           isGameOver={state.phase === 'gameOver'}
+          gameMode={state.gameMode}
         />
 
         {/* Spacer to push content to bottom */}
@@ -93,12 +94,16 @@ const Game: React.FC<GameProps> = ({
         {/* Active Card Area (during play) or Game Over Controls */}
         {state.phase === 'gameOver' ? (
           <div className="flex flex-col gap-3">
+            {/* Share button - for all modes */}
             <button
-              onClick={onRestart}
+              onClick={() => {
+                // Placeholder - share functionality to be implemented
+                console.log('Share clicked');
+              }}
               className="
                 w-full py-3 px-4
-                bg-gradient-to-r from-amber-500 to-amber-600
-                hover:from-amber-600 hover:to-amber-700
+                bg-gradient-to-r from-blue-500 to-blue-600
+                hover:from-blue-600 hover:to-blue-700
                 text-white text-sm font-medium
                 rounded-xl shadow-lg
                 transition-all duration-200
@@ -106,9 +111,31 @@ const Game: React.FC<GameProps> = ({
                 active:scale-95
               "
             >
-              <RotateCcw className="w-4 h-4" />
-              Restart
+              <Share2 className="w-4 h-4" />
+              Share
             </button>
+
+            {/* Restart button - only for sudden death and freeplay */}
+            {state.gameMode !== 'daily' && (
+              <button
+                onClick={onRestart}
+                className="
+                  w-full py-3 px-4
+                  bg-gradient-to-r from-amber-500 to-amber-600
+                  hover:from-amber-600 hover:to-amber-700
+                  text-white text-sm font-medium
+                  rounded-xl shadow-lg
+                  transition-all duration-200
+                  flex items-center justify-center gap-2
+                  active:scale-95
+                "
+              >
+                <RotateCcw className="w-4 h-4" />
+                Restart
+              </button>
+            )}
+
+            {/* Home button - for all modes */}
             <button
               onClick={onNewGame}
               className="
@@ -122,8 +149,8 @@ const Game: React.FC<GameProps> = ({
                 active:scale-95
               "
             >
-              <Settings className="w-4 h-4" />
-              New Game
+              <Home className="w-4 h-4" />
+              Home
             </button>
           </div>
         ) : (

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
-import StartScreen from './components/StartScreen';
+import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 
 function App() {
@@ -44,17 +44,14 @@ function App() {
     resetGame();
   };
 
-  // Loading state
-  if (state.phase === 'loading') {
+  // Loading state or mode selection
+  if (state.phase === 'loading' || state.phase === 'modeSelect') {
     return (
-      <StartScreen onStart={handleStart} isLoading={true} allEvents={allEvents} />
-    );
-  }
-
-  // Ready to start
-  if (state.phase === 'ready') {
-    return (
-      <StartScreen onStart={handleStart} allEvents={allEvents} />
+      <ModeSelect
+        onStart={handleStart}
+        isLoading={state.phase === 'loading'}
+        allEvents={allEvents}
+      />
     );
   }
 

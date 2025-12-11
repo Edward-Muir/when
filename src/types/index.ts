@@ -10,6 +10,8 @@ export type Difficulty = 'easy' | 'medium' | 'hard';
 
 export type Era = 'prehistory' | 'ancient' | 'medieval' | 'earlyModern' | 'industrial' | 'worldWars' | 'coldWar' | 'modern';
 
+export type GameMode = 'daily' | 'suddenDeath' | 'freeplay';
+
 export interface EraDefinition {
   id: Era;
   name: string;
@@ -27,7 +29,7 @@ export interface HistoricalEvent {
   image_url?: string;     // Optional Wikipedia thumbnail URL
 }
 
-export type GamePhase = 'loading' | 'ready' | 'playing' | 'gameOver';
+export type GamePhase = 'loading' | 'modeSelect' | 'playing' | 'gameOver';
 
 export interface PlacementResult {
   success: boolean;
@@ -38,6 +40,7 @@ export interface PlacementResult {
 
 export interface WhenGameState {
   phase: GamePhase;
+  gameMode: GameMode | null;
   timeline: HistoricalEvent[];
   activeCard: HistoricalEvent | null;
   deck: HistoricalEvent[];
@@ -57,8 +60,10 @@ export interface EventManifest {
 }
 
 export interface GameConfig {
+  mode: GameMode;
   totalTurns: number;
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];
+  dailySeed?: string;
 }

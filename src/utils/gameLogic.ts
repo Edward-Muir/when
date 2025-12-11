@@ -10,6 +10,42 @@ export function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
+// Seeded random number generator (mulberry32)
+function seededRandom(seed: number): () => number {
+  return function() {
+    // eslint-disable-next-line no-mixed-operators
+    let t = seed += 0x6D2B79F5;
+    // eslint-disable-next-line no-mixed-operators
+    t = Math.imul((t ^ (t >>> 15)), t | 1);
+    // eslint-disable-next-line no-mixed-operators
+    t ^= t + Math.imul((t ^ (t >>> 7)), t | 61);
+    // eslint-disable-next-line no-mixed-operators
+    return (((t ^ (t >>> 14))) >>> 0) / 4294967296;
+  };
+}
+
+// Convert string to numeric seed
+function stringToSeed(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash = hash & hash;
+  }
+  return Math.abs(hash);
+}
+
+// Seeded Fisher-Yates shuffle for reproducible results
+export function shuffleArraySeeded<T>(array: T[], seed: string): T[] {
+  const shuffled = [...array];
+  const random = seededRandom(stringToSeed(seed));
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 // Sort events by year
 export function sortByYear(events: HistoricalEvent[]): HistoricalEvent[] {
   return [...events].sort((a, b) => a.year - b.year);
