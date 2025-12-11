@@ -27,7 +27,7 @@ const GameOver: React.FC<GameOverProps> = ({ score, total, onPlayAgain }) => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-cream">
+    <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-6 bg-cream pt-safe pb-safe">
       <div className="bg-paper rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
         {/* Trophy icon */}
         <div className="w-20 h-20 mx-auto mb-4 bg-amber-100 rounded-full flex items-center justify-center">

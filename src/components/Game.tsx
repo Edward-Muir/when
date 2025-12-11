@@ -59,7 +59,7 @@ const Game: React.FC<GameProps> = ({
     : false;
 
   return (
-    <div className={`h-screen flex flex-row bg-cream ${screenShake ? 'animate-screen-shake' : ''}`}>
+    <div className={`h-dvh min-h-screen-safe flex flex-row bg-cream overflow-hidden pt-safe pb-safe ${screenShake ? 'animate-screen-shake' : ''}`}>
       {/* Confetti */}
       {showConfetti && (
         <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">

@@ -71,7 +71,7 @@ const StartScreen: React.FC<StartScreenProps> = ({ onStart, isLoading = false, a
   const isValid = selectedDifficulties.length > 0 && selectedCategories.length > 0 && selectedEras.length > 0 && hasEnoughCards;
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-cream">
+    <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-6 bg-cream pt-safe pb-safe overflow-auto">
       <div className="bg-paper rounded-2xl shadow-xl p-8 max-w-md w-full text-center">
         {/* Title */}
         <h1 className="text-5xl font-bold text-sketch mb-2 mt-4">When?</h1>

@@ -5,6 +5,18 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        'dvh': '100dvh',
+        'screen-safe': 'calc(var(--vh, 1vh) * 100)',
+      },
+      minHeight: {
+        'dvh': '100dvh',
+        'screen-safe': 'calc(var(--vh, 1vh) * 100)',
+      },
+      padding: {
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
+      },
       transitionDuration: {
         'DEFAULT': '150ms',
         'fast': '150ms',
