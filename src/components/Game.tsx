@@ -59,7 +59,7 @@ const Game: React.FC<GameProps> = ({
     : false;
 
   return (
-    <div className={`h-screen flex flex-col bg-cream ${screenShake ? 'animate-screen-shake' : ''}`}>
+    <div className={`h-screen flex flex-row bg-cream ${screenShake ? 'animate-screen-shake' : ''}`}>
       {/* Confetti */}
       {showConfetti && (
         <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
@@ -72,33 +72,39 @@ const Game: React.FC<GameProps> = ({
         </div>
       )}
 
-      {/* Header */}
-      <Header
-        currentTurn={state.currentTurn}
-        totalTurns={state.totalTurns}
-        correctPlacements={state.correctPlacements}
-      />
+      {/* Left Panel: Game Info + Active Card */}
+      <div className="w-2/5 flex flex-col h-full p-3 border-r border-amber-200/50">
+        {/* Header/Game Info */}
+        <Header
+          currentTurn={state.currentTurn}
+          totalTurns={state.totalTurns}
+          correctPlacements={state.correctPlacements}
+        />
 
-      {/* Active Card Area */}
-      {state.activeCard && (
-        <div className="flex-shrink-0 border-b border-amber-200/50 bg-amber-50/30">
+        {/* Spacer to push active card to bottom */}
+        <div className="flex-1" />
+
+        {/* Active Card Area */}
+        {state.activeCard && (
           <ActiveCard
             event={state.activeCard}
             onTap={handleActiveCardTap}
             lastResult={state.lastPlacementResult}
             isAnimating={state.isAnimating}
           />
-        </div>
-      )}
+        )}
+      </div>
 
-      {/* Timeline */}
-      <Timeline
-        events={state.timeline}
-        onPlacement={handlePlacement}
-        onEventTap={openModal}
-        disabled={state.isAnimating}
-        newEventName={newEventName}
-      />
+      {/* Right Panel: Timeline */}
+      <div className="w-3/5 h-full">
+        <Timeline
+          events={state.timeline}
+          onPlacement={handlePlacement}
+          onEventTap={openModal}
+          disabled={state.isAnimating}
+          newEventName={newEventName}
+        />
+      </div>
 
       {/* Event Modal */}
       {modalEvent && (

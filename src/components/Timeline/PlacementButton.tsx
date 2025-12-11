@@ -13,30 +13,30 @@ const PlacementButton: React.FC<PlacementButtonProps> = ({
   index,
   onPlace,
   disabled = false,
-  isFirst = false,
-  isLast = false,
 }) => {
   return (
-    <button
-      onClick={() => onPlace(index)}
-      disabled={disabled}
-      className={`
-        w-full py-3 px-4 my-1
-        flex items-center justify-center gap-2
-        border-2 border-dashed rounded-lg
-        transition-all duration-200
-        touch-manipulation
-        ${disabled
-          ? 'border-gray-300 bg-gray-100 text-gray-400 cursor-not-allowed'
-          : 'border-amber-400 bg-amber-50 hover:bg-amber-100 hover:border-amber-500 active:bg-amber-200 text-amber-700'
-        }
-      `}
-    >
-      <Plus className="w-5 h-5" />
-      <span className="text-sm font-medium">
-        {isFirst ? 'Place at start' : isLast ? 'Place at end' : 'Place here'}
-      </span>
-    </button>
+    <div className="flex justify-center py-1 relative z-20">
+      <button
+        onClick={() => onPlace(index)}
+        disabled={disabled}
+        className={`
+          w-12 h-12
+          flex items-center justify-center
+          rounded-full
+          border-2
+          transition-all duration-150
+          touch-manipulation
+          shadow-md
+          ${disabled
+            ? 'border-gray-300 bg-gray-100 text-gray-400 cursor-not-allowed'
+            : 'border-amber-400 bg-amber-100 hover:bg-amber-200 hover:border-amber-500 active:scale-95 active:bg-amber-300 text-amber-700'
+          }
+        `}
+        aria-label="Place card here"
+      >
+        <Plus className="w-5 h-5" />
+      </button>
+    </div>
   );
 };
 

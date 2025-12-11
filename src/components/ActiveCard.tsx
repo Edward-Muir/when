@@ -24,18 +24,18 @@ const ActiveCard: React.FC<ActiveCardProps> = ({ event, onTap, lastResult, isAni
   }
 
   return (
-    <div className="flex flex-col items-center gap-2 py-4">
-      <p className="text-sketch/60 text-sm">Place this event on the timeline</p>
+    <div className="flex flex-col items-start gap-2 pb-2">
+      <p className="text-sketch/60 text-xs">Place this event:</p>
       <div className={`transition-all duration-300 ${animationClass}`}>
         <Card
           event={event}
           showYear={showYear}
           isRevealing={Boolean(isRevealing)}
-          size="large"
+          size="normal"
           onClick={onTap}
         />
       </div>
-      <p className="text-sketch/40 text-xs">Tap card for details</p>
+      <p className="text-sketch/40 text-xs">Tap for details</p>
     </div>
   );
 };
