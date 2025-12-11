@@ -1,0 +1,40 @@
+{
+  "categories": [
+    {
+      "name": "conflict",
+      "files": [
+        "conflict.json"
+      ]
+    },
+    {
+      "name": "cultural",
+      "files": [
+        "cultural.json"
+      ]
+    },
+    {
+      "name": "diplomatic",
+      "files": [
+        "diplomatic.json"
+      ]
+    },
+    {
+      "name": "disasters",
+      "files": [
+        "disasters.json"
+      ]
+    },
+    {
+      "name": "exploration",
+      "files": [
+        "exploration.json"
+      ]
+    },
+    {
+      "name": "infrastructure",
+      "files": [
+        "infrastructure.json"
+      ]
+    }
+  ]
+}

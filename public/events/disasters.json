@@ -1,0 +1,1802 @@
+[
+  {
+    "name": "dinosaur-extinction",
+    "friendly_name": "Dinosaur Extinction",
+    "year": -66000000,
+    "category": "disasters",
+    "description": "An asteroid impact caused the mass extinction of the dinosaurs.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Impact_event.jpg/330px-Impact_event.jpg"
+  },
+  {
+    "name": "thera-eruption",
+    "friendly_name": "Thera Volcanic Eruption",
+    "year": -1600,
+    "category": "disasters",
+    "description": "A massive volcanic eruption devastated the Minoan civilization in the Aegean.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Santorini_ASTER.jpg/330px-Santorini_ASTER.jpg"
+  },
+  {
+    "name": "bronze-age-collapse",
+    "friendly_name": "Bronze Age Collapse",
+    "year": -1200,
+    "category": "disasters",
+    "description": "Multiple civilizations in the Mediterranean suddenly collapsed within decades.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bronze_Age_End.svg/330px-Bronze_Age_End.svg.png"
+  },
+  {
+    "name": "plague-of-athens",
+    "friendly_name": "Plague of Athens",
+    "year": -430,
+    "category": "disasters",
+    "description": "A devastating epidemic killed up to a quarter of the Athenian population.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Plague_in_an_Ancient_City_LACMA_AC1997.10.1_%281_of_2%29.jpg/330px-Plague_in_an_Ancient_City_LACMA_AC1997.10.1_%281_of_2%29.jpg"
+  },
+  {
+    "name": "vesuvius-eruption",
+    "friendly_name": "Mount Vesuvius Erupts",
+    "year": 79,
+    "category": "disasters",
+    "description": "The volcano buried the Roman cities of Pompeii and Herculaneum in ash.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg/330px-Il_cratere_del_Vulcano_-_panoramio.jpg"
+  },
+  {
+    "name": "pompeii",
+    "friendly_name": "Destruction of Pompeii",
+    "year": 79,
+    "category": "disasters",
+    "description": "Mount Vesuvius erupted and buried the Roman city of Pompeii.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Destruction_of_Pompeii_and_Herculaneum.jpg/330px-Destruction_of_Pompeii_and_Herculaneum.jpg"
+  },
+  {
+    "name": "antonine-plague",
+    "friendly_name": "Antonine Plague",
+    "year": 165,
+    "category": "disasters",
+    "description": "A pandemic killed millions across the Roman Empire over fifteen years.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_angel_of_death_striking_a_door_during_the_plague_of_Rome_Wellcome_V0010664.jpg/330px-The_angel_of_death_striking_a_door_during_the_plague_of_Rome_Wellcome_V0010664.jpg"
+  },
+  {
+    "name": "plague-of-cyprian",
+    "friendly_name": "Plague of Cyprian",
+    "year": 249,
+    "category": "disasters",
+    "description": "A deadly pandemic swept through the Roman Empire for nearly twenty years.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Heiliger_Cyprianus.jpg/330px-Heiliger_Cyprianus.jpg"
+  },
+  {
+    "name": "volcanic-winter-536",
+    "friendly_name": "Volcanic Winter of 536",
+    "year": 536,
+    "category": "disasters",
+    "description": "A mysterious fog plunged Europe into darkness and cold for eighteen months.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Volcanic_injection.svg/330px-Volcanic_injection.svg.png"
+  },
+  {
+    "name": "plague-of-justinian",
+    "friendly_name": "Plague of Justinian",
+    "year": 541,
+    "category": "disasters",
+    "description": "Bubonic plague killed tens of millions across the Byzantine Empire.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Plaguet03.jpg/330px-Plaguet03.jpg"
+  },
+  {
+    "name": "damghan-earthquake",
+    "friendly_name": "Damghan Earthquake",
+    "year": 856,
+    "category": "disasters",
+    "description": "A massive earthquake in Iran killed an estimated 200,000 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/856_Damghan_setting.png/330px-856_Damghan_setting.png"
+  },
+  {
+    "name": "aleppo-earthquake",
+    "friendly_name": "Aleppo Earthquake",
+    "year": 1138,
+    "category": "disasters",
+    "description": "A devastating earthquake struck Syria, killing over 200,000 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg/330px-Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg"
+  },
+  {
+    "name": "black-death-arrives",
+    "friendly_name": "Black Death Reaches Europe",
+    "year": 1347,
+    "category": "disasters",
+    "description": "The bubonic plague arrived in Europe, eventually killing one-third of the population.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png"
+  },
+  {
+    "name": "black-death",
+    "friendly_name": "Black Death Reaches Europe",
+    "year": 1347,
+    "category": "disasters",
+    "description": "The bubonic plague killed up to 200 million people across Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png"
+  },
+  {
+    "name": "black-death-peak",
+    "friendly_name": "Black Death Peaks",
+    "year": 1349,
+    "category": "disasters",
+    "description": "The plague reached its deadliest year, devastating cities across Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png"
+  },
+  {
+    "name": "shaanxi-earthquake",
+    "friendly_name": "Shaanxi Earthquake",
+    "year": 1556,
+    "category": "disasters",
+    "description": "The deadliest earthquake in history killed approximately 830,000 people in China.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shaanxi_1556_earthquake_map_of_provinces.png/330px-Shaanxi_1556_earthquake_map_of_provinces.png"
+  },
+  {
+    "name": "great-plague-london",
+    "friendly_name": "Great Plague of London",
+    "year": 1665,
+    "category": "disasters",
+    "description": "Bubonic plague killed nearly 100,000 Londoners in eighteen months.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Great_plague_of_london-1665.jpg/330px-Great_plague_of_london-1665.jpg"
+  },
+  {
+    "name": "great-fire-london",
+    "friendly_name": "Great Fire of London",
+    "year": 1666,
+    "category": "disasters",
+    "description": "A massive fire destroyed most of the medieval City of London.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Great_Fire_London.jpg/330px-Great_Fire_London.jpg"
+  },
+  {
+    "name": "lisbon-earthquake",
+    "friendly_name": "Lisbon Earthquake",
+    "year": 1755,
+    "category": "disasters",
+    "description": "A massive earthquake and tsunami destroyed much of Portugal's capital.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/1755_Lisbon_Earthquake_Location.png/330px-1755_Lisbon_Earthquake_Location.png"
+  },
+  {
+    "name": "bengal-famine-1770",
+    "friendly_name": "Great Bengal Famine",
+    "year": 1770,
+    "category": "disasters",
+    "description": "A devastating famine killed approximately 10 million people in India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/IGI1908India1765a.jpg/330px-IGI1908India1765a.jpg"
+  },
+  {
+    "name": "laki-eruption",
+    "friendly_name": "Laki Volcanic Eruption",
+    "year": 1783,
+    "category": "disasters",
+    "description": "An Icelandic eruption caused widespread famine and climate effects across Europe.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Laki_fissure_%283%29.jpg/330px-Laki_fissure_%283%29.jpg"
+  },
+  {
+    "name": "yellow-fever-philadelphia",
+    "friendly_name": "Philadelphia Yellow Fever Epidemic",
+    "year": 1793,
+    "category": "disasters",
+    "description": "Yellow fever killed about 5,000 people in the American capital.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Arch_Street_Ferry.jpg/330px-Arch_Street_Ferry.jpg"
+  },
+  {
+    "name": "tambora-eruption",
+    "friendly_name": "Mount Tambora Erupts",
+    "year": 1815,
+    "category": "disasters",
+    "description": "The largest volcanic eruption in recorded history caused global climate disruption.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg/330px-Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg"
+  },
+  {
+    "name": "year-without-summer",
+    "friendly_name": "Year Without a Summer",
+    "year": 1816,
+    "category": "disasters",
+    "description": "Volcanic ash from Tambora caused crop failures and famine worldwide.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/1816_summer.png/330px-1816_summer.png"
+  },
+  {
+    "name": "irish-potato-famine",
+    "friendly_name": "Irish Potato Famine Begins",
+    "year": 1845,
+    "category": "disasters",
+    "description": "A potato blight caused mass starvation and emigration from Ireland.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Skibbereen_by_James_Mahony%2C_1847.JPG/330px-Skibbereen_by_James_Mahony%2C_1847.JPG"
+  },
+  {
+    "name": "cholera-london",
+    "friendly_name": "London Cholera Outbreak",
+    "year": 1854,
+    "category": "disasters",
+    "description": "John Snow traced a deadly cholera outbreak to a contaminated water pump.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pump_Handle_-_John_Snow_.jpg/330px-Pump_Handle_-_John_Snow_.jpg"
+  },
+  {
+    "name": "indian-rebellion-famine",
+    "friendly_name": "Orissa Famine",
+    "year": 1866,
+    "category": "disasters",
+    "description": "A severe famine in India killed over one million people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Indian_Rebellion_of_1857.jpg/330px-Indian_Rebellion_of_1857.jpg"
+  },
+  {
+    "name": "peshtigo-fire",
+    "friendly_name": "Peshtigo Fire",
+    "year": 1871,
+    "category": "disasters",
+    "description": "The deadliest wildfire in American history killed over 1,500 people in Wisconsin.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/PeshtigoFireExtend.png"
+  },
+  {
+    "name": "great-chicago-fire",
+    "friendly_name": "Great Chicago Fire",
+    "year": 1871,
+    "category": "disasters",
+    "description": "A devastating fire destroyed much of Chicago, leaving 100,000 homeless.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chicago_in_Flames_by_Currier_%26_Ives%2C_1871_%28cropped%29.jpg/330px-Chicago_in_Flames_by_Currier_%26_Ives%2C_1871_%28cropped%29.jpg"
+  },
+  {
+    "name": "krakatoa-eruption",
+    "friendly_name": "Krakatoa Erupts",
+    "year": 1883,
+    "category": "disasters",
+    "description": "A catastrophic volcanic eruption in Indonesia killed over 36,000 people.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/De_uitbarsting_van_de_Krakatau%2C_KITLV_5888.tiff/lossy-page1-320px-De_uitbarsting_van_de_Krakatau%2C_KITLV_5888.tiff.jpg"
+  },
+  {
+    "name": "johnstown-flood",
+    "friendly_name": "Johnstown Flood",
+    "year": 1889,
+    "category": "disasters",
+    "description": "A dam failure caused a devastating flood that killed over 2,200 people in Pennsylvania.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Johnstown_flood_debris.jpg/330px-Johnstown_flood_debris.jpg"
+  },
+  {
+    "name": "russian-famine-1891",
+    "friendly_name": "Russian Famine of 1891",
+    "year": 1891,
+    "category": "disasters",
+    "description": "Crop failures led to widespread famine affecting millions in Russia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg/330px-CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg"
+  },
+  {
+    "name": "galveston-hurricane",
+    "friendly_name": "Galveston Hurricane",
+    "year": 1900,
+    "category": "disasters",
+    "description": "The deadliest natural disaster in US history killed up to 12,000 people in Texas.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/1900_Galveston_hurricane_weather_map_%28high_quality%29_%2819877020%29.jpg/330px-1900_Galveston_hurricane_weather_map_%28high_quality%29_%2819877020%29.jpg"
+  },
+  {
+    "name": "san-francisco-earthquake",
+    "friendly_name": "San Francisco Earthquake",
+    "year": 1906,
+    "category": "disasters",
+    "description": "A massive earthquake and subsequent fires devastated the California city.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Post-and-Grant-Avenue-Look.jpg/330px-Post-and-Grant-Avenue-Look.jpg"
+  },
+  {
+    "name": "messina-earthquake",
+    "friendly_name": "Messina Earthquake",
+    "year": 1908,
+    "category": "disasters",
+    "description": "An earthquake and tsunami killed over 80,000 people in Sicily and Calabria.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Underwood_%26_Underwood_%C2%A9_1906_No._10495_-_Messina_-_The_once_beautiful_Water-front_after_the_earthquake_dett.jpg/330px-Underwood_%26_Underwood_%C2%A9_1906_No._10495_-_Messina_-_The_once_beautiful_Water-front_after_the_earthquake_dett.jpg"
+  },
+  {
+    "name": "triangle-shirtwaist-fire",
+    "friendly_name": "Triangle Shirtwaist Factory Fire",
+    "year": 1911,
+    "category": "disasters",
+    "description": "A factory fire killed 146 garment workers in New York City.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg/330px-Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg"
+  },
+  {
+    "name": "titanic",
+    "friendly_name": "Titanic Sinks",
+    "year": 1912,
+    "category": "disasters",
+    "description": "The 'unsinkable' ship struck an iceberg and sank on its maiden voyage.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/330px-St%C3%B6wer_Titanic.jpg"
+  },
+  {
+    "name": "titanic-disaster",
+    "friendly_name": "Titanic Sinks",
+    "year": 1912,
+    "category": "disasters",
+    "description": "The unsinkable ocean liner struck an iceberg, killing over 1,500 passengers.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/330px-St%C3%B6wer_Titanic.jpg"
+  },
+  {
+    "name": "spanish-flu-begins",
+    "friendly_name": "Spanish Flu Pandemic Begins",
+    "year": 1918,
+    "category": "disasters",
+    "description": "The deadliest pandemic in modern history began infecting millions worldwide.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/330px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg"
+  },
+  {
+    "name": "spanish-flu-peak",
+    "friendly_name": "Spanish Flu Second Wave",
+    "year": 1918,
+    "category": "disasters",
+    "description": "The deadly second wave of Spanish flu killed millions in autumn 1918.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/330px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg"
+  },
+  {
+    "name": "great-kanto-earthquake",
+    "friendly_name": "Great Kanto Earthquake",
+    "year": 1923,
+    "category": "disasters",
+    "description": "A massive earthquake devastated Tokyo and Yokohama, killing over 100,000.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/The_Great_Kanto_Earthquake_%283767766524%29_%28cropped%29.jpg/330px-The_Great_Kanto_Earthquake_%283767766524%29_%28cropped%29.jpg"
+  },
+  {
+    "name": "stock-crash",
+    "friendly_name": "Stock Market Crash",
+    "year": 1929,
+    "category": "disasters",
+    "description": "The Wall Street crash triggered the Great Depression.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Stock_market_crash_%282020%29.svg/330px-Stock_market_crash_%282020%29.svg.png"
+  },
+  {
+    "name": "wall-street-crash",
+    "friendly_name": "Wall Street Crash",
+    "year": 1929,
+    "category": "disasters",
+    "description": "The stock market crashed, triggering the Great Depression.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Crowd_outside_nyse.jpg/330px-Crowd_outside_nyse.jpg"
+  },
+  {
+    "name": "great-depression-begins",
+    "friendly_name": "Great Depression Begins",
+    "year": 1929,
+    "category": "disasters",
+    "description": "The worst economic downturn in modern history began after the market crash.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg/330px-Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg"
+  },
+  {
+    "name": "china-floods-1931",
+    "friendly_name": "China Floods of 1931",
+    "year": 1931,
+    "category": "disasters",
+    "description": "Massive flooding killed up to four million people in central China.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hankow_city_hall.jpg/330px-Hankow_city_hall.jpg"
+  },
+  {
+    "name": "dust-bowl",
+    "friendly_name": "Dust Bowl Begins",
+    "year": 1934,
+    "category": "disasters",
+    "description": "Severe drought and dust storms devastated the American Great Plains.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Farmer_walking_in_dust_storm_Cimarron_County_Oklahoma2.jpg/330px-Farmer_walking_in_dust_storm_Cimarron_County_Oklahoma2.jpg"
+  },
+  {
+    "name": "hindenburg-disaster",
+    "friendly_name": "Hindenburg Disaster",
+    "year": 1937,
+    "category": "disasters",
+    "description": "The German airship exploded while landing in New Jersey, ending the airship era.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_disaster.jpg/330px-Hindenburg_disaster.jpg"
+  },
+  {
+    "name": "bengal-famine-1943",
+    "friendly_name": "Bengal Famine",
+    "year": 1943,
+    "category": "disasters",
+    "description": "A devastating famine killed up to three million people in British India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg/330px-Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg"
+  },
+  {
+    "name": "hiroshima-bombing",
+    "friendly_name": "Atomic Bombing of Hiroshima",
+    "year": 1945,
+    "category": "disasters",
+    "description": "The first atomic bomb used in warfare killed over 100,000 people instantly.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/330px-Atomic_bombing_of_Japan.jpg"
+  },
+  {
+    "name": "nagasaki-bombing",
+    "friendly_name": "Atomic Bombing of Nagasaki",
+    "year": 1945,
+    "category": "disasters",
+    "description": "A second atomic bomb was dropped on Japan three days after Hiroshima.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/330px-Atomic_bombing_of_Japan.jpg"
+  },
+  {
+    "name": "texas-city-disaster",
+    "friendly_name": "Texas City Disaster",
+    "year": 1947,
+    "category": "disasters",
+    "description": "A ship explosion caused one of the deadliest industrial accidents in US history.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Txcitydisasterboat.jpg/330px-Txcitydisasterboat.jpg"
+  },
+  {
+    "name": "great-smog-london",
+    "friendly_name": "Great Smog of London",
+    "year": 1952,
+    "category": "disasters",
+    "description": "Severe air pollution killed thousands in London over five days.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson%27s_Column_during_the_Great_Smog_of_1952.jpg/330px-Nelson%27s_Column_during_the_Great_Smog_of_1952.jpg"
+  },
+  {
+    "name": "north-sea-flood",
+    "friendly_name": "North Sea Flood",
+    "year": 1953,
+    "category": "disasters",
+    "description": "A devastating storm surge killed over 2,500 people in the Netherlands and UK.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/NASA_NorthSea1_2.jpg/330px-NASA_NorthSea1_2.jpg"
+  },
+  {
+    "name": "great-leap-forward-famine",
+    "friendly_name": "Great Chinese Famine Begins",
+    "year": 1959,
+    "category": "disasters",
+    "description": "Mao's Great Leap Forward policies caused a famine killing tens of millions.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mao_Zedong_1950_Portait_%283x4_cropped%29.jpg/330px-Mao_Zedong_1950_Portait_%283x4_cropped%29.jpg"
+  },
+  {
+    "name": "thalidomide-scandal",
+    "friendly_name": "Thalidomide Scandal",
+    "year": 1961,
+    "category": "disasters",
+    "description": "A drug prescribed to pregnant women caused thousands of birth defects worldwide.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Thalidomide_effects.jpg/330px-Thalidomide_effects.jpg"
+  },
+  {
+    "name": "alaska-earthquake",
+    "friendly_name": "Great Alaska Earthquake",
+    "year": 1964,
+    "category": "disasters",
+    "description": "The most powerful earthquake in North American history struck Alaska.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/AlaskaQuake-FourthAve.jpg/330px-AlaskaQuake-FourthAve.jpg"
+  },
+  {
+    "name": "aberfan-disaster",
+    "friendly_name": "Aberfan Disaster",
+    "year": 1966,
+    "category": "disasters",
+    "description": "A coal waste tip collapsed onto a Welsh village school, killing 144 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Aberfan_disaster%2C_October_1966.jpg/330px-Aberfan_disaster%2C_October_1966.jpg"
+  },
+  {
+    "name": "biafra-famine",
+    "friendly_name": "Biafra Famine",
+    "year": 1967,
+    "category": "disasters",
+    "description": "A blockade during the Nigerian Civil War caused mass starvation in Biafra.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Starving-woman-africa-biafra-nigeria-conflict-famine.jpg/330px-Starving-woman-africa-biafra-nigeria-conflict-famine.jpg"
+  },
+  {
+    "name": "bhola-cyclone",
+    "friendly_name": "Bhola Cyclone",
+    "year": 1970,
+    "category": "disasters",
+    "description": "The deadliest tropical cyclone in history killed up to 500,000 in Bangladesh.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/15B_1970-11-12_0956Z.png/330px-15B_1970-11-12_0956Z.png"
+  },
+  {
+    "name": "munich-massacre",
+    "friendly_name": "Munich Olympics Massacre",
+    "year": 1972,
+    "category": "disasters",
+    "description": "Palestinian terrorists killed eleven Israeli athletes at the Olympic Games.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/1972_Summer_Olympics_logo.svg/330px-1972_Summer_Olympics_logo.svg.png"
+  },
+  {
+    "name": "tangshan-earthquake",
+    "friendly_name": "Tangshan Earthquake",
+    "year": 1976,
+    "category": "disasters",
+    "description": "A massive earthquake killed over 240,000 people in northeastern China.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tangshan_earthquake.jpg/330px-Tangshan_earthquake.jpg"
+  },
+  {
+    "name": "jonestown-massacre",
+    "friendly_name": "Jonestown Massacre",
+    "year": 1978,
+    "category": "disasters",
+    "description": "Over 900 members of a cult died in a mass murder-suicide in Guyana.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jonestown_entrance.jpg/330px-Jonestown_entrance.jpg"
+  },
+  {
+    "name": "three-mile-island",
+    "friendly_name": "Three Mile Island Accident",
+    "year": 1979,
+    "category": "disasters",
+    "description": "A partial nuclear meltdown occurred at a Pennsylvania power plant.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Three_Mile_Island_%28color%29-2.jpg/330px-Three_Mile_Island_%28color%29-2.jpg"
+  },
+  {
+    "name": "mount-st-helens",
+    "friendly_name": "Mount St. Helens Erupts",
+    "year": 1980,
+    "category": "disasters",
+    "description": "A catastrophic volcanic eruption killed 57 people in Washington State.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg/330px-MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg"
+  },
+  {
+    "name": "aids-epidemic-recognized",
+    "friendly_name": "AIDS Epidemic Recognized",
+    "year": 1981,
+    "category": "disasters",
+    "description": "The CDC first reported cases of what would become the AIDS pandemic.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/World_map_of_HIV_prevalence%2C_2023.png/330px-World_map_of_HIV_prevalence%2C_2023.png"
+  },
+  {
+    "name": "bhopal-disaster",
+    "friendly_name": "Bhopal Disaster",
+    "year": 1984,
+    "category": "disasters",
+    "description": "A gas leak at a pesticide plant killed thousands in India.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg/330px-Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg"
+  },
+  {
+    "name": "mexico-city-earthquake",
+    "friendly_name": "Mexico City Earthquake",
+    "year": 1985,
+    "category": "disasters",
+    "description": "A powerful earthquake killed over 10,000 people in the Mexican capital.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg/330px-Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg"
+  },
+  {
+    "name": "chernobyl",
+    "friendly_name": "Chernobyl Disaster",
+    "year": 1986,
+    "category": "disasters",
+    "description": "A nuclear reactor explosion caused the worst nuclear disaster in history.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/330px-IAEA_02790015_%285613115146%29.jpg"
+  },
+  {
+    "name": "challenger-disaster",
+    "friendly_name": "Challenger Disaster",
+    "year": 1986,
+    "category": "disasters",
+    "description": "The Space Shuttle Challenger exploded shortly after launch, killing seven astronauts.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Challenger_explosion.jpg/330px-Challenger_explosion.jpg"
+  },
+  {
+    "name": "chernobyl-disaster",
+    "friendly_name": "Chernobyl Nuclear Disaster",
+    "year": 1986,
+    "category": "disasters",
+    "description": "The world's worst nuclear accident occurred at a Soviet power plant in Ukraine.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/330px-IAEA_02790015_%285613115146%29.jpg"
+  },
+  {
+    "name": "lockerbie-bombing",
+    "friendly_name": "Lockerbie Bombing",
+    "year": 1988,
+    "category": "disasters",
+    "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg/330px-Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg"
+  },
+  {
+    "name": "armenian-earthquake",
+    "friendly_name": "Armenian Earthquake",
+    "year": 1988,
+    "category": "disasters",
+    "description": "A devastating earthquake killed over 25,000 people in Soviet Armenia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Spitak_%D0%A1%D0%BF%D0%B8%D1%82%D0%B0%D0%BA%2C_%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F.jpg/330px-Spitak_%D0%A1%D0%BF%D0%B8%D1%82%D0%B0%D0%BA%2C_%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F.jpg"
+  },
+  {
+    "name": "exxon-valdez",
+    "friendly_name": "Exxon Valdez Oil Spill",
+    "year": 1989,
+    "category": "disasters",
+    "description": "An oil tanker spilled millions of gallons into Alaska's Prince William Sound.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Exxon_Valdez_Cleanup.jpg/330px-Exxon_Valdez_Cleanup.jpg"
+  },
+  {
+    "name": "hillsborough-disaster",
+    "friendly_name": "Hillsborough Disaster",
+    "year": 1989,
+    "category": "disasters",
+    "description": "A crowd crush at a football stadium killed 97 people in Sheffield, England.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Hillsborough_disaster_main.jpg/330px-Hillsborough_disaster_main.jpg"
+  },
+  {
+    "name": "bangladesh-cyclone-1991",
+    "friendly_name": "Bangladesh Cyclone",
+    "year": 1991,
+    "category": "disasters",
+    "description": "A devastating cyclone killed approximately 138,000 people in Bangladesh.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BOB_01_Apr_29_1991_0744Z.png/330px-BOB_01_Apr_29_1991_0744Z.png"
+  },
+  {
+    "name": "somali-famine",
+    "friendly_name": "Somali Famine",
+    "year": 1992,
+    "category": "disasters",
+    "description": "Civil war and drought caused a famine killing over 200,000 in Somalia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Somali_Civil_War_%28Google_Live_Map%29.svg/330px-Somali_Civil_War_%28Google_Live_Map%29.svg.png"
+  },
+  {
+    "name": "waco-siege",
+    "friendly_name": "Waco Siege",
+    "year": 1993,
+    "category": "disasters",
+    "description": "A federal siege of a religious compound ended in a fire killing 76 people.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mountcarmelfire04-19-93-n.jpg/330px-Mountcarmelfire04-19-93-n.jpg"
+  },
+  {
+    "name": "northridge-earthquake",
+    "friendly_name": "Northridge Earthquake",
+    "year": 1994,
+    "category": "disasters",
+    "description": "A powerful earthquake caused widespread damage in Los Angeles.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/FEMA_-_1681_-_Photograph_by_FEMA_News_Photo_taken_on_01-17-1994_in_California.jpg/330px-FEMA_-_1681_-_Photograph_by_FEMA_News_Photo_taken_on_01-17-1994_in_California.jpg"
+  },
+  {
+    "name": "kobe-earthquake",
+    "friendly_name": "Great Hanshin Earthquake",
+    "year": 1995,
+    "category": "disasters",
+    "description": "A devastating earthquake killed over 6,000 people in Kobe, Japan.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hanshin_Expressway_Nada_b059.jpg/330px-Hanshin_Expressway_Nada_b059.jpg"
+  },
+  {
+    "name": "oklahoma-city-bombing",
+    "friendly_name": "Oklahoma City Bombing",
+    "year": 1995,
+    "category": "disasters",
+    "description": "A domestic terrorist attack killed 168 people at a federal building.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Oklahomacitybombing-DF-ST-98-01356.jpg/330px-Oklahomacitybombing-DF-ST-98-01356.jpg"
+  },
+  {
+    "name": "north-korea-famine",
+    "friendly_name": "North Korean Famine",
+    "year": 1995,
+    "category": "disasters",
+    "description": "Economic collapse and floods caused a famine killing hundreds of thousands.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg/330px-Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg"
+  },
+  {
+    "name": "princess-diana-death",
+    "friendly_name": "Princess Diana Dies",
+    "year": 1997,
+    "category": "disasters",
+    "description": "Princess Diana was killed in a car crash in Paris, shocking the world.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg/330px-Diana%2C_Princess_of_Wales_1997_%282%29.jpg"
+  },
+  {
+    "name": "asian-financial-crisis",
+    "friendly_name": "Asian Financial Crisis",
+    "year": 1997,
+    "category": "disasters",
+    "description": "A currency crisis devastated economies across East and Southeast Asia.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Asienkrise.svg/330px-Asienkrise.svg.png"
+  },
+  {
+    "name": "hurricane-mitch",
+    "friendly_name": "Hurricane Mitch",
+    "year": 1998,
+    "category": "disasters",
+    "description": "The deadliest Atlantic hurricane in over 200 years killed over 11,000 in Central America.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Mitch_1998-10-26_1845Z.png/330px-Mitch_1998-10-26_1845Z.png"
+  },
+  {
+    "name": "columbine-shooting",
+    "friendly_name": "Columbine School Shooting",
+    "year": 1999,
+    "category": "disasters",
+    "description": "Two students killed 13 people at a Colorado high school in a mass shooting.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Columbine_Shooting_Security_Camera.jpg/330px-Columbine_Shooting_Security_Camera.jpg"
+  },
+  {
+    "name": "concorde-crash",
+    "friendly_name": "Concorde Crash",
+    "year": 2000,
+    "category": "disasters",
+    "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Concorde_Air_France_Flight_4590_fire_on_runway.jpg"
+  },
+  {
+    "name": "september-11-attacks",
+    "friendly_name": "September 11 Attacks",
+    "year": 2001,
+    "category": "disasters",
+    "description": "Terrorists crashed hijacked planes into the World Trade Center and Pentagon.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/330px-WTC_smoking_on_9-11.jpeg"
+  },
+  {
+    "name": "sars-outbreak",
+    "friendly_name": "SARS Outbreak",
+    "year": 2003,
+    "category": "disasters",
+    "description": "A deadly respiratory disease spread from China to countries worldwide.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/SARS_map.svg/330px-SARS_map.svg.png"
+  },
+  {
+    "name": "indian-ocean-tsunami",
+    "friendly_name": "Indian Ocean Tsunami",
+    "year": 2004,
+    "category": "disasters",
+    "description": "A massive earthquake triggered tsunamis killing over 230,000 people.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg/330px-US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg"
+  },
+  {
+    "name": "hurricane-katrina",
+    "friendly_name": "Hurricane Katrina",
+    "year": 2005,
+    "category": "disasters",
+    "description": "A devastating hurricane flooded New Orleans and killed over 1,800 people.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Katrina_2005-08-28_1700Z.jpg/330px-Katrina_2005-08-28_1700Z.jpg"
+  },
+  {
+    "name": "kashmir-earthquake",
+    "friendly_name": "Kashmir Earthquake",
+    "year": 2005,
+    "category": "disasters",
+    "description": "A powerful earthquake killed over 80,000 people in Pakistan and India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/US_Navy_051021-F-9085B-053_Pakistani_soldiers_unload_disaster_relief_supplies_from_a_U.S._Navy_MH-53_Sea_Dragon_helicopter_at_Balakot%2C_Pakistan.jpg/330px-US_Navy_051021-F-9085B-053_Pakistani_soldiers_unload_disaster_relief_supplies_from_a_U.S._Navy_MH-53_Sea_Dragon_helicopter_at_Balakot%2C_Pakistan.jpg"
+  },
+  {
+    "name": "cyclone-nargis",
+    "friendly_name": "Cyclone Nargis",
+    "year": 2008,
+    "category": "disasters",
+    "description": "A devastating cyclone killed over 138,000 people in Myanmar.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Nargis_2008-05-02_0645Z.jpg/330px-Nargis_2008-05-02_0645Z.jpg"
+  },
+  {
+    "name": "sichuan-earthquake",
+    "friendly_name": "Sichuan Earthquake",
+    "year": 2008,
+    "category": "disasters",
+    "description": "A massive earthquake killed over 69,000 people in central China.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2008%EB%85%84_%EC%A4%91%EC%95%99119%EA%B5%AC%EC%A1%B0%EB%8B%A8_%EC%A4%91%EA%B5%AD_%EC%93%B0%EC%B4%A8%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84_%EA%B5%AD%EC%A0%9C_%EC%B6%9C%EB%8F%99%28%E5%9B%9B%E5%B7%9D%E7%9C%81_%E5%A4%A7%E5%9C%B0%E9%9C%87%2C_%EC%82%AC%EC%B2%9C%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84%29_SSL27231.JPG/330px-2008%EB%85%84_%EC%A4%91%EC%95%99119%EA%B5%AC%EC%A1%B0%EB%8B%A8_%EC%A4%91%EA%B5%AD_%EC%93%B0%EC%B4%A8%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84_%EA%B5%AD%EC%A0%9C_%EC%B6%9C%EB%8F%99%28%E5%9B%9B%E5%B7%9D%E7%9C%81_%E5%A4%A7%E5%9C%B0%E9%9C%87%2C_%EC%82%AC%EC%B2%9C%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84%29_SSL27231.JPG"
+  },
+  {
+    "name": "global-financial-crisis",
+    "friendly_name": "Global Financial Crisis",
+    "year": 2008,
+    "category": "disasters",
+    "description": "The collapse of Lehman Brothers triggered the worst financial crisis since the Great Depression.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/330px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg"
+  },
+  {
+    "name": "haiti-earthquake",
+    "friendly_name": "Haiti Earthquake",
+    "year": 2010,
+    "category": "disasters",
+    "description": "A catastrophic earthquake killed over 200,000 people and devastated Port-au-Prince.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ruins_of_Haiti_National_Palace_-_Port_au_Prince_2012.jpg/330px-Ruins_of_Haiti_National_Palace_-_Port_au_Prince_2012.jpg"
+  },
+  {
+    "name": "deepwater-horizon",
+    "friendly_name": "Deepwater Horizon Oil Spill",
+    "year": 2010,
+    "category": "disasters",
+    "description": "An oil rig explosion caused the largest marine oil spill in history.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deepwater_Horizon_oil_spill_-_May_24%2C_2010_-_with_locator.jpg/330px-Deepwater_Horizon_oil_spill_-_May_24%2C_2010_-_with_locator.jpg"
+  },
+  {
+    "name": "fukushima-disaster",
+    "friendly_name": "Fukushima Nuclear Disaster",
+    "year": 2011,
+    "category": "disasters",
+    "description": "An earthquake and tsunami caused meltdowns at a Japanese nuclear plant.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Fukushima_I_by_Digital_Globe.jpg/330px-Fukushima_I_by_Digital_Globe.jpg"
+  },
+  {
+    "name": "tohoku-earthquake",
+    "friendly_name": "Tōhoku Earthquake and Tsunami",
+    "year": 2011,
+    "category": "disasters",
+    "description": "A massive earthquake and tsunami killed over 18,000 people in Japan.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/SH-60B_helicopter_flies_over_Sendai.jpg/330px-SH-60B_helicopter_flies_over_Sendai.jpg"
+  },
+  {
+    "name": "costa-concordia",
+    "friendly_name": "Costa Concordia Disaster",
+    "year": 2012,
+    "category": "disasters",
+    "description": "A cruise ship capsized off the Italian coast, killing 32 people.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Collision_of_Costa_Concordia_11.jpg/330px-Collision_of_Costa_Concordia_11.jpg"
+  },
+  {
+    "name": "typhoon-haiyan",
+    "friendly_name": "Typhoon Haiyan",
+    "year": 2013,
+    "category": "disasters",
+    "description": "One of the strongest tropical cyclones ever recorded killed over 6,000 in the Philippines.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Haiyan_2013-11-07_1345Z_%28alternate%2C_borderless%29.png/330px-Haiyan_2013-11-07_1345Z_%28alternate%2C_borderless%29.png"
+  },
+  {
+    "name": "ebola-outbreak",
+    "friendly_name": "West African Ebola Outbreak",
+    "year": 2014,
+    "category": "disasters",
+    "description": "The deadliest Ebola outbreak killed over 11,000 people in West Africa.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Africa-countries-WAFU-UFOA.png/330px-Africa-countries-WAFU-UFOA.png"
+  },
+  {
+    "name": "mh370-disappearance",
+    "friendly_name": "Malaysia Airlines Flight 370 Disappears",
+    "year": 2014,
+    "category": "disasters",
+    "description": "A passenger plane vanished over the Indian Ocean and was never found.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Malaysia_Airlines%2C_Airbus_A350-900_9M-MAF_NRT_%2842887513761%29.jpg/330px-Malaysia_Airlines%2C_Airbus_A350-900_9M-MAF_NRT_%2842887513761%29.jpg"
+  },
+  {
+    "name": "nepal-earthquake",
+    "friendly_name": "Nepal Earthquake",
+    "year": 2015,
+    "category": "disasters",
+    "description": "A powerful earthquake killed nearly 9,000 people and damaged historic sites.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2015_Nepal_depremi_%287%29.jpg/330px-2015_Nepal_depremi_%287%29.jpg"
+  },
+  {
+    "name": "paris-attacks",
+    "friendly_name": "Paris Terror Attacks",
+    "year": 2015,
+    "category": "disasters",
+    "description": "Coordinated terrorist attacks killed 130 people across Paris.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/13_November_2015_Paris_attacks_-_montage.jpg/330px-13_November_2015_Paris_attacks_-_montage.jpg"
+  },
+  {
+    "name": "grenfell-tower-fire",
+    "friendly_name": "Grenfell Tower Fire",
+    "year": 2017,
+    "category": "disasters",
+    "description": "A fire engulfed a London apartment tower, killing 72 residents.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Grenfell_Tower_fire_%28wider_view%29.jpg/330px-Grenfell_Tower_fire_%28wider_view%29.jpg"
+  },
+  {
+    "name": "covid-19-pandemic",
+    "friendly_name": "COVID-19 Pandemic Begins",
+    "year": 2020,
+    "category": "disasters",
+    "description": "A novel coronavirus spread globally, causing millions of deaths worldwide.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/330px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg"
+  },
+  {
+    "name": "beirut-explosion",
+    "friendly_name": "Beirut Port Explosion",
+    "year": 2020,
+    "category": "disasters",
+    "description": "A massive ammonium nitrate explosion devastated the Lebanese capital.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Damages_after_2020_Beirut_explosions_1.jpg/330px-Damages_after_2020_Beirut_explosions_1.jpg"
+  },
+  {
+    "name": "covid-pandemic",
+    "friendly_name": "COVID-19 Pandemic Begins",
+    "year": 2020,
+    "category": "disasters",
+    "description": "The coronavirus pandemic caused a global health crisis.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/330px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg"
+  },
+  {
+    "name": "texas-winter-storm",
+    "friendly_name": "Texas Winter Storm",
+    "year": 2021,
+    "category": "disasters",
+    "description": "A severe winter storm caused power grid failures and over 200 deaths in Texas.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Houston_bmhd_2021038_lrg_Feb_7_2021.jpg/330px-Houston_bmhd_2021038_lrg_Feb_7_2021.jpg"
+  },
+  {
+    "name": "turkey-syria-earthquake",
+    "friendly_name": "Turkey-Syria Earthquake",
+    "year": 2023,
+    "category": "disasters",
+    "description": "A devastating earthquake killed over 50,000 people in Turkey and Syria.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Collage_of_2023_Turkey%E2%80%93Syria_earthquake.jpg/330px-Collage_of_2023_Turkey%E2%80%93Syria_earthquake.jpg"
+  },
+  {
+    "name": "santorini-eruption",
+    "friendly_name": "Santorini Eruption",
+    "year": -1600,
+    "category": "disasters",
+    "description": "A massive volcanic eruption destroyed the Minoan civilization on Crete.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Santorini_ASTER.jpg/330px-Santorini_ASTER.jpg"
+  },
+  {
+    "name": "365-crete-earthquake",
+    "friendly_name": "365 Crete Earthquake",
+    "year": 365,
+    "category": "disasters",
+    "description": "A massive earthquake and tsunami devastated the eastern Mediterranean.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Island_of_Crete%2C_Greece.JPG/330px-Island_of_Crete%2C_Greece.JPG"
+  },
+  {
+    "name": "great-famine-1315",
+    "friendly_name": "Great Famine of 1315",
+    "year": 1315,
+    "category": "disasters",
+    "description": "Climate change caused crop failures and mass starvation across Europe.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Great_famine.jpg/330px-Great_famine.jpg"
+  },
+  {
+    "name": "russian-famine-1601",
+    "friendly_name": "Russian Famine of 1601",
+    "year": 1601,
+    "category": "disasters",
+    "description": "Volcanic climate disruption caused a famine that killed two million Russians.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siege_and_Battle_of_Kinsale%2C_1601.jpg/330px-Siege_and_Battle_of_Kinsale%2C_1601.jpg"
+  },
+  {
+    "name": "italian-plague-1629",
+    "friendly_name": "Italian Plague of 1629",
+    "year": 1629,
+    "category": "disasters",
+    "description": "Bubonic plague killed over a million people in northern Italy.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg/330px-Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg"
+  },
+  {
+    "name": "irish-famine-1740",
+    "friendly_name": "Irish Famine of 1740",
+    "year": 1740,
+    "category": "disasters",
+    "description": "Extreme cold killed 20-40% of Ireland's population in the forgotten famine.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chinezenmoord_van_stolk_%282%29.jpg/330px-Chinezenmoord_van_stolk_%282%29.jpg"
+  },
+  {
+    "name": "chalisa-famine",
+    "friendly_name": "Chalisa Famine",
+    "year": 1783,
+    "category": "disasters",
+    "description": "A devastating famine killed 11 million people in India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/India1765.jpg/330px-India1765.jpg"
+  },
+  {
+    "name": "doji-bara-famine",
+    "friendly_name": "Doji Bara Famine",
+    "year": 1791,
+    "category": "disasters",
+    "description": "Another severe famine killed 11 million in the Hyderabad region of India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/DojiBaraFamineInJoppen1907India1795a.jpg/330px-DojiBaraFamineInJoppen1907India1795a.jpg"
+  },
+  {
+    "name": "finnish-famine-1866",
+    "friendly_name": "Finnish Famine",
+    "year": 1866,
+    "category": "disasters",
+    "description": "The last major famine in Europe killed 15% of Finland's population.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Detaching_inner_bark_of_pine.jpg/330px-Detaching_inner_bark_of_pine.jpg"
+  },
+  {
+    "name": "persian-famine-1917",
+    "friendly_name": "Persian Famine",
+    "year": 1917,
+    "category": "disasters",
+    "description": "World War I and occupation caused a famine killing 2 million Persians.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bijar_in_First_World_War_%281914-1918%29_10.JPG/330px-Bijar_in_First_World_War_%281914-1918%29_10.JPG"
+  },
+  {
+    "name": "russian-famine-1921",
+    "friendly_name": "Russian Famine of 1921",
+    "year": 1921,
+    "category": "disasters",
+    "description": "Civil war aftermath and drought killed 5 million in Soviet Russia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/1921-Famine-map.jpg/330px-1921-Famine-map.jpg"
+  },
+  {
+    "name": "holodomor",
+    "friendly_name": "Ukrainian Holodomor",
+    "year": 1932,
+    "category": "disasters",
+    "description": "Soviet policies caused a famine that killed millions of Ukrainians.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/HolodomorKharkiv_1933_Wienerberger.jpg/330px-HolodomorKharkiv_1933_Wienerberger.jpg"
+  },
+  {
+    "name": "dutch-hunger-winter",
+    "friendly_name": "Dutch Hunger Winter",
+    "year": 1944,
+    "category": "disasters",
+    "description": "A Nazi blockade caused famine in the occupied Netherlands.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg/330px-Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg"
+  },
+  {
+    "name": "bangladesh-famine-1974",
+    "friendly_name": "Bangladesh Famine",
+    "year": 1974,
+    "category": "disasters",
+    "description": "Flooding and economic crisis killed up to 1.5 million in Bangladesh.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg/330px-Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg"
+  },
+  {
+    "name": "ethiopian-famine-1983",
+    "friendly_name": "Ethiopian Famine",
+    "year": 1983,
+    "category": "disasters",
+    "description": "Drought and civil war caused a famine that killed 400,000 Ethiopians.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Map_of_Abyssinia_and_Nubia_-_DPLA_-_83edec2a46dd4cc5c780681e653753e5.jpg/330px-Map_of_Abyssinia_and_Nubia_-_DPLA_-_83edec2a46dd4cc5c780681e653753e5.jpg"
+  },
+  {
+    "name": "antioch-earthquake-526",
+    "friendly_name": "Antioch Earthquake",
+    "year": 526,
+    "category": "disasters",
+    "description": "A massive earthquake killed 250,000 in the Byzantine city of Antioch.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Antiochia_su_Oronte.PNG/330px-Antiochia_su_Oronte.PNG"
+  },
+  {
+    "name": "syria-earthquake-1202",
+    "friendly_name": "Syria Earthquake of 1202",
+    "year": 1202,
+    "category": "disasters",
+    "description": "A powerful earthquake killed over 1 million across the Middle East.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Siege_of_Zadar.jpg/330px-Siege_of_Zadar.jpg"
+  },
+  {
+    "name": "calabria-earthquake",
+    "friendly_name": "Calabria Earthquakes",
+    "year": 1783,
+    "category": "disasters",
+    "description": "A series of earthquakes killed 50,000 in southern Italy.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Calabria_in_Italy.svg/330px-Calabria_in_Italy.svg.png"
+  },
+  {
+    "name": "new-madrid-earthquakes",
+    "friendly_name": "New Madrid Earthquakes",
+    "year": 1811,
+    "category": "disasters",
+    "description": "A series of massive earthquakes shook the central United States.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/New_Madrid_Erdbeben.jpg/330px-New_Madrid_Erdbeben.jpg"
+  },
+  {
+    "name": "charleston-earthquake",
+    "friendly_name": "Charleston Earthquake",
+    "year": 1886,
+    "category": "disasters",
+    "description": "A major earthquake damaged the South Carolina city and killed 60 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Hillers%2C_J.K._13_-_Wrecked_brick_house_on_Tradd_Street%2C_1886.jpg/330px-Hillers%2C_J.K._13_-_Wrecked_brick_house_on_Tradd_Street%2C_1886.jpg"
+  },
+  {
+    "name": "valparaiso-earthquake",
+    "friendly_name": "Valparaiso Earthquake",
+    "year": 1906,
+    "category": "disasters",
+    "description": "A devastating earthquake killed 3,000 and destroyed much of the Chilean city.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Terremoto_Valpara%C3%ADso_1906.jpg/330px-Terremoto_Valpara%C3%ADso_1906.jpg"
+  },
+  {
+    "name": "haiyuan-earthquake",
+    "friendly_name": "Haiyuan Earthquake",
+    "year": 1920,
+    "category": "disasters",
+    "description": "A massive earthquake killed over 200,000 in northwestern China.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/1920_Gansu_earthquake.svg/330px-1920_Gansu_earthquake.svg.png"
+  },
+  {
+    "name": "quetta-earthquake",
+    "friendly_name": "Quetta Earthquake",
+    "year": 1935,
+    "category": "disasters",
+    "description": "An earthquake killed 30,000-60,000 in British India.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quake_epicenters_1963-98.png/330px-Quake_epicenters_1963-98.png"
+  },
+  {
+    "name": "ashgabat-earthquake",
+    "friendly_name": "Ashgabat Earthquake",
+    "year": 1948,
+    "category": "disasters",
+    "description": "A massive earthquake killed over 100,000 in Soviet Turkmenistan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/330px-View_of_Ashgabat_%2842376779291%29.jpg"
+  },
+  {
+    "name": "valdivia-earthquake",
+    "friendly_name": "Valdivia Earthquake",
+    "year": 1960,
+    "category": "disasters",
+    "description": "The most powerful earthquake ever recorded struck Chile.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Valdivia_after_earthquake%2C_1960.jpg/330px-Valdivia_after_earthquake%2C_1960.jpg"
+  },
+  {
+    "name": "peru-earthquake-1970",
+    "friendly_name": "Peru Earthquake",
+    "year": 1970,
+    "category": "disasters",
+    "description": "An earthquake triggered landslides that killed 70,000 in Peru.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Statue_of_Christ_at_Cemetery_Hill_overlooking_old_Yungay.jpg/330px-Statue_of_Christ_at_Cemetery_Hill_overlooking_old_Yungay.jpg"
+  },
+  {
+    "name": "guatemala-earthquake",
+    "friendly_name": "Guatemala Earthquake",
+    "year": 1976,
+    "category": "disasters",
+    "description": "A devastating earthquake killed 23,000 in Central America.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/GuateQuake1976Patzicia.jpg/330px-GuateQuake1976Patzicia.jpg"
+  },
+  {
+    "name": "iran-earthquake-1990",
+    "friendly_name": "Iran Earthquake",
+    "year": 1990,
+    "category": "disasters",
+    "description": "A major earthquake killed 35,000-50,000 in northern Iran.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Collapse_of_Unreinforced_Masonry_Buildings%2C_Iran_%28Persia%29_-_1990_Manjil_Roudbar_Earthquake.jpg/330px-Collapse_of_Unreinforced_Masonry_Buildings%2C_Iran_%28Persia%29_-_1990_Manjil_Roudbar_Earthquake.jpg"
+  },
+  {
+    "name": "christchurch-earthquake",
+    "friendly_name": "Christchurch Earthquake",
+    "year": 2011,
+    "category": "disasters",
+    "description": "An earthquake killed 185 people and devastated New Zealand's second-largest city.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ChristchurchBasilicaPostEarthquake_gobeirne.jpg/330px-ChristchurchBasilicaPostEarthquake_gobeirne.jpg"
+  },
+  {
+    "name": "hatepe-eruption",
+    "friendly_name": "Hatepe Eruption",
+    "year": 180,
+    "category": "disasters",
+    "description": "The largest volcanic eruption in 5,000 years occurred in New Zealand.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lake_taupo_landsat_%26_volcanic_features.jpg/330px-Lake_taupo_landsat_%26_volcanic_features.jpg"
+  },
+  {
+    "name": "samalas-eruption",
+    "friendly_name": "Samalas Eruption",
+    "year": 1257,
+    "category": "disasters",
+    "description": "A massive Indonesian eruption caused global climate effects.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rinjani_mount.jpg/330px-Rinjani_mount.jpg"
+  },
+  {
+    "name": "huaynaputina-eruption",
+    "friendly_name": "Huaynaputina Eruption",
+    "year": 1600,
+    "category": "disasters",
+    "description": "The largest volcanic eruption in South American history caused global cooling.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/330px-Flag_of_Peru.svg.png"
+  },
+  {
+    "name": "unzen-eruption",
+    "friendly_name": "Mount Unzen Disaster",
+    "year": 1792,
+    "category": "disasters",
+    "description": "A volcanic collapse triggered a tsunami that killed 15,000 in Japan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Unzen_pyroclastic_and_lahar_deposits.jpg/330px-Unzen_pyroclastic_and_lahar_deposits.jpg"
+  },
+  {
+    "name": "nevado-del-ruiz",
+    "friendly_name": "Nevado del Ruiz Eruption",
+    "year": 1985,
+    "category": "disasters",
+    "description": "A volcanic mudflow buried the Colombian town of Armero, killing 23,000.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Nevado_del_Ruiz_by_Edgar.png/330px-Nevado_del_Ruiz_by_Edgar.png"
+  },
+  {
+    "name": "pinatubo-eruption",
+    "friendly_name": "Mount Pinatubo Eruption",
+    "year": 1991,
+    "category": "disasters",
+    "description": "The second-largest volcanic eruption of the 20th century lowered global temperatures.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg/330px-Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg"
+  },
+  {
+    "name": "vasa-sinking",
+    "friendly_name": "Vasa Sinks",
+    "year": 1628,
+    "category": "disasters",
+    "description": "The Swedish warship sank on its maiden voyage in Stockholm harbor.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/The_Vasa_from_the_Bow.jpg/330px-The_Vasa_from_the_Bow.jpg"
+  },
+  {
+    "name": "princess-alice-disaster",
+    "friendly_name": "Princess Alice Disaster",
+    "year": 1878,
+    "category": "disasters",
+    "description": "A pleasure steamer collision killed over 650 in the Thames River.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Princess_alice_collision_in_thames.jpg/330px-Princess_alice_collision_in_thames.jpg"
+  },
+  {
+    "name": "general-slocum",
+    "friendly_name": "General Slocum Disaster",
+    "year": 1904,
+    "category": "disasters",
+    "description": "A steamship fire killed over 1,000 in New York's East River.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PS_General_Slocum.jpg/330px-PS_General_Slocum.jpg"
+  },
+  {
+    "name": "empress-ireland",
+    "friendly_name": "Empress of Ireland Sinks",
+    "year": 1914,
+    "category": "disasters",
+    "description": "A collision sank the ocean liner in 14 minutes, killing 1,012.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Illustration_-_Sinking_of_the_Empress_of_Ireland%2C_1914.jpg/330px-Illustration_-_Sinking_of_the_Empress_of_Ireland%2C_1914.jpg"
+  },
+  {
+    "name": "eastland-disaster",
+    "friendly_name": "Eastland Disaster",
+    "year": 1915,
+    "category": "disasters",
+    "description": "A passenger ship capsized in the Chicago River, killing 844.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/S.S._Eastland_c.1911.jpg/330px-S.S._Eastland_c.1911.jpg"
+  },
+  {
+    "name": "wilhelm-gustloff",
+    "friendly_name": "Wilhelm Gustloff Sinks",
+    "year": 1945,
+    "category": "disasters",
+    "description": "A Soviet submarine sank a refugee ship, killing over 9,000.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wilhelm-Gustloff.jpg/330px-Wilhelm-Gustloff.jpg"
+  },
+  {
+    "name": "andrea-doria",
+    "friendly_name": "Andrea Doria Sinks",
+    "year": 1956,
+    "category": "disasters",
+    "description": "An Italian ocean liner sank after a collision off Massachusetts.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Andrea_Doria.jpg/330px-Andrea_Doria.jpg"
+  },
+  {
+    "name": "dona-paz-disaster",
+    "friendly_name": "Doña Paz Disaster",
+    "year": 1987,
+    "category": "disasters",
+    "description": "The deadliest peacetime maritime disaster killed over 4,000 in the Philippines.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Do%C3%B1a_Paz_at_Tacloban.jpg/330px-Do%C3%B1a_Paz_at_Tacloban.jpg"
+  },
+  {
+    "name": "estonia-ferry",
+    "friendly_name": "MS Estonia Sinks",
+    "year": 1994,
+    "category": "disasters",
+    "description": "A ferry sank in the Baltic Sea, killing 852 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Estonia_ferry2.jpg/330px-Estonia_ferry2.jpg"
+  },
+  {
+    "name": "sewol-ferry",
+    "friendly_name": "Sewol Ferry Sinks",
+    "year": 2014,
+    "category": "disasters",
+    "description": "A ferry capsized off South Korea, killing 304, mostly students.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Korean_Ferry_Sewol_Capsized%2C_2014.jpg/330px-Korean_Ferry_Sewol_Capsized%2C_2014.jpg"
+  },
+  {
+    "name": "courrieres-mine",
+    "friendly_name": "Courrières Mine Disaster",
+    "year": 1906,
+    "category": "disasters",
+    "description": "Europe's worst mining disaster killed 1,099 in France.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Courri%C3%A8res_1906_LeJ.jpg/330px-Courri%C3%A8res_1906_LeJ.jpg"
+  },
+  {
+    "name": "halifax-explosion",
+    "friendly_name": "Halifax Explosion",
+    "year": 1917,
+    "category": "disasters",
+    "description": "A munitions ship explosion devastated Halifax, killing 2,000.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Halifax_Explosion_blast_cloud_restored.jpg/330px-Halifax_Explosion_blast_cloud_restored.jpg"
+  },
+  {
+    "name": "minamata-disease",
+    "friendly_name": "Minamata Disease Discovered",
+    "year": 1956,
+    "category": "disasters",
+    "description": "Mercury poisoning from industrial waste caused neurological disease in Japan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Tomokos_hand.gif"
+  },
+  {
+    "name": "tenerife-airport",
+    "friendly_name": "Tenerife Airport Disaster",
+    "year": 1977,
+    "category": "disasters",
+    "description": "Two Boeing 747s collided, killing 583 in the deadliest aviation accident.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Het_verongelukte_KLM-toestel_De_Rijn%2C_Bestanddeelnr_929-1005_-_cropped.jpg/330px-Het_verongelukte_KLM-toestel_De_Rijn%2C_Bestanddeelnr_929-1005_-_cropped.jpg"
+  },
+  {
+    "name": "piper-alpha",
+    "friendly_name": "Piper Alpha Disaster",
+    "year": 1988,
+    "category": "disasters",
+    "description": "An oil platform explosion killed 167 in the North Sea.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Piper_Alpha_oil_rig_fire.jpg/330px-Piper_Alpha_oil_rig_fire.jpg"
+  },
+  {
+    "name": "rana-plaza-collapse",
+    "friendly_name": "Rana Plaza Collapse",
+    "year": 2013,
+    "category": "disasters",
+    "description": "A garment factory collapse killed 1,134 in Bangladesh.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2013_savar_building_collapse02.jpg/330px-2013_savar_building_collapse02.jpg"
+  },
+  {
+    "name": "tianjin-explosions",
+    "friendly_name": "Tianjin Explosions",
+    "year": 2015,
+    "category": "disasters",
+    "description": "Warehouse explosions killed 173 in the Chinese port city.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2015_Tianjin_explosion_-_Crop.jpg/330px-2015_Tianjin_explosion_-_Crop.jpg"
+  },
+  {
+    "name": "sweating-sickness",
+    "friendly_name": "Sweating Sickness Outbreak",
+    "year": 1485,
+    "category": "disasters",
+    "description": "A mysterious disease swept through England, killing thousands within hours.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Illness_of_the_Duke_of_Normandy.jpg/330px-Illness_of_the_Duke_of_Normandy.jpg"
+  },
+  {
+    "name": "third-plague-pandemic",
+    "friendly_name": "Third Plague Pandemic",
+    "year": 1855,
+    "category": "disasters",
+    "description": "A bubonic plague pandemic began in China and spread worldwide.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg/330px-Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg"
+  },
+  {
+    "name": "russian-flu-1889",
+    "friendly_name": "Russian Flu Pandemic",
+    "year": 1889,
+    "category": "disasters",
+    "description": "A global influenza pandemic killed over one million people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg/330px-Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg"
+  },
+  {
+    "name": "asian-flu-1957",
+    "friendly_name": "Asian Flu Pandemic",
+    "year": 1957,
+    "category": "disasters",
+    "description": "An influenza pandemic originating in East Asia killed 1-2 million worldwide.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/H1N1_navbox.jpg/330px-H1N1_navbox.jpg"
+  },
+  {
+    "name": "hong-kong-flu",
+    "friendly_name": "Hong Kong Flu Pandemic",
+    "year": 1968,
+    "category": "disasters",
+    "description": "A global flu pandemic killed approximately one million people.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/330px-Flag_of_Hong_Kong.svg.png"
+  },
+  {
+    "name": "swine-flu-2009",
+    "friendly_name": "2009 Swine Flu Pandemic",
+    "year": 2009,
+    "category": "disasters",
+    "description": "A new influenza strain caused a global pandemic.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/H1N1_map_by_confirmed_cases.svg/330px-H1N1_map_by_confirmed_cases.svg.png"
+  },
+  {
+    "name": "mers-outbreak",
+    "friendly_name": "MERS Outbreak",
+    "year": 2012,
+    "category": "disasters",
+    "description": "A deadly coronavirus emerged in the Middle East.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/World_MERS_outbreak.svg/330px-World_MERS_outbreak.svg.png"
+  },
+  {
+    "name": "zika-outbreak",
+    "friendly_name": "Zika Virus Outbreak",
+    "year": 2015,
+    "category": "disasters",
+    "description": "A mosquito-borne virus spread through the Americas, causing birth defects.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Zika_EM_CDC_20541.png/330px-Zika_EM_CDC_20541.png"
+  },
+  {
+    "name": "great-hurricane-1780",
+    "friendly_name": "Great Hurricane of 1780",
+    "year": 1780,
+    "category": "disasters",
+    "description": "The deadliest Atlantic hurricane in history killed 22,000 in the Caribbean.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Great_Hurricane_%281780%29_areas_affected.png/330px-Great_Hurricane_%281780%29_areas_affected.png"
+  },
+  {
+    "name": "carrington-event",
+    "friendly_name": "Carrington Event",
+    "year": 1859,
+    "category": "disasters",
+    "description": "The most powerful solar storm on record caused worldwide telegraph failures.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Carrington_Richard_drawing_of_1859_sunspots.jpeg/330px-Carrington_Richard_drawing_of_1859_sunspots.jpeg"
+  },
+  {
+    "name": "tri-state-tornado",
+    "friendly_name": "Tri-State Tornado",
+    "year": 1925,
+    "category": "disasters",
+    "description": "The deadliest tornado in US history killed 695 across three states.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tri_State_Tornado_Drawing.jpg/330px-Tri_State_Tornado_Drawing.jpg"
+  },
+  {
+    "name": "ohio-river-flood",
+    "friendly_name": "Ohio River Flood",
+    "year": 1937,
+    "category": "disasters",
+    "description": "Massive flooding displaced one million people across the Ohio Valley.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ohiorivermap.png/330px-Ohiorivermap.png"
+  },
+  {
+    "name": "bangladesh-cyclone-1970",
+    "friendly_name": "1970 Bangladesh Cyclone",
+    "year": 1970,
+    "category": "disasters",
+    "description": "A devastating cyclone killed up to 500,000 in East Pakistan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/15B_1970-11-12_0956Z.png/330px-15B_1970-11-12_0956Z.png"
+  },
+  {
+    "name": "super-outbreak-1974",
+    "friendly_name": "Super Outbreak",
+    "year": 1974,
+    "category": "disasters",
+    "description": "148 tornadoes struck across 13 US states in 16 hours.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Super_Outbreak_1974-04-03_loop.gif/330px-Super_Outbreak_1974-04-03_loop.gif"
+  },
+  {
+    "name": "hurricane-andrew",
+    "friendly_name": "Hurricane Andrew",
+    "year": 1992,
+    "category": "disasters",
+    "description": "One of the costliest hurricanes devastated South Florida.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Andrew_1992-08-23_1231Z_%28Cropped%29.png/330px-Andrew_1992-08-23_1231Z_%28Cropped%29.png"
+  },
+  {
+    "name": "european-heat-wave",
+    "friendly_name": "European Heat Wave",
+    "year": 2003,
+    "category": "disasters",
+    "description": "A prolonged heat wave killed over 70,000 people across Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Canicule_Europe_2003.jpg/330px-Canicule_Europe_2003.jpg"
+  },
+  {
+    "name": "hurricane-maria",
+    "friendly_name": "Hurricane Maria",
+    "year": 2017,
+    "category": "disasters",
+    "description": "A devastating hurricane killed nearly 3,000 in Puerto Rico.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Maria_2017-09-19_2115Z.jpg/330px-Maria_2017-09-19_2115Z.jpg"
+  },
+  {
+    "name": "australia-bushfires",
+    "friendly_name": "Australia Bushfires",
+    "year": 2019,
+    "category": "disasters",
+    "description": "Catastrophic bushfires burned 46 million acres and killed one billion animals.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png/330px-2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png"
+  },
+  {
+    "name": "pakistan-floods-2022",
+    "friendly_name": "Pakistan Floods",
+    "year": 2022,
+    "category": "disasters",
+    "description": "Catastrophic monsoon flooding killed 1,700 and affected 33 million.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Pakistan_flood_damage_2010.jpg/330px-Pakistan_flood_damage_2010.jpg"
+  },
+  {
+    "name": "yellowstone-supervolcano",
+    "friendly_name": "Yellowstone Supereruption",
+    "year": -640000,
+    "category": "disasters",
+    "description": "The most recent Yellowstone supereruption blanketed North America in ash.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Yellowstone_River_in_Hayden_Valley.jpg/330px-Yellowstone_River_in_Hayden_Valley.jpg"
+  },
+  {
+    "name": "toba-supereruption",
+    "friendly_name": "Toba Supereruption",
+    "year": -74000,
+    "category": "disasters",
+    "description": "A massive volcanic eruption may have nearly caused human extinction.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tobaeruption.png/330px-Tobaeruption.png"
+  },
+  {
+    "name": "black-sea-deluge",
+    "friendly_name": "Black Sea Deluge Theory",
+    "year": -5600,
+    "category": "disasters",
+    "description": "Rising sea levels may have catastrophically flooded the Black Sea basin.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Map_of_the_Black_Sea_with_bathymetry_and_surrounding_relief.svg/330px-Map_of_the_Black_Sea_with_bathymetry_and_surrounding_relief.svg.png"
+  },
+  {
+    "name": "storegga-tsunami",
+    "friendly_name": "Storegga Tsunami",
+    "year": -6100,
+    "category": "disasters",
+    "description": "A massive underwater landslide caused devastating tsunamis in Northern Europe.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/StoreggaFLCommonsZone.jpg/330px-StoreggaFLCommonsZone.jpg"
+  },
+  {
+    "name": "late-bronze-age-drought",
+    "friendly_name": "Late Bronze Age Drought",
+    "year": -1200,
+    "category": "disasters",
+    "description": "A severe megadrought contributed to the Bronze Age Collapse.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg"
+  },
+  {
+    "name": "justinian-plague-recurrence",
+    "friendly_name": "Plague of Sheroe",
+    "year": 627,
+    "category": "disasters",
+    "description": "A major plague outbreak devastated the Sasanian Persian Empire.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Plaguet03.jpg/330px-Plaguet03.jpg"
+  },
+  {
+    "name": "mongol-black-death-spread",
+    "friendly_name": "Siege of Caffa",
+    "year": 1346,
+    "category": "disasters",
+    "description": "Mongols catapulted plague victims into a city, spreading the Black Death to Europe.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/THEODOSIA_01.jpg/330px-THEODOSIA_01.jpg"
+  },
+  {
+    "name": "dancing-plague",
+    "friendly_name": "Dancing Plague of 1518",
+    "year": 1518,
+    "category": "disasters",
+    "description": "A strange outbreak caused hundreds to dance uncontrollably for days in Strasbourg.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg/330px-Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg"
+  },
+  {
+    "name": "great-fire-new-york",
+    "friendly_name": "Great Fire of New York",
+    "year": 1835,
+    "category": "disasters",
+    "description": "A devastating fire destroyed much of lower Manhattan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Great_Fire_of_the_City_of_New_York_Dec_16_1835.jpg/330px-The_Great_Fire_of_the_City_of_New_York_Dec_16_1835.jpg"
+  },
+  {
+    "name": "ansei-earthquake",
+    "friendly_name": "Ansei Great Earthquakes",
+    "year": 1855,
+    "category": "disasters",
+    "description": "A series of earthquakes struck Japan, killing over 10,000 in Edo (Tokyo).",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kawaraban-of-1855-Ansei-Edo-earthquake.png/330px-Kawaraban-of-1855-Ansei-Edo-earthquake.png"
+  },
+  {
+    "name": "london-beer-flood",
+    "friendly_name": "London Beer Flood",
+    "year": 1814,
+    "category": "disasters",
+    "description": "A brewery vat explosion released a flood of beer that killed eight people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Horseshoe_Brewery%2C_London%2C_c._1800.jpg/330px-Horseshoe_Brewery%2C_London%2C_c._1800.jpg"
+  },
+  {
+    "name": "boston-molasses-flood",
+    "friendly_name": "Boston Molasses Flood",
+    "year": 1919,
+    "category": "disasters",
+    "description": "A molasses tank burst, sending a deadly wave through Boston streets.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/BostonMolassesDisaster.jpg/330px-BostonMolassesDisaster.jpg"
+  },
+  {
+    "name": "banqiao-dam",
+    "friendly_name": "Banqiao Dam Failure",
+    "year": 1975,
+    "category": "disasters",
+    "description": "Dam failures killed an estimated 170,000 in the deadliest dam collapse.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banqiao_Dam_Failure.svg/330px-Banqiao_Dam_Failure.svg.png"
+  },
+  {
+    "name": "lake-nyos",
+    "friendly_name": "Lake Nyos Disaster",
+    "year": 1986,
+    "category": "disasters",
+    "description": "A volcanic lake released CO2 that suffocated 1,700 people in Cameroon.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tml15-16_Nc.jpg/330px-Tml15-16_Nc.jpg"
+  },
+  {
+    "name": "vajont-dam",
+    "friendly_name": "Vajont Dam Disaster",
+    "year": 1963,
+    "category": "disasters",
+    "description": "A landslide into a reservoir created a megatsunami that killed 2,000 in Italy.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/VajontDiga.jpg/330px-VajontDiga.jpg"
+  },
+  {
+    "name": "el-nino-1997",
+    "friendly_name": "1997-98 El Niño",
+    "year": 1997,
+    "category": "disasters",
+    "description": "One of the strongest El Niño events caused $35 billion in damage worldwide.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sst_9798_animated.gif/330px-Sst_9798_animated.gif"
+  },
+  {
+    "name": "hurricane-harvey",
+    "friendly_name": "Hurricane Harvey",
+    "year": 2017,
+    "category": "disasters",
+    "description": "Record-breaking rainfall caused catastrophic flooding in Houston.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Harvey_2017-08-25_2337Z.jpg/330px-Harvey_2017-08-25_2337Z.jpg"
+  },
+  {
+    "name": "camp-fire-paradise",
+    "friendly_name": "Camp Fire",
+    "year": 2018,
+    "category": "disasters",
+    "description": "California's deadliest wildfire destroyed the town of Paradise.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Campfire_Pinecone.png/330px-Campfire_Pinecone.png"
+  },
+  {
+    "name": "lahaina-fire",
+    "friendly_name": "Lahaina Wildfire",
+    "year": 2023,
+    "category": "disasters",
+    "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 97 people.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coast_Guard_Station_Maui_-_7964748.jpg/330px-Coast_Guard_Station_Maui_-_7964748.jpg"
+  }
+]

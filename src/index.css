@@ -1,13 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'IM Fell Great Primer SC', Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #FDF5E6;
+  min-height: 100vh;
+  position: relative;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Paper grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Sketch border effect */
+.sketch-border {
+  border: 3px solid #2C2C2C;
+  border-radius: 8px;
+  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.sketch-border::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid rgba(44, 44, 44, 0.3);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+/* Card worn/antique edge effect */
+.card-worn-edge {
+  box-shadow:
+    inset 0 0 20px rgba(139, 69, 19, 0.15),
+    inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Reveal animation for incorrect guess */
+@keyframes revealYear {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(90deg); }
+  100% { transform: rotateY(0deg); }
+}
+
+.reveal-year {
+  animation: revealYear 0.6s ease-in-out;
+}
+
+/* Touch-friendly styles */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Timeline scroll optimization for mobile */
+.timeline-scroll-vertical {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #DAA520 #FDF5E6;
+}
+
+.timeline-scroll-vertical::-webkit-scrollbar {
+  width: 8px;
+}
+
+.timeline-scroll-vertical::-webkit-scrollbar-track {
+  background: #FDF5E6;
+  border-radius: 4px;
+}
+
+.timeline-scroll-vertical::-webkit-scrollbar-thumb {
+  background: #DAA520;
+  border-radius: 4px;
+}
+
+/* Ensure minimum touch target size on mobile */
+button, [role="button"] {
+  min-height: 44px;
+}
+
+/* Prevent double-tap zoom on interactive elements */
+button, a, input, [role="button"] {
+  touch-action: manipulation;
+}
+
+/* Long-press visual feedback */
+.long-press-active {
+  transform: scale(0.95);
+  opacity: 0.8;
+}
+
+/* Screen shake animation class */
+.animate-screen-shake {
+  animation: screenShake 0.4s ease-in-out;
+}
+
+@keyframes screenShake {
+  0%, 100% { transform: translate(0, 0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-3px, 0); }
+  20%, 40%, 60%, 80% { transform: translate(3px, 0); }
+}
+
+/* Success glow animation */
+@keyframes successGlow {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(34, 197, 94, 0.4); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.animate-success-glow {
+  animation: successGlow 0.6s ease-out;
+}
+
+/* Error shake and glow */
+@keyframes errorPulse {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(239, 68, 68, 0.4); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.animate-error-pulse {
+  animation: errorPulse 0.6s ease-out;
 }
