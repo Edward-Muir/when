@@ -1,25 +1,51 @@
 import React, { useRef, useEffect } from 'react';
+import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent } from '../../types';
 import TimelineEvent from './TimelineEvent';
-import PlacementButton from './PlacementButton';
+import Card from '../Card';
 
 interface TimelineProps {
   events: HistoricalEvent[];
-  onPlacement: (index: number) => void;
   onEventTap: (event: HistoricalEvent) => void;
-  disabled?: boolean;
   newEventName?: string; // Name of newly added event for animation
+  // Drag and drop props
+  isDragging: boolean;
+  insertionIndex: number | null;
+  draggedCard: HistoricalEvent | null;
 }
+
+// Ghost card that shows where the dragged card will land
+const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
+  <div className="flex items-center py-1 opacity-50">
+    {/* Empty date area to align with real cards */}
+    <div className="flex items-center justify-end w-14 sm:w-16 shrink-0">
+      <span className="text-sketch/50 font-bold text-sm sm:text-base">?</span>
+      <div className="w-4 h-0.5 bg-amber-300 ml-1 -mr-1 z-10" />
+    </div>
+    {/* Ghost card with dashed border */}
+    <div className="ml-4">
+      <div className="border-2 border-dashed border-amber-400 rounded-lg">
+        <Card event={event} size="normal" />
+      </div>
+    </div>
+  </div>
+);
 
 const Timeline: React.FC<TimelineProps> = ({
   events,
-  onPlacement,
   onEventTap,
-  disabled = false,
   newEventName,
+  isDragging,
+  insertionIndex,
+  draggedCard,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasInitialScrolled = useRef(false);
+
+  // Make the entire timeline a single drop zone
+  const { setNodeRef: setTimelineDropRef } = useDroppable({
+    id: 'timeline-zone',
+  });
 
   // Center the timeline content vertically on initial load
   useEffect(() => {
@@ -67,35 +93,37 @@ const Timeline: React.FC<TimelineProps> = ({
       {/* Vertical timeline line - positioned to align with date ticks */}
       <div className="absolute left-[calc(3.5rem+0.5rem+2px)] sm:left-[calc(4rem+0.5rem+2px)] top-0 bottom-0 w-1 bg-amber-400 rounded-full z-0" />
 
-      {/* Scrollable timeline content */}
+      {/* Scrollable timeline content - entire area is a single drop zone */}
+      {/* Scroll is disabled while dragging so year labels stay fixed as reference points */}
       <div
-        ref={scrollRef}
-        className="h-full overflow-y-auto timeline-scroll-vertical py-12 relative z-10"
+        ref={(node) => {
+          // Combine refs: scrollRef for scroll behavior, setTimelineDropRef for drop zone
+          scrollRef.current = node;
+          setTimelineDropRef(node);
+        }}
+        className={`h-full py-12 relative z-10 ${
+          isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
+        }`}
       >
         <div className="relative flex flex-col items-start min-h-full pl-2">
+          {/* Ghost card at position 0 if inserting at start */}
+          {isDragging && insertionIndex === 0 && draggedCard && (
+            <GhostCard event={draggedCard} />
+          )}
 
-          {/* Top placement button */}
-          <PlacementButton
-            index={0}
-            onPlace={onPlacement}
-            disabled={disabled}
-            isFirst={true}
-          />
-
-          {/* Events with placement buttons between */}
+          {/* Events with inline ghost cards at insertion points */}
           {events.map((event, idx) => (
             <React.Fragment key={event.name}>
               <TimelineEvent
                 event={event}
                 onTap={() => onEventTap(event)}
                 isNew={event.name === newEventName}
+                index={idx}
               />
-              <PlacementButton
-                index={idx + 1}
-                onPlace={onPlacement}
-                disabled={disabled}
-                isLast={idx === events.length - 1}
-              />
+              {/* Show ghost card AFTER this event if inserting at idx + 1 */}
+              {isDragging && insertionIndex === idx + 1 && draggedCard && (
+                <GhostCard event={draggedCard} />
+              )}
             </React.Fragment>
           ))}
         </div>

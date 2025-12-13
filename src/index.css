@@ -198,3 +198,34 @@ button, a, input, [role="button"] {
 .animate-turn-banner-backdrop {
   animation: turnBannerBackdrop 0.2s ease-out forwards;
 }
+
+/* Drag and drop styles */
+.dragging-card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(218, 165, 32, 0.5);
+  border-radius: 8px;
+  cursor: grabbing !important;
+}
+
+/* Drop zone transitions */
+.drop-zone {
+  transition: all 200ms ease-out;
+}
+
+.drop-zone-expanded {
+  min-height: 200px;
+}
+
+/* Draggable card grab cursor */
+.draggable-card {
+  cursor: grab;
+}
+
+.draggable-card:active {
+  cursor: grabbing;
+}
+
+/* Prevent text selection during drag */
+[data-dragging="true"] {
+  user-select: none;
+  -webkit-user-select: none;
+}

@@ -7,6 +7,7 @@ interface TimelineEventProps {
   event: HistoricalEvent;
   onTap: () => void;
   isNew?: boolean;
+  index: number; // For data attribute used by closest-centroid algorithm
 }
 
 const getCategoryBorderColor = (category: string): string => {
@@ -33,7 +34,7 @@ const getCategoryTitleBg = (category: string): string => {
   return colors[category] || 'bg-gray-100';
 };
 
-const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = false }) => {
+const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = false, index }) => {
   const [imageError, setImageError] = useState(false);
   const borderColor = getCategoryBorderColor(event.category);
   const titleBg = getCategoryTitleBg(event.category);
@@ -41,6 +42,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = fal
 
   return (
     <div
+      data-timeline-index={index}
       className={`
         flex items-center py-1
         ${isNew ? 'animate-entrance' : ''}
@@ -48,7 +50,10 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = fal
     >
       {/* Date side (left) with tick that overlaps timeline */}
       <div className="flex items-center justify-end w-14 sm:w-16 shrink-0">
-        <span className="text-sketch font-bold text-sm sm:text-base">
+        <span
+          data-timeline-year={event.year}
+          className="text-sketch font-bold text-sm sm:text-base"
+        >
           {formatYear(event.year)}
         </span>
         <div className="w-4 h-0.5 bg-amber-500 ml-1 -mr-1 z-10" />
