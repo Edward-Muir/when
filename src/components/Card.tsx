@@ -4,7 +4,6 @@ import CategoryIcon from './CategoryIcon';
 
 interface CardProps {
   event: HistoricalEvent;
-  isRevealing?: boolean;
   className?: string;
   rotation?: number;
   onClick?: () => void;
@@ -37,7 +36,6 @@ const getCategoryTitleBg = (category: string): string => {
 
 const Card: React.FC<CardProps> = ({
   event,
-  isRevealing = false,
   className = '',
   rotation = 0,
   onClick,
@@ -64,8 +62,6 @@ const Card: React.FC<CardProps> = ({
         border-2 ${borderColor}
         bg-white
         shadow-md
-        transition-all duration-fast
-        ${isRevealing ? 'reveal-year' : ''}
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
         ${sizeClasses}
@@ -81,7 +77,7 @@ const Card: React.FC<CardProps> = ({
         </span>
       </div>
 
-      {/* Image area - full opacity, no overlay */}
+      {/* Image area */}
       <div className="flex-1 relative">
         {hasImage ? (
           <img

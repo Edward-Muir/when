@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HistoricalEvent } from '../../types';
+import { HistoricalEvent, AnimationPhase } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
 
@@ -8,6 +8,10 @@ interface TimelineEventProps {
   onTap: () => void;
   isNew?: boolean;
   index: number; // For data attribute used by closest-centroid algorithm
+  // Animation props for placed cards
+  isAnimating?: boolean;
+  animationSuccess?: boolean;
+  animationPhase?: AnimationPhase;
 }
 
 const getCategoryBorderColor = (category: string): string => {
@@ -34,11 +38,25 @@ const getCategoryTitleBg = (category: string): string => {
   return colors[category] || 'bg-gray-100';
 };
 
-const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = false, index }) => {
+const TimelineEvent: React.FC<TimelineEventProps> = ({
+  event,
+  onTap,
+  isNew = false,
+  index,
+  isAnimating = false,
+  animationSuccess,
+  animationPhase,
+}) => {
   const [imageError, setImageError] = useState(false);
   const borderColor = getCategoryBorderColor(event.category);
   const titleBg = getCategoryTitleBg(event.category);
   const hasImage = event.image_url && !imageError;
+
+  // Determine animation class for the card
+  let cardAnimationClass = '';
+  if (isAnimating && animationPhase === 'flash') {
+    cardAnimationClass = animationSuccess ? 'animate-success-glow' : 'animate-error-pulse';
+  }
 
   return (
     <div
@@ -46,6 +64,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = fal
       className={`
         flex items-center py-1
         ${isNew ? 'animate-entrance' : ''}
+        ${animationPhase === 'moving' ? 'transition-all duration-400' : ''}
       `}
     >
       {/* Date side (left) with tick that overlaps timeline */}
@@ -69,11 +88,11 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = fal
           bg-white
           flex flex-col
           shadow-md
-          transition-all duration-150
           touch-manipulation
           active:scale-95
           z-10
           ml-4
+          ${cardAnimationClass}
         `}
       >
         {/* Title bar at top */}
@@ -83,7 +102,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({ event, onTap, isNew = fal
           </span>
         </div>
 
-        {/* Image area - full opacity, no overlay */}
+        {/* Image area */}
         <div className="flex-1 relative">
           {hasImage ? (
             <img

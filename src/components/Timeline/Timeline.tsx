@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { useDroppable } from '@dnd-kit/core';
-import { HistoricalEvent } from '../../types';
+import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
 import TimelineEvent from './TimelineEvent';
 import Card from '../Card';
 
@@ -13,6 +13,9 @@ interface TimelineProps {
   insertionIndex: number | null;
   draggedCard: HistoricalEvent | null;
   isOverTimeline: boolean;
+  // Animation props
+  lastPlacementResult: PlacementResult | null;
+  animationPhase: AnimationPhase;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -23,11 +26,9 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
       <span className="text-sketch/50 font-bold text-sm sm:text-base">?</span>
       <div className="w-4 h-0.5 bg-amber-300 ml-1 -mr-1 z-10" />
     </div>
-    {/* Ghost card with dashed border */}
+    {/* Ghost card */}
     <div className="ml-4">
-      <div className="border-2 border-dashed border-amber-400 rounded-lg">
-        <Card event={event} size="normal" />
-      </div>
+      <Card event={event} size="normal" />
     </div>
   </div>
 );
@@ -40,6 +41,8 @@ const Timeline: React.FC<TimelineProps> = ({
   insertionIndex,
   draggedCard,
   isOverTimeline,
+  lastPlacementResult,
+  animationPhase,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasInitialScrolled = useRef(false);
@@ -114,20 +117,29 @@ const Timeline: React.FC<TimelineProps> = ({
           )}
 
           {/* Events with inline ghost cards at insertion points */}
-          {events.map((event, idx) => (
-            <React.Fragment key={event.name}>
-              <TimelineEvent
-                event={event}
-                onTap={() => onEventTap(event)}
-                isNew={event.name === newEventName}
-                index={idx}
-              />
-              {/* Show ghost card AFTER this event if inserting at idx + 1 */}
-              {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (
-                <GhostCard event={draggedCard} />
-              )}
-            </React.Fragment>
-          ))}
+          {events.map((event, idx) => {
+            // Check if this event is the one being animated
+            const isAnimatingEvent = lastPlacementResult?.event.name === event.name && animationPhase !== null;
+            const animationSuccess = isAnimatingEvent ? lastPlacementResult?.success : undefined;
+
+            return (
+              <React.Fragment key={event.name}>
+                <TimelineEvent
+                  event={event}
+                  onTap={() => onEventTap(event)}
+                  isNew={event.name === newEventName}
+                  index={idx}
+                  isAnimating={isAnimatingEvent}
+                  animationSuccess={animationSuccess}
+                  animationPhase={isAnimatingEvent ? animationPhase : null}
+                />
+                {/* Show ghost card AFTER this event if inserting at idx + 1 */}
+                {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (
+                  <GhostCard event={draggedCard} />
+                )}
+              </React.Fragment>
+            );
+          })}
         </div>
       </div>
 

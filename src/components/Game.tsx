@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
 import { RotateCcw, Home, Share2 } from 'lucide-react';
 import {
@@ -20,7 +21,7 @@ import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import DraggableCard from './DraggableCard';
 import Timeline from './Timeline/Timeline';
-import EventModal from './EventModal';
+import ExpandedCard from './ExpandedCard';
 import Card from './Card';
 
 interface GameProps {
@@ -43,9 +44,8 @@ const Game: React.FC<GameProps> = ({
   onNewGame,
 }) => {
   const [showConfetti, setShowConfetti] = useState(false);
-  const [screenShake, setScreenShake] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
-  
+
   // Drag and drop state
   const [isDragging, setIsDragging] = useState(false);
   const [insertionIndex, setInsertionIndex] = useState<number | null>(null);
@@ -53,6 +53,7 @@ const Game: React.FC<GameProps> = ({
   const [isOverTimeline, setIsOverTimeline] = useState(false);
   const [yearPositions, setYearPositions] = useState<number[]>([]); // Captured at drag start
   const droppedOnTimelineRef = useRef(false); // Track if last drop was on timeline (for animation)
+  const draggedCardRef = useRef<HistoricalEvent | null>(null); // Store dragged card for DragOverlay
 
   // Make the hand area a drop zone so card can be returned
   const { setNodeRef: setHandDropRef } = useDroppable({
@@ -81,9 +82,6 @@ const Game: React.FC<GameProps> = ({
       if (state.lastPlacementResult.success) {
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 2000);
-      } else {
-        setScreenShake(true);
-        setTimeout(() => setScreenShake(false), 400);
       }
 
       setNewEventName(state.lastPlacementResult.event.name);
@@ -111,6 +109,9 @@ const Game: React.FC<GameProps> = ({
     setIsDragging(true);
     setInsertionIndex(null);
 
+    // Store the card being dragged so DragOverlay can render it even after activeCard becomes null
+    draggedCardRef.current = state.activeCard;
+
     // Capture year positions NOW - they won't change during drag (scroll is disabled)
     const yearElements = document.querySelectorAll('[data-timeline-year]');
     const positions = Array.from(yearElements).map(el => {
@@ -118,7 +119,7 @@ const Game: React.FC<GameProps> = ({
       return rect.top + rect.height / 2; // Center Y of each year
     });
     setYearPositions(positions);
-  }, []);
+  }, [state.activeCard]);
 
   // Continuous position tracking during drag
   const handleDragMove = useCallback((event: DragMoveEvent) => {
@@ -175,17 +176,23 @@ const Game: React.FC<GameProps> = ({
     // If dropped on hand zone or nowhere, card just snaps back (no action)
 
     setInsertionIndex(null);
+    draggedCardRef.current = null;
   }, [insertionIndex, onPlacement, state.isAnimating]);
 
   const handleDragCancel = useCallback(() => {
     setIsDragging(false);
     setInsertionIndex(null);
+    draggedCardRef.current = null;
   }, []);
 
   const handleActiveCardTap = () => {
     if (state.activeCard) {
       openModal(state.activeCard);
     }
+  };
+
+  const handleTimelineCardTap = (event: HistoricalEvent) => {
+    openModal(event);
   };
 
   const showYearInModal = modalEvent
@@ -207,7 +214,7 @@ const Game: React.FC<GameProps> = ({
         },
       }}
     >
-      <div className={`h-dvh min-h-screen-safe flex flex-row bg-cream overflow-hidden pt-safe pb-safe ${screenShake ? 'animate-screen-shake' : ''}`}>
+      <div className="h-dvh min-h-screen-safe flex flex-row bg-cream overflow-hidden pt-safe pb-safe">
         {/* Confetti */}
         {showConfetti && (
           <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
@@ -223,7 +230,7 @@ const Game: React.FC<GameProps> = ({
         {/* Left Panel - 40% - Game Info + Active Card (entire panel is drop zone) */}
         <div
           ref={setHandDropRef}
-          className={`w-2/5 flex flex-col h-full p-3 border-r border-amber-200/50 transition-colors duration-200 ${isOverHand ? 'bg-amber-100/50' : ''}`}
+          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 ${isOverHand ? 'bg-amber-100/50' : ''}`}
         >
             {/* Game Info */}
             <div className="mb-4">
@@ -286,23 +293,13 @@ const Game: React.FC<GameProps> = ({
               </div>
             ) : (
               state.activeCard && (
-                <div className="flex flex-col items-start gap-2 pb-2 pointer-events-auto">
+                <div className="relative flex flex-col items-start gap-2 pb-2 pointer-events-auto">
                   <p className="text-sketch/60 text-xs">Drag to timeline:</p>
                   <DraggableCard
                     event={state.activeCard}
                     onTap={handleActiveCardTap}
-                    lastResult={state.lastPlacementResult}
-                    isAnimating={state.isAnimating}
                     disabled={state.isAnimating}
                   />
-                  {/* Ghost card when NOT over timeline (card will return to hand) */}
-                  {isDragging && !isOverTimeline && (
-                    <div className="opacity-50">
-                      <div className="border-2 border-dashed border-amber-400 rounded-lg">
-                        <Card event={state.activeCard} size="normal" />
-                      </div>
-                    </div>
-                  )}
                   <p className="text-sketch/40 text-xs">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
                 </div>
               )
@@ -313,37 +310,41 @@ const Game: React.FC<GameProps> = ({
         <div className="w-3/5 h-full">
           <Timeline
             events={state.timeline}
-            onEventTap={openModal}
+            onEventTap={handleTimelineCardTap}
             newEventName={newEventName}
             isDragging={isDragging}
             insertionIndex={insertionIndex}
             draggedCard={state.activeCard}
             isOverTimeline={isOverTimeline}
+            lastPlacementResult={state.lastPlacementResult}
+            animationPhase={state.animationPhase}
           />
         </div>
 
         {/* Drag Overlay - The card that follows your finger */}
-        <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
-          {isDragging && state.activeCard ? (
-            <div
-              className="dragging-card"
-              style={{
-                transform: 'scale(1.05)',
-              }}
-            >
-              <Card event={state.activeCard} size="normal" />
-            </div>
-          ) : null}
-        </DragOverlay>
-
-        {/* Event Modal */}
-        {modalEvent && (
-          <EventModal
-            event={modalEvent}
-            onClose={closeModal}
-            showYear={showYearInModal}
-          />
+        {/* Portal to document.body to fix React 19 positioning issue */}
+        {createPortal(
+          <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
+            {isDragging && draggedCardRef.current ? (
+              <div
+                className="dragging-card"
+                style={{
+                  transform: 'scale(1.05)',
+                }}
+              >
+                <Card event={draggedCardRef.current} size="normal" />
+              </div>
+            ) : null}
+          </DragOverlay>,
+          document.body
         )}
+
+        {/* Expanded Card */}
+        <ExpandedCard
+          event={modalEvent}
+          onClose={closeModal}
+          showYear={showYearInModal}
+        />
       </div>
     </DndContext>
   );

@@ -38,6 +38,8 @@ export interface PlacementResult {
   attemptedPosition: number;
 }
 
+export type AnimationPhase = 'flash' | 'moving' | null;
+
 export interface WhenGameState {
   phase: GamePhase;
   gameMode: GameMode | null;
@@ -49,6 +51,7 @@ export interface WhenGameState {
   correctPlacements: number;
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
+  animationPhase: AnimationPhase;
   lastConfig: GameConfig | null;
 }
 
