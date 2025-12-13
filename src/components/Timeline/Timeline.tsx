@@ -12,6 +12,7 @@ interface TimelineProps {
   isDragging: boolean;
   insertionIndex: number | null;
   draggedCard: HistoricalEvent | null;
+  isOverTimeline: boolean;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -38,6 +39,7 @@ const Timeline: React.FC<TimelineProps> = ({
   isDragging,
   insertionIndex,
   draggedCard,
+  isOverTimeline,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasInitialScrolled = useRef(false);
@@ -107,7 +109,7 @@ const Timeline: React.FC<TimelineProps> = ({
       >
         <div className="relative flex flex-col items-start min-h-full pl-2">
           {/* Ghost card at position 0 if inserting at start */}
-          {isDragging && insertionIndex === 0 && draggedCard && (
+          {isDragging && isOverTimeline && insertionIndex === 0 && draggedCard && (
             <GhostCard event={draggedCard} />
           )}
 
@@ -121,7 +123,7 @@ const Timeline: React.FC<TimelineProps> = ({
                 index={idx}
               />
               {/* Show ghost card AFTER this event if inserting at idx + 1 */}
-              {isDragging && insertionIndex === idx + 1 && draggedCard && (
+              {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (
                 <GhostCard event={draggedCard} />
               )}
             </React.Fragment>

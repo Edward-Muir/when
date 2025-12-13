@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import ConfettiExplosion from 'react-confetti-explosion';
 import { RotateCcw, Home, Share2 } from 'lucide-react';
 import {
@@ -17,10 +17,10 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
+import { formatYear } from '../utils/gameLogic';
 import DraggableCard from './DraggableCard';
 import Timeline from './Timeline/Timeline';
 import EventModal from './EventModal';
-import TurnBanner from './TurnBanner';
 import Card from './Card';
 
 interface GameProps {
@@ -45,13 +45,14 @@ const Game: React.FC<GameProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [screenShake, setScreenShake] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
-  const [showTurnBanner, setShowTurnBanner] = useState(false);
-
+  
   // Drag and drop state
   const [isDragging, setIsDragging] = useState(false);
   const [insertionIndex, setInsertionIndex] = useState<number | null>(null);
   const [isOverHand, setIsOverHand] = useState(false);
+  const [isOverTimeline, setIsOverTimeline] = useState(false);
   const [yearPositions, setYearPositions] = useState<number[]>([]); // Captured at drag start
+  const droppedOnTimelineRef = useRef(false); // Track if last drop was on timeline (for animation)
 
   // Make the hand area a drop zone so card can be returned
   const { setNodeRef: setHandDropRef } = useDroppable({
@@ -87,16 +88,8 @@ const Game: React.FC<GameProps> = ({
 
       setNewEventName(state.lastPlacementResult.event.name);
       setTimeout(() => setNewEventName(undefined), 1000);
-
-      if (state.phase !== 'gameOver') {
-        setShowTurnBanner(true);
-      }
     }
-  }, [state.lastPlacementResult, state.phase]);
-
-  const handleDismissTurnBanner = useCallback(() => {
-    setShowTurnBanner(false);
-  }, []);
+  }, [state.lastPlacementResult]);
 
   // Calculate insertion index from pointer Y against pre-captured year positions
   const calculateInsertionFromPositions = useCallback((pointerY: number, positions: number[]): number => {
@@ -149,29 +142,35 @@ const Game: React.FC<GameProps> = ({
     setInsertionIndex(newIndex);
   }, [yearPositions, calculateInsertionFromPositions]);
 
-  // handleDragOver now only tracks whether we're over the hand zone (for visual feedback)
+  // handleDragOver tracks which zone we're over (for visual feedback)
   // Position calculation is handled by handleDragMove
   const handleDragOver = useCallback((event: DragOverEvent) => {
     const { over } = event;
 
     if (!over) {
       setIsOverHand(false);
+      setIsOverTimeline(false);
       return;
     }
 
     setIsOverHand(over.id === 'hand-zone');
+    setIsOverTimeline(over.id === 'timeline-zone');
   }, []);
 
   const handleDragEnd = useCallback((event: DragEndEvent) => {
     const { over } = event;
+    const isDropOnTimeline = over?.id === 'timeline-zone';
+
+    // Track if dropped on timeline (for DragOverlay animation)
+    droppedOnTimelineRef.current = isDropOnTimeline && insertionIndex !== null && !state.isAnimating;
 
     setIsDragging(false);
     setIsOverHand(false);
+    setIsOverTimeline(false);
 
     // Only place if dropped on timeline zone and we have a valid insertion index
-    const isDropOnTimeline = over?.id === 'timeline-zone';
-    if (isDropOnTimeline && insertionIndex !== null && !state.isAnimating) {
-      onPlacement(insertionIndex);
+    if (droppedOnTimelineRef.current) {
+      onPlacement(insertionIndex!);
     }
     // If dropped on hand zone or nowhere, card just snaps back (no action)
 
@@ -235,6 +234,22 @@ const Game: React.FC<GameProps> = ({
               <div className="text-amber-600 text-sm font-medium">
                 Score: {state.correctPlacements}/{state.currentTurn > 0 ? state.currentTurn - 1 : 0}
               </div>
+
+              {/* Last Result - shown until next placement */}
+              {state.lastPlacementResult && (
+                <div className={`mt-2 p-2 rounded-lg text-sm ${
+                  state.lastPlacementResult.success
+                    ? 'bg-green-100 text-green-700'
+                    : 'bg-red-100 text-red-700'
+                }`}>
+                  <div className="font-medium">
+                    {state.lastPlacementResult.success ? '✓ Correct!' : '✗ Wrong!'}
+                  </div>
+                  <div className="text-xs opacity-80">
+                    {state.lastPlacementResult.event.friendly_name} ({formatYear(state.lastPlacementResult.event.year)})
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Spacer */}
@@ -273,24 +288,21 @@ const Game: React.FC<GameProps> = ({
               state.activeCard && (
                 <div className="flex flex-col items-start gap-2 pb-2 pointer-events-auto">
                   <p className="text-sketch/60 text-xs">Drag to timeline:</p>
-                  <div className="relative">
-                    {/* Ghost card shows when hovering over hand zone */}
-                    {isDragging && isOverHand && (
-                      <div className="opacity-50 border-2 border-dashed border-amber-400 rounded-lg">
+                  <DraggableCard
+                    event={state.activeCard}
+                    onTap={handleActiveCardTap}
+                    lastResult={state.lastPlacementResult}
+                    isAnimating={state.isAnimating}
+                    disabled={state.isAnimating}
+                  />
+                  {/* Ghost card when NOT over timeline (card will return to hand) */}
+                  {isDragging && !isOverTimeline && (
+                    <div className="opacity-50">
+                      <div className="border-2 border-dashed border-amber-400 rounded-lg">
                         <Card event={state.activeCard} size="normal" />
                       </div>
-                    )}
-                    {/* Actual draggable card - hidden when ghost is showing */}
-                    <div className={isDragging && isOverHand ? 'hidden' : ''}>
-                      <DraggableCard
-                        event={state.activeCard}
-                        onTap={handleActiveCardTap}
-                        lastResult={state.lastPlacementResult}
-                        isAnimating={state.isAnimating}
-                        disabled={state.isAnimating}
-                      />
                     </div>
-                  </div>
+                  )}
                   <p className="text-sketch/40 text-xs">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
                 </div>
               )
@@ -306,11 +318,12 @@ const Game: React.FC<GameProps> = ({
             isDragging={isDragging}
             insertionIndex={insertionIndex}
             draggedCard={state.activeCard}
+            isOverTimeline={isOverTimeline}
           />
         </div>
 
         {/* Drag Overlay - The card that follows your finger */}
-        <DragOverlay>
+        <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
           {isDragging && state.activeCard ? (
             <div
               className="dragging-card"
@@ -329,15 +342,6 @@ const Game: React.FC<GameProps> = ({
             event={modalEvent}
             onClose={closeModal}
             showYear={showYearInModal}
-          />
-        )}
-
-        {/* Turn Banner */}
-        {showTurnBanner && state.lastPlacementResult && (
-          <TurnBanner
-            placementResult={state.lastPlacementResult}
-            nextPlayerName={null}
-            onDismiss={handleDismissTurnBanner}
           />
         )}
       </div>
