@@ -30,6 +30,7 @@ const initialState: WhenGameState = {
   correctPlacements: 0,
   lastPlacementResult: null,
   isAnimating: false,
+  animationPhase: null,
   lastConfig: null,
 };
 
@@ -90,6 +91,7 @@ export function useWhenGame(): UseWhenGameReturn {
       correctPlacements: 0,
       lastPlacementResult: null,
       isAnimating: false,
+      animationPhase: null,
       lastConfig: config,
     });
   }, [allEvents]);
@@ -110,46 +112,92 @@ export function useWhenGame(): UseWhenGameReturn {
       attemptedPosition: insertionIndex,
     };
 
-    // Set animating state
-    setState((prev) => ({
-      ...prev,
-      isAnimating: true,
-      lastPlacementResult: result,
-    }));
+    if (isCorrect) {
+      // Correct placement: insert immediately at correct position, show green flash
+      const newTimeline = insertIntoTimeline(state.timeline, event, correctPosition);
 
-    // After animation delay, update the game state
-    const animationDelay = isCorrect ? 600 : 1200; // Longer delay for incorrect to show flip animation
+      setState((prev) => ({
+        ...prev,
+        timeline: newTimeline,
+        activeCard: null, // Remove from hand immediately
+        isAnimating: true,
+        animationPhase: 'flash',
+        lastPlacementResult: result,
+      }));
 
-    setTimeout(() => {
-      setState((prev) => {
-        // Insert the card at the correct position
-        const newTimeline = insertIntoTimeline(prev.timeline, event, correctPosition);
+      // After flash animation, finalize
+      setTimeout(() => {
+        setState((prev) => {
+          const [nextCard, ...remainingDeck] = prev.deck;
+          const newTurn = prev.currentTurn + 1;
+          const isSuddenDeath = prev.gameMode === 'suddenDeath';
+          const noMoreCards = !nextCard && remainingDeck.length === 0;
+          const turnsExhausted = newTurn > prev.totalTurns;
+          const isGameOver = noMoreCards || (!isSuddenDeath && turnsExhausted);
 
-        // Draw next card
-        const [nextCard, ...remainingDeck] = prev.deck;
-        const newTurn = prev.currentTurn + 1;
+          return {
+            ...prev,
+            activeCard: isGameOver ? null : (nextCard || null),
+            deck: remainingDeck,
+            currentTurn: newTurn,
+            correctPlacements: prev.correctPlacements + 1,
+            phase: isGameOver ? 'gameOver' : 'playing',
+            isAnimating: false,
+            animationPhase: null,
+          };
+        });
+      }, 600);
+    } else {
+      // Incorrect placement: insert at attempted position first, show red flash
+      const tempTimeline = insertIntoTimeline(state.timeline, event, insertionIndex);
 
-        // Determine if game is over
-        // Sudden death: game over on first wrong answer OR if no more cards
-        // Other modes: game over when turns are exhausted
-        const isSuddenDeath = prev.gameMode === 'suddenDeath';
-        const suddenDeathLoss = isSuddenDeath && !isCorrect;
-        const noMoreCards = !nextCard && remainingDeck.length === 0;
-        const turnsExhausted = newTurn > prev.totalTurns;
-        const isGameOver = suddenDeathLoss || noMoreCards || (!isSuddenDeath && turnsExhausted);
+      setState((prev) => ({
+        ...prev,
+        timeline: tempTimeline,
+        activeCard: null, // Remove from hand immediately
+        isAnimating: true,
+        animationPhase: 'flash',
+        lastPlacementResult: result,
+      }));
 
-        return {
-          ...prev,
-          timeline: newTimeline,
-          activeCard: isGameOver ? null : (nextCard || null),
-          deck: remainingDeck,
-          currentTurn: newTurn,
-          correctPlacements: isCorrect ? prev.correctPlacements + 1 : prev.correctPlacements,
-          phase: isGameOver ? 'gameOver' : 'playing',
-          isAnimating: false,
-        };
-      });
-    }, animationDelay);
+      // After red flash, move to correct position
+      setTimeout(() => {
+        setState((prev) => {
+          // Remove from attempted position and insert at correct position
+          const timelineWithoutEvent = prev.timeline.filter(e => e.name !== event.name);
+          const newTimeline = insertIntoTimeline(timelineWithoutEvent, event, correctPosition);
+
+          return {
+            ...prev,
+            timeline: newTimeline,
+            animationPhase: 'moving',
+          };
+        });
+      }, 400);
+
+      // After move animation, finalize
+      setTimeout(() => {
+        setState((prev) => {
+          const [nextCard, ...remainingDeck] = prev.deck;
+          const newTurn = prev.currentTurn + 1;
+          const isSuddenDeath = prev.gameMode === 'suddenDeath';
+          const suddenDeathLoss = isSuddenDeath;
+          const noMoreCards = !nextCard && remainingDeck.length === 0;
+          const turnsExhausted = newTurn > prev.totalTurns;
+          const isGameOver = suddenDeathLoss || noMoreCards || (!isSuddenDeath && turnsExhausted);
+
+          return {
+            ...prev,
+            activeCard: isGameOver ? null : (nextCard || null),
+            deck: remainingDeck,
+            currentTurn: newTurn,
+            phase: isGameOver ? 'gameOver' : 'playing',
+            isAnimating: false,
+            animationPhase: null,
+          };
+        });
+      }, 800);
+    }
 
     return result;
   // eslint-disable-next-line react-hooks/exhaustive-deps

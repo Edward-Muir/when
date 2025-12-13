@@ -77,16 +77,6 @@ body::before {
     inset 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Reveal animation for incorrect guess */
-@keyframes revealYear {
-  0% { transform: rotateY(0deg); }
-  50% { transform: rotateY(90deg); }
-  100% { transform: rotateY(0deg); }
-}
-
-.reveal-year {
-  animation: revealYear 0.6s ease-in-out;
-}
 
 /* Touch-friendly styles */
 .touch-manipulation {
@@ -133,16 +123,6 @@ button, a, input, [role="button"] {
   opacity: 0.8;
 }
 
-/* Screen shake animation class */
-.animate-screen-shake {
-  animation: screenShake 0.4s ease-in-out;
-}
-
-@keyframes screenShake {
-  0%, 100% { transform: translate(0, 0); }
-  10%, 30%, 50%, 70%, 90% { transform: translate(-3px, 0); }
-  20%, 40%, 60%, 80% { transform: translate(3px, 0); }
-}
 
 /* Success glow animation */
 @keyframes successGlow {
@@ -197,4 +177,35 @@ button, a, input, [role="button"] {
 
 .animate-turn-banner-backdrop {
   animation: turnBannerBackdrop 0.2s ease-out forwards;
+}
+
+/* Drag and drop styles */
+.dragging-card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(218, 165, 32, 0.5);
+  border-radius: 8px;
+  cursor: grabbing !important;
+}
+
+/* Drop zone transitions */
+.drop-zone {
+  transition: all 200ms ease-out;
+}
+
+.drop-zone-expanded {
+  min-height: 200px;
+}
+
+/* Draggable card grab cursor */
+.draggable-card {
+  cursor: grab;
+}
+
+.draggable-card:active {
+  cursor: grabbing;
+}
+
+/* Prevent text selection during drag */
+[data-dragging="true"] {
+  user-select: none;
+  -webkit-user-select: none;
 }
