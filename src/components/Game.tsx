@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import ConfettiExplosion from 'react-confetti-explosion';
 import { RotateCcw, Home, Share2 } from 'lucide-react';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
@@ -6,6 +6,7 @@ import Header from './Header';
 import ActiveCard from './ActiveCard';
 import Timeline from './Timeline/Timeline';
 import EventModal from './EventModal';
+import TurnBanner from './TurnBanner';
 
 interface GameProps {
   state: WhenGameState;
@@ -29,6 +30,7 @@ const Game: React.FC<GameProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [screenShake, setScreenShake] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
+  const [showTurnBanner, setShowTurnBanner] = useState(false);
 
   // Handle placement result animations
   useEffect(() => {
@@ -44,8 +46,17 @@ const Game: React.FC<GameProps> = ({
       // Track the new event for animation
       setNewEventName(state.lastPlacementResult.event.name);
       setTimeout(() => setNewEventName(undefined), 1000);
+
+      // Show the turn banner (unless game is over)
+      if (state.phase !== 'gameOver') {
+        setShowTurnBanner(true);
+      }
     }
-  }, [state.lastPlacementResult]);
+  }, [state.lastPlacementResult, state.phase]);
+
+  const handleDismissTurnBanner = useCallback(() => {
+    setShowTurnBanner(false);
+  }, []);
 
   const handlePlacement = (index: number) => {
     if (state.isAnimating) return;
@@ -182,6 +193,15 @@ const Game: React.FC<GameProps> = ({
           event={modalEvent}
           onClose={closeModal}
           showYear={showYearInModal}
+        />
+      )}
+
+      {/* Turn Banner */}
+      {showTurnBanner && state.lastPlacementResult && (
+        <TurnBanner
+          placementResult={state.lastPlacementResult}
+          nextPlayerName={null} // Will be used when multiplayer is added
+          onDismiss={handleDismissTurnBanner}
         />
       )}
     </div>
