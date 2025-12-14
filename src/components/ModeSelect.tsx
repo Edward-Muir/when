@@ -18,15 +18,32 @@ interface ModeSelectProps {
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
   const { isDark, toggleTheme } = useTheme();
 
-  // Play mode settings (unified for freeplay and sudden death)
+  // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(false);
-  const [totalTurns, setTotalTurns] = useState(8);
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([...ALL_DIFFICULTIES]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
 
+  // Player settings
+  const [playerCount, setPlayerCount] = useState(1);
+  const [playerNames, setPlayerNames] = useState<string[]>(['', '', '', '', '', '']);
+
   // Settings popup state
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+  // Hand size setting (3-8 cards) - default varies by player count
+  const [cardsPerHand, setCardsPerHand] = useState(7);
+
+  // Update default hand size when player count changes
+  const getDefaultHandSize = (count: number) => {
+    const defaults: Record<number, number> = { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3, 6: 3 };
+    return defaults[count] ?? 5;
+  };
+
+  const handlePlayerCountChange = (count: number) => {
+    setPlayerCount(count);
+    setCardsPerHand(getDefaultHandSize(count));
+  };
 
   // Check if settings are valid
   const isPlayValid = useMemo(() => {
@@ -40,30 +57,40 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       ),
       selectedEras
     ).length;
-    // For sudden death, we need at least 2 cards; otherwise totalTurns + 1
-    const minRequired = isSuddenDeath ? 2 : totalTurns + 1;
+    // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
+    const minRequired = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
     return count >= minRequired;
-  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, totalTurns, isSuddenDeath]);
+  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand]);
 
   const handleDailyStart = () => {
     const today = new Date().toISOString().split('T')[0];
     onStart({
       mode: 'daily',
-      totalTurns: 8,
+      totalTurns: 7,
       selectedDifficulties: [...ALL_DIFFICULTIES],
       selectedCategories: [...ALL_CATEGORIES],
       selectedEras: [...ALL_ERAS],
       dailySeed: today,
+      playerCount: 1,
+      playerNames: ['Player 1'],
+      cardsPerHand: 7,
     });
   };
 
   const handlePlayStart = () => {
+    const names = playerNames
+      .slice(0, playerCount)
+      .map((name, i) => name.trim() || `Player ${i + 1}`);
+
     onStart({
       mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
-      totalTurns: isSuddenDeath ? -1 : totalTurns,
+      totalTurns: cardsPerHand,
       selectedDifficulties,
       selectedCategories,
       selectedEras,
+      playerCount,
+      playerNames: names,
+      cardsPerHand,
     });
   };
 
@@ -122,6 +149,31 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 <Settings className="w-4 h-4 text-light-muted dark:text-dark-muted" />
               </button>
             </div>
+
+            {/* Player count selector */}
+            <div className="mb-2">
+              <label className="block text-[10px] text-light-muted dark:text-dark-muted mb-1 font-body text-left">
+                Players
+              </label>
+              <div className="flex gap-1">
+                {[1, 2, 3, 4, 5, 6].map((num) => (
+                  <button
+                    key={num}
+                    onClick={() => handlePlayerCountChange(num)}
+                    className={`
+                      flex-1 h-8 rounded-lg text-sm font-medium transition-all font-body
+                      ${playerCount === num
+                        ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
+                        : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-blue-500/20'
+                      }
+                    `}
+                  >
+                    {num}
+                  </button>
+                ))}
+              </div>
+            </div>
+
             <button
               onClick={handlePlayStart}
               disabled={!isPlayValid}
@@ -179,14 +231,17 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         allEvents={allEvents}
         isSuddenDeath={isSuddenDeath}
         setIsSuddenDeath={setIsSuddenDeath}
-        totalTurns={totalTurns}
-        setTotalTurns={setTotalTurns}
         selectedDifficulties={selectedDifficulties}
         setSelectedDifficulties={setSelectedDifficulties}
         selectedCategories={selectedCategories}
         setSelectedCategories={setSelectedCategories}
         selectedEras={selectedEras}
         setSelectedEras={setSelectedEras}
+        playerCount={playerCount}
+        playerNames={playerNames}
+        setPlayerNames={setPlayerNames}
+        cardsPerHand={cardsPerHand}
+        setCardsPerHand={setCardsPerHand}
       />
     </div>
   );

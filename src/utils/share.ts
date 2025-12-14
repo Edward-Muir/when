@@ -13,25 +13,39 @@ function generateEmojiGrid(placementHistory: boolean[]): string {
  * Generate the share text based on game mode and results
  */
 export function generateShareText(state: WhenGameState): string {
-  const { gameMode, correctPlacements, currentTurn, placementHistory, lastConfig } = state;
-  const totalAttempts = currentTurn - 1;
+  const { gameMode, placementHistory, lastConfig, players, winners, turnNumber, roundNumber } = state;
   const emojiGrid = generateEmojiGrid(placementHistory);
+  const playerCount = players.length;
+  const correctCount = placementHistory.filter(p => p).length;
+  const totalAttempts = placementHistory.length;
 
   let text = '';
 
   switch (gameMode) {
     case 'daily': {
       const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
-      text = `When #${dateStr} 📅\n${emojiGrid}\n${correctPlacements}/${totalAttempts} correct`;
+      const won = winners.length > 0;
+      text = `When #${dateStr} 📅\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}`;
       break;
     }
     case 'suddenDeath': {
-      text = `When ☠️ Sudden Death\n🔥 Streak: ${correctPlacements}\n${emojiGrid}`;
+      if (playerCount > 1) {
+        const winnerNames = winners.map(w => w.name).join(', ');
+        text = `When ☠️ ${playerCount}P Sudden Death\n${winnerNames ? `🏆 Winner: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber}`;
+      } else {
+        text = `When ☠️ Sudden Death\n🔥 Streak: ${correctCount}\n${emojiGrid}`;
+      }
       break;
     }
     case 'freeplay':
     default: {
-      text = `When 🎯 Freeplay\n${correctPlacements}/${totalAttempts} correct\n${emojiGrid}`;
+      if (playerCount > 1) {
+        const winnerNames = winners.map(w => w.name).join(', ');
+        text = `When 🎯 ${playerCount} Players\n${winnerNames ? `🏆 Winners: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber} | Turns: ${turnNumber}`;
+      } else {
+        const won = winners.length > 0;
+        text = `When 🎯 Freeplay\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}\n${emojiGrid}`;
+      }
       break;
     }
   }

@@ -1,4 +1,4 @@
-import { HistoricalEvent, Category } from '../types';
+import { HistoricalEvent, Category, Player, GameMode } from '../types';
 
 // Shuffle array using Fisher-Yates algorithm
 export function shuffleArray<T>(array: T[]): T[] {
@@ -142,4 +142,136 @@ export function getCategoryDisplayName(category: Category): string {
     'diplomatic': 'Diplomatic',
   };
   return names[category] || category;
+}
+
+// ==========================================
+// Multiplayer utility functions
+// ==========================================
+
+// Draw a card from the deck
+export function drawCard(deck: HistoricalEvent[]): {
+  card: HistoricalEvent | null;
+  newDeck: HistoricalEvent[];
+} {
+  if (deck.length === 0) {
+    return { card: null, newDeck: [] };
+  }
+  const [card, ...newDeck] = deck;
+  return { card, newDeck };
+}
+
+// Remove a card from a player's hand by event name
+export function removeFromHand(
+  hand: HistoricalEvent[],
+  eventName: string
+): HistoricalEvent[] {
+  return hand.filter(e => e.name !== eventName);
+}
+
+// Add a card to a player's hand
+export function addToHand(
+  hand: HistoricalEvent[],
+  event: HistoricalEvent
+): HistoricalEvent[] {
+  return [...hand, event];
+}
+
+// Get next player index (wraps around)
+export function getNextPlayerIndex(
+  currentIndex: number,
+  playerCount: number
+): number {
+  return (currentIndex + 1) % playerCount;
+}
+
+// Get next active (non-eliminated) player index
+export function getNextActivePlayerIndex(
+  currentIndex: number,
+  players: Player[]
+): number {
+  const playerCount = players.length;
+  let nextIndex = (currentIndex + 1) % playerCount;
+  let checked = 0;
+
+  // Find next non-eliminated player
+  while (players[nextIndex].isEliminated && checked < playerCount) {
+    nextIndex = (nextIndex + 1) % playerCount;
+    checked++;
+  }
+
+  return nextIndex;
+}
+
+// Initialize players for game start
+export function initializePlayers(
+  playerCount: number,
+  playerNames: string[],
+  cardsPerHand: number,
+  deck: HistoricalEvent[]
+): { players: Player[]; remainingDeck: HistoricalEvent[] } {
+  const players: Player[] = [];
+  let deckIndex = 0;
+
+  for (let i = 0; i < playerCount; i++) {
+    const hand: HistoricalEvent[] = [];
+
+    // Deal cards to this player
+    for (let j = 0; j < cardsPerHand; j++) {
+      if (deckIndex < deck.length) {
+        hand.push(deck[deckIndex]);
+        deckIndex++;
+      }
+    }
+
+    players.push({
+      id: i,
+      name: playerNames[i] || `Player ${i + 1}`,
+      hand,
+      hasWon: false,
+      isEliminated: false,
+    });
+  }
+
+  return {
+    players,
+    remainingDeck: deck.slice(deckIndex),
+  };
+}
+
+// Check if game should end
+export function shouldGameEnd(
+  players: Player[],
+  roundNumber: number,
+  currentPlayerIndex: number,
+  gameMode: GameMode
+): boolean {
+  // Count active (non-eliminated) players
+  const activePlayers = players.filter(p => !p.isEliminated);
+
+  // Sudden death: game ends when only one non-eliminated player remains
+  if (gameMode === 'suddenDeath' && activePlayers.length <= 1) {
+    return true;
+  }
+
+  // Regular multiplayer: must complete at least 1 full round
+  if (roundNumber < 2) {
+    return false;
+  }
+
+  // Check if we have any winners
+  const hasWinners = players.some(p => p.hasWon);
+
+  // Game ends when we return to player 0 after someone has won
+  return hasWinners && currentPlayerIndex === 0;
+}
+
+// Count remaining active players (for sudden death)
+export function countActivePlayers(players: Player[]): number {
+  return players.filter(p => !p.isEliminated).length;
+}
+
+// Get the last remaining player (for sudden death winner)
+export function getLastRemainingPlayer(players: Player[]): Player | null {
+  const active = players.filter(p => !p.isEliminated);
+  return active.length === 1 ? active[0] : null;
 }

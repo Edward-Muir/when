@@ -1,9 +1,20 @@
 import { useState, useCallback, useEffect } from 'react';
 import { HistoricalEvent, WhenGameState, PlacementResult, GameConfig } from '../types';
 import { loadAllEvents, filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-import { shuffleArray, shuffleArraySeeded, sortByYear, isPlacementCorrect, findCorrectPosition, insertIntoTimeline } from '../utils/gameLogic';
-
-const DEFAULT_TOTAL_TURNS = 8;
+import {
+  shuffleArray,
+  shuffleArraySeeded,
+  sortByYear,
+  isPlacementCorrect,
+  findCorrectPosition,
+  insertIntoTimeline,
+  initializePlayers,
+  removeFromHand,
+  addToHand,
+  drawCard,
+  getNextActivePlayerIndex,
+  shouldGameEnd,
+} from '../utils/gameLogic';
 
 interface UseWhenGameReturn {
   state: WhenGameState;
@@ -12,7 +23,6 @@ interface UseWhenGameReturn {
   placeCard: (insertionIndex: number) => PlacementResult | null;
   resetGame: () => void;
   restartGame: () => void;
-  // Modal state
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
@@ -22,16 +32,17 @@ const initialState: WhenGameState = {
   phase: 'loading',
   gameMode: null,
   timeline: [],
-  activeCard: null,
   deck: [],
-  currentTurn: 0,
-  totalTurns: DEFAULT_TOTAL_TURNS,
-  correctPlacements: 0,
   placementHistory: [],
   lastPlacementResult: null,
   isAnimating: false,
   animationPhase: null,
   lastConfig: null,
+  players: [],
+  currentPlayerIndex: 0,
+  turnNumber: 0,
+  roundNumber: 1,
+  winners: [],
 };
 
 export function useWhenGame(): UseWhenGameReturn {
@@ -48,15 +59,25 @@ export function useWhenGame(): UseWhenGameReturn {
   }, []);
 
   const startGame = useCallback((config: GameConfig) => {
-    const { mode, totalTurns, selectedDifficulties, selectedCategories, selectedEras, dailySeed } = config;
+    const {
+      mode,
+      selectedDifficulties,
+      selectedCategories,
+      selectedEras,
+      dailySeed,
+      playerCount = 1,
+      playerNames = [],
+      cardsPerHand = 5,
+    } = config;
 
     // Apply filters to get available events
     let filteredEvents = filterByDifficulty(allEvents, selectedDifficulties);
     filteredEvents = filterByCategory(filteredEvents, selectedCategories);
     filteredEvents = filterByEra(filteredEvents, selectedEras);
 
-    // For sudden death, we need at least 2 cards
-    const minRequired = mode === 'suddenDeath' ? 2 : totalTurns + 1;
+    // Calculate minimum required cards
+    const minRequired = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
+
     if (filteredEvents.length < minRequired) {
       console.error('Not enough events to start the game');
       return;
@@ -67,28 +88,28 @@ export function useWhenGame(): UseWhenGameReturn {
       ? shuffleArraySeeded(filteredEvents, dailySeed)
       : shuffleArray(filteredEvents);
 
-    // Pick 1 event for the starting timeline (always 1)
+    // Pick 1 event for the starting timeline
     const timelineEvents = sortByYear([shuffled[0]]);
+    const deckForGame = shuffled.slice(1);
 
-    // For sudden death, use all remaining cards; otherwise use totalTurns
-    const deckSize = mode === 'suddenDeath' ? shuffled.length - 1 : totalTurns;
-    const deckEvents = shuffled.slice(1, deckSize + 1);
-
-    // First card becomes the active card
-    const [firstCard, ...remainingDeck] = deckEvents;
-
-    // For sudden death, totalTurns is effectively the deck size (for display purposes)
-    const effectiveTotalTurns = mode === 'suddenDeath' ? deckEvents.length : totalTurns;
+    // Initialize players with hands (even for single player)
+    const { players, remainingDeck } = initializePlayers(
+      playerCount,
+      playerNames,
+      cardsPerHand,
+      deckForGame
+    );
 
     setState({
       phase: 'playing',
       gameMode: mode,
       timeline: timelineEvents,
-      activeCard: firstCard,
+      players,
+      currentPlayerIndex: 0,
+      turnNumber: 1,
+      roundNumber: 1,
+      winners: [],
       deck: remainingDeck,
-      currentTurn: 1,
-      totalTurns: effectiveTotalTurns,
-      correctPlacements: 0,
       placementHistory: [],
       lastPlacementResult: null,
       isAnimating: false,
@@ -98,11 +119,19 @@ export function useWhenGame(): UseWhenGameReturn {
   }, [allEvents]);
 
   const placeCard = useCallback((insertionIndex: number): PlacementResult | null => {
-    if (state.phase !== 'playing' || !state.activeCard || state.isAnimating) {
+    const currentPlayer = state.players[state.currentPlayerIndex];
+    const activeCard = currentPlayer?.hand[0] || null;
+
+    if (state.phase !== 'playing' || !activeCard || state.isAnimating) {
       return null;
     }
 
-    const event = state.activeCard;
+    // Skip eliminated players
+    if (currentPlayer?.isEliminated) {
+      return null;
+    }
+
+    const event = activeCard;
     const isCorrect = isPlacementCorrect(state.timeline, event, insertionIndex);
     const correctPosition = findCorrectPosition(state.timeline, event);
 
@@ -114,13 +143,12 @@ export function useWhenGame(): UseWhenGameReturn {
     };
 
     if (isCorrect) {
-      // Correct placement: insert immediately at correct position, show green flash
+      // Correct placement: insert into timeline, show green flash
       const newTimeline = insertIntoTimeline(state.timeline, event, correctPosition);
 
       setState((prev) => ({
         ...prev,
         timeline: newTimeline,
-        activeCard: null, // Remove from hand immediately
         isAnimating: true,
         animationPhase: 'flash',
         placementHistory: [...prev.placementHistory, true],
@@ -130,19 +158,39 @@ export function useWhenGame(): UseWhenGameReturn {
       // After flash animation, finalize
       setTimeout(() => {
         setState((prev) => {
-          const [nextCard, ...remainingDeck] = prev.deck;
-          const newTurn = prev.currentTurn + 1;
-          const isSuddenDeath = prev.gameMode === 'suddenDeath';
-          const noMoreCards = !nextCard && remainingDeck.length === 0;
-          const turnsExhausted = newTurn > prev.totalTurns;
-          const isGameOver = noMoreCards || (!isSuddenDeath && turnsExhausted);
+          const newPlayers = [...prev.players];
+          const player = { ...newPlayers[prev.currentPlayerIndex] };
+
+          // Remove card from hand
+          player.hand = removeFromHand(player.hand, event.name);
+
+          // Check if player won (hand empty)
+          if (player.hand.length === 0) {
+            player.hasWon = true;
+            player.winTurn = prev.turnNumber;
+          }
+
+          newPlayers[prev.currentPlayerIndex] = player;
+
+          // Advance to next player
+          const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
+          const newRoundNumber = nextPlayerIndex === 0 ? prev.roundNumber + 1 : prev.roundNumber;
+
+          // Update winners list
+          const newWinners = player.hasWon && !prev.winners.some(w => w.id === player.id)
+            ? [...prev.winners, player]
+            : prev.winners;
+
+          // Check if game should end
+          const isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
 
           return {
             ...prev,
-            activeCard: isGameOver ? null : (nextCard || null),
-            deck: remainingDeck,
-            currentTurn: newTurn,
-            correctPlacements: prev.correctPlacements + 1,
+            players: newPlayers,
+            currentPlayerIndex: nextPlayerIndex,
+            turnNumber: prev.turnNumber + 1,
+            roundNumber: newRoundNumber,
+            winners: newWinners,
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,
@@ -150,50 +198,68 @@ export function useWhenGame(): UseWhenGameReturn {
         });
       }, 600);
     } else {
-      // Incorrect placement: insert at attempted position first, show red flash
+      // Wrong placement: show card at attempted position briefly, then remove
       const tempTimeline = insertIntoTimeline(state.timeline, event, insertionIndex);
 
       setState((prev) => ({
         ...prev,
         timeline: tempTimeline,
-        activeCard: null, // Remove from hand immediately
         isAnimating: true,
         animationPhase: 'flash',
         placementHistory: [...prev.placementHistory, false],
         lastPlacementResult: result,
       }));
 
-      // After red flash, move to correct position
+      // After red flash, remove card from timeline (card is discarded)
       setTimeout(() => {
         setState((prev) => {
-          // Remove from attempted position and insert at correct position
           const timelineWithoutEvent = prev.timeline.filter(e => e.name !== event.name);
-          const newTimeline = insertIntoTimeline(timelineWithoutEvent, event, correctPosition);
-
           return {
             ...prev,
-            timeline: newTimeline,
+            timeline: timelineWithoutEvent,
             animationPhase: 'moving',
           };
         });
       }, 400);
 
-      // After move animation, finalize
+      // After animation, finalize
       setTimeout(() => {
         setState((prev) => {
-          const [nextCard, ...remainingDeck] = prev.deck;
-          const newTurn = prev.currentTurn + 1;
+          const newPlayers = [...prev.players];
+          const player = { ...newPlayers[prev.currentPlayerIndex] };
           const isSuddenDeath = prev.gameMode === 'suddenDeath';
-          const suddenDeathLoss = isSuddenDeath;
-          const noMoreCards = !nextCard && remainingDeck.length === 0;
-          const turnsExhausted = newTurn > prev.totalTurns;
-          const isGameOver = suddenDeathLoss || noMoreCards || (!isSuddenDeath && turnsExhausted);
+
+          // Remove card from hand (discarded)
+          player.hand = removeFromHand(player.hand, event.name);
+
+          if (isSuddenDeath) {
+            // Sudden death: player is eliminated
+            player.isEliminated = true;
+          } else {
+            // Draw replacement card
+            const { card: newCard, newDeck } = drawCard(prev.deck);
+            if (newCard) {
+              player.hand = addToHand(player.hand, newCard);
+            }
+            prev.deck = newDeck;
+          }
+
+          newPlayers[prev.currentPlayerIndex] = player;
+
+          // Advance to next player
+          const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
+          const newRoundNumber = nextPlayerIndex === 0 ? prev.roundNumber + 1 : prev.roundNumber;
+
+          // Check if game should end
+          const isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
 
           return {
             ...prev,
-            activeCard: isGameOver ? null : (nextCard || null),
-            deck: remainingDeck,
-            currentTurn: newTurn,
+            players: newPlayers,
+            deck: isSuddenDeath ? prev.deck : prev.deck,
+            currentPlayerIndex: nextPlayerIndex,
+            turnNumber: prev.turnNumber + 1,
+            roundNumber: newRoundNumber,
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,
@@ -203,8 +269,7 @@ export function useWhenGame(): UseWhenGameReturn {
     }
 
     return result;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [state.phase, state.activeCard, state.timeline, state.isAnimating]);
+  }, [state.phase, state.players, state.currentPlayerIndex, state.timeline, state.isAnimating]);
 
   const resetGame = useCallback(() => {
     setState({ ...initialState, phase: 'modeSelect' });
