@@ -15,10 +15,3 @@ export const ERA_DEFINITIONS: EraDefinition[] = [
 ];
 
 export const ALL_ERAS: Era[] = ['prehistory', 'ancient', 'medieval', 'earlyModern', 'industrial', 'worldWars', 'coldWar', 'modern'];
-
-/**
- * Get the era definition for a given era ID.
- */
-export function getEraDefinition(era: Era): EraDefinition | undefined {
-  return ERA_DEFINITIONS.find(def => def.id === era);
-}

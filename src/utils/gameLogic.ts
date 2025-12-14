@@ -132,10 +132,6 @@ export function getCategoryColorClass(category: Category): string {
   return categoryColors[category]?.bg || 'bg-gray-500';
 }
 
-export function getCategoryBorderColorClass(category: Category): string {
-  return categoryColors[category]?.border || 'border-gray-600';
-}
-
 export function getCategoryDisplayName(category: Category): string {
   const names: Record<Category, string> = {
     'conflict': 'Conflict',

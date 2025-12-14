@@ -12,7 +12,6 @@ interface UseWhenGameReturn {
   placeCard: (insertionIndex: number) => PlacementResult | null;
   resetGame: () => void;
   restartGame: () => void;
-  clearLastResult: () => void;
   // Modal state
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
@@ -203,10 +202,6 @@ export function useWhenGame(): UseWhenGameReturn {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.phase, state.activeCard, state.timeline, state.isAnimating]);
 
-  const clearLastResult = useCallback(() => {
-    setState((prev) => ({ ...prev, lastPlacementResult: null }));
-  }, []);
-
   const resetGame = useCallback(() => {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
@@ -232,7 +227,6 @@ export function useWhenGame(): UseWhenGameReturn {
     placeCard,
     resetGame,
     restartGame,
-    clearLastResult,
     modalEvent,
     openModal,
     closeModal,
