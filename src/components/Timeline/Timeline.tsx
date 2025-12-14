@@ -106,7 +106,7 @@ const Timeline: React.FC<TimelineProps> = ({
           scrollRef.current = node;
           setTimelineDropRef(node);
         }}
-        className={`h-full py-12 relative z-10 ${
+        className={`h-full pt-16 pb-12 relative z-10 ${
           isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
         }`}
       >

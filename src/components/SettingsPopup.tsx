@@ -24,6 +24,9 @@ interface SettingsPopupProps {
   playerCount: number;
   playerNames: string[];
   setPlayerNames: (names: string[]) => void;
+  // Hand size setting
+  cardsPerHand: number;
+  setCardsPerHand: (value: number) => void;
 }
 
 const SettingsPopup: React.FC<SettingsPopupProps> = ({
@@ -41,6 +44,8 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   playerCount,
   playerNames,
   setPlayerNames,
+  cardsPerHand,
+  setCardsPerHand,
 }) => {
   if (!isOpen) return null;
 
@@ -52,7 +57,6 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
     selectedEras
   ).length;
 
-  const cardsPerHand = 5;
   const minRequiredCards = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
 
@@ -130,6 +134,31 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               <div className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5" />
             </label>
           </div>
+
+          {/* Starting Hand Size - hidden in Sudden Death mode */}
+          {!isSuddenDeath && (
+            <div>
+              <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
+                Starting Hand Size
+              </label>
+              <div className="flex items-center gap-3">
+                <input
+                  type="range"
+                  min={3}
+                  max={8}
+                  value={cardsPerHand}
+                  onChange={(e) => setCardsPerHand(Number(e.target.value))}
+                  className="flex-1 h-2 bg-light-border dark:bg-dark-border rounded-lg appearance-none cursor-pointer accent-accent dark:accent-accent-dark"
+                />
+                <span className="text-sm font-medium text-light-text dark:text-dark-text w-6 text-center font-body">
+                  {cardsPerHand}
+                </span>
+              </div>
+              <p className="text-[10px] text-light-muted dark:text-dark-muted mt-1 font-body">
+                Number of cards dealt to each player
+              </p>
+            </div>
+          )}
 
           {/* Player Names - only show when more than 1 player */}
           {playerCount > 1 && (

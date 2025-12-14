@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2 } from 'lucide-react';
+import { RotateCcw, Home, Share2, Sun, Moon } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -26,6 +26,7 @@ import ExpandedCard from './ExpandedCard';
 import Card from './Card';
 import { Toast } from './Toast';
 import PlayerInfo from './PlayerInfo';
+import { useTheme } from '../hooks/useTheme';
 
 interface GameProps {
   state: WhenGameState;
@@ -46,9 +47,11 @@ const Game: React.FC<GameProps> = ({
   onRestart,
   onNewGame,
 }) => {
+  const { isDark, toggleTheme } = useTheme();
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
+  const [showHomeConfirm, setShowHomeConfirm] = useState(false);
 
   // Get active card from current player's hand
   const currentPlayer = state.players[state.currentPlayerIndex];
@@ -235,6 +238,28 @@ const Game: React.FC<GameProps> = ({
           </div>
         )}
 
+        {/* Top-right controls */}
+        <div className="absolute top-2 right-2 flex gap-2 z-40">
+          <button
+            onClick={toggleTheme}
+            className="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
+            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDark ? (
+              <Sun className="w-6 h-6 text-accent dark:text-accent-dark" />
+            ) : (
+              <Moon className="w-6 h-6 text-accent dark:text-accent-dark" />
+            )}
+          </button>
+          <button
+            onClick={() => setShowHomeConfirm(true)}
+            className="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
+            aria-label="Go home"
+          >
+            <Home className="w-6 h-6 text-accent dark:text-accent-dark" />
+          </button>
+        </div>
+
         {/* Left Panel - 40% - Game Info + Active Card (entire panel is drop zone) */}
         <div
           ref={setHandDropRef}
@@ -242,7 +267,7 @@ const Game: React.FC<GameProps> = ({
         >
             {/* Game Info */}
             <div className="mb-4">
-              <h1 className="text-light-text dark:text-dark-text text-ui-title mb-1 font-display">When?</h1>
+              <h1 className="text-light-text dark:text-dark-text text-ui-title mb-3 font-display">When?</h1>
 
               {/* Player Info */}
               <PlayerInfo
@@ -306,8 +331,20 @@ const Game: React.FC<GameProps> = ({
                   Home
                 </button>
 
-                {/* Winners display */}
-                {state.winners.length > 0 && (
+                {/* Stats for single player freeplay/daily */}
+                {state.players.length === 1 && state.gameMode !== 'suddenDeath' && (
+                  <div className="mt-4 p-3 bg-light-border/50 dark:bg-dark-border/50 rounded-xl">
+                    <div className="text-sm text-light-text dark:text-dark-text font-body">
+                      Completed in {state.roundNumber} {state.roundNumber === 1 ? 'round' : 'rounds'}
+                    </div>
+                    <div className="text-xs text-light-muted dark:text-dark-muted mt-1">
+                      {state.placementHistory.filter(p => p).length}/{state.placementHistory.length} correct
+                    </div>
+                  </div>
+                )}
+
+                {/* Winners display - multiplayer or sudden death only */}
+                {(state.players.length > 1 || state.gameMode === 'suddenDeath') && state.winners.length > 0 && (
                   <div className="mt-4 p-3 bg-success/10 border border-success/20 rounded-xl">
                     <h3 className="text-sm font-bold text-success mb-2 font-body">
                       {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
@@ -387,6 +424,33 @@ const Game: React.FC<GameProps> = ({
           isVisible={showToast}
           onClose={() => setShowToast(false)}
         />
+
+        {/* Home Confirmation Dialog */}
+        {showHomeConfirm && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <div className="absolute inset-0 bg-black/50 dark:bg-black/70" onClick={() => setShowHomeConfirm(false)} />
+            <div className="relative bg-light-card dark:bg-dark-card rounded-2xl shadow-xl p-6 max-w-sm w-full">
+              <h2 className="text-lg font-display text-light-text dark:text-dark-text mb-2">Leave game?</h2>
+              <p className="text-light-muted dark:text-dark-muted text-sm mb-6 font-body">
+                Your current progress will be lost.
+              </p>
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowHomeConfirm(false)}
+                  className="flex-1 py-3 px-4 bg-light-border dark:bg-dark-border text-light-text dark:text-dark-text rounded-xl font-medium transition-colors hover:bg-light-border/80 dark:hover:bg-dark-border/80 active:scale-95 font-body"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={onNewGame}
+                  className="flex-1 py-3 px-4 bg-accent dark:bg-accent-dark text-white rounded-xl font-medium transition-colors hover:bg-accent/90 dark:hover:bg-accent-dark/90 active:scale-95 font-body"
+                >
+                  Leave
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </DndContext>
   );

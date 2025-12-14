@@ -31,8 +31,21 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // Settings popup state
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
+  // Hand size setting (3-8 cards) - default varies by player count
+  const [cardsPerHand, setCardsPerHand] = useState(7);
+
+  // Update default hand size when player count changes
+  const getDefaultHandSize = (count: number) => {
+    const defaults: Record<number, number> = { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3, 6: 3 };
+    return defaults[count] ?? 5;
+  };
+
+  const handlePlayerCountChange = (count: number) => {
+    setPlayerCount(count);
+    setCardsPerHand(getDefaultHandSize(count));
+  };
+
   // Check if settings are valid
-  const cardsPerHand = 5;
   const isPlayValid = useMemo(() => {
     if (selectedDifficulties.length === 0 || selectedCategories.length === 0 || selectedEras.length === 0) {
       return false;
@@ -47,7 +60,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
     const minRequired = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
     return count >= minRequired;
-  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount]);
+  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand]);
 
   const handleDailyStart = () => {
     const today = new Date().toISOString().split('T')[0];
@@ -146,7 +159,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 {[1, 2, 3, 4, 5, 6].map((num) => (
                   <button
                     key={num}
-                    onClick={() => setPlayerCount(num)}
+                    onClick={() => handlePlayerCountChange(num)}
                     className={`
                       flex-1 h-8 rounded-lg text-sm font-medium transition-all font-body
                       ${playerCount === num
@@ -227,6 +240,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         playerCount={playerCount}
         playerNames={playerNames}
         setPlayerNames={setPlayerNames}
+        cardsPerHand={cardsPerHand}
+        setCardsPerHand={setCardsPerHand}
       />
     </div>
   );
