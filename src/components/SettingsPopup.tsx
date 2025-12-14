@@ -1,6 +1,6 @@
 import React from 'react';
-import { X } from 'lucide-react';
-import { Difficulty, Category, Era, HistoricalEvent, GameMode } from '../types';
+import { X, Zap } from 'lucide-react';
+import { Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 
@@ -9,8 +9,10 @@ const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cul
 interface SettingsPopupProps {
   isOpen: boolean;
   onClose: () => void;
-  mode: GameMode;
   allEvents: HistoricalEvent[];
+  // Sudden death toggle
+  isSuddenDeath: boolean;
+  setIsSuddenDeath: (value: boolean) => void;
   // Settings state
   totalTurns: number;
   setTotalTurns: (turns: number) => void;
@@ -25,8 +27,9 @@ interface SettingsPopupProps {
 const SettingsPopup: React.FC<SettingsPopupProps> = ({
   isOpen,
   onClose,
-  mode,
   allEvents,
+  isSuddenDeath,
+  setIsSuddenDeath,
   totalTurns,
   setTotalTurns,
   selectedDifficulties,
@@ -47,7 +50,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   ).length;
 
   // For sudden death, we need at least 2 cards (1 starting + 1 to play)
-  const minRequiredCards = mode === 'suddenDeath' ? 2 : totalTurns + 1;
+  const minRequiredCards = isSuddenDeath ? 2 : totalTurns + 1;
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
 
   const toggleDifficulty = (difficulty: Difficulty) => {
@@ -87,7 +90,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold text-light-text dark:text-dark-text font-display">
-            {mode === 'suddenDeath' ? 'Sudden Death Settings' : 'Game Settings'}
+            Game Settings
           </h2>
           <button
             onClick={onClose}
@@ -98,8 +101,29 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         </div>
 
         <div className="space-y-4">
-          {/* Number of Turns - only for freeplay mode */}
-          {mode === 'freeplay' && (
+          {/* Sudden Death Toggle */}
+          <div className="flex items-center justify-between p-3 rounded-xl bg-error/10 dark:bg-error/20 border border-error/20 dark:border-error/30">
+            <div className="flex items-center gap-2">
+              <Zap className={`w-4 h-4 ${isSuddenDeath ? 'text-error' : 'text-light-muted dark:text-dark-muted'}`} />
+              <div>
+                <span className="text-sm font-medium text-light-text dark:text-dark-text font-body">Sudden Death</span>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">One wrong answer ends the game</p>
+              </div>
+            </div>
+            <label className="relative inline-block w-11 h-6 cursor-pointer flex-shrink-0">
+              <input
+                type="checkbox"
+                checked={isSuddenDeath}
+                onChange={(e) => setIsSuddenDeath(e.target.checked)}
+                className="peer sr-only"
+              />
+              <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-error transition-colors" />
+              <div className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5" />
+            </label>
+          </div>
+
+          {/* Number of Turns - hidden when sudden death is enabled */}
+          {!isSuddenDeath && (
             <div>
               <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
                 Number of Turns: {totalTurns}

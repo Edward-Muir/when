@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
-import { Calendar, Zap, SlidersHorizontal, Settings, Play, Sun, Moon } from 'lucide-react';
-import { GameConfig, GameMode, Difficulty, Category, Era, HistoricalEvent } from '../types';
+import { Calendar, Gamepad2, Settings, Play, Sun, Moon } from 'lucide-react';
+import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
@@ -18,48 +18,32 @@ interface ModeSelectProps {
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
   const { isDark, toggleTheme } = useTheme();
 
-  // Settings state for sudden death
-  const [suddenDeathDifficulties, setSuddenDeathDifficulties] = useState<Difficulty[]>([...ALL_DIFFICULTIES]);
-  const [suddenDeathCategories, setSuddenDeathCategories] = useState<Category[]>([...ALL_CATEGORIES]);
-  const [suddenDeathEras, setSuddenDeathEras] = useState<Era[]>([...ALL_ERAS]);
-
-  // Settings state for freeplay
-  const [freeplayTurns, setFreeplayTurns] = useState(8);
-  const [freeplayDifficulties, setFreeplayDifficulties] = useState<Difficulty[]>([...ALL_DIFFICULTIES]);
-  const [freeplayCategories, setFreeplayCategories] = useState<Category[]>([...ALL_CATEGORIES]);
-  const [freeplayEras, setFreeplayEras] = useState<Era[]>([...ALL_ERAS]);
+  // Play mode settings (unified for freeplay and sudden death)
+  const [isSuddenDeath, setIsSuddenDeath] = useState(false);
+  const [totalTurns, setTotalTurns] = useState(8);
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([...ALL_DIFFICULTIES]);
+  const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
+  const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
 
   // Settings popup state
-  const [settingsMode, setSettingsMode] = useState<GameMode | null>(null);
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
   // Check if settings are valid
-  const isSuddenDeathValid = useMemo(() => {
-    if (suddenDeathDifficulties.length === 0 || suddenDeathCategories.length === 0 || suddenDeathEras.length === 0) {
+  const isPlayValid = useMemo(() => {
+    if (selectedDifficulties.length === 0 || selectedCategories.length === 0 || selectedEras.length === 0) {
       return false;
     }
     const count = filterByEra(
       filterByCategory(
-        filterByDifficulty(allEvents, suddenDeathDifficulties),
-        suddenDeathCategories
+        filterByDifficulty(allEvents, selectedDifficulties),
+        selectedCategories
       ),
-      suddenDeathEras
+      selectedEras
     ).length;
-    return count >= 2;
-  }, [allEvents, suddenDeathDifficulties, suddenDeathCategories, suddenDeathEras]);
-
-  const isFreeplayValid = useMemo(() => {
-    if (freeplayDifficulties.length === 0 || freeplayCategories.length === 0 || freeplayEras.length === 0) {
-      return false;
-    }
-    const count = filterByEra(
-      filterByCategory(
-        filterByDifficulty(allEvents, freeplayDifficulties),
-        freeplayCategories
-      ),
-      freeplayEras
-    ).length;
-    return count >= freeplayTurns + 1;
-  }, [allEvents, freeplayDifficulties, freeplayCategories, freeplayEras, freeplayTurns]);
+    // For sudden death, we need at least 2 cards; otherwise totalTurns + 1
+    const minRequired = isSuddenDeath ? 2 : totalTurns + 1;
+    return count >= minRequired;
+  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, totalTurns, isSuddenDeath]);
 
   const handleDailyStart = () => {
     const today = new Date().toISOString().split('T')[0];
@@ -73,32 +57,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     });
   };
 
-  const handleSuddenDeathStart = () => {
+  const handlePlayStart = () => {
     onStart({
-      mode: 'suddenDeath',
-      totalTurns: -1, // Unlimited
-      selectedDifficulties: suddenDeathDifficulties,
-      selectedCategories: suddenDeathCategories,
-      selectedEras: suddenDeathEras,
+      mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
+      totalTurns: isSuddenDeath ? -1 : totalTurns,
+      selectedDifficulties,
+      selectedCategories,
+      selectedEras,
     });
-  };
-
-  const handleFreeplayStart = () => {
-    onStart({
-      mode: 'freeplay',
-      totalTurns: freeplayTurns,
-      selectedDifficulties: freeplayDifficulties,
-      selectedCategories: freeplayCategories,
-      selectedEras: freeplayEras,
-    });
-  };
-
-  const openSettings = (mode: GameMode) => {
-    setSettingsMode(mode);
-  };
-
-  const closeSettings = () => {
-    setSettingsMode(null);
   };
 
   if (isLoading) {
@@ -138,6 +104,38 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
         {/* Game Modes */}
         <div className="space-y-3">
+          {/* Play */}
+          <div className="bg-blue-500/10 dark:bg-blue-400/20 rounded-xl p-3 border border-blue-500/20 dark:border-blue-400/30">
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-8 h-8 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
+                <Gamepad2 className="w-4 h-4 text-white" />
+              </div>
+              <div className="text-left flex-1 min-w-0">
+                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Play</h3>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Customize your game</p>
+              </div>
+              <button
+                onClick={() => setIsSettingsOpen(true)}
+                className="p-1.5 hover:bg-blue-500/20 rounded-full transition-colors flex-shrink-0"
+                title="Settings"
+              >
+                <Settings className="w-4 h-4 text-light-muted dark:text-dark-muted" />
+              </button>
+            </div>
+            <button
+              onClick={handlePlayStart}
+              disabled={!isPlayValid}
+              className={`w-full py-2 px-3 text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+                isPlayValid
+                  ? 'bg-blue-500 hover:bg-blue-500/90 dark:bg-blue-400 dark:hover:bg-blue-400/90 text-white'
+                  : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted cursor-not-allowed'
+              }`}
+            >
+              <Play className="w-3.5 h-3.5" />
+              Play
+            </button>
+          </div>
+
           {/* Daily Challenge */}
           <div className="bg-accent/10 dark:bg-accent-dark/20 rounded-xl p-3 border border-accent/20 dark:border-accent-dark/30">
             <div className="flex items-center gap-2 mb-2">
@@ -157,70 +155,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               Play Daily
             </button>
           </div>
-
-          {/* Sudden Death */}
-          <div className="bg-error/10 dark:bg-error/20 rounded-xl p-3 border border-error/20 dark:border-error/30">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-error rounded-full flex items-center justify-center flex-shrink-0">
-                <Zap className="w-4 h-4 text-white" />
-              </div>
-              <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Sudden Death</h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">One wrong answer and you're out</p>
-              </div>
-              <button
-                onClick={() => openSettings('suddenDeath')}
-                className="p-1.5 hover:bg-error/20 rounded-full transition-colors flex-shrink-0"
-                title="Settings"
-              >
-                <Settings className="w-4 h-4 text-light-muted dark:text-dark-muted" />
-              </button>
-            </div>
-            <button
-              onClick={handleSuddenDeathStart}
-              disabled={!isSuddenDeathValid}
-              className={`w-full py-2 px-3 text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
-                isSuddenDeathValid
-                  ? 'bg-error hover:bg-error/90 text-white'
-                  : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted cursor-not-allowed'
-              }`}
-            >
-              <Play className="w-3.5 h-3.5" />
-              Play Sudden Death
-            </button>
-          </div>
-
-          {/* Freeplay */}
-          <div className="bg-blue-500/10 dark:bg-blue-400/20 rounded-xl p-3 border border-blue-500/20 dark:border-blue-400/30">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-blue-500 dark:bg-blue-400 rounded-full flex items-center justify-center flex-shrink-0">
-                <SlidersHorizontal className="w-4 h-4 text-white" />
-              </div>
-              <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Freeplay</h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Customize your game</p>
-              </div>
-              <button
-                onClick={() => openSettings('freeplay')}
-                className="p-1.5 hover:bg-blue-500/20 rounded-full transition-colors flex-shrink-0"
-                title="Settings"
-              >
-                <Settings className="w-4 h-4 text-light-muted dark:text-dark-muted" />
-              </button>
-            </div>
-            <button
-              onClick={handleFreeplayStart}
-              disabled={!isFreeplayValid}
-              className={`w-full py-2 px-3 text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
-                isFreeplayValid
-                  ? 'bg-blue-500 hover:bg-blue-500/90 dark:bg-blue-400 dark:hover:bg-blue-400/90 text-white'
-                  : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted cursor-not-allowed'
-              }`}
-            >
-              <Play className="w-3.5 h-3.5" />
-              Play Freeplay
-            </button>
-          </div>
         </div>
 
         {/* How to play */}
@@ -238,36 +172,21 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         )}
       </div>
 
-      {/* Settings Popup for Sudden Death */}
+      {/* Settings Popup */}
       <SettingsPopup
-        isOpen={settingsMode === 'suddenDeath'}
-        onClose={closeSettings}
-        mode="suddenDeath"
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
         allEvents={allEvents}
-        totalTurns={0}
-        setTotalTurns={() => {}}
-        selectedDifficulties={suddenDeathDifficulties}
-        setSelectedDifficulties={setSuddenDeathDifficulties}
-        selectedCategories={suddenDeathCategories}
-        setSelectedCategories={setSuddenDeathCategories}
-        selectedEras={suddenDeathEras}
-        setSelectedEras={setSuddenDeathEras}
-      />
-
-      {/* Settings Popup for Freeplay */}
-      <SettingsPopup
-        isOpen={settingsMode === 'freeplay'}
-        onClose={closeSettings}
-        mode="freeplay"
-        allEvents={allEvents}
-        totalTurns={freeplayTurns}
-        setTotalTurns={setFreeplayTurns}
-        selectedDifficulties={freeplayDifficulties}
-        setSelectedDifficulties={setFreeplayDifficulties}
-        selectedCategories={freeplayCategories}
-        setSelectedCategories={setFreeplayCategories}
-        selectedEras={freeplayEras}
-        setSelectedEras={setFreeplayEras}
+        isSuddenDeath={isSuddenDeath}
+        setIsSuddenDeath={setIsSuddenDeath}
+        totalTurns={totalTurns}
+        setTotalTurns={setTotalTurns}
+        selectedDifficulties={selectedDifficulties}
+        setSelectedDifficulties={setSelectedDifficulties}
+        selectedCategories={selectedCategories}
+        setSelectedCategories={setSelectedCategories}
+        selectedEras={selectedEras}
+        setSelectedEras={setSelectedEras}
       />
     </div>
   );

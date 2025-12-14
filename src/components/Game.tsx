@@ -230,7 +230,7 @@ const Game: React.FC<GameProps> = ({
         {/* Left Panel - 40% - Game Info + Active Card (entire panel is drop zone) */}
         <div
           ref={setHandDropRef}
-          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 ${isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''}`}
+          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 z-10 ${isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''}`}
         >
             {/* Game Info */}
             <div className="mb-4">
