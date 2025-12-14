@@ -134,6 +134,22 @@ button, a, input, [role="button"] {
   animation: errorPulse 0.6s ease-out;
 }
 
+/* Feedback banner animation - snappy slide + fade */
+@keyframes bannerSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-banner-in {
+  animation: bannerSlideIn 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
 /* Drag and drop styles */
 .dragging-card {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(184, 134, 11, 0.5);

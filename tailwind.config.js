@@ -43,7 +43,7 @@ module.exports = {
         'accent': '#B8860B',
         'accent-dark': '#D4A84B',
         'success': '#6AAA64',
-        'error': '#C9A0A0',
+        'error': '#E57373',
       },
       fontFamily: {
         'display': ['Playfair Display', 'Georgia', 'serif'],

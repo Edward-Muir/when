@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2, Sun, Moon } from 'lucide-react';
+import { RotateCcw, Home, Share2, Sun, Moon, Check, X } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -279,15 +279,31 @@ const Game: React.FC<GameProps> = ({
 
               {/* Last Result - shown until next placement */}
               {state.lastPlacementResult && (
-                <div className={`mt-2 p-2 rounded-lg text-ui-body font-body ${
+                <div className={`mt-3 p-3 rounded-xl border-2 animate-banner-in ${
                   state.lastPlacementResult.success
-                    ? 'bg-success/20 text-success dark:bg-success/30'
-                    : 'bg-error/20 text-error dark:bg-error/30'
+                    ? 'bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60'
+                    : 'bg-error/15 border-error/50 dark:bg-error/25 dark:border-error/60'
                 }`}>
-                  <div className="font-medium">
-                    {state.lastPlacementResult.success ? '✓ Correct!' : '✗ Wrong!'}
+                  <div className="flex items-center gap-2">
+                    <div className={`w-7 h-7 rounded-full flex items-center justify-center ${
+                      state.lastPlacementResult.success
+                        ? 'bg-success text-white'
+                        : 'bg-error text-white'
+                    }`}>
+                      {state.lastPlacementResult.success
+                        ? <Check className="w-4 h-4" strokeWidth={3} />
+                        : <X className="w-4 h-4" strokeWidth={3} />
+                      }
+                    </div>
+                    <span className={`font-semibold text-lg ${
+                      state.lastPlacementResult.success
+                        ? 'text-success dark:text-success'
+                        : 'text-error dark:text-error'
+                    }`}>
+                      {state.lastPlacementResult.success ? 'Correct!' : 'Wrong!'}
+                    </span>
                   </div>
-                  <div className="text-ui-caption opacity-80">
+                  <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
                     {state.lastPlacementResult.event.friendly_name} ({formatYear(state.lastPlacementResult.event.year)})
                   </div>
                 </div>
