@@ -25,6 +25,7 @@ import Timeline from './Timeline/Timeline';
 import ExpandedCard from './ExpandedCard';
 import Card from './Card';
 import { Toast } from './Toast';
+import PlayerInfo from './PlayerInfo';
 
 interface GameProps {
   state: WhenGameState;
@@ -48,6 +49,10 @@ const Game: React.FC<GameProps> = ({
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
+
+  // Get active card from current player's hand
+  const currentPlayer = state.players[state.currentPlayerIndex];
+  const activeCard = currentPlayer?.hand[0] || null;
 
   // Drag and drop state
   const [isDragging, setIsDragging] = useState(false);
@@ -113,7 +118,7 @@ const Game: React.FC<GameProps> = ({
     setInsertionIndex(null);
 
     // Store the card being dragged so DragOverlay can render it even after activeCard becomes null
-    draggedCardRef.current = state.activeCard;
+    draggedCardRef.current = activeCard;
 
     // Capture year positions NOW - they won't change during drag (scroll is disabled)
     const yearElements = document.querySelectorAll('[data-timeline-year]');
@@ -122,7 +127,7 @@ const Game: React.FC<GameProps> = ({
       return rect.top + rect.height / 2; // Center Y of each year
     });
     setYearPositions(positions);
-  }, [state.activeCard]);
+  }, [activeCard]);
 
   // Continuous position tracking during drag
   const handleDragMove = useCallback((event: DragMoveEvent) => {
@@ -189,8 +194,8 @@ const Game: React.FC<GameProps> = ({
   }, []);
 
   const handleActiveCardTap = () => {
-    if (state.activeCard) {
-      openModal(state.activeCard);
+    if (activeCard) {
+      openModal(activeCard);
     }
   };
 
@@ -238,12 +243,14 @@ const Game: React.FC<GameProps> = ({
             {/* Game Info */}
             <div className="mb-4">
               <h1 className="text-light-text dark:text-dark-text text-ui-title mb-1 font-display">When?</h1>
-              <div className="text-light-muted dark:text-dark-muted text-ui-body font-body">
-                Turn {state.currentTurn}/{state.totalTurns}
-              </div>
-              <div className="text-accent dark:text-accent-dark text-ui-body font-medium font-body">
-                Score: {state.correctPlacements}/{state.currentTurn > 0 ? state.currentTurn - 1 : 0}
-              </div>
+
+              {/* Player Info */}
+              <PlayerInfo
+                players={state.players}
+                currentPlayerIndex={state.currentPlayerIndex}
+                turnNumber={state.turnNumber}
+                roundNumber={state.roundNumber}
+              />
 
               {/* Last Result - shown until next placement */}
               {state.lastPlacementResult && (
@@ -298,14 +305,32 @@ const Game: React.FC<GameProps> = ({
                   <Home className="w-4 h-4" />
                   Home
                 </button>
+
+                {/* Winners display */}
+                {state.winners.length > 0 && (
+                  <div className="mt-4 p-3 bg-success/10 border border-success/20 rounded-xl">
+                    <h3 className="text-sm font-bold text-success mb-2 font-body">
+                      {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
+                    </h3>
+                    <div className="space-y-1">
+                      {state.winners.map(winner => (
+                        <div key={winner.id} className="text-xs text-light-text dark:text-dark-text font-body">
+                          🏆 {winner.name}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             ) : (
-              state.activeCard && (
+              activeCard && (
                 <div className="relative flex flex-col items-start gap-2 pb-2 pointer-events-auto">
-                  <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">Drag to timeline:</p>
+                  <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">
+                    {state.players.length > 1 ? `${currentPlayer?.name}'s turn:` : 'Drag to timeline:'}
+                  </p>
                   <div className="p-1 rounded-xl bg-light-border/50 dark:bg-dark-border/100">
                     <DraggableCard
-                      event={state.activeCard}
+                      event={activeCard}
                       onTap={handleActiveCardTap}
                       disabled={state.isAnimating}
                     />
@@ -324,7 +349,7 @@ const Game: React.FC<GameProps> = ({
             newEventName={newEventName}
             isDragging={isDragging}
             insertionIndex={insertionIndex}
-            draggedCard={state.activeCard}
+            draggedCard={activeCard}
             isOverTimeline={isOverTimeline}
             lastPlacementResult={state.lastPlacementResult}
             animationPhase={state.animationPhase}

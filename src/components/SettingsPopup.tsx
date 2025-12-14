@@ -14,14 +14,16 @@ interface SettingsPopupProps {
   isSuddenDeath: boolean;
   setIsSuddenDeath: (value: boolean) => void;
   // Settings state
-  totalTurns: number;
-  setTotalTurns: (turns: number) => void;
   selectedDifficulties: Difficulty[];
   setSelectedDifficulties: (difficulties: Difficulty[]) => void;
   selectedCategories: Category[];
   setSelectedCategories: (categories: Category[]) => void;
   selectedEras: Era[];
   setSelectedEras: (eras: Era[]) => void;
+  // Player settings
+  playerCount: number;
+  playerNames: string[];
+  setPlayerNames: (names: string[]) => void;
 }
 
 const SettingsPopup: React.FC<SettingsPopupProps> = ({
@@ -30,14 +32,15 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   allEvents,
   isSuddenDeath,
   setIsSuddenDeath,
-  totalTurns,
-  setTotalTurns,
   selectedDifficulties,
   setSelectedDifficulties,
   selectedCategories,
   setSelectedCategories,
   selectedEras,
   setSelectedEras,
+  playerCount,
+  playerNames,
+  setPlayerNames,
 }) => {
   if (!isOpen) return null;
 
@@ -49,9 +52,15 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
     selectedEras
   ).length;
 
-  // For sudden death, we need at least 2 cards (1 starting + 1 to play)
-  const minRequiredCards = isSuddenDeath ? 2 : totalTurns + 1;
+  const cardsPerHand = 5;
+  const minRequiredCards = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
+
+  const handlePlayerNameChange = (index: number, name: string) => {
+    const newNames = [...playerNames];
+    newNames[index] = name;
+    setPlayerNames(newNames);
+  };
 
   const toggleDifficulty = (difficulty: Difficulty) => {
     setSelectedDifficulties(
@@ -122,23 +131,31 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
             </label>
           </div>
 
-          {/* Number of Turns - hidden when sudden death is enabled */}
-          {!isSuddenDeath && (
+          {/* Player Names - only show when more than 1 player */}
+          {playerCount > 1 && (
             <div>
               <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
-                Number of Turns: {totalTurns}
+                Player Names
               </label>
-              <input
-                type="range"
-                min={5}
-                max={20}
-                value={totalTurns}
-                onChange={(e) => setTotalTurns(Number(e.target.value))}
-                className="w-full accent-accent dark:accent-accent-dark"
-              />
-              <div className="flex justify-between text-light-muted/60 dark:text-dark-muted/60 text-xs font-body">
-                <span>Shorter</span>
-                <span>Longer</span>
+              <div className="space-y-2">
+                {Array.from({ length: playerCount }).map((_, index) => (
+                  <input
+                    key={index}
+                    type="text"
+                    placeholder={`Player ${index + 1}`}
+                    value={playerNames[index] || ''}
+                    onChange={(e) => handlePlayerNameChange(index, e.target.value)}
+                    className="
+                      w-full px-3 py-2 rounded-lg text-sm
+                      border border-light-border dark:border-dark-border
+                      bg-light-bg dark:bg-dark-bg
+                      text-light-text dark:text-dark-text
+                      placeholder:text-light-muted/60 dark:placeholder:text-dark-muted/60
+                      focus:outline-none focus:border-accent dark:focus:border-accent-dark
+                      transition-colors font-body
+                    "
+                  />
+                ))}
               </div>
             </div>
           )}

@@ -29,6 +29,15 @@ export interface HistoricalEvent {
   image_url?: string;     // Optional Wikipedia thumbnail URL
 }
 
+export interface Player {
+  id: number;
+  name: string;
+  hand: HistoricalEvent[];
+  hasWon: boolean;
+  winTurn?: number;
+  isEliminated?: boolean;
+}
+
 export type GamePhase = 'loading' | 'modeSelect' | 'playing' | 'gameOver';
 
 export interface PlacementResult {
@@ -44,16 +53,19 @@ export interface WhenGameState {
   phase: GamePhase;
   gameMode: GameMode | null;
   timeline: HistoricalEvent[];
-  activeCard: HistoricalEvent | null;
   deck: HistoricalEvent[];
-  currentTurn: number;
-  totalTurns: number;
-  correctPlacements: number;
   placementHistory: boolean[];
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
   animationPhase: AnimationPhase;
   lastConfig: GameConfig | null;
+
+  // Player state (single player = 1 player)
+  players: Player[];
+  currentPlayerIndex: number;
+  turnNumber: number;
+  roundNumber: number;
+  winners: Player[];
 }
 
 export interface EventManifest {
@@ -70,4 +82,9 @@ export interface GameConfig {
   selectedCategories: Category[];
   selectedEras: Era[];
   dailySeed?: string;
+
+  // Multiplayer settings
+  playerCount?: number;
+  playerNames?: string[];
+  cardsPerHand?: number;
 }
