@@ -78,22 +78,22 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/50"
+        className="absolute inset-0 bg-black/50 dark:bg-black/70"
         onClick={onClose}
       />
 
       {/* Modal */}
-      <div className="relative bg-paper rounded-2xl shadow-xl p-6 max-w-md w-full max-h-[85vh] overflow-y-auto">
+      <div className="relative bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-6 max-w-md w-full max-h-[85vh] overflow-y-auto border border-light-border dark:border-dark-border">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold text-sketch">
+          <h2 className="text-xl font-bold text-light-text dark:text-dark-text font-display">
             {mode === 'suddenDeath' ? 'Sudden Death Settings' : 'Game Settings'}
           </h2>
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+            className="p-2 hover:bg-light-border dark:hover:bg-dark-border rounded-full transition-colors"
           >
-            <X className="w-5 h-5 text-sketch/70" />
+            <X className="w-5 h-5 text-light-muted dark:text-dark-muted" />
           </button>
         </div>
 
@@ -101,7 +101,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           {/* Number of Turns - only for freeplay mode */}
           {mode === 'freeplay' && (
             <div>
-              <label className="block text-sm font-medium text-sketch mb-2">
+              <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
                 Number of Turns: {totalTurns}
               </label>
               <input
@@ -110,9 +110,9 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 max={20}
                 value={totalTurns}
                 onChange={(e) => setTotalTurns(Number(e.target.value))}
-                className="w-full accent-amber-500"
+                className="w-full accent-accent dark:accent-accent-dark"
               />
-              <div className="flex justify-between text-sketch/40 text-xs">
+              <div className="flex justify-between text-light-muted/60 dark:text-dark-muted/60 text-xs font-body">
                 <span>Shorter</span>
                 <span>Longer</span>
               </div>
@@ -121,7 +121,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
 
           {/* Difficulty selection */}
           <div>
-            <label className="block text-sm font-medium text-sketch mb-2">
+            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
               Card Difficulty
             </label>
             <div className="flex gap-2">
@@ -130,11 +130,11 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   key={difficulty}
                   onClick={() => toggleDifficulty(difficulty)}
                   className={`
-                    flex-1 py-2 px-3 rounded-lg text-sm
+                    flex-1 py-2 px-3 rounded-lg text-sm font-body
                     transition-all capitalize
                     ${selectedDifficulties.includes(difficulty)
-                      ? 'bg-amber-400 text-sketch shadow-md'
-                      : 'bg-gray-200 text-sketch/60 hover:bg-gray-300'
+                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
+                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
                     }
                   `}
                 >
@@ -143,13 +143,13 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               ))}
             </div>
             {selectedDifficulties.length === 0 && (
-              <p className="text-red-500 text-xs mt-1">Select at least one difficulty</p>
+              <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
             )}
           </div>
 
           {/* Category selection */}
           <div>
-            <label className="block text-sm font-medium text-sketch mb-2">
+            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
               Categories
             </label>
             <div className="grid grid-cols-3 gap-2">
@@ -158,11 +158,11 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   key={category}
                   onClick={() => toggleCategory(category)}
                   className={`
-                    py-2 px-2 rounded-lg text-xs
+                    py-2 px-2 rounded-lg text-xs font-body
                     transition-all capitalize
                     ${selectedCategories.includes(category)
-                      ? 'bg-amber-400 text-sketch shadow-md'
-                      : 'bg-gray-200 text-sketch/60 hover:bg-gray-300'
+                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
+                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
                     }
                   `}
                 >
@@ -171,13 +171,13 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               ))}
             </div>
             {selectedCategories.length === 0 && (
-              <p className="text-red-500 text-xs mt-1">Select at least one category</p>
+              <p className="text-error text-xs mt-1 font-body">Select at least one category</p>
             )}
           </div>
 
           {/* Era selection */}
           <div>
-            <label className="block text-sm font-medium text-sketch mb-2">
+            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
               Eras
             </label>
             <div className="grid grid-cols-2 gap-2">
@@ -186,11 +186,11 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   key={era.id}
                   onClick={() => toggleEra(era.id)}
                   className={`
-                    py-2 px-2 rounded-lg text-xs
+                    py-2 px-2 rounded-lg text-xs font-body
                     transition-all
                     ${selectedEras.includes(era.id)
-                      ? 'bg-amber-400 text-sketch shadow-md'
-                      : 'bg-gray-200 text-sketch/60 hover:bg-gray-300'
+                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
+                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
                     }
                   `}
                 >
@@ -199,24 +199,24 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               ))}
             </div>
             {selectedEras.length === 0 && (
-              <p className="text-red-500 text-xs mt-1">Select at least one era</p>
+              <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
             )}
           </div>
 
           {/* Deck card counter */}
-          <div className="pt-2 border-t border-amber-200/50">
-            <div className="flex justify-between text-sm text-sketch/70">
+          <div className="pt-2 border-t border-light-border dark:border-dark-border">
+            <div className="flex justify-between text-sm text-light-muted dark:text-dark-muted font-body">
               <span>Cards in deck:</span>
-              <span className={!hasEnoughCards ? 'text-red-500 font-medium' : ''}>
+              <span className={!hasEnoughCards ? 'text-error font-medium' : ''}>
                 {filteredEventCount}
               </span>
             </div>
-            <div className="flex justify-between text-xs text-sketch/50">
+            <div className="flex justify-between text-xs text-light-muted/60 dark:text-dark-muted/60 font-body">
               <span>Minimum required:</span>
               <span>{minRequiredCards}</span>
             </div>
             {!hasEnoughCards && (
-              <p className="text-red-500 text-xs mt-2">
+              <p className="text-error text-xs mt-2 font-body">
                 Not enough cards! Select more categories, difficulties, or eras.
               </p>
             )}
@@ -226,7 +226,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         {/* Done button */}
         <button
           onClick={onClose}
-          className="w-full mt-4 py-3 px-6 bg-amber-500 hover:bg-amber-600 text-white font-medium rounded-xl transition-colors"
+          className="w-full mt-4 py-3 px-6 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white font-medium rounded-xl transition-colors font-body"
         >
           Done
         </button>

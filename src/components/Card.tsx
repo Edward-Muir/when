@@ -10,30 +10,6 @@ interface CardProps {
   size?: 'normal' | 'large';
 }
 
-const getCategoryBorderColor = (category: string): string => {
-  const colors: Record<string, string> = {
-    'conflict': 'border-red-400',
-    'disasters': 'border-gray-500',
-    'exploration': 'border-teal-400',
-    'cultural': 'border-purple-400',
-    'infrastructure': 'border-amber-400',
-    'diplomatic': 'border-blue-400',
-  };
-  return colors[category] || 'border-gray-400';
-};
-
-const getCategoryTitleBg = (category: string): string => {
-  const colors: Record<string, string> = {
-    'conflict': 'bg-red-100',
-    'disasters': 'bg-gray-200',
-    'exploration': 'bg-teal-100',
-    'cultural': 'bg-purple-100',
-    'infrastructure': 'bg-amber-100',
-    'diplomatic': 'bg-blue-100',
-  };
-  return colors[category] || 'bg-gray-100';
-};
-
 const Card: React.FC<CardProps> = ({
   event,
   className = '',
@@ -42,8 +18,6 @@ const Card: React.FC<CardProps> = ({
   size = 'normal',
 }) => {
   const [imageError, setImageError] = useState(false);
-  const borderColor = getCategoryBorderColor(event.category);
-  const titleBg = getCategoryTitleBg(event.category);
 
   const rotationStyle = {
     transform: `rotate(${rotation}deg)`,
@@ -59,26 +33,20 @@ const Card: React.FC<CardProps> = ({
     <div
       className={`
         rounded-lg overflow-hidden
-        border-2 ${borderColor}
-        bg-white
-        shadow-md
+        border border-light-border dark:border-dark-border
+        bg-light-card dark:bg-dark-card
+        shadow-md dark:shadow-card-rest-dark
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
         ${sizeClasses}
         flex flex-col
+        transition-colors duration-200
       `}
       style={rotationStyle}
       onClick={onClick}
     >
-      {/* Title bar at top */}
-      <div className={`${titleBg} px-2 py-1.5 border-b ${borderColor}`}>
-        <span className="text-sketch text-xs font-medium leading-tight line-clamp-2 block">
-          {event.friendly_name}
-        </span>
-      </div>
-
-      {/* Image area */}
-      <div className="flex-1 relative">
+      {/* Full card is image with title overlay */}
+      <div className="flex-1 relative overflow-hidden">
         {hasImage ? (
           <img
             src={event.image_url}
@@ -88,10 +56,17 @@ const Card: React.FC<CardProps> = ({
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gray-100">
-            <CategoryIcon category={event.category} className="text-gray-400 w-12 h-12" />
+          <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
+            <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-12 h-12" />
           </div>
         )}
+
+        {/* Title overlay with gradient backdrop for readability */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-2 pt-8 pb-2">
+          <span className="text-white text-ui-card-title line-clamp-2 block font-body drop-shadow-md">
+            {event.friendly_name}
+          </span>
+        </div>
       </div>
     </div>
   );

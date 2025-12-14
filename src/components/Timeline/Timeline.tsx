@@ -23,8 +23,8 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
   <div className="flex items-center py-1 opacity-50">
     {/* Empty date area to align with real cards */}
     <div className="flex items-center justify-end w-14 sm:w-16 shrink-0">
-      <span className="text-sketch/50 font-bold text-sm sm:text-base">?</span>
-      <div className="w-4 h-0.5 bg-amber-300 ml-1 -mr-1 z-10" />
+      <span className="text-light-muted/50 dark:text-dark-muted/50 font-bold text-sm sm:text-base font-mono">?</span>
+      <div className="w-4 h-0.5 bg-accent/50 dark:bg-accent-dark/50 ml-1 -mr-1 z-10" />
     </div>
     {/* Ghost card */}
     <div className="ml-4">
@@ -89,14 +89,14 @@ const Timeline: React.FC<TimelineProps> = ({
     <div className="h-full relative">
       {/* Fixed "Earlier" indicator at top with fade */}
       <div className="absolute top-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-b from-cream via-cream/90 to-transparent" />
-        <div className="absolute top-2 left-0 right-0 text-center text-sketch/50 text-xs">
+        <div className="h-12 bg-gradient-to-b from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90" />
+        <div className="absolute top-2 left-0 right-0 text-center text-light-muted/50 dark:text-dark-muted/50 text-xs font-body">
           ↑ Earlier
         </div>
       </div>
 
       {/* Vertical timeline line - positioned to align with date ticks */}
-      <div className="absolute left-[calc(3.5rem+0.5rem+2px)] sm:left-[calc(4rem+0.5rem+2px)] top-0 bottom-0 w-1 bg-amber-400 rounded-full z-0" />
+      <div className="absolute left-[calc(3.5rem+0.5rem+2px)] sm:left-[calc(4rem+0.5rem+2px)] top-0 bottom-0 w-1 bg-accent dark:bg-accent-dark rounded-full z-0" />
 
       {/* Scrollable timeline content - entire area is a single drop zone */}
       {/* Scroll is disabled while dragging so year labels stay fixed as reference points */}
@@ -145,8 +145,8 @@ const Timeline: React.FC<TimelineProps> = ({
 
       {/* Fixed "Later" indicator at bottom with fade */}
       <div className="absolute bottom-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-t from-cream via-cream/90 to-transparent" />
-        <div className="absolute bottom-2 left-0 right-0 text-center text-sketch/50 text-xs">
+        <div className="h-12 bg-gradient-to-t from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90" />
+        <div className="absolute bottom-2 left-0 right-0 text-center text-light-muted/50 dark:text-dark-muted/50 text-xs font-body">
           Later ↓
         </div>
       </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&family=DM+Mono:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,15 +16,24 @@ html {
 
 body {
   margin: 0;
-  font-family: 'IM Fell Great Primer SC', Georgia, serif;
+  font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FDF5E6;
+  background-color: #FAF8F5;
+  color: #2D2A26;
   height: 100%;
   overflow: hidden;
   overscroll-behavior: none;
   position: fixed;
   width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode body */
+.dark body,
+html.dark body {
+  background-color: #1A1918;
+  color: #E8E4DC;
 }
 
 #root {
@@ -39,44 +48,18 @@ body {
   .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
 }
 
-/* Paper grain texture overlay */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.03;
-  pointer-events: none;
-  z-index: 9999;
+/* Font utilities */
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  .font-mono {
+    font-family: 'DM Mono', 'Courier New', monospace;
+  }
 }
-
-/* Sketch border effect */
-.sketch-border {
-  border: 3px solid #2C2C2C;
-  border-radius: 8px;
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.sketch-border::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid rgba(44, 44, 44, 0.3);
-  border-radius: 10px;
-  pointer-events: none;
-}
-
-/* Card worn/antique edge effect */
-.card-worn-edge {
-  box-shadow:
-    inset 0 0 20px rgba(139, 69, 19, 0.15),
-    inset 0 0 3px rgba(0, 0, 0, 0.1);
-}
-
 
 /* Touch-friendly styles */
 .touch-manipulation {
@@ -90,7 +73,11 @@ body::before {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
-  scrollbar-color: #DAA520 #FDF5E6;
+  scrollbar-color: #B8860B #FAF8F5;
+}
+
+.dark .timeline-scroll-vertical {
+  scrollbar-color: #D4A84B #1A1918;
 }
 
 .timeline-scroll-vertical::-webkit-scrollbar {
@@ -98,13 +85,21 @@ body::before {
 }
 
 .timeline-scroll-vertical::-webkit-scrollbar-track {
-  background: #FDF5E6;
+  background: #FAF8F5;
   border-radius: 4px;
 }
 
+.dark .timeline-scroll-vertical::-webkit-scrollbar-track {
+  background: #1A1918;
+}
+
 .timeline-scroll-vertical::-webkit-scrollbar-thumb {
-  background: #DAA520;
+  background: #B8860B;
   border-radius: 4px;
+}
+
+.dark .timeline-scroll-vertical::-webkit-scrollbar-thumb {
+  background: #D4A84B;
 }
 
 /* Ensure minimum touch target size on mobile */
@@ -126,9 +121,9 @@ button, a, input, [role="button"] {
 
 /* Success glow animation */
 @keyframes successGlow {
-  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
-  50% { box-shadow: 0 0 20px 10px rgba(34, 197, 94, 0.4); }
-  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(106, 170, 100, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(106, 170, 100, 0.4); }
+  100% { box-shadow: 0 0 0 0 rgba(106, 170, 100, 0); }
 }
 
 .animate-success-glow {
@@ -137,9 +132,9 @@ button, a, input, [role="button"] {
 
 /* Error shake and glow */
 @keyframes errorPulse {
-  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
-  50% { box-shadow: 0 0 20px 10px rgba(239, 68, 68, 0.4); }
-  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(201, 160, 160, 0.7); }
+  50% { box-shadow: 0 0 20px 10px rgba(201, 160, 160, 0.4); }
+  100% { box-shadow: 0 0 0 0 rgba(201, 160, 160, 0); }
 }
 
 .animate-error-pulse {
@@ -181,9 +176,13 @@ button, a, input, [role="button"] {
 
 /* Drag and drop styles */
 .dragging-card {
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(218, 165, 32, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 0 2px rgba(184, 134, 11, 0.5);
   border-radius: 8px;
   cursor: grabbing !important;
+}
+
+.dark .dragging-card {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 0 2px rgba(212, 168, 75, 0.5);
 }
 
 /* Drop zone transitions */

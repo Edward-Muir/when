@@ -1,5 +1,6 @@
-import { Trophy, Calendar, Zap } from 'lucide-react';
+import { Trophy, Calendar, Zap, Sun, Moon } from 'lucide-react';
 import { GameMode } from '../types';
+import { useTheme } from '../hooks/useTheme';
 
 interface HeaderProps {
   currentTurn: number;
@@ -16,9 +17,24 @@ const Header: React.FC<HeaderProps> = ({
   isGameOver = false,
   gameMode = 'freeplay',
 }) => {
+  const { isDark, toggleTheme } = useTheme();
   const displayTurn = Math.min(currentTurn, totalTurns);
   const isSuddenDeath = gameMode === 'suddenDeath';
   const isDaily = gameMode === 'daily';
+
+  const ThemeToggle = () => (
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+    >
+      {isDark ? (
+        <Sun className="w-5 h-5 text-accent-dark" />
+      ) : (
+        <Moon className="w-5 h-5 text-accent" />
+      )}
+    </button>
+  );
 
   if (isGameOver) {
     // For sudden death, show streak; for others, show percentage
@@ -63,38 +79,41 @@ const Header: React.FC<HeaderProps> = ({
     };
 
     const getModeIcon = () => {
-      if (isDaily) return <Calendar className="w-6 h-6 text-amber-600" />;
-      if (isSuddenDeath) return <Zap className="w-6 h-6 text-red-500" />;
-      return <Trophy className="w-6 h-6 text-amber-600" />;
+      if (isDaily) return <Calendar className="w-6 h-6 text-accent dark:text-accent-dark" />;
+      if (isSuddenDeath) return <Zap className="w-6 h-6 text-error" />;
+      return <Trophy className="w-6 h-6 text-accent dark:text-accent-dark" />;
     };
 
     return (
       <header className="flex-shrink-0">
-        <div className="flex items-center gap-2 mb-3">
-          {getModeIcon()}
-          <h1 className="text-2xl sm:text-3xl text-sketch font-bold">{getTitle()}</h1>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            {getModeIcon()}
+            <h1 className="text-2xl sm:text-3xl text-light-text dark:text-dark-text font-bold font-display">{getTitle()}</h1>
+          </div>
+          <ThemeToggle />
         </div>
         <div className="flex flex-col gap-2">
           {isSuddenDeath ? (
             <>
-              <div className="text-3xl font-bold text-red-500">
+              <div className="text-3xl font-bold text-error font-display">
                 Streak: {correctPlacements}
               </div>
-              <div className="text-sm text-sketch/70">
+              <div className="text-sm text-light-muted dark:text-dark-muted font-body">
                 {correctPlacements} event{correctPlacements !== 1 ? 's' : ''} placed correctly {getEmoji()}
               </div>
             </>
           ) : (
             <>
-              <div className="text-3xl font-bold text-amber-600">
+              <div className="text-3xl font-bold text-accent dark:text-accent-dark font-display">
                 {correctPlacements}/{totalTurns}
               </div>
-              <div className="text-sm text-sketch/70">
+              <div className="text-sm text-light-muted dark:text-dark-muted font-body">
                 {percentage}% correct {getEmoji()}
               </div>
             </>
           )}
-          <p className="text-xs text-sketch/60 mt-1">{getMessage()}</p>
+          <p className="text-xs text-light-muted dark:text-dark-muted mt-1 font-body">{getMessage()}</p>
         </div>
       </header>
     );
@@ -103,11 +122,14 @@ const Header: React.FC<HeaderProps> = ({
   // During gameplay
   return (
     <header className="flex-shrink-0">
-      <h1 className="text-2xl sm:text-3xl text-sketch font-bold mb-3">When?</h1>
-      <div className="flex flex-col gap-2 text-sketch/80">
+      <div className="flex items-center justify-between mb-3">
+        <h1 className="text-2xl sm:text-3xl text-light-text dark:text-dark-text font-bold font-display">When?</h1>
+        <ThemeToggle />
+      </div>
+      <div className="flex flex-col gap-2 text-light-muted dark:text-dark-muted font-body">
         {isSuddenDeath ? (
           // Sudden death: show streak counter
-          <span className="text-sm px-3 py-1 bg-red-100 rounded-full inline-block w-fit">
+          <span className="text-sm px-3 py-1 bg-error/20 dark:bg-error/30 text-error rounded-full inline-block w-fit">
             Streak: {correctPlacements}
           </span>
         ) : (
@@ -116,7 +138,7 @@ const Header: React.FC<HeaderProps> = ({
             <span className="text-sm">
               Turn {displayTurn}/{totalTurns}
             </span>
-            <span className="text-sm px-3 py-1 bg-amber-100 rounded-full inline-block w-fit">
+            <span className="text-sm px-3 py-1 bg-accent/20 dark:bg-accent-dark/30 text-accent dark:text-accent-dark rounded-full inline-block w-fit">
               Score: {correctPlacements}/{displayTurn > 0 ? displayTurn - 1 : 0}
             </span>
           </>
