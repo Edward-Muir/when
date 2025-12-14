@@ -27,6 +27,7 @@ const initialState: WhenGameState = {
   currentTurn: 0,
   totalTurns: DEFAULT_TOTAL_TURNS,
   correctPlacements: 0,
+  placementHistory: [],
   lastPlacementResult: null,
   isAnimating: false,
   animationPhase: null,
@@ -88,6 +89,7 @@ export function useWhenGame(): UseWhenGameReturn {
       currentTurn: 1,
       totalTurns: effectiveTotalTurns,
       correctPlacements: 0,
+      placementHistory: [],
       lastPlacementResult: null,
       isAnimating: false,
       animationPhase: null,
@@ -121,6 +123,7 @@ export function useWhenGame(): UseWhenGameReturn {
         activeCard: null, // Remove from hand immediately
         isAnimating: true,
         animationPhase: 'flash',
+        placementHistory: [...prev.placementHistory, true],
         lastPlacementResult: result,
       }));
 
@@ -156,6 +159,7 @@ export function useWhenGame(): UseWhenGameReturn {
         activeCard: null, // Remove from hand immediately
         isAnimating: true,
         animationPhase: 'flash',
+        placementHistory: [...prev.placementHistory, false],
         lastPlacementResult: result,
       }));
 

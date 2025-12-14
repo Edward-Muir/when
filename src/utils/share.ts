@@ -1,0 +1,81 @@
+import { WhenGameState } from '../types';
+
+const GAME_URL = 'https://when-one.vercel.app/';
+
+/**
+ * Generate emoji grid from placement history
+ */
+function generateEmojiGrid(placementHistory: boolean[]): string {
+  return placementHistory.map(correct => correct ? '🟩' : '🟥').join('');
+}
+
+/**
+ * Generate the share text based on game mode and results
+ */
+export function generateShareText(state: WhenGameState): string {
+  const { gameMode, correctPlacements, currentTurn, placementHistory, lastConfig } = state;
+  const totalAttempts = currentTurn - 1;
+  const emojiGrid = generateEmojiGrid(placementHistory);
+
+  let text = '';
+
+  switch (gameMode) {
+    case 'daily': {
+      const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
+      text = `When #${dateStr} 📅\n${emojiGrid}\n${correctPlacements}/${totalAttempts} correct`;
+      break;
+    }
+    case 'suddenDeath': {
+      text = `When ☠️ Sudden Death\n🔥 Streak: ${correctPlacements}\n${emojiGrid}`;
+      break;
+    }
+    case 'freeplay':
+    default: {
+      text = `When 🎯 Freeplay\n${correctPlacements}/${totalAttempts} correct\n${emojiGrid}`;
+      break;
+    }
+  }
+
+  return `${text}\n\n${GAME_URL}`;
+}
+
+/**
+ * Share results using Web Share API or fallback to clipboard
+ * Returns true if copied to clipboard (toast should be shown)
+ */
+export async function shareResults(state: WhenGameState): Promise<boolean> {
+  const shareText = generateShareText(state);
+
+  // Try native share first (mobile)
+  if (navigator.share) {
+    try {
+      await navigator.share({
+        title: 'When - Timeline Game',
+        text: shareText,
+      });
+      return false; // Native share handled it, no toast needed
+    } catch (err) {
+      // User cancelled or share failed, fall through to clipboard
+      if ((err as Error).name === 'AbortError') {
+        return false; // User cancelled, no toast
+      }
+    }
+  }
+
+  // Fallback: copy to clipboard
+  try {
+    await navigator.clipboard.writeText(shareText);
+    return true; // Show toast
+  } catch (err) {
+    // Final fallback for older browsers
+    const textArea = document.createElement('textarea');
+    textArea.value = shareText;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-9999px';
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    return true; // Show toast
+  }
+}

@@ -49,6 +49,7 @@ export interface WhenGameState {
   currentTurn: number;
   totalTurns: number;
   correctPlacements: number;
+  placementHistory: boolean[];
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
   animationPhase: AnimationPhase;

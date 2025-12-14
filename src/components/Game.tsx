@@ -19,10 +19,12 @@ import {
 } from '@dnd-kit/core';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
 import { formatYear } from '../utils/gameLogic';
+import { shareResults } from '../utils/share';
 import DraggableCard from './DraggableCard';
 import Timeline from './Timeline/Timeline';
 import ExpandedCard from './ExpandedCard';
 import Card from './Card';
+import { Toast } from './Toast';
 
 interface GameProps {
   state: WhenGameState;
@@ -45,6 +47,7 @@ const Game: React.FC<GameProps> = ({
 }) => {
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
+  const [showToast, setShowToast] = useState(false);
 
   // Drag and drop state
   const [isDragging, setIsDragging] = useState(false);
@@ -266,7 +269,12 @@ const Game: React.FC<GameProps> = ({
             {state.phase === 'gameOver' ? (
               <div className="flex flex-col gap-2 pointer-events-auto">
                 <button
-                  onClick={() => console.log('Share clicked')}
+                  onClick={async () => {
+                    const showClipboardToast = await shareResults(state);
+                    if (showClipboardToast) {
+                      setShowToast(true);
+                    }
+                  }}
                   className="w-full py-3 px-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
                 >
                   <Share2 className="w-4 h-4" />
@@ -295,11 +303,13 @@ const Game: React.FC<GameProps> = ({
               state.activeCard && (
                 <div className="relative flex flex-col items-start gap-2 pb-2 pointer-events-auto">
                   <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">Drag to timeline:</p>
-                  <DraggableCard
-                    event={state.activeCard}
-                    onTap={handleActiveCardTap}
-                    disabled={state.isAnimating}
-                  />
+                  <div className="p-1 rounded-xl bg-light-border/50 dark:bg-dark-border/100">
+                    <DraggableCard
+                      event={state.activeCard}
+                      onTap={handleActiveCardTap}
+                      disabled={state.isAnimating}
+                    />
+                  </div>
                   <p className="text-light-muted/60 dark:text-dark-muted/60 text-ui-caption font-body">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
                 </div>
               )
@@ -344,6 +354,13 @@ const Game: React.FC<GameProps> = ({
           event={modalEvent}
           onClose={closeModal}
           showYear={showYearInModal}
+        />
+
+        {/* Toast */}
+        <Toast
+          message="Copied to clipboard!"
+          isVisible={showToast}
+          onClose={() => setShowToast(false)}
         />
       </div>
     </DndContext>
