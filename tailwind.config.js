@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       height: {
@@ -22,9 +23,40 @@ module.exports = {
         'fast': '150ms',
       },
       colors: {
+        // Legacy colors (keep for compatibility during transition)
         cream: '#FDF5E6',
         paper: '#FFFEF9',
         sketch: '#2C2C2C',
+        // Light theme
+        'light-bg': '#FAF8F5',
+        'light-card': '#FFFDF8',
+        'light-text': '#2D2A26',
+        'light-muted': '#6B6560',
+        'light-border': '#E5E0D8',
+        // Dark theme
+        'dark-bg': '#1A1918',
+        'dark-card': '#2A2826',
+        'dark-text': '#E8E4DC',
+        'dark-muted': '#9A948C',
+        'dark-border': '#3D3A36',
+        // Shared accent colors
+        'accent': '#B8860B',
+        'accent-dark': '#D4A84B',
+        'success': '#6AAA64',
+        'error': '#C9A0A0',
+      },
+      fontFamily: {
+        'display': ['Playfair Display', 'Georgia', 'serif'],
+        'body': ['Inter', 'system-ui', 'sans-serif'],
+        'mono': ['DM Mono', 'Courier New', 'monospace'],
+      },
+      fontSize: {
+        // Centralized UI text sizes - edit here to update all UI text
+        'ui-title': ['3.0rem', { lineHeight: '1.2', fontWeight: '700' }],     // "When?" title
+        'ui-body': ['1.2rem', { lineHeight: '2.0' }],                         // Turn/Score
+        'ui-label': ['1.0rem', { lineHeight: '1.0' }],                        // "Drag to timeline"
+        'ui-caption': ['1.0rem', { lineHeight: '1.0' }],                      // "Tap for details"
+        'ui-card-title': ['0.9rem', { lineHeight: '1.2', fontWeight: '600' }], // Card title overlay
       },
       animation: {
         'card-hover': 'cardHover 0.2s ease-out forwards',
@@ -85,6 +117,9 @@ module.exports = {
         'card-hover': '8px 8px 20px rgba(0, 0, 0, 0.25), 0 0 30px rgba(218, 165, 32, 0.15)',
         'card-dragging': '15px 15px 30px rgba(0, 0, 0, 0.35), 0 0 50px rgba(218, 165, 32, 0.2)',
         'card-placed': '1px 1px 3px rgba(0, 0, 0, 0.25)',
+        // Dark mode shadows
+        'card-rest-dark': '2px 2px 12px rgba(0, 0, 0, 0.4)',
+        'card-placed-dark': '1px 1px 6px rgba(0, 0, 0, 0.4)',
       },
     },
   },

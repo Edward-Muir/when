@@ -14,30 +14,6 @@ interface TimelineEventProps {
   animationPhase?: AnimationPhase;
 }
 
-const getCategoryBorderColor = (category: string): string => {
-  const colors: Record<string, string> = {
-    'conflict': 'border-red-400',
-    'disasters': 'border-gray-500',
-    'exploration': 'border-teal-400',
-    'cultural': 'border-purple-400',
-    'infrastructure': 'border-amber-400',
-    'diplomatic': 'border-blue-400',
-  };
-  return colors[category] || 'border-gray-400';
-};
-
-const getCategoryTitleBg = (category: string): string => {
-  const colors: Record<string, string> = {
-    'conflict': 'bg-red-100',
-    'disasters': 'bg-gray-200',
-    'exploration': 'bg-teal-100',
-    'cultural': 'bg-purple-100',
-    'infrastructure': 'bg-amber-100',
-    'diplomatic': 'bg-blue-100',
-  };
-  return colors[category] || 'bg-gray-100';
-};
-
 const TimelineEvent: React.FC<TimelineEventProps> = ({
   event,
   onTap,
@@ -48,8 +24,6 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   animationPhase,
 }) => {
   const [imageError, setImageError] = useState(false);
-  const borderColor = getCategoryBorderColor(event.category);
-  const titleBg = getCategoryTitleBg(event.category);
   const hasImage = event.image_url && !imageError;
 
   // Determine animation class for the card
@@ -71,39 +45,33 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
       <div className="flex items-center justify-end w-14 sm:w-16 shrink-0">
         <span
           data-timeline-year={event.year}
-          className="text-sketch font-bold text-sm sm:text-base"
+          className="text-light-text dark:text-dark-text font-bold text-sm sm:text-base font-mono"
         >
           {formatYear(event.year)}
         </span>
-        <div className="w-4 h-0.5 bg-amber-500 ml-1 -mr-1 z-10" />
+        <div className="w-4 h-0.5 bg-accent dark:bg-accent-dark ml-1 -mr-1 z-10" />
       </div>
 
-      {/* Card side (right) - title above image */}
+      {/* Card side (right) - image first, title at bottom */}
       <button
         onClick={onTap}
         className={`
           w-36 h-44 sm:w-40 sm:h-48
           rounded-lg overflow-hidden
-          border-2 ${borderColor}
-          bg-white
+          border border-light-border dark:border-dark-border
+          bg-light-card dark:bg-dark-card
           flex flex-col
-          shadow-md
+          shadow-md dark:shadow-card-rest-dark
           touch-manipulation
           active:scale-95
           z-10
           ml-4
+          transition-colors duration-200
           ${cardAnimationClass}
         `}
       >
-        {/* Title bar at top */}
-        <div className={`${titleBg} px-2 py-1.5 border-b ${borderColor}`}>
-          <span className="text-sketch text-xs font-medium leading-tight line-clamp-2 block">
-            {event.friendly_name}
-          </span>
-        </div>
-
-        {/* Image area */}
-        <div className="flex-1 relative">
+        {/* Full card is image with title overlay */}
+        <div className="flex-1 relative overflow-hidden">
           {hasImage ? (
             <img
               src={event.image_url}
@@ -113,10 +81,17 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-gray-100">
-              <CategoryIcon category={event.category} className="text-gray-400 w-10 h-10" />
+            <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
+              <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-10 h-10" />
             </div>
           )}
+
+          {/* Title overlay with gradient backdrop for readability */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-2 pt-8 pb-2">
+            <span className="text-white text-ui-card-title line-clamp-2 block font-body drop-shadow-md">
+              {event.friendly_name}
+            </span>
+          </div>
         </div>
       </button>
     </div>

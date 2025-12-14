@@ -214,7 +214,7 @@ const Game: React.FC<GameProps> = ({
         },
       }}
     >
-      <div className="h-dvh min-h-screen-safe flex flex-row bg-cream overflow-hidden pt-safe pb-safe">
+      <div className="h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-safe pb-safe transition-colors">
         {/* Confetti */}
         {showConfetti && (
           <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
@@ -230,29 +230,29 @@ const Game: React.FC<GameProps> = ({
         {/* Left Panel - 40% - Game Info + Active Card (entire panel is drop zone) */}
         <div
           ref={setHandDropRef}
-          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 ${isOverHand ? 'bg-amber-100/50' : ''}`}
+          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 ${isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''}`}
         >
             {/* Game Info */}
             <div className="mb-4">
-              <h1 className="text-sketch text-xl font-bold mb-1">When?</h1>
-              <div className="text-sketch/70 text-sm">
+              <h1 className="text-light-text dark:text-dark-text text-ui-title mb-1 font-display">When?</h1>
+              <div className="text-light-muted dark:text-dark-muted text-ui-body font-body">
                 Turn {state.currentTurn}/{state.totalTurns}
               </div>
-              <div className="text-amber-600 text-sm font-medium">
+              <div className="text-accent dark:text-accent-dark text-ui-body font-medium font-body">
                 Score: {state.correctPlacements}/{state.currentTurn > 0 ? state.currentTurn - 1 : 0}
               </div>
 
               {/* Last Result - shown until next placement */}
               {state.lastPlacementResult && (
-                <div className={`mt-2 p-2 rounded-lg text-sm ${
+                <div className={`mt-2 p-2 rounded-lg text-ui-body font-body ${
                   state.lastPlacementResult.success
-                    ? 'bg-green-100 text-green-700'
-                    : 'bg-red-100 text-red-700'
+                    ? 'bg-success/20 text-success dark:bg-success/30'
+                    : 'bg-error/20 text-error dark:bg-error/30'
                 }`}>
                   <div className="font-medium">
                     {state.lastPlacementResult.success ? '✓ Correct!' : '✗ Wrong!'}
                   </div>
-                  <div className="text-xs opacity-80">
+                  <div className="text-ui-caption opacity-80">
                     {state.lastPlacementResult.event.friendly_name} ({formatYear(state.lastPlacementResult.event.year)})
                   </div>
                 </div>
@@ -267,7 +267,7 @@ const Game: React.FC<GameProps> = ({
               <div className="flex flex-col gap-2 pointer-events-auto">
                 <button
                   onClick={() => console.log('Share clicked')}
-                  className="w-full py-3 px-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95"
+                  className="w-full py-3 px-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
                 >
                   <Share2 className="w-4 h-4" />
                   Share
@@ -276,7 +276,7 @@ const Game: React.FC<GameProps> = ({
                 {state.gameMode !== 'daily' && (
                   <button
                     onClick={onRestart}
-                    className="w-full py-3 px-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95"
+                    className="w-full py-3 px-4 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
                   >
                     <RotateCcw className="w-4 h-4" />
                     Restart
@@ -285,7 +285,7 @@ const Game: React.FC<GameProps> = ({
 
                 <button
                   onClick={onNewGame}
-                  className="w-full py-3 px-4 bg-paper border border-amber-300 hover:bg-amber-50 text-sketch text-sm font-medium rounded-xl shadow transition-all duration-200 flex items-center justify-center gap-2 active:scale-95"
+                  className="w-full py-3 px-4 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border hover:bg-light-border/50 dark:hover:bg-dark-border/50 text-light-text dark:text-dark-text text-sm font-medium rounded-xl shadow transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
                 >
                   <Home className="w-4 h-4" />
                   Home
@@ -294,13 +294,13 @@ const Game: React.FC<GameProps> = ({
             ) : (
               state.activeCard && (
                 <div className="relative flex flex-col items-start gap-2 pb-2 pointer-events-auto">
-                  <p className="text-sketch/60 text-xs">Drag to timeline:</p>
+                  <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">Drag to timeline:</p>
                   <DraggableCard
                     event={state.activeCard}
                     onTap={handleActiveCardTap}
                     disabled={state.isAnimating}
                   />
-                  <p className="text-sketch/40 text-xs">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
+                  <p className="text-light-muted/60 dark:text-dark-muted/60 text-ui-caption font-body">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
                 </div>
               )
             )}
