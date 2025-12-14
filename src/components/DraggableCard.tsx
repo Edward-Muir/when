@@ -7,12 +7,14 @@ interface DraggableCardProps {
   event: HistoricalEvent;
   onTap: () => void;
   disabled?: boolean;
+  isOverTimeline?: boolean;
 }
 
 const DraggableCard: React.FC<DraggableCardProps> = ({
   event,
   onTap,
   disabled = false,
+  isOverTimeline = false,
 }) => {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
     id: 'active-card',
@@ -26,8 +28,8 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
       {...listeners}
       {...attributes}
       className={`
-        transition-all duration-200
-        ${isDragging ? 'invisible' : ''}
+
+        ${isDragging ? (isOverTimeline ? 'invisible' : 'opacity-ghost') : ''}
         ${disabled ? 'cursor-not-allowed' : 'cursor-grab active:cursor-grabbing'}
       `}
       style={{

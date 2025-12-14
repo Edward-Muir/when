@@ -20,7 +20,7 @@ interface TimelineProps {
 
 // Ghost card that shows where the dragged card will land
 const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
-  <div className="flex items-center py-1 opacity-50">
+  <div className="flex items-center py-1 opacity-ghost">
     {/* Empty date area to align with real cards */}
     <div className="flex items-center justify-end w-14 sm:w-16 shrink-0">
       <span className="text-light-muted/50 dark:text-dark-muted/50 font-bold text-sm sm:text-base font-mono">?</span>

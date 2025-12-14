@@ -22,6 +22,9 @@ module.exports = {
         'DEFAULT': '150ms',
         'fast': '150ms',
       },
+      opacity: {
+        'ghost': '0.5',  // Ghost card opacity - used in Timeline and DraggableCard
+      },
       colors: {
         // Legacy colors (keep for compatibility during transition)
         cream: '#FDF5E6',

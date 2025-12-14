@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2, Sun, Moon, Check, X } from 'lucide-react';
+import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -277,25 +277,39 @@ const Game: React.FC<GameProps> = ({
                 roundNumber={state.roundNumber}
               />
 
-              {/* Last Result - shown until next placement */}
-              {state.lastPlacementResult && (
+              {/* Result/Winner Banner */}
+              {state.phase === 'gameOver' && (state.players.length > 1 || state.gameMode === 'suddenDeath') && state.winners.length > 0 ? (
+                <div className="mt-3 p-3 rounded-xl border-2 animate-banner-in bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-success text-white">
+                      <Trophy className="w-3.5 h-3.5" strokeWidth={2.5} />
+                    </div>
+                    <span className="font-semibold text-lg leading-none text-success">
+                      {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
+                    </span>
+                  </div>
+                  <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
+                    {state.winners.map(w => w.name).join(', ')}
+                  </div>
+                </div>
+              ) : state.lastPlacementResult && (
                 <div className={`mt-3 p-3 rounded-xl border-2 animate-banner-in ${
                   state.lastPlacementResult.success
                     ? 'bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60'
                     : 'bg-error/15 border-error/50 dark:bg-error/25 dark:border-error/60'
                 }`}>
                   <div className="flex items-center gap-2">
-                    <div className={`w-7 h-7 rounded-full flex items-center justify-center ${
+                    <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${
                       state.lastPlacementResult.success
                         ? 'bg-success text-white'
                         : 'bg-error text-white'
                     }`}>
                       {state.lastPlacementResult.success
-                        ? <Check className="w-4 h-4" strokeWidth={3} />
-                        : <X className="w-4 h-4" strokeWidth={3} />
+                        ? <Check className="w-3.5 h-3.5" strokeWidth={3} />
+                        : <X className="w-3.5 h-3.5" strokeWidth={3} />
                       }
                     </div>
-                    <span className={`font-semibold text-lg ${
+                    <span className={`font-semibold text-lg leading-none ${
                       state.lastPlacementResult.success
                         ? 'text-success dark:text-success'
                         : 'text-error dark:text-error'
@@ -359,21 +373,6 @@ const Game: React.FC<GameProps> = ({
                   </div>
                 )}
 
-                {/* Winners display - multiplayer or sudden death only */}
-                {(state.players.length > 1 || state.gameMode === 'suddenDeath') && state.winners.length > 0 && (
-                  <div className="mt-4 p-3 bg-success/10 border border-success/20 rounded-xl">
-                    <h3 className="text-sm font-bold text-success mb-2 font-body">
-                      {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
-                    </h3>
-                    <div className="space-y-1">
-                      {state.winners.map(winner => (
-                        <div key={winner.id} className="text-xs text-light-text dark:text-dark-text font-body">
-                          🏆 {winner.name}
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
               </div>
             ) : (
               activeCard && (
@@ -386,6 +385,7 @@ const Game: React.FC<GameProps> = ({
                       event={activeCard}
                       onTap={handleActiveCardTap}
                       disabled={state.isAnimating}
+                      isOverTimeline={isOverTimeline}
                     />
                   </div>
                   <p className="text-light-muted/60 dark:text-dark-muted/60 text-ui-caption font-body">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
