@@ -29,6 +29,7 @@ function App() {
     allEvents,
     startGame,
     placeCard,
+    cycleHand,
     resetGame,
     restartGame,
     modalEvent,
@@ -60,6 +61,7 @@ function App() {
     <Game
       state={state}
       onPlacement={placeCard}
+      onCycleHand={cycleHand}
       modalEvent={modalEvent}
       openModal={openModal}
       closeModal={closeModal}

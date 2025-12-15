@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy, Flag } from 'lucide-react';
+import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy, Flag, RefreshCw } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -31,6 +31,7 @@ import { useTheme } from '../hooks/useTheme';
 interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
+  onCycleHand: () => void;
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
@@ -41,6 +42,7 @@ interface GameProps {
 const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
+  onCycleHand,
   modalEvent,
   openModal,
   closeModal,
@@ -409,7 +411,22 @@ const Game: React.FC<GameProps> = ({
                   <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">
                     {state.players.length > 1 ? `${currentPlayer?.name}'s turn:` : 'Drag to timeline:'}
                   </p>
-                  <div className="p-1 rounded-xl bg-light-border/50 dark:bg-dark-border/100">
+                  <div className="relative p-1 rounded-xl bg-light-border/50 dark:bg-dark-border/100">
+                    {currentPlayer && currentPlayer.hand.length > 1 && (
+                      <button
+                        onClick={onCycleHand}
+                        disabled={state.isAnimating}
+                        className="absolute -top-1 -right-1 z-10 w-8 h-8 rounded-full
+                          bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border
+                          shadow-md flex items-center justify-center
+                          hover:bg-light-border dark:hover:bg-dark-border
+                          disabled:opacity-50 disabled:cursor-not-allowed
+                          active:scale-95 transition-all"
+                        aria-label="Cycle to next card"
+                      >
+                        <RefreshCw className="w-4 h-4 text-accent dark:text-accent-dark" />
+                      </button>
+                    )}
                     <DraggableCard
                       event={activeCard}
                       onTap={handleActiveCardTap}
