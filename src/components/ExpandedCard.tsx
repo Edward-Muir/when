@@ -28,41 +28,38 @@ const ExpandedCard: React.FC<ExpandedCardProps> = ({ event, onClose, showYear = 
       onClick={onClose}
     >
       <div
-        className="w-[280px] sm:w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl dark:shadow-card-rest-dark transition-colors"
+        className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl dark:shadow-card-rest-dark transition-colors"
       >
-        {/* Image first */}
-        <div className="w-full h-48 sm:h-56">
+        {/* Image with title overlay */}
+        <div className="h-56 sm:h-64 relative overflow-hidden">
           {event.image_url ? (
             <img src={event.image_url} alt="" className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-              <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-16 h-16" />
+              <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-20 h-20" />
             </div>
           )}
+
+          {/* Title overlay with gradient backdrop */}
+          <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent px-4 pt-12 pb-3">
+            <span className="text-white text-lg font-medium leading-tight block font-body drop-shadow-md">
+              {event.friendly_name}
+            </span>
+          </div>
         </div>
 
-        {/* Title bar */}
-        <div className="bg-light-card dark:bg-dark-card px-3 py-2 border-t border-light-border dark:border-dark-border">
-          <span className="text-light-text dark:text-dark-text text-sm font-medium leading-tight block font-body">
-            {event.friendly_name}
-          </span>
-          {showYear && (
-            <div className="flex items-center gap-2 mt-1">
-              <span className="text-accent dark:text-accent-dark text-sm font-bold font-mono">
-                {formatYear(event.year)}
-              </span>
-            </div>
-          )}
-        </div>
+        {/* Year section - prominent, always readable */}
+        {showYear && (
+          <div className="bg-accent dark:bg-accent-dark px-4 py-3 text-center">
+            <span className="text-white text-2xl font-bold font-mono">
+              {formatYear(event.year)}
+            </span>
+          </div>
+        )}
 
-        {/* Description */}
-        <div className="p-3 max-h-32 overflow-y-auto border-t border-light-border dark:border-dark-border">
-          <p className="text-light-muted dark:text-dark-muted text-sm leading-relaxed font-body">{event.description}</p>
-        </div>
-
-        {/* Close hint */}
-        <div className="px-3 py-2 border-t border-light-border dark:border-dark-border bg-light-border/30 dark:bg-dark-border/30">
-          <p className="text-center text-light-muted/60 dark:text-dark-muted/60 text-xs font-body">Tap anywhere to close</p>
+        {/* Description - compact */}
+        <div className="px-4 py-3">
+          <p className="text-light-text dark:text-dark-text text-sm leading-relaxed font-body">{event.description}</p>
         </div>
       </div>
     </div>

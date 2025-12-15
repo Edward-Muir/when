@@ -14,6 +14,7 @@ import {
   drawCard,
   getNextActivePlayerIndex,
   shouldGameEnd,
+  processEndOfRound,
 } from '../utils/gameLogic';
 
 interface UseWhenGameReturn {
@@ -160,37 +161,69 @@ export function useWhenGame(): UseWhenGameReturn {
         setState((prev) => {
           const newPlayers = [...prev.players];
           const player = { ...newPlayers[prev.currentPlayerIndex] };
+          const isSuddenDeath = prev.gameMode === 'suddenDeath';
+          const isSinglePlayer = newPlayers.length === 1;
+          let newDeck = prev.deck;
 
           // Remove card from hand
           player.hand = removeFromHand(player.hand, event.name);
 
-          // Check if player won (hand empty)
-          if (player.hand.length === 0) {
-            player.hasWon = true;
-            player.winTurn = prev.turnNumber;
+          if (isSuddenDeath) {
+            // In sudden death, draw a new card for next turn
+            const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
+            if (newCard) {
+              player.hand = [newCard];
+            }
+            newDeck = updatedDeck;
+          } else {
+            // Check if player won (hand empty) - for non-sudden-death modes
+            if (player.hand.length === 0) {
+              player.hasWon = true;
+              player.winTurn = prev.turnNumber;
+            }
           }
 
           newPlayers[prev.currentPlayerIndex] = player;
 
           // Advance to next player
           const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
-          const newRoundNumber = nextPlayerIndex === 0 ? prev.roundNumber + 1 : prev.roundNumber;
+          const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
+          const newRoundNumber = isRoundEnding ? prev.roundNumber + 1 : prev.roundNumber;
 
-          // Update winners list
-          const newWinners = player.hasWon && !prev.winners.some(w => w.id === player.id)
-            ? [...prev.winners, player]
-            : prev.winners;
+          let isGameOver = false;
+          let finalWinners = prev.winners;
+          let finalPlayers = newPlayers;
 
-          // Check if game should end
-          const isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
+          if (isSuddenDeath && isRoundEnding) {
+            // Use unified end-of-round logic for sudden death
+            const result = processEndOfRound(newPlayers, 'suddenDeath', isSinglePlayer, prev.roundNumber);
+            finalPlayers = result.updatedPlayers;
+            isGameOver = result.gameOver;
+            if (result.winners.length > 0) {
+              finalWinners = [...prev.winners];
+              result.winners.forEach(w => {
+                if (!finalWinners.some(fw => fw.id === w.id)) {
+                  finalWinners.push(w);
+                }
+              });
+            }
+          } else if (!isSuddenDeath) {
+            // Non-sudden-death mode: use existing logic
+            // Update winners list if player won by emptying hand
+            if (player.hasWon && !prev.winners.some(w => w.id === player.id)) {
+              finalWinners = [...prev.winners, player];
+            }
+            isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
+          }
 
           return {
             ...prev,
-            players: newPlayers,
-            currentPlayerIndex: nextPlayerIndex,
+            players: finalPlayers,
+            deck: newDeck,
+            currentPlayerIndex: isGameOver ? prev.currentPlayerIndex : nextPlayerIndex,
             turnNumber: prev.turnNumber + 1,
             roundNumber: newRoundNumber,
-            winners: newWinners,
+            winners: finalWinners,
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,
@@ -228,38 +261,79 @@ export function useWhenGame(): UseWhenGameReturn {
           const newPlayers = [...prev.players];
           const player = { ...newPlayers[prev.currentPlayerIndex] };
           const isSuddenDeath = prev.gameMode === 'suddenDeath';
+          const isSinglePlayer = newPlayers.length === 1;
+          let newDeck = prev.deck;
 
           // Remove card from hand (discarded)
           player.hand = removeFromHand(player.hand, event.name);
 
           if (isSuddenDeath) {
-            // Sudden death: player is eliminated
-            player.isEliminated = true;
+            // Sudden death: mark as made incorrect placement (don't eliminate yet)
+            player.madeIncorrectPlacement = true;
           } else {
             // Draw replacement card
-            const { card: newCard, newDeck } = drawCard(prev.deck);
+            const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
             if (newCard) {
               player.hand = addToHand(player.hand, newCard);
             }
-            prev.deck = newDeck;
+            newDeck = updatedDeck;
           }
 
           newPlayers[prev.currentPlayerIndex] = player;
 
-          // Advance to next player
-          const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
-          const newRoundNumber = nextPlayerIndex === 0 ? prev.roundNumber + 1 : prev.roundNumber;
+          // Determine if round is ending
+          // For single player sudden death: always process end of round immediately
+          // For multiplayer: check if we're returning to player 0
+          const nextPlayerIndex = isSuddenDeath && isSinglePlayer
+            ? 0  // Doesn't matter for single player, we'll end the game
+            : getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
+          const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
+          const newRoundNumber = isRoundEnding ? prev.roundNumber + 1 : prev.roundNumber;
 
-          // Check if game should end
-          const isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
+          let isGameOver = false;
+          let finalWinners = prev.winners;
+          let finalPlayers = newPlayers;
+
+          if (isSuddenDeath && isRoundEnding) {
+            // Use unified end-of-round logic for sudden death
+            const result = processEndOfRound(newPlayers, 'suddenDeath', isSinglePlayer, prev.roundNumber);
+            finalPlayers = result.updatedPlayers;
+            isGameOver = result.gameOver;
+            if (result.winners.length > 0) {
+              // Add winners that aren't already in the list
+              finalWinners = [...prev.winners];
+              result.winners.forEach(w => {
+                if (!finalWinners.some(fw => fw.id === w.id)) {
+                  finalWinners.push(w);
+                }
+              });
+            }
+
+            // If reprieve granted (game not over), draw new cards for all active players
+            if (!isGameOver) {
+              finalPlayers.forEach(p => {
+                if (!p.isEliminated) {
+                  const { card: newCard, newDeck: updatedDeck } = drawCard(newDeck);
+                  if (newCard) {
+                    p.hand = [newCard];
+                  }
+                  newDeck = updatedDeck;
+                }
+              });
+            }
+          } else if (!isSuddenDeath) {
+            // Non-sudden-death mode: use existing logic
+            isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, prev.gameMode!);
+          }
 
           return {
             ...prev,
-            players: newPlayers,
-            deck: isSuddenDeath ? prev.deck : prev.deck,
-            currentPlayerIndex: nextPlayerIndex,
+            players: finalPlayers,
+            deck: newDeck,
+            currentPlayerIndex: isGameOver ? prev.currentPlayerIndex : nextPlayerIndex,
             turnNumber: prev.turnNumber + 1,
             roundNumber: newRoundNumber,
+            winners: finalWinners,
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,

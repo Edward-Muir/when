@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy } from 'lucide-react';
+import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy, Flag } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -187,7 +187,11 @@ const Game: React.FC<GameProps> = ({
     // If dropped on hand zone or nowhere, card just snaps back (no action)
 
     setInsertionIndex(null);
-    draggedCardRef.current = null;
+    // Only clear ref if NOT dropping on timeline (for snap-back animation)
+    // When dropping on timeline, dropAnimation=null makes card disappear instantly
+    if (!droppedOnTimelineRef.current) {
+      draggedCardRef.current = null;
+    }
   }, [insertionIndex, onPlacement, state.isAnimating]);
 
   const handleDragCancel = useCallback(() => {
@@ -275,24 +279,60 @@ const Game: React.FC<GameProps> = ({
                 currentPlayerIndex={state.currentPlayerIndex}
                 turnNumber={state.turnNumber}
                 roundNumber={state.roundNumber}
+                gameMode={state.gameMode}
               />
 
-              {/* Result/Winner Banner */}
-              {state.phase === 'gameOver' && (state.players.length > 1 || state.gameMode === 'suddenDeath') && state.winners.length > 0 ? (
-                <div className="mt-3 p-3 rounded-xl border-2 animate-banner-in bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60">
-                  <div className="flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-success text-white">
-                      <Trophy className="w-3.5 h-3.5" strokeWidth={2.5} />
+              {/* Result/Winner/Stats Banner */}
+              {state.phase === 'gameOver' ? (
+                // Game over banners
+                state.gameMode === 'suddenDeath' && state.players.length === 1 && state.winners.length === 0 ? (
+                  // Single-player sudden death: Game Over (loss)
+                  <div className="mt-3 p-3 rounded-xl border-2 animate-banner-in bg-error/15 border-error/50 dark:bg-error/25 dark:border-error/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-error text-white">
+                        <X className="w-3.5 h-3.5" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-lg leading-none text-error">
+                        Game Over
+                      </span>
                     </div>
-                    <span className="font-semibold text-lg leading-none text-success">
-                      {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
-                    </span>
+                    <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
+                      Streak: {state.placementHistory.filter(p => p).length} correct
+                    </div>
                   </div>
-                  <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
-                    {state.winners.map(w => w.name).join(', ')}
+                ) : (state.players.length > 1 || state.gameMode === 'suddenDeath') && state.winners.length > 0 ? (
+                  // Multiplayer/Sudden Death: Winner banner
+                  <div className="mt-3 p-3 rounded-xl border-2 animate-banner-in bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-success text-white">
+                        <Trophy className="w-3.5 h-3.5" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-lg leading-none text-success">
+                        {state.winners.length === 1 ? 'Winner!' : 'Winners!'}
+                      </span>
+                    </div>
+                    <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
+                      {state.winners.map(w => w.name).join(', ')}
+                    </div>
                   </div>
-                </div>
+                ) : state.players.length === 1 && state.gameMode !== 'suddenDeath' ? (
+                  // Single player: Completion stats banner
+                  <div className="mt-3 p-3 rounded-xl border-2 animate-banner-in bg-accent/15 border-accent/50 dark:bg-accent-dark/25 dark:border-accent-dark/60">
+                    <div className="flex items-center gap-2">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 bg-accent dark:bg-accent-dark text-white">
+                        <Flag className="w-3.5 h-3.5" strokeWidth={2.5} />
+                      </div>
+                      <span className="font-semibold text-lg leading-none text-accent dark:text-accent-dark">
+                        Complete!
+                      </span>
+                    </div>
+                    <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
+                      {state.roundNumber} {state.roundNumber === 1 ? 'round' : 'rounds'} · {state.placementHistory.filter(p => p).length}/{state.placementHistory.length} correct
+                    </div>
+                  </div>
+                ) : null
               ) : state.lastPlacementResult && (
+                // During gameplay: placement feedback
                 <div className={`mt-3 p-3 rounded-xl border-2 animate-banner-in ${
                   state.lastPlacementResult.success
                     ? 'bg-success/15 border-success/50 dark:bg-success/25 dark:border-success/60'
@@ -361,17 +401,6 @@ const Game: React.FC<GameProps> = ({
                   Home
                 </button>
 
-                {/* Stats for single player freeplay/daily */}
-                {state.players.length === 1 && state.gameMode !== 'suddenDeath' && (
-                  <div className="mt-4 p-3 bg-light-border/50 dark:bg-dark-border/50 rounded-xl">
-                    <div className="text-sm text-light-text dark:text-dark-text font-body">
-                      Completed in {state.roundNumber} {state.roundNumber === 1 ? 'round' : 'rounds'}
-                    </div>
-                    <div className="text-xs text-light-muted dark:text-dark-muted mt-1">
-                      {state.placementHistory.filter(p => p).length}/{state.placementHistory.length} correct
-                    </div>
-                  </div>
-                )}
 
               </div>
             ) : (
@@ -386,6 +415,7 @@ const Game: React.FC<GameProps> = ({
                       onTap={handleActiveCardTap}
                       disabled={state.isAnimating}
                       isOverTimeline={isOverTimeline}
+                      isHidden={state.isAnimating}
                     />
                   </div>
                   <p className="text-light-muted/60 dark:text-dark-muted/60 text-ui-caption font-body">{isDragging && isOverHand ? 'Release to cancel' : 'Tap for details'}</p>
@@ -413,7 +443,7 @@ const Game: React.FC<GameProps> = ({
         {/* Portal to document.body to fix React 19 positioning issue */}
         {createPortal(
           <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
-            {isDragging && draggedCardRef.current ? (
+            {draggedCardRef.current ? (
               <div
                 className="dragging-card"
                 style={{

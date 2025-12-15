@@ -36,6 +36,8 @@ export interface Player {
   hasWon: boolean;
   winTurn?: number;
   isEliminated?: boolean;
+  eliminatedRound?: number;
+  madeIncorrectPlacement?: boolean;  // Track mistakes for reprieve logic in sudden death
 }
 
 export type GamePhase = 'loading' | 'modeSelect' | 'playing' | 'gameOver';

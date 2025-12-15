@@ -8,6 +8,7 @@ interface DraggableCardProps {
   onTap: () => void;
   disabled?: boolean;
   isOverTimeline?: boolean;
+  isHidden?: boolean;
 }
 
 const DraggableCard: React.FC<DraggableCardProps> = ({
@@ -15,6 +16,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   onTap,
   disabled = false,
   isOverTimeline = false,
+  isHidden = false,
 }) => {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
     id: 'active-card',
@@ -28,8 +30,8 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
       {...listeners}
       {...attributes}
       className={`
-
-        ${isDragging ? (isOverTimeline ? 'invisible' : 'opacity-ghost') : ''}
+        ${isHidden ? 'invisible' : ''}
+        ${!isHidden && isDragging ? (isOverTimeline ? 'invisible' : 'opacity-ghost') : ''}
         ${disabled ? 'cursor-not-allowed' : 'cursor-grab active:cursor-grabbing'}
       `}
       style={{

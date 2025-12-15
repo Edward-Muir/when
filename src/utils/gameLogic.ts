@@ -238,19 +238,27 @@ export function initializePlayers(
   };
 }
 
-// Check if game should end
+// Check if game should end (used for non-sudden-death modes)
 export function shouldGameEnd(
   players: Player[],
   roundNumber: number,
   currentPlayerIndex: number,
   gameMode: GameMode
 ): boolean {
-  // Count active (non-eliminated) players
   const activePlayers = players.filter(p => !p.isEliminated);
 
-  // Sudden death: game ends when only one non-eliminated player remains
-  if (gameMode === 'suddenDeath' && activePlayers.length <= 1) {
-    return true;
+  // Sudden death mode - handled by processEndOfRound
+  if (gameMode === 'suddenDeath') {
+    // Single player: end immediately when eliminated (no rounds concept)
+    if (players.length === 1) {
+      return activePlayers.length === 0;
+    }
+    // Multiplayer: only check at round boundary (when we return to player 0)
+    if (currentPlayerIndex !== 0) {
+      return false;
+    }
+    // At round boundary: end if 1 or 0 players remain
+    return activePlayers.length <= 1;
   }
 
   // Regular multiplayer: must complete at least 1 full round
@@ -263,6 +271,74 @@ export function shouldGameEnd(
 
   // Game ends when we return to player 0 after someone has won
   return hasWinners && currentPlayerIndex === 0;
+}
+
+// Result of end-of-round processing
+export interface EndOfRoundResult {
+  gameOver: boolean;
+  updatedPlayers: Player[];
+  winners: Player[];
+}
+
+// Process end of round for sudden death mode
+// Unified logic: evaluate eliminations and winners at round boundaries
+export function processEndOfRound(
+  players: Player[],
+  gameMode: GameMode,
+  isSinglePlayer: boolean,
+  currentRound: number
+): EndOfRoundResult {
+  const updatedPlayers = players.map(p => ({ ...p }));
+  const activePlayers = updatedPlayers.filter(p => !p.isEliminated);
+  const mistakesThisRound = activePlayers.filter(p => p.madeIncorrectPlacement);
+
+  // Phase 1: Handle eliminations (Sudden Death only)
+  if (gameMode === 'suddenDeath') {
+    const allFailed = mistakesThisRound.length === activePlayers.length && activePlayers.length > 0;
+    const grantReprieve = allFailed && !isSinglePlayer;
+
+    if (!grantReprieve) {
+      // Eliminate players who made mistakes
+      mistakesThisRound.forEach(mistakePlayer => {
+        const player = updatedPlayers.find(p => p.id === mistakePlayer.id);
+        if (player) {
+          player.isEliminated = true;
+          player.eliminatedRound = currentRound;
+        }
+      });
+    }
+  }
+
+  // Clear madeIncorrectPlacement for next round
+  updatedPlayers.forEach(p => { p.madeIncorrectPlacement = false; });
+
+  // Phase 2: Determine winners
+  const remaining = updatedPlayers.filter(p => !p.isEliminated);
+
+  let winners: Player[] = [];
+  if (gameMode === 'suddenDeath') {
+    // Single-player: game only ends when eliminated (no winner, just game over)
+    // Multiplayer: last player standing wins
+    if (isSinglePlayer) {
+      // Single player has no "winner" - game ends only when eliminated
+      // remaining.length === 0 means game over (handled below)
+    } else if (remaining.length <= 1) {
+      winners = remaining;
+      remaining.forEach(p => { p.hasWon = true; });
+    }
+  } else {
+    // Remove cards mode: players with empty hands win
+    winners = remaining.filter(p => p.hasWon);
+  }
+
+  // Phase 3: Determine if game is over
+  // For single-player sudden death: only end when eliminated (remaining === 0)
+  // For multiplayer: end when there's a winner OR no players left
+  const gameOver = isSinglePlayer && gameMode === 'suddenDeath'
+    ? remaining.length === 0
+    : winners.length > 0 || remaining.length === 0;
+
+  return { gameOver, updatedPlayers, winners };
 }
 
 // Count remaining active players (for sudden death)
