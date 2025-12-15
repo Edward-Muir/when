@@ -81,7 +81,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       dailySeed,
       playerCount: 1,
       playerNames: ['Player 1'],
-      cardsPerHand: 7,
+      cardsPerHand: 5,
     });
   };
 
