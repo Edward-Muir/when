@@ -54,19 +54,14 @@ export function generateShareText(state: WhenGameState): string {
 }
 
 /**
- * Share results using Web Share API or fallback to clipboard
+ * Share content using Web Share API or fallback to clipboard
  * Returns true if copied to clipboard (toast should be shown)
  */
-export async function shareResults(state: WhenGameState): Promise<boolean> {
-  const shareText = generateShareText(state);
-
+async function shareContent(text: string, title: string): Promise<boolean> {
   // Try native share first (mobile)
   if (navigator.share) {
     try {
-      await navigator.share({
-        title: 'When - Timeline Game',
-        text: shareText,
-      });
+      await navigator.share({ title, text });
       return false; // Native share handled it, no toast needed
     } catch (err) {
       // User cancelled or share failed, fall through to clipboard
@@ -78,12 +73,12 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
 
   // Fallback: copy to clipboard
   try {
-    await navigator.clipboard.writeText(shareText);
+    await navigator.clipboard.writeText(text);
     return true; // Show toast
   } catch (err) {
     // Final fallback for older browsers
     const textArea = document.createElement('textarea');
-    textArea.value = shareText;
+    textArea.value = text;
     textArea.style.position = 'fixed';
     textArea.style.left = '-9999px';
     document.body.appendChild(textArea);
@@ -92,4 +87,22 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
     document.body.removeChild(textArea);
     return true; // Show toast
   }
+}
+
+/**
+ * Share game results using Web Share API or fallback to clipboard
+ * Returns true if copied to clipboard (toast should be shown)
+ */
+export async function shareResults(state: WhenGameState): Promise<boolean> {
+  const shareText = generateShareText(state);
+  return shareContent(shareText, 'When - Timeline Game');
+}
+
+/**
+ * Share the app (invite link) using Web Share API or fallback to clipboard
+ * Returns true if copied to clipboard (toast should be shown)
+ */
+export async function shareApp(): Promise<boolean> {
+  const text = `Try When - The Timeline Game!\n\n${GAME_URL}`;
+  return shareContent(text, 'When - Timeline Game');
 }

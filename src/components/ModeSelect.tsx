@@ -1,10 +1,12 @@
 import React, { useState, useMemo } from 'react';
-import { Calendar, Gamepad2, Settings, Play, Sun, Moon } from 'lucide-react';
+import { Calendar, Gamepad2, Settings, Play, Sun, Moon, Share2 } from 'lucide-react';
 import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
+import { Toast } from './Toast';
 import { useTheme } from '../hooks/useTheme';
+import { shareApp } from '../utils/share';
 
 const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
 const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
@@ -17,6 +19,7 @@ interface ModeSelectProps {
 
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
   const { isDark, toggleTheme } = useTheme();
+  const [showToast, setShowToast] = useState(false);
 
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(false);
@@ -112,6 +115,18 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   return (
     <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-safe pb-safe overflow-auto transition-colors">
       <div className="bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-5 max-w-sm w-full text-center relative z-10 border border-light-border dark:border-dark-border">
+        {/* Share Button */}
+        <button
+          onClick={async () => {
+            const showClipboardToast = await shareApp();
+            if (showClipboardToast) setShowToast(true);
+          }}
+          className="absolute top-4 left-4 p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
+          aria-label="Share game"
+        >
+          <Share2 className="w-5 h-5 text-accent dark:text-accent-dark" />
+        </button>
+
         {/* Theme Toggle */}
         <button
           onClick={toggleTheme}
@@ -139,7 +154,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               </div>
               <div className="text-left flex-1 min-w-0">
                 <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Play</h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Customize your game</p>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Place events in the correct order</p>
               </div>
               <button
                 onClick={() => setIsSettingsOpen(true)}
@@ -242,6 +257,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         setPlayerNames={setPlayerNames}
         cardsPerHand={cardsPerHand}
         setCardsPerHand={setCardsPerHand}
+      />
+
+      {/* Toast */}
+      <Toast
+        message="Copied to clipboard!"
+        isVisible={showToast}
+        onClose={() => setShowToast(false)}
       />
     </div>
   );
