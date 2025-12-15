@@ -36,978 +36,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/330px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg"
   },
   {
-    "name": "code-hammurabi",
-    "friendly_name": "Code of Hammurabi Created",
-    "year": -1754,
-    "category": "cultural",
-    "description": "The Babylonian king established one of the oldest written legal codes.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/330px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG"
-  },
-  {
-    "name": "first-olympics",
-    "friendly_name": "First Olympic Games",
-    "year": -776,
-    "category": "cultural",
-    "description": "Ancient Greeks held the first recorded Olympic Games at Olympia.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg/330px-Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg"
-  },
-  {
-    "name": "homer-iliad",
-    "friendly_name": "Homer Composes the Iliad",
-    "year": -750,
-    "category": "cultural",
-    "description": "The Greek poet composed the epic tale of the Trojan War.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg/330px-Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg"
-  },
-  {
-    "name": "buddha-enlightenment",
-    "friendly_name": "Buddha Attains Enlightenment",
-    "year": -528,
-    "category": "cultural",
-    "description": "Siddhartha Gautama achieved enlightenment, founding Buddhism.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg"
-  },
-  {
-    "name": "confucius-teachings",
-    "friendly_name": "Confucius Begins Teaching",
-    "year": -500,
-    "category": "cultural",
-    "description": "The Chinese philosopher began spreading his influential ethical teachings.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/330px-Confucius_Tang_Dynasty.jpg"
-  },
-  {
-    "name": "parthenon-completed",
-    "friendly_name": "Parthenon Completed",
-    "year": -432,
-    "category": "cultural",
-    "description": "Athens finished constructing the iconic temple to the goddess Athena.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/330px-The_Parthenon_in_Athens.jpg"
-  },
-  {
-    "name": "socrates-death",
-    "friendly_name": "Death of Socrates",
-    "year": -399,
-    "category": "cultural",
-    "description": "The Athenian philosopher was executed by drinking hemlock.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/330px-Socrate_du_Louvre.jpg"
-  },
-  {
-    "name": "library-alexandria",
-    "friendly_name": "Library of Alexandria Founded",
-    "year": -283,
-    "category": "cultural",
-    "description": "The ancient world's greatest library was established in Egypt.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/330px-Ancientlibraryalex.jpg"
-  },
-  {
-    "name": "dead-sea-scrolls-written",
-    "friendly_name": "Dead Sea Scrolls Written",
-    "year": -150,
-    "category": "cultural",
-    "description": "Jewish scribes created ancient religious manuscripts found near the Dead Sea.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG"
-  },
-  {
-    "name": "jesus-birth",
-    "friendly_name": "Birth of Jesus Christ",
-    "year": -4,
-    "category": "cultural",
-    "description": "The birth of Jesus, founder of Christianity.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Adoration_of_the_sheperds_-_Matthias_Stomer.jpg/330px-Adoration_of_the_sheperds_-_Matthias_Stomer.jpg"
-  },
-  {
-    "name": "jesus-crucifixion",
-    "friendly_name": "Crucifixion of Jesus",
-    "year": 33,
-    "category": "cultural",
-    "description": "Jesus of Nazareth was crucified in Jerusalem, founding Christianity.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristo_crucificado.jpg/330px-Cristo_crucificado.jpg"
-  },
-  {
-    "name": "colosseum-completed",
-    "friendly_name": "Colosseum Completed",
-    "year": 80,
-    "category": "cultural",
-    "description": "Rome finished building its massive amphitheater for gladiatorial games.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
-  },
-  {
-    "name": "christianity-legalized",
-    "friendly_name": "Christianity Legalized in Rome",
-    "year": 313,
-    "category": "cultural",
-    "description": "Emperor Constantine issued the Edict of Milan, ending Christian persecution.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg"
-  },
-  {
-    "name": "bible-latin-vulgate",
-    "friendly_name": "Latin Vulgate Bible Completed",
-    "year": 405,
-    "category": "cultural",
-    "description": "Saint Jerome completed his Latin translation of the Bible.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Cod._Sangallensis_63_%28277%29.jpg/330px-Cod._Sangallensis_63_%28277%29.jpg"
-  },
-  {
-    "name": "muhammad-revelation",
-    "friendly_name": "Muhammad Receives First Revelation",
-    "year": 610,
-    "category": "cultural",
-    "description": "The Prophet Muhammad received the first verses of the Quran, founding Islam.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg"
-  },
-  {
-    "name": "islam-founded",
-    "friendly_name": "Islam Founded",
-    "year": 622,
-    "category": "cultural",
-    "description": "Muhammad's Hijra to Medina marks the start of the Islamic calendar.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Kaaba_during_Hajj.jpg/330px-The_Kaaba_during_Hajj.jpg"
-  },
-  {
-    "name": "book-of-kells",
-    "friendly_name": "Book of Kells Created",
-    "year": 800,
-    "category": "cultural",
-    "description": "Irish monks created an illuminated manuscript of the four Gospels.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KellsFol032vChristEnthroned.jpg/330px-KellsFol032vChristEnthroned.jpg"
-  },
-  {
-    "name": "tale-of-genji",
-    "friendly_name": "Tale of Genji Written",
-    "year": 1010,
-    "category": "cultural",
-    "description": "Murasaki Shikibu wrote what is often called the world's first novel.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Genji_emaki_01003_002.jpg/330px-Genji_emaki_01003_002.jpg"
-  },
-  {
-    "name": "notre-dame-construction",
-    "friendly_name": "Notre-Dame Cathedral Construction Begins",
-    "year": 1163,
-    "category": "cultural",
-    "description": "Work began on the iconic Gothic cathedral in Paris.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
-  },
-  {
-    "name": "oxford-founded",
-    "friendly_name": "Oxford University Founded",
-    "year": 1167,
-    "category": "cultural",
-    "description": "The oldest English-speaking university began formal instruction.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Arms_of_University_of_Oxford.svg/330px-Arms_of_University_of_Oxford.svg.png"
-  },
-  {
-    "name": "marco-polo-china",
-    "friendly_name": "Marco Polo Reaches China",
-    "year": 1275,
-    "category": "cultural",
-    "description": "The Venetian explorer arrived at the court of Kublai Khan.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Marco_Polo_-_costume_tartare.jpg/330px-Marco_Polo_-_costume_tartare.jpg"
-  },
-  {
-    "name": "divine-comedy",
-    "friendly_name": "Dante Writes Divine Comedy",
-    "year": 1320,
-    "category": "cultural",
-    "description": "Dante Alighieri completed his epic poem exploring the afterlife.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dante_Domenico_di_Michelino.jpg/330px-Dante_Domenico_di_Michelino.jpg"
-  },
-  {
-    "name": "gutenberg",
-    "friendly_name": "Gutenberg Printing Press",
-    "year": 1440,
-    "category": "cultural",
-    "description": "Gutenberg's movable type revolutionized the spread of knowledge.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/PrintMus_038.jpg/330px-PrintMus_038.jpg"
-  },
-  {
-    "name": "printing-press",
-    "friendly_name": "Gutenberg Printing Press",
-    "year": 1440,
-    "category": "cultural",
-    "description": "Johannes Gutenberg invented movable type printing in Europe.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/PrintMus_038.jpg/330px-PrintMus_038.jpg"
-  },
-  {
-    "name": "sistine-chapel",
-    "friendly_name": "Sistine Chapel Ceiling Painted",
-    "year": 1512,
-    "category": "cultural",
-    "description": "Michelangelo completed his masterpiece ceiling fresco.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/330px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg"
-  },
-  {
-    "name": "sistine-chapel-ceiling",
-    "friendly_name": "Sistine Chapel Ceiling Completed",
-    "year": 1512,
-    "category": "cultural",
-    "description": "Michelangelo finished painting his masterpiece on the chapel ceiling.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/330px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg"
-  },
-  {
-    "name": "protestant-reformation",
-    "friendly_name": "Protestant Reformation Begins",
-    "year": 1517,
-    "category": "cultural",
-    "description": "Martin Luther posted his 95 Theses, challenging Catholic Church practices.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg"
-  },
-  {
-    "name": "luther-theses",
-    "friendly_name": "Luther's 95 Theses",
-    "year": 1517,
-    "category": "cultural",
-    "description": "Martin Luther posted his theses, sparking the Protestant Reformation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Luther_95_Thesen.png/330px-Luther_95_Thesen.png"
-  },
-  {
-    "name": "shakespeare-hamlet",
-    "friendly_name": "Shakespeare Writes Hamlet",
-    "year": 1600,
-    "category": "cultural",
-    "description": "Shakespeare wrote one of the greatest plays in the English language.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Edwin_Booth_Hamlet_1870.jpg/330px-Edwin_Booth_Hamlet_1870.jpg"
-  },
-  {
-    "name": "king-james-bible",
-    "friendly_name": "King James Bible Published",
-    "year": 1611,
-    "category": "cultural",
-    "description": "The influential English translation of the Bible was completed.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg/330px-KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg"
-  },
-  {
-    "name": "taj-mahal-completed",
-    "friendly_name": "Taj Mahal Completed",
-    "year": 1653,
-    "category": "cultural",
-    "description": "The Mughal emperor finished building the famous mausoleum for his wife.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg"
-  },
-  {
-    "name": "paradise-lost",
-    "friendly_name": "Paradise Lost Published",
-    "year": 1667,
-    "category": "cultural",
-    "description": "John Milton published his epic poem about the fall of man.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg/330px-Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg"
-  },
-  {
-    "name": "newton-principia",
-    "friendly_name": "Newton Publishes Principia",
-    "year": 1687,
-    "category": "cultural",
-    "description": "Isaac Newton published his laws of motion and universal gravitation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_Principia_title_page.png/330px-Newton%27s_Principia_title_page.png"
-  },
-  {
-    "name": "bach-well-tempered",
-    "friendly_name": "Bach Completes Well-Tempered Clavier",
-    "year": 1722,
-    "category": "cultural",
-    "description": "Bach completed his influential collection of keyboard music.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bach-wtc1-title-ms.jpg/330px-Bach-wtc1-title-ms.jpg"
-  },
-  {
-    "name": "encyclopedia-published",
-    "friendly_name": "Encyclopédie Published",
-    "year": 1751,
-    "category": "cultural",
-    "description": "Diderot and d'Alembert began publishing their Enlightenment encyclopedia.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg/330px-Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg"
-  },
-  {
-    "name": "wealth-of-nations",
-    "friendly_name": "Wealth of Nations Published",
-    "year": 1776,
-    "category": "cultural",
-    "description": "Adam Smith published his foundational work on modern economics.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wealth_of_Nations.jpg/330px-Wealth_of_Nations.jpg"
-  },
-  {
-    "name": "mozart-don-giovanni",
-    "friendly_name": "Mozart Premieres Don Giovanni",
-    "year": 1787,
-    "category": "cultural",
-    "description": "Mozart's opera about the legendary seducer premiered in Prague.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg/330px-Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg"
-  },
-  {
-    "name": "mozart-dies",
-    "friendly_name": "Mozart Dies",
-    "year": 1791,
-    "category": "cultural",
-    "description": "The musical prodigy died at age 35 in Vienna.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/330px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg"
-  },
-  {
-    "name": "beethoven-ninth",
-    "friendly_name": "Beethoven's Ninth Symphony Premiered",
-    "year": 1824,
-    "category": "cultural",
-    "description": "Beethoven premiered his final symphony, including the Ode to Joy.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_Premiere_of_Symphony_No._9.jpg/330px-The_Premiere_of_Symphony_No._9.jpg"
-  },
-  {
-    "name": "first-photograph",
-    "friendly_name": "First Photograph Taken",
-    "year": 1826,
-    "category": "cultural",
-    "description": "Joseph Nicéphore Niépce captured the world's first permanent photograph.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg/330px-Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg"
-  },
-  {
-    "name": "slavery-abolished-uk",
-    "friendly_name": "Slavery Abolished in British Empire",
-    "year": 1833,
-    "category": "cultural",
-    "description": "Britain passed the Slavery Abolition Act, freeing slaves in most colonies.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg.png"
-  },
-  {
-    "name": "communist-manifesto",
-    "friendly_name": "Communist Manifesto Published",
-    "year": 1848,
-    "category": "cultural",
-    "description": "Karl Marx and Friedrich Engels published their influential political pamphlet.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Communist-manifesto.png/330px-Communist-manifesto.png"
-  },
-  {
-    "name": "origin-of-species",
-    "friendly_name": "Origin of Species Published",
-    "year": 1859,
-    "category": "cultural",
-    "description": "Charles Darwin published his theory of evolution by natural selection.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Origin_of_Species_title_page.jpg/330px-Origin_of_Species_title_page.jpg"
-  },
-  {
-    "name": "slavery-abolished-us",
-    "friendly_name": "Slavery Abolished in United States",
-    "year": 1865,
-    "category": "cultural",
-    "description": "The 13th Amendment ended slavery throughout the United States.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png"
-  },
-  {
-    "name": "first-impressionist-exhibition",
-    "friendly_name": "First Impressionist Exhibition",
-    "year": 1874,
-    "category": "cultural",
-    "description": "Monet, Renoir, and others held their first independent art exhibition in Paris.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg/330px-Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg"
-  },
-  {
-    "name": "phonograph-invented",
-    "friendly_name": "Phonograph Invented",
-    "year": 1877,
-    "category": "cultural",
-    "description": "Thomas Edison invented a device to record and play back sound.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turntable.svg/330px-Turntable.svg.png"
-  },
-  {
-    "name": "first-motion-picture",
-    "friendly_name": "First Motion Picture Screened",
-    "year": 1895,
-    "category": "cultural",
-    "description": "The Lumière brothers held the first public film screening in Paris.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lumi%C3%A8re_brothers.jpg/330px-Lumi%C3%A8re_brothers.jpg"
-  },
-  {
-    "name": "first-modern-olympics",
-    "friendly_name": "First Modern Olympic Games",
-    "year": 1896,
-    "category": "cultural",
-    "description": "Athens hosted the revival of the ancient Olympic Games.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/330px-Olympic_rings_without_rims.svg.png"
-  },
-  {
-    "name": "freud-interpretation-dreams",
-    "friendly_name": "Interpretation of Dreams Published",
-    "year": 1899,
-    "category": "cultural",
-    "description": "Sigmund Freud published his groundbreaking work on psychoanalysis.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Die_Traumdeutung_%28Congress_scan%29.jpg/330px-Die_Traumdeutung_%28Congress_scan%29.jpg"
-  },
-  {
-    "name": "first-powered-flight",
-    "friendly_name": "First Powered Flight",
-    "year": 1903,
-    "category": "cultural",
-    "description": "The Wright brothers achieved the first powered airplane flight.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Orville_Wright_1905-crop.jpg/330px-Orville_Wright_1905-crop.jpg"
-  },
-  {
-    "name": "picasso-demoiselles",
-    "friendly_name": "Les Demoiselles d'Avignon Painted",
-    "year": 1907,
-    "category": "cultural",
-    "description": "Picasso completed his revolutionary proto-Cubist painting.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/330px-Les_Demoiselles_d%27Avignon.jpg"
-  },
-  {
-    "name": "titanic-sinks",
-    "friendly_name": "Titanic Sinks",
-    "year": 1912,
-    "category": "cultural",
-    "description": "The unsinkable ocean liner struck an iceberg and sank on its maiden voyage.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/330px-St%C3%B6wer_Titanic.jpg"
-  },
-  {
-    "name": "women-suffrage-uk",
-    "friendly_name": "Women Gain Vote in UK",
-    "year": 1918,
-    "category": "cultural",
-    "description": "British women over 30 gained the right to vote for the first time.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Votes_For_Women.jpg/330px-Votes_For_Women.jpg"
-  },
-  {
-    "name": "women-suffrage-us",
-    "friendly_name": "Women Gain Vote in US",
-    "year": 1920,
-    "category": "cultural",
-    "description": "The 19th Amendment granted American women the right to vote.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Suffragists_Parade_Down_Fifth_Avenue%2C_1917.JPG/330px-Suffragists_Parade_Down_Fifth_Avenue%2C_1917.JPG"
-  },
-  {
-    "name": "jazz-age-begins",
-    "friendly_name": "Jazz Age Begins",
-    "year": 1920,
-    "category": "cultural",
-    "description": "Jazz music exploded in popularity, defining the Roaring Twenties.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/CarterAndKingJazzingOrchestra.jpg/330px-CarterAndKingJazzingOrchestra.jpg"
-  },
-  {
-    "name": "first-talking-film",
-    "friendly_name": "First Talking Film Released",
-    "year": 1927,
-    "category": "cultural",
-    "description": "The Jazz Singer became the first feature-length film with synchronized dialogue.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Jazz_Singer_1927_Poster.jpg/330px-The_Jazz_Singer_1927_Poster.jpg"
-  },
-  {
-    "name": "penicillin-discovered",
-    "friendly_name": "Penicillin Discovered",
-    "year": 1928,
-    "category": "cultural",
-    "description": "Alexander Fleming discovered the first antibiotic, revolutionizing medicine.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/330px-Penicillin_core.svg.png"
-  },
-  {
-    "name": "first-television-broadcast",
-    "friendly_name": "First Public Television Broadcast",
-    "year": 1936,
-    "category": "cultural",
-    "description": "The BBC began the world's first regular high-definition television service.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Family_watching_television_1958.jpg/330px-Family_watching_television_1958.jpg"
-  },
-  {
-    "name": "wizard-of-oz",
-    "friendly_name": "Wizard of Oz Released",
-    "year": 1939,
-    "category": "cultural",
-    "description": "The classic Technicolor musical fantasy premiered in Hollywood.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wizard_of_oz_movie_poster.jpg/330px-Wizard_of_oz_movie_poster.jpg"
-  },
-  {
-    "name": "citizen-kane",
-    "friendly_name": "Citizen Kane Released",
-    "year": 1941,
-    "category": "cultural",
-    "description": "Orson Welles directed what many consider the greatest film ever made.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg/330px-Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg"
-  },
-  {
-    "name": "un-human-rights",
-    "friendly_name": "Universal Declaration of Human Rights",
-    "year": 1948,
-    "category": "cultural",
-    "description": "The United Nations adopted a landmark document on human rights.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Eleanor_Roosevelt_UDHR.jpg/330px-Eleanor_Roosevelt_UDHR.jpg"
-  },
-  {
-    "name": "nineteen-eighty-four",
-    "friendly_name": "1984 Published",
-    "year": 1949,
-    "category": "cultural",
-    "description": "George Orwell published his dystopian novel about totalitarian surveillance.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1984_Events_Collage.jpg/330px-1984_Events_Collage.jpg"
-  },
-  {
-    "name": "dna-structure",
-    "friendly_name": "DNA Structure Discovered",
-    "year": 1953,
-    "category": "cultural",
-    "description": "Watson and Crick discovered the double helix structure of DNA.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/DNA-structure-and-bases.png/330px-DNA-structure-and-bases.png"
-  },
-  {
-    "name": "polio-vaccine",
-    "friendly_name": "Polio Vaccine Developed",
-    "year": 1955,
-    "category": "cultural",
-    "description": "Jonas Salk's vaccine was declared safe and effective against polio.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Poliodrops.jpg"
-  },
-  {
-    "name": "disneyland-opens",
-    "friendly_name": "Disneyland Opens",
-    "year": 1955,
-    "category": "cultural",
-    "description": "Walt Disney opened his first theme park in Anaheim, California.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sleeping_Beauty_Castle_-_February_2024.png/330px-Sleeping_Beauty_Castle_-_February_2024.png"
-  },
-  {
-    "name": "elvis-ed-sullivan",
-    "friendly_name": "Elvis on Ed Sullivan",
-    "year": 1956,
-    "category": "cultural",
-    "description": "Elvis Presley's television appearance launched rock and roll into the mainstream.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg"
-  },
-  {
-    "name": "birth-control-pill",
-    "friendly_name": "Birth Control Pill Approved",
-    "year": 1960,
-    "category": "cultural",
-    "description": "The FDA approved the first oral contraceptive pill for women.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm/320px--Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm.jpg"
-  },
-  {
-    "name": "beatles-usa",
-    "friendly_name": "Beatles Arrive in USA",
-    "year": 1964,
-    "category": "cultural",
-    "description": "The British Invasion began with the Beatles' American tour.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
-  },
-  {
-    "name": "beatles-ed-sullivan",
-    "friendly_name": "Beatles on Ed Sullivan",
-    "year": 1964,
-    "category": "cultural",
-    "description": "The Beatles' American TV debut launched the British Invasion.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
-  },
-  {
-    "name": "civil-rights-act",
-    "friendly_name": "Civil Rights Act Passed",
-    "year": 1964,
-    "category": "cultural",
-    "description": "Landmark US legislation outlawed discrimination based on race, color, religion, sex, or national origin.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
-  },
-  {
-    "name": "woodstock",
-    "friendly_name": "Woodstock Festival",
-    "year": 1969,
-    "category": "cultural",
-    "description": "The iconic music festival defined a generation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Woodstock_poster.jpg/330px-Woodstock_poster.jpg"
-  },
-  {
-    "name": "moon-landing",
-    "friendly_name": "First Moon Landing",
-    "year": 1969,
-    "category": "cultural",
-    "description": "Neil Armstrong became the first human to walk on the Moon.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg"
-  },
-  {
-    "name": "stonewall-riots",
-    "friendly_name": "Stonewall Riots",
-    "year": 1969,
-    "category": "cultural",
-    "description": "LGBTQ patrons resisted a police raid, sparking the gay rights movement.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Stonewall_riots.jpg/330px-Stonewall_riots.jpg"
-  },
-  {
-    "name": "first-email",
-    "friendly_name": "First Email Sent",
-    "year": 1971,
-    "category": "cultural",
-    "description": "Ray Tomlinson sent the first network email using the @ symbol.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Evolution_36_mail.png/330px-Evolution_36_mail.png"
-  },
-  {
-    "name": "star-wars",
-    "friendly_name": "Star Wars Released",
-    "year": 1977,
-    "category": "cultural",
-    "description": "George Lucas's space opera became a cultural phenomenon.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/330px-Star_wars2.svg.png"
-  },
-  {
-    "name": "star-wars-release",
-    "friendly_name": "Star Wars Released",
-    "year": 1977,
-    "category": "cultural",
-    "description": "George Lucas's space opera became a cultural phenomenon.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/330px-Star_wars2.svg.png"
-  },
-  {
-    "name": "first-test-tube-baby",
-    "friendly_name": "First Test Tube Baby Born",
-    "year": 1978,
-    "category": "cultural",
-    "description": "Louise Brown became the first baby conceived through IVF.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e1/First_Test.jpg"
-  },
-  {
-    "name": "walkman-released",
-    "friendly_name": "Sony Walkman Released",
-    "year": 1979,
-    "category": "cultural",
-    "description": "Sony introduced the portable cassette player that changed how people listened to music.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Walkman_logo_%282000%29.svg/330px-Walkman_logo_%282000%29.svg.png"
-  },
-  {
-    "name": "mtv-launches",
-    "friendly_name": "MTV Launches",
-    "year": 1981,
-    "category": "cultural",
-    "description": "The first 24-hour music television channel began broadcasting.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/330px-MTV_2021_%28brand_version%29.svg.png"
-  },
-  {
-    "name": "aids-identified",
-    "friendly_name": "AIDS Identified",
-    "year": 1981,
-    "category": "cultural",
-    "description": "Scientists first recognized and named the AIDS epidemic.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/330px-Red_Ribbon.svg.png"
-  },
-  {
-    "name": "michael-jackson-thriller",
-    "friendly_name": "Thriller Album Released",
-    "year": 1982,
-    "category": "cultural",
-    "description": "Michael Jackson released the best-selling album of all time.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"
-  },
-  {
-    "name": "live-aid",
-    "friendly_name": "Live Aid Concert",
-    "year": 1985,
-    "category": "cultural",
-    "description": "A dual-venue rock concert raised millions for Ethiopian famine relief.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Official_Live_Aid_poster.jpeg"
-  },
-  {
-    "name": "chernobyl-disaster",
-    "friendly_name": "Chernobyl Disaster",
-    "year": 1986,
-    "category": "cultural",
-    "description": "The world's worst nuclear accident occurred at a Soviet power plant.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/330px-IAEA_02790015_%285613115146%29.jpg"
-  },
-  {
-    "name": "world-wide-web",
-    "friendly_name": "World Wide Web Invented",
-    "year": 1989,
-    "category": "cultural",
-    "description": "Tim Berners-Lee invented the World Wide Web at CERN.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png"
-  },
-  {
-    "name": "hubble-launched",
-    "friendly_name": "Hubble Space Telescope Launched",
-    "year": 1990,
-    "category": "cultural",
-    "description": "NASA launched the space telescope that revolutionized astronomy.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HST-SM4.jpeg/330px-HST-SM4.jpeg"
-  },
-  {
-    "name": "human-genome-project",
-    "friendly_name": "Human Genome Project Begins",
-    "year": 1990,
-    "category": "cultural",
-    "description": "Scientists began the massive effort to map all human genes.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_HGP.jpg/330px-Logo_HGP.jpg"
-  },
-  {
-    "name": "nelson-mandela-freed",
-    "friendly_name": "Nelson Mandela Released",
-    "year": 1990,
-    "category": "cultural",
-    "description": "The anti-apartheid leader was freed after 27 years in prison.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg"
-  },
-  {
-    "name": "dolly-sheep-cloned",
-    "friendly_name": "Dolly the Sheep Cloned",
-    "year": 1996,
-    "category": "cultural",
-    "description": "Scientists created the first mammal cloned from an adult cell.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Dolly_the_Sheep_with_her_First_Born_Bonnie.jpg"
-  },
-  {
-    "name": "harry-potter-published",
-    "friendly_name": "Harry Potter Published",
-    "year": 1997,
-    "category": "cultural",
-    "description": "J.K. Rowling published the first Harry Potter book, launching a global phenomenon.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Harry_Potter_logo.svg/330px-Harry_Potter_logo.svg.png"
-  },
-  {
-    "name": "google-founded",
-    "friendly_name": "Google Founded",
-    "year": 1998,
-    "category": "cultural",
-    "description": "Larry Page and Sergey Brin founded the search engine company.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png"
-  },
-  {
-    "name": "y2k",
-    "friendly_name": "Y2K Millennium Bug",
-    "year": 2000,
-    "category": "cultural",
-    "description": "The world braced for computer failures as the calendar rolled to 2000.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bug_de_l%27an_2000.jpg/330px-Bug_de_l%27an_2000.jpg"
-  },
-  {
-    "name": "millennium",
-    "friendly_name": "Y2K New Millennium",
-    "year": 2000,
-    "category": "cultural",
-    "description": "The world celebrated the turn of the millennium.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG/330px-%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG"
-  },
-  {
-    "name": "ipod-released",
-    "friendly_name": "iPod Released",
-    "year": 2001,
-    "category": "cultural",
-    "description": "Apple launched the portable music player that transformed the music industry.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/IPod_family.png/330px-IPod_family.png"
-  },
-  {
-    "name": "human-genome-completed",
-    "friendly_name": "Human Genome Sequenced",
-    "year": 2003,
-    "category": "cultural",
-    "description": "Scientists completed mapping the entire human genetic code.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Human_karyotype_with_bands_and_sub-bands.png/330px-Human_karyotype_with_bands_and_sub-bands.png"
-  },
-  {
-    "name": "facebook-launched",
-    "friendly_name": "Facebook Launched",
-    "year": 2004,
-    "category": "cultural",
-    "description": "Mark Zuckerberg launched the social network from his Harvard dorm room.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/6/64/Facebook_user_page.png"
-  },
-  {
-    "name": "facebook-founded",
-    "friendly_name": "Facebook Founded",
-    "year": 2004,
-    "category": "cultural",
-    "description": "Mark Zuckerberg launched Facebook from his Harvard dorm room.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/6/64/Facebook_user_page.png"
-  },
-  {
-    "name": "youtube-founded",
-    "friendly_name": "YouTube Founded",
-    "year": 2005,
-    "category": "cultural",
-    "description": "The video-sharing platform that changed online media was created.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/330px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png"
-  },
-  {
-    "name": "twitter-launched",
-    "friendly_name": "Twitter Launched",
-    "year": 2006,
-    "category": "cultural",
-    "description": "The microblogging platform began with its 140-character posts.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg/320px-X_%28formerly_Twitter%29_logo_late_2025.svg.png"
-  },
-  {
-    "name": "iphone-released",
-    "friendly_name": "iPhone Released",
-    "year": 2007,
-    "category": "cultural",
-    "description": "Apple's smartphone revolutionized mobile technology and communication.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/320px-IPhone_17_Pro_Vector.svg.png"
-  },
-  {
-    "name": "obama-elected",
-    "friendly_name": "Barack Obama Elected President",
-    "year": 2008,
-    "category": "cultural",
-    "description": "The United States elected its first African American president.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg"
-  },
-  {
-    "name": "bitcoin-created",
-    "friendly_name": "Bitcoin Created",
-    "year": 2009,
-    "category": "cultural",
-    "description": "The mysterious Satoshi Nakamoto launched the first cryptocurrency.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/320px-Bitcoin.svg.png"
-  },
-  {
-    "name": "instagram-launched",
-    "friendly_name": "Instagram Launched",
-    "year": 2010,
-    "category": "cultural",
-    "description": "The photo-sharing app that transformed social media was released.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/330px-Instagram_logo_2022.svg.png"
-  },
-  {
-    "name": "higgs-boson",
-    "friendly_name": "Higgs Boson Discovered",
-    "year": 2012,
-    "category": "cultural",
-    "description": "Scientists at CERN confirmed the existence of the God particle.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/330px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png"
-  },
-  {
-    "name": "marriage-equality-us",
-    "friendly_name": "Same-Sex Marriage Legalized in US",
-    "year": 2015,
-    "category": "cultural",
-    "description": "The Supreme Court ruled same-sex marriage legal nationwide.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg/330px-Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg"
-  },
-  {
-    "name": "metoo-movement",
-    "friendly_name": "#MeToo Movement Goes Viral",
-    "year": 2017,
-    "category": "cultural",
-    "description": "A social movement against sexual harassment spread globally on social media.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg/330px-Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg"
-  },
-  {
-    "name": "covid-pandemic",
-    "friendly_name": "COVID-19 Pandemic Declared",
-    "year": 2020,
-    "category": "cultural",
-    "description": "The World Health Organization declared a global pandemic.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/330px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg"
-  },
-  {
-    "name": "chatgpt-released",
-    "friendly_name": "ChatGPT Released",
-    "year": 2022,
-    "category": "cultural",
-    "description": "OpenAI launched the AI chatbot that sparked a technological revolution.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png"
-  },
-  {
-    "name": "chatgpt",
-    "friendly_name": "ChatGPT Released",
-    "year": 2022,
-    "category": "cultural",
-    "description": "OpenAI released ChatGPT, bringing AI to the mainstream.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png"
-  },
-  {
     "name": "epic-gilgamesh",
     "friendly_name": "Epic of Gilgamesh Composed",
     "year": -2100,
@@ -1015,6 +43,15 @@
     "description": "The oldest surviving great work of literature was written in Mesopotamia.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Museum_Flood_Tablet.jpg/330px-British_Museum_Flood_Tablet.jpg"
+  },
+  {
+    "name": "code-hammurabi",
+    "friendly_name": "Code of Hammurabi Created",
+    "year": -1754,
+    "category": "cultural",
+    "description": "The Babylonian king established one of the oldest written legal codes.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/330px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG"
   },
   {
     "name": "book-of-dead",
@@ -1062,6 +99,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Guru_and_DiscipleI.jpg/330px-Guru_and_DiscipleI.jpg"
   },
   {
+    "name": "first-olympics",
+    "friendly_name": "First Olympic Games",
+    "year": -776,
+    "category": "cultural",
+    "description": "Ancient Greeks held the first recorded Olympic Games at Olympia.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg/330px-Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg"
+  },
+  {
+    "name": "homer-iliad",
+    "friendly_name": "Homer Composes the Iliad",
+    "year": -750,
+    "category": "cultural",
+    "description": "The Greek poet composed the epic tale of the Trojan War.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg/330px-Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg"
+  },
+  {
     "name": "aesops-fables",
     "friendly_name": "Aesop's Fables Composed",
     "year": -600,
@@ -1078,6 +133,33 @@
     "description": "The mathematician founded a school combining philosophy, mathematics, and mysticism.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pythagoras_in_the_Roman_Forum%2C_Colosseum.jpg/330px-Pythagoras_in_the_Roman_Forum%2C_Colosseum.jpg"
+  },
+  {
+    "name": "buddha-enlightenment",
+    "friendly_name": "Buddha Attains Enlightenment",
+    "year": -528,
+    "category": "cultural",
+    "description": "Siddhartha Gautama achieved enlightenment, founding Buddhism.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg"
+  },
+  {
+    "name": "confucius-teachings",
+    "friendly_name": "Confucius Begins Teaching",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Chinese philosopher began spreading his influential ethical teachings.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/330px-Confucius_Tang_Dynasty.jpg"
+  },
+  {
+    "name": "socrates-death",
+    "friendly_name": "Death of Socrates",
+    "year": -399,
+    "category": "cultural",
+    "description": "The Athenian philosopher was executed by drinking hemlock.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/330px-Socrate_du_Louvre.jpg"
   },
   {
     "name": "plato-academy",
@@ -1107,6 +189,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg/330px-P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg"
   },
   {
+    "name": "library-alexandria",
+    "friendly_name": "Library of Alexandria Founded",
+    "year": -283,
+    "category": "cultural",
+    "description": "The ancient world's greatest library was established in Egypt.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/330px-Ancientlibraryalex.jpg"
+  },
+  {
     "name": "septuagint-translated",
     "friendly_name": "Septuagint Translated",
     "year": -250,
@@ -1116,6 +207,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Codex_Vaticanus_%281_Esdras_1-55_to_2-5%29_%28The_S.S._Teacher%27s_Edition-The_Holy_Bible%29.jpg/330px-Codex_Vaticanus_%281_Esdras_1-55_to_2-5%29_%28The_S.S._Teacher%27s_Edition-The_Holy_Bible%29.jpg"
   },
   {
+    "name": "dead-sea-scrolls-written",
+    "friendly_name": "Dead Sea Scrolls Written",
+    "year": -150,
+    "category": "cultural",
+    "description": "Jewish scribes created ancient religious manuscripts found near the Dead Sea.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG"
+  },
+  {
     "name": "virgil-aeneid",
     "friendly_name": "Virgil Writes the Aeneid",
     "year": -29,
@@ -1123,6 +223,42 @@
     "description": "The Roman poet composed the epic tale of Aeneas founding Rome.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg/330px-Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg"
+  },
+  {
+    "name": "jesus-birth",
+    "friendly_name": "Birth of Jesus Christ",
+    "year": -4,
+    "category": "cultural",
+    "description": "The birth of Jesus, founder of Christianity.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Adoration_of_the_sheperds_-_Matthias_Stomer.jpg/330px-Adoration_of_the_sheperds_-_Matthias_Stomer.jpg"
+  },
+  {
+    "name": "jesus-crucifixion",
+    "friendly_name": "Crucifixion of Jesus",
+    "year": 33,
+    "category": "cultural",
+    "description": "Jesus of Nazareth was crucified in Jerusalem, founding Christianity.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristo_crucificado.jpg/330px-Cristo_crucificado.jpg"
+  },
+  {
+    "name": "christianity-legalized",
+    "friendly_name": "Christianity Legalized in Rome",
+    "year": 313,
+    "category": "cultural",
+    "description": "Emperor Constantine issued the Edict of Milan, ending Christian persecution.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg"
+  },
+  {
+    "name": "bible-latin-vulgate",
+    "friendly_name": "Latin Vulgate Bible Completed",
+    "year": 405,
+    "category": "cultural",
+    "description": "Saint Jerome completed his Latin translation of the Bible.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Cod._Sangallensis_63_%28277%29.jpg/330px-Cod._Sangallensis_63_%28277%29.jpg"
   },
   {
     "name": "council-chalcedon",
@@ -1143,6 +279,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/MonteCassino_Abbey.jpg/330px-MonteCassino_Abbey.jpg"
   },
   {
+    "name": "muhammad-revelation",
+    "friendly_name": "Muhammad Receives First Revelation",
+    "year": 610,
+    "category": "cultural",
+    "description": "The Prophet Muhammad received the first verses of the Quran, founding Islam.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg"
+  },
+  {
+    "name": "islam-founded",
+    "friendly_name": "Islam Founded",
+    "year": 622,
+    "category": "cultural",
+    "description": "Muhammad's Hijra to Medina marks the start of the Islamic calendar.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Kaaba_during_Hajj.jpg/330px-The_Kaaba_during_Hajj.jpg"
+  },
+  {
     "name": "quran-compiled",
     "friendly_name": "Quran Compiled",
     "year": 650,
@@ -1152,6 +306,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Birmingham_Quran_manuscript_full.jpg/330px-Birmingham_Quran_manuscript_full.jpg"
   },
   {
+    "name": "book-of-kells",
+    "friendly_name": "Book of Kells Created",
+    "year": 800,
+    "category": "cultural",
+    "description": "Irish monks created an illuminated manuscript of the four Gospels.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KellsFol032vChristEnthroned.jpg/330px-KellsFol032vChristEnthroned.jpg"
+  },
+  {
+    "name": "tale-of-genji",
+    "friendly_name": "Tale of Genji Written",
+    "year": 1010,
+    "category": "cultural",
+    "description": "Murasaki Shikibu wrote what is often called the world's first novel.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Genji_emaki_01003_002.jpg/330px-Genji_emaki_01003_002.jpg"
+  },
+  {
     "name": "great-schism",
     "friendly_name": "Great Schism",
     "year": 1054,
@@ -1159,6 +331,24 @@
     "description": "Christianity split into Roman Catholic and Eastern Orthodox churches.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Great_Schism_with_former_borders_%281054%29.png/330px-Great_Schism_with_former_borders_%281054%29.png"
+  },
+  {
+    "name": "notre-dame-construction",
+    "friendly_name": "Notre-Dame Cathedral Construction Begins",
+    "year": 1163,
+    "category": "cultural",
+    "description": "Work began on the iconic Gothic cathedral in Paris.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg"
+  },
+  {
+    "name": "oxford-founded",
+    "friendly_name": "Oxford University Founded",
+    "year": 1167,
+    "category": "cultural",
+    "description": "The oldest English-speaking university began formal instruction.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Arms_of_University_of_Oxford.svg/330px-Arms_of_University_of_Oxford.svg.png"
   },
   {
     "name": "franciscan-order",
@@ -1179,31 +369,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/SummaTheologiae.jpg/330px-SummaTheologiae.jpg"
   },
   {
-    "name": "wycliffe-bible",
-    "friendly_name": "Wycliffe Translates Bible",
-    "year": 1382,
+    "name": "marco-polo-china",
+    "friendly_name": "Marco Polo Reaches China",
+    "year": 1275,
     "category": "cultural",
-    "description": "John Wycliffe produced the first complete English translation of the Bible.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wycliffe_John_Gospel.jpg/330px-Wycliffe_John_Gospel.jpg"
-  },
-  {
-    "name": "gutenberg-bible",
-    "friendly_name": "Gutenberg Bible Printed",
-    "year": 1455,
-    "category": "cultural",
-    "description": "The first major book printed using movable type in Europe.",
+    "description": "The Venetian explorer arrived at the court of Kublai Khan.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
-  },
-  {
-    "name": "council-trent",
-    "friendly_name": "Council of Trent Begins",
-    "year": 1545,
-    "category": "cultural",
-    "description": "The Catholic Church began its response to the Protestant Reformation.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Concilio_Trento_Museo_Buonconsiglio.jpg/330px-Concilio_Trento_Museo_Buonconsiglio.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Marco_Polo_-_costume_tartare.jpg/330px-Marco_Polo_-_costume_tartare.jpg"
   },
   {
     "name": "giotto-scrovegni",
@@ -1215,6 +387,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg/330px-Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg"
   },
   {
+    "name": "divine-comedy",
+    "friendly_name": "Dante Writes Divine Comedy",
+    "year": 1320,
+    "category": "cultural",
+    "description": "Dante Alighieri completed his epic poem exploring the afterlife.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dante_Domenico_di_Michelino.jpg/330px-Dante_Domenico_di_Michelino.jpg"
+  },
+  {
     "name": "petrarch-sonnets",
     "friendly_name": "Petrarch Begins Sonnets",
     "year": 1327,
@@ -1224,6 +405,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg/330px-Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg"
   },
   {
+    "name": "wycliffe-bible",
+    "friendly_name": "Wycliffe Translates Bible",
+    "year": 1382,
+    "category": "cultural",
+    "description": "John Wycliffe produced the first complete English translation of the Bible.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wycliffe_John_Gospel.jpg/330px-Wycliffe_John_Gospel.jpg"
+  },
+  {
     "name": "chaucer-canterbury",
     "friendly_name": "Canterbury Tales Written",
     "year": 1387,
@@ -1231,6 +421,15 @@
     "description": "Geoffrey Chaucer began writing his collection of stories told by pilgrims.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg/330px-Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg.png"
+  },
+  {
+    "name": "gutenberg-bible",
+    "friendly_name": "Gutenberg Bible Printed",
+    "year": 1455,
+    "category": "cultural",
+    "description": "The first major book printed using movable type in Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg"
   },
   {
     "name": "botticelli-venus",
@@ -1269,6 +468,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/330px-%27David%27_by_Michelangelo_Fir_JBU004.jpg"
   },
   {
+    "name": "sistine-chapel",
+    "friendly_name": "Sistine Chapel Ceiling Painted",
+    "year": 1512,
+    "category": "cultural",
+    "description": "Michelangelo completed his masterpiece ceiling fresco.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/330px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg"
+  },
+  {
     "name": "machiavelli-prince",
     "friendly_name": "The Prince Written",
     "year": 1513,
@@ -1276,6 +484,33 @@
     "description": "Machiavelli wrote his influential treatise on political power.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Machiavelli_Principe_Cover_Page.jpg/330px-Machiavelli_Principe_Cover_Page.jpg"
+  },
+  {
+    "name": "protestant-reformation",
+    "friendly_name": "Protestant Reformation Begins",
+    "year": 1517,
+    "category": "cultural",
+    "description": "Martin Luther posted his 95 Theses, challenging Catholic Church practices.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg"
+  },
+  {
+    "name": "luther-theses",
+    "friendly_name": "Luther's 95 Theses",
+    "year": 1517,
+    "category": "cultural",
+    "description": "Martin Luther posted his theses, sparking the Protestant Reformation.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Luther_95_Thesen.png/330px-Luther_95_Thesen.png"
+  },
+  {
+    "name": "council-trent",
+    "friendly_name": "Council of Trent Begins",
+    "year": 1545,
+    "category": "cultural",
+    "description": "The Catholic Church began its response to the Protestant Reformation.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Concilio_Trento_Museo_Buonconsiglio.jpg/330px-Concilio_Trento_Museo_Buonconsiglio.jpg"
   },
   {
     "name": "shakespeare-born",
@@ -1287,6 +522,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/330px-William_Shakespeare_by_John_Taylor%2C_edited.jpg"
   },
   {
+    "name": "shakespeare-hamlet",
+    "friendly_name": "Shakespeare Writes Hamlet",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Shakespeare wrote one of the greatest plays in the English language.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Edwin_Booth_Hamlet_1870.jpg/330px-Edwin_Booth_Hamlet_1870.jpg"
+  },
+  {
     "name": "don-quixote-published",
     "friendly_name": "Don Quixote Published",
     "year": 1605,
@@ -1294,6 +538,15 @@
     "description": "Cervantes published the novel often called the first modern novel.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Title_page_first_edition_Don_Quijote.jpg/330px-Title_page_first_edition_Don_Quijote.jpg"
+  },
+  {
+    "name": "king-james-bible",
+    "friendly_name": "King James Bible Published",
+    "year": 1611,
+    "category": "cultural",
+    "description": "The influential English translation of the Bible was completed.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg/330px-KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg"
   },
   {
     "name": "rembrandt-night-watch",
@@ -1305,6 +558,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/330px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg"
   },
   {
+    "name": "paradise-lost",
+    "friendly_name": "Paradise Lost Published",
+    "year": 1667,
+    "category": "cultural",
+    "description": "John Milton published his epic poem about the fall of man.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg/330px-Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg"
+  },
+  {
+    "name": "bach-well-tempered",
+    "friendly_name": "Bach Completes Well-Tempered Clavier",
+    "year": 1722,
+    "category": "cultural",
+    "description": "Bach completed his influential collection of keyboard music.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bach-wtc1-title-ms.jpg/330px-Bach-wtc1-title-ms.jpg"
+  },
+  {
     "name": "handel-messiah",
     "friendly_name": "Handel's Messiah Premiered",
     "year": 1742,
@@ -1312,6 +583,15 @@
     "description": "Handel premiered his famous oratorio featuring the Hallelujah Chorus.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Messiah-titlepage.jpg/330px-Messiah-titlepage.jpg"
+  },
+  {
+    "name": "encyclopedia-published",
+    "friendly_name": "Encyclopédie Published",
+    "year": 1751,
+    "category": "cultural",
+    "description": "Diderot and d'Alembert began publishing their Enlightenment encyclopedia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg/330px-Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg"
   },
   {
     "name": "voltaire-candide",
@@ -1332,40 +612,31 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/William_Smellie00.jpg/330px-William_Smellie00.jpg"
   },
   {
-    "name": "goethe-faust",
-    "friendly_name": "Goethe Writes Faust Part 1",
-    "year": 1808,
+    "name": "wealth-of-nations",
+    "friendly_name": "Wealth of Nations Published",
+    "year": 1776,
     "category": "cultural",
-    "description": "Goethe published the first part of his masterpiece about a scholar's bargain with the devil.",
+    "description": "Adam Smith published his foundational work on modern economics.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wealth_of_Nations.jpg/330px-Wealth_of_Nations.jpg"
+  },
+  {
+    "name": "mozart-don-giovanni",
+    "friendly_name": "Mozart Premieres Don Giovanni",
+    "year": 1787,
+    "category": "cultural",
+    "description": "Mozart's opera about the legendary seducer premiered in Prague.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Auerbachs_Keller.JPG/330px-Auerbachs_Keller.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg/330px-Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg"
   },
   {
-    "name": "pride-prejudice",
-    "friendly_name": "Pride and Prejudice Published",
-    "year": 1813,
+    "name": "mozart-dies",
+    "friendly_name": "Mozart Dies",
+    "year": 1791,
     "category": "cultural",
-    "description": "Jane Austen published her beloved novel of manners and marriage.",
+    "description": "The musical prodigy died at age 35 in Vienna.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PrideAndPrejudiceTitlePage.jpg/330px-PrideAndPrejudiceTitlePage.jpg"
-  },
-  {
-    "name": "grimm-fairy-tales",
-    "friendly_name": "Grimm's Fairy Tales Published",
-    "year": 1812,
-    "category": "cultural",
-    "description": "The Brothers Grimm published their collection of German folk tales.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Grimm%27s_Kinder-_und_Hausm%C3%A4rchen%2C_Erster_Theil_%281812%29.cover.jpg"
-  },
-  {
-    "name": "frankenstein-published",
-    "friendly_name": "Frankenstein Published",
-    "year": 1818,
-    "category": "cultural",
-    "description": "Mary Shelley published the novel that launched science fiction.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Christie%27s_auction_scan_of_Frankenstein_1818.jpg/330px-Christie%27s_auction_scan_of_Frankenstein_1818.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/330px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg"
   },
   {
     "name": "louvre-opens",
@@ -1377,6 +648,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/330px-Louvre_Museum_icon_1.svg.png"
   },
   {
+    "name": "goethe-faust",
+    "friendly_name": "Goethe Writes Faust Part 1",
+    "year": 1808,
+    "category": "cultural",
+    "description": "Goethe published the first part of his masterpiece about a scholar's bargain with the devil.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Auerbachs_Keller.JPG/330px-Auerbachs_Keller.JPG"
+  },
+  {
     "name": "beethoven-fifth",
     "friendly_name": "Beethoven's Fifth Symphony",
     "year": 1808,
@@ -1384,6 +664,33 @@
     "description": "Beethoven premiered his famous symphony with its iconic four-note opening.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Beethoven-Deckblatt.png"
+  },
+  {
+    "name": "grimm-fairy-tales",
+    "friendly_name": "Grimm's Fairy Tales Published",
+    "year": 1812,
+    "category": "cultural",
+    "description": "The Brothers Grimm published their collection of German folk tales.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Grimm%27s_Kinder-_und_Hausm%C3%A4rchen%2C_Erster_Theil_%281812%29.cover.jpg"
+  },
+  {
+    "name": "pride-prejudice",
+    "friendly_name": "Pride and Prejudice Published",
+    "year": 1813,
+    "category": "cultural",
+    "description": "Jane Austen published her beloved novel of manners and marriage.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PrideAndPrejudiceTitlePage.jpg/330px-PrideAndPrejudiceTitlePage.jpg"
+  },
+  {
+    "name": "frankenstein-published",
+    "friendly_name": "Frankenstein Published",
+    "year": 1818,
+    "category": "cultural",
+    "description": "Mary Shelley published the novel that launched science fiction.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Christie%27s_auction_scan_of_Frankenstein_1818.jpg/330px-Christie%27s_auction_scan_of_Frankenstein_1818.jpg"
   },
   {
     "name": "schubert-unfinished",
@@ -1395,6 +702,87 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Symphony_No._8_in_B_minor.jpg/330px-Symphony_No._8_in_B_minor.jpg"
   },
   {
+    "name": "beethoven-ninth",
+    "friendly_name": "Beethoven's Ninth Symphony Premiered",
+    "year": 1824,
+    "category": "cultural",
+    "description": "Beethoven premiered his final symphony, including the Ode to Joy.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_Premiere_of_Symphony_No._9.jpg/330px-The_Premiere_of_Symphony_No._9.jpg"
+  },
+  {
+    "name": "first-photograph",
+    "friendly_name": "First Photograph Taken",
+    "year": 1826,
+    "category": "cultural",
+    "description": "Joseph Nicéphore Niépce captured the world's first permanent photograph.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg/330px-Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg"
+  },
+  {
+    "name": "slavery-abolished-uk",
+    "friendly_name": "Slavery Abolished in British Empire",
+    "year": 1833,
+    "category": "cultural",
+    "description": "Britain passed the Slavery Abolition Act, freeing slaves in most colonies.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg.png"
+  },
+  {
+    "name": "first-kindergarten",
+    "friendly_name": "First Kindergarten Opens",
+    "year": 1837,
+    "category": "cultural",
+    "description": "Friedrich Froebel opened the first kindergarten in Germany.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/First_Kindergarten_4.jpg/330px-First_Kindergarten_4.jpg"
+  },
+  {
+    "name": "morse-code-invented",
+    "friendly_name": "Morse Code Invented",
+    "year": 1838,
+    "category": "cultural",
+    "description": "Samuel Morse developed the code that revolutionized long-distance communication.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Morsetaste.jpg/330px-Morsetaste.jpg"
+  },
+  {
+    "name": "ymca-founded",
+    "friendly_name": "YMCA Founded",
+    "year": 1844,
+    "category": "cultural",
+    "description": "The Young Men's Christian Association was founded in London.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/World_YMCA_logo.svg/330px-World_YMCA_logo.svg.png"
+  },
+  {
+    "name": "communist-manifesto",
+    "friendly_name": "Communist Manifesto Published",
+    "year": 1848,
+    "category": "cultural",
+    "description": "Karl Marx and Friedrich Engels published their influential political pamphlet.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Communist-manifesto.png/330px-Communist-manifesto.png"
+  },
+  {
+    "name": "seneca-falls-convention",
+    "friendly_name": "Seneca Falls Convention",
+    "year": 1848,
+    "category": "cultural",
+    "description": "The first women's rights convention in the US launched the suffrage movement.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Woman%27s_Rights_Convention.jpg/330px-Woman%27s_Rights_Convention.jpg"
+  },
+  {
+    "name": "origin-of-species",
+    "friendly_name": "Origin of Species Published",
+    "year": 1859,
+    "category": "cultural",
+    "description": "Charles Darwin published his theory of evolution by natural selection.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Origin_of_Species_title_page.jpg/330px-Origin_of_Species_title_page.jpg"
+  },
+  {
     "name": "les-miserables",
     "friendly_name": "Les Misérables Published",
     "year": 1862,
@@ -1402,6 +790,42 @@
     "description": "Victor Hugo published his epic novel of justice and redemption in France.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Monsieur_Madeleine_par_Gustave_Brion.jpg/330px-Monsieur_Madeleine_par_Gustave_Brion.jpg"
+  },
+  {
+    "name": "slavery-abolished-us",
+    "friendly_name": "Slavery Abolished in United States",
+    "year": 1865,
+    "category": "cultural",
+    "description": "The 13th Amendment ended slavery throughout the United States.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png"
+  },
+  {
+    "name": "salvation-army-founded",
+    "friendly_name": "Salvation Army Founded",
+    "year": 1865,
+    "category": "cultural",
+    "description": "William Booth founded the Christian charitable organization in London.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/320px-The_Salvation_Army.svg.png"
+  },
+  {
+    "name": "first-impressionist-exhibition",
+    "friendly_name": "First Impressionist Exhibition",
+    "year": 1874,
+    "category": "cultural",
+    "description": "Monet, Renoir, and others held their first independent art exhibition in Paris.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg/330px-Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg"
+  },
+  {
+    "name": "phonograph-invented",
+    "friendly_name": "Phonograph Invented",
+    "year": 1877,
+    "category": "cultural",
+    "description": "Thomas Edison invented a device to record and play back sound.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turntable.svg/330px-Turntable.svg.png"
   },
   {
     "name": "tchaikovsky-swan-lake",
@@ -1422,6 +846,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dostoevsky-Brothers_Karamazov.jpg/330px-Dostoevsky-Brothers_Karamazov.jpg"
   },
   {
+    "name": "rodin-thinker",
+    "friendly_name": "The Thinker Sculpted",
+    "year": 1880,
+    "category": "cultural",
+    "description": "Auguste Rodin created his iconic sculpture of contemplation.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG/330px-Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG"
+  },
+  {
+    "name": "first-labor-day",
+    "friendly_name": "First Labor Day",
+    "year": 1882,
+    "category": "cultural",
+    "description": "New York held the first Labor Day parade honoring workers.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg/330px-First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg"
+  },
+  {
+    "name": "esperanto-created",
+    "friendly_name": "Esperanto Created",
+    "year": 1887,
+    "category": "cultural",
+    "description": "L.L. Zamenhof published the first book in his constructed international language.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/330px-Flag_of_Esperanto.svg.png"
+  },
+  {
     "name": "van-gogh-starry-night",
     "friendly_name": "Starry Night Painted",
     "year": 1889,
@@ -1429,6 +880,15 @@
     "description": "Van Gogh painted his swirling masterpiece from an asylum window.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/330px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+  },
+  {
+    "name": "hull-house-founded",
+    "friendly_name": "Hull House Founded",
+    "year": 1889,
+    "category": "cultural",
+    "description": "Jane Addams opened the pioneering settlement house in Chicago.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/The_Hull_House%2C_Chicago_%28front%29.tif/lossy-page1-320px-The_Hull_House%2C_Chicago_%28front%29.tif.jpg"
   },
   {
     "name": "dvorak-new-world",
@@ -1440,6 +900,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg/330px-The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg"
   },
   {
+    "name": "first-motion-picture",
+    "friendly_name": "First Motion Picture Screened",
+    "year": 1895,
+    "category": "cultural",
+    "description": "The Lumière brothers held the first public film screening in Paris.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lumi%C3%A8re_brothers.jpg/330px-Lumi%C3%A8re_brothers.jpg"
+  },
+  {
+    "name": "first-modern-olympics",
+    "friendly_name": "First Modern Olympic Games",
+    "year": 1896,
+    "category": "cultural",
+    "description": "Athens hosted the revival of the ancient Olympic Games.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/330px-Olympic_rings_without_rims.svg.png"
+  },
+  {
+    "name": "freud-interpretation-dreams",
+    "friendly_name": "Interpretation of Dreams Published",
+    "year": 1899,
+    "category": "cultural",
+    "description": "Sigmund Freud published his groundbreaking work on psychoanalysis.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Die_Traumdeutung_%28Congress_scan%29.jpg/330px-Die_Traumdeutung_%28Congress_scan%29.jpg"
+  },
+  {
     "name": "picasso-blue-period",
     "friendly_name": "Picasso's Blue Period Begins",
     "year": 1901,
@@ -1447,6 +934,42 @@
     "description": "Picasso began painting in shades of blue following a friend's suicide.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Old_guitarist_chicago.jpg/330px-Old_guitarist_chicago.jpg"
+  },
+  {
+    "name": "nobel-prizes-first",
+    "friendly_name": "First Nobel Prizes Awarded",
+    "year": 1901,
+    "category": "cultural",
+    "description": "The first Nobel Prizes were awarded in Stockholm and Oslo.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nobel_Prize.png/330px-Nobel_Prize.png"
+  },
+  {
+    "name": "picasso-demoiselles",
+    "friendly_name": "Les Demoiselles d'Avignon Painted",
+    "year": 1907,
+    "category": "cultural",
+    "description": "Picasso completed his revolutionary proto-Cubist painting.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/330px-Les_Demoiselles_d%27Avignon.jpg"
+  },
+  {
+    "name": "boy-scouts-founded",
+    "friendly_name": "Boy Scouts Founded",
+    "year": 1910,
+    "category": "cultural",
+    "description": "Robert Baden-Powell founded the Boy Scouts in the United Kingdom.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/1996-Rover_Moot-Fahnengru%C3%9F.jpg/330px-1996-Rover_Moot-Fahnengru%C3%9F.jpg"
+  },
+  {
+    "name": "girl-scouts-founded",
+    "friendly_name": "Girl Scouts Founded",
+    "year": 1912,
+    "category": "cultural",
+    "description": "Juliette Gordon Low founded the Girl Scouts in Savannah, Georgia.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg/330px-The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg"
   },
   {
     "name": "rite-of-spring",
@@ -1467,6 +990,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Grand_opening_of_the_first_Dada_exhibition%2C_Berlin%2C_5_June_1920.jpg/330px-Grand_opening_of_the_first_Dada_exhibition%2C_Berlin%2C_5_June_1920.jpg"
   },
   {
+    "name": "women-suffrage-uk",
+    "friendly_name": "Women Gain Vote in UK",
+    "year": 1918,
+    "category": "cultural",
+    "description": "British women over 30 gained the right to vote for the first time.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Votes_For_Women.jpg/330px-Votes_For_Women.jpg"
+  },
+  {
+    "name": "womens-suffrage-uk",
+    "friendly_name": "Women Gain Vote in UK",
+    "year": 1918,
+    "category": "cultural",
+    "description": "British women over 30 gained the right to vote.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Suffragette_Emily_Davison%27s_return_from_Holloway_%28cropped%29.jpg/330px-Suffragette_Emily_Davison%27s_return_from_Holloway_%28cropped%29.jpg"
+  },
+  {
     "name": "bauhaus-founded",
     "friendly_name": "Bauhaus School Founded",
     "year": 1919,
@@ -1474,6 +1015,15 @@
     "description": "Walter Gropius founded the influential art and design school in Germany.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/6265_Dessau.JPG/330px-6265_Dessau.JPG"
+  },
+  {
+    "name": "jazz-age-begins",
+    "friendly_name": "Jazz Age Begins",
+    "year": 1920,
+    "category": "cultural",
+    "description": "Jazz music exploded in popularity, defining the Roaring Twenties.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/CarterAndKingJazzingOrchestra.jpg/330px-CarterAndKingJazzingOrchestra.jpg"
   },
   {
     "name": "harlem-renaissance",
@@ -1485,6 +1035,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Three_Harlem_Women%2C_ca._1925.png/330px-Three_Harlem_Women%2C_ca._1925.png"
   },
   {
+    "name": "first-miss-america",
+    "friendly_name": "First Miss America Pageant",
+    "year": 1921,
+    "category": "cultural",
+    "description": "The first Miss America pageant was held in Atlantic City.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Miss_America_Logo.jpg"
+  },
+  {
     "name": "surrealist-manifesto",
     "friendly_name": "Surrealist Manifesto Published",
     "year": 1924,
@@ -1492,6 +1051,24 @@
     "description": "André Breton published the founding document of the Surrealist movement.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/MagrittePipe.jpg/330px-MagrittePipe.jpg"
+  },
+  {
+    "name": "great-gatsby",
+    "friendly_name": "Great Gatsby Published",
+    "year": 1925,
+    "category": "cultural",
+    "description": "F. Scott Fitzgerald published his classic novel of the Jazz Age.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/330px-The_Great_Gatsby_Cover_1925_Retouched.jpg"
+  },
+  {
+    "name": "first-talking-film",
+    "friendly_name": "First Talking Film Released",
+    "year": 1927,
+    "category": "cultural",
+    "description": "The Jazz Singer became the first feature-length film with synchronized dialogue.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Jazz_Singer_1927_Poster.jpg/330px-The_Jazz_Singer_1927_Poster.jpg"
   },
   {
     "name": "mickey-mouse-debut",
@@ -1503,6 +1080,42 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/330px-Mickey_Mouse_%28poster_version%29.svg.png"
   },
   {
+    "name": "alcoholics-anonymous",
+    "friendly_name": "Alcoholics Anonymous Founded",
+    "year": 1935,
+    "category": "cultural",
+    "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Alcoholics_Anonymous_%28logo%29.svg/330px-Alcoholics_Anonymous_%28logo%29.svg.png"
+  },
+  {
+    "name": "first-television-broadcast",
+    "friendly_name": "First Public Television Broadcast",
+    "year": 1936,
+    "category": "cultural",
+    "description": "The BBC began the world's first regular high-definition television service.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Family_watching_television_1958.jpg/330px-Family_watching_television_1958.jpg"
+  },
+  {
+    "name": "guernica-painted",
+    "friendly_name": "Guernica Painted",
+    "year": 1937,
+    "category": "cultural",
+    "description": "Picasso painted his powerful anti-war response to the bombing of a Spanish town.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/330px-PicassoGuernica.jpg"
+  },
+  {
+    "name": "wizard-of-oz",
+    "friendly_name": "Wizard of Oz Released",
+    "year": 1939,
+    "category": "cultural",
+    "description": "The classic Technicolor musical fantasy premiered in Hollywood.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wizard_of_oz_movie_poster.jpg/330px-Wizard_of_oz_movie_poster.jpg"
+  },
+  {
     "name": "gone-with-wind-film",
     "friendly_name": "Gone with the Wind Released",
     "year": 1939,
@@ -1510,6 +1123,15 @@
     "description": "The epic Civil War film became the highest-grossing movie of its era.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Poster_-_Gone_With_the_Wind_01.jpg/330px-Poster_-_Gone_With_the_Wind_01.jpg"
+  },
+  {
+    "name": "citizen-kane",
+    "friendly_name": "Citizen Kane Released",
+    "year": 1941,
+    "category": "cultural",
+    "description": "Orson Welles directed what many consider the greatest film ever made.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg/330px-Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg"
   },
   {
     "name": "casablanca-released",
@@ -1530,11 +1152,47 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Willem_de_Kooning_in_his_studio.jpg/330px-Willem_de_Kooning_in_his_studio.jpg"
   },
   {
+    "name": "nineteen-eighty-four",
+    "friendly_name": "Nineteen Eighty-Four Published",
+    "year": 1949,
+    "category": "cultural",
+    "description": "George Orwell published his dystopian novel about totalitarian surveillance.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1984_Events_Collage.jpg/330px-1984_Events_Collage.jpg"
+  },
+  {
     "name": "elvis-first-single",
     "friendly_name": "Elvis Records First Single",
     "year": 1954,
     "category": "cultural",
     "description": "Elvis Presley recorded That's All Right, launching rock and roll.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg"
+  },
+  {
+    "name": "lord-of-rings",
+    "friendly_name": "Lord of the Rings Published",
+    "year": 1954,
+    "category": "cultural",
+    "description": "J.R.R. Tolkien published his epic fantasy trilogy.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif"
+  },
+  {
+    "name": "disneyland-opens",
+    "friendly_name": "Disneyland Opens",
+    "year": 1955,
+    "category": "cultural",
+    "description": "Walt Disney opened his first theme park in Anaheim, California.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sleeping_Beauty_Castle_-_February_2024.png/330px-Sleeping_Beauty_Castle_-_February_2024.png"
+  },
+  {
+    "name": "elvis-ed-sullivan",
+    "friendly_name": "Elvis on Ed Sullivan",
+    "year": 1956,
+    "category": "cultural",
+    "description": "Elvis Presley's television appearance launched rock and roll into the mainstream.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg"
   },
@@ -1548,12 +1206,66 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/6/6a/West_Side_001.jpg"
   },
   {
+    "name": "birth-control-pill",
+    "friendly_name": "Birth Control Pill Approved",
+    "year": 1960,
+    "category": "cultural",
+    "description": "The FDA approved the first oral contraceptive pill for women.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm/320px--Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm.jpg"
+  },
+  {
     "name": "beatles-form",
     "friendly_name": "Beatles Form",
     "year": 1960,
     "category": "cultural",
     "description": "John Lennon's band became the Beatles in Liverpool.",
     "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
+  },
+  {
+    "name": "catch-22-published",
+    "friendly_name": "Catch-22 Published",
+    "year": 1961,
+    "category": "cultural",
+    "description": "Joseph Heller's satirical war novel introduced the famous logical paradox.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/330px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
+  },
+  {
+    "name": "warhol-soup-cans",
+    "friendly_name": "Warhol's Campbell's Soup Cans",
+    "year": 1962,
+    "category": "cultural",
+    "description": "Andy Warhol exhibited his iconic pop art series.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/330px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg"
+  },
+  {
+    "name": "march-on-washington",
+    "friendly_name": "March on Washington",
+    "year": 1963,
+    "category": "cultural",
+    "description": "250,000 people gathered for civil rights, hearing MLK's I Have a Dream speech.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg/330px-Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg"
+  },
+  {
+    "name": "beatles-usa",
+    "friendly_name": "Beatles Arrive in USA",
+    "year": 1964,
+    "category": "cultural",
+    "description": "The British Invasion began with the Beatles' American tour.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
+  },
+  {
+    "name": "beatles-ed-sullivan",
+    "friendly_name": "Beatles on Ed Sullivan",
+    "year": 1964,
+    "category": "cultural",
+    "description": "The Beatles' American TV debut launched the British Invasion.",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
   },
   {
@@ -1575,6 +1287,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Monterey_International_Pop_Music_Festival_poster.jpg"
   },
   {
+    "name": "one-hundred-years-solitude",
+    "friendly_name": "One Hundred Years of Solitude Published",
+    "year": 1967,
+    "category": "cultural",
+    "description": "Gabriel García Márquez published his magical realist masterpiece.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg"
+  },
+  {
+    "name": "woodstock",
+    "friendly_name": "Woodstock Festival",
+    "year": 1969,
+    "category": "cultural",
+    "description": "The iconic music festival defined a generation.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Woodstock_poster.jpg/330px-Woodstock_poster.jpg"
+  },
+  {
+    "name": "stonewall-riots",
+    "friendly_name": "Stonewall Riots",
+    "year": 1969,
+    "category": "cultural",
+    "description": "LGBTQ patrons resisted a police raid, sparking the gay rights movement.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Stonewall_riots.jpg/330px-Stonewall_riots.jpg"
+  },
+  {
     "name": "sesame-street-debut",
     "friendly_name": "Sesame Street Debuts",
     "year": 1969,
@@ -1582,6 +1321,33 @@
     "description": "The revolutionary children's educational show first aired on PBS.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sesame_Street_logo.svg/330px-Sesame_Street_logo.svg.png"
+  },
+  {
+    "name": "first-earth-day",
+    "friendly_name": "First Earth Day",
+    "year": 1970,
+    "category": "cultural",
+    "description": "Twenty million Americans participated in the first Earth Day.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Earth_Day_Flag.png/330px-Earth_Day_Flag.png"
+  },
+  {
+    "name": "first-email",
+    "friendly_name": "First Email Sent",
+    "year": 1971,
+    "category": "cultural",
+    "description": "Ray Tomlinson sent the first network email using the @ symbol.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Evolution_36_mail.png/330px-Evolution_36_mail.png"
+  },
+  {
+    "name": "roe-v-wade",
+    "friendly_name": "Roe v. Wade Decision",
+    "year": 1973,
+    "category": "cultural",
+    "description": "The Supreme Court legalized abortion nationwide in a landmark ruling.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg/330px-Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg"
   },
   {
     "name": "disco-era-begins",
@@ -1602,6 +1368,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Joey_Ramone.jpg/330px-Joey_Ramone.jpg"
   },
   {
+    "name": "star-wars",
+    "friendly_name": "Star Wars Released",
+    "year": 1977,
+    "category": "cultural",
+    "description": "George Lucas's space opera became a cultural phenomenon.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/330px-Star_wars2.svg.png"
+  },
+  {
+    "name": "walkman-released",
+    "friendly_name": "Sony Walkman Released",
+    "year": 1979,
+    "category": "cultural",
+    "description": "Sony introduced the portable cassette player that changed how people listened to music.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Walkman_logo_%282000%29.svg/330px-Walkman_logo_%282000%29.svg.png"
+  },
+  {
     "name": "hip-hop-emerges",
     "friendly_name": "Hip Hop Emerges",
     "year": 1979,
@@ -1611,6 +1395,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kool_Herc.jpg/330px-Kool_Herc.jpg"
   },
   {
+    "name": "mtv-launches",
+    "friendly_name": "MTV Launches",
+    "year": 1981,
+    "category": "cultural",
+    "description": "The first 24-hour music television channel began broadcasting.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/330px-MTV_2021_%28brand_version%29.svg.png"
+  },
+  {
+    "name": "aids-identified",
+    "friendly_name": "AIDS Identified",
+    "year": 1981,
+    "category": "cultural",
+    "description": "Scientists first recognized and named the AIDS epidemic.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/330px-Red_Ribbon.svg.png"
+  },
+  {
+    "name": "michael-jackson-thriller",
+    "friendly_name": "Thriller Album Released",
+    "year": 1982,
+    "category": "cultural",
+    "description": "Michael Jackson released the best-selling album of all time.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png"
+  },
+  {
     "name": "thriller-video",
     "friendly_name": "Thriller Video Released",
     "year": 1983,
@@ -1618,6 +1429,42 @@
     "description": "Michael Jackson's 14-minute music video redefined the medium.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Michael_Jackson%27s_Thriller_title_card.jpg/330px-Michael_Jackson%27s_Thriller_title_card.jpg"
+  },
+  {
+    "name": "live-aid",
+    "friendly_name": "Live Aid Concert",
+    "year": 1985,
+    "category": "cultural",
+    "description": "A dual-venue rock concert raised millions for Ethiopian famine relief.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Official_Live_Aid_poster.jpeg"
+  },
+  {
+    "name": "aids-quilt",
+    "friendly_name": "AIDS Quilt Displayed",
+    "year": 1987,
+    "category": "cultural",
+    "description": "The NAMES Project AIDS Memorial Quilt was first displayed in Washington.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Aids_Quilt.jpg/330px-Aids_Quilt.jpg"
+  },
+  {
+    "name": "human-genome-project",
+    "friendly_name": "Human Genome Project Begins",
+    "year": 1990,
+    "category": "cultural",
+    "description": "Scientists began the massive effort to map all human genes.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_HGP.jpg/330px-Logo_HGP.jpg"
+  },
+  {
+    "name": "nelson-mandela-freed",
+    "friendly_name": "Nelson Mandela Released",
+    "year": 1990,
+    "category": "cultural",
+    "description": "The anti-apartheid leader was freed after 27 years in prison.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg"
   },
   {
     "name": "nevermind-album",
@@ -1638,150 +1485,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg"
   },
   {
-    "name": "seneca-falls-convention",
-    "friendly_name": "Seneca Falls Convention",
-    "year": 1848,
-    "category": "cultural",
-    "description": "The first women's rights convention in the US launched the suffrage movement.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Woman%27s_Rights_Convention.jpg/330px-Woman%27s_Rights_Convention.jpg"
-  },
-  {
-    "name": "first-kindergarten",
-    "friendly_name": "First Kindergarten Opens",
-    "year": 1837,
-    "category": "cultural",
-    "description": "Friedrich Froebel opened the first kindergarten in Germany.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/First_Kindergarten_4.jpg/330px-First_Kindergarten_4.jpg"
-  },
-  {
-    "name": "ymca-founded",
-    "friendly_name": "YMCA Founded",
-    "year": 1844,
-    "category": "cultural",
-    "description": "The Young Men's Christian Association was founded in London.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/World_YMCA_logo.svg/330px-World_YMCA_logo.svg.png"
-  },
-  {
-    "name": "red-cross-founded",
-    "friendly_name": "Red Cross Founded",
-    "year": 1863,
-    "category": "cultural",
-    "description": "Henry Dunant founded the humanitarian organization in Geneva.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Croixrouge_logos.jpg/330px-Croixrouge_logos.jpg"
-  },
-  {
-    "name": "salvation-army-founded",
-    "friendly_name": "Salvation Army Founded",
-    "year": 1865,
-    "category": "cultural",
-    "description": "William Booth founded the Christian charitable organization in London.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/320px-The_Salvation_Army.svg.png"
-  },
-  {
-    "name": "first-labor-day",
-    "friendly_name": "First Labor Day",
-    "year": 1882,
-    "category": "cultural",
-    "description": "New York held the first Labor Day parade honoring workers.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg/330px-First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg"
-  },
-  {
-    "name": "hull-house-founded",
-    "friendly_name": "Hull House Founded",
-    "year": 1889,
-    "category": "cultural",
-    "description": "Jane Addams opened the pioneering settlement house in Chicago.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/The_Hull_House%2C_Chicago_%28front%29.tif/lossy-page1-320px-The_Hull_House%2C_Chicago_%28front%29.tif.jpg"
-  },
-  {
-    "name": "naacp-founded",
-    "friendly_name": "NAACP Founded",
-    "year": 1909,
-    "category": "cultural",
-    "description": "The National Association for the Advancement of Colored People was established.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/NAACP_seal.svg/330px-NAACP_seal.svg.png"
-  },
-  {
-    "name": "boy-scouts-founded",
-    "friendly_name": "Boy Scouts Founded",
-    "year": 1910,
-    "category": "cultural",
-    "description": "Robert Baden-Powell founded the Boy Scouts in the United Kingdom.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/1996-Rover_Moot-Fahnengru%C3%9F.jpg/330px-1996-Rover_Moot-Fahnengru%C3%9F.jpg"
-  },
-  {
-    "name": "girl-scouts-founded",
-    "friendly_name": "Girl Scouts Founded",
-    "year": 1912,
-    "category": "cultural",
-    "description": "Juliette Gordon Low founded the Girl Scouts in Savannah, Georgia.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg/330px-The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg"
-  },
-  {
-    "name": "first-miss-america",
-    "friendly_name": "First Miss America Pageant",
-    "year": 1921,
-    "category": "cultural",
-    "description": "The first Miss America pageant was held in Atlantic City.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Miss_America_Logo.jpg"
-  },
-  {
-    "name": "social-security-act",
-    "friendly_name": "Social Security Act Signed",
-    "year": 1935,
-    "category": "cultural",
-    "description": "FDR signed the law creating retirement benefits for American workers.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
-  },
-  {
-    "name": "march-on-washington",
-    "friendly_name": "March on Washington",
-    "year": 1963,
-    "category": "cultural",
-    "description": "250,000 people gathered for civil rights, hearing MLK's I Have a Dream speech.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg/330px-Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg"
-  },
-  {
-    "name": "first-earth-day",
-    "friendly_name": "First Earth Day",
-    "year": 1970,
-    "category": "cultural",
-    "description": "Twenty million Americans participated in the first Earth Day.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Earth_Day_Flag.png/330px-Earth_Day_Flag.png"
-  },
-  {
-    "name": "roe-v-wade",
-    "friendly_name": "Roe v. Wade Decision",
-    "year": 1973,
-    "category": "cultural",
-    "description": "The Supreme Court legalized abortion nationwide in a landmark ruling.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg/330px-Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg"
-  },
-  {
-    "name": "aids-quilt",
-    "friendly_name": "AIDS Quilt Displayed",
-    "year": 1987,
-    "category": "cultural",
-    "description": "The NAMES Project AIDS Memorial Quilt was first displayed in Washington.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Aids_Quilt.jpg/330px-Aids_Quilt.jpg"
-  },
-  {
     "name": "million-man-march",
     "friendly_name": "Million Man March",
     "year": 1995,
@@ -1789,6 +1492,123 @@
     "description": "Hundreds of thousands of African American men gathered in Washington.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_million_march_man.jpg/330px-The_million_march_man.jpg"
+  },
+  {
+    "name": "dolly-sheep-cloned",
+    "friendly_name": "Dolly the Sheep Cloned",
+    "year": 1996,
+    "category": "cultural",
+    "description": "Scientists created the first mammal cloned from an adult cell.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Dolly_the_Sheep_with_her_First_Born_Bonnie.jpg"
+  },
+  {
+    "name": "harry-potter-published",
+    "friendly_name": "Harry Potter Published",
+    "year": 1997,
+    "category": "cultural",
+    "description": "J.K. Rowling published the first Harry Potter book, launching a global phenomenon.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Harry_Potter_logo.svg/330px-Harry_Potter_logo.svg.png"
+  },
+  {
+    "name": "google-founded",
+    "friendly_name": "Google Founded",
+    "year": 1998,
+    "category": "cultural",
+    "description": "Larry Page and Sergey Brin founded the search engine company.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png"
+  },
+  {
+    "name": "y2k",
+    "friendly_name": "Y2K Millennium Bug",
+    "year": 2000,
+    "category": "cultural",
+    "description": "The world braced for computer failures as the calendar rolled to a new millennium.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bug_de_l%27an_2000.jpg/330px-Bug_de_l%27an_2000.jpg"
+  },
+  {
+    "name": "millennium",
+    "friendly_name": "Y2K New Millennium",
+    "year": 2000,
+    "category": "cultural",
+    "description": "The world celebrated the turn of the millennium.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG/330px-%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG"
+  },
+  {
+    "name": "ipod-released",
+    "friendly_name": "iPod Released",
+    "year": 2001,
+    "category": "cultural",
+    "description": "Apple launched the portable music player that transformed the music industry.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/IPod_family.png/330px-IPod_family.png"
+  },
+  {
+    "name": "human-genome-completed",
+    "friendly_name": "Human Genome Sequenced",
+    "year": 2003,
+    "category": "cultural",
+    "description": "Scientists completed mapping the entire human genetic code.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Human_karyotype_with_bands_and_sub-bands.png/330px-Human_karyotype_with_bands_and_sub-bands.png"
+  },
+  {
+    "name": "facebook-launched",
+    "friendly_name": "Facebook Launched",
+    "year": 2004,
+    "category": "cultural",
+    "description": "Mark Zuckerberg launched the social network from his Harvard dorm room.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/6/64/Facebook_user_page.png"
+  },
+  {
+    "name": "youtube-founded",
+    "friendly_name": "YouTube Founded",
+    "year": 2005,
+    "category": "cultural",
+    "description": "The video-sharing platform that changed online media was created.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/330px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png"
+  },
+  {
+    "name": "twitter-launched",
+    "friendly_name": "Twitter Launched",
+    "year": 2006,
+    "category": "cultural",
+    "description": "The microblogging platform began with its 140-character posts.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg/320px-X_%28formerly_Twitter%29_logo_late_2025.svg.png"
+  },
+  {
+    "name": "iphone-released",
+    "friendly_name": "iPhone Released",
+    "year": 2007,
+    "category": "cultural",
+    "description": "Apple's smartphone revolutionized mobile technology and communication.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/320px-IPhone_17_Pro_Vector.svg.png"
+  },
+  {
+    "name": "bitcoin-created",
+    "friendly_name": "Bitcoin Created",
+    "year": 2009,
+    "category": "cultural",
+    "description": "The mysterious Satoshi Nakamoto launched the first cryptocurrency.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/320px-Bitcoin.svg.png"
+  },
+  {
+    "name": "instagram-launched",
+    "friendly_name": "Instagram Launched",
+    "year": 2010,
+    "category": "cultural",
+    "description": "The photo-sharing app that transformed social media was released.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/330px-Instagram_logo_2022.svg.png"
   },
   {
     "name": "black-lives-matter-founded",
@@ -1800,102 +1620,30 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Blmblm_cropped.svg/330px-Blmblm_cropped.svg.png"
   },
   {
-    "name": "morse-code-invented",
-    "friendly_name": "Morse Code Invented",
-    "year": 1838,
+    "name": "marriage-equality-us",
+    "friendly_name": "Same-Sex Marriage Legalized in US",
+    "year": 2015,
     "category": "cultural",
-    "description": "Samuel Morse developed the code that revolutionized long-distance communication.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Morsetaste.jpg/330px-Morsetaste.jpg"
-  },
-  {
-    "name": "esperanto-created",
-    "friendly_name": "Esperanto Created",
-    "year": 1887,
-    "category": "cultural",
-    "description": "L.L. Zamenhof published the first book in his constructed international language.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/330px-Flag_of_Esperanto.svg.png"
-  },
-  {
-    "name": "nobel-prizes-first",
-    "friendly_name": "First Nobel Prizes Awarded",
-    "year": 1901,
-    "category": "cultural",
-    "description": "The first Nobel Prizes were awarded in Stockholm and Oslo.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nobel_Prize.png/330px-Nobel_Prize.png"
-  },
-  {
-    "name": "alcoholics-anonymous",
-    "friendly_name": "Alcoholics Anonymous Founded",
-    "year": 1935,
-    "category": "cultural",
-    "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Alcoholics_Anonymous_%28logo%29.svg/330px-Alcoholics_Anonymous_%28logo%29.svg.png"
-  },
-  {
-    "name": "great-gatsby",
-    "friendly_name": "Great Gatsby Published",
-    "year": 1925,
-    "category": "cultural",
-    "description": "F. Scott Fitzgerald published his classic novel of the Jazz Age.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/330px-The_Great_Gatsby_Cover_1925_Retouched.jpg"
-  },
-  {
-    "name": "lord-of-rings",
-    "friendly_name": "Lord of the Rings Published",
-    "year": 1954,
-    "category": "cultural",
-    "description": "J.R.R. Tolkien published his epic fantasy trilogy.",
+    "description": "The Supreme Court ruled same-sex marriage legal nationwide.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg/330px-Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg"
   },
   {
-    "name": "catch-22-published",
-    "friendly_name": "Catch-22 Published",
-    "year": 1961,
+    "name": "metoo-movement",
+    "friendly_name": "#MeToo Movement Goes Viral",
+    "year": 2017,
     "category": "cultural",
-    "description": "Joseph Heller's satirical war novel introduced the famous logical paradox.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/330px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg"
+    "description": "A social movement against sexual harassment spread globally on social media.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg/330px-Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg"
   },
   {
-    "name": "one-hundred-years-solitude",
-    "friendly_name": "One Hundred Years of Solitude Published",
-    "year": 1967,
+    "name": "chatgpt-released",
+    "friendly_name": "ChatGPT Released",
+    "year": 2022,
     "category": "cultural",
-    "description": "Gabriel García Márquez published his magical realist masterpiece.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg"
-  },
-  {
-    "name": "rodin-thinker",
-    "friendly_name": "The Thinker Sculpted",
-    "year": 1880,
-    "category": "cultural",
-    "description": "Auguste Rodin created his iconic sculpture of contemplation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG/330px-Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG"
-  },
-  {
-    "name": "guernica-painted",
-    "friendly_name": "Guernica Painted",
-    "year": 1937,
-    "category": "cultural",
-    "description": "Picasso painted his powerful anti-war response to the bombing of a Spanish town.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/330px-PicassoGuernica.jpg"
-  },
-  {
-    "name": "warhol-soup-cans",
-    "friendly_name": "Warhol's Campbell's Soup Cans",
-    "year": 1962,
-    "category": "cultural",
-    "description": "Andy Warhol exhibited his iconic pop art series.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/330px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg"
+    "description": "OpenAI launched the AI chatbot that sparked a technological revolution.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png"
   }
 ]

@@ -7,6 +7,7 @@ import SettingsPopup from './SettingsPopup';
 import { Toast } from './Toast';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
+import { getDailyTheme, getThemeDisplayName, getThemedCategories, getThemedEras } from '../utils/dailyTheme';
 
 const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
 const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
@@ -65,15 +66,19 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     return count >= minRequired;
   }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand]);
 
+  // Daily theme - computed from today's date
+  const dailySeed = new Date().toISOString().split('T')[0];
+  const dailyTheme = useMemo(() => getDailyTheme(dailySeed), [dailySeed]);
+  const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
+
   const handleDailyStart = () => {
-    const today = new Date().toISOString().split('T')[0];
     onStart({
       mode: 'daily',
       totalTurns: 7,
       selectedDifficulties: [...ALL_DIFFICULTIES],
-      selectedCategories: [...ALL_CATEGORIES],
-      selectedEras: [...ALL_ERAS],
-      dailySeed: today,
+      selectedCategories: getThemedCategories(dailyTheme),
+      selectedEras: getThemedEras(dailyTheme),
+      dailySeed,
       playerCount: 1,
       playerNames: ['Player 1'],
       cardsPerHand: 7,
@@ -210,8 +215,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 <Calendar className="w-4 h-4 text-white" />
               </div>
               <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Daily Challenge</h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Same puzzle for everyone today</p>
+                <h3 className="font-bold text-sm font-body">
+                  <span className="text-light-text dark:text-dark-text">Daily Challenge: </span>
+                  <span className="text-accent dark:text-accent-dark">{dailyThemeDisplayName}</span>
+                </h3>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Same puzzle for all · New theme daily</p>
               </div>
             </div>
             <button

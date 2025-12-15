@@ -11,7 +11,7 @@ export function shuffleArray<T>(array: T[]): T[] {
 }
 
 // Seeded random number generator (mulberry32)
-function seededRandom(seed: number): () => number {
+export function seededRandom(seed: number): () => number {
   return function() {
     // eslint-disable-next-line no-mixed-operators
     let t = seed += 0x6D2B79F5;
@@ -25,7 +25,7 @@ function seededRandom(seed: number): () => number {
 }
 
 // Convert string to numeric seed
-function stringToSeed(str: string): number {
+export function stringToSeed(str: string): number {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);

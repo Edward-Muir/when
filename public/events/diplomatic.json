@@ -9,6 +9,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Karnak_%C3%84gyptisch-Hethitischer_Friedensvertrag_06.jpg/330px-Karnak_%C3%84gyptisch-Hethitischer_Friedensvertrag_06.jpg"
   },
   {
+    "name": "persian-empire-cyrus",
+    "friendly_name": "Persian Empire Founded",
+    "year": -550,
+    "category": "diplomatic",
+    "description": "Cyrus the Great founded the Achaemenid Empire, the first Persian Empire.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Achaemenid_Empire_500_BCE.jpg/330px-Achaemenid_Empire_500_BCE.jpg"
+  },
+  {
+    "name": "cyrus-cylinder",
+    "friendly_name": "Cyrus Cylinder",
+    "year": -539,
+    "category": "diplomatic",
+    "description": "Cyrus the Great issued an early declaration of human rights after conquering Babylon.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cyrus_Cylinder_front.jpg/330px-Cyrus_Cylinder_front.jpg"
+  },
+  {
     "name": "roman-republic",
     "friendly_name": "Roman Republic Established",
     "year": -509,
@@ -45,6 +63,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/320px-Roman_SPQR_banner.svg.png"
   },
   {
+    "name": "league-corinth",
+    "friendly_name": "League of Corinth Formed",
+    "year": -337,
+    "category": "diplomatic",
+    "description": "Philip II united Greek city-states in an alliance against Persia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Map_Macedonia_336_BC-en.svg/330px-Map_Macedonia_336_BC-en.svg.png"
+  },
+  {
     "name": "maurya-empire",
     "friendly_name": "Maurya Empire Founded",
     "year": -322,
@@ -52,6 +79,24 @@
     "description": "Chandragupta Maurya established the first empire to unify most of India.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Maurya_Empire%2C_c.250_BCE_network_model_v01.png/330px-Maurya_Empire%2C_c.250_BCE_network_model_v01.png"
+  },
+  {
+    "name": "ashoka-edicts",
+    "friendly_name": "Ashoka's Edicts",
+    "year": -260,
+    "category": "diplomatic",
+    "description": "Indian emperor Ashoka proclaimed religious tolerance and non-violence.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ashoka_Lauriya_Areraj_inscription.jpg/330px-Ashoka_Lauriya_Areraj_inscription.jpg"
+  },
+  {
+    "name": "punic-treaty",
+    "friendly_name": "End of First Punic War",
+    "year": -241,
+    "category": "diplomatic",
+    "description": "Rome and Carthage signed a treaty ending 23 years of conflict over Sicily.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/First_Punic_War_264_BC_v3.png/330px-First_Punic_War_264_BC_v3.png"
   },
   {
     "name": "qin-unification",
@@ -63,6 +108,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qin_dynasty_territory.svg/330px-Qin_dynasty_territory.svg.png"
   },
   {
+    "name": "han-dynasty",
+    "friendly_name": "Han Dynasty Established",
+    "year": -206,
+    "category": "diplomatic",
+    "description": "The Han Dynasty established the golden age of Chinese civilization.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Han_map.jpg/330px-Han_map.jpg"
+  },
+  {
+    "name": "treaty-apamea",
+    "friendly_name": "Treaty of Apamea",
+    "year": -188,
+    "category": "diplomatic",
+    "description": "Rome imposed terms on the Seleucid Empire after defeating Antiochus III.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Treaty_of_Apamea.png/330px-Treaty_of_Apamea.png"
+  },
+  {
+    "name": "silk-road-opens",
+    "friendly_name": "Silk Road Opens",
+    "year": -130,
+    "category": "diplomatic",
+    "description": "Trade routes connecting China to the Mediterranean were established.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
+  },
+  {
     "name": "roman-empire-founded",
     "friendly_name": "Roman Empire Established",
     "year": -27,
@@ -70,6 +142,33 @@
     "description": "Augustus became the first Roman Emperor, ending the Republic.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Roman_Empire_Trajan_117AD.png/330px-Roman_Empire_Trajan_117AD.png"
+  },
+  {
+    "name": "pax-romana",
+    "friendly_name": "Pax Romana Begins",
+    "year": -27,
+    "category": "diplomatic",
+    "description": "Augustus established a 200-year period of relative peace across the Roman Empire.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/320px-Roman_SPQR_banner.svg.png"
+  },
+  {
+    "name": "edict-caracalla",
+    "friendly_name": "Edict of Caracalla",
+    "year": 212,
+    "category": "diplomatic",
+    "description": "Roman citizenship was extended to all free inhabitants of the empire.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg/330px-Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg"
+  },
+  {
+    "name": "diocletian-tetrarchy",
+    "friendly_name": "Diocletian Divides Empire",
+    "year": 286,
+    "category": "diplomatic",
+    "description": "Emperor Diocletian created the Tetrarchy to govern the vast Roman Empire.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Venice_%E2%80%93_The_Tetrarchs_03.jpg/330px-Venice_%E2%80%93_The_Tetrarchs_03.jpg"
   },
   {
     "name": "edict-milan",
@@ -81,6 +180,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg"
   },
   {
+    "name": "gupta-empire",
+    "friendly_name": "Gupta Empire Founded",
+    "year": 320,
+    "category": "diplomatic",
+    "description": "The Gupta Empire began India's golden age of science and culture.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/South_Asia_historical_AD375_EN.svg/330px-South_Asia_historical_AD375_EN.svg.png"
+  },
+  {
     "name": "council-nicaea",
     "friendly_name": "Council of Nicaea",
     "year": 325,
@@ -90,13 +198,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Nikea-arius.png/330px-Nikea-arius.png"
   },
   {
-    "name": "rome-falls",
-    "friendly_name": "Fall of the Western Roman Empire",
-    "year": 476,
+    "name": "constantinople-capital",
+    "friendly_name": "Constantinople Becomes Capital",
+    "year": 330,
     "category": "diplomatic",
-    "description": "The last Western Roman Emperor was deposed, ending the empire.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/330px-Roman_Republic_Empire_map.gif"
+    "description": "Constantine moved the Roman capital to his new city on the Bosporus.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png"
+  },
+  {
+    "name": "theodosian-code",
+    "friendly_name": "Theodosian Code",
+    "year": 438,
+    "category": "diplomatic",
+    "description": "The Eastern Roman Empire compiled all imperial laws since Constantine.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg/330px-St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg"
   },
   {
     "name": "justinian-code",
@@ -126,13 +243,31 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg/330px-Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg"
   },
   {
-    "name": "charlemagne-crowned",
-    "friendly_name": "Charlemagne Crowned Emperor",
-    "year": 800,
+    "name": "umayyad-caliphate",
+    "friendly_name": "Umayyad Caliphate Founded",
+    "year": 661,
     "category": "diplomatic",
-    "description": "Pope Leo III crowned Charlemagne as Holy Roman Emperor.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/charlemagne-crowned_d266vb?_a=BAMAMiTC0"
+    "description": "The first hereditary Islamic dynasty established its capital in Damascus.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg/330px-Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "abbasid-caliphate",
+    "friendly_name": "Abbasid Caliphate Founded",
+    "year": 750,
+    "category": "diplomatic",
+    "description": "The Abbasids overthrew the Umayyads and moved the capital to Baghdad.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Abbasid_banner.svg/330px-Abbasid_banner.svg.png"
+  },
+  {
+    "name": "papal-states-established",
+    "friendly_name": "Papal States Established",
+    "year": 756,
+    "category": "diplomatic",
+    "description": "The Pope received territories in central Italy from the Frankish king.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_the_Papal_States_%28pre_1808%29.svg/330px-Flag_of_the_Papal_States_%28pre_1808%29.svg.png"
   },
   {
     "name": "treaty-verdun",
@@ -144,6 +279,24 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/treaty-verdun_msdjlu?_a=BAMAMiTC0"
   },
   {
+    "name": "treaty-wedmore",
+    "friendly_name": "Treaty of Wedmore",
+    "year": 878,
+    "category": "diplomatic",
+    "description": "Alfred the Great made peace with Viking leader Guthrum, dividing England.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wedmore_centre.jpg/330px-Wedmore_centre.jpg"
+  },
+  {
+    "name": "song-dynasty",
+    "friendly_name": "Song Dynasty Established",
+    "year": 960,
+    "category": "diplomatic",
+    "description": "The Song Dynasty ushered in an era of technological innovation and economic growth.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/China_-_Song_Dynasty-en.svg/330px-China_-_Song_Dynasty-en.svg.png"
+  },
+  {
     "name": "holy-roman-empire",
     "friendly_name": "Holy Roman Empire Founded",
     "year": 962,
@@ -153,13 +306,31 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Banner_of_the_Holy_Roman_Emperor_with_haloes_%281430-1806%29.svg/330px-Banner_of_the_Holy_Roman_Emperor_with_haloes_%281430-1806%29.svg.png"
   },
   {
-    "name": "great-schism",
-    "friendly_name": "Great Schism",
-    "year": 1054,
+    "name": "capetian-dynasty",
+    "friendly_name": "Capetian Dynasty Begins",
+    "year": 987,
     "category": "diplomatic",
-    "description": "Christianity split into Roman Catholic and Eastern Orthodox churches.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Great_Schism_with_former_borders_%281054%29.png/330px-Great_Schism_with_former_borders_%281054%29.png"
+    "description": "Hugh Capet founded the dynasty that would rule France for 800 years.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/SceauHuguesCapet_%28cropped%29.PNG"
+  },
+  {
+    "name": "concordat-worms",
+    "friendly_name": "Concordat of Worms",
+    "year": 1122,
+    "category": "diplomatic",
+    "description": "The Pope and Holy Roman Emperor resolved the Investiture Controversy.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Urkunde_Wormser_Konkordat-bg.png/330px-Urkunde_Wormser_Konkordat-bg.png"
+  },
+  {
+    "name": "fourth-crusade-constantinople",
+    "friendly_name": "Crusaders Sack Constantinople",
+    "year": 1204,
+    "category": "diplomatic",
+    "description": "The Fourth Crusade diverted to sack the Byzantine capital.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ConquestOfConstantinopleByTheCrusadersIn1204.jpg/330px-ConquestOfConstantinopleByTheCrusadersIn1204.jpg"
   },
   {
     "name": "magna-carta",
@@ -171,6 +342,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg/330px-Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg"
   },
   {
+    "name": "hanseatic-league",
+    "friendly_name": "Hanseatic League Forms",
+    "year": 1241,
+    "category": "diplomatic",
+    "description": "Northern German cities formed a commercial alliance dominating Baltic trade.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg/330px-Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg"
+  },
+  {
     "name": "english-parliament",
     "friendly_name": "First English Parliament",
     "year": 1265,
@@ -178,6 +358,15 @@
     "description": "Simon de Montfort summoned the first elected parliament in England.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coat_of_Arms_of_England_%28-1340%29.svg/330px-Coat_of_Arms_of_England_%28-1340%29.svg.png"
+  },
+  {
+    "name": "mongol-empire",
+    "friendly_name": "Mongol Empire at Peak",
+    "year": 1279,
+    "category": "diplomatic",
+    "description": "The Mongol Empire became the largest contiguous land empire in history.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif/330px-Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif"
   },
   {
     "name": "swiss-confederation",
@@ -198,6 +387,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg/330px-Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg.png"
   },
   {
+    "name": "golden-bull",
+    "friendly_name": "The Golden Bull",
+    "year": 1356,
+    "category": "diplomatic",
+    "description": "The decree established how Holy Roman Emperors would be elected.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Goldene_Bulle_Nahaufnahme.jpg/330px-Goldene_Bulle_Nahaufnahme.jpg"
+  },
+  {
     "name": "ming-dynasty",
     "friendly_name": "Ming Dynasty Established",
     "year": 1368,
@@ -205,6 +403,51 @@
     "description": "The Ming Dynasty restored Chinese rule after Mongol domination.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg/330px-Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg"
+  },
+  {
+    "name": "union-krewo",
+    "friendly_name": "Union of Krewo",
+    "year": 1385,
+    "category": "diplomatic",
+    "description": "Poland and Lithuania formed a personal union through royal marriage.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Union_of_Krewo.jpg/330px-Union_of_Krewo.jpg"
+  },
+  {
+    "name": "union-kalmar",
+    "friendly_name": "Union of Kalmar",
+    "year": 1397,
+    "category": "diplomatic",
+    "description": "Denmark, Norway, and Sweden united under a single monarch.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kalmar_Union_ca._1400.svg/330px-Kalmar_Union_ca._1400.svg.png"
+  },
+  {
+    "name": "aztec-empire",
+    "friendly_name": "Aztec Empire Established",
+    "year": 1428,
+    "category": "diplomatic",
+    "description": "The Triple Alliance formed the Aztec Empire in central Mexico.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Aztec_Empire_%28orthographic_projection%29.svg/330px-Aztec_Empire_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "treaty-alcacovas",
+    "friendly_name": "Treaty of Alcáçovas",
+    "year": 1479,
+    "category": "diplomatic",
+    "description": "Spain and Portugal divided Atlantic territories before Columbus's voyage.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Alca%C3%A7ovas1.jpg/330px-Alca%C3%A7ovas1.jpg"
+  },
+  {
+    "name": "inca-empire-peak",
+    "friendly_name": "Inca Empire at Peak",
+    "year": 1493,
+    "category": "diplomatic",
+    "description": "The Inca Empire reached its greatest extent in South America.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suntur_Paucar.svg/330px-Suntur_Paucar.svg.png"
   },
   {
     "name": "treaty-tordesillas",
@@ -216,13 +459,31 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Treaty_of_Tordesillas.jpg/330px-Treaty_of_Tordesillas.jpg"
   },
   {
-    "name": "reformation-begins",
-    "friendly_name": "Protestant Reformation Begins",
-    "year": 1517,
+    "name": "league-cambrai",
+    "friendly_name": "League of Cambrai",
+    "year": 1508,
     "category": "diplomatic",
-    "description": "Martin Luther's 95 Theses challenged the Catholic Church's authority.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg"
+    "description": "Major European powers allied against Venice's territorial expansion.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italia._Cambiamenti_territoriali_%281495-1535%29.png/330px-Italia._Cambiamenti_territoriali_%281495-1535%29.png"
+  },
+  {
+    "name": "treaty-madrid",
+    "friendly_name": "Treaty of Madrid",
+    "year": 1526,
+    "category": "diplomatic",
+    "description": "Captured French King Francis I ceded territories to Emperor Charles V.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg/330px-Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg"
+  },
+  {
+    "name": "mughal-empire",
+    "friendly_name": "Mughal Empire Founded",
+    "year": 1526,
+    "category": "diplomatic",
+    "description": "Babur founded the dynasty that would rule most of India for 300 years.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Joppen1907India1700a.jpg/330px-Joppen1907India1700a.jpg"
   },
   {
     "name": "church-of-england",
@@ -241,6 +502,24 @@
     "description": "The treaty allowed German princes to choose Catholicism or Lutheranism for their states.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Druck_Augsburger_Reichsfrieden.jpg/330px-Druck_Augsburger_Reichsfrieden.jpg"
+  },
+  {
+    "name": "peace-cateau-cambresis",
+    "friendly_name": "Peace of Cateau-Cambrésis",
+    "year": 1559,
+    "category": "diplomatic",
+    "description": "France and Spain ended decades of Italian Wars with a comprehensive treaty.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cateau-Cambresis.jpg/330px-Cateau-Cambresis.jpg"
+  },
+  {
+    "name": "union-utrecht",
+    "friendly_name": "Union of Utrecht",
+    "year": 1579,
+    "category": "diplomatic",
+    "description": "Northern Dutch provinces formed a defensive union against Spain.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sol_Lumen.jpg/330px-Sol_Lumen.jpg"
   },
   {
     "name": "dutch-republic",
@@ -270,6 +549,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_the_British_East_India_Company_%281801%29.svg/330px-Flag_of_the_British_East_India_Company_%281801%29.svg.png"
   },
   {
+    "name": "tokugawa-shogunate",
+    "friendly_name": "Tokugawa Shogunate Begins",
+    "year": 1603,
+    "category": "diplomatic",
+    "description": "The Tokugawa clan unified Japan and began 250 years of isolation and peace.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Map_of_Japan_in_Provinces_in_time_of_Iyeyasu.jpg/330px-Map_of_Japan_in_Provinces_in_time_of_Iyeyasu.jpg"
+  },
+  {
+    "name": "treaty-london-anglo-spanish",
+    "friendly_name": "Treaty of London (Anglo-Spanish)",
+    "year": 1604,
+    "category": "diplomatic",
+    "description": "England and Spain ended nearly two decades of war.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/330px-London_Skyline_%28125508655%29.jpeg"
+  },
+  {
     "name": "jamestown-founded",
     "friendly_name": "Jamestown Founded",
     "year": 1607,
@@ -288,13 +585,40 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/mayflower-compact_qiophk?_a=BAMAMiTC0"
   },
   {
-    "name": "peace-westphalia",
-    "friendly_name": "Peace of Westphalia",
-    "year": 1648,
+    "name": "qing-dynasty",
+    "friendly_name": "Qing Dynasty Established",
+    "year": 1644,
     "category": "diplomatic",
-    "description": "The treaties ended the Thirty Years' War and established modern state sovereignty.",
+    "description": "The Manchu Qing Dynasty conquered Ming China and would rule for nearly three centuries.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg/330px-M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_China_%281889%E2%80%931912%29.svg/330px-Flag_of_China_%281889%E2%80%931912%29.svg.png"
+  },
+  {
+    "name": "peace-pyrenees",
+    "friendly_name": "Peace of the Pyrenees",
+    "year": 1659,
+    "category": "diplomatic",
+    "description": "France and Spain ended 24 years of war, establishing French dominance.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Traite-Pyrenees.jpg/330px-Traite-Pyrenees.jpg"
+  },
+  {
+    "name": "treaty-breda",
+    "friendly_name": "Treaty of Breda",
+    "year": 1667,
+    "category": "diplomatic",
+    "description": "England gained New Amsterdam (New York) from the Dutch.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2010-05-21-breda-by-RalfR-06.jpg/330px-2010-05-21-breda-by-RalfR-06.jpg"
+  },
+  {
+    "name": "treaty-nijmegen",
+    "friendly_name": "Treaty of Nijmegen",
+    "year": 1678,
+    "category": "diplomatic",
+    "description": "A series of treaties ended the Franco-Dutch War.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vrede_van_Nijmegen_-_De_ondertekening_van_de_Vrede_tussen_Frankrijk_en_Spanje_door_Henri_Gascard_%281635-1701%29.jpg/330px-Vrede_van_Nijmegen_-_De_ondertekening_van_de_Vrede_tussen_Frankrijk_en_Spanje_door_Henri_Gascard_%281635-1701%29.jpg"
   },
   {
     "name": "habeas-corpus",
@@ -304,15 +628,6 @@
     "description": "England enshrined the right to challenge unlawful imprisonment.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Coat_of_Arms_of_England_%281660-1689%29.svg/330px-Coat_of_Arms_of_England_%281660-1689%29.svg.png"
-  },
-  {
-    "name": "glorious-revolution",
-    "friendly_name": "Glorious Revolution",
-    "year": 1688,
-    "category": "diplomatic",
-    "description": "Parliament replaced King James II with William and Mary.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg/330px-William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg"
   },
   {
     "name": "bill-of-rights-england",
@@ -333,6 +648,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/72/Bank_of_England_logo.svg/320px-Bank_of_England_logo.svg.png"
   },
   {
+    "name": "treaty-ryswick",
+    "friendly_name": "Treaty of Ryswick",
+    "year": 1697,
+    "category": "diplomatic",
+    "description": "The treaty ended the Nine Years' War between France and the Grand Alliance.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rijswijk_Netherlands_-_Huis_ter_Nieuwburg_by_P._Schenck.jpg/330px-Rijswijk_Netherlands_-_Huis_ter_Nieuwburg_by_P._Schenck.jpg"
+  },
+  {
     "name": "act-of-union-britain",
     "friendly_name": "Acts of Union Create Great Britain",
     "year": 1707,
@@ -342,22 +666,58 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_England_%281702%E2%80%931707%29.svg/330px-Coat_of_arms_of_England_%281702%E2%80%931707%29.svg.png"
   },
   {
-    "name": "treaty-paris-1763",
-    "friendly_name": "Treaty of Paris 1763",
+    "name": "treaty-utrecht",
+    "friendly_name": "Treaty of Utrecht",
+    "year": 1713,
+    "category": "diplomatic",
+    "description": "The treaties ending the War of Spanish Succession reshaped European power.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/The_Treaty_of_Utrecht_%28clean%29.jpg/330px-The_Treaty_of_Utrecht_%28clean%29.jpg"
+  },
+  {
+    "name": "treaty-aix-la-chapelle",
+    "friendly_name": "Treaty of Aix-la-Chapelle",
+    "year": 1748,
+    "category": "diplomatic",
+    "description": "The treaty ended the War of Austrian Succession.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg/330px-Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg"
+  },
+  {
+    "name": "treaty-paris-seven-years",
+    "friendly_name": "Treaty of Paris (Seven Years War)",
     "year": 1763,
     "category": "diplomatic",
-    "description": "The treaty ended the Seven Years' War and reshaped colonial empires.",
+    "description": "The treaty ended the Seven Years' War and reshaped colonial empires worldwide.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/SevenYearsWar.png/330px-SevenYearsWar.png"
   },
   {
-    "name": "declaration-independence",
-    "friendly_name": "Declaration of Independence",
-    "year": 1776,
+    "name": "partition-poland",
+    "friendly_name": "First Partition of Poland",
+    "year": 1772,
     "category": "diplomatic",
-    "description": "The thirteen American colonies declared independence from Britain.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/United_States_Declaration_of_Independence.jpg/330px-United_States_Declaration_of_Independence.jpg"
+    "description": "Russia, Prussia, and Austria carved up Polish territory.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Polish-Lithuanian_Commonwealth_1773-1789.PNG/330px-Polish-Lithuanian_Commonwealth_1773-1789.PNG"
+  },
+  {
+    "name": "articles-confederation",
+    "friendly_name": "Articles of Confederation",
+    "year": 1781,
+    "category": "diplomatic",
+    "description": "The first constitution of the United States was ratified.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Articles_page1.jpg/330px-Articles_page1.jpg"
+  },
+  {
+    "name": "constitutional-convention",
+    "friendly_name": "Constitutional Convention",
+    "year": 1787,
+    "category": "diplomatic",
+    "description": "Delegates gathered in Philadelphia to draft the US Constitution.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png"
   },
   {
     "name": "us-constitution",
@@ -367,6 +727,15 @@
     "description": "The United States adopted its constitution establishing the federal government.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Constitution_of_the_United_States%2C_page_1.jpg/330px-Constitution_of_the_United_States%2C_page_1.jpg"
+  },
+  {
+    "name": "first-fleet-australia",
+    "friendly_name": "First Fleet Arrives in Australia",
+    "year": 1788,
+    "category": "diplomatic",
+    "description": "British ships established a penal colony at Sydney Cove.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/330px-Flag_of_Australia_%28converted%29.svg.png"
   },
   {
     "name": "french-declaration-rights",
@@ -396,6 +765,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Louisiana_Purchase.png/330px-Louisiana_Purchase.png"
   },
   {
+    "name": "haitian-independence",
+    "friendly_name": "Haitian Independence",
+    "year": 1804,
+    "category": "diplomatic",
+    "description": "Haiti became the first nation founded by a successful slave revolt.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Revolucion_Haitiana.png/330px-Revolucion_Haitiana.png"
+  },
+  {
     "name": "congress-vienna",
     "friendly_name": "Congress of Vienna",
     "year": 1815,
@@ -403,6 +781,33 @@
     "description": "European powers redrew the map after Napoleon's defeat.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Europe_1815_map_en.png/330px-Europe_1815_map_en.png"
+  },
+  {
+    "name": "concert-europe",
+    "friendly_name": "Concert of Europe Established",
+    "year": 1815,
+    "category": "diplomatic",
+    "description": "Great powers agreed to maintain stability and suppress revolution.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Europe_1815_map_en.png/330px-Europe_1815_map_en.png"
+  },
+  {
+    "name": "missouri-compromise",
+    "friendly_name": "Missouri Compromise",
+    "year": 1820,
+    "category": "diplomatic",
+    "description": "Congress balanced free and slave states while admitting Missouri.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/USA_Territorial_Growth_1820_alt.jpg/330px-USA_Territorial_Growth_1820_alt.jpg"
+  },
+  {
+    "name": "latin-american-independence",
+    "friendly_name": "Latin American Independence Movements",
+    "year": 1821,
+    "category": "diplomatic",
+    "description": "Mexico and other Spanish colonies gained independence in rapid succession.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Latin_America_%28orthographic_projection%29.svg/330px-Latin_America_%28orthographic_projection%29.svg.png"
   },
   {
     "name": "monroe-doctrine",
@@ -414,13 +819,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg/330px-James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg"
   },
   {
-    "name": "abolition-slavery-uk",
-    "friendly_name": "Slavery Abolished in British Empire",
-    "year": 1833,
+    "name": "belgian-independence",
+    "friendly_name": "Belgian Independence",
+    "year": 1830,
     "category": "diplomatic",
-    "description": "Britain passed the Slavery Abolition Act, freeing slaves in most colonies.",
+    "description": "Belgium gained independence from the Netherlands after revolution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg/330px-Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg"
   },
   {
     "name": "treaty-waitangi",
@@ -432,6 +837,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/A_Maori_man_and_Joseph_Banks_exchanging_a_crayfish_for_a_piece_of_cloth%2C_c._1769.jpg/330px-A_Maori_man_and_Joseph_Banks_exchanging_a_crayfish_for_a_piece_of_cloth%2C_c._1769.jpg"
   },
   {
+    "name": "treaty-nanking",
+    "friendly_name": "Treaty of Nanking",
+    "year": 1842,
+    "category": "diplomatic",
+    "description": "China ceded Hong Kong to Britain after the First Opium War.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Signing_of_the_Treaty_of_Nanking.jpg/330px-The_Signing_of_the_Treaty_of_Nanking.jpg"
+  },
+  {
+    "name": "compromise-slavery",
+    "friendly_name": "Slavery Compromise",
+    "year": 1850,
+    "category": "diplomatic",
+    "description": "Congress attempted to balance free and slave state interests as US territories expanded.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/United_States_1849-1850.png/330px-United_States_1849-1850.png"
+  },
+  {
     "name": "red-cross-founded",
     "friendly_name": "Red Cross Founded",
     "year": 1863,
@@ -441,7 +864,16 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Croixrouge_logos.jpg/330px-Croixrouge_logos.jpg"
   },
   {
-    "name": "geneva-convention-1864",
+    "name": "emancipation-proclamation",
+    "friendly_name": "Emancipation Proclamation",
+    "year": 1863,
+    "category": "diplomatic",
+    "description": "Lincoln declared slaves in Confederate states to be free.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hand_colored_Emancipation_The_Past_and_the_Future_by_Thomas_Nast.jpg/330px-Hand_colored_Emancipation_The_Past_and_the_Future_by_Thomas_Nast.jpg"
+  },
+  {
+    "name": "geneva-convention-first",
     "friendly_name": "First Geneva Convention",
     "year": 1864,
     "category": "diplomatic",
@@ -468,6 +900,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Dauphin_Map_of_Canada_-_circa_1543_-_Project_Gutenberg_etext_20110.jpg/330px-Dauphin_Map_of_Canada_-_circa_1543_-_Project_Gutenberg_etext_20110.jpg"
   },
   {
+    "name": "british-north-america-act",
+    "friendly_name": "British North America Act",
+    "year": 1867,
+    "category": "diplomatic",
+    "description": "The act created the Dominion of Canada from British colonies.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/330px-Flag_of_the_United_Kingdom.svg.png"
+  },
+  {
     "name": "meiji-restoration",
     "friendly_name": "Meiji Restoration",
     "year": 1868,
@@ -475,6 +916,15 @@
     "description": "Japan restored imperial rule and began rapid modernization.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Emperor_Meiji_by_Takahashi_Yuichi.jpg/330px-Emperor_Meiji_by_Takahashi_Yuichi.jpg"
+  },
+  {
+    "name": "triple-alliance",
+    "friendly_name": "Triple Alliance Formed",
+    "year": 1882,
+    "category": "diplomatic",
+    "description": "Germany, Austria-Hungary, and Italy formed a mutual defense pact.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Map_Europe_alliances_1914-en.svg/330px-Map_Europe_alliances_1914-en.svg.png"
   },
   {
     "name": "berlin-conference",
@@ -522,6 +972,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Entente_Cordiale_dancing.jpg/330px-Entente_Cordiale_dancing.jpg"
   },
   {
+    "name": "triple-entente",
+    "friendly_name": "Triple Entente",
+    "year": 1907,
+    "category": "diplomatic",
+    "description": "Britain, France, and Russia aligned against the Triple Alliance.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Map_Europe_alliances_1914-en.svg/330px-Map_Europe_alliances_1914-en.svg.png"
+  },
+  {
     "name": "naacp-founded",
     "friendly_name": "NAACP Founded",
     "year": 1909,
@@ -540,13 +999,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/330px-Flag_of_the_Republic_of_China.svg.png"
   },
   {
-    "name": "treaty-versailles",
-    "friendly_name": "Treaty of Versailles",
+    "name": "ilo-founded",
+    "friendly_name": "International Labour Organization Founded",
     "year": 1919,
     "category": "diplomatic",
-    "description": "The peace treaty officially ended World War I and created the League of Nations.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/treaty-versailles_nn5shp?_a=BAMAMiTC0"
+    "description": "The ILO was created to promote workers' rights worldwide.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/International_Labour_Organization_Logo.svg/320px-International_Labour_Organization_Logo.svg.png"
   },
   {
     "name": "league-of-nations",
@@ -585,6 +1044,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/330px-Flag_of_the_Soviet_Union.svg.png"
   },
   {
+    "name": "washington-naval-treaty",
+    "friendly_name": "Washington Naval Treaty",
+    "year": 1922,
+    "category": "diplomatic",
+    "description": "Major powers agreed to limit their naval fleets to prevent an arms race.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Washington_Naval_Treaty.jpg/330px-Washington_Naval_Treaty.jpg"
+  },
+  {
+    "name": "dawes-plan",
+    "friendly_name": "Dawes Plan",
+    "year": 1924,
+    "category": "diplomatic",
+    "description": "The plan restructured German reparations payments after World War I.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Paris_Peace_Conference.jpg/330px-Paris_Peace_Conference.jpg"
+  },
+  {
     "name": "locarno-treaties",
     "friendly_name": "Locarno Treaties",
     "year": 1925,
@@ -601,6 +1078,15 @@
     "description": "Nations agreed to renounce war as an instrument of national policy.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Kellogg%E2%80%93Briand_Pact_%281928%29.jpg/330px-Kellogg%E2%80%93Briand_Pact_%281928%29.jpg"
+  },
+  {
+    "name": "statute-westminster",
+    "friendly_name": "Statute of Westminster",
+    "year": 1931,
+    "category": "diplomatic",
+    "description": "British dominions gained legislative independence from the UK Parliament.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/330px-Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
   },
   {
     "name": "new-deal",
@@ -621,6 +1107,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
   },
   {
+    "name": "anti-comintern-pact",
+    "friendly_name": "Anti-Comintern Pact",
+    "year": 1936,
+    "category": "diplomatic",
+    "description": "Germany and Japan agreed to oppose international communism.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Anti-Comintern_Pact_signing_1936.jpg/330px-Anti-Comintern_Pact_signing_1936.jpg"
+  },
+  {
+    "name": "atlantic-charter",
+    "friendly_name": "Atlantic Charter",
+    "year": 1941,
+    "category": "diplomatic",
+    "description": "Churchill and Roosevelt outlined Allied war aims and postwar goals.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/President_Roosevelt_and_Winston_Churchill_seated_on_the_quarterdeck_of_HMS_PRINCE_OF_WALES_for_a_Sunday_service_during_the_Atlantic_Conference%2C_10_August_1941._A4816.jpg/330px-thumbnail.jpg"
+  },
+  {
     "name": "imf-world-bank",
     "friendly_name": "IMF and World Bank Established",
     "year": 1944,
@@ -639,22 +1143,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/330px-Flag_of_the_United_Nations.svg.png"
   },
   {
-    "name": "nuremberg-trials",
-    "friendly_name": "Nuremberg Trials Begin",
+    "name": "yalta-conference",
+    "friendly_name": "Yalta Conference",
     "year": 1945,
     "category": "diplomatic",
-    "description": "Nazi war criminals were prosecuted in the first international war crimes tribunal.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Color_photograph_of_judges%27_bench_at_IMT.jpg/330px-Color_photograph_of_judges%27_bench_at_IMT.jpg"
+    "description": "Allied leaders met to plan the postwar reorganization of Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg/330px-Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg"
   },
   {
-    "name": "united-nations",
-    "friendly_name": "United Nations Founded",
+    "name": "potsdam-conference",
+    "friendly_name": "Potsdam Conference",
     "year": 1945,
     "category": "diplomatic",
-    "description": "The UN was established to maintain international peace and security.",
+    "description": "Allied leaders finalized postwar arrangements for Germany and Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Flag_of_the_United_Nations.svg/330px-Flag_of_the_United_Nations.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg/330px-Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg"
   },
   {
     "name": "indian-independence",
@@ -664,6 +1168,24 @@
     "description": "India gained independence from British rule and was partitioned with Pakistan.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/India%2C_by_British_Information_Services%2C_1944_restored_version.jpg/330px-India%2C_by_British_Information_Services%2C_1944_restored_version.jpg"
+  },
+  {
+    "name": "marshall-plan",
+    "friendly_name": "Marshall Plan Announced",
+    "year": 1947,
+    "category": "diplomatic",
+    "description": "The US announced massive economic aid to rebuild Western Europe.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
+  },
+  {
+    "name": "gatt-established",
+    "friendly_name": "GATT Established",
+    "year": 1947,
+    "category": "diplomatic",
+    "description": "Nations agreed to reduce tariffs and promote free trade.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/WTO_members_and_observers.svg/330px-WTO_members_and_observers.svg.png"
   },
   {
     "name": "universal-declaration-rights",
@@ -684,6 +1206,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/330px-Flag_of_Israel.svg.png"
   },
   {
+    "name": "berlin-airlift",
+    "friendly_name": "Berlin Airlift Begins",
+    "year": 1948,
+    "category": "diplomatic",
+    "description": "Western powers supplied West Berlin by air during the Soviet blockade.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/C-54landingattemplehof.jpg/330px-C-54landingattemplehof.jpg"
+  },
+  {
     "name": "nato-founded",
     "friendly_name": "NATO Founded",
     "year": 1949,
@@ -693,7 +1224,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/NATO_OTAN_landscape_logo.svg/330px-NATO_OTAN_landscape_logo.svg.png"
   },
   {
-    "name": "geneva-conventions-1949",
+    "name": "geneva-conventions-modern",
     "friendly_name": "Geneva Conventions Updated",
     "year": 1949,
     "category": "diplomatic",
@@ -720,6 +1251,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Schoolgirls_in_Bamozai.JPG/330px-Schoolgirls_in_Bamozai.JPG"
   },
   {
+    "name": "seato-formed",
+    "friendly_name": "SEATO Formed",
+    "year": 1954,
+    "category": "diplomatic",
+    "description": "Southeast Asian nations formed a collective defense treaty with Western powers.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_SEATO.svg/320px-Flag_of_SEATO.svg.png"
+  },
+  {
     "name": "warsaw-pact",
     "friendly_name": "Warsaw Pact Founded",
     "year": 1955,
@@ -727,6 +1267,15 @@
     "description": "The Soviet Union and Eastern Bloc formed a military alliance.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Warsaw_Pact_in_1990_%28orthographic_projection%29.svg/330px-Warsaw_Pact_in_1990_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "bandung-conference",
+    "friendly_name": "Bandung Conference",
+    "year": 1955,
+    "category": "diplomatic",
+    "description": "African and Asian nations met to promote cooperation and oppose colonialism.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Plenary_session_during_the_Bandung_Conference.png/330px-Plenary_session_during_the_Bandung_Conference.png"
   },
   {
     "name": "treaty-rome",
@@ -738,8 +1287,62 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Treaty_of_Rome.jpg/330px-Treaty_of_Rome.jpg"
   },
   {
-    "name": "civil-rights-act-1964",
-    "friendly_name": "Civil Rights Act of 1964",
+    "name": "efta-formed",
+    "friendly_name": "EFTA Formed",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Seven European nations formed a free trade alternative to the EEC.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/EFTA_logo.svg/320px-EFTA_logo.svg.png"
+  },
+  {
+    "name": "opec-founded",
+    "friendly_name": "OPEC Founded",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Oil-producing nations formed a cartel to control petroleum prices.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_OPEC.svg/330px-Flag_of_OPEC.svg.png"
+  },
+  {
+    "name": "decolonization-africa",
+    "friendly_name": "African Year of Independence",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Seventeen African nations gained independence from European colonial powers.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg/330px-Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg"
+  },
+  {
+    "name": "non-aligned-movement",
+    "friendly_name": "Non-Aligned Movement Founded",
+    "year": 1961,
+    "category": "diplomatic",
+    "description": "Nations refused to align with either Cold War superpower bloc.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NAM_Members.svg/330px-NAM_Members.svg.png"
+  },
+  {
+    "name": "cuban-missile-resolution",
+    "friendly_name": "Cuban Missile Crisis Resolution",
+    "year": 1962,
+    "category": "diplomatic",
+    "description": "The US and USSR reached an agreement to remove missiles from Cuba and Turkey.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/PGM-19A_Jupiter_missile-02.jpg/330px-PGM-19A_Jupiter_missile-02.jpg"
+  },
+  {
+    "name": "test-ban-treaty",
+    "friendly_name": "Nuclear Test Ban Treaty",
+    "year": 1963,
+    "category": "diplomatic",
+    "description": "The US, UK, and USSR agreed to ban nuclear tests in the atmosphere.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PTBT_Participation.svg/330px-PTBT_Participation.svg.png"
+  },
+  {
+    "name": "civil-rights-act",
+    "friendly_name": "Civil Rights Act",
     "year": 1964,
     "category": "diplomatic",
     "description": "The US outlawed discrimination based on race, color, religion, sex, or national origin.",
@@ -765,6 +1368,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Outer_Space_Treaty_parties.svg/330px-Outer_Space_Treaty_parties.svg.png"
   },
   {
+    "name": "asean-founded",
+    "friendly_name": "ASEAN Founded",
+    "year": 1967,
+    "category": "diplomatic",
+    "description": "Five Southeast Asian nations formed an association for regional cooperation.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/ASEAN_Flag.svg/320px-ASEAN_Flag.svg.png"
+  },
+  {
     "name": "nuclear-non-proliferation",
     "friendly_name": "Nuclear Non-Proliferation Treaty",
     "year": 1968,
@@ -774,6 +1386,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/NPT_parties.svg/330px-NPT_parties.svg.png"
   },
   {
+    "name": "china-un-seat",
+    "friendly_name": "PRC Takes UN Seat",
+    "year": 1971,
+    "category": "diplomatic",
+    "description": "The People's Republic of China replaced Taiwan on the UN Security Council.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Voting_res_2758.svg/330px-Voting_res_2758.svg.png"
+  },
+  {
     "name": "nixon-china",
     "friendly_name": "Nixon Visits China",
     "year": 1972,
@@ -781,6 +1402,24 @@
     "description": "President Nixon's visit opened diplomatic relations between the US and China.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/President_Richard_Nixon_and_Premier_Chou_En-Lai_Shake_Hands_at_the_Nixons%27_Arrival_in_Peking%2C_China.jpg/330px-President_Richard_Nixon_and_Premier_Chou_En-Lai_Shake_Hands_at_the_Nixons%27_Arrival_in_Peking%2C_China.jpg"
+  },
+  {
+    "name": "salt-i",
+    "friendly_name": "SALT I Signed",
+    "year": 1972,
+    "category": "diplomatic",
+    "description": "The US and USSR signed the first Strategic Arms Limitation Treaty.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Nixon_and_Brezhnev_signing_SALT_I.jpg/330px-Nixon_and_Brezhnev_signing_SALT_I.jpg"
+  },
+  {
+    "name": "helsinki-accords",
+    "friendly_name": "Helsinki Accords",
+    "year": 1975,
+    "category": "diplomatic",
+    "description": "East and West agreed on security, cooperation, and human rights.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Schlussakte_Helsinki_1975_%28KSZE%29.jpg/330px-Schlussakte_Helsinki_1975_%28KSZE%29.jpg"
   },
   {
     "name": "camp-david-accords",
@@ -801,6 +1440,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/330px-Flag_of_Iran_%28official%29.svg.png"
   },
   {
+    "name": "salt-ii",
+    "friendly_name": "SALT II Signed",
+    "year": 1979,
+    "category": "diplomatic",
+    "description": "The US and USSR agreed to further limits on nuclear weapons.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/330px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg"
+  },
+  {
+    "name": "egypt-israel-peace",
+    "friendly_name": "Egypt-Israel Peace Treaty",
+    "year": 1979,
+    "category": "diplomatic",
+    "description": "Egypt became the first Arab nation to sign a peace treaty with Israel.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Sadat_Carter_Begin_handshake_%28cropped%29_-_USNWR.jpg/330px-Sadat_Carter_Begin_handshake_%28cropped%29_-_USNWR.jpg"
+  },
+  {
+    "name": "solidarity-poland",
+    "friendly_name": "Solidarity Union Founded",
+    "year": 1980,
+    "category": "diplomatic",
+    "description": "Polish workers formed the first independent labor union in a Soviet bloc country.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/8/83/SolidarityFist.jpg"
+  },
+  {
     "name": "european-union-precursor",
     "friendly_name": "Single European Act",
     "year": 1986,
@@ -819,22 +1485,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlinermauer.jpg/330px-Berlinermauer.jpg"
   },
   {
-    "name": "german-reunification",
-    "friendly_name": "German Reunification",
-    "year": 1990,
-    "category": "diplomatic",
-    "description": "East and West Germany reunited as a single nation.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg/330px-West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg"
-  },
-  {
-    "name": "soviet-union-dissolves",
-    "friendly_name": "Soviet Union Dissolves",
+    "name": "start-i",
+    "friendly_name": "START I Signed",
     "year": 1991,
     "category": "diplomatic",
-    "description": "The USSR officially dissolved into fifteen independent republics.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/330px-Flag_of_the_Soviet_Union.svg.png"
+    "description": "The US and USSR signed the first Strategic Arms Reduction Treaty.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg/330px-George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg"
   },
   {
     "name": "maastricht-treaty",
@@ -855,15 +1512,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg/330px-Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg"
   },
   {
-    "name": "apartheid-ends",
-    "friendly_name": "Apartheid Ends in South Africa",
-    "year": 1994,
-    "category": "diplomatic",
-    "description": "South Africa held its first democratic elections, ending racial segregation.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Monomotapa_Map.jpg/330px-Monomotapa_Map.jpg"
-  },
-  {
     "name": "wto-founded",
     "friendly_name": "World Trade Organization Founded",
     "year": 1995,
@@ -873,6 +1521,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/WTO_members_and_observers.svg/330px-WTO_members_and_observers.svg.png"
   },
   {
+    "name": "dayton-accords",
+    "friendly_name": "Dayton Accords",
+    "year": 1995,
+    "category": "diplomatic",
+    "description": "The agreement ended the war in Bosnia and Herzegovina.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/DaytonAgreement.jpg/330px-DaytonAgreement.jpg"
+  },
+  {
+    "name": "schengen-area",
+    "friendly_name": "Schengen Area Expands",
+    "year": 1995,
+    "category": "diplomatic",
+    "description": "European nations abolished border controls for passport-free travel.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_the_Schengen_Area.svg/330px-Map_of_the_Schengen_Area.svg.png"
+  },
+  {
+    "name": "kyoto-protocol",
+    "friendly_name": "Kyoto Protocol",
+    "year": 1997,
+    "category": "diplomatic",
+    "description": "Nations agreed to reduce greenhouse gas emissions to combat climate change.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kyoto_Protocol_parties.svg/330px-Kyoto_Protocol_parties.svg.png"
+  },
+  {
     "name": "good-friday-agreement",
     "friendly_name": "Good Friday Agreement",
     "year": 1998,
@@ -880,6 +1555,15 @@
     "description": "A peace agreement largely ended decades of conflict in Northern Ireland.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristo_crucificado.jpg/330px-Cristo_crucificado.jpg"
+  },
+  {
+    "name": "rome-statute-icc",
+    "friendly_name": "Rome Statute Adopted",
+    "year": 1998,
+    "category": "diplomatic",
+    "description": "Nations agreed to establish the International Criminal Court.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ICC_member_states.svg/330px-ICC_member_states.svg.png"
   },
   {
     "name": "euro-introduced",
@@ -909,607 +1593,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_the_African_Union.svg/330px-Flag_of_the_African_Union.svg.png"
   },
   {
-    "name": "paris-climate-agreement",
-    "friendly_name": "Paris Climate Agreement",
-    "year": 2015,
+    "name": "eu-eastern-expansion",
+    "friendly_name": "EU Eastern Expansion",
+    "year": 2004,
     "category": "diplomatic",
-    "description": "Nearly 200 nations agreed to limit global warming to well below 2°C.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ParisAgreement.svg/330px-ParisAgreement.svg.png"
-  },
-  {
-    "name": "paris-agreement",
-    "friendly_name": "Paris Climate Agreement",
-    "year": 2015,
-    "category": "diplomatic",
-    "description": "Nations agreed to limit global warming to 1.5 degrees Celsius.",
+    "description": "Ten countries joined the European Union in its largest single expansion.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ParisAgreement.svg/330px-ParisAgreement.svg.png"
-  },
-  {
-    "name": "brexit",
-    "friendly_name": "Brexit Completed",
-    "year": 2020,
-    "category": "diplomatic",
-    "description": "The United Kingdom officially left the European Union.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Location_map_of_the_United_Kingdom_and_the_European_Union.svg/330px-Location_map_of_the_United_Kingdom_and_the_European_Union.svg.png"
-  },
-  {
-    "name": "league-corinth",
-    "friendly_name": "League of Corinth Formed",
-    "year": -337,
-    "category": "diplomatic",
-    "description": "Philip II united Greek city-states in an alliance against Persia.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Map_Macedonia_336_BC-en.svg/330px-Map_Macedonia_336_BC-en.svg.png"
-  },
-  {
-    "name": "punic-treaty",
-    "friendly_name": "End of First Punic War",
-    "year": -241,
-    "category": "diplomatic",
-    "description": "Rome and Carthage signed a treaty ending 23 years of conflict over Sicily.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/First_Punic_War_264_BC_v3.png/330px-First_Punic_War_264_BC_v3.png"
-  },
-  {
-    "name": "treaty-apamea",
-    "friendly_name": "Treaty of Apamea",
-    "year": -188,
-    "category": "diplomatic",
-    "description": "Rome imposed terms on the Seleucid Empire after defeating Antiochus III.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Treaty_of_Apamea.png/330px-Treaty_of_Apamea.png"
-  },
-  {
-    "name": "pax-romana",
-    "friendly_name": "Pax Romana Begins",
-    "year": -27,
-    "category": "diplomatic",
-    "description": "Augustus established a 200-year period of relative peace across the Roman Empire.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/320px-Roman_SPQR_banner.svg.png"
-  },
-  {
-    "name": "edict-caracalla",
-    "friendly_name": "Edict of Caracalla",
-    "year": 212,
-    "category": "diplomatic",
-    "description": "Roman citizenship was extended to all free inhabitants of the empire.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg/330px-Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg"
-  },
-  {
-    "name": "diocletian-tetrarchy",
-    "friendly_name": "Diocletian Divides Empire",
-    "year": 286,
-    "category": "diplomatic",
-    "description": "Emperor Diocletian created the Tetrarchy to govern the vast Roman Empire.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Venice_%E2%80%93_The_Tetrarchs_03.jpg/330px-Venice_%E2%80%93_The_Tetrarchs_03.jpg"
-  },
-  {
-    "name": "constantinople-capital",
-    "friendly_name": "Constantinople Becomes Capital",
-    "year": 330,
-    "category": "diplomatic",
-    "description": "Constantine moved the Roman capital to his new city on the Bosporus.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png"
-  },
-  {
-    "name": "theodosian-code",
-    "friendly_name": "Theodosian Code",
-    "year": 438,
-    "category": "diplomatic",
-    "description": "The Eastern Roman Empire compiled all imperial laws since Constantine.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg/330px-St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg"
-  },
-  {
-    "name": "papal-states-established",
-    "friendly_name": "Papal States Established",
-    "year": 756,
-    "category": "diplomatic",
-    "description": "The Pope received territories in central Italy from the Frankish king.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_the_Papal_States_%28pre_1808%29.svg/330px-Flag_of_the_Papal_States_%28pre_1808%29.svg.png"
-  },
-  {
-    "name": "treaty-wedmore",
-    "friendly_name": "Treaty of Wedmore",
-    "year": 878,
-    "category": "diplomatic",
-    "description": "Alfred the Great made peace with Viking leader Guthrum, dividing England.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wedmore_centre.jpg/330px-Wedmore_centre.jpg"
-  },
-  {
-    "name": "capetian-dynasty",
-    "friendly_name": "Capetian Dynasty Begins",
-    "year": 987,
-    "category": "diplomatic",
-    "description": "Hugh Capet founded the dynasty that would rule France for 800 years.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/SceauHuguesCapet_%28cropped%29.PNG"
-  },
-  {
-    "name": "concordat-worms",
-    "friendly_name": "Concordat of Worms",
-    "year": 1122,
-    "category": "diplomatic",
-    "description": "The Pope and Holy Roman Emperor resolved the Investiture Controversy.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Urkunde_Wormser_Konkordat-bg.png/330px-Urkunde_Wormser_Konkordat-bg.png"
-  },
-  {
-    "name": "hanseatic-league",
-    "friendly_name": "Hanseatic League Forms",
-    "year": 1241,
-    "category": "diplomatic",
-    "description": "Northern German cities formed a commercial alliance dominating Baltic trade.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg/330px-Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg"
-  },
-  {
-    "name": "golden-bull-1356",
-    "friendly_name": "Golden Bull of 1356",
-    "year": 1356,
-    "category": "diplomatic",
-    "description": "The decree established how Holy Roman Emperors would be elected.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Goldene_Bulle_Nahaufnahme.jpg/330px-Goldene_Bulle_Nahaufnahme.jpg"
-  },
-  {
-    "name": "union-kalmar",
-    "friendly_name": "Union of Kalmar",
-    "year": 1397,
-    "category": "diplomatic",
-    "description": "Denmark, Norway, and Sweden united under a single monarch.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kalmar_Union_ca._1400.svg/330px-Kalmar_Union_ca._1400.svg.png"
-  },
-  {
-    "name": "union-krewo",
-    "friendly_name": "Union of Krewo",
-    "year": 1385,
-    "category": "diplomatic",
-    "description": "Poland and Lithuania formed a personal union through royal marriage.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Union_of_Krewo.jpg/330px-Union_of_Krewo.jpg"
-  },
-  {
-    "name": "treaty-alcacovas",
-    "friendly_name": "Treaty of Alcáçovas",
-    "year": 1479,
-    "category": "diplomatic",
-    "description": "Spain and Portugal divided Atlantic territories before Columbus's voyage.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Alca%C3%A7ovas1.jpg/330px-Alca%C3%A7ovas1.jpg"
-  },
-  {
-    "name": "league-cambrai",
-    "friendly_name": "League of Cambrai",
-    "year": 1508,
-    "category": "diplomatic",
-    "description": "Major European powers allied against Venice's territorial expansion.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italia._Cambiamenti_territoriali_%281495-1535%29.png/330px-Italia._Cambiamenti_territoriali_%281495-1535%29.png"
-  },
-  {
-    "name": "treaty-madrid-1526",
-    "friendly_name": "Treaty of Madrid",
-    "year": 1526,
-    "category": "diplomatic",
-    "description": "Captured French King Francis I ceded territories to Charles V.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg/330px-Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg"
-  },
-  {
-    "name": "peace-cateau-cambresis",
-    "friendly_name": "Peace of Cateau-Cambrésis",
-    "year": 1559,
-    "category": "diplomatic",
-    "description": "France and Spain ended decades of Italian Wars with a comprehensive treaty.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cateau-Cambresis.jpg/330px-Cateau-Cambresis.jpg"
-  },
-  {
-    "name": "union-utrecht",
-    "friendly_name": "Union of Utrecht",
-    "year": 1579,
-    "category": "diplomatic",
-    "description": "Northern Dutch provinces formed a defensive union against Spain.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Sol_Lumen.jpg/330px-Sol_Lumen.jpg"
-  },
-  {
-    "name": "treaty-london-1604",
-    "friendly_name": "Treaty of London",
-    "year": 1604,
-    "category": "diplomatic",
-    "description": "England and Spain ended nearly 20 years of war.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/330px-London_Skyline_%28125508655%29.jpeg"
-  },
-  {
-    "name": "peace-pyrenees",
-    "friendly_name": "Peace of the Pyrenees",
-    "year": 1659,
-    "category": "diplomatic",
-    "description": "France and Spain ended 24 years of war, establishing French dominance.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Traite-Pyrenees.jpg/330px-Traite-Pyrenees.jpg"
-  },
-  {
-    "name": "treaty-breda",
-    "friendly_name": "Treaty of Breda",
-    "year": 1667,
-    "category": "diplomatic",
-    "description": "England gained New Amsterdam (New York) from the Dutch.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/2010-05-21-breda-by-RalfR-06.jpg/330px-2010-05-21-breda-by-RalfR-06.jpg"
-  },
-  {
-    "name": "treaty-nijmegen",
-    "friendly_name": "Treaty of Nijmegen",
-    "year": 1678,
-    "category": "diplomatic",
-    "description": "A series of treaties ended the Franco-Dutch War.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Vrede_van_Nijmegen_-_De_ondertekening_van_de_Vrede_tussen_Frankrijk_en_Spanje_door_Henri_Gascard_%281635-1701%29.jpg/330px-Vrede_van_Nijmegen_-_De_ondertekening_van_de_Vrede_tussen_Frankrijk_en_Spanje_door_Henri_Gascard_%281635-1701%29.jpg"
-  },
-  {
-    "name": "treaty-ryswick",
-    "friendly_name": "Treaty of Ryswick",
-    "year": 1697,
-    "category": "diplomatic",
-    "description": "The treaty ended the Nine Years' War between France and the Grand Alliance.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rijswijk_Netherlands_-_Huis_ter_Nieuwburg_by_P._Schenck.jpg/330px-Rijswijk_Netherlands_-_Huis_ter_Nieuwburg_by_P._Schenck.jpg"
-  },
-  {
-    "name": "treaty-utrecht",
-    "friendly_name": "Treaty of Utrecht",
-    "year": 1713,
-    "category": "diplomatic",
-    "description": "The treaties ending the War of Spanish Succession reshaped European power.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/The_Treaty_of_Utrecht_%28clean%29.jpg/330px-The_Treaty_of_Utrecht_%28clean%29.jpg"
-  },
-  {
-    "name": "treaty-aix-la-chapelle",
-    "friendly_name": "Treaty of Aix-la-Chapelle",
-    "year": 1748,
-    "category": "diplomatic",
-    "description": "The treaty ended the War of Austrian Succession.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg/330px-Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg"
-  },
-  {
-    "name": "articles-confederation",
-    "friendly_name": "Articles of Confederation",
-    "year": 1781,
-    "category": "diplomatic",
-    "description": "The first constitution of the United States was ratified.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Articles_page1.jpg/330px-Articles_page1.jpg"
-  },
-  {
-    "name": "constitutional-convention",
-    "friendly_name": "Constitutional Convention",
-    "year": 1787,
-    "category": "diplomatic",
-    "description": "Delegates gathered in Philadelphia to draft the US Constitution.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png"
-  },
-  {
-    "name": "haitian-independence",
-    "friendly_name": "Haitian Independence",
-    "year": 1804,
-    "category": "diplomatic",
-    "description": "Haiti became the first nation founded by a successful slave revolt.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Revolucion_Haitiana.png/330px-Revolucion_Haitiana.png"
-  },
-  {
-    "name": "concert-europe",
-    "friendly_name": "Concert of Europe Established",
-    "year": 1815,
-    "category": "diplomatic",
-    "description": "Great powers agreed to maintain stability and suppress revolution.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Europe_1815_map_en.png/330px-Europe_1815_map_en.png"
-  },
-  {
-    "name": "missouri-compromise",
-    "friendly_name": "Missouri Compromise",
-    "year": 1820,
-    "category": "diplomatic",
-    "description": "Congress balanced free and slave states while admitting Missouri.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/USA_Territorial_Growth_1820_alt.jpg/330px-USA_Territorial_Growth_1820_alt.jpg"
-  },
-  {
-    "name": "belgian-independence",
-    "friendly_name": "Belgian Independence",
-    "year": 1830,
-    "category": "diplomatic",
-    "description": "Belgium gained independence from the Netherlands after revolution.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg/330px-Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg"
-  },
-  {
-    "name": "treaty-nanking",
-    "friendly_name": "Treaty of Nanking",
-    "year": 1842,
-    "category": "diplomatic",
-    "description": "China ceded Hong Kong to Britain after the First Opium War.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/The_Signing_of_the_Treaty_of_Nanking.jpg/330px-The_Signing_of_the_Treaty_of_Nanking.jpg"
-  },
-  {
-    "name": "compromise-1850",
-    "friendly_name": "Compromise of 1850",
-    "year": 1850,
-    "category": "diplomatic",
-    "description": "Congress attempted to balance free and slave interests as territories expanded.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/United_States_1849-1850.png/330px-United_States_1849-1850.png"
-  },
-  {
-    "name": "emancipation-proclamation",
-    "friendly_name": "Emancipation Proclamation",
-    "year": 1863,
-    "category": "diplomatic",
-    "description": "Lincoln declared slaves in Confederate states to be free.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hand_colored_Emancipation_The_Past_and_the_Future_by_Thomas_Nast.jpg/330px-Hand_colored_Emancipation_The_Past_and_the_Future_by_Thomas_Nast.jpg"
-  },
-  {
-    "name": "british-north-america-act",
-    "friendly_name": "British North America Act",
-    "year": 1867,
-    "category": "diplomatic",
-    "description": "The act created the Dominion of Canada from British colonies.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/330px-Flag_of_the_United_Kingdom.svg.png"
-  },
-  {
-    "name": "triple-alliance",
-    "friendly_name": "Triple Alliance Formed",
-    "year": 1882,
-    "category": "diplomatic",
-    "description": "Germany, Austria-Hungary, and Italy formed a mutual defense pact.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Map_Europe_alliances_1914-en.svg/330px-Map_Europe_alliances_1914-en.svg.png"
-  },
-  {
-    "name": "triple-entente",
-    "friendly_name": "Triple Entente",
-    "year": 1907,
-    "category": "diplomatic",
-    "description": "Britain, France, and Russia aligned against the Triple Alliance.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Map_Europe_alliances_1914-en.svg/330px-Map_Europe_alliances_1914-en.svg.png"
-  },
-  {
-    "name": "ilo-founded",
-    "friendly_name": "International Labour Organization Founded",
-    "year": 1919,
-    "category": "diplomatic",
-    "description": "The ILO was created to promote workers' rights worldwide.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/International_Labour_Organization_Logo.svg/320px-International_Labour_Organization_Logo.svg.png"
-  },
-  {
-    "name": "washington-naval-treaty",
-    "friendly_name": "Washington Naval Treaty",
-    "year": 1922,
-    "category": "diplomatic",
-    "description": "Major powers agreed to limit their naval fleets to prevent an arms race.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Washington_Naval_Treaty.jpg/330px-Washington_Naval_Treaty.jpg"
-  },
-  {
-    "name": "dawes-plan",
-    "friendly_name": "Dawes Plan",
-    "year": 1924,
-    "category": "diplomatic",
-    "description": "The plan restructured German reparations payments after World War I.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Paris_Peace_Conference.jpg/330px-Paris_Peace_Conference.jpg"
-  },
-  {
-    "name": "statute-westminster",
-    "friendly_name": "Statute of Westminster",
-    "year": 1931,
-    "category": "diplomatic",
-    "description": "British dominions gained legislative independence from the UK Parliament.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/330px-Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
-  },
-  {
-    "name": "anti-comintern-pact",
-    "friendly_name": "Anti-Comintern Pact",
-    "year": 1936,
-    "category": "diplomatic",
-    "description": "Germany and Japan agreed to oppose international communism.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Anti-Comintern_Pact_signing_1936.jpg/330px-Anti-Comintern_Pact_signing_1936.jpg"
-  },
-  {
-    "name": "atlantic-charter",
-    "friendly_name": "Atlantic Charter",
-    "year": 1941,
-    "category": "diplomatic",
-    "description": "Churchill and Roosevelt outlined Allied war aims and postwar goals.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/President_Roosevelt_and_Winston_Churchill_seated_on_the_quarterdeck_of_HMS_PRINCE_OF_WALES_for_a_Sunday_service_during_the_Atlantic_Conference%2C_10_August_1941._A4816.jpg/330px-thumbnail.jpg"
-  },
-  {
-    "name": "yalta-conference",
-    "friendly_name": "Yalta Conference",
-    "year": 1945,
-    "category": "diplomatic",
-    "description": "Allied leaders met to plan the postwar reorganization of Europe.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg/330px-Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg"
-  },
-  {
-    "name": "potsdam-conference",
-    "friendly_name": "Potsdam Conference",
-    "year": 1945,
-    "category": "diplomatic",
-    "description": "Allied leaders finalized postwar arrangements for Germany and Europe.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg/330px-Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg"
-  },
-  {
-    "name": "marshall-plan",
-    "friendly_name": "Marshall Plan Announced",
-    "year": 1947,
-    "category": "diplomatic",
-    "description": "The US announced massive economic aid to rebuild Western Europe.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
-  },
-  {
-    "name": "gatt-established",
-    "friendly_name": "GATT Established",
-    "year": 1947,
-    "category": "diplomatic",
-    "description": "Nations agreed to reduce tariffs and promote free trade.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/WTO_members_and_observers.svg/330px-WTO_members_and_observers.svg.png"
-  },
-  {
-    "name": "berlin-airlift",
-    "friendly_name": "Berlin Airlift Begins",
-    "year": 1948,
-    "category": "diplomatic",
-    "description": "Western powers supplied West Berlin by air during the Soviet blockade.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/C-54landingattemplehof.jpg/330px-C-54landingattemplehof.jpg"
-  },
-  {
-    "name": "seato-formed",
-    "friendly_name": "SEATO Formed",
-    "year": 1954,
-    "category": "diplomatic",
-    "description": "Southeast Asian nations formed a collective defense treaty with Western powers.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Flag_of_SEATO.svg/320px-Flag_of_SEATO.svg.png"
-  },
-  {
-    "name": "bandung-conference",
-    "friendly_name": "Bandung Conference",
-    "year": 1955,
-    "category": "diplomatic",
-    "description": "African and Asian nations met to promote cooperation and oppose colonialism.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Plenary_session_during_the_Bandung_Conference.png/330px-Plenary_session_during_the_Bandung_Conference.png"
-  },
-  {
-    "name": "efta-formed",
-    "friendly_name": "EFTA Formed",
-    "year": 1960,
-    "category": "diplomatic",
-    "description": "Seven European nations formed a free trade alternative to the EEC.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/EFTA_logo.svg/320px-EFTA_logo.svg.png"
-  },
-  {
-    "name": "non-aligned-movement",
-    "friendly_name": "Non-Aligned Movement Founded",
-    "year": 1961,
-    "category": "diplomatic",
-    "description": "Nations refused to align with either Cold War superpower bloc.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/NAM_Members.svg/330px-NAM_Members.svg.png"
-  },
-  {
-    "name": "test-ban-treaty",
-    "friendly_name": "Nuclear Test Ban Treaty",
-    "year": 1963,
-    "category": "diplomatic",
-    "description": "The US, UK, and USSR agreed to ban nuclear tests in the atmosphere.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/PTBT_Participation.svg/330px-PTBT_Participation.svg.png"
-  },
-  {
-    "name": "salt-i",
-    "friendly_name": "SALT I Signed",
-    "year": 1972,
-    "category": "diplomatic",
-    "description": "The US and USSR agreed to limit strategic nuclear weapons.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Richard_Nixon_presidential_portrait_%281%29.jpg/330px-Richard_Nixon_presidential_portrait_%281%29.jpg"
-  },
-  {
-    "name": "helsinki-accords",
-    "friendly_name": "Helsinki Accords",
-    "year": 1975,
-    "category": "diplomatic",
-    "description": "East and West agreed on security, cooperation, and human rights.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Schlussakte_Helsinki_1975_%28KSZE%29.jpg/330px-Schlussakte_Helsinki_1975_%28KSZE%29.jpg"
-  },
-  {
-    "name": "salt-ii",
-    "friendly_name": "SALT II Signed",
-    "year": 1979,
-    "category": "diplomatic",
-    "description": "The US and USSR agreed to further limits on nuclear weapons.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg/330px-Jimmy_Carter_Official_Portrait2_%283x4_cropped%29.jpg"
-  },
-  {
-    "name": "start-i",
-    "friendly_name": "START I Signed",
-    "year": 1991,
-    "category": "diplomatic",
-    "description": "The US and USSR agreed to reduce strategic nuclear arsenals.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg/330px-George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg"
-  },
-  {
-    "name": "dayton-accords",
-    "friendly_name": "Dayton Accords",
-    "year": 1995,
-    "category": "diplomatic",
-    "description": "The agreement ended the war in Bosnia and Herzegovina.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/DaytonAgreement.jpg/330px-DaytonAgreement.jpg"
-  },
-  {
-    "name": "kyoto-protocol",
-    "friendly_name": "Kyoto Protocol",
-    "year": 1997,
-    "category": "diplomatic",
-    "description": "Nations agreed to reduce greenhouse gas emissions to combat climate change.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kyoto_Protocol_parties.svg/330px-Kyoto_Protocol_parties.svg.png"
-  },
-  {
-    "name": "schengen-area",
-    "friendly_name": "Schengen Area Expands",
-    "year": 1995,
-    "category": "diplomatic",
-    "description": "European nations abolished border controls for passport-free travel.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_of_the_Schengen_Area.svg/330px-Map_of_the_Schengen_Area.svg.png"
-  },
-  {
-    "name": "rome-statute-icc",
-    "friendly_name": "Rome Statute Adopted",
-    "year": 1998,
-    "category": "diplomatic",
-    "description": "Nations agreed to establish the International Criminal Court.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/ICC_member_states.svg/330px-ICC_member_states.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/EU25-2004_European_Union_map_enlargement.svg/330px-EU25-2004_European_Union_map_enlargement.svg.png"
   },
   {
     "name": "asean-charter",
@@ -1521,249 +1611,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Association_of_Southeast_Asian_Nations_%28orthographic_projection%29.svg/330px-Association_of_Southeast_Asian_Nations_%28orthographic_projection%29.svg.png"
   },
   {
-    "name": "persian-empire-cyrus",
-    "friendly_name": "Persian Empire Founded",
-    "year": -550,
-    "category": "diplomatic",
-    "description": "Cyrus the Great founded the Achaemenid Empire, the first Persian Empire.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Achaemenid_Empire_500_BCE.jpg/330px-Achaemenid_Empire_500_BCE.jpg"
-  },
-  {
-    "name": "cyrus-cylinder",
-    "friendly_name": "Cyrus Cylinder",
-    "year": -539,
-    "category": "diplomatic",
-    "description": "Cyrus the Great issued an early declaration of human rights after conquering Babylon.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cyrus_Cylinder_front.jpg/330px-Cyrus_Cylinder_front.jpg"
-  },
-  {
-    "name": "ashoka-edicts",
-    "friendly_name": "Ashoka's Edicts",
-    "year": -260,
-    "category": "diplomatic",
-    "description": "Indian emperor Ashoka proclaimed religious tolerance and non-violence.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ashoka_Lauriya_Areraj_inscription.jpg/330px-Ashoka_Lauriya_Areraj_inscription.jpg"
-  },
-  {
-    "name": "han-dynasty",
-    "friendly_name": "Han Dynasty Established",
-    "year": -206,
-    "category": "diplomatic",
-    "description": "The Han Dynasty began China's classical age of culture and governance.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png"
-  },
-  {
-    "name": "silk-road-opens",
-    "friendly_name": "Silk Road Opens",
-    "year": -130,
-    "category": "diplomatic",
-    "description": "Trade routes connecting China to the Mediterranean were established.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
-  },
-  {
-    "name": "gupta-empire",
-    "friendly_name": "Gupta Empire Founded",
-    "year": 320,
-    "category": "diplomatic",
-    "description": "The Gupta Empire began India's golden age of science and culture.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/South_Asia_historical_AD375_EN.svg/330px-South_Asia_historical_AD375_EN.svg.png"
-  },
-  {
-    "name": "umayyad-caliphate",
-    "friendly_name": "Umayyad Caliphate Founded",
-    "year": 661,
-    "category": "diplomatic",
-    "description": "The first hereditary Islamic dynasty established its capital in Damascus.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg/330px-Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg.png"
-  },
-  {
-    "name": "abbasid-caliphate",
-    "friendly_name": "Abbasid Caliphate Founded",
-    "year": 750,
-    "category": "diplomatic",
-    "description": "The Abbasids overthrew the Umayyads and moved the capital to Baghdad.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Abbasid_banner.svg/330px-Abbasid_banner.svg.png"
-  },
-  {
-    "name": "song-dynasty",
-    "friendly_name": "Song Dynasty Established",
-    "year": 960,
-    "category": "diplomatic",
-    "description": "The Song Dynasty began an era of economic prosperity and innovation in China.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/China_-_Song_Dynasty-en.svg/330px-China_-_Song_Dynasty-en.svg.png"
-  },
-  {
-    "name": "fourth-crusade-constantinople",
-    "friendly_name": "Crusaders Sack Constantinople",
-    "year": 1204,
-    "category": "diplomatic",
-    "description": "The Fourth Crusade diverted to sack the Byzantine capital.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ConquestOfConstantinopleByTheCrusadersIn1204.jpg/330px-ConquestOfConstantinopleByTheCrusadersIn1204.jpg"
-  },
-  {
-    "name": "mongol-empire",
-    "friendly_name": "Mongol Empire at Peak",
-    "year": 1279,
-    "category": "diplomatic",
-    "description": "The Mongol Empire became the largest contiguous land empire in history.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif/330px-Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif"
-  },
-  {
-    "name": "aztec-empire",
-    "friendly_name": "Aztec Empire Established",
-    "year": 1428,
-    "category": "diplomatic",
-    "description": "The Triple Alliance formed the Aztec Empire in central Mexico.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Aztec_Empire_%28orthographic_projection%29.svg/330px-Aztec_Empire_%28orthographic_projection%29.svg.png"
-  },
-  {
-    "name": "inca-empire-peak",
-    "friendly_name": "Inca Empire at Peak",
-    "year": 1493,
-    "category": "diplomatic",
-    "description": "The Inca Empire reached its greatest extent in South America.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suntur_Paucar.svg/330px-Suntur_Paucar.svg.png"
-  },
-  {
-    "name": "mughal-empire",
-    "friendly_name": "Mughal Empire Founded",
-    "year": 1526,
-    "category": "diplomatic",
-    "description": "Babur founded the dynasty that would rule most of India for 300 years.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Joppen1907India1700a.jpg/330px-Joppen1907India1700a.jpg"
-  },
-  {
-    "name": "tokugawa-shogunate",
-    "friendly_name": "Tokugawa Shogunate Begins",
-    "year": 1603,
-    "category": "diplomatic",
-    "description": "The Tokugawa clan unified Japan and began 250 years of isolation and peace.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Map_of_Japan_in_Provinces_in_time_of_Iyeyasu.jpg/330px-Map_of_Japan_in_Provinces_in_time_of_Iyeyasu.jpg"
-  },
-  {
-    "name": "qing-dynasty",
-    "friendly_name": "Qing Dynasty Established",
-    "year": 1644,
-    "category": "diplomatic",
-    "description": "The Manchu Qing Dynasty conquered Ming China and ruled until 1912.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_China_%281889%E2%80%931912%29.svg/330px-Flag_of_China_%281889%E2%80%931912%29.svg.png"
-  },
-  {
-    "name": "partition-poland",
-    "friendly_name": "First Partition of Poland",
-    "year": 1772,
-    "category": "diplomatic",
-    "description": "Russia, Prussia, and Austria carved up Polish territory.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Polish-Lithuanian_Commonwealth_1773-1789.PNG/330px-Polish-Lithuanian_Commonwealth_1773-1789.PNG"
-  },
-  {
-    "name": "first-fleet-australia",
-    "friendly_name": "First Fleet Arrives in Australia",
-    "year": 1788,
-    "category": "diplomatic",
-    "description": "British ships established a penal colony at Sydney Cove.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/330px-Flag_of_Australia_%28converted%29.svg.png"
-  },
-  {
-    "name": "latin-american-independence",
-    "friendly_name": "Latin American Independence Movements",
-    "year": 1821,
-    "category": "diplomatic",
-    "description": "Mexico and other Spanish colonies gained independence in rapid succession.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Latin_America_%28orthographic_projection%29.svg/330px-Latin_America_%28orthographic_projection%29.svg.png"
-  },
-  {
-    "name": "opec-founded",
-    "friendly_name": "OPEC Founded",
-    "year": 1960,
-    "category": "diplomatic",
-    "description": "Oil-producing nations formed a cartel to control petroleum prices.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Flag_of_OPEC.svg/330px-Flag_of_OPEC.svg.png"
-  },
-  {
-    "name": "decolonization-africa",
-    "friendly_name": "African Year of Independence",
-    "year": 1960,
-    "category": "diplomatic",
-    "description": "Seventeen African nations gained independence from European colonial powers.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg/330px-Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg"
-  },
-  {
-    "name": "cuban-missile-resolution",
-    "friendly_name": "Cuban Missile Crisis Resolution",
-    "year": 1962,
-    "category": "diplomatic",
-    "description": "The US and USSR reached an agreement to remove missiles from Cuba and Turkey.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/PGM-19A_Jupiter_missile-02.jpg/330px-PGM-19A_Jupiter_missile-02.jpg"
-  },
-  {
-    "name": "asean-founded",
-    "friendly_name": "ASEAN Founded",
-    "year": 1967,
-    "category": "diplomatic",
-    "description": "Five Southeast Asian nations formed an association for regional cooperation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/ASEAN_Flag.svg/320px-ASEAN_Flag.svg.png"
-  },
-  {
-    "name": "china-un-seat",
-    "friendly_name": "PRC Takes UN Seat",
-    "year": 1971,
-    "category": "diplomatic",
-    "description": "The People's Republic of China replaced Taiwan on the UN Security Council.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Voting_res_2758.svg/330px-Voting_res_2758.svg.png"
-  },
-  {
-    "name": "egypt-israel-peace",
-    "friendly_name": "Egypt-Israel Peace Treaty",
-    "year": 1979,
-    "category": "diplomatic",
-    "description": "Egypt became the first Arab nation to sign a peace treaty with Israel.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Sadat_Carter_Begin_handshake_%28cropped%29_-_USNWR.jpg/330px-Sadat_Carter_Begin_handshake_%28cropped%29_-_USNWR.jpg"
-  },
-  {
-    "name": "solidarity-poland",
-    "friendly_name": "Solidarity Union Founded",
-    "year": 1980,
-    "category": "diplomatic",
-    "description": "Polish workers formed the first independent labor union in a Soviet bloc country.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/8/83/SolidarityFist.jpg"
-  },
-  {
-    "name": "eu-expansion-2004",
-    "friendly_name": "EU Eastern Expansion",
-    "year": 2004,
-    "category": "diplomatic",
-    "description": "Ten countries joined the European Union in its largest expansion.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/EU25-2004_European_Union_map_enlargement.svg/330px-EU25-2004_European_Union_map_enlargement.svg.png"
-  },
-  {
     "name": "lisbon-treaty",
     "friendly_name": "Treaty of Lisbon",
     "year": 2007,
@@ -1773,6 +1620,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tratado_de_Lisboa_13_12_2007_%2804%29.jpg/330px-Tratado_de_Lisboa_13_12_2007_%2804%29.jpg"
   },
   {
+    "name": "paris-climate-agreement",
+    "friendly_name": "Paris Climate Agreement",
+    "year": 2015,
+    "category": "diplomatic",
+    "description": "Nearly 200 nations agreed to limit global warming to well below 2°C.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/ParisAgreement.svg/330px-ParisAgreement.svg.png"
+  },
+  {
     "name": "iran-nuclear-deal",
     "friendly_name": "Iran Nuclear Deal",
     "year": 2015,
@@ -1780,6 +1636,15 @@
     "description": "World powers reached an agreement to limit Iran's nuclear program.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Negotiations_about_Iranian_Nuclear_Program_-_the_Ministers_of_Foreign_Affairs_and_Other_Officials_of_the_P5%2B1_and_Ministers_of_Foreign_Affairs_of_Iran_and_EU_in_Lausanne.jpg/330px-thumbnail.jpg"
+  },
+  {
+    "name": "brexit",
+    "friendly_name": "Brexit Completed",
+    "year": 2020,
+    "category": "diplomatic",
+    "description": "The United Kingdom officially left the European Union.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Location_map_of_the_United_Kingdom_and_the_European_Union.svg/330px-Location_map_of_the_United_Kingdom_and_the_European_Union.svg.png"
   },
   {
     "name": "abraham-accords",

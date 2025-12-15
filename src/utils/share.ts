@@ -1,4 +1,5 @@
 import { WhenGameState } from '../types';
+import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 
 const GAME_URL = 'https://when-one.vercel.app/';
 
@@ -24,8 +25,10 @@ export function generateShareText(state: WhenGameState): string {
   switch (gameMode) {
     case 'daily': {
       const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
+      const theme = getDailyTheme(dateStr);
+      const themeName = getThemeDisplayName(theme);
       const won = winners.length > 0;
-      text = `When #${dateStr} 📅\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}`;
+      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}`;
       break;
     }
     case 'suddenDeath': {

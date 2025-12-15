@@ -117,15 +117,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png"
   },
   {
-    "name": "black-death",
-    "friendly_name": "Black Death Reaches Europe",
-    "year": 1347,
-    "category": "disasters",
-    "description": "The bubonic plague killed up to 200 million people across Europe.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png"
-  },
-  {
     "name": "black-death-peak",
     "friendly_name": "Black Death Peaks",
     "year": 1349,
@@ -169,15 +160,6 @@
     "description": "A massive earthquake and tsunami destroyed much of Portugal's capital.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/1755_Lisbon_Earthquake_Location.png/330px-1755_Lisbon_Earthquake_Location.png"
-  },
-  {
-    "name": "bengal-famine-1770",
-    "friendly_name": "Great Bengal Famine",
-    "year": 1770,
-    "category": "disasters",
-    "description": "A devastating famine killed approximately 10 million people in India.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/IGI1908India1765a.jpg/330px-IGI1908India1765a.jpg"
   },
   {
     "name": "laki-eruption",
@@ -279,11 +261,11 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Johnstown_flood_debris.jpg/330px-Johnstown_flood_debris.jpg"
   },
   {
-    "name": "russian-famine-1891",
-    "friendly_name": "Russian Famine of 1891",
+    "name": "russian-famine-imperial",
+    "friendly_name": "Imperial Russian Famine",
     "year": 1891,
     "category": "disasters",
-    "description": "Crop failures led to widespread famine affecting millions in Russia.",
+    "description": "Crop failures led to widespread famine affecting millions across Russia.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg/330px-CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg"
   },
@@ -324,15 +306,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg/330px-Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg"
   },
   {
-    "name": "titanic",
-    "friendly_name": "Titanic Sinks",
-    "year": 1912,
-    "category": "disasters",
-    "description": "The 'unsinkable' ship struck an iceberg and sank on its maiden voyage.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/330px-St%C3%B6wer_Titanic.jpg"
-  },
-  {
     "name": "titanic-disaster",
     "friendly_name": "Titanic Sinks",
     "year": 1912,
@@ -355,7 +328,7 @@
     "friendly_name": "Spanish Flu Second Wave",
     "year": 1918,
     "category": "disasters",
-    "description": "The deadly second wave of Spanish flu killed millions in autumn 1918.",
+    "description": "The deadly second wave of Spanish flu killed millions in the autumn months.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/330px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg"
   },
@@ -396,8 +369,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg/330px-Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg"
   },
   {
-    "name": "china-floods-1931",
-    "friendly_name": "China Floods of 1931",
+    "name": "china-great-floods",
+    "friendly_name": "Great China Floods",
     "year": 1931,
     "category": "disasters",
     "description": "Massive flooding killed up to four million people in central China.",
@@ -423,11 +396,11 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_disaster.jpg/330px-Hindenburg_disaster.jpg"
   },
   {
-    "name": "bengal-famine-1943",
+    "name": "bengal-famine-wwii",
     "friendly_name": "Bengal Famine",
     "year": 1943,
     "category": "disasters",
-    "description": "A devastating famine killed up to three million people in British India.",
+    "description": "A devastating wartime famine killed up to three million people in British India.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg/330px-Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg"
   },
@@ -666,7 +639,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Hillsborough_disaster_main.jpg/330px-Hillsborough_disaster_main.jpg"
   },
   {
-    "name": "bangladesh-cyclone-1991",
+    "name": "bangladesh-cyclone-chittagong",
     "friendly_name": "Bangladesh Cyclone",
     "year": 1991,
     "category": "disasters",
@@ -709,15 +682,6 @@
     "description": "A devastating earthquake killed over 6,000 people in Kobe, Japan.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hanshin_Expressway_Nada_b059.jpg/330px-Hanshin_Expressway_Nada_b059.jpg"
-  },
-  {
-    "name": "oklahoma-city-bombing",
-    "friendly_name": "Oklahoma City Bombing",
-    "year": 1995,
-    "category": "disasters",
-    "description": "A domestic terrorist attack killed 168 people at a federal building.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Oklahomacitybombing-DF-ST-98-01356.jpg/330px-Oklahomacitybombing-DF-ST-98-01356.jpg"
   },
   {
     "name": "north-korea-famine",
@@ -772,15 +736,6 @@
     "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Concorde_Air_France_Flight_4590_fire_on_runway.jpg"
-  },
-  {
-    "name": "september-11-attacks",
-    "friendly_name": "September 11 Attacks",
-    "year": 2001,
-    "category": "disasters",
-    "description": "Terrorists crashed hijacked planes into the World Trade Center and Pentagon.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/330px-WTC_smoking_on_9-11.jpeg"
   },
   {
     "name": "sars-outbreak",
@@ -963,15 +918,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Damages_after_2020_Beirut_explosions_1.jpg/330px-Damages_after_2020_Beirut_explosions_1.jpg"
   },
   {
-    "name": "covid-pandemic",
-    "friendly_name": "COVID-19 Pandemic Begins",
-    "year": 2020,
-    "category": "disasters",
-    "description": "The coronavirus pandemic caused a global health crisis.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/330px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg"
-  },
-  {
     "name": "texas-winter-storm",
     "friendly_name": "Texas Winter Storm",
     "year": 2021,
@@ -1008,8 +954,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Island_of_Crete%2C_Greece.JPG/330px-Island_of_Crete%2C_Greece.JPG"
   },
   {
-    "name": "great-famine-1315",
-    "friendly_name": "Great Famine of 1315",
+    "name": "great-european-famine",
+    "friendly_name": "Great European Famine",
     "year": 1315,
     "category": "disasters",
     "description": "Climate change caused crop failures and mass starvation across Europe.",
@@ -1017,8 +963,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Great_famine.jpg/330px-Great_famine.jpg"
   },
   {
-    "name": "russian-famine-1601",
-    "friendly_name": "Russian Famine of 1601",
+    "name": "russian-famine-troubles",
+    "friendly_name": "Russian Time of Troubles Famine",
     "year": 1601,
     "category": "disasters",
     "description": "Volcanic climate disruption caused a famine that killed two million Russians.",
@@ -1026,8 +972,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siege_and_Battle_of_Kinsale%2C_1601.jpg/330px-Siege_and_Battle_of_Kinsale%2C_1601.jpg"
   },
   {
-    "name": "italian-plague-1629",
-    "friendly_name": "Italian Plague of 1629",
+    "name": "italian-plague",
+    "friendly_name": "Italian Plague",
     "year": 1629,
     "category": "disasters",
     "description": "Bubonic plague killed over a million people in northern Italy.",
@@ -1035,11 +981,11 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg/330px-Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg"
   },
   {
-    "name": "irish-famine-1740",
-    "friendly_name": "Irish Famine of 1740",
+    "name": "irish-famine-forgotten",
+    "friendly_name": "Irish Forgotten Famine",
     "year": 1740,
     "category": "disasters",
-    "description": "Extreme cold killed 20-40% of Ireland's population in the forgotten famine.",
+    "description": "Extreme cold killed 20-40% of Ireland's population in a lesser-known famine.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chinezenmoord_van_stolk_%282%29.jpg/330px-Chinezenmoord_van_stolk_%282%29.jpg"
   },
@@ -1062,7 +1008,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/DojiBaraFamineInJoppen1907India1795a.jpg/330px-DojiBaraFamineInJoppen1907India1795a.jpg"
   },
   {
-    "name": "finnish-famine-1866",
+    "name": "finnish-famine",
     "friendly_name": "Finnish Famine",
     "year": 1866,
     "category": "disasters",
@@ -1071,20 +1017,20 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Detaching_inner_bark_of_pine.jpg/330px-Detaching_inner_bark_of_pine.jpg"
   },
   {
-    "name": "persian-famine-1917",
+    "name": "persian-famine",
     "friendly_name": "Persian Famine",
     "year": 1917,
     "category": "disasters",
-    "description": "World War I and occupation caused a famine killing 2 million Persians.",
+    "description": "World War I and occupation caused a famine killing two million Persians.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bijar_in_First_World_War_%281914-1918%29_10.JPG/330px-Bijar_in_First_World_War_%281914-1918%29_10.JPG"
   },
   {
-    "name": "russian-famine-1921",
-    "friendly_name": "Russian Famine of 1921",
+    "name": "russian-famine-civil-war",
+    "friendly_name": "Soviet Russian Famine",
     "year": 1921,
     "category": "disasters",
-    "description": "Civil war aftermath and drought killed 5 million in Soviet Russia.",
+    "description": "Civil war aftermath and drought killed five million in Soviet Russia.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/1921-Famine-map.jpg/330px-1921-Famine-map.jpg"
   },
@@ -1107,7 +1053,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg/330px-Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg"
   },
   {
-    "name": "bangladesh-famine-1974",
+    "name": "bangladesh-famine",
     "friendly_name": "Bangladesh Famine",
     "year": 1974,
     "category": "disasters",
@@ -1116,7 +1062,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg/330px-Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg"
   },
   {
-    "name": "ethiopian-famine-1983",
+    "name": "ethiopian-famine",
     "friendly_name": "Ethiopian Famine",
     "year": 1983,
     "category": "disasters",
@@ -1134,11 +1080,11 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Antiochia_su_Oronte.PNG/330px-Antiochia_su_Oronte.PNG"
   },
   {
-    "name": "syria-earthquake-1202",
-    "friendly_name": "Syria Earthquake of 1202",
+    "name": "syria-earthquake-medieval",
+    "friendly_name": "Great Syria Earthquake",
     "year": 1202,
     "category": "disasters",
-    "description": "A powerful earthquake killed over 1 million across the Middle East.",
+    "description": "A powerful earthquake killed over one million across the Middle East.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Siege_of_Zadar.jpg/330px-Siege_of_Zadar.jpg"
   },
@@ -1215,7 +1161,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Valdivia_after_earthquake%2C_1960.jpg/330px-Valdivia_after_earthquake%2C_1960.jpg"
   },
   {
-    "name": "peru-earthquake-1970",
+    "name": "peru-earthquake",
     "friendly_name": "Peru Earthquake",
     "year": 1970,
     "category": "disasters",
@@ -1233,7 +1179,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/GuateQuake1976Patzicia.jpg/330px-GuateQuake1976Patzicia.jpg"
   },
   {
-    "name": "iran-earthquake-1990",
+    "name": "iran-earthquake-manjil",
     "friendly_name": "Iran Earthquake",
     "year": 1990,
     "category": "disasters",
@@ -1300,7 +1246,7 @@
     "friendly_name": "Mount Pinatubo Eruption",
     "year": 1991,
     "category": "disasters",
-    "description": "The second-largest volcanic eruption of the 20th century lowered global temperatures.",
+    "description": "The second-largest volcanic eruption of the century lowered global temperatures.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg/330px-Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg"
   },
@@ -1476,7 +1422,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg/330px-Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg"
   },
   {
-    "name": "russian-flu-1889",
+    "name": "russian-flu",
     "friendly_name": "Russian Flu Pandemic",
     "year": 1889,
     "category": "disasters",
@@ -1485,7 +1431,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg/330px-Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg"
   },
   {
-    "name": "asian-flu-1957",
+    "name": "asian-flu",
     "friendly_name": "Asian Flu Pandemic",
     "year": 1957,
     "category": "disasters",
@@ -1503,8 +1449,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/330px-Flag_of_Hong_Kong.svg.png"
   },
   {
-    "name": "swine-flu-2009",
-    "friendly_name": "2009 Swine Flu Pandemic",
+    "name": "swine-flu-pandemic",
+    "friendly_name": "Swine Flu Pandemic",
     "year": 2009,
     "category": "disasters",
     "description": "A new influenza strain caused a global pandemic.",
@@ -1530,8 +1476,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Zika_EM_CDC_20541.png/330px-Zika_EM_CDC_20541.png"
   },
   {
-    "name": "great-hurricane-1780",
-    "friendly_name": "Great Hurricane of 1780",
+    "name": "great-hurricane-caribbean",
+    "friendly_name": "Great Caribbean Hurricane",
     "year": 1780,
     "category": "disasters",
     "description": "The deadliest Atlantic hurricane in history killed 22,000 in the Caribbean.",
@@ -1566,20 +1512,11 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ohiorivermap.png/330px-Ohiorivermap.png"
   },
   {
-    "name": "bangladesh-cyclone-1970",
-    "friendly_name": "1970 Bangladesh Cyclone",
-    "year": 1970,
-    "category": "disasters",
-    "description": "A devastating cyclone killed up to 500,000 in East Pakistan.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/15B_1970-11-12_0956Z.png/330px-15B_1970-11-12_0956Z.png"
-  },
-  {
-    "name": "super-outbreak-1974",
-    "friendly_name": "Super Outbreak",
+    "name": "super-tornado-outbreak",
+    "friendly_name": "Super Tornado Outbreak",
     "year": 1974,
     "category": "disasters",
-    "description": "148 tornadoes struck across 13 US states in 16 hours.",
+    "description": "148 tornadoes struck across 13 US states in just 16 hours.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Super_Outbreak_1974-04-03_loop.gif/330px-Super_Outbreak_1974-04-03_loop.gif"
   },
@@ -1620,7 +1557,7 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png/330px-2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png"
   },
   {
-    "name": "pakistan-floods-2022",
+    "name": "pakistan-floods",
     "friendly_name": "Pakistan Floods",
     "year": 2022,
     "category": "disasters",
@@ -1693,7 +1630,7 @@
   },
   {
     "name": "dancing-plague",
-    "friendly_name": "Dancing Plague of 1518",
+    "friendly_name": "Dancing Plague of Strasbourg",
     "year": 1518,
     "category": "disasters",
     "description": "A strange outbreak caused hundreds to dance uncontrollably for days in Strasbourg.",
@@ -1764,8 +1701,8 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/VajontDiga.jpg/330px-VajontDiga.jpg"
   },
   {
-    "name": "el-nino-1997",
-    "friendly_name": "1997-98 El Niño",
+    "name": "el-nino-super",
+    "friendly_name": "Super El Niño",
     "year": 1997,
     "category": "disasters",
     "description": "One of the strongest El Niño events caused $35 billion in damage worldwide.",
