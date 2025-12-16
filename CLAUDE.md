@@ -71,6 +71,20 @@ Events filterable by era: prehistory, ancient, medieval, earlyModern (Renaissanc
 - Category colors: conflict=red, disasters=gray, exploration=teal, cultural=purple, infrastructure=amber, diplomatic=blue
 - Custom animations: `shake`, `flip`, `entrance`, `screen-shake`, `pulse-glow`, `slide-in`
 
+### Z-Index Hierarchy (Game.tsx & Timeline.tsx)
+
+The game uses a two-panel layout where z-index management is critical for clickability:
+
+| Layer | Z-Index | Component |
+|-------|---------|-----------|
+| Left panel (hand zone) | z-40 | Game.tsx - entire left panel |
+| Timeline scroll content | z-10 | Timeline.tsx - scrollable area |
+| Timeline fade overlays | z-30 | Timeline.tsx - "Earlier"/"Later" gradients |
+| Card stack container | z-40 | Game.tsx - relative container for cards |
+| Cycle button | z-50 | Game.tsx - top-right of card stack |
+
+**Important**: The left panel must have a higher z-index than timeline elements because DOM order (right panel comes after left) would otherwise cause the timeline to overlap interactive elements in the hand zone.
+
 ## Mobile Development Guidelines
 
 This is a mobile-first web app. Follow these best practices:
