@@ -18,7 +18,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   isOverTimeline = false,
   isHidden = false,
 }) => {
-  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
+  const { attributes, listeners, setNodeRef, setActivatorNodeRef, isDragging } = useDraggable({
     id: 'active-card',
     data: { event },
     disabled,
@@ -27,24 +27,33 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   return (
     <div
       ref={setNodeRef}
-      {...listeners}
-      {...attributes}
       className={`
+        pointer-events-none
         ${isHidden ? 'invisible' : ''}
         ${!isHidden && isDragging ? (isOverTimeline ? 'invisible' : 'opacity-ghost') : ''}
-        ${disabled ? 'cursor-not-allowed' : 'cursor-grab active:cursor-grabbing'}
       `}
-      style={{
-        touchAction: 'none', // Prevent scroll interference on mobile
-      }}
-      onClick={() => {
-        // Only trigger tap if not dragging
-        if (!isDragging) {
-          onTap();
-        }
-      }}
     >
-      <Card event={event} size="normal" />
+      {/* Card is the drag handle - only this area triggers drag initiation */}
+      <div
+        ref={setActivatorNodeRef}
+        {...listeners}
+        {...attributes}
+        className={`
+          pointer-events-auto
+          ${disabled ? 'cursor-not-allowed' : 'cursor-grab active:cursor-grabbing'}
+        `}
+        style={{
+          touchAction: 'none', // Prevent scroll interference on mobile
+        }}
+        onClick={() => {
+          // Only trigger tap if not dragging
+          if (!isDragging) {
+            onTap();
+          }
+        }}
+      >
+        <Card event={event} size="normal" />
+      </div>
     </div>
   );
 };
