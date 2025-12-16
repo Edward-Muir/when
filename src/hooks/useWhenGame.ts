@@ -22,6 +22,7 @@ interface UseWhenGameReturn {
   allEvents: HistoricalEvent[];
   startGame: (config: GameConfig) => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
+  cycleHand: () => void;
   resetGame: () => void;
   restartGame: () => void;
   modalEvent: HistoricalEvent | null;
@@ -345,6 +346,24 @@ export function useWhenGame(): UseWhenGameReturn {
     return result;
   }, [state.phase, state.players, state.currentPlayerIndex, state.timeline, state.isAnimating]);
 
+  const cycleHand = useCallback(() => {
+    if (state.isAnimating || state.phase !== 'playing') return;
+
+    setState((prev) => {
+      const newPlayers = [...prev.players];
+      const player = { ...newPlayers[prev.currentPlayerIndex] };
+
+      if (player.hand.length <= 1) return prev;
+
+      // Move first card to end of array
+      const [first, ...rest] = player.hand;
+      player.hand = [...rest, first];
+      newPlayers[prev.currentPlayerIndex] = player;
+
+      return { ...prev, players: newPlayers };
+    });
+  }, [state.isAnimating, state.phase]);
+
   const resetGame = useCallback(() => {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
@@ -368,6 +387,7 @@ export function useWhenGame(): UseWhenGameReturn {
     allEvents,
     startGame,
     placeCard,
+    cycleHand,
     resetGame,
     restartGame,
     modalEvent,
