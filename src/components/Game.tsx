@@ -139,7 +139,7 @@ const Game: React.FC<GameProps> = ({
     const activatorEvent = event.activatorEvent;
     let initialY: number;
 
-    if (activatorEvent instanceof TouchEvent) {
+    if (typeof TouchEvent !== 'undefined' && activatorEvent instanceof TouchEvent) {
       initialY = activatorEvent.touches[0]?.clientY ?? 0;
     } else if (activatorEvent instanceof MouseEvent || activatorEvent instanceof PointerEvent) {
       initialY = activatorEvent.clientY;
@@ -280,7 +280,6 @@ const Game: React.FC<GameProps> = ({
                 currentPlayerIndex={state.currentPlayerIndex}
                 turnNumber={state.turnNumber}
                 roundNumber={state.roundNumber}
-                gameMode={state.gameMode}
               />
 
               {/* Result/Winner/Stats Banner */}

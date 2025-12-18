@@ -38,6 +38,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // Hand size setting (3-8 cards) - default varies by player count
   const [cardsPerHand, setCardsPerHand] = useState(7);
 
+  // Sudden death hand size (1-5 cards, acts as "lives")
+  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(3);
+
   // Update default hand size when player count changes
   const getDefaultHandSize = (count: number) => {
     const defaults: Record<number, number> = { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3, 6: 3 };
@@ -62,9 +65,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       selectedEras
     ).length;
     // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
-    const minRequired = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
+    const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
+    const minRequired = (playerCount * effectiveHandSize) + 1 + (playerCount * 2);
     return count >= minRequired;
-  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand]);
+  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand, isSuddenDeath, suddenDeathHandSize]);
 
   // Daily theme - computed from today's date
   const dailySeed = new Date().toISOString().split('T')[0];
@@ -99,6 +103,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       playerCount,
       playerNames: names,
       cardsPerHand,
+      suddenDeathHandSize,
     });
   };
 
@@ -265,6 +270,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         setPlayerNames={setPlayerNames}
         cardsPerHand={cardsPerHand}
         setCardsPerHand={setCardsPerHand}
+        suddenDeathHandSize={suddenDeathHandSize}
+        setSuddenDeathHandSize={setSuddenDeathHandSize}
       />
 
       {/* Toast */}

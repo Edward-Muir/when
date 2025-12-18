@@ -37,7 +37,6 @@ export interface Player {
   winTurn?: number;
   isEliminated?: boolean;
   eliminatedRound?: number;
-  madeIncorrectPlacement?: boolean;  // Track mistakes for reprieve logic in sudden death
 }
 
 export type GamePhase = 'loading' | 'modeSelect' | 'playing' | 'gameOver';
@@ -68,6 +67,7 @@ export interface WhenGameState {
   turnNumber: number;
   roundNumber: number;
   winners: Player[];
+  activePlayersAtRoundStart: number;
 }
 
 export interface EventManifest {
@@ -89,4 +89,7 @@ export interface GameConfig {
   playerCount?: number;
   playerNames?: string[];
   cardsPerHand?: number;
+
+  // Sudden death settings
+  suddenDeathHandSize?: number; // 1-5 cards in hand for sudden death mode (default 3)
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Player, GameMode } from '../types';
+import { Player } from '../types';
 import { Users } from 'lucide-react';
 
 // Custom hand of cards icon with count overlay
@@ -29,13 +29,11 @@ interface PlayerInfoProps {
   currentPlayerIndex: number;
   turnNumber: number;
   roundNumber: number;
-  gameMode?: GameMode | null;
 }
 
 const PlayerInfo: React.FC<PlayerInfoProps> = ({
   players,
   currentPlayerIndex,
-  gameMode,
 }) => {
   return (
     <div className="flex flex-col gap-1.5">
@@ -62,12 +60,10 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({
           >
             <Users className="w-3 h-3" />
             <span className="font-medium flex-1">{player.name}</span>
-            {gameMode !== 'suddenDeath' && (
-              hasWon ? (
-                <span className="text-[10px]">🏆</span>
-              ) : (
-                <HandCardsIcon count={player.hand.length} isCurrent={isCurrent} />
-              )
+            {hasWon ? (
+              <span className="text-[10px]">🏆</span>
+            ) : (
+              <HandCardsIcon count={player.hand.length} isCurrent={isCurrent} />
             )}
           </div>
         );

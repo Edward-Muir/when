@@ -1,7 +1,7 @@
 import { WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 
-const GAME_URL = 'https://when-one.vercel.app/';
+const GAME_URL = 'https://www.play-when.com/';
 
 /**
  * Generate emoji grid from placement history

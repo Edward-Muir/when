@@ -45,6 +45,7 @@ const initialState: WhenGameState = {
   turnNumber: 0,
   roundNumber: 1,
   winners: [],
+  activePlayersAtRoundStart: 0,
 };
 
 export function useWhenGame(): UseWhenGameReturn {
@@ -70,6 +71,7 @@ export function useWhenGame(): UseWhenGameReturn {
       playerCount = 1,
       playerNames = [],
       cardsPerHand = 5,
+      suddenDeathHandSize = 3,
     } = config;
 
     // Apply filters to get available events
@@ -77,8 +79,11 @@ export function useWhenGame(): UseWhenGameReturn {
     filteredEvents = filterByCategory(filteredEvents, selectedCategories);
     filteredEvents = filterByEra(filteredEvents, selectedEras);
 
+    // Use suddenDeathHandSize for sudden death mode, cardsPerHand otherwise
+    const effectiveHandSize = mode === 'suddenDeath' ? suddenDeathHandSize : cardsPerHand;
+
     // Calculate minimum required cards
-    const minRequired = (playerCount * cardsPerHand) + 1 + (playerCount * 2);
+    const minRequired = (playerCount * effectiveHandSize) + 1 + (playerCount * 2);
 
     if (filteredEvents.length < minRequired) {
       console.error('Not enough events to start the game');
@@ -98,7 +103,7 @@ export function useWhenGame(): UseWhenGameReturn {
     const { players, remainingDeck } = initializePlayers(
       playerCount,
       playerNames,
-      cardsPerHand,
+      effectiveHandSize,
       deckForGame
     );
 
@@ -117,6 +122,7 @@ export function useWhenGame(): UseWhenGameReturn {
       isAnimating: false,
       animationPhase: null,
       lastConfig: config,
+      activePlayersAtRoundStart: playerCount,
     });
   }, [allEvents]);
 
@@ -170,10 +176,10 @@ export function useWhenGame(): UseWhenGameReturn {
           player.hand = removeFromHand(player.hand, event.name);
 
           if (isSuddenDeath) {
-            // In sudden death, draw a new card for next turn
+            // In sudden death, draw a new card and add to hand
             const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
             if (newCard) {
-              player.hand = [newCard];
+              player.hand = addToHand(player.hand, newCard);
             }
             newDeck = updatedDeck;
           } else {
@@ -195,18 +201,19 @@ export function useWhenGame(): UseWhenGameReturn {
           let finalWinners = prev.winners;
           let finalPlayers = newPlayers;
 
+          let newActivePlayersAtRoundStart = prev.activePlayersAtRoundStart;
+
           if (isSuddenDeath && isRoundEnding) {
-            // Use unified end-of-round logic for sudden death
-            const result = processEndOfRound(newPlayers, 'suddenDeath', isSinglePlayer, prev.roundNumber);
+            // Use simplified end-of-round logic for sudden death
+            const result = processEndOfRound(newPlayers, 'suddenDeath', prev.activePlayersAtRoundStart);
             finalPlayers = result.updatedPlayers;
             isGameOver = result.gameOver;
             if (result.winners.length > 0) {
-              finalWinners = [...prev.winners];
-              result.winners.forEach(w => {
-                if (!finalWinners.some(fw => fw.id === w.id)) {
-                  finalWinners.push(w);
-                }
-              });
+              finalWinners = result.winners;
+            }
+            // Update active players count for next round
+            if (!isGameOver) {
+              newActivePlayersAtRoundStart = finalPlayers.filter(p => !p.isEliminated).length;
             }
           } else if (!isSuddenDeath) {
             // Non-sudden-death mode: use existing logic
@@ -228,6 +235,7 @@ export function useWhenGame(): UseWhenGameReturn {
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,
+            activePlayersAtRoundStart: newActivePlayersAtRoundStart,
           };
         });
       }, 600);
@@ -268,59 +276,53 @@ export function useWhenGame(): UseWhenGameReturn {
           // Remove card from hand (discarded)
           player.hand = removeFromHand(player.hand, event.name);
 
-          if (isSuddenDeath) {
-            // Sudden death: mark as made incorrect placement (don't eliminate yet)
-            player.madeIncorrectPlacement = true;
-          } else {
-            // Draw replacement card
+          if (!isSuddenDeath) {
+            // Non-sudden death: draw replacement card
             const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
             if (newCard) {
               player.hand = addToHand(player.hand, newCard);
             }
             newDeck = updatedDeck;
           }
+          // Sudden death: no replacement card drawn (hand shrinks)
 
           newPlayers[prev.currentPlayerIndex] = player;
 
           // Determine if round is ending
-          // For single player sudden death: always process end of round immediately
-          // For multiplayer: check if we're returning to player 0
-          const nextPlayerIndex = isSuddenDeath && isSinglePlayer
-            ? 0  // Doesn't matter for single player, we'll end the game
-            : getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
+          const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
           const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
           const newRoundNumber = isRoundEnding ? prev.roundNumber + 1 : prev.roundNumber;
 
           let isGameOver = false;
           let finalWinners = prev.winners;
           let finalPlayers = newPlayers;
+          let newActivePlayersAtRoundStart = prev.activePlayersAtRoundStart;
 
           if (isSuddenDeath && isRoundEnding) {
-            // Use unified end-of-round logic for sudden death
-            const result = processEndOfRound(newPlayers, 'suddenDeath', isSinglePlayer, prev.roundNumber);
+            // Use simplified end-of-round logic for sudden death
+            const result = processEndOfRound(newPlayers, 'suddenDeath', prev.activePlayersAtRoundStart);
             finalPlayers = result.updatedPlayers;
             isGameOver = result.gameOver;
             if (result.winners.length > 0) {
-              // Add winners that aren't already in the list
-              finalWinners = [...prev.winners];
-              result.winners.forEach(w => {
-                if (!finalWinners.some(fw => fw.id === w.id)) {
-                  finalWinners.push(w);
-                }
-              });
+              finalWinners = result.winners;
             }
 
-            // If reprieve granted (game not over), draw new cards for all active players
-            if (!isGameOver) {
+            // If reprieve granted, draw 1 new card for each active player
+            if (result.grantReprieve) {
               finalPlayers.forEach(p => {
                 if (!p.isEliminated) {
                   const { card: newCard, newDeck: updatedDeck } = drawCard(newDeck);
                   if (newCard) {
-                    p.hand = [newCard];
+                    p.hand = addToHand(p.hand, newCard);
                   }
                   newDeck = updatedDeck;
                 }
               });
+            }
+
+            // Update active players count for next round
+            if (!isGameOver) {
+              newActivePlayersAtRoundStart = finalPlayers.filter(p => !p.isEliminated).length;
             }
           } else if (!isSuddenDeath) {
             // Non-sudden-death mode: use existing logic
@@ -338,6 +340,7 @@ export function useWhenGame(): UseWhenGameReturn {
             phase: isGameOver ? 'gameOver' : 'playing',
             isAnimating: false,
             animationPhase: null,
+            activePlayersAtRoundStart: newActivePlayersAtRoundStart,
           };
         });
       }, 800);

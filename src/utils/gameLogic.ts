@@ -278,76 +278,54 @@ export interface EndOfRoundResult {
   gameOver: boolean;
   updatedPlayers: Player[];
   winners: Player[];
+  grantReprieve?: boolean;
 }
 
 // Process end of round for sudden death mode
-// Unified logic: evaluate eliminations and winners at round boundaries
+// Simplified logic: check hand sizes at round end, grant reprieve if all failed together
 export function processEndOfRound(
   players: Player[],
   gameMode: GameMode,
-  isSinglePlayer: boolean,
-  currentRound: number
+  activePlayersAtRoundStart: number
 ): EndOfRoundResult {
+  // Only process for sudden death
+  if (gameMode !== 'suddenDeath') {
+    return { gameOver: false, updatedPlayers: players, winners: [] };
+  }
+
   const updatedPlayers = players.map(p => ({ ...p }));
   const activePlayers = updatedPlayers.filter(p => !p.isEliminated);
-  const mistakesThisRound = activePlayers.filter(p => p.madeIncorrectPlacement);
+  const playersWithEmptyHands = activePlayers.filter(p => p.hand.length === 0);
 
-  // Phase 1: Handle eliminations (Sudden Death only)
-  if (gameMode === 'suddenDeath') {
-    const allFailed = mistakesThisRound.length === activePlayers.length && activePlayers.length > 0;
-    const grantReprieve = allFailed && !isSinglePlayer;
+  // Check if ALL active players have empty hands AND there were >1 active at round start
+  const allEliminated = playersWithEmptyHands.length === activePlayers.length && activePlayers.length > 0;
+  const reprieveEligible = activePlayersAtRoundStart > 1;
 
-    if (!grantReprieve) {
-      // Eliminate players who made mistakes
-      mistakesThisRound.forEach(mistakePlayer => {
-        const player = updatedPlayers.find(p => p.id === mistakePlayer.id);
-        if (player) {
-          player.isEliminated = true;
-          player.eliminatedRound = currentRound;
-        }
-      });
-    }
+  if (allEliminated && reprieveEligible) {
+    // REPRIEVE: All players failed together and we started with >1 - give each 1 card
+    return { gameOver: false, updatedPlayers, winners: [], grantReprieve: true };
   }
 
-  // Clear madeIncorrectPlacement for next round
-  updatedPlayers.forEach(p => { p.madeIncorrectPlacement = false; });
+  // Eliminate players with empty hands
+  playersWithEmptyHands.forEach(p => {
+    p.isEliminated = true;
+  });
 
-  // Phase 2: Determine winners
   const remaining = updatedPlayers.filter(p => !p.isEliminated);
 
-  let winners: Player[] = [];
-  if (gameMode === 'suddenDeath') {
-    // Single-player: game only ends when eliminated (no winner, just game over)
-    // Multiplayer: last player standing wins
-    if (isSinglePlayer) {
-      // Single player has no "winner" - game ends only when eliminated
-      // remaining.length === 0 means game over (handled below)
-    } else if (remaining.length <= 1) {
-      winners = remaining;
-      remaining.forEach(p => { p.hasWon = true; });
-    }
-  } else {
-    // Remove cards mode: players with empty hands win
-    winners = remaining.filter(p => p.hasWon);
+  // No players remaining - game over with no winners
+  if (remaining.length === 0) {
+    return { gameOver: true, updatedPlayers, winners: [] };
   }
 
-  // Phase 3: Determine if game is over
-  // For single-player sudden death: only end when eliminated (remaining === 0)
-  // For multiplayer: end when there's a winner OR no players left
-  const gameOver = isSinglePlayer && gameMode === 'suddenDeath'
-    ? remaining.length === 0
-    : winners.length > 0 || remaining.length === 0;
+  // Last player standing wins - BUT only if someone was eliminated this round
+  // (i.e., we started with more than 1 player)
+  if (remaining.length === 1 && activePlayersAtRoundStart > 1) {
+    remaining[0].hasWon = true;
+    return { gameOver: true, updatedPlayers, winners: remaining };
+  }
 
-  return { gameOver, updatedPlayers, winners };
+  // Game continues (either multiple players, or single player still has cards)
+  return { gameOver: false, updatedPlayers, winners: [] };
 }
 
-// Count remaining active players (for sudden death)
-export function countActivePlayers(players: Player[]): number {
-  return players.filter(p => !p.isEliminated).length;
-}
-
-// Get the last remaining player (for sudden death winner)
-export function getLastRemainingPlayer(players: Player[]): Player | null {
-  const active = players.filter(p => !p.isEliminated);
-  return active.length === 1 ? active[0] : null;
-}
