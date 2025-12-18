@@ -89,6 +89,7 @@ function findDuplicates(events) {
   const duplicates = {
     exactNameMatches: [],
     similarFriendlyNames: [],
+    nearYearSimilarNames: [],
     sameYearSimilarDescription: []
   };
 
@@ -118,6 +119,7 @@ function findDuplicates(events) {
 
   // Find similar friendly names
   const checked = new Set();
+  const nearYearChecked = new Set();
   for (let i = 0; i < events.length; i++) {
     for (let j = i + 1; j < events.length; j++) {
       const e1 = events[i];
@@ -149,6 +151,32 @@ function findDuplicates(events) {
             sourceFile: e2.sourceFile
           }
         });
+      }
+
+      // Check for near-year (within 5 years) with similar names (fuzzy match > 0.6)
+      if (!nearYearChecked.has(key)) {
+        nearYearChecked.add(key);
+        const yearDiff = Math.abs((e1.year || 0) - (e2.year || 0));
+        if (yearDiff > 0 && yearDiff <= 5 && sim > 0.6 && sim <= 0.7) {
+          duplicates.nearYearSimilarNames.push({
+            yearDiff,
+            similarity: (sim * 100).toFixed(1) + '%',
+            event1: {
+              name: e1.name,
+              friendly_name: e1.friendly_name,
+              year: e1.year,
+              category: e1.category,
+              sourceFile: e1.sourceFile
+            },
+            event2: {
+              name: e2.name,
+              friendly_name: e2.friendly_name,
+              year: e2.year,
+              category: e2.category,
+              sourceFile: e2.sourceFile
+            }
+          });
+        }
       }
     }
   }
@@ -202,6 +230,9 @@ function findDuplicates(events) {
   // Sort similar names by similarity (descending)
   duplicates.similarFriendlyNames.sort((a, b) => parseFloat(b.similarity) - parseFloat(a.similarity));
 
+  // Sort near-year similar names by similarity (descending)
+  duplicates.nearYearSimilarNames.sort((a, b) => parseFloat(b.similarity) - parseFloat(a.similarity));
+
   return duplicates;
 }
 
@@ -249,6 +280,24 @@ function main() {
     console.log('✅ No similar friendly names found\n');
   }
 
+  // Report near-year similar names
+  if (duplicates.nearYearSimilarNames.length > 0) {
+    console.log('═══════════════════════════════════════════════════════════════');
+    console.log('📆 NEAR-YEAR SIMILAR NAMES (within 5 years, possible duplicates)');
+    console.log('═══════════════════════════════════════════════════════════════\n');
+
+    for (const dup of duplicates.nearYearSimilarNames) {
+      console.log(`  Similarity: ${dup.similarity}, Year diff: ${dup.yearDiff} years`);
+      console.log(`    1. "${dup.event1.friendly_name}" (${dup.event1.year})`);
+      console.log(`       ID: ${dup.event1.name}, File: ${dup.event1.sourceFile}`);
+      console.log(`    2. "${dup.event2.friendly_name}" (${dup.event2.year})`);
+      console.log(`       ID: ${dup.event2.name}, File: ${dup.event2.sourceFile}`);
+      console.log();
+    }
+  } else {
+    console.log('✅ No near-year similar names found\n');
+  }
+
   // Report same year similar description
   if (duplicates.sameYearSimilarDescription.length > 0) {
     console.log('═══════════════════════════════════════════════════════════════');
@@ -274,9 +323,10 @@ function main() {
   console.log(`  Total events scanned: ${events.length}`);
   console.log(`  Exact name duplicates: ${duplicates.exactNameMatches.length}`);
   console.log(`  Similar friendly names: ${duplicates.similarFriendlyNames.length}`);
+  console.log(`  Near-year similar names: ${duplicates.nearYearSimilarNames.length}`);
   console.log(`  Same year + similar description: ${duplicates.sameYearSimilarDescription.length}`);
 
-  const total = duplicates.exactNameMatches.length + duplicates.similarFriendlyNames.length + duplicates.sameYearSimilarDescription.length;
+  const total = duplicates.exactNameMatches.length + duplicates.similarFriendlyNames.length + duplicates.nearYearSimilarNames.length + duplicates.sameYearSimilarDescription.length;
   if (total > 0) {
     console.log(`\n⚠️  Found ${total} potential duplicate issues to review`);
     process.exit(1);

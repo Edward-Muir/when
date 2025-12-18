@@ -36,6 +36,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg/330px-Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg"
   },
   {
+    "name": "skara-brae",
+    "friendly_name": "Skara Brae Settlement",
+    "year": -3180,
+    "category": "infrastructure",
+    "description": "A Neolithic village was built on Orkney, Scotland, preserved for millennia.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2018_07_12_Schottland_%2894%29.jpg/330px-2018_07_12_Schottland_%2894%29.jpg"
+  },
+  {
     "name": "stonehenge-begins",
     "friendly_name": "Stonehenge Construction Begins",
     "year": -3000,
@@ -43,6 +52,15 @@
     "description": "Construction began on the iconic prehistoric monument in England.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/330px-Stonehenge2007_07_30.jpg"
+  },
+  {
+    "name": "step-pyramid-djoser",
+    "friendly_name": "Step Pyramid of Djoser Built",
+    "year": -2650,
+    "category": "infrastructure",
+    "description": "The first monumental stone building in history was constructed in Egypt.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/330px-Saqqara_pyramid_ver_2.jpg"
   },
   {
     "name": "pyramids",
@@ -72,6 +90,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/330px-Sphinx_with_the_third_pyramid.jpg"
   },
   {
+    "name": "mohenjo-daro",
+    "friendly_name": "Mohenjo-daro Built",
+    "year": -2500,
+    "category": "infrastructure",
+    "description": "One of the largest cities of the Indus Valley civilization was established.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/330px-Mohenjodaro_-_view_of_the_stupa_mound.JPG"
+  },
+  {
     "name": "ziggurat-ur",
     "friendly_name": "Ziggurat of Ur Built",
     "year": -2100,
@@ -88,6 +115,15 @@
     "description": "The Minoans built the legendary palace complex on the island of Crete.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Knossos_-_North_Portico_02.jpg/330px-Knossos_-_North_Portico_02.jpg"
+  },
+  {
+    "name": "mycenaean-citadels",
+    "friendly_name": "Mycenaean Citadels Built",
+    "year": -1400,
+    "category": "infrastructure",
+    "description": "The Greeks built fortified palace complexes including Mycenae and Tiryns.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg/330px-Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg"
   },
   {
     "name": "lion-gate-mycenae",
@@ -124,6 +160,15 @@
     "description": "Rome constructed one of the world's earliest sewage systems.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg/330px-Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg"
+  },
+  {
+    "name": "ishtar-gate",
+    "friendly_name": "Ishtar Gate of Babylon Built",
+    "year": -575,
+    "category": "infrastructure",
+    "description": "King Nebuchadnezzar II built the magnificent blue-tiled gate in Babylon.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pergamonmuseum_Ishtartor_05.jpg/330px-Pergamonmuseum_Ishtartor_05.jpg"
   },
   {
     "name": "persepolis-founded",
@@ -207,6 +252,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
   },
   {
+    "name": "trajan-column",
+    "friendly_name": "Trajan's Column Erected",
+    "year": 113,
+    "category": "infrastructure",
+    "description": "Rome erected a triumphal column depicting victories against the Dacians.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trajan%27s_Column_HD.jpg/330px-Trajan%27s_Column_HD.jpg"
+  },
+  {
     "name": "pantheon-rebuilt",
     "friendly_name": "Pantheon Rebuilt",
     "year": 125,
@@ -279,6 +333,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/330px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg"
   },
   {
+    "name": "borobudur-temple",
+    "friendly_name": "Borobudur Temple Built",
+    "year": 825,
+    "category": "infrastructure",
+    "description": "The world's largest Buddhist temple was completed in Java.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg"
+  },
+  {
     "name": "great-mosque-cordoba",
     "friendly_name": "Great Mosque of Córdoba Expanded",
     "year": 987,
@@ -295,6 +358,15 @@
     "description": "William the Conqueror began construction of the iconic fortress.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tower_of_London_from_the_Shard_%288515883950%29.jpg/330px-Tower_of_London_from_the_Shard_%288515883950%29.jpg"
+  },
+  {
+    "name": "great-zimbabwe",
+    "friendly_name": "Great Zimbabwe Built",
+    "year": 1100,
+    "category": "infrastructure",
+    "description": "The medieval African city's massive stone structures were constructed.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/330px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg"
   },
   {
     "name": "angkor-wat-completed",
@@ -369,6 +441,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sistina-interno.jpg/330px-Sistina-interno.jpg"
   },
   {
+    "name": "kremlin-walls",
+    "friendly_name": "Moscow Kremlin Walls Built",
+    "year": 1485,
+    "category": "infrastructure",
+    "description": "The iconic red walls of the Kremlin fortress were constructed.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/330px-Moscow_Kremlin_%288281675670%29.jpg"
+  },
+  {
     "name": "st-peters-basilica-begins",
     "friendly_name": "St. Peter's Basilica Construction Begins",
     "year": 1506,
@@ -387,6 +468,23 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg/330px-Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg"
   },
   {
+    "name": "escorial-palace",
+    "friendly_name": "El Escorial Completed",
+    "year": 1584,
+    "category": "infrastructure",
+    "description": "Philip II of Spain completed his massive royal palace and monastery.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/330px-Monasterio_de_El_Escorial_en_Madrid.jpg"
+  },
+  {
+    "name": "golden-temple-amritsar",
+    "friendly_name": "Golden Temple Construction Begins",
+    "year": 1585,
+    "category": "infrastructure",
+    "description": "Guru Arjan began building the holiest gurdwara in Sikhism.",
+    "difficulty": "hard"
+  },
+  {
     "name": "rialto-bridge",
     "friendly_name": "Rialto Bridge Completed",
     "year": 1591,
@@ -394,6 +492,23 @@
     "description": "Venice completed the oldest stone bridge across the Grand Canal.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rialto_2025_4.jpg/330px-Rialto_2025_4.jpg"
+  },
+  {
+    "name": "taj-mahal-built",
+    "friendly_name": "Taj Mahal Construction Begins",
+    "year": 1632,
+    "category": "infrastructure",
+    "description": "Shah Jahan began building the iconic marble mausoleum for his wife.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "potala-palace",
+    "friendly_name": "Potala Palace Begun",
+    "year": 1645,
+    "category": "infrastructure",
+    "description": "The Dalai Lama's residence began construction in Lhasa, Tibet.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/330px-Potala_Palace_HQ.jpg"
   },
   {
     "name": "taj-mahal-completed",
@@ -432,6 +547,32 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/St_Pauls_aerial_%28cropped%29.jpg/330px-St_Pauls_aerial_%28cropped%29.jpg"
   },
   {
+    "name": "ladoga-canal",
+    "friendly_name": "Ladoga Canal Completed",
+    "year": 1730,
+    "category": "infrastructure",
+    "description": "Construction of the Ladoga Canal in Russia was completed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "schonbrunn-palace",
+    "friendly_name": "Schönbrunn Palace Completed",
+    "year": 1749,
+    "category": "infrastructure",
+    "description": "The Habsburg summer residence was finished in Vienna.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/330px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG"
+  },
+  {
+    "name": "catherine-palace",
+    "friendly_name": "Catherine Palace Completed",
+    "year": 1756,
+    "category": "infrastructure",
+    "description": "The rococo summer palace of Russian tsars was completed near St. Petersburg.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg/330px-%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg"
+  },
+  {
     "name": "winter-palace-completed",
     "friendly_name": "Winter Palace Completed",
     "year": 1762,
@@ -448,6 +589,15 @@
     "description": "James Watt's improvements accelerated the Industrial Revolution.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Watt_James_von_Breda.jpg/330px-Watt_James_von_Breda.jpg"
+  },
+  {
+    "name": "first-cotton-mill",
+    "friendly_name": "First Cotton Mill Opens",
+    "year": 1771,
+    "category": "infrastructure",
+    "description": "Richard Arkwright opened the first water-powered cotton mill in England.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Arkright%27s_Mill_-_Cromford_29-04-06.jpg/330px-Arkright%27s_Mill_-_Cromford_29-04-06.jpg"
   },
   {
     "name": "iron-bridge",
@@ -468,6 +618,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/330px-White_House_north_and_south_sides.jpg"
   },
   {
+    "name": "singapore-founded",
+    "friendly_name": "Singapore Founded as Trading Post",
+    "year": 1819,
+    "category": "infrastructure",
+    "description": "Sir Stamford Raffles established Singapore as a British trading post.",
+    "difficulty": "hard"
+  },
+  {
     "name": "erie-canal",
     "friendly_name": "Erie Canal Completed",
     "year": 1825,
@@ -486,6 +644,32 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
   },
   {
+    "name": "ohio-canals-authorized",
+    "friendly_name": "Ohio Canals Authorized",
+    "year": 1825,
+    "category": "infrastructure",
+    "description": "Ohio Legislature authorized construction of the Ohio and Erie Canal and Miami and Erie Canal.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "menai-suspension-bridge",
+    "friendly_name": "Menai Suspension Bridge Completed",
+    "year": 1826,
+    "category": "infrastructure",
+    "description": "The first major suspension bridge connected Wales to Anglesey.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Menai_Suspension_Bridge_%2835349065306%29.jpg/330px-The_Menai_Suspension_Bridge_%2835349065306%29.jpg"
+  },
+  {
+    "name": "liverpool-manchester-railway",
+    "friendly_name": "Liverpool-Manchester Railway Opens",
+    "year": 1830,
+    "category": "infrastructure",
+    "description": "The world's first intercity passenger railway opened in England.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
+  },
+  {
     "name": "telegraph",
     "friendly_name": "Telegraph Invented",
     "year": 1837,
@@ -493,6 +677,32 @@
     "description": "Samuel Morse invented the electric telegraph.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/OptischerTelegraf.jpg/330px-OptischerTelegraf.jpg"
+  },
+  {
+    "name": "crystal-palace",
+    "friendly_name": "Crystal Palace Built",
+    "year": 1851,
+    "category": "infrastructure",
+    "description": "The revolutionary glass and iron structure hosted the Great Exhibition.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Crystal_Palace_General_view_from_Water_Temple.jpg/330px-Crystal_Palace_General_view_from_Water_Temple.jpg"
+  },
+  {
+    "name": "india-first-railway",
+    "friendly_name": "India's First Railway",
+    "year": 1853,
+    "category": "infrastructure",
+    "description": "India's first passenger train ran between Mumbai and Thane.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "london-underground",
+    "friendly_name": "London Underground Opens",
+    "year": 1863,
+    "category": "infrastructure",
+    "description": "The world's first underground railway opened in London.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Underground.svg/330px-Underground.svg.png"
   },
   {
     "name": "brooklyn-bridge-begins",
@@ -540,6 +750,23 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/330px-Brooklyn_Bridge_Manhattan.jpg"
   },
   {
+    "name": "first-skyscraper-chicago",
+    "friendly_name": "First Skyscraper Built",
+    "year": 1885,
+    "category": "infrastructure",
+    "description": "The Home Insurance Building in Chicago pioneered steel-frame construction.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Detroit_Photographic_Company_%280645%29.jpg/330px-Detroit_Photographic_Company_%280645%29.jpg"
+  },
+  {
+    "name": "canadian-pacific-railway",
+    "friendly_name": "Canadian Pacific Railway Completed",
+    "year": 1885,
+    "category": "infrastructure",
+    "description": "Canada's transcontinental railway connected the Atlantic to the Pacific.",
+    "difficulty": "medium"
+  },
+  {
     "name": "automobile",
     "friendly_name": "First Automobile",
     "year": 1886,
@@ -565,6 +792,15 @@
     "description": "Gustave Eiffel's iron tower became the symbol of Paris.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/330px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg"
+  },
+  {
+    "name": "ferris-wheel-invented",
+    "friendly_name": "First Ferris Wheel Built",
+    "year": 1893,
+    "category": "infrastructure",
+    "description": "George Ferris built his wheel for the Chicago World's Fair.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ain_Dubai_View.jpg/330px-Ain_Dubai_View.jpg"
   },
   {
     "name": "tower-bridge-london",
@@ -621,6 +857,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cptvdisplay.jpg/330px-Cptvdisplay.jpg"
   },
   {
+    "name": "la-city-hall",
+    "friendly_name": "Los Angeles City Hall Completed",
+    "year": 1928,
+    "category": "infrastructure",
+    "description": "The distinctive tower became LA's tallest building for decades.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Los_Angeles_City_Hall_2013.jpg/330px-Los_Angeles_City_Hall_2013.jpg"
+  },
+  {
     "name": "chrysler-building",
     "friendly_name": "Chrysler Building Completed",
     "year": 1930,
@@ -637,6 +882,33 @@
     "description": "The iconic skyscraper became the world's tallest building for 40 years.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+  },
+  {
+    "name": "radio-city-music-hall",
+    "friendly_name": "Radio City Music Hall Opens",
+    "year": 1932,
+    "category": "infrastructure",
+    "description": "The Art Deco entertainment venue opened in Rockefeller Center.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Radio_City_Music_Hall_%2851395756913%29.jpg/330px-Radio_City_Music_Hall_%2851395756913%29.jpg"
+  },
+  {
+    "name": "vatican-museum-spiral-staircase",
+    "friendly_name": "Vatican Museums Spiral Staircase",
+    "year": 1932,
+    "category": "infrastructure",
+    "description": "The iconic double-helix staircase was built in Vatican City.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Musei_vaticani_Coat_of_Arms.svg/330px-Musei_vaticani_Coat_of_Arms.svg.png"
+  },
+  {
+    "name": "sydney-harbour-bridge",
+    "friendly_name": "Sydney Harbour Bridge Opens",
+    "year": 1932,
+    "category": "infrastructure",
+    "description": "The steel arch bridge connecting Sydney's north and south shores opened.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sydney_Harbour_Bridge-16_October_2025.jpg/330px-Sydney_Harbour_Bridge-16_October_2025.jpg"
   },
   {
     "name": "hoover-dam",
@@ -657,6 +929,41 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/330px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg"
   },
   {
+    "name": "oil-discovery-saudi",
+    "friendly_name": "Oil Discovered in Saudi Arabia",
+    "year": 1938,
+    "category": "infrastructure",
+    "description": "Commercial oil was discovered in Dammam, transforming Saudi Arabia's economy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rockefeller-center",
+    "friendly_name": "Rockefeller Center Completed",
+    "year": 1939,
+    "category": "infrastructure",
+    "description": "The massive Art Deco complex in Manhattan was finished.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/GE_Building_by_David_Shankbone.JPG/330px-GE_Building_by_David_Shankbone.JPG"
+  },
+  {
+    "name": "fallingwater",
+    "friendly_name": "Fallingwater Completed",
+    "year": 1939,
+    "category": "infrastructure",
+    "description": "Frank Lloyd Wright's house over a waterfall was finished in Pennsylvania.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/330px-Fallingwater3.jpg"
+  },
+  {
+    "name": "mount-rushmore",
+    "friendly_name": "Mount Rushmore Completed",
+    "year": 1941,
+    "category": "infrastructure",
+    "description": "The presidential faces carved into the mountain were declared complete.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/330px-Mount_Rushmore_detail_view_%28100MP%29.jpg"
+  },
+  {
     "name": "autobahn-expanded",
     "friendly_name": "German Autobahn Network Expanded",
     "year": 1942,
@@ -675,6 +982,40 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/5-gon_cyclic_01.svg/320px-5-gon_cyclic_01.svg.png"
   },
   {
+    "name": "jefferson-memorial",
+    "friendly_name": "Jefferson Memorial Completed",
+    "year": 1943,
+    "category": "infrastructure",
+    "description": "The neoclassical memorial opened in Washington DC.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/JeffersonMemorialNightFB.jpg/330px-JeffersonMemorialNightFB.jpg"
+  },
+  {
+    "name": "british-railways-nationalized",
+    "friendly_name": "British Railways Nationalized",
+    "year": 1948,
+    "category": "infrastructure",
+    "description": "The British railway network is nationalized to form British Railways.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trans-arabian-pipeline",
+    "friendly_name": "Trans-Arabian Pipeline Completed",
+    "year": 1950,
+    "category": "infrastructure",
+    "description": "A pipeline to transport Saudi oil to the Mediterranean was completed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "farnsworth-house",
+    "friendly_name": "Farnsworth House Completed",
+    "year": 1951,
+    "category": "infrastructure",
+    "description": "Mies van der Rohe's glass pavilion was completed in Illinois.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg/330px-Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg"
+  },
+  {
     "name": "united-nations-hq",
     "friendly_name": "United Nations Headquarters Completed",
     "year": 1952,
@@ -682,6 +1023,24 @@
     "description": "The UN complex opened on the East River in New York City.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Midtown_Manhattan_Skyline_004_%28cropped%29.jpg/330px-Midtown_Manhattan_Skyline_004_%28cropped%29.jpg"
+  },
+  {
+    "name": "lever-house",
+    "friendly_name": "Lever House Completed",
+    "year": 1952,
+    "category": "infrastructure",
+    "description": "The glass curtain wall skyscraper pioneered modern office design.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lever_House_390_Park_Avenue.jpg/330px-Lever_House_390_Park_Avenue.jpg"
+  },
+  {
+    "name": "notre-dame-du-haut",
+    "friendly_name": "Notre Dame du Haut Completed",
+    "year": 1955,
+    "category": "infrastructure",
+    "description": "Le Corbusier's sculptural chapel was completed at Ronchamp.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/RonchampCorbu.jpg/330px-RonchampCorbu.jpg"
   },
   {
     "name": "interstate-highway-begins",
@@ -693,6 +1052,23 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/I-80.svg/330px-I-80.svg.png"
   },
   {
+    "name": "seagram-building",
+    "friendly_name": "Seagram Building Completed",
+    "year": 1958,
+    "category": "infrastructure",
+    "description": "Mies van der Rohe's modernist masterpiece opened in New York.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Seagram_Building_%2835098307116%29.jpg/330px-Seagram_Building_%2835098307116%29.jpg"
+  },
+  {
+    "name": "lego-brick-patent",
+    "friendly_name": "Lego Brick Patent",
+    "year": 1958,
+    "category": "infrastructure",
+    "description": "The Lego company patents the design of its Lego bricks, still compatible with bricks produced today.",
+    "difficulty": "easy"
+  },
+  {
     "name": "sydney-opera-house-begins",
     "friendly_name": "Sydney Opera House Construction Begins",
     "year": 1959,
@@ -700,6 +1076,15 @@
     "description": "Work began on the iconic Australian performing arts center.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/330px-Sydney_Australia._%2821339175489%29.jpg"
+  },
+  {
+    "name": "brasilia-built",
+    "friendly_name": "Brasília Inaugurated",
+    "year": 1960,
+    "category": "infrastructure",
+    "description": "Brazil's modernist capital city was completed in just four years.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Planalto_Central_%28cropped%29.jpg/330px-Planalto_Central_%28cropped%29.jpg"
   },
   {
     "name": "berlin-wall-built",
@@ -711,6 +1096,50 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlinermauer.jpg/330px-Berlinermauer.jpg"
   },
   {
+    "name": "seattle-space-needle",
+    "friendly_name": "Space Needle Completed",
+    "year": 1962,
+    "category": "infrastructure",
+    "description": "Seattle's iconic tower was built for the World's Fair.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/330px-Space_Needle_2011-07-04.jpg"
+  },
+  {
+    "name": "twa-terminal",
+    "friendly_name": "TWA Terminal Completed",
+    "year": 1962,
+    "category": "infrastructure",
+    "description": "Eero Saarinen's bird-shaped terminal opened at JFK Airport.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG/330px-Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG"
+  },
+  {
+    "name": "marina-city",
+    "friendly_name": "Marina City Completed",
+    "year": 1964,
+    "category": "infrastructure",
+    "description": "The corn cob-shaped towers opened in Chicago.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg/330px-Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg"
+  },
+  {
+    "name": "verrazano-narrows-bridge",
+    "friendly_name": "Verrazzano-Narrows Bridge Opens",
+    "year": 1964,
+    "category": "infrastructure",
+    "description": "The world's longest suspension bridge opened in New York.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Verrazano_Bridge2.jpg/330px-Verrazano_Bridge2.jpg"
+  },
+  {
+    "name": "shinkansen-opens",
+    "friendly_name": "Shinkansen Opens",
+    "year": 1964,
+    "category": "infrastructure",
+    "description": "Japan launched the world's first high-speed rail line, the Bullet Train.",
+    "difficulty": "medium"
+  },
+  {
     "name": "gateway-arch",
     "friendly_name": "Gateway Arch Completed",
     "year": 1965,
@@ -718,6 +1147,24 @@
     "description": "The stainless steel monument was completed in St. Louis.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/330px-St_Louis_night_expblend_cropped.jpg"
+  },
+  {
+    "name": "astrodome-opens",
+    "friendly_name": "Astrodome Opens",
+    "year": 1965,
+    "category": "infrastructure",
+    "description": "The world's first domed sports stadium opened in Houston.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Reliant_Astrodome_in_January_2014.jpg/330px-Reliant_Astrodome_in_January_2014.jpg"
+  },
+  {
+    "name": "vehicle-assembly-building",
+    "friendly_name": "Vehicle Assembly Building Completed",
+    "year": 1966,
+    "category": "infrastructure",
+    "description": "NASA's massive rocket assembly building was completed at Kennedy Space Center.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/VAB_and_SLS.jpg/330px-VAB_and_SLS.jpg"
   },
   {
     "name": "world-trade-center-begins",
@@ -729,6 +1176,24 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/WTC-1970-under-construction.jpg/330px-WTC-1970-under-construction.jpg"
   },
   {
+    "name": "john-hancock-center",
+    "friendly_name": "John Hancock Center Completed",
+    "year": 1969,
+    "category": "infrastructure",
+    "description": "The X-braced Chicago skyscraper was finished.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg/330px-Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg"
+  },
+  {
+    "name": "lake-pontchartrain-causeway",
+    "friendly_name": "Lake Pontchartrain Causeway Expanded",
+    "year": 1969,
+    "category": "infrastructure",
+    "description": "The world's longest bridge over water was doubled in Louisiana.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg/330px-Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg"
+  },
+  {
     "name": "aswan-high-dam",
     "friendly_name": "Aswan High Dam Completed",
     "year": 1970,
@@ -736,6 +1201,15 @@
     "description": "Egypt completed the massive dam across the Nile River.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/aswan-high-dam_h0yu5c?_a=BAMAMiTC0"
+  },
+  {
+    "name": "transamerica-pyramid",
+    "friendly_name": "Transamerica Pyramid Completed",
+    "year": 1972,
+    "category": "infrastructure",
+    "description": "San Francisco's distinctive pyramid-shaped skyscraper was finished.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Transamerica_Pyramid_from_Coit_Tower.jpg/330px-Transamerica_Pyramid_from_Coit_Tower.jpg"
   },
   {
     "name": "sydney-opera-house-completed",
@@ -774,6 +1248,69 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/330px-Apple_logo_black.svg.png"
   },
   {
+    "name": "pompidou-center",
+    "friendly_name": "Centre Pompidou Opens",
+    "year": 1977,
+    "category": "infrastructure",
+    "description": "The inside-out building with exposed pipes opened in Paris.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg/330px-Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg.png"
+  },
+  {
+    "name": "st-gotthard-road-tunnel",
+    "friendly_name": "St. Gotthard Road Tunnel Opens",
+    "year": 1980,
+    "category": "infrastructure",
+    "description": "The world's longest road tunnel at the time opened in Switzerland.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gotthard_Road_Tunnel_Switzerland.jpg/330px-Gotthard_Road_Tunnel_Switzerland.jpg"
+  },
+  {
+    "name": "humber-bridge",
+    "friendly_name": "Humber Bridge Opens",
+    "year": 1981,
+    "category": "infrastructure",
+    "description": "The world's longest suspension bridge opened in England.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Humber_Bridge2.png/330px-Humber_Bridge2.png"
+  },
+  {
+    "name": "itaipu-dam",
+    "friendly_name": "Itaipu Dam Completed",
+    "year": 1984,
+    "category": "infrastructure",
+    "description": "The massive hydroelectric dam on the Brazil-Paraguay border was finished.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Itaipu_geral.jpg/330px-Itaipu_geral.jpg"
+  },
+  {
+    "name": "at-and-t-building",
+    "friendly_name": "AT&T Building Completed",
+    "year": 1984,
+    "category": "infrastructure",
+    "description": "Philip Johnson's postmodern skyscraper with its Chippendale top opened.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sony_Building_by_David_Shankbone_crop.jpg/330px-Sony_Building_by_David_Shankbone_crop.jpg"
+  },
+  {
+    "name": "lloyds-building",
+    "friendly_name": "Lloyd's Building Completed",
+    "year": 1986,
+    "category": "infrastructure",
+    "description": "Richard Rogers' high-tech building with external services opened in London.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lloyds_building_taken_2011.jpg/330px-Lloyds_building_taken_2011.jpg"
+  },
+  {
+    "name": "sunshine-skyway-bridge",
+    "friendly_name": "Sunshine Skyway Bridge Opens",
+    "year": 1987,
+    "category": "infrastructure",
+    "description": "The cable-stayed bridge replaced a structure hit by a ship in Tampa Bay.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/SunshineSkywayBridge-4SC_6643-15.jpg/330px-SunshineSkywayBridge-4SC_6643-15.jpg"
+  },
+  {
     "name": "channel-tunnel-begins",
     "friendly_name": "Channel Tunnel Construction Begins",
     "year": 1988,
@@ -783,6 +1320,51 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg"
   },
   {
+    "name": "seikan-tunnel",
+    "friendly_name": "Seikan Tunnel Opens",
+    "year": 1988,
+    "category": "infrastructure",
+    "description": "The world's longest undersea tunnel connected Japan's main islands.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Inside_seikan_tunnel.JPG/330px-Inside_seikan_tunnel.JPG"
+  },
+  {
+    "name": "louvre-pyramid",
+    "friendly_name": "Louvre Pyramid Completed",
+    "year": 1989,
+    "category": "infrastructure",
+    "description": "I.M. Pei's glass pyramid opened as the entrance to the Louvre.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Louvre_Pyramid.jpg/330px-Louvre_Pyramid.jpg"
+  },
+  {
+    "name": "eurotunnel-boring",
+    "friendly_name": "Channel Tunnel Breakthrough",
+    "year": 1990,
+    "category": "infrastructure",
+    "description": "British and French tunneling teams met under the English Channel.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg"
+  },
+  {
+    "name": "bank-of-china-tower",
+    "friendly_name": "Bank of China Tower Completed",
+    "year": 1990,
+    "category": "infrastructure",
+    "description": "I.M. Pei's geometric skyscraper opened in Hong Kong.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg/330px-BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg"
+  },
+  {
+    "name": "canary-wharf-tower",
+    "friendly_name": "One Canada Square Completed",
+    "year": 1991,
+    "category": "infrastructure",
+    "description": "The UK's tallest building opened in London's Docklands.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/London_MMB_S6_Canary_Wharf.jpg/330px-London_MMB_S6_Canary_Wharf.jpg"
+  },
+  {
     "name": "chunnel-completed",
     "friendly_name": "Channel Tunnel Completed",
     "year": 1994,
@@ -790,6 +1372,42 @@
     "description": "The undersea rail tunnel connecting Britain and France opened.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg"
+  },
+  {
+    "name": "denver-airport",
+    "friendly_name": "Denver International Airport Opens",
+    "year": 1995,
+    "category": "infrastructure",
+    "description": "The distinctive tent-roofed airport opened as America's largest.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/09077AD.pdf/page1-320px-09077AD.pdf.jpg"
+  },
+  {
+    "name": "bilbao-metro",
+    "friendly_name": "Bilbao Metro Opens",
+    "year": 1995,
+    "category": "infrastructure",
+    "description": "Norman Foster's futuristic metro system opened in Spain.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bilbao_Metro_05_2012_2401.jpg/330px-Bilbao_Metro_05_2012_2401.jpg"
+  },
+  {
+    "name": "guggenheim-bilbao",
+    "friendly_name": "Guggenheim Bilbao Opens",
+    "year": 1997,
+    "category": "infrastructure",
+    "description": "Frank Gehry's titanium-clad museum transformed the Spanish city.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg/330px-Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg"
+  },
+  {
+    "name": "confederation-bridge",
+    "friendly_name": "Confederation Bridge Opens",
+    "year": 1997,
+    "category": "infrastructure",
+    "description": "The longest bridge over ice-covered water connected PEI to mainland Canada.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Confederation_Bridge_during_winter.jpg/330px-Confederation_Bridge_during_winter.jpg"
   },
   {
     "name": "petronas-towers",
@@ -810,6 +1428,33 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/HongKongAirportlogo.svg/320px-HongKongAirportlogo.svg.png"
   },
   {
+    "name": "akashi-kaikyo-bridge",
+    "friendly_name": "Akashi Kaikyo Bridge Completed",
+    "year": 1998,
+    "category": "infrastructure",
+    "description": "The world's longest suspension bridge opened in Japan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Akashi_Bridge.JPG/330px-Akashi_Bridge.JPG"
+  },
+  {
+    "name": "great-belt-bridge",
+    "friendly_name": "Great Belt Bridge Completed",
+    "year": 1998,
+    "category": "infrastructure",
+    "description": "The longest combined road and rail bridge opened in Denmark.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg/330px-Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg"
+  },
+  {
+    "name": "international-space-station",
+    "friendly_name": "ISS Construction Begins",
+    "year": 1998,
+    "category": "infrastructure",
+    "description": "Assembly of the International Space Station began in orbit.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ISS-assembly-animation.gif/330px-ISS-assembly-animation.gif"
+  },
+  {
     "name": "millennium-dome",
     "friendly_name": "Millennium Dome Completed",
     "year": 1999,
@@ -819,6 +1464,15 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Millennium_Dome_1.jpg/330px-Millennium_Dome_1.jpg"
   },
   {
+    "name": "burj-al-arab",
+    "friendly_name": "Burj Al Arab Completed",
+    "year": 1999,
+    "category": "infrastructure",
+    "description": "The sail-shaped luxury hotel opened in Dubai.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg/330px-Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg"
+  },
+  {
     "name": "tate-modern",
     "friendly_name": "Tate Modern Opens",
     "year": 2000,
@@ -826,6 +1480,59 @@
     "description": "A former power station was converted into London's modern art museum.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tate_Modern_-_Bankside_Power_Station.jpg/330px-Tate_Modern_-_Bankside_Power_Station.jpg"
+  },
+  {
+    "name": "oresund-bridge",
+    "friendly_name": "Øresund Bridge Opens",
+    "year": 2000,
+    "category": "infrastructure",
+    "description": "The bridge-tunnel connecting Denmark and Sweden opened.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%C3%98resund_Bridge_from_the_air_in_September_2015.jpg/330px-%C3%98resund_Bridge_from_the_air_in_September_2015.jpg"
+  },
+  {
+    "name": "london-eye",
+    "friendly_name": "London Eye Opens",
+    "year": 2000,
+    "category": "infrastructure",
+    "description": "The giant observation wheel opened on the South Bank.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/London-Eye-2009.JPG/330px-London-Eye-2009.JPG"
+  },
+  {
+    "name": "jewish-museum-berlin",
+    "friendly_name": "Jewish Museum Berlin Opens",
+    "year": 2001,
+    "category": "infrastructure",
+    "description": "Daniel Libeskind's zigzag museum opened in Germany.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Jewish_Museum_Berlin_logo.svg/320px-Jewish_Museum_Berlin_logo.svg.png"
+  },
+  {
+    "name": "delhi-metro",
+    "friendly_name": "Delhi Metro Opens",
+    "year": 2002,
+    "category": "infrastructure",
+    "description": "India's second metro system began operations in the capital.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/DelhiMetroYellowLine.JPG/330px-DelhiMetroYellowLine.JPG"
+  },
+  {
+    "name": "gwadar-port",
+    "friendly_name": "Gwadar Port Development Begins",
+    "year": 2002,
+    "category": "infrastructure",
+    "description": "Pakistan began developing a deep-sea port with Chinese investment.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "swiss-re-building",
+    "friendly_name": "The Gherkin Completed",
+    "year": 2003,
+    "category": "infrastructure",
+    "description": "Norman Foster's pickle-shaped tower opened in London.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/30_St_Mary_Axe%2C_%27Gherkin%27.JPG/330px-30_St_Mary_Axe%2C_%27Gherkin%27.JPG"
   },
   {
     "name": "millau-viaduct",
@@ -855,238 +1562,13 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/ThreeGorgesDam-China2009.jpg/330px-ThreeGorgesDam-China2009.jpg"
   },
   {
-    "name": "burj-khalifa",
-    "friendly_name": "Burj Khalifa Completed",
-    "year": 2010,
+    "name": "palm-jumeirah",
+    "friendly_name": "Palm Jumeirah Completed",
+    "year": 2006,
     "category": "infrastructure",
-    "description": "The world's tallest building opened in Dubai at 2,717 feet.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/330px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg"
-  },
-  {
-    "name": "one-world-trade",
-    "friendly_name": "One World Trade Center Completed",
-    "year": 2014,
-    "category": "infrastructure",
-    "description": "The tallest building in the Western Hemisphere opened on the WTC site.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/One_WTC_logo.svg/320px-One_WTC_logo.svg.png"
-  },
-  {
-    "name": "gotthard-base-tunnel",
-    "friendly_name": "Gotthard Base Tunnel Opens",
-    "year": 2016,
-    "category": "infrastructure",
-    "description": "The world's longest railway tunnel opened through the Swiss Alps.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg/330px-20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg"
-  },
-  {
-    "name": "beijing-daxing-airport",
-    "friendly_name": "Beijing Daxing Airport Opens",
-    "year": 2019,
-    "category": "infrastructure",
-    "description": "The massive starfish-shaped airport opened as the world's largest single terminal.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg/330px-%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg"
-  },
-  {
-    "name": "crossrail-elizabeth-line",
-    "friendly_name": "Elizabeth Line Opens",
-    "year": 2022,
-    "category": "infrastructure",
-    "description": "London's new cross-city railway opened after years of construction.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Elizabeth_line_roundel.svg/330px-Elizabeth_line_roundel.svg.png"
-  },
-  {
-    "name": "skara-brae",
-    "friendly_name": "Skara Brae Settlement",
-    "year": -3180,
-    "category": "infrastructure",
-    "description": "A Neolithic village was built on Orkney, Scotland, preserved for millennia.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2018_07_12_Schottland_%2894%29.jpg/330px-2018_07_12_Schottland_%2894%29.jpg"
-  },
-  {
-    "name": "step-pyramid-djoser",
-    "friendly_name": "Step Pyramid of Djoser Built",
-    "year": -2650,
-    "category": "infrastructure",
-    "description": "The first monumental stone building in history was constructed in Egypt.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/330px-Saqqara_pyramid_ver_2.jpg"
-  },
-  {
-    "name": "mohenjo-daro",
-    "friendly_name": "Mohenjo-daro Built",
-    "year": -2500,
-    "category": "infrastructure",
-    "description": "One of the largest cities of the Indus Valley civilization was established.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/330px-Mohenjodaro_-_view_of_the_stupa_mound.JPG"
-  },
-  {
-    "name": "mycenaean-citadels",
-    "friendly_name": "Mycenaean Citadels Built",
-    "year": -1400,
-    "category": "infrastructure",
-    "description": "The Greeks built fortified palace complexes including Mycenae and Tiryns.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg/330px-Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg"
-  },
-  {
-    "name": "ishtar-gate",
-    "friendly_name": "Ishtar Gate of Babylon Built",
-    "year": -575,
-    "category": "infrastructure",
-    "description": "King Nebuchadnezzar II built the magnificent blue-tiled gate in Babylon.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pergamonmuseum_Ishtartor_05.jpg/330px-Pergamonmuseum_Ishtartor_05.jpg"
-  },
-  {
-    "name": "trajan-column",
-    "friendly_name": "Trajan's Column Erected",
-    "year": 113,
-    "category": "infrastructure",
-    "description": "Rome erected a triumphal column depicting victories against the Dacians.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trajan%27s_Column_HD.jpg/330px-Trajan%27s_Column_HD.jpg"
-  },
-  {
-    "name": "borobudur-temple",
-    "friendly_name": "Borobudur Temple Built",
-    "year": 825,
-    "category": "infrastructure",
-    "description": "The world's largest Buddhist temple was completed in Java.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg"
-  },
-  {
-    "name": "great-zimbabwe",
-    "friendly_name": "Great Zimbabwe Built",
-    "year": 1100,
-    "category": "infrastructure",
-    "description": "The medieval African city's massive stone structures were constructed.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/330px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg"
-  },
-  {
-    "name": "kremlin-walls",
-    "friendly_name": "Moscow Kremlin Walls Built",
-    "year": 1485,
-    "category": "infrastructure",
-    "description": "The iconic red walls of the Kremlin fortress were constructed.",
+    "description": "The artificial palm-shaped island was completed in Dubai.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/330px-Moscow_Kremlin_%288281675670%29.jpg"
-  },
-  {
-    "name": "escorial-palace",
-    "friendly_name": "El Escorial Completed",
-    "year": 1584,
-    "category": "infrastructure",
-    "description": "Philip II of Spain completed his massive royal palace and monastery.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/330px-Monasterio_de_El_Escorial_en_Madrid.jpg"
-  },
-  {
-    "name": "potala-palace",
-    "friendly_name": "Potala Palace Begun",
-    "year": 1645,
-    "category": "infrastructure",
-    "description": "The Dalai Lama's residence began construction in Lhasa, Tibet.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/330px-Potala_Palace_HQ.jpg"
-  },
-  {
-    "name": "schonbrunn-palace",
-    "friendly_name": "Schönbrunn Palace Completed",
-    "year": 1749,
-    "category": "infrastructure",
-    "description": "The Habsburg summer residence was finished in Vienna.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/330px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG"
-  },
-  {
-    "name": "catherine-palace",
-    "friendly_name": "Catherine Palace Completed",
-    "year": 1756,
-    "category": "infrastructure",
-    "description": "The rococo summer palace of Russian tsars was completed near St. Petersburg.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg/330px-%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg"
-  },
-  {
-    "name": "first-cotton-mill",
-    "friendly_name": "First Cotton Mill Opens",
-    "year": 1771,
-    "category": "infrastructure",
-    "description": "Richard Arkwright opened the first water-powered cotton mill in England.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Arkright%27s_Mill_-_Cromford_29-04-06.jpg/330px-Arkright%27s_Mill_-_Cromford_29-04-06.jpg"
-  },
-  {
-    "name": "menai-suspension-bridge",
-    "friendly_name": "Menai Suspension Bridge Completed",
-    "year": 1826,
-    "category": "infrastructure",
-    "description": "The first major suspension bridge connected Wales to Anglesey.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Menai_Suspension_Bridge_%2835349065306%29.jpg/330px-The_Menai_Suspension_Bridge_%2835349065306%29.jpg"
-  },
-  {
-    "name": "liverpool-manchester-railway",
-    "friendly_name": "Liverpool-Manchester Railway Opens",
-    "year": 1830,
-    "category": "infrastructure",
-    "description": "The world's first intercity passenger railway opened in England.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
-  },
-  {
-    "name": "crystal-palace",
-    "friendly_name": "Crystal Palace Built",
-    "year": 1851,
-    "category": "infrastructure",
-    "description": "The revolutionary glass and iron structure hosted the Great Exhibition.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Crystal_Palace_General_view_from_Water_Temple.jpg/330px-Crystal_Palace_General_view_from_Water_Temple.jpg"
-  },
-  {
-    "name": "london-underground",
-    "friendly_name": "London Underground Opens",
-    "year": 1863,
-    "category": "infrastructure",
-    "description": "The world's first underground railway opened in London.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Underground.svg/330px-Underground.svg.png"
-  },
-  {
-    "name": "first-skyscraper-chicago",
-    "friendly_name": "First Skyscraper Built",
-    "year": 1885,
-    "category": "infrastructure",
-    "description": "The Home Insurance Building in Chicago pioneered steel-frame construction.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Detroit_Photographic_Company_%280645%29.jpg/330px-Detroit_Photographic_Company_%280645%29.jpg"
-  },
-  {
-    "name": "hong-kong-zhuhai-macau-bridge",
-    "friendly_name": "Hong Kong-Zhuhai-Macau Bridge Opens",
-    "year": 2018,
-    "category": "infrastructure",
-    "description": "The world's longest sea crossing bridge opened in China.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg/330px-West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg"
-  },
-  {
-    "name": "shanghai-tower",
-    "friendly_name": "Shanghai Tower Completed",
-    "year": 2015,
-    "category": "infrastructure",
-    "description": "China's tallest building and the world's second tallest was finished.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/2/23/Shanghai_Tower_logo.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg/330px-Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg"
   },
   {
     "name": "beijing-national-stadium",
@@ -1098,177 +1580,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Beijing_China_Beijing-National-Stadium-01.jpg/330px-Beijing_China_Beijing-National-Stadium-01.jpg"
   },
   {
-    "name": "burj-al-arab",
-    "friendly_name": "Burj Al Arab Completed",
-    "year": 1999,
-    "category": "infrastructure",
-    "description": "The sail-shaped luxury hotel opened in Dubai.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg/330px-Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg"
-  },
-  {
-    "name": "guggenheim-bilbao",
-    "friendly_name": "Guggenheim Bilbao Opens",
-    "year": 1997,
-    "category": "infrastructure",
-    "description": "Frank Gehry's titanium-clad museum transformed the Spanish city.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg/330px-Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg"
-  },
-  {
-    "name": "akashi-kaikyo-bridge",
-    "friendly_name": "Akashi Kaikyo Bridge Completed",
-    "year": 1998,
-    "category": "infrastructure",
-    "description": "The world's longest suspension bridge opened in Japan.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Akashi_Bridge.JPG/330px-Akashi_Bridge.JPG"
-  },
-  {
-    "name": "denver-airport",
-    "friendly_name": "Denver International Airport Opens",
-    "year": 1995,
-    "category": "infrastructure",
-    "description": "The distinctive tent-roofed airport opened as America's largest.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/09077AD.pdf/page1-320px-09077AD.pdf.jpg"
-  },
-  {
-    "name": "eurotunnel-boring",
-    "friendly_name": "Channel Tunnel Breakthrough",
-    "year": 1990,
-    "category": "infrastructure",
-    "description": "British and French tunneling teams met under the English Channel.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg"
-  },
-  {
-    "name": "palm-jumeirah",
-    "friendly_name": "Palm Jumeirah Completed",
-    "year": 2006,
-    "category": "infrastructure",
-    "description": "The artificial palm-shaped island was completed in Dubai.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg/330px-Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg"
-  },
-  {
-    "name": "marina-bay-sands",
-    "friendly_name": "Marina Bay Sands Opens",
-    "year": 2010,
-    "category": "infrastructure",
-    "description": "The iconic three-tower hotel with rooftop infinity pool opened in Singapore.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/330px-Marina_Bay_Sands_%28I%29.jpg"
-  },
-  {
-    "name": "apple-park",
-    "friendly_name": "Apple Park Completed",
-    "year": 2017,
-    "category": "infrastructure",
-    "description": "Apple's spaceship-shaped headquarters opened in Cupertino.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/330px-Aerial_view_of_Apple_Park_dllu.jpg"
-  },
-  {
-    "name": "st-gotthard-road-tunnel",
-    "friendly_name": "St. Gotthard Road Tunnel Opens",
-    "year": 1980,
-    "category": "infrastructure",
-    "description": "The world's longest road tunnel at the time opened in Switzerland.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gotthard_Road_Tunnel_Switzerland.jpg/330px-Gotthard_Road_Tunnel_Switzerland.jpg"
-  },
-  {
-    "name": "itaipu-dam",
-    "friendly_name": "Itaipu Dam Completed",
-    "year": 1984,
-    "category": "infrastructure",
-    "description": "The massive hydroelectric dam on the Brazil-Paraguay border was finished.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Itaipu_geral.jpg/330px-Itaipu_geral.jpg"
-  },
-  {
-    "name": "seikan-tunnel",
-    "friendly_name": "Seikan Tunnel Opens",
-    "year": 1988,
-    "category": "infrastructure",
-    "description": "The world's longest undersea tunnel connected Japan's main islands.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Inside_seikan_tunnel.JPG/330px-Inside_seikan_tunnel.JPG"
-  },
-  {
-    "name": "great-belt-bridge",
-    "friendly_name": "Great Belt Bridge Completed",
-    "year": 1998,
-    "category": "infrastructure",
-    "description": "The longest combined road and rail bridge opened in Denmark.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg/330px-Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg"
-  },
-  {
-    "name": "oresund-bridge",
-    "friendly_name": "Øresund Bridge Opens",
-    "year": 2000,
-    "category": "infrastructure",
-    "description": "The bridge-tunnel connecting Denmark and Sweden opened.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%C3%98resund_Bridge_from_the_air_in_September_2015.jpg/330px-%C3%98resund_Bridge_from_the_air_in_September_2015.jpg"
-  },
-  {
-    "name": "lotte-world-tower",
-    "friendly_name": "Lotte World Tower Completed",
-    "year": 2016,
-    "category": "infrastructure",
-    "description": "South Korea's tallest building was completed in Seoul.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Lotte_World_Tower_day_view_10.jpg/330px-Lotte_World_Tower_day_view_10.jpg"
-  },
-  {
-    "name": "one-vanderbilt",
-    "friendly_name": "One Vanderbilt Completed",
-    "year": 2020,
-    "category": "infrastructure",
-    "description": "The supertall skyscraper opened next to Grand Central Terminal.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3d/One_Vanderbilt_logo.png"
-  },
-  {
-    "name": "hudson-yards",
-    "friendly_name": "Hudson Yards Opens",
-    "year": 2019,
-    "category": "infrastructure",
-    "description": "The largest private real estate development in US history opened in NYC.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg/330px-Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg"
-  },
-  {
-    "name": "steinway-tower",
-    "friendly_name": "Steinway Tower Completed",
-    "year": 2021,
-    "category": "infrastructure",
-    "description": "The skinniest skyscraper in the world was completed in Manhattan.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg/330px-05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg"
-  },
-  {
-    "name": "merdeka-118",
-    "friendly_name": "Merdeka 118 Completed",
-    "year": 2023,
-    "category": "infrastructure",
-    "description": "The second-tallest building in the world was completed in Kuala Lumpur.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg/330px-Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg"
-  },
-  {
-    "name": "jeddah-tower-begins",
-    "friendly_name": "Jeddah Tower Construction Begins",
-    "year": 2013,
-    "category": "infrastructure",
-    "description": "Work began on what will be the world's first kilometer-tall building.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/330px-Flag_of_Saudi_Arabia.svg.png"
-  },
-  {
     "name": "cern-lhc",
     "friendly_name": "Large Hadron Collider Completed",
     "year": 2008,
@@ -1278,319 +1589,21 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/LHC.svg/330px-LHC.svg.png"
   },
   {
-    "name": "international-space-station",
-    "friendly_name": "ISS Construction Begins",
-    "year": 1998,
+    "name": "singapore-flyer",
+    "friendly_name": "Singapore Flyer Opens",
+    "year": 2008,
     "category": "infrastructure",
-    "description": "Assembly of the International Space Station began in orbit.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ISS-assembly-animation.gif/330px-ISS-assembly-animation.gif"
-  },
-  {
-    "name": "sagrada-familia-progress",
-    "friendly_name": "Sagrada Família Central Tower",
-    "year": 2021,
-    "category": "infrastructure",
-    "description": "The tallest tower of Gaudí's unfinished basilica was topped out.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg/330px-%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg"
-  },
-  {
-    "name": "louvre-pyramid",
-    "friendly_name": "Louvre Pyramid Completed",
-    "year": 1989,
-    "category": "infrastructure",
-    "description": "I.M. Pei's glass pyramid opened as the entrance to the Louvre.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Louvre_Pyramid.jpg/330px-Louvre_Pyramid.jpg"
-  },
-  {
-    "name": "pompidou-center",
-    "friendly_name": "Centre Pompidou Opens",
-    "year": 1977,
-    "category": "infrastructure",
-    "description": "The inside-out building with exposed pipes opened in Paris.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg/330px-Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg.png"
-  },
-  {
-    "name": "john-hancock-center",
-    "friendly_name": "John Hancock Center Completed",
-    "year": 1969,
-    "category": "infrastructure",
-    "description": "The X-braced Chicago skyscraper was finished.",
+    "description": "The world's largest observation wheel at the time opened.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg/330px-Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Singapore_Flyer_20250903.jpg/330px-Singapore_Flyer_20250903.jpg"
   },
   {
-    "name": "transamerica-pyramid",
-    "friendly_name": "Transamerica Pyramid Completed",
-    "year": 1972,
+    "name": "china-high-speed-rail",
+    "friendly_name": "China High-Speed Rail Network Begins",
+    "year": 2008,
     "category": "infrastructure",
-    "description": "San Francisco's distinctive pyramid-shaped skyscraper was finished.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Transamerica_Pyramid_from_Coit_Tower.jpg/330px-Transamerica_Pyramid_from_Coit_Tower.jpg"
-  },
-  {
-    "name": "seattle-space-needle",
-    "friendly_name": "Space Needle Completed",
-    "year": 1962,
-    "category": "infrastructure",
-    "description": "Seattle's iconic tower was built for the World's Fair.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/330px-Space_Needle_2011-07-04.jpg"
-  },
-  {
-    "name": "la-city-hall",
-    "friendly_name": "Los Angeles City Hall Completed",
-    "year": 1928,
-    "category": "infrastructure",
-    "description": "The distinctive tower became LA's tallest building for decades.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Los_Angeles_City_Hall_2013.jpg/330px-Los_Angeles_City_Hall_2013.jpg"
-  },
-  {
-    "name": "radio-city-music-hall",
-    "friendly_name": "Radio City Music Hall Opens",
-    "year": 1932,
-    "category": "infrastructure",
-    "description": "The Art Deco entertainment venue opened in Rockefeller Center.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Radio_City_Music_Hall_%2851395756913%29.jpg/330px-Radio_City_Music_Hall_%2851395756913%29.jpg"
-  },
-  {
-    "name": "rockefeller-center",
-    "friendly_name": "Rockefeller Center Completed",
-    "year": 1939,
-    "category": "infrastructure",
-    "description": "The massive Art Deco complex in Manhattan was finished.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/GE_Building_by_David_Shankbone.JPG/330px-GE_Building_by_David_Shankbone.JPG"
-  },
-  {
-    "name": "mount-rushmore",
-    "friendly_name": "Mount Rushmore Completed",
-    "year": 1941,
-    "category": "infrastructure",
-    "description": "The presidential faces carved into the mountain were declared complete.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/330px-Mount_Rushmore_detail_view_%28100MP%29.jpg"
-  },
-  {
-    "name": "jefferson-memorial",
-    "friendly_name": "Jefferson Memorial Completed",
-    "year": 1943,
-    "category": "infrastructure",
-    "description": "The neoclassical memorial opened in Washington DC.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/JeffersonMemorialNightFB.jpg/330px-JeffersonMemorialNightFB.jpg"
-  },
-  {
-    "name": "lever-house",
-    "friendly_name": "Lever House Completed",
-    "year": 1952,
-    "category": "infrastructure",
-    "description": "The glass curtain wall skyscraper pioneered modern office design.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lever_House_390_Park_Avenue.jpg/330px-Lever_House_390_Park_Avenue.jpg"
-  },
-  {
-    "name": "seagram-building",
-    "friendly_name": "Seagram Building Completed",
-    "year": 1958,
-    "category": "infrastructure",
-    "description": "Mies van der Rohe's modernist masterpiece opened in New York.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Seagram_Building_%2835098307116%29.jpg/330px-Seagram_Building_%2835098307116%29.jpg"
-  },
-  {
-    "name": "brasilia-built",
-    "friendly_name": "Brasília Inaugurated",
-    "year": 1960,
-    "category": "infrastructure",
-    "description": "Brazil's modernist capital city was completed in just four years.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Planalto_Central_%28cropped%29.jpg/330px-Planalto_Central_%28cropped%29.jpg"
-  },
-  {
-    "name": "twa-terminal",
-    "friendly_name": "TWA Terminal Completed",
-    "year": 1962,
-    "category": "infrastructure",
-    "description": "Eero Saarinen's bird-shaped terminal opened at JFK Airport.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG/330px-Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG"
-  },
-  {
-    "name": "marina-city",
-    "friendly_name": "Marina City Completed",
-    "year": 1964,
-    "category": "infrastructure",
-    "description": "The corn cob-shaped towers opened in Chicago.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg/330px-Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg"
-  },
-  {
-    "name": "astrodome-opens",
-    "friendly_name": "Astrodome Opens",
-    "year": 1965,
-    "category": "infrastructure",
-    "description": "The world's first domed sports stadium opened in Houston.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Reliant_Astrodome_in_January_2014.jpg/330px-Reliant_Astrodome_in_January_2014.jpg"
-  },
-  {
-    "name": "vehicle-assembly-building",
-    "friendly_name": "Vehicle Assembly Building Completed",
-    "year": 1966,
-    "category": "infrastructure",
-    "description": "NASA's massive rocket assembly building was completed at Kennedy Space Center.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/VAB_and_SLS.jpg/330px-VAB_and_SLS.jpg"
-  },
-  {
-    "name": "lake-pontchartrain-causeway",
-    "friendly_name": "Lake Pontchartrain Causeway Expanded",
-    "year": 1969,
-    "category": "infrastructure",
-    "description": "The world's longest bridge over water was doubled in Louisiana.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg/330px-Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg"
-  },
-  {
-    "name": "humber-bridge",
-    "friendly_name": "Humber Bridge Opens",
-    "year": 1981,
-    "category": "infrastructure",
-    "description": "The world's longest suspension bridge opened in England.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Humber_Bridge2.png/330px-Humber_Bridge2.png"
-  },
-  {
-    "name": "at-and-t-building",
-    "friendly_name": "AT&T Building Completed",
-    "year": 1984,
-    "category": "infrastructure",
-    "description": "Philip Johnson's postmodern skyscraper with its Chippendale top opened.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sony_Building_by_David_Shankbone_crop.jpg/330px-Sony_Building_by_David_Shankbone_crop.jpg"
-  },
-  {
-    "name": "lloyds-building",
-    "friendly_name": "Lloyd's Building Completed",
-    "year": 1986,
-    "category": "infrastructure",
-    "description": "Richard Rogers' high-tech building with external services opened in London.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lloyds_building_taken_2011.jpg/330px-Lloyds_building_taken_2011.jpg"
-  },
-  {
-    "name": "bank-of-china-tower",
-    "friendly_name": "Bank of China Tower Completed",
-    "year": 1990,
-    "category": "infrastructure",
-    "description": "I.M. Pei's geometric skyscraper opened in Hong Kong.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg/330px-BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg"
-  },
-  {
-    "name": "canary-wharf-tower",
-    "friendly_name": "One Canada Square Completed",
-    "year": 1991,
-    "category": "infrastructure",
-    "description": "The UK's tallest building opened in London's Docklands.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/London_MMB_S6_Canary_Wharf.jpg/330px-London_MMB_S6_Canary_Wharf.jpg"
-  },
-  {
-    "name": "bilbao-metro",
-    "friendly_name": "Bilbao Metro Opens",
-    "year": 1995,
-    "category": "infrastructure",
-    "description": "Norman Foster's futuristic metro system opened in Spain.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bilbao_Metro_05_2012_2401.jpg/330px-Bilbao_Metro_05_2012_2401.jpg"
-  },
-  {
-    "name": "jewish-museum-berlin",
-    "friendly_name": "Jewish Museum Berlin Opens",
-    "year": 2001,
-    "category": "infrastructure",
-    "description": "Daniel Libeskind's zigzag museum opened in Germany.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Jewish_Museum_Berlin_logo.svg/320px-Jewish_Museum_Berlin_logo.svg.png"
-  },
-  {
-    "name": "swiss-re-building",
-    "friendly_name": "The Gherkin Completed",
-    "year": 2003,
-    "category": "infrastructure",
-    "description": "Norman Foster's pickle-shaped tower opened in London.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/30_St_Mary_Axe%2C_%27Gherkin%27.JPG/330px-30_St_Mary_Axe%2C_%27Gherkin%27.JPG"
-  },
-  {
-    "name": "cctv-headquarters",
-    "friendly_name": "CCTV Headquarters Completed",
-    "year": 2012,
-    "category": "infrastructure",
-    "description": "The distinctive loop-shaped tower opened in Beijing.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg/330px-China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg"
-  },
-  {
-    "name": "shard-completed",
-    "friendly_name": "The Shard Completed",
-    "year": 2012,
-    "category": "infrastructure",
-    "description": "Western Europe's tallest building opened in London.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Shard_at_sunset_2017_%28cropped%29.jpg/330px-The_Shard_at_sunset_2017_%28cropped%29.jpg"
-  },
-  {
-    "name": "vatican-museum-spiral-staircase",
-    "friendly_name": "Vatican Museums Spiral Staircase",
-    "year": 1932,
-    "category": "infrastructure",
-    "description": "The iconic double-helix staircase was built in Vatican City.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Musei_vaticani_Coat_of_Arms.svg/330px-Musei_vaticani_Coat_of_Arms.svg.png"
-  },
-  {
-    "name": "fallingwater",
-    "friendly_name": "Fallingwater Completed",
-    "year": 1939,
-    "category": "infrastructure",
-    "description": "Frank Lloyd Wright's house over a waterfall was finished in Pennsylvania.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/330px-Fallingwater3.jpg"
-  },
-  {
-    "name": "farnsworth-house",
-    "friendly_name": "Farnsworth House Completed",
-    "year": 1951,
-    "category": "infrastructure",
-    "description": "Mies van der Rohe's glass pavilion was completed in Illinois.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg/330px-Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg"
-  },
-  {
-    "name": "notre-dame-du-haut",
-    "friendly_name": "Notre Dame du Haut Completed",
-    "year": 1955,
-    "category": "infrastructure",
-    "description": "Le Corbusier's sculptural chapel was completed at Ronchamp.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/RonchampCorbu.jpg/330px-RonchampCorbu.jpg"
-  },
-  {
-    "name": "delhi-metro",
-    "friendly_name": "Delhi Metro Opens",
-    "year": 2002,
-    "category": "infrastructure",
-    "description": "India's second metro system began operations in the capital.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/DelhiMetroYellowLine.JPG/330px-DelhiMetroYellowLine.JPG"
+    "description": "China opened its first high-speed railway, beginning the world's largest network.",
+    "difficulty": "medium"
   },
   {
     "name": "high-line-park",
@@ -1611,76 +1624,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Elizabeth_line_roundel.svg/330px-Elizabeth_line_roundel.svg.png"
   },
   {
-    "name": "ferris-wheel-invented",
-    "friendly_name": "First Ferris Wheel Built",
-    "year": 1893,
+    "name": "burj-khalifa",
+    "friendly_name": "Burj Khalifa Completed",
+    "year": 2010,
     "category": "infrastructure",
-    "description": "George Ferris built his wheel for the Chicago World's Fair.",
+    "description": "The world's tallest building opened in Dubai at 2,717 feet.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/330px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg"
+  },
+  {
+    "name": "marina-bay-sands",
+    "friendly_name": "Marina Bay Sands Opens",
+    "year": 2010,
+    "category": "infrastructure",
+    "description": "The iconic three-tower hotel with rooftop infinity pool opened in Singapore.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ain_Dubai_View.jpg/330px-Ain_Dubai_View.jpg"
-  },
-  {
-    "name": "london-eye",
-    "friendly_name": "London Eye Opens",
-    "year": 2000,
-    "category": "infrastructure",
-    "description": "The giant observation wheel opened on the South Bank.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/London-Eye-2009.JPG/330px-London-Eye-2009.JPG"
-  },
-  {
-    "name": "singapore-flyer",
-    "friendly_name": "Singapore Flyer Opens",
-    "year": 2008,
-    "category": "infrastructure",
-    "description": "The world's largest observation wheel at the time opened.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Singapore_Flyer_20250903.jpg/330px-Singapore_Flyer_20250903.jpg"
-  },
-  {
-    "name": "high-roller-vegas",
-    "friendly_name": "High Roller Opens",
-    "year": 2014,
-    "category": "infrastructure",
-    "description": "The world's tallest observation wheel opened in Las Vegas.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg/330px-Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg"
-  },
-  {
-    "name": "sydney-harbour-bridge",
-    "friendly_name": "Sydney Harbour Bridge Opens",
-    "year": 1932,
-    "category": "infrastructure",
-    "description": "The steel arch bridge connecting Sydney's north and south shores opened.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sydney_Harbour_Bridge-16_October_2025.jpg/330px-Sydney_Harbour_Bridge-16_October_2025.jpg"
-  },
-  {
-    "name": "verrazano-narrows-bridge",
-    "friendly_name": "Verrazzano-Narrows Bridge Opens",
-    "year": 1964,
-    "category": "infrastructure",
-    "description": "The world's longest suspension bridge opened in New York.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Verrazano_Bridge2.jpg/330px-Verrazano_Bridge2.jpg"
-  },
-  {
-    "name": "sunshine-skyway-bridge",
-    "friendly_name": "Sunshine Skyway Bridge Opens",
-    "year": 1987,
-    "category": "infrastructure",
-    "description": "The cable-stayed bridge replaced a structure hit by a ship in Tampa Bay.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/SunshineSkywayBridge-4SC_6643-15.jpg/330px-SunshineSkywayBridge-4SC_6643-15.jpg"
-  },
-  {
-    "name": "confederation-bridge",
-    "friendly_name": "Confederation Bridge Opens",
-    "year": 1997,
-    "category": "infrastructure",
-    "description": "The longest bridge over ice-covered water connected PEI to mainland Canada.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Confederation_Bridge_during_winter.jpg/330px-Confederation_Bridge_during_winter.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/330px-Marina_Bay_Sands_%28I%29.jpg"
   },
   {
     "name": "danyang-kunshan-grand-bridge",
@@ -1692,6 +1651,96 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/201603_Danyang-Kunshan_grand_bridge_%28wuxi%29_%28cropped%29.JPG/330px-201603_Danyang-Kunshan_grand_bridge_%28wuxi%29_%28cropped%29.JPG"
   },
   {
+    "name": "cctv-headquarters",
+    "friendly_name": "CCTV Headquarters Completed",
+    "year": 2012,
+    "category": "infrastructure",
+    "description": "The distinctive loop-shaped tower opened in Beijing.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg/330px-China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg"
+  },
+  {
+    "name": "shard-completed",
+    "friendly_name": "The Shard Completed",
+    "year": 2012,
+    "category": "infrastructure",
+    "description": "Western Europe's tallest building opened in London.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Shard_at_sunset_2017_%28cropped%29.jpg/330px-The_Shard_at_sunset_2017_%28cropped%29.jpg"
+  },
+  {
+    "name": "jeddah-tower-begins",
+    "friendly_name": "Jeddah Tower Construction Begins",
+    "year": 2013,
+    "category": "infrastructure",
+    "description": "Work began on what will be the world's first kilometer-tall building.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/330px-Flag_of_Saudi_Arabia.svg.png"
+  },
+  {
+    "name": "one-world-trade",
+    "friendly_name": "One World Trade Center Completed",
+    "year": 2014,
+    "category": "infrastructure",
+    "description": "The tallest building in the Western Hemisphere opened on the WTC site.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/One_WTC_logo.svg/320px-One_WTC_logo.svg.png"
+  },
+  {
+    "name": "high-roller-vegas",
+    "friendly_name": "High Roller Opens",
+    "year": 2014,
+    "category": "infrastructure",
+    "description": "The world's tallest observation wheel opened in Las Vegas.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg/330px-Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg"
+  },
+  {
+    "name": "shanghai-tower",
+    "friendly_name": "Shanghai Tower Completed",
+    "year": 2015,
+    "category": "infrastructure",
+    "description": "China's tallest building and the world's second tallest was finished.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/2/23/Shanghai_Tower_logo.png"
+  },
+  {
+    "name": "gotthard-base-tunnel",
+    "friendly_name": "Gotthard Base Tunnel Opens",
+    "year": 2016,
+    "category": "infrastructure",
+    "description": "The world's longest railway tunnel opened through the Swiss Alps.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg/330px-20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg"
+  },
+  {
+    "name": "lotte-world-tower",
+    "friendly_name": "Lotte World Tower Completed",
+    "year": 2016,
+    "category": "infrastructure",
+    "description": "South Korea's tallest building was completed in Seoul.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Lotte_World_Tower_day_view_10.jpg/330px-Lotte_World_Tower_day_view_10.jpg"
+  },
+  {
+    "name": "apple-park",
+    "friendly_name": "Apple Park Completed",
+    "year": 2017,
+    "category": "infrastructure",
+    "description": "Apple's spaceship-shaped headquarters opened in Cupertino.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/330px-Aerial_view_of_Apple_Park_dllu.jpg"
+  },
+  {
+    "name": "hong-kong-zhuhai-macau-bridge",
+    "friendly_name": "Hong Kong-Zhuhai-Macau Bridge Opens",
+    "year": 2018,
+    "category": "infrastructure",
+    "description": "The world's longest sea crossing bridge opened in China.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg/330px-West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg"
+  },
+  {
     "name": "crimean-bridge",
     "friendly_name": "Crimean Bridge Opens",
     "year": 2018,
@@ -1699,5 +1748,76 @@
     "description": "Russia built Europe's longest bridge to connect Crimea to the mainland.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%81%D1%82_13_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2019_%D0%B3%D0%BE%D0%B4%D0%B0_%281%29.jpg/330px-%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%81%D1%82_13_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2019_%D0%B3%D0%BE%D0%B4%D0%B0_%281%29.jpg"
+  },
+  {
+    "name": "statue-unity",
+    "friendly_name": "Statue of Unity Unveiled",
+    "year": 2018,
+    "category": "infrastructure",
+    "description": "India unveiled the world's tallest statue, honoring Sardar Patel.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "beijing-daxing-airport",
+    "friendly_name": "Beijing Daxing Airport Opens",
+    "year": 2019,
+    "category": "infrastructure",
+    "description": "The massive starfish-shaped airport opened as the world's largest single terminal.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg/330px-%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg"
+  },
+  {
+    "name": "hudson-yards",
+    "friendly_name": "Hudson Yards Opens",
+    "year": 2019,
+    "category": "infrastructure",
+    "description": "The largest private real estate development in US history opened in NYC.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg/330px-Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg"
+  },
+  {
+    "name": "one-vanderbilt",
+    "friendly_name": "One Vanderbilt Completed",
+    "year": 2020,
+    "category": "infrastructure",
+    "description": "The supertall skyscraper opened next to Grand Central Terminal.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3d/One_Vanderbilt_logo.png"
+  },
+  {
+    "name": "steinway-tower",
+    "friendly_name": "Steinway Tower Completed",
+    "year": 2021,
+    "category": "infrastructure",
+    "description": "The skinniest skyscraper in the world was completed in Manhattan.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg/330px-05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg"
+  },
+  {
+    "name": "sagrada-familia-progress",
+    "friendly_name": "Sagrada Família Central Tower",
+    "year": 2021,
+    "category": "infrastructure",
+    "description": "The tallest tower of Gaudí's unfinished basilica was topped out.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg/330px-%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg"
+  },
+  {
+    "name": "crossrail-elizabeth-line",
+    "friendly_name": "Elizabeth Line Opens",
+    "year": 2022,
+    "category": "infrastructure",
+    "description": "London's new cross-city railway opened after years of construction.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Elizabeth_line_roundel.svg/330px-Elizabeth_line_roundel.svg.png"
+  },
+  {
+    "name": "merdeka-118",
+    "friendly_name": "Merdeka 118 Completed",
+    "year": 2023,
+    "category": "infrastructure",
+    "description": "The second-tallest building in the world was completed in Kuala Lumpur.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg/330px-Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg"
   }
 ]

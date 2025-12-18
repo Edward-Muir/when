@@ -333,6 +333,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/330px-YuanEmperorAlbumGenghisPortrait.jpg"
   },
   {
+    "name": "mongol-invasion-rus",
+    "friendly_name": "Mongol Invasion of Rus'",
+    "year": 1237,
+    "category": "conflict",
+    "description": "Batu Khan's Mongol forces invaded Kievan Rus', beginning centuries of Mongol domination.",
+    "difficulty": "hard"
+  },
+  {
     "name": "mongol-baghdad",
     "friendly_name": "Mongols Sack Baghdad",
     "year": 1258,
@@ -376,6 +384,14 @@
     "description": "The English captured the French king in another devastating defeat for France.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Battle_poitiers.jpg/330px-Battle_poitiers.jpg"
+  },
+  {
+    "name": "battle-kulikovo",
+    "friendly_name": "Battle of Kulikovo",
+    "year": 1380,
+    "category": "conflict",
+    "description": "Dmitry Donskoy led Russian forces to victory, marking the decline of Mongol rule.",
+    "difficulty": "hard"
   },
   {
     "name": "battle-agincourt",
@@ -466,6 +482,14 @@
     "description": "England repelled Spain's massive invasion fleet, securing Protestant rule.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Armadaroute.jpg/330px-Armadaroute.jpg"
+  },
+  {
+    "name": "imjin-war",
+    "friendly_name": "Japanese Invasions of Korea",
+    "year": 1592,
+    "category": "conflict",
+    "description": "Toyotomi Hideyoshi invaded Korea, sparking a devastating seven-year war.",
+    "difficulty": "hard"
   },
   {
     "name": "thirty-years-war-begins",
@@ -603,6 +627,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_Quebec.svg/330px-Flag_of_Quebec.svg.png"
   },
   {
+    "name": "boston-massacre",
+    "friendly_name": "Boston Massacre",
+    "year": 1770,
+    "category": "conflict",
+    "description": "British troops fatally shot five Americans including Crispus Attucks, escalating tensions before the Revolution.",
+    "difficulty": "easy"
+  },
+  {
     "name": "boston-tea-party",
     "friendly_name": "Boston Tea Party",
     "year": 1773,
@@ -637,6 +669,14 @@
     "description": "The thirteen American colonies declared independence from British rule.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/United_States_Declaration_of_Independence.jpg/330px-United_States_Declaration_of_Independence.jpg"
+  },
+  {
+    "name": "battle-princeton-1777",
+    "friendly_name": "Battle of Princeton",
+    "year": 1777,
+    "category": "conflict",
+    "description": "Washington defeats British forces in New Jersey.",
+    "difficulty": "medium"
   },
   {
     "name": "battle-yorktown",
@@ -691,6 +731,14 @@
     "description": "The Revolutionary Tribunal began mass executions of perceived enemies of the Revolution.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Octobre_1793%2C_supplice_de_9_%C3%A9migr%C3%A9s.jpg/330px-Octobre_1793%2C_supplice_de_9_%C3%A9migr%C3%A9s.jpg"
+  },
+  {
+    "name": "battle-marengo",
+    "friendly_name": "Battle of Marengo",
+    "year": 1800,
+    "category": "conflict",
+    "description": "Napoleons army defeated the Austrians at Marengo and re-conquered northern Italy.",
+    "difficulty": "medium"
   },
   {
     "name": "haitian-revolution",
@@ -763,6 +811,22 @@
     "description": "Andrew Jackson's victory made him a national hero, though peace had already been signed.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Battle_of_New_Orleans%2C_Jean_Hyacinthe_de_Laclotte.jpg/330px-Battle_of_New_Orleans%2C_Jean_Hyacinthe_de_Laclotte.jpg"
+  },
+  {
+    "name": "napoleon-escapes-elba",
+    "friendly_name": "Napoleon Escapes Elba",
+    "year": 1815,
+    "category": "conflict",
+    "description": "Napoleon Bonaparte escaped from exile on the island of Elba.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "napoleon-hundred-days",
+    "friendly_name": "Napoleons Hundred Days Begin",
+    "year": 1815,
+    "category": "conflict",
+    "description": "Napoleon entered Paris with an army of 140,000, beginning his Hundred Days rule.",
+    "difficulty": "easy"
   },
   {
     "name": "greek-independence",
@@ -871,6 +935,14 @@
     "description": "The bloodiest single day in American history halted Lee's first invasion of the North.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Thure_de_Thulstrup_-_Battle_of_Antietam.jpg/330px-Thure_de_Thulstrup_-_Battle_of_Antietam.jpg"
+  },
+  {
+    "name": "battle-hampton-roads",
+    "friendly_name": "Battle of Hampton Roads",
+    "year": 1862,
+    "category": "conflict",
+    "description": "First battle between ironclad warships Monitor and Virginia.",
+    "difficulty": "medium"
   },
   {
     "name": "gettysburg",
@@ -1071,6 +1143,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/330px-Bataille_de_Verdun_1916.jpg"
   },
   {
+    "name": "ludlow-massacre",
+    "friendly_name": "Ludlow Massacre",
+    "year": 1914,
+    "category": "conflict",
+    "description": "Nineteen strikers including women and children were killed during the Colorado Coalfield War.",
+    "difficulty": "medium"
+  },
+  {
     "name": "lusitania-sinking",
     "friendly_name": "Lusitania Sunk",
     "year": 1915,
@@ -1116,6 +1196,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_shell_of_the_G.P.O._on_Sackville_Street_after_the_Easter_Rising_%286937669789%29.jpg/330px-The_shell_of_the_G.P.O._on_Sackville_Street_after_the_Easter_Rising_%286937669789%29.jpg"
   },
   {
+    "name": "gallipoli-ends",
+    "friendly_name": "Battle of Gallipoli Ends",
+    "year": 1916,
+    "category": "conflict",
+    "description": "The Battle of Gallipoli concluded with Ottoman victory as Allied forces evacuated.",
+    "difficulty": "easy"
+  },
+  {
     "name": "battle-passchendaele",
     "friendly_name": "Battle of Passchendaele",
     "year": 1917,
@@ -1123,6 +1211,14 @@
     "description": "British troops fought through mud for months to gain five miles at Ypres.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chateauwood.jpg/330px-Chateauwood.jpg"
+  },
+  {
+    "name": "october-revolution",
+    "friendly_name": "October Revolution",
+    "year": 1917,
+    "category": "conflict",
+    "description": "The Bolsheviks seized power in Petrograd, establishing the Soviet state.",
+    "difficulty": "medium"
   },
   {
     "name": "wwi-end",
@@ -1143,6 +1239,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Red_Army_Badge.svg/330px-Red_Army_Badge.svg.png"
   },
   {
+    "name": "finnish-civil-war-begins",
+    "friendly_name": "Finnish Civil War Begins",
+    "year": 1918,
+    "category": "conflict",
+    "description": "The Finnish Civil War began between Red Guards and White Guards.",
+    "difficulty": "medium"
+  },
+  {
     "name": "treaty-versailles",
     "friendly_name": "Treaty of Versailles Signed",
     "year": 1919,
@@ -1159,6 +1263,22 @@
     "description": "Irish republicans launched a guerrilla war against British rule.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Hogan%27s_Flying_Column.gif/330px-Hogan%27s_Flying_Column.gif"
+  },
+  {
+    "name": "march-first-movement",
+    "friendly_name": "March 1st Movement",
+    "year": 1919,
+    "category": "conflict",
+    "description": "Koreans protested Japanese colonial rule in one of the earliest mass independence movements.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jallianwala-bagh-massacre",
+    "friendly_name": "Jallianwala Bagh Massacre",
+    "year": 1919,
+    "category": "conflict",
+    "description": "British troops fired on unarmed Indians in Amritsar, galvanizing the independence movement.",
+    "difficulty": "medium"
   },
   {
     "name": "mussolini-power",
@@ -1296,6 +1416,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Attack_on_Pearl_Harbor_Japanese_planes_view.jpg/330px-Attack_on_Pearl_Harbor_Japanese_planes_view.jpg"
   },
   {
+    "name": "siege-leningrad",
+    "friendly_name": "Siege of Leningrad Begins",
+    "year": 1941,
+    "category": "conflict",
+    "description": "Nazi Germany began the deadliest siege in history, lasting 872 days.",
+    "difficulty": "medium"
+  },
+  {
     "name": "battle-el-alamein",
     "friendly_name": "Battle of El Alamein",
     "year": 1942,
@@ -1348,6 +1476,22 @@
     "description": "Germany's last major offensive in the West caught the Allies off guard.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/117th_Infantry_North_Carolina_NG_at_St._Vith_1945.jpg/330px-117th_Infantry_North_Carolina_NG_at_St._Vith_1945.jpg"
+  },
+  {
+    "name": "siege-leningrad-lifted",
+    "friendly_name": "Siege of Leningrad Lifted",
+    "year": 1944,
+    "category": "conflict",
+    "description": "The 900-day Siege of Leningrad by German forces ends.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "battle-monte-cassino-begins",
+    "friendly_name": "Battle of Monte Cassino Begins",
+    "year": 1944,
+    "category": "conflict",
+    "description": "Allied forces launch the first assault on Monte Cassino, a four-month battle costing 105,000 casualties.",
+    "difficulty": "medium"
   },
   {
     "name": "wwii-end-europe",
@@ -1404,6 +1548,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Surrender_of_Japan_-_USS_Missouri_%28restored%29.jpg/330px-Surrender_of_Japan_-_USS_Missouri_%28restored%29.jpg"
   },
   {
+    "name": "partition-india",
+    "friendly_name": "Partition of India",
+    "year": 1947,
+    "category": "conflict",
+    "description": "British India was divided into India and Pakistan, causing massive displacement and violence.",
+    "difficulty": "medium"
+  },
+  {
     "name": "chinese-communist-victory",
     "friendly_name": "Communist Revolution in China",
     "year": 1949,
@@ -1422,6 +1574,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/330px-Chosin.jpg"
   },
   {
+    "name": "batista-cuba-coup",
+    "friendly_name": "Batista Cuba Coup",
+    "year": 1952,
+    "category": "conflict",
+    "description": "Fulgencio Batista leads a successful coup in Cuba, seizing power.",
+    "difficulty": "medium"
+  },
+  {
     "name": "korean-war-armistice",
     "friendly_name": "Korean War Armistice",
     "year": 1953,
@@ -1429,6 +1589,14 @@
     "description": "An armistice halted fighting on the Korean Peninsula, though no peace treaty was signed.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/330px-Chosin.jpg"
+  },
+  {
+    "name": "battle-dien-bien-phu",
+    "friendly_name": "Battle of Điện Biên Phủ",
+    "year": 1954,
+    "category": "conflict",
+    "description": "Viet Minh forces defeated France, ending French colonial rule in Indochina.",
+    "difficulty": "medium"
   },
   {
     "name": "suez-crisis",
@@ -1458,6 +1626,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cuban_Revolution_collage.png/330px-Cuban_Revolution_collage.png"
   },
   {
+    "name": "cuban-revolution-victory",
+    "friendly_name": "Cuban Revolution Victory",
+    "year": 1959,
+    "category": "conflict",
+    "description": "Fidel Castro overthrows Batistas dictatorship.",
+    "difficulty": "medium"
+  },
+  {
     "name": "congo-crisis",
     "friendly_name": "Congo Crisis",
     "year": 1960,
@@ -1485,6 +1661,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Patrice_Lumumba%2C_1960_%28cropped%29.jpg/330px-Patrice_Lumumba%2C_1960_%28cropped%29.jpg"
   },
   {
+    "name": "operation-chopper-vietnam",
+    "friendly_name": "Operation Chopper Vietnam",
+    "year": 1962,
+    "category": "conflict",
+    "description": "Operation Chopper, the first American combat mission in the Vietnam War, takes place.",
+    "difficulty": "medium"
+  },
+  {
     "name": "jfk-assassination",
     "friendly_name": "JFK Assassinated",
     "year": 1963,
@@ -1492,6 +1676,14 @@
     "description": "President John F. Kennedy was shot and killed in Dallas, Texas.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/330px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg"
+  },
+  {
+    "name": "zanzibar-revolution",
+    "friendly_name": "Zanzibar Revolution",
+    "year": 1964,
+    "category": "conflict",
+    "description": "Rebels in Zanzibar begin a revolt and proclaim a republic.",
+    "difficulty": "medium"
   },
   {
     "name": "vietnam-war-start",
@@ -1539,6 +1731,38 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tet_Offensive_map.png/330px-Tet_Offensive_map.png"
   },
   {
+    "name": "battle-khe-sanh-begins",
+    "friendly_name": "Battle of Khe Sanh Begins",
+    "year": 1968,
+    "category": "conflict",
+    "description": "One of the most publicized and controversial battles of the Vietnam War begins.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "uss-pueblo-seized",
+    "friendly_name": "USS Pueblo Seized",
+    "year": 1968,
+    "category": "conflict",
+    "description": "USS Pueblo is attacked and seized by the North Korean Navy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jan-palach-death",
+    "friendly_name": "Jan Palachs Death",
+    "year": 1969,
+    "category": "conflict",
+    "description": "Czech student dies after self-immolation protesting Soviet invasion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "biafra-capitulates",
+    "friendly_name": "Biafra Capitulates",
+    "year": 1970,
+    "category": "conflict",
+    "description": "Biafra capitulates, ending the Nigerian Civil War.",
+    "difficulty": "easy"
+  },
+  {
     "name": "bangladesh-liberation-war",
     "friendly_name": "Bangladesh Liberation War",
     "year": 1971,
@@ -1573,6 +1797,14 @@
     "description": "A military junta overthrew Emperor Haile Selassie after 44 years of rule.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Coordinating_Committee_of_the_Armed_Forces_%28Derg%29_in_1974.jpg/330px-Coordinating_Committee_of_the_Armed_Forces_%28Derg%29_in_1974.jpg"
+  },
+  {
+    "name": "patty-hearst-kidnapped",
+    "friendly_name": "Patty Hearst Kidnapped",
+    "year": 1974,
+    "category": "conflict",
+    "description": "The Symbionese Liberation Army kidnaps newspaper heiress Patty Hearst in Berkeley, California.",
+    "difficulty": "medium"
   },
   {
     "name": "vietnam-war-end",
@@ -1636,6 +1868,14 @@
     "description": "Saddam Hussein invaded Iran, beginning an eight-year war killing over a million.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Chemical_weapon1.jpg/330px-Chemical_weapon1.jpg"
+  },
+  {
+    "name": "gwangju-uprising",
+    "friendly_name": "Gwangju Uprising",
+    "year": 1980,
+    "category": "conflict",
+    "description": "South Korean citizens rose up against the military dictatorship, sparking democratization.",
+    "difficulty": "hard"
   },
   {
     "name": "falklands-war",
@@ -1827,6 +2067,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Atentado_11M.jpg/330px-Atentado_11M.jpg"
   },
   {
+    "name": "beslan-school-siege",
+    "friendly_name": "Beslan School Siege",
+    "year": 2004,
+    "category": "conflict",
+    "description": "Chechen terrorists took over a school in Russia, resulting in over 330 deaths.",
+    "difficulty": "hard"
+  },
+  {
     "name": "london-bombings",
     "friendly_name": "London Bombings",
     "year": 2005,
@@ -1915,6 +2163,22 @@
     "description": "The United Kingdom voted to leave the European Union.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Coat_of_arms_of_the_United_Kingdom_%282024%2C_lesser_arms%29.svg/330px-Coat_of_arms_of_the_United_Kingdom_%282024%2C_lesser_arms%29.svg.png"
+  },
+  {
+    "name": "capitol-riot-2021",
+    "friendly_name": "Capitol Riot",
+    "year": 2021,
+    "category": "conflict",
+    "description": "A mob stormed the U.S. Capitol in an attempt to overturn the 2020 election results.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "myanmar-coup-2021",
+    "friendly_name": "Myanmar Military Coup",
+    "year": 2021,
+    "category": "conflict",
+    "description": "Military removes Aung San Suu Kyi and restores military rule.",
+    "difficulty": "easy"
   },
   {
     "name": "russia-ukraine-invasion",
