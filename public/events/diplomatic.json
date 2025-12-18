@@ -1654,5 +1654,133 @@
     "description": "UAE and Bahrain normalized relations with Israel.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony_%28cropped%29.jpg/330px-President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony_%28cropped%29.jpg"
+  },
+  {
+    "name": "ussr-dissolved",
+    "friendly_name": "USSR Dissolved",
+    "year": 1991,
+    "category": "diplomatic",
+    "description": "The Soviet Union officially dissolved, ending the Cold War era.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "prc-founded",
+    "friendly_name": "People's Republic of China Founded",
+    "year": 1949,
+    "category": "diplomatic",
+    "description": "Mao Zedong proclaimed the founding of communist China.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hong-kong-handover",
+    "friendly_name": "Hong Kong Handover",
+    "year": 1997,
+    "category": "diplomatic",
+    "description": "Britain returned Hong Kong to China after 156 years of colonial rule.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "macau-handover",
+    "friendly_name": "Macau Handover",
+    "year": 1999,
+    "category": "diplomatic",
+    "description": "Portugal returned Macau to China after over 400 years of colonial rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "singapore-independence",
+    "friendly_name": "Singapore Independence",
+    "year": 1965,
+    "category": "diplomatic",
+    "description": "Singapore separated from Malaysia to become an independent nation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "korean-armistice",
+    "friendly_name": "Korean Armistice Signed",
+    "year": 1953,
+    "category": "diplomatic",
+    "description": "The armistice ended active fighting in Korea, but no peace treaty was signed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "inter-korean-summit-2018",
+    "friendly_name": "Inter-Korean Summit",
+    "year": 2018,
+    "category": "diplomatic",
+    "description": "Leaders of North and South Korea met for the first time in over a decade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paris-peace-accords-1973",
+    "friendly_name": "Paris Peace Accords",
+    "year": 1973,
+    "category": "diplomatic",
+    "description": "The agreement led to a ceasefire and U.S. withdrawal from Vietnam.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kingdom-saudi-arabia-founded",
+    "friendly_name": "Kingdom of Saudi Arabia Founded",
+    "year": 1932,
+    "category": "diplomatic",
+    "description": "Ibn Saud unified the Arabian Peninsula into a single kingdom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indus-water-treaty",
+    "friendly_name": "Indus Waters Treaty",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "India and Pakistan signed a water-sharing treaty brokered by the World Bank.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "constitution-canada-patriation",
+    "friendly_name": "Canadian Constitution Patriation",
+    "year": 1982,
+    "category": "diplomatic",
+    "description": "Canada gained full sovereignty with the ability to amend its own constitution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nafta-signed",
+    "friendly_name": "NAFTA Signed",
+    "year": 1992,
+    "category": "diplomatic",
+    "description": "The North American Free Trade Agreement created a trade bloc between the US, Canada, and Mexico.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "same-sex-marriage-canada",
+    "friendly_name": "Same-Sex Marriage in Canada",
+    "year": 2005,
+    "category": "diplomatic",
+    "description": "Canada became the fourth country to legalize same-sex marriage nationwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "china-wto-entry",
+    "friendly_name": "China Joins WTO",
+    "year": 2001,
+    "category": "diplomatic",
+    "description": "China joined the World Trade Organization, accelerating its global economic integration.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "reform-opening-china",
+    "friendly_name": "China's Reform and Opening",
+    "year": 1978,
+    "category": "diplomatic",
+    "description": "Deng Xiaoping launched economic reforms that transformed China into a market economy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "belt-road-initiative",
+    "friendly_name": "Belt and Road Initiative Launched",
+    "year": 2013,
+    "category": "diplomatic",
+    "description": "China announced a massive global infrastructure investment strategy.",
+    "difficulty": "medium"
   }
 ]

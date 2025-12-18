@@ -1735,5 +1735,37 @@
     "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 97 people.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coast_Guard_Station_Maui_-_7964748.jpg/330px-Coast_Guard_Station_Maui_-_7964748.jpg"
+  },
+  {
+    "name": "bhopal-gas-disaster",
+    "friendly_name": "Bhopal Gas Disaster",
+    "year": 1984,
+    "category": "disasters",
+    "description": "A gas leak at a pesticide plant in India killed thousands in the world's worst industrial disaster.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tokyo-subway-attack",
+    "friendly_name": "Tokyo Subway Sarin Attack",
+    "year": 1995,
+    "category": "disasters",
+    "description": "The Aum Shinrikyo cult released sarin gas on the Tokyo subway, killing 13.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mount-tarawera-eruption",
+    "friendly_name": "Mount Tarawera Eruption",
+    "year": 1886,
+    "category": "disasters",
+    "description": "New Zealand's deadliest volcanic eruption destroyed the famous Pink and White Terraces.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "japan-airlines-123",
+    "friendly_name": "Japan Airlines Flight 123",
+    "year": 1985,
+    "category": "disasters",
+    "description": "The deadliest single-aircraft accident killed 520 people in Japan.",
+    "difficulty": "hard"
   }
 ]

@@ -1825,5 +1825,77 @@
     "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png"
+  },
+  {
+    "name": "paper-invented-china",
+    "friendly_name": "Paper Invented",
+    "year": 105,
+    "category": "exploration",
+    "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "silk-road-established",
+    "friendly_name": "Silk Road Established",
+    "year": -130,
+    "category": "exploration",
+    "description": "The Han Dynasty opened trade routes connecting China to the Mediterranean.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-invented-china",
+    "friendly_name": "Printing Invented in China",
+    "year": 650,
+    "category": "exploration",
+    "description": "Woodblock printing was developed in China, transforming information dissemination.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "compass-invention-china",
+    "friendly_name": "Compass Invented",
+    "year": 1050,
+    "category": "exploration",
+    "description": "Chinese scientists developed the magnetic compass, revolutionizing navigation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "india-mars-mission",
+    "friendly_name": "India's Mars Orbiter Mission",
+    "year": 2014,
+    "category": "exploration",
+    "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "china-moon-samples",
+    "friendly_name": "Chang'e-5 Moon Sample Return",
+    "year": 2020,
+    "category": "exploration",
+    "description": "China became the third country to return lunar samples to Earth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-woman-space",
+    "friendly_name": "First Woman in Space",
+    "year": 1963,
+    "category": "exploration",
+    "description": "Soviet cosmonaut Valentina Tereshkova became the first woman to fly in space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "perry-expedition-japan",
+    "friendly_name": "Perry Expedition Opens Japan",
+    "year": 1853,
+    "category": "exploration",
+    "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-dna-sequencing",
+    "friendly_name": "First Human DNA Sequencing",
+    "year": 1977,
+    "category": "exploration",
+    "description": "Frederick Sanger developed a method to sequence DNA, revolutionizing genetics.",
+    "difficulty": "hard"
   }
 ]

@@ -1924,5 +1924,101 @@
     "description": "Russia launched a full-scale invasion of Ukraine, starting a major European war.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif/330px-2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif"
+  },
+  {
+    "name": "mongol-invasion-rus",
+    "friendly_name": "Mongol Invasion of Rus'",
+    "year": 1237,
+    "category": "conflict",
+    "description": "Batu Khan's Mongol forces invaded Kievan Rus', beginning centuries of Mongol domination.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-kulikovo",
+    "friendly_name": "Battle of Kulikovo",
+    "year": 1380,
+    "category": "conflict",
+    "description": "Dmitry Donskoy led Russian forces to victory, marking the decline of Mongol rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "october-revolution",
+    "friendly_name": "October Revolution",
+    "year": 1917,
+    "category": "conflict",
+    "description": "The Bolsheviks seized power in Petrograd, establishing the Soviet state.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "siege-leningrad",
+    "friendly_name": "Siege of Leningrad Begins",
+    "year": 1941,
+    "category": "conflict",
+    "description": "Nazi Germany began the deadliest siege in history, lasting 872 days.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-dien-bien-phu",
+    "friendly_name": "Battle of Điện Biên Phủ",
+    "year": 1954,
+    "category": "conflict",
+    "description": "Viet Minh forces defeated France, ending French colonial rule in Indochina.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "march-first-movement",
+    "friendly_name": "March 1st Movement",
+    "year": 1919,
+    "category": "conflict",
+    "description": "Koreans protested Japanese colonial rule in one of the earliest mass independence movements.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gwangju-uprising",
+    "friendly_name": "Gwangju Uprising",
+    "year": 1980,
+    "category": "conflict",
+    "description": "South Korean citizens rose up against the military dictatorship, sparking democratization.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "imjin-war",
+    "friendly_name": "Japanese Invasions of Korea",
+    "year": 1592,
+    "category": "conflict",
+    "description": "Toyotomi Hideyoshi invaded Korea, sparking a devastating seven-year war.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jallianwala-bagh-massacre",
+    "friendly_name": "Jallianwala Bagh Massacre",
+    "year": 1919,
+    "category": "conflict",
+    "description": "British troops fired on unarmed Indians in Amritsar, galvanizing the independence movement.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "partition-india",
+    "friendly_name": "Partition of India",
+    "year": 1947,
+    "category": "conflict",
+    "description": "British India was divided into India and Pakistan, causing massive displacement and violence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beslan-school-siege",
+    "friendly_name": "Beslan School Siege",
+    "year": 2004,
+    "category": "conflict",
+    "description": "Chechen terrorists took over a school in Russia, resulting in over 330 deaths.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "capitol-riot-2021",
+    "friendly_name": "Capitol Riot",
+    "year": 2021,
+    "category": "conflict",
+    "description": "A mob stormed the U.S. Capitol in an attempt to overturn the 2020 election results.",
+    "difficulty": "easy"
   }
 ]
