@@ -666,6 +666,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Coat_of_arms_of_England_%281702%E2%80%931707%29.svg/330px-Coat_of_arms_of_England_%281702%E2%80%931707%29.svg.png"
   },
   {
+    "name": "statute-of-anne",
+    "friendly_name": "First Copyright Law",
+    "year": 1710,
+    "category": "diplomatic",
+    "description": "The Statute of Anne, the first law regulating copyright, came into force in Great Britain.",
+    "difficulty": "medium"
+  },
+  {
     "name": "treaty-utrecht",
     "friendly_name": "Treaty of Utrecht",
     "year": 1713,
@@ -747,6 +755,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg/330px-Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg"
   },
   {
+    "name": "dc-established",
+    "friendly_name": "District of Columbia Established",
+    "year": 1790,
+    "category": "diplomatic",
+    "description": "The District of Columbia was established as the U.S. capital after the Residence Act was signed.",
+    "difficulty": "easy"
+  },
+  {
     "name": "bill-of-rights-us",
     "friendly_name": "US Bill of Rights Ratified",
     "year": 1791,
@@ -754,6 +770,14 @@
     "description": "The first ten amendments to the US Constitution were adopted.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Bill_of_Rights_Pg1of1_AC.jpg/330px-Bill_of_Rights_Pg1of1_AC.jpg"
+  },
+  {
+    "name": "library-congress-established",
+    "friendly_name": "Library of Congress Established",
+    "year": 1800,
+    "category": "diplomatic",
+    "description": "President John Adams signed legislation establishing the Library of Congress.",
+    "difficulty": "medium"
   },
   {
     "name": "louisiana-purchase",
@@ -819,6 +843,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg/330px-James_Monroe_White_House_portrait_1819_%28cropped%29%282%29.jpg"
   },
   {
+    "name": "bolivia-independence",
+    "friendly_name": "Bolivian Independence",
+    "year": 1825,
+    "category": "diplomatic",
+    "description": "The Bolivian Declaration of Independence was proclaimed.",
+    "difficulty": "medium"
+  },
+  {
     "name": "belgian-independence",
     "friendly_name": "Belgian Independence",
     "year": 1830,
@@ -826,6 +858,14 @@
     "description": "Belgium gained independence from the Netherlands after revolution.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg/330px-Gustave_Wappers_-_%C3%89pisode_des_Journ%C3%A9es_de_septembre_1830_sur_la_place_de_l%27H%C3%B4tel_de_Ville_de_Bruxelles.jpg"
+  },
+  {
+    "name": "indian-removal-act",
+    "friendly_name": "Indian Removal Act",
+    "year": 1830,
+    "category": "diplomatic",
+    "description": "President Andrew Jackson signed the Indian Removal Act, forcibly relocating Native Americans.",
+    "difficulty": "easy"
   },
   {
     "name": "treaty-waitangi",
@@ -999,6 +1039,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/330px-Flag_of_the_Republic_of_China.svg.png"
   },
   {
+    "name": "anc-founded",
+    "friendly_name": "African National Congress Founded",
+    "year": 1912,
+    "category": "diplomatic",
+    "description": "The ANC was founded as the South African Native National Congress to fight for Black rights.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "last-emperor-china-abdicates",
+    "friendly_name": "Last Emperor of China Abdicates",
+    "year": 1912,
+    "category": "diplomatic",
+    "description": "The Xuantong Emperor abdicated, ending over 2,000 years of imperial rule in China.",
+    "difficulty": "medium"
+  },
+  {
     "name": "ilo-founded",
     "friendly_name": "International Labour Organization Founded",
     "year": 1919,
@@ -1026,6 +1082,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Suffragists_Parade_Down_Fifth_Avenue%2C_1917.JPG/330px-Suffragists_Parade_Down_Fifth_Avenue%2C_1917.JPG"
   },
   {
+    "name": "treaty-versailles-effect",
+    "friendly_name": "Treaty of Versailles Takes Effect",
+    "year": 1920,
+    "category": "diplomatic",
+    "description": "The Treaty of Versailles officially ended World War I for most combatant nations.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "prohibition-begins-us",
+    "friendly_name": "Prohibition Begins in US",
+    "year": 1920,
+    "category": "diplomatic",
+    "description": "Alcohol prohibition began in the United States as the Volstead Act took effect.",
+    "difficulty": "easy"
+  },
+  {
     "name": "irish-free-state",
     "friendly_name": "Irish Free State Established",
     "year": 1922,
@@ -1051,6 +1123,14 @@
     "description": "Major powers agreed to limit their naval fleets to prevent an arms race.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Washington_Naval_Treaty.jpg/330px-Washington_Naval_Treaty.jpg"
+  },
+  {
+    "name": "anglo-irish-treaty",
+    "friendly_name": "Anglo-Irish Treaty Ratified",
+    "year": 1922,
+    "category": "diplomatic",
+    "description": "Dail Eireann ratified the Anglo-Irish Treaty by 64-57 vote, establishing the Irish Free State.",
+    "difficulty": "medium"
   },
   {
     "name": "dawes-plan",
@@ -1089,6 +1169,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Westminster_from_the_dome_on_Methodist_Central_Hall.jpg/330px-Westminster_from_the_dome_on_Methodist_Central_Hall.jpg"
   },
   {
+    "name": "kingdom-saudi-arabia-founded",
+    "friendly_name": "Kingdom of Saudi Arabia Founded",
+    "year": 1932,
+    "category": "diplomatic",
+    "description": "Ibn Saud unified the Arabian Peninsula into a single kingdom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "manchukuo-established",
+    "friendly_name": "Manchukuo Established",
+    "year": 1932,
+    "category": "diplomatic",
+    "description": "Japan created the puppet state of Manchukuo in Manchuria, installing former Chinese Emperor Puyi.",
+    "difficulty": "medium"
+  },
+  {
     "name": "new-deal",
     "friendly_name": "New Deal Begins",
     "year": 1933,
@@ -1116,6 +1212,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Anti-Comintern_Pact_signing_1936.jpg/330px-Anti-Comintern_Pact_signing_1936.jpg"
   },
   {
+    "name": "rhineland-remilitarization",
+    "friendly_name": "Germany Reoccupies Rhineland",
+    "year": 1936,
+    "category": "diplomatic",
+    "description": "In violation of Versailles and Locarno treaties, Germany remilitarized the Rhineland.",
+    "difficulty": "easy"
+  },
+  {
     "name": "atlantic-charter",
     "friendly_name": "Atlantic Charter",
     "year": 1941,
@@ -1123,6 +1227,14 @@
     "description": "Churchill and Roosevelt outlined Allied war aims and postwar goals.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/President_Roosevelt_and_Winston_Churchill_seated_on_the_quarterdeck_of_HMS_PRINCE_OF_WALES_for_a_Sunday_service_during_the_Atlantic_Conference%2C_10_August_1941._A4816.jpg/330px-thumbnail.jpg"
+  },
+  {
+    "name": "declaration-united-nations",
+    "friendly_name": "Declaration by United Nations",
+    "year": 1942,
+    "category": "diplomatic",
+    "description": "Twenty-six nations signed the Declaration by United Nations during World War II.",
+    "difficulty": "medium"
   },
   {
     "name": "imf-world-bank",
@@ -1159,6 +1271,14 @@
     "description": "Allied leaders finalized postwar arrangements for Germany and Europe.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg/330px-Attlee%2C_Truman_and_Stalin_at_Potsdam.jpg"
+  },
+  {
+    "name": "first-un-general-assembly",
+    "friendly_name": "First UN General Assembly",
+    "year": 1946,
+    "category": "diplomatic",
+    "description": "The first General Assembly of the United Nations assembles in London with 51 nations represented.",
+    "difficulty": "medium"
   },
   {
     "name": "indian-independence",
@@ -1215,6 +1335,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/C-54landingattemplehof.jpg/330px-C-54landingattemplehof.jpg"
   },
   {
+    "name": "burma-independence",
+    "friendly_name": "Burma Independence",
+    "year": 1948,
+    "category": "diplomatic",
+    "description": "Burma gains independence from the United Kingdom, becoming the Union of Burma.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nato-founded",
     "friendly_name": "NATO Founded",
     "year": 1949,
@@ -1233,6 +1361,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Original_Geneva_Conventions.jpg/330px-Original_Geneva_Conventions.jpg"
   },
   {
+    "name": "prc-founded",
+    "friendly_name": "People's Republic of China Founded",
+    "year": 1949,
+    "category": "diplomatic",
+    "description": "Mao Zedong proclaimed the founding of communist China.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "indian-constitution-enacted",
+    "friendly_name": "Indian Constitution Enacted",
+    "year": 1950,
+    "category": "diplomatic",
+    "description": "The Constitution of India comes into force, forming a republic with Rajendra Prasad as first President.",
+    "difficulty": "medium"
+  },
+  {
     "name": "european-coal-steel",
     "friendly_name": "European Coal and Steel Community",
     "year": 1951,
@@ -1240,6 +1384,22 @@
     "description": "Six nations created the first European supranational organization.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Flag_of_the_European_Coal_and_Steel_Community_12_Star_Version.svg/330px-Flag_of_the_European_Coal_and_Steel_Community_12_Star_Version.svg.png"
+  },
+  {
+    "name": "elizabeth-ii-becomes-queen",
+    "friendly_name": "Elizabeth II Becomes Queen",
+    "year": 1952,
+    "category": "diplomatic",
+    "description": "Elizabeth II becomes Queen of the United Kingdom upon the death of her father, George VI.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "korean-armistice",
+    "friendly_name": "Korean Armistice Signed",
+    "year": 1953,
+    "category": "diplomatic",
+    "description": "The armistice ended active fighting in Korea, but no peace treaty was signed.",
+    "difficulty": "medium"
   },
   {
     "name": "brown-v-board",
@@ -1278,6 +1438,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Plenary_session_during_the_Bandung_Conference.png/330px-Plenary_session_during_the_Bandung_Conference.png"
   },
   {
+    "name": "sudan-independence",
+    "friendly_name": "Sudan Independence",
+    "year": 1956,
+    "category": "diplomatic",
+    "description": "Sudan achieves independence from Egypt and the United Kingdom.",
+    "difficulty": "medium"
+  },
+  {
     "name": "treaty-rome",
     "friendly_name": "Treaty of Rome",
     "year": 1957,
@@ -1312,6 +1480,22 @@
     "description": "Seventeen African nations gained independence from European colonial powers.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg/330px-Declaration_of_Independence_%281819%29%2C_by_John_Trumbull.jpg"
+  },
+  {
+    "name": "indus-water-treaty",
+    "friendly_name": "Indus Waters Treaty",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "India and Pakistan signed a water-sharing treaty brokered by the World Bank.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "us-japan-mutual-security-treaty",
+    "friendly_name": "US-Japan Mutual Security Treaty",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Japan and the United States sign the Mutual Security Treaty.",
+    "difficulty": "medium"
   },
   {
     "name": "non-aligned-movement",
@@ -1350,6 +1534,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
   },
   {
+    "name": "24th-amendment-ratified",
+    "friendly_name": "24th Amendment Ratified",
+    "year": 1964,
+    "category": "diplomatic",
+    "description": "The 24th Amendment, prohibiting poll taxes in national elections, is ratified.",
+    "difficulty": "medium"
+  },
+  {
     "name": "voting-rights-act",
     "friendly_name": "Voting Rights Act",
     "year": 1965,
@@ -1357,6 +1549,14 @@
     "description": "The US prohibited racial discrimination in voting.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Great_Seal_of_the_United_States_%28obverse%29.svg/330px-Great_Seal_of_the_United_States_%28obverse%29.svg.png"
+  },
+  {
+    "name": "singapore-independence",
+    "friendly_name": "Singapore Independence",
+    "year": 1965,
+    "category": "diplomatic",
+    "description": "Singapore separated from Malaysia to become an independent nation.",
+    "difficulty": "medium"
   },
   {
     "name": "apollo-11-treaty",
@@ -1413,6 +1613,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Nixon_and_Brezhnev_signing_SALT_I.jpg/330px-Nixon_and_Brezhnev_signing_SALT_I.jpg"
   },
   {
+    "name": "paris-peace-accords-1973",
+    "friendly_name": "Paris Peace Accords",
+    "year": 1973,
+    "category": "diplomatic",
+    "description": "The agreement led to a ceasefire and U.S. withdrawal from Vietnam.",
+    "difficulty": "medium"
+  },
+  {
     "name": "helsinki-accords",
     "friendly_name": "Helsinki Accords",
     "year": 1975,
@@ -1429,6 +1637,14 @@
     "description": "Egypt and Israel signed a peace agreement brokered by the US.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Close_up_of_Menahem_Begin%2C_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.%2C_09-07-1978_-_NARA_-_181133.tif/lossy-page1-320px-Close_up_of_Menahem_Begin%2C_Jimmy_Carter_and_Anwar_Sadat_at_Camp_David.%2C_09-07-1978_-_NARA_-_181133.tif.jpg"
+  },
+  {
+    "name": "reform-opening-china",
+    "friendly_name": "China's Reform and Opening",
+    "year": 1978,
+    "category": "diplomatic",
+    "description": "Deng Xiaoping launched economic reforms that transformed China into a market economy.",
+    "difficulty": "hard"
   },
   {
     "name": "iran-revolution",
@@ -1467,6 +1683,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/8/83/SolidarityFist.jpg"
   },
   {
+    "name": "constitution-canada-patriation",
+    "friendly_name": "Canadian Constitution Patriation",
+    "year": 1982,
+    "category": "diplomatic",
+    "description": "Canada gained full sovereignty with the ability to amend its own constitution.",
+    "difficulty": "hard"
+  },
+  {
     "name": "european-union-precursor",
     "friendly_name": "Single European Act",
     "year": 1986,
@@ -1494,6 +1718,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg/330px-George_Bush_and_Mikhail_Gorbachev_sign_the_START_1991.jpg"
   },
   {
+    "name": "ussr-dissolved",
+    "friendly_name": "USSR Dissolved",
+    "year": 1991,
+    "category": "diplomatic",
+    "description": "The Soviet Union officially dissolved, ending the Cold War era.",
+    "difficulty": "easy"
+  },
+  {
     "name": "maastricht-treaty",
     "friendly_name": "Maastricht Treaty",
     "year": 1992,
@@ -1501,6 +1733,14 @@
     "description": "The treaty created the European Union and planned a common currency.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/GER_%E2%80%94_BY_%E2%80%94_Regensburg_-_Donaumarkt_1_%28Museum_der_Bayerischen_Geschichte%3B_Vertrag_von_Maastricht%29_%28cropped%29.JPG/330px-GER_%E2%80%94_BY_%E2%80%94_Regensburg_-_Donaumarkt_1_%28Museum_der_Bayerischen_Geschichte%3B_Vertrag_von_Maastricht%29_%28cropped%29.JPG"
+  },
+  {
+    "name": "nafta-signed",
+    "friendly_name": "NAFTA Signed",
+    "year": 1992,
+    "category": "diplomatic",
+    "description": "The North American Free Trade Agreement created a trade bloc between the US, Canada, and Mexico.",
+    "difficulty": "medium"
   },
   {
     "name": "oslo-accords",
@@ -1548,6 +1788,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Kyoto_Protocol_parties.svg/330px-Kyoto_Protocol_parties.svg.png"
   },
   {
+    "name": "hong-kong-handover",
+    "friendly_name": "Hong Kong Handover",
+    "year": 1997,
+    "category": "diplomatic",
+    "description": "Britain returned Hong Kong to China after 156 years of colonial rule.",
+    "difficulty": "medium"
+  },
+  {
     "name": "good-friday-agreement",
     "friendly_name": "Good Friday Agreement",
     "year": 1998,
@@ -1573,6 +1821,22 @@
     "description": "Eleven European nations adopted a common currency.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Euro_Series_Banknotes_%282019%29.jpg/330px-Euro_Series_Banknotes_%282019%29.jpg"
+  },
+  {
+    "name": "macau-handover",
+    "friendly_name": "Macau Handover",
+    "year": 1999,
+    "category": "diplomatic",
+    "description": "Portugal returned Macau to China after over 400 years of colonial rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "china-wto-entry",
+    "friendly_name": "China Joins WTO",
+    "year": 2001,
+    "category": "diplomatic",
+    "description": "China joined the World Trade Organization, accelerating its global economic integration.",
+    "difficulty": "medium"
   },
   {
     "name": "icc-established",
@@ -1602,6 +1866,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/EU25-2004_European_Union_map_enlargement.svg/330px-EU25-2004_European_Union_map_enlargement.svg.png"
   },
   {
+    "name": "same-sex-marriage-canada",
+    "friendly_name": "Same-Sex Marriage in Canada",
+    "year": 2005,
+    "category": "diplomatic",
+    "description": "Canada became the fourth country to legalize same-sex marriage nationwide.",
+    "difficulty": "medium"
+  },
+  {
     "name": "asean-charter",
     "friendly_name": "ASEAN Charter",
     "year": 2007,
@@ -1618,6 +1890,14 @@
     "description": "The EU reformed its institutions and created a permanent president.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tratado_de_Lisboa_13_12_2007_%2804%29.jpg/330px-Tratado_de_Lisboa_13_12_2007_%2804%29.jpg"
+  },
+  {
+    "name": "belt-road-initiative",
+    "friendly_name": "Belt and Road Initiative Launched",
+    "year": 2013,
+    "category": "diplomatic",
+    "description": "China announced a massive global infrastructure investment strategy.",
+    "difficulty": "medium"
   },
   {
     "name": "paris-climate-agreement",
@@ -1638,6 +1918,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Negotiations_about_Iranian_Nuclear_Program_-_the_Ministers_of_Foreign_Affairs_and_Other_Officials_of_the_P5%2B1_and_Ministers_of_Foreign_Affairs_of_Iran_and_EU_in_Lausanne.jpg/330px-thumbnail.jpg"
   },
   {
+    "name": "inter-korean-summit-2018",
+    "friendly_name": "Inter-Korean Summit",
+    "year": 2018,
+    "category": "diplomatic",
+    "description": "Leaders of North and South Korea met for the first time in over a decade.",
+    "difficulty": "medium"
+  },
+  {
     "name": "brexit",
     "friendly_name": "Brexit Completed",
     "year": 2020,
@@ -1654,133 +1942,5 @@
     "description": "UAE and Bahrain normalized relations with Israel.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony_%28cropped%29.jpg/330px-President_Trump_and_The_First_Lady_Participate_in_an_Abraham_Accords_Signing_Ceremony_%28cropped%29.jpg"
-  },
-  {
-    "name": "ussr-dissolved",
-    "friendly_name": "USSR Dissolved",
-    "year": 1991,
-    "category": "diplomatic",
-    "description": "The Soviet Union officially dissolved, ending the Cold War era.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "prc-founded",
-    "friendly_name": "People's Republic of China Founded",
-    "year": 1949,
-    "category": "diplomatic",
-    "description": "Mao Zedong proclaimed the founding of communist China.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "hong-kong-handover",
-    "friendly_name": "Hong Kong Handover",
-    "year": 1997,
-    "category": "diplomatic",
-    "description": "Britain returned Hong Kong to China after 156 years of colonial rule.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "macau-handover",
-    "friendly_name": "Macau Handover",
-    "year": 1999,
-    "category": "diplomatic",
-    "description": "Portugal returned Macau to China after over 400 years of colonial rule.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "singapore-independence",
-    "friendly_name": "Singapore Independence",
-    "year": 1965,
-    "category": "diplomatic",
-    "description": "Singapore separated from Malaysia to become an independent nation.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "korean-armistice",
-    "friendly_name": "Korean Armistice Signed",
-    "year": 1953,
-    "category": "diplomatic",
-    "description": "The armistice ended active fighting in Korea, but no peace treaty was signed.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "inter-korean-summit-2018",
-    "friendly_name": "Inter-Korean Summit",
-    "year": 2018,
-    "category": "diplomatic",
-    "description": "Leaders of North and South Korea met for the first time in over a decade.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "paris-peace-accords-1973",
-    "friendly_name": "Paris Peace Accords",
-    "year": 1973,
-    "category": "diplomatic",
-    "description": "The agreement led to a ceasefire and U.S. withdrawal from Vietnam.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "kingdom-saudi-arabia-founded",
-    "friendly_name": "Kingdom of Saudi Arabia Founded",
-    "year": 1932,
-    "category": "diplomatic",
-    "description": "Ibn Saud unified the Arabian Peninsula into a single kingdom.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "indus-water-treaty",
-    "friendly_name": "Indus Waters Treaty",
-    "year": 1960,
-    "category": "diplomatic",
-    "description": "India and Pakistan signed a water-sharing treaty brokered by the World Bank.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "constitution-canada-patriation",
-    "friendly_name": "Canadian Constitution Patriation",
-    "year": 1982,
-    "category": "diplomatic",
-    "description": "Canada gained full sovereignty with the ability to amend its own constitution.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "nafta-signed",
-    "friendly_name": "NAFTA Signed",
-    "year": 1992,
-    "category": "diplomatic",
-    "description": "The North American Free Trade Agreement created a trade bloc between the US, Canada, and Mexico.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "same-sex-marriage-canada",
-    "friendly_name": "Same-Sex Marriage in Canada",
-    "year": 2005,
-    "category": "diplomatic",
-    "description": "Canada became the fourth country to legalize same-sex marriage nationwide.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "china-wto-entry",
-    "friendly_name": "China Joins WTO",
-    "year": 2001,
-    "category": "diplomatic",
-    "description": "China joined the World Trade Organization, accelerating its global economic integration.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "reform-opening-china",
-    "friendly_name": "China's Reform and Opening",
-    "year": 1978,
-    "category": "diplomatic",
-    "description": "Deng Xiaoping launched economic reforms that transformed China into a market economy.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "belt-road-initiative",
-    "friendly_name": "Belt and Road Initiative Launched",
-    "year": 2013,
-    "category": "diplomatic",
-    "description": "China announced a massive global infrastructure investment strategy.",
-    "difficulty": "medium"
   }
 ]

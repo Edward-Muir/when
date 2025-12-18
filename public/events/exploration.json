@@ -261,6 +261,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Globe_Atlantic.svg/330px-Globe_Atlantic.svg.png"
   },
   {
+    "name": "silk-road-established",
+    "friendly_name": "Silk Road Established",
+    "year": -130,
+    "category": "exploration",
+    "description": "The Han Dynasty opened trade routes connecting China to the Mediterranean.",
+    "difficulty": "hard"
+  },
+  {
     "name": "hero-steam-engine",
     "friendly_name": "Hero's Aeolipile",
     "year": 50,
@@ -288,6 +296,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif"
   },
   {
+    "name": "paper-invented-china",
+    "friendly_name": "Paper Invented",
+    "year": 105,
+    "category": "exploration",
+    "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
+    "difficulty": "hard"
+  },
+  {
     "name": "ptolemy-almagest",
     "friendly_name": "Ptolemy Writes Almagest",
     "year": 150,
@@ -304,6 +320,14 @@
     "description": "Chinese inventors created the first magnetic compass for navigation.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2016_Busola.JPG/330px-2016_Busola.JPG"
+  },
+  {
+    "name": "printing-invented-china",
+    "friendly_name": "Printing Invented in China",
+    "year": 650,
+    "category": "exploration",
+    "description": "Woodblock printing was developed in China, transforming information dissemination.",
+    "difficulty": "hard"
   },
   {
     "name": "al-khwarizmi-algebra",
@@ -358,6 +382,14 @@
     "description": "Bi Sheng invented movable type printing in China.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Edit_Entry_-_Movable_Type_401.png/330px-Edit_Entry_-_Movable_Type_401.png"
+  },
+  {
+    "name": "compass-invention-china",
+    "friendly_name": "Compass Invented",
+    "year": 1050,
+    "category": "exploration",
+    "description": "Chinese scientists developed the magnetic compass, revolutionizing navigation.",
+    "difficulty": "hard"
   },
   {
     "name": "fibonacci-arabic-numerals",
@@ -747,6 +779,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/E._coli_Bacteria_%287316101966%29.jpg/330px-E._coli_Bacteria_%287316101966%29.jpg"
   },
   {
+    "name": "great-comet-1680",
+    "friendly_name": "Great Comet of 1680 Discovered",
+    "year": 1680,
+    "category": "exploration",
+    "description": "German astronomer Gottfried Kirch discovered the Great Comet of 1680, the first comet discovered by telescope.",
+    "difficulty": "hard"
+  },
+  {
     "name": "la-salle-mississippi",
     "friendly_name": "La Salle Explores Mississippi",
     "year": 1682,
@@ -765,6 +805,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_Principia_title_page.png/330px-Newton%27s_Principia_title_page.png"
   },
   {
+    "name": "first-paper-money-americas",
+    "friendly_name": "First Paper Money in Americas",
+    "year": 1690,
+    "category": "exploration",
+    "description": "The colony of Massachusetts issued the first paper money in the Americas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-newspaper-americas",
+    "friendly_name": "First American Newspaper",
+    "year": 1690,
+    "category": "exploration",
+    "description": "Publick Occurrences Both Forreign and Domestick, the first newspaper in the Americas, was published.",
+    "difficulty": "medium"
+  },
+  {
     "name": "dampier-circumnavigation",
     "friendly_name": "Dampier Circumnavigates",
     "year": 1691,
@@ -774,6 +830,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dampier-portrait.jpg/330px-Dampier-portrait.jpg"
   },
   {
+    "name": "dampier-new-britain",
+    "friendly_name": "Dampier Circumnavigates New Britain",
+    "year": 1700,
+    "category": "exploration",
+    "description": "William Dampier became the first European to circumnavigate New Britain, discovering it was an island.",
+    "difficulty": "hard"
+  },
+  {
     "name": "bering-strait",
     "friendly_name": "Bering Discovers Bering Strait",
     "year": 1728,
@@ -781,6 +845,14 @@
     "description": "Vitus Bering proved that Asia and North America were separate continents.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vitus_Bering_reconstruction.jpg/330px-Vitus_Bering_reconstruction.jpg"
+  },
+  {
+    "name": "first-synagogue-nyc",
+    "friendly_name": "First New York Synagogue",
+    "year": 1730,
+    "category": "exploration",
+    "description": "Shearith Israel, the first synagogue in New York City, was dedicated.",
+    "difficulty": "medium"
   },
   {
     "name": "linnaeus-taxonomy",
@@ -844,6 +916,14 @@
     "description": "The famous mutiny occurred during a voyage to transport breadfruit plants.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mutiny_HMS_Bounty.jpg/330px-Mutiny_HMS_Bounty.jpg"
+  },
+  {
+    "name": "first-us-census",
+    "friendly_name": "First U.S. Census",
+    "year": 1790,
+    "category": "exploration",
+    "description": "The first United States census was authorized by Congress.",
+    "difficulty": "easy"
   },
   {
     "name": "vaccination-invented",
@@ -936,6 +1016,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/James_Weddell_Expedition.jpg/330px-James_Weddell_Expedition.jpg"
   },
   {
+    "name": "venus-de-milo-discovered",
+    "friendly_name": "Venus de Milo Discovered",
+    "year": 1820,
+    "category": "exploration",
+    "description": "The famous ancient Greek statue Venus de Milo was discovered on the Aegean island of Milos.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "antarctica-discovered-russia",
+    "friendly_name": "Antarctic Continent Discovered",
+    "year": 1820,
+    "category": "exploration",
+    "description": "A Russian expedition led by Fabian Gottlieb von Bellingshausen discovered the Antarctic continent.",
+    "difficulty": "medium"
+  },
+  {
     "name": "faraday-electric-motor",
     "friendly_name": "Faraday's Electric Motor",
     "year": 1821,
@@ -1024,6 +1120,14 @@
     "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Panth%C3%A9on_Pendule_de_Foucault2.JPG/330px-Panth%C3%A9on_Pendule_de_Foucault2.JPG"
+  },
+  {
+    "name": "perry-expedition-japan",
+    "friendly_name": "Perry Expedition Opens Japan",
+    "year": 1853,
+    "category": "exploration",
+    "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
+    "difficulty": "hard"
   },
   {
     "name": "bunsen-burner",
@@ -1323,6 +1427,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Alfred_Wegener_ca.1924-30.jpg/330px-Alfred_Wegener_ca.1924-30.jpg"
   },
   {
+    "name": "continental-drift-theory",
+    "friendly_name": "Continental Drift Theory",
+    "year": 1912,
+    "category": "exploration",
+    "description": "Alfred Wegener presented his theory of continental drift, revolutionizing geology.",
+    "difficulty": "medium"
+  },
+  {
     "name": "bohr-atomic-model",
     "friendly_name": "Bohr's Atomic Model",
     "year": 1913,
@@ -1339,6 +1451,14 @@
     "description": "Ernest Shackleton's Antarctic expedition became a legendary survival story.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg/330px-Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg"
+  },
+  {
+    "name": "first-scheduled-airline",
+    "friendly_name": "First Scheduled Airline",
+    "year": 1914,
+    "category": "exploration",
+    "description": "The SPT Airboat Line became the worlds first scheduled airline using winged aircraft.",
+    "difficulty": "hard"
   },
   {
     "name": "general-relativity",
@@ -1368,6 +1488,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Inside_Pharaoh_Tutankhamun%27s_tomb%2C_18th_dynasty.jpg/330px-Inside_Pharaoh_Tutankhamun%27s_tomb%2C_18th_dynasty.jpg"
   },
   {
+    "name": "first-insulin-injection",
+    "friendly_name": "First Insulin Injection",
+    "year": 1922,
+    "category": "exploration",
+    "description": "Leonard Thompson became the first person injected with insulin, transforming diabetes treatment.",
+    "difficulty": "medium"
+  },
+  {
     "name": "hubble-galaxies",
     "friendly_name": "Hubble Discovers Galaxies",
     "year": 1924,
@@ -1375,6 +1503,22 @@
     "description": "Edwin Hubble proved that other galaxies exist beyond the Milky Way.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Studio_portrait_photograph_of_Edwin_Powell_Hubble_%28cropped%29.JPG/330px-Studio_portrait_photograph_of_Edwin_Powell_Hubble_%28cropped%29.JPG"
+  },
+  {
+    "name": "television-first-demonstration",
+    "friendly_name": "First Television Demonstration",
+    "year": 1926,
+    "category": "exploration",
+    "description": "John Logie Baird gave the first public demonstration of television.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "goddard-liquid-rocket",
+    "friendly_name": "First Liquid-Fueled Rocket",
+    "year": 1926,
+    "category": "exploration",
+    "description": "Robert Goddard launched the first liquid-fueled rocket in Auburn, Massachusetts.",
+    "difficulty": "medium"
   },
   {
     "name": "spirit-of-st-louis",
@@ -1431,6 +1575,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg/330px-Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg"
   },
   {
+    "name": "first-woman-us-senator",
+    "friendly_name": "First Woman Elected to US Senate",
+    "year": 1932,
+    "category": "exploration",
+    "description": "Hattie Caraway became the first woman elected to the United States Senate.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nuclear-fission",
     "friendly_name": "Nuclear Fission Discovered",
     "year": 1938,
@@ -1438,6 +1590,14 @@
     "description": "Otto Hahn and Fritz Strassmann discovered nuclear fission.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nuclear_fission.svg/320px-Nuclear_fission.svg.png"
+  },
+  {
+    "name": "carbon-14-discovered",
+    "friendly_name": "Carbon-14 Discovered",
+    "year": 1940,
+    "category": "exploration",
+    "description": "Martin Kamen and Sam Ruben discovered carbon-14, revolutionizing archaeological dating.",
+    "difficulty": "hard"
   },
   {
     "name": "penicillin-mass-produced",
@@ -1485,6 +1645,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg/330px-Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg"
   },
   {
+    "name": "georgetown-ibm-machine-translation",
+    "friendly_name": "Georgetown-IBM Machine Translation",
+    "year": 1954,
+    "category": "exploration",
+    "description": "The first public demonstration of machine translation is held in New York at IBM headquarters.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "uss-nautilus-launched",
+    "friendly_name": "USS Nautilus Launched",
+    "year": 1954,
+    "category": "exploration",
+    "description": "The first nuclear-powered submarine, USS Nautilus, is launched in Groton, Connecticut.",
+    "difficulty": "medium"
+  },
+  {
     "name": "polio-vaccine",
     "friendly_name": "Polio Vaccine Developed",
     "year": 1955,
@@ -1501,6 +1677,14 @@
     "description": "The Soviet Union launched the first artificial satellite into orbit.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg/330px-%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg"
+  },
+  {
+    "name": "van-allen-belt-detected",
+    "friendly_name": "Van Allen Radiation Belt Detected",
+    "year": 1958,
+    "category": "exploration",
+    "description": "The first successful American satellite detects the Van Allen radiation belt.",
+    "difficulty": "medium"
   },
   {
     "name": "mariana-trench",
@@ -1548,6 +1732,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Artist%27s_rendering_ULAS_J1120%2B0641.jpg/330px-Artist%27s_rendering_ULAS_J1120%2B0641.jpg"
   },
   {
+    "name": "first-woman-space",
+    "friendly_name": "First Woman in Space",
+    "year": 1963,
+    "category": "exploration",
+    "description": "Soviet cosmonaut Valentina Tereshkova became the first woman to fly in space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "luna-9-launched",
+    "friendly_name": "Luna 9 Launched",
+    "year": 1966,
+    "category": "exploration",
+    "description": "The Soviet Union launches the unmanned Luna 9 spacecraft to achieve first soft landing on the Moon.",
+    "difficulty": "medium"
+  },
+  {
     "name": "plate-tectonics-confirmed",
     "friendly_name": "Plate Tectonics Confirmed",
     "year": 1968,
@@ -1555,6 +1755,14 @@
     "description": "Scientists confirmed that Earth's surface is divided into moving plates.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tectonic_plates_%282022%29.svg/330px-Tectonic_plates_%282022%29.svg.png"
+  },
+  {
+    "name": "apollo-5-lunar-module",
+    "friendly_name": "Apollo 5 Lunar Module",
+    "year": 1968,
+    "category": "exploration",
+    "description": "Apollo 5 lifts off carrying the first Lunar Module into space.",
+    "difficulty": "medium"
   },
   {
     "name": "moon-landing",
@@ -1573,6 +1781,22 @@
     "description": "The mission that would land humans on the Moon launched from Florida.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg"
+  },
+  {
+    "name": "boeing-747-enters-service",
+    "friendly_name": "Boeing 747 Enters Service",
+    "year": 1970,
+    "category": "exploration",
+    "description": "The worlds first jumbo jet enters commercial service for Pan Am from New York to London.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "japan-launches-ohsumi",
+    "friendly_name": "Japan Launches Ohsumi",
+    "year": 1970,
+    "category": "exploration",
+    "description": "Japan becomes the fourth nation to put a satellite into orbit using its own booster.",
+    "difficulty": "medium"
   },
   {
     "name": "mri-invented",
@@ -1600,6 +1824,14 @@
     "description": "NASA launched Voyager 1, now the farthest human-made object from Earth.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/330px-Voyager_spacecraft_model.png"
+  },
+  {
+    "name": "first-dna-sequencing",
+    "friendly_name": "First Human DNA Sequencing",
+    "year": 1977,
+    "category": "exploration",
+    "description": "Frederick Sanger developed a method to sequence DNA, revolutionizing genetics.",
+    "difficulty": "hard"
   },
   {
     "name": "test-tube-baby",
@@ -1665,6 +1897,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Hr8799_orbit_hd.gif/330px-Hr8799_orbit_hd.gif"
   },
   {
+    "name": "spirit-mars-rover",
+    "friendly_name": "Spirit Mars Rover Lands",
+    "year": 2004,
+    "category": "exploration",
+    "description": "NASAs Spirit rover landed successfully on Mars to explore the surface.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "eris-discovery",
+    "friendly_name": "Dwarf Planet Eris Discovered",
+    "year": 2005,
+    "category": "exploration",
+    "description": "Discovery of Eris led the IAU to define planet for the first time, demoting Pluto.",
+    "difficulty": "medium"
+  },
+  {
     "name": "higgs-boson",
     "friendly_name": "Higgs Boson Discovered",
     "year": 2012,
@@ -1699,6 +1947,14 @@
     "description": "NASA's Curiosity rover landed on Mars to search for signs of life.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg/330px-Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg"
+  },
+  {
+    "name": "india-mars-mission",
+    "friendly_name": "India's Mars Orbiter Mission",
+    "year": 2014,
+    "category": "exploration",
+    "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
+    "difficulty": "medium"
   },
   {
     "name": "gravitational-waves",
@@ -1746,6 +2002,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Quantum_Supremacy_by_Kaku.jpg"
   },
   {
+    "name": "change-4-landing",
+    "friendly_name": "Change 4 Lands on Far Side of Moon",
+    "year": 2019,
+    "category": "exploration",
+    "description": "Chinas probe made the first soft landing on the far side of the Moon.",
+    "difficulty": "medium"
+  },
+  {
     "name": "mrna-vaccines",
     "friendly_name": "mRNA Vaccines Deployed",
     "year": 2020,
@@ -1762,6 +2026,14 @@
     "description": "AI solved the 50-year-old problem of predicting protein structures.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Protein_structure.png/330px-Protein_structure.png"
+  },
+  {
+    "name": "china-moon-samples",
+    "friendly_name": "Chang'e-5 Moon Sample Return",
+    "year": 2020,
+    "category": "exploration",
+    "description": "China became the third country to return lunar samples to Earth.",
+    "difficulty": "medium"
   },
   {
     "name": "james-webb-launched",
@@ -1825,77 +2097,5 @@
     "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png"
-  },
-  {
-    "name": "paper-invented-china",
-    "friendly_name": "Paper Invented",
-    "year": 105,
-    "category": "exploration",
-    "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "silk-road-established",
-    "friendly_name": "Silk Road Established",
-    "year": -130,
-    "category": "exploration",
-    "description": "The Han Dynasty opened trade routes connecting China to the Mediterranean.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "printing-invented-china",
-    "friendly_name": "Printing Invented in China",
-    "year": 650,
-    "category": "exploration",
-    "description": "Woodblock printing was developed in China, transforming information dissemination.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "compass-invention-china",
-    "friendly_name": "Compass Invented",
-    "year": 1050,
-    "category": "exploration",
-    "description": "Chinese scientists developed the magnetic compass, revolutionizing navigation.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "india-mars-mission",
-    "friendly_name": "India's Mars Orbiter Mission",
-    "year": 2014,
-    "category": "exploration",
-    "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "china-moon-samples",
-    "friendly_name": "Chang'e-5 Moon Sample Return",
-    "year": 2020,
-    "category": "exploration",
-    "description": "China became the third country to return lunar samples to Earth.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "first-woman-space",
-    "friendly_name": "First Woman in Space",
-    "year": 1963,
-    "category": "exploration",
-    "description": "Soviet cosmonaut Valentina Tereshkova became the first woman to fly in space.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "perry-expedition-japan",
-    "friendly_name": "Perry Expedition Opens Japan",
-    "year": 1853,
-    "category": "exploration",
-    "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "first-dna-sequencing",
-    "friendly_name": "First Human DNA Sequencing",
-    "year": 1977,
-    "category": "exploration",
-    "description": "Frederick Sanger developed a method to sequence DNA, revolutionizing genetics.",
-    "difficulty": "hard"
   }
 ]

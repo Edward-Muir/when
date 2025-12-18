@@ -352,7 +352,9 @@ function parseArgs() {
     text: null,
     range: null,
     offset: 0,
-    verbose: false
+    verbose: false,
+    output: null,
+    add: false
   };
 
   for (const arg of args) {
@@ -367,10 +369,33 @@ function parseArgs() {
       params.offset = parseInt(arg.split('=')[1]);
     } else if (arg === '--verbose' || arg === '-v') {
       params.verbose = true;
+    } else if (arg.startsWith('--output=') || arg.startsWith('-o=')) {
+      params.output = arg.split('=')[1];
+    } else if (arg === '--add') {
+      params.add = true;
     }
   }
 
   return params;
+}
+
+// Add events to category files
+function addEventsToFiles(byCategory) {
+  for (const [category, newEvents] of Object.entries(byCategory)) {
+    const filePath = path.join(EVENTS_DIR, `${category}.json`);
+
+    if (!fs.existsSync(filePath)) {
+      console.log(`  Creating new file: ${category}.json`);
+      fs.writeFileSync(filePath, JSON.stringify(newEvents, null, 2));
+    } else {
+      const existing = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+      const merged = [...existing, ...newEvents];
+      // Sort by year
+      merged.sort((a, b) => a.year - b.year);
+      fs.writeFileSync(filePath, JSON.stringify(merged, null, 2));
+      console.log(`  Added ${newEvents.length} events to ${category}.json (total: ${merged.length})`);
+    }
+  }
 }
 
 // Main
@@ -476,6 +501,29 @@ async function main() {
       byCategory[event.category] = [];
     }
     byCategory[event.category].push(event);
+  }
+
+  // If --add flag, add events directly to category files
+  if (args.add) {
+    console.log('Adding events to category files...\n');
+    addEventsToFiles(byCategory);
+    console.log('\nDone! Events have been added to the game.');
+    return;
+  }
+
+  // If --output flag, save to file
+  if (args.output) {
+    const outputPath = path.resolve(args.output);
+    fs.writeFileSync(outputPath, JSON.stringify(allNewEvents, null, 2));
+    console.log(`Saved ${allNewEvents.length} events to ${outputPath}`);
+
+    // Also save by category
+    for (const [category, events] of Object.entries(byCategory)) {
+      const categoryPath = outputPath.replace('.json', `-${category}.json`);
+      fs.writeFileSync(categoryPath, JSON.stringify(events, null, 2));
+      console.log(`  ${category}: ${events.length} events → ${categoryPath}`);
+    }
+    return;
   }
 
   // Print events grouped by category

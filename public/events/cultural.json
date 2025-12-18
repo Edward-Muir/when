@@ -288,6 +288,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg"
   },
   {
+    "name": "tang-dynasty-founded",
+    "friendly_name": "Tang Dynasty Founded",
+    "year": 618,
+    "category": "cultural",
+    "description": "China's golden age began, a period of prosperity, culture, and influence across East Asia.",
+    "difficulty": "hard"
+  },
+  {
     "name": "islam-founded",
     "friendly_name": "Islam Founded",
     "year": 622,
@@ -306,6 +314,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Birmingham_Quran_manuscript_full.jpg/330px-Birmingham_Quran_manuscript_full.jpg"
   },
   {
+    "name": "nara-period-begins",
+    "friendly_name": "Nara Period Begins",
+    "year": 710,
+    "category": "cultural",
+    "description": "Japan established its first permanent capital at Nara, flourishing in arts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heian-period-begins",
+    "friendly_name": "Heian Period Begins",
+    "year": 794,
+    "category": "cultural",
+    "description": "Japan's golden age of art, literature, and court culture began in Kyoto.",
+    "difficulty": "hard"
+  },
+  {
     "name": "book-of-kells",
     "friendly_name": "Book of Kells Created",
     "year": 800,
@@ -313,6 +337,14 @@
     "description": "Irish monks created an illuminated manuscript of the four Gospels.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KellsFol032vChristEnthroned.jpg/330px-KellsFol032vChristEnthroned.jpg"
+  },
+  {
+    "name": "song-dynasty-founded",
+    "friendly_name": "Song Dynasty Founded",
+    "year": 960,
+    "category": "cultural",
+    "description": "A Chinese dynasty known for technological and cultural advancements began.",
+    "difficulty": "hard"
   },
   {
     "name": "tale-of-genji",
@@ -351,6 +383,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Arms_of_University_of_Oxford.svg/330px-Arms_of_University_of_Oxford.svg.png"
   },
   {
+    "name": "kamakura-shogunate",
+    "friendly_name": "Kamakura Shogunate Established",
+    "year": 1185,
+    "category": "cultural",
+    "description": "Japan's first military government began, establishing samurai dominance.",
+    "difficulty": "hard"
+  },
+  {
     "name": "franciscan-order",
     "friendly_name": "Franciscan Order Founded",
     "year": 1209,
@@ -367,6 +407,14 @@
     "description": "Thomas Aquinas began his masterwork synthesizing Christian theology and philosophy.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/SummaTheologiae.jpg/330px-SummaTheologiae.jpg"
+  },
+  {
+    "name": "yuan-dynasty-founded",
+    "friendly_name": "Yuan Dynasty Established",
+    "year": 1271,
+    "category": "cultural",
+    "description": "Kublai Khan established Mongol rule over China, the first foreign dynasty.",
+    "difficulty": "hard"
   },
   {
     "name": "marco-polo-china",
@@ -403,6 +451,14 @@
     "description": "The Italian poet began his influential sonnet sequence to Laura.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg/330px-Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg"
+  },
+  {
+    "name": "ming-dynasty-founded",
+    "friendly_name": "Ming Dynasty Founded",
+    "year": 1368,
+    "category": "cultural",
+    "description": "The Ming restored native Han Chinese rule after expelling the Mongols.",
+    "difficulty": "hard"
   },
   {
     "name": "wycliffe-bible",
@@ -567,6 +623,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg/330px-Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg"
   },
   {
+    "name": "russia-anno-domini",
+    "friendly_name": "Russia Adopts Modern Calendar",
+    "year": 1700,
+    "category": "cultural",
+    "description": "Russia began using the Anno Domini calendar instead of the Byzantine Anno Mundi era.",
+    "difficulty": "hard"
+  },
+  {
     "name": "bach-well-tempered",
     "friendly_name": "Bach Completes Well-Tempered Clavier",
     "year": 1722,
@@ -583,6 +647,14 @@
     "description": "Handel premiered his famous oratorio featuring the Hallelujah Chorus.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Messiah-titlepage.jpg/330px-Messiah-titlepage.jpg"
+  },
+  {
+    "name": "bach-death",
+    "friendly_name": "Death of Johann Sebastian Bach",
+    "year": 1750,
+    "category": "cultural",
+    "description": "The composer, organist and harpsichordist Johann Sebastian Bach died on July 28.",
+    "difficulty": "easy"
   },
   {
     "name": "encyclopedia-published",
@@ -610,6 +682,14 @@
     "description": "The first edition of the English-language encyclopedia was published in Scotland.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/William_Smellie00.jpg/330px-William_Smellie00.jpg"
+  },
+  {
+    "name": "marie-antoinette-wedding",
+    "friendly_name": "Marie Antoinette Marries Louis XVI",
+    "year": 1770,
+    "category": "cultural",
+    "description": "Marie Antoinette married Louis XVI of France in a proxy wedding.",
+    "difficulty": "medium"
   },
   {
     "name": "wealth-of-nations",
@@ -646,6 +726,14 @@
     "description": "The former French royal palace opened as one of the world's first public museums.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/330px-Louvre_Museum_icon_1.svg.png"
+  },
+  {
+    "name": "beethoven-first-symphony",
+    "friendly_name": "Beethovens First Symphony",
+    "year": 1800,
+    "category": "cultural",
+    "description": "Ludwig van Beethoven led the premiere of his First Symphony in Vienna.",
+    "difficulty": "medium"
   },
   {
     "name": "goethe-faust",
@@ -718,6 +806,14 @@
     "description": "Joseph Nicéphore Niépce captured the world's first permanent photograph.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg/330px-Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg"
+  },
+  {
+    "name": "book-of-mormon-published",
+    "friendly_name": "Book of Mormon Published",
+    "year": 1830,
+    "category": "cultural",
+    "description": "The Book of Mormon was published in Palmyra, New York.",
+    "difficulty": "medium"
   },
   {
     "name": "slavery-abolished-uk",
@@ -900,6 +996,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg/330px-The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg"
   },
   {
+    "name": "womens-suffrage-nz",
+    "friendly_name": "Women's Suffrage in New Zealand",
+    "year": 1893,
+    "category": "cultural",
+    "description": "New Zealand became the first country to grant women the right to vote.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-motion-picture",
     "friendly_name": "First Motion Picture Screened",
     "year": 1895,
@@ -981,6 +1085,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Roerich_Rite_of_Spring.jpg/330px-Roerich_Rite_of_Spring.jpg"
   },
   {
+    "name": "ford-five-dollar-wage",
+    "friendly_name": "Ford 5 Dollar Minimum Wage",
+    "year": 1914,
+    "category": "cultural",
+    "description": "Ford Motor Company announced an eight-hour workday and 5 dollar minimum daily wage, revolutionizing labor standards.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wrigley-field-opens",
+    "friendly_name": "Wrigley Field Opens",
+    "year": 1914,
+    "category": "cultural",
+    "description": "First baseball game at Wrigley Field (then Weeghman Park) in Chicago.",
+    "difficulty": "medium"
+  },
+  {
     "name": "dada-movement",
     "friendly_name": "Dada Movement Begins",
     "year": 1916,
@@ -997,15 +1117,6 @@
     "description": "British women over 30 gained the right to vote for the first time.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Votes_For_Women.jpg/330px-Votes_For_Women.jpg"
-  },
-  {
-    "name": "womens-suffrage-uk",
-    "friendly_name": "Women Gain Vote in UK",
-    "year": 1918,
-    "category": "cultural",
-    "description": "British women over 30 gained the right to vote.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Suffragette_Emily_Davison%27s_return_from_Holloway_%28cropped%29.jpg/330px-Suffragette_Emily_Davison%27s_return_from_Holloway_%28cropped%29.jpg"
   },
   {
     "name": "bauhaus-founded",
@@ -1044,6 +1155,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Miss_America_Logo.jpg"
   },
   {
+    "name": "ulysses-published",
+    "friendly_name": "Ulysses Published",
+    "year": 1922,
+    "category": "cultural",
+    "description": "James Joyces modernist masterpiece Ulysses was published, revolutionizing literature.",
+    "difficulty": "medium"
+  },
+  {
     "name": "surrealist-manifesto",
     "friendly_name": "Surrealist Manifesto Published",
     "year": 1924,
@@ -1051,6 +1170,38 @@
     "description": "André Breton published the founding document of the Surrealist movement.",
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/MagrittePipe.jpg/330px-MagrittePipe.jpg"
+  },
+  {
+    "name": "first-winter-olympics",
+    "friendly_name": "First Winter Olympics",
+    "year": 1924,
+    "category": "cultural",
+    "description": "The first Winter Olympic Games opened in Chamonix in the French Alps.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rhapsody-in-blue-premiere",
+    "friendly_name": "Rhapsody in Blue Premiere",
+    "year": 1924,
+    "category": "cultural",
+    "description": "George Gershwins Rhapsody in Blue premiered in New York City, blending jazz and classical music.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ibm-founded",
+    "friendly_name": "IBM Founded",
+    "year": 1924,
+    "category": "cultural",
+    "description": "Computing-Tabulating-Recording Company changed its name to International Business Machines Corporation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "islamic-caliphate-abolished",
+    "friendly_name": "Islamic Caliphate Abolished",
+    "year": 1924,
+    "category": "cultural",
+    "description": "The 407-year-old Ottoman Caliphate was abolished as Turkey modernized under Kemal Ataturk.",
+    "difficulty": "medium"
   },
   {
     "name": "great-gatsby",
@@ -1078,6 +1229,30 @@
     "description": "Walt Disney's iconic character appeared in Steamboat Willie.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/330px-Mickey_Mouse_%28poster_version%29.svg.png"
+  },
+  {
+    "name": "gandhi-salt-march",
+    "friendly_name": "Gandhis Salt March",
+    "year": 1930,
+    "category": "cultural",
+    "description": "Mahatma Gandhi led a 200-mile march to protest British salt monopoly in India.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lindbergh-baby-kidnapping",
+    "friendly_name": "Lindbergh Baby Kidnapping",
+    "year": 1932,
+    "category": "cultural",
+    "description": "Charles Lindberghs 20-month-old son was kidnapped and later found dead in a case that gripped America.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "alcatraz-federal-prison",
+    "friendly_name": "Alcatraz Becomes Federal Prison",
+    "year": 1934,
+    "category": "cultural",
+    "description": "Alcatraz Island in San Francisco Bay became a United States federal prison.",
+    "difficulty": "easy"
   },
   {
     "name": "alcoholics-anonymous",
@@ -1125,6 +1300,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Poster_-_Gone_With_the_Wind_01.jpg/330px-Poster_-_Gone_With_the_Wind_01.jpg"
   },
   {
+    "name": "pinocchio-premieres",
+    "friendly_name": "Pinocchio Premieres",
+    "year": 1940,
+    "category": "cultural",
+    "description": "Disneys second full-length animated film Pinocchio premiered.",
+    "difficulty": "easy"
+  },
+  {
     "name": "citizen-kane",
     "friendly_name": "Citizen Kane Released",
     "year": 1941,
@@ -1152,6 +1335,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Willem_de_Kooning_in_his_studio.jpg/330px-Willem_de_Kooning_in_his_studio.jpg"
   },
   {
+    "name": "nascar-incorporated",
+    "friendly_name": "NASCAR Incorporated",
+    "year": 1948,
+    "category": "cultural",
+    "description": "The National Association for Stock Car Auto Racing is incorporated.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nineteen-eighty-four",
     "friendly_name": "Nineteen Eighty-Four Published",
     "year": 1949,
@@ -1159,6 +1350,14 @@
     "description": "George Orwell published his dystopian novel about totalitarian surveillance.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1984_Events_Collage.jpg/330px-1984_Events_Collage.jpg"
+  },
+  {
+    "name": "nbc-today-debuts",
+    "friendly_name": "NBC Today Debuts",
+    "year": 1952,
+    "category": "cultural",
+    "description": "NBCs long-running morning news program Today debuts with host Dave Garroway.",
+    "difficulty": "medium"
   },
   {
     "name": "elvis-first-single",
@@ -1269,6 +1468,22 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg"
   },
   {
+    "name": "tokyo-olympics-1964",
+    "friendly_name": "Tokyo Olympics",
+    "year": 1964,
+    "category": "cultural",
+    "description": "Japan hosted the Olympics, showcasing its postwar recovery to the world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "blue-ribbon-sports-founded",
+    "friendly_name": "Blue Ribbon Sports Founded",
+    "year": 1964,
+    "category": "cultural",
+    "description": "Blue Ribbon Sports, which would later become Nike, is founded by University of Oregon athletes.",
+    "difficulty": "medium"
+  },
+  {
     "name": "dylan-goes-electric",
     "friendly_name": "Bob Dylan Goes Electric",
     "year": 1965,
@@ -1294,6 +1509,22 @@
     "description": "Gabriel García Márquez published his magical realist masterpiece.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg"
+  },
+  {
+    "name": "prague-spring-begins",
+    "friendly_name": "Prague Spring Begins",
+    "year": 1968,
+    "category": "cultural",
+    "description": "Alexander Dubcek comes to power in Czechoslovakia, beginning the Prague Spring reforms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "johnny-cash-folsom-prison",
+    "friendly_name": "Johnny Cash at Folsom Prison",
+    "year": 1968,
+    "category": "cultural",
+    "description": "Johnny Cash performs his famous live concert at Folsom State Prison.",
+    "difficulty": "easy"
   },
   {
     "name": "woodstock",
@@ -1449,6 +1680,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Aids_Quilt.jpg/330px-Aids_Quilt.jpg"
   },
   {
+    "name": "seoul-olympics-1988",
+    "friendly_name": "Seoul Olympics",
+    "year": 1988,
+    "category": "cultural",
+    "description": "South Korea hosted the Olympics, symbolizing its emergence as an economic power.",
+    "difficulty": "medium"
+  },
+  {
     "name": "human-genome-project",
     "friendly_name": "Human Genome Project Begins",
     "year": 1990,
@@ -1548,6 +1787,14 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/IPod_family.png/330px-IPod_family.png"
   },
   {
+    "name": "world-cup-soccer-2002",
+    "friendly_name": "FIFA World Cup Korea/Japan",
+    "year": 2002,
+    "category": "cultural",
+    "description": "The first World Cup hosted in Asia was co-hosted by South Korea and Japan.",
+    "difficulty": "medium"
+  },
+  {
     "name": "human-genome-completed",
     "friendly_name": "Human Genome Sequenced",
     "year": 2003,
@@ -1591,6 +1838,14 @@
     "description": "Apple's smartphone revolutionized mobile technology and communication.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/320px-IPhone_17_Pro_Vector.svg.png"
+  },
+  {
+    "name": "beijing-olympics-2008",
+    "friendly_name": "Beijing Olympics",
+    "year": 2008,
+    "category": "cultural",
+    "description": "China hosted the Olympics, showcasing its rise as a global superpower.",
+    "difficulty": "easy"
   },
   {
     "name": "bitcoin-created",
@@ -1645,101 +1900,5 @@
     "description": "OpenAI launched the AI chatbot that sparked a technological revolution.",
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png"
-  },
-  {
-    "name": "kamakura-shogunate",
-    "friendly_name": "Kamakura Shogunate Established",
-    "year": 1185,
-    "category": "cultural",
-    "description": "Japan's first military government began, establishing samurai dominance.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "tokyo-olympics-1964",
-    "friendly_name": "Tokyo Olympics",
-    "year": 1964,
-    "category": "cultural",
-    "description": "Japan hosted the Olympics, showcasing its postwar recovery to the world.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "seoul-olympics-1988",
-    "friendly_name": "Seoul Olympics",
-    "year": 1988,
-    "category": "cultural",
-    "description": "South Korea hosted the Olympics, symbolizing its emergence as an economic power.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "beijing-olympics-2008",
-    "friendly_name": "Beijing Olympics",
-    "year": 2008,
-    "category": "cultural",
-    "description": "China hosted the Olympics, showcasing its rise as a global superpower.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "tang-dynasty-founded",
-    "friendly_name": "Tang Dynasty Founded",
-    "year": 618,
-    "category": "cultural",
-    "description": "China's golden age began, a period of prosperity, culture, and influence across East Asia.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "song-dynasty-founded",
-    "friendly_name": "Song Dynasty Founded",
-    "year": 960,
-    "category": "cultural",
-    "description": "A Chinese dynasty known for technological and cultural advancements began.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "yuan-dynasty-founded",
-    "friendly_name": "Yuan Dynasty Established",
-    "year": 1271,
-    "category": "cultural",
-    "description": "Kublai Khan established Mongol rule over China, the first foreign dynasty.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "ming-dynasty-founded",
-    "friendly_name": "Ming Dynasty Founded",
-    "year": 1368,
-    "category": "cultural",
-    "description": "The Ming restored native Han Chinese rule after expelling the Mongols.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "heian-period-begins",
-    "friendly_name": "Heian Period Begins",
-    "year": 794,
-    "category": "cultural",
-    "description": "Japan's golden age of art, literature, and court culture began in Kyoto.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "nara-period-begins",
-    "friendly_name": "Nara Period Begins",
-    "year": 710,
-    "category": "cultural",
-    "description": "Japan established its first permanent capital at Nara, flourishing in arts.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "womens-suffrage-nz",
-    "friendly_name": "Women's Suffrage in New Zealand",
-    "year": 1893,
-    "category": "cultural",
-    "description": "New Zealand became the first country to grant women the right to vote.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "world-cup-soccer-2002",
-    "friendly_name": "FIFA World Cup Korea/Japan",
-    "year": 2002,
-    "category": "cultural",
-    "description": "The first World Cup hosted in Asia was co-hosted by South Korea and Japan.",
-    "difficulty": "medium"
   }
 ]
