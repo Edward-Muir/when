@@ -475,7 +475,72 @@ const SEARCH_OVERRIDES = {
   'at-and-t-building': '550 Madison Avenue',
   'crossrail-begins': 'Elizabeth line',
   'ferris-wheel-invented': 'Ferris wheel',
-  'high-roller-vegas': 'High Roller (Ferris wheel)'
+  'high-roller-vegas': 'High Roller (Ferris wheel)',
+
+  // === NEW MISSING IMAGE OVERRIDES (50 events) ===
+
+  // Conflict (8 missing)
+  'napoleon-escapes-elba': 'Hundred Days',
+  'napoleon-hundred-days': 'Hundred Days',
+  'batista-cuba-coup': 'Fulgencio Batista',
+  'operation-chopper-vietnam': 'Vietnam War',
+  'uss-pueblo-seized': 'USS Pueblo (AGER-2)',
+  'jan-palach-death': 'Jan Palach',
+  'biafra-capitulates': 'Nigerian Civil War',
+  'beslan-school-siege': 'Beslan',
+
+  // Cultural (12 missing)
+  'nara-period-begins': 'Nara, Nara',
+  'kamakura-shogunate': 'Minamoto no Yoritomo',
+  'nascar-incorporated': 'Daytona International Speedway',
+  'russia-anno-domini': 'Soviet calendar',
+  'beethoven-first-symphony': 'Symphony No. 1 (Beethoven)',
+  'ford-five-dollar-wage': 'Henry Ford',
+  'ulysses-published': 'Ulysses (novel)',
+  'islamic-caliphate-abolished': 'Abolition of the Caliphate',
+  'gandhi-salt-march': 'Salt March',
+  'pinocchio-premieres': 'Pinocchio (1940 film)',
+  'nascar-incorporated': 'NASCAR',
+  'tokyo-olympics-1964': '1964 Summer Olympics',
+  'beijing-olympics-2008': '2008 Summer Olympics',
+
+  // Diplomatic (8 missing)
+  'bolivia-independence': 'Bolivia',
+  'last-emperor-china-abdicates': 'Puyi',
+  'rhineland-remilitarization': 'Remilitarization of the Rhineland',
+  'burma-independence': 'Myanmar',
+  'reform-opening-china': 'Chinese economic reform',
+  'ussr-dissolved': 'Dissolution of the Soviet Union',
+  'china-wto-entry': 'China and the World Trade Organization',
+  'belt-road-initiative': 'Xi Jinping',
+
+  // Disasters (3 missing)
+  'great-boston-fire-1760': 'Boston',
+  'nepal-bihar-earthquake-1934': '1934 Nepal–India earthquake',
+  'tonghai-earthquake': '1970 Tonghai earthquake',
+
+  // Exploration (16 missing)
+  'first-newspaper-americas': 'Boston News-Letter',
+  'dampier-new-britain': 'New Britain',
+  'first-synagogue-nyc': 'Congregation Shearith Israel',
+  'continental-drift-theory': 'Alfred Wegener',
+  'first-scheduled-airline': 'St. Petersburg–Tampa Airboat Line',
+  'first-insulin-injection': 'Insulin',
+  'television-first-demonstration': 'John Logie Baird',
+  'goddard-liquid-rocket': 'Robert H. Goddard',
+  'first-woman-us-senator': 'Hattie Caraway',
+  'georgetown-ibm-machine-translation': 'Machine translation',
+  'uss-nautilus-launched': 'USS Nautilus (SSN-571)',
+  'van-allen-belt-detected': 'Van Allen radiation belt',
+  'japan-launches-ohsumi': 'Ōsumi (satellite)',
+  'first-dna-sequencing': 'DNA sequencing',
+  'india-mars-mission': 'Mars Orbiter Mission',
+  'china-moon-samples': "Chang'e 5",
+
+  // Infrastructure (3 missing)
+  'singapore-founded': 'Stamford Raffles',
+  'india-first-railway': 'Indian Railways',
+  'china-high-speed-rail': 'High-speed rail in China'
 };
 
 async function sleep(ms) {
@@ -502,6 +567,7 @@ function generateSearchVariations(friendlyName) {
     / Starts$/i,
     / Started$/i,
     / Ended$/i,
+    / Begin$/i,
     / Discovered$/i,
     / Invented$/i,
     / Founded$/i,
@@ -518,10 +584,12 @@ function generateSearchVariations(friendlyName) {
     / Released$/i,
     / Debuts$/i,
     / Premiered$/i,
+    / Premieres$/i,
     / Succeeds$/i,
     / Fails$/i,
     / Collapses$/i,
     / Dissolves$/i,
+    / Dissolved$/i,
     / Assassinated$/i,
     / Executed$/i,
     / Killed$/i,
@@ -543,6 +611,17 @@ function generateSearchVariations(friendlyName) {
     / Expanded$/i,
     / Rebuilt$/i,
     / Extended$/i,
+    / Incorporated$/i,
+    / Abolished$/i,
+    / Abdicates$/i,
+    / Seized$/i,
+    / Capitulates$/i,
+    / Adopted$/i,
+    / Adopts .+$/i,
+    / Joins .+$/i,
+    / Escapes .+$/i,
+    / Reoccupies .+$/i,
+    / Return$/i,
   ];
 
   for (const pattern of suffixPatterns) {
@@ -656,6 +735,57 @@ function generateSearchVariations(friendlyName) {
   // Try adding "The" prefix for works/titles
   if (!friendlyName.startsWith('The ')) {
     addVariation(`The ${friendlyName}`);
+  }
+
+  // Handle possessive forms: "Beethovens First Symphony" -> "Beethoven"
+  const possessiveMatch = friendlyName.match(/^([A-Z][a-z]+)s /);
+  if (possessiveMatch) {
+    addVariation(possessiveMatch[1]); // Just the name
+    // Also try common patterns like "Beethoven's First Symphony" -> "Symphony No. 1 (Beethoven)"
+    const rest = friendlyName.substring(possessiveMatch[0].length);
+    if (rest.includes('Symphony')) {
+      addVariation(`${possessiveMatch[1]}'s ${rest}`);
+    }
+  }
+
+  // Handle "City Olympics" -> "YEAR Summer Olympics" pattern
+  if (/Olympics$/i.test(friendlyName)) {
+    const city = friendlyName.replace(/ Olympics$/i, '').trim();
+    addVariation(`${city} Olympics`);
+    addVariation(city);
+    // Common Olympics searches
+    addVariation('Summer Olympics');
+  }
+
+  // Handle "X's Y" pattern (possessive with apostrophe)
+  const apostropheMatch = friendlyName.match(/^([^']+)'s (.+)$/);
+  if (apostropheMatch) {
+    addVariation(apostropheMatch[1]); // Just the owner
+    addVariation(apostropheMatch[2]); // Just the thing
+  }
+
+  // Handle country/location + event patterns
+  const countryEventMatch = friendlyName.match(/^(China|India|Japan|Russia|Germany|France|Britain|USA|US|UK)'?s? (.+)$/i);
+  if (countryEventMatch) {
+    addVariation(countryEventMatch[2]); // Just the event
+    addVariation(`${countryEventMatch[2]} in ${countryEventMatch[1]}`);
+  }
+
+  // Handle "X Minimum Wage" patterns
+  if (/Minimum Wage$/i.test(friendlyName)) {
+    addVariation('Minimum wage');
+    const match = friendlyName.match(/^(.+?) (?:Dollar |)Minimum Wage$/i);
+    if (match) {
+      addVariation(match[1]);
+    }
+  }
+
+  // Handle "X Network Begins" patterns
+  if (/Network/i.test(friendlyName)) {
+    const networkMatch = friendlyName.match(/(.+?)\s*Network/i);
+    if (networkMatch) {
+      addVariation(networkMatch[1].trim());
+    }
   }
 
   return variations;
