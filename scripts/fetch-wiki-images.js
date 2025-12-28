@@ -492,7 +492,7 @@ const SEARCH_OVERRIDES = {
   // Cultural (12 missing)
   'nara-period-begins': 'Nara, Nara',
   'kamakura-shogunate': 'Minamoto no Yoritomo',
-  'nascar-incorporated': 'Daytona International Speedway',
+  'nascar-incorporated': 'Stock car racing',
   'russia-anno-domini': 'Soviet calendar',
   'beethoven-first-symphony': 'Symphony No. 1 (Beethoven)',
   'ford-five-dollar-wage': 'Henry Ford',
@@ -500,7 +500,6 @@ const SEARCH_OVERRIDES = {
   'islamic-caliphate-abolished': 'Abolition of the Caliphate',
   'gandhi-salt-march': 'Salt March',
   'pinocchio-premieres': 'Pinocchio (1940 film)',
-  'nascar-incorporated': 'NASCAR',
   'tokyo-olympics-1964': '1964 Summer Olympics',
   'beijing-olympics-2008': '2008 Summer Olympics',
 
