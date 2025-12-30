@@ -32,9 +32,9 @@ function App() {
     cycleHand,
     resetGame,
     restartGame,
-    modalEvent,
-    openModal,
-    closeModal,
+    pendingPopup,
+    showDescriptionPopup,
+    dismissPopup,
   } = useWhenGame();
 
   const handleStart = (config: GameConfig) => {
@@ -62,9 +62,9 @@ function App() {
       state={state}
       onPlacement={placeCard}
       onCycleHand={cycleHand}
-      modalEvent={modalEvent}
-      openModal={openModal}
-      closeModal={closeModal}
+      pendingPopup={pendingPopup}
+      showDescriptionPopup={showDescriptionPopup}
+      dismissPopup={dismissPopup}
       onRestart={restartGame}
       onNewGame={handlePlayAgain}
     />

@@ -11,12 +11,12 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
 import Timeline from './Timeline/Timeline';
-import ExpandedCard from './ExpandedCard';
+import GamePopup from './GamePopup';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
@@ -28,9 +28,9 @@ interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
   onCycleHand: () => void;
-  modalEvent: HistoricalEvent | null;
-  openModal: (event: HistoricalEvent) => void;
-  closeModal: () => void;
+  pendingPopup: GamePopupData | null;
+  showDescriptionPopup: (event: HistoricalEvent) => void;
+  dismissPopup: () => void;
   onRestart: () => void;
   onNewGame: () => void;
 }
@@ -39,9 +39,9 @@ const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
   onCycleHand,
-  modalEvent,
-  openModal,
-  closeModal,
+  pendingPopup,
+  showDescriptionPopup,
+  dismissPopup,
   onRestart,
   onNewGame,
 }) => {
@@ -101,17 +101,19 @@ const Game: React.FC<GameProps> = ({
 
   const handleActiveCardTap = () => {
     if (activeCard) {
-      openModal(activeCard);
+      showDescriptionPopup(activeCard);
     }
   };
 
   const handleTimelineCardTap = (event: HistoricalEvent) => {
-    openModal(event);
+    showDescriptionPopup(event);
   };
 
-  const showYearInModal = modalEvent
-    ? state.timeline.some((e) => e.name === modalEvent.name)
-    : false;
+  // Determine if we should show the year in the popup (only for cards in timeline)
+  const showYearInPopup =
+    pendingPopup?.type === 'description'
+      ? state.timeline.some((e) => e.name === pendingPopup.event.name)
+      : true; // Always show year for correct/incorrect popups
 
   return (
     <DndContext
@@ -201,7 +203,15 @@ const Game: React.FC<GameProps> = ({
           document.body
         )}
 
-        <ExpandedCard event={modalEvent} onClose={closeModal} showYear={showYearInModal} />
+        {pendingPopup && (
+          <GamePopup
+            type={pendingPopup.type}
+            event={pendingPopup.event}
+            onDismiss={dismissPopup}
+            nextPlayer={pendingPopup.nextPlayer}
+            showYear={showYearInPopup}
+          />
+        )}
 
         <Toast
           message="Copied to clipboard!"
