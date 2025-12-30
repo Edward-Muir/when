@@ -5,13 +5,23 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-// Detect iOS Safari
-function isIOSSafari(): boolean {
+export type InstallScenario = 'ios-safari' | 'ios-other' | 'android' | 'desktop';
+
+// Detect the install scenario based on device and browser
+function getInstallScenario(): InstallScenario {
   const ua = navigator.userAgent;
   const isIOS = /iPad|iPhone|iPod/.test(ua);
-  const isWebkit = /WebKit/.test(ua);
-  const isNotChrome = !/CriOS/.test(ua);
-  return isIOS && isWebkit && isNotChrome;
+  const isAndroid = /Android/.test(ua);
+  // Safari on iOS: has Safari in UA but not Chrome/CriOS/FxiOS
+  const isSafari = /Safari/.test(ua) && !/Chrome|CriOS|FxiOS/.test(ua);
+
+  if (isIOS) {
+    return isSafari ? 'ios-safari' : 'ios-other';
+  }
+  if (isAndroid) {
+    return 'android';
+  }
+  return 'desktop';
 }
 
 export function usePWAInstall() {
@@ -72,7 +82,7 @@ export function usePWAInstall() {
     canInstall: canNativeInstall,
     canShowInstallButton,
     isInstalled,
-    isIOSSafari: isIOSSafari(),
+    installScenario: getInstallScenario(),
     promptInstall,
   };
 }

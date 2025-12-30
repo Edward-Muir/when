@@ -12,7 +12,7 @@ interface TopBarProps {
 
 const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
   const { isDark, toggleTheme } = useTheme();
-  const { canInstall, canShowInstallButton, isIOSSafari, promptInstall } = usePWAInstall();
+  const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const [showToast, setShowToast] = useState(false);
   const [showInstallModal, setShowInstallModal] = useState(false);
 
@@ -113,7 +113,7 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
               Install When?
             </h2>
 
-            {isIOSSafari ? (
+            {installScenario === 'ios-safari' && (
               <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
                 <p>To install on your iPhone or iPad:</p>
                 <ol className="list-decimal list-inside space-y-2">
@@ -125,7 +125,38 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
                   The app will appear on your home screen and work offline.
                 </p>
               </div>
-            ) : (
+            )}
+
+            {installScenario === 'ios-other' && (
+              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
+                <p>To install on your iPhone or iPad:</p>
+                <ol className="list-decimal list-inside space-y-2">
+                  <li>Open this page in <strong>Safari</strong> (not Chrome or other browsers)</li>
+                  <li>Tap the <strong>Share</strong> button in Safari's toolbar</li>
+                  <li>Scroll down and tap <strong>"Add to Home Screen"</strong></li>
+                  <li>Tap <strong>"Add"</strong> to confirm</li>
+                </ol>
+                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
+                  iOS only supports installing apps from Safari.
+                </p>
+              </div>
+            )}
+
+            {installScenario === 'android' && (
+              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
+                <p>To install on your Android device:</p>
+                <ol className="list-decimal list-inside space-y-2">
+                  <li>Tap the <strong>menu button</strong> (⋮) in your browser</li>
+                  <li>Tap <strong>"Install app"</strong> or <strong>"Add to Home Screen"</strong></li>
+                  <li>Tap <strong>"Install"</strong> to confirm</li>
+                </ol>
+                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
+                  The app will appear on your home screen and work offline.
+                </p>
+              </div>
+            )}
+
+            {installScenario === 'desktop' && (
               <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
                 <p>To install this app:</p>
                 <ul className="list-disc list-inside space-y-2">
