@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run lint-staged for ESLint and Prettier
+npx lint-staged
+
+# Type check
+npx tsc --noEmit
+
+# Secret scanning with Gitleaks (if installed)
+if command -v gitleaks &> /dev/null; then
+  gitleaks protect --staged --verbose
+fi
