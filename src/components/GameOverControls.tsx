@@ -23,31 +23,34 @@ const GameOverControls: React.FC<GameOverControlsProps> = ({
   };
 
   return (
-    <div className="flex flex-col gap-2 pointer-events-auto">
+    <div className="flex-1 flex items-center justify-center gap-4 px-4 pointer-events-auto">
+      {/* Share button */}
       <button
         onClick={handleShare}
-        className="w-full py-3 px-4 bg-blue-500 hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
+        className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-blue-500 hover:bg-blue-600 dark:bg-blue-400 dark:hover:bg-blue-500 text-white rounded-2xl shadow-lg transition-all duration-200 active:scale-95"
       >
-        <Share2 className="w-4 h-4" />
-        Share
+        <Share2 className="w-6 h-6" />
+        <span className="text-xs font-medium font-body">Share</span>
       </button>
 
+      {/* Restart button (not shown for daily mode) */}
       {state.gameMode !== 'daily' && (
         <button
           onClick={onRestart}
-          className="w-full py-3 px-4 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white text-sm font-medium rounded-xl shadow-lg transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
+          className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white rounded-2xl shadow-lg transition-all duration-200 active:scale-95"
         >
-          <RotateCcw className="w-4 h-4" />
-          Restart
+          <RotateCcw className="w-6 h-6" />
+          <span className="text-xs font-medium font-body">Restart</span>
         </button>
       )}
 
+      {/* Home button */}
       <button
         onClick={onNewGame}
-        className="w-full py-3 px-4 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border hover:bg-light-border/50 dark:hover:bg-dark-border/50 text-light-text dark:text-dark-text text-sm font-medium rounded-xl shadow transition-all duration-200 flex items-center justify-center gap-2 active:scale-95 font-body"
+        className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border hover:bg-light-border/50 dark:hover:bg-dark-border/50 text-light-text dark:text-dark-text rounded-2xl shadow transition-all duration-200 active:scale-95"
       >
-        <Home className="w-4 h-4" />
-        Home
+        <Home className="w-6 h-6" />
+        <span className="text-xs font-medium font-body">Home</span>
       </button>
     </div>
   );

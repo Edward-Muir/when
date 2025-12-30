@@ -3,22 +3,48 @@ import { Player } from '../types';
 import { Users } from 'lucide-react';
 
 // Custom hand of cards icon with count overlay
-const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({ count, className = '', isCurrent = false }) => (
+const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({
+  count,
+  className = '',
+  isCurrent = false,
+}) => (
   <div className={`relative ${className}`}>
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      className="w-5 h-5"
+    >
       {/* Back card (rotated left) */}
-      <rect x="3" y="4" width="12" height="16" rx="1.5" transform="rotate(-12 9 12)" className="fill-current opacity-40" />
+      <rect
+        x="3"
+        y="4"
+        width="12"
+        height="16"
+        rx="1.5"
+        transform="rotate(-12 9 12)"
+        className="fill-current opacity-40"
+      />
       {/* Middle card */}
       <rect x="6" y="4" width="12" height="16" rx="1.5" className="fill-current opacity-60" />
       {/* Front card (rotated right) */}
-      <rect x="9" y="4" width="12" height="16" rx="1.5" transform="rotate(12 15 12)" className="fill-current opacity-80" />
+      <rect
+        x="9"
+        y="4"
+        width="12"
+        height="16"
+        rx="1.5"
+        transform="rotate(12 15 12)"
+        className="fill-current opacity-80"
+      />
     </svg>
     {/* Count overlay - contrasting color */}
-    <span className={`absolute inset-0 flex items-center justify-center text-[9px] font-bold ${
-      isCurrent
-        ? 'text-blue-500 dark:text-blue-400'
-        : 'text-light-bg dark:text-dark-bg'
-    }`}>
+    <span
+      className={`absolute inset-0 flex items-center justify-center text-[9px] font-bold ${
+        isCurrent ? 'text-blue-500 dark:text-blue-400' : 'text-light-bg dark:text-dark-bg'
+      }`}
+    >
       {count}
     </span>
   </div>
@@ -31,10 +57,7 @@ interface PlayerInfoProps {
   roundNumber: number;
 }
 
-const PlayerInfo: React.FC<PlayerInfoProps> = ({
-  players,
-  currentPlayerIndex,
-}) => {
+const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) => {
   return (
     <div className="flex flex-col gap-1.5">
       {players.map((player, index) => {
@@ -48,13 +71,14 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({
             className={`
               flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium
               transition-all duration-200 font-body
-              ${isCurrent
-                ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
-                : isEliminated
-                  ? 'bg-error/20 text-error line-through opacity-60'
-                  : hasWon
-                    ? 'bg-success/20 text-success'
-                    : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted'
+              ${
+                isCurrent
+                  ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
+                  : isEliminated
+                    ? 'bg-error/20 text-error line-through opacity-60'
+                    : hasWon
+                      ? 'bg-success/20 text-success'
+                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted'
               }
             `}
           >
@@ -68,6 +92,73 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({
           </div>
         );
       })}
+    </div>
+  );
+};
+
+// Enlarged hand icon for compact game info display
+const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
+  <div className="relative w-10 h-10">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      className="w-10 h-10 text-accent dark:text-accent-dark"
+    >
+      {/* Back card (rotated left) */}
+      <rect
+        x="3"
+        y="4"
+        width="12"
+        height="16"
+        rx="1.5"
+        transform="rotate(-12 9 12)"
+        className="fill-current opacity-40"
+      />
+      {/* Middle card */}
+      <rect x="6" y="4" width="12" height="16" rx="1.5" className="fill-current opacity-60" />
+      {/* Front card (rotated right) */}
+      <rect
+        x="9"
+        y="4"
+        width="12"
+        height="16"
+        rx="1.5"
+        transform="rotate(12 15 12)"
+        className="fill-current opacity-80"
+      />
+    </svg>
+    <span className="absolute inset-0 flex items-center justify-center text-sm font-bold text-white drop-shadow-md">
+      {count}
+    </span>
+  </div>
+);
+
+// Compact game info for the bottom bar
+interface GameInfoCompactProps {
+  currentPlayer: Player;
+  isMultiplayer: boolean;
+}
+
+export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
+  currentPlayer,
+  isMultiplayer,
+}) => {
+  return (
+    <div className="flex flex-col items-center gap-0.5">
+      {/* Player name (if multiplayer) */}
+      {isMultiplayer && (
+        <span className="text-xs font-medium text-light-text dark:text-dark-text font-body">
+          {currentPlayer.name}
+        </span>
+      )}
+
+      {/* Hand count with enlarged icon */}
+      <HandCardsIconLarge count={currentPlayer.hand.length} />
+      <span className="text-[10px] text-light-muted dark:text-dark-muted font-body">
+        cards left
+      </span>
     </div>
   );
 };

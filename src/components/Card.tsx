@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 
+export type CardSize = 'normal' | 'large' | 'landscape';
+
 interface CardProps {
   event: HistoricalEvent;
   className?: string;
   rotation?: number;
   onClick?: () => void;
-  size?: 'normal' | 'large';
+  size?: CardSize;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -25,10 +27,62 @@ const Card: React.FC<CardProps> = ({
 
   const hasImage = event.image_url && !imageError;
 
-  const sizeClasses = size === 'large'
-    ? 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]'
-    : 'w-[144px] h-[176px] sm:w-[160px] sm:h-[192px]';
+  const sizeClasses: Record<CardSize, string> = {
+    normal: 'w-[144px] h-[176px] sm:w-[160px] sm:h-[192px]',
+    large: 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]',
+    landscape: 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]',
+  };
 
+  const isLandscape = size === 'landscape';
+
+  // Landscape layout: image left (40%), title right (60%)
+  if (isLandscape) {
+    return (
+      <div
+        className={`
+          rounded-lg overflow-hidden
+          border border-light-border dark:border-dark-border
+          bg-light-card dark:bg-dark-card
+          shadow-md dark:shadow-card-rest-dark
+          ${onClick ? 'cursor-pointer active:scale-95' : ''}
+          ${className}
+          ${sizeClasses[size]}
+          flex flex-row
+          transition-colors duration-200
+        `}
+        style={rotationStyle}
+        onClick={onClick}
+      >
+        {/* Image section (40% width) */}
+        <div className="w-[40%] h-full relative overflow-hidden">
+          {hasImage ? (
+            <img
+              src={event.image_url}
+              alt=""
+              loading="lazy"
+              onError={() => setImageError(true)}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
+              <CategoryIcon
+                category={event.category}
+                className="text-light-muted dark:text-dark-muted w-8 h-8"
+              />
+            </div>
+          )}
+        </div>
+        {/* Title section (60% width) */}
+        <div className="w-[60%] h-full flex items-center px-2 py-1">
+          <span className="text-light-text dark:text-dark-text text-[11px] sm:text-xs leading-tight line-clamp-3 font-body">
+            {event.friendly_name}
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  // Portrait layout (normal/large): image with title overlay
   return (
     <div
       className={`
@@ -38,7 +92,7 @@ const Card: React.FC<CardProps> = ({
         shadow-md dark:shadow-card-rest-dark
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
-        ${sizeClasses}
+        ${sizeClasses[size]}
         flex flex-col
         transition-colors duration-200
       `}
@@ -57,7 +111,10 @@ const Card: React.FC<CardProps> = ({
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-            <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-12 h-12" />
+            <CategoryIcon
+              category={event.category}
+              className="text-light-muted dark:text-dark-muted w-12 h-12"
+            />
           </div>
         )}
 

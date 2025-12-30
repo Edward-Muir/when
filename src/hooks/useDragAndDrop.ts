@@ -104,7 +104,8 @@ export function useDragAndDrop({
       return;
     }
 
-    setIsOverHand(over.id === 'hand-zone');
+    // Bottom bar zone is the new "hand zone" (returns card to hand)
+    setIsOverHand(over.id === 'bottom-bar-zone');
     setIsOverTimeline(over.id === 'timeline-zone');
   }, []);
 
