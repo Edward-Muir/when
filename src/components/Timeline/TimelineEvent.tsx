@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
@@ -14,6 +15,36 @@ interface TimelineEventProps {
   animationPhase?: AnimationPhase;
 }
 
+// Spring animation for newly placed cards
+const springBounce = {
+  initial: { scale: 0.95, opacity: 0.8 },
+  animate: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: 'spring' as const,
+      stiffness: 400,
+      damping: 25,
+    },
+  },
+};
+
+// Enhanced exit animation for rejected cards
+const rejectionExit = {
+  exit: {
+    scale: 0.9,
+    opacity: 0,
+    rotate: -3,
+    x: -20,
+    transition: {
+      type: 'spring' as const,
+      stiffness: 300,
+      damping: 20,
+      duration: 0.3,
+    },
+  },
+};
+
 const TimelineEvent: React.FC<TimelineEventProps> = ({
   event,
   onTap,
@@ -25,12 +56,18 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
 }) => {
   const [imageError, setImageError] = useState(false);
   const hasImage = event.image_url && !imageError;
+  const shouldReduceMotion = useReducedMotion();
 
   // Determine animation class for the card
   let cardAnimationClass = '';
   if (isAnimating && animationPhase === 'flash') {
     cardAnimationClass = animationSuccess ? 'animate-success-glow' : 'animate-error-pulse';
   }
+
+  // Use spring animation for newly placed cards (success), rejection animation for errors
+  const shouldAnimate = isAnimating && !shouldReduceMotion;
+  const isSuccessAnimation = shouldAnimate && animationSuccess;
+  const isErrorAnimation = shouldAnimate && !animationSuccess && animationPhase === 'moving';
 
   return (
     <div
@@ -53,8 +90,11 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
       </div>
 
       {/* Card side (right) - image first, title at bottom */}
-      <button
+      <motion.button
         onClick={onTap}
+        initial={isSuccessAnimation ? springBounce.initial : false}
+        animate={isSuccessAnimation ? springBounce.animate : undefined}
+        exit={isErrorAnimation ? rejectionExit.exit : undefined}
         className={`
           w-36 h-44 sm:w-40 sm:h-48
           rounded-lg overflow-hidden
@@ -82,7 +122,10 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-              <CategoryIcon category={event.category} className="text-light-muted dark:text-dark-muted w-10 h-10" />
+              <CategoryIcon
+                category={event.category}
+                className="text-light-muted dark:text-dark-muted w-10 h-10"
+              />
             </div>
           )}
 
@@ -93,7 +136,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             </span>
           </div>
         </div>
-      </button>
+      </motion.button>
     </div>
   );
 };
