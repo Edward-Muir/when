@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
 import {
@@ -13,6 +13,8 @@ import {
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
 import { WhenGameState, PlacementResult, HistoricalEvent } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
+import { useScreenShake } from '../hooks/useScreenShake';
+import { useHaptics } from '../hooks/useHaptics';
 import Timeline from './Timeline/Timeline';
 import ExpandedCard from './ExpandedCard';
 import Card from './Card';
@@ -49,6 +51,13 @@ const Game: React.FC<GameProps> = ({
   const [showToast, setShowToast] = useState(false);
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
 
+  // Game feel hooks
+  const { shakeClassName, triggerShake } = useScreenShake();
+  const { haptics } = useHaptics();
+
+  // Track previous placement result to detect changes
+  const prevPlacementRef = useRef(state.lastPlacementResult);
+
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
@@ -76,15 +85,20 @@ const Game: React.FC<GameProps> = ({
   });
 
   useEffect(() => {
-    if (state.lastPlacementResult) {
+    if (state.lastPlacementResult && state.lastPlacementResult !== prevPlacementRef.current) {
       if (state.lastPlacementResult.success) {
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 2000);
+        haptics.success();
+      } else {
+        triggerShake('medium');
+        haptics.error();
       }
       setNewEventName(state.lastPlacementResult.event.name);
       setTimeout(() => setNewEventName(undefined), 1000);
     }
-  }, [state.lastPlacementResult]);
+    prevPlacementRef.current = state.lastPlacementResult;
+  }, [state.lastPlacementResult, haptics, triggerShake]);
 
   const handleActiveCardTap = () => {
     if (activeCard) {
@@ -111,7 +125,9 @@ const Game: React.FC<GameProps> = ({
       onDragCancel={dragHandlers.handleDragCancel}
       measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
     >
-      <div className="h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 pb-safe transition-colors">
+      <div
+        className={`h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 pb-safe transition-colors ${shakeClassName}`}
+      >
         <TopBar showHome={true} onHomeClick={() => setShowHomeConfirm(true)} />
 
         {showConfetti && (
