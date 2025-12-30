@@ -5,17 +5,6 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-// Detect if browser supports native PWA install prompt
-function supportsNativeInstall(): boolean {
-  // Chrome, Edge, Samsung Internet, Opera support beforeinstallprompt
-  const ua = navigator.userAgent;
-  const isChrome = /Chrome/.test(ua) && !/Edge|Edg/.test(ua);
-  const isEdge = /Edg/.test(ua);
-  const isSamsung = /SamsungBrowser/.test(ua);
-  const isOpera = /OPR/.test(ua);
-  return isChrome || isEdge || isSamsung || isOpera;
-}
-
 // Detect iOS Safari
 function isIOSSafari(): boolean {
   const ua = navigator.userAgent;
@@ -75,7 +64,9 @@ export function usePWAInstall() {
 
   // Determine install availability
   const canNativeInstall = !!installPrompt && !isInstalled;
-  const canShowInstallButton = !isInstalled && (canNativeInstall || isIOSSafari() || supportsNativeInstall());
+
+  // Always show install button unless already installed - let the modal explain how to install
+  const canShowInstallButton = !isInstalled;
 
   return {
     canInstall: canNativeInstall,
