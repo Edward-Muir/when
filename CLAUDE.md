@@ -4,36 +4,40 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains "When" - a mobile-first, single-player timeline game where players place historical events in chronological order. The active project is in `when/`.
+"When" is a mobile-first timeline game where players place historical events in chronological order. Supports single-player and multiplayer modes.
 
 ## Commands
 
-All commands should be run from the `when/` directory:
-
 ```bash
-cd when
-npm start          # Start development server (port 3000)
-npm run build      # Production build to /build
-npm test           # Run tests in watch mode
-npm test -- --watchAll=false  # Run tests once (CI mode)
+npm start                    # Dev server on port 3000
+npm run build                # Production build to /build
+npm test                     # Tests in watch mode
+npm test -- --watchAll=false # Tests once (CI mode)
+npm test -- Card.test        # Run specific test file
+npm run lint                 # ESLint check
+npm run lint:fix             # ESLint with auto-fix
+npm run typecheck            # TypeScript type check
+npm run format               # Prettier format all files
+npm run find-duplicates      # Check for duplicate events in JSON
 ```
 
 ## Architecture
 
-React 19 + TypeScript + Tailwind CSS. Create React App toolchain.
+React 19 + TypeScript + Tailwind CSS. Create React App toolchain. Pre-commit hooks via Husky + lint-staged.
 
 ### Game Modes
 
-- **Daily**: Seeded shuffle for consistent daily challenge
-- **Sudden Death**: One wrong answer ends the game
-- **Freeplay**: Configurable turns (default 8), filter by difficulty/category/era
+- **Daily**: Seeded shuffle for consistent daily challenge (all players get same cards)
+- **Sudden Death**: Wrong answers shrink your hand; run out and you're eliminated
+- **Freeplay**: Configurable turns, filter by difficulty/category/era
 
 ### State Management
 
-All game state in `when/src/hooks/useWhenGame.ts`:
-- `WhenGameState` tracks phase, timeline, activeCard, deck, turn count, score
-- `placeCard(insertionIndex)` validates placement, triggers animations via `isAnimating`, updates state after delay
-- Timeline maintained sorted by year; cards insert at correct chronological position
+All game state in `src/hooks/useWhenGame.ts`:
+
+- `WhenGameState` tracks phase, timeline, players, deck, turn/round count
+- `placeCard(insertionIndex)` validates placement, triggers animations via `isAnimating`/`animationPhase`, updates state after delay
+- Players have a `hand[]` of cards; first card is the active card, `cycleHand()` rotates
 
 ### Game Phases
 
@@ -42,91 +46,81 @@ All game state in `when/src/hooks/useWhenGame.ts`:
 ### Component Hierarchy
 
 ```
-App.tsx              # Phase router
-├── ModeSelect.tsx   # Game mode selection with filters
-└── Game.tsx         # Main gameplay
-    ├── Header.tsx   # Turn/score display, settings popup
-    ├── Card.tsx     # Active card (year hidden)
+App.tsx                    # Phase router, viewport height fix
+├── ModeSelect.tsx         # Mode selection + filter config
+└── Game.tsx               # Main gameplay with DndContext
+    ├── TopBar.tsx         # Home button, title
+    ├── PlayerInfo.tsx     # Turn/round/score display
+    ├── ResultBanner.tsx   # Correct/incorrect feedback
+    ├── ActiveCardDisplay.tsx  # Draggable card + cycle button
     ├── Timeline/
-    │   ├── Timeline.tsx        # Vertical scrollable list with drag-and-drop
-    │   ├── TimelineEvent.tsx   # Placed cards (year shown)
-    │   └── GhostCard.tsx       # Drop target indicator
-    └── GameOver.tsx # Final score
+    │   ├── Timeline.tsx       # Vertical scrollable drop zone
+    │   └── TimelineEvent.tsx  # Placed cards with year
+    ├── GameOverControls.tsx   # Restart/share buttons
+    └── ExpandedCard.tsx       # Modal for card details
 ```
 
 ### Event Data
 
-Historical events in `when/public/events/` as JSON files by category:
+Historical events in `public/events/` as JSON files:
+
 - Categories: conflict, cultural, diplomatic, disasters, exploration, infrastructure
-- Fields: `name`, `friendly_name`, `year`, `category`, `description`, `difficulty`, optional `image_url`
+- Fields: `name` (ID), `friendly_name`, `year`, `category`, `description`, `difficulty`, optional `image_url`
 - Loaded via `manifest.json`, deduplicated by `name`
 
 ### Era Definitions (utils/eras.ts)
 
-Events filterable by era: prehistory, ancient, medieval, earlyModern (Renaissance), industrial, worldWars, coldWar, modern
+Events filterable by era: prehistory, ancient, medieval, earlyModern, industrial, worldWars, coldWar, modern
+
+### Type Definitions (types/index.ts)
+
+Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `Category`, `Difficulty`, `Era`, `GameMode`
 
 ### Styling
 
-- Custom Tailwind colors: `cream`, `paper`, `sketch`
+Custom Tailwind in `tailwind.config.js`:
+
+- Theme colors: `light-*` / `dark-*` semantic tokens, `accent` / `accent-dark`
 - Category colors: conflict=red, disasters=gray, exploration=teal, cultural=purple, infrastructure=amber, diplomatic=blue
-- Custom animations: `shake`, `flip`, `entrance`, `screen-shake`, `pulse-glow`, `slide-in`
+- Fonts: `font-display` (Playfair Display), `font-body` (Inter), `font-mono` (DM Mono)
+- Custom animations: `shake`, `screen-shake`, `entrance`
 
 ### Z-Index Hierarchy (Game.tsx & Timeline.tsx)
 
-The game uses a two-panel layout where z-index management is critical for clickability:
+Critical for preventing overlap issues:
 
-| Layer | Z-Index | Component |
-|-------|---------|-----------|
-| Left panel (hand zone) | z-40 | Game.tsx - entire left panel |
-| Timeline scroll content | z-10 | Timeline.tsx - scrollable area |
-| Timeline fade overlays | z-30 | Timeline.tsx - "Earlier"/"Later" gradients |
-| Card stack container | z-40 | Game.tsx - relative container for cards |
-| Cycle button | z-50 | Game.tsx - top-right of card stack |
+| Layer                   | Z-Index | Component    |
+| ----------------------- | ------- | ------------ |
+| Left panel (hand zone)  | z-40    | Game.tsx     |
+| Timeline scroll content | z-10    | Timeline.tsx |
+| Timeline fade overlays  | z-30    | Timeline.tsx |
+| Card stack container    | z-40    | Game.tsx     |
+| Cycle button            | z-50    | Game.tsx     |
 
-**Important**: The left panel must have a higher z-index than timeline elements because DOM order (right panel comes after left) would otherwise cause the timeline to overlap interactive elements in the hand zone.
+### Drag and Drop
+
+Uses `@dnd-kit/core` with custom sensors in `utils/dndSensors.ts`. The `useDragAndDrop` hook in `hooks/useDragAndDrop.ts` manages drag state and calculates insertion index based on Y position relative to timeline events.
 
 ## Mobile Development Guidelines
 
-This is a mobile-first web app. Follow these best practices:
+This is a mobile-first web app.
 
 ### Touch Targets
 
-- Minimum **44x44px** (Apple HIG) or **48x48px** (Material Design) for all interactive elements
-- Use padding to extend touch areas beyond visual bounds (e.g., 24px icon with padding to reach 48px tap target)
-- Maintain **8px minimum spacing** between touch targets to prevent mis-taps
-- Use larger targets (48px+) at screen edges where touch precision is lower
-- Use `@media (any-pointer: coarse) { }` for touch-specific sizing adjustments
-
-### Touch Interaction
-
-- Apply `touch-action: manipulation` CSS to eliminate the 300ms tap delay
-- Provide clear visual feedback for all touch interactions
-- Design for thumb-friendly navigation - keep primary actions in the bottom half of the screen on mobile
+- Minimum **44x44px** (Apple HIG) or **48x48px** (Material Design) for interactive elements
+- Use padding to extend touch areas beyond visual bounds
+- Maintain **8px minimum spacing** between touch targets
 
 ### Viewport Handling
 
-- **Already implemented**: `--vh` CSS variable for iOS Safari viewport issues (set in App.tsx)
-- **Already implemented**: `dvh` units with `screen-safe` fallbacks in Tailwind config
-- Use `env(safe-area-inset-*)` padding for notched devices (iPhone X+)
-- Test orientation changes - the app handles this with delayed resize events
-
-### Performance
-
-- Lazy load images below the fold
-- Use modern image formats (WebP) where possible
-- Optimize for slow/unreliable networks - consider offline fallback states
-- Keep animations performant (use `transform` and `opacity` for GPU acceleration)
-
-### Accessibility
-
-- Ensure sufficient color contrast (WCAG AA minimum)
-- Support keyboard navigation for all interactive elements
-- Use semantic HTML and ARIA roles appropriately
-- Test with screen readers on mobile (VoiceOver/TalkBack)
+- **Implemented**: `--vh` CSS variable in App.tsx for iOS Safari
+- **Implemented**: `dvh` units with `screen-safe` fallbacks in Tailwind config
+- Use `env(safe-area-inset-*)` for notched devices
 
 ### Dependencies
 
-- `@dnd-kit/core` + `@dnd-kit/utilities`: Drag and drop for card placement
+- `@dnd-kit/core` + `@dnd-kit/utilities`: Drag and drop
+- `framer-motion`: Animations
 - `lucide-react`: Icons
 - `react-confetti-explosion`: Win celebration
-- `cloudinary`: Image hosting for event images
+- `cloudinary`: Image hosting
