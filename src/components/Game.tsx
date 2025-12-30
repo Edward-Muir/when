@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import ConfettiExplosion from 'react-confetti-explosion';
-import { RotateCcw, Home, Share2, Sun, Moon, Check, X, Trophy, Flag, RefreshCw } from 'lucide-react';
+import { RotateCcw, Home, Share2, Check, X, Trophy, Flag, RefreshCw } from 'lucide-react';
 import {
   DndContext,
   DragOverlay,
@@ -25,7 +25,7 @@ import ExpandedCard from './ExpandedCard';
 import Card from './Card';
 import { Toast } from './Toast';
 import PlayerInfo from './PlayerInfo';
-import { useTheme } from '../hooks/useTheme';
+import TopBar from './TopBar';
 
 interface GameProps {
   state: WhenGameState;
@@ -48,7 +48,6 @@ const Game: React.FC<GameProps> = ({
   onRestart,
   onNewGame,
 }) => {
-  const { isDark, toggleTheme } = useTheme();
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
@@ -230,7 +229,10 @@ const Game: React.FC<GameProps> = ({
         },
       }}
     >
-      <div className="h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-safe pb-safe transition-colors">
+      <div className="h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 pb-safe transition-colors">
+        {/* Top Bar */}
+        <TopBar showHome={true} onHomeClick={() => setShowHomeConfirm(true)} />
+
         {/* Confetti */}
         {showConfetti && (
           <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
@@ -242,28 +244,6 @@ const Game: React.FC<GameProps> = ({
             />
           </div>
         )}
-
-        {/* Top-right controls */}
-        <div className="absolute top-2 right-2 flex gap-2 z-40">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {isDark ? (
-              <Sun className="w-6 h-6 text-accent dark:text-accent-dark" />
-            ) : (
-              <Moon className="w-6 h-6 text-accent dark:text-accent-dark" />
-            )}
-          </button>
-          <button
-            onClick={() => setShowHomeConfirm(true)}
-            className="p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
-            aria-label="Go home"
-          >
-            <Home className="w-6 h-6 text-accent dark:text-accent-dark" />
-          </button>
-        </div>
 
         {/* Left Panel - 40% - Game Info + Active Card (entire panel is drop zone) */}
         <div

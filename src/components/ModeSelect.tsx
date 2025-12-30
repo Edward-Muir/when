@@ -1,12 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import { Calendar, Gamepad2, Settings, Play, Sun, Moon, Share2 } from 'lucide-react';
+import { Calendar, Gamepad2, Settings, Play } from 'lucide-react';
 import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
-import { Toast } from './Toast';
-import { useTheme } from '../hooks/useTheme';
-import { shareApp } from '../utils/share';
+import TopBar from './TopBar';
 import { getDailyTheme, getThemeDisplayName, getThemedCategories, getThemedEras } from '../utils/dailyTheme';
 
 const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
@@ -19,8 +17,6 @@ interface ModeSelectProps {
 }
 
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
-  const { isDark, toggleTheme } = useTheme();
-  const [showToast, setShowToast] = useState(false);
 
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(false);
@@ -123,33 +119,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   }
 
   return (
-    <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-safe pb-safe overflow-auto transition-colors">
+    <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-14 pb-safe overflow-auto transition-colors">
+      {/* Top Bar */}
+      <TopBar showHome={false} />
+
       <div className="bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-5 max-w-sm w-full text-center relative z-10 border border-light-border dark:border-dark-border">
-        {/* Share Button */}
-        <button
-          onClick={async () => {
-            const showClipboardToast = await shareApp();
-            if (showClipboardToast) setShowToast(true);
-          }}
-          className="absolute top-4 left-4 p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
-          aria-label="Share game"
-        >
-          <Share2 className="w-5 h-5 text-accent dark:text-accent-dark" />
-        </button>
-
-        {/* Theme Toggle */}
-        <button
-          onClick={toggleTheme}
-          className="absolute top-4 right-4 p-2 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
-          aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-        >
-          {isDark ? (
-            <Sun className="w-5 h-5 text-accent-dark" />
-          ) : (
-            <Moon className="w-5 h-5 text-accent" />
-          )}
-        </button>
-
         {/* Title */}
         <h1 className="text-4xl font-bold text-light-text dark:text-dark-text mb-1 font-display">When?</h1>
         <p className="text-light-muted dark:text-dark-muted text-sm mb-5 font-body">The Timeline Game</p>
@@ -274,12 +248,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         setSuddenDeathHandSize={setSuddenDeathHandSize}
       />
 
-      {/* Toast */}
-      <Toast
-        message="Copied to clipboard!"
-        isVisible={showToast}
-        onClose={() => setShowToast(false)}
-      />
     </div>
   );
 };
