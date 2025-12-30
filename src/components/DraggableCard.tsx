@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDraggable } from '@dnd-kit/core';
 import { HistoricalEvent } from '../types';
-import Card from './Card';
+import Card, { CardSize } from './Card';
 
 interface DraggableCardProps {
   event: HistoricalEvent;
@@ -9,6 +9,7 @@ interface DraggableCardProps {
   disabled?: boolean;
   isOverTimeline?: boolean;
   isHidden?: boolean;
+  size?: CardSize;
 }
 
 const DraggableCard: React.FC<DraggableCardProps> = ({
@@ -17,6 +18,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   disabled = false,
   isOverTimeline = false,
   isHidden = false,
+  size = 'normal',
 }) => {
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, isDragging } = useDraggable({
     id: 'active-card',
@@ -52,7 +54,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
           }
         }}
       >
-        <Card event={event} size="normal" />
+        <Card event={event} size={size} />
       </div>
     </div>
   );

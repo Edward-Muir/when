@@ -19,9 +19,8 @@ import Timeline from './Timeline/Timeline';
 import ExpandedCard from './ExpandedCard';
 import Card from './Card';
 import { Toast } from './Toast';
-import PlayerInfo from './PlayerInfo';
+import { GameInfoCompact } from './PlayerInfo';
 import TopBar from './TopBar';
-import ResultBanner from './ResultBanner';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 
@@ -61,7 +60,7 @@ const Game: React.FC<GameProps> = ({
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
-  const { setNodeRef: setHandDropRef } = useDroppable({ id: 'hand-zone' });
+  const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 
   const pointerSensor = useSensor(JsonCvPointerSensor, {
     activationConstraint: { distance: 8 },
@@ -126,7 +125,7 @@ const Game: React.FC<GameProps> = ({
       measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
     >
       <div
-        className={`h-dvh min-h-screen-safe flex flex-row bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 pb-safe transition-colors ${shakeClassName}`}
+        className={`h-dvh min-h-screen-safe flex flex-col bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 transition-colors ${shakeClassName}`}
       >
         <TopBar showHome={true} onHomeClick={() => setShowHomeConfirm(true)} />
 
@@ -136,62 +135,8 @@ const Game: React.FC<GameProps> = ({
           </div>
         )}
 
-        {/* Left Panel - 40% - Game Info + Active Card */}
-        <div
-          ref={setHandDropRef}
-          className={`w-2/5 flex flex-col h-full p-3 transition-colors duration-200 z-40 ${
-            dragState.isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''
-          }`}
-        >
-          <div className="mb-4">
-            <h1 className="text-light-text dark:text-dark-text text-ui-title mb-3 font-display">
-              When?
-            </h1>
-
-            <PlayerInfo
-              players={state.players}
-              currentPlayerIndex={state.currentPlayerIndex}
-              turnNumber={state.turnNumber}
-              roundNumber={state.roundNumber}
-            />
-
-            <ResultBanner
-              phase={state.phase}
-              gameMode={state.gameMode}
-              lastPlacementResult={state.lastPlacementResult}
-              players={state.players}
-              winners={state.winners}
-              placementHistory={state.placementHistory}
-              roundNumber={state.roundNumber}
-            />
-          </div>
-
-          <div className="flex-1" />
-
-          {state.phase === 'gameOver' ? (
-            <GameOverControls
-              state={state}
-              onRestart={onRestart}
-              onNewGame={onNewGame}
-              onShowToast={() => setShowToast(true)}
-            />
-          ) : (
-            activeCard && (
-              <ActiveCardDisplay
-                activeCard={activeCard}
-                currentPlayer={currentPlayer}
-                playersCount={state.players.length}
-                isAnimating={state.isAnimating}
-                isOverTimeline={dragState.isOverTimeline}
-                onCycleHand={onCycleHand}
-                onCardTap={handleActiveCardTap}
-              />
-            )
-          )}
-        </div>
-
-        {/* Right Panel - 60% - Timeline */}
-        <div className="w-3/5 h-full">
+        {/* Main Timeline Area - takes remaining space */}
+        <div className="flex-1 overflow-hidden">
           <Timeline
             events={state.timeline}
             onEventTap={handleTimelineCardTap}
@@ -205,11 +150,51 @@ const Game: React.FC<GameProps> = ({
           />
         </div>
 
+        {/* Bottom Bar - Fixed height with game info + active card aligned with timeline */}
+        <div
+          ref={setBottomBarRef}
+          className={`h-[120px] sm:h-[140px] flex items-center border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg z-40 pb-safe transition-colors duration-200 ${
+            dragState.isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''
+          }`}
+        >
+          {state.phase === 'gameOver' ? (
+            /* Game Over: Full-width horizontal buttons */
+            <GameOverControls
+              state={state}
+              onRestart={onRestart}
+              onNewGame={onNewGame}
+              onShowToast={() => setShowToast(true)}
+            />
+          ) : (
+            <>
+              {/* Left: Game Info - matches year column width (96px) */}
+              <div className="w-24 shrink-0 flex items-center justify-center">
+                <GameInfoCompact
+                  currentPlayer={currentPlayer}
+                  isMultiplayer={state.players.length > 1}
+                />
+              </div>
+
+              {/* Right: Active Card Area - aligned with timeline cards */}
+              {activeCard && (
+                <ActiveCardDisplay
+                  activeCard={activeCard}
+                  currentPlayer={currentPlayer}
+                  isAnimating={state.isAnimating}
+                  isOverTimeline={dragState.isOverTimeline}
+                  onCycleHand={onCycleHand}
+                  onCardTap={handleActiveCardTap}
+                />
+              )}
+            </>
+          )}
+        </div>
+
         {createPortal(
           <DragOverlay dropAnimation={droppedOnTimelineRef.current ? null : undefined}>
             {draggedCardRef.current ? (
               <div className="dragging-card" style={{ transform: 'scale(1.05)' }}>
-                <Card event={draggedCardRef.current} size="normal" />
+                <Card event={draggedCardRef.current} size="landscape" />
               </div>
             ) : null}
           </DragOverlay>,

@@ -6,7 +6,6 @@ import Card from './Card';
 interface ActiveCardDisplayProps {
   activeCard: HistoricalEvent;
   currentPlayer: Player;
-  playersCount: number;
   isAnimating: boolean;
   isOverTimeline: boolean;
   onCycleHand: () => void;
@@ -16,7 +15,6 @@ interface ActiveCardDisplayProps {
 const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   activeCard,
   currentPlayer,
-  playersCount,
   isAnimating,
   isOverTimeline,
   onCycleHand,
@@ -25,44 +23,43 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   const canCycle = !isAnimating && currentPlayer.hand.length > 1;
 
   return (
-    <div className="relative flex flex-col items-start gap-2 pb-2 pointer-events-auto">
-      <p className="text-light-muted dark:text-dark-muted text-ui-label font-body">
-        {playersCount > 1 ? `${currentPlayer.name}'s turn:` : 'Drag to timeline:'}
-      </p>
-      <div className="relative z-40">
-        <div className="relative p-2 pb-4 pr-4 rounded-xl bg-light-border/50 dark:bg-dark-border/100">
-          {/* Cycle button - top right corner */}
-          <button
-            onClick={() => canCycle && onCycleHand()}
-            disabled={!canCycle}
-            className="absolute -top-3 -right-3 z-50 w-11 h-11 min-w-11 min-h-11 shrink-0 aspect-square rounded-full
-              bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border
-              shadow-sm flex items-center justify-center
-              hover:bg-light-border dark:hover:bg-dark-border
-              disabled:opacity-40 disabled:cursor-not-allowed
-              active:scale-95 transition-all"
-            aria-label="Cycle to next card"
-          >
-            <RefreshCw className="w-5 h-5 text-accent dark:text-accent-dark" />
-          </button>
+    <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
+      {/* Card stack container with cycle button */}
+      <div className="relative">
+        {/* Cycle button - top right corner */}
+        <button
+          onClick={() => canCycle && onCycleHand()}
+          disabled={!canCycle}
+          className="absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
+            bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border
+            shadow-sm flex items-center justify-center
+            hover:bg-light-border dark:hover:bg-dark-border
+            disabled:opacity-40 disabled:cursor-not-allowed
+            active:scale-95 transition-all"
+          aria-label="Cycle to next card"
+        >
+          <RefreshCw className="w-4 h-4 text-accent dark:text-accent-dark" />
+        </button>
 
-          {/* 3rd card (bottom of stack) */}
+        {/* Horizontal card stack */}
+        <div className="relative flex items-center">
+          {/* 3rd card (fanned to right) */}
           {currentPlayer.hand[2] && (
             <div
-              className="absolute top-2 left-2 z-0 pointer-events-none opacity-50"
-              style={{ transform: 'translate(12px, 12px)' }}
+              className="absolute z-0 pointer-events-none opacity-50"
+              style={{ transform: 'translateX(16px) rotate(4deg)' }}
             >
-              <Card event={currentPlayer.hand[2]} size="normal" />
+              <Card event={currentPlayer.hand[2]} size="landscape" />
             </div>
           )}
 
-          {/* 2nd card (middle of stack) */}
+          {/* 2nd card (fanned to right) */}
           {currentPlayer.hand[1] && (
             <div
-              className="absolute top-2 left-2 z-[1] pointer-events-none opacity-70"
-              style={{ transform: 'translate(6px, 6px)' }}
+              className="absolute z-[1] pointer-events-none opacity-70"
+              style={{ transform: 'translateX(8px) rotate(2deg)' }}
             >
-              <Card event={currentPlayer.hand[1]} size="normal" />
+              <Card event={currentPlayer.hand[1]} size="landscape" />
             </div>
           )}
 
@@ -74,6 +71,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
               disabled={isAnimating}
               isOverTimeline={isOverTimeline}
               isHidden={isAnimating}
+              size="landscape"
             />
           </div>
         </div>
