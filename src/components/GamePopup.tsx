@@ -138,13 +138,10 @@ const GamePopup: React.FC<GamePopupProps> = ({
 
             {/* Next player indicator for multiplayer */}
             {nextPlayer && (
-              <div className="px-4 py-3 border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg">
-                <p className="text-light-muted dark:text-dark-muted text-sm text-center font-body">
-                  Next:{' '}
-                  <span className="font-semibold text-light-text dark:text-dark-text">
-                    {nextPlayer.name}
-                  </span>
-                  &apos;s turn
+              <div className="px-4 py-4 border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg">
+                <p className="text-light-text dark:text-dark-text text-xl text-center font-display">
+                  <span className="font-bold">{nextPlayer.name}</span>
+                  <span className="text-light-muted dark:text-dark-muted"> is up next</span>
                 </p>
               </div>
             )}
