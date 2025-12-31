@@ -1,13 +1,26 @@
 import React, { useState, useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { Calendar, Gamepad2, Settings, Play } from 'lucide-react';
 import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
 import TopBar from './TopBar';
-import { getDailyTheme, getThemeDisplayName, getThemedCategories, getThemedEras } from '../utils/dailyTheme';
+import {
+  getDailyTheme,
+  getThemeDisplayName,
+  getThemedCategories,
+  getThemedEras,
+} from '../utils/dailyTheme';
 
-const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
+const ALL_CATEGORIES: Category[] = [
+  'conflict',
+  'disasters',
+  'exploration',
+  'cultural',
+  'infrastructure',
+  'diplomatic',
+];
 const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
 
 interface ModeSelectProps {
@@ -17,10 +30,11 @@ interface ModeSelectProps {
 }
 
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
-
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(false);
-  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([...ALL_DIFFICULTIES]);
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
+    ...ALL_DIFFICULTIES,
+  ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
 
@@ -50,21 +64,31 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
   // Check if settings are valid
   const isPlayValid = useMemo(() => {
-    if (selectedDifficulties.length === 0 || selectedCategories.length === 0 || selectedEras.length === 0) {
+    if (
+      selectedDifficulties.length === 0 ||
+      selectedCategories.length === 0 ||
+      selectedEras.length === 0
+    ) {
       return false;
     }
     const count = filterByEra(
-      filterByCategory(
-        filterByDifficulty(allEvents, selectedDifficulties),
-        selectedCategories
-      ),
+      filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
       selectedEras
     ).length;
     // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
     const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
-    const minRequired = (playerCount * effectiveHandSize) + 1 + (playerCount * 2);
+    const minRequired = playerCount * effectiveHandSize + 1 + playerCount * 2;
     return count >= minRequired;
-  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras, playerCount, cardsPerHand, isSuddenDeath, suddenDeathHandSize]);
+  }, [
+    allEvents,
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+    playerCount,
+    cardsPerHand,
+    isSuddenDeath,
+    suddenDeathHandSize,
+  ]);
 
   // Daily theme - computed from today's date
   const dailySeed = new Date().toISOString().split('T')[0];
@@ -105,28 +129,50 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
   if (isLoading) {
     return (
-      <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-safe pb-safe transition-colors">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3, ease: 'easeOut' }}
+        className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-safe pb-safe transition-colors"
+      >
         <div className="bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-6 max-w-sm w-full text-center border border-light-border dark:border-dark-border">
-          <h1 className="text-4xl font-bold text-light-text dark:text-dark-text mb-1 font-display">When?</h1>
-          <p className="text-light-muted dark:text-dark-muted text-sm mb-6 font-body">The Timeline Game</p>
-          <div className="text-xl font-medium text-light-text dark:text-dark-text mb-2 font-body">Loading historical events...</div>
+          <h1 className="text-4xl font-bold text-light-text dark:text-dark-text mb-1 font-display">
+            When?
+          </h1>
+          <p className="text-light-muted dark:text-dark-muted text-sm mb-6 font-body">
+            The Timeline Game
+          </p>
+          <div className="text-xl font-medium text-light-text dark:text-dark-text mb-2 font-body">
+            Loading historical events...
+          </div>
           <div className="animate-pulse text-sm text-light-muted dark:text-dark-muted font-body">
             Gathering history from across time
           </div>
         </div>
-      </div>
+      </motion.div>
     );
   }
 
   return (
-    <div className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-14 pb-safe overflow-auto transition-colors">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3, ease: 'easeOut' }}
+      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-light-bg dark:bg-dark-bg pt-14 pb-safe overflow-auto transition-colors"
+    >
       {/* Top Bar */}
       <TopBar showHome={false} />
 
       <div className="bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-5 max-w-sm w-full text-center relative z-10 border border-light-border dark:border-dark-border">
         {/* Title */}
-        <h1 className="text-4xl font-bold text-light-text dark:text-dark-text mb-1 font-display">When?</h1>
-        <p className="text-light-muted dark:text-dark-muted text-sm mb-5 font-body">The Timeline Game</p>
+        <h1 className="text-4xl font-bold text-light-text dark:text-dark-text mb-1 font-display">
+          When?
+        </h1>
+        <p className="text-light-muted dark:text-dark-muted text-sm mb-5 font-body">
+          The Timeline Game
+        </p>
 
         {/* Game Modes */}
         <div className="space-y-3">
@@ -137,8 +183,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 <Gamepad2 className="w-4 h-4 text-white" />
               </div>
               <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">Play</h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Place events in the correct order</p>
+                <h3 className="font-bold text-light-text dark:text-dark-text text-sm font-body">
+                  Play
+                </h3>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">
+                  Place events in the correct order
+                </p>
               </div>
               <button
                 onClick={() => setIsSettingsOpen(true)}
@@ -161,9 +211,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                     onClick={() => handlePlayerCountChange(num)}
                     className={`
                       flex-1 h-8 rounded-lg text-sm font-medium transition-all font-body
-                      ${playerCount === num
-                        ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
-                        : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-blue-500/20'
+                      ${
+                        playerCount === num
+                          ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
+                          : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-blue-500/20'
                       }
                     `}
                   >
@@ -198,7 +249,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                   <span className="text-light-text dark:text-dark-text">Daily Challenge: </span>
                   <span className="text-accent dark:text-accent-dark">{dailyThemeDisplayName}</span>
                 </h3>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">Same puzzle for all · New theme daily</p>
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">
+                  Same puzzle for all · New theme daily
+                </p>
               </div>
             </div>
             <button
@@ -247,8 +300,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         suddenDeathHandSize={suddenDeathHandSize}
         setSuddenDeathHandSize={setSuddenDeathHandSize}
       />
-
-    </div>
+    </motion.div>
   );
 };
 

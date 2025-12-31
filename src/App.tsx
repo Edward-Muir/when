@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
+import GameStartTransition from './components/GameStartTransition';
 
 function App() {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
@@ -28,6 +30,7 @@ function App() {
     state,
     allEvents,
     startGame,
+    completeTransition,
     placeCard,
     cycleHand,
     resetGame,
@@ -45,29 +48,38 @@ function App() {
     resetGame();
   };
 
-  // Loading state or mode selection
-  if (state.phase === 'loading' || state.phase === 'modeSelect') {
-    return (
-      <ModeSelect
-        onStart={handleStart}
-        isLoading={state.phase === 'loading'}
-        allEvents={allEvents}
-      />
-    );
-  }
-
-  // Playing or Game Over - show game with timeline visible
+  // All phases wrapped in AnimatePresence for smooth transitions
   return (
-    <Game
-      state={state}
-      onPlacement={placeCard}
-      onCycleHand={cycleHand}
-      pendingPopup={pendingPopup}
-      showDescriptionPopup={showDescriptionPopup}
-      dismissPopup={dismissPopup}
-      onRestart={restartGame}
-      onNewGame={handlePlayAgain}
-    />
+    <AnimatePresence mode="wait">
+      {(state.phase === 'loading' || state.phase === 'modeSelect') && (
+        <ModeSelect
+          key="modeSelect"
+          onStart={handleStart}
+          isLoading={state.phase === 'loading'}
+          allEvents={allEvents}
+        />
+      )}
+      {state.phase === 'transitioning' && (
+        <GameStartTransition
+          key="transition"
+          onComplete={completeTransition}
+          allEvents={allEvents}
+        />
+      )}
+      {(state.phase === 'playing' || state.phase === 'gameOver') && (
+        <Game
+          key="game"
+          state={state}
+          onPlacement={placeCard}
+          onCycleHand={cycleHand}
+          pendingPopup={pendingPopup}
+          showDescriptionPopup={showDescriptionPopup}
+          dismissPopup={dismissPopup}
+          onRestart={restartGame}
+          onNewGame={handlePlayAgain}
+        />
+      )}
+    </AnimatePresence>
   );
 }
 

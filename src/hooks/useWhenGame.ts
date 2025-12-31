@@ -32,6 +32,7 @@ interface UseWhenGameReturn {
   state: WhenGameState;
   allEvents: HistoricalEvent[];
   startGame: (config: GameConfig) => void;
+  completeTransition: () => void;
   placeCard: (insertionIndex: number) => PlacementResult | null;
   cycleHand: () => void;
   resetGame: () => void;
@@ -134,7 +135,7 @@ export function useWhenGame(): UseWhenGameReturn {
       );
 
       setState({
-        phase: 'playing',
+        phase: 'transitioning',
         gameMode: mode,
         timeline: timelineEvents,
         players,
@@ -501,6 +502,13 @@ export function useWhenGame(): UseWhenGameReturn {
     });
   }, [state.isAnimating, state.phase]);
 
+  const completeTransition = useCallback(() => {
+    setState((prev) => {
+      if (prev.phase !== 'transitioning') return prev;
+      return { ...prev, phase: 'playing' };
+    });
+  }, []);
+
   const resetGame = useCallback(() => {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
@@ -543,6 +551,7 @@ export function useWhenGame(): UseWhenGameReturn {
     state,
     allEvents,
     startGame,
+    completeTransition,
     placeCard,
     cycleHand,
     resetGame,

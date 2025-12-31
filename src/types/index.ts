@@ -47,7 +47,7 @@ export interface Player {
   eliminatedRound?: number;
 }
 
-export type GamePhase = 'loading' | 'modeSelect' | 'playing' | 'gameOver';
+export type GamePhase = 'loading' | 'modeSelect' | 'transitioning' | 'playing' | 'gameOver';
 
 export interface PlacementResult {
   success: boolean;
