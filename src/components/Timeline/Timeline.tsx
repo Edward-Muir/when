@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useMemo } from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
 import TimelineEvent from './TimelineEvent';
@@ -53,6 +53,20 @@ const Timeline: React.FC<TimelineProps> = ({
   const { setNodeRef: setTimelineDropRef } = useDroppable({
     id: 'timeline-zone',
   });
+
+  // Calculate wave animation data: distance from placed card for staggered ripple effect
+  const waveDistances = useMemo(() => {
+    if (!lastPlacementResult?.success || animationPhase !== 'flash') return {};
+    const placedIndex = events.findIndex((e) => e.name === lastPlacementResult.event.name);
+    if (placedIndex === -1) return {};
+
+    const distances: Record<number, number> = {};
+    events.forEach((_, idx) => {
+      if (idx === placedIndex) return; // Skip the placed card itself
+      distances[idx] = Math.abs(idx - placedIndex);
+    });
+    return distances;
+  }, [lastPlacementResult, animationPhase, events]);
 
   // Center the timeline content vertically on initial load
   useEffect(() => {
@@ -135,6 +149,7 @@ const Timeline: React.FC<TimelineProps> = ({
                   isAnimating={isAnimatingEvent}
                   animationSuccess={animationSuccess}
                   animationPhase={isAnimatingEvent ? animationPhase : null}
+                  rippleDistance={waveDistances[idx]}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}
                 {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (
