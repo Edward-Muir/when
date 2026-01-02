@@ -12,9 +12,14 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
-import { saveDailyResult } from '../utils/dailyStorage';
+import { saveDailyResult, hasPlayedToday } from '../utils/dailyStorage';
 import { generateEmojiGrid } from '../utils/share';
-import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import {
+  getDailyTheme,
+  getThemeDisplayName,
+  getThemedCategories,
+  getThemedEras,
+} from '../utils/dailyTheme';
 import {
   shuffleArray,
   shuffleArraySeeded,
@@ -80,12 +85,34 @@ export function useWhenGame(): UseWhenGameReturn {
     popup: null,
     pendingStateUpdate: null,
   });
+  const [pendingAutoStart, setPendingAutoStart] = useState<GameConfig | null>(null);
 
-  // Load events on mount
+  // Load events on mount and check if we should auto-start daily
   useEffect(() => {
     loadAllEvents().then((events) => {
       setAllEvents(events);
-      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
+
+      // Check if daily has been played today
+      if (hasPlayedToday()) {
+        // Already played - go to mode select
+        setState((prev) => ({ ...prev, phase: 'modeSelect' }));
+      } else {
+        // First visit today - auto-start daily challenge
+        const dailySeed = new Date().toISOString().split('T')[0];
+        const dailyTheme = getDailyTheme(dailySeed);
+
+        setPendingAutoStart({
+          mode: 'daily',
+          totalTurns: 7,
+          selectedDifficulties: ['easy', 'medium', 'hard'],
+          selectedCategories: getThemedCategories(dailyTheme),
+          selectedEras: getThemedEras(dailyTheme),
+          dailySeed,
+          playerCount: 1,
+          playerNames: ['Player 1'],
+          cardsPerHand: 5,
+        });
+      }
     });
   }, []);
 
@@ -174,6 +201,14 @@ export function useWhenGame(): UseWhenGameReturn {
     },
     [allEvents]
   );
+
+  // Auto-start daily challenge when events are loaded and pending config exists
+  useEffect(() => {
+    if (pendingAutoStart && allEvents.length > 0) {
+      startGame(pendingAutoStart);
+      setPendingAutoStart(null);
+    }
+  }, [pendingAutoStart, allEvents, startGame]);
 
   const placeCard = useCallback(
     (insertionIndex: number): PlacementResult | null => {
