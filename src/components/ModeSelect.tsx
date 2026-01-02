@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Gamepad2, Settings, Play } from 'lucide-react';
+import { Calendar, Gamepad2, Settings, Play, Share2, Check } from 'lucide-react';
 import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
@@ -12,6 +12,8 @@ import {
   getThemedCategories,
   getThemedEras,
 } from '../utils/dailyTheme';
+import { getTodayResult } from '../utils/dailyStorage';
+import { shareDailyResult } from '../utils/share';
 
 const ALL_CATEGORIES: Category[] = [
   'conflict',
@@ -30,6 +32,12 @@ interface ModeSelectProps {
 }
 
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
+  // Check if daily has been played today
+  const todayResult = getTodayResult();
+
+  // Toast state for share button
+  const [showShareToast, setShowShareToast] = useState(false);
+
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(false);
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
@@ -107,6 +115,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       playerNames: ['Player 1'],
       cardsPerHand: 5,
     });
+  };
+
+  const handleShareDaily = async () => {
+    if (!todayResult) return;
+    const showToast = await shareDailyResult(
+      todayResult.date,
+      todayResult.theme,
+      todayResult.emojiGrid,
+      todayResult.won,
+      todayResult.correctCount,
+      todayResult.totalAttempts
+    );
+    if (showToast) {
+      setShowShareToast(true);
+      setTimeout(() => setShowShareToast(false), 2000);
+    }
   };
 
   const handlePlayStart = () => {
@@ -247,22 +271,65 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               <div className="text-left flex-1 min-w-0">
                 <h3 className="font-bold text-sm font-body">
                   <span className="text-light-text dark:text-dark-text">Daily Challenge: </span>
-                  <span className="text-accent dark:text-accent-dark">{dailyThemeDisplayName}</span>
+                  <span className="text-accent dark:text-accent-dark">
+                    {todayResult ? todayResult.theme : dailyThemeDisplayName}
+                  </span>
                 </h3>
                 <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">
-                  Same puzzle for all · New theme daily
+                  {todayResult ? 'Completed today' : 'Same puzzle for all · New theme daily'}
                 </p>
               </div>
             </div>
-            <button
-              onClick={handleDailyStart}
-              className="w-full py-2 px-3 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-            >
-              <Play className="w-3.5 h-3.5" />
-              Play Daily
-            </button>
+
+            {todayResult ? (
+              /* Completed daily state */
+              <div className="space-y-2">
+                {/* Results display */}
+                <div className="bg-light-bg/50 dark:bg-dark-bg/50 rounded-lg p-2 text-center">
+                  <div className="text-2xl mb-1 font-mono tracking-wider">
+                    {todayResult.emojiGrid}
+                  </div>
+                  <div className="text-sm font-medium text-light-text dark:text-dark-text font-body">
+                    {todayResult.won
+                      ? '🏆 Won!'
+                      : `${todayResult.correctCount}/${todayResult.totalAttempts} correct`}
+                  </div>
+                </div>
+
+                {/* Share button */}
+                <button
+                  onClick={handleShareDaily}
+                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                >
+                  <Share2 className="w-3.5 h-3.5" />
+                  Share Result
+                </button>
+
+                {/* Come back tomorrow message */}
+                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body text-center">
+                  Come back tomorrow for a new challenge!
+                </p>
+              </div>
+            ) : (
+              /* Play daily button */
+              <button
+                onClick={handleDailyStart}
+                className="w-full py-2 px-3 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+              >
+                <Play className="w-3.5 h-3.5" />
+                Play Daily
+              </button>
+            )}
           </div>
         </div>
+
+        {/* Share toast */}
+        {showShareToast && (
+          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-light-text dark:bg-dark-text text-light-bg dark:text-dark-bg px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2 z-50 font-body">
+            <Check className="w-4 h-4" />
+            Copied to clipboard!
+          </div>
+        )}
 
         {/* How to play */}
         <div className="mt-4 pt-3 border-t border-light-border dark:border-dark-border">

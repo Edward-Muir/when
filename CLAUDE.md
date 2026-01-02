@@ -31,6 +31,21 @@ React 19 + TypeScript + Tailwind CSS. Create React App toolchain. Pre-commit hoo
 - **Sudden Death**: Wrong answers shrink your hand; run out and you're eliminated
 - **Freeplay**: Configurable turns, filter by difficulty/category/era
 
+### Daily Mode Play-Once Restriction
+
+Daily mode uses localStorage to enforce one play per day (Wordle-style):
+
+- **Storage**: `src/utils/dailyStorage.ts` saves/retrieves `DailyResult` with key `when-daily-result`
+- **Save trigger**: `useWhenGame.ts` has a `useEffect` that saves when `phase === 'gameOver' && gameMode === 'daily'`
+- **UI**: `ModeSelect.tsx` checks `getTodayResult()` and shows completed state instead of play button
+- **Data stored**: date, theme, won, correctCount, totalAttempts, emojiGrid
+
+If adding new game modes or modifying daily mode, ensure:
+
+1. Results are saved to localStorage on game completion
+2. ModeSelect correctly detects and displays completed state
+3. Share functionality works from both game over screen and mode select
+
 ### State Management
 
 All game state in `src/hooks/useWhenGame.ts`:

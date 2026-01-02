@@ -6,18 +6,19 @@ const GAME_URL = 'https://www.play-when.com/';
 /**
  * Generate emoji grid from placement history
  */
-function generateEmojiGrid(placementHistory: boolean[]): string {
-  return placementHistory.map(correct => correct ? '🟩' : '🟥').join('');
+export function generateEmojiGrid(placementHistory: boolean[]): string {
+  return placementHistory.map((correct) => (correct ? '🟩' : '🟥')).join('');
 }
 
 /**
  * Generate the share text based on game mode and results
  */
 export function generateShareText(state: WhenGameState): string {
-  const { gameMode, placementHistory, lastConfig, players, winners, turnNumber, roundNumber } = state;
+  const { gameMode, placementHistory, lastConfig, players, winners, turnNumber, roundNumber } =
+    state;
   const emojiGrid = generateEmojiGrid(placementHistory);
   const playerCount = players.length;
-  const correctCount = placementHistory.filter(p => p).length;
+  const correctCount = placementHistory.filter((p) => p).length;
   const totalAttempts = placementHistory.length;
 
   let text = '';
@@ -33,7 +34,7 @@ export function generateShareText(state: WhenGameState): string {
     }
     case 'suddenDeath': {
       if (playerCount > 1) {
-        const winnerNames = winners.map(w => w.name).join(', ');
+        const winnerNames = winners.map((w) => w.name).join(', ');
         text = `When ☠️ ${playerCount}P Sudden Death\n${winnerNames ? `🏆 Winner: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber}`;
       } else {
         text = `When ☠️ Sudden Death\n🔥 Streak: ${correctCount}\n${emojiGrid}`;
@@ -43,7 +44,7 @@ export function generateShareText(state: WhenGameState): string {
     case 'freeplay':
     default: {
       if (playerCount > 1) {
-        const winnerNames = winners.map(w => w.name).join(', ');
+        const winnerNames = winners.map((w) => w.name).join(', ');
         text = `When 🎯 ${playerCount} Players\n${winnerNames ? `🏆 Winners: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber} | Turns: ${turnNumber}`;
       } else {
         const won = winners.length > 0;
@@ -107,5 +108,21 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
  */
 export async function shareApp(): Promise<boolean> {
   const text = `Try When - The Timeline Game!\n\n${GAME_URL}`;
+  return shareContent(text, 'When - Timeline Game');
+}
+
+/**
+ * Share daily result from stored data (for completed daily on mode select screen)
+ * Returns true if copied to clipboard (toast should be shown)
+ */
+export async function shareDailyResult(
+  date: string,
+  theme: string,
+  emojiGrid: string,
+  won: boolean,
+  correctCount: number,
+  totalAttempts: number
+): Promise<boolean> {
+  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}\n\n${GAME_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }

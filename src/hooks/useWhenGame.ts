@@ -12,6 +12,9 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
+import { saveDailyResult } from '../utils/dailyStorage';
+import { generateEmojiGrid } from '../utils/share';
+import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
   shuffleArray,
   shuffleArraySeeded,
@@ -85,6 +88,23 @@ export function useWhenGame(): UseWhenGameReturn {
       setState((prev) => ({ ...prev, phase: 'modeSelect' }));
     });
   }, []);
+
+  // Save daily result to localStorage when daily game ends
+  useEffect(() => {
+    if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
+      const dailySeed = state.lastConfig.dailySeed;
+      const theme = getDailyTheme(dailySeed);
+
+      saveDailyResult({
+        date: dailySeed,
+        theme: getThemeDisplayName(theme),
+        won: state.winners.length > 0,
+        correctCount: state.placementHistory.filter((p) => p).length,
+        totalAttempts: state.placementHistory.length,
+        emojiGrid: generateEmojiGrid(state.placementHistory),
+      });
+    }
+  }, [state.phase, state.gameMode, state.lastConfig, state.winners, state.placementHistory]);
 
   const startGame = useCallback(
     (config: GameConfig) => {
