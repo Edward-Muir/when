@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useMemo } from 'react';
+import React, { useRef, useEffect, useMemo, useState } from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
-import TimelineEvent from './TimelineEvent';
+import TimelineEvent, { RIPPLE_DURATION_MS } from './TimelineEvent';
 import Card from '../Card';
 
 interface TimelineProps {
@@ -54,10 +54,34 @@ const Timeline: React.FC<TimelineProps> = ({
     id: 'timeline-zone',
   });
 
+  // Store ripple data independently from animation phase so it can complete fully
+  const [rippleData, setRippleData] = useState<{
+    placedEventName: string;
+    timestamp: number;
+  } | null>(null);
+
+  // Trigger ripple when a successful placement happens
+  useEffect(() => {
+    if (lastPlacementResult?.success && animationPhase === 'flash') {
+      setRippleData({
+        placedEventName: lastPlacementResult.event.name,
+        timestamp: Date.now(),
+      });
+    }
+  }, [lastPlacementResult, animationPhase]);
+
+  // Clear ripple after animation completes (~2 seconds for 3 oscillations)
+  useEffect(() => {
+    if (rippleData) {
+      const timer = setTimeout(() => setRippleData(null), RIPPLE_DURATION_MS);
+      return () => clearTimeout(timer);
+    }
+  }, [rippleData]);
+
   // Calculate wave animation data: distance from placed card for staggered ripple effect
   const waveDistances = useMemo(() => {
-    if (!lastPlacementResult?.success || animationPhase !== 'flash') return {};
-    const placedIndex = events.findIndex((e) => e.name === lastPlacementResult.event.name);
+    if (!rippleData) return {};
+    const placedIndex = events.findIndex((e) => e.name === rippleData.placedEventName);
     if (placedIndex === -1) return {};
 
     const distances: Record<number, number> = {};
@@ -66,7 +90,7 @@ const Timeline: React.FC<TimelineProps> = ({
       distances[idx] = Math.abs(idx - placedIndex);
     });
     return distances;
-  }, [lastPlacementResult, animationPhase, events]);
+  }, [rippleData, events]);
 
   // Center the timeline content vertically on initial load
   useEffect(() => {
@@ -150,6 +174,7 @@ const Timeline: React.FC<TimelineProps> = ({
                   animationSuccess={animationSuccess}
                   animationPhase={isAnimatingEvent ? animationPhase : null}
                   rippleDistance={waveDistances[idx]}
+                  rippleTrigger={rippleData?.timestamp}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}
                 {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (

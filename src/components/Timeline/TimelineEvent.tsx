@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
-import { motion, useReducedMotion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase, Category } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
+
+// Export ripple duration for Timeline.tsx to use
+export const RIPPLE_DURATION_MS = 2000;
 
 interface TimelineEventProps {
   event: HistoricalEvent;
@@ -15,6 +18,8 @@ interface TimelineEventProps {
   animationPhase?: AnimationPhase;
   // Wave ripple: distance from placed card (1 = adjacent, 2 = two away, etc.)
   rippleDistance?: number;
+  // Unique ID to trigger ripple animation (timestamp)
+  rippleTrigger?: number;
 }
 
 // Extracted image section to reduce component complexity
@@ -87,32 +92,16 @@ const yearPopVariants = {
   },
 };
 
-// Wave ripple animation - delay and intensity based on distance from placed card
-// Note: flash phase lasts 400ms, so total delay + duration must fit within that window
-const RIPPLE_STAGGER_MS = 0.2; // 60ms stagger per card distance
-const RIPPLE_DURATION_MS = 0.4; // 250ms animation duration
-const BASE_SCALE = 0.95; // Scale for adjacent cards (distance 1)
-const SCALE_FALLOFF = 0.01; // Scale increases by 0.01 per card further away
+// Wave ripple animation constants
+const RIPPLE_STAGGER_S = 0.2; // 100ms stagger per card distance
+const BASE_Y_OFFSET = 6; // Push DOWN initially (impact effect)
+const HALF_LIFE_CARDS = 1.0; // Amplitude halves every 1.25 card distances
 
-const createRippleAnimation = (distance: number) => {
-  // Adjacent cards compress most (0.95), further cards compress less
-  const scale = Math.min(BASE_SCALE + (distance - 1) * SCALE_FALLOFF, 0.99);
-  return {
-    scale: [1, scale, 1],
-    transition: {
-      duration: RIPPLE_DURATION_MS,
-      delay: distance * RIPPLE_STAGGER_MS,
-      ease: 'easeInOut' as const,
-    },
-  };
-};
-
-// Compute animation states based on props
+// Compute animation states based on props (excludes ripple - handled separately with useAnimate)
 function useEventAnimations(
   isAnimating: boolean,
   animationSuccess: boolean | undefined,
   animationPhase: AnimationPhase | undefined,
-  rippleDistance: number | undefined,
   shouldReduceMotion: boolean | null
 ) {
   const isFlashPhase = animationPhase === 'flash';
@@ -134,20 +123,63 @@ function useEventAnimations(
   // Year pop (require motion enabled)
   const shouldPopYear = isAnimating && animationSuccess && isFlashPhase && !shouldReduceMotion;
 
-  // Wave ripple animation (distance-based staggered delay)
-  const rippleAnimation =
-    rippleDistance !== undefined && !shouldReduceMotion
-      ? createRippleAnimation(rippleDistance)
-      : undefined;
-
   return {
     cardAnimationClass,
     isSuccessAnimation,
     isErrorAnimation,
     shouldPopYear,
-    rippleAnimation,
     isMovingPhase,
   };
+}
+
+// Hook for one-shot ripple animation using useAnimate
+function useRippleAnimation(
+  rippleDistance: number | undefined,
+  rippleTrigger: number | undefined,
+  shouldReduceMotion: boolean | null
+) {
+  const [scope, animate] = useAnimate();
+
+  useEffect(() => {
+    if (
+      rippleDistance !== undefined &&
+      rippleDistance > 0 &&
+      rippleTrigger !== undefined &&
+      !shouldReduceMotion
+    ) {
+      // Exponential decay: amplitude halves every HALF_LIFE_CARDS distance
+      const decayFactor = Math.pow(0.5, (rippleDistance - 1) / HALF_LIFE_CARDS);
+      const yOffset = BASE_Y_OFFSET * decayFactor;
+      const delay = rippleDistance * RIPPLE_STAGGER_S;
+
+      // Two-phase animation: quick push down, then spring back with oscillations
+      // Phase 1: Push down quickly
+      animate(
+        scope.current,
+        { y: yOffset },
+        {
+          duration: 0.15,
+          ease: 'easeOut',
+          delay,
+        }
+      ).then(() => {
+        // Phase 2: Spring back to rest with oscillations
+        animate(
+          scope.current,
+          { y: 0 },
+          {
+            type: 'spring',
+            stiffness: 150,
+            damping: 4,
+            mass: 1,
+          }
+        );
+      });
+    }
+    // rippleTrigger is the key dependency - it changes each time a new ripple starts
+  }, [rippleTrigger, rippleDistance, animate, scope, shouldReduceMotion]);
+
+  return scope;
 }
 
 const TimelineEvent: React.FC<TimelineEventProps> = ({
@@ -159,27 +191,19 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   animationSuccess,
   animationPhase,
   rippleDistance,
+  rippleTrigger,
 }) => {
   const shouldReduceMotion = useReducedMotion();
-  const {
-    cardAnimationClass,
-    isSuccessAnimation,
-    isErrorAnimation,
-    shouldPopYear,
-    rippleAnimation,
-    isMovingPhase,
-  } = useEventAnimations(
-    isAnimating,
-    animationSuccess,
-    animationPhase,
-    rippleDistance,
-    shouldReduceMotion
-  );
+  const { cardAnimationClass, isSuccessAnimation, isErrorAnimation, shouldPopYear, isMovingPhase } =
+    useEventAnimations(isAnimating, animationSuccess, animationPhase, shouldReduceMotion);
+
+  // Imperative ripple animation - triggers once and self-completes
+  const rippleScope = useRippleAnimation(rippleDistance, rippleTrigger, shouldReduceMotion);
 
   return (
     <motion.div
+      ref={rippleScope}
       data-timeline-index={index}
-      animate={rippleAnimation}
       className={`flex items-center w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
     >
       {/* Year column (fixed 96px width) with tick */}
