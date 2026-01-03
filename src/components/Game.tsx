@@ -31,6 +31,7 @@ interface GameProps {
   onCycleHand: () => void;
   pendingPopup: GamePopupData | null;
   showDescriptionPopup: (event: HistoricalEvent) => void;
+  showGameOverPopup: () => void;
   dismissPopup: () => void;
   onRestart: () => void;
   onNewGame: () => void;
@@ -42,6 +43,7 @@ const Game: React.FC<GameProps> = ({
   onCycleHand,
   pendingPopup,
   showDescriptionPopup,
+  showGameOverPopup,
   dismissPopup,
   onRestart,
   onNewGame,
@@ -50,6 +52,7 @@ const Game: React.FC<GameProps> = ({
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
   const [showToast, setShowToast] = useState(false);
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
+  const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -101,6 +104,18 @@ const Game: React.FC<GameProps> = ({
     prevPlacementRef.current = state.lastPlacementResult;
   }, [state.lastPlacementResult, haptics, triggerShake]);
 
+  // Show game over popup when game ends
+  useEffect(() => {
+    if (state.phase === 'gameOver' && !gameOverPopupShown) {
+      setGameOverPopupShown(true);
+      showGameOverPopup();
+    }
+    // Reset when starting a new game
+    if (state.phase === 'playing') {
+      setGameOverPopupShown(false);
+    }
+  }, [state.phase, gameOverPopupShown, showGameOverPopup]);
+
   const handleActiveCardTap = () => {
     if (activeCard) {
       showDescriptionPopup(activeCard);
@@ -113,9 +128,9 @@ const Game: React.FC<GameProps> = ({
 
   // Determine if we should show the year in the popup (only for cards in timeline)
   const showYearInPopup =
-    pendingPopup?.type === 'description'
-      ? state.timeline.some((e) => e.name === pendingPopup.event.name)
-      : true; // Always show year for correct/incorrect popups
+    pendingPopup?.type === 'description' && pendingPopup.event
+      ? state.timeline.some((e) => e.name === pendingPopup.event!.name)
+      : pendingPopup?.type !== 'gameOver'; // Show year for correct/incorrect, not for gameOver
 
   return (
     <motion.div
@@ -221,6 +236,7 @@ const Game: React.FC<GameProps> = ({
               onDismiss={dismissPopup}
               nextPlayer={pendingPopup.nextPlayer}
               showYear={showYearInPopup}
+              gameState={pendingPopup.gameState}
             />
           )}
 

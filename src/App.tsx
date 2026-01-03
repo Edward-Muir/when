@@ -37,6 +37,7 @@ function App() {
     restartGame,
     pendingPopup,
     showDescriptionPopup,
+    showGameOverPopup,
     dismissPopup,
   } = useWhenGame();
 
@@ -74,6 +75,7 @@ function App() {
           onCycleHand={cycleHand}
           pendingPopup={pendingPopup}
           showDescriptionPopup={showDescriptionPopup}
+          showGameOverPopup={showGameOverPopup}
           dismissPopup={dismissPopup}
           onRestart={restartGame}
           onNewGame={handlePlayAgain}

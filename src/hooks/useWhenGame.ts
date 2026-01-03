@@ -50,6 +50,7 @@ interface UseWhenGameReturn {
   closeModal: () => void;
   pendingPopup: GamePopupData | null;
   showDescriptionPopup: (event: HistoricalEvent) => void;
+  showGameOverPopup: () => void;
   dismissPopup: () => void;
 }
 
@@ -274,6 +275,9 @@ export function useWhenGame(): UseWhenGameReturn {
             const isSinglePlayer = newPlayers.length === 1;
             let newDeck = prev.deck;
 
+            // Track per-player placement
+            player.placementHistory = [...player.placementHistory, true];
+
             // Remove card from hand
             player.hand = removeFromHand(player.hand, event.name);
 
@@ -435,6 +439,9 @@ export function useWhenGame(): UseWhenGameReturn {
             const isSuddenDeath = prev.gameMode === 'suddenDeath';
             const isSinglePlayer = newPlayers.length === 1;
             let newDeck = prev.deck;
+
+            // Track per-player placement
+            player.placementHistory = [...player.placementHistory, false];
 
             // Remove card from hand (discarded)
             player.hand = removeFromHand(player.hand, event.name);
@@ -602,6 +609,18 @@ export function useWhenGame(): UseWhenGameReturn {
     }
   }, [pendingPopupState]);
 
+  // Show game over popup
+  const showGameOverPopup = useCallback(() => {
+    setPendingPopupState({
+      popup: {
+        type: 'gameOver',
+        event: null,
+        gameState: state,
+      },
+      pendingStateUpdate: null,
+    });
+  }, [state]);
+
   return {
     state,
     allEvents,
@@ -616,6 +635,7 @@ export function useWhenGame(): UseWhenGameReturn {
     closeModal,
     pendingPopup: pendingPopupState.popup,
     showDescriptionPopup,
+    showGameOverPopup,
     dismissPopup,
   };
 }

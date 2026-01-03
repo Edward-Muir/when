@@ -12,15 +12,15 @@ export function shuffleArray<T>(array: T[]): T[] {
 
 // Seeded random number generator (mulberry32)
 export function seededRandom(seed: number): () => number {
-  return function() {
+  return function () {
     // eslint-disable-next-line no-mixed-operators
-    let t = seed += 0x6D2B79F5;
+    let t = (seed += 0x6d2b79f5);
     // eslint-disable-next-line no-mixed-operators
-    t = Math.imul((t ^ (t >>> 15)), t | 1);
+    t = Math.imul(t ^ (t >>> 15), t | 1);
     // eslint-disable-next-line no-mixed-operators
-    t ^= t + Math.imul((t ^ (t >>> 7)), t | 61);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     // eslint-disable-next-line no-mixed-operators
-    return (((t ^ (t >>> 14))) >>> 0) / 4294967296;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   };
 }
 
@@ -29,7 +29,7 @@ export function stringToSeed(str: string): number {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     const char = str.charCodeAt(i);
-    hash = ((hash << 5) - hash) + char;
+    hash = (hash << 5) - hash + char;
     hash = hash & hash;
   }
   return Math.abs(hash);
@@ -74,10 +74,7 @@ export function isPlacementCorrect(
 }
 
 // Find the correct position for an event in the timeline
-export function findCorrectPosition(
-  timeline: HistoricalEvent[],
-  event: HistoricalEvent
-): number {
+export function findCorrectPosition(timeline: HistoricalEvent[], event: HistoricalEvent): number {
   for (let i = 0; i <= timeline.length; i++) {
     const leftYear = i > 0 ? timeline[i - 1].year : -Infinity;
     const rightYear = i < timeline.length ? timeline[i].year : Infinity;
@@ -120,12 +117,12 @@ export function formatYear(year: number): string {
 
 // Category color mapping
 const categoryColors: Record<Category, { bg: string; border: string }> = {
-  'conflict': { bg: 'bg-red-600', border: 'border-red-400' },
-  'disasters': { bg: 'bg-gray-700', border: 'border-gray-500' },
-  'exploration': { bg: 'bg-teal-600', border: 'border-teal-400' },
-  'cultural': { bg: 'bg-purple-600', border: 'border-purple-400' },
-  'infrastructure': { bg: 'bg-amber-600', border: 'border-amber-400' },
-  'diplomatic': { bg: 'bg-blue-600', border: 'border-blue-400' },
+  conflict: { bg: 'bg-red-600', border: 'border-red-400' },
+  disasters: { bg: 'bg-gray-700', border: 'border-gray-500' },
+  exploration: { bg: 'bg-teal-600', border: 'border-teal-400' },
+  cultural: { bg: 'bg-purple-600', border: 'border-purple-400' },
+  infrastructure: { bg: 'bg-amber-600', border: 'border-amber-400' },
+  diplomatic: { bg: 'bg-blue-600', border: 'border-blue-400' },
 };
 
 export function getCategoryColorClass(category: Category): string {
@@ -134,12 +131,12 @@ export function getCategoryColorClass(category: Category): string {
 
 export function getCategoryDisplayName(category: Category): string {
   const names: Record<Category, string> = {
-    'conflict': 'Conflict',
-    'disasters': 'Disasters',
-    'exploration': 'Exploration',
-    'cultural': 'Cultural',
-    'infrastructure': 'Infrastructure',
-    'diplomatic': 'Diplomatic',
+    conflict: 'Conflict',
+    disasters: 'Disasters',
+    exploration: 'Exploration',
+    cultural: 'Cultural',
+    infrastructure: 'Infrastructure',
+    diplomatic: 'Diplomatic',
   };
   return names[category] || category;
 }
@@ -161,34 +158,22 @@ export function drawCard(deck: HistoricalEvent[]): {
 }
 
 // Remove a card from a player's hand by event name
-export function removeFromHand(
-  hand: HistoricalEvent[],
-  eventName: string
-): HistoricalEvent[] {
-  return hand.filter(e => e.name !== eventName);
+export function removeFromHand(hand: HistoricalEvent[], eventName: string): HistoricalEvent[] {
+  return hand.filter((e) => e.name !== eventName);
 }
 
 // Add a card to a player's hand
-export function addToHand(
-  hand: HistoricalEvent[],
-  event: HistoricalEvent
-): HistoricalEvent[] {
+export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
   return [...hand, event];
 }
 
 // Get next player index (wraps around)
-export function getNextPlayerIndex(
-  currentIndex: number,
-  playerCount: number
-): number {
+export function getNextPlayerIndex(currentIndex: number, playerCount: number): number {
   return (currentIndex + 1) % playerCount;
 }
 
 // Get next active (non-eliminated) player index
-export function getNextActivePlayerIndex(
-  currentIndex: number,
-  players: Player[]
-): number {
+export function getNextActivePlayerIndex(currentIndex: number, players: Player[]): number {
   const playerCount = players.length;
   let nextIndex = (currentIndex + 1) % playerCount;
   let checked = 0;
@@ -229,6 +214,7 @@ export function initializePlayers(
       hand,
       hasWon: false,
       isEliminated: false,
+      placementHistory: [],
     });
   }
 
@@ -245,7 +231,7 @@ export function shouldGameEnd(
   currentPlayerIndex: number,
   gameMode: GameMode
 ): boolean {
-  const activePlayers = players.filter(p => !p.isEliminated);
+  const activePlayers = players.filter((p) => !p.isEliminated);
 
   // Sudden death mode - handled by processEndOfRound
   if (gameMode === 'suddenDeath') {
@@ -267,7 +253,7 @@ export function shouldGameEnd(
   }
 
   // Check if we have any winners
-  const hasWinners = players.some(p => p.hasWon);
+  const hasWinners = players.some((p) => p.hasWon);
 
   // Game ends when we return to player 0 after someone has won
   return hasWinners && currentPlayerIndex === 0;
@@ -293,12 +279,13 @@ export function processEndOfRound(
     return { gameOver: false, updatedPlayers: players, winners: [] };
   }
 
-  const updatedPlayers = players.map(p => ({ ...p }));
-  const activePlayers = updatedPlayers.filter(p => !p.isEliminated);
-  const playersWithEmptyHands = activePlayers.filter(p => p.hand.length === 0);
+  const updatedPlayers = players.map((p) => ({ ...p }));
+  const activePlayers = updatedPlayers.filter((p) => !p.isEliminated);
+  const playersWithEmptyHands = activePlayers.filter((p) => p.hand.length === 0);
 
   // Check if ALL active players have empty hands AND there were >1 active at round start
-  const allEliminated = playersWithEmptyHands.length === activePlayers.length && activePlayers.length > 0;
+  const allEliminated =
+    playersWithEmptyHands.length === activePlayers.length && activePlayers.length > 0;
   const reprieveEligible = activePlayersAtRoundStart > 1;
 
   if (allEliminated && reprieveEligible) {
@@ -307,11 +294,11 @@ export function processEndOfRound(
   }
 
   // Eliminate players with empty hands
-  playersWithEmptyHands.forEach(p => {
+  playersWithEmptyHands.forEach((p) => {
     p.isEliminated = true;
   });
 
-  const remaining = updatedPlayers.filter(p => !p.isEliminated);
+  const remaining = updatedPlayers.filter((p) => !p.isEliminated);
 
   // No players remaining - game over with no winners
   if (remaining.length === 0) {
@@ -328,4 +315,3 @@ export function processEndOfRound(
   // Game continues (either multiple players, or single player still has cards)
   return { gameOver: false, updatedPlayers, winners: [] };
 }
-

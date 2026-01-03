@@ -45,6 +45,7 @@ export interface Player {
   winTurn?: number;
   isEliminated?: boolean;
   eliminatedRound?: number;
+  placementHistory: boolean[];
 }
 
 export type GamePhase = 'loading' | 'modeSelect' | 'transitioning' | 'playing' | 'gameOver';
@@ -58,12 +59,13 @@ export interface PlacementResult {
 
 export type AnimationPhase = 'flash' | 'moving' | null;
 
-export type GamePopupType = 'description' | 'correct' | 'incorrect';
+export type GamePopupType = 'description' | 'correct' | 'incorrect' | 'gameOver';
 
 export interface GamePopupData {
   type: GamePopupType;
-  event: HistoricalEvent;
+  event: HistoricalEvent | null;
   nextPlayer?: Player;
+  gameState?: WhenGameState;
 }
 
 export interface WhenGameState {

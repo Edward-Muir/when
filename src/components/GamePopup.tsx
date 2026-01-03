@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, X } from 'lucide-react';
-import { HistoricalEvent, Player, GamePopupType } from '../types';
+import { Check, X, Trophy } from 'lucide-react';
+import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import CategoryIcon from './CategoryIcon';
 
@@ -11,6 +11,7 @@ interface GamePopupProps {
   onDismiss: () => void;
   nextPlayer?: Player;
   showYear?: boolean;
+  gameState?: WhenGameState;
 }
 
 // Sub-component for result badge (overlays on image for correct/incorrect)
@@ -82,30 +83,139 @@ function YearBar({ year, type }: { year: number; type: GamePopupType }) {
   );
 }
 
+// Sub-component for game over content
+function GameOverContent({ gameState }: { gameState: WhenGameState }) {
+  const { winners, players, gameMode } = gameState;
+  const hasWinner = winners.length > 0;
+  const isSinglePlayer = players.length === 1;
+  const isSuddenDeath = gameMode === 'suddenDeath';
+
+  // Generate winner text
+  const getWinnerText = () => {
+    if (isSinglePlayer) {
+      return hasWinner ? 'You Won!' : 'Game Over';
+    }
+    if (!hasWinner) {
+      return 'Game Over';
+    }
+    if (winners.length === 1) {
+      return `${winners[0].name} Wins!`;
+    }
+    // Multiple winners
+    const names = winners.map((w) => w.name);
+    const lastWinner = names.pop();
+    return `${names.join(', ')} & ${lastWinner} Win!`;
+  };
+
+  // Calculate stats for a player
+  const getPlayerStats = (player: Player) => {
+    const correct = player.placementHistory.filter((p) => p).length;
+    const total = player.placementHistory.length;
+    return { correct, total };
+  };
+
+  return (
+    <div className="p-6">
+      {/* Header with trophy */}
+      <div className="flex flex-col items-center gap-3 mb-6">
+        <div
+          className={`w-16 h-16 rounded-full flex items-center justify-center ${
+            hasWinner ? 'bg-amber-100 dark:bg-amber-900/30' : 'bg-light-border dark:bg-dark-border'
+          }`}
+        >
+          <Trophy
+            className={`w-8 h-8 ${hasWinner ? 'text-amber-500' : 'text-light-muted dark:text-dark-muted'}`}
+          />
+        </div>
+        <h2 className="text-2xl font-display font-bold text-light-text dark:text-dark-text">
+          {getWinnerText()}
+        </h2>
+      </div>
+
+      {/* Stats section */}
+      <div className="space-y-3">
+        {isSinglePlayer ? (
+          // Single player stats
+          <div className="text-center">
+            <p className="text-light-text dark:text-dark-text font-body">
+              {isSuddenDeath ? (
+                <>
+                  <span className="text-2xl font-bold font-mono">
+                    {getPlayerStats(players[0]).correct}
+                  </span>
+                  <span className="text-light-muted dark:text-dark-muted"> streak</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-2xl font-bold font-mono">
+                    {getPlayerStats(players[0]).correct}
+                  </span>
+                  <span className="text-light-muted dark:text-dark-muted">
+                    {' '}
+                    / {getPlayerStats(players[0]).total} correct
+                  </span>
+                </>
+              )}
+            </p>
+          </div>
+        ) : (
+          // Multiplayer stats - per player
+          <div className="space-y-2">
+            {players.map((player) => {
+              const stats = getPlayerStats(player);
+              const isWinner = winners.some((w) => w.id === player.id);
+              return (
+                <div
+                  key={player.id}
+                  className={`flex items-center justify-between px-3 py-2 rounded-lg ${
+                    isWinner ? 'bg-amber-100 dark:bg-amber-900/20' : 'bg-light-bg dark:bg-dark-bg'
+                  }`}
+                >
+                  <span className="font-body text-light-text dark:text-dark-text">
+                    {player.name}
+                    {isWinner && <Trophy className="inline-block w-4 h-4 ml-1 text-amber-500" />}
+                  </span>
+                  <span className="font-mono text-light-text dark:text-dark-text">
+                    {stats.correct}/{stats.total}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 const GamePopup: React.FC<GamePopupProps> = ({
   type,
   event,
   onDismiss,
   nextPlayer,
   showYear = true,
+  gameState,
 }) => {
+  const isGameOver = type === 'gameOver';
+  const isVisible = isGameOver ? !!gameState : !!event;
+
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onDismiss();
     };
-    if (event) {
+    if (isVisible) {
       document.addEventListener('keydown', handleEscape);
       return () => document.removeEventListener('keydown', handleEscape);
     }
-  }, [event, onDismiss]);
+  }, [isVisible, onDismiss]);
 
-  if (!event) return null;
+  if (!isVisible) return null;
 
   const isDescription = type === 'description';
 
   return (
     <AnimatePresence>
-      {event && (
+      {isVisible && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25 dark:bg-black/50"
           onClick={onDismiss}
@@ -121,29 +231,39 @@ const GamePopup: React.FC<GamePopupProps> = ({
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
           >
-            {/* Image section with optional result badge overlay - shown for ALL types */}
-            <EventImage event={event} type={type} />
+            {isGameOver && gameState ? (
+              // Game over content
+              <GameOverContent gameState={gameState} />
+            ) : (
+              // Event-based content (description, correct, incorrect)
+              event && (
+                <>
+                  {/* Image section with optional result badge overlay */}
+                  <EventImage event={event} type={type} />
 
-            {/* Year section */}
-            {showYear && <YearBar year={event.year} type={type} />}
+                  {/* Year section */}
+                  {showYear && <YearBar year={event.year} type={type} />}
 
-            {/* Description - only for description type */}
-            {isDescription && (
-              <div className="px-4 py-3">
-                <p className="text-light-text dark:text-dark-text text-sm leading-relaxed font-body">
-                  {event.description}
-                </p>
-              </div>
-            )}
+                  {/* Description - only for description type */}
+                  {isDescription && (
+                    <div className="px-4 py-3">
+                      <p className="text-light-text dark:text-dark-text text-sm leading-relaxed font-body">
+                        {event.description}
+                      </p>
+                    </div>
+                  )}
 
-            {/* Next player indicator for multiplayer */}
-            {nextPlayer && (
-              <div className="px-4 py-4 border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg">
-                <p className="text-light-text dark:text-dark-text text-xl text-center font-display">
-                  <span className="font-bold">{nextPlayer.name}</span>
-                  <span className="text-light-muted dark:text-dark-muted"> is up next</span>
-                </p>
-              </div>
+                  {/* Next player indicator for multiplayer */}
+                  {nextPlayer && (
+                    <div className="px-4 py-4 border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg">
+                      <p className="text-light-text dark:text-dark-text text-xl text-center font-display">
+                        <span className="font-bold">{nextPlayer.name}</span>
+                        <span className="text-light-muted dark:text-dark-muted"> is up next</span>
+                      </p>
+                    </div>
+                  )}
+                </>
+              )
             )}
 
             {/* Tap to continue hint */}
