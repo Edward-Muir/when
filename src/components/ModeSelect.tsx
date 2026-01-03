@@ -14,6 +14,7 @@ import {
 } from '../utils/dailyTheme';
 import { getTodayResult } from '../utils/dailyStorage';
 import { shareDailyResult } from '../utils/share';
+import { APP_VERSION } from '../version';
 
 const ALL_CATEGORIES: Category[] = [
   'conflict',
@@ -338,12 +339,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           </p>
         </div>
 
-        {/* Events loaded indicator */}
-        {allEvents.length > 0 && (
-          <p className="text-center mt-2 text-[10px] text-light-muted/60 dark:text-dark-muted/60 font-body">
-            {allEvents.length} historical events loaded
-          </p>
-        )}
+        {/* Version display */}
+        <p className="text-center mt-2 text-[10px] text-light-muted/60 dark:text-dark-muted/60 font-body">
+          v{APP_VERSION}
+        </p>
       </div>
 
       {/* Settings Popup */}

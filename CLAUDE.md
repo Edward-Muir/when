@@ -19,6 +19,10 @@ npm run lint:fix             # ESLint with auto-fix
 npm run typecheck            # TypeScript type check
 npm run format               # Prettier format all files
 npm run find-duplicates      # Check for duplicate events in JSON
+npm run release              # Bump version (auto-detect from commits)
+npm run release:minor        # Bump minor version (0.1.0 → 0.2.0)
+npm run release:patch        # Bump patch version (0.1.0 → 0.1.1)
+npm run release:major        # Bump major version (0.1.0 → 1.0.0)
 ```
 
 ## Architecture
@@ -139,3 +143,40 @@ This is a mobile-first web app.
 - `lucide-react`: Icons
 - `react-confetti-explosion`: Win celebration
 - `cloudinary`: Image hosting
+- `commit-and-tag-version`: Semantic versioning and changelog
+
+### Versioning & Releases
+
+Uses conventional commits with `commit-and-tag-version` for semantic versioning.
+
+**Workflow:**
+
+```bash
+# Make commits using conventional format
+git commit -m "feat: Add new game mode"
+git commit -m "fix: Resolve scoring bug"
+
+# When ready to release (auto-detects bump type from commits):
+npm run release
+
+# Or specify bump type explicitly:
+npm run release:minor
+
+# Push with tags:
+git push --follow-tags
+```
+
+**What happens on release:**
+
+1. Bumps version in `package.json`
+2. Updates `CHANGELOG.md` from commit history
+3. Regenerates `public/feed.xml` (RSS feed)
+4. Creates git tag (e.g., `v1.0.0`)
+
+**Key files:**
+
+- `src/version.ts` - Auto-generated, exports `APP_VERSION` (displayed in ModeSelect)
+- `public/feed.xml` - RSS feed of releases
+- `.versionrc.json` - Release configuration
+- `scripts/inject-version.js` - Generates version.ts before builds
+- `scripts/generate-rss.js` - Generates RSS from CHANGELOG.md
