@@ -11,6 +11,11 @@
     { "type": "chore", "hidden": true }
   ],
   "scripts": {
-    "postchangelog": "node scripts/generate-rss.js"
-  }
+    "postchangelog": "node scripts/generate-rss.js && node scripts/inject-version.js"
+  },
+  "bumpFiles": [
+    { "filename": "package.json", "type": "json" },
+    { "filename": "public/feed.xml", "type": "plain-text" },
+    { "filename": "src/version.ts", "type": "plain-text" }
+  ]
 }
