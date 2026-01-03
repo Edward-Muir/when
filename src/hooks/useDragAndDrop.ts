@@ -1,11 +1,15 @@
 import { useState, useCallback, useRef } from 'react';
 import { DragStartEvent, DragEndEvent, DragOverEvent, DragMoveEvent } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult } from '../types';
+import { useHaptics } from './useHaptics';
+
+type HapticsType = ReturnType<typeof useHaptics>['haptics'];
 
 interface UseDragAndDropProps {
   activeCard: HistoricalEvent | null;
   onPlacement: (index: number) => PlacementResult | null;
   isAnimating: boolean;
+  haptics?: HapticsType;
 }
 
 interface DragState {
@@ -34,6 +38,7 @@ export function useDragAndDrop({
   activeCard,
   onPlacement,
   isAnimating,
+  haptics,
 }: UseDragAndDropProps): UseDragAndDropReturn {
   const [isDragging, setIsDragging] = useState(false);
   const [insertionIndex, setInsertionIndex] = useState<number | null>(null);
@@ -43,6 +48,7 @@ export function useDragAndDrop({
 
   const droppedOnTimelineRef = useRef(false);
   const draggedCardRef = useRef<HistoricalEvent | null>(null);
+  const prevInsertionIndexRef = useRef<number | null>(null);
 
   const calculateInsertionFromPositions = useCallback(
     (pointerY: number, positions: number[]): number => {
@@ -63,7 +69,11 @@ export function useDragAndDrop({
     (_event: DragStartEvent) => {
       setIsDragging(true);
       setInsertionIndex(null);
+      prevInsertionIndexRef.current = null;
       draggedCardRef.current = activeCard;
+
+      // Haptic feedback: light tap to confirm card is grabbed
+      haptics?.select();
 
       const yearElements = document.querySelectorAll('[data-timeline-year]');
       const positions = Array.from(yearElements).map((el) => {
@@ -72,7 +82,7 @@ export function useDragAndDrop({
       });
       setYearPositions(positions);
     },
-    [activeCard]
+    [activeCard, haptics]
   );
 
   const handleDragMove = useCallback(
@@ -90,9 +100,16 @@ export function useDragAndDrop({
 
       const pointerY = initialY + event.delta.y;
       const newIndex = calculateInsertionFromPositions(pointerY, yearPositions);
+
+      // Haptic feedback: subtle pulse when crossing insertion boundaries
+      if (newIndex !== prevInsertionIndexRef.current && prevInsertionIndexRef.current !== null) {
+        haptics?.light();
+      }
+      prevInsertionIndexRef.current = newIndex;
+
       setInsertionIndex(newIndex);
     },
-    [yearPositions, calculateInsertionFromPositions]
+    [yearPositions, calculateInsertionFromPositions, haptics]
   );
 
   const handleDragOver = useCallback((event: DragOverEvent) => {
@@ -116,9 +133,15 @@ export function useDragAndDrop({
 
       droppedOnTimelineRef.current = isDropOnTimeline && insertionIndex !== null && !isAnimating;
 
+      // Haptic feedback: weighted "landing" feel when dropped on timeline
+      if (droppedOnTimelineRef.current) {
+        haptics?.drop();
+      }
+
       setIsDragging(false);
       setIsOverHand(false);
       setIsOverTimeline(false);
+      prevInsertionIndexRef.current = null;
 
       if (droppedOnTimelineRef.current) {
         onPlacement(insertionIndex!);
@@ -129,13 +152,14 @@ export function useDragAndDrop({
         draggedCardRef.current = null;
       }
     },
-    [insertionIndex, onPlacement, isAnimating]
+    [insertionIndex, onPlacement, isAnimating, haptics]
   );
 
   const handleDragCancel = useCallback(() => {
     setIsDragging(false);
     setInsertionIndex(null);
     draggedCardRef.current = null;
+    prevInsertionIndexRef.current = null;
   }, []);
 
   return {

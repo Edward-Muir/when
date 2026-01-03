@@ -82,6 +82,7 @@ const Game: React.FC<GameProps> = ({
     activeCard,
     onPlacement,
     isAnimating: state.isAnimating,
+    haptics,
   });
 
   useEffect(() => {
