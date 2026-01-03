@@ -136,7 +136,11 @@ const Game: React.FC<GameProps> = ({
         <div
           className={`h-dvh min-h-screen-safe flex flex-col bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 transition-colors ${shakeClassName}`}
         >
-          <TopBar showHome={true} onHomeClick={() => setShowHomeConfirm(true)} />
+          <TopBar
+            showHome={true}
+            onHomeClick={() => setShowHomeConfirm(true)}
+            gameMode={state.gameMode}
+          />
 
           {showConfetti && (
             <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">

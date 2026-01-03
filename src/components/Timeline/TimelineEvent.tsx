@@ -89,8 +89,8 @@ const yearPopVariants = {
 
 // Wave ripple animation - delay and intensity based on distance from placed card
 // Note: flash phase lasts 400ms, so total delay + duration must fit within that window
-const RIPPLE_STAGGER_MS = 0.12; // 60ms stagger per card distance
-const RIPPLE_DURATION_MS = 0.25; // 250ms animation duration
+const RIPPLE_STAGGER_MS = 0.2; // 60ms stagger per card distance
+const RIPPLE_DURATION_MS = 0.4; // 250ms animation duration
 const BASE_SCALE = 0.95; // Scale for adjacent cards (distance 1)
 const SCALE_FALLOFF = 0.01; // Scale increases by 0.01 per card further away
 

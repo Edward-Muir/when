@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { SquarePlus, Share2, Sun, Moon, Home, X } from 'lucide-react';
+import { SquarePlus, Share2, Sun, Moon, Home, Info } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { Toast } from './Toast';
+import { GameMode } from '../types';
 
 interface TopBarProps {
   showHome?: boolean;
   onHomeClick?: () => void;
+  gameMode?: GameMode | null;
 }
 
 // Separate component to reduce complexity
@@ -164,11 +166,33 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
   }
 };
 
-const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
+const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
+  const textClass = 'text-sm text-light-text dark:text-dark-text font-body leading-relaxed';
+
+  if (gameMode === 'suddenDeath') {
+    return (
+      <div className="text-center space-y-3">
+        <p className={textClass}>Build the longest timeline!</p>
+        <p className={textClass}>Draw a new card if you place correctly.</p>
+      </div>
+    );
+  }
+
+  // daily and freeplay share the same rules
+  return (
+    <div className="text-center space-y-3">
+      <p className={textClass}>Place all your cards in the timeline to win.</p>
+      <p className={textClass}>Draw a card if you place incorrectly.</p>
+    </div>
+  );
+};
+
+const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick, gameMode }) => {
   const { isDark, toggleTheme } = useTheme();
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const [showToast, setShowToast] = useState(false);
   const [showInstallModal, setShowInstallModal] = useState(false);
+  const [showInfoModal, setShowInfoModal] = useState(false);
 
   const buttonClass = `
     p-2 rounded-xl
@@ -184,51 +208,69 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-light-bg dark:bg-dark-bg pt-safe border-b border-light-border dark:border-dark-border transition-colors">
-        <div className="flex items-center justify-end gap-2 p-2">
-          {/* Install Button - shows when install is available or to provide instructions */}
-          {canShowInstallButton && (
+        <div className="flex items-center justify-between gap-2 p-2">
+          {/* Game Title */}
+          <h1 className="text-3xl font-display font-semibold text-accent dark:text-accent-dark pl-2">
+            When?
+          </h1>
+
+          <div className="flex items-center gap-2">
+            {/* Install Button - shows when install is available or to provide instructions */}
+            {canShowInstallButton && (
+              <button
+                onClick={() => {
+                  if (canInstall) {
+                    promptInstall();
+                  } else {
+                    setShowInstallModal(true);
+                  }
+                }}
+                className={buttonClass}
+                aria-label="Add to Home Screen"
+              >
+                <SquarePlus className={iconClass} />
+              </button>
+            )}
+
+            {/* Share Button */}
             <button
-              onClick={() => {
-                if (canInstall) {
-                  promptInstall();
-                } else {
-                  setShowInstallModal(true);
-                }
+              onClick={async () => {
+                const showClipboardToast = await shareApp();
+                if (showClipboardToast) setShowToast(true);
               }}
               className={buttonClass}
-              aria-label="Add to Home Screen"
+              aria-label="Share game"
             >
-              <SquarePlus className={iconClass} />
+              <Share2 className={iconClass} />
             </button>
-          )}
 
-          {/* Share Button */}
-          <button
-            onClick={async () => {
-              const showClipboardToast = await shareApp();
-              if (showClipboardToast) setShowToast(true);
-            }}
-            className={buttonClass}
-            aria-label="Share game"
-          >
-            <Share2 className={iconClass} />
-          </button>
+            {/* Info Button - only during gameplay */}
+            {gameMode && (
+              <button
+                onClick={() => setShowInfoModal(true)}
+                className={buttonClass}
+                aria-label="Game rules"
+              >
+                <Info className={iconClass} />
+              </button>
+            )}
 
-          {/* Theme Toggle */}
-          <button
-            onClick={toggleTheme}
-            className={buttonClass}
-            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
-          </button>
-
-          {/* Home Button - only shows during gameplay */}
-          {showHome && onHomeClick && (
-            <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
-              <Home className={iconClass} />
+            {/* Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className={buttonClass}
+              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
             </button>
-          )}
+
+            {/* Home Button - only shows during gameplay */}
+            {showHome && onHomeClick && (
+              <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
+                <Home className={iconClass} />
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
@@ -243,30 +285,60 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
       {showInstallModal && (
         <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
           <div
-            className="absolute inset-0 bg-black/50 dark:bg-black/70"
+            className="absolute inset-0 bg-black/25 dark:bg-black/50"
             onClick={() => setShowInstallModal(false)}
           />
-          <div className="relative bg-light-card dark:bg-dark-card rounded-2xl shadow-xl p-6 max-w-sm w-full">
-            <button
+          <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl">
+            {/* Header with accent background */}
+            <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+              <h2 className="text-lg font-display text-white text-center">Add to Home Screen</h2>
+            </div>
+
+            {/* Instructions content */}
+            <div className="px-5 py-5">
+              <InstallInstructions scenario={installScenario} />
+            </div>
+
+            {/* Footer hint */}
+            <div
+              className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50 cursor-pointer"
               onClick={() => setShowInstallModal(false)}
-              className="absolute top-4 right-4 p-1 rounded-full hover:bg-light-border dark:hover:bg-dark-border transition-colors"
-              aria-label="Close"
             >
-              <X className="w-5 h-5 text-light-muted dark:text-dark-muted" />
-            </button>
+              <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                Tap anywhere to close
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
 
-            <h2 className="text-lg font-display text-light-text dark:text-dark-text mb-4">
-              Add to Home Screen
-            </h2>
+      {/* Game Rules Modal */}
+      {showInfoModal && gameMode && (
+        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+          <div
+            className="absolute inset-0 bg-black/25 dark:bg-black/50"
+            onClick={() => setShowInfoModal(false)}
+          />
+          <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl">
+            {/* Header with accent background */}
+            <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+              <h2 className="text-lg font-display text-white text-center">How to Play</h2>
+            </div>
 
-            <InstallInstructions scenario={installScenario} />
+            {/* Rules content */}
+            <div className="px-5 py-5">
+              <GameRules gameMode={gameMode} />
+            </div>
 
-            <button
-              onClick={() => setShowInstallModal(false)}
-              className="w-full mt-6 py-2 px-4 bg-accent dark:bg-accent-dark text-white rounded-xl font-medium transition-colors hover:bg-accent/90 dark:hover:bg-accent-dark/90 active:scale-95 font-body"
+            {/* Footer hint */}
+            <div
+              className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50 cursor-pointer"
+              onClick={() => setShowInfoModal(false)}
             >
-              Got it
-            </button>
+              <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                Tap anywhere to close
+              </p>
+            </div>
           </div>
         </div>
       )}
