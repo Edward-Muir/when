@@ -5,23 +5,56 @@ interface BeforeInstallPromptEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-export type InstallScenario = 'ios-safari' | 'ios-other' | 'android' | 'desktop';
+export type InstallScenario =
+  | 'ios-safari'
+  | 'ios-chrome'
+  | 'ios-firefox'
+  | 'ios-other'
+  | 'android-chrome'
+  | 'android-firefox'
+  | 'android-samsung'
+  | 'android-other'
+  | 'desktop-chrome'
+  | 'desktop-firefox'
+  | 'desktop-safari'
+  | 'desktop-edge'
+  | 'desktop-other';
 
 // Detect the install scenario based on device and browser
 function getInstallScenario(): InstallScenario {
   const ua = navigator.userAgent;
   const isIOS = /iPad|iPhone|iPod/.test(ua);
   const isAndroid = /Android/.test(ua);
-  // Safari on iOS: has Safari in UA but not Chrome/CriOS/FxiOS
-  const isSafari = /Safari/.test(ua) && !/Chrome|CriOS|FxiOS/.test(ua);
+
+  // Browser detection
+  const isChrome = /Chrome/.test(ua) && !/Edg/.test(ua);
+  const isCriOS = /CriOS/.test(ua); // Chrome on iOS
+  const isFirefox = /Firefox/.test(ua);
+  const isFxiOS = /FxiOS/.test(ua); // Firefox on iOS
+  const isSafari = /Safari/.test(ua) && !/Chrome|CriOS|FxiOS|Edg/.test(ua);
+  const isEdge = /Edg/.test(ua);
+  const isSamsungBrowser = /SamsungBrowser/.test(ua);
 
   if (isIOS) {
-    return isSafari ? 'ios-safari' : 'ios-other';
+    if (isSafari) return 'ios-safari';
+    if (isCriOS) return 'ios-chrome';
+    if (isFxiOS) return 'ios-firefox';
+    return 'ios-other';
   }
+
   if (isAndroid) {
-    return 'android';
+    if (isSamsungBrowser) return 'android-samsung';
+    if (isFirefox) return 'android-firefox';
+    if (isChrome) return 'android-chrome';
+    return 'android-other';
   }
-  return 'desktop';
+
+  // Desktop
+  if (isSafari) return 'desktop-safari';
+  if (isFirefox) return 'desktop-firefox';
+  if (isEdge) return 'desktop-edge';
+  if (isChrome) return 'desktop-chrome';
+  return 'desktop-other';
 }
 
 export function usePWAInstall() {
@@ -30,8 +63,9 @@ export function usePWAInstall() {
 
   useEffect(() => {
     // Check if already installed (standalone mode)
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches
-      || (window.navigator as Navigator & { standalone?: boolean }).standalone === true;
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as Navigator & { standalone?: boolean }).standalone === true;
 
     if (isStandalone) {
       setIsInstalled(true);

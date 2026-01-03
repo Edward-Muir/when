@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Download, Share2, Sun, Moon, Home, X } from 'lucide-react';
+import { SquarePlus, Share2, Sun, Moon, Home, X } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
-import { usePWAInstall } from '../hooks/usePWAInstall';
+import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { Toast } from './Toast';
 
@@ -9,6 +9,160 @@ interface TopBarProps {
   showHome?: boolean;
   onHomeClick?: () => void;
 }
+
+// Separate component to reduce complexity
+const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario }) => {
+  const baseClass = 'space-y-3 text-sm text-light-muted dark:text-dark-muted font-body';
+  const noteClass = 'text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70';
+
+  switch (scenario) {
+    case 'ios-safari':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap the <strong>Share</strong> button (□↑) in Safari
+            </li>
+            <li>
+              Tap <strong>"Add to Home Screen"</strong>
+            </li>
+            <li>
+              Tap <strong>"Add"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'ios-chrome':
+    case 'ios-firefox':
+    case 'ios-other':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap the <strong>Share</strong> button in your browser
+            </li>
+            <li>
+              Tap <strong>"Add to Home Screen"</strong>
+            </li>
+            <li>
+              Tap <strong>"Add"</strong>
+            </li>
+          </ol>
+          <p className={noteClass}>Requires iOS 16.4 or later.</p>
+        </div>
+      );
+    case 'android-chrome':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap the <strong>menu button</strong> (⋮)
+            </li>
+            <li>
+              Tap <strong>"Add to Home Screen"</strong> or <strong>"Install app"</strong>
+            </li>
+            <li>
+              Tap <strong>"Install"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'android-firefox':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap the <strong>menu button</strong> (⋮)
+            </li>
+            <li>
+              Tap <strong>"Install"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'android-samsung':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap the <strong>menu button</strong> (☰)
+            </li>
+            <li>
+              Tap <strong>"Add page to"</strong>
+            </li>
+            <li>
+              Tap <strong>"Home screen"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'android-other':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Tap your browser's <strong>menu button</strong>
+            </li>
+            <li>
+              Look for <strong>"Add to Home Screen"</strong> or <strong>"Install"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'desktop-chrome':
+    case 'desktop-edge':
+      return (
+        <div className={baseClass}>
+          <p>
+            Look for the <strong>install icon</strong> (⊕) in the address bar, or:
+          </p>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Open the browser <strong>menu</strong>
+            </li>
+            <li>
+              Click <strong>"Install app"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'desktop-safari':
+      return (
+        <div className={baseClass}>
+          <ol className="list-decimal list-inside space-y-2">
+            <li>
+              Click <strong>File</strong> in the menu bar
+            </li>
+            <li>
+              Click <strong>"Add to Dock"</strong>
+            </li>
+          </ol>
+        </div>
+      );
+    case 'desktop-firefox':
+      return (
+        <div className={baseClass}>
+          <p>Firefox doesn't support installing web apps.</p>
+          <p className="text-xs mt-2 text-light-muted/70 dark:text-dark-muted/70">
+            Try Chrome, Edge, or Safari, or bookmark this page.
+          </p>
+        </div>
+      );
+    case 'desktop-other':
+    default:
+      return (
+        <div className={baseClass}>
+          <p>
+            Check your browser's menu for an <strong>"Install"</strong> or{' '}
+            <strong>"Add to Home Screen"</strong> option.
+          </p>
+          <p className="text-xs mt-2 text-light-muted/70 dark:text-dark-muted/70">
+            Chrome and Edge have the best support for web apps.
+          </p>
+        </div>
+      );
+  }
+};
 
 const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
   const { isDark, toggleTheme } = useTheme();
@@ -42,9 +196,9 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
                 }
               }}
               className={buttonClass}
-              aria-label="Install app"
+              aria-label="Add to Home Screen"
             >
-              <Download className={iconClass} />
+              <SquarePlus className={iconClass} />
             </button>
           )}
 
@@ -66,20 +220,12 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
             className={buttonClass}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
           >
-            {isDark ? (
-              <Sun className={iconClass} />
-            ) : (
-              <Moon className={iconClass} />
-            )}
+            {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
           </button>
 
           {/* Home Button - only shows during gameplay */}
           {showHome && onHomeClick && (
-            <button
-              onClick={onHomeClick}
-              className={buttonClass}
-              aria-label="Go home"
-            >
+            <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
               <Home className={iconClass} />
             </button>
           )}
@@ -110,65 +256,10 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick }) => {
             </button>
 
             <h2 className="text-lg font-display text-light-text dark:text-dark-text mb-4">
-              Install When?
+              Add to Home Screen
             </h2>
 
-            {installScenario === 'ios-safari' && (
-              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
-                <p>To install on your iPhone or iPad:</p>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li>Tap the <strong>Share</strong> button in Safari's toolbar</li>
-                  <li>Scroll down and tap <strong>"Add to Home Screen"</strong></li>
-                  <li>Tap <strong>"Add"</strong> to confirm</li>
-                </ol>
-                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
-                  The app will appear on your home screen and work offline.
-                </p>
-              </div>
-            )}
-
-            {installScenario === 'ios-other' && (
-              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
-                <p>To install on your iPhone or iPad:</p>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li>Open this page in <strong>Safari</strong> (not Chrome or other browsers)</li>
-                  <li>Tap the <strong>Share</strong> button in Safari's toolbar</li>
-                  <li>Scroll down and tap <strong>"Add to Home Screen"</strong></li>
-                  <li>Tap <strong>"Add"</strong> to confirm</li>
-                </ol>
-                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
-                  iOS only supports installing apps from Safari.
-                </p>
-              </div>
-            )}
-
-            {installScenario === 'android' && (
-              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
-                <p>To install on your Android device:</p>
-                <ol className="list-decimal list-inside space-y-2">
-                  <li>Tap the <strong>menu button</strong> (⋮) in your browser</li>
-                  <li>Tap <strong>"Install app"</strong> or <strong>"Add to Home Screen"</strong></li>
-                  <li>Tap <strong>"Install"</strong> to confirm</li>
-                </ol>
-                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
-                  The app will appear on your home screen and work offline.
-                </p>
-              </div>
-            )}
-
-            {installScenario === 'desktop' && (
-              <div className="space-y-3 text-sm text-light-muted dark:text-dark-muted font-body">
-                <p>To install this app:</p>
-                <ul className="list-disc list-inside space-y-2">
-                  <li><strong>Chrome/Edge:</strong> Look for the install icon in the address bar, or use the browser menu → "Install app"</li>
-                  <li><strong>Firefox:</strong> PWA install not supported - bookmark the page instead</li>
-                  <li><strong>Safari (Mac):</strong> File → "Add to Dock"</li>
-                </ul>
-                <p className="text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70">
-                  Installing adds the app to your device for quick access and offline play.
-                </p>
-              </div>
-            )}
+            <InstallInstructions scenario={installScenario} />
 
             <button
               onClick={() => setShowInstallModal(false)}
