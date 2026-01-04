@@ -178,6 +178,31 @@ describe('useWhenGame - Sudden Death Mode', () => {
       expect(result.current.state.players[0].isEliminated).toBe(true);
       expect(result.current.state.winners).toHaveLength(0);
     });
+
+    it('single player loses after 3 incorrect placements with hand size 3', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
+
+      expect(result.current.state.players[0].hand.length).toBe(3);
+      expect(result.current.state.phase).toBe('playing');
+
+      // First wrong placement - hand shrinks to 2
+      placeCardAndWait(result, 0);
+      expect(result.current.state.phase).toBe('playing');
+      expect(result.current.state.players[0].hand.length).toBe(2);
+
+      // Second wrong placement - hand shrinks to 1
+      placeCardAndWait(result, 0);
+      expect(result.current.state.phase).toBe('playing');
+      expect(result.current.state.players[0].hand.length).toBe(1);
+
+      // Third wrong placement - hand empties, game over
+      placeCardAndWait(result, 0);
+      expect(result.current.state.phase).toBe('gameOver');
+      expect(result.current.state.players[0].hand.length).toBe(0);
+      expect(result.current.state.players[0].isEliminated).toBe(true);
+      expect(result.current.state.winners).toHaveLength(0);
+    });
   });
 
   describe('Two Player Scenarios', () => {

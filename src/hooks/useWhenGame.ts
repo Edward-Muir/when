@@ -321,28 +321,46 @@ export function useWhenGame(): UseWhenGameReturn {
           setState((prev) => {
             const update = processIncorrectPlacement(prev, activeCard);
 
-            const pendingUpdate = () => {
-              setState((s) => ({
-                ...s,
-                currentPlayerIndex: update.currentPlayerIndex,
-                turnNumber: update.turnNumber,
-                roundNumber: update.roundNumber,
-                activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-                phase: update.isGameOver ? 'gameOver' : 'playing',
+            // For multiplayer, defer turn advancement to popup dismiss
+            if (!isSinglePlayer) {
+              const pendingUpdate = () => {
+                setState((s) => ({
+                  ...s,
+                  currentPlayerIndex: update.currentPlayerIndex,
+                  turnNumber: update.turnNumber,
+                  roundNumber: update.roundNumber,
+                  activePlayersAtRoundStart: update.activePlayersAtRoundStart,
+                  phase: update.isGameOver ? 'gameOver' : 'playing',
+                }));
+              };
+              setPendingPopupState((prevPopup) => ({
+                ...prevPopup,
+                pendingStateUpdate: pendingUpdate,
               }));
-            };
-            setPendingPopupState((prevPopup) => ({
-              ...prevPopup,
-              pendingStateUpdate: pendingUpdate,
-            }));
 
+              return {
+                ...prev,
+                players: update.players,
+                deck: update.deck,
+                winners: update.winners,
+                isAnimating: false,
+                animationPhase: null,
+              };
+            }
+
+            // For single player, apply all updates immediately
             return {
               ...prev,
               players: update.players,
               deck: update.deck,
+              currentPlayerIndex: update.currentPlayerIndex,
+              turnNumber: update.turnNumber,
+              roundNumber: update.roundNumber,
               winners: update.winners,
+              phase: update.isGameOver ? 'gameOver' : 'playing',
               isAnimating: false,
               animationPhase: null,
+              activePlayersAtRoundStart: update.activePlayersAtRoundStart,
             };
           });
         }, 800);
