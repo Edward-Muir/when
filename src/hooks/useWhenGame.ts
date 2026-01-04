@@ -24,25 +24,17 @@ import {
   shuffleArray,
   shuffleArraySeeded,
   sortByYear,
-  isPlacementCorrect,
-  findCorrectPosition,
-  insertIntoTimeline,
   initializePlayers,
-  removeFromHand,
-  addToHand,
-  drawCard,
-  getNextActivePlayerIndex,
-  shouldGameEnd,
-  processEndOfRound,
 } from '../utils/gameLogic';
-import { GameMode } from '../types';
-
-/**
- * Check if a game mode uses sudden death mechanics
- * (no replacement card on incorrect, draw on correct)
- */
-const usesSuddenDeathMechanics = (mode: GameMode | null): boolean =>
-  mode === 'suddenDeath' || mode === 'daily';
+import {
+  validatePlacement,
+  calculatePlacementResult,
+  processCorrectPlacement,
+  processIncorrectPlacement,
+  buildPopupData,
+  insertIntoTimeline,
+  getNextActivePlayerIndex,
+} from '../utils/placementLogic';
 
 interface UseWhenGameReturn {
   state: WhenGameState;
@@ -221,48 +213,30 @@ export function useWhenGame(): UseWhenGameReturn {
 
   const placeCard = useCallback(
     (insertionIndex: number): PlacementResult | null => {
+      // 1. Validate placement attempt
       const currentPlayer = state.players[state.currentPlayerIndex];
-      const activeCard = currentPlayer?.hand[0] || null;
+      const validation = validatePlacement(state, currentPlayer);
+      if (!validation) return null;
 
-      if (state.phase !== 'playing' || !activeCard || state.isAnimating) {
-        return null;
+      const { activeCard } = validation;
+      const isSinglePlayer = state.players.length === 1;
+
+      // 2. Calculate placement result
+      const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
+
+      // 3. Show popup immediately for multiplayer
+      if (!isSinglePlayer) {
+        const nextPlayerIdx = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
+        const nextPlayer = state.players[nextPlayerIdx];
+        setPendingPopupState({
+          popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
+          pendingStateUpdate: null,
+        });
       }
 
-      // Skip eliminated players
-      if (currentPlayer?.isEliminated) {
-        return null;
-      }
-
-      const event = activeCard;
-      const isCorrect = isPlacementCorrect(state.timeline, event, insertionIndex);
-      const correctPosition = findCorrectPosition(state.timeline, event);
-
-      const result: PlacementResult = {
-        success: isCorrect,
-        event,
-        correctPosition,
-        attemptedPosition: insertionIndex,
-      };
-
-      if (isCorrect) {
-        // Correct placement: insert into timeline, show green flash
-        const newTimeline = insertIntoTimeline(state.timeline, event, correctPosition);
-        const isSinglePlayer = state.players.length === 1;
-
-        // For multiplayer, show popup IMMEDIATELY (T+0ms) - synced with confetti
-        if (!isSinglePlayer) {
-          const nextPlayerIndex = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
-          const nextPlayer = state.players[nextPlayerIndex];
-
-          setPendingPopupState({
-            popup: {
-              type: 'correct',
-              event,
-              nextPlayer,
-            },
-            pendingStateUpdate: null, // Will be set in T+600ms timeout
-          });
-        }
+      if (result.success) {
+        // 4a. Correct placement: insert into timeline and start animation
+        const newTimeline = insertIntoTimeline(state.timeline, activeCard, result.correctPosition);
 
         setState((prev) => ({
           ...prev,
@@ -273,98 +247,22 @@ export function useWhenGame(): UseWhenGameReturn {
           lastPlacementResult: result,
         }));
 
-        // After flash animation, finalize
+        // 5a. After flash animation, finalize correct placement
         setTimeout(() => {
-          // eslint-disable-next-line complexity
           setState((prev) => {
-            const newPlayers = [...prev.players];
-            const player = { ...newPlayers[prev.currentPlayerIndex] };
-            const isSuddenDeath = usesSuddenDeathMechanics(prev.gameMode);
-            const isSinglePlayer = newPlayers.length === 1;
-            let newDeck = prev.deck;
-
-            // Track per-player placement
-            player.placementHistory = [...player.placementHistory, true];
-
-            // Remove card from hand
-            player.hand = removeFromHand(player.hand, event.name);
-
-            if (isSuddenDeath) {
-              // In sudden death, draw a new card and add to hand
-              const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
-              if (newCard) {
-                player.hand = addToHand(player.hand, newCard);
-              }
-              newDeck = updatedDeck;
-            } else {
-              // Check if player won (hand empty) - for non-sudden-death modes
-              if (player.hand.length === 0) {
-                player.hasWon = true;
-                player.winTurn = prev.turnNumber;
-              }
-            }
-
-            newPlayers[prev.currentPlayerIndex] = player;
-
-            // Advance to next player
-            const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
-            const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
-            const newRoundNumber = isRoundEnding ? prev.roundNumber + 1 : prev.roundNumber;
-
-            let isGameOver = false;
-            let finalWinners = prev.winners;
-            let finalPlayers = newPlayers;
-
-            let newActivePlayersAtRoundStart = prev.activePlayersAtRoundStart;
-
-            if (isSuddenDeath && isRoundEnding) {
-              // Use simplified end-of-round logic for sudden death
-              const result = processEndOfRound(
-                newPlayers,
-                'suddenDeath',
-                prev.activePlayersAtRoundStart
-              );
-              finalPlayers = result.updatedPlayers;
-              isGameOver = result.gameOver;
-              if (result.winners.length > 0) {
-                finalWinners = result.winners;
-              }
-              // Update active players count for next round
-              if (!isGameOver) {
-                newActivePlayersAtRoundStart = finalPlayers.filter((p) => !p.isEliminated).length;
-              }
-            } else if (!isSuddenDeath) {
-              // Non-sudden-death mode: use existing logic
-              // Update winners list if player won by emptying hand
-              if (player.hasWon && !prev.winners.some((w) => w.id === player.id)) {
-                finalWinners = [...prev.winners, player];
-              }
-              isGameOver = shouldGameEnd(
-                newPlayers,
-                newRoundNumber,
-                nextPlayerIndex,
-                prev.gameMode!
-              );
-            }
-
-            // For multiplayer correct placements, popup was already shown at T+0ms
-            // Now set the pending state update
-            const shouldShowPopup = !isSinglePlayer && !isGameOver;
+            const update = processCorrectPlacement(prev, activeCard);
+            const shouldShowPopup = !isSinglePlayer && !update.isGameOver;
 
             if (shouldShowPopup) {
-              // Store pending state update to apply when popup is dismissed
               const pendingUpdate = () => {
                 setState((s) => ({
                   ...s,
-                  currentPlayerIndex: nextPlayerIndex,
-                  turnNumber: s.turnNumber + 1,
-                  roundNumber: newRoundNumber,
-                  activePlayersAtRoundStart: newActivePlayersAtRoundStart,
+                  currentPlayerIndex: update.currentPlayerIndex,
+                  turnNumber: update.turnNumber,
+                  roundNumber: update.roundNumber,
+                  activePlayersAtRoundStart: update.activePlayersAtRoundStart,
                 }));
               };
-
-              // Update the pending popup state with the actual pending update
-              // (popup is already visible, just adding the callback)
               setPendingPopupState((prevPopup) => ({
                 ...prevPopup,
                 pendingStateUpdate: pendingUpdate,
@@ -372,51 +270,33 @@ export function useWhenGame(): UseWhenGameReturn {
 
               return {
                 ...prev,
-                players: finalPlayers,
-                deck: newDeck,
-                winners: finalWinners,
-                phase: isGameOver ? 'gameOver' : 'playing',
+                players: update.players,
+                deck: update.deck,
+                winners: update.winners,
+                phase: update.isGameOver ? 'gameOver' : 'playing',
                 isAnimating: false,
                 animationPhase: null,
-                // Don't advance turn yet - wait for popup dismiss
               };
             }
 
             return {
               ...prev,
-              players: finalPlayers,
-              deck: newDeck,
-              currentPlayerIndex: isGameOver ? prev.currentPlayerIndex : nextPlayerIndex,
-              turnNumber: prev.turnNumber + 1,
-              roundNumber: newRoundNumber,
-              winners: finalWinners,
-              phase: isGameOver ? 'gameOver' : 'playing',
+              players: update.players,
+              deck: update.deck,
+              currentPlayerIndex: update.currentPlayerIndex,
+              turnNumber: update.turnNumber,
+              roundNumber: update.roundNumber,
+              winners: update.winners,
+              phase: update.isGameOver ? 'gameOver' : 'playing',
               isAnimating: false,
               animationPhase: null,
-              activePlayersAtRoundStart: newActivePlayersAtRoundStart,
+              activePlayersAtRoundStart: update.activePlayersAtRoundStart,
             };
           });
         }, 600);
       } else {
-        // Wrong placement: show card at attempted position briefly, then remove
-        const tempTimeline = insertIntoTimeline(state.timeline, event, insertionIndex);
-        const isSinglePlayer = state.players.length === 1;
-
-        // Show popup IMMEDIATELY (T+0ms) - synced with shake animation
-        // Calculate next player info now for the popup
-        const nextPlayerIndex = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
-        const nextPlayer = !isSinglePlayer ? state.players[nextPlayerIndex] : undefined;
-
-        // Set popup state immediately - the pending update will be set in the T+800ms timeout
-        // when we know the final game state
-        setPendingPopupState({
-          popup: {
-            type: 'incorrect',
-            event,
-            nextPlayer,
-          },
-          pendingStateUpdate: null, // Will be set in T+800ms timeout
-        });
+        // 4b. Incorrect placement: show card at attempted position briefly
+        const tempTimeline = insertIntoTimeline(state.timeline, activeCard, insertionIndex);
 
         setState((prev) => ({
           ...prev,
@@ -427,110 +307,30 @@ export function useWhenGame(): UseWhenGameReturn {
           lastPlacementResult: result,
         }));
 
-        // After red flash, remove card from timeline (card is discarded)
+        // 5b. After red flash, remove card from timeline
         setTimeout(() => {
-          setState((prev) => {
-            const timelineWithoutEvent = prev.timeline.filter((e) => e.name !== event.name);
-            return {
-              ...prev,
-              timeline: timelineWithoutEvent,
-              animationPhase: 'moving',
-            };
-          });
+          setState((prev) => ({
+            ...prev,
+            timeline: prev.timeline.filter((e) => e.name !== activeCard.name),
+            animationPhase: 'moving',
+          }));
         }, 400);
 
-        // After animation, finalize
+        // 6b. After animation, finalize incorrect placement
         setTimeout(() => {
           setState((prev) => {
-            const newPlayers = [...prev.players];
-            const player = { ...newPlayers[prev.currentPlayerIndex] };
-            const isSuddenDeath = usesSuddenDeathMechanics(prev.gameMode);
-            const isSinglePlayer = newPlayers.length === 1;
-            let newDeck = prev.deck;
+            const update = processIncorrectPlacement(prev, activeCard);
 
-            // Track per-player placement
-            player.placementHistory = [...player.placementHistory, false];
-
-            // Remove card from hand (discarded)
-            player.hand = removeFromHand(player.hand, event.name);
-
-            if (!isSuddenDeath) {
-              // Non-sudden death: draw replacement card
-              const { card: newCard, newDeck: updatedDeck } = drawCard(prev.deck);
-              if (newCard) {
-                player.hand = addToHand(player.hand, newCard);
-              }
-              newDeck = updatedDeck;
-            }
-            // Sudden death: no replacement card drawn (hand shrinks)
-
-            newPlayers[prev.currentPlayerIndex] = player;
-
-            // Determine if round is ending
-            const nextPlayerIndex = getNextActivePlayerIndex(prev.currentPlayerIndex, newPlayers);
-            const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
-            const newRoundNumber = isRoundEnding ? prev.roundNumber + 1 : prev.roundNumber;
-
-            let isGameOver = false;
-            let finalWinners = prev.winners;
-            let finalPlayers = newPlayers;
-            let newActivePlayersAtRoundStart = prev.activePlayersAtRoundStart;
-
-            if (isSuddenDeath && isRoundEnding) {
-              // Use simplified end-of-round logic for sudden death
-              const result = processEndOfRound(
-                newPlayers,
-                'suddenDeath',
-                prev.activePlayersAtRoundStart
-              );
-              finalPlayers = result.updatedPlayers;
-              isGameOver = result.gameOver;
-              if (result.winners.length > 0) {
-                finalWinners = result.winners;
-              }
-
-              // If reprieve granted, draw 1 new card for each active player
-              if (result.grantReprieve) {
-                finalPlayers.forEach((p) => {
-                  if (!p.isEliminated) {
-                    const { card: newCard, newDeck: updatedDeck } = drawCard(newDeck);
-                    if (newCard) {
-                      p.hand = addToHand(p.hand, newCard);
-                    }
-                    newDeck = updatedDeck;
-                  }
-                });
-              }
-
-              // Update active players count for next round
-              if (!isGameOver) {
-                newActivePlayersAtRoundStart = finalPlayers.filter((p) => !p.isEliminated).length;
-              }
-            } else if (!isSuddenDeath) {
-              // Non-sudden-death mode: use existing logic
-              isGameOver = shouldGameEnd(
-                newPlayers,
-                newRoundNumber,
-                nextPlayerIndex,
-                prev.gameMode!
-              );
-            }
-
-            // Popup was already shown at T+0ms
-            // Now set the pending state update that will be called when popup is dismissed
             const pendingUpdate = () => {
               setState((s) => ({
                 ...s,
-                currentPlayerIndex: isGameOver ? s.currentPlayerIndex : nextPlayerIndex,
-                turnNumber: s.turnNumber + 1,
-                roundNumber: newRoundNumber,
-                activePlayersAtRoundStart: newActivePlayersAtRoundStart,
-                phase: isGameOver ? 'gameOver' : 'playing',
+                currentPlayerIndex: update.currentPlayerIndex,
+                turnNumber: update.turnNumber,
+                roundNumber: update.roundNumber,
+                activePlayersAtRoundStart: update.activePlayersAtRoundStart,
+                phase: update.isGameOver ? 'gameOver' : 'playing',
               }));
             };
-
-            // Update the pending popup state with the actual pending update
-            // (popup is already visible, just adding the callback)
             setPendingPopupState((prevPopup) => ({
               ...prevPopup,
               pendingStateUpdate: pendingUpdate,
@@ -538,12 +338,11 @@ export function useWhenGame(): UseWhenGameReturn {
 
             return {
               ...prev,
-              players: finalPlayers,
-              deck: newDeck,
-              winners: finalWinners,
+              players: update.players,
+              deck: update.deck,
+              winners: update.winners,
               isAnimating: false,
               animationPhase: null,
-              // Don't advance turn yet - wait for popup dismiss
             };
           });
         }, 800);
