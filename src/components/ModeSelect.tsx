@@ -286,15 +286,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               /* Completed daily state */
               <div className="space-y-2">
                 {/* Results display */}
-                <div className="bg-light-bg/50 dark:bg-dark-bg/50 rounded-lg p-2 text-center">
-                  <div className="text-2xl mb-1 font-mono tracking-wider">
-                    {todayResult.emojiGrid}
-                  </div>
-                  <div className="text-sm font-medium text-light-text dark:text-dark-text font-body">
-                    {todayResult.won
-                      ? '🏆 Won!'
-                      : `${todayResult.correctCount}/${todayResult.totalAttempts} correct`}
-                  </div>
+                <div className="text-sm font-medium text-light-text dark:text-dark-text font-body text-center">
+                  {todayResult.correctCount} event{todayResult.correctCount !== 1 ? 's' : ''} placed
+                  correctly.
                 </div>
 
                 {/* Share button */}
@@ -331,13 +325,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
             Copied to clipboard!
           </div>
         )}
-
-        {/* How to play */}
-        <div className="mt-4 pt-3 border-t border-light-border dark:border-dark-border">
-          <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">
-            Place historical events in the correct order on the timeline
-          </p>
-        </div>
 
         {/* Version display */}
         <p className="text-center mt-2 text-[10px] text-light-muted/60 dark:text-dark-muted/60 font-body">

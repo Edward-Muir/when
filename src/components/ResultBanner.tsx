@@ -23,7 +23,7 @@ function SuddenDeathLossBanner({ placementHistory }: { placementHistory: boolean
         <span className="font-semibold text-lg leading-none text-error">Game Over</span>
       </div>
       <div className="text-ui-caption text-light-muted dark:text-dark-muted mt-2">
-        Streak: {correctCount} correct
+        {correctCount} {correctCount === 1 ? 'event' : 'events'} placed
       </div>
     </div>
   );

@@ -37,7 +37,7 @@ export function generateShareText(state: WhenGameState): string {
         const winnerNames = winners.map((w) => w.name).join(', ');
         text = `When ☠️ ${playerCount}P Sudden Death\n${winnerNames ? `🏆 Winner: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber}`;
       } else {
-        text = `When ☠️ Sudden Death\n🔥 Streak: ${correctCount}\n${emojiGrid}`;
+        text = `When ☠️ Sudden Death\n📏 ${correctCount} events placed\n${emojiGrid}`;
       }
       break;
     }

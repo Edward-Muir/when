@@ -114,6 +114,15 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
     return { correct, total };
   };
 
+  // Get encouraging message based on events placed
+  const getEncouragingMessage = (eventsPlaced: number): string | null => {
+    if (eventsPlaced >= 12) return 'Legendary!';
+    if (eventsPlaced >= 8) return 'History buff!';
+    if (eventsPlaced >= 5) return 'Impressive!';
+    if (eventsPlaced >= 3) return 'Good start!';
+    return null;
+  };
+
   return (
     <div className="p-6">
       {/* Header with trophy */}
@@ -143,7 +152,10 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
                   <span className="text-2xl font-bold font-mono">
                     {getPlayerStats(players[0]).correct}
                   </span>
-                  <span className="text-light-muted dark:text-dark-muted"> streak</span>
+                  <span className="text-light-muted dark:text-dark-muted">
+                    {' '}
+                    {getPlayerStats(players[0]).correct === 1 ? 'event' : 'events'} placed
+                  </span>
                 </>
               ) : (
                 <>
@@ -157,6 +169,11 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
                 </>
               )}
             </p>
+            {isSuddenDeath && getEncouragingMessage(getPlayerStats(players[0]).correct) && (
+              <p className="text-accent dark:text-accent-dark font-medium mt-2">
+                {getEncouragingMessage(getPlayerStats(players[0]).correct)}
+              </p>
+            )}
           </div>
         ) : (
           // Multiplayer stats - per player
