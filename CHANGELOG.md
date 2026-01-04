@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.3](https://github.com/Edward-Muir/when/compare/v0.1.2...v0.1.3) (2026-01-04)
+
+### Features
+
+- Clean up menu screen ([070a405](https://github.com/Edward-Muir/when/commit/070a40582461d1380c5ae59c42b0c6288f552983))
+
+### Bug Fixes
+
+- Fix end of game in single player ([852b3f2](https://github.com/Edward-Muir/when/commit/852b3f2114302e423283c147fba837609e685e39))
+
 ## [0.1.2](https://github.com/Edward-Muir/when/compare/v0.1.1...v0.1.2) (2026-01-04)
 
 ### Features
