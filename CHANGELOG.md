@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.2](https://github.com/Edward-Muir/when/compare/v0.1.1...v0.1.2) (2026-01-04)
+
+### Features
+
+- Daily becomes inifinite mode ([95a76a1](https://github.com/Edward-Muir/when/commit/95a76a11ce93f75be2f6a5366a096019fcac8440))
+
 ## 0.1.1 (2026-01-03)
 
 ### Features
