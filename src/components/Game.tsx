@@ -16,12 +16,13 @@ import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
+import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
-import TopBar from './TopBar';
+import TopBar, { GameRules } from './TopBar';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 
@@ -53,6 +54,7 @@ const Game: React.FC<GameProps> = ({
   const [showToast, setShowToast] = useState(false);
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
+  const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -115,6 +117,13 @@ const Game: React.FC<GameProps> = ({
       setGameOverPopupShown(false);
     }
   }, [state.phase, gameOverPopupShown, showGameOverPopup]);
+
+  // Show first-time rules popup when starting a new game mode for the first time
+  useEffect(() => {
+    if (state.phase === 'playing' && state.gameMode && !hasPlayedMode(state.gameMode)) {
+      setShowFirstTimeRules(true);
+    }
+  }, [state.phase, state.gameMode]);
 
   const handleActiveCardTap = () => {
     if (activeCard) {
@@ -272,6 +281,37 @@ const Game: React.FC<GameProps> = ({
                   >
                     Leave
                   </button>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* First-time rules popup */}
+          {showFirstTimeRules && state.gameMode && (
+            <div
+              className="fixed inset-0 z-[60] flex items-center justify-center p-4"
+              onClick={() => {
+                markModePlayed(state.gameMode!);
+                setShowFirstTimeRules(false);
+              }}
+            >
+              <div className="absolute inset-0 bg-black/25 dark:bg-black/50" />
+              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl">
+                {/* Header with accent background */}
+                <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+                  <h2 className="text-lg font-display text-white text-center">How to Play</h2>
+                </div>
+
+                {/* Rules content */}
+                <div className="px-5 py-5">
+                  <GameRules gameMode={state.gameMode} />
+                </div>
+
+                {/* Footer hint */}
+                <div className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50">
+                  <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                    Tap anywhere to close
+                  </p>
                 </div>
               </div>
             </div>

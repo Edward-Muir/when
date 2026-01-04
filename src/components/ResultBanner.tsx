@@ -121,7 +121,7 @@ const ResultBanner: React.FC<ResultBannerProps> = ({
 }) => {
   if (phase === 'gameOver') {
     const isSinglePlayer = players.length === 1;
-    const isSuddenDeath = gameMode === 'suddenDeath';
+    const isSuddenDeath = gameMode === 'suddenDeath' || gameMode === 'daily';
     const hasWinners = winners.length > 0;
 
     if (isSuddenDeath && isSinglePlayer && !hasWinners) {

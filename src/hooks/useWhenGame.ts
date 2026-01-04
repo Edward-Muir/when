@@ -12,7 +12,7 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
-import { saveDailyResult, hasPlayedToday } from '../utils/dailyStorage';
+import { saveDailyResult, hasPlayedToday } from '../utils/playerStorage';
 import { generateEmojiGrid } from '../utils/share';
 import {
   getDailyTheme,
@@ -35,6 +35,14 @@ import {
   shouldGameEnd,
   processEndOfRound,
 } from '../utils/gameLogic';
+import { GameMode } from '../types';
+
+/**
+ * Check if a game mode uses sudden death mechanics
+ * (no replacement card on incorrect, draw on correct)
+ */
+const usesSuddenDeathMechanics = (mode: GameMode | null): boolean =>
+  mode === 'suddenDeath' || mode === 'daily';
 
 interface UseWhenGameReturn {
   state: WhenGameState;
@@ -111,7 +119,7 @@ export function useWhenGame(): UseWhenGameReturn {
           dailySeed,
           playerCount: 1,
           playerNames: ['Player 1'],
-          cardsPerHand: 5,
+          cardsPerHand: 3, // Daily uses sudden death mechanics with 3 starting cards
         });
       }
     });
@@ -271,7 +279,7 @@ export function useWhenGame(): UseWhenGameReturn {
           setState((prev) => {
             const newPlayers = [...prev.players];
             const player = { ...newPlayers[prev.currentPlayerIndex] };
-            const isSuddenDeath = prev.gameMode === 'suddenDeath';
+            const isSuddenDeath = usesSuddenDeathMechanics(prev.gameMode);
             const isSinglePlayer = newPlayers.length === 1;
             let newDeck = prev.deck;
 
@@ -436,7 +444,7 @@ export function useWhenGame(): UseWhenGameReturn {
           setState((prev) => {
             const newPlayers = [...prev.players];
             const player = { ...newPlayers[prev.currentPlayerIndex] };
-            const isSuddenDeath = prev.gameMode === 'suddenDeath';
+            const isSuddenDeath = usesSuddenDeathMechanics(prev.gameMode);
             const isSinglePlayer = newPlayers.length === 1;
             let newDeck = prev.deck;
 

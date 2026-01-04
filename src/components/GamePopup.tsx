@@ -88,7 +88,7 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
   const { winners, players, gameMode } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
-  const isSuddenDeath = gameMode === 'suddenDeath';
+  const isSuddenDeath = gameMode === 'suddenDeath' || gameMode === 'daily';
 
   // Generate winner text
   const getWinnerText = () => {

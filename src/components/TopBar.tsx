@@ -166,10 +166,11 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
   }
 };
 
-const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
+export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
   const textClass = 'text-sm text-light-text dark:text-dark-text font-body leading-relaxed';
 
-  if (gameMode === 'suddenDeath') {
+  // Daily and sudden death share the same mechanics
+  if (gameMode === 'suddenDeath' || gameMode === 'daily') {
     return (
       <div className="text-center space-y-3">
         <p className={textClass}>Build the longest timeline!</p>
@@ -178,7 +179,7 @@ const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
     );
   }
 
-  // daily and freeplay share the same rules
+  // freeplay only
   return (
     <div className="text-center space-y-3">
       <p className={textClass}>Place all your cards in the timeline to win.</p>

@@ -28,8 +28,8 @@ export function generateShareText(state: WhenGameState): string {
       const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
       const theme = getDailyTheme(dateStr);
       const themeName = getThemeDisplayName(theme);
-      const won = winners.length > 0;
-      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}`;
+      // Daily uses sudden death mechanics - show timeline length
+      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${totalAttempts} events`;
       break;
     }
     case 'suddenDeath': {
@@ -123,6 +123,6 @@ export async function shareDailyResult(
   correctCount: number,
   totalAttempts: number
 ): Promise<boolean> {
-  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}\n\n${GAME_URL}`;
+  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${totalAttempts} events\n\n${GAME_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }

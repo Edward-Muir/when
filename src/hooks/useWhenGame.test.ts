@@ -15,6 +15,15 @@ jest.mock('../utils/eventLoader', () => {
   };
 });
 
+// Mock playerStorage to prevent auto-starting daily mode in tests
+jest.mock('../utils/playerStorage', () => ({
+  saveDailyResult: jest.fn(),
+  getTodayResult: jest.fn().mockReturnValue(null),
+  hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
+  hasPlayedMode: jest.fn().mockReturnValue(true),
+  markModePlayed: jest.fn(),
+}));
+
 const mockedLoadAllEvents = loadAllEvents as jest.MockedFunction<typeof loadAllEvents>;
 
 // Helper to create test events with specific years
@@ -72,11 +81,7 @@ describe('useWhenGame - Sudden Death Mode', () => {
       suddenDeathHandSize?: number;
     } = {}
   ) {
-    const {
-      playerCount = 1,
-      playerNames = [],
-      suddenDeathHandSize = 3,
-    } = options;
+    const { playerCount = 1, playerNames = [], suddenDeathHandSize = 3 } = options;
 
     act(() => {
       result.current.startGame({
@@ -90,6 +95,11 @@ describe('useWhenGame - Sudden Death Mode', () => {
         suddenDeathHandSize,
       });
     });
+
+    // Complete the transition to playing phase
+    act(() => {
+      result.current.completeTransition();
+    });
   }
 
   // Helper to place a card and run timers
@@ -102,6 +112,10 @@ describe('useWhenGame - Sudden Death Mode', () => {
     });
     act(() => {
       jest.runAllTimers();
+    });
+    // Dismiss popup to advance turn (needed for multiplayer)
+    act(() => {
+      result.current.dismissPopup();
     });
   }
 

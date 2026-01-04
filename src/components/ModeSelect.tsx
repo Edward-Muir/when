@@ -12,7 +12,7 @@ import {
   getThemedCategories,
   getThemedEras,
 } from '../utils/dailyTheme';
-import { getTodayResult } from '../utils/dailyStorage';
+import { getTodayResult } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { APP_VERSION } from '../version';
 
@@ -114,7 +114,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       dailySeed,
       playerCount: 1,
       playerNames: ['Player 1'],
-      cardsPerHand: 5,
+      cardsPerHand: 3, // Daily uses sudden death mechanics with 3 starting cards
     });
   };
 

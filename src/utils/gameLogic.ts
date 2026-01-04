@@ -233,8 +233,8 @@ export function shouldGameEnd(
 ): boolean {
   const activePlayers = players.filter((p) => !p.isEliminated);
 
-  // Sudden death mode - handled by processEndOfRound
-  if (gameMode === 'suddenDeath') {
+  // Sudden death mode (and daily which uses sudden death mechanics) - handled by processEndOfRound
+  if (gameMode === 'suddenDeath' || gameMode === 'daily') {
     // Single player: end immediately when eliminated (no rounds concept)
     if (players.length === 1) {
       return activePlayers.length === 0;
@@ -274,8 +274,8 @@ export function processEndOfRound(
   gameMode: GameMode,
   activePlayersAtRoundStart: number
 ): EndOfRoundResult {
-  // Only process for sudden death
-  if (gameMode !== 'suddenDeath') {
+  // Only process for sudden death mechanics (includes daily mode)
+  if (gameMode !== 'suddenDeath' && gameMode !== 'daily') {
     return { gameOver: false, updatedPlayers: players, winners: [] };
   }
 
