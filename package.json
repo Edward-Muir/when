@@ -39,10 +39,10 @@
     "format:check": "prettier --check \"src/**/*.{ts,tsx,json,css}\"",
     "typecheck": "tsc --noEmit",
     "prepare": "husky",
-    "release": "commit-and-tag-version --no-verify",
-    "release:patch": "commit-and-tag-version --release-as patch --no-verify",
-    "release:minor": "commit-and-tag-version --release-as minor --no-verify",
-    "release:major": "commit-and-tag-version --release-as major --no-verify",
+    "release": "commit-and-tag-version --no-verify --commit-all",
+    "release:patch": "commit-and-tag-version --release-as patch --no-verify --commit-all",
+    "release:minor": "commit-and-tag-version --release-as minor --no-verify --commit-all",
+    "release:major": "commit-and-tag-version --release-as major --no-verify --commit-all",
     "release:first": "commit-and-tag-version --first-release"
   },
   "lint-staged": {
