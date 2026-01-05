@@ -23,6 +23,7 @@ description: Best practices for adding "juice" and game feel to React/TypeScript
 | **Audio**           | [audio.md](audio.md)                     | Setting up Howler.js, sound effects, music  |
 | **Haptics**         | [haptics.md](haptics.md)                 | Adding mobile vibration feedback            |
 | **Framer Motion**   | [framer-motion.md](framer-motion.md)     | React animation patterns, gestures, springs |
+| **Mobile Design**   | [mobile-design.md](mobile-design.md)     | Touch targets, thumb zones, typography, nav |
 | **Performance**     | [performance.md](performance.md)         | Optimizing animations, reducing re-renders  |
 | **Accessibility**   | [accessibility.md](accessibility.md)     | Reduced motion, audio controls, a11y        |
 
