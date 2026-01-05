@@ -14,8 +14,8 @@ interface MenuProps {
 
 // Install instructions component (moved from TopBar)
 const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario }) => {
-  const baseClass = 'space-y-3 text-sm text-light-muted dark:text-dark-muted font-body';
-  const noteClass = 'text-xs mt-4 text-light-muted/70 dark:text-dark-muted/70';
+  const baseClass = 'space-y-3 text-sm text-text-muted font-body';
+  const noteClass = 'text-xs mt-4 text-text-muted/70';
 
   switch (scenario) {
     case 'ios-safari':
@@ -145,7 +145,7 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
       return (
         <div className={baseClass}>
           <p>Firefox doesn't support installing web apps.</p>
-          <p className="text-xs mt-2 text-light-muted/70 dark:text-dark-muted/70">
+          <p className="text-xs mt-2 text-text-muted/70">
             Try Chrome, Edge, or Safari, or bookmark this page.
           </p>
         </div>
@@ -158,7 +158,7 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
             Check your browser's menu for an <strong>"Install"</strong> or{' '}
             <strong>"Add to Home Screen"</strong> option.
           </p>
-          <p className="text-xs mt-2 text-light-muted/70 dark:text-dark-muted/70">
+          <p className="text-xs mt-2 text-text-muted/70">
             Chrome and Edge have the best support for web apps.
           </p>
         </div>
@@ -168,7 +168,7 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
 
 // Game rules component (moved from TopBar)
 export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
-  const textClass = 'text-sm text-light-text dark:text-dark-text font-body leading-relaxed';
+  const textClass = 'text-sm text-text font-body leading-relaxed';
 
   if (gameMode === 'suddenDeath' || gameMode === 'daily') {
     return (
@@ -213,13 +213,13 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
 
   const menuItemClass = `
     flex items-center gap-3 w-full px-4 py-3
-    text-left text-light-text dark:text-dark-text
-    hover:bg-light-border/50 dark:hover:bg-dark-border/50
+    text-left text-text
+    hover:bg-border/50
     transition-colors
     min-h-[48px]
   `;
 
-  const iconClass = 'w-5 h-5 text-accent dark:text-accent-dark flex-shrink-0';
+  const iconClass = 'w-5 h-5 text-accent flex-shrink-0';
 
   return (
     <>
@@ -237,7 +237,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
 
             {/* Drawer */}
             <motion.div
-              className="fixed top-0 right-0 bottom-0 w-64 bg-light-card dark:bg-dark-card border-l border-light-border dark:border-dark-border shadow-xl z-[56] pt-safe"
+              className="fixed top-0 right-0 bottom-0 w-64 bg-surface border-l border-border shadow-xl z-[56] pt-safe"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -250,16 +250,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               }}
             >
               {/* Header */}
-              <div className="flex items-center justify-between px-4 py-3 border-b border-light-border dark:border-dark-border">
-                <span className="font-display font-semibold text-lg text-accent dark:text-accent-dark">
-                  Menu
-                </span>
+              <div className="flex items-center justify-between px-4 py-3 border-b border-border">
+                <span className="font-display font-semibold text-lg text-accent">Menu</span>
                 <button
                   onClick={onClose}
-                  className="p-2 -mr-2 rounded-lg hover:bg-light-border/50 dark:hover:bg-dark-border/50 transition-colors"
+                  className="p-2 -mr-2 rounded-lg hover:bg-border/50 transition-colors"
                   aria-label="Close menu"
                 >
-                  <X className="w-5 h-5 text-light-muted dark:text-dark-muted" />
+                  <X className="w-5 h-5 text-text-muted" />
                 </button>
               </div>
 
@@ -294,29 +292,29 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
         {showInstallModal && (
           <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
             <motion.div
-              className="absolute inset-0 bg-black/25 dark:bg-black/50"
+              className="absolute inset-0 bg-black/25"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setShowInstallModal(false)}
             />
             <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl"
+              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
             >
-              <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+              <div className="bg-accent px-4 py-3">
                 <h2 className="text-lg font-display text-white text-center">Add to Home Screen</h2>
               </div>
               <div className="px-5 py-5">
                 <InstallInstructions scenario={installScenario} />
               </div>
               <div
-                className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50 cursor-pointer"
+                className="px-4 py-3 border-t border-border/50 cursor-pointer"
                 onClick={() => setShowInstallModal(false)}
               >
-                <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                <p className="text-text-muted/60 text-xs text-center font-body">
                   Tap anywhere to close
                 </p>
               </div>
@@ -330,29 +328,29 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
         {showRulesModal && gameMode && (
           <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
             <motion.div
-              className="absolute inset-0 bg-black/25 dark:bg-black/50"
+              className="absolute inset-0 bg-black/25"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setShowRulesModal(false)}
             />
             <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl"
+              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
             >
-              <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+              <div className="bg-accent px-4 py-3">
                 <h2 className="text-lg font-display text-white text-center">How to Play</h2>
               </div>
               <div className="px-5 py-5">
                 <GameRules gameMode={gameMode} />
               </div>
               <div
-                className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50 cursor-pointer"
+                className="px-4 py-3 border-t border-border/50 cursor-pointer"
                 onClick={() => setShowRulesModal(false)}
               >
-                <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                <p className="text-text-muted/60 text-xs text-center font-body">
                   Tap anywhere to close
                 </p>
               </div>

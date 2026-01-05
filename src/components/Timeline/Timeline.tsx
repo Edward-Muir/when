@@ -23,10 +23,8 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
   <div className="flex items-center w-full py-1 opacity-ghost">
     {/* Year column (fixed 96px width) */}
     <div className="w-24 flex items-center justify-end shrink-0">
-      <span className="text-light-muted/50 dark:text-dark-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">
-        ?
-      </span>
-      <div className="w-3 h-0.5 bg-accent/50 dark:bg-accent-dark/50 shrink-0" />
+      <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">?</span>
+      <div className="w-3 h-0.5 bg-accent/50 shrink-0" />
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">
@@ -129,14 +127,14 @@ const Timeline: React.FC<TimelineProps> = ({
     <div className="h-full relative">
       {/* Fixed "Earlier" indicator at top with fade */}
       <div className="absolute top-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-b from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90" />
-        <div className="absolute top-2 left-0 right-0 text-center text-light-muted/70 dark:text-dark-muted/70 text-sm font-medium font-body">
+        <div className="h-12 bg-gradient-to-b from-bg via-bg/90 to-transparent" />
+        <div className="absolute top-2 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
           ↑ Earlier
         </div>
       </div>
 
       {/* Vertical timeline line - positioned at 96px (matches year column width) */}
-      <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent dark:bg-accent-dark rounded-full z-0" />
+      <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
       {/* Scrollable timeline content - entire area is a single drop zone */}
       {/* Scroll is disabled while dragging so year labels stay fixed as reference points */}
@@ -188,8 +186,8 @@ const Timeline: React.FC<TimelineProps> = ({
 
       {/* Fixed "Later" indicator at bottom with fade */}
       <div className="absolute bottom-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-t from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90" />
-        <div className="absolute bottom-2 left-0 right-0 text-center text-light-muted/70 dark:text-dark-muted/70 text-sm font-medium font-body">
+        <div className="h-12 bg-gradient-to-t from-bg via-bg/90 to-transparent" />
+        <div className="absolute bottom-2 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
           Later ↓
         </div>
       </div>

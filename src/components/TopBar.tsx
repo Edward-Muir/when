@@ -21,23 +21,21 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick, gameMode
 
   const buttonClass = `
     p-2 rounded-xl
-    bg-light-card dark:bg-dark-card
-    border border-light-border dark:border-dark-border
-    hover:bg-light-border dark:hover:bg-dark-border
+    bg-surface
+    border border-border
+    hover:bg-border
     transition-colors
     active:scale-95
   `;
 
-  const iconClass = 'w-5 h-5 text-accent dark:text-accent-dark';
+  const iconClass = 'w-5 h-5 text-accent';
 
   return (
     <>
-      <div className="fixed top-0 left-0 right-0 z-50 bg-light-bg dark:bg-dark-bg pt-safe border-b border-light-border dark:border-dark-border transition-colors">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
         <div className="flex items-center justify-between gap-2 p-2">
           {/* Game Title */}
-          <h1 className="text-3xl font-display font-semibold text-accent dark:text-accent-dark pl-2">
-            When?
-          </h1>
+          <h1 className="text-3xl font-display font-semibold text-accent pl-2">When?</h1>
 
           <div className="flex items-center gap-2">
             {/* Theme Toggle */}

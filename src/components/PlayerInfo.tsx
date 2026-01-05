@@ -42,7 +42,7 @@ const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: b
     {/* Count overlay - contrasting color */}
     <span
       className={`absolute inset-0 flex items-center justify-center text-[9px] font-bold ${
-        isCurrent ? 'text-blue-500 dark:text-blue-400' : 'text-light-bg dark:text-dark-bg'
+        isCurrent ? 'text-accent-secondary' : 'text-bg'
       }`}
     >
       {count}
@@ -73,12 +73,12 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
               transition-all duration-200 font-body
               ${
                 isCurrent
-                  ? 'bg-blue-500 dark:bg-blue-400 text-white shadow-md'
+                  ? 'bg-accent-secondary text-white shadow-md'
                   : isEliminated
                     ? 'bg-error/20 text-error line-through opacity-60'
                     : hasWon
                       ? 'bg-success/20 text-success'
-                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted'
+                      : 'bg-border text-text-muted'
               }
             `}
           >
@@ -104,7 +104,7 @@ const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
       fill="none"
       stroke="currentColor"
       strokeWidth="1.5"
-      className="w-10 h-10 text-accent dark:text-accent-dark"
+      className="w-10 h-10 text-accent"
     >
       {/* Back card (rotated left) */}
       <rect
@@ -149,16 +149,12 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
     <div className="flex flex-col items-center gap-0.5">
       {/* Player name (if multiplayer) */}
       {isMultiplayer && (
-        <span className="text-xs font-medium text-light-text dark:text-dark-text font-body">
-          {currentPlayer.name}
-        </span>
+        <span className="text-xs font-medium text-text font-body">{currentPlayer.name}</span>
       )}
 
       {/* Hand count with enlarged icon */}
       <HandCardsIconLarge count={currentPlayer.hand.length} />
-      <span className="text-[10px] text-light-muted dark:text-dark-muted font-body">
-        cards left
-      </span>
+      <span className="text-[10px] text-text-muted font-body">cards left</span>
     </div>
   );
 };

@@ -158,7 +158,7 @@ const Game: React.FC<GameProps> = ({
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
         <div
-          className={`h-dvh min-h-screen-safe flex flex-col bg-light-bg dark:bg-dark-bg overflow-hidden pt-14 transition-colors ${shakeClassName}`}
+          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-14 transition-colors ${shakeClassName}`}
         >
           <TopBar
             showHome={true}
@@ -190,8 +190,8 @@ const Game: React.FC<GameProps> = ({
           {/* Bottom Bar - Fixed height with game info + active card aligned with timeline */}
           <div
             ref={setBottomBarRef}
-            className={`h-[120px] sm:h-[140px] flex items-center border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg z-40 pb-safe transition-colors duration-200 ${
-              dragState.isOverHand ? 'bg-accent/10 dark:bg-accent-dark/10' : ''
+            className={`h-[120px] sm:h-[140px] flex items-center border-t border-border bg-bg z-40 pb-safe transition-colors duration-200 ${
+              dragState.isOverHand ? 'bg-accent/10' : ''
             }`}
           >
             {state.phase === 'gameOver' ? (
@@ -258,26 +258,24 @@ const Game: React.FC<GameProps> = ({
           {showHomeConfirm && (
             <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
               <div
-                className="absolute inset-0 bg-black/50 dark:bg-black/70"
+                className="absolute inset-0 bg-black/50"
                 onClick={() => setShowHomeConfirm(false)}
               />
-              <div className="relative bg-light-card dark:bg-dark-card rounded-2xl shadow-xl p-6 max-w-sm w-full">
-                <h2 className="text-lg font-display text-light-text dark:text-dark-text mb-2">
-                  Leave game?
-                </h2>
-                <p className="text-light-muted dark:text-dark-muted text-sm mb-6 font-body">
+              <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
+                <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
+                <p className="text-text-muted text-sm mb-6 font-body">
                   Your current progress will be lost.
                 </p>
                 <div className="flex gap-3">
                   <button
                     onClick={() => setShowHomeConfirm(false)}
-                    className="flex-1 py-3 px-4 bg-light-border dark:bg-dark-border text-light-text dark:text-dark-text rounded-xl font-medium transition-colors hover:bg-light-border/80 dark:hover:bg-dark-border/80 active:scale-95 font-body"
+                    className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={onNewGame}
-                    className="flex-1 py-3 px-4 bg-accent dark:bg-accent-dark text-white rounded-xl font-medium transition-colors hover:bg-accent/90 dark:hover:bg-accent-dark/90 active:scale-95 font-body"
+                    className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
                   >
                     Leave
                   </button>
@@ -295,10 +293,10 @@ const Game: React.FC<GameProps> = ({
                 setShowFirstTimeRules(false);
               }}
             >
-              <div className="absolute inset-0 bg-black/25 dark:bg-black/50" />
-              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl">
+              <div className="absolute inset-0 bg-black/25" />
+              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl">
                 {/* Header with accent background */}
-                <div className="bg-accent dark:bg-accent-dark px-4 py-3">
+                <div className="bg-accent px-4 py-3">
                   <h2 className="text-lg font-display text-white text-center">How to Play</h2>
                 </div>
 
@@ -308,8 +306,8 @@ const Game: React.FC<GameProps> = ({
                 </div>
 
                 {/* Footer hint */}
-                <div className="px-4 py-3 border-t border-light-border/50 dark:border-dark-border/50">
-                  <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+                <div className="px-4 py-3 border-t border-border/50">
+                  <p className="text-text-muted/60 text-xs text-center font-body">
                     Tap anywhere to close
                   </p>
                 </div>

@@ -4,7 +4,14 @@ import { Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 
-const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
+const ALL_CATEGORIES: Category[] = [
+  'conflict',
+  'disasters',
+  'exploration',
+  'cultural',
+  'infrastructure',
+  'diplomatic',
+];
 
 interface SettingsPopupProps {
   isOpen: boolean;
@@ -55,15 +62,12 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   if (!isOpen) return null;
 
   const filteredEventCount = filterByEra(
-    filterByCategory(
-      filterByDifficulty(allEvents, selectedDifficulties),
-      selectedCategories
-    ),
+    filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
     selectedEras
   ).length;
 
   const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
-  const minRequiredCards = (playerCount * effectiveHandSize) + 1 + (playerCount * 2);
+  const minRequiredCards = playerCount * effectiveHandSize + 1 + playerCount * 2;
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
 
   const handlePlayerNameChange = (index: number, name: string) => {
@@ -75,7 +79,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   const toggleDifficulty = (difficulty: Difficulty) => {
     setSelectedDifficulties(
       selectedDifficulties.includes(difficulty)
-        ? selectedDifficulties.filter(d => d !== difficulty)
+        ? selectedDifficulties.filter((d) => d !== difficulty)
         : [...selectedDifficulties, difficulty]
     );
   };
@@ -83,50 +87,42 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   const toggleCategory = (category: Category) => {
     setSelectedCategories(
       selectedCategories.includes(category)
-        ? selectedCategories.filter(c => c !== category)
+        ? selectedCategories.filter((c) => c !== category)
         : [...selectedCategories, category]
     );
   };
 
   const toggleEra = (era: Era) => {
     setSelectedEras(
-      selectedEras.includes(era)
-        ? selectedEras.filter(e => e !== era)
-        : [...selectedEras, era]
+      selectedEras.includes(era) ? selectedEras.filter((e) => e !== era) : [...selectedEras, era]
     );
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
-      <div
-        className="absolute inset-0 bg-black/50 dark:bg-black/70"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0 bg-black/50" onClick={onClose} />
 
       {/* Modal */}
-      <div className="relative bg-light-card dark:bg-dark-card rounded-2xl shadow-xl dark:shadow-card-rest-dark p-6 max-w-md w-full max-h-[85vh] overflow-y-auto border border-light-border dark:border-dark-border">
+      <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-md w-full max-h-[85vh] overflow-y-auto border border-border">
         {/* Header */}
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-bold text-light-text dark:text-dark-text font-display">
-            Game Settings
-          </h2>
-          <button
-            onClick={onClose}
-            className="p-2 hover:bg-light-border dark:hover:bg-dark-border rounded-full transition-colors"
-          >
-            <X className="w-5 h-5 text-light-muted dark:text-dark-muted" />
+          <h2 className="text-xl font-bold text-text font-display">Game Settings</h2>
+          <button onClick={onClose} className="p-2 hover:bg-border rounded-full transition-colors">
+            <X className="w-5 h-5 text-text-muted" />
           </button>
         </div>
 
         <div className="space-y-4">
           {/* Sudden Death Toggle */}
-          <div className="flex items-center justify-between p-3 rounded-xl bg-error/10 dark:bg-error/20 border border-error/20 dark:border-error/30">
+          <div className="flex items-center justify-between p-3 rounded-xl bg-error/10 border border-error/20">
             <div className="flex items-center gap-2">
-              <Zap className={`w-4 h-4 ${isSuddenDeath ? 'text-error' : 'text-light-muted dark:text-dark-muted'}`} />
+              <Zap className={`w-4 h-4 ${isSuddenDeath ? 'text-error' : 'text-text-muted'}`} />
               <div>
-                <span className="text-sm font-medium text-light-text dark:text-dark-text font-body">Sudden Death</span>
-                <p className="text-[10px] text-light-muted dark:text-dark-muted font-body">One wrong answer ends the game</p>
+                <span className="text-sm font-medium text-text font-body">Sudden Death</span>
+                <p className="text-[10px] text-text-muted font-body">
+                  One wrong answer ends the game
+                </p>
               </div>
             </div>
             <label className="relative inline-block w-11 h-6 cursor-pointer flex-shrink-0">
@@ -136,7 +132,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 onChange={(e) => setIsSuddenDeath(e.target.checked)}
                 className="peer sr-only"
               />
-              <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-checked:bg-error transition-colors" />
+              <div className="w-11 h-6 bg-border rounded-full peer peer-checked:bg-error transition-colors" />
               <div className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5" />
             </label>
           </div>
@@ -144,7 +140,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           {/* Starting Hand Size - different settings for Sudden Death vs regular */}
           {isSuddenDeath ? (
             <div>
-              <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
+              <label className="block text-sm font-medium text-text mb-2 font-body">
                 Starting Lives
               </label>
               <div className="flex items-center gap-3">
@@ -154,19 +150,19 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   max={5}
                   value={suddenDeathHandSize}
                   onChange={(e) => setSuddenDeathHandSize(Number(e.target.value))}
-                  className="flex-1 h-2 bg-light-border dark:bg-dark-border rounded-lg appearance-none cursor-pointer accent-error"
+                  className="flex-1 h-2 bg-border rounded-lg appearance-none cursor-pointer accent-error"
                 />
-                <span className="text-sm font-medium text-light-text dark:text-dark-text w-6 text-center font-body">
+                <span className="text-sm font-medium text-text w-6 text-center font-body">
                   {suddenDeathHandSize}
                 </span>
               </div>
-              <p className="text-[10px] text-light-muted dark:text-dark-muted mt-1 font-body">
+              <p className="text-[10px] text-text-muted mt-1 font-body">
                 Wrong answers don't draw new cards · Empty hand = game over
               </p>
             </div>
           ) : (
             <div>
-              <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
+              <label className="block text-sm font-medium text-text mb-2 font-body">
                 Starting Hand Size
               </label>
               <div className="flex items-center gap-3">
@@ -176,13 +172,13 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   max={8}
                   value={cardsPerHand}
                   onChange={(e) => setCardsPerHand(Number(e.target.value))}
-                  className="flex-1 h-2 bg-light-border dark:bg-dark-border rounded-lg appearance-none cursor-pointer accent-accent dark:accent-accent-dark"
+                  className="flex-1 h-2 bg-border rounded-lg appearance-none cursor-pointer accent-accent"
                 />
-                <span className="text-sm font-medium text-light-text dark:text-dark-text w-6 text-center font-body">
+                <span className="text-sm font-medium text-text w-6 text-center font-body">
                   {cardsPerHand}
                 </span>
               </div>
-              <p className="text-[10px] text-light-muted dark:text-dark-muted mt-1 font-body">
+              <p className="text-[10px] text-text-muted mt-1 font-body">
                 Number of cards dealt to each player
               </p>
             </div>
@@ -191,7 +187,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           {/* Player Names - only show when more than 1 player */}
           {playerCount > 1 && (
             <div>
-              <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
+              <label className="block text-sm font-medium text-text mb-2 font-body">
                 Player Names
               </label>
               <div className="space-y-2">
@@ -204,11 +200,11 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                     onChange={(e) => handlePlayerNameChange(index, e.target.value)}
                     className="
                       w-full px-3 py-2 rounded-lg text-sm
-                      border border-light-border dark:border-dark-border
-                      bg-light-bg dark:bg-dark-bg
-                      text-light-text dark:text-dark-text
-                      placeholder:text-light-muted/60 dark:placeholder:text-dark-muted/60
-                      focus:outline-none focus:border-accent dark:focus:border-accent-dark
+                      border border-border
+                      bg-bg
+                      text-text
+                      placeholder:text-text-muted/60
+                      focus:outline-none focus:border-accent
                       transition-colors font-body
                     "
                   />
@@ -219,7 +215,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
 
           {/* Difficulty selection */}
           <div>
-            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
+            <label className="block text-sm font-medium text-text mb-2 font-body">
               Card Difficulty
             </label>
             <div className="flex gap-2">
@@ -230,9 +226,10 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   className={`
                     flex-1 py-2 px-3 rounded-lg text-sm font-body
                     transition-all capitalize
-                    ${selectedDifficulties.includes(difficulty)
-                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
-                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
+                    ${
+                      selectedDifficulties.includes(difficulty)
+                        ? 'bg-accent text-white shadow-md'
+                        : 'bg-border text-text-muted hover:bg-border/80'
                     }
                   `}
                 >
@@ -247,9 +244,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
 
           {/* Category selection */}
           <div>
-            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
-              Categories
-            </label>
+            <label className="block text-sm font-medium text-text mb-2 font-body">Categories</label>
             <div className="grid grid-cols-3 gap-2">
               {ALL_CATEGORIES.map((category) => (
                 <button
@@ -258,9 +253,10 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   className={`
                     py-2 px-2 rounded-lg text-xs font-body
                     transition-all capitalize
-                    ${selectedCategories.includes(category)
-                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
-                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
+                    ${
+                      selectedCategories.includes(category)
+                        ? 'bg-accent text-white shadow-md'
+                        : 'bg-border text-text-muted hover:bg-border/80'
                     }
                   `}
                 >
@@ -275,9 +271,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
 
           {/* Era selection */}
           <div>
-            <label className="block text-sm font-medium text-light-text dark:text-dark-text mb-2 font-body">
-              Eras
-            </label>
+            <label className="block text-sm font-medium text-text mb-2 font-body">Eras</label>
             <div className="grid grid-cols-2 gap-2">
               {ERA_DEFINITIONS.map((era) => (
                 <button
@@ -286,9 +280,10 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                   className={`
                     py-2 px-2 rounded-lg text-xs font-body
                     transition-all
-                    ${selectedEras.includes(era.id)
-                      ? 'bg-accent dark:bg-accent-dark text-white shadow-md'
-                      : 'bg-light-border dark:bg-dark-border text-light-muted dark:text-dark-muted hover:bg-light-border/80 dark:hover:bg-dark-border/80'
+                    ${
+                      selectedEras.includes(era.id)
+                        ? 'bg-accent text-white shadow-md'
+                        : 'bg-border text-text-muted hover:bg-border/80'
                     }
                   `}
                 >
@@ -302,14 +297,14 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           </div>
 
           {/* Deck card counter */}
-          <div className="pt-2 border-t border-light-border dark:border-dark-border">
-            <div className="flex justify-between text-sm text-light-muted dark:text-dark-muted font-body">
+          <div className="pt-2 border-t border-border">
+            <div className="flex justify-between text-sm text-text-muted font-body">
               <span>Cards in deck:</span>
               <span className={!hasEnoughCards ? 'text-error font-medium' : ''}>
                 {filteredEventCount}
               </span>
             </div>
-            <div className="flex justify-between text-xs text-light-muted/60 dark:text-dark-muted/60 font-body">
+            <div className="flex justify-between text-xs text-text-muted/60 font-body">
               <span>Minimum required:</span>
               <span>{minRequiredCards}</span>
             </div>
@@ -324,7 +319,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         {/* Done button */}
         <button
           onClick={onClose}
-          className="w-full mt-4 py-3 px-6 bg-accent hover:bg-accent/90 dark:bg-accent-dark dark:hover:bg-accent-dark/90 text-white font-medium rounded-xl transition-colors font-body"
+          className="w-full mt-4 py-3 px-6 bg-accent hover:bg-accent/90 text-white font-medium rounded-xl transition-colors font-body"
         >
           Done
         </button>

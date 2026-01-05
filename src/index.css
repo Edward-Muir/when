@@ -9,9 +9,44 @@ html {
   height: 100%;
 }
 
-/* Viewport height fallback for older browsers */
+/* ===========================================
+   COLOR PALETTE - Single source of truth
+   To change the app's colors, edit only here!
+   =========================================== */
 :root {
+  /* Viewport (existing) */
   --vh: 1vh;
+
+  /* Background & Surface */
+  --color-bg: #e4e4e4;
+  --color-surface: #f0f0f0;
+
+  /* Text */
+  --color-text: #001524;
+  --color-text-muted: #4a5568;
+
+  /* Borders */
+  --color-border: #c8c8c8;
+
+  /* Accents */
+  --color-accent: #b8860b;
+  --color-accent-secondary: #15616d;
+
+  /* Status */
+  --color-success: #6aaa64;
+  --color-error: #e57373;
+}
+
+.dark {
+  --color-bg: #0d1b2a;
+  --color-surface: #1b2838;
+  --color-text: #e4e4e4;
+  --color-text-muted: #94a3b8;
+  --color-border: #2d3f50;
+  --color-accent: #d4a84b;
+  --color-accent-secondary: #22a0b0;
+  --color-success: #7abf70;
+  --color-error: #f87171;
 }
 
 body {
@@ -19,8 +54,8 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #faf8f5;
-  color: #2d2a26;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   height: 100%;
   overflow: hidden;
   overscroll-behavior: none;
@@ -28,13 +63,6 @@ body {
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
-}
-
-/* Dark mode body */
-.dark body,
-html.dark body {
-  background-color: #1a1918;
-  color: #e8e4dc;
 }
 
 #root {
@@ -78,11 +106,7 @@ html.dark body {
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
-  scrollbar-color: #b8860b #faf8f5;
-}
-
-.dark .timeline-scroll-vertical {
-  scrollbar-color: #d4a84b #1a1918;
+  scrollbar-color: var(--color-accent) var(--color-bg);
 }
 
 .timeline-scroll-vertical::-webkit-scrollbar {
@@ -90,21 +114,13 @@ html.dark body {
 }
 
 .timeline-scroll-vertical::-webkit-scrollbar-track {
-  background: #faf8f5;
+  background: var(--color-bg);
   border-radius: 4px;
-}
-
-.dark .timeline-scroll-vertical::-webkit-scrollbar-track {
-  background: #1a1918;
 }
 
 .timeline-scroll-vertical::-webkit-scrollbar-thumb {
-  background: #b8860b;
+  background: var(--color-accent);
   border-radius: 4px;
-}
-
-.dark .timeline-scroll-vertical::-webkit-scrollbar-thumb {
-  background: #d4a84b;
 }
 
 /* Ensure minimum touch target size on mobile */
@@ -175,15 +191,9 @@ input,
 .dragging-card {
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.3),
-    0 0 0 2px rgba(184, 134, 11, 0.5);
+    0 0 0 2px color-mix(in srgb, var(--color-accent) 50%, transparent);
   border-radius: 8px;
   cursor: grabbing !important;
-}
-
-.dark .dragging-card {
-  box-shadow:
-    0 20px 40px rgba(0, 0, 0, 0.5),
-    0 0 0 2px rgba(212, 168, 75, 0.5);
 }
 
 /* Prevent text selection during drag */
