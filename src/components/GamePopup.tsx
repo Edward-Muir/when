@@ -57,8 +57,23 @@ function EventImage({ event, type }: { event: HistoricalEvent; type: GamePopupTy
   const isResult = type === 'correct' || type === 'incorrect';
   const isCorrect = type === 'correct';
 
+  // Calculate dynamic height based on image dimensions
+  const CONTAINER_WIDTH = 340;
+  const MIN_HEIGHT = 128;
+  const MAX_HEIGHT = 384;
+  const DEFAULT_HEIGHT = 192;
+
+  const getImageHeight = () => {
+    if (!event.image_width || !event.image_height) return DEFAULT_HEIGHT;
+    const aspectRatio = event.image_width / event.image_height;
+    const calculatedHeight = CONTAINER_WIDTH / aspectRatio;
+    return Math.min(Math.max(calculatedHeight, MIN_HEIGHT), MAX_HEIGHT);
+  };
+
+  const imageHeight = getImageHeight();
+
   return (
-    <div className="h-48 sm:h-56 relative overflow-hidden">
+    <div className="relative overflow-hidden" style={{ height: `${imageHeight}px` }}>
       {event.image_url ? (
         <img src={event.image_url} alt="" className="w-full h-full object-cover" />
       ) : (

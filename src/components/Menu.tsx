@@ -172,7 +172,7 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
 
   if (gameMode === 'suddenDeath' || gameMode === 'daily') {
     return (
-      <div className="text-center space-y-3">
+      <div className="text-left space-y-3">
         <p className={textClass}>Build the longest timeline!</p>
         <p className={textClass}>Draw a new card if you place correctly.</p>
       </div>
@@ -180,7 +180,7 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
   }
 
   return (
-    <div className="text-center space-y-3">
+    <div className="text-left space-y-3">
       <p className={textClass}>Place all your cards in the timeline to win.</p>
       <p className={textClass}>Draw a card if you place incorrectly.</p>
     </div>

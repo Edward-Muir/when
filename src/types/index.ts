@@ -35,6 +35,8 @@ export interface HistoricalEvent {
   description: string;
   difficulty: Difficulty;
   image_url?: string; // Optional Wikipedia thumbnail URL
+  image_width?: number; // Image width in pixels
+  image_height?: number; // Image height in pixels
 }
 
 export interface Player {
