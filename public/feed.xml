@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jan 2026 20:33:26 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 21:35:01 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.1.9</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.1.9</guid>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Resize image boxes to display full image (<a href="https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7">9c6ecf9</a>)</li> <li>Simplify game menus (<a href="https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415">6ea49be</a>)</li> <li>Unify text and shadows (<a href="https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4">3682e3c</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Add wrong banner in single player (<a href="https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786">118b948</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.1.8</title>
       <link>https://play-when.com</link>

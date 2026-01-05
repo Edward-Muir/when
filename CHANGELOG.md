@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.9](https://github.com/Edward-Muir/when/compare/v0.1.8...v0.1.9) (2026-01-05)
+
+
+### Features
+
+* Resize image boxes to display full image ([9c6ecf9](https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7))
+* Simplify game menus ([6ea49be](https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415))
+* Unify text and shadows ([3682e3c](https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4))
+
+
+### Bug Fixes
+
+* Add wrong banner in single player ([118b948](https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786))
+
 ## [0.1.8](https://github.com/Edward-Muir/when/compare/v0.1.7...v0.1.8) (2026-01-05)
 
 
