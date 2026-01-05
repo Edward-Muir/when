@@ -34,7 +34,7 @@ const TopBar: React.FC<TopBarProps> = ({
     active:scale-95
   `;
 
-  const iconClass = 'w-5 h-5 text-accent';
+  const iconClass = 'w-5 h-5 text-text';
 
   return (
     <>
@@ -42,7 +42,7 @@ const TopBar: React.FC<TopBarProps> = ({
         <div className="flex items-center justify-between gap-2 p-2">
           {/* Game Title */}
           {showTitle ? (
-            <h1 className="text-3xl font-display font-semibold text-accent pl-2">When?</h1>
+            <h1 className="text-3xl font-display font-semibold text-text pl-2">When?</h1>
           ) : (
             <div />
           )}

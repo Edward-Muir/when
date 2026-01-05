@@ -154,7 +154,7 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
 
       {/* Hand count with enlarged icon */}
       <HandCardsIconLarge count={currentPlayer.hand.length} />
-      <span className="text-sm text-text-muted font-body">cards left</span>
+      <span className="text-sm text-text font-body">cards left</span>
     </div>
   );
 };

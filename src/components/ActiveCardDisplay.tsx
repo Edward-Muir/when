@@ -38,7 +38,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             active:scale-95 transition-all"
           aria-label="Cycle to next card"
         >
-          <RefreshCw className="w-4 h-4 text-accent" />
+          <RefreshCw className="w-4 h-4 text-text" />
         </button>
 
         {/* Horizontal card stack */}
