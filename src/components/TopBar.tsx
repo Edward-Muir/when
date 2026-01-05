@@ -10,11 +10,17 @@ export { GameRules } from './Menu';
 
 interface TopBarProps {
   showHome?: boolean;
+  showTitle?: boolean;
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
 }
 
-const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick, gameMode }) => {
+const TopBar: React.FC<TopBarProps> = ({
+  showHome = false,
+  showTitle = true,
+  onHomeClick,
+  gameMode,
+}) => {
   const { isDark, toggleTheme } = useTheme();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,7 +41,11 @@ const TopBar: React.FC<TopBarProps> = ({ showHome = false, onHomeClick, gameMode
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
         <div className="flex items-center justify-between gap-2 p-2">
           {/* Game Title */}
-          <h1 className="text-3xl font-display font-semibold text-accent pl-2">When?</h1>
+          {showTitle ? (
+            <h1 className="text-3xl font-display font-semibold text-accent pl-2">When?</h1>
+          ) : (
+            <div />
+          )}
 
           <div className="flex items-center gap-2">
             {/* Theme Toggle */}

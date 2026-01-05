@@ -184,7 +184,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-14 pb-safe overflow-auto transition-colors"
     >
       {/* Top Bar */}
-      <TopBar showHome={false} />
+      <TopBar showHome={false} showTitle={false} />
 
       <div className="bg-surface rounded-2xl shadow-sm p-4 max-w-sm w-full text-center relative z-10 border border-border">
         {/* Title */}
