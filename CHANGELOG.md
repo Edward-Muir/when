@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.8](https://github.com/Edward-Muir/when/compare/v0.1.7...v0.1.8) (2026-01-05)
+
+
+### Features
+
+* Burger menu ([5ab03c8](https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae))
+* Update colour palette ([2eb7f36](https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c))
+* Update colour pallete ([bc625cd](https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e))
+
 ## [0.1.7](https://github.com/Edward-Muir/when/compare/v0.1.6...v0.1.7) (2026-01-05)
 
 
