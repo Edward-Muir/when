@@ -15,7 +15,7 @@ interface MenuProps {
 // Install instructions component (moved from TopBar)
 const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario }) => {
   const baseClass = 'space-y-3 text-sm text-text-muted font-body';
-  const noteClass = 'text-xs mt-4 text-text-muted/70';
+  const noteClass = 'text-sm mt-4 text-text-muted/70';
 
   switch (scenario) {
     case 'ios-safari':
@@ -145,7 +145,7 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
       return (
         <div className={baseClass}>
           <p>Firefox doesn't support installing web apps.</p>
-          <p className="text-xs mt-2 text-text-muted/70">
+          <p className="text-sm mt-2 text-text-muted/70">
             Try Chrome, Edge, or Safari, or bookmark this page.
           </p>
         </div>
@@ -158,7 +158,7 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
             Check your browser's menu for an <strong>"Install"</strong> or{' '}
             <strong>"Add to Home Screen"</strong> option.
           </p>
-          <p className="text-xs mt-2 text-text-muted/70">
+          <p className="text-sm mt-2 text-text-muted/70">
             Chrome and Edge have the best support for web apps.
           </p>
         </div>
@@ -237,7 +237,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
 
             {/* Drawer */}
             <motion.div
-              className="fixed top-0 right-0 bottom-0 w-64 bg-surface border-l border-border shadow-xl z-[56] pt-safe"
+              className="fixed top-0 right-0 bottom-0 w-64 bg-surface border-l border-border shadow-sm z-[56] pt-safe"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -299,7 +299,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               onClick={() => setShowInstallModal(false)}
             />
             <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl"
+              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
@@ -307,14 +307,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               <div className="bg-accent px-4 py-3">
                 <h2 className="text-lg font-display text-white text-center">Add to Home Screen</h2>
               </div>
-              <div className="px-5 py-5">
+              <div className="p-4">
                 <InstallInstructions scenario={installScenario} />
               </div>
               <div
                 className="px-4 py-3 border-t border-border/50 cursor-pointer"
                 onClick={() => setShowInstallModal(false)}
               >
-                <p className="text-text-muted/60 text-xs text-center font-body">
+                <p className="text-text-muted/60 text-sm text-center font-body">
                   Tap anywhere to close
                 </p>
               </div>
@@ -335,7 +335,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               onClick={() => setShowRulesModal(false)}
             />
             <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl"
+              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
@@ -343,14 +343,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               <div className="bg-accent px-4 py-3">
                 <h2 className="text-lg font-display text-white text-center">How to Play</h2>
               </div>
-              <div className="px-5 py-5">
+              <div className="p-4">
                 <GameRules gameMode={gameMode} />
               </div>
               <div
                 className="px-4 py-3 border-t border-border/50 cursor-pointer"
                 onClick={() => setShowRulesModal(false)}
               >
-                <p className="text-text-muted/60 text-xs text-center font-body">
+                <p className="text-text-muted/60 text-sm text-center font-body">
                   Tap anywhere to close
                 </p>
               </div>

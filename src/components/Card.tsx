@@ -43,7 +43,7 @@ const Card: React.FC<CardProps> = ({
           rounded-lg overflow-hidden
           border border-border
           bg-surface
-          shadow-md
+          shadow-sm
           ${onClick ? 'cursor-pointer active:scale-95' : ''}
           ${className}
           ${sizeClasses[size]}
@@ -71,7 +71,7 @@ const Card: React.FC<CardProps> = ({
         </div>
         {/* Title section (60% width) */}
         <div className="w-[60%] h-full flex items-center px-2 py-1">
-          <span className="text-text text-[11px] sm:text-xs leading-tight line-clamp-3 font-body">
+          <span className="text-text text-sm leading-tight line-clamp-3 font-body">
             {event.friendly_name}
           </span>
         </div>
@@ -86,7 +86,7 @@ const Card: React.FC<CardProps> = ({
         rounded-lg overflow-hidden
         border border-border
         bg-surface
-        shadow-md
+        shadow-sm
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
         ${sizeClasses[size]}

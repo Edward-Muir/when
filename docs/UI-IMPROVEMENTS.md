@@ -29,6 +29,38 @@ When?                           [☀] [🏠] [☰]
 - Moved Share, Install, and How to Play into hamburger menu
 - Added swipe-to-dismiss gesture support
 
+### Phase 4: General Polish ✓
+
+**Goal:** Overall consistency and reduced visual noise
+
+**Changes made:**
+
+Typography consolidation (strict 14px minimum):
+
+- Updated Tailwind config font sizes (`ui-label`, `ui-caption`, `ui-card-title`) to 14px
+- Replaced all `text-[9px]`, `text-[10px]`, `text-[11px]`, `text-xs` with `text-sm`
+- Applied across Card, TimelineEvent, PlayerInfo, GameOverControls, ResultBanner, Menu, ModeSelect
+
+Shadow simplification:
+
+- Standardized on `shadow-sm` throughout (replacing `shadow-md`, `shadow-lg`, `shadow-xl`)
+- Reduced dark mode shadow intensity in `tailwind.config.js`
+
+Spacing consistency:
+
+- Changed `p-5` to `p-4` in ModeSelect and Menu modals for 8-point grid alignment
+
+**Files modified:**
+
+- `tailwind.config.js` - Font sizes and shadow definitions
+- `src/components/Card.tsx`
+- `src/components/Timeline/TimelineEvent.tsx`
+- `src/components/PlayerInfo.tsx`
+- `src/components/GameOverControls.tsx`
+- `src/components/ResultBanner.tsx`
+- `src/components/Menu.tsx`
+- `src/components/ModeSelect.tsx`
+
 ---
 
 ## Planned
@@ -77,34 +109,6 @@ When?                           [☀] [🏠] [☰]
 **Files to modify:**
 
 - `src/components/ModeSelect.tsx`
-
----
-
-### Phase 4: General Polish
-
-**Goal:** Overall consistency and reduced visual noise
-
-**Typography consolidation:**
-
-- Reduce custom font sizes (currently 7+ sizes including 9px, 10px, 11px)
-- Establish 3-4 size scale: body (16px), small (14px), title (24px), display (32px)
-- Remove tiny text sizes that hurt readability
-
-**Shadow reduction:**
-
-- Simplify shadow system (currently `shadow-md`, `shadow-xl`, custom dark shadows)
-- Consider removing shadows entirely for flatter look
-- Use subtle borders instead where needed
-
-**Spacing consistency:**
-
-- Audit padding/margins for 8-point grid alignment
-- Standardize component spacing
-
-**Files to modify:**
-
-- `tailwind.config.js`
-- Various components for typography/shadow updates
 
 ---
 

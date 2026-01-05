@@ -63,7 +63,7 @@ function CompletionBanner({
         </div>
         <span className="font-semibold text-base leading-none text-accent">Complete!</span>
       </div>
-      <div className="text-xs text-text-muted mt-1.5">
+      <div className="text-sm text-text-muted mt-1.5">
         {roundNumber} {roundNumber === 1 ? 'round' : 'rounds'} · {correctCount}/
         {placementHistory.length} correct
       </div>

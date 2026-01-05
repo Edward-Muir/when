@@ -161,7 +161,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         transition={{ duration: 0.3, ease: 'easeOut' }}
         className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-safe pb-safe transition-colors"
       >
-        <div className="bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full text-center border border-border">
+        <div className="bg-surface rounded-2xl shadow-sm p-6 max-w-sm w-full text-center border border-border">
           <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
           <p className="text-text-muted text-sm mb-6 font-body">The Timeline Game</p>
           <div className="text-xl font-medium text-text mb-2 font-body">
@@ -186,7 +186,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       {/* Top Bar */}
       <TopBar showHome={false} />
 
-      <div className="bg-surface rounded-2xl shadow-xl p-5 max-w-sm w-full text-center relative z-10 border border-border">
+      <div className="bg-surface rounded-2xl shadow-sm p-4 max-w-sm w-full text-center relative z-10 border border-border">
         {/* Title */}
         <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
         <p className="text-text-muted text-sm mb-5 font-body">The Timeline Game</p>
@@ -201,7 +201,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               </div>
               <div className="text-left flex-1 min-w-0">
                 <h3 className="font-bold text-text text-sm font-body">Play</h3>
-                <p className="text-[10px] text-text-muted font-body">
+                <p className="text-sm text-text-muted font-body">
                   Place events in the correct order
                 </p>
               </div>
@@ -216,7 +216,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
             {/* Player count selector */}
             <div className="mb-2">
-              <label className="block text-[10px] text-text-muted mb-1 font-body text-left">
+              <label className="block text-sm text-text-muted mb-1 font-body text-left">
                 Players
               </label>
               <div className="flex gap-1">
@@ -228,7 +228,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                       flex-1 h-8 rounded-lg text-sm font-medium transition-all font-body
                       ${
                         playerCount === num
-                          ? 'bg-accent-secondary text-white shadow-md'
+                          ? 'bg-accent-secondary text-white shadow-sm'
                           : 'bg-border text-text-muted hover:bg-accent-secondary/20'
                       }
                     `}
@@ -266,7 +266,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                     {todayResult ? todayResult.theme : dailyThemeDisplayName}
                   </span>
                 </h3>
-                <p className="text-[10px] text-text-muted font-body">
+                <p className="text-sm text-text-muted font-body">
                   {todayResult ? 'Completed today' : 'Same puzzle for all · New theme daily'}
                 </p>
               </div>
@@ -291,7 +291,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 </button>
 
                 {/* Come back tomorrow message */}
-                <p className="text-[10px] text-text-muted font-body text-center">
+                <p className="text-sm text-text-muted font-body text-center">
                   Come back tomorrow for a new challenge!
                 </p>
               </div>
@@ -310,14 +310,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
         {/* Share toast */}
         {showShareToast && (
-          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-lg flex items-center gap-2 z-50 font-body">
+          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
             <Check className="w-4 h-4" />
             Copied to clipboard!
           </div>
         )}
 
         {/* Version display */}
-        <p className="text-center mt-2 text-[10px] text-text-muted/60 font-body">v{APP_VERSION}</p>
+        <p className="text-center mt-2 text-sm text-text-muted/60 font-body">v{APP_VERSION}</p>
       </div>
 
       {/* Settings Popup */}

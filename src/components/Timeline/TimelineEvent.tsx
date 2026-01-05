@@ -212,7 +212,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           data-timeline-year={event.year}
           variants={yearPopVariants}
           animate={shouldPopYear ? 'pop' : 'idle'}
-          className="text-text font-bold text-xs sm:text-sm font-mono pr-2 text-right leading-tight"
+          className="text-text font-bold text-sm font-mono pr-2 text-right leading-tight"
         >
           {formatYear(event.year)}
         </motion.span>
@@ -226,7 +226,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           initial={isSuccessAnimation ? springBounce.initial : false}
           animate={isSuccessAnimation ? springBounce.animate : undefined}
           exit={isErrorAnimation ? rejectionExit.exit : undefined}
-          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-md touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
         >
           {/* Image section (40% width) */}
           <div className="w-[40%] h-full relative overflow-hidden">
@@ -234,7 +234,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           </div>
           {/* Title section (60% width) */}
           <div className="w-[60%] h-full flex items-center px-2 py-1">
-            <span className="text-text text-[11px] sm:text-xs leading-tight line-clamp-3 font-body">
+            <span className="text-text text-sm leading-tight line-clamp-3 font-body">
               {event.friendly_name}
             </span>
           </div>

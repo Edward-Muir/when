@@ -49,11 +49,12 @@ module.exports = {
       },
       fontSize: {
         // Centralized UI text sizes - edit here to update all UI text
+        // Minimum 14px (0.875rem) for readability per mobile design guidelines
         'ui-title': ['2.9rem', { lineHeight: '1.2', fontWeight: '700' }],     // "When?" title
         'ui-body': ['1.2rem', { lineHeight: '2.0' }],                         // Turn/Score
-        'ui-label': ['0.9rem', { lineHeight: '1.0' }],                        // "Drag to timeline"
-        'ui-caption': ['0.9rem', { lineHeight: '1.0' }],                      // "Tap for details"
-        'ui-card-title': ['0.9rem', { lineHeight: '1.2', fontWeight: '600' }], // Card title overlay
+        'ui-label': ['0.875rem', { lineHeight: '1.2' }],                      // Labels (14px)
+        'ui-caption': ['0.875rem', { lineHeight: '1.2' }],                    // Captions (14px)
+        'ui-card-title': ['0.875rem', { lineHeight: '1.2', fontWeight: '600' }], // Card titles (14px)
       },
       animation: {
         'shake': 'shake 0.5s ease-in-out',
@@ -77,9 +78,8 @@ module.exports = {
         },
       },
       boxShadow: {
-        // Dark mode shadows
-        'card-rest-dark': '2px 2px 12px rgba(0, 0, 0, 0.4)',
-        'card-placed-dark': '1px 1px 6px rgba(0, 0, 0, 0.4)',
+        // Subtle shadows for flat design
+        'card-rest-dark': '1px 1px 4px rgba(0, 0, 0, 0.3)',
       },
     },
   },

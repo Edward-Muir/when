@@ -41,7 +41,7 @@ const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: b
     </svg>
     {/* Count overlay - contrasting color */}
     <span
-      className={`absolute inset-0 flex items-center justify-center text-[9px] font-bold ${
+      className={`absolute inset-0 flex items-center justify-center text-xs font-bold ${
         isCurrent ? 'text-accent-secondary' : 'text-bg'
       }`}
     >
@@ -69,11 +69,11 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
           <div
             key={player.id}
             className={`
-              flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-medium
+              flex items-center gap-2 px-3 py-2 rounded-lg text-sm font-medium
               transition-all duration-200 font-body
               ${
                 isCurrent
-                  ? 'bg-accent-secondary text-white shadow-md'
+                  ? 'bg-accent-secondary text-white shadow-sm'
                   : isEliminated
                     ? 'bg-error/20 text-error line-through opacity-60'
                     : hasWon
@@ -85,7 +85,7 @@ const PlayerInfo: React.FC<PlayerInfoProps> = ({ players, currentPlayerIndex }) 
             <Users className="w-3 h-3" />
             <span className="font-medium flex-1">{player.name}</span>
             {hasWon ? (
-              <span className="text-[10px]">🏆</span>
+              <span className="text-sm">🏆</span>
             ) : (
               <HandCardsIcon count={player.hand.length} isCurrent={isCurrent} />
             )}
@@ -149,12 +149,12 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
     <div className="flex flex-col items-center gap-0.5">
       {/* Player name (if multiplayer) */}
       {isMultiplayer && (
-        <span className="text-xs font-medium text-text font-body">{currentPlayer.name}</span>
+        <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
       )}
 
       {/* Hand count with enlarged icon */}
       <HandCardsIconLarge count={currentPlayer.hand.length} />
-      <span className="text-[10px] text-text-muted font-body">cards left</span>
+      <span className="text-sm text-text-muted font-body">cards left</span>
     </div>
   );
 };
