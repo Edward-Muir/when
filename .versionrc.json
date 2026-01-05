@@ -11,7 +11,8 @@
     { "type": "chore", "hidden": true }
   ],
   "scripts": {
-    "postchangelog": "node scripts/generate-rss.js && node scripts/inject-version.js"
+    "postchangelog": "node scripts/generate-rss.js && node scripts/inject-version.js",
+    "precommit": "git add public/feed.xml src/version.ts"
   },
   "bumpFiles": [{ "filename": "package.json", "type": "json" }]
 }

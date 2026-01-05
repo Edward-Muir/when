@@ -5,14 +5,21 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jan 2026 19:09:56 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jan 2026 19:13:08 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.1.5</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.1.5</guid>
+      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>fix release script (<a href="https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9">6cc7aec</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.1.4</title>
       <link>https://play-when.com</link>
       <guid isPermaLink="false">when-v0.1.4</guid>
       <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>remove uneeded bump files (<a href="https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f">77873a5</a>)</li></ul>]]></description>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/>- remove uneeded bump files (<a href="https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f">77873a5</a>)]]></description>
     </item>
     <item>
       <title>When? v0.1.3</title>
