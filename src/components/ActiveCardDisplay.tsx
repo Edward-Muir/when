@@ -31,14 +31,14 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           onClick={() => canCycle && onCycleHand()}
           disabled={!canCycle}
           className="absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
-            bg-light-card dark:bg-dark-card border border-light-border dark:border-dark-border
+            bg-surface border border-border
             shadow-sm flex items-center justify-center
-            hover:bg-light-border dark:hover:bg-dark-border
+            hover:bg-border
             disabled:opacity-40 disabled:cursor-not-allowed
             active:scale-95 transition-all"
           aria-label="Cycle to next card"
         >
-          <RefreshCw className="w-4 h-4 text-accent dark:text-accent-dark" />
+          <RefreshCw className="w-4 h-4 text-accent" />
         </button>
 
         {/* Horizontal card stack */}

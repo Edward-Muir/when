@@ -26,27 +26,21 @@ module.exports = {
         'ghost': '0.5',  // Ghost card opacity - used in Timeline and DraggableCard
       },
       colors: {
-        // Legacy colors (keep for compatibility during transition)
-        cream: '#FDF5E6',
-        paper: '#FFFEF9',
-        sketch: '#2C2C2C',
-        // Light theme
-        'light-bg': '#FAF8F5',
-        'light-card': '#FFFDF8',
-        'light-text': '#2D2A26',
-        'light-muted': '#6B6560',
-        'light-border': '#E5E0D8',
-        // Dark theme
-        'dark-bg': '#1A1918',
-        'dark-card': '#2A2826',
-        'dark-text': '#E8E4DC',
-        'dark-muted': '#9A948C',
-        'dark-border': '#3D3A36',
-        // Shared accent colors
-        'accent': '#B8860B',
-        'accent-dark': '#D4A84B',
-        'success': '#6AAA64',
-        'error': '#E57373',
+        // Semantic tokens - reference CSS variables from index.css
+        // To change colors, edit :root and .dark in src/index.css
+        'bg': 'var(--color-bg)',
+        'surface': 'var(--color-surface)',
+        'text': 'var(--color-text)',
+        'text-muted': 'var(--color-text-muted)',
+        'border': 'var(--color-border)',
+        'accent': 'var(--color-accent)',
+        'accent-secondary': 'var(--color-accent-secondary)',
+        'success': 'var(--color-success)',
+        'error': 'var(--color-error)',
+        // Keep for overlays and utilities
+        'transparent': 'transparent',
+        'white': '#FFFFFF',
+        'black': '#000000',
       },
       fontFamily: {
         'display': ['Playfair Display', 'Georgia', 'serif'],

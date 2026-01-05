@@ -41,9 +41,9 @@ const Card: React.FC<CardProps> = ({
       <div
         className={`
           rounded-lg overflow-hidden
-          border border-light-border dark:border-dark-border
-          bg-light-card dark:bg-dark-card
-          shadow-md dark:shadow-card-rest-dark
+          border border-border
+          bg-surface
+          shadow-md
           ${onClick ? 'cursor-pointer active:scale-95' : ''}
           ${className}
           ${sizeClasses[size]}
@@ -64,17 +64,14 @@ const Card: React.FC<CardProps> = ({
               className="w-full h-full object-cover"
             />
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-              <CategoryIcon
-                category={event.category}
-                className="text-light-muted dark:text-dark-muted w-8 h-8"
-              />
+            <div className="w-full h-full flex items-center justify-center bg-border/30">
+              <CategoryIcon category={event.category} className="text-text-muted w-8 h-8" />
             </div>
           )}
         </div>
         {/* Title section (60% width) */}
         <div className="w-[60%] h-full flex items-center px-2 py-1">
-          <span className="text-light-text dark:text-dark-text text-[11px] sm:text-xs leading-tight line-clamp-3 font-body">
+          <span className="text-text text-[11px] sm:text-xs leading-tight line-clamp-3 font-body">
             {event.friendly_name}
           </span>
         </div>
@@ -87,9 +84,9 @@ const Card: React.FC<CardProps> = ({
     <div
       className={`
         rounded-lg overflow-hidden
-        border border-light-border dark:border-dark-border
-        bg-light-card dark:bg-dark-card
-        shadow-md dark:shadow-card-rest-dark
+        border border-border
+        bg-surface
+        shadow-md
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
         ${sizeClasses[size]}
@@ -110,11 +107,8 @@ const Card: React.FC<CardProps> = ({
             className="w-full h-full object-cover"
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-            <CategoryIcon
-              category={event.category}
-              className="text-light-muted dark:text-dark-muted w-12 h-12"
-            />
+          <div className="w-full h-full flex items-center justify-center bg-border/30">
+            <CategoryIcon category={event.category} className="text-text-muted w-12 h-12" />
           </div>
         )}
 

@@ -73,10 +73,10 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, a
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-dvh min-h-screen-safe flex items-center justify-center bg-light-bg dark:bg-dark-bg transition-colors"
+        className="min-h-dvh min-h-screen-safe flex items-center justify-center bg-bg transition-colors"
       >
-        <div className="bg-light-bg/90 dark:bg-dark-bg/90 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-light-border dark:border-dark-border">
-          <h1 className="text-light-text dark:text-dark-text font-display text-xl text-center">
+        <div className="bg-bg/90 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border">
+          <h1 className="text-text font-display text-xl text-center">
             Loading events from across time...
           </h1>
         </div>
@@ -90,12 +90,12 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, a
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="min-h-dvh min-h-screen-safe bg-light-bg dark:bg-dark-bg transition-colors relative overflow-hidden"
+      className="min-h-dvh min-h-screen-safe bg-bg transition-colors relative overflow-hidden"
     >
       {/* Timeline content - full height, scrolls upward */}
       <div className="h-dvh h-screen-safe relative">
         {/* Vertical timeline line - positioned at 96px like Timeline.tsx */}
-        <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent dark:bg-accent-dark rounded-full z-0" />
+        <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
         {/* Scrolling events container - scrolls upward through the events */}
         <motion.div
@@ -119,13 +119,13 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, a
       </div>
 
       {/* Fade overlays */}
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90 z-20 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-light-bg via-light-bg/90 to-transparent dark:from-dark-bg dark:via-dark-bg/90 z-20 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
 
       {/* Semi-transparent overlay with text + animated ellipsis */}
       <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-        <div className="bg-light-bg/85 dark:bg-dark-bg/85 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-light-border/50 dark:border-dark-border/50">
-          <h1 className="text-light-text dark:text-dark-text font-display text-xl text-center">
+        <div className="bg-bg/85 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border/50">
+          <h1 className="text-text font-display text-xl text-center">
             Loading events from across time
             <LoadingEllipsis />
           </h1>

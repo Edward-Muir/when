@@ -99,10 +99,18 @@ Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `Categor
 
 Custom Tailwind in `tailwind.config.js`:
 
-- Theme colors: `light-*` / `dark-*` semantic tokens, `accent` / `accent-dark`
-- Category colors: conflict=red, disasters=gray, exploration=teal, cultural=purple, infrastructure=amber, diplomatic=blue
 - Fonts: `font-display` (Playfair Display), `font-body` (Inter), `font-mono` (DM Mono)
 - Custom animations: `shake`, `screen-shake`, `entrance`
+
+### Color System
+
+Colors are defined as CSS custom properties in `src/index.css` and referenced by Tailwind in `tailwind.config.js`. This makes palette changes trivial - just update the CSS variables.
+
+**To change colors**, edit the `:root` (light mode) and `.dark` (dark mode) blocks in `src/index.css`:
+
+**Usage in components**: Use semantic Tailwind classes like `bg-bg`, `text-text`, `border-border`, `bg-accent`, `bg-accent-secondary`. No need for `dark:` prefixes - CSS variables handle theme switching automatically.
+
+**Category colors** (conflict=red, disasters=gray, etc.) use standard Tailwind colors and are only used in EventModal.tsx badges.
 
 ### Z-Index Hierarchy (Game.tsx & Timeline.tsx)
 

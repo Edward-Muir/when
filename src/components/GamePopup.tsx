@@ -46,11 +46,8 @@ function EventImage({ event, type }: { event: HistoricalEvent; type: GamePopupTy
       {event.image_url ? (
         <img src={event.image_url} alt="" className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full flex items-center justify-center bg-light-border/30 dark:bg-dark-border/30">
-          <CategoryIcon
-            category={event.category}
-            className="text-light-muted dark:text-dark-muted w-20 h-20"
-          />
+        <div className="w-full h-full flex items-center justify-center bg-border/30">
+          <CategoryIcon category={event.category} className="text-text-muted w-20 h-20" />
         </div>
       )}
 
@@ -70,11 +67,7 @@ function EventImage({ event, type }: { event: HistoricalEvent; type: GamePopupTy
 // Sub-component for year bar
 function YearBar({ year, type }: { year: number; type: GamePopupType }) {
   const bgClass =
-    type === 'description'
-      ? 'bg-accent dark:bg-accent-dark'
-      : type === 'correct'
-        ? 'bg-success'
-        : 'bg-error';
+    type === 'description' ? 'bg-accent' : type === 'correct' ? 'bg-success' : 'bg-error';
 
   return (
     <div className={`px-4 py-3 text-center ${bgClass}`}>
@@ -129,16 +122,12 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
       <div className="flex flex-col items-center gap-3 mb-6">
         <div
           className={`w-16 h-16 rounded-full flex items-center justify-center ${
-            hasWinner ? 'bg-amber-100 dark:bg-amber-900/30' : 'bg-light-border dark:bg-dark-border'
+            hasWinner ? 'bg-accent/20' : 'bg-border'
           }`}
         >
-          <Trophy
-            className={`w-8 h-8 ${hasWinner ? 'text-amber-500' : 'text-light-muted dark:text-dark-muted'}`}
-          />
+          <Trophy className={`w-8 h-8 ${hasWinner ? 'text-accent' : 'text-text-muted'}`} />
         </div>
-        <h2 className="text-2xl font-display font-bold text-light-text dark:text-dark-text">
-          {getWinnerText()}
-        </h2>
+        <h2 className="text-2xl font-display font-bold text-text">{getWinnerText()}</h2>
       </div>
 
       {/* Stats section */}
@@ -146,13 +135,13 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
         {isSinglePlayer ? (
           // Single player stats
           <div className="text-center">
-            <p className="text-light-text dark:text-dark-text font-body">
+            <p className="text-text font-body">
               {isSuddenDeath ? (
                 <>
                   <span className="text-2xl font-bold font-mono">
                     {getPlayerStats(players[0]).correct}
                   </span>
-                  <span className="text-light-muted dark:text-dark-muted">
+                  <span className="text-text-muted">
                     {' '}
                     {getPlayerStats(players[0]).correct === 1 ? 'event' : 'events'} placed
                   </span>
@@ -162,7 +151,7 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
                   <span className="text-2xl font-bold font-mono">
                     {getPlayerStats(players[0]).correct}
                   </span>
-                  <span className="text-light-muted dark:text-dark-muted">
+                  <span className="text-text-muted">
                     {' '}
                     / {getPlayerStats(players[0]).total} correct
                   </span>
@@ -170,7 +159,7 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
               )}
             </p>
             {isSuddenDeath && getEncouragingMessage(getPlayerStats(players[0]).correct) && (
-              <p className="text-accent dark:text-accent-dark font-medium mt-2">
+              <p className="text-accent font-medium mt-2">
                 {getEncouragingMessage(getPlayerStats(players[0]).correct)}
               </p>
             )}
@@ -185,14 +174,14 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
                 <div
                   key={player.id}
                   className={`flex items-center justify-between px-3 py-2 rounded-lg ${
-                    isWinner ? 'bg-amber-100 dark:bg-amber-900/20' : 'bg-light-bg dark:bg-dark-bg'
+                    isWinner ? 'bg-accent/20' : 'bg-bg'
                   }`}
                 >
-                  <span className="font-body text-light-text dark:text-dark-text">
+                  <span className="font-body text-text">
                     {player.name}
-                    {isWinner && <Trophy className="inline-block w-4 h-4 ml-1 text-amber-500" />}
+                    {isWinner && <Trophy className="inline-block w-4 h-4 ml-1 text-accent" />}
                   </span>
-                  <span className="font-mono text-light-text dark:text-dark-text">
+                  <span className="font-mono text-text">
                     {stats.correct}/{stats.total}
                   </span>
                 </div>
@@ -234,7 +223,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25 dark:bg-black/50"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25"
           onClick={onDismiss}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -242,7 +231,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
           transition={{ duration: 0.15 }}
         >
           <motion.div
-            className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-light-border dark:border-dark-border bg-light-card dark:bg-dark-card shadow-xl dark:shadow-card-rest-dark transition-colors"
+            className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl transition-colors"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
@@ -264,7 +253,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
                   {/* Description - only for description type */}
                   {isDescription && (
                     <div className="px-4 py-3">
-                      <p className="text-light-text dark:text-dark-text text-sm leading-relaxed font-body">
+                      <p className="text-text text-sm leading-relaxed font-body">
                         {event.description}
                       </p>
                     </div>
@@ -272,10 +261,10 @@ const GamePopup: React.FC<GamePopupProps> = ({
 
                   {/* Next player indicator for multiplayer */}
                   {nextPlayer && (
-                    <div className="px-4 py-4 border-t border-light-border dark:border-dark-border bg-light-bg dark:bg-dark-bg">
-                      <p className="text-light-text dark:text-dark-text text-xl text-center font-display">
+                    <div className="px-4 py-4 border-t border-border bg-bg">
+                      <p className="text-text text-xl text-center font-display">
                         <span className="font-bold">{nextPlayer.name}</span>
-                        <span className="text-light-muted dark:text-dark-muted"> is up next</span>
+                        <span className="text-text-muted"> is up next</span>
                       </p>
                     </div>
                   )}
@@ -284,8 +273,8 @@ const GamePopup: React.FC<GamePopupProps> = ({
             )}
 
             {/* Tap to continue hint */}
-            <div className="px-4 py-2 border-t border-light-border/50 dark:border-dark-border/50">
-              <p className="text-light-muted/60 dark:text-dark-muted/60 text-xs text-center font-body">
+            <div className="px-4 py-2 border-t border-border/50">
+              <p className="text-text-muted/60 text-xs text-center font-body">
                 Tap anywhere to continue
               </p>
             </div>
