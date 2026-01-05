@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.1](https://github.com/Edward-Muir/when/compare/v0.2.0...v0.2.1) (2026-01-05)
+
+
+### Bug Fixes
+
+* Correctly place wrong text in pop up, force update on new version ([8add150](https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00))
+
 ## [0.2.0](https://github.com/Edward-Muir/when/compare/v0.1.9...v0.2.0) (2026-01-05)
 
 
