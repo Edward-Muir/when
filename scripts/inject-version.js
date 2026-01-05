@@ -17,3 +17,25 @@ const versionPath = path.join(__dirname, '..', 'src', 'version.ts');
 fs.writeFileSync(versionPath, versionContent);
 
 console.log(`Version ${version} injected into src/version.ts`);
+
+// Update service worker cache names with version
+const swPath = path.join(__dirname, '..', 'public', 'service-worker.js');
+let swContent = fs.readFileSync(swPath, 'utf8');
+
+// Replace cache version strings
+swContent = swContent.replace(
+  /const CACHE_NAME = 'when-v[^']+';/,
+  `const CACHE_NAME = 'when-v${version}';`
+);
+swContent = swContent.replace(
+  /const STATIC_CACHE = 'when-static-v[^']+';/,
+  `const STATIC_CACHE = 'when-static-v${version}';`
+);
+swContent = swContent.replace(
+  /const DYNAMIC_CACHE = 'when-dynamic-v[^']+';/,
+  `const DYNAMIC_CACHE = 'when-dynamic-v${version}';`
+);
+
+fs.writeFileSync(swPath, swContent);
+
+console.log(`Service worker cache updated to v${version}`);

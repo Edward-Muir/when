@@ -14,14 +14,10 @@ interface GamePopupProps {
   gameState?: WhenGameState;
 }
 
-// Sub-component for result badge (overlays on image for correct/incorrect)
-function ResultBadge({ isCorrect }: { isCorrect: boolean }) {
+// Sub-component for result banner (full-width colored banner at top)
+function ResultBanner({ isCorrect }: { isCorrect: boolean }) {
   return (
-    <div
-      className={`absolute top-3 left-3 flex items-center gap-2 px-3 py-2 rounded-full backdrop-blur-sm ${
-        isCorrect ? 'bg-success/90' : 'bg-error/90'
-      }`}
-    >
+    <div className={`px-4 py-2 flex items-center gap-2 ${isCorrect ? 'bg-success' : 'bg-error'}`}>
       <div className="w-5 h-5 flex items-center justify-center">
         {isCorrect ? (
           <Check className="w-5 h-5 text-white" strokeWidth={3} />
@@ -29,7 +25,7 @@ function ResultBadge({ isCorrect }: { isCorrect: boolean }) {
           <X className="w-5 h-5 text-white" strokeWidth={3} />
         )}
       </div>
-      <span className="font-semibold text-base text-white leading-none">
+      <span className="font-semibold text-lg text-white leading-none">
         {isCorrect ? 'Correct!' : 'Wrong!'}
       </span>
     </div>
@@ -37,14 +33,24 @@ function ResultBadge({ isCorrect }: { isCorrect: boolean }) {
 }
 
 // Sub-component for event header (title + year)
-function EventHeader({ event, showYear }: { event: HistoricalEvent; showYear: boolean }) {
+function EventHeader({
+  event,
+  showYear,
+  isIncorrect,
+}: {
+  event: HistoricalEvent;
+  showYear: boolean;
+  isIncorrect?: boolean;
+}) {
   return (
     <div className="px-4 py-3 border-b border-border">
       <h2 className="text-lg font-display font-semibold text-text leading-tight">
         {event.friendly_name}
       </h2>
       {showYear && (
-        <span className="text-2xl font-bold font-mono text-accent mt-1 block">
+        <span
+          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : 'text-accent'}`}
+        >
           {formatYear(event.year)}
         </span>
       )}
@@ -53,10 +59,7 @@ function EventHeader({ event, showYear }: { event: HistoricalEvent; showYear: bo
 }
 
 // Sub-component for image section (clean, no overlay)
-function EventImage({ event, type }: { event: HistoricalEvent; type: GamePopupType }) {
-  const isResult = type === 'correct' || type === 'incorrect';
-  const isCorrect = type === 'correct';
-
+function EventImage({ event }: { event: HistoricalEvent }) {
   // Calculate dynamic height based on image dimensions
   const CONTAINER_WIDTH = 340;
   const MIN_HEIGHT = 128;
@@ -81,9 +84,6 @@ function EventImage({ event, type }: { event: HistoricalEvent; type: GamePopupTy
           <CategoryIcon category={event.category} className="text-text-muted w-16 h-16" />
         </div>
       )}
-
-      {/* Result badge overlay for correct/incorrect */}
-      {isResult && <ResultBadge isCorrect={isCorrect} />}
     </div>
   );
 }
@@ -233,13 +233,6 @@ const GamePopup: React.FC<GamePopupProps> = ({
   const isCorrect = type === 'correct';
   const isIncorrect = type === 'incorrect';
 
-  // Determine top border color for feedback
-  const getBorderClass = () => {
-    if (isCorrect) return 'border-t-4 border-t-success';
-    if (isIncorrect) return 'border-t-4 border-t-error';
-    return '';
-  };
-
   return (
     <AnimatePresence>
       {isVisible && (
@@ -252,7 +245,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
           transition={{ duration: 0.15 }}
         >
           <motion.div
-            className={`w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors ${getBorderClass()}`}
+            className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
@@ -266,11 +259,14 @@ const GamePopup: React.FC<GamePopupProps> = ({
             ) : (
               event && (
                 <>
-                  {/* Header with title + year */}
-                  <EventHeader event={event} showYear={showYear} />
+                  {/* Result banner for correct/incorrect */}
+                  {(isCorrect || isIncorrect) && <ResultBanner isCorrect={isCorrect} />}
 
-                  {/* Image section (clean, no overlay text) */}
-                  <EventImage event={event} type={type} />
+                  {/* Header with title + year */}
+                  <EventHeader event={event} showYear={showYear} isIncorrect={isIncorrect} />
+
+                  {/* Image section */}
+                  <EventImage event={event} />
 
                   {/* Description - only for description type */}
                   {isDescription && (
