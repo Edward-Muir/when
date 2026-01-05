@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.4](https://github.com/Edward-Muir/when/compare/v0.1.3...v0.1.4) (2026-01-05)
+
+### Bug Fixes
+
+- remove uneeded bump files ([77873a5](https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f))
+
 ## [0.1.3](https://github.com/Edward-Muir/when/compare/v0.1.2...v0.1.3) (2026-01-04)
 
 ### Features
