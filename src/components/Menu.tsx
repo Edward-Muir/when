@@ -304,19 +304,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
             >
-              <div className="bg-accent px-4 py-3">
-                <h2 className="text-lg font-display text-white text-center">Add to Home Screen</h2>
+              <div className="px-4 py-3 border-b border-border">
+                <h2 className="text-lg font-display font-semibold text-text">Add to Home Screen</h2>
               </div>
               <div className="p-4">
                 <InstallInstructions scenario={installScenario} />
-              </div>
-              <div
-                className="px-4 py-3 border-t border-border/50 cursor-pointer"
-                onClick={() => setShowInstallModal(false)}
-              >
-                <p className="text-text-muted/60 text-sm text-center font-body">
-                  Tap anywhere to close
-                </p>
               </div>
             </motion.div>
           </div>
@@ -340,19 +332,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
             >
-              <div className="bg-accent px-4 py-3">
-                <h2 className="text-lg font-display text-white text-center">How to Play</h2>
+              <div className="px-4 py-3 border-b border-border">
+                <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
               </div>
               <div className="p-4">
                 <GameRules gameMode={gameMode} />
-              </div>
-              <div
-                className="px-4 py-3 border-t border-border/50 cursor-pointer"
-                onClick={() => setShowRulesModal(false)}
-              >
-                <p className="text-text-muted/60 text-sm text-center font-body">
-                  Tap anywhere to close
-                </p>
               </div>
             </motion.div>
           </div>

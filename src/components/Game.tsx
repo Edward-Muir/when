@@ -294,22 +294,15 @@ const Game: React.FC<GameProps> = ({
               }}
             >
               <div className="absolute inset-0 bg-black/25" />
-              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-xl">
-                {/* Header with accent background */}
-                <div className="bg-accent px-4 py-3">
-                  <h2 className="text-lg font-display text-white text-center">How to Play</h2>
+              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm">
+                {/* Header */}
+                <div className="px-4 py-3 border-b border-border">
+                  <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
                 </div>
 
                 {/* Rules content */}
-                <div className="px-5 py-5">
+                <div className="p-4">
                   <GameRules gameMode={state.gameMode} />
-                </div>
-
-                {/* Footer hint */}
-                <div className="px-4 py-3 border-t border-border/50">
-                  <p className="text-text-muted/60 text-xs text-center font-body">
-                    Tap anywhere to close
-                  </p>
                 </div>
               </div>
             </div>

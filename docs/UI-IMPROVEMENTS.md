@@ -61,6 +61,38 @@ Spacing consistency:
 - `src/components/Menu.tsx`
 - `src/components/ModeSelect.tsx`
 
+### Phase 5: Modal Simplification ✓
+
+**Goal:** Simplify info modals and popups for cleaner appearance
+
+**Changes made:**
+
+Event card popup (GamePopup.tsx):
+
+- Moved title and year to clean header at top (no longer overlays image)
+- Removed colored year bar - year now shown in header with mono font
+- Removed gradient overlay from images
+- Added subtle colored top border for correct/incorrect feedback (green/red)
+- Removed "Tap anywhere to continue" footer
+
+Game over screen:
+
+- Moved title to header area (consistent with event cards)
+- Simplified trophy - smaller icon without circle background
+- Removed footer text
+
+Info modals (How to Play, Add to Home Screen):
+
+- Removed gold/accent header backgrounds
+- Simple text headers with bottom border separator
+- Removed "Tap anywhere to close" footer
+
+**Files modified:**
+
+- `src/components/GamePopup.tsx` - Complete restructure of event card layout
+- `src/components/Menu.tsx` - Simplified Install and Rules modal headers
+- `src/components/Game.tsx` - Updated first-time rules modal
+
 ---
 
 ## Planned
