@@ -108,26 +108,6 @@ Colors are defined as CSS custom properties in `src/index.css` and referenced by
 
 **To change colors**, edit the `:root` (light mode) and `.dark` (dark mode) blocks in `src/index.css`:
 
-```css
-:root {
-  --color-bg: #e4e4e4; /* Background */
-  --color-surface: #f0f0f0; /* Cards, modals */
-  --color-text: #001524; /* Primary text */
-  --color-text-muted: #4a5568; /* Secondary text */
-  --color-border: #c8c8c8; /* Dividers */
-  --color-accent: #b8860b; /* Primary accent (goldenrod) */
-  --color-accent-secondary: #15616d; /* Secondary accent (teal) */
-  --color-success: #6aaa64; /* Correct placement */
-  --color-error: #e57373; /* Wrong placement */
-}
-
-.dark {
-  --color-bg: #0d1b2a;
-  --color-surface: #1b2838;
-  /* ... dark mode variants */
-}
-```
-
 **Usage in components**: Use semantic Tailwind classes like `bg-bg`, `text-text`, `border-border`, `bg-accent`, `bg-accent-secondary`. No need for `dark:` prefixes - CSS variables handle theme switching automatically.
 
 **Category colors** (conflict=red, disasters=gray, etc.) use standard Tailwind colors and are only used in EventModal.tsx badges.
