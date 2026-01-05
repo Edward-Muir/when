@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.0](https://github.com/Edward-Muir/when/compare/v0.1.9...v0.2.0) (2026-01-05)
+
+
+### Features
+
+* Correct colours of icons / titles ([affe544](https://github.com/Edward-Muir/when/commit/affe5447ee4143e922845fdd469874ca03da76ea))
+
+
+### Bug Fixes
+
+* remove When title from game select screen ([3842541](https://github.com/Edward-Muir/when/commit/3842541743ebeb9ca4214d086871c450f95b6d55))
+
 ## [0.1.9](https://github.com/Edward-Muir/when/compare/v0.1.8...v0.1.9) (2026-01-05)
 
 
