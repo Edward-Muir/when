@@ -207,7 +207,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
       className={`flex items-center w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
     >
       {/* Year column (fixed 96px width) with tick */}
-      <div className="w-24 flex items-center justify-end shrink-0">
+      <div className="w-24 pl-2 flex items-center justify-end shrink-0">
         <motion.span
           data-timeline-year={event.year}
           variants={yearPopVariants}

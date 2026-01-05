@@ -224,10 +224,12 @@ export function useWhenGame(): UseWhenGameReturn {
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
 
-      // 3. Show popup immediately for multiplayer
-      if (!isSinglePlayer) {
-        const nextPlayerIdx = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
-        const nextPlayer = state.players[nextPlayerIdx];
+      // 3. Show popup immediately for multiplayer, or for incorrect single-player placements
+      if (!isSinglePlayer || !result.success) {
+        const nextPlayerIdx = !isSinglePlayer
+          ? getNextActivePlayerIndex(state.currentPlayerIndex, state.players)
+          : state.currentPlayerIndex;
+        const nextPlayer = !isSinglePlayer ? state.players[nextPlayerIdx] : undefined;
         setPendingPopupState({
           popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
           pendingStateUpdate: null,
