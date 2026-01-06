@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, SquarePlus, HelpCircle, X } from 'lucide-react';
+import { Share2, SquarePlus, HelpCircle, X, Mail } from 'lucide-react';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
@@ -281,6 +281,15 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                     <span className="font-body">How to Play</span>
                   </button>
                 )}
+
+                <a
+                  href="mailto:feedback@play-when.com?subject=When%20Feedback"
+                  className={menuItemClass}
+                  onClick={onClose}
+                >
+                  <Mail className={iconClass} />
+                  <span className="font-body">Send Feedback</span>
+                </a>
               </div>
             </motion.div>
           </>
