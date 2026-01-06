@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Jan 2026 20:43:46 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 06 Jan 2026 23:05:35 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.3.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.3.1</guid>
+      <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add images to new events (<a href="https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f">7c8f4b5</a>)</li> <li>Add more events (<a href="https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a">31a44f7</a>)</li> <li>Check for updates (<a href="https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff">6169025</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Remove duplicate events (<a href="https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a">a6b7e39</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.3.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.1.5</guid>
       <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>fix release script (<a href="https://github.com/Edward-Muir/when/commit/6cc7aec0174e3c98eee8819aca94375bcdd451b9">6cc7aec</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.1.4</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.1.4</guid>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/>- remove uneeded bump files (<a href="https://github.com/Edward-Muir/when/commit/77873a5b8c958cefd477acd397cf2fdf5cd6bc9f">77873a5</a>)]]></description>
     </item>
   </channel>
 </rss>

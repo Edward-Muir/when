@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.1](https://github.com/Edward-Muir/when/compare/v0.3.0...v0.3.1) (2026-01-06)
+
+
+### Features
+
+* Add images to new events ([7c8f4b5](https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f))
+* Add more events ([31a44f7](https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a))
+* Check for updates ([6169025](https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff))
+
+
+### Bug Fixes
+
+* Remove duplicate events ([a6b7e39](https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a))
+
 ## [0.3.0](https://github.com/Edward-Muir/when/compare/v0.2.2...v0.3.0) (2026-01-06)
 
 
