@@ -33,17 +33,6 @@
     "image_height": 152
   },
   {
-    "name": "wheel-invention",
-    "friendly_name": "Invention of the Wheel",
-    "year": -3500,
-    "category": "infrastructure",
-    "description": "The wheel was invented in Mesopotamia, transforming transportation.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg/330px-Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg",
-    "image_width": 330,
-    "image_height": 220
-  },
-  {
     "name": "skara-brae",
     "friendly_name": "Skara Brae Settlement",
     "year": -3180,
@@ -2108,5 +2097,69 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg/330px-Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg",
     "image_width": 330,
     "image_height": 642
+  },
+  {
+    "name": "newgrange-built",
+    "friendly_name": "Newgrange Built",
+    "year": -3200,
+    "category": "infrastructure",
+    "description": "The Irish passage tomb was constructed, predating the Egyptian pyramids by 500 years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "museum-alexandria-founded",
+    "friendly_name": "Museum of Alexandria Founded",
+    "year": -290,
+    "category": "infrastructure",
+    "description": "The Mouseion of Alexandria was established by Ptolemy I as a center of learning, housing the famous Library of Alexandria.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "globe-theatre-built",
+    "friendly_name": "Globe Theatre Built",
+    "year": 1599,
+    "category": "infrastructure",
+    "description": "Shakespeare's Globe Theatre was constructed in London, becoming the primary venue for his plays and the Lord Chamberlain's Men.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "new-amsterdam-becomes-new-york",
+    "friendly_name": "New Amsterdam Becomes New York",
+    "year": 1664,
+    "category": "infrastructure",
+    "description": "The English captured the Dutch colony of New Amsterdam and renamed it New York in honor of the Duke of York.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "metropolitan-police-founded",
+    "friendly_name": "Metropolitan Police Founded",
+    "year": 1829,
+    "category": "infrastructure",
+    "description": "Sir Robert Peel established the Metropolitan Police Service in London, creating the first modern professional police force.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "transatlantic-cable-completed",
+    "friendly_name": "Transatlantic Cable Completed",
+    "year": 1866,
+    "category": "infrastructure",
+    "description": "The first permanent transatlantic telegraph cable connected Europe and North America, enabling instant communication across the ocean.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "great-railroad-strike-1877",
+    "friendly_name": "Great Railroad Strike",
+    "year": 1877,
+    "category": "infrastructure",
+    "description": "The first major American railroad strike began in West Virginia and spread nationwide, marking a turning point in U.S. labor history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-commercial-radio-broadcast",
+    "friendly_name": "First Commercial Radio Broadcast",
+    "year": 1920,
+    "category": "infrastructure",
+    "description": "KDKA in Pittsburgh broadcast the Harding-Cox presidential election results, marking the start of commercial radio broadcasting.",
+    "difficulty": "medium"
   }
 ]

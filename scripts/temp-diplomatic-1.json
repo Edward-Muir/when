@@ -1,0 +1,522 @@
+[
+  {
+    "name": "neanderthals-thrive-europe",
+    "friendly_name": "Neanderthals Thrive in Europe",
+    "year": -100000,
+    "category": "diplomatic",
+    "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-irrigation-systems",
+    "friendly_name": "First Irrigation Systems",
+    "year": -5000,
+    "category": "diplomatic",
+    "description": "Ancient Mesopotamians developed canal systems to control water flow, enabling large-scale agriculture and the rise of civilization.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "minoan-civilization-peak",
+    "friendly_name": "Minoan Civilization Peak",
+    "year": -2000,
+    "category": "diplomatic",
+    "description": "The Minoan civilization on Crete reached its height, building elaborate palaces like Knossos and dominating Aegean trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "abrahams-journey-traditional",
+    "friendly_name": "Abraham's Journey (Traditional Dating)",
+    "year": -1800,
+    "category": "diplomatic",
+    "description": "According to tradition, Abraham migrated from Ur to Canaan, establishing the covenant that founded the Abrahamic faiths.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "david-establishes-jerusalem-capital",
+    "friendly_name": "David Establishes Jerusalem as Capital",
+    "year": -1000,
+    "category": "diplomatic",
+    "description": "King David captured Jerusalem from the Jebusites and made it the political and religious capital of the united Israelite kingdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "assyrian-empire-expansion",
+    "friendly_name": "Assyrian Empire Expansion",
+    "year": -900,
+    "category": "diplomatic",
+    "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-of-israel-northern-kingdom",
+    "friendly_name": "Fall of Israel (Northern Kingdom)",
+    "year": -722,
+    "category": "diplomatic",
+    "description": "Assyria conquered the northern Kingdom of Israel, deporting its population and ending the Ten Tribes as a distinct entity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fall-of-nineveh",
+    "friendly_name": "Fall of Nineveh",
+    "year": -612,
+    "category": "diplomatic",
+    "description": "A coalition of Babylonians and Medes destroyed Nineveh, ending the Assyrian Empire after centuries of dominance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "caesar-invades-britain",
+    "friendly_name": "Caesar Invades Britain",
+    "year": -55,
+    "category": "diplomatic",
+    "description": "Julius Caesar led two expeditions to Britain, the first Roman military operations on the island, though no permanent conquest resulted.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "five-good-emperors-era-begins",
+    "friendly_name": "Five Good Emperors Era Begins",
+    "year": 96,
+    "category": "diplomatic",
+    "description": "Nerva's accession began Rome's most stable period, with emperors chosen by merit rather than heredity for nearly a century.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "end-of-pax-romana",
+    "friendly_name": "End of Pax Romana",
+    "year": 180,
+    "category": "diplomatic",
+    "description": "The death of Marcus Aurelius ended two centuries of relative peace and prosperity, beginning Rome's slow decline.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "visigoths-settle-aquitaine",
+    "friendly_name": "Visigoths Settle in Aquitaine",
+    "year": 418,
+    "category": "diplomatic",
+    "description": "Rome granted the Visigoths land in southwestern Gaul as foederati, establishing the first Germanic kingdom within the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "theodoric-establishes-ostrogothic-kingdom",
+    "friendly_name": "Theodoric Establishes Ostrogothic Kingdom",
+    "year": 493,
+    "category": "diplomatic",
+    "description": "Theodoric the Great conquered Italy and established the Ostrogothic Kingdom, preserving Roman institutions under Gothic rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baghdad-founded",
+    "friendly_name": "Baghdad Founded",
+    "year": 762,
+    "category": "diplomatic",
+    "description": "Caliph al-Mansur founded Baghdad as the new Abbasid capital, which became the world's largest city and center of learning.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "treaty-of-aachen",
+    "friendly_name": "Treaty of Aachen",
+    "year": 812,
+    "category": "diplomatic",
+    "description": "The Byzantine Empire recognized Charlemagne as Emperor of the West, acknowledging the permanent division of the Roman legacy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rurik-founds-novgorod",
+    "friendly_name": "Rurik Founds Novgorod",
+    "year": 862,
+    "category": "diplomatic",
+    "description": "The Varangian prince Rurik established rule at Novgorod, founding the dynasty that would rule Russia for over 700 years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fatimids-conquer-egypt",
+    "friendly_name": "Fatimids Conquer Egypt",
+    "year": 969,
+    "category": "diplomatic",
+    "description": "The Fatimid Caliphate conquered Egypt and founded Cairo, establishing a rival Shia caliphate to challenge Abbasid authority.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "seljuk-turks-capture-baghdad",
+    "friendly_name": "Seljuk Turks Capture Baghdad",
+    "year": 1055,
+    "category": "diplomatic",
+    "description": "The Seljuk Turks entered Baghdad and became the real power behind the Abbasid caliphs, reshaping the Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "investiture-controversy-begins",
+    "friendly_name": "Investiture Controversy Begins",
+    "year": 1076,
+    "category": "diplomatic",
+    "description": "Pope Gregory VII and Emperor Henry IV clashed over the right to appoint church officials, sparking a decades-long power struggle.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "walk-to-canossa",
+    "friendly_name": "Walk to Canossa",
+    "year": 1077,
+    "category": "diplomatic",
+    "description": "Emperor Henry IV stood barefoot in the snow for three days seeking Pope Gregory VII's forgiveness after excommunication.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "toledo-reconquered",
+    "friendly_name": "Toledo Reconquered",
+    "year": 1085,
+    "category": "diplomatic",
+    "description": "Alfonso VI of Castile captured Toledo, a major Reconquista victory that recovered the former Visigothic capital from Muslim rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-of-edessa",
+    "friendly_name": "Fall of Edessa",
+    "year": 1144,
+    "category": "diplomatic",
+    "description": "Zengi captured the Crusader County of Edessa, the first Crusader state to fall, triggering the Second Crusade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "minamoto-yoritomo-becomes-shogun",
+    "friendly_name": "Minamoto Yoritomo Becomes Shogun",
+    "year": 1192,
+    "category": "diplomatic",
+    "description": "Minamoto Yoritomo was named shogun, establishing the Kamakura shogunate and beginning seven centuries of samurai rule in Japan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mamluks-take-power-egypt",
+    "friendly_name": "Mamluks Take Power in Egypt",
+    "year": 1250,
+    "category": "diplomatic",
+    "description": "The Mamluks, former slave soldiers, seized power in Egypt and would later halt the Mongol advance at Ain Jalut.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sicilian-vespers",
+    "friendly_name": "Sicilian Vespers",
+    "year": 1282,
+    "category": "diplomatic",
+    "description": "A popular uprising in Palermo led to the massacre of French Angevins, ending French rule and bringing Aragon to power in Sicily.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "henry-iv-deposes-richard-ii",
+    "friendly_name": "Henry IV Deposes Richard II",
+    "year": 1399,
+    "category": "diplomatic",
+    "description": "Henry Bolingbroke deposed Richard II and became Henry IV, founding the Lancastrian dynasty and setting the stage for civil war.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "council-of-florence",
+    "friendly_name": "Council of Florence",
+    "year": 1438,
+    "category": "diplomatic",
+    "description": "The Council attempted to reunite the Eastern and Western churches, briefly achieving union before Byzantine rejection.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "portuguese-capture-goa",
+    "friendly_name": "Portuguese Capture Goa",
+    "year": 1510,
+    "category": "diplomatic",
+    "description": "Afonso de Albuquerque conquered Goa, establishing it as the capital of Portuguese India and a major trading hub for four centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "augsburg-confession",
+    "friendly_name": "Augsburg Confession",
+    "year": 1530,
+    "category": "diplomatic",
+    "description": "Lutheran princes presented their confession of faith to Emperor Charles V, formally establishing Protestant doctrine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pizarro-executes-atahualpa",
+    "friendly_name": "Pizarro Executes Atahualpa",
+    "year": 1533,
+    "category": "diplomatic",
+    "description": "Spanish conquistador Francisco Pizarro executed the Inca emperor Atahualpa despite receiving history's largest ransom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dissolution-of-monasteries",
+    "friendly_name": "Dissolution of the Monasteries",
+    "year": 1536,
+    "category": "diplomatic",
+    "description": "Henry VIII began dissolving English monasteries, seizing their wealth and redistributing lands to loyal supporters.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "servetus-burned-at-stake",
+    "friendly_name": "Servetus Burned at Stake",
+    "year": 1553,
+    "category": "diplomatic",
+    "description": "Michael Servetus was burned for heresy in Calvin's Geneva for denying the Trinity, showing Protestant intolerance of dissent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mercator-projection-map",
+    "friendly_name": "Mercator Projection Map",
+    "year": 1569,
+    "category": "diplomatic",
+    "description": "Gerardus Mercator published his world map with a new projection that enabled straight-line navigation, revolutionizing seafaring.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "execution-mary-queen-scots",
+    "friendly_name": "Execution of Mary Queen of Scots",
+    "year": 1587,
+    "category": "diplomatic",
+    "description": "Elizabeth I executed her Catholic cousin Mary Stuart after years of imprisonment, removing a rival claimant to the English throne.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-korean-turtle-ships",
+    "friendly_name": "First Korean Turtle Ships",
+    "year": 1597,
+    "category": "diplomatic",
+    "description": "Admiral Yi Sun-sin deployed armored turtle ships against the Japanese navy, helping Korea resist Toyotomi Hideyoshi's invasion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "giordano-bruno-burned",
+    "friendly_name": "Giordano Bruno Burned",
+    "year": 1600,
+    "category": "diplomatic",
+    "description": "The philosopher Giordano Bruno was burned at the stake in Rome for heresy, including his belief in an infinite universe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gunpowder-plot",
+    "friendly_name": "Gunpowder Plot",
+    "year": 1605,
+    "category": "diplomatic",
+    "description": "Guy Fawkes and Catholic conspirators attempted to blow up Parliament and King James I, but the plot was discovered and foiled.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "defenestration-of-prague",
+    "friendly_name": "Defenestration of Prague",
+    "year": 1618,
+    "category": "diplomatic",
+    "description": "Protestant nobles threw Catholic officials from a window in Prague Castle, sparking the Thirty Years' War.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "great-migration-massachusetts",
+    "friendly_name": "Great Migration to Massachusetts",
+    "year": 1630,
+    "category": "diplomatic",
+    "description": "Over 20,000 Puritans migrated to Massachusetts Bay Colony in a decade, establishing English Protestant settlements in New England.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "galileos-trial",
+    "friendly_name": "Galileo's Trial",
+    "year": 1633,
+    "category": "diplomatic",
+    "description": "The Inquisition tried Galileo for supporting heliocentrism, forcing him to recant and placing him under house arrest for life.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "putney-debates",
+    "friendly_name": "Putney Debates",
+    "year": 1647,
+    "category": "diplomatic",
+    "description": "New Model Army officers and soldiers debated England's future constitution, with radicals arguing for expanded voting rights.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "treaty-of-pereyaslav",
+    "friendly_name": "Treaty of Pereyaslav",
+    "year": 1654,
+    "category": "diplomatic",
+    "description": "Ukrainian Cossacks agreed to Russian protection, beginning the process that would bring Ukraine under Muscovite control.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "royal-society-founded",
+    "friendly_name": "Royal Society Founded",
+    "year": 1660,
+    "category": "diplomatic",
+    "description": "Scientists founded the Royal Society of London, the world's oldest national scientific institution still in existence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kangxi-emperor-begins-reign",
+    "friendly_name": "Kangxi Emperor Begins Reign",
+    "year": 1661,
+    "category": "diplomatic",
+    "description": "The Kangxi Emperor began his 61-year reign, the longest in Chinese history, consolidating Qing rule and expanding the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hudsons-bay-company-founded",
+    "friendly_name": "Hudson's Bay Company Founded",
+    "year": 1670,
+    "category": "diplomatic",
+    "description": "Charles II granted a royal charter creating the Hudson's Bay Company, which would control much of North American fur trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pennsylvania-founded",
+    "friendly_name": "Pennsylvania Founded",
+    "year": 1681,
+    "category": "diplomatic",
+    "description": "William Penn received a charter for Pennsylvania, establishing it as a Quaker colony with religious tolerance and fair Native treaties.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "salem-witch-trials",
+    "friendly_name": "Salem Witch Trials",
+    "year": 1692,
+    "category": "diplomatic",
+    "description": "Mass hysteria in colonial Massachusetts led to the execution of twenty people accused of witchcraft before sanity prevailed.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "treaty-of-rastatt",
+    "friendly_name": "Treaty of Rastatt",
+    "year": 1714,
+    "category": "diplomatic",
+    "description": "Austria and France ended the War of Spanish Succession, with Austria gaining the Spanish Netherlands and Italian territories.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-freemason-grand-lodge",
+    "friendly_name": "First Freemason Grand Lodge",
+    "year": 1717,
+    "category": "diplomatic",
+    "description": "Four London lodges formed the first Grand Lodge of Freemasonry, beginning the organization's formal institutional structure.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "south-sea-bubble",
+    "friendly_name": "South Sea Bubble",
+    "year": 1720,
+    "category": "diplomatic",
+    "description": "The South Sea Company's stock collapsed after massive speculation, ruining investors and causing Britain's first financial crisis.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "robert-walpole-first-pm",
+    "friendly_name": "Robert Walpole Becomes First PM",
+    "year": 1721,
+    "category": "diplomatic",
+    "description": "Robert Walpole became First Lord of the Treasury, effectively creating the role of Prime Minister in British government.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "treaty-of-nystad",
+    "friendly_name": "Treaty of Nystad",
+    "year": 1721,
+    "category": "diplomatic",
+    "description": "Russia and Sweden ended the Great Northern War, with Russia gaining Baltic territories and emerging as a major European power.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-saudi-state-established",
+    "friendly_name": "First Saudi State Established",
+    "year": 1744,
+    "category": "diplomatic",
+    "description": "Muhammad ibn Saud allied with Islamic reformer Muhammad ibn Abd al-Wahhab, founding the first Saudi state in Arabia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "black-hole-of-calcutta",
+    "friendly_name": "Black Hole of Calcutta",
+    "year": 1756,
+    "category": "diplomatic",
+    "description": "British prisoners allegedly died in an overcrowded cell in Calcutta, becoming propaganda justifying British conquest of Bengal.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rousseaus-social-contract",
+    "friendly_name": "Rousseau's Social Contract",
+    "year": 1762,
+    "category": "diplomatic",
+    "description": "Jean-Jacques Rousseau published his influential political philosophy arguing that legitimate rule requires popular consent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "stamp-act",
+    "friendly_name": "Stamp Act",
+    "year": 1765,
+    "category": "diplomatic",
+    "description": "Britain imposed direct taxation on American colonies, sparking protests and the slogan 'no taxation without representation.'",
+    "difficulty": "medium"
+  },
+  {
+    "name": "france-enters-american-revolution",
+    "friendly_name": "France Enters American Revolution",
+    "year": 1778,
+    "category": "diplomatic",
+    "description": "France formally allied with the American colonies against Britain, providing crucial military and financial support for independence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "watts-rotary-steam-engine",
+    "friendly_name": "Watt's Rotary Steam Engine",
+    "year": 1782,
+    "category": "diplomatic",
+    "description": "James Watt patented the rotary steam engine, enabling steam power to drive machinery and accelerating the Industrial Revolution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "us-constitution-written",
+    "friendly_name": "US Constitution Written",
+    "year": 1787,
+    "category": "diplomatic",
+    "description": "Delegates in Philadelphia drafted the US Constitution, creating a federal system with separation of powers still in use today.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tennis-court-oath",
+    "friendly_name": "Tennis Court Oath",
+    "year": 1789,
+    "category": "diplomatic",
+    "description": "French National Assembly members swore not to disband until they had written a constitution, defying royal authority.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-bank-united-states",
+    "friendly_name": "First Bank of the United States",
+    "year": 1791,
+    "category": "diplomatic",
+    "description": "Alexander Hamilton established the First Bank of the United States to manage government finances and stabilize the economy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "execution-of-robespierre",
+    "friendly_name": "Execution of Robespierre",
+    "year": 1794,
+    "category": "diplomatic",
+    "description": "Maximilien Robespierre was guillotined during the Thermidorian Reaction, ending the Terror and the radical phase of the Revolution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "malthus-essay-population",
+    "friendly_name": "Malthus' Essay on Population",
+    "year": 1798,
+    "category": "diplomatic",
+    "description": "Thomas Malthus argued that population growth would outpace food supply, influencing economics and Darwin's evolution theory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "napoleons-egyptian-campaign",
+    "friendly_name": "Napoleon's Egyptian Campaign",
+    "year": 1798,
+    "category": "diplomatic",
+    "description": "Napoleon invaded Egypt to threaten British India, bringing scientists who discovered the Rosetta Stone during the expedition.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "act-of-union-ireland",
+    "friendly_name": "Act of Union (Ireland)",
+    "year": 1800,
+    "category": "diplomatic",
+    "description": "Britain and Ireland merged their parliaments, creating the United Kingdom of Great Britain and Ireland.",
+    "difficulty": "medium"
+  }
+]

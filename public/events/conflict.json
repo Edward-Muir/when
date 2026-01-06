@@ -171,7 +171,7 @@
     "category": "conflict",
     "description": "Caesar's crossing sparked civil war and the end of the Roman Republic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Foce_rubicone_1_by_Stefano_Bolognini.JPG/330px-Foce_rubicone_1_by_Stefano_Bolognini.JPG",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Cesare_varca_rubicone_bartolomeo_pinelli.png",
     "image_width": 330,
     "image_height": 440
   },
@@ -193,7 +193,7 @@
     "category": "conflict",
     "description": "Octavian defeated Antony and Cleopatra, becoming sole ruler of Rome.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Medinaceli_Actium_reliefs_06.jpg/330px-Medinaceli_Actium_reliefs_06.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Johann_Georg_Platzer_%281704-1761%29_-_Antony_and_Cleopatra_at_the_Battle_of_Actium_-_WM.1496-1948_-_Apsley_House.jpg",
     "image_width": 330,
     "image_height": 252
   },
@@ -2681,5 +2681,1389 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif/330px-2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif",
     "image_width": 330,
     "image_height": 222
+  },
+  {
+    "name": "reichstag-fire",
+    "friendly_name": "Reichstag Fire",
+    "year": 1933,
+    "category": "conflict",
+    "description": "The German parliament building was set ablaze, allowing Hitler to consolidate power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "operation-barbarossa",
+    "friendly_name": "Operation Barbarossa",
+    "year": 1941,
+    "category": "conflict",
+    "description": "Nazi Germany launched the largest military invasion in history against the Soviet Union.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wannsee-conference",
+    "friendly_name": "Wannsee Conference",
+    "year": 1942,
+    "category": "conflict",
+    "description": "Nazi officials met to coordinate the systematic genocide of European Jews.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "warsaw-ghetto-uprising",
+    "friendly_name": "Warsaw Ghetto Uprising",
+    "year": 1943,
+    "category": "conflict",
+    "description": "Jewish resistance fighters staged a major armed revolt against Nazi deportations.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "italy-surrenders-ww2",
+    "friendly_name": "Italy Surrenders",
+    "year": 1943,
+    "category": "conflict",
+    "description": "Italy signed an armistice with the Allies, exiting the Axis powers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tehran-conference",
+    "friendly_name": "Tehran Conference",
+    "year": 1943,
+    "category": "conflict",
+    "description": "Roosevelt, Churchill, and Stalin met to coordinate Allied strategy against Nazi Germany.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "liberation-paris",
+    "friendly_name": "Liberation of Paris",
+    "year": 1944,
+    "category": "conflict",
+    "description": "Allied and French Resistance forces freed Paris from German occupation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "liberation-auschwitz",
+    "friendly_name": "Liberation of Auschwitz",
+    "year": 1945,
+    "category": "conflict",
+    "description": "Soviet forces liberated the Nazi concentration camp, revealing the Holocaust's horrors.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-fdr",
+    "friendly_name": "Death of FDR",
+    "year": 1945,
+    "category": "conflict",
+    "description": "President Franklin D. Roosevelt died in office, just weeks before Germany's surrender.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-hitler",
+    "friendly_name": "Death of Hitler",
+    "year": 1945,
+    "category": "conflict",
+    "description": "Adolf Hitler died by suicide in his Berlin bunker as Allied forces closed in.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gandhi-assassination",
+    "friendly_name": "Gandhi Assassinated",
+    "year": 1948,
+    "category": "conflict",
+    "description": "Mahatma Gandhi was shot by a Hindu nationalist in New Delhi.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rfk-assassination",
+    "friendly_name": "Robert Kennedy Assassinated",
+    "year": 1968,
+    "category": "conflict",
+    "description": "Senator Robert F. Kennedy was shot after winning the California primary.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shaka-zulu-kingdom",
+    "friendly_name": "Shaka Zulu Founds Zulu Kingdom",
+    "year": 1816,
+    "category": "conflict",
+    "description": "Shaka unified Zulu clans into a powerful African kingdom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "trail-of-tears",
+    "friendly_name": "Trail of Tears",
+    "year": 1838,
+    "category": "conflict",
+    "description": "Forced relocation of Native American nations resulted in thousands of deaths.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sargon-akkad-empire",
+    "friendly_name": "Sargon of Akkad Founds First Empire",
+    "year": -2334,
+    "category": "conflict",
+    "description": "Sargon the Great created the world's first known empire in Mesopotamia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "babylonian-captivity",
+    "friendly_name": "Babylonian Captivity Begins",
+    "year": -586,
+    "category": "conflict",
+    "description": "Nebuchadnezzar II destroyed Jerusalem's Temple and exiled the Jews to Babylon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-han-dynasty",
+    "friendly_name": "Fall of Han Dynasty",
+    "year": 220,
+    "category": "conflict",
+    "description": "China's Han Dynasty collapsed, beginning centuries of division and civil war.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "new-kingdom-egypt-begins",
+    "friendly_name": "Beginning of New Kingdom Egypt",
+    "year": -1550,
+    "category": "conflict",
+    "description": "Egypt expelled the Hyksos invaders and began its most powerful imperial era.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peisistratos-tyrant",
+    "friendly_name": "Peisistratos Becomes Tyrant of Athens",
+    "year": -546,
+    "category": "conflict",
+    "description": "Peisistratos seized power in Athens through force, ruling as a popular tyrant.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-leuctra",
+    "friendly_name": "Battle of Leuctra",
+    "year": -371,
+    "category": "conflict",
+    "description": "Thebes defeated Sparta, ending Spartan military dominance in Greece.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-pydna",
+    "friendly_name": "Battle of Pydna",
+    "year": -168,
+    "category": "conflict",
+    "description": "Rome crushed the Macedonian army, ending the Antigonid dynasty.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-qin-shi-huang",
+    "friendly_name": "Death of Qin Shi Huang",
+    "year": -210,
+    "category": "conflict",
+    "description": "China's first emperor died while seeking immortality, leaving a vast terracotta army.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-carrhae",
+    "friendly_name": "Battle of Carrhae",
+    "year": -53,
+    "category": "conflict",
+    "description": "Parthian horse archers annihilated Roman legions and killed Crassus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-pharsalus",
+    "friendly_name": "Battle of Pharsalus",
+    "year": -48,
+    "category": "conflict",
+    "description": "Caesar decisively defeated Pompey's larger army, winning the Roman civil war.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "year-four-emperors",
+    "friendly_name": "Year of the Four Emperors",
+    "year": 69,
+    "category": "conflict",
+    "description": "Civil war tore Rome apart as four men claimed the throne after Nero's death.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "year-five-emperors",
+    "friendly_name": "Year of the Five Emperors",
+    "year": 193,
+    "category": "conflict",
+    "description": "Five claimants fought for the Roman throne after Commodus was assassinated.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "yellow-turban-rebellion",
+    "friendly_name": "Yellow Turban Rebellion",
+    "year": 184,
+    "category": "conflict",
+    "description": "Peasant uprising in China marked the beginning of the Han Dynasty's collapse.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-milvian-bridge",
+    "friendly_name": "Battle of Milvian Bridge",
+    "year": 312,
+    "category": "conflict",
+    "description": "Constantine defeated Maxentius after reportedly seeing a Christian vision before battle.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "crossing-of-the-rhine",
+    "friendly_name": "Crossing of the Rhine",
+    "year": 406,
+    "category": "conflict",
+    "description": "Germanic tribes crossed the frozen Rhine, beginning a massive migration into the Roman Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vandals-conquer-north-africa",
+    "friendly_name": "Vandals Conquer North Africa",
+    "year": 429,
+    "category": "conflict",
+    "description": "The Vandals crossed into Africa, eventually establishing a kingdom that threatened Rome's grain supply.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vandals-take-carthage",
+    "friendly_name": "Vandals Take Carthage",
+    "year": 439,
+    "category": "conflict",
+    "description": "The Vandals captured Carthage, creating a naval power that would sack Rome in 455.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nika-riots",
+    "friendly_name": "Nika Riots",
+    "year": 532,
+    "category": "conflict",
+    "description": "Constantinople erupted in violence that nearly overthrew Emperor Justinian.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-islamic-civil-war",
+    "friendly_name": "First Islamic Civil War",
+    "year": 656,
+    "category": "conflict",
+    "description": "Conflict over succession after Uthman's death led to the Sunni-Shia divide.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-karbala",
+    "friendly_name": "Battle of Karbala",
+    "year": 680,
+    "category": "conflict",
+    "description": "Husayn ibn Ali was killed fighting the Umayyads, becoming a martyr central to Shia Islam.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-guadalete",
+    "friendly_name": "Battle of Guadalete",
+    "year": 711,
+    "category": "conflict",
+    "description": "Umayyad forces defeated the Visigoths, beginning the Muslim conquest of Iberia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siege-of-constantinople-717",
+    "friendly_name": "Siege of Constantinople",
+    "year": 717,
+    "category": "conflict",
+    "description": "Arab forces failed to capture the Byzantine capital after a year-long siege.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "an-lushan-rebellion",
+    "friendly_name": "An Lushan Rebellion",
+    "year": 755,
+    "category": "conflict",
+    "description": "Devastating rebellion that killed millions and permanently weakened Tang Dynasty China.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-heathen-army",
+    "friendly_name": "Great Heathen Army Invades England",
+    "year": 865,
+    "category": "conflict",
+    "description": "A massive Viking force invaded England, conquering most Anglo-Saxon kingdoms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-hastings",
+    "friendly_name": "Battle of Hastings",
+    "year": 1066,
+    "category": "conflict",
+    "description": "William the Conqueror defeated King Harold II, beginning Norman rule of England.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "battle-of-stamford-bridge",
+    "friendly_name": "Battle of Stamford Bridge",
+    "year": 1066,
+    "category": "conflict",
+    "description": "King Harold defeated a Norse invasion just days before facing the Normans at Hastings.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "capture-of-jerusalem-1099",
+    "friendly_name": "Capture of Jerusalem",
+    "year": 1099,
+    "category": "conflict",
+    "description": "Crusaders stormed Jerusalem, establishing a Christian kingdom in the Holy Land.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-legnano",
+    "friendly_name": "Battle of Legnano",
+    "year": 1176,
+    "category": "conflict",
+    "description": "The Lombard League defeated Emperor Frederick Barbarossa, securing Italian city independence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-hattin",
+    "friendly_name": "Battle of Hattin",
+    "year": 1187,
+    "category": "conflict",
+    "description": "Saladin crushed the Crusader army, leaving Jerusalem defenseless.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "saladin-recaptures-jerusalem",
+    "friendly_name": "Saladin Recaptures Jerusalem",
+    "year": 1187,
+    "category": "conflict",
+    "description": "Saladin retook Jerusalem from the Crusaders after 88 years of Christian rule.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-arsuf",
+    "friendly_name": "Battle of Arsuf",
+    "year": 1191,
+    "category": "conflict",
+    "description": "Richard the Lionheart defeated Saladin's forces during the Third Crusade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "albigensian-crusade-begins",
+    "friendly_name": "Albigensian Crusade Begins",
+    "year": 1208,
+    "category": "conflict",
+    "description": "Pope Innocent III launched a crusade against Cathar heretics in southern France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-invasion-jin",
+    "friendly_name": "Mongol Invasion of Jin Dynasty",
+    "year": 1211,
+    "category": "conflict",
+    "description": "Genghis Khan invaded northern China, beginning the Mongol conquest of the Jin Dynasty.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "childrens-crusade",
+    "friendly_name": "Children's Crusade",
+    "year": 1212,
+    "category": "conflict",
+    "description": "Thousands of young people marched to reclaim the Holy Land, most dying or being enslaved.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-bouvines",
+    "friendly_name": "Battle of Bouvines",
+    "year": 1214,
+    "category": "conflict",
+    "description": "Philip II of France defeated England and the Holy Roman Empire, establishing French dominance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-legnica",
+    "friendly_name": "Battle of Legnica",
+    "year": 1241,
+    "category": "conflict",
+    "description": "Mongols annihilated a European army, spreading terror across Christendom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-ain-jalut",
+    "friendly_name": "Battle of Ain Jalut",
+    "year": 1260,
+    "category": "conflict",
+    "description": "Mamluks defeated the Mongols, halting their advance into the Middle East and Africa.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kamikaze-mongol-fleet",
+    "friendly_name": "Kamikaze Destroys Mongol Fleet",
+    "year": 1281,
+    "category": "conflict",
+    "description": "A typhoon destroyed the Mongol invasion fleet, saving Japan and inspiring the 'divine wind' legend.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-golden-spurs",
+    "friendly_name": "Battle of the Golden Spurs",
+    "year": 1302,
+    "category": "conflict",
+    "description": "Flemish militia defeated French knights at Courtrai, collecting golden spurs from the fallen.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-bannockburn",
+    "friendly_name": "Battle of Bannockburn",
+    "year": 1314,
+    "category": "conflict",
+    "description": "Robert the Bruce's Scottish forces defeated the English army, securing Scottish independence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-sluys",
+    "friendly_name": "Battle of Sluys",
+    "year": 1340,
+    "category": "conflict",
+    "description": "English longbowmen destroyed the French fleet, gaining naval supremacy in the Hundred Years' War.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peasants-revolt-england",
+    "friendly_name": "Peasants' Revolt",
+    "year": 1381,
+    "category": "conflict",
+    "description": "English peasants led by Wat Tyler marched on London, demanding an end to serfdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-kosovo",
+    "friendly_name": "Battle of Kosovo",
+    "year": 1389,
+    "category": "conflict",
+    "description": "Ottomans defeated the Serbs in a battle that became central to Serbian national identity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-grunwald",
+    "friendly_name": "Battle of Grunwald",
+    "year": 1410,
+    "category": "conflict",
+    "description": "Poland-Lithuania crushed the Teutonic Knights, ending their Baltic expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joan-of-arc-executed",
+    "friendly_name": "Joan of Arc Executed",
+    "year": 1431,
+    "category": "conflict",
+    "description": "The French heroine was burned at the stake by the English after a trial for heresy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-nancy",
+    "friendly_name": "Battle of Nancy",
+    "year": 1477,
+    "category": "conflict",
+    "description": "Swiss forces killed Charles the Bold, ending Burgundy as an independent power.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-bosworth-field",
+    "friendly_name": "Battle of Bosworth Field",
+    "year": 1485,
+    "category": "conflict",
+    "description": "Henry Tudor defeated Richard III, ending the Wars of the Roses and founding the Tudor dynasty.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-flodden",
+    "friendly_name": "Battle of Flodden",
+    "year": 1513,
+    "category": "conflict",
+    "description": "England defeated Scotland, killing King James IV and much of the Scottish nobility.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-marignano",
+    "friendly_name": "Battle of Marignano",
+    "year": 1515,
+    "category": "conflict",
+    "description": "Francis I of France defeated the Swiss, conquering Milan and establishing French dominance in Italy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-of-tenochtitlan",
+    "friendly_name": "Fall of Tenochtitlan",
+    "year": 1521,
+    "category": "conflict",
+    "description": "Hernán Cortés and his indigenous allies conquered the Aztec capital, ending the Aztec Empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hyksos-invasion-of-egypt",
+    "friendly_name": "Hyksos Invasion of Egypt",
+    "year": -1650,
+    "category": "conflict",
+    "description": "Semitic peoples from Western Asia conquered Lower Egypt, establishing the 15th Dynasty and introducing horse-drawn chariots to Egyptian warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pompey-conquers-jerusalem",
+    "friendly_name": "Pompey Conquers Jerusalem",
+    "year": -63,
+    "category": "conflict",
+    "description": "Roman general Pompey captured Jerusalem during the Third Mithridatic War, ending the Hasmonean Kingdom's independence and bringing Judea under Roman control.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-conquest-of-britain",
+    "friendly_name": "Roman Conquest of Britain",
+    "year": 43,
+    "category": "conflict",
+    "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "clovis-defeats-visigoths-at-vouille",
+    "friendly_name": "Clovis Defeats Visigoths at Vouillé",
+    "year": 507,
+    "category": "conflict",
+    "description": "Frankish King Clovis I defeated the Visigoths, killing King Alaric II and driving the Visigoths from most of Gaul into Hispania.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-badr",
+    "friendly_name": "Battle of Badr",
+    "year": 624,
+    "category": "conflict",
+    "description": "The first major military victory for Muslims, where Prophet Muhammad's forces defeated a larger Meccan army, marking a turning point in early Islamic history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "conquest-of-mecca",
+    "friendly_name": "Conquest of Mecca",
+    "year": 630,
+    "category": "conflict",
+    "description": "Prophet Muhammad led 10,000 followers to capture Mecca largely without bloodshed, converting the Kaaba into Islam's holiest site.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-yarmouk",
+    "friendly_name": "Battle of Yarmouk",
+    "year": 636,
+    "category": "conflict",
+    "description": "Arab Muslim forces decisively defeated the Byzantine Empire, leading to the loss of the Levant and opening the path for Islamic expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "arab-conquest-of-egypt",
+    "friendly_name": "Arab Conquest of Egypt",
+    "year": 641,
+    "category": "conflict",
+    "description": "Amr ibn al-As led Arab forces to conquer Byzantine Egypt, ending over 900 years of Greco-Roman rule and beginning the Islamization of the region.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "umayyad-conquest-of-spain",
+    "friendly_name": "Umayyad Conquest of Spain",
+    "year": 711,
+    "category": "conflict",
+    "description": "Tariq ibn Ziyad led Umayyad forces across Gibraltar and defeated the Visigoths, beginning nearly 800 years of Islamic presence in Iberia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-talas",
+    "friendly_name": "Battle of Talas",
+    "year": 751,
+    "category": "conflict",
+    "description": "Abbasid and Tibetan forces defeated Tang China in Central Asia. Captured Chinese papermakers helped spread papermaking technology westward.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "alfred-the-great-recaptures-london",
+    "friendly_name": "Alfred the Great Recaptures London",
+    "year": 886,
+    "category": "conflict",
+    "description": "King Alfred of Wessex recaptured London from the Vikings, restoring the city and strengthening Anglo-Saxon resistance to Danish invasion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fourth-crusade-called",
+    "friendly_name": "Fourth Crusade Called",
+    "year": 1198,
+    "category": "conflict",
+    "description": "Pope Innocent III called for a new crusade to recapture Jerusalem, which infamously diverted to sack Constantinople in 1204 instead.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sixth-crusade-treaty",
+    "friendly_name": "Sixth Crusade Treaty",
+    "year": 1229,
+    "category": "conflict",
+    "description": "Emperor Frederick II negotiated the Treaty of Jaffa with Sultan al-Kamil, peacefully recovering Jerusalem for Christians without major combat.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siege-of-montsegur",
+    "friendly_name": "Siege of Montségur",
+    "year": 1244,
+    "category": "conflict",
+    "description": "French crusaders besieged the Cathar stronghold for ten months. Over 200 Cathars were burned at the stake after surrendering.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jacquerie-peasant-revolt",
+    "friendly_name": "Jacquerie Peasant Revolt",
+    "year": 1358,
+    "category": "conflict",
+    "description": "French peasants rose up against the nobility during the Hundred Years' War, attacking castles and manors before being brutally suppressed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-varna",
+    "friendly_name": "Battle of Varna",
+    "year": 1444,
+    "category": "conflict",
+    "description": "Ottoman forces defeated a crusading army led by King Władysław III of Poland, who was killed in battle, ending the Crusade of Varna.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "edward-iv-crowned",
+    "friendly_name": "Edward IV Crowned",
+    "year": 1461,
+    "category": "conflict",
+    "description": "Edward of York became King of England after defeating Lancastrian forces at Towton, the bloodiest battle in English history during the Wars of the Roses.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "german-peasants-war-begins",
+    "friendly_name": "German Peasants' War Begins",
+    "year": 1524,
+    "category": "conflict",
+    "description": "Peasants across German-speaking lands rose up demanding economic and religious reforms. The revolt was crushed with over 100,000 peasants killed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "st-bartholomews-day-massacre",
+    "friendly_name": "St. Bartholomew's Day Massacre",
+    "year": 1572,
+    "category": "conflict",
+    "description": "Catholic mobs massacred thousands of Huguenots across France in coordinated attacks beginning in Paris, escalating the French Wars of Religion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "grotius-publishes-on-the-law-of-war-and-peace",
+    "friendly_name": "Grotius Publishes On the Law of War and Peace",
+    "year": 1625,
+    "category": "conflict",
+    "description": "Dutch jurist Hugo Grotius published his foundational work on international law, establishing principles for just war and the laws governing armed conflict.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irish-rebellion-of-1641",
+    "friendly_name": "Irish Rebellion of 1641",
+    "year": 1641,
+    "category": "conflict",
+    "description": "Irish Catholics rose against English and Scottish Protestant settlers, leading to widespread violence and eventually Cromwell's brutal conquest of Ireland.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "franco-dutch-war-begins",
+    "friendly_name": "Franco-Dutch War Begins",
+    "year": 1672,
+    "category": "conflict",
+    "description": "Louis XIV invaded the Dutch Republic in the Year of Disaster. The Dutch flooded their lands and formed alliances to resist French expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "king-philips-war",
+    "friendly_name": "King Philip's War",
+    "year": 1675,
+    "category": "conflict",
+    "description": "Native American leader Metacom (King Philip) led an alliance against New England colonists in one of the bloodiest conflicts per capita in American history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siege-of-derry",
+    "friendly_name": "Siege of Derry",
+    "year": 1689,
+    "category": "conflict",
+    "description": "Protestant defenders held the city of Derry for 105 days against Jacobite forces loyal to the deposed Catholic King James II.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-the-boyne",
+    "friendly_name": "Battle of the Boyne",
+    "year": 1690,
+    "category": "conflict",
+    "description": "William III of Orange defeated the deposed James II in Ireland, securing Protestant rule in Britain and becoming a symbol of Ulster Protestant identity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "war-of-spanish-succession-begins",
+    "friendly_name": "War of Spanish Succession Begins",
+    "year": 1701,
+    "category": "conflict",
+    "description": "European powers went to war over the Spanish throne after Charles II died without an heir, reshaping the balance of power for decades.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nadir-shah-sacks-delhi",
+    "friendly_name": "Nadir Shah Sacks Delhi",
+    "year": 1738,
+    "category": "conflict",
+    "description": "Persian ruler Nadir Shah invaded Mughal India and plundered Delhi, taking the Peacock Throne and Koh-i-Noor diamond among vast treasures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "war-of-jenkins-ear",
+    "friendly_name": "War of Jenkins' Ear",
+    "year": 1739,
+    "category": "conflict",
+    "description": "Britain declared war on Spain after Captain Jenkins displayed his severed ear in Parliament, claiming Spanish coastguards had cut it off.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "war-of-austrian-succession-begins",
+    "friendly_name": "War of Austrian Succession Begins",
+    "year": 1740,
+    "category": "conflict",
+    "description": "European powers challenged Maria Theresa's right to inherit Habsburg lands, sparking a continent-wide war that lasted eight years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battles-of-lexington-and-concord",
+    "friendly_name": "Battles of Lexington and Concord",
+    "year": 1775,
+    "category": "conflict",
+    "description": "The first military engagements of the American Revolution, where colonial militiamen fired the 'shot heard round the world' against British troops.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "shays-rebellion",
+    "friendly_name": "Shays' Rebellion",
+    "year": 1786,
+    "category": "conflict",
+    "description": "Massachusetts farmers led by Daniel Shays rebelled against debt collection and taxation, highlighting weaknesses in the Articles of Confederation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "irish-rebellion-of-1798",
+    "friendly_name": "Irish Rebellion of 1798",
+    "year": 1798,
+    "category": "conflict",
+    "description": "Irish republicans inspired by the French Revolution rose against British rule. The failed uprising led to the Act of Union with Britain.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "war-of-1812-begins",
+    "friendly_name": "War of 1812 Begins",
+    "year": 1812,
+    "category": "conflict",
+    "description": "The United States declared war on Britain over maritime disputes and expansionist aims, leading to the burning of Washington and the writing of the Star-Spangled Banner.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "peterloo-massacre",
+    "friendly_name": "Peterloo Massacre",
+    "year": 1819,
+    "category": "conflict",
+    "description": "British cavalry charged a crowd of 60,000 peaceful reformers in Manchester demanding parliamentary representation, killing 15 and injuring hundreds.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-ayacucho",
+    "friendly_name": "Battle of Ayacucho",
+    "year": 1824,
+    "category": "conflict",
+    "description": "South American independence forces decisively defeated Spanish royalists in Peru, effectively ending Spanish colonial rule on the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-navarino",
+    "friendly_name": "Battle of Navarino",
+    "year": 1827,
+    "category": "conflict",
+    "description": "British, French, and Russian fleets destroyed the Ottoman-Egyptian fleet in Greece, the last major naval battle fought entirely with sailing ships.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nat-turners-rebellion",
+    "friendly_name": "Nat Turner's Rebellion",
+    "year": 1831,
+    "category": "conflict",
+    "description": "Enslaved preacher Nat Turner led a violent uprising in Virginia, killing about 60 white people before being captured and executed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sepoy-mutiny",
+    "friendly_name": "Sepoy Mutiny",
+    "year": 1857,
+    "category": "conflict",
+    "description": "Indian soldiers rebelled against the British East India Company, triggering a widespread uprising that led to direct British Crown rule over India.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sand-creek-massacre",
+    "friendly_name": "Sand Creek Massacre",
+    "year": 1864,
+    "category": "conflict",
+    "description": "Colorado militia attacked a peaceful Cheyenne and Arapaho encampment, killing over 150 Native Americans, mostly women, children, and elderly.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nez-perce-war",
+    "friendly_name": "Nez Perce War",
+    "year": 1877,
+    "category": "conflict",
+    "description": "Chief Joseph led the Nez Perce on a 1,170-mile fighting retreat toward Canada before surrendering with his famous speech 'I will fight no more forever.'",
+    "difficulty": "medium"
+  },
+  {
+    "name": "war-of-the-pacific",
+    "friendly_name": "War of the Pacific",
+    "year": 1879,
+    "category": "conflict",
+    "description": "Chile fought Bolivia and Peru over nitrate-rich territories, winning coastal lands that left Bolivia landlocked to this day.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-boer-war",
+    "friendly_name": "First Boer War",
+    "year": 1880,
+    "category": "conflict",
+    "description": "Boer settlers defeated British forces in South Africa, winning independence for the Transvaal Republic after the Battle of Majuba Hill.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "assassination-of-alexander-ii",
+    "friendly_name": "Assassination of Alexander II",
+    "year": 1881,
+    "category": "conflict",
+    "description": "Russian Tsar Alexander II, the 'Liberator' who freed the serfs, was killed by a bomb thrown by revolutionary terrorists in St. Petersburg.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "assassination-of-garfield",
+    "friendly_name": "Assassination of Garfield",
+    "year": 1881,
+    "category": "conflict",
+    "description": "President James Garfield was shot by a disappointed office-seeker, leading to civil service reform and the Pendleton Act.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jack-the-ripper-murders",
+    "friendly_name": "Jack the Ripper Murders",
+    "year": 1888,
+    "category": "conflict",
+    "description": "An unidentified serial killer murdered at least five women in London's Whitechapel district, becoming history's most infamous unsolved case.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "wounded-knee-massacre",
+    "friendly_name": "Wounded Knee Massacre",
+    "year": 1890,
+    "category": "conflict",
+    "description": "US Army troops killed approximately 300 Lakota Sioux at Wounded Knee, South Dakota, marking the end of the American Indian Wars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-sino-japanese-war",
+    "friendly_name": "First Sino-Japanese War",
+    "year": 1894,
+    "category": "conflict",
+    "description": "Japan defeated Qing China over influence in Korea, gaining Taiwan and establishing itself as a major East Asian power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "philippine-american-war",
+    "friendly_name": "Philippine-American War",
+    "year": 1899,
+    "category": "conflict",
+    "description": "Filipino independence fighters battled American forces after the US acquired the Philippines from Spain, resulting in hundreds of thousands of Filipino deaths.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "assassination-of-mckinley",
+    "friendly_name": "Assassination of McKinley",
+    "year": 1901,
+    "category": "conflict",
+    "description": "President William McKinley was shot by anarchist Leon Czolgosz at the Pan-American Exposition, making Theodore Roosevelt president.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "end-of-philippine-american-war",
+    "friendly_name": "End of Philippine-American War",
+    "year": 1902,
+    "category": "conflict",
+    "description": "The US declared victory in the Philippine-American War, though guerrilla resistance continued for years in parts of the archipelago.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kishinev-pogrom",
+    "friendly_name": "Kishinev Pogrom",
+    "year": 1903,
+    "category": "conflict",
+    "description": "A violent anti-Jewish riot in Kishinev, Russia killed 49 Jews and destroyed hundreds of homes, sparking international outrage and increased Jewish emigration.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "herero-genocide",
+    "friendly_name": "Herero Genocide",
+    "year": 1904,
+    "category": "conflict",
+    "description": "German colonial forces systematically killed tens of thousands of Herero and Nama people in German South-West Africa, considered the first genocide of the 20th century.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "potemkin-mutiny",
+    "friendly_name": "Potemkin Mutiny",
+    "year": 1905,
+    "category": "conflict",
+    "description": "Sailors on the Russian battleship Potemkin mutinied during the 1905 Revolution, later immortalized in Eisenstein's influential 1925 film.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-balkan-war",
+    "friendly_name": "First Balkan War",
+    "year": 1912,
+    "category": "conflict",
+    "description": "The Balkan League of Serbia, Greece, Bulgaria, and Montenegro attacked the Ottoman Empire, driving it out of most of its European territories.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "second-balkan-war",
+    "friendly_name": "Second Balkan War",
+    "year": 1913,
+    "category": "conflict",
+    "description": "Former allies turned on Bulgaria over disputed Macedonian territory, resulting in Bulgaria's defeat and increased tensions leading to World War I.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "archduke-franz-ferdinand-assassinated",
+    "friendly_name": "Archduke Franz Ferdinand Assassinated",
+    "year": 1914,
+    "category": "conflict",
+    "description": "Serbian nationalist Gavrilo Princip shot the Austro-Hungarian heir in Sarajevo, triggering the chain of events that started World War I.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-battle-of-the-marne",
+    "friendly_name": "First Battle of the Marne",
+    "year": 1914,
+    "category": "conflict",
+    "description": "French and British forces halted the German advance on Paris, ending hopes for a quick victory and beginning four years of trench warfare.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "armenian-genocide-begins",
+    "friendly_name": "Armenian Genocide Begins",
+    "year": 1915,
+    "category": "conflict",
+    "description": "Ottoman authorities began the systematic deportation and massacre of Armenians, killing an estimated 1.5 million people by 1923.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "second-battle-of-ypres-first-gas-attack",
+    "friendly_name": "Second Battle of Ypres (First Gas Attack)",
+    "year": 1915,
+    "category": "conflict",
+    "description": "Germany deployed chlorine gas against Allied troops in Belgium, the first large-scale use of chemical weapons in modern warfare.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "us-enters-world-war-i",
+    "friendly_name": "US Enters World War I",
+    "year": 1917,
+    "category": "conflict",
+    "description": "The United States declared war on Germany after unrestricted submarine warfare and the Zimmermann Telegram, tipping the balance toward Allied victory.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "third-afghan-war",
+    "friendly_name": "Third Afghan War",
+    "year": 1919,
+    "category": "conflict",
+    "description": "Afghanistan invaded British India, leading to a brief war that resulted in full Afghan independence from British influence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polish-soviet-war",
+    "friendly_name": "Polish-Soviet War",
+    "year": 1920,
+    "category": "conflict",
+    "description": "Poland defeated the Soviet Red Army at the Battle of Warsaw, halting communist expansion into Europe and securing Polish independence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "turkish-war-of-independence",
+    "friendly_name": "Turkish War of Independence",
+    "year": 1921,
+    "category": "conflict",
+    "description": "Mustafa Kemal Ataturk led Turkish nationalists to defeat Greek and Allied forces, establishing the modern Republic of Turkey.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "invasion-of-poland",
+    "friendly_name": "Invasion of Poland",
+    "year": 1939,
+    "category": "conflict",
+    "description": "Nazi Germany invaded Poland on September 1st, prompting Britain and France to declare war and beginning World War II in Europe.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "katyn-massacre",
+    "friendly_name": "Katyn Massacre",
+    "year": 1940,
+    "category": "conflict",
+    "description": "Soviet secret police executed approximately 22,000 Polish military officers, police, and intellectuals in the Katyn Forest and other sites.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trotsky-assassinated",
+    "friendly_name": "Trotsky Assassinated",
+    "year": 1940,
+    "category": "conflict",
+    "description": "Soviet agent Ramon Mercader killed exiled revolutionary Leon Trotsky in Mexico with an ice axe on Stalin's orders.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-the-philippine-sea",
+    "friendly_name": "Battle of the Philippine Sea",
+    "year": 1944,
+    "category": "conflict",
+    "description": "US Navy destroyed Japanese naval aviation in the 'Great Marianas Turkey Shoot,' securing air superiority in the Pacific War.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dresden-bombing",
+    "friendly_name": "Dresden Bombing",
+    "year": 1945,
+    "category": "conflict",
+    "description": "Allied firebombing of Dresden killed approximately 25,000 people and destroyed the historic city center, becoming one of WWII's most controversial attacks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "french-indochina-war-begins",
+    "friendly_name": "French-Indochina War Begins",
+    "year": 1946,
+    "category": "conflict",
+    "description": "Ho Chi Minh's Viet Minh began armed resistance against French colonial rule, starting an eight-year war that ended with French defeat at Dien Bien Phu.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-arab-israeli-war",
+    "friendly_name": "First Arab-Israeli War",
+    "year": 1948,
+    "category": "conflict",
+    "description": "Arab states invaded the newly declared State of Israel, which successfully defended itself and expanded its territory beyond the UN partition plan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tibet-invasion",
+    "friendly_name": "Tibet Invasion",
+    "year": 1950,
+    "category": "conflict",
+    "description": "The People's Republic of China invaded Tibet, defeating the small Tibetan army and incorporating Tibet into the PRC.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cia-coup-in-iran",
+    "friendly_name": "CIA Coup in Iran",
+    "year": 1953,
+    "category": "conflict",
+    "description": "The CIA and MI6 orchestrated a coup that overthrew democratically elected Prime Minister Mosaddegh, restoring Shah Pahlavi to power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "east-german-uprising",
+    "friendly_name": "East German Uprising",
+    "year": 1953,
+    "category": "conflict",
+    "description": "Workers in East Berlin and across East Germany rose up against the communist government before Soviet tanks crushed the rebellion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "algerian-war-begins",
+    "friendly_name": "Algerian War Begins",
+    "year": 1954,
+    "category": "conflict",
+    "description": "The FLN launched attacks against French rule in Algeria, beginning a brutal eight-year war that ended with Algerian independence in 1962.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cia-coup-in-guatemala",
+    "friendly_name": "CIA Coup in Guatemala",
+    "year": 1954,
+    "category": "conflict",
+    "description": "The CIA overthrew democratically elected President Arbenz to protect United Fruit Company interests, beginning decades of military rule and civil war.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "great-leap-forward",
+    "friendly_name": "Great Leap Forward",
+    "year": 1958,
+    "category": "conflict",
+    "description": "Mao launched a radical campaign to rapidly industrialize China, resulting in history's deadliest famine with an estimated 30-45 million deaths.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sharpeville-massacre",
+    "friendly_name": "Sharpeville Massacre",
+    "year": 1960,
+    "category": "conflict",
+    "description": "South African police killed 69 Black protesters demonstrating against pass laws, galvanizing international opposition to apartheid.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "south-vietnam-coup",
+    "friendly_name": "South Vietnam Coup",
+    "year": 1963,
+    "category": "conflict",
+    "description": "South Vietnamese generals overthrew and assassinated President Ngo Dinh Diem with tacit US approval, destabilizing the country during the Vietnam War.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "malcolm-x-assassinated",
+    "friendly_name": "Malcolm X Assassinated",
+    "year": 1965,
+    "category": "conflict",
+    "description": "Black nationalist leader Malcolm X was shot dead in New York by members of the Nation of Islam, from which he had recently split.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "che-guevara-killed",
+    "friendly_name": "Che Guevara Killed",
+    "year": 1967,
+    "category": "conflict",
+    "description": "Revolutionary Che Guevara was captured and executed by Bolivian forces with CIA assistance while trying to foment revolution in South America.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tlatelolco-massacre",
+    "friendly_name": "Tlatelolco Massacre",
+    "year": 1968,
+    "category": "conflict",
+    "description": "Mexican security forces killed hundreds of student protesters in Mexico City's Tlatelolco plaza, ten days before the 1968 Olympics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indo-pakistani-war-1971",
+    "friendly_name": "Indo-Pakistani War",
+    "year": 1971,
+    "category": "conflict",
+    "description": "India intervened in East Pakistan's independence struggle, defeating Pakistan in two weeks and enabling the creation of Bangladesh.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chilean-coup",
+    "friendly_name": "Chilean Coup",
+    "year": 1973,
+    "category": "conflict",
+    "description": "General Pinochet overthrew elected socialist President Salvador Allende with US support, beginning 17 years of military dictatorship.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "soweto-uprising",
+    "friendly_name": "Soweto Uprising",
+    "year": 1976,
+    "category": "conflict",
+    "description": "Black South African students protested mandatory Afrikaans instruction. Police killed hundreds, including 12-year-old Hector Pieterson.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "iran-hostage-crisis",
+    "friendly_name": "Iran Hostage Crisis",
+    "year": 1979,
+    "category": "conflict",
+    "description": "Iranian revolutionaries seized the US Embassy in Tehran, holding 52 Americans hostage for 444 days and contributing to Carter's election defeat.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "john-lennon-killed",
+    "friendly_name": "John Lennon Killed",
+    "year": 1980,
+    "category": "conflict",
+    "description": "Former Beatle John Lennon was shot dead outside his New York apartment by Mark David Chapman, who remains imprisoned.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "assassination-attempt-on-reagan",
+    "friendly_name": "Assassination Attempt on Reagan",
+    "year": 1981,
+    "category": "conflict",
+    "description": "John Hinckley Jr. shot President Reagan outside a Washington hotel, seriously wounding him. Reagan recovered and served two full terms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "assassination-attempt-on-pope",
+    "friendly_name": "Assassination Attempt on Pope",
+    "year": 1981,
+    "category": "conflict",
+    "description": "Turkish gunman Mehmet Ali Agca shot Pope John Paul II in St. Peter's Square. The Pope survived and later forgave his would-be assassin.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lebanon-war-1982",
+    "friendly_name": "Lebanon War",
+    "year": 1982,
+    "category": "conflict",
+    "description": "Israel invaded Lebanon to expel the PLO, beginning an 18-year occupation of southern Lebanon and reshaping Middle Eastern politics.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sabra-and-shatila-massacre",
+    "friendly_name": "Sabra and Shatila Massacre",
+    "year": 1982,
+    "category": "conflict",
+    "description": "Lebanese Christian militiamen massacred hundreds to thousands of Palestinians in Beirut refugee camps while Israeli forces surrounded the area.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "korean-air-lines-007-shot-down",
+    "friendly_name": "Korean Air Lines 007 Shot Down",
+    "year": 1983,
+    "category": "conflict",
+    "description": "Soviet fighters shot down a Korean passenger jet that strayed into Soviet airspace, killing all 269 aboard and escalating Cold War tensions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beirut-barracks-bombing",
+    "friendly_name": "Beirut Barracks Bombing",
+    "year": 1983,
+    "category": "conflict",
+    "description": "Truck bombs killed 241 US Marines and 58 French paratroopers in Beirut, the deadliest single attack on US Marines since Iwo Jima.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "assassination-of-indira-gandhi",
+    "friendly_name": "Assassination of Indira Gandhi",
+    "year": 1984,
+    "category": "conflict",
+    "description": "Indian Prime Minister Indira Gandhi was shot by her Sikh bodyguards in retaliation for ordering the assault on the Golden Temple.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "iran-iraq-war-ends",
+    "friendly_name": "Iran-Iraq War Ends",
+    "year": 1988,
+    "category": "conflict",
+    "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "panama-invasion",
+    "friendly_name": "Panama Invasion",
+    "year": 1989,
+    "category": "conflict",
+    "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "siege-of-sarajevo-begins",
+    "friendly_name": "Siege of Sarajevo Begins",
+    "year": 1992,
+    "category": "conflict",
+    "description": "Bosnian Serb forces began the longest siege in modern warfare history, lasting nearly four years and killing over 11,000 Sarajevo residents.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "la-riots",
+    "friendly_name": "LA Riots",
+    "year": 1992,
+    "category": "conflict",
+    "description": "Los Angeles erupted in deadly riots after police officers were acquitted of beating Rodney King, causing over $1 billion in damage.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "us-embassy-bombings",
+    "friendly_name": "US Embassy Bombings",
+    "year": 1998,
+    "category": "conflict",
+    "description": "Al-Qaeda bombed US embassies in Kenya and Tanzania, killing 224 people and marking a major escalation in jihadist attacks on America.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bali-bombings",
+    "friendly_name": "Bali Bombings",
+    "year": 2002,
+    "category": "conflict",
+    "description": "Jemaah Islamiyah terrorists bombed nightclubs in Bali, killing 202 people, mostly Australian tourists, in Indonesia's deadliest terror attack.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moscow-theatre-hostage-crisis",
+    "friendly_name": "Moscow Theatre Hostage Crisis",
+    "year": 2002,
+    "category": "conflict",
+    "description": "Chechen militants seized a Moscow theater with 850 hostages. Russian special forces used gas in the rescue, killing 130 hostages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "darfur-genocide-begins",
+    "friendly_name": "Darfur Genocide Begins",
+    "year": 2003,
+    "category": "conflict",
+    "description": "Sudanese government forces and Janjaweed militias began systematic attacks on non-Arab populations in Darfur, killing an estimated 300,000 people.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "norway-attacks",
+    "friendly_name": "Norway Attacks",
+    "year": 2011,
+    "category": "conflict",
+    "description": "Far-right terrorist Anders Breivik bombed Oslo and massacred 69 people at a youth camp, Norway's deadliest peacetime attack.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "boston-marathon-bombing",
+    "friendly_name": "Boston Marathon Bombing",
+    "year": 2013,
+    "category": "conflict",
+    "description": "Brothers Tamerlan and Dzhokhar Tsarnaev detonated bombs near the Boston Marathon finish line, killing 3 and injuring over 260.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "charlie-hebdo-attack",
+    "friendly_name": "Charlie Hebdo Attack",
+    "year": 2015,
+    "category": "conflict",
+    "description": "Islamist gunmen killed 12 people at the French satirical magazine Charlie Hebdo, sparking global 'Je Suis Charlie' solidarity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "san-bernardino-attack",
+    "friendly_name": "San Bernardino Attack",
+    "year": 2015,
+    "category": "conflict",
+    "description": "A married couple killed 14 people at a San Bernardino holiday party in an ISIS-inspired attack, one of the deadliest US terror attacks since 9/11.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nice-truck-attack",
+    "friendly_name": "Nice Truck Attack",
+    "year": 2016,
+    "category": "conflict",
+    "description": "A terrorist drove a truck through Bastille Day crowds on Nice's Promenade des Anglais, killing 86 people in an ISIS-claimed attack.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "khashoggi-murder",
+    "friendly_name": "Khashoggi Murder",
+    "year": 2018,
+    "category": "conflict",
+    "description": "Saudi journalist Jamal Khashoggi was murdered and dismembered inside the Saudi consulate in Istanbul by a team linked to Crown Prince MBS.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nagorno-karabakh-war-2020",
+    "friendly_name": "Nagorno-Karabakh War",
+    "year": 2020,
+    "category": "conflict",
+    "description": "Azerbaijan recaptured most of Nagorno-Karabakh from Armenian forces in a 44-day war featuring extensive drone warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sudan-civil-war-2023",
+    "friendly_name": "Sudan Civil War",
+    "year": 2023,
+    "category": "conflict",
+    "description": "Fighting erupted between Sudan's army and the Rapid Support Forces paramilitary, causing massive displacement and humanitarian crisis.",
+    "difficulty": "medium"
   }
 ]
