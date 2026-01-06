@@ -207,10 +207,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               </div>
               <button
                 onClick={() => setIsSettingsOpen(true)}
-                className="p-1.5 hover:bg-accent-secondary/20 rounded-full transition-colors flex-shrink-0"
+                className="p-2 rounded-xl bg-surface border border-border hover:bg-border transition-colors active:scale-95 flex-shrink-0"
                 title="Settings"
               >
-                <Settings className="w-4 h-4 text-text-muted" />
+                <Settings className="w-4 h-4 text-text" />
               </button>
             </div>
 
