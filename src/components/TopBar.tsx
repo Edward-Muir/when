@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal } from 'lucide-react';
+import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, RefreshCw } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
+import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
 import Menu from './Menu';
 import { GameMode } from '../types';
@@ -28,6 +29,7 @@ const TopBar: React.FC<TopBarProps> = ({
   onViewTimeline,
 }) => {
   const { isDark, toggleTheme } = useTheme();
+  const { updateAvailable } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -54,6 +56,17 @@ const TopBar: React.FC<TopBarProps> = ({
           )}
 
           <div className="flex items-center gap-2">
+            {/* Update Available Button */}
+            {updateAvailable && (
+              <button
+                onClick={() => window.location.reload()}
+                className={`${buttonClass} bg-accent text-white border-accent hover:bg-accent/90`}
+                aria-label="Update available - click to refresh"
+              >
+                <RefreshCw className="w-5 h-5" />
+              </button>
+            )}
+
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}

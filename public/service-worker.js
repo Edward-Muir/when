@@ -53,6 +53,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Network-first for version.json (for update detection)
+  if (url.pathname.endsWith('/version.json')) {
+    event.respondWith(networkFirst(request, DYNAMIC_CACHE));
+    return;
+  }
+
   // Network-first for event JSON data (so we get updates when online)
   if (url.pathname.includes('/events/') && url.pathname.endsWith('.json')) {
     event.respondWith(networkFirst(request, DYNAMIC_CACHE));

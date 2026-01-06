@@ -18,6 +18,13 @@ fs.writeFileSync(versionPath, versionContent);
 
 console.log(`Version ${version} injected into src/version.ts`);
 
+// Generate version.json for runtime version checking
+const versionJsonContent = JSON.stringify({ version }, null, 2);
+const versionJsonPath = path.join(__dirname, '..', 'public', 'version.json');
+fs.writeFileSync(versionJsonPath, versionJsonContent);
+
+console.log(`Version ${version} written to public/version.json`);
+
 // Update service worker cache names with version
 const swPath = path.join(__dirname, '..', 'public', 'service-worker.js');
 let swContent = fs.readFileSync(swPath, 'utf8');
