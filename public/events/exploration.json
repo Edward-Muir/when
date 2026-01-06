@@ -17,7 +17,9 @@
     "category": "exploration",
     "description": "Single-celled organisms appeared in Earth's primordial oceans.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Origin_of_life_stages.svg/330px-Origin_of_life_stages.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Origin_of_life_stages.svg/330px-Origin_of_life_stages.svg.png",
+    "image_width": 330,
+    "image_height": 186
   },
   {
     "name": "fire-mastery",
@@ -26,7 +28,9 @@
     "category": "exploration",
     "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/330px-Large_bonfire.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/330px-Large_bonfire.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "first-humans",
@@ -211,7 +215,9 @@
     "category": "exploration",
     "description": "The Greek philosopher created one of the first maps of the known world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pietro_Bellotti_%28attr%29_Anaximander.jpg/330px-Pietro_Bellotti_%28attr%29_Anaximander.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pietro_Bellotti_%28attr%29_Anaximander.jpg/330px-Pietro_Bellotti_%28attr%29_Anaximander.jpg",
+    "image_width": 330,
+    "image_height": 351
   },
   {
     "name": "pythagoras-theorem",
@@ -231,7 +237,9 @@
     "category": "exploration",
     "description": "The Carthaginian navigator explored the west coast of Africa.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Carthage_323_BC.png/330px-Carthage_323_BC.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Carthage_323_BC.png/330px-Carthage_323_BC.png",
+    "image_width": 330,
+    "image_height": 189
   },
   {
     "name": "herodotus-histories",
@@ -262,7 +270,9 @@
     "category": "exploration",
     "description": "Alexander the Great's conquests brought Greek knowledge to the Indian subcontinent.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AlexanderConquestsInIndia.jpg/330px-AlexanderConquestsInIndia.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AlexanderConquestsInIndia.jpg/330px-AlexanderConquestsInIndia.jpg",
+    "image_width": 330,
+    "image_height": 412
   },
   {
     "name": "pytheas-arctic",
@@ -280,7 +290,9 @@
     "category": "exploration",
     "description": "Archimedes discovered the principle of buoyancy while taking a bath.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/330px-Domenico-Fetti_Archimedes_1620.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/330px-Domenico-Fetti_Archimedes_1620.jpg",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "eratosthenes-earth",
@@ -322,7 +334,9 @@
     "category": "exploration",
     "description": "Cai Lun standardized papermaking techniques in Han Dynasty China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif",
+    "image_width": 330,
+    "image_height": 471
   },
   {
     "name": "paper-invented-china",
@@ -342,7 +356,9 @@
     "category": "exploration",
     "description": "Ptolemy compiled ancient astronomical knowledge in his influential treatise.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu/page1-320px-Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu/page1-320px-Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu.jpg",
+    "image_width": 319,
+    "image_height": 455
   },
   {
     "name": "compass-invented",
@@ -373,7 +389,9 @@
     "category": "exploration",
     "description": "The Persian mathematician wrote the foundational treatise on algebra.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg/330px-Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg/330px-Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gunpowder-invented",
@@ -426,7 +444,9 @@
     "category": "exploration",
     "description": "Bi Sheng invented movable type printing in China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Edit_Entry_-_Movable_Type_401.png/330px-Edit_Entry_-_Movable_Type_401.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Edit_Entry_-_Movable_Type_401.png/330px-Edit_Entry_-_Movable_Type_401.png",
+    "image_width": 330,
+    "image_height": 393
   },
   {
     "name": "fibonacci-arabic-numerals",
@@ -435,7 +455,9 @@
     "category": "exploration",
     "description": "Leonardo Fibonacci introduced Arabic numerals to Europe in his book Liber Abaci.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Leonardo_Fibonacci.JPG/330px-Leonardo_Fibonacci.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Leonardo_Fibonacci.JPG/330px-Leonardo_Fibonacci.JPG",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "roger-bacon-scientific-method",
@@ -455,7 +477,9 @@
     "category": "exploration",
     "description": "Reading glasses were invented in Italy, transforming scholarship.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/330px-2023_Okulary_korekcyjne.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/330px-2023_Okulary_korekcyjne.jpg",
+    "image_width": 330,
+    "image_height": 231
   },
   {
     "name": "ibn-battuta-travels",
@@ -486,7 +510,9 @@
     "category": "exploration",
     "description": "The Chinese admiral began massive naval expeditions across the Indian Ocean.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/2016_Malakka%2C_Stadhuys_%2809%29.jpg/330px-2016_Malakka%2C_Stadhuys_%2809%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/2016_Malakka%2C_Stadhuys_%2809%29.jpg/330px-2016_Malakka%2C_Stadhuys_%2809%29.jpg",
+    "image_width": 330,
+    "image_height": 495
   },
   {
     "name": "chinese-discover-america-theory",
@@ -561,7 +587,9 @@
     "category": "exploration",
     "description": "The Portuguese explorer found a sea route from Europe to India.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/330px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/330px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
+    "image_width": 330,
+    "image_height": 448
   },
   {
     "name": "cabral-brazil",
@@ -647,7 +675,9 @@
     "category": "exploration",
     "description": "Hernando de Soto became the first European to cross the Mississippi River.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/De_Soto_by_Telfer_%26_Sartain.jpg/330px-De_Soto_by_Telfer_%26_Sartain.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/De_Soto_by_Telfer_%26_Sartain.jpg/330px-De_Soto_by_Telfer_%26_Sartain.jpg",
+    "image_width": 330,
+    "image_height": 391
   },
   {
     "name": "copernicus-heliocentric",
@@ -667,7 +697,9 @@
     "category": "exploration",
     "description": "Andreas Vesalius published groundbreaking anatomical illustrations.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg/330px-Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg/330px-Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg",
+    "image_width": 330,
+    "image_height": 408
   },
   {
     "name": "tycho-brahe-observatory",
@@ -676,7 +708,9 @@
     "category": "exploration",
     "description": "The Danish astronomer built Uraniborg, the most advanced observatory of his time.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif/lossy-page1-320px-Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif/lossy-page1-320px-Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif.jpg",
+    "image_width": 320,
+    "image_height": 394
   },
   {
     "name": "drake-circumnavigation",
@@ -685,7 +719,9 @@
     "category": "exploration",
     "description": "Francis Drake completed the second circumnavigation of the world.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/330px-Gheeraerts_Francis_Drake_1591.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/330px-Gheeraerts_Francis_Drake_1591.jpg",
+    "image_width": 330,
+    "image_height": 427
   },
   {
     "name": "microscope-invented",
@@ -734,7 +770,9 @@
     "category": "exploration",
     "description": "Hans Lippershey invented the first practical telescope in the Netherlands.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/100inchHooker.jpg/330px-100inchHooker.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/100inchHooker.jpg/330px-100inchHooker.jpg",
+    "image_width": 330,
+    "image_height": 538
   },
   {
     "name": "hudson-river",
@@ -765,7 +803,9 @@
     "category": "exploration",
     "description": "Johannes Kepler discovered that planets move in elliptical orbits.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kepler_laws_diagram.svg/330px-Kepler_laws_diagram.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kepler_laws_diagram.svg/330px-Kepler_laws_diagram.svg.png",
+    "image_width": 330,
+    "image_height": 354
   },
   {
     "name": "galileo-jupiter-moons",
@@ -796,7 +836,9 @@
     "category": "exploration",
     "description": "William Harvey published his discovery of how blood circulates through the body.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Harvey_2.jpg/330px-William_Harvey_2.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Harvey_2.jpg/330px-William_Harvey_2.jpg",
+    "image_width": 330,
+    "image_height": 389
   },
   {
     "name": "tasman-australia",
@@ -816,7 +858,9 @@
     "category": "exploration",
     "description": "Evangelista Torricelli invented the mercury barometer to measure air pressure.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg/330px-Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg/330px-Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg",
+    "image_width": 330,
+    "image_height": 443
   },
   {
     "name": "boyle-law",
@@ -825,7 +869,9 @@
     "category": "exploration",
     "description": "Robert Boyle discovered the relationship between gas pressure and volume.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Boyles_Law_animated.gif/330px-Boyles_Law_animated.gif"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Boyles_Law_animated.gif/330px-Boyles_Law_animated.gif",
+    "image_width": 330,
+    "image_height": 250
   },
   {
     "name": "hooke-discovers-cells",
@@ -834,7 +880,9 @@
     "category": "exploration",
     "description": "Robert Hooke observed cells for the first time under a microscope.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Portrait_of_a_Mathematician_1680c.jpg/330px-Portrait_of_a_Mathematician_1680c.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Portrait_of_a_Mathematician_1680c.jpg/330px-Portrait_of_a_Mathematician_1680c.jpg",
+    "image_width": 330,
+    "image_height": 408
   },
   {
     "name": "newton-gravity",
@@ -843,7 +891,9 @@
     "category": "exploration",
     "description": "Isaac Newton developed his theory of universal gravitation.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
+    "image_width": 330,
+    "image_height": 397
   },
   {
     "name": "leeuwenhoek-bacteria",
@@ -863,7 +913,9 @@
     "category": "exploration",
     "description": "German astronomer Gottfried Kirch discovered the Great Comet of 1680, the first comet discovered by telescope.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg/330px-Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg/330px-Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg",
+    "image_width": 330,
+    "image_height": 217
   },
   {
     "name": "la-salle-mississippi",
@@ -905,7 +957,9 @@
     "category": "exploration",
     "description": "Publick Occurrences Both Forreign and Domestick, the first newspaper in the Americas, was published.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg/330px-Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg/330px-Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg",
+    "image_width": 330,
+    "image_height": 506
   },
   {
     "name": "dampier-circumnavigation",
@@ -925,7 +979,9 @@
     "category": "exploration",
     "description": "William Dampier became the first European to circumnavigate New Britain, discovering it was an island.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Newbritain_lrg.jpg/330px-Newbritain_lrg.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Newbritain_lrg.jpg/330px-Newbritain_lrg.jpg",
+    "image_width": 330,
+    "image_height": 200
   },
   {
     "name": "bering-strait",
@@ -934,7 +990,9 @@
     "category": "exploration",
     "description": "Vitus Bering proved that Asia and North America were separate continents.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vitus_Bering_reconstruction.jpg/330px-Vitus_Bering_reconstruction.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vitus_Bering_reconstruction.jpg/330px-Vitus_Bering_reconstruction.jpg",
+    "image_width": 330,
+    "image_height": 331
   },
   {
     "name": "first-synagogue-nyc",
@@ -943,7 +1001,9 @@
     "category": "exploration",
     "description": "Shearith Israel, the first synagogue in New York City, was dedicated.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Congregation_Shearith_Israel_001.JPG/330px-Congregation_Shearith_Israel_001.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Congregation_Shearith_Israel_001.JPG/330px-Congregation_Shearith_Israel_001.JPG",
+    "image_width": 330,
+    "image_height": 247
   },
   {
     "name": "linnaeus-taxonomy",
@@ -952,7 +1012,9 @@
     "category": "exploration",
     "description": "Carl Linnaeus published his system for classifying living organisms.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif/lossy-page1-320px-Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif/lossy-page1-320px-Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif.jpg",
+    "image_width": 320,
+    "image_height": 389
   },
   {
     "name": "franklin-kite-experiment",
@@ -961,7 +1023,9 @@
     "category": "exploration",
     "description": "Benjamin Franklin proved lightning is electrical with his famous kite experiment.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg/330px-Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg/330px-Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg",
+    "image_width": 330,
+    "image_height": 442
   },
   {
     "name": "cook-australia",
@@ -981,7 +1045,9 @@
     "category": "exploration",
     "description": "Joseph Priestley and Carl Wilhelm Scheele independently discovered oxygen.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Liquid_oxygen_in_a_beaker_4.jpg/330px-Liquid_oxygen_in_a_beaker_4.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Liquid_oxygen_in_a_beaker_4.jpg/330px-Liquid_oxygen_in_a_beaker_4.jpg",
+    "image_width": 330,
+    "image_height": 402
   },
   {
     "name": "lavoisier-oxygen",
@@ -990,7 +1056,9 @@
     "category": "exploration",
     "description": "Antoine Lavoisier discovered oxygen's role in combustion and respiration.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg/330px-David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg/330px-David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg",
+    "image_width": 330,
+    "image_height": 437
   },
   {
     "name": "uranus-discovered",
@@ -1010,7 +1078,9 @@
     "category": "exploration",
     "description": "The famous mutiny occurred during a voyage to transport breadfruit plants.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mutiny_HMS_Bounty.jpg/330px-Mutiny_HMS_Bounty.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mutiny_HMS_Bounty.jpg/330px-Mutiny_HMS_Bounty.jpg",
+    "image_width": 330,
+    "image_height": 240
   },
   {
     "name": "first-us-census",
@@ -1094,7 +1164,9 @@
     "category": "exploration",
     "description": "The Scottish explorer traced the course of the Niger River in Africa.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mungo_Park_portrait_bw.jpg/330px-Mungo_Park_portrait_bw.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mungo_Park_portrait_bw.jpg/330px-Mungo_Park_portrait_bw.jpg",
+    "image_width": 330,
+    "image_height": 365
   },
   {
     "name": "electromagnetism-discovered",
@@ -1147,7 +1219,9 @@
     "category": "exploration",
     "description": "Jean-François Champollion deciphered Egyptian hieroglyphics using the Rosetta Stone.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg/330px-Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg/330px-Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg",
+    "image_width": 330,
+    "image_height": 405
   },
   {
     "name": "dinosaur-fossils",
@@ -1156,7 +1230,9 @@
     "category": "exploration",
     "description": "William Buckland described Megalosaurus, the first dinosaur to be scientifically named.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Duria_Antiquior.jpg/330px-Duria_Antiquior.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Duria_Antiquior.jpg/330px-Duria_Antiquior.jpg",
+    "image_width": 330,
+    "image_height": 228
   },
   {
     "name": "ohm-law",
@@ -1229,7 +1305,9 @@
     "category": "exploration",
     "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Panth%C3%A9on_Pendule_de_Foucault2.JPG/330px-Panth%C3%A9on_Pendule_de_Foucault2.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Panth%C3%A9on_Pendule_de_Foucault2.JPG/330px-Panth%C3%A9on_Pendule_de_Foucault2.JPG",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "perry-expedition-japan",
@@ -1249,7 +1327,9 @@
     "category": "exploration",
     "description": "Robert Bunsen invented the laboratory burner that bears his name.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mechero_Bunsen.jpg/330px-Mechero_Bunsen.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mechero_Bunsen.jpg/330px-Mechero_Bunsen.jpg",
+    "image_width": 330,
+    "image_height": 462
   },
   {
     "name": "source-of-nile",
@@ -1258,7 +1338,9 @@
     "category": "exploration",
     "description": "John Hanning Speke identified Lake Victoria as the source of the Nile.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg/330px-Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg/330px-Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "burke-wills-australia",
@@ -1267,7 +1349,9 @@
     "category": "exploration",
     "description": "The ill-fated expedition crossed Australia from south to north.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Burke_and_Wills_Track.png/330px-Burke_and_Wills_Track.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Burke_and_Wills_Track.png/330px-Burke_and_Wills_Track.png",
+    "image_width": 330,
+    "image_height": 592
   },
   {
     "name": "pasteur-germ-theory",
@@ -1331,7 +1415,9 @@
     "category": "exploration",
     "description": "Heinrich Schliemann excavated the legendary city of Troy in Turkey.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/330px-Walls_of_Troy_%282%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/330px-Walls_of_Troy_%282%29.jpg",
+    "image_width": 330,
+    "image_height": 247
   },
   {
     "name": "livingstone-stanley",
@@ -1373,7 +1459,9 @@
     "category": "exploration",
     "description": "Robert Koch identified the bacterium that causes tuberculosis.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RobertKoch_cropped.jpg/330px-RobertKoch_cropped.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RobertKoch_cropped.jpg/330px-RobertKoch_cropped.jpg",
+    "image_width": 330,
+    "image_height": 463
   },
   {
     "name": "hertz-radio-waves",
@@ -1393,7 +1481,9 @@
     "category": "exploration",
     "description": "Fridtjof Nansen attempted to reach the North Pole by drifting with ice.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fram_Bergen_1893.jpg/330px-Fram_Bergen_1893.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fram_Bergen_1893.jpg/330px-Fram_Bergen_1893.jpg",
+    "image_width": 330,
+    "image_height": 246
   },
   {
     "name": "x-rays-discovered",
@@ -1402,7 +1492,9 @@
     "category": "exploration",
     "description": "Wilhelm Röntgen discovered X-rays, revolutionizing medical imaging.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Color_X-ray_photogram.jpg/330px-Color_X-ray_photogram.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Color_X-ray_photogram.jpg/330px-Color_X-ray_photogram.jpg",
+    "image_width": 330,
+    "image_height": 215
   },
   {
     "name": "radioactivity-discovered",
@@ -1433,7 +1525,9 @@
     "category": "exploration",
     "description": "Marie and Pierre Curie discovered the radioactive element radium.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Radium226.jpg/330px-Radium226.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Radium226.jpg/330px-Radium226.jpg",
+    "image_width": 330,
+    "image_height": 264
   },
   {
     "name": "blood-types-discovered",
@@ -1486,7 +1580,9 @@
     "category": "exploration",
     "description": "Hiram Bingham brought the ancient Inca citadel to worldwide attention.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/330px-Machu_Picchu%2C_2023_%28012%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/330px-Machu_Picchu%2C_2023_%28012%29.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "atomic-nucleus",
@@ -1495,7 +1591,9 @@
     "category": "exploration",
     "description": "Ernest Rutherford discovered that atoms have a dense central nucleus.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nucleus_drawing.svg/330px-Nucleus_drawing.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nucleus_drawing.svg/330px-Nucleus_drawing.svg.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "south-pole-reached",
@@ -1504,7 +1602,9 @@
     "category": "exploration",
     "description": "Roald Amundsen's expedition became the first to reach the South Pole.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Terra_Nova_expedition_at_the_South_Pole_-_LOC_3a12745u.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Terra_Nova_expedition_at_the_South_Pole_-_LOC_3a12745u.jpg",
+    "image_width": 1494,
+    "image_height": 1255
   },
   {
     "name": "continental-drift",
@@ -1579,7 +1679,9 @@
     "category": "exploration",
     "description": "Frederick Banting and Charles Best discovered insulin, saving millions of diabetics.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "tutankhamun-tomb",
@@ -1599,7 +1701,9 @@
     "category": "exploration",
     "description": "Leonard Thompson became the first person injected with insulin, transforming diabetes treatment.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "hubble-galaxies",
@@ -1630,7 +1734,9 @@
     "category": "exploration",
     "description": "Robert Goddard launched the first liquid-fueled rocket in Auburn, Massachusetts.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg/330px-Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg/330px-Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg",
+    "image_width": 330,
+    "image_height": 433
   },
   {
     "name": "spirit-of-st-louis",
@@ -1705,7 +1811,9 @@
     "category": "exploration",
     "description": "Hattie Caraway became the first woman elected to the United States Senate.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Arkansas_senator._Washington%2C_D.C.%2C_March_11._Senator_Hattie_W._Caraway%2C_Democrat_of_Arkansas%2C_from_a_new_informal_picture_made_in_her_office_at_the_Capitol_today%2C_3-11-40_LCCN2016877256_%28cropped%29.jpg/330px-thumbnail.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Arkansas_senator._Washington%2C_D.C.%2C_March_11._Senator_Hattie_W._Caraway%2C_Democrat_of_Arkansas%2C_from_a_new_informal_picture_made_in_her_office_at_the_Capitol_today%2C_3-11-40_LCCN2016877256_%28cropped%29.jpg/330px-thumbnail.jpg",
+    "image_width": 330,
+    "image_height": 411
   },
   {
     "name": "nuclear-fission",
@@ -1714,7 +1822,9 @@
     "category": "exploration",
     "description": "Otto Hahn and Fritz Strassmann discovered nuclear fission.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nuclear_fission.svg/320px-Nuclear_fission.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nuclear_fission.svg/320px-Nuclear_fission.svg.png",
+    "image_width": 320,
+    "image_height": 500
   },
   {
     "name": "carbon-14-discovered",
@@ -1723,7 +1833,9 @@
     "category": "exploration",
     "description": "Martin Kamen and Sam Ruben discovered carbon-14, revolutionizing archaeological dating.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png/330px-%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png/330px-%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png",
+    "image_width": 330,
+    "image_height": 331
   },
   {
     "name": "penicillin-mass-produced",
@@ -1754,7 +1866,9 @@
     "category": "exploration",
     "description": "Thor Heyerdahl sailed a balsa raft from South America to Polynesia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg/330px-Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg/330px-Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg",
+    "image_width": 330,
+    "image_height": 412
   },
   {
     "name": "dna-structure",
@@ -1763,7 +1877,9 @@
     "category": "exploration",
     "description": "Watson and Crick discovered the double helix structure of DNA.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/DNA-structure-and-bases.png/330px-DNA-structure-and-bases.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/DNA-structure-and-bases.png/330px-DNA-structure-and-bases.png",
+    "image_width": 330,
+    "image_height": 476
   },
   {
     "name": "everest",
@@ -1783,7 +1899,9 @@
     "category": "exploration",
     "description": "The first public demonstration of machine translation is held in New York at IBM headquarters.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WordLensDemo5Feb2012.jpg/330px-WordLensDemo5Feb2012.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WordLensDemo5Feb2012.jpg/330px-WordLensDemo5Feb2012.jpg",
+    "image_width": 330,
+    "image_height": 186
   },
   {
     "name": "uss-nautilus-launched",
@@ -1792,7 +1910,9 @@
     "category": "exploration",
     "description": "The first nuclear-powered submarine, USS Nautilus, is launched in Groton, Connecticut.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg/330px-Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg/330px-Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg",
+    "image_width": 330,
+    "image_height": 247
   },
   {
     "name": "polio-vaccine",
@@ -1856,7 +1976,9 @@
     "category": "exploration",
     "description": "The bathyscaphe Trieste descended to the bottom of the Mariana Trench.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bathyscaphe_Trieste.jpg/330px-Bathyscaphe_Trieste.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bathyscaphe_Trieste.jpg/330px-Bathyscaphe_Trieste.jpg",
+    "image_width": 330,
+    "image_height": 266
   },
   {
     "name": "first-human-space",
@@ -1885,7 +2007,9 @@
     "category": "exploration",
     "description": "Soviet cosmonaut Valentina Tereshkova became the first woman to fly in space.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/3D_coordinate_system.svg/330px-3D_coordinate_system.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/3D_coordinate_system.svg/330px-3D_coordinate_system.svg.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "luna-9-launched",
@@ -2015,7 +2139,9 @@
     "category": "exploration",
     "description": "Louise Brown was born as the first baby conceived through IVF.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Two_small_test_tubes_held_in_spring_clamps.jpg/330px-Two_small_test_tubes_held_in_spring_clamps.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Two_small_test_tubes_held_in_spring_clamps.jpg/330px-Two_small_test_tubes_held_in_spring_clamps.jpg",
+    "image_width": 330,
+    "image_height": 281
   },
   {
     "name": "smallpox-eradicated",
@@ -2112,7 +2238,9 @@
     "category": "exploration",
     "description": "Scientists at CERN confirmed the existence of the Higgs boson particle.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/330px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/330px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png",
+    "image_width": 330,
+    "image_height": 429
   },
   {
     "name": "crispr-gene-editing",
@@ -2121,7 +2249,9 @@
     "category": "exploration",
     "description": "Scientists developed CRISPR-Cas9 as a precise gene editing tool.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png/330px-Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png/330px-Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png",
+    "image_width": 330,
+    "image_height": 275
   },
   {
     "name": "voyager-leaves-solar-system",
@@ -2152,7 +2282,9 @@
     "category": "exploration",
     "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg/330px-Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg/330px-Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg",
+    "image_width": 330,
+    "image_height": 312
   },
   {
     "name": "gravitational-waves",
@@ -2205,7 +2337,9 @@
     "category": "exploration",
     "description": "Google claimed quantum supremacy with its Sycamore processor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Quantum_Supremacy_by_Kaku.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Quantum_Supremacy_by_Kaku.jpg",
+    "image_width": 257,
+    "image_height": 388
   },
   {
     "name": "change-4-landing",
@@ -2225,7 +2359,9 @@
     "category": "exploration",
     "description": "The first mRNA vaccines were approved for COVID-19 prevention.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ijms-21-06582-g002.webp/330px-Ijms-21-06582-g002.webp.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ijms-21-06582-g002.webp/330px-Ijms-21-06582-g002.webp.png",
+    "image_width": 330,
+    "image_height": 181
   },
   {
     "name": "alphafold-protein",
@@ -2245,7 +2381,9 @@
     "category": "exploration",
     "description": "China became the third country to return lunar samples to Earth.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Chang-e-5-assembly-CG-1-Cropped.jpg/330px-Chang-e-5-assembly-CG-1-Cropped.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Chang-e-5-assembly-CG-1-Cropped.jpg/330px-Chang-e-5-assembly-CG-1-Cropped.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "james-webb-launched",
@@ -2298,7 +2436,9 @@
     "category": "exploration",
     "description": "NASA successfully deflected an asteroid for the first time in history.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Dart-poster3.jpg/330px-Dart-poster3.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Dart-poster3.jpg/330px-Dart-poster3.jpg",
+    "image_width": 330,
+    "image_height": 189
   },
   {
     "name": "nuclear-fusion-ignition",
@@ -2318,7 +2458,9 @@
     "category": "exploration",
     "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png",
+    "image_width": 330,
+    "image_height": 212
   },
   {
     "name": "arpanet-created",
@@ -2327,7 +2469,9 @@
     "category": "exploration",
     "description": "The precursor to the internet connected its first computers at UCLA and Stanford.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/330px-Arpanet_logical_map%2C_march_1977.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/330px-Arpanet_logical_map%2C_march_1977.png",
+    "image_width": 330,
+    "image_height": 236
   },
   {
     "name": "mir-space-station",
@@ -2345,7 +2489,9 @@
     "category": "exploration",
     "description": "Tim Berners-Lee made the World Wide Web available to the general public.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png",
+    "image_width": 330,
+    "image_height": 179
   },
   {
     "name": "india-nuclear-tests",
@@ -2363,7 +2509,9 @@
     "category": "exploration",
     "description": "Crawford Long used ether to perform painless surgery, revolutionizing medicine.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Preoxygenation_before_anesthetic_induction.jpg/330px-Preoxygenation_before_anesthetic_induction.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Preoxygenation_before_anesthetic_induction.jpg/330px-Preoxygenation_before_anesthetic_induction.jpg",
+    "image_width": 330,
+    "image_height": 230
   },
   {
     "name": "first-stone-tools",
@@ -2380,7 +2528,9 @@
     "category": "exploration",
     "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG",
+    "image_width": 330,
+    "image_height": 552
   },
   {
     "name": "domestication-cattle",
@@ -2389,7 +2539,9 @@
     "category": "exploration",
     "description": "Cattle were domesticated in the Near East and Africa, transforming human societies.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
+    "image_width": 330,
+    "image_height": 221
   },
   {
     "name": "copper-smelting-begins",
@@ -2398,7 +2550,9 @@
     "category": "exploration",
     "description": "Humans first extracted copper from ore, beginning the age of metallurgy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg",
+    "image_width": 330,
+    "image_height": 256
   },
   {
     "name": "zhang-heng-seismoscope",
@@ -2407,7 +2561,9 @@
     "category": "exploration",
     "description": "Chinese scientist Zhang Heng invented the first device to detect distant earthquakes.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20251004_Tomb_of_Zhang_Heng_03.jpg/330px-20251004_Tomb_of_Zhang_Heng_03.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20251004_Tomb_of_Zhang_Heng_03.jpg/330px-20251004_Tomb_of_Zhang_Heng_03.jpg",
+    "image_width": 330,
+    "image_height": 495
   },
   {
     "name": "homo-erectus-emerges",
@@ -2416,7 +2572,9 @@
     "category": "exploration",
     "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Java_Man_holotype.jpg/330px-Java_Man_holotype.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Java_Man_holotype.jpg/330px-Java_Man_holotype.jpg",
+    "image_width": 330,
+    "image_height": 504
   },
   {
     "name": "domestication-of-sheep-and-goats",
@@ -2433,7 +2591,9 @@
     "category": "exploration",
     "description": "Pigs were domesticated independently in multiple regions including China and Anatolia, becoming a key food source.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pig_farm_Vampula_1.jpg/330px-Pig_farm_Vampula_1.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pig_farm_Vampula_1.jpg/330px-Pig_farm_Vampula_1.jpg",
+    "image_width": 330,
+    "image_height": 204
   },
   {
     "name": "domestication-of-donkeys",
@@ -2442,7 +2602,9 @@
     "category": "exploration",
     "description": "Donkeys were domesticated from African wild asses in Northeast Africa, revolutionizing overland transport and trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg/330px-Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg/330px-Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
+    "image_width": 330,
+    "image_height": 236
   },
   {
     "name": "dionysius-exiguus-creates-ad-system",
@@ -2451,7 +2613,9 @@
     "category": "exploration",
     "description": "Scythian monk Dionysius Exiguus devised the Anno Domini dating system while calculating Easter dates in Rome.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dionysius_Exiguus.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dionysius_Exiguus.jpg",
+    "image_width": 284,
+    "image_height": 400
   },
   {
     "name": "buddhism-officially-introduced-to-japan",
@@ -2468,7 +2632,9 @@
     "category": "exploration",
     "description": "Saints Cyril and Methodius developed the Glagolitic script, which evolved into Cyrillic for Slavic languages.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg/330px-Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg/330px-Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg.png",
+    "image_width": 330,
+    "image_height": 119
   },
   {
     "name": "gunpowder-formula-first-recorded",
@@ -2493,7 +2659,9 @@
     "category": "exploration",
     "description": "James Hargreaves invented the spinning jenny, a multi-spindle machine that revolutionized textile production.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spinning_jenny.jpg/330px-Spinning_jenny.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spinning_jenny.jpg/330px-Spinning_jenny.jpg",
+    "image_width": 330,
+    "image_height": 272
   },
   {
     "name": "hydrogen-discovered",
@@ -2502,7 +2670,9 @@
     "category": "exploration",
     "description": "Henry Cavendish isolated hydrogen gas and described its properties, calling it 'inflammable air' in his research.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hydrogen_discharge_tube.jpg/330px-Hydrogen_discharge_tube.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hydrogen_discharge_tube.jpg/330px-Hydrogen_discharge_tube.jpg",
+    "image_width": 330,
+    "image_height": 110
   },
   {
     "name": "first-voyage-of-james-cook",
@@ -2511,7 +2681,9 @@
     "category": "exploration",
     "description": "Captain James Cook departed England on HMS Endeavour to observe the Transit of Venus and explore the Pacific.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
+    "image_width": 330,
+    "image_height": 414
   },
   {
     "name": "nitrogen-discovered",
@@ -2520,7 +2692,9 @@
     "category": "exploration",
     "description": "Scottish physician Daniel Rutherford identified nitrogen as a separate component of air, calling it 'noxious air.'",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fluessiger_Stickstoff.jpg/330px-Fluessiger_Stickstoff.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fluessiger_Stickstoff.jpg/330px-Fluessiger_Stickstoff.jpg",
+    "image_width": 330,
+    "image_height": 495
   },
   {
     "name": "power-loom-invented",
@@ -2546,7 +2720,9 @@
     "category": "exploration",
     "description": "Giuseppe Garibaldi led his Thousand Red Shirts to conquer Sicily and Naples, advancing Italian unification.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Giuseppe_Garibaldi_1861.jpg/330px-Giuseppe_Garibaldi_1861.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Giuseppe_Garibaldi_1861.jpg/330px-Giuseppe_Garibaldi_1861.jpg",
+    "image_width": 330,
+    "image_height": 510
   },
   {
     "name": "dynamite-invented",
@@ -2555,7 +2731,9 @@
     "category": "exploration",
     "description": "Alfred Nobel patented dynamite, a safer explosive using nitroglycerin absorbed in diatomaceous earth.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Inserting_dynamite_into_hole.jpg/330px-Inserting_dynamite_into_hole.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Inserting_dynamite_into_hole.jpg/330px-Inserting_dynamite_into_hole.jpg",
+    "image_width": 329,
+    "image_height": 251
   },
   {
     "name": "maxim-gun-invented",
@@ -2564,7 +2742,9 @@
     "category": "exploration",
     "description": "Hiram Maxim invented the first fully automatic machine gun, using recoil energy to fire continuously.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Maxim_gun%2C_Georgian_national_museum.JPG/330px-Maxim_gun%2C_Georgian_national_museum.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Maxim_gun%2C_Georgian_national_museum.JPG/330px-Maxim_gun%2C_Georgian_national_museum.JPG",
+    "image_width": 330,
+    "image_height": 186
   },
   {
     "name": "max-plancks-quantum-theory",
@@ -2573,7 +2753,9 @@
     "category": "exploration",
     "description": "Max Planck proposed that energy is emitted in discrete quanta, launching the quantum physics revolution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg/330px-Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg/330px-Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg",
+    "image_width": 330,
+    "image_height": 417
   },
   {
     "name": "general-strike-in-britain",
@@ -2599,7 +2781,9 @@
     "category": "exploration",
     "description": "Enrico Fermi achieved the first controlled nuclear chain reaction at Chicago Pile-1 beneath Stagg Field.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif/lossy-page1-320px-Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif/lossy-page1-320px-Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif.jpg",
+    "image_width": 320,
+    "image_height": 174
   },
   {
     "name": "transistor-invented",
@@ -2641,7 +2825,9 @@
     "category": "exploration",
     "description": "Soviet dog Laika became the first animal to orbit Earth aboard Sputnik 2, proving life could survive in space.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/330px-Laika_%28Soviet_dog%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/330px-Laika_%28Soviet_dog%29.jpg",
+    "image_width": 330,
+    "image_height": 249
   },
   {
     "name": "apollo-17-last-moon-mission",
@@ -2650,7 +2836,9 @@
     "category": "exploration",
     "description": "Apollo 17 was the final crewed lunar mission, with astronauts Cernan and Schmitt spending 75 hours on the Moon.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg/330px-Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg/330px-Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg",
+    "image_width": 330,
+    "image_height": 314
   },
   {
     "name": "viking-lands-on-mars",
@@ -2675,7 +2863,9 @@
     "category": "exploration",
     "description": "North Korea conducted its first underground nuclear test, becoming the eighth country to detonate a nuclear device.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/330px-Flag_of_North_Korea.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/330px-Flag_of_North_Korea.svg.png",
+    "image_width": 330,
+    "image_height": 165
   },
   {
     "name": "felix-baumgartner-space-jump",
