@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.0](https://github.com/Edward-Muir/when/compare/v0.2.2...v0.3.0) (2026-01-06)
+
+
+### Features
+
+* Add full timeline view ([01d4d88](https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1))
+
+
+### Bug Fixes
+
+* Correct number of events shared ([9cd7c78](https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1))
+* Make settings button more visible ([b28cac8](https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917))
+
 ## [0.2.2](https://github.com/Edward-Muir/when/compare/v0.2.1...v0.2.2) (2026-01-06)
 
 
