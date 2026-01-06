@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Sun, Moon, Home, Menu as MenuIcon } from 'lucide-react';
+import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { Toast } from './Toast';
 import Menu from './Menu';
@@ -13,6 +13,9 @@ interface TopBarProps {
   showTitle?: boolean;
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
+  showFilter?: boolean;
+  onFilterClick?: () => void;
+  onViewTimeline?: () => void;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -20,6 +23,9 @@ const TopBar: React.FC<TopBarProps> = ({
   showTitle = true,
   onHomeClick,
   gameMode,
+  showFilter = false,
+  onFilterClick,
+  onViewTimeline,
 }) => {
   const { isDark, toggleTheme } = useTheme();
   const [showToast, setShowToast] = useState(false);
@@ -57,6 +63,13 @@ const TopBar: React.FC<TopBarProps> = ({
               {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
             </button>
 
+            {/* Filter Button - only shows on View Timeline */}
+            {showFilter && onFilterClick && (
+              <button onClick={onFilterClick} className={buttonClass} aria-label="Filter timeline">
+                <SlidersHorizontal className={iconClass} />
+              </button>
+            )}
+
             {/* Home Button - only shows during gameplay */}
             {showHome && onHomeClick && (
               <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
@@ -89,6 +102,7 @@ const TopBar: React.FC<TopBarProps> = ({
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
+        onViewTimeline={onViewTimeline}
       />
     </>
   );

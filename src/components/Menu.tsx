@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, SquarePlus, HelpCircle, X, Mail } from 'lucide-react';
+import { Share2, SquarePlus, HelpCircle, X, Mail, List } from 'lucide-react';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
@@ -10,6 +10,7 @@ interface MenuProps {
   onClose: () => void;
   onShowToast: () => void;
   gameMode?: GameMode | null;
+  onViewTimeline?: () => void;
 }
 
 // Install instructions component (moved from TopBar)
@@ -187,7 +188,7 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
   );
 };
 
-const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
+const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onViewTimeline }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
@@ -209,6 +210,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
 
   const handleRules = () => {
     setShowRulesModal(true);
+  };
+
+  const handleViewTimeline = () => {
+    onClose();
+    onViewTimeline?.();
   };
 
   const menuItemClass = `
@@ -279,6 +285,13 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                   <button onClick={handleRules} className={menuItemClass}>
                     <HelpCircle className={iconClass} />
                     <span className="font-body">How to Play</span>
+                  </button>
+                )}
+
+                {onViewTimeline && (
+                  <button onClick={handleViewTimeline} className={menuItemClass}>
+                    <List className={iconClass} />
+                    <span className="font-body">View Timeline</span>
                   </button>
                 )}
 

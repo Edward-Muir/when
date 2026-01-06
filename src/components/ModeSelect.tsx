@@ -28,11 +28,17 @@ const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
+  onViewTimeline?: () => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
 }
 
-const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
+const ModeSelect: React.FC<ModeSelectProps> = ({
+  onStart,
+  onViewTimeline,
+  isLoading = false,
+  allEvents,
+}) => {
   // Check if daily has been played today
   const todayResult = getTodayResult();
 
@@ -40,7 +46,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   const [showShareToast, setShowShareToast] = useState(false);
 
   // Play mode settings
-  const [isSuddenDeath, setIsSuddenDeath] = useState(false);
+  const [isSuddenDeath, setIsSuddenDeath] = useState(true);
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
     ...ALL_DIFFICULTIES,
   ]);
@@ -184,7 +190,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-14 pb-safe overflow-auto transition-colors"
     >
       {/* Top Bar */}
-      <TopBar showHome={false} showTitle={false} />
+      <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
 
       <div className="bg-surface rounded-2xl shadow-sm p-4 max-w-sm w-full text-center relative z-10 border border-border">
         {/* Title */}

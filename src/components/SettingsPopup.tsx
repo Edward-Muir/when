@@ -1,17 +1,8 @@
 import React from 'react';
-import { X, Zap } from 'lucide-react';
+import { X, Hourglass } from 'lucide-react';
 import { Difficulty, Category, Era, HistoricalEvent } from '../types';
-import { ERA_DEFINITIONS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-
-const ALL_CATEGORIES: Category[] = [
-  'conflict',
-  'disasters',
-  'exploration',
-  'cultural',
-  'infrastructure',
-  'diplomatic',
-];
+import FilterControls from './FilterControls';
 
 interface SettingsPopupProps {
   isOpen: boolean;
@@ -76,28 +67,6 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
     setPlayerNames(newNames);
   };
 
-  const toggleDifficulty = (difficulty: Difficulty) => {
-    setSelectedDifficulties(
-      selectedDifficulties.includes(difficulty)
-        ? selectedDifficulties.filter((d) => d !== difficulty)
-        : [...selectedDifficulties, difficulty]
-    );
-  };
-
-  const toggleCategory = (category: Category) => {
-    setSelectedCategories(
-      selectedCategories.includes(category)
-        ? selectedCategories.filter((c) => c !== category)
-        : [...selectedCategories, category]
-    );
-  };
-
-  const toggleEra = (era: Era) => {
-    setSelectedEras(
-      selectedEras.includes(era) ? selectedEras.filter((e) => e !== era) : [...selectedEras, era]
-    );
-  };
-
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Backdrop */}
@@ -114,25 +83,25 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         </div>
 
         <div className="space-y-4">
-          {/* Sudden Death Toggle */}
-          <div className="flex items-center justify-between p-3 rounded-xl bg-error/10 border border-error/20">
+          {/* Classic Mode Toggle */}
+          <div className="flex items-center justify-between p-3 rounded-xl bg-accent/10 border border-accent/20">
             <div className="flex items-center gap-2">
-              <Zap className={`w-4 h-4 ${isSuddenDeath ? 'text-error' : 'text-text-muted'}`} />
+              <Hourglass
+                className={`w-4 h-4 ${!isSuddenDeath ? 'text-accent' : 'text-text-muted'}`}
+              />
               <div>
-                <span className="text-sm font-medium text-text font-body">Sudden Death</span>
-                <p className="text-[10px] text-text-muted font-body">
-                  One wrong answer ends the game
-                </p>
+                <span className="text-sm font-medium text-text font-body">Classic Mode</span>
+                <p className="text-[10px] text-text-muted font-body">Empty your hand to win</p>
               </div>
             </div>
             <label className="relative inline-block w-11 h-6 cursor-pointer flex-shrink-0">
               <input
                 type="checkbox"
-                checked={isSuddenDeath}
-                onChange={(e) => setIsSuddenDeath(e.target.checked)}
+                checked={!isSuddenDeath}
+                onChange={(e) => setIsSuddenDeath(!e.target.checked)}
                 className="peer sr-only"
               />
-              <div className="w-11 h-6 bg-border rounded-full peer peer-checked:bg-error transition-colors" />
+              <div className="w-11 h-6 bg-border rounded-full peer peer-checked:bg-accent transition-colors" />
               <div className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5" />
             </label>
           </div>
@@ -213,88 +182,15 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
             </div>
           )}
 
-          {/* Difficulty selection */}
-          <div>
-            <label className="block text-sm font-medium text-text mb-2 font-body">
-              Card Difficulty
-            </label>
-            <div className="flex gap-2">
-              {(['easy', 'medium', 'hard'] as Difficulty[]).map((difficulty) => (
-                <button
-                  key={difficulty}
-                  onClick={() => toggleDifficulty(difficulty)}
-                  className={`
-                    flex-1 py-2 px-3 rounded-lg text-sm font-body
-                    transition-all capitalize
-                    ${
-                      selectedDifficulties.includes(difficulty)
-                        ? 'bg-accent text-white shadow-md'
-                        : 'bg-border text-text-muted hover:bg-border/80'
-                    }
-                  `}
-                >
-                  {difficulty}
-                </button>
-              ))}
-            </div>
-            {selectedDifficulties.length === 0 && (
-              <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
-            )}
-          </div>
-
-          {/* Category selection */}
-          <div>
-            <label className="block text-sm font-medium text-text mb-2 font-body">Categories</label>
-            <div className="grid grid-cols-3 gap-2">
-              {ALL_CATEGORIES.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => toggleCategory(category)}
-                  className={`
-                    py-2 px-2 rounded-lg text-xs font-body
-                    transition-all capitalize
-                    ${
-                      selectedCategories.includes(category)
-                        ? 'bg-accent text-white shadow-md'
-                        : 'bg-border text-text-muted hover:bg-border/80'
-                    }
-                  `}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-            {selectedCategories.length === 0 && (
-              <p className="text-error text-xs mt-1 font-body">Select at least one category</p>
-            )}
-          </div>
-
-          {/* Era selection */}
-          <div>
-            <label className="block text-sm font-medium text-text mb-2 font-body">Eras</label>
-            <div className="grid grid-cols-2 gap-2">
-              {ERA_DEFINITIONS.map((era) => (
-                <button
-                  key={era.id}
-                  onClick={() => toggleEra(era.id)}
-                  className={`
-                    py-2 px-2 rounded-lg text-xs font-body
-                    transition-all
-                    ${
-                      selectedEras.includes(era.id)
-                        ? 'bg-accent text-white shadow-md'
-                        : 'bg-border text-text-muted hover:bg-border/80'
-                    }
-                  `}
-                >
-                  {era.name}
-                </button>
-              ))}
-            </div>
-            {selectedEras.length === 0 && (
-              <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
-            )}
-          </div>
+          {/* Filter Controls (Difficulty, Category, Era) */}
+          <FilterControls
+            selectedDifficulties={selectedDifficulties}
+            onDifficultiesChange={setSelectedDifficulties}
+            selectedCategories={selectedCategories}
+            onCategoriesChange={setSelectedCategories}
+            selectedEras={selectedEras}
+            onErasChange={setSelectedEras}
+          />
 
           {/* Deck card counter */}
           <div className="pt-2 border-t border-border">

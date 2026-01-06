@@ -5,6 +5,7 @@ import { GameConfig } from './types';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
+import ViewTimeline from './components/ViewTimeline';
 
 function App() {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
@@ -35,6 +36,7 @@ function App() {
     cycleHand,
     resetGame,
     restartGame,
+    viewTimeline,
     pendingPopup,
     showDescriptionPopup,
     showGameOverPopup,
@@ -56,9 +58,13 @@ function App() {
         <ModeSelect
           key="modeSelect"
           onStart={handleStart}
+          onViewTimeline={viewTimeline}
           isLoading={state.phase === 'loading'}
           allEvents={allEvents}
         />
+      )}
+      {state.phase === 'viewTimeline' && (
+        <ViewTimeline key="viewTimeline" allEvents={allEvents} onHomeClick={resetGame} />
       )}
       {state.phase === 'transitioning' && (
         <GameStartTransition

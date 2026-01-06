@@ -50,7 +50,13 @@ export interface Player {
   placementHistory: boolean[];
 }
 
-export type GamePhase = 'loading' | 'modeSelect' | 'transitioning' | 'playing' | 'gameOver';
+export type GamePhase =
+  | 'loading'
+  | 'modeSelect'
+  | 'transitioning'
+  | 'playing'
+  | 'gameOver'
+  | 'viewTimeline';
 
 export interface PlacementResult {
   success: boolean;
