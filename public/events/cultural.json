@@ -291,17 +291,6 @@
     "image_height": 492
   },
   {
-    "name": "christianity-legalized",
-    "friendly_name": "Christianity Legalized in Rome",
-    "year": 313,
-    "category": "cultural",
-    "description": "Emperor Constantine issued the Edict of Milan, ending Christian persecution.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg",
-    "image_width": 330,
-    "image_height": 502
-  },
-  {
     "name": "bible-latin-vulgate",
     "friendly_name": "Latin Vulgate Bible Completed",
     "year": 405,
@@ -340,17 +329,6 @@
     "description": "The Prophet Muhammad received the first verses of the Quran, founding Islam.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg"
-  },
-  {
-    "name": "tang-dynasty-founded",
-    "friendly_name": "Tang Dynasty Founded",
-    "year": 618,
-    "category": "cultural",
-    "description": "China's golden age began, a period of prosperity, culture, and influence across East Asia.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tang_outline_map%2C_661.svg/330px-Tang_outline_map%2C_661.svg.png",
-    "image_width": 330,
-    "image_height": 194
   },
   {
     "name": "islam-founded",
@@ -545,17 +523,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg/330px-Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg",
     "image_width": 330,
     "image_height": 389
-  },
-  {
-    "name": "ming-dynasty-founded",
-    "friendly_name": "Ming Dynasty Founded",
-    "year": 1368,
-    "category": "cultural",
-    "description": "The Ming restored native Han Chinese rule after expelling the Mongols.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg/330px-Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg",
-    "image_width": 330,
-    "image_height": 395
   },
   {
     "name": "wycliffe-bible",

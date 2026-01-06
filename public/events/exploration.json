@@ -40,15 +40,6 @@
     "image_height": 552
   },
   {
-    "name": "fire-use",
-    "friendly_name": "Controlled Use of Fire",
-    "year": -125000,
-    "category": "exploration",
-    "description": "Humans mastered the control and use of fire.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/330px-Large_bonfire.jpg"
-  },
-  {
     "name": "migration-out-africa",
     "friendly_name": "Human Migration Out of Africa",
     "year": -70000,
@@ -687,17 +678,6 @@
     "category": "exploration",
     "description": "Nicolaus Copernicus published his theory that Earth orbits the Sun.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/330px-Nikolaus_Kopernikus_MOT.jpg",
-    "image_width": 330,
-    "image_height": 412
-  },
-  {
-    "name": "copernicus",
-    "friendly_name": "Copernicus Publishes Heliocentric Theory",
-    "year": 1543,
-    "category": "exploration",
-    "description": "Copernicus proposed that Earth orbits the Sun.",
-    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/330px-Nikolaus_Kopernikus_MOT.jpg",
     "image_width": 330,
     "image_height": 412
@@ -1418,17 +1398,6 @@
     "image_height": 403
   },
   {
-    "name": "telephone-invented",
-    "friendly_name": "Telephone Invented",
-    "year": 1876,
-    "category": "exploration",
-    "description": "Alexander Graham Bell patented the first practical telephone.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Telefon_BW_2012-02-18_13-44-32.JPG/330px-Telefon_BW_2012-02-18_13-44-32.JPG",
-    "image_width": 330,
-    "image_height": 260
-  },
-  {
     "name": "bell-telephone",
     "friendly_name": "Bell Invents Telephone",
     "year": 1876,
@@ -1438,17 +1407,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Alexander_Graham_Bell.jpg/330px-Alexander_Graham_Bell.jpg",
     "image_width": 330,
     "image_height": 429
-  },
-  {
-    "name": "edison-phonograph",
-    "friendly_name": "Edison Invents Phonograph",
-    "year": 1877,
-    "category": "exploration",
-    "description": "Thomas Edison invented the first device to record and play back sound.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turntable.svg/330px-Turntable.svg.png",
-    "image_width": 330,
-    "image_height": 198
   },
   {
     "name": "germ-theory",
