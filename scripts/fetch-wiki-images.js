@@ -11,7 +11,7 @@ const fs = require('fs');
 const path = require('path');
 
 const EVENTS_DIR = path.join(__dirname, '../public/events');
-const RATE_LIMIT_MS = 100; // Delay between API calls to avoid rate limiting
+const RATE_LIMIT_MS = 50; // Delay between API calls to avoid rate limiting
 
 // Wikipedia search terms that may help find better images
 const SEARCH_OVERRIDES = {
