@@ -219,7 +219,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
     min-h-[48px]
   `;
 
-  const iconClass = 'w-5 h-5 text-accent flex-shrink-0';
+  const iconClass = 'w-5 h-5 text-text flex-shrink-0';
 
   return (
     <>
@@ -251,7 +251,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
             >
               {/* Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-                <span className="font-display font-semibold text-lg text-accent">Menu</span>
+                <span className="font-display font-semibold text-lg text-text">Menu</span>
                 <button
                   onClick={onClose}
                   className="p-2 -mr-2 rounded-lg hover:bg-border/50 transition-colors"
