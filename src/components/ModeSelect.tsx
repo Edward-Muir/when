@@ -130,9 +130,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       todayResult.date,
       todayResult.theme,
       todayResult.emojiGrid,
-      todayResult.won,
-      todayResult.correctCount,
-      todayResult.totalAttempts
+      todayResult.correctCount
     );
     if (showToast) {
       setShowShareToast(true);

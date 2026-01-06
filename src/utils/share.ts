@@ -29,7 +29,7 @@ export function generateShareText(state: WhenGameState): string {
       const theme = getDailyTheme(dateStr);
       const themeName = getThemeDisplayName(theme);
       // Daily uses sudden death mechanics - show timeline length
-      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${totalAttempts} events`;
+      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events`;
       break;
     }
     case 'suddenDeath': {
@@ -119,10 +119,8 @@ export async function shareDailyResult(
   date: string,
   theme: string,
   emojiGrid: string,
-  won: boolean,
-  correctCount: number,
-  totalAttempts: number
+  correctCount: number
 ): Promise<boolean> {
-  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${totalAttempts} events\n\n${GAME_URL}`;
+  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events\n\n${GAME_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }
