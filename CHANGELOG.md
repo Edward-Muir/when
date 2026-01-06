@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.2.2](https://github.com/Edward-Muir/when/compare/v0.2.1...v0.2.2) (2026-01-06)
+
+
+### Features
+
+* Add feedback email button ([cf03901](https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3))
+
+
+### Bug Fixes
+
+* Change menu colours ([9f55d23](https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab))
+
 ## [0.2.1](https://github.com/Edward-Muir/when/compare/v0.2.0...v0.2.1) (2026-01-05)
 
 
