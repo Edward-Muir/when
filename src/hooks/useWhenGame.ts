@@ -112,7 +112,7 @@ export function useWhenGame(): UseWhenGameReturn {
           dailySeed,
           playerCount: 1,
           playerNames: ['Player 1'],
-          cardsPerHand: 3, // Daily uses sudden death mechanics with 3 starting cards
+          cardsPerHand: 5, // Daily uses sudden death mechanics
         });
       }
     });
