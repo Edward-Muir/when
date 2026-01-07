@@ -1776,7 +1776,9 @@
     "category": "disasters",
     "description": "Economic collapse and floods caused a famine killing hundreds of thousands.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg/330px-Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg/330px-Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg",
+    "image_width": 330,
+    "image_height": 449
   },
   {
     "name": "tokyo-subway-attack",
@@ -2276,7 +2278,9 @@
     "category": "disasters",
     "description": "Fire destroyed much of Rome; Nero blamed Christians, beginning their persecution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg/330px-Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg/330px-Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg",
+    "image_width": 330,
+    "image_height": 263
   },
   {
     "name": "extinction-neanderthals",
@@ -2316,7 +2320,9 @@
     "category": "disasters",
     "description": "The Dutch tulip market collapsed after speculation drove bulb prices to extraordinary highs, becoming history's first recorded economic bubble.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Verzameling_van_een_meenigte_tulipaanen_p15.png/330px-Verzameling_van_een_meenigte_tulipaanen_p15.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Verzameling_van_een_meenigte_tulipaanen_p15.png/330px-Verzameling_van_een_meenigte_tulipaanen_p15.png",
+    "image_width": 330,
+    "image_height": 550
   },
   {
     "name": "space-shuttle-columbia-disaster",
@@ -2369,7 +2375,9 @@
     "category": "disasters",
     "description": "Hurricane Sandy devastated the northeastern U.S. coast, causing over $70 billion in damage and killing more than 230 people.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sandy_2012-10-25_0320Z_%28cropped%29.png/330px-Sandy_2012-10-25_0320Z_%28cropped%29.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sandy_2012-10-25_0320Z_%28cropped%29.png/330px-Sandy_2012-10-25_0320Z_%28cropped%29.png",
+    "image_width": 330,
+    "image_height": 427
   },
   {
     "name": "notre-dame-fire",
@@ -2389,7 +2397,9 @@
     "category": "disasters",
     "description": "Climate activists staged major civil disobedience protests across world capitals, blocking streets to demand action on climate change.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Extinction_Symbol.svg/330px-Extinction_Symbol.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Extinction_Symbol.svg/330px-Extinction_Symbol.svg.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "svb-collapse",
@@ -2397,6 +2407,7 @@
     "year": 2023,
     "category": "disasters",
     "description": "Silicon Valley Bank failed in the second-largest bank collapse in U.S. history, triggering fears of a broader banking crisis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg/330px-3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg"
   }
 ]

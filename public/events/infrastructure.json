@@ -400,7 +400,9 @@
     "category": "infrastructure",
     "description": "The world's largest Buddhist temple was completed in Java.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "great-mosque-cordoba",
@@ -2233,7 +2235,10 @@
     "year": -290,
     "category": "infrastructure",
     "description": "The Mouseion of Alexandria was established by Ptolemy I as a center of learning, housing the famous Library of Alexandria.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/330px-Ancientlibraryalex.jpg",
+    "image_width": 330,
+    "image_height": 336
   },
   {
     "name": "globe-theatre-built",
@@ -2272,7 +2277,8 @@
     "year": 1866,
     "category": "infrastructure",
     "description": "The first permanent transatlantic telegraph cable connected Europe and North America, enabling instant communication across the ocean.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg/330px-Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg"
   },
   {
     "name": "great-railroad-strike-1877",
@@ -2289,6 +2295,7 @@
     "year": 1920,
     "category": "infrastructure",
     "description": "KDKA in Pittsburgh broadcast the Harding-Cox presidential election results, marking the start of commercial radio broadcasting.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg/330px-Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg"
   }
 ]

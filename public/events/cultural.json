@@ -149,7 +149,9 @@
     "category": "cultural",
     "description": "The Greek storyteller created moral tales featuring animals.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Aesop_and_Priests_by_Francis_Barlow_1687.png/330px-Aesop_and_Priests_by_Francis_Barlow_1687.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Aesop_and_Priests_by_Francis_Barlow_1687.png/330px-Aesop_and_Priests_by_Francis_Barlow_1687.png",
+    "image_width": 330,
+    "image_height": 406
   },
   {
     "name": "pythagoras-school",
@@ -224,7 +226,9 @@
     "category": "cultural",
     "description": "The Greek mathematician wrote the foundational textbook of geometry.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg/330px-P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg/330px-P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg",
+    "image_width": 330,
+    "image_height": 205
   },
   {
     "name": "library-alexandria",
@@ -1153,7 +1157,7 @@
     "category": "cultural",
     "description": "L.L. Zamenhof published the first book in his constructed international language.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/330px-Flag_of_Esperanto.svg.png",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Zamenhof_portreto.jpg/500px-Zamenhof_portreto.jpg",
     "image_width": 330,
     "image_height": 220
   },
@@ -2329,7 +2333,10 @@
     "year": 1938,
     "category": "cultural",
     "description": "Orson Welles' radio drama caused panic among listeners who believed Martians were invading.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Orson_Welles_1937_cr3-4.jpg/330px-Orson_Welles_1937_cr3-4.jpg",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "i-have-a-dream-speech",
@@ -2371,7 +2378,9 @@
     "category": "cultural",
     "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg/330px-Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg/330px-Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg",
+    "image_width": 330,
+    "image_height": 379
   },
   {
     "name": "exodus-biblical",
@@ -2380,7 +2389,9 @@
     "category": "cultural",
     "description": "According to the Bible, Moses led the Israelites out of slavery in Egypt.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/David_Roberts-IsraelitesLeavingEgypt_1828.jpg/330px-David_Roberts-IsraelitesLeavingEgypt_1828.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/David_Roberts-IsraelitesLeavingEgypt_1828.jpg/330px-David_Roberts-IsraelitesLeavingEgypt_1828.jpg",
+    "image_width": 330,
+    "image_height": 238
   },
   {
     "name": "king-david-rules",
@@ -2400,7 +2411,9 @@
     "category": "cultural",
     "description": "Darius I expanded the Persian Empire to its greatest extent and built Persepolis.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Darius_I.jpg/330px-Darius_I.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Darius_I.jpg/330px-Darius_I.jpg",
+    "image_width": 330,
+    "image_height": 412
   },
   {
     "name": "axumite-empire",
@@ -2442,7 +2455,9 @@
     "category": "cultural",
     "description": "Sundiata Keita established the wealthy West African empire that controlled trans-Saharan trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Map_of_the_Mali_Empire.png/330px-Map_of_the_Mali_Empire.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Map_of_the_Mali_Empire.png/330px-Map_of_the_Mali_Empire.png",
+    "image_width": 330,
+    "image_height": 233
   },
   {
     "name": "timbuktu-learning-center",
@@ -2451,7 +2466,9 @@
     "category": "cultural",
     "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Cooking_contest_140418-N-OX321-101.jpg/330px-Cooking_contest_140418-N-OX321-101.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Cooking_contest_140418-N-OX321-101.jpg/330px-Cooking_contest_140418-N-OX321-101.jpg",
+    "image_width": 330,
+    "image_height": 236
   },
   {
     "name": "mansa-musa-pilgrimage",
@@ -2471,7 +2488,9 @@
     "category": "cultural",
     "description": "Sunni Ali founded the largest empire in African history, succeeding Mali.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png",
+    "image_width": 330,
+    "image_height": 233
   },
   {
     "name": "peter-great-modernizes",
@@ -2490,7 +2509,10 @@
     "year": 1807,
     "category": "cultural",
     "description": "Britain outlawed the transatlantic slave trade after decades of abolitionist campaigning.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg.png",
+    "image_width": 330,
+    "image_height": 330
   },
   {
     "name": "daguerreotype-invented",
@@ -2498,7 +2520,10 @@
     "year": 1839,
     "category": "cultural",
     "description": "Louis Daguerre's practical photographic process made portraits available to the masses.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Louis_Daguerre_2.jpg/330px-Louis_Daguerre_2.jpg",
+    "image_width": 330,
+    "image_height": 422
   },
   {
     "name": "ghana-independence",
@@ -2506,7 +2531,10 @@
     "year": 1957,
     "category": "cultural",
     "description": "Ghana became the first sub-Saharan African nation to gain independence from colonial rule.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/330px-Flag_of_Ghana.svg.png",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "mandela-elected-president",
@@ -2558,7 +2586,10 @@
     "year": -900,
     "category": "cultural",
     "description": "The Phoenicians refined their alphabet, influencing Greek, Latin, and modern scripts.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Phoenician_alphabet.svg/330px-Phoenician_alphabet.svg.png",
+    "image_width": 330,
+    "image_height": 297
   },
   {
     "name": "draco-law-code",
@@ -2611,7 +2642,9 @@
     "category": "cultural",
     "description": "The second most important Confucian philosopher was born, later advocating innate human goodness.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg/330px-Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg/330px-Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg",
+    "image_width": 330,
+    "image_height": 447
   },
   {
     "name": "qin-book-burning",
@@ -2619,7 +2652,10 @@
     "year": -213,
     "category": "cultural",
     "description": "Qin Shi Huang ordered the burning of books and execution of scholars to control thought.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Qin_empire_210_BCE.png/330px-Qin_empire_210_BCE.png",
+    "image_width": 330,
+    "image_height": 324
   },
   {
     "name": "maccabean-revolt",
@@ -2638,7 +2674,10 @@
     "year": 30000,
     "category": "cultural",
     "description": "The Master of Mankind was interred upon the Golden Throne to guide humanity through the Warp.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Keno_mini_wargame.jpg/330px-Keno_mini_wargame.jpg",
+    "image_width": 330,
+    "image_height": 229
   },
   {
     "name": "reign-of-caligula",
@@ -2647,7 +2686,9 @@
     "category": "cultural",
     "description": "Caligula became Rome's third emperor, later infamous for cruelty and erratic behavior.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg/330px-Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg/330px-Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg",
+    "image_width": 330,
+    "image_height": 448
   },
   {
     "name": "peter-paul-martyred",
@@ -2678,7 +2719,9 @@
     "category": "cultural",
     "description": "England adopted Roman Catholic practices over Celtic Christianity at this pivotal church council.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Whitby_Abbey_%28geograph_7249897%29.jpg/330px-Whitby_Abbey_%28geograph_7249897%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Whitby_Abbey_%28geograph_7249897%29.jpg/330px-Whitby_Abbey_%28geograph_7249897%29.jpg",
+    "image_width": 330,
+    "image_height": 226
   },
   {
     "name": "wu-zetian-emperor",
@@ -2698,7 +2741,9 @@
     "category": "cultural",
     "description": "Emperor Leo III banned religious images, sparking decades of controversy and destruction.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Irenekirken.jpg/330px-Irenekirken.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Irenekirken.jpg/330px-Irenekirken.jpg",
+    "image_width": 330,
+    "image_height": 445
   },
   {
     "name": "cluny-abbey-founded",
@@ -2707,7 +2752,9 @@
     "category": "cultural",
     "description": "Cluny Abbey was established, becoming the center of monastic reform across Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg/330px-Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg/330px-Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg",
+    "image_width": 330,
+    "image_height": 220
   },
   {
     "name": "christianization-kievan-rus",
@@ -2738,7 +2785,9 @@
     "category": "cultural",
     "description": "The legendary Spanish knight Rodrigo Díaz died, later immortalized in epic poetry.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Estatua_del_Cid_%28Burgos%29.jpg/330px-Estatua_del_Cid_%28Burgos%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Estatua_del_Cid_%28Burgos%29.jpg/330px-Estatua_del_Cid_%28Burgos%29.jpg",
+    "image_width": 330,
+    "image_height": 388
   },
   {
     "name": "inquisition-established",
@@ -2813,7 +2862,9 @@
     "category": "cultural",
     "description": "A competition for the Baptistery doors launched the careers of Brunelleschi and Ghiberti, sparking the Renaissance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Baptistery%2C_Florence.jpg/330px-Baptistery%2C_Florence.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Baptistery%2C_Florence.jpg/330px-Baptistery%2C_Florence.jpg",
+    "image_width": 330,
+    "image_height": 270
   },
   {
     "name": "council-of-constance",
@@ -2866,7 +2917,9 @@
     "category": "cultural",
     "description": "Phoenician colonists established Carthage in modern-day Tunisia, which grew into a major Mediterranean trading power.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Montage_ville_de_Carthage.png/330px-Montage_ville_de_Carthage.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Montage_ville_de_Carthage.png/330px-Montage_ville_de_Carthage.png",
+    "image_width": 330,
+    "image_height": 386
   },
   {
     "name": "birth-socrates",
@@ -2907,7 +2960,10 @@
     "year": -380,
     "category": "cultural",
     "description": "Plato composed his most famous dialogue exploring justice, the ideal state, and the philosopher-king concept.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Politeia_beginning._Codex_Parisinus_graecus_1807.jpg/330px-Politeia_beginning._Codex_Parisinus_graecus_1807.jpg",
+    "image_width": 330,
+    "image_height": 478
   },
   {
     "name": "birth-alexander-great",
@@ -3015,7 +3071,9 @@
     "category": "cultural",
     "description": "Gregory I became pope and reformed the Church, expanded papal authority, and sent missionaries to England.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg/330px-Gregory_the_Great_with_the_Holy_Spirit.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg/330px-Gregory_the_Great_with_the_Holy_Spirit.jpg",
+    "image_width": 330,
+    "image_height": 360
   },
   {
     "name": "augustine-arrives-england",
@@ -3055,7 +3113,9 @@
     "category": "cultural",
     "description": "The Umayyad Caliphate of Córdoba collapsed into competing taifa kingdoms, weakening Islamic Spain.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png/330px-Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png/330px-Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png",
+    "image_width": 330,
+    "image_height": 230
   },
   {
     "name": "expulsion-jews-england",
@@ -3064,7 +3124,9 @@
     "category": "cultural",
     "description": "Edward I expelled all Jews from England, the first such expulsion from a European kingdom.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BritLibCottonNeroDiiFol183vPersecutedJews.jpg/330px-BritLibCottonNeroDiiFol183vPersecutedJews.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BritLibCottonNeroDiiFol183vPersecutedJews.jpg/330px-BritLibCottonNeroDiiFol183vPersecutedJews.jpg",
+    "image_width": 330,
+    "image_height": 239
   },
   {
     "name": "flagellant-movement",
@@ -3445,7 +3507,9 @@
     "category": "cultural",
     "description": "Senator Joseph McCarthy launched his anti-communist campaign, sparking a period of political persecution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Anticommunist_Literature_1950s.png/325px-Anticommunist_Literature_1950s.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Anticommunist_Literature_1950s.png/325px-Anticommunist_Literature_1950s.png",
+    "image_width": 325,
+    "image_height": 495
   },
   {
     "name": "stalin-dies",
@@ -3540,7 +3604,9 @@
     "category": "cultural",
     "description": "The UN Conference on Environment and Development produced agreements on climate and biodiversity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg/330px-Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg/330px-Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg",
+    "image_width": 330,
+    "image_height": 189
   },
   {
     "name": "iran-green-movement",
