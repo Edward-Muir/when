@@ -117,5 +117,5 @@ export interface GameConfig {
   cardsPerHand?: number;
 
   // Sudden death settings
-  suddenDeathHandSize?: number; // 1-5 cards in hand for sudden death mode (default 3)
+  suddenDeathHandSize?: number; // 1-7 cards in hand for sudden death mode (default 5)
 }

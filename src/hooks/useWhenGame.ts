@@ -146,7 +146,7 @@ export function useWhenGame(): UseWhenGameReturn {
         playerCount = 1,
         playerNames = [],
         cardsPerHand = 5,
-        suddenDeathHandSize = 3,
+        suddenDeathHandSize = 5,
       } = config;
 
       // Apply filters to get available events

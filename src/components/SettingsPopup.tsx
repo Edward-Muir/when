@@ -116,7 +116,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 <input
                   type="range"
                   min={1}
-                  max={5}
+                  max={7}
                   value={suddenDeathHandSize}
                   onChange={(e) => setSuddenDeathHandSize(Number(e.target.value))}
                   className="flex-1 h-2 bg-border rounded-lg appearance-none cursor-pointer accent-error"

@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "postchangelog": "node scripts/generate-rss.js && node scripts/inject-version.js",
-    "precommit": "git add public/feed.xml src/version.ts"
+    "precommit": "git add public/feed.xml src/version.ts public/version.json public/service-worker.js"
   },
   "bumpFiles": [{ "filename": "package.json", "type": "json" }]
 }

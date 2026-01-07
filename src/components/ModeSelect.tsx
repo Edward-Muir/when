@@ -63,8 +63,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Hand size setting (3-8 cards) - default varies by player count
   const [cardsPerHand, setCardsPerHand] = useState(7);
 
-  // Sudden death hand size (1-5 cards, acts as "lives")
-  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(3);
+  // Sudden death hand size (1-7 cards, acts as "lives")
+  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(5);
 
   // Update default hand size when player count changes
   const getDefaultHandSize = (count: number) => {
