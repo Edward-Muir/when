@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 23:09:57 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 23:19:00 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.3.5</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.3.5</guid>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Start with 5 cards in daily challenge (<a href="https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a">d437990</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.3.4</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.1.9</guid>
       <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Resize image boxes to display full image (<a href="https://github.com/Edward-Muir/when/commit/9c6ecf969a8754234d38e18fb27135bff1e106b7">9c6ecf9</a>)</li> <li>Simplify game menus (<a href="https://github.com/Edward-Muir/when/commit/6ea49bed6bd01ca7706c84035b00031a854c0415">6ea49be</a>)</li> <li>Unify text and shadows (<a href="https://github.com/Edward-Muir/when/commit/3682e3c67773146a6a49d37133f6516ffe858bb4">3682e3c</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Add wrong banner in single player (<a href="https://github.com/Edward-Muir/when/commit/118b948036d7bc44dce457f56e34c14b95ba7786">118b948</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.1.8</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.1.8</guid>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Burger menu (<a href="https://github.com/Edward-Muir/when/commit/5ab03c8112935fcf59c0f6a1adc70b3d30b712ae">5ab03c8</a>)</li> <li>Update colour palette (<a href="https://github.com/Edward-Muir/when/commit/2eb7f367fc500750280375ec5c4e147b7d744b8c">2eb7f36</a>)</li> <li>Update colour pallete (<a href="https://github.com/Edward-Muir/when/commit/bc625cd17861fd9bc57ba3240b8c7e30aaf4a86e">bc625cd</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

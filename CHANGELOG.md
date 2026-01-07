@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.5](https://github.com/Edward-Muir/when/compare/v0.3.4...v0.3.5) (2026-01-07)
+
+
+### Bug Fixes
+
+* Start with 5 cards in daily challenge ([d437990](https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a))
+
 ## [0.3.4](https://github.com/Edward-Muir/when/compare/v0.3.3...v0.3.4) (2026-01-07)
 
 
