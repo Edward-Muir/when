@@ -9,7 +9,6 @@ import {
 import {
   isPlacementCorrect,
   findCorrectPosition,
-  insertIntoTimeline,
   removeFromHand,
   addToHand,
   drawCard,
@@ -267,9 +266,3 @@ export function buildPopupData(
     nextPlayer,
   };
 }
-
-/**
- * Insert event into timeline at the correct position (for correct placements)
- * Re-exported from gameLogic for convenience
- */
-export { insertIntoTimeline, getNextActivePlayerIndex };

@@ -35,7 +35,6 @@ export async function loadAllEvents(): Promise<HistoricalEvent[]> {
 
     // Deduplicate by name
     const deduplicatedEvents = deduplicateEvents(allEvents);
-    console.warn(`Loaded ${deduplicatedEvents.length} unique events`);
     return deduplicatedEvents;
   } catch (error) {
     console.error('Failed to load events:', error);

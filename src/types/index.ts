@@ -17,6 +17,8 @@ export const ALL_CATEGORIES: Category[] = [
 
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
+export const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
+
 export type Era =
   | 'prehistory'
   | 'ancient'

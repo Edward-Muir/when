@@ -58,19 +58,19 @@ function EventHeader({
   );
 }
 
+// Image dimension constants
+const IMAGE_CONTAINER_WIDTH = 340;
+const IMAGE_MIN_HEIGHT = 128;
+const IMAGE_MAX_HEIGHT = 384;
+const IMAGE_DEFAULT_HEIGHT = 192;
+
 // Sub-component for image section (clean, no overlay)
 function EventImage({ event }: { event: HistoricalEvent }) {
-  // Calculate dynamic height based on image dimensions
-  const CONTAINER_WIDTH = 340;
-  const MIN_HEIGHT = 128;
-  const MAX_HEIGHT = 384;
-  const DEFAULT_HEIGHT = 192;
-
   const getImageHeight = () => {
-    if (!event.image_width || !event.image_height) return DEFAULT_HEIGHT;
+    if (!event.image_width || !event.image_height) return IMAGE_DEFAULT_HEIGHT;
     const aspectRatio = event.image_width / event.image_height;
-    const calculatedHeight = CONTAINER_WIDTH / aspectRatio;
-    return Math.min(Math.max(calculatedHeight, MIN_HEIGHT), MAX_HEIGHT);
+    const calculatedHeight = IMAGE_CONTAINER_WIDTH / aspectRatio;
+    return Math.min(Math.max(calculatedHeight, IMAGE_MIN_HEIGHT), IMAGE_MAX_HEIGHT);
   };
 
   const imageHeight = getImageHeight();

@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import ConfettiExplosion from 'react-confetti-explosion';
@@ -17,12 +17,14 @@ import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
 import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
+import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
-import TopBar, { GameRules } from './TopBar';
+import TopBar from './TopBar';
+import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 
@@ -65,6 +67,15 @@ const Game: React.FC<GameProps> = ({
 
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
+
+  // Compute daily theme display name for TopBar
+  const dailyThemeDisplay = useMemo(() => {
+    if (state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
+      const theme = getDailyTheme(state.lastConfig.dailySeed);
+      return getThemeDisplayName(theme);
+    }
+    return undefined;
+  }, [state.gameMode, state.lastConfig?.dailySeed]);
 
   const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 
@@ -164,6 +175,7 @@ const Game: React.FC<GameProps> = ({
             showHome={true}
             onHomeClick={() => setShowHomeConfirm(true)}
             gameMode={state.gameMode}
+            dailyTheme={dailyThemeDisplay}
           />
 
           {showConfetti && (

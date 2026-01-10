@@ -20,6 +20,8 @@ import {
   shuffleArraySeeded,
   sortByYear,
   initializePlayers,
+  insertIntoTimeline,
+  getNextActivePlayerIndex,
 } from '../utils/gameLogic';
 import {
   validatePlacement,
@@ -27,8 +29,6 @@ import {
   processCorrectPlacement,
   processIncorrectPlacement,
   buildPopupData,
-  insertIntoTimeline,
-  getNextActivePlayerIndex,
 } from '../utils/placementLogic';
 
 interface UseWhenGameReturn {

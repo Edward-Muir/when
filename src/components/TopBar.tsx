@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, RefreshCw } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
 import Menu from './Menu';
 import { GameMode } from '../types';
-
-// Re-export GameRules for backwards compatibility
-export { GameRules } from './Menu';
 
 interface TopBarProps {
   showHome?: boolean;
@@ -17,6 +15,7 @@ interface TopBarProps {
   showFilter?: boolean;
   onFilterClick?: () => void;
   onViewTimeline?: () => void;
+  dailyTheme?: string;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -27,6 +26,7 @@ const TopBar: React.FC<TopBarProps> = ({
   showFilter = false,
   onFilterClick,
   onViewTimeline,
+  dailyTheme,
 }) => {
   const { isDark, toggleTheme } = useTheme();
   const { updateAvailable } = useVersionCheck();
@@ -50,7 +50,22 @@ const TopBar: React.FC<TopBarProps> = ({
         <div className="flex items-center justify-between gap-2 p-2">
           {/* Game Title */}
           {showTitle ? (
-            <h1 className="text-3xl font-display font-semibold text-text pl-2">When?</h1>
+            <div className="flex items-start gap-2 pl-2">
+              <h1 className="text-3xl font-display font-semibold text-text">When?</h1>
+              <AnimatePresence>
+                {dailyTheme && (
+                  <motion.span
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.9 }}
+                    transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+                    className="mt-1 px-2 py-0.5 text-xs font-body font-medium bg-accent text-white rounded-full"
+                  >
+                    {dailyTheme}
+                  </motion.span>
+                )}
+              </AnimatePresence>
+            </div>
           ) : (
             <div />
           )}
