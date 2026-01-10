@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.6](https://github.com/Edward-Muir/when/compare/v0.3.5...v0.3.6) (2026-01-10)
+
+
+### Features
+
+* Add pill note on daily challenge theme ([412077d](https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8))
+
 ## [0.3.5](https://github.com/Edward-Muir/when/compare/v0.3.4...v0.3.5) (2026-01-07)
 
 
