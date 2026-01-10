@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.7](https://github.com/Edward-Muir/when/compare/v0.3.6...v0.3.7) (2026-01-10)
+
+
+### Bug Fixes
+
+* Fix game rule text ([1aa32b6](https://github.com/Edward-Muir/when/commit/1aa32b6a0efaa0e87526c89798c1cbae120f5058))
+
 ## [0.3.6](https://github.com/Edward-Muir/when/compare/v0.3.5...v0.3.6) (2026-01-10)
 
 
