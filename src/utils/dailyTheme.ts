@@ -1,8 +1,6 @@
-import { Category, Era } from '../types';
+import { Category, Era, ALL_CATEGORIES } from '../types';
 import { seededRandom, stringToSeed, getCategoryDisplayName } from './gameLogic';
 import { ERA_DEFINITIONS, ALL_ERAS } from './eras';
-
-const ALL_CATEGORIES: Category[] = ['conflict', 'disasters', 'exploration', 'cultural', 'infrastructure', 'diplomatic'];
 
 export interface DailyTheme {
   type: 'category' | 'era';
@@ -34,7 +32,7 @@ export function getThemeDisplayName(theme: DailyTheme): string {
     return getCategoryDisplayName(theme.value as Category);
   }
   // For eras, use the friendly name from ERA_DEFINITIONS
-  const eraDef = ERA_DEFINITIONS.find(e => e.id === theme.value);
+  const eraDef = ERA_DEFINITIONS.find((e) => e.id === theme.value);
   return eraDef?.name || theme.value;
 }
 

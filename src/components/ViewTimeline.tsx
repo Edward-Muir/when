@@ -1,8 +1,14 @@
 import React, { useState, useMemo } from 'react';
-import { HistoricalEvent, Difficulty, Category, Era, GamePopupData } from '../types';
+import {
+  HistoricalEvent,
+  Difficulty,
+  Category,
+  Era,
+  GamePopupData,
+  ALL_CATEGORIES,
+} from '../types';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import { ERA_DEFINITIONS } from '../utils/eras';
-import { ALL_CATEGORIES } from './FilterControls';
 import TopBar from './TopBar';
 import Timeline from './Timeline/Timeline';
 import FilterPopup from './FilterPopup';

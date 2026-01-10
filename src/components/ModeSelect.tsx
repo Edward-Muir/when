@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Gamepad2, Settings, Play, Share2, Check } from 'lucide-react';
-import { GameConfig, Difficulty, Category, Era, HistoricalEvent } from '../types';
+import { GameConfig, Difficulty, Category, Era, HistoricalEvent, ALL_CATEGORIES } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
@@ -16,14 +16,6 @@ import { getTodayResult } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { APP_VERSION } from '../version';
 
-const ALL_CATEGORIES: Category[] = [
-  'conflict',
-  'disasters',
-  'exploration',
-  'cultural',
-  'infrastructure',
-  'diplomatic',
-];
 const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
 
 interface ModeSelectProps {

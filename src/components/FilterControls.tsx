@@ -1,15 +1,6 @@
 import React from 'react';
-import { Difficulty, Category, Era } from '../types';
+import { Difficulty, Category, Era, ALL_CATEGORIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
-
-export const ALL_CATEGORIES: Category[] = [
-  'conflict',
-  'disasters',
-  'exploration',
-  'cultural',
-  'infrastructure',
-  'diplomatic',
-];
 
 export interface FilterControlsProps {
   selectedDifficulties: Difficulty[];

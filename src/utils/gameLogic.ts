@@ -115,20 +115,6 @@ export function formatYear(year: number): string {
   return `${year}`;
 }
 
-// Category color mapping
-const categoryColors: Record<Category, { bg: string; border: string }> = {
-  conflict: { bg: 'bg-red-600', border: 'border-red-400' },
-  disasters: { bg: 'bg-gray-700', border: 'border-gray-500' },
-  exploration: { bg: 'bg-teal-600', border: 'border-teal-400' },
-  cultural: { bg: 'bg-purple-600', border: 'border-purple-400' },
-  infrastructure: { bg: 'bg-amber-600', border: 'border-amber-400' },
-  diplomatic: { bg: 'bg-blue-600', border: 'border-blue-400' },
-};
-
-export function getCategoryColorClass(category: Category): string {
-  return categoryColors[category]?.bg || 'bg-gray-500';
-}
-
 export function getCategoryDisplayName(category: Category): string {
   const names: Record<Category, string> = {
     conflict: 'Conflict',
@@ -165,11 +151,6 @@ export function removeFromHand(hand: HistoricalEvent[], eventName: string): Hist
 // Add a card to a player's hand
 export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
   return [...hand, event];
-}
-
-// Get next player index (wraps around)
-export function getNextPlayerIndex(currentIndex: number, playerCount: number): number {
-  return (currentIndex + 1) % playerCount;
 }
 
 // Get next active (non-eliminated) player index

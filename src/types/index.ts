@@ -6,6 +6,15 @@ export type Category =
   | 'infrastructure'
   | 'diplomatic';
 
+export const ALL_CATEGORIES: Category[] = [
+  'conflict',
+  'disasters',
+  'exploration',
+  'cultural',
+  'infrastructure',
+  'diplomatic',
+];
+
 export type Difficulty = 'easy' | 'medium' | 'hard';
 
 export type Era =
