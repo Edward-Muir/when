@@ -203,9 +203,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
               </div>
               <div className="text-left flex-1 min-w-0">
                 <h3 className="font-bold text-text text-sm font-body">Play</h3>
-                <p className="text-sm text-text-muted font-body">
-                  Place events in the correct order
-                </p>
+                <p className="text-sm text-text-muted font-body">Make the longest timeline!</p>
               </div>
               <button
                 onClick={() => setIsSettingsOpen(true)}

@@ -110,7 +110,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           {isSuddenDeath ? (
             <div>
               <label className="block text-sm font-medium text-text mb-2 font-body">
-                Starting Lives
+                Starting Cards
               </label>
               <div className="flex items-center gap-3">
                 <input
@@ -126,7 +126,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-text-muted mt-1 font-body">
-                Wrong answers don't draw new cards · Empty hand = game over
+                Place events correctly to draw new cards.
               </p>
             </div>
           ) : (
@@ -148,7 +148,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-text-muted mt-1 font-body">
-                Number of cards dealt to each player
+                Number of cards dealt to each player. Draw a card if incorrect.
               </p>
             </div>
           )}

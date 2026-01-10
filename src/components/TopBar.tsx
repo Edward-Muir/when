@@ -75,10 +75,10 @@ const TopBar: React.FC<TopBarProps> = ({
             {updateAvailable && (
               <button
                 onClick={() => window.location.reload()}
-                className={`${buttonClass} bg-accent text-white border-accent hover:bg-accent/90`}
+                className={buttonClass}
                 aria-label="Update available - click to refresh"
               >
-                <RefreshCw className="w-5 h-5" />
+                <RefreshCw className={iconClass} />
               </button>
             )}
 
