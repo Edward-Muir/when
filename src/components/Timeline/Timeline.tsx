@@ -24,7 +24,7 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     {/* Year column (fixed 96px width) */}
     <div className="w-24 flex items-center justify-end shrink-0">
       <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">?</span>
-      <div className="w-3 h-0.5 bg-accent/50 shrink-0" />
+      <div className="w-3 h-1 bg-accent/50 shrink-0" />
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">

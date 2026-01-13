@@ -216,7 +216,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
         >
           {formatYear(event.year)}
         </motion.span>
-        <div className="w-3 h-0.5 bg-accent shrink-0" />
+        <div className="w-3 h-1 bg-accent shrink-0" />
       </div>
 
       {/* Card area - landscape card */}
