@@ -20,6 +20,7 @@ import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
+import StatsPopup from './StatsPopup';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
@@ -27,6 +28,7 @@ import TopBar from './TopBar';
 import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
+import { getTimelineHighScore } from '../utils/playerStorage';
 
 interface GameProps {
   state: WhenGameState;
@@ -57,6 +59,7 @@ const Game: React.FC<GameProps> = ({
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
   const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
+  const [showStatsPopup, setShowStatsPopup] = useState(false);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -221,6 +224,9 @@ const Game: React.FC<GameProps> = ({
                   <GameInfoCompact
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
+                    timelineLength={state.timeline.length}
+                    gameMode={state.gameMode}
+                    onStatsClick={() => setShowStatsPopup(true)}
                   />
                 </div>
 
@@ -260,6 +266,14 @@ const Game: React.FC<GameProps> = ({
               gameState={pendingPopup.gameState}
             />
           )}
+
+          <StatsPopup
+            isOpen={showStatsPopup}
+            cardsInHand={currentPlayer?.hand.length ?? 0}
+            timelineLength={state.timeline.length}
+            highScore={getTimelineHighScore()}
+            onDismiss={() => setShowStatsPopup(false)}
+          />
 
           <Toast
             message="Copied to clipboard!"

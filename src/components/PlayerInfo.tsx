@@ -1,6 +1,7 @@
-import React from 'react';
-import { Player } from '../types';
-import { Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Player, GameMode } from '../types';
+import { Users, Ruler, Trophy } from 'lucide-react';
+import { getTimelineHighScore } from '../utils/playerStorage';
 
 // Custom hand of cards icon with count overlay
 const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({
@@ -139,14 +140,28 @@ const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
 interface GameInfoCompactProps {
   currentPlayer: Player;
   isMultiplayer: boolean;
+  timelineLength: number;
+  gameMode: GameMode | null;
+  onStatsClick?: () => void;
 }
 
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   currentPlayer,
   isMultiplayer,
+  timelineLength,
+  gameMode: _gameMode,
+  onStatsClick,
 }) => {
-  return (
-    <div className="flex flex-col items-center gap-0.5">
+  const [highScore, setHighScore] = useState(0);
+  const showTimelineStats = !isMultiplayer;
+
+  // Load high score on mount
+  useEffect(() => {
+    setHighScore(getTimelineHighScore());
+  }, []);
+
+  const content = (
+    <>
       {/* Player name (if multiplayer) */}
       {isMultiplayer && (
         <span className="text-sm font-medium text-text font-body">{currentPlayer.name}</span>
@@ -155,8 +170,36 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
       {/* Hand count with enlarged icon */}
       <HandCardsIconLarge count={currentPlayer.hand.length} />
       <span className="text-sm text-text font-body">cards left</span>
-    </div>
+
+      {/* Timeline stats for single-player Sudden Death */}
+      {showTimelineStats && (
+        <div className="flex items-center gap-2 text-xs text-text-muted font-body">
+          <div className="flex items-center gap-1">
+            <Ruler className="w-3.5 h-3.5" />
+            <span className="font-mono">{timelineLength}</span>
+          </div>
+          <div className="flex items-center gap-1">
+            <Trophy className="w-3.5 h-3.5" />
+            <span className="font-mono">{highScore}</span>
+          </div>
+        </div>
+      )}
+    </>
   );
+
+  // Wrap in tappable button for Sudden Death mode
+  if (showTimelineStats) {
+    return (
+      <button
+        onClick={onStatsClick}
+        className="flex flex-col items-center gap-0.5 px-2 py-1 -mx-2 rounded-md hover:bg-border/50 active:bg-border transition-colors cursor-pointer"
+      >
+        {content}
+      </button>
+    );
+  }
+
+  return <div className="flex flex-col items-center gap-0.5">{content}</div>;
 };
 
 export default PlayerInfo;

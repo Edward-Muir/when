@@ -105,3 +105,38 @@ export function markModePlayed(mode: GameMode): void {
     console.warn('Failed to save modes played to localStorage');
   }
 }
+
+// --- Timeline High Score Storage ---
+
+const TIMELINE_HIGH_SCORE_KEY = 'when-timeline-high-score';
+
+/**
+ * Get the high score for Sudden Death mode (longest timeline)
+ */
+export function getTimelineHighScore(): number {
+  try {
+    const stored = localStorage.getItem(TIMELINE_HIGH_SCORE_KEY);
+    if (!stored) return 0;
+    return parseInt(stored, 10) || 0;
+  } catch {
+    return 0;
+  }
+}
+
+/**
+ * Save a new high score if it beats the current record
+ * @returns true if a new record was set
+ */
+export function saveTimelineHighScore(score: number): boolean {
+  try {
+    const currentBest = getTimelineHighScore();
+    if (score > currentBest) {
+      localStorage.setItem(TIMELINE_HIGH_SCORE_KEY, score.toString());
+      return true;
+    }
+    return false;
+  } catch {
+    console.warn('Failed to save timeline high score to localStorage');
+    return false;
+  }
+}

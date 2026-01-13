@@ -12,7 +12,7 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
-import { saveDailyResult } from '../utils/playerStorage';
+import { saveDailyResult, saveTimelineHighScore } from '../utils/playerStorage';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
@@ -107,6 +107,13 @@ export function useWhenGame(): UseWhenGameReturn {
       });
     }
   }, [state.phase, state.gameMode, state.lastConfig, state.winners, state.placementHistory]);
+
+  // Save high score for single-player modes
+  useEffect(() => {
+    if (state.phase === 'gameOver' && state.players.length === 1) {
+      saveTimelineHighScore(state.timeline.length);
+    }
+  }, [state.phase, state.players.length, state.timeline.length]);
 
   const startGame = useCallback(
     (config: GameConfig) => {
