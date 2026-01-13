@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Jan 2026 18:21:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 19:34:54 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.3.9</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.3.9</guid>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add game stats (<a href="https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6">c472da9</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.3.8</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.3.0</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add full timeline view (<a href="https://github.com/Edward-Muir/when/commit/01d4d88cc868317058afc16b1f9a0dcdfd89e0a1">01d4d88</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Correct number of events shared (<a href="https://github.com/Edward-Muir/when/commit/9cd7c7846df769856fe04b5ac959918e6eb249b1">9cd7c78</a>)</li> <li>Make settings button more visible (<a href="https://github.com/Edward-Muir/when/commit/b28cac81a87cd40cadfcd92a994594d7d9724917">b28cac8</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.2.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.2.2</guid>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add feedback email button (<a href="https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3">cf03901</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Change menu colours (<a href="https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab">9f55d23</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.9](https://github.com/Edward-Muir/when/compare/v0.3.8...v0.3.9) (2026-01-13)
+
+
+### Features
+
+* Add game stats ([c472da9](https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6))
+
 ## [0.3.8](https://github.com/Edward-Muir/when/compare/v0.3.7...v0.3.8) (2026-01-13)
 
 
