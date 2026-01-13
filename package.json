@@ -75,10 +75,11 @@
   },
   "devDependencies": {
     "commit-and-tag-version": "^12.6.1",
-    "puppeteer": "^24.2.1",
     "eslint-plugin-security": "^2.1.1",
     "husky": "^9.1.7",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.7.4"
+    "prettier": "^3.7.4",
+    "puppeteer": "^24.2.1",
+    "sharp": "^0.32.6"
   }
 }
