@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Jan 2026 20:09:33 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jan 2026 18:21:15 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.3.8</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.3.8</guid>
+      <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>SImplify logo (<a href="https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4">4dec65d</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Make timeline tick marks wider (<a href="https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c">a3a9859</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.3.7</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.2.2</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add feedback email button (<a href="https://github.com/Edward-Muir/when/commit/cf03901f5bc86ccc34c6e131df6b17db6b2863b3">cf03901</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Change menu colours (<a href="https://github.com/Edward-Muir/when/commit/9f55d23c087c9d8a8dab9e6a3073acc232fcfdab">9f55d23</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.2.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.2.1</guid>
-      <pubDate>Mon, 05 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Correctly place wrong text in pop up, force update on new version (<a href="https://github.com/Edward-Muir/when/commit/8add15075b3fbc24607e1984830a9e177fec0a00">8add150</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

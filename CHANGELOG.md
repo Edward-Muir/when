@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.8](https://github.com/Edward-Muir/when/compare/v0.3.7...v0.3.8) (2026-01-13)
+
+
+### Features
+
+* SImplify logo ([4dec65d](https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4))
+
+
+### Bug Fixes
+
+* Make timeline tick marks wider ([a3a9859](https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c))
+
 ## [0.3.7](https://github.com/Edward-Muir/when/compare/v0.3.6...v0.3.7) (2026-01-10)
 
 
