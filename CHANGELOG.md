@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.10](https://github.com/Edward-Muir/when/compare/v0.3.9...v0.3.10) (2026-01-21)
+
+
+### Features
+
+* Make daily challenge category based only not era based ([833f46f](https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae))
+
 ## [0.3.9](https://github.com/Edward-Muir/when/compare/v0.3.8...v0.3.9) (2026-01-13)
 
 
