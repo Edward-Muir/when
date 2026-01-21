@@ -267,7 +267,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
                   </span>
                 </h3>
                 <p className="text-sm text-text-muted font-body">
-                  {todayResult ? 'Completed today' : 'Same puzzle for all · New theme daily'}
+                  {todayResult ? 'Completed today' : 'Same puzzle for all · New category daily'}
                 </p>
               </div>
             </div>
