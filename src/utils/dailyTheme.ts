@@ -23,6 +23,7 @@ export function getDailyTheme(seed: string): DailyTheme {
     return { type: 'all', value: null };
   } else {
     // Single category - indices 0-5 (each 1/8 = 12.5% chance)
+    // eslint-disable-next-line security/detect-object-injection
     return { type: 'category', value: ALL_CATEGORIES[roll] };
   }
 }
