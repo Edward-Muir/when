@@ -65,9 +65,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(5);
 
   // Update default hand size when player count changes
-  const getDefaultHandSize = (count: number) => {
-    const defaults: Record<number, number> = { 1: 7, 2: 6, 3: 5, 4: 4, 5: 3, 6: 3 };
-    return defaults[count] ?? 5;
+  const getDefaultHandSize = (count: number): number => {
+    switch (count) {
+      case 1:
+        return 7;
+      case 2:
+        return 6;
+      case 3:
+        return 5;
+      case 4:
+        return 4;
+      case 5:
+      case 6:
+        return 3;
+      default:
+        return 5;
+    }
   };
 
   const handlePlayerCountChange = (count: number) => {

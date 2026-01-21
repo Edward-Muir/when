@@ -1,11 +1,21 @@
 import { HistoricalEvent, Category, Player, GameMode } from '../types';
 
+// Helper to swap array elements without triggering object injection lint rule
+function swapElements<T>(arr: T[], i: number, j: number): void {
+  const temp = arr.at(i);
+  const jVal = arr.at(j);
+  if (temp !== undefined && jVal !== undefined) {
+    arr.splice(i, 1, jVal);
+    arr.splice(j, 1, temp);
+  }
+}
+
 // Shuffle array using Fisher-Yates algorithm
 export function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    swapElements(shuffled, i, j);
   }
   return shuffled;
 }
@@ -41,7 +51,7 @@ export function shuffleArraySeeded<T>(array: T[], seed: string): T[] {
   const random = seededRandom(stringToSeed(seed));
   for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    swapElements(shuffled, i, j);
   }
   return shuffled;
 }
@@ -57,8 +67,9 @@ export function isPlacementCorrect(
   event: HistoricalEvent,
   insertionIndex: number
 ): boolean {
-  const leftEvent = insertionIndex > 0 ? timeline[insertionIndex - 1] : null;
-  const rightEvent = insertionIndex < timeline.length ? timeline[insertionIndex] : null;
+  const leftEvent = insertionIndex > 0 ? (timeline.at(insertionIndex - 1) ?? null) : null;
+  const rightEvent =
+    insertionIndex < timeline.length ? (timeline.at(insertionIndex) ?? null) : null;
 
   // Must be >= left neighbor's year
   if (leftEvent && event.year < leftEvent.year) {
@@ -76,8 +87,8 @@ export function isPlacementCorrect(
 // Find the correct position for an event in the timeline
 export function findCorrectPosition(timeline: HistoricalEvent[], event: HistoricalEvent): number {
   for (let i = 0; i <= timeline.length; i++) {
-    const leftYear = i > 0 ? timeline[i - 1].year : -Infinity;
-    const rightYear = i < timeline.length ? timeline[i].year : Infinity;
+    const leftYear = i > 0 ? (timeline.at(i - 1)?.year ?? -Infinity) : -Infinity;
+    const rightYear = i < timeline.length ? (timeline.at(i)?.year ?? Infinity) : Infinity;
 
     if (event.year >= leftYear && event.year <= rightYear) {
       return i;
@@ -116,15 +127,22 @@ export function formatYear(year: number): string {
 }
 
 export function getCategoryDisplayName(category: Category): string {
-  const names: Record<Category, string> = {
-    conflict: 'Conflict',
-    disasters: 'Disasters',
-    exploration: 'Exploration',
-    cultural: 'Cultural',
-    infrastructure: 'Infrastructure',
-    diplomatic: 'Diplomatic',
-  };
-  return names[category] || category;
+  switch (category) {
+    case 'conflict':
+      return 'Conflict';
+    case 'disasters':
+      return 'Disasters';
+    case 'exploration':
+      return 'Exploration';
+    case 'cultural':
+      return 'Cultural';
+    case 'infrastructure':
+      return 'Infrastructure';
+    case 'diplomatic':
+      return 'Diplomatic';
+    default:
+      return category;
+  }
 }
 
 // ==========================================
@@ -160,8 +178,10 @@ export function getNextActivePlayerIndex(currentIndex: number, players: Player[]
   let checked = 0;
 
   // Find next non-eliminated player
-  while (players[nextIndex].isEliminated && checked < playerCount) {
+  let nextPlayer = players.at(nextIndex);
+  while (nextPlayer?.isEliminated && checked < playerCount) {
     nextIndex = (nextIndex + 1) % playerCount;
+    nextPlayer = players.at(nextIndex);
     checked++;
   }
 
@@ -183,15 +203,16 @@ export function initializePlayers(
 
     // Deal cards to this player
     for (let j = 0; j < cardsPerHand; j++) {
-      if (deckIndex < deck.length) {
-        hand.push(deck[deckIndex]);
+      const card = deck.at(deckIndex);
+      if (card !== undefined) {
+        hand.push(card);
         deckIndex++;
       }
     }
 
     players.push({
       id: i,
-      name: playerNames[i] || `Player ${i + 1}`,
+      name: playerNames.at(i) || `Player ${i + 1}`,
       hand,
       hasWon: false,
       isEliminated: false,

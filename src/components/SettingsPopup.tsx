@@ -62,8 +62,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
 
   const handlePlayerNameChange = (index: number, name: string) => {
-    const newNames = [...playerNames];
-    newNames[index] = name;
+    const newNames = playerNames.map((n, i) => (i === index ? name : n));
     setPlayerNames(newNames);
   };
 
@@ -165,7 +164,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                     key={index}
                     type="text"
                     placeholder={`Player ${index + 1}`}
-                    value={playerNames[index] || ''}
+                    value={playerNames.at(index) || ''}
                     onChange={(e) => handlePlayerNameChange(index, e.target.value)}
                     className="
                       w-full px-3 py-2 rounded-lg text-sm

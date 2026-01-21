@@ -27,10 +27,15 @@ const Card: React.FC<CardProps> = ({
 
   const hasImage = event.image_url && !imageError;
 
-  const sizeClasses: Record<CardSize, string> = {
-    normal: 'w-[144px] h-[176px] sm:w-[160px] sm:h-[192px]',
-    large: 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]',
-    landscape: 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]',
+  const getSizeClass = (s: CardSize): string => {
+    switch (s) {
+      case 'normal':
+        return 'w-[144px] h-[176px] sm:w-[160px] sm:h-[192px]';
+      case 'large':
+        return 'w-[160px] h-[216px] sm:w-[180px] sm:h-[243px]';
+      case 'landscape':
+        return 'w-[240px] h-[80px] sm:w-[280px] sm:h-[96px]';
+    }
   };
 
   const isLandscape = size === 'landscape';
@@ -46,7 +51,7 @@ const Card: React.FC<CardProps> = ({
           shadow-sm
           ${onClick ? 'cursor-pointer active:scale-95' : ''}
           ${className}
-          ${sizeClasses[size]}
+          ${getSizeClass(size)}
           flex flex-row
           transition-colors duration-200
         `}
@@ -89,7 +94,7 @@ const Card: React.FC<CardProps> = ({
         shadow-sm
         ${onClick ? 'cursor-pointer active:scale-95' : ''}
         ${className}
-        ${sizeClasses[size]}
+        ${getSizeClass(size)}
         flex flex-col
         transition-colors duration-200
       `}

@@ -78,6 +78,17 @@ interface ModesPlayed {
 
 const MODES_PLAYED_KEY = 'when-modes-played';
 
+function getModePlayed(data: ModesPlayed, mode: GameMode): boolean {
+  switch (mode) {
+    case 'daily':
+      return data.daily === true;
+    case 'suddenDeath':
+      return data.suddenDeath === true;
+    case 'freeplay':
+      return data.freeplay === true;
+  }
+}
+
 /**
  * Check if a game mode has been played before (for first-time rules popup)
  */
@@ -86,9 +97,20 @@ export function hasPlayedMode(mode: GameMode): boolean {
     const stored = localStorage.getItem(MODES_PLAYED_KEY);
     if (!stored) return false;
     const data: ModesPlayed = JSON.parse(stored);
-    return data[mode] === true;
+    return getModePlayed(data, mode);
   } catch {
     return false;
+  }
+}
+
+function setModePlayed(data: ModesPlayed, mode: GameMode): ModesPlayed {
+  switch (mode) {
+    case 'daily':
+      return { ...data, daily: true };
+    case 'suddenDeath':
+      return { ...data, suddenDeath: true };
+    case 'freeplay':
+      return { ...data, freeplay: true };
   }
 }
 
@@ -99,8 +121,8 @@ export function markModePlayed(mode: GameMode): void {
   try {
     const stored = localStorage.getItem(MODES_PLAYED_KEY);
     const data: ModesPlayed = stored ? JSON.parse(stored) : {};
-    data[mode] = true;
-    localStorage.setItem(MODES_PLAYED_KEY, JSON.stringify(data));
+    const updated = setModePlayed(data, mode);
+    localStorage.setItem(MODES_PLAYED_KEY, JSON.stringify(updated));
   } catch {
     console.warn('Failed to save modes played to localStorage');
   }

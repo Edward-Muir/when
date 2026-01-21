@@ -54,13 +54,8 @@ export function useDragAndDrop({
     (pointerY: number, positions: number[]): number => {
       if (positions.length === 0) return 0;
 
-      for (let i = 0; i < positions.length; i++) {
-        if (pointerY < positions[i]) {
-          return i;
-        }
-      }
-
-      return positions.length;
+      const insertionPoint = positions.findIndex((pos) => pointerY < pos);
+      return insertionPoint === -1 ? positions.length : insertionPoint;
     },
     []
   );

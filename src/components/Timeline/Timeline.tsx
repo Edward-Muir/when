@@ -78,14 +78,14 @@ const Timeline: React.FC<TimelineProps> = ({
 
   // Calculate wave animation data: distance from placed card for staggered ripple effect
   const waveDistances = useMemo(() => {
-    if (!rippleData) return {};
+    if (!rippleData) return new Map<number, number>();
     const placedIndex = events.findIndex((e) => e.name === rippleData.placedEventName);
-    if (placedIndex === -1) return {};
+    if (placedIndex === -1) return new Map<number, number>();
 
-    const distances: Record<number, number> = {};
+    const distances = new Map<number, number>();
     events.forEach((_, idx) => {
       if (idx === placedIndex) return; // Skip the placed card itself
-      distances[idx] = Math.abs(idx - placedIndex);
+      distances.set(idx, Math.abs(idx - placedIndex));
     });
     return distances;
   }, [rippleData, events]);
@@ -171,7 +171,7 @@ const Timeline: React.FC<TimelineProps> = ({
                   isAnimating={isAnimatingEvent}
                   animationSuccess={animationSuccess}
                   animationPhase={isAnimatingEvent ? animationPhase : null}
-                  rippleDistance={waveDistances[idx]}
+                  rippleDistance={waveDistances.get(idx)}
                   rippleTrigger={rippleData?.timestamp}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}

@@ -1,8 +1,35 @@
-const isLocalhost = Boolean(
-  window.location.hostname === 'localhost' ||
-    window.location.hostname === '[::1]' ||
-    window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/)
-);
+// Check if running on localhost
+function checkIsLocalhost(): boolean {
+  const { hostname } = window.location;
+  if (hostname === 'localhost' || hostname === '[::1]') {
+    return true;
+  }
+  // Check for 127.x.x.x addresses
+  const parts = hostname.split('.');
+  if (parts.length !== 4 || parts[0] !== '127') {
+    return false;
+  }
+  return parts.slice(1).every((part) => {
+    const num = parseInt(part, 10);
+    return !isNaN(num) && num >= 0 && num <= 255;
+  });
+}
+
+const isLocalhost = checkIsLocalhost();
+
+// Service worker logging - intentionally using console for PWA debugging
+const swLog = {
+  info: (message: string) => {
+    if (process.env.NODE_ENV === 'development') {
+      // eslint-disable-next-line no-console
+      console.log(`[SW] ${message}`);
+    }
+  },
+  error: (message: string, error?: unknown) => {
+    // eslint-disable-next-line no-console
+    console.error(`[SW] ${message}`, error ?? '');
+  },
+};
 
 type Config = {
   onSuccess?: (registration: ServiceWorkerRegistration) => void;
@@ -24,7 +51,7 @@ export function register(config?: Config): void {
         // Running on localhost - check if service worker exists
         checkValidServiceWorker(swUrl, config);
         navigator.serviceWorker.ready.then(() => {
-          console.log('PWA is being served cache-first by a service worker.');
+          swLog.info('PWA is being served cache-first by a service worker.');
         });
       } else {
         // Not localhost - register service worker
@@ -47,13 +74,13 @@ function registerValidSW(swUrl: string, config?: Config): void {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
               // New content available - will be used on next visit
-              console.log('New content available; will be used on next visit.');
+              swLog.info('New content available; will be used on next visit.');
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
               }
             } else {
               // Content cached for offline use
-              console.log('Content is cached for offline use.');
+              swLog.info('Content is cached for offline use.');
               if (config && config.onSuccess) {
                 config.onSuccess(registration);
               }
@@ -63,7 +90,7 @@ function registerValidSW(swUrl: string, config?: Config): void {
       };
     })
     .catch((error) => {
-      console.error('Error during service worker registration:', error);
+      swLog.error('Error during service worker registration:', error);
     });
 }
 
@@ -87,7 +114,7 @@ function checkValidServiceWorker(swUrl: string, config?: Config): void {
       }
     })
     .catch(() => {
-      console.log('No internet connection. App is running in offline mode.');
+      swLog.info('No internet connection. App is running in offline mode.');
     });
 }
 
@@ -98,7 +125,7 @@ export function unregister(): void {
         registration.unregister();
       })
       .catch((error) => {
-        console.error(error.message);
+        swLog.error('Unregister failed:', error.message);
       });
   }
 }

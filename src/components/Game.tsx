@@ -12,7 +12,7 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData, GameMode } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -29,6 +29,51 @@ import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 import { getTimelineHighScore } from '../utils/playerStorage';
+
+// Extracted modal components to reduce main function line count
+const HomeConfirmModal: React.FC<{
+  onClose: () => void;
+  onConfirm: () => void;
+}> = ({ onClose, onConfirm }) => (
+  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+    <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
+      <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
+      <p className="text-text-muted text-sm mb-6 font-body">Your current progress will be lost.</p>
+      <div className="flex gap-3">
+        <button
+          onClick={onClose}
+          className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
+        >
+          Cancel
+        </button>
+        <button
+          onClick={onConfirm}
+          className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
+        >
+          Leave
+        </button>
+      </div>
+    </div>
+  </div>
+);
+
+const FirstTimeRulesModal: React.FC<{
+  gameMode: GameMode;
+  onDismiss: () => void;
+}> = ({ gameMode, onDismiss }) => (
+  <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" onClick={onDismiss}>
+    <div className="absolute inset-0 bg-black/25" />
+    <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm">
+      <div className="px-4 py-3 border-b border-border">
+        <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
+      </div>
+      <div className="p-4">
+        <GameRules gameMode={gameMode} />
+      </div>
+    </div>
+  </div>
+);
 
 interface GameProps {
   state: WhenGameState;
@@ -282,56 +327,17 @@ const Game: React.FC<GameProps> = ({
           />
 
           {showHomeConfirm && (
-            <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-              <div
-                className="absolute inset-0 bg-black/50"
-                onClick={() => setShowHomeConfirm(false)}
-              />
-              <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
-                <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
-                <p className="text-text-muted text-sm mb-6 font-body">
-                  Your current progress will be lost.
-                </p>
-                <div className="flex gap-3">
-                  <button
-                    onClick={() => setShowHomeConfirm(false)}
-                    className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    onClick={onNewGame}
-                    className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
-                  >
-                    Leave
-                  </button>
-                </div>
-              </div>
-            </div>
+            <HomeConfirmModal onClose={() => setShowHomeConfirm(false)} onConfirm={onNewGame} />
           )}
 
-          {/* First-time rules popup */}
           {showFirstTimeRules && state.gameMode && (
-            <div
-              className="fixed inset-0 z-[60] flex items-center justify-center p-4"
-              onClick={() => {
+            <FirstTimeRulesModal
+              gameMode={state.gameMode}
+              onDismiss={() => {
                 markModePlayed(state.gameMode!);
                 setShowFirstTimeRules(false);
               }}
-            >
-              <div className="absolute inset-0 bg-black/25" />
-              <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm">
-                {/* Header */}
-                <div className="px-4 py-3 border-b border-border">
-                  <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
-                </div>
-
-                {/* Rules content */}
-                <div className="p-4">
-                  <GameRules gameMode={state.gameMode} />
-                </div>
-              </div>
-            </div>
+            />
           )}
         </div>
       </DndContext>

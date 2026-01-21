@@ -3,11 +3,16 @@ import { useReducedMotion } from 'framer-motion';
 
 type ShakeIntensity = 'light' | 'medium' | 'heavy';
 
-const SHAKE_DURATIONS: Record<ShakeIntensity, number> = {
-  light: 200,
-  medium: 300,
-  heavy: 400,
-};
+function getShakeDuration(intensity: ShakeIntensity): number {
+  switch (intensity) {
+    case 'light':
+      return 200;
+    case 'medium':
+      return 300;
+    case 'heavy':
+      return 400;
+  }
+}
 
 export function useScreenShake() {
   const [shake, setShake] = useState<ShakeIntensity | null>(null);
@@ -19,7 +24,7 @@ export function useScreenShake() {
       if (shouldReduceMotion) return;
 
       setShake(intensity);
-      const duration = SHAKE_DURATIONS[intensity];
+      const duration = getShakeDuration(intensity);
       setTimeout(() => setShake(null), duration);
     },
     [shouldReduceMotion]

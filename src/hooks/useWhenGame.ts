@@ -202,7 +202,7 @@ export function useWhenGame(): UseWhenGameReturn {
         const nextPlayerIdx = !isSinglePlayer
           ? getNextActivePlayerIndex(state.currentPlayerIndex, state.players)
           : state.currentPlayerIndex;
-        const nextPlayer = !isSinglePlayer ? state.players[nextPlayerIdx] : undefined;
+        const nextPlayer = !isSinglePlayer ? state.players.at(nextPlayerIdx) : undefined;
         setPendingPopupState({
           popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
           pendingStateUpdate: null,
@@ -343,6 +343,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
       return result;
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- Intentionally omitting full state to prevent infinite re-renders; we access specific fields via closure
     [state.phase, state.players, state.currentPlayerIndex, state.timeline, state.isAnimating]
   );
 

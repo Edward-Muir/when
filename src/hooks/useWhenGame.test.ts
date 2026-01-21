@@ -18,6 +18,8 @@ jest.mock('../utils/eventLoader', () => {
 // Mock playerStorage to prevent auto-starting daily mode in tests
 jest.mock('../utils/playerStorage', () => ({
   saveDailyResult: jest.fn(),
+  saveTimelineHighScore: jest.fn(),
+  getTimelineHighScore: jest.fn().mockReturnValue(0),
   getTodayResult: jest.fn().mockReturnValue(null),
   hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
   hasPlayedMode: jest.fn().mockReturnValue(true),
