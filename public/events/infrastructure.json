@@ -922,9 +922,9 @@
     "category": "infrastructure",
     "description": "Canada's transcontinental railway connected the Atlantic to the Pacific.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Canadian_Pacific_System_Railmap.PNG/330px-Canadian_Pacific_System_Railmap.PNG",
-    "image_width": 330,
-    "image_height": 328
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Canadian_Pacific_Railway_poster_by_George_Young_Kauffman%2C_1924.jpg/960px-Canadian_Pacific_Railway_poster_by_George_Young_Kauffman%2C_1924.jpg",
+    "image_width": 514,
+    "image_height": 768
   },
   {
     "name": "automobile",
@@ -1957,17 +1957,6 @@
     "image_height": 220
   },
   {
-    "name": "high-line-park",
-    "friendly_name": "High Line Park Opens",
-    "year": 2009,
-    "category": "infrastructure",
-    "description": "The elevated railway was transformed into a park in Manhattan.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/High_Line_Park%2C_Section_1a.jpg/330px-High_Line_Park%2C_Section_1a.jpg",
-    "image_width": 330,
-    "image_height": 228
-  },
-  {
     "name": "crossrail-begins",
     "friendly_name": "Crossrail Construction Begins",
     "year": 2009,
@@ -2012,17 +2001,6 @@
     "image_height": 122
   },
   {
-    "name": "cctv-headquarters",
-    "friendly_name": "CCTV Headquarters Completed",
-    "year": 2012,
-    "category": "infrastructure",
-    "description": "The distinctive loop-shaped tower opened in Beijing.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg/330px-China_Central_Television_HQ%2C_from_China_World_Trade_Centre_%28Cropped%29.jpg",
-    "image_width": 330,
-    "image_height": 320
-  },
-  {
     "name": "shard-completed",
     "friendly_name": "The Shard Completed",
     "year": 2012,
@@ -2056,28 +2034,6 @@
     "image_height": 148
   },
   {
-    "name": "high-roller-vegas",
-    "friendly_name": "High Roller Opens",
-    "year": 2014,
-    "category": "infrastructure",
-    "description": "The world's tallest observation wheel opened in Las Vegas.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg/330px-Downtown%2C_Las_Vegas%2C_NV%2C_USA_-_panoramio_%286%29.jpg",
-    "image_width": 330,
-    "image_height": 390
-  },
-  {
-    "name": "shanghai-tower",
-    "friendly_name": "Shanghai Tower Completed",
-    "year": 2015,
-    "category": "infrastructure",
-    "description": "China's tallest building and the world's second tallest was finished.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/2/23/Shanghai_Tower_logo.png",
-    "image_width": 289,
-    "image_height": 112
-  },
-  {
     "name": "gotthard-base-tunnel",
     "friendly_name": "Gotthard Base Tunnel Opens",
     "year": 2016,
@@ -2087,17 +2043,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg/330px-20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg",
     "image_width": 330,
     "image_height": 220
-  },
-  {
-    "name": "lotte-world-tower",
-    "friendly_name": "Lotte World Tower Completed",
-    "year": 2016,
-    "category": "infrastructure",
-    "description": "South Korea's tallest building was completed in Seoul.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Lotte_World_Tower_day_view_10.jpg/330px-Lotte_World_Tower_day_view_10.jpg",
-    "image_width": 330,
-    "image_height": 773
   },
   {
     "name": "apple-park",
@@ -2142,50 +2087,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/330px-Statue_of_Unity.jpg",
     "image_width": 330,
     "image_height": 495
-  },
-  {
-    "name": "beijing-daxing-airport",
-    "friendly_name": "Beijing Daxing Airport Opens",
-    "year": 2019,
-    "category": "infrastructure",
-    "description": "The massive starfish-shaped airport opened as the world's largest single terminal.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg/330px-%E5%8C%97%E4%BA%AC%E5%A4%A7%E5%85%B4%E6%9C%BA%E5%9C%BA%E8%88%AA%E7%AB%99%E6%A5%BC%2C_2023-02-20_%281%29.jpg",
-    "image_width": 330,
-    "image_height": 220
-  },
-  {
-    "name": "hudson-yards",
-    "friendly_name": "Hudson Yards Opens",
-    "year": 2019,
-    "category": "infrastructure",
-    "description": "The largest private real estate development in US history opened in NYC.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg/330px-Hudson_Yards_from_Hudson_Commons_%2895131p%29_%2830_Hudson_Yards%29.jpg",
-    "image_width": 330,
-    "image_height": 623
-  },
-  {
-    "name": "one-vanderbilt",
-    "friendly_name": "One Vanderbilt Completed",
-    "year": 2020,
-    "category": "infrastructure",
-    "description": "The supertall skyscraper opened next to Grand Central Terminal.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3d/One_Vanderbilt_logo.png",
-    "image_width": 280,
-    "image_height": 356
-  },
-  {
-    "name": "steinway-tower",
-    "friendly_name": "Steinway Tower Completed",
-    "year": 2021,
-    "category": "infrastructure",
-    "description": "The skinniest skyscraper in the world was completed in Manhattan.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg/330px-05_23_2022_Supertall_Building_111_West_57th_Street_from_Roof_NYC.jpg",
-    "image_width": 330,
-    "image_height": 587
   },
   {
     "name": "sagrada-familia-progress",
