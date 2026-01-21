@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.3.11](https://github.com/Edward-Muir/when/compare/v0.3.10...v0.3.11) (2026-01-21)
+
+
+### Bug Fixes
+
+* Fix eslint security warning for use of roll... ([2b1ecb3](https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018))
+
 ## [0.3.10](https://github.com/Edward-Muir/when/compare/v0.3.9...v0.3.10) (2026-01-21)
 
 

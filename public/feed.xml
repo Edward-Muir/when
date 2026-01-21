@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Jan 2026 21:57:23 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 21 Jan 2026 22:03:28 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.3.11</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.3.11</guid>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix eslint security warning for use of roll... (<a href="https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018">2b1ecb3</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.3.10</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.3.2</guid>
       <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Update image size (<a href="https://github.com/Edward-Muir/when/commit/e0c5e138947d2690ed3f7e3e60d7e91e9b1aeeb2">e0c5e13</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.3.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.3.1</guid>
-      <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add images to new events (<a href="https://github.com/Edward-Muir/when/commit/7c8f4b56c018b3cf6451f995ec2733d6cf027a1f">7c8f4b5</a>)</li> <li>Add more events (<a href="https://github.com/Edward-Muir/when/commit/31a44f7ed85bdb7bf629358d629bd96b6778ca3a">31a44f7</a>)</li> <li>Check for updates (<a href="https://github.com/Edward-Muir/when/commit/616902557330643f5ddf91dedff62e90a7d081ff">6169025</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Remove duplicate events (<a href="https://github.com/Edward-Muir/when/commit/a6b7e39f6a7844c02e0d14d17cd5fc4f63e50c0a">a6b7e39</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
