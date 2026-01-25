@@ -2,6 +2,7 @@ import { Trash2, FolderInput, AlertTriangle } from 'lucide-react';
 import type { HistoricalEvent, CategoryOrDeprecated } from '../../types';
 import { EventNavigation } from '../Navigation/EventNavigation';
 import { EventForm } from './EventForm';
+import { EventPreview } from './EventPreview';
 import { MetadataPanel } from './MetadataPanel';
 
 interface EventEditorProps {
@@ -61,6 +62,8 @@ export function EventEditor({
           This event is deprecated and cannot be edited
         </div>
       )}
+
+      <EventPreview event={event} />
 
       <div className="rounded-lg border border-border bg-white p-6">
         <div className="mb-4 flex items-center justify-between">

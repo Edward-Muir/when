@@ -12,6 +12,12 @@ import {
 
 const router = Router();
 
+// Helper to safely extract string param
+function getStringParam(param: string | string[] | undefined): string {
+  if (Array.isArray(param)) return param[0];
+  return param ?? '';
+}
+
 // GET /api/events - Get all events from all categories
 router.get('/', async (_req: Request, res: Response) => {
   try {
@@ -39,7 +45,7 @@ router.get('/:category', async (req: Request, res: Response) => {
 // POST /api/events/:category - Add new event to category
 router.post('/:category', async (req: Request, res: Response) => {
   try {
-    const { category } = req.params;
+    const category = getStringParam(req.params.category);
     const event = req.body;
 
     // Validate required fields
@@ -63,7 +69,8 @@ router.post('/:category', async (req: Request, res: Response) => {
 // PUT /api/events/:category/:name - Update event
 router.put('/:category/:name', async (req: Request, res: Response) => {
   try {
-    const { category, name } = req.params;
+    const category = getStringParam(req.params.category);
+    const name = getStringParam(req.params.name);
     const event = req.body;
 
     await updateEventInCategory(category, name, event);
@@ -78,7 +85,8 @@ router.put('/:category/:name', async (req: Request, res: Response) => {
 // DELETE /api/events/:category/:name - Move event to deprecated.json
 router.delete('/:category/:name', async (req: Request, res: Response) => {
   try {
-    const { category, name } = req.params;
+    const category = getStringParam(req.params.category);
+    const name = getStringParam(req.params.name);
 
     // Find the event first
     const event = await findEventInCategory(category, name);
@@ -104,7 +112,7 @@ router.delete('/:category/:name', async (req: Request, res: Response) => {
 // POST /api/events/:name/move - Move event to different category
 router.post('/:name/move', async (req: Request, res: Response) => {
   try {
-    const { name } = req.params;
+    const name = getStringParam(req.params.name);
     const { fromCategory, toCategory } = req.body;
 
     if (!fromCategory || !toCategory) {

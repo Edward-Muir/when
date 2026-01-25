@@ -11,6 +11,7 @@ export default {
         border: '#e2e8f0',
         accent: '#3b82f6',
         'accent-hover': '#2563eb',
+        'accent-gold': '#b8860b', // Main game's accent color for year display
         success: '#22c55e',
         warning: '#f59e0b',
         error: '#ef4444',
