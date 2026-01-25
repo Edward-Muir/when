@@ -1,6 +1,13 @@
 import React from 'react';
-import { Difficulty, Category, Era, ALL_CATEGORIES } from '../types';
+import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
+
+const DIFFICULTY_LABELS: Record<Difficulty, string> = {
+  easy: 'Easy',
+  medium: 'Medium',
+  hard: 'Hard',
+  'very-hard': 'Expert',
+};
 
 export interface FilterControlsProps {
   selectedDifficulties: Difficulty[];
@@ -49,13 +56,13 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           Card Difficulty
         </label>
         <div className="flex gap-2">
-          {(['easy', 'medium', 'hard'] as Difficulty[]).map((difficulty) => (
+          {ALL_DIFFICULTIES.map((difficulty) => (
             <button
               key={difficulty}
               onClick={() => toggleDifficulty(difficulty)}
               className={`
                 flex-1 py-2 px-3 rounded-lg text-sm font-body
-                transition-all capitalize
+                transition-all
                 ${
                   selectedDifficulties.includes(difficulty)
                     ? 'bg-accent text-white shadow-md'
@@ -63,7 +70,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
                 }
               `}
             >
-              {difficulty}
+              {DIFFICULTY_LABELS[difficulty]}
             </button>
           ))}
         </div>

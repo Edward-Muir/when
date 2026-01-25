@@ -8,7 +8,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/SantaCruz-CuevaManos-P2210651b.jpg/330px-SantaCruz-CuevaManos-P2210651b.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 251339,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cave_painting"
   },
   {
     "name": "lascaux-cave-paintings",
@@ -19,7 +21,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Lascaux_painting.jpg/330px-Lascaux_painting.jpg",
     "image_width": 330,
-    "image_height": 216
+    "image_height": 216,
+    "wikipedia_views": 316292,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lascaux"
   },
   {
     "name": "first-writing",
@@ -30,18 +34,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Writing_system_survey.svg/330px-Writing_system_survey.svg.png",
     "image_width": 330,
-    "image_height": 207
-  },
-  {
-    "name": "pyramids-giza",
-    "friendly_name": "Great Pyramid of Giza Completed",
-    "year": -2560,
-    "category": "cultural",
-    "description": "The largest Egyptian pyramid was built as a tomb for Pharaoh Khufu.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/330px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
-    "image_width": 330,
-    "image_height": 186
+    "image_height": 207,
+    "wikipedia_views": 237394,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing"
   },
   {
     "name": "epic-gilgamesh",
@@ -52,7 +47,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/British_Museum_Flood_Tablet.jpg/330px-British_Museum_Flood_Tablet.jpg",
     "image_width": 330,
-    "image_height": 373
+    "image_height": 373,
+    "wikipedia_views": 1170894,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
   },
   {
     "name": "code-hammurabi",
@@ -63,7 +60,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/P1050763_Louvre_code_Hammurabi_face_rwk.JPG/330px-P1050763_Louvre_code_Hammurabi_face_rwk.JPG",
     "image_width": 330,
-    "image_height": 543
+    "image_height": 543,
+    "wikipedia_views": 499318,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
   },
   {
     "name": "book-of-dead",
@@ -74,7 +73,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/El_pesado_del_coraz%C3%B3n_en_el_Papiro_de_Hunefer.jpg/330px-El_pesado_del_coraz%C3%B3n_en_el_Papiro_de_Hunefer.jpg",
     "image_width": 330,
-    "image_height": 208
+    "image_height": 208,
+    "wikipedia_views": 280121,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_the_Dead"
   },
   {
     "name": "rigveda-composed",
@@ -82,10 +83,12 @@
     "year": -1500,
     "category": "cultural",
     "description": "The oldest known Vedic Sanskrit text was composed in ancient India.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rigveda_MS2097.jpg/330px-Rigveda_MS2097.jpg",
     "image_width": 330,
-    "image_height": 317
+    "image_height": 317,
+    "wikipedia_views": 421067,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rigveda"
   },
   {
     "name": "zoroaster-teaches",
@@ -93,10 +96,12 @@
     "year": -1000,
     "category": "cultural",
     "description": "The Persian prophet founded one of the world's oldest monotheistic religions.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Yazd%2C_Templo_del_Fuego_%282000%29_02_%28cropped%29.jpg/330px-Yazd%2C_Templo_del_Fuego_%282000%29_02_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 493
+    "image_height": 493,
+    "wikipedia_views": 653289,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zoroaster"
   },
   {
     "name": "i-ching-compiled",
@@ -104,10 +109,12 @@
     "year": -1000,
     "category": "cultural",
     "description": "The ancient Chinese divination text was compiled during the Zhou Dynasty.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/I_Ching_Song_Dynasty_print.jpg/330px-I_Ching_Song_Dynasty_print.jpg",
     "image_width": 330,
-    "image_height": 546
+    "image_height": 546,
+    "wikipedia_views": 455930,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/I_Ching"
   },
   {
     "name": "upanishads-composed",
@@ -115,10 +122,12 @@
     "year": -800,
     "category": "cultural",
     "description": "Hindu philosophical texts exploring the nature of reality were written.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Guru_and_DiscipleI.jpg/330px-Guru_and_DiscipleI.jpg",
     "image_width": 330,
-    "image_height": 230
+    "image_height": 230,
+    "wikipedia_views": 302473,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Upanishads"
   },
   {
     "name": "first-olympics",
@@ -129,7 +138,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg/330px-Commemorative_album_of_1896_Olympic_Games_-_cover_by_E._Gilli%C3%A9ron.jpg",
     "image_width": 330,
-    "image_height": 410
+    "image_height": 410,
+    "wikipedia_views": 175738,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
   },
   {
     "name": "homer-iliad",
@@ -140,7 +151,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg/330px-Detail._Wooden_board_inscribed_in_ink_with_lines_468-473%2C_Book_I_of_Homer%27s_Iliad._Roman_Egypt._On_display_at_the_British_Museum.jpg",
     "image_width": 330,
-    "image_height": 204
+    "image_height": 204,
+    "wikipedia_views": 1286883,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iliad"
   },
   {
     "name": "aesops-fables",
@@ -148,10 +161,12 @@
     "year": -600,
     "category": "cultural",
     "description": "The Greek storyteller created moral tales featuring animals.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Aesop_and_Priests_by_Francis_Barlow_1687.png/330px-Aesop_and_Priests_by_Francis_Barlow_1687.png",
     "image_width": 330,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 428200,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aesop's_Fables"
   },
   {
     "name": "pythagoras-school",
@@ -159,10 +174,12 @@
     "year": -530,
     "category": "cultural",
     "description": "The mathematician founded a school combining philosophy, mathematics, and mysticism.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Pythagoras_in_the_Roman_Forum%2C_Colosseum.jpg/330px-Pythagoras_in_the_Roman_Forum%2C_Colosseum.jpg",
     "image_width": 330,
-    "image_height": 477
+    "image_height": 477,
+    "wikipedia_views": 678703,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pythagoras"
   },
   {
     "name": "buddha-enlightenment",
@@ -170,10 +187,12 @@
     "year": -528,
     "category": "cultural",
     "description": "Siddhartha Gautama achieved enlightenment, founding Buddhism.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
     "image_width": 330,
-    "image_height": 422
+    "image_height": 422,
+    "wikipedia_views": 98637,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Enlightenment_in_Buddhism"
   },
   {
     "name": "confucius-teachings",
@@ -181,10 +200,12 @@
     "year": -500,
     "category": "cultural",
     "description": "The Chinese philosopher began spreading his influential ethical teachings.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/330px-Confucius_Tang_Dynasty.jpg",
     "image_width": 330,
-    "image_height": 603
+    "image_height": 603,
+    "wikipedia_views": 103724,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Analects"
   },
   {
     "name": "socrates-death",
@@ -195,7 +216,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/330px-Socrate_du_Louvre.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 170848,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Socrates"
   },
   {
     "name": "plato-academy",
@@ -203,10 +226,12 @@
     "year": -387,
     "category": "cultural",
     "description": "Plato established the first institution of higher learning in the Western world.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Plato_Silanion_Musei_Capitolini_MC1377.png/330px-Plato_Silanion_Musei_Capitolini_MC1377.png",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 122426,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Platonic_Academy"
   },
   {
     "name": "aristotle-lyceum",
@@ -214,10 +239,12 @@
     "year": -335,
     "category": "cultural",
     "description": "Aristotle established his own school after leaving Plato's Academy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Sanzio_01_cropped.png/330px-Sanzio_01_cropped.png",
     "image_width": 330,
-    "image_height": 184
+    "image_height": 184,
+    "wikipedia_views": 55437,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lyceum_(classical)"
   },
   {
     "name": "euclid-elements",
@@ -225,10 +252,12 @@
     "year": -300,
     "category": "cultural",
     "description": "The Greek mathematician wrote the foundational textbook of geometry.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg/330px-P.Penn._Museum_inv._E02748_Euclid%27s_Elements_2.5.jpg",
     "image_width": 330,
-    "image_height": 205
+    "image_height": 205,
+    "wikipedia_views": 383867,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Euclid"
   },
   {
     "name": "library-alexandria",
@@ -239,7 +268,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/330px-Ancientlibraryalex.jpg",
     "image_width": 330,
-    "image_height": 336
+    "image_height": 336,
+    "wikipedia_views": 929515,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Library_of_Alexandria"
   },
   {
     "name": "septuagint-translated",
@@ -247,10 +278,12 @@
     "year": -250,
     "category": "cultural",
     "description": "The Hebrew Bible was translated into Greek in Alexandria.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Codex_Vaticanus_%281_Esdras_1-55_to_2-5%29_%28The_S.S._Teacher%27s_Edition-The_Holy_Bible%29.jpg/330px-Codex_Vaticanus_%281_Esdras_1-55_to_2-5%29_%28The_S.S._Teacher%27s_Edition-The_Holy_Bible%29.jpg",
     "image_width": 330,
-    "image_height": 579
+    "image_height": 579,
+    "wikipedia_views": 628108,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Septuagint"
   },
   {
     "name": "dead-sea-scrolls-written",
@@ -261,7 +294,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dead_Sea_beach_00.JPG/330px-Dead_Sea_beach_00.JPG",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 996119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls"
   },
   {
     "name": "virgil-aeneid",
@@ -269,10 +304,12 @@
     "year": -29,
     "category": "cultural",
     "description": "The Roman poet composed the epic tale of Aeneas founding Rome.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg/330px-Aeneas%27_Flight_from_Troy_by_Federico_Barocci.jpg",
     "image_width": 330,
-    "image_height": 229
+    "image_height": 229,
+    "wikipedia_views": 489983,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aeneid"
   },
   {
     "name": "jesus-birth",
@@ -283,7 +320,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Adoration_of_the_sheperds_-_Matthias_Stomer.jpg/330px-Adoration_of_the_sheperds_-_Matthias_Stomer.jpg",
     "image_width": 330,
-    "image_height": 223
+    "image_height": 223,
+    "wikipedia_views": 318542,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nativity_of_Jesus"
   },
   {
     "name": "jesus-crucifixion",
@@ -294,7 +333,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cristo_crucificado.jpg/330px-Cristo_crucificado.jpg",
     "image_width": 330,
-    "image_height": 492
+    "image_height": 492,
+    "wikipedia_views": 1097000,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crucifixion_of_Jesus"
   },
   {
     "name": "bible-latin-vulgate",
@@ -302,10 +343,12 @@
     "year": 405,
     "category": "cultural",
     "description": "Saint Jerome completed his Latin translation of the Bible.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Cod._Sangallensis_63_%28277%29.jpg/330px-Cod._Sangallensis_63_%28277%29.jpg",
     "image_width": 330,
-    "image_height": 400
+    "image_height": 400,
+    "wikipedia_views": 256954,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vulgate"
   },
   {
     "name": "council-chalcedon",
@@ -313,10 +356,12 @@
     "year": 451,
     "category": "cultural",
     "description": "Church leaders defined the orthodox doctrine of Christ's divine and human natures.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Fourth_ecumenical_council_of_chalcedon_-_1876.jpg/330px-Fourth_ecumenical_council_of_chalcedon_-_1876.jpg",
     "image_width": 330,
-    "image_height": 293
+    "image_height": 293,
+    "wikipedia_views": 212227,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Chalcedon"
   },
   {
     "name": "monte-cassino-founded",
@@ -324,10 +369,12 @@
     "year": 529,
     "category": "cultural",
     "description": "Saint Benedict founded the monastery that became the birthplace of Western monasticism.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/MonteCassino_Abbey.jpg/330px-MonteCassino_Abbey.jpg",
     "image_width": 330,
-    "image_height": 265
+    "image_height": 265,
+    "wikipedia_views": 229968,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Monte_Cassino"
   },
   {
     "name": "muhammad-revelation",
@@ -338,7 +385,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 3452333,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad"
   },
   {
     "name": "islam-founded",
@@ -349,7 +398,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/The_Kaaba_during_Hajj.jpg/330px-The_Kaaba_during_Hajj.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 277493,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Islamic_schools_and_branches"
   },
   {
     "name": "quran-compiled",
@@ -357,8 +408,10 @@
     "year": 650,
     "category": "cultural",
     "description": "The Islamic holy book was compiled into written form under Caliph Uthman.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Birmingham_Quran_manuscript_full.jpg/330px-Birmingham_Quran_manuscript_full.jpg"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Birmingham_Quran_manuscript_full.jpg/330px-Birmingham_Quran_manuscript_full.jpg",
+    "wikipedia_views": 46478,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uthmanic_codex"
   },
   {
     "name": "nara-period-begins",
@@ -366,10 +419,12 @@
     "year": 710,
     "category": "cultural",
     "description": "Japan established its first permanent capital at Nara, flourishing in arts.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/330px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 38202,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/8th_century"
   },
   {
     "name": "heian-period-begins",
@@ -377,10 +432,12 @@
     "year": 794,
     "category": "cultural",
     "description": "Japan's golden age of art, literature, and court culture began in Kyoto.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/%E8%A5%BF%E5%AF%BA%E5%BE%A9%E5%85%83%E6%A8%A1%E5%9E%8B.jpg/330px-%E8%A5%BF%E5%AF%BA%E5%BE%A9%E5%85%83%E6%A8%A1%E5%9E%8B.jpg",
     "image_width": 330,
-    "image_height": 195
+    "image_height": 195,
+    "wikipedia_views": 381933,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heian_period"
   },
   {
     "name": "book-of-kells",
@@ -391,7 +448,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KellsFol032vChristEnthroned.jpg/330px-KellsFol032vChristEnthroned.jpg",
     "image_width": 330,
-    "image_height": 430
+    "image_height": 430,
+    "wikipedia_views": 416044,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Kells"
   },
   {
     "name": "song-dynasty-founded",
@@ -402,7 +461,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/China_-_Song_Dynasty-en.svg/330px-China_-_Song_Dynasty-en.svg.png",
     "image_width": 330,
-    "image_height": 325
+    "image_height": 325,
+    "wikipedia_views": 646333,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Song_dynasty"
   },
   {
     "name": "tale-of-genji",
@@ -413,7 +474,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Genji_emaki_01003_002.jpg/330px-Genji_emaki_01003_002.jpg",
     "image_width": 330,
-    "image_height": 308
+    "image_height": 308,
+    "wikipedia_views": 334904,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tale_of_Genji"
   },
   {
     "name": "great-schism",
@@ -424,7 +487,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Great_Schism_with_former_borders_%281054%29.png/330px-Great_Schism_with_former_borders_%281054%29.png",
     "image_width": 330,
-    "image_height": 353
+    "image_height": 353,
+    "wikipedia_views": 632892,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/East–West_Schism"
   },
   {
     "name": "notre-dame-construction",
@@ -432,10 +497,12 @@
     "year": 1163,
     "category": "cultural",
     "description": "Work began on the iconic Gothic cathedral in Paris.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Notre-Dame_de_Paris%2C_4_October_2017.jpg/330px-Notre-Dame_de_Paris%2C_4_October_2017.jpg",
     "image_width": 330,
-    "image_height": 218
+    "image_height": 218,
+    "wikipedia_views": 841287,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_de_Paris"
   },
   {
     "name": "oxford-founded",
@@ -443,10 +510,12 @@
     "year": 1167,
     "category": "cultural",
     "description": "The oldest English-speaking university began formal instruction.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Radcliffe_Camera%2C_Oxford_-_Oct_2006.jpg",
     "image_width": 330,
-    "image_height": 398
+    "image_height": 398,
+    "wikipedia_views": 1168536,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/University_of_Oxford"
   },
   {
     "name": "kamakura-shogunate",
@@ -454,10 +523,12 @@
     "year": 1185,
     "category": "cultural",
     "description": "Japan's first military government began, establishing samurai dominance.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/330px-Minamoto_no_Yoritomo.jpg",
     "image_width": 330,
-    "image_height": 411
+    "image_height": 411,
+    "wikipedia_views": 159100,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kamakura_shogunate"
   },
   {
     "name": "franciscan-order",
@@ -468,7 +539,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/FrancescoCoA_PioM.svg/330px-FrancescoCoA_PioM.svg.png",
     "image_width": 330,
-    "image_height": 202
+    "image_height": 202,
+    "wikipedia_views": 59853,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Order_of_Saint_Francis"
   },
   {
     "name": "aquinas-summa",
@@ -479,7 +552,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/SummaTheologiae.jpg/330px-SummaTheologiae.jpg",
     "image_width": 330,
-    "image_height": 422
+    "image_height": 422,
+    "wikipedia_views": 1012006,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Aquinas"
   },
   {
     "name": "yuan-dynasty-founded",
@@ -490,7 +565,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Yuan_Dynasty_revised.png/330px-Yuan_Dynasty_revised.png",
     "image_width": 330,
-    "image_height": 347
+    "image_height": 347,
+    "wikipedia_views": 136102,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Northern_Yuan"
   },
   {
     "name": "marco-polo-china",
@@ -501,7 +578,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Marco_Polo_-_costume_tartare.jpg/330px-Marco_Polo_-_costume_tartare.jpg",
     "image_width": 330,
-    "image_height": 460
+    "image_height": 460,
+    "wikipedia_views": 966600,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marco_Polo"
   },
   {
     "name": "giotto-scrovegni",
@@ -509,10 +588,12 @@
     "year": 1305,
     "category": "cultural",
     "description": "Giotto's frescoes revolutionized Western art with naturalistic human emotion.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg/330px-Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg",
     "image_width": 330,
-    "image_height": 255
+    "image_height": 255,
+    "wikipedia_views": 77840,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scrovegni_Chapel"
   },
   {
     "name": "divine-comedy",
@@ -523,7 +604,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Dante_Domenico_di_Michelino.jpg/330px-Dante_Domenico_di_Michelino.jpg",
     "image_width": 330,
-    "image_height": 266
+    "image_height": 266,
+    "wikipedia_views": 850533,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Divine_Comedy"
   },
   {
     "name": "petrarch-sonnets",
@@ -531,10 +614,12 @@
     "year": 1327,
     "category": "cultural",
     "description": "The Italian poet began his influential sonnet sequence to Laura.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg/330px-Altichiero%2C_ritratto_di_Francesco_Petrarca.jpg",
     "image_width": 330,
-    "image_height": 389
+    "image_height": 389,
+    "wikipedia_views": 51864,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Petrarchan_sonnet"
   },
   {
     "name": "wycliffe-bible",
@@ -545,7 +630,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wycliffe_John_Gospel.jpg/330px-Wycliffe_John_Gospel.jpg",
     "image_width": 330,
-    "image_height": 555
+    "image_height": 555,
+    "wikipedia_views": 59977,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wycliffe's_Bible"
   },
   {
     "name": "chaucer-canterbury",
@@ -556,7 +643,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg/330px-Canterbury_Tales_characters_around_table_%E2%80%94_traced.svg.png",
     "image_width": 330,
-    "image_height": 256
+    "image_height": 256,
+    "wikipedia_views": 552167,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Canterbury_Tales"
   },
   {
     "name": "gutenberg-bible",
@@ -567,7 +656,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg",
     "image_width": 330,
-    "image_height": 206
+    "image_height": 206,
+    "wikipedia_views": 324554,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gutenberg_Bible"
   },
   {
     "name": "botticelli-venus",
@@ -578,7 +669,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/330px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg",
     "image_width": 330,
-    "image_height": 207
+    "image_height": 207,
+    "wikipedia_views": 483921,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Birth_of_Venus"
   },
   {
     "name": "leonardo-last-supper",
@@ -589,7 +682,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/330px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
     "image_width": 330,
-    "image_height": 165
+    "image_height": 165,
+    "wikipedia_views": 1056816,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)"
   },
   {
     "name": "leonardo-mona-lisa",
@@ -600,7 +695,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/330px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
     "image_width": 330,
-    "image_height": 492
+    "image_height": 492,
+    "wikipedia_views": 2373299,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mona_Lisa"
   },
   {
     "name": "michelangelo-david",
@@ -611,7 +708,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/330px-%27David%27_by_Michelangelo_Fir_JBU004.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 863873,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/David_(Michelangelo)"
   },
   {
     "name": "sistine-chapel",
@@ -619,10 +718,12 @@
     "year": 1512,
     "category": "cultural",
     "description": "Michelangelo completed his masterpiece ceiling fresco.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/330px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg",
     "image_width": 330,
-    "image_height": 498
+    "image_height": 498,
+    "wikipedia_views": 31143,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gallery_of_the_Sistine_Chapel_ceiling"
   },
   {
     "name": "machiavelli-prince",
@@ -631,7 +732,9 @@
     "category": "cultural",
     "description": "Machiavelli wrote his influential treatise on political power.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Machiavelli_Principe_Cover_Page.jpg/330px-Machiavelli_Principe_Cover_Page.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Machiavelli_Principe_Cover_Page.jpg/330px-Machiavelli_Principe_Cover_Page.jpg",
+    "wikipedia_views": 3844816,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_(musician)"
   },
   {
     "name": "protestant-reformation",
@@ -642,7 +745,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
     "image_width": 330,
-    "image_height": 522
+    "image_height": 522,
+    "wikipedia_views": 57229,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Protestantism"
   },
   {
     "name": "luther-theses",
@@ -650,10 +755,12 @@
     "year": 1517,
     "category": "cultural",
     "description": "Martin Luther posted his theses, sparking the Protestant Reformation.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Luther_95_Thesen.png/330px-Luther_95_Thesen.png",
     "image_width": 330,
-    "image_height": 471
+    "image_height": 471,
+    "wikipedia_views": 494234,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ninety-five_Theses"
   },
   {
     "name": "council-trent",
@@ -664,7 +771,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Concilio_Trento_Museo_Buonconsiglio.jpg/330px-Concilio_Trento_Museo_Buonconsiglio.jpg",
     "image_width": 330,
-    "image_height": 272
+    "image_height": 272,
+    "wikipedia_views": 274482,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Trent"
   },
   {
     "name": "shakespeare-born",
@@ -675,7 +784,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/330px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
     "image_width": 330,
-    "image_height": 421
+    "image_height": 421,
+    "wikipedia_views": 137794,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Shakespeare"
   },
   {
     "name": "shakespeare-hamlet",
@@ -686,7 +797,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Edwin_Booth_Hamlet_1870.jpg/330px-Edwin_Booth_Hamlet_1870.jpg",
     "image_width": 330,
-    "image_height": 428
+    "image_height": 428,
+    "wikipedia_views": 1402425,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hamlet"
   },
   {
     "name": "don-quixote-published",
@@ -697,7 +810,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Title_page_first_edition_Don_Quijote.jpg/330px-Title_page_first_edition_Don_Quijote.jpg",
     "image_width": 330,
-    "image_height": 529
+    "image_height": 529,
+    "wikipedia_views": 1350341,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Quixote"
   },
   {
     "name": "king-james-bible",
@@ -708,7 +823,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg/330px-KJV-King-James-Version-Bible-first-edition-title-page-1611.jpg",
     "image_width": 330,
-    "image_height": 516
+    "image_height": 516,
+    "wikipedia_views": 777410,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/King_James_Version"
   },
   {
     "name": "rembrandt-night-watch",
@@ -716,10 +833,12 @@
     "year": 1642,
     "category": "cultural",
     "description": "Rembrandt completed his most famous group portrait.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/330px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg",
     "image_width": 330,
-    "image_height": 269
+    "image_height": 269,
+    "wikipedia_views": 258792,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Night_Watch"
   },
   {
     "name": "paradise-lost",
@@ -730,7 +849,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg/330px-Houghton_EC65.M6427P.1667aa_-_Paradise_Lost%2C_1667.jpg",
     "image_width": 330,
-    "image_height": 519
+    "image_height": 519,
+    "wikipedia_views": 1002683,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paradise_Lost"
   },
   {
     "name": "russia-anno-domini",
@@ -738,10 +859,12 @@
     "year": 1700,
     "category": "cultural",
     "description": "Russia began using the Anno Domini calendar instead of the Byzantine Anno Mundi era.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/330px-Flag_of_Russia.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 1133253,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gregorian_calendar"
   },
   {
     "name": "bach-well-tempered",
@@ -749,10 +872,12 @@
     "year": 1722,
     "category": "cultural",
     "description": "Bach completed his influential collection of keyboard music.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bach-wtc1-title-ms.jpg/330px-Bach-wtc1-title-ms.jpg",
     "image_width": 330,
-    "image_height": 529
+    "image_height": 529,
+    "wikipedia_views": 112209,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier"
   },
   {
     "name": "handel-messiah",
@@ -760,10 +885,12 @@
     "year": 1742,
     "category": "cultural",
     "description": "Handel premiered his famous oratorio featuring the Hallelujah Chorus.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Messiah-titlepage.jpg/330px-Messiah-titlepage.jpg",
     "image_width": 330,
-    "image_height": 270
+    "image_height": 270,
+    "wikipedia_views": 263184,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Messiah_(Handel)"
   },
   {
     "name": "bach-death",
@@ -771,10 +898,12 @@
     "year": 1750,
     "category": "cultural",
     "description": "The composer, organist and harpsichordist Johann Sebastian Bach died on July 28.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Johann_Sebastian_Bach.jpg/330px-Johann_Sebastian_Bach.jpg",
     "image_width": 330,
-    "image_height": 428
+    "image_height": 428,
+    "wikipedia_views": 1040907,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach"
   },
   {
     "name": "encyclopedia-published",
@@ -785,7 +914,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg/330px-Encyclopedie_de_D%27Alembert_et_Diderot_-_Premiere_Page_-_ENC_1-NA5.jpg",
     "image_width": 330,
-    "image_height": 539
+    "image_height": 539,
+    "wikipedia_views": 68727,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Encyclopédie"
   },
   {
     "name": "voltaire-candide",
@@ -796,7 +927,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Candide1759.jpg/330px-Candide1759.jpg",
     "image_width": 330,
-    "image_height": 599
+    "image_height": 599,
+    "wikipedia_views": 294160,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Candide"
   },
   {
     "name": "britannica-first",
@@ -807,7 +940,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/William_Smellie00.jpg/330px-William_Smellie00.jpg",
     "image_width": 330,
-    "image_height": 431
+    "image_height": 431,
+    "wikipedia_views": 85589,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Encyclopædia_Britannica_Eleventh_Edition"
   },
   {
     "name": "marie-antoinette-wedding",
@@ -815,10 +950,12 @@
     "year": 1770,
     "category": "cultural",
     "description": "Marie Antoinette married Louis XVI of France in a proxy wedding.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Marie-Antoinette%2C_1775_-_Mus%C3%A9e_Antoine_L%C3%A9cuyer.jpg/330px-Marie-Antoinette%2C_1775_-_Mus%C3%A9e_Antoine_L%C3%A9cuyer.jpg",
     "image_width": 330,
-    "image_height": 432
+    "image_height": 432,
+    "wikipedia_views": 580110,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_XVII"
   },
   {
     "name": "wealth-of-nations",
@@ -829,7 +966,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wealth_of_Nations.jpg/330px-Wealth_of_Nations.jpg",
     "image_width": 330,
-    "image_height": 395
+    "image_height": 395,
+    "wikipedia_views": 250631,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wealth_of_Nations"
   },
   {
     "name": "mozart-don-giovanni",
@@ -840,7 +979,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg/330px-Max_Slevogt_-_Der_S%C3%A4nger_Francisco_d%27Andrade_als_Don_Giovanni_in_Mozarts_Oper_-_Google_Art_Project.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 279000,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Giovanni"
   },
   {
     "name": "mozart-dies",
@@ -851,7 +992,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/330px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 268604,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Wolfgang_Amadeus_Mozart"
   },
   {
     "name": "louvre-opens",
@@ -859,10 +1002,12 @@
     "year": 1793,
     "category": "cultural",
     "description": "The former French royal palace opened as one of the world's first public museums.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Louvre_Museum_icon_1.svg/330px-Louvre_Museum_icon_1.svg.png",
     "image_width": 330,
-    "image_height": 226
+    "image_height": 226,
+    "wikipedia_views": 850213,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Louvre"
   },
   {
     "name": "beethoven-first-symphony",
@@ -870,10 +1015,12 @@
     "year": 1800,
     "category": "cultural",
     "description": "Ludwig van Beethoven led the premiere of his First Symphony in Vienna.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Ludwig_van_Beethoven%2C_aged_twenty-six_%281796%29.jpg/330px-Ludwig_van_Beethoven%2C_aged_twenty-six_%281796%29.jpg",
     "image_width": 330,
-    "image_height": 397
+    "image_height": 397,
+    "wikipedia_views": 349893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)"
   },
   {
     "name": "goethe-faust",
@@ -884,7 +1031,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Auerbachs_Keller.JPG/330px-Auerbachs_Keller.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 736506,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe"
   },
   {
     "name": "beethoven-fifth",
@@ -895,7 +1044,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Beethoven-Deckblatt.png",
     "image_width": 272,
-    "image_height": 331
+    "image_height": 331,
+    "wikipedia_views": 204987,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._5_(Beethoven)"
   },
   {
     "name": "grimm-fairy-tales",
@@ -906,7 +1057,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Grimm%27s_Kinder-_und_Hausm%C3%A4rchen%2C_Erster_Theil_%281812%29.cover.jpg",
     "image_width": 239,
-    "image_height": 307
+    "image_height": 307,
+    "wikipedia_views": 397152,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Grimms'_Fairy_Tales"
   },
   {
     "name": "pride-prejudice",
@@ -917,7 +1070,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PrideAndPrejudiceTitlePage.jpg/330px-PrideAndPrejudiceTitlePage.jpg",
     "image_width": 330,
-    "image_height": 533
+    "image_height": 533,
+    "wikipedia_views": 71012,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pride_and_Prejudice_and_Zombies"
   },
   {
     "name": "frankenstein-published",
@@ -928,7 +1083,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Christie%27s_auction_scan_of_Frankenstein_1818.jpg/330px-Christie%27s_auction_scan_of_Frankenstein_1818.jpg",
     "image_width": 330,
-    "image_height": 483
+    "image_height": 483,
+    "wikipedia_views": 3066196,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Frankenstein"
   },
   {
     "name": "schubert-unfinished",
@@ -939,7 +1096,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Symphony_No._8_in_B_minor.jpg/330px-Symphony_No._8_in_B_minor.jpg",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 47288,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._8_(Schubert)"
   },
   {
     "name": "beethoven-ninth",
@@ -947,10 +1106,12 @@
     "year": 1824,
     "category": "cultural",
     "description": "Beethoven premiered his final symphony, including the Ode to Joy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/The_Premiere_of_Symphony_No._9.jpg/330px-The_Premiere_of_Symphony_No._9.jpg",
     "image_width": 330,
-    "image_height": 401
+    "image_height": 401,
+    "wikipedia_views": 349893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)"
   },
   {
     "name": "first-photograph",
@@ -961,7 +1122,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg/330px-Untitled_%28point_de_vue%29%2C_Ni%C3%A9pce_1827_%E2%80%94_HRC_2020_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 278
+    "image_height": 278,
+    "wikipedia_views": 178600,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Photograph"
   },
   {
     "name": "book-of-mormon-published",
@@ -972,7 +1135,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Mormon-book.jpg/330px-Mormon-book.jpg",
     "image_width": 330,
-    "image_height": 475
+    "image_height": 475,
+    "wikipedia_views": 571555,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Mormon"
   },
   {
     "name": "slavery-abolished-uk",
@@ -983,7 +1148,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281816-1837%29.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 128237,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833"
   },
   {
     "name": "first-kindergarten",
@@ -991,10 +1158,12 @@
     "year": 1837,
     "category": "cultural",
     "description": "Friedrich Froebel opened the first kindergarten in Germany.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/First_Kindergarten_4.jpg/330px-First_Kindergarten_4.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 2918,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Kindergarten"
   },
   {
     "name": "morse-code-invented",
@@ -1005,7 +1174,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Morsetaste.jpg/330px-Morsetaste.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 1186507,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Morse_code"
   },
   {
     "name": "ymca-founded",
@@ -1013,10 +1184,12 @@
     "year": 1844,
     "category": "cultural",
     "description": "The Young Men's Christian Association was founded in London.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/World_YMCA_logo.svg/330px-World_YMCA_logo.svg.png",
     "image_width": 330,
-    "image_height": 129
+    "image_height": 129,
+    "wikipedia_views": 548952,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/YMCA"
   },
   {
     "name": "communist-manifesto",
@@ -1027,7 +1200,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Communist-manifesto.png/330px-Communist-manifesto.png",
     "image_width": 330,
-    "image_height": 517
+    "image_height": 517,
+    "wikipedia_views": 433074,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Communist_Manifesto"
   },
   {
     "name": "seneca-falls-convention",
@@ -1038,7 +1213,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Woman%27s_Rights_Convention.jpg/330px-Woman%27s_Rights_Convention.jpg",
     "image_width": 330,
-    "image_height": 428
+    "image_height": 428,
+    "wikipedia_views": 85545,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seneca_Falls_Convention"
   },
   {
     "name": "origin-of-species",
@@ -1049,7 +1226,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Origin_of_Species_title_page.jpg/330px-Origin_of_Species_title_page.jpg",
     "image_width": 330,
-    "image_height": 530
+    "image_height": 530,
+    "wikipedia_views": 254854,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/On_the_Origin_of_Species"
   },
   {
     "name": "les-miserables",
@@ -1060,7 +1239,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Monsieur_Madeleine_par_Gustave_Brion.jpg/330px-Monsieur_Madeleine_par_Gustave_Brion.jpg",
     "image_width": 330,
-    "image_height": 488
+    "image_height": 488,
+    "wikipedia_views": 1071330,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Misérables"
   },
   {
     "name": "slavery-abolished-us",
@@ -1071,7 +1252,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png",
     "image_width": 330,
-    "image_height": 349
+    "image_height": 349,
+    "wikipedia_views": 209612,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_slavery_in_the_United_States"
   },
   {
     "name": "salvation-army-founded",
@@ -1079,10 +1262,12 @@
     "year": 1865,
     "category": "cultural",
     "description": "William Booth founded the Christian charitable organization in London.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/The_Salvation_Army.svg/320px-The_Salvation_Army.svg.png",
     "image_width": 320,
-    "image_height": 378
+    "image_height": 378,
+    "wikipedia_views": 326378,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Salvation_Army"
   },
   {
     "name": "first-impressionist-exhibition",
@@ -1093,7 +1278,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg/330px-Premi%C3%A8re_Exposition_1874%2C_35_Boulevard_des_Capucines_Catalogue.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 21174,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Impressionist_Exhibition"
   },
   {
     "name": "phonograph-invented",
@@ -1104,7 +1291,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Turntable.svg/330px-Turntable.svg.png",
     "image_width": 330,
-    "image_height": 198
+    "image_height": 198,
+    "wikipedia_views": 305246,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Phonograph"
   },
   {
     "name": "tchaikovsky-swan-lake",
@@ -1112,10 +1301,12 @@
     "year": 1877,
     "category": "cultural",
     "description": "Tchaikovsky's ballet premiered in Moscow, though initially unsuccessful.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Tchaikovsky_by_Reutlinger_%28cropped%29.jpg/330px-Tchaikovsky_by_Reutlinger_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 402
+    "image_height": 402,
+    "wikipedia_views": 626612,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Swan_Lake"
   },
   {
     "name": "dostoevsky-karamazov",
@@ -1126,7 +1317,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Dostoevsky-Brothers_Karamazov.jpg/330px-Dostoevsky-Brothers_Karamazov.jpg",
     "image_width": 330,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 761088,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov"
   },
   {
     "name": "rodin-thinker",
@@ -1137,7 +1330,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG/330px-Le_Penseur_by_Rodin_%28Kunsthalle_Bielefeld%29_2014-04-10.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 19204,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Think_break"
   },
   {
     "name": "first-labor-day",
@@ -1148,7 +1343,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg/330px-First_United_States_Labor_Day_Parade%2C_September_5%2C_1882_in_New_York_City.jpg",
     "image_width": 330,
-    "image_height": 214
+    "image_height": 214,
+    "wikipedia_views": 1258217,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Labor_Day"
   },
   {
     "name": "esperanto-created",
@@ -1159,7 +1356,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Zamenhof_portreto.jpg/500px-Zamenhof_portreto.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 881584,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Esperanto"
   },
   {
     "name": "van-gogh-starry-night",
@@ -1167,10 +1366,12 @@
     "year": 1889,
     "category": "cultural",
     "description": "Van Gogh painted his swirling masterpiece from an asylum window.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/330px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
     "image_width": 330,
-    "image_height": 261
+    "image_height": 261,
+    "wikipedia_views": 1245904,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Starry_Night"
   },
   {
     "name": "hull-house-founded",
@@ -1178,10 +1379,12 @@
     "year": 1889,
     "category": "cultural",
     "description": "Jane Addams opened the pioneering settlement house in Chicago.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/The_Hull_House%2C_Chicago_%28front%29.tif/lossy-page1-320px-The_Hull_House%2C_Chicago_%28front%29.tif.jpg",
     "image_width": 320,
-    "image_height": 206
+    "image_height": 206,
+    "wikipedia_views": 58095,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hull_House"
   },
   {
     "name": "dvorak-new-world",
@@ -1192,7 +1395,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg/330px-The_title_page_of_the_autograph_score_of_Dvo%C5%99%C3%A1k%27s_ninth_symphony.jpg",
     "image_width": 330,
-    "image_height": 216
+    "image_height": 216,
+    "wikipedia_views": 194427,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Dvořák)"
   },
   {
     "name": "womens-suffrage-nz",
@@ -1200,10 +1405,12 @@
     "year": 1893,
     "category": "cultural",
     "description": "New Zealand became the first country to grant women the right to vote.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/330px-Flag_of_New_Zealand.svg.png",
     "image_width": 330,
-    "image_height": 165
+    "image_height": 165,
+    "wikipedia_views": 30276,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Women's_suffrage_in_New_Zealand"
   },
   {
     "name": "first-motion-picture",
@@ -1214,7 +1421,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Lumi%C3%A8re_brothers.jpg/330px-Lumi%C3%A8re_brothers.jpg",
     "image_width": 330,
-    "image_height": 432
+    "image_height": 432,
+    "wikipedia_views": 27466,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cinematograph"
   },
   {
     "name": "first-modern-olympics",
@@ -1225,7 +1434,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/330px-Olympic_rings_without_rims.svg.png",
     "image_width": 330,
-    "image_height": 153
+    "image_height": 153,
+    "wikipedia_views": 175738,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1896_Summer_Olympics"
   },
   {
     "name": "freud-interpretation-dreams",
@@ -1236,7 +1447,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Die_Traumdeutung_%28Congress_scan%29.jpg/330px-Die_Traumdeutung_%28Congress_scan%29.jpg",
     "image_width": 330,
-    "image_height": 526
+    "image_height": 526,
+    "wikipedia_views": 92148,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Interpretation_of_Dreams"
   },
   {
     "name": "picasso-blue-period",
@@ -1247,7 +1460,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Old_guitarist_chicago.jpg/330px-Old_guitarist_chicago.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 1979003,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pablo_Picasso"
   },
   {
     "name": "nobel-prizes-first",
@@ -1258,7 +1473,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Nobel_Prize.png/330px-Nobel_Prize.png",
     "image_width": 330,
-    "image_height": 325
+    "image_height": 325,
+    "wikipedia_views": 1329114,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nobel_Prize"
   },
   {
     "name": "picasso-demoiselles",
@@ -1269,7 +1486,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/330px-Les_Demoiselles_d%27Avignon.jpg",
     "image_width": 330,
-    "image_height": 342
+    "image_height": 342,
+    "wikipedia_views": 222351,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Les_Demoiselles_d'Avignon"
   },
   {
     "name": "boy-scouts-founded",
@@ -1280,7 +1499,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/1996-Rover_Moot-Fahnengru%C3%9F.jpg/330px-1996-Rover_Moot-Fahnengru%C3%9F.jpg",
     "image_width": 330,
-    "image_height": 223
+    "image_height": 223,
+    "wikipedia_views": 88550,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scouting_America"
   },
   {
     "name": "girl-scouts-founded",
@@ -1291,7 +1512,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg/330px-The_Girl_Guides_Association_in_Britain%2C_1914-1918_Q27918.jpg",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 106718,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Girl_Scouts_of_the_USA"
   },
   {
     "name": "rite-of-spring",
@@ -1302,7 +1525,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Roerich_Rite_of_Spring.jpg/330px-Roerich_Rite_of_Spring.jpg",
     "image_width": 330,
-    "image_height": 218
+    "image_height": 218,
+    "wikipedia_views": 279514,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rite_of_Spring"
   },
   {
     "name": "ford-five-dollar-wage",
@@ -1310,10 +1535,12 @@
     "year": 1914,
     "category": "cultural",
     "description": "Ford Motor Company announced an eight-hour workday and 5 dollar minimum daily wage, revolutionizing labor standards.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Henry_Ford_portrait_1915_original_%283x4_cropped%29.png/330px-Henry_Ford_portrait_1915_original_%283x4_cropped%29.png",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 1345770,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Henry_Ford"
   },
   {
     "name": "dada-movement",
@@ -1324,7 +1551,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Grand_opening_of_the_first_Dada_exhibition%2C_Berlin%2C_5_June_1920.jpg/330px-Grand_opening_of_the_first_Dada_exhibition%2C_Berlin%2C_5_June_1920.jpg",
     "image_width": 330,
-    "image_height": 275
+    "image_height": 275,
+    "wikipedia_views": 514816,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dada"
   },
   {
     "name": "women-suffrage-uk",
@@ -1335,7 +1564,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Votes_For_Women.jpg/330px-Votes_For_Women.jpg",
     "image_width": 330,
-    "image_height": 489
+    "image_height": 489,
+    "wikipedia_views": 1327959,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Riley_Gaines"
   },
   {
     "name": "bauhaus-founded",
@@ -1346,7 +1577,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/6265_Dessau.JPG/330px-6265_Dessau.JPG",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 665586,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bauhaus"
   },
   {
     "name": "jazz-age-begins",
@@ -1357,7 +1590,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/CarterAndKingJazzingOrchestra.jpg/330px-CarterAndKingJazzingOrchestra.jpg",
     "image_width": 330,
-    "image_height": 238
+    "image_height": 238,
+    "wikipedia_views": 652300,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jazz"
   },
   {
     "name": "harlem-renaissance",
@@ -1368,7 +1603,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Three_Harlem_Women%2C_ca._1925.png/330px-Three_Harlem_Women%2C_ca._1925.png",
     "image_width": 330,
-    "image_height": 445
+    "image_height": 445,
+    "wikipedia_views": 323494,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harlem_Renaissance"
   },
   {
     "name": "first-miss-america",
@@ -1376,10 +1613,12 @@
     "year": 1921,
     "category": "cultural",
     "description": "The first Miss America pageant was held in Atlantic City.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Miss_America_Logo.jpg",
     "image_width": 300,
-    "image_height": 134
+    "image_height": 134,
+    "wikipedia_views": 162449,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Miss_America"
   },
   {
     "name": "ulysses-published",
@@ -1390,7 +1629,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/JoyceUlysses2.jpg/330px-JoyceUlysses2.jpg",
     "image_width": 330,
-    "image_height": 418
+    "image_height": 418,
+    "wikipedia_views": 950294,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ulysses_(novel)"
   },
   {
     "name": "surrealist-manifesto",
@@ -1401,7 +1642,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/MagrittePipe.jpg/330px-MagrittePipe.jpg",
     "image_width": 330,
-    "image_height": 230
+    "image_height": 230,
+    "wikipedia_views": 32710,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Surrealist_Manifesto"
   },
   {
     "name": "first-winter-olympics",
@@ -1409,10 +1652,12 @@
     "year": 1924,
     "category": "cultural",
     "description": "The first Winter Olympic Games opened in Chamonix in the French Alps.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/1924WOlympicPoster.jpg/330px-1924WOlympicPoster.jpg",
     "image_width": 330,
-    "image_height": 468
+    "image_height": 468,
+    "wikipedia_views": 60074,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1924_Winter_Olympics"
   },
   {
     "name": "rhapsody-in-blue-premiere",
@@ -1420,10 +1665,12 @@
     "year": 1924,
     "category": "cultural",
     "description": "George Gershwins Rhapsody in Blue premiered in New York City, blending jazz and classical music.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Rhapsody_in_Blue_cover.jpg/330px-Rhapsody_in_Blue_cover.jpg",
     "image_width": 330,
-    "image_height": 437
+    "image_height": 437,
+    "wikipedia_views": 170037,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rhapsody_in_Blue"
   },
   {
     "name": "ibm-founded",
@@ -1431,10 +1678,12 @@
     "year": 1924,
     "category": "cultural",
     "description": "Computing-Tabulating-Recording Company changed its name to International Business Machines Corporation.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/IBM_CHQ_-_Oct_2014.jpg/330px-IBM_CHQ_-_Oct_2014.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 1041944,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/IBM"
   },
   {
     "name": "islamic-caliphate-abolished",
@@ -1442,10 +1691,12 @@
     "year": 1924,
     "category": "cultural",
     "description": "The 407-year-old Ottoman Caliphate was abolished as Turkey modernized under Kemal Ataturk.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Abolition_of_the_Caliphate%2C_The_Last_Caliph%2C_Le_Petit_Journal_illustr%C3%A9%2C_16_March_1924.jpg/330px-Abolition_of_the_Caliphate%2C_The_Last_Caliph%2C_Le_Petit_Journal_illustr%C3%A9%2C_16_March_1924.jpg",
     "image_width": 330,
-    "image_height": 342
+    "image_height": 342,
+    "wikipedia_views": 88432,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abolition_of_the_Caliphate"
   },
   {
     "name": "great-gatsby",
@@ -1456,7 +1707,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/330px-The_Great_Gatsby_Cover_1925_Retouched.jpg",
     "image_width": 330,
-    "image_height": 468
+    "image_height": 468,
+    "wikipedia_views": 1641692,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Great_Gatsby"
   },
   {
     "name": "first-talking-film",
@@ -1467,7 +1720,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/The_Jazz_Singer_1927_Poster.jpg/330px-The_Jazz_Singer_1927_Poster.jpg",
     "image_width": 330,
-    "image_height": 501
+    "image_height": 501,
+    "wikipedia_views": 223390,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Jazz_Singer"
   },
   {
     "name": "mickey-mouse-debut",
@@ -1478,7 +1733,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Mickey_Mouse_%28poster_version%29.svg/330px-Mickey_Mouse_%28poster_version%29.svg.png",
     "image_width": 330,
-    "image_height": 371
+    "image_height": 371,
+    "wikipedia_views": 803928,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mickey_Mouse"
   },
   {
     "name": "gandhi-salt-march",
@@ -1489,7 +1746,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Marche_sel.jpg/330px-Marche_sel.jpg",
     "image_width": 330,
-    "image_height": 222
+    "image_height": 222,
+    "wikipedia_views": 285277,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Salt_March"
   },
   {
     "name": "lindbergh-baby-kidnapping",
@@ -1500,7 +1759,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Lindbergh_baby_poster1.jpg/330px-Lindbergh_baby_poster1.jpg",
     "image_width": 330,
-    "image_height": 580
+    "image_height": 580,
+    "wikipedia_views": 530278,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lindbergh_kidnapping"
   },
   {
     "name": "alcatraz-federal-prison",
@@ -1508,10 +1769,12 @@
     "year": 1934,
     "category": "cultural",
     "description": "Alcatraz Island in San Francisco Bay became a United States federal prison.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alcatraz_2021.jpg/330px-Alcatraz_2021.jpg",
     "image_width": 330,
-    "image_height": 210
+    "image_height": 210,
+    "wikipedia_views": 752843,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alcatraz_Federal_Penitentiary"
   },
   {
     "name": "alcoholics-anonymous",
@@ -1519,10 +1782,12 @@
     "year": 1935,
     "category": "cultural",
     "description": "Bill Wilson and Dr. Bob Smith founded the fellowship in Akron, Ohio.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Alcoholics_Anonymous_%28logo%29.svg/330px-Alcoholics_Anonymous_%28logo%29.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 32556,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Alcoholics_Anonymous"
   },
   {
     "name": "first-television-broadcast",
@@ -1533,7 +1798,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Family_watching_television_1958.jpg/330px-Family_watching_television_1958.jpg",
     "image_width": 330,
-    "image_height": 307
+    "image_height": 307,
+    "wikipedia_views": 179850,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Public_broadcasting"
   },
   {
     "name": "guernica-painted",
@@ -1544,7 +1811,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/330px-PicassoGuernica.jpg",
     "image_width": 330,
-    "image_height": 150
+    "image_height": 150,
+    "wikipedia_views": 879837,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Guernica_(Picasso)"
   },
   {
     "name": "wizard-of-oz",
@@ -1555,7 +1824,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wizard_of_oz_movie_poster.jpg/330px-Wizard_of_oz_movie_poster.jpg",
     "image_width": 330,
-    "image_height": 494
+    "image_height": 494,
+    "wikipedia_views": 2356797,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Wizard_of_Oz"
   },
   {
     "name": "gone-with-wind-film",
@@ -1566,7 +1837,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Poster_-_Gone_With_the_Wind_01.jpg/330px-Poster_-_Gone_With_the_Wind_01.jpg",
     "image_width": 330,
-    "image_height": 508
+    "image_height": 508,
+    "wikipedia_views": 1491615,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)"
   },
   {
     "name": "pinocchio-premieres",
@@ -1574,10 +1847,12 @@
     "year": 1940,
     "category": "cultural",
     "description": "Disneys second full-length animated film Pinocchio premiered.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Pinocchio-1940-poster.jpg",
     "image_width": 260,
-    "image_height": 383
+    "image_height": 383,
+    "wikipedia_views": 421685,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pinocchio_(1940_film)"
   },
   {
     "name": "citizen-kane",
@@ -1588,7 +1863,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg/330px-Citizen_Kane_poster%2C_1941_%28Style_B%2C_unrestored%29.jpg",
     "image_width": 330,
-    "image_height": 496
+    "image_height": 496,
+    "wikipedia_views": 1168071,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Citizen_Kane"
   },
   {
     "name": "casablanca-released",
@@ -1599,7 +1876,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Hassan_II_mosque%2C_Casablanca_2.jpg/330px-Hassan_II_mosque%2C_Casablanca_2.jpg",
     "image_width": 330,
-    "image_height": 343
+    "image_height": 343,
+    "wikipedia_views": 1241483,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Casablanca_(film)"
   },
   {
     "name": "abstract-expressionism",
@@ -1610,7 +1889,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Willem_de_Kooning_in_his_studio.jpg/330px-Willem_de_Kooning_in_his_studio.jpg",
     "image_width": 330,
-    "image_height": 254
+    "image_height": 254,
+    "wikipedia_views": 137226,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abstract_expressionism"
   },
   {
     "name": "nascar-incorporated",
@@ -1618,10 +1899,12 @@
     "year": 1948,
     "category": "cultural",
     "description": "The National Association for Stock Car Auto Racing is incorporated.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/NASCAR_practice.jpg/330px-NASCAR_practice.jpg",
     "image_width": 330,
-    "image_height": 216
+    "image_height": 216,
+    "wikipedia_views": 10521,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Safety_in_NASCAR"
   },
   {
     "name": "nineteen-eighty-four",
@@ -1632,7 +1915,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/1984_Events_Collage.jpg/330px-1984_Events_Collage.jpg",
     "image_width": 330,
-    "image_height": 298
+    "image_height": 298,
+    "wikipedia_views": 2214538,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
   },
   {
     "name": "nbc-today-debuts",
@@ -1640,10 +1925,12 @@
     "year": 1952,
     "category": "cultural",
     "description": "NBCs long-running morning news program Today debuts with host Dave Garroway.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Today_2023.svg/330px-Today_2023.svg.png",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 276052,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Today_(American_TV_program)"
   },
   {
     "name": "elvis-first-single",
@@ -1654,7 +1941,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",
     "image_width": 330,
-    "image_height": 426
+    "image_height": 426,
+    "wikipedia_views": 53991,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/That's_All_Right"
   },
   {
     "name": "lord-of-rings",
@@ -1662,10 +1951,12 @@
     "year": 1954,
     "category": "cultural",
     "description": "J.R.R. Tolkien published his epic fantasy trilogy.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif",
     "image_width": 255,
-    "image_height": 391
+    "image_height": 391,
+    "wikipedia_views": 1675278,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
   },
   {
     "name": "disneyland-opens",
@@ -1676,7 +1967,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sleeping_Beauty_Castle_-_February_2024.png/330px-Sleeping_Beauty_Castle_-_February_2024.png",
     "image_width": 330,
-    "image_height": 280
+    "image_height": 280,
+    "wikipedia_views": 147070,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_Disneyland"
   },
   {
     "name": "elvis-ed-sullivan",
@@ -1687,7 +1980,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Elvis_Presley_promoting_Jailhouse_Rock.jpg/330px-Elvis_Presley_promoting_Jailhouse_Rock.jpg",
     "image_width": 330,
-    "image_height": 426
+    "image_height": 426,
+    "wikipedia_views": 217172,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Ed_Sullivan_Show"
   },
   {
     "name": "west-side-story-opens",
@@ -1698,7 +1993,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/6/6a/West_Side_001.jpg",
     "image_width": 300,
-    "image_height": 279
+    "image_height": 279,
+    "wikipedia_views": 630256,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/West_Side_Story"
   },
   {
     "name": "birth-control-pill",
@@ -1709,7 +2006,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm/320px--Contraception_%E2%80%93_How_to_Prevent_Unwanted_Pregnancy.webm.jpg",
     "image_width": 320,
-    "image_height": 180
+    "image_height": 180,
+    "wikipedia_views": 128859,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Combined_oral_contraceptive_pill"
   },
   {
     "name": "beatles-form",
@@ -1720,7 +2019,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 4030119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles"
   },
   {
     "name": "catch-22-published",
@@ -1731,7 +2032,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Catch-22_%281961%29_front_cover%2C_first_edition.jpg/330px-Catch-22_%281961%29_front_cover%2C_first_edition.jpg",
     "image_width": 330,
-    "image_height": 486
+    "image_height": 486,
+    "wikipedia_views": 625881,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Catch-22"
   },
   {
     "name": "warhol-soup-cans",
@@ -1742,7 +2045,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg/330px-Campbell%27s_Soup_Cans_by_Andy_Warhol.jpg",
     "image_width": 330,
-    "image_height": 192
+    "image_height": 192,
+    "wikipedia_views": 196363,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Campbell's_Soup_Cans"
   },
   {
     "name": "march-on-washington",
@@ -1753,7 +2058,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg/330px-Civil_rights_march_on_Washington%2C_D.C._from_Lincoln_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 504
+    "image_height": 504,
+    "wikipedia_views": 149344,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/March_on_Washington"
   },
   {
     "name": "beatles-usa",
@@ -1764,7 +2071,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 4030119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles"
   },
   {
     "name": "beatles-ed-sullivan",
@@ -1775,7 +2084,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg/330px-The_Beatles_1963_Dezo_Hoffman_Capitol_Records_press_photo_4-3_crop.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 89196,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles_on_The_Ed_Sullivan_Show"
   },
   {
     "name": "tokyo-olympics-1964",
@@ -1786,7 +2097,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Tokyo_1964_Summer_Olympics_logo.svg/330px-Tokyo_1964_Summer_Olympics_logo.svg.png",
     "image_width": 330,
-    "image_height": 603
+    "image_height": 603,
+    "wikipedia_views": 542147,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2020_Summer_Olympics"
   },
   {
     "name": "blue-ribbon-sports-founded",
@@ -1794,10 +2107,12 @@
     "year": 1964,
     "category": "cultural",
     "description": "Blue Ribbon Sports, which would later become Nike, is founded by University of Oregon athletes.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg/330px-Nike_Campus%2C_Beaverton_-_DPLA_-_ffa63f1bbaf5cd21aeada3d3978db2b0.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 170645,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pabst_Blue_Ribbon"
   },
   {
     "name": "dylan-goes-electric",
@@ -1808,7 +2123,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Bob_Dylan._Olympia%2C_1966_-_btv1b10602781d_%2806_of_34%29_%28cropped%29_%28b%29.jpg/330px-Bob_Dylan._Olympia%2C_1966_-_btv1b10602781d_%2806_of_34%29_%28cropped%29_%28b%29.jpg",
     "image_width": 330,
-    "image_height": 522
+    "image_height": 522,
+    "wikipedia_views": 441427,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Electric_Dylan_controversy"
   },
   {
     "name": "monterey-pop",
@@ -1819,7 +2136,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Monterey_International_Pop_Music_Festival_poster.jpg",
     "image_width": 239,
-    "image_height": 416
+    "image_height": 416,
+    "wikipedia_views": 80961,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Monterey_International_Pop_Festival"
   },
   {
     "name": "one-hundred-years-solitude",
@@ -1827,10 +2146,12 @@
     "year": 1967,
     "category": "cultural",
     "description": "Gabriel García Márquez published his magical realist masterpiece.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Cien_a%C3%B1os_de_soledad_%28book_cover%2C_1967%29.jpg",
     "image_width": 265,
-    "image_height": 376
+    "image_height": 376,
+    "wikipedia_views": 1145589,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/One_Hundred_Years_of_Solitude"
   },
   {
     "name": "prague-spring-begins",
@@ -1841,7 +2162,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/10_Soviet_Invasion_of_Czechoslovakia_-_Flickr_-_The_Central_Intelligence_Agency.jpg/330px-10_Soviet_Invasion_of_Czechoslovakia_-_Flickr_-_The_Central_Intelligence_Agency.jpg",
     "image_width": 330,
-    "image_height": 222
+    "image_height": 222,
+    "wikipedia_views": 278784,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Prague_Spring"
   },
   {
     "name": "johnny-cash-folsom-prison",
@@ -1849,10 +2172,12 @@
     "year": 1968,
     "category": "cultural",
     "description": "Johnny Cash performs his famous live concert at Folsom State Prison.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/bf/Johnny_Cash_At_Folsom_Prison.jpg",
     "image_width": 300,
-    "image_height": 300
+    "image_height": 300,
+    "wikipedia_views": 105923,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/At_Folsom_Prison"
   },
   {
     "name": "woodstock",
@@ -1860,10 +2185,12 @@
     "year": 1969,
     "category": "cultural",
     "description": "The iconic music festival defined a generation.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Woodstock_poster.jpg/330px-Woodstock_poster.jpg",
     "image_width": 330,
-    "image_height": 457
+    "image_height": 457,
+    "wikipedia_views": 874367,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Woodstock"
   },
   {
     "name": "stonewall-riots",
@@ -1874,7 +2201,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Stonewall_riots.jpg/330px-Stonewall_riots.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 882495,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stonewall_riots"
   },
   {
     "name": "sesame-street-debut",
@@ -1882,10 +2211,12 @@
     "year": 1969,
     "category": "cultural",
     "description": "The revolutionary children's educational show first aired on PBS.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sesame_Street_logo.svg/330px-Sesame_Street_logo.svg.png",
     "image_width": 330,
-    "image_height": 128
+    "image_height": 128,
+    "wikipedia_views": 88692,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sesame_Street_characters"
   },
   {
     "name": "first-earth-day",
@@ -1896,7 +2227,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Earth_Day_Flag.png/330px-Earth_Day_Flag.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 501882,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth_Day"
   },
   {
     "name": "first-email",
@@ -1907,7 +2240,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Evolution_36_mail.png/330px-Evolution_36_mail.png",
     "image_width": 330,
-    "image_height": 263
+    "image_height": 263,
+    "wikipedia_views": 124611,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_email"
   },
   {
     "name": "roe-v-wade",
@@ -1918,7 +2253,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg/330px-Norma_McCorvey_%28Jane_Roe%29_onthe_steps_of_the_Supreme_Court%2C_1989_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 379
+    "image_height": 379,
+    "wikipedia_views": 808085,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roe_v._Wade"
   },
   {
     "name": "disco-era-begins",
@@ -1929,7 +2266,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Disco_TGI_Bar_by_John_Vance.jpg/330px-Disco_TGI_Bar_by_John_Vance.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 400916,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Disco"
   },
   {
     "name": "punk-rock-emerges",
@@ -1940,7 +2279,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Joey_Ramone.jpg/330px-Joey_Ramone.jpg",
     "image_width": 330,
-    "image_height": 534
+    "image_height": 534,
+    "wikipedia_views": 179129,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Garage_rock"
   },
   {
     "name": "star-wars",
@@ -1951,7 +2292,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/330px-Star_wars2.svg.png",
     "image_width": 330,
-    "image_height": 158
+    "image_height": 158,
+    "wikipedia_views": 224113,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Changes_in_Star_Wars_re-releases"
   },
   {
     "name": "walkman-released",
@@ -1962,7 +2305,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Walkman_logo_%282000%29.svg/330px-Walkman_logo_%282000%29.svg.png",
     "image_width": 330,
-    "image_height": 172
+    "image_height": 172,
+    "wikipedia_views": 239757,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Walkman"
   },
   {
     "name": "hip-hop-emerges",
@@ -1973,7 +2318,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kool_Herc.jpg/330px-Kool_Herc.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 102262,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Southern_hip-hop"
   },
   {
     "name": "mtv-launches",
@@ -1984,7 +2331,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/330px-MTV_2021_%28brand_version%29.svg.png",
     "image_width": 330,
-    "image_height": 205
+    "image_height": 205,
+    "wikipedia_views": 1058621,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MTV"
   },
   {
     "name": "aids-identified",
@@ -1995,7 +2344,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/330px-Red_Ribbon.svg.png",
     "image_width": 330,
-    "image_height": 494
+    "image_height": 494,
+    "wikipedia_views": 158748,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Epidemiology_of_HIV/AIDS"
   },
   {
     "name": "michael-jackson-thriller",
@@ -2006,7 +2357,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
     "image_width": 300,
-    "image_height": 300
+    "image_height": 300,
+    "wikipedia_views": 1078215,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thriller_(album)"
   },
   {
     "name": "thriller-video",
@@ -2017,7 +2370,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/50/Michael_Jackson%27s_Thriller_title_card.jpg/330px-Michael_Jackson%27s_Thriller_title_card.jpg",
     "image_width": 330,
-    "image_height": 174
+    "image_height": 174,
+    "wikipedia_views": 185207,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Michael_Jackson's_Thriller_(music_video)"
   },
   {
     "name": "live-aid",
@@ -2028,7 +2383,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Official_Live_Aid_poster.jpeg",
     "image_width": 268,
-    "image_height": 370
+    "image_height": 370,
+    "wikipedia_views": 1256163,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Live_Aid"
   },
   {
     "name": "aids-quilt",
@@ -2039,7 +2396,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Aids_Quilt.jpg/330px-Aids_Quilt.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 111367,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/NAMES_Project_AIDS_Memorial_Quilt"
   },
   {
     "name": "seoul-olympics-1988",
@@ -2050,7 +2409,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d6/1988_Summer_Olympics_logo.svg/330px-1988_Summer_Olympics_logo.svg.png",
     "image_width": 330,
-    "image_height": 501
+    "image_height": 501,
+    "wikipedia_views": 224268,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1988_Summer_Olympics"
   },
   {
     "name": "human-genome-project",
@@ -2061,7 +2422,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Logo_HGP.jpg/330px-Logo_HGP.jpg",
     "image_width": 330,
-    "image_height": 328
+    "image_height": 328,
+    "wikipedia_views": 215525,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Human_Genome_Project"
   },
   {
     "name": "nelson-mandela-freed",
@@ -2072,7 +2435,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
     "image_width": 330,
-    "image_height": 427
+    "image_height": 427,
+    "wikipedia_views": 21319,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Free_Nelson_Mandela"
   },
   {
     "name": "nevermind-album",
@@ -2083,7 +2448,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg",
     "image_width": 300,
-    "image_height": 300
+    "image_height": 300,
+    "wikipedia_views": 681952,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nevermind"
   },
   {
     "name": "pulp-fiction-released",
@@ -2094,7 +2461,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
     "image_width": 261,
-    "image_height": 385
+    "image_height": 385,
+    "wikipedia_views": 141617,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pulp_Fiction_(soundtrack)"
   },
   {
     "name": "million-man-march",
@@ -2105,7 +2474,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/The_million_march_man.jpg/330px-The_million_march_man.jpg",
     "image_width": 330,
-    "image_height": 225
+    "image_height": 225,
+    "wikipedia_views": 118680,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Million_Man_March"
   },
   {
     "name": "dolly-sheep-cloned",
@@ -2116,7 +2487,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/b/b4/Dolly_the_Sheep_with_her_First_Born_Bonnie.jpg",
     "image_width": 290,
-    "image_height": 287
+    "image_height": 287,
+    "wikipedia_views": 383641,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dolly_(sheep)"
   },
   {
     "name": "harry-potter-published",
@@ -2127,7 +2500,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Harry_Potter_logo.svg/330px-Harry_Potter_logo.svg.png",
     "image_width": 330,
-    "image_height": 120
+    "image_height": 120,
+    "wikipedia_views": 1129148,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Cursed_Child"
   },
   {
     "name": "google-founded",
@@ -2138,7 +2513,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/320px-Google_2015_logo.svg.png",
     "image_width": 320,
-    "image_height": 109
+    "image_height": 109,
+    "wikipedia_views": 8501322,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Google"
   },
   {
     "name": "y2k",
@@ -2146,10 +2523,12 @@
     "year": 2000,
     "category": "cultural",
     "description": "The world braced for computer failures as the calendar rolled to a new millennium.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Bug_de_l%27an_2000.jpg/330px-Bug_de_l%27an_2000.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 475435,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_2000_problem"
   },
   {
     "name": "millennium",
@@ -2160,7 +2539,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG/330px-%D0%9C%D0%BE%D1%80%D1%8F%D0%BA%D0%B0%D0%BC-%D0%BF%D0%BE%D0%B4%D0%B2%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA%D0%B0%D0%BC_%D0%BF%D0%BE%D0%B3%D0%B8%D0%B1%D1%88%D0%B8%D0%BC_%D0%B2_%D0%BC%D0%B8%D1%80%D0%BD%D0%BE%D0%B5_%D0%B2%D1%80%D0%B5%D0%BC%D1%8F.JPG",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 475435,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_2000_problem"
   },
   {
     "name": "ipod-released",
@@ -2171,7 +2552,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/IPod_family.png/330px-IPod_family.png",
     "image_width": 330,
-    "image_height": 195
+    "image_height": 195,
+    "wikipedia_views": 707127,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/IPod"
   },
   {
     "name": "world-cup-soccer-2002",
@@ -2182,7 +2565,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/FIFA_World_Version_8_title_screen.jpg/330px-FIFA_World_Version_8_title_screen.jpg",
     "image_width": 330,
-    "image_height": 185
+    "image_height": 185,
+    "wikipedia_views": 1190783,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup"
   },
   {
     "name": "human-genome-completed",
@@ -2193,7 +2578,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Human_karyotype_with_bands_and_sub-bands.png/330px-Human_karyotype_with_bands_and_sub-bands.png",
     "image_width": 330,
-    "image_height": 545
+    "image_height": 545,
+    "wikipedia_views": 162306,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Human_genome"
   },
   {
     "name": "facebook-launched",
@@ -2204,7 +2591,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/6/64/Facebook_user_page.png",
     "image_width": 261,
-    "image_height": 382
+    "image_height": 382,
+    "wikipedia_views": 6660341,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Facebook"
   },
   {
     "name": "youtube-founded",
@@ -2215,7 +2604,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/330px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png",
     "image_width": 330,
-    "image_height": 187
+    "image_height": 187,
+    "wikipedia_views": 1971068,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels"
   },
   {
     "name": "twitter-launched",
@@ -2226,7 +2617,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/X_%28formerly_Twitter%29_logo_late_2025.svg/320px-X_%28formerly_Twitter%29_logo_late_2025.svg.png",
     "image_width": 320,
-    "image_height": 320
+    "image_height": 320,
+    "wikipedia_views": 3988124,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Twitter"
   },
   {
     "name": "iphone-released",
@@ -2237,7 +2630,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/320px-IPhone_17_Pro_Vector.svg.png",
     "image_width": 320,
-    "image_height": 663
+    "image_height": 663,
+    "wikipedia_views": 1501209,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/IPhone"
   },
   {
     "name": "beijing-olympics-2008",
@@ -2248,7 +2643,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/87/2008_Summer_Olympics_logo.svg/330px-2008_Summer_Olympics_logo.svg.png",
     "image_width": 330,
-    "image_height": 450
+    "image_height": 450,
+    "wikipedia_views": 437788,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2022_Winter_Olympics"
   },
   {
     "name": "bitcoin-created",
@@ -2259,7 +2656,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/320px-Bitcoin.svg.png",
     "image_width": 320,
-    "image_height": 320
+    "image_height": 320,
+    "wikipedia_views": 1927373,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bitcoin"
   },
   {
     "name": "instagram-launched",
@@ -2270,7 +2669,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/330px-Instagram_logo_2022.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 15436616,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Instagram"
   },
   {
     "name": "black-lives-matter-founded",
@@ -2281,7 +2682,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Blmblm_cropped.svg/330px-Blmblm_cropped.svg.png",
     "image_width": 330,
-    "image_height": 198
+    "image_height": 198,
+    "wikipedia_views": 632285,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Lives_Matter"
   },
   {
     "name": "marriage-equality-us",
@@ -2292,7 +2695,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg/330px-Jack_Baker_and_Michael_McConnell_at_home%2C_Minneapolis%2C_Minnesota_LCCN2017648764_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 222
+    "image_height": 222,
+    "wikipedia_views": 18799,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Same-sex_marriage_in_tribal_nations_in_the_United_States"
   },
   {
     "name": "metoo-movement",
@@ -2303,7 +2708,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg/330px-Can_You_Hear_Me_Now%3F_-MeToo_%2839787332552%29.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 478819,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MeToo_movement"
   },
   {
     "name": "chatgpt-released",
@@ -2314,7 +2721,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/OpenAI_logo_2025_%28symbol%29.svg/330px-OpenAI_logo_2025_%28symbol%29.svg.png",
     "image_width": 330,
-    "image_height": 328
+    "image_height": 328,
+    "wikipedia_views": 43605053,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ChatGPT"
   },
   {
     "name": "war-of-worlds-broadcast",
@@ -2325,7 +2734,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Orson_Welles_1937_cr3-4.jpg/330px-Orson_Welles_1937_cr3-4.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 313143,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_War_of_the_Worlds_(1938_radio_drama)"
   },
   {
     "name": "i-have-a-dream-speech",
@@ -2336,7 +2747,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Martin_Luther_King_Jr_National_Historic_Site_%2836233249121%29.jpg/330px-Martin_Luther_King_Jr_National_Historic_Site_%2836233249121%29.jpg",
     "image_width": 330,
-    "image_height": 218
+    "image_height": 218,
+    "wikipedia_views": 638308,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/I_Have_a_Dream"
   },
   {
     "name": "code-ur-nammu",
@@ -2344,10 +2757,12 @@
     "year": -2100,
     "category": "cultural",
     "description": "The oldest surviving legal code was written in ancient Sumer, predating Hammurabi.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ur_Nammu_code_Istanbul.jpg/330px-Ur_Nammu_code_Istanbul.jpg",
     "image_width": 330,
-    "image_height": 658
+    "image_height": 658,
+    "wikipedia_views": 97734,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Ur-Nammu"
   },
   {
     "name": "shang-dynasty-established",
@@ -2358,7 +2773,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Shang_dynasty.svg/330px-Shang_dynasty.svg.png",
     "image_width": 330,
-    "image_height": 285
+    "image_height": 285,
+    "wikipedia_views": 423277,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shang_dynasty"
   },
   {
     "name": "kingdom-kush-flourishes",
@@ -2366,10 +2783,12 @@
     "year": -1500,
     "category": "cultural",
     "description": "The powerful Nubian kingdom arose along the Nile, rivaling ancient Egypt.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg/330px-Kushite_heartland_and_Kushite_Empire_of_the_25th_dynasty_circa_700_BCE.jpg",
     "image_width": 330,
-    "image_height": 379
+    "image_height": 379,
+    "wikipedia_views": 449820,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Kush"
   },
   {
     "name": "exodus-biblical",
@@ -2377,10 +2796,12 @@
     "year": -1300,
     "category": "cultural",
     "description": "According to the Bible, Moses led the Israelites out of slavery in Egypt.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/David_Roberts-IsraelitesLeavingEgypt_1828.jpg/330px-David_Roberts-IsraelitesLeavingEgypt_1828.jpg",
     "image_width": 330,
-    "image_height": 238
+    "image_height": 238,
+    "wikipedia_views": 347238,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Exodus"
   },
   {
     "name": "king-david-rules",
@@ -2388,10 +2809,12 @@
     "year": -1000,
     "category": "cultural",
     "description": "David united the tribes of Israel and established Jerusalem as his capital.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/King_David%2C_the_King_of_Israel.jpg/330px-King_David%2C_the_King_of_Israel.jpg",
     "image_width": 330,
-    "image_height": 462
+    "image_height": 462,
+    "wikipedia_views": 1872808,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/David"
   },
   {
     "name": "darius-great-king",
@@ -2402,7 +2825,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Darius_I.jpg/330px-Darius_I.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 552762,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_the_Great"
   },
   {
     "name": "axumite-empire",
@@ -2410,10 +2835,12 @@
     "year": 100,
     "category": "cultural",
     "description": "The Ethiopian kingdom of Axum became a major trading power and later embraced Christianity.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/KingEndybisEthiopia227-235CE.jpg/330px-KingEndybisEthiopia227-235CE.jpg",
     "image_width": 330,
-    "image_height": 168
+    "image_height": 168,
+    "wikipedia_views": 424012,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum"
   },
   {
     "name": "house-of-wisdom",
@@ -2424,7 +2851,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Maqamat_hariri.jpg/330px-Maqamat_hariri.jpg",
     "image_width": 330,
-    "image_height": 335
+    "image_height": 335,
+    "wikipedia_views": 247169,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Wisdom"
   },
   {
     "name": "chola-dynasty-expansion",
@@ -2432,10 +2861,12 @@
     "year": 1000,
     "category": "cultural",
     "description": "The Indian Chola Empire built a powerful navy and dominated Southeast Asian trade.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Thanjavur_temple.jpg/330px-Thanjavur_temple.jpg",
     "image_width": 330,
-    "image_height": 497
+    "image_height": 497,
+    "wikipedia_views": 14639,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chola_Navy"
   },
   {
     "name": "mali-empire-founded",
@@ -2446,7 +2877,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Map_of_the_Mali_Empire.png/330px-Map_of_the_Mali_Empire.png",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 436142,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mali_Empire"
   },
   {
     "name": "timbuktu-learning-center",
@@ -2457,7 +2890,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Cooking_contest_140418-N-OX321-101.jpg/330px-Cooking_contest_140418-N-OX321-101.jpg",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 1246849,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
   },
   {
     "name": "mansa-musa-pilgrimage",
@@ -2468,7 +2903,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg/330px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 377
+    "image_height": 377,
+    "wikipedia_views": 1246849,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Musa"
   },
   {
     "name": "songhai-empire",
@@ -2476,10 +2913,12 @@
     "year": 1464,
     "category": "cultural",
     "description": "Sunni Ali founded the largest empire in African history, succeeding Mali.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 241307,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Songhai_Empire"
   },
   {
     "name": "peter-great-modernizes",
@@ -2490,7 +2929,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg/330px-Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg",
     "image_width": 330,
-    "image_height": 436
+    "image_height": 436,
+    "wikipedia_views": 14520,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Government_reform_of_Peter_the_Great"
   },
   {
     "name": "british-slave-trade-abolished",
@@ -2501,7 +2942,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg/330px-Coat_of_Arms_of_the_United_Kingdom_%281801-1816%29.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 75185,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Slave_Trade_Act_1807"
   },
   {
     "name": "daguerreotype-invented",
@@ -2512,7 +2955,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Louis_Daguerre_2.jpg/330px-Louis_Daguerre_2.jpg",
     "image_width": 330,
-    "image_height": 422
+    "image_height": 422,
+    "wikipedia_views": 362400,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Daguerreotype"
   },
   {
     "name": "ghana-independence",
@@ -2520,10 +2965,12 @@
     "year": 1957,
     "category": "cultural",
     "description": "Ghana became the first sub-Saharan African nation to gain independence from colonial rule.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/330px-Flag_of_Ghana.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 1654346,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ghana"
   },
   {
     "name": "mandela-elected-president",
@@ -2534,7 +2981,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson_Mandela_1994.jpg/330px-Nelson_Mandela_1994.jpg",
     "image_width": 330,
-    "image_height": 427
+    "image_height": 427,
+    "wikipedia_views": 27254,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_Bay_Metropolitan_Municipality"
   },
   {
     "name": "akhenaten-religious-revolution",
@@ -2542,10 +2991,12 @@
     "year": -1353,
     "category": "cultural",
     "description": "Pharaoh Akhenaten attempted to establish monotheistic worship of the sun disk Aten.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/GD-EG-Caire-Mus%C3%A9e061.JPG/330px-GD-EG-Caire-Mus%C3%A9e061.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 656963,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Akhenaten"
   },
   {
     "name": "death-tutankhamun",
@@ -2553,10 +3004,12 @@
     "year": -1323,
     "category": "cultural",
     "description": "The young pharaoh died at 19, his tomb later becoming archaeology's most famous discovery.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/CairoEgMuseumTaaMaskMostlyPhotographed.jpg/330px-CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 1378936,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tutankhamun"
   },
   {
     "name": "trojan-war",
@@ -2564,10 +3017,12 @@
     "year": -1184,
     "category": "cultural",
     "description": "According to Greek tradition, Greeks besieged Troy for ten years over Helen's abduction.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg/330px-Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg",
     "image_width": 330,
-    "image_height": 326
+    "image_height": 326,
+    "wikipedia_views": 1241893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trojan_War"
   },
   {
     "name": "phoenician-alphabet",
@@ -2578,7 +3033,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Phoenician_alphabet.svg/330px-Phoenician_alphabet.svg.png",
     "image_width": 330,
-    "image_height": 297
+    "image_height": 297,
+    "wikipedia_views": 463198,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenician_alphabet"
   },
   {
     "name": "draco-law-code",
@@ -2589,7 +3046,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Code_Civil_1804.png/330px-Code_Civil_1804.png",
     "image_width": 330,
-    "image_height": 395
+    "image_height": 395,
+    "wikipedia_views": 36019,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Draco_(legislator)"
   },
   {
     "name": "solon-reforms",
@@ -2597,10 +3056,12 @@
     "year": -594,
     "category": "cultural",
     "description": "Solon restructured Athenian society, cancelling debts and laying groundwork for democracy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg/330px-Monastiraki_Square_and_Acropolis_in_Athens_%2844149181684%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 161322,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Solon"
   },
   {
     "name": "birth-buddha",
@@ -2608,10 +3069,12 @@
     "year": -563,
     "category": "cultural",
     "description": "The future Buddha was born a prince in Nepal, destined to found a world religion.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg/330px-Buddha_in_Sarnath_Museum_%28Dhammajak_Mutra%29.jpg",
     "image_width": 330,
-    "image_height": 422
+    "image_height": 422,
+    "wikipedia_views": 222225,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lumbini"
   },
   {
     "name": "birth-confucius",
@@ -2619,10 +3082,12 @@
     "year": -551,
     "category": "cultural",
     "description": "China's most influential philosopher was born in the state of Lu.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Confucius_Tang_Dynasty.jpg/330px-Confucius_Tang_Dynasty.jpg",
     "image_width": 330,
-    "image_height": 603
+    "image_height": 603,
+    "wikipedia_views": 4786,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Confucius'_Birthday"
   },
   {
     "name": "birth-mencius",
@@ -2630,10 +3095,12 @@
     "year": -372,
     "category": "cultural",
     "description": "The second most important Confucian philosopher was born, later advocating innate human goodness.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg/330px-Half_Portraits_of_the_Great_Sage_and_Virtuous_Men_of_Old_-_Meng_Ke_%28%E5%AD%9F%E8%BB%BB%29.jpg",
     "image_width": 330,
-    "image_height": 447
+    "image_height": 447,
+    "wikipedia_views": 118357,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mencius"
   },
   {
     "name": "qin-book-burning",
@@ -2644,7 +3111,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Qin_empire_210_BCE.png/330px-Qin_empire_210_BCE.png",
     "image_width": 330,
-    "image_height": 324
+    "image_height": 324,
+    "wikipedia_views": 64531,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burning_of_books_and_burying_of_scholars"
   },
   {
     "name": "maccabean-revolt",
@@ -2655,7 +3124,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Maccabean_revolt.jpg/330px-Maccabean_revolt.jpg",
     "image_width": 330,
-    "image_height": 263
+    "image_height": 263,
+    "wikipedia_views": 233191,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maccabean_Revolt"
   },
   {
     "name": "god-emperor-golden-throne",
@@ -2663,10 +3134,12 @@
     "year": 30000,
     "category": "cultural",
     "description": "The Master of Mankind was interred upon the Golden Throne to guide humanity through the Warp.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Keno_mini_wargame.jpg/330px-Keno_mini_wargame.jpg",
     "image_width": 330,
-    "image_height": 229
+    "image_height": 229,
+    "wikipedia_views": 51790,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Throne"
   },
   {
     "name": "reign-of-caligula",
@@ -2674,10 +3147,12 @@
     "year": 37,
     "category": "cultural",
     "description": "Caligula became Rome's third emperor, later infamous for cruelty and erratic behavior.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg/330px-Caligula.Carlsberg_Glyptotek.%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 448
+    "image_height": 448,
+    "wikipedia_views": 1482948,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Caligula"
   },
   {
     "name": "peter-paul-martyred",
@@ -2688,7 +3163,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/330px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 2452865,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saint_Peter"
   },
   {
     "name": "book-of-revelation",
@@ -2699,7 +3176,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Dublin%2C_Chester_Beatty_Ms_Chester_Beatty_III_Papyrus_47_fol._7r_Rev_13%2C16-14.jpg/330px-Dublin%2C_Chester_Beatty_Ms_Chester_Beatty_III_Papyrus_47_fol._7r_Rev_13%2C16-14.jpg",
     "image_width": 330,
-    "image_height": 479
+    "image_height": 479,
+    "wikipedia_views": 922436,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Book_of_Revelation"
   },
   {
     "name": "synod-of-whitby",
@@ -2707,10 +3186,12 @@
     "year": 664,
     "category": "cultural",
     "description": "England adopted Roman Catholic practices over Celtic Christianity at this pivotal church council.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Whitby_Abbey_%28geograph_7249897%29.jpg/330px-Whitby_Abbey_%28geograph_7249897%29.jpg",
     "image_width": 330,
-    "image_height": 226
+    "image_height": 226,
+    "wikipedia_views": 32392,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Synod_of_Whitby"
   },
   {
     "name": "wu-zetian-emperor",
@@ -2718,10 +3199,12 @@
     "year": 690,
     "category": "cultural",
     "description": "Wu Zetian became the only woman to rule China as emperor in her own right.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png/330px-%E5%94%90%E5%90%8E%E8%A1%8C%E5%BE%9E%E5%9C%96_%28%E5%B1%80%E9%83%A8%29_-_%E6%AD%A6%E5%89%87%E5%A4%A9.png",
     "image_width": 330,
-    "image_height": 584
+    "image_height": 584,
+    "wikipedia_views": 48136,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wu_Zhou"
   },
   {
     "name": "byzantine-iconoclasm-begins",
@@ -2729,10 +3212,12 @@
     "year": 726,
     "category": "cultural",
     "description": "Emperor Leo III banned religious images, sparking decades of controversy and destruction.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Irenekirken.jpg/330px-Irenekirken.jpg",
     "image_width": 330,
-    "image_height": 445
+    "image_height": 445,
+    "wikipedia_views": 54480,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_V_the_Armenian"
   },
   {
     "name": "cluny-abbey-founded",
@@ -2740,10 +3225,12 @@
     "year": 910,
     "category": "cultural",
     "description": "Cluny Abbey was established, becoming the center of monastic reform across Europe.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg/330px-Cluny_-_B%C3%A2timents_abbatiaux_-_08.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 88994,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cluny_Abbey"
   },
   {
     "name": "christianization-kievan-rus",
@@ -2751,10 +3238,12 @@
     "year": 988,
     "category": "cultural",
     "description": "Vladimir I converted to Orthodox Christianity, beginning Russia's Christian heritage.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Lebedev_baptism.jpg/330px-Lebedev_baptism.jpg",
     "image_width": 330,
-    "image_height": 238
+    "image_height": 238,
+    "wikipedia_views": 91757,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Christianization_of_Kievan_Rus'"
   },
   {
     "name": "murder-thomas-becket",
@@ -2765,7 +3254,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/London._British_Library%2C_Cotton_MS_Claudius_B_II._f.341r_%28cropped%29.jpg",
     "image_width": 238,
-    "image_height": 357
+    "image_height": 357,
+    "wikipedia_views": 638546,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thomas_Becket"
   },
   {
     "name": "death-el-cid",
@@ -2773,10 +3264,12 @@
     "year": 1099,
     "category": "cultural",
     "description": "The legendary Spanish knight Rodrigo Díaz died, later immortalized in epic poetry.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Estatua_del_Cid_%28Burgos%29.jpg/330px-Estatua_del_Cid_%28Burgos%29.jpg",
     "image_width": 330,
-    "image_height": 388
+    "image_height": 388,
+    "wikipedia_views": 391275,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/El_Cid"
   },
   {
     "name": "inquisition-established",
@@ -2784,10 +3277,12 @@
     "year": 1252,
     "category": "cultural",
     "description": "Pope Innocent IV authorized torture in inquisitorial proceedings against heresy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gregory_IX.jpg/330px-Gregory_IX.jpg",
     "image_width": 330,
-    "image_height": 272
+    "image_height": 272,
+    "wikipedia_views": 11792,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_Inquisition_in_Spain"
   },
   {
     "name": "papal-bull-unam-sanctam",
@@ -2795,10 +3290,12 @@
     "year": 1302,
     "category": "cultural",
     "description": "Pope Boniface VIII declared papal supremacy over all secular rulers in the strongest terms.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Papal.bull.JPG/330px-Papal.bull.JPG",
     "image_width": 330,
-    "image_height": 245
+    "image_height": 245,
+    "wikipedia_views": 32695,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Unam_sanctam"
   },
   {
     "name": "knights-templar-arrested",
@@ -2806,10 +3303,12 @@
     "year": 1307,
     "category": "cultural",
     "description": "Philip IV of France arrested the Templars on Friday the 13th, beginning their suppression.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Bandeira_Templ%C3%A1ria.svg/330px-Bandeira_Templ%C3%A1ria.svg.png",
     "image_width": 330,
-    "image_height": 198
+    "image_height": 198,
+    "wikipedia_views": 84852,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trials_of_the_Knights_Templar"
   },
   {
     "name": "avignon-papacy-begins",
@@ -2817,10 +3316,12 @@
     "year": 1309,
     "category": "cultural",
     "description": "Pope Clement V moved the papal court to Avignon, beginning 68 years of French influence over the Church.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PapalStates1700.png/330px-PapalStates1700.png",
     "image_width": 330,
-    "image_height": 201
+    "image_height": 201,
+    "wikipedia_views": 4170565,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope"
   },
   {
     "name": "avignon-papacy-ends",
@@ -2828,10 +3329,12 @@
     "year": 1377,
     "category": "cultural",
     "description": "Pope Gregory XI returned the papacy to Rome after nearly seven decades in France.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PapalStates1700.png/330px-PapalStates1700.png",
     "image_width": 330,
-    "image_height": 201
+    "image_height": 201,
+    "wikipedia_views": 259901,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Avignon_Papacy"
   },
   {
     "name": "western-schism-begins",
@@ -2842,7 +3345,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Grandes_Chroniques_de_Frances_de_Charles_V_-_BNF_fr2813_f208_%28Clercs_se_disputant%29.jpg/330px-Grandes_Chroniques_de_Frances_de_Charles_V_-_BNF_fr2813_f208_%28Clercs_se_disputant%29.jpg",
     "image_width": 330,
-    "image_height": 310
+    "image_height": 310,
+    "wikipedia_views": 332119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Western_Schism"
   },
   {
     "name": "florence-baptistery-competition",
@@ -2850,10 +3355,12 @@
     "year": 1401,
     "category": "cultural",
     "description": "A competition for the Baptistery doors launched the careers of Brunelleschi and Ghiberti, sparking the Renaissance.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Baptistery%2C_Florence.jpg/330px-Baptistery%2C_Florence.jpg",
     "image_width": 330,
-    "image_height": 270
+    "image_height": 270,
+    "wikipedia_views": 13344,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/North_Doors_of_the_Florence_Baptistery"
   },
   {
     "name": "council-of-constance",
@@ -2861,10 +3368,12 @@
     "year": 1414,
     "category": "cultural",
     "description": "The council ended the Western Schism by deposing rival popes and electing Martin V.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vaclav_Brozik_-_Hus.jpg/330px-Vaclav_Brozik_-_Hus.jpg",
     "image_width": 330,
-    "image_height": 206
+    "image_height": 206,
+    "wikipedia_views": 91588,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Constance"
   },
   {
     "name": "jan-hus-burned",
@@ -2875,7 +3384,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Stimmer_Jan_Hus.jpg/330px-Stimmer_Jan_Hus.jpg",
     "image_width": 330,
-    "image_height": 535
+    "image_height": 535,
+    "wikipedia_views": 405405,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jan_Hus"
   },
   {
     "name": "spanish-inquisition-begins",
@@ -2886,7 +3397,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Inquisici%C3%B3n_espa%C3%B1ola.svg/330px-Inquisici%C3%B3n_espa%C3%B1ola.svg.png",
     "image_width": 330,
-    "image_height": 410
+    "image_height": 410,
+    "wikipedia_views": 47209,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_Inquisition"
   },
   {
     "name": "diet-of-worms",
@@ -2897,7 +3410,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/%D0%9B%D1%8E%D1%82%D0%B5%D1%80_%D0%B2_%D0%92%D0%BE%D1%80%D0%BC%D1%81%D0%B5.jpg/330px-%D0%9B%D1%8E%D1%82%D0%B5%D1%80_%D0%B2_%D0%92%D0%BE%D1%80%D0%BC%D1%81%D0%B5.jpg",
     "image_width": 330,
-    "image_height": 171
+    "image_height": 171,
+    "wikipedia_views": 191703,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Diet_of_Worms"
   },
   {
     "name": "carthage-founded",
@@ -2905,10 +3420,12 @@
     "year": -814,
     "category": "cultural",
     "description": "Phoenician colonists established Carthage in modern-day Tunisia, which grew into a major Mediterranean trading power.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Montage_ville_de_Carthage.png/330px-Montage_ville_de_Carthage.png",
     "image_width": 330,
-    "image_height": 386
+    "image_height": 386,
+    "wikipedia_views": 933713,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Carthage"
   },
   {
     "name": "birth-socrates",
@@ -2916,10 +3433,12 @@
     "year": -470,
     "category": "cultural",
     "description": "The Athenian philosopher whose dialectic method and ethical focus laid the foundation for Western philosophy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Socrate_du_Louvre.jpg/330px-Socrate_du_Louvre.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 209929,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sócrates"
   },
   {
     "name": "birth-hippocrates",
@@ -2927,10 +3446,12 @@
     "year": -460,
     "category": "cultural",
     "description": "The Greek physician known as the Father of Medicine established ethics and practices still followed today.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Hippocrates.jpg/330px-Hippocrates.jpg",
     "image_width": 330,
-    "image_height": 485
+    "image_height": 485,
+    "wikipedia_views": 360855,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hippocrates"
   },
   {
     "name": "death-pericles",
@@ -2941,7 +3462,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Pericles_Pio-Clementino_Inv269_n2.jpg/330px-Pericles_Pio-Clementino_Inv269_n2.jpg",
     "image_width": 330,
-    "image_height": 500
+    "image_height": 500,
+    "wikipedia_views": 320313,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pericles"
   },
   {
     "name": "plato-writes-republic",
@@ -2949,10 +3472,12 @@
     "year": -380,
     "category": "cultural",
     "description": "Plato composed his most famous dialogue exploring justice, the ideal state, and the philosopher-king concept.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Politeia_beginning._Codex_Parisinus_graecus_1807.jpg/330px-Politeia_beginning._Codex_Parisinus_graecus_1807.jpg",
     "image_width": 330,
-    "image_height": 478
+    "image_height": 478,
+    "wikipedia_views": 1294986,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plato"
   },
   {
     "name": "birth-alexander-great",
@@ -2963,7 +3488,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Alexander_the_Great_mosaic_%28cropped%29.jpg/330px-Alexander_the_Great_mosaic_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 441
+    "image_height": 441,
+    "wikipedia_views": 3606662,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great"
   },
   {
     "name": "aristotle-tutors-alexander",
@@ -2974,7 +3501,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Alexander_and_Aristotle.jpg/870px-Alexander_and_Aristotle.jpg",
     "image_width": 870,
-    "image_height": 696
+    "image_height": 696,
+    "wikipedia_views": 1452939,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aristotle"
   },
   {
     "name": "death-cleopatra",
@@ -2982,10 +3511,12 @@
     "year": -30,
     "category": "cultural",
     "description": "The last pharaoh of Ptolemaic Egypt died, traditionally by asp bite, ending three millennia of pharaonic rule.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Roman_Wall_painting_from_the_House_of_Giuseppe_II%2C_Pompeii%2C_1st_century_AD%2C_death_of_Sophonisba%2C_but_more_likely_Cleopatra_VII_of_Egypt_consuming_poison.jpg/330px-Roman_Wall_painting_from_the_House_of_Giuseppe_II%2C_Pompeii%2C_1st_century_AD%2C_death_of_Sophonisba%2C_but_more_likely_Cleopatra_VII_of_Egypt_consuming_poison.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 277157,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Cleopatra"
   },
   {
     "name": "ministry-jesus-begins",
@@ -2993,10 +3524,12 @@
     "year": 30,
     "category": "cultural",
     "description": "Jesus of Nazareth began his public ministry in Roman Judea, teaching and gathering disciples.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Ghirlandaio%2C_Domenico_-_Calling_of_the_Apostles_-_1481.jpg/330px-Ghirlandaio%2C_Domenico_-_Calling_of_the_Apostles_-_1481.jpg",
     "image_width": 330,
-    "image_height": 199
+    "image_height": 199,
+    "wikipedia_views": 116547,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Jesus"
   },
   {
     "name": "destruction-second-temple",
@@ -3007,7 +3540,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg/330px-%28Venice%29_La_distruzione_del_tempio_di_Gerusalemme_-Francesco_Hayez_-_gallerie_Accademia_Venice.jpg",
     "image_width": 330,
-    "image_height": 237
+    "image_height": 237,
+    "wikipedia_views": 445106,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)"
   },
   {
     "name": "great-persecution-christians",
@@ -3015,10 +3550,12 @@
     "year": 303,
     "category": "cultural",
     "description": "Emperor Diocletian launched the last and most severe persecution of Christians in the Roman Empire.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Raphael_-_The_Miraculous_Draft_of_Fishes_-_Google_Art_Project.jpg/330px-Raphael_-_The_Miraculous_Draft_of_Fishes_-_Google_Art_Project.jpg",
     "image_width": 330,
-    "image_height": 266
+    "image_height": 266,
+    "wikipedia_views": 226319,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Persecution_of_Christians_in_the_Roman_Empire"
   },
   {
     "name": "julian-pagan-revival",
@@ -3026,10 +3563,12 @@
     "year": 360,
     "category": "cultural",
     "description": "Emperor Julian the Apostate tried to restore traditional Roman religion and reverse Christianity's rise.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Gold_Solidus_of_Julian_the_Apostate%2C_Sirmium.jpg/500px-Gold_Solidus_of_Julian_the_Apostate%2C_Sirmium.jpg",
     "image_width": 500,
-    "image_height": 505
+    "image_height": 505,
+    "wikipedia_views": 326427,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Julian_(emperor)"
   },
   {
     "name": "pope-leo-meets-attila",
@@ -3040,7 +3579,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Francesco_Solimena_-_The_Meeting_of_Pope_Leo_and_Attila_-_WGA21629.jpg/960px-Francesco_Solimena_-_The_Meeting_of_Pope_Leo_and_Attila_-_WGA21629.jpg",
     "image_width": 960,
-    "image_height": 550
+    "image_height": 550,
+    "wikipedia_views": 687274,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Leo_I"
   },
   {
     "name": "birth-muhammad",
@@ -3051,7 +3592,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 286724,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad_in_Islam"
   },
   {
     "name": "gregory-great-becomes-pope",
@@ -3059,10 +3602,12 @@
     "year": 590,
     "category": "cultural",
     "description": "Gregory I became pope and reformed the Church, expanded papal authority, and sent missionaries to England.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Gregory_the_Great_with_the_Holy_Spirit.jpg/330px-Gregory_the_Great_with_the_Holy_Spirit.jpg",
     "image_width": 330,
-    "image_height": 360
+    "image_height": 360,
+    "wikipedia_views": 343658,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pope_Gregory_I"
   },
   {
     "name": "augustine-arrives-england",
@@ -3070,10 +3615,12 @@
     "year": 597,
     "category": "cultural",
     "description": "Pope Gregory sent Augustine to convert the Anglo-Saxons, establishing Christianity in England.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/330px-Flag_of_England.svg.png",
     "image_width": 330,
-    "image_height": 198
+    "image_height": 198,
+    "wikipedia_views": 158893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Confessions_(Augustine)"
   },
   {
     "name": "arabs-capture-carthage",
@@ -3081,10 +3628,12 @@
     "year": 698,
     "category": "cultural",
     "description": "Arab forces captured and destroyed Carthage, completing the Islamic conquest of North Africa.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Map_of_the_Arab_Diaspora_in_the_World.svg/330px-Map_of_the_Arab_Diaspora_in_the_World.svg.png",
     "image_width": 330,
-    "image_height": 171
+    "image_height": 171,
+    "wikipedia_views": 28910,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Carthage_(698)"
   },
   {
     "name": "harun-al-rashid-caliph",
@@ -3092,8 +3641,10 @@
     "year": 786,
     "category": "cultural",
     "description": "The legendary Abbasid caliph began his reign, presiding over Baghdad's golden age of culture and learning.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gold_dinar_of_Harun_al-Rashid%2C_AH_170-193.jpg/325px-Gold_dinar_of_Harun_al-Rashid%2C_AH_170-193.jpg"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Gold_dinar_of_Harun_al-Rashid%2C_AH_170-193.jpg/325px-Gold_dinar_of_Harun_al-Rashid%2C_AH_170-193.jpg",
+    "wikipedia_views": 234307,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Harun_al-Rashid"
   },
   {
     "name": "caliphate-cordoba-falls",
@@ -3101,10 +3652,12 @@
     "year": 1031,
     "category": "cultural",
     "description": "The Umayyad Caliphate of Córdoba collapsed into competing taifa kingdoms, weakening Islamic Spain.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png/330px-Caliphate_of_C%C3%B3rdoba_under_Almanzor_-_1000_CE.png",
     "image_width": 330,
-    "image_height": 230
+    "image_height": 230,
+    "wikipedia_views": 19780,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_the_Muslim_presence_in_the_Iberian_Peninsula"
   },
   {
     "name": "expulsion-jews-england",
@@ -3115,7 +3668,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/BritLibCottonNeroDiiFol183vPersecutedJews.jpg/330px-BritLibCottonNeroDiiFol183vPersecutedJews.jpg",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 198117,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edict_of_Expulsion"
   },
   {
     "name": "flagellant-movement",
@@ -3123,10 +3678,12 @@
     "year": 1348,
     "category": "cultural",
     "description": "During the Black Death, groups of flagellants roamed Europe publicly whipping themselves seeking divine mercy.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Guardia_Sanframondi_%2831500390952%29.jpg/330px-Guardia_Sanframondi_%2831500390952%29.jpg",
     "image_width": 330,
-    "image_height": 238
+    "image_height": 238,
+    "wikipedia_views": 93547,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Flagellant"
   },
   {
     "name": "birth-martin-luther",
@@ -3134,10 +3691,12 @@
     "year": 1483,
     "category": "cultural",
     "description": "The future Protestant reformer was born in Saxony. His teachings would split Western Christianity.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
     "image_width": 330,
-    "image_height": 522
+    "image_height": 522,
+    "wikipedia_views": 2254,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Martin_Luther's_Birth_House"
   },
   {
     "name": "expulsion-jews-spain",
@@ -3148,7 +3707,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Expulsi%C3%B3n_de_los_jud%C3%ADos.jpg/960px-Expulsi%C3%B3n_de_los_jud%C3%ADos.jpg",
     "image_width": 960,
-    "image_height": 1073
+    "image_height": 1073,
+    "wikipedia_views": 152019,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Expulsion_of_Jews_from_Spain"
   },
   {
     "name": "utopia-published",
@@ -3156,10 +3717,12 @@
     "year": 1516,
     "category": "cultural",
     "description": "Thomas More published his influential work describing an ideal society on a fictional island nation.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tommaso_moro%2C_libellus..._nova_insula_utopia%2C_per_thierry_martens%2C_lovanio_1516_%28ra%2C_bibl._classense.jpg/960px-Tommaso_moro%2C_libellus..._nova_insula_utopia%2C_per_thierry_martens%2C_lovanio_1516_%28ra%2C_bibl._classense.jpg",
     "image_width": 960,
-    "image_height": 728
+    "image_height": 728,
+    "wikipedia_views": 310672,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Utopia"
   },
   {
     "name": "death-leonardo-da-vinci",
@@ -3167,10 +3730,12 @@
     "year": 1519,
     "category": "cultural",
     "description": "The Renaissance polymath died in France, leaving behind masterpieces and notebooks of inventions.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/330px-Francesco_Melzi_-_Portrait_of_Leonardo.png",
     "image_width": 330,
-    "image_height": 473
+    "image_height": 473,
+    "wikipedia_views": 10988,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Leonardo_da_Vinci"
   },
   {
     "name": "dutch-iconoclasm",
@@ -3178,10 +3743,12 @@
     "year": 1566,
     "category": "cultural",
     "description": "Protestant mobs destroyed religious images across the Netherlands in the Beeldenstorm wave of destruction.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dirck_van_Delen_-_Beeldenstorm_in_een_kerk.jpg/960px-Dirck_van_Delen_-_Beeldenstorm_in_een_kerk.jpg",
     "image_width": 960,
-    "image_height": 718
+    "image_height": 718,
+    "wikipedia_views": 40458,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beeldenstorm"
   },
   {
     "name": "el-greco-arrives-spain",
@@ -3189,10 +3756,12 @@
     "year": 1577,
     "category": "cultural",
     "description": "The Greek painter settled in Toledo, where he developed his distinctive elongated, mystical style.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/330px-Bandera_de_Espa%C3%B1a.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 243715,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/El_Greco"
   },
   {
     "name": "death-shakespeare",
@@ -3200,10 +3769,12 @@
     "year": 1616,
     "category": "cultural",
     "description": "William Shakespeare died in Stratford-upon-Avon, leaving behind the greatest body of work in English literature.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/William_Shakespeare_by_John_Taylor%2C_edited.jpg/330px-William_Shakespeare_by_John_Taylor%2C_edited.jpg",
     "image_width": 330,
-    "image_height": 421
+    "image_height": 421,
+    "wikipedia_views": 818761,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hamnet_Shakespeare"
   },
   {
     "name": "death-cervantes",
@@ -3211,10 +3782,12 @@
     "year": 1616,
     "category": "cultural",
     "description": "Miguel de Cervantes, author of Don Quixote, died in Madrid the same year as Shakespeare.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Cervantes_J%C3%A1uregui.jpg/330px-Cervantes_J%C3%A1uregui.jpg",
     "image_width": 330,
-    "image_height": 433
+    "image_height": 433,
+    "wikipedia_views": 370285,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Miguel_de_Cervantes"
   },
   {
     "name": "descartes-discourse-method",
@@ -3222,10 +3795,12 @@
     "year": 1637,
     "category": "cultural",
     "description": "Descartes published his foundational philosophical work containing the famous 'I think, therefore I am.'",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/091717-34-Descartes-Philosophy.jpg/960px-091717-34-Descartes-Philosophy.jpg",
     "image_width": 960,
-    "image_height": 543
+    "image_height": 543,
+    "wikipedia_views": 52843,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Discourse_on_the_Method"
   },
   {
     "name": "hobbes-publishes-leviathan",
@@ -3233,10 +3808,12 @@
     "year": 1651,
     "category": "cultural",
     "description": "Thomas Hobbes published his influential work on political philosophy and the social contract.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Destruction_of_Leviathan.png/960px-Destruction_of_Leviathan.png",
     "image_width": 960,
-    "image_height": 1213
+    "image_height": 1213,
+    "wikipedia_views": 332669,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)"
   },
   {
     "name": "death-oliver-cromwell",
@@ -3244,10 +3821,12 @@
     "year": 1658,
     "category": "cultural",
     "description": "The Lord Protector of the Commonwealth died, leading to the eventual restoration of the monarchy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Oliver_Cromwell_by_Samuel_Cooper.jpg/330px-Oliver_Cromwell_by_Samuel_Cooper.jpg",
     "image_width": 330,
-    "image_height": 401
+    "image_height": 401,
+    "wikipedia_views": 1928782,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oliver_Cromwell"
   },
   {
     "name": "spinoza-ethics-published",
@@ -3255,10 +3834,12 @@
     "year": 1677,
     "category": "cultural",
     "description": "Baruch Spinoza's masterwork on metaphysics and ethics was published posthumously after his death.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Korte_verhandeling_van_God%2C_de_mensch%2C_en_deszelvs_welstand_-_KB_75_G15_-_folios_004v_%28left%29_and_004ar_%28right%29_-_Portrait_of_Spinoza.jpg/960px-Korte_verhandeling_van_God%2C_de_mensch%2C_en_deszelvs_welstand_-_KB_75_G15_-_folios_004v_%28left%29_and_004ar_%28right%29_-_Portrait_of_Spinoza.jpg",
     "image_width": 960,
-    "image_height": 587
+    "image_height": 587,
+    "wikipedia_views": 64195,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spinoza's_Ethics"
   },
   {
     "name": "two-treatises-government",
@@ -3266,10 +3847,12 @@
     "year": 1689,
     "category": "cultural",
     "description": "John Locke published his influential defense of natural rights and limited government.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Locke_treatises_of_government_page.jpg/330px-Locke_treatises_of_government_page.jpg",
     "image_width": 330,
-    "image_height": 506
+    "image_height": 506,
+    "wikipedia_views": 97262,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Two_Treatises_of_Government"
   },
   {
     "name": "death-louis-xiv",
@@ -3277,10 +3860,12 @@
     "year": 1715,
     "category": "cultural",
     "description": "The Sun King died after 72 years on the throne, the longest reign in European history.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_XIV_of_France.jpg/330px-Louis_XIV_of_France.jpg",
     "image_width": 330,
-    "image_height": 469
+    "image_height": 469,
+    "wikipedia_views": 2073638,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_XIV"
   },
   {
     "name": "birth-napoleon",
@@ -3288,10 +3873,12 @@
     "year": 1769,
     "category": "cultural",
     "description": "Napoleon Bonaparte was born in Corsica, one year after France acquired the island from Genoa.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/330px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
     "image_width": 330,
-    "image_height": 550
+    "image_height": 550,
+    "wikipedia_views": 4644346,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Napoleon"
   },
   {
     "name": "gibbon-decline-fall-published",
@@ -3302,7 +3889,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Hylobates_lar_-_Kaeng_Krachan_WB.jpg/330px-Hylobates_lar_-_Kaeng_Krachan_WB.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 196422,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_History_of_the_Decline_and_Fall_of_the_Roman_Empire"
   },
   {
     "name": "burke-reflections-published",
@@ -3310,10 +3899,12 @@
     "year": 1790,
     "category": "cultural",
     "description": "Edmund Burke published his critique of the French Revolution, founding modern conservatism.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Arms_of_the_House_of_de_Burgh.svg/330px-Arms_of_the_House_of_de_Burgh.svg.png",
     "image_width": 330,
-    "image_height": 386
+    "image_height": 386,
+    "wikipedia_views": 57357,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Reflections_on_the_Revolution_in_France"
   },
   {
     "name": "third-partition-poland",
@@ -3324,7 +3915,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Partitions_of_Poland.png/330px-Partitions_of_Poland.png",
     "image_width": 330,
-    "image_height": 259
+    "image_height": 259,
+    "wikipedia_views": 65957,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Partition_of_Poland"
   },
   {
     "name": "birth-charles-darwin",
@@ -3332,10 +3925,12 @@
     "year": 1809,
     "category": "cultural",
     "description": "The future naturalist who developed the theory of evolution was born in Shrewsbury, England.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/330px-Charles_Darwin_seated_crop.jpg",
     "image_width": 330,
-    "image_height": 434
+    "image_height": 434,
+    "wikipedia_views": 79550,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Darwin–Wedgwood_family"
   },
   {
     "name": "death-napoleon",
@@ -3343,10 +3938,12 @@
     "year": 1821,
     "category": "cultural",
     "description": "Napoleon Bonaparte died in exile on Saint Helena, ending an era of European upheaval.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Napoleon_death-Charles_von_Steuben-IMG_1512.JPG/330px-Napoleon_death-Charles_von_Steuben-IMG_1512.JPG",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 37600,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Napoleon"
   },
   {
     "name": "christmas-carol-published",
@@ -3357,7 +3954,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Charles_Dickens-A_Christmas_Carol-Cloth-First_Edition_1843.jpg/330px-Charles_Dickens-A_Christmas_Carol-Cloth-First_Edition_1843.jpg",
     "image_width": 330,
-    "image_height": 504
+    "image_height": 504,
+    "wikipedia_views": 91052,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Christmas_carol"
   },
   {
     "name": "uncle-toms-cabin-published",
@@ -3368,7 +3967,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/UncleTomsCabinCover.jpg/330px-UncleTomsCabinCover.jpg",
     "image_width": 330,
-    "image_height": 573
+    "image_height": 573,
+    "wikipedia_views": 463099,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uncle_Tom's_Cabin"
   },
   {
     "name": "republican-party-founded",
@@ -3377,7 +3978,9 @@
     "category": "cultural",
     "description": "Anti-slavery activists founded the Republican Party in Wisconsin to oppose slavery's expansion.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Principles_of_the_Republican_party_of_the_United_States_of_America_LCCN2003677566.jpg/960px-Principles_of_the_Republican_party_of_the_United_States_of_America_LCCN2003677566.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Principles_of_the_Republican_party_of_the_United_States_of_America_LCCN2003677566.jpg/960px-Principles_of_the_Republican_party_of_the_United_States_of_America_LCCN2003677566.jpg",
+    "wikipedia_views": 3453208,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Republican_Party_(United_States)"
   },
   {
     "name": "das-kapital-published",
@@ -3388,7 +3991,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Zentralbibliothek_Z%C3%BCrich_Das_Kapital_Marx_1867.jpg/330px-Zentralbibliothek_Z%C3%BCrich_Das_Kapital_Marx_1867.jpg",
     "image_width": 330,
-    "image_height": 556
+    "image_height": 556,
+    "wikipedia_views": 307115,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Das_Kapital"
   },
   {
     "name": "queen-victoria-dies",
@@ -3396,10 +4001,12 @@
     "year": 1901,
     "category": "cultural",
     "description": "Queen Victoria died after 63 years on the throne, ending the Victorian era.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Queen_Victoria_by_Bassano.jpg/330px-Queen_Victoria_by_Bassano.jpg",
     "image_width": 330,
-    "image_height": 466
+    "image_height": 466,
+    "wikipedia_views": 78746,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Queen_Victoria"
   },
   {
     "name": "gandhi-non-cooperation-movement",
@@ -3407,10 +4014,12 @@
     "year": 1920,
     "category": "cultural",
     "description": "Mahatma Gandhi launched his first mass civil disobedience campaign against British rule in India.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/330px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 156301,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Non-cooperation_movement_(1919–1922)"
   },
   {
     "name": "communist-party-china-founded",
@@ -3418,10 +4027,12 @@
     "year": 1921,
     "category": "cultural",
     "description": "The CPC was founded in Shanghai with Mao Zedong among its early members.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Danghui.svg/330px-Danghui.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 1184330,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Communist_Party"
   },
   {
     "name": "death-lenin",
@@ -3432,7 +4043,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Lenin%27s_funerals_by_I.Brodsky_%281925%29_detail_01.jpg/330px-Lenin%27s_funerals_by_I.Brodsky_%281925%29_detail_01.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 102005,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Vladimir_Lenin"
   },
   {
     "name": "mein-kampf-published",
@@ -3443,7 +4056,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mein_Kampf_dust_jacket.jpeg/330px-Mein_Kampf_dust_jacket.jpeg",
     "image_width": 330,
-    "image_height": 364
+    "image_height": 364,
+    "wikipedia_views": 1045965,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mein_Kampf"
   },
   {
     "name": "jesse-owens-berlin-olympics",
@@ -3454,7 +4069,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Jesse_Owens_1936.jpg/330px-Jesse_Owens_1936.jpg",
     "image_width": 330,
-    "image_height": 453
+    "image_height": 453,
+    "wikipedia_views": 753774,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jesse_Owens"
   },
   {
     "name": "churchill-iron-curtain-speech",
@@ -3465,7 +4082,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg/330px-Sir_Winston_Churchill_-_19086236948_%28restored%29.jpg",
     "image_width": 330,
-    "image_height": 410
+    "image_height": 410,
+    "wikipedia_views": 1057,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fulton_Speech"
   },
   {
     "name": "un-partition-plan-palestine",
@@ -3476,7 +4095,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/UN_Palestine_Partition_Versions_1947.jpg/330px-UN_Palestine_Partition_Versions_1947.jpg",
     "image_width": 330,
-    "image_height": 684
+    "image_height": 684,
+    "wikipedia_views": 475949,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_Nations_Partition_Plan_for_Palestine"
   },
   {
     "name": "apartheid-begins",
@@ -3487,7 +4108,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Monomotapa_Map.jpg/330px-Monomotapa_Map.jpg",
     "image_width": 330,
-    "image_height": 256
+    "image_height": 256,
+    "wikipedia_views": 1486885,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid"
   },
   {
     "name": "mccarthyism-begins",
@@ -3498,7 +4121,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Anticommunist_Literature_1950s.png/325px-Anticommunist_Literature_1950s.png",
     "image_width": 325,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 844222,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/McCarthyism"
   },
   {
     "name": "stalin-dies",
@@ -3506,10 +4131,12 @@
     "year": 1953,
     "category": "cultural",
     "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Joseph_Stalin_in_1932_%284%29_%28cropped%29%282%29.jpg/330px-Joseph_Stalin_in_1932_%284%29_%28cropped%29%282%29.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 324305,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Joseph_Stalin"
   },
   {
     "name": "mccarthy-hearings",
@@ -3520,7 +4147,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/McCarthy_Cohn.jpg/330px-McCarthy_Cohn.jpg",
     "image_width": 330,
-    "image_height": 226
+    "image_height": 226,
+    "wikipedia_views": 120859,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Army–McCarthy_hearings"
   },
   {
     "name": "silent-spring-published",
@@ -3531,7 +4160,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/a/ac/SilentSpring.jpg",
     "image_width": 266,
-    "image_height": 375
+    "image_height": 375,
+    "wikipedia_views": 229041,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Silent_Spring"
   },
   {
     "name": "first-heart-transplant",
@@ -3542,7 +4173,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/%D0%9F%D0%B5%D1%80%D0%B5%D1%81%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5_%D0%B2_%D0%B3%D1%80%D1%83%D0%B4%D0%BD%D0%BE%D0%B9_%D0%BA%D0%BB%D0%B5%D1%82%D0%BA%D0%B5_%D1%80%D0%B5%D1%86%D0%B8%D0%BF%D0%B8%D0%B5%D0%BD%D1%82%D0%B0.JPG/330px-%D0%9F%D0%B5%D1%80%D0%B5%D1%81%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B5_%D0%B2_%D0%B3%D1%80%D1%83%D0%B4%D0%BD%D0%BE%D0%B9_%D0%BA%D0%BB%D0%B5%D1%82%D0%BA%D0%B5_%D1%80%D0%B5%D1%86%D0%B8%D0%BF%D0%B8%D0%B5%D0%BD%D1%82%D0%B0.JPG",
     "image_width": 330,
-    "image_height": 381
+    "image_height": 381,
+    "wikipedia_views": 67906,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heart_transplantation"
   },
   {
     "name": "death-mao-zedong",
@@ -3550,8 +4183,10 @@
     "year": 1976,
     "category": "cultural",
     "description": "Chairman Mao died, ending the Cultural Revolution and enabling China's economic reforms.",
-    "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/China_1976-026_Beijing.jpg/330px-China_1976-026_Beijing.jpg"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/China_1976-026_Beijing.jpg/330px-China_1976-026_Beijing.jpg",
+    "wikipedia_views": 70605,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Mao_Zedong"
   },
   {
     "name": "year-three-popes",
@@ -3562,7 +4197,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Pope_John_Paul_II_with_President_Jimmy_Carter_at_the_White_House.jpg",
     "image_width": 700,
-    "image_height": 559
+    "image_height": 559,
+    "wikipedia_views": 159169,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_three_popes"
   },
   {
     "name": "first-artificial-heart",
@@ -3570,10 +4207,12 @@
     "year": 1982,
     "category": "cultural",
     "description": "Dr. Barney Clark received the first permanent artificial heart, living 112 days with the device.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/William_DeVries_%28cropped%29.jpg/500px-William_DeVries_%28cropped%29.jpg",
     "image_width": 500,
-    "image_height": 564
+    "image_height": 564,
+    "wikipedia_views": 126238,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Artificial_heart"
   },
   {
     "name": "ayatollah-khomeini-dies",
@@ -3581,10 +4220,12 @@
     "year": 1989,
     "category": "cultural",
     "description": "The leader of Iran's Islamic Revolution died, drawing millions of mourners to his funeral.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Portrait_of_Ruhollah_Khomeini.jpg/330px-Portrait_of_Ruhollah_Khomeini.jpg",
     "image_width": 330,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 2598732,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ruhollah_Khomeini"
   },
   {
     "name": "rio-earth-summit",
@@ -3592,10 +4233,12 @@
     "year": 1992,
     "category": "cultural",
     "description": "The UN Conference on Environment and Development produced agreements on climate and biodiversity.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg/330px-Second_Earth_Summit_was_held_in_Rio_de_Janeiro.jpg",
     "image_width": 330,
-    "image_height": 189
+    "image_height": 189,
+    "wikipedia_views": 91744,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth_Summit"
   },
   {
     "name": "iran-green-movement",
@@ -3603,10 +4246,12 @@
     "year": 2009,
     "category": "cultural",
     "description": "Mass protests erupted in Iran after disputed elections, representing the largest unrest since 1979.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/3rd_Day_-_The_Green_Protest_Rally.jpg/960px-3rd_Day_-_The_Green_Protest_Rally.jpg",
     "image_width": 960,
-    "image_height": 639
+    "image_height": 639,
+    "wikipedia_views": 70817,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iranian_Green_Movement"
   },
   {
     "name": "death-steve-jobs",
@@ -3617,7 +4262,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/330px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
     "image_width": 330,
-    "image_height": 319
+    "image_height": 319,
+    "wikipedia_views": 4544163,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Steve_Jobs"
   },
   {
     "name": "pope-benedict-resigns",
@@ -3628,7 +4275,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Pope_Benedict_XVI%2C_Berlin_%E2%80%93_2011.jpg/500px-Pope_Benedict_XVI%2C_Berlin_%E2%80%93_2011.jpg",
     "image_width": 500,
-    "image_height": 630
+    "image_height": 630,
+    "wikipedia_views": 564830,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Resignation_of_Pope_Benedict_XVI"
   },
   {
     "name": "queen-elizabeth-ii-dies",
@@ -3639,6 +4288,8 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg/330px-Queen_Elizabeth_II_official_portrait_for_1959_tour_%28retouched%29_%28cropped%29_%283-to-4_aspect_ratio%29.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 441701,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Elizabeth_II"
   }
 ]

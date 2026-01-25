@@ -8,7 +8,7 @@ import {
   Era,
   HistoricalEvent,
   ALL_CATEGORIES,
-  ALL_DIFFICULTIES,
+  DEFAULT_DIFFICULTIES,
 } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
@@ -46,7 +46,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(true);
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
-    ...ALL_DIFFICULTIES,
+    ...DEFAULT_DIFFICULTIES,
   ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
@@ -125,7 +125,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     onStart({
       mode: 'daily',
       totalTurns: 7,
-      selectedDifficulties: [...ALL_DIFFICULTIES],
+      selectedDifficulties: [...DEFAULT_DIFFICULTIES],
       selectedCategories: getThemedCategories(dailyTheme),
       selectedEras: getThemedEras(dailyTheme),
       dailySeed,

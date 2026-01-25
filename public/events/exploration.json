@@ -8,7 +8,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/330px-The_Blue_Marble%2C_AS17-148-22727.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 3549561,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth"
   },
   {
     "name": "first-life",
@@ -19,7 +21,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Origin_of_life_stages.svg/330px-Origin_of_life_stages.svg.png",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 158495,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms"
   },
   {
     "name": "fire-mastery",
@@ -30,7 +34,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/330px-Large_bonfire.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 11342229,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash"
   },
   {
     "name": "first-humans",
@@ -41,7 +47,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG",
     "image_width": 330,
-    "image_height": 552
+    "image_height": 552,
+    "wikipedia_views": 2252168,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Human"
   },
   {
     "name": "migration-out-africa",
@@ -52,7 +60,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/330px-Africa_%28orthographic_projection%29.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 226356,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Recent_African_origin_of_modern_humans"
   },
   {
     "name": "domestication-dogs",
@@ -63,7 +73,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Huskiesatrest.jpg/330px-Huskiesatrest.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 255101,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog"
   },
   {
     "name": "agriculture-begins",
@@ -71,10 +83,12 @@
     "year": -10000,
     "category": "exploration",
     "description": "Humans began cultivating crops in the Fertile Crescent, starting the Neolithic Revolution.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/PivotWithDrops.JPG/330px-PivotWithDrops.JPG",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 327979,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
   },
   {
     "name": "agriculture",
@@ -82,10 +96,12 @@
     "year": -10000,
     "category": "exploration",
     "description": "Humans began farming, transforming civilization.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fertile_crescent_Neolithic_B_circa_7500_BC.jpg/330px-Fertile_crescent_Neolithic_B_circa_7500_BC.jpg",
     "image_width": 330,
-    "image_height": 342
+    "image_height": 342,
+    "wikipedia_views": 327979,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
   },
   {
     "name": "domestication-wheat",
@@ -96,7 +112,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 483068,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheat"
   },
   {
     "name": "domestication-horses",
@@ -107,7 +125,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Nokota_Horses_cropped.jpg/330px-Nokota_Horses_cropped.jpg",
     "image_width": 330,
-    "image_height": 227
+    "image_height": 227,
+    "wikipedia_views": 96228,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_horse"
   },
   {
     "name": "wheel-invented",
@@ -118,7 +138,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg/330px-Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 227701,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheel"
   },
   {
     "name": "invention-sail",
@@ -129,7 +151,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Chesapeake.jpg/330px-Chesapeake.jpg",
     "image_width": 330,
-    "image_height": 290
+    "image_height": 290,
+    "wikipedia_views": 54655,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sail"
   },
   {
     "name": "invention-glass",
@@ -140,7 +164,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fassade_Wilhelmstrasse_65%2C_Berlin-Mitte%2C_160417%2C_ako.jpg/330px-Fassade_Wilhelmstrasse_65%2C_Berlin-Mitte%2C_160417%2C_ako.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 23797,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Flexible_glass"
   },
   {
     "name": "bronze-discovered",
@@ -151,7 +177,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg",
     "image_width": 330,
-    "image_height": 344
+    "image_height": 344,
+    "wikipedia_views": 828417,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age"
   },
   {
     "name": "writing-invention",
@@ -159,10 +187,12 @@
     "year": -3200,
     "category": "exploration",
     "description": "Sumerians developed cuneiform, the first writing system.",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/330px-Rosetta_Stone.JPG",
     "image_width": 330,
-    "image_height": 386
+    "image_height": 386,
+    "wikipedia_views": 237394,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing"
   },
   {
     "name": "iron-smelting",
@@ -173,7 +203,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg",
     "image_width": 330,
-    "image_height": 256
+    "image_height": 256,
+    "wikipedia_views": 666073,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iron_Age"
   },
   {
     "name": "polynesian-expansion",
@@ -184,7 +216,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pacific_Culture_Areas_%28Philippines%2BVanuatu_Correction%29.svg/330px-Pacific_Culture_Areas_%28Philippines%2BVanuatu_Correction%29.svg.png",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 457204,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Austronesian_peoples"
   },
   {
     "name": "phoenician-circumnavigation",
@@ -192,10 +226,12 @@
     "year": -600,
     "category": "exploration",
     "description": "Phoenician sailors reportedly sailed around the entire African continent.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Phoenician_maritime_expansions_across_the_Mediterranean.jpg/330px-Phoenician_maritime_expansions_across_the_Mediterranean.jpg",
     "image_width": 330,
-    "image_height": 183
+    "image_height": 183,
+    "wikipedia_views": 1024800,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenicia"
   },
   {
     "name": "thales-eclipse",
@@ -203,10 +239,12 @@
     "year": -585,
     "category": "exploration",
     "description": "Thales of Miletus predicted a solar eclipse, marking a triumph of early science.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/330px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg",
     "image_width": 330,
-    "image_height": 502
+    "image_height": 502,
+    "wikipedia_views": 45101,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eclipse_of_Thales"
   },
   {
     "name": "anaximander-world-map",
@@ -214,10 +252,12 @@
     "year": -550,
     "category": "exploration",
     "description": "The Greek philosopher created one of the first maps of the known world.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pietro_Bellotti_%28attr%29_Anaximander.jpg/330px-Pietro_Bellotti_%28attr%29_Anaximander.jpg",
     "image_width": 330,
-    "image_height": 351
+    "image_height": 351,
+    "wikipedia_views": 881893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_map"
   },
   {
     "name": "pythagoras-theorem",
@@ -228,7 +268,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/330px-Pythagorean.svg.png",
     "image_width": 330,
-    "image_height": 301
+    "image_height": 301,
+    "wikipedia_views": 394200,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem"
   },
   {
     "name": "hanno-africa",
@@ -236,10 +278,12 @@
     "year": -500,
     "category": "exploration",
     "description": "The Carthaginian navigator explored the west coast of Africa.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Carthage_323_BC.png/330px-Carthage_323_BC.png",
     "image_width": 330,
-    "image_height": 189
+    "image_height": 189,
+    "wikipedia_views": 193381,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hanno_the_Navigator"
   },
   {
     "name": "herodotus-histories",
@@ -250,7 +294,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg/330px-Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 151498,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Histories_(Herodotus)"
   },
   {
     "name": "hippocrates-medicine",
@@ -261,7 +307,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Hippocrates.jpg/330px-Hippocrates.jpg",
     "image_width": 330,
-    "image_height": 485
+    "image_height": 485,
+    "wikipedia_views": 360855,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hippocrates"
   },
   {
     "name": "alexander-india",
@@ -272,7 +320,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AlexanderConquestsInIndia.jpg/330px-AlexanderConquestsInIndia.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 3606662,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great"
   },
   {
     "name": "pytheas-arctic",
@@ -280,10 +330,12 @@
     "year": -325,
     "category": "exploration",
     "description": "The Greek explorer sailed to Britain and possibly reached the Arctic Circle.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Parisinus_gr_1397_f.162_pytheas_of_massalia_from_Strabo_7.3.1.jpg/330px-Parisinus_gr_1397_f.162_pytheas_of_massalia_from_Strabo_7.3.1.jpg",
     "image_width": 330,
-    "image_height": 139
+    "image_height": 139,
+    "wikipedia_views": 97360,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pytheas"
   },
   {
     "name": "archimedes-principle",
@@ -294,7 +346,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/330px-Domenico-Fetti_Archimedes_1620.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 181013,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Buoyancy"
   },
   {
     "name": "eratosthenes-earth",
@@ -305,7 +359,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Globe_Atlantic.svg/330px-Globe_Atlantic.svg.png",
     "image_width": 330,
-    "image_height": 333
+    "image_height": 333,
+    "wikipedia_views": 171259,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth's_circumference"
   },
   {
     "name": "hero-steam-engine",
@@ -313,10 +369,12 @@
     "year": 50,
     "category": "exploration",
     "description": "Hero of Alexandria invented a primitive steam engine, the aeolipile.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Aeolipile_illustration.png/330px-Aeolipile_illustration.png",
     "image_width": 330,
-    "image_height": 500
+    "image_height": 500,
+    "wikipedia_views": 124430,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aeolipile"
   },
   {
     "name": "buddhism-spreads-china",
@@ -327,7 +385,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Leshan_Giant_Buddha_%281%29.jpg/330px-Leshan_Giant_Buddha_%281%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 61984,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Buddhism_in_China"
   },
   {
     "name": "paper-invented",
@@ -338,7 +398,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif",
     "image_width": 330,
-    "image_height": 471
+    "image_height": 471,
+    "wikipedia_views": 353605,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper"
   },
   {
     "name": "paper-invented-china",
@@ -346,10 +408,12 @@
     "year": 105,
     "category": "exploration",
     "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Various_products_made_from_paper.JPG/330px-Various_products_made_from_paper.JPG",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 353605,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper"
   },
   {
     "name": "ptolemy-almagest",
@@ -360,7 +424,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu/page1-320px-Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu.jpg",
     "image_width": 319,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 82064,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Almagest"
   },
   {
     "name": "compass-invented",
@@ -368,10 +434,12 @@
     "year": 206,
     "category": "exploration",
     "description": "Chinese inventors created the first magnetic compass for navigation.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2016_Busola.JPG/330px-2016_Busola.JPG",
     "image_width": 330,
-    "image_height": 297
+    "image_height": 297,
+    "wikipedia_views": 306974,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Compass"
   },
   {
     "name": "printing-invented-china",
@@ -382,7 +450,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 110006,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing"
   },
   {
     "name": "al-khwarizmi-algebra",
@@ -393,7 +463,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg/330px-Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 383339,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Khwarizmi"
   },
   {
     "name": "gunpowder-invented",
@@ -404,7 +476,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Black_Powder-1.JPG/330px-Black_Powder-1.JPG",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 136729,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires"
   },
   {
     "name": "vikings-iceland",
@@ -415,7 +489,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/The_Norwegians_land_in_Iceland_year_872.jpg/330px-The_Norwegians_land_in_Iceland_year_872.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 80354,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Settlement_of_Iceland"
   },
   {
     "name": "vikings-greenland",
@@ -426,7 +502,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/330px-Flag_of_Greenland.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 81948,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlements_in_Greenland"
   },
   {
     "name": "viking-america",
@@ -437,7 +515,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Authentic_Viking_recreation.jpg/330px-Authentic_Viking_recreation.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 81952,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlement_of_North_America"
   },
   {
     "name": "movable-type-china",
@@ -448,7 +528,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Edit_Entry_-_Movable_Type_401.png/330px-Edit_Entry_-_Movable_Type_401.png",
     "image_width": 330,
-    "image_height": 393
+    "image_height": 393,
+    "wikipedia_views": 114823,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Movable_type"
   },
   {
     "name": "fibonacci-arabic-numerals",
@@ -459,7 +541,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Leonardo_Fibonacci.JPG/330px-Leonardo_Fibonacci.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 288956,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fibonacci"
   },
   {
     "name": "roger-bacon-scientific-method",
@@ -467,10 +551,12 @@
     "year": 1267,
     "category": "exploration",
     "description": "The English philosopher advocated for empirical observation in science.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Roger-bacon-statue.jpg/330px-Roger-bacon-statue.jpg",
     "image_width": 330,
-    "image_height": 327
+    "image_height": 327,
+    "wikipedia_views": 638006,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scientific_method"
   },
   {
     "name": "eyeglasses-invented",
@@ -481,7 +567,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/2023_Okulary_korekcyjne.jpg/330px-2023_Okulary_korekcyjne.jpg",
     "image_width": 330,
-    "image_height": 231
+    "image_height": 231,
+    "wikipedia_views": 206712,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Glasses"
   },
   {
     "name": "ibn-battuta-travels",
@@ -492,7 +580,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg/330px-Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg",
     "image_width": 330,
-    "image_height": 476
+    "image_height": 476,
+    "wikipedia_views": 486670,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ibn_Battuta"
   },
   {
     "name": "tenochtitlan",
@@ -503,7 +593,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Painting_of_Tenochtitlan-Tlatelolco_on_Lake_Texcoco_%289755215791%29.jpg/330px-Painting_of_Tenochtitlan-Tlatelolco_on_Lake_Texcoco_%289755215791%29.jpg",
     "image_width": 330,
-    "image_height": 173
+    "image_height": 173,
+    "wikipedia_views": 584360,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenochtitlan"
   },
   {
     "name": "zheng-he-voyages",
@@ -511,10 +603,12 @@
     "year": 1405,
     "category": "exploration",
     "description": "The Chinese admiral began massive naval expeditions across the Indian Ocean.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/2016_Malakka%2C_Stadhuys_%2809%29.jpg/330px-2016_Malakka%2C_Stadhuys_%2809%29.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 82996,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages"
   },
   {
     "name": "chinese-discover-america-theory",
@@ -522,10 +616,12 @@
     "year": 1421,
     "category": "exploration",
     "description": "Some historians claim Chinese fleets explored the Americas before Columbus.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Viking_landing.jpg/330px-Viking_landing.jpg",
     "image_width": 330,
-    "image_height": 223
+    "image_height": 223,
+    "wikipedia_views": 969153,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/China–United_States_trade_war"
   },
   {
     "name": "gutenberg-printing",
@@ -536,7 +632,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/PrintMus_038.jpg/330px-PrintMus_038.jpg",
     "image_width": 330,
-    "image_height": 416
+    "image_height": 416,
+    "wikipedia_views": 432507,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing_press"
   },
   {
     "name": "portuguese-cape-verde",
@@ -544,10 +642,12 @@
     "year": 1456,
     "category": "exploration",
     "description": "Portuguese explorers discovered the uninhabited Cape Verde islands.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Cape_Verde.svg/330px-Flag_of_Cape_Verde.svg.png",
     "image_width": 330,
-    "image_height": 195
+    "image_height": 195,
+    "wikipedia_views": 36050,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_Cape_Verde"
   },
   {
     "name": "dias-cape-good-hope",
@@ -558,7 +658,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG/330px-Bartolomeu_Dias%2C_South_Africa_House_%28cut%29.JPG",
     "image_width": 330,
-    "image_height": 733
+    "image_height": 733,
+    "wikipedia_views": 861859,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Town"
   },
   {
     "name": "columbus-americas",
@@ -569,7 +671,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/330px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
     "image_width": 330,
-    "image_height": 399
+    "image_height": 399,
+    "wikipedia_views": 886902,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chris_Columbus_(filmmaker)"
   },
   {
     "name": "cabot-north-america",
@@ -580,7 +684,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/JohnCabotPainting.jpg/330px-JohnCabotPainting.jpg",
     "image_width": 330,
-    "image_height": 444
+    "image_height": 444,
+    "wikipedia_views": 273482,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Cabot"
   },
   {
     "name": "vasco-da-gama-india",
@@ -591,7 +697,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/330px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
     "image_width": 330,
-    "image_height": 448
+    "image_height": 448,
+    "wikipedia_views": 79100,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_da_Gama,_Goa"
   },
   {
     "name": "cabral-brazil",
@@ -602,7 +710,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pedro_%C3%81lvares_Cabral.jpg/330px-Pedro_%C3%81lvares_Cabral.jpg",
     "image_width": 330,
-    "image_height": 488
+    "image_height": 488,
+    "wikipedia_views": 39397,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Discovery_of_Brazil"
   },
   {
     "name": "balboa-pacific",
@@ -613,7 +723,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Retrato_de_Vasco_Nu%C3%B1ez_de_Balboa_%281475-1517%29_-_An%C3%B3nimo.jpg/330px-Retrato_de_Vasco_Nu%C3%B1ez_de_Balboa_%281475-1517%29_-_An%C3%B3nimo.jpg",
     "image_width": 330,
-    "image_height": 442
+    "image_height": 442,
+    "wikipedia_views": 121439,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa"
   },
   {
     "name": "ponce-de-leon-florida",
@@ -624,7 +736,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Juan_Ponce_de_Le%C3%B3n.jpg/330px-Juan_Ponce_de_Le%C3%B3n.jpg",
     "image_width": 330,
-    "image_height": 429
+    "image_height": 429,
+    "wikipedia_views": 340792,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Ponce_de_León"
   },
   {
     "name": "cortes-meets-aztecs",
@@ -635,7 +749,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg/330px-Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg",
     "image_width": 330,
-    "image_height": 389
+    "image_height": 389,
+    "wikipedia_views": 378606,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire"
   },
   {
     "name": "magellan-circumnavigation",
@@ -646,7 +762,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png/330px-Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png",
     "image_width": 330,
-    "image_height": 201
+    "image_height": 201,
+    "wikipedia_views": 272959,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition"
   },
   {
     "name": "pizarro-meets-incas",
@@ -657,7 +775,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Portrait_of_Francisco_Pizarro.jpg/330px-Portrait_of_Francisco_Pizarro.jpg",
     "image_width": 330,
-    "image_height": 425
+    "image_height": 425,
+    "wikipedia_views": 289742,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Pizarro"
   },
   {
     "name": "cartier-st-lawrence",
@@ -668,7 +788,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jacques_Cartier_1851-1852.jpg/330px-Jacques_Cartier_1851-1852.jpg",
     "image_width": 330,
-    "image_height": 443
+    "image_height": 443,
+    "wikipedia_views": 221576,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacques_Cartier"
   },
   {
     "name": "de-soto-mississippi",
@@ -679,7 +801,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/De_Soto_by_Telfer_%26_Sartain.jpg/330px-De_Soto_by_Telfer_%26_Sartain.jpg",
     "image_width": 330,
-    "image_height": 391
+    "image_height": 391,
+    "wikipedia_views": 153166,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hernando_de_Soto"
   },
   {
     "name": "copernicus-heliocentric",
@@ -690,7 +814,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/330px-Nikolaus_Kopernikus_MOT.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 252248,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliocentrism"
   },
   {
     "name": "vesalius-anatomy",
@@ -701,7 +827,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg/330px-Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg",
     "image_width": 330,
-    "image_height": 408
+    "image_height": 408,
+    "wikipedia_views": 103767,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Andreas_Vesalius"
   },
   {
     "name": "tycho-brahe-observatory",
@@ -712,7 +840,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif/lossy-page1-320px-Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif.jpg",
     "image_width": 320,
-    "image_height": 394
+    "image_height": 394,
+    "wikipedia_views": 308640,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tycho_Brahe"
   },
   {
     "name": "drake-circumnavigation",
@@ -723,7 +853,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/330px-Gheeraerts_Francis_Drake_1591.jpg",
     "image_width": 330,
-    "image_height": 427
+    "image_height": 427,
+    "wikipedia_views": 112995,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Circumnavigation"
   },
   {
     "name": "microscope-invented",
@@ -734,7 +866,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ukrainian_microscope_%28cropped%29.jpg/330px-Ukrainian_microscope_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 331
+    "image_height": 331,
+    "wikipedia_views": 172750,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Microscope"
   },
   {
     "name": "barents-arctic",
@@ -742,10 +876,12 @@
     "year": 1596,
     "category": "exploration",
     "description": "Willem Barents explored the Arctic Ocean seeking a northeast passage.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Willem_Barents_%281883%29.png/330px-Willem_Barents_%281883%29.png",
     "image_width": 330,
-    "image_height": 426
+    "image_height": 426,
+    "wikipedia_views": 84720,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Arctic_expeditions"
   },
   {
     "name": "dutch-reach-australia",
@@ -756,7 +892,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Door_zone_closed.jpg/330px-Door_zone_closed.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 38571,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/European_exploration_of_Australia"
   },
   {
     "name": "jamestown",
@@ -765,7 +903,9 @@
     "category": "exploration",
     "description": "English settlers established the first permanent settlement in North America.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Jamestown_Church_Tower_2006.jpg/330px-Jamestown_Church_Tower_2006.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Jamestown_Church_Tower_2006.jpg/330px-Jamestown_Church_Tower_2006.jpg",
+    "wikipedia_views": 515430,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia"
   },
   {
     "name": "telescope-invented",
@@ -776,7 +916,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/100inchHooker.jpg/330px-100inchHooker.jpg",
     "image_width": 330,
-    "image_height": 538
+    "image_height": 538,
+    "wikipedia_views": 75550,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
   },
   {
     "name": "hudson-river",
@@ -787,7 +929,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/HenryHudson.jpg/330px-HenryHudson.jpg",
     "image_width": 330,
-    "image_height": 356
+    "image_height": 356,
+    "wikipedia_views": 447463,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hudson_River"
   },
   {
     "name": "galileo-telescope",
@@ -798,7 +942,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-320px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
     "image_width": 320,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 1314302,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Galileo_Galilei"
   },
   {
     "name": "kepler-laws",
@@ -809,7 +955,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kepler_laws_diagram.svg/330px-Kepler_laws_diagram.svg.png",
     "image_width": 330,
-    "image_height": 354
+    "image_height": 354,
+    "wikipedia_views": 323490,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion"
   },
   {
     "name": "galileo-jupiter-moons",
@@ -820,7 +968,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-320px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
     "image_width": 320,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 159685,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Galilean_moons"
   },
   {
     "name": "mayflower",
@@ -831,7 +981,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg/330px-Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg",
     "image_width": 330,
-    "image_height": 213
+    "image_height": 213,
+    "wikipedia_views": 688859,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower"
   },
   {
     "name": "harvey-circulation",
@@ -842,7 +994,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Harvey_2.jpg/330px-William_Harvey_2.jpg",
     "image_width": 330,
-    "image_height": 389
+    "image_height": 389,
+    "wikipedia_views": 97738,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Harvey"
   },
   {
     "name": "tasman-australia",
@@ -853,7 +1007,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Abel_Tasman_Navigateur_en_Australie_%28cropped%29.jpg/330px-Abel_Tasman_Navigateur_en_Australie_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 156847,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abel_Tasman"
   },
   {
     "name": "torricelli-barometer",
@@ -864,7 +1020,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg/330px-Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg",
     "image_width": 330,
-    "image_height": 443
+    "image_height": 443,
+    "wikipedia_views": 148378,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barometer"
   },
   {
     "name": "boyle-law",
@@ -875,7 +1033,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Boyles_Law_animated.gif/330px-Boyles_Law_animated.gif",
     "image_width": 330,
-    "image_height": 250
+    "image_height": 250,
+    "wikipedia_views": 191047,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boyle's_law"
   },
   {
     "name": "hooke-discovers-cells",
@@ -886,7 +1046,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Portrait_of_a_Mathematician_1680c.jpg/330px-Portrait_of_a_Mathematician_1680c.jpg",
     "image_width": 330,
-    "image_height": 408
+    "image_height": 408,
+    "wikipedia_views": 488074,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cell_(biology)"
   },
   {
     "name": "newton-gravity",
@@ -897,7 +1059,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
     "image_width": 330,
-    "image_height": 397
+    "image_height": 397,
+    "wikipedia_views": 3028966,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_Newton"
   },
   {
     "name": "leeuwenhoek-bacteria",
@@ -908,7 +1072,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/E._coli_Bacteria_%287316101966%29.jpg/330px-E._coli_Bacteria_%287316101966%29.jpg",
     "image_width": 330,
-    "image_height": 278
+    "image_height": 278,
+    "wikipedia_views": 21826,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Purple_bacteria"
   },
   {
     "name": "great-comet-1680",
@@ -916,10 +1082,12 @@
     "year": 1680,
     "category": "exploration",
     "description": "German astronomer Gottfried Kirch discovered the Great Comet of 1680, the first comet discovered by telescope.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg/330px-Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg",
     "image_width": 330,
-    "image_height": 217
+    "image_height": 217,
+    "wikipedia_views": 30550,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Comet_of_1680"
   },
   {
     "name": "la-salle-mississippi",
@@ -930,7 +1098,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cavelier_de_la_salle.jpg/330px-Cavelier_de_la_salle.jpg",
     "image_width": 330,
-    "image_height": 401
+    "image_height": 401,
+    "wikipedia_views": 90342,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/René-Robert_Cavelier,_Sieur_de_La_Salle"
   },
   {
     "name": "newton-principia",
@@ -938,10 +1108,12 @@
     "year": 1687,
     "category": "exploration",
     "description": "Newton published his laws of motion and universal gravitation.",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_Principia_title_page.png/330px-Newton%27s_Principia_title_page.png",
     "image_width": 330,
-    "image_height": 457
+    "image_height": 457,
+    "wikipedia_views": 217644,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Philosophiæ_Naturalis_Principia_Mathematica"
   },
   {
     "name": "first-paper-money-americas",
@@ -949,10 +1121,12 @@
     "year": 1690,
     "category": "exploration",
     "description": "The colony of Massachusetts issued the first paper money in the Americas.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/330px-Americas_%28orthographic_projection%29.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 59110,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper_money"
   },
   {
     "name": "first-newspaper-americas",
@@ -960,10 +1134,12 @@
     "year": 1690,
     "category": "exploration",
     "description": "Publick Occurrences Both Forreign and Domestick, the first newspaper in the Americas, was published.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg/330px-Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg",
     "image_width": 330,
-    "image_height": 506
+    "image_height": 506,
+    "wikipedia_views": 29727,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_American_newspapers"
   },
   {
     "name": "dampier-circumnavigation",
@@ -971,10 +1147,12 @@
     "year": 1691,
     "category": "exploration",
     "description": "William Dampier became the first person to circumnavigate the world three times.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dampier-portrait.jpg/330px-Dampier-portrait.jpg",
     "image_width": 330,
-    "image_height": 400
+    "image_height": 400,
+    "wikipedia_views": 67017,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier"
   },
   {
     "name": "dampier-new-britain",
@@ -982,10 +1160,12 @@
     "year": 1700,
     "category": "exploration",
     "description": "William Dampier became the first European to circumnavigate New Britain, discovering it was an island.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Newbritain_lrg.jpg/330px-Newbritain_lrg.jpg",
     "image_width": 330,
-    "image_height": 200
+    "image_height": 200,
+    "wikipedia_views": 67017,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier"
   },
   {
     "name": "bering-strait",
@@ -996,7 +1176,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vitus_Bering_reconstruction.jpg/330px-Vitus_Bering_reconstruction.jpg",
     "image_width": 330,
-    "image_height": 331
+    "image_height": 331,
+    "wikipedia_views": 212055,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beringia"
   },
   {
     "name": "first-synagogue-nyc",
@@ -1004,10 +1186,12 @@
     "year": 1730,
     "category": "exploration",
     "description": "Shearith Israel, the first synagogue in New York City, was dedicated.",
-    "difficulty": "medium",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Congregation_Shearith_Israel_001.JPG/330px-Congregation_Shearith_Israel_001.JPG",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 388852,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/New_York_City_synagogue_tunnel_incident"
   },
   {
     "name": "linnaeus-taxonomy",
@@ -1018,7 +1202,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif/lossy-page1-320px-Carl_von_Linn%C3%A9%2C_1707-1778%2C_botanist%2C_professor_%28Alexander_Roslin%29_-_Nationalmuseum_-_15723_%28cropped%29.tif.jpg",
     "image_width": 320,
-    "image_height": 389
+    "image_height": 389,
+    "wikipedia_views": 768709,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Taxonomy_(biology)"
   },
   {
     "name": "franklin-kite-experiment",
@@ -1029,7 +1215,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg/330px-Benjamin_West%2C_English_%28born_America%29_-_Benjamin_Franklin_Drawing_Electricity_from_the_Sky_-_Google_Art_Project.jpg",
     "image_width": 330,
-    "image_height": 442
+    "image_height": 442,
+    "wikipedia_views": 60130,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kite_experiment"
   },
   {
     "name": "cook-australia",
@@ -1040,7 +1228,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
     "image_width": 330,
-    "image_height": 414
+    "image_height": 414,
+    "wikipedia_views": 1135142,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/James_Cook"
   },
   {
     "name": "oxygen-discovered",
@@ -1051,7 +1241,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Liquid_oxygen_in_a_beaker_4.jpg/330px-Liquid_oxygen_in_a_beaker_4.jpg",
     "image_width": 330,
-    "image_height": 402
+    "image_height": 402,
+    "wikipedia_views": 705003,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oxygen"
   },
   {
     "name": "lavoisier-oxygen",
@@ -1062,7 +1254,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg/330px-David_-_Portrait_of_Monsieur_Lavoisier_%28cropped%292.jpg",
     "image_width": 330,
-    "image_height": 437
+    "image_height": 437,
+    "wikipedia_views": 295219,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Antoine_Lavoisier"
   },
   {
     "name": "uranus-discovered",
@@ -1073,7 +1267,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Uranus_Voyager2_color_calibrated.png/330px-Uranus_Voyager2_color_calibrated.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 915636,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uranus"
   },
   {
     "name": "bounty-mutiny",
@@ -1084,7 +1280,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mutiny_HMS_Bounty.jpg/330px-Mutiny_HMS_Bounty.jpg",
     "image_width": 330,
-    "image_height": 240
+    "image_height": 240,
+    "wikipedia_views": 484488,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mutiny_on_the_Bounty"
   },
   {
     "name": "first-us-census",
@@ -1092,10 +1290,12 @@
     "year": 1790,
     "category": "exploration",
     "description": "The first United States census was authorized by Congress.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Seal_of_the_United_States_Census_Bureau.svg/330px-Seal_of_the_United_States_Census_Bureau.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 550092,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2020_United_States_census"
   },
   {
     "name": "vaccination-invented",
@@ -1106,7 +1306,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Smallpox_vaccine.jpg/330px-Smallpox_vaccine.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 203225,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Smallpox_vaccine"
   },
   {
     "name": "rosetta-stone",
@@ -1117,7 +1319,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/330px-Rosetta_Stone.JPG",
     "image_width": 330,
-    "image_height": 386
+    "image_height": 386,
+    "wikipedia_views": 879890,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rosetta_Stone"
   },
   {
     "name": "humboldt-south-america",
@@ -1128,7 +1332,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg/330px-Stieler%2C_Joseph_Karl_-_Alexander_von_Humboldt_-_1843.jpg",
     "image_width": 330,
-    "image_height": 407
+    "image_height": 407,
+    "wikipedia_views": 246187,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt"
   },
   {
     "name": "volta-battery",
@@ -1139,7 +1345,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Alessandro_Volta.jpeg/330px-Alessandro_Volta.jpeg",
     "image_width": 330,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 169032,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alessandro_Volta"
   },
   {
     "name": "dalton-atomic-theory",
@@ -1148,7 +1356,9 @@
     "category": "exploration",
     "description": "John Dalton proposed that all matter is composed of atoms.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/John_Dalton_by_Thomas_Phillips%2C_1835.jpg/330px-John_Dalton_by_Thomas_Phillips%2C_1835.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/John_Dalton_by_Thomas_Phillips%2C_1835.jpg/330px-John_Dalton_by_Thomas_Phillips%2C_1835.jpg",
+    "wikipedia_views": 206889,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Dalton"
   },
   {
     "name": "lewis-clark-expedition",
@@ -1159,7 +1369,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lewis_and_Clark.jpg/330px-Lewis_and_Clark.jpg",
     "image_width": 330,
-    "image_height": 249
+    "image_height": 249,
+    "wikipedia_views": 648538,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lewis_and_Clark_Expedition"
   },
   {
     "name": "mungo-park-niger",
@@ -1167,10 +1379,12 @@
     "year": 1805,
     "category": "exploration",
     "description": "The Scottish explorer traced the course of the Niger River in Africa.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Mungo_Park_portrait_bw.jpg/330px-Mungo_Park_portrait_bw.jpg",
     "image_width": 330,
-    "image_height": 365
+    "image_height": 365,
+    "wikipedia_views": 63915,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mungo_Park_(explorer)"
   },
   {
     "name": "electromagnetism-discovered",
@@ -1181,7 +1395,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Plasma_globe_60th.jpg/330px-Plasma_globe_60th.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 281179,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Electromagnetism"
   },
   {
     "name": "antarctica-sighted",
@@ -1189,10 +1405,12 @@
     "year": 1820,
     "category": "exploration",
     "description": "Russian, British, and American expeditions first sighted the Antarctic continent.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/James_Weddell_Expedition.jpg/330px-James_Weddell_Expedition.jpg",
     "image_width": 330,
-    "image_height": 196
+    "image_height": 196,
+    "wikipedia_views": 1493430,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Antarctica"
   },
   {
     "name": "venus-de-milo-discovered",
@@ -1200,10 +1418,12 @@
     "year": 1820,
     "category": "exploration",
     "description": "The famous ancient Greek statue Venus de Milo was discovered on the Aegean island of Milos.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_%3B_N_527_%3B_Ma_399.jpg/330px-V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_%3B_N_527_%3B_Ma_399.jpg",
     "image_width": 330,
-    "image_height": 558
+    "image_height": 558,
+    "wikipedia_views": 551022,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_de_Milo"
   },
   {
     "name": "faraday-electric-motor",
@@ -1214,7 +1434,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Michael_Faraday_sitting_crop.jpg/330px-Michael_Faraday_sitting_crop.jpg",
     "image_width": 330,
-    "image_height": 436
+    "image_height": 436,
+    "wikipedia_views": 29116,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Homopolar_motor"
   },
   {
     "name": "hieroglyphics-decoded",
@@ -1225,7 +1447,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg/330px-Jean-Fran%C3%A7ois_Champollion%2C_by_L%C3%A9on_Cogniet.jpg",
     "image_width": 330,
-    "image_height": 405
+    "image_height": 405,
+    "wikipedia_views": 679367,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Egyptian_hieroglyphs"
   },
   {
     "name": "dinosaur-fossils",
@@ -1233,10 +1457,12 @@
     "year": 1824,
     "category": "exploration",
     "description": "William Buckland described Megalosaurus, the first dinosaur to be scientifically named.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Duria_Antiquior.jpg/330px-Duria_Antiquior.jpg",
     "image_width": 330,
-    "image_height": 228
+    "image_height": 228,
+    "wikipedia_views": 12314,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fossil_track"
   },
   {
     "name": "ohm-law",
@@ -1247,7 +1473,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/PSM_V83_D609_Ohm_resistance_schematic.png",
     "image_width": 320,
-    "image_height": 448
+    "image_height": 448,
+    "wikipedia_views": 512234,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohm's_law"
   },
   {
     "name": "darwin-beagle",
@@ -1255,10 +1483,12 @@
     "year": 1831,
     "category": "exploration",
     "description": "Darwin's voyage led to his theory of evolution.",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Charles_Darwin_seated_crop.jpg/330px-Charles_Darwin_seated_crop.jpg",
     "image_width": 330,
-    "image_height": 434
+    "image_height": 434,
+    "wikipedia_views": 42500,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_voyage_of_HMS_Beagle"
   },
   {
     "name": "cell-theory",
@@ -1267,7 +1497,9 @@
     "category": "exploration",
     "description": "Schleiden and Schwann formulated the theory that all living things are made of cells.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cells_from_onion_epidermis.jpg/330px-Cells_from_onion_epidermis.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Cells_from_onion_epidermis.jpg/330px-Cells_from_onion_epidermis.jpg",
+    "wikipedia_views": 140096,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cell_theory"
   },
   {
     "name": "joule-thermodynamics",
@@ -1275,10 +1507,12 @@
     "year": 1843,
     "category": "exploration",
     "description": "James Joule established the first law of thermodynamics.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Joule_James_sitting.jpg/330px-Joule_James_sitting.jpg",
     "image_width": 330,
-    "image_height": 437
+    "image_height": 437,
+    "wikipedia_views": 6947,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joule_effect"
   },
   {
     "name": "neptune-discovered",
@@ -1289,7 +1523,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/330px-Neptune_Voyager2_color_calibrated.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 1052694,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neptune"
   },
   {
     "name": "gorillas-discovered",
@@ -1300,7 +1536,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/330px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
     "image_width": 330,
-    "image_height": 497
+    "image_height": 497,
+    "wikipedia_views": 1012964,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gorilla"
   },
   {
     "name": "foucault-pendulum",
@@ -1311,7 +1549,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Panth%C3%A9on_Pendule_de_Foucault2.JPG/330px-Panth%C3%A9on_Pendule_de_Foucault2.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 187464,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
   },
   {
     "name": "perry-expedition-japan",
@@ -1319,10 +1559,12 @@
     "year": 1853,
     "category": "exploration",
     "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Japanese_1854_print_Commodore_Perry.jpg/330px-Japanese_1854_print_Commodore_Perry.jpg",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 212,
+    "wikipedia_views": 198413,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Perry_Expedition"
   },
   {
     "name": "bunsen-burner",
@@ -1333,7 +1575,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mechero_Bunsen.jpg/330px-Mechero_Bunsen.jpg",
     "image_width": 330,
-    "image_height": 462
+    "image_height": 462,
+    "wikipedia_views": 87218,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bunsen_burner"
   },
   {
     "name": "source-of-nile",
@@ -1341,10 +1585,12 @@
     "year": 1858,
     "category": "exploration",
     "description": "John Hanning Speke identified Lake Victoria as the source of the Nile.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg/330px-Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 929059,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nile"
   },
   {
     "name": "burke-wills-australia",
@@ -1355,7 +1601,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Burke_and_Wills_Track.png/330px-Burke_and_Wills_Track.png",
     "image_width": 330,
-    "image_height": 592
+    "image_height": 592,
+    "wikipedia_views": 70153,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burke_and_Wills_expedition"
   },
   {
     "name": "pasteur-germ-theory",
@@ -1366,7 +1614,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/330px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
     "image_width": 330,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 230253,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease"
   },
   {
     "name": "pasteurization",
@@ -1377,7 +1627,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/330px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
     "image_width": 330,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 277204,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pasteurization"
   },
   {
     "name": "maxwell-equations",
@@ -1388,7 +1640,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/James_Clerk_Maxwell_Statue_Equations.jpg/330px-James_Clerk_Maxwell_Statue_Equations.jpg",
     "image_width": 330,
-    "image_height": 291
+    "image_height": 291,
+    "wikipedia_views": 680231,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxwell's_equations"
   },
   {
     "name": "mendel-genetics",
@@ -1399,7 +1653,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/330px-Gregor_Mendel_2.jpg",
     "image_width": 330,
-    "image_height": 448
+    "image_height": 448,
+    "wikipedia_views": 175512,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mendelian_inheritance"
   },
   {
     "name": "periodic-table",
@@ -1410,7 +1666,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Colour_18-col_PT_with_labels.png/330px-Colour_18-col_PT_with_labels.png",
     "image_width": 330,
-    "image_height": 193
+    "image_height": 193,
+    "wikipedia_views": 4129539,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Periodic_table"
   },
   {
     "name": "troy-discovered",
@@ -1421,7 +1679,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/330px-Walls_of_Troy_%282%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 1081515,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Troy"
   },
   {
     "name": "livingstone-stanley",
@@ -1432,7 +1692,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/David_Livingstone_by_Thomas_Annan.jpg/330px-David_Livingstone_by_Thomas_Annan.jpg",
     "image_width": 330,
-    "image_height": 403
+    "image_height": 403,
+    "wikipedia_views": 11158,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stanley_and_Livingstone"
   },
   {
     "name": "bell-telephone",
@@ -1443,7 +1705,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Alexander_Graham_Bell.jpg/330px-Alexander_Graham_Bell.jpg",
     "image_width": 330,
-    "image_height": 429
+    "image_height": 429,
+    "wikipedia_views": 189599,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telephone"
   },
   {
     "name": "germ-theory",
@@ -1451,10 +1715,12 @@
     "year": 1880,
     "category": "exploration",
     "description": "Louis Pasteur and Robert Koch established that microorganisms cause disease.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cholera_bacteria_SEM.jpg/330px-Cholera_bacteria_SEM.jpg",
     "image_width": 330,
-    "image_height": 258
+    "image_height": 258,
+    "wikipedia_views": 230253,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease"
   },
   {
     "name": "koch-tuberculosis",
@@ -1465,7 +1731,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RobertKoch_cropped.jpg/330px-RobertKoch_cropped.jpg",
     "image_width": 330,
-    "image_height": 463
+    "image_height": 463,
+    "wikipedia_views": 201723,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mycobacterium_tuberculosis"
   },
   {
     "name": "hertz-radio-waves",
@@ -1476,7 +1744,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/HEINRICH_HERTZ.JPG/330px-HEINRICH_HERTZ.JPG",
     "image_width": 330,
-    "image_height": 414
+    "image_height": 414,
+    "wikipedia_views": 70218,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transmitter"
   },
   {
     "name": "nansen-arctic",
@@ -1484,10 +1754,12 @@
     "year": 1893,
     "category": "exploration",
     "description": "Fridtjof Nansen attempted to reach the North Pole by drifting with ice.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Fram_Bergen_1893.jpg/330px-Fram_Bergen_1893.jpg",
     "image_width": 330,
-    "image_height": 246
+    "image_height": 246,
+    "wikipedia_views": 26190,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nansen's_Fram_expedition"
   },
   {
     "name": "x-rays-discovered",
@@ -1498,7 +1770,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Color_X-ray_photogram.jpg/330px-Color_X-ray_photogram.jpg",
     "image_width": 330,
-    "image_height": 215
+    "image_height": 215,
+    "wikipedia_views": 423655,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/X-ray"
   },
   {
     "name": "radioactivity-discovered",
@@ -1509,7 +1783,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/NuclearReaction.svg/330px-NuclearReaction.svg.png",
     "image_width": 330,
-    "image_height": 210
+    "image_height": 210,
+    "wikipedia_views": 39528,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Radioactivity"
   },
   {
     "name": "electron-discovered",
@@ -1520,7 +1796,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Atomic-orbital-clouds_spd_m0.png/330px-Atomic-orbital-clouds_spd_m0.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 369502,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Electron"
   },
   {
     "name": "radium-discovered",
@@ -1531,7 +1809,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Radium226.jpg/330px-Radium226.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 269705,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Radium"
   },
   {
     "name": "blood-types-discovered",
@@ -1542,7 +1822,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/ABO_blood_type.svg/330px-ABO_blood_type.svg.png",
     "image_width": 330,
-    "image_height": 213
+    "image_height": 213,
+    "wikipedia_views": 142320,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ABO_blood_group_system"
   },
   {
     "name": "powered-flight",
@@ -1553,7 +1835,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Orville_Wright_1905-crop.jpg/330px-Orville_Wright_1905-crop.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 1112471,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wright_brothers"
   },
   {
     "name": "special-relativity",
@@ -1564,7 +1848,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Einstein_patentoffice.jpg/330px-Einstein_patentoffice.jpg",
     "image_width": 330,
-    "image_height": 431
+    "image_height": 431,
+    "wikipedia_views": 572811,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Theory_of_relativity"
   },
   {
     "name": "north-pole-reached",
@@ -1575,7 +1861,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Arctic_Ocean_SVG.svg/330px-Arctic_Ocean_SVG.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 695885,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/North_Pole"
   },
   {
     "name": "machu-picchu-discovered",
@@ -1586,7 +1874,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/330px-Machu_Picchu%2C_2023_%28012%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 107760,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lost_city"
   },
   {
     "name": "atomic-nucleus",
@@ -1597,7 +1887,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Nucleus_drawing.svg/330px-Nucleus_drawing.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 131725,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_nucleus"
   },
   {
     "name": "south-pole-reached",
@@ -1608,7 +1900,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Terra_Nova_expedition_at_the_South_Pole_-_LOC_3a12745u.jpg",
     "image_width": 1494,
-    "image_height": 1255
+    "image_height": 1255,
+    "wikipedia_views": 223270,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/South_Pole"
   },
   {
     "name": "continental-drift",
@@ -1619,7 +1913,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Snider-Pellegrini_Wegener_fossil_map.svg/960px-Snider-Pellegrini_Wegener_fossil_map.svg.png",
     "image_width": 624,
-    "image_height": 480
+    "image_height": 480,
+    "wikipedia_views": 153651,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Continental_drift"
   },
   {
     "name": "bohr-atomic-model",
@@ -1630,7 +1926,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bohr_atom_model.svg/330px-Bohr_atom_model.svg.png",
     "image_width": 330,
-    "image_height": 288
+    "image_height": 288,
+    "wikipedia_views": 239395,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bohr_model"
   },
   {
     "name": "shackleton-endurance",
@@ -1641,7 +1939,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg/330px-Endurance_under_full_sail_Frank_Hurley_State_Library_NSW_a090012h.jpg",
     "image_width": 330,
-    "image_height": 456
+    "image_height": 456,
+    "wikipedia_views": 160352,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition"
   },
   {
     "name": "first-scheduled-airline",
@@ -1652,7 +1952,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Airboat4.JPG/330px-Airboat4.JPG",
     "image_width": 330,
-    "image_height": 207
+    "image_height": 207,
+    "wikipedia_views": 133108,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Airline"
   },
   {
     "name": "general-relativity",
@@ -1663,7 +1965,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/BBH_gravitational_lensing_of_gw150914.webm/320px--BBH_gravitational_lensing_of_gw150914.webm.jpg",
     "image_width": 320,
-    "image_height": 180
+    "image_height": 180,
+    "wikipedia_views": 471922,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/General_relativity"
   },
   {
     "name": "insulin-discovered",
@@ -1674,7 +1978,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 354805,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Insulin"
   },
   {
     "name": "tutankhamun-tomb",
@@ -1685,7 +1991,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Inside_Pharaoh_Tutankhamun%27s_tomb%2C_18th_dynasty.jpg/330px-Inside_Pharaoh_Tutankhamun%27s_tomb%2C_18th_dynasty.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 276680,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tomb_of_Tutankhamun"
   },
   {
     "name": "first-insulin-injection",
@@ -1693,10 +2001,12 @@
     "year": 1922,
     "category": "exploration",
     "description": "Leonard Thompson became the first person injected with insulin, transforming diabetes treatment.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 354805,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Insulin"
   },
   {
     "name": "hubble-galaxies",
@@ -1707,7 +2017,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Studio_portrait_photograph_of_Edwin_Powell_Hubble_%28cropped%29.JPG/330px-Studio_portrait_photograph_of_Edwin_Powell_Hubble_%28cropped%29.JPG",
     "image_width": 330,
-    "image_height": 417
+    "image_height": 417,
+    "wikipedia_views": 89292,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spiral_galaxy"
   },
   {
     "name": "television-first-demonstration",
@@ -1718,7 +2030,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/John_Logie_Baird_in_1917.jpg/330px-John_Logie_Baird_in_1917.jpg",
     "image_width": 330,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 596899,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Television"
   },
   {
     "name": "goddard-liquid-rocket",
@@ -1729,7 +2043,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg/330px-Dr._Robert_H._Goddard_-_GPN-2002-000131.jpg",
     "image_width": 330,
-    "image_height": 433
+    "image_height": 433,
+    "wikipedia_views": 53324,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Liquid-propellant_rocket"
   },
   {
     "name": "spirit-of-st-louis",
@@ -1740,7 +2056,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Spirit_Of_St_Louis2.jpg/330px-Spirit_Of_St_Louis2.jpg",
     "image_width": 330,
-    "image_height": 164
+    "image_height": 164,
+    "wikipedia_views": 947371,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Lindbergh"
   },
   {
     "name": "penicillin-discovered",
@@ -1751,7 +2069,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/330px-Penicillin_core.svg.png",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 627568,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin"
   },
   {
     "name": "expanding-universe",
@@ -1762,7 +2082,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/CMB_Timeline300_no_WMAP.jpg/330px-CMB_Timeline300_no_WMAP.jpg",
     "image_width": 330,
-    "image_height": 218
+    "image_height": 218,
+    "wikipedia_views": 248086,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
   },
   {
     "name": "pluto-discovered",
@@ -1773,7 +2095,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/330px-Pluto_in_True_Color_-_High-Res.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 1203029,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pluto"
   },
   {
     "name": "neutron-discovered",
@@ -1784,7 +2108,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Quark_structure_neutron.svg/330px-Quark_structure_neutron.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 226538,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neutron"
   },
   {
     "name": "amelia-earhart-atlantic",
@@ -1795,7 +2121,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg/330px-Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 444
+    "image_height": 444,
+    "wikipedia_views": 2021925,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Amelia_Earhart"
   },
   {
     "name": "first-woman-us-senator",
@@ -1803,10 +2131,12 @@
     "year": 1932,
     "category": "exploration",
     "description": "Hattie Caraway became the first woman elected to the United States Senate.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Arkansas_senator._Washington%2C_D.C.%2C_March_11._Senator_Hattie_W._Caraway%2C_Democrat_of_Arkansas%2C_from_a_new_informal_picture_made_in_her_office_at_the_Capitol_today%2C_3-11-40_LCCN2016877256_%28cropped%29.jpg/330px-thumbnail.jpg",
     "image_width": 330,
-    "image_height": 411
+    "image_height": 411,
+    "wikipedia_views": 451886,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Katie_Britt"
   },
   {
     "name": "nuclear-fission",
@@ -1817,7 +2147,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nuclear_fission.svg/320px-Nuclear_fission.svg.png",
     "image_width": 320,
-    "image_height": 500
+    "image_height": 500,
+    "wikipedia_views": 338040,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nuclear_fission"
   },
   {
     "name": "carbon-14-discovered",
@@ -1828,7 +2160,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png/330px-%E7%A2%B3-14%E5%8E%9F%E5%AD%90%E6%A0%B8%2B%E9%9B%BB%E5%AD%90%E8%BB%8C%E9%81%93.png",
     "image_width": 330,
-    "image_height": 331
+    "image_height": 331,
+    "wikipedia_views": 123065,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Carbon-14"
   },
   {
     "name": "penicillin-mass-produced",
@@ -1839,7 +2173,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/330px-Penicillin_core.svg.png",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 627568,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin"
   },
   {
     "name": "dead-sea-scrolls",
@@ -1850,7 +2186,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Mordecai_and_Esther.jpg/330px-Mordecai_and_Esther.jpg",
     "image_width": 330,
-    "image_height": 143
+    "image_height": 143,
+    "wikipedia_views": 996119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls"
   },
   {
     "name": "heyerdahl-kon-tiki",
@@ -1861,7 +2199,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg/330px-Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 163827,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
   },
   {
     "name": "dna-structure",
@@ -1872,7 +2212,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/DNA-structure-and-bases.png/330px-DNA-structure-and-bases.png",
     "image_width": 330,
-    "image_height": 476
+    "image_height": 476,
+    "wikipedia_views": 829892,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA"
   },
   {
     "name": "everest",
@@ -1883,7 +2225,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg/330px-Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg",
     "image_width": 330,
-    "image_height": 200
+    "image_height": 200,
+    "wikipedia_views": 2770627,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Everest"
   },
   {
     "name": "georgetown-ibm-machine-translation",
@@ -1891,10 +2235,12 @@
     "year": 1954,
     "category": "exploration",
     "description": "The first public demonstration of machine translation is held in New York at IBM headquarters.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/WordLensDemo5Feb2012.jpg/330px-WordLensDemo5Feb2012.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 9012,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Georgetown–IBM_experiment"
   },
   {
     "name": "uss-nautilus-launched",
@@ -1902,10 +2248,12 @@
     "year": 1954,
     "category": "exploration",
     "description": "The first nuclear-powered submarine, USS Nautilus, is launched in Groton, Connecticut.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg/330px-Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 226155,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)"
   },
   {
     "name": "polio-vaccine",
@@ -1916,7 +2264,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Poliodrops.jpg",
     "image_width": 264,
-    "image_height": 288
+    "image_height": 288,
+    "wikipedia_views": 257001,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Polio_vaccine"
   },
   {
     "name": "sputnik-launched",
@@ -1927,7 +2277,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg/330px-%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 432718,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sputnik_1"
   },
   {
     "name": "van-allen-belt-detected",
@@ -1935,10 +2287,12 @@
     "year": 1958,
     "category": "exploration",
     "description": "The first successful American satellite detects the Van Allen radiation belt.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Van_Allen_Belts.ogv/320px--Van_Allen_Belts.ogv.jpg",
     "image_width": 320,
-    "image_height": 180
+    "image_height": 180,
+    "wikipedia_views": 306263,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Allen_radiation_belt"
   },
   {
     "name": "mariana-trench",
@@ -1949,7 +2303,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Marianatrenchmap.png/330px-Marianatrenchmap.png",
     "image_width": 330,
-    "image_height": 430
+    "image_height": 430,
+    "wikipedia_views": 1202560,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mariana_Trench"
   },
   {
     "name": "laser-invented",
@@ -1960,7 +2316,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Guiding_the_Milky_Way_%28potw2222a%29.jpg/330px-Guiding_the_Milky_Way_%28potw2222a%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 448962,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laser"
   },
   {
     "name": "bathyscaphe-trieste",
@@ -1971,7 +2329,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bathyscaphe_Trieste.jpg/330px-Bathyscaphe_Trieste.jpg",
     "image_width": 330,
-    "image_height": 266
+    "image_height": 266,
+    "wikipedia_views": 109123,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)"
   },
   {
     "name": "first-human-space",
@@ -1980,7 +2340,9 @@
     "category": "exploration",
     "description": "Yuri Gagarin became the first human to travel to outer space.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg/330px-%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg/330px-%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg",
+    "wikipedia_views": 861315,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yuri_Gagarin"
   },
   {
     "name": "quasars-discovered",
@@ -1991,7 +2353,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Artist%27s_rendering_ULAS_J1120%2B0641.jpg/330px-Artist%27s_rendering_ULAS_J1120%2B0641.jpg",
     "image_width": 330,
-    "image_height": 196
+    "image_height": 196,
+    "wikipedia_views": 25458,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_quasars"
   },
   {
     "name": "first-woman-space",
@@ -2002,7 +2366,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/3D_coordinate_system.svg/330px-3D_coordinate_system.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 393324,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Valentina_Tereshkova"
   },
   {
     "name": "luna-9-launched",
@@ -2010,10 +2376,12 @@
     "year": 1966,
     "category": "exploration",
     "description": "The Soviet Union launches the unmanned Luna 9 spacecraft to achieve first soft landing on the Moon.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Luna_9_Musee_du_Bourget_P1010505.JPG/330px-Luna_9_Musee_du_Bourget_P1010505.JPG",
     "image_width": 330,
-    "image_height": 498
+    "image_height": 498,
+    "wikipedia_views": 32739,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Luna_9"
   },
   {
     "name": "plate-tectonics-confirmed",
@@ -2021,10 +2389,12 @@
     "year": 1968,
     "category": "exploration",
     "description": "Scientists confirmed that Earth's surface is divided into moving plates.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tectonic_plates_%282022%29.svg/330px-Tectonic_plates_%282022%29.svg.png",
     "image_width": 330,
-    "image_height": 168
+    "image_height": 168,
+    "wikipedia_views": 702350,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plate_tectonics"
   },
   {
     "name": "apollo-5-lunar-module",
@@ -2032,10 +2402,12 @@
     "year": 1968,
     "category": "exploration",
     "description": "Apollo 5 lifts off carrying the first Lunar Module into space.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Lunar_Module-1_and_Spacecraft_Lunar_Module_Adapter_%28SLA%29-7_in_the_Kennedy_Space_Center%27s_Manned_Spacecraft_Operations_Building.jpg/330px-Lunar_Module-1_and_Spacecraft_Lunar_Module_Adapter_%28SLA%29-7_in_the_Kennedy_Space_Center%27s_Manned_Spacecraft_Operations_Building.jpg",
     "image_width": 330,
-    "image_height": 412
+    "image_height": 412,
+    "wikipedia_views": 202699,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_Lunar_Module"
   },
   {
     "name": "moon-landing",
@@ -2046,7 +2418,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 334
+    "image_height": 334,
+    "wikipedia_views": 1565155,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11"
   },
   {
     "name": "apollo-11-launch",
@@ -2057,7 +2431,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 334
+    "image_height": 334,
+    "wikipedia_views": 1565155,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11"
   },
   {
     "name": "boeing-747-enters-service",
@@ -2065,10 +2441,12 @@
     "year": 1970,
     "category": "exploration",
     "description": "The worlds first jumbo jet enters commercial service for Pan Am from New York to London.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/B-747_Iberia.jpg/330px-B-747_Iberia.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 1354268,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_747"
   },
   {
     "name": "japan-launches-ohsumi",
@@ -2076,10 +2454,12 @@
     "year": 1970,
     "category": "exploration",
     "description": "Japan becomes the fourth nation to put a satellite into orbit using its own booster.",
-    "difficulty": "medium",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ohsumi.jpg/330px-Ohsumi.jpg",
     "image_width": 330,
-    "image_height": 332
+    "image_height": 332,
+    "wikipedia_views": 6294,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohsumi_(satellite)"
   },
   {
     "name": "mri-invented",
@@ -2090,7 +2470,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Structural_MRI_animation.ogv/256px--Structural_MRI_animation.ogv.jpg",
     "image_width": 256,
-    "image_height": 256
+    "image_height": 256,
+    "wikipedia_views": 82835,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging"
   },
   {
     "name": "lucy-discovered",
@@ -2101,7 +2483,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg/330px-Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg",
     "image_width": 330,
-    "image_height": 796
+    "image_height": 796,
+    "wikipedia_views": 15728,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lucy_(hominid)"
   },
   {
     "name": "voyager-1-launched",
@@ -2112,7 +2496,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/330px-Voyager_spacecraft_model.png",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 961645,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Voyager_1"
   },
   {
     "name": "first-dna-sequencing",
@@ -2123,7 +2509,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hybridogenesis_in_water_frogs_gametes.svg/330px-Hybridogenesis_in_water_frogs_gametes.svg.png",
     "image_width": 330,
-    "image_height": 163
+    "image_height": 163,
+    "wikipedia_views": 97193,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA_sequencing"
   },
   {
     "name": "test-tube-baby",
@@ -2134,7 +2522,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Two_small_test_tubes_held_in_spring_clamps.jpg/330px-Two_small_test_tubes_held_in_spring_clamps.jpg",
     "image_width": 330,
-    "image_height": 281
+    "image_height": 281,
+    "wikipedia_views": 185585,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jean_Purdy"
   },
   {
     "name": "smallpox-eradicated",
@@ -2145,7 +2535,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Child_with_Smallpox_Bangladesh.jpg/330px-Child_with_Smallpox_Bangladesh.jpg",
     "image_width": 330,
-    "image_height": 503
+    "image_height": 503,
+    "wikipedia_views": 1103608,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Smallpox"
   },
   {
     "name": "hiv-identified",
@@ -2156,7 +2548,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/330px-Red_Ribbon.svg.png",
     "image_width": 330,
-    "image_height": 494
+    "image_height": 494,
+    "wikipedia_views": 899712,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/HIV/AIDS"
   },
   {
     "name": "titanic-wreck-found",
@@ -2167,7 +2561,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Titanic_wreck_bow.jpg/330px-Titanic_wreck_bow.jpg",
     "image_width": 330,
-    "image_height": 231
+    "image_height": 231,
+    "wikipedia_views": 621148,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic"
   },
   {
     "name": "world-wide-web",
@@ -2178,7 +2574,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png",
     "image_width": 330,
-    "image_height": 179
+    "image_height": 179,
+    "wikipedia_views": 1772050,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web"
   },
   {
     "name": "hubble-launch",
@@ -2189,7 +2587,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HST-SM4.jpeg/330px-HST-SM4.jpeg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 544418,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
   },
   {
     "name": "first-exoplanet",
@@ -2200,7 +2600,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Hr8799_orbit_hd.gif/330px-Hr8799_orbit_hd.gif",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 49487,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/51_Pegasi_b"
   },
   {
     "name": "spirit-mars-rover",
@@ -2211,7 +2613,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/KSC-03PD-0786.jpg/330px-KSC-03PD-0786.jpg",
     "image_width": 330,
-    "image_height": 215
+    "image_height": 215,
+    "wikipedia_views": 213179,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_rover"
   },
   {
     "name": "eris-discovery",
@@ -2219,10 +2623,12 @@
     "year": 2005,
     "category": "exploration",
     "description": "Discovery of Eris led the IAU to define planet for the first time, demoting Pluto.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ceres_-_RC3_-_Haulani_Crater_%2822381131691%29.jpg/330px-Ceres_-_RC3_-_Haulani_Crater_%2822381131691%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 436339,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)"
   },
   {
     "name": "higgs-boson",
@@ -2233,7 +2639,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/330px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png",
     "image_width": 330,
-    "image_height": 429
+    "image_height": 429,
+    "wikipedia_views": 634193,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Higgs_boson"
   },
   {
     "name": "crispr-gene-editing",
@@ -2244,7 +2652,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png/330px-Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png",
     "image_width": 330,
-    "image_height": 275
+    "image_height": 275,
+    "wikipedia_views": 182310,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CRISPR_gene_editing"
   },
   {
     "name": "voyager-leaves-solar-system",
@@ -2255,7 +2665,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/330px-Voyager_spacecraft_model.png",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 184665,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliosphere"
   },
   {
     "name": "mars-curiosity-landing",
@@ -2266,7 +2678,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg/330px-Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg",
     "image_width": 330,
-    "image_height": 455
+    "image_height": 455,
+    "wikipedia_views": 269991,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Curiosity_(rover)"
   },
   {
     "name": "india-mars-mission",
@@ -2274,10 +2688,12 @@
     "year": 2014,
     "category": "exploration",
     "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg/330px-Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg",
     "image_width": 330,
-    "image_height": 312
+    "image_height": 312,
+    "wikipedia_views": 145791,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_Orbiter_Mission"
   },
   {
     "name": "gravitational-waves",
@@ -2288,7 +2704,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm/320px--Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm.jpg",
     "image_width": 320,
-    "image_height": 180
+    "image_height": 180,
+    "wikipedia_views": 65411,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
   },
   {
     "name": "new-horizons-pluto",
@@ -2299,7 +2717,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/New_Horizons_spacecraft_model_1.png/330px-New_Horizons_spacecraft_model_1.png",
     "image_width": 330,
-    "image_height": 308
+    "image_height": 308,
+    "wikipedia_views": 315731,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/New_Horizons"
   },
   {
     "name": "spacex-reusable-rocket",
@@ -2310,7 +2730,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Starbase.jpg/330px-Starbase.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 36753,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/SpaceX_reusable_launch_system_development_program"
   },
   {
     "name": "black-hole-image",
@@ -2321,7 +2743,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/330px-Black_hole_-_Messier_87_crop_max_res.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 121193,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Event_Horizon_Telescope"
   },
   {
     "name": "quantum-computing-supremacy",
@@ -2332,7 +2756,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Quantum_Supremacy_by_Kaku.jpg",
     "image_width": 257,
-    "image_height": 388
+    "image_height": 388,
+    "wikipedia_views": 50790,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_supremacy"
   },
   {
     "name": "change-4-landing",
@@ -2340,10 +2766,12 @@
     "year": 2019,
     "category": "exploration",
     "description": "Chinas probe made the first soft landing on the far side of the Moon.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg",
     "image_width": 330,
-    "image_height": 314
+    "image_height": 314,
+    "wikipedia_views": 525236,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moon_landing"
   },
   {
     "name": "mrna-vaccines",
@@ -2354,7 +2782,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ijms-21-06582-g002.webp/330px-Ijms-21-06582-g002.webp.png",
     "image_width": 330,
-    "image_height": 181
+    "image_height": 181,
+    "wikipedia_views": 301554,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_vaccine"
   },
   {
     "name": "alphafold-protein",
@@ -2365,7 +2795,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Protein_structure.png/330px-Protein_structure.png",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 229941,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/AlphaFold"
   },
   {
     "name": "china-moon-samples",
@@ -2373,10 +2805,12 @@
     "year": 2020,
     "category": "exploration",
     "description": "China became the third country to return lunar samples to Earth.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Chang-e-5-assembly-CG-1-Cropped.jpg/330px-Chang-e-5-assembly-CG-1-Cropped.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 42276,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chang'e_6"
   },
   {
     "name": "james-webb-launched",
@@ -2387,7 +2821,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/330px-JWST_spacecraft_model_3.png",
     "image_width": 330,
-    "image_height": 283
+    "image_height": 283,
+    "wikipedia_views": 688045,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
   },
   {
     "name": "perseverance-mars-landing",
@@ -2398,7 +2834,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/330px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 63882,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_2020"
   },
   {
     "name": "ingenuity-mars-flight",
@@ -2409,7 +2847,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mars_helicopter_on_sol_46.png/330px-Mars_helicopter_on_sol_46.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 142168,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
   },
   {
     "name": "parker-solar-probe",
@@ -2417,10 +2857,12 @@
     "year": 2021,
     "category": "exploration",
     "description": "The probe became the first spacecraft to fly through the Sun's corona.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Parker_Solar_Probe_spacecraft_model.png/330px-Parker_Solar_Probe_spacecraft_model.png",
     "image_width": 330,
-    "image_height": 229
+    "image_height": 229,
+    "wikipedia_views": 254992,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
   },
   {
     "name": "dart-asteroid-impact",
@@ -2431,7 +2873,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Dart-poster3.jpg/330px-Dart-poster3.jpg",
     "image_width": 330,
-    "image_height": 189
+    "image_height": 189,
+    "wikipedia_views": 146392,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
   },
   {
     "name": "nuclear-fusion-ignition",
@@ -2442,7 +2886,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/EAST_Tokamak_plasma_image3.jpg/330px-EAST_Tokamak_plasma_image3.jpg",
     "image_width": 330,
-    "image_height": 387
+    "image_height": 387,
+    "wikipedia_views": 10639,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fusion_ignition"
   },
   {
     "name": "superconductor-claims",
@@ -2450,10 +2896,12 @@
     "year": 2023,
     "category": "exploration",
     "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 212,
+    "wikipedia_views": 51437,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Room-temperature_superconductor"
   },
   {
     "name": "arpanet-created",
@@ -2464,7 +2912,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/330px-Arpanet_logical_map%2C_march_1977.png",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 304791,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ARPANET"
   },
   {
     "name": "mir-space-station",
@@ -2475,7 +2925,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mir_Space_Station_viewed_from_Endeavour_during_STS-89.jpg/330px-Mir_Space_Station_viewed_from_Endeavour_during_STS-89.jpg",
     "image_width": 330,
-    "image_height": 322
+    "image_height": 322,
+    "wikipedia_views": 265453,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mir"
   },
   {
     "name": "www-goes-public",
@@ -2486,7 +2938,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png",
     "image_width": 330,
-    "image_height": 179
+    "image_height": 179,
+    "wikipedia_views": 1772050,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web"
   },
   {
     "name": "india-nuclear-tests",
@@ -2494,10 +2948,12 @@
     "year": 1998,
     "category": "exploration",
     "description": "India conducted nuclear tests, declaring itself a nuclear weapons state.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Castle_Bravo_nuclear_test_%28cropped%29.jpg/330px-Castle_Bravo_nuclear_test_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 18657,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_India"
   },
   {
     "name": "anaesthesia-discovered",
@@ -2508,7 +2964,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Preoxygenation_before_anesthetic_induction.jpg/330px-Preoxygenation_before_anesthetic_induction.jpg",
     "image_width": 330,
-    "image_height": 230
+    "image_height": 230,
+    "wikipedia_views": 95510,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_general_anesthesia"
   },
   {
     "name": "first-stone-tools",
@@ -2519,7 +2977,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Canto_tallado_2-Guelmim-Es_Semara.jpg/330px-Canto_tallado_2-Guelmim-Es_Semara.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 97548,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stone_tool"
   },
   {
     "name": "anatomically-modern-humans",
@@ -2530,7 +2990,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG",
     "image_width": 330,
-    "image_height": 552
+    "image_height": 552,
+    "wikipedia_views": 324336,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Early_modern_human"
   },
   {
     "name": "domestication-cattle",
@@ -2541,7 +3003,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 947434,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cattle"
   },
   {
     "name": "copper-smelting-begins",
@@ -2552,7 +3016,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg",
     "image_width": 330,
-    "image_height": 256
+    "image_height": 256,
+    "wikipedia_views": 46369,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Copper_extraction"
   },
   {
     "name": "zhang-heng-seismoscope",
@@ -2560,10 +3026,12 @@
     "year": 132,
     "category": "exploration",
     "description": "Chinese scientist Zhang Heng invented the first device to detect distant earthquakes.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20251004_Tomb_of_Zhang_Heng_03.jpg/330px-20251004_Tomb_of_Zhang_Heng_03.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 40509,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhang_Heng"
   },
   {
     "name": "homo-erectus-emerges",
@@ -2574,7 +3042,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Java_Man_holotype.jpg/330px-Java_Man_holotype.jpg",
     "image_width": 330,
-    "image_height": 504
+    "image_height": 504,
+    "wikipedia_views": 777906,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Homo"
   },
   {
     "name": "domestication-of-sheep-and-goats",
@@ -2585,7 +3055,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/330px-Flock_of_sheep.jpg",
     "image_width": 330,
-    "image_height": 502
+    "image_height": 502,
+    "wikipedia_views": 621411,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Goat"
   },
   {
     "name": "domestication-of-pigs",
@@ -2596,7 +3068,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pig_farm_Vampula_1.jpg/330px-Pig_farm_Vampula_1.jpg",
     "image_width": 330,
-    "image_height": 204
+    "image_height": 204,
+    "wikipedia_views": 639804,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pig"
   },
   {
     "name": "domestication-of-donkeys",
@@ -2607,7 +3081,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg/330px-Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 585964,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Donkey"
   },
   {
     "name": "dionysius-exiguus-creates-ad-system",
@@ -2615,10 +3091,12 @@
     "year": 525,
     "category": "exploration",
     "description": "Scythian monk Dionysius Exiguus devised the Anno Domini dating system while calculating Easter dates in Rome.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dionysius_Exiguus.jpg",
     "image_width": 284,
-    "image_height": 400
+    "image_height": 400,
+    "wikipedia_views": 56590,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dionysius_Exiguus"
   },
   {
     "name": "buddhism-officially-introduced-to-japan",
@@ -2626,8 +3104,10 @@
     "year": 552,
     "category": "exploration",
     "description": "Korean envoys brought Buddhist scriptures and images to the Japanese court, beginning Buddhism's spread in Japan.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Japanese_Buddhist_flag.svg/330px-Japanese_Buddhist_flag.svg.png"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Japanese_Buddhist_flag.svg/330px-Japanese_Buddhist_flag.svg.png",
+    "wikipedia_views": 53400,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yamato_period"
   },
   {
     "name": "cyrillic-alphabet-created",
@@ -2635,10 +3115,12 @@
     "year": 863,
     "category": "exploration",
     "description": "Saints Cyril and Methodius developed the Glagolitic script, which evolved into Cyrillic for Slavic languages.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg/330px-Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg.png",
     "image_width": 330,
-    "image_height": 119
+    "image_height": 119,
+    "wikipedia_views": 190631,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrillic_alphabets"
   },
   {
     "name": "gunpowder-formula-first-recorded",
@@ -2646,10 +3128,12 @@
     "year": 1044,
     "category": "exploration",
     "description": "The first written gunpowder formula appeared in the Chinese Wujing Zongyao military compendium during the Song Dynasty.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chinese_Gunpowder_Formula.JPG/330px-Chinese_Gunpowder_Formula.JPG",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 136729,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires"
   },
   {
     "name": "silver-discovered-at-potosi",
@@ -2658,7 +3142,9 @@
     "category": "exploration",
     "description": "Spanish colonizers discovered rich silver deposits at Cerro Rico in present-day Bolivia, fueling global trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg/330px-Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg/330px-Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg",
+    "wikipedia_views": 42302,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cerro_Rico"
   },
   {
     "name": "spinning-jenny-invented",
@@ -2669,7 +3155,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Spinning_jenny.jpg/330px-Spinning_jenny.jpg",
     "image_width": 330,
-    "image_height": 272
+    "image_height": 272,
+    "wikipedia_views": 129238,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spinning_jenny"
   },
   {
     "name": "hydrogen-discovered",
@@ -2677,10 +3165,12 @@
     "year": 1766,
     "category": "exploration",
     "description": "Henry Cavendish isolated hydrogen gas and described its properties, calling it 'inflammable air' in his research.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hydrogen_discharge_tube.jpg/330px-Hydrogen_discharge_tube.jpg",
     "image_width": 330,
-    "image_height": 110
+    "image_height": 110,
+    "wikipedia_views": 755107,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hydrogen"
   },
   {
     "name": "first-voyage-of-james-cook",
@@ -2691,7 +3181,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
     "image_width": 330,
-    "image_height": 414
+    "image_height": 414,
+    "wikipedia_views": 78706,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook"
   },
   {
     "name": "nitrogen-discovered",
@@ -2702,7 +3194,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Fluessiger_Stickstoff.jpg/330px-Fluessiger_Stickstoff.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 477614,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nitrogen"
   },
   {
     "name": "power-loom-invented",
@@ -2713,7 +3207,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Strickmaschine_im_Museum.JPG/330px-Strickmaschine_im_Museum.JPG",
     "image_width": 330,
-    "image_height": 231
+    "image_height": 231,
+    "wikipedia_views": 58844,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Power_loom"
   },
   {
     "name": "penny-post-introduced",
@@ -2721,10 +3217,12 @@
     "year": 1840,
     "category": "exploration",
     "description": "Britain introduced the Penny Post system with the first adhesive postage stamp, democratizing mail delivery.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/UPP_POreg_handbill_1840jan7.png/330px-UPP_POreg_handbill_1840jan7.png",
     "image_width": 330,
-    "image_height": 512
+    "image_height": 512,
+    "wikipedia_views": 8194,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penny_Post"
   },
   {
     "name": "garibaldis-expedition",
@@ -2732,10 +3230,12 @@
     "year": 1860,
     "category": "exploration",
     "description": "Giuseppe Garibaldi led his Thousand Red Shirts to conquer Sicily and Naples, advancing Italian unification.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Giuseppe_Garibaldi_1861.jpg/330px-Giuseppe_Garibaldi_1861.jpg",
     "image_width": 330,
-    "image_height": 510
+    "image_height": 510,
+    "wikipedia_views": 109417,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Expedition_of_the_Thousand"
   },
   {
     "name": "dynamite-invented",
@@ -2746,7 +3246,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Inserting_dynamite_into_hole.jpg/330px-Inserting_dynamite_into_hole.jpg",
     "image_width": 329,
-    "image_height": 251
+    "image_height": 251,
+    "wikipedia_views": 320401,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dynamite"
   },
   {
     "name": "maxim-gun-invented",
@@ -2757,7 +3259,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Maxim_gun%2C_Georgian_national_museum.JPG/330px-Maxim_gun%2C_Georgian_national_museum.JPG",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 300067,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxim_gun"
   },
   {
     "name": "max-plancks-quantum-theory",
@@ -2768,7 +3272,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg/330px-Max_Planck_by_Hugo_Erfurth_1938cr_-_restoration1.jpg",
     "image_width": 330,
-    "image_height": 417
+    "image_height": 417,
+    "wikipedia_views": 368889,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Max_Planck"
   },
   {
     "name": "general-strike-in-britain",
@@ -2776,10 +3282,12 @@
     "year": 1926,
     "category": "exploration",
     "description": "British workers staged a nine-day general strike in support of coal miners facing wage cuts and longer hours.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tyldesley_miners_outside_the_Miners_Hall_during_the_1926_General_Strike.jpg/330px-Tyldesley_miners_outside_the_Miners_Hall_during_the_1926_General_Strike.jpg",
     "image_width": 330,
-    "image_height": 240
+    "image_height": 240,
+    "wikipedia_views": 59464,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike"
   },
   {
     "name": "heisenbergs-uncertainty-principle",
@@ -2788,7 +3296,9 @@
     "category": "exploration",
     "description": "Werner Heisenberg formulated the uncertainty principle, stating position and momentum cannot both be precisely known.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Werner_Heisenberg_-_Canonical_commutation_rule_for_position_and_momentum_variables_of_a_particle_-_Uncertainty_principle%2C_1927.jpg/330px-Werner_Heisenberg_-_Canonical_commutation_rule_for_position_and_momentum_variables_of_a_particle_-_Uncertainty_principle%2C_1927.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Werner_Heisenberg_-_Canonical_commutation_rule_for_position_and_momentum_variables_of_a_particle_-_Uncertainty_principle%2C_1927.jpg/330px-Werner_Heisenberg_-_Canonical_commutation_rule_for_position_and_momentum_variables_of_a_particle_-_Uncertainty_principle%2C_1927.jpg",
+    "wikipedia_views": 487116,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uncertainty_principle"
   },
   {
     "name": "first-nuclear-reactor",
@@ -2799,7 +3309,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif/lossy-page1-320px-Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif.jpg",
     "image_width": 320,
-    "image_height": 174
+    "image_height": 174,
+    "wikipedia_views": 179741,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Pile-1"
   },
   {
     "name": "transistor-invented",
@@ -2810,7 +3322,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Transistors.agr.jpg/330px-Transistors.agr.jpg",
     "image_width": 330,
-    "image_height": 277
+    "image_height": 277,
+    "wikipedia_views": 524367,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transistor"
   },
   {
     "name": "first-soviet-nuclear-test",
@@ -2821,7 +3335,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e8/Joe_one.jpg/330px-Joe_one.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 91951,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/RDS-1"
   },
   {
     "name": "first-hydrogen-bomb-test",
@@ -2832,7 +3348,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/84/IvyMikeGIFColorCorrected.gif",
     "image_width": 314,
-    "image_height": 178
+    "image_height": 178,
+    "wikipedia_views": 745646,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thermonuclear_weapon"
   },
   {
     "name": "geneva-summit-1955",
@@ -2840,10 +3358,12 @@
     "year": 1955,
     "category": "exploration",
     "description": "Leaders of the US, USSR, UK, and France met in Geneva, the first superpower summit since Potsdam in 1945.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg",
     "image_width": 330,
-    "image_height": 431
+    "image_height": 431,
+    "wikipedia_views": 28119,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Summit_(1985)"
   },
   {
     "name": "laika-in-space",
@@ -2854,7 +3374,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/330px-Laika_%28Soviet_dog%29.jpg",
     "image_width": 330,
-    "image_height": 249
+    "image_height": 249,
+    "wikipedia_views": 865624,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laika"
   },
   {
     "name": "apollo-17-last-moon-mission",
@@ -2865,7 +3387,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg/330px-Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg",
     "image_width": 330,
-    "image_height": 314
+    "image_height": 314,
+    "wikipedia_views": 181108,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Apollo_missions"
   },
   {
     "name": "viking-lands-on-mars",
@@ -2876,7 +3400,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Viking_spacecraft.jpg/330px-Viking_spacecraft.jpg",
     "image_width": 330,
-    "image_height": 259
+    "image_height": 259,
+    "wikipedia_views": 36148,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_landing"
   },
   {
     "name": "first-space-shuttle-launch",
@@ -2887,7 +3413,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Space_Shuttle_Columbia_launching.jpg/330px-Space_Shuttle_Columbia_launching.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 357892,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia"
   },
   {
     "name": "north-korea-nuclear-test",
@@ -2898,7 +3426,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/330px-Flag_of_North_Korea.svg.png",
     "image_width": 330,
-    "image_height": 165
+    "image_height": 165,
+    "wikipedia_views": 28174,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_North_Korea"
   },
   {
     "name": "felix-baumgartner-space-jump",
@@ -2907,6 +3437,8 @@
     "category": "exploration",
     "description": "Austrian skydiver Felix Baumgartner jumped from 128,000 feet, breaking the sound barrier during freefall.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg/330px-Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg/330px-Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg",
+    "wikipedia_views": 1300418,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Felix_Baumgartner"
   }
 ]

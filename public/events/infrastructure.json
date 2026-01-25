@@ -5,10 +5,12 @@
     "year": -9500,
     "category": "infrastructure",
     "description": "The world's oldest known temple complex was built in modern-day Turkey.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/330px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 1267579,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Göbekli_Tepe"
   },
   {
     "name": "jericho-walls",
@@ -16,10 +18,12 @@
     "year": -8000,
     "category": "infrastructure",
     "description": "One of the earliest known permanent settlements constructed defensive walls.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Palestine_with_the_Hauran_and_the_adjacent_districts%2C_William_Hughes_1843.jpg/330px-Palestine_with_the_Hauran_and_the_adjacent_districts%2C_William_Hughes_1843.jpg",
     "image_width": 330,
-    "image_height": 383
+    "image_height": 383,
+    "wikipedia_views": 65651,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tell_es-Sultan"
   },
   {
     "name": "catalhoyuk-settlement",
@@ -27,10 +31,12 @@
     "year": -7000,
     "category": "infrastructure",
     "description": "One of the world's first urban settlements thrived in Anatolia.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/330px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg",
     "image_width": 330,
-    "image_height": 152
+    "image_height": 152,
+    "wikipedia_views": 240664,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Çatalhöyük"
   },
   {
     "name": "skara-brae",
@@ -38,10 +44,12 @@
     "year": -3180,
     "category": "infrastructure",
     "description": "A Neolithic village was built on Orkney, Scotland, preserved for millennia.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/2018_07_12_Schottland_%2894%29.jpg/330px-2018_07_12_Schottland_%2894%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 237889,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Skara_Brae"
   },
   {
     "name": "stonehenge-begins",
@@ -49,10 +57,12 @@
     "year": -3000,
     "category": "infrastructure",
     "description": "Construction began on the iconic prehistoric monument in England.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/330px-Stonehenge2007_07_30.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 1263613,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge"
   },
   {
     "name": "step-pyramid-djoser",
@@ -63,7 +73,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Saqqara_pyramid_ver_2.jpg/330px-Saqqara_pyramid_ver_2.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 201306,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pyramid_of_Djoser"
   },
   {
     "name": "pyramids",
@@ -74,7 +86,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg/330px-Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 1380632,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
   },
   {
     "name": "stonehenge",
@@ -82,10 +96,12 @@
     "year": -2500,
     "category": "infrastructure",
     "description": "The mysterious stone circle in England was completed.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/330px-Stonehenge2007_07_30.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 1263613,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge"
   },
   {
     "name": "sphinx-built",
@@ -93,10 +109,12 @@
     "year": -2500,
     "category": "infrastructure",
     "description": "The massive limestone statue with a lion's body and human head was carved.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Sphinx_with_the_third_pyramid.jpg/330px-Sphinx_with_the_third_pyramid.jpg",
     "image_width": 330,
-    "image_height": 205
+    "image_height": 205,
+    "wikipedia_views": 524949,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
   },
   {
     "name": "mohenjo-daro",
@@ -107,7 +125,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG/330px-Mohenjodaro_-_view_of_the_stupa_mound.JPG",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 347635,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mohenjo-daro"
   },
   {
     "name": "ziggurat-ur",
@@ -118,7 +138,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ziggarat_of_Ur_001.jpg/330px-Ziggarat_of_Ur_001.jpg",
     "image_width": 330,
-    "image_height": 144
+    "image_height": 144,
+    "wikipedia_views": 198614,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ziggurat_of_Ur"
   },
   {
     "name": "palace-knossos",
@@ -129,7 +151,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Knossos_-_North_Portico_02.jpg/330px-Knossos_-_North_Portico_02.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 308114,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Knossos"
   },
   {
     "name": "mycenaean-citadels",
@@ -140,7 +164,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg/330px-Path_upto_the_Lion_Gate%2C_Mycenae_%2828693130016%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 482644,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mycenaean_Greece"
   },
   {
     "name": "lion-gate-mycenae",
@@ -148,10 +174,12 @@
     "year": -1250,
     "category": "infrastructure",
     "description": "The iconic entrance to the citadel of Mycenae was constructed in Greece.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Lion_Gate_-_Mycenae_by_Joy_of_Museums.jpg/330px-Lion_Gate_-_Mycenae_by_Joy_of_Museums.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 46770,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lion_Gate"
   },
   {
     "name": "solomons-temple",
@@ -159,8 +187,10 @@
     "year": -957,
     "category": "infrastructure",
     "description": "The First Temple was built in Jerusalem as the center of Jewish worship.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Reconstruction_of_Solomon%27s_Temple.jpg/330px-Reconstruction_of_Solomon%27s_Temple.jpg"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Reconstruction_of_Solomon%27s_Temple.jpg/330px-Reconstruction_of_Solomon%27s_Temple.jpg",
+    "wikipedia_views": 531264,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Solomon's_Temple"
   },
   {
     "name": "rome-founded",
@@ -171,7 +201,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/330px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 156048,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Founding_of_Rome"
   },
   {
     "name": "cloaca-maxima",
@@ -179,10 +211,12 @@
     "year": -600,
     "category": "infrastructure",
     "description": "Rome constructed one of the world's earliest sewage systems.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg/330px-Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 54148,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cloaca_Maxima"
   },
   {
     "name": "ishtar-gate",
@@ -193,7 +227,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pergamonmuseum_Ishtartor_05.jpg/330px-Pergamonmuseum_Ishtartor_05.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 204969,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ishtar_Gate"
   },
   {
     "name": "persepolis-founded",
@@ -201,10 +237,12 @@
     "year": -518,
     "category": "infrastructure",
     "description": "Darius the Great began building the ceremonial capital of the Persian Empire.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Gate_of_All_Nations%2C_Persepolis.jpg/330px-Gate_of_All_Nations%2C_Persepolis.jpg",
     "image_width": 330,
-    "image_height": 216
+    "image_height": 216,
+    "wikipedia_views": 456848,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Persepolis"
   },
   {
     "name": "parthenon-completed",
@@ -215,7 +253,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_Parthenon_in_Athens.jpg/330px-The_Parthenon_in_Athens.jpg",
     "image_width": 330,
-    "image_height": 232
+    "image_height": 232,
+    "wikipedia_views": 770252,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Parthenon"
   },
   {
     "name": "appian-way",
@@ -223,10 +263,12 @@
     "year": -312,
     "category": "infrastructure",
     "description": "Rome built its first major highway connecting the city to southern Italy.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Paesaggio_dell%27Appia_antica.jpg/330px-Paesaggio_dell%27Appia_antica.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 226371,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Appian_Way"
   },
   {
     "name": "colossus-rhodes",
@@ -237,7 +279,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Colosse_de_Rhodes_%28Barclay%29.jpg/330px-Colosse_de_Rhodes_%28Barclay%29.jpg",
     "image_width": 330,
-    "image_height": 451
+    "image_height": 451,
+    "wikipedia_views": 60748,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rhodes_Colossus"
   },
   {
     "name": "lighthouse-alexandria",
@@ -248,7 +292,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Lighthouse_-_Thiersch.png/330px-Lighthouse_-_Thiersch.png",
     "image_width": 330,
-    "image_height": 281
+    "image_height": 281,
+    "wikipedia_views": 555160,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lighthouse_of_Alexandria"
   },
   {
     "name": "great-wall-begins",
@@ -259,7 +305,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/330px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 1578916,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China"
   },
   {
     "name": "terracotta-army",
@@ -270,7 +318,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/51714-Terracota-Army.jpg/330px-51714-Terracota-Army.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 846893,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Terracotta_Army"
   },
   {
     "name": "pont-du-gard",
@@ -281,7 +331,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Pont_du_Gard_BLS.jpg/330px-Pont_du_Gard_BLS.jpg",
     "image_width": 330,
-    "image_height": 127
+    "image_height": 127,
+    "wikipedia_views": 140094,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pont_du_Gard"
   },
   {
     "name": "colosseum-completed",
@@ -292,7 +344,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg",
     "image_width": 330,
-    "image_height": 231
+    "image_height": 231,
+    "wikipedia_views": 1525820,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Colosseum"
   },
   {
     "name": "trajan-column",
@@ -303,7 +357,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trajan%27s_Column_HD.jpg/330px-Trajan%27s_Column_HD.jpg",
     "image_width": 330,
-    "image_height": 769
+    "image_height": 769,
+    "wikipedia_views": 150634,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan's_Column"
   },
   {
     "name": "pantheon-rebuilt",
@@ -314,7 +370,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pantheon_Rom_1_cropped.jpg/330px-Pantheon_Rom_1_cropped.jpg",
     "image_width": 330,
-    "image_height": 244
+    "image_height": 244,
+    "wikipedia_views": 1184651,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pantheon,_Rome"
   },
   {
     "name": "hadrians-wall",
@@ -325,7 +383,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Hadrians_Wall_map.svg/330px-Hadrians_Wall_map.svg.png",
     "image_width": 330,
-    "image_height": 411
+    "image_height": 411,
+    "wikipedia_views": 781373,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hadrian's_Wall"
   },
   {
     "name": "baths-caracalla",
@@ -336,7 +396,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Baths_of_Caracalla%2C_facing_Caldarium.jpg/330px-Baths_of_Caracalla%2C_facing_Caldarium.jpg",
     "image_width": 330,
-    "image_height": 198
+    "image_height": 198,
+    "wikipedia_views": 112447,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Baths_of_Caracalla"
   },
   {
     "name": "constantinople-founded",
@@ -347,7 +409,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
     "image_width": 330,
-    "image_height": 298
+    "image_height": 298,
+    "wikipedia_views": 1250077,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople"
   },
   {
     "name": "hagia-sophia-completed",
@@ -355,10 +419,12 @@
     "year": 537,
     "category": "infrastructure",
     "description": "The Byzantine cathedral with its massive dome was finished in Constantinople.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/330px-Hagia_Sophia_%28228968325%29.jpeg",
     "image_width": 330,
-    "image_height": 199
+    "image_height": 199,
+    "wikipedia_views": 1276677,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia"
   },
   {
     "name": "grand-canal-china",
@@ -366,10 +432,12 @@
     "year": 609,
     "category": "infrastructure",
     "description": "The Sui Dynasty completed major extensions to the world's longest canal.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Wanning_Bridge_1.jpg/330px-Wanning_Bridge_1.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 165308,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Grand_Canal_(China)"
   },
   {
     "name": "dome-rock-completed",
@@ -380,7 +448,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg/330px-Jerusalem-2013%282%29-Temple_Mount-Dome_of_the_Rock_%28SE_exposure%29.jpg",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 575689,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dome_of_the_Rock"
   },
   {
     "name": "nara-todaiji",
@@ -391,7 +461,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/T%C5%8Ddai-ji_Kon-d%C5%8D.jpg/330px-T%C5%8Ddai-ji_Kon-d%C5%8D.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 156116,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tōdai-ji"
   },
   {
     "name": "borobudur-temple",
@@ -402,7 +474,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 288694,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Borobudur"
   },
   {
     "name": "great-mosque-cordoba",
@@ -413,7 +487,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Great_Mosque_of_Mecca1.jpg/330px-Great_Mosque_of_Mecca1.jpg",
     "image_width": 330,
-    "image_height": 222
+    "image_height": 222,
+    "wikipedia_views": 315842,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mosque–Cathedral_of_Córdoba"
   },
   {
     "name": "tower-london",
@@ -424,7 +500,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Tower_of_London_from_the_Shard_%288515883950%29.jpg/330px-Tower_of_London_from_the_Shard_%288515883950%29.jpg",
     "image_width": 330,
-    "image_height": 214
+    "image_height": 214,
+    "wikipedia_views": 721418,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tower_of_London"
   },
   {
     "name": "great-zimbabwe",
@@ -435,7 +513,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/330px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 226965,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe"
   },
   {
     "name": "angkor-wat-completed",
@@ -443,10 +523,12 @@
     "year": 1150,
     "category": "infrastructure",
     "description": "The massive Hindu temple complex was finished in Cambodia.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/20171126_Angkor_Wat_4712_DxO.jpg/330px-20171126_Angkor_Wat_4712_DxO.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 1241500,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Angkor_Wat"
   },
   {
     "name": "leaning-tower-pisa",
@@ -454,10 +536,12 @@
     "year": 1173,
     "category": "infrastructure",
     "description": "Construction began on the bell tower that would famously begin to tilt.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/The_Leaning_Tower_of_Pisa_SB.jpeg/330px-The_Leaning_Tower_of_Pisa_SB.jpeg",
     "image_width": 330,
-    "image_height": 503
+    "image_height": 503,
+    "wikipedia_views": 29697,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_Baptistery"
   },
   {
     "name": "chartres-cathedral",
@@ -468,7 +552,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Notre_Dame_de_Chartres.jpg/330px-Notre_Dame_de_Chartres.jpg",
     "image_width": 330,
-    "image_height": 252
+    "image_height": 252,
+    "wikipedia_views": 176406,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chartres_Cathedral"
   },
   {
     "name": "alhambra-expanded",
@@ -476,10 +562,12 @@
     "year": 1333,
     "category": "infrastructure",
     "description": "The Nasrid dynasty expanded the stunning palace complex in Granada.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/330px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 688701,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alhambra"
   },
   {
     "name": "forbidden-city-completed",
@@ -487,10 +575,12 @@
     "year": 1420,
     "category": "infrastructure",
     "description": "The massive imperial palace complex was finished in Beijing.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/330px-The_Forbidden_City_-_View_from_Coal_Hill.jpg",
     "image_width": 330,
-    "image_height": 165
+    "image_height": 165,
+    "wikipedia_views": 710042,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Forbidden_City"
   },
   {
     "name": "florence-dome",
@@ -501,7 +591,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/330px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 386811,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Cathedral"
   },
   {
     "name": "machu-picchu-built",
@@ -509,10 +601,12 @@
     "year": 1450,
     "category": "infrastructure",
     "description": "The Inca constructed their famous citadel high in the Andes Mountains.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/330px-Machu_Picchu%2C_2023_%28012%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 1562851,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Machu_Picchu"
   },
   {
     "name": "sistine-chapel-completed",
@@ -523,7 +617,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sistina-interno.jpg/330px-Sistina-interno.jpg",
     "image_width": 330,
-    "image_height": 448
+    "image_height": 448,
+    "wikipedia_views": 910296,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sistine_Chapel"
   },
   {
     "name": "kremlin-walls",
@@ -531,10 +627,12 @@
     "year": 1485,
     "category": "infrastructure",
     "description": "The iconic red walls of the Kremlin fortress were constructed.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Moscow_Kremlin_%288281675670%29.jpg/330px-Moscow_Kremlin_%288281675670%29.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 32058,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_Kremlin_Wall"
   },
   {
     "name": "st-peters-basilica-begins",
@@ -545,7 +643,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/330px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg",
     "image_width": 330,
-    "image_height": 172
+    "image_height": 172,
+    "wikipedia_views": 1119113,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/St._Peter's_Basilica"
   },
   {
     "name": "chateau-chambord",
@@ -556,7 +656,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg/330px-Aerial_image_of_Ch%C3%A2teau_de_Chambord_%28view_from_the_southeast%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 156401,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Château_de_Chambord"
   },
   {
     "name": "escorial-palace",
@@ -567,7 +669,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/330px-Monasterio_de_El_Escorial_en_Madrid.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 177488,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/El_Escorial"
   },
   {
     "name": "golden-temple-amritsar",
@@ -578,7 +682,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/The_Golden_Temple_of_Amrithsar_7.jpg/330px-The_Golden_Temple_of_Amrithsar_7.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 574629,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Temple"
   },
   {
     "name": "rialto-bridge",
@@ -589,7 +695,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Rialto_2025_4.jpg/330px-Rialto_2025_4.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 104057,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rialto_Bridge"
   },
   {
     "name": "taj-mahal-built",
@@ -600,7 +708,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg",
     "image_width": 330,
-    "image_height": 217
+    "image_height": 217,
+    "wikipedia_views": 532128,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mumtaz_Mahal"
   },
   {
     "name": "potala-palace",
@@ -611,7 +721,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Potala_Palace_HQ.jpg/330px-Potala_Palace_HQ.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 237654,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Potala_Palace"
   },
   {
     "name": "taj-mahal-completed",
@@ -622,7 +734,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg",
     "image_width": 330,
-    "image_height": 217
+    "image_height": 217,
+    "wikipedia_views": 2063920,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Taj_Mahal"
   },
   {
     "name": "versailles-expanded",
@@ -633,7 +747,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Versailles-Chateau-Jardins02.jpg/330px-Versailles-Chateau-Jardins02.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 735066,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Palace_of_Versailles"
   },
   {
     "name": "buckingham-palace",
@@ -641,10 +757,12 @@
     "year": 1703,
     "category": "infrastructure",
     "description": "The townhouse that would become the British monarch's residence was built.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Buckingham_Palace_UK.jpg/330px-Buckingham_Palace_UK.jpg",
     "image_width": 330,
-    "image_height": 215
+    "image_height": 215,
+    "wikipedia_views": 716184,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Buckingham_Palace"
   },
   {
     "name": "st-pauls-completed",
@@ -655,7 +773,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/St_Pauls_aerial_%28cropped%29.jpg/330px-St_Pauls_aerial_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 227
+    "image_height": 227,
+    "wikipedia_views": 534754,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/St_Paul's_Cathedral"
   },
   {
     "name": "ladoga-canal",
@@ -663,10 +783,12 @@
     "year": 1730,
     "category": "infrastructure",
     "description": "Construction of the Ladoga Canal in Russia was completed.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Ladogacanal.jpg/330px-Ladogacanal.jpg",
     "image_width": 330,
-    "image_height": 230
+    "image_height": 230,
+    "wikipedia_views": 4020,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ladoga_Canal"
   },
   {
     "name": "schonbrunn-palace",
@@ -677,7 +799,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/330px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
     "image_width": 330,
-    "image_height": 225
+    "image_height": 225,
+    "wikipedia_views": 265824,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Schönbrunn_Palace"
   },
   {
     "name": "catherine-palace",
@@ -688,7 +812,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg/330px-%D0%A6%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B5_%D0%A1%D0%B5%D0%BB%D0%BE._%D0%95%D0%BA%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D0%B4%D0%B2%D0%BE%D1%80%D0%B5%D1%86_1.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 72304,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Catherine_Palace"
   },
   {
     "name": "winter-palace-completed",
@@ -696,10 +822,12 @@
     "year": 1762,
     "category": "infrastructure",
     "description": "The Russian imperial residence in St. Petersburg was finished.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/RUS-2016-Aerial-SPB-Winter_Palace_%28crop%29.jpg/330px-RUS-2016-Aerial-SPB-Winter_Palace_%28crop%29.jpg",
     "image_width": 330,
-    "image_height": 196
+    "image_height": 196,
+    "wikipedia_views": 285218,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Winter_Palace"
   },
   {
     "name": "steam-engine",
@@ -710,7 +838,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Watt_James_von_Breda.jpg/330px-Watt_James_von_Breda.jpg",
     "image_width": 330,
-    "image_height": 414
+    "image_height": 414,
+    "wikipedia_views": 97210,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
   },
   {
     "name": "first-cotton-mill",
@@ -721,7 +851,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Arkright%27s_Mill_-_Cromford_29-04-06.jpg/330px-Arkright%27s_Mill_-_Cromford_29-04-06.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 16072,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cromford_Mill"
   },
   {
     "name": "iron-bridge",
@@ -732,7 +864,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Iron_Bridge_east_side_in_February_2019_%28cropped%29.jpg/330px-Iron_Bridge_east_side_in_February_2019_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 168
+    "image_height": 168,
+    "wikipedia_views": 68015,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Iron_Bridge"
   },
   {
     "name": "white-house-completed",
@@ -743,7 +877,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/White_House_north_and_south_sides.jpg/330px-White_House_north_and_south_sides.jpg",
     "image_width": 330,
-    "image_height": 378
+    "image_height": 378,
+    "wikipedia_views": 1554842,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/White_House"
   },
   {
     "name": "singapore-founded",
@@ -754,7 +890,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/George_Francis_Joseph_-_Sir_Thomas_Stamford_Bingley_Raffles.jpg/330px-George_Francis_Joseph_-_Sir_Thomas_Stamford_Bingley_Raffles.jpg",
     "image_width": 330,
-    "image_height": 427
+    "image_height": 427,
+    "wikipedia_views": 35694,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trading_post"
   },
   {
     "name": "erie-canal",
@@ -765,7 +903,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Erie_Canalway-_Tug-Lock.jpg/330px-Erie_Canalway-_Tug-Lock.jpg",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 438058,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Erie_Canal"
   },
   {
     "name": "first-railway",
@@ -774,7 +914,9 @@
     "category": "infrastructure",
     "description": "The Stockton and Darlington Railway became the world's first public railway.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg",
+    "wikipedia_views": 34249,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Timeline_of_railway_history"
   },
   {
     "name": "ohio-canals-authorized",
@@ -782,10 +924,12 @@
     "year": 1825,
     "category": "infrastructure",
     "description": "Ohio Legislature authorized construction of the Ohio and Erie Canal and Miami and Erie Canal.",
-    "difficulty": "medium",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Warren_County_Canal.jpg/330px-Warren_County_Canal.jpg",
     "image_width": 330,
-    "image_height": 241
+    "image_height": 241,
+    "wikipedia_views": 35668,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohio_and_Erie_Canal"
   },
   {
     "name": "menai-suspension-bridge",
@@ -796,7 +940,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/The_Menai_Suspension_Bridge_%2835349065306%29.jpg/330px-The_Menai_Suspension_Bridge_%2835349065306%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 46125,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Menai_Suspension_Bridge"
   },
   {
     "name": "liverpool-manchester-railway",
@@ -805,7 +951,9 @@
     "category": "infrastructure",
     "description": "The world's first intercity passenger railway opened in England.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg",
+    "wikipedia_views": 51053,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Liverpool_and_Manchester_Railway"
   },
   {
     "name": "telegraph",
@@ -816,7 +964,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/OptischerTelegraf.jpg/330px-OptischerTelegraf.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 191255,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Electrical_telegraph"
   },
   {
     "name": "crystal-palace",
@@ -827,7 +977,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Crystal_Palace_General_view_from_Water_Temple.jpg/330px-Crystal_Palace_General_view_from_Water_Temple.jpg",
     "image_width": 330,
-    "image_height": 251
+    "image_height": 251,
+    "wikipedia_views": 549465,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Crystal_Palace"
   },
   {
     "name": "india-first-railway",
@@ -836,7 +988,9 @@
     "category": "infrastructure",
     "description": "India's first passenger train ran between Mumbai and Thane.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Indian_Railways.svg/330px-Indian_Railways.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Indian_Railways.svg/330px-Indian_Railways.svg.png",
+    "wikipedia_views": 527877,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Indian_Railways"
   },
   {
     "name": "london-underground",
@@ -847,7 +1001,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Underground.svg/330px-Underground.svg.png",
     "image_width": 330,
-    "image_height": 269
+    "image_height": 269,
+    "wikipedia_views": 613573,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/London_Underground"
   },
   {
     "name": "brooklyn-bridge-begins",
@@ -855,10 +1011,12 @@
     "year": 1869,
     "category": "infrastructure",
     "description": "Work began on the first steel-wire suspension bridge.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/330px-Brooklyn_Bridge_Manhattan.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 687106,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge"
   },
   {
     "name": "suez-canal",
@@ -869,7 +1027,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Aerial_view_of_city_of_Suez_and_Suez_Canal.jpg/330px-Aerial_view_of_city_of_Suez_and_Suez_Canal.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 893750,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Suez_Canal"
   },
   {
     "name": "transcontinental-railroad",
@@ -880,7 +1040,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg/330px-East_and_West_Shaking_hands_at_the_laying_of_last_rail_Union_Pacific_Railroad_-_Restoration.jpg",
     "image_width": 330,
-    "image_height": 251
+    "image_height": 251,
+    "wikipedia_views": 78514,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transcontinental_railroad"
   },
   {
     "name": "light-bulb",
@@ -888,10 +1050,12 @@
     "year": 1879,
     "category": "infrastructure",
     "description": "Thomas Edison developed the practical incandescent light bulb.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Light-bulbs.jpg/330px-Light-bulbs.jpg",
     "image_width": 330,
-    "image_height": 317
+    "image_height": 317,
+    "wikipedia_views": 47416,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edison_light_bulb"
   },
   {
     "name": "brooklyn-bridge-completed",
@@ -902,7 +1066,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Brooklyn_Bridge_Manhattan.jpg/330px-Brooklyn_Bridge_Manhattan.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 687106,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge"
   },
   {
     "name": "first-skyscraper-chicago",
@@ -913,7 +1079,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Detroit_Photographic_Company_%280645%29.jpg/330px-Detroit_Photographic_Company_%280645%29.jpg",
     "image_width": 330,
-    "image_height": 429
+    "image_height": 429,
+    "wikipedia_views": 102879,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Early_skyscrapers"
   },
   {
     "name": "canadian-pacific-railway",
@@ -924,7 +1092,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Canadian_Pacific_Railway_poster_by_George_Young_Kauffman%2C_1924.jpg/960px-Canadian_Pacific_Railway_poster_by_George_Young_Kauffman%2C_1924.jpg",
     "image_width": 514,
-    "image_height": 768
+    "image_height": 768,
+    "wikipedia_views": 217628,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Canadian_Pacific_Railway"
   },
   {
     "name": "automobile",
@@ -935,7 +1105,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/1925_Ford_Model_T_touring.jpg/330px-1925_Ford_Model_T_touring.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 199103,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Benz_Patent-Motorwagen"
   },
   {
     "name": "statue-liberty",
@@ -946,7 +1118,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Front_view_of_Statue_of_Liberty_%28cropped%29.jpg/330px-Front_view_of_Statue_of_Liberty_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 506
+    "image_height": 506,
+    "wikipedia_views": 115980,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Liberty_Island"
   },
   {
     "name": "eiffel-tower",
@@ -957,7 +1131,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg/330px-Tour_Eiffel_Wikimedia_Commons_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 550
+    "image_height": 550,
+    "wikipedia_views": 52158,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eiffel_Tower_replicas_and_derivatives"
   },
   {
     "name": "ferris-wheel-invented",
@@ -968,7 +1144,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Ain_Dubai_View.jpg/330px-Ain_Dubai_View.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 61814,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ferris_Wheel_(1893)"
   },
   {
     "name": "tower-bridge-london",
@@ -979,7 +1157,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Tower_Bridge_at_Dawn.jpg/330px-Tower_Bridge_at_Dawn.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 360494,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tower_Bridge"
   },
   {
     "name": "flatiron-building",
@@ -990,7 +1170,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg/330px-Edificio_Fuller_%28Flatiron%29_en_2010_desde_el_Empire_State_crop_boxin.jpg",
     "image_width": 330,
-    "image_height": 625
+    "image_height": 625,
+    "wikipedia_views": 343053,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Flatiron_Building"
   },
   {
     "name": "trans-siberian-railway",
@@ -1001,7 +1183,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/VL_85-022_container_train.jpg/330px-VL_85-022_container_train.jpg",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 236,
+    "wikipedia_views": 302538,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trans-Siberian_Railway"
   },
   {
     "name": "panama-canal",
@@ -1012,7 +1196,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Panama_Canal_Map_EN.png/330px-Panama_Canal_Map_EN.png",
     "image_width": 330,
-    "image_height": 341
+    "image_height": 341,
+    "wikipedia_views": 1425408,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Panama_Canal"
   },
   {
     "name": "lincoln-memorial",
@@ -1020,10 +1206,12 @@
     "year": 1922,
     "category": "infrastructure",
     "description": "The memorial honoring Abraham Lincoln opened in Washington DC.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Aerial_view_of_Lincoln_Memorial_-_east_side_EDIT.jpeg/330px-Aerial_view_of_Lincoln_Memorial_-_east_side_EDIT.jpeg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 217302,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lincoln_Memorial"
   },
   {
     "name": "television",
@@ -1034,7 +1222,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Cptvdisplay.jpg/330px-Cptvdisplay.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 291056,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_television"
   },
   {
     "name": "la-city-hall",
@@ -1042,10 +1232,12 @@
     "year": 1928,
     "category": "infrastructure",
     "description": "The distinctive tower became LA's tallest building for decades.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Los_Angeles_City_Hall_2013.jpg/330px-Los_Angeles_City_Hall_2013.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 48738,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Los_Angeles_City_Hall"
   },
   {
     "name": "chrysler-building",
@@ -1056,7 +1248,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/330px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 503188,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chrysler_Building"
   },
   {
     "name": "empire-state-building",
@@ -1067,7 +1261,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
     "image_width": 330,
-    "image_height": 401
+    "image_height": 401,
+    "wikipedia_views": 1056937,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Empire_State_Building"
   },
   {
     "name": "radio-city-music-hall",
@@ -1078,7 +1274,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Radio_City_Music_Hall_%2851395756913%29.jpg/330px-Radio_City_Music_Hall_%2851395756913%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 216394,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Radio_City_Music_Hall"
   },
   {
     "name": "vatican-museum-spiral-staircase",
@@ -1086,10 +1284,12 @@
     "year": 1932,
     "category": "infrastructure",
     "description": "The iconic double-helix staircase was built in Vatican City.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Musei_vaticani_Coat_of_Arms.svg/330px-Musei_vaticani_Coat_of_Arms.svg.png",
     "image_width": 330,
-    "image_height": 180
+    "image_height": 180,
+    "wikipedia_views": 142368,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vatican_Museums"
   },
   {
     "name": "sydney-harbour-bridge",
@@ -1097,10 +1297,12 @@
     "year": 1932,
     "category": "infrastructure",
     "description": "The steel arch bridge connecting Sydney's north and south shores opened.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sydney_Harbour_Bridge-16_October_2025.jpg/330px-Sydney_Harbour_Bridge-16_October_2025.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 244369,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Harbour_Bridge"
   },
   {
     "name": "hoover-dam",
@@ -1111,7 +1313,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Ansel_Adams_-_National_Archives_79-AAB-01.jpg/330px-Ansel_Adams_-_National_Archives_79-AAB-01.jpg",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 264,
+    "wikipedia_views": 574362,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hoover_Dam"
   },
   {
     "name": "golden-gate-bridge",
@@ -1122,7 +1326,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Golden_Gate_Bridge_as_seen_from_Battery_East.jpg/330px-Golden_Gate_Bridge_as_seen_from_Battery_East.jpg",
     "image_width": 330,
-    "image_height": 206
+    "image_height": 206,
+    "wikipedia_views": 761470,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Gate_Bridge"
   },
   {
     "name": "oil-discovery-saudi",
@@ -1133,7 +1339,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/330px-Flag_of_Saudi_Arabia.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 671379,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Aramco"
   },
   {
     "name": "rockefeller-center",
@@ -1144,7 +1352,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/GE_Building_by_David_Shankbone.JPG/330px-GE_Building_by_David_Shankbone.JPG",
     "image_width": 330,
-    "image_height": 444
+    "image_height": 444,
+    "wikipedia_views": 282979,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rockefeller_Center"
   },
   {
     "name": "fallingwater",
@@ -1155,7 +1365,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fallingwater3.jpg/330px-Fallingwater3.jpg",
     "image_width": 330,
-    "image_height": 217
+    "image_height": 217,
+    "wikipedia_views": 480908,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fallingwater"
   },
   {
     "name": "mount-rushmore",
@@ -1166,7 +1378,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mount_Rushmore_detail_view_%28100MP%29.jpg/330px-Mount_Rushmore_detail_view_%28100MP%29.jpg",
     "image_width": 330,
-    "image_height": 224
+    "image_height": 224,
+    "wikipedia_views": 1678837,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Rushmore"
   },
   {
     "name": "autobahn-expanded",
@@ -1177,7 +1391,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Zeichen_330_-_Autobahn%2C_StVO_1992.svg/330px-Zeichen_330_-_Autobahn%2C_StVO_1992.svg.png",
     "image_width": 330,
-    "image_height": 331
+    "image_height": 331,
+    "wikipedia_views": 351311,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Autobahn"
   },
   {
     "name": "pentagon-completed",
@@ -1188,7 +1404,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/5-gon_cyclic_01.svg/320px-5-gon_cyclic_01.svg.png",
     "image_width": 320,
-    "image_height": 297
+    "image_height": 297,
+    "wikipedia_views": 985768,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Pentagon"
   },
   {
     "name": "jefferson-memorial",
@@ -1199,7 +1417,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/JeffersonMemorialNightFB.jpg/330px-JeffersonMemorialNightFB.jpg",
     "image_width": 330,
-    "image_height": 250
+    "image_height": 250,
+    "wikipedia_views": 71235,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jefferson_Memorial"
   },
   {
     "name": "british-railways-nationalized",
@@ -1207,10 +1427,12 @@
     "year": 1948,
     "category": "infrastructure",
     "description": "The British railway network is nationalized to form British Railways.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Railway_Station%2C_Reading_-_geograph.org.uk_-_4364509.jpg/330px-Railway_Station%2C_Reading_-_geograph.org.uk_-_4364509.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 89450,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nationalization"
   },
   {
     "name": "trans-arabian-pipeline",
@@ -1218,10 +1440,12 @@
     "year": 1950,
     "category": "infrastructure",
     "description": "A pipeline to transport Saudi oil to the Mediterranean was completed.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Tapline.png/330px-Tapline.png",
     "image_width": 330,
-    "image_height": 183
+    "image_height": 183,
+    "wikipedia_views": 16586,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trans-Arabian_Pipeline"
   },
   {
     "name": "farnsworth-house",
@@ -1229,10 +1453,12 @@
     "year": 1951,
     "category": "infrastructure",
     "description": "Mies van der Rohe's glass pavilion was completed in Illinois.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg/330px-Farnsworth_House_by_Mies_Van_Der_Rohe_-_exterior-8.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 78513,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Farnsworth_House"
   },
   {
     "name": "united-nations-hq",
@@ -1243,7 +1469,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Midtown_Manhattan_Skyline_004_%28cropped%29.jpg/330px-Midtown_Manhattan_Skyline_004_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 334112,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Headquarters_of_the_United_Nations"
   },
   {
     "name": "lever-house",
@@ -1251,10 +1479,12 @@
     "year": 1952,
     "category": "infrastructure",
     "description": "The glass curtain wall skyscraper pioneered modern office design.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Lever_House_390_Park_Avenue.jpg/330px-Lever_House_390_Park_Avenue.jpg",
     "image_width": 330,
-    "image_height": 425
+    "image_height": 425,
+    "wikipedia_views": 43293,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lever_House"
   },
   {
     "name": "notre-dame-du-haut",
@@ -1262,10 +1492,12 @@
     "year": 1955,
     "category": "infrastructure",
     "description": "Le Corbusier's sculptural chapel was completed at Ronchamp.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/59/RonchampCorbu.jpg/330px-RonchampCorbu.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 32864,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_du_Haut"
   },
   {
     "name": "interstate-highway-begins",
@@ -1276,7 +1508,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/I-80.svg/330px-I-80.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 58564,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_future_Interstate_Highways"
   },
   {
     "name": "seagram-building",
@@ -1287,7 +1521,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Seagram_Building_%2835098307116%29.jpg/330px-Seagram_Building_%2835098307116%29.jpg",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 126956,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seagram_Building"
   },
   {
     "name": "lego-brick-patent",
@@ -1295,10 +1531,12 @@
     "year": 1958,
     "category": "infrastructure",
     "description": "The Lego company patents the design of its Lego bricks, still compatible with bricks produced today.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/330px-LEGO_logo.svg.png",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 330,
+    "wikipedia_views": 49568,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lego_clone"
   },
   {
     "name": "sydney-opera-house-begins",
@@ -1306,10 +1544,12 @@
     "year": 1959,
     "category": "infrastructure",
     "description": "Work began on the iconic Australian performing arts center.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/330px-Sydney_Australia._%2821339175489%29.jpg",
     "image_width": 330,
-    "image_height": 203
+    "image_height": 203,
+    "wikipedia_views": 452997,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
   },
   {
     "name": "brasilia-built",
@@ -1320,7 +1560,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Planalto_Central_%28cropped%29.jpg/330px-Planalto_Central_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 158
+    "image_height": 158,
+    "wikipedia_views": 10629,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Brasília"
   },
   {
     "name": "berlin-wall-built",
@@ -1331,7 +1573,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Berlinermauer.jpg/330px-Berlinermauer.jpg",
     "image_width": 330,
-    "image_height": 251
+    "image_height": 251,
+    "wikipedia_views": 1003850,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Berlin_Wall"
   },
   {
     "name": "seattle-space-needle",
@@ -1342,7 +1586,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Space_Needle_2011-07-04.jpg/330px-Space_Needle_2011-07-04.jpg",
     "image_width": 330,
-    "image_height": 651
+    "image_height": 651,
+    "wikipedia_views": 324361,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Needle"
   },
   {
     "name": "twa-terminal",
@@ -1353,7 +1599,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG/330px-Ehemaliges_TWA-Terminal_am_John_F._Kennedy_International_Airport_in_New_York.JPG",
     "image_width": 330,
-    "image_height": 124
+    "image_height": 124,
+    "wikipedia_views": 91937,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/TWA_Flight_Center"
   },
   {
     "name": "marina-city",
@@ -1361,10 +1609,12 @@
     "year": 1964,
     "category": "infrastructure",
     "description": "The corn cob-shaped towers opened in Chicago.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg/330px-Marina_City%2C_Chicago%2C_Illinois%2C_Estados_Unidos%2C_2012-10-20%2C_DD_01.jpg",
     "image_width": 330,
-    "image_height": 449
+    "image_height": 449,
+    "wikipedia_views": 97431,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_City"
   },
   {
     "name": "verrazano-narrows-bridge",
@@ -1375,7 +1625,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Verrazano_Bridge2.jpg/330px-Verrazano_Bridge2.jpg",
     "image_width": 330,
-    "image_height": 296
+    "image_height": 296,
+    "wikipedia_views": 21461,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Verrazzano–Narrows_Bridge"
   },
   {
     "name": "shinkansen-opens",
@@ -1386,7 +1638,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/JR_East_Shinkansen_lineup_at_Niigata_Depot_201210.jpg/330px-JR_East_Shinkansen_lineup_at_Niigata_Depot_201210.jpg",
     "image_width": 330,
-    "image_height": 203
+    "image_height": 203,
+    "wikipedia_views": 791774,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shinkansen"
   },
   {
     "name": "gateway-arch",
@@ -1397,7 +1651,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/330px-St_Louis_night_expblend_cropped.jpg",
     "image_width": 330,
-    "image_height": 321
+    "image_height": 321,
+    "wikipedia_views": 416106,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gateway_Arch"
   },
   {
     "name": "astrodome-opens",
@@ -1408,7 +1664,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Reliant_Astrodome_in_January_2014.jpg/330px-Reliant_Astrodome_in_January_2014.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 242770,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Astrodome"
   },
   {
     "name": "vehicle-assembly-building",
@@ -1419,7 +1677,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/VAB_and_SLS.jpg/330px-VAB_and_SLS.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 68827,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vehicle_Assembly_Building"
   },
   {
     "name": "world-trade-center-begins",
@@ -1427,10 +1687,12 @@
     "year": 1968,
     "category": "infrastructure",
     "description": "Work began on the Twin Towers in Lower Manhattan.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/WTC-1970-under-construction.jpg/330px-WTC-1970-under-construction.jpg",
     "image_width": 330,
-    "image_height": 501
+    "image_height": 501,
+    "wikipedia_views": 83657,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Construction_of_the_World_Trade_Center"
   },
   {
     "name": "john-hancock-center",
@@ -1441,7 +1703,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg/330px-Chicago_in_2022_John_Hancock_Center_%2852054925135%29.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 46566,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/875_North_Michigan_Avenue"
   },
   {
     "name": "lake-pontchartrain-causeway",
@@ -1449,10 +1713,12 @@
     "year": 1969,
     "category": "infrastructure",
     "description": "The world's longest bridge over water was doubled in Louisiana.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg/330px-Lake_Pontchatrain_Causeway_Aerial_-_Jan2013_%2832382802513%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 192262,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Pontchartrain"
   },
   {
     "name": "aswan-high-dam",
@@ -1463,7 +1729,9 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/aswan-high-dam_h0yu5c?_a=BAMAMiTC0",
     "image_width": 660,
-    "image_height": 660
+    "image_height": 660,
+    "wikipedia_views": 156147,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aswan_Dam"
   },
   {
     "name": "transamerica-pyramid",
@@ -1471,10 +1739,12 @@
     "year": 1972,
     "category": "infrastructure",
     "description": "San Francisco's distinctive pyramid-shaped skyscraper was finished.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Transamerica_Pyramid_from_Coit_Tower.jpg/330px-Transamerica_Pyramid_from_Coit_Tower.jpg",
     "image_width": 330,
-    "image_height": 496
+    "image_height": 496,
+    "wikipedia_views": 141610,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transamerica_Pyramid"
   },
   {
     "name": "sydney-opera-house-completed",
@@ -1485,7 +1755,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sydney_Australia._%2821339175489%29.jpg/330px-Sydney_Australia._%2821339175489%29.jpg",
     "image_width": 330,
-    "image_height": 203
+    "image_height": 203,
+    "wikipedia_views": 452997,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
   },
   {
     "name": "sears-tower",
@@ -1496,7 +1768,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Sears_Tower%2C_Wacker_Drive_and_Jackson_Boulevard%2C_Chicago%2C_IL_-_54189600901.jpg/330px-Sears_Tower%2C_Wacker_Drive_and_Jackson_Boulevard%2C_Chicago%2C_IL_-_54189600901.jpg",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 696991,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Willis_Tower"
   },
   {
     "name": "cn-tower",
@@ -1507,7 +1781,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Toronto_Skyline_viewed_from_Algonquin_Island_%2816-9_crop%29.jpg/330px-Toronto_Skyline_viewed_from_Algonquin_Island_%2816-9_crop%29.jpg",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 531326,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CN_Tower"
   },
   {
     "name": "apple-founded",
@@ -1515,10 +1791,12 @@
     "year": 1976,
     "category": "infrastructure",
     "description": "Steve Jobs and Steve Wozniak founded Apple in a garage.",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/330px-Apple_logo_black.svg.png",
     "image_width": 330,
-    "image_height": 406
+    "image_height": 406,
+    "wikipedia_views": 2755442,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_Inc."
   },
   {
     "name": "pompidou-center",
@@ -1526,10 +1804,12 @@
     "year": 1977,
     "category": "infrastructure",
     "description": "The inside-out building with exposed pipes opened in Paris.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg/330px-Le_logo_du_Centre_Pompidou_redessin%C3%A9_en_2019_%285_bandes%29.svg.png",
     "image_width": 330,
-    "image_height": 234
+    "image_height": 234,
+    "wikipedia_views": 140636,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Centre_Pompidou"
   },
   {
     "name": "st-gotthard-road-tunnel",
@@ -1537,10 +1817,12 @@
     "year": 1980,
     "category": "infrastructure",
     "description": "The world's longest road tunnel at the time opened in Switzerland.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Gotthard_Road_Tunnel_Switzerland.jpg/330px-Gotthard_Road_Tunnel_Switzerland.jpg",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 58463,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gotthard_Road_Tunnel"
   },
   {
     "name": "humber-bridge",
@@ -1548,10 +1830,12 @@
     "year": 1981,
     "category": "infrastructure",
     "description": "The world's longest suspension bridge opened in England.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Humber_Bridge2.png/330px-Humber_Bridge2.png",
     "image_width": 330,
-    "image_height": 274
+    "image_height": 274,
+    "wikipedia_views": 90133,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Humber_Bridge"
   },
   {
     "name": "itaipu-dam",
@@ -1562,7 +1846,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Itaipu_geral.jpg/330px-Itaipu_geral.jpg",
     "image_width": 330,
-    "image_height": 210
+    "image_height": 210,
+    "wikipedia_views": 153101,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Itaipu_Dam"
   },
   {
     "name": "at-and-t-building",
@@ -1570,10 +1856,12 @@
     "year": 1984,
     "category": "infrastructure",
     "description": "Philip Johnson's postmodern skyscraper with its Chippendale top opened.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sony_Building_by_David_Shankbone_crop.jpg/330px-Sony_Building_by_David_Shankbone_crop.jpg",
     "image_width": 330,
-    "image_height": 565
+    "image_height": 565,
+    "wikipedia_views": 17737,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/AT&T_Building_(Indianapolis)"
   },
   {
     "name": "lloyds-building",
@@ -1581,10 +1869,12 @@
     "year": 1986,
     "category": "infrastructure",
     "description": "Richard Rogers' high-tech building with external services opened in London.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Lloyds_building_taken_2011.jpg/330px-Lloyds_building_taken_2011.jpg",
     "image_width": 330,
-    "image_height": 462
+    "image_height": 462,
+    "wikipedia_views": 116556,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lloyd's_building"
   },
   {
     "name": "sunshine-skyway-bridge",
@@ -1592,10 +1882,12 @@
     "year": 1987,
     "category": "infrastructure",
     "description": "The cable-stayed bridge replaced a structure hit by a ship in Tampa Bay.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/SunshineSkywayBridge-4SC_6643-15.jpg/330px-SunshineSkywayBridge-4SC_6643-15.jpg",
     "image_width": 330,
-    "image_height": 228
+    "image_height": 228,
+    "wikipedia_views": 256165,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sunshine_Skyway_Bridge"
   },
   {
     "name": "channel-tunnel-begins",
@@ -1603,10 +1895,12 @@
     "year": 1988,
     "category": "infrastructure",
     "description": "Work began on the undersea tunnel connecting England and France.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 212,
+    "wikipedia_views": 779237,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Channel_Tunnel"
   },
   {
     "name": "seikan-tunnel",
@@ -1617,7 +1911,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Inside_seikan_tunnel.JPG/330px-Inside_seikan_tunnel.JPG",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "wikipedia_views": 142821,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seikan_Tunnel"
   },
   {
     "name": "louvre-pyramid",
@@ -1628,7 +1924,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Louvre_Pyramid.jpg/330px-Louvre_Pyramid.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 155049,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Louvre_Pyramid"
   },
   {
     "name": "eurotunnel-boring",
@@ -1639,7 +1937,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 212,
+    "wikipedia_views": 3372,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Breakthrough"
   },
   {
     "name": "bank-of-china-tower",
@@ -1648,7 +1948,9 @@
     "category": "infrastructure",
     "description": "I.M. Pei's geometric skyscraper opened in Hong Kong.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg/330px-BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg/330px-BOC_Headquarters_at_Xidan_%2820171123140827%29.jpg",
+    "wikipedia_views": 64719,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bank_of_China_Tower_(Hong_Kong)"
   },
   {
     "name": "canary-wharf-tower",
@@ -1659,7 +1961,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/London_MMB_S6_Canary_Wharf.jpg/330px-London_MMB_S6_Canary_Wharf.jpg",
     "image_width": 330,
-    "image_height": 589
+    "image_height": 589,
+    "wikipedia_views": 94776,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/One_Canada_Square"
   },
   {
     "name": "chunnel-completed",
@@ -1670,7 +1974,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg/330px-TGV_TMST_3011-2_-_Sortie_Tunnel_sous_la_Manche_%C3%A0_Coquelles.jpg",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 212,
+    "wikipedia_views": 779237,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Channel_Tunnel"
   },
   {
     "name": "denver-airport",
@@ -1681,7 +1987,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/09077AD.pdf/page1-320px-09077AD.pdf.jpg",
     "image_width": 320,
-    "image_height": 491
+    "image_height": 491,
+    "wikipedia_views": 553971,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Denver_International_Airport"
   },
   {
     "name": "bilbao-metro",
@@ -1689,10 +1997,12 @@
     "year": 1995,
     "category": "infrastructure",
     "description": "Norman Foster's futuristic metro system opened in Spain.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bilbao_Metro_05_2012_2401.jpg/330px-Bilbao_Metro_05_2012_2401.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 28284,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bilbao_metro"
   },
   {
     "name": "guggenheim-bilbao",
@@ -1703,7 +2013,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg/330px-Museo_Guggenheim%2C_Bilbao_%2831273245344%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 220431,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Guggenheim_Museum_Bilbao"
   },
   {
     "name": "confederation-bridge",
@@ -1711,10 +2023,12 @@
     "year": 1997,
     "category": "infrastructure",
     "description": "The longest bridge over ice-covered water connected PEI to mainland Canada.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Confederation_Bridge_during_winter.jpg/330px-Confederation_Bridge_during_winter.jpg",
     "image_width": 330,
-    "image_height": 211
+    "image_height": 211,
+    "wikipedia_views": 134905,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Confederation_Bridge"
   },
   {
     "name": "petronas-towers",
@@ -1725,7 +2039,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Petronas_Towers_Logo.svg/330px-Petronas_Towers_Logo.svg.png",
     "image_width": 330,
-    "image_height": 188
+    "image_height": 188,
+    "wikipedia_views": 578865,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Petronas_Towers"
   },
   {
     "name": "hong-kong-airport",
@@ -1736,7 +2052,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/HongKongAirportlogo.svg/320px-HongKongAirportlogo.svg.png",
     "image_width": 320,
-    "image_height": 166
+    "image_height": 166,
+    "wikipedia_views": 477161,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_International_Airport"
   },
   {
     "name": "akashi-kaikyo-bridge",
@@ -1747,7 +2065,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Akashi_Bridge.JPG/330px-Akashi_Bridge.JPG",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 219,
+    "wikipedia_views": 71853,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Akashi_Kaikyo_Bridge"
   },
   {
     "name": "great-belt-bridge",
@@ -1755,10 +2075,12 @@
     "year": 1998,
     "category": "infrastructure",
     "description": "The longest combined road and rail bridge opened in Denmark.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg/330px-Storeb%C3%A6ltsbroen_from_Sj%C3%A6lland.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "wikipedia_views": 70556,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Belt_Bridge"
   },
   {
     "name": "international-space-station",
@@ -1766,10 +2088,12 @@
     "year": 1998,
     "category": "infrastructure",
     "description": "Assembly of the International Space Station began in orbit.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/ISS-assembly-animation.gif/330px-ISS-assembly-animation.gif",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 186,
+    "wikipedia_views": 1548857,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/International_Space_Station"
   },
   {
     "name": "millennium-dome",
@@ -1780,7 +2104,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Millennium_Dome_1.jpg/330px-Millennium_Dome_1.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 283583,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Millennium_Dome"
   },
   {
     "name": "burj-al-arab",
@@ -1791,7 +2117,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg/330px-Burj_Al_Arab%2C_Dubai%2C_by_Joi_Ito_Dec2007.jpg",
     "image_width": 330,
-    "image_height": 462
+    "image_height": 462,
+    "wikipedia_views": 281324,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burj_Al_Arab"
   },
   {
     "name": "tate-modern",
@@ -1802,7 +2130,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Tate_Modern_-_Bankside_Power_Station.jpg/330px-Tate_Modern_-_Bankside_Power_Station.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 152474,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tate_Modern"
   },
   {
     "name": "oresund-bridge",
@@ -1813,7 +2143,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/%C3%98resund_Bridge_from_the_air_in_September_2015.jpg/330px-%C3%98resund_Bridge_from_the_air_in_September_2015.jpg",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 247,
+    "wikipedia_views": 302330,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Øresund_Bridge"
   },
   {
     "name": "london-eye",
@@ -1824,7 +2156,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/London-Eye-2009.JPG/330px-London-Eye-2009.JPG",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 316762,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/London_Eye"
   },
   {
     "name": "jewish-museum-berlin",
@@ -1835,7 +2169,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Jewish_Museum_Berlin_logo.svg/320px-Jewish_Museum_Berlin_logo.svg.png",
     "image_width": 320,
-    "image_height": 138
+    "image_height": 138,
+    "wikipedia_views": 27128,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jewish_Museum_Berlin"
   },
   {
     "name": "delhi-metro",
@@ -1846,7 +2182,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/DelhiMetroYellowLine.JPG/330px-DelhiMetroYellowLine.JPG",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 480466,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Metro"
   },
   {
     "name": "gwadar-port",
@@ -1854,10 +2192,12 @@
     "year": 2002,
     "category": "infrastructure",
     "description": "Pakistan began developing a deep-sea port with Chinese investment.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Gwadar_Port_Logo.jpg",
     "image_width": 316,
-    "image_height": 316
+    "image_height": 316,
+    "wikipedia_views": 70832,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gwadar_Port"
   },
   {
     "name": "swiss-re-building",
@@ -1868,7 +2208,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/30_St_Mary_Axe%2C_%27Gherkin%27.JPG/330px-30_St_Mary_Axe%2C_%27Gherkin%27.JPG",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "wikipedia_views": 269092,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Gherkin"
   },
   {
     "name": "millau-viaduct",
@@ -1879,7 +2221,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/ViaducdeMillau.jpg/330px-ViaducdeMillau.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 240613,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Millau_Viaduct"
   },
   {
     "name": "taipei-101",
@@ -1890,7 +2234,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Taipei_101_logo.svg/330px-Taipei_101_logo.svg.png",
     "image_width": 330,
-    "image_height": 142
+    "image_height": 142,
+    "wikipedia_views": 674072,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Taipei_101"
   },
   {
     "name": "three-gorges-dam",
@@ -1901,7 +2247,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/ThreeGorgesDam-China2009.jpg/330px-ThreeGorgesDam-China2009.jpg",
     "image_width": 330,
-    "image_height": 205
+    "image_height": 205,
+    "wikipedia_views": 773432,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Gorges_Dam"
   },
   {
     "name": "palm-jumeirah",
@@ -1912,7 +2260,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg/330px-Artificial_Archipelagos%2C_Dubai%2C_United_Arab_Emirates_ISS022-E-024940_lrg_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 322
+    "image_height": 322,
+    "wikipedia_views": 207880,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Palm_Jumeirah"
   },
   {
     "name": "beijing-national-stadium",
@@ -1923,7 +2273,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Beijing_China_Beijing-National-Stadium-01.jpg/330px-Beijing_China_Beijing-National-Stadium-01.jpg",
     "image_width": 330,
-    "image_height": 149
+    "image_height": 149,
+    "wikipedia_views": 112068,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beijing_National_Stadium"
   },
   {
     "name": "cern-lhc",
@@ -1934,7 +2286,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/LHC.svg/330px-LHC.svg.png",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 233,
+    "wikipedia_views": 491100,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Large_Hadron_Collider"
   },
   {
     "name": "singapore-flyer",
@@ -1942,8 +2296,10 @@
     "year": 2008,
     "category": "infrastructure",
     "description": "The world's largest observation wheel at the time opened.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Singapore_Flyer_20250903.jpg/330px-Singapore_Flyer_20250903.jpg"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Singapore_Flyer_20250903.jpg/330px-Singapore_Flyer_20250903.jpg",
+    "wikipedia_views": 37110,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Singapore_Flyer"
   },
   {
     "name": "china-high-speed-rail",
@@ -1954,7 +2310,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/CR400BF-GZ-5143_and_5203_at_Xidian_%2820210907094342%29.jpg/330px-CR400BF-GZ-5143_and_5203_at_Xidian_%2820210907094342%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 254483,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/High-speed_rail_in_China"
   },
   {
     "name": "crossrail-begins",
@@ -1962,10 +2320,12 @@
     "year": 2009,
     "category": "infrastructure",
     "description": "Work began on London's massive east-west rail tunnel project.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Elizabeth_line_roundel.svg/330px-Elizabeth_line_roundel.svg.png",
     "image_width": 330,
-    "image_height": 269
+    "image_height": 269,
+    "wikipedia_views": 83427,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crossrail_2"
   },
   {
     "name": "burj-khalifa",
@@ -1976,7 +2336,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg/330px-Burj_Khalifa_%28worlds_tallest_building%29_and_the_Dubai_skyline_%2825781049892%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 2077306,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burj_Khalifa"
   },
   {
     "name": "marina-bay-sands",
@@ -1987,7 +2349,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Marina_Bay_Sands_%28I%29.jpg/330px-Marina_Bay_Sands_%28I%29.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 358212,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Marina_Bay_Sands"
   },
   {
     "name": "danyang-kunshan-grand-bridge",
@@ -1995,10 +2359,12 @@
     "year": 2010,
     "category": "infrastructure",
     "description": "The world's longest bridge opened as part of Beijing-Shanghai rail line.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/201603_Danyang-Kunshan_grand_bridge_%28wuxi%29_%28cropped%29.JPG/330px-201603_Danyang-Kunshan_grand_bridge_%28wuxi%29_%28cropped%29.JPG",
     "image_width": 330,
-    "image_height": 122
+    "image_height": 122,
+    "wikipedia_views": 162786,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Danyang–Kunshan_Grand_Bridge"
   },
   {
     "name": "shard-completed",
@@ -2006,10 +2372,12 @@
     "year": 2012,
     "category": "infrastructure",
     "description": "Western Europe's tallest building opened in London.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/The_Shard_at_sunset_2017_%28cropped%29.jpg/330px-The_Shard_at_sunset_2017_%28cropped%29.jpg",
     "image_width": 330,
-    "image_height": 609
+    "image_height": 609,
+    "wikipedia_views": 366643,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Shard"
   },
   {
     "name": "jeddah-tower-begins",
@@ -2017,10 +2385,12 @@
     "year": 2013,
     "category": "infrastructure",
     "description": "Work began on what will be the world's first kilometer-tall building.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/330px-Flag_of_Saudi_Arabia.svg.png",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 898622,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jeddah_Tower"
   },
   {
     "name": "one-world-trade",
@@ -2031,7 +2401,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/One_WTC_logo.svg/320px-One_WTC_logo.svg.png",
     "image_width": 320,
-    "image_height": 148
+    "image_height": 148,
+    "wikipedia_views": 1009406,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/One_World_Trade_Center"
   },
   {
     "name": "gotthard-base-tunnel",
@@ -2042,7 +2414,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg/330px-20141120_gotthard-basistunnel02-wikipedia-hannes-ortlieb.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 170091,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gotthard_Base_Tunnel"
   },
   {
     "name": "apple-park",
@@ -2053,7 +2427,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Aerial_view_of_Apple_Park_dllu.jpg/330px-Aerial_view_of_Apple_Park_dllu.jpg",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 220,
+    "wikipedia_views": 416166,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apple_Park"
   },
   {
     "name": "hong-kong-zhuhai-macau-bridge",
@@ -2061,10 +2437,12 @@
     "year": 2018,
     "category": "infrastructure",
     "description": "The world's longest sea crossing bridge opened in China.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg/330px-West_section_of_Hong_Kong-Zhuhai-Macau_Bridge_%2820180902174105%29.jpg",
     "image_width": 330,
-    "image_height": 215
+    "image_height": 215,
+    "wikipedia_views": 181377,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong–Zhuhai–Macau_Bridge"
   },
   {
     "name": "crimean-bridge",
@@ -2075,7 +2453,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%81%D1%82_13_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2019_%D0%B3%D0%BE%D0%B4%D0%B0_%281%29.jpg/330px-%D0%9A%D1%80%D1%8B%D0%BC%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D1%81%D1%82_13_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2019_%D0%B3%D0%BE%D0%B4%D0%B0_%281%29.jpg",
     "image_width": 330,
-    "image_height": 239
+    "image_height": 239,
+    "wikipedia_views": 144470,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crimean_Bridge"
   },
   {
     "name": "statue-unity",
@@ -2086,7 +2466,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Statue_of_Unity.jpg/330px-Statue_of_Unity.jpg",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 495,
+    "wikipedia_views": 644378,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Statue_of_Unity"
   },
   {
     "name": "sagrada-familia-progress",
@@ -2094,10 +2476,12 @@
     "year": 2021,
     "category": "infrastructure",
     "description": "The tallest tower of Gaudí's unfinished basilica was topped out.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg/330px-%CE%A3%CE%B1%CE%B3%CF%81%CE%AC%CE%B4%CE%B1_%CE%A6%CE%B1%CE%BC%CE%AF%CE%BB%CE%B9%CE%B1_2941.jpg",
     "image_width": 330,
-    "image_height": 488
+    "image_height": 488,
+    "wikipedia_views": 1766581,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sagrada_Família"
   },
   {
     "name": "crossrail-elizabeth-line",
@@ -2108,7 +2492,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Elizabeth_line_roundel.svg/330px-Elizabeth_line_roundel.svg.png",
     "image_width": 330,
-    "image_height": 269
+    "image_height": 269,
+    "wikipedia_views": 400434,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Elizabeth_line"
   },
   {
     "name": "merdeka-118",
@@ -2116,10 +2502,12 @@
     "year": 2023,
     "category": "infrastructure",
     "description": "The second-tallest building in the world was completed in Kuala Lumpur.",
-    "difficulty": "hard",
+    "difficulty": "very-hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg/330px-Merdeka_Tower_20241022_-_full_2_%28Cropped%29.jpg",
     "image_width": 330,
-    "image_height": 642
+    "image_height": 642,
+    "wikipedia_views": 671453,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Merdeka_118"
   },
   {
     "name": "newgrange-built",
@@ -2128,7 +2516,9 @@
     "category": "infrastructure",
     "description": "The Irish passage tomb was constructed, predating the Egyptian pyramids by 500 years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Irelands_history.jpg/330px-Irelands_history.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Irelands_history.jpg/330px-Irelands_history.jpg",
+    "wikipedia_views": 205687,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Newgrange"
   },
   {
     "name": "museum-alexandria-founded",
@@ -2136,10 +2526,12 @@
     "year": -290,
     "category": "infrastructure",
     "description": "The Mouseion of Alexandria was established by Ptolemy I as a center of learning, housing the famous Library of Alexandria.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Ancientlibraryalex.jpg/330px-Ancientlibraryalex.jpg",
     "image_width": 330,
-    "image_height": 336
+    "image_height": 336,
+    "wikipedia_views": 784234,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexandria"
   },
   {
     "name": "globe-theatre-built",
@@ -2148,7 +2540,9 @@
     "category": "infrastructure",
     "description": "Shakespeare's Globe Theatre was constructed in London, becoming the primary venue for his plays and the Lord Chamberlain's Men.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wenceslaus-Hollar-The-second-Globe-playhouse-detail.png/330px-Wenceslaus-Hollar-The-second-Globe-playhouse-detail.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Wenceslaus-Hollar-The-second-Globe-playhouse-detail.png/330px-Wenceslaus-Hollar-The-second-Globe-playhouse-detail.png",
+    "wikipedia_views": 224071,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Globe_Theatre"
   },
   {
     "name": "new-amsterdam-becomes-new-york",
@@ -2159,7 +2553,9 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/AMH-6831-KB_View_of_New_Amsterdam.jpg/330px-AMH-6831-KB_View_of_New_Amsterdam.jpg",
     "image_width": 330,
-    "image_height": 258
+    "image_height": 258,
+    "wikipedia_views": 44581,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Amsterdam,_New_York"
   },
   {
     "name": "metropolitan-police-founded",
@@ -2167,10 +2563,12 @@
     "year": 1829,
     "category": "infrastructure",
     "description": "Sir Robert Peel established the Metropolitan Police Service in London, creating the first modern professional police force.",
-    "difficulty": "medium",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Badge_of_the_Metropolitan_Police_Service_%28Charles_III%29.svg/330px-Badge_of_the_Metropolitan_Police_Service_%28Charles_III%29.svg.png",
     "image_width": 330,
-    "image_height": 387
+    "image_height": 387,
+    "wikipedia_views": 282554,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Metropolitan_Police"
   },
   {
     "name": "transatlantic-cable-completed",
@@ -2179,7 +2577,9 @@
     "category": "infrastructure",
     "description": "The first permanent transatlantic telegraph cable connected Europe and North America, enabling instant communication across the ocean.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg/330px-Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg/330px-Landing_of_the_Atlantic_Cable_of_1866%2C_Heart%27s_Content%2C_Newfoundland.jpg",
+    "wikipedia_views": 170032,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transatlantic_telegraph_cable"
   },
   {
     "name": "great-railroad-strike-1877",
@@ -2188,7 +2588,9 @@
     "category": "infrastructure",
     "description": "The first major American railroad strike began in West Virginia and spread nationwide, marking a turning point in U.S. labor history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Harpers_8_11_1877_Blockade_of_Engines_at_Martinsburg_W_VA.jpg/330px-Harpers_8_11_1877_Blockade_of_Engines_at_Martinsburg_W_VA.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Harpers_8_11_1877_Blockade_of_Engines_at_Martinsburg_W_VA.jpg/330px-Harpers_8_11_1877_Blockade_of_Engines_at_Martinsburg_W_VA.jpg",
+    "wikipedia_views": 89116,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Railroad_Strike_of_1877"
   },
   {
     "name": "first-commercial-radio-broadcast",
@@ -2197,6 +2599,8 @@
     "category": "infrastructure",
     "description": "KDKA in Pittsburgh broadcast the Harding-Cox presidential election results, marking the start of commercial radio broadcasting.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg/330px-Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg/330px-Albert_Einstein_with_engineers_and_scientists_-_RCA_radio_station_-_Hagley_Archives_-_restoration1.jpg",
+    "wikipedia_views": 112969,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_radio"
   }
 ]
