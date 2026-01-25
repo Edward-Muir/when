@@ -2,12 +2,12 @@ import React from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 
-const DIFFICULTY_LABELS: Record<Difficulty, string> = {
-  easy: 'Easy',
-  medium: 'Medium',
-  hard: 'Hard',
-  'very-hard': 'Expert',
-};
+const DIFFICULTY_LABELS = new Map<Difficulty, string>([
+  ['easy', 'Easy'],
+  ['medium', 'Medium'],
+  ['hard', 'Hard'],
+  ['very-hard', 'Expert'],
+]);
 
 export interface FilterControlsProps {
   selectedDifficulties: Difficulty[];
@@ -70,7 +70,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
                 }
               `}
             >
-              {DIFFICULTY_LABELS[difficulty]}
+              {DIFFICULTY_LABELS.get(difficulty)}
             </button>
           ))}
         </div>
