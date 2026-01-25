@@ -1,6 +1,6 @@
-const CACHE_NAME = 'when-v0.3.12';
-const STATIC_CACHE = 'when-static-v0.3.12';
-const DYNAMIC_CACHE = 'when-dynamic-v0.3.12';
+const CACHE_NAME = 'when-v0.3.13';
+const STATIC_CACHE = 'when-static-v0.3.13';
+const DYNAMIC_CACHE = 'when-dynamic-v0.3.13';
 
 // Static assets to cache on install
 const STATIC_ASSETS = [
