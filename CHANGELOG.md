@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.0](https://github.com/Edward-Muir/when/compare/v0.3.13...v0.4.0) (2026-01-25)
+
+
+### Features
+
+* Only Easy and Medium events included in daily challenge by default ([60622f2](https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858))
+* Update event difficulties. Exclude very hard events by default ([50172be](https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d))
+
+
+### Bug Fixes
+
+* Prune evenys ([640142e](https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2))
+
 ## [0.3.13](https://github.com/Edward-Muir/when/compare/v0.3.12...v0.3.13) (2026-01-25)
 
 ## [0.3.12](https://github.com/Edward-Muir/when/compare/v0.3.11...v0.3.12) (2026-01-21)
