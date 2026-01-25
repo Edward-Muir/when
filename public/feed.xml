@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Jan 2026 19:02:28 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jan 2026 19:08:36 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.4.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.4.1</guid>
+      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Correct ESlint error (<a href="https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1">e6cdb4d</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.4.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.3.6</guid>
       <pubDate>Sat, 10 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add pill note on daily challenge theme (<a href="https://github.com/Edward-Muir/when/commit/412077d93560dd0344d03c749599111374bdaee8">412077d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.3.5</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.3.5</guid>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Start with 5 cards in daily challenge (<a href="https://github.com/Edward-Muir/when/commit/d43799087ba3db1d02a1c23b252db096e690469a">d437990</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

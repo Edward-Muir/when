@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.1](https://github.com/Edward-Muir/when/compare/v0.4.0...v0.4.1) (2026-01-25)
+
+
+### Bug Fixes
+
+* Correct ESlint error ([e6cdb4d](https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1))
+
 ## [0.4.0](https://github.com/Edward-Muir/when/compare/v0.3.13...v0.4.0) (2026-01-25)
 
 
