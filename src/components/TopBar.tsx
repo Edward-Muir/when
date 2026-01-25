@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, RefreshCw } from 'lucide-react';
+import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
+import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
 import { GameMode } from '../types';
 
@@ -32,6 +33,7 @@ const TopBar: React.FC<TopBarProps> = ({
   const { updateAvailable } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [updateDismissed, setUpdateDismissed] = useState(false);
 
   const buttonClass = `
     p-2 rounded-xl
@@ -71,17 +73,6 @@ const TopBar: React.FC<TopBarProps> = ({
           )}
 
           <div className="flex items-center gap-2">
-            {/* Update Available Button */}
-            {updateAvailable && (
-              <button
-                onClick={() => window.location.reload()}
-                className={buttonClass}
-                aria-label="Update available - click to refresh"
-              >
-                <RefreshCw className={iconClass} />
-              </button>
-            )}
-
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
@@ -131,6 +122,12 @@ const TopBar: React.FC<TopBarProps> = ({
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
         onViewTimeline={onViewTimeline}
+      />
+
+      {/* Update Available Popup */}
+      <UpdatePopup
+        isVisible={updateAvailable && !updateDismissed}
+        onDismiss={() => setUpdateDismissed(true)}
       />
     </>
   );
