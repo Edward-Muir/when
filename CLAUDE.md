@@ -188,3 +188,22 @@ git push --follow-tags
 - `.versionrc.json` - Release configuration
 - `scripts/inject-version.js` - Generates version.ts before builds
 - `scripts/generate-rss.js` - Generates RSS from CHANGELOG.md
+
+## Internal Tools
+
+### Event Editor (`tools/event-editor/`)
+
+A standalone web tool for managing historical events. Features:
+
+- Browse/edit/add/delete events
+- Move events between categories
+- Fetch image dimensions and Wikipedia pageviews
+- Automatic backups on save
+
+```bash
+cd tools/event-editor
+npm install
+npm run dev
+```
+
+See [docs/event-editor-tool.md](docs/event-editor-tool.md) for full documentation.
