@@ -1,0 +1,1654 @@
+[
+  {
+    "name": "cave-paintings",
+    "difficulty": "medium",
+    "reasoning": "Prehistoric cave paintings are known but vague on timing. 'First' suggests very early but hard to pinpoint exact era."
+  },
+  {
+    "name": "lascaux-cave-paintings",
+    "difficulty": "medium",
+    "reasoning": "Lascaux is well-known (316K views), prehistoric setting clear but exact timing hard."
+  },
+  {
+    "name": "first-writing",
+    "difficulty": "medium",
+    "reasoning": "Writing invention is well-known, Mesopotamia/Sumerians anchor to ancient era (~3000 BCE)."
+  },
+  {
+    "name": "pyramids-giza",
+    "difficulty": "easy",
+    "reasoning": "Iconic landmark (1.4M views), strongly associated with ancient Egypt (~2500 BCE)."
+  },
+  {
+    "name": "epic-gilgamesh",
+    "difficulty": "hard",
+    "reasoning": "Known to literature enthusiasts but Mesopotamia timing vague for most players."
+  },
+  {
+    "name": "code-hammurabi",
+    "difficulty": "medium",
+    "reasoning": "Well-known legal code (499K views), Babylonian context places it in ancient era."
+  },
+  {
+    "name": "book-of-dead",
+    "difficulty": "hard",
+    "reasoning": "Ancient Egyptian context clear but exact timing within Egyptian history difficult."
+  },
+  {
+    "name": "rigveda-composed",
+    "difficulty": "very-hard",
+    "reasoning": "Specialized knowledge, ancient India timing very difficult to pinpoint."
+  },
+  {
+    "name": "zoroaster-teaches",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure figure for most, Persian context provides weak anchor."
+  },
+  {
+    "name": "i-ching-compiled",
+    "difficulty": "very-hard",
+    "reasoning": "Chinese divination text, Zhou Dynasty reference too obscure for most."
+  },
+  {
+    "name": "upanishads-composed",
+    "difficulty": "very-hard",
+    "reasoning": "Hindu philosophical texts, timing very difficult even for enthusiasts."
+  },
+  {
+    "name": "first-olympics",
+    "difficulty": "medium",
+    "reasoning": "Ancient Greeks/Olympia anchors to ancient era, but 776 BCE hard to pinpoint exactly."
+  },
+  {
+    "name": "homer-iliad",
+    "difficulty": "medium",
+    "reasoning": "Homer well-known (1.3M views), Greek/Trojan War context suggests ancient era."
+  },
+  {
+    "name": "aesops-fables",
+    "difficulty": "hard",
+    "reasoning": "Aesop known but exact Greek era timing difficult."
+  },
+  {
+    "name": "pythagoras-school",
+    "difficulty": "hard",
+    "reasoning": "Pythagoras known for math, but founding his school's timing less certain."
+  },
+  {
+    "name": "buddha-enlightenment",
+    "difficulty": "hard",
+    "reasoning": "Buddhism well-known but exact timing of Buddha's enlightenment not widely known."
+  },
+  {
+    "name": "confucius-teachings",
+    "difficulty": "hard",
+    "reasoning": "Confucius famous but Chinese ancient history timing challenging."
+  },
+  {
+    "name": "socrates-death",
+    "difficulty": "medium",
+    "reasoning": "Socrates well-known, Athenian/Greek classical anchor provides era placement."
+  },
+  {
+    "name": "plato-academy",
+    "difficulty": "hard",
+    "reasoning": "Plato famous but academy founding date less well-known."
+  },
+  {
+    "name": "aristotle-lyceum",
+    "difficulty": "hard",
+    "reasoning": "'After leaving Plato's Academy' helps, but still hard timing."
+  },
+  {
+    "name": "euclid-elements",
+    "difficulty": "hard",
+    "reasoning": "Euclid known to math enthusiasts, Greek context helps but timing vague."
+  },
+  {
+    "name": "library-alexandria",
+    "difficulty": "medium",
+    "reasoning": "Famous library (929K views), Egypt/ancient world context provides anchor."
+  },
+  {
+    "name": "septuagint-translated",
+    "difficulty": "very-hard",
+    "reasoning": "Specialized religious knowledge, Alexandria provides weak anchor."
+  },
+  {
+    "name": "dead-sea-scrolls-written",
+    "difficulty": "hard",
+    "reasoning": "Famous discovery (996K views), but when written vs discovered often confused."
+  },
+  {
+    "name": "virgil-aeneid",
+    "difficulty": "hard",
+    "reasoning": "Roman poet/epic known to literature enthusiasts, Rome founding context vague."
+  },
+  {
+    "name": "jesus-birth",
+    "difficulty": "easy",
+    "reasoning": "By definition ~0 CE, Christianity's founding event universally known."
+  },
+  {
+    "name": "jesus-crucifixion",
+    "difficulty": "easy",
+    "reasoning": "~33 CE, founding Christianity event extremely well-known."
+  },
+  {
+    "name": "bible-latin-vulgate",
+    "difficulty": "very-hard",
+    "reasoning": "Saint Jerome specialized knowledge, late Roman/early medieval timing vague."
+  },
+  {
+    "name": "council-chalcedon",
+    "difficulty": "very-hard",
+    "reasoning": "Specialized church history, 451 CE timing very difficult."
+  },
+  {
+    "name": "monte-cassino-founded",
+    "difficulty": "very-hard",
+    "reasoning": "Monastery founding specialized knowledge despite WWII battle fame."
+  },
+  {
+    "name": "muhammad-revelation",
+    "difficulty": "medium",
+    "reasoning": "Islam founding (3.4M views), roughly 600s CE widely known."
+  },
+  {
+    "name": "islam-founded",
+    "difficulty": "medium",
+    "reasoning": "Hijra/Islamic calendar start, 622 CE reasonably known."
+  },
+  {
+    "name": "quran-compiled",
+    "difficulty": "hard",
+    "reasoning": "Islamic history but compilation timing not widely known."
+  },
+  {
+    "name": "nara-period-begins",
+    "difficulty": "very-hard",
+    "reasoning": "Japanese history specialized, Nara obscure to most."
+  },
+  {
+    "name": "heian-period-begins",
+    "difficulty": "very-hard",
+    "reasoning": "Japanese golden age but timing too specialized."
+  },
+  {
+    "name": "book-of-kells",
+    "difficulty": "hard",
+    "reasoning": "Irish monks/illuminated manuscript known but 800 CE timing hard."
+  },
+  {
+    "name": "song-dynasty-founded",
+    "difficulty": "hard",
+    "reasoning": "Chinese dynasty, even 'technological advancements' doesn't anchor timing well."
+  },
+  {
+    "name": "tale-of-genji",
+    "difficulty": "hard",
+    "reasoning": "'World's first novel' notable but Japanese/1000 CE timing hard."
+  },
+  {
+    "name": "great-schism",
+    "difficulty": "medium",
+    "reasoning": "Catholic/Orthodox split well-known (633K views), 1054 roughly placeable."
+  },
+  {
+    "name": "notre-dame-construction",
+    "difficulty": "hard",
+    "reasoning": "Notre-Dame famous (841K views) but construction start timing less known."
+  },
+  {
+    "name": "oxford-founded",
+    "difficulty": "hard",
+    "reasoning": "Oxford famous (1.2M views) but founding date not widely known."
+  },
+  {
+    "name": "kamakura-shogunate",
+    "difficulty": "very-hard",
+    "reasoning": "Japanese medieval history, samurai context weak anchor."
+  },
+  {
+    "name": "franciscan-order",
+    "difficulty": "hard",
+    "reasoning": "Saint Francis known but order founding timing challenging."
+  },
+  {
+    "name": "aquinas-summa",
+    "difficulty": "hard",
+    "reasoning": "Aquinas known (1M views) but Summa writing timing specialized."
+  },
+  {
+    "name": "yuan-dynasty-founded",
+    "difficulty": "hard",
+    "reasoning": "Kublai Khan provides anchor to ~1270s, still challenging."
+  },
+  {
+    "name": "marco-polo-china",
+    "difficulty": "medium",
+    "reasoning": "Marco Polo famous (966K views), Kublai Khan anchors to late 1200s."
+  },
+  {
+    "name": "giotto-scrovegni",
+    "difficulty": "very-hard",
+    "reasoning": "Art history specialized, early Renaissance timing vague."
+  },
+  {
+    "name": "divine-comedy",
+    "difficulty": "medium",
+    "reasoning": "Dante famous (850K views), medieval Italian context ~1300."
+  },
+  {
+    "name": "petrarch-sonnets",
+    "difficulty": "very-hard",
+    "reasoning": "Petrarch niche, sonnets timing specialized knowledge."
+  },
+  {
+    "name": "wycliffe-bible",
+    "difficulty": "hard",
+    "reasoning": "First English Bible notable but Wycliffe less known."
+  },
+  {
+    "name": "chaucer-canterbury",
+    "difficulty": "medium",
+    "reasoning": "Canterbury Tales well-known (552K views), medieval English setting."
+  },
+  {
+    "name": "gutenberg-bible",
+    "difficulty": "medium",
+    "reasoning": "First printed book iconic (324K views), ~1450s widely known."
+  },
+  {
+    "name": "botticelli-venus",
+    "difficulty": "medium",
+    "reasoning": "Famous Renaissance painting (484K views), Renaissance era anchor."
+  },
+  {
+    "name": "leonardo-last-supper",
+    "difficulty": "medium",
+    "reasoning": "Leonardo da Vinci iconic (1M views), Renaissance ~1500 anchor."
+  },
+  {
+    "name": "leonardo-mona-lisa",
+    "difficulty": "easy",
+    "reasoning": "World's most famous painting (2.4M views), Leonardo/Renaissance anchor."
+  },
+  {
+    "name": "michelangelo-david",
+    "difficulty": "medium",
+    "reasoning": "Iconic sculpture (864K views), Renaissance Florence ~1500."
+  },
+  {
+    "name": "sistine-chapel",
+    "difficulty": "easy",
+    "reasoning": "Extremely famous (Michelangelo ceiling), Renaissance ~1510."
+  },
+  {
+    "name": "machiavelli-prince",
+    "difficulty": "medium",
+    "reasoning": "The Prince very famous, Renaissance ~1513."
+  },
+  {
+    "name": "protestant-reformation",
+    "difficulty": "easy",
+    "reasoning": "Luther's 95 Theses 1517 widely taught, Reformation landmark."
+  },
+  {
+    "name": "luther-theses",
+    "difficulty": "easy",
+    "reasoning": "1517 iconic date (494K views), Reformation beginning."
+  },
+  {
+    "name": "council-trent",
+    "difficulty": "hard",
+    "reasoning": "Counter-Reformation context helps but Council timing specialized."
+  },
+  {
+    "name": "shakespeare-born",
+    "difficulty": "easy",
+    "reasoning": "Shakespeare iconic, 1564 birth date often taught."
+  },
+  {
+    "name": "shakespeare-hamlet",
+    "difficulty": "medium",
+    "reasoning": "Hamlet famous (1.4M views), Shakespeare ~1600 era known."
+  },
+  {
+    "name": "don-quixote-published",
+    "difficulty": "medium",
+    "reasoning": "Famous novel (1.35M views), 'first modern novel' ~1600s."
+  },
+  {
+    "name": "king-james-bible",
+    "difficulty": "medium",
+    "reasoning": "Famous Bible version (777K views), English history ~1611."
+  },
+  {
+    "name": "rembrandt-night-watch",
+    "difficulty": "hard",
+    "reasoning": "Famous painting but Rembrandt's era less well-known."
+  },
+  {
+    "name": "paradise-lost",
+    "difficulty": "hard",
+    "reasoning": "Milton known (1M views) but poem timing specialized."
+  },
+  {
+    "name": "russia-anno-domini",
+    "difficulty": "very-hard",
+    "reasoning": "Calendar adoption specialized, Russia 1700 obscure."
+  },
+  {
+    "name": "bach-well-tempered",
+    "difficulty": "very-hard",
+    "reasoning": "Bach known but specific work timing specialized."
+  },
+  {
+    "name": "handel-messiah",
+    "difficulty": "hard",
+    "reasoning": "Handel/Messiah famous but 1742 timing not obvious."
+  },
+  {
+    "name": "bach-death",
+    "difficulty": "medium",
+    "reasoning": "Bach famous (1M views), 1750 death date moderately known."
+  },
+  {
+    "name": "encyclopedia-published",
+    "difficulty": "hard",
+    "reasoning": "Enlightenment encyclopedia but Diderot timing obscure."
+  },
+  {
+    "name": "voltaire-candide",
+    "difficulty": "hard",
+    "reasoning": "Voltaire/Candide known but exact publication timing hard."
+  },
+  {
+    "name": "britannica-first",
+    "difficulty": "hard",
+    "reasoning": "Encyclopedia known but first edition timing specialized."
+  },
+  {
+    "name": "marie-antoinette-wedding",
+    "difficulty": "hard",
+    "reasoning": "Marie Antoinette famous but wedding timing obscure."
+  },
+  {
+    "name": "wealth-of-nations",
+    "difficulty": "medium",
+    "reasoning": "Adam Smith famous (250K views), 1776 coincides with US independence."
+  },
+  {
+    "name": "mozart-don-giovanni",
+    "difficulty": "hard",
+    "reasoning": "Mozart famous but specific opera premiere timing hard."
+  },
+  {
+    "name": "mozart-dies",
+    "difficulty": "medium",
+    "reasoning": "Mozart iconic, death at 35 in 1791 moderately known."
+  },
+  {
+    "name": "louvre-opens",
+    "difficulty": "hard",
+    "reasoning": "Louvre famous (850K views) but museum opening timing less known."
+  },
+  {
+    "name": "beethoven-first-symphony",
+    "difficulty": "hard",
+    "reasoning": "Beethoven famous but first symphony timing specialized."
+  },
+  {
+    "name": "goethe-faust",
+    "difficulty": "hard",
+    "reasoning": "Faust known but Goethe/publication timing specialized."
+  },
+  {
+    "name": "beethoven-fifth",
+    "difficulty": "medium",
+    "reasoning": "Fifth Symphony iconic, Beethoven era ~1800s known."
+  },
+  {
+    "name": "grimm-fairy-tales",
+    "difficulty": "medium",
+    "reasoning": "Grimm Brothers famous (397K views), early 1800s placeable."
+  },
+  {
+    "name": "pride-prejudice",
+    "difficulty": "medium",
+    "reasoning": "Jane Austen famous, Regency era ~1813 moderately known."
+  },
+  {
+    "name": "frankenstein-published",
+    "difficulty": "medium",
+    "reasoning": "Frankenstein iconic (3M views), early 1800s/Mary Shelley known."
+  },
+  {
+    "name": "schubert-unfinished",
+    "difficulty": "hard",
+    "reasoning": "Classical music specialized, Schubert timing difficult."
+  },
+  {
+    "name": "beethoven-ninth",
+    "difficulty": "hard",
+    "reasoning": "Ode to Joy famous but 1824 premiere timing hard."
+  },
+  {
+    "name": "first-photograph",
+    "difficulty": "hard",
+    "reasoning": "First photograph notable but Niepce/1826 obscure."
+  },
+  {
+    "name": "book-of-mormon-published",
+    "difficulty": "medium",
+    "reasoning": "Mormon faith known (571K views), early 1800s America."
+  },
+  {
+    "name": "slavery-abolished-uk",
+    "difficulty": "medium",
+    "reasoning": "British abolition known, 1833 timing moderately placeable."
+  },
+  {
+    "name": "first-kindergarten",
+    "difficulty": "very-hard",
+    "reasoning": "Very low pageviews (2918), Froebel obscure."
+  },
+  {
+    "name": "morse-code-invented",
+    "difficulty": "medium",
+    "reasoning": "Morse code famous (1.2M views), telegraph era ~1838."
+  },
+  {
+    "name": "ymca-founded",
+    "difficulty": "hard",
+    "reasoning": "YMCA known (549K views) but founding timing obscure."
+  },
+  {
+    "name": "communist-manifesto",
+    "difficulty": "easy",
+    "reasoning": "Marx/Engels iconic (433K views), 1848 revolutions era."
+  },
+  {
+    "name": "seneca-falls-convention",
+    "difficulty": "medium",
+    "reasoning": "Women's suffrage milestone known, 1848 US context."
+  },
+  {
+    "name": "origin-of-species",
+    "difficulty": "easy",
+    "reasoning": "Darwin's evolution theory iconic (255K views), ~1859."
+  },
+  {
+    "name": "les-miserables",
+    "difficulty": "medium",
+    "reasoning": "Hugo/Les Mis famous (1M views), French ~1862."
+  },
+  {
+    "name": "slavery-abolished-us",
+    "difficulty": "easy",
+    "reasoning": "13th Amendment iconic, 1865 Civil War end."
+  },
+  {
+    "name": "salvation-army-founded",
+    "difficulty": "hard",
+    "reasoning": "Salvation Army known but founding date obscure."
+  },
+  {
+    "name": "first-impressionist-exhibition",
+    "difficulty": "hard",
+    "reasoning": "Impressionism known but 1874 exhibition timing specialized."
+  },
+  {
+    "name": "phonograph-invented",
+    "difficulty": "medium",
+    "reasoning": "Edison/phonograph famous (305K views), late 1800s."
+  },
+  {
+    "name": "tchaikovsky-swan-lake",
+    "difficulty": "hard",
+    "reasoning": "Swan Lake famous (627K views) but premiere timing hard."
+  },
+  {
+    "name": "dostoevsky-karamazov",
+    "difficulty": "hard",
+    "reasoning": "Dostoevsky known but specific novel timing hard."
+  },
+  {
+    "name": "rodin-thinker",
+    "difficulty": "medium",
+    "reasoning": "Iconic sculpture, Rodin ~1880s era."
+  },
+  {
+    "name": "first-labor-day",
+    "difficulty": "hard",
+    "reasoning": "Labor Day known but first celebration timing obscure."
+  },
+  {
+    "name": "esperanto-created",
+    "difficulty": "hard",
+    "reasoning": "Esperanto known (881K views) but creation date obscure."
+  },
+  {
+    "name": "van-gogh-starry-night",
+    "difficulty": "medium",
+    "reasoning": "Iconic painting (1.2M views), van Gogh ~1889."
+  },
+  {
+    "name": "hull-house-founded",
+    "difficulty": "very-hard",
+    "reasoning": "Jane Addams specialized, settlement house obscure."
+  },
+  {
+    "name": "dvorak-new-world",
+    "difficulty": "hard",
+    "reasoning": "Symphony known but Dvorak/1893 timing specialized."
+  },
+  {
+    "name": "womens-suffrage-nz",
+    "difficulty": "hard",
+    "reasoning": "First country suffrage notable but NZ/1893 obscure."
+  },
+  {
+    "name": "first-motion-picture",
+    "difficulty": "medium",
+    "reasoning": "Lumiere brothers/film origins known, ~1895."
+  },
+  {
+    "name": "first-modern-olympics",
+    "difficulty": "easy",
+    "reasoning": "Athens 1896 Olympics widely known."
+  },
+  {
+    "name": "freud-interpretation-dreams",
+    "difficulty": "hard",
+    "reasoning": "Freud famous but publication timing specialized."
+  },
+  {
+    "name": "picasso-blue-period",
+    "difficulty": "hard",
+    "reasoning": "Picasso famous (2M views) but Blue Period timing less known."
+  },
+  {
+    "name": "nobel-prizes-first",
+    "difficulty": "medium",
+    "reasoning": "Nobel Prize famous (1.3M views), 1901 first awards known."
+  },
+  {
+    "name": "picasso-demoiselles",
+    "difficulty": "hard",
+    "reasoning": "Proto-Cubist work, art history specialized."
+  },
+  {
+    "name": "boy-scouts-founded",
+    "difficulty": "medium",
+    "reasoning": "Boy Scouts known, early 1900s Britain context."
+  },
+  {
+    "name": "girl-scouts-founded",
+    "difficulty": "medium",
+    "reasoning": "Girl Scouts known, early 1900s context."
+  },
+  {
+    "name": "rite-of-spring",
+    "difficulty": "hard",
+    "reasoning": "Famous riot but Stravinsky/1913 timing specialized."
+  },
+  {
+    "name": "ford-five-dollar-wage",
+    "difficulty": "hard",
+    "reasoning": "Ford famous but specific wage policy timing obscure."
+  },
+  {
+    "name": "dada-movement",
+    "difficulty": "hard",
+    "reasoning": "Dada known but Zurich/WWI origin timing specialized."
+  },
+  {
+    "name": "women-suffrage-uk",
+    "difficulty": "medium",
+    "reasoning": "UK suffrage known, WWI era ~1918."
+  },
+  {
+    "name": "bauhaus-founded",
+    "difficulty": "hard",
+    "reasoning": "Bauhaus known (666K views) but founding timing specialized."
+  },
+  {
+    "name": "jazz-age-begins",
+    "difficulty": "medium",
+    "reasoning": "Jazz Age/Roaring Twenties iconic, 1920s."
+  },
+  {
+    "name": "harlem-renaissance",
+    "difficulty": "medium",
+    "reasoning": "Harlem Renaissance known (323K views), 1920s."
+  },
+  {
+    "name": "first-miss-america",
+    "difficulty": "hard",
+    "reasoning": "Miss America known but first pageant timing obscure."
+  },
+  {
+    "name": "ulysses-published",
+    "difficulty": "medium",
+    "reasoning": "Joyce/Ulysses famous (950K views), modernism 1920s."
+  },
+  {
+    "name": "surrealist-manifesto",
+    "difficulty": "hard",
+    "reasoning": "Surrealism known but manifesto timing specialized."
+  },
+  {
+    "name": "first-winter-olympics",
+    "difficulty": "medium",
+    "reasoning": "Winter Olympics known, 1924 Chamonix placeable."
+  },
+  {
+    "name": "rhapsody-in-blue-premiere",
+    "difficulty": "hard",
+    "reasoning": "Gershwin known but specific premiere timing hard."
+  },
+  {
+    "name": "ibm-founded",
+    "difficulty": "medium",
+    "reasoning": "IBM famous (1M views), 1924 timing moderately known."
+  },
+  {
+    "name": "islamic-caliphate-abolished",
+    "difficulty": "hard",
+    "reasoning": "Ataturk/Turkey modernization known but 1924 timing specialized."
+  },
+  {
+    "name": "great-gatsby",
+    "difficulty": "medium",
+    "reasoning": "Fitzgerald/Gatsby iconic (1.6M views), Jazz Age 1920s."
+  },
+  {
+    "name": "first-talking-film",
+    "difficulty": "medium",
+    "reasoning": "Jazz Singer/talkies known, late 1920s."
+  },
+  {
+    "name": "mickey-mouse-debut",
+    "difficulty": "easy",
+    "reasoning": "Mickey Mouse iconic (804K views), Steamboat Willie ~1928."
+  },
+  {
+    "name": "gandhi-salt-march",
+    "difficulty": "medium",
+    "reasoning": "Gandhi famous, Salt March (285K views) 1930 known."
+  },
+  {
+    "name": "lindbergh-baby-kidnapping",
+    "difficulty": "medium",
+    "reasoning": "Famous crime (530K views), early 1930s America."
+  },
+  {
+    "name": "alcatraz-federal-prison",
+    "difficulty": "medium",
+    "reasoning": "Alcatraz famous (753K views), Depression era 1930s."
+  },
+  {
+    "name": "alcoholics-anonymous",
+    "difficulty": "hard",
+    "reasoning": "AA known but founding date obscure."
+  },
+  {
+    "name": "first-television-broadcast",
+    "difficulty": "hard",
+    "reasoning": "TV origin known but BBC 1936 timing less known."
+  },
+  {
+    "name": "guernica-painted",
+    "difficulty": "medium",
+    "reasoning": "Picasso/Guernica famous (880K views), Spanish Civil War 1937."
+  },
+  {
+    "name": "wizard-of-oz",
+    "difficulty": "easy",
+    "reasoning": "Iconic film (2.4M views), late 1930s Hollywood."
+  },
+  {
+    "name": "gone-with-wind-film",
+    "difficulty": "easy",
+    "reasoning": "Classic film (1.5M views), 1939 Civil War epic."
+  },
+  {
+    "name": "pinocchio-premieres",
+    "difficulty": "medium",
+    "reasoning": "Disney classic (422K views), early 1940s."
+  },
+  {
+    "name": "citizen-kane",
+    "difficulty": "medium",
+    "reasoning": "Greatest film (1.2M views), early 1940s."
+  },
+  {
+    "name": "casablanca-released",
+    "difficulty": "easy",
+    "reasoning": "Iconic WWII film (1.2M views), 1942."
+  },
+  {
+    "name": "abstract-expressionism",
+    "difficulty": "hard",
+    "reasoning": "Art movement but timing emergence difficult."
+  },
+  {
+    "name": "nascar-incorporated",
+    "difficulty": "hard",
+    "reasoning": "NASCAR known but incorporation timing obscure."
+  },
+  {
+    "name": "nineteen-eighty-four",
+    "difficulty": "easy",
+    "reasoning": "Orwell's 1984 iconic (2.2M views), late 1940s."
+  },
+  {
+    "name": "nbc-today-debuts",
+    "difficulty": "hard",
+    "reasoning": "Today show known but 1952 debut timing obscure."
+  },
+  {
+    "name": "elvis-first-single",
+    "difficulty": "medium",
+    "reasoning": "Elvis iconic, rock and roll 1950s origin."
+  },
+  {
+    "name": "lord-of-rings",
+    "difficulty": "medium",
+    "reasoning": "Tolkien iconic (1.7M views), mid-1950s publication."
+  },
+  {
+    "name": "disneyland-opens",
+    "difficulty": "easy",
+    "reasoning": "Disneyland iconic, mid-1950s opening well-known."
+  },
+  {
+    "name": "elvis-ed-sullivan",
+    "difficulty": "medium",
+    "reasoning": "Elvis/Ed Sullivan famous, 1950s rock era."
+  },
+  {
+    "name": "west-side-story-opens",
+    "difficulty": "medium",
+    "reasoning": "West Side Story famous (630K views), late 1950s Broadway."
+  },
+  {
+    "name": "birth-control-pill",
+    "difficulty": "medium",
+    "reasoning": "The Pill significant, 1960 FDA approval moderately known."
+  },
+  {
+    "name": "beatles-form",
+    "difficulty": "medium",
+    "reasoning": "Beatles iconic (4M views), early 1960s formation."
+  },
+  {
+    "name": "catch-22-published",
+    "difficulty": "medium",
+    "reasoning": "Catch-22 famous (626K views), early 1960s."
+  },
+  {
+    "name": "warhol-soup-cans",
+    "difficulty": "medium",
+    "reasoning": "Warhol/pop art iconic, early 1960s."
+  },
+  {
+    "name": "march-on-washington",
+    "difficulty": "easy",
+    "reasoning": "MLK's Dream speech iconic, 1963."
+  },
+  {
+    "name": "beatles-usa",
+    "difficulty": "easy",
+    "reasoning": "British Invasion iconic, Beatles 1964."
+  },
+  {
+    "name": "beatles-ed-sullivan",
+    "difficulty": "easy",
+    "reasoning": "Beatles on Ed Sullivan iconic, 1964."
+  },
+  {
+    "name": "tokyo-olympics-1964",
+    "difficulty": "medium",
+    "reasoning": "1964 Olympics, Japan postwar recovery context."
+  },
+  {
+    "name": "blue-ribbon-sports-founded",
+    "difficulty": "hard",
+    "reasoning": "Nike precursor obscure despite brand fame."
+  },
+  {
+    "name": "dylan-goes-electric",
+    "difficulty": "hard",
+    "reasoning": "Dylan famous but Newport 1965 controversy niche."
+  },
+  {
+    "name": "monterey-pop",
+    "difficulty": "hard",
+    "reasoning": "Festival known but 1967 timing specialized."
+  },
+  {
+    "name": "one-hundred-years-solitude",
+    "difficulty": "hard",
+    "reasoning": "Garcia Marquez known but publication timing less known."
+  },
+  {
+    "name": "prague-spring-begins",
+    "difficulty": "medium",
+    "reasoning": "Prague Spring known (279K views), 1968."
+  },
+  {
+    "name": "johnny-cash-folsom-prison",
+    "difficulty": "medium",
+    "reasoning": "Famous concert (106K views), late 1960s."
+  },
+  {
+    "name": "woodstock",
+    "difficulty": "easy",
+    "reasoning": "Woodstock iconic (874K views), 1969."
+  },
+  {
+    "name": "stonewall-riots",
+    "difficulty": "medium",
+    "reasoning": "LGBTQ milestone (882K views), 1969."
+  },
+  {
+    "name": "sesame-street-debut",
+    "difficulty": "medium",
+    "reasoning": "Sesame Street famous, late 1960s debut."
+  },
+  {
+    "name": "first-earth-day",
+    "difficulty": "medium",
+    "reasoning": "Earth Day known (502K views), 1970."
+  },
+  {
+    "name": "first-email",
+    "difficulty": "hard",
+    "reasoning": "Email origin known but exact timing obscure."
+  },
+  {
+    "name": "roe-v-wade",
+    "difficulty": "medium",
+    "reasoning": "Landmark case (808K views), 1973 roughly known."
+  },
+  {
+    "name": "disco-era-begins",
+    "difficulty": "medium",
+    "reasoning": "Disco known (401K views), mid-1970s."
+  },
+  {
+    "name": "punk-rock-emerges",
+    "difficulty": "medium",
+    "reasoning": "Ramones/Sex Pistols known, mid-1970s."
+  },
+  {
+    "name": "star-wars",
+    "difficulty": "easy",
+    "reasoning": "Star Wars iconic, 1977 release widely known."
+  },
+  {
+    "name": "walkman-released",
+    "difficulty": "medium",
+    "reasoning": "Walkman famous (240K views), late 1970s Sony."
+  },
+  {
+    "name": "hip-hop-emerges",
+    "difficulty": "medium",
+    "reasoning": "Rapper's Delight known, late 1970s origin."
+  },
+  {
+    "name": "mtv-launches",
+    "difficulty": "medium",
+    "reasoning": "MTV famous (1M views), early 1980s."
+  },
+  {
+    "name": "aids-identified",
+    "difficulty": "medium",
+    "reasoning": "AIDS epidemic (159K views), early 1980s."
+  },
+  {
+    "name": "michael-jackson-thriller",
+    "difficulty": "easy",
+    "reasoning": "Thriller iconic (1M views), 1982."
+  },
+  { "name": "thriller-video", "difficulty": "easy", "reasoning": "Thriller video iconic, 1983." },
+  {
+    "name": "live-aid",
+    "difficulty": "medium",
+    "reasoning": "Live Aid famous (1.3M views), 1985."
+  },
+  {
+    "name": "aids-quilt",
+    "difficulty": "hard",
+    "reasoning": "AIDS Quilt known but 1987 display timing obscure."
+  },
+  {
+    "name": "seoul-olympics-1988",
+    "difficulty": "medium",
+    "reasoning": "1988 Seoul Olympics known."
+  },
+  {
+    "name": "human-genome-project",
+    "difficulty": "hard",
+    "reasoning": "HGP known but 1990 start timing less known."
+  },
+  {
+    "name": "nelson-mandela-freed",
+    "difficulty": "easy",
+    "reasoning": "Mandela iconic, 1990 release well-known."
+  },
+  {
+    "name": "nevermind-album",
+    "difficulty": "medium",
+    "reasoning": "Nirvana/grunge famous (682K views), early 1990s."
+  },
+  {
+    "name": "pulp-fiction-released",
+    "difficulty": "easy",
+    "reasoning": "Tarantino/Pulp Fiction iconic, 1994."
+  },
+  {
+    "name": "million-man-march",
+    "difficulty": "medium",
+    "reasoning": "Million Man March known, 1995."
+  },
+  {
+    "name": "dolly-sheep-cloned",
+    "difficulty": "medium",
+    "reasoning": "Dolly famous (384K views), mid-1990s cloning."
+  },
+  {
+    "name": "harry-potter-published",
+    "difficulty": "easy",
+    "reasoning": "Harry Potter iconic (1.1M views), late 1990s."
+  },
+  {
+    "name": "google-founded",
+    "difficulty": "easy",
+    "reasoning": "Google iconic (8.5M views), 1998."
+  },
+  {
+    "name": "y2k",
+    "difficulty": "easy",
+    "reasoning": "Y2K bug famous (475K views), 2000 millennium."
+  },
+  {
+    "name": "millennium",
+    "difficulty": "easy",
+    "reasoning": "Year 2000 millennium celebration universal."
+  },
+  {
+    "name": "ipod-released",
+    "difficulty": "easy",
+    "reasoning": "iPod iconic (707K views), early 2000s Apple."
+  },
+  {
+    "name": "world-cup-soccer-2002",
+    "difficulty": "medium",
+    "reasoning": "2002 World Cup known, Korea/Japan hosting."
+  },
+  {
+    "name": "human-genome-completed",
+    "difficulty": "medium",
+    "reasoning": "Genome completion known, early 2000s."
+  },
+  {
+    "name": "facebook-launched",
+    "difficulty": "easy",
+    "reasoning": "Facebook iconic (6.7M views), 2004."
+  },
+  {
+    "name": "youtube-founded",
+    "difficulty": "easy",
+    "reasoning": "YouTube iconic (2M views), mid-2000s."
+  },
+  {
+    "name": "twitter-launched",
+    "difficulty": "easy",
+    "reasoning": "Twitter iconic (4M views), 2006."
+  },
+  {
+    "name": "iphone-released",
+    "difficulty": "easy",
+    "reasoning": "iPhone iconic (1.5M views), 2007."
+  },
+  {
+    "name": "beijing-olympics-2008",
+    "difficulty": "easy",
+    "reasoning": "2008 Beijing Olympics well-known."
+  },
+  {
+    "name": "bitcoin-created",
+    "difficulty": "medium",
+    "reasoning": "Bitcoin famous (1.9M views), 2009."
+  },
+  {
+    "name": "instagram-launched",
+    "difficulty": "easy",
+    "reasoning": "Instagram iconic (15M views), 2010."
+  },
+  {
+    "name": "black-lives-matter-founded",
+    "difficulty": "easy",
+    "reasoning": "BLM famous (632K views), 2013 Trayvon Martin."
+  },
+  {
+    "name": "marriage-equality-us",
+    "difficulty": "easy",
+    "reasoning": "Same-sex marriage ruling 2015 well-known."
+  },
+  {
+    "name": "metoo-movement",
+    "difficulty": "easy",
+    "reasoning": "#MeToo viral (479K views), 2017."
+  },
+  {
+    "name": "chatgpt-released",
+    "difficulty": "easy",
+    "reasoning": "ChatGPT iconic (43M views), 2022."
+  },
+  {
+    "name": "war-of-worlds-broadcast",
+    "difficulty": "medium",
+    "reasoning": "Orson Welles panic (313K views), 1938."
+  },
+  {
+    "name": "i-have-a-dream-speech",
+    "difficulty": "easy",
+    "reasoning": "MLK's Dream speech iconic (638K views), 1963."
+  },
+  {
+    "name": "code-ur-nammu",
+    "difficulty": "very-hard",
+    "reasoning": "Oldest legal code, predates Hammurabi, very specialized."
+  },
+  {
+    "name": "shang-dynasty-established",
+    "difficulty": "hard",
+    "reasoning": "Chinese dynasty (423K views), ancient timing difficult."
+  },
+  {
+    "name": "kingdom-kush-flourishes",
+    "difficulty": "very-hard",
+    "reasoning": "Nubian kingdom specialized, timing very difficult."
+  },
+  {
+    "name": "exodus-biblical",
+    "difficulty": "hard",
+    "reasoning": "Moses/Exodus known but biblical timing uncertain."
+  },
+  {
+    "name": "king-david-rules",
+    "difficulty": "hard",
+    "reasoning": "King David known (1.9M views) but timing difficult."
+  },
+  {
+    "name": "darius-great-king",
+    "difficulty": "hard",
+    "reasoning": "Darius/Persepolis known but timing specialized."
+  },
+  {
+    "name": "axumite-empire",
+    "difficulty": "very-hard",
+    "reasoning": "Ethiopian Axum specialized knowledge."
+  },
+  {
+    "name": "house-of-wisdom",
+    "difficulty": "hard",
+    "reasoning": "Baghdad learning center, Abbasid timing specialized."
+  },
+  {
+    "name": "chola-dynasty-expansion",
+    "difficulty": "very-hard",
+    "reasoning": "Indian naval power very specialized."
+  },
+  {
+    "name": "mali-empire-founded",
+    "difficulty": "hard",
+    "reasoning": "Sundiata Keita known but timing specialized."
+  },
+  {
+    "name": "timbuktu-learning-center",
+    "difficulty": "hard",
+    "reasoning": "Timbuktu known but peak timing specialized."
+  },
+  {
+    "name": "mansa-musa-pilgrimage",
+    "difficulty": "medium",
+    "reasoning": "Mansa Musa famous (1.2M views), 1324 hajj known."
+  },
+  {
+    "name": "songhai-empire",
+    "difficulty": "very-hard",
+    "reasoning": "African empire specialized knowledge."
+  },
+  {
+    "name": "peter-great-modernizes",
+    "difficulty": "medium",
+    "reasoning": "Peter the Great famous, ~1700 reforms known."
+  },
+  {
+    "name": "british-slave-trade-abolished",
+    "difficulty": "medium",
+    "reasoning": "1807 British abolition moderately known."
+  },
+  {
+    "name": "daguerreotype-invented",
+    "difficulty": "hard",
+    "reasoning": "Photography origin known but Daguerre/1839 specialized."
+  },
+  {
+    "name": "ghana-independence",
+    "difficulty": "hard",
+    "reasoning": "First sub-Saharan independence notable but timing obscure."
+  },
+  {
+    "name": "mandela-elected-president",
+    "difficulty": "easy",
+    "reasoning": "Mandela presidency iconic, 1994 election known."
+  },
+  {
+    "name": "akhenaten-religious-revolution",
+    "difficulty": "hard",
+    "reasoning": "Akhenaten known (657K views) but timing difficult."
+  },
+  {
+    "name": "death-tutankhamun",
+    "difficulty": "medium",
+    "reasoning": "King Tut famous (1.4M views), ancient Egypt context."
+  },
+  {
+    "name": "trojan-war",
+    "difficulty": "medium",
+    "reasoning": "Trojan War iconic (1.2M views), Greek mythology era."
+  },
+  {
+    "name": "phoenician-alphabet",
+    "difficulty": "hard",
+    "reasoning": "Alphabet development known but timing specialized."
+  },
+  {
+    "name": "draco-law-code",
+    "difficulty": "hard",
+    "reasoning": "Draconian laws known but Athenian timing specialized."
+  },
+  {
+    "name": "solon-reforms",
+    "difficulty": "hard",
+    "reasoning": "Solon reforms specialized, Athenian history."
+  },
+  {
+    "name": "birth-buddha",
+    "difficulty": "hard",
+    "reasoning": "Buddha famous but birth date in Nepal timing hard."
+  },
+  {
+    "name": "birth-confucius",
+    "difficulty": "hard",
+    "reasoning": "Confucius famous but birth date specialized."
+  },
+  {
+    "name": "birth-mencius",
+    "difficulty": "very-hard",
+    "reasoning": "Second Confucian philosopher very specialized."
+  },
+  {
+    "name": "qin-book-burning",
+    "difficulty": "hard",
+    "reasoning": "Qin Shi Huang known but book burning timing hard."
+  },
+  {
+    "name": "maccabean-revolt",
+    "difficulty": "hard",
+    "reasoning": "Hanukkah origin known but revolt timing specialized."
+  },
+  {
+    "name": "god-emperor-golden-throne",
+    "difficulty": "very-hard",
+    "reasoning": "Warhammer 40K fiction, far future setting."
+  },
+  {
+    "name": "reign-of-caligula",
+    "difficulty": "hard",
+    "reasoning": "Caligula famous (1.5M views) but reign timing specialized."
+  },
+  {
+    "name": "peter-paul-martyred",
+    "difficulty": "hard",
+    "reasoning": "Apostles known but martyrdom timing specialized."
+  },
+  {
+    "name": "book-of-revelation",
+    "difficulty": "hard",
+    "reasoning": "Revelation known but writing timing specialized."
+  },
+  {
+    "name": "synod-of-whitby",
+    "difficulty": "very-hard",
+    "reasoning": "Church council very specialized."
+  },
+  {
+    "name": "wu-zetian-emperor",
+    "difficulty": "hard",
+    "reasoning": "Only female Chinese emperor notable but timing hard."
+  },
+  {
+    "name": "byzantine-iconoclasm-begins",
+    "difficulty": "very-hard",
+    "reasoning": "Byzantine icon controversy specialized."
+  },
+  {
+    "name": "cluny-abbey-founded",
+    "difficulty": "very-hard",
+    "reasoning": "Monastic reform center very specialized."
+  },
+  {
+    "name": "christianization-kievan-rus",
+    "difficulty": "hard",
+    "reasoning": "Vladimir conversion known but timing specialized."
+  },
+  {
+    "name": "murder-thomas-becket",
+    "difficulty": "medium",
+    "reasoning": "Thomas Becket famous (638K views), Canterbury 1170."
+  },
+  {
+    "name": "death-el-cid",
+    "difficulty": "hard",
+    "reasoning": "El Cid known (391K views) but death timing specialized."
+  },
+  {
+    "name": "inquisition-established",
+    "difficulty": "hard",
+    "reasoning": "Papal Inquisition known but 1252 timing specialized."
+  },
+  {
+    "name": "papal-bull-unam-sanctam",
+    "difficulty": "very-hard",
+    "reasoning": "Papal document very specialized."
+  },
+  {
+    "name": "knights-templar-arrested",
+    "difficulty": "hard",
+    "reasoning": "Templars famous but Friday 13th timing specialized."
+  },
+  {
+    "name": "avignon-papacy-begins",
+    "difficulty": "hard",
+    "reasoning": "Avignon exile known but 1309 timing specialized."
+  },
+  {
+    "name": "avignon-papacy-ends",
+    "difficulty": "hard",
+    "reasoning": "Return to Rome known but timing specialized."
+  },
+  {
+    "name": "western-schism-begins",
+    "difficulty": "hard",
+    "reasoning": "Rival popes known but 1378 timing specialized."
+  },
+  {
+    "name": "florence-baptistery-competition",
+    "difficulty": "very-hard",
+    "reasoning": "Renaissance art competition very specialized."
+  },
+  {
+    "name": "council-of-constance",
+    "difficulty": "very-hard",
+    "reasoning": "Church council specialized, ended schism."
+  },
+  {
+    "name": "jan-hus-burned",
+    "difficulty": "hard",
+    "reasoning": "Protestant precursor but 1415 timing specialized."
+  },
+  {
+    "name": "spanish-inquisition-begins",
+    "difficulty": "medium",
+    "reasoning": "Spanish Inquisition famous, Ferdinand/Isabella ~1478."
+  },
+  {
+    "name": "diet-of-worms",
+    "difficulty": "medium",
+    "reasoning": "Luther's defense famous (192K views), Reformation ~1521."
+  },
+  {
+    "name": "carthage-founded",
+    "difficulty": "hard",
+    "reasoning": "Carthage famous (934K views) but founding timing hard."
+  },
+  {
+    "name": "birth-socrates",
+    "difficulty": "hard",
+    "reasoning": "Socrates famous but birth date specialized."
+  },
+  {
+    "name": "birth-hippocrates",
+    "difficulty": "hard",
+    "reasoning": "Father of Medicine known but birth timing specialized."
+  },
+  {
+    "name": "death-pericles",
+    "difficulty": "hard",
+    "reasoning": "Athenian statesman known but death timing specialized."
+  },
+  {
+    "name": "plato-writes-republic",
+    "difficulty": "hard",
+    "reasoning": "Republic famous (1.3M views for Plato) but timing hard."
+  },
+  {
+    "name": "birth-alexander-great",
+    "difficulty": "medium",
+    "reasoning": "Alexander iconic (3.6M views), ~356 BCE known."
+  },
+  {
+    "name": "aristotle-tutors-alexander",
+    "difficulty": "hard",
+    "reasoning": "Connection known but tutoring timing specialized."
+  },
+  {
+    "name": "death-cleopatra",
+    "difficulty": "medium",
+    "reasoning": "Cleopatra famous, ~30 BCE end of Egypt known."
+  },
+  {
+    "name": "ministry-jesus-begins",
+    "difficulty": "hard",
+    "reasoning": "Jesus ministry known but start timing specialized."
+  },
+  {
+    "name": "destruction-second-temple",
+    "difficulty": "medium",
+    "reasoning": "Temple destruction famous (445K views), 70 CE."
+  },
+  {
+    "name": "great-persecution-christians",
+    "difficulty": "very-hard",
+    "reasoning": "Diocletian persecution specialized."
+  },
+  {
+    "name": "julian-pagan-revival",
+    "difficulty": "very-hard",
+    "reasoning": "Julian the Apostate very specialized."
+  },
+  {
+    "name": "pope-leo-meets-attila",
+    "difficulty": "hard",
+    "reasoning": "Attila known but Leo meeting specialized."
+  },
+  {
+    "name": "birth-muhammad",
+    "difficulty": "medium",
+    "reasoning": "Prophet Muhammad famous (286K views), ~570 CE."
+  },
+  {
+    "name": "gregory-great-becomes-pope",
+    "difficulty": "very-hard",
+    "reasoning": "Pope Gregory I specialized church history."
+  },
+  {
+    "name": "augustine-arrives-england",
+    "difficulty": "very-hard",
+    "reasoning": "Mission to England specialized."
+  },
+  {
+    "name": "arabs-capture-carthage",
+    "difficulty": "very-hard",
+    "reasoning": "Islamic conquest timing specialized."
+  },
+  {
+    "name": "harun-al-rashid-caliph",
+    "difficulty": "very-hard",
+    "reasoning": "Arabian Nights caliph but timing specialized."
+  },
+  {
+    "name": "caliphate-cordoba-falls",
+    "difficulty": "very-hard",
+    "reasoning": "Islamic Spain history specialized."
+  },
+  {
+    "name": "expulsion-jews-england",
+    "difficulty": "hard",
+    "reasoning": "Edward I expulsion known but timing specialized."
+  },
+  {
+    "name": "flagellant-movement",
+    "difficulty": "very-hard",
+    "reasoning": "Black Death response specialized."
+  },
+  {
+    "name": "birth-martin-luther",
+    "difficulty": "hard",
+    "reasoning": "Luther famous but birth date specialized."
+  },
+  {
+    "name": "expulsion-jews-spain",
+    "difficulty": "medium",
+    "reasoning": "1492 Spain expulsion, same year as Columbus."
+  },
+  {
+    "name": "utopia-published",
+    "difficulty": "hard",
+    "reasoning": "Thomas More known but Utopia timing specialized."
+  },
+  {
+    "name": "death-leonardo-da-vinci",
+    "difficulty": "medium",
+    "reasoning": "Leonardo famous, death 1519 moderately known."
+  },
+  {
+    "name": "dutch-iconoclasm",
+    "difficulty": "very-hard",
+    "reasoning": "Beeldenstorm specialized Dutch history."
+  },
+  {
+    "name": "el-greco-arrives-spain",
+    "difficulty": "very-hard",
+    "reasoning": "El Greco known but arrival timing specialized."
+  },
+  {
+    "name": "death-shakespeare",
+    "difficulty": "medium",
+    "reasoning": "Shakespeare death 1616 moderately known."
+  },
+  {
+    "name": "death-cervantes",
+    "difficulty": "hard",
+    "reasoning": "Cervantes known but death same year as Shakespeare."
+  },
+  {
+    "name": "descartes-discourse-method",
+    "difficulty": "hard",
+    "reasoning": "Descartes famous but publication timing specialized."
+  },
+  {
+    "name": "hobbes-publishes-leviathan",
+    "difficulty": "hard",
+    "reasoning": "Leviathan known but publication timing specialized."
+  },
+  {
+    "name": "death-oliver-cromwell",
+    "difficulty": "hard",
+    "reasoning": "Cromwell famous (1.9M views) but death timing specialized."
+  },
+  {
+    "name": "spinoza-ethics-published",
+    "difficulty": "very-hard",
+    "reasoning": "Spinoza specialized philosophy."
+  },
+  {
+    "name": "two-treatises-government",
+    "difficulty": "hard",
+    "reasoning": "Locke known but publication timing specialized."
+  },
+  {
+    "name": "death-louis-xiv",
+    "difficulty": "hard",
+    "reasoning": "Sun King famous (2M views) but death timing specialized."
+  },
+  {
+    "name": "birth-napoleon",
+    "difficulty": "medium",
+    "reasoning": "Napoleon iconic (4.6M views), 1769 birth known."
+  },
+  {
+    "name": "gibbon-decline-fall-published",
+    "difficulty": "hard",
+    "reasoning": "Decline and Fall known but publication timing specialized."
+  },
+  {
+    "name": "burke-reflections-published",
+    "difficulty": "very-hard",
+    "reasoning": "Burke's conservatism specialized."
+  },
+  {
+    "name": "third-partition-poland",
+    "difficulty": "hard",
+    "reasoning": "Poland partition known but 1795 timing specialized."
+  },
+  {
+    "name": "birth-charles-darwin",
+    "difficulty": "hard",
+    "reasoning": "Darwin famous but birth date specialized."
+  },
+  {
+    "name": "death-napoleon",
+    "difficulty": "medium",
+    "reasoning": "Napoleon's death 1821 moderately known."
+  },
+  {
+    "name": "christmas-carol-published",
+    "difficulty": "medium",
+    "reasoning": "Dickens classic (91K views), Victorian era."
+  },
+  {
+    "name": "uncle-toms-cabin-published",
+    "difficulty": "medium",
+    "reasoning": "Anti-slavery novel famous (463K views), pre-Civil War."
+  },
+  {
+    "name": "republican-party-founded",
+    "difficulty": "medium",
+    "reasoning": "GOP founding 1854, anti-slavery context."
+  },
+  {
+    "name": "das-kapital-published",
+    "difficulty": "medium",
+    "reasoning": "Marx's Capital known (307K views), 1867."
+  },
+  {
+    "name": "queen-victoria-dies",
+    "difficulty": "medium",
+    "reasoning": "Victoria famous, 1901 end of era."
+  },
+  {
+    "name": "gandhi-non-cooperation-movement",
+    "difficulty": "hard",
+    "reasoning": "Gandhi famous but specific campaign timing hard."
+  },
+  {
+    "name": "communist-party-china-founded",
+    "difficulty": "hard",
+    "reasoning": "CPC known (1.2M views) but 1921 founding specialized."
+  },
+  {
+    "name": "death-lenin",
+    "difficulty": "medium",
+    "reasoning": "Lenin famous, 1924 death moderately known."
+  },
+  {
+    "name": "mein-kampf-published",
+    "difficulty": "medium",
+    "reasoning": "Hitler's book famous (1M views), mid-1920s."
+  },
+  {
+    "name": "jesse-owens-berlin-olympics",
+    "difficulty": "easy",
+    "reasoning": "Jesse Owens iconic (754K views), 1936 Berlin."
+  },
+  {
+    "name": "churchill-iron-curtain-speech",
+    "difficulty": "medium",
+    "reasoning": "Iron Curtain famous, post-WWII 1946."
+  },
+  {
+    "name": "un-partition-plan-palestine",
+    "difficulty": "medium",
+    "reasoning": "Israel creation context (476K views), 1947."
+  },
+  {
+    "name": "apartheid-begins",
+    "difficulty": "medium",
+    "reasoning": "Apartheid famous (1.5M views), 1948."
+  },
+  {
+    "name": "mccarthyism-begins",
+    "difficulty": "medium",
+    "reasoning": "McCarthyism famous (844K views), early 1950s."
+  },
+  {
+    "name": "stalin-dies",
+    "difficulty": "medium",
+    "reasoning": "Stalin death (324K views), 1953."
+  },
+  {
+    "name": "mccarthy-hearings",
+    "difficulty": "medium",
+    "reasoning": "Army-McCarthy hearings, McCarthy downfall 1954."
+  },
+  {
+    "name": "silent-spring-published",
+    "difficulty": "medium",
+    "reasoning": "Rachel Carson/environment (229K views), 1962."
+  },
+  {
+    "name": "first-heart-transplant",
+    "difficulty": "medium",
+    "reasoning": "Medical breakthrough, 1967 Cape Town."
+  },
+  {
+    "name": "death-mao-zedong",
+    "difficulty": "medium",
+    "reasoning": "Mao's death 1976, Cultural Revolution end."
+  },
+  { "name": "year-three-popes", "difficulty": "hard", "reasoning": "1978 papal year specialized." },
+  {
+    "name": "first-artificial-heart",
+    "difficulty": "hard",
+    "reasoning": "Medical breakthrough but 1982 timing specialized."
+  },
+  {
+    "name": "ayatollah-khomeini-dies",
+    "difficulty": "hard",
+    "reasoning": "Khomeini famous (2.6M views) but death timing specialized."
+  },
+  {
+    "name": "rio-earth-summit",
+    "difficulty": "hard",
+    "reasoning": "Earth Summit known but 1992 timing specialized."
+  },
+  {
+    "name": "iran-green-movement",
+    "difficulty": "hard",
+    "reasoning": "2009 protests known but timing specialized."
+  },
+  {
+    "name": "death-steve-jobs",
+    "difficulty": "easy",
+    "reasoning": "Jobs iconic (4.5M views), 2011 death well-known."
+  },
+  {
+    "name": "pope-benedict-resigns",
+    "difficulty": "medium",
+    "reasoning": "First papal resignation since 1415 (565K views), 2013."
+  },
+  {
+    "name": "queen-elizabeth-ii-dies",
+    "difficulty": "easy",
+    "reasoning": "QE2 iconic (442K views), 2022 death well-known."
+  }
+]

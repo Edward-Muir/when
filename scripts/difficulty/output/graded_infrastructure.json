@@ -1,0 +1,1012 @@
+[
+  {
+    "name": "gobekli-tepe",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (specialized knowledge), description says 'oldest known temple' but no clear temporal anchors. Very difficult to place within prehistoric era."
+  },
+  {
+    "name": "jericho-walls",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'earliest known permanent settlements' gives no clear date. Biblical reference doesn't help with exact dating."
+  },
+  {
+    "name": "catalhoyuk-settlement",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, 'one of world's first urban settlements' provides little temporal anchor. Obscure Anatolian site."
+  },
+  {
+    "name": "skara-brae",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'Neolithic village' helps narrow era but Skara Brae is obscure. No famous cultural anchors."
+  },
+  {
+    "name": "stonehenge-begins",
+    "difficulty": "medium",
+    "reasoning": "High recognition (Stonehenge is iconic), but 'construction begins' is harder than completion. Most know Stonehenge but not precise construction timeline."
+  },
+  {
+    "name": "step-pyramid-djoser",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition among history enthusiasts, 'first monumental stone building in Egypt' helps anchor to early pyramid era. Djoser less known than Great Pyramid."
+  },
+  {
+    "name": "pyramids",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Great Pyramid of Giza' and 'ancient Egyptians' are strong anchors. Most educated people know pyramids are ~2500 BCE."
+  },
+  {
+    "name": "stonehenge",
+    "difficulty": "hard",
+    "reasoning": "High recognition but 'Stonehenge Completed' is harder to date precisely. Most know it's prehistoric but exact completion date is obscure."
+  },
+  {
+    "name": "sphinx-built",
+    "difficulty": "medium",
+    "reasoning": "High recognition, associated with pyramids which anchors it. But Sphinx dating less commonly known than pyramids."
+  },
+  {
+    "name": "mohenjo-daro",
+    "difficulty": "hard",
+    "reasoning": "Medium-low recognition, 'Indus Valley civilization' helps narrow to ancient era but exact period requires specialized knowledge."
+  },
+  {
+    "name": "ziggurat-ur",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, 'Sumerians' and 'ancient Mesopotamia' help anchor to ancient era but specific timing is obscure."
+  },
+  {
+    "name": "palace-knossos",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (Minoans, Crete, associated with Minotaur legend). Bronze Age anchor helps narrow timeframe."
+  },
+  {
+    "name": "mycenaean-citadels",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition for history enthusiasts, 'Mycenae' helps but exact building date is specialized knowledge."
+  },
+  {
+    "name": "lion-gate-mycenae",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, specific architectural feature of Mycenae. Few know the Lion Gate specifically vs general Mycenaean history."
+  },
+  {
+    "name": "solomons-temple",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (biblical), 'First Temple' and 'Jerusalem' provide context but exact date requires religious/historical knowledge."
+  },
+  {
+    "name": "rome-founded",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Rome Founded' and 'Romulus' are famous. 753 BCE is taught in many schools. Strong cultural anchor."
+  },
+  {
+    "name": "cloaca-maxima",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, obscure Roman infrastructure. 'Rome' helps but 'Cloaca Maxima' is expert knowledge."
+  },
+  {
+    "name": "ishtar-gate",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Babylon' and 'Nebuchadnezzar II' help anchor to ancient era but specific timing is hard."
+  },
+  {
+    "name": "persepolis-founded",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Darius the Great' and 'Persian Empire' help but exact founding date is specialized knowledge."
+  },
+  {
+    "name": "parthenon-completed",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Parthenon' and 'Athens' are iconic. Classical Greek period (~5th century BCE) is well-known."
+  },
+  {
+    "name": "appian-way",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition for Roman enthusiasts, 'Rome's first major highway' helps but specific construction date is obscure."
+  },
+  {
+    "name": "colossus-rhodes",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition (Seven Wonders), ancient world anchor. But exact date harder than more famous wonders."
+  },
+  {
+    "name": "lighthouse-alexandria",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition (Seven Wonders), 'Alexandria' anchors to Hellenistic period. Famous enough to narrow era."
+  },
+  {
+    "name": "great-wall-begins",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Emperor Qin Shi Huang' is famous anchor for ~221 BCE. Great Wall is iconic."
+  },
+  {
+    "name": "terracotta-army",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'China's first emperor' (Qin Shi Huang) anchors clearly to ~210 BCE. Famous discovery."
+  },
+  {
+    "name": "pont-du-gard",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'Romans' and 'aqueduct' help anchor to Roman era. Southern France context aids placement."
+  },
+  {
+    "name": "colosseum-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Rome' and 'gladiatorial games' are strong anchors. Most know Colosseum is ancient Rome (~80 AD)."
+  },
+  {
+    "name": "trajan-column",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Rome' and 'Dacian' wars help but Trajan is less famous than Caesar/Augustus. Specific date hard."
+  },
+  {
+    "name": "pantheon-rebuilt",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Hadrian' and 'Roman temple' help anchor to Imperial Rome (~2nd century AD)."
+  },
+  {
+    "name": "hadrians-wall",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Hadrian' and 'Romans' in 'Britain' are strong anchors. Famous enough to place in Roman Britain era."
+  },
+  {
+    "name": "baths-caracalla",
+    "difficulty": "hard",
+    "reasoning": "Low-medium recognition, 'Rome' helps but Caracalla is less famous. Public baths harder to date than famous monuments."
+  },
+  {
+    "name": "constantinople-founded",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Emperor Constantine' is famous anchor. 330 AD is taught in history classes as major turning point."
+  },
+  {
+    "name": "hagia-sophia-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Byzantine' and 'Constantinople' help anchor. But exact completion (537) requires more specialized knowledge."
+  },
+  {
+    "name": "grand-canal-china",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Sui Dynasty' helps those who know Chinese history but obscure to most. World's longest canal less specific."
+  },
+  {
+    "name": "dome-rock-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition (Jerusalem, Temple Mount), Islamic architecture helps narrow to early Islamic period (~7th century)."
+  },
+  {
+    "name": "nara-todaiji",
+    "difficulty": "hard",
+    "reasoning": "Low recognition outside Japan, 'giant Buddha' helps but Japanese temple dating is specialized knowledge."
+  },
+  {
+    "name": "borobudur-temple",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's largest Buddhist temple' and 'Java' help but exact dating is specialized."
+  },
+  {
+    "name": "great-mosque-cordoba",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Cordoba' and Islamic Spain help but 'expanded' version is harder to date than original."
+  },
+  {
+    "name": "tower-london",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'William the Conqueror' is famous anchor for 1066 era. Tower of London is iconic."
+  },
+  {
+    "name": "great-zimbabwe",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'medieval African city' helps but Great Zimbabwe is less known than European medieval sites."
+  },
+  {
+    "name": "angkor-wat-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'massive Hindu temple' and 'Cambodia' are anchors but exact medieval date harder to pin."
+  },
+  {
+    "name": "leaning-tower-pisa",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, but 'construction begins' harder than recognizing the tower. Medieval Italy context helps."
+  },
+  {
+    "name": "chartres-cathedral",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'French Gothic' is strong era anchor (12th-13th century). Cathedral architecture helps placement."
+  },
+  {
+    "name": "alhambra-expanded",
+    "difficulty": "hard",
+    "reasoning": "High recognition (Alhambra famous), but 'expanded' by Nasrid dynasty is more specific. Granada/Islamic Spain helps."
+  },
+  {
+    "name": "forbidden-city-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'imperial palace' and 'Beijing' help. Ming Dynasty (~1420) requires some Chinese history knowledge."
+  },
+  {
+    "name": "florence-dome",
+    "difficulty": "medium",
+    "reasoning": "High recognition (Renaissance architecture), 'Brunelleschi' is famous anchor for early 15th century Florence."
+  },
+  {
+    "name": "machu-picchu-built",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'Inca' is strong anchor for 15th century. But precise construction date less commonly known."
+  },
+  {
+    "name": "sistine-chapel-completed",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'Vatican City' and 'papal chapel' help. But building completion (vs ceiling painting 1512) is different."
+  },
+  {
+    "name": "kremlin-walls",
+    "difficulty": "hard",
+    "reasoning": "High recognition (Kremlin), but wall construction specifically is harder. 'Moscow' helps but exact late 15th century is obscure."
+  },
+  {
+    "name": "st-peters-basilica-begins",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'Vatican City' and 'world's largest church' help anchor to Renaissance era."
+  },
+  {
+    "name": "chateau-chambord",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'French Renaissance' helps but Chambord specifically is less famous than Versailles."
+  },
+  {
+    "name": "escorial-palace",
+    "difficulty": "hard",
+    "reasoning": "Low-medium recognition, 'Philip II of Spain' helps anchor to 16th century but El Escorial is not widely known."
+  },
+  {
+    "name": "golden-temple-amritsar",
+    "difficulty": "hard",
+    "reasoning": "High recognition among those familiar with Sikhism, 'Guru Arjan' helps but specific dates require religious knowledge."
+  },
+  {
+    "name": "rialto-bridge",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Venice' and 'Grand Canal' are iconic. Renaissance-era bridge placement is manageable."
+  },
+  {
+    "name": "taj-mahal-built",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'Shah Jahan' is famous anchor. But 'construction begins' is harder than completion."
+  },
+  {
+    "name": "potala-palace",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Dalai Lama' and 'Tibet' help but specific 17th century start date is obscure."
+  },
+  {
+    "name": "taj-mahal-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Taj Mahal' is iconic. 'Mughal emperor' and 'marble mausoleum' are strong anchors."
+  },
+  {
+    "name": "versailles-expanded",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Louis XIV' is famous anchor for late 17th century. Palace of Versailles is iconic."
+  },
+  {
+    "name": "buckingham-palace",
+    "difficulty": "hard",
+    "reasoning": "Very high recognition, but 'townhouse that would become' is tricky. Original 1703 construction is less known than later royal use."
+  },
+  {
+    "name": "st-pauls-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Christopher Wren' and 'Great Fire' reference anchors to late 17th century London."
+  },
+  {
+    "name": "ladoga-canal",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, obscure Russian infrastructure. No famous anchors, extremely specialized knowledge."
+  },
+  {
+    "name": "schonbrunn-palace",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Habsburg' helps but Austrian palace is less famous than Versailles. 18th century placement hard."
+  },
+  {
+    "name": "catherine-palace",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Russian tsars' and 'St. Petersburg' help but exact completion date is obscure."
+  },
+  {
+    "name": "winter-palace-completed",
+    "difficulty": "hard",
+    "reasoning": "High recognition (Hermitage connection), 'Russian imperial' and 'St. Petersburg' help but exact date is hard."
+  },
+  {
+    "name": "steam-engine",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'James Watt' and 'Industrial Revolution' are strong anchors for late 18th century."
+  },
+  {
+    "name": "first-cotton-mill",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Richard Arkwright' less famous than Watt. Industrial Revolution anchor helps but specific date obscure."
+  },
+  {
+    "name": "iron-bridge",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition for Industrial Revolution enthusiasts, 'first major cast iron bridge' helps but specific date is hard."
+  },
+  {
+    "name": "white-house-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'US President' and 'Washington DC' are strong anchors. Early American history (~1800)."
+  },
+  {
+    "name": "singapore-founded",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Stamford Raffles' and 'British trading post' help but exact 1819 date is specialized."
+  },
+  {
+    "name": "erie-canal",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition in US history, 'Great Lakes to Atlantic' helps anchor to early 19th century canal era."
+  },
+  {
+    "name": "first-railway",
+    "difficulty": "medium",
+    "reasoning": "High recognition of concept, 'Stockton and Darlington' is less famous but 'world's first public railway' helps anchor."
+  },
+  {
+    "name": "ohio-canals-authorized",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, regional US infrastructure. No famous anchors, extremely specialized knowledge."
+  },
+  {
+    "name": "menai-suspension-bridge",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, 'first major suspension bridge' helps but Wales/Anglesey is obscure. Early 19th century hard to place."
+  },
+  {
+    "name": "liverpool-manchester-railway",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'first intercity passenger railway' is strong anchor for early railway era (~1830)."
+  },
+  {
+    "name": "telegraph",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Samuel Morse' is famous anchor for mid-19th century. Telegraph invention well-known."
+  },
+  {
+    "name": "crystal-palace",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'Great Exhibition' is famous anchor for 1851. Victorian era glass/iron architecture."
+  },
+  {
+    "name": "india-first-railway",
+    "difficulty": "hard",
+    "reasoning": "Low recognition outside India, 'Mumbai and Thane' less famous. Colonial era railway helps narrow timeframe."
+  },
+  {
+    "name": "london-underground",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'world's first underground railway' and 'London' are strong anchors for Victorian era."
+  },
+  {
+    "name": "brooklyn-bridge-begins",
+    "difficulty": "hard",
+    "reasoning": "High recognition (Brooklyn Bridge), but 'construction begins' harder than completion. Mid-19th century less specific."
+  },
+  {
+    "name": "suez-canal",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Mediterranean and Red Seas' is famous geographical anchor. Major 19th century project."
+  },
+  {
+    "name": "transcontinental-railroad",
+    "difficulty": "easy",
+    "reasoning": "High recognition in US history, 'first railroad spanning North America' and 'Promontory Summit' are famous anchors."
+  },
+  {
+    "name": "light-bulb",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Thomas Edison' is famous anchor for late 19th century. Light bulb invention is iconic."
+  },
+  {
+    "name": "brooklyn-bridge-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Brooklyn Bridge' is iconic. 1883 completion is well-known American landmark."
+  },
+  {
+    "name": "first-skyscraper-chicago",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'first skyscraper' and 'Chicago' help anchor. 'Home Insurance Building' is less famous."
+  },
+  {
+    "name": "canadian-pacific-railway",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'Canada's transcontinental railway' helps anchor to 1880s. Less famous than US equivalent."
+  },
+  {
+    "name": "automobile",
+    "difficulty": "medium",
+    "reasoning": "High recognition of concept, 'Karl Benz' is less famous than Ford. 'First practical automobile' helps anchor."
+  },
+  {
+    "name": "statue-liberty",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'France's gift to America' and 'New York Harbor' are iconic. 1886 is well-known."
+  },
+  {
+    "name": "eiffel-tower",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Gustave Eiffel' and 'Paris' are famous anchors. 1889 World's Fair context helps."
+  },
+  {
+    "name": "ferris-wheel-invented",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Chicago World's Fair' is famous anchor for 1893. George Ferris less famous than invention."
+  },
+  {
+    "name": "tower-bridge-london",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'London's iconic bascule bridge' and 'Thames' are strong anchors. Victorian era."
+  },
+  {
+    "name": "flatiron-building",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'triangular skyscraper' and 'New York City' help. Early 20th century NYC architecture."
+  },
+  {
+    "name": "trans-siberian-railway",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Moscow to Vladivostok' and 'world's longest railway' are strong anchors for early 1900s."
+  },
+  {
+    "name": "panama-canal",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Atlantic and Pacific Oceans' is famous geographical anchor. Major early 20th century project."
+  },
+  {
+    "name": "lincoln-memorial",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'Abraham Lincoln' and 'Washington DC' help but exact 1922 completion less known."
+  },
+  {
+    "name": "television",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition of invention, 'Philo Farnsworth' less famous. 'Electronic television' helps anchor to 1920s."
+  },
+  {
+    "name": "la-city-hall",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, regional US infrastructure. 'LA's tallest building for decades' doesn't help much with dating."
+  },
+  {
+    "name": "chrysler-building",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Art Deco' and 'world's tallest building' help anchor to early 1930s NYC."
+  },
+  {
+    "name": "empire-state-building",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'world's tallest building for 40 years' is famous anchor. 1931 is well-known."
+  },
+  {
+    "name": "radio-city-music-hall",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Art Deco' and 'Rockefeller Center' help anchor to early 1930s."
+  },
+  {
+    "name": "vatican-museum-spiral-staircase",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, specific architectural detail. 'Vatican City' helps but double-helix staircase date is obscure."
+  },
+  {
+    "name": "sydney-harbour-bridge",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Sydney' is famous anchor. But exact 1932 completion requires more specific knowledge."
+  },
+  {
+    "name": "hoover-dam",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Colorado River' is famous anchor. Great Depression era project is well-known."
+  },
+  {
+    "name": "golden-gate-bridge",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'San Francisco' is famous anchor. 1937 completion is well-known American landmark."
+  },
+  {
+    "name": "oil-discovery-saudi",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'Saudi Arabia' and 'transforming economy' help anchor to mid-20th century oil era."
+  },
+  {
+    "name": "rockefeller-center",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Art Deco' and 'Manhattan' help anchor. Late 1930s NYC architecture."
+  },
+  {
+    "name": "fallingwater",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'Frank Lloyd Wright' is famous anchor for mid-20th century American architecture."
+  },
+  {
+    "name": "mount-rushmore",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'presidential faces carved into mountain' is iconic American landmark. 1941 completion known."
+  },
+  {
+    "name": "autobahn-expanded",
+    "difficulty": "hard",
+    "reasoning": "High recognition of Autobahn, but 'expanded to 2000 miles' is specific. WWII era Germany context helps."
+  },
+  {
+    "name": "pentagon-completed",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'world's largest office building' and WWII context help anchor to early 1940s."
+  },
+  {
+    "name": "jefferson-memorial",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Washington DC' helps but Jefferson Memorial less famous than Lincoln Memorial."
+  },
+  {
+    "name": "british-railways-nationalized",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'British railway' and 'nationalized' help but post-WWII 1948 date is less specific."
+  },
+  {
+    "name": "trans-arabian-pipeline",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, obscure oil infrastructure. 'Saudi oil to Mediterranean' doesn't provide clear dating."
+  },
+  {
+    "name": "farnsworth-house",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'Mies van der Rohe' known to architecture enthusiasts but glass pavilion date is obscure."
+  },
+  {
+    "name": "united-nations-hq",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'UN' and 'New York City' help anchor to post-WWII era. Early 1950s placement reasonable."
+  },
+  {
+    "name": "lever-house",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, architectural landmark but 'glass curtain wall skyscraper' doesn't help with specific dating."
+  },
+  {
+    "name": "notre-dame-du-haut",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'Le Corbusier' known to architecture enthusiasts but Ronchamp chapel date is specialized."
+  },
+  {
+    "name": "interstate-highway-begins",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'America's national highway network' helps anchor to 1950s Eisenhower era."
+  },
+  {
+    "name": "seagram-building",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Mies van der Rohe' and 'New York' help but specific 1958 date is architectural history."
+  },
+  {
+    "name": "lego-brick-patent",
+    "difficulty": "medium",
+    "reasoning": "High recognition of Lego, 'patent' context helps but exact 1958 date requires specific knowledge."
+  },
+  {
+    "name": "sydney-opera-house-begins",
+    "difficulty": "hard",
+    "reasoning": "Very high recognition, but 'construction begins' is harder than completion. 1959 start less known than 1973."
+  },
+  {
+    "name": "brasilia-built",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'Brazil's modernist capital' and 'four years' help anchor to late 1950s/1960."
+  },
+  {
+    "name": "berlin-wall-built",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'East Germany' and 'dividing Berlin' are famous Cold War anchors. 1961 is well-known."
+  },
+  {
+    "name": "seattle-space-needle",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Seattle' and 'World's Fair' help anchor. 1962 Space Needle is iconic."
+  },
+  {
+    "name": "twa-terminal",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Eero Saarinen' and 'JFK Airport' help but specific 1962 date is architectural history."
+  },
+  {
+    "name": "marina-city",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'corn cob-shaped towers' in Chicago is obscure. 1964 requires specialized architectural knowledge."
+  },
+  {
+    "name": "verrazano-narrows-bridge",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's longest suspension bridge' and 'New York' help but 1964 date is less known."
+  },
+  {
+    "name": "shinkansen-opens",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Japan's Bullet Train' and 'high-speed rail' help anchor to 1964 Tokyo Olympics era."
+  },
+  {
+    "name": "gateway-arch",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'St. Louis' and 'stainless steel monument' help. 1965 completion is reasonably known."
+  },
+  {
+    "name": "astrodome-opens",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'first domed sports stadium' and 'Houston' help anchor to mid-1960s."
+  },
+  {
+    "name": "vehicle-assembly-building",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'NASA' and 'Kennedy Space Center' help anchor to Apollo era but specific date harder."
+  },
+  {
+    "name": "world-trade-center-begins",
+    "difficulty": "hard",
+    "reasoning": "Very high recognition, but 'construction begins' (1968) is harder than completion or 9/11."
+  },
+  {
+    "name": "john-hancock-center",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Chicago skyscraper' and 'X-braced' help but specific 1969 date is hard."
+  },
+  {
+    "name": "lake-pontchartrain-causeway",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'world's longest bridge over water' in Louisiana is obscure. 1969 expansion date very specific."
+  },
+  {
+    "name": "aswan-high-dam",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'Egypt' and 'Nile River' help anchor. Cold War era Soviet assistance context helps."
+  },
+  {
+    "name": "transamerica-pyramid",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'San Francisco' and 'pyramid-shaped' help but specific 1972 date is less known."
+  },
+  {
+    "name": "sydney-opera-house-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'iconic performing arts venue' in Sydney is famous. 1973 completion is reasonably known."
+  },
+  {
+    "name": "sears-tower",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Chicago skyscraper' and 'world's tallest building' are famous anchors. 1973 is known."
+  },
+  {
+    "name": "cn-tower",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Toronto' and 'communications tower' help. 1976 completion is reasonably known."
+  },
+  {
+    "name": "apple-founded",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Steve Jobs and Steve Wozniak' are famous anchors. 1976 garage founding is iconic."
+  },
+  {
+    "name": "pompidou-center",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'inside-out building' and 'Paris' help but Centre Pompidou 1977 date is harder."
+  },
+  {
+    "name": "st-gotthard-road-tunnel",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'world's longest road tunnel' in Switzerland is specific. 1980 date is obscure."
+  },
+  {
+    "name": "humber-bridge",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'world's longest suspension bridge' in England is specific. 1981 date is obscure."
+  },
+  {
+    "name": "itaipu-dam",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Brazil-Paraguay' and 'hydroelectric' help but specific 1984 date is less known."
+  },
+  {
+    "name": "at-and-t-building",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'Philip Johnson' and 'Chippendale top' are architectural terms. 1984 date is specialized."
+  },
+  {
+    "name": "lloyds-building",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'Richard Rogers' and 'high-tech building' in London. 1986 date is architectural history."
+  },
+  {
+    "name": "sunshine-skyway-bridge",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, Tampa Bay bridge with specific disaster reference. 1987 date is obscure."
+  },
+  {
+    "name": "channel-tunnel-begins",
+    "difficulty": "hard",
+    "reasoning": "Very high recognition of Channel Tunnel, but 'construction begins' (1988) is harder than completion (1994)."
+  },
+  {
+    "name": "seikan-tunnel",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, 'world's longest undersea tunnel' connecting Japanese islands. 1988 date is specialized."
+  },
+  {
+    "name": "louvre-pyramid",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'I.M. Pei' and 'Louvre' help anchor. 1989 completion is reasonably known landmark."
+  },
+  {
+    "name": "eurotunnel-boring",
+    "difficulty": "hard",
+    "reasoning": "High recognition of Channel Tunnel, but 'breakthrough' in 1990 is harder than opening in 1994."
+  },
+  {
+    "name": "bank-of-china-tower",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'I.M. Pei' and 'Hong Kong' help but specific 1990 date is less known."
+  },
+  {
+    "name": "canary-wharf-tower",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'UK's tallest building' and 'London Docklands' help but 1991 date is less specific."
+  },
+  {
+    "name": "chunnel-completed",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'Britain and France' undersea rail tunnel is famous. 1994 opening is well-known."
+  },
+  {
+    "name": "denver-airport",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'tent-roofed' and 'America's largest' help but 1995 date is less known."
+  },
+  {
+    "name": "bilbao-metro",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, 'Norman Foster' and Spanish metro. 1995 date is specialized architectural knowledge."
+  },
+  {
+    "name": "guggenheim-bilbao",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Frank Gehry' and 'titanium-clad' are famous. 'Bilbao Effect' anchors to late 1990s."
+  },
+  {
+    "name": "confederation-bridge",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, Canadian bridge to PEI. 'Longest bridge over ice-covered water' is very specific."
+  },
+  {
+    "name": "petronas-towers",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'world's tallest buildings' and 'Kuala Lumpur' help anchor to late 1990s."
+  },
+  {
+    "name": "hong-kong-airport",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Lantau Island' context but airport openings are harder to date precisely."
+  },
+  {
+    "name": "akashi-kaikyo-bridge",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, 'world's longest suspension bridge' in Japan. 1998 date is specialized knowledge."
+  },
+  {
+    "name": "great-belt-bridge",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, Danish bridge is obscure. 1998 date requires specialized knowledge."
+  },
+  {
+    "name": "international-space-station",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition, 'ISS' and 'orbit' help. 1998 start of assembly is reasonably known."
+  },
+  {
+    "name": "millennium-dome",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'London' and 'millennium celebration' anchor clearly to 1999/2000."
+  },
+  {
+    "name": "burj-al-arab",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'sail-shaped' and 'Dubai' are distinctive. Late 1990s Dubai construction boom context."
+  },
+  {
+    "name": "tate-modern",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'London' and 'power station converted' help anchor to millennium era."
+  },
+  {
+    "name": "oresund-bridge",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Denmark and Sweden' bridge-tunnel. 2000 date is less commonly known."
+  },
+  {
+    "name": "london-eye",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'giant observation wheel' and 'London' help. Millennium celebration context anchors to 2000."
+  },
+  {
+    "name": "jewish-museum-berlin",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Daniel Libeskind' and 'zigzag' help but specific 2001 date is architectural history."
+  },
+  {
+    "name": "delhi-metro",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'India's second metro' helps but specific 2002 date requires regional knowledge."
+  },
+  {
+    "name": "gwadar-port",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition, 'Pakistan' and 'Chinese investment' context but very obscure infrastructure project."
+  },
+  {
+    "name": "swiss-re-building",
+    "difficulty": "medium",
+    "reasoning": "Medium-high recognition, 'The Gherkin' and 'Norman Foster' in London are recognizable. Early 2000s anchor."
+  },
+  {
+    "name": "millau-viaduct",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's tallest bridge' in France helps but specific 2004 date is less known."
+  },
+  {
+    "name": "taipei-101",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'world's tallest building' and 'Taiwan' help anchor to mid-2000s."
+  },
+  {
+    "name": "three-gorges-dam",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'world's largest hydroelectric dam' and 'China's Yangtze' are strong anchors."
+  },
+  {
+    "name": "palm-jumeirah",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'artificial palm-shaped island' and 'Dubai' help anchor to 2000s Dubai boom."
+  },
+  {
+    "name": "beijing-national-stadium",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Bird's Nest' and 'Beijing Olympics' anchor clearly to 2008."
+  },
+  {
+    "name": "cern-lhc",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Large Hadron Collider' and 'CERN' are famous. 2008 completion is reasonably known."
+  },
+  {
+    "name": "singapore-flyer",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, Singapore observation wheel. 2008 date is less known than other landmarks."
+  },
+  {
+    "name": "china-high-speed-rail",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'China's first high-speed railway' helps anchor to late 2000s."
+  },
+  {
+    "name": "crossrail-begins",
+    "difficulty": "very-hard",
+    "reasoning": "Medium recognition of Crossrail/Elizabeth line, but 'construction begins' 2009 is harder than opening."
+  },
+  {
+    "name": "burj-khalifa",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'world's tallest building' and 'Dubai' are famous anchors. 2010 is well-known."
+  },
+  {
+    "name": "marina-bay-sands",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'three-tower hotel with rooftop infinity pool' and 'Singapore' are distinctive."
+  },
+  {
+    "name": "danyang-kunshan-grand-bridge",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'world's longest bridge' in China. Specific bridge name is very obscure."
+  },
+  {
+    "name": "shard-completed",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Western Europe's tallest building' and 'London' help anchor to early 2010s."
+  },
+  {
+    "name": "jeddah-tower-begins",
+    "difficulty": "very-hard",
+    "reasoning": "Medium recognition of planned tower, but 'construction begins' 2013 for unfinished project is obscure."
+  },
+  {
+    "name": "one-world-trade",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition, 'tallest building in Western Hemisphere' and 'WTC site' are famous anchors."
+  },
+  {
+    "name": "gotthard-base-tunnel",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's longest railway tunnel' in Swiss Alps. 2016 date is less commonly known."
+  },
+  {
+    "name": "apple-park",
+    "difficulty": "medium",
+    "reasoning": "High recognition, 'Apple's spaceship headquarters' and 'Cupertino' help anchor to late 2010s."
+  },
+  {
+    "name": "hong-kong-zhuhai-macau-bridge",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's longest sea crossing bridge' in China. 2018 date is recent but specific."
+  },
+  {
+    "name": "crimean-bridge",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition due to news coverage, 'Russia' and 'Crimea' provide context. 2018 is recent history."
+  },
+  {
+    "name": "statue-unity",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'world's tallest statue' and 'India' help but 'Sardar Patel' less known globally."
+  },
+  {
+    "name": "sagrada-familia-progress",
+    "difficulty": "hard",
+    "reasoning": "Very high recognition of Sagrada Familia, but 'central tower topped out' 2021 is very specific progress."
+  },
+  {
+    "name": "crossrail-elizabeth-line",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'London's new cross-city railway' helps but 2022 opening is recent and specific."
+  },
+  {
+    "name": "merdeka-118",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, 'second-tallest building' in Kuala Lumpur. 2023 completion is very recent and specific."
+  },
+  {
+    "name": "newgrange-built",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Irish passage tomb' and 'predating pyramids' helps anchor to prehistoric era."
+  },
+  {
+    "name": "museum-alexandria-founded",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Library of Alexandria' is famous but 'Mouseion' and 'Ptolemy I' are more specific."
+  },
+  {
+    "name": "globe-theatre-built",
+    "difficulty": "easy",
+    "reasoning": "High recognition, 'Shakespeare's Globe Theatre' is famous anchor for Elizabethan era (~1600)."
+  },
+  {
+    "name": "new-amsterdam-becomes-new-york",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'Dutch colony renamed' and 'Duke of York' help anchor to 17th century."
+  },
+  {
+    "name": "metropolitan-police-founded",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition, 'Sir Robert Peel' and 'London' help but 1829 date is less commonly known."
+  },
+  {
+    "name": "transatlantic-cable-completed",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'telegraph cable' and 'Europe and North America' help anchor to mid-19th century."
+  },
+  {
+    "name": "great-railroad-strike-1877",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, US labor history. 'West Virginia' and '1877' in name helps but event is obscure."
+  },
+  {
+    "name": "first-commercial-radio-broadcast",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition, 'KDKA' and 'Harding-Cox election' help anchor to 1920. Radio history context helps."
+  }
+]

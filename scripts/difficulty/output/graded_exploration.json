@@ -1,0 +1,1328 @@
+[
+  {
+    "name": "earth-formation",
+    "difficulty": "medium",
+    "reasoning": "High recognition (3.5M views), but exact timing of 4.5 billion years ago is hard to pin down precisely vs first life. Medium placeability - players know it's 'billions of years ago' but not more specific."
+  },
+  {
+    "name": "first-life",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (158K views), very hard to place precisely at 3.8 billion years ago. No strong temporal anchors in description."
+  },
+  {
+    "name": "fire-mastery",
+    "difficulty": "medium",
+    "reasoning": "High recognition (11M views from linked article), but 400,000 years ago is hard to pin down. 'Early humans' gives some anchor but timing is vague."
+  },
+  {
+    "name": "first-humans",
+    "difficulty": "medium",
+    "reasoning": "High recognition (2.2M views), 'emerged in Africa' is a known anchor but 300,000 years is hard to place precisely among other prehistoric events."
+  },
+  {
+    "name": "migration-out-africa",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (226K views), description mentions 'modern humans' which helps, but 70,000 years ago is hard to place precisely."
+  },
+  {
+    "name": "domestication-dogs",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (255K views). 'First animal companions' helps place it early but 15,000 BC is hard to pin down."
+  },
+  {
+    "name": "agriculture-begins",
+    "difficulty": "easy",
+    "reasoning": "High recognition (328K views). 'Neolithic Revolution' and 'Fertile Crescent' are strong anchors. ~10,000 BC is widely taught."
+  },
+  {
+    "name": "agriculture",
+    "difficulty": "easy",
+    "reasoning": "Duplicate of above. High recognition, strong anchors placing it around 10,000 BC."
+  },
+  {
+    "name": "domestication-wheat",
+    "difficulty": "hard",
+    "reasoning": "Low recognition, specific crop domestication timing is hard. 'Fertile Crescent' helps but 9500 BC vs 10000 BC is hard to distinguish."
+  },
+  {
+    "name": "domestication-horses",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (96K views). 'Eurasian steppes' is a moderate anchor. Around 4000 BC is harder to place precisely."
+  },
+  {
+    "name": "wheel-invented",
+    "difficulty": "easy",
+    "reasoning": "High recognition (228K views). 'Invented in Mesopotamia' gives strong ancient Near East anchor. One of the 'great inventions' that's widely taught."
+  },
+  {
+    "name": "invention-sail",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (55K views). 'Ancient Egyptians' helps place it in ancient era but exact timing around 3500 BC is hard."
+  },
+  {
+    "name": "invention-glass",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (24K views). 'Ancient Mesopotamians' helps but 3500 BC timing is hard to place precisely."
+  },
+  {
+    "name": "bronze-discovered",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (828K views for Bronze Age). 'Bronze Age' is a known anchor that helps place it around 3300 BC."
+  },
+  {
+    "name": "writing-invention",
+    "difficulty": "medium",
+    "reasoning": "High recognition. 'Sumerians' and 'cuneiform' are moderate anchors placing it in ancient Mesopotamia around 3200 BC."
+  },
+  {
+    "name": "iron-smelting",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (666K views). 'Iron Age' is a known anchor. Around 1200 BC is teachable."
+  },
+  {
+    "name": "polynesian-expansion",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (457K views for Austronesian). 1000 BC timing is hard to place without specific Pacific history knowledge."
+  },
+  {
+    "name": "phoenician-circumnavigation",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (1M views for Phoenicia generally). Disputed event, 600 BC timing very hard to place."
+  },
+  {
+    "name": "thales-eclipse",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (45K views). Obscure ancient Greek figure, 585 BC is hard to place without specific knowledge."
+  },
+  {
+    "name": "anaximander-world-map",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition for Anaximander specifically. 550 BC is hard to place."
+  },
+  {
+    "name": "pythagoras-theorem",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition. Pythagoras is universally taught, and ancient Greece (530 BC) is a known anchor."
+  },
+  {
+    "name": "hanno-africa",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (193K views). 'Carthaginian' helps place it in ancient era but 500 BC timing is hard."
+  },
+  {
+    "name": "herodotus-histories",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (151K views). 'Father of History' from Greece helps but 440 BC timing is hard to pin down."
+  },
+  {
+    "name": "hippocrates-medicine",
+    "difficulty": "medium",
+    "reasoning": "High recognition (361K views). 'Greek physician' - father of medicine is widely known. Ancient Greece anchor helps."
+  },
+  {
+    "name": "alexander-india",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (3.6M views). Alexander the Great is universally known, 326 BC can be reasoned from his conquests."
+  },
+  {
+    "name": "pytheas-arctic",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (97K views). Obscure Greek explorer, 325 BC is hard to place."
+  },
+  {
+    "name": "archimedes-principle",
+    "difficulty": "medium",
+    "reasoning": "High recognition (181K views). Archimedes is well-known, 'Greek' helps place it in ancient era around 250 BC."
+  },
+  {
+    "name": "eratosthenes-earth",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (171K views). Less famous than Archimedes, 240 BC is hard to place precisely."
+  },
+  {
+    "name": "hero-steam-engine",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (124K views). 'Hero of Alexandria' is obscure, year 50 AD is very hard to place."
+  },
+  {
+    "name": "buddhism-spreads-china",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (62K views). 'Silk Road' helps but 67 AD timing is hard to place precisely."
+  },
+  {
+    "name": "paper-invented",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (354K views). 'Han Dynasty China' and Cai Lun help anchor around 105 AD."
+  },
+  { "name": "paper-invented-china", "difficulty": "medium", "reasoning": "Duplicate of above." },
+  {
+    "name": "ptolemy-almagest",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (82K views). Ptolemy is somewhat known but 150 AD timing is hard."
+  },
+  {
+    "name": "compass-invented",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (307K views). Chinese invention but 206 AD (Han Dynasty) timing is hard to pin down."
+  },
+  {
+    "name": "printing-invented-china",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (110K views). 'China' helps but 650 AD is hard to place."
+  },
+  {
+    "name": "al-khwarizmi-algebra",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (383K views). 'Persian mathematician' helps place it in Islamic Golden Age but 820 AD timing is hard."
+  },
+  {
+    "name": "gunpowder-invented",
+    "difficulty": "easy",
+    "reasoning": "High recognition (137K views). 'Chinese alchemists' - widely taught Chinese invention. Medieval era is guessable."
+  },
+  {
+    "name": "vikings-iceland",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (80K views). 'Norse explorers' and 'Viking era' are strong anchors for late 800s."
+  },
+  {
+    "name": "vikings-greenland",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (82K views). 'Erik the Red' is somewhat known, Viking era anchor helps."
+  },
+  {
+    "name": "viking-america",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (82K views). 'Leif Erikson' is taught, year 1000 is a memorable anchor."
+  },
+  {
+    "name": "movable-type-china",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (115K views). 'Bi Sheng' is obscure, 1040 timing hard without knowing it predates Gutenberg."
+  },
+  {
+    "name": "fibonacci-arabic-numerals",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (289K views). Fibonacci known for sequence, but 1202 timing is hard to place."
+  },
+  {
+    "name": "roger-bacon-scientific-method",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (638K for scientific method generally). Roger Bacon is obscure, 1267 hard to place."
+  },
+  {
+    "name": "eyeglasses-invented",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (207K views). 'Italy' helps but 1286 is hard to place precisely."
+  },
+  {
+    "name": "ibn-battuta-travels",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (487K views). 'Moroccan explorer' and 'Islamic world' help but 1325 is hard."
+  },
+  {
+    "name": "tenochtitlan",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (584K views). 'Aztec capital' helps but 1325 founding is hard to place."
+  },
+  {
+    "name": "zheng-he-voyages",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (83K views). 'Chinese admiral' and 'Indian Ocean' help but 1405 is hard to place."
+  },
+  {
+    "name": "chinese-discover-america-theory",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, disputed theory. 1421 is very hard to place."
+  },
+  {
+    "name": "gutenberg-printing",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (433K views). Gutenberg press is universally taught, ~1450 is widely known."
+  },
+  {
+    "name": "portuguese-cape-verde",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (36K views). Obscure discovery, 1456 is hard to place."
+  },
+  {
+    "name": "dias-cape-good-hope",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (862K views for Cape Town). 'First European to sail around Africa' helps place it near Columbus era."
+  },
+  {
+    "name": "columbus-americas",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (887K views). 1492 is one of the most famous dates in history."
+  },
+  {
+    "name": "cabot-north-america",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (273K views). 'For England' helps but 1497 is overshadowed by Columbus."
+  },
+  {
+    "name": "vasco-da-gama-india",
+    "difficulty": "medium",
+    "reasoning": "High recognition (79K views). 'Portuguese explorer' and 'sea route to India' - Age of Exploration anchor."
+  },
+  {
+    "name": "cabral-brazil",
+    "difficulty": "medium",
+    "reasoning": "Low recognition (39K views). 'Claimed Brazil for Portugal' helps place it near 1500 Age of Exploration."
+  },
+  {
+    "name": "balboa-pacific",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (121K views). 'First European to see Pacific from Americas' - Age of Exploration anchor."
+  },
+  {
+    "name": "ponce-de-leon-florida",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (341K views). 'First European to reach Florida' - Age of Exploration context helps."
+  },
+  {
+    "name": "cortes-meets-aztecs",
+    "difficulty": "medium",
+    "reasoning": "High recognition (379K views). 'Aztec Empire' is well-known, 1519 can be reasoned from conquest timeline."
+  },
+  {
+    "name": "magellan-circumnavigation",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (273K views). 'First voyage around the world' is widely taught, early 1500s."
+  },
+  {
+    "name": "pizarro-meets-incas",
+    "difficulty": "medium",
+    "reasoning": "High recognition (290K views). 'Inca Empire in Peru' helps, Spanish conquest era around 1530s."
+  },
+  {
+    "name": "cartier-st-lawrence",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (222K views). 'Claimed Canada for France' helps but 1534 is less memorable."
+  },
+  {
+    "name": "de-soto-mississippi",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (153K views). 'First European to cross Mississippi' helps but 1541 is hard."
+  },
+  {
+    "name": "copernicus-heliocentric",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (252K views). 'Earth orbits the Sun' is a landmark scientific moment, widely taught."
+  },
+  {
+    "name": "vesalius-anatomy",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (104K views). Renaissance anatomy but 1543 timing is hard without specific knowledge."
+  },
+  {
+    "name": "tycho-brahe-observatory",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (309K views). 'Danish astronomer' helps but 1576 is hard to place."
+  },
+  {
+    "name": "drake-circumnavigation",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (113K views). 'Second circumnavigation' and 'Francis Drake' (famous) help place it in late 1500s."
+  },
+  {
+    "name": "microscope-invented",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (173K views). 'Dutch' and 'first compound microscope' - late 1500s is guessable from scientific revolution."
+  },
+  {
+    "name": "barents-arctic",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (85K views). 'Willem Barents' is obscure, 1596 is hard to place."
+  },
+  {
+    "name": "dutch-reach-australia",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (39K views). 'First European to reach Australia' helps but 1606 is hard."
+  },
+  {
+    "name": "jamestown",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (515K views). 'First permanent English settlement in North America' - 1607 is widely taught."
+  },
+  {
+    "name": "telescope-invented",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (76K views). 'Netherlands' helps, early 1600s scientific revolution context."
+  },
+  {
+    "name": "hudson-river",
+    "difficulty": "medium",
+    "reasoning": "High recognition (447K views for Hudson River). 'Northwest passage' and river naming help place early 1600s."
+  },
+  {
+    "name": "galileo-telescope",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (1.3M views). Galileo is universally known, early 1600s is guessable."
+  },
+  {
+    "name": "kepler-laws",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (323K views). 'Elliptical orbits' is taught but 1609 timing is hard vs Galileo."
+  },
+  {
+    "name": "galileo-jupiter-moons",
+    "difficulty": "medium",
+    "reasoning": "High recognition (160K views). Galileo is well-known, 1610 follows telescope usage."
+  },
+  {
+    "name": "mayflower",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (689K views). 'Pilgrims' and 'Plymouth' - 1620 is widely taught."
+  },
+  {
+    "name": "harvey-circulation",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (98K views). William Harvey is less famous, 1628 is hard to place."
+  },
+  {
+    "name": "tasman-australia",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (157K views). 'First European to reach Tasmania and New Zealand' helps but 1642 is hard."
+  },
+  {
+    "name": "torricelli-barometer",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (148K views). Torricelli is less famous, 1643 is hard to place."
+  },
+  {
+    "name": "boyle-law",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (191K views). Boyle's Law is taught in chemistry but 1662 timing is hard."
+  },
+  {
+    "name": "hooke-discovers-cells",
+    "difficulty": "medium",
+    "reasoning": "High recognition (488K views). 'Robert Hooke' and 'cells' are taught, mid-1600s scientific revolution."
+  },
+  {
+    "name": "newton-gravity",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (3M views). Newton and gravity theory is universally known, late 1600s."
+  },
+  {
+    "name": "leeuwenhoek-bacteria",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (22K views). 'Antonie van Leeuwenhoek' is obscure, 1676 is hard to place."
+  },
+  {
+    "name": "great-comet-1680",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (31K views). Obscure comet discovery, 1680 is hard to place."
+  },
+  {
+    "name": "la-salle-mississippi",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (90K views). 'Explored Mississippi to its mouth' helps but 1682 is hard."
+  },
+  {
+    "name": "newton-principia",
+    "difficulty": "medium",
+    "reasoning": "High recognition (218K views). Newton's Principia is famous, late 1600s can be reasoned."
+  },
+  {
+    "name": "first-paper-money-americas",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (59K views). 'Massachusetts' helps but 1690 is hard to place."
+  },
+  {
+    "name": "first-newspaper-americas",
+    "difficulty": "hard",
+    "reasoning": "Very low recognition (30K views). Obscure, 1690 is hard to place."
+  },
+  {
+    "name": "dampier-circumnavigation",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (67K views). 'First to circumnavigate three times' - Dampier is obscure."
+  },
+  {
+    "name": "dampier-new-britain",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, same obscure figure. 1700 is hard to place."
+  },
+  {
+    "name": "bering-strait",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (212K views). 'Asia and North America separate' helps but 1728 is hard."
+  },
+  {
+    "name": "first-synagogue-nyc",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition. Obscure religious building, 1730 hard to place."
+  },
+  {
+    "name": "linnaeus-taxonomy",
+    "difficulty": "hard",
+    "reasoning": "High recognition (769K views). Linnaeus is taught but 1735 timing is hard to place precisely."
+  },
+  {
+    "name": "franklin-kite-experiment",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition. 'Benjamin Franklin' and 'lightning is electrical' is iconic, mid-1700s."
+  },
+  {
+    "name": "cook-australia",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (1.1M views). Captain Cook is famous, 1770 can be reasoned."
+  },
+  {
+    "name": "oxygen-discovered",
+    "difficulty": "hard",
+    "reasoning": "High recognition (705K views) but 1774 timing vs other discoveries is hard to pin down."
+  },
+  {
+    "name": "lavoisier-oxygen",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (295K views). Lavoisier is known but 1778 vs oxygen discovery is confusing."
+  },
+  {
+    "name": "uranus-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (916K views). Planet discovery is memorable, late 1700s is guessable."
+  },
+  {
+    "name": "bounty-mutiny",
+    "difficulty": "medium",
+    "reasoning": "High recognition (484K views). Famous mutiny, 1789 is memorable (same year as French Revolution)."
+  },
+  {
+    "name": "first-us-census",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (550K views for 2020 census). 'First' and 'US' help, 1790 is soon after Constitution."
+  },
+  {
+    "name": "vaccination-invented",
+    "difficulty": "medium",
+    "reasoning": "High recognition (203K views). 'Smallpox vaccine' and 'Edward Jenner' are taught, late 1700s."
+  },
+  {
+    "name": "rosetta-stone",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (880K views). Rosetta Stone is iconic, 'French soldiers' suggests Napoleonic era."
+  },
+  {
+    "name": "humboldt-south-america",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (246K views). 'Alexander von Humboldt' less famous, 1799 is hard to place."
+  },
+  {
+    "name": "volta-battery",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (169K views). 'First battery' is memorable, 1800 is a round number anchor."
+  },
+  {
+    "name": "dalton-atomic-theory",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (207K views). John Dalton less famous, 1803 is hard to place."
+  },
+  {
+    "name": "lewis-clark-expedition",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (649K views). 'American West' exploration is widely taught, early 1800s."
+  },
+  {
+    "name": "mungo-park-niger",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (64K views). Obscure explorer, 1805 is hard to place."
+  },
+  {
+    "name": "electromagnetism-discovered",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (281K views). Oersted is less famous, 1820 is hard to place."
+  },
+  {
+    "name": "antarctica-sighted",
+    "difficulty": "hard",
+    "reasoning": "High recognition (1.5M views for Antarctica). 'First sighted' but 1820 timing is hard to pin down."
+  },
+  {
+    "name": "venus-de-milo-discovered",
+    "difficulty": "hard",
+    "reasoning": "High recognition (551K views). Famous statue but 1820 discovery date is not well known."
+  },
+  {
+    "name": "faraday-electric-motor",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (29K views for motor). Faraday known but 1821 is hard to place."
+  },
+  {
+    "name": "hieroglyphics-decoded",
+    "difficulty": "medium",
+    "reasoning": "High recognition (679K views). 'Rosetta Stone' connection helps, early 1800s after stone found."
+  },
+  {
+    "name": "dinosaur-fossils",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (12K views). 'First dinosaur scientifically named' but 1824 is hard."
+  },
+  {
+    "name": "ohm-law",
+    "difficulty": "hard",
+    "reasoning": "High recognition (512K views). Ohm's Law taught in physics but 1827 timing is hard."
+  },
+  {
+    "name": "darwin-beagle",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition. 'Darwin' and 'theory of evolution' are iconic, 1831 can be reasoned."
+  },
+  {
+    "name": "cell-theory",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (140K views). 'All living things are made of cells' is taught but 1839 hard."
+  },
+  {
+    "name": "joule-thermodynamics",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (7K views). Joule's Law is obscure, 1843 is hard to place."
+  },
+  {
+    "name": "neptune-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (1M views). Planet discovery is memorable, mid-1800s is guessable."
+  },
+  {
+    "name": "gorillas-discovered",
+    "difficulty": "hard",
+    "reasoning": "High recognition (1M views for gorilla). But 'discovered by science' in 1847 is not well known."
+  },
+  {
+    "name": "foucault-pendulum",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (187K views). 'Earth's rotation' demo but 1851 is hard to place."
+  },
+  {
+    "name": "perry-expedition-japan",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (198K views). 'Forced Japan to end isolation' is taught, mid-1800s."
+  },
+  {
+    "name": "bunsen-burner",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (87K views). Lab equipment naming but 1855 is hard to place."
+  },
+  {
+    "name": "source-of-nile",
+    "difficulty": "hard",
+    "reasoning": "High recognition (929K views for Nile). 'Lake Victoria' helps but 1858 is hard."
+  },
+  {
+    "name": "burke-wills-australia",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (70K views). 'Crossed Australia' but 1860 is hard to place."
+  },
+  {
+    "name": "pasteur-germ-theory",
+    "difficulty": "medium",
+    "reasoning": "High recognition (230K views). 'Louis Pasteur' and 'germs cause disease' is taught, mid-1800s."
+  },
+  {
+    "name": "pasteurization",
+    "difficulty": "medium",
+    "reasoning": "High recognition (277K views). 'Pasteur' connection and 'pasteurization' is well-known."
+  },
+  {
+    "name": "maxwell-equations",
+    "difficulty": "hard",
+    "reasoning": "High recognition (680K views). Maxwell's equations taught but 1865 is hard to place."
+  },
+  {
+    "name": "mendel-genetics",
+    "difficulty": "medium",
+    "reasoning": "High recognition (176K views). 'Gregor Mendel' and 'pea plants' are taught, mid-1800s."
+  },
+  {
+    "name": "periodic-table",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (4.1M views). Periodic table is universally taught, late 1800s."
+  },
+  {
+    "name": "troy-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (1.1M views). 'Legendary city of Troy' and 'Schliemann' are well-known."
+  },
+  {
+    "name": "livingstone-stanley",
+    "difficulty": "medium",
+    "reasoning": "Low recognition (11K views) but 'Dr. Livingstone, I presume' is a famous quote."
+  },
+  {
+    "name": "bell-telephone",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (190K views). 'Alexander Graham Bell' and telephone invention is universally taught."
+  },
+  {
+    "name": "germ-theory",
+    "difficulty": "hard",
+    "reasoning": "High recognition (230K views) but 1880 'established' vs 1861 'proposed' is confusing."
+  },
+  {
+    "name": "koch-tuberculosis",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (202K views). Robert Koch less famous than Pasteur, 1882 is hard."
+  },
+  {
+    "name": "hertz-radio-waves",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (70K views). Heinrich Hertz less famous, 1887 is hard to place."
+  },
+  {
+    "name": "nansen-arctic",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (26K views). Obscure expedition, 1893 is hard to place."
+  },
+  {
+    "name": "x-rays-discovered",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (424K views). X-rays are universally known, late 1800s."
+  },
+  {
+    "name": "radioactivity-discovered",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (40K views). 'Henri Becquerel' less famous, but 1896 around X-rays helps."
+  },
+  {
+    "name": "electron-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (370K views). 'First subatomic particle' is taught, late 1800s."
+  },
+  {
+    "name": "radium-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (270K views). 'Marie and Pierre Curie' are famous, around 1900 is guessable."
+  },
+  {
+    "name": "blood-types-discovered",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (142K views). 'ABO blood group' is taught, early 1900s."
+  },
+  {
+    "name": "powered-flight",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (1.1M views). 'Wright brothers' is universally taught, 1903 is widely known."
+  },
+  {
+    "name": "special-relativity",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (573K views). 'Einstein' and 'special relativity' - 1905 'miracle year' is teachable."
+  },
+  {
+    "name": "north-pole-reached",
+    "difficulty": "medium",
+    "reasoning": "High recognition (696K views). 'First to reach North Pole' is memorable, early 1900s."
+  },
+  {
+    "name": "machu-picchu-discovered",
+    "difficulty": "easy",
+    "reasoning": "High recognition (108K views). Famous site, 'Hiram Bingham' and 'Inca citadel' help."
+  },
+  {
+    "name": "atomic-nucleus",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (132K views). 'Rutherford' less famous than Einstein, 1911 is hard."
+  },
+  {
+    "name": "south-pole-reached",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (223K views). 'Amundsen' and 'first to reach South Pole' - early 1900s."
+  },
+  {
+    "name": "continental-drift",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (154K views). 'Alfred Wegener' less famous, 1912 is hard to place."
+  },
+  {
+    "name": "bohr-atomic-model",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (239K views). Bohr model taught but 1913 vs other atomic discoveries hard."
+  },
+  {
+    "name": "shackleton-endurance",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (160K views). 'Shackleton' and 'legendary survival story' are known."
+  },
+  {
+    "name": "first-scheduled-airline",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (133K views). 'First scheduled airline' but 1914 is overshadowed by WWI."
+  },
+  {
+    "name": "general-relativity",
+    "difficulty": "medium",
+    "reasoning": "High recognition (472K views). 'Einstein' and 'general relativity' - 1915 follows 1905."
+  },
+  {
+    "name": "insulin-discovered",
+    "difficulty": "medium",
+    "reasoning": "High recognition (355K views). 'Insulin' and 'saving diabetics' is significant, 1920s."
+  },
+  {
+    "name": "tutankhamun-tomb",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (277K views). 'King Tut' tomb discovery is iconic, 1922 is often taught."
+  },
+  {
+    "name": "first-insulin-injection",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (355K views). Specific injection event is less known than discovery."
+  },
+  {
+    "name": "hubble-galaxies",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (89K views). 'Other galaxies exist' is significant but 1924 is hard."
+  },
+  {
+    "name": "television-first-demonstration",
+    "difficulty": "medium",
+    "reasoning": "High recognition (597K views). 'First television demonstration' is memorable, 1920s."
+  },
+  {
+    "name": "goddard-liquid-rocket",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (53K views). 'Robert Goddard' and 'first liquid-fueled rocket' is taught."
+  },
+  {
+    "name": "spirit-of-st-louis",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (947K views). 'Lindbergh' transatlantic flight is iconic, 1927 is well-known."
+  },
+  {
+    "name": "penicillin-discovered",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (628K views). 'Alexander Fleming' and 'first antibiotic' is universally taught."
+  },
+  {
+    "name": "expanding-universe",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (248K views). 'Hubble' and 'expanding universe' but 1929 is hard to place."
+  },
+  {
+    "name": "pluto-discovered",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (1.2M views). Pluto discovery is memorable, 1930 is round number."
+  },
+  {
+    "name": "neutron-discovered",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (227K views). 'James Chadwick' is less famous, 1932 is hard."
+  },
+  {
+    "name": "amelia-earhart-atlantic",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (2M views). 'Amelia Earhart' is iconic, 'first woman solo across Atlantic' helps."
+  },
+  {
+    "name": "first-woman-us-senator",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition. 'Hattie Caraway' is obscure, 1932 is hard."
+  },
+  {
+    "name": "nuclear-fission",
+    "difficulty": "hard",
+    "reasoning": "High recognition (338K views). 'Nuclear fission' is taught but 1938 timing vs WWII is hard."
+  },
+  {
+    "name": "carbon-14-discovered",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (123K views). Carbon dating important but 1940 discovery is not well known."
+  },
+  {
+    "name": "penicillin-mass-produced",
+    "difficulty": "medium",
+    "reasoning": "High recognition (628K views). 'Mass produce' during WWII helps with timing."
+  },
+  {
+    "name": "dead-sea-scrolls",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (996K views). 'Dead Sea Scrolls' discovery is iconic, late 1940s."
+  },
+  {
+    "name": "heyerdahl-kon-tiki",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (164K views). 'Kon-Tiki' expedition is well-known, 1947 is placeable."
+  },
+  {
+    "name": "dna-structure",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (830K views). 'Watson and Crick' and 'double helix' is universally taught."
+  },
+  {
+    "name": "everest",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (2.8M views). 'First Everest summit' is iconic but exact year less known."
+  },
+  {
+    "name": "georgetown-ibm-machine-translation",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (9K views). Obscure AI history, 1954 is hard to place."
+  },
+  {
+    "name": "uss-nautilus-launched",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (226K views). 'First nuclear-powered submarine' but 1954 is hard."
+  },
+  {
+    "name": "polio-vaccine",
+    "difficulty": "easy",
+    "reasoning": "High recognition (257K views). 'Jonas Salk' and 'polio vaccine' is widely taught, 1955."
+  },
+  {
+    "name": "sputnik-launched",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (433K views). 'Sputnik' and 'first satellite' is universally taught, 1957."
+  },
+  {
+    "name": "van-allen-belt-detected",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (306K views). 'Van Allen belt' is less known, 1958 is hard."
+  },
+  {
+    "name": "mariana-trench",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (1.2M views). 'Deepest point on Earth' is memorable, 1960 is guessable."
+  },
+  {
+    "name": "laser-invented",
+    "difficulty": "medium",
+    "reasoning": "High recognition (449K views). 'First working laser' is significant, 1960 is guessable."
+  },
+  {
+    "name": "bathyscaphe-trieste",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (109K views). 'Mariana Trench' descent is memorable, same as above."
+  },
+  {
+    "name": "first-human-space",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (861K views). 'Yuri Gagarin' is universally taught, 1961 is well-known."
+  },
+  {
+    "name": "quasars-discovered",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (25K views). 'Quasars' are less known to general public, 1963 is hard."
+  },
+  {
+    "name": "first-woman-space",
+    "difficulty": "medium",
+    "reasoning": "High recognition (393K views). 'Valentina Tereshkova' and 'first woman in space' is taught."
+  },
+  {
+    "name": "luna-9-launched",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (33K views). 'First soft landing on Moon' but 1966 vs Apollo is hard."
+  },
+  {
+    "name": "plate-tectonics-confirmed",
+    "difficulty": "hard",
+    "reasoning": "High recognition (702K views). 'Plate tectonics' is taught but 1968 confirmation date is not."
+  },
+  {
+    "name": "apollo-5-lunar-module",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (203K views). Specific Apollo 5 mission is less known than Apollo 11."
+  },
+  {
+    "name": "moon-landing",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (1.6M views). 'Neil Armstrong' and 'Moon landing' is universally taught, 1969."
+  },
+  {
+    "name": "apollo-11-launch",
+    "difficulty": "easy",
+    "reasoning": "Same as above, 1969 Apollo 11 is universally known."
+  },
+  {
+    "name": "boeing-747-enters-service",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (1.4M views). 'Jumbo jet' is iconic, 1970 is around Moon era."
+  },
+  {
+    "name": "japan-launches-ohsumi",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (6K views). Obscure satellite launch, 1970 is hard to place."
+  },
+  {
+    "name": "mri-invented",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (83K views). MRI is important but 1971 invention date is less known."
+  },
+  {
+    "name": "lucy-discovered",
+    "difficulty": "medium",
+    "reasoning": "Low recognition (16K views) but 'Lucy' fossil is culturally famous, 1974 is guessable."
+  },
+  {
+    "name": "voyager-1-launched",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (962K views). 'Voyager 1' and 'farthest from Earth' is well-known."
+  },
+  {
+    "name": "first-dna-sequencing",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (97K views). 'DNA sequencing' important but 1977 is hard to place."
+  },
+  {
+    "name": "test-tube-baby",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (186K views). 'Louise Brown' and 'first IVF baby' is memorable, 1978."
+  },
+  {
+    "name": "smallpox-eradicated",
+    "difficulty": "medium",
+    "reasoning": "High recognition (1.1M views). 'First disease eradicated' is significant, 1980 is round."
+  },
+  {
+    "name": "hiv-identified",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (900K views). 'HIV/AIDS' is well-known, 1983 is guessable from AIDS crisis."
+  },
+  {
+    "name": "titanic-wreck-found",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (621K views). 'Titanic wreck' discovery is iconic, 1985 is well-known."
+  },
+  {
+    "name": "world-wide-web",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (1.8M views). 'Tim Berners-Lee' and 'WWW' is universally taught."
+  },
+  {
+    "name": "hubble-launch",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (544K views). 'Hubble Space Telescope' is famous, 1990 is guessable."
+  },
+  {
+    "name": "first-exoplanet",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (49K views). 'First exoplanet' is significant but 1992 is hard to place."
+  },
+  {
+    "name": "spirit-mars-rover",
+    "difficulty": "medium",
+    "reasoning": "High recognition (213K views). 'Mars rover' missions are known, 2004 is recent enough."
+  },
+  {
+    "name": "eris-discovery",
+    "difficulty": "hard",
+    "reasoning": "High recognition (436K views). 'Dwarf planet' and 'Pluto demotion' helps but 2005 is less known."
+  },
+  {
+    "name": "higgs-boson",
+    "difficulty": "medium",
+    "reasoning": "High recognition (634K views). 'Higgs boson' and 'CERN' are well-known, 2012 is recent."
+  },
+  {
+    "name": "crispr-gene-editing",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (182K views). 'CRISPR' is well-known in recent years, 2012 is guessable."
+  },
+  {
+    "name": "voyager-leaves-solar-system",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (185K views). 'Voyager' and 'interstellar space' is memorable, 2012."
+  },
+  {
+    "name": "mars-curiosity-landing",
+    "difficulty": "easy",
+    "reasoning": "High recognition (270K views). 'Curiosity rover' is well-known, 2012 is recent."
+  },
+  {
+    "name": "india-mars-mission",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (146K views). 'India' and 'first Asian nation to Mars' but 2014 is hard."
+  },
+  {
+    "name": "gravitational-waves",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (65K views). 'LIGO' and 'Einstein's prediction' is memorable, 2015."
+  },
+  {
+    "name": "new-horizons-pluto",
+    "difficulty": "medium",
+    "reasoning": "High recognition (316K views). 'New Horizons' and 'Pluto flyby' is well-known, 2015."
+  },
+  {
+    "name": "spacex-reusable-rocket",
+    "difficulty": "easy",
+    "reasoning": "Medium recognition (37K views) but 'SpaceX' and 'reusable rocket' is culturally famous."
+  },
+  {
+    "name": "black-hole-image",
+    "difficulty": "easy",
+    "reasoning": "Medium recognition (121K views). 'First black hole image' was major news, 2019."
+  },
+  {
+    "name": "quantum-computing-supremacy",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (51K views). 'Quantum supremacy' is technical, 2019 is recent but hard."
+  },
+  {
+    "name": "change-4-landing",
+    "difficulty": "hard",
+    "reasoning": "High recognition (525K views for Moon landing). 'Far side of Moon' but 2019 vs other missions is hard."
+  },
+  {
+    "name": "mrna-vaccines",
+    "difficulty": "easy",
+    "reasoning": "High recognition (302K views). 'COVID-19' and 'mRNA vaccines' is universally known, 2020."
+  },
+  {
+    "name": "alphafold-protein",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (230K views). 'AlphaFold' and 'protein folding' is technical, 2020."
+  },
+  {
+    "name": "china-moon-samples",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (42K views). 'Third country to return lunar samples' but 2020 is hard."
+  },
+  {
+    "name": "james-webb-launched",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (688K views). 'James Webb' telescope was major news, 2021."
+  },
+  {
+    "name": "perseverance-mars-landing",
+    "difficulty": "easy",
+    "reasoning": "Medium recognition (64K views). 'Perseverance' and 'Ingenuity' are well-known, 2021."
+  },
+  {
+    "name": "ingenuity-mars-flight",
+    "difficulty": "easy",
+    "reasoning": "Medium recognition (142K views). 'First aircraft on another planet' was major news, 2021."
+  },
+  {
+    "name": "parker-solar-probe",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (255K views). 'Parker Solar Probe' and 'Sun's corona' but 2021 is hard."
+  },
+  {
+    "name": "dart-asteroid-impact",
+    "difficulty": "easy",
+    "reasoning": "Medium recognition (146K views). 'NASA deflected asteroid' was major news, 2022."
+  },
+  {
+    "name": "nuclear-fusion-ignition",
+    "difficulty": "medium",
+    "reasoning": "Low recognition (11K views). 'Fusion ignition' was news but 2022 timing is less known."
+  },
+  {
+    "name": "superconductor-claims",
+    "difficulty": "very-hard",
+    "reasoning": "Medium recognition (51K views). 'Room-temperature superconductor' was brief news, 2023."
+  },
+  {
+    "name": "arpanet-created",
+    "difficulty": "medium",
+    "reasoning": "High recognition (305K views). 'Precursor to internet' and 'UCLA and Stanford' helps."
+  },
+  {
+    "name": "mir-space-station",
+    "difficulty": "medium",
+    "reasoning": "High recognition (265K views). 'Soviet' and 'first modular space station' helps, 1986."
+  },
+  {
+    "name": "www-goes-public",
+    "difficulty": "medium",
+    "reasoning": "Very high recognition (1.8M views). 'World Wide Web' going public, 1991 is guessable."
+  },
+  {
+    "name": "india-nuclear-tests",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (19K views). 'India nuclear tests' but 1998 is hard to place."
+  },
+  {
+    "name": "anaesthesia-discovered",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (96K views). 'Painless surgery' is significant but 1842 timing is hard."
+  },
+  {
+    "name": "first-stone-tools",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (98K views). 'Oldowan' is obscure, 2.6 million years ago is hard."
+  },
+  {
+    "name": "anatomically-modern-humans",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (324K views). 'Homo sapiens' helps, 200,000 years ago is teachable."
+  },
+  {
+    "name": "domestication-cattle",
+    "difficulty": "medium",
+    "reasoning": "High recognition (947K views). 'Near East and Africa' helps place it around 8000 BC."
+  },
+  {
+    "name": "copper-smelting-begins",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (46K views). 'Beginning metallurgy' but 7000 BC is hard to place."
+  },
+  {
+    "name": "zhang-heng-seismoscope",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (41K views). 'Zhang Heng' is obscure, 132 AD is hard to place."
+  },
+  {
+    "name": "homo-erectus-emerges",
+    "difficulty": "medium",
+    "reasoning": "High recognition (778K views for Homo). 'Homo erectus' is taught, 1.8 million years helps."
+  },
+  {
+    "name": "domestication-of-sheep-and-goats",
+    "difficulty": "medium",
+    "reasoning": "High recognition (621K views). 'First livestock' in Fertile Crescent helps."
+  },
+  {
+    "name": "domestication-of-pigs",
+    "difficulty": "medium",
+    "reasoning": "High recognition (640K views). 'China and Anatolia' helps place around 7000 BC."
+  },
+  {
+    "name": "domestication-of-donkeys",
+    "difficulty": "hard",
+    "reasoning": "High recognition (586K views). But 4500 BC timing is hard to place."
+  },
+  {
+    "name": "dionysius-exiguus-creates-ad-system",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (57K views). Obscure monk, 525 AD is very hard."
+  },
+  {
+    "name": "buddhism-officially-introduced-to-japan",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (53K views). 'Korean envoys' and 'Japan' help but 552 AD is hard."
+  },
+  {
+    "name": "cyrillic-alphabet-created",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (191K views). 'Saints Cyril and Methodius' helps but 863 AD is hard."
+  },
+  {
+    "name": "gunpowder-formula-first-recorded",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (137K views). 'Song Dynasty' helps but 1044 vs general invention is confusing."
+  },
+  {
+    "name": "silver-discovered-at-potosi",
+    "difficulty": "hard",
+    "reasoning": "Low recognition (42K views). 'Spanish colonizers' and 'Bolivia' help but 1545 is hard."
+  },
+  {
+    "name": "spinning-jenny-invented",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (129K views). 'Industrial Revolution' textile machine helps."
+  },
+  {
+    "name": "hydrogen-discovered",
+    "difficulty": "hard",
+    "reasoning": "High recognition (755K views). 'Henry Cavendish' less famous, 1766 is hard."
+  },
+  {
+    "name": "first-voyage-of-james-cook",
+    "difficulty": "medium",
+    "reasoning": "High recognition (79K views). 'Captain James Cook' and 'Transit of Venus' helps."
+  },
+  {
+    "name": "nitrogen-discovered",
+    "difficulty": "hard",
+    "reasoning": "High recognition (478K views). 'Daniel Rutherford' obscure, 1772 is hard."
+  },
+  {
+    "name": "power-loom-invented",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (59K views). 'Industrial Revolution' textile anchor helps."
+  },
+  {
+    "name": "penny-post-introduced",
+    "difficulty": "very-hard",
+    "reasoning": "Very low recognition (8K views). Obscure postal history, 1840 is hard."
+  },
+  {
+    "name": "garibaldis-expedition",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (109K views). 'Italian unification' helps but 1860 is hard."
+  },
+  {
+    "name": "dynamite-invented",
+    "difficulty": "easy",
+    "reasoning": "High recognition (320K views). 'Alfred Nobel' (of Nobel Prize) helps anchor late 1800s."
+  },
+  {
+    "name": "maxim-gun-invented",
+    "difficulty": "hard",
+    "reasoning": "Medium recognition (300K views). 'First fully automatic machine gun' but 1884 is hard."
+  },
+  {
+    "name": "max-plancks-quantum-theory",
+    "difficulty": "medium",
+    "reasoning": "High recognition (369K views). 'Max Planck' and 'quantum physics' - 1900 is round number."
+  },
+  {
+    "name": "general-strike-in-britain",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (59K views). British labor history, 1926 is hard to place."
+  },
+  {
+    "name": "heisenbergs-uncertainty-principle",
+    "difficulty": "medium",
+    "reasoning": "High recognition (487K views). 'Heisenberg' and 'uncertainty principle' is taught."
+  },
+  {
+    "name": "first-nuclear-reactor",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (180K views). 'Enrico Fermi' and 'Chicago Pile-1' - WWII context helps."
+  },
+  {
+    "name": "transistor-invented",
+    "difficulty": "medium",
+    "reasoning": "High recognition (524K views). 'Bell Labs' and 'transistor' is significant, late 1940s."
+  },
+  {
+    "name": "first-soviet-nuclear-test",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (92K views). 'Soviet atomic bomb' and Cold War helps place 1949."
+  },
+  {
+    "name": "first-hydrogen-bomb-test",
+    "difficulty": "medium",
+    "reasoning": "High recognition (746K views). 'Thermonuclear' and 'Ivy Mike' - early 1950s Cold War."
+  },
+  {
+    "name": "geneva-summit-1955",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition (28K views). Cold War summit, 1955 is hard to place."
+  },
+  {
+    "name": "laika-in-space",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (866K views). 'Laika' the space dog is culturally famous."
+  },
+  {
+    "name": "apollo-17-last-moon-mission",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (181K views). 'Last crewed lunar mission' helps, 1972."
+  },
+  {
+    "name": "viking-lands-on-mars",
+    "difficulty": "medium",
+    "reasoning": "Medium recognition (36K views). 'First spacecraft to land on Mars' - 1976 is guessable."
+  },
+  {
+    "name": "first-space-shuttle-launch",
+    "difficulty": "easy",
+    "reasoning": "High recognition (358K views). 'Space Shuttle Columbia' is iconic, 1981."
+  },
+  {
+    "name": "north-korea-nuclear-test",
+    "difficulty": "medium",
+    "reasoning": "Low recognition (28K views). 'North Korea' and 'nuclear test' is memorable, 2006."
+  },
+  {
+    "name": "felix-baumgartner-space-jump",
+    "difficulty": "easy",
+    "reasoning": "Very high recognition (1.3M views). 'Space jump' and 'sound barrier' was viral, 2012."
+  }
+]

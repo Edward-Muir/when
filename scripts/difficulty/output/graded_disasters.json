@@ -1,0 +1,1097 @@
+[
+  {
+    "name": "dinosaur-extinction",
+    "difficulty": "easy",
+    "reasoning": "Universally known event, taught in elementary schools worldwide. 'Dinosaurs' immediately signals prehistoric era."
+  },
+  {
+    "name": "yellowstone-supervolcano",
+    "difficulty": "very-hard",
+    "reasoning": "While Yellowstone is known, the specific supereruption date (640,000 years ago) is obscure. No temporal anchors in name/description."
+  },
+  {
+    "name": "toba-supereruption",
+    "difficulty": "very-hard",
+    "reasoning": "Low recognition, obscure prehistoric event. Only specialists would know timeframe (~74,000 years ago)."
+  },
+  {
+    "name": "storegga-tsunami",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure event, no recognizable temporal anchors. Specialist knowledge required."
+  },
+  {
+    "name": "black-sea-deluge",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure geological theory, no temporal clues. Even experts debate timing."
+  },
+  {
+    "name": "thera-eruption",
+    "difficulty": "hard",
+    "reasoning": "Minoan civilization reference helps place it in Bronze Age, but specific timing is hard. Medium recognition among history enthusiasts."
+  },
+  {
+    "name": "bronze-age-collapse",
+    "difficulty": "medium",
+    "reasoning": "'Bronze Age' in name is a strong temporal anchor. Medium recognition among history enthusiasts."
+  },
+  {
+    "name": "late-bronze-age-drought",
+    "difficulty": "hard",
+    "reasoning": "'Bronze Age' helps, but this is less recognized than the collapse itself. Drought specifics are obscure."
+  },
+  {
+    "name": "plague-of-athens",
+    "difficulty": "hard",
+    "reasoning": "Athens reference suggests ancient Greece, but specific timing within ancient period is hard without knowing context of Peloponnesian War."
+  },
+  {
+    "name": "vesuvius-eruption",
+    "difficulty": "easy",
+    "reasoning": "Very well-known event, Pompeii connection is taught widely. Roman context anchors timeframe."
+  },
+  {
+    "name": "pompeii",
+    "difficulty": "easy",
+    "reasoning": "Iconic event, extremely well-known. Roman city + Vesuvius = strong temporal anchor."
+  },
+  {
+    "name": "antonine-plague",
+    "difficulty": "hard",
+    "reasoning": "'Antonine' references Roman emperor but requires specialized knowledge. Roman Empire context helps somewhat."
+  },
+  {
+    "name": "hatepe-eruption",
+    "difficulty": "very-hard",
+    "reasoning": "Extremely obscure event, New Zealand prehistoric history. No temporal anchors."
+  },
+  {
+    "name": "plague-of-cyprian",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure, Cyprian is not widely known. Roman Empire context helps minimally."
+  },
+  {
+    "name": "365-crete-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Year in name but event itself is obscure. Low recognition outside specialists."
+  },
+  {
+    "name": "antioch-earthquake-526",
+    "difficulty": "very-hard",
+    "reasoning": "'Byzantine' helps narrow era, but specific earthquake is obscure. Low recognition."
+  },
+  {
+    "name": "volcanic-winter-536",
+    "difficulty": "hard",
+    "reasoning": "Increasingly known due to popular science articles. Year in name helps, but still relatively obscure."
+  },
+  {
+    "name": "plague-of-justinian",
+    "difficulty": "medium",
+    "reasoning": "Justinian is recognizable to history enthusiasts (Byzantine emperor). Bubonic plague + Byzantine = 6th century anchor."
+  },
+  {
+    "name": "justinian-plague-recurrence",
+    "difficulty": "very-hard",
+    "reasoning": "'Plague of Sheroe' is extremely obscure. Sasanian Persian Empire helps minimally."
+  },
+  {
+    "name": "damghan-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure location and event. No temporal anchors in name."
+  },
+  {
+    "name": "aleppo-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Medieval earthquake, location alone doesn't help with timing. Low recognition."
+  },
+  {
+    "name": "syria-earthquake-medieval",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure medieval event. 'Middle East' provides no temporal context."
+  },
+  {
+    "name": "samalas-eruption",
+    "difficulty": "very-hard",
+    "reasoning": "Indonesian eruption unknown to most. No temporal anchors."
+  },
+  {
+    "name": "great-european-famine",
+    "difficulty": "hard",
+    "reasoning": "'Great European Famine' is somewhat known to medieval history enthusiasts. Europe context but no clear era indicator."
+  },
+  {
+    "name": "mongol-black-death-spread",
+    "difficulty": "hard",
+    "reasoning": "Black Death connection helps (14th century), but Siege of Caffa is less known. Mongols suggest 13th-14th century."
+  },
+  {
+    "name": "black-death-arrives",
+    "difficulty": "easy",
+    "reasoning": "Extremely well-known event, taught in schools. 14th century medieval Europe is commonly known."
+  },
+  {
+    "name": "black-death-peak",
+    "difficulty": "medium",
+    "reasoning": "Well-known event, but distinguishing peak from arrival requires more specific knowledge."
+  },
+  {
+    "name": "sweating-sickness",
+    "difficulty": "hard",
+    "reasoning": "Obscure disease, England reference helps but timing (Tudor era) requires specialized knowledge."
+  },
+  {
+    "name": "dancing-plague",
+    "difficulty": "hard",
+    "reasoning": "Memorable event but timing is hard. Strasbourg alone doesn't anchor era well."
+  },
+  {
+    "name": "shaanxi-earthquake",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest earthquake in history' is notable but China location and timing are obscure to most."
+  },
+  {
+    "name": "huaynaputina-eruption",
+    "difficulty": "very-hard",
+    "reasoning": "Extremely obscure South American volcanic event. No temporal anchors."
+  },
+  {
+    "name": "russian-famine-troubles",
+    "difficulty": "very-hard",
+    "reasoning": "'Time of Troubles' is obscure period. Requires Russian history knowledge."
+  },
+  {
+    "name": "vasa-sinking",
+    "difficulty": "hard",
+    "reasoning": "Swedish warship, maiden voyage in Stockholm. Known to some due to museum, but timing is hard."
+  },
+  {
+    "name": "italian-plague",
+    "difficulty": "hard",
+    "reasoning": "Bubonic plague in Italy - multiple outbreaks occurred. Timing is not easily distinguished."
+  },
+  {
+    "name": "great-plague-london",
+    "difficulty": "medium",
+    "reasoning": "Well-known event in British history. 'Great Plague' often associated with 1660s, followed by Great Fire."
+  },
+  {
+    "name": "great-fire-london",
+    "difficulty": "easy",
+    "reasoning": "Extremely well-known British history event. '1666' is often memorized (year after plague)."
+  },
+  {
+    "name": "cascadia-earthquake-1700",
+    "difficulty": "hard",
+    "reasoning": "Pacific Northwest earthquake, relatively obscure. Japan recording is interesting but not widely known."
+  },
+  {
+    "name": "chile-earthquake-1730",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure historical earthquake. Chilean colonial history is specialized knowledge."
+  },
+  {
+    "name": "irish-famine-forgotten",
+    "difficulty": "very-hard",
+    "reasoning": "'Forgotten Famine' indicates obscurity. Easily confused with Great Famine (1840s)."
+  },
+  {
+    "name": "lisbon-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Well-known to history enthusiasts, significant philosophical impact. Portugal's capital destruction is memorable."
+  },
+  {
+    "name": "great-boston-fire-1760",
+    "difficulty": "very-hard",
+    "reasoning": "Extremely obscure fire. Colonial American history but no strong anchors."
+  },
+  {
+    "name": "great-hurricane-caribbean",
+    "difficulty": "very-hard",
+    "reasoning": "'Deadliest Atlantic hurricane in history' is notable but 1780 timing is not well-known."
+  },
+  {
+    "name": "laki-eruption",
+    "difficulty": "hard",
+    "reasoning": "Icelandic eruption with European effects. Known to some but timing is difficult."
+  },
+  {
+    "name": "chalisa-famine",
+    "difficulty": "very-hard",
+    "reasoning": "Extremely obscure Indian famine. No temporal anchors."
+  },
+  {
+    "name": "calabria-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Italian earthquake, but Italy has many earthquakes. No distinguishing features for timing."
+  },
+  {
+    "name": "doji-bara-famine",
+    "difficulty": "very-hard",
+    "reasoning": "Extremely obscure Indian regional famine."
+  },
+  {
+    "name": "unzen-eruption",
+    "difficulty": "very-hard",
+    "reasoning": "Japanese volcanic disaster, obscure. No temporal anchors."
+  },
+  {
+    "name": "yellow-fever-philadelphia",
+    "difficulty": "hard",
+    "reasoning": "American capital context helps (late 18th century). Medium-known in American history."
+  },
+  {
+    "name": "new-madrid-earthquakes",
+    "difficulty": "hard",
+    "reasoning": "Known in American history/geology, but timing (early 19th century) is not intuitive."
+  },
+  {
+    "name": "london-beer-flood",
+    "difficulty": "hard",
+    "reasoning": "Memorable oddity but timing is hard. London provides no era context."
+  },
+  {
+    "name": "tambora-eruption",
+    "difficulty": "medium",
+    "reasoning": "'Largest volcanic eruption in recorded history' is notable. Connected to Year Without a Summer."
+  },
+  {
+    "name": "year-without-summer",
+    "difficulty": "medium",
+    "reasoning": "Well-known event, Tambora reference anchors it. 1816 is often learned."
+  },
+  {
+    "name": "great-fire-new-york",
+    "difficulty": "very-hard",
+    "reasoning": "Lower Manhattan fire, but NYC has had multiple fires. Timing is obscure."
+  },
+  {
+    "name": "irish-potato-famine",
+    "difficulty": "easy",
+    "reasoning": "Extremely well-known event, taught in schools. 1840s Ireland is common knowledge."
+  },
+  {
+    "name": "cholera-london",
+    "difficulty": "medium",
+    "reasoning": "John Snow reference is famous in epidemiology/medicine. Victorian London context."
+  },
+  {
+    "name": "third-plague-pandemic",
+    "difficulty": "hard",
+    "reasoning": "'Third Plague Pandemic' suggests there were others, requires knowledge of plague history."
+  },
+  {
+    "name": "ansei-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Japanese era name 'Ansei' is obscure. Edo (Tokyo) helps minimally."
+  },
+  {
+    "name": "carrington-event",
+    "difficulty": "hard",
+    "reasoning": "Increasingly known due to solar storm concerns. Telegraph reference suggests 19th century."
+  },
+  {
+    "name": "indian-rebellion-famine",
+    "difficulty": "very-hard",
+    "reasoning": "Orissa Famine is obscure even in Indian history."
+  },
+  {
+    "name": "finnish-famine",
+    "difficulty": "very-hard",
+    "reasoning": "'Last major famine in Europe' is notable but Finland timing is obscure."
+  },
+  {
+    "name": "peshtigo-fire",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest wildfire in American history' - often overshadowed by Chicago Fire same day."
+  },
+  {
+    "name": "great-chicago-fire",
+    "difficulty": "easy",
+    "reasoning": "Extremely well-known American event. 1871 is often learned."
+  },
+  {
+    "name": "princess-alice-disaster",
+    "difficulty": "very-hard",
+    "reasoning": "Thames River collision, obscure British Victorian disaster."
+  },
+  {
+    "name": "krakatoa-eruption",
+    "difficulty": "medium",
+    "reasoning": "Very well-known volcanic eruption. Indonesia context, late 19th century."
+  },
+  {
+    "name": "mount-tarawera-eruption",
+    "difficulty": "very-hard",
+    "reasoning": "New Zealand volcanic history, very specialized knowledge."
+  },
+  {
+    "name": "johnstown-flood",
+    "difficulty": "hard",
+    "reasoning": "Known in American disaster history. Pennsylvania dam failure, late 19th century."
+  },
+  {
+    "name": "russian-flu",
+    "difficulty": "hard",
+    "reasoning": "'Russian Flu Pandemic' name suggests era (late Imperial Russia), but less known than Spanish Flu."
+  },
+  {
+    "name": "russian-famine-imperial",
+    "difficulty": "very-hard",
+    "reasoning": "Imperial Russian Famine is obscure, Imperial Russia provides some context."
+  },
+  {
+    "name": "galveston-hurricane",
+    "difficulty": "medium",
+    "reasoning": "'Deadliest natural disaster in US history' is notable. Texas, 1900 is sometimes known."
+  },
+  {
+    "name": "general-slocum",
+    "difficulty": "very-hard",
+    "reasoning": "New York steamship fire, overshadowed by Titanic. Obscure."
+  },
+  {
+    "name": "san-francisco-earthquake",
+    "difficulty": "easy",
+    "reasoning": "Iconic American disaster, 1906 is widely known."
+  },
+  {
+    "name": "valparaiso-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Chilean earthquake, same year as SF but much less known."
+  },
+  {
+    "name": "courrieres-mine",
+    "difficulty": "very-hard",
+    "reasoning": "French mining disaster, European industrial history."
+  },
+  {
+    "name": "messina-earthquake",
+    "difficulty": "hard",
+    "reasoning": "Sicily/Calabria earthquake, significant but less known than other Italian disasters."
+  },
+  {
+    "name": "triangle-shirtwaist-fire",
+    "difficulty": "medium",
+    "reasoning": "Well-known in labor history, NYC garment workers. Early 20th century industrial era."
+  },
+  {
+    "name": "titanic-disaster",
+    "difficulty": "easy",
+    "reasoning": "Iconic disaster, universally known. 1912 is commonly learned."
+  },
+  {
+    "name": "empress-ireland",
+    "difficulty": "hard",
+    "reasoning": "Overshadowed by Titanic. Canadian maritime disaster, early 20th century."
+  },
+  {
+    "name": "eastland-disaster",
+    "difficulty": "very-hard",
+    "reasoning": "Chicago River capsizing, obscure despite death toll."
+  },
+  {
+    "name": "ottawa-parliament-fire",
+    "difficulty": "hard",
+    "reasoning": "Canadian history, Parliament buildings fire during WWI era."
+  },
+  {
+    "name": "persian-famine",
+    "difficulty": "very-hard",
+    "reasoning": "'World War I' context helps narrow era, but Persian Famine is obscure."
+  },
+  {
+    "name": "halifax-explosion",
+    "difficulty": "medium",
+    "reasoning": "Well-known in Canadian history, WWI munitions context helps date it."
+  },
+  {
+    "name": "spanish-flu-begins",
+    "difficulty": "easy",
+    "reasoning": "Extremely well-known pandemic, 1918 is commonly learned. WWI era anchor."
+  },
+  {
+    "name": "spanish-flu-peak",
+    "difficulty": "hard",
+    "reasoning": "Spanish Flu is known but distinguishing waves requires more specific knowledge."
+  },
+  {
+    "name": "boston-molasses-flood",
+    "difficulty": "medium",
+    "reasoning": "Memorable oddity, well-known in American history. Post-WWI era."
+  },
+  {
+    "name": "haiyuan-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Chinese earthquake, 1920s. Obscure outside of seismology."
+  },
+  {
+    "name": "russian-famine-civil-war",
+    "difficulty": "hard",
+    "reasoning": "'Soviet Russian' and 'Civil war' context anchors it to early 1920s."
+  },
+  {
+    "name": "knickerbocker-storm",
+    "difficulty": "very-hard",
+    "reasoning": "Washington DC theater roof collapse, very obscure."
+  },
+  {
+    "name": "great-kanto-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Well-known Japanese disaster, Tokyo/Yokohama destruction. 1920s Japan."
+  },
+  {
+    "name": "tri-state-tornado",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest tornado in US history' is notable but specific year is hard."
+  },
+  {
+    "name": "st-francis-dam-failure",
+    "difficulty": "very-hard",
+    "reasoning": "California dam failure, overshadowed by other disasters."
+  },
+  {
+    "name": "stock-crash",
+    "difficulty": "easy",
+    "reasoning": "Iconic event, 1929 is universally known. Great Depression trigger."
+  },
+  {
+    "name": "great-depression-begins",
+    "difficulty": "easy",
+    "reasoning": "Major historical event, 1929 is commonly taught."
+  },
+  {
+    "name": "china-great-floods",
+    "difficulty": "hard",
+    "reasoning": "'Up to four million' deaths is notable but Chinese floods are less known in West."
+  },
+  {
+    "name": "holodomor",
+    "difficulty": "medium",
+    "reasoning": "Increasingly known famine, Soviet/Ukrainian context. Stalin era anchor."
+  },
+  {
+    "name": "dust-bowl",
+    "difficulty": "easy",
+    "reasoning": "Well-known American event, 1930s Great Plains. Depression era anchor."
+  },
+  {
+    "name": "nepal-bihar-earthquake-1934",
+    "difficulty": "very-hard",
+    "reasoning": "South Asian earthquake, specific year is obscure."
+  },
+  {
+    "name": "quetta-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "'British India' helps but Quetta earthquake is obscure."
+  },
+  {
+    "name": "hindenburg-disaster",
+    "difficulty": "medium",
+    "reasoning": "Iconic disaster with famous footage. 'German airship' suggests pre-WWII era."
+  },
+  {
+    "name": "ohio-river-flood",
+    "difficulty": "very-hard",
+    "reasoning": "American regional flood, 1937 is obscure."
+  },
+  {
+    "name": "twa-flight-3-crash",
+    "difficulty": "very-hard",
+    "reasoning": "Carole Lombard connection but otherwise obscure crash."
+  },
+  {
+    "name": "bengal-famine-wwii",
+    "difficulty": "hard",
+    "reasoning": "'Wartime famine' and 'British India' context helps. WWII era."
+  },
+  {
+    "name": "dutch-hunger-winter",
+    "difficulty": "medium",
+    "reasoning": "'Nazi blockade' and 'occupied Netherlands' anchors to WWII (1944-45)."
+  },
+  {
+    "name": "hiroshima-bombing",
+    "difficulty": "easy",
+    "reasoning": "Universally known event. August 1945 is commonly taught."
+  },
+  {
+    "name": "nagasaki-bombing",
+    "difficulty": "easy",
+    "reasoning": "Universally known event. Three days after Hiroshima, 1945."
+  },
+  {
+    "name": "wilhelm-gustloff",
+    "difficulty": "hard",
+    "reasoning": "Deadliest maritime disaster but overshadowed by other WWII events. Soviet submarine context."
+  },
+  {
+    "name": "texas-city-disaster",
+    "difficulty": "hard",
+    "reasoning": "Major industrial accident but timing is not well-known. Post-WWII."
+  },
+  {
+    "name": "ashgabat-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "'Soviet Turkmenistan' helps narrow era but earthquake is obscure."
+  },
+  {
+    "name": "great-smog-london",
+    "difficulty": "medium",
+    "reasoning": "Well-known air pollution event, led to Clean Air Act. 1950s London."
+  },
+  {
+    "name": "north-sea-flood",
+    "difficulty": "hard",
+    "reasoning": "Netherlands/UK storm surge. 1953 is less known outside affected countries."
+  },
+  {
+    "name": "andrea-doria",
+    "difficulty": "hard",
+    "reasoning": "Famous ocean liner sinking but timing (1950s) is not widely known."
+  },
+  {
+    "name": "minamata-disease",
+    "difficulty": "hard",
+    "reasoning": "Environmental/industrial disaster in Japan. Mercury poisoning, mid-20th century."
+  },
+  {
+    "name": "asian-flu",
+    "difficulty": "hard",
+    "reasoning": "'Asian Flu Pandemic' suggests Cold War era but less known than other pandemics."
+  },
+  {
+    "name": "great-leap-forward-famine",
+    "difficulty": "medium",
+    "reasoning": "'Mao's Great Leap Forward' is strong anchor. Late 1950s China."
+  },
+  {
+    "name": "valdivia-earthquake",
+    "difficulty": "medium",
+    "reasoning": "'Most powerful earthquake ever recorded' is distinctive. Chile 1960."
+  },
+  {
+    "name": "thalidomide-scandal",
+    "difficulty": "hard",
+    "reasoning": "Drug scandal, birth defects. Known in medical history, early 1960s."
+  },
+  {
+    "name": "vajont-dam",
+    "difficulty": "hard",
+    "reasoning": "Italian dam disaster, megatsunami. 1960s but specific year is hard."
+  },
+  {
+    "name": "alaska-earthquake",
+    "difficulty": "medium",
+    "reasoning": "'Most powerful earthquake in North American history' is notable. Alaska 1964."
+  },
+  {
+    "name": "aberfan-disaster",
+    "difficulty": "hard",
+    "reasoning": "Welsh mining disaster, school tragedy. 1960s Britain."
+  },
+  {
+    "name": "biafra-famine",
+    "difficulty": "hard",
+    "reasoning": "Nigerian Civil War context helps. 1960s Africa, known to some."
+  },
+  {
+    "name": "hong-kong-flu",
+    "difficulty": "hard",
+    "reasoning": "Flu pandemic, Cold War era. Less known than Spanish Flu or COVID."
+  },
+  {
+    "name": "thule-b52-crash",
+    "difficulty": "very-hard",
+    "reasoning": "Cold War nuclear accident in Greenland. Very specialized knowledge."
+  },
+  {
+    "name": "bhola-cyclone",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest tropical cyclone in history' is notable. Bangladesh 1970."
+  },
+  {
+    "name": "peru-earthquake",
+    "difficulty": "hard",
+    "reasoning": "Peru landslides, 70,000 deaths. 1970s South America."
+  },
+  {
+    "name": "tonghai-earthquake",
+    "difficulty": "very-hard",
+    "reasoning": "Chinese earthquake, covered up by government. Very obscure."
+  },
+  {
+    "name": "munich-massacre",
+    "difficulty": "medium",
+    "reasoning": "Very well-known event, Olympic Games context. 1972 Munich."
+  },
+  {
+    "name": "bangladesh-famine",
+    "difficulty": "hard",
+    "reasoning": "Bangladesh famine, 1970s. Less known than other famines."
+  },
+  {
+    "name": "super-tornado-outbreak",
+    "difficulty": "hard",
+    "reasoning": "'148 tornadoes in 16 hours' is notable but year is hard to pinpoint."
+  },
+  {
+    "name": "joelma-building-fire",
+    "difficulty": "very-hard",
+    "reasoning": "Brazilian building fire, very obscure outside South America."
+  },
+  {
+    "name": "banqiao-dam",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest dam collapse' is notable but Chinese disaster is less known."
+  },
+  {
+    "name": "tangshan-earthquake",
+    "difficulty": "hard",
+    "reasoning": "Major Chinese earthquake, 1976. Known but timing is harder."
+  },
+  {
+    "name": "guatemala-earthquake",
+    "difficulty": "hard",
+    "reasoning": "Central American earthquake, 1970s. Less known internationally."
+  },
+  {
+    "name": "tenerife-airport",
+    "difficulty": "medium",
+    "reasoning": "'Deadliest aviation accident' is distinctive. Two 747s collision, 1977."
+  },
+  {
+    "name": "jonestown-massacre",
+    "difficulty": "medium",
+    "reasoning": "Infamous cult event. 1978 Guyana mass suicide."
+  },
+  {
+    "name": "three-mile-island",
+    "difficulty": "medium",
+    "reasoning": "Famous nuclear accident, Pennsylvania. Late 1970s, pre-Chernobyl."
+  },
+  {
+    "name": "mount-st-helens",
+    "difficulty": "easy",
+    "reasoning": "Well-known American volcanic eruption. Washington State, 1980."
+  },
+  {
+    "name": "aids-epidemic-recognized",
+    "difficulty": "medium",
+    "reasoning": "Major pandemic, CDC reference. Early 1980s beginning."
+  },
+  {
+    "name": "ethiopian-famine",
+    "difficulty": "medium",
+    "reasoning": "Famous famine, Live Aid concerts. 1980s Ethiopia."
+  },
+  {
+    "name": "bhopal-disaster",
+    "difficulty": "medium",
+    "reasoning": "Major industrial disaster, India. 1984 is often learned."
+  },
+  {
+    "name": "bhopal-gas-disaster",
+    "difficulty": "medium",
+    "reasoning": "Same as above - duplicate entry. World's worst industrial disaster."
+  },
+  {
+    "name": "mexico-city-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major earthquake, Mexican capital. 1985."
+  },
+  {
+    "name": "nevado-del-ruiz",
+    "difficulty": "hard",
+    "reasoning": "Colombian volcanic mudflow, Armero tragedy. 1980s."
+  },
+  {
+    "name": "japan-airlines-123",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest single-aircraft accident' is notable but year is harder."
+  },
+  {
+    "name": "chernobyl",
+    "difficulty": "easy",
+    "reasoning": "Iconic nuclear disaster. 1986 is universally known."
+  },
+  {
+    "name": "challenger-disaster",
+    "difficulty": "easy",
+    "reasoning": "Iconic space disaster, watched live. 1986."
+  },
+  {
+    "name": "chernobyl-disaster",
+    "difficulty": "easy",
+    "reasoning": "Duplicate entry - same as chernobyl. Iconic 1986 disaster."
+  },
+  {
+    "name": "lake-nyos",
+    "difficulty": "hard",
+    "reasoning": "Unusual CO2 disaster in Cameroon. 1986 but obscure."
+  },
+  {
+    "name": "dona-paz-disaster",
+    "difficulty": "hard",
+    "reasoning": "'Deadliest peacetime maritime disaster' is notable. Philippines, 1980s."
+  },
+  {
+    "name": "lockerbie-bombing",
+    "difficulty": "medium",
+    "reasoning": "Famous terrorist attack, Pan Am Flight 103. 1988 Scotland."
+  },
+  {
+    "name": "armenian-earthquake",
+    "difficulty": "hard",
+    "reasoning": "'Soviet Armenia' provides Cold War era context. 1988 earthquake."
+  },
+  {
+    "name": "piper-alpha",
+    "difficulty": "hard",
+    "reasoning": "North Sea oil platform disaster. 1988 but specialized knowledge."
+  },
+  {
+    "name": "exxon-valdez",
+    "difficulty": "medium",
+    "reasoning": "Famous oil spill, Alaska. 1989, end of Cold War era."
+  },
+  {
+    "name": "hillsborough-disaster",
+    "difficulty": "medium",
+    "reasoning": "Famous football crowd crush, Sheffield. 1989 Britain."
+  },
+  {
+    "name": "iran-earthquake-manjil",
+    "difficulty": "hard",
+    "reasoning": "Major Iranian earthquake, 1990. Less known internationally."
+  },
+  {
+    "name": "bangladesh-cyclone-chittagong",
+    "difficulty": "hard",
+    "reasoning": "Major Bangladesh cyclone, 1991. Less known than Bhola."
+  },
+  {
+    "name": "pinatubo-eruption",
+    "difficulty": "medium",
+    "reasoning": "Major volcanic eruption, global climate effects. Philippines, 1991."
+  },
+  {
+    "name": "somali-famine",
+    "difficulty": "hard",
+    "reasoning": "Civil war famine, 1992 Somalia. Black Hawk Down era."
+  },
+  {
+    "name": "hurricane-andrew",
+    "difficulty": "medium",
+    "reasoning": "Major US hurricane, South Florida. 1992, well-known."
+  },
+  {
+    "name": "waco-siege",
+    "difficulty": "medium",
+    "reasoning": "Infamous federal siege, religious compound. 1993 Texas."
+  },
+  {
+    "name": "northridge-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major LA earthquake, 1994. Well-known in California."
+  },
+  {
+    "name": "estonia-ferry",
+    "difficulty": "hard",
+    "reasoning": "Baltic Sea ferry disaster, 1994. Known in Scandinavia."
+  },
+  {
+    "name": "kobe-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major Japanese earthquake, Hanshin. 1995 Kobe."
+  },
+  {
+    "name": "north-korea-famine",
+    "difficulty": "hard",
+    "reasoning": "North Korean famine, 1990s. Kim Jong-il era context."
+  },
+  {
+    "name": "tokyo-subway-attack",
+    "difficulty": "medium",
+    "reasoning": "Famous terrorist attack, Aum Shinrikyo sarin. 1995 Tokyo."
+  },
+  {
+    "name": "princess-diana-death",
+    "difficulty": "easy",
+    "reasoning": "Universally known event. 1997 Paris car crash."
+  },
+  {
+    "name": "asian-financial-crisis",
+    "difficulty": "medium",
+    "reasoning": "Major economic event, 1997. Known in financial history."
+  },
+  {
+    "name": "el-nino-super",
+    "difficulty": "hard",
+    "reasoning": "'Super El Nino' is notable but specific year (1997) is harder."
+  },
+  {
+    "name": "hurricane-mitch",
+    "difficulty": "hard",
+    "reasoning": "Deadliest Atlantic hurricane in 200+ years. Central America, 1998."
+  },
+  {
+    "name": "columbine-shooting",
+    "difficulty": "easy",
+    "reasoning": "Iconic and tragic school shooting. 1999 Colorado."
+  },
+  {
+    "name": "concorde-crash",
+    "difficulty": "medium",
+    "reasoning": "Famous supersonic plane crash. Paris, 2000."
+  },
+  {
+    "name": "sars-outbreak",
+    "difficulty": "medium",
+    "reasoning": "Notable respiratory outbreak from China. 2003, pre-COVID context."
+  },
+  {
+    "name": "european-heat-wave",
+    "difficulty": "medium",
+    "reasoning": "Major heat wave, 70,000 deaths. 2003 Europe."
+  },
+  {
+    "name": "indian-ocean-tsunami",
+    "difficulty": "easy",
+    "reasoning": "Major global disaster, 230,000 deaths. December 2004."
+  },
+  {
+    "name": "hurricane-katrina",
+    "difficulty": "easy",
+    "reasoning": "Iconic US disaster, New Orleans flooding. 2005."
+  },
+  {
+    "name": "kashmir-earthquake",
+    "difficulty": "hard",
+    "reasoning": "Major Pakistan/India earthquake, 2005. Less known than Asian disasters."
+  },
+  {
+    "name": "cyclone-nargis",
+    "difficulty": "hard",
+    "reasoning": "Myanmar cyclone, 2008. Same year as other major disasters."
+  },
+  {
+    "name": "sichuan-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major Chinese earthquake, 2008. Beijing Olympics year."
+  },
+  {
+    "name": "global-financial-crisis",
+    "difficulty": "easy",
+    "reasoning": "Major economic event, Lehman Brothers collapse. 2008."
+  },
+  {
+    "name": "swine-flu-pandemic",
+    "difficulty": "medium",
+    "reasoning": "H1N1 pandemic, 2009. Less known than COVID but still notable."
+  },
+  {
+    "name": "haiti-earthquake",
+    "difficulty": "easy",
+    "reasoning": "Major disaster, 200,000+ deaths. 2010 Port-au-Prince."
+  },
+  {
+    "name": "deepwater-horizon",
+    "difficulty": "easy",
+    "reasoning": "Famous oil spill, BP disaster. 2010 Gulf of Mexico."
+  },
+  {
+    "name": "fukushima-disaster",
+    "difficulty": "easy",
+    "reasoning": "Major nuclear disaster, earthquake/tsunami. 2011 Japan."
+  },
+  {
+    "name": "tohoku-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major Japanese earthquake/tsunami, 2011. Connected to Fukushima."
+  },
+  {
+    "name": "christchurch-earthquake",
+    "difficulty": "medium",
+    "reasoning": "New Zealand earthquake, 2011. Same year as Fukushima."
+  },
+  {
+    "name": "costa-concordia",
+    "difficulty": "medium",
+    "reasoning": "Famous cruise ship disaster, Italy. 2012."
+  },
+  {
+    "name": "mers-outbreak",
+    "difficulty": "hard",
+    "reasoning": "Middle East coronavirus, less known than SARS/COVID. 2012."
+  },
+  {
+    "name": "typhoon-haiyan",
+    "difficulty": "medium",
+    "reasoning": "Major typhoon, Philippines. 2013, strongest recorded."
+  },
+  {
+    "name": "rana-plaza-collapse",
+    "difficulty": "medium",
+    "reasoning": "Garment factory collapse, Bangladesh. 2013, labor rights context."
+  },
+  {
+    "name": "ebola-outbreak",
+    "difficulty": "medium",
+    "reasoning": "Major Ebola outbreak, West Africa. 2014."
+  },
+  {
+    "name": "mh370-disappearance",
+    "difficulty": "easy",
+    "reasoning": "Famous missing plane mystery. 2014 Malaysia Airlines."
+  },
+  {
+    "name": "sewol-ferry",
+    "difficulty": "medium",
+    "reasoning": "South Korean ferry disaster, mostly students. 2014."
+  },
+  {
+    "name": "nepal-earthquake",
+    "difficulty": "medium",
+    "reasoning": "Major earthquake, historic damage. 2015 Nepal."
+  },
+  {
+    "name": "paris-attacks",
+    "difficulty": "easy",
+    "reasoning": "Major terrorist attack. November 2015 Paris."
+  },
+  {
+    "name": "tianjin-explosions",
+    "difficulty": "medium",
+    "reasoning": "Chinese port explosion, viral videos. 2015."
+  },
+  {
+    "name": "zika-outbreak",
+    "difficulty": "medium",
+    "reasoning": "Mosquito virus, birth defects concern. 2015-16 Americas."
+  },
+  {
+    "name": "grenfell-tower-fire",
+    "difficulty": "medium",
+    "reasoning": "London apartment fire, 2017. Major British disaster."
+  },
+  {
+    "name": "hurricane-maria",
+    "difficulty": "easy",
+    "reasoning": "Major Puerto Rico hurricane. 2017."
+  },
+  {
+    "name": "hurricane-harvey",
+    "difficulty": "easy",
+    "reasoning": "Major Houston flooding. 2017."
+  },
+  {
+    "name": "camp-fire-paradise",
+    "difficulty": "hard",
+    "reasoning": "California wildfire, Paradise destroyed. 2018, 'Camp Fire' name is confusing."
+  },
+  {
+    "name": "australia-bushfires",
+    "difficulty": "easy",
+    "reasoning": "Major bushfires, billion animals killed. 2019-2020."
+  },
+  {
+    "name": "covid-19-pandemic",
+    "difficulty": "easy",
+    "reasoning": "Major global pandemic. 2020, universally experienced."
+  },
+  {
+    "name": "beirut-explosion",
+    "difficulty": "medium",
+    "reasoning": "Massive port explosion, viral video. 2020 Lebanon."
+  },
+  {
+    "name": "texas-winter-storm",
+    "difficulty": "medium",
+    "reasoning": "Texas power grid failure, 2021. Recent event."
+  },
+  {
+    "name": "turkey-syria-earthquake",
+    "difficulty": "easy",
+    "reasoning": "Major recent earthquake, 50,000+ deaths. February 2023."
+  },
+  {
+    "name": "lahaina-fire",
+    "difficulty": "easy",
+    "reasoning": "Major Hawaii wildfire, historic town destroyed. 2023."
+  },
+  {
+    "name": "neanderthal-extinction",
+    "difficulty": "medium",
+    "reasoning": "'Neanderthals' and 'modern humans' context helps. Prehistoric but recognizable."
+  },
+  {
+    "name": "babylonian-destruction-jerusalem",
+    "difficulty": "medium",
+    "reasoning": "Nebuchadnezzar II and Solomon's Temple are biblical anchors. Ancient history."
+  },
+  {
+    "name": "great-fire-rome",
+    "difficulty": "medium",
+    "reasoning": "Nero blamed Christians - famous historical context. Roman Empire, 1st century."
+  },
+  {
+    "name": "extinction-neanderthals",
+    "difficulty": "medium",
+    "reasoning": "Duplicate of neanderthal-extinction. Same reasoning applies."
+  },
+  {
+    "name": "younger-dryas-climate-event",
+    "difficulty": "hard",
+    "reasoning": "Climate event, 'glacial conditions' suggests ice age. Specialized knowledge."
+  },
+  {
+    "name": "white-ship-sinks",
+    "difficulty": "hard",
+    "reasoning": "'English throne' succession crisis, Norman context. Medieval England."
+  },
+  {
+    "name": "tulip-mania-crashes",
+    "difficulty": "medium",
+    "reasoning": "'Dutch tulip market' and 'first economic bubble' - well-known in economics. Dutch Golden Age."
+  },
+  {
+    "name": "space-shuttle-columbia-disaster",
+    "difficulty": "easy",
+    "reasoning": "Famous space disaster, 2003. Well-known alongside Challenger."
+  },
+  {
+    "name": "lehman-brothers-collapse",
+    "difficulty": "easy",
+    "reasoning": "Iconic financial crisis trigger. 2008, same as global-financial-crisis."
+  },
+  {
+    "name": "copenhagen-climate-summit",
+    "difficulty": "hard",
+    "reasoning": "UN climate conference, diplomatic failure. 2009, less memorable."
+  },
+  {
+    "name": "iceland-eyjafjallajokull-eruption",
+    "difficulty": "easy",
+    "reasoning": "European flight disruption, memorable name. 2010."
+  },
+  {
+    "name": "hurricane-sandy",
+    "difficulty": "easy",
+    "reasoning": "Major US northeastern hurricane. 2012."
+  },
+  {
+    "name": "notre-dame-fire",
+    "difficulty": "easy",
+    "reasoning": "Famous Paris cathedral fire. April 2019."
+  },
+  {
+    "name": "extinction-rebellion-protests",
+    "difficulty": "medium",
+    "reasoning": "Climate protests, recent movement. 2019."
+  },
+  {
+    "name": "svb-collapse",
+    "difficulty": "medium",
+    "reasoning": "Silicon Valley Bank failure, 2023. Recent financial event."
+  }
+]

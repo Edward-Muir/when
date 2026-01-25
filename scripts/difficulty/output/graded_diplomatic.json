@@ -1,0 +1,2867 @@
+[
+  {
+    "name": "first-peace-treaty",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure ancient treaty. Even with Egypt/Hittites context, 1259 BCE is hard to place."
+  },
+  {
+    "name": "persian-empire-cyrus",
+    "difficulty": "medium",
+    "reasoning": "Well-known empire, Cyrus is recognizable. 'First Persian Empire' helps place in ancient era."
+  },
+  {
+    "name": "cyrus-cylinder",
+    "difficulty": "hard",
+    "reasoning": "Specialized knowledge. Cyrus provides some anchor but exact timing unclear."
+  },
+  {
+    "name": "roman-republic",
+    "difficulty": "medium",
+    "reasoning": "Rome is strong anchor. 'Overthrew monarchy' suggests early period, but 509 BCE requires knowledge."
+  },
+  {
+    "name": "athenian-democracy",
+    "difficulty": "medium",
+    "reasoning": "Athens/democracy well-known. 'Ancient Athens' places it but exact year is obscure."
+  },
+  {
+    "name": "delian-league",
+    "difficulty": "hard",
+    "reasoning": "Specialized knowledge. Greek city-states vs Persia helps narrow era but league itself is obscure."
+  },
+  {
+    "name": "twelve-tables",
+    "difficulty": "hard",
+    "reasoning": "Obscure Roman legal history. 'First written laws' and Rome helps but 450 BCE hard to pinpoint."
+  },
+  {
+    "name": "league-corinth",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure. Philip II against Persia gives some context but few would know this event."
+  },
+  {
+    "name": "maurya-empire",
+    "difficulty": "hard",
+    "reasoning": "Low recognition outside Indian history. First Indian unification is notable but timing unclear."
+  },
+  {
+    "name": "ashoka-edicts",
+    "difficulty": "hard",
+    "reasoning": "Specialized knowledge. Indian emperor context but 260 BCE difficult to place."
+  },
+  {
+    "name": "punic-treaty",
+    "difficulty": "hard",
+    "reasoning": "First Punic War somewhat known. Rome/Carthage/Sicily helps but specific treaty obscure."
+  },
+  {
+    "name": "qin-unification",
+    "difficulty": "medium",
+    "reasoning": "First Emperor of China is notable. Qin Shi Huang has recognition, helps place around 200s BCE."
+  },
+  {
+    "name": "han-dynasty",
+    "difficulty": "medium",
+    "reasoning": "Han Dynasty is famous. 'Golden age of Chinese civilization' helps, placed after Qin."
+  },
+  {
+    "name": "treaty-apamea",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure treaty. Seleucid Empire/Antiochus III low recognition, 188 BCE hard to place."
+  },
+  {
+    "name": "silk-road-opens",
+    "difficulty": "hard",
+    "reasoning": "Silk Road is famous but exact opening date (130 BCE) requires specialized knowledge."
+  },
+  {
+    "name": "roman-empire-founded",
+    "difficulty": "easy",
+    "reasoning": "Highly recognizable. Augustus, first Roman Emperor, end of Republic - strong anchors for 27 BCE era."
+  },
+  {
+    "name": "pax-romana",
+    "difficulty": "medium",
+    "reasoning": "Well-known concept. 'Augustus' and '200-year peace' helps place, but exact start may vary."
+  },
+  {
+    "name": "edict-caracalla",
+    "difficulty": "hard",
+    "reasoning": "Specialized knowledge. Roman citizenship expansion notable but Caracalla less known."
+  },
+  {
+    "name": "diocletian-tetrarchy",
+    "difficulty": "hard",
+    "reasoning": "Specialized Roman history. Tetrarchy obscure, though 'vast Roman Empire' helps era."
+  },
+  {
+    "name": "edict-milan",
+    "difficulty": "medium",
+    "reasoning": "Constantine legalizing Christianity is well-known. 313 AD is taught in history classes."
+  },
+  {
+    "name": "gupta-empire",
+    "difficulty": "very-hard",
+    "reasoning": "Very specialized Indian history. 'Golden age of science' helps but low recognition."
+  },
+  {
+    "name": "council-nicaea",
+    "difficulty": "medium",
+    "reasoning": "First ecumenical council is religiously significant. Christian doctrine establishment known."
+  },
+  {
+    "name": "theodosian-code",
+    "difficulty": "very-hard",
+    "reasoning": "Very specialized. Eastern Roman Empire/Constantine gives some context but obscure."
+  },
+  {
+    "name": "justinian-code",
+    "difficulty": "hard",
+    "reasoning": "Byzantine/Justinian somewhat known. Roman law influence notable but 534 AD specific."
+  },
+  {
+    "name": "tang-dynasty",
+    "difficulty": "hard",
+    "reasoning": "Famous Chinese dynasty but exact founding year (618) requires knowledge. 'Golden age' helps."
+  },
+  {
+    "name": "constitution-medina",
+    "difficulty": "hard",
+    "reasoning": "Prophet Muhammad provides anchor for 7th century but specific agreement less known."
+  },
+  {
+    "name": "umayyad-caliphate",
+    "difficulty": "hard",
+    "reasoning": "Islamic history. Damascus capital gives context, but 661 requires specialized knowledge."
+  },
+  {
+    "name": "abbasid-caliphate",
+    "difficulty": "hard",
+    "reasoning": "Islamic history. Baghdad/overthrew Umayyads helps sequence but 750 is specific."
+  },
+  {
+    "name": "papal-states-established",
+    "difficulty": "hard",
+    "reasoning": "Papal/Frankish king gives medieval context but 756 is specialized knowledge."
+  },
+  {
+    "name": "treaty-verdun",
+    "difficulty": "hard",
+    "reasoning": "Charlemagne's empire division is notable. Shapes medieval Europe but 843 is specific."
+  },
+  {
+    "name": "treaty-wedmore",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure English history. Alfred the Great/Vikings helps but Treaty of Wedmore unknown."
+  },
+  {
+    "name": "song-dynasty",
+    "difficulty": "hard",
+    "reasoning": "Famous Chinese dynasty. 'Technological innovation' helps but 960 start date specific."
+  },
+  {
+    "name": "holy-roman-empire",
+    "difficulty": "medium",
+    "reasoning": "Well-known empire. Otto I crowned helps place in medieval era around 10th century."
+  },
+  {
+    "name": "capetian-dynasty",
+    "difficulty": "hard",
+    "reasoning": "French history. Hugh Capet less known, '800 years' helps but 987 is specialized."
+  },
+  {
+    "name": "concordat-worms",
+    "difficulty": "hard",
+    "reasoning": "Investiture Controversy is specialized. Pope/Holy Roman Emperor helps medieval context."
+  },
+  {
+    "name": "fourth-crusade-constantinople",
+    "difficulty": "hard",
+    "reasoning": "Fourth Crusade known. Sack of Constantinople notable but 1204 specific."
+  },
+  {
+    "name": "magna-carta",
+    "difficulty": "easy",
+    "reasoning": "Highly recognizable. King John, limiting royal power, 1215 is commonly taught."
+  },
+  {
+    "name": "hanseatic-league",
+    "difficulty": "hard",
+    "reasoning": "Trade history. Northern German cities/Baltic helps but league formation date obscure."
+  },
+  {
+    "name": "english-parliament",
+    "difficulty": "hard",
+    "reasoning": "Parliament significant but 'first elected' in 1265 requires specialized knowledge."
+  },
+  {
+    "name": "mongol-empire",
+    "difficulty": "hard",
+    "reasoning": "Mongol Empire famous but 'at peak' in 1279 is specific timing to know."
+  },
+  {
+    "name": "swiss-confederation",
+    "difficulty": "hard",
+    "reasoning": "Switzerland formation notable. Three cantons in 1291 is specialized knowledge."
+  },
+  {
+    "name": "ottoman-empire-founded",
+    "difficulty": "medium",
+    "reasoning": "Ottoman Empire well-known. Osman I, '600 years' helps place around 1300."
+  },
+  {
+    "name": "golden-bull",
+    "difficulty": "very-hard",
+    "reasoning": "Very specialized. Holy Roman Emperor election process in 1356 is obscure."
+  },
+  {
+    "name": "ming-dynasty",
+    "difficulty": "medium",
+    "reasoning": "Ming Dynasty is famous. 'After Mongol domination' helps sequence timing."
+  },
+  {
+    "name": "union-krewo",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure Polish-Lithuanian history. 1385 is specialized knowledge."
+  },
+  {
+    "name": "union-kalmar",
+    "difficulty": "hard",
+    "reasoning": "Scandinavian history. Denmark/Norway/Sweden union notable but 1397 specific."
+  },
+  {
+    "name": "aztec-empire",
+    "difficulty": "medium",
+    "reasoning": "Aztec Empire well-known. Triple Alliance/central Mexico helps, pre-Columbus era."
+  },
+  {
+    "name": "treaty-alcacovas",
+    "difficulty": "hard",
+    "reasoning": "Obscure Iberian treaty. Spain/Portugal/Atlantic helps but 'before Columbus' is vague."
+  },
+  {
+    "name": "inca-empire-peak",
+    "difficulty": "hard",
+    "reasoning": "Inca Empire known but peak extent in 1493 is specific timing."
+  },
+  {
+    "name": "treaty-tordesillas",
+    "difficulty": "hard",
+    "reasoning": "Spain/Portugal dividing new lands is notable. 1494 near Columbus but specific treaty obscure."
+  },
+  {
+    "name": "league-cambrai",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure. European powers vs Venice in 1508 is specialized knowledge."
+  },
+  {
+    "name": "treaty-madrid",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure. Captured French King/Charles V helps era but 1526 specific."
+  },
+  {
+    "name": "mughal-empire",
+    "difficulty": "hard",
+    "reasoning": "Mughal Empire notable. Babur/300 years of India helps but 1526 start specific."
+  },
+  {
+    "name": "church-of-england",
+    "difficulty": "medium",
+    "reasoning": "Henry VIII breaking from Rome is well-known. Anglican Church 1534 is notable."
+  },
+  {
+    "name": "peace-augsburg",
+    "difficulty": "hard",
+    "reasoning": "Reformation context. Catholic/Lutheran choice for princes but 1555 specific."
+  },
+  {
+    "name": "peace-cateau-cambresis",
+    "difficulty": "hard",
+    "reasoning": "Obscure. France/Spain ending Italian Wars helps era but 1559 specific."
+  },
+  {
+    "name": "union-utrecht",
+    "difficulty": "hard",
+    "reasoning": "Dutch history. Northern provinces vs Spain helps but 1579 specific."
+  },
+  {
+    "name": "dutch-republic",
+    "difficulty": "hard",
+    "reasoning": "Netherlands independence notable. Spanish rule context but 1581 specific."
+  },
+  {
+    "name": "edict-nantes",
+    "difficulty": "hard",
+    "reasoning": "Religious tolerance in France. Henry IV/Protestants helps but 1598 specific."
+  },
+  {
+    "name": "east-india-company",
+    "difficulty": "medium",
+    "reasoning": "British East India Company is famous. 1600 founding is commonly taught."
+  },
+  {
+    "name": "tokugawa-shogunate",
+    "difficulty": "hard",
+    "reasoning": "Japanese history. '250 years of isolation and peace' helps but 1603 specific."
+  },
+  {
+    "name": "treaty-london-anglo-spanish",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure treaty. England/Spain ending war in 1604 is specialized."
+  },
+  {
+    "name": "jamestown-founded",
+    "difficulty": "easy",
+    "reasoning": "First permanent English settlement in America. 1607 is commonly taught in US history."
+  },
+  {
+    "name": "mayflower-compact",
+    "difficulty": "easy",
+    "reasoning": "Pilgrims/self-government in America is well-known. 1620 is iconic date."
+  },
+  {
+    "name": "qing-dynasty",
+    "difficulty": "medium",
+    "reasoning": "Qing Dynasty is well-known. Manchu conquest of Ming helps place mid-1600s."
+  },
+  {
+    "name": "pereiaslav-agreement",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure Ukrainian-Russian history. Cossacks/Russia 1654 specialized."
+  },
+  {
+    "name": "peace-pyrenees",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure treaty. France/Spain 24 years war ending in 1659 is specialized."
+  },
+  {
+    "name": "royal-society-founded",
+    "difficulty": "hard",
+    "reasoning": "Royal Society notable but 1660 founding specific. 'Oldest scientific institution' helps era."
+  },
+  {
+    "name": "kangxi-emperor-begins-reign",
+    "difficulty": "hard",
+    "reasoning": "Chinese history. Longest reign/Qing context but 1661 specific timing."
+  },
+  {
+    "name": "treaty-breda",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure. England gained New Amsterdam is interesting but 1667 treaty unknown."
+  },
+  {
+    "name": "hudsons-bay-company-founded",
+    "difficulty": "hard",
+    "reasoning": "Hudson's Bay Company notable. North American fur trade but 1670 specific."
+  },
+  {
+    "name": "treaty-nijmegen",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure. Franco-Dutch War ending in 1678 is specialized knowledge."
+  },
+  {
+    "name": "habeas-corpus",
+    "difficulty": "hard",
+    "reasoning": "Habeas corpus is famous concept. England 1679 is specific but right is notable."
+  },
+  {
+    "name": "pennsylvania-founded",
+    "difficulty": "hard",
+    "reasoning": "William Penn/Quakers notable but 1681 founding specific."
+  },
+  {
+    "name": "bill-of-rights-england",
+    "difficulty": "medium",
+    "reasoning": "English Bill of Rights notable. Parliament limiting monarchy, 1689 after Glorious Revolution."
+  },
+  {
+    "name": "salem-witch-trials",
+    "difficulty": "easy",
+    "reasoning": "Salem witch trials famous. Colonial Massachusetts 1692 is iconic."
+  },
+  {
+    "name": "bank-of-england",
+    "difficulty": "hard",
+    "reasoning": "Bank of England notable. Second oldest central bank but 1694 founding specific."
+  },
+  {
+    "name": "treaty-ryswick",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure. Nine Years' War/Grand Alliance in 1697 is specialized."
+  },
+  {
+    "name": "act-of-union-britain",
+    "difficulty": "medium",
+    "reasoning": "England/Scotland union creating Great Britain is notable. 1707 commonly known."
+  },
+  {
+    "name": "statute-of-anne",
+    "difficulty": "hard",
+    "reasoning": "First copyright law is notable but Statute of Anne in 1710 is specialized."
+  },
+  {
+    "name": "treaty-utrecht",
+    "difficulty": "hard",
+    "reasoning": "War of Spanish Succession is notable. Treaties reshaping Europe but 1713 specific."
+  },
+  {
+    "name": "treaty-rastatt",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure treaty. War of Spanish Succession context but 1714 Rastatt unknown."
+  },
+  {
+    "name": "first-freemason-grand-lodge",
+    "difficulty": "hard",
+    "reasoning": "Freemasonry notable but four London lodges forming Grand Lodge in 1717 specific."
+  },
+  {
+    "name": "south-sea-bubble",
+    "difficulty": "hard",
+    "reasoning": "Famous financial crisis. Britain's first financial crisis helps but 1720 specific."
+  },
+  {
+    "name": "robert-walpole-first-pm",
+    "difficulty": "hard",
+    "reasoning": "First Prime Minister notable. British government history but 1721 specific."
+  },
+  {
+    "name": "treaty-nystad",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure. Russia/Sweden Great Northern War ending in 1721 is specialized."
+  },
+  {
+    "name": "first-saudi-state-established",
+    "difficulty": "hard",
+    "reasoning": "Saudi Arabia history. Muhammad ibn Saud/Wahhab alliance but 1744 specific."
+  },
+  {
+    "name": "treaty-aix-la-chapelle",
+    "difficulty": "very-hard",
+    "reasoning": "Obscure. War of Austrian Succession ending in 1748 is specialized."
+  },
+  {
+    "name": "black-hole-of-calcutta",
+    "difficulty": "hard",
+    "reasoning": "Colonial history incident. British/Bengal context but 1756 specific."
+  },
+  {
+    "name": "rousseaus-social-contract",
+    "difficulty": "medium",
+    "reasoning": "Rousseau is famous philosopher. Social Contract influential, 1762 Enlightenment era."
+  },
+  {
+    "name": "treaty-paris-seven-years",
+    "difficulty": "hard",
+    "reasoning": "Seven Years War notable. Treaty reshaping colonial empires but 1763 specific."
+  },
+  {
+    "name": "stamp-act",
+    "difficulty": "medium",
+    "reasoning": "American Revolution context. 'No taxation without representation' helps place 1760s."
+  },
+  {
+    "name": "france-enters-american-revolution",
+    "difficulty": "medium",
+    "reasoning": "French alliance with colonies is well-known. 1778 during American Revolution."
+  },
+  {
+    "name": "watts-rotary-steam-engine",
+    "difficulty": "hard",
+    "reasoning": "James Watt famous. Industrial Revolution context but 1782 patent specific."
+  },
+  {
+    "name": "us-constitution-written",
+    "difficulty": "easy",
+    "reasoning": "US Constitution is iconic. Philadelphia 1787 is commonly taught."
+  },
+  {
+    "name": "tennis-court-oath",
+    "difficulty": "medium",
+    "reasoning": "French Revolution context. National Assembly defying king helps place 1789."
+  },
+  {
+    "name": "first-bank-united-states",
+    "difficulty": "hard",
+    "reasoning": "Alexander Hamilton notable. First national bank but 1791 specific."
+  },
+  {
+    "name": "execution-of-robespierre",
+    "difficulty": "medium",
+    "reasoning": "Robespierre/Terror is well-known. Guillotined ending Terror helps place 1794."
+  },
+  {
+    "name": "malthus-essay-population",
+    "difficulty": "hard",
+    "reasoning": "Malthus somewhat known. Population/Darwin influence but 1798 specific."
+  },
+  {
+    "name": "napoleons-egyptian-campaign",
+    "difficulty": "medium",
+    "reasoning": "Napoleon is famous. Egypt/Rosetta Stone helps place late 1790s."
+  },
+  {
+    "name": "act-of-union-ireland",
+    "difficulty": "hard",
+    "reasoning": "Britain/Ireland merger notable. United Kingdom creation but 1800 specific."
+  },
+  {
+    "name": "peace-of-amiens",
+    "difficulty": "hard",
+    "reasoning": "Napoleonic context. Brief peace Britain/France but 1802 specific."
+  },
+  {
+    "name": "code-napoleon",
+    "difficulty": "medium",
+    "reasoning": "Napoleonic Code is famous. French civil code basis helps place early 1800s."
+  },
+  {
+    "name": "fultons-steamboat",
+    "difficulty": "medium",
+    "reasoning": "Steamboat milestone. First commercial success on Hudson helps place early 1800s."
+  },
+  {
+    "name": "venezuela-declares-independence",
+    "difficulty": "hard",
+    "reasoning": "South American independence. First to declare helps but 1811 specific."
+  },
+  {
+    "name": "burning-of-moscow",
+    "difficulty": "medium",
+    "reasoning": "Napoleon's invasion of Russia famous. Moscow burning 1812 is notable event."
+  },
+  {
+    "name": "treaty-of-ghent",
+    "difficulty": "hard",
+    "reasoning": "War of 1812 context. US/Britain peace but 1814 specific."
+  },
+  {
+    "name": "chile-independence",
+    "difficulty": "hard",
+    "reasoning": "South American independence. Battle of Maipu context but 1818 specific."
+  },
+  {
+    "name": "first-atlantic-steamship-crossing",
+    "difficulty": "hard",
+    "reasoning": "Maritime milestone. SS Savannah but 1819 specific timing."
+  },
+  {
+    "name": "mexican-independence",
+    "difficulty": "medium",
+    "reasoning": "Mexico independence notable. Eleven-year war from Spain helps place early 1820s."
+  },
+  {
+    "name": "brazil-independence",
+    "difficulty": "medium",
+    "reasoning": "Brazil independence notable. Prince Pedro/Emperor helps place 1822."
+  },
+  {
+    "name": "uruguay-independence",
+    "difficulty": "hard",
+    "reasoning": "South American history. Buffer between Argentina/Brazil but 1828 specific."
+  },
+  {
+    "name": "catholic-emancipation-act",
+    "difficulty": "hard",
+    "reasoning": "British religious history. Catholics in Parliament but 1829 specific."
+  },
+  {
+    "name": "july-revolution-france",
+    "difficulty": "hard",
+    "reasoning": "French history. Charles X overthrown, July Monarchy but 1830 specific."
+  },
+  {
+    "name": "belgium-independence",
+    "difficulty": "hard",
+    "reasoning": "Belgium separation from Netherlands. 1831 is specific knowledge."
+  },
+  {
+    "name": "reform-act-1832",
+    "difficulty": "hard",
+    "reasoning": "British electoral history. Middle-class voting, rotten boroughs but specific year."
+  },
+  {
+    "name": "factory-act-uk",
+    "difficulty": "hard",
+    "reasoning": "Industrial Revolution context. Child labor limits but 1833 specific."
+  },
+  {
+    "name": "zollverein-formed",
+    "difficulty": "hard",
+    "reasoning": "German unification context. Customs union but 1834 specific."
+  },
+  {
+    "name": "texas-revolution",
+    "difficulty": "medium",
+    "reasoning": "Battle of the Alamo is famous. Texas independence helps place mid-1830s."
+  },
+  {
+    "name": "first-anesthesia-surgery",
+    "difficulty": "hard",
+    "reasoning": "Medical milestone. Crawford Long/ether but 1842 specific."
+  },
+  {
+    "name": "first-telegraph-message",
+    "difficulty": "hard",
+    "reasoning": "Morse/telegraph notable. 'What hath God wrought' but 1844 specific."
+  },
+  {
+    "name": "texas-annexed",
+    "difficulty": "medium",
+    "reasoning": "Texas joining US notable. 28th state after republic helps place 1845."
+  },
+  {
+    "name": "oregon-treaty",
+    "difficulty": "hard",
+    "reasoning": "US/Britain border. 49th parallel Pacific Northwest but 1846 specific."
+  },
+  {
+    "name": "liberia-independence",
+    "difficulty": "hard",
+    "reasoning": "Africa's first republic. Freed American slaves context but 1847 specific."
+  },
+  {
+    "name": "california-gold-rush",
+    "difficulty": "easy",
+    "reasoning": "Gold Rush is iconic. Sutter's Mill 1848 is commonly known."
+  },
+  {
+    "name": "revolutions-of-1848",
+    "difficulty": "medium",
+    "reasoning": "Year in name. Revolutionary wave across Europe is notable."
+  },
+  {
+    "name": "great-exhibition-opens",
+    "difficulty": "hard",
+    "reasoning": "Crystal Palace notable. First world's fair but 1851 specific."
+  },
+  {
+    "name": "second-french-empire",
+    "difficulty": "hard",
+    "reasoning": "Napoleon III notable. Second Empire but 1852 specific."
+  },
+  {
+    "name": "commodore-perry-returns-japan",
+    "difficulty": "medium",
+    "reasoning": "Perry opening Japan is well-known. Treaty of Kanagawa 1854 notable."
+  },
+  {
+    "name": "florence-nightingale-crimea",
+    "difficulty": "medium",
+    "reasoning": "Florence Nightingale famous. Crimean War nursing 1855 notable."
+  },
+  {
+    "name": "bessemer-process",
+    "difficulty": "hard",
+    "reasoning": "Steel production milestone. Mass-producing steel but 1856 specific."
+  },
+  {
+    "name": "dred-scott-decision",
+    "difficulty": "medium",
+    "reasoning": "Famous Supreme Court case. Slavery/citizenship 1857 is taught."
+  },
+  {
+    "name": "miracles-at-lourdes",
+    "difficulty": "hard",
+    "reasoning": "Lourdes pilgrimage notable. Virgin Mary visions but 1858 specific."
+  },
+  {
+    "name": "first-transatlantic-cable",
+    "difficulty": "hard",
+    "reasoning": "Telegraph cable milestone. Europe/North America but 1858 specific."
+  },
+  {
+    "name": "lincoln-douglas-debates",
+    "difficulty": "medium",
+    "reasoning": "Lincoln is famous. Debates on slavery help place 1858."
+  },
+  {
+    "name": "john-browns-raid",
+    "difficulty": "medium",
+    "reasoning": "John Brown notable. Harpers Ferry raid helps place 1859."
+  },
+  {
+    "name": "south-carolina-secedes",
+    "difficulty": "medium",
+    "reasoning": "Civil War context. First state to secede after Lincoln's election 1860."
+  },
+  {
+    "name": "emancipation-russian-serfs",
+    "difficulty": "medium",
+    "reasoning": "Major emancipation. Tsar Alexander II freeing serfs 1861 notable."
+  },
+  {
+    "name": "homestead-act",
+    "difficulty": "medium",
+    "reasoning": "Western expansion. 160 acres for farming helps place Civil War era."
+  },
+  {
+    "name": "bismarck-becomes-minister-president",
+    "difficulty": "hard",
+    "reasoning": "Bismarck famous. 'Blood and iron' helps but 1862 start specific."
+  },
+  {
+    "name": "alaska-purchase",
+    "difficulty": "medium",
+    "reasoning": "Alaska purchase notable. 'Seward's Folly' $7.2 million helps place 1867."
+  },
+  {
+    "name": "impeachment-andrew-johnson",
+    "difficulty": "medium",
+    "reasoning": "Presidential impeachment notable. One vote acquittal helps place 1868."
+  },
+  {
+    "name": "rome-becomes-italian-capital",
+    "difficulty": "hard",
+    "reasoning": "Italian unification context. Papal States capture but 1870 specific."
+  },
+  {
+    "name": "standard-oil-founded",
+    "difficulty": "medium",
+    "reasoning": "Rockefeller/Standard Oil famous. Oil monopoly helps place around 1870."
+  },
+  {
+    "name": "german-empire-proclaimed",
+    "difficulty": "medium",
+    "reasoning": "German unification notable. Wilhelm I at Versailles 1871 is taught."
+  },
+  {
+    "name": "treaty-of-frankfurt",
+    "difficulty": "hard",
+    "reasoning": "Franco-Prussian War context. Alsace-Lorraine cession but 1871 specific."
+  },
+  {
+    "name": "yellowstone-national-park",
+    "difficulty": "medium",
+    "reasoning": "First national park is famous. Conservation milestone helps place 1872."
+  },
+  {
+    "name": "monets-impression-sunrise",
+    "difficulty": "hard",
+    "reasoning": "Monet famous. Impressionist movement naming but 1872 painting specific."
+  },
+  {
+    "name": "centennial-exhibition",
+    "difficulty": "hard",
+    "reasoning": "America's 100th anniversary. Philadelphia World's Fair but 1876 specific."
+  },
+  {
+    "name": "serbia-independence",
+    "difficulty": "hard",
+    "reasoning": "Balkan history. Ottoman Empire context but 1876 specific."
+  },
+  {
+    "name": "congress-of-berlin",
+    "difficulty": "hard",
+    "reasoning": "Balkan history. Russo-Turkish War aftermath but 1878 specific."
+  },
+  {
+    "name": "bulgaria-independence",
+    "difficulty": "hard",
+    "reasoning": "Balkan history. Ottoman Empire/Congress of Berlin but 1878 specific."
+  },
+  {
+    "name": "dual-alliance",
+    "difficulty": "hard",
+    "reasoning": "WWI prelude. Germany/Austria-Hungary alliance but 1879 specific."
+  },
+  {
+    "name": "tuskegee-institute-founded",
+    "difficulty": "hard",
+    "reasoning": "Booker T. Washington notable. African American education but 1881 specific."
+  },
+  {
+    "name": "chinese-exclusion-act",
+    "difficulty": "medium",
+    "reasoning": "Immigration history. First nationality-based ban helps place 1882."
+  },
+  {
+    "name": "british-occupation-egypt",
+    "difficulty": "hard",
+    "reasoning": "Colonial history. Suez Canal protection but 1882 specific."
+  },
+  {
+    "name": "orient-express-first-run",
+    "difficulty": "hard",
+    "reasoning": "Famous train. Paris to Constantinople but 1883 specific."
+  },
+  {
+    "name": "haymarket-affair",
+    "difficulty": "hard",
+    "reasoning": "Labor history. Chicago bombing/anarchists but 1886 specific."
+  },
+  {
+    "name": "dawes-act",
+    "difficulty": "hard",
+    "reasoning": "Native American history. Tribal land allotments but 1887 specific."
+  },
+  {
+    "name": "brazil-abolishes-slavery",
+    "difficulty": "hard",
+    "reasoning": "Last Americas abolition notable. Golden Law but 1888 specific."
+  },
+  {
+    "name": "brazil-becomes-republic",
+    "difficulty": "hard",
+    "reasoning": "Brazilian history. Emperor Pedro II overthrown but 1889 specific."
+  },
+  {
+    "name": "oklahoma-land-rush",
+    "difficulty": "medium",
+    "reasoning": "American expansion. Land Run is famous event helps place 1889."
+  },
+  {
+    "name": "sherman-antitrust-act",
+    "difficulty": "medium",
+    "reasoning": "Antitrust law notable. Monopoly prohibition helps place 1890."
+  },
+  {
+    "name": "bismarck-dismissed",
+    "difficulty": "hard",
+    "reasoning": "Bismarck famous. Kaiser Wilhelm II dismissing him but 1890 specific."
+  },
+  {
+    "name": "ellis-island-opens",
+    "difficulty": "easy",
+    "reasoning": "Ellis Island is iconic. Immigration gateway 12 million people, 1892 notable."
+  },
+  {
+    "name": "worlds-columbian-exposition",
+    "difficulty": "hard",
+    "reasoning": "Chicago World's Fair. Columbus celebration/Ferris wheel but 1893 specific."
+  },
+  {
+    "name": "panic-of-1893",
+    "difficulty": "hard",
+    "reasoning": "Economic crisis. Railroad/bank failures but 1893 specific."
+  },
+  {
+    "name": "dreyfus-affair",
+    "difficulty": "hard",
+    "reasoning": "French antisemitism case. Dreyfus falsely convicted but 1894 specific."
+  },
+  {
+    "name": "treaty-of-shimonoseki",
+    "difficulty": "hard",
+    "reasoning": "First Sino-Japanese War. China ceding Taiwan but 1895 specific."
+  },
+  {
+    "name": "klondike-gold-rush",
+    "difficulty": "medium",
+    "reasoning": "Gold rush notable. Yukon/Canada helps place late 1890s."
+  },
+  {
+    "name": "plessy-v-ferguson",
+    "difficulty": "medium",
+    "reasoning": "Famous Supreme Court case. 'Separate but equal' segregation 1896 taught."
+  },
+  {
+    "name": "ethiopian-victory-adwa",
+    "difficulty": "hard",
+    "reasoning": "African resistance. Ethiopia defeating Italy but 1896 specific."
+  },
+  {
+    "name": "queen-victorias-diamond-jubilee",
+    "difficulty": "medium",
+    "reasoning": "Queen Victoria famous. 60 years on throne helps place 1897."
+  },
+  {
+    "name": "us-annexes-hawaii",
+    "difficulty": "medium",
+    "reasoning": "Hawaii annexation notable. Monarchy overthrow helps place 1898."
+  },
+  {
+    "name": "fashoda-incident",
+    "difficulty": "hard",
+    "reasoning": "Colonial history. Britain/France Sudan confrontation but 1898 specific."
+  },
+  {
+    "name": "panama-independence",
+    "difficulty": "hard",
+    "reasoning": "Panama Canal context. Independence from Colombia but 1903 specific."
+  },
+  {
+    "name": "norway-independence-sweden",
+    "difficulty": "hard",
+    "reasoning": "Scandinavian history. Peaceful dissolution but 1905 specific."
+  },
+  {
+    "name": "algeciras-conference",
+    "difficulty": "very-hard",
+    "reasoning": "Very obscure. First Moroccan Crisis/French influence but 1906 specific."
+  },
+  {
+    "name": "tunguska-event",
+    "difficulty": "hard",
+    "reasoning": "Famous event. Siberian explosion/meteor but 1908 specific timing."
+  },
+  {
+    "name": "young-turk-revolution",
+    "difficulty": "hard",
+    "reasoning": "Ottoman history. Military forcing constitution but 1908 specific."
+  },
+  {
+    "name": "austria-annexes-bosnia",
+    "difficulty": "medium",
+    "reasoning": "WWI prelude. Bosnia-Herzegovina annexation inflaming Balkans 1908 notable."
+  },
+  {
+    "name": "model-t-production-begins",
+    "difficulty": "easy",
+    "reasoning": "Ford Model T is iconic. Affordable automobile helps place around 1909."
+  },
+  {
+    "name": "japan-annexes-korea",
+    "difficulty": "medium",
+    "reasoning": "Colonial history. Japan annexing Korea, 35 years rule helps place 1910."
+  },
+  {
+    "name": "union-of-south-africa",
+    "difficulty": "hard",
+    "reasoning": "South African history. British colonies merging but 1910 specific."
+  },
+  {
+    "name": "portugal-becomes-republic",
+    "difficulty": "hard",
+    "reasoning": "Portuguese history. Monarchy overthrown but 1910 specific."
+  },
+  {
+    "name": "federal-reserve-created",
+    "difficulty": "medium",
+    "reasoning": "US central bank notable. Federal Reserve 1913 is commonly known."
+  },
+  {
+    "name": "sykes-picot-agreement",
+    "difficulty": "hard",
+    "reasoning": "WWI diplomacy. Secret British-French Middle East division but 1916 specific."
+  },
+  {
+    "name": "balfour-declaration",
+    "difficulty": "medium",
+    "reasoning": "Middle East history. Jewish homeland in Palestine 1917 is significant."
+  },
+  {
+    "name": "february-revolution-russia",
+    "difficulty": "medium",
+    "reasoning": "Russian Revolution. Tsar Nicholas II abdication 1917 notable."
+  },
+  {
+    "name": "zimmermann-telegram",
+    "difficulty": "medium",
+    "reasoning": "WWI entry. German offer to Mexico pushing US into war 1917 taught."
+  },
+  {
+    "name": "fourteen-points",
+    "difficulty": "medium",
+    "reasoning": "Wilson's peace principles. League of Nations proposal 1918 taught."
+  },
+  {
+    "name": "german-revolution-1918",
+    "difficulty": "medium",
+    "reasoning": "Year in name. Kaiser Wilhelm II fleeing, Weimar Republic notable."
+  },
+  {
+    "name": "czechoslovakia-founded",
+    "difficulty": "medium",
+    "reasoning": "Post-WWI state. Austria-Hungary collapse context helps place 1918."
+  },
+  {
+    "name": "munich-beer-hall-putsch",
+    "difficulty": "medium",
+    "reasoning": "Hitler's failed coup. Mein Kampf writing helps place 1923."
+  },
+  {
+    "name": "time-magazine-first-issue",
+    "difficulty": "hard",
+    "reasoning": "Time Magazine notable but first issue in 1923 specific."
+  },
+  {
+    "name": "scopes-trial",
+    "difficulty": "medium",
+    "reasoning": "Evolution trial famous. Tennessee/teaching evolution 1925 notable."
+  },
+  {
+    "name": "first-five-year-plan-ussr",
+    "difficulty": "medium",
+    "reasoning": "Soviet industrialization. Stalin's planning helps place 1928."
+  },
+  {
+    "name": "vatican-city-created",
+    "difficulty": "medium",
+    "reasoning": "Vatican City notable. Lateran Treaty/independent state 1929 specific."
+  },
+  {
+    "name": "black-thursday",
+    "difficulty": "medium",
+    "reasoning": "Great Depression start. Stock market crash October 1929 is taught."
+  },
+  {
+    "name": "smoot-hawley-tariff",
+    "difficulty": "hard",
+    "reasoning": "Great Depression context. Tariff worsening crisis but 1930 specific."
+  },
+  {
+    "name": "japan-invades-manchuria",
+    "difficulty": "medium",
+    "reasoning": "WWII prelude. Japan seizing Manchuria/Manchukuo 1931 notable."
+  },
+  {
+    "name": "first-nazi-concentration-camps",
+    "difficulty": "medium",
+    "reasoning": "Nazi history. Dachau opening after Hitler took power 1933 notable."
+  },
+  {
+    "name": "us-leaves-gold-standard",
+    "difficulty": "hard",
+    "reasoning": "Depression economics. Roosevelt/deflation but 1933 specific."
+  },
+  {
+    "name": "night-of-long-knives",
+    "difficulty": "medium",
+    "reasoning": "Nazi history. Hitler purging SA leadership 1934 notable."
+  },
+  {
+    "name": "nuremberg-laws",
+    "difficulty": "medium",
+    "reasoning": "Nazi racial laws. Jews stripped of citizenship 1935 taught."
+  },
+  {
+    "name": "italy-invades-ethiopia",
+    "difficulty": "medium",
+    "reasoning": "WWII prelude. Mussolini/poison gas/League weakness 1935 notable."
+  },
+  {
+    "name": "rhineland-remilitarized",
+    "difficulty": "medium",
+    "reasoning": "WWII prelude. Germany violating Versailles 1936 notable."
+  },
+  {
+    "name": "rape-of-nanking",
+    "difficulty": "medium",
+    "reasoning": "WWII atrocity. Japanese massacre in Nanking 1937 notable."
+  },
+  {
+    "name": "germany-absorbs-austria",
+    "difficulty": "medium",
+    "reasoning": "Anschluss is known term. Nazi Germany annexing Austria 1938 taught."
+  },
+  {
+    "name": "nazi-soviet-pact",
+    "difficulty": "medium",
+    "reasoning": "WWII prelude. Non-aggression pact dividing Eastern Europe 1939 taught."
+  },
+  {
+    "name": "blitz-begins",
+    "difficulty": "medium",
+    "reasoning": "WWII event. German bombing of British cities 1940 notable."
+  },
+  {
+    "name": "final-solution-begins",
+    "difficulty": "medium",
+    "reasoning": "Holocaust. Systematic genocide of Jews 1941 is significant."
+  },
+  {
+    "name": "internment-japanese-americans",
+    "difficulty": "medium",
+    "reasoning": "WWII event. Japanese Americans in camps 1942 taught."
+  },
+  {
+    "name": "casablanca-conference",
+    "difficulty": "medium",
+    "reasoning": "WWII diplomacy. Roosevelt/Churchill unconditional surrender 1943 notable."
+  },
+  {
+    "name": "bretton-woods-conference",
+    "difficulty": "medium",
+    "reasoning": "Postwar economics. IMF/World Bank creation 1944 notable."
+  },
+  {
+    "name": "san-francisco-conference-un",
+    "difficulty": "medium",
+    "reasoning": "UN founding. 50 nations signing Charter 1945 notable."
+  },
+  {
+    "name": "first-eniac-computer",
+    "difficulty": "medium",
+    "reasoning": "Computer milestone. First general-purpose electronic computer 1946 notable."
+  },
+  {
+    "name": "nuremberg-verdicts",
+    "difficulty": "medium",
+    "reasoning": "Post-WWII justice. Nazi war crimes convictions 1946 taught."
+  },
+  {
+    "name": "truman-doctrine",
+    "difficulty": "medium",
+    "reasoning": "Cold War policy. Containing communism/Greece/Turkey 1947 taught."
+  },
+  {
+    "name": "cia-created",
+    "difficulty": "medium",
+    "reasoning": "CIA is famous. National Security Act 1947 notable."
+  },
+  {
+    "name": "who-founded",
+    "difficulty": "medium",
+    "reasoning": "WHO is well-known. UN health agency 1948 notable."
+  },
+  {
+    "name": "korean-peninsula-divided",
+    "difficulty": "medium",
+    "reasoning": "Korea division notable. 38th parallel/separate governments 1948."
+  },
+  {
+    "name": "indonesia-independence",
+    "difficulty": "hard",
+    "reasoning": "Indonesian history. Netherlands recognition after struggle but 1949 specific."
+  },
+  {
+    "name": "germany-divided",
+    "difficulty": "easy",
+    "reasoning": "Cold War symbol. East/West Germany 1949 until 1990 is well-known."
+  },
+  {
+    "name": "inchon-landing",
+    "difficulty": "medium",
+    "reasoning": "Korean War. MacArthur's amphibious landing 1950 notable."
+  },
+  {
+    "name": "treaty-of-paris-ecsc",
+    "difficulty": "hard",
+    "reasoning": "EU precursor. European Coal and Steel Community but 1951 specific."
+  },
+  {
+    "name": "anzus-treaty",
+    "difficulty": "hard",
+    "reasoning": "Pacific alliance. Australia/New Zealand/US but 1951 specific."
+  },
+  {
+    "name": "egyptian-revolution-1952",
+    "difficulty": "medium",
+    "reasoning": "Egyptian history. Nasser/Farouk overthrow but year in name helps."
+  },
+  {
+    "name": "montgomery-bus-boycott",
+    "difficulty": "easy",
+    "reasoning": "Civil rights milestone. Rosa Parks/MLK 1955 is iconic."
+  },
+  {
+    "name": "austrian-state-treaty",
+    "difficulty": "hard",
+    "reasoning": "Cold War diplomacy. Austrian neutrality but 1955 specific."
+  },
+  {
+    "name": "de-stalinization-speech",
+    "difficulty": "hard",
+    "reasoning": "Soviet history. Khrushchev denouncing Stalin but 1956 specific."
+  },
+  {
+    "name": "morocco-independence",
+    "difficulty": "hard",
+    "reasoning": "African independence. France/Spain decolonization but 1956 specific."
+  },
+  {
+    "name": "tunisia-independence",
+    "difficulty": "hard",
+    "reasoning": "African independence. France/Bourguiba but 1956 specific."
+  },
+  {
+    "name": "little-rock-nine",
+    "difficulty": "medium",
+    "reasoning": "Civil rights. Nine Black students integrating school 1957 notable."
+  },
+  {
+    "name": "fifth-french-republic",
+    "difficulty": "hard",
+    "reasoning": "French politics. De Gaulle's constitution but 1958 specific."
+  },
+  {
+    "name": "nasa-founded",
+    "difficulty": "easy",
+    "reasoning": "NASA is famous. Space race after Sputnik 1958 notable."
+  },
+  {
+    "name": "alaska-hawaii-statehood",
+    "difficulty": "easy",
+    "reasoning": "49th and 50th states. 1959 is commonly known."
+  },
+  {
+    "name": "dalai-lama-flees-tibet",
+    "difficulty": "medium",
+    "reasoning": "Dalai Lama famous. Tibetan uprising/exile 1959 notable."
+  },
+  {
+    "name": "antarctic-treaty",
+    "difficulty": "hard",
+    "reasoning": "International agreement. Scientific research/peaceful use but 1959 specific."
+  },
+  {
+    "name": "u2-incident",
+    "difficulty": "medium",
+    "reasoning": "Cold War event. Spy plane/Gary Powers 1960 notable."
+  },
+  {
+    "name": "freedom-riders",
+    "difficulty": "medium",
+    "reasoning": "Civil rights. Bus rides challenging segregation 1961 notable."
+  },
+  {
+    "name": "peace-corps-founded",
+    "difficulty": "medium",
+    "reasoning": "Kennedy initiative. American volunteers abroad 1961 notable."
+  },
+  {
+    "name": "algeria-independence",
+    "difficulty": "medium",
+    "reasoning": "French decolonization. Eight-year war ending 1962 notable."
+  },
+  {
+    "name": "second-vatican-council",
+    "difficulty": "medium",
+    "reasoning": "Catholic history. Pope John XXIII modernizing Church 1962 notable."
+  },
+  {
+    "name": "gulf-of-tonkin-resolution",
+    "difficulty": "medium",
+    "reasoning": "Vietnam War. Congress authorizing military force 1964 taught."
+  },
+  {
+    "name": "mandela-sentenced",
+    "difficulty": "medium",
+    "reasoning": "Mandela famous. Life imprisonment for sabotage 1964 notable."
+  },
+  {
+    "name": "khrushchev-ousted",
+    "difficulty": "hard",
+    "reasoning": "Soviet history. Replaced by Brezhnev but 1964 specific."
+  },
+  {
+    "name": "selma-to-montgomery-march",
+    "difficulty": "medium",
+    "reasoning": "Civil rights. Voting Rights Act marches 1965 notable."
+  },
+  {
+    "name": "immigration-act-1965",
+    "difficulty": "hard",
+    "reasoning": "Immigration history. Abolishing national quotas but year specific."
+  },
+  {
+    "name": "miranda-v-arizona",
+    "difficulty": "medium",
+    "reasoning": "Miranda rights famous. Supreme Court requiring police notification 1966."
+  },
+  {
+    "name": "paris-may-events",
+    "difficulty": "medium",
+    "reasoning": "French protests. Student/general strikes 1968 notable."
+  },
+  {
+    "name": "fair-housing-act",
+    "difficulty": "medium",
+    "reasoning": "Civil rights. Housing discrimination banned 1968 notable."
+  },
+  {
+    "name": "nixon-doctrine",
+    "difficulty": "hard",
+    "reasoning": "Foreign policy. Allies defending themselves but 1969 specific."
+  },
+  {
+    "name": "british-troops-northern-ireland",
+    "difficulty": "medium",
+    "reasoning": "The Troubles. Army deployment amid violence 1969 notable."
+  },
+  {
+    "name": "kent-state-shootings",
+    "difficulty": "medium",
+    "reasoning": "Vietnam protest. Four students killed 1970 taught."
+  },
+  {
+    "name": "epa-created",
+    "difficulty": "medium",
+    "reasoning": "EPA is well-known. Nixon/environmental regulation 1970 notable."
+  },
+  {
+    "name": "black-september",
+    "difficulty": "hard",
+    "reasoning": "Middle East history. Jordan expelling Palestinians but 1970 specific."
+  },
+  {
+    "name": "intel-microprocessor",
+    "difficulty": "hard",
+    "reasoning": "Technology milestone. Intel 4004 but 1971 specific."
+  },
+  {
+    "name": "pentagon-papers",
+    "difficulty": "medium",
+    "reasoning": "Vietnam War. Leaked documents/government deception 1971 notable."
+  },
+  {
+    "name": "end-of-bretton-woods",
+    "difficulty": "hard",
+    "reasoning": "Economic history. Nixon ending gold convertibility but 1971 specific."
+  },
+  {
+    "name": "bloody-sunday-ireland",
+    "difficulty": "medium",
+    "reasoning": "The Troubles. British soldiers killing protesters 1972 notable."
+  },
+  {
+    "name": "watergate-break-in",
+    "difficulty": "easy",
+    "reasoning": "Watergate scandal famous. Nixon/break-in 1972 is iconic."
+  },
+  {
+    "name": "club-of-rome-report",
+    "difficulty": "hard",
+    "reasoning": "Environmental milestone. Limits to Growth but 1972 specific."
+  },
+  {
+    "name": "oil-crisis-1973",
+    "difficulty": "medium",
+    "reasoning": "Year in name. Arab oil embargo/gas shortages notable."
+  },
+  {
+    "name": "opec-embargo",
+    "difficulty": "medium",
+    "reasoning": "Oil crisis context. Yom Kippur War/oil cut 1973 notable."
+  },
+  {
+    "name": "uk-joins-eec",
+    "difficulty": "medium",
+    "reasoning": "Brexit context. UK joining European Community 1973 notable."
+  },
+  {
+    "name": "carnation-revolution",
+    "difficulty": "hard",
+    "reasoning": "Portuguese history. Peaceful coup ending dictatorship but 1974 specific."
+  },
+  {
+    "name": "cyprus-divided",
+    "difficulty": "hard",
+    "reasoning": "Cyprus history. Turkish invasion creating zones but 1974 specific."
+  },
+  {
+    "name": "microsoft-founded",
+    "difficulty": "easy",
+    "reasoning": "Microsoft is famous. Bill Gates founding 1975 notable."
+  },
+  {
+    "name": "spanish-democracy-transition",
+    "difficulty": "hard",
+    "reasoning": "Spanish history. Franco's death/King Juan Carlos but 1975 specific."
+  },
+  {
+    "name": "djibouti-independence",
+    "difficulty": "hard",
+    "reasoning": "African independence. Last French colony in Africa but 1977 specific."
+  },
+  {
+    "name": "vietnam-invades-cambodia",
+    "difficulty": "hard",
+    "reasoning": "Southeast Asian history. Ending Khmer Rouge but 1978 specific."
+  },
+  {
+    "name": "sandinista-revolution",
+    "difficulty": "hard",
+    "reasoning": "Nicaraguan history. Somoza overthrow but 1979 specific."
+  },
+  {
+    "name": "zimbabwe-independence",
+    "difficulty": "hard",
+    "reasoning": "African history. Rhodesia/Mugabe but 1980 specific."
+  },
+  {
+    "name": "sdi-announced",
+    "difficulty": "hard",
+    "reasoning": "Cold War. Reagan's Star Wars defense but 1983 specific."
+  },
+  {
+    "name": "gorbachev-becomes-leader",
+    "difficulty": "medium",
+    "reasoning": "Gorbachev famous. Soviet reforms ending Cold War 1985 notable."
+  },
+  {
+    "name": "glasnost-perestroika",
+    "difficulty": "medium",
+    "reasoning": "Soviet reforms famous. Openness/restructuring 1985 notable."
+  },
+  {
+    "name": "first-ozone-hole-discovered",
+    "difficulty": "hard",
+    "reasoning": "Environmental milestone. Antarctica/CFCs but 1985 specific."
+  },
+  {
+    "name": "people-power-revolution",
+    "difficulty": "hard",
+    "reasoning": "Philippine history. Marcos overthrown but 1986 specific."
+  },
+  {
+    "name": "us-bombs-libya",
+    "difficulty": "hard",
+    "reasoning": "Reagan foreign policy. Airstrikes targeting Gaddafi but 1986 specific."
+  },
+  {
+    "name": "black-monday-1987",
+    "difficulty": "medium",
+    "reasoning": "Year in name. Stock market crash 22% in one day notable."
+  },
+  {
+    "name": "inf-treaty",
+    "difficulty": "hard",
+    "reasoning": "Arms control. US/USSR eliminating missiles but 1987 specific."
+  },
+  {
+    "name": "soviet-withdrawal-afghanistan",
+    "difficulty": "medium",
+    "reasoning": "Soviet history. Nine-year war ending 1988 notable."
+  },
+  {
+    "name": "pan-am-flight-103",
+    "difficulty": "medium",
+    "reasoning": "Lockerbie bombing famous. 270 killed 1988 notable."
+  },
+  {
+    "name": "velvet-revolution",
+    "difficulty": "medium",
+    "reasoning": "1989 revolutions. Czechoslovakia/Havel peaceful transition notable."
+  },
+  {
+    "name": "romanian-revolution",
+    "difficulty": "medium",
+    "reasoning": "1989 revolutions. Ceausescu executed notable."
+  },
+  {
+    "name": "iraq-invades-kuwait",
+    "difficulty": "easy",
+    "reasoning": "Gulf War precursor. Saddam Hussein invasion 1990 taught."
+  },
+  {
+    "name": "namibia-independence",
+    "difficulty": "hard",
+    "reasoning": "African independence. South Africa/UN but 1990 specific."
+  },
+  {
+    "name": "anc-unbanned",
+    "difficulty": "medium",
+    "reasoning": "South African history. Mandela released 1990 notable."
+  },
+  {
+    "name": "operation-desert-storm",
+    "difficulty": "easy",
+    "reasoning": "Gulf War famous. US-led coalition liberating Kuwait 1991 taught."
+  },
+  {
+    "name": "slovenia-croatia-independence",
+    "difficulty": "medium",
+    "reasoning": "Yugoslav Wars. Independence declarations 1991 notable."
+  },
+  {
+    "name": "eritrea-independence",
+    "difficulty": "hard",
+    "reasoning": "African history. Ethiopia/30-year struggle but 1993 specific."
+  },
+  {
+    "name": "european-union-created",
+    "difficulty": "medium",
+    "reasoning": "EU is well-known. Maastricht Treaty 1993 notable."
+  },
+  {
+    "name": "anc-wins-election",
+    "difficulty": "easy",
+    "reasoning": "Mandela famous. First democratic election ending apartheid 1994 notable."
+  },
+  {
+    "name": "amazon-founded",
+    "difficulty": "medium",
+    "reasoning": "Amazon famous. Jeff Bezos online bookstore 1994 notable."
+  },
+  {
+    "name": "wto-created",
+    "difficulty": "medium",
+    "reasoning": "WTO is well-known. World Trade Organization 1995 notable."
+  },
+  {
+    "name": "taliban-takes-kabul",
+    "difficulty": "medium",
+    "reasoning": "Taliban history. Islamic Emirate/sharia law 1996 notable."
+  },
+  {
+    "name": "welfare-reform-act",
+    "difficulty": "hard",
+    "reasoning": "US policy. Clinton ending welfare guarantee but 1996 specific."
+  },
+  {
+    "name": "blair-becomes-pm",
+    "difficulty": "medium",
+    "reasoning": "Tony Blair famous. Labour landslide 1997 notable."
+  },
+  {
+    "name": "monica-lewinsky-scandal",
+    "difficulty": "easy",
+    "reasoning": "Clinton scandal famous. Impeachment 1998 is well-known."
+  },
+  {
+    "name": "nato-kosovo-campaign",
+    "difficulty": "medium",
+    "reasoning": "Kosovo War. NATO bombing Serbia 1999 notable."
+  },
+  {
+    "name": "east-timor-independence-vote",
+    "difficulty": "medium",
+    "reasoning": "East Timor history. Indonesia/UN intervention 1999 notable."
+  },
+  {
+    "name": "putin-becomes-president",
+    "difficulty": "easy",
+    "reasoning": "Putin is famous. First Russian presidency 2000 notable."
+  },
+  {
+    "name": "wikipedia-launched",
+    "difficulty": "easy",
+    "reasoning": "Wikipedia is iconic. Free encyclopedia 2001 notable."
+  },
+  {
+    "name": "us-china-spy-plane-incident",
+    "difficulty": "hard",
+    "reasoning": "Diplomatic incident. Collision/emergency landing but 2001 specific."
+  },
+  {
+    "name": "enron-scandal",
+    "difficulty": "medium",
+    "reasoning": "Corporate fraud famous. Accounting scandal 2001 notable."
+  },
+  {
+    "name": "euro-coins-circulation",
+    "difficulty": "easy",
+    "reasoning": "Euro is well-known. Currency replacement 2002 notable."
+  },
+  {
+    "name": "eu-expansion-25",
+    "difficulty": "medium",
+    "reasoning": "EU expansion. Eastern Europe joining 2004 notable."
+  },
+  {
+    "name": "orange-revolution",
+    "difficulty": "medium",
+    "reasoning": "Ukraine history. Election protests 2004 notable."
+  },
+  {
+    "name": "angela-merkel-elected",
+    "difficulty": "medium",
+    "reasoning": "Merkel famous. First female German Chancellor 2005 notable."
+  },
+  {
+    "name": "montenegro-independence",
+    "difficulty": "hard",
+    "reasoning": "Balkan history. Yugoslavia dissolution completing but 2006 specific."
+  },
+  {
+    "name": "virginia-tech-shooting",
+    "difficulty": "medium",
+    "reasoning": "Mass shooting. 32 killed 2007 notable."
+  },
+  {
+    "name": "burma-saffron-revolution",
+    "difficulty": "hard",
+    "reasoning": "Myanmar history. Buddhist monk protests but 2007 specific."
+  },
+  {
+    "name": "kosovo-independence",
+    "difficulty": "medium",
+    "reasoning": "Balkan history. Serbia/Western recognition 2008 notable."
+  },
+  {
+    "name": "obama-inaugurated",
+    "difficulty": "easy",
+    "reasoning": "Obama famous. First African American President 2009 iconic."
+  },
+  {
+    "name": "wikileaks-cables",
+    "difficulty": "medium",
+    "reasoning": "WikiLeaks famous. Diplomatic cables leaked 2010 notable."
+  },
+  {
+    "name": "chilean-mine-rescue",
+    "difficulty": "medium",
+    "reasoning": "Famous rescue. 33 miners 69 days 2010 notable."
+  },
+  {
+    "name": "egyptian-revolution-2011",
+    "difficulty": "medium",
+    "reasoning": "Arab Spring. Tahrir Square/Mubarak 2011 notable."
+  },
+  {
+    "name": "sandy-hook-shooting",
+    "difficulty": "medium",
+    "reasoning": "Mass shooting. 26 killed including children 2012 notable."
+  },
+  {
+    "name": "snowden-revelations",
+    "difficulty": "easy",
+    "reasoning": "Snowden famous. NSA surveillance leaked 2013 notable."
+  },
+  {
+    "name": "scottish-independence-vote",
+    "difficulty": "easy",
+    "reasoning": "Recent referendum. Scotland voting to stay UK 2014 notable."
+  },
+  {
+    "name": "refugee-crisis-peak",
+    "difficulty": "medium",
+    "reasoning": "European crisis. Syrian refugees 2015 notable."
+  },
+  {
+    "name": "pulse-nightclub-shooting",
+    "difficulty": "medium",
+    "reasoning": "Mass shooting. Orlando 49 killed 2016 notable."
+  },
+  {
+    "name": "trump-inauguration",
+    "difficulty": "easy",
+    "reasoning": "Trump famous. 45th President inauguration 2017 notable."
+  },
+  {
+    "name": "las-vegas-shooting",
+    "difficulty": "medium",
+    "reasoning": "Mass shooting. 60 killed 2017 notable."
+  },
+  {
+    "name": "charlottesville-rally",
+    "difficulty": "medium",
+    "reasoning": "White supremacist rally. Car attack 2017 notable."
+  },
+  {
+    "name": "us-north-korea-summit",
+    "difficulty": "easy",
+    "reasoning": "Historic meeting. Trump/Kim Jong Un 2018 notable."
+  },
+  {
+    "name": "yellow-vest-protests",
+    "difficulty": "easy",
+    "reasoning": "French protests. Fuel taxes 2018 notable."
+  },
+  {
+    "name": "boris-johnson-becomes-pm",
+    "difficulty": "easy",
+    "reasoning": "Boris Johnson famous. Brexit PM 2019 notable."
+  },
+  {
+    "name": "greta-thunberg-un-speech",
+    "difficulty": "easy",
+    "reasoning": "Greta famous. UN climate speech 2019 notable."
+  },
+  {
+    "name": "george-floyd-protests",
+    "difficulty": "easy",
+    "reasoning": "BLM protests famous. Worldwide 2020 notable."
+  },
+  {
+    "name": "biden-elected",
+    "difficulty": "easy",
+    "reasoning": "Biden famous. 46th President defeating Trump 2020 notable."
+  },
+  {
+    "name": "us-withdrawal-afghanistan",
+    "difficulty": "easy",
+    "reasoning": "Recent event. 20-year war ending 2021 notable."
+  },
+  {
+    "name": "taliban-return-to-power",
+    "difficulty": "easy",
+    "reasoning": "Recent event. Taliban seizing Kabul 2021 notable."
+  },
+  {
+    "name": "pelosi-taiwan-visit",
+    "difficulty": "easy",
+    "reasoning": "Recent event. Pelosi/China tensions 2022 notable."
+  },
+  {
+    "name": "ai-rapid-advancement-gpt4",
+    "difficulty": "easy",
+    "reasoning": "Recent event. GPT-4/AI debate 2023 very current."
+  },
+  {
+    "name": "partition-poland",
+    "difficulty": "hard",
+    "reasoning": "European history. Russia/Prussia/Austria but 1772 specific."
+  },
+  {
+    "name": "articles-confederation",
+    "difficulty": "medium",
+    "reasoning": "US history. First constitution before US Constitution helps place 1780s."
+  },
+  {
+    "name": "constitutional-convention",
+    "difficulty": "easy",
+    "reasoning": "US Constitution context. Philadelphia/founding fathers 1787 commonly taught."
+  },
+  {
+    "name": "us-constitution",
+    "difficulty": "easy",
+    "reasoning": "US Constitution is iconic. Ratification follows convention 1788."
+  },
+  {
+    "name": "first-fleet-australia",
+    "difficulty": "medium",
+    "reasoning": "Australia founding. British penal colony 1788 is notable in Australian history."
+  },
+  {
+    "name": "french-declaration-rights",
+    "difficulty": "medium",
+    "reasoning": "French Revolution context. Rights of Man 1789 is notable."
+  },
+  {
+    "name": "dc-established",
+    "difficulty": "medium",
+    "reasoning": "US capital. Washington D.C. has high recognition, 1790 is specific but near Revolution."
+  },
+  {
+    "name": "bill-of-rights-us",
+    "difficulty": "easy",
+    "reasoning": "US Bill of Rights is highly recognizable. First 10 amendments 1791 commonly taught."
+  },
+  {
+    "name": "library-congress-established",
+    "difficulty": "hard",
+    "reasoning": "Library of Congress notable but founding date 1800 specific."
+  },
+  {
+    "name": "louisiana-purchase",
+    "difficulty": "easy",
+    "reasoning": "Louisiana Purchase is iconic. Doubling US size 1803 commonly taught."
+  },
+  {
+    "name": "haitian-independence",
+    "difficulty": "hard",
+    "reasoning": "First slave revolt success is notable but Haiti/1804 less known to general audience."
+  },
+  {
+    "name": "congress-vienna",
+    "difficulty": "medium",
+    "reasoning": "Post-Napoleonic Europe. Redrawing map after Napoleon's defeat helps place 1815."
+  },
+  {
+    "name": "concert-europe",
+    "difficulty": "hard",
+    "reasoning": "Diplomatic history. Great powers stability but 1815 specific."
+  },
+  {
+    "name": "missouri-compromise",
+    "difficulty": "medium",
+    "reasoning": "US slavery debate. Free/slave state balance helps place 1820."
+  },
+  {
+    "name": "latin-american-independence",
+    "difficulty": "medium",
+    "reasoning": "Spanish colonies independence. Mexico and others 1821 is generally known era."
+  },
+  {
+    "name": "monroe-doctrine",
+    "difficulty": "medium",
+    "reasoning": "Monroe Doctrine is well-known. Opposing European colonization 1823 taught."
+  },
+  {
+    "name": "bolivia-independence",
+    "difficulty": "hard",
+    "reasoning": "South American independence. Named after Bolivar but 1825 specific."
+  },
+  {
+    "name": "belgian-independence",
+    "difficulty": "hard",
+    "reasoning": "European history. Netherlands separation 1830 specific."
+  },
+  {
+    "name": "indian-removal-act",
+    "difficulty": "medium",
+    "reasoning": "Trail of Tears context. Andrew Jackson/Native Americans 1830 notable."
+  },
+  {
+    "name": "treaty-waitangi",
+    "difficulty": "hard",
+    "reasoning": "New Zealand history. Britain/Maori but 1840 specific."
+  },
+  {
+    "name": "treaty-nanking",
+    "difficulty": "medium",
+    "reasoning": "Opium War context. China ceding Hong Kong to Britain 1842 notable."
+  },
+  {
+    "name": "compromise-slavery",
+    "difficulty": "hard",
+    "reasoning": "US slavery debate. 1850 Compromise but specific year needed."
+  },
+  {
+    "name": "red-cross-founded",
+    "difficulty": "medium",
+    "reasoning": "Red Cross is well-known. Henry Dunant/Geneva 1863 notable."
+  },
+  {
+    "name": "emancipation-proclamation",
+    "difficulty": "easy",
+    "reasoning": "Lincoln is iconic. Freeing slaves 1863 commonly taught."
+  },
+  {
+    "name": "geneva-convention-first",
+    "difficulty": "medium",
+    "reasoning": "Geneva Conventions well-known. Humanitarian law 1864 notable."
+  },
+  {
+    "name": "13th-amendment",
+    "difficulty": "easy",
+    "reasoning": "Abolishing slavery is iconic. Post-Civil War 1865 commonly taught."
+  },
+  {
+    "name": "dominion-canada",
+    "difficulty": "medium",
+    "reasoning": "Canada formation. Self-governing dominion 1867 notable."
+  },
+  {
+    "name": "british-north-america-act",
+    "difficulty": "hard",
+    "reasoning": "Canadian history. Act creating Dominion but 1867 specific."
+  },
+  {
+    "name": "meiji-restoration",
+    "difficulty": "medium",
+    "reasoning": "Japanese modernization is notable. Imperial restoration 1868 commonly taught."
+  },
+  {
+    "name": "triple-alliance",
+    "difficulty": "hard",
+    "reasoning": "WWI prelude. Germany/Austria-Hungary/Italy but 1882 specific."
+  },
+  {
+    "name": "berlin-conference",
+    "difficulty": "hard",
+    "reasoning": "Scramble for Africa. European powers dividing Africa 1884 notable but specific."
+  },
+  {
+    "name": "first-zionist-congress",
+    "difficulty": "hard",
+    "reasoning": "Zionism origins. Herzl/Jewish homeland but 1897 specific."
+  },
+  {
+    "name": "hague-conventions",
+    "difficulty": "hard",
+    "reasoning": "International law. Rules of warfare 1899 but specific."
+  },
+  {
+    "name": "commonwealth-australia",
+    "difficulty": "medium",
+    "reasoning": "Australia unification. Federation 1901 is significant in Australian history."
+  },
+  {
+    "name": "entente-cordiale",
+    "difficulty": "hard",
+    "reasoning": "WWI prelude. Britain/France alliance but 1904 specific."
+  },
+  {
+    "name": "triple-entente",
+    "difficulty": "hard",
+    "reasoning": "WWI prelude. Britain/France/Russia but 1907 specific."
+  },
+  {
+    "name": "naacp-founded",
+    "difficulty": "medium",
+    "reasoning": "Civil rights organization is well-known. Fighting discrimination 1909."
+  },
+  {
+    "name": "chinese-republic",
+    "difficulty": "medium",
+    "reasoning": "Qing Dynasty fall is notable. Republic of China 1912."
+  },
+  {
+    "name": "anc-founded",
+    "difficulty": "medium",
+    "reasoning": "South African history. Black rights organization 1912."
+  },
+  {
+    "name": "last-emperor-china-abdicates",
+    "difficulty": "medium",
+    "reasoning": "End of imperial China is notable. Puyi/2000 years 1912."
+  },
+  {
+    "name": "ilo-founded",
+    "difficulty": "hard",
+    "reasoning": "International organization. Workers' rights but 1919 specific."
+  },
+  {
+    "name": "league-of-nations",
+    "difficulty": "easy",
+    "reasoning": "League of Nations is well-known. First world peace organization 1920."
+  },
+  {
+    "name": "womens-suffrage-us",
+    "difficulty": "easy",
+    "reasoning": "19th Amendment is iconic. Women's voting rights 1920 commonly taught."
+  },
+  {
+    "name": "treaty-versailles-effect",
+    "difficulty": "easy",
+    "reasoning": "Treaty of Versailles is iconic. Ending WWI 1920 commonly taught."
+  },
+  {
+    "name": "prohibition-begins-us",
+    "difficulty": "easy",
+    "reasoning": "Prohibition is iconic. Alcohol ban 1920 commonly taught."
+  },
+  {
+    "name": "irish-free-state",
+    "difficulty": "medium",
+    "reasoning": "Irish independence is notable. Dominion status 1922."
+  },
+  {
+    "name": "ussr-formed",
+    "difficulty": "easy",
+    "reasoning": "Soviet Union is iconic. USSR formation 1922 commonly known."
+  },
+  {
+    "name": "washington-naval-treaty",
+    "difficulty": "hard",
+    "reasoning": "Naval arms limitation. Interwar diplomacy but 1922 specific."
+  },
+  {
+    "name": "anglo-irish-treaty",
+    "difficulty": "hard",
+    "reasoning": "Irish history. Free State establishment but 1922 specific."
+  },
+  {
+    "name": "dawes-plan",
+    "difficulty": "hard",
+    "reasoning": "German reparations. Post-WWI economics but 1924 specific."
+  },
+  {
+    "name": "locarno-treaties",
+    "difficulty": "hard",
+    "reasoning": "European peace. Mutual borders but 1925 specific."
+  },
+  {
+    "name": "kellogg-briand-pact",
+    "difficulty": "hard",
+    "reasoning": "Renouncing war. Interwar idealism but 1928 specific."
+  },
+  {
+    "name": "statute-westminster",
+    "difficulty": "hard",
+    "reasoning": "British dominions. Legislative independence but 1931 specific."
+  },
+  {
+    "name": "kingdom-saudi-arabia-founded",
+    "difficulty": "hard",
+    "reasoning": "Saudi Arabia is well-known but founding 1932 specific."
+  },
+  {
+    "name": "manchukuo-established",
+    "difficulty": "hard",
+    "reasoning": "Japanese puppet state. Manchuria/Puyi but 1932 specific."
+  },
+  {
+    "name": "new-deal",
+    "difficulty": "easy",
+    "reasoning": "New Deal is iconic. FDR/Depression 1933 commonly taught."
+  },
+  {
+    "name": "social-security-act",
+    "difficulty": "medium",
+    "reasoning": "Social Security is well-known. US welfare 1935."
+  },
+  {
+    "name": "anti-comintern-pact",
+    "difficulty": "hard",
+    "reasoning": "WWII prelude. Germany/Japan but 1936 specific."
+  },
+  {
+    "name": "rhineland-remilitarization",
+    "difficulty": "medium",
+    "reasoning": "WWII prelude. Germany violating Versailles 1936 notable."
+  },
+  {
+    "name": "atlantic-charter",
+    "difficulty": "hard",
+    "reasoning": "WWII diplomacy. Churchill/Roosevelt but 1941 specific."
+  },
+  {
+    "name": "declaration-united-nations",
+    "difficulty": "hard",
+    "reasoning": "WWII alliance. 26 nations but 1942 specific."
+  },
+  {
+    "name": "imf-world-bank",
+    "difficulty": "medium",
+    "reasoning": "IMF/World Bank are well-known. Bretton Woods 1944 notable."
+  },
+  {
+    "name": "united-nations-founded",
+    "difficulty": "easy",
+    "reasoning": "United Nations is iconic. International organization 1945 commonly taught."
+  },
+  {
+    "name": "yalta-conference",
+    "difficulty": "medium",
+    "reasoning": "WWII diplomacy. Big Three/postwar Europe 1945 notable."
+  },
+  {
+    "name": "potsdam-conference",
+    "difficulty": "medium",
+    "reasoning": "WWII diplomacy. Postwar arrangements 1945 notable."
+  },
+  {
+    "name": "first-un-general-assembly",
+    "difficulty": "medium",
+    "reasoning": "UN founding. First assembly 1946 notable."
+  },
+  {
+    "name": "indian-independence",
+    "difficulty": "easy",
+    "reasoning": "Indian independence is iconic. Partition with Pakistan 1947 commonly taught."
+  },
+  {
+    "name": "marshall-plan",
+    "difficulty": "medium",
+    "reasoning": "Marshall Plan is well-known. Rebuilding Europe 1947 taught."
+  },
+  {
+    "name": "gatt-established",
+    "difficulty": "hard",
+    "reasoning": "Trade agreement. Free trade but 1947 specific."
+  },
+  {
+    "name": "universal-declaration-rights",
+    "difficulty": "easy",
+    "reasoning": "UDHR is well-known. Human rights document 1948 notable."
+  },
+  {
+    "name": "israel-founded",
+    "difficulty": "easy",
+    "reasoning": "Israel founding is iconic. Jewish homeland 1948 commonly taught."
+  },
+  {
+    "name": "berlin-airlift",
+    "difficulty": "medium",
+    "reasoning": "Cold War event. Berlin blockade 1948 taught."
+  },
+  {
+    "name": "burma-independence",
+    "difficulty": "hard",
+    "reasoning": "Burma/Myanmar independence. UK decolonization but 1948 specific."
+  },
+  {
+    "name": "nato-founded",
+    "difficulty": "easy",
+    "reasoning": "NATO is iconic. Western military alliance 1949 commonly taught."
+  },
+  {
+    "name": "geneva-conventions-modern",
+    "difficulty": "hard",
+    "reasoning": "Geneva Conventions well-known but 1949 update specific."
+  },
+  {
+    "name": "prc-founded",
+    "difficulty": "easy",
+    "reasoning": "Communist China is iconic. Mao proclaiming PRC 1949 commonly taught."
+  },
+  {
+    "name": "indian-constitution-enacted",
+    "difficulty": "medium",
+    "reasoning": "Indian republic. Constitution coming into force 1950."
+  },
+  {
+    "name": "european-coal-steel",
+    "difficulty": "hard",
+    "reasoning": "EU precursor. ECSC but 1951 specific."
+  },
+  {
+    "name": "elizabeth-ii-becomes-queen",
+    "difficulty": "easy",
+    "reasoning": "Queen Elizabeth II is iconic. Longest reign 1952 well-known."
+  },
+  {
+    "name": "brown-v-board",
+    "difficulty": "easy",
+    "reasoning": "Brown v. Board is iconic. Ending school segregation 1954 taught."
+  },
+  {
+    "name": "seato-formed",
+    "difficulty": "hard",
+    "reasoning": "Southeast Asian alliance. Cold War but 1954 specific."
+  },
+  {
+    "name": "warsaw-pact",
+    "difficulty": "medium",
+    "reasoning": "Warsaw Pact is well-known. Soviet military alliance 1955."
+  },
+  {
+    "name": "bandung-conference",
+    "difficulty": "hard",
+    "reasoning": "Non-aligned movement. African/Asian nations but 1955 specific."
+  },
+  {
+    "name": "sudan-independence",
+    "difficulty": "hard",
+    "reasoning": "African independence. Egypt/UK but 1956 specific."
+  },
+  {
+    "name": "treaty-rome",
+    "difficulty": "medium",
+    "reasoning": "EU precursor. EEC creation 1957 notable."
+  },
+  {
+    "name": "efta-formed",
+    "difficulty": "hard",
+    "reasoning": "European trade. Alternative to EEC but 1960 specific."
+  },
+  {
+    "name": "opec-founded",
+    "difficulty": "medium",
+    "reasoning": "OPEC is well-known. Oil cartel 1960."
+  },
+  {
+    "name": "decolonization-africa",
+    "difficulty": "hard",
+    "reasoning": "African independence. 17 nations but 1960 specific."
+  },
+  {
+    "name": "indus-water-treaty",
+    "difficulty": "hard",
+    "reasoning": "India/Pakistan. Water sharing but 1960 specific."
+  },
+  {
+    "name": "us-japan-mutual-security-treaty",
+    "difficulty": "hard",
+    "reasoning": "US/Japan alliance. Security treaty but 1960 specific."
+  },
+  {
+    "name": "non-aligned-movement",
+    "difficulty": "hard",
+    "reasoning": "Cold War neutrality. Third way but 1961 specific."
+  },
+  {
+    "name": "cuban-missile-resolution",
+    "difficulty": "easy",
+    "reasoning": "Cuban Missile Crisis is iconic. US/USSR confrontation 1962 commonly taught."
+  },
+  {
+    "name": "test-ban-treaty",
+    "difficulty": "medium",
+    "reasoning": "Nuclear testing ban. Atmospheric tests 1963 notable."
+  },
+  {
+    "name": "civil-rights-act",
+    "difficulty": "easy",
+    "reasoning": "Civil Rights Act is iconic. Ending discrimination 1964 commonly taught."
+  },
+  {
+    "name": "24th-amendment-ratified",
+    "difficulty": "hard",
+    "reasoning": "Poll taxes prohibited. Voting rights but 1964 specific."
+  },
+  {
+    "name": "voting-rights-act",
+    "difficulty": "easy",
+    "reasoning": "Voting Rights Act is iconic. Ending voter discrimination 1965 commonly taught."
+  },
+  {
+    "name": "singapore-independence",
+    "difficulty": "hard",
+    "reasoning": "Singapore separation from Malaysia but 1965 specific."
+  },
+  {
+    "name": "apollo-11-treaty",
+    "difficulty": "hard",
+    "reasoning": "Outer Space Treaty. Space law but 1967 specific."
+  },
+  {
+    "name": "asean-founded",
+    "difficulty": "hard",
+    "reasoning": "Southeast Asian cooperation. ASEAN but 1967 specific."
+  },
+  {
+    "name": "nuclear-non-proliferation",
+    "difficulty": "medium",
+    "reasoning": "NPT is well-known. Nuclear weapons spread 1968 notable."
+  },
+  {
+    "name": "china-un-seat",
+    "difficulty": "hard",
+    "reasoning": "PRC replacing Taiwan. UN seat but 1971 specific."
+  },
+  {
+    "name": "nixon-china",
+    "difficulty": "easy",
+    "reasoning": "Nixon visit to China is iconic. Opening relations 1972 commonly taught."
+  },
+  {
+    "name": "salt-i",
+    "difficulty": "hard",
+    "reasoning": "Arms control. US/USSR but 1972 specific."
+  },
+  {
+    "name": "paris-peace-accords-1973",
+    "difficulty": "medium",
+    "reasoning": "Vietnam War ending. US withdrawal 1973 notable."
+  },
+  {
+    "name": "helsinki-accords",
+    "difficulty": "hard",
+    "reasoning": "Cold War diplomacy. East/West but 1975 specific."
+  },
+  {
+    "name": "camp-david-accords",
+    "difficulty": "medium",
+    "reasoning": "Camp David is well-known. Egypt/Israel peace 1978 notable."
+  },
+  {
+    "name": "reform-opening-china",
+    "difficulty": "hard",
+    "reasoning": "Deng Xiaoping reforms. Chinese economy but 1978 specific."
+  },
+  {
+    "name": "iran-revolution",
+    "difficulty": "medium",
+    "reasoning": "Islamic Revolution is notable. Iran theocracy 1979."
+  },
+  {
+    "name": "salt-ii",
+    "difficulty": "hard",
+    "reasoning": "Arms control. Further limits but 1979 specific."
+  },
+  {
+    "name": "egypt-israel-peace",
+    "difficulty": "medium",
+    "reasoning": "First Arab peace with Israel. Egypt 1979 notable."
+  },
+  {
+    "name": "solidarity-poland",
+    "difficulty": "medium",
+    "reasoning": "Solidarity is well-known. Polish union 1980 notable."
+  },
+  {
+    "name": "constitution-canada-patriation",
+    "difficulty": "hard",
+    "reasoning": "Canadian sovereignty. Constitution but 1982 specific."
+  },
+  {
+    "name": "european-union-precursor",
+    "difficulty": "hard",
+    "reasoning": "Single European Act. EU precursor but 1986 specific."
+  },
+  {
+    "name": "start-i",
+    "difficulty": "hard",
+    "reasoning": "Arms reduction. US/USSR but 1991 specific."
+  },
+  {
+    "name": "maastricht-treaty",
+    "difficulty": "medium",
+    "reasoning": "EU creation is notable. European Union 1992."
+  },
+  {
+    "name": "nafta-signed",
+    "difficulty": "medium",
+    "reasoning": "NAFTA is well-known. North American trade 1992."
+  },
+  {
+    "name": "oslo-accords",
+    "difficulty": "medium",
+    "reasoning": "Oslo Accords notable. Israel/PLO 1993."
+  },
+  {
+    "name": "wto-founded",
+    "difficulty": "medium",
+    "reasoning": "WTO is well-known. World trade 1995."
+  },
+  {
+    "name": "dayton-accords",
+    "difficulty": "medium",
+    "reasoning": "Bosnia peace. Ending war 1995 notable."
+  },
+  {
+    "name": "schengen-area",
+    "difficulty": "hard",
+    "reasoning": "European travel. Passport-free but 1995 specific."
+  },
+  {
+    "name": "kyoto-protocol",
+    "difficulty": "medium",
+    "reasoning": "Kyoto Protocol is well-known. Climate change 1997."
+  },
+  {
+    "name": "hong-kong-handover",
+    "difficulty": "easy",
+    "reasoning": "Hong Kong handover is iconic. Britain to China 1997 commonly known."
+  },
+  {
+    "name": "good-friday-agreement",
+    "difficulty": "medium",
+    "reasoning": "Good Friday Agreement notable. Northern Ireland peace 1998."
+  },
+  {
+    "name": "rome-statute-icc",
+    "difficulty": "hard",
+    "reasoning": "International Criminal Court. War crimes but 1998 specific."
+  },
+  {
+    "name": "euro-introduced",
+    "difficulty": "easy",
+    "reasoning": "Euro is iconic. Common currency 1999 well-known."
+  },
+  {
+    "name": "macau-handover",
+    "difficulty": "medium",
+    "reasoning": "Macau handover. Portugal to China 1999 notable."
+  },
+  {
+    "name": "china-wto-entry",
+    "difficulty": "medium",
+    "reasoning": "China joining WTO. Global economy 2001 notable."
+  },
+  {
+    "name": "icc-established",
+    "difficulty": "hard",
+    "reasoning": "ICC established. War crimes court but 2002 specific."
+  },
+  {
+    "name": "african-union",
+    "difficulty": "hard",
+    "reasoning": "African Union. Continental organization but 2002 specific."
+  },
+  {
+    "name": "eu-eastern-expansion",
+    "difficulty": "medium",
+    "reasoning": "EU expansion. Eastern Europe 2004 notable."
+  },
+  {
+    "name": "same-sex-marriage-canada",
+    "difficulty": "medium",
+    "reasoning": "Same-sex marriage. Canada 2005 notable."
+  },
+  {
+    "name": "asean-charter",
+    "difficulty": "hard",
+    "reasoning": "ASEAN legal status. Charter but 2007 specific."
+  },
+  {
+    "name": "lisbon-treaty",
+    "difficulty": "hard",
+    "reasoning": "EU reform. Treaty of Lisbon but 2007 specific."
+  },
+  {
+    "name": "belt-road-initiative",
+    "difficulty": "medium",
+    "reasoning": "Belt and Road is well-known. China investment 2013."
+  },
+  {
+    "name": "paris-climate-agreement",
+    "difficulty": "easy",
+    "reasoning": "Paris Agreement is iconic. Climate change 2015 well-known."
+  },
+  {
+    "name": "iran-nuclear-deal",
+    "difficulty": "medium",
+    "reasoning": "Iran nuclear deal notable. JCPOA 2015."
+  },
+  {
+    "name": "inter-korean-summit-2018",
+    "difficulty": "medium",
+    "reasoning": "Korea summit. Historic meeting 2018 notable."
+  },
+  {
+    "name": "brexit",
+    "difficulty": "easy",
+    "reasoning": "Brexit is iconic. UK leaving EU 2020 well-known."
+  },
+  {
+    "name": "abraham-accords",
+    "difficulty": "easy",
+    "reasoning": "Abraham Accords notable. Israel/Arab normalization 2020."
+  },
+  {
+    "name": "lend-lease-act",
+    "difficulty": "medium",
+    "reasoning": "WWII context. US military aid 1941 notable."
+  },
+  {
+    "name": "treaty-paris-1783",
+    "difficulty": "medium",
+    "reasoning": "American Revolution ending. Independence recognized 1783 taught."
+  },
+  {
+    "name": "delhi-sultanate",
+    "difficulty": "hard",
+    "reasoning": "Indian history. First Muslim rulers but 1206 specific."
+  },
+  {
+    "name": "british-raj-established",
+    "difficulty": "medium",
+    "reasoning": "British India is well-known. Crown rule 1858 notable."
+  },
+  {
+    "name": "german-reunification",
+    "difficulty": "easy",
+    "reasoning": "German reunification is iconic. East/West 1990 commonly taught."
+  },
+  {
+    "name": "montreal-protocol",
+    "difficulty": "hard",
+    "reasoning": "Ozone protection. Environmental treaty but 1987 specific."
+  },
+  {
+    "name": "thatcher-becomes-pm",
+    "difficulty": "medium",
+    "reasoning": "Margaret Thatcher is famous. First female PM 1979 notable."
+  },
+  {
+    "name": "unification-egypt",
+    "difficulty": "hard",
+    "reasoning": "Ancient Egypt. Narmer unification but 3100 BCE specific."
+  },
+  {
+    "name": "zhou-dynasty-begins",
+    "difficulty": "hard",
+    "reasoning": "Chinese history. Longest dynasty but 1046 BCE specific."
+  },
+  {
+    "name": "darius-i-persian-king",
+    "difficulty": "hard",
+    "reasoning": "Persian Empire. Darius I but 522 BCE specific."
+  },
+  {
+    "name": "first-secession-plebs",
+    "difficulty": "very-hard",
+    "reasoning": "Roman history. Plebeian Council but 494 BCE obscure."
+  },
+  {
+    "name": "athens-surrenders-sparta",
+    "difficulty": "hard",
+    "reasoning": "Peloponnesian War ending. Athens/Sparta 404 BCE notable."
+  },
+  {
+    "name": "battle-chaeronea",
+    "difficulty": "hard",
+    "reasoning": "Philip II of Macedon. Greece control 338 BCE but specific."
+  },
+  {
+    "name": "death-alexander-great",
+    "difficulty": "medium",
+    "reasoning": "Alexander the Great is iconic. Death 323 BCE commonly known."
+  },
+  {
+    "name": "ptolemaic-kingdom-established",
+    "difficulty": "hard",
+    "reasoning": "Hellenistic Egypt. Ptolemy but 305 BCE specific."
+  },
+  {
+    "name": "seleucid-empire-founded",
+    "difficulty": "hard",
+    "reasoning": "Hellenistic kingdom. Seleucus but 305 BCE specific."
+  },
+  {
+    "name": "battle-ipsus",
+    "difficulty": "very-hard",
+    "reasoning": "Diadochi wars. Alexander's successors but 301 BCE obscure."
+  },
+  {
+    "name": "lex-hortensia",
+    "difficulty": "very-hard",
+    "reasoning": "Roman law. Plebeian Council but 287 BCE obscure."
+  },
+  {
+    "name": "tiberius-gracchus-reforms",
+    "difficulty": "very-hard",
+    "reasoning": "Roman reforms. Land distribution but 133 BCE obscure."
+  },
+  {
+    "name": "marian-reforms",
+    "difficulty": "very-hard",
+    "reasoning": "Roman army. Marius but 107 BCE obscure."
+  },
+  {
+    "name": "social-war-rome",
+    "difficulty": "hard",
+    "reasoning": "Roman history. Italian allies but 91 BCE specific."
+  },
+  {
+    "name": "sullas-civil-war",
+    "difficulty": "very-hard",
+    "reasoning": "Roman dictatorship. Sulla but 82 BCE obscure."
+  },
+  {
+    "name": "first-triumvirate",
+    "difficulty": "hard",
+    "reasoning": "Caesar/Pompey/Crassus. Roman politics but 60 BCE specific."
+  },
+  {
+    "name": "second-triumvirate",
+    "difficulty": "hard",
+    "reasoning": "Octavian/Antony/Lepidus. Roman politics but 43 BCE specific."
+  },
+  {
+    "name": "death-of-augustus",
+    "difficulty": "hard",
+    "reasoning": "First Roman Emperor death. Succession but 14 AD specific."
+  },
+  {
+    "name": "nero-becomes-emperor",
+    "difficulty": "hard",
+    "reasoning": "Nero is well-known but 54 AD specific timing."
+  },
+  {
+    "name": "trajan-becomes-emperor",
+    "difficulty": "hard",
+    "reasoning": "Roman Empire peak. Trajan but 98 AD specific."
+  },
+  {
+    "name": "hadrian-becomes-emperor",
+    "difficulty": "hard",
+    "reasoning": "Hadrian's Wall context. 117 AD specific."
+  },
+  {
+    "name": "marcus-aurelius-emperor",
+    "difficulty": "hard",
+    "reasoning": "Philosopher emperor. Five Good Emperors but 161 AD specific."
+  },
+  {
+    "name": "jin-dynasty-reunifies-china",
+    "difficulty": "very-hard",
+    "reasoning": "Three Kingdoms ending. Jin Dynasty but 280 AD obscure."
+  },
+  {
+    "name": "fall-western-jin",
+    "difficulty": "very-hard",
+    "reasoning": "Chinese history. Nomadic invasion but 316 AD obscure."
+  },
+  {
+    "name": "council-of-constantinople",
+    "difficulty": "hard",
+    "reasoning": "Christian doctrine. Nicene Creed but 381 AD specific."
+  },
+  {
+    "name": "division-roman-empire",
+    "difficulty": "hard",
+    "reasoning": "East/West split. Theodosius death but 395 AD specific."
+  },
+  {
+    "name": "ravenna-becomes-capital",
+    "difficulty": "hard",
+    "reasoning": "Western Roman capital move. Ravenna but 402 AD specific."
+  },
+  {
+    "name": "council-of-ephesus",
+    "difficulty": "hard",
+    "reasoning": "Christian doctrine. Mary 'Mother of God' but 431 AD specific."
+  },
+  {
+    "name": "death-of-muhammad",
+    "difficulty": "medium",
+    "reasoning": "Prophet Muhammad is well-known. Death 632 AD notable."
+  },
+  {
+    "name": "islamic-conquest-spain",
+    "difficulty": "medium",
+    "reasoning": "Muslim Spain is well-known. Umayyad invasion 711 AD notable."
+  },
+  {
+    "name": "charlemagne-king-franks",
+    "difficulty": "hard",
+    "reasoning": "Charlemagne is famous but becoming king 768 AD specific."
+  },
+  {
+    "name": "death-of-charlemagne",
+    "difficulty": "hard",
+    "reasoning": "Charlemagne is famous but death 814 AD specific."
+  },
+  {
+    "name": "alfred-great-king",
+    "difficulty": "hard",
+    "reasoning": "Alfred the Great notable. Wessex king 871 AD specific."
+  },
+  {
+    "name": "fall-tang-dynasty",
+    "difficulty": "hard",
+    "reasoning": "Chinese history. Tang collapse but 907 AD specific."
+  },
+  {
+    "name": "fatimid-caliphate-established",
+    "difficulty": "hard",
+    "reasoning": "Islamic history. Shia caliphate but 909 AD specific."
+  },
+  {
+    "name": "treaty-saint-clair-sur-epte",
+    "difficulty": "very-hard",
+    "reasoning": "Norman origins. Vikings/Normandy but 911 AD obscure."
+  },
+  {
+    "name": "canute-king-england",
+    "difficulty": "hard",
+    "reasoning": "Danish king of England. North Sea empire but 1016 specific."
+  },
+  {
+    "name": "seljuk-empire-founded",
+    "difficulty": "hard",
+    "reasoning": "Turkish empire. Middle East but 1037 specific."
+  },
+  {
+    "name": "death-genghis-khan",
+    "difficulty": "hard",
+    "reasoning": "Genghis Khan is famous. Death 1227 but specific year."
+  },
+  {
+    "name": "model-parliament",
+    "difficulty": "hard",
+    "reasoning": "English Parliament. Edward I but 1295 specific."
+  },
+  {
+    "name": "philip-vi-france",
+    "difficulty": "very-hard",
+    "reasoning": "Hundred Years War prelude. Valois king but 1328 obscure."
+  },
+  {
+    "name": "treaty-of-bretigny",
+    "difficulty": "hard",
+    "reasoning": "Hundred Years War. England/France peace but 1360 specific."
+  },
+  {
+    "name": "marriage-ferdinand-isabella",
+    "difficulty": "medium",
+    "reasoning": "Spanish unification. Catholic Monarchs 1469 notable."
+  },
+  {
+    "name": "henry-viii-becomes-king",
+    "difficulty": "medium",
+    "reasoning": "Henry VIII is famous. Becoming king 1509 notable."
+  },
+  {
+    "name": "charles-v-king-spain",
+    "difficulty": "hard",
+    "reasoning": "Habsburg empire. Charles V but 1516 specific."
+  },
+  {
+    "name": "charles-v-holy-roman-emperor",
+    "difficulty": "hard",
+    "reasoning": "Habsburg power. HRE election but 1519 specific."
+  },
+  {
+    "name": "field-of-cloth-of-gold",
+    "difficulty": "hard",
+    "reasoning": "Henry VIII/Francis I. Diplomatic summit but 1520 specific."
+  },
+  {
+    "name": "neanderthals-thrive-europe",
+    "difficulty": "hard",
+    "reasoning": "Prehistoric era. Neanderthals but 100,000 BCE specific timing hard."
+  },
+  {
+    "name": "first-irrigation-systems",
+    "difficulty": "hard",
+    "reasoning": "Ancient Mesopotamia. Agriculture but 5000 BCE specific."
+  },
+  {
+    "name": "minoan-civilization-peak",
+    "difficulty": "hard",
+    "reasoning": "Ancient Crete. Minoan palaces but 2000 BCE specific."
+  },
+  {
+    "name": "abrahams-journey-traditional",
+    "difficulty": "hard",
+    "reasoning": "Biblical tradition. Abraham but 1800 BCE specific."
+  },
+  {
+    "name": "david-establishes-jerusalem-capital",
+    "difficulty": "hard",
+    "reasoning": "Biblical history. King David but 1000 BCE specific."
+  },
+  {
+    "name": "assyrian-empire-expansion",
+    "difficulty": "hard",
+    "reasoning": "Ancient empire. Assyria but 900 BCE specific."
+  },
+  {
+    "name": "fall-of-israel-northern-kingdom",
+    "difficulty": "hard",
+    "reasoning": "Biblical history. Assyrian conquest but 722 BCE specific."
+  },
+  {
+    "name": "fall-of-nineveh",
+    "difficulty": "hard",
+    "reasoning": "Assyrian fall. Nineveh destruction but 612 BCE specific."
+  },
+  {
+    "name": "caesar-invades-britain",
+    "difficulty": "medium",
+    "reasoning": "Julius Caesar is famous. Britain expedition 55 BCE notable."
+  },
+  {
+    "name": "five-good-emperors-era-begins",
+    "difficulty": "hard",
+    "reasoning": "Roman golden age. Nerva but 96 AD specific."
+  },
+  {
+    "name": "end-of-pax-romana",
+    "difficulty": "hard",
+    "reasoning": "Roman peace ending. Marcus Aurelius death but 180 AD specific."
+  },
+  {
+    "name": "visigoths-settle-aquitaine",
+    "difficulty": "very-hard",
+    "reasoning": "Germanic kingdoms. Visigoths/Rome but 418 AD obscure."
+  },
+  {
+    "name": "theodoric-establishes-ostrogothic-kingdom",
+    "difficulty": "very-hard",
+    "reasoning": "Post-Roman Italy. Ostrogoths but 493 AD obscure."
+  },
+  {
+    "name": "baghdad-founded",
+    "difficulty": "hard",
+    "reasoning": "Islamic history. Abbasid capital but 762 AD specific."
+  },
+  {
+    "name": "treaty-of-aachen",
+    "difficulty": "very-hard",
+    "reasoning": "Charlemagne/Byzantine. Recognition but 812 AD obscure."
+  },
+  {
+    "name": "rurik-founds-novgorod",
+    "difficulty": "hard",
+    "reasoning": "Russian origins. Varangian prince but 862 AD specific."
+  },
+  {
+    "name": "fatimids-conquer-egypt",
+    "difficulty": "hard",
+    "reasoning": "Islamic history. Cairo founded but 969 AD specific."
+  },
+  {
+    "name": "seljuk-turks-capture-baghdad",
+    "difficulty": "hard",
+    "reasoning": "Turkish power. Abbasid decline but 1055 specific."
+  },
+  {
+    "name": "investiture-controversy-begins",
+    "difficulty": "hard",
+    "reasoning": "Pope/Emperor conflict. Church appointments but 1076 specific."
+  },
+  {
+    "name": "walk-to-canossa",
+    "difficulty": "hard",
+    "reasoning": "Henry IV/Pope. Famous humiliation but 1077 specific."
+  },
+  {
+    "name": "toledo-reconquered",
+    "difficulty": "hard",
+    "reasoning": "Reconquista. Alfonso VI but 1085 specific."
+  },
+  {
+    "name": "fall-of-edessa",
+    "difficulty": "hard",
+    "reasoning": "Crusader state fall. Second Crusade trigger but 1144 specific."
+  },
+  {
+    "name": "minamoto-yoritomo-becomes-shogun",
+    "difficulty": "hard",
+    "reasoning": "Japanese history. Kamakura shogunate but 1192 specific."
+  },
+  {
+    "name": "mamluks-take-power-egypt",
+    "difficulty": "hard",
+    "reasoning": "Egyptian history. Slave soldiers but 1250 specific."
+  },
+  {
+    "name": "sicilian-vespers",
+    "difficulty": "hard",
+    "reasoning": "Medieval revolt. Palermo massacre but 1282 specific."
+  },
+  {
+    "name": "henry-iv-deposes-richard-ii",
+    "difficulty": "hard",
+    "reasoning": "English history. Lancastrian dynasty but 1399 specific."
+  },
+  {
+    "name": "council-of-florence",
+    "difficulty": "hard",
+    "reasoning": "Church reunion attempt. East/West but 1438 specific."
+  },
+  {
+    "name": "portuguese-capture-goa",
+    "difficulty": "hard",
+    "reasoning": "Portuguese India. Albuquerque but 1510 specific."
+  },
+  {
+    "name": "augsburg-confession",
+    "difficulty": "hard",
+    "reasoning": "Protestant doctrine. Lutheran confession but 1530 specific."
+  },
+  {
+    "name": "pizarro-executes-atahualpa",
+    "difficulty": "medium",
+    "reasoning": "Spanish conquest. Inca emperor 1533 notable."
+  },
+  {
+    "name": "dissolution-of-monasteries",
+    "difficulty": "medium",
+    "reasoning": "Henry VIII context. English Reformation 1536 notable."
+  },
+  {
+    "name": "servetus-burned-at-stake",
+    "difficulty": "hard",
+    "reasoning": "Protestant intolerance. Calvin's Geneva but 1553 specific."
+  },
+  {
+    "name": "mercator-projection-map",
+    "difficulty": "hard",
+    "reasoning": "Navigation breakthrough. Mercator but 1569 specific."
+  },
+  {
+    "name": "execution-mary-queen-scots",
+    "difficulty": "medium",
+    "reasoning": "Elizabeth I is famous. Mary Stuart 1587 notable."
+  },
+  {
+    "name": "first-korean-turtle-ships",
+    "difficulty": "hard",
+    "reasoning": "Korean naval history. Admiral Yi but 1597 specific."
+  },
+  {
+    "name": "giordano-bruno-burned",
+    "difficulty": "hard",
+    "reasoning": "Scientific martyrdom. Infinite universe but 1600 specific."
+  },
+  {
+    "name": "gunpowder-plot",
+    "difficulty": "easy",
+    "reasoning": "Guy Fawkes is iconic. Parliament plot 1605 well-known."
+  },
+  {
+    "name": "defenestration-of-prague",
+    "difficulty": "hard",
+    "reasoning": "Thirty Years War start. Prague window but 1618 specific."
+  },
+  {
+    "name": "great-migration-massachusetts",
+    "difficulty": "hard",
+    "reasoning": "Puritan migration. Massachusetts but 1630 specific."
+  },
+  {
+    "name": "galileos-trial",
+    "difficulty": "easy",
+    "reasoning": "Galileo is iconic. Inquisition/heliocentrism 1633 commonly taught."
+  },
+  {
+    "name": "putney-debates",
+    "difficulty": "very-hard",
+    "reasoning": "English Civil War. Army debates but 1647 obscure."
+  },
+  {
+    "name": "treaty-of-pereyaslav",
+    "difficulty": "very-hard",
+    "reasoning": "Ukraine/Russia. Cossacks but 1654 obscure."
+  },
+  {
+    "name": "treaty-of-rastatt",
+    "difficulty": "very-hard",
+    "reasoning": "War of Spanish Succession. Austria/France but 1714 obscure."
+  },
+  {
+    "name": "treaty-of-nystad",
+    "difficulty": "very-hard",
+    "reasoning": "Great Northern War. Russia/Sweden but 1721 obscure."
+  }
+]
