@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.2](https://github.com/Edward-Muir/when/compare/v0.4.1...v0.4.2) (2026-01-25)
+
+
+### Bug Fixes
+
+* Make update a pop up instead of small button ([6af2d07](https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d))
+
 ## [0.4.1](https://github.com/Edward-Muir/when/compare/v0.4.0...v0.4.1) (2026-01-25)
 
 
