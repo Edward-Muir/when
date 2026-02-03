@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Feb 2026 22:23:13 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 03 Feb 2026 23:13:05 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.4.4</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.4.4</guid>
+      <pubDate>Tue, 03 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>SEO chores (<a href="https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6">6045ee9</a>)</li> <li>Show leaderboard right away (<a href="https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717">4ee65d3</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.4.3</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.3.9</guid>
       <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add game stats (<a href="https://github.com/Edward-Muir/when/commit/c472da978912ad3860cd6d0b46aa1f1968f863d6">c472da9</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.3.8</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.3.8</guid>
-      <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>SImplify logo (<a href="https://github.com/Edward-Muir/when/commit/4dec65d4a29913792148ec6ba136633e23c9e8f4">4dec65d</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Make timeline tick marks wider (<a href="https://github.com/Edward-Muir/when/commit/a3a98599baeb4be9cf1fce490ccc0ab8c7d9e69c">a3a9859</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

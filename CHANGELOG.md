@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.4](https://github.com/Edward-Muir/when/compare/v0.4.3...v0.4.4) (2026-02-03)
+
+
+### Features
+
+* SEO chores ([6045ee9](https://github.com/Edward-Muir/when/commit/6045ee9e18e5a1e56090c1058f95f8a10d01b6a6))
+* Show leaderboard right away ([4ee65d3](https://github.com/Edward-Muir/when/commit/4ee65d378c3cb7e525b48239d36f0ab001fe8717))
+
 ## [0.4.3](https://github.com/Edward-Muir/when/compare/v0.4.2...v0.4.3) (2026-02-03)
 
 
