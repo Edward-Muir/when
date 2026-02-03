@@ -310,32 +310,25 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             {todayResult ? (
               /* Completed daily state */
               <div className="space-y-2">
-                {/* Results display */}
                 <div className="text-sm font-medium text-text font-body text-center">
                   {todayResult.correctCount} event{todayResult.correctCount !== 1 ? 's' : ''} placed
                   correctly.
                 </div>
-
-                {/* Action buttons */}
-                <div className="space-y-2">
-                  <button
-                    onClick={handleShareDaily}
-                    className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                  >
-                    <Share2 className="w-3.5 h-3.5" />
-                    Share
-                  </button>
-                  <button
-                    onClick={() => setIsLeaderboardOpen(true)}
-                    className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                    aria-label="View daily leaderboard"
-                  >
-                    <Trophy className="w-3.5 h-3.5" />
-                    Leaderboard
-                  </button>
-                </div>
-
-                {/* Come back tomorrow message */}
+                <button
+                  onClick={handleShareDaily}
+                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                >
+                  <Share2 className="w-3.5 h-3.5" />
+                  Share
+                </button>
+                <button
+                  onClick={() => setIsLeaderboardOpen(true)}
+                  className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  aria-label="View daily leaderboard"
+                >
+                  <Trophy className="w-3.5 h-3.5" />
+                  Leaderboard
+                </button>
                 <p className="text-sm text-text-muted font-body text-center">
                   Come back tomorrow for a new challenge!
                 </p>
