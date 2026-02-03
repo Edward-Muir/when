@@ -44,6 +44,7 @@ export function EventPreview({ event }: EventPreviewProps) {
             <img
               src={event.image_url}
               alt=""
+              crossOrigin="anonymous"
               className="h-full w-full object-cover"
               onError={(e) => {
                 // Hide broken images

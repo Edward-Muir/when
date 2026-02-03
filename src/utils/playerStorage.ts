@@ -162,3 +162,58 @@ export function saveTimelineHighScore(score: number): boolean {
     return false;
   }
 }
+
+// --- Display Name Storage ---
+
+const DISPLAY_NAME_KEY = 'when-display-name';
+
+/**
+ * Get the saved display name for leaderboard submissions
+ */
+export function getDisplayName(): string {
+  try {
+    return localStorage.getItem(DISPLAY_NAME_KEY) || '';
+  } catch {
+    return '';
+  }
+}
+
+/**
+ * Save the display name for future leaderboard submissions
+ */
+export function saveDisplayName(name: string): void {
+  try {
+    localStorage.setItem(DISPLAY_NAME_KEY, name);
+  } catch {
+    console.warn('Failed to save display name to localStorage');
+  }
+}
+
+// --- Leaderboard Submission Tracking ---
+
+const LEADERBOARD_SUBMITTED_KEY = 'when-leaderboard-submitted';
+
+/**
+ * Check if leaderboard submission was made for today's daily
+ */
+export function hasSubmittedToLeaderboard(): boolean {
+  try {
+    const stored = localStorage.getItem(LEADERBOARD_SUBMITTED_KEY);
+    if (!stored) return false;
+    // Only return true if it was submitted for today
+    return stored === getTodayDateString();
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Mark that leaderboard submission was made for today
+ */
+export function markLeaderboardSubmitted(): void {
+  try {
+    localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getTodayDateString());
+  } catch {
+    console.warn('Failed to save leaderboard submission status');
+  }
+}

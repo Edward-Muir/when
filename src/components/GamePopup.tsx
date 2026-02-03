@@ -3,7 +3,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Check, X, Trophy } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
+import { generateEmojiGrid } from '../utils/share';
+import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { DailyResult } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
+import LeaderboardSubmit from './LeaderboardSubmit';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -118,10 +122,11 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
 
 // Sub-component for game over content (stats only, header moved out)
 function GameOverContent({ gameState }: { gameState: WhenGameState }) {
-  const { winners, players, gameMode } = gameState;
+  const { winners, players, gameMode, placementHistory, lastConfig } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
   const isSuddenDeath = gameMode === 'suddenDeath' || gameMode === 'daily';
+  const isDaily = gameMode === 'daily';
 
   const getPlayerStats = (player: Player) => {
     const correct = player.placementHistory.filter((p) => p).length;
@@ -136,6 +141,19 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
     if (eventsPlaced >= 3) return 'Good start!';
     return null;
   };
+
+  // Build daily result for leaderboard submission
+  const dailyResult: DailyResult | null =
+    isDaily && lastConfig?.dailySeed
+      ? {
+          date: lastConfig.dailySeed,
+          theme: getThemeDisplayName(getDailyTheme(lastConfig.dailySeed)),
+          won: hasWinner,
+          correctCount: placementHistory.filter((p) => p).length,
+          totalAttempts: placementHistory.length,
+          emojiGrid: generateEmojiGrid(placementHistory),
+        }
+      : null;
 
   return (
     <div className="px-4 py-4">
@@ -202,6 +220,9 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
           </div>
         )}
       </div>
+
+      {/* Leaderboard submit section for daily mode */}
+      {dailyResult && <LeaderboardSubmit dailyResult={dailyResult} />}
     </div>
   );
 }
@@ -246,6 +267,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
         >
           <motion.div
             className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors"
+            onClick={isGameOver ? (e) => e.stopPropagation() : undefined}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}

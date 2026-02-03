@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Gamepad2, Settings, Play, Share2, Check } from 'lucide-react';
+import { Calendar, Gamepad2, Settings, Play, Share2, Check, Trophy } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -23,6 +23,8 @@ import {
 import { getTodayResult } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { APP_VERSION } from '../version';
+import { useLeaderboard } from '../hooks/useLeaderboard';
+import Leaderboard from './Leaderboard';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -30,6 +32,27 @@ interface ModeSelectProps {
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
 }
+
+const LoadingState: React.FC = () => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.3, ease: 'easeOut' }}
+    className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-safe pb-safe transition-colors"
+  >
+    <div className="bg-surface rounded-2xl shadow-sm p-6 max-w-sm w-full text-center border border-border">
+      <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
+      <p className="text-text-muted text-sm mb-6 font-body">The Timeline Game</p>
+      <div className="text-xl font-medium text-text mb-2 font-body">
+        Loading historical events...
+      </div>
+      <div className="animate-pulse text-sm text-text-muted font-body">
+        Gathering history from across time
+      </div>
+    </div>
+  </motion.div>
+);
 
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
@@ -42,6 +65,23 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
+
+  // Leaderboard state
+  const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
+  const {
+    isLoading: isLeaderboardLoading,
+    loadError: leaderboardError,
+    leaderboard,
+    totalPlayers,
+    rank,
+    fetchLeaderboard,
+  } = useLeaderboard();
+
+  // Prefetch leaderboard data in background on mount
+  useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+    fetchLeaderboard(today);
+  }, [fetchLeaderboard]);
 
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(true);
@@ -168,26 +208,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   };
 
   if (isLoading) {
-    return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3, ease: 'easeOut' }}
-        className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-safe pb-safe transition-colors"
-      >
-        <div className="bg-surface rounded-2xl shadow-sm p-6 max-w-sm w-full text-center border border-border">
-          <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-          <p className="text-text-muted text-sm mb-6 font-body">The Timeline Game</p>
-          <div className="text-xl font-medium text-text mb-2 font-body">
-            Loading historical events...
-          </div>
-          <div className="animate-pulse text-sm text-text-muted font-body">
-            Gathering history from across time
-          </div>
-        </div>
-      </motion.div>
-    );
+    return <LoadingState />;
   }
 
   return (
@@ -294,14 +315,27 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
                   correctly.
                 </div>
 
-                {/* Share button */}
-                <button
-                  onClick={handleShareDaily}
-                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                >
-                  <Share2 className="w-3.5 h-3.5" />
-                  Share Result
-                </button>
+                {/* Action buttons row */}
+                <div className="flex gap-2">
+                  {/* Leaderboard button */}
+                  <button
+                    onClick={() => setIsLeaderboardOpen(true)}
+                    className="flex-1 py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                    aria-label="View daily leaderboard"
+                  >
+                    <Trophy className="w-3.5 h-3.5" />
+                    Leaderboard
+                  </button>
+
+                  {/* Share button */}
+                  <button
+                    onClick={handleShareDaily}
+                    className="flex-1 py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  >
+                    <Share2 className="w-3.5 h-3.5" />
+                    Share
+                  </button>
+                </div>
 
                 {/* Come back tomorrow message */}
                 <p className="text-sm text-text-muted font-body text-center">
@@ -353,6 +387,17 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         setCardsPerHand={setCardsPerHand}
         suddenDeathHandSize={suddenDeathHandSize}
         setSuddenDeathHandSize={setSuddenDeathHandSize}
+      />
+
+      {/* Leaderboard Modal */}
+      <Leaderboard
+        isOpen={isLeaderboardOpen}
+        onClose={() => setIsLeaderboardOpen(false)}
+        entries={leaderboard}
+        totalPlayers={totalPlayers ?? 0}
+        playerRank={rank}
+        isLoading={isLeaderboardLoading}
+        error={leaderboardError}
       />
     </motion.div>
   );

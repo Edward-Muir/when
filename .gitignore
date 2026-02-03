@@ -31,3 +31,4 @@ logs/
 tools/event-editor/node_modules
 tools/event-editor/dist
 public/events/backups
+.env*.local

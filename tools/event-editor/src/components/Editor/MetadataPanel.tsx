@@ -189,6 +189,7 @@ export function MetadataPanel({ event, onUpdate, metadata, isDeprecated }: Metad
           <img
             src={event.image_url}
             alt={event.friendly_name}
+            crossOrigin="anonymous"
             className="max-h-48 max-w-full rounded border border-border object-contain"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';

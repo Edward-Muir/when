@@ -16,6 +16,7 @@ import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData, GameMod
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
+import { useLeaderboard } from '../hooks/useLeaderboard';
 import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import Timeline from './Timeline/Timeline';
@@ -110,6 +111,9 @@ const Game: React.FC<GameProps> = ({
   const { shakeClassName, triggerShake } = useScreenShake();
   const { haptics } = useHaptics();
 
+  // Prefetch leaderboard for daily mode
+  const { fetchLeaderboard } = useLeaderboard();
+
   // Track previous placement result to detect changes
   const prevPlacementRef = useRef(state.lastPlacementResult);
 
@@ -183,6 +187,14 @@ const Game: React.FC<GameProps> = ({
       setShowFirstTimeRules(true);
     }
   }, [state.phase, state.gameMode]);
+
+  // Prefetch leaderboard data for daily mode so it's ready at game over
+  useEffect(() => {
+    if (state.gameMode === 'daily') {
+      const today = new Date().toISOString().split('T')[0];
+      fetchLeaderboard(today);
+    }
+  }, [state.gameMode, fetchLeaderboard]);
 
   const handleActiveCardTap = () => {
     if (activeCard) {
