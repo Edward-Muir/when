@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.5](https://github.com/Edward-Muir/when/compare/v0.4.4...v0.4.5) (2026-02-03)
+
+
+### Bug Fixes
+
+* FIx linting error ([6ec66b0](https://github.com/Edward-Muir/when/commit/6ec66b0018743eb7750f19bcb5c8b844c5545c83))
+
 ## [0.4.4](https://github.com/Edward-Muir/when/compare/v0.4.3...v0.4.4) (2026-02-03)
 
 
