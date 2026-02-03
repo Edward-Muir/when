@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
@@ -9,6 +9,7 @@ interface LeaderboardProps {
   entries: LeaderboardEntry[];
   totalPlayers: number;
   playerRank: number | null;
+  playerEntry: LeaderboardEntry | null;
   isLoading?: boolean;
   error?: string | null;
 }
@@ -32,6 +33,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   entries,
   totalPlayers,
   playerRank,
+  playerEntry,
   isLoading,
   error,
 }) => {
@@ -45,6 +47,27 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       return () => document.removeEventListener('keydown', handleEscape);
     }
   }, [isOpen, onClose]);
+
+  // Compute display entries: top 5 + player if outside top 5
+  const displayData = useMemo(() => {
+    const top5 = entries.slice(0, 5);
+    const playerInTop5 = playerRank !== null && playerRank <= 5;
+
+    // If player exists and is outside top 5, show them separately
+    if (playerEntry && playerRank && !playerInTop5) {
+      return {
+        entries: top5,
+        showEllipsis: true,
+        playerEntryToShow: playerEntry,
+      };
+    }
+
+    return {
+      entries: top5,
+      showEllipsis: false,
+      playerEntryToShow: null,
+    };
+  }, [entries, playerRank, playerEntry]);
 
   if (!isOpen) return null;
 
@@ -82,17 +105,12 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               </button>
             </div>
 
-            {/* Player count + your rank */}
+            {/* Player count */}
             <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
               <Users className="w-4 h-4 text-text-muted" />
               <span className="text-sm text-text-muted font-body">
                 {totalPlayers} player{totalPlayers !== 1 ? 's' : ''} today
               </span>
-              {playerRank && (
-                <span className="ml-auto text-sm text-accent font-medium font-body">
-                  You: #{playerRank}
-                </span>
-              )}
             </div>
 
             {/* Entries */}
@@ -107,14 +125,15 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 </div>
               ) : (
                 <div className="divide-y divide-border">
-                  {entries.map((entry, index) => {
+                  {/* Top 5 entries */}
+                  {displayData.entries.map((entry, index) => {
                     const isPlayer = entry.rank === playerRank;
                     const medal = getMedalEmoji(entry.rank);
 
                     return (
                       <div
                         key={index}
-                        className={`px-4 py-3 flex items-center gap-3 ${isPlayer ? 'bg-accent/10' : ''}`}
+                        className={`px-4 py-3 flex items-center gap-3 ${isPlayer ? 'bg-accent/20 border-l-2 border-accent' : ''}`}
                       >
                         {/* Rank */}
                         <div className="w-8 text-center shrink-0">
@@ -141,6 +160,39 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                       </div>
                     );
                   })}
+
+                  {/* Ellipsis separator if player is outside top 5 */}
+                  {displayData.showEllipsis && (
+                    <div className="px-4 py-2 text-center text-text-muted text-sm font-body">
+                      •••
+                    </div>
+                  )}
+
+                  {/* Player's entry if outside top 5 */}
+                  {displayData.playerEntryToShow && (
+                    <div className="px-4 py-3 flex items-center gap-3 bg-accent/20 border-l-2 border-accent">
+                      {/* Rank */}
+                      <div className="w-8 text-center shrink-0">
+                        <span className="text-sm text-text-muted font-mono">
+                          #{displayData.playerEntryToShow.rank}
+                        </span>
+                      </div>
+
+                      {/* Name */}
+                      <div className="flex-1 min-w-0">
+                        <div className="font-medium text-text truncate font-body">
+                          {displayData.playerEntryToShow.displayName}
+                        </div>
+                      </div>
+
+                      {/* Score */}
+                      <div className="text-right shrink-0">
+                        <span className="text-lg font-bold font-mono text-accent">
+                          {displayData.playerEntryToShow.correctCount}
+                        </span>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
             </div>

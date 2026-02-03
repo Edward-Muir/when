@@ -74,6 +74,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     leaderboard,
     totalPlayers,
     rank,
+    playerEntry,
     fetchLeaderboard,
   } = useLeaderboard();
 
@@ -315,25 +316,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
                   correctly.
                 </div>
 
-                {/* Action buttons row */}
-                <div className="flex gap-2">
-                  {/* Leaderboard button */}
+                {/* Action buttons */}
+                <div className="space-y-2">
+                  <button
+                    onClick={handleShareDaily}
+                    className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  >
+                    <Share2 className="w-3.5 h-3.5" />
+                    Share
+                  </button>
                   <button
                     onClick={() => setIsLeaderboardOpen(true)}
-                    className="flex-1 py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                    className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
                     aria-label="View daily leaderboard"
                   >
                     <Trophy className="w-3.5 h-3.5" />
                     Leaderboard
-                  </button>
-
-                  {/* Share button */}
-                  <button
-                    onClick={handleShareDaily}
-                    className="flex-1 py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                  >
-                    <Share2 className="w-3.5 h-3.5" />
-                    Share
                   </button>
                 </div>
 
@@ -343,14 +341,24 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
                 </p>
               </div>
             ) : (
-              /* Play daily button */
-              <button
-                onClick={handleDailyStart}
-                className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-              >
-                <Play className="w-3.5 h-3.5" />
-                Play Daily
-              </button>
+              /* Play daily + Leaderboard buttons */
+              <div className="space-y-2">
+                <button
+                  onClick={handleDailyStart}
+                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                >
+                  <Play className="w-3.5 h-3.5" />
+                  Play Daily
+                </button>
+                <button
+                  onClick={() => setIsLeaderboardOpen(true)}
+                  className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  aria-label="View daily leaderboard"
+                >
+                  <Trophy className="w-3.5 h-3.5" />
+                  Leaderboard
+                </button>
+              </div>
             )}
           </div>
         </div>
@@ -396,6 +404,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         entries={leaderboard}
         totalPlayers={totalPlayers ?? 0}
         playerRank={rank}
+        playerEntry={playerEntry}
         isLoading={isLeaderboardLoading}
         error={leaderboardError}
       />
