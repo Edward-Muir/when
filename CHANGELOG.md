@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.3](https://github.com/Edward-Muir/when/compare/v0.4.2...v0.4.3) (2026-02-03)
+
+
+### Features
+
+* Add global leaderboard ([f3816db](https://github.com/Edward-Muir/when/commit/f3816dbd7cf41f103b87cd92c344ec849cdfad8a))
+* Add preview to internal tool ([d5c789a](https://github.com/Edward-Muir/when/commit/d5c789addd22c3db48daa7dbd9e35966b626d784))
+* Create internal tool for maintaining events ([5c6b090](https://github.com/Edward-Muir/when/commit/5c6b09005cd3417dd57504a487c364b1214929e8))
+
 ## [0.4.2](https://github.com/Edward-Muir/when/compare/v0.4.1...v0.4.2) (2026-01-25)
 
 
