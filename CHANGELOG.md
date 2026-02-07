@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.8](https://github.com/Edward-Muir/when/compare/v0.4.7...v0.4.8) (2026-02-07)
+
+
+### Bug Fixes
+
+* Fix generation ([dfb6342](https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754))
+
 ## [0.4.7](https://github.com/Edward-Muir/when/compare/v0.4.6...v0.4.7) (2026-02-07)
 
 
