@@ -2818,7 +2818,7 @@
     "year": 2021,
     "category": "exploration",
     "description": "NASA launched the most powerful space telescope ever built.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/330px-JWST_spacecraft_model_3.png",
     "image_width": 330,
     "image_height": 283,
@@ -2831,7 +2831,7 @@
     "year": 2021,
     "category": "exploration",
     "description": "NASA's Perseverance rover landed on Mars with the Ingenuity helicopter.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/330px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif",
     "image_width": 330,
     "image_height": 186,
@@ -2844,7 +2844,7 @@
     "year": 2021,
     "category": "exploration",
     "description": "Ingenuity became the first aircraft to fly on another planet.",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mars_helicopter_on_sol_46.png/330px-Mars_helicopter_on_sol_46.png",
     "image_width": 330,
     "image_height": 330,
@@ -3371,7 +3371,7 @@
     "year": 1957,
     "category": "exploration",
     "description": "Soviet dog Laika became the first animal to orbit Earth aboard Sputnik 2, proving life could survive in space.",
-    "difficulty": "easy",
+    "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/330px-Laika_%28Soviet_dog%29.jpg",
     "image_width": 330,
     "image_height": 249,
@@ -3437,8 +3437,10 @@
     "category": "exploration",
     "description": "Austrian skydiver Felix Baumgartner jumped from 128,000 feet, breaking the sound barrier during freefall.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg/330px-Felix_Baumgartner_Internationale_Sportnacht_Davos_2014_%283x4_cropped%29.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kittinger-jump.jpg/960px-Kittinger-jump.jpg",
     "wikipedia_views": 1300418,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Felix_Baumgartner"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Felix_Baumgartner",
+    "image_width": 960,
+    "image_height": 1219
   }
 ]

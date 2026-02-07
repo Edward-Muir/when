@@ -28,5 +28,35 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1973_oil_crisis",
     "_originalCategory": "diplomatic",
     "_deprecatedAt": "2026-02-07T22:04:21.464Z"
+  },
+  {
+    "name": "chernobyl",
+    "friendly_name": "Chernobyl Disaster",
+    "year": 1986,
+    "category": "disasters",
+    "description": "A nuclear reactor explosion caused the worst nuclear disaster in history.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/330px-IAEA_02790015_%285613115146%29.jpg",
+    "image_width": 330,
+    "image_height": 507,
+    "wikipedia_views": 4361855,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernobyl_disaster",
+    "_originalCategory": "disasters",
+    "_deprecatedAt": "2026-02-07T22:58:11.396Z"
+  },
+  {
+    "name": "stock-crash",
+    "friendly_name": "Stock Market Crash",
+    "year": 1929,
+    "category": "disasters",
+    "description": "The Wall Street crash triggered the Great Depression.",
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Stock_market_crash_%282020%29.svg/330px-Stock_market_crash_%282020%29.svg.png",
+    "image_width": 330,
+    "image_height": 205,
+    "wikipedia_views": 301994,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stock_market_crash",
+    "_originalCategory": "disasters",
+    "_deprecatedAt": "2026-02-07T22:58:23.758Z"
   }
 ]
