@@ -4,6 +4,16 @@ import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 const GAME_URL = 'https://www.play-when.com/';
 
 /**
+ * Format the leaderboard ranking line for share message
+ */
+function formatLeaderboardLine(rank: number): string {
+  if (rank === 1) {
+    return '🏆 #1 globally 👑';
+  }
+  return `🏆 #${rank} globally`;
+}
+
+/**
  * Generate emoji grid from placement history
  */
 export function generateEmojiGrid(placementHistory: boolean[]): string {
@@ -119,8 +129,16 @@ export async function shareDailyResult(
   date: string,
   theme: string,
   emojiGrid: string,
-  correctCount: number
+  correctCount: number,
+  leaderboardRank?: number
 ): Promise<boolean> {
-  const text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events\n\n${GAME_URL}`;
+  let text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events`;
+
+  // Add leaderboard ranking if available
+  if (leaderboardRank) {
+    text += `\n${formatLeaderboardLine(leaderboardRank)}`;
+  }
+
+  text += `\n\n${GAME_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }

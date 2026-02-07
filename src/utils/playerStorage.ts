@@ -15,6 +15,9 @@ export interface DailyResult {
   correctCount: number;
   totalAttempts: number;
   emojiGrid: string; // For display
+  // Leaderboard data (populated after submission)
+  leaderboardRank?: number;
+  leaderboardTotalPlayers?: number;
 }
 
 const DAILY_RESULT_KEY = 'when-daily-result';
@@ -215,5 +218,24 @@ export function markLeaderboardSubmitted(): void {
     localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getTodayDateString());
   } catch {
     console.warn('Failed to save leaderboard submission status');
+  }
+}
+
+/**
+ * Update today's daily result with leaderboard ranking data
+ */
+export function updateDailyResultWithLeaderboard(rank: number, totalPlayers: number): void {
+  try {
+    const result = getTodayResult();
+    if (result) {
+      const updated: DailyResult = {
+        ...result,
+        leaderboardRank: rank,
+        leaderboardTotalPlayers: totalPlayers,
+      };
+      localStorage.setItem(DAILY_RESULT_KEY, JSON.stringify(updated));
+    }
+  } catch {
+    console.warn('Failed to update daily result with leaderboard data');
   }
 }

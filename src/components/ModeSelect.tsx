@@ -20,7 +20,7 @@ import {
   getThemedCategories,
   getThemedEras,
 } from '../utils/dailyTheme';
-import { getTodayResult } from '../utils/playerStorage';
+import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { APP_VERSION } from '../version';
 import { useLeaderboard } from '../hooks/useLeaderboard';
@@ -83,6 +83,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     const today = new Date().toISOString().split('T')[0];
     fetchLeaderboard(today);
   }, [fetchLeaderboard]);
+
+  // Sync leaderboard data to localStorage when fetched (for returning users)
+  useEffect(() => {
+    if (rank && totalPlayers && todayResult) {
+      updateDailyResultWithLeaderboard(rank, totalPlayers);
+    }
+  }, [rank, totalPlayers, todayResult]);
 
   // Play mode settings
   const [isSuddenDeath, setIsSuddenDeath] = useState(true);
@@ -182,7 +189,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       todayResult.date,
       todayResult.theme,
       todayResult.emojiGrid,
-      todayResult.correctCount
+      todayResult.correctCount,
+      todayResult.leaderboardRank
     );
     if (showToast) {
       setShowShareToast(true);

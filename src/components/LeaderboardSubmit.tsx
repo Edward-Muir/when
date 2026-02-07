@@ -8,6 +8,7 @@ import {
   saveDisplayName,
   hasSubmittedToLeaderboard,
   markLeaderboardSubmitted,
+  updateDailyResultWithLeaderboard,
 } from '../utils/playerStorage';
 
 function generateRandomName(): string {
@@ -115,6 +116,13 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult }) =>
   useEffect(() => {
     setAlreadySubmitted(hasSubmittedToLeaderboard());
   }, []);
+
+  // Save leaderboard data to localStorage when rank is available
+  useEffect(() => {
+    if (rank && totalPlayers) {
+      updateDailyResultWithLeaderboard(rank, totalPlayers);
+    }
+  }, [rank, totalPlayers]);
 
   const handleSubmit = async () => {
     // Save name for future use
