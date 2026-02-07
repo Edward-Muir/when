@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.3](https://github.com/Edward-Muir/when/compare/v0.5.2...v0.5.3) (2026-02-07)
+
+
+### Features
+
+* Update more images, adjust difficulty ([7d0d050](https://github.com/Edward-Muir/when/commit/7d0d050931ded0e2c4ef24f8c65e1713b8d73640))
+
 ## [0.5.2](https://github.com/Edward-Muir/when/compare/v0.5.1...v0.5.2) (2026-02-07)
 
 
