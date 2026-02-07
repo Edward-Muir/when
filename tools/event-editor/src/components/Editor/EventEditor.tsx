@@ -47,7 +47,7 @@ export function EventEditor({
   isDeprecated,
 }: EventEditorProps) {
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto max-w-5xl">
       <EventNavigation
         currentIndex={currentIndex}
         totalCount={totalCount}
@@ -63,47 +63,55 @@ export function EventEditor({
         </div>
       )}
 
-      <EventPreview event={event} />
+      <div className="flex gap-6 items-start">
+        {/* Left column - Form, Metadata, Actions */}
+        <div className="min-w-0 flex-1">
+          <div className="rounded-lg border border-border bg-white p-6">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-lg font-semibold text-text">{event.friendly_name}</h2>
+              <span className="rounded bg-bg-secondary px-2 py-1 text-xs font-medium text-text-secondary">
+                {category}
+              </span>
+            </div>
 
-      <div className="rounded-lg border border-border bg-white p-6">
-        <div className="mb-4 flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-text">{event.friendly_name}</h2>
-          <span className="rounded bg-bg-secondary px-2 py-1 text-xs font-medium text-text-secondary">
-            {category}
-          </span>
+            <EventForm event={event} onUpdate={onUpdate} isDeprecated={isDeprecated} />
+          </div>
+
+          <div className="mt-4">
+            <MetadataPanel
+              event={event}
+              onUpdate={onUpdate}
+              metadata={metadata}
+              isDeprecated={isDeprecated}
+            />
+          </div>
+
+          {!isDeprecated && (
+            <div className="mt-4 flex gap-3">
+              <button
+                onClick={onChangeCategory}
+                className="flex items-center gap-2 rounded border border-border bg-white px-4 py-2 text-sm text-text transition-colors hover:bg-bg-secondary"
+              >
+                <FolderInput className="h-4 w-4" />
+                Change Category
+              </button>
+
+              <button
+                onClick={onDelete}
+                className="flex items-center gap-2 rounded border border-error bg-white px-4 py-2 text-sm text-error transition-colors hover:bg-error hover:text-white"
+              >
+                <Trash2 className="h-4 w-4" />
+                Delete Event
+              </button>
+            </div>
+          )}
         </div>
 
-        <EventForm event={event} onUpdate={onUpdate} isDeprecated={isDeprecated} />
-      </div>
-
-      <div className="mt-4">
-        <MetadataPanel
-          event={event}
-          onUpdate={onUpdate}
-          metadata={metadata}
-          isDeprecated={isDeprecated}
-        />
-      </div>
-
-      {!isDeprecated && (
-        <div className="mt-4 flex gap-3">
-          <button
-            onClick={onChangeCategory}
-            className="flex items-center gap-2 rounded border border-border bg-white px-4 py-2 text-sm text-text transition-colors hover:bg-bg-secondary"
-          >
-            <FolderInput className="h-4 w-4" />
-            Change Category
-          </button>
-
-          <button
-            onClick={onDelete}
-            className="flex items-center gap-2 rounded border border-error bg-white px-4 py-2 text-sm text-error transition-colors hover:bg-error hover:text-white"
-          >
-            <Trash2 className="h-4 w-4" />
-            Delete Event
-          </button>
+        {/* Right column - Sticky Preview */}
+        <div className="sticky top-6 w-[340px] flex-shrink-0">
+          <EventPreview event={event} />
         </div>
-      )}
+      </div>
     </div>
   );
 }

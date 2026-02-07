@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useEvents } from './hooks/useEvents';
 import { useMetadata } from './hooks/useMetadata';
 import { Sidebar } from './components/Sidebar/Sidebar';
@@ -7,7 +7,7 @@ import { TopBar } from './components/Navigation/TopBar';
 import { AddEventDialog } from './components/Dialogs/AddEventDialog';
 import { DeleteDialog } from './components/Dialogs/DeleteDialog';
 import { ChangeCategoryDialog } from './components/Dialogs/ChangeCategoryDialog';
-import type { Category } from './types';
+import type { Category, Difficulty } from './types';
 
 export default function App() {
   const events = useEvents();
@@ -17,6 +17,83 @@ export default function App() {
   const [showDeleteDialog, setShowDeleteDialog] = useState(false);
   const [showChangeCategoryDialog, setShowChangeCategoryDialog] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [yearRange, setYearRange] = useState<{ min: number | null; max: number | null }>({
+    min: null,
+    max: null,
+  });
+  const [difficultyFilter, setDifficultyFilter] = useState<Set<Difficulty>>(new Set());
+
+  // Compute filtered indices for the current category
+  const filteredIndices = useMemo(() => {
+    if (!events.eventsByCategory || !events.currentCategory) return [];
+
+    const categoryEvents = events.eventsByCategory[events.currentCategory] || [];
+    const query = searchQuery.trim().toLowerCase();
+    const hasSearchFilter = query.length > 0;
+    const hasYearFilter = yearRange.min !== null || yearRange.max !== null;
+    const hasDifficultyFilter = difficultyFilter.size > 0;
+
+    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter) {
+      return categoryEvents.map((_, i) => i);
+    }
+
+    const indices: number[] = [];
+    categoryEvents.forEach((e, i) => {
+      if (hasSearchFilter) {
+        const matchesSearch =
+          e.friendly_name.toLowerCase().includes(query) ||
+          e.name.toLowerCase().includes(query) ||
+          e.year.toString().includes(query);
+        if (!matchesSearch) return;
+      }
+      if (hasYearFilter) {
+        if (yearRange.min !== null && e.year < yearRange.min) return;
+        if (yearRange.max !== null && e.year > yearRange.max) return;
+      }
+      if (hasDifficultyFilter) {
+        if (!difficultyFilter.has(e.difficulty)) return;
+      }
+      indices.push(i);
+    });
+    return indices;
+  }, [events.eventsByCategory, events.currentCategory, searchQuery, yearRange, difficultyFilter]);
+
+  const filteredPosition = useMemo(() => {
+    const pos = filteredIndices.indexOf(events.currentIndex);
+    return pos >= 0 ? pos : -1;
+  }, [filteredIndices, events.currentIndex]);
+
+  const filteredNext = useCallback(() => {
+    const pos = filteredIndices.indexOf(events.currentIndex);
+    const nextPos = pos >= 0 ? pos + 1 : filteredIndices.findIndex((i) => i > events.currentIndex);
+    if (nextPos >= 0 && nextPos < filteredIndices.length) {
+      events.jumpToEvent(filteredIndices[nextPos]);
+    }
+  }, [filteredIndices, events]);
+
+  const filteredPrev = useCallback(() => {
+    const pos = filteredIndices.indexOf(events.currentIndex);
+    if (pos > 0) {
+      events.jumpToEvent(filteredIndices[pos - 1]);
+    } else if (pos < 0) {
+      // Current event isn't in filtered list, find the closest previous filtered event
+      for (let i = filteredIndices.length - 1; i >= 0; i--) {
+        if (filteredIndices[i] < events.currentIndex) {
+          events.jumpToEvent(filteredIndices[i]);
+          return;
+        }
+      }
+    }
+  }, [filteredIndices, events]);
+
+  const filteredJump = useCallback(
+    (position: number) => {
+      if (position >= 0 && position < filteredIndices.length) {
+        events.jumpToEvent(filteredIndices[position]);
+      }
+    },
+    [filteredIndices, events]
+  );
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -37,17 +114,17 @@ export default function App() {
       if (!isInput) {
         if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
           e.preventDefault();
-          events.prevEvent();
+          filteredPrev();
         } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
           e.preventDefault();
-          events.nextEvent();
+          filteredNext();
         }
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [events]);
+  }, [events, filteredPrev, filteredNext]);
 
   // Warn before leaving with unsaved changes
   useEffect(() => {
@@ -108,6 +185,10 @@ export default function App() {
           onAddEvent={() => setShowAddDialog(true)}
           searchQuery={searchQuery}
           pendingChanges={events.pendingChanges}
+          yearRange={yearRange}
+          onYearRangeChange={setYearRange}
+          difficultyFilter={difficultyFilter}
+          onDifficultyFilterChange={setDifficultyFilter}
         />
 
         <main className="flex-1 overflow-auto p-6">
@@ -115,12 +196,12 @@ export default function App() {
             <EventEditor
               event={events.currentEvent}
               category={events.currentCategory!}
-              currentIndex={events.currentIndex}
-              totalCount={events.currentCategoryCount}
+              currentIndex={filteredPosition >= 0 ? filteredPosition : 0}
+              totalCount={filteredIndices.length}
               onUpdate={events.updateCurrentEvent}
-              onPrev={events.prevEvent}
-              onNext={events.nextEvent}
-              onJump={events.jumpToEvent}
+              onPrev={filteredPrev}
+              onNext={filteredNext}
+              onJump={filteredJump}
               onDelete={() => setShowDeleteDialog(true)}
               onChangeCategory={() => setShowChangeCategoryDialog(true)}
               metadata={metadata}

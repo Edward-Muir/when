@@ -27,7 +27,7 @@ export function EventPreview({ event }: EventPreviewProps) {
       <p className="mb-2 text-xs font-medium uppercase tracking-wide text-text-secondary">
         Preview
       </p>
-      <div className="mx-auto max-w-[340px] overflow-hidden rounded-lg border border-border bg-white shadow-sm">
+      <div className="max-w-[340px] overflow-hidden rounded-lg border border-border bg-white shadow-sm">
         {/* Header with title + year */}
         <div className="border-b border-border px-4 py-3">
           <h3 className="font-display text-lg font-semibold leading-tight text-text">

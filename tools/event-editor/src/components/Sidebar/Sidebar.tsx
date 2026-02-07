@@ -1,6 +1,12 @@
 import { useState, useMemo } from 'react';
 import { ChevronDown, ChevronRight, Plus, Folder, FolderOpen, Archive } from 'lucide-react';
-import type { EventsByCategory, CategoryOrDeprecated, HistoricalEvent } from '../../types';
+import type {
+  EventsByCategory,
+  CategoryOrDeprecated,
+  HistoricalEvent,
+  Difficulty,
+} from '../../types';
+import { ALL_DIFFICULTIES } from '../../types';
 
 interface SidebarProps {
   eventsByCategory: EventsByCategory | null;
@@ -10,6 +16,10 @@ interface SidebarProps {
   onAddEvent: () => void;
   searchQuery: string;
   pendingChanges: Map<string, HistoricalEvent>;
+  yearRange: { min: number | null; max: number | null };
+  onYearRangeChange: (range: { min: number | null; max: number | null }) => void;
+  difficultyFilter: Set<Difficulty>;
+  onDifficultyFilterChange: (filter: Set<Difficulty>) => void;
 }
 
 const CATEGORY_ORDER: CategoryOrDeprecated[] = [
@@ -40,6 +50,10 @@ export function Sidebar({
   onAddEvent,
   searchQuery,
   pendingChanges,
+  yearRange,
+  onYearRangeChange,
+  difficultyFilter,
+  onDifficultyFilterChange,
 }: SidebarProps) {
   const [expandedCategories, setExpandedCategories] = useState<Set<CategoryOrDeprecated>>(
     new Set(['conflict'])
@@ -57,13 +71,25 @@ export function Sidebar({
     });
   };
 
-  // Filter events by search query
+  const hasAnyFilter =
+    searchQuery.trim().length > 0 ||
+    yearRange.min !== null ||
+    yearRange.max !== null ||
+    difficultyFilter.size > 0;
+
+  // Filter events by search query, year range, and difficulty
   const filteredEventsByCategory = useMemo(() => {
-    if (!eventsByCategory || !searchQuery.trim()) {
+    if (!eventsByCategory) return eventsByCategory;
+
+    const query = searchQuery.trim().toLowerCase();
+    const hasSearchFilter = query.length > 0;
+    const hasYearFilter = yearRange.min !== null || yearRange.max !== null;
+    const hasDifficultyFilter = difficultyFilter.size > 0;
+
+    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter) {
       return eventsByCategory;
     }
 
-    const query = searchQuery.toLowerCase();
     const filtered: EventsByCategory = {
       conflict: [],
       cultural: [],
@@ -77,19 +103,30 @@ export function Sidebar({
     for (const category of CATEGORY_ORDER) {
       const events = eventsByCategory[category];
       if (events) {
-        const filteredEvents = events.filter(
-          (e) =>
-            e.friendly_name.toLowerCase().includes(query) ||
-            e.name.toLowerCase().includes(query) ||
-            e.year.toString().includes(query)
-        );
+        const filteredEvents = events.filter((e) => {
+          if (hasSearchFilter) {
+            const matchesSearch =
+              e.friendly_name.toLowerCase().includes(query) ||
+              e.name.toLowerCase().includes(query) ||
+              e.year.toString().includes(query);
+            if (!matchesSearch) return false;
+          }
+          if (hasYearFilter) {
+            if (yearRange.min !== null && e.year < yearRange.min) return false;
+            if (yearRange.max !== null && e.year > yearRange.max) return false;
+          }
+          if (hasDifficultyFilter) {
+            if (!difficultyFilter.has(e.difficulty)) return false;
+          }
+          return true;
+        });
         // Use type assertion to handle the union type
         (filtered as unknown as Record<string, HistoricalEvent[]>)[category] = filteredEvents;
       }
     }
 
     return filtered;
-  }, [eventsByCategory, searchQuery]);
+  }, [eventsByCategory, searchQuery, yearRange, difficultyFilter]);
 
   if (!eventsByCategory) {
     return (
@@ -110,6 +147,83 @@ export function Sidebar({
         >
           <Plus className="h-4 w-4" />
         </button>
+      </div>
+
+      {/* Filters */}
+      <div className="space-y-3 border-b border-border p-3">
+        <div>
+          <label className="mb-1 block text-xs font-medium text-text-secondary">Year Range</label>
+          <div className="flex items-center gap-1">
+            <input
+              type="number"
+              placeholder="Min"
+              value={yearRange.min ?? ''}
+              onChange={(e) =>
+                onYearRangeChange({
+                  ...yearRange,
+                  min: e.target.value ? parseInt(e.target.value, 10) : null,
+                })
+              }
+              className="w-full rounded border border-border bg-white px-2 py-1 text-xs text-text placeholder:text-text-secondary focus:border-accent focus:outline-none"
+            />
+            <span className="flex-shrink-0 text-xs text-text-secondary">to</span>
+            <input
+              type="number"
+              placeholder="Max"
+              value={yearRange.max ?? ''}
+              onChange={(e) =>
+                onYearRangeChange({
+                  ...yearRange,
+                  max: e.target.value ? parseInt(e.target.value, 10) : null,
+                })
+              }
+              className="w-full rounded border border-border bg-white px-2 py-1 text-xs text-text placeholder:text-text-secondary focus:border-accent focus:outline-none"
+            />
+          </div>
+          <p className="mt-0.5 text-[10px] text-text-secondary">Negative = BCE (e.g. -500)</p>
+        </div>
+
+        <div>
+          <label className="mb-1 block text-xs font-medium text-text-secondary">Difficulty</label>
+          <div className="flex flex-wrap gap-1">
+            {ALL_DIFFICULTIES.map((diff) => {
+              const isActive = difficultyFilter.has(diff);
+              return (
+                <button
+                  key={diff}
+                  onClick={() => {
+                    const next = new Set(difficultyFilter);
+                    if (isActive) {
+                      next.delete(diff);
+                    } else {
+                      next.add(diff);
+                    }
+                    onDifficultyFilterChange(next);
+                  }}
+                  className={`rounded px-2 py-0.5 text-xs transition-colors ${
+                    isActive
+                      ? 'bg-accent text-white'
+                      : 'bg-bg-secondary text-text-secondary hover:bg-border'
+                  }`}
+                >
+                  {diff.charAt(0).toUpperCase() + diff.slice(1).replace('-', ' ')}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {(yearRange.min !== null || yearRange.max !== null || difficultyFilter.size > 0) && (
+          <button
+            onClick={() => {
+              onYearRangeChange({ min: null, max: null });
+              onDifficultyFilterChange(new Set());
+            }}
+            className="text-xs text-accent hover:text-accent-hover"
+          >
+            Clear filters
+          </button>
+        )}
       </div>
 
       <div className="flex-1 overflow-auto">
@@ -136,7 +250,7 @@ export function Sidebar({
                   {CATEGORY_LABELS[category]}
                 </span>
                 <span className="text-xs text-text-secondary">
-                  {searchQuery
+                  {hasAnyFilter
                     ? `${events.length}/${originalEvents.length}`
                     : originalEvents.length}
                 </span>
@@ -146,7 +260,7 @@ export function Sidebar({
                 <div className="max-h-64 overflow-auto bg-bg">
                   {events.length === 0 ? (
                     <div className="px-3 py-2 text-xs text-text-secondary">
-                      {searchQuery ? 'No matches' : 'No events'}
+                      {hasAnyFilter ? 'No matches' : 'No events'}
                     </div>
                   ) : (
                     events.map((event) => {
