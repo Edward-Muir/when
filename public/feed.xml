@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Feb 2026 20:06:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 20:44:20 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.5.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.5.1</guid>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add description to incorrect card (<a href="https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839">3bc2cf0</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Stop accidental leaderboard dismissal (<a href="https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5">19f0dab</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.5.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.4.1</guid>
       <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Correct ESlint error (<a href="https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1">e6cdb4d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.4.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.4.0</guid>
-      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Only Easy and Medium events included in daily challenge by default (<a href="https://github.com/Edward-Muir/when/commit/60622f21ba96df7b8191117e7c2054634110e858">60622f2</a>)</li> <li>Update event difficulties. Exclude very hard events by default (<a href="https://github.com/Edward-Muir/when/commit/50172be35d6733a455b3ca01d348276c871b7c3d">50172be</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Prune evenys (<a href="https://github.com/Edward-Muir/when/commit/640142e181a7a2cfb99ff64b23df25fb569144d2">640142e</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

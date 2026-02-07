@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.1](https://github.com/Edward-Muir/when/compare/v0.5.0...v0.5.1) (2026-02-07)
+
+
+### Features
+
+* Add description to incorrect card ([3bc2cf0](https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839))
+
+
+### Bug Fixes
+
+* Stop accidental leaderboard dismissal ([19f0dab](https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5))
+
 ## [0.5.0](https://github.com/Edward-Muir/when/compare/v0.4.8...v0.5.0) (2026-02-07)
 
 
