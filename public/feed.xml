@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Feb 2026 20:44:20 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 21:54:55 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.5.2</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.5.2</guid>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add Streak indicator and animations (<a href="https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc">d02077a</a>)</li> <li>Add Streak indicator and animations (<a href="https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4">9042fd9</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.5.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.4.2</guid>
       <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Make update a pop up instead of small button (<a href="https://github.com/Edward-Muir/when/commit/6af2d07db549c60d7871a529b0124a9cb82f2b6d">6af2d07</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.4.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.4.1</guid>
-      <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Correct ESlint error (<a href="https://github.com/Edward-Muir/when/commit/e6cdb4dfe0bdc4e2df52f58c88f52c4dd4316ee1">e6cdb4d</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

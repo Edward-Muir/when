@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.2](https://github.com/Edward-Muir/when/compare/v0.5.1...v0.5.2) (2026-02-07)
+
+
+### Features
+
+* Add Streak indicator and animations ([d02077a](https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc))
+* Add Streak indicator and animations ([9042fd9](https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4))
+
 ## [0.5.1](https://github.com/Edward-Muir/when/compare/v0.5.0...v0.5.1) (2026-02-07)
 
 
