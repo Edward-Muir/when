@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.7](https://github.com/Edward-Muir/when/compare/v0.4.6...v0.4.7) (2026-02-07)
+
+
+### Bug Fixes
+
+* Fix build ([21b2171](https://github.com/Edward-Muir/when/commit/21b21714a016edb659dac199bc0453a01867ec7d))
+
 ## [0.4.6](https://github.com/Edward-Muir/when/compare/v0.4.5...v0.4.6) (2026-02-07)
 
 
