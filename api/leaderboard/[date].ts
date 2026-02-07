@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
+import { ensureBotsExist } from './botGeneration';
 
 const redis = Redis.fromEnv();
 
@@ -35,6 +36,9 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
       return res.status(400).json({ error: 'Invalid date format. Use YYYY-MM-DD' });
     }
+
+    // Ensure bots exist for this date (lazy initialization)
+    await ensureBotsExist(redis, date);
 
     const leaderboardKey = `leaderboard:${date}`;
 
