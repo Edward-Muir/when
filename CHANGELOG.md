@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.0](https://github.com/Edward-Muir/when/compare/v0.4.8...v0.5.0) (2026-02-07)
+
+
+### Features
+
+* Use react router, make challenge share directly to game ([9d767b1](https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226))
+
 ## [0.4.8](https://github.com/Edward-Muir/when/compare/v0.4.7...v0.4.8) (2026-02-07)
 
 
