@@ -22,6 +22,7 @@ function generateRandomName(): string {
 
 interface LeaderboardSubmitProps {
   dailyResult: DailyResult;
+  onSubmitted?: () => void;
 }
 
 function getMedalEmoji(rank: number): string {
@@ -91,7 +92,7 @@ function LeaderboardPreview({
   );
 }
 
-const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult }) => {
+const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSubmitted }) => {
   const [name, setName] = useState(() => getDisplayName() || generateRandomName());
   const [alreadySubmitted, setAlreadySubmitted] = useState(hasSubmittedToLeaderboard());
 
@@ -132,6 +133,7 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult }) =>
     if (success) {
       markLeaderboardSubmitted();
       setAlreadySubmitted(true);
+      onSubmitted?.();
       // Refresh leaderboard to show updated entries
       fetchLeaderboard(dailyResult.date);
     }

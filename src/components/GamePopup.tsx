@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Check, X, Trophy } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { DailyResult } from '../utils/playerStorage';
+import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
 
@@ -121,7 +121,13 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
 }
 
 // Sub-component for game over content (stats only, header moved out)
-function GameOverContent({ gameState }: { gameState: WhenGameState }) {
+function GameOverContent({
+  gameState,
+  onLeaderboardSubmit,
+}: {
+  gameState: WhenGameState;
+  onLeaderboardSubmit?: () => void;
+}) {
   const { winners, players, gameMode, placementHistory, lastConfig } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
@@ -222,9 +228,18 @@ function GameOverContent({ gameState }: { gameState: WhenGameState }) {
       </div>
 
       {/* Leaderboard submit section for daily mode */}
-      {dailyResult && <LeaderboardSubmit dailyResult={dailyResult} />}
+      {dailyResult && (
+        <LeaderboardSubmit dailyResult={dailyResult} onSubmitted={onLeaderboardSubmit} />
+      )}
     </div>
   );
+}
+
+// Hook to gate backdrop dismissal for daily leaderboard submission
+function useBackdropDismiss(isDaily: boolean) {
+  const [submitted, setSubmitted] = useState(hasSubmittedToLeaderboard);
+  const canBackdropDismiss = !isDaily || submitted;
+  return { canBackdropDismiss, onLeaderboardSubmit: () => setSubmitted(true) };
 }
 
 const GamePopup: React.FC<GamePopupProps> = ({
@@ -237,6 +252,9 @@ const GamePopup: React.FC<GamePopupProps> = ({
 }) => {
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
+  const { canBackdropDismiss, onLeaderboardSubmit } = useBackdropDismiss(
+    isGameOver && gameState?.gameMode === 'daily'
+  );
 
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
@@ -259,7 +277,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
       {isVisible && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25"
-          onClick={onDismiss}
+          onClick={canBackdropDismiss ? onDismiss : undefined}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -276,7 +294,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
             {isGameOver && gameState ? (
               <>
                 <GameOverHeader gameState={gameState} />
-                <GameOverContent gameState={gameState} />
+                <GameOverContent gameState={gameState} onLeaderboardSubmit={onLeaderboardSubmit} />
               </>
             ) : (
               event && (
