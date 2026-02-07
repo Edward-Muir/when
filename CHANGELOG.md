@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.4.6](https://github.com/Edward-Muir/when/compare/v0.4.5...v0.4.6) (2026-02-07)
+
+
+### Features
+
+* Engagement ([b541c9e](https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9))
+* Share shows global rank ([23d077c](https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404))
+
 ## [0.4.5](https://github.com/Edward-Muir/when/compare/v0.4.4...v0.4.5) (2026-02-03)
 
 

@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Feb 2026 23:18:53 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 13:50:24 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.4.6</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.4.6</guid>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Engagement (<a href="https://github.com/Edward-Muir/when/commit/b541c9ed2663a4e90a312e72fa96efafdc517de9">b541c9e</a>)</li> <li>Share shows global rank (<a href="https://github.com/Edward-Muir/when/commit/23d077cb74f9acb85294a24c377655e8b2383404">23d077c</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.4.5</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.3.11</guid>
       <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix eslint security warning for use of roll... (<a href="https://github.com/Edward-Muir/when/commit/2b1ecb3e17db9634e5f2084728770aa8a9931018">2b1ecb3</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.3.10</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.3.10</guid>
-      <pubDate>Wed, 21 Jan 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Make daily challenge category based only not era based (<a href="https://github.com/Edward-Muir/when/commit/833f46fecd5c13edac223a6b46fdf4dfbc1598ae">833f46f</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
