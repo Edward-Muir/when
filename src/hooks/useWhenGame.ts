@@ -109,7 +109,14 @@ export function useWhenGame(): UseWhenGameReturn {
         bestStreak: state.bestStreak > 1 ? state.bestStreak : undefined,
       });
     }
-  }, [state.phase, state.gameMode, state.lastConfig, state.winners, state.placementHistory]);
+  }, [
+    state.phase,
+    state.gameMode,
+    state.lastConfig,
+    state.winners,
+    state.placementHistory,
+    state.bestStreak,
+  ]);
 
   const startGame = useCallback(
     (config: GameConfig) => {

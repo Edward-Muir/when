@@ -102,11 +102,16 @@ const RIPPLE_STAGGER_S = 0.2; // 100ms stagger per card distance
 const BASE_Y_OFFSET = 6; // Push DOWN initially (impact effect)
 const HALF_LIFE_CARDS = 1.0; // Amplitude halves every 1.25 card distances
 
-const GLOW_CLASS_MAP: Record<GlowIntensity, string> = {
-  normal: 'animate-success-glow',
-  bright: 'animate-success-glow-bright',
-  golden: 'animate-success-glow-golden',
-};
+function getGlowClass(intensity: GlowIntensity): string {
+  switch (intensity) {
+    case 'bright':
+      return 'animate-success-glow-bright';
+    case 'golden':
+      return 'animate-success-glow-golden';
+    default:
+      return 'animate-success-glow';
+  }
+}
 
 // Compute animation states based on props (excludes ripple - handled separately with useAnimate)
 function useEventAnimations(
@@ -123,7 +128,7 @@ function useEventAnimations(
   const cardAnimationClass =
     isAnimating && isFlashPhase
       ? animationSuccess
-        ? GLOW_CLASS_MAP[glowIntensity]
+        ? getGlowClass(glowIntensity)
         : 'animate-error-pulse'
       : '';
 
@@ -190,7 +195,7 @@ function useRippleAnimation(
       });
     }
     // rippleTrigger is the key dependency - it changes each time a new ripple starts
-  }, [rippleTrigger, rippleDistance, animate, scope, shouldReduceMotion]);
+  }, [rippleTrigger, rippleDistance, animate, scope, shouldReduceMotion, amplitudeMultiplier]);
 
   return scope;
 }
