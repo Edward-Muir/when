@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.5](https://github.com/Edward-Muir/when/compare/v0.5.4...v0.5.5) (2026-02-07)
+
+
+### Features
+
+* Adjusting events ([9f325cd](https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff))
+
 ## [0.5.4](https://github.com/Edward-Muir/when/compare/v0.5.3...v0.5.4) (2026-02-07)
 
 
