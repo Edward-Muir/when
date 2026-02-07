@@ -54,6 +54,25 @@ const LoadingState: React.FC = () => (
   </motion.div>
 );
 
+// Helper function to get default hand size based on player count
+const getDefaultHandSize = (count: number): number => {
+  switch (count) {
+    case 1:
+      return 7;
+    case 2:
+      return 6;
+    case 3:
+      return 5;
+    case 4:
+      return 4;
+    case 5:
+    case 6:
+      return 3;
+    default:
+      return 5;
+  }
+};
+
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
   onViewTimeline,
@@ -111,25 +130,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   // Sudden death hand size (1-7 cards, acts as "lives")
   const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(5);
-
-  // Update default hand size when player count changes
-  const getDefaultHandSize = (count: number): number => {
-    switch (count) {
-      case 1:
-        return 7;
-      case 2:
-        return 6;
-      case 3:
-        return 5;
-      case 4:
-        return 4;
-      case 5:
-      case 6:
-        return 3;
-      default:
-        return 5;
-    }
-  };
 
   const handlePlayerCountChange = (count: number) => {
     setPlayerCount(count);
