@@ -108,6 +108,10 @@ export interface WhenGameState {
   roundNumber: number;
   winners: Player[];
   activePlayersAtRoundStart: number;
+
+  // Streak tracking (consecutive correct placements)
+  currentStreak: number;
+  bestStreak: number;
 }
 
 export interface EventManifest {

@@ -140,18 +140,52 @@ input,
 /* Success glow animation */
 @keyframes successGlow {
   0% {
-    box-shadow: 0 0 0 0 rgba(106, 170, 100, 0.7);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 70%, transparent);
   }
   50% {
-    box-shadow: 0 0 20px 10px rgba(106, 170, 100, 0.4);
+    box-shadow: 0 0 20px 10px color-mix(in srgb, var(--color-success) 40%, transparent);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(106, 170, 100, 0);
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 0%, transparent);
   }
 }
 
 .animate-success-glow {
   animation: successGlow 0.6s ease-out;
+}
+
+/* Streak tier 1: brighter green glow */
+@keyframes successGlowBright {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 80%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 25px 12px color-mix(in srgb, var(--color-success) 50%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 0%, transparent);
+  }
+}
+
+.animate-success-glow-bright {
+  animation: successGlowBright 0.6s ease-out;
+}
+
+/* Streak tier 2+: golden glow */
+@keyframes successGlowGolden {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 80%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 30px 15px color-mix(in srgb, var(--color-accent) 50%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 0%, transparent);
+  }
+}
+
+.animate-success-glow-golden {
+  animation: successGlowGolden 0.6s ease-out;
 }
 
 /* Error shake and glow */
@@ -275,11 +309,46 @@ input,
   animation: shake-heavy 0.4s ease-out;
 }
 
+/* Streak bolt icon animations */
+@keyframes streakPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.animate-streak-pulse {
+  animation: streakPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes streakGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--color-accent) 60%, transparent));
+  }
+}
+
+.animate-streak-glow {
+  animation: streakGlow 1.2s ease-in-out infinite;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-shake-light,
   .animate-shake-medium,
-  .animate-shake-heavy {
+  .animate-shake-heavy,
+  .animate-success-glow-bright,
+  .animate-success-glow-golden,
+  .animate-streak-pulse,
+  .animate-streak-glow {
     animation: none;
   }
 }

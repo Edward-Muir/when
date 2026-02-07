@@ -15,6 +15,7 @@ export interface DailyResult {
   correctCount: number;
   totalAttempts: number;
   emojiGrid: string; // For display
+  bestStreak?: number; // Best consecutive correct placements
   // Leaderboard data (populated after submission)
   leaderboardRank?: number;
   leaderboardTotalPlayers?: number;

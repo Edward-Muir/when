@@ -128,7 +128,7 @@ function GameOverContent({
   gameState: WhenGameState;
   onLeaderboardSubmit?: () => void;
 }) {
-  const { winners, players, gameMode, placementHistory, lastConfig } = gameState;
+  const { winners, players, gameMode, placementHistory, lastConfig, bestStreak } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
   const isSuddenDeath = gameMode === 'suddenDeath' || gameMode === 'daily';
@@ -195,6 +195,9 @@ function GameOverContent({
                 </>
               )}
             </p>
+            {bestStreak >= 2 && (
+              <p className="text-text-muted text-sm mt-1 font-body">Best streak: {bestStreak}x</p>
+            )}
             {isSuddenDeath && getEncouragingMessage(getPlayerStats(players[0]).correct) && (
               <p className="text-accent font-medium mt-2">
                 {getEncouragingMessage(getPlayerStats(players[0]).correct)}

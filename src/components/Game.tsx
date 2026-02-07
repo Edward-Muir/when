@@ -29,7 +29,7 @@ import TopBar from './TopBar';
 import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
-import { getTimelineHighScore } from '../utils/playerStorage';
+import { getStreakFeedback } from '../utils/streakFeedback';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
@@ -117,6 +117,9 @@ const Game: React.FC<GameProps> = ({
   // Track previous placement result to detect changes
   const prevPlacementRef = useRef(state.lastPlacementResult);
 
+  // Capture streak feedback config at time of placement for confetti/haptics
+  const streakFeedbackRef = useRef(getStreakFeedback(0));
+
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
@@ -156,9 +159,14 @@ const Game: React.FC<GameProps> = ({
   useEffect(() => {
     if (state.lastPlacementResult && state.lastPlacementResult !== prevPlacementRef.current) {
       if (state.lastPlacementResult.success) {
+        // Capture streak feedback for this placement
+        streakFeedbackRef.current = getStreakFeedback(state.currentStreak);
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 2000);
-        haptics.success();
+        // Use streak-based haptic pattern
+        if (navigator.vibrate) {
+          navigator.vibrate(streakFeedbackRef.current.hapticPattern);
+        }
       } else {
         triggerShake('medium');
         haptics.error();
@@ -167,7 +175,7 @@ const Game: React.FC<GameProps> = ({
       setTimeout(() => setNewEventName(undefined), 1000);
     }
     prevPlacementRef.current = state.lastPlacementResult;
-  }, [state.lastPlacementResult, haptics, triggerShake]);
+  }, [state.lastPlacementResult, state.currentStreak, haptics, triggerShake]);
 
   // Show game over popup when game ends
   useEffect(() => {
@@ -240,7 +248,12 @@ const Game: React.FC<GameProps> = ({
 
           {showConfetti && (
             <div className="fixed top-1/4 left-1/2 -translate-x-1/2 z-50">
-              <ConfettiExplosion force={0.6} duration={2200} particleCount={50} width={300} />
+              <ConfettiExplosion
+                force={streakFeedbackRef.current.confettiForce}
+                duration={streakFeedbackRef.current.confettiDuration}
+                particleCount={streakFeedbackRef.current.confettiParticles}
+                width={streakFeedbackRef.current.confettiWidth}
+              />
             </div>
           )}
 
@@ -256,6 +269,7 @@ const Game: React.FC<GameProps> = ({
               isOverTimeline={dragState.isOverTimeline}
               lastPlacementResult={state.lastPlacementResult}
               animationPhase={state.animationPhase}
+              currentStreak={state.currentStreak}
             />
           </div>
 
@@ -284,6 +298,7 @@ const Game: React.FC<GameProps> = ({
                     timelineLength={state.timeline.length}
                     gameMode={state.gameMode}
                     onStatsClick={() => setShowStatsPopup(true)}
+                    currentStreak={state.currentStreak}
                   />
                 </div>
 
@@ -328,7 +343,7 @@ const Game: React.FC<GameProps> = ({
             isOpen={showStatsPopup}
             cardsInHand={currentPlayer?.hand.length ?? 0}
             timelineLength={state.timeline.length}
-            highScore={getTimelineHighScore()}
+            currentStreak={state.currentStreak}
             onDismiss={() => setShowStatsPopup(false)}
           />
 

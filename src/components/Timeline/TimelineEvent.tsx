@@ -3,6 +3,7 @@ import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase, Category } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
+import { type GlowIntensity } from '../../utils/streakFeedback';
 
 // Export ripple duration for Timeline.tsx to use
 export const RIPPLE_DURATION_MS = 2000;
@@ -20,6 +21,10 @@ interface TimelineEventProps {
   rippleDistance?: number;
   // Unique ID to trigger ripple animation (timestamp)
   rippleTrigger?: number;
+  // Streak-aware glow intensity
+  glowIntensity?: GlowIntensity;
+  // Streak-aware ripple amplitude multiplier
+  rippleAmplitudeMultiplier?: number;
 }
 
 // Extracted image section to reduce component complexity
@@ -97,21 +102,28 @@ const RIPPLE_STAGGER_S = 0.2; // 100ms stagger per card distance
 const BASE_Y_OFFSET = 6; // Push DOWN initially (impact effect)
 const HALF_LIFE_CARDS = 1.0; // Amplitude halves every 1.25 card distances
 
+const GLOW_CLASS_MAP: Record<GlowIntensity, string> = {
+  normal: 'animate-success-glow',
+  bright: 'animate-success-glow-bright',
+  golden: 'animate-success-glow-golden',
+};
+
 // Compute animation states based on props (excludes ripple - handled separately with useAnimate)
 function useEventAnimations(
   isAnimating: boolean,
   animationSuccess: boolean | undefined,
   animationPhase: AnimationPhase | undefined,
-  shouldReduceMotion: boolean | null
+  shouldReduceMotion: boolean | null,
+  glowIntensity: GlowIntensity = 'normal'
 ) {
   const isFlashPhase = animationPhase === 'flash';
   const isMovingPhase = animationPhase === 'moving';
 
-  // Card glow class
+  // Card glow class - use streak-aware glow intensity
   const cardAnimationClass =
     isAnimating && isFlashPhase
       ? animationSuccess
-        ? 'animate-success-glow'
+        ? GLOW_CLASS_MAP[glowIntensity]
         : 'animate-error-pulse'
       : '';
 
@@ -136,7 +148,8 @@ function useEventAnimations(
 function useRippleAnimation(
   rippleDistance: number | undefined,
   rippleTrigger: number | undefined,
-  shouldReduceMotion: boolean | null
+  shouldReduceMotion: boolean | null,
+  amplitudeMultiplier: number = 1.0
 ) {
   const [scope, animate] = useAnimate();
 
@@ -149,7 +162,7 @@ function useRippleAnimation(
     ) {
       // Exponential decay: amplitude halves every HALF_LIFE_CARDS distance
       const decayFactor = Math.pow(0.5, (rippleDistance - 1) / HALF_LIFE_CARDS);
-      const yOffset = BASE_Y_OFFSET * decayFactor;
+      const yOffset = BASE_Y_OFFSET * decayFactor * amplitudeMultiplier;
       const delay = rippleDistance * RIPPLE_STAGGER_S;
 
       // Two-phase animation: quick push down, then spring back with oscillations
@@ -192,13 +205,26 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   animationPhase,
   rippleDistance,
   rippleTrigger,
+  glowIntensity,
+  rippleAmplitudeMultiplier,
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const { cardAnimationClass, isSuccessAnimation, isErrorAnimation, shouldPopYear, isMovingPhase } =
-    useEventAnimations(isAnimating, animationSuccess, animationPhase, shouldReduceMotion);
+    useEventAnimations(
+      isAnimating,
+      animationSuccess,
+      animationPhase,
+      shouldReduceMotion,
+      glowIntensity
+    );
 
   // Imperative ripple animation - triggers once and self-completes
-  const rippleScope = useRippleAnimation(rippleDistance, rippleTrigger, shouldReduceMotion);
+  const rippleScope = useRippleAnimation(
+    rippleDistance,
+    rippleTrigger,
+    shouldReduceMotion,
+    rippleAmplitudeMultiplier
+  );
 
   return (
     <motion.div

@@ -12,7 +12,7 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
-import { saveDailyResult, saveTimelineHighScore } from '../utils/playerStorage';
+import { saveDailyResult } from '../utils/playerStorage';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
@@ -66,6 +66,8 @@ const initialState: WhenGameState = {
   roundNumber: 1,
   winners: [],
   activePlayersAtRoundStart: 0,
+  currentStreak: 0,
+  bestStreak: 0,
 };
 
 // Pending state for popup - stored outside of WhenGameState to avoid circular updates
@@ -104,16 +106,10 @@ export function useWhenGame(): UseWhenGameReturn {
         correctCount: state.placementHistory.filter((p) => p).length,
         totalAttempts: state.placementHistory.length,
         emojiGrid: generateEmojiGrid(state.placementHistory),
+        bestStreak: state.bestStreak > 1 ? state.bestStreak : undefined,
       });
     }
   }, [state.phase, state.gameMode, state.lastConfig, state.winners, state.placementHistory]);
-
-  // Save high score for single-player modes
-  useEffect(() => {
-    if (state.phase === 'gameOver' && state.players.length === 1) {
-      saveTimelineHighScore(state.timeline.length);
-    }
-  }, [state.phase, state.players.length, state.timeline.length]);
 
   const startGame = useCallback(
     (config: GameConfig) => {
@@ -179,6 +175,8 @@ export function useWhenGame(): UseWhenGameReturn {
         animationPhase: null,
         lastConfig: config,
         activePlayersAtRoundStart: playerCount,
+        currentStreak: 0,
+        bestStreak: 0,
       });
     },
     [allEvents]
@@ -220,6 +218,8 @@ export function useWhenGame(): UseWhenGameReturn {
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, true],
           lastPlacementResult: result,
+          currentStreak: prev.currentStreak + 1,
+          bestStreak: Math.max(prev.bestStreak, prev.currentStreak + 1),
         }));
 
         // 5a. After flash animation, finalize correct placement
@@ -280,6 +280,7 @@ export function useWhenGame(): UseWhenGameReturn {
           animationPhase: 'flash',
           placementHistory: [...prev.placementHistory, false],
           lastPlacementResult: result,
+          currentStreak: 0,
         }));
 
         // 5b. After red flash, remove card from timeline

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Ruler, Trophy, Layers } from 'lucide-react';
+import { Ruler, Zap, Layers } from 'lucide-react';
 
 interface StatsPopupProps {
   isOpen: boolean;
   cardsInHand: number;
   timelineLength: number;
-  highScore: number;
+  currentStreak: number;
   onDismiss: () => void;
 }
 
@@ -14,7 +14,7 @@ const StatsPopup: React.FC<StatsPopupProps> = ({
   isOpen,
   cardsInHand,
   timelineLength,
-  highScore,
+  currentStreak,
   onDismiss,
 }) => {
   useEffect(() => {
@@ -75,16 +75,14 @@ const StatsPopup: React.FC<StatsPopupProps> = ({
                 </div>
               </div>
 
-              {/* High score */}
+              {/* Best streak */}
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-lg bg-bg flex items-center justify-center">
-                  <Trophy className="w-5 h-5 text-text-muted" />
+                  <Zap className="w-5 h-5 text-text-muted" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-2xl font-bold font-mono text-text">{highScore}</div>
-                  <div className="text-sm text-text-muted font-body">
-                    Your longest timeline ever
-                  </div>
+                  <div className="text-2xl font-bold font-mono text-text">{currentStreak}</div>
+                  <div className="text-sm text-text-muted font-body">Current streak</div>
                 </div>
               </div>
             </div>

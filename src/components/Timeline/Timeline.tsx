@@ -3,6 +3,7 @@ import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
 import TimelineEvent, { RIPPLE_DURATION_MS } from './TimelineEvent';
 import Card from '../Card';
+import { getStreakFeedback } from '../../utils/streakFeedback';
 
 interface TimelineProps {
   events: HistoricalEvent[];
@@ -16,6 +17,8 @@ interface TimelineProps {
   // Animation props
   lastPlacementResult: PlacementResult | null;
   animationPhase: AnimationPhase;
+  // Streak
+  currentStreak?: number;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -43,6 +46,7 @@ const Timeline: React.FC<TimelineProps> = ({
   isOverTimeline,
   lastPlacementResult,
   animationPhase,
+  currentStreak = 0,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasInitialScrolled = useRef(false);
@@ -75,6 +79,9 @@ const Timeline: React.FC<TimelineProps> = ({
       return () => clearTimeout(timer);
     }
   }, [rippleData]);
+
+  // Get streak-based glow and ripple config
+  const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
 
   // Calculate wave animation data: distance from placed card for staggered ripple effect
   const waveDistances = useMemo(() => {
@@ -173,6 +180,8 @@ const Timeline: React.FC<TimelineProps> = ({
                   animationPhase={isAnimatingEvent ? animationPhase : null}
                   rippleDistance={waveDistances.get(idx)}
                   rippleTrigger={rippleData?.timestamp}
+                  glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
+                  rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}
                 {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (

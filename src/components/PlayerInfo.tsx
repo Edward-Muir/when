@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { Player, GameMode } from '../types';
-import { Users, Ruler, Trophy } from 'lucide-react';
-import { getTimelineHighScore } from '../utils/playerStorage';
+import { Users, Ruler, Zap } from 'lucide-react';
+import { getStreakFeedback } from '../utils/streakFeedback';
 
 // Custom hand of cards icon with count overlay
 const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({
@@ -136,6 +137,26 @@ const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
   </div>
 );
 
+// Streak lightning bolt indicator
+const StreakBolt: React.FC<{ streak: number }> = ({ streak }) => {
+  const config = getStreakFeedback(streak);
+
+  return (
+    <div className={`flex items-center gap-1 ${config.boltColorClass}`}>
+      <motion.div
+        key={streak}
+        initial={{ scale: 1.3 }}
+        animate={{ scale: 1 }}
+        transition={{ type: 'spring', stiffness: 400, damping: 15 }}
+        className={`flex items-center gap-0.5 ${config.boltAnimationClass}`}
+      >
+        <Zap className={`w-3.5 h-3.5 ${config.boltFilled ? 'fill-current' : ''}`} />
+        <span className="font-mono text-xs font-bold">{streak}</span>
+      </motion.div>
+    </div>
+  );
+};
+
 // Compact game info for the bottom bar
 interface GameInfoCompactProps {
   currentPlayer: Player;
@@ -143,6 +164,7 @@ interface GameInfoCompactProps {
   timelineLength: number;
   gameMode: GameMode | null;
   onStatsClick?: () => void;
+  currentStreak?: number;
 }
 
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
@@ -151,14 +173,9 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   timelineLength,
   gameMode: _gameMode,
   onStatsClick,
+  currentStreak = 0,
 }) => {
-  const [highScore, setHighScore] = useState(0);
   const showTimelineStats = !isMultiplayer;
-
-  // Load high score on mount
-  useEffect(() => {
-    setHighScore(getTimelineHighScore());
-  }, []);
 
   const content = (
     <>
@@ -171,17 +188,14 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
       <HandCardsIconLarge count={currentPlayer.hand.length} />
       <span className="text-sm text-text font-body">cards left</span>
 
-      {/* Timeline stats for single-player Sudden Death */}
+      {/* Timeline stats + streak for single-player */}
       {showTimelineStats && (
         <div className="flex items-center gap-2 text-xs text-text-muted font-body">
           <div className="flex items-center gap-1">
             <Ruler className="w-3.5 h-3.5" />
             <span className="font-mono">{timelineLength}</span>
           </div>
-          <div className="flex items-center gap-1">
-            <Trophy className="w-3.5 h-3.5" />
-            <span className="font-mono">{highScore}</span>
-          </div>
+          <StreakBolt streak={currentStreak} />
         </div>
       )}
     </>
