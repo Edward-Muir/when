@@ -30,7 +30,9 @@ const GameOverControls: React.FC<GameOverControlsProps> = ({
         className="flex flex-col items-center justify-center gap-1 w-20 h-20 bg-accent-secondary hover:bg-accent-secondary/90 text-white rounded-2xl shadow-sm transition-all duration-200 active:scale-95"
       >
         <Share2 className="w-6 h-6" />
-        <span className="text-sm font-medium font-body">Share</span>
+        <span className="text-sm font-medium font-body">
+          {state.gameMode === 'daily' ? 'Challenge' : 'Share'}
+        </span>
       </button>
 
       {/* Restart button (not shown for daily mode) */}

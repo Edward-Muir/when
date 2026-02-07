@@ -1,13 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
+import { buildDailyConfig } from './utils/dailyConfig';
+import { hasPlayedToday } from './utils/playerStorage';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
 import ViewTimeline from './components/ViewTimeline';
 
-function App() {
+interface AppProps {
+  autoStartDaily?: boolean;
+  onNavigateHome?: () => void;
+}
+
+function App({ autoStartDaily = false, onNavigateHome }: AppProps) {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
   useEffect(() => {
     const setVh = () => {
@@ -43,12 +50,29 @@ function App() {
     dismissPopup,
   } = useWhenGame();
 
+  // Auto-start daily game when accessed via /daily route
+  const hasAutoStarted = useRef(false);
+  useEffect(() => {
+    if (!autoStartDaily || hasAutoStarted.current) return;
+    if (state.phase !== 'modeSelect') return; // Wait for events to load
+
+    hasAutoStarted.current = true;
+
+    if (hasPlayedToday()) {
+      onNavigateHome?.();
+      return;
+    }
+
+    startGame(buildDailyConfig());
+  }, [autoStartDaily, state.phase, startGame, onNavigateHome]);
+
   const handleStart = (config: GameConfig) => {
     startGame(config);
   };
 
   const handlePlayAgain = () => {
     resetGame();
+    onNavigateHome?.();
   };
 
   // All phases wrapped in AnimatePresence for smooth transitions

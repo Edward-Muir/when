@@ -14,12 +14,8 @@ import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import SettingsPopup from './SettingsPopup';
 import TopBar from './TopBar';
-import {
-  getDailyTheme,
-  getThemeDisplayName,
-  getThemedCategories,
-  getThemedEras,
-} from '../utils/dailyTheme';
+import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { buildDailyConfig } from '../utils/dailyConfig';
 import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { APP_VERSION } from '../version';
@@ -170,17 +166,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
 
   const handleDailyStart = () => {
-    onStart({
-      mode: 'daily',
-      totalTurns: 7,
-      selectedDifficulties: [...DEFAULT_DIFFICULTIES],
-      selectedCategories: getThemedCategories(dailyTheme),
-      selectedEras: getThemedEras(dailyTheme),
-      dailySeed,
-      playerCount: 1,
-      playerNames: ['Player 1'],
-      cardsPerHand: 5, // Daily uses sudden death mechanics
-    });
+    onStart(buildDailyConfig());
   };
 
   const handleShareDaily = async () => {
@@ -327,7 +313,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
                   className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
                 >
                   <Share2 className="w-3.5 h-3.5" />
-                  Share
+                  Challenge a Friend
                 </button>
                 <button
                   onClick={() => setIsLeaderboardOpen(true)}

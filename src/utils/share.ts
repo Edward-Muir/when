@@ -2,6 +2,7 @@ import { WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 
 const GAME_URL = 'https://www.play-when.com/';
+const DAILY_URL = 'https://www.play-when.com/daily';
 
 /**
  * Format the leaderboard ranking line for share message
@@ -38,9 +39,8 @@ export function generateShareText(state: WhenGameState): string {
       const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
       const theme = getDailyTheme(dateStr);
       const themeName = getThemeDisplayName(theme);
-      // Daily uses sudden death mechanics - show timeline length
-      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events`;
-      break;
+      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;
+      return text;
     }
     case 'suddenDeath': {
       if (playerCount > 1) {
@@ -139,6 +139,6 @@ export async function shareDailyResult(
     text += `\n${formatLeaderboardLine(leaderboardRank)}`;
   }
 
-  text += `\n\n${GAME_URL}`;
+  text += `\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }

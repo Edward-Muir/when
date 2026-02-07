@@ -53,6 +53,14 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Handle SPA navigation requests - serve index.html for client-side routes
+  if (request.mode === 'navigate') {
+    event.respondWith(
+      fetch(request).catch(() => caches.match('/index.html'))
+    );
+    return;
+  }
+
   // Network-first for version.json (for update detection)
   if (url.pathname.endsWith('/version.json')) {
     event.respondWith(networkFirst(request, DYNAMIC_CACHE));
