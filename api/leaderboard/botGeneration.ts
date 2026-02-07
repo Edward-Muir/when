@@ -244,14 +244,6 @@ export async function ensureBotsExist(redis: Redis, date: string): Promise<boole
   }
 
   try {
-    // Double-check leaderboard is empty (race condition protection)
-    const existingCount = await redis.zcard(leaderboardKey);
-    if (existingCount > 0) {
-      // Real entries already exist, mark as done and skip
-      await redis.set(lockKey, 'done', { ex: 8 * 24 * 60 * 60 }); // 8 days TTL
-      return false;
-    }
-
     // Generate and insert bots
     const bots = generateBotsForDate(date);
 
