@@ -143,6 +143,21 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult }) =>
       <div className="border-t border-border pt-4 mt-4">
         <LeaderboardPreview entries={leaderboard} isLoading={isLoading} playerRank={rank} />
 
+        {rank &&
+          totalPlayers &&
+          totalPlayers > 1 &&
+          (() => {
+            const percentile = Math.round(((totalPlayers - rank) / totalPlayers) * 100);
+            if (percentile <= 0) return null;
+            return (
+              <div className="mt-3 text-center">
+                <div className="text-sm text-accent font-medium font-body">
+                  You did better than {percentile}% of players
+                </div>
+              </div>
+            );
+          })()}
+
         {totalPlayers && (
           <div className="mt-3 text-center">
             <div className="text-xs text-text-muted">

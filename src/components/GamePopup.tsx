@@ -291,7 +291,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
                   <EventImage event={event} />
 
                   {/* Description - only for description type */}
-                  {isDescription && (
+                  {(isDescription || isIncorrect) && (
                     <div className="px-4 py-3">
                       <p className="text-text text-sm leading-relaxed font-body">
                         {event.description}

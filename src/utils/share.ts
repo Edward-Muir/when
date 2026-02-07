@@ -130,13 +130,21 @@ export async function shareDailyResult(
   theme: string,
   emojiGrid: string,
   correctCount: number,
-  leaderboardRank?: number
+  leaderboardRank?: number,
+  leaderboardTotalPlayers?: number
 ): Promise<boolean> {
   let text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events`;
 
   // Add leaderboard ranking if available
   if (leaderboardRank) {
-    text += `\n${formatLeaderboardLine(leaderboardRank)}`;
+    let rankLine = formatLeaderboardLine(leaderboardRank);
+    if (leaderboardTotalPlayers && leaderboardTotalPlayers > 1) {
+      const topPercent = Math.round((leaderboardRank / leaderboardTotalPlayers) * 100);
+      if (topPercent > 0 && topPercent < 100) {
+        rankLine += ` (top ${topPercent}%)`;
+      }
+    }
+    text += `\n${rankLine}`;
   }
 
   text += `\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;

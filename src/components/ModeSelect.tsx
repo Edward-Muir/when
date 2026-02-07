@@ -176,7 +176,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       todayResult.theme,
       todayResult.emojiGrid,
       todayResult.correctCount,
-      todayResult.leaderboardRank
+      todayResult.leaderboardRank,
+      todayResult.leaderboardTotalPlayers
     );
     if (showToast) {
       setShowShareToast(true);
