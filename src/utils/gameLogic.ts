@@ -140,8 +140,6 @@ export function getCategoryDisplayName(category: Category): string {
       return 'Infrastructure';
     case 'diplomatic':
       return 'Diplomatic';
-    case 'inventions':
-      return 'Inventions';
     default:
       return category;
   }

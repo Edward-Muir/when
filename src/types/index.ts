@@ -4,8 +4,7 @@ export type Category =
   | 'exploration'
   | 'cultural'
   | 'infrastructure'
-  | 'diplomatic'
-  | 'inventions';
+  | 'diplomatic';
 
 export const ALL_CATEGORIES: Category[] = [
   'conflict',
@@ -14,7 +13,6 @@ export const ALL_CATEGORIES: Category[] = [
   'cultural',
   'infrastructure',
   'diplomatic',
-  'inventions',
 ];
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';

@@ -8,7 +8,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "satellite-navigation-system",
+    "name": "satellite-navigation-transit",
     "friendly_name": "First Satellite Navigation System",
     "year": 1960,
     "category": "inventions",
@@ -16,7 +16,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "first-smartphone",
+    "name": "first-smartphone-ibm-simon",
     "friendly_name": "First Smartphone Released",
     "year": 1994,
     "category": "inventions",
@@ -24,15 +24,15 @@
     "difficulty": "hard"
   },
   {
-    "name": "3d-printer-invented",
-    "friendly_name": "3D Printer Invented",
+    "name": "stereolithography-3d-printing",
+    "friendly_name": "3D Printing Invented",
     "year": 1984,
     "category": "inventions",
     "description": "Chuck Hull invented stereolithography, the first 3D printing technology for creating solid objects.",
     "difficulty": "hard"
   },
   {
-    "name": "first-computer-eniac",
+    "name": "eniac-computer-unveiled",
     "friendly_name": "ENIAC Computer Unveiled",
     "year": 1946,
     "category": "inventions",
@@ -40,7 +40,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "nuclear-bomb-tested",
+    "name": "trinity-nuclear-test",
     "friendly_name": "First Nuclear Bomb Tested",
     "year": 1945,
     "category": "inventions",
@@ -48,7 +48,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "crispr-first-human-use",
+    "name": "crispr-human-therapy",
     "friendly_name": "CRISPR Used on Humans",
     "year": 2020,
     "category": "inventions",
@@ -56,7 +56,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "first-blood-transfusion",
+    "name": "first-human-blood-transfusion",
     "friendly_name": "First Blood Transfusion",
     "year": 1667,
     "category": "inventions",
@@ -64,7 +64,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "bifocal-glasses-invented",
+    "name": "bifocal-glasses-franklin",
     "friendly_name": "Bifocal Glasses Invented",
     "year": 1784,
     "category": "inventions",
@@ -72,7 +72,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "nintendo-entertainment-system",
+    "name": "nes-released",
     "friendly_name": "Nintendo NES Released",
     "year": 1985,
     "category": "inventions",
@@ -80,7 +80,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "playstation-released",
+    "name": "sony-playstation-released",
     "friendly_name": "PlayStation Released",
     "year": 1994,
     "category": "inventions",
@@ -88,7 +88,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "windows-95-released",
+    "name": "microsoft-windows-95",
     "friendly_name": "Windows 95 Released",
     "year": 1995,
     "category": "inventions",
@@ -96,7 +96,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "netflix-streaming-begins",
+    "name": "netflix-streaming-launches",
     "friendly_name": "Netflix Streaming Launches",
     "year": 2007,
     "category": "inventions",
@@ -104,7 +104,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "uber-founded",
+    "name": "uber-rideshare-founded",
     "friendly_name": "Uber Founded",
     "year": 2009,
     "category": "inventions",
@@ -112,7 +112,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "openai-gpt-released",
+    "name": "gpt-language-model",
     "friendly_name": "GPT Language Model Released",
     "year": 2018,
     "category": "inventions",
@@ -120,7 +120,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "tiktok-launched-global",
+    "name": "tiktok-global-launch",
     "friendly_name": "TikTok Launches Globally",
     "year": 2018,
     "category": "cultural",
@@ -128,7 +128,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "cleopatra-rules-egypt",
+    "name": "cleopatra-vii-queen",
     "friendly_name": "Cleopatra Becomes Queen",
     "year": -51,
     "category": "diplomatic",
@@ -136,7 +136,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "terracotta-warriors-found",
+    "name": "terracotta-warriors-discovered",
     "friendly_name": "Terracotta Warriors Discovered",
     "year": 1974,
     "category": "exploration",
@@ -144,7 +144,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "otzi-iceman-found",
+    "name": "otzi-iceman-discovered",
     "friendly_name": "Ötzi the Iceman Found",
     "year": 1991,
     "category": "exploration",
@@ -152,7 +152,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "neanderthal-bones-found",
+    "name": "neanderthal-discovery",
     "friendly_name": "Neanderthal Bones Discovered",
     "year": 1856,
     "category": "exploration",
@@ -160,15 +160,15 @@
     "difficulty": "hard"
   },
   {
-    "name": "first-transatlantic-flight",
-    "friendly_name": "First Transatlantic Flight",
+    "name": "alcock-brown-transatlantic",
+    "friendly_name": "First Nonstop Transatlantic Flight",
     "year": 1919,
     "category": "exploration",
     "description": "Alcock and Brown completed the first nonstop transatlantic flight from Newfoundland to Ireland.",
     "difficulty": "medium"
   },
   {
-    "name": "cuban-missile-crisis",
+    "name": "cuban-missile-crisis-standoff",
     "friendly_name": "Cuban Missile Crisis",
     "year": 1962,
     "category": "conflict",
@@ -176,7 +176,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "petra-carved",
+    "name": "petra-treasury-carved",
     "friendly_name": "Petra Treasury Carved",
     "year": -100,
     "category": "infrastructure",
@@ -184,7 +184,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-world-cup",
+    "name": "first-fifa-world-cup",
     "friendly_name": "First FIFA World Cup",
     "year": 1930,
     "category": "cultural",
@@ -192,7 +192,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-super-bowl",
+    "name": "first-super-bowl-game",
     "friendly_name": "First Super Bowl",
     "year": 1967,
     "category": "cultural",
@@ -200,7 +200,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "moonlight-sonata-composed",
+    "name": "beethoven-moonlight-sonata",
     "friendly_name": "Moonlight Sonata Composed",
     "year": 1801,
     "category": "cultural",
@@ -208,7 +208,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "romeo-juliet-written",
+    "name": "shakespeare-romeo-juliet",
     "friendly_name": "Romeo and Juliet Written",
     "year": 1597,
     "category": "cultural",
@@ -216,15 +216,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "spanish-inquisition",
-    "friendly_name": "Spanish Inquisition Established",
-    "year": 1478,
-    "category": "cultural",
-    "description": "Ferdinand and Isabella established the Spanish Inquisition to enforce Catholic orthodoxy.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "first-photograph-color",
+    "name": "first-color-photograph",
     "friendly_name": "First Color Photograph",
     "year": 1861,
     "category": "inventions",
@@ -232,31 +224,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "morse-code-first-message",
-    "friendly_name": "First Morse Code Message Sent",
-    "year": 1844,
-    "category": "inventions",
-    "description": "Samuel Morse sent 'What hath God wrought' via telegraph from Washington to Baltimore.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "discovery-penicillin",
-    "friendly_name": "Penicillin Discovered",
-    "year": 1928,
-    "category": "exploration",
-    "description": "Alexander Fleming noticed mold killing bacteria in his lab, discovering the first antibiotic.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "rosetta-stone-decoded",
-    "friendly_name": "Rosetta Stone Decoded",
-    "year": 1822,
-    "category": "exploration",
-    "description": "Jean-François Champollion deciphered Egyptian hieroglyphics using the Rosetta Stone.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "first-flight-concorde",
+    "name": "concorde-maiden-flight",
     "friendly_name": "Concorde First Flight",
     "year": 1969,
     "category": "inventions",
@@ -264,151 +232,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "gutenberg-movable-type",
-    "friendly_name": "Movable Type Printing Press",
-    "year": 1440,
-    "category": "inventions",
-    "description": "Johannes Gutenberg developed the movable type printing press, revolutionizing the spread of knowledge.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "suez-crisis",
-    "friendly_name": "Suez Crisis",
-    "year": 1956,
-    "category": "conflict",
-    "description": "Britain, France, and Israel invaded Egypt over the Suez Canal, leading to international condemnation.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "first-human-heart-transplant",
-    "friendly_name": "First Human Heart Transplant",
-    "year": 1967,
-    "category": "exploration",
-    "description": "Dr. Christiaan Barnard performed the first human heart transplant in Cape Town, South Africa.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "prohibition-begins-us",
-    "friendly_name": "US Prohibition Begins",
-    "year": 1920,
-    "category": "diplomatic",
-    "description": "The 18th Amendment took effect, banning alcohol sales in the United States.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "prohibition-ends-us",
-    "friendly_name": "US Prohibition Ends",
-    "year": 1933,
-    "category": "diplomatic",
-    "description": "The 21st Amendment repealed Prohibition, ending 13 years of a nationwide alcohol ban.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "first-electric-car",
-    "friendly_name": "First Electric Car Built",
-    "year": 1884,
-    "category": "inventions",
-    "description": "Thomas Parker built one of the first practical electric cars in Wolverhampton, England.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "peloponnesian-war-ends",
-    "friendly_name": "Peloponnesian War Ends",
-    "year": -404,
-    "category": "conflict",
-    "description": "Sparta defeated Athens, ending the 27-year Peloponnesian War and Athenian dominance in Greece.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "boston-tea-party-event",
-    "friendly_name": "Boston Tea Party",
-    "year": 1773,
-    "category": "conflict",
-    "description": "American colonists dumped tea into Boston Harbor to protest British taxation without representation.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "creation-of-internet",
-    "friendly_name": "TCP/IP Protocol Adopted",
-    "year": 1983,
-    "category": "inventions",
-    "description": "ARPANET adopted TCP/IP, the protocol that became the foundation of the modern internet.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "first-electric-guitar",
-    "friendly_name": "Electric Guitar Invented",
-    "year": 1931,
-    "category": "inventions",
-    "description": "George Beauchamp and Adolph Rickenbacker created the first commercially viable electric guitar.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "xerox-alto-computer",
-    "friendly_name": "Xerox Alto Computer",
-    "year": 1973,
-    "category": "inventions",
-    "description": "Xerox PARC developed the Alto, the first computer with a graphical user interface and mouse.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "apple-macintosh-released",
-    "friendly_name": "Apple Macintosh Released",
-    "year": 1984,
-    "category": "inventions",
-    "description": "Apple released the Macintosh, popularizing the graphical user interface for personal computers.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "first-text-message-sent",
-    "friendly_name": "First Text Message Sent",
-    "year": 1992,
-    "category": "inventions",
-    "description": "Neil Papworth sent the first SMS text message, reading 'Merry Christmas,' to a Vodafone phone.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "wikipedia-created",
-    "friendly_name": "Wikipedia Created",
-    "year": 2001,
-    "category": "inventions",
-    "description": "Jimmy Wales and Larry Sanger launched Wikipedia, the free encyclopedia anyone can edit.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "silk-road-established",
-    "friendly_name": "Silk Road Trade Route Opens",
-    "year": -130,
-    "category": "exploration",
-    "description": "The Han Dynasty established trade connections westward, creating the legendary Silk Road network.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "voyager-2-neptune-flyby",
-    "friendly_name": "Voyager 2 Reaches Neptune",
-    "year": 1989,
-    "category": "exploration",
-    "description": "Voyager 2 completed the first and only flyby of Neptune, revealing its Great Dark Spot.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "pompeii-rediscovered",
-    "friendly_name": "Pompeii Rediscovered",
-    "year": 1748,
-    "category": "exploration",
-    "description": "Spanish engineer Rocque Joaquin de Alcubierre rediscovered the buried Roman city of Pompeii.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "microwave-background-discovered",
-    "friendly_name": "Cosmic Microwave Background Discovered",
-    "year": 1965,
-    "category": "exploration",
-    "description": "Penzias and Wilson accidentally discovered cosmic background radiation, confirming the Big Bang theory.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "first-antibiotic-sulfa",
+    "name": "first-antibiotic-prontosil",
     "friendly_name": "First Sulfa Drug Used",
     "year": 1935,
     "category": "inventions",
@@ -416,15 +240,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "compact-disc-released",
-    "friendly_name": "First Commercial CD Released",
-    "year": 1982,
-    "category": "inventions",
-    "description": "Sony and Philips released the first commercial compact disc, Billy Joel's '52nd Street.'",
-    "difficulty": "medium"
-  },
-  {
-    "name": "mp3-format-created",
+    "name": "mp3-audio-format",
     "friendly_name": "MP3 Format Created",
     "year": 1993,
     "category": "inventions",
@@ -432,7 +248,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-email-spam",
+    "name": "first-spam-email",
     "friendly_name": "First Spam Email Sent",
     "year": 1978,
     "category": "inventions",
@@ -440,15 +256,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "first-atm-machine",
-    "friendly_name": "First ATM Installed",
-    "year": 1967,
-    "category": "inventions",
-    "description": "Barclays Bank in London installed the world's first automated teller machine.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "great-exhibition-1851",
+    "name": "great-exhibition-london",
     "friendly_name": "Great Exhibition Opens",
     "year": 1851,
     "category": "cultural",
@@ -456,15 +264,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "fall-of-aztec-empire",
-    "friendly_name": "Fall of the Aztec Empire",
-    "year": 1521,
-    "category": "conflict",
-    "description": "Hernán Cortés and his allies conquered Tenochtitlan, ending the Aztec Empire.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "fall-of-inca-empire",
+    "name": "fall-inca-empire",
     "friendly_name": "Fall of the Inca Empire",
     "year": 1533,
     "category": "conflict",
@@ -472,15 +272,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "scramble-for-africa",
-    "friendly_name": "Berlin Conference Scramble for Africa",
-    "year": 1884,
-    "category": "diplomatic",
-    "description": "European powers carved up Africa at the Berlin Conference, beginning the 'Scramble for Africa.'",
-    "difficulty": "medium"
-  },
-  {
-    "name": "atomic-clock-invented",
+    "name": "atomic-clock-first",
     "friendly_name": "Atomic Clock Invented",
     "year": 1949,
     "category": "inventions",
@@ -488,15 +280,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "solar-panel-invented",
-    "friendly_name": "Practical Solar Cell Invented",
-    "year": 1954,
-    "category": "inventions",
-    "description": "Bell Labs created the first practical silicon solar cell, converting sunlight into electricity.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "richter-scale-invented",
+    "name": "richter-scale-developed",
     "friendly_name": "Richter Scale Invented",
     "year": 1935,
     "category": "inventions",
@@ -504,7 +288,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-antiretroviral-hiv",
+    "name": "azt-hiv-treatment",
     "friendly_name": "First HIV Treatment Approved",
     "year": 1987,
     "category": "inventions",
@@ -512,7 +296,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "insulin-pump-invented",
+    "name": "insulin-pump-developed",
     "friendly_name": "Insulin Pump Invented",
     "year": 1978,
     "category": "inventions",
@@ -520,20 +304,12 @@
     "difficulty": "hard"
   },
   {
-    "name": "first-3g-network",
+    "name": "first-3g-mobile-network",
     "friendly_name": "First 3G Network Launched",
     "year": 2001,
     "category": "inventions",
     "description": "NTT DoCoMo launched the first 3G mobile network in Japan, enabling mobile internet.",
     "difficulty": "hard"
-  },
-  {
-    "name": "kindle-launched",
-    "friendly_name": "Amazon Kindle Launched",
-    "year": 2007,
-    "category": "inventions",
-    "description": "Amazon released the Kindle e-reader, accelerating the shift to digital books.",
-    "difficulty": "easy"
   },
   {
     "name": "airbnb-founded",
@@ -544,7 +320,7 @@
     "difficulty": "easy"
   },
   {
-    "name": "panama-papers-leaked",
+    "name": "panama-papers-leak",
     "friendly_name": "Panama Papers Leaked",
     "year": 2016,
     "category": "diplomatic",
@@ -552,7 +328,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "mongol-empire-peak",
+    "name": "mongol-empire-greatest-extent",
     "friendly_name": "Mongol Empire at Peak",
     "year": 1279,
     "category": "conflict",
@@ -560,7 +336,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "printing-korea-jikji",
+    "name": "jikji-metal-movable-type",
     "friendly_name": "Oldest Metal Movable Type Book",
     "year": 1377,
     "category": "inventions",
@@ -568,7 +344,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "vaccination-rinderpest-eradicated",
+    "name": "rinderpest-eradicated",
     "friendly_name": "Rinderpest Eradicated",
     "year": 2011,
     "category": "exploration",
@@ -576,7 +352,7 @@
     "difficulty": "hard"
   },
   {
-    "name": "panama-canal-expansion",
+    "name": "panama-canal-expanded",
     "friendly_name": "Panama Canal Expansion Opens",
     "year": 2016,
     "category": "infrastructure",
@@ -584,103 +360,31 @@
     "difficulty": "hard"
   },
   {
-    "name": "three-gorges-dam-completed",
-    "friendly_name": "Three Gorges Dam Completed",
-    "year": 2006,
-    "category": "infrastructure",
-    "description": "China completed the Three Gorges Dam, the world's largest hydroelectric power station.",
+    "name": "pompeii-excavation-begins",
+    "friendly_name": "Pompeii Rediscovered",
+    "year": 1748,
+    "category": "exploration",
+    "description": "Spanish engineer Rocque Joaquin de Alcubierre led excavations that rediscovered the buried Roman city.",
     "difficulty": "medium"
   },
   {
-    "name": "space-shuttle-first-launch",
-    "friendly_name": "First Space Shuttle Launch",
-    "year": 1981,
+    "name": "cosmic-microwave-background",
+    "friendly_name": "Cosmic Background Radiation Discovered",
+    "year": 1965,
     "category": "exploration",
-    "description": "Columbia became the first space shuttle to reach orbit, beginning the reusable spacecraft era.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "dolly-the-sheep-born",
-    "friendly_name": "Dolly the Sheep Born",
-    "year": 1996,
-    "category": "exploration",
-    "description": "Scientists in Scotland cloned Dolly the sheep, the first mammal cloned from an adult cell.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "large-hadron-collider-first-beam",
-    "friendly_name": "Large Hadron Collider Activated",
-    "year": 2008,
-    "category": "exploration",
-    "description": "CERN activated the Large Hadron Collider, the world's most powerful particle accelerator.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "penicillin-discovered-fleming",
-    "friendly_name": "Penicillin Discovered",
-    "year": 1928,
-    "category": "exploration",
-    "description": "Alexander Fleming noticed mold killing bacteria in his lab, discovering the first antibiotic.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "krakatoa-erupts-1883",
-    "friendly_name": "Krakatoa Erupts",
-    "year": 1883,
-    "category": "disasters",
-    "description": "Krakatoa's eruption killed over 36,000 people and produced the loudest sound in recorded history.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "tunguska-event",
-    "friendly_name": "Tunguska Event",
-    "year": 1908,
-    "category": "disasters",
-    "description": "A massive explosion over Siberia flattened 80 million trees, likely caused by an asteroid airburst.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "lake-nyos-disaster-1986",
-    "friendly_name": "Lake Nyos Disaster",
-    "year": 1986,
-    "category": "disasters",
-    "description": "A lake in Cameroon released a cloud of CO2 that suffocated nearly 1,800 people overnight.",
+    "description": "Penzias and Wilson accidentally discovered cosmic background radiation, confirming the Big Bang theory.",
     "difficulty": "hard"
   },
   {
-    "name": "antioch-earthquake-115",
-    "friendly_name": "Antioch Earthquake",
-    "year": 115,
-    "category": "disasters",
-    "description": "A massive earthquake struck Antioch while Emperor Trajan was visiting, killing an estimated 260,000.",
+    "name": "voyager-2-neptune",
+    "friendly_name": "Voyager 2 Reaches Neptune",
+    "year": 1989,
+    "category": "exploration",
+    "description": "Voyager 2 completed the first and only flyby of Neptune, revealing its Great Dark Spot.",
     "difficulty": "hard"
   },
   {
-    "name": "great-molasses-flood",
-    "friendly_name": "Great Molasses Flood",
-    "year": 1919,
-    "category": "disasters",
-    "description": "A storage tank burst in Boston, sending a wave of 2.3 million gallons of molasses through the streets.",
-    "difficulty": "hard"
-  },
-  {
-    "name": "dreyfus-affair",
-    "friendly_name": "Dreyfus Affair Begins",
-    "year": 1894,
-    "category": "cultural",
-    "description": "French officer Alfred Dreyfus was falsely convicted of treason, sparking a national scandal over antisemitism.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "scopes-monkey-trial",
-    "friendly_name": "Scopes Monkey Trial",
-    "year": 1925,
-    "category": "cultural",
-    "description": "A Tennessee teacher was tried for teaching evolution, in a landmark debate over science and religion.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "rosie-the-riveter",
+    "name": "rosie-riveter-poster",
     "friendly_name": "Rosie the Riveter Campaign",
     "year": 1943,
     "category": "cultural",
@@ -688,7 +392,15 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-ted-talk",
+    "name": "scopes-trial-evolution",
+    "friendly_name": "Scopes Monkey Trial",
+    "year": 1925,
+    "category": "cultural",
+    "description": "A Tennessee teacher was tried for teaching evolution, in a landmark debate over science and religion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ted-conference",
     "friendly_name": "First TED Conference",
     "year": 1984,
     "category": "cultural",
@@ -696,79 +408,7 @@
     "difficulty": "medium"
   },
   {
-    "name": "spotify-launched",
-    "friendly_name": "Spotify Launched",
-    "year": 2008,
-    "category": "cultural",
-    "description": "Spotify launched in Sweden, pioneering legal music streaming and reshaping the music industry.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "treaty-of-westphalia",
-    "friendly_name": "Treaty of Westphalia",
-    "year": 1648,
-    "category": "diplomatic",
-    "description": "The peace treaty ended the Thirty Years' War and established the modern concept of state sovereignty.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "bill-of-rights-ratified",
-    "friendly_name": "US Bill of Rights Ratified",
-    "year": 1791,
-    "category": "diplomatic",
-    "description": "The first ten amendments to the US Constitution were ratified, guaranteeing fundamental freedoms.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "meiji-restoration",
-    "friendly_name": "Meiji Restoration",
-    "year": 1868,
-    "category": "diplomatic",
-    "description": "Japan ended centuries of feudal shogunate rule and rapidly modernized under Emperor Meiji.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "league-of-nations-formed",
-    "friendly_name": "League of Nations Formed",
-    "year": 1920,
-    "category": "diplomatic",
-    "description": "The first international organization for world peace was established after World War I.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "iron-curtain-speech",
-    "friendly_name": "Iron Curtain Speech",
-    "year": 1946,
-    "category": "diplomatic",
-    "description": "Winston Churchill's speech in Missouri warned of Soviet domination of Eastern Europe.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "decolonization-africa-year",
-    "friendly_name": "Year of Africa",
-    "year": 1960,
-    "category": "diplomatic",
-    "description": "Seventeen African nations gained independence in a single year, reshaping the global political map.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "hong-kong-handover",
-    "friendly_name": "Hong Kong Handover",
-    "year": 1997,
-    "category": "diplomatic",
-    "description": "Britain returned sovereignty of Hong Kong to China after 156 years of colonial rule.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "acropolis-construction",
-    "friendly_name": "Acropolis of Athens Built",
-    "year": -447,
-    "category": "infrastructure",
-    "description": "Pericles began rebuilding the Acropolis, including the Parthenon, as a symbol of Athenian power.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "catacombs-paris",
+    "name": "paris-catacombs-created",
     "friendly_name": "Paris Catacombs Created",
     "year": 1786,
     "category": "infrastructure",
@@ -776,19 +416,123 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-skyscraper-elevator",
-    "friendly_name": "First Safety Elevator Demonstrated",
-    "year": 1854,
+    "name": "tcp-ip-adopted",
+    "friendly_name": "TCP/IP Protocol Adopted",
+    "year": 1983,
     "category": "inventions",
-    "description": "Elisha Otis publicly demonstrated his safety elevator, making tall buildings practical.",
+    "description": "ARPANET adopted TCP/IP, the protocol that became the foundation of the modern internet.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-electric-guitar-rickenbacker",
+    "friendly_name": "Electric Guitar Invented",
+    "year": 1931,
+    "category": "inventions",
+    "description": "George Beauchamp and Adolph Rickenbacker created the first commercially viable electric guitar.",
     "difficulty": "medium"
   },
   {
-    "name": "assembly-line-ford",
-    "friendly_name": "Ford Moving Assembly Line",
-    "year": 1913,
+    "name": "xerox-alto-gui",
+    "friendly_name": "Xerox Alto Computer",
+    "year": 1973,
     "category": "inventions",
-    "description": "Henry Ford introduced the moving assembly line, cutting Model T production time from 12 hours to 93 minutes.",
+    "description": "Xerox PARC developed the Alto, the first computer with a graphical user interface and mouse.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "apple-macintosh-1984",
+    "friendly_name": "Apple Macintosh Released",
+    "year": 1984,
+    "category": "inventions",
+    "description": "Apple released the Macintosh, popularizing the graphical user interface for personal computers.",
     "difficulty": "easy"
+  },
+  {
+    "name": "first-sms-text-message",
+    "friendly_name": "First Text Message Sent",
+    "year": 1992,
+    "category": "inventions",
+    "description": "Neil Papworth sent the first SMS text message, reading 'Merry Christmas,' to a Vodafone phone.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-electric-car-parker",
+    "friendly_name": "First Electric Car Built",
+    "year": 1884,
+    "category": "inventions",
+    "description": "Thomas Parker built one of the first practical electric cars in Wolverhampton, England.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peloponnesian-war-ends-athens",
+    "friendly_name": "Peloponnesian War Ends",
+    "year": -404,
+    "category": "conflict",
+    "description": "Sparta defeated Athens, ending the 27-year Peloponnesian War and Athenian dominance in Greece.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "year-of-africa-1960",
+    "friendly_name": "Year of Africa",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Seventeen African nations gained independence in a single year, reshaping the global political map.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-woman-in-parliament",
+    "friendly_name": "First Woman Elected to Parliament",
+    "year": 1907,
+    "category": "diplomatic",
+    "description": "Finland became the first country to elect women to national parliament, a global first.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lake-peigneur-sinkhole",
+    "friendly_name": "Lake Peigneur Disappears",
+    "year": 1980,
+    "category": "disasters",
+    "description": "A drilling mishap caused Lake Peigneur in Louisiana to drain into a salt mine, swallowing barges whole.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antioch-earthquake-ad-115",
+    "friendly_name": "Antioch Earthquake 115 AD",
+    "year": 115,
+    "category": "disasters",
+    "description": "A massive earthquake struck Antioch while Emperor Trajan was visiting, killing an estimated 260,000.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tokyo-firebombing",
+    "friendly_name": "Tokyo Firebombing",
+    "year": 1945,
+    "category": "disasters",
+    "description": "US bombers dropped incendiary bombs on Tokyo, killing over 100,000 civilians in the deadliest air raid.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aral-sea-drying",
+    "friendly_name": "Aral Sea Begins Drying",
+    "year": 1960,
+    "category": "disasters",
+    "description": "Soviet irrigation projects began diverting rivers, eventually shrinking the Aral Sea to 10% of its size.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cuyahoga-river-fire",
+    "friendly_name": "Cuyahoga River Catches Fire",
+    "year": 1969,
+    "category": "disasters",
+    "description": "Ohio's Cuyahoga River caught fire from pollution, galvanizing the modern environmental movement.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ozone-hole-discovered",
+    "friendly_name": "Ozone Hole Discovered",
+    "year": 1985,
+    "category": "exploration",
+    "description": "British scientists discovered a hole in the ozone layer over Antarctica, leading to a global CFC ban.",
+    "difficulty": "medium"
   }
 ]

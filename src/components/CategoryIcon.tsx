@@ -81,23 +81,6 @@ const CategoryIcon: React.FC<CategoryIconProps> = ({ category, className = '' })
         </svg>
       );
 
-    case 'inventions':
-      return (
-        <svg className={iconClass} viewBox="0 0 64 64" fill="currentColor">
-          <path d="M32 4C22 4 14 12 14 22c0 6.5 3.5 12 8.5 15.5V44a2 2 0 002 2h15a2 2 0 002-2v-6.5C46.5 34 50 28.5 50 22c0-10-8-18-18-18zm7.5 40h-15v-3h15v3z" />
-          <rect x="24.5" y="48" width="15" height="3" rx="1.5" />
-          <rect x="26.5" y="54" width="11" height="3" rx="1.5" />
-          <path
-            d="M28 22c0-2.2 1.8-4 4-4"
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
-            strokeLinecap="round"
-            opacity="0.5"
-          />
-        </svg>
-      );
-
     default:
       return null;
   }
