@@ -15,6 +15,8 @@ interface SidebarProps {
   onYearRangeChange: (range: { min: number | null; max: number | null }) => void;
   difficultyFilter: Set<Difficulty>;
   onDifficultyFilterChange: (filter: Set<Difficulty>) => void;
+  missingImageFilter: boolean;
+  onMissingImageFilterChange: (value: boolean) => void;
 }
 
 function formatCategoryLabel(category: string): string {
@@ -33,6 +35,8 @@ export function Sidebar({
   onYearRangeChange,
   difficultyFilter,
   onDifficultyFilterChange,
+  missingImageFilter,
+  onMissingImageFilterChange,
 }: SidebarProps) {
   const categoryOrder = useMemo(() => {
     if (!eventsByCategory) return ['deprecated'];
@@ -61,7 +65,8 @@ export function Sidebar({
     searchQuery.trim().length > 0 ||
     yearRange.min !== null ||
     yearRange.max !== null ||
-    difficultyFilter.size > 0;
+    difficultyFilter.size > 0 ||
+    missingImageFilter;
 
   // Filter events by search query, year range, and difficulty
   const filteredEventsByCategory = useMemo(() => {
@@ -72,7 +77,7 @@ export function Sidebar({
     const hasYearFilter = yearRange.min !== null || yearRange.max !== null;
     const hasDifficultyFilter = difficultyFilter.size > 0;
 
-    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter) {
+    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter && !missingImageFilter) {
       return eventsByCategory;
     }
 
@@ -99,13 +104,23 @@ export function Sidebar({
           if (hasDifficultyFilter) {
             if (!difficultyFilter.has(e.difficulty)) return false;
           }
+          if (missingImageFilter) {
+            if (e.image_url) return false;
+          }
           return true;
         });
       }
     }
 
     return filtered;
-  }, [eventsByCategory, categoryOrder, searchQuery, yearRange, difficultyFilter]);
+  }, [
+    eventsByCategory,
+    categoryOrder,
+    searchQuery,
+    yearRange,
+    difficultyFilter,
+    missingImageFilter,
+  ]);
 
   if (!eventsByCategory) {
     return (
@@ -192,11 +207,28 @@ export function Sidebar({
           </div>
         </div>
 
-        {(yearRange.min !== null || yearRange.max !== null || difficultyFilter.size > 0) && (
+        <div>
+          <button
+            onClick={() => onMissingImageFilterChange(!missingImageFilter)}
+            className={`rounded px-2 py-0.5 text-xs transition-colors ${
+              missingImageFilter
+                ? 'bg-accent text-white'
+                : 'bg-bg-secondary text-text-secondary hover:bg-border'
+            }`}
+          >
+            Missing image
+          </button>
+        </div>
+
+        {(yearRange.min !== null ||
+          yearRange.max !== null ||
+          difficultyFilter.size > 0 ||
+          missingImageFilter) && (
           <button
             onClick={() => {
               onYearRangeChange({ min: null, max: null });
               onDifficultyFilterChange(new Set());
+              onMissingImageFilterChange(false);
             }}
             className="text-xs text-accent hover:text-accent-hover"
           >

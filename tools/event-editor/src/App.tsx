@@ -22,6 +22,7 @@ export default function App() {
     max: null,
   });
   const [difficultyFilter, setDifficultyFilter] = useState<Set<Difficulty>>(new Set());
+  const [missingImageFilter, setMissingImageFilter] = useState(false);
 
   // Compute filtered indices for the current category
   const filteredIndices = useMemo(() => {
@@ -33,7 +34,7 @@ export default function App() {
     const hasYearFilter = yearRange.min !== null || yearRange.max !== null;
     const hasDifficultyFilter = difficultyFilter.size > 0;
 
-    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter) {
+    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter && !missingImageFilter) {
       return categoryEvents.map((_, i) => i);
     }
 
@@ -53,10 +54,20 @@ export default function App() {
       if (hasDifficultyFilter) {
         if (!difficultyFilter.has(e.difficulty)) return;
       }
+      if (missingImageFilter) {
+        if (e.image_url) return;
+      }
       indices.push(i);
     });
     return indices;
-  }, [events.eventsByCategory, events.currentCategory, searchQuery, yearRange, difficultyFilter]);
+  }, [
+    events.eventsByCategory,
+    events.currentCategory,
+    searchQuery,
+    yearRange,
+    difficultyFilter,
+    missingImageFilter,
+  ]);
 
   const filteredPosition = useMemo(() => {
     const pos = filteredIndices.indexOf(events.currentIndex);
@@ -189,6 +200,8 @@ export default function App() {
           onYearRangeChange={setYearRange}
           difficultyFilter={difficultyFilter}
           onDifficultyFilterChange={setDifficultyFilter}
+          missingImageFilter={missingImageFilter}
+          onMissingImageFilterChange={setMissingImageFilter}
         />
 
         <main className="flex-1 overflow-auto p-6">

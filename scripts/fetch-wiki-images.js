@@ -929,7 +929,119 @@ const SEARCH_OVERRIDES = {
   'oculus-rift-vr': 'Oculus Rift',
   'amazon-echo-launched': 'Amazon Alexa',
   'electric-scooter-sharing': 'Electric kick scooter',
-  'waymo-self-driving': 'Waymo'
+  'waymo-self-driving': 'Waymo',
+
+  // === EXPLORATION ROUND 2 - Remaining 93 missing ===
+  'advanced-acheulean-stone-tools': 'Acheulean',
+  'woodworking-construction': 'Woodworking',
+  'hide-and-leather-clothing-shelter': 'Leather',
+  'simple-glue-birch-tar': 'Birch bark tar',
+  'compound-paints': 'Paint',
+  'funerals-burial': 'Burial',
+  'compound-adhesives': 'Adhesive',
+  'mines-hematite-ochre': 'Ochre',
+  'spear-thrower-atlatl': 'Atlatl',
+  'rope-and-cords': 'Rope',
+  'amputation-and-surgery': 'Surgery',
+  'ceramics-and-weaving': 'Weaving',
+  'ceramic-sculpture': 'Ceramic art',
+  'proto-city-large-settlements': 'Çatalhöyük',
+  'proto-writing': 'Proto-writing',
+  'cotton-thread': 'Cotton',
+  'rowing-oars': 'Oar',
+  'lost-wax-casting': 'Lost-wax casting',
+  'fired-bricks': 'Brick',
+  'paved-roads': 'Roman road',
+  'plumbing-clay-pipes': 'Plumbing',
+  'wine-as-anaesthesia': 'Wine',
+  'swords': 'Sword',
+  'city-of-uruk': 'Uruk',
+  'hat-earliest-documented': 'Hat',
+  'dry-latrines-toilets': 'Toilet',
+  'tin-extraction': 'Tin',
+  'prosthesis-eye': 'Prosthesis',
+  'measuring-rod-ruler': 'Ruler',
+  'public-sewage-sanitation': 'Sanitation',
+  'balance-weights-scales': 'Weighing scale',
+  'touchstone': 'Touchstone (assaying)',
+  'proto-alphabet': 'Proto-Sinaitic script',
+  'surgical-treatise': 'Edwin Smith Papyrus',
+  'wagonway-diolkos': 'Diolkos',
+  'crank-motion-rotary-quern': 'Quern-stone',
+  'loan-deeds': 'Promissory note',
+  'concept-of-zero': '0',
+  'reed-pens': 'Reed pen',
+  'animal-driven-rotary-mill': 'Gristmill',
+  'formal-systems-panini': 'Pāṇini',
+  'zinc-production': 'Zinc smelting',
+  'cam': 'Cam (mechanism)',
+  'reverse-overshot-water-wheel': 'Water wheel',
+  'chaturanga-proto-chess': 'Chaturanga',
+  'roman-dichroic-glass': 'Lycurgus Cup',
+  'pendentive-dome-hagia-sophia': 'Hagia Sophia',
+  'sulfur-matches': 'Match',
+  'endless-chain-drive': 'Chain drive',
+  'explosive-bomb': 'Bomb',
+  'sunglasses-snow-goggles': 'Sunglasses',
+  'double-entry-bookkeeping': 'Double-entry bookkeeping',
+  'painting-canvas': 'Canvas',
+  'handgun-first-use': 'Handgun',
+  'brace-drill': 'Brace (tool)',
+  'chintz-printed-clothing': 'Chintz',
+  'newspaper-relation': 'Newspaper',
+  'steam-powered-water-pump': 'Thomas Savery',
+  'mechanized-cotton-spinning': 'Spinning jenny',
+  'lead-chamber-process-sulfuric-acid': 'Lead chamber process',
+  'artificial-refrigeration': 'Refrigeration',
+  'steam-powered-vehicle': 'Nicolas-Joseph Cugnot',
+  'boring-machine': 'Boring (manufacturing)',
+  'metal-cylinder-rockets': 'Congreve rocket',
+  'general-anesthetic': 'Anesthesia',
+  'hydrogen-powered-automobile': 'Hydrogen vehicle',
+  'commercial-steamboat': 'Robert Fulton',
+  'powered-printing-press': 'Printing press',
+  'safety-lamp': 'Davy lamp',
+  'bolt-action-rifle': 'Bolt action',
+  'compound-air-compressor': 'Compressor',
+  'babbage-analytical-engine': 'Analytical engine',
+  'superphosphate-fertilizer': 'Superphosphate',
+  'public-flush-toilets': 'Public toilet',
+  'dirigible-airship': 'Airship',
+  'celluloid-first-plastic': 'Celluloid',
+  'ice-making-machine': 'Ice maker',
+  'four-stroke-engine': 'Four-stroke engine',
+  'bayer-process': 'Bayer process',
+  'gold-cyanidation': 'Gold cyanidation',
+  'folding-wheelchair': 'Wheelchair',
+  'programmable-computer-z1': 'Z1 (computer)',
+  'first-ai-program': 'Logic Theorist',
+  'mosfet-transistor': 'MOSFET',
+  'self-driving-car-prototype': 'Self-driving car',
+  'solid-state-drive': 'Solid-state drive',
+  'mobile-web': 'Mobile web',
+  'commercial-genetic-test': '23andMe',
+  'android-operating-system': 'Android (operating system)',
+  'synthetic-organism': 'Synthetic biology',
+  'solid-state-lidar': 'Lidar',
+  'siri-voice-assistant': 'Siri',
+  'ibm-quantum-computer': 'Quantum computing',
+
+  // === EXPLORATION ROUND 3 - Final 16 missing ===
+  'swords': 'Longsword',
+  'city-of-uruk': 'Ancient Near East',
+  'touchstone': 'Gold',
+  'concept-of-zero': 'Number',
+  'zinc-production': 'Zinc',
+  'double-entry-bookkeeping': 'Luca Pacioli',
+  'lead-chamber-process-sulfuric-acid': 'Sulfuric acid',
+  'superphosphate-fertilizer': 'Fertilizer',
+  'celluloid-first-plastic': 'Plastic',
+  'bayer-process': 'Aluminium oxide',
+  'gold-cyanidation': 'Gold mining',
+  'first-ai-program': 'Computer science',
+  'self-driving-car-prototype': 'Waymo',
+  'mobile-web': 'Mobile phone',
+  'android-operating-system': 'Google'
 };
 
 async function sleep(ms) {
@@ -1288,8 +1400,21 @@ async function main() {
   console.log('Wikipedia Image Fetcher for Timeline Events');
   console.log('='.repeat(60));
 
-  const jsonFiles = await findJsonFiles(EVENTS_DIR);
-  console.log(`Found ${jsonFiles.length} event files to process`);
+  const targetCategory = process.argv[2];
+  let jsonFiles;
+
+  if (targetCategory) {
+    const targetPath = path.join(EVENTS_DIR, `${targetCategory}.json`);
+    if (!require('fs').existsSync(targetPath)) {
+      console.error(`File not found: ${targetPath}`);
+      process.exit(1);
+    }
+    jsonFiles = [targetPath];
+    console.log(`Processing single file: ${targetCategory}.json`);
+  } else {
+    jsonFiles = await findJsonFiles(EVENTS_DIR);
+    console.log(`Found ${jsonFiles.length} event files to process`);
+  }
 
   let totalEvents = 0;
 

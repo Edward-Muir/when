@@ -32,3 +32,12 @@ tools/event-editor/node_modules
 tools/event-editor/dist
 public/events/backups
 .env*.local
+
+# Capacitor native build artifacts
+ios/App/App/public
+ios/App/Pods
+ios/DerivedData
+android/app/build
+android/build
+android/.gradle
+android/local.properties
