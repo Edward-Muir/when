@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.7](https://github.com/Edward-Muir/when/compare/v0.5.6...v0.5.7) (2026-02-22)
+
 ## [0.5.6](https://github.com/Edward-Muir/when/compare/v0.5.5...v0.5.6) (2026-02-22)
 
 
