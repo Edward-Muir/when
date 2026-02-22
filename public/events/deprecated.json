@@ -58,5 +58,33 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stock_market_crash",
     "_originalCategory": "disasters",
     "_deprecatedAt": "2026-02-07T22:58:23.758Z"
+  },
+  {
+    "name": "bronze-smelting",
+    "friendly_name": "Bronze Smelting Developed",
+    "year": -3300,
+    "category": "exploration",
+    "description": "The smelting of bronze from copper and tin was developed, defining the Bronze Age.",
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg",
+    "image_width": 330,
+    "image_height": 344,
+    "_originalCategory": "exploration",
+    "_deprecatedAt": "2026-02-22T12:08:40.943Z"
+  },
+  {
+    "name": "paper-invented-china",
+    "friendly_name": "Paper Invented",
+    "year": 105,
+    "category": "exploration",
+    "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Various_products_made_from_paper.JPG/330px-Various_products_made_from_paper.JPG",
+    "image_width": 330,
+    "image_height": 247,
+    "wikipedia_views": 353605,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper",
+    "_originalCategory": "exploration",
+    "_deprecatedAt": "2026-02-22T12:13:39.081Z"
   }
 ]

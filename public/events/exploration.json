@@ -27,7 +27,7 @@
   },
   {
     "name": "first-stone-tools",
-    "friendly_name": "First Stone Tools (Oldowan)",
+    "friendly_name": "First Stone Tools",
     "year": -2600000,
     "category": "exploration",
     "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
@@ -330,17 +330,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age"
   },
   {
-    "name": "bronze-smelting",
-    "friendly_name": "Bronze Smelting Developed",
-    "year": -3300,
-    "category": "exploration",
-    "description": "The smelting of bronze from copper and tin was developed, defining the Bronze Age.",
-    "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg",
-    "image_width": 330,
-    "image_height": 344
-  },
-  {
     "name": "writing-invention",
     "friendly_name": "Invention of Writing",
     "year": -3200,
@@ -465,9 +454,9 @@
     "category": "exploration",
     "description": "The first metal coins were minted in Lydia (modern Turkey), transforming trade and commerce.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Kingdom_of_Lydia.png/330px-Kingdom_of_Lydia.png",
-    "image_width": 330,
-    "image_height": 184
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/India%2C_Chandragupta_II%2C_Gupta_Period_-_Coin_with_Figure_of_an_Archer_-_1977.62_-_Cleveland_Museum_of_Art.jpg/960px-India%2C_Chandragupta_II%2C_Gupta_Period_-_Coin_with_Figure_of_an_Archer_-_1977.62_-_Cleveland_Museum_of_Art.jpg",
+    "image_width": 960,
+    "image_height": 473
   },
   {
     "name": "thales-eclipse",
@@ -565,9 +554,9 @@
     "category": "exploration",
     "description": "Greek engineers invented the torsion catapult for siege warfare, first used against Motya in Sicily.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mang2.png/330px-Mang2.png",
-    "image_width": 330,
-    "image_height": 264
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Replica_catapult.jpg",
+    "image_width": 600,
+    "image_height": 433
   },
   {
     "name": "water-wheel-invented",
@@ -600,9 +589,9 @@
     "category": "exploration",
     "description": "The Greek explorer sailed to Britain and possibly reached the Arctic Circle.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Parisinus_gr_1397_f.162_pytheas_of_massalia_from_Strabo_7.3.1.jpg/330px-Parisinus_gr_1397_f.162_pytheas_of_massalia_from_Strabo_7.3.1.jpg",
-    "image_width": 330,
-    "image_height": 139,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ptolemy-british-isles.jpg/960px-Ptolemy-british-isles.jpg",
+    "image_width": 960,
+    "image_height": 694,
     "wikipedia_views": 97360,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pytheas"
   },
@@ -683,9 +672,9 @@
     "category": "exploration",
     "description": "Archimedes perfected the compound pulley system, demonstrating that one person could move enormous weights through mechanical advantage.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/330px-Domenico-Fetti_Archimedes_1620.jpg",
-    "image_width": 330,
-    "image_height": 440
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PulleyShip.JPG/960px-PulleyShip.JPG",
+    "image_width": 960,
+    "image_height": 720
   },
   {
     "name": "astrolabe-invented",
@@ -705,9 +694,9 @@
     "category": "exploration",
     "description": "Hero of Alexandria invented a primitive steam engine, the aeolipile.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Aeolipile_illustration.png/330px-Aeolipile_illustration.png",
-    "image_width": 330,
-    "image_height": 500,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Aeolipile_%28from_Pneumatica%29.jpg",
+    "image_width": 204,
+    "image_height": 234,
     "wikipedia_views": 124430,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Aeolipile"
   },
@@ -737,7 +726,7 @@
   },
   {
     "name": "paper-invented",
-    "friendly_name": "Paper Invented in China",
+    "friendly_name": "Paper Invented",
     "year": 105,
     "category": "exploration",
     "description": "Cai Lun standardized papermaking techniques in Han Dynasty China.",
@@ -745,19 +734,6 @@
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif",
     "image_width": 330,
     "image_height": 471,
-    "wikipedia_views": 353605,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper"
-  },
-  {
-    "name": "paper-invented-china",
-    "friendly_name": "Paper Invented",
-    "year": 105,
-    "category": "exploration",
-    "description": "Cai Lun improved papermaking in China, revolutionizing information recording.",
-    "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Various_products_made_from_paper.JPG/330px-Various_products_made_from_paper.JPG",
-    "image_width": 330,
-    "image_height": 247,
     "wikipedia_views": 353605,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Paper"
   },
@@ -1103,9 +1079,9 @@
     "category": "exploration",
     "description": "The Chinese admiral began massive naval expeditions across the Indian Ocean.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/2016_Malakka%2C_Stadhuys_%2809%29.jpg/330px-2016_Malakka%2C_Stadhuys_%2809%29.jpg",
-    "image_width": 330,
-    "image_height": 495,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/%E3%80%8A%E9%84%AD%E5%92%8C%E6%AD%B8%E4%BE%86%E3%80%8B%E3%80%82_%E8%97%9D%E8%A1%93%E5%AE%B6%E5%BC%97%E6%8B%89%E5%9F%BA%E7%B1%B3%E7%88%BE%C2%B7%E7%A7%91%E7%B4%A2%E5%A4%AB_2018.jpg/960px-%E3%80%8A%E9%84%AD%E5%92%8C%E6%AD%B8%E4%BE%86%E3%80%8B%E3%80%82_%E8%97%9D%E8%A1%93%E5%AE%B6%E5%BC%97%E6%8B%89%E5%9F%BA%E7%B1%B3%E7%88%BE%C2%B7%E7%A7%91%E7%B4%A2%E5%A4%AB_2018.jpg",
+    "image_width": 960,
+    "image_height": 564,
     "wikipedia_views": 82996,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages"
   },
@@ -1116,9 +1092,9 @@
     "category": "exploration",
     "description": "Some historians claim Chinese fleets explored the Americas before Columbus.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Viking_landing.jpg/330px-Viking_landing.jpg",
-    "image_width": 330,
-    "image_height": 223,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/La_expedici%C3%B3n_de_Xu_Fu%2C_por_Utagawa_Kuniyoshi.jpg/960px-La_expedici%C3%B3n_de_Xu_Fu%2C_por_Utagawa_Kuniyoshi.jpg",
+    "image_width": 960,
+    "image_height": 466,
     "wikipedia_views": 969153,
     "wikipedia_url": "https://en.wikipedia.org/wiki/China–United_States_trade_war"
   },
@@ -1207,9 +1183,9 @@
     "category": "exploration",
     "description": "Pedro Álvares Cabral claimed Brazil for Portugal.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Pedro_%C3%81lvares_Cabral.jpg/330px-Pedro_%C3%81lvares_Cabral.jpg",
-    "image_width": 330,
-    "image_height": 488,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Pedro_alvares_cabral_discovery_of_brazil_1500.jpg/960px-Pedro_alvares_cabral_discovery_of_brazil_1500.jpg",
+    "image_width": 960,
+    "image_height": 690,
     "wikipedia_views": 39397,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Discovery_of_Brazil"
   },
@@ -1220,9 +1196,9 @@
     "category": "exploration",
     "description": "Vasco Núñez de Balboa became the first European to see the Pacific Ocean from the Americas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Retrato_de_Vasco_Nu%C3%B1ez_de_Balboa_%281475-1517%29_-_An%C3%B3nimo.jpg/330px-Retrato_de_Vasco_Nu%C3%B1ez_de_Balboa_%281475-1517%29_-_An%C3%B3nimo.jpg",
-    "image_width": 330,
-    "image_height": 442,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Matthias_Laurenz_Gr%C3%A4ff%2C_%22Die_Entdeckung_des_Pazifik._Vasco_N%C3%BA%C3%B1ez_de_Balboa%2C_Panama_-_25._9._1513%2C_11_Uhr%22.jpg/960px-Matthias_Laurenz_Gr%C3%A4ff%2C_%22Die_Entdeckung_des_Pazifik._Vasco_N%C3%BA%C3%B1ez_de_Balboa%2C_Panama_-_25._9._1513%2C_11_Uhr%22.jpg",
+    "image_width": 960,
+    "image_height": 509,
     "wikipedia_views": 121439,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa"
   },
@@ -1246,9 +1222,9 @@
     "category": "exploration",
     "description": "Hernán Cortés first encountered the Aztec Empire in Mexico.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg/330px-Retrato_de_Hern%C3%A1n_Cort%C3%A9s.jpg",
-    "image_width": 330,
-    "image_height": 389,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Xicotencatl-Cortes.jpg/960px-Xicotencatl-Cortes.jpg",
+    "image_width": 960,
+    "image_height": 1288,
     "wikipedia_views": 378606,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire"
   },
@@ -1259,9 +1235,9 @@
     "category": "exploration",
     "description": "Magellan's expedition completed the first voyage around the world.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png/330px-Detail_from_a_map_of_Ortelius_-_Magellan%27s_ship_Victoria.png",
-    "image_width": 330,
-    "image_height": 201,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Descubrimiento_del_Estrecho_de_Magallanes.jpg/960px-Descubrimiento_del_Estrecho_de_Magallanes.jpg",
+    "image_width": 960,
+    "image_height": 631,
     "wikipedia_views": 272959,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition"
   },
@@ -1272,9 +1248,9 @@
     "category": "exploration",
     "description": "Francisco Pizarro first encountered the Inca Empire in Peru.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Portrait_of_Francisco_Pizarro.jpg/330px-Portrait_of_Francisco_Pizarro.jpg",
-    "image_width": 330,
-    "image_height": 425,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Millais%2C_John_Everett_%28Sir%29_-_Pizarro_Seizing_the_Inca_of_Peru_-_Google_Art_Project.jpg/960px-Millais%2C_John_Everett_%28Sir%29_-_Pizarro_Seizing_the_Inca_of_Peru_-_Google_Art_Project.jpg",
+    "image_width": 960,
+    "image_height": 718,
     "wikipedia_views": 289742,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Pizarro"
   },
@@ -1311,9 +1287,9 @@
     "category": "exploration",
     "description": "Nicolaus Copernicus published his theory that Earth orbits the Sun.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Nikolaus_Kopernikus_MOT.jpg/330px-Nikolaus_Kopernikus_MOT.jpg",
-    "image_width": 330,
-    "image_height": 412,
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Heliocentric.jpg",
+    "image_width": 570,
+    "image_height": 480,
     "wikipedia_views": 252248,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Heliocentrism"
   },
@@ -1337,11 +1313,11 @@
     "category": "exploration",
     "description": "Spanish colonizers discovered rich silver deposits at Cerro Rico in present-day Bolivia, fueling global trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg/330px-Vista_de_la_Villa_Imperial_de_Potos%C3%AD.jpg",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Capitulo-CIX.jpg",
     "wikipedia_views": 42302,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cerro_Rico",
-    "image_width": 330,
-    "image_height": 186
+    "image_width": 862,
+    "image_height": 650
   },
   {
     "name": "tycho-brahe-observatory",
