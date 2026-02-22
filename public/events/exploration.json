@@ -6250,7 +6250,10 @@
     "year": -1400,
     "category": "exploration",
     "description": "Natural latex processed into bouncing balls for ritual games played across Mesoamerica.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pok_ta_pok_ballgame_maya_indians_mexico_3.JPG/500px-Pok_ta_pok_ballgame_maya_indians_mexico_3.JPG",
+    "image_width": 500,
+    "image_height": 591
   },
   {
     "name": "concrete",
@@ -7514,7 +7517,10 @@
     "year": 1884,
     "category": "exploration",
     "description": "Paul Vieille's Poudre B replaced black powder in firearms, producing less smoke and fouling.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Poudre_B.JPG",
+    "image_width": 516,
+    "image_height": 504
   },
   {
     "name": "ac-power-distribution",
@@ -7522,7 +7528,10 @@
     "year": 1884,
     "category": "exploration",
     "description": "Closed-core transformers enabled efficient alternating current power grids over long distances.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Active-and-reactive-power-064pf-en.svg/960px-Active-and-reactive-power-064pf-en.svg.png",
+    "image_width": 960,
+    "image_height": 624
   },
   {
     "name": "zinc-carbon-battery",
@@ -7530,15 +7539,21 @@
     "year": 1886,
     "category": "exploration",
     "description": "Carl Gassner's dry cell battery made portable electrical devices practical for everyday use.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Zincbattery_%281%29.png",
+    "image_width": 650,
+    "image_height": 355
   },
   {
     "name": "hall-heroult-aluminum-process",
-    "friendly_name": "Hall-Héroult Aluminum Process",
+    "friendly_name": "Aluminum Processing",
     "year": 1886,
     "category": "exploration",
     "description": "Electrolytic smelting process that made aluminum production affordable and commercially viable.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Hall-heroult-kk-2008-12-31.png",
+    "image_width": 585,
+    "image_height": 512
   },
   {
     "name": "bayer-process",
@@ -7562,7 +7577,10 @@
     "year": 1892,
     "category": "exploration",
     "description": "Léon Bouly's combined camera and projector device for recording and displaying motion pictures.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Cinematographe_Bouly1892.jpg",
+    "image_width": 640,
+    "image_height": 480
   },
   {
     "name": "electric-oven",
@@ -7570,7 +7588,10 @@
     "year": 1892,
     "category": "exploration",
     "description": "Thomas Ahearn demonstrated the first electric cooking oven at a hotel dinner in Ottawa.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Electric_stove%2C_2002.jpg/960px-Electric_stove%2C_2002.jpg",
+    "image_width": 960,
+    "image_height": 720
   },
   {
     "name": "gas-powered-tractor",
@@ -7578,7 +7599,10 @@
     "year": 1892,
     "category": "exploration",
     "description": "John Froelich built the first successful gasoline-powered tractor for agricultural use.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ford_8N.jpg/960px-Ford_8N.jpg",
+    "image_width": 960,
+    "image_height": 759
   },
   {
     "name": "rubber-surgical-gloves",
@@ -7586,7 +7610,10 @@
     "year": 1893,
     "category": "exploration",
     "description": "William Halsted introduced sterile rubber gloves for surgery, greatly reducing infection rates.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/USMC-120719-M-BC491-224.jpg/960px-USMC-120719-M-BC491-224.jpg",
+    "image_width": 960,
+    "image_height": 640
   },
   {
     "name": "lilienthal-glider",
@@ -7594,7 +7621,10 @@
     "year": 1894,
     "category": "exploration",
     "description": "Otto Lilienthal's standard glider enabled repeated controlled flights, inspiring the Wright brothers.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Otto_Lilienthal_gliding_experiment_ppmsca.02546.jpg/960px-Otto_Lilienthal_gliding_experiment_ppmsca.02546.jpg",
+    "image_width": 960,
+    "image_height": 665
   },
   {
     "name": "surgical-masks",
