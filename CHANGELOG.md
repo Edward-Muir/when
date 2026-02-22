@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.6](https://github.com/Edward-Muir/when/compare/v0.5.5...v0.5.6) (2026-02-22)
+
+
+### Features
+
+* Added new inventions category, updated events editor ([53acee1](https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb))
+* More inventions ([3a0dbb4](https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e))
+* Updating event images ([c7ce664](https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010))
+* Updating event images ([6b189df](https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece))
+
+
+### Bug Fixes
+
+* Add missing images ([6727ad7](https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77))
+
 ## [0.5.5](https://github.com/Edward-Muir/when/compare/v0.5.4...v0.5.5) (2026-02-07)
 
 
