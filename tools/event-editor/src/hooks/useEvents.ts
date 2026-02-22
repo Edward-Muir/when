@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import type { HistoricalEvent, EventsByCategory, Category, CategoryOrDeprecated } from '../types';
+import type { HistoricalEvent, EventsByCategory, CategoryOrDeprecated } from '../types';
 import * as api from '../api/client';
 
 interface UseEventsReturn {
   // Data
   eventsByCategory: EventsByCategory | null;
+  categories: string[];
   isLoading: boolean;
   error: string | null;
 
@@ -31,9 +32,9 @@ interface UseEventsReturn {
   // CRUD
   saveChanges: () => Promise<void>;
   discardChanges: () => void;
-  addEvent: (category: Category, event: HistoricalEvent) => Promise<void>;
+  addEvent: (category: string, event: HistoricalEvent) => Promise<void>;
   deleteCurrentEvent: () => Promise<void>;
-  changeCurrentEventCategory: (newCategory: Category) => Promise<void>;
+  changeCurrentEventCategory: (newCategory: string) => Promise<void>;
 
   // Refresh
   refreshEvents: () => Promise<void>;
@@ -82,6 +83,13 @@ export function useEvents(): UseEventsReturn {
     const changeKey = makeChangeKey(currentCategory, event.name);
     return pendingChanges.get(changeKey) || event;
   }, [eventsByCategory, currentCategory, currentIndex, pendingChanges]);
+
+  const categories = useMemo(() => {
+    if (!eventsByCategory) return [];
+    return Object.keys(eventsByCategory)
+      .filter((key) => key !== 'deprecated')
+      .sort();
+  }, [eventsByCategory]);
 
   const currentCategoryCount = useMemo(() => {
     if (!eventsByCategory || !currentCategory) return 0;
@@ -178,7 +186,7 @@ export function useEvents(): UseEventsReturn {
 
   // Add new event
   const addEvent = useCallback(
-    async (category: Category, event: HistoricalEvent) => {
+    async (category: string, event: HistoricalEvent) => {
       setIsLoading(true);
       setError(null);
 
@@ -234,7 +242,7 @@ export function useEvents(): UseEventsReturn {
 
   // Change category of current event
   const changeCurrentEventCategory = useCallback(
-    async (newCategory: Category) => {
+    async (newCategory: string) => {
       if (!currentEvent || !currentCategory || currentCategory === 'deprecated') return;
       if (newCategory === currentCategory) return;
 
@@ -271,6 +279,7 @@ export function useEvents(): UseEventsReturn {
 
   return {
     eventsByCategory,
+    categories,
     isLoading,
     error,
     currentCategory,

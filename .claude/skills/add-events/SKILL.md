@@ -46,14 +46,15 @@ Each event is a JSON object with these fields:
 
 Events are stored in separate JSON files by category in `public/events/`:
 
-| Category         | File                | Use For                                                        |
-| ---------------- | ------------------- | -------------------------------------------------------------- |
-| `conflict`       | conflict.json       | Wars, battles, military events, revolts                        |
-| `cultural`       | cultural.json       | Art, literature, philosophy, religion, social movements        |
-| `diplomatic`     | diplomatic.json     | Treaties, political agreements, empires founded, laws          |
-| `disasters`      | disasters.json      | Natural disasters, plagues, extinctions, catastrophes          |
-| `exploration`    | exploration.json    | Scientific discoveries, inventions, exploration, domestication |
-| `infrastructure` | infrastructure.json | Buildings, monuments, engineering, construction                |
+| Category         | File                | Use For                                                 |
+| ---------------- | ------------------- | ------------------------------------------------------- |
+| `conflict`       | conflict.json       | Wars, battles, military events, revolts                 |
+| `cultural`       | cultural.json       | Art, literature, philosophy, religion, social movements |
+| `diplomatic`     | diplomatic.json     | Treaties, political agreements, empires founded, laws   |
+| `disasters`      | disasters.json      | Natural disasters, plagues, extinctions, catastrophes   |
+| `exploration`    | exploration.json    | Scientific discoveries, exploration, domestication      |
+| `infrastructure` | infrastructure.json | Buildings, monuments, engineering, construction         |
+| `inventions`     | inventions.json     | Inventions, patents, technological firsts, tools        |
 
 ## Difficulty Guidelines
 
@@ -102,9 +103,10 @@ Choose the **primary** nature of the event:
 - Military action → `conflict`
 - Political/legal → `diplomatic`
 - Religious/artistic/philosophical → `cultural`
-- Scientific/technological → `exploration`
+- Scientific discovery/exploration → `exploration`
 - Building/monument → `infrastructure`
 - Natural disaster/plague → `disasters`
+- Inventions/patents/new technologies → `inventions`
 
 ### 3. Add Event to Correct File
 

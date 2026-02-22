@@ -1,15 +1,16 @@
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import type { HistoricalEvent, Category, Difficulty } from '../../types';
-import { ALL_CATEGORIES, ALL_DIFFICULTIES } from '../../types';
+import type { HistoricalEvent, Difficulty } from '../../types';
+import { ALL_DIFFICULTIES } from '../../types';
 
 interface AddEventDialogProps {
   onClose: () => void;
-  onAdd: (category: Category, event: HistoricalEvent) => Promise<void>;
+  onAdd: (category: string, event: HistoricalEvent) => Promise<void>;
   existingNames: string[];
+  categories: string[];
 }
 
-export function AddEventDialog({ onClose, onAdd, existingNames }: AddEventDialogProps) {
+export function AddEventDialog({ onClose, onAdd, existingNames, categories }: AddEventDialogProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -17,7 +18,7 @@ export function AddEventDialog({ onClose, onAdd, existingNames }: AddEventDialog
     name: '',
     friendly_name: '',
     year: '',
-    category: 'cultural' as Category,
+    category: categories[0] || 'cultural',
     description: '',
     difficulty: 'medium' as Difficulty,
     image_url: '',
@@ -165,7 +166,7 @@ export function AddEventDialog({ onClose, onAdd, existingNames }: AddEventDialog
               onChange={(e) => updateField('category', e.target.value)}
               className="w-full rounded border border-border bg-white px-3 py-2 text-sm text-text focus:border-accent focus:outline-none"
             >
-              {ALL_CATEGORIES.map((cat) => (
+              {categories.map((cat) => (
                 <option key={cat} value={cat}>
                   {cat.charAt(0).toUpperCase() + cat.slice(1)}
                 </option>

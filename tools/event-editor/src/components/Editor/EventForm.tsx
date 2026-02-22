@@ -1,13 +1,14 @@
-import type { HistoricalEvent, Category, Difficulty } from '../../types';
-import { ALL_CATEGORIES, ALL_DIFFICULTIES } from '../../types';
+import type { HistoricalEvent, Difficulty } from '../../types';
+import { ALL_DIFFICULTIES } from '../../types';
 
 interface EventFormProps {
   event: HistoricalEvent;
   onUpdate: (updates: Partial<HistoricalEvent>) => void;
   isDeprecated: boolean;
+  categories: string[];
 }
 
-export function EventForm({ event, onUpdate, isDeprecated }: EventFormProps) {
+export function EventForm({ event, onUpdate, isDeprecated, categories }: EventFormProps) {
   return (
     <div className="space-y-4">
       {/* Name (readonly) */}
@@ -59,11 +60,11 @@ export function EventForm({ event, onUpdate, isDeprecated }: EventFormProps) {
         </label>
         <select
           value={event.category}
-          onChange={(e) => onUpdate({ category: e.target.value as Category })}
+          onChange={(e) => onUpdate({ category: e.target.value })}
           disabled={isDeprecated}
           className="w-full rounded border border-border bg-white px-3 py-2 text-sm text-text focus:border-accent focus:outline-none disabled:cursor-not-allowed disabled:bg-bg-secondary"
         >
-          {ALL_CATEGORIES.map((cat) => (
+          {categories.map((cat) => (
             <option key={cat} value={cat}>
               {cat.charAt(0).toUpperCase() + cat.slice(1)}
             </option>
