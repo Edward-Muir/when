@@ -7,7 +7,7 @@ import { TopBar } from './components/Navigation/TopBar';
 import { AddEventDialog } from './components/Dialogs/AddEventDialog';
 import { DeleteDialog } from './components/Dialogs/DeleteDialog';
 import { ChangeCategoryDialog } from './components/Dialogs/ChangeCategoryDialog';
-import type { Category, Difficulty } from './types';
+import type { Difficulty } from './types';
 
 export default function App() {
   const events = useEvents();
@@ -196,6 +196,7 @@ export default function App() {
             <EventEditor
               event={events.currentEvent}
               category={events.currentCategory!}
+              categories={events.categories}
               currentIndex={filteredPosition >= 0 ? filteredPosition : 0}
               totalCount={filteredIndices.length}
               onUpdate={events.updateCurrentEvent}
@@ -229,6 +230,7 @@ export default function App() {
                   .map((e) => e.name)
               : []
           }
+          categories={events.categories}
         />
       )}
 
@@ -247,7 +249,8 @@ export default function App() {
         events.currentEvent &&
         events.currentCategory !== 'deprecated' && (
           <ChangeCategoryDialog
-            currentCategory={events.currentCategory as Category}
+            currentCategory={events.currentCategory!}
+            categories={events.categories}
             onClose={() => setShowChangeCategoryDialog(false)}
             onConfirm={async (newCategory) => {
               await events.changeCurrentEventCategory(newCategory);

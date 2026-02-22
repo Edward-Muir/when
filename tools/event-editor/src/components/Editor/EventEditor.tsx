@@ -1,5 +1,5 @@
 import { Trash2, FolderInput, AlertTriangle } from 'lucide-react';
-import type { HistoricalEvent, CategoryOrDeprecated } from '../../types';
+import type { HistoricalEvent } from '../../types';
 import { EventNavigation } from '../Navigation/EventNavigation';
 import { EventForm } from './EventForm';
 import { EventPreview } from './EventPreview';
@@ -7,7 +7,8 @@ import { MetadataPanel } from './MetadataPanel';
 
 interface EventEditorProps {
   event: HistoricalEvent;
-  category: CategoryOrDeprecated;
+  category: string;
+  categories: string[];
   currentIndex: number;
   totalCount: number;
   onUpdate: (updates: Partial<HistoricalEvent>) => void;
@@ -35,6 +36,7 @@ interface EventEditorProps {
 export function EventEditor({
   event,
   category,
+  categories,
   currentIndex,
   totalCount,
   onUpdate,
@@ -74,7 +76,12 @@ export function EventEditor({
               </span>
             </div>
 
-            <EventForm event={event} onUpdate={onUpdate} isDeprecated={isDeprecated} />
+            <EventForm
+              event={event}
+              onUpdate={onUpdate}
+              isDeprecated={isDeprecated}
+              categories={categories}
+            />
           </div>
 
           <div className="mt-4">

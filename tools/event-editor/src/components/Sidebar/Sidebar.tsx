@@ -1,18 +1,13 @@
 import { useState, useMemo } from 'react';
 import { ChevronDown, ChevronRight, Plus, Folder, FolderOpen, Archive } from 'lucide-react';
-import type {
-  EventsByCategory,
-  CategoryOrDeprecated,
-  HistoricalEvent,
-  Difficulty,
-} from '../../types';
+import type { EventsByCategory, HistoricalEvent, Difficulty } from '../../types';
 import { ALL_DIFFICULTIES } from '../../types';
 
 interface SidebarProps {
   eventsByCategory: EventsByCategory | null;
-  currentCategory: CategoryOrDeprecated | null;
+  currentCategory: string | null;
   currentIndex: number;
-  onSelectEvent: (category: CategoryOrDeprecated, index: number) => void;
+  onSelectEvent: (category: string, index: number) => void;
   onAddEvent: () => void;
   searchQuery: string;
   pendingChanges: Map<string, HistoricalEvent>;
@@ -22,25 +17,9 @@ interface SidebarProps {
   onDifficultyFilterChange: (filter: Set<Difficulty>) => void;
 }
 
-const CATEGORY_ORDER: CategoryOrDeprecated[] = [
-  'conflict',
-  'cultural',
-  'diplomatic',
-  'disasters',
-  'exploration',
-  'infrastructure',
-  'deprecated',
-];
-
-const CATEGORY_LABELS: Record<CategoryOrDeprecated, string> = {
-  conflict: 'Conflict',
-  cultural: 'Cultural',
-  diplomatic: 'Diplomatic',
-  disasters: 'Disasters',
-  exploration: 'Exploration',
-  infrastructure: 'Infrastructure',
-  deprecated: 'Deprecated',
-};
+function formatCategoryLabel(category: string): string {
+  return category.charAt(0).toUpperCase() + category.slice(1);
+}
 
 export function Sidebar({
   eventsByCategory,
@@ -55,11 +34,18 @@ export function Sidebar({
   difficultyFilter,
   onDifficultyFilterChange,
 }: SidebarProps) {
-  const [expandedCategories, setExpandedCategories] = useState<Set<CategoryOrDeprecated>>(
-    new Set(['conflict'])
-  );
+  const categoryOrder = useMemo(() => {
+    if (!eventsByCategory) return ['deprecated'];
+    const cats = Object.keys(eventsByCategory)
+      .filter((key) => key !== 'deprecated')
+      .sort();
+    cats.push('deprecated');
+    return cats;
+  }, [eventsByCategory]);
 
-  const toggleCategory = (category: CategoryOrDeprecated) => {
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(['conflict']));
+
+  const toggleCategory = (category: string) => {
     setExpandedCategories((prev) => {
       const next = new Set(prev);
       if (next.has(category)) {
@@ -90,20 +76,15 @@ export function Sidebar({
       return eventsByCategory;
     }
 
-    const filtered: EventsByCategory = {
-      conflict: [],
-      cultural: [],
-      diplomatic: [],
-      disasters: [],
-      exploration: [],
-      infrastructure: [],
-      deprecated: [],
-    };
+    const filtered: Record<string, HistoricalEvent[]> = {};
+    for (const category of categoryOrder) {
+      filtered[category] = [];
+    }
 
-    for (const category of CATEGORY_ORDER) {
+    for (const category of categoryOrder) {
       const events = eventsByCategory[category];
       if (events) {
-        const filteredEvents = events.filter((e) => {
+        filtered[category] = events.filter((e) => {
           if (hasSearchFilter) {
             const matchesSearch =
               e.friendly_name.toLowerCase().includes(query) ||
@@ -120,13 +101,11 @@ export function Sidebar({
           }
           return true;
         });
-        // Use type assertion to handle the union type
-        (filtered as unknown as Record<string, HistoricalEvent[]>)[category] = filteredEvents;
       }
     }
 
     return filtered;
-  }, [eventsByCategory, searchQuery, yearRange, difficultyFilter]);
+  }, [eventsByCategory, categoryOrder, searchQuery, yearRange, difficultyFilter]);
 
   if (!eventsByCategory) {
     return (
@@ -227,7 +206,7 @@ export function Sidebar({
       </div>
 
       <div className="flex-1 overflow-auto">
-        {CATEGORY_ORDER.map((category) => {
+        {categoryOrder.map((category) => {
           const events = filteredEventsByCategory?.[category] || [];
           const originalEvents = eventsByCategory[category] || [];
           const isExpanded = expandedCategories.has(category);
@@ -247,7 +226,7 @@ export function Sidebar({
                 )}
                 <Icon className={`h-4 w-4 ${isDeprecated ? 'text-error' : 'text-accent'}`} />
                 <span className="flex-1 text-sm font-medium text-text">
-                  {CATEGORY_LABELS[category]}
+                  {formatCategoryLabel(category)}
                 </span>
                 <span className="text-xs text-text-secondary">
                   {hasAnyFilter

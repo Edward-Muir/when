@@ -1,7 +1,5 @@
-import type { Category } from '../../types';
-
 interface CategoryIconProps {
-  category: Category;
+  category: string;
   className?: string;
 }
 
@@ -81,6 +79,12 @@ export function CategoryIcon({ category, className = '' }: CategoryIconProps) {
       );
 
     default:
-      return null;
+      return (
+        <svg className={iconClass} viewBox="0 0 64 64" fill="currentColor">
+          <circle cx="32" cy="32" r="26" fill="none" stroke="currentColor" strokeWidth="3" />
+          <circle cx="32" cy="44" r="3" />
+          <rect x="30" y="16" width="4" height="20" rx="2" />
+        </svg>
+      );
   }
 }

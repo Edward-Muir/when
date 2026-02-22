@@ -1,0 +1,538 @@
+[
+  {
+    "name": "radio-invented",
+    "friendly_name": "Radio Demonstrated",
+    "year": 1895,
+    "category": "inventions",
+    "description": "Guglielmo Marconi demonstrated wireless telegraphy, paving the way for radio broadcasting.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "satellite-navigation-transit",
+    "friendly_name": "First Satellite Navigation System",
+    "year": 1960,
+    "category": "inventions",
+    "description": "The U.S. Navy launched Transit, the first satellite navigation system, a precursor to GPS.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-smartphone-ibm-simon",
+    "friendly_name": "First Smartphone Released",
+    "year": 1994,
+    "category": "inventions",
+    "description": "IBM Simon, the first smartphone with a touchscreen, went on sale to consumers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "stereolithography-3d-printing",
+    "friendly_name": "3D Printing Invented",
+    "year": 1984,
+    "category": "inventions",
+    "description": "Chuck Hull invented stereolithography, the first 3D printing technology for creating solid objects.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "eniac-computer-unveiled",
+    "friendly_name": "ENIAC Computer Unveiled",
+    "year": 1946,
+    "category": "inventions",
+    "description": "ENIAC, the first general-purpose electronic computer, was unveiled at the University of Pennsylvania.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trinity-nuclear-test",
+    "friendly_name": "First Nuclear Bomb Tested",
+    "year": 1945,
+    "category": "inventions",
+    "description": "The Trinity test in New Mexico detonated the first nuclear weapon, ushering in the atomic age.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "crispr-human-therapy",
+    "friendly_name": "CRISPR Used on Humans",
+    "year": 2020,
+    "category": "inventions",
+    "description": "CRISPR gene-editing therapy was first used to treat sickle cell disease in patients.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-human-blood-transfusion",
+    "friendly_name": "First Blood Transfusion",
+    "year": 1667,
+    "category": "inventions",
+    "description": "French physician Jean-Baptiste Denys performed the first documented blood transfusion on a human.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bifocal-glasses-franklin",
+    "friendly_name": "Bifocal Glasses Invented",
+    "year": 1784,
+    "category": "inventions",
+    "description": "Benjamin Franklin invented bifocal eyeglasses, combining distance and reading lenses.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nes-released",
+    "friendly_name": "Nintendo NES Released",
+    "year": 1985,
+    "category": "inventions",
+    "description": "Nintendo released the NES in North America, reviving the home video game industry.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sony-playstation-released",
+    "friendly_name": "PlayStation Released",
+    "year": 1994,
+    "category": "inventions",
+    "description": "Sony released the PlayStation in Japan, establishing a dominant console gaming brand.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "microsoft-windows-95",
+    "friendly_name": "Windows 95 Released",
+    "year": 1995,
+    "category": "inventions",
+    "description": "Microsoft launched Windows 95, bringing the graphical desktop interface to the masses.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "netflix-streaming-launches",
+    "friendly_name": "Netflix Streaming Launches",
+    "year": 2007,
+    "category": "inventions",
+    "description": "Netflix launched its streaming service, beginning the shift from physical media to digital.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "uber-rideshare-founded",
+    "friendly_name": "Uber Founded",
+    "year": 2009,
+    "category": "inventions",
+    "description": "Uber was founded in San Francisco, pioneering the ride-sharing gig economy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gpt-language-model",
+    "friendly_name": "GPT Language Model Released",
+    "year": 2018,
+    "category": "inventions",
+    "description": "OpenAI released GPT, a transformer-based language model that advanced AI text generation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tiktok-global-launch",
+    "friendly_name": "TikTok Launches Globally",
+    "year": 2018,
+    "category": "cultural",
+    "description": "TikTok merged with Musical.ly and launched globally, becoming a dominant short-video platform.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "cleopatra-vii-queen",
+    "friendly_name": "Cleopatra Becomes Queen",
+    "year": -51,
+    "category": "diplomatic",
+    "description": "Cleopatra VII became co-ruler of Egypt, the last active ruler of the Ptolemaic Kingdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "terracotta-warriors-discovered",
+    "friendly_name": "Terracotta Warriors Discovered",
+    "year": 1974,
+    "category": "exploration",
+    "description": "Farmers in Xi'an, China accidentally discovered thousands of life-sized terracotta warriors.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "otzi-iceman-discovered",
+    "friendly_name": "Ötzi the Iceman Found",
+    "year": 1991,
+    "category": "exploration",
+    "description": "Hikers discovered a 5,300-year-old mummified man preserved in an Alpine glacier.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "neanderthal-discovery",
+    "friendly_name": "Neanderthal Bones Discovered",
+    "year": 1856,
+    "category": "exploration",
+    "description": "Workers in Germany's Neander Valley found bones of an ancient human species.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "alcock-brown-transatlantic",
+    "friendly_name": "First Nonstop Transatlantic Flight",
+    "year": 1919,
+    "category": "exploration",
+    "description": "Alcock and Brown completed the first nonstop transatlantic flight from Newfoundland to Ireland.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cuban-missile-crisis-standoff",
+    "friendly_name": "Cuban Missile Crisis",
+    "year": 1962,
+    "category": "conflict",
+    "description": "A 13-day standoff between the US and Soviet Union brought the world to the brink of nuclear war.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "petra-treasury-carved",
+    "friendly_name": "Petra Treasury Carved",
+    "year": -100,
+    "category": "infrastructure",
+    "description": "The Nabataeans carved the Treasury at Petra into sandstone cliffs in modern-day Jordan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-fifa-world-cup",
+    "friendly_name": "First FIFA World Cup",
+    "year": 1930,
+    "category": "cultural",
+    "description": "Uruguay hosted and won the first FIFA World Cup football tournament.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-super-bowl-game",
+    "friendly_name": "First Super Bowl",
+    "year": 1967,
+    "category": "cultural",
+    "description": "The Green Bay Packers won the first AFL-NFL Championship Game, later called the Super Bowl.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beethoven-moonlight-sonata",
+    "friendly_name": "Moonlight Sonata Composed",
+    "year": 1801,
+    "category": "cultural",
+    "description": "Beethoven composed his Piano Sonata No. 14, nicknamed the 'Moonlight Sonata.'",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shakespeare-romeo-juliet",
+    "friendly_name": "Romeo and Juliet Written",
+    "year": 1597,
+    "category": "cultural",
+    "description": "Shakespeare published Romeo and Juliet, one of the most enduring love stories ever written.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-color-photograph",
+    "friendly_name": "First Color Photograph",
+    "year": 1861,
+    "category": "inventions",
+    "description": "James Clerk Maxwell produced the first color photograph using three color-filtered images.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "concorde-maiden-flight",
+    "friendly_name": "Concorde First Flight",
+    "year": 1969,
+    "category": "inventions",
+    "description": "The Concorde supersonic airliner made its maiden flight, flying passengers at twice the speed of sound.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-antibiotic-prontosil",
+    "friendly_name": "First Sulfa Drug Used",
+    "year": 1935,
+    "category": "inventions",
+    "description": "Gerhard Domagk demonstrated Prontosil, the first commercially available antibacterial drug.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mp3-audio-format",
+    "friendly_name": "MP3 Format Created",
+    "year": 1993,
+    "category": "inventions",
+    "description": "The Fraunhofer Institute released the MP3 audio format, enabling digital music distribution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-spam-email",
+    "friendly_name": "First Spam Email Sent",
+    "year": 1978,
+    "category": "inventions",
+    "description": "Gary Thuerk sent the first unsolicited mass email to 400 ARPANET users promoting DEC computers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-exhibition-london",
+    "friendly_name": "Great Exhibition Opens",
+    "year": 1851,
+    "category": "cultural",
+    "description": "The first World's Fair opened in London's Crystal Palace, showcasing industrial innovation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fall-inca-empire",
+    "friendly_name": "Fall of the Inca Empire",
+    "year": 1533,
+    "category": "conflict",
+    "description": "Francisco Pizarro executed Inca emperor Atahualpa, bringing the Inca Empire under Spanish control.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "atomic-clock-first",
+    "friendly_name": "Atomic Clock Invented",
+    "year": 1949,
+    "category": "inventions",
+    "description": "NIST built the first atomic clock, using ammonia molecules for unprecedented timekeeping accuracy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "richter-scale-developed",
+    "friendly_name": "Richter Scale Invented",
+    "year": 1935,
+    "category": "inventions",
+    "description": "Charles Richter developed the magnitude scale for measuring earthquake strength.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "azt-hiv-treatment",
+    "friendly_name": "First HIV Treatment Approved",
+    "year": 1987,
+    "category": "inventions",
+    "description": "AZT became the first FDA-approved drug to treat HIV/AIDS, extending patients' lives.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "insulin-pump-developed",
+    "friendly_name": "Insulin Pump Invented",
+    "year": 1978,
+    "category": "inventions",
+    "description": "Dean Kamen developed the first wearable insulin pump for continuous diabetes management.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-3g-mobile-network",
+    "friendly_name": "First 3G Network Launched",
+    "year": 2001,
+    "category": "inventions",
+    "description": "NTT DoCoMo launched the first 3G mobile network in Japan, enabling mobile internet.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "airbnb-founded",
+    "friendly_name": "Airbnb Founded",
+    "year": 2008,
+    "category": "cultural",
+    "description": "Brian Chesky and Joe Gebbia launched Airbnb, disrupting the hospitality industry with home sharing.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "panama-papers-leak",
+    "friendly_name": "Panama Papers Leaked",
+    "year": 2016,
+    "category": "diplomatic",
+    "description": "A massive leak of financial documents exposed offshore tax havens used by world leaders and celebrities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mongol-empire-greatest-extent",
+    "friendly_name": "Mongol Empire at Peak",
+    "year": 1279,
+    "category": "conflict",
+    "description": "Under Kublai Khan, the Mongol Empire reached its greatest extent, the largest contiguous land empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jikji-metal-movable-type",
+    "friendly_name": "Oldest Metal Movable Type Book",
+    "year": 1377,
+    "category": "inventions",
+    "description": "Korean monks printed the Jikji, the oldest known book printed with movable metal type.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rinderpest-eradicated",
+    "friendly_name": "Rinderpest Eradicated",
+    "year": 2011,
+    "category": "exploration",
+    "description": "Rinderpest became the second disease (after smallpox) to be eradicated through vaccination.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "panama-canal-expanded",
+    "friendly_name": "Panama Canal Expansion Opens",
+    "year": 2016,
+    "category": "infrastructure",
+    "description": "A $5.25 billion expansion doubled the Panama Canal's capacity with new, larger locks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pompeii-excavation-begins",
+    "friendly_name": "Pompeii Rediscovered",
+    "year": 1748,
+    "category": "exploration",
+    "description": "Spanish engineer Rocque Joaquin de Alcubierre led excavations that rediscovered the buried Roman city.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cosmic-microwave-background",
+    "friendly_name": "Cosmic Background Radiation Discovered",
+    "year": 1965,
+    "category": "exploration",
+    "description": "Penzias and Wilson accidentally discovered cosmic background radiation, confirming the Big Bang theory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "voyager-2-neptune",
+    "friendly_name": "Voyager 2 Reaches Neptune",
+    "year": 1989,
+    "category": "exploration",
+    "description": "Voyager 2 completed the first and only flyby of Neptune, revealing its Great Dark Spot.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rosie-riveter-poster",
+    "friendly_name": "Rosie the Riveter Campaign",
+    "year": 1943,
+    "category": "cultural",
+    "description": "The 'We Can Do It!' poster became a symbol of women entering the workforce during World War II.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scopes-trial-evolution",
+    "friendly_name": "Scopes Monkey Trial",
+    "year": 1925,
+    "category": "cultural",
+    "description": "A Tennessee teacher was tried for teaching evolution, in a landmark debate over science and religion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ted-conference",
+    "friendly_name": "First TED Conference",
+    "year": 1984,
+    "category": "cultural",
+    "description": "The first TED conference was held in Monterey, California, focusing on technology, entertainment, and design.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paris-catacombs-created",
+    "friendly_name": "Paris Catacombs Created",
+    "year": 1786,
+    "category": "infrastructure",
+    "description": "Paris began transferring remains to underground tunnels, creating the famous Catacombs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tcp-ip-adopted",
+    "friendly_name": "TCP/IP Protocol Adopted",
+    "year": 1983,
+    "category": "inventions",
+    "description": "ARPANET adopted TCP/IP, the protocol that became the foundation of the modern internet.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-electric-guitar-rickenbacker",
+    "friendly_name": "Electric Guitar Invented",
+    "year": 1931,
+    "category": "inventions",
+    "description": "George Beauchamp and Adolph Rickenbacker created the first commercially viable electric guitar.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "xerox-alto-gui",
+    "friendly_name": "Xerox Alto Computer",
+    "year": 1973,
+    "category": "inventions",
+    "description": "Xerox PARC developed the Alto, the first computer with a graphical user interface and mouse.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "apple-macintosh-1984",
+    "friendly_name": "Apple Macintosh Released",
+    "year": 1984,
+    "category": "inventions",
+    "description": "Apple released the Macintosh, popularizing the graphical user interface for personal computers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-sms-text-message",
+    "friendly_name": "First Text Message Sent",
+    "year": 1992,
+    "category": "inventions",
+    "description": "Neil Papworth sent the first SMS text message, reading 'Merry Christmas,' to a Vodafone phone.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-electric-car-parker",
+    "friendly_name": "First Electric Car Built",
+    "year": 1884,
+    "category": "inventions",
+    "description": "Thomas Parker built one of the first practical electric cars in Wolverhampton, England.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peloponnesian-war-ends-athens",
+    "friendly_name": "Peloponnesian War Ends",
+    "year": -404,
+    "category": "conflict",
+    "description": "Sparta defeated Athens, ending the 27-year Peloponnesian War and Athenian dominance in Greece.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "year-of-africa-1960",
+    "friendly_name": "Year of Africa",
+    "year": 1960,
+    "category": "diplomatic",
+    "description": "Seventeen African nations gained independence in a single year, reshaping the global political map.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-woman-in-parliament",
+    "friendly_name": "First Woman Elected to Parliament",
+    "year": 1907,
+    "category": "diplomatic",
+    "description": "Finland became the first country to elect women to national parliament, a global first.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lake-peigneur-sinkhole",
+    "friendly_name": "Lake Peigneur Disappears",
+    "year": 1980,
+    "category": "disasters",
+    "description": "A drilling mishap caused Lake Peigneur in Louisiana to drain into a salt mine, swallowing barges whole.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antioch-earthquake-ad-115",
+    "friendly_name": "Antioch Earthquake 115 AD",
+    "year": 115,
+    "category": "disasters",
+    "description": "A massive earthquake struck Antioch while Emperor Trajan was visiting, killing an estimated 260,000.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tokyo-firebombing",
+    "friendly_name": "Tokyo Firebombing",
+    "year": 1945,
+    "category": "disasters",
+    "description": "US bombers dropped incendiary bombs on Tokyo, killing over 100,000 civilians in the deadliest air raid.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aral-sea-drying",
+    "friendly_name": "Aral Sea Begins Drying",
+    "year": 1960,
+    "category": "disasters",
+    "description": "Soviet irrigation projects began diverting rivers, eventually shrinking the Aral Sea to 10% of its size.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cuyahoga-river-fire",
+    "friendly_name": "Cuyahoga River Catches Fire",
+    "year": 1969,
+    "category": "disasters",
+    "description": "Ohio's Cuyahoga River caught fire from pollution, galvanizing the modern environmental movement.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ozone-hole-discovered",
+    "friendly_name": "Ozone Hole Discovered",
+    "year": 1985,
+    "category": "exploration",
+    "description": "British scientists discovered a hole in the ozone layer over Antarctica, leading to a global CFC ban.",
+    "difficulty": "medium"
+  }
+]

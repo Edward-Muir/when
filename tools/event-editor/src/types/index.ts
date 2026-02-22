@@ -1,19 +1,4 @@
-export type Category =
-  | 'conflict'
-  | 'disasters'
-  | 'exploration'
-  | 'cultural'
-  | 'infrastructure'
-  | 'diplomatic';
-
-export const ALL_CATEGORIES: Category[] = [
-  'conflict',
-  'cultural',
-  'diplomatic',
-  'disasters',
-  'exploration',
-  'infrastructure',
-];
+export type Category = string;
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';
 
@@ -38,17 +23,11 @@ export interface DeprecatedEvent extends HistoricalEvent {
   _deprecatedAt: string;
 }
 
-export interface EventsByCategory {
-  conflict: HistoricalEvent[];
-  cultural: HistoricalEvent[];
-  diplomatic: HistoricalEvent[];
-  disasters: HistoricalEvent[];
-  exploration: HistoricalEvent[];
-  infrastructure: HistoricalEvent[];
+export type EventsByCategory = Record<string, HistoricalEvent[]> & {
   deprecated: DeprecatedEvent[];
-}
+};
 
-export type CategoryOrDeprecated = Category | 'deprecated';
+export type CategoryOrDeprecated = string;
 
 export interface WikiSearchResult {
   title: string;

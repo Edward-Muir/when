@@ -1,20 +1,20 @@
 import { useState } from 'react';
 import { FolderInput } from 'lucide-react';
-import type { Category } from '../../types';
-import { ALL_CATEGORIES } from '../../types';
 
 interface ChangeCategoryDialogProps {
-  currentCategory: Category;
+  currentCategory: string;
+  categories: string[];
   onClose: () => void;
-  onConfirm: (newCategory: Category) => Promise<void>;
+  onConfirm: (newCategory: string) => Promise<void>;
 }
 
 export function ChangeCategoryDialog({
   currentCategory,
+  categories,
   onClose,
   onConfirm,
 }: ChangeCategoryDialogProps) {
-  const [selectedCategory, setSelectedCategory] = useState<Category>(currentCategory);
+  const [selectedCategory, setSelectedCategory] = useState(currentCategory);
   const [isMoving, setIsMoving] = useState(false);
 
   const handleConfirm = async () => {
@@ -47,7 +47,7 @@ export function ChangeCategoryDialog({
         </p>
 
         <div className="mb-6 space-y-2">
-          {ALL_CATEGORIES.map((category) => (
+          {categories.map((category) => (
             <label
               key={category}
               className={`flex cursor-pointer items-center gap-3 rounded border p-3 transition-colors ${

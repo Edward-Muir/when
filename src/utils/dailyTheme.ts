@@ -14,15 +14,15 @@ export interface DailyTheme {
  */
 export function getDailyTheme(seed: string): DailyTheme {
   const random = seededRandom(stringToSeed(seed));
-  // Weighted selection: 6 categories (weight 1 each) + "Everything" (weight 2)
-  // Total weights = 8
-  const roll = Math.floor(random() * 8);
+  // Weighted selection: 7 categories (weight 1 each) + "Everything" (weight 2)
+  // Total weights = 9
+  const roll = Math.floor(random() * 9);
 
-  if (roll >= 6) {
-    // "Everything" - indices 6 and 7 (2/8 = 25% chance)
+  if (roll >= 7) {
+    // "Everything" - indices 7 and 8 (2/9 = 22.2% chance)
     return { type: 'all', value: null };
   } else {
-    // Single category - indices 0-5 (each 1/8 = 12.5% chance)
+    // Single category - indices 0-6 (each 1/9 = 11.1% chance)
     // eslint-disable-next-line security/detect-object-injection
     return { type: 'category', value: ALL_CATEGORIES[roll] };
   }
