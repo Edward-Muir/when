@@ -109,7 +109,7 @@ const Game: React.FC<GameProps> = ({
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
-  const { haptics } = useHaptics();
+  const { haptics, vibrate } = useHaptics();
 
   // Prefetch leaderboard for daily mode
   const { fetchLeaderboard } = useLeaderboard();
@@ -164,9 +164,7 @@ const Game: React.FC<GameProps> = ({
         setShowConfetti(true);
         setTimeout(() => setShowConfetti(false), 2000);
         // Use streak-based haptic pattern
-        if (navigator.vibrate) {
-          navigator.vibrate(streakFeedbackRef.current.hapticPattern);
-        }
+        vibrate(streakFeedbackRef.current.hapticPattern);
       } else {
         triggerShake('medium');
         haptics.error();
@@ -175,7 +173,7 @@ const Game: React.FC<GameProps> = ({
       setTimeout(() => setNewEventName(undefined), 1000);
     }
     prevPlacementRef.current = state.lastPlacementResult;
-  }, [state.lastPlacementResult, state.currentStreak, haptics, triggerShake]);
+  }, [state.lastPlacementResult, state.currentStreak, haptics, vibrate, triggerShake]);
 
   // Show game over popup when game ends
   useEffect(() => {

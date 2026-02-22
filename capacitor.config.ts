@@ -7,6 +7,7 @@ const config: CapacitorConfig = {
   server: {
     url: 'https://play-when.com',
     cleartext: false,
+    allowNavigation: ['play-when.com', '*.play-when.com'],
   },
   plugins: {
     SplashScreen: {

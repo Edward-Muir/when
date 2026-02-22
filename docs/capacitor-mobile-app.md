@@ -15,6 +15,7 @@ The "When?" web app is wrapped as a native iOS (and eventually Android) app usin
 - `@capacitor/ios` — iOS platform support
 - `@capacitor/status-bar` — Native status bar control
 - `@capacitor/splash-screen` — Native splash screen
+- `@capacitor/haptics` — Native Taptic Engine haptic feedback
 
 ### Configuration
 
@@ -150,7 +151,7 @@ npm run cap:open:android  # Open Android project in Android Studio
 - **Routing** — BrowserRouter loads play-when.com routes normally
 - **Dark mode** — CSS variables respect system preference
 - **Share** — `navigator.share` works in Capacitor WebViews
-- **Haptics** — Web Vibration API works
+- **Haptics** — Native Taptic Engine via `@capacitor/haptics`, Web Vibration API fallback for browsers
 - **Safe areas** — `viewport-fit=cover` and `env(safe-area-inset-*)` already in place
 - **Service worker** — Caches and serves from play-when.com as normal
 - **PWA install button** — Auto-hidden (Capacitor WebView runs in standalone mode)
