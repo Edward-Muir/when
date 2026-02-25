@@ -1,12 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { fileURLToPath } from 'url';
+import { markSelfWrite } from './fileWatcher.js';
+import { EVENTS_DIR, DEPRECATED_FILE } from './paths.js';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
-// Path to the main app's events directory
-export const EVENTS_DIR = path.resolve(__dirname, '../../../../public/events');
-export const DEPRECATED_FILE = path.join(EVENTS_DIR, 'deprecated.json');
+export { EVENTS_DIR, DEPRECATED_FILE };
 
 export interface HistoricalEvent {
   name: string;
@@ -65,6 +62,9 @@ export async function writeEventFile(
       // File doesn't exist yet, no backup needed
     }
   }
+
+  // Mark as self-triggered so the file watcher ignores this change
+  markSelfWrite();
 
   // Write with pretty printing
   await fs.writeFile(filepath, JSON.stringify(events, null, 2) + '\n');

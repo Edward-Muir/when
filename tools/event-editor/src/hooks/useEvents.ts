@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
 import type { HistoricalEvent, EventsByCategory, CategoryOrDeprecated } from '../types';
 import * as api from '../api/client';
 
@@ -54,6 +54,10 @@ export function useEvents(): UseEventsReturn {
 
   const [pendingChanges, setPendingChanges] = useState<Map<string, HistoricalEvent>>(new Map());
 
+  // Ref so the SSE effect can read current pending changes without re-subscribing
+  const pendingChangesRef = useRef(pendingChanges);
+  pendingChangesRef.current = pendingChanges;
+
   // Load all events on mount
   const refreshEvents = useCallback(async () => {
     setIsLoading(true);
@@ -70,6 +74,36 @@ export function useEvents(): UseEventsReturn {
 
   useEffect(() => {
     refreshEvents();
+  }, [refreshEvents]);
+
+  // SSE subscription for external file changes
+  useEffect(() => {
+    const eventSource = new EventSource('/api/events/stream');
+
+    eventSource.onmessage = (event) => {
+      try {
+        const data = JSON.parse(event.data);
+
+        if (data.type === 'events-changed') {
+          if (pendingChangesRef.current.size > 0) {
+            console.log('[SSE] External change detected, skipping refresh (unsaved changes)');
+            return;
+          }
+          console.log('[SSE] External change detected, refreshing events');
+          refreshEvents();
+        }
+      } catch {
+        // Ignore parse errors (e.g., keepalive comments)
+      }
+    };
+
+    eventSource.onerror = () => {
+      console.log('[SSE] Connection error, will auto-reconnect');
+    };
+
+    return () => {
+      eventSource.close();
+    };
   }, [refreshEvents]);
 
   // Get current event
