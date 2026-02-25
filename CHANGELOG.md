@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.9](https://github.com/Edward-Muir/when/compare/v0.5.8...v0.5.9) (2026-02-25)
+
+
+### Bug Fixes
+
+* Only 6 categories not 7 ([64bffd4](https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6))
+
 ## [0.5.8](https://github.com/Edward-Muir/when/compare/v0.5.7...v0.5.8) (2026-02-22)
 
 

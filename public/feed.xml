@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Feb 2026 22:36:14 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Feb 2026 20:47:01 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.5.9</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.5.9</guid>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Only 6 categories not 7 (<a href="https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6">64bffd4</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.5.8</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.0</guid>
       <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Use react router, make challenge share directly to game (<a href="https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226">9d767b1</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.4.8</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.4.8</guid>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix generation (<a href="https://github.com/Edward-Muir/when/commit/dfb6342e7e47d69a8b13d498545c30cc2decb754">dfb6342</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
