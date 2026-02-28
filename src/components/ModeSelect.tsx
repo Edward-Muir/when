@@ -71,13 +71,13 @@ const MiniLeaderboard: React.FC<{
       {isLoading ? (
         <div className="space-y-1">
           {[0, 1, 2, 3].map((i) => (
-            <div key={i} className="flex items-center gap-2 py-0.5">
-              <div className="w-5 h-4 bg-border/50 rounded animate-pulse" />
+            <div key={i} className="flex items-center gap-2 text-sm py-0.5">
+              <div className="w-5 h-[1em] bg-border rounded animate-pulse" />
               <div
-                className="flex-1 h-4 bg-border/50 rounded animate-pulse"
+                className="flex-1 h-[1em] bg-border rounded animate-pulse"
                 style={{ width: `${65 - i * 10}%` }}
               />
-              <div className="w-6 h-4 bg-border/50 rounded animate-pulse flex-shrink-0" />
+              <div className="w-6 h-[1em] bg-border rounded animate-pulse flex-shrink-0" />
             </div>
           ))}
         </div>
@@ -272,7 +272,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-14 pb-safe overflow-auto transition-colors"
+      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-20 pb-safe overflow-auto transition-colors"
     >
       {/* Top Bar */}
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />

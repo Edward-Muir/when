@@ -36,7 +36,7 @@ export function useLeaderboard() {
     submitError: null,
     rank: null,
     totalPlayers: null,
-    isLoading: false,
+    isLoading: true,
     loadError: null,
     data: null,
   });

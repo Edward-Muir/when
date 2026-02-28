@@ -104,7 +104,18 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             {/* Entries */}
             <div className="overflow-y-auto flex-1">
               {isLoading ? (
-                <div className="p-8 text-center text-text-muted font-body">Loading...</div>
+                <div className="divide-y divide-border">
+                  {[0, 1, 2, 3, 4].map((i) => (
+                    <div key={i} className="px-4 py-3 flex items-center gap-3">
+                      <div className="w-8 h-6 bg-border rounded animate-pulse shrink-0" />
+                      <div
+                        className="h-5 bg-border rounded animate-pulse"
+                        style={{ width: `${70 - i * 8}%` }}
+                      />
+                      <div className="w-8 h-6 bg-border rounded animate-pulse shrink-0" />
+                    </div>
+                  ))}
+                </div>
               ) : error ? (
                 <div className="p-8 text-center text-error font-body">{error}</div>
               ) : entries.length === 0 ? (
