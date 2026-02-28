@@ -105,23 +105,25 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
 
         <div className="space-y-4">
           {/* Game Mode Selector */}
-          <div className="flex gap-1 p-1 rounded-xl bg-border/50">
+          <div className="flex gap-2">
             <button
               onClick={() => setIsSuddenDeath(true)}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all font-body ${
-                isSuddenDeath ? 'bg-accent text-white shadow-sm' : 'text-text-muted hover:bg-border'
+              className={`flex-1 flex items-center gap-2.5 py-3 px-3.5 rounded-lg transition-all font-body ${
+                isSuddenDeath
+                  ? 'bg-accent text-white shadow-sm'
+                  : 'bg-border text-text-muted hover:bg-accent/20'
               }`}
             >
-              <TrendingUp className="w-4 h-4" />
+              <TrendingUp className="w-4 h-4 flex-shrink-0" />
               <div className="text-left">
-                <div className="text-sm font-medium">Marathon</div>
+                <div className="text-sm font-medium leading-tight">Marathon</div>
                 <div
-                  className={`text-[10px] ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                  className={`text-[10px] leading-tight mt-0.5 ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
                 >
                   Longest timeline
                 </div>
                 <div
-                  className={`text-[10px] ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                  className={`text-[10px] leading-tight ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
                 >
                   Draw when right
                 </div>
@@ -129,22 +131,22 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
             </button>
             <button
               onClick={() => setIsSuddenDeath(false)}
-              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all font-body ${
+              className={`flex-1 flex items-center gap-2.5 py-3 px-3.5 rounded-lg transition-all font-body ${
                 !isSuddenDeath
                   ? 'bg-accent text-white shadow-sm'
-                  : 'text-text-muted hover:bg-border'
+                  : 'bg-border text-text-muted hover:bg-accent/20'
               }`}
             >
-              <Hourglass className="w-4 h-4" />
+              <Hourglass className="w-4 h-4 flex-shrink-0" />
               <div className="text-left">
-                <div className="text-sm font-medium">Classic</div>
+                <div className="text-sm font-medium leading-tight">Classic</div>
                 <div
-                  className={`text-[10px] ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                  className={`text-[10px] leading-tight mt-0.5 ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
                 >
                   Empty your hand
                 </div>
                 <div
-                  className={`text-[10px] ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                  className={`text-[10px] leading-tight ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
                 >
                   Draw when wrong
                 </div>
@@ -172,7 +174,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-text-muted mt-1 font-body">
-                Place events correctly to draw new cards.
+                Place events correctly to draw cards. Make the longest timeline!
               </p>
             </div>
           ) : (
@@ -194,7 +196,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
                 </span>
               </div>
               <p className="text-[10px] text-text-muted mt-1 font-body">
-                Number of cards dealt to each player. Draw a card if incorrect.
+                Be the first to play all your cards. Draw a card if incorrect.
               </p>
             </div>
           )}
