@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.7.1](https://github.com/Edward-Muir/when/compare/v0.7.0...v0.7.1) (2026-02-28)
+
+
+### Features
+
+* Improve custom mode UX ([7992c3f](https://github.com/Edward-Muir/when/commit/7992c3f8eb97baf1728fd93174f4251020462555))
+
 ## [0.7.0](https://github.com/Edward-Muir/when/compare/v0.6.0...v0.7.0) (2026-02-28)
 
 
