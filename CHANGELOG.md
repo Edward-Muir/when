@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.7.0](https://github.com/Edward-Muir/when/compare/v0.6.0...v0.7.0) (2026-02-28)
+
+
+### Features
+
+* Make the custom game work flow simpler ([890d041](https://github.com/Edward-Muir/when/commit/890d0411c02621523b451533f84c48559d45f479))
+
 ## [0.6.0](https://github.com/Edward-Muir/when/compare/v0.5.10...v0.6.0) (2026-02-28)
 
 
