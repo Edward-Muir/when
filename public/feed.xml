@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 19:02:16 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 20:14:32 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.6.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.6.0</guid>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add leaderboard placeholder for loading (<a href="https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c">17ece49</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Fix placeholder spacing (<a href="https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7">93c7418</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.5.10</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.2</guid>
       <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add Streak indicator and animations (<a href="https://github.com/Edward-Muir/when/commit/d02077a1fe9e7529f4b918190c6a0a0b5fb24bfc">d02077a</a>)</li> <li>Add Streak indicator and animations (<a href="https://github.com/Edward-Muir/when/commit/9042fd9a0e928d589d72766654c39d411bb92de4">9042fd9</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.1</guid>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add description to incorrect card (<a href="https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839">3bc2cf0</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Stop accidental leaderboard dismissal (<a href="https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5">19f0dab</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

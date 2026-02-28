@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.6.0](https://github.com/Edward-Muir/when/compare/v0.5.10...v0.6.0) (2026-02-28)
+
+
+### Features
+
+* Add leaderboard placeholder for loading ([17ece49](https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c))
+
+
+### Bug Fixes
+
+* Fix placeholder spacing ([93c7418](https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7))
+
 ## [0.5.10](https://github.com/Edward-Muir/when/compare/v0.5.9...v0.5.10) (2026-02-28)
 
 
