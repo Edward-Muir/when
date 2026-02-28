@@ -68,38 +68,43 @@ const MiniLeaderboard: React.FC<{
         <Trophy className="w-3.5 h-3.5" />
         <span>Longest Timelines</span>
       </div>
-      {isLoading ? (
-        <div className="space-y-1">
-          {[0, 1, 2, 3].map((i) => (
-            <div key={i} className="flex items-center gap-2 text-sm py-0.5">
-              <div className="w-5 h-[1em] bg-border rounded animate-pulse" />
-              <div
-                className="flex-1 h-[1em] bg-border rounded animate-pulse"
-                style={{ width: `${65 - i * 10}%` }}
-              />
-              <div className="w-6 h-[1em] bg-border rounded animate-pulse flex-shrink-0" />
-            </div>
-          ))}
-        </div>
-      ) : top4.length === 0 ? (
+      {!isLoading && top4.length === 0 ? (
         <div className="text-sm text-text-muted font-body text-center mt-4">
           No entries yet. Be the first!
         </div>
       ) : (
         <div className="space-y-1">
-          {top4.map((entry, index) => (
-            <div key={index} className="flex items-center gap-2 text-sm py-0.5">
-              <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
-                {entry.rank}
-              </span>
-              <span className="flex-1 text-left truncate text-text font-body">
-                {entry.displayName}
-              </span>
-              <span className="font-body text-accent font-semibold flex-shrink-0">
-                {entry.correctCount}
-              </span>
-            </div>
-          ))}
+          {[0, 1, 2, 3].map((i) => {
+            const entry = !isLoading ? (top4.at(i) ?? null) : null;
+            return (
+              <div key={i} className="flex items-center gap-2 text-sm py-0.5">
+                {entry ? (
+                  <>
+                    <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
+                      {entry.rank}
+                    </span>
+                    <span className="flex-1 text-left truncate text-text font-body">
+                      {entry.displayName}
+                    </span>
+                    <span className="font-body text-accent font-semibold flex-shrink-0">
+                      {entry.correctCount}
+                    </span>
+                  </>
+                ) : isLoading ? (
+                  <>
+                    <div className="w-5 h-5 bg-border rounded animate-pulse" />
+                    <div
+                      className="flex-1 h-5 bg-border rounded animate-pulse"
+                      style={{ width: `${65 - i * 10}%` }}
+                    />
+                    <div className="w-6 h-5 bg-border rounded animate-pulse flex-shrink-0" />
+                  </>
+                ) : (
+                  <span className="flex-1 invisible">&nbsp;</span>
+                )}
+              </div>
+            );
+          })}
         </div>
       )}
       {entries.length > 4 && (
