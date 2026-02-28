@@ -20,7 +20,7 @@ export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';
 export const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard', 'very-hard'];
 
 // Default difficulties exclude 'hard' and 'very-hard' (specialized/niche events)
-export const DEFAULT_DIFFICULTIES: Difficulty[] = ['easy', 'medium'];
+export const DEFAULT_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
 
 export type Era =
   | 'prehistory'

@@ -2,6 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { getMedalEmoji } from '../utils/leaderboardUtils';
 
 interface LeaderboardProps {
   isOpen: boolean;
@@ -12,19 +13,6 @@ interface LeaderboardProps {
   playerEntry: LeaderboardEntry | null;
   isLoading?: boolean;
   error?: string | null;
-}
-
-function getMedalEmoji(rank: number): string {
-  switch (rank) {
-    case 1:
-      return '🥇';
-    case 2:
-      return '🥈';
-    case 3:
-      return '🥉';
-    default:
-      return '';
-  }
 }
 
 const Leaderboard: React.FC<LeaderboardProps> = ({

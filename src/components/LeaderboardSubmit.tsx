@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Trophy } from 'lucide-react';
 import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
 import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
+import { getMedalEmoji } from '../utils/leaderboardUtils';
 import {
   DailyResult,
   getDisplayName,
@@ -23,19 +24,6 @@ function generateRandomName(): string {
 interface LeaderboardSubmitProps {
   dailyResult: DailyResult;
   onSubmitted?: () => void;
-}
-
-function getMedalEmoji(rank: number): string {
-  switch (rank) {
-    case 1:
-      return '🥇';
-    case 2:
-      return '🥈';
-    case 3:
-      return '🥉';
-    default:
-      return '';
-  }
 }
 
 // Leaderboard preview showing top 3 + player's entry if outside top 3
