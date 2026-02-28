@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Hourglass, Play } from 'lucide-react';
+import { X, Hourglass, TrendingUp, Play } from 'lucide-react';
 import { Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import FilterControls from './FilterControls';
@@ -82,42 +82,81 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
       {/* Modal */}
       <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-md w-full max-h-[85vh] overflow-y-auto border border-border">
         {/* Header */}
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between mb-3">
           <h2 className="text-xl font-bold text-text font-display">Game Settings</h2>
           <button onClick={onClose} className="p-2 hover:bg-border rounded-full transition-colors">
             <X className="w-5 h-5 text-text-muted" />
           </button>
         </div>
 
+        {/* Play button */}
+        <button
+          onClick={onPlay}
+          disabled={!isPlayValid}
+          className={`w-full mb-4 py-3 px-6 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+            isPlayValid
+              ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
+              : 'bg-border text-text-muted cursor-not-allowed'
+          }`}
+        >
+          <Play className="w-4 h-4" />
+          Play
+        </button>
+
         <div className="space-y-4">
-          {/* Classic Mode Toggle */}
-          <div className="flex items-center justify-between p-3 rounded-xl bg-accent/10 border border-accent/20">
-            <div className="flex items-center gap-2">
-              <Hourglass
-                className={`w-4 h-4 ${!isSuddenDeath ? 'text-accent' : 'text-text-muted'}`}
-              />
-              <div>
-                <span className="text-sm font-medium text-text font-body">Classic Mode</span>
-                <p className="text-[10px] text-text-muted font-body">Empty your hand to win</p>
+          {/* Game Mode Selector */}
+          <div className="flex gap-1 p-1 rounded-xl bg-border/50">
+            <button
+              onClick={() => setIsSuddenDeath(true)}
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all font-body ${
+                isSuddenDeath ? 'bg-accent text-white shadow-sm' : 'text-text-muted hover:bg-border'
+              }`}
+            >
+              <TrendingUp className="w-4 h-4" />
+              <div className="text-left">
+                <div className="text-sm font-medium">Marathon</div>
+                <div
+                  className={`text-[10px] ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                >
+                  Longest timeline
+                </div>
+                <div
+                  className={`text-[10px] ${isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                >
+                  Draw when right
+                </div>
               </div>
-            </div>
-            <label className="relative inline-block w-11 h-6 cursor-pointer flex-shrink-0">
-              <input
-                type="checkbox"
-                checked={!isSuddenDeath}
-                onChange={(e) => setIsSuddenDeath(!e.target.checked)}
-                className="peer sr-only"
-              />
-              <div className="w-11 h-6 bg-border rounded-full peer peer-checked:bg-accent transition-colors" />
-              <div className="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow transition-transform peer-checked:translate-x-5" />
-            </label>
+            </button>
+            <button
+              onClick={() => setIsSuddenDeath(false)}
+              className={`flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-lg transition-all font-body ${
+                !isSuddenDeath
+                  ? 'bg-accent text-white shadow-sm'
+                  : 'text-text-muted hover:bg-border'
+              }`}
+            >
+              <Hourglass className="w-4 h-4" />
+              <div className="text-left">
+                <div className="text-sm font-medium">Classic</div>
+                <div
+                  className={`text-[10px] ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                >
+                  Empty your hand
+                </div>
+                <div
+                  className={`text-[10px] ${!isSuddenDeath ? 'text-white/70' : 'text-text-muted/60'}`}
+                >
+                  Draw when wrong
+                </div>
+              </div>
+            </button>
           </div>
 
           {/* Starting Hand Size - different settings for Sudden Death vs regular */}
           {isSuddenDeath ? (
             <div>
               <label className="block text-sm font-medium text-text mb-2 font-body">
-                Starting Cards
+                Starting Hand Size
               </label>
               <div className="flex items-center gap-3">
                 <input
@@ -241,20 +280,6 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
             )}
           </div>
         </div>
-
-        {/* Play button */}
-        <button
-          onClick={onPlay}
-          disabled={!isPlayValid}
-          className={`w-full mt-4 py-3 px-6 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
-            isPlayValid
-              ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
-              : 'bg-border text-text-muted cursor-not-allowed'
-          }`}
-        >
-          <Play className="w-4 h-4" />
-          Play
-        </button>
       </div>
     </div>
   );
