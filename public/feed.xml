@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Feb 2026 20:47:01 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Feb 2026 19:02:16 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.5.10</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.5.10</guid>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Move version indicator (<a href="https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43">df5d0cb</a>)</li> <li>Update game select UI, fix timeline snap back (<a href="https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c">50afd1c</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.5.9</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.1</guid>
       <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add description to incorrect card (<a href="https://github.com/Edward-Muir/when/commit/3bc2cf0809de6a696383a3b60104a72e17399839">3bc2cf0</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Stop accidental leaderboard dismissal (<a href="https://github.com/Edward-Muir/when/commit/19f0dab1bc3506d33fc2219cc069c719760e6fe5">19f0dab</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.0</guid>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Use react router, make challenge share directly to game (<a href="https://github.com/Edward-Muir/when/commit/9d767b17fff34a64bca6d007358e368bbaadb226">9d767b1</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

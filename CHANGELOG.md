@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.5.10](https://github.com/Edward-Muir/when/compare/v0.5.9...v0.5.10) (2026-02-28)
+
+
+### Features
+
+* Move version indicator ([df5d0cb](https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43))
+* Update game select UI, fix timeline snap back ([50afd1c](https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c))
+
 ## [0.5.9](https://github.com/Edward-Muir/when/compare/v0.5.8...v0.5.9) (2026-02-25)
 
 
