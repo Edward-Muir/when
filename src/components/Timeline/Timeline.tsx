@@ -113,23 +113,6 @@ const Timeline: React.FC<TimelineProps> = ({
     }
   }, [events.length]);
 
-  // Auto-scroll to show the new event when added
-  useEffect(() => {
-    if (newEventName && scrollRef.current) {
-      // Small delay to allow the DOM to update
-      setTimeout(() => {
-        const container = scrollRef.current;
-        if (container) {
-          // Scroll to center
-          container.scrollTo({
-            top: container.scrollHeight / 2 - container.clientHeight / 2,
-            behavior: 'smooth',
-          });
-        }
-      }, 100);
-    }
-  }, [newEventName, events.length]);
-
   return (
     <div className="h-full relative">
       {/* Fixed "Earlier" indicator at top with fade */}

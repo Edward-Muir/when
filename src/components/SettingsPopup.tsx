@@ -85,29 +85,6 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
         </div>
 
         <div className="space-y-4">
-          {/* Player Count */}
-          <div>
-            <label className="block text-sm font-medium text-text mb-2 font-body">Players</label>
-            <div className="flex gap-1">
-              {[1, 2, 3, 4, 5, 6].map((num) => (
-                <button
-                  key={num}
-                  onClick={() => onPlayerCountChange(num)}
-                  className={`
-                    flex-1 h-10 rounded-lg text-sm font-medium transition-all font-body
-                    ${
-                      playerCount === num
-                        ? 'bg-accent-secondary text-white shadow-sm'
-                        : 'bg-border text-text-muted hover:bg-accent-secondary/20'
-                    }
-                  `}
-                >
-                  {num}
-                </button>
-              ))}
-            </div>
-          </div>
-
           {/* Classic Mode Toggle */}
           <div className="flex items-center justify-between p-3 rounded-xl bg-accent/10 border border-accent/20">
             <div className="flex items-center gap-2">
@@ -177,6 +154,29 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               </p>
             </div>
           )}
+
+          {/* Player Count */}
+          <div>
+            <label className="block text-sm font-medium text-text mb-2 font-body">Players</label>
+            <div className="flex gap-1">
+              {[1, 2, 3, 4, 5, 6].map((num) => (
+                <button
+                  key={num}
+                  onClick={() => onPlayerCountChange(num)}
+                  className={`
+                    flex-1 h-10 rounded-lg text-sm font-medium transition-all font-body
+                    ${
+                      playerCount === num
+                        ? 'bg-accent text-white shadow-sm'
+                        : 'bg-border text-text-muted hover:bg-accent/20'
+                    }
+                  `}
+                >
+                  {num}
+                </button>
+              ))}
+            </div>
+          </div>
 
           {/* Player Names - only show when more than 1 player */}
           {playerCount > 1 && (

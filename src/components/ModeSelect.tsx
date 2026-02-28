@@ -57,26 +57,37 @@ const MiniLeaderboard: React.FC<{
   isLoading: boolean;
   onOpenFull: () => void;
 }> = ({ entries, isLoading, onOpenFull }) => {
-  const top3 = entries.slice(0, 3);
+  const top4 = entries.slice(0, 4);
 
   return (
     <button
       onClick={onOpenFull}
-      className="mt-4 w-full text-left cursor-pointer rounded-lg hover:bg-bg/50 p-2 pt-3 transition-colors border-t border-border"
+      className="mt-4 w-full text-left cursor-pointer rounded-lg hover:bg-bg/50 p-2 pt-3 transition-colors border-t border-border h-[156px] relative overflow-hidden"
     >
       <div className="flex items-center gap-1.5 text-sm text-text-muted font-medium font-body mb-2">
         <Trophy className="w-3.5 h-3.5" />
-        <span>Leaderboard</span>
+        <span>Longest Timelines</span>
       </div>
       {isLoading ? (
-        <div className="text-sm text-text-muted font-body py-1 text-center">Loading...</div>
-      ) : top3.length === 0 ? (
-        <div className="text-sm text-text-muted font-body py-1 text-center">
+        <div className="space-y-1">
+          {[0, 1, 2, 3].map((i) => (
+            <div key={i} className="flex items-center gap-2 py-0.5">
+              <div className="w-5 h-4 bg-border/50 rounded animate-pulse" />
+              <div
+                className="flex-1 h-4 bg-border/50 rounded animate-pulse"
+                style={{ width: `${65 - i * 10}%` }}
+              />
+              <div className="w-6 h-4 bg-border/50 rounded animate-pulse flex-shrink-0" />
+            </div>
+          ))}
+        </div>
+      ) : top4.length === 0 ? (
+        <div className="text-sm text-text-muted font-body text-center mt-4">
           No entries yet. Be the first!
         </div>
       ) : (
         <div className="space-y-1">
-          {top3.map((entry, index) => (
+          {top4.map((entry, index) => (
             <div key={index} className="flex items-center gap-2 text-sm py-0.5">
               <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
                 {entry.rank}
@@ -90,6 +101,9 @@ const MiniLeaderboard: React.FC<{
             </div>
           ))}
         </div>
+      )}
+      {entries.length > 4 && (
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-surface to-transparent pointer-events-none" />
       )}
     </button>
   );
@@ -266,15 +280,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       <div className="max-w-sm w-full text-center relative z-10">
         {/* Title */}
         <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-        <p className="text-text-muted text-sm mb-8 font-body">The Timeline Game</p>
+        <p className="text-text-muted text-sm mb-2 font-body">
+          Place events to make the longest timeline
+        </p>
 
         {/* Game Modes */}
         <div className="space-y-4">
           {/* Daily Challenge (Hero) */}
           <div className="bg-surface rounded-2xl border border-border p-5">
-            <h3 className="text-lg font-semibold font-body text-left text-text">Daily Challenge</h3>
-            <p className="text-sm font-medium text-accent text-left mb-3 font-body">
-              {todayResult ? todayResult.theme : dailyThemeDisplayName}
+            <h3 className="text-lg font-semibold font-body text-left">
+              <span className="text-text">Daily Challenge: </span>
+              <span className="text-accent">
+                {todayResult ? todayResult.theme : dailyThemeDisplayName}
+              </span>
+            </h3>
+            <p className="text-sm text-text-muted text-left mb-3 font-body">
+              Same puzzle for everyone, every day
             </p>
 
             {todayResult ? (
@@ -303,7 +324,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
               </button>
             )}
 
-            {/* Inline Mini-Leaderboard */}
+            {/* Mini-Leaderboard */}
             <MiniLeaderboard
               entries={leaderboard}
               isLoading={isLeaderboardLoading}
@@ -313,9 +334,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
           {/* Custom Game */}
           <div className="bg-surface rounded-2xl border border-border p-5">
-            <h3 className="text-lg font-semibold font-body text-left mb-3 text-text">
-              Custom Game
-            </h3>
+            <h3 className="text-lg font-semibold font-body text-left text-text">Custom Game</h3>
+            <p className="text-sm text-text-muted text-left mb-3 font-body">
+              Choose eras, categories & local multiplayer
+            </p>
             <div className="space-y-2">
               <button
                 onClick={handlePlayStart}
