@@ -28,6 +28,8 @@ interface SettingsPopupProps {
   // Sudden death hand size
   suddenDeathHandSize: number;
   setSuddenDeathHandSize: (value: number) => void;
+  // Player count change handler
+  onPlayerCountChange: (count: number) => void;
 }
 
 const SettingsPopup: React.FC<SettingsPopupProps> = ({
@@ -49,6 +51,7 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   setCardsPerHand,
   suddenDeathHandSize,
   setSuddenDeathHandSize,
+  onPlayerCountChange,
 }) => {
   if (!isOpen) return null;
 
@@ -151,6 +154,29 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               </p>
             </div>
           )}
+
+          {/* Player Count */}
+          <div>
+            <label className="block text-sm font-medium text-text mb-2 font-body">Players</label>
+            <div className="flex gap-1">
+              {[1, 2, 3, 4, 5, 6].map((num) => (
+                <button
+                  key={num}
+                  onClick={() => onPlayerCountChange(num)}
+                  className={`
+                    flex-1 h-10 rounded-lg text-sm font-medium transition-all font-body
+                    ${
+                      playerCount === num
+                        ? 'bg-accent text-white shadow-sm'
+                        : 'bg-border text-text-muted hover:bg-accent/20'
+                    }
+                  `}
+                >
+                  {num}
+                </button>
+              ))}
+            </div>
+          </div>
 
           {/* Player Names - only show when more than 1 player */}
           {playerCount > 1 && (

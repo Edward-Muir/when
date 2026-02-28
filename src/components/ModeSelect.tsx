@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, Gamepad2, Settings, Play, Share2, Check, Trophy } from 'lucide-react';
+import { Settings, Play, Share2, Check, Trophy } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -18,8 +18,9 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig } from '../utils/dailyConfig';
 import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
-import { APP_VERSION } from '../version';
-import { useLeaderboard } from '../hooks/useLeaderboard';
+
+import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
+
 import Leaderboard from './Leaderboard';
 
 interface ModeSelectProps {
@@ -37,7 +38,7 @@ const LoadingState: React.FC = () => (
     transition={{ duration: 0.3, ease: 'easeOut' }}
     className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-safe pb-safe transition-colors"
   >
-    <div className="bg-surface rounded-2xl shadow-sm p-6 max-w-sm w-full text-center border border-border">
+    <div className="bg-surface rounded-2xl border border-border p-6 max-w-sm w-full text-center">
       <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
       <p className="text-text-muted text-sm mb-6 font-body">The Timeline Game</p>
       <div className="text-xl font-medium text-text mb-2 font-body">
@@ -49,6 +50,64 @@ const LoadingState: React.FC = () => (
     </div>
   </motion.div>
 );
+
+// Inline mini-leaderboard showing top 3 entries, tappable to open full leaderboard
+const MiniLeaderboard: React.FC<{
+  entries: LeaderboardEntry[];
+  isLoading: boolean;
+  onOpenFull: () => void;
+}> = ({ entries, isLoading, onOpenFull }) => {
+  const top4 = entries.slice(0, 4);
+
+  return (
+    <button
+      onClick={onOpenFull}
+      className="mt-4 w-full text-left cursor-pointer rounded-lg hover:bg-bg/50 p-2 pt-3 transition-colors border-t border-border h-[156px] relative overflow-hidden"
+    >
+      <div className="flex items-center gap-1.5 text-sm text-text-muted font-medium font-body mb-2">
+        <Trophy className="w-3.5 h-3.5" />
+        <span>Longest Timelines</span>
+      </div>
+      {isLoading ? (
+        <div className="space-y-1">
+          {[0, 1, 2, 3].map((i) => (
+            <div key={i} className="flex items-center gap-2 py-0.5">
+              <div className="w-5 h-4 bg-border/50 rounded animate-pulse" />
+              <div
+                className="flex-1 h-4 bg-border/50 rounded animate-pulse"
+                style={{ width: `${65 - i * 10}%` }}
+              />
+              <div className="w-6 h-4 bg-border/50 rounded animate-pulse flex-shrink-0" />
+            </div>
+          ))}
+        </div>
+      ) : top4.length === 0 ? (
+        <div className="text-sm text-text-muted font-body text-center mt-4">
+          No entries yet. Be the first!
+        </div>
+      ) : (
+        <div className="space-y-1">
+          {top4.map((entry, index) => (
+            <div key={index} className="flex items-center gap-2 text-sm py-0.5">
+              <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
+                {entry.rank}
+              </span>
+              <span className="flex-1 text-left truncate text-text font-body">
+                {entry.displayName}
+              </span>
+              <span className="font-body text-accent font-semibold flex-shrink-0">
+                {entry.correctCount}
+              </span>
+            </div>
+          ))}
+        </div>
+      )}
+      {entries.length > 4 && (
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-surface to-transparent pointer-events-none" />
+      )}
+    </button>
+  );
+};
 
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
@@ -218,136 +277,88 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       {/* Top Bar */}
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
 
-      <div className="bg-surface rounded-2xl shadow-sm p-4 max-w-sm w-full text-center relative z-10 border border-border">
+      <div className="max-w-sm w-full text-center relative z-10">
         {/* Title */}
         <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-        <p className="text-text-muted text-sm mb-5 font-body">The Timeline Game</p>
+        <p className="text-text-muted text-sm mb-2 font-body">
+          Place events to make the longest timeline
+        </p>
 
         {/* Game Modes */}
-        <div className="space-y-3">
-          {/* Play */}
-          <div className="bg-accent-secondary/10 rounded-xl p-3 border border-accent-secondary/20">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-accent-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                <Gamepad2 className="w-4 h-4 text-white" />
-              </div>
-              <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-text text-sm font-body">Play</h3>
-                <p className="text-sm text-text-muted font-body">Make the longest timeline!</p>
-              </div>
-              <button
-                onClick={() => setIsSettingsOpen(true)}
-                className="p-2 rounded-xl bg-surface border border-border hover:bg-border transition-colors active:scale-95 flex-shrink-0"
-                title="Settings"
-              >
-                <Settings className="w-4 h-4 text-text" />
-              </button>
-            </div>
-
-            {/* Player count selector */}
-            <div className="mb-2">
-              <label className="block text-sm text-text-muted mb-1 font-body text-left">
-                Players
-              </label>
-              <div className="flex gap-1">
-                {[1, 2, 3, 4, 5, 6].map((num) => (
-                  <button
-                    key={num}
-                    onClick={() => handlePlayerCountChange(num)}
-                    className={`
-                      flex-1 h-8 rounded-lg text-sm font-medium transition-all font-body
-                      ${
-                        playerCount === num
-                          ? 'bg-accent-secondary text-white shadow-sm'
-                          : 'bg-border text-text-muted hover:bg-accent-secondary/20'
-                      }
-                    `}
-                  >
-                    {num}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button
-              onClick={handlePlayStart}
-              disabled={!isPlayValid}
-              className={`w-full py-2 px-3 text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
-                isPlayValid
-                  ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
-                  : 'bg-border text-text-muted cursor-not-allowed'
-              }`}
-            >
-              <Play className="w-3.5 h-3.5" />
-              Play
-            </button>
-          </div>
-
-          {/* Daily Challenge */}
-          <div className="bg-accent/10 rounded-xl p-3 border border-accent/20">
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center flex-shrink-0">
-                <Calendar className="w-4 h-4 text-white" />
-              </div>
-              <div className="text-left flex-1 min-w-0">
-                <h3 className="font-bold text-sm font-body">
-                  <span className="text-text">Daily Challenge: </span>
-                  <span className="text-accent">
-                    {todayResult ? todayResult.theme : dailyThemeDisplayName}
-                  </span>
-                </h3>
-                <p className="text-sm text-text-muted font-body">
-                  {todayResult ? 'Completed today' : 'Same puzzle for all · New category daily'}
-                </p>
-              </div>
-            </div>
+        <div className="space-y-4">
+          {/* Daily Challenge (Hero) */}
+          <div className="bg-surface rounded-2xl border border-border p-5">
+            <h3 className="text-lg font-semibold font-body text-left">
+              <span className="text-text">Daily Challenge: </span>
+              <span className="text-accent">
+                {todayResult ? todayResult.theme : dailyThemeDisplayName}
+              </span>
+            </h3>
+            <p className="text-sm text-text-muted text-left mb-3 font-body">
+              Same puzzle for everyone, every day
+            </p>
 
             {todayResult ? (
               /* Completed daily state */
               <div className="space-y-2">
-                <div className="text-sm font-medium text-text font-body text-center">
-                  {todayResult.correctCount} event{todayResult.correctCount !== 1 ? 's' : ''} placed
-                  correctly.
+                <div className="text-sm font-medium text-text-muted font-body text-left">
+                  {todayResult.correctCount} event
+                  {todayResult.correctCount !== 1 ? 's' : ''} placed correctly
                 </div>
                 <button
                   onClick={handleShareDaily}
-                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
                 >
-                  <Share2 className="w-3.5 h-3.5" />
+                  <Share2 className="w-4 h-4" />
                   Challenge a Friend
                 </button>
-                <button
-                  onClick={() => setIsLeaderboardOpen(true)}
-                  className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                  aria-label="View daily leaderboard"
-                >
-                  <Trophy className="w-3.5 h-3.5" />
-                  Leaderboard
-                </button>
-                <p className="text-sm text-text-muted font-body text-center">
-                  Come back tomorrow for a new challenge!
-                </p>
               </div>
             ) : (
-              /* Play daily + Leaderboard buttons */
-              <div className="space-y-2">
-                <button
-                  onClick={handleDailyStart}
-                  className="w-full py-2 px-3 bg-accent hover:bg-accent/90 text-white text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                >
-                  <Play className="w-3.5 h-3.5" />
-                  Play Daily
-                </button>
-                <button
-                  onClick={() => setIsLeaderboardOpen(true)}
-                  className="w-full py-2 px-3 bg-surface border border-border hover:bg-border text-text text-sm font-medium rounded-lg transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                  aria-label="View daily leaderboard"
-                >
-                  <Trophy className="w-3.5 h-3.5" />
-                  Leaderboard
-                </button>
-              </div>
+              /* Play daily CTA */
+              <button
+                onClick={handleDailyStart}
+                className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+              >
+                <Play className="w-4 h-4" />
+                Play Daily Challenge
+              </button>
             )}
+
+            {/* Mini-Leaderboard */}
+            <MiniLeaderboard
+              entries={leaderboard}
+              isLoading={isLeaderboardLoading}
+              onOpenFull={() => setIsLeaderboardOpen(true)}
+            />
+          </div>
+
+          {/* Custom Game */}
+          <div className="bg-surface rounded-2xl border border-border p-5">
+            <h3 className="text-lg font-semibold font-body text-left text-text">Custom Game</h3>
+            <p className="text-sm text-text-muted text-left mb-3 font-body">
+              Choose eras, categories & local multiplayer
+            </p>
+            <div className="space-y-2">
+              <button
+                onClick={handlePlayStart}
+                disabled={!isPlayValid}
+                className={`w-full py-3 px-4 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+                  isPlayValid
+                    ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
+                    : 'bg-border text-text-muted cursor-not-allowed'
+                }`}
+              >
+                <Play className="w-4 h-4" />
+                Play
+              </button>
+              <button
+                onClick={() => setIsSettingsOpen(true)}
+                className="w-full py-3 px-4 text-text-muted hover:text-text border border-border hover:bg-bg rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body text-sm font-medium"
+              >
+                <Settings className="w-4 h-4" />
+                Settings
+              </button>
+            </div>
           </div>
         </div>
 
@@ -358,9 +369,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             Copied to clipboard!
           </div>
         )}
-
-        {/* Version display */}
-        <p className="text-center mt-2 text-sm text-text-muted/60 font-body">v{APP_VERSION}</p>
       </div>
 
       {/* Settings Popup */}
@@ -383,6 +391,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         setCardsPerHand={setCardsPerHand}
         suddenDeathHandSize={suddenDeathHandSize}
         setSuddenDeathHandSize={setSuddenDeathHandSize}
+        onPlayerCountChange={handlePlayerCountChange}
       />
 
       {/* Leaderboard Modal */}
