@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Capacitor } from '@capacitor/core';
+import { App as CapApp } from '@capacitor/app';
 import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
 import { buildDailyConfig } from './utils/dailyConfig';
@@ -21,16 +23,35 @@ function App({ autoStartDaily = false, onNavigateHome }: AppProps) {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     };
+    const handleOrientationChange = () => {
+      setTimeout(setVh, 100);
+    };
 
     setVh();
     window.addEventListener('resize', setVh);
-    window.addEventListener('orientationchange', () => {
-      // Delay to allow orientation change to complete
-      setTimeout(setVh, 100);
-    });
+    window.addEventListener('orientationchange', handleOrientationChange);
 
     return () => {
       window.removeEventListener('resize', setVh);
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
+
+  // Capacitor lifecycle: dispatch events so hooks can pause/resume background work
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+
+    const listeners = Promise.all([
+      CapApp.addListener('pause', () => {
+        window.dispatchEvent(new Event('appPause'));
+      }),
+      CapApp.addListener('resume', () => {
+        window.dispatchEvent(new Event('appResume'));
+      }),
+    ]);
+
+    return () => {
+      listeners.then((handles) => handles.forEach((h) => h.remove()));
     };
   }, []);
 

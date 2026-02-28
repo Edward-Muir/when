@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Hourglass } from 'lucide-react';
+import { X, Hourglass, Play } from 'lucide-react';
 import { Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import FilterControls from './FilterControls';
@@ -30,6 +30,9 @@ interface SettingsPopupProps {
   setSuddenDeathHandSize: (value: number) => void;
   // Player count change handler
   onPlayerCountChange: (count: number) => void;
+  // Play action
+  onPlay: () => void;
+  isPlayValid: boolean;
 }
 
 const SettingsPopup: React.FC<SettingsPopupProps> = ({
@@ -52,6 +55,8 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   suddenDeathHandSize,
   setSuddenDeathHandSize,
   onPlayerCountChange,
+  onPlay,
+  isPlayValid,
 }) => {
   if (!isOpen) return null;
 
@@ -237,12 +242,18 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
           </div>
         </div>
 
-        {/* Done button */}
+        {/* Play button */}
         <button
-          onClick={onClose}
-          className="w-full mt-4 py-3 px-6 bg-accent hover:bg-accent/90 text-white font-medium rounded-xl transition-colors font-body"
+          onClick={onPlay}
+          disabled={!isPlayValid}
+          className={`w-full mt-4 py-3 px-6 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+            isPlayValid
+              ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
+              : 'bg-border text-text-muted cursor-not-allowed'
+          }`}
         >
-          Done
+          <Play className="w-4 h-4" />
+          Play
         </button>
       </div>
     </div>

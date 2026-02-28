@@ -1,3 +1,5 @@
+import { Capacitor } from '@capacitor/core';
+
 export type StreakTier = 0 | 1 | 2 | 3;
 
 export type GlowIntensity = 'normal' | 'bright' | 'golden';
@@ -23,12 +25,16 @@ export interface StreakFeedbackConfig {
   boltFilled: boolean;
 }
 
+// Reduce confetti on native to save memory — canvas particles are expensive on iOS
+const isNative = Capacitor.isNativePlatform();
+const p = (count: number) => (isNative ? Math.round(count * 0.5) : count);
+
 export function getStreakFeedback(streak: number): StreakFeedbackConfig {
   if (streak >= 6) {
     // Tier 3: 6+ correct in a row
     return {
       tier: 3,
-      confettiParticles: 120,
+      confettiParticles: p(120),
       confettiForce: 0.9,
       confettiDuration: 3000,
       confettiWidth: 500,
@@ -45,7 +51,7 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
     // Tier 2: 4-5 correct in a row
     return {
       tier: 2,
-      confettiParticles: 90,
+      confettiParticles: p(90),
       confettiForce: 0.7,
       confettiDuration: 2500,
       confettiWidth: 400,
@@ -62,7 +68,7 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
     // Tier 1: 2-3 correct in a row
     return {
       tier: 1,
-      confettiParticles: 70,
+      confettiParticles: p(70),
       confettiForce: 0.65,
       confettiDuration: 2200,
       confettiWidth: 300,
@@ -78,7 +84,7 @@ export function getStreakFeedback(streak: number): StreakFeedbackConfig {
   // Tier 0: baseline (0-1 correct)
   return {
     tier: 0,
-    confettiParticles: 50,
+    confettiParticles: p(50),
     confettiForce: 0.6,
     confettiDuration: 2200,
     confettiWidth: 300,

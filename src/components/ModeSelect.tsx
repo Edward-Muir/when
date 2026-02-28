@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Settings, Play, Share2, Check, Trophy } from 'lucide-react';
+import { Play, Share2, Check, Trophy } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -343,27 +343,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             <p className="text-sm text-text-muted text-left mb-3 font-body">
               Choose eras, categories & local multiplayer
             </p>
-            <div className="space-y-2">
-              <button
-                onClick={handlePlayStart}
-                disabled={!isPlayValid}
-                className={`w-full py-3 px-4 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
-                  isPlayValid
-                    ? 'bg-accent-secondary hover:bg-accent-secondary/90 text-white'
-                    : 'bg-border text-text-muted cursor-not-allowed'
-                }`}
-              >
-                <Play className="w-4 h-4" />
-                Play
-              </button>
-              <button
-                onClick={() => setIsSettingsOpen(true)}
-                className="w-full py-3 px-4 text-text-muted hover:text-text border border-border hover:bg-bg rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body text-sm font-medium"
-              >
-                <Settings className="w-4 h-4" />
-                Settings
-              </button>
-            </div>
+            <button
+              onClick={() => setIsSettingsOpen(true)}
+              className="w-full py-3 px-4 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white"
+            >
+              <Play className="w-4 h-4" />
+              Play
+            </button>
           </div>
         </div>
 
@@ -397,6 +383,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         suddenDeathHandSize={suddenDeathHandSize}
         setSuddenDeathHandSize={setSuddenDeathHandSize}
         onPlayerCountChange={handlePlayerCountChange}
+        onPlay={handlePlayStart}
+        isPlayValid={isPlayValid}
       />
 
       {/* Leaderboard Modal */}
