@@ -4,6 +4,7 @@ import { Share2, SquarePlus, HelpCircle, X, Mail, List } from 'lucide-react';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
+import { APP_VERSION } from '../version';
 
 interface MenuProps {
   isOpen: boolean;
@@ -243,7 +244,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
 
             {/* Drawer */}
             <motion.div
-              className="fixed top-0 right-0 bottom-0 w-64 bg-surface border-l border-border shadow-sm z-[56] pt-safe"
+              className="fixed top-0 right-0 bottom-0 w-64 bg-surface border-l border-border shadow-sm z-[56] pt-safe flex flex-col"
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
@@ -268,7 +269,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
               </div>
 
               {/* Menu Items */}
-              <div className="py-2">
+              <div className="py-2 flex-1">
                 <button onClick={handleShare} className={menuItemClass}>
                   <Share2 className={iconClass} />
                   <span className="font-body">Share App</span>
@@ -303,6 +304,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
                   <Mail className={iconClass} />
                   <span className="font-body">Send Feedback</span>
                 </a>
+              </div>
+
+              {/* Version */}
+              <div className="border-t border-border px-4 py-1 mb-1 pb-safe">
+                <p className="text-center font-body text-text-muted">v{APP_VERSION}</p>
               </div>
             </motion.div>
           </>

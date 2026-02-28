@@ -18,7 +18,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig } from '../utils/dailyConfig';
 import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
-import { APP_VERSION } from '../version';
+
 import { useLeaderboard } from '../hooks/useLeaderboard';
 import Leaderboard from './Leaderboard';
 
@@ -358,9 +358,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             Copied to clipboard!
           </div>
         )}
-
-        {/* Version display */}
-        <p className="text-center mt-2 text-sm text-text-muted/60 font-body">v{APP_VERSION}</p>
       </div>
 
       {/* Settings Popup */}
