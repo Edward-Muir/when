@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, X, Trophy } from 'lucide-react';
+import { Check, X, Trophy, Share2 } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
-import { generateEmojiGrid } from '../utils/share';
+import { generateEmojiGrid, shareResults } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
@@ -120,6 +120,47 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
   );
 }
 
+// Sub-component for challenge share section in game over popup
+function ChallengeShareSection({ gameState }: { gameState: WhenGameState }) {
+  const [showToast, setShowToast] = useState(false);
+  const challengeCode = gameState.lastConfig?.challengeCode;
+
+  const handleShare = async () => {
+    const copied = await shareResults(gameState);
+    if (copied) {
+      setShowToast(true);
+      setTimeout(() => setShowToast(false), 2000);
+    }
+  };
+
+  if (!challengeCode) return null;
+
+  return (
+    <div className="relative mt-3 pt-3 border-t border-border">
+      <div className="text-center">
+        <p className="text-xs text-text-muted font-body">Challenge Code</p>
+        <p className="text-sm font-mono text-accent mt-0.5">{challengeCode}</p>
+      </div>
+      <p className="text-xs text-text-muted font-body mt-2 text-center">
+        Challenge a friend — they&apos;ll play with the same cards in the same order.
+      </p>
+      <button
+        onClick={handleShare}
+        className="w-full mt-3 py-2.5 px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white"
+      >
+        <Share2 className="w-4 h-4" />
+        Challenge a Friend
+      </button>
+      {showToast && (
+        <div className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body whitespace-nowrap">
+          <Check className="w-4 h-4" />
+          Copied to clipboard!
+        </div>
+      )}
+    </div>
+  );
+}
+
 // Sub-component for game over content (stats only, header moved out)
 function GameOverContent({
   gameState,
@@ -229,6 +270,9 @@ function GameOverContent({
           </div>
         )}
       </div>
+
+      {/* Challenge a Friend section for shareable custom games */}
+      {lastConfig?.challengeCode && <ChallengeShareSection gameState={gameState} />}
 
       {/* Leaderboard submit section for daily mode */}
       {dailyResult && (

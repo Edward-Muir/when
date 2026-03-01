@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/daily", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/daily", "destination": "/index.html" },
+    { "source": "/challenge/:code", "destination": "/index.html" }
+  ]
 }

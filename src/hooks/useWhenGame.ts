@@ -76,24 +76,7 @@ interface PendingPopupState {
   pendingStateUpdate: (() => void) | null;
 }
 
-export function useWhenGame(): UseWhenGameReturn {
-  const [state, setState] = useState<WhenGameState>(initialState);
-  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
-  const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
-  const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
-    popup: null,
-    pendingStateUpdate: null,
-  });
-
-  // Load events on mount and go to mode select
-  useEffect(() => {
-    loadAllEvents().then((events) => {
-      setAllEvents(events);
-      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
-    });
-  }, []);
-
-  // Save daily result to localStorage when daily game ends
+function useSaveDailyResult(state: WhenGameState) {
   useEffect(() => {
     if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
       const dailySeed = state.lastConfig.dailySeed;
@@ -117,6 +100,26 @@ export function useWhenGame(): UseWhenGameReturn {
     state.placementHistory,
     state.bestStreak,
   ]);
+}
+
+export function useWhenGame(): UseWhenGameReturn {
+  const [state, setState] = useState<WhenGameState>(initialState);
+  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
+  const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
+  const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
+    popup: null,
+    pendingStateUpdate: null,
+  });
+
+  // Load events on mount and go to mode select
+  useEffect(() => {
+    loadAllEvents().then((events) => {
+      setAllEvents(events);
+      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
+    });
+  }, []);
+
+  useSaveDailyResult(state);
 
   const startGame = useCallback(
     (config: GameConfig) => {
@@ -148,11 +151,13 @@ export function useWhenGame(): UseWhenGameReturn {
         return;
       }
 
-      // Use seeded shuffle for daily mode, regular shuffle otherwise
+      // Use seeded shuffle for daily/challenge mode, regular shuffle otherwise
       const shuffled =
         mode === 'daily' && dailySeed
           ? shuffleArraySeeded(filteredEvents, dailySeed)
-          : shuffleArray(filteredEvents);
+          : config.challengeSeed
+            ? shuffleArraySeeded(filteredEvents, config.challengeSeed)
+            : shuffleArray(filteredEvents);
 
       // Pick 1 event for the starting timeline
       const timelineEvents = sortByYear([shuffled[0]]);

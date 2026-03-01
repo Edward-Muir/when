@@ -26,6 +26,12 @@
         "no-console": "off",
         "@typescript-eslint/no-var-requires": "off"
       }
+    },
+    {
+      "files": ["src/utils/wordlists.ts"],
+      "rules": {
+        "max-lines": "off"
+      }
     }
   ]
 }
