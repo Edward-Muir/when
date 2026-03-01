@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Feb 2026 23:10:26 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 01 Mar 2026 21:40:10 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.7.3</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.7.3</guid>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add extra share button and explaination (<a href="https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7">7141d48</a>)</li> <li>Clean up settings modal (<a href="https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5">eaa4d97</a>)</li> <li>Make settings shareable (<a href="https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04">a39430d</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Ignore long word list file (<a href="https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6">7167029</a>)</li> <li>Make challenge code readable (<a href="https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa">70d0e9b</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.7.2</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.6</guid>
       <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Added new inventions category, updated events editor (<a href="https://github.com/Edward-Muir/when/commit/53acee14beaafc45619fc84658050b0018e2e4fb">53acee1</a>)</li> <li>More inventions (<a href="https://github.com/Edward-Muir/when/commit/3a0dbb4d6d38f68c7d9ab3221484e7f1f59fdf0e">3a0dbb4</a>)</li> <li>Updating event images (<a href="https://github.com/Edward-Muir/when/commit/c7ce664d65b1ebad3063b5335e274c760135d010">c7ce664</a>)</li> <li>Updating event images (<a href="https://github.com/Edward-Muir/when/commit/6b189df6d3caf25691ade671aac820dc87517ece">6b189df</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Add missing images (<a href="https://github.com/Edward-Muir/when/commit/6727ad7a547ddf2b039cdf7c75c2dd62b30cda77">6727ad7</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.5</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.5</guid>
-      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Adjusting events (<a href="https://github.com/Edward-Muir/when/commit/9f325cdecd55c232e292497b5dbc4518552bd6ff">9f325cd</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

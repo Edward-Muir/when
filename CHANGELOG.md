@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.7.3](https://github.com/Edward-Muir/when/compare/v0.7.2...v0.7.3) (2026-03-01)
+
+
+### Features
+
+* Add extra share button and explaination ([7141d48](https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7))
+* Clean up settings modal ([eaa4d97](https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5))
+* Make settings shareable ([a39430d](https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04))
+
+
+### Bug Fixes
+
+* Ignore long word list file ([7167029](https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6))
+* Make challenge code readable ([70d0e9b](https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa))
+
 ## [0.7.2](https://github.com/Edward-Muir/when/compare/v0.7.1...v0.7.2) (2026-02-28)
 
 
