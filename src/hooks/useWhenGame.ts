@@ -148,11 +148,13 @@ export function useWhenGame(): UseWhenGameReturn {
         return;
       }
 
-      // Use seeded shuffle for daily mode, regular shuffle otherwise
+      // Use seeded shuffle for daily/challenge mode, regular shuffle otherwise
       const shuffled =
         mode === 'daily' && dailySeed
           ? shuffleArraySeeded(filteredEvents, dailySeed)
-          : shuffleArray(filteredEvents);
+          : config.challengeSeed
+            ? shuffleArraySeeded(filteredEvents, config.challengeSeed)
+            : shuffleArray(filteredEvents);
 
       // Pick 1 event for the starting timeline
       const timelineEvents = sortByYear([shuffled[0]]);

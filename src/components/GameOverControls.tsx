@@ -31,7 +31,7 @@ const GameOverControls: React.FC<GameOverControlsProps> = ({
       >
         <Share2 className="w-6 h-6" />
         <span className="text-sm font-medium font-body">
-          {state.gameMode === 'daily' ? 'Challenge' : 'Share'}
+          {state.gameMode === 'daily' || state.lastConfig?.challengeCode ? 'Challenge' : 'Share'}
         </span>
       </button>
 

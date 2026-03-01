@@ -18,6 +18,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig } from '../utils/dailyConfig';
 import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
+import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
 
@@ -254,12 +255,26 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       .slice(0, playerCount)
       .map((name, i) => name.trim() || `Player ${i + 1}`);
 
+    // Generate a shareable challenge code encoding settings + random seed
+    const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
+    const challengeCode = encodeChallengeCode({
+      mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
+      handSize: effectiveHandSize,
+      playerCount,
+      difficulties: selectedDifficulties,
+      categories: selectedCategories,
+      eras: selectedEras,
+      seed: generateChallengeSeed(),
+    });
+
     onStart({
       mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
       totalTurns: cardsPerHand,
       selectedDifficulties,
       selectedCategories,
       selectedEras,
+      challengeSeed: challengeCode,
+      challengeCode,
       playerCount,
       playerNames: names,
       cardsPerHand,

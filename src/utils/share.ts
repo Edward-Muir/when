@@ -3,6 +3,7 @@ import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 
 const GAME_URL = 'https://www.play-when.com/';
 const DAILY_URL = 'https://www.play-when.com/daily';
+export const CHALLENGE_URL = 'https://www.play-when.com/challenge';
 
 /**
  * Format the leaderboard ranking line for share message
@@ -73,6 +74,11 @@ export function generateShareText(state: WhenGameState): string {
     }
   }
 
+  const challengeCode = lastConfig?.challengeCode;
+  if (challengeCode) {
+    return `${text}\n\nCan you beat my timeline? 👇\n${CHALLENGE_URL}/${challengeCode}`;
+  }
+
   return `${text}\n\n${GAME_URL}`;
 }
 
@@ -80,7 +86,7 @@ export function generateShareText(state: WhenGameState): string {
  * Share content using Web Share API or fallback to clipboard
  * Returns true if copied to clipboard (toast should be shown)
  */
-async function shareContent(text: string, title: string): Promise<boolean> {
+export async function shareContent(text: string, title: string): Promise<boolean> {
   // Try native share first (mobile)
   if (navigator.share) {
     try {

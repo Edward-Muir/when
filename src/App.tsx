@@ -6,6 +6,7 @@ import { useWhenGame } from './hooks/useWhenGame';
 import { GameConfig } from './types';
 import { buildDailyConfig } from './utils/dailyConfig';
 import { hasPlayedToday } from './utils/playerStorage';
+import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
@@ -13,10 +14,17 @@ import ViewTimeline from './components/ViewTimeline';
 
 interface AppProps {
   autoStartDaily?: boolean;
+  autoStartChallenge?: ChallengeConfig;
+  challengeCode?: string;
   onNavigateHome?: () => void;
 }
 
-function App({ autoStartDaily = false, onNavigateHome }: AppProps) {
+function App({
+  autoStartDaily = false,
+  autoStartChallenge,
+  challengeCode,
+  onNavigateHome,
+}: AppProps) {
   // Set CSS custom property for viewport height (fallback for older browsers without dvh support)
   useEffect(() => {
     const setVh = () => {
@@ -86,6 +94,19 @@ function App({ autoStartDaily = false, onNavigateHome }: AppProps) {
 
     startGame(buildDailyConfig());
   }, [autoStartDaily, state.phase, startGame, onNavigateHome]);
+
+  // Auto-start challenge game when accessed via /challenge/:code route
+  const hasAutoStartedChallenge = useRef(false);
+  useEffect(() => {
+    if (!autoStartChallenge || hasAutoStartedChallenge.current) return;
+    if (state.phase !== 'modeSelect') return; // Wait for events to load
+
+    hasAutoStartedChallenge.current = true;
+    const gameConfig = challengeConfigToGameConfig(autoStartChallenge);
+    gameConfig.challengeCode = challengeCode;
+    gameConfig.challengeSeed = challengeCode;
+    startGame(gameConfig);
+  }, [autoStartChallenge, challengeCode, state.phase, startGame]);
 
   const handleStart = (config: GameConfig) => {
     startGame(config);

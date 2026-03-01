@@ -129,6 +129,10 @@ export interface GameConfig {
   selectedEras: Era[];
   dailySeed?: string;
 
+  // Challenge mode (shareable seeded games)
+  challengeSeed?: string; // Seed string for deterministic shuffle (the challenge code itself)
+  challengeCode?: string; // The 3-word challenge code for display/sharing
+
   // Multiplayer settings
   playerCount?: number;
   playerNames?: string[];

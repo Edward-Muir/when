@@ -230,6 +230,14 @@ function GameOverContent({
         )}
       </div>
 
+      {/* Challenge code for shareable custom games */}
+      {lastConfig?.challengeCode && (
+        <div className="mt-3 pt-3 border-t border-border text-center">
+          <p className="text-xs text-text-muted font-body">Challenge Code</p>
+          <p className="text-sm font-mono text-accent mt-0.5">{lastConfig.challengeCode}</p>
+        </div>
+      )}
+
       {/* Leaderboard submit section for daily mode */}
       {dailyResult && (
         <LeaderboardSubmit dailyResult={dailyResult} onSubmitted={onLeaderboardSubmit} />

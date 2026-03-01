@@ -1,8 +1,94 @@
-import React from 'react';
-import { X, Hourglass, TrendingUp, Play } from 'lucide-react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
+import { X, Hourglass, TrendingUp, Play, Share2, RefreshCw, Check, Copy } from 'lucide-react';
 import { Difficulty, Category, Era, HistoricalEvent } from '../types';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
+import {
+  encodeChallengeCode,
+  decodeChallengeCode,
+  generateChallengeSeed,
+} from '../utils/challengeCode';
+import { shareContent, CHALLENGE_URL } from '../utils/share';
 import FilterControls from './FilterControls';
+
+// Extracted to reduce cyclomatic complexity in SettingsPopup
+const ChallengeSection: React.FC<{
+  codeInput: string;
+  isCodeValid: boolean;
+  isPlayValid: boolean;
+  onCodeChange: (value: string) => void;
+  onRandomise: () => void;
+  onCopy: () => void;
+  onShare: () => void;
+  showToast: boolean;
+}> = ({
+  codeInput,
+  isCodeValid,
+  isPlayValid,
+  onCodeChange,
+  onRandomise,
+  onCopy,
+  onShare,
+  showToast,
+}) => {
+  const canShare = isPlayValid && isCodeValid;
+  return (
+    <>
+      <div className="border-t border-border pt-4">
+        <h3 className="text-sm font-medium text-text font-body mb-1">Share Game Settings</h3>
+        <p className="text-xs text-text-muted font-body mb-3">
+          Share your settings — copy the code or press share so others can play with the same cards
+          in the same order.
+        </p>
+
+        <div className="flex items-center gap-2 mb-3">
+          <input
+            type="text"
+            value={codeInput}
+            onChange={(e) => onCodeChange(e.target.value)}
+            className={`flex-1 text-sm font-mono text-accent bg-bg rounded-lg px-3 py-2 border transition-colors focus:outline-none font-body ${
+              isCodeValid ? 'border-border focus:border-accent' : 'border-error'
+            }`}
+            placeholder="word-word-word"
+          />
+          <button
+            onClick={onCopy}
+            className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0"
+            title="Copy code"
+          >
+            <Copy className="w-4 h-4 text-text-muted" />
+          </button>
+          <button
+            onClick={onRandomise}
+            className="p-2 rounded-lg bg-border hover:bg-border/70 transition-colors flex-shrink-0"
+            title="Randomise seed"
+          >
+            <RefreshCw className="w-4 h-4 text-text-muted" />
+          </button>
+        </div>
+
+        <button
+          onClick={onShare}
+          disabled={!canShare}
+          className={`w-full py-3 px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body ${
+            canShare
+              ? 'bg-accent hover:bg-accent/90 text-white'
+              : 'bg-border text-text-muted cursor-not-allowed'
+          }`}
+        >
+          <Share2 className="w-4 h-4" />
+          Share Game Settings
+        </button>
+      </div>
+
+      {showToast && (
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+          <Check className="w-4 h-4" />
+          Copied to clipboard!
+        </div>
+      )}
+    </>
+  );
+};
 
 interface SettingsPopupProps {
   isOpen: boolean;
@@ -58,14 +144,71 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
   onPlay,
   isPlayValid,
 }) => {
-  if (!isOpen) return null;
+  // All hooks must be called before early return
+  const [challengeSeed, setChallengeSeed] = useState(() => generateChallengeSeed());
+  const [showShareToast, setShowShareToast] = useState(false);
+  const [codeInput, setCodeInput] = useState('');
+  const [isCodeValid, setIsCodeValid] = useState(true);
+  const applyingCodeRef = useRef(false);
+
+  const modeKey = isSuddenDeath ? ('suddenDeath' as const) : ('freeplay' as const);
+  const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
+
+  const challengeCode = useMemo(
+    () =>
+      encodeChallengeCode({
+        mode: modeKey,
+        handSize: effectiveHandSize,
+        playerCount,
+        difficulties: selectedDifficulties,
+        categories: selectedCategories,
+        eras: selectedEras,
+        seed: challengeSeed,
+      }),
+    [
+      modeKey,
+      effectiveHandSize,
+      playerCount,
+      selectedDifficulties,
+      selectedCategories,
+      selectedEras,
+      challengeSeed,
+    ]
+  );
+
+  // Sync codeInput to computed challengeCode when settings change
+  useEffect(() => {
+    if (!applyingCodeRef.current) {
+      setCodeInput(challengeCode);
+      setIsCodeValid(true);
+    }
+    applyingCodeRef.current = false;
+  }, [challengeCode]);
+
+  const handleCodeInput = (value: string) => {
+    setCodeInput(value);
+    const d = decodeChallengeCode(value);
+    if (!d) {
+      setIsCodeValid(false);
+      return;
+    }
+    setIsCodeValid(true);
+    applyingCodeRef.current = true;
+    setIsSuddenDeath(d.mode === 'suddenDeath');
+    const setHandSize = d.mode === 'suddenDeath' ? setSuddenDeathHandSize : setCardsPerHand;
+    setHandSize(d.handSize);
+    onPlayerCountChange(d.playerCount);
+    setSelectedDifficulties(d.difficulties);
+    setSelectedCategories(d.categories);
+    setSelectedEras(d.eras);
+    setChallengeSeed(d.seed);
+  };
 
   const filteredEventCount = filterByEra(
     filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
     selectedEras
   ).length;
 
-  const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
   const minRequiredCards = playerCount * effectiveHandSize + 1 + playerCount * 2;
   const hasEnoughCards = filteredEventCount >= minRequiredCards;
 
@@ -73,6 +216,15 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
     const newNames = playerNames.map((n, i) => (i === index ? name : n));
     setPlayerNames(newNames);
   };
+
+  const handleShareChallenge = async () => {
+    const text = `Play the same game I'm about to play! 👇\n${CHALLENGE_URL}/${challengeCode}`;
+    const copied = await shareContent(text, 'When - Timeline Game');
+    setShowShareToast(copied);
+    setTimeout(() => setShowShareToast(false), 2000);
+  };
+
+  if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
@@ -281,6 +433,22 @@ const SettingsPopup: React.FC<SettingsPopupProps> = ({
               </p>
             )}
           </div>
+
+          {/* Share Game Settings */}
+          <ChallengeSection
+            codeInput={codeInput}
+            isCodeValid={isCodeValid}
+            isPlayValid={isPlayValid}
+            onCodeChange={handleCodeInput}
+            onRandomise={() => setChallengeSeed(generateChallengeSeed())}
+            onCopy={() => {
+              navigator.clipboard.writeText(codeInput);
+              setShowShareToast(true);
+              setTimeout(() => setShowShareToast(false), 2000);
+            }}
+            onShare={handleShareChallenge}
+            showToast={showShareToast}
+          />
         </div>
       </div>
     </div>
