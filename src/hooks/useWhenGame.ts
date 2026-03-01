@@ -76,24 +76,7 @@ interface PendingPopupState {
   pendingStateUpdate: (() => void) | null;
 }
 
-export function useWhenGame(): UseWhenGameReturn {
-  const [state, setState] = useState<WhenGameState>(initialState);
-  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
-  const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
-  const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
-    popup: null,
-    pendingStateUpdate: null,
-  });
-
-  // Load events on mount and go to mode select
-  useEffect(() => {
-    loadAllEvents().then((events) => {
-      setAllEvents(events);
-      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
-    });
-  }, []);
-
-  // Save daily result to localStorage when daily game ends
+function useSaveDailyResult(state: WhenGameState) {
   useEffect(() => {
     if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
       const dailySeed = state.lastConfig.dailySeed;
@@ -117,6 +100,26 @@ export function useWhenGame(): UseWhenGameReturn {
     state.placementHistory,
     state.bestStreak,
   ]);
+}
+
+export function useWhenGame(): UseWhenGameReturn {
+  const [state, setState] = useState<WhenGameState>(initialState);
+  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
+  const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
+  const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
+    popup: null,
+    pendingStateUpdate: null,
+  });
+
+  // Load events on mount and go to mode select
+  useEffect(() => {
+    loadAllEvents().then((events) => {
+      setAllEvents(events);
+      setState((prev) => ({ ...prev, phase: 'modeSelect' }));
+    });
+  }, []);
+
+  useSaveDailyResult(state);
 
   const startGame = useCallback(
     (config: GameConfig) => {
