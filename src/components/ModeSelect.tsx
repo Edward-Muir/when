@@ -37,20 +37,60 @@ const LoadingState: React.FC = () => (
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
     transition={{ duration: 0.3, ease: 'easeOut' }}
-    className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-safe pb-safe transition-colors"
+    className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 disco-bg pt-safe pb-safe transition-colors"
   >
-    <div className="bg-surface rounded-2xl border border-border p-6 max-w-sm w-full text-center">
-      <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-      <p className="text-text-muted text-sm mb-6 font-body">The Timeline Game</p>
-      <div className="text-xl font-medium text-text mb-2 font-body">
+    <div className="disco-card rounded-2xl p-6 max-w-sm w-full text-center">
+      <h1 className="text-4xl font-bold disco-text-magenta mb-1 font-disco disco-title">WHEN?</h1>
+      <p className="disco-text-muted text-sm mb-6 font-body">The Timeline Game</p>
+      <div className="text-xl font-medium text-white mb-2 font-body">
         Loading historical events...
       </div>
-      <div className="animate-pulse text-sm text-text-muted font-body">
+      <div className="animate-pulse text-sm disco-text-muted font-body">
         Gathering history from across time
       </div>
     </div>
   </motion.div>
 );
+
+// Disco ball
+const DiscoBall: React.FC = () => (
+  <div className="disco-ball text-5xl select-none" aria-hidden="true">
+    🪩
+  </div>
+);
+
+// Starfield background dots
+const Stars: React.FC = () => {
+  const stars = useMemo(
+    () =>
+      Array.from({ length: 30 }, (_, i) => ({
+        id: i,
+        top: `${Math.random() * 60}%`,
+        left: `${Math.random() * 100}%`,
+        duration: `${1.5 + Math.random() * 3}s`,
+        delay: `${Math.random() * 3}s`,
+      })),
+    []
+  );
+  return (
+    <>
+      {stars.map((s) => (
+        <span
+          key={s.id}
+          className="disco-star"
+          style={
+            {
+              top: s.top,
+              left: s.left,
+              '--duration': s.duration,
+              '--delay': s.delay,
+            } as React.CSSProperties
+          }
+        />
+      ))}
+    </>
+  );
+};
 
 // Inline mini-leaderboard showing top 3 entries, tappable to open full leaderboard
 const MiniLeaderboard: React.FC<{
@@ -63,14 +103,14 @@ const MiniLeaderboard: React.FC<{
   return (
     <button
       onClick={onOpenFull}
-      className="mt-4 w-full text-left cursor-pointer rounded-lg hover:bg-bg/50 p-2 pt-3 transition-colors border-t border-border h-[156px] relative overflow-hidden"
+      className="mt-4 w-full text-left cursor-pointer rounded-lg p-2 pt-3 transition-colors disco-separator border-t h-[156px] relative overflow-hidden hover:bg-white/5"
     >
-      <div className="flex items-center gap-1.5 text-sm text-text-muted font-medium font-body mb-2">
+      <div className="flex items-center gap-1.5 text-sm disco-text-gold font-medium font-body mb-2">
         <Trophy className="w-3.5 h-3.5" />
         <span>Longest Timelines</span>
       </div>
       {!isLoading && top4.length === 0 ? (
-        <div className="text-sm text-text-muted font-body text-center mt-4">
+        <div className="text-sm disco-text-muted font-body text-center mt-4">
           No entries yet. Be the first!
         </div>
       ) : (
@@ -81,24 +121,24 @@ const MiniLeaderboard: React.FC<{
               <div key={i} className="flex items-center gap-2 text-sm py-0.5">
                 {entry ? (
                   <>
-                    <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
+                    <span className="w-5 text-center flex-shrink-0 disco-text-muted font-body">
                       {entry.rank}
                     </span>
-                    <span className="flex-1 text-left truncate text-text font-body">
+                    <span className="flex-1 text-left truncate text-white font-body">
                       {entry.displayName}
                     </span>
-                    <span className="font-body text-accent font-semibold flex-shrink-0">
+                    <span className="font-body disco-text-cyan font-semibold flex-shrink-0">
                       {entry.correctCount}
                     </span>
                   </>
                 ) : isLoading ? (
                   <>
-                    <div className="w-5 h-5 bg-border rounded animate-pulse" />
+                    <div className="w-5 h-5 bg-white/10 rounded animate-pulse" />
                     <div
-                      className="flex-1 h-5 bg-border rounded animate-pulse"
+                      className="flex-1 h-5 bg-white/10 rounded animate-pulse"
                       style={{ width: `${65 - i * 10}%` }}
                     />
-                    <div className="w-6 h-5 bg-border rounded animate-pulse flex-shrink-0" />
+                    <div className="w-6 h-5 bg-white/10 rounded animate-pulse flex-shrink-0" />
                   </>
                 ) : (
                   <span className="flex-1 invisible">&nbsp;</span>
@@ -109,7 +149,7 @@ const MiniLeaderboard: React.FC<{
         </div>
       )}
       {entries.length > 4 && (
-        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-surface to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-[#06000f] to-transparent pointer-events-none" />
       )}
     </button>
   );
@@ -292,42 +332,58 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-20 pb-safe overflow-auto transition-colors"
+      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 disco-bg pt-20 pb-safe overflow-auto transition-colors relative"
     >
+      {/* Scanning light line */}
+      <div className="disco-scanline" aria-hidden="true" />
+
+      {/* Grid floor */}
+      <div className="disco-grid" aria-hidden="true" />
+
+      {/* Star field */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
+        <Stars />
+      </div>
+
       {/* Top Bar */}
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
 
       <div className="max-w-sm w-full text-center relative z-10">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-        <p className="text-text-muted text-sm mb-2 font-body">
-          Place events to make the longest timeline
-        </p>
+        {/* Disco ball + Title */}
+        <div className="flex flex-col items-center mb-4">
+          <DiscoBall />
+          <h1 className="text-4xl font-bold mt-2 mb-1 font-disco disco-title tracking-widest uppercase">
+            When?
+          </h1>
+          <p className="disco-text-muted text-sm font-body">
+            Place events to make the longest timeline
+          </p>
+        </div>
 
         {/* Game Modes */}
         <div className="space-y-4">
           {/* Daily Challenge (Hero) */}
-          <div className="bg-surface rounded-2xl border border-border p-5">
+          <div className="disco-card rounded-2xl p-5">
             <h3 className="text-lg font-semibold font-body text-left">
-              <span className="text-text">Daily Challenge: </span>
-              <span className="text-accent">
+              <span className="text-white">Daily Challenge: </span>
+              <span className="disco-text-magenta">
                 {todayResult ? todayResult.theme : dailyThemeDisplayName}
               </span>
             </h3>
-            <p className="text-sm text-text-muted text-left mb-3 font-body">
+            <p className="text-sm disco-text-muted text-left mb-3 font-body">
               Same puzzle for everyone, every day
             </p>
 
             {todayResult ? (
               /* Completed daily state */
               <div className="space-y-2">
-                <div className="text-sm font-medium text-text-muted font-body text-left">
+                <div className="text-sm font-medium disco-text-muted font-body text-left">
                   {todayResult.correctCount} event
                   {todayResult.correctCount !== 1 ? 's' : ''} placed correctly
                 </div>
                 <button
                   onClick={handleShareDaily}
-                  className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                  className="w-full py-3 px-4 text-base font-semibold rounded-xl flex items-center justify-center gap-2 font-body disco-btn-magenta"
                 >
                   <Share2 className="w-4 h-4" />
                   Challenge a Friend
@@ -337,7 +393,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
               /* Play daily CTA */
               <button
                 onClick={handleDailyStart}
-                className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+                className="w-full py-3 px-4 text-base font-semibold rounded-xl flex items-center justify-center gap-2 font-body disco-btn-magenta"
               >
                 <Play className="w-4 h-4" />
                 Play Daily Challenge
@@ -353,14 +409,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           </div>
 
           {/* Custom Game */}
-          <div className="bg-surface rounded-2xl border border-border p-5">
-            <h3 className="text-lg font-semibold font-body text-left text-text">Custom Game</h3>
-            <p className="text-sm text-text-muted text-left mb-3 font-body">
-              Choose eras, categories & local multiplayer
+          <div className="disco-card disco-card-cyan rounded-2xl p-5">
+            <h3 className="text-lg font-semibold font-body text-left text-white">Custom Game</h3>
+            <p className="text-sm disco-text-muted text-left mb-3 font-body">
+              Choose eras, categories &amp; local multiplayer
             </p>
             <button
               onClick={() => setIsSettingsOpen(true)}
-              className="w-full py-3 px-4 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white"
+              className="w-full py-3 px-4 text-base font-semibold rounded-xl flex items-center justify-center gap-2 font-body disco-btn-cyan"
             >
               <Play className="w-4 h-4" />
               Play
@@ -370,7 +426,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
         {/* Share toast */}
         {showShareToast && (
-          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-white text-black px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
             <Check className="w-4 h-4" />
             Copied to clipboard!
           </div>

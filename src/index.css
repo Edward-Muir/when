@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&family=DM+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@400;500;600&family=DM+Mono:wght@400&family=Orbitron:wght@700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -350,5 +350,279 @@ input,
   .animate-streak-pulse,
   .animate-streak-glow {
     animation: none;
+  }
+}
+
+/* ============================================
+   DISCO HOME SCREEN STYLES
+   ============================================ */
+
+/* Retro disco font */
+@layer utilities {
+  .font-disco {
+    font-family: 'Orbitron', 'DM Mono', monospace;
+  }
+}
+
+/* Disco background - dark with grid floor */
+.disco-bg {
+  background-color: #06000f;
+  background-image:
+    /* Perspective grid floor */
+    linear-gradient(to bottom, transparent 50%, rgba(255, 0, 220, 0.08) 100%),
+    /* Subtle star field */
+    radial-gradient(circle at 20% 30%, rgba(180, 0, 255, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 220, 255, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 50% 80%, rgba(255, 0, 200, 0.1) 0%, transparent 60%);
+}
+
+/* Grid floor overlay */
+.disco-grid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background-image:
+    linear-gradient(rgba(255, 0, 220, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 0, 220, 0.25) 1px, transparent 1px);
+  background-size: 40px 40px;
+  transform: perspective(400px) rotateX(50deg);
+  transform-origin: bottom;
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 80%);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 80%);
+  pointer-events: none;
+}
+
+/* Neon text glow for title */
+@keyframes discoTitlePulse {
+  0%,
+  100% {
+    text-shadow:
+      0 0 10px #ff00dc,
+      0 0 20px #ff00dc,
+      0 0 40px #ff00dc,
+      0 0 80px #b400ff;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #00f0ff,
+      0 0 15px #00f0ff,
+      0 0 30px #00f0ff,
+      0 0 60px #0066ff;
+  }
+}
+
+.disco-title {
+  animation: discoTitlePulse 3s ease-in-out infinite;
+  color: #fff;
+  letter-spacing: 0.08em;
+}
+
+/* Disco ball */
+@keyframes discoBallSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes discoBallGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 12px #ff00dc) drop-shadow(0 0 24px #b400ff);
+  }
+  33% {
+    filter: drop-shadow(0 0 12px #00f0ff) drop-shadow(0 0 24px #0066ff);
+  }
+  66% {
+    filter: drop-shadow(0 0 12px #ffe600) drop-shadow(0 0 24px #ff6600);
+  }
+}
+
+.disco-ball {
+  animation: discoBallGlow 2s ease-in-out infinite;
+}
+
+/* Disco light rays sweeping */
+@keyframes discoRay1 {
+  0%,
+  100% {
+    opacity: 0;
+    transform: rotate(-30deg) scaleX(0.5);
+  }
+  50% {
+    opacity: 0.4;
+    transform: rotate(10deg) scaleX(1);
+  }
+}
+
+@keyframes discoRay2 {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: rotate(20deg) scaleX(0.8);
+  }
+  50% {
+    opacity: 0;
+    transform: rotate(-20deg) scaleX(0.3);
+  }
+}
+
+/* Neon card panels */
+.disco-card {
+  background: rgba(10, 0, 30, 0.85);
+  border: 1px solid rgba(255, 0, 220, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 0 0 1px rgba(255, 0, 220, 0.15),
+    0 4px 24px rgba(180, 0, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.disco-card-cyan {
+  border-color: rgba(0, 220, 255, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(0, 220, 255, 0.15),
+    0 4px 24px rgba(0, 150, 255, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Neon buttons */
+.disco-btn-magenta {
+  background: linear-gradient(135deg, #cc00bb 0%, #9900cc 100%);
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 0 12px rgba(255, 0, 220, 0.5),
+    0 0 24px rgba(180, 0, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.disco-btn-magenta:hover {
+  box-shadow:
+    0 0 20px rgba(255, 0, 220, 0.7),
+    0 0 40px rgba(180, 0, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.disco-btn-magenta:active {
+  transform: scale(0.96);
+}
+
+.disco-btn-cyan {
+  background: linear-gradient(135deg, #007acc 0%, #0044aa 100%);
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  box-shadow:
+    0 0 12px rgba(0, 200, 255, 0.5),
+    0 0 24px rgba(0, 100, 255, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.1s ease;
+}
+
+.disco-btn-cyan:hover {
+  box-shadow:
+    0 0 20px rgba(0, 200, 255, 0.7),
+    0 0 40px rgba(0, 100, 255, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.disco-btn-cyan:active {
+  transform: scale(0.96);
+}
+
+/* Neon text colors */
+.disco-text-magenta {
+  color: #ff44ee;
+}
+.disco-text-cyan {
+  color: #44e4ff;
+}
+.disco-text-gold {
+  color: #ffd700;
+}
+.disco-text-muted {
+  color: rgba(200, 180, 220, 0.7);
+}
+
+/* Scrolling star particles */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+.disco-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: white;
+  animation: twinkle var(--duration, 2s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* Leaderboard separator in disco mode */
+.disco-separator {
+  border-color: rgba(255, 0, 220, 0.25);
+}
+
+/* Scanning line effect */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+.disco-scanline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 0, 220, 0.3) 20%,
+    rgba(0, 220, 255, 0.5) 50%,
+    rgba(255, 0, 220, 0.3) 80%,
+    transparent 100%
+  );
+  animation: scanline 4s linear infinite;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Reduced motion - disco */
+@media (prefers-reduced-motion: reduce) {
+  .disco-title {
+    animation: none;
+    text-shadow: 0 0 15px #ff00dc;
+  }
+  .disco-ball {
+    animation: none;
+    filter: drop-shadow(0 0 12px #ff00dc);
+  }
+  .disco-scanline {
+    animation: none;
+    display: none;
   }
 }
