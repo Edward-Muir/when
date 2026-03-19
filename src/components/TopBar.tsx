@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal } from 'lucide-react';
+import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, Share2 } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
+import { shareApp } from '../utils/share';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
@@ -46,6 +47,11 @@ const TopBar: React.FC<TopBarProps> = ({
 
   const iconClass = 'w-5 h-5 text-text';
 
+  const handleShare = async () => {
+    const showClipboardToast = await shareApp();
+    if (showClipboardToast) setShowToast(true);
+  };
+
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
@@ -73,6 +79,11 @@ const TopBar: React.FC<TopBarProps> = ({
           )}
 
           <div className="flex items-center gap-2">
+            {/* Share Button */}
+            <button onClick={handleShare} className={buttonClass} aria-label="Share app">
+              <Share2 className={iconClass} />
+            </button>
+
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}

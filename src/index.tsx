@@ -5,6 +5,9 @@ import './index.css';
 import App from './App';
 import DailyRoute from './routes/DailyRoute';
 import ChallengeRoute from './routes/ChallengeRoute';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import Support from './pages/Support';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -16,6 +19,9 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/daily" element={<DailyRoute />} />
         <Route path="/challenge/:code" element={<ChallengeRoute />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/support" element={<Support />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

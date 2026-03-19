@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, SquarePlus, HelpCircle, X, Mail, List } from 'lucide-react';
+import { Share2, SquarePlus, HelpCircle, X, Mail, List, Shield, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
@@ -304,6 +305,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
                   <Mail className={iconClass} />
                   <span className="font-body">Send Feedback</span>
                 </a>
+
+                <Link to="/privacy" className={menuItemClass} onClick={onClose}>
+                  <Shield className={iconClass} />
+                  <span className="font-body">Privacy Policy</span>
+                </Link>
+
+                <Link to="/terms" className={menuItemClass} onClick={onClose}>
+                  <FileText className={iconClass} />
+                  <span className="font-body">Terms of Service</span>
+                </Link>
               </div>
 
               {/* Version */}
