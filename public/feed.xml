@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Mar 2026 21:40:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Mar 2026 21:16:51 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.9.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.9.0</guid>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add terms and privacy policy for App submission (<a href="https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308">eb40e75</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.8.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.8</guid>
       <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add IOS haptics (<a href="https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e">8e49f7b</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.7</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.7</guid>
-      <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

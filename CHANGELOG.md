@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.9.0](https://github.com/Edward-Muir/when/compare/v0.8.0...v0.9.0) (2026-03-19)
+
+
+### Features
+
+* Add terms and privacy policy for App submission ([eb40e75](https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308))
+
 ## [0.8.0](https://github.com/Edward-Muir/when/compare/v0.7.3...v0.8.0) (2026-03-01)
 
 ## [0.7.3](https://github.com/Edward-Muir/when/compare/v0.7.2...v0.7.3) (2026-03-01)
