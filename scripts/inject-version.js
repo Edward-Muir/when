@@ -46,3 +46,17 @@ swContent = swContent.replace(
 fs.writeFileSync(swPath, swContent);
 
 console.log(`Service worker cache updated to v${version}`);
+
+// Update iOS Xcode project MARKETING_VERSION
+const pbxprojPath = path.join(__dirname, '..', 'ios', 'App', 'App.xcodeproj', 'project.pbxproj');
+if (fs.existsSync(pbxprojPath)) {
+  let pbxContent = fs.readFileSync(pbxprojPath, 'utf8');
+  pbxContent = pbxContent.replace(
+    /MARKETING_VERSION = [^;]+;/g,
+    `MARKETING_VERSION = ${version};`
+  );
+  fs.writeFileSync(pbxprojPath, pbxContent);
+  console.log(`iOS MARKETING_VERSION updated to ${version}`);
+} else {
+  console.log('iOS project not found, skipping MARKETING_VERSION update');
+}
