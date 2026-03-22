@@ -137,7 +137,7 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
           totalPlayers &&
           totalPlayers > 1 &&
           (() => {
-            const percentile = Math.round(((totalPlayers - rank) / totalPlayers) * 100);
+            const percentile = Math.round(((totalPlayers - rank) / (totalPlayers - 1)) * 100);
             if (percentile <= 0) return null;
             return (
               <div className="mt-3 text-center">
