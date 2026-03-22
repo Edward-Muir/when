@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Mar 2026 21:16:51 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2026 08:52:57 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.9.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.9.1</guid>
+      <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix leaderboard message (<a href="https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690">46039e7</a>)</li> <li>Sync ios version with app version (<a href="https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85">6a74a1c</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.9.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.9</guid>
       <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Only 6 categories not 7 (<a href="https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6">64bffd4</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.8</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.8</guid>
-      <pubDate>Sun, 22 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add IOS haptics (<a href="https://github.com/Edward-Muir/when/commit/8e49f7b650c60a60a13dcc6f2c4856d9c4db048e">8e49f7b</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

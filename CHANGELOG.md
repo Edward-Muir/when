@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.9.1](https://github.com/Edward-Muir/when/compare/v0.9.0...v0.9.1) (2026-03-22)
+
+
+### Bug Fixes
+
+* Fix leaderboard message ([46039e7](https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690))
+* Sync ios version with app version ([6a74a1c](https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85))
+
 ## [0.9.0](https://github.com/Edward-Muir/when/compare/v0.8.0...v0.9.0) (2026-03-19)
 
 
