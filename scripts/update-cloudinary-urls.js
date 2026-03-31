@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+require('dotenv').config();
+
 /**
  * Script to fetch Cloudinary images and update event JSON files with image URLs.
  *
@@ -29,7 +31,7 @@ try {
 }
 
 const EVENTS_DIR = path.join(__dirname, '../public/events');
-const CLOUDINARY_FOLDER = ''; // Empty string = root folder, or set to 'when' etc.
+const CLOUDINARY_FOLDER = '';
 
 // Configure cloudinary (uses CLOUDINARY_URL env var or individual vars)
 cloudinary.config({
@@ -97,14 +99,13 @@ function extractEventName(publicId) {
 /**
  * Build optimized Cloudinary URL
  */
-function buildCloudinaryUrl(publicId, width = 660) {
+function buildCloudinaryUrl(publicId) {
   return cloudinary.url(publicId, {
     fetch_format: 'auto',
-    quality: 'auto:good',  // 'auto:best' for highest quality, 'auto:good' for balanced
-    width: width,          // 660 = 2x for retina displays
+    quality: 'auto:good',
     crop: 'fill',
     gravity: 'auto',
-    dpr: 'auto'            // Automatic device pixel ratio
+    dpr: 'auto'
   });
 }
 

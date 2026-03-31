@@ -372,7 +372,9 @@
     "image_width": 330,
     "image_height": 244,
     "wikipedia_views": 1184651,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pantheon,_Rome"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pantheon,_Rome",
+    "color": "#857d78",
+    "text_color": "light"
   },
   {
     "name": "hadrians-wall",
@@ -827,7 +829,9 @@
     "image_width": 330,
     "image_height": 196,
     "wikipedia_views": 285218,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Winter_Palace"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Winter_Palace",
+    "color": "#656960",
+    "text_color": "light"
   },
   {
     "name": "steam-engine",
@@ -1280,7 +1284,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 216394,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Radio_City_Music_Hall"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Radio_City_Music_Hall",
+    "color": "#b1a7a2",
+    "text_color": "dark"
   },
   {
     "name": "vatican-museum-spiral-staircase",
@@ -1731,11 +1737,13 @@
     "category": "infrastructure",
     "description": "Egypt completed the massive dam across the Nile River.",
     "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/aswan-high-dam_h0yu5c?_a=BAMAMiTC0",
-    "image_width": 660,
-    "image_height": 660,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aswan-high-dam_l4grig?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 156147,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aswan_Dam"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aswan_Dam",
+    "color": "#b4ae95",
+    "text_color": "dark"
   },
   {
     "name": "transamerica-pyramid",
@@ -1761,7 +1769,9 @@
     "image_width": 330,
     "image_height": 203,
     "wikipedia_views": 452997,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sydney_Opera_House",
+    "color": "#455e6e",
+    "text_color": "light"
   },
   {
     "name": "sears-tower",
@@ -2004,7 +2014,7 @@
     "category": "infrastructure",
     "description": "Norman Foster's futuristic metro system opened in Spain.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Bilbao_Metro_05_2012_2401.jpg/330px-Bilbao_Metro_05_2012_2401.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bilbao-metro_vun0in?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 28284,
@@ -2242,7 +2252,9 @@
     "image_width": 330,
     "image_height": 142,
     "wikipedia_views": 674072,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Taipei_101"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Taipei_101",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "three-gorges-dam",

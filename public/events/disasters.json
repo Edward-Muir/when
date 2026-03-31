@@ -177,7 +177,9 @@
     "image_width": 330,
     "image_height": 720,
     "wikipedia_views": 51836,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Cyprian"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Cyprian",
+    "color": "#7a3d25",
+    "text_color": "light"
   },
   {
     "name": "365-crete-earthquake",
@@ -459,11 +461,13 @@
     "category": "disasters",
     "description": "A massive fire destroyed most of the medieval City of London.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Great_Fire_London.jpg/330px-Great_Fire_London.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-fire-london_bh4fg5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 192,
+    "image_height": 440,
     "wikipedia_views": 546701,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_London",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "cascadia-earthquake-1700",
@@ -656,7 +660,9 @@
     "image_width": 330,
     "image_height": 219,
     "wikipedia_views": 347386,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
+    "color": "#7e7f78",
+    "text_color": "light"
   },
   {
     "name": "year-without-summer",
@@ -1105,7 +1111,9 @@
     "image_width": 330,
     "image_height": 390,
     "wikipedia_views": 129939,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1921–1922"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1921–1922",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "knickerbocker-storm",
@@ -1547,7 +1555,9 @@
     "image_width": 330,
     "image_height": 236,
     "wikipedia_views": 183161,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1968_Thule_Air_Base_B-52_crash"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1968_Thule_Air_Base_B-52_crash",
+    "color": "#a4adc2",
+    "text_color": "dark"
   },
   {
     "name": "bhola-cyclone",
@@ -1987,7 +1997,9 @@
     "image_width": 330,
     "image_height": 421,
     "wikipedia_views": 2328,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Famine_in_Somalia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Famine_in_Somalia",
+    "color": "#91b3c7",
+    "text_color": "dark"
   },
   {
     "name": "hurricane-andrew",
@@ -2440,7 +2452,9 @@
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 241254,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake",
+    "color": "#4e453c",
+    "text_color": "light"
   },
   {
     "name": "paris-attacks",

@@ -6,11 +6,13 @@
     "category": "conflict",
     "description": "The first battle recorded in detail, Pharaoh Thutmose III defeated a Canaanite coalition.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/%D7%AA%D7%9C_%D7%9E%D7%92%D7%99%D7%93%D7%95.JPG/330px-%D7%AA%D7%9C_%D7%9E%D7%92%D7%99%D7%93%D7%95.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-megiddo_b8ke6w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 195,
+    "image_height": 440,
     "wikipedia_views": 60118,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)",
+    "color": "#976f45",
+    "text_color": "light"
   },
   {
     "name": "battle-kadesh",
@@ -19,11 +21,13 @@
     "category": "conflict",
     "description": "Egypt and the Hittite Empire clashed in one of the largest chariot battles in history.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Egypt_Abou_Simbel6.jpg/330px-Egypt_Abou_Simbel6.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-kadesh_oaenlk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 255,
+    "image_height": 440,
     "wikipedia_views": 182857,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kadesh"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kadesh",
+    "color": "#674f3a",
+    "text_color": "light"
   },
   {
     "name": "persian-wars-begin",
@@ -32,11 +36,13 @@
     "category": "conflict",
     "description": "Greek city-states revolted against Persian rule, beginning decades of conflict.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Greek-Persian_duel.jpg/330px-Greek-Persian_duel.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/persian-wars-begin_ygldom?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 327,
+    "image_height": 440,
     "wikipedia_views": 314453,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars",
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "battle-marathon",
@@ -45,11 +51,13 @@
     "category": "conflict",
     "description": "Athenian forces defeated the Persian invasion, inspiring the marathon race legend.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Scene_of_the_Battle_of_Marathon.jpg/330px-Scene_of_the_Battle_of_Marathon.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-marathon_soclqv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 216,
+    "image_height": 440,
     "wikipedia_views": 311818,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marathon"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marathon",
+    "color": "#5f5549",
+    "text_color": "light"
   },
   {
     "name": "battle-thermopylae",
@@ -58,11 +66,13 @@
     "category": "conflict",
     "description": "King Leonidas and 300 Spartans made their legendary last stand against Persia.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/L%C3%A9onidas_aux_Thermopyles_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3690_%3B_L_3711.jpg/330px-L%C3%A9onidas_aux_Thermopyles_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3690_%3B_L_3711.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-thermopylae_j2etwy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 243,
+    "image_height": 440,
     "wikipedia_views": 905157,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Thermopylae",
+    "color": "#271f1d",
+    "text_color": "light"
   },
   {
     "name": "battle-salamis",
@@ -71,11 +81,13 @@
     "category": "conflict",
     "description": "The Greek navy decisively defeated the Persian fleet in a narrow strait.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Battle_of_salamis.png/330px-Battle_of_salamis.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-salamis_pnqqcv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 242994,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Salamis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Salamis",
+    "color": "#434f4e",
+    "text_color": "light"
   },
   {
     "name": "peloponnesian-war",
@@ -84,11 +96,13 @@
     "category": "conflict",
     "description": "Athens and Sparta began a devastating 27-year war that weakened all of Greece.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pelop_war_en.png/330px-Pelop_war_en.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peloponnesian-war_s3o72y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 182,
+    "image_height": 440,
     "wikipedia_views": 618373,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Peloponnesian_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peloponnesian_War",
+    "color": "#534039",
+    "text_color": "light"
   },
   {
     "name": "alexander-empire",
@@ -97,11 +111,13 @@
     "category": "conflict",
     "description": "Alexander the Great defeated the Persian Empire at Gaugamela.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Alexander_the_Great_mosaic_%28cropped%29.jpg/330px-Alexander_the_Great_mosaic_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-empire_duesbg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 441,
+    "image_height": 440,
     "wikipedia_views": 285004,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great",
+    "color": "#5b4438",
+    "text_color": "light"
   },
   {
     "name": "first-punic-war",
@@ -110,11 +126,13 @@
     "category": "conflict",
     "description": "Rome and Carthage began their first conflict over control of Sicily.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/First_Punic_War_264_BC_v3.png/330px-First_Punic_War_264_BC_v3.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-punic-war_gblsif?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 194,
+    "image_height": 440,
     "wikipedia_views": 202073,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Punic_people"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Punic_people",
+    "color": "#6b5a54",
+    "text_color": "light"
   },
   {
     "name": "hannibal-crosses-alps",
@@ -123,11 +141,13 @@
     "category": "conflict",
     "description": "Hannibal led his army and war elephants over the Alps to invade Italy.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hannibal_Barca_bust_from_Capua_photo.jpg/330px-Hannibal_Barca_bust_from_Capua_photo.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hannibal-crosses-alps_wbh7cz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 399,
+    "image_height": 440,
     "wikipedia_views": 194150,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hannibal's_crossing_of_the_Alps"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hannibal's_crossing_of_the_Alps",
+    "color": "#42474a",
+    "text_color": "light"
   },
   {
     "name": "battle-cannae",
@@ -136,11 +156,13 @@
     "category": "conflict",
     "description": "Hannibal's double envelopment annihilated a Roman army of 80,000 men.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/The_Death_of_Paulus_Aemilius_at_the_Battle_of_Cannae_%28Yale_University_Art_Gallery_scan%29.jpg/330px-The_Death_of_Paulus_Aemilius_at_the_Battle_of_Cannae_%28Yale_University_Art_Gallery_scan%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-cannae_ksji6m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 231,
+    "image_height": 440,
     "wikipedia_views": 603032,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Cannae"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
+    "color": "#563e2e",
+    "text_color": "light"
   },
   {
     "name": "siege-syracuse",
@@ -149,11 +171,13 @@
     "category": "conflict",
     "description": "Rome besieged Syracuse where Archimedes' war machines defended the city.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gari-Melchers-War-Highsmith.jpeg/330px-Gari-Melchers-War-Highsmith.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-syracuse_lpio7u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 113,
+    "image_height": 440,
     "wikipedia_views": 154650,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Syracuse_(213–212_BC)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Syracuse_(213–212_BC)",
+    "color": "#5f4c3f",
+    "text_color": "light"
   },
   {
     "name": "battle-zama",
@@ -162,11 +186,13 @@
     "category": "conflict",
     "description": "Scipio Africanus defeated Hannibal, ending the Second Punic War.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Bust_of_Sulla_%28Ny_Carlsberg_Glyptotek%2C_Copenhagen%29_2.jpg/330px-Bust_of_Sulla_%28Ny_Carlsberg_Glyptotek%2C_Copenhagen%29_2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-zama_vmkvrn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 388,
+    "image_height": 440,
     "wikipedia_views": 249890,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Zama"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Zama",
+    "color": "#60422f",
+    "text_color": "light"
   },
   {
     "name": "third-punic-war",
@@ -175,11 +201,13 @@
     "category": "conflict",
     "description": "Rome completely destroyed Carthage, ending the Punic Wars.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Catapulta_by_Edward_Poynter.jpg/330px-Catapulta_by_Edward_Poynter.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/third-punic-war_qnl9cq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 276,
+    "image_height": 440,
     "wikipedia_views": 139824,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)",
+    "color": "#4e3223",
+    "text_color": "light"
   },
   {
     "name": "spartacus-revolt",
@@ -188,11 +216,13 @@
     "category": "conflict",
     "description": "Gladiator Spartacus led the largest slave uprising in Roman history.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/%CE%A3%CF%80%CE%AC%CF%81%CF%84%CE%B1%CE%BA%CE%BF%CF%82_Spartacus%2CEspartaco_marble_statue_in_Louvre_%22%CE%9C%CE%B1%CE%B9%CE%B4%CE%BF%CE%B9_clan_-Meadow%22_slave_macedon-greek.jpg/330px-%CE%A3%CF%80%CE%AC%CF%81%CF%84%CE%B1%CE%BA%CE%BF%CF%82_Spartacus%2CEspartaco_marble_statue_in_Louvre_%22%CE%9C%CE%B1%CE%B9%CE%B4%CE%BF%CE%B9_clan_-Meadow%22_slave_macedon-greek.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spartacus-revolt_irewf2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 569,
+    "image_height": 440,
     "wikipedia_views": 987396,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Spartacus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spartacus",
+    "color": "#3d2a20",
+    "text_color": "light"
   },
   {
     "name": "crossing-rubicon",
@@ -201,11 +231,13 @@
     "category": "conflict",
     "description": "Caesar's crossing sparked civil war and the end of the Roman Republic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Cesare_varca_rubicone_bartolomeo_pinelli.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossing-rubicon_perb4z?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 415353,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon",
+    "color": "#2c2935",
+    "text_color": "light"
   },
   {
     "name": "julius-caesar",
@@ -214,11 +246,13 @@
     "category": "conflict",
     "description": "Roman senators assassinated Caesar on the Ides of March.",
     "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/julius-caesar_zvkbax?_a=BAMAMiTC0",
-    "image_width": 660,
-    "image_height": 660,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/julius-caesar_zvkbax?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 600890,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
+    "color": "#281f1c",
+    "text_color": "light"
   },
   {
     "name": "battle-actium",
@@ -227,11 +261,13 @@
     "category": "conflict",
     "description": "Octavian defeated Antony and Cleopatra, becoming sole ruler of Rome.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Johann_Georg_Platzer_%281704-1761%29_-_Antony_and_Cleopatra_at_the_Battle_of_Actium_-_WM.1496-1948_-_Apsley_House.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-actium_pqwyll?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 252,
+    "image_height": 440,
     "wikipedia_views": 241090,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Actium"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Actium",
+    "color": "#271f1e",
+    "text_color": "light"
   },
   {
     "name": "battle-teutoburg-forest",
@@ -240,11 +276,13 @@
     "category": "conflict",
     "description": "Germanic tribes destroyed three Roman legions, halting Rome's expansion into Germany.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Epitaph_des_Marcus_Caelius.JPG/330px-Epitaph_des_Marcus_Caelius.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-teutoburg-forest_jjfqly?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 413,
+    "image_height": 440,
     "wikipedia_views": 510023,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
+    "color": "#20221b",
+    "text_color": "light"
   },
   {
     "name": "jewish-revolt-begins",
@@ -253,11 +291,13 @@
     "category": "conflict",
     "description": "Jews in Judea rose against Roman rule in a rebellion lasting seven years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Arch_of_Titus_Menorah.png/330px-Arch_of_Titus_Menorah.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jewish-revolt-begins_az8twt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 184,
+    "image_height": 440,
     "wikipedia_views": 352094,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Jewish–Roman_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Jewish–Roman_War",
+    "color": "#242021",
+    "text_color": "light"
   },
   {
     "name": "siege-masada",
@@ -266,11 +306,13 @@
     "category": "conflict",
     "description": "Jewish rebels held out against Rome before choosing mass suicide over surrender.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Israel-2013-Aerial_21-Masada.jpg/330px-Israel-2013-Aerial_21-Masada.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-masada_xelnfa?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 439,
+    "image_height": 440,
     "wikipedia_views": 139402,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Masada"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Masada",
+    "color": "#261e26",
+    "text_color": "light"
   },
   {
     "name": "bar-kokhba-revolt",
@@ -279,11 +321,13 @@
     "category": "conflict",
     "description": "The last Jewish revolt against Rome led to mass exile from Judea.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Bar_kochba22.jpg/330px-Bar_kochba22.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bar-kokhba-revolt_lnv5wu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 418,
+    "image_height": 440,
     "wikipedia_views": 381287,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bar_Kokhba_revolt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bar_Kokhba_revolt",
+    "color": "#271f1c",
+    "text_color": "light"
   },
   {
     "name": "battle-adrianople",
@@ -292,11 +336,13 @@
     "category": "conflict",
     "description": "Visigoths defeated Rome and killed Emperor Valens, signaling Rome's decline.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Battle_of_Adrianople_378_en.svg/330px-Battle_of_Adrianople_378_en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-adrianople_gret7d?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 451,
+    "image_height": 440,
     "wikipedia_views": 144017,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Adrianople"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Adrianople",
+    "color": "#382d29",
+    "text_color": "light"
   },
   {
     "name": "sack-rome-visigoths",
@@ -305,11 +351,13 @@
     "category": "conflict",
     "description": "Alaric's Visigoths sacked Rome for the first time in 800 years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Visigoths_sack_Rome.jpg/330px-Visigoths_sack_Rome.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sack-rome-visigoths_nao1t4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 508,
+    "image_height": 440,
     "wikipedia_views": 265317,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+    "color": "#402923",
+    "text_color": "light"
   },
   {
     "name": "attila-invasion",
@@ -318,11 +366,13 @@
     "category": "conflict",
     "description": "The Hunnic king ravaged Gaul before being defeated at the Battle of the Catalaunian Plains.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Attila_%28K%C3%A9pes_kr%C3%B3nika%29_%28cropped%29.jpg/330px-Attila_%28K%C3%A9pes_kr%C3%B3nika%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/attila-invasion_tplu1l?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 1107777,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Attila"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Attila",
+    "color": "#372b2e",
+    "text_color": "light"
   },
   {
     "name": "sack-rome-vandals",
@@ -331,11 +381,13 @@
     "category": "conflict",
     "description": "The Vandals plundered Rome for two weeks, giving rise to the term vandalism.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Genseric_sacking_rome_456.jpg/330px-Genseric_sacking_rome_456.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sack-rome-vandals_ilzdn8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 245,
+    "image_height": 440,
     "wikipedia_views": 79249,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
+    "color": "#443126",
+    "text_color": "light"
   },
   {
     "name": "rome-falls",
@@ -344,11 +396,13 @@
     "category": "conflict",
     "description": "The last Roman emperor was deposed, ending ancient Rome.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Roman_Republic_Empire_map.gif/330px-Roman_Republic_Empire_map.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rome-falls_e4bcwc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 314,
+    "image_height": 440,
     "wikipedia_views": 997378,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+    "color": "#26201e",
+    "text_color": "light"
   },
   {
     "name": "arab-conquest-persia",
@@ -357,11 +411,13 @@
     "category": "conflict",
     "description": "Muslim forces conquered the Sasanian Empire, ending 400 years of Persian rule.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/330px-Flag_of_Iran_%28official%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arab-conquest-persia_wqz54t?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 298231,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "battle-tours",
@@ -370,11 +426,13 @@
     "category": "conflict",
     "description": "Charles Martel halted the Umayyad advance into Western Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Steuben_-_Bataille_de_Poitiers.png/330px-Steuben_-_Bataille_de_Poitiers.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-tours_hh1qra?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 271,
+    "image_height": 440,
     "wikipedia_views": 298049,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tours"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+    "color": "#272011",
+    "text_color": "light"
   },
   {
     "name": "viking-lindisfarne",
@@ -383,11 +441,13 @@
     "category": "conflict",
     "description": "Vikings attacked the English monastery, beginning the Viking Age.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Cultural_History_%28historisk%29_Museum_Oslo._VIKINGR_Norwegian_Viking-Age_Exhibition_11_Elaborate_swords%2C_decorated_hilts%2C_ornated_blades%2C_home-forged_and_foreign-made%2C_ca_800-1000._Found_in_Telemark%2C_Nordland%2C_Hedmark._4706.jpg/330px-thumbnail.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/viking-lindisfarne_x1d9eg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 606780,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Lindisfarne"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lindisfarne",
+    "color": "#4a5354",
+    "text_color": "light"
   },
   {
     "name": "charlemagne",
@@ -396,11 +456,13 @@
     "category": "conflict",
     "description": "Charlemagne was crowned Holy Roman Emperor by the Pope.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/330px-Charlemagne_denier_Mayence_812_814.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charlemagne_uodxna?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 2153384,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
+    "color": "#232022",
+    "text_color": "light"
   },
   {
     "name": "battle-lechfeld",
@@ -409,11 +471,13 @@
     "category": "conflict",
     "description": "Otto I decisively defeated the Magyars, ending their raids into Western Europe.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Lechfeld1457.jpg/330px-Lechfeld1457.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-lechfeld_jg94fh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 57617,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
+    "color": "#292823",
+    "text_color": "light"
   },
   {
     "name": "norman-conquest",
@@ -422,11 +486,13 @@
     "category": "conflict",
     "description": "William the Conqueror defeated King Harold at the Battle of Hastings.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/330px-Bayeux_Tapestry_scene57_Harold_death.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norman-conquest_abi4c9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 287,
+    "image_height": 440,
     "wikipedia_views": 672379,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Conquest"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Conquest",
+    "color": "#3b312c",
+    "text_color": "light"
   },
   {
     "name": "battle-manzikert",
@@ -435,11 +501,13 @@
     "category": "conflict",
     "description": "Seljuk Turks captured the Byzantine Emperor, opening Anatolia to Turkish settlement.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/131_Bataille_de_Malazgirt.jpg/330px-131_Bataille_de_Malazgirt.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-manzikert_r13ikh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 349,
+    "image_height": 440,
     "wikipedia_views": 254010,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Manzikert",
+    "color": "#27211b",
+    "text_color": "light"
   },
   {
     "name": "first-crusade",
@@ -448,11 +516,13 @@
     "category": "conflict",
     "description": "Pope Urban II called for the first military expedition to the Holy Land.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Peter_the_Hermit.jpg/330px-Peter_the_Hermit.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-crusade_r02ga9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 318,
+    "image_height": 440,
     "wikipedia_views": 633453,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
+    "color": "#251f20",
+    "text_color": "light"
   },
   {
     "name": "third-crusade",
@@ -461,11 +531,13 @@
     "category": "conflict",
     "description": "Richard the Lionheart and Saladin faced off for control of the Holy Land.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/The_Third_Crusade_%281189-1192%29.png/330px-The_Third_Crusade_%281189-1192%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/third-crusade_stfmsh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 479375,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Crusade",
+    "color": "#c8a96d",
+    "text_color": "dark"
   },
   {
     "name": "genghis-khan",
@@ -474,11 +546,13 @@
     "category": "conflict",
     "description": "Genghis Khan united the Mongol tribes and began building an empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/330px-YuanEmperorAlbumGenghisPortrait.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genghis-khan_kvlsgi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 419,
+    "image_height": 440,
     "wikipedia_views": 3643535,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+    "color": "#3e3936",
+    "text_color": "light"
   },
   {
     "name": "mongol-invasion-rus",
@@ -487,11 +561,13 @@
     "category": "conflict",
     "description": "Batu Khan's Mongol forces invaded Kievan Rus', beginning centuries of Mongol domination.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Sacking_of_Suzdal_by_Batu_Khan.jpg",
-    "image_width": 694,
-    "image_height": 926,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-rus_nmbg54?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 161946,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus'"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus'",
+    "color": "#abafa7",
+    "text_color": "dark"
   },
   {
     "name": "mongol-baghdad",
@@ -500,11 +576,13 @@
     "category": "conflict",
     "description": "The Mongols destroyed the Abbasid Caliphate and killed hundreds of thousands.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Bagdad1258.jpg/330px-Bagdad1258.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-baghdad_u5bytk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 317947,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
+    "color": "#6f5844",
+    "text_color": "light"
   },
   {
     "name": "hundred-years-war-start",
@@ -513,11 +591,13 @@
     "category": "conflict",
     "description": "England and France began a prolonged conflict over succession and territory.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hundred_years_war_collage.jpg/330px-Hundred_years_war_collage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hundred-years-war-start_ot7gzh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 56515,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Hundred_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Hundred_Years'_War",
+    "color": "#3a3532",
+    "text_color": "light"
   },
   {
     "name": "battle-crecy",
@@ -526,11 +606,13 @@
     "category": "conflict",
     "description": "English longbowmen devastated French knights in a pivotal Hundred Years' War battle.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Battle_of_crecy_froissart.jpg/330px-Battle_of_crecy_froissart.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-crecy_o21wic?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 290,
+    "image_height": 440,
     "wikipedia_views": 293104,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Crécy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Crécy",
+    "color": "#3c342d",
+    "text_color": "light"
   },
   {
     "name": "gunpowder-europe",
@@ -539,11 +621,13 @@
     "category": "conflict",
     "description": "The introduction of gunpowder weapons revolutionized European warfare.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/LariviereBatailleDunes.jpg/330px-LariviereBatailleDunes.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-europe_ehxp1y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 288,
+    "image_height": 440,
     "wikipedia_views": 136729,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "battle-poitiers",
@@ -552,11 +636,13 @@
     "category": "conflict",
     "description": "The English captured the French king in another devastating defeat for France.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Battle_poitiers.jpg/330px-Battle_poitiers.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-poitiers_l3atgb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253,
+    "image_height": 440,
     "wikipedia_views": 157657,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poitiers"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poitiers",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "battle-kulikovo",
@@ -565,11 +651,13 @@
     "category": "conflict",
     "description": "Dmitry Donskoy led Russian forces to victory, marking the decline of Mongol rule.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Dmitry_Donskoy_in_the_Battle_of_Kulikovo.jpg/330px-Dmitry_Donskoy_in_the_Battle_of_Kulikovo.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-kulikovo_rzddol?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 396,
+    "image_height": 440,
     "wikipedia_views": 118404,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo",
+    "color": "#312f2a",
+    "text_color": "light"
   },
   {
     "name": "battle-agincourt",
@@ -578,11 +666,13 @@
     "category": "conflict",
     "description": "Henry V's outnumbered English army crushed the French, immortalized by Shakespeare.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Schlacht_von_Azincourt.jpg/330px-Schlacht_von_Azincourt.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-agincourt_cfegci?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 926899,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Agincourt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Agincourt",
+    "color": "#3a3a36",
+    "text_color": "light"
   },
   {
     "name": "joan-of-arc",
@@ -591,11 +681,13 @@
     "category": "conflict",
     "description": "A peasant girl inspired French victories before being captured and burned.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/330px-Joan_of_Arc_miniature_graded.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joan-of-arc_ssvlda?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 492,
+    "image_height": 440,
     "wikipedia_views": 2320798,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Joan_of_Arc"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joan_of_Arc",
+    "color": "#544639",
+    "text_color": "light"
   },
   {
     "name": "hundred-years-war-end",
@@ -604,11 +696,13 @@
     "category": "conflict",
     "description": "France expelled the English, ending over a century of intermittent warfare.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hundred_years_war_collage.jpg/330px-Hundred_years_war_collage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hundred-years-war-end_uxbp6e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 1401250,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hundred_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
+    "color": "#494c47",
+    "text_color": "light"
   },
   {
     "name": "constantinople-fall",
@@ -617,11 +711,13 @@
     "category": "conflict",
     "description": "Ottoman forces conquered the Byzantine capital, ending the Eastern Roman Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Le_si%C3%A8ge_de_Constantinople_%281453%29_by_Jean_Le_Tavernier_after_1455.jpg/330px-Le_si%C3%A8ge_de_Constantinople_%281453%29_by_Jean_Le_Tavernier_after_1455.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/constantinople-fall_vmlvsd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 488,
+    "image_height": 440,
     "wikipedia_views": 1042347,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+    "color": "#3a3137",
+    "text_color": "light"
   },
   {
     "name": "wars-of-roses",
@@ -630,11 +726,13 @@
     "category": "conflict",
     "description": "The Houses of York and Lancaster fought for the English throne.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Beheading_duke_somerset.jpg/330px-Beheading_duke_somerset.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wars-of-roses_q0idqs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 408,
+    "image_height": 440,
     "wikipedia_views": 1183324,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "fall-granada",
@@ -643,11 +741,13 @@
     "category": "conflict",
     "description": "The last Moorish stronghold in Spain fell, completing the Reconquista.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/La_Rendici%C3%B3n_de_Granada_-_Pradilla.jpg/330px-La_Rendici%C3%B3n_de_Granada_-_Pradilla.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-granada_ynuzbq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 211,
+    "image_height": 440,
     "wikipedia_views": 161812,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Granada_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Granada_War",
+    "color": "#4e2d2c",
+    "text_color": "light"
   },
   {
     "name": "siege-vienna-first",
@@ -656,11 +756,13 @@
     "category": "conflict",
     "description": "Ottoman forces besieged Vienna but failed to capture the Habsburg capital.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Schoenbrunn_philharmoniker_2012.jpg/330px-Schoenbrunn_philharmoniker_2012.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-vienna-first_ylzids?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 148,
+    "image_height": 440,
     "wikipedia_views": 141739,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Vienna_(1529)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Vienna_(1529)",
+    "color": "#372e2f",
+    "text_color": "light"
   },
   {
     "name": "dutch-revolt",
@@ -669,11 +771,13 @@
     "category": "conflict",
     "description": "The Netherlands began their 80-year war for independence from Spain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Battle_of_Gibraltar_1607.jpg/330px-Battle_of_Gibraltar_1607.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dutch-revolt_skgn4s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 239,
+    "image_height": 440,
     "wikipedia_views": 419859,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Eighty_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eighty_Years'_War",
+    "color": "#232022",
+    "text_color": "light"
   },
   {
     "name": "battle-lepanto",
@@ -682,11 +786,13 @@
     "category": "conflict",
     "description": "A Christian fleet destroyed the Ottoman navy in the last major galley battle.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg/330px-Laureys_a_Castro_-_The_Battle_of_Lepanto.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-lepanto_lseqgw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 203,
+    "image_height": 440,
     "wikipedia_views": 387710,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lepanto"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Lepanto",
+    "color": "#261f1c",
+    "text_color": "light"
   },
   {
     "name": "spanish-armada",
@@ -695,11 +801,13 @@
     "category": "conflict",
     "description": "England repelled Spain's massive invasion fleet, securing Protestant rule.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Armadaroute.jpg/330px-Armadaroute.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-armada_gct4j2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 228,
+    "image_height": 440,
     "wikipedia_views": 4637,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Defeat_of_the_Spanish_Armada"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Defeat_of_the_Spanish_Armada",
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "imjin-war",
@@ -708,11 +816,13 @@
     "category": "conflict",
     "description": "Toyotomi Hideyoshi invaded Korea, sparking a devastating seven-year war.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Documentary_painting_of_the_Battle_of_Hansan_Island.jpg/960px-Documentary_painting_of_the_Battle_of_Hansan_Island.jpg",
-    "image_width": 960,
-    "image_height": 625,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/imjin-war_furp6u?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 256940,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Imjin_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Imjin_War",
+    "color": "#2b2c2e",
+    "text_color": "light"
   },
   {
     "name": "thirty-years-war-begins",
@@ -721,11 +831,13 @@
     "category": "conflict",
     "description": "Religious conflict erupted in what became Europe's most devastating war before modern times.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Carl_Friedrich_Lessing_-_The_Siege_%28Defense_of_a_Church_Courtyard_During_the_Thirty_Years%E2%80%99_War%29_-_Google_Art_Project.jpg/330px-Carl_Friedrich_Lessing_-_The_Siege_%28Defense_of_a_Church_Courtyard_During_the_Thirty_Years%E2%80%99_War%29_-_Google_Art_Project.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thirty-years-war-begins_hbcja9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 1292597,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Thirty_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thirty_Years'_War",
+    "color": "#afaea6",
+    "text_color": "dark"
   },
   {
     "name": "battle-breitenfeld",
@@ -734,11 +846,13 @@
     "category": "conflict",
     "description": "Gustavus Adolphus revolutionized warfare with combined arms tactics against the Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/29a_Gustave_Adolphe_%C3%A0_la_bataille_de_Breitenfeld%2C_1632.jpg/330px-29a_Gustave_Adolphe_%C3%A0_la_bataille_de_Breitenfeld%2C_1632.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-breitenfeld_evirvm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215,
+    "image_height": 440,
     "wikipedia_views": 68698,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Breitenfeld_(1631)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Breitenfeld_(1631)",
+    "color": "#725d3e",
+    "text_color": "light"
   },
   {
     "name": "english-civil-war-start",
@@ -747,11 +861,13 @@
     "category": "conflict",
     "description": "Conflict erupted between Parliamentarians and Royalists over governance of England.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Battle_of_Naseby.jpg/330px-Battle_of_Naseby.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/english-civil-war-start_ge21hu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 260,
+    "image_height": 440,
     "wikipedia_views": 813883,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/English_Civil_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/English_Civil_War",
+    "color": "#504d44",
+    "text_color": "light"
   },
   {
     "name": "battle-marston-moor",
@@ -760,11 +876,13 @@
     "category": "conflict",
     "description": "Parliament's largest victory in the English Civil War, showcasing Cromwell's cavalry.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Battle_of_Marston_Moor_1644_by_John_Barker.png/330px-Battle_of_Marston_Moor_1644_by_John_Barker.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-marston-moor_epmvzv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 68557,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marston_Moor"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marston_Moor",
+    "color": "#393128",
+    "text_color": "light"
   },
   {
     "name": "peace-westphalia",
@@ -773,11 +891,13 @@
     "category": "conflict",
     "description": "Treaties ending the Thirty Years' War established the modern state system.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg/330px-M%C3%BCnster%2C_Historisches_Rathaus_--_2014_--_6855.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peace-westphalia_x0wke3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 529,
+    "image_height": 440,
     "wikipedia_views": 349898,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia",
+    "color": "#291f17",
+    "text_color": "light"
   },
   {
     "name": "charles-i-execution",
@@ -786,11 +906,13 @@
     "category": "conflict",
     "description": "The English king was beheaded after being convicted of treason.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/King_Charles_I_after_original_by_van_Dyck.jpg/330px-King_Charles_I_after_original_by_van_Dyck.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-i-execution_zjwhkn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 570,
+    "image_height": 440,
     "wikipedia_views": 2188368,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_I_of_England"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_I_of_England",
+    "color": "#a1b0b5",
+    "text_color": "dark"
   },
   {
     "name": "battle-vienna",
@@ -799,11 +921,13 @@
     "category": "conflict",
     "description": "A Christian relief force broke the Ottoman siege, ending Turkish expansion into Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Anonym_Entsatz_Wien_1683.jpg/330px-Anonym_Entsatz_Wien_1683.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-vienna_p7m04w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 197,
+    "image_height": 440,
     "wikipedia_views": 767391,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vienna"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vienna",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "glorious-revolution",
@@ -812,11 +936,13 @@
     "category": "conflict",
     "description": "William of Orange overthrew King James II in a largely bloodless coup.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg/330px-William_of_Orange_III_and_his_Dutch_army_land_in_Brixham%2C_1688.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/glorious-revolution_k0r1zu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 229,
+    "image_height": 440,
     "wikipedia_views": 651777,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Glorious_Revolution"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Glorious_Revolution",
+    "color": "#7b8790",
+    "text_color": "dark"
   },
   {
     "name": "great-northern-war",
@@ -825,11 +951,13 @@
     "category": "conflict",
     "description": "Sweden faced a coalition that would end its status as a great power.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Great_Northern_War_Collage.jpg/330px-Great_Northern_War_Collage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-northern-war_k5oltt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 376,
+    "image_height": 440,
     "wikipedia_views": 482609,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Northern_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Northern_War",
+    "color": "#a0b1b6",
+    "text_color": "dark"
   },
   {
     "name": "battle-blenheim",
@@ -838,11 +966,13 @@
     "category": "conflict",
     "description": "Marlborough's victory saved Vienna and changed the course of the War of Spanish Succession.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Copy_after_Jan_van_Huchtenburgh_%28Haarlem_1647-Amsterdam_1733%29_-_The_Battle_of_Blenheim_%28or_H%C3%B6chst%C3%A4dt%29%2C_1704._-_RCIN_404899_-_Royal_Collection.jpg/330px-Copy_after_Jan_van_Huchtenburgh_%28Haarlem_1647-Amsterdam_1733%29_-_The_Battle_of_Blenheim_%28or_H%C3%B6chst%C3%A4dt%29%2C_1704._-_RCIN_404899_-_Royal_Collection.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-blenheim_czzfn3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 150156,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Blenheim"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Blenheim",
+    "color": "#554235",
+    "text_color": "light"
   },
   {
     "name": "battle-poltava",
@@ -851,11 +981,13 @@
     "category": "conflict",
     "description": "Peter the Great crushed Sweden, establishing Russia as a major European power.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Marten%27s_Poltava.jpg/330px-Marten%27s_Poltava.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-poltava_qm8eis?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 207,
+    "image_height": 440,
     "wikipedia_views": 177520,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poltava"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Poltava",
+    "color": "#524e49",
+    "text_color": "light"
   },
   {
     "name": "jacobite-rising",
@@ -864,11 +996,13 @@
     "category": "conflict",
     "description": "Bonnie Prince Charlie attempted to reclaim the British throne for the Stuarts.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/The_Battle_of_Culloden.jpg/330px-The_Battle_of_Culloden.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jacobite-rising_qeg5gx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 199,
+    "image_height": 440,
     "wikipedia_views": 402942,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacobite_rising_of_1745"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacobite_rising_of_1745",
+    "color": "#26201a",
+    "text_color": "light"
   },
   {
     "name": "seven-years-war-start",
@@ -877,11 +1011,13 @@
     "category": "conflict",
     "description": "A global conflict erupted involving most European great powers.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Seven_Years%27_War_Collage.jpg/330px-Seven_Years%27_War_Collage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seven-years-war-start_przzpf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 1170965,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Years'_War",
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "battle-plassey",
@@ -890,11 +1026,13 @@
     "category": "conflict",
     "description": "Robert Clive's victory began British colonial rule in India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Lord_Clive_meeting_with_Mir_Jafar_after_the_Battle_of_Plassey.jpg/330px-Lord_Clive_meeting_with_Mir_Jafar_after_the_Battle_of_Plassey.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-plassey_f66ngy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 257,
+    "image_height": 440,
     "wikipedia_views": 482489,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Plassey"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Plassey",
+    "color": "#2a1e15",
+    "text_color": "light"
   },
   {
     "name": "battle-quebec",
@@ -903,11 +1041,13 @@
     "category": "conflict",
     "description": "British forces captured Quebec, deciding French Canada's fate.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flag_of_Quebec.svg/330px-Flag_of_Quebec.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-quebec_bpjgiq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 1160,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Quebec"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Quebec",
+    "color": "#281f16",
+    "text_color": "light"
   },
   {
     "name": "boston-massacre",
@@ -916,11 +1056,13 @@
     "category": "conflict",
     "description": "British troops fatally shot five Americans including Crispus Attucks, escalating tensions before the Revolution.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/The_Boston_Massacre_MET_DT2086.jpg/330px-The_Boston_Massacre_MET_DT2086.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-massacre_qwjs2k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 372,
+    "image_height": 440,
     "wikipedia_views": 496725,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Massacre",
+    "color": "#3a4245",
+    "text_color": "light"
   },
   {
     "name": "boston-tea-party",
@@ -929,11 +1071,13 @@
     "category": "conflict",
     "description": "Colonists dumped British tea into Boston Harbor to protest taxation without representation.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Boston_Tea_Party_w.jpg/330px-Boston_Tea_Party_w.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-tea-party_kiebw6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 733507,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Tea_Party"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Tea_Party",
+    "color": "#23211d",
+    "text_color": "light"
   },
   {
     "name": "american-revolution-start",
@@ -942,11 +1086,13 @@
     "category": "conflict",
     "description": "The Battles of Lexington and Concord marked the start of American independence.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/american-revolution-start_gdorr9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 2373193,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War",
+    "color": "#24211c",
+    "text_color": "light"
   },
   {
     "name": "battle-bunker-hill",
@@ -968,11 +1114,13 @@
     "category": "conflict",
     "description": "The thirteen American colonies declared independence from British rule.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/United_States_Declaration_of_Independence.jpg/330px-United_States_Declaration_of_Independence.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/american-independence_we5pom?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 392,
+    "image_height": 440,
     "wikipedia_views": 198561,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Signing_of_the_United_States_Declaration_of_Independence"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Signing_of_the_United_States_Declaration_of_Independence",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "battle-princeton-1777",
@@ -981,11 +1129,13 @@
     "category": "conflict",
     "description": "Washington defeats British forces in New Jersey.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Death_of_General_Mercer_at_the_Battle_of_Princeton_January_3_1777.jpeg/330px-The_Death_of_General_Mercer_at_the_Battle_of_Princeton_January_3_1777.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-princeton-1777_v5aqft?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 79716,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Princeton"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Princeton",
+    "color": "#24211b",
+    "text_color": "light"
   },
   {
     "name": "battle-yorktown",
@@ -994,11 +1144,13 @@
     "category": "conflict",
     "description": "Washington's victory forced British surrender, effectively ending the Revolutionary War.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-yorktown_ijrrey?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 594605,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown",
+    "color": "#483521",
+    "text_color": "light"
   },
   {
     "name": "french-revolution-start",
@@ -1323,7 +1475,9 @@
     "image_width": 330,
     "image_height": 211,
     "wikipedia_views": 3636716,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War",
+    "color": "#585850",
+    "text_color": "light"
   },
   {
     "name": "civil-war-start",
@@ -1752,7 +1906,9 @@
     "image_width": 330,
     "image_height": 253,
     "wikipedia_views": 351296,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Passchendaele"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Passchendaele",
+    "color": "#b4aca1",
+    "text_color": "dark"
   },
   {
     "name": "october-revolution",
@@ -1813,11 +1969,13 @@
     "category": "conflict",
     "description": "The peace treaty officially ended World War I and imposed harsh terms on Germany.",
     "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/treaty-versailles_nn5shp?_a=BAMAMiTC0",
-    "image_width": 660,
-    "image_height": 660,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-versailles_n9q5h6?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 747141,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+    "color": "#4b3b29",
+    "text_color": "light"
   },
   {
     "name": "irish-independence",
@@ -2181,7 +2339,9 @@
     "image_width": 330,
     "image_height": 328,
     "wikipedia_views": 12512,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/V_Day"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/V_Day",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "wwii-end-pacific",
@@ -2649,7 +2809,9 @@
     "image_width": 330,
     "image_height": 228,
     "wikipedia_views": 581383,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "cambodian-genocide",
@@ -3091,7 +3253,9 @@
     "image_width": 330,
     "image_height": 247,
     "wikipedia_views": 894287,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_Spring"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_Spring",
+    "color": "#4f4e4c",
+    "text_color": "light"
   },
   {
     "name": "syrian-civil-war",
@@ -3386,11 +3550,13 @@
     "category": "conflict",
     "description": "Sargon the Great created the world's first known empire in Mesopotamia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Sargon_of_Akkad_on_his_victory_stele.jpg/330px-Sargon_of_Akkad_on_his_victory_stele.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sargon-akkad-empire_z1n5uv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 467,
+    "image_height": 440,
     "wikipedia_views": 377134,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sargon_of_Akkad",
+    "color": "#413435",
+    "text_color": "light"
   },
   {
     "name": "babylonian-captivity",
@@ -3399,11 +3565,13 @@
     "category": "conflict",
     "description": "Nebuchadnezzar II destroyed Jerusalem's Temple and exiled the Jews to Babylon.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tissot_The_Flight_of_the_Prisoners.jpg/330px-Tissot_The_Flight_of_the_Prisoners.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/babylonian-captivity_lnwvos?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 225,
+    "image_height": 440,
     "wikipedia_views": 382670,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Babylonian_captivity"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Babylonian_captivity",
+    "color": "#212026",
+    "text_color": "light"
   },
   {
     "name": "fall-han-dynasty",
@@ -3412,11 +3580,13 @@
     "category": "conflict",
     "description": "China's Han Dynasty collapsed, beginning centuries of division and civil war.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-han-dynasty_zlhlxk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 222,
+    "image_height": 440,
     "wikipedia_views": 75540,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_the_Han_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_the_Han_dynasty",
+    "color": "#241f27",
+    "text_color": "light"
   },
   {
     "name": "new-kingdom-egypt-begins",
@@ -3425,11 +3595,13 @@
     "category": "conflict",
     "description": "Egypt expelled the Hyksos invaders and began its most powerful imperial era.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Egypt_NK_edit.svg/330px-Egypt_NK_edit.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/new-kingdom-egypt-begins_gaof98?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 387,
+    "image_height": 440,
     "wikipedia_views": 60749,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Twentieth_Dynasty_of_Egypt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Twentieth_Dynasty_of_Egypt",
+    "color": "#2d1d15",
+    "text_color": "light"
   },
   {
     "name": "peisistratos-tyrant",
@@ -3438,11 +3610,13 @@
     "category": "conflict",
     "description": "Peisistratos seized power in Athens through force, ruling as a popular tyrant.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Statue_of_Peisistratos.jpg/330px-Statue_of_Peisistratos.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peisistratos-tyrant_mi3eql?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 555,
+    "image_height": 440,
     "wikipedia_views": 54036,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pisistratus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pisistratus",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "battle-leuctra",
@@ -3451,11 +3625,13 @@
     "category": "conflict",
     "description": "Thebes defeated Sparta, ending Spartan military dominance in Greece.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Pelopidas_leading_the_Thebans_at_the_battle_of_Leuctra.jpg/330px-Pelopidas_leading_the_Thebans_at_the_battle_of_Leuctra.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-leuctra_i6cslp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 461,
+    "image_height": 440,
     "wikipedia_views": 108706,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Leuctra"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Leuctra",
+    "color": "#2b1e18",
+    "text_color": "light"
   },
   {
     "name": "battle-pydna",
@@ -3464,11 +3640,13 @@
     "category": "conflict",
     "description": "Rome crushed the Macedonian army, ending the Antigonid dynasty.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Plan_battle_of_Pydna-en.svg/330px-Plan_battle_of_Pydna-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-pydna_lbezgg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 510,
+    "image_height": 440,
     "wikipedia_views": 46461,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pydna"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pydna",
+    "color": "#291d21",
+    "text_color": "light"
   },
   {
     "name": "death-qin-shi-huang",
@@ -3477,11 +3655,13 @@
     "category": "conflict",
     "description": "China's first emperor died while seeking immortality, leaving a vast terracotta army.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/QinShiHuang19century.jpg/330px-QinShiHuang19century.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-qin-shi-huang_donii9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 444,
+    "image_height": 440,
     "wikipedia_views": 1137405,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Qin_Shi_Huang",
+    "color": "#24201b",
+    "text_color": "light"
   },
   {
     "name": "battle-carrhae",
@@ -3490,11 +3670,13 @@
     "category": "conflict",
     "description": "Parthian horse archers annihilated Roman legions and killed Crassus.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Battle_of_Carrhae_%28Caesar%CB%90_A_History_Of_The_Art_Of_War_Among_The_Romans_Down_To_The_End%2C_vol._II%2C_1892%29.jpg/330px-Battle_of_Carrhae_%28Caesar%CB%90_A_History_Of_The_Art_Of_War_Among_The_Romans_Down_To_The_End%2C_vol._II%2C_1892%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-carrhae_vn0zcf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 222,
+    "image_height": 440,
     "wikipedia_views": 205508,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Carrhae"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Carrhae",
+    "color": "#163f60",
+    "text_color": "light"
   },
   {
     "name": "battle-pharsalus",
@@ -3503,11 +3685,13 @@
     "category": "conflict",
     "description": "Caesar decisively defeated Pompey's larger army, winning the Roman civil war.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Battle_of_Pharsalus%2C_48_BC.png/330px-Battle_of_Pharsalus%2C_48_BC.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-pharsalus_ntjbwf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 191,
+    "image_height": 440,
     "wikipedia_views": 138711,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
+    "color": "#271f20",
+    "text_color": "light"
   },
   {
     "name": "year-four-emperors",
@@ -3516,11 +3700,13 @@
     "category": "conflict",
     "description": "Civil war tore Rome apart as four men claimed the throne after Nero's death.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Year_of_the_Four_Emperors.jpg/330px-Year_of_the_Four_Emperors.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/year-four-emperors_t9uais?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 319,
+    "image_height": 440,
     "wikipedia_views": 159926,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Four_Emperors",
+    "color": "#2e1f18",
+    "text_color": "light"
   },
   {
     "name": "year-five-emperors",
@@ -3529,11 +3715,13 @@
     "category": "conflict",
     "description": "Five claimants fought for the Roman throne after Commodus was assassinated.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Year_of_the_Five_Emperors.png/330px-Year_of_the_Five_Emperors.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/year-five-emperors_klvtv0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 302,
+    "image_height": 440,
     "wikipedia_views": 165166,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Five_Emperors"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_of_the_Five_Emperors",
+    "color": "#44312a",
+    "text_color": "light"
   },
   {
     "name": "yellow-turban-rebellion",
@@ -3542,11 +3730,13 @@
     "category": "conflict",
     "description": "Peasant uprising in China marked the beginning of the Han Dynasty's collapse.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Yellow_Turban_Rebellion.jpg/330px-Yellow_Turban_Rebellion.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yellow-turban-rebellion_tc3eue?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 231,
+    "image_height": 440,
     "wikipedia_views": 156447,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion",
+    "color": "#532e26",
+    "text_color": "light"
   },
   {
     "name": "battle-milvian-bridge",
@@ -3555,11 +3745,13 @@
     "category": "conflict",
     "description": "Constantine defeated Maxentius after reportedly seeing a Christian vision before battle.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Battle_of_the_Milvian_Bridge_by_Giulio_Romano%2C_1520-24.jpg/330px-Battle_of_the_Milvian_Bridge_by_Giulio_Romano%2C_1520-24.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-milvian-bridge_xa4ag1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 138,
+    "image_height": 440,
     "wikipedia_views": 146838,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge",
+    "color": "#46423e",
+    "text_color": "light"
   },
   {
     "name": "crossing-of-the-rhine",
@@ -3568,11 +3760,13 @@
     "category": "conflict",
     "description": "Germanic tribes crossed the frozen Rhine, beginning a massive migration into the Roman Empire.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Middle_Bridge%2C_Basel%2C_Switzerland.JPG/330px-Middle_Bridge%2C_Basel%2C_Switzerland.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossing-of-the-rhine_sptvn6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 39130,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_of_the_Rhine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crossing_of_the_Rhine",
+    "color": "#241f24",
+    "text_color": "light"
   },
   {
     "name": "vandals-conquer-north-africa",
@@ -3581,11 +3775,13 @@
     "category": "conflict",
     "description": "The Vandals crossed into Africa, eventually establishing a kingdom that threatened Rome's grain supply.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/KHM_Wien_VIIb_105_-_Vandalic_goldfoil_jewelry%2C_c._300_AD.jpg/330px-KHM_Wien_VIIb_105_-_Vandalic_goldfoil_jewelry%2C_c._300_AD.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vandals-conquer-north-africa_zatwqq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 321,
+    "image_height": 440,
     "wikipedia_views": 160280,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vandal_Kingdom"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vandal_Kingdom",
+    "color": "#232021",
+    "text_color": "light"
   },
   {
     "name": "vandals-take-carthage",
@@ -3594,11 +3790,13 @@
     "category": "conflict",
     "description": "The Vandals captured Carthage, creating a naval power that would sack Rome in 455.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/KHM_Wien_VIIb_105_-_Vandalic_goldfoil_jewelry%2C_c._300_AD.jpg/330px-KHM_Wien_VIIb_105_-_Vandalic_goldfoil_jewelry%2C_c._300_AD.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vandals-take-carthage_rdxg0d?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 321,
+    "image_height": 440,
     "wikipedia_views": 91211,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Carthage"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Carthage",
+    "color": "#3b2821",
+    "text_color": "light"
   },
   {
     "name": "nika-riots",
@@ -3607,11 +3805,13 @@
     "category": "conflict",
     "description": "Constantinople erupted in violence that nearly overthrew Emperor Justinian.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Turkey-03228_-_Hippodrome_of_Constantinople_%2811312626353%29.jpg/330px-Turkey-03228_-_Hippodrome_of_Constantinople_%2811312626353%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nika-riots_yif27t?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 126363,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nika_riots",
+    "color": "#281f1c",
+    "text_color": "light"
   },
   {
     "name": "first-islamic-civil-war",
@@ -3620,11 +3820,13 @@
     "category": "conflict",
     "description": "Conflict over succession after Uthman's death led to the Sunni-Shia divide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/First_Fitna_Map%2C_Ali-Muawiya_Phase.png/330px-First_Fitna_Map%2C_Ali-Muawiya_Phase.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-islamic-civil-war_g9cydw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 277,
+    "image_height": 440,
     "wikipedia_views": 175960,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Fitna"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Fitna",
+    "color": "#22211c",
+    "text_color": "light"
   },
   {
     "name": "battle-of-karbala",
@@ -3633,11 +3835,13 @@
     "category": "conflict",
     "description": "Husayn ibn Ali was killed fighting the Umayyads, becoming a martyr central to Shia Islam.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Brooklyn_Museum_-_Battle_of_Karbala_-_Abbas_Al-Musavi_-_cropped.jpg/330px-Brooklyn_Museum_-_Battle_of_Karbala_-_Abbas_Al-Musavi_-_cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-karbala_l3koai?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 166,
+    "image_height": 440,
     "wikipedia_views": 476310,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Karbala"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Karbala",
+    "color": "#202220",
+    "text_color": "light"
   },
   {
     "name": "battle-of-guadalete",
@@ -3646,11 +3850,13 @@
     "category": "conflict",
     "description": "Umayyad forces defeated the Visigoths, beginning the Muslim conquest of Iberia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/The_battle_of_Guadelete.jpg/330px-The_battle_of_Guadelete.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-guadalete_hbbpqj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 243,
+    "image_height": 440,
     "wikipedia_views": 70040,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Guadalete"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Guadalete",
+    "color": "#2b2019",
+    "text_color": "light"
   },
   {
     "name": "siege-of-constantinople-717",
@@ -3659,11 +3865,13 @@
     "category": "conflict",
     "description": "Arab forces failed to capture the Byzantine capital after a year-long siege.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-constantinople-717_b1iac0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 298,
+    "image_height": 440,
     "wikipedia_views": 53817,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_sieges_of_Constantinople"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_sieges_of_Constantinople",
+    "color": "#232023",
+    "text_color": "light"
   },
   {
     "name": "an-lushan-rebellion",
@@ -3672,11 +3880,13 @@
     "category": "conflict",
     "description": "Devastating rebellion that killed millions and permanently weakened Tang Dynasty China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/An_Lushan_Rebellion.png/330px-An_Lushan_Rebellion.png",
-    "image_width": 329,
-    "image_height": 233,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/an-lushan-rebellion_dgjl1b?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 153269,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/An_Lushan_rebellion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/An_Lushan_rebellion",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "great-heathen-army",
@@ -3685,11 +3895,13 @@
     "category": "conflict",
     "description": "A massive Viking force invaded England, conquering most Anglo-Saxon kingdoms.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/England_Great_Army_map.svg/330px-England_Great_Army_map.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-heathen-army_pcqfce?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 369,
+    "image_height": 440,
     "wikipedia_views": 252417,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Heathen_Army"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Heathen_Army",
+    "color": "#2e3131",
+    "text_color": "light"
   },
   {
     "name": "battle-of-hastings",
@@ -3698,11 +3910,13 @@
     "category": "conflict",
     "description": "William the Conqueror defeated King Harold II, beginning Norman rule of England.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/330px-Bayeux_Tapestry_scene57_Harold_death.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-hastings_c1q94r?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 287,
+    "image_height": 440,
     "wikipedia_views": 1140509,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hastings"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+    "color": "#261f1e",
+    "text_color": "light"
   },
   {
     "name": "battle-of-stamford-bridge",
@@ -3711,11 +3925,13 @@
     "category": "conflict",
     "description": "King Harold defeated a Norse invasion just days before facing the Normans at Hastings.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Battle_of_Stamford_Bridge%2C_full.png/330px-Battle_of_Stamford_Bridge%2C_full.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-stamford-bridge_rnwnek?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 183,
+    "image_height": 440,
     "wikipedia_views": 472911,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
+    "color": "#242727",
+    "text_color": "light"
   },
   {
     "name": "capture-of-jerusalem-1099",
@@ -3724,11 +3940,13 @@
     "category": "conflict",
     "description": "Crusaders stormed Jerusalem, establishing a Christian kingdom in the Holy Land.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg/330px-Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/capture-of-jerusalem-1099_gbaxtc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 167,
+    "image_height": 440,
     "wikipedia_views": 168018,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
+    "color": "#523d27",
+    "text_color": "light"
   },
   {
     "name": "battle-of-legnano",
@@ -3737,11 +3955,13 @@
     "category": "conflict",
     "description": "The Lombard League defeated Emperor Frederick Barbarossa, securing Italian city independence.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/BattagliaLegnano.jpg/330px-BattagliaLegnano.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-legnano_k93bnh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 336,
+    "image_height": 440,
     "wikipedia_views": 31363,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnano"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnano",
+    "color": "#2c2923",
+    "text_color": "light"
   },
   {
     "name": "battle-of-hattin",
@@ -3750,11 +3970,13 @@
     "category": "conflict",
     "description": "Saladin crushed the Crusader army, leaving Jerusalem defenseless.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Saladin_Guy.jpg/330px-Saladin_Guy.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-hattin_qus8pu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 142,
+    "image_height": 440,
     "wikipedia_views": 339185,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hattin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Hattin",
+    "color": "#cda765",
+    "text_color": "dark"
   },
   {
     "name": "saladin-recaptures-jerusalem",
@@ -3763,11 +3985,13 @@
     "category": "conflict",
     "description": "Saladin retook Jerusalem from the Crusaders after 88 years of Christian rule.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Saladin_the_Victorious%2C_colored.jpg/960px-Saladin_the_Victorious%2C_colored.jpg",
-    "image_width": 960,
-    "image_height": 1266,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saladin-recaptures-jerusalem_idua27?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 615091,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Jerusalem",
+    "color": "#272016",
+    "text_color": "light"
   },
   {
     "name": "battle-of-arsuf",
@@ -3776,11 +4000,13 @@
     "category": "conflict",
     "description": "Richard the Lionheart defeated Saladin's forces during the Third Crusade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Schlacht_von_Arsuf.jpg/330px-Schlacht_von_Arsuf.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-arsuf_jet5s0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253,
+    "image_height": 440,
     "wikipedia_views": 90168,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Arsuf"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Arsuf",
+    "color": "#c4aa7a",
+    "text_color": "dark"
   },
   {
     "name": "albigensian-crusade-begins",
@@ -3789,11 +4015,13 @@
     "category": "conflict",
     "description": "Pope Innocent III launched a crusade against Cathar heretics in southern France.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Le_massacre_des_Albigeois.jpg/330px-Le_massacre_des_Albigeois.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/albigensian-crusade-begins_dz9inl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 295,
+    "image_height": 440,
     "wikipedia_views": 302570,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Albigensian_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albigensian_Crusade",
+    "color": "#242021",
+    "text_color": "light"
   },
   {
     "name": "mongol-invasion-jin",
@@ -3802,11 +4030,13 @@
     "category": "conflict",
     "description": "Genghis Khan invaded northern China, beginning the Mongol conquest of the Jin Dynasty.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mongol_Empire_map.gif/330px-Mongol_Empire_map.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-jin_dss5kx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 259,
+    "image_height": 440,
     "wikipedia_views": 81545,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty",
+    "color": "#4f4941",
+    "text_color": "light"
   },
   {
     "name": "childrens-crusade",
@@ -3815,11 +4045,13 @@
     "category": "conflict",
     "description": "Thousands of young people marched to reclaim the Holy Land, most dying or being enslaved.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gustave_dor%C3%A9_crusades_the_childrens_crusade.jpg/330px-Gustave_dor%C3%A9_crusades_the_childrens_crusade.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/childrens-crusade_bjbj5m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 418,
+    "image_height": 440,
     "wikipedia_views": 192721,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Children's_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Children's_Crusade",
+    "color": "#493629",
+    "text_color": "light"
   },
   {
     "name": "battle-of-bouvines",
@@ -3828,11 +4060,13 @@
     "category": "conflict",
     "description": "Philip II of France defeated England and the Holy Roman Empire, establishing French dominance.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg/330px-Bataille_de_Bouvines_gagnee_par_Philippe_Auguste.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-bouvines_lrxs0u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 162,
+    "image_height": 440,
     "wikipedia_views": 68578,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bouvines"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bouvines",
+    "color": "#312b21",
+    "text_color": "light"
   },
   {
     "name": "battle-of-legnica",
@@ -3841,11 +4075,13 @@
     "category": "conflict",
     "description": "Mongols annihilated a European army, spreading terror across Christendom.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Battle_of_Legnica1241-From_Legend_of_Saint_Hedwig.jpg/330px-Battle_of_Legnica1241-From_Legend_of_Saint_Hedwig.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-legnica_vehwyo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 86670,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnica"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Legnica",
+    "color": "#322d2b",
+    "text_color": "light"
   },
   {
     "name": "battle-of-ain-jalut",
@@ -3854,11 +4090,13 @@
     "category": "conflict",
     "description": "Mamluks defeated the Mongols, halting their advance into the Middle East and Africa.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Campaign_of_the_Battle_of_Ain_Jalut_1260.svg/330px-Campaign_of_the_Battle_of_Ain_Jalut_1260.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-ain-jalut_jx2evg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 438,
+    "image_height": 440,
     "wikipedia_views": 210539,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "kamikaze-mongol-fleet",
@@ -3867,11 +4105,13 @@
     "category": "conflict",
     "description": "A typhoon destroyed the Mongol invasion fleet, saving Japan and inspiring the 'divine wind' legend.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mongol_invasions_of_Japan_1274%2C_1281.jpg/330px-Mongol_invasions_of_Japan_1274%2C_1281.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kamikaze-mongol-fleet_aqjjpw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 251,
+    "image_height": 440,
     "wikipedia_views": 55370,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kamikaze_(typhoon)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kamikaze_(typhoon)",
+    "color": "#172328",
+    "text_color": "light"
   },
   {
     "name": "battle-of-golden-spurs",
@@ -3880,11 +4120,13 @@
     "category": "conflict",
     "description": "Flemish militia defeated French knights at Courtrai, collecting golden spurs from the fallen.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Battle_of_Courtrai2.jpg/330px-Battle_of_Courtrai2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-golden-spurs_tuiizt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 259,
+    "image_height": 440,
     "wikipedia_views": 67737,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Golden_Spurs"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Golden_Spurs",
+    "color": "#312a20",
+    "text_color": "light"
   },
   {
     "name": "battle-of-bannockburn",
@@ -3893,11 +4135,13 @@
     "category": "conflict",
     "description": "Robert the Bruce's Scottish forces defeated the English army, securing Scottish independence.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Battle_of_Bannockburn.jpg/330px-Battle_of_Bannockburn.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-bannockburn_ylufst?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 517,
+    "image_height": 440,
     "wikipedia_views": 357805,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bannockburn",
+    "color": "#202122",
+    "text_color": "light"
   },
   {
     "name": "battle-of-sluys",
@@ -3906,11 +4150,13 @@
     "category": "conflict",
     "description": "English longbowmen destroyed the French fleet, gaining naval supremacy in the Hundred Years' War.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/BattleofSluys.jpeg/330px-BattleofSluys.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-sluys_wopwbl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 309,
+    "image_height": 440,
     "wikipedia_views": 42799,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Sluys"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Sluys",
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "peasants-revolt-england",
@@ -3919,11 +4165,13 @@
     "category": "conflict",
     "description": "English peasants led by Wat Tyler marched on London, demanding an end to serfdom.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Jean_Froissart%2C_Chroniques%2C_154v%2C_12148_btv1b8438605hf336%2C_crop.jpg/330px-Jean_Froissart%2C_Chroniques%2C_154v%2C_12148_btv1b8438605hf336%2C_crop.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peasants-revolt-england_w6a7pn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 318,
+    "image_height": 440,
     "wikipedia_views": 261477,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Peasants'_Revolt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peasants'_Revolt",
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "battle-of-kosovo",
@@ -3932,11 +4180,13 @@
     "category": "conflict",
     "description": "Ottomans defeated the Serbs in a battle that became central to Serbian national identity.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Battle_of_Kosovo%2C_Adam_Stefanovi%C4%87%2C_1870.jpg/330px-Battle_of_Kosovo%2C_Adam_Stefanovi%C4%87%2C_1870.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-kosovo_qfrw8w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 197,
+    "image_height": 440,
     "wikipedia_views": 246211,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kosovo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kosovo",
+    "color": "#2c2019",
+    "text_color": "light"
   },
   {
     "name": "battle-of-grunwald",
@@ -3945,11 +4195,13 @@
     "category": "conflict",
     "description": "Poland-Lithuania crushed the Teutonic Knights, ending their Baltic expansion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jan_Matejko%2C_Bitwa_pod_Grunwaldem.jpg/330px-Jan_Matejko%2C_Bitwa_pod_Grunwaldem.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-grunwald_hdpjw0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 147,
+    "image_height": 440,
     "wikipedia_views": 278959,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Grunwald"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Grunwald",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "joan-of-arc-executed",
@@ -3958,11 +4210,13 @@
     "category": "conflict",
     "description": "The French heroine was burned at the stake by the English after a trial for heresy.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Joan_of_Arc_miniature_graded.jpg/330px-Joan_of_Arc_miniature_graded.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joan-of-arc-executed_comxiu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 492,
+    "image_height": 440,
     "wikipedia_views": 75076,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Trial_of_Joan_of_Arc"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trial_of_Joan_of_Arc",
+    "color": "#202123",
+    "text_color": "light"
   },
   {
     "name": "battle-of-nancy",
@@ -3971,11 +4225,13 @@
     "category": "conflict",
     "description": "Swiss forces killed Charles the Bold, ending Burgundy as an independent power.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Diebold_Schilling%2C_Battle_of_Nancy%2C_1477.jpg/330px-Diebold_Schilling%2C_Battle_of_Nancy%2C_1477.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-nancy_nutjgx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 483,
+    "image_height": 440,
     "wikipedia_views": 40052,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Nancy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Nancy",
+    "color": "#1e2226",
+    "text_color": "light"
   },
   {
     "name": "battle-of-bosworth-field",
@@ -3984,11 +4240,13 @@
     "category": "conflict",
     "description": "Henry Tudor defeated Richard III, ending the Wars of the Roses and founding the Tudor dynasty.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Battle_of_Bosworth_by_Philip_James_de_Loutherbourg.jpg/330px-Battle_of_Bosworth_by_Philip_James_de_Loutherbourg.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-bosworth-field_gblnrj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 249,
+    "image_height": 440,
     "wikipedia_views": 339733,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "battle-of-flodden",
@@ -3997,11 +4255,13 @@
     "category": "conflict",
     "description": "England defeated Scotland, killing King James IV and much of the Scottish nobility.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flodden_Memorial_-_geograph.org.uk_-_39370.jpg/330px-Flodden_Memorial_-_geograph.org.uk_-_39370.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-flodden_ismru8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 184263,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Flodden"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Flodden",
+    "color": "#6c756d",
+    "text_color": "light"
   },
   {
     "name": "battle-of-marignano",
@@ -4010,11 +4270,13 @@
     "category": "conflict",
     "description": "Francis I of France defeated the Swiss, conquering Milan and establishing French dominance in Italy.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Francis_at_Marignan.jpg/330px-Francis_at_Marignan.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-marignano_mi4xkh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 275,
+    "image_height": 440,
     "wikipedia_views": 53648,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marignano"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Marignano",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "fall-of-tenochtitlan",
@@ -4023,11 +4285,13 @@
     "category": "conflict",
     "description": "Hernán Cortés and his indigenous allies conquered the Aztec capital, ending the Aztec Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png/330px-Conquista-de-M%C3%A9xico-por-Cort%C3%A9s-Tenochtitlan-Painting.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-tenochtitlan_nasmdu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 159840,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Tenochtitlan",
+    "color": "#4f3024",
+    "text_color": "light"
   },
   {
     "name": "hyksos-invasion-of-egypt",
@@ -4036,11 +4300,13 @@
     "category": "conflict",
     "description": "Semitic peoples from Western Asia conquered Lower Egypt, establishing the 15th Dynasty and introducing horse-drawn chariots to Egyptian warfare.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/330px-Flag_of_Egypt.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hyksos-invasion-of-egypt_a1r6na?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 249167,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hyksos"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hyksos",
+    "color": "#a07a4e",
+    "text_color": "dark"
   },
   {
     "name": "pompey-conquers-jerusalem",
@@ -4049,11 +4315,13 @@
     "category": "conflict",
     "description": "Roman general Pompey captured Jerusalem during the Third Mithridatic War, ending the Hasmonean Kingdom's independence and bringing Judea under Roman control.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/%28Venice%29_Pompey_the_Great%2C_Museo_Archeologico_Nazionale.jpg/330px-%28Venice%29_Pompey_the_Great%2C_Museo_Archeologico_Nazionale.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pompey-conquers-jerusalem_wgriyu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 501,
+    "image_height": 440,
     "wikipedia_views": 110441,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_the_Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_Jews_in_the_Roman_Empire",
+    "color": "#392314",
+    "text_color": "light"
   },
   {
     "name": "roman-conquest-of-britain",
@@ -4062,11 +4330,13 @@
     "category": "conflict",
     "description": "Emperor Claudius launched the successful Roman invasion of Britain, establishing the province of Britannia that would last nearly four centuries.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Roman.Britain.campaigns.43.to.84.jpg/330px-Roman.Britain.campaigns.43.to.84.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-conquest-of-britain_wxgljq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 617,
+    "image_height": 440,
     "wikipedia_views": 213934,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain",
+    "color": "#676a6a",
+    "text_color": "light"
   },
   {
     "name": "clovis-defeats-visigoths-at-vouille",
@@ -4075,11 +4345,13 @@
     "category": "conflict",
     "description": "Frankish King Clovis I defeated the Visigoths, killing King Alaric II and driving the Visigoths from most of Gaul into Hispania.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Lodovico_Pogliaghi_-_Pompey_in_the_Holy_of_Holies_in_Jerusalem%2C_63_BC.png/330px-Lodovico_Pogliaghi_-_Pompey_in_the_Holy_of_Holies_in_Jerusalem%2C_63_BC.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clovis-defeats-visigoths-at-vouille_qyhudh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 484,
+    "image_height": 440,
     "wikipedia_views": 31304,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vouillé"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vouillé",
+    "color": "#2a1f1f",
+    "text_color": "light"
   },
   {
     "name": "battle-of-badr",
@@ -4088,11 +4360,13 @@
     "category": "conflict",
     "description": "The first major military victory for Muslims, where Prophet Muhammad's forces defeated a larger Meccan army, marking a turning point in early Islamic history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Siyer-i_Nebi_-_Imam_Ali_und_Hamza_bei_dem_vorgezogenen_Einzelkampf_in_Badr_gegen_die_G%C3%B6tzendiener.jpg/330px-Siyer-i_Nebi_-_Imam_Ali_und_Hamza_bei_dem_vorgezogenen_Einzelkampf_in_Badr_gegen_die_G%C3%B6tzendiener.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-badr_zbbhoq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 496,
+    "image_height": 440,
     "wikipedia_views": 356097,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Badr"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Badr",
+    "color": "#232024",
+    "text_color": "light"
   },
   {
     "name": "conquest-of-mecca",
@@ -4101,11 +4375,13 @@
     "category": "conflict",
     "description": "Prophet Muhammad led 10,000 followers to capture Mecca largely without bloodshed, converting the Kaaba into Islam's holiest site.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Paris%2C_BnF%2C_Suppl%C3%A9ment_Persan_1030_fol._305v-306r_Muhammad_and_Ali_lead_destruction_of_Meccan_idols.jpg/330px-Paris%2C_BnF%2C_Suppl%C3%A9ment_Persan_1030_fol._305v-306r_Muhammad_and_Ali_lead_destruction_of_Meccan_idols.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/conquest-of-mecca_fv90i3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 276,
+    "image_height": 440,
     "wikipedia_views": 128677,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Conquest_of_Mecca"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Conquest_of_Mecca",
+    "color": "#291e1e",
+    "text_color": "light"
   },
   {
     "name": "battle-of-yarmouk",
@@ -4114,11 +4390,13 @@
     "category": "conflict",
     "description": "Arab Muslim forces decisively defeated the Byzantine Empire, leading to the loss of the Levant and opening the path for Islamic expansion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hayton_BNF886_9v.jpg/330px-Hayton_BNF886_9v.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-yarmouk_cuvsse?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 175,
+    "image_height": 440,
     "wikipedia_views": 237145,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Yarmuk"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Yarmuk",
+    "color": "#2a1e14",
+    "text_color": "light"
   },
   {
     "name": "arab-conquest-of-egypt",
@@ -4127,11 +4405,13 @@
     "category": "conflict",
     "description": "Amr ibn al-As led Arab forces to conquer Byzantine Egypt, ending over 900 years of Greco-Roman rule and beginning the Islamization of the region.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/330px-Flag_of_Egypt.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arab-conquest-of-egypt_am3tdu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 79288,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_conquest_of_Egypt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_conquest_of_Egypt",
+    "color": "#2d251d",
+    "text_color": "light"
   },
   {
     "name": "umayyad-conquest-of-spain",
@@ -4140,11 +4420,13 @@
     "category": "conflict",
     "description": "Tariq ibn Ziyad led Umayyad forces across Gibraltar and defeated the Visigoths, beginning nearly 800 years of Islamic presence in Iberia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/330px-Bandera_de_Espa%C3%B1a.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/umayyad-conquest-of-spain_qv5ff8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 207209,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula",
+    "color": "#2f221a",
+    "text_color": "light"
   },
   {
     "name": "battle-of-talas",
@@ -4153,11 +4435,13 @@
     "category": "conflict",
     "description": "Abbasid and Tibetan forces defeated Tang China in Central Asia. Captured Chinese papermakers helped spread papermaking technology westward.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Battle_of_Talas.png/330px-Battle_of_Talas.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-talas_rnl3f1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 225,
+    "image_height": 440,
     "wikipedia_views": 228579,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Talas"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Talas",
+    "color": "#222121",
+    "text_color": "light"
   },
   {
     "name": "alfred-the-great-recaptures-london",
@@ -4166,11 +4450,13 @@
     "category": "conflict",
     "description": "King Alfred of Wessex recaptured London from the Vikings, restoring the city and strengthening Anglo-Saxon resistance to Danish invasion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png/330px-Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alfred-the-great-recaptures-london_d0fjzt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 322,
+    "image_height": 440,
     "wikipedia_views": 28334,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_battles_301–1300"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_battles_301–1300",
+    "color": "#292123",
+    "text_color": "light"
   },
   {
     "name": "fourth-crusade-called",
@@ -4179,11 +4465,13 @@
     "category": "conflict",
     "description": "Pope Innocent III called for a new crusade to recapture Jerusalem, which infamously diverted to sack Constantinople in 1204 instead.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ConquestOfConstantinopleByTheCrusadersIn1204.jpg/330px-ConquestOfConstantinopleByTheCrusadersIn1204.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fourth-crusade-called_g1dzey?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 205,
+    "image_height": 440,
     "wikipedia_views": 344820,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fourth_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fourth_Crusade",
+    "color": "#49291f",
+    "text_color": "light"
   },
   {
     "name": "sixth-crusade-treaty",
@@ -4192,11 +4480,13 @@
     "category": "conflict",
     "description": "Emperor Frederick II negotiated the Treaty of Jaffa with Sultan al-Kamil, peacefully recovering Jerusalem for Christians without major combat.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Al-Kamil_Muhammad_al-Malik_and_Frederick_II_Holy_Roman_Emperor.jpg",
-    "image_width": 191,
-    "image_height": 393,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sixth-crusade-treaty_wqsrw1?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 110242,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sixth_Crusade"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sixth_Crusade",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "siege-of-montsegur",
@@ -4205,11 +4495,13 @@
     "category": "conflict",
     "description": "French crusaders besieged the Cathar stronghold for ten months. Over 200 Cathars were burned at the stake after surrendering.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Montsegur_montagne.jpg/330px-Montsegur_montagne.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-montsegur_nujx8w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 12256,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Montségur"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Montségur",
+    "color": "#202028",
+    "text_color": "light"
   },
   {
     "name": "jacquerie-peasant-revolt",
@@ -4218,11 +4510,13 @@
     "category": "conflict",
     "description": "French peasants rose up against the nobility during the Hundred Years' War, attacking castles and manors before being brutally suppressed.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacquerie_meaux.jpg/960px-Jacquerie_meaux.jpg",
-    "image_width": 960,
-    "image_height": 836,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jacquerie-peasant-revolt_a3nvkv?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 66156,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacquerie"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacquerie",
+    "color": "#2d1d12",
+    "text_color": "light"
   },
   {
     "name": "battle-of-varna",
@@ -4231,11 +4525,13 @@
     "category": "conflict",
     "description": "Ottoman forces defeated a crusading army led by King Władysław III of Poland, who was killed in battle, ending the Crusade of Varna.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Battle_of_Varna_1444.PNG/330px-Battle_of_Varna_1444.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-varna_a0xmae?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 204,
+    "image_height": 440,
     "wikipedia_views": 144362,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Varna"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Varna",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "edward-iv-crowned",
@@ -4244,11 +4540,13 @@
     "category": "conflict",
     "description": "Edward of York became King of England after defeating Lancastrian forces at Towton, the bloodiest battle in English history during the Wars of the Roses.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/King_Edward_IV.jpg/330px-King_Edward_IV.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edward-iv-crowned_heml3c?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 425,
+    "image_height": 440,
     "wikipedia_views": 125244,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/St_Edward's_Crown"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/St_Edward's_Crown",
+    "color": "#212028",
+    "text_color": "light"
   },
   {
     "name": "german-peasants-war-begins",
@@ -4257,11 +4555,13 @@
     "category": "conflict",
     "description": "Peasants across German-speaking lands rose up demanding economic and religious reforms. The revolt was crushed with over 100,000 peasants killed.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Karte_bauernkrieg3.jpg/330px-Karte_bauernkrieg3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/german-peasants-war-begins_fbos6m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 338,
+    "image_height": 440,
     "wikipedia_views": 198734,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/German_Peasants'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/German_Peasants'_War",
+    "color": "#311b12",
+    "text_color": "light"
   },
   {
     "name": "st-bartholomews-day-massacre",
@@ -4270,11 +4570,13 @@
     "category": "conflict",
     "description": "Catholic mobs massacred thousands of Huguenots across France in coordinated attacks beginning in Paris, escalating the French Wars of Religion.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/La_masacre_de_San_Bartolom%C3%A9%2C_por_Fran%C3%A7ois_Dubois.jpg/330px-La_masacre_de_San_Bartolom%C3%A9%2C_por_Fran%C3%A7ois_Dubois.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/st-bartholomews-day-massacre_cmzf7v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 200,
+    "image_height": 440,
     "wikipedia_views": 320706,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/St._Bartholomew's_Day_massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/St._Bartholomew's_Day_massacre",
+    "color": "#281f19",
+    "text_color": "light"
   },
   {
     "name": "grotius-publishes-on-the-law-of-war-and-peace",
@@ -4283,11 +4585,13 @@
     "category": "conflict",
     "description": "Dutch jurist Hugo Grotius published his foundational work on international law, establishing principles for just war and the laws governing armed conflict.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Tolstoy_-_War_and_Peace_-_first_edition%2C_1869.jpg/330px-Tolstoy_-_War_and_Peace_-_first_edition%2C_1869.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grotius-publishes-on-the-law-of-war-and-peace_zytlmo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 524,
+    "image_height": 440,
     "wikipedia_views": 89256,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hugo_Grotius"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hugo_Grotius",
+    "color": "#281f17",
+    "text_color": "light"
   },
   {
     "name": "irish-rebellion-of-1641",
@@ -4296,11 +4600,13 @@
     "category": "conflict",
     "description": "Irish Catholics rose against English and Scottish Protestant settlers, leading to widespread violence and eventually Cromwell's brutal conquest of Ireland.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Sir_Phelim_O%E2%80%99Neill.png/330px-Sir_Phelim_O%E2%80%99Neill.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irish-rebellion-of-1641_tzwwp1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 450,
+    "image_height": 440,
     "wikipedia_views": 87903,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1641"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_Rebellion_of_1641",
+    "color": "#291f18",
+    "text_color": "light"
   },
   {
     "name": "franco-dutch-war-begins",
@@ -4309,11 +4615,13 @@
     "category": "conflict",
     "description": "Louis XIV invaded the Dutch Republic in the Year of Disaster. The Dutch flooded their lands and formed alliances to resist French expansion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Franco-Dutch_War_Collave.jpg/330px-Franco-Dutch_War_Collave.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/franco-dutch-war-begins_dfekrd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 70437,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Anglo-Dutch_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_Anglo-Dutch_War",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "king-philips-war",
@@ -4322,11 +4630,13 @@
     "category": "conflict",
     "description": "Native American leader Metacom (King Philip) led an alliance against New England colonists in one of the bloodiest conflicts per capita in American history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/KingPhilipsWarAttack.webp/330px-KingPhilipsWarAttack.webp.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/king-philips-war_cqa8sr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 255,
+    "image_height": 440,
     "wikipedia_views": 265015,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/King_Philip's_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/King_Philip's_War",
+    "color": "#2d1d14",
+    "text_color": "light"
   },
   {
     "name": "siege-of-derry",
@@ -4335,11 +4645,13 @@
     "category": "conflict",
     "description": "Protestant defenders held the city of Derry for 105 days against Jacobite forces loyal to the deposed Catholic King James II.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/WALKER%281893%29_p187_VIEW_OF_LONDONDERRY_DURING_THE_SIEGE_OF_1688-89.jpg/330px-WALKER%281893%29_p187_VIEW_OF_LONDONDERRY_DURING_THE_SIEGE_OF_1688-89.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-derry_sa08pa?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 171,
+    "image_height": 440,
     "wikipedia_views": 38971,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Derry"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Derry",
+    "color": "#abafa7",
+    "text_color": "dark"
   },
   {
     "name": "battle-of-the-boyne",
@@ -4348,11 +4660,13 @@
     "category": "conflict",
     "description": "William III of Orange defeated the deposed James II in Ireland, securing Protestant rule in Britain and becoming a symbol of Ulster Protestant identity.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/De_slag_aan_de_Boyne_%28Ierland%29_tussen_Jacobus_II_en_Willem_III%2C_12_juli_1690_Rijksmuseum_SK-A-605.jpeg/330px-De_slag_aan_de_Boyne_%28Ierland%29_tussen_Jacobus_II_en_Willem_III%2C_12_juli_1690_Rijksmuseum_SK-A-605.jpeg",
-    "image_width": 329,
-    "image_height": 224,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-the-boyne_cur728?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 301602,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Boyne"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Boyne",
+    "color": "#777167",
+    "text_color": "light"
   },
   {
     "name": "war-of-spanish-succession-begins",
@@ -4361,11 +4675,13 @@
     "category": "conflict",
     "description": "European powers went to war over the Spanish throne after Charles II died without an heir, reshaping the balance of power for decades.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Final_War_of_the_Spanish_Succession_Collage.jpg/330px-Final_War_of_the_Spanish_Succession_Collage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/war-of-spanish-succession-begins_xb2smm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 599031,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Spanish_Succession",
+    "color": "#2a1e15",
+    "text_color": "light"
   },
   {
     "name": "nadir-shah-sacks-delhi",
@@ -4374,11 +4690,13 @@
     "category": "conflict",
     "description": "Persian ruler Nadir Shah invaded Mughal India and plundered Delhi, taking the Peacock Throne and Koh-i-Noor diamond among vast treasures.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Contemporary_portrait_of_Nader_Shah._Artist_unknown%2C_created_in_ca._1740_in_Iran_%28cropped%29.jpg/330px-Contemporary_portrait_of_Nader_Shah._Artist_unknown%2C_created_in_ca._1740_in_Iran_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nadir-shah-sacks-delhi_uckyrg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 416,
+    "image_height": 440,
     "wikipedia_views": 98063,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nader_Shah's_invasion_of_India"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nader_Shah's_invasion_of_India",
+    "color": "#291f18",
+    "text_color": "light"
   },
   {
     "name": "war-of-jenkins-ear",
@@ -4387,11 +4705,13 @@
     "category": "conflict",
     "description": "Britain declared war on Spain after Captain Jenkins displayed his severed ear in Parliament, claiming Spanish coastguards had cut it off.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/A_new_and_correct_map_of_the_trading_part_of_the_West_Indies.png/330px-A_new_and_correct_map_of_the_trading_part_of_the_West_Indies.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/war-of-jenkins-ear_w2amkb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 200916,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_Jenkins'_Ear"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_Jenkins'_Ear",
+    "color": "#25201b",
+    "text_color": "light"
   },
   {
     "name": "war-of-austrian-succession-begins",
@@ -4400,11 +4720,13 @@
     "category": "conflict",
     "description": "European powers challenged Maria Theresa's right to inherit Habsburg lands, sparking a continent-wide war that lasted eight years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/War_of_The_Austrian_Succesion_Collage_1.jpg/330px-War_of_The_Austrian_Succesion_Collage_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/war-of-austrian-succession-begins_d2rztw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 305790,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession",
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "battles-of-lexington-and-concord",
@@ -4426,11 +4748,13 @@
     "category": "conflict",
     "description": "Massachusetts farmers led by Daniel Shays rebelled against debt collection and taxation, highlighting weaknesses in the Articles of Confederation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Shays_forces_flee_Continental_troops%2C_Springfield.jpg/330px-Shays_forces_flee_Continental_troops%2C_Springfield.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shays-rebellion_tofhhs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 266,
+    "image_height": 440,
     "wikipedia_views": 158766,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Shays's_Rebellion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shays's_Rebellion",
+    "color": "#362b22",
+    "text_color": "light"
   },
   {
     "name": "irish-rebellion-of-1798",
@@ -4898,7 +5222,9 @@
     "image_width": 330,
     "image_height": 250,
     "wikipedia_views": 266900,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Philippine_Sea",
+    "color": "#383838",
+    "text_color": "light"
   },
   {
     "name": "dresden-bombing",
@@ -5353,7 +5679,9 @@
     "image_width": 330,
     "image_height": 251,
     "wikipedia_views": 638158,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Norway_attacks"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Norway_attacks",
+    "color": "#a0afc0",
+    "text_color": "dark"
   },
   {
     "name": "boston-marathon-bombing",
