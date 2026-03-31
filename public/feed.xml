@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2026 08:52:57 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 31 Mar 2026 20:35:26 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.10.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.10.0</guid>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add new images, colour cards by image (<a href="https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7">b4c8aa7</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.9.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.5.10</guid>
       <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Move version indicator (<a href="https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43">df5d0cb</a>)</li> <li>Update game select UI, fix timeline snap back (<a href="https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c">50afd1c</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.9</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.9</guid>
-      <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Only 6 categories not 7 (<a href="https://github.com/Edward-Muir/when/commit/64bffd4bf244a2b0db5c8cf38c3935c45ae18ac6">64bffd4</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

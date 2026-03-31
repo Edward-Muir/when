@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.0](https://github.com/Edward-Muir/when/compare/v0.9.1...v0.10.0) (2026-03-31)
+
+
+### Features
+
+* Add new images, colour cards by image ([b4c8aa7](https://github.com/Edward-Muir/when/commit/b4c8aa7641790f5f83e6d664243a01758c53c0f7))
+
 ## [0.9.1](https://github.com/Edward-Muir/when/compare/v0.9.0...v0.9.1) (2026-03-22)
 
 
