@@ -8,6 +8,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
+import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -47,13 +48,15 @@ function EventHeader({
   isIncorrect?: boolean;
 }) {
   return (
-    <div className="px-4 py-3 border-b border-border">
-      <h2 className="text-lg font-display font-semibold text-text leading-tight">
+    <div className="px-4 py-3">
+      <h2
+        className={`text-lg font-display font-semibold leading-tight ${getEventTextClass(event)}`}
+      >
         {event.friendly_name}
       </h2>
       {showYear && (
         <span
-          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : 'text-accent'}`}
+          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${getEventTextClass(event)} opacity-100`}`}
         >
           {formatYear(event.year)}
         </span>
@@ -289,6 +292,46 @@ function useBackdropDismiss(isDaily: boolean) {
   return { canBackdropDismiss, onLeaderboardSubmit: () => setSubmitted(true) };
 }
 
+// Sub-component for event popup content (description, correct, incorrect)
+function EventPopupContent({
+  type,
+  event,
+  showYear,
+  nextPlayer,
+}: {
+  type: GamePopupType;
+  event: HistoricalEvent;
+  showYear: boolean;
+  nextPlayer?: Player;
+}) {
+  const isCorrect = type === 'correct';
+  const isIncorrect = type === 'incorrect';
+  const isDescription = type === 'description';
+
+  return (
+    <>
+      {(isCorrect || isIncorrect) && <ResultBanner isCorrect={isCorrect} />}
+      <EventHeader event={event} showYear={showYear} isIncorrect={isIncorrect} />
+      <EventImage event={event} />
+      {(isDescription || isIncorrect) && (
+        <div className="px-4 py-3">
+          <p className={`${getEventTextClass(event)} text-sm leading-relaxed font-body`}>
+            {event.description}
+          </p>
+        </div>
+      )}
+      {nextPlayer && (
+        <div className="px-4 py-4 border-t border-border">
+          <p className={`${getEventTextClass(event)} text-xl text-center font-display`}>
+            <span className="font-bold">{nextPlayer.name}</span>
+            <span className="opacity-70"> is up next</span>
+          </p>
+        </div>
+      )}
+    </>
+  );
+}
+
 const GamePopup: React.FC<GamePopupProps> = ({
   type,
   event,
@@ -315,10 +358,6 @@ const GamePopup: React.FC<GamePopupProps> = ({
 
   if (!isVisible) return null;
 
-  const isDescription = type === 'description';
-  const isCorrect = type === 'correct';
-  const isIncorrect = type === 'incorrect';
-
   return (
     <AnimatePresence>
       {isVisible && (
@@ -332,6 +371,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
         >
           <motion.div
             className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors"
+            style={!isGameOver && event ? getEventColorStyle(event) : undefined}
             onClick={isGameOver ? (e) => e.stopPropagation() : undefined}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -345,35 +385,12 @@ const GamePopup: React.FC<GamePopupProps> = ({
               </>
             ) : (
               event && (
-                <>
-                  {/* Result banner for correct/incorrect */}
-                  {(isCorrect || isIncorrect) && <ResultBanner isCorrect={isCorrect} />}
-
-                  {/* Header with title + year */}
-                  <EventHeader event={event} showYear={showYear} isIncorrect={isIncorrect} />
-
-                  {/* Image section */}
-                  <EventImage event={event} />
-
-                  {/* Description - only for description type */}
-                  {(isDescription || isIncorrect) && (
-                    <div className="px-4 py-3">
-                      <p className="text-text text-sm leading-relaxed font-body">
-                        {event.description}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Next player indicator for multiplayer */}
-                  {nextPlayer && (
-                    <div className="px-4 py-4 border-t border-border bg-bg">
-                      <p className="text-text text-xl text-center font-display">
-                        <span className="font-bold">{nextPlayer.name}</span>
-                        <span className="text-text-muted"> is up next</span>
-                      </p>
-                    </div>
-                  )}
-                </>
+                <EventPopupContent
+                  type={type}
+                  event={event}
+                  showYear={showYear}
+                  nextPlayer={nextPlayer}
+                />
               )
             )}
           </motion.div>

@@ -4,6 +4,7 @@ import { HistoricalEvent, AnimationPhase, Category } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
 import { type GlowIntensity } from '../../utils/streakFeedback';
+import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 
 // Export ripple duration for Timeline.tsx to use
 export const RIPPLE_DURATION_MS = 2000;
@@ -264,8 +265,13 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             <EventImage imageUrl={event.image_url} category={event.category} />
           </div>
           {/* Title section (60% width) */}
-          <div className="w-[60%] h-full flex items-center px-2 py-1">
-            <span className="text-text text-sm leading-tight line-clamp-3 font-body">
+          <div
+            className="w-[60%] h-full flex items-center px-2 py-1"
+            style={getEventColorStyle(event)}
+          >
+            <span
+              className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
+            >
               {event.friendly_name}
             </span>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
+import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 
 export type CardSize = 'normal' | 'large' | 'landscape';
 
@@ -75,8 +76,13 @@ const Card: React.FC<CardProps> = ({
           )}
         </div>
         {/* Title section (60% width) */}
-        <div className="w-[60%] h-full flex items-center px-2 py-1">
-          <span className="text-text text-sm leading-tight line-clamp-3 font-body">
+        <div
+          className="w-[60%] h-full flex items-center px-2 py-1"
+          style={getEventColorStyle(event)}
+        >
+          <span
+            className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
+          >
             {event.friendly_name}
           </span>
         </div>

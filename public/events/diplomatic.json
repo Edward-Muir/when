@@ -23,7 +23,9 @@
     "image_width": 330,
     "image_height": 176,
     "wikipedia_views": 1602944,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Achaemenid_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
+    "color": "#b6b257",
+    "text_color": "dark"
   },
   {
     "name": "cyrus-cylinder",
@@ -383,11 +385,13 @@
     "category": "diplomatic",
     "description": "Charlemagne's empire was divided into three kingdoms, shaping medieval Europe.",
     "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/treaty-verdun_msdjlu?_a=BAMAMiTC0",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-verdun_msdjlu?_a=BAMAMiiu0",
     "image_width": 660,
     "image_height": 660,
     "wikipedia_views": 98600,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun",
+    "color": "#26201c",
+    "text_color": "light"
   },
   {
     "name": "treaty-wedmore",
@@ -424,7 +428,9 @@
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 55212,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Flags_of_the_Holy_Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Flags_of_the_Holy_Roman_Empire",
+    "color": "#d7a600",
+    "text_color": "dark"
   },
   {
     "name": "capetian-dynasty",
@@ -810,11 +816,13 @@
     "category": "diplomatic",
     "description": "The first permanent English settlement in America was established.",
     "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/jamestown-founded_byhgza?_a=BAMAMiTC0",
-    "image_width": 660,
-    "image_height": 660,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jamestown-founded_jwzbci?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 515430,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia",
+    "color": "#614927",
+    "text_color": "light"
   },
   {
     "name": "mayflower-compact",
@@ -823,11 +831,13 @@
     "category": "diplomatic",
     "description": "Pilgrims created an early form of self-government in America.",
     "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good,w_660/mayflower-compact_qiophk?_a=BAMAMiTC0",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mayflower-compact_qiophk?_a=BAMAMiiu0",
     "image_width": 660,
     "image_height": 660,
     "wikipedia_views": 126358,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower_Compact"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower_Compact",
+    "color": "#24201c",
+    "text_color": "light"
   },
   {
     "name": "qing-dynasty",
@@ -840,7 +850,9 @@
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 49381,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Military_of_the_Qing_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Military_of_the_Qing_dynasty",
+    "color": "#d6a700",
+    "text_color": "dark"
   },
   {
     "name": "peace-pyrenees",
@@ -1295,7 +1307,9 @@
     "image_width": 330,
     "image_height": 248,
     "wikipedia_views": 128110,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Red_Cross"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Red_Cross",
+    "color": "#a6a79b",
+    "text_color": "dark"
   },
   {
     "name": "emancipation-proclamation",
@@ -1763,7 +1777,9 @@
     "image_width": 330,
     "image_height": 257,
     "wikipedia_views": 62720,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Remilitarisation_of_the_Rhineland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Remilitarisation_of_the_Rhineland",
+    "color": "#6ab945",
+    "text_color": "dark"
   },
   {
     "name": "atlantic-charter",
@@ -2216,7 +2232,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 586185,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964",
+    "color": "#77604e",
+    "text_color": "light"
   },
   {
     "name": "24th-amendment-ratified",
@@ -2641,7 +2659,9 @@
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 38553,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/China_and_the_World_Trade_Organization"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/China_and_the_World_Trade_Organization",
+    "color": "#ee1c24",
+    "text_color": "dark"
   },
   {
     "name": "icc-established",
@@ -3073,7 +3093,9 @@
     "image_width": 330,
     "image_height": 293,
     "wikipedia_views": 84651,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sulla's_civil_war"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sulla's_civil_war",
+    "color": "#a39e9a",
+    "text_color": "dark"
   },
   {
     "name": "first-triumvirate",
@@ -3496,7 +3518,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 133398,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
+    "color": "#acaeac",
+    "text_color": "dark"
   },
   {
     "name": "first-irrigation-systems",
@@ -3960,7 +3984,9 @@
     "image_width": 330,
     "image_height": 252,
     "wikipedia_views": 604361,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_Plot"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_Plot",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "defenestration-of-prague",
@@ -4383,7 +4409,9 @@
     "image_width": 330,
     "image_height": 186,
     "wikipedia_views": 1077,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fire_of_Moscow"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fire_of_Moscow",
+    "color": "#3b9fd0",
+    "text_color": "dark"
   },
   {
     "name": "treaty-of-ghent",
@@ -4821,7 +4849,9 @@
     "image_width": 500,
     "image_height": 623,
     "wikipedia_views": 1093969,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_von_Bismarck"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Otto_von_Bismarck",
+    "color": "#aeadac",
+    "text_color": "dark"
   },
   {
     "name": "alaska-purchase",
@@ -5281,7 +5311,9 @@
     "image_width": 330,
     "image_height": 265,
     "wikipedia_views": 44487,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Secession_of_Panama_from_Colombia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Secession_of_Panama_from_Colombia",
+    "color": "#afafa0",
+    "text_color": "dark"
   },
   {
     "name": "norway-independence-sweden",
@@ -5717,7 +5749,9 @@
     "image_width": 330,
     "image_height": 435,
     "wikipedia_views": 597983,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "blitz-begins",
@@ -6138,7 +6172,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 561549,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Algerian_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Algerian_War",
+    "color": "#868686",
+    "text_color": "dark"
   },
   {
     "name": "second-vatican-council",
@@ -6598,7 +6634,9 @@
     "wikipedia_views": 124515,
     "wikipedia_url": "https://en.wikipedia.org/wiki/1986_United_States_bombing_of_Libya",
     "image_width": 330,
-    "image_height": 216
+    "image_height": 216,
+    "color": "#9cb2b4",
+    "text_color": "dark"
   },
   {
     "name": "black-monday-1987",
@@ -7036,7 +7074,9 @@
     "image_width": 330,
     "image_height": 236,
     "wikipedia_views": 384275,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo",
+    "color": "#244aa4",
+    "text_color": "light"
   },
   {
     "name": "obama-inaugurated",

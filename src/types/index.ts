@@ -51,6 +51,8 @@ export interface HistoricalEvent {
   image_url?: string; // Optional Wikipedia thumbnail URL
   image_width?: number; // Image width in pixels
   image_height?: number; // Image height in pixels
+  color?: string; // Dominant color extracted from image, e.g. "#8B4513"
+  text_color?: 'light' | 'dark'; // Whether to use light or dark text on this color
 }
 
 export interface Player {

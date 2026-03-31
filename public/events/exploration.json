@@ -151,7 +151,9 @@
     "image_width": 330,
     "image_height": 342,
     "wikipedia_views": 327979,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+    "color": "#afb18a",
+    "text_color": "dark"
   },
   {
     "name": "bow-and-arrow-invented",
@@ -273,7 +275,7 @@
     "category": "exploration",
     "description": "The wheel was invented in Mesopotamia, revolutionizing transportation and machinery.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg/330px-Landesmuseum_W%C3%BCrttemberg_Kelten_011.4.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wheel-invented_gh6d5y?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 220,
     "wikipedia_views": 227701,
@@ -580,7 +582,9 @@
     "image_width": 330,
     "image_height": 412,
     "wikipedia_views": 3606662,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+    "color": "#8bbe79",
+    "text_color": "dark"
   },
   {
     "name": "pytheas-arctic",
@@ -1020,7 +1024,9 @@
     "image_width": 330,
     "image_height": 327,
     "wikipedia_views": 638006,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Scientific_method"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scientific_method",
+    "color": "#9f9b90",
+    "text_color": "dark"
   },
   {
     "name": "eyeglasses-invented",
@@ -1482,7 +1488,9 @@
     "image_width": 330,
     "image_height": 213,
     "wikipedia_views": 688859,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower",
+    "color": "#39493e",
+    "text_color": "light"
   },
   {
     "name": "harvey-circulation",
@@ -1930,7 +1938,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 915636,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Uranus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Uranus",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "hot-air-balloon",
@@ -2314,7 +2324,9 @@
     "difficulty": "easy",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Reading_Braille.jpg/330px-Reading_Braille.jpg",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 221,
+    "color": "#4f4942",
+    "text_color": "light"
   },
   {
     "name": "electromagnet-invented",
@@ -2738,7 +2750,9 @@
     "image_width": 330,
     "image_height": 455,
     "wikipedia_views": 230253,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease",
+    "color": "#333335",
+    "text_color": "light"
   },
   {
     "name": "gatling-gun",
@@ -3173,7 +3187,9 @@
     "image_width": 330,
     "image_height": 215,
     "wikipedia_views": 423655,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/X-ray"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/X-ray",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "lumiere-cinematograph",
@@ -3614,7 +3630,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 354805,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Insulin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Insulin",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "pop-up-toaster",
@@ -4050,7 +4068,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Mtl._Biosphere_in_Sept._2004.jpg/330px-Mtl._Biosphere_in_Sept._2004.jpg",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 248,
+    "color": "#20221c",
+    "text_color": "light"
   },
   {
     "name": "polaroid-camera",
@@ -4469,7 +4489,9 @@
     "difficulty": "hard",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fibreoptic.jpg/330px-Fibreoptic.jpg",
     "image_width": 330,
-    "image_height": 499
+    "image_height": 499,
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "atm-invented",
@@ -4515,11 +4537,13 @@
     "category": "exploration",
     "description": "Neil Armstrong became the first human to walk on the Moon.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moon-landing_olbhii?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 334,
+    "image_height": 440,
     "wikipedia_views": 1565155,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11",
+    "color": "#1e2221",
+    "text_color": "light"
   },
   {
     "name": "apollo-11-launch",
@@ -4914,7 +4938,9 @@
     "image_width": 330,
     "image_height": 322,
     "wikipedia_views": 265453,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mir"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mir",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "world-wide-web",
@@ -5390,7 +5416,9 @@
     "image_width": 330,
     "image_height": 330,
     "wikipedia_views": 121193,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Event_Horizon_Telescope"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Event_Horizon_Telescope",
+    "color": "#2b1d1b",
+    "text_color": "light"
   },
   {
     "name": "quantum-computing-supremacy",
@@ -5753,7 +5781,9 @@
     "category": "exploration",
     "description": "Bone flutes carved from vulture wing bones, the oldest known musical instruments ever discovered.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shinobue_and_other_flutes-3.jpg/330px-Shinobue_and_other_flutes-3.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shinobue_and_other_flutes-3.jpg/330px-Shinobue_and_other_flutes-3.jpg",
+    "color": "#beaa90",
+    "text_color": "dark"
   },
   {
     "name": "spear-thrower-atlatl",
@@ -6068,7 +6098,9 @@
     "category": "exploration",
     "description": "Wine administered to patients to dull pain during medical and surgical procedures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Red_and_white_wine_in_glass.jpg/330px-Red_and_white_wine_in_glass.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Red_and_white_wine_in_glass.jpg/330px-Red_and_white_wine_in_glass.jpg",
+    "color": "#aeadaf",
+    "text_color": "dark"
   },
   {
     "name": "seal-emblem",
@@ -6403,7 +6435,9 @@
     "category": "exploration",
     "description": "Hydraulic concrete used in Assyrian aqueduct construction, resistant to water erosion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bloczek_betonowy.jpg/330px-Bloczek_betonowy.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bloczek_betonowy.jpg/330px-Bloczek_betonowy.jpg",
+    "color": "#98a1a3",
+    "text_color": "dark"
   },
   {
     "name": "wagonway-diolkos",
@@ -6718,7 +6752,9 @@
     "category": "exploration",
     "description": "Hero of Alexandria designed a coin-operated device that dispensed holy water in Egyptian temples.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/CandiesVendingMachine1952.jpg/330px-CandiesVendingMachine1952.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/CandiesVendingMachine1952.jpg/330px-CandiesVendingMachine1952.jpg",
+    "color": "#788988",
+    "text_color": "dark"
   },
   {
     "name": "carding",
@@ -7042,7 +7078,9 @@
     "category": "exploration",
     "description": "Floating explosive devices deployed in waterways to damage or destroy enemy ships in naval warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mina_morska_typu_M_1908-39.jpg/330px-Mina_morska_typu_M_1908-39.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mina_morska_typu_M_1908-39.jpg/330px-Mina_morska_typu_M_1908-39.jpg",
+    "color": "#40443d",
+    "text_color": "light"
   },
   {
     "name": "handgun-first-use",
@@ -7402,7 +7440,9 @@
     "category": "exploration",
     "description": "Robert Stirling's external combustion engine using cyclic compression and expansion of gas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HPS_Eigenbau2.jpg/330px-HPS_Eigenbau2.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/HPS_Eigenbau2.jpg/330px-HPS_Eigenbau2.jpg",
+    "color": "#ab9d71",
+    "text_color": "dark"
   },
   {
     "name": "tunnelling-shield",
@@ -7717,7 +7757,9 @@
     "category": "exploration",
     "description": "Fyodor Pirotsky demonstrated the first electric-powered streetcar running on rails.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/330px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/330px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+    "color": "#2b2116",
+    "text_color": "light"
   },
   {
     "name": "four-stroke-engine",
@@ -8049,7 +8091,9 @@
     "category": "exploration",
     "description": "First device to use electric current to restore a normal heartbeat in cardiac arrest.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Defibrillation_Electrode_Position.jpg/330px-Defibrillation_Electrode_Position.jpg"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Defibrillation_Electrode_Position.jpg/330px-Defibrillation_Electrode_Position.jpg",
+    "color": "#adadae",
+    "text_color": "dark"
   },
   {
     "name": "electronic-digital-computer",
@@ -8373,7 +8417,9 @@
     "category": "exploration",
     "description": "Amazon Web Services launched, pioneering scalable on-demand cloud computing infrastructure.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cloud_computing.svg/330px-Cloud_computing.svg.png"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cloud_computing.svg/330px-Cloud_computing.svg.png",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "synthetic-organism",
