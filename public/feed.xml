@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Mar 2026 20:35:26 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 15:30:19 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.10.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.10.1</guid>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Added more generated images (<a href="https://github.com/Edward-Muir/when/commit/e2922a7d973c0212da31c4cc041eb341db2bf7a8">e2922a7</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.10.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.6.0</guid>
       <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add leaderboard placeholder for loading (<a href="https://github.com/Edward-Muir/when/commit/17ece49b06dd10992a25f3a7eaefeb6d4f54ef9c">17ece49</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Fix placeholder spacing (<a href="https://github.com/Edward-Muir/when/commit/93c74180d412fb7176bb61d3fc3cf1d6036335c7">93c7418</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.5.10</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.5.10</guid>
-      <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Move version indicator (<a href="https://github.com/Edward-Muir/when/commit/df5d0cbd498e7cf052dea23aded32e992ed9ab43">df5d0cb</a>)</li> <li>Update game select UI, fix timeline snap back (<a href="https://github.com/Edward-Muir/when/commit/50afd1caf4c5096ea7b5bc883a5c2b0361c2912c">50afd1c</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
