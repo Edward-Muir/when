@@ -3199,11 +3199,13 @@
     "category": "conflict",
     "description": "Palestinians began a sustained uprising against Israeli occupation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Intifada_in_Gaza_Strip%2C_1987_V_Dan_Hadani_Archive.jpg/330px-Intifada_in_Gaza_Strip%2C_1987_V_Dan_Hadani_Archive.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-intifada_qh3wme?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215,
+    "image_height": 440,
     "wikipedia_views": 386900,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Intifada"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Intifada",
+    "color": "#46545d",
+    "text_color": "light"
   },
   {
     "name": "berlin-wall-fall",
@@ -3212,11 +3214,13 @@
     "category": "conflict",
     "description": "East Germany opened its borders, symbolizing the end of the Cold War.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg/330px-West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/berlin-wall-fall_o2vksz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 249,
+    "image_height": 440,
     "wikipedia_views": 410314,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+    "color": "#1d2127",
+    "text_color": "light"
   },
   {
     "name": "tiananmen-square",
@@ -3225,11 +3229,13 @@
     "category": "conflict",
     "description": "Chinese troops killed pro-democracy protesters in Beijing.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Ud%C3%A1losti_na_n%C3%A1m%C4%9Bst%C3%AD_Tian_an_men%2C_%C4%8C%C3%ADna_1989%2C_foto_Ji%C5%99%C3%AD_Tondl.jpg",
-    "image_width": 299,
-    "image_height": 199,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiananmen-square_wo9imf?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 57347496,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre",
+    "color": "#39485e",
+    "text_color": "light"
   },
   {
     "name": "soviet-union-collapse",
@@ -3238,11 +3244,13 @@
     "category": "conflict",
     "description": "The USSR officially dissolved into fifteen independent republics.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/330px-Flag_of_the_Soviet_Union.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soviet-union-collapse_l4pzcx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 165,
+    "image_height": 440,
     "wikipedia_views": 1184580,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+    "color": "#1f2128",
+    "text_color": "light"
   },
   {
     "name": "gulf-war",
@@ -3251,11 +3259,13 @@
     "category": "conflict",
     "description": "A US-led coalition launched Operation Desert Storm to liberate Kuwait.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg/330px-USAF_F-16A_F-15C_F-15E_Desert_Storm_edit2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gulf-war_etoosv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 210,
+    "image_height": 440,
     "wikipedia_views": 2572972,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gulf_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gulf_War",
+    "color": "#333d4a",
+    "text_color": "light"
   },
   {
     "name": "yugoslavia-wars-start",
@@ -3264,11 +3274,13 @@
     "category": "conflict",
     "description": "Yugoslavia began to dissolve amid ethnic conflicts and declarations of independence.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Collage_Yugoslav_wars.jpg/330px-Collage_Yugoslav_wars.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yugoslavia-wars-start_r4ee8x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 481,
+    "image_height": 440,
     "wikipedia_views": 956186,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Yugoslav_Wars"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yugoslav_Wars",
+    "color": "#1c2228",
+    "text_color": "light"
   },
   {
     "name": "soviet-collapse",
@@ -3277,11 +3289,13 @@
     "category": "conflict",
     "description": "The dissolution of the USSR ended the Cold War era.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_the_Soviet_Union.svg/330px-Flag_of_the_Soviet_Union.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soviet-collapse_yhgoz2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 165,
+    "image_height": 440,
     "wikipedia_views": 1184580,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+    "color": "#222024",
+    "text_color": "light"
   },
   {
     "name": "apartheid-ends",
@@ -3290,11 +3304,13 @@
     "category": "conflict",
     "description": "South Africa held its first democratic elections, ending racial segregation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Monomotapa_Map.jpg/330px-Monomotapa_Map.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apartheid-ends_gy4eur?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 256,
+    "image_height": 440,
     "wikipedia_views": 1486885,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
+    "color": "#202027",
+    "text_color": "light"
   },
   {
     "name": "rwandan-genocide",
@@ -3303,11 +3319,13 @@
     "category": "conflict",
     "description": "Hutu extremists killed approximately 800,000 Tutsis and moderate Hutus.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Nyamata_Memorial_Site_13.jpg/330px-Nyamata_Memorial_Site_13.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rwandan-genocide_i8pyk3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 1817664,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Rwandan_genocide"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rwandan_genocide",
+    "color": "#1e2127",
+    "text_color": "light"
   },
   {
     "name": "apartheid-end",
@@ -3316,11 +3334,13 @@
     "category": "conflict",
     "description": "Nelson Mandela became South Africa's first Black president.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Monomotapa_Map.jpg/330px-Monomotapa_Map.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apartheid-end_sqhgrd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 256,
+    "image_height": 440,
     "wikipedia_views": 1486885,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
+    "color": "#2f1b14",
+    "text_color": "light"
   },
   {
     "name": "oklahoma-city-bombing",
@@ -3329,11 +3349,13 @@
     "category": "conflict",
     "description": "A domestic terrorist attack killed 168 people at a federal building.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Oklahomacitybombing-DF-ST-98-01356.jpg/330px-Oklahomacitybombing-DF-ST-98-01356.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oklahoma-city-bombing_idxou7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 484,
+    "image_height": 440,
     "wikipedia_views": 2287557,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Oklahoma_City_bombing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oklahoma_City_bombing",
+    "color": "#3a3e4a",
+    "text_color": "light"
   },
   {
     "name": "srebrenica-massacre",
@@ -3342,11 +3364,13 @@
     "category": "conflict",
     "description": "Bosnian Serb forces killed over 8,000 Bosniak Muslims in Europe's worst post-WWII atrocity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Srebrenica_massacre_memorial_gravestones_2009_1.jpg/330px-Srebrenica_massacre_memorial_gravestones_2009_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/srebrenica-massacre_gsv2sw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 196,
+    "image_height": 440,
     "wikipedia_views": 727733,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Srebrenica_massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Srebrenica_massacre",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "kosovo-war",
@@ -3355,11 +3379,13 @@
     "category": "conflict",
     "description": "NATO bombing forced Serbian withdrawal from Kosovo.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bllace_refugee_camp.jpg/330px-Bllace_refugee_camp.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kosovo-war_hxvpqt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 226,
+    "image_height": 440,
     "wikipedia_views": 802054,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kosovo_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kosovo_War",
+    "color": "#1a212e",
+    "text_color": "light"
   },
   {
     "name": "second-intifada",
@@ -3368,11 +3394,13 @@
     "category": "conflict",
     "description": "A more violent Palestinian uprising erupted after peace talks collapsed.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/b/bf/Faris_odeh03a.jpg",
-    "image_width": 278,
-    "image_height": 275,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/second-intifada_nza42x?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 511267,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Intifada"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Intifada",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "september-11",
@@ -3381,11 +3409,13 @@
     "category": "conflict",
     "description": "Terrorists hijacked planes and attacked the World Trade Center and Pentagon.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/WTC_smoking_on_9-11.jpeg/330px-WTC_smoking_on_9-11.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/september-11_g4nirz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 6668036,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/September_11_attacks"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/September_11_attacks",
+    "color": "#223b4e",
+    "text_color": "light"
   },
   {
     "name": "afghanistan-war-start",
@@ -3394,11 +3424,13 @@
     "category": "conflict",
     "description": "The US invaded Afghanistan following the September 11 attacks to pursue al-Qaeda.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/U.S._Army_firefight_in_Kunar.jpg/330px-U.S._Army_firefight_in_Kunar.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/afghanistan-war-start_n1cmyr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 1210120,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001–2021)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Afghanistan_(2001–2021)",
+    "color": "#1e2125",
+    "text_color": "light"
   },
   {
     "name": "saddam-hussein-captured",
@@ -3407,11 +3439,13 @@
     "category": "conflict",
     "description": "US forces captured the Iraqi dictator hiding in a spider hole.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Saddam_Hussein_1960s_Portrait_%28cropped%29.png/330px-Saddam_Hussein_1960s_Portrait_%28cropped%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saddam-hussein-captured_yqxbsx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 449,
+    "image_height": 440,
     "wikipedia_views": 387734,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Capture_of_Saddam_Hussein"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Capture_of_Saddam_Hussein",
+    "color": "#1e2126",
+    "text_color": "light"
   },
   {
     "name": "iraq-war-start",
@@ -3420,11 +3454,13 @@
     "category": "conflict",
     "description": "US-led coalition invaded Iraq to remove Saddam Hussein from power.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/The_War_in_Iraq%2C_Near_Basra%2C_Iraq%2C_2003_%28Display%29.jpg/960px-The_War_in_Iraq%2C_Near_Basra%2C_Iraq%2C_2003_%28Display%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iraq-war-start_l4luzg?_a=BAMAMiiu0",
     "wikipedia_views": 1354448,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iran–Iraq_War",
-    "image_width": 960,
-    "image_height": 467
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#212123",
+    "text_color": "light"
   },
   {
     "name": "madrid-bombings",
@@ -3433,11 +3469,13 @@
     "category": "conflict",
     "description": "Terrorist attacks on commuter trains killed 193 people in Spain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Atentado_11M.jpg/330px-Atentado_11M.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/madrid-bombings_kucra4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 153,
+    "image_height": 440,
     "wikipedia_views": 293605,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Madrid_train_bombings"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Madrid_train_bombings",
+    "color": "#2c363e",
+    "text_color": "light"
   },
   {
     "name": "beslan-school-siege",
@@ -3446,11 +3484,13 @@
     "category": "conflict",
     "description": "Chechen terrorists took over a school in Russia, resulting in over 330 deaths.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8_%D0%91%D0%B5%D1%81%D0%BB%D0%B0%D0%BD.jpg/330px-%D0%96%D0%B5%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D0%B4%D0%BE%D1%80%D0%BE%D0%B6%D0%BD%D1%8B%D0%B9_%D0%B2%D0%BE%D0%BA%D0%B7%D0%B0%D0%BB_%D1%81%D1%82%D0%B0%D0%BD%D1%86%D0%B8%D0%B8_%D0%91%D0%B5%D1%81%D0%BB%D0%B0%D0%BD.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beslan-school-siege_lbsyxd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 237,
+    "image_height": 440,
     "wikipedia_views": 603937,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Beslan_school_siege"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beslan_school_siege",
+    "color": "#1f2125",
+    "text_color": "light"
   },
   {
     "name": "london-bombings",
@@ -3459,11 +3499,13 @@
     "category": "conflict",
     "description": "Suicide bombers attacked London's transport system, killing 52 people.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Russell_square_ambulances.jpg/330px-Russell_square_ambulances.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/london-bombings_stp2ab?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 1386223,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/7_July_2005_London_bombings"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/7_July_2005_London_bombings",
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "obama-elected",
@@ -3472,11 +3514,13 @@
     "category": "conflict",
     "description": "Barack Obama became the first Black president of the United States.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/330px-President_Barack_Obama.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/obama-elected_nnqajx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 412,
+    "image_height": 440,
     "wikipedia_views": 6784853,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barack_Obama",
+    "color": "#201f2c",
+    "text_color": "light"
   },
   {
     "name": "georgia-russia-war",
@@ -3485,11 +3529,13 @@
     "category": "conflict",
     "description": "Russia invaded Georgia over the breakaway regions of South Ossetia and Abkhazia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Ruins_of_a_burnt_apartment_building_in_Gori.jpg/330px-Ruins_of_a_burnt_apartment_building_in_Gori.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/georgia-russia-war_fdesua?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 576382,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Russo-Georgian_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Russo-Georgian_War",
+    "color": "#172231",
+    "text_color": "light"
   },
   {
     "name": "bin-laden-killed",
@@ -3498,11 +3544,13 @@
     "category": "conflict",
     "description": "US Navy SEALs killed the al-Qaeda leader in Pakistan.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Osama_bin_Laden_portrait.jpg/330px-Osama_bin_Laden_portrait.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bin-laden-killed_dllhi9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 399,
+    "image_height": 440,
     "wikipedia_views": 1570105,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Killing_of_Osama_bin_Laden",
+    "color": "#1d2226",
+    "text_color": "light"
   },
   {
     "name": "arab-spring",
@@ -3511,9 +3559,9 @@
     "category": "conflict",
     "description": "Pro-democracy protests swept across the Middle East and North Africa.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Infobox_collage_for_MENA_protests.PNG/330px-Infobox_collage_for_MENA_protests.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arab-spring_rpdsnn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 894287,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_Spring",
     "color": "#4f4e4c",
@@ -3526,11 +3574,13 @@
     "category": "conflict",
     "description": "Anti-government protests in Syria escalated into a devastating civil war.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Syrian_Civil_War_map_%28ISW-CTP%29.svg/330px-Syrian_Civil_War_map_%28ISW-CTP%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/syrian-civil-war_l56oxq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 273,
+    "image_height": 440,
     "wikipedia_views": 2403219,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Syrian_civil_war"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Syrian_civil_war",
+    "color": "#382b20",
+    "text_color": "light"
   },
   {
     "name": "libyan-civil-war",
@@ -3539,11 +3589,13 @@
     "category": "conflict",
     "description": "An uprising against Gaddafi led to NATO intervention and regime change.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Libyan_Civil_War.svg/330px-Libyan_Civil_War.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/libyan-civil-war_s34h0k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 317,
+    "image_height": 440,
     "wikipedia_views": 233901,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Libyan_civil_war_(2014–2020)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Libyan_civil_war_(2014–2020)",
+    "color": "#372920",
+    "text_color": "light"
   },
   {
     "name": "crimea-annexation",
@@ -3552,11 +3604,13 @@
     "category": "conflict",
     "description": "Russia seized and annexed the Crimean Peninsula from Ukraine.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%D0%9A%D1%80%D1%8B%D0%BC%2C_%D0%92%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%BE%D0%B2%2C_%D0%BC%D0%B0%D1%80%D1%82_2014%2C_25.jpg/330px-%D0%9A%D1%80%D1%8B%D0%BC%2C_%D0%92%D0%B0%D1%80%D0%BB%D0%B0%D0%BC%D0%BE%D0%B2%2C_%D0%BC%D0%B0%D1%80%D1%82_2014%2C_25.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crimea-annexation_d56wcy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 115585,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_occupation_of_Crimea"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_occupation_of_Crimea",
+    "color": "#212e36",
+    "text_color": "light"
   },
   {
     "name": "isis-caliphate",
@@ -3565,11 +3619,13 @@
     "category": "conflict",
     "description": "The Islamic State declared a caliphate across parts of Iraq and Syria.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Islamic_State_flag.svg/330px-Islamic_State_flag.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/isis-caliphate_s20m3t?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 1962146,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Islamic_State"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Islamic_State",
+    "color": "#875638",
+    "text_color": "light"
   },
   {
     "name": "brexit-vote",
@@ -3578,11 +3634,13 @@
     "category": "conflict",
     "description": "The United Kingdom voted to leave the European Union.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Coat_of_arms_of_the_United_Kingdom_%282024%2C_lesser_arms%29.svg/330px-Coat_of_arms_of_the_United_Kingdom_%282024%2C_lesser_arms%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brexit-vote_nayyl0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 288,
+    "image_height": 440,
     "wikipedia_views": 263705,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2016_United_Kingdom_European_Union_membership_referendum"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2016_United_Kingdom_European_Union_membership_referendum",
+    "color": "#222024",
+    "text_color": "light"
   },
   {
     "name": "capitol-riot-2021",
@@ -3591,11 +3649,13 @@
     "category": "conflict",
     "description": "A mob stormed the U.S. Capitol in an attempt to overturn the 2020 election results.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2021_storming_of_the_United_States_Capitol_DSC09254-2_%2850820534063%29_%28retouched%29.jpg/330px-2021_storming_of_the_United_States_Capitol_DSC09254-2_%2850820534063%29_%28retouched%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/capitol-riot-2021_ujzuad?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 202,
+    "image_height": 440,
     "wikipedia_views": 2035138,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/January_6_United_States_Capitol_attack",
+    "color": "#301d19",
+    "text_color": "light"
   },
   {
     "name": "myanmar-coup-2021",
@@ -3604,11 +3664,13 @@
     "category": "conflict",
     "description": "Military removes Aung San Suu Kyi and restores military rule.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Full_Emblem_of_the_Myanmar_Armed_Forces.svg/330px-Full_Emblem_of_the_Myanmar_Armed_Forces.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/myanmar-coup-2021_qochou?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 378,
+    "image_height": 440,
     "wikipedia_views": 322517,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d'état"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d'état",
+    "color": "#252117",
+    "text_color": "light"
   },
   {
     "name": "russia-ukraine-invasion",
@@ -3617,11 +3679,13 @@
     "category": "conflict",
     "description": "Russia launched a full-scale invasion of Ukraine, starting a major European war.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif/330px-2022_Russian_Invasion_of_Ukraine_Phase_1_animated.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russia-ukraine-invasion_upl1jx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 222,
+    "image_height": 440,
     "wikipedia_views": 559134,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2022_Russian_invasion_of_Ukraine",
+    "color": "#333735",
+    "text_color": "light"
   },
   {
     "name": "reichstag-fire",
@@ -5831,11 +5895,13 @@
     "category": "conflict",
     "description": "Black South African students protested mandatory Afrikaans instruction. Police killed hundreds, including 12-year-old Hector Pieterson.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/1/13/Hector_pieterson.jpg",
-    "image_width": 289,
-    "image_height": 345,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soweto-uprising_yiuple?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 163400,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Soweto_uprising"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Soweto_uprising",
+    "color": "#464c56",
+    "text_color": "light"
   },
   {
     "name": "iran-hostage-crisis",
@@ -5859,11 +5925,13 @@
     "category": "conflict",
     "description": "Former Beatle John Lennon was shot dead outside his New York apartment by Mark David Chapman, who remains imprisoned.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/John_Lennon_%22Walls_and_Bridges%22_1974_press_photo_2_%28color%29_%28cropped%29.jpg/330px-John_Lennon_%22Walls_and_Bridges%22_1974_press_photo_2_%28color%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/john-lennon-killed_rvj1rr?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 203930,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Julia_Lennon"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Julia_Lennon",
+    "color": "#25313c",
+    "text_color": "light"
   },
   {
     "name": "assassination-attempt-on-reagan",
@@ -5962,11 +6030,13 @@
     "category": "conflict",
     "description": "Indian Prime Minister Indira Gandhi was shot by her Sikh bodyguards in retaliation for ordering the assault on the Golden Temple.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/PathOfMartyrdom.JPG/330px-PathOfMartyrdom.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/assassination-of-indira-gandhi_wmq424?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 514206,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Indira_Gandhi"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Indira_Gandhi",
+    "color": "#1e2127",
+    "text_color": "light"
   },
   {
     "name": "iran-iraq-war-ends",
@@ -5975,11 +6045,13 @@
     "category": "conflict",
     "description": "The devastating eight-year war between Iran and Iraq ended in a ceasefire with no territorial changes and over one million dead.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Chemical_weapon1.jpg/330px-Chemical_weapon1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iran-iraq-war-ends_chdrfx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 227,
+    "image_height": 440,
     "wikipedia_views": 1354448,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Iran–Iraq_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iran–Iraq_War",
+    "color": "#3a434d",
+    "text_color": "light"
   },
   {
     "name": "panama-invasion",
@@ -5988,11 +6060,13 @@
     "category": "conflict",
     "description": "US forces invaded Panama to depose dictator Manuel Noriega on drug trafficking charges, the largest American military operation since Vietnam.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Operation_Just_Cause.png/330px-Operation_Just_Cause.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/panama-invasion_j21wlo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 501,
+    "image_height": 440,
     "wikipedia_views": 1138296,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_invasion_of_Panama"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_invasion_of_Panama",
+    "color": "#26282c",
+    "text_color": "light"
   },
   {
     "name": "siege-of-sarajevo-begins",
@@ -6001,11 +6075,13 @@
     "category": "conflict",
     "description": "Bosnian Serb forces began the longest siege in modern warfare history, lasting nearly four years and killing over 11,000 Sarajevo residents.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Siege_of_Sarajevo.png/330px-Siege_of_Sarajevo.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-sarajevo-begins_x3iiqo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 365,
+    "image_height": 440,
     "wikipedia_views": 408808,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Sarajevo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Sarajevo",
+    "color": "#222024",
+    "text_color": "light"
   },
   {
     "name": "la-riots",
@@ -6014,11 +6090,13 @@
     "category": "conflict",
     "description": "Los Angeles erupted in deadly riots after police officers were acquitted of beating Rodney King, causing over $1 billion in damage.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Roof_Koreans_and_ROK_Veterans_%281992_Los_Angeles_Riots%29.jpg",
-    "image_width": 600,
-    "image_height": 400,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/la-riots_dn3csu?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 981260,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1992_Los_Angeles_riots"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1992_Los_Angeles_riots",
+    "color": "#303841",
+    "text_color": "light"
   },
   {
     "name": "us-embassy-bombings",
@@ -6027,11 +6105,13 @@
     "category": "conflict",
     "description": "Al-Qaeda bombed US embassies in Kenya and Tanzania, killing 224 people and marking a major escalation in jihadist attacks on America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/United_States_diplomatic_missions.webp/330px-United_States_diplomatic_missions.webp.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-embassy-bombings_dwv5en?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 231,
+    "image_height": 440,
     "wikipedia_views": 214972,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1998_United_States_embassy_bombings"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1998_United_States_embassy_bombings",
+    "color": "#32393f",
+    "text_color": "light"
   },
   {
     "name": "bali-bombings",
@@ -6040,11 +6120,13 @@
     "category": "conflict",
     "description": "Jemaah Islamiyah terrorists bombed nightclubs in Bali, killing 202 people, mostly Australian tourists, in Indonesia's deadliest terror attack.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Kuta-bomb-3.jpg",
-    "image_width": 800,
-    "image_height": 600,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bali-bombings_skwfg7?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 254976,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2002_Bali_bombings"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2002_Bali_bombings",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "moscow-theatre-hostage-crisis",
@@ -6053,11 +6135,13 @@
     "category": "conflict",
     "description": "Chechen militants seized a Moscow theater with 850 hostages. Russian special forces used gas in the rescue, killing 130 hostages.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Moscow_Siege%2C_2002.jpg/330px-Moscow_Siege%2C_2002.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moscow-theatre-hostage-crisis_gflrj5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 203,
+    "image_height": 440,
     "wikipedia_views": 320277,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_theater_hostage_crisis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moscow_theater_hostage_crisis",
+    "color": "#1e2222",
+    "text_color": "light"
   },
   {
     "name": "darfur-genocide-begins",
@@ -6066,11 +6150,13 @@
     "category": "conflict",
     "description": "Sudanese government forces and Janjaweed militias began systematic attacks on non-Arab populations in Darfur, killing an estimated 300,000 people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Darfur_Children.jpg/960px-Darfur_Children.jpg",
-    "image_width": 960,
-    "image_height": 720,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/darfur-genocide-begins_ern73n?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 276252,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Darfur"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_in_Darfur",
+    "color": "#6f797c",
+    "text_color": "light"
   },
   {
     "name": "norway-attacks",
@@ -6079,9 +6165,9 @@
     "category": "conflict",
     "description": "Far-right terrorist Anders Breivik bombed Oslo and massacred 69 people at a youth camp, Norway's deadliest peacetime attack.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Oslo_view_of_city_after_July_2011_bombing.jpg/330px-Oslo_view_of_city_after_July_2011_bombing.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norway-attacks_zrwcc0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 251,
+    "image_height": 440,
     "wikipedia_views": 638158,
     "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Norway_attacks",
     "color": "#a0afc0",
@@ -6094,11 +6180,13 @@
     "category": "conflict",
     "description": "Brothers Tamerlan and Dzhokhar Tsarnaev detonated bombs near the Boston Marathon finish line, killing 3 and injuring over 260.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/1st_Boston_Marathon_blast_seen_from_2nd_floor_and_a_half_block_away.jpg/330px-1st_Boston_Marathon_blast_seen_from_2nd_floor_and_a_half_block_away.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-marathon-bombing_cxksyq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 234,
+    "image_height": 440,
     "wikipedia_views": 1318222,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Marathon_bombing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boston_Marathon_bombing",
+    "color": "#454547",
+    "text_color": "light"
   },
   {
     "name": "charlie-hebdo-attack",
@@ -6107,11 +6195,13 @@
     "category": "conflict",
     "description": "Islamist gunmen killed 12 people at the French satirical magazine Charlie Hebdo, sparking global 'Je Suis Charlie' solidarity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Manifestation_Charlie_Hebdo_Toulouse%2C_10_janvier_2015_%284%29.jpg/960px-Manifestation_Charlie_Hebdo_Toulouse%2C_10_janvier_2015_%284%29.jpg",
-    "image_width": 960,
-    "image_height": 640,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charlie-hebdo-attack_vipvc2?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 402046,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Hebdo_shooting"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlie_Hebdo_shooting",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "san-bernardino-attack",
@@ -6120,11 +6210,13 @@
     "category": "conflict",
     "description": "A married couple killed 14 people at a San Bernardino holiday party in an ISIS-inspired attack, one of the deadliest US terror attacks since 9/11.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/SanBernardinoStationStreetside_%28cropped%29.jpg/330px-SanBernardinoStationStreetside_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/san-bernardino-attack_svr739?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 162,
+    "image_height": 440,
     "wikipedia_views": 241425,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2015_San_Bernardino_attack"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2015_San_Bernardino_attack",
+    "color": "#1d212c",
+    "text_color": "light"
   },
   {
     "name": "nice-truck-attack",
@@ -6133,11 +6225,13 @@
     "category": "conflict",
     "description": "A terrorist drove a truck through Bastille Day crowds on Nice's Promenade des Anglais, killing 86 people in an ISIS-claimed attack.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nice_Promenade_des_Anglais_FRANCE-cropped.jpg/330px-Nice_Promenade_des_Anglais_FRANCE-cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nice-truck-attack_zzps8y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 209,
+    "image_height": 440,
     "wikipedia_views": 147649,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2016_Nice_truck_attack"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2016_Nice_truck_attack",
+    "color": "#1d2127",
+    "text_color": "light"
   },
   {
     "name": "khashoggi-murder",
@@ -6146,11 +6240,13 @@
     "category": "conflict",
     "description": "Saudi journalist Jamal Khashoggi was murdered and dismembered inside the Saudi consulate in Istanbul by a team linked to Crown Prince MBS.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Jamal_Khashoggi_in_March_2018_%28cropped%29.jpg/960px-Jamal_Khashoggi_in_March_2018_%28cropped%29.jpg",
-    "image_width": 960,
-    "image_height": 1344,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/khashoggi-murder_xa6r8y?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 549370,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Jamal_Khashoggi"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Jamal_Khashoggi",
+    "color": "#222121",
+    "text_color": "light"
   },
   {
     "name": "nagorno-karabakh-war-2020",
@@ -6159,11 +6255,13 @@
     "category": "conflict",
     "description": "Azerbaijan recaptured most of Nagorno-Karabakh from Armenian forces in a 44-day war featuring extensive drone warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Azerbaijani_combattants_of_the_2020_Nagorno-Karabakh_conflict.jpg/960px-Azerbaijani_combattants_of_the_2020_Nagorno-Karabakh_conflict.jpg",
-    "image_width": 960,
-    "image_height": 540,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nagorno-karabakh-war-2020_bdz8ud?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 318040,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Nagorno-Karabakh_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Nagorno-Karabakh_War",
+    "color": "#321f2e",
+    "text_color": "light"
   },
   {
     "name": "sudan-civil-war-2023",
@@ -6172,10 +6270,12 @@
     "category": "conflict",
     "description": "Fighting erupted between Sudan's army and the Rapid Support Forces paramilitary, causing massive displacement and humanitarian crisis.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chadian_soldiers_at_Chad-Sudan_border_1.png/960px-Chadian_soldiers_at_Chad-Sudan_border_1.png",
-    "image_width": 960,
-    "image_height": 536,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sudan-civil-war-2023_yqrzgc?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 3057986,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023–present)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023–present)",
+    "color": "#432217",
+    "text_color": "light"
   }
 ]

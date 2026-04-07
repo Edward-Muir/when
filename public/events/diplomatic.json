@@ -6,11 +6,13 @@
     "category": "diplomatic",
     "description": "Egypt and the Hittites signed the earliest known peace treaty after the Battle of Kadesh.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Karnak_%C3%84gyptisch-Hethitischer_Friedensvertrag_06.jpg/330px-Karnak_%C3%84gyptisch-Hethitischer_Friedensvertrag_06.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-peace-treaty_nzgtwb?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 52058,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_treaty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_treaty",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "persian-empire-cyrus",
@@ -19,9 +21,9 @@
     "category": "diplomatic",
     "description": "Cyrus the Great founded the Achaemenid Empire, the first Persian Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Achaemenid_Empire_500_BCE.jpg/330px-Achaemenid_Empire_500_BCE.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/persian-empire-cyrus_ivpgn4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 176,
+    "image_height": 440,
     "wikipedia_views": 1602944,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Achaemenid_Empire",
     "color": "#b6b257",
@@ -34,11 +36,13 @@
     "category": "diplomatic",
     "description": "Cyrus the Great issued an early declaration of human rights after conquering Babylon.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Cyrus_Cylinder_front.jpg/330px-Cyrus_Cylinder_front.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cyrus-cylinder_kylmmx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 199,
+    "image_height": 440,
     "wikipedia_views": 129907,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrus_Cylinder"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrus_Cylinder",
+    "color": "#291e1a",
+    "text_color": "light"
   },
   {
     "name": "roman-republic",
@@ -47,11 +51,13 @@
     "category": "diplomatic",
     "description": "Rome overthrew its monarchy and established a republican government.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Roman_republic%2C_territory_44_BC.svg/330px-Roman_republic%2C_territory_44_BC.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-republic_xk3zwo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 190,
+    "image_height": 440,
     "wikipedia_views": 1111894,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Republic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Republic",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "athenian-democracy",
@@ -60,11 +66,13 @@
     "category": "diplomatic",
     "description": "Cleisthenes introduced democratic reforms in ancient Athens.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Discurso_funebre_pericles.PNG/330px-Discurso_funebre_pericles.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/athenian-democracy_oe2wps?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 263,
+    "image_height": 440,
     "wikipedia_views": 203660,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Athenian_democracy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Athenian_democracy",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "delian-league",
@@ -73,11 +81,13 @@
     "category": "diplomatic",
     "description": "Greek city-states formed an alliance led by Athens against the Persian Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Map_Peloponnesian_War_431_BC-en.svg/330px-Map_Peloponnesian_War_431_BC-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/delian-league_ytbsp5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 264,
+    "image_height": 440,
     "wikipedia_views": 151598,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Delian_League"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Delian_League",
+    "color": "#242023",
+    "text_color": "light"
   },
   {
     "name": "twelve-tables",
@@ -86,11 +96,13 @@
     "category": "diplomatic",
     "description": "Rome codified its first written laws, forming the foundation of Roman legal tradition.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/320px-Roman_SPQR_banner.svg.png",
-    "image_width": 320,
-    "image_height": 254,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/twelve-tables_qyajki?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 98386,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Twelve_Tables"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Twelve_Tables",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "league-corinth",
@@ -99,11 +111,13 @@
     "category": "diplomatic",
     "description": "Philip II united Greek city-states in an alliance against Persia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Map_Macedonia_336_BC-en.svg/330px-Map_Macedonia_336_BC-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/league-corinth_ojgbf2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 265,
+    "image_height": 440,
     "wikipedia_views": 79594,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "maurya-empire",
@@ -112,11 +126,13 @@
     "category": "diplomatic",
     "description": "Chandragupta Maurya established the first empire to unify most of India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Maurya_Empire%2C_c.250_BCE_network_model_v01.png/330px-Maurya_Empire%2C_c.250_BCE_network_model_v01.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maurya-empire_w8lbxn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 308,
+    "image_height": 440,
     "wikipedia_views": 45190,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Maurya_emperors"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Maurya_emperors",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "ashoka-edicts",
@@ -125,11 +141,13 @@
     "category": "diplomatic",
     "description": "Indian emperor Ashoka proclaimed religious tolerance and non-violence.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Ashoka_Lauriya_Areraj_inscription.jpg/330px-Ashoka_Lauriya_Areraj_inscription.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashoka-edicts_jfhvz9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 469,
+    "image_height": 440,
     "wikipedia_views": 143416,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edicts_of_Ashoka",
+    "color": "#23211d",
+    "text_color": "light"
   },
   {
     "name": "punic-treaty",
@@ -138,11 +156,13 @@
     "category": "diplomatic",
     "description": "Rome and Carthage signed a treaty ending 23 years of conflict over Sicily.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/First_Punic_War_264_BC_v3.png/330px-First_Punic_War_264_BC_v3.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/punic-treaty_bhuxun?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 194,
+    "image_height": 440,
     "wikipedia_views": 205102,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Punic_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Punic_War",
+    "color": "#242022",
+    "text_color": "light"
   },
   {
     "name": "qin-unification",
@@ -151,11 +171,13 @@
     "category": "diplomatic",
     "description": "Qin Shi Huang unified China and became its first emperor.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qin_dynasty_territory.svg/330px-Qin_dynasty_territory.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qin-unification_r4l7xb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 396,
+    "image_height": 440,
     "wikipedia_views": 128018,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Qin_(state)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Qin_(state)",
+    "color": "#251f20",
+    "text_color": "light"
   },
   {
     "name": "han-dynasty",
@@ -164,11 +186,13 @@
     "category": "diplomatic",
     "description": "The Han Dynasty established the golden age of Chinese civilization.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Dahuting_tomb_banquet_scene%2C_Eastern_Han_mural.jpg/960px-Dahuting_tomb_banquet_scene%2C_Eastern_Han_mural.jpg",
-    "image_width": 800,
-    "image_height": 299,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/han-dynasty_ymlloq?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 664074,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Han_Chinese"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Han_Chinese",
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "treaty-apamea",
@@ -177,11 +201,13 @@
     "category": "diplomatic",
     "description": "Rome imposed terms on the Seleucid Empire after defeating Antiochus III.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Treaty_of_Apamea.png/330px-Treaty_of_Apamea.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-apamea_aakr6m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 254,
+    "image_height": 440,
     "wikipedia_views": 10218,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Apamea"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Apamea",
+    "color": "#261f1c",
+    "text_color": "light"
   },
   {
     "name": "silk-road-opens",
@@ -190,11 +216,13 @@
     "category": "diplomatic",
     "description": "Trade routes connecting China to the Mediterranean were established.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-road-opens_hsrxbk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 71015,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Maritime_Silk_Road"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maritime_Silk_Road",
+    "color": "#251f20",
+    "text_color": "light"
   },
   {
     "name": "roman-empire-founded",
@@ -203,11 +231,13 @@
     "category": "diplomatic",
     "description": "Augustus became the first Roman Emperor, ending the Republic.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Roman_Empire_Trajan_117AD.png/330px-Roman_Empire_Trajan_117AD.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-empire-founded_azrin3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 210,
+    "image_height": 440,
     "wikipedia_views": 3074689,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Empire",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "pax-romana",
@@ -216,11 +246,13 @@
     "category": "diplomatic",
     "description": "Augustus established a 200-year period of relative peace across the Roman Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/320px-Roman_SPQR_banner.svg.png",
-    "image_width": 320,
-    "image_height": 254,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pax-romana_ctto3y?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 349504,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pax_Romana"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pax_Romana",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "edict-caracalla",
@@ -229,11 +261,13 @@
     "category": "diplomatic",
     "description": "Roman citizenship was extended to all free inhabitants of the empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg/330px-Gie%C3%9Fen%2C_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edict-caracalla_bait7u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 548,
+    "image_height": 440,
     "wikipedia_views": 1067697,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Caracalla"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Caracalla",
+    "color": "#271f1c",
+    "text_color": "light"
   },
   {
     "name": "diocletian-tetrarchy",
@@ -242,11 +276,13 @@
     "category": "diplomatic",
     "description": "Emperor Diocletian created the Tetrarchy to govern the vast Roman Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Venice_%E2%80%93_The_Tetrarchs_03.jpg/330px-Venice_%E2%80%93_The_Tetrarchs_03.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diocletian-tetrarchy_l0bhim?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 161204,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_Roman_Empire",
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "edict-milan",
@@ -255,11 +291,13 @@
     "category": "diplomatic",
     "description": "Emperor Constantine legalized Christianity throughout the Roman Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Constantine_Chiaramonti_Inv1749.jpg/330px-Constantine_Chiaramonti_Inv1749.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edict-milan_oocftk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 502,
+    "image_height": 440,
     "wikipedia_views": 123768,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Edict_of_Milan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "gupta-empire",
@@ -268,11 +306,13 @@
     "category": "diplomatic",
     "description": "The Gupta Empire began India's golden age of science and culture.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/South_Asia_historical_AD375_EN.svg/330px-South_Asia_historical_AD375_EN.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gupta-empire_lsh2gs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 320,
+    "image_height": 440,
     "wikipedia_views": 55006,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Gupta_emperors"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Gupta_emperors",
+    "color": "#2b1e17",
+    "text_color": "light"
   },
   {
     "name": "council-nicaea",
@@ -281,11 +321,13 @@
     "category": "diplomatic",
     "description": "The first ecumenical council established key Christian doctrines.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Nikea-arius.png/330px-Nikea-arius.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-nicaea_owgh4j?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 903141,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "theodosian-code",
@@ -294,11 +336,13 @@
     "category": "diplomatic",
     "description": "The Eastern Roman Empire compiled all imperial laws since Constantine.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg/330px-St._Gallen%2C_Ms_Cod._Sang._731_fol_1r_Title_page_for_Codex_Theodosianus_in_the_Breviary_of_Alaric.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/theodosian-code_hd4xyv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 547,
+    "image_height": 440,
     "wikipedia_views": 30771,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Codex_Theodosianus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Codex_Theodosianus",
+    "color": "#261f1f",
+    "text_color": "light"
   },
   {
     "name": "justinian-code",
@@ -307,11 +351,13 @@
     "category": "diplomatic",
     "description": "Byzantine Emperor Justinian codified Roman law, influencing legal systems for centuries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Corpus_Iuris_Civilis_-_Dion%C3%ADsio_Godofredo_-_1583.jpg/330px-Corpus_Iuris_Civilis_-_Dion%C3%ADsio_Godofredo_-_1583.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/justinian-code_pz8oc8?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 38650,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Justinian"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Justinian",
+    "color": "#23211f",
+    "text_color": "light"
   },
   {
     "name": "tang-dynasty",
@@ -320,11 +366,13 @@
     "category": "diplomatic",
     "description": "The Tang Dynasty began China's golden age of culture and governance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tang_outline_map%2C_661.svg/330px-Tang_outline_map%2C_661.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tang-dynasty_jkeakc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 194,
+    "image_height": 440,
     "wikipedia_views": 53567,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Later_Tang"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Later_Tang",
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "constitution-medina",
@@ -333,11 +381,13 @@
     "category": "diplomatic",
     "description": "The Prophet Muhammad established a political agreement unifying Medina's diverse groups.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg/330px-Al-Masjid_An-Nabawi_%28Bird%27s_Eye_View%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/constitution-medina_sfflbj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 76782,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Constitution_of_Medina"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Constitution_of_Medina",
+    "color": "#23211d",
+    "text_color": "light"
   },
   {
     "name": "umayyad-caliphate",
@@ -346,11 +396,13 @@
     "category": "diplomatic",
     "description": "The first hereditary Islamic dynasty established its capital in Damascus.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg/330px-Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/umayyad-caliphate_npea0s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 1163811,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate",
+    "color": "#242020",
+    "text_color": "light"
   },
   {
     "name": "abbasid-caliphate",
@@ -359,11 +411,13 @@
     "category": "diplomatic",
     "description": "The Abbasids overthrew the Umayyads and moved the capital to Baghdad.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Abbasid_banner.svg/330px-Abbasid_banner.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/abbasid-caliphate_a1brl3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 198,
+    "image_height": 440,
     "wikipedia_views": 1038697,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abbasid_Caliphate",
+    "color": "#212026",
+    "text_color": "light"
   },
   {
     "name": "papal-states-established",
@@ -372,11 +426,13 @@
     "category": "diplomatic",
     "description": "The Pope received territories in central Italy from the Frankish king.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Flag_of_the_Papal_States_%28pre_1808%29.svg/330px-Flag_of_the_Papal_States_%28pre_1808%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/papal-states-established_sqv46k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 974096,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_States"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Papal_States",
+    "color": "#232021",
+    "text_color": "light"
   },
   {
     "name": "treaty-verdun",
@@ -386,8 +442,8 @@
     "description": "Charlemagne's empire was divided into three kingdoms, shaping medieval Europe.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-verdun_msdjlu?_a=BAMAMiiu0",
-    "image_width": 660,
-    "image_height": 660,
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 98600,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun",
     "color": "#26201c",
@@ -400,11 +456,13 @@
     "category": "diplomatic",
     "description": "Alfred the Great made peace with Viking leader Guthrum, dividing England.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Wedmore_centre.jpg/330px-Wedmore_centre.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-wedmore_wwyan2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 265,
+    "image_height": 440,
     "wikipedia_views": 16212,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Wedmore"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Wedmore",
+    "color": "#202122",
+    "text_color": "light"
   },
   {
     "name": "song-dynasty",
@@ -413,9 +471,13 @@
     "category": "diplomatic",
     "description": "The Song Dynasty ushered in an era of technological innovation and economic growth.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/China_-_Song_Dynasty-en.svg/330px-China_-_Song_Dynasty-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-dynasty_lufcyc?_a=BAMAMiiu0",
     "wikipedia_views": 646333,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Song_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Song_dynasty",
+    "color": "#251f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "holy-roman-empire",
@@ -424,9 +486,9 @@
     "category": "diplomatic",
     "description": "Otto I was crowned, establishing the Holy Roman Empire in central Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Banner_of_the_Holy_Roman_Emperor_with_haloes_%281430-1806%29.svg/330px-Banner_of_the_Holy_Roman_Emperor_with_haloes_%281430-1806%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/holy-roman-empire_c79c6b?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 55212,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Flags_of_the_Holy_Roman_Empire",
     "color": "#d7a600",
@@ -439,11 +501,13 @@
     "category": "diplomatic",
     "description": "Hugh Capet founded the dynasty that would rule France for 800 years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/SceauHuguesCapet_%28cropped%29.PNG",
-    "image_width": 227,
-    "image_height": 244,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/capetian-dynasty_idmdgf?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 56515,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Hundred_Years'_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Hundred_Years'_War",
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "concordat-worms",
@@ -452,11 +516,13 @@
     "category": "diplomatic",
     "description": "The Pope and Holy Roman Emperor resolved the Investiture Controversy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Urkunde_Wormser_Konkordat-bg.png/330px-Urkunde_Wormser_Konkordat-bg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/concordat-worms_dyxoxc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 353,
+    "image_height": 440,
     "wikipedia_views": 53610,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Concordat_of_Worms"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Concordat_of_Worms",
+    "color": "#23211b",
+    "text_color": "light"
   },
   {
     "name": "fourth-crusade-constantinople",
@@ -465,11 +531,13 @@
     "category": "diplomatic",
     "description": "The Fourth Crusade diverted to sack the Byzantine capital.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/ConquestOfConstantinopleByTheCrusadersIn1204.jpg/330px-ConquestOfConstantinopleByTheCrusadersIn1204.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fourth-crusade-constantinople_yvifdi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 205,
+    "image_height": 440,
     "wikipedia_views": 229036,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "magna-carta",
@@ -478,11 +546,13 @@
     "category": "diplomatic",
     "description": "English barons forced King John to sign a charter limiting royal power.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg/330px-Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magna-carta_n1rc9i?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 1159114,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Magna_Carta"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Magna_Carta",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "hanseatic-league",
@@ -491,11 +561,13 @@
     "category": "diplomatic",
     "description": "Northern German cities formed a commercial alliance dominating Baltic trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg/330px-Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hanseatic-league_qk3ev2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 484469,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hanseatic_League"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hanseatic_League",
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "english-parliament",
@@ -504,11 +576,13 @@
     "category": "diplomatic",
     "description": "Simon de Montfort summoned the first elected parliament in England.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coat_of_Arms_of_England_%28-1340%29.svg/330px-Coat_of_Arms_of_England_%28-1340%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/english-parliament_gfdqj0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 424,
+    "image_height": 440,
     "wikipedia_views": 174880,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Parliament_of_England"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Parliament_of_England",
+    "color": "#1f2124",
+    "text_color": "light"
   },
   {
     "name": "mongol-empire",
@@ -517,11 +591,13 @@
     "category": "diplomatic",
     "description": "The Mongol Empire became the largest contiguous land empire in history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif/330px-Expansion_of_the_Mongol_Empire_1206%E2%80%931294.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-empire_wdyy6v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 261,
+    "image_height": 440,
     "wikipedia_views": 792730,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Yuan_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+    "color": "#1f2222",
+    "text_color": "light"
   },
   {
     "name": "swiss-confederation",
@@ -530,11 +606,13 @@
     "category": "diplomatic",
     "description": "Three Swiss cantons formed an alliance that became modern Switzerland.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Flag_of_Switzerland_%28Pantone%29.svg/330px-Flag_of_Switzerland_%28Pantone%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swiss-confederation_yg7pl0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 3111874,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Switzerland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Switzerland",
+    "color": "#202123",
+    "text_color": "light"
   },
   {
     "name": "ottoman-empire-founded",
@@ -543,11 +621,13 @@
     "category": "diplomatic",
     "description": "Osman I established the dynasty that would rule for over 600 years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg/330px-Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-empire-founded_iwabuk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 63541,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Military_of_the_Ottoman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Military_of_the_Ottoman_Empire",
+    "color": "#202221",
+    "text_color": "light"
   },
   {
     "name": "golden-bull",
@@ -556,11 +636,13 @@
     "category": "diplomatic",
     "description": "The decree established how Holy Roman Emperors would be elected.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Goldene_Bulle_Nahaufnahme.jpg/330px-Goldene_Bulle_Nahaufnahme.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/golden-bull_okudub?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 325,
+    "image_height": 440,
     "wikipedia_views": 57525,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Golden_Bull_of_1356",
+    "color": "#262016",
+    "text_color": "light"
   },
   {
     "name": "ming-dynasty",
@@ -569,11 +651,13 @@
     "category": "diplomatic",
     "description": "The Ming Dynasty restored Chinese rule after Mongol domination.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg/330px-Map_of_Ming_Chinese_empire_1415_%28cropped_2%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ming-dynasty_qea4uy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 395,
+    "image_height": 440,
     "wikipedia_views": 146603,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transition_from_Ming_to_Qing",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "union-krewo",
@@ -582,11 +666,13 @@
     "category": "diplomatic",
     "description": "Poland and Lithuania formed a personal union through royal marriage.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Union_of_Krewo.jpg/330px-Union_of_Krewo.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/union-krewo_cuwm7t?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 201,
+    "image_height": 440,
     "wikipedia_views": 19355,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Union_of_Krewo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Union_of_Krewo",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "union-kalmar",
@@ -595,11 +681,13 @@
     "category": "diplomatic",
     "description": "Denmark, Norway, and Sweden united under a single monarch.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Kalmar_Union_ca._1400.svg/330px-Kalmar_Union_ca._1400.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/union-kalmar_mhfvxl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 307,
+    "image_height": 440,
     "wikipedia_views": 320520,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kalmar_Union"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kalmar_Union",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "aztec-empire",
@@ -608,11 +696,13 @@
     "category": "diplomatic",
     "description": "The Triple Alliance formed the Aztec Empire in central Mexico.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Aztec_Empire_%28orthographic_projection%29.svg/330px-Aztec_Empire_%28orthographic_projection%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aztec-empire_hli8ca?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 457959,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aztec_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aztec_Empire",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "treaty-alcacovas",
@@ -621,11 +711,13 @@
     "category": "diplomatic",
     "description": "Spain and Portugal divided Atlantic territories before Columbus's voyage.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Alca%C3%A7ovas1.jpg/330px-Alca%C3%A7ovas1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-alcacovas_ihlm1e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 456,
+    "image_height": 440,
     "wikipedia_views": 19744,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Alcáçovas"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Alcáçovas",
+    "color": "#272019",
+    "text_color": "light"
   },
   {
     "name": "inca-empire-peak",
@@ -634,11 +726,13 @@
     "category": "diplomatic",
     "description": "The Inca Empire reached its greatest extent in South America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suntur_Paucar.svg/330px-Suntur_Paucar.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inca-empire-peak_m4u0js?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 790022,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Inca_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Inca_Empire",
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "treaty-tordesillas",
@@ -647,11 +741,13 @@
     "category": "diplomatic",
     "description": "Spain and Portugal divided the newly discovered lands outside Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Treaty_of_Tordesillas.jpg/330px-Treaty_of_Tordesillas.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-tordesillas_vmgng1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 453,
+    "image_height": 440,
     "wikipedia_views": 258358,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
+    "color": "#25201b",
+    "text_color": "light"
   },
   {
     "name": "league-cambrai",
@@ -660,11 +756,13 @@
     "category": "diplomatic",
     "description": "Major European powers allied against Venice's territorial expansion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Italia._Cambiamenti_territoriali_%281495-1535%29.png/330px-Italia._Cambiamenti_territoriali_%281495-1535%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/league-cambrai_cxyhct?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 304,
+    "image_height": 440,
     "wikipedia_views": 112935,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_League_of_Cambrai"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_League_of_Cambrai",
+    "color": "#262019",
+    "text_color": "light"
   },
   {
     "name": "treaty-madrid",
@@ -673,11 +771,13 @@
     "category": "diplomatic",
     "description": "Captured French King Francis I ceded territories to Emperor Charles V.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg/330px-Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-madrid_kdnpwr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 174,
+    "image_height": 440,
     "wikipedia_views": 1231,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Madrid"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Madrid",
+    "color": "#272019",
+    "text_color": "light"
   },
   {
     "name": "mughal-empire",
@@ -686,11 +786,13 @@
     "category": "diplomatic",
     "description": "Babur founded the dynasty that would rule most of India for 300 years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/51/Joppen1907India1700a.jpg/330px-Joppen1907India1700a.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mughal-empire_czzvcz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 471,
+    "image_height": 440,
     "wikipedia_views": 2194981,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mughal_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mughal_Empire",
+    "color": "#281f19",
+    "text_color": "light"
   },
   {
     "name": "church-of-england",
@@ -699,11 +801,13 @@
     "category": "diplomatic",
     "description": "Henry VIII broke from Rome and established the Anglican Church.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Logo_of_the_Church_of_England.svg/330px-Logo_of_the_Church_of_England.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/church-of-england_zvkoqw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 807918,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_England"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Church_of_England",
+    "color": "#23211e",
+    "text_color": "light"
   },
   {
     "name": "peace-augsburg",
@@ -2852,11 +2956,13 @@
     "category": "diplomatic",
     "description": "Qutb ud-Din Aibak founded the first of five dynasties that ruled northern India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Map_of_the_Mamluk_Dynasty.png/330px-Map_of_the_Mamluk_Dynasty.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/delhi-sultanate_gzfwpq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 305,
+    "image_height": 440,
     "wikipedia_views": 659857,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Sultanate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Delhi_Sultanate",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "british-raj-established",
@@ -2915,11 +3021,13 @@
     "category": "diplomatic",
     "description": "Narmer unified Egypt under the First Dynasty, creating one of the world's first nation-states.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/King_Narmer.jpg/330px-King_Narmer.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/unification-egypt_o2jup1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 340,
+    "image_height": 440,
     "wikipedia_views": 94484,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Upper_and_Lower_Egypt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Upper_and_Lower_Egypt",
+    "color": "#281f18",
+    "text_color": "light"
   },
   {
     "name": "zhou-dynasty-begins",
@@ -2928,11 +3036,13 @@
     "category": "diplomatic",
     "description": "The Zhou overthrew the Shang, beginning China's longest-lasting dynasty.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Zhou_dynasty_1000_BC.png",
-    "image_width": 318,
-    "image_height": 344,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zhou-dynasty-begins_jcee7x?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 446021,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhou_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhou_dynasty",
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "darius-i-persian-king",
@@ -2941,11 +3051,13 @@
     "category": "diplomatic",
     "description": "Darius I seized the throne and expanded the Persian Empire to its greatest extent.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Darius_I.jpg/330px-Darius_I.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/darius-i-persian-king_xypdzb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 412,
+    "image_height": 440,
     "wikipedia_views": 552762,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_the_Great"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_the_Great",
+    "color": "#291e1a",
+    "text_color": "light"
   },
   {
     "name": "first-secession-plebs",
@@ -2954,9 +3066,13 @@
     "category": "diplomatic",
     "description": "Roman plebeians withdrew from the city, winning political representation through tribunes.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Secessio_plebis.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-secession-plebs_bsqkuh?_a=BAMAMiiu0",
     "wikipedia_views": 14662,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_secessio_plebis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_secessio_plebis",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "athens-surrenders-sparta",
@@ -2965,11 +3081,13 @@
     "category": "diplomatic",
     "description": "Athens surrendered after the Peloponnesian War, ending its golden age of democracy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Pelop_war_en.png/330px-Pelop_war_en.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/athens-surrenders-sparta_dhaadp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 182,
+    "image_height": 440,
     "wikipedia_views": 203660,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Athenian_democracy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Athenian_democracy",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "battle-chaeronea",
@@ -2978,9 +3096,13 @@
     "category": "diplomatic",
     "description": "Philip II of Macedon defeated Athens and Thebes, gaining control over Greece.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/DE_Cheronias.svg/330px-DE_Cheronias.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-chaeronea_gwivvi?_a=BAMAMiiu0",
     "wikipedia_views": 79594,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Chaeronea_(338_BC)",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "death-alexander-great",
@@ -2989,11 +3111,13 @@
     "category": "diplomatic",
     "description": "Alexander died in Babylon at 32, leaving his vast empire without a clear successor.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Dying_Alexander.jpg/330px-Dying_Alexander.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-alexander-great_w9hunm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 230072,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Alexander_the_Great"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Alexander_the_Great",
+    "color": "#291e1b",
+    "text_color": "light"
   },
   {
     "name": "ptolemaic-kingdom-established",
@@ -3002,11 +3126,13 @@
     "category": "diplomatic",
     "description": "Ptolemy I founded a Greek dynasty in Egypt that would rule until Cleopatra's death.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ptolemaic_Kingdom_III-II_century_BC_-_en.svg/330px-Ptolemaic_Kingdom_III-II_century_BC_-_en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ptolemaic-kingdom-established_hej5qv?_a=BAMAMiiu0",
     "wikipedia_views": 546323,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
     "image_width": 330,
-    "image_height": 253
+    "image_height": 440,
+    "color": "#222121",
+    "text_color": "light"
   },
   {
     "name": "seleucid-empire-founded",
@@ -3015,11 +3141,13 @@
     "category": "diplomatic",
     "description": "Seleucus I established an empire spanning from Anatolia to the borders of India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/201209071746a_Berlin_Pergamonmuseum%2C_Tetradrachme_Seleukos%27_I%2C_Silber%2C_Pergamon%2C_281-280_v.u.Z.jpg/330px-201209071746a_Berlin_Pergamonmuseum%2C_Tetradrachme_Seleukos%27_I%2C_Silber%2C_Pergamon%2C_281-280_v.u.Z.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seleucid-empire-founded_ummcc5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 162,
+    "image_height": 440,
     "wikipedia_views": 676713,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Seleucid_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seleucid_Empire",
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "battle-ipsus",
@@ -3028,11 +3156,13 @@
     "category": "diplomatic",
     "description": "The Diadochi fought a decisive battle that divided Alexander's empire among his successors.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/The_Battle_of_Ipsus.jpg/330px-The_Battle_of_Ipsus.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-ipsus_fohbdc?_a=BAMAMiiu0",
     "wikipedia_views": 46538,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Ipsus",
     "image_width": 330,
-    "image_height": 337
+    "image_height": 440,
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "lex-hortensia",
@@ -3041,11 +3171,13 @@
     "category": "diplomatic",
     "description": "This law gave the Plebeian Council full legislative power, equalizing Roman social classes.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/330px-Roman_SPQR_banner.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lex-hortensia_etmpj5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 6526,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Lex_Hortensia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lex_Hortensia",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "tiberius-gracchus-reforms",
@@ -3054,9 +3186,13 @@
     "category": "diplomatic",
     "description": "Tiberius Gracchus proposed radical land reforms, triggering political violence in Rome.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Eugene_Guillaume_-_the_Gracchi_%28cropped%29.jpg/330px-Eugene_Guillaume_-_the_Gracchi_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiberius-gracchus-reforms_y4pysq?_a=BAMAMiiu0",
     "wikipedia_views": 102542,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tiberius_Gracchus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tiberius_Gracchus",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "marian-reforms",
@@ -3065,11 +3201,13 @@
     "category": "diplomatic",
     "description": "Gaius Marius professionalized the Roman army, allowing landless citizens to serve.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/RRC_326.1_Gaius_Fundanius_depicting_Gaius_Marius_triumphator.png/330px-RRC_326.1_Gaius_Fundanius_depicting_Gaius_Marius_triumphator.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marian-reforms_pwhk5r?_a=BAMAMiiu0",
     "wikipedia_views": 69286,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Marian_reforms",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "social-war-rome",
@@ -3078,9 +3216,13 @@
     "category": "diplomatic",
     "description": "Italian allies rebelled against Rome, eventually winning Roman citizenship.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Title_page_of_The_Social_War.jpg/330px-Title_page_of_The_Social_War.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/social-war-rome_wx8qar?_a=BAMAMiiu0",
     "wikipedia_views": 1512,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Social_War"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Social_War",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sullas-civil-war",
@@ -3089,9 +3231,9 @@
     "category": "diplomatic",
     "description": "Sulla marched on Rome and became dictator, setting a precedent for later strongmen.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Q._Pompeius_Rufus%2C_denarius%2C_54_BC%2C_RRC_434-1_%28Sulla_only%29.jpg/330px-Q._Pompeius_Rufus%2C_denarius%2C_54_BC%2C_RRC_434-1_%28Sulla_only%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sullas-civil-war_neelbn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 293,
+    "image_height": 440,
     "wikipedia_views": 84651,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sulla's_civil_war",
     "color": "#a39e9a",
@@ -3104,11 +3246,13 @@
     "category": "diplomatic",
     "description": "Caesar, Pompey, and Crassus formed an informal alliance to dominate Roman politics.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/C%C3%A9sar_%2813667960455%29.jpg/330px-C%C3%A9sar_%2813667960455%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-triumvirate_msxet9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 502,
+    "image_height": 440,
     "wikipedia_views": 171128,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Triumvirate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Triumvirate",
+    "color": "#261f1c",
+    "text_color": "light"
   },
   {
     "name": "second-triumvirate",
@@ -3117,11 +3261,13 @@
     "category": "diplomatic",
     "description": "Octavian, Antony, and Lepidus formed a legal dictatorship to avenge Caesar's death.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Antony_with_Octavian_aureus.jpg/330px-Antony_with_Octavian_aureus.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/second-triumvirate_szxp6z?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 166,
+    "image_height": 440,
     "wikipedia_views": 131173,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Triumvirate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Triumvirate",
+    "color": "#26201c",
+    "text_color": "light"
   },
   {
     "name": "death-of-augustus",
@@ -3130,11 +3276,13 @@
     "category": "diplomatic",
     "description": "Rome's first emperor died after 40 years of rule, establishing the model for succession.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Augustus_of_Prima_Porta_%28inv._2290%29.jpg/330px-Augustus_of_Prima_Porta_%28inv._2290%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-of-augustus_menidd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 528,
+    "image_height": 440,
     "wikipedia_views": 2137658,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Augustus",
+    "color": "#24201c",
+    "text_color": "light"
   },
   {
     "name": "nero-becomes-emperor",
@@ -3143,11 +3291,13 @@
     "category": "diplomatic",
     "description": "The young Nero became emperor, beginning a reign that would end in tyranny and suicide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Nero_Glyptothek_Munich_321.jpg/330px-Nero_Glyptothek_Munich_321.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nero-becomes-emperor_deqbhd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 449,
+    "image_height": 440,
     "wikipedia_views": 1719439,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nero"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nero",
+    "color": "#261f1d",
+    "text_color": "light"
   },
   {
     "name": "trajan-becomes-emperor",
@@ -3156,11 +3306,13 @@
     "category": "diplomatic",
     "description": "Trajan became emperor, expanding Rome to its greatest territorial extent.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Traianus_Glyptothek_Munich_336.jpg/330px-Traianus_Glyptothek_Munich_336.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trajan-becomes-emperor_n7ne3s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 453,
+    "image_height": 440,
     "wikipedia_views": 638617,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "hadrian-becomes-emperor",
@@ -3169,11 +3321,13 @@
     "category": "diplomatic",
     "description": "Hadrian succeeded Trajan, consolidating the empire and building his famous wall in Britain.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/M%C3%BCnchen_SMAEK_2019-03-23n.jpg/330px-M%C3%BCnchen_SMAEK_2019-03-23n.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hadrian-becomes-emperor_rncudw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 819134,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hadrian"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hadrian",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "marcus-aurelius-emperor",
@@ -3182,11 +3336,13 @@
     "category": "diplomatic",
     "description": "The philosopher-emperor Marcus Aurelius began his reign, the last of the Five Good Emperors.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/MSR-ra-61-b-1-DM.jpg/330px-MSR-ra-61-b-1-DM.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marcus-aurelius-emperor_iomo3o?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 1222525,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Commodus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Commodus",
+    "color": "#281f1d",
+    "text_color": "light"
   },
   {
     "name": "jin-dynasty-reunifies-china",
@@ -3195,11 +3351,13 @@
     "category": "diplomatic",
     "description": "The Jin Dynasty ended the Three Kingdoms period, briefly reunifying China.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Western_Jeun_Dynasty_280_CE.png/330px-Western_Jeun_Dynasty_280_CE.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jin-dynasty-reunifies-china_tfjs4u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 319,
+    "image_height": 440,
     "wikipedia_views": 64222,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin",
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "fall-western-jin",
@@ -3208,11 +3366,13 @@
     "category": "diplomatic",
     "description": "Northern China fell to nomadic invaders, beginning centuries of division.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Western_Jeun_Dynasty_280_CE.png/330px-Western_Jeun_Dynasty_280_CE.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-western-jin_pnz6rg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 319,
+    "image_height": 440,
     "wikipedia_views": 274776,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266–420)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jin_dynasty_(266–420)",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "council-of-constantinople",
@@ -3221,9 +3381,13 @@
     "category": "diplomatic",
     "description": "Church council affirmed the Nicene Creed and defined the doctrine of the Trinity.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/View_of_Haghia_Sophia%2C_plate_from_Wilhelm_Salzenbergs_Alt-Christliche_Baudenkmale_von_Constantinopel_vom_V._bis_XII._Jahrhundert.png/330px-View_of_Haghia_Sophia%2C_plate_from_Wilhelm_Salzenbergs_Alt-Christliche_Baudenkmale_von_Constantinopel_vom_V._bis_XII._Jahrhundert.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-of-constantinople_xufrlx?_a=BAMAMiiu0",
     "wikipedia_views": 97462,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_Council_of_Constantinople",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "division-roman-empire",
@@ -3232,11 +3396,13 @@
     "category": "diplomatic",
     "description": "The Roman Empire permanently split into Western and Eastern halves after Theodosius's death.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Roman_Empire_Trajan_117AD.png/330px-Roman_Empire_Trajan_117AD.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/division-roman-empire_cp8gud?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 210,
+    "image_height": 440,
     "wikipedia_views": 3074689,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_Empire",
+    "color": "#281f19",
+    "text_color": "light"
   },
   {
     "name": "ravenna-becomes-capital",
@@ -3245,11 +3411,13 @@
     "category": "diplomatic",
     "description": "The Western Roman capital moved from Milan to Ravenna for better defense.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Ravenna_Cattedrale_Metropolitana_della_Risurrezione_di_Nostro_Signore_Ges%C3%B9_Cristo_Esterno_Lato_Nord_1.jpg/330px-Ravenna_Cattedrale_Metropolitana_della_Risurrezione_di_Nostro_Signore_Ges%C3%B9_Cristo_Esterno_Lato_Nord_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ravenna-becomes-capital_xcfynp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 239,
+    "image_height": 440,
     "wikipedia_views": 327265,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ravenna",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "council-of-ephesus",
@@ -3258,11 +3426,13 @@
     "category": "diplomatic",
     "description": "Church council declared Mary the 'Mother of God' and condemned Nestorianism.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Concile-Ephese-Fourviere-detail.jpg/330px-Concile-Ephese-Fourviere-detail.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-of-ephesus_szycva?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214,
+    "image_height": 440,
     "wikipedia_views": 103142,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Ephesus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Ephesus",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "death-of-muhammad",
@@ -3271,11 +3441,13 @@
     "category": "diplomatic",
     "description": "The Prophet Muhammad died in Medina, sparking debates over succession that still echo today.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-of-muhammad_iyplic?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 3452333,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad",
+    "color": "#25201b",
+    "text_color": "light"
   },
   {
     "name": "islamic-conquest-spain",
@@ -3284,11 +3456,13 @@
     "category": "diplomatic",
     "description": "Umayyad forces crossed into Iberia, beginning nearly 800 years of Muslim presence in Spain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Conquistaislamicapeninsula2.svg/330px-Conquistaislamicapeninsula2.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/islamic-conquest-spain_j7xpmk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 207209,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula",
+    "color": "#1e2224",
+    "text_color": "light"
   },
   {
     "name": "charlemagne-king-franks",
@@ -3297,11 +3471,13 @@
     "category": "diplomatic",
     "description": "Charlemagne became sole king of the Franks, beginning his path to reuniting Western Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/330px-Charlemagne_denier_Mayence_812_814.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charlemagne-king-franks_ph32ha?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 2153384,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
+    "color": "#23211d",
+    "text_color": "light"
   },
   {
     "name": "death-of-charlemagne",
@@ -3310,11 +3486,13 @@
     "category": "diplomatic",
     "description": "Charlemagne died, and his empire was eventually divided among his grandsons.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Charlemagne_denier_Mayence_812_814.jpg/330px-Charlemagne_denier_Mayence_812_814.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-of-charlemagne_t6pkce?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 2153384,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "alfred-great-king",
@@ -3323,11 +3501,13 @@
     "category": "diplomatic",
     "description": "Alfred became King of Wessex and would defend England against Viking invasion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png/330px-Alfred_the_Great%2C_silver_penny%3B_struck_875%E2%80%93880_%28obverse%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alfred-great-king_b5aevx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 322,
+    "image_height": 440,
     "wikipedia_views": 1535839,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+    "color": "#24201d",
+    "text_color": "light"
   },
   {
     "name": "fall-tang-dynasty",
@@ -3336,11 +3516,13 @@
     "category": "diplomatic",
     "description": "China's Tang Dynasty collapsed, beginning the Five Dynasties and Ten Kingdoms period.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tang_outline_map%2C_661.svg/330px-Tang_outline_map%2C_661.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-tang-dynasty_jiauh7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 194,
+    "image_height": 440,
     "wikipedia_views": 53567,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Later_Tang"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Later_Tang",
+    "color": "#25201f",
+    "text_color": "light"
   },
   {
     "name": "fatimid-caliphate-established",
@@ -3349,11 +3531,13 @@
     "category": "diplomatic",
     "description": "The Shia Fatimid dynasty established a caliphate in North Africa.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fatimid_Caliphate.PNG/330px-Fatimid_Caliphate.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fatimid-caliphate-established_cazi9w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 437923,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_Caliphate",
+    "color": "#202220",
+    "text_color": "light"
   },
   {
     "name": "treaty-saint-clair-sur-epte",
@@ -3362,9 +3546,13 @@
     "category": "diplomatic",
     "description": "Vikings received Normandy from the French king, founding the Norman dynasty.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/France_%C3%A0_la_fin_du_Xe_si%C3%A8cle.jpeg/330px-France_%C3%A0_la_fin_du_Xe_si%C3%A8cle.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-saint-clair-sur-epte_zky5og?_a=BAMAMiiu0",
     "wikipedia_views": 21197,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Saint-Clair-sur-Epte"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Saint-Clair-sur-Epte",
+    "color": "#23211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "canute-king-england",
@@ -3373,11 +3561,13 @@
     "category": "diplomatic",
     "description": "The Danish king Canute conquered England, ruling a North Sea empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Canute_and_%C3%86lfgifu_cropped_%28Canute%29.jpg",
-    "image_width": 296,
-    "image_height": 414,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canute-king-england_obmnv0?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 892905,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cnut"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cnut",
+    "color": "#1f2223",
+    "text_color": "light"
   },
   {
     "name": "seljuk-empire-founded",
@@ -3386,11 +3576,13 @@
     "category": "diplomatic",
     "description": "The Seljuk Turks established an empire that would dominate the Middle East.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Seljuk_Sultan_Tugrul_Bey_sitting_on_his_throne._Topkap%C4%B1_Saray%C4%B1_M%C3%BCzesi_1653-3_%28304_B%29.jpg/330px-Seljuk_Sultan_Tugrul_Bey_sitting_on_his_throne._Topkap%C4%B1_Saray%C4%B1_M%C3%BCzesi_1653-3_%28304_B%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seljuk-empire-founded_wmcu3p?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 465,
+    "image_height": 440,
     "wikipedia_views": 641256,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "death-genghis-khan",
@@ -3399,11 +3591,13 @@
     "category": "diplomatic",
     "description": "Genghis Khan died, leaving an empire that would continue expanding under his successors.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/330px-YuanEmperorAlbumGenghisPortrait.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-genghis-khan_tafcam?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 419,
+    "image_height": 440,
     "wikipedia_views": 3643535,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+    "color": "#222123",
+    "text_color": "light"
   },
   {
     "name": "model-parliament",
@@ -3412,11 +3606,13 @@
     "category": "diplomatic",
     "description": "Edward I summoned a parliament including commoners, establishing a template for representative government.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Coat_of_Arms_of_England_%28-1340%29.svg/330px-Coat_of_Arms_of_England_%28-1340%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/model-parliament_j22aot?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 424,
+    "image_height": 440,
     "wikipedia_views": 78366,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Model_Parliament"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Model_Parliament",
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "philip-vi-france",
@@ -3425,11 +3621,13 @@
     "category": "diplomatic",
     "description": "The first Valois king's accession sparked the succession crisis that led to the Hundred Years' War.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/philip-vi-france_t1jcbn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 142824,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_VI_of_France"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Louis_VI_of_France",
+    "color": "#1e2221",
+    "text_color": "light"
   },
   {
     "name": "treaty-of-bretigny",
@@ -3438,11 +3636,13 @@
     "category": "diplomatic",
     "description": "England and France agreed to a temporary peace, with England gaining territory in exchange for renouncing claims to the French throne.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Map-_France_at_the_Treaty_of_Bretigny.jpg/330px-Map-_France_at_the_Treaty_of_Bretigny.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-bretigny_hnrp9r?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 413,
+    "image_height": 440,
     "wikipedia_views": 31803,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Brétigny"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Brétigny",
+    "color": "#24211b",
+    "text_color": "light"
   },
   {
     "name": "marriage-ferdinand-isabella",
@@ -3451,11 +3651,13 @@
     "category": "diplomatic",
     "description": "The union of Aragon and Castile's heirs laid the foundation for a unified Spain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ferdinand_of_Aragon%2C_Isabella_of_Castile_%28cropped%29.jpg/330px-Ferdinand_of_Aragon%2C_Isabella_of_Castile_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marriage-ferdinand-isabella_o59cnz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 182,
+    "image_height": 440,
     "wikipedia_views": 150926,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Catholic_Monarchs_of_Spain"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Catholic_Monarchs_of_Spain",
+    "color": "#25201b",
+    "text_color": "light"
   },
   {
     "name": "henry-viii-becomes-king",
@@ -3477,11 +3679,13 @@
     "category": "diplomatic",
     "description": "The Habsburg prince inherited Spain, beginning an empire on which the sun never set.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/330px-Bandera_de_Espa%C3%B1a.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-v-king-spain_pu3snm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 524772,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_V_of_Spain"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Philip_V_of_Spain",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "charles-v-holy-roman-emperor",
@@ -3490,11 +3694,13 @@
     "category": "diplomatic",
     "description": "Charles V's election united Spain, the Netherlands, Austria, and the Holy Roman Empire under one ruler.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Charlie_at_Maanagaram_Press_Meet.jpg/330px-Charlie_at_Maanagaram_Press_Meet.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-v-holy-roman-emperor_vb3lao?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 144463,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_VII,_Holy_Roman_Emperor"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_VII,_Holy_Roman_Emperor",
+    "color": "#281f17",
+    "text_color": "light"
   },
   {
     "name": "field-of-cloth-of-gold",
@@ -3503,9 +3709,13 @@
     "category": "diplomatic",
     "description": "Henry VIII and Francis I met in an extravagant diplomatic summit that failed to secure lasting alliance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/The_Field_of_the_Cloth_of_Gold.jpg/330px-The_Field_of_the_Cloth_of_Gold.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/field-of-cloth-of-gold_lbffz6?_a=BAMAMiiu0",
     "wikipedia_views": 83206,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Field_of_the_Cloth_of_Gold"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Field_of_the_Cloth_of_Gold",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "neanderthals-thrive-europe",
@@ -3514,9 +3724,9 @@
     "category": "diplomatic",
     "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/330px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthals-thrive-europe_bdzavi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 133398,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
     "color": "#acaeac",
@@ -3529,11 +3739,13 @@
     "category": "diplomatic",
     "description": "Ancient Mesopotamians developed canal systems to control water flow, enabling large-scale agriculture and the rise of civilization.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Fields_SW_from_Sevilla.jpg/330px-Fields_SW_from_Sevilla.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-irrigation-systems_j320rt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 136357,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Irrigation"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Irrigation",
+    "color": "#24201a",
+    "text_color": "light"
   },
   {
     "name": "minoan-civilization-peak",
@@ -3542,11 +3754,13 @@
     "category": "diplomatic",
     "description": "The Minoan civilization on Crete reached its height, building elaborate palaces like Knossos and dominating Aegean trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Map_Minoan_Crete-en.svg/330px-Map_Minoan_Crete-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minoan-civilization-peak_nhjzil?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 199,
+    "image_height": 440,
     "wikipedia_views": 533243,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_civilization"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "abrahams-journey-traditional",
@@ -3555,11 +3769,13 @@
     "category": "diplomatic",
     "description": "According to tradition, Abraham migrated from Ur to Canaan, establishing the covenant that founded the Abrahamic faiths.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Guercino_Abramo_ripudia_Agar_%28cropped_2%29.jpg/330px-Guercino_Abramo_ripudia_Agar_%28cropped_2%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/abrahams-journey-traditional_pqeyhv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 413,
+    "image_height": 440,
     "wikipedia_views": 1298908,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Abraham"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abraham",
+    "color": "#24201c",
+    "text_color": "light"
   },
   {
     "name": "david-establishes-jerusalem-capital",
@@ -3568,11 +3784,13 @@
     "category": "diplomatic",
     "description": "King David captured Jerusalem from the Jebusites and made it the political and religious capital of the united Israelite kingdom.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/King_David%2C_the_King_of_Israel.jpg/330px-King_David%2C_the_King_of_Israel.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/david-establishes-jerusalem-capital_qinlii?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 462,
+    "image_height": 440,
     "wikipedia_views": 87373,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/City_of_David_(archaeological_site)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/City_of_David_(archaeological_site)",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "assyrian-empire-expansion",
@@ -3581,11 +3799,13 @@
     "category": "diplomatic",
     "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ashur_symbol_Nimrud.png/330px-Ashur_symbol_Nimrud.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/assyrian-empire-expansion_luyygv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 205,
+    "image_height": 440,
     "wikipedia_views": 671585,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Assyria"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Assyria",
+    "color": "#2a1e17",
+    "text_color": "light"
   },
   {
     "name": "fall-of-israel-northern-kingdom",
@@ -3594,11 +3814,13 @@
     "category": "diplomatic",
     "description": "Assyria conquered the northern Kingdom of Israel, deporting its population and ending the Ten Tribes as a distinct entity.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/William_Hughes%2C_The_Kingdoms_of_Judah_and_Israel_%28FL36567450_3909153%29.jpg/330px-William_Hughes%2C_The_Kingdoms_of_Judah_and_Israel_%28FL36567450_3909153%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-israel-northern-kingdom_syimcj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 494,
+    "image_height": 440,
     "wikipedia_views": 175329,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kings_of_Israel_and_Judah"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kings_of_Israel_and_Judah",
+    "color": "#24201d",
+    "text_color": "light"
   },
   {
     "name": "fall-of-nineveh",
@@ -3607,11 +3829,13 @@
     "category": "diplomatic",
     "description": "A coalition of Babylonians and Medes destroyed Nineveh, ending the Assyrian Empire after centuries of dominance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Fall_of_nineveh.jpg/330px-Fall_of_nineveh.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-nineveh_kzmnyy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 10195,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Nineveh",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "caesar-invades-britain",
@@ -3620,11 +3844,13 @@
     "category": "diplomatic",
     "description": "Julius Caesar led two expeditions to Britain, the first Roman military operations on the island, though no permanent conquest resulted.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg/330px-Retrato_de_Julio_C%C3%A9sar_%2826724093101%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caesar-invades-britain_slhpfm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 448,
+    "image_height": 440,
     "wikipedia_views": 75820,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Caesar's_invasions_of_Britain"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Caesar's_invasions_of_Britain",
+    "color": "#242021",
+    "text_color": "light"
   },
   {
     "name": "five-good-emperors-era-begins",
@@ -3633,11 +3859,13 @@
     "category": "diplomatic",
     "description": "Nerva's accession began Rome's most stable period, with emperors chosen by merit rather than heredity for nearly a century.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Roman_Empire_125.png/330px-Roman_Empire_125.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/five-good-emperors-era-begins_q4qaxb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 274,
+    "image_height": 440,
     "wikipedia_views": 183810,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nerva–Antonine_dynasty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nerva–Antonine_dynasty",
+    "color": "#281f1b",
+    "text_color": "light"
   },
   {
     "name": "end-of-pax-romana",
@@ -3646,11 +3874,13 @@
     "category": "diplomatic",
     "description": "The death of Marcus Aurelius ended two centuries of relative peace and prosperity, beginning Rome's slow decline.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Roman_SPQR_banner.svg/330px-Roman_SPQR_banner.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/end-of-pax-romana_rpiwee?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 349504,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pax_Romana"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pax_Romana",
+    "color": "#281e20",
+    "text_color": "light"
   },
   {
     "name": "visigoths-settle-aquitaine",
@@ -3659,11 +3889,13 @@
     "category": "diplomatic",
     "description": "Rome granted the Visigoths land in southwestern Gaul as foederati, establishing the first Germanic kingdom within the empire.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Aquitaine.svg/330px-Flag_of_Aquitaine.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/visigoths-settle-aquitaine_crpnya?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 335947,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Visigothic_Kingdom"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Visigothic_Kingdom",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "theodoric-establishes-ostrogothic-kingdom",
@@ -3672,11 +3904,13 @@
     "category": "diplomatic",
     "description": "Theodoric the Great conquered Italy and established the Ostrogothic Kingdom, preserving Roman institutions under Gothic rule.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Teodorico_re_dei_Goti_%28493-526%29.png/330px-Teodorico_re_dei_Goti_%28493-526%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/theodoric-establishes-ostrogothic-kingdom_ne7qpy?_a=BAMAMiiu0",
     "wikipedia_views": 224770,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ostrogothic_Kingdom",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#232023",
+    "text_color": "light"
   },
   {
     "name": "baghdad-founded",
@@ -3685,11 +3919,13 @@
     "category": "diplomatic",
     "description": "Caliph al-Mansur founded Baghdad as the new Abbasid capital, which became the world's largest city and center of learning.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/5628442718_b10fc2c47f_o.jpg/330px-5628442718_b10fc2c47f_o.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/baghdad-founded_z0dwvl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 216,
+    "image_height": 440,
     "wikipedia_views": 705305,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Baghdad",
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "treaty-of-aachen",
@@ -3698,11 +3934,13 @@
     "category": "diplomatic",
     "description": "The Byzantine Empire recognized Charlemagne as Emperor of the West, acknowledging the permanent division of the Roman legacy.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg/330px-Blick_auf_das_Rathaus_und_den_Dom_Aachens_aufgenommen_von_St_Jakob.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-aachen_zoila5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 7314,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aachen_Treaty"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aachen_Treaty",
+    "color": "#25201a",
+    "text_color": "light"
   },
   {
     "name": "rurik-founds-novgorod",
@@ -3711,11 +3949,13 @@
     "category": "diplomatic",
     "description": "The Varangian prince Rurik established rule at Novgorod, founding the dynasty that would rule Russia for over 700 years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/1000_Rurik.JPG/330px-1000_Rurik.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rurik-founds-novgorod_e8emyw?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 214831,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Rurik"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rurik",
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "fatimids-conquer-egypt",
@@ -3724,11 +3964,13 @@
     "category": "diplomatic",
     "description": "The Fatimid Caliphate conquered Egypt and founded Cairo, establishing a rival Shia caliphate to challenge Abbasid authority.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Fatimid_Caliphate.PNG/330px-Fatimid_Caliphate.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fatimids-conquer-egypt_qy4lbk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 15061,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_conquest_of_Egypt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fatimid_conquest_of_Egypt",
+    "color": "#1f2125",
+    "text_color": "light"
   },
   {
     "name": "seljuk-turks-capture-baghdad",
@@ -3737,11 +3979,13 @@
     "category": "diplomatic",
     "description": "The Seljuk Turks entered Baghdad and became the real power behind the Abbasid caliphs, reshaping the Islamic world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ince_minare_sculpture_1.jpg/330px-Ince_minare_sculpture_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seljuk-turks-capture-baghdad_ns6b2e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 267,
+    "image_height": 440,
     "wikipedia_views": 641256,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seljuk_Empire",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "investiture-controversy-begins",
@@ -3750,11 +3994,13 @@
     "category": "diplomatic",
     "description": "Pope Gregory VII and Emperor Henry IV clashed over the right to appoint church officials, sparking a decades-long power struggle.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Investiturewoodcut.png/330px-Investiturewoodcut.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/investiture-controversy-begins_ezcq5d?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 378,
+    "image_height": 440,
     "wikipedia_views": 35473,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Investiture"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Investiture",
+    "color": "#23211c",
+    "text_color": "light"
   },
   {
     "name": "walk-to-canossa",
@@ -3763,11 +4009,13 @@
     "category": "diplomatic",
     "description": "Emperor Henry IV stood barefoot in the snow for three days seeking Pope Gregory VII's forgiveness after excommunication.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Schwoiser_Heinrich_vor_Canossa.jpg/330px-Schwoiser_Heinrich_vor_Canossa.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/walk-to-canossa_rxphll?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 548,
+    "image_height": 440,
     "wikipedia_views": 45650,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Road_to_Canossa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Road_to_Canossa",
+    "color": "#302e26",
+    "text_color": "light"
   },
   {
     "name": "toledo-reconquered",
@@ -3776,11 +4024,13 @@
     "category": "diplomatic",
     "description": "Alfonso VI of Castile captured Toledo, a major Reconquista victory that recovered the former Visigothic capital from Muslim rule.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cantigas_battle.jpg/330px-Cantigas_battle.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toledo-reconquered_vexvxe?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 320,
+    "image_height": 440,
     "wikipedia_views": 15831,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Toledo_(1085)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Toledo_(1085)",
+    "color": "#1f2124",
+    "text_color": "light"
   },
   {
     "name": "fall-of-edessa",
@@ -3789,11 +4039,13 @@
     "category": "diplomatic",
     "description": "Zengi captured the Crusader County of Edessa, the first Crusader state to fall, triggering the Second Crusade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Urfacastle.jpg/330px-Urfacastle.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-edessa_k0n1ep?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 198,
+    "image_height": 440,
     "wikipedia_views": 24813,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Edessa_(1144)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Edessa_(1144)",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "minamoto-yoritomo-becomes-shogun",
@@ -3802,11 +4054,13 @@
     "category": "diplomatic",
     "description": "Minamoto Yoritomo was named shogun, establishing the Kamakura shogunate and beginning seven centuries of samurai rule in Japan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/330px-Minamoto_no_Yoritomo.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minamoto-yoritomo-becomes-shogun_l0vpj3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 411,
+    "image_height": 440,
     "wikipedia_views": 129785,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Minamoto_no_Yoritomo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Minamoto_no_Yoritomo",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "mamluks-take-power-egypt",
@@ -3815,11 +4069,13 @@
     "category": "diplomatic",
     "description": "The Mamluks, former slave soldiers, seized power in Egypt and would later halt the Mongol advance at Ain Jalut.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Flag_of_Egypt.svg/330px-Flag_of_Egypt.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mamluks-take-power-egypt_dqumum?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 70302,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ottoman–Mamluk_War_(1516–1517)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ottoman–Mamluk_War_(1516–1517)",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "sicilian-vespers",
@@ -3828,9 +4084,13 @@
     "category": "diplomatic",
     "description": "A popular uprising in Palermo led to the massacre of French Angevins, ending French rule and bringing Aragon to power in Sicily.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Sicilian_Vespers_1281_How_and_after_what_manner_the_island_of_Sicily_rebelled_against_King_Charles_Nuova_Cronica_Giovanni_Villani_14th_century.png/330px-Sicilian_Vespers_1281_How_and_after_what_manner_the_island_of_Sicily_rebelled_against_King_Charles_Nuova_Cronica_Giovanni_Villani_14th_century.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sicilian-vespers_f9y3bc?_a=BAMAMiiu0",
     "wikipedia_views": 105674,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sicilian_Vespers"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sicilian_Vespers",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "henry-iv-deposes-richard-ii",
@@ -3839,11 +4099,13 @@
     "category": "diplomatic",
     "description": "Henry Bolingbroke deposed Richard II and became Henry IV, founding the Lancastrian dynasty and setting the stage for civil war.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Illumination_of_Henry_IV_%28cropped%29.jpg/330px-Illumination_of_Henry_IV_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/henry-iv-deposes-richard-ii_tsorx3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 394,
+    "image_height": 440,
     "wikipedia_views": 162487,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Richard_II_(play)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Richard_II_(play)",
+    "color": "#24211b",
+    "text_color": "light"
   },
   {
     "name": "council-of-florence",
@@ -3852,9 +4114,13 @@
     "category": "diplomatic",
     "description": "The Council attempted to reunite the Eastern and Western churches, briefly achieving union before Byzantine rejection.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nuremberg_chronicles_f_244v_2_Concilium_florentinum.jpg/330px-Nuremberg_chronicles_f_244v_2_Concilium_florentinum.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-of-florence_bagf20?_a=BAMAMiiu0",
     "wikipedia_views": 97234,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Florence"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Florence",
+    "color": "#adadad",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "portuguese-capture-goa",
@@ -3863,11 +4129,13 @@
     "category": "diplomatic",
     "description": "Afonso de Albuquerque conquered Goa, establishing it as the capital of Portuguese India and a major trading hub for four centuries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Flag_of_Portugal_%28official%29.svg/330px-Flag_of_Portugal_%28official%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portuguese-capture-goa_il0rrp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 224363,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Annexation_of_Goa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Annexation_of_Goa",
+    "color": "#262019",
+    "text_color": "light"
   },
   {
     "name": "augsburg-confession",
@@ -3876,11 +4144,13 @@
     "category": "diplomatic",
     "description": "Lutheran princes presented their confession of faith to Emperor Charles V, formally establishing Protestant doctrine.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg/330px-Lucas_Cranach_d.%C3%84._-_Martin_Luther%2C_1528_%28Veste_Coburg%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/augsburg-confession_gfexta?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 522,
+    "image_height": 440,
     "wikipedia_views": 69970,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Augsburg_Confession"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Augsburg_Confession",
+    "color": "#24201b",
+    "text_color": "light"
   },
   {
     "name": "pizarro-executes-atahualpa",
@@ -3889,11 +4159,13 @@
     "category": "diplomatic",
     "description": "Spanish conquistador Francisco Pizarro executed the Inca emperor Atahualpa despite receiving history's largest ransom.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Atahuallpa%2C_Inca_XIIII_From_Berlin_Ethnologisches_Museum%2C_Staatliche_Museen%2C_Berlin%2C_Germany.png/330px-Atahuallpa%2C_Inca_XIIII_From_Berlin_Ethnologisches_Museum%2C_Staatliche_Museen%2C_Berlin%2C_Germany.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pizarro-executes-atahualpa_neg3ct?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 426,
+    "image_height": 440,
     "wikipedia_views": 165925,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Atahualpa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Atahualpa",
+    "color": "#271f18",
+    "text_color": "light"
   },
   {
     "name": "dissolution-of-monasteries",
@@ -3902,11 +4174,13 @@
     "category": "diplomatic",
     "description": "Henry VIII began dissolving English monasteries, seizing their wealth and redistributing lands to loyal supporters.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Glastonburyabbey.jpg/330px-Glastonburyabbey.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dissolution-of-monasteries_zawpdc?_a=BAMAMiiu0",
     "wikipedia_views": 152137,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_monasteries",
     "image_width": 330,
-    "image_height": 227
+    "image_height": 440,
+    "color": "#25201a",
+    "text_color": "light"
   },
   {
     "name": "servetus-burned-at-stake",
@@ -3915,11 +4189,13 @@
     "category": "diplomatic",
     "description": "Michael Servetus was burned for heresy in Calvin's Geneva for denying the Trinity, showing Protestant intolerance of dissent.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Michael_Servetus.jpg/330px-Michael_Servetus.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/servetus-burned-at-stake_wrwoqv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 451,
+    "image_height": 440,
     "wikipedia_views": 394755,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_by_burning"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_by_burning",
+    "color": "#24201b",
+    "text_color": "light"
   },
   {
     "name": "mercator-projection-map",
