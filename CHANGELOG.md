@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.2](https://github.com/Edward-Muir/when/compare/v0.10.1...v0.10.2) (2026-04-07)
+
+
+### Features
+
+* Add more images ([8000e00](https://github.com/Edward-Muir/when/commit/8000e00d70dbad49b74186555fc375fff9a08a02))
+
 ## [0.10.1](https://github.com/Edward-Muir/when/compare/v0.10.0...v0.10.1) (2026-04-02)
 
 
