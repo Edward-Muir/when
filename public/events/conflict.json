@@ -6277,5 +6277,1461 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sudanese_civil_war_(2023–present)",
     "color": "#432217",
     "text_color": "light"
+  },
+  {
+    "name": "romanization-britain",
+    "friendly_name": "Roman Conquest of Britain",
+    "year": 43,
+    "category": "conflict",
+    "description": "Emperor Claudius launched the Roman invasion of Britain, establishing a province that lasted nearly four centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vercingetorix-gallic-revolt",
+    "friendly_name": "Vercingetorix Leads Gallic Revolt",
+    "year": -52,
+    "category": "conflict",
+    "description": "Gallic chieftain Vercingetorix united the tribes against Caesar but was defeated at the Siege of Alesia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "julius-caesar-conquest-gaul",
+    "friendly_name": "Julius Caesar Conquers Gaul",
+    "year": -58,
+    "category": "conflict",
+    "description": "Caesar's eight-year campaign conquered modern France, expanding Rome's territory and boosting his political power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "siege-of-jerusalem-70ce",
+    "friendly_name": "Siege of Jerusalem by Titus",
+    "year": 70,
+    "category": "conflict",
+    "description": "Roman forces under Titus destroyed the Second Temple, ending the Great Jewish Revolt.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "masada-siege-defense",
+    "friendly_name": "Siege of Masada",
+    "year": 73,
+    "category": "conflict",
+    "description": "Jewish rebels held out against a Roman siege atop a desert fortress before choosing mass suicide over capture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "agricola-britain-conquest",
+    "friendly_name": "Agricola's Conquest of Britain",
+    "year": 78,
+    "category": "conflict",
+    "description": "Roman governor Agricola pushed deep into Scotland, winning the Battle of Mons Graupius against the Caledonians.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "xiongnu-conflicts-han",
+    "friendly_name": "Xiongnu Conflicts with Han Dynasty",
+    "year": -200,
+    "category": "conflict",
+    "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "battle-of-wei-qiao",
+    "friendly_name": "Battle of Wei Qiao - Han-Xiongnu War",
+    "year": -133,
+    "category": "conflict",
+    "description": "Han Emperor Wu launched an ambush campaign against the Xiongnu, escalating their frontier conflict.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "han-expansion",
+    "friendly_name": "Han Dynasty Expansion",
+    "year": -141,
+    "category": "conflict",
+    "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "punic-wars-second",
+    "friendly_name": "Second Punic War",
+    "year": -218,
+    "category": "conflict",
+    "description": "Hannibal marched elephants over the Alps to invade Italy, threatening Rome's survival for over a decade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aurelian-reunites-empire",
+    "friendly_name": "Aurelian Reunites Roman Empire",
+    "year": 274,
+    "category": "conflict",
+    "description": "Emperor Aurelian defeated the Palmyrene and Gallic empires, reunifying Rome after the Crisis of the Third Century.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "sima-yan-jin-unification",
+    "friendly_name": "Sima Yan Unifies China - Jin Dynasty",
+    "year": 280,
+    "category": "conflict",
+    "description": "Sima Yan conquered the Wu kingdom, reuniting China under the Jin Dynasty after decades of fragmentation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "samudragupta-deccan-campaigns",
+    "friendly_name": "Samudragupta Conquers Deccan",
+    "year": 350,
+    "category": "conflict",
+    "description": "Gupta emperor Samudragupta campaigned across southern India, defeating numerous kings and expanding his empire.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aksumite-nubian-conflicts",
+    "friendly_name": "Aksumite Kingdom Conflicts with Nubia",
+    "year": 350,
+    "category": "conflict",
+    "description": "The Aksumite Kingdom of Ethiopia clashed with neighboring Nubian kingdoms over trade routes and territory.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "great-migration-barbarians",
+    "friendly_name": "Great Migration of Barbarians",
+    "year": 375,
+    "category": "conflict",
+    "description": "Hun pressure drove Germanic tribes westward across Roman borders, destabilizing the Western Roman Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "stilicho-roman-general",
+    "friendly_name": "Stilicho's Military Campaigns",
+    "year": 395,
+    "category": "conflict",
+    "description": "Half-Vandal general Stilicho defended the Western Roman Empire against Gothic and other barbarian invasions.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "stirrup-east-asia",
+    "friendly_name": "Stirrup Adoption in East Asia",
+    "year": 300,
+    "category": "conflict",
+    "description": "The stirrup emerged in China around the 4th century, revolutionizing mounted cavalry warfare across Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anglo-saxon-migration",
+    "friendly_name": "Anglo-Saxon Migration to Britain",
+    "year": 449,
+    "category": "conflict",
+    "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "attila-hunnic-invasions",
+    "friendly_name": "Attila Invades Roman Empire",
+    "year": 451,
+    "category": "conflict",
+    "description": "Attila the Hun invaded Gaul with a massive army but was halted at the Battle of the Catalaunian Plains.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "battle-of-catalaunian-plains",
+    "friendly_name": "Battle of Catalaunian Plains",
+    "year": 451,
+    "category": "conflict",
+    "description": "A Roman-Visigothic coalition stopped Attila's invasion of Gaul in one of antiquity's largest battles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "skandagupta-gupta-restoration",
+    "friendly_name": "Skandagupta Defends Gupta Against Invasions",
+    "year": 455,
+    "category": "conflict",
+    "description": "Gupta emperor Skandagupta repelled Hephthalite Hun invasions, briefly restoring the empire's military strength.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hephthalite-invasions",
+    "friendly_name": "Hephthalite Invasions of Persia",
+    "year": 484,
+    "category": "conflict",
+    "description": "The White Huns invaded the Sasanian Empire, killing King Peroz I and destabilizing Persia for decades.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "battle-of-vouille",
+    "friendly_name": "Clovis Defeats Visigoths at Vouille",
+    "year": 507,
+    "category": "conflict",
+    "description": "Frankish king Clovis I defeated the Visigoths, driving them from most of Gaul into Iberia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "clovis-frankish-expansion",
+    "friendly_name": "Clovis Expands Frankish Kingdom",
+    "year": 486,
+    "category": "conflict",
+    "description": "Clovis I defeated the last Roman governor in Gaul at Soissons, founding the Merovingian Frankish state.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "justinian-gothic-war",
+    "friendly_name": "Justinian's Gothic War in Italy",
+    "year": 535,
+    "category": "conflict",
+    "description": "Byzantine Emperor Justinian launched a campaign to reconquer Italy from the Ostrogoths, devastating the peninsula.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "belisarius-gothic-war",
+    "friendly_name": "Belisarius Recaptures Italy",
+    "year": 536,
+    "category": "conflict",
+    "description": "Byzantine general Belisarius captured Rome and much of Italy, though the Ostrogoths soon counterattacked.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "standing-army",
+    "friendly_name": "Spartan Standing Army",
+    "year": -650,
+    "category": "conflict",
+    "description": "Sparta established one of history's first professional standing armies, creating an elite warrior society.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gokturk-empire-expansion",
+    "friendly_name": "Gokturk Empire Expands Across Steppe",
+    "year": 552,
+    "category": "conflict",
+    "description": "The Gokturks overthrew the Rouran Khaganate and forged a vast steppe empire from Manchuria to the Black Sea.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "stirrup-adoption-europe",
+    "friendly_name": "Stirrup Adoption in Early Medieval Europe",
+    "year": 700,
+    "category": "conflict",
+    "description": "European adoption of the stirrup enabled heavy cavalry charges, transforming medieval warfare and feudalism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "early-tang-expansion",
+    "friendly_name": "Early Tang Dynasty Military Expansion",
+    "year": 630,
+    "category": "conflict",
+    "description": "Emperor Taizong defeated the Eastern Turks and expanded Tang China into Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heraclius-campaigns-persia",
+    "friendly_name": "Heraclius Defeats Chosroes II",
+    "year": 627,
+    "category": "conflict",
+    "description": "Byzantine Emperor Heraclius launched a daring counter-invasion of Persia, winning the decisive Battle of Nineveh.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "battle-of-mu-ta",
+    "friendly_name": "Battle of Mu'ta - Muslim-Byzantine Conflict",
+    "year": 628,
+    "category": "conflict",
+    "description": "Early Muslims clashed with Byzantine forces in Transjordan in one of Islam's first major military engagements.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "siege-of-damascus-636",
+    "friendly_name": "Siege of Damascus by Arab Forces",
+    "year": 634,
+    "category": "conflict",
+    "description": "Arab Muslim forces captured Damascus from the Byzantines, a pivotal early conquest of the Rashidun Caliphate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siege-of-jerusalem-638",
+    "friendly_name": "Siege of Jerusalem by Arab Forces",
+    "year": 638,
+    "category": "conflict",
+    "description": "Caliph Umar accepted Jerusalem's surrender, bringing the holy city under Muslim control for the first time.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goguryeo-namgnang-battle",
+    "friendly_name": "Battle of Namgnang",
+    "year": 645,
+    "category": "conflict",
+    "description": "Tang China's invasion of Goguryeo was repelled at Ansi Fortress, preserving Korean independence.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "battle-karbala-husayn",
+    "friendly_name": "Battle of Karbala",
+    "year": 680,
+    "category": "conflict",
+    "description": "Husayn ibn Ali was killed by Umayyad forces, creating the defining martyrdom of Shia Islam.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tikal-calakmul-war",
+    "friendly_name": "Tikal-Calakmul Wars Escalate",
+    "year": 695,
+    "category": "conflict",
+    "description": "Tikal defeated Calakmul's king, ending decades of rivalry between the two dominant Maya superpowers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "siege-constantinople-arab",
+    "friendly_name": "Arab Siege of Constantinople",
+    "year": 717,
+    "category": "conflict",
+    "description": "A massive Arab naval and land assault on Constantinople was repelled, preserving the Byzantine Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "charles-martel-frankish-victory",
+    "friendly_name": "Charles Martel Defeats Umayyads at Tours",
+    "year": 732,
+    "category": "conflict",
+    "description": "Frankish leader Charles Martel halted the Umayyad advance into Western Europe near Poitiers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "charlemagne-saxon-wars",
+    "friendly_name": "Charlemagne Conquers Saxony",
+    "year": 772,
+    "category": "conflict",
+    "description": "Charlemagne waged a brutal 30-year campaign to conquer and Christianize the pagan Saxons.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "viking-raids-begin",
+    "friendly_name": "Viking Age Begins",
+    "year": 793,
+    "category": "conflict",
+    "description": "Norse raiders attacked Lindisfarne monastery, marking the start of centuries of Viking expansion.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "longship-technology",
+    "friendly_name": "Longship Technology Perfection",
+    "year": 800,
+    "category": "conflict",
+    "description": "Viking longships reached peak design, enabling ocean crossings and shallow river raids across Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chain-mail-evolution",
+    "friendly_name": "Chain Mail Armor Dominates Medieval Warfare",
+    "year": 800,
+    "category": "conflict",
+    "description": "Chain mail became standard armor for European knights, offering flexible protection in mounted combat.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "viking-dublin-settlement",
+    "friendly_name": "Viking Settlement of Dublin",
+    "year": 841,
+    "category": "conflict",
+    "description": "Norse Vikings established a permanent longphort at Dublin, which became a major trading hub.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chola-naval-supremacy",
+    "friendly_name": "Chola Dynasty Establishes Naval Supremacy",
+    "year": 985,
+    "category": "conflict",
+    "description": "Under Rajaraja I, the Chola navy dominated the Indian Ocean, conquering Sri Lanka and the Maldives.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gunpowder-china-adoption",
+    "friendly_name": "Gunpowder Weaponry Dominance in China",
+    "year": 1000,
+    "category": "conflict",
+    "description": "Chinese armies deployed fire arrows, bombs, and early rockets, pioneering gunpowder warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "crossbow-adoption-medieval",
+    "friendly_name": "Crossbow Adoption in Medieval Warfare",
+    "year": 1100,
+    "category": "conflict",
+    "description": "The crossbow became widespread in European warfare, allowing untrained soldiers to pierce heavy armor.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "castle-fortification-shift",
+    "friendly_name": "Castle Fortification Paradigm Shift",
+    "year": 1000,
+    "category": "conflict",
+    "description": "Stone castles replaced wooden forts across Europe, transforming defensive warfare and feudal power.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rajendra-chola-conquest",
+    "friendly_name": "Rajendra Chola's Victorious Conquests",
+    "year": 1025,
+    "category": "conflict",
+    "description": "Rajendra Chola I raided Southeast Asian ports and marched north to the Ganges, extending Chola power.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "basil-ii-bulgar-victories",
+    "friendly_name": "Battle of Serres Basil II Victory",
+    "year": 1014,
+    "category": "conflict",
+    "description": "Emperor Basil II crushed the Bulgarian army at Kleidion and blinded thousands of captives.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "basil-ii-bulgar-slayer",
+    "friendly_name": "Basil II Campaigns Balkan Conquest",
+    "year": 1018,
+    "category": "conflict",
+    "description": "Basil II completed the conquest of Bulgaria, earning the epithet 'Bulgar Slayer' and expanding Byzantium.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "manzikert-consequences-byzant",
+    "friendly_name": "Battle of Manzikert Consequences",
+    "year": 1071,
+    "category": "conflict",
+    "description": "The Seljuk Turks defeated and captured the Byzantine emperor, opening Anatolia to Turkish settlement.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-gunpowder-weapons",
+    "friendly_name": "Gunpowder Weapons Development in Song Dynasty",
+    "year": 1044,
+    "category": "conflict",
+    "description": "The Song Dynasty published the first known gunpowder weapon formulas in the Wujing Zongyao military manual.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antioch-crusader-conflicts",
+    "friendly_name": "Crusader-Muslim Conflicts Antioch",
+    "year": 1098,
+    "category": "conflict",
+    "description": "Crusaders captured Antioch after a grueling siege, establishing one of the major Crusader states.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "khwarezmian-shah-conquest",
+    "friendly_name": "Khwarezmian Shah Conquers Khorasan",
+    "year": 1200,
+    "category": "conflict",
+    "description": "The Khwarezmian Empire expanded across Central Asia and Persia before provoking the Mongol invasion.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "second-crusade",
+    "friendly_name": "Second Crusade Launched",
+    "year": 1147,
+    "category": "conflict",
+    "description": "Kings Louis VII and Conrad III led a failed crusade to recapture Edessa from Muslim forces.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dorian-invasion",
+    "friendly_name": "Dorian Invasion of Greece",
+    "year": -1100,
+    "category": "conflict",
+    "description": "Dorian Greeks migrated into the Peloponnese during the Bronze Age collapse, reshaping Greek civilization.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ayyubid-saladin-crusades",
+    "friendly_name": "Ayyubid Dynasty Under Saladin",
+    "year": 1171,
+    "category": "conflict",
+    "description": "Saladin founded the Ayyubid dynasty, uniting Egypt and Syria to challenge the Crusader states.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "montgisard-crusaders-saladin",
+    "friendly_name": "Battle of Montgisard - Crusaders Victory",
+    "year": 1177,
+    "category": "conflict",
+    "description": "A small Crusader force led by Baldwin IV defeated Saladin's much larger army near Ramla.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "second-crusade-battle-hattin",
+    "friendly_name": "Battle of Hattin Crusaders Defeated",
+    "year": 1187,
+    "category": "conflict",
+    "description": "Saladin annihilated the Crusader army at Hattin, leading to the recapture of Jerusalem.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jaffa-crusades",
+    "friendly_name": "Crusaders Capture Jaffa",
+    "year": 1192,
+    "category": "conflict",
+    "description": "Richard the Lionheart defended Jaffa against Saladin during the Third Crusade, securing a coastal truce.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rajasthan-kingdoms",
+    "friendly_name": "Rajasthani Kingdom Wars",
+    "year": 1191,
+    "category": "conflict",
+    "description": "Rajput kingdoms battled Muslim invaders at the Battles of Tarain, shaping northern India's political future.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "maya-postclassic-conflicts",
+    "friendly_name": "Maya Postclassic Period Conflicts",
+    "year": 1200,
+    "category": "conflict",
+    "description": "Postclassic Maya city-states like Mayapan waged wars for dominance after the Classic period collapse.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tonga-tongan-conquest",
+    "friendly_name": "Tonga Expands Through Pacific Conquests",
+    "year": 1200,
+    "category": "conflict",
+    "description": "The Tu'i Tonga maritime empire expanded across the Pacific, dominating Samoa, Fiji, and nearby islands.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "iron-stirrups-africa",
+    "friendly_name": "Iron Stirrup Adoption in Sub-Saharan Africa",
+    "year": 1200,
+    "category": "conflict",
+    "description": "West African kingdoms adopted iron stirrups, enabling cavalry forces that powered Sahel empire expansion.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mongolian-stirrup-cavalry",
+    "friendly_name": "Mongol Mounted Cavalry Revolution",
+    "year": 1206,
+    "category": "conflict",
+    "description": "Mongol cavalry combined stirrups, composite bows, and tactical discipline into history's most effective mounted force.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fourth-crusade-byzantine",
+    "friendly_name": "Fourth Crusade Sack of Constantinople",
+    "year": 1204,
+    "category": "conflict",
+    "description": "Crusaders diverted to sack Constantinople, fatally weakening the Byzantine Empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mongol-conquest-china",
+    "friendly_name": "Mongol Conquest of China Begins",
+    "year": 1211,
+    "category": "conflict",
+    "description": "Genghis Khan invaded the Jin Dynasty, beginning the Mongol conquest that would eventually unify China.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "damietta-crusade-fifth",
+    "friendly_name": "Fifth Crusade - Damietta Campaign Begins",
+    "year": 1218,
+    "category": "conflict",
+    "description": "Crusaders captured the Egyptian port of Damietta but ultimately failed to advance on Cairo.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mongol-conquest-khwarezm",
+    "friendly_name": "Mongol Conquest of Khwarezm",
+    "year": 1219,
+    "category": "conflict",
+    "description": "Genghis Khan destroyed the Khwarezmian Empire after its shah executed Mongol envoys.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-invasions-europe",
+    "friendly_name": "Mongol Invasions of Europe",
+    "year": 1241,
+    "category": "conflict",
+    "description": "Mongol armies swept through Poland and Hungary, devastating European forces at Legnica and Mohi.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mongol-invasion-hungary",
+    "friendly_name": "Mongol Invasion of Hungary",
+    "year": 1241,
+    "category": "conflict",
+    "description": "Batu Khan's forces crushed the Hungarian army at Mohi, killing much of the country's population.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "seventh-crusade",
+    "friendly_name": "Seventh Crusade Saint Louis",
+    "year": 1248,
+    "category": "conflict",
+    "description": "King Louis IX of France led a crusade to Egypt but was captured at the Battle of Fariskur.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "long-bow-english-development",
+    "friendly_name": "English Longbow Tactics Develop",
+    "year": 1280,
+    "category": "conflict",
+    "description": "English armies adopted the Welsh longbow, creating devastating massed archery tactics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-conquest-bagdad",
+    "friendly_name": "Mongol Siege of Baghdad",
+    "year": 1258,
+    "category": "conflict",
+    "description": "Hulagu Khan sacked Baghdad and killed the Abbasid Caliph, ending the Islamic Golden Age.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mongol-naval-expeditions",
+    "friendly_name": "Mongol Naval Expeditions Japan Invasion",
+    "year": 1274,
+    "category": "conflict",
+    "description": "Kublai Khan launched the first Mongol naval invasion of Japan, which was repelled by storms and resistance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-invasion-japan-first",
+    "friendly_name": "Mongol Invasion Japan First",
+    "year": 1274,
+    "category": "conflict",
+    "description": "Mongol and Korean forces landed at Hakata Bay but withdrew after fierce samurai resistance and a typhoon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-khubilai-conquest",
+    "friendly_name": "Kublai Khan Conquers Song Dynasty China",
+    "year": 1279,
+    "category": "conflict",
+    "description": "Kublai Khan defeated the Southern Song at the naval Battle of Yamen, unifying China under the Yuan Dynasty.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mongol-invasion-japan-second",
+    "friendly_name": "Mongol Invasion Japan Second Kamikaze",
+    "year": 1281,
+    "category": "conflict",
+    "description": "A massive Mongol fleet was destroyed by a typhoon, called kamikaze ('divine wind') by the Japanese.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "acre-final-siege",
+    "friendly_name": "Final Siege of Acre",
+    "year": 1291,
+    "category": "conflict",
+    "description": "Mamluk forces captured Acre, the last major Crusader stronghold, ending the Crusader presence in the Holy Land.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "alauddin-khalji-conquest",
+    "friendly_name": "Alauddin Khalji's Southern Indian Conquests",
+    "year": 1296,
+    "category": "conflict",
+    "description": "Delhi Sultan Alauddin Khalji conquered much of southern India and repelled multiple Mongol invasions.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "champa-vietnam-conflicts",
+    "friendly_name": "Champa Vietnam Military Conflicts",
+    "year": 1283,
+    "category": "conflict",
+    "description": "The Champa kingdom and Dai Viet fought repeatedly, with Mongol invasions further destabilizing the region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "maori-pa-fortification",
+    "friendly_name": "Maori Pa Fortifications Become Standard",
+    "year": 1300,
+    "category": "conflict",
+    "description": "Maori tribes built elaborate pa (hilltop forts) with palisades and trenches across New Zealand.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "catalan-grand-company",
+    "friendly_name": "Catalan Grand Company Byzantine",
+    "year": 1303,
+    "category": "conflict",
+    "description": "Catalan mercenaries hired by Byzantium turned rogue, ravaging Greece and seizing the Duchy of Athens.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mali-civil-war",
+    "friendly_name": "Mali Civil War After Musa",
+    "year": 1360,
+    "category": "conflict",
+    "description": "The Mali Empire fragmented into civil war after Mansa Musa's successors struggled to maintain control.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "ottoman-standing-army",
+    "friendly_name": "Janissary Corps",
+    "year": 1363,
+    "category": "conflict",
+    "description": "The Ottomans created the Janissary corps, an elite slave-soldier infantry that became Europe's first standing army.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "timur-tamerlane-conqueror",
+    "friendly_name": "Timur (Tamerlane) Begins Conquests",
+    "year": 1370,
+    "category": "conflict",
+    "description": "Turco-Mongol conqueror Timur launched devastating campaigns from Persia to India, building a vast empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gunpowder-weapons-adoption",
+    "friendly_name": "Gunpowder Weapons Widely Adopted",
+    "year": 1380,
+    "category": "conflict",
+    "description": "European armies began deploying cannons and early firearms, transforming siege and battlefield tactics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-military-innovation",
+    "friendly_name": "Ottoman Janissary Corps Innovations",
+    "year": 1400,
+    "category": "conflict",
+    "description": "The Janissaries adopted firearms early, making the Ottoman military one of the first gunpowder armies.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "oyo-empire-military-innovation",
+    "friendly_name": "Oyo Empire Develops Cavalry-Based Military",
+    "year": 1400,
+    "category": "conflict",
+    "description": "The Oyo Empire in West Africa built a powerful cavalry force that dominated the Yoruba region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hussite-wars",
+    "friendly_name": "Hussite Wars",
+    "year": 1419,
+    "category": "conflict",
+    "description": "Czech followers of Jan Hus fought Catholic crusaders using innovative wagon-fort tactics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-siege-galata",
+    "friendly_name": "Ottoman Siege of Galata",
+    "year": 1422,
+    "category": "conflict",
+    "description": "Sultan Murad II besieged Constantinople but failed to breach its walls, delaying Ottoman conquest by decades.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aztec-expansion-conquests",
+    "friendly_name": "Aztec Expansion Military Campaigns",
+    "year": 1440,
+    "category": "conflict",
+    "description": "Under Montezuma I, the Aztec Triple Alliance expanded aggressively through central Mexico.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "inca-expansion",
+    "friendly_name": "Inca Empire Massive Expansion",
+    "year": 1438,
+    "category": "conflict",
+    "description": "Pachacuti transformed the Inca from a small kingdom into the largest empire in the pre-Columbian Americas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gunpowder-military-adoption-europe",
+    "friendly_name": "Gunpowder Weaponry Adoption in European Warfare",
+    "year": 1450,
+    "category": "conflict",
+    "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-constantinople-1453",
+    "friendly_name": "Fall of Constantinople 1453",
+    "year": 1453,
+    "category": "conflict",
+    "description": "Ottoman Sultan Mehmed II conquered Constantinople using massive cannons, ending the Byzantine Empire.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ottoman-final-siege-1453",
+    "friendly_name": "Siege of Constantinople Final",
+    "year": 1453,
+    "category": "conflict",
+    "description": "Mehmed II's 53-day siege breached the Theodosian Walls, ending over a millennium of Roman imperial continuity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hundred-years-war-conclusion",
+    "friendly_name": "Hundred Years War Ends",
+    "year": 1453,
+    "category": "conflict",
+    "description": "France's victory at Castillon ended the 116-year Anglo-French conflict, expelling England from the continent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shimazu-sengoku",
+    "friendly_name": "Sengoku Daimyo Wars Begin",
+    "year": 1467,
+    "category": "conflict",
+    "description": "The Onin War triggered Japan's Sengoku period, a century of civil war among feudal warlords.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "inca-conquest-expansion",
+    "friendly_name": "Inca Conquest Expansion Thupa",
+    "year": 1471,
+    "category": "conflict",
+    "description": "Topa Inca Yupanqui conquered the Chimor kingdom and expanded the empire into Ecuador and Chile.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "inca-tupac-amaru",
+    "friendly_name": "Inca Conquest of Lake Titicaca Region",
+    "year": 1470,
+    "category": "conflict",
+    "description": "The Inca conquered the Aymara kingdoms around Lake Titicaca, incorporating the Altiplano into their empire.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "reconquista-completion",
+    "friendly_name": "Reconquista Completed",
+    "year": 1492,
+    "category": "conflict",
+    "description": "Ferdinand and Isabella captured Granada, ending nearly 800 years of Muslim rule in Iberia.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "italian-wars",
+    "friendly_name": "Italian Wars Begin",
+    "year": 1494,
+    "category": "conflict",
+    "description": "France invaded Italy, triggering decades of conflict that reshaped European diplomacy and warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "songhai-expansion",
+    "friendly_name": "Songhai Empire Expansion under Askia",
+    "year": 1493,
+    "category": "conflict",
+    "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "oromo-expansion",
+    "friendly_name": "Oromo Expansion in East Africa",
+    "year": 1520,
+    "category": "conflict",
+    "description": "Oromo pastoralists migrated northward through the Ethiopian highlands, reshaping the region's demographics.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "ming-great-wall",
+    "friendly_name": "Great Wall Expansion During Ming Dynasty",
+    "year": 1474,
+    "category": "conflict",
+    "description": "The Ming Dynasty rebuilt and extended the Great Wall with brick and stone to defend against Mongol raids.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "songhai-military-gunpowder",
+    "friendly_name": "Songhai Military Gunpowder Infantry",
+    "year": 1500,
+    "category": "conflict",
+    "description": "The Songhai Empire employed gunpowder weapons acquired through trans-Saharan trade networks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "inca-civil-war-dispute",
+    "friendly_name": "Inca Civil War Huascar Atahualpa",
+    "year": 1529,
+    "category": "conflict",
+    "description": "Brothers Huascar and Atahualpa fought a devastating civil war for the Inca throne, weakening the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kanem-bornu-gunpowder-adoption",
+    "friendly_name": "Kanem-Bornu Adopts Gunpowder Weapons",
+    "year": 1550,
+    "category": "conflict",
+    "description": "The Kanem-Bornu Empire acquired Ottoman firearms, strengthening its military in the Lake Chad region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "songhai-military-organization",
+    "friendly_name": "Songhai Military Organized into Professional Units",
+    "year": 1495,
+    "category": "conflict",
+    "description": "Askia Muhammad organized the Songhai military into specialized provincial units with professional officers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aztec-expansion-reign",
+    "friendly_name": "Aztec Empire Expansion Under Montezuma",
+    "year": 1502,
+    "category": "conflict",
+    "description": "Montezuma II expanded the Aztec Empire to its greatest extent through campaigns in Oaxaca and beyond.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mombasa-portuguese-control",
+    "friendly_name": "Mombasa Becomes Portuguese Trading Post",
+    "year": 1505,
+    "category": "conflict",
+    "description": "Portuguese forces sacked and occupied Mombasa, asserting control over Indian Ocean trade routes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "shaybanid-bukhara-captured",
+    "friendly_name": "Shaybanids Capture Bukhara",
+    "year": 1500,
+    "category": "conflict",
+    "description": "Uzbek Shaybanid forces captured Bukhara and Samarkand, ending Timurid rule in Central Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "portuguese-goa-conquest",
+    "friendly_name": "Portuguese Conquest of Goa",
+    "year": 1510,
+    "category": "conflict",
+    "description": "Afonso de Albuquerque captured Goa, establishing Portugal's most important base in Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "portuguese-calicut-control",
+    "friendly_name": "Portuguese Control Calicut",
+    "year": 1510,
+    "category": "conflict",
+    "description": "Portugal bombarded and dominated Calicut's trade, enforcing a monopoly on Indian Ocean spice routes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "safavid-battled-ottomans",
+    "friendly_name": "Safavid-Ottoman Military Conflicts",
+    "year": 1514,
+    "category": "conflict",
+    "description": "The Ottoman victory at Chaldiran established the border between Sunni Ottoman and Shia Safavid empires.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spanish-conquest-aztec",
+    "friendly_name": "Fall of Aztec Empire",
+    "year": 1521,
+    "category": "conflict",
+    "description": "Hernan Cortes and indigenous allies besieged and captured Tenochtitlan, destroying the Aztec Empire.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "madura-sultanate-fall",
+    "friendly_name": "Madura Sultanate Fall in Southeast Asia",
+    "year": 1378,
+    "category": "conflict",
+    "description": "The Madura Sultanate on Java was overthrown by the expanding Majapahit Empire.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "spanish-tercio-formation",
+    "friendly_name": "Spanish Tercio Military Formation",
+    "year": 1534,
+    "category": "conflict",
+    "description": "Spain formalized the tercio, combining pikemen and musketeers into Europe's dominant infantry formation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "inca-conflict-spanish",
+    "friendly_name": "Inca Civil War",
+    "year": 1532,
+    "category": "conflict",
+    "description": "Pizarro captured Atahualpa at Cajamarca during the Inca civil war, beginning Spain's conquest of Peru.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spanish-conquest-peru",
+    "friendly_name": "Conquest of Peru by Spain",
+    "year": 1533,
+    "category": "conflict",
+    "description": "Pizarro executed Atahualpa and captured Cusco, toppling the Inca Empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "araucanians",
+    "friendly_name": "Araucanian Resistance Begins",
+    "year": 1598,
+    "category": "conflict",
+    "description": "Mapuche warriors defeated Spanish conquistadors at Curalaba, beginning centuries of resistance in Chile.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mapuche-arauco-war",
+    "friendly_name": "Arauco War: Mapuche Resistance Against Spanish",
+    "year": 1550,
+    "category": "conflict",
+    "description": "The Mapuche fought a prolonged guerrilla war against Spanish colonizers in southern Chile.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mughal-akbar",
+    "friendly_name": "Akbar Expands Mughal Empire",
+    "year": 1556,
+    "category": "conflict",
+    "description": "Emperor Akbar won the Second Battle of Panipat and expanded Mughal rule across most of the Indian subcontinent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wars-of-religion-france",
+    "friendly_name": "Wars of Religion in France",
+    "year": 1562,
+    "category": "conflict",
+    "description": "Decades of civil war between French Catholics and Huguenots devastated France and killed millions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "oda-nobunaga-unification",
+    "friendly_name": "Oda Nobunaga's Unification Campaigns",
+    "year": 1568,
+    "category": "conflict",
+    "description": "Warlord Oda Nobunaga began unifying Japan through military innovation, including mass use of firearms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-janissary-corps",
+    "friendly_name": "Janissary Corps Military Reorganization",
+    "year": 1580,
+    "category": "conflict",
+    "description": "The Janissary corps underwent reorganization as firearms became central to Ottoman military doctrine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "toyotomi-hideo-invasions",
+    "friendly_name": "Toyotomi Hideyoshi Invades Korea",
+    "year": 1592,
+    "category": "conflict",
+    "description": "Hideyoshi launched a massive invasion of Korea with 160,000 troops, aiming to conquer Ming China.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "korean-imjin-war",
+    "friendly_name": "Korean Imjin War (Japanese Invasion)",
+    "year": 1592,
+    "category": "conflict",
+    "description": "Japan invaded Korea, but Admiral Yi Sun-sin's naval victories and Ming reinforcements repelled the attack.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "imjin-war-turtle-ship",
+    "friendly_name": "First Turtle Ship Combat Victory",
+    "year": 1592,
+    "category": "conflict",
+    "description": "Admiral Yi Sun-sin deployed armored turtle ships to devastating effect against the Japanese navy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mombasa-fort",
+    "friendly_name": "Fort Jesus Built in Mombasa",
+    "year": 1593,
+    "category": "conflict",
+    "description": "The Portuguese built Fort Jesus to secure Mombasa, a key stronghold on the East African coast.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "imjin-war-second-invasion",
+    "friendly_name": "Second Japanese Invasion of Korea",
+    "year": 1597,
+    "category": "conflict",
+    "description": "Hideyoshi's second Korean invasion stalled after his death in 1598, ending Japan's continental ambitions.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "russo-swedish-wars",
+    "friendly_name": "Russo-Swedish Wars (Great Northern War Precursors)",
+    "year": 1590,
+    "category": "conflict",
+    "description": "Russia and Sweden fought over Baltic territory, with Sweden seizing Ingria and parts of Karelia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spanish-armada-aftermath",
+    "friendly_name": "Spanish Naval Decline After Armada Era",
+    "year": 1596,
+    "category": "conflict",
+    "description": "Spain's naval power declined after the Armada defeat and subsequent failed campaigns against England.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "russian-expansion-siberia",
+    "friendly_name": "Russian Expansion into Siberia",
+    "year": 1582,
+    "category": "conflict",
+    "description": "Cossack leader Yermak crossed the Urals to defeat the Siberian Khanate, beginning Russia's eastward expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "trinh-nguyen-civil-war",
+    "friendly_name": "Trinh-Nguyen Civil War in Vietnam",
+    "year": 1627,
+    "category": "conflict",
+    "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "shimabara-rebellion",
+    "friendly_name": "Shimabara Rebellion - Tokugawa Japan",
+    "year": 1637,
+    "category": "conflict",
+    "description": "Japanese Christian peasants revolted against persecution; their defeat led to Japan's isolation policy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "portuguese-restoration-war",
+    "friendly_name": "Portuguese Restoration War Independence",
+    "year": 1640,
+    "category": "conflict",
+    "description": "Portugal revolted against Spanish rule, beginning a 28-year war to restore independence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "swedish-empire-peak",
+    "friendly_name": "Swedish Empire Military Peak",
+    "year": 1632,
+    "category": "conflict",
+    "description": "Sweden under Gustavus Adolphus dominated Northern Europe through innovative tactics in the Thirty Years' War.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "qing-expansion",
+    "friendly_name": "Qing Dynasty Expansion",
+    "year": 1644,
+    "category": "conflict",
+    "description": "Manchu forces captured Beijing and established the Qing Dynasty, conquering all of China over decades.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "louis-xiv-expansion",
+    "friendly_name": "Louis XIV's Territorial Expansion Begins",
+    "year": 1667,
+    "category": "conflict",
+    "description": "Louis XIV invaded the Spanish Netherlands in the War of Devolution, beginning decades of French expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "asante-confederacy-military",
+    "friendly_name": "Asante Confederacy Develops Professional Army",
+    "year": 1701,
+    "category": "conflict",
+    "description": "The Asante Confederacy built a powerful military with firearms, dominating the Gold Coast region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "llanquihue-battle",
+    "friendly_name": "Battle of Llanquihue - Mapuche Victory",
+    "year": 1655,
+    "category": "conflict",
+    "description": "Mapuche forces defeated Spanish settlers in southern Chile during a widespread indigenous uprising.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aurangzeb-expansion-begin",
+    "friendly_name": "Aurangzeb's Deccan Expansion Campaign Begins",
+    "year": 1681,
+    "category": "conflict",
+    "description": "Mughal emperor Aurangzeb launched a prolonged campaign to conquer the Deccan sultanates and crush the Marathas.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "danish-swedish-wars",
+    "friendly_name": "Danish-Swedish Wars Over Baltic",
+    "year": 1657,
+    "category": "conflict",
+    "description": "Denmark and Sweden fought repeatedly for Baltic dominance, with Sweden marching across the frozen Great Belt.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maratha-resistance-begins",
+    "friendly_name": "Maratha Resistance Against Mughal Empire",
+    "year": 1674,
+    "category": "conflict",
+    "description": "Shivaji was crowned Chhatrapati, founding the Maratha Empire and challenging Mughal dominance in India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peter-great-reforms",
+    "friendly_name": "Peter the Great's Military Modernization",
+    "year": 1698,
+    "category": "conflict",
+    "description": "Peter the Great rebuilt Russia's army along European lines after his Grand Embassy tour of the West.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kangxi-military-campaigns",
+    "friendly_name": "Kangxi Emperor's Military Campaigns",
+    "year": 1681,
+    "category": "conflict",
+    "description": "Emperor Kangxi suppressed the Three Feudatories rebellion and later conquered Taiwan and fought the Dzungars.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "deccan-campaigns-mughal",
+    "friendly_name": "Mughal Deccan Campaigns Peak",
+    "year": 1689,
+    "category": "conflict",
+    "description": "Aurangzeb captured and executed Maratha king Sambhaji, but guerrilla resistance drained Mughal resources.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "qing-conquers-mongolia",
+    "friendly_name": "Qing Dynasty Conquers Outer Mongolia",
+    "year": 1696,
+    "category": "conflict",
+    "description": "Emperor Kangxi personally led campaigns that defeated the Dzungar Mongols at Zuunmod.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sikh-khalsa-panth",
+    "friendly_name": "Khalsa Panth Military Order Established",
+    "year": 1699,
+    "category": "conflict",
+    "description": "Guru Gobind Singh founded the Khalsa, transforming the Sikh community into a martial brotherhood.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "prussian-discipline-training",
+    "friendly_name": "Prussian Military Training System",
+    "year": 1713,
+    "category": "conflict",
+    "description": "Frederick William I created Prussia's rigorous military drill system, building Europe's most disciplined army.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "military-academy-russia",
+    "friendly_name": "Cadet Academy",
+    "year": 1731,
+    "category": "conflict",
+    "description": "Russia established the Noble Cadet Corps in St. Petersburg, formalizing military officer training.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "sikh-mughal-conflicts",
+    "friendly_name": "Sikh-Mughal Military Conflicts Peak",
+    "year": 1705,
+    "category": "conflict",
+    "description": "Sikh warrior bands clashed with Mughal forces across Punjab after the execution of Guru Tegh Bahadur.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "asante-akwamu-conquest",
+    "friendly_name": "Asante Confederacy Conquers Akwamu",
+    "year": 1717,
+    "category": "conflict",
+    "description": "The expanding Asante Confederacy defeated the Akwamu kingdom, consolidating power on the Gold Coast.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "maroon-wars-jamaica",
+    "friendly_name": "Maroon Wars for Freedom in Jamaica",
+    "year": 1728,
+    "category": "conflict",
+    "description": "Jamaican Maroons fought the British to a peace treaty recognizing their autonomy and land rights.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "frederick-great-militarism",
+    "friendly_name": "Frederick the Great's Military Reforms",
+    "year": 1740,
+    "category": "conflict",
+    "description": "Frederick the Great of Prussia introduced oblique order tactics and invaded Silesia, sparking European wars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "qing-xinjiang-conquest",
+    "friendly_name": "Qing Conquest of Xinjiang",
+    "year": 1759,
+    "category": "conflict",
+    "description": "The Qing Dynasty conquered the Dzungar Khanate and incorporated Xinjiang, nearly doubling China's territory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "burmese-siamese-wars",
+    "friendly_name": "Burmese-Siamese Wars",
+    "year": 1765,
+    "category": "conflict",
+    "description": "Burma and Siam fought devastating wars, culminating in the Burmese destruction of Ayutthaya.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ayutthaya-fall",
+    "friendly_name": "Fall of Ayutthaya Kingdom - Burmese Invasion",
+    "year": 1767,
+    "category": "conflict",
+    "description": "Burmese forces sacked Ayutthaya, destroying the 400-year-old Siamese capital and its cultural treasures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tay-son-rebellion",
+    "friendly_name": "Tay Son Rebellion in Vietnam",
+    "year": 1771,
+    "category": "conflict",
+    "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "washington-appointed-commander",
+    "friendly_name": "Washington Appointed Commander",
+    "year": 1775,
+    "category": "conflict",
+    "description": "The Continental Congress appointed George Washington as commander-in-chief of the Continental Army.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "valley-forge-winter",
+    "friendly_name": "Valley Forge Encampment",
+    "year": 1777,
+    "category": "conflict",
+    "description": "Washington's army endured a brutal winter at Valley Forge but emerged as a disciplined fighting force.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "yorktown-surrender",
+    "friendly_name": "Yorktown Surrender",
+    "year": 1781,
+    "category": "conflict",
+    "description": "British General Cornwallis surrendered at Yorktown, effectively ending the American Revolutionary War.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "war-declared-austria",
+    "friendly_name": "War Declared Against Austria",
+    "year": 1792,
+    "category": "conflict",
+    "description": "Revolutionary France declared war on Austria, beginning over two decades of European revolutionary warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "barbary-wars",
+    "friendly_name": "Barbary Wars Begin",
+    "year": 1801,
+    "category": "conflict",
+    "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "napoleonic-wars-begin",
+    "friendly_name": "Napoleonic Wars Begin",
+    "year": 1803,
+    "category": "conflict",
+    "description": "Napoleon's France fought a series of coalition wars that reshaped the political map of Europe.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "peninsular-war",
+    "friendly_name": "Peninsular War Begins",
+    "year": 1808,
+    "category": "conflict",
+    "description": "Napoleon invaded Spain, provoking a brutal guerrilla war that drained French resources for six years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "napoleon-retreat-russia",
+    "friendly_name": "Napoleon's Russian Campaign",
+    "year": 1812,
+    "category": "conflict",
+    "description": "Napoleon invaded Russia with 600,000 troops but retreated in devastating winter conditions, losing most of his army.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "battle-waterloo-napoleon",
+    "friendly_name": "Battle of Waterloo",
+    "year": 1815,
+    "category": "conflict",
+    "description": "Wellington and Blucher defeated Napoleon at Waterloo, ending his rule and two decades of European war.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "zulu-military-innovation",
+    "friendly_name": "Zulu Develop Assegai Spear Tactics",
+    "year": 1818,
+    "category": "conflict",
+    "description": "Shaka Zulu revolutionized warfare with the short stabbing spear and disciplined regiment formations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mfecane-wars",
+    "friendly_name": "Mfecane Wars and Zulu Expansion",
+    "year": 1815,
+    "category": "conflict",
+    "description": "The Mfecane devastated southern Africa as Zulu expansion triggered mass migrations and widespread conflict.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "zulu-impis-regiment",
+    "friendly_name": "Zulu Impis Military Regiments Organized",
+    "year": 1818,
+    "category": "conflict",
+    "description": "Shaka organized Zulu warriors into age-based impis using the 'horns of the buffalo' encirclement tactic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sotho-moshoeshoe-reforms",
+    "friendly_name": "Moshoeshoe Reforms Sotho Military Organization",
+    "year": 1824,
+    "category": "conflict",
+    "description": "King Moshoeshoe I united the Sotho people at Thaba Bosiu, using diplomacy and defense to survive the Mfecane.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "maori-musket-wars",
+    "friendly_name": "Maori Musket Wars Transform Warfare",
+    "year": 1818,
+    "category": "conflict",
+    "description": "Maori tribes with European muskets launched devastating raids, reshaping New Zealand's tribal landscape.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "opium-wars-second",
+    "friendly_name": "Second Opium War",
+    "year": 1856,
+    "category": "conflict",
+    "description": "Britain and France forced China to open more ports and legalize the opium trade after military defeat.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "american-civil-war",
+    "friendly_name": "American Civil War Begins",
+    "year": 1861,
+    "category": "conflict",
+    "description": "Confederate forces fired on Fort Sumter, beginning a four-year war over slavery and national unity.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "blitzkrieg-tactics-deployed",
+    "friendly_name": "Blitzkrieg Tactics Deployed",
+    "year": 1939,
+    "category": "conflict",
+    "description": "Germany's invasion of Poland showcased blitzkrieg warfare, combining tanks, planes, and infantry for rapid victory.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "atomic-bomb-nagasaki-ww2",
+    "friendly_name": "Atomic Bomb on Nagasaki",
+    "year": 1945,
+    "category": "conflict",
+    "description": "The US dropped a plutonium bomb on Nagasaki three days after Hiroshima, hastening Japan's surrender.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "korean-war-begins-1950",
+    "friendly_name": "Korean War Begins",
+    "year": 1950,
+    "category": "conflict",
+    "description": "North Korea invaded the South, drawing in UN and Chinese forces in a Cold War proxy conflict.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hungarian-uprising-1956",
+    "friendly_name": "Hungarian Uprising",
+    "year": 1956,
+    "category": "conflict",
+    "description": "Hungarians revolted against Soviet control, but Soviet tanks crushed the uprising within weeks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vietnam-war-escalates-1964",
+    "friendly_name": "Vietnam War Escalates",
+    "year": 1964,
+    "category": "conflict",
+    "description": "The Gulf of Tonkin incident led to massive US military escalation in Vietnam.",
+    "difficulty": "easy"
   }
 ]

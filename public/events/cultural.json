@@ -4944,5 +4944,2973 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Elizabeth_II",
     "color": "#202122",
     "text_color": "light"
+  },
+  {
+    "name": "aboriginal-australian",
+    "friendly_name": "Aboriginal Australian Culture Established",
+    "year": -50000,
+    "category": "cultural",
+    "description": "Aboriginal Australians developed one of the world's oldest continuous cultures across the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indus-valley-civilization",
+    "friendly_name": "Indus Valley Civilization Peak",
+    "year": -2600,
+    "category": "cultural",
+    "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aboriginal-rock-art",
+    "friendly_name": "Aboriginal Rock Art Traditions",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Aboriginal Australians created elaborate rock art depicting animals, spirits, and ceremonies across the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aboriginal-songlines-mapping",
+    "friendly_name": "Aboriginal Songlines Map Australian Continent",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Songlines formed an intricate network of routes across Australia, encoding geography in oral tradition.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aboriginal-uluru-site",
+    "friendly_name": "Uluru Sacred Site in Aboriginal Culture",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Uluru became a central sacred site in Aboriginal spiritual practice in Australia's Northern Territory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lapita-culture-expansion",
+    "friendly_name": "Lapita Culture Spreads Through Melanesia",
+    "year": -1200,
+    "category": "cultural",
+    "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aboriginal-didgeridoo-ceremonial",
+    "friendly_name": "Didgeridoo Used in Aboriginal Ceremonies",
+    "year": -1000,
+    "category": "cultural",
+    "description": "The didgeridoo became integral to Aboriginal ceremonial life in northern Australia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ovid-metamorphoses",
+    "friendly_name": "Ovid Writes Metamorphoses",
+    "year": 8,
+    "category": "cultural",
+    "description": "Roman poet Ovid completed his mythological epic of transformations, one of Western literature's most influential works.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "livy-ab-urbe-condita",
+    "friendly_name": "Livy's Ab Urbe Condita Written",
+    "year": -27,
+    "category": "cultural",
+    "description": "Roman historian Livy began his monumental 142-volume history of Rome from its founding.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "virgil-aeneid-composition",
+    "friendly_name": "Virgil Composes the Aeneid",
+    "year": -29,
+    "category": "cultural",
+    "description": "Virgil composed Rome's national epic linking Roman origins to the Trojan hero Aeneas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "augustan-age-begins",
+    "friendly_name": "Augustan Age of Roman Literature Begins",
+    "year": -27,
+    "category": "cultural",
+    "description": "Augustus's reign inaugurated a golden age of Latin literature with Virgil, Horace, and Ovid.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "paul-apostle-missions",
+    "friendly_name": "Apostle Paul's Missionary Journeys",
+    "year": 47,
+    "category": "cultural",
+    "description": "Paul of Tarsus undertook missionary journeys across the Mediterranean, spreading Christianity to Gentile communities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "council-of-jerusalem",
+    "friendly_name": "Council of Jerusalem Addresses Jewish Law",
+    "year": 49,
+    "category": "cultural",
+    "description": "Early Christian leaders met in Jerusalem and decided Gentile converts need not follow all Jewish law.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "thomas-apostle-india",
+    "friendly_name": "Apostle Thomas Reaches India",
+    "year": 52,
+    "category": "cultural",
+    "description": "According to tradition, the Apostle Thomas brought Christianity to the Malabar Coast of India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lucan-pharsalia",
+    "friendly_name": "Lucan Writes Pharsalia",
+    "year": 65,
+    "category": "cultural",
+    "description": "Roman poet Lucan composed his epic poem about the civil war between Caesar and Pompey.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tacitus-histories-written",
+    "friendly_name": "Tacitus' Histories Written",
+    "year": 105,
+    "category": "cultural",
+    "description": "Roman historian Tacitus wrote his Histories covering the turbulent Year of the Four Emperors and its aftermath.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-culture",
+    "friendly_name": "Nazca Culture Desert Lines Created",
+    "year": 100,
+    "category": "cultural",
+    "description": "The Nazca people created enormous geoglyphs in Peru's desert, visible only from above.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ancestral-puebloan-development",
+    "friendly_name": "Ancestral Puebloan Culture Develops",
+    "year": 100,
+    "category": "cultural",
+    "description": "Ancestral Puebloan peoples began developing distinctive architecture and agriculture in the American Southwest.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-fresco-paintings",
+    "friendly_name": "Roman Fresco Painting Tradition",
+    "year": 70,
+    "category": "cultural",
+    "description": "Roman fresco painting flourished, with masterworks preserved at Pompeii and Herculaneum.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kushana-buddhism",
+    "friendly_name": "Kushana Empire Spreads Buddhism Eastward",
+    "year": 150,
+    "category": "cultural",
+    "description": "Under Kanishka, the Kushan Empire promoted Buddhism and facilitated its spread along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marcus-aurelius-meditations",
+    "friendly_name": "Marcus Aurelius' Meditations Written",
+    "year": 170,
+    "category": "cultural",
+    "description": "The Roman emperor wrote his Stoic philosophical journal while campaigning on the empire's frontiers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "apuleius-golden-ass",
+    "friendly_name": "Apuleius Writes The Golden Ass",
+    "year": 170,
+    "category": "cultural",
+    "description": "Apuleius wrote the only complete surviving Latin novel, a comic tale of magical transformation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "library-pergamum",
+    "friendly_name": "Library of Pergamum Flourishes",
+    "year": -170,
+    "category": "cultural",
+    "description": "The Library of Pergamum rivaled Alexandria as a center of learning with 200,000 scrolls.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ajanta-caves",
+    "friendly_name": "Ajanta Caves Buddhist Art",
+    "year": 450,
+    "category": "cultural",
+    "description": "Indian artisans carved and painted elaborate Buddhist murals in the rock-cut Ajanta Caves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-lines",
+    "friendly_name": "Nazca Lines Construction Period",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Nazca civilization in Peru created massive desert geoglyphs depicting animals and geometric shapes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "buddhism-spreads-central-asia",
+    "friendly_name": "Buddhism Spreads Through Central Asia",
+    "year": 200,
+    "category": "cultural",
+    "description": "Buddhist monks and merchants carried the religion along Silk Road trade routes into Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mogollon-culture-agriculture",
+    "friendly_name": "Mogollon Culture Practices Agriculture",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Mogollon people developed farming communities in the mountains of the American Southwest.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mahabharata-complete",
+    "friendly_name": "Mahabharata Epic Completed",
+    "year": 200,
+    "category": "cultural",
+    "description": "India's great Sanskrit epic reached its final form, becoming the world's longest poem at 200,000 verses.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ramayana-classic-version",
+    "friendly_name": "Ramayana Epic Standardized",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Ramayana, attributed to Valmiki, reached its classical form as a foundational Hindu epic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "silk-road-textile-exchange",
+    "friendly_name": "Silk Road Textile Trade and Exchange",
+    "year": 200,
+    "category": "cultural",
+    "description": "Silk and textile trade along the Silk Road facilitated cultural exchange between China, Central Asia, and Rome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zoroastrianism-state-religion-persia",
+    "friendly_name": "Zoroastrianism as State Religion of Persia",
+    "year": 224,
+    "category": "cultural",
+    "description": "The Sassanid Empire established Zoroastrianism as the official state religion of Persia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cyprian-bishop-carthage",
+    "friendly_name": "Cyprian Bishop of Carthage Leadership",
+    "year": 249,
+    "category": "cultural",
+    "description": "Cyprian became Bishop of Carthage, shaping early Christian theology on church unity and rebaptism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mayan-written-calendar",
+    "friendly_name": "Mayan Written Calendar System Develops",
+    "year": -100,
+    "category": "cultural",
+    "description": "The Maya developed sophisticated Long Count and Calendar Round systems for tracking time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hopewell-mound-group",
+    "friendly_name": "Hopewell Mound Group Burial Rites",
+    "year": 100,
+    "category": "cultural",
+    "description": "The Hopewell culture built elaborate burial mounds and maintained vast trade networks across eastern North America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ashoka-rock-edicts",
+    "friendly_name": "Ashoka Rock Edicts Spread Buddhism",
+    "year": -260,
+    "category": "cultural",
+    "description": "Emperor Ashoka inscribed Buddhist principles on pillars and rocks across the Indian subcontinent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nazca-settlement-lines",
+    "friendly_name": "Nazca Culture Creates Geoglyphs",
+    "year": 300,
+    "category": "cultural",
+    "description": "The Nazca people etched enormous figures into Peru's arid plains for ritual and astronomical purposes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "greek-mosaic-tradition",
+    "friendly_name": "Greek Mosaic Art Tradition Flourishes",
+    "year": -300,
+    "category": "cultural",
+    "description": "Greek artisans perfected pebble and tessera mosaic techniques, notably at Pella in Macedonia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "diocletian-persecution-christians",
+    "friendly_name": "Diocletian Persecution of Christians",
+    "year": 303,
+    "category": "cultural",
+    "description": "Emperor Diocletian launched the most severe Roman persecution of Christians, destroying churches and scriptures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "donatist-controversy",
+    "friendly_name": "Donatist Schism in African Christianity",
+    "year": 311,
+    "category": "cultural",
+    "description": "A schism erupted in North African Christianity over whether clergy who lapsed during persecution could serve.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "constantine-conversion",
+    "friendly_name": "Constantine's Conversion to Christianity",
+    "year": 312,
+    "category": "cultural",
+    "description": "Emperor Constantine converted to Christianity after the Battle of Milvian Bridge, transforming Roman religion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arianism-controversy",
+    "friendly_name": "Arianism Spreads in Christian Church",
+    "year": 318,
+    "category": "cultural",
+    "description": "Arius of Alexandria taught that Christ was created, sparking a major theological crisis in early Christianity.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "council-of-antioch",
+    "friendly_name": "Council of Antioch Addresses Arianism",
+    "year": 341,
+    "category": "cultural",
+    "description": "Church leaders convened at Antioch to address the Arian controversy over the nature of Christ.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "alexander-spreading-hellenism",
+    "friendly_name": "Alexander the Great Spreads Hellenism",
+    "year": -330,
+    "category": "cultural",
+    "description": "Alexander's conquests spread Greek language, culture, and philosophy across the Near East and Central Asia.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "aksumite-christianity",
+    "friendly_name": "Aksumite Empire Adopts Christianity",
+    "year": 330,
+    "category": "cultural",
+    "description": "King Ezana of Aksum in modern Ethiopia converted to Christianity, making it one of the first Christian states.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wang-xifeng-calligraphy",
+    "friendly_name": "Wang Xi-Zhi's Calligraphy Codified",
+    "year": 353,
+    "category": "cultural",
+    "description": "Wang Xizhi created the Preface to the Orchid Pavilion, revered as the greatest Chinese calligraphy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moche-portrait-pottery",
+    "friendly_name": "Moche Portrait Pottery Production Peak",
+    "year": 350,
+    "category": "cultural",
+    "description": "Moche artisans in Peru created remarkably realistic ceramic portrait vessels of individuals.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "legalist-philosophy-qi",
+    "friendly_name": "Legalism Ascendant in Qi State",
+    "year": -360,
+    "category": "cultural",
+    "description": "Legalist philosophy gained influence in the Chinese state of Qi during the Warring States period.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "theodosius-christianity-official",
+    "friendly_name": "Theodosius Makes Christianity Official",
+    "year": 380,
+    "category": "cultural",
+    "description": "Emperor Theodosius declared Nicene Christianity the official religion of the Roman Empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "plato-founds-academy",
+    "friendly_name": "Plato Founds the Academy",
+    "year": -387,
+    "category": "cultural",
+    "description": "Plato established the Academy in Athens, the Western world's first institution of higher learning.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "cassian-monasticism",
+    "friendly_name": "Cassian Founds Monastic Traditions",
+    "year": 415,
+    "category": "cultural",
+    "description": "John Cassian founded monasteries in Marseille and wrote influential guides to monastic life.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "moche-civilization",
+    "friendly_name": "Moche Civilization Peak",
+    "year": 400,
+    "category": "cultural",
+    "description": "The Moche civilization reached its zenith in coastal Peru with monumental pyramids and fine metalwork.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gupta-golden-age",
+    "friendly_name": "Gupta Golden Age - Science and Mathematics",
+    "year": 400,
+    "category": "cultural",
+    "description": "India's Gupta dynasty presided over breakthroughs in mathematics, astronomy, and Sanskrit literature.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maya-writing-system",
+    "friendly_name": "Maya Hieroglyphic Writing System Develops",
+    "year": -300,
+    "category": "cultural",
+    "description": "The Maya developed one of the few fully independent writing systems in human history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nestorian-missionaries-asia",
+    "friendly_name": "Nestorian Missionaries Spread to Central Asia",
+    "year": 450,
+    "category": "cultural",
+    "description": "Nestorian Christian missionaries carried their faith along trade routes into Persia and Central Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zoroastrian-avesta",
+    "friendly_name": "Zoroastrian Avesta Codified",
+    "year": 400,
+    "category": "cultural",
+    "description": "The Sassanid Empire compiled Zoroastrian sacred texts into the written Avesta canon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kalidasa-shakuntala",
+    "friendly_name": "Kalidasa Writes Shakuntala Mahabharata",
+    "year": 400,
+    "category": "cultural",
+    "description": "Kalidasa wrote Abhijnanasakuntalam, considered the finest Sanskrit drama and a masterpiece of world literature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kalidasa-drama",
+    "friendly_name": "Kalidasa Pioneers Sanskrit Drama",
+    "year": 400,
+    "category": "cultural",
+    "description": "Kalidasa elevated Sanskrit drama to its peak during the Gupta period with poetic plays and epics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scythian-mound-burials",
+    "friendly_name": "Scythian Royal Mound Burials Peak",
+    "year": -400,
+    "category": "cultural",
+    "description": "Scythian nomads buried rulers in elaborate kurgans across the Eurasian steppe with gold artifacts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pelagian-controversy",
+    "friendly_name": "Pelagian Controversy on Free Will",
+    "year": 410,
+    "category": "cultural",
+    "description": "Pelagius challenged Augustine's doctrine of original sin, sparking a major debate on grace and free will.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "euripides-medea",
+    "friendly_name": "Euripides Writes Major Tragedies",
+    "year": -431,
+    "category": "cultural",
+    "description": "Euripides premiered Medea in Athens, revolutionizing Greek tragedy with psychologically complex characters.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sophocles-oedipus",
+    "friendly_name": "Sophocles Writes Oedipus Rex",
+    "year": -429,
+    "category": "cultural",
+    "description": "Sophocles wrote the definitive Greek tragedy about fate and self-knowledge, still performed worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nestorian-schism",
+    "friendly_name": "Nestorian Schism Divides Eastern Church",
+    "year": 431,
+    "category": "cultural",
+    "description": "The Council of Ephesus condemned Nestorius, splitting the Eastern church over the nature of Christ.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "saint-patrick-ireland",
+    "friendly_name": "Saint Patrick Brings Christianity to Ireland",
+    "year": 432,
+    "category": "cultural",
+    "description": "Saint Patrick began his mission to convert Ireland, becoming the island's patron saint.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "democritus-atomism",
+    "friendly_name": "Democritus Proposes Atomic Theory",
+    "year": -440,
+    "category": "cultural",
+    "description": "Greek philosopher Democritus proposed that all matter consists of indivisible atoms in a void.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aristophanes-comedy",
+    "friendly_name": "Aristophanes Pioneers Greek Comedy",
+    "year": -425,
+    "category": "cultural",
+    "description": "Aristophanes dominated Athenian comedy with satirical plays mocking politics, philosophy, and society.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bhartrihari-poetry",
+    "friendly_name": "Bhartrihari Writes Subhasita Poetry",
+    "year": 450,
+    "category": "cultural",
+    "description": "Indian poet Bhartrihari composed three centuries of verses on love, ethics, and renunciation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "nasca-settlement-cahuachi",
+    "friendly_name": "Cahuachi Religious Center Flourishes",
+    "year": 200,
+    "category": "cultural",
+    "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "monophysite-controversy",
+    "friendly_name": "Monophysite Controversy in Christianity",
+    "year": 451,
+    "category": "cultural",
+    "description": "The Council of Chalcedon rejected Monophysitism, splitting churches in Egypt, Syria, and Armenia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aeschylus-tragedy-origins",
+    "friendly_name": "Aeschylus Develops Greek Tragedy Form",
+    "year": -472,
+    "category": "cultural",
+    "description": "Aeschylus introduced a second actor and complex dialogue, transforming Greek tragedy as an art form.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nok-civilization",
+    "friendly_name": "Nok Civilization in West Africa",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Nok culture in Nigeria produced some of sub-Saharan Africa's earliest terracotta sculptures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "zapotec-monte-alban",
+    "friendly_name": "Zapotec Culture at Monte Alban",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Zapotec founded Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ancestral-dorset",
+    "friendly_name": "Ancestral Dorset Culture Arctic Region",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Dorset culture adapted to life in the Arctic with specialized hunting technology and ivory carvings.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "nok-civilization-nigeria",
+    "friendly_name": "Nok Civilization Flourishes in Nigeria",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Nok people of central Nigeria created distinctive terracotta figurines and early iron smelting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "takshashila-university-scholars",
+    "friendly_name": "Takshashila University Advances Scholarship",
+    "year": -500,
+    "category": "cultural",
+    "description": "Takshashila (Taxila) in ancient India became a leading center of learning for Buddhist and Hindu scholars.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "boethius-logic-translation",
+    "friendly_name": "Boethius Translates Greek Logic",
+    "year": 510,
+    "category": "cultural",
+    "description": "Boethius translated Aristotle's logical works into Latin, preserving Greek philosophy for medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bamiyan-buddha-colossal",
+    "friendly_name": "Bamiyan Colossal Buddha Completed",
+    "year": 550,
+    "category": "cultural",
+    "description": "The 55-meter Bamiyan Buddha was carved into a cliff in Afghanistan, the tallest standing Buddha of its time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "adena-mound-burials",
+    "friendly_name": "Adena Mound Burial Complex Peak",
+    "year": -300,
+    "category": "cultural",
+    "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "boethius-consolation",
+    "friendly_name": "Boethius Writes Consolation of Philosophy",
+    "year": 524,
+    "category": "cultural",
+    "description": "Boethius wrote his philosophical masterwork while imprisoned, blending Platonic thought with Christian themes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baekje-five-temple-mission",
+    "friendly_name": "Baekje Buddhist Mission to Japan",
+    "year": 538,
+    "category": "cultural",
+    "description": "The Korean kingdom of Baekje formally introduced Buddhism to Japan, transforming Japanese culture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "greek-vase-painting-golden-age",
+    "friendly_name": "Greek Vase Painting Golden Age",
+    "year": -530,
+    "category": "cultural",
+    "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dunhuang-mogao-caves",
+    "friendly_name": "Mogao Caves Buddhist Complex Expanded",
+    "year": 550,
+    "category": "cultural",
+    "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "columba-scotland-monasticism",
+    "friendly_name": "Columba Founds Monastery on Iona",
+    "year": 563,
+    "category": "cultural",
+    "description": "Irish monk Columba founded a monastery on the island of Iona, spreading Christianity across Scotland.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "augustine-mission-britain",
+    "friendly_name": "Augustine's Mission to Britain",
+    "year": 597,
+    "category": "cultural",
+    "description": "Pope Gregory sent Augustine to convert the Anglo-Saxons, establishing the English church at Canterbury.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irish-monasticism-height",
+    "friendly_name": "Irish Monasticism Golden Age",
+    "year": 600,
+    "category": "cultural",
+    "description": "Irish monasteries became Europe's premier centers of learning, preserving classical texts through the Dark Ages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-classical-period",
+    "friendly_name": "Maya Classical Period Flourishes",
+    "year": 600,
+    "category": "cultural",
+    "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moche-civilization-peru",
+    "friendly_name": "Moche Civilization Flourishes in Peru",
+    "year": 450,
+    "category": "cultural",
+    "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fremont-culture",
+    "friendly_name": "Fremont Culture of Great Basin",
+    "year": 600,
+    "category": "cultural",
+    "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "byzantine-mosaic-tradition",
+    "friendly_name": "Byzantine Mosaic Art Tradition Peak",
+    "year": 547,
+    "category": "cultural",
+    "description": "Byzantine mosaic art reached its peak at Ravenna's San Vitale with luminous gold-ground compositions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irish-monastery-art",
+    "friendly_name": "Irish Monastery Art Tradition",
+    "year": 600,
+    "category": "cultural",
+    "description": "Irish monks developed distinctive interlace and illumination styles in manuscript art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-pottery-style",
+    "friendly_name": "Nazca Polychrome Pottery Flourishes",
+    "year": 400,
+    "category": "cultural",
+    "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "goguryeo-murals-tombs",
+    "friendly_name": "Goguryeo Tomb Murals Peak Artistic Period",
+    "year": 550,
+    "category": "cultural",
+    "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "spread-of-islam-arabian-peninsula",
+    "friendly_name": "Spread of Islam Across Arabian Peninsula",
+    "year": 630,
+    "category": "cultural",
+    "description": "Islam spread rapidly across the Arabian Peninsula following Muhammad's conquest of Mecca.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "samarkand-zoroastrian-temple",
+    "friendly_name": "Zoroastrian Fire Temple Built in Samarkand",
+    "year": 500,
+    "category": "cultural",
+    "description": "A Zoroastrian fire temple was constructed in Samarkand, reflecting the religion's reach along the Silk Road.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hejira-prophet-muhammad",
+    "friendly_name": "Hejira of Prophet Muhammad",
+    "year": 622,
+    "category": "cultural",
+    "description": "Muhammad's migration from Mecca to Medina marks year one of the Islamic calendar.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sutton-hoo-burial",
+    "friendly_name": "Sutton Hoo Ship Burial",
+    "year": 625,
+    "category": "cultural",
+    "description": "An Anglo-Saxon king was buried with treasure in a ship at Sutton Hoo in Suffolk, England.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "isidore-seville-encyclopedia",
+    "friendly_name": "Isidore of Seville's Encyclopaedia",
+    "year": 630,
+    "category": "cultural",
+    "description": "Isidore of Seville compiled the Etymologiae, a vast encyclopedia preserving classical knowledge for medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sappho-poetry",
+    "friendly_name": "Sappho's Poetry Collections",
+    "year": -600,
+    "category": "cultural",
+    "description": "Greek poet Sappho composed lyric poetry on the island of Lesbos, celebrated across the ancient world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moche-ceramics-art",
+    "friendly_name": "Moche Ceramic Art and Portraiture",
+    "year": 400,
+    "category": "cultural",
+    "description": "Moche potters in Peru produced highly realistic ceramic portraits and narrative scene vessels.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "durrow-gospel-manuscript",
+    "friendly_name": "Book of Durrow Illuminated Manuscript",
+    "year": 680,
+    "category": "cultural",
+    "description": "The Book of Durrow, one of the earliest insular illuminated manuscripts, blended Celtic and Anglo-Saxon art.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "umayyad-mosaics-art",
+    "friendly_name": "Umayyad Mosaic Art and Architecture",
+    "year": 710,
+    "category": "cultural",
+    "description": "The Umayyad Caliphate produced magnificent mosaics at the Dome of the Rock and the Great Mosque of Damascus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chavin-culture",
+    "friendly_name": "Chavin Culture Peak",
+    "year": -700,
+    "category": "cultural",
+    "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tang-poetry-golden-age",
+    "friendly_name": "Tang Dynasty Poetry Golden Age",
+    "year": 720,
+    "category": "cultural",
+    "description": "Tang China's golden age of poetry produced masters like Li Bai and Du Fu, still revered today.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tang-luoyang-capital",
+    "friendly_name": "Chang'an Becomes Cosmopolitan Capital",
+    "year": 700,
+    "category": "cultural",
+    "description": "Tang dynasty Chang'an became the world's largest city and a cosmopolitan hub of Silk Road trade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "islamic-calligraphy-tradition",
+    "friendly_name": "Islamic Calligraphy Tradition Established",
+    "year": 700,
+    "category": "cultural",
+    "description": "Islamic calligraphy emerged as a supreme art form for transcribing the Quran in early Arabic scripts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lindisfarne-gospels",
+    "friendly_name": "Lindisfarne Gospels Created",
+    "year": 715,
+    "category": "cultural",
+    "description": "Monks at Lindisfarne created a masterpiece of insular illuminated manuscript art in Northumbria.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anglo-saxon-manuscript-art",
+    "friendly_name": "Anglo-Saxon Manuscript Illumination",
+    "year": 700,
+    "category": "cultural",
+    "description": "Anglo-Saxon scribes developed distinctive manuscript illumination blending Celtic, Germanic, and Mediterranean styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "beowulf-composition",
+    "friendly_name": "Beowulf Composition",
+    "year": 725,
+    "category": "cultural",
+    "description": "The oldest surviving English epic poem tells of a hero who slays monsters in Scandinavian lands.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "byzantine-image-dispute",
+    "friendly_name": "Byzantine Iconoclasm Period",
+    "year": 726,
+    "category": "cultural",
+    "description": "Emperor Leo III banned religious icons, sparking a century-long crisis in the Byzantine Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bede-ecclesiastical-history",
+    "friendly_name": "Bede Writes Ecclesiastical History",
+    "year": 731,
+    "category": "cultural",
+    "description": "The Venerable Bede completed his history of the English church, earning the title Father of English History.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "copan-ruler-18-rabbit",
+    "friendly_name": "Copan Stela Erection Under 18 Rabbit",
+    "year": 731,
+    "category": "cultural",
+    "description": "Maya ruler 18 Rabbit commissioned elaborate stelae at Copan during the city's artistic peak.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tang-cosmopolitan-cities",
+    "friendly_name": "Tang Dynasty Cosmopolitan Cities - Chang'an Peak",
+    "year": 750,
+    "category": "cultural",
+    "description": "Tang dynasty cities like Chang'an hosted a million residents from across Eurasia at their peak.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-cities-peak",
+    "friendly_name": "Maya City-States Reach Population Peak",
+    "year": 750,
+    "category": "cultural",
+    "description": "Maya city-states reached peak populations of over 100,000 before the Classic period collapse.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "seokguram-grotto",
+    "friendly_name": "Seokguram Grotto Buddha Completed",
+    "year": 774,
+    "category": "cultural",
+    "description": "Korea's Silla kingdom completed the Seokguram Grotto, housing a masterful granite Buddha statue.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-olympic-games",
+    "friendly_name": "First Olympic Games",
+    "year": -776,
+    "category": "cultural",
+    "description": "The first Olympic Games were held at Olympia in Greece, honoring Zeus with athletic competitions.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "archaic-period-greece",
+    "friendly_name": "Archaic Period of Greece Begins",
+    "year": -800,
+    "category": "cultural",
+    "description": "Greece entered the Archaic period with the rise of city-states, colonization, and the Greek alphabet.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mayan-classic-period",
+    "friendly_name": "Mayan Classic Period Peak",
+    "year": 800,
+    "category": "cultural",
+    "description": "Maya civilization reached its architectural and artistic peak across the Yucatan and Guatemala.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "adena-culture",
+    "friendly_name": "Adena Culture Eastern North America",
+    "year": -800,
+    "category": "cultural",
+    "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mon-buddhism",
+    "friendly_name": "Mon Kingdom Theravada Buddhism",
+    "year": 600,
+    "category": "cultural",
+    "description": "The Mon people of Southeast Asia became key transmitters of Theravada Buddhism in the region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "homer-iliad-odyssey",
+    "friendly_name": "Homer Composes Iliad and Odyssey",
+    "year": -750,
+    "category": "cultural",
+    "description": "Homer composed the foundational epics of Western literature about the Trojan War and Odysseus's journey home.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "byzantine-icon-painting",
+    "friendly_name": "Byzantine Icon Painting Formalized",
+    "year": 843,
+    "category": "cultural",
+    "description": "After iconoclasm ended, Byzantine icon painting was formalized with strict theological conventions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "japanese-calligraphy-art",
+    "friendly_name": "Japanese Calligraphy Art Tradition",
+    "year": 800,
+    "category": "cultural",
+    "description": "Japanese calligraphy emerged as a refined art form during the early Heian period, adapting Chinese styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "java-temple-sculpture",
+    "friendly_name": "Javanese Hindu-Buddhist Temple Sculpture",
+    "year": 800,
+    "category": "cultural",
+    "description": "Javanese artisans carved elaborate reliefs at Borobudur and Prambanan, blending Hindu and Buddhist art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "la-venta-olmec",
+    "friendly_name": "La Venta Olmec Ceremonial Center",
+    "year": -900,
+    "category": "cultural",
+    "description": "La Venta became the Olmec civilization's major center with colossal stone heads and pyramid complexes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bayt-al-hikma",
+    "friendly_name": "House of Wisdom Established in Baghdad",
+    "year": 830,
+    "category": "cultural",
+    "description": "Caliph al-Ma'mun expanded Baghdad's House of Wisdom into a major center for translating Greek, Persian, and Indian texts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arabian-nights-codification",
+    "friendly_name": "Arabian Nights Stories Compiled and Codified",
+    "year": 850,
+    "category": "cultural",
+    "description": "The One Thousand and One Nights took shape as Arabic translators compiled Persian, Indian, and Arab folk tales into a frame narrative.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gregorian-chant-codified",
+    "friendly_name": "Gregorian Chant Tradition Codified",
+    "year": 850,
+    "category": "cultural",
+    "description": "Carolingian monks standardized liturgical chant melodies, attributing the tradition to Pope Gregory I.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "split-sunni-shia-islam",
+    "friendly_name": "Sunni-Shia Split Formalized",
+    "year": 874,
+    "category": "cultural",
+    "description": "The occultation of the Twelfth Imam solidified the Sunni-Shia theological divide over succession from Prophet Muhammad.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "igbo-ukwu-bronzes",
+    "friendly_name": "Igbo Ukwu Bronze Culture in Nigeria",
+    "year": 900,
+    "category": "cultural",
+    "description": "Artisans in southeastern Nigeria produced sophisticated bronze castings using the lost-wax technique, among Africa's earliest.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "yoruba-ife-kingdom",
+    "friendly_name": "Yoruba Ife Kingdom Brass Sculpture",
+    "year": 1100,
+    "category": "cultural",
+    "description": "The Ife kingdom in present-day Nigeria produced naturalistic brass and terracotta portrait sculptures of remarkable refinement.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "organum-medieval-polyphony",
+    "friendly_name": "Organum and Medieval Polyphony Develops",
+    "year": 900,
+    "category": "cultural",
+    "description": "Medieval musicians began adding parallel vocal lines to plainchant, creating the earliest form of Western polyphonic music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "monastic-scriptoriums",
+    "friendly_name": "Monastic Scriptoriums Peak as Learning Centers",
+    "year": 900,
+    "category": "cultural",
+    "description": "Benedictine monasteries across Europe served as primary centers for copying manuscripts and preserving classical knowledge.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bukhara-samanid-scholars",
+    "friendly_name": "Bukhara Samanid Scholarship Golden Age",
+    "year": 940,
+    "category": "cultural",
+    "description": "Under the Samanid dynasty, Bukhara became a leading center of Persian and Islamic scholarship, nurturing scholars like Ibn Sina.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "constantine-vii-purple-porphyrogenitus",
+    "friendly_name": "Constantine VII Cultural Flowering",
+    "year": 945,
+    "category": "cultural",
+    "description": "Emperor Constantine VII Porphyrogennetos patronized encyclopedic compilations of Byzantine knowledge and court ceremony.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "macedonian-renaissance-byzant",
+    "friendly_name": "Macedonian Renaissance Constantinople",
+    "year": 950,
+    "category": "cultural",
+    "description": "The Macedonian dynasty oversaw a revival of classical learning and art in Constantinople spanning the 9th-11th centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chinese-landscape-painting",
+    "friendly_name": "Chinese Landscape Painting School Established",
+    "year": 960,
+    "category": "cultural",
+    "description": "Northern Song dynasty painters like Fan Kuan and Guo Xi established monumental landscape painting as China's highest art form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heian-aesthetic-culture",
+    "friendly_name": "Heian Court Aesthetic Traditions Peak",
+    "year": 1000,
+    "category": "cultural",
+    "description": "Japan's Heian court cultivated refined aesthetic ideals of mono no aware in art, poetry, and daily life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fatimid-al-azhar-mosque",
+    "friendly_name": "Al-Azhar Mosque and University Founded",
+    "year": 970,
+    "category": "cultural",
+    "description": "The Fatimid dynasty founded Al-Azhar in Cairo, which became one of the world's oldest continuously operating universities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "song-neo-confucianism",
+    "friendly_name": "Neo-Confucianism Develops During Song Dynasty",
+    "year": 1050,
+    "category": "cultural",
+    "description": "Song dynasty scholars like Zhou Dunyi integrated Buddhist and Daoist ideas into Confucian thought, reshaping East Asian philosophy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heian-period-cultural-peak",
+    "friendly_name": "Heian Period Cultural Peak",
+    "year": 1000,
+    "category": "cultural",
+    "description": "Japan's Heian period reached its cultural zenith with distinctive literature, calligraphy, and Buddhist art in Kyoto.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "samoan-settlement-culture",
+    "friendly_name": "Samoan Settlement and Culture Development",
+    "year": -1000,
+    "category": "cultural",
+    "description": "Lapita peoples settled Samoa, developing the foundational Polynesian culture including navigation, oral traditions, and social hierarchy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vedic-brahmanism",
+    "friendly_name": "Vedic Brahmanism Foundation",
+    "year": -1000,
+    "category": "cultural",
+    "description": "Brahmanical traditions of ritual sacrifice, caste structure, and Vedic scripture became central to South Asian religious life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "yoruba-ife-terra-cotta",
+    "friendly_name": "Yoruba Ife Terracotta Art",
+    "year": 1100,
+    "category": "cultural",
+    "description": "Artists in the Yoruba city of Ife created lifelike terracotta portrait heads with a naturalism unmatched in medieval Africa.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sei-shonagon-pillow-book",
+    "friendly_name": "Sei Shonagon Writes Pillow Book",
+    "year": 1002,
+    "category": "cultural",
+    "description": "Japanese court lady Sei Shonagon composed her witty collection of observations, lists, and anecdotes about Heian court life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "islamic-bookbinding",
+    "friendly_name": "Islamic Bookbinding Art Tradition",
+    "year": 1000,
+    "category": "cultural",
+    "description": "Islamic artisans perfected elaborate leather bookbinding with tooled geometric patterns and gold-stamped decorations.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "confucian-printing",
+    "friendly_name": "Confucian Texts Printing Established in China",
+    "year": 932,
+    "category": "cultural",
+    "description": "The Chinese government commissioned woodblock printing of the Confucian classics, standardizing scholarship across the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "murasaki-shikibu-genji",
+    "friendly_name": "Murasaki Shikibu Writes Tale of Genji",
+    "year": 1008,
+    "category": "cultural",
+    "description": "Japanese noblewoman Murasaki Shikibu composed what is often considered the world's first novel at the Heian court.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "heian-women-literature",
+    "friendly_name": "Heian Women Writers and Court Literature",
+    "year": 1000,
+    "category": "cultural",
+    "description": "Female authors at Japan's Heian court produced masterworks in prose and poetry using the Japanese kana writing system.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mi-fu-landscape-art",
+    "friendly_name": "Mi Fu Develops Landscape Painting Technique",
+    "year": 1090,
+    "category": "cultural",
+    "description": "Song dynasty artist Mi Fu pioneered a misty, impressionistic landscape style using ink dots instead of outlines.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "madrasa-education-flourishes",
+    "friendly_name": "Madrasa Educational System Flourishes",
+    "year": 1067,
+    "category": "cultural",
+    "description": "The Nizamiyya madrasa system spread across the Islamic world, formalizing religious and legal education.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "su-shi-literati-painting",
+    "friendly_name": "Su Shi Pioneers Literati Painting Tradition",
+    "year": 1080,
+    "category": "cultural",
+    "description": "Song dynasty polymath Su Shi championed painting as personal expression for scholar-officials rather than mere craft.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "dom-university-bologna",
+    "friendly_name": "University of Bologna Founded",
+    "year": 1088,
+    "category": "cultural",
+    "description": "Europe's oldest university was established in Bologna, Italy, initially focused on the study of Roman law.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "urban-ii",
+    "friendly_name": "Pope Urban II Launches Crusade",
+    "year": 1095,
+    "category": "cultural",
+    "description": "Pope Urban II called for a holy crusade at the Council of Clermont, launching centuries of religious warfare in the Holy Land.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "al-ghazali-philosophy",
+    "friendly_name": "Al-Ghazali Reconciles Islam and Philosophy",
+    "year": 1095,
+    "category": "cultural",
+    "description": "Persian theologian al-Ghazali wrote The Incoherence of the Philosophers, reshaping Islamic thought on faith and reason.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dom-university-oxford",
+    "friendly_name": "University of Oxford Founded",
+    "year": 1096,
+    "category": "cultural",
+    "description": "Teaching at Oxford began in the late 11th century, growing into one of the English-speaking world's oldest universities.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mississippian-culture",
+    "friendly_name": "Mississippian Culture Peak",
+    "year": 1100,
+    "category": "cultural",
+    "description": "The Mississippian mound-building civilization centered at Cahokia reached its peak population of up to 20,000 near modern St. Louis.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ancestral-puebloans",
+    "friendly_name": "Ancestral Puebloans Peak",
+    "year": 1100,
+    "category": "cultural",
+    "description": "Ancestral Puebloans built elaborate cliff dwellings and Great Houses at Mesa Verde and Chaco Canyon in the American Southwest.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "champa-hindu-culture",
+    "friendly_name": "Champa Hindu Kingdom Culture Peak",
+    "year": 1100,
+    "category": "cultural",
+    "description": "The Champa kingdom in present-day Vietnam flourished with Hindu temple towers and Sanskrit-influenced art and religion.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mixtec-codices",
+    "friendly_name": "Mixtec Codices Recording History and Mythology",
+    "year": 1100,
+    "category": "cultural",
+    "description": "Mixtec scribes in Mesoamerica created pictographic manuscripts recording genealogies, conquests, and religious ceremonies.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cathedral-school-emergence",
+    "friendly_name": "Cathedral School Development Paris",
+    "year": 1100,
+    "category": "cultural",
+    "description": "Cathedral schools in Paris grew into major centers of learning, laying the groundwork for the medieval university system.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "troubadour-tradition",
+    "friendly_name": "Troubadour Tradition Emerges in Occitania",
+    "year": 1100,
+    "category": "cultural",
+    "description": "Poet-musicians in southern France created the troubadour tradition of lyric poetry celebrating courtly love in Occitan language.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tepeyac-sanctuary",
+    "friendly_name": "Tepeyac Sanctuary Becomes Sacred Site",
+    "year": 1100,
+    "category": "cultural",
+    "description": "The hill of Tepeyac near Tenochtitlan served as a sacred site for the Aztec mother goddess Tonantzin before Spanish contact.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cistercian-order",
+    "friendly_name": "Cistercian Order Expansion",
+    "year": 1115,
+    "category": "cultural",
+    "description": "Under Bernard of Clairvaux, the Cistercian monastic order expanded rapidly across Europe emphasizing manual labor and simplicity.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scholasticism-development",
+    "friendly_name": "Scholasticism Abelard Development",
+    "year": 1115,
+    "category": "cultural",
+    "description": "Peter Abelard pioneered scholastic method in Paris, applying rigorous dialectical reasoning to theological questions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "troubadour-courtly-love",
+    "friendly_name": "Troubadour Poetry of Courtly Love",
+    "year": 1130,
+    "category": "cultural",
+    "description": "Troubadours like Jaufre Rudel popularized the concept of courtly love through lyric poetry in medieval southern France.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "university-salamanca",
+    "friendly_name": "University of Salamanca Founded",
+    "year": 1218,
+    "category": "cultural",
+    "description": "Spain's oldest university was established in Salamanca, becoming a leading center of learning in medieval Iberia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cathars-heresy",
+    "friendly_name": "Cathar Heresy Languedoc",
+    "year": 1140,
+    "category": "cultural",
+    "description": "The Cathar dualist movement gained followers in southern France, later provoking the Albigensian Crusade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dom-university-paris",
+    "friendly_name": "University of Paris Founded",
+    "year": 1150,
+    "category": "cultural",
+    "description": "The University of Paris emerged from cathedral schools, becoming medieval Europe's foremost center of theology and philosophy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "averroes-aristotle-commentary",
+    "friendly_name": "Averroes Commentaries on Aristotle",
+    "year": 1175,
+    "category": "cultural",
+    "description": "Andalusian philosopher Averroes wrote comprehensive commentaries on Aristotle that profoundly influenced European scholasticism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goryeo-celadon-pottery",
+    "friendly_name": "Goryeo Celadon Pottery Golden Age",
+    "year": 1150,
+    "category": "cultural",
+    "description": "Korean potters of the Goryeo dynasty perfected jade-green celadon ceramics with distinctive inlaid sanggam decoration.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "toledo-translation-movement",
+    "friendly_name": "Toledo Translation Movement Flourishes",
+    "year": 1150,
+    "category": "cultural",
+    "description": "Scholars in Toledo translated Arabic scientific and philosophical texts into Latin, transmitting classical knowledge to Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "minnesinger-tradition",
+    "friendly_name": "Minnesinger Tradition in Germany",
+    "year": 1170,
+    "category": "cultural",
+    "description": "German Minnesinger poets adapted troubadour traditions, composing lyric poetry about idealized love at noble courts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "seljuk-tilework",
+    "friendly_name": "Seljuk Tile and Mosaic Work Flourishes",
+    "year": 1150,
+    "category": "cultural",
+    "description": "Seljuk artisans developed distinctive turquoise-glazed tilework and geometric mosaics adorning mosques across Anatolia and Persia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "waldensian-movement",
+    "friendly_name": "Waldensian Movement Peter Waldo",
+    "year": 1176,
+    "category": "cultural",
+    "description": "Peter Waldo of Lyon founded a movement advocating poverty and vernacular Bible reading, predating the Protestant Reformation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ma-yuan-painting-style",
+    "friendly_name": "Ma Yuan Painting Style Peak",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Southern Song painter Ma Yuan perfected asymmetric landscape compositions that influenced East Asian art for centuries.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zagwe-rock-churches",
+    "friendly_name": "Zagwe Dynasty Constructs Rock-Hewn Churches",
+    "year": 1200,
+    "category": "cultural",
+    "description": "The Zagwe dynasty carved monolithic rock-hewn churches at Lalibela, Ethiopia, creating an extraordinary pilgrimage site.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dogon-settlement",
+    "friendly_name": "Dogon People Occupy Bandiagara Escarpment",
+    "year": 1200,
+    "category": "cultural",
+    "description": "The Dogon people settled the Bandiagara cliffs in present-day Mali, developing rich cosmological traditions and cliff dwellings.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "olmec-civilization",
+    "friendly_name": "Olmec Civilization Development",
+    "year": -1200,
+    "category": "cultural",
+    "description": "Mesoamerica's earliest major civilization arose along Mexico's Gulf Coast, creating monumental architecture and complex society.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "oxford-university-influence",
+    "friendly_name": "Oxford University Grows as Intellectual Center",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Oxford University expanded its faculties and attracted scholars from across Europe, rivaling Paris as a center of learning.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arabic-numerals-adoption",
+    "friendly_name": "Arabic Numerals Adopted in Europe",
+    "year": 1202,
+    "category": "cultural",
+    "description": "Fibonacci's Liber Abaci popularized Hindu-Arabic numerals in Europe, revolutionizing mathematics and commerce.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "olmec-stone-heads",
+    "friendly_name": "Olmec Culture Creates Colossal Stone Heads",
+    "year": -1200,
+    "category": "cultural",
+    "description": "The Olmec carved massive basalt portrait heads weighing up to 50 tons along Mexico's Gulf Coast.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sepik-river-art",
+    "friendly_name": "Sepik River Art Culture Development",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Communities along Papua New Guinea's Sepik River developed elaborate wood carving and ceremonial art traditions.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "vedic-civilization-vedas",
+    "friendly_name": "Vedic Period Vedas Composed",
+    "year": -1500,
+    "category": "cultural",
+    "description": "Indo-Aryan peoples composed the Rigveda and other sacred hymns, forming the foundational texts of Hinduism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bagobo-culture",
+    "friendly_name": "Bagobo Culture Philippines",
+    "year": 1200,
+    "category": "cultural",
+    "description": "The Bagobo people of Mindanao developed distinctive weaving, metalwork, and spiritual traditions in the southern Philippines.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "toraja-culture",
+    "friendly_name": "Toraja Culture Sulawesi",
+    "year": 1200,
+    "category": "cultural",
+    "description": "The Toraja people of Sulawesi developed elaborate funeral rites, cliff burials, and distinctive boat-shaped architecture.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zen-buddhism-development",
+    "friendly_name": "Zen Buddhism Development Japan",
+    "year": 1191,
+    "category": "cultural",
+    "description": "Monk Eisai introduced Rinzai Zen from China to Japan, profoundly influencing Japanese culture, art, and aesthetics.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "university-paris-founding",
+    "friendly_name": "University of Paris Formal Recognition",
+    "year": 1200,
+    "category": "cultural",
+    "description": "The University of Paris received formal papal recognition, establishing the model for the European university system.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "translation-movement-sicily",
+    "friendly_name": "Translation Movement in Sicily",
+    "year": 1160,
+    "category": "cultural",
+    "description": "Scholars at the Norman court in Sicily translated Arabic and Greek scientific texts into Latin under royal patronage.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "epic-gilgamesh-written",
+    "friendly_name": "Epic of Gilgamesh Written Down",
+    "year": -1300,
+    "category": "cultural",
+    "description": "The Standard Babylonian version of the Epic of Gilgamesh was inscribed on clay tablets, preserving humanity's oldest literary epic.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "egyptian-wall-painting-tradition",
+    "friendly_name": "Egyptian Wall Painting Traditions Peak",
+    "year": -1200,
+    "category": "cultural",
+    "description": "New Kingdom tomb painters in the Valley of the Kings created vivid murals depicting afterlife journeys and daily life.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arabic-manuscript-illumination",
+    "friendly_name": "Arabic Manuscript Illumination Peak",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Islamic artists perfected the art of manuscript illumination with intricate geometric patterns, arabesques, and gilding.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-jazari-mechanical-art",
+    "friendly_name": "Al-Jazari Creates Mechanical Art Sculptures",
+    "year": 1206,
+    "category": "cultural",
+    "description": "Engineer al-Jazari published his Book of Knowledge of Ingenious Mechanical Devices, describing elaborate automata and water clocks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "damascene-silk-weaving",
+    "friendly_name": "Damascene Silk Weaving Tradition Established",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Damascus became renowned for luxurious silk brocade textiles traded across the medieval Mediterranean world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "medieval-university-expansion",
+    "friendly_name": "Medieval University Expansion Across Europe",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Universities proliferated across Europe in the 13th century, establishing structured curricula in theology, law, and medicine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "san-lorenzo-olmec",
+    "friendly_name": "San Lorenzo Olmec Center Peak",
+    "year": -1200,
+    "category": "cultural",
+    "description": "San Lorenzo became Mesoamerica's first major ceremonial center, featuring colossal stone heads and elaborate drainage systems.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samarkand-conquerors-city",
+    "friendly_name": "Samarkand Qur'anic School Flourishes",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Samarkand's madrasas became important centers of Qur'anic scholarship and Islamic learning along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "university-expansion-europe",
+    "friendly_name": "European University System Expands",
+    "year": 1200,
+    "category": "cultural",
+    "description": "Dozens of new universities opened across Europe, transforming education from monastic to structured academic institutions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cambridge-university-founded",
+    "friendly_name": "Cambridge University Founded",
+    "year": 1209,
+    "category": "cultural",
+    "description": "Scholars fleeing disputes at Oxford established Cambridge University, which grew into a world-renowned center of learning.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "salamanca-university-founded",
+    "friendly_name": "University of Salamanca Founded",
+    "year": 1218,
+    "category": "cultural",
+    "description": "King Alfonso IX of Leon founded the University of Salamanca, one of the oldest in continuous operation in the world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "padua-university-founded",
+    "friendly_name": "University of Padua Founded",
+    "year": 1222,
+    "category": "cultural",
+    "description": "Scholars from Bologna founded the University of Padua, which became famous for anatomy, medicine, and scientific inquiry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goryeo-tripitaka",
+    "friendly_name": "Goryeo Tripitaka Buddhist Canon Carved",
+    "year": 1236,
+    "category": "cultural",
+    "description": "Korean artisans began carving over 80,000 woodblocks of the Buddhist canon, now preserved at Haeinsa Temple.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mon-khmer-integration",
+    "friendly_name": "Mon Khmer Cultural Integration",
+    "year": 1250,
+    "category": "cultural",
+    "description": "Mon and Khmer cultural traditions blended across mainland Southeast Asia, influencing religion, art, and statecraft.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "university-paris-sorbonne",
+    "friendly_name": "University of Paris Sorbonne Founded",
+    "year": 1257,
+    "category": "cultural",
+    "description": "Robert de Sorbon established the Sorbonne as a theological college within the University of Paris.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "palaiologan-revival",
+    "friendly_name": "Palaiologan Renaissance Learning",
+    "year": 1261,
+    "category": "cultural",
+    "description": "The Palaiologos dynasty restored Byzantine rule in Constantinople and fostered a cultural revival in art and scholarship.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "thomas-aquinas-synthesis",
+    "friendly_name": "Thomas Aquinas Synthesizes Philosophy and Theology",
+    "year": 1274,
+    "category": "cultural",
+    "description": "Thomas Aquinas completed his Summa Theologica, harmonizing Aristotelian philosophy with Christian theology.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sukhothai-thai-script",
+    "friendly_name": "Sukhothai Thai Script Development",
+    "year": 1283,
+    "category": "cultural",
+    "description": "King Ramkhamhaeng of the Sukhothai kingdom created the Thai script, adapting Khmer and Mon writing systems.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sukhothai-pottery",
+    "friendly_name": "Sukhothai Pottery Arts",
+    "year": 1300,
+    "category": "cultural",
+    "description": "Sukhothai kingdom potters produced distinctive ceramics with fish and floral motifs, widely traded across Southeast Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "ancestral-puebloan-migration",
+    "friendly_name": "Ancestral Puebloan Great Migration",
+    "year": 1300,
+    "category": "cultural",
+    "description": "Ancestral Puebloans abandoned cliff dwellings at Mesa Verde and Chaco Canyon, migrating south due to prolonged drought.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "duns-scotus-philosophy",
+    "friendly_name": "Duns Scotus Develops Philosophical Systems",
+    "year": 1300,
+    "category": "cultural",
+    "description": "Franciscan philosopher Duns Scotus developed influential theories of individuation and the univocity of being.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "egyptian-sculpture-tradition",
+    "friendly_name": "Egyptian Sculpture Mastery",
+    "year": -1300,
+    "category": "cultural",
+    "description": "New Kingdom sculptors created iconic works including Nefertiti's bust and the colossi of Abu Simbel for Ramesses II.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "persian-miniature-tradition",
+    "friendly_name": "Persian Miniature Painting Tradition Established",
+    "year": 1300,
+    "category": "cultural",
+    "description": "Persian artists developed the miniature painting tradition under Ilkhanid patronage, illustrating literary and historical manuscripts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "giotto-fresco-revolution",
+    "friendly_name": "Giotto Pioneered Naturalism in Fresco Painting",
+    "year": 1305,
+    "category": "cultural",
+    "description": "Giotto painted the Scrovegni Chapel in Padua, breaking from Byzantine flatness to pioneer naturalistic human emotion in art.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "duccio-painting-innovation",
+    "friendly_name": "Duccio Creates Maesta Altarpiece",
+    "year": 1311,
+    "category": "cultural",
+    "description": "Sienese painter Duccio completed the Maesta altarpiece for Siena Cathedral, a masterwork of late medieval Italian painting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "timbuktu-university-development",
+    "friendly_name": "Timbuktu University of Sankore",
+    "year": 1325,
+    "category": "cultural",
+    "description": "The University of Sankore in Timbuktu became a major center of Islamic scholarship in West Africa under Mali Empire patronage.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "william-of-ockham-logic",
+    "friendly_name": "William of Ockham Develops Logical Philosophy",
+    "year": 1320,
+    "category": "cultural",
+    "description": "English friar William of Ockham advanced nominalist philosophy and his famous razor principle of parsimony in explanation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dante-divine-comedy",
+    "friendly_name": "Dante Writes Divine Comedy",
+    "year": 1308,
+    "category": "cultural",
+    "description": "Dante Alighieri completed his epic poem journeying through Hell, Purgatory, and Paradise in vernacular Italian.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "petrarch-humanist-movement",
+    "friendly_name": "Petrarch Develops Humanist Movement",
+    "year": 1341,
+    "category": "cultural",
+    "description": "Italian scholar Petrarch was crowned poet laureate in Rome, championing classical learning and the humanist movement.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "simone-martini-painting",
+    "friendly_name": "Simone Martini Develops Sienese Painting Style",
+    "year": 1333,
+    "category": "cultural",
+    "description": "Simone Martini created the Annunciation altarpiece, epitomizing the elegant International Gothic painting style of Siena.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "petrarch-humanism",
+    "friendly_name": "Petrarch Develops Humanism",
+    "year": 1341,
+    "category": "cultural",
+    "description": "Petrarch's revival of classical Latin texts and emphasis on human achievement launched the Renaissance humanist movement.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "italian-renaissance-begins",
+    "friendly_name": "Italian Renaissance Begins",
+    "year": 1350,
+    "category": "cultural",
+    "description": "The Italian Renaissance emerged in Florence and other city-states, reviving classical art, architecture, and learning.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "vijayanagara-hindu-restoration",
+    "friendly_name": "Vijayanagara Hindu Restoration",
+    "year": 1336,
+    "category": "cultural",
+    "description": "The Vijayanagara Empire was founded in southern India, becoming a powerful patron of Hindu culture, temples, and learning.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bukhara-cultural-center",
+    "friendly_name": "Bukhara Educational Center Development",
+    "year": 1350,
+    "category": "cultural",
+    "description": "Bukhara's madrasas and libraries flourished as a center of Islamic learning and scholarship in Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sumptuary-laws-fashion",
+    "friendly_name": "Sumptuary Laws Regulate Medieval Fashion",
+    "year": 1363,
+    "category": "cultural",
+    "description": "European rulers enacted sumptuary laws restricting clothing and luxury goods by social class after the Black Death.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "boccaccio-decameron",
+    "friendly_name": "Boccaccio Writes Decameron",
+    "year": 1353,
+    "category": "cultural",
+    "description": "Giovanni Boccaccio completed a collection of 100 tales set against the backdrop of the Black Death in Florence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ashikaga-cultural-patronage",
+    "friendly_name": "Ashikaga Cultural Patronage Kyoto",
+    "year": 1370,
+    "category": "cultural",
+    "description": "The Ashikaga shoguns patronized Zen-influenced arts including ink painting, tea ceremony, and garden design in Kyoto.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samarkand-library-school",
+    "friendly_name": "Samarkand Library and Schools",
+    "year": 1400,
+    "category": "cultural",
+    "description": "Under Timur's patronage, Samarkand's libraries and schools attracted scholars from across the Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "muromachi-noh-theater",
+    "friendly_name": "Noh Theater Development Muromachi",
+    "year": 1380,
+    "category": "cultural",
+    "description": "Noh drama was refined during the Muromachi period, combining dance, music, and masked performance in ritualized theater.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lollards-wycliffe",
+    "friendly_name": "Lollard Movement John Wycliffe",
+    "year": 1380,
+    "category": "cultural",
+    "description": "English theologian John Wycliffe inspired the Lollard movement, advocating Bible translation and challenging papal authority.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "noh-theater-emergence",
+    "friendly_name": "Noh Theater Tradition Emerges in Japan",
+    "year": 1375,
+    "category": "cultural",
+    "description": "Kan'ami and his son Zeami transformed popular sarugaku into the refined Noh theater tradition under Ashikaga patronage.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heidelberg-university",
+    "friendly_name": "University of Heidelberg Founded",
+    "year": 1386,
+    "category": "cultural",
+    "description": "Germany's oldest university was founded in Heidelberg by Elector Ruprecht I of the Palatinate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samarkand-cultural-center",
+    "friendly_name": "Samarkand Becomes Major Cultural Center",
+    "year": 1400,
+    "category": "cultural",
+    "description": "Timur transformed Samarkand into a dazzling capital of art, architecture, and learning on the Silk Road.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "benin-edo-kingdom",
+    "friendly_name": "Edo Kingdom Bronze Plaques Flourish",
+    "year": 1400,
+    "category": "cultural",
+    "description": "Benin Kingdom artisans cast elaborate bronze plaques depicting court life, warriors, and ceremonies using lost-wax technique.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "muisca-gold-culture",
+    "friendly_name": "Muisca Gold Working and Culture",
+    "year": 1400,
+    "category": "cultural",
+    "description": "The Muisca people of highland Colombia created exquisite gold tunjo figurines and inspired the legend of El Dorado.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "muromachi-zen-ink-painting",
+    "friendly_name": "Zen Ink Painting Muromachi Golden Age",
+    "year": 1420,
+    "category": "cultural",
+    "description": "Japanese monk-painters like Josetsu and Shubun brought Zen ink wash painting to its peak during the Muromachi period.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mycenaean-warrior-art",
+    "friendly_name": "Mycenaean Warrior Art and Pottery",
+    "year": -1500,
+    "category": "cultural",
+    "description": "Mycenaean Greeks produced warrior-themed pottery and gold funerary masks, including the famous Mask of Agamemnon.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zeami-noh-dramatist",
+    "friendly_name": "Zeami Perfects Noh Theater Form",
+    "year": 1418,
+    "category": "cultural",
+    "description": "Master dramatist Zeami codified Noh aesthetics in his treatises, establishing principles of beauty and artistic restraint.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "javanese-court-dance",
+    "friendly_name": "Javanese Court Dance Traditions Established",
+    "year": 1400,
+    "category": "cultural",
+    "description": "The Majapahit court in Java formalized classical dance traditions drawing on Hindu-Buddhist epics and ritual performance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "benin-bronze-casting-peak",
+    "friendly_name": "Benin Kingdom Bronze Casting Reaches Peak",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Benin Kingdom guild casters produced masterful bronze heads and plaques under the patronage of powerful Obas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wolof-teranga-culture",
+    "friendly_name": "Wolof Hospitality Culture and Trade Ethics",
+    "year": 1400,
+    "category": "cultural",
+    "description": "The Wolof people of the Jolof Empire developed teranga hospitality traditions and trade networks in West Africa.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "taino-cohoba-ceremony",
+    "friendly_name": "Taino Cohoba Ritual Ceremony",
+    "year": 1400,
+    "category": "cultural",
+    "description": "The Taino people of the Caribbean practiced cohoba ceremonies using carved ritual objects to communicate with spirits.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "linear-perspective",
+    "friendly_name": "Invention of Linear Perspective",
+    "year": 1413,
+    "category": "cultural",
+    "description": "Filippo Brunelleschi demonstrated mathematical linear perspective in Florence, transforming Western visual art.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brunelleschi-perspective",
+    "friendly_name": "Brunelleschi Develops Linear Perspective",
+    "year": 1413,
+    "category": "cultural",
+    "description": "Brunelleschi's perspective experiments in Florence established the geometric principles that revolutionized Renaissance painting.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jan-hus-execution",
+    "friendly_name": "Jan Hus Executed",
+    "year": 1415,
+    "category": "cultural",
+    "description": "Czech reformer Jan Hus was burned at the stake for heresy at the Council of Constance, sparking the Hussite Wars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hussite-movement",
+    "friendly_name": "Hussite Movement Jan Hus",
+    "year": 1415,
+    "category": "cultural",
+    "description": "Followers of Jan Hus in Bohemia demanded church reform, vernacular liturgy, and communion in both kinds.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "timurid-renaissance",
+    "friendly_name": "Timurid Renaissance in Art and Architecture",
+    "year": 1420,
+    "category": "cultural",
+    "description": "The Timurid dynasty fostered a cultural golden age of Persian miniature painting, architecture, and literature in Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "masaccio-fresco-innovation",
+    "friendly_name": "Masaccio Revolutionizes Fresco Painting",
+    "year": 1427,
+    "category": "cultural",
+    "description": "Masaccio painted the Brancacci Chapel frescoes in Florence, pioneering realistic perspective and light in Renaissance art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "donatello-bronze-sculpture",
+    "friendly_name": "Donatello Creates Renaissance Bronze Sculptures",
+    "year": 1440,
+    "category": "cultural",
+    "description": "Donatello created his bronze David in Florence, the first freestanding nude sculpture since antiquity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "printing-press-revolution",
+    "friendly_name": "Printing Press Revolution Begins with Gutenberg",
+    "year": 1440,
+    "category": "cultural",
+    "description": "Johannes Gutenberg developed movable type printing in Mainz, enabling mass production of books across Europe.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sejong-hangul-invention",
+    "friendly_name": "King Sejong Invents Hangul Alphabet",
+    "year": 1443,
+    "category": "cultural",
+    "description": "King Sejong the Great of Korea promulgated Hangul, a phonetic alphabet designed to increase literacy among commoners.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "incunabula-books",
+    "friendly_name": "Incunabula: Early Printed Books",
+    "year": 1455,
+    "category": "cultural",
+    "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "timbuktu-university",
+    "friendly_name": "University of Timbuktu Flourishes",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Sankore and other madrasas in Timbuktu became major centers of Islamic scholarship in West Africa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mamluk-cairo-libraries",
+    "friendly_name": "Mamluk Libraries and Scholarship",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Mamluk-era Cairo supported vast libraries and scholarly institutions, preserving Islamic and classical learning.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "benin-bronzes-royal-plaques",
+    "friendly_name": "Benin Royal Plaques and Bronzes Tradition",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Artisans of the Benin Kingdom created elaborate brass plaques depicting court life and royal history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "filippo-lippi-painting",
+    "friendly_name": "Filippo Lippi Develops Renaissance Painting",
+    "year": 1452,
+    "category": "cultural",
+    "description": "Filippo Lippi pioneered naturalistic style in Florentine painting, influencing Botticelli and later Renaissance masters.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "harpsichord-invented",
+    "friendly_name": "Harpsichord Keyboard Instrument Invented",
+    "year": 1397,
+    "category": "cultural",
+    "description": "The earliest known reference to a harpsichord appears in Padua, Italy, launching centuries of keyboard music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "court-ballet-origins",
+    "friendly_name": "Court Ballet Tradition Emerges in Renaissance Italy",
+    "year": 1489,
+    "category": "cultural",
+    "description": "Elaborate court spectacles in Italian Renaissance courts laid the foundations for ballet as a performing art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "songhai-university-timbuktu",
+    "friendly_name": "Songhai University of Timbuktu Flourishes",
+    "year": 1468,
+    "category": "cultural",
+    "description": "Under the Songhai Empire, Timbuktu's Sankore University attracted scholars from across the Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "byzantine-scholars-flee",
+    "friendly_name": "Byzantine Scholars Flee Constantinople",
+    "year": 1453,
+    "category": "cultural",
+    "description": "After Constantinople's fall to the Ottomans, Greek scholars fled west, fueling the Italian Renaissance.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sikh-movement-begins",
+    "friendly_name": "Sikh Religious Movement Begins",
+    "year": 1499,
+    "category": "cultural",
+    "description": "Guru Nanak was born in Punjab and founded Sikhism, teaching devotion to one God and equality of all people.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bihzad-persian-painting",
+    "friendly_name": "Bihzad Becomes Greatest Persian Miniaturist",
+    "year": 1480,
+    "category": "cultural",
+    "description": "Kamal ud-Din Bihzad revolutionized Persian miniature painting with vivid color and expressive composition in Herat.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "perugino-christ-keys",
+    "friendly_name": "Perugino Establishes Renaissance Workshop",
+    "year": 1482,
+    "category": "cultural",
+    "description": "Perugino painted Delivery of the Keys in the Sistine Chapel, pioneering spatial harmony that influenced Raphael.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kongo-christianity-adoption",
+    "friendly_name": "Kongo Kingdom Adopts Christianity",
+    "year": 1491,
+    "category": "cultural",
+    "description": "King Nzinga a Nkuwu of Kongo was baptized, making the kingdom one of the earliest African Christian states.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "leonardo-da-vinci-art",
+    "friendly_name": "Leonardo da Vinci Creates Major Masterpieces",
+    "year": 1498,
+    "category": "cultural",
+    "description": "Leonardo painted The Last Supper in Milan, showcasing his mastery of perspective and human emotion.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "vedic-period",
+    "friendly_name": "Vedic Period Begins",
+    "year": -1500,
+    "category": "cultural",
+    "description": "Indo-Aryan peoples composed the Rigveda and other sacred hymns, shaping Hinduism and Indian civilization.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vijayanagara-flowering",
+    "friendly_name": "Vijayanagara Empire Cultural Flowering",
+    "year": 1509,
+    "category": "cultural",
+    "description": "Under Krishna Deva Raya, the Vijayanagara Empire reached its cultural zenith in art, architecture, and literature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joseon-confucian-renaissance",
+    "friendly_name": "Joseon Confucian Renaissance",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Korea's Joseon dynasty promoted Neo-Confucian scholarship, reshaping education, governance, and social hierarchy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ayutthaya-golden-age",
+    "friendly_name": "Ayutthaya Kingdom Golden Age",
+    "year": 1500,
+    "category": "cultural",
+    "description": "The Siamese kingdom of Ayutthaya thrived as a cosmopolitan trading hub with rich Buddhist art and architecture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "benin-art-renaissance",
+    "friendly_name": "Benin Kingdom Art Renaissance",
+    "year": 1500,
+    "category": "cultural",
+    "description": "The Benin Kingdom produced masterful bronze and ivory sculptures celebrating royal power and spiritual life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "benin-kingdom-art-tradition",
+    "friendly_name": "Benin Kingdom Sculptural Tradition Flourishes",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Royal guild artisans in the Benin Kingdom created intricate lost-wax bronze sculptures of remarkable sophistication.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joseon-hahoetal-masks",
+    "friendly_name": "Hahoe Mask Dance Tradition Established",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Korea's Hahoe mask dance drama combined satire and folk religion, performed during village festivals.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "davids-sculpture-michelangelo",
+    "friendly_name": "Michelangelo Sculpts David",
+    "year": 1504,
+    "category": "cultural",
+    "description": "Michelangelo completed his iconic marble David in Florence, a masterpiece of Renaissance sculpture.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "safavid-shiite-islam",
+    "friendly_name": "Safavid Dynasty Establishes Shiite Islam as State Religion",
+    "year": 1501,
+    "category": "cultural",
+    "description": "Shah Ismail I founded the Safavid dynasty and declared Twelver Shia Islam the state religion of Persia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "songhai-scholars",
+    "friendly_name": "Songhai Scholars and Islamic Learning",
+    "year": 1510,
+    "category": "cultural",
+    "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "raphael-school-athens",
+    "friendly_name": "Raphael Paints School of Athens",
+    "year": 1510,
+    "category": "cultural",
+    "description": "Raphael painted The School of Athens in the Vatican, depicting great philosophers in an idealized classical setting.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "michelangelo-sistine-chapel",
+    "friendly_name": "Michelangelo Paints Sistine Chapel Ceiling",
+    "year": 1512,
+    "category": "cultural",
+    "description": "Michelangelo completed the Sistine Chapel ceiling in Rome, featuring the iconic Creation of Adam.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "reformation-luther-begins",
+    "friendly_name": "Protestant Reformation Begins",
+    "year": 1517,
+    "category": "cultural",
+    "description": "Martin Luther posted his 95 Theses in Wittenberg, challenging Catholic Church practices and sparking the Reformation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "printing-reformation-pamphlets",
+    "friendly_name": "Printing Enables Reformation Pamphlets",
+    "year": 1520,
+    "category": "cultural",
+    "description": "The printing press allowed Luther's ideas to spread rapidly through pamphlets across German-speaking lands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "reformation-anabaptists",
+    "friendly_name": "Anabaptist Radical Reformation Movement",
+    "year": 1525,
+    "category": "cultural",
+    "description": "Radical reformers in Zurich rejected infant baptism, founding the Anabaptist movement amid fierce persecution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "english-reformation-henry",
+    "friendly_name": "English Reformation Under Henry VIII",
+    "year": 1534,
+    "category": "cultural",
+    "description": "Henry VIII broke with Rome and established the Church of England, largely to annul his marriage to Catherine of Aragon.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mannerism-art-style",
+    "friendly_name": "Mannerism Art Style Emerges",
+    "year": 1520,
+    "category": "cultural",
+    "description": "Artists like Pontormo and Parmigianino developed Mannerism, featuring elongated forms and unusual compositions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rabelais-gargantua",
+    "friendly_name": "Rabelais Writes Gargantua and Pantagruel",
+    "year": 1534,
+    "category": "cultural",
+    "description": "François Rabelais published his satirical epic blending humor, humanism, and bawdy social commentary in France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jesuits-founded",
+    "friendly_name": "Society of Jesus (Jesuits) Founded",
+    "year": 1540,
+    "category": "cultural",
+    "description": "Ignatius of Loyola founded the Jesuits in Rome, dedicated to education, missionary work, and the Counter-Reformation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "titian-venetian-color",
+    "friendly_name": "Titian Masters Venetian Color Tradition",
+    "year": 1538,
+    "category": "cultural",
+    "description": "Titian's masterful use of color and dynamic brushwork defined the Venetian school and influenced European painting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "commedia-dell-arte-emerges",
+    "friendly_name": "Commedia dell'arte Theater Tradition Emerges",
+    "year": 1545,
+    "category": "cultural",
+    "description": "Italian troupes pioneered improvised comedic theater with stock characters like Harlequin and Pantalone.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-miniature-art",
+    "friendly_name": "Ottoman Miniature Art Flourishes",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Ottoman court painters produced elaborate miniatures illustrating histories and royal achievements under Suleiman the Magnificent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "counter-reformation-jesuit",
+    "friendly_name": "Counter-Reformation and Jesuit Expansion",
+    "year": 1545,
+    "category": "cultural",
+    "description": "The Council of Trent launched the Catholic Counter-Reformation while Jesuits expanded globally.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spanish-inquisition-intensified",
+    "friendly_name": "Spanish Inquisition Intensified Persecution",
+    "year": 1550,
+    "category": "cultural",
+    "description": "The Spanish Inquisition intensified enforcement of religious orthodoxy, targeting suspected heretics and conversos.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "violin-developed",
+    "friendly_name": "Violin Developed as Modern Instrument",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Andrea Amati and other Cremonese craftsmen developed the modern violin in northern Italy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "persian-carpet-tradition",
+    "friendly_name": "Persian Carpet Weaving Tradition Peak",
+    "year": 1540,
+    "category": "cultural",
+    "description": "Safavid-era Persian carpet weaving reached its artistic peak under Shah Tahmasp I, producing legendary designs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "venetian-lace-tradition",
+    "friendly_name": "Venetian Lace Making Becomes European Fashion",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Venice became the center of needle lace production, with intricate punto in aria designs prized across Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kongo-christianization-depth",
+    "friendly_name": "Kongo Kingdom Mass Christianization",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Christianity became deeply embedded in Kongo society, blending with local spiritual traditions under King Afonso I's legacy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "coffee-house-emergence",
+    "friendly_name": "Coffeehouse Culture Emerges in Ottoman Empire",
+    "year": 1555,
+    "category": "cultural",
+    "description": "The first coffeehouses opened in Constantinople, becoming centers for socializing, news, and intellectual exchange.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scots-reformation-movement",
+    "friendly_name": "Scottish Reformation Movement",
+    "year": 1560,
+    "category": "cultural",
+    "description": "John Knox led Scotland's Protestant Reformation, establishing Presbyterianism as the national church.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goa-inquisition",
+    "friendly_name": "Portuguese Inquisition in Goa",
+    "year": 1560,
+    "category": "cultural",
+    "description": "Portugal established the Goa Inquisition in India, persecuting Hindus, Muslims, and crypto-Jews for over two centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-golden-age",
+    "friendly_name": "Safavid Golden Age - Arts and Architecture",
+    "year": 1598,
+    "category": "cultural",
+    "description": "Under Shah Abbas I, Isfahan became a showcase of Persian architecture, art, and culture during the Safavid golden age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jesuit-missions-asia",
+    "friendly_name": "Jesuit Missions to Asia Expand",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Jesuit missionaries like Matteo Ricci expanded into China, Japan, and India, blending evangelism with cultural exchange.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heresy-trials-witch-hunts",
+    "friendly_name": "European Witch Hunts and Heresy Trials",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Witch hunts intensified across Europe, with tens of thousands tried and executed during the peak persecution era.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "montaigne-essays",
+    "friendly_name": "Montaigne Publishes Essays",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Michel de Montaigne published his Essais in France, pioneering the personal essay as a literary form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tea-ceremony-codification",
+    "friendly_name": "Tea Ceremony Tradition Codified in Japan",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Sen no Rikyu codified the Japanese tea ceremony, emphasizing wabi-sabi aesthetics of simplicity and mindfulness.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ballet-de-cour-france",
+    "friendly_name": "Ballet de Cour Theater Tradition in France",
+    "year": 1581,
+    "category": "cultural",
+    "description": "The Ballet comique de la Reine was performed at the French court, considered the first true ballet production.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "akbar-din-ilahi",
+    "friendly_name": "Akbar's Din-i Ilahi (Syncretic Religion) Declared",
+    "year": 1582,
+    "category": "cultural",
+    "description": "Mughal Emperor Akbar declared Din-i Ilahi, a syncretic faith blending elements of Islam, Hinduism, and other religions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chocolate-introduced-europe",
+    "friendly_name": "Chocolate Introduced to European Nobility",
+    "year": 1528,
+    "category": "cultural",
+    "description": "Spanish explorers brought cacao from the Americas, and chocolate drinks became fashionable among European elites.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "christopher-marlowe",
+    "friendly_name": "Christopher Marlowe Writes Major Dramas",
+    "year": 1588,
+    "category": "cultural",
+    "description": "Marlowe wrote Tamburlaine and Doctor Faustus, pioneering English blank verse tragedy before Shakespeare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spenser-faerie-queene",
+    "friendly_name": "Spenser Writes The Faerie Queene",
+    "year": 1590,
+    "category": "cultural",
+    "description": "Edmund Spenser published The Faerie Queene, an allegorical epic celebrating Queen Elizabeth and English virtues.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shakespeare-early-plays",
+    "friendly_name": "Shakespeare Writes Early Plays",
+    "year": 1592,
+    "category": "cultural",
+    "description": "Shakespeare began his London theater career with early works like Henry VI and The Comedy of Errors.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "opera-emerges-florence",
+    "friendly_name": "Opera Emerges as Art Form in Florence",
+    "year": 1597,
+    "category": "cultural",
+    "description": "Jacopo Peri composed Dafne in Florence, considered the first opera, fusing drama and music in a new art form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-textile-arts",
+    "friendly_name": "Safavid Carpet and Textile Arts Peak",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Safavid workshops produced world-renowned silk textiles and carpets under royal patronage in Isfahan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-carpet-arts",
+    "friendly_name": "Safavid Carpet Arts Peak Production",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Safavid-era carpet workshops reached peak production, creating masterworks prized in courts across Europe and Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "minoan-frescoes",
+    "friendly_name": "Minoan Frescoes and Palace Art",
+    "year": -1600,
+    "category": "cultural",
+    "description": "Minoan artists on Crete created vibrant palace frescoes depicting dolphins, bull-leaping, and court life at Knossos.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kabuki-theater-begins",
+    "friendly_name": "Kabuki Theater Tradition Established",
+    "year": 1603,
+    "category": "cultural",
+    "description": "Izumo no Okuni began performing kabuki dances in Kyoto, founding Japan's iconic theatrical tradition.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shakespeare-hamlet-othello",
+    "friendly_name": "Shakespeare Writes Hamlet and Major Tragedies",
+    "year": 1601,
+    "category": "cultural",
+    "description": "Shakespeare wrote Hamlet, Othello, King Lear, and Macbeth during his greatest creative period.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kathak-classical-dance",
+    "friendly_name": "Kathak Classical Dance Tradition Formalized",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Kathak dance evolved in Mughal courts, blending Hindu temple storytelling with Persian-influenced footwork and spins.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "coffee-houses-cairo",
+    "friendly_name": "Cairo Coffeehouses Peak as Cultural Centers",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Cairo's coffeehouses became vibrant hubs for storytelling, music, chess, and political discussion in Ottoman Egypt.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kuba-royal-masks",
+    "friendly_name": "Kuba Kingdom Develops Royal Mask Traditions",
+    "year": 1600,
+    "category": "cultural",
+    "description": "The Kuba Kingdom in Central Africa developed elaborate royal mask traditions representing founding kings and spirits.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cervantes-don-quixote",
+    "friendly_name": "Cervantes Publishes Don Quixote",
+    "year": 1605,
+    "category": "cultural",
+    "description": "Miguel de Cervantes published Don Quixote in Spain, widely considered the first modern European novel.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "monteverdi-orfeo",
+    "friendly_name": "Monteverdi Composes L'Orfeo Opera",
+    "year": 1607,
+    "category": "cultural",
+    "description": "Claudio Monteverdi composed L'Orfeo in Mantua, the earliest opera still regularly performed today.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shakespeare-sonnets",
+    "friendly_name": "Shakespeare Publishes Sonnets",
+    "year": 1609,
+    "category": "cultural",
+    "description": "Shakespeare's 154 sonnets were published in London, exploring love, beauty, mortality, and time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "safavid-miniature-painting",
+    "friendly_name": "Safavid Miniature Painting Schools Flourish",
+    "year": 1610,
+    "category": "cultural",
+    "description": "Safavid court painting schools in Isfahan and Tabriz produced exquisite miniatures blending Persian and European styles.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "port-royal-convent",
+    "friendly_name": "Port-Royal-des-Champs Monastery Flourishes",
+    "year": 1636,
+    "category": "cultural",
+    "description": "Port-Royal became a center of Jansenist theology and intellectual life, associated with Pascal and Arnauld.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "spanish-baroque-drama",
+    "friendly_name": "Spanish Baroque Drama with Calderón",
+    "year": 1635,
+    "category": "cultural",
+    "description": "Pedro Calderón de la Barca wrote Life Is a Dream and other masterpieces of Spanish Golden Age theater.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "descartes-cogito-philosophy",
+    "friendly_name": "Descartes Cogito Ergo Sum",
+    "year": 1637,
+    "category": "cultural",
+    "description": "René Descartes published Discourse on the Method, declaring \"I think, therefore I am\" as the foundation of modern philosophy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "corneille-le-cid",
+    "friendly_name": "Corneille Writes Le Cid Drama",
+    "year": 1637,
+    "category": "cultural",
+    "description": "Pierre Corneille's Le Cid became a landmark of French classical theater, sparking a famous literary quarrel.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jansenism-controversy",
+    "friendly_name": "Jansenism Controversy Peaks",
+    "year": 1640,
+    "category": "cultural",
+    "description": "Cornelius Jansen's Augustinus ignited a major Catholic theological dispute over grace and free will in France.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "enlightenment-age-begins",
+    "friendly_name": "Age of Enlightenment Begins",
+    "year": 1687,
+    "category": "cultural",
+    "description": "European thinkers championed reason, science, and individual rights, reshaping philosophy, politics, and society.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tokugawa-kabuki-theatre",
+    "friendly_name": "Tokugawa Kabuki Theatre Development",
+    "year": 1650,
+    "category": "cultural",
+    "description": "Under Tokugawa rule, kabuki evolved from women's dance into an elaborate all-male theatrical art form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kuba-raffia-textiles",
+    "friendly_name": "Kuba Raffia Textile Art",
+    "year": 1650,
+    "category": "cultural",
+    "description": "The Kuba people of Central Africa created intricate embroidered raffia cloth with bold geometric designs.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "quaker-founding",
+    "friendly_name": "Quaker Society Founding and Growth",
+    "year": 1652,
+    "category": "cultural",
+    "description": "George Fox founded the Religious Society of Friends (Quakers) in England, emphasizing inner light and pacifism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "baroque-period-peak",
+    "friendly_name": "Baroque Period Artistic Peak",
+    "year": 1650,
+    "category": "cultural",
+    "description": "Baroque art reached its peak across Europe with dramatic works by Bernini, Rubens, and Rembrandt.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kabuki-women-actors",
+    "friendly_name": "Kabuki Theater Becomes Popular Entertainment",
+    "year": 1652,
+    "category": "cultural",
+    "description": "After women were banned from kabuki in 1629, the art matured into a sophisticated all-male theatrical tradition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moronobu-woodblock-pioneer",
+    "friendly_name": "Moronobu Pioneers Woodblock Print Art",
+    "year": 1672,
+    "category": "cultural",
+    "description": "Hishikawa Moronobu pioneered the ukiyo-e woodblock print tradition, depicting Edo pleasure quarter scenes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hobbes-leviathan",
+    "friendly_name": "Hobbes Publishes Leviathan",
+    "year": 1651,
+    "category": "cultural",
+    "description": "Thomas Hobbes published Leviathan, arguing for a powerful sovereign to prevent the \"war of all against all.\"",
+    "difficulty": "medium"
+  },
+  {
+    "name": "louis-xiv-ballet",
+    "friendly_name": "Louis XIV Establishes Ballet as Art Form",
+    "year": 1661,
+    "category": "cultural",
+    "description": "Louis XIV founded the Académie Royale de Danse, professionalizing ballet and establishing formal technique.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moliere-comedies",
+    "friendly_name": "Molière Writes Tartuffe and Major Comedies",
+    "year": 1664,
+    "category": "cultural",
+    "description": "Molière premiered Tartuffe in Paris, satirizing religious hypocrisy and becoming France's greatest comic playwright.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "racine-theatre",
+    "friendly_name": "Jean Racine Writes Major Tragedies",
+    "year": 1667,
+    "category": "cultural",
+    "description": "Jean Racine wrote Andromaque and Phèdre, masterpieces of French neoclassical tragedy exploring human passion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "milton-paradise-lost",
+    "friendly_name": "Milton Writes Paradise Lost",
+    "year": 1667,
+    "category": "cultural",
+    "description": "John Milton published Paradise Lost, an epic poem retelling the fall of man and Satan's rebellion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aurangzeb-orthodox-policies",
+    "friendly_name": "Aurangzeb's Religious Orthodoxy Policies",
+    "year": 1679,
+    "category": "cultural",
+    "description": "Mughal Emperor Aurangzeb reimposed the jizya tax on non-Muslims and pursued strict Islamic orthodoxy across India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ukiyo-e-art-development",
+    "friendly_name": "Ukiyo-e Woodblock Art Development",
+    "year": 1670,
+    "category": "cultural",
+    "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pietism-germany",
+    "friendly_name": "Pietism Movement in German Protestantism",
+    "year": 1675,
+    "category": "cultural",
+    "description": "Philipp Spener published Pia Desideria, launching the Pietist movement emphasizing personal devotion in Lutheranism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "baroque-music-development",
+    "friendly_name": "Baroque Music Composition and Development",
+    "year": 1680,
+    "category": "cultural",
+    "description": "Composers like Corelli and Purcell advanced Baroque music with concertos, sonatas, and operas across Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "haiku-poetry-tradition",
+    "friendly_name": "Haiku Poetry Tradition Formalized",
+    "year": 1689,
+    "category": "cultural",
+    "description": "Matsuo Basho elevated haiku to high art with The Narrow Road to the Deep North, defining the form's aesthetic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "genroku-era-culture",
+    "friendly_name": "Genroku Era Cultural and Artistic Peak",
+    "year": 1688,
+    "category": "cultural",
+    "description": "Japan's Genroku era saw a cultural explosion in kabuki, haiku, and woodblock prints during Tokugawa peace.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "locke-second-treatise",
+    "friendly_name": "Locke Second Treatise on Government",
+    "year": 1689,
+    "category": "cultural",
+    "description": "John Locke published his Second Treatise, arguing for natural rights and government by consent of the governed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tokugawa-edo-period-culture",
+    "friendly_name": "Edo Period Cultural Flourishing",
+    "year": 1700,
+    "category": "cultural",
+    "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ethiopian-gondar-cultural-center",
+    "friendly_name": "Gondar Becomes Ethiopian Cultural Center",
+    "year": 1636,
+    "category": "cultural",
+    "description": "Emperor Fasilides established Gondar as Ethiopia's capital, building castles and churches that became cultural landmarks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "asante-golden-stool",
+    "friendly_name": "Asante Golden Stool Ceremonial",
+    "year": 1701,
+    "category": "cultural",
+    "description": "The Golden Stool descended from the sky in Asante tradition, unifying the kingdom as a sacred symbol of nationhood.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "handel-baroque-music",
+    "friendly_name": "Handel Composes Major Baroque Works",
+    "year": 1717,
+    "category": "cultural",
+    "description": "George Frideric Handel composed Water Music and later Messiah, becoming a towering figure in Baroque music.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paris-salon-culture",
+    "friendly_name": "Parisian Salon Culture Establishment",
+    "year": 1715,
+    "category": "cultural",
+    "description": "Parisian salons hosted by elite women became vital centers of Enlightenment intellectual and literary exchange.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tulip-era-ottoman",
+    "friendly_name": "Tulip Era (Lale Devri) Cultural Peak",
+    "year": 1718,
+    "category": "cultural",
+    "description": "The Ottoman Tulip Era brought European-influenced art, gardens, and cultural openness under Sultan Ahmed III.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bach-welltempered-clavier",
+    "friendly_name": "Bach Composes Well-Tempered Clavier",
+    "year": 1722,
+    "category": "cultural",
+    "description": "J.S. Bach composed The Well-Tempered Clavier, demonstrating the musical possibilities of all 24 major and minor keys.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vivaldi-four-seasons",
+    "friendly_name": "Vivaldi Composes The Four Seasons",
+    "year": 1725,
+    "category": "cultural",
+    "description": "Antonio Vivaldi published The Four Seasons in Venice, a set of violin concertos that became iconic Baroque works.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "french-enlightenment-peak",
+    "friendly_name": "French Enlightenment Flourishes",
+    "year": 1730,
+    "category": "cultural",
+    "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "voltaire-major-works",
+    "friendly_name": "Voltaire's Major Philosophical Works",
+    "year": 1734,
+    "category": "cultural",
+    "description": "Voltaire published Philosophical Letters, comparing English liberty with French absolutism and sparking controversy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "muhendishane-school",
+    "friendly_name": "Mühendishane (Ottoman Engineering School) Founded",
+    "year": 1734,
+    "category": "cultural",
+    "description": "The Ottoman Empire established its first modern engineering school to train military and technical officers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "montesquieu-spirit-laws",
+    "friendly_name": "Montesquieu Spirit of the Laws",
+    "year": 1748,
+    "category": "cultural",
+    "description": "Montesquieu published The Spirit of the Laws, advocating separation of powers that influenced the U.S. Constitution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bach-mass-in-b-minor",
+    "friendly_name": "Bach Composes Mass in B Minor",
+    "year": 1749,
+    "category": "cultural",
+    "description": "J.S. Bach completed the Mass in B Minor near the end of his life, a monumental work of sacred choral music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rousseau-publications",
+    "friendly_name": "Rousseau's Major Publications (Discourse and Emile)",
+    "year": 1762,
+    "category": "cultural",
+    "description": "Jean-Jacques Rousseau published Emile and The Social Contract, reshaping ideas on education and political legitimacy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ukiyo-woodblock-prints",
+    "friendly_name": "Ukiyo-e Woodblock Print Tradition Peak",
+    "year": 1765,
+    "category": "cultural",
+    "description": "Suzuki Harunobu pioneered full-color nishiki-e woodblock prints, elevating ukiyo-e to its artistic peak.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "encyclopedie-diderot",
+    "friendly_name": "Encyclopédie Project by Diderot and d'Alembert Begins",
+    "year": 1751,
+    "category": "cultural",
+    "description": "Diderot and d'Alembert began the Encyclopédie, a landmark Enlightenment project to systematize all human knowledge.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "haydn-symphonies",
+    "friendly_name": "Haydn Composes Symphony Series",
+    "year": 1761,
+    "category": "cultural",
+    "description": "Joseph Haydn became Kapellmeister to the Esterházy court, composing symphonies that defined the Classical style.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maori-european-encounters",
+    "friendly_name": "Maori-European Contact and Trade",
+    "year": 1769,
+    "category": "cultural",
+    "description": "Captain Cook's arrival in New Zealand began sustained Maori-European contact, transforming trade and culture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kant-critique-pure-reason",
+    "friendly_name": "Kant Critique of Pure Reason",
+    "year": 1781,
+    "category": "cultural",
+    "description": "Immanuel Kant published Critique of Pure Reason, revolutionizing epistemology and the foundations of modern philosophy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "schiller-major-plays",
+    "friendly_name": "Schiller Writes Major German Dramas",
+    "year": 1781,
+    "category": "cultural",
+    "description": "Friedrich Schiller wrote The Robbers, launching Sturm und Drang drama and becoming Germany's great dramatist.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mozart-operas",
+    "friendly_name": "Mozart Composes Don Giovanni and Operas",
+    "year": 1787,
+    "category": "cultural",
+    "description": "Mozart premiered Don Giovanni in Prague, one of his greatest operas blending comedy, drama, and musical genius.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "civil-constitution-clergy",
+    "friendly_name": "Civil Constitution of the Clergy",
+    "year": 1790,
+    "category": "cultural",
+    "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "haida-totem-poles",
+    "friendly_name": "Haida Totem Pole Carving Peak",
+    "year": 1800,
+    "category": "cultural",
+    "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jacquard-loom-invented",
+    "friendly_name": "Jacquard Loom Textile Innovation",
+    "year": 1804,
+    "category": "cultural",
+    "description": "Joseph Marie Jacquard invented a programmable loom using punch cards, revolutionizing textile weaving in France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goethe-faust-publication",
+    "friendly_name": "Goethe Publishes Faust",
+    "year": 1808,
+    "category": "cultural",
+    "description": "Johann Wolfgang von Goethe published Faust Part One, a masterwork of German literature exploring ambition and knowledge.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beethoven-symphony-nine",
+    "friendly_name": "Beethoven Composes Symphony No. 9",
+    "year": 1824,
+    "category": "cultural",
+    "description": "Beethoven premiered his Ninth Symphony in Vienna, featuring the choral finale \"Ode to Joy.\"",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hokusai-great-wave",
+    "friendly_name": "Hokusai Creates Mount Fuji Series",
+    "year": 1831,
+    "category": "cultural",
+    "description": "Katsushika Hokusai published Thirty-six Views of Mount Fuji, including the iconic Great Wave off Kanagawa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hiroshige-landscape-prints",
+    "friendly_name": "Hiroshige Creates Landscape Print Series",
+    "year": 1833,
+    "category": "cultural",
+    "description": "Utagawa Hiroshige published The Fifty-three Stations of the Tokaido, defining Japanese landscape printmaking.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bharatanatyam-tradition",
+    "friendly_name": "Bharatanatyam Dance Tradition Codified",
+    "year": 1830,
+    "category": "cultural",
+    "description": "The Tanjore Quartet codified Bharatanatyam repertoire, systematizing South India's ancient temple dance tradition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roaring-twenties-era",
+    "friendly_name": "Roaring Twenties Begin",
+    "year": 1920,
+    "category": "cultural",
+    "description": "Post-WWI prosperity fueled jazz, flappers, and cultural liberation across America and Europe.",
+    "difficulty": "easy"
   }
 ]

@@ -2872,5 +2872,2101 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_radio",
     "color": "#22211d",
     "text_color": "light"
+  },
+  {
+    "name": "punt-trade-egypt",
+    "friendly_name": "Punt Trading Partners with Ancient Egypt",
+    "year": -2500,
+    "category": "infrastructure",
+    "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "teotihuacan-pyramid-founded",
+    "friendly_name": "Pyramid of the Sun Begun",
+    "year": 100,
+    "category": "infrastructure",
+    "description": "Construction began on the massive Pyramid of the Sun at Teotihuacan, one of the largest structures in the ancient Americas.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-aqueduct",
+    "friendly_name": "Aqua Claudia",
+    "year": 52,
+    "category": "infrastructure",
+    "description": "The Aqua Claudia aqueduct was completed under Emperor Claudius, carrying water 69 km into Rome.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "colosseum-architecture-ancient",
+    "friendly_name": "Colosseum Rome Constructed",
+    "year": 72,
+    "category": "infrastructure",
+    "description": "Emperor Vespasian began construction of the Flavian Amphitheatre, the largest amphitheater ever built.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "vespasian-colosseum-begun",
+    "friendly_name": "Vespasian Begins Colosseum",
+    "year": 72,
+    "category": "infrastructure",
+    "description": "Vespasian ordered construction of the Colosseum on the site of Nero's drained artificial lake.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-encyclopedia",
+    "friendly_name": "Pliny-Natural-History",
+    "year": 77,
+    "category": "infrastructure",
+    "description": "Pliny the Elder published Naturalis Historia, an encyclopedic work covering natural science in 37 books.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "colosseum-rome",
+    "friendly_name": "Roman Colosseum",
+    "year": 80,
+    "category": "infrastructure",
+    "description": "The Colosseum was completed under Emperor Titus, holding an estimated 50,000 spectators.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "silk-road-major-routes",
+    "friendly_name": "Major Silk Road Trade Routes Established",
+    "year": 100,
+    "category": "infrastructure",
+    "description": "Overland trade networks connecting China to Rome reached peak activity, exchanging silk, spices, and ideas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nabataean-trade-routes",
+    "friendly_name": "Nabataean Kingdom Controls Arab Trade Routes",
+    "year": -50,
+    "category": "infrastructure",
+    "description": "The Nabataean Kingdom dominated incense trade routes connecting Arabia to the Mediterranean world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nabataean-petra-city",
+    "friendly_name": "Petra Built as Nabataean Capital",
+    "year": -100,
+    "category": "infrastructure",
+    "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bactria-silk-road",
+    "friendly_name": "Bactria Kingdom Major Silk Road Hub",
+    "year": -150,
+    "category": "infrastructure",
+    "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aqueduct-pont-garros",
+    "friendly_name": "Pont Garros Aqueduct",
+    "year": -19,
+    "category": "infrastructure",
+    "description": "The Pont du Gard aqueduct bridge was built in southern France to carry water to the Roman colony of Nemausus.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hadrian-wall-construction",
+    "friendly_name": "Hadrian's Wall Built",
+    "year": 122,
+    "category": "infrastructure",
+    "description": "Emperor Hadrian ordered a 73-mile defensive wall across northern Britain to mark the empire's frontier.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "pantheon-rome-built",
+    "friendly_name": "Pantheon Built in Rome",
+    "year": 126,
+    "category": "infrastructure",
+    "description": "Emperor Hadrian rebuilt the Pantheon with its iconic unreinforced concrete dome, still the world's largest.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moche-mound-construction",
+    "friendly_name": "Moche Mound Platform Completed",
+    "year": 200,
+    "category": "infrastructure",
+    "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "roman-roads-network",
+    "friendly_name": "Roman Roads Network Expansion",
+    "year": 200,
+    "category": "infrastructure",
+    "description": "The Roman road network reached its greatest extent, spanning over 400,000 km across the empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hopewell-culture",
+    "friendly_name": "Hopewell Culture Trade Networks",
+    "year": 200,
+    "category": "infrastructure",
+    "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "damascus-steel-pattern",
+    "friendly_name": "Damascus Steel and Pattern Welding",
+    "year": -300,
+    "category": "infrastructure",
+    "description": "Pattern-welded steel with distinctive wavy patterns was developed in Persia and traded across the ancient world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-roads",
+    "friendly_name": "Roman Road System",
+    "year": -312,
+    "category": "infrastructure",
+    "description": "The Via Appia, Rome's first major highway, was built by censor Appius Claudius Caecus from Rome to Capua.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "samarkand-founded",
+    "friendly_name": "Samarkand City Founded",
+    "year": -700,
+    "category": "infrastructure",
+    "description": "Ancient Maracanda was founded in the Zeravshan valley, becoming one of Central Asia's oldest continuously inhabited cities.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sogdian-traders",
+    "friendly_name": "Sogdian Traders Dominate Silk Road",
+    "year": 500,
+    "category": "infrastructure",
+    "description": "Sogdian merchants from Central Asia became the dominant middlemen of Silk Road trade between China and the West.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "postal-system-persia",
+    "friendly_name": "Persian Postal System",
+    "year": -500,
+    "category": "infrastructure",
+    "description": "The Achaemenid Empire established the Angareion relay postal system under Darius I across the Royal Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "crucible-steel-wootz",
+    "friendly_name": "Crucible Steel (Wootz) Production",
+    "year": -300,
+    "category": "infrastructure",
+    "description": "Indian metalworkers developed wootz crucible steel, producing high-carbon steel prized across the ancient world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "beacon-fire-chains",
+    "friendly_name": "Beacon Fire Communication Networks",
+    "year": -400,
+    "category": "infrastructure",
+    "description": "Ancient Mediterranean civilizations used hilltop beacon fire relay chains to transmit military signals over long distances.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tiwanaku-monumental-center",
+    "friendly_name": "Tiwanaku Monumental Architecture Built",
+    "year": 500,
+    "category": "infrastructure",
+    "description": "The Tiwanaku civilization built monumental stone architecture near Lake Titicaca in the Bolivian highlands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-puquios-aqueducts",
+    "friendly_name": "Nazca Puquios Aqueduct System Built",
+    "year": 450,
+    "category": "infrastructure",
+    "description": "The Nazca people built an underground aqueduct system called puquios to irrigate Peru's arid coastal desert.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tunnel-engineering",
+    "friendly_name": "Tunnel of Eupalinus",
+    "year": -530,
+    "category": "infrastructure",
+    "description": "Engineer Eupalinos built a 1,036-meter tunnel through a mountain on Samos, dug from both ends simultaneously.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "construction-hagia-sophia",
+    "friendly_name": "Hagia Sophia Construction",
+    "year": 537,
+    "category": "infrastructure",
+    "description": "Emperor Justinian I completed the Hagia Sophia in Constantinople, featuring an innovative massive dome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "temple-apollo-corinth",
+    "friendly_name": "Temple of Apollo at Corinth",
+    "year": -540,
+    "category": "infrastructure",
+    "description": "One of the earliest Doric stone temples was built at Corinth, with seven columns still standing today.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "byzantine-church-architecture",
+    "friendly_name": "Byzantine Church Architecture Peak",
+    "year": 550,
+    "category": "infrastructure",
+    "description": "Byzantine church architecture reached its zenith under Justinian I with domed basilicas across the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hanging-gardens-babylon",
+    "friendly_name": "Hanging Gardens of Babylon Built",
+    "year": -600,
+    "category": "infrastructure",
+    "description": "The legendary Hanging Gardens, one of the Seven Wonders, were traditionally attributed to Nebuchadnezzar II.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ellora-caves",
+    "friendly_name": "Ellora Caves Construction",
+    "year": 650,
+    "category": "infrastructure",
+    "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-sewer-system",
+    "friendly_name": "Cloaca Maxima",
+    "year": -600,
+    "category": "infrastructure",
+    "description": "Rome's Cloaca Maxima sewer was built during the Roman Kingdom to drain marshes in the Forum valley.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "camel-adoption-sahara",
+    "friendly_name": "Camel Adoption Across Sahara",
+    "year": 300,
+    "category": "infrastructure",
+    "description": "Widespread camel adoption transformed Saharan trade, enabling trans-desert commerce in gold, salt, and slaves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anglo-saxon-stone-churches",
+    "friendly_name": "Anglo-Saxon Stone Churches Built",
+    "year": 670,
+    "category": "infrastructure",
+    "description": "Early Anglo-Saxon stone churches like those at Monkwearmouth and Jarrow were built in northern England.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "palenque-city",
+    "friendly_name": "Palenque Maya City Peak",
+    "year": 680,
+    "category": "infrastructure",
+    "description": "The Maya city of Palenque reached its height under King Pakal, featuring the Temple of Inscriptions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pallava-shore-temples",
+    "friendly_name": "Pallava Shore Temples Construction",
+    "year": 700,
+    "category": "infrastructure",
+    "description": "The Pallava dynasty built the Shore Temple at Mahabalipuram, one of India's earliest structural stone temples.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "great-wall-china",
+    "friendly_name": "Great Wall of China",
+    "year": -221,
+    "category": "infrastructure",
+    "description": "Qin Shi Huang began connecting existing walls into a unified defensive barrier across northern China.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tikal-great-plaza",
+    "friendly_name": "Tikal Great Plaza Complex Built",
+    "year": 700,
+    "category": "infrastructure",
+    "description": "The Maya city of Tikal's Great Plaza and towering temple pyramids dominated the Guatemalan lowlands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tang-trade-networks",
+    "friendly_name": "Tang Dynasty Establishes Trading Posts Along Silk Road",
+    "year": 750,
+    "category": "infrastructure",
+    "description": "The Tang Dynasty extended Chinese trade influence across Central Asia with posts along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bulguksa-temple",
+    "friendly_name": "Bulguksa Temple Construction Begun",
+    "year": 751,
+    "category": "infrastructure",
+    "description": "Bulguksa Temple was built during the Silla Kingdom in Gyeongju, Korea, as a masterpiece of Buddhist architecture.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "bukhara-trading-city",
+    "friendly_name": "Bukhara Becomes Major Trading Center",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ghana-gold-trade",
+    "friendly_name": "Ghana Empire Controls Gold Trade",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "The Ghana Empire dominated West African gold and salt trade, becoming fabulously wealthy as a trade intermediary.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mound-builders",
+    "friendly_name": "Mound Builders Create Massive Earthworks",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "Mississippian cultures began constructing massive earthen mounds across the southeastern United States.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "borobudur-construction",
+    "friendly_name": "Borobudur Buddhist Temple Construction",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "The Sailendra dynasty built Borobudur in Java, the world's largest Buddhist temple with over 500 Buddha statues.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "woodblock-printing-refinement",
+    "friendly_name": "Woodblock Printing Refinement",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "Chinese woodblock printing was refined during the Tang Dynasty, enabling mass production of texts and images.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "huari-road-system",
+    "friendly_name": "Huari Road Network Established",
+    "year": 800,
+    "category": "infrastructure",
+    "description": "The Wari Empire built an extensive road network across the Andes, prefiguring the later Inca road system.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "jenne-city-foundation",
+    "friendly_name": "Jenne City Major Trading Hub",
+    "year": 900,
+    "category": "infrastructure",
+    "description": "Djenne in present-day Mali became a major trans-Saharan trading hub for gold, salt, and enslaved people.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "prambanan-temple",
+    "friendly_name": "Prambanan Temple Construction Peak",
+    "year": 850,
+    "category": "infrastructure",
+    "description": "The Hindu Prambanan temple complex was built in Java, featuring towering spires dedicated to the Trimurti.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chichen-itza-peak",
+    "friendly_name": "Chichen Itza Peak Period",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "The Maya-Toltec city of Chichen Itza reached its zenith, featuring the iconic El Castillo pyramid.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "toltec-teotihuacan-influence",
+    "friendly_name": "Toltec Pyramid Construction",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "The Toltec civilization built pyramid complexes at Tula, influencing Mesoamerican architecture for centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pueblo-bonito",
+    "friendly_name": "Pueblo Bonito Great House Construction",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "Ancestral Puebloans built Pueblo Bonito in Chaco Canyon, a massive multi-story structure with over 600 rooms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "canal-system",
+    "friendly_name": "Venice Canal System",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "Venice developed its canal system as the city grew into a major maritime trading power in the Adriatic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "amber-trade-routes",
+    "friendly_name": "Amber Trade Routes from Baltic",
+    "year": -1600,
+    "category": "infrastructure",
+    "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lapis-lazuli-trade",
+    "friendly_name": "Lapis Lazuli Trade from Afghanistan",
+    "year": -2500,
+    "category": "infrastructure",
+    "description": "Lapis lazuli from Afghan mines was traded across Mesopotamia and Egypt, prized for its deep blue color.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "incense-trade-frankincense",
+    "friendly_name": "Frankincense Trade from Arabian Peninsula",
+    "year": -1500,
+    "category": "infrastructure",
+    "description": "Arabian frankincense was traded along overland routes to Egypt and Mesopotamia for religious ceremonies.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "caravan-routes-central-asia",
+    "friendly_name": "Caravan Routes Connect Central Asia",
+    "year": -500,
+    "category": "infrastructure",
+    "description": "Organized caravan routes linked Central Asian oases, forming the precursors to the Silk Road trade network.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "escapement-mechanism",
+    "friendly_name": "Escapement Mechanism Invented",
+    "year": 725,
+    "category": "infrastructure",
+    "description": "Yi Xing and Liang Lingzan invented the escapement mechanism in China for their astronomical clock tower.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "drum-signal-codes",
+    "friendly_name": "Drum Signal Codes in Africa",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "West and Central African communities developed sophisticated talking drum communication systems across dense forests.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "arch-mechanics-understanding",
+    "friendly_name": "Arch Mechanics and Design",
+    "year": -100,
+    "category": "infrastructure",
+    "description": "Roman engineers perfected the true arch, enabling construction of aqueducts, bridges, and monumental buildings.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chaco-canyon-great-roads",
+    "friendly_name": "Chaco Canyon Great Road Network Built",
+    "year": 1050,
+    "category": "infrastructure",
+    "description": "Ancestral Puebloans built a network of wide, straight roads radiating from Chaco Canyon across the desert.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kowoj-maya-settlement",
+    "friendly_name": "Kowoj Maya Settlement Lakeside",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "The Kowoj Maya established lakeside settlements in the Peten region of Guatemala during the Postclassic period.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cathedral-construction-boom",
+    "friendly_name": "Cathedral Construction Boom Begins",
+    "year": 1000,
+    "category": "infrastructure",
+    "description": "A wave of Romanesque cathedral construction swept Western Europe following the millennium.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tanjore-temple",
+    "friendly_name": "Tanjore Great Temple Completed",
+    "year": 1010,
+    "category": "infrastructure",
+    "description": "The Brihadeeswarar Temple at Thanjavur was completed under Chola king Rajaraja I, with a 66-meter tower.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-movable-china",
+    "friendly_name": "Movable Type China",
+    "year": 1040,
+    "category": "infrastructure",
+    "description": "Bi Sheng invented movable type printing using ceramic pieces in Song Dynasty China.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "metal-type-development",
+    "friendly_name": "Metal Type Casting and Development",
+    "year": 1230,
+    "category": "infrastructure",
+    "description": "Bi Sheng's movable type system used clay characters; metal type followed in Korea around 1230.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chola-maritime-network",
+    "friendly_name": "Chola Naval Network Extends to Southeast Asia and Middle East",
+    "year": 1025,
+    "category": "infrastructure",
+    "description": "The Chola dynasty projected naval power across the Indian Ocean, raiding Southeast Asian ports.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anasazi-cliff-dwellings",
+    "friendly_name": "Anasazi Cliff Dwelling Construction",
+    "year": 1190,
+    "category": "infrastructure",
+    "description": "Ancestral Puebloans built elaborate cliff dwellings in canyon alcoves across the American Southwest.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "romanesque-development",
+    "friendly_name": "Romanesque Architecture Development",
+    "year": 1050,
+    "category": "infrastructure",
+    "description": "Romanesque architecture spread across Europe featuring thick walls, round arches, and barrel vaults.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "romanesque-architecture-style",
+    "friendly_name": "Romanesque Architecture Style Emerges",
+    "year": 1050,
+    "category": "infrastructure",
+    "description": "The Romanesque style emerged in Western Europe with massive stone churches and decorative arcading.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mississippian-cahokia-settlement",
+    "friendly_name": "Mississippian Settlement at Cahokia",
+    "year": 1050,
+    "category": "infrastructure",
+    "description": "Cahokia near modern St. Louis became the largest pre-Columbian settlement north of Mexico.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shwesandaw-pagoda",
+    "friendly_name": "Shwesandaw Pagoda Built in Pagan",
+    "year": 1057,
+    "category": "infrastructure",
+    "description": "King Anawrahta built the Shwesandaw Pagoda in Bagan, Myanmar after conquering the Mon kingdom of Thaton.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "chaco-canyon-development",
+    "friendly_name": "Chaco Canyon Development Great Houses",
+    "year": 1075,
+    "category": "infrastructure",
+    "description": "Chaco Canyon great houses expanded with multi-story masonry buildings serving as ceremonial centers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "angkor-period-peak",
+    "friendly_name": "Angkor Period Reaches Peak",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "The Khmer Empire's Angkor region reached its peak with massive temple complexes and hydraulic systems.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hoysala-temples",
+    "friendly_name": "Hoysala Temple Construction Peak",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "Hoysala dynasty temples in Karnataka featured intricate star-shaped plans and elaborate stone carvings.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "song-maritime-commerce",
+    "friendly_name": "Song Dynasty Maritime Commerce Peak",
+    "year": 1100,
+    "category": "infrastructure",
+    "description": "The Song Dynasty's maritime trade flourished with advanced shipbuilding and the use of the magnetic compass.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cahokia-metropolis",
+    "friendly_name": "Cahokia Metropolis Reaches Peak Population",
+    "year": 1100,
+    "category": "infrastructure",
+    "description": "Cahokia reached a population of up to 20,000, rivaling contemporary European cities in size.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "compass-navigation",
+    "friendly_name": "Chinese Magnetic Compass",
+    "year": 1088,
+    "category": "infrastructure",
+    "description": "Chinese navigators adopted the magnetic compass for maritime navigation during the Song Dynasty.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "khmer-baray-hydraulics",
+    "friendly_name": "Khmer Baray Hydraulic System Development",
+    "year": 1100,
+    "category": "infrastructure",
+    "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hoysala-temple-architecture",
+    "friendly_name": "Hoysala Dynasty Temple Architecture",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "Hoysala temples like Chennakeshava at Belur showcased extraordinary sculptural detail in soapstone.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "angkor-wat-temple",
+    "friendly_name": "Angkor Wat Temple Complex Construction",
+    "year": 1113,
+    "category": "infrastructure",
+    "description": "King Suryavarman II built Angkor Wat, the world's largest religious monument, dedicated to Vishnu.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "angkor-wat-construction",
+    "friendly_name": "Angkor Wat Built",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "Angkor Wat was completed as the spiritual center of the Khmer Empire in present-day Cambodia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cahokia-moundbuilder",
+    "friendly_name": "Cahokia Mound City Flourishes",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "Cahokia's Monks Mound, the largest earthwork in the Americas, anchored a thriving urban center.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-zimbabwe-stone-construction",
+    "friendly_name": "Great Zimbabwe Stone Architecture",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gothic-architecture-emergence",
+    "friendly_name": "Gothic Architecture Emergence France",
+    "year": 1140,
+    "category": "infrastructure",
+    "description": "Gothic architecture emerged with the rebuilding of the Basilica of Saint-Denis near Paris under Abbot Suger.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "templars-banking-network",
+    "friendly_name": "Knights Templar Establish Banking Network",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "The Knights Templar created an international banking system allowing pilgrims to deposit funds across Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "khmer-temple-architecture",
+    "friendly_name": "Khmer Temple Architecture Tradition Peak",
+    "year": 1150,
+    "category": "infrastructure",
+    "description": "Khmer temple mountain architecture reached its peak with Angkor Wat and Bayon's face towers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pont-old-london",
+    "friendly_name": "Old London Bridge",
+    "year": 1209,
+    "category": "infrastructure",
+    "description": "The medieval stone London Bridge was completed after 33 years of construction, lasting over 600 years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cliff-palace",
+    "friendly_name": "Cliff Palace Construction",
+    "year": 1190,
+    "category": "infrastructure",
+    "description": "Cliff Palace at Mesa Verde was built with 150 rooms and 23 kivas carved into a sandstone alcove.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mesa-verde-cliff-dwellings",
+    "friendly_name": "Mesa Verde Cliff Dwellings Peak",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Mesa Verde cliff dwellings in Colorado housed hundreds of Ancestral Puebloan families in canyon alcoves.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gothic-cathedral-construction",
+    "friendly_name": "Chartres Cathedral Construction",
+    "year": 1194,
+    "category": "infrastructure",
+    "description": "Chartres Cathedral was rebuilt in the Gothic style after a fire, with pioneering flying buttresses and stained glass.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ethiopian-lalibela-churches",
+    "friendly_name": "King Lalibela Builds Rock Churches",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "King Lalibela ordered eleven churches carved from solid rock in Ethiopia, still used for worship today.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chimor-chan-chan-city",
+    "friendly_name": "Chan Chan Capital City Flourishes",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rapa-nui-moai",
+    "friendly_name": "Rapa Nui Moai Statue Construction",
+    "year": 1250,
+    "category": "infrastructure",
+    "description": "The Rapa Nui people carved and transported massive moai stone statues on Easter Island in the Pacific.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tonga-maritime-network",
+    "friendly_name": "Tonga Maritime Trade Network",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "The Tongan maritime empire maintained trade networks spanning thousands of kilometers across the Pacific.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "lapita-culture",
+    "friendly_name": "Lapita Culture Pottery Network",
+    "year": -1500,
+    "category": "infrastructure",
+    "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "khwarezm-development-canal",
+    "friendly_name": "Khwarezm Canal Development",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "The Khwarezmian Empire developed extensive canal irrigation systems along the Amu Darya river in Central Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mound-builder-tradition",
+    "friendly_name": "Mound Builder Tradition Peak",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Mississippian mound-building traditions peaked across the American Southeast with ceremonial platform mounds.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tin-trade-cornwall",
+    "friendly_name": "Cornish Tin Trade Dominates Medieval Europe",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Cornwall's tin mines supplied most of medieval Europe's tin for bronze and pewter production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "perfume-trade-arabia",
+    "friendly_name": "Arabian Perfume Trade Reaches Europe",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Arabian perfumes and distillation techniques reached medieval Europe through Crusader and merchant contacts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "slave-trade-arab",
+    "friendly_name": "Arab Slave Trade Networks Dominate",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Arab slave trade networks transported enslaved people from East Africa across the Indian Ocean and Sahara.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "verge-escapement",
+    "friendly_name": "Verge Escapement Developed",
+    "year": 1275,
+    "category": "infrastructure",
+    "description": "European clockmakers developed the verge escapement, enabling the first mechanical clocks in church towers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "brick-mortar-improvements",
+    "friendly_name": "Brick and Mortar Composition",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Medieval European builders improved brick and mortar formulations, enabling larger Gothic structures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vault-construction-techniques",
+    "friendly_name": "Vault Construction Techniques",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Ribbed vault construction techniques enabled the soaring ceilings of Gothic cathedrals across Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nan-madol-city-construction",
+    "friendly_name": "Nan Madol City Built in Micronesia",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pacific-northwest-cedar-houses",
+    "friendly_name": "Pacific Northwest Cedar House Tradition",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Pacific Northwest peoples built large cedar plank longhouses that housed multiple families and displayed clan crests.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "trade-route-risk-reduction",
+    "friendly_name": "Trade Route Security Establishes",
+    "year": 1250,
+    "category": "infrastructure",
+    "description": "The Mongol Empire's Pax Mongolica secured Eurasian trade routes, reducing banditry and enabling safer commerce.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "notre-dame-reims-built",
+    "friendly_name": "Notre-Dame de Reims Cathedral Built",
+    "year": 1211,
+    "category": "infrastructure",
+    "description": "Reims Cathedral, the coronation church of French kings, began construction in the High Gothic style.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chartres-cathedral-construction",
+    "friendly_name": "Chartres Cathedral Construction Completed",
+    "year": 1220,
+    "category": "infrastructure",
+    "description": "Chartres Cathedral was largely completed, renowned for its 176 stained glass windows and Gothic design.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cologne-cathedral-begun",
+    "friendly_name": "Cologne Cathedral Construction Begun",
+    "year": 1248,
+    "category": "infrastructure",
+    "description": "Cologne Cathedral began construction in Gothic style; it would not be completed until 1880.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "letters-exchange-banking",
+    "friendly_name": "Letters of Exchange Banking System",
+    "year": 1250,
+    "category": "infrastructure",
+    "description": "Italian merchants developed letters of exchange, enabling cashless long-distance trade across medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marco-polo-yuan-court",
+    "friendly_name": "Marco Polo Serves at Yuan Dynasty Court",
+    "year": 1275,
+    "category": "infrastructure",
+    "description": "Venetian merchant Marco Polo arrived at Kublai Khan's court, later documenting East Asian culture and trade.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "yuan-grand-canal",
+    "friendly_name": "Yuan Dynasty Grand Canal Maintenance and Development",
+    "year": 1289,
+    "category": "infrastructure",
+    "description": "The Yuan Dynasty extended and realigned the Grand Canal to connect Beijing directly with southern China.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wool-merchant-regulations",
+    "friendly_name": "Regulations on Wool Merchants Established",
+    "year": 1275,
+    "category": "infrastructure",
+    "description": "Edward I established regulations and export duties on English wool, a key medieval commodity.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "coral-trade-mediterranean",
+    "friendly_name": "Mediterranean Coral Trade Flourishes",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "Red coral harvested off Sardinia and North Africa became a luxury trade commodity across medieval Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "herring-trade-northern",
+    "friendly_name": "Northern European Herring Trade",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "The Hanseatic League dominated the herring trade, with Scania fairs becoming major commercial events.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "banking-loans-innovation",
+    "friendly_name": "Double Entry Bookkeeping and Credit",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "Italian merchants developed double-entry bookkeeping, revolutionizing commercial accounting practices.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "foliot-balance",
+    "friendly_name": "Foliot Balance Regulator Invented",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "The foliot balance was developed as a timekeeping regulator in early European mechanical tower clocks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "buttress-flying-buttress",
+    "friendly_name": "Flying Buttress Refinement",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Flying buttresses were refined in Gothic architecture, enabling thinner walls and larger stained glass windows.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nan-madol-basalt-engineering",
+    "friendly_name": "Nan Madol Basalt Structures Demonstrate Engineering",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "Nan Madol's basalt log-cabin walls on Pohnpei demonstrate advanced engineering on artificial coral reef islands.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "casa-grande-pueblo",
+    "friendly_name": "Casa Grande Pueblo Complex Built",
+    "year": 1350,
+    "category": "infrastructure",
+    "description": "The Ancestral Sonoran Desert people built Casa Grande, a four-story adobe great house in present-day Arizona.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gila-cliff-dwellings",
+    "friendly_name": "Gila Cliff Dwellings Constructed",
+    "year": 1280,
+    "category": "infrastructure",
+    "description": "Mogollon people built cliff dwellings in natural caves above the Gila River in present-day New Mexico.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "golden-horde-sarai-al-jadid",
+    "friendly_name": "Golden Horde Capital at Sarai-al-Jadid",
+    "year": 1330,
+    "category": "infrastructure",
+    "description": "The Golden Horde built New Sarai on the Volga River as their capital, becoming one of the largest cities in the medieval world.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "bruges-bourse-trading",
+    "friendly_name": "Bruges Bourse Becomes Major Exchange",
+    "year": 1309,
+    "category": "infrastructure",
+    "description": "The Bruges Bourse became a pioneering commodities exchange where merchants traded in a formalized setting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "alhambra-palace-built",
+    "friendly_name": "Alhambra Palace Built",
+    "year": 1333,
+    "category": "infrastructure",
+    "description": "The Nasrid sultans expanded the Alhambra in Granada into a masterpiece of Islamic palatial architecture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chimú-chan-chan-peak",
+    "friendly_name": "Chan Chan Urban Development",
+    "year": 1350,
+    "category": "infrastructure",
+    "description": "Chan Chan reached its urban peak as the Chimu Empire's capital, housing an estimated 30,000 people.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hanse-trades-monopoly",
+    "friendly_name": "Hanseatic League Controls Baltic Trade",
+    "year": 1370,
+    "category": "infrastructure",
+    "description": "The Hanseatic League dominated Baltic and North Sea trade with a network of allied merchant cities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "genovese-banking-families",
+    "friendly_name": "Genoese Banking Families Rise to Power",
+    "year": 1350,
+    "category": "infrastructure",
+    "description": "Genoese banking families built financial networks rivaling Florence, financing Mediterranean trade and warfare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "insurance-maritime-contracts",
+    "friendly_name": "Maritime Insurance Contracts Begin",
+    "year": 1347,
+    "category": "infrastructure",
+    "description": "The earliest known maritime insurance contract was written in Genoa, spreading risk across sea voyages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "monopoly-privileges-medieval",
+    "friendly_name": "Royal Trade Monopoly Privileges Granted",
+    "year": 1350,
+    "category": "infrastructure",
+    "description": "Medieval European monarchs granted exclusive trade monopoly charters to merchant guilds and companies.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wool-staple-monopoly",
+    "friendly_name": "English Wool Staple Monopoly Begins",
+    "year": 1353,
+    "category": "infrastructure",
+    "description": "The English Staple system required all wool exports to pass through designated towns for taxation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "timur-architectural-patronage",
+    "friendly_name": "Timur Architectural Patronage",
+    "year": 1390,
+    "category": "infrastructure",
+    "description": "Timur began transforming Samarkand into a magnificent capital with mosques, gardens, and monuments after his conquests.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tulum-city",
+    "friendly_name": "Tulum Maya City",
+    "year": 1200,
+    "category": "infrastructure",
+    "description": "Tulum was built as a walled Maya trading port on the Caribbean coast of the Yucatan Peninsula in Mexico.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mamluk-sultanate-splendor",
+    "friendly_name": "Mamluk Sultanate Architectural Splendor",
+    "year": 1360,
+    "category": "infrastructure",
+    "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "saffron-trade-persia",
+    "friendly_name": "Persian Saffron Trade Reaches Europe",
+    "year": 1370,
+    "category": "infrastructure",
+    "description": "Persian saffron became a prized luxury commodity in European markets, traded via Mediterranean merchant networks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cashmere-wool-trade",
+    "friendly_name": "Cashmere Wool Trade from Kashmir",
+    "year": 1400,
+    "category": "infrastructure",
+    "description": "Fine cashmere wool from Kashmir goats entered international trade networks, prized for luxury shawl production.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "grain-trade-monopoly",
+    "friendly_name": "Grain Trade Monopoly in Baltic",
+    "year": 1390,
+    "category": "infrastructure",
+    "description": "Hanseatic League merchants dominated Baltic grain trade, controlling shipments from Prussia to western Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "madder-dye-monopoly",
+    "friendly_name": "Madder Root Dye Monopoly in Europe",
+    "year": 1400,
+    "category": "infrastructure",
+    "description": "Madder root from the Low Countries dominated European red dye markets, essential for the textile industry.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "slave-trade-ottomans",
+    "friendly_name": "Ottoman Slave Trade System Expands",
+    "year": 1400,
+    "category": "infrastructure",
+    "description": "The Ottoman Empire expanded its slave trade networks across the Black Sea, Balkans, and eastern Mediterranean.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bankruptcy-legal-framework",
+    "friendly_name": "Bankruptcy Legal Framework Develops",
+    "year": 1400,
+    "category": "infrastructure",
+    "description": "Italian city-states developed early bankruptcy laws to manage merchant insolvency and protect creditors.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cast-iron-production",
+    "friendly_name": "Cast Iron Production Methods",
+    "year": 1400,
+    "category": "infrastructure",
+    "description": "European foundries adopted blast furnace techniques to produce cast iron for tools, weapons, and building materials.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dome-construction-mastery",
+    "friendly_name": "Dome Construction and Mechanics",
+    "year": 1420,
+    "category": "infrastructure",
+    "description": "Renaissance architects mastered dome construction techniques, culminating in Brunelleschi's revolutionary Florence Cathedral dome.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "swahili-stone-architecture",
+    "friendly_name": "Swahili Cities Develop Stone Architecture",
+    "year": 1300,
+    "category": "infrastructure",
+    "description": "Swahili coastal cities like Kilwa and Mombasa built coral stone mosques, palaces, and merchant houses.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tuvalu-mausoleum-built",
+    "friendly_name": "Mausoleum of Tamerlane Built",
+    "year": 1404,
+    "category": "infrastructure",
+    "description": "The Gur-e-Amir mausoleum in Samarkand was built as Timur's final resting place, featuring a fluted dome with blue tiles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ming-forbidden-city",
+    "friendly_name": "Forbidden City Completed",
+    "year": 1420,
+    "category": "infrastructure",
+    "description": "The Forbidden City in Beijing was completed under the Yongle Emperor with 980 buildings across 178 acres.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "florence-cathedral-dome",
+    "friendly_name": "Brunelleschi Builds Florence Cathedral Dome",
+    "year": 1420,
+    "category": "infrastructure",
+    "description": "Filippo Brunelleschi began constructing the Florence Cathedral dome using an innovative double-shell design without scaffolding.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "oil-based-printing-ink",
+    "friendly_name": "Oil-Based Printing Ink",
+    "year": 1440,
+    "category": "infrastructure",
+    "description": "Oil-based ink was developed in Germany, enabling sharper print quality essential for Gutenberg's movable type press.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "samarkand-ulugh-beg-madrasah",
+    "friendly_name": "Ulugh Beg Madrasah Completed",
+    "year": 1420,
+    "category": "infrastructure",
+    "description": "Ulugh Beg built a grand madrasah on the Registan in Samarkand, which also served as his astronomical center.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-engraving",
+    "friendly_name": "Engraving Printing",
+    "year": 1430,
+    "category": "infrastructure",
+    "description": "Copperplate engraving techniques enabled detailed image reproduction in European printmaking workshops.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "medici-florentine-bank",
+    "friendly_name": "Medici Bank Becomes Europe's Leading Bank",
+    "year": 1434,
+    "category": "infrastructure",
+    "description": "Under Cosimo de' Medici, the Medici Bank became Europe's largest financial institution with branches across major cities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brunelleschi-dome",
+    "friendly_name": "Brunelleschi Completes Florence Dome",
+    "year": 1436,
+    "category": "infrastructure",
+    "description": "Brunelleschi completed the dome of Florence Cathedral, the largest masonry dome ever built at 45 meters in diameter.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "malacca-entrepot",
+    "friendly_name": "Malacca Becomes Major Trade Entrepot",
+    "year": 1430,
+    "category": "infrastructure",
+    "description": "Malacca became Southeast Asia's greatest trading port, connecting Chinese, Indian, and Arab merchant networks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "qhapaq-nan-expansion",
+    "friendly_name": "Qhapaq Ñan Road Network Expanded",
+    "year": 1450,
+    "category": "infrastructure",
+    "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "machu-picchu-construction",
+    "friendly_name": "Machu Picchu Constructed",
+    "year": 1450,
+    "category": "infrastructure",
+    "description": "The Inca citadel of Machu Picchu was built high in the Andes as a royal estate for Emperor Pachacuti.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "printing-bible",
+    "friendly_name": "Gutenberg Bible",
+    "year": 1455,
+    "category": "infrastructure",
+    "description": "Johannes Gutenberg printed the first major book using movable type in Mainz, Germany, revolutionizing information spread.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "printing-color",
+    "friendly_name": "Printing with Color",
+    "year": 1457,
+    "category": "infrastructure",
+    "description": "The Mainz Psalter became the first book printed with color using multiple print runs for red and blue initials.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antwerp-bourse-replacement",
+    "friendly_name": "Antwerp Bourse Replaces Bruges as Trading Hub",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "Antwerp replaced Bruges as northern Europe's commercial center as the Zwin channel silted up.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-topkapi-palace",
+    "friendly_name": "Topkapi Palace Construction",
+    "year": 1465,
+    "category": "infrastructure",
+    "description": "Sultan Mehmed II began building Topkapi Palace in Constantinople as the primary residence of Ottoman sultans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fugger-banking-empire",
+    "friendly_name": "Rise of Fugger Banking Dynasty",
+    "year": 1473,
+    "category": "infrastructure",
+    "description": "Jakob Fugger expanded the family banking house in Augsburg into the wealthiest financial empire in Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kongo-portuguese-contact",
+    "friendly_name": "Kongo Kingdom Makes Contact with Portuguese",
+    "year": 1483,
+    "category": "infrastructure",
+    "description": "Portuguese navigator Diogo Cão reached the Kongo Kingdom, initiating trade and diplomatic relations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kongo-mani-congo-capital",
+    "friendly_name": "Mbanza Kongo Becomes Major African City",
+    "year": 1490,
+    "category": "infrastructure",
+    "description": "Mbanza Kongo served as the capital of the Kongo Kingdom with a population rivaling many contemporary European cities.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-globe",
+    "friendly_name": "Behaim Globe",
+    "year": 1492,
+    "category": "infrastructure",
+    "description": "Martin Behaim created the oldest surviving terrestrial globe in Nuremberg, just before Columbus's voyage.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "publishing-house",
+    "friendly_name": "Aldus Manutius Publishing",
+    "year": 1494,
+    "category": "infrastructure",
+    "description": "Aldus Manutius founded the Aldine Press in Venice, pioneering pocket-sized books and italic typefaces.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-almanac",
+    "friendly_name": "Almanach des Bergers",
+    "year": 1491,
+    "category": "infrastructure",
+    "description": "The Kalendrier des Bergers was published in Paris, becoming one of the first widely distributed almanacs in Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "songhai-timbuktu",
+    "friendly_name": "Songhai Empire Timbuktu Commercial Peak",
+    "year": 1490,
+    "category": "infrastructure",
+    "description": "Timbuktu reached its commercial peak under the Songhai Empire as a center of trans-Saharan gold and salt trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "silk-debasement-trade",
+    "friendly_name": "Debasement of Silk Trade Quality Standards",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "Declining quality standards in the silk trade led to disputes between Asian producers and European merchants.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cotton-trade-begins",
+    "friendly_name": "Cotton Trade Opens from India",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "Indian cotton textiles entered European markets via Portuguese trade routes, transforming global textile commerce.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indigo-dye-trade",
+    "friendly_name": "Indigo Dye Trade from India",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "Indian indigo dye entered European markets through Portuguese trade, eventually displacing local woad production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fur-trade-russian",
+    "friendly_name": "Russian Fur Trade Expansion",
+    "year": 1582,
+    "category": "infrastructure",
+    "description": "Russia expanded eastward into Siberia driven by demand for sable and other luxury furs in European markets.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cod-fishery-expansion",
+    "friendly_name": "Atlantic Cod Fishery Expansion",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "European fishermen expanded Atlantic cod fishing to the Grand Banks off Newfoundland, feeding growing demand for salt cod.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "quenching-tempering-steel",
+    "friendly_name": "Quenching and Tempering Techniques",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "European smiths refined quenching and tempering methods to produce stronger, more flexible steel for weapons and tools.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "rozwi-stone-fortifications",
+    "friendly_name": "Rozwi Kingdom Builds Stone Fortifications",
+    "year": 1690,
+    "category": "infrastructure",
+    "description": "The Rozwi Kingdom in southern Africa built stone-walled enclosures and fortifications across the Zimbabwe Plateau.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "canal-building-netherlands",
+    "friendly_name": "Dutch Canal System Development",
+    "year": 1500,
+    "category": "infrastructure",
+    "description": "The Dutch expanded their canal network for drainage, transport, and trade across the Low Countries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "postal-system-expansion",
+    "friendly_name": "European Postal System Development",
+    "year": 1490,
+    "category": "infrastructure",
+    "description": "The Thurn und Taxis family established a postal network linking major European cities for the Holy Roman Emperor.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-music",
+    "friendly_name": "Musical Notation Printing",
+    "year": 1501,
+    "category": "infrastructure",
+    "description": "Ottaviano Petrucci published Harmonice Musices Odhecaton in Venice, the first major collection of printed polyphonic music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-map-printing",
+    "friendly_name": "Waldsemuller Map",
+    "year": 1507,
+    "category": "infrastructure",
+    "description": "Martin Waldseemuller printed a world map that first used the name \"America\" for the New World continents.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vijayanagara-architecture",
+    "friendly_name": "Vijayanagara Temple Architecture Peak",
+    "year": 1520,
+    "category": "infrastructure",
+    "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sher-shah-architecture",
+    "friendly_name": "Sher Shah's Architectural Innovations",
+    "year": 1542,
+    "category": "infrastructure",
+    "description": "Sher Shah Suri built the Grand Trunk Road and introduced innovative tomb architecture at Sasaram in Bihar.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cocoa-trade-beans",
+    "friendly_name": "Cocoa Beans Trade with Europe",
+    "year": 1544,
+    "category": "infrastructure",
+    "description": "Cocoa beans were first shipped from the Americas to Spain, beginning the European chocolate trade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "muscovy-company-founding",
+    "friendly_name": "Muscovy Company Charter Granted",
+    "year": 1555,
+    "category": "infrastructure",
+    "description": "England's Muscovy Company received a royal charter, becoming the first major English joint-stock trading company.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-architecture-peak",
+    "friendly_name": "Ottoman Architecture - Suleymaniye Mosque Built",
+    "year": 1557,
+    "category": "infrastructure",
+    "description": "Architect Sinan completed the Suleymaniye Mosque in Istanbul, the masterpiece of Ottoman imperial architecture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "galleon-trade-route",
+    "friendly_name": "Spanish Galleon Trade Route Manila-Acapulco",
+    "year": 1565,
+    "category": "infrastructure",
+    "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "songhai-djinguereber-mosque",
+    "friendly_name": "Djinguereber Mosque Construction",
+    "year": 1327,
+    "category": "infrastructure",
+    "description": "The Djinguereber Mosque was built in Timbuktu under Mansa Musa using Andalusian architect Abu Ishaq al-Sahili.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-atlas",
+    "friendly_name": "Theatrum Orbis Terrarum",
+    "year": 1570,
+    "category": "infrastructure",
+    "description": "Abraham Ortelius published the Theatrum Orbis Terrarum in Antwerp, considered the first modern world atlas.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mughal-architecture-akbar",
+    "friendly_name": "Mughal Architecture Under Akbar Flourishes",
+    "year": 1571,
+    "category": "infrastructure",
+    "description": "Emperor Akbar built the planned city of Fatehpur Sikri, blending Hindu and Islamic architectural styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "levant-company-charter",
+    "friendly_name": "Levant Company Established",
+    "year": 1581,
+    "category": "infrastructure",
+    "description": "Queen Elizabeth I chartered the Levant Company to conduct English trade with the Ottoman Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chocolate-trade-establishment",
+    "friendly_name": "Chocolate Trade Establishes with Europe",
+    "year": 1585,
+    "category": "infrastructure",
+    "description": "Regular chocolate shipments from Veracruz to Seville established a permanent European chocolate trade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mombasa-fort-jesus-construction",
+    "friendly_name": "Fort Jesus Built at Mombasa Harbor",
+    "year": 1593,
+    "category": "infrastructure",
+    "description": "The Portuguese built Fort Jesus at Mombasa to guard their East African trade routes and control the harbor.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "isfahan-city-building",
+    "friendly_name": "Isfahan Built as Safavid Capital",
+    "year": 1598,
+    "category": "infrastructure",
+    "description": "Shah Abbas I moved the Safavid capital to Isfahan and transformed it with grand mosques, bazaars, and bridges.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "beaver-pelt-european-demand",
+    "friendly_name": "European Beaver Pelt Demand Peaks",
+    "year": 1600,
+    "category": "infrastructure",
+    "description": "European demand for beaver pelts for felt hats drove a massive fur trade in North America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "color-printing-techniques",
+    "friendly_name": "Color Printing Techniques",
+    "year": 1600,
+    "category": "infrastructure",
+    "description": "Dutch and Flemish printers advanced multi-color printing using successive impressions from separate blocks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "flag-signal-development",
+    "friendly_name": "Flag Signal Systems Development",
+    "year": 1600,
+    "category": "infrastructure",
+    "description": "Naval fleets developed standardized flag signal systems for ship-to-ship communication during maritime operations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "iron-reinforcement-concept",
+    "friendly_name": "Iron Reinforcement in Masonry",
+    "year": 1600,
+    "category": "infrastructure",
+    "description": "Renaissance builders began embedding iron bars and clamps in masonry to reinforce large-scale structures.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "voc-dutch-east-india",
+    "friendly_name": "Dutch East India Company Monopoly",
+    "year": 1602,
+    "category": "infrastructure",
+    "description": "The VOC was founded as the world's first publicly traded company, dominating Asian spice trade for nearly 200 years.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "istanbul-blue-mosque",
+    "friendly_name": "Blue Mosque Built in Istanbul",
+    "year": 1616,
+    "category": "infrastructure",
+    "description": "The Sultan Ahmed Mosque (Blue Mosque) was completed in Istanbul, notable for its six minarets and blue tile interior.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "isfahan-bazaar-construction",
+    "friendly_name": "Isfahan Bazaar (Bazaar of Isfahan) Expansion",
+    "year": 1620,
+    "category": "infrastructure",
+    "description": "The Grand Bazaar of Isfahan was expanded under Shah Abbas I, stretching two kilometers as a major trade center.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "edo-castle-architecture",
+    "friendly_name": "Major Japanese Castle Construction (Edo Period)",
+    "year": 1610,
+    "category": "infrastructure",
+    "description": "Japanese daimyo built massive stone castles across Japan during the early Edo period's castle-building boom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spice-monopoly-nutmeg",
+    "friendly_name": "Dutch Monopolize Nutmeg Trade",
+    "year": 1621,
+    "category": "infrastructure",
+    "description": "The Dutch VOC seized the Banda Islands and established a brutal monopoly over the global nutmeg supply.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "st-peters-basilica-completion",
+    "friendly_name": "St. Peter's Basilica in Rome Completed",
+    "year": 1626,
+    "category": "infrastructure",
+    "description": "St. Peter's Basilica was consecrated after 120 years of construction, becoming the world's largest church.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mughal-taj-mahal",
+    "friendly_name": "Taj Mahal Construction",
+    "year": 1632,
+    "category": "infrastructure",
+    "description": "Shah Jahan commissioned the Taj Mahal in Agra as a mausoleum for his wife Mumtaz Mahal.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "taj-mahal-construction",
+    "friendly_name": "Taj Mahal Construction Begins",
+    "year": 1632,
+    "category": "infrastructure",
+    "description": "Construction of the Taj Mahal began in Agra, employing over 20,000 workers for more than 20 years.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "taj-mahal-begun",
+    "friendly_name": "Taj Mahal Construction Begun",
+    "year": 1632,
+    "category": "infrastructure",
+    "description": "The Taj Mahal's construction commenced under Shah Jahan, blending Mughal, Persian, and Indian architectural styles.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gondar-city-planning",
+    "friendly_name": "Gondar City Built as Ethiopian Capital",
+    "year": 1636,
+    "category": "infrastructure",
+    "description": "Emperor Fasilides established Gondar as Ethiopia's capital, building castles blending Ethiopian and Portuguese styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "edo-castle-completion",
+    "friendly_name": "Edo Castle Completion and Shogunate Center",
+    "year": 1638,
+    "category": "infrastructure",
+    "description": "Edo Castle was completed as the seat of the Tokugawa shogunate, making Edo (Tokyo) Japan's political center.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gondar-castles-construction",
+    "friendly_name": "Gondar Royal Castles Constructed",
+    "year": 1640,
+    "category": "infrastructure",
+    "description": "The Fasil Ghebbi royal enclosure at Gondar grew with successive Ethiopian emperors adding palaces and churches.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tea-trade-begins",
+    "friendly_name": "Tea Trade Opens Between China and Europe",
+    "year": 1610,
+    "category": "infrastructure",
+    "description": "Dutch traders first shipped Chinese tea to Europe, beginning a trade that would reshape global commerce.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "whale-oil-trade",
+    "friendly_name": "Whale Oil Trade Becomes Valuable",
+    "year": 1650,
+    "category": "infrastructure",
+    "description": "Whale oil became a major commodity for lighting and lubrication, driving large-scale Atlantic whaling operations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baroque-church-architecture",
+    "friendly_name": "Baroque Church Architecture Flourishes",
+    "year": 1650,
+    "category": "infrastructure",
+    "description": "Elaborate Baroque churches spread across Catholic Europe with dramatic facades, domes, and ornate interiors.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "poverty-point-earthworks",
+    "friendly_name": "Poverty Point Earthwork Complex Built",
+    "year": -1500,
+    "category": "infrastructure",
+    "description": "Ancient peoples in Louisiana built massive concentric earthwork ridges and mounds at Poverty Point.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anchor-escapement",
+    "friendly_name": "Anchor (Recoil) Escapement Developed",
+    "year": 1657,
+    "category": "infrastructure",
+    "description": "Robert Hooke developed the anchor escapement for pendulum clocks, greatly improving timekeeping accuracy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hairspring-balance-wheel",
+    "friendly_name": "Balance Wheel and Hairspring",
+    "year": 1675,
+    "category": "infrastructure",
+    "description": "Christiaan Huygens invented the balance wheel with spiral hairspring, enabling accurate portable timepieces.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "versailles-construction",
+    "friendly_name": "Palace of Versailles Construction",
+    "year": 1661,
+    "category": "infrastructure",
+    "description": "Louis XIV began transforming a hunting lodge into the Palace of Versailles, the grandest royal residence in Europe.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "versailles-palace",
+    "friendly_name": "Palace of Versailles Construction",
+    "year": 1661,
+    "category": "infrastructure",
+    "description": "Louis XIV commissioned the massive expansion of Versailles, which became the seat of French government in 1682.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "bus-service",
+    "friendly_name": "Public Bus Service",
+    "year": 1662,
+    "category": "infrastructure",
+    "description": "Blaise Pascal helped launch the first public transit system in Paris with horse-drawn carriages on fixed routes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dojima-rice-exchange",
+    "friendly_name": "Dojima Rice Exchange Established",
+    "year": 1697,
+    "category": "infrastructure",
+    "description": "The Dojima Rice Exchange in Osaka became the world's first organized futures trading market.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wren-st-pauls-cathedral",
+    "friendly_name": "Wren Designs St Paul's Cathedral",
+    "year": 1675,
+    "category": "infrastructure",
+    "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, completing it in 1710.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rococo-architecture-style",
+    "friendly_name": "Rococo Architecture Style Emerges",
+    "year": 1720,
+    "category": "infrastructure",
+    "description": "Rococo architecture emerged in France with lighter, more ornamental designs as a reaction against heavy Baroque style.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "harrison-chronometer-series",
+    "friendly_name": "Harrison Marine Chronometer Series",
+    "year": 1735,
+    "category": "infrastructure",
+    "description": "John Harrison built the first of his marine chronometers (H1) to solve the longitude problem for ocean navigation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "flying-shuttle-refinement",
+    "friendly_name": "Flying Shuttle Improvements",
+    "year": 1733,
+    "category": "infrastructure",
+    "description": "John Kay invented the flying shuttle, doubling weaving speed and enabling wider cloth production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "detent-escapement",
+    "friendly_name": "Detent Escapement for Chronometers",
+    "year": 1766,
+    "category": "infrastructure",
+    "description": "Pierre Le Roy developed the detent escapement, improving marine chronometer precision for navigation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "canal-network-britain",
+    "friendly_name": "Brindley's Canal Network",
+    "year": 1761,
+    "category": "infrastructure",
+    "description": "James Brindley built the Bridgewater Canal, launching Britain's canal-building era that fueled the Industrial Revolution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spinning-mule-details",
+    "friendly_name": "Spinning Mule Mechanical Refinement",
+    "year": 1779,
+    "category": "infrastructure",
+    "description": "Samuel Crompton invented the spinning mule, combining features of the spinning jenny and water frame.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wrought-iron-puddling",
+    "friendly_name": "Wrought Iron Puddling Process",
+    "year": 1784,
+    "category": "infrastructure",
+    "description": "Henry Cort patented the puddling process to produce wrought iron using coal, replacing charcoal-based methods.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "stereotyping-process",
+    "friendly_name": "Stereotyping for Printing",
+    "year": 1725,
+    "category": "infrastructure",
+    "description": "William Ged developed stereotyping in Edinburgh, casting whole pages as single plates for efficient reprinting.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "optical-telegraph-system",
+    "friendly_name": "Optical Telegraph System",
+    "year": 1794,
+    "category": "infrastructure",
+    "description": "Claude Chappe built the first optical telegraph line in France, transmitting messages via semaphore towers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lithography-development",
+    "friendly_name": "Lithography Invention",
+    "year": 1796,
+    "category": "infrastructure",
+    "description": "Alois Senefelder invented lithography in Bavaria, enabling high-quality image printing from flat stone surfaces.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dobby-mechanism",
+    "friendly_name": "Dobby Loom Control Mechanism",
+    "year": 1843,
+    "category": "infrastructure",
+    "description": "The dobby mechanism automated pattern selection on looms, enabling complex woven designs without a full Jacquard setup.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-steamship",
+    "friendly_name": "SS Savannah",
+    "year": 1819,
+    "category": "infrastructure",
+    "description": "The SS Savannah became the first steamship to cross the Atlantic Ocean, sailing from Georgia to Liverpool.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "power-loom-mechanical",
+    "friendly_name": "Power Loom Mechanical Improvements",
+    "year": 1820,
+    "category": "infrastructure",
+    "description": "Richard Roberts and others improved the power loom with iron frames and automatic mechanisms for factory use.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "portland-cement-development",
+    "friendly_name": "Portland Cement Development",
+    "year": 1824,
+    "category": "infrastructure",
+    "description": "Joseph Aspdin patented Portland cement in Britain, creating the foundation for modern concrete construction.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-locomotive",
+    "friendly_name": "Stephenson Locomotive",
+    "year": 1825,
+    "category": "infrastructure",
+    "description": "George Stephenson's Locomotion No. 1 hauled the first public steam railway between Stockton and Darlington.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-railroad",
+    "friendly_name": "Liverpool-Manchester Railway",
+    "year": 1830,
+    "category": "infrastructure",
+    "description": "The Liverpool and Manchester Railway opened as the first inter-city passenger railway powered entirely by steam.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "railroad-station",
+    "friendly_name": "Terminal Station",
+    "year": 1830,
+    "category": "infrastructure",
+    "description": "Liverpool's Crown Street station opened as one of the world's first purpose-built railway terminal stations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "penny-post-britain",
+    "friendly_name": "Penny Black Mail",
+    "year": 1840,
+    "category": "infrastructure",
+    "description": "Britain introduced the Penny Black, the world's first adhesive postage stamp, revolutionizing affordable mail delivery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "electrotyping-process",
+    "friendly_name": "Electrotyping Copper Printing Plates",
+    "year": 1839,
+    "category": "infrastructure",
+    "description": "Moritz von Jacobi developed electrotyping, using electroplating to create copper duplicates of printing plates.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "morse-telegraph-refinement",
+    "friendly_name": "Morse Telegraph Improvements",
+    "year": 1844,
+    "category": "infrastructure",
+    "description": "Samuel Morse sent the first telegraph message (\"What hath God wrought\") on a line between Washington and Baltimore.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rotary-press-development",
+    "friendly_name": "Rotary Printing Press Development",
+    "year": 1843,
+    "category": "infrastructure",
+    "description": "Richard Hoe developed the rotary printing press, dramatically increasing newspaper printing speed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "telegraph-sounder-design",
+    "friendly_name": "Telegraph Sounder Design",
+    "year": 1856,
+    "category": "infrastructure",
+    "description": "The telegraph sounder replaced visual registers, allowing operators to decode Morse code by ear.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "telegraph-cable-insulation",
+    "friendly_name": "Telegraph Cable Insulation Development",
+    "year": 1858,
+    "category": "infrastructure",
+    "description": "Gutta-percha insulation enabled the first transatlantic telegraph cable, briefly connecting Europe and North America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "subway-system",
+    "friendly_name": "London Underground",
+    "year": 1863,
+    "category": "infrastructure",
+    "description": "The Metropolitan Railway opened in London as the world's first underground passenger railway system.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "geunjeongjeon-completion",
+    "friendly_name": "Geunjeongjeon Throne Hall Rebuilt",
+    "year": 1867,
+    "category": "infrastructure",
+    "description": "The Geunjeongjeon throne hall of Gyeongbokgung Palace in Seoul was rebuilt during the Joseon Dynasty restoration.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "telephone-diaphragm",
+    "friendly_name": "Telephone Diaphragm Development",
+    "year": 1876,
+    "category": "infrastructure",
+    "description": "Alexander Graham Bell patented the telephone, using a vibrating diaphragm to convert sound to electrical signals.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "microphone-technology",
+    "friendly_name": "Microphone Technology Development",
+    "year": 1878,
+    "category": "infrastructure",
+    "description": "David Hughes developed the carbon microphone, enabling clearer voice transmission over telephone lines.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "telephone-exchange-system",
+    "friendly_name": "Telephone Exchange and Switching",
+    "year": 1878,
+    "category": "infrastructure",
+    "description": "The first commercial telephone exchange opened in New Haven, Connecticut, connecting 21 subscribers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mild-steel-production",
+    "friendly_name": "Mild Steel Alloy Production",
+    "year": 1880,
+    "category": "infrastructure",
+    "description": "Mass production of mild steel using the Bessemer and Siemens-Martin processes transformed construction and industry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nickel-steel-development",
+    "friendly_name": "Nickel Steel Alloy Development",
+    "year": 1889,
+    "category": "infrastructure",
+    "description": "James Riley demonstrated nickel steel alloys with superior strength, soon adopted for armor plating and construction.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "steel-frame-building",
+    "friendly_name": "Steel Frame Building Construction",
+    "year": 1885,
+    "category": "infrastructure",
+    "description": "The Home Insurance Building in Chicago used a steel frame structure, pioneering modern skyscraper construction.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "time-zone-development",
+    "friendly_name": "Time Zone System Development",
+    "year": 1884,
+    "category": "infrastructure",
+    "description": "The International Meridian Conference in Washington established standardized time zones and the prime meridian at Greenwich.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "transportation-map",
+    "friendly_name": "Transit Map",
+    "year": 1933,
+    "category": "infrastructure",
+    "description": "Harry Beck designed the iconic London Underground map using a simplified schematic layout that influenced transit maps worldwide.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "handloom-frame-loom",
+    "friendly_name": "Hand Loom and Frame Loom Development",
+    "year": -2000,
+    "category": "infrastructure",
+    "description": "Early frame looms were developed in Anatolia and the Near East, enabling more efficient textile production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "reed-shuttle-developed",
+    "friendly_name": "Reed Shuttle Developed",
+    "year": -2000,
+    "category": "infrastructure",
+    "description": "Egyptian weavers developed reed shuttles to pass weft threads through the warp, speeding textile production.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "iron-smelting-bloomery",
+    "friendly_name": "Iron Smelting in Bloomery Furnace",
+    "year": -1200,
+    "category": "infrastructure",
+    "description": "Anatolian metalworkers developed bloomery furnaces to smelt iron ore, beginning the transition from the Bronze Age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "water-clock-clepsydra",
+    "friendly_name": "Water Clock (Clepsydra) Development",
+    "year": -1500,
+    "category": "infrastructure",
+    "description": "Ancient Egyptians developed water clocks (clepsydrae) to measure time, especially during nighttime hours.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "clay-brick-kiln",
+    "friendly_name": "Clay Brick Firing Kiln",
+    "year": -3000,
+    "category": "infrastructure",
+    "description": "Mesopotamian builders developed kiln-fired clay bricks, producing durable building materials for temples and city walls.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bronze-casting-techniques",
+    "friendly_name": "Bronze Casting and Mold-Making",
+    "year": -2500,
+    "category": "infrastructure",
+    "description": "Mesopotamian smiths developed lost-wax and bivalve mold casting for bronze tools, weapons, and ritual objects.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "drop-spindle-invented",
+    "friendly_name": "Drop Spindle Spinning Invented",
+    "year": -3000,
+    "category": "infrastructure",
+    "description": "The drop spindle was invented in Mesopotamia, enabling efficient spinning of fibers into thread for weaving.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gnomon-shadow-clock",
+    "friendly_name": "Gnomon and Shadow Stick Used",
+    "year": -3000,
+    "category": "infrastructure",
+    "description": "Ancient Egyptians used vertical sticks (gnomons) to track the sun's shadow for measuring time and seasons.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "smoke-signal-systems",
+    "friendly_name": "Smoke Signal Communication Systems",
+    "year": -3000,
+    "category": "infrastructure",
+    "description": "Ancient peoples developed smoke signal systems for long-distance communication across open terrain.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tin-smelting-mines",
+    "friendly_name": "Tin Mining and Smelting Developed",
+    "year": -3500,
+    "category": "infrastructure",
+    "description": "Tin mining and smelting developed in Anatolia, providing the essential alloy component for bronze production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fiber-preparation-flax",
+    "friendly_name": "Flax and Hemp Fiber Preparation",
+    "year": -3500,
+    "category": "infrastructure",
+    "description": "Egyptians developed retting and hackling techniques to prepare flax fibers for linen textile production.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "copper-smelting-developed",
+    "friendly_name": "Copper Smelting Process Developed",
+    "year": -4500,
+    "category": "infrastructure",
+    "description": "Mesopotamian metalworkers learned to smelt copper ore at high temperatures, advancing beyond native copper working.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "native-copper-working",
+    "friendly_name": "Native Copper Working Begins",
+    "year": -7000,
+    "category": "infrastructure",
+    "description": "People in the Middle East began cold-hammering native copper nuggets into tools and ornaments.",
+    "difficulty": "hard"
   }
 ]
