@@ -5770,7 +5770,9 @@
     "image_width": 330,
     "image_height": 207,
     "wikipedia_views": 242032,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1954_Guatemalan_coup_d'\u00e9tat"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1954_Guatemalan_coup_d'\u00e9tat",
+    "color": "#4896cf",
+    "text_color": "dark"
   },
   {
     "name": "great-leap-forward",
@@ -6352,7 +6354,10 @@
     "year": -141,
     "category": "conflict",
     "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png",
+    "color": "#adadae",
+    "text_color": "dark"
   },
   {
     "name": "punic-wars-second",
@@ -6480,7 +6485,10 @@
     "year": 535,
     "category": "conflict",
     "description": "Byzantine Emperor Justinian launched a campaign to reconquer Italy from the Ostrogoths, devastating the peninsula.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png",
+    "color": "#cd2a36",
+    "text_color": "light"
   },
   {
     "name": "belisarius-gothic-war",
@@ -6584,7 +6592,10 @@
     "year": 717,
     "category": "conflict",
     "description": "A massive Arab naval and land assault on Constantinople was repelled, preserving the Byzantine Empire.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
+    "color": "#b1b08d",
+    "text_color": "dark"
   },
   {
     "name": "charles-martel-frankish-victory",
@@ -6608,7 +6619,10 @@
     "year": 793,
     "category": "conflict",
     "description": "Norse raiders attacked Lindisfarne monastery, marking the start of centuries of Viking expansion.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Bildsten_fr%C3%A5n_Smiss%2C_Gotland.jpg/330px-Bildsten_fr%C3%A5n_Smiss%2C_Gotland.jpg",
+    "color": "#21211d",
+    "text_color": "light"
   },
   {
     "name": "longship-technology",
@@ -6648,7 +6662,10 @@
     "year": 1000,
     "category": "conflict",
     "description": "Chinese armies deployed fire arrows, bombs, and early rockets, pioneering gunpowder warfare.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "color": "#ee1c24",
+    "text_color": "dark"
   },
   {
     "name": "crossbow-adoption-medieval",
@@ -6736,7 +6753,10 @@
     "year": -1100,
     "category": "conflict",
     "description": "Dorian Greeks migrated into the Peloponnese during the Bronze Age collapse, reshaping Greek civilization.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/330px-Flag_of_Greece.svg.png",
+    "color": "#0b5cae",
+    "text_color": "light"
   },
   {
     "name": "ayyubid-saladin-crusades",
@@ -6816,7 +6836,10 @@
     "year": 1204,
     "category": "conflict",
     "description": "Crusaders diverted to sack Constantinople, fatally weakening the Byzantine Empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
+    "color": "#b1b08d",
+    "text_color": "dark"
   },
   {
     "name": "mongol-conquest-china",
@@ -7192,7 +7215,10 @@
     "year": 1510,
     "category": "conflict",
     "description": "Afonso de Albuquerque captured Goa, establishing Portugal's most important base in Asia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/BeachFun.jpg/330px-BeachFun.jpg",
+    "color": "#a4afb9",
+    "text_color": "dark"
   },
   {
     "name": "portuguese-calicut-control",
@@ -7224,7 +7250,10 @@
     "year": 1378,
     "category": "conflict",
     "description": "The Madura Sultanate on Java was overthrown by the expanding Majapahit Empire.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Southeast_Asia_%28orthographic_projection%29.svg/330px-Southeast_Asia_%28orthographic_projection%29.svg.png",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "spanish-tercio-formation",
@@ -7280,7 +7309,10 @@
     "year": 1562,
     "category": "conflict",
     "description": "Decades of civil war between French Catholics and Huguenots devastated France and killed millions.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
+    "color": "#cd1025",
+    "text_color": "light"
   },
   {
     "name": "oda-nobunaga-unification",
@@ -7336,7 +7368,10 @@
     "year": 1597,
     "category": "conflict",
     "description": "Hideyoshi's second Korean invasion stalled after his death in 1598, ending Japan's continental ambitions.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Korea_%28orthographic_projection%29.svg/330px-Korea_%28orthographic_projection%29.svg.png",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "russo-swedish-wars",
@@ -7368,7 +7403,10 @@
     "year": 1627,
     "category": "conflict",
     "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png",
+    "color": "#da251d",
+    "text_color": "light"
   },
   {
     "name": "shimabara-rebellion",
@@ -7528,7 +7566,10 @@
     "year": 1728,
     "category": "conflict",
     "description": "Jamaican Maroons fought the British to a peace treaty recognizing their autonomy and land rights.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/330px-Flag_of_Jamaica.svg.png",
+    "color": "#e39f00",
+    "text_color": "dark"
   },
   {
     "name": "frederick-great-militarism",
@@ -7536,7 +7577,10 @@
     "year": 1740,
     "category": "conflict",
     "description": "Frederick the Great of Prussia introduced oblique order tactics and invaded Silesia, sparking European wars.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Friedrich_der_Gro%C3%9Fe_-_Johann_Georg_Ziesenis_-_Google_Cultural_Institute_%28cropped_2%29.jpg/330px-Friedrich_der_Gro%C3%9Fe_-_Johann_Georg_Ziesenis_-_Google_Cultural_Institute_%28cropped_2%29.jpg",
+    "color": "#545343",
+    "text_color": "light"
   },
   {
     "name": "qing-xinjiang-conquest",
@@ -7568,7 +7612,10 @@
     "year": 1771,
     "category": "conflict",
     "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png",
+    "color": "#da251d",
+    "text_color": "light"
   },
   {
     "name": "washington-appointed-commander",
@@ -7736,6 +7783,9 @@
     "year": 1964,
     "category": "conflict",
     "description": "The Gulf of Tonkin incident led to massive US military escalation in Vietnam.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg/330px-U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg",
+    "color": "#acaeae",
+    "text_color": "dark"
   }
 ]

@@ -3179,7 +3179,12 @@
     "year": -312,
     "category": "infrastructure",
     "description": "The Via Appia, Rome's first major highway, was built by censor Appius Claudius Caecus from Rome to Capua.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Roads_in_the_Roman_Empire.jpg/330px-Roads_in_the_Roman_Empire.jpg",
+    "image_width": 330,
+    "image_height": 233,
+    "color": "#adb193",
+    "text_color": "dark"
   },
   {
     "name": "samarkand-founded",
@@ -3251,7 +3256,12 @@
     "year": 537,
     "category": "infrastructure",
     "description": "Emperor Justinian I completed the Hagia Sophia in Constantinople, featuring an innovative massive dome.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/330px-Hagia_Sophia_%28228968325%29.jpeg",
+    "image_width": 330,
+    "image_height": 199,
+    "color": "#798ba4",
+    "text_color": "dark"
   },
   {
     "name": "temple-apollo-corinth",
@@ -3331,7 +3341,10 @@
     "year": -221,
     "category": "infrastructure",
     "description": "Qin Shi Huang began connecting existing walls into a unified defensive barrier across northern China.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "color": "#ee1c24",
+    "text_color": "dark"
   },
   {
     "name": "tikal-great-plaza",
@@ -3363,7 +3376,10 @@
     "year": 800,
     "category": "infrastructure",
     "description": "Bukhara grew into a major Silk Road trading and scholarly center under the Samanid dynasty in Central Asia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/2012_Bukhara_7515821196_cropped.jpg/330px-2012_Bukhara_7515821196_cropped.jpg",
+    "color": "#77b3ec",
+    "text_color": "dark"
   },
   {
     "name": "ghana-gold-trade",
@@ -3715,7 +3731,10 @@
     "year": 1150,
     "category": "infrastructure",
     "description": "The Knights Templar created an international banking system allowing pilgrims to deposit funds across Europe.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Codex_Manesse_Hartmann_von_Aue.jpg/330px-Codex_Manesse_Hartmann_von_Aue.jpg",
+    "color": "#b6ad94",
+    "text_color": "dark"
   },
   {
     "name": "khmer-temple-architecture",
@@ -4155,7 +4174,10 @@
     "year": 1400,
     "category": "infrastructure",
     "description": "European foundries adopted blast furnace techniques to produce cast iron for tools, weapons, and building materials.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/P%C3%A8re-Lachaise%2C_The_bat_%2810153312114%29.jpg/330px-P%C3%A8re-Lachaise%2C_The_bat_%2810153312114%29.jpg",
+    "color": "#707b76",
+    "text_color": "light"
   },
   {
     "name": "dome-construction-mastery",
@@ -4755,7 +4777,10 @@
     "year": 1675,
     "category": "infrastructure",
     "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, completing it in 1710.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Catedral_da_S%C3%A9_em_S%C3%A3o_Paulo.jpg/330px-Catedral_da_S%C3%A9_em_S%C3%A3o_Paulo.jpg",
+    "color": "#81a1b7",
+    "text_color": "dark"
   },
   {
     "name": "rococo-architecture-style",
@@ -5051,7 +5076,10 @@
     "year": -1500,
     "category": "infrastructure",
     "description": "Ancient Egyptians developed water clocks (clepsydrae) to measure time, especially during nighttime hours.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/AGMA_Clepsydre.jpg/330px-AGMA_Clepsydre.jpg",
+    "color": "#987940",
+    "text_color": "light"
   },
   {
     "name": "clay-brick-kiln",

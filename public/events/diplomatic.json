@@ -8597,7 +8597,12 @@
     "year": -95,
     "category": "diplomatic",
     "description": "The Parthian Empire reached its zenith controlling territory from Mesopotamia to eastern Iran under Mithridates II.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Map_of_the_Parthian_Empire_under_Mithridates_II.svg/330px-Map_of_the_Parthian_Empire_under_Mithridates_II.svg.png",
+    "image_width": 330,
+    "image_height": 184,
+    "color": "#adaea8",
+    "text_color": "dark"
   },
   {
     "name": "aksumite-empire-rise",
@@ -8685,7 +8690,12 @@
     "year": -140,
     "category": "diplomatic",
     "description": "Emperor Wu of Han formalized a tributary system requiring neighboring states to acknowledge Chinese suzerainty.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png",
+    "image_width": 330,
+    "image_height": 222,
+    "color": "#adadae",
+    "text_color": "dark"
   },
   {
     "name": "han-civil-service",
@@ -8693,7 +8703,12 @@
     "year": -124,
     "category": "diplomatic",
     "description": "Emperor Wu established the Imperial Academy and examinations to recruit officials based on Confucian scholarship.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png",
+    "image_width": 330,
+    "image_height": 222,
+    "color": "#adadae",
+    "text_color": "dark"
   },
   {
     "name": "silk-road-established",
@@ -8893,7 +8908,10 @@
     "year": 330,
     "category": "diplomatic",
     "description": "One of the earliest known orphanages was established in Constantinople under early Christian imperial patronage.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
+    "color": "#b1b08d",
+    "text_color": "dark"
   },
   {
     "name": "qin-legalism-shang-yang",
@@ -8933,7 +8951,10 @@
     "year": 400,
     "category": "diplomatic",
     "description": "The Baekje Kingdom of southwestern Korea flourished as a maritime power with strong ties to Japan and China.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Korea_%28orthographic_projection%29.svg/330px-Korea_%28orthographic_projection%29.svg.png",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "east-african-swahili-ports",
@@ -8981,7 +9002,10 @@
     "year": 418,
     "category": "diplomatic",
     "description": "The Visigoths settled in southern Gaul and Iberia as Roman foederati, founding a lasting Germanic kingdom.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/330px-Bandera_de_Espa%C3%B1a.svg.png",
+    "color": "#ac1619",
+    "text_color": "light"
   },
   {
     "name": "northern-southern-dynasties",
@@ -9069,7 +9093,10 @@
     "year": -550,
     "category": "diplomatic",
     "description": "Cyrus the Great founded the Achaemenid Empire, creating the largest empire the world had yet seen.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Achaemenid_Empire_500_BCE.jpg/330px-Achaemenid_Empire_500_BCE.jpg",
+    "color": "#b6b257",
+    "text_color": "dark"
   },
   {
     "name": "chalukya-dynasty",
@@ -9285,7 +9312,10 @@
     "year": 700,
     "category": "diplomatic",
     "description": "Bukhara emerged as a major Silk Road trading city and center of Islamic scholarship in Central Asia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/2012_Bukhara_7515821196_cropped.jpg/330px-2012_Bukhara_7515821196_cropped.jpg",
+    "color": "#77b3ec",
+    "text_color": "dark"
   },
   {
     "name": "zapotec-empire",
@@ -9373,7 +9403,10 @@
     "year": -753,
     "category": "diplomatic",
     "description": "According to legend, Romulus founded Rome on the Palatine Hill, beginning the city's rise to empire.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg/330px-Trevi_Fountain%2C_Rome%2C_Italy_2_-_May_2007.jpg",
+    "color": "#a8aeb5",
+    "text_color": "dark"
   },
   {
     "name": "first-embassy",
@@ -9421,7 +9454,10 @@
     "year": 810,
     "category": "diplomatic",
     "description": "Tang dynasty merchants developed \"flying money\" certificates, precursors to government-issued paper currency.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "color": "#ee1c24",
+    "text_color": "dark"
   },
   {
     "name": "nubian-kush-kingdoms",
@@ -9613,7 +9649,10 @@
     "year": 918,
     "category": "diplomatic",
     "description": "Wang Geon founded the Goryeo dynasty, unifying Korea and giving the country its modern Western name.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Korea_%28orthographic_projection%29.svg/330px-Korea_%28orthographic_projection%29.svg.png",
+    "color": "#adadad",
+    "text_color": "dark"
   },
   {
     "name": "althing-iceland",
@@ -9877,7 +9916,10 @@
     "year": 1096,
     "category": "diplomatic",
     "description": "Teaching at Oxford began in the late 11th century, making it one of the oldest universities in the English-speaking world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Museum_of_Oxford_%285652685943%29.jpg/330px-Museum_of_Oxford_%285652685943%29.jpg",
+    "color": "#9bafcd",
+    "text_color": "dark"
   },
   {
     "name": "silk-road-trade",
@@ -10125,7 +10167,10 @@
     "year": 1200,
     "category": "diplomatic",
     "description": "The Muisca people of highland Colombia formed a confederation of chiefdoms, inspiring the legend of El Dorado.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/330px-Flag_of_Colombia.svg.png",
+    "color": "#d7a600",
+    "text_color": "dark"
   },
   {
     "name": "hawaiian-settlement-societies",
@@ -10477,7 +10522,10 @@
     "year": 1271,
     "category": "diplomatic",
     "description": "Kublai Khan proclaimed the Yuan dynasty, making the Mongols rulers of all China for the first time.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "color": "#ee1c24",
+    "text_color": "dark"
   },
   {
     "name": "pasai-sultanate",
@@ -10549,7 +10597,10 @@
     "year": 1300,
     "category": "diplomatic",
     "description": "Bruges became northern Europe's foremost commercial center, hosting international merchants and early stock trading.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Br%C3%BCgge_Blick_vom_Belfried_4.jpg/330px-Br%C3%BCgge_Blick_vom_Belfried_4.jpg",
+    "color": "#a1afc0",
+    "text_color": "dark"
   },
   {
     "name": "womens-guilds",
@@ -10637,7 +10688,10 @@
     "year": 1300,
     "category": "diplomatic",
     "description": "The Adal Sultanate emerged in the Horn of Africa as an Islamic trading state rivaling Christian Ethiopia.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Flag_of_Somalia.svg/330px-Flag_of_Somalia.svg.png",
+    "color": "#408edd",
+    "text_color": "dark"
   },
   {
     "name": "mapungubwe-empire-decline",
@@ -10693,7 +10747,10 @@
     "year": 1320,
     "category": "diplomatic",
     "description": "Scottish nobles sent the Declaration of Arbroath to the Pope, asserting Scotland's independence from England.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Arbroath_from_Inchape_Park.JPG/330px-Arbroath_from_Inchape_Park.JPG",
+    "color": "#73b4ec",
+    "text_color": "dark"
   },
   {
     "name": "majapahit-administrative-system",
@@ -11645,7 +11702,10 @@
     "year": 1574,
     "category": "diplomatic",
     "description": "Mughal Emperor Akbar implemented the mansabdari system and Todar Mal's land revenue reforms across India.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg/330px-Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg",
+    "color": "#608080",
+    "text_color": "light"
   },
   {
     "name": "mataram-empire",
@@ -11949,7 +12009,10 @@
     "year": 1624,
     "category": "diplomatic",
     "description": "Cardinal Richelieu became chief minister to Louis XIII, consolidating royal authority and weakening the French nobility and Huguenots.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Champaigne_portrait_richelieu_eb.jpg/330px-Champaigne_portrait_richelieu_eb.jpg",
+    "color": "#1f231a",
+    "text_color": "light"
   },
   {
     "name": "dahomey-kingdom-founded",
@@ -12173,7 +12236,10 @@
     "year": 1683,
     "category": "diplomatic",
     "description": "The failed Ottoman siege of Vienna in 1683 marked a turning point, beginning a long period of territorial retreat in Europe.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg/330px-Flag_of_the_Ottoman_Empire_%281844%E2%80%931922%29.svg.png",
+    "color": "#e30a17",
+    "text_color": "light"
   },
   {
     "name": "locke-treatise-government",
@@ -12197,7 +12263,10 @@
     "year": 1691,
     "category": "diplomatic",
     "description": "Outer Mongolian Khalkha leaders submitted to Qing authority at the Dolon Nor assembly, becoming vassals of the Chinese empire.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Flag_of_Mongolia.svg/330px-Flag_of_Mongolia.svg.png",
+    "color": "#db2630",
+    "text_color": "light"
   },
   {
     "name": "khalkha-mongolia-submission",
@@ -12573,7 +12642,10 @@
     "year": 1793,
     "category": "diplomatic",
     "description": "The Committee of Public Safety under Robespierre executed thousands of perceived enemies through revolutionary tribunals.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
+    "color": "#cd1025",
+    "text_color": "light"
   },
   {
     "name": "execution-of-louis-xvi",
