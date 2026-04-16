@@ -4371,9 +4371,11 @@
     "category": "exploration",
     "description": "The FDA approved Enovid as the first oral contraceptive pill, transforming reproductive healthcare.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Pilule_contraceptive.jpg/330px-Pilule_contraceptive.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oral-contraceptive-pill_gk4ily?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 203
+    "image_height": 440,
+    "color": "#1f202c",
+    "text_color": "light"
   },
   {
     "name": "first-human-space",
@@ -4382,9 +4384,13 @@
     "category": "exploration",
     "description": "Yuri Gagarin became the first human to travel to outer space.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg/330px-%D0%9A%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82_%D0%AE%D1%80%D0%B8%D0%B9_%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-human-space_pqjlaw?_a=BAMAMiiu0",
     "wikipedia_views": 861315,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Yuri_Gagarin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yuri_Gagarin",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "communications-satellite",
@@ -4393,9 +4399,11 @@
     "category": "exploration",
     "description": "Telstar became the first active communications satellite, relaying live television across the Atlantic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Telstar_satellite-CnAM_35181-IMG_5408-gradient.jpg/330px-Telstar_satellite-CnAM_35181-IMG_5408-gradient.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/communications-satellite_wt7ydm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 285
+    "image_height": 440,
+    "color": "#1e202c",
+    "text_color": "light"
   },
   {
     "name": "led-invented",
@@ -4404,9 +4412,11 @@
     "category": "exploration",
     "description": "Nick Holonyak Jr. demonstrated the first practical visible-spectrum light-emitting diode at General Electric.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/RBG-LED.jpg/330px-RBG-LED.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/led-invented_iw7vcd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 245
+    "image_height": 440,
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "quasars-discovered",
@@ -4415,11 +4425,13 @@
     "category": "exploration",
     "description": "Astronomers discovered extremely bright and distant quasi-stellar objects.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Artist%27s_rendering_ULAS_J1120%2B0641.jpg/330px-Artist%27s_rendering_ULAS_J1120%2B0641.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quasars-discovered_jy4cao?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 196,
+    "image_height": 440,
     "wikipedia_views": 25458,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_quasars"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_quasars",
+    "color": "#19222d",
+    "text_color": "light"
   },
   {
     "name": "first-woman-space",
@@ -4428,11 +4440,13 @@
     "category": "exploration",
     "description": "Soviet cosmonaut Valentina Tereshkova became the first woman to fly in space.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/3D_coordinate_system.svg/330px-3D_coordinate_system.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-woman-space_ccvdh5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 393324,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Valentina_Tereshkova"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Valentina_Tereshkova",
+    "color": "#1a2229",
+    "text_color": "light"
   },
   {
     "name": "compact-cassette",
@@ -4441,9 +4455,11 @@
     "category": "exploration",
     "description": "Philips introduced the compact cassette tape, making portable music recording and playback widely accessible.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Compactcassette.jpg/330px-Compactcassette.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compact-cassette_icuhb5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215
+    "image_height": 440,
+    "color": "#1c212d",
+    "text_color": "light"
   },
   {
     "name": "computer-mouse",
@@ -4452,9 +4468,11 @@
     "category": "exploration",
     "description": "Douglas Engelbart invented the first computer mouse, a wooden shell with two wheels, at Stanford Research Institute.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/3-Tasten-Maus_Microsoft.jpg/330px-3-Tasten-Maus_Microsoft.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/computer-mouse_l4zgvo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 289
+    "image_height": 440,
+    "color": "#313b3a",
+    "text_color": "light"
   },
   {
     "name": "kevlar-invented",
@@ -4463,9 +4481,11 @@
     "category": "exploration",
     "description": "Stephanie Kwolek at DuPont invented Kevlar, a super-strong fiber used in bulletproof vests and aerospace.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Kevlar-3D-balls.png/330px-Kevlar-3D-balls.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kevlar-invented_mq3u5b?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 440,
+    "color": "#313439",
+    "text_color": "light"
   },
   {
     "name": "luna-9-launched",
@@ -4474,11 +4494,13 @@
     "category": "exploration",
     "description": "The Soviet Union launches the unmanned Luna 9 spacecraft to achieve first soft landing on the Moon.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Luna_9_Musee_du_Bourget_P1010505.JPG/330px-Luna_9_Musee_du_Bourget_P1010505.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/luna-9-launched_zoytl6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 498,
+    "image_height": 440,
     "wikipedia_views": 32739,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Luna_9"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Luna_9",
+    "color": "#3b444e",
+    "text_color": "light"
   },
   {
     "name": "fiber-optics",
@@ -4487,10 +4509,10 @@
     "category": "exploration",
     "description": "Charles Kao proposed that optical fibers could carry telecommunication signals, earning a Nobel Prize.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Fibreoptic.jpg/330px-Fibreoptic.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fiber-optics_bzb8vj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 499,
-    "color": "#222120",
+    "image_height": 440,
+    "color": "#2d383d",
     "text_color": "light"
   },
   {
@@ -4500,9 +4522,11 @@
     "category": "exploration",
     "description": "The first automated teller machine was installed at a Barclays bank in London.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Fr%C3%BCher_Bankautomat_von_Nixdorf.jpg/330px-Fr%C3%BCher_Bankautomat_von_Nixdorf.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/atm-invented_nwrxei?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 367
+    "image_height": 440,
+    "color": "#1b2324",
+    "text_color": "light"
   },
   {
     "name": "plate-tectonics-confirmed",
@@ -4524,11 +4548,13 @@
     "category": "exploration",
     "description": "Apollo 5 lifts off carrying the first Lunar Module into space.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Lunar_Module-1_and_Spacecraft_Lunar_Module_Adapter_%28SLA%29-7_in_the_Kennedy_Space_Center%27s_Manned_Spacecraft_Operations_Building.jpg/330px-Lunar_Module-1_and_Spacecraft_Lunar_Module_Adapter_%28SLA%29-7_in_the_Kennedy_Space_Center%27s_Manned_Spacecraft_Operations_Building.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apollo-5-lunar-module_fq8dsa?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 412,
+    "image_height": 440,
     "wikipedia_views": 202699,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_Lunar_Module"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_Lunar_Module",
+    "color": "#7b808b",
+    "text_color": "dark"
   },
   {
     "name": "moon-landing",
@@ -4552,11 +4578,13 @@
     "category": "exploration",
     "description": "The mission that would land humans on the Moon launched from Florida.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg/330px-A_Man_on_the_Moon%2C_AS11-40-5903_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apollo-11-launch_hqf46q?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 334,
+    "image_height": 440,
     "wikipedia_views": 1565155,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11",
+    "color": "#132138",
+    "text_color": "light"
   },
   {
     "name": "arpanet-created",
@@ -4565,11 +4593,13 @@
     "category": "exploration",
     "description": "The precursor to the internet connected its first computers at UCLA and Stanford.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Arpanet_logical_map%2C_march_1977.png/330px-Arpanet_logical_map%2C_march_1977.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arpanet-created_lxp13r?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 304791,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/ARPANET"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/ARPANET",
+    "color": "#313e43",
+    "text_color": "light"
   },
   {
     "name": "boeing-747-enters-service",
@@ -4578,11 +4608,13 @@
     "category": "exploration",
     "description": "The worlds first jumbo jet enters commercial service for Pan Am from New York to London.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/B-747_Iberia.jpg/330px-B-747_Iberia.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boeing-747-enters-service_wvlnbf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 1354268,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_747"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boeing_747",
+    "color": "#19222c",
+    "text_color": "light"
   },
   {
     "name": "japan-launches-ohsumi",
@@ -4591,11 +4623,13 @@
     "category": "exploration",
     "description": "Japan becomes the fourth nation to put a satellite into orbit using its own booster.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ohsumi.jpg/330px-Ohsumi.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japan-launches-ohsumi_wmfmdb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 332,
+    "image_height": 440,
     "wikipedia_views": 6294,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohsumi_(satellite)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohsumi_(satellite)",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "mri-invented",
@@ -4604,11 +4638,13 @@
     "category": "exploration",
     "description": "Raymond Damadian demonstrated magnetic resonance imaging.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Structural_MRI_animation.ogv/256px--Structural_MRI_animation.ogv.jpg",
-    "image_width": 256,
-    "image_height": 256,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mri-invented_uno7wc?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 82835,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Functional_magnetic_resonance_imaging",
+    "color": "#1d212b",
+    "text_color": "light"
   },
   {
     "name": "floppy-disk-invented",
@@ -4617,9 +4653,11 @@
     "category": "exploration",
     "description": "IBM introduced the floppy disk, providing the first portable and widely used digital storage medium.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Floppy_disk_2009_G1.jpg/330px-Floppy_disk_2009_G1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/floppy-disk-invented_bjmpdv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 160
+    "image_height": 440,
+    "color": "#1c212b",
+    "text_color": "light"
   },
   {
     "name": "microprocessor-invented",
@@ -4628,9 +4666,11 @@
     "category": "exploration",
     "description": "Intel released the 4004, the first single-chip microprocessor, paving the way for personal computers.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Intel_C4004.jpg/330px-Intel_C4004.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/microprocessor-invented_ldoxrt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 440,
+    "color": "#202029",
+    "text_color": "light"
   },
   {
     "name": "email-invented",
@@ -4639,9 +4679,11 @@
     "category": "exploration",
     "description": "Ray Tomlinson sent the first network email using the @ symbol to route messages between computers.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Evolution_36_mail.png/330px-Evolution_36_mail.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/email-invented_cwptiq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 263
+    "image_height": 440,
+    "color": "#1b222b",
+    "text_color": "light"
   },
   {
     "name": "first-arcade-video-game",
@@ -4650,9 +4692,11 @@
     "category": "exploration",
     "description": "Computer Space, created by Nolan Bushnell, became the first commercially sold arcade video game.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Nutting_ComputerSpace-Blue.JPG/330px-Nutting_ComputerSpace-Blue.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-arcade-video-game_hbtuid?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 654
+    "image_height": 440,
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "apollo-17-last-moon-mission",
@@ -4661,11 +4705,13 @@
     "category": "exploration",
     "description": "Apollo 17 was the final crewed lunar mission, with astronauts Cernan and Schmitt spending 75 hours on the Moon.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg/330px-Eugene_Cernan_at_the_LM%2C_Apollo_17%2C_AS17-134-20378.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apollo-17-last-moon-mission_zrvoxn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 314,
+    "image_height": 440,
     "wikipedia_views": 181108,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Apollo_missions"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Apollo_missions",
+    "color": "#192130",
+    "text_color": "light"
   },
   {
     "name": "pong-arcade-game",
@@ -4674,9 +4720,11 @@
     "category": "exploration",
     "description": "Atari released Pong, one of the first commercially successful arcade video games.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Signed_Pong_Cabinet.jpg/330px-Signed_Pong_Cabinet.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pong-arcade-game_tha09u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 542
+    "image_height": 440,
+    "color": "#232023",
+    "text_color": "light"
   },
   {
     "name": "ethernet-invented",
@@ -4685,9 +4733,11 @@
     "category": "exploration",
     "description": "Bob Metcalfe invented Ethernet at Xerox PARC, enabling high-speed local area networking.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ethernet_connector.webp/330px-Ethernet_connector.webp.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ethernet-invented_qrkg79?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 193
+    "image_height": 440,
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "first-mobile-phone-call",
@@ -4707,11 +4757,13 @@
     "category": "exploration",
     "description": "Donald Johanson discovered the famous Australopithecus afarensis skeleton in Ethiopia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg/330px-Reconstruction_of_the_fossil_skeleton_of_%22Lucy%22_the_Australopithecus_afarensis.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lucy-discovered_den6c1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 796,
+    "image_height": 440,
     "wikipedia_views": 15728,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Lucy_(hominid)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lucy_(hominid)",
+    "color": "#614531",
+    "text_color": "light"
   },
   {
     "name": "barcode-scanned",
@@ -4720,9 +4772,11 @@
     "category": "exploration",
     "description": "A pack of Wrigley's gum became the first product scanned with a UPC barcode at a supermarket in Troy, Ohio.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/UPC-A-036000291452.svg/330px-UPC-A-036000291452.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barcode-scanned_abujh8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 284
+    "image_height": 440,
+    "color": "#182230",
+    "text_color": "light"
   },
   {
     "name": "personal-computer",
@@ -4731,9 +4785,11 @@
     "category": "exploration",
     "description": "The Altair 8800 launched the personal computer revolution, followed by the Apple I in 1976.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Altair_8800_Computer.jpg/330px-Altair_8800_Computer.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/personal-computer_xql3w0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 298
+    "image_height": 440,
+    "color": "#1e2129",
+    "text_color": "light"
   },
   {
     "name": "viking-lands-on-mars",
@@ -4742,11 +4798,13 @@
     "category": "exploration",
     "description": "NASA's Viking 1 became the first spacecraft to successfully land on Mars and transmit surface images.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Viking_spacecraft.jpg/330px-Viking_spacecraft.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/viking-lands-on-mars_lq0cla?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 259,
+    "image_height": 440,
     "wikipedia_views": 36148,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_landing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_landing",
+    "color": "#1e202d",
+    "text_color": "light"
   },
   {
     "name": "vhs-videotape",
@@ -4755,9 +4813,11 @@
     "category": "exploration",
     "description": "JVC launched VHS in Japan, igniting the format war with Betamax and the home video revolution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/VHS_logo.svg/330px-VHS_logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vhs-videotape_rnspdo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 166
+    "image_height": 440,
+    "color": "#251f24",
+    "text_color": "light"
   },
   {
     "name": "voyager-1-launched",
@@ -4779,11 +4839,13 @@
     "category": "exploration",
     "description": "Frederick Sanger developed a method to sequence DNA, revolutionizing genetics.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hybridogenesis_in_water_frogs_gametes.svg/330px-Hybridogenesis_in_water_frogs_gametes.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dna-sequencing_rc77no?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 163,
+    "image_height": 440,
     "wikipedia_views": 97193,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA_sequencing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA_sequencing",
+    "color": "#1d212c",
+    "text_color": "light"
   },
   {
     "name": "atari-2600",
@@ -4792,9 +4854,11 @@
     "category": "exploration",
     "description": "Atari released the Video Computer System, popularizing home video gaming with interchangeable cartridges.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Atari-2600-Wood-4Sw-Set.png/330px-Atari-2600-Wood-4Sw-Set.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/atari-2600_o7byqv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 202
+    "image_height": 440,
+    "color": "#1c212e",
+    "text_color": "light"
   },
   {
     "name": "test-tube-baby",
@@ -4803,11 +4867,13 @@
     "category": "exploration",
     "description": "Louise Brown was born as the first baby conceived through IVF.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Two_small_test_tubes_held_in_spring_clamps.jpg/330px-Two_small_test_tubes_held_in_spring_clamps.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/test-tube-baby_zv6wqw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 281,
+    "image_height": 440,
     "wikipedia_views": 185585,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jean_Purdy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jean_Purdy",
+    "color": "#2b353a",
+    "text_color": "light"
   },
   {
     "name": "gps-system",
@@ -4816,9 +4882,11 @@
     "category": "exploration",
     "description": "The first GPS satellite was launched, beginning the Global Positioning System for precise navigation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/GPS_Block_IIIA.jpg/330px-GPS_Block_IIIA.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gps-system_yyegbw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#526a7b",
+    "text_color": "light"
   },
   {
     "name": "ivf-first-baby",
@@ -4827,9 +4895,11 @@
     "category": "exploration",
     "description": "Louise Brown was born in England as the world's first baby conceived through in vitro fertilization.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/InVitroFertilization.jpg/330px-InVitroFertilization.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ivf-first-baby_fm9i9r?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 299
+    "image_height": 440,
+    "color": "#202126",
+    "text_color": "light"
   },
   {
     "name": "smallpox-eradicated",
@@ -4838,11 +4908,13 @@
     "category": "exploration",
     "description": "The World Health Organization declared smallpox the first disease eradicated by humans.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Child_with_Smallpox_Bangladesh.jpg/330px-Child_with_Smallpox_Bangladesh.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smallpox-eradicated_frexof?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 503,
+    "image_height": 440,
     "wikipedia_views": 1103608,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Smallpox"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Smallpox",
+    "color": "#1e2128",
+    "text_color": "light"
   },
   {
     "name": "post-it-notes",
@@ -4851,9 +4923,11 @@
     "category": "exploration",
     "description": "3M launched Post-it Notes after Spencer Silver's adhesive and Art Fry's bookmark idea came together.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Post-it-2020.svg/330px-Post-it-2020.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/post-it-notes_tewjvi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 208
+    "image_height": 440,
+    "color": "#1a222c",
+    "text_color": "light"
   },
   {
     "name": "first-space-shuttle-launch",
@@ -4862,11 +4936,13 @@
     "category": "exploration",
     "description": "Space Shuttle Columbia launched on STS-1, beginning NASA's reusable spacecraft program that flew until 2011.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Space_Shuttle_Columbia_launching.jpg/330px-Space_Shuttle_Columbia_launching.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-space-shuttle-launch_lw8bne?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 357892,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia",
+    "color": "#1c2b3a",
+    "text_color": "light"
   },
   {
     "name": "compact-disc-invented",
@@ -4875,9 +4951,11 @@
     "category": "exploration",
     "description": "Philips and Sony launched the compact disc, ushering in the digital audio revolution.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Compact_Disc_wordmark.svg/330px-Compact_Disc_wordmark.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compact-disc-invented_r6bkic?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 162
+    "image_height": 440,
+    "color": "#291d21",
+    "text_color": "light"
   },
   {
     "name": "artificial-heart-implanted",
@@ -4886,9 +4964,11 @@
     "category": "exploration",
     "description": "The Jarvik-7 became the first artificial heart successfully implanted in a human patient.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/CardioWest%E2%84%A2_temporary_Total_Artificial_Heart.jpg/330px-CardioWest%E2%84%A2_temporary_Total_Artificial_Heart.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/artificial-heart-implanted_uwiqdp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 440,
+    "color": "#1c212b",
+    "text_color": "light"
   },
   {
     "name": "hiv-identified",
@@ -4897,11 +4977,13 @@
     "category": "exploration",
     "description": "Scientists identified HIV as the virus causing AIDS.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Red_Ribbon.svg/330px-Red_Ribbon.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hiv-identified_yshvxm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 494,
+    "image_height": 440,
     "wikipedia_views": 899712,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/HIV/AIDS"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/HIV/AIDS",
+    "color": "#19222d",
+    "text_color": "light"
   },
   {
     "name": "dna-fingerprinting",
@@ -4910,9 +4992,11 @@
     "category": "exploration",
     "description": "Alec Jeffreys developed DNA fingerprinting, revolutionizing forensic science and paternity testing.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/DNA_double_helix_horizontal.png/330px-DNA_double_helix_horizontal.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dna-fingerprinting_juuvfj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 272
+    "image_height": 440,
+    "color": "#1f202a",
+    "text_color": "light"
   },
   {
     "name": "titanic-wreck-found",
@@ -4921,11 +5005,13 @@
     "category": "exploration",
     "description": "Robert Ballard discovered the wreck of the Titanic on the ocean floor.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Titanic_wreck_bow.jpg/330px-Titanic_wreck_bow.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/titanic-wreck-found_gslgyd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 231,
+    "image_height": 440,
     "wikipedia_views": 621148,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wreck_of_the_Titanic",
+    "color": "#1b212f",
+    "text_color": "light"
   },
   {
     "name": "mir-space-station",
@@ -4934,12 +5020,12 @@
     "category": "exploration",
     "description": "The Soviet Union launched the first modular space station, which operated for 15 years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Mir_Space_Station_viewed_from_Endeavour_during_STS-89.jpg/330px-Mir_Space_Station_viewed_from_Endeavour_during_STS-89.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mir-space-station_fplmob?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 322,
+    "image_height": 440,
     "wikipedia_views": 265453,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mir",
-    "color": "#212121",
+    "color": "#212026",
     "text_color": "light"
   },
   {
@@ -4949,11 +5035,13 @@
     "category": "exploration",
     "description": "Tim Berners-Lee invented the World Wide Web at CERN.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/world-wide-web_snw77s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 179,
+    "image_height": 440,
     "wikipedia_views": 1772050,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+    "color": "#231f28",
+    "text_color": "light"
   },
   {
     "name": "game-boy-released",
@@ -4962,9 +5050,11 @@
     "category": "exploration",
     "description": "Nintendo released the Game Boy, the handheld console that dominated portable gaming for over a decade.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Game-Boy-FL.png/330px-Game-Boy-FL.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/game-boy-released_wlvoh6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 400
+    "image_height": 440,
+    "color": "#222024",
+    "text_color": "light"
   },
   {
     "name": "hubble-launch",
@@ -4973,11 +5063,13 @@
     "category": "exploration",
     "description": "NASA launched the Hubble Space Telescope into orbit.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HST-SM4.jpeg/330px-HST-SM4.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hubble-launch_hphwka?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 544418,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+    "color": "#242022",
+    "text_color": "light"
   },
   {
     "name": "www-goes-public",
@@ -4986,11 +5078,13 @@
     "category": "exploration",
     "description": "Tim Berners-Lee made the World Wide Web available to the general public.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Chrome_on_Linux.png/330px-Chrome_on_Linux.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/www-goes-public_yom46u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 179,
+    "image_height": 440,
     "wikipedia_views": 1772050,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "lithium-ion-battery",
@@ -4999,9 +5093,11 @@
     "category": "exploration",
     "description": "Sony commercialized the lithium-ion battery, enabling portable electronics from laptops to smartphones.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Li_ion_laptop_battery.jpg/330px-Li_ion_laptop_battery.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lithium-ion-battery_lrsskp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 201
+    "image_height": 440,
+    "color": "#212028",
+    "text_color": "light"
   },
   {
     "name": "first-exoplanet",
@@ -5010,11 +5106,13 @@
     "category": "exploration",
     "description": "Astronomers discovered the first planets orbiting a star outside our solar system.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Hr8799_orbit_hd.gif/330px-Hr8799_orbit_hd.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-exoplanet_pmwook?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 49487,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/51_Pegasi_b"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/51_Pegasi_b",
+    "color": "#1b212c",
+    "text_color": "light"
   },
   {
     "name": "mosaic-web-browser",
@@ -5023,9 +5121,11 @@
     "category": "exploration",
     "description": "NCSA Mosaic launched as the first widely popular graphical web browser, making the Web accessible to ordinary users.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/NCSA_Mosaic_Browser_Screenshot.png/330px-NCSA_Mosaic_Browser_Screenshot.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mosaic-web-browser_yjduag?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 286
+    "image_height": 440,
+    "color": "#1c212b",
+    "text_color": "light"
   },
   {
     "name": "dvd-invented",
@@ -5034,9 +5134,11 @@
     "category": "exploration",
     "description": "The DVD was introduced, offering superior video and audio quality that replaced VHS tapes.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/DVD-R_bottom-side.jpg/330px-DVD-R_bottom-side.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dvd-invented_vorcwe?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 318
+    "image_height": 440,
+    "color": "#1f2c35",
+    "text_color": "light"
   },
   {
     "name": "usb-standard",
@@ -5045,9 +5147,11 @@
     "category": "exploration",
     "description": "The Universal Serial Bus standard was released, simplifying how devices connect to computers.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/USB-C_connector_and_receptacle.webp/330px-USB-C_connector_and_receptacle.webp.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/usb-standard_vfdefp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 185
+    "image_height": 440,
+    "color": "#1a212e",
+    "text_color": "light"
   },
   {
     "name": "wifi-standard",
@@ -5056,9 +5160,11 @@
     "category": "exploration",
     "description": "The IEEE 802.11 standard was released, enabling wireless internet that transformed how we connect.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/WiFi_Logo.svg/330px-WiFi_Logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wifi-standard_vbekkh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 196
+    "image_height": 440,
+    "color": "#7b919c",
+    "text_color": "dark"
   },
   {
     "name": "india-nuclear-tests",
@@ -5067,11 +5173,13 @@
     "category": "exploration",
     "description": "India conducted nuclear tests, declaring itself a nuclear weapons state.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Castle_Bravo_nuclear_test_%28cropped%29.jpg/330px-Castle_Bravo_nuclear_test_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/india-nuclear-tests_ygu0mc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 18657,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_India"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_India",
+    "color": "#2e3f4d",
+    "text_color": "light"
   },
   {
     "name": "bluetooth-invented",
@@ -5080,9 +5188,11 @@
     "category": "exploration",
     "description": "Ericsson developed Bluetooth for short-range wireless communication between devices.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Plantronics_Voyager_Legend.JPG/330px-Plantronics_Voyager_Legend.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bluetooth-invented_vfgtgo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 188
+    "image_height": 440,
+    "color": "#21384f",
+    "text_color": "light"
   },
   {
     "name": "napster-launched",
@@ -5091,9 +5201,11 @@
     "category": "exploration",
     "description": "Shawn Fanning and Sean Parker launched Napster, the peer-to-peer file sharing service that upended the music industry.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ShawnFanningJI3.jpg/330px-ShawnFanningJI3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napster-launched_raqunv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 352
+    "image_height": 440,
+    "color": "#273942",
+    "text_color": "light"
   },
   {
     "name": "segway-unveiled",
@@ -5102,9 +5214,11 @@
     "category": "exploration",
     "description": "Dean Kamen unveiled the Segway Personal Transporter, the self-balancing electric vehicle hyped as a transportation revolution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Black_x2_and_white_i2.jpg/330px-Black_x2_and_white_i2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/segway-unveiled_rcip2c?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 382
+    "image_height": 440,
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "first-space-tourist",
@@ -5113,9 +5227,11 @@
     "category": "exploration",
     "description": "Dennis Tito paid roughly $20 million to fly aboard a Russian Soyuz, becoming the first paying space tourist.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Dennis_Tito.jpg/330px-Dennis_Tito.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-space-tourist_gct9bf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 255
+    "image_height": 440,
+    "color": "#1e2224",
+    "text_color": "light"
   },
   {
     "name": "roomba-released",
@@ -5124,9 +5240,11 @@
     "category": "exploration",
     "description": "iRobot introduced the Roomba, the first widely successful autonomous robotic vacuum cleaner.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Roomba_original.jpg/330px-Roomba_original.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roomba-released_wwnssq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 304
+    "image_height": 440,
+    "color": "#192130",
+    "text_color": "light"
   },
   {
     "name": "spirit-mars-rover",
@@ -5135,11 +5253,13 @@
     "category": "exploration",
     "description": "NASAs Spirit rover landed successfully on Mars to explore the surface.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/KSC-03PD-0786.jpg/330px-KSC-03PD-0786.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spirit-mars-rover_llhhr9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215,
+    "image_height": 440,
     "wikipedia_views": 213179,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_rover"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_rover",
+    "color": "#9a6146",
+    "text_color": "light"
   },
   {
     "name": "eris-discovery",
@@ -5148,11 +5268,13 @@
     "category": "exploration",
     "description": "Discovery of Eris led the IAU to define planet for the first time, demoting Pluto.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Ceres_-_RC3_-_Haulani_Crater_%2822381131691%29.jpg/330px-Ceres_-_RC3_-_Haulani_Crater_%2822381131691%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eris-discovery_upxyri?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 436339,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
+    "color": "#1c212d",
+    "text_color": "light"
   },
   {
     "name": "youtube-launched",
@@ -5161,9 +5283,11 @@
     "category": "exploration",
     "description": "YouTube launched as the first major video-sharing platform, transforming online media consumption.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png/330px-Youtube_interface%2C_showing_search_results_of_Burger_Recipe.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/youtube-launched_pbosuu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 187
+    "image_height": 440,
+    "color": "#1e212b",
+    "text_color": "light"
   },
   {
     "name": "north-korea-nuclear-test",
@@ -5172,11 +5296,13 @@
     "category": "exploration",
     "description": "North Korea conducted its first underground nuclear test, becoming the eighth country to detonate a nuclear device.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_of_North_Korea.svg/330px-Flag_of_North_Korea.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/north-korea-nuclear-test_swvp5a?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 165,
+    "image_height": 440,
     "wikipedia_views": 28174,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_North_Korea"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_nuclear_weapons_tests_of_North_Korea",
+    "color": "#132136",
+    "text_color": "light"
   },
   {
     "name": "kindle-ereader",
@@ -5185,9 +5311,11 @@
     "category": "exploration",
     "description": "Amazon released the Kindle, popularizing e-readers and transforming how people buy and read books.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Amazon_Kindle_2024.svg/330px-Amazon_Kindle_2024.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kindle-ereader_kgwida?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 190
+    "image_height": 440,
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "spotify-launched",
@@ -5196,9 +5324,11 @@
     "category": "exploration",
     "description": "Spotify launched its music streaming service in Sweden, pioneering the shift from ownership to on-demand streaming.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Daniel_Ek_EC_2025_%28cropped%29.jpg/330px-Daniel_Ek_EC_2025_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spotify-launched_eqi0eq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "color": "#17222f",
+    "text_color": "light"
   },
   {
     "name": "higgs-boson",
@@ -5207,11 +5337,13 @@
     "category": "exploration",
     "description": "Scientists at CERN confirmed the existence of the Higgs boson particle.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Candidate_Higgs_Events_in_ATLAS_and_CMS.png/330px-Candidate_Higgs_Events_in_ATLAS_and_CMS.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/higgs-boson_nqcr68?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 429,
+    "image_height": 440,
     "wikipedia_views": 634193,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Higgs_boson"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Higgs_boson",
+    "color": "#19222d",
+    "text_color": "light"
   },
   {
     "name": "crispr-gene-editing",
@@ -5220,11 +5352,13 @@
     "category": "exploration",
     "description": "Scientists developed CRISPR-Cas9 as a precise gene editing tool.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png/330px-Streptococcus_pyogenes_Cas9-DNA-RNA_complex_PDB_4OO8.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crispr-gene-editing_hemwxv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 275,
+    "image_height": 440,
     "wikipedia_views": 182310,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/CRISPR_gene_editing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/CRISPR_gene_editing",
+    "color": "#21211f",
+    "text_color": "light"
   },
   {
     "name": "voyager-leaves-solar-system",
@@ -5233,11 +5367,13 @@
     "category": "exploration",
     "description": "Voyager 1 became the first spacecraft to enter interstellar space.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/330px-Voyager_spacecraft_model.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/voyager-leaves-solar-system_jinwwq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 239,
+    "image_height": 440,
     "wikipedia_views": 184665,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliosphere"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliosphere",
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "mars-curiosity-landing",
@@ -5246,11 +5382,13 @@
     "category": "exploration",
     "description": "NASA's Curiosity rover landed on Mars to search for signs of life.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg/330px-Curiosity_Self-Portrait_at_%27Big_Sky%27_Drilling_Site.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mars-curiosity-landing_kx3biy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 455,
+    "image_height": 440,
     "wikipedia_views": 269991,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Curiosity_(rover)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Curiosity_(rover)",
+    "color": "#774530",
+    "text_color": "light"
   },
   {
     "name": "felix-baumgartner-space-jump",
@@ -5259,11 +5397,13 @@
     "category": "exploration",
     "description": "Austrian skydiver Felix Baumgartner jumped from 128,000 feet, breaking the sound barrier during freefall.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Kittinger-jump.jpg/960px-Kittinger-jump.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/felix-baumgartner-space-jump_wl1tzp?_a=BAMAMiiu0",
     "wikipedia_views": 1300418,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Felix_Baumgartner",
-    "image_width": 960,
-    "image_height": 1219
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#172134",
+    "text_color": "light"
   },
   {
     "name": "tesla-model-s",
@@ -5272,9 +5412,11 @@
     "category": "exploration",
     "description": "Tesla released the Model S, the first mainstream luxury electric vehicle with long range.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tesla_Model_S_%28Facelift_ab_04-2016%29_%28cropped%29.jpg/330px-Tesla_Model_S_%28Facelift_ab_04-2016%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tesla-model-s_pmujhu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 164
+    "image_height": 440,
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "consumer-3d-printing",
@@ -5283,9 +5425,11 @@
     "category": "exploration",
     "description": "Affordable consumer 3D printers like MakerBot brought additive manufacturing into homes and small businesses.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Robot_3D_print_timelapse_on_RepRapPro_Fisher.webm/330px--Robot_3D_print_timelapse_on_RepRapPro_Fisher.webm.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/consumer-3d-printing_bw9dy3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 440,
+    "color": "#182230",
+    "text_color": "light"
   },
   {
     "name": "dji-phantom-drone",
@@ -5294,9 +5438,11 @@
     "category": "exploration",
     "description": "DJI released the Phantom 1, making aerial photography and videography accessible to consumers.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/DJI_Innovations_logo.svg/330px-DJI_Innovations_logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dji-phantom-drone_zgppf0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 191
+    "image_height": 440,
+    "color": "#1b2f3e",
+    "text_color": "light"
   },
   {
     "name": "lab-grown-burger",
@@ -5305,9 +5451,11 @@
     "category": "exploration",
     "description": "Mark Post publicly tasted the first lab-grown hamburger in London, grown from stem cells at a cost of over $300,000.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cultivated_hamburger%2C_2013.jpg/330px-Cultivated_hamburger%2C_2013.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lab-grown-burger_dzxz2l?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#13232d",
+    "text_color": "light"
   },
   {
     "name": "oculus-rift-vr",
@@ -5316,9 +5464,11 @@
     "category": "exploration",
     "description": "Oculus shipped its first Rift Development Kit, reigniting mainstream interest in virtual reality.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Oculus-Rift-CV1-Headset-Front.jpg/330px-Oculus-Rift-CV1-Headset-Front.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oculus-rift-vr_ej0tvl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 228
+    "image_height": 440,
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "india-mars-mission",
@@ -5327,11 +5477,13 @@
     "category": "exploration",
     "description": "India became the first Asian nation to reach Mars orbit on its first attempt.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg/330px-Mars_Orbiter_Mission_Over_Mars_%2815237158879%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/india-mars-mission_e6gfh8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 312,
+    "image_height": 440,
     "wikipedia_views": 145791,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_Orbiter_Mission"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_Orbiter_Mission",
+    "color": "#122237",
+    "text_color": "light"
   },
   {
     "name": "amazon-echo-launched",
@@ -5340,9 +5492,11 @@
     "category": "exploration",
     "description": "Amazon launched the Echo with Alexa voice assistant, creating the smart speaker product category.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Amazon_Alexa_Logo_2024.svg/330px-Amazon_Alexa_Logo_2024.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amazon-echo-launched_iv92k0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 212
+    "image_height": 440,
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "gravitational-waves",
@@ -5351,11 +5505,13 @@
     "category": "exploration",
     "description": "LIGO detected gravitational waves, confirming Einstein's prediction.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm/320px--Warped_Space_and_Time_Around_Colliding_Black_Holes_%28Courtesy_Caltech-MIT-LIGO_Laboratory%2C_produced_by_SXS_project%29.webm.jpg",
-    "image_width": 320,
-    "image_height": 180,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gravitational-waves_cfjaps?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 65411,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves",
+    "color": "#1a222a",
+    "text_color": "light"
   },
   {
     "name": "new-horizons-pluto",
@@ -5364,11 +5520,13 @@
     "category": "exploration",
     "description": "NASA's probe made the first flyby of Pluto, revealing its surface.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/New_Horizons_spacecraft_model_1.png/330px-New_Horizons_spacecraft_model_1.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/new-horizons-pluto_zas0yz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 308,
+    "image_height": 440,
     "wikipedia_views": 315731,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/New_Horizons"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/New_Horizons",
+    "color": "#1f2126",
+    "text_color": "light"
   },
   {
     "name": "spacex-reusable-rocket",
@@ -5377,11 +5535,13 @@
     "category": "exploration",
     "description": "SpaceX successfully landed a rocket booster for reuse for the first time.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Starbase.jpg/330px-Starbase.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spacex-reusable-rocket_kthxit?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 36753,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/SpaceX_reusable_launch_system_development_program"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/SpaceX_reusable_launch_system_development_program",
+    "color": "#18222b",
+    "text_color": "light"
   },
   {
     "name": "electric-scooter-sharing",
@@ -5390,9 +5550,11 @@
     "category": "exploration",
     "description": "Bird launched dockless electric scooter rentals in Santa Monica, sparking a worldwide micro-mobility boom.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Xiaomi_M365_blanche.jpg/330px-Xiaomi_M365_blanche.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-scooter-sharing_xdqwne?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 281
+    "image_height": 440,
+    "color": "#18222e",
+    "text_color": "light"
   },
   {
     "name": "waymo-self-driving",
@@ -5401,9 +5563,11 @@
     "category": "exploration",
     "description": "Waymo launched the first commercial autonomous ride-hailing service in Phoenix, Arizona.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Waymo_logo.svg/330px-Waymo_logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/waymo-self-driving_ju8pgq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 234
+    "image_height": 440,
+    "color": "#182540",
+    "text_color": "light"
   },
   {
     "name": "black-hole-image",
@@ -5412,12 +5576,12 @@
     "category": "exploration",
     "description": "The Event Horizon Telescope captured the first image of a black hole.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/330px-Black_hole_-_Messier_87_crop_max_res.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/black-hole-image_wolrre?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 121193,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Event_Horizon_Telescope",
-    "color": "#2b1d1b",
+    "color": "#1a222c",
     "text_color": "light"
   },
   {
@@ -5427,11 +5591,13 @@
     "category": "exploration",
     "description": "Google claimed quantum supremacy with its Sycamore processor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/ea/Quantum_Supremacy_by_Kaku.jpg",
-    "image_width": 257,
-    "image_height": 388,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quantum-computing-supremacy_ytny5d?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 50790,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_supremacy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Quantum_supremacy",
+    "color": "#182131",
+    "text_color": "light"
   },
   {
     "name": "change-4-landing",
@@ -5440,11 +5606,13 @@
     "category": "exploration",
     "description": "Chinas probe made the first soft landing on the far side of the Moon.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/330px-FullMoon2010.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/change-4-landing_faanj1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 314,
+    "image_height": 440,
     "wikipedia_views": 525236,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Moon_landing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moon_landing",
+    "color": "#172230",
+    "text_color": "light"
   },
   {
     "name": "mrna-vaccines",
@@ -5453,11 +5621,13 @@
     "category": "exploration",
     "description": "The first mRNA vaccines were approved for COVID-19 prevention.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ijms-21-06582-g002.webp/330px-Ijms-21-06582-g002.webp.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mrna-vaccines_aylvld?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 181,
+    "image_height": 440,
     "wikipedia_views": 301554,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_vaccine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_vaccine",
+    "color": "#172231",
+    "text_color": "light"
   },
   {
     "name": "alphafold-protein",
@@ -5466,11 +5636,13 @@
     "category": "exploration",
     "description": "AI solved the 50-year-old problem of predicting protein structures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Protein_structure.png/330px-Protein_structure.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alphafold-protein_bevnuz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 229941,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/AlphaFold"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/AlphaFold",
+    "color": "#1a2228",
+    "text_color": "light"
   },
   {
     "name": "china-moon-samples",
@@ -5531,11 +5703,13 @@
     "category": "exploration",
     "description": "The probe became the first spacecraft to fly through the Sun's corona.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Parker_Solar_Probe_spacecraft_model.png/330px-Parker_Solar_Probe_spacecraft_model.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/parker-solar-probe_dnkv9a?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 229,
+    "image_height": 440,
     "wikipedia_views": 254992,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Parker_Solar_Probe"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Parker_Solar_Probe",
+    "color": "#2c1d1c",
+    "text_color": "light"
   },
   {
     "name": "dart-asteroid-impact",
@@ -8219,7 +8393,11 @@
     "category": "exploration",
     "description": "First wearable robotic device designed to augment human strength for military and industrial use.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Biomimetics-09-00520-g001.png/330px-Biomimetics-09-00520-g001.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/robotic-exoskeleton_qorevj?_a=BAMAMiiu0",
+    "color": "#1a222d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "electronic-cigarette",
@@ -8228,7 +8406,11 @@
     "category": "exploration",
     "description": "Herbert Gilbert patented a smokeless, non-tobacco electronic device that heated flavored air.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/CDC_electronic_cigarettes_October_2015_%28cropped%29.png/330px-CDC_electronic_cigarettes_October_2015_%28cropped%29.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electronic-cigarette_cooqva?_a=BAMAMiiu0",
+    "color": "#353533",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "capacitive-touchscreen",
@@ -8246,7 +8428,11 @@
     "category": "exploration",
     "description": "Handheld electronic calculators replaced slide rules and mechanical adding machines.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Casio_calculator_JS-20WK_in_201901_002.jpg/330px-Casio_calculator_JS-20WK_in_201901_002.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pocket-calculator_je0nwl?_a=BAMAMiiu0",
+    "color": "#1a212e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "genetic-modification",
@@ -8255,7 +8441,11 @@
     "category": "exploration",
     "description": "Boyer and Cohen created the first genetically modified organism using recombinant DNA.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Genetic_engineering_logo.png/330px-Genetic_engineering_logo.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genetic-modification_sv7m8x?_a=BAMAMiiu0",
+    "color": "#1b222b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rubiks-cube",
@@ -8264,7 +8454,11 @@
     "category": "exploration",
     "description": "Erno Rubik invented the iconic three-dimensional combination puzzle, the bestselling toy of all time.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Rubiks_cube_solved.jpg/330px-Rubiks_cube_solved.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubiks-cube_buaili?_a=BAMAMiiu0",
+    "color": "#202125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "home-automation",
@@ -8273,7 +8467,11 @@
     "category": "exploration",
     "description": "The X10 protocol enabled remote control of household devices over existing power lines.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Raumbedienger%C3%A4t.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/home-automation_znzaqa?_a=BAMAMiiu0",
+    "color": "#1c212d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dna-sequencing-method",
@@ -8282,7 +8480,11 @@
     "category": "exploration",
     "description": "Frederick Sanger developed a chain-termination method to read the order of DNA bases.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Hybridogenesis_in_water_frogs_gametes.svg/330px-Hybridogenesis_in_water_frogs_gametes.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dna-sequencing-method_jed04a?_a=BAMAMiiu0",
+    "color": "#1f2129",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "self-driving-car-prototype",
@@ -8291,7 +8493,11 @@
     "category": "exploration",
     "description": "Tsukuba Mechanical Engineering Lab demonstrated the first autonomous vehicle using camera navigation.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Waymo_logo.svg/330px-Waymo_logo.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/self-driving-car-prototype_fuce64?_a=BAMAMiiu0",
+    "color": "#374351",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "handheld-game-console",
@@ -8300,7 +8506,11 @@
     "category": "exploration",
     "description": "Milton Bradley's Microvision was the first portable gaming system with interchangeable cartridges.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Nintendo_DS_Lite_side.jpg/330px-Nintendo_DS_Lite_side.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/handheld-game-console_rj6yed?_a=BAMAMiiu0",
+    "color": "#1a222b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "flash-memory",
@@ -8309,7 +8519,11 @@
     "category": "exploration",
     "description": "Fujio Masuoka invented non-volatile computer memory that retains data without power.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/USB_flash_drive.JPG/330px-USB_flash_drive.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flash-memory_gghcup?_a=BAMAMiiu0",
+    "color": "#1e2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "laptop-computer",
@@ -8318,7 +8532,11 @@
     "category": "exploration",
     "description": "The Epson HX-20 was the first full-featured portable computer with a built-in screen and printer.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Laptop_collage.jpg/330px-Laptop_collage.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/laptop-computer_lhgoa1?_a=BAMAMiiu0",
+    "color": "#1a222c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "search-engine-archie",
@@ -8327,7 +8545,11 @@
     "category": "exploration",
     "description": "Alan Emtage created Archie, the first tool for indexing and searching internet file archives.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Google_search_result_for_Magic_Flute_opera.png/330px-Google_search_result_for_Magic_Flute_opera.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/search-engine-archie_cb7ep0?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "solid-state-drive",
@@ -8336,7 +8558,11 @@
     "category": "exploration",
     "description": "SunDisk produced the first flash-based storage drive as a faster alternative to hard disks.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/2023_Dysk_SSD_Patriot_P210_2TB.jpg/330px-2023_Dysk_SSD_Patriot_P210_2TB.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/solid-state-drive_cp2f7v?_a=BAMAMiiu0",
+    "color": "#344859",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sim-card",
@@ -8345,7 +8571,11 @@
     "category": "exploration",
     "description": "Giesecke and Devrient created the subscriber identity module for authenticating mobile phones.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/SIM-Karte_von_Telef%C3%B3nica_O2_Europe_-_Standard_und_Micro.jpg/330px-SIM-Karte_von_Telef%C3%B3nica_O2_Europe_-_Standard_und_Micro.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sim-card_lo9uvo?_a=BAMAMiiu0",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-mobile-game",
@@ -8354,7 +8584,11 @@
     "category": "exploration",
     "description": "Tetris was preloaded on the Hagenuk MT-2000, making it the first game on a mobile phone.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Playing_with_smartphone.jpg/330px-Playing_with_smartphone.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mobile-game_cl2ttm?_a=BAMAMiiu0",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "social-media",
@@ -8363,7 +8597,11 @@
     "category": "exploration",
     "description": "SixDegrees.com launched as the first recognizable social networking site with user profiles.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Social_media_collection_2020s.png/330px-Social_media_collection_2020s.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/social-media_hnstzu?_a=BAMAMiiu0",
+    "color": "#202125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mobile-web",
@@ -8372,7 +8610,11 @@
     "category": "exploration",
     "description": "The Nokia 9000 Communicator enabled web browsing on a handheld mobile device.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Mobile_Phone_Evolution_1992_-_2014.jpg/330px-Mobile_Phone_Evolution_1992_-_2014.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mobile-web_rzz9bc?_a=BAMAMiiu0",
+    "color": "#202125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "commercial-genetic-test",
@@ -8381,7 +8623,11 @@
     "category": "exploration",
     "description": "BRACAnalysis became the first commercially available genetic test for hereditary cancer risk.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/23andMe_logo.svg/330px-23andMe_logo.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/commercial-genetic-test_ju2l5j?_a=BAMAMiiu0",
+    "color": "#35333d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "capsule-endoscopy",
@@ -8390,7 +8636,11 @@
     "category": "exploration",
     "description": "A swallowable camera pill for imaging the digestive tract without invasive surgery.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/CapsuleEndoscope.jpg/330px-CapsuleEndoscope.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/capsule-endoscopy_inxtos?_a=BAMAMiiu0",
+    "color": "#231f27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "android-operating-system",
@@ -8399,7 +8649,11 @@
     "category": "exploration",
     "description": "Mobile operating system founded by Andy Rubin that became the world's most-used platform.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Googleplex_HQ_%28cropped%29.jpg/330px-Googleplex_HQ_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/android-operating-system_qytxtl?_a=BAMAMiiu0",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-podcast",
@@ -8408,7 +8662,11 @@
     "category": "exploration",
     "description": "Adam Curry and Dave Winer created the first downloadable audio show distributed via RSS.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Serial_Podcast.jpg/330px-Serial_Podcast.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-podcast_vmq3be?_a=BAMAMiiu0",
+    "color": "#263c4a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cloud-computing-amazon",
@@ -8417,9 +8675,11 @@
     "category": "exploration",
     "description": "Amazon Web Services launched, pioneering scalable on-demand cloud computing infrastructure.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Cloud_computing.svg/330px-Cloud_computing.svg.png",
-    "color": "#212121",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cloud-computing-amazon_afo3sl?_a=BAMAMiiu0",
+    "color": "#254d6d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "synthetic-organism",
@@ -8428,7 +8688,11 @@
     "category": "exploration",
     "description": "The J. Craig Venter Institute created the first living cell with an entirely synthetic genome.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Synthetic_Biology_Research_at_NASA_Ames.jpg/330px-Synthetic_Biology_Research_at_NASA_Ames.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/synthetic-organism_cwreql?_a=BAMAMiiu0",
+    "color": "#1a222a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "solid-state-lidar",
@@ -8437,7 +8701,11 @@
     "category": "exploration",
     "description": "Compact laser-based sensors without moving parts, enabling autonomous vehicle navigation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Effigy_mounds_lidar.jpg/330px-Effigy_mounds_lidar.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/solid-state-lidar_rxpmtg?_a=BAMAMiiu0",
+    "color": "#1b222a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "siri-voice-assistant",
@@ -8446,7 +8714,11 @@
     "category": "exploration",
     "description": "Apple launched Siri, the first mainstream AI voice assistant, on the iPhone 4S.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Apple_Siri_iOS_2024.svg/330px-Logo_Apple_Siri_iOS_2024.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siri-voice-assistant_udsqv8?_a=BAMAMiiu0",
+    "color": "#22211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "artificial-pancreas",
@@ -8455,7 +8727,11 @@
     "category": "exploration",
     "description": "First commercially available closed-loop system automating insulin delivery for diabetes patients.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Artificial_pancreas.jpg/330px-Artificial_pancreas.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/artificial-pancreas_aljmkt?_a=BAMAMiiu0",
+    "color": "#1c2227",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ibm-quantum-computer",
@@ -8464,7 +8740,11 @@
     "category": "exploration",
     "description": "IBM Q System One was the first integrated commercial quantum computing system.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Layered_Model_of_Quantum_Computing.png/330px-Layered_Model_of_Quantum_Computing.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ibm-quantum-computer_y1i8yk?_a=BAMAMiiu0",
+    "color": "#2a4559",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "5g-network",
@@ -8473,6 +8753,10 @@
     "category": "exploration",
     "description": "Fifth-generation cellular networks launched, enabling ultrafast mobile data and low latency.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/3GPP_5G_logo.png/330px-3GPP_5G_logo.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/5g-network_nn6rdn?_a=BAMAMiiu0",
+    "color": "#2f4959",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   }
 ]

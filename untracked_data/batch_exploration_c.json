@@ -1,0 +1,1082 @@
+[
+  {
+    "event_name": "joseon-korean-medicine",
+    "event_title": "Dongeuibogam Medical Encyclopedia",
+    "approximate_year": 1613,
+    "region": "Korea",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "kepler-second-law",
+    "event_title": "Kepler's Second Law of Planetary Motion Published",
+    "approximate_year": 1619,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "plymouth-colony-pilgrims",
+    "event_title": "Plymouth Colony Pilgrims",
+    "approximate_year": 1620,
+    "region": "America",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "harvey-blood-circulation",
+    "event_title": "Harvey Discovers Blood Circulation",
+    "approximate_year": 1628,
+    "region": "England",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "descartes-analytical-geometry",
+    "event_title": "Descartes Develops Analytic Geometry",
+    "approximate_year": 1637,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "barometer-invention",
+    "event_title": "Barometer Invented",
+    "approximate_year": 1643,
+    "region": "Italy",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "first-barometer",
+    "event_title": "Torricelli Barometer",
+    "approximate_year": 1643,
+    "region": "Italy",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "pascal-vacuum-experiments",
+    "event_title": "Pascal's Vacuum Experiments (Magdeburg Hemispheres)",
+    "approximate_year": 1648,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "dutch-naval-dominance",
+    "event_title": "Dutch Naval Dominance Established",
+    "approximate_year": 1650,
+    "region": "North Sea/Atlantic",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "thermometer-development",
+    "event_title": "Thermometer Developed",
+    "approximate_year": 1650,
+    "region": "Italy/Europe",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "bleaching-techniques-development",
+    "event_title": "Bleaching Techniques Development",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "pascal-probability-theory",
+    "event_title": "Pascal Develops Probability Theory",
+    "approximate_year": 1654,
+    "region": "France",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "optical-lens-advancement",
+    "event_title": "Optical Lens Technology Advancement",
+    "approximate_year": 1660,
+    "region": "Europe",
+    "original_category": "technological",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "boyle-gas-laws",
+    "event_title": "Robert Boyle's Gas Laws Established",
+    "approximate_year": 1662,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "boyle-law-gases",
+    "event_title": "Boyle Discovers Law of Gases",
+    "approximate_year": 1662,
+    "region": "Ireland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "philosophical-transactions",
+    "event_title": "Philosophical Transactions",
+    "approximate_year": 1665,
+    "region": "England",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "hooke-microscopy",
+    "event_title": "Robert Hooke's Microscopy Observations",
+    "approximate_year": 1665,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern, r2_scientific"
+  },
+  {
+    "event_name": "newton-calculus",
+    "event_title": "Newton Develops Calculus",
+    "approximate_year": 1665,
+    "region": "England",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "spectroscopy-prism",
+    "event_title": "Spectroscopy and Prism Uses",
+    "approximate_year": 1666,
+    "region": "England",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "blood-transfusion",
+    "event_title": "Successful Blood Transfusion",
+    "approximate_year": 1667,
+    "region": "France",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "leeuwenhoek-microscope",
+    "event_title": "Leeuwenhoek Invents Microscope",
+    "approximate_year": 1670,
+    "region": "Netherlands",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain, historical_firsts"
+  },
+  {
+    "event_name": "joseon-silhak-agricultural",
+    "event_title": "Silhak Movement Agricultural Reform",
+    "approximate_year": 1670,
+    "region": "Korea",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "first-microscope",
+    "event_title": "Leeuwenhoek Microscope",
+    "approximate_year": 1674,
+    "region": "Netherlands",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "huygens-light-theory",
+    "event_title": "Huygens Develops Wave Theory of Light",
+    "approximate_year": 1678,
+    "region": "Netherlands",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "leibniz-binary-system",
+    "event_title": "Leibniz Develops Binary Number System",
+    "approximate_year": 1679,
+    "region": "Germany",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "newton-leibniz-calculus",
+    "event_title": "Newton and Leibniz Develop Calculus",
+    "approximate_year": 1680,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "newton-gravitation-law",
+    "event_title": "Newton's Law of Gravitation",
+    "approximate_year": 1687,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "newton-principia-published",
+    "event_title": "Isaac Newton's Principia Mathematica Published",
+    "approximate_year": 1687,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "newton-gravity-motion",
+    "event_title": "Newton Discovers Gravity and Laws of Motion",
+    "approximate_year": 1687,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "agricultural-revolution",
+    "event_title": "Agricultural Revolution",
+    "approximate_year": 1700,
+    "region": "Britain",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "coal-mining-expansion",
+    "event_title": "Coal Mining Expansion",
+    "approximate_year": 1700,
+    "region": "Britain",
+    "original_category": "industrial",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "selective-breeding-animals",
+    "event_title": "Selective Breeding of Livestock",
+    "approximate_year": 1700,
+    "region": "Britain",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "hydrochloric-acid-production",
+    "event_title": "Hydrochloric Acid Production",
+    "approximate_year": 1700,
+    "region": "Germany",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "dye-chemistry-advances",
+    "event_title": "Dye Chemistry and Fast Dyes",
+    "approximate_year": 1700,
+    "region": "Europe",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "long-distance-travel-improvement",
+    "event_title": "Long-Distance Travel Time Decreases",
+    "approximate_year": 1700,
+    "region": "Global",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "halley-comet-orbital",
+    "event_title": "Halley Calculates Comet Orbit",
+    "approximate_year": 1705,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "fahrenheit-temperature-scale",
+    "event_title": "Fahrenheit Creates Temperature Scale",
+    "approximate_year": 1724,
+    "region": "Germany",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "achromatic-lens",
+    "event_title": "Achromatic Lens Correction",
+    "approximate_year": 1733,
+    "region": "England",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "euler-graph-theory",
+    "event_title": "Euler Initiates Graph Theory",
+    "approximate_year": 1736,
+    "region": "Switzerland",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "euler-mathematics",
+    "event_title": "Euler Advances Mathematics and Physics",
+    "approximate_year": 1740,
+    "region": "Switzerland",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "celsius-temperature-scale",
+    "event_title": "Celsius Develops Temperature Scale",
+    "approximate_year": 1742,
+    "region": "Sweden",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "turbine-wheel-concept",
+    "event_title": "Turbine Wheel Concept Development",
+    "approximate_year": 1750,
+    "region": "France",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "natural-rubber-gathering",
+    "event_title": "Natural Rubber Gathering and Latex Extraction",
+    "approximate_year": 1750,
+    "region": "South America",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "black-phlogiston-heat",
+    "event_title": "Joseph Black Studies Heat and Phlogiston",
+    "approximate_year": 1760,
+    "region": "Scotland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "sextant-refinement",
+    "event_title": "Sextant Design Refinement",
+    "approximate_year": 1760,
+    "region": "Britain",
+    "original_category": "navigation",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "cotton-spinning-jenny",
+    "event_title": "Spinning Jenny Invented",
+    "approximate_year": 1764,
+    "region": "Britain",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "veterinary-school",
+    "event_title": "Royal Veterinary School",
+    "approximate_year": 1765,
+    "region": "France",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "bougainville-circumnavigation",
+    "event_title": "Bougainville's Global Circumnavigation",
+    "approximate_year": 1766,
+    "region": "Pacific",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "cook-pacific-voyages",
+    "event_title": "Captain Cook Pacific Voyages",
+    "approximate_year": 1768,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "arkwright-water-frame",
+    "event_title": "Arkwright Water Frame Invented",
+    "approximate_year": 1769,
+    "region": "England",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "watt-separate-condenser",
+    "event_title": "Watt Separate Condenser",
+    "approximate_year": 1769,
+    "region": "Scotland",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "lagrange-number-theory",
+    "event_title": "Lagrange Advances Number Theory",
+    "approximate_year": 1770,
+    "region": "France",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "zanzibar-clove-cultivation",
+    "event_title": "Zanzibar Sultanate Develops Clove Plantations",
+    "approximate_year": 1770,
+    "region": "East Africa",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "lavoisier-oxygen-combustion",
+    "event_title": "Lavoisier Discovers Oxygen and Combustion",
+    "approximate_year": 1774,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "priestley-oxygen-isolation",
+    "event_title": "Priestley Isolates Oxygen Gas",
+    "approximate_year": 1774,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "herschel-discovers-uranus",
+    "event_title": "Herschel Discovers Uranus",
+    "approximate_year": 1781,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "cotton-power-loom",
+    "event_title": "Power Loom Invented",
+    "approximate_year": 1785,
+    "region": "Britain",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "coulomb-electrostatics",
+    "event_title": "Coulomb Formulates Electrostatic Law",
+    "approximate_year": 1785,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "lavoisier-chemical-nomenclature",
+    "event_title": "Lavoisier Develops Chemical Nomenclature",
+    "approximate_year": 1787,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "lagrange-mechanics",
+    "event_title": "Lagrange Develops Lagrangian Mechanics",
+    "approximate_year": 1788,
+    "region": "France",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "chemistry-lavoisier",
+    "event_title": "Modern Chemistry",
+    "approximate_year": 1789,
+    "region": "France",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "metric-system-france",
+    "event_title": "Metric System Adopted",
+    "approximate_year": 1795,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "jenner-vaccination-smallpox",
+    "event_title": "Jenner Develops Vaccination Against Smallpox",
+    "approximate_year": 1796,
+    "region": "England",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "volta-electric-battery",
+    "event_title": "Volta Invents Electric Battery",
+    "approximate_year": 1800,
+    "region": "Italy",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "high-pressure-steam",
+    "event_title": "High-Pressure Steam Boiler Development",
+    "approximate_year": 1800,
+    "region": "Britain",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "breech-loading-mechanism",
+    "event_title": "Breech-Loading Gun Mechanism",
+    "approximate_year": 1800,
+    "region": "USA",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "young-double-slit-experiment",
+    "event_title": "Young Performs Double-Slit Interference Experiment",
+    "approximate_year": 1801,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "percussion-cap-invention",
+    "event_title": "Percussion Cap Invention",
+    "approximate_year": 1807,
+    "region": "Scotland",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "atom-dalton",
+    "event_title": "Atomic Theory",
+    "approximate_year": 1808,
+    "region": "England",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "avogadro-molecular-hypothesis",
+    "event_title": "Avogadro Proposes Molecular Hypothesis",
+    "approximate_year": 1811,
+    "region": "Italy",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "cuvier-paleontology",
+    "event_title": "Cuvier Founds Paleontology and Comparative Anatomy",
+    "approximate_year": 1812,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "fresnel-wave-optics",
+    "event_title": "Fresnel Develops Wave Theory of Light",
+    "approximate_year": 1815,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "smith-stratigraphy",
+    "event_title": "William Smith Develops Stratigraphic Principle",
+    "approximate_year": 1815,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "magnetism-electromagnetism",
+    "event_title": "Electromagnetism",
+    "approximate_year": 1820,
+    "region": "Denmark",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "ampere-electromagnetism",
+    "event_title": "Ampere Develops Electromagnetism",
+    "approximate_year": 1820,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific, r2_scientific"
+  },
+  {
+    "event_name": "carnot-thermodynamics",
+    "event_title": "Carnot Develops Thermodynamic Cycle",
+    "approximate_year": 1824,
+    "region": "France",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "railway-locomotive-stephenson",
+    "event_title": "Stephenson's Locomotive Success",
+    "approximate_year": 1829,
+    "region": "Britain",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "lyell-uniformitarianism",
+    "event_title": "Lyell Develops Uniformitarian Geology",
+    "approximate_year": 1830,
+    "region": "Scotland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "faraday-electromagnetic-induction",
+    "event_title": "Faraday Discovers Electromagnetic Induction",
+    "approximate_year": 1831,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "cell-structure",
+    "event_title": "Cell Theory",
+    "approximate_year": 1839,
+    "region": "Germany",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "joule-heat-energy",
+    "event_title": "Joule Establishes Heat and Energy Relationship",
+    "approximate_year": 1843,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "vulcanization-goodyear",
+    "event_title": "Vulcanization of Rubber (Goodyear)",
+    "approximate_year": 1844,
+    "region": "USA",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "faraday-electromagnetic-field",
+    "event_title": "Faraday Develops Field Theory",
+    "approximate_year": 1845,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "anesthesia-ether",
+    "event_title": "Ether Anesthesia",
+    "approximate_year": 1846,
+    "region": "USA",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "joule-mechanical-equivalent-heat",
+    "event_title": "Joule Measures Mechanical Equivalent of Heat",
+    "approximate_year": 1847,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "semmelweis-childbed-fever",
+    "event_title": "Semmelweis Reduces Puerperal Fever Deaths",
+    "approximate_year": 1847,
+    "region": "Austria",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "hooker-plant-distribution",
+    "event_title": "Hooker Studies Geographic Plant Distribution",
+    "approximate_year": 1847,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "rubber-cultivation-begins",
+    "event_title": "Rubber Tree Cultivation in Southeast Asia",
+    "approximate_year": 1850,
+    "region": "Southeast Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "clausius-entropy",
+    "event_title": "Clausius Formulates Second Law of Thermodynamics",
+    "approximate_year": 1850,
+    "region": "Germany",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "compound-steam-engine",
+    "event_title": "Compound Steam Engine",
+    "approximate_year": 1850,
+    "region": "Britain",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "virchow-cellular-pathology",
+    "event_title": "Virchow Establishes Cellular Pathology",
+    "approximate_year": 1858,
+    "region": "Germany",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "wallace-evolution-theory",
+    "event_title": "Wallace Develops Evolution Theory Independently",
+    "approximate_year": 1858,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "huxley-vertebrate-anatomy",
+    "event_title": "Huxley Advances Vertebrate Anatomy",
+    "approximate_year": 1858,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "darwin-evolution-origin",
+    "event_title": "Darwin Publishes Origin of Species",
+    "approximate_year": 1859,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "maxwell-kinetic-theory",
+    "event_title": "Maxwell Develops Kinetic Theory of Gases",
+    "approximate_year": 1860,
+    "region": "Scotland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "nightingale-nursing-reform",
+    "event_title": "Florence Nightingale Reforms Nursing Practice",
+    "approximate_year": 1860,
+    "region": "England",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "first-weather-forecast",
+    "event_title": "Weather Forecast Service",
+    "approximate_year": 1865,
+    "region": "England",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "antiseptic-surgery",
+    "event_title": "Antiseptic Surgery",
+    "approximate_year": 1865,
+    "region": "England",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "maxwell-electromagnetic-equations",
+    "event_title": "Maxwell Formulates Electromagnetic Equations",
+    "approximate_year": 1865,
+    "region": "Scotland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "inheritance-mendel",
+    "event_title": "Laws of Inheritance",
+    "approximate_year": 1866,
+    "region": "Austria",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "haeckel-embryology",
+    "event_title": "Haeckel Develops Embryological Studies",
+    "approximate_year": 1866,
+    "region": "Germany",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "mendeleev-periodic-table",
+    "event_title": "Mendeleev Creates Periodic Table of Elements",
+    "approximate_year": 1869,
+    "region": "Russia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "surgery-antiseptic-system",
+    "event_title": "Listerine Antiseptic",
+    "approximate_year": 1876,
+    "region": "England",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "koch-tuberculosis-bacterium",
+    "event_title": "Koch Discovers Tuberculosis Bacterium",
+    "approximate_year": 1882,
+    "region": "Germany",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "surgery-local-anesthesia",
+    "event_title": "Local Anesthesia",
+    "approximate_year": 1884,
+    "region": "Austria",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "x-ray-discovery",
+    "event_title": "X-Ray Discovery",
+    "approximate_year": 1895,
+    "region": "Germany",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "wright-brothers-flight",
+    "event_title": "Wright Brothers' First Flight",
+    "approximate_year": 1903,
+    "region": "America",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "blood-clotting",
+    "event_title": "Blood Clotting Theory",
+    "approximate_year": 1905,
+    "region": "Germany",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "antibiotics",
+    "event_title": "Penicillin Discovery",
+    "approximate_year": 1928,
+    "region": "England",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "sputnik-launch-space",
+    "event_title": "Sputnik Launch",
+    "approximate_year": 1957,
+    "region": "Russia",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "recurved-bow-design",
+    "event_title": "Recurved Bow Design",
+    "approximate_year": 2000,
+    "region": "Central Asia",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "winnowing-tray-fan",
+    "event_title": "Winnowing Tray and Fan Development",
+    "approximate_year": 2000,
+    "region": "Asia",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "grain-storage-silos",
+    "event_title": "Grain Storage and Silo Design",
+    "approximate_year": 2000,
+    "region": "Egypt",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "bronze-adoption-mediterranean",
+    "event_title": "Bronze Working Spreads Mediterranean",
+    "approximate_year": 2000,
+    "region": "Mediterranean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "domestication-potato-americas",
+    "event_title": "Potato Domestication in Andes",
+    "approximate_year": 3000,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "millet-adoption-china",
+    "event_title": "Millet Cultivation Spreads in Northern China",
+    "approximate_year": 3000,
+    "region": "East Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "domestication-rice-southeast-asia",
+    "event_title": "Rice Domestication in Southeast Asia",
+    "approximate_year": 3000,
+    "region": "Southeast Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "domestication-llama-alpaca",
+    "event_title": "Camelid Domestication in South America",
+    "approximate_year": 4000,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "domestication-maize-americas",
+    "event_title": "Maize Domestication in Mesoamerica",
+    "approximate_year": 5000,
+    "region": "Mesoamerica",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "domestication-wheat-middle-east",
+    "event_title": "Wheat Domestication in Fertile Crescent",
+    "approximate_year": 8000,
+    "region": "Middle East",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts, r2_paradigm_shifts"
+  }
+]

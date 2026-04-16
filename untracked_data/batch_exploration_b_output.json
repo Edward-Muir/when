@@ -1,0 +1,946 @@
+[
+  {
+    "name": "song-magnetic-compass",
+    "friendly_name": "Song Dynasty Compass Navigation Development",
+    "year": 1119,
+    "category": "exploration",
+    "description": "Chinese navigators adapted the magnetic compass for maritime use during the Song Dynasty, revolutionizing seafaring.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-sternpost-rudder",
+    "friendly_name": "Song Dynasty Sternpost Rudder Refinement",
+    "year": 1150,
+    "category": "exploration",
+    "description": "Song Dynasty shipbuilders refined the sternpost rudder, enabling better control of large ocean-going vessels.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "song-maritime-technology",
+    "friendly_name": "Song Dynasty Maritime Trade Fleet",
+    "year": 1150,
+    "category": "exploration",
+    "description": "The Song Dynasty built a vast maritime trade fleet that dominated Indian Ocean and Southeast Asian commerce.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-agricultural-treatise",
+    "friendly_name": "Song Dynasty Agricultural Treatise",
+    "year": 1149,
+    "category": "exploration",
+    "description": "Chen Fu's agricultural treatise documented advanced Song Dynasty farming techniques including rice paddy cultivation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "bhaskara-mathematics-india",
+    "friendly_name": "Bhaskara II Develops Mathematics",
+    "year": 1150,
+    "category": "exploration",
+    "description": "Indian mathematician Bhaskara II wrote Siddhanta Shiromani, advancing algebra, calculus concepts, and astronomy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-idrisi-geography-map",
+    "friendly_name": "Al-Idrisi Creates Comprehensive World Map",
+    "year": 1154,
+    "category": "exploration",
+    "description": "Arab geographer al-Idrisi created the Tabula Rogeriana for Sicily's King Roger II, the most accurate world map of its era.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-color-printing",
+    "friendly_name": "Song Dynasty Color Printing Development",
+    "year": 1180,
+    "category": "exploration",
+    "description": "Song Dynasty printers developed multi-color printing techniques using separate woodblocks for each color.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "easter-island-settlement",
+    "friendly_name": "Easter Island Settlement",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Polynesian voyagers settled Rapa Nui (Easter Island), one of the most remote inhabited islands on Earth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paper-technology-spreads",
+    "friendly_name": "Paper Technology Spreads to Europe",
+    "year": 1150,
+    "category": "exploration",
+    "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-greenhouse",
+    "friendly_name": "Greenhouse Cultivation",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Italian monks developed early greenhouse techniques to grow tropical plants in cooler European climates.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-blue-white-porcelain",
+    "friendly_name": "Song Dynasty Blue and White Porcelain",
+    "year": 1320,
+    "category": "exploration",
+    "description": "Chinese potters pioneered blue and white porcelain using cobalt pigment, creating one of the most iconic ceramic styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-triple-harvest",
+    "friendly_name": "Song Dynasty Three Harvests per Year",
+    "year": 1012,
+    "category": "exploration",
+    "description": "Champa rice varieties enabled three annual harvests in southern China, fueling Song Dynasty population growth.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "potato-cultivation-spread",
+    "friendly_name": "Potato Cultivation Spreads Through Americas",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Potato cultivation, first domesticated in the Andes, spread throughout South and Central America as a vital food source.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "water-mill-expansion",
+    "friendly_name": "Water Mill Expansion Changes Production",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Water mills proliferated across medieval Europe, powering grain milling, cloth fulling, and iron forging.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "windmill-introduction",
+    "friendly_name": "Windmill Introduction to Europe",
+    "year": 1185,
+    "category": "exploration",
+    "description": "Post-style windmills appeared in northwestern Europe, providing power for grain milling in flat, windy regions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "terracing-agriculture-andes",
+    "friendly_name": "Andean Terrace Agriculture Development",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Andean civilizations built elaborate agricultural terraces on steep mountain slopes, expanding farmable land.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maize-cultivation-expansion",
+    "friendly_name": "Maize Cultivation Spreads Through Americas",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Maize cultivation spread from Mesoamerica throughout North and South America, becoming a dietary staple.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "breast-wheel-design",
+    "friendly_name": "Breast Wheel Water Mill Design",
+    "year": 1200,
+    "category": "exploration",
+    "description": "The breastshot water wheel improved on earlier designs by striking the wheel at axle height for greater efficiency.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "windmill-vertical-axis",
+    "friendly_name": "Vertical Axis Windmill (post-mill)",
+    "year": 1180,
+    "category": "exploration",
+    "description": "Post-mills with vertical rotation axes appeared in the Low Countries, becoming iconic features of the Dutch landscape.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "portolan-chart-development",
+    "friendly_name": "Portolan Chart Development",
+    "year": 1275,
+    "category": "exploration",
+    "description": "Mediterranean sailors developed portolan charts with compass lines and accurate coastlines, advancing navigation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lance-pike-improvements",
+    "friendly_name": "Lance and Pike Design",
+    "year": 1200,
+    "category": "exploration",
+    "description": "European armies refined lance and pike designs, making infantry formations more effective against cavalry charges.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "harrow-development",
+    "friendly_name": "Harrow and Soil-Breaking Tools",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Medieval European farmers developed improved harrow designs for breaking soil clods and preparing seedbeds.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "potash-production-wood",
+    "friendly_name": "Potash Production from Wood Ash",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Europeans refined potash extraction from wood ash for use in glassmaking, soap production, and textile bleaching.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "andean-llama-domestication",
+    "friendly_name": "Andean Llama Herding System Peak",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Andean civilizations perfected llama herding systems for transport, wool, and meat across highland trade networks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "compass-adoption-navigation",
+    "friendly_name": "Magnetic Compass Adoption for Navigation",
+    "year": 1190,
+    "category": "exploration",
+    "description": "European and Arab sailors adopted the magnetic compass for open-sea navigation across the Mediterranean.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "astrolabe-navigation",
+    "friendly_name": "Astrolabe Becomes Navigation Standard",
+    "year": 1200,
+    "category": "exploration",
+    "description": "The astrolabe became a standard navigation and astronomical tool across the Mediterranean and Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "monsoon-calendar-refinement",
+    "friendly_name": "Monsoon Calendar Mastery in Islamic Navigation",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Arab navigators mastered monsoon wind patterns, enabling reliable seasonal trade routes across the Indian Ocean.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "slash-and-burn-intensive",
+    "friendly_name": "Slash-and-Burn Agriculture Intensifies",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Mesoamerican peoples intensified slash-and-burn farming to support growing populations in tropical forest regions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-press-korea",
+    "friendly_name": "Movable Type in Korea",
+    "year": 1234,
+    "category": "exploration",
+    "description": "Korea produced the first known metal movable type, used to print the Sangjeong Gogeum Yemun anthology.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "oracle-bones-shang",
+    "friendly_name": "Oracle Bones of Shang Dynasty",
+    "year": -1250,
+    "category": "exploration",
+    "description": "Shang Dynasty diviners inscribed questions on turtle shells and ox bones, creating the earliest Chinese writing.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maori-settlement-new-zealand",
+    "friendly_name": "Maori Settlement of New Zealand",
+    "year": 1280,
+    "category": "exploration",
+    "description": "Polynesian voyagers reached Aotearoa (New Zealand), one of the last major landmasses settled by humans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roger-bacon-experimental-method",
+    "friendly_name": "Roger Bacon Advocates Experimental Method",
+    "year": 1267,
+    "category": "exploration",
+    "description": "English friar Roger Bacon wrote Opus Majus, advocating empirical observation and experimental methods in science.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ancestral-puebloan-drought",
+    "friendly_name": "Ancestral Puebloan Southwest Drought",
+    "year": 1276,
+    "category": "exploration",
+    "description": "A severe drought struck the American Southwest, contributing to the abandonment of Ancestral Puebloan cliff dwellings.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mechanical-clock-adoption",
+    "friendly_name": "Mechanical Clock Adoption in Europe",
+    "year": 1283,
+    "category": "exploration",
+    "description": "Early mechanical clocks appeared in European churches and monasteries, transforming timekeeping practices.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gunpowder-cannons-develop",
+    "friendly_name": "Gunpowder Cannons Developed",
+    "year": 1280,
+    "category": "exploration",
+    "description": "Chinese engineers developed early bronze cannons using gunpowder, the first true firearms in warfare.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "glass-lens-grinding",
+    "friendly_name": "Lens Grinding and Shaping Techniques",
+    "year": 1300,
+    "category": "exploration",
+    "description": "Italian craftsmen in Venice and Florence refined glass lens grinding, enabling eyeglasses and later optical instruments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scythe-development",
+    "friendly_name": "Scythe Development and Use",
+    "year": 1300,
+    "category": "exploration",
+    "description": "The long-handled scythe became widely adopted in medieval Europe for efficient grain and hay harvesting.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "enamel-development-techniques",
+    "friendly_name": "Enamel Development and Application",
+    "year": 1300,
+    "category": "exploration",
+    "description": "Mediterranean artisans refined vitreous enamel techniques for decorating metalwork, jewelry, and religious objects.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "blast-furnace-innovation",
+    "friendly_name": "Blast Furnace Innovation in Medieval Europe",
+    "year": 1300,
+    "category": "exploration",
+    "description": "European ironworkers developed taller blast furnaces producing cast iron, transforming metallurgy and manufacturing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mali-maritime-expansion",
+    "friendly_name": "Mali Maritime Expeditions",
+    "year": 1311,
+    "category": "exploration",
+    "description": "Mali Empire ruler Abu Bakr II reportedly launched Atlantic maritime expeditions before Mansa Musa took power.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chimu-irrigation-expansion",
+    "friendly_name": "Chimú Irrigation System Peak",
+    "year": 1350,
+    "category": "exploration",
+    "description": "The Chimú civilization built extensive canal irrigation systems along Peru's northern coast, supporting large populations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "quarantine-origins",
+    "friendly_name": "Origins of Quarantine",
+    "year": 1377,
+    "category": "exploration",
+    "description": "Ragusa (Dubrovnik) established a 30-day isolation period for arriving ships, creating the first formal quarantine system.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jikji-korea-printing",
+    "friendly_name": "Jikji: Korean Metal Movable Type",
+    "year": 1377,
+    "category": "exploration",
+    "description": "Korean monks printed the Jikji using metal movable type, the oldest surviving book printed with this technology.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "terrace-farming-andes",
+    "friendly_name": "Inca Terrace Farming Expands",
+    "year": 1400,
+    "category": "exploration",
+    "description": "The Inca expanded terrace farming across the Andes, engineering stepped fields with sophisticated irrigation systems.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "open-field-system-abandonment",
+    "friendly_name": "Open Field System Agricultural Shift",
+    "year": 1400,
+    "category": "exploration",
+    "description": "England's medieval open field system began declining as landowners consolidated strips into enclosed private farms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "manioc-cultivation-caribbean",
+    "friendly_name": "Manioc Cultivation Becomes Staple",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Manioc (cassava) became a primary food staple for Caribbean and South American indigenous populations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kerala-school-mathematics",
+    "friendly_name": "Kerala School Develops Calculus Concepts",
+    "year": 1400,
+    "category": "exploration",
+    "description": "The Kerala school of mathematics in India developed infinite series expansions, anticipating European calculus by centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "magnifying-glass-single-lens",
+    "friendly_name": "Magnifying Glass Single Lens",
+    "year": 1300,
+    "category": "exploration",
+    "description": "Single convex lenses were refined as magnifying glasses, used by scholars and craftsmen across medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "star-chart-compilation",
+    "friendly_name": "Star Charts and Celestial Mapping",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Islamic astronomers compiled detailed star charts and celestial maps used for both navigation and religious purposes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moldboard-plow-improvements",
+    "friendly_name": "Moldboard Plow Improvements",
+    "year": 1400,
+    "category": "exploration",
+    "description": "European farmers improved the heavy moldboard plow, enabling more efficient cultivation of dense clay soils.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "saltpeter-refinement",
+    "friendly_name": "Saltpeter Crystallization and Refinement",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Refinement techniques for saltpeter (potassium nitrate) advanced gunpowder production quality and reliability.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "soap-making-improvements",
+    "friendly_name": "Soap Making Improvements",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Mediterranean craftsmen refined soap-making using olive oil and plant ash, producing harder, longer-lasting bars.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "porcelain-development",
+    "friendly_name": "Porcelain Development and Techniques",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Chinese potters at Jingdezhen perfected porcelain techniques that made their wares prized trade goods worldwide.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ming-treasure-fleets",
+    "friendly_name": "Zheng He's Treasure Fleet Voyages Begin",
+    "year": 1405,
+    "category": "exploration",
+    "description": "Admiral Zheng He launched the first of seven massive naval expeditions from China across the Indian Ocean.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "prince-henry-navigator",
+    "friendly_name": "Prince Henry the Navigator School",
+    "year": 1419,
+    "category": "exploration",
+    "description": "Prince Henry of Portugal established a navigation center at Sagres, sponsoring expeditions along the African coast.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "portuguese-caravels",
+    "friendly_name": "Portuguese Develop Caravel Ships",
+    "year": 1440,
+    "category": "exploration",
+    "description": "Portuguese shipbuilders developed the caravel, a nimble vessel with lateen sails ideal for coastal exploration.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "astronomical-observatory",
+    "friendly_name": "Ulugh Beg Observatory",
+    "year": 1424,
+    "category": "exploration",
+    "description": "Timurid ruler Ulugh Beg built a massive observatory in Samarkand, producing the era's most accurate star catalog.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ulugh-beg-observatory",
+    "friendly_name": "Ulugh Beg Observatory Samarkand",
+    "year": 1424,
+    "category": "exploration",
+    "description": "Ulugh Beg's Samarkand observatory housed a 40-meter sextant and cataloged over 1,000 stars with unprecedented precision.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samarkand-observatory",
+    "friendly_name": "Ulugh Beg's Observatory Built",
+    "year": 1424,
+    "category": "exploration",
+    "description": "The Samarkand observatory, built by Ulugh Beg, became the leading astronomical center of the 15th-century Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "zheng-he-treasure-voyages-end",
+    "friendly_name": "Zheng He Treasure Voyages End",
+    "year": 1433,
+    "category": "exploration",
+    "description": "Zheng He's seventh and final voyage concluded, after which China withdrew from large-scale maritime exploration.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joseon-sejong-water-clock",
+    "friendly_name": "Water Clock Jagyeongnu Constructed",
+    "year": 1434,
+    "category": "exploration",
+    "description": "Korean inventor Jang Yeong-sil built the Jagyeongnu, a self-striking water clock, for King Sejong the Great.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "caravel-ship-design",
+    "friendly_name": "Caravel Ship Design Development",
+    "year": 1440,
+    "category": "exploration",
+    "description": "The caravel's combination of lateen and square sails made it the preferred vessel for Portuguese Age of Discovery voyages.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hangul-creation-edict",
+    "friendly_name": "Hangul Creation Edict Issued",
+    "year": 1443,
+    "category": "exploration",
+    "description": "King Sejong the Great of Korea promulgated Hangul, a phonetic alphabet designed to improve literacy among commoners.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joseon-scientific-innovation",
+    "friendly_name": "Joseon Dynasty Scientific Innovations",
+    "year": 1442,
+    "category": "exploration",
+    "description": "The Joseon Dynasty under King Sejong produced rain gauges, sundials, and celestial globes advancing Korean science.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "eyeglass-improvements",
+    "friendly_name": "Eyeglass Design Improvements",
+    "year": 1450,
+    "category": "exploration",
+    "description": "Venetian glassmakers improved eyeglass lenses for both near- and farsightedness, expanding their practical use.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "armillary-sphere-korean",
+    "friendly_name": "Korean Armillary Sphere Developed",
+    "year": 1433,
+    "category": "exploration",
+    "description": "Korean astronomers built refined armillary spheres to model celestial movements during King Sejong's reign.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "printing-press-diffusion",
+    "friendly_name": "Printing Press Spreads Across Europe",
+    "year": 1470,
+    "category": "exploration",
+    "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities by 1480.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "inca-terrace-agriculture",
+    "friendly_name": "Inca Terrace Agriculture System Peak",
+    "year": 1480,
+    "category": "exploration",
+    "description": "The Inca Empire's terrace agriculture reached its peak, supporting millions across the Andes mountain range.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dias-cape-rounding",
+    "friendly_name": "Dias Rounds Cape of Good Hope",
+    "year": 1488,
+    "category": "exploration",
+    "description": "Portuguese explorer Bartolomeu Dias became the first European to sail around the southern tip of Africa.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "end-medieval-period-1500",
+    "friendly_name": "Printing Press Revolution Completes",
+    "year": 1500,
+    "category": "exploration",
+    "description": "By 1500, over 20 million volumes had been printed in Europe, fundamentally transforming knowledge dissemination.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "polynesian-settlement-expansion",
+    "friendly_name": "Polynesian Navigation and Settlement Expansion",
+    "year": 1400,
+    "category": "exploration",
+    "description": "Polynesian navigators continued settling remote Pacific islands using star navigation and ocean current knowledge.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "melanesian-settlement",
+    "friendly_name": "Melanesian Island Settlement Patterns",
+    "year": 1500,
+    "category": "exploration",
+    "description": "Melanesian peoples maintained complex trade networks and settlement patterns across islands of the western Pacific.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "anatomical-drawing",
+    "friendly_name": "Leonardo Anatomical Studies",
+    "year": 1489,
+    "category": "exploration",
+    "description": "Leonardo da Vinci began detailed anatomical drawings from human dissections, advancing understanding of the body.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sugar-plantation-establishment",
+    "friendly_name": "Sugar Plantations Established in Caribbean",
+    "year": 1515,
+    "category": "exploration",
+    "description": "Spanish colonists established sugar plantations in the Caribbean, beginning a system reliant on enslaved labor.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coffee-cultivation-expansion",
+    "friendly_name": "Coffee Cultivation Expands in Ottoman Empire",
+    "year": 1500,
+    "category": "exploration",
+    "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "enclosure-movement-begins",
+    "friendly_name": "English Enclosure Movement Begins",
+    "year": 1489,
+    "category": "exploration",
+    "description": "English landowners began enclosing common fields for sheep grazing, displacing peasant farmers from the land.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nautical-table-creation",
+    "friendly_name": "Nautical Tables and Ephemerides",
+    "year": 1496,
+    "category": "exploration",
+    "description": "Portuguese navigators compiled nautical tables and ephemerides for calculating latitude at sea using celestial observations.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "arquebus-musket-development",
+    "friendly_name": "Arquebus and Musket Design",
+    "year": 1500,
+    "category": "exploration",
+    "description": "Spanish armorers refined the arquebus into a reliable infantry weapon that transformed European battlefield tactics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rifling-development",
+    "friendly_name": "Rifling Grooves in Gun Barrels",
+    "year": 1498,
+    "category": "exploration",
+    "description": "German gunsmiths developed spiral grooves inside gun barrels to spin projectiles, improving accuracy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scratch-plow-design",
+    "friendly_name": "Scratch Plow Early Design",
+    "year": -4000,
+    "category": "exploration",
+    "description": "Early farmers in the Fertile Crescent developed the scratch plow (ard), one of the first tools to break soil for planting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "varnish-composition-formulas",
+    "friendly_name": "Varnish Composition and Formulas",
+    "year": 1500,
+    "category": "exploration",
+    "description": "European craftsmen developed refined varnish formulas using resins and oils for protecting wood and paintings.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "enclosure-movement",
+    "friendly_name": "Enclosure Movement Transforms English Agriculture",
+    "year": 1500,
+    "category": "exploration",
+    "description": "The enclosure movement consolidated open fields into private holdings, boosting productivity but displacing rural poor.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-impact-literacy",
+    "friendly_name": "Printing Increases Literacy Rates",
+    "year": 1500,
+    "category": "exploration",
+    "description": "The spread of printed books dramatically increased literacy rates across Western Europe within two generations.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "literacy-expansion-post-printing",
+    "friendly_name": "Literacy Expansion After Printing Press",
+    "year": 1500,
+    "category": "exploration",
+    "description": "Affordable printed materials enabled wider access to knowledge, fueling the Renaissance and Reformation movements.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-autopsy",
+    "friendly_name": "Leonardo Da Vinci Autopsy",
+    "year": 1507,
+    "category": "exploration",
+    "description": "Leonardo da Vinci performed detailed human dissections and autopsies, recording findings in meticulous anatomical drawings.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "copernican-astronomy",
+    "friendly_name": "Copernican Astronomical Revolution",
+    "year": 1543,
+    "category": "exploration",
+    "description": "Copernicus published De Revolutionibus, proposing a heliocentric model that placed the Sun at the center of the cosmos.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "copernican-revolution",
+    "friendly_name": "Copernican Heliocentric Model Published",
+    "year": 1543,
+    "category": "exploration",
+    "description": "Nicolaus Copernicus published his heliocentric theory, fundamentally challenging the geocentric worldview.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "chocolate-europe",
+    "friendly_name": "Chocolate Introduction Europe",
+    "year": 1544,
+    "category": "exploration",
+    "description": "Kekchi Maya nobles presented chocolate as a drink to Spanish Prince Philip, introducing cacao to European courts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "botanical-garden",
+    "friendly_name": "Orto Botanico di Padova",
+    "year": 1545,
+    "category": "exploration",
+    "description": "The Orto Botanico di Padova was founded as the world's first university botanical garden for studying medicinal plants.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scientific-revolution-dawn",
+    "friendly_name": "Scientific Revolution Begins",
+    "year": 1543,
+    "category": "exploration",
+    "description": "The publication of works by Copernicus and Vesalius in 1543 is often cited as the start of the Scientific Revolution.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "maize-introduction-africa-asia",
+    "friendly_name": "Maize Introduced to Africa and Asia",
+    "year": 1550,
+    "category": "exploration",
+    "description": "Portuguese traders introduced American maize to Africa and Asia, where it became a major food crop within decades.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-press-standardization",
+    "friendly_name": "Printing Press Standardization and Spread",
+    "year": 1550,
+    "category": "exploration",
+    "description": "Printing technology standardized across Europe with uniform typefaces, page formats, and publishing conventions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-technological-lock",
+    "friendly_name": "Printing Press Becomes Dominant Technology",
+    "year": 1550,
+    "category": "exploration",
+    "description": "The printing press became the dominant information technology in Europe, replacing manuscript copying entirely.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "potato-introduction-europe",
+    "friendly_name": "Potatoes Introduced to Europe",
+    "year": 1570,
+    "category": "exploration",
+    "description": "Spanish explorers brought potatoes from South America to Europe, where they gradually became a staple crop.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tycho-brahe-astronomical-observations",
+    "friendly_name": "Tycho Brahe's Precise Astronomical Observations",
+    "year": 1576,
+    "category": "exploration",
+    "description": "Danish astronomer Tycho Brahe built Uraniborg observatory and made the most precise pre-telescope star measurements.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "compound-microscope",
+    "friendly_name": "Compound Microscope Development",
+    "year": 1590,
+    "category": "exploration",
+    "description": "Dutch spectacle makers Hans and Zacharias Janssen built the first compound microscope using multiple lenses.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-thermometer",
+    "friendly_name": "Galileo Thermometer",
+    "year": 1593,
+    "category": "exploration",
+    "description": "Galileo Galilei invented an early thermoscope that measured temperature changes using air expansion in water.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "new-world-crops-adoption",
+    "friendly_name": "Adoption of New World Crops in Old World",
+    "year": 1600,
+    "category": "exploration",
+    "description": "Crops from the Americas including tomatoes, peppers, and squash became integrated into Eurasian and African diets.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coffee-introduction",
+    "friendly_name": "Coffee Reaching Europe",
+    "year": 1615,
+    "category": "exploration",
+    "description": "Venetian merchants brought coffee to Europe from Ottoman markets, sparking the continent's coffeehouse culture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scientific-instruments-development",
+    "friendly_name": "Development of Scientific Instruments",
+    "year": 1600,
+    "category": "exploration",
+    "description": "European instrument makers developed precision tools including telescopes, microscopes, and barometers for scientific inquiry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cotton-production-india",
+    "friendly_name": "Indian Cotton Industry Booms",
+    "year": 1600,
+    "category": "exploration",
+    "description": "India's cotton textile industry dominated global trade, producing finely woven fabrics exported across Asia and Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "compound-lens-system",
+    "friendly_name": "Compound Lens Systems",
+    "year": 1600,
+    "category": "exploration",
+    "description": "Dutch opticians developed compound lens systems combining multiple lenses, enabling microscopes and telescopes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cartridge-paper-development",
+    "friendly_name": "Paper Cartridge Development",
+    "year": 1590,
+    "category": "exploration",
+    "description": "Paper cartridges combining powder and ball were developed, speeding up musket reloading on the battlefield.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "sulfuric-acid-production",
+    "friendly_name": "Sulfuric Acid Production Method",
+    "year": 1600,
+    "category": "exploration",
+    "description": "German alchemists developed early methods for producing sulfuric acid, a key industrial chemical for centuries to come.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "glass-composition-improvements",
+    "friendly_name": "Glass Composition and Purity",
+    "year": 1600,
+    "category": "exploration",
+    "description": "Venetian glassmakers achieved exceptional clarity and purity in cristallo glass, prized throughout Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "printing-technology-spread",
+    "friendly_name": "Printing Technology Spread Across Eurasia",
+    "year": 1600,
+    "category": "exploration",
+    "description": "Printing technology spread beyond Europe to the Ottoman Empire, India, and the Americas via missionary and trade networks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sugar-monoculture-caribbean",
+    "friendly_name": "Sugar Monoculture Establishes in Caribbean",
+    "year": 1640,
+    "category": "exploration",
+    "description": "Sugar monoculture dominated Caribbean islands, driving the transatlantic slave trade and reshaping colonial economies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tokugawa-rice-standardization",
+    "friendly_name": "Tokugawa Period Rice Standardization",
+    "year": 1603,
+    "category": "exploration",
+    "description": "The Tokugawa shogunate standardized rice measurement as the basis of Japan's feudal tax and economic system.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hudson-explorations",
+    "friendly_name": "Hudson's Arctic Explorations",
+    "year": 1607,
+    "category": "exploration",
+    "description": "English explorer Henry Hudson made four voyages seeking a northern passage, exploring the Arctic and northeastern America.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "virginia-colony-established",
+    "friendly_name": "Virginia Colony Established",
+    "year": 1607,
+    "category": "exploration",
+    "description": "English settlers founded Jamestown, Virginia, the first permanent English colony in the Americas.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "telescope-invention",
+    "friendly_name": "Telescope Invented",
+    "year": 1608,
+    "category": "exploration",
+    "description": "Dutch spectacle maker Hans Lippershey applied for the first telescope patent, sparking a revolution in astronomy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kepler-planetary-laws",
+    "friendly_name": "Kepler's Laws of Motion Published",
+    "year": 1609,
+    "category": "exploration",
+    "description": "Johannes Kepler published his first two laws of planetary motion, showing planets orbit in ellipses, not circles.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "keplers-laws",
+    "friendly_name": "Kepler Laws of Planetary Motion",
+    "year": 1609,
+    "category": "exploration",
+    "description": "Kepler's Astronomia Nova introduced elliptical orbits and the equal-area law, transforming celestial mechanics.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-telescope",
+    "friendly_name": "Galileo Telescope",
+    "year": 1609,
+    "category": "exploration",
+    "description": "Galileo built an improved telescope and turned it skyward, discovering Jupiter's moons, lunar craters, and sunspots.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kepler-laws-motion",
+    "friendly_name": "Johannes Kepler's Laws of Planetary Motion",
+    "year": 1609,
+    "category": "exploration",
+    "description": "Kepler derived three fundamental laws describing planetary motion from Tycho Brahe's observational data.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tea-introduction",
+    "friendly_name": "Tea Reaching Europe",
+    "year": 1610,
+    "category": "exploration",
+    "description": "Dutch traders brought Chinese tea to Europe, beginning a trade that would reshape global commerce and culture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "galileo-telescopic-observations",
+    "friendly_name": "Galileo's Telescopic Astronomical Observations",
+    "year": 1610,
+    "category": "exploration",
+    "description": "Galileo published Sidereus Nuncius describing telescopic discoveries including Jupiter's moons and lunar mountains.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "galileo-telescope-discoveries",
+    "friendly_name": "Galileo's Telescope and Astronomical Discoveries",
+    "year": 1610,
+    "category": "exploration",
+    "description": "Galileo's telescopic observations provided key evidence for the Copernican heliocentric model of the solar system.",
+    "difficulty": "easy"
+  }
+]

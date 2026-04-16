@@ -1,0 +1,1082 @@
+[
+  {
+    "event_name": "song-magnetic-compass",
+    "event_title": "Song Dynasty Compass Navigation Development",
+    "approximate_year": 1120,
+    "region": "East Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "song-sternpost-rudder",
+    "event_title": "Song Dynasty Sternpost Rudder Refinement",
+    "approximate_year": 1150,
+    "region": "East Asia",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "song-maritime-technology",
+    "event_title": "Song Dynasty Maritime Trade Fleet",
+    "approximate_year": 1150,
+    "region": "East Asia",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "song-agricultural-treatise",
+    "event_title": "Song Dynasty Agricultural Treatise",
+    "approximate_year": 1150,
+    "region": "East Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "bhaskara-mathematics-india",
+    "event_title": "Bhaskara II Develops Mathematics",
+    "approximate_year": 1150,
+    "region": "India",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "al-idrisi-geography-map",
+    "event_title": "Al-Idrisi Creates Comprehensive World Map",
+    "approximate_year": 1154,
+    "region": "Sicily",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "song-color-printing",
+    "event_title": "Song Dynasty Color Printing Development",
+    "approximate_year": 1180,
+    "region": "East Asia",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "easter-island-settlement",
+    "event_title": "Easter Island Settlement",
+    "approximate_year": 1200,
+    "region": "Oceania/Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "paper-technology-spreads",
+    "event_title": "Paper Technology Spreads to Europe",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "first-greenhouse",
+    "event_title": "Greenhouse Cultivation",
+    "approximate_year": 1200,
+    "region": "Italy",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "song-blue-white-porcelain",
+    "event_title": "Song Dynasty Blue and White Porcelain",
+    "approximate_year": 1200,
+    "region": "East Asia",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "song-triple-harvest",
+    "event_title": "Song Dynasty Three Harvests per Year",
+    "approximate_year": 1200,
+    "region": "East Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "potato-cultivation-spread",
+    "event_title": "Potato Cultivation Spreads Through Americas",
+    "approximate_year": 1200,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "water-mill-expansion",
+    "event_title": "Water Mill Expansion Changes Production",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "windmill-introduction",
+    "event_title": "Windmill Introduction to Europe",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "terracing-agriculture-andes",
+    "event_title": "Andean Terrace Agriculture Development",
+    "approximate_year": 1200,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "maize-cultivation-expansion",
+    "event_title": "Maize Cultivation Spreads Through Americas",
+    "approximate_year": 1200,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "bahauddin-zakariya-medicine",
+    "event_title": "Bahauddin Zakariya Advances Medicine",
+    "approximate_year": 1200,
+    "region": "Persia",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "breast-wheel-design",
+    "event_title": "Breast Wheel Water Mill Design",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "windmill-vertical-axis",
+    "event_title": "Vertical Axis Windmill (post-mill)",
+    "approximate_year": 1200,
+    "region": "Netherlands",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "portolan-chart-development",
+    "event_title": "Portolan Chart Development",
+    "approximate_year": 1200,
+    "region": "Mediterranean",
+    "original_category": "navigation",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "lance-pike-improvements",
+    "event_title": "Lance and Pike Design",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "harrow-development",
+    "event_title": "Harrow and Soil-Breaking Tools",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "potash-production-wood",
+    "event_title": "Potash Production from Wood Ash",
+    "approximate_year": 1200,
+    "region": "Europe",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "andean-llama-domestication",
+    "event_title": "Andean Llama Herding System Peak",
+    "approximate_year": 1200,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "compass-adoption-navigation",
+    "event_title": "Magnetic Compass Adoption for Navigation",
+    "approximate_year": 1200,
+    "region": "Mediterranean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "astrolabe-navigation",
+    "event_title": "Astrolabe Becomes Navigation Standard",
+    "approximate_year": 1200,
+    "region": "Mediterranean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "monsoon-calendar-refinement",
+    "event_title": "Monsoon Calendar Mastery in Islamic Navigation",
+    "approximate_year": 1200,
+    "region": "Indian Ocean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "slash-and-burn-intensive",
+    "event_title": "Slash-and-Burn Agriculture Intensifies",
+    "approximate_year": 1200,
+    "region": "Mesoamerica",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "printing-press-korea",
+    "event_title": "Movable Type in Korea",
+    "approximate_year": 1234,
+    "region": "Korea",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "oracle-bones-shang",
+    "event_title": "Oracle Bones of Shang Dynasty",
+    "approximate_year": 1250,
+    "region": "China",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "maori-settlement-new-zealand",
+    "event_title": "Maori Settlement of New Zealand",
+    "approximate_year": 1250,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "roger-bacon-experimental-method",
+    "event_title": "Roger Bacon Advocates Experimental Method",
+    "approximate_year": 1260,
+    "region": "England",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "ancestral-puebloan-drought",
+    "event_title": "Ancestral Puebloan Southwest Drought",
+    "approximate_year": 1280,
+    "region": "North America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "mechanical-clock-adoption",
+    "event_title": "Mechanical Clock Adoption in Europe",
+    "approximate_year": 1280,
+    "region": "Western Europe",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "gunpowder-cannons-develop",
+    "event_title": "Gunpowder Cannons Developed",
+    "approximate_year": 1300,
+    "region": "China",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "glass-lens-grinding",
+    "event_title": "Lens Grinding and Shaping Techniques",
+    "approximate_year": 1300,
+    "region": "Italy",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "scythe-development",
+    "event_title": "Scythe Development and Use",
+    "approximate_year": 1300,
+    "region": "Europe",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "enamel-development-techniques",
+    "event_title": "Enamel Development and Application",
+    "approximate_year": 1300,
+    "region": "Mediterranean",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "blast-furnace-innovation",
+    "event_title": "Blast Furnace Innovation in Medieval Europe",
+    "approximate_year": 1300,
+    "region": "Western Europe",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "mali-maritime-expansion",
+    "event_title": "Mali Maritime Expeditions",
+    "approximate_year": 1310,
+    "region": "Africa",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "chimu-irrigation-expansion",
+    "event_title": "Chimú Irrigation System Peak",
+    "approximate_year": 1350,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "quarantine-origins",
+    "event_title": "Origins of Quarantine",
+    "approximate_year": 1377,
+    "region": "Venice",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "jikji-korea-printing",
+    "event_title": "Jikji: Korean Metal Movable Type",
+    "approximate_year": 1377,
+    "region": "Korea",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "terrace-farming-andes",
+    "event_title": "Inca Terrace Farming Expands",
+    "approximate_year": 1400,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "open-field-system-abandonment",
+    "event_title": "Open Field System Agricultural Shift",
+    "approximate_year": 1400,
+    "region": "England",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "manioc-cultivation-caribbean",
+    "event_title": "Manioc Cultivation Becomes Staple",
+    "approximate_year": 1400,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "kerala-school-mathematics",
+    "event_title": "Kerala School Develops Calculus Concepts",
+    "approximate_year": 1400,
+    "region": "India",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "magnifying-glass-single-lens",
+    "event_title": "Magnifying Glass Single Lens",
+    "approximate_year": 1400,
+    "region": "Italy",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "star-chart-compilation",
+    "event_title": "Star Charts and Celestial Mapping",
+    "approximate_year": 1400,
+    "region": "Islamic world",
+    "original_category": "navigation",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "moldboard-plow-improvements",
+    "event_title": "Moldboard Plow Improvements",
+    "approximate_year": 1400,
+    "region": "Europe",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "saltpeter-refinement",
+    "event_title": "Saltpeter Crystallization and Refinement",
+    "approximate_year": 1400,
+    "region": "Asia",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "soap-making-improvements",
+    "event_title": "Soap Making Improvements",
+    "approximate_year": 1400,
+    "region": "Mediterranean",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "porcelain-development",
+    "event_title": "Porcelain Development and Techniques",
+    "approximate_year": 1400,
+    "region": "China",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "ming-treasure-fleets",
+    "event_title": "Zheng He's Treasure Fleet Voyages Begin",
+    "approximate_year": 1405,
+    "region": "East Asia",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "prince-henry-navigator",
+    "event_title": "Prince Henry the Navigator School",
+    "approximate_year": 1419,
+    "region": "Portugal",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "portuguese-caravels",
+    "event_title": "Portuguese Develop Caravel Ships",
+    "approximate_year": 1420,
+    "region": "Portugal",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "astronomical-observatory",
+    "event_title": "Ulugh Beg Observatory",
+    "approximate_year": 1420,
+    "region": "Uzbekistan",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "ulugh-beg-observatory",
+    "event_title": "Ulugh Beg Observatory Samarkand",
+    "approximate_year": 1420,
+    "region": "Central Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_medieval, r2_korea_americas"
+  },
+  {
+    "event_name": "samarkand-observatory",
+    "event_title": "Ulugh Beg's Observatory Built",
+    "approximate_year": 1424,
+    "region": "Central Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "zheng-he-treasure-voyages-end",
+    "event_title": "Zheng He Treasure Voyages End",
+    "approximate_year": 1433,
+    "region": "China",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "joseon-sejong-water-clock",
+    "event_title": "Water Clock Jagyeongnu Constructed",
+    "approximate_year": 1438,
+    "region": "Korea",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "caravel-ship-design",
+    "event_title": "Caravel Ship Design Development",
+    "approximate_year": 1440,
+    "region": "Iberia",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "hangul-creation-edict",
+    "event_title": "Hangul Creation Edict Issued",
+    "approximate_year": 1443,
+    "region": "Korea",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "joseon-scientific-innovation",
+    "event_title": "Joseon Dynasty Scientific Innovations",
+    "approximate_year": 1450,
+    "region": "East Asia",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "eyeglass-improvements",
+    "event_title": "Eyeglass Design Improvements",
+    "approximate_year": 1450,
+    "region": "Venice",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "armillary-sphere-korean",
+    "event_title": "Korean Armillary Sphere Developed",
+    "approximate_year": 1450,
+    "region": "Korea",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "printing-press-diffusion",
+    "event_title": "Printing Press Spreads Across Europe",
+    "approximate_year": 1470,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "inca-terrace-agriculture",
+    "event_title": "Inca Terrace Agriculture System Peak",
+    "approximate_year": 1480,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "dias-cape-rounding",
+    "event_title": "Dias Rounds Cape of Good Hope",
+    "approximate_year": 1488,
+    "region": "Africa",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "end-medieval-period-1500",
+    "event_title": "Printing Press Revolution Completes",
+    "approximate_year": 1500,
+    "region": "Europe",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "polynesian-settlement-expansion",
+    "event_title": "Polynesian Navigation and Settlement Expansion",
+    "approximate_year": 1500,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "melanesian-settlement",
+    "event_title": "Melanesian Island Settlement Patterns",
+    "approximate_year": 1500,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "anatomical-drawing",
+    "event_title": "Leonardo Anatomical Studies",
+    "approximate_year": 1500,
+    "region": "Italy",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "sugar-plantation-establishment",
+    "event_title": "Sugar Plantations Established in Caribbean",
+    "approximate_year": 1500,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "coffee-cultivation-expansion",
+    "event_title": "Coffee Cultivation Expands in Ottoman Empire",
+    "approximate_year": 1500,
+    "region": "Ottoman Empire",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "enclosure-movement-begins",
+    "event_title": "English Enclosure Movement Begins",
+    "approximate_year": 1500,
+    "region": "England",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "nautical-table-creation",
+    "event_title": "Nautical Tables and Ephemerides",
+    "approximate_year": 1500,
+    "region": "Portugal",
+    "original_category": "navigation",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "arquebus-musket-development",
+    "event_title": "Arquebus and Musket Design",
+    "approximate_year": 1500,
+    "region": "Spain",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "rifling-development",
+    "event_title": "Rifling Grooves in Gun Barrels",
+    "approximate_year": 1500,
+    "region": "Germany",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "scratch-plow-design",
+    "event_title": "Scratch Plow Early Design",
+    "approximate_year": 1500,
+    "region": "Middle East",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "varnish-composition-formulas",
+    "event_title": "Varnish Composition and Formulas",
+    "approximate_year": 1500,
+    "region": "Europe",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "enclosure-movement",
+    "event_title": "Enclosure Movement Transforms English Agriculture",
+    "approximate_year": 1500,
+    "region": "England",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "printing-impact-literacy",
+    "event_title": "Printing Increases Literacy Rates",
+    "approximate_year": 1500,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "literacy-expansion-post-printing",
+    "event_title": "Literacy Expansion After Printing Press",
+    "approximate_year": 1500,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "first-autopsy",
+    "event_title": "Leonardo Da Vinci Autopsy",
+    "approximate_year": 1507,
+    "region": "Italy",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "copernican-astronomy",
+    "event_title": "Copernican Astronomical Revolution",
+    "approximate_year": 1543,
+    "region": "Poland",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "copernican-revolution",
+    "event_title": "Copernican Heliocentric Model Published",
+    "approximate_year": 1543,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain, historical_firsts"
+  },
+  {
+    "event_name": "chocolate-europe",
+    "event_title": "Chocolate Introduction Europe",
+    "approximate_year": 1544,
+    "region": "Spain",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "botanical-garden",
+    "event_title": "Orto Botanico di Padova",
+    "approximate_year": 1545,
+    "region": "Italy",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "scientific-revolution-dawn",
+    "event_title": "Scientific Revolution Begins",
+    "approximate_year": 1550,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "maize-introduction-africa-asia",
+    "event_title": "Maize Introduced to Africa and Asia",
+    "approximate_year": 1550,
+    "region": "Africa/Asia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "printing-press-standardization",
+    "event_title": "Printing Press Standardization and Spread",
+    "approximate_year": 1550,
+    "region": "Europe",
+    "original_category": "technological",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "printing-technological-lock",
+    "event_title": "Printing Press Becomes Dominant Technology",
+    "approximate_year": 1550,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "potato-introduction-europe",
+    "event_title": "Potatoes Introduced to Europe",
+    "approximate_year": 1570,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "tycho-brahe-astronomical-observations",
+    "event_title": "Tycho Brahe's Precise Astronomical Observations",
+    "approximate_year": 1580,
+    "region": "Denmark",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "first-cesarean-section",
+    "event_title": "Successful Caesarean Section",
+    "approximate_year": 1581,
+    "region": "Switzerland",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "compound-microscope",
+    "event_title": "Compound Microscope Development",
+    "approximate_year": 1590,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "first-thermometer",
+    "event_title": "Galileo Thermometer",
+    "approximate_year": 1593,
+    "region": "Italy",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "new-world-crops-adoption",
+    "event_title": "Adoption of New World Crops in Old World",
+    "approximate_year": 1600,
+    "region": "Global",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "coffee-introduction",
+    "event_title": "Coffee Reaching Europe",
+    "approximate_year": 1600,
+    "region": "Ottoman Empire",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "scientific-instruments-development",
+    "event_title": "Development of Scientific Instruments",
+    "approximate_year": 1600,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "cotton-production-india",
+    "event_title": "Indian Cotton Industry Booms",
+    "approximate_year": 1600,
+    "region": "India",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "compound-lens-system",
+    "event_title": "Compound Lens Systems",
+    "approximate_year": 1600,
+    "region": "Netherlands",
+    "original_category": "optics",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "cartridge-paper-development",
+    "event_title": "Paper Cartridge Development",
+    "approximate_year": 1600,
+    "region": "Europe",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "sulfuric-acid-production",
+    "event_title": "Sulfuric Acid Production Method",
+    "approximate_year": 1600,
+    "region": "Germany",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "glass-composition-improvements",
+    "event_title": "Glass Composition and Purity",
+    "approximate_year": 1600,
+    "region": "Venice",
+    "original_category": "materials",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "printing-technology-spread",
+    "event_title": "Printing Technology Spread Across Eurasia",
+    "approximate_year": 1600,
+    "region": "Global",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "sugar-monoculture-caribbean",
+    "event_title": "Sugar Monoculture Establishes in Caribbean",
+    "approximate_year": 1600,
+    "region": "Caribbean",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "tokugawa-rice-standardization",
+    "event_title": "Tokugawa Period Rice Standardization",
+    "approximate_year": 1603,
+    "region": "Japan",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "hudson-explorations",
+    "event_title": "Hudson's Arctic Explorations",
+    "approximate_year": 1607,
+    "region": "Arctic",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "virginia-colony-established",
+    "event_title": "Virginia Colony Established",
+    "approximate_year": 1607,
+    "region": "America",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "telescope-invention",
+    "event_title": "Telescope Invented",
+    "approximate_year": 1608,
+    "region": "Netherlands",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "kepler-planetary-laws",
+    "event_title": "Kepler's Laws of Motion Published",
+    "approximate_year": 1609,
+    "region": "Germany",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "keplers-laws",
+    "event_title": "Kepler Laws of Planetary Motion",
+    "approximate_year": 1609,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "first-telescope",
+    "event_title": "Galileo Telescope",
+    "approximate_year": 1609,
+    "region": "Italy",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "kepler-laws-motion",
+    "event_title": "Johannes Kepler's Laws of Planetary Motion",
+    "approximate_year": 1609,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern, r2_scientific"
+  },
+  {
+    "event_name": "tea-introduction",
+    "event_title": "Tea Reaching Europe",
+    "approximate_year": 1610,
+    "region": "Netherlands",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "galileo-telescopic-observations",
+    "event_title": "Galileo's Telescopic Astronomical Observations",
+    "approximate_year": 1610,
+    "region": "Europe",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "galileo-telescope-discoveries",
+    "event_title": "Galileo's Telescope and Astronomical Discoveries",
+    "approximate_year": 1610,
+    "region": "Italy",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  }
+]

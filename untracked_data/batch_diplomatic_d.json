@@ -1,0 +1,1289 @@
+[
+  {
+    "event_name": "palmares-republic-zumbi",
+    "event_title": "Palmares Republic - African Resistance in Brazil",
+    "approximate_year": 1605,
+    "region": "South America",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "tongan-kingdom-established",
+    "event_title": "Tongan Kingdom Established",
+    "approximate_year": 1610,
+    "region": "Pacific",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mapuche-confederation-1610",
+    "event_title": "Mapuche Political Confederation",
+    "approximate_year": 1610,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "stock-exchange-amsterdam",
+    "event_title": "Amsterdam Stock Exchange Established",
+    "approximate_year": 1611,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "shogun-tokugawa-succession",
+    "event_title": "Tokugawa Shogunate Succession Establishment",
+    "approximate_year": 1615,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "beaver-trade-north-america",
+    "event_title": "Beaver Fur Trade in North America",
+    "approximate_year": 1620,
+    "region": "North America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "richelieu-centralization",
+    "event_title": "Cardinal Richelieu Centralizes French Power",
+    "approximate_year": 1624,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "dahomey-kingdom-founded",
+    "event_title": "Dahomey Kingdom Established",
+    "approximate_year": 1625,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mughal-shah-jahan",
+    "event_title": "Shah Jahan's Reign and Taj Mahal",
+    "approximate_year": 1628,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "alaouite-dynasty-rise",
+    "event_title": "Alaouite Dynasty Rise in Morocco",
+    "approximate_year": 1631,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "gondar-capital",
+    "event_title": "Gondar Established as Ethiopian Capital",
+    "approximate_year": 1632,
+    "region": "Sub-Saharan Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "buke-shohatto-code",
+    "event_title": "Buke Shohatto (Military Code) Established",
+    "approximate_year": 1633,
+    "region": "East Asia",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "stock-speculation-dutch",
+    "event_title": "Stock Speculation and Bubble Formation",
+    "approximate_year": 1634,
+    "region": "Netherlands",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "tokugawa-sakoku-isolation",
+    "event_title": "Tokugawa Sakoku Policy of Isolation Begins",
+    "approximate_year": 1635,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "sakoku-edicts-isolation",
+    "event_title": "Sakoku Edicts Enforce Japanese Isolation",
+    "approximate_year": 1635,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "fronde-rebellions",
+    "event_title": "Fronde Rebellions",
+    "approximate_year": 1648,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "westphalia-treaty",
+    "event_title": "Peace of Westphalia",
+    "approximate_year": 1648,
+    "region": "Germany",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "peace-westphalia-extended",
+    "event_title": "Peace of Westphalia Territorial Settlements",
+    "approximate_year": 1648,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "ashanti-federation",
+    "event_title": "Ashanti Federation Consolidates Power",
+    "approximate_year": 1650,
+    "region": "Sub-Saharan Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "mercantilism-doctrine-rise",
+    "event_title": "Mercantilism Doctrine Rises",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "futures-market",
+    "event_title": "Rice Futures",
+    "approximate_year": 1650,
+    "region": "Japan",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "vietnamese-nam-vu",
+    "event_title": "Vietnamese Nam Vu (March to South) Expansion",
+    "approximate_year": 1650,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "zanzibar-spice-trade",
+    "event_title": "Zanzibar Becomes Spice Trade Center",
+    "approximate_year": 1650,
+    "region": "East Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "navigation-acts-england",
+    "event_title": "Navigation Acts Establish English Mercantilism",
+    "approximate_year": 1651,
+    "region": "Europe",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "koprululer-reforms",
+    "event_title": "Köprülü Dynasty Administrative Reforms",
+    "approximate_year": 1656,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "mughal-aurengzeb-expansion",
+    "event_title": "Aurengzeb's Mughal Expansion",
+    "approximate_year": 1658,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "english-civil-war-aftermath",
+    "event_title": "English Civil War Political Consequences",
+    "approximate_year": 1660,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "louis-xiv-personal-rule",
+    "event_title": "Louis XIV Begins Personal Rule",
+    "approximate_year": 1661,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "qing-kangxi-emperor",
+    "event_title": "Kangxi Emperor's Reign Begins",
+    "approximate_year": 1661,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "maratha-shivaji",
+    "event_title": "Shivaji Maharaj Establishes Maratha Power",
+    "approximate_year": 1666,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "central-bank",
+    "event_title": "Bank of Sweden",
+    "approximate_year": 1668,
+    "region": "Sweden",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "maratha-empire-begins",
+    "event_title": "Maratha Empire Expansion Begins",
+    "approximate_year": 1674,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "rozvi-empire",
+    "event_title": "Rozvi Empire Dominates Southern Africa",
+    "approximate_year": 1680,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mercantilism-peak",
+    "event_title": "Mercantilism Economic System Peak",
+    "approximate_year": 1680,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "joseon-yangban-examination",
+    "event_title": "Yangban Civil Service Examination Reforms",
+    "approximate_year": 1680,
+    "region": "Korea",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "ottoman-decline-begins",
+    "event_title": "Ottoman Empire Begins Decline",
+    "approximate_year": 1683,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "locke-treatise-government",
+    "event_title": "Locke's Treatise on Government Published",
+    "approximate_year": 1689,
+    "region": "England",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "english-rights-act",
+    "event_title": "English Bill of Rights",
+    "approximate_year": 1689,
+    "region": "England",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "mongolia-qing-vassalage",
+    "event_title": "Mongolia Becomes Qing Dynasty Vassal State",
+    "approximate_year": 1690,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "khalkha-mongolia-submission",
+    "event_title": "Khalkha Mongolia Submits to Qing",
+    "approximate_year": 1691,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "tonga-empire",
+    "event_title": "Tongan Empire Peak",
+    "approximate_year": 1700,
+    "region": "Oceania/Pacific",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "zanzibar-sultanate-influence",
+    "event_title": "Zanzibar Sultanate Influence Expands",
+    "approximate_year": 1700,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "dahomey-rise-power",
+    "event_title": "Dahomey Kingdom Rise to Regional Power",
+    "approximate_year": 1700,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "tlingit-shellmoney-trade",
+    "event_title": "Tlingit Shell Money Trade",
+    "approximate_year": 1700,
+    "region": "North America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "famine-cycles-break",
+    "event_title": "Famine Cycles Break in Western Europe",
+    "approximate_year": 1700,
+    "region": "Western Europe",
+    "original_category": "demographic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "asante-confederation",
+    "event_title": "Asante Confederation Formation",
+    "approximate_year": 1701,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mughal-administrative-decline",
+    "event_title": "Mughal Administration Decline Accelerates",
+    "approximate_year": 1707,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "copyright-britain",
+    "event_title": "Copyright Law",
+    "approximate_year": 1709,
+    "region": "England",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "haitian-slave-rebellions",
+    "event_title": "Early Haitian Slave Rebellions and Marronage",
+    "approximate_year": 1715,
+    "region": "Americas",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "mississippi-bubble",
+    "event_title": "Mississippi Bubble Financial Crisis",
+    "approximate_year": 1716,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "qing-tibet-control",
+    "event_title": "Qing Dynasty Establishes Control Over Tibet",
+    "approximate_year": 1720,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "maratha-confederacy",
+    "event_title": "Maratha Confederacy Formation",
+    "approximate_year": 1720,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "yongzheng-emperor-reign",
+    "event_title": "Yongzheng Emperor's Reign Begins",
+    "approximate_year": 1722,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "stono-rebellion",
+    "event_title": "Stono Rebellion - South Carolina Slave Uprising",
+    "approximate_year": 1739,
+    "region": "Americas",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "separation-of-powers-concept",
+    "event_title": "Separation of Powers Concept Develops",
+    "approximate_year": 1748,
+    "region": "France/Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "qing-expansion-central-asia",
+    "event_title": "Qing Expansion Reaches Peak in Central Asia",
+    "approximate_year": 1750,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "maratha-expansion-peak",
+    "event_title": "Maratha Empire Reaches Peak Expansion",
+    "approximate_year": 1750,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "building-code",
+    "event_title": "Building Code of Hammurabi",
+    "approximate_year": 1750,
+    "region": "Mesopotamia",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "middle-passage-peak",
+    "event_title": "Middle Passage Atlantic Slave Trade Peak",
+    "approximate_year": 1750,
+    "region": "Atlantic",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "triangular-trade-system",
+    "event_title": "Triangular Trade System Peak Operations",
+    "approximate_year": 1750,
+    "region": "Atlantic",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "dahomey-slave-trade-dominance",
+    "event_title": "Dahomey Dominates West African Slave Trade",
+    "approximate_year": 1750,
+    "region": "West Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "british-museum-founded",
+    "event_title": "British Museum",
+    "approximate_year": 1753,
+    "region": "England",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "industrial-revolution-begins",
+    "event_title": "Industrial Revolution Begins",
+    "approximate_year": 1760,
+    "region": "Britain",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "tacky-rebellion-jamaica",
+    "event_title": "Tacky's Rebellion - Jamaican Slave Uprising",
+    "approximate_year": 1760,
+    "region": "Americas",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "proclamation-1763",
+    "event_title": "Proclamation of 1763",
+    "approximate_year": 1763,
+    "region": "America",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "public-education-prussia",
+    "event_title": "Prussian Public Education",
+    "approximate_year": 1763,
+    "region": "Germany",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "hermitage-museum",
+    "event_title": "Hermitage Museum",
+    "approximate_year": 1764,
+    "region": "Russia",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "factory-system-emergence",
+    "event_title": "Factory System Develops",
+    "approximate_year": 1770,
+    "region": "Britain",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "intolerable-acts",
+    "event_title": "Intolerable Acts Passed",
+    "approximate_year": 1774,
+    "region": "America",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "first-continental-congress",
+    "event_title": "First Continental Congress",
+    "approximate_year": 1774,
+    "region": "Philadelphia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "boulton-watt-partnership",
+    "event_title": "Boulton and Watt Partnership",
+    "approximate_year": 1775,
+    "region": "England",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "declaration-of-independence-drafted",
+    "event_title": "Declaration of Independence Drafted",
+    "approximate_year": 1776,
+    "region": "Philadelphia",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "manchester-cotton-boom",
+    "event_title": "Lancashire Cotton Mills Boom",
+    "approximate_year": 1780,
+    "region": "Britain",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "pre-revolution-debt-crisis",
+    "event_title": "French Debt Crisis",
+    "approximate_year": 1780,
+    "region": "France",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "sotho-kingdom-mohlomi",
+    "event_title": "Sotho Kingdom Founded Under Mohlomi",
+    "approximate_year": 1780,
+    "region": "Southern Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "american-constitution-adoption",
+    "event_title": "US Constitution Ratified",
+    "approximate_year": 1788,
+    "region": "America",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "storming-bastille-france",
+    "event_title": "Storming of the Bastille",
+    "approximate_year": 1789,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "estates-general-convened",
+    "event_title": "Estates-General Convened",
+    "approximate_year": 1789,
+    "region": "Versailles",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "declaration-rights-man-citizen",
+    "event_title": "Declaration of Rights of Man and Citizen",
+    "approximate_year": 1789,
+    "region": "France",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "womens-march-versailles",
+    "event_title": "Women's March on Versailles",
+    "approximate_year": 1789,
+    "region": "Versailles",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "abolition-of-feudalism",
+    "event_title": "Abolition of Feudalism",
+    "approximate_year": 1789,
+    "region": "France",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "prison-reform",
+    "event_title": "Prison Penitentiary System",
+    "approximate_year": 1790,
+    "region": "USA",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "flight-to-varennes",
+    "event_title": "Flight to Varennes",
+    "approximate_year": 1791,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "september-massacres",
+    "event_title": "September Massacres",
+    "approximate_year": 1792,
+    "region": "Paris",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "abolition-of-monarchy",
+    "event_title": "Abolition of Monarchy",
+    "approximate_year": 1792,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "reign-terror-french-revolution",
+    "event_title": "Reign of Terror in France",
+    "approximate_year": 1793,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "execution-of-louis-xvi",
+    "event_title": "Execution of Louis XVI",
+    "approximate_year": 1793,
+    "region": "Paris",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "louvre-opened",
+    "event_title": "Louvre Museum",
+    "approximate_year": 1793,
+    "region": "France",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "thermidorian-reaction",
+    "event_title": "Thermidorian Reaction",
+    "approximate_year": 1794,
+    "region": "Paris",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "directory-period",
+    "event_title": "Directory Period Established",
+    "approximate_year": 1795,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "hawaiian-kingdom-unification",
+    "event_title": "Hawaiian Kingdom Unified Under Kamehameha",
+    "approximate_year": 1795,
+    "region": "Polynesia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "income-tax",
+    "event_title": "Income Tax System",
+    "approximate_year": 1799,
+    "region": "England",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "kwakwakawakw-potlatch",
+    "event_title": "Kwakwakawakw Potlatch Tradition Peak",
+    "approximate_year": 1800,
+    "region": "North America",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "sikh-empire-ranjit-singh",
+    "event_title": "Sikh Empire Under Ranjit Singh",
+    "approximate_year": 1801,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "abolition-slavery-denmark",
+    "event_title": "Danish Slave Trade Abolition",
+    "approximate_year": 1803,
+    "region": "Denmark",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "napoleon-coronation",
+    "event_title": "Napoleon Crowned Emperor",
+    "approximate_year": 1804,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "criminal-law-code",
+    "event_title": "Napoleonic Code",
+    "approximate_year": 1804,
+    "region": "France",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "continental-system",
+    "event_title": "Continental System Blockade",
+    "approximate_year": 1806,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "divorce-law",
+    "event_title": "First Divorce Law",
+    "approximate_year": 1809,
+    "region": "France",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "restoration-bourbon-monarchy",
+    "event_title": "Restoration of Bourbon Monarchy",
+    "approximate_year": 1814,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "zulu-kingdom-formation",
+    "event_title": "Zulu Kingdom Forms Under Shaka",
+    "approximate_year": 1816,
+    "region": "Southern Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "museum-prado-opened",
+    "event_title": "Prado Museum",
+    "approximate_year": 1819,
+    "region": "Spain",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "mfecane-populations-displaced",
+    "event_title": "Mfecane Displaces Populations Across Africa",
+    "approximate_year": 1825,
+    "region": "Southern Africa",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "police-force-modern",
+    "event_title": "Metropolitan Police",
+    "approximate_year": 1829,
+    "region": "England",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "child-labor-law",
+    "event_title": "Factory Acts",
+    "approximate_year": 1833,
+    "region": "England",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "female-university",
+    "event_title": "Mount Holyoke College",
+    "approximate_year": 1837,
+    "region": "USA",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "pension-system",
+    "event_title": "Prussian Pension",
+    "approximate_year": 1840,
+    "region": "Germany",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "dental-school",
+    "event_title": "Baltimore Dental School",
+    "approximate_year": 1840,
+    "region": "USA",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "womens-rights-convention",
+    "event_title": "Seneca Falls Convention",
+    "approximate_year": 1848,
+    "region": "USA",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "universal-suffrage",
+    "event_title": "Male Universal Suffrage",
+    "approximate_year": 1848,
+    "region": "France",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "public-health",
+    "event_title": "Public Health Act",
+    "approximate_year": 1848,
+    "region": "England",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "sanitation-system",
+    "event_title": "Sanitation Authority",
+    "approximate_year": 1848,
+    "region": "England",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "detective-agency",
+    "event_title": "Pinkerton Detectives",
+    "approximate_year": 1850,
+    "region": "USA",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "library-system",
+    "event_title": "Free Library System",
+    "approximate_year": 1850,
+    "region": "USA",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "ethiopian-tewodros-reform",
+    "event_title": "Emperor Tewodros Reforms Ethiopian State",
+    "approximate_year": 1855,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "nursing-school",
+    "event_title": "Nightingale Nursing School",
+    "approximate_year": 1860,
+    "region": "England",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "womens-property-rights",
+    "event_title": "Women Property Rights Act",
+    "approximate_year": 1870,
+    "region": "England",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "information-bureau",
+    "event_title": "Tourist Information Bureau",
+    "approximate_year": 1873,
+    "region": "Austria",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "scramble-africa-begins",
+    "event_title": "Scramble for Africa Begins",
+    "approximate_year": 1880,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "free-education",
+    "event_title": "Free Primary Education",
+    "approximate_year": 1880,
+    "region": "France",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "natural-history-museum",
+    "event_title": "Natural History Museum London",
+    "approximate_year": 1881,
+    "region": "England",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "disability-rights",
+    "event_title": "Disability Care Law",
+    "approximate_year": 1881,
+    "region": "Germany",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "orphan-support",
+    "event_title": "Orphan Welfare Law",
+    "approximate_year": 1881,
+    "region": "France",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "school-lunch-program",
+    "event_title": "School Meal Program",
+    "approximate_year": 1889,
+    "region": "Sweden",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "anti-trust-law",
+    "event_title": "Sherman Anti-Trust Act",
+    "approximate_year": 1890,
+    "region": "USA",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "urban-planning",
+    "event_title": "City Planning",
+    "approximate_year": 1894,
+    "region": "USA",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "xia-dynasty",
+    "event_title": "Xia Dynasty",
+    "approximate_year": 1900,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "traffic-control",
+    "event_title": "Traffic Laws",
+    "approximate_year": 1903,
+    "region": "USA",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "corporate-tax",
+    "event_title": "Corporate Tax",
+    "approximate_year": 1909,
+    "region": "USA",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "unemployment-benefits",
+    "event_title": "Unemployment Insurance",
+    "approximate_year": 1911,
+    "region": "England",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "maternity-leave",
+    "event_title": "Maternity Benefit Act",
+    "approximate_year": 1911,
+    "region": "England",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "public-healthcare-system",
+    "event_title": "Healthcare System",
+    "approximate_year": 1912,
+    "region": "Germany",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "bolshevik-revolution",
+    "event_title": "Bolshevik Revolution",
+    "approximate_year": 1917,
+    "region": "Russia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "great-depression-economy",
+    "event_title": "Great Depression Begins",
+    "approximate_year": 1929,
+    "region": "America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "child-allowance",
+    "event_title": "Child Allowance",
+    "approximate_year": 1932,
+    "region": "Belgium",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "rise-hitler-nazism",
+    "event_title": "Rise of Nazi Germany",
+    "approximate_year": 1933,
+    "region": "Germany",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "sales-tax",
+    "event_title": "Sales Tax",
+    "approximate_year": 1934,
+    "region": "USA",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "cuban-missile-crisis-1962",
+    "event_title": "Cuban Missile Crisis",
+    "approximate_year": 1962,
+    "region": "Cuba",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "fall-berlin-wall-1989",
+    "event_title": "Fall of Berlin Wall",
+    "approximate_year": 1989,
+    "region": "Germany",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "collapse-soviet-union-1991",
+    "event_title": "Collapse of Soviet Union",
+    "approximate_year": 1991,
+    "region": "Russia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "sedentary-hunter-gatherer",
+    "event_title": "Sedentary Hunter-Gatherer Societies Develop",
+    "approximate_year": 2000,
+    "region": "Global",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "norte-chico-caral",
+    "event_title": "Caral Maritime Resource Center",
+    "approximate_year": 3000,
+    "region": "South America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "jomon-maritime-culture",
+    "event_title": "Jomon Maritime Culture Adapts",
+    "approximate_year": 10000,
+    "region": "East Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  }
+]

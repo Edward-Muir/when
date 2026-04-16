@@ -1,0 +1,994 @@
+[
+  {
+    "name": "sejong-hangul-invention",
+    "friendly_name": "King Sejong Invents Hangul Alphabet",
+    "year": 1443,
+    "category": "cultural",
+    "description": "King Sejong the Great of Korea promulgated Hangul, a phonetic alphabet designed to increase literacy among commoners.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "incunabula-books",
+    "friendly_name": "Incunabula: Early Printed Books",
+    "year": 1455,
+    "category": "cultural",
+    "description": "The first wave of European printed books emerged after Gutenberg's press, transforming knowledge distribution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "timbuktu-university",
+    "friendly_name": "University of Timbuktu Flourishes",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Sankore and other madrasas in Timbuktu became major centers of Islamic scholarship in West Africa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mamluk-cairo-libraries",
+    "friendly_name": "Mamluk Libraries and Scholarship",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Mamluk-era Cairo supported vast libraries and scholarly institutions, preserving Islamic and classical learning.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "benin-bronzes-royal-plaques",
+    "friendly_name": "Benin Royal Plaques and Bronzes Tradition",
+    "year": 1450,
+    "category": "cultural",
+    "description": "Artisans of the Benin Kingdom created elaborate brass plaques depicting court life and royal history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "filippo-lippi-painting",
+    "friendly_name": "Filippo Lippi Develops Renaissance Painting",
+    "year": 1452,
+    "category": "cultural",
+    "description": "Filippo Lippi pioneered naturalistic style in Florentine painting, influencing Botticelli and later Renaissance masters.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "harpsichord-invented",
+    "friendly_name": "Harpsichord Keyboard Instrument Invented",
+    "year": 1397,
+    "category": "cultural",
+    "description": "The earliest known reference to a harpsichord appears in Padua, Italy, launching centuries of keyboard music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "court-ballet-origins",
+    "friendly_name": "Court Ballet Tradition Emerges in Renaissance Italy",
+    "year": 1489,
+    "category": "cultural",
+    "description": "Elaborate court spectacles in Italian Renaissance courts laid the foundations for ballet as a performing art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "songhai-university-timbuktu",
+    "friendly_name": "Songhai University of Timbuktu Flourishes",
+    "year": 1468,
+    "category": "cultural",
+    "description": "Under the Songhai Empire, Timbuktu's Sankore University attracted scholars from across the Islamic world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "byzantine-scholars-flee",
+    "friendly_name": "Byzantine Scholars Flee Constantinople",
+    "year": 1453,
+    "category": "cultural",
+    "description": "After Constantinople's fall to the Ottomans, Greek scholars fled west, fueling the Italian Renaissance.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sikh-movement-begins",
+    "friendly_name": "Sikh Religious Movement Begins",
+    "year": 1499,
+    "category": "cultural",
+    "description": "Guru Nanak was born in Punjab and founded Sikhism, teaching devotion to one God and equality of all people.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bihzad-persian-painting",
+    "friendly_name": "Bihzad Becomes Greatest Persian Miniaturist",
+    "year": 1480,
+    "category": "cultural",
+    "description": "Kamal ud-Din Bihzad revolutionized Persian miniature painting with vivid color and expressive composition in Herat.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "perugino-christ-keys",
+    "friendly_name": "Perugino Establishes Renaissance Workshop",
+    "year": 1482,
+    "category": "cultural",
+    "description": "Perugino painted Delivery of the Keys in the Sistine Chapel, pioneering spatial harmony that influenced Raphael.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kongo-christianity-adoption",
+    "friendly_name": "Kongo Kingdom Adopts Christianity",
+    "year": 1491,
+    "category": "cultural",
+    "description": "King Nzinga a Nkuwu of Kongo was baptized, making the kingdom one of the earliest African Christian states.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "leonardo-da-vinci-art",
+    "friendly_name": "Leonardo da Vinci Creates Major Masterpieces",
+    "year": 1498,
+    "category": "cultural",
+    "description": "Leonardo painted The Last Supper in Milan, showcasing his mastery of perspective and human emotion.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "vedic-period",
+    "friendly_name": "Vedic Period Begins",
+    "year": -1500,
+    "category": "cultural",
+    "description": "Indo-Aryan peoples composed the Rigveda and other sacred hymns, shaping Hinduism and Indian civilization.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vijayanagara-flowering",
+    "friendly_name": "Vijayanagara Empire Cultural Flowering",
+    "year": 1509,
+    "category": "cultural",
+    "description": "Under Krishna Deva Raya, the Vijayanagara Empire reached its cultural zenith in art, architecture, and literature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joseon-confucian-renaissance",
+    "friendly_name": "Joseon Confucian Renaissance",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Korea's Joseon dynasty promoted Neo-Confucian scholarship, reshaping education, governance, and social hierarchy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ayutthaya-golden-age",
+    "friendly_name": "Ayutthaya Kingdom Golden Age",
+    "year": 1500,
+    "category": "cultural",
+    "description": "The Siamese kingdom of Ayutthaya thrived as a cosmopolitan trading hub with rich Buddhist art and architecture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "benin-art-renaissance",
+    "friendly_name": "Benin Kingdom Art Renaissance",
+    "year": 1500,
+    "category": "cultural",
+    "description": "The Benin Kingdom produced masterful bronze and ivory sculptures celebrating royal power and spiritual life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "benin-kingdom-art-tradition",
+    "friendly_name": "Benin Kingdom Sculptural Tradition Flourishes",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Royal guild artisans in the Benin Kingdom created intricate lost-wax bronze sculptures of remarkable sophistication.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "joseon-hahoetal-masks",
+    "friendly_name": "Hahoe Mask Dance Tradition Established",
+    "year": 1500,
+    "category": "cultural",
+    "description": "Korea's Hahoe mask dance drama combined satire and folk religion, performed during village festivals.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "davids-sculpture-michelangelo",
+    "friendly_name": "Michelangelo Sculpts David",
+    "year": 1504,
+    "category": "cultural",
+    "description": "Michelangelo completed his iconic marble David in Florence, a masterpiece of Renaissance sculpture.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "safavid-shiite-islam",
+    "friendly_name": "Safavid Dynasty Establishes Shiite Islam as State Religion",
+    "year": 1501,
+    "category": "cultural",
+    "description": "Shah Ismail I founded the Safavid dynasty and declared Twelver Shia Islam the state religion of Persia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "songhai-scholars",
+    "friendly_name": "Songhai Scholars and Islamic Learning",
+    "year": 1510,
+    "category": "cultural",
+    "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "raphael-school-athens",
+    "friendly_name": "Raphael Paints School of Athens",
+    "year": 1510,
+    "category": "cultural",
+    "description": "Raphael painted The School of Athens in the Vatican, depicting great philosophers in an idealized classical setting.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "michelangelo-sistine-chapel",
+    "friendly_name": "Michelangelo Paints Sistine Chapel Ceiling",
+    "year": 1512,
+    "category": "cultural",
+    "description": "Michelangelo completed the Sistine Chapel ceiling in Rome, featuring the iconic Creation of Adam.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "reformation-luther-begins",
+    "friendly_name": "Protestant Reformation Begins",
+    "year": 1517,
+    "category": "cultural",
+    "description": "Martin Luther posted his 95 Theses in Wittenberg, challenging Catholic Church practices and sparking the Reformation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "printing-reformation-pamphlets",
+    "friendly_name": "Printing Enables Reformation Pamphlets",
+    "year": 1520,
+    "category": "cultural",
+    "description": "The printing press allowed Luther's ideas to spread rapidly through pamphlets across German-speaking lands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "reformation-anabaptists",
+    "friendly_name": "Anabaptist Radical Reformation Movement",
+    "year": 1525,
+    "category": "cultural",
+    "description": "Radical reformers in Zurich rejected infant baptism, founding the Anabaptist movement amid fierce persecution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "english-reformation-henry",
+    "friendly_name": "English Reformation Under Henry VIII",
+    "year": 1534,
+    "category": "cultural",
+    "description": "Henry VIII broke with Rome and established the Church of England, largely to annul his marriage to Catherine of Aragon.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mannerism-art-style",
+    "friendly_name": "Mannerism Art Style Emerges",
+    "year": 1520,
+    "category": "cultural",
+    "description": "Artists like Pontormo and Parmigianino developed Mannerism, featuring elongated forms and unusual compositions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rabelais-gargantua",
+    "friendly_name": "Rabelais Writes Gargantua and Pantagruel",
+    "year": 1534,
+    "category": "cultural",
+    "description": "François Rabelais published his satirical epic blending humor, humanism, and bawdy social commentary in France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jesuits-founded",
+    "friendly_name": "Society of Jesus (Jesuits) Founded",
+    "year": 1540,
+    "category": "cultural",
+    "description": "Ignatius of Loyola founded the Jesuits in Rome, dedicated to education, missionary work, and the Counter-Reformation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "titian-venetian-color",
+    "friendly_name": "Titian Masters Venetian Color Tradition",
+    "year": 1538,
+    "category": "cultural",
+    "description": "Titian's masterful use of color and dynamic brushwork defined the Venetian school and influenced European painting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "commedia-dell-arte-emerges",
+    "friendly_name": "Commedia dell'arte Theater Tradition Emerges",
+    "year": 1545,
+    "category": "cultural",
+    "description": "Italian troupes pioneered improvised comedic theater with stock characters like Harlequin and Pantalone.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ottoman-miniature-art",
+    "friendly_name": "Ottoman Miniature Art Flourishes",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Ottoman court painters produced elaborate miniatures illustrating histories and royal achievements under Suleiman the Magnificent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "counter-reformation-jesuit",
+    "friendly_name": "Counter-Reformation and Jesuit Expansion",
+    "year": 1545,
+    "category": "cultural",
+    "description": "The Council of Trent launched the Catholic Counter-Reformation while Jesuits expanded globally.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spanish-inquisition-intensified",
+    "friendly_name": "Spanish Inquisition Intensified Persecution",
+    "year": 1550,
+    "category": "cultural",
+    "description": "The Spanish Inquisition intensified enforcement of religious orthodoxy, targeting suspected heretics and conversos.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "violin-developed",
+    "friendly_name": "Violin Developed as Modern Instrument",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Andrea Amati and other Cremonese craftsmen developed the modern violin in northern Italy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "persian-carpet-tradition",
+    "friendly_name": "Persian Carpet Weaving Tradition Peak",
+    "year": 1540,
+    "category": "cultural",
+    "description": "Safavid-era Persian carpet weaving reached its artistic peak under Shah Tahmasp I, producing legendary designs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "venetian-lace-tradition",
+    "friendly_name": "Venetian Lace Making Becomes European Fashion",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Venice became the center of needle lace production, with intricate punto in aria designs prized across Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kongo-christianization-depth",
+    "friendly_name": "Kongo Kingdom Mass Christianization",
+    "year": 1550,
+    "category": "cultural",
+    "description": "Christianity became deeply embedded in Kongo society, blending with local spiritual traditions under King Afonso I's legacy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "coffee-house-emergence",
+    "friendly_name": "Coffeehouse Culture Emerges in Ottoman Empire",
+    "year": 1555,
+    "category": "cultural",
+    "description": "The first coffeehouses opened in Constantinople, becoming centers for socializing, news, and intellectual exchange.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "scots-reformation-movement",
+    "friendly_name": "Scottish Reformation Movement",
+    "year": 1560,
+    "category": "cultural",
+    "description": "John Knox led Scotland's Protestant Reformation, establishing Presbyterianism as the national church.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goa-inquisition",
+    "friendly_name": "Portuguese Inquisition in Goa",
+    "year": 1560,
+    "category": "cultural",
+    "description": "Portugal established the Goa Inquisition in India, persecuting Hindus, Muslims, and crypto-Jews for over two centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-golden-age",
+    "friendly_name": "Safavid Golden Age - Arts and Architecture",
+    "year": 1598,
+    "category": "cultural",
+    "description": "Under Shah Abbas I, Isfahan became a showcase of Persian architecture, art, and culture during the Safavid golden age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jesuit-missions-asia",
+    "friendly_name": "Jesuit Missions to Asia Expand",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Jesuit missionaries like Matteo Ricci expanded into China, Japan, and India, blending evangelism with cultural exchange.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heresy-trials-witch-hunts",
+    "friendly_name": "European Witch Hunts and Heresy Trials",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Witch hunts intensified across Europe, with tens of thousands tried and executed during the peak persecution era.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "montaigne-essays",
+    "friendly_name": "Montaigne Publishes Essays",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Michel de Montaigne published his Essais in France, pioneering the personal essay as a literary form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tea-ceremony-codification",
+    "friendly_name": "Tea Ceremony Tradition Codified in Japan",
+    "year": 1580,
+    "category": "cultural",
+    "description": "Sen no Rikyu codified the Japanese tea ceremony, emphasizing wabi-sabi aesthetics of simplicity and mindfulness.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ballet-de-cour-france",
+    "friendly_name": "Ballet de Cour Theater Tradition in France",
+    "year": 1581,
+    "category": "cultural",
+    "description": "The Ballet comique de la Reine was performed at the French court, considered the first true ballet production.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "akbar-din-ilahi",
+    "friendly_name": "Akbar's Din-i Ilahi (Syncretic Religion) Declared",
+    "year": 1582,
+    "category": "cultural",
+    "description": "Mughal Emperor Akbar declared Din-i Ilahi, a syncretic faith blending elements of Islam, Hinduism, and other religions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chocolate-introduced-europe",
+    "friendly_name": "Chocolate Introduced to European Nobility",
+    "year": 1528,
+    "category": "cultural",
+    "description": "Spanish explorers brought cacao from the Americas, and chocolate drinks became fashionable among European elites.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "christopher-marlowe",
+    "friendly_name": "Christopher Marlowe Writes Major Dramas",
+    "year": 1588,
+    "category": "cultural",
+    "description": "Marlowe wrote Tamburlaine and Doctor Faustus, pioneering English blank verse tragedy before Shakespeare.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spenser-faerie-queene",
+    "friendly_name": "Spenser Writes The Faerie Queene",
+    "year": 1590,
+    "category": "cultural",
+    "description": "Edmund Spenser published The Faerie Queene, an allegorical epic celebrating Queen Elizabeth and English virtues.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shakespeare-early-plays",
+    "friendly_name": "Shakespeare Writes Early Plays",
+    "year": 1592,
+    "category": "cultural",
+    "description": "Shakespeare began his London theater career with early works like Henry VI and The Comedy of Errors.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "opera-emerges-florence",
+    "friendly_name": "Opera Emerges as Art Form in Florence",
+    "year": 1597,
+    "category": "cultural",
+    "description": "Jacopo Peri composed Dafne in Florence, considered the first opera, fusing drama and music in a new art form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-textile-arts",
+    "friendly_name": "Safavid Carpet and Textile Arts Peak",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Safavid workshops produced world-renowned silk textiles and carpets under royal patronage in Isfahan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "safavid-carpet-arts",
+    "friendly_name": "Safavid Carpet Arts Peak Production",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Safavid-era carpet workshops reached peak production, creating masterworks prized in courts across Europe and Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "minoan-frescoes",
+    "friendly_name": "Minoan Frescoes and Palace Art",
+    "year": -1600,
+    "category": "cultural",
+    "description": "Minoan artists on Crete created vibrant palace frescoes depicting dolphins, bull-leaping, and court life at Knossos.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kabuki-theater-begins",
+    "friendly_name": "Kabuki Theater Tradition Established",
+    "year": 1603,
+    "category": "cultural",
+    "description": "Izumo no Okuni began performing kabuki dances in Kyoto, founding Japan's iconic theatrical tradition.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shakespeare-hamlet-othello",
+    "friendly_name": "Shakespeare Writes Hamlet and Major Tragedies",
+    "year": 1601,
+    "category": "cultural",
+    "description": "Shakespeare wrote Hamlet, Othello, King Lear, and Macbeth during his greatest creative period.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kathak-classical-dance",
+    "friendly_name": "Kathak Classical Dance Tradition Formalized",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Kathak dance evolved in Mughal courts, blending Hindu temple storytelling with Persian-influenced footwork and spins.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "coffee-houses-cairo",
+    "friendly_name": "Cairo Coffeehouses Peak as Cultural Centers",
+    "year": 1600,
+    "category": "cultural",
+    "description": "Cairo's coffeehouses became vibrant hubs for storytelling, music, chess, and political discussion in Ottoman Egypt.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kuba-royal-masks",
+    "friendly_name": "Kuba Kingdom Develops Royal Mask Traditions",
+    "year": 1600,
+    "category": "cultural",
+    "description": "The Kuba Kingdom in Central Africa developed elaborate royal mask traditions representing founding kings and spirits.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cervantes-don-quixote",
+    "friendly_name": "Cervantes Publishes Don Quixote",
+    "year": 1605,
+    "category": "cultural",
+    "description": "Miguel de Cervantes published Don Quixote in Spain, widely considered the first modern European novel.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "monteverdi-orfeo",
+    "friendly_name": "Monteverdi Composes L'Orfeo Opera",
+    "year": 1607,
+    "category": "cultural",
+    "description": "Claudio Monteverdi composed L'Orfeo in Mantua, the earliest opera still regularly performed today.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shakespeare-sonnets",
+    "friendly_name": "Shakespeare Publishes Sonnets",
+    "year": 1609,
+    "category": "cultural",
+    "description": "Shakespeare's 154 sonnets were published in London, exploring love, beauty, mortality, and time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "safavid-miniature-painting",
+    "friendly_name": "Safavid Miniature Painting Schools Flourish",
+    "year": 1610,
+    "category": "cultural",
+    "description": "Safavid court painting schools in Isfahan and Tabriz produced exquisite miniatures blending Persian and European styles.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "port-royal-convent",
+    "friendly_name": "Port-Royal-des-Champs Monastery Flourishes",
+    "year": 1636,
+    "category": "cultural",
+    "description": "Port-Royal became a center of Jansenist theology and intellectual life, associated with Pascal and Arnauld.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "spanish-baroque-drama",
+    "friendly_name": "Spanish Baroque Drama with Calderón",
+    "year": 1635,
+    "category": "cultural",
+    "description": "Pedro Calderón de la Barca wrote Life Is a Dream and other masterpieces of Spanish Golden Age theater.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "descartes-cogito-philosophy",
+    "friendly_name": "Descartes Cogito Ergo Sum",
+    "year": 1637,
+    "category": "cultural",
+    "description": "René Descartes published Discourse on the Method, declaring \"I think, therefore I am\" as the foundation of modern philosophy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "corneille-le-cid",
+    "friendly_name": "Corneille Writes Le Cid Drama",
+    "year": 1637,
+    "category": "cultural",
+    "description": "Pierre Corneille's Le Cid became a landmark of French classical theater, sparking a famous literary quarrel.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jansenism-controversy",
+    "friendly_name": "Jansenism Controversy Peaks",
+    "year": 1640,
+    "category": "cultural",
+    "description": "Cornelius Jansen's Augustinus ignited a major Catholic theological dispute over grace and free will in France.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "enlightenment-age-begins",
+    "friendly_name": "Age of Enlightenment Begins",
+    "year": 1687,
+    "category": "cultural",
+    "description": "European thinkers championed reason, science, and individual rights, reshaping philosophy, politics, and society.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tokugawa-kabuki-theatre",
+    "friendly_name": "Tokugawa Kabuki Theatre Development",
+    "year": 1650,
+    "category": "cultural",
+    "description": "Under Tokugawa rule, kabuki evolved from women's dance into an elaborate all-male theatrical art form.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kuba-raffia-textiles",
+    "friendly_name": "Kuba Raffia Textile Art",
+    "year": 1650,
+    "category": "cultural",
+    "description": "The Kuba people of Central Africa created intricate embroidered raffia cloth with bold geometric designs.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "quaker-founding",
+    "friendly_name": "Quaker Society Founding and Growth",
+    "year": 1652,
+    "category": "cultural",
+    "description": "George Fox founded the Religious Society of Friends (Quakers) in England, emphasizing inner light and pacifism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "baroque-period-peak",
+    "friendly_name": "Baroque Period Artistic Peak",
+    "year": 1650,
+    "category": "cultural",
+    "description": "Baroque art reached its peak across Europe with dramatic works by Bernini, Rubens, and Rembrandt.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kabuki-women-actors",
+    "friendly_name": "Kabuki Theater Becomes Popular Entertainment",
+    "year": 1652,
+    "category": "cultural",
+    "description": "After women were banned from kabuki in 1629, the art matured into a sophisticated all-male theatrical tradition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moronobu-woodblock-pioneer",
+    "friendly_name": "Moronobu Pioneers Woodblock Print Art",
+    "year": 1672,
+    "category": "cultural",
+    "description": "Hishikawa Moronobu pioneered the ukiyo-e woodblock print tradition, depicting Edo pleasure quarter scenes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hobbes-leviathan",
+    "friendly_name": "Hobbes Publishes Leviathan",
+    "year": 1651,
+    "category": "cultural",
+    "description": "Thomas Hobbes published Leviathan, arguing for a powerful sovereign to prevent the \"war of all against all.\"",
+    "difficulty": "medium"
+  },
+  {
+    "name": "louis-xiv-ballet",
+    "friendly_name": "Louis XIV Establishes Ballet as Art Form",
+    "year": 1661,
+    "category": "cultural",
+    "description": "Louis XIV founded the Académie Royale de Danse, professionalizing ballet and establishing formal technique.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moliere-comedies",
+    "friendly_name": "Molière Writes Tartuffe and Major Comedies",
+    "year": 1664,
+    "category": "cultural",
+    "description": "Molière premiered Tartuffe in Paris, satirizing religious hypocrisy and becoming France's greatest comic playwright.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "racine-theatre",
+    "friendly_name": "Jean Racine Writes Major Tragedies",
+    "year": 1667,
+    "category": "cultural",
+    "description": "Jean Racine wrote Andromaque and Phèdre, masterpieces of French neoclassical tragedy exploring human passion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "milton-paradise-lost",
+    "friendly_name": "Milton Writes Paradise Lost",
+    "year": 1667,
+    "category": "cultural",
+    "description": "John Milton published Paradise Lost, an epic poem retelling the fall of man and Satan's rebellion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aurangzeb-orthodox-policies",
+    "friendly_name": "Aurangzeb's Religious Orthodoxy Policies",
+    "year": 1679,
+    "category": "cultural",
+    "description": "Mughal Emperor Aurangzeb reimposed the jizya tax on non-Muslims and pursued strict Islamic orthodoxy across India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ukiyo-e-art-development",
+    "friendly_name": "Ukiyo-e Woodblock Art Development",
+    "year": 1670,
+    "category": "cultural",
+    "description": "Japanese ukiyo-e woodblock printing flourished in Edo, depicting actors, beauties, and landscapes of the floating world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pietism-germany",
+    "friendly_name": "Pietism Movement in German Protestantism",
+    "year": 1675,
+    "category": "cultural",
+    "description": "Philipp Spener published Pia Desideria, launching the Pietist movement emphasizing personal devotion in Lutheranism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "baroque-music-development",
+    "friendly_name": "Baroque Music Composition and Development",
+    "year": 1680,
+    "category": "cultural",
+    "description": "Composers like Corelli and Purcell advanced Baroque music with concertos, sonatas, and operas across Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "haiku-poetry-tradition",
+    "friendly_name": "Haiku Poetry Tradition Formalized",
+    "year": 1689,
+    "category": "cultural",
+    "description": "Matsuo Basho elevated haiku to high art with The Narrow Road to the Deep North, defining the form's aesthetic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "genroku-era-culture",
+    "friendly_name": "Genroku Era Cultural and Artistic Peak",
+    "year": 1688,
+    "category": "cultural",
+    "description": "Japan's Genroku era saw a cultural explosion in kabuki, haiku, and woodblock prints during Tokugawa peace.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "locke-second-treatise",
+    "friendly_name": "Locke Second Treatise on Government",
+    "year": 1689,
+    "category": "cultural",
+    "description": "John Locke published his Second Treatise, arguing for natural rights and government by consent of the governed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tokugawa-edo-period-culture",
+    "friendly_name": "Edo Period Cultural Flourishing",
+    "year": 1700,
+    "category": "cultural",
+    "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ethiopian-gondar-cultural-center",
+    "friendly_name": "Gondar Becomes Ethiopian Cultural Center",
+    "year": 1636,
+    "category": "cultural",
+    "description": "Emperor Fasilides established Gondar as Ethiopia's capital, building castles and churches that became cultural landmarks.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "asante-golden-stool",
+    "friendly_name": "Asante Golden Stool Ceremonial",
+    "year": 1701,
+    "category": "cultural",
+    "description": "The Golden Stool descended from the sky in Asante tradition, unifying the kingdom as a sacred symbol of nationhood.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "handel-baroque-music",
+    "friendly_name": "Handel Composes Major Baroque Works",
+    "year": 1717,
+    "category": "cultural",
+    "description": "George Frideric Handel composed Water Music and later Messiah, becoming a towering figure in Baroque music.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paris-salon-culture",
+    "friendly_name": "Parisian Salon Culture Establishment",
+    "year": 1715,
+    "category": "cultural",
+    "description": "Parisian salons hosted by elite women became vital centers of Enlightenment intellectual and literary exchange.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tulip-era-ottoman",
+    "friendly_name": "Tulip Era (Lale Devri) Cultural Peak",
+    "year": 1718,
+    "category": "cultural",
+    "description": "The Ottoman Tulip Era brought European-influenced art, gardens, and cultural openness under Sultan Ahmed III.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bach-welltempered-clavier",
+    "friendly_name": "Bach Composes Well-Tempered Clavier",
+    "year": 1722,
+    "category": "cultural",
+    "description": "J.S. Bach composed The Well-Tempered Clavier, demonstrating the musical possibilities of all 24 major and minor keys.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vivaldi-four-seasons",
+    "friendly_name": "Vivaldi Composes The Four Seasons",
+    "year": 1725,
+    "category": "cultural",
+    "description": "Antonio Vivaldi published The Four Seasons in Venice, a set of violin concertos that became iconic Baroque works.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "french-enlightenment-peak",
+    "friendly_name": "French Enlightenment Flourishes",
+    "year": 1730,
+    "category": "cultural",
+    "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "voltaire-major-works",
+    "friendly_name": "Voltaire's Major Philosophical Works",
+    "year": 1734,
+    "category": "cultural",
+    "description": "Voltaire published Philosophical Letters, comparing English liberty with French absolutism and sparking controversy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "muhendishane-school",
+    "friendly_name": "Mühendishane (Ottoman Engineering School) Founded",
+    "year": 1734,
+    "category": "cultural",
+    "description": "The Ottoman Empire established its first modern engineering school to train military and technical officers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "montesquieu-spirit-laws",
+    "friendly_name": "Montesquieu Spirit of the Laws",
+    "year": 1748,
+    "category": "cultural",
+    "description": "Montesquieu published The Spirit of the Laws, advocating separation of powers that influenced the U.S. Constitution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bach-mass-in-b-minor",
+    "friendly_name": "Bach Composes Mass in B Minor",
+    "year": 1749,
+    "category": "cultural",
+    "description": "J.S. Bach completed the Mass in B Minor near the end of his life, a monumental work of sacred choral music.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rousseau-publications",
+    "friendly_name": "Rousseau's Major Publications (Discourse and Emile)",
+    "year": 1762,
+    "category": "cultural",
+    "description": "Jean-Jacques Rousseau published Emile and The Social Contract, reshaping ideas on education and political legitimacy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ukiyo-woodblock-prints",
+    "friendly_name": "Ukiyo-e Woodblock Print Tradition Peak",
+    "year": 1765,
+    "category": "cultural",
+    "description": "Suzuki Harunobu pioneered full-color nishiki-e woodblock prints, elevating ukiyo-e to its artistic peak.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "encyclopedie-diderot",
+    "friendly_name": "Encyclopédie Project by Diderot and d'Alembert Begins",
+    "year": 1751,
+    "category": "cultural",
+    "description": "Diderot and d'Alembert began the Encyclopédie, a landmark Enlightenment project to systematize all human knowledge.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "haydn-symphonies",
+    "friendly_name": "Haydn Composes Symphony Series",
+    "year": 1761,
+    "category": "cultural",
+    "description": "Joseph Haydn became Kapellmeister to the Esterházy court, composing symphonies that defined the Classical style.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maori-european-encounters",
+    "friendly_name": "Maori-European Contact and Trade",
+    "year": 1769,
+    "category": "cultural",
+    "description": "Captain Cook's arrival in New Zealand began sustained Maori-European contact, transforming trade and culture.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kant-critique-pure-reason",
+    "friendly_name": "Kant Critique of Pure Reason",
+    "year": 1781,
+    "category": "cultural",
+    "description": "Immanuel Kant published Critique of Pure Reason, revolutionizing epistemology and the foundations of modern philosophy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "schiller-major-plays",
+    "friendly_name": "Schiller Writes Major German Dramas",
+    "year": 1781,
+    "category": "cultural",
+    "description": "Friedrich Schiller wrote The Robbers, launching Sturm und Drang drama and becoming Germany's great dramatist.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mozart-operas",
+    "friendly_name": "Mozart Composes Don Giovanni and Operas",
+    "year": 1787,
+    "category": "cultural",
+    "description": "Mozart premiered Don Giovanni in Prague, one of his greatest operas blending comedy, drama, and musical genius.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "civil-constitution-clergy",
+    "friendly_name": "Civil Constitution of the Clergy",
+    "year": 1790,
+    "category": "cultural",
+    "description": "The French Revolution subordinated the Catholic Church to the state, requiring clergy to swear loyalty oaths.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "haida-totem-poles",
+    "friendly_name": "Haida Totem Pole Carving Peak",
+    "year": 1800,
+    "category": "cultural",
+    "description": "Haida and other Northwest Coast peoples created monumental cedar totem poles depicting clan histories and spirits.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jacquard-loom-invented",
+    "friendly_name": "Jacquard Loom Textile Innovation",
+    "year": 1804,
+    "category": "cultural",
+    "description": "Joseph Marie Jacquard invented a programmable loom using punch cards, revolutionizing textile weaving in France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goethe-faust-publication",
+    "friendly_name": "Goethe Publishes Faust",
+    "year": 1808,
+    "category": "cultural",
+    "description": "Johann Wolfgang von Goethe published Faust Part One, a masterwork of German literature exploring ambition and knowledge.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beethoven-symphony-nine",
+    "friendly_name": "Beethoven Composes Symphony No. 9",
+    "year": 1824,
+    "category": "cultural",
+    "description": "Beethoven premiered his Ninth Symphony in Vienna, featuring the choral finale \"Ode to Joy.\"",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hokusai-great-wave",
+    "friendly_name": "Hokusai Creates Mount Fuji Series",
+    "year": 1831,
+    "category": "cultural",
+    "description": "Katsushika Hokusai published Thirty-six Views of Mount Fuji, including the iconic Great Wave off Kanagawa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hiroshige-landscape-prints",
+    "friendly_name": "Hiroshige Creates Landscape Print Series",
+    "year": 1833,
+    "category": "cultural",
+    "description": "Utagawa Hiroshige published The Fifty-three Stations of the Tokaido, defining Japanese landscape printmaking.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bharatanatyam-tradition",
+    "friendly_name": "Bharatanatyam Dance Tradition Codified",
+    "year": 1830,
+    "category": "cultural",
+    "description": "The Tanjore Quartet codified Bharatanatyam repertoire, systematizing South India's ancient temple dance tradition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roaring-twenties-era",
+    "friendly_name": "Roaring Twenties Begin",
+    "year": 1920,
+    "category": "cultural",
+    "description": "Post-WWI prosperity fueled jazz, flappers, and cultural liberation across America and Europe.",
+    "difficulty": "easy"
+  }
+]

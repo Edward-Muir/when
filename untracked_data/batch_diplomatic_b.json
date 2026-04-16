@@ -1,0 +1,1298 @@
+[
+  {
+    "event_name": "karakhanid-dynasty",
+    "event_title": "Karakhanid Dynasty Rules Central Asia",
+    "approximate_year": 999,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kingdom-israel-established",
+    "event_title": "Kingdom of Israel Established",
+    "approximate_year": 1000,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "champa-kingdom",
+    "event_title": "Champa Kingdom Power Peak",
+    "approximate_year": 1000,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "chola-maritime",
+    "event_title": "Chola Maritime Expansion",
+    "approximate_year": 1000,
+    "region": "South Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "khorezm-state",
+    "event_title": "Khorezm Sultanate Flourishes",
+    "approximate_year": 1000,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "goryeo-dynasty",
+    "event_title": "Goryeo Dynasty Peak",
+    "approximate_year": 1000,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "samoa-kingdoms",
+    "event_title": "Samoan Kingdoms Established",
+    "approximate_year": 1000,
+    "region": "Oceania/Pacific",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "silk-trade-expansion",
+    "event_title": "Silk Trade Expansion Peaks",
+    "approximate_year": 1000,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "fujiwara-regency",
+    "event_title": "Fujiwara Regency at Height of Power",
+    "approximate_year": 1000,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ghana-decline",
+    "event_title": "Ghana Empire Declines",
+    "approximate_year": 1000,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "bantu-expansion",
+    "event_title": "Bantu Expansion Across Sub-Saharan Africa",
+    "approximate_year": 1000,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "athabaskan-migration",
+    "event_title": "Athabaskan People Migration Southward",
+    "approximate_year": 1000,
+    "region": "North America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "inuit-thule-culture",
+    "event_title": "Thule Culture Inuit Expansion",
+    "approximate_year": 1000,
+    "region": "Arctic",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "hoysala-dynasty",
+    "event_title": "Hoysala Dynasty Architectural Innovation",
+    "approximate_year": 1000,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "boni-kingdom",
+    "event_title": "Boni Kingdom Southern Philippines",
+    "approximate_year": 1000,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "karakhanid-administration",
+    "event_title": "Karakhanid Khanate Administration",
+    "approximate_year": 1000,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "kanem-bornu-empire-rise",
+    "event_title": "Kanem-Bornu Empire Rises as Regional Power",
+    "approximate_year": 1000,
+    "region": "West Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "chimu-kingdom-founded",
+    "event_title": "Chimú Kingdom Established",
+    "approximate_year": 1000,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "xicalanco-trade-port",
+    "event_title": "Xicalanco Trade Port Flourishes",
+    "approximate_year": 1000,
+    "region": "Mesoamerica",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "population-doubling-medieval",
+    "event_title": "Medieval European Population Doubling",
+    "approximate_year": 1000,
+    "region": "Western Europe",
+    "original_category": "demographic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "barter-money-transition",
+    "event_title": "Barter to Monetary Economy Transition",
+    "approximate_year": 1000,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "chola-administrative-system",
+    "event_title": "Chola Administrative System Villages",
+    "approximate_year": 1030,
+    "region": "India",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval, r2_medieval, r2_africa_pacific, r2_africa_pacific"
+  },
+  {
+    "event_name": "almoravid-dynasty-rise",
+    "event_title": "Almoravid Dynasty Rises in North Africa",
+    "approximate_year": 1040,
+    "region": "North Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "establishment-zhou-dynasty",
+    "event_title": "Establishment of Zhou Dynasty",
+    "approximate_year": 1046,
+    "region": "China",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "pagan-kingdom-flourishes",
+    "event_title": "Pagan Kingdom Flourishes in Burma",
+    "approximate_year": 1050,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "song-scholar-official-system",
+    "event_title": "Song Dynasty Scholar Official Examination",
+    "approximate_year": 1070,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "domesday-book",
+    "event_title": "Domesday Book Compiled",
+    "approximate_year": 1086,
+    "region": "England",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "oxford-university-founded",
+    "event_title": "University of Oxford",
+    "approximate_year": 1096,
+    "region": "England",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "silk-road-trade",
+    "event_title": "Silk Road Trade Network Flourishes",
+    "approximate_year": 1100,
+    "region": "Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "timbuktu-founded",
+    "event_title": "Timbuktu Founded as Trade Hub",
+    "approximate_year": 1100,
+    "region": "Sub-Saharan Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "pagan-kingdom",
+    "event_title": "Pagan Kingdom Peak",
+    "approximate_year": 1100,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "shona-settlement",
+    "event_title": "Shona Settlement in Zimbabwe Region",
+    "approximate_year": 1100,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "law-school",
+    "event_title": "University of Bologna Law",
+    "approximate_year": 1100,
+    "region": "Italy",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "song-banking-development",
+    "event_title": "Song Dynasty Banking Development",
+    "approximate_year": 1100,
+    "region": "East Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "hausa-city-states-formation",
+    "event_title": "Hausa City-States Emerge in West Africa",
+    "approximate_year": 1100,
+    "region": "West Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "camel-trade-adaptation",
+    "event_title": "Camel Trade Networks Transform African Commerce",
+    "approximate_year": 1100,
+    "region": "North Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "anasazi-pueblo-bonito-peak",
+    "event_title": "Pueblo Bonito Population Peak",
+    "approximate_year": 1100,
+    "region": "North America",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "khwarezm-caravanserai-network",
+    "event_title": "Khwarezmian Trade Route Caravanserais",
+    "approximate_year": 1100,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "urbanization-medieval-growth",
+    "event_title": "Medieval European Urbanization Wave",
+    "approximate_year": 1100,
+    "region": "Western Europe",
+    "original_category": "demographic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "jurchens-jin-dynasty",
+    "event_title": "Jurchen Jin Dynasty Rules Northern China",
+    "approximate_year": 1115,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "almohad-dynasty-formation",
+    "event_title": "Almohad Dynasty Forms in Maghreb",
+    "approximate_year": 1121,
+    "region": "North Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "zagwe-dynasty-ethiopian-rule",
+    "event_title": "Zagwe Dynasty Rules Ethiopia",
+    "approximate_year": 1137,
+    "region": "East Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "matilda-england",
+    "event_title": "Empress Matilda Civil War in England",
+    "approximate_year": 1141,
+    "region": "Western Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "champagne-fairs",
+    "event_title": "Champagne Trade Fairs Flourish",
+    "approximate_year": 1150,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "banking-origins",
+    "event_title": "Banking Develops in Medieval Italy",
+    "approximate_year": 1150,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "pharmacy-school",
+    "event_title": "Salerno Pharmacy School",
+    "approximate_year": 1150,
+    "region": "Italy",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "pala-dynasty-decline",
+    "event_title": "Pala Dynasty Decline Bengal",
+    "approximate_year": 1161,
+    "region": "India",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "benin-kingdom-founded",
+    "event_title": "Benin Kingdom Established",
+    "approximate_year": 1180,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kamakura-shogunate-establishment",
+    "event_title": "Kamakura Shogunate Established",
+    "approximate_year": 1185,
+    "region": "Japan",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "minamoto-yoritomo-power",
+    "event_title": "Minamoto Yoritomo Consolidated Power",
+    "approximate_year": 1195,
+    "region": "Japan",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "inca-empire-expansion",
+    "event_title": "Inca Empire Rise",
+    "approximate_year": 1200,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "kanem-bornu",
+    "event_title": "Kanem-Bornu Empire Development",
+    "approximate_year": 1200,
+    "region": "Sub-Saharan Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "swahili-city-states",
+    "event_title": "Swahili City-States Rise",
+    "approximate_year": 1200,
+    "region": "Sub-Saharan Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "chimú-kingdom",
+    "event_title": "Chimú Kingdom Flourishes",
+    "approximate_year": 1200,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "fiji-kingdoms",
+    "event_title": "Fijian Kingdoms Established",
+    "approximate_year": 1200,
+    "region": "Oceania/Pacific",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "flanders-cloth-trade",
+    "event_title": "Flanders Cloth Trade Network",
+    "approximate_year": 1200,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "beguine-movement",
+    "event_title": "Beguine Religious Movement",
+    "approximate_year": 1200,
+    "region": "Western Europe",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "novgorod-republic",
+    "event_title": "Novgorod Republic Golden Age",
+    "approximate_year": 1200,
+    "region": "Eastern Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "muisca-confederation",
+    "event_title": "Muisca Confederation in Colombia",
+    "approximate_year": 1200,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "hawaiian-settlement-societies",
+    "event_title": "Hawaiian Settlement Societies Formation",
+    "approximate_year": 1200,
+    "region": "Pacific",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "lampang-kingdom",
+    "event_title": "Lampang Kingdom Northern Thailand",
+    "approximate_year": 1200,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "song-paper-money-system",
+    "event_title": "Song Dynasty Paper Money Economic Policy",
+    "approximate_year": 1200,
+    "region": "East Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "zimbabwe-trading-network",
+    "event_title": "Great Zimbabwe Trade Network Development",
+    "approximate_year": 1200,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "hojo-regency-system",
+    "event_title": "Hojo Regency System Development",
+    "approximate_year": 1200,
+    "region": "Japan",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "somali-zeila-trading-port",
+    "event_title": "Zeila Becomes Major Somali Trading Port",
+    "approximate_year": 1200,
+    "region": "East Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "mapungubwe-gold-trade",
+    "event_title": "Mapungubwe Controls Southern African Gold Trade",
+    "approximate_year": 1200,
+    "region": "Southern Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "trans-saharan-trade-networks",
+    "event_title": "Trans-Saharan Trade Routes Fully Established",
+    "approximate_year": 1200,
+    "region": "West Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "indian-ocean-monsoon-trade",
+    "event_title": "Indian Ocean Monsoon Trade Networks Peak",
+    "approximate_year": 1200,
+    "region": "East Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "african-textile-production",
+    "event_title": "African Textile Production and Dyeing Techniques",
+    "approximate_year": 1200,
+    "region": "West Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "gold-mining-ghana-asante",
+    "event_title": "Ghana and Asante Gold Mining Operations",
+    "approximate_year": 1200,
+    "region": "West Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "hawaiian-chiefdom-formation",
+    "event_title": "Hawaiian Islands Develop Complex Chiefdoms",
+    "approximate_year": 1200,
+    "region": "Polynesia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "fiji-kalimata-chiefdoms",
+    "event_title": "Fiji Kalimata Chiefdoms Emerge",
+    "approximate_year": 1200,
+    "region": "Melanesia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "maori-land-use-customary",
+    "event_title": "Maori Customary Land Use Practices",
+    "approximate_year": 1200,
+    "region": "Polynesia",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "tejend-oasis-city",
+    "event_title": "Tejend Oasis City Flourishes",
+    "approximate_year": 1200,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "mississippian-trade-network",
+    "event_title": "Mississippian Trade Network Peak",
+    "approximate_year": 1200,
+    "region": "North America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "mixtec-monte-alban",
+    "event_title": "Mixtec Settlement at Monte Alban",
+    "approximate_year": 1200,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "mayapan-league-cities",
+    "event_title": "Mayapan League of Cities Formed",
+    "approximate_year": 1200,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "banking-italian-emergence",
+    "event_title": "Italian Banking Systems Emerge",
+    "approximate_year": 1200,
+    "region": "Mediterranean",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "hospital-of-st-lawrence",
+    "event_title": "Ospedale di Santo Spirito",
+    "approximate_year": 1204,
+    "region": "Italy",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "medieval-marriage-reform",
+    "event_title": "Medieval Marriage Law Reform",
+    "approximate_year": 1215,
+    "region": "Western Europe",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "magna-carta-issuance",
+    "event_title": "Magna Carta Issuance",
+    "approximate_year": 1215,
+    "region": "Europe",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "kamakura-internal-conflicts",
+    "event_title": "Kamakura Internal Power Struggles",
+    "approximate_year": 1219,
+    "region": "Japan",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "tran-dynasty-rule",
+    "event_title": "Tran Dynasty Rules Vietnam",
+    "approximate_year": 1225,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "chagatai-khanate",
+    "event_title": "Chagatai Khanate Administration",
+    "approximate_year": 1225,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "chagatai-khanate-founded",
+    "event_title": "Chagatai Khanate Established",
+    "approximate_year": 1227,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "hafsid-tunisia-established",
+    "event_title": "Hafsid Dynasty Establishes Tunis as Capital",
+    "approximate_year": 1229,
+    "region": "North Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "mali-empire-establishment",
+    "event_title": "Mali Empire Established",
+    "approximate_year": 1234,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "karakorum-mongol-capital",
+    "event_title": "Karakorum Established as Mongol Capital",
+    "approximate_year": 1235,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "sukhothai-kingdom",
+    "event_title": "Sukhothai Kingdom Established",
+    "approximate_year": 1238,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "hanse-league-formation",
+    "event_title": "Hanse League Guild Formation",
+    "approximate_year": 1241,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval, r2_economic, r2_paradigm_shifts"
+  },
+  {
+    "event_name": "golden-horde-establishment",
+    "event_title": "Golden Horde Established",
+    "approximate_year": 1242,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "chagatai-trade-routes",
+    "event_title": "Chagatai Khanate Trade Route Control",
+    "approximate_year": 1245,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mayan-post-classic",
+    "event_title": "Mayan Post-Classic Cities",
+    "approximate_year": 1250,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "pandya-kingdom-expansion",
+    "event_title": "Pandya Kingdom Expansion",
+    "approximate_year": 1250,
+    "region": "India",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "cloth-merchants-guild",
+    "event_title": "Cloth Merchants Guild Established",
+    "approximate_year": 1250,
+    "region": "Flanders",
+    "original_category": "labor",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "mississippian-cahokia-decline",
+    "event_title": "Cahokia Population Decline Begins",
+    "approximate_year": 1250,
+    "region": "North America",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "florin-gold-standard",
+    "event_title": "Florentine Florin Establishes Gold Standard",
+    "approximate_year": 1252,
+    "region": "Italy",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "ilkhanate-establishment",
+    "event_title": "Ilkhanate Persia Founded",
+    "approximate_year": 1256,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-postal-system",
+    "event_title": "Mongol Yam Postal System",
+    "approximate_year": 1260,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "republic-florence-banking",
+    "event_title": "Florence Banking Republic Development",
+    "approximate_year": 1260,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-administrative-reforms",
+    "event_title": "Mongol Administrative Reforms Yuan Dynasty",
+    "approximate_year": 1265,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "magna-carta-consequences",
+    "event_title": "Magna Carta Consequences England",
+    "approximate_year": 1265,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "ethiopian-solomonic-dynasty",
+    "event_title": "Ethiopian Solomonic Dynasty Establishes Legitimacy",
+    "approximate_year": 1270,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pax-mongolica-trade",
+    "event_title": "Pax Mongolica Trade Expansion",
+    "approximate_year": 1270,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "yuan-khanate-founded",
+    "event_title": "Mongol Yuan Dynasty Established in China",
+    "approximate_year": 1271,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pasai-sultanate",
+    "event_title": "Pasai Sultanate Sumatra",
+    "approximate_year": 1280,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kublai-khan-census",
+    "event_title": "Kublai Khan Census System",
+    "approximate_year": 1280,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "genoese-trade-network",
+    "event_title": "Genoese Trade Network Expansion",
+    "approximate_year": 1280,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "venice-gold-coin-standard",
+    "event_title": "Venetian Gold Coin Becomes Trade Standard",
+    "approximate_year": 1284,
+    "region": "Italy",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "salt-gabelle-france",
+    "event_title": "French Gabelle Salt Tax Established",
+    "approximate_year": 1286,
+    "region": "France",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "majapahit-empire-founded",
+    "event_title": "Majapahit Empire Established",
+    "approximate_year": 1293,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "lanna-kingdom",
+    "event_title": "Lanna Kingdom Northern Thailand",
+    "approximate_year": 1296,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kerala-spice-trade",
+    "event_title": "Kerala Spice Trade Dominates",
+    "approximate_year": 1300,
+    "region": "South Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "bruges-economic-hub",
+    "event_title": "Bruges Becomes Economic Hub",
+    "approximate_year": 1300,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "womens-guilds",
+    "event_title": "Women's Craft Guilds Emerge",
+    "approximate_year": 1300,
+    "region": "Western Europe",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "batak-settlement",
+    "event_title": "Batak Settlement Sumatran Highlands",
+    "approximate_year": 1300,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "first-trade-union",
+    "event_title": "Journeymens Guild",
+    "approximate_year": 1300,
+    "region": "Germany",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "swahili-mombasa-rise",
+    "event_title": "Mombasa Rise Swahili Coast",
+    "approximate_year": 1300,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "hausa-city-states-rise",
+    "event_title": "Hausa City States Development",
+    "approximate_year": 1300,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "burmese-kingdom-restoration",
+    "event_title": "Burmese Kingdom Restoration Toungoo",
+    "approximate_year": 1300,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mississippian-decline",
+    "event_title": "Mississippian Culture Decline",
+    "approximate_year": 1300,
+    "region": "Americas",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "venetian-trade-monopoly",
+    "event_title": "Venetian Trade Monopoly Eastern",
+    "approximate_year": 1300,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval, r2_paradigm_shifts"
+  },
+  {
+    "event_name": "venetian-arsenal",
+    "event_title": "Venetian Arsenal Development",
+    "approximate_year": 1300,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "bimetallic-standard-attempts",
+    "event_title": "Bimetallic Standard Coin Systems",
+    "approximate_year": 1300,
+    "region": "Europe",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "somali-adal-sultanate",
+    "event_title": "Adal Sultanate Emerges in Somalia",
+    "approximate_year": 1300,
+    "region": "East Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "mapungubwe-empire-decline",
+    "event_title": "Mapungubwe Empire Declines in Southern Africa",
+    "approximate_year": 1300,
+    "region": "Southern Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "swahili-ivory-trade",
+    "event_title": "Swahili Coastal Cities Control Ivory Trade",
+    "approximate_year": 1300,
+    "region": "East Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "salt-mining-taoudenni",
+    "event_title": "Taoudenni Salt Mining Becomes Major Trade Good",
+    "approximate_year": 1300,
+    "region": "West Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "fiji-matamatamatamatamata-structure",
+    "event_title": "Fiji Hierarchical Political Structure Forms",
+    "approximate_year": 1300,
+    "region": "Melanesia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "guanahani-settlement",
+    "event_title": "Guanahani Indigenous Population Peak",
+    "approximate_year": 1300,
+    "region": "Caribbean",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "wool-trade-england",
+    "event_title": "Wool Trade Dominates English Economy",
+    "approximate_year": 1300,
+    "region": "England",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "debasement-currency-crisis",
+    "event_title": "Currency Debasement Causes Inflation Cycles",
+    "approximate_year": 1300,
+    "region": "Medieval Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "banco-sangemini",
+    "event_title": "Sangemini Bank",
+    "approximate_year": 1318,
+    "region": "Italy",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "scottish-independence-declaration",
+    "event_title": "Declaration of Arbroath",
+    "approximate_year": 1320,
+    "region": "Scotland",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "majapahit-administrative-system",
+    "event_title": "Majapahit Administrative Innovations",
+    "approximate_year": 1320,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "delhi-sultanate-succession",
+    "event_title": "Delhi Sultanate Succession Disputes",
+    "approximate_year": 1320,
+    "region": "India",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "aztec-tenochtitlan-founding",
+    "event_title": "Aztec Tenochtitlan Founding",
+    "approximate_year": 1325,
+    "region": "Americas",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "muhammad-bin-tughlaq-reforms",
+    "event_title": "Muhammad bin Tughlaq's Administrative Reforms",
+    "approximate_year": 1330,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "majapahit-expansion",
+    "event_title": "Majapahit Maritime Expansion",
+    "approximate_year": 1330,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kilwa-khilafa-sultanate",
+    "event_title": "Kilwa Sultanate Becomes Dominant Swahili Power",
+    "approximate_year": 1330,
+    "region": "East Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "vijayanagara-empire",
+    "event_title": "Vijayanagara Empire Established",
+    "approximate_year": 1336,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "muromachi-period",
+    "event_title": "Muromachi Period Begins",
+    "approximate_year": 1336,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "ashikaga-shogunate",
+    "event_title": "Ashikaga Shogunate Established",
+    "approximate_year": 1338,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "delhi-provincial-administration",
+    "event_title": "Delhi Sultanate Provincial Administration",
+    "approximate_year": 1340,
+    "region": "India",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_medieval"
+  }
+]

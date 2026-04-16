@@ -1,0 +1,1298 @@
+[
+  {
+    "event_name": "female-ruler-sargon",
+    "event_title": "Enmersi of Kish",
+    "approximate_year": -2295,
+    "region": "Mesopotamia",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "lapita-pottery-trade",
+    "event_title": "Lapita Pottery Indicates Long-Distance Trade",
+    "approximate_year": -1000,
+    "region": "Melanesia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "pontius-pilate-judea",
+    "event_title": "Pontius Pilate Governs Judea",
+    "approximate_year": 26,
+    "region": "Judea",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "roman-census",
+    "event_title": "Roman Census System",
+    "approximate_year": 27,
+    "region": "Roman Empire",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "cleopatra-caesar-alliance",
+    "event_title": "Cleopatra Allies with Julius Caesar",
+    "approximate_year": 48,
+    "region": "Egypt",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "cleopatra-vii-reign",
+    "event_title": "Cleopatra VII Rules Egypt",
+    "approximate_year": 51,
+    "region": "Egypt",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "pompey-great-rome",
+    "event_title": "Pompey the Great Commands Rome",
+    "approximate_year": 61,
+    "region": "Roman Empire",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "first-treaty",
+    "event_title": "Treaty of Apamea",
+    "approximate_year": 64,
+    "region": "Roman Empire",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "silk-trade-begins",
+    "event_title": "Silk Trade Begins",
+    "approximate_year": 100,
+    "region": "Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "parthian-empire",
+    "event_title": "Parthian Empire Peak",
+    "approximate_year": 100,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "aksumite-empire-rise",
+    "event_title": "Aksumite Empire Becomes Regional Power",
+    "approximate_year": 100,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kushana-empire",
+    "event_title": "Kushana Empire Unites Indus to Central Asia",
+    "approximate_year": 100,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "court-system",
+    "event_title": "Roman Judicial System",
+    "approximate_year": 100,
+    "region": "Roman Empire",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "contract-law",
+    "event_title": "Roman Contract Law",
+    "approximate_year": 100,
+    "region": "Roman Empire",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "bantu-expansion-africa",
+    "event_title": "Bantu Migration Across Africa",
+    "approximate_year": 100,
+    "region": "Africa",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "hopewell-trade-networks",
+    "event_title": "Hopewell Culture Trade Networks Expand",
+    "approximate_year": 100,
+    "region": "North America",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "red-sea-trade-network",
+    "event_title": "Red Sea Trade Network Flourishes",
+    "approximate_year": 100,
+    "region": "Middle East",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "baltic-amber-routes",
+    "event_title": "Baltic Amber Trade Routes Develop",
+    "approximate_year": 100,
+    "region": "Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "petra-nabataean-trade",
+    "event_title": "Petra Controls Arabian Trade Routes",
+    "approximate_year": 100,
+    "region": "Middle East",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "ephesus-roman-commerce",
+    "event_title": "Ephesus Becomes Major Roman Trade Center",
+    "approximate_year": 100,
+    "region": "Mediterranean",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "han-tributary-system",
+    "event_title": "Han Dynasty Tributary System Established",
+    "approximate_year": 120,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "han-civil-service",
+    "event_title": "Han Dynasty Civil Service Examinations Begin",
+    "approximate_year": 120,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "silk-road-established",
+    "event_title": "Silk Road Trade Established",
+    "approximate_year": 130,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "jewish-diaspora-expansion",
+    "event_title": "Jewish Diaspora Expands Throughout Mediterranean",
+    "approximate_year": 135,
+    "region": "Mediterranean",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "kushan-empire",
+    "event_title": "Kushan Empire Peak",
+    "approximate_year": 150,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "bactrian-kingdom-prosperity",
+    "event_title": "Bactrian Kingdom Flourishes",
+    "approximate_year": 150,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "bactria-kingdom",
+    "event_title": "Bactrian Kingdom Flourishes",
+    "approximate_year": 200,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "aksumite-coinage",
+    "event_title": "Aksumite Empire Issues Own Coinage",
+    "approximate_year": 200,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "tocharian-kingdoms",
+    "event_title": "Tocharian Kingdoms in Tarim Basin",
+    "approximate_year": 200,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "meroitic-kingdom-nubia",
+    "event_title": "Meroitic Kingdom Rules Nubia",
+    "approximate_year": 200,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "grain-price-controls",
+    "event_title": "Roman Grain Price Controls Established",
+    "approximate_year": 200,
+    "region": "Roman Empire",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "salt-monopoly-china",
+    "event_title": "Chinese Salt Monopoly Revenue System",
+    "approximate_year": 200,
+    "region": "China",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "three-kingdoms-period",
+    "event_title": "Three Kingdoms Period Begins",
+    "approximate_year": 220,
+    "region": "China",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "qin-standardization",
+    "event_title": "Qin Dynasty Standardization of Measurements",
+    "approximate_year": 221,
+    "region": "China",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "sasanian-empire-persia",
+    "event_title": "Sassanid Empire of Persia",
+    "approximate_year": 224,
+    "region": "Persia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "maurya-ashoka",
+    "event_title": "Ashoka Edict Pillar Erected",
+    "approximate_year": 250,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "gallienus-crisis-empire",
+    "event_title": "Gallienus Crisis of Third Century",
+    "approximate_year": 260,
+    "region": "Roman Empire",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "split-roman-empire",
+    "event_title": "Division of Roman Empire",
+    "approximate_year": 285,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "funan-kingdom",
+    "event_title": "Funan Kingdom Flourishes",
+    "approximate_year": 300,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "lakhmid-kingdom",
+    "event_title": "Lakhmid Kingdom of Pre-Islamic Arabia",
+    "approximate_year": 300,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "first-public-library",
+    "event_title": "Alexandria-Library",
+    "approximate_year": 300,
+    "region": "Egypt",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "aksumite-red-sea-trade",
+    "event_title": "Aksumite Control of Red Sea Trade",
+    "approximate_year": 300,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "spice-trade-indian-ocean",
+    "event_title": "Spice Trade via Indian Ocean Expands",
+    "approximate_year": 300,
+    "region": "South Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "eastern-jin-period",
+    "event_title": "Eastern Jin Dynasty Established",
+    "approximate_year": 317,
+    "region": "China",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "maurya-chandragupta",
+    "event_title": "Chandragupta Maurya Unifies India",
+    "approximate_year": 322,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "rise-byzantine-empire",
+    "event_title": "Rise of Byzantine Empire",
+    "approximate_year": 330,
+    "region": "Mediterranean",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "first-orphanage",
+    "event_title": "Orphanage of Constantinople",
+    "approximate_year": 350,
+    "region": "Byzantine Empire",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "qin-legalism-shang-yang",
+    "event_title": "Shang Yang's Legalist Reforms in Qin",
+    "approximate_year": 360,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "chandragupta-ii-vikramaditya",
+    "event_title": "Chandragupta II Reigns as Vikramaditya",
+    "approximate_year": 380,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "socrates-execution",
+    "event_title": "Execution of Socrates",
+    "approximate_year": 399,
+    "region": "Greece",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "kingdom-axum",
+    "event_title": "Aksumite Empire Peak",
+    "approximate_year": 400,
+    "region": "Sub-Saharan Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "baekje-kingdom",
+    "event_title": "Baekje Kingdom Flourishes in Korea",
+    "approximate_year": 400,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "east-african-swahili-ports",
+    "event_title": "Early Swahili Trading Ports Established",
+    "approximate_year": 400,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "olmec-civilization-decline",
+    "event_title": "Olmec Civilization Declines",
+    "approximate_year": 400,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "moche-coastal-empire",
+    "event_title": "Moche Civilization Builds Coastal Empire",
+    "approximate_year": 400,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "kumaragupta-i-reign",
+    "event_title": "Kumaragupta I Rules Gupta Empire",
+    "approximate_year": 415,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "alaric-visigoth-kingdom",
+    "event_title": "Alaric Establishes Visigoth Kingdom",
+    "approximate_year": 418,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "visigothic-spain-establishment",
+    "event_title": "Visigothic Kingdom Established in Spain",
+    "approximate_year": 418,
+    "region": "Spain",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "northern-southern-dynasties",
+    "event_title": "Northern and Southern Dynasties Period",
+    "approximate_year": 420,
+    "region": "China",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "anglo-saxon-kingdoms-establish",
+    "event_title": "Anglo-Saxon Kingdoms Establish",
+    "approximate_year": 450,
+    "region": "Britain",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "devagupta-gupta-succession",
+    "event_title": "Devagupta Rules Gupta Empire",
+    "approximate_year": 467,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "warring-states-period-begins",
+    "event_title": "Beginning of China's Warring States Period",
+    "approximate_year": 475,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "theodoric-ostrogoth-kingdom",
+    "event_title": "Theodoric Founds Ostrogothic Kingdom",
+    "approximate_year": 493,
+    "region": "Italy",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "theodoric-ostrogothic-rule",
+    "event_title": "Theodoric Rules Ostrogothic Kingdom",
+    "approximate_year": 493,
+    "region": "Italy",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "ghassanid-kingdom",
+    "event_title": "Ghassanid Kingdom of Pre-Islamic Arabia",
+    "approximate_year": 500,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "sogdian-merchant-dominance",
+    "event_title": "Sogdian Merchants Dominate Central Asian Trade",
+    "approximate_year": 500,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "trans-saharan-trade-gold",
+    "event_title": "Trans-Saharan Gold Trade Develops",
+    "approximate_year": 500,
+    "region": "Africa",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity, r2_paradigm_shifts"
+  },
+  {
+    "event_name": "justinian-compilation",
+    "event_title": "Justinian Code Compiled",
+    "approximate_year": 529,
+    "region": "Mediterranean",
+    "original_category": "legal",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "chosroes-i-anushirvan",
+    "event_title": "Chosroes I Rules Sassanid Persia",
+    "approximate_year": 531,
+    "region": "Persia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "achaemenid-empire-persia",
+    "event_title": "Achaemenid Empire of Persia",
+    "approximate_year": 550,
+    "region": "Persia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "chalukya-dynasty",
+    "event_title": "Chalukya Dynasty Expansion",
+    "approximate_year": 550,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pallava-dynasty",
+    "event_title": "Pallava Dynasty Southern India",
+    "approximate_year": 550,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "sogdian-samarkand-colony",
+    "event_title": "Sogdian Colony at Samarkand",
+    "approximate_year": 550,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "turk-khaganate-establishment",
+    "event_title": "Turkic Khaganate Established",
+    "approximate_year": 552,
+    "region": "Central Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "chosroes-ii-persia",
+    "event_title": "Chosroes II Reigns Over Persia",
+    "approximate_year": 590,
+    "region": "Persia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "sogdian-merchants",
+    "event_title": "Sogdian Merchants Dominate Trade Routes",
+    "approximate_year": 600,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "tiwanaku-empire-rise",
+    "event_title": "Tiwanaku Empire Rises in Andes",
+    "approximate_year": 600,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "goguryeo-kingdom",
+    "event_title": "Goguryeo Kingdom Dominates Northeast Asia",
+    "approximate_year": 600,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pandya-dynasty",
+    "event_title": "Pandya Dynasty Maritime Power",
+    "approximate_year": 600,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "first-coins",
+    "event_title": "Lydian Coins",
+    "approximate_year": 600,
+    "region": "Turkey",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "monastery-school",
+    "event_title": "monastery School Systems",
+    "approximate_year": 600,
+    "region": "Europe",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "inheritance-law",
+    "event_title": "Inheritance Codes",
+    "approximate_year": 600,
+    "region": "France",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "marine-law",
+    "event_title": "Maritime Law Code",
+    "approximate_year": 600,
+    "region": "Mediterranean",
+    "original_category": "law",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "chichen-itza-founded",
+    "event_title": "Chichen Itza Established",
+    "approximate_year": 600,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "turfan-oasis-city",
+    "event_title": "Turfan Oasis Silk Road Hub",
+    "approximate_year": 600,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "harsha-empire",
+    "event_title": "Harsha's Empire in North India",
+    "approximate_year": 606,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "first-civil-service-exam",
+    "event_title": "Chinese Imperial Exam",
+    "approximate_year": 607,
+    "region": "China",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "palenque-pacal-accession",
+    "event_title": "Palenque King Pacal II Ascends",
+    "approximate_year": 615,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "silla-hwabaek-council",
+    "event_title": "Hwabaek Council System Established",
+    "approximate_year": 650,
+    "region": "Korea",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "caliph-ali-assassination",
+    "event_title": "Assassination of Caliph Ali",
+    "approximate_year": 661,
+    "region": "Arabia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "umayyad-dynasty-founded",
+    "event_title": "Umayyad Dynasty Founded",
+    "approximate_year": 661,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "silla-unification",
+    "event_title": "Silla Unifies Korean Peninsula",
+    "approximate_year": 668,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "princess-wu-empress",
+    "event_title": "Wu Zetian Becomes Empress of China",
+    "approximate_year": 690,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "srivijaya-empire",
+    "event_title": "Srivijaya Maritime Empire",
+    "approximate_year": 700,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "dvaravati-period",
+    "event_title": "Dvaravati Period",
+    "approximate_year": 700,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "rajput-kingdoms",
+    "event_title": "Rajput Kingdoms Rise",
+    "approximate_year": 700,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "bukhara-city",
+    "event_title": "Bukhara Becomes Silk Road Hub",
+    "approximate_year": 700,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "zapotec-empire",
+    "event_title": "Zapotec Empire Flourishes",
+    "approximate_year": 700,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "tiwanaku-city",
+    "event_title": "Tiwanaku City Flourishes",
+    "approximate_year": 700,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "aksumite-decline",
+    "event_title": "Aksumite Empire Decline Begins",
+    "approximate_year": 700,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ghana-empire-founded",
+    "event_title": "Ghana Empire Established in West Africa",
+    "approximate_year": 700,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "wari-empire-expansion",
+    "event_title": "Wari Empire Expands in South America",
+    "approximate_year": 700,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mon-kingdom",
+    "event_title": "Mon Kingdom in Burma",
+    "approximate_year": 700,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "silla-bone-rank-system",
+    "event_title": "Silla Bone Rank System Formalized",
+    "approximate_year": 700,
+    "region": "Korea",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "zhouyuan-sogdian-outpost",
+    "event_title": "Sogdian Outpost at Zhouyuan",
+    "approximate_year": 700,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "ferghana-valley-trade",
+    "event_title": "Ferghana Valley Grain Trade Peak",
+    "approximate_year": 750,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "pepin-frankish-kingdom",
+    "event_title": "Pepin Founds Frankish Kingdom",
+    "approximate_year": 751,
+    "region": "France",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "founding-rome-legend",
+    "event_title": "Founding of Rome",
+    "approximate_year": 753,
+    "region": "Italy",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "first-embassy",
+    "event_title": "Charlemagne Embassy",
+    "approximate_year": 797,
+    "region": "France",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "frankish-empire-expansion",
+    "event_title": "Frankish Empire Expansion",
+    "approximate_year": 800,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "khmer-empire",
+    "event_title": "Khmer Empire Established",
+    "approximate_year": 800,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "fergana-valley",
+    "event_title": "Fergana Valley Horse Trade",
+    "approximate_year": 800,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "wari-empire",
+    "event_title": "Wari Empire Peak",
+    "approximate_year": 800,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "paper-money-china",
+    "event_title": "Paper Money Introduced in China",
+    "approximate_year": 800,
+    "region": "East Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "nubian-kush-kingdoms",
+    "event_title": "Nubian Kush Kingdoms in Sudan Region",
+    "approximate_year": 800,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "charlemagne-crowned-emperor",
+    "event_title": "Charlemagne Crowned Holy Roman Emperor",
+    "approximate_year": 800,
+    "region": "Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "flying-money-system-tang",
+    "event_title": "Tang Dynasty Flying Money System",
+    "approximate_year": 800,
+    "region": "China",
+    "original_category": "monetary",
+    "game_category": "diplomatic",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "rustamid-tahert-kingdom",
+    "event_title": "Rustamid Kingdom of Tahert Flourishes",
+    "approximate_year": 800,
+    "region": "North Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "taino-island-settlement",
+    "event_title": "Taino Settlement of Hispaniola",
+    "approximate_year": 800,
+    "region": "Caribbean",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "kashgar-bazaar-founded",
+    "event_title": "Kashgar Bazaar Established",
+    "approximate_year": 800,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "bishops-political-power",
+    "event_title": "Bishops Gain Political Power in Medieval States",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "monastery-lands-expansion",
+    "event_title": "Monastic Land Holdings Expand Dramatically",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "first-hospital-baghdad",
+    "event_title": "Mansuri Hospital Baghdad",
+    "approximate_year": 814,
+    "region": "Iraq",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "maya-collapse-begins",
+    "event_title": "Maya Classical Collapse Begins",
+    "approximate_year": 850,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "al-qarawiyyin-university",
+    "event_title": "Al-Qarawiyyin University",
+    "approximate_year": 859,
+    "region": "Morocco",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "kyivan-rus",
+    "event_title": "Kievan Rus Established",
+    "approximate_year": 862,
+    "region": "Eastern Europe",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "chola-empire-expansion",
+    "event_title": "Chola Dynasty Maritime Expansion Begins",
+    "approximate_year": 880,
+    "region": "South Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "khmer-angkor-empire",
+    "event_title": "Khmer Empire Angkor Period",
+    "approximate_year": 889,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "maya-collapse-classic",
+    "event_title": "Maya Classic Period Collapse",
+    "approximate_year": 900,
+    "region": "Mexico",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "tian-shan-trade",
+    "event_title": "Tian Shan Trade Route Development",
+    "approximate_year": 900,
+    "region": "Central Asia",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "mayan-hiatus",
+    "event_title": "Mayan Collapse and Hiatus",
+    "approximate_year": 900,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "chimor-empire-founded",
+    "event_title": "Chimor Empire Established on Peru Coast",
+    "approximate_year": 900,
+    "region": "South America",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "chinese-paper-money",
+    "event_title": "Chinese Paper Money",
+    "approximate_year": 900,
+    "region": "China",
+    "original_category": "economy",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "medical-school",
+    "event_title": "Salerno Medical School",
+    "approximate_year": 900,
+    "region": "Italy",
+    "original_category": "institutions",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "famine-cycles-establish",
+    "event_title": "Medieval Famine Cycles Establish",
+    "approximate_year": 900,
+    "region": "Western Europe",
+    "original_category": "demographic",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "feudal-hierarchy-establishment",
+    "event_title": "Feudal Hierarchy Becomes Institutionalized",
+    "approximate_year": 900,
+    "region": "Western Europe",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "serfs-bound-land",
+    "event_title": "Serfdom Becomes Binding in Medieval Europe",
+    "approximate_year": 900,
+    "region": "Western Europe",
+    "original_category": "social",
+    "game_category": "diplomatic",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "goryeo-dynasty-founded",
+    "event_title": "Goryeo Dynasty Established in Korea",
+    "approximate_year": 918,
+    "region": "East Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "althing-iceland",
+    "event_title": "Iceland Althing (First Parliament)",
+    "approximate_year": 930,
+    "region": "Iceland",
+    "original_category": "governance",
+    "game_category": "diplomatic",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "dai-viet-independence",
+    "event_title": "Dai Viet Achieves Independence from China",
+    "approximate_year": 938,
+    "region": "Southeast Asia",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ethiopian-aksumite-successor",
+    "event_title": "Ethiopian Empire Successor to Aksumite Kingdom",
+    "approximate_year": 940,
+    "region": "Africa",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "toltec-civilization",
+    "event_title": "Toltec Civilization Flourishes",
+    "approximate_year": 950,
+    "region": "Mesoamerica",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "gap_analysis, non_western"
+  },
+  {
+    "event_name": "goryeo-gwangjong-celadon",
+    "event_title": "Gwangjong Expands Celadon Production",
+    "approximate_year": 960,
+    "region": "Korea",
+    "original_category": "economic",
+    "game_category": "diplomatic",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "fatimid-cairo-founded",
+    "event_title": "Fatimid Dynasty Founds Cairo",
+    "approximate_year": 969,
+    "region": "Middle East",
+    "original_category": "political",
+    "game_category": "diplomatic",
+    "sources": "non_western"
+  }
+]

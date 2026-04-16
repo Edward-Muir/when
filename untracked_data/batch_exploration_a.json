@@ -1,0 +1,1082 @@
+[
+  {
+    "event_name": "aboriginal-firestick-farming",
+    "event_title": "Aboriginal Firestick Farming Ecosystem Management",
+    "approximate_year": -5000,
+    "region": "Australia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "potato-domestication-america",
+    "event_title": "Potato Domesticated in Americas",
+    "approximate_year": -3000,
+    "region": "Peru",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "caral-civilization",
+    "event_title": "Caral Civilization in Peru Valleys",
+    "approximate_year": -3000,
+    "region": "South America",
+    "original_category": "archaeological",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pottery-wheel",
+    "event_title": "Potter's Wheel",
+    "approximate_year": -3000,
+    "region": "Mesopotamia",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "aboriginal-boomerang-hunting",
+    "event_title": "Aboriginal Boomerang Hunting Innovation",
+    "approximate_year": -2000,
+    "region": "Pacific",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "samoa-settlement-polynesia",
+    "event_title": "Samoa Settlement as Polynesian Expansion Hub",
+    "approximate_year": -1000,
+    "region": "Polynesia",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "first-pharmacopoeia",
+    "event_title": "De Materia Medica",
+    "approximate_year": 65,
+    "region": "Roman Empire",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "pliny-natural-history",
+    "event_title": "Pliny's Natural History Published",
+    "approximate_year": 77,
+    "region": "Italy",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "roman-horse-breeding",
+    "event_title": "Roman Horse Breeding Standardization",
+    "approximate_year": 100,
+    "region": "Roman Empire",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "paper-invention-china",
+    "event_title": "Paper Invention in China",
+    "approximate_year": 105,
+    "region": "China",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "hipparcus-astronomy",
+    "event_title": "Hipparchus Develops Mathematical Astronomy",
+    "approximate_year": 140,
+    "region": "Greece",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "galen-medical-advances",
+    "event_title": "Galen Medical Advances Compiled",
+    "approximate_year": 180,
+    "region": "Rome",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "printing-woodblock-china",
+    "event_title": "Woodblock Printing in China",
+    "approximate_year": 200,
+    "region": "China",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "galen-medical-dominance",
+    "event_title": "Galen Medical Authority Established",
+    "approximate_year": 200,
+    "region": "Rome",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "charaka-samhita",
+    "event_title": "Charaka Writes Medical Compendium",
+    "approximate_year": 200,
+    "region": "South Asia",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "marquesas-settlement-east-polynesia",
+    "event_title": "Marquesas Settlement Enables Eastern Polynesia Expansion",
+    "approximate_year": 200,
+    "region": "Polynesia",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "moche-irrigation-system",
+    "event_title": "Moche Irrigation Network Established",
+    "approximate_year": 200,
+    "region": "South America",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "hanzi-script-standardization",
+    "event_title": "Han Dynasty Standardizes Hanzi Script",
+    "approximate_year": 206,
+    "region": "China",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "eratosthenes-earth-circumference",
+    "event_title": "Eratosthenes Calculates Earth's Circumference",
+    "approximate_year": 240,
+    "region": "Egypt",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "diophantus-algebra",
+    "event_title": "Diophantus Writes Arithmetica",
+    "approximate_year": 250,
+    "region": "Egypt",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "archimedes-buoyancy",
+    "event_title": "Archimedes Discovers Principle of Buoyancy",
+    "approximate_year": 250,
+    "region": "Sicily",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "aristarchus-heliocentric",
+    "event_title": "Aristarchus Proposes Heliocentric Universe",
+    "approximate_year": 270,
+    "region": "Greece",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "euclid-elements-geometry",
+    "event_title": "Euclid Writes Elements of Geometry",
+    "approximate_year": 300,
+    "region": "Egypt",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "aristotle-peripatetic-school",
+    "event_title": "Aristotle's Peripatetic School",
+    "approximate_year": 335,
+    "region": "Greece",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "gupta-mathematics",
+    "event_title": "Gupta Mathematics and Astronomy Flourish",
+    "approximate_year": 400,
+    "region": "South Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "hypatia-alexandria",
+    "event_title": "Hypatia of Alexandria Teaches",
+    "approximate_year": 400,
+    "region": "Near East/Middle East",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "warring-states-innovations",
+    "event_title": "Warring States Military and Agricultural Innovations",
+    "approximate_year": 400,
+    "region": "East Asia",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "nazca-geoglyphs",
+    "event_title": "Nazca Geoglyphs Astronomical Function",
+    "approximate_year": 400,
+    "region": "South America",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "polynesian-easter-island-settlement",
+    "event_title": "Polynesian Settlement of Easter Island",
+    "approximate_year": 400,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mayan-astronomical-calculations",
+    "event_title": "Mayan Civilization Advanced Astronomy",
+    "approximate_year": 400,
+    "region": "Mesoamerica",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "hawaiian-settlement",
+    "event_title": "Settlement of Hawaiian Islands",
+    "approximate_year": 400,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "hippocrates-corpus",
+    "event_title": "Hippocrates Corpus Medical Writings",
+    "approximate_year": 400,
+    "region": "Greece",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "hypatia-mathematics-astronomy",
+    "event_title": "Hypatia Teaches Mathematics and Astronomy",
+    "approximate_year": 400,
+    "region": "Egypt",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "macrobius-astronomy",
+    "event_title": "Macrobius Writes on Astronomy",
+    "approximate_year": 430,
+    "region": "Rome",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "aryabhata-astronomy",
+    "event_title": "Aryabhata's Astronomical Treatise",
+    "approximate_year": 499,
+    "region": "South Asia",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "nalanda-university",
+    "event_title": "Nalanda University Flourishes",
+    "approximate_year": 500,
+    "region": "South Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis, historical_firsts"
+  },
+  {
+    "event_name": "heavy-plow",
+    "event_title": "Heavy Plow Technology Spreads",
+    "approximate_year": 500,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "nok-culture-ironworking",
+    "event_title": "Nok Culture Develops Ironworking",
+    "approximate_year": 500,
+    "region": "Africa",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "zero-concept-india",
+    "event_title": "Zero Concept Develops in Indian Mathematics",
+    "approximate_year": 500,
+    "region": "South Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "micronesian-navigation-development",
+    "event_title": "Micronesian Navigation Techniques Develop",
+    "approximate_year": 500,
+    "region": "Pacific",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "aryabhata-zero-concept",
+    "event_title": "Aryabhata Develops Zero and Decimal System",
+    "approximate_year": 500,
+    "region": "India",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "nalanda-university-science",
+    "event_title": "Nalanda University Scientific Curriculum Established",
+    "approximate_year": 500,
+    "region": "India",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "iron-smelting-bantu-expansion",
+    "event_title": "Iron Smelting Technology Spreads via Bantu Migration",
+    "approximate_year": 500,
+    "region": "Sub-Saharan Africa",
+    "original_category": "technological",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "polynesian-wayfinding-techniques",
+    "event_title": "Polynesian Wayfinding Navigation Perfected",
+    "approximate_year": 500,
+    "region": "Polynesia",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "aryabhata-pi-calculation",
+    "event_title": "Aryabhata Calculates Pi to Four Decimal Places",
+    "approximate_year": 510,
+    "region": "South Asia",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "pythagoras-theorem-geometry",
+    "event_title": "Pythagoras Develops Theorem of Geometry",
+    "approximate_year": 530,
+    "region": "Greece",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "varahamihira-bhatasiddhanla",
+    "event_title": "Varahamihira Compiles Bhatasiddhanla",
+    "approximate_year": 550,
+    "region": "South Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "thales-measurement-pyramid",
+    "event_title": "Thales Measures the Pyramid Height",
+    "approximate_year": 585,
+    "region": "Greece",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "mayan-astronomy",
+    "event_title": "Mayan Astronomical Knowledge",
+    "approximate_year": 600,
+    "region": "Mesoamerica",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "maya-mathematical-innovation",
+    "event_title": "Maya Zero and Mathematical System Innovation",
+    "approximate_year": 600,
+    "region": "Mesoamerica",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "cataract-surgery-ancient",
+    "event_title": "Ancient Cataract Surgery",
+    "approximate_year": 600,
+    "region": "Egypt",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "susruta-samhita",
+    "event_title": "Susruta Compiles Medical Treatise",
+    "approximate_year": 600,
+    "region": "South Asia",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "irrigation-qanat-persia",
+    "event_title": "Qanat Irrigation System Expansion",
+    "approximate_year": 600,
+    "region": "Persia",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "water-mill-development",
+    "event_title": "Water Mill Mechanics Refined",
+    "approximate_year": 600,
+    "region": "Middle East",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "stirrup-development",
+    "event_title": "Stirrup Development and Adoption",
+    "approximate_year": 600,
+    "region": "Central Asia",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "african-agricultural-innovation-millet",
+    "event_title": "Millet and Sorghum Cultivation Spreads",
+    "approximate_year": 600,
+    "region": "West Africa",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "polynesian-double-canoe-design",
+    "event_title": "Polynesian Double-Hulled Canoe Technology",
+    "approximate_year": 600,
+    "region": "Polynesia",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "monasteries-manuscript-preservation",
+    "event_title": "Monastic Manuscript Preservation Becomes Systematic",
+    "approximate_year": 600,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "brahmagupta-algebra-india",
+    "event_title": "Brahmagupta Advances Algebra and Mathematics",
+    "approximate_year": 628,
+    "region": "India",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "xuanzang-silk-road",
+    "event_title": "Xuanzang Travels Silk Road to India",
+    "approximate_year": 629,
+    "region": "Central Asia",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "maya-astronomical-calendar",
+    "event_title": "Maya Astronomical Calendar Precision",
+    "approximate_year": 700,
+    "region": "Mesoamerica",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "polynesian-star-compass",
+    "event_title": "Polynesian Star Compass Navigation System",
+    "approximate_year": 700,
+    "region": "Polynesia",
+    "original_category": "maritime",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "lucayan-archipelago",
+    "event_title": "Lucayan Settlement of Bahamas",
+    "approximate_year": 700,
+    "region": "Caribbean",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "moldboard-plow-adoption",
+    "event_title": "Moldboard Plow Adoption in Northern Europe",
+    "approximate_year": 700,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "manuscript-culture-monks",
+    "event_title": "Monastic Manuscript Culture Standardizes",
+    "approximate_year": 700,
+    "region": "Western Europe",
+    "original_category": "information",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "three-field-rotation",
+    "event_title": "Three-Field Crop Rotation Adopted",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "water-mill",
+    "event_title": "Watermill Technology Spreads",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "gap_analysis, historical_firsts"
+  },
+  {
+    "event_name": "block-printing-china",
+    "event_title": "Block Printing in China",
+    "approximate_year": 800,
+    "region": "China",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "abbassid-science-translation",
+    "event_title": "Abbasid Caliphate Translation Movement",
+    "approximate_year": 800,
+    "region": "Middle East",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "horse-plough-agriculture",
+    "event_title": "Heavy Plow Transformation Agriculture",
+    "approximate_year": 800,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic"
+  },
+  {
+    "event_name": "horizontal-water-wheel",
+    "event_title": "Horizontal Axis Water Wheel",
+    "approximate_year": 800,
+    "region": "Central Asia",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "african-yam-cultivation",
+    "event_title": "Yam Cultivation Becomes Staple in West Africa",
+    "approximate_year": 800,
+    "region": "West Africa",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "horse-collar-technology",
+    "event_title": "Horse Collar Technology Spread",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "arabic-horse-evolution",
+    "event_title": "Arabian Horse Breeding in Islamic World",
+    "approximate_year": 800,
+    "region": "Middle East",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "monsoon-sailing-mastery",
+    "event_title": "Monsoon Wind Mastery Enables Indian Ocean Trade",
+    "approximate_year": 800,
+    "region": "Indian Ocean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "animal-plowing-efficiency",
+    "event_title": "Animal Plowing Becomes Standard",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "khwarizmi-algorithms",
+    "event_title": "Al-Khwarizmi Develops Algorithms and Algebra",
+    "approximate_year": 820,
+    "region": "Persia",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "norse-settlement-iceland",
+    "event_title": "Norse Settlement of Iceland",
+    "approximate_year": 874,
+    "region": "Iceland",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "al-razi-physician",
+    "event_title": "Al-Razi Medical Advances",
+    "approximate_year": 900,
+    "region": "Near East/Middle East",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "khwarezm-center-learning",
+    "event_title": "Khwarezm Becomes Center of Learning",
+    "approximate_year": 900,
+    "region": "Central Asia",
+    "original_category": "science",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "chatham-islands-settlement",
+    "event_title": "Chatham Islands Polynesian Settlement",
+    "approximate_year": 900,
+    "region": "Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "manorial-system-agricultural",
+    "event_title": "Manorial System Dominates European Agriculture",
+    "approximate_year": 900,
+    "region": "Western Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "water-power-industrial",
+    "event_title": "Water Power Drives Early Industries",
+    "approximate_year": 900,
+    "region": "Western Europe",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "al-razi-medical-treatise",
+    "event_title": "Al-Razi's Treatise on Smallpox and Measles",
+    "approximate_year": 910,
+    "region": "Persia",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "goryeo-printing-woodblocks",
+    "event_title": "Goryeo Woodblock Printing Technology",
+    "approximate_year": 950,
+    "region": "Korea",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "norse-settlement-greenland",
+    "event_title": "Norse Settlement of Greenland",
+    "approximate_year": 982,
+    "region": "Greenland",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "norse-colonization-atlantic",
+    "event_title": "Norse Atlantic Colonization Begins",
+    "approximate_year": 982,
+    "region": "North Atlantic",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "compass-invention-china",
+    "event_title": "Magnetic Compass Invented in China",
+    "approximate_year": 1000,
+    "region": "China",
+    "original_category": "invention",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "vinland-norse-discovery",
+    "event_title": "Vinland Discovered by Norse",
+    "approximate_year": 1000,
+    "region": "North America",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "bantu-migration",
+    "event_title": "Bantu Migration Wave East",
+    "approximate_year": 1000,
+    "region": "Sub-Saharan Africa",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "polynesian-settlement",
+    "event_title": "Polynesian Settlement of Pacific Islands",
+    "approximate_year": 1000,
+    "region": "Oceania/Pacific",
+    "original_category": "exploration",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "ibn-sina-medicine",
+    "event_title": "Ibn Sina Medical Works",
+    "approximate_year": 1000,
+    "region": "Near East/Middle East",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "optical-science",
+    "event_title": "Al-Haytham Optical Science",
+    "approximate_year": 1000,
+    "region": "Near East/Middle East",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "polynesian-navigation-technology",
+    "event_title": "Polynesian Double Canoe Navigation Technology",
+    "approximate_year": 1000,
+    "region": "Pacific",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "micronesian-navigation",
+    "event_title": "Micronesian Navigation Star Paths",
+    "approximate_year": 1000,
+    "region": "Pacific",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "variolation-china",
+    "event_title": "Chinese Variolation",
+    "approximate_year": 1000,
+    "region": "China",
+    "original_category": "medicine",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "wine-barrel",
+    "event_title": "Wooden Barrel Aging",
+    "approximate_year": 1000,
+    "region": "France",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "heavy-plow-adoption",
+    "event_title": "Heavy Plow Adoption Europe",
+    "approximate_year": 1000,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "crop-rotation-system",
+    "event_title": "Three Field Crop Rotation System",
+    "approximate_year": 1000,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic, r2_tech_chains"
+  },
+  {
+    "event_name": "slash-burn-agriculture-americas",
+    "event_title": "Slash and Burn Agriculture in Mesoamerica",
+    "approximate_year": 1000,
+    "region": "Americas",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_economic, r2_paradigm_shifts"
+  },
+  {
+    "event_name": "lodestone-compass-early",
+    "event_title": "Lodestone Compass Used for Navigation",
+    "approximate_year": 1000,
+    "region": "China",
+    "original_category": "navigation",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "overshot-wheel-improvements",
+    "event_title": "Overshot Water Wheel Improvements",
+    "approximate_year": 1000,
+    "region": "Europe",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "windmill-horizontal-axis",
+    "event_title": "Horizontal Axis Windmill",
+    "approximate_year": 1000,
+    "region": "Persia",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "crossbow-tension-mechanism",
+    "event_title": "Crossbow Tension Mechanism",
+    "approximate_year": 1000,
+    "region": "China",
+    "original_category": "weapons",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "horse-collar-adoption",
+    "event_title": "Horse Collar Adoption",
+    "approximate_year": 1000,
+    "region": "Europe",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "sickle-blade-improvements",
+    "event_title": "Sickle Blade and Design",
+    "approximate_year": 1000,
+    "region": "Mediterranean",
+    "original_category": "agriculture",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "distillation-techniques",
+    "event_title": "Distillation Apparatus and Techniques",
+    "approximate_year": 1000,
+    "region": "Islamic world",
+    "original_category": "chemistry",
+    "game_category": "exploration",
+    "sources": "r2_tech_chains"
+  },
+  {
+    "event_name": "khwarezm-al-biruni",
+    "event_title": "Al-Biruni Studies in Khwarezm",
+    "approximate_year": 1000,
+    "region": "Central Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "cahokia-woodhenge",
+    "event_title": "Cahokia Woodhenge Solar Calendar",
+    "approximate_year": 1000,
+    "region": "North America",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "iron-adoption-sub-saharan-africa",
+    "event_title": "Iron Smelting in Sub-Saharan Africa",
+    "approximate_year": 1000,
+    "region": "Sub-Saharan Africa",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "water-mill-europe",
+    "event_title": "Water Mill Dominates European Production",
+    "approximate_year": 1000,
+    "region": "Western Europe",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "al-haytham-optics",
+    "event_title": "Al-Haytham Develops Optics and Light Theory",
+    "approximate_year": 1015,
+    "region": "Persia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "al-biruni-geography-astronomy",
+    "event_title": "Al-Biruni's Works on Geography and Astronomy",
+    "approximate_year": 1020,
+    "region": "Central Asia",
+    "original_category": "scientific",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "avicenna-medical-education",
+    "event_title": "Avicenna Establishes Medical Education Systems",
+    "approximate_year": 1020,
+    "region": "Persia",
+    "original_category": "medical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "song-printing-expansion",
+    "event_title": "Expansion of Woodblock Printing in Song China",
+    "approximate_year": 1050,
+    "region": "East Asia",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "horseshoe-adoption",
+    "event_title": "Horseshoe Adoption Medieval Europe",
+    "approximate_year": 1050,
+    "region": "Europe",
+    "original_category": "agricultural",
+    "game_category": "exploration",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "omar-khayyam-algebra",
+    "event_title": "Omar Khayyam Advances Algebra",
+    "approximate_year": 1070,
+    "region": "Persia",
+    "original_category": "mathematical",
+    "game_category": "exploration",
+    "sources": "r2_scientific"
+  },
+  {
+    "event_name": "windmill-european",
+    "event_title": "European Windmill",
+    "approximate_year": 1100,
+    "region": "France",
+    "original_category": "food/agriculture",
+    "game_category": "exploration",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "iron-adoption-greece",
+    "event_title": "Iron Working Adoption in Greece",
+    "approximate_year": 1100,
+    "region": "Mediterranean",
+    "original_category": "technology",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "wind-mill-adoption",
+    "event_title": "Windmill Adoption in Northern Europe",
+    "approximate_year": 1100,
+    "region": "Western Europe",
+    "original_category": "energy",
+    "game_category": "exploration",
+    "sources": "r2_paradigm_shifts"
+  }
+]

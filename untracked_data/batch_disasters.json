@@ -1,0 +1,137 @@
+[
+  {
+    "event_name": "nero-great-fire",
+    "event_title": "Great Fire of Rome",
+    "approximate_year": 64,
+    "region": "Italy",
+    "original_category": "disaster",
+    "game_category": "disasters",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "eruption-mount-vesuvius",
+    "event_title": "Mount Vesuvius Erupts - Pompeii Destroyed",
+    "approximate_year": 79,
+    "region": "Italy",
+    "original_category": "disaster",
+    "game_category": "disasters",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "medieval-warm-period",
+    "event_title": "Medieval Warm Period Begins",
+    "approximate_year": 800,
+    "region": "Northern Europe",
+    "original_category": "climate",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "deforestation-mediterranean",
+    "event_title": "Mediterranean Deforestation Crisis",
+    "approximate_year": 1000,
+    "region": "Mediterranean",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "land-reclamation-netherlands",
+    "event_title": "Dutch Polder Land Reclamation",
+    "approximate_year": 1200,
+    "region": "Netherlands",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "little-ice-age-onset",
+    "event_title": "Little Ice Age Begins",
+    "approximate_year": 1300,
+    "region": "Global",
+    "original_category": "climate",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "irrigation-abandonment-southwest",
+    "event_title": "Ancestral Puebloan Irrigation Abandonment",
+    "approximate_year": 1300,
+    "region": "North America",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "european-famine-1315-1317",
+    "event_title": "Great Famine of 1315-1317",
+    "approximate_year": 1315,
+    "region": "Europe",
+    "original_category": "disaster",
+    "game_category": "disasters",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "plague-rats-ships",
+    "event_title": "Plague-Infected Rats in Mediterranean Trade",
+    "approximate_year": 1347,
+    "region": "Mediterranean",
+    "original_category": "disease",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "plague-medieval-waves",
+    "event_title": "Medieval Plague Waves Hit Europe Repeatedly",
+    "approximate_year": 1347,
+    "region": "Western Europe",
+    "original_category": "disease",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "horse-introduction-americas",
+    "event_title": "Horse Reintroduction to Americas",
+    "approximate_year": 1519,
+    "region": "North America",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "deforestation-britain",
+    "event_title": "Deforestation Crisis Drives Charcoal Shortage",
+    "approximate_year": 1600,
+    "region": "England",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "rinderpest-africa-impact",
+    "event_title": "Rinderpest Epizootic in East Africa",
+    "approximate_year": 1890,
+    "region": "Sub-Saharan Africa",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "soil-exhaustion-mesopotamia",
+    "event_title": "Mesopotamian Soil Salinization Cycle",
+    "approximate_year": 2000,
+    "region": "Middle East",
+    "original_category": "ecological",
+    "game_category": "disasters",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "nine-eleven-attacks",
+    "event_title": "September 11 Attacks",
+    "approximate_year": 2001,
+    "region": "America",
+    "original_category": "disaster",
+    "game_category": "disasters",
+    "sources": "chronology"
+  }
+]

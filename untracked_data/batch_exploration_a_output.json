@@ -1,0 +1,938 @@
+[
+  {
+    "name": "aboriginal-firestick-farming",
+    "friendly_name": "Aboriginal Firestick Farming Ecosystem Management",
+    "year": -5000,
+    "category": "exploration",
+    "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "potato-domestication-america",
+    "friendly_name": "Potato Domesticated in Americas",
+    "year": -8000,
+    "category": "exploration",
+    "description": "Indigenous peoples in the Peruvian Andes first domesticated wild potato species near Lake Titicaca.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "caral-civilization",
+    "friendly_name": "Caral Civilization in Peru Valleys",
+    "year": -3000,
+    "category": "exploration",
+    "description": "One of the oldest urban centers in the Americas, Caral thrived in Peru's Supe Valley with monumental architecture.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "pottery-wheel",
+    "friendly_name": "Potter's Wheel",
+    "year": -3500,
+    "category": "exploration",
+    "description": "The potter's wheel emerged in Mesopotamia, enabling faster and more uniform ceramic production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aboriginal-boomerang-hunting",
+    "friendly_name": "Aboriginal Boomerang Hunting Innovation",
+    "year": -2000,
+    "category": "exploration",
+    "description": "Aboriginal Australians refined boomerang designs for hunting, with returning and non-returning varieties.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samoa-settlement-polynesia",
+    "friendly_name": "Samoa Settlement as Polynesian Expansion Hub",
+    "year": -1000,
+    "category": "exploration",
+    "description": "Lapita peoples settled Samoa, which became a staging point for later Polynesian voyages across the Pacific.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-pharmacopoeia",
+    "friendly_name": "De Materia Medica",
+    "year": 65,
+    "category": "exploration",
+    "description": "Pedanius Dioscorides compiled a comprehensive guide to medicinal plants that remained authoritative for 1,500 years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pliny-natural-history",
+    "friendly_name": "Pliny's Natural History Published",
+    "year": 77,
+    "category": "exploration",
+    "description": "Pliny the Elder published his encyclopedic Natural History, covering topics from astronomy to zoology in 37 books.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-horse-breeding",
+    "friendly_name": "Roman Horse Breeding Standardization",
+    "year": 100,
+    "category": "exploration",
+    "description": "Romans developed systematic horse breeding programs for cavalry, racing, and agricultural use across the empire.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "paper-invention-china",
+    "friendly_name": "Paper Invention in China",
+    "year": 105,
+    "category": "exploration",
+    "description": "Cai Lun refined papermaking using bark, hemp, and rags during the Han Dynasty, revolutionizing record-keeping.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hipparcus-astronomy",
+    "friendly_name": "Hipparchus Develops Mathematical Astronomy",
+    "year": -140,
+    "category": "exploration",
+    "description": "Greek astronomer Hipparchus cataloged over 800 stars and discovered the precession of the equinoxes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "galen-medical-advances",
+    "friendly_name": "Galen Medical Advances Compiled",
+    "year": 180,
+    "category": "exploration",
+    "description": "Galen of Pergamon compiled extensive medical writings on anatomy and physiology that dominated Western medicine for centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "printing-woodblock-china",
+    "friendly_name": "Woodblock Printing in China",
+    "year": 700,
+    "category": "exploration",
+    "description": "Early woodblock printing techniques emerged in Han Dynasty China for reproducing text and images on cloth and paper.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "galen-medical-dominance",
+    "friendly_name": "Galen Medical Authority Established",
+    "year": 200,
+    "category": "exploration",
+    "description": "Galen's prolific writings on anatomy and treatment became the unchallenged authority in European and Islamic medicine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marquesas-settlement-east-polynesia",
+    "friendly_name": "Marquesas Settlement Enables Eastern Polynesia Expansion",
+    "year": 300,
+    "category": "exploration",
+    "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "moche-irrigation-system",
+    "friendly_name": "Moche Irrigation Network Established",
+    "year": 200,
+    "category": "exploration",
+    "description": "The Moche civilization built extensive canal irrigation networks in Peru's arid coastal valleys for agriculture.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hanzi-script-standardization",
+    "friendly_name": "Han Dynasty Standardizes Hanzi Script",
+    "year": -206,
+    "category": "exploration",
+    "description": "The Han Dynasty standardized Chinese characters following Qin unification, enabling administration across the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "eratosthenes-earth-circumference",
+    "friendly_name": "Eratosthenes Calculates Earth's Circumference",
+    "year": -240,
+    "category": "exploration",
+    "description": "Greek scholar Eratosthenes used shadow angles at Syene and Alexandria to estimate Earth's circumference with remarkable accuracy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "diophantus-algebra",
+    "friendly_name": "Diophantus Writes Arithmetica",
+    "year": 250,
+    "category": "exploration",
+    "description": "Alexandrian mathematician Diophantus wrote Arithmetica, pioneering algebraic notation and number theory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "archimedes-buoyancy",
+    "friendly_name": "Archimedes Discovers Principle of Buoyancy",
+    "year": -250,
+    "category": "exploration",
+    "description": "Archimedes of Syracuse discovered that objects displace their weight in fluid, allegedly while stepping into a bath.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aristarchus-heliocentric",
+    "friendly_name": "Aristarchus Proposes Heliocentric Universe",
+    "year": -270,
+    "category": "exploration",
+    "description": "Greek astronomer Aristarchus of Samos first proposed that Earth revolves around the Sun, anticipating Copernicus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "euclid-elements-geometry",
+    "friendly_name": "Euclid Writes Elements of Geometry",
+    "year": -300,
+    "category": "exploration",
+    "description": "Euclid compiled Elements in Alexandria, establishing the axiomatic method for geometry still taught today.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aristotle-peripatetic-school",
+    "friendly_name": "Aristotle's Peripatetic School",
+    "year": -335,
+    "category": "exploration",
+    "description": "Aristotle founded the Lyceum in Athens, where his Peripatetic school advanced logic, biology, and philosophy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gupta-mathematics",
+    "friendly_name": "Gupta Mathematics and Astronomy Flourish",
+    "year": 400,
+    "category": "exploration",
+    "description": "The Gupta Empire's golden age produced advances in mathematics including the decimal system and early trigonometry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hypatia-alexandria",
+    "friendly_name": "Hypatia of Alexandria Teaches",
+    "year": 400,
+    "category": "exploration",
+    "description": "Hypatia taught mathematics and philosophy in Alexandria, becoming one of the ancient world's most noted female scholars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "warring-states-innovations",
+    "friendly_name": "Warring States Military and Agricultural Innovations",
+    "year": -400,
+    "category": "exploration",
+    "description": "China's Warring States period drove innovations in iron casting, crossbows, and large-scale irrigation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-geoglyphs",
+    "friendly_name": "Nazca Geoglyphs Astronomical Function",
+    "year": 400,
+    "category": "exploration",
+    "description": "The Nazca people created enormous ground drawings in Peru's desert, possibly aligned with astronomical events.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "polynesian-easter-island-settlement",
+    "friendly_name": "Polynesian Settlement of Easter Island",
+    "year": 1200,
+    "category": "exploration",
+    "description": "Polynesian voyagers reached remote Rapa Nui (Easter Island), establishing the civilization that built the famous moai statues.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mayan-astronomical-calculations",
+    "friendly_name": "Mayan Civilization Advanced Astronomy",
+    "year": 400,
+    "category": "exploration",
+    "description": "Classic Maya astronomers tracked Venus cycles and eclipses with precision, recording data in elaborate codices.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hawaiian-settlement",
+    "friendly_name": "Settlement of Hawaiian Islands",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Polynesian navigators from the Marquesas sailed over 2,000 miles of open ocean to settle the Hawaiian archipelago.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hippocrates-corpus",
+    "friendly_name": "Hippocrates Corpus Medical Writings",
+    "year": -400,
+    "category": "exploration",
+    "description": "The Hippocratic Corpus established medicine as a discipline separate from religion, introducing systematic observation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hypatia-mathematics-astronomy",
+    "friendly_name": "Hypatia Teaches Mathematics and Astronomy",
+    "year": 400,
+    "category": "exploration",
+    "description": "Hypatia of Alexandria edited Ptolemy's astronomical works and taught Neoplatonic philosophy until her murder in 415 CE.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "macrobius-astronomy",
+    "friendly_name": "Macrobius Writes on Astronomy",
+    "year": 430,
+    "category": "exploration",
+    "description": "Roman author Macrobius wrote commentaries on Cicero's Dream of Scipio, preserving Greek astronomical knowledge.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aryabhata-astronomy",
+    "friendly_name": "Aryabhata's Astronomical Treatise",
+    "year": 499,
+    "category": "exploration",
+    "description": "Indian mathematician Aryabhata wrote the Aryabhatiya, proposing Earth's rotation and calculating planetary orbits.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nalanda-university",
+    "friendly_name": "Nalanda University Flourishes",
+    "year": 500,
+    "category": "exploration",
+    "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heavy-plow",
+    "friendly_name": "Heavy Plow Technology Spreads",
+    "year": 500,
+    "category": "exploration",
+    "description": "The heavy wheeled plow spread through Northern Europe, enabling cultivation of dense clay soils for the first time.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nok-culture-ironworking",
+    "friendly_name": "Nok Culture Develops Ironworking",
+    "year": -500,
+    "category": "exploration",
+    "description": "The Nok culture of central Nigeria developed independent iron smelting technology and distinctive terracotta sculptures.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zero-concept-india",
+    "friendly_name": "Zero Concept Develops in Indian Mathematics",
+    "year": 500,
+    "category": "exploration",
+    "description": "Indian mathematicians developed zero as a number with its own properties, transforming arithmetic and algebra.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "micronesian-navigation-development",
+    "friendly_name": "Micronesian Navigation Techniques Develop",
+    "year": 500,
+    "category": "exploration",
+    "description": "Micronesian navigators developed sophisticated star path and wave pattern techniques for open-ocean voyaging.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aryabhata-zero-concept",
+    "friendly_name": "Aryabhata Develops Zero and Decimal System",
+    "year": 499,
+    "category": "exploration",
+    "description": "Aryabhata used a place-value system with zero as a placeholder, laying groundwork for the modern decimal system.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nalanda-university-science",
+    "friendly_name": "Nalanda University Scientific Curriculum Established",
+    "year": 500,
+    "category": "exploration",
+    "description": "Nalanda's curriculum expanded to include astronomy, medicine, and logic alongside Buddhist philosophy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "iron-smelting-bantu-expansion",
+    "friendly_name": "Iron Smelting Technology Spreads via Bantu Migration",
+    "year": 500,
+    "category": "exploration",
+    "description": "Bantu-speaking peoples spread iron smelting technology across sub-Saharan Africa during their centuries-long migration.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polynesian-wayfinding-techniques",
+    "friendly_name": "Polynesian Wayfinding Navigation Perfected",
+    "year": 500,
+    "category": "exploration",
+    "description": "Polynesian navigators perfected wayfinding using stars, ocean swells, and wildlife to cross vast stretches of open ocean.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aryabhata-pi-calculation",
+    "friendly_name": "Aryabhata Calculates Pi to Four Decimal Places",
+    "year": 499,
+    "category": "exploration",
+    "description": "Aryabhata approximated pi as 3.1416 in the Aryabhatiya, one of the most accurate early calculations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pythagoras-theorem-geometry",
+    "friendly_name": "Pythagoras Develops Theorem of Geometry",
+    "year": -530,
+    "category": "exploration",
+    "description": "Pythagoras and his school in Croton formalized the relationship between the sides of a right triangle.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "varahamihira-bhatasiddhanla",
+    "friendly_name": "Varahamihira Compiles Bhatasiddhanla",
+    "year": 550,
+    "category": "exploration",
+    "description": "Indian scholar Varahamihira compiled the Panchasiddhantika, synthesizing Greek, Egyptian, and Indian astronomy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "thales-measurement-pyramid",
+    "friendly_name": "Thales Measures the Pyramid Height",
+    "year": -585,
+    "category": "exploration",
+    "description": "Thales of Miletus reportedly measured the Great Pyramid's height using shadow ratios, pioneering deductive geometry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mayan-astronomy",
+    "friendly_name": "Mayan Astronomical Knowledge",
+    "year": 600,
+    "category": "exploration",
+    "description": "Maya astronomers developed precise calendars and tracked celestial cycles from observatory structures.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maya-mathematical-innovation",
+    "friendly_name": "Maya Zero and Mathematical System Innovation",
+    "year": 600,
+    "category": "exploration",
+    "description": "The Maya independently developed a vigesimal number system with a true zero, centuries before its adoption in Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cataract-surgery-ancient",
+    "friendly_name": "Ancient Cataract Surgery",
+    "year": -600,
+    "category": "exploration",
+    "description": "Early cataract couching surgery was practiced in ancient India and Egypt, using needles to displace clouded lenses.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "susruta-samhita",
+    "friendly_name": "Susruta Compiles Medical Treatise",
+    "year": -600,
+    "category": "exploration",
+    "description": "The Sushruta Samhita described over 300 surgical procedures including rhinoplasty, becoming a foundational medical text.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irrigation-qanat-persia",
+    "friendly_name": "Qanat Irrigation System Expansion",
+    "year": -600,
+    "category": "exploration",
+    "description": "Persians expanded qanat tunnel systems to transport groundwater across arid regions, enabling settlement and farming.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "water-mill-development",
+    "friendly_name": "Water Mill Mechanics Refined",
+    "year": 600,
+    "category": "exploration",
+    "description": "Water mill technology was refined across the Mediterranean and Middle East for grinding grain and other processing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "stirrup-development",
+    "friendly_name": "Stirrup Development and Adoption",
+    "year": 600,
+    "category": "exploration",
+    "description": "The paired metal stirrup spread from Central Asia, transforming mounted warfare by providing riders with stability.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "african-agricultural-innovation-millet",
+    "friendly_name": "Millet and Sorghum Cultivation Spreads",
+    "year": -3000,
+    "category": "exploration",
+    "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polynesian-double-canoe-design",
+    "friendly_name": "Polynesian Double-Hulled Canoe Technology",
+    "year": 600,
+    "category": "exploration",
+    "description": "Polynesian builders developed large double-hulled canoes capable of carrying colonists and supplies across open ocean.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "monasteries-manuscript-preservation",
+    "friendly_name": "Monastic Manuscript Preservation Becomes Systematic",
+    "year": 600,
+    "category": "exploration",
+    "description": "European monasteries established scriptoria to systematically copy and preserve ancient manuscripts after Rome's fall.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brahmagupta-algebra-india",
+    "friendly_name": "Brahmagupta Advances Algebra and Mathematics",
+    "year": 628,
+    "category": "exploration",
+    "description": "Indian mathematician Brahmagupta wrote the Brahmasphutasiddhanta, defining rules for zero and negative numbers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "xuanzang-silk-road",
+    "friendly_name": "Xuanzang Travels Silk Road to India",
+    "year": 629,
+    "category": "exploration",
+    "description": "Chinese Buddhist monk Xuanzang traveled overland to India, returning with hundreds of sacred texts after 17 years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-astronomical-calendar",
+    "friendly_name": "Maya Astronomical Calendar Precision",
+    "year": 700,
+    "category": "exploration",
+    "description": "Maya astronomers refined their Long Count calendar and Venus tables to predict eclipses with high precision.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polynesian-star-compass",
+    "friendly_name": "Polynesian Star Compass Navigation System",
+    "year": 700,
+    "category": "exploration",
+    "description": "Polynesian navigators developed the star compass system, dividing the horizon into star houses for open-ocean navigation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "lucayan-archipelago",
+    "friendly_name": "Lucayan Settlement of Bahamas",
+    "year": 700,
+    "category": "exploration",
+    "description": "Taino-related Lucayan people migrated from Hispaniola to settle the Bahamas archipelago by canoe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "moldboard-plow-adoption",
+    "friendly_name": "Moldboard Plow Adoption in Northern Europe",
+    "year": 700,
+    "category": "exploration",
+    "description": "The moldboard plow turned heavy northern European soils more effectively, boosting agricultural productivity.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "manuscript-culture-monks",
+    "friendly_name": "Monastic Manuscript Culture Standardizes",
+    "year": 700,
+    "category": "exploration",
+    "description": "Monastic scriptoria standardized manuscript production techniques including Insular script and decorative illumination.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "three-field-rotation",
+    "friendly_name": "Three-Field Crop Rotation Adopted",
+    "year": 800,
+    "category": "exploration",
+    "description": "European farmers adopted three-field rotation, increasing yields by leaving only one-third of land fallow each year.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "water-mill",
+    "friendly_name": "Watermill Technology Spreads",
+    "year": 800,
+    "category": "exploration",
+    "description": "Watermills became widespread across medieval Europe for grinding grain, fulling cloth, and powering bellows.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "block-printing-china",
+    "friendly_name": "Block Printing in China",
+    "year": 800,
+    "category": "exploration",
+    "description": "Woodblock printing flourished in Tang Dynasty China, producing the earliest known printed books including Buddhist texts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "abbassid-science-translation",
+    "friendly_name": "Abbasid Caliphate Translation Movement",
+    "year": 800,
+    "category": "exploration",
+    "description": "The Abbasid House of Wisdom in Baghdad translated Greek, Persian, and Indian scientific texts into Arabic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "horse-plough-agriculture",
+    "friendly_name": "Heavy Plow Transformation Agriculture",
+    "year": 800,
+    "category": "exploration",
+    "description": "The heavy plow combined with horse power transformed northern European agriculture, enabling expansion into new lands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "horizontal-water-wheel",
+    "friendly_name": "Horizontal Axis Water Wheel",
+    "year": 800,
+    "category": "exploration",
+    "description": "Horizontal-axis water wheels spread through Central Asia and the Middle East for irrigation and grain milling.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "african-yam-cultivation",
+    "friendly_name": "Yam Cultivation Becomes Staple in West Africa",
+    "year": 800,
+    "category": "exploration",
+    "description": "Yam cultivation became a dietary staple in West Africa, supporting population growth in forest regions.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "horse-collar-technology",
+    "friendly_name": "Horse Collar Technology Spread",
+    "year": 800,
+    "category": "exploration",
+    "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "arabic-horse-evolution",
+    "friendly_name": "Arabian Horse Breeding in Islamic World",
+    "year": 800,
+    "category": "exploration",
+    "description": "Bedouin tribes refined Arabian horse breeding for endurance and speed, documenting bloodlines with care.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "monsoon-sailing-mastery",
+    "friendly_name": "Monsoon Wind Mastery Enables Indian Ocean Trade",
+    "year": 800,
+    "category": "exploration",
+    "description": "Arab and Indian sailors mastered monsoon wind patterns, enabling reliable seasonal trade across the Indian Ocean.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "animal-plowing-efficiency",
+    "friendly_name": "Animal Plowing Becomes Standard",
+    "year": 800,
+    "category": "exploration",
+    "description": "Improved harnesses and collar designs made ox and horse plowing standard practice across medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "khwarizmi-algorithms",
+    "friendly_name": "Al-Khwarizmi Develops Algorithms and Algebra",
+    "year": 820,
+    "category": "exploration",
+    "description": "Persian scholar al-Khwarizmi wrote foundational texts on algebra and Hindu-Arabic numerals at Baghdad's House of Wisdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "norse-settlement-iceland",
+    "friendly_name": "Norse Settlement of Iceland",
+    "year": 874,
+    "category": "exploration",
+    "description": "Norwegian Vikings established permanent settlements in Iceland, beginning with Ingolfr Arnarson at Reykjavik.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "al-razi-physician",
+    "friendly_name": "Al-Razi Medical Advances",
+    "year": 900,
+    "category": "exploration",
+    "description": "Persian physician al-Razi wrote over 200 medical texts and was among the first to distinguish smallpox from measles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "khwarezm-center-learning",
+    "friendly_name": "Khwarezm Becomes Center of Learning",
+    "year": 900,
+    "category": "exploration",
+    "description": "The Khwarezmian region in Central Asia became a major center of Islamic scholarship in mathematics and astronomy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "chatham-islands-settlement",
+    "friendly_name": "Chatham Islands Polynesian Settlement",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "manorial-system-agricultural",
+    "friendly_name": "Manorial System Dominates European Agriculture",
+    "year": 900,
+    "category": "exploration",
+    "description": "The manorial system organized medieval European farming around lords' estates with serfs working communal fields.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "water-power-industrial",
+    "friendly_name": "Water Power Drives Early Industries",
+    "year": 900,
+    "category": "exploration",
+    "description": "Water power was adapted beyond grain milling to drive sawmills, fulling mills, and metalworking hammers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-razi-medical-treatise",
+    "friendly_name": "Al-Razi's Treatise on Smallpox and Measles",
+    "year": 910,
+    "category": "exploration",
+    "description": "Al-Razi wrote the first clinical distinction between smallpox and measles, a landmark in diagnostic medicine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "goryeo-printing-woodblocks",
+    "friendly_name": "Goryeo Woodblock Printing Technology",
+    "year": 950,
+    "category": "exploration",
+    "description": "Korea's Goryeo Dynasty advanced woodblock printing, producing Buddhist texts including the Tripitaka Koreana.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "norse-settlement-greenland",
+    "friendly_name": "Norse Settlement of Greenland",
+    "year": 985,
+    "category": "exploration",
+    "description": "Erik the Red led Norse settlers to Greenland's southwest coast, establishing colonies that lasted nearly 500 years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "norse-colonization-atlantic",
+    "friendly_name": "Norse Atlantic Colonization Begins",
+    "year": 985,
+    "category": "exploration",
+    "description": "Norse expansion into the North Atlantic reached Greenland under Erik the Red, pushing European exploration westward.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "compass-invention-china",
+    "friendly_name": "Magnetic Compass Invented in China",
+    "year": 1040,
+    "category": "exploration",
+    "description": "Chinese inventors developed the magnetic compass for navigation during the Song Dynasty, later spreading worldwide.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "vinland-norse-discovery",
+    "friendly_name": "Vinland Discovered by Norse",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Leif Erikson reached North America around 1000 CE, establishing a short-lived settlement at L'Anse aux Meadows.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "bantu-migration",
+    "friendly_name": "Bantu Migration Wave East",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Bantu-speaking peoples completed their eastward migration through sub-Saharan Africa, spreading farming and ironworking.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polynesian-settlement",
+    "friendly_name": "Polynesian Settlement of Pacific Islands",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Polynesian navigators completed settlement of the Pacific triangle spanning Hawaii, Easter Island, and New Zealand.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ibn-sina-medicine",
+    "friendly_name": "Ibn Sina Medical Works",
+    "year": 1025,
+    "category": "exploration",
+    "description": "Ibn Sina (Avicenna) wrote The Canon of Medicine, a systematic medical encyclopedia used in Europe for centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "optical-science",
+    "friendly_name": "Al-Haytham Optical Science",
+    "year": 1011,
+    "category": "exploration",
+    "description": "Ibn al-Haytham's Book of Optics pioneered the scientific method and explained vision as light entering the eye.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polynesian-navigation-technology",
+    "friendly_name": "Polynesian Double Canoe Navigation Technology",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Polynesian double-hulled canoes enabled voyages of thousands of miles using star navigation and ocean currents.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "micronesian-navigation",
+    "friendly_name": "Micronesian Navigation Star Paths",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Micronesian navigators developed star path systems and wave piloting for precise inter-island navigation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "wine-barrel",
+    "friendly_name": "Wooden Barrel Aging",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Medieval European winemakers adopted wooden barrel aging, which imparted flavors and improved wine preservation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "heavy-plow-adoption",
+    "friendly_name": "Heavy Plow Adoption Europe",
+    "year": 1000,
+    "category": "exploration",
+    "description": "The heavy plow became widespread across medieval Europe, enabling productive farming on previously uncultivated soils.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "crop-rotation-system",
+    "friendly_name": "Three Field Crop Rotation System",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Three-field crop rotation became standard in medieval Europe, boosting yields by alternating grains and legumes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "slash-burn-agriculture-americas",
+    "friendly_name": "Slash and Burn Agriculture in Mesoamerica",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Mesoamerican farmers used slash-and-burn techniques to clear forest for maize cultivation in tropical lowlands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lodestone-compass-early",
+    "friendly_name": "Lodestone Compass Used for Navigation",
+    "year": 1040,
+    "category": "exploration",
+    "description": "Chinese navigators began using magnetized lodestone compasses for maritime navigation during the Song Dynasty.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "overshot-wheel-improvements",
+    "friendly_name": "Overshot Water Wheel Improvements",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Overshot water wheels improved energy efficiency by using gravity-fed water from above, powering medieval industries.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "crossbow-tension-mechanism",
+    "friendly_name": "Crossbow Tension Mechanism",
+    "year": -400,
+    "category": "exploration",
+    "description": "Chinese engineers developed bronze crossbow trigger mechanisms during the Warring States period for military use.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "horse-collar-adoption",
+    "friendly_name": "Horse Collar Adoption",
+    "year": 1000,
+    "category": "exploration",
+    "description": "The padded horse collar became widely adopted in Europe, enabling horses to replace oxen for plowing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sickle-blade-improvements",
+    "friendly_name": "Sickle Blade and Design",
+    "year": -3000,
+    "category": "exploration",
+    "description": "Bronze sickle blades replaced flint versions in the ancient Mediterranean, improving grain harvesting efficiency.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "distillation-techniques",
+    "friendly_name": "Distillation Apparatus and Techniques",
+    "year": 800,
+    "category": "exploration",
+    "description": "Islamic alchemists refined distillation using the alembic, producing essential oils, perfumes, and medicinal compounds.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "khwarezm-al-biruni",
+    "friendly_name": "Al-Biruni Studies in Khwarezm",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Polymath al-Biruni studied astronomy, mathematics, and geography in Khwarezm before traveling to India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cahokia-woodhenge",
+    "friendly_name": "Cahokia Woodhenge Solar Calendar",
+    "year": 1000,
+    "category": "exploration",
+    "description": "Builders at Cahokia in present-day Illinois constructed wooden post circles to track solstices and equinoxes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "iron-adoption-sub-saharan-africa",
+    "friendly_name": "Iron Smelting in Sub-Saharan Africa",
+    "year": -500,
+    "category": "exploration",
+    "description": "Sub-Saharan African societies independently developed iron smelting, transforming agriculture and toolmaking.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "water-mill-europe",
+    "friendly_name": "Water Mill Dominates European Production",
+    "year": 1000,
+    "category": "exploration",
+    "description": "By 1000 CE, water mills powered much of European grain processing, with thousands operating across the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-haytham-optics",
+    "friendly_name": "Al-Haytham Develops Optics and Light Theory",
+    "year": 1011,
+    "category": "exploration",
+    "description": "Ibn al-Haytham's Book of Optics established that vision results from light reflecting off objects into the eye.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-biruni-geography-astronomy",
+    "friendly_name": "Al-Biruni's Works on Geography and Astronomy",
+    "year": 1030,
+    "category": "exploration",
+    "description": "Al-Biruni calculated Earth's radius with remarkable accuracy and wrote extensively on Indian science and culture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "avicenna-medical-education",
+    "friendly_name": "Avicenna Establishes Medical Education Systems",
+    "year": 1025,
+    "category": "exploration",
+    "description": "Avicenna's Canon of Medicine systematized medical education and clinical practice across the Islamic world and Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "song-printing-expansion",
+    "friendly_name": "Expansion of Woodblock Printing in Song China",
+    "year": 1050,
+    "category": "exploration",
+    "description": "Song Dynasty China expanded woodblock printing for books, paper money, and government documents on a massive scale.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "horseshoe-adoption",
+    "friendly_name": "Horseshoe Adoption Medieval Europe",
+    "year": 1050,
+    "category": "exploration",
+    "description": "Iron horseshoes became widely adopted in medieval Europe, protecting hooves and improving traction on hard ground.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "omar-khayyam-algebra",
+    "friendly_name": "Omar Khayyam Advances Algebra",
+    "year": 1070,
+    "category": "exploration",
+    "description": "Persian mathematician Omar Khayyam classified and solved cubic equations using geometric methods.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "windmill-european",
+    "friendly_name": "European Windmill",
+    "year": 1180,
+    "category": "exploration",
+    "description": "Post windmills appeared in northern Europe for grinding grain, becoming vital in areas lacking water power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "iron-adoption-greece",
+    "friendly_name": "Iron Working Adoption in Greece",
+    "year": -1100,
+    "category": "exploration",
+    "description": "Greek civilization adopted iron smelting after the Bronze Age collapse, beginning the Greek Iron Age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wind-mill-adoption",
+    "friendly_name": "Windmill Adoption in Northern Europe",
+    "year": 1180,
+    "category": "exploration",
+    "description": "Windmills spread across the Low Countries and England, providing mechanical power for grain milling and drainage.",
+    "difficulty": "hard"
+  }
+]

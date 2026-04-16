@@ -6,11 +6,13 @@
     "category": "disasters",
     "description": "An asteroid impact caused the mass extinction of the dinosaurs.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Impact_event.jpg/330px-Impact_event.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dinosaur-extinction_eiv2ke?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 230,
+    "image_height": 440,
     "wikipedia_views": 727473,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cretaceous–Paleogene_extinction_event"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cretaceous–Paleogene_extinction_event",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "yellowstone-supervolcano",
@@ -19,11 +21,13 @@
     "category": "disasters",
     "description": "The most recent Yellowstone supereruption blanketed North America in ash.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Yellowstone_River_in_Hayden_Valley.jpg/330px-Yellowstone_River_in_Hayden_Valley.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yellowstone-supervolcano_birtvo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 445117,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowstone_Caldera"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Yellowstone_Caldera",
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "toba-supereruption",
@@ -32,11 +36,13 @@
     "category": "disasters",
     "description": "A massive volcanic eruption may have nearly caused human extinction.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tobaeruption.png/330px-Tobaeruption.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toba-supereruption_hxcm3s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 244,
+    "image_height": 440,
     "wikipedia_views": 271518,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Youngest_Toba_eruption"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Youngest_Toba_eruption",
+    "color": "#281f19",
+    "text_color": "light"
   },
   {
     "name": "storegga-tsunami",
@@ -45,11 +51,13 @@
     "category": "disasters",
     "description": "A massive underwater landslide caused devastating tsunamis in Northern Europe.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/StoreggaFLCommonsZone.jpg/330px-StoreggaFLCommonsZone.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/storegga-tsunami_uujoxu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 344,
+    "image_height": 440,
     "wikipedia_views": 110250,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Storegga_Slide"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Storegga_Slide",
+    "color": "#412710",
+    "text_color": "light"
   },
   {
     "name": "black-sea-deluge",
@@ -58,11 +66,13 @@
     "category": "disasters",
     "description": "Rising sea levels may have catastrophically flooded the Black Sea basin.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Map_of_the_Black_Sea_with_bathymetry_and_surrounding_relief.svg/330px-Map_of_the_Black_Sea_with_bathymetry_and_surrounding_relief.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/black-sea-deluge_ynfyq3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 210,
+    "image_height": 440,
     "wikipedia_views": 177629,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sea_deluge_hypothesis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sea_deluge_hypothesis",
+    "color": "#291f17",
+    "text_color": "light"
   },
   {
     "name": "thera-eruption",
@@ -71,11 +81,13 @@
     "category": "disasters",
     "description": "A massive volcanic eruption devastated the Minoan civilization in the Aegean.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Santorini_ASTER.jpg/330px-Santorini_ASTER.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thera-eruption_x2lcn5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 341,
+    "image_height": 440,
     "wikipedia_views": 260509,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_eruption"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_eruption",
+    "color": "#4a352b",
+    "text_color": "light"
   },
   {
     "name": "bronze-age-collapse",
@@ -84,11 +96,13 @@
     "category": "disasters",
     "description": "Multiple civilizations in the Mediterranean suddenly collapsed within decades.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bronze_Age_End.svg/330px-Bronze_Age_End.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bronze-age-collapse_oialck?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 519001,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
+    "color": "#3c3b3c",
+    "text_color": "light"
   },
   {
     "name": "late-bronze-age-drought",
@@ -97,11 +111,13 @@
     "category": "disasters",
     "description": "A severe megadrought contributed to the Bronze Age Collapse.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-bronze-age-drought_nqpruy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 344,
+    "image_height": 440,
     "wikipedia_views": 519001,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
+    "color": "#25303e",
+    "text_color": "light"
   },
   {
     "name": "plague-of-athens",
@@ -110,11 +126,13 @@
     "category": "disasters",
     "description": "A devastating epidemic killed up to a quarter of the Athenian population.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Plague_in_an_Ancient_City_LACMA_AC1997.10.1_%281_of_2%29.jpg/330px-Plague_in_an_Ancient_City_LACMA_AC1997.10.1_%281_of_2%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plague-of-athens_jcyt0y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 229,
+    "image_height": 440,
     "wikipedia_views": 59932,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Athens"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Athens",
+    "color": "#261e26",
+    "text_color": "light"
   },
   {
     "name": "vesuvius-eruption",
@@ -123,11 +141,13 @@
     "category": "disasters",
     "description": "The volcano buried the Roman cities of Pompeii and Herculaneum in ash.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Il_cratere_del_Vulcano_-_panoramio.jpg/330px-Il_cratere_del_Vulcano_-_panoramio.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vesuvius-eruption_zas6im?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 185,
+    "image_height": 440,
     "wikipedia_views": 460854,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
+    "color": "#4a2b2f",
+    "text_color": "light"
   },
   {
     "name": "pompeii",
@@ -136,11 +156,13 @@
     "category": "disasters",
     "description": "Mount Vesuvius erupted and buried the Roman city of Pompeii.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Destruction_of_Pompeii_and_Herculaneum.jpg/330px-Destruction_of_Pompeii_and_Herculaneum.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pompeii_mmd3nh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 205,
+    "image_height": 440,
     "wikipedia_views": 460854,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
+    "color": "#2e1b1c",
+    "text_color": "light"
   },
   {
     "name": "antonine-plague",
@@ -149,9 +171,13 @@
     "category": "disasters",
     "description": "A pandemic killed millions across the Roman Empire over fifteen years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/The_angel_of_death_striking_a_door_during_the_plague_of_Rome_Wellcome_V0010664.jpg/330px-The_angel_of_death_striking_a_door_during_the_plague_of_Rome_Wellcome_V0010664.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antonine-plague_qkjtoz?_a=BAMAMiiu0",
     "wikipedia_views": 126207,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Antonine_Plague"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Antonine_Plague",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hatepe-eruption",
@@ -160,11 +186,13 @@
     "category": "disasters",
     "description": "The largest volcanic eruption in 5,000 years occurred in New Zealand.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lake_taupo_landsat_%26_volcanic_features.jpg/330px-Lake_taupo_landsat_%26_volcanic_features.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hatepe-eruption_epbsal?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 396,
+    "image_height": 440,
     "wikipedia_views": 27357,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hatepe_eruption"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hatepe_eruption",
+    "color": "#2b1b27",
+    "text_color": "light"
   },
   {
     "name": "plague-of-cyprian",
@@ -173,12 +201,12 @@
     "category": "disasters",
     "description": "A deadly pandemic swept through the Roman Empire for nearly twenty years.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Heiliger_Cyprianus.jpg/330px-Heiliger_Cyprianus.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plague-of-cyprian_gxvv0c?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 720,
+    "image_height": 440,
     "wikipedia_views": 51836,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Cyprian",
-    "color": "#7a3d25",
+    "color": "#2b1d1c",
     "text_color": "light"
   },
   {
@@ -188,11 +216,13 @@
     "category": "disasters",
     "description": "A massive earthquake and tsunami devastated the eastern Mediterranean.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Island_of_Crete%2C_Greece.JPG/330px-Island_of_Crete%2C_Greece.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/365-crete-earthquake_wuoa0p?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 44297,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/365_Crete_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/365_Crete_earthquake",
+    "color": "#281e21",
+    "text_color": "light"
   },
   {
     "name": "antioch-earthquake-526",
@@ -201,11 +231,13 @@
     "category": "disasters",
     "description": "A massive earthquake killed 250,000 in the Byzantine city of Antioch.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Antiochia_su_Oronte.PNG/330px-Antiochia_su_Oronte.PNG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antioch-earthquake-526_zuv96k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 401,
+    "image_height": 440,
     "wikipedia_views": 59343,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/526_Antioch_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/526_Antioch_earthquake",
+    "color": "#3a2c28",
+    "text_color": "light"
   },
   {
     "name": "volcanic-winter-536",
@@ -214,11 +246,13 @@
     "category": "disasters",
     "description": "A mysterious fog plunged Europe into darkness and cold for eighteen months.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Volcanic_injection.svg/330px-Volcanic_injection.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/volcanic-winter-536_u86cdz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253,
+    "image_height": 440,
     "wikipedia_views": 396322,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Volcanic_winter_of_536"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Volcanic_winter_of_536",
+    "color": "#342c24",
+    "text_color": "light"
   },
   {
     "name": "plague-of-justinian",
@@ -227,11 +261,13 @@
     "category": "disasters",
     "description": "Bubonic plague killed tens of millions across the Byzantine Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Plaguet03.jpg/330px-Plaguet03.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plague-of-justinian_dmquxp?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 366234,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Justinian"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
+    "color": "#2b221a",
+    "text_color": "light"
   },
   {
     "name": "justinian-plague-recurrence",
@@ -240,11 +276,13 @@
     "category": "disasters",
     "description": "A major plague outbreak devastated the Sasanian Persian Empire.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Plaguet03.jpg/330px-Plaguet03.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/justinian-plague-recurrence_mxvjg3?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 5808,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Sheroe"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Sheroe",
+    "color": "#26201d",
+    "text_color": "light"
   },
   {
     "name": "damghan-earthquake",
@@ -253,11 +291,13 @@
     "category": "disasters",
     "description": "A massive earthquake in Iran killed an estimated 200,000 people.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/856_Damghan_setting.png/330px-856_Damghan_setting.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/damghan-earthquake_ydeuzn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 240,
+    "image_height": 440,
     "wikipedia_views": 8509,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/856_Damghan_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/856_Damghan_earthquake",
+    "color": "#271f20",
+    "text_color": "light"
   },
   {
     "name": "aleppo-earthquake",
@@ -266,11 +306,13 @@
     "category": "disasters",
     "description": "A devastating earthquake struck Syria, killing over 200,000 people.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg/330px-Aleppo_Citadel_entrance_-_seen_from_southeast_9933.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aleppo-earthquake_vo3ahf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 12939,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1138_Aleppo_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1138_Aleppo_earthquake",
+    "color": "#1c2321",
+    "text_color": "light"
   },
   {
     "name": "syria-earthquake-medieval",
@@ -279,11 +321,13 @@
     "category": "disasters",
     "description": "A powerful earthquake killed over one million across the Middle East.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Siege_of_Zadar.jpg/330px-Siege_of_Zadar.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/syria-earthquake-medieval_ewy8ev?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 464,
+    "image_height": 440,
     "wikipedia_views": 426396,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes",
+    "color": "#1e231f",
+    "text_color": "light"
   },
   {
     "name": "samalas-eruption",
@@ -292,11 +336,13 @@
     "category": "disasters",
     "description": "A massive Indonesian eruption caused global climate effects.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rinjani_mount.jpg/330px-Rinjani_mount.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samalas-eruption_rasdod?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 68988,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1257_Samalas_eruption"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1257_Samalas_eruption",
+    "color": "#4f3224",
+    "text_color": "light"
   },
   {
     "name": "great-european-famine",
@@ -305,11 +351,13 @@
     "category": "disasters",
     "description": "Climate change caused crop failures and mass starvation across Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Great_famine.jpg/330px-Great_famine.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-european-famine_eedgzz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 479,
+    "image_height": 440,
     "wikipedia_views": 204753,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_of_1315–1317"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_of_1315–1317",
+    "color": "#2e342c",
+    "text_color": "light"
   },
   {
     "name": "mongol-black-death-spread",
@@ -318,11 +366,13 @@
     "category": "disasters",
     "description": "Mongols catapulted plague victims into a city, spreading the Black Death to Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/THEODOSIA_01.jpg/330px-THEODOSIA_01.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-black-death-spread_l0wypq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 81299,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Caffa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Caffa",
+    "color": "#333230",
+    "text_color": "light"
   },
   {
     "name": "black-death-arrives",
@@ -344,11 +394,13 @@
     "category": "disasters",
     "description": "The plague reached its deadliest year, devastating cities across Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/black-death-peak_ucpizb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 288,
+    "image_height": 440,
     "wikipedia_views": 2124175,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death",
+    "color": "#282f26",
+    "text_color": "light"
   },
   {
     "name": "sweating-sickness",
@@ -370,11 +422,13 @@
     "category": "disasters",
     "description": "A strange outbreak caused hundreds to dance uncontrollably for days in Strasbourg.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg/330px-Die_Wallfahrt_der_Fallsuechtigen_nach_Meulebeeck.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dancing-plague_uzg8iw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 421,
+    "image_height": 440,
     "wikipedia_views": 742401,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dancing_plague_of_1518",
+    "color": "#1f2129",
+    "text_color": "light"
   },
   {
     "name": "shaanxi-earthquake",
@@ -383,11 +437,13 @@
     "category": "disasters",
     "description": "The deadliest earthquake in history killed approximately 830,000 people in China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Shaanxi_1556_earthquake_map_of_provinces.png/330px-Shaanxi_1556_earthquake_map_of_provinces.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shaanxi-earthquake_ahgiva?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 261,
+    "image_height": 440,
     "wikipedia_views": 94595,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1556_Shaanxi_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1556_Shaanxi_earthquake",
+    "color": "#222121",
+    "text_color": "light"
   },
   {
     "name": "huaynaputina-eruption",
@@ -409,11 +465,13 @@
     "category": "disasters",
     "description": "Volcanic climate disruption caused a famine that killed two million Russians.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siege_and_Battle_of_Kinsale%2C_1601.jpg/330px-Siege_and_Battle_of_Kinsale%2C_1601.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russian-famine-troubles_uxqauq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 207,
+    "image_height": 440,
     "wikipedia_views": 16898,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1601–1603"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1601–1603",
+    "color": "#29282f",
+    "text_color": "light"
   },
   {
     "name": "vasa-sinking",
@@ -422,11 +480,13 @@
     "category": "disasters",
     "description": "The Swedish warship sank on its maiden voyage in Stockholm harbor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/The_Vasa_from_the_Bow.jpg/330px-The_Vasa_from_the_Bow.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vasa-sinking_xg5p7y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 399008,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasa_(ship)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasa_(ship)",
+    "color": "#95b3be",
+    "text_color": "dark"
   },
   {
     "name": "italian-plague",
@@ -448,11 +508,13 @@
     "category": "disasters",
     "description": "Bubonic plague killed nearly 100,000 Londoners in eighteen months.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Great_plague_of_london-1665.jpg/330px-Great_plague_of_london-1665.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-plague-london_ag61fw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 459,
+    "image_height": 440,
     "wikipedia_views": 159373,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Plague_of_London"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Plague_of_London",
+    "color": "#261f21",
+    "text_color": "light"
   },
   {
     "name": "great-fire-london",
@@ -476,11 +538,13 @@
     "category": "disasters",
     "description": "An estimated magnitude 8.7-9.2 earthquake struck the Pacific Northwest, recorded in Japan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Cascadia_subduction_zone_USGS.png/330px-Cascadia_subduction_zone_USGS.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cascadia-earthquake-1700_vz5tgq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 471,
+    "image_height": 440,
     "wikipedia_views": 145810,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1700_Cascadia_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1700_Cascadia_earthquake",
+    "color": "#2a1e1a",
+    "text_color": "light"
   },
   {
     "name": "chile-earthquake-1730",
@@ -489,11 +553,13 @@
     "category": "disasters",
     "description": "An estimated magnitude 8.7 earthquake caused a tsunami damaging over 1,000 km of Chilean coastline.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Valdivia_after_earthquake%2C_1960.jpg/330px-Valdivia_after_earthquake%2C_1960.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chile-earthquake-1730_lumniq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 176,
+    "image_height": 440,
     "wikipedia_views": 558273,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+    "color": "#261f1e",
+    "text_color": "light"
   },
   {
     "name": "irish-famine-forgotten",
@@ -513,11 +579,13 @@
     "category": "disasters",
     "description": "A massive earthquake and tsunami destroyed much of Portugal's capital.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/1755_Lisbon_Earthquake_Location.png/330px-1755_Lisbon_Earthquake_Location.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lisbon-earthquake_ds7oy3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 419,
+    "image_height": 440,
     "wikipedia_views": 308283,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1755_Lisbon_earthquake",
+    "color": "#2a1d1d",
+    "text_color": "light"
   },
   {
     "name": "great-boston-fire-1760",
@@ -526,11 +594,13 @@
     "category": "disasters",
     "description": "The Great Boston Fire of 1760 destroyed 349 buildings.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/ISH_WC_Boston4.jpg/330px-ISH_WC_Boston4.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-boston-fire-1760_ix1qik?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215,
+    "image_height": 440,
     "wikipedia_views": 1931,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Boston_Fire_of_1760"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Boston_Fire_of_1760",
+    "color": "#2b1d1c",
+    "text_color": "light"
   },
   {
     "name": "great-hurricane-caribbean",
@@ -539,11 +609,13 @@
     "category": "disasters",
     "description": "The deadliest Atlantic hurricane in history killed 22,000 in the Caribbean.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Great_Hurricane_%281780%29_areas_affected.png/330px-Great_Hurricane_%281780%29_areas_affected.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-hurricane-caribbean_ahnduu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 240,
+    "image_height": 440,
     "wikipedia_views": 76220,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Hurricane_of_1780"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Hurricane_of_1780",
+    "color": "#3c3a45",
+    "text_color": "light"
   },
   {
     "name": "laki-eruption",
@@ -552,11 +624,13 @@
     "category": "disasters",
     "description": "An Icelandic eruption caused widespread famine and climate effects across Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Laki_fissure_%283%29.jpg/330px-Laki_fissure_%283%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/laki-eruption_rudycj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 74519,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Laki"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laki",
+    "color": "#97aaae",
+    "text_color": "dark"
   },
   {
     "name": "chalisa-famine",
@@ -565,11 +639,13 @@
     "category": "disasters",
     "description": "A devastating famine killed 11 million people in India.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/India1765.jpg/330px-India1765.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chalisa-famine_yv0tgs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 523,
+    "image_height": 440,
     "wikipedia_views": 13982,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chalisa_famine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chalisa_famine",
+    "color": "#2a1e1c",
+    "text_color": "light"
   },
   {
     "name": "calabria-earthquake",
@@ -578,11 +654,13 @@
     "category": "disasters",
     "description": "A series of earthquakes killed 50,000 in southern Italy.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Calabria_in_Italy.svg/330px-Calabria_in_Italy.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/calabria-earthquake_pflznm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 415,
+    "image_height": 440,
     "wikipedia_views": 3752,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1905_Calabria_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1905_Calabria_earthquake",
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "doji-bara-famine",
@@ -630,11 +708,13 @@
     "category": "disasters",
     "description": "A series of massive earthquakes shook the central United States.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/New_Madrid_Erdbeben.jpg/330px-New_Madrid_Erdbeben.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/new-madrid-earthquakes_pv6mar?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 125139,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1811–1812_New_Madrid_earthquakes"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1811–1812_New_Madrid_earthquakes",
+    "color": "#363531",
+    "text_color": "light"
   },
   {
     "name": "london-beer-flood",
@@ -2604,11 +2684,13 @@
     "category": "disasters",
     "description": "Neanderthals went extinct, possibly due to competition with modern humans or climate change.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Neanderthal_distribution.jpg/330px-Neanderthal_distribution.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthal-extinction_vlezlw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 155,
+    "image_height": 440,
     "wikipedia_views": 133398,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
+    "color": "#272622",
+    "text_color": "light"
   },
   {
     "name": "babylonian-destruction-jerusalem",
@@ -2617,11 +2699,13 @@
     "category": "disasters",
     "description": "Nebuchadnezzar II destroyed Solomon's Temple and Jerusalem, ending the Kingdom of Judah.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg/330px-Dome_of_the_Rock_seen_from_the_Mount_of_Olives_%2812395649153%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/babylonian-destruction-jerusalem_gjxqrm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 167,
+    "image_height": 440,
     "wikipedia_views": 173651,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(587_BC)",
+    "color": "#222025",
+    "text_color": "light"
   },
   {
     "name": "great-fire-rome",
@@ -2630,11 +2714,13 @@
     "category": "disasters",
     "description": "Fire destroyed much of Rome; Nero blamed Christians, beginning their persecution.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg/330px-Robert%2C_Hubert_-_Incendie_%C3%A0_Rome_-.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-fire-rome_oszho7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 263,
+    "image_height": 440,
     "wikipedia_views": 191690,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_Rome",
+    "color": "#4e261d",
+    "text_color": "light"
   },
   {
     "name": "extinction-neanderthals",
@@ -2643,11 +2729,13 @@
     "category": "disasters",
     "description": "Neanderthals disappeared from Europe after coexisting with modern humans for thousands of years, likely due to competition and climate change.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Neanderthal_at_AMNH.jpg/330px-Neanderthal_at_AMNH.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/extinction-neanderthals_buaiss?_a=BAMAMiiu0",
     "wikipedia_views": 133398,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
     "image_width": 330,
-    "image_height": 465
+    "image_height": 440,
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "younger-dryas-climate-event",
@@ -2656,11 +2744,13 @@
     "category": "disasters",
     "description": "A sudden return to glacial conditions lasting over 1,000 years disrupted early human societies and may have triggered agricultural development.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Partin_2015_YD_global_map.jpg/330px-Partin_2015_YD_global_map.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/younger-dryas-climate-event_jnzz0s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 361,
+    "image_height": 440,
     "wikipedia_views": 327672,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Younger_Dryas"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Younger_Dryas",
+    "color": "#26201b",
+    "text_color": "light"
   },
   {
     "name": "white-ship-sinks",
@@ -2669,11 +2759,13 @@
     "category": "disasters",
     "description": "The sinking of the White Ship off Normandy killed the heir to the English throne, triggering a succession crisis known as The Anarchy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/WhiteShipSinking.jpg/330px-WhiteShipSinking.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/white-ship-sinks_xpdhai?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 479,
+    "image_height": 440,
     "wikipedia_views": 106623,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/White_Ship_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/White_Ship_disaster",
+    "color": "#1c2320",
+    "text_color": "light"
   },
   {
     "name": "tulip-mania-crashes",
@@ -2682,11 +2774,13 @@
     "category": "disasters",
     "description": "The Dutch tulip market collapsed after speculation drove bulb prices to extraordinary highs, becoming history's first recorded economic bubble.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Verzameling_van_een_meenigte_tulipaanen_p15.png/330px-Verzameling_van_een_meenigte_tulipaanen_p15.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tulip-mania-crashes_ztfgqd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 550,
+    "image_height": 440,
     "wikipedia_views": 424674,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tulip_mania"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tulip_mania",
+    "color": "#2b1d1a",
+    "text_color": "light"
   },
   {
     "name": "space-shuttle-columbia-disaster",

@@ -1,0 +1,1127 @@
+[
+  {
+    "event_name": "sejong-hangul-invention",
+    "event_title": "King Sejong Invents Hangul Alphabet",
+    "approximate_year": 1443,
+    "region": "East Asia",
+    "original_category": "language",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "incunabula-books",
+    "event_title": "Incunabula: Early Printed Books",
+    "approximate_year": 1450,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "timbuktu-university",
+    "event_title": "University of Timbuktu Flourishes",
+    "approximate_year": 1450,
+    "region": "Africa",
+    "original_category": "education",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mamluk-cairo-libraries",
+    "event_title": "Mamluk Libraries and Scholarship",
+    "approximate_year": 1450,
+    "region": "Middle East",
+    "original_category": "education",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "benin-bronzes-royal-plaques",
+    "event_title": "Benin Royal Plaques and Bronzes Tradition",
+    "approximate_year": 1450,
+    "region": "West Africa",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "filippo-lippi-painting",
+    "event_title": "Filippo Lippi Develops Renaissance Painting",
+    "approximate_year": 1450,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "harpsichord-invented",
+    "event_title": "Harpsichord Keyboard Instrument Invented",
+    "approximate_year": 1450,
+    "region": "Italy",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "court-ballet-origins",
+    "event_title": "Court Ballet Tradition Emerges in Renaissance Italy",
+    "approximate_year": 1450,
+    "region": "Italy",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "songhai-university-timbuktu",
+    "event_title": "Songhai University of Timbuktu Flourishes",
+    "approximate_year": 1450,
+    "region": "West Africa",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "byzantine-scholars-flee",
+    "event_title": "Byzantine Scholars Flee Constantinople",
+    "approximate_year": 1453,
+    "region": "Europe",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "sikh-movement-begins",
+    "event_title": "Sikh Religious Movement Begins",
+    "approximate_year": 1469,
+    "region": "South Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "bihzad-persian-painting",
+    "event_title": "Bihzad Becomes Greatest Persian Miniaturist",
+    "approximate_year": 1480,
+    "region": "Persia",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "perugino-christ-keys",
+    "event_title": "Perugino Establishes Renaissance Workshop",
+    "approximate_year": 1480,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "kongo-christianity-adoption",
+    "event_title": "Kongo Kingdom Adopts Christianity",
+    "approximate_year": 1491,
+    "region": "Africa",
+    "original_category": "religion",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "leonardo-da-vinci-art",
+    "event_title": "Leonardo da Vinci Creates Major Masterpieces",
+    "approximate_year": 1495,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "vedic-period",
+    "event_title": "Vedic Period Begins",
+    "approximate_year": 1500,
+    "region": "South Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "vijayanagara-flowering",
+    "event_title": "Vijayanagara Empire Cultural Flowering",
+    "approximate_year": 1500,
+    "region": "South Asia",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "joseon-confucian-renaissance",
+    "event_title": "Joseon Confucian Renaissance",
+    "approximate_year": 1500,
+    "region": "East Asia",
+    "original_category": "philosophy",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ayutthaya-golden-age",
+    "event_title": "Ayutthaya Kingdom Golden Age",
+    "approximate_year": 1500,
+    "region": "Southeast Asia",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "benin-art-renaissance",
+    "event_title": "Benin Kingdom Art Renaissance",
+    "approximate_year": 1500,
+    "region": "Africa",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "aboriginal-didgeridoo-music",
+    "event_title": "Aboriginal Didgeridoo Musical Instrument",
+    "approximate_year": 1500,
+    "region": "Pacific",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "benin-kingdom-art-tradition",
+    "event_title": "Benin Kingdom Sculptural Tradition Flourishes",
+    "approximate_year": 1500,
+    "region": "West Africa",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "joseon-hahoetal-masks",
+    "event_title": "Hahoe Mask Dance Tradition Established",
+    "approximate_year": 1500,
+    "region": "Korea",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "davids-sculpture-michelangelo",
+    "event_title": "Michelangelo Sculpts David",
+    "approximate_year": 1504,
+    "region": "Florence",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "safavid-shiite-islam",
+    "event_title": "Safavid Dynasty Establishes Shiite Islam as State Religion",
+    "approximate_year": 1507,
+    "region": "Middle East",
+    "original_category": "religion",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "songhai-scholars",
+    "event_title": "Songhai Scholars and Islamic Learning",
+    "approximate_year": 1510,
+    "region": "Africa",
+    "original_category": "education",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "raphael-school-athens",
+    "event_title": "Raphael Paints School of Athens",
+    "approximate_year": 1510,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "michelangelo-sistine-chapel",
+    "event_title": "Michelangelo Paints Sistine Chapel Ceiling",
+    "approximate_year": 1512,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "reformation-luther-begins",
+    "event_title": "Protestant Reformation Begins",
+    "approximate_year": 1517,
+    "region": "Germany",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "printing-reformation-pamphlets",
+    "event_title": "Printing Enables Reformation Pamphlets",
+    "approximate_year": 1517,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "reformation-anabaptists",
+    "event_title": "Anabaptist Radical Reformation Movement",
+    "approximate_year": 1530,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "english-reformation-henry",
+    "event_title": "English Reformation Under Henry VIII",
+    "approximate_year": 1530,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "mannerism-art-style",
+    "event_title": "Mannerism Art Style Emerges",
+    "approximate_year": 1530,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "rabelais-gargantua",
+    "event_title": "Rabelais Writes Gargantua and Pantagruel",
+    "approximate_year": 1534,
+    "region": "France",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "jesuits-founded",
+    "event_title": "Society of Jesus (Jesuits) Founded",
+    "approximate_year": 1540,
+    "region": "Rome",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "titian-venetian-color",
+    "event_title": "Titian Masters Venetian Color Tradition",
+    "approximate_year": 1540,
+    "region": "Italy",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "commedia-dell-arte-emerges",
+    "event_title": "Commedia dell'arte Theater Tradition Emerges",
+    "approximate_year": 1540,
+    "region": "Italy",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "ottoman-miniature-art",
+    "event_title": "Ottoman Miniature Art Flourishes",
+    "approximate_year": 1550,
+    "region": "Middle East",
+    "original_category": "art",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "counter-reformation-jesuit",
+    "event_title": "Counter-Reformation and Jesuit Expansion",
+    "approximate_year": 1550,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "spanish-inquisition-intensified",
+    "event_title": "Spanish Inquisition Intensified Persecution",
+    "approximate_year": 1550,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "violin-developed",
+    "event_title": "Violin Developed as Modern Instrument",
+    "approximate_year": 1550,
+    "region": "Italy",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "persian-carpet-tradition",
+    "event_title": "Persian Carpet Weaving Tradition Peak",
+    "approximate_year": 1550,
+    "region": "Persia",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "venetian-lace-tradition",
+    "event_title": "Venetian Lace Making Becomes European Fashion",
+    "approximate_year": 1550,
+    "region": "Italy",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "kongo-christianization-depth",
+    "event_title": "Kongo Kingdom Mass Christianization",
+    "approximate_year": 1550,
+    "region": "Central Africa",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "coffee-house-emergence",
+    "event_title": "Coffeehouse Culture Emerges in Ottoman Empire",
+    "approximate_year": 1555,
+    "region": "Ottoman Empire",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "scots-reformation-movement",
+    "event_title": "Scottish Reformation Movement",
+    "approximate_year": 1559,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "goa-inquisition",
+    "event_title": "Portuguese Inquisition in Goa",
+    "approximate_year": 1560,
+    "region": "Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "safavid-golden-age",
+    "event_title": "Safavid Golden Age - Arts and Architecture",
+    "approximate_year": 1580,
+    "region": "Middle East",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "jesuit-missions-asia",
+    "event_title": "Jesuit Missions to Asia Expand",
+    "approximate_year": 1580,
+    "region": "Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "heresy-trials-witch-hunts",
+    "event_title": "European Witch Hunts and Heresy Trials",
+    "approximate_year": 1580,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "montaigne-essays",
+    "event_title": "Montaigne Publishes Essays",
+    "approximate_year": 1580,
+    "region": "France",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "tea-ceremony-codification",
+    "event_title": "Tea Ceremony Tradition Codified in Japan",
+    "approximate_year": 1580,
+    "region": "Japan",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "ballet-de-cour-france",
+    "event_title": "Ballet de Cour Theater Tradition in France",
+    "approximate_year": 1581,
+    "region": "France",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "akbar-din-ilahi",
+    "event_title": "Akbar's Din-i Ilahi (Syncretic Religion) Declared",
+    "approximate_year": 1582,
+    "region": "South Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "chocolate-introduced-europe",
+    "event_title": "Chocolate Introduced to European Nobility",
+    "approximate_year": 1585,
+    "region": "Spain",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "christopher-marlowe",
+    "event_title": "Christopher Marlowe Writes Major Dramas",
+    "approximate_year": 1588,
+    "region": "England",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "spenser-faerie-queene",
+    "event_title": "Spenser Writes The Faerie Queene",
+    "approximate_year": 1589,
+    "region": "England",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "shakespeare-early-plays",
+    "event_title": "Shakespeare Writes Early Plays",
+    "approximate_year": 1590,
+    "region": "England",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "opera-emerges-florence",
+    "event_title": "Opera Emerges as Art Form in Florence",
+    "approximate_year": 1597,
+    "region": "Italy",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "safavid-textile-arts",
+    "event_title": "Safavid Carpet and Textile Arts Peak",
+    "approximate_year": 1600,
+    "region": "Middle East",
+    "original_category": "art",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "safavid-carpet-arts",
+    "event_title": "Safavid Carpet Arts Peak Production",
+    "approximate_year": 1600,
+    "region": "Middle East",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "minoan-frescoes",
+    "event_title": "Minoan Frescoes and Palace Art",
+    "approximate_year": 1600,
+    "region": "Eastern Mediterranean",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "kabuki-theater-begins",
+    "event_title": "Kabuki Theater Tradition Established",
+    "approximate_year": 1600,
+    "region": "Japan",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "shakespeare-hamlet-othello",
+    "event_title": "Shakespeare Writes Hamlet and Major Tragedies",
+    "approximate_year": 1600,
+    "region": "England",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "kathak-classical-dance",
+    "event_title": "Kathak Classical Dance Tradition Formalized",
+    "approximate_year": 1600,
+    "region": "South Asia",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "coffee-houses-cairo",
+    "event_title": "Cairo Coffeehouses Peak as Cultural Centers",
+    "approximate_year": 1600,
+    "region": "Middle East",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "kuba-royal-masks",
+    "event_title": "Kuba Kingdom Develops Royal Mask Traditions",
+    "approximate_year": 1600,
+    "region": "Central Africa",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "cervantes-don-quixote",
+    "event_title": "Cervantes Publishes Don Quixote",
+    "approximate_year": 1605,
+    "region": "Spain",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "monteverdi-orfeo",
+    "event_title": "Monteverdi Composes L'Orfeo Opera",
+    "approximate_year": 1607,
+    "region": "Italy",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "shakespeare-sonnets",
+    "event_title": "Shakespeare Publishes Sonnets",
+    "approximate_year": 1609,
+    "region": "England",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "safavid-miniature-painting",
+    "event_title": "Safavid Miniature Painting Schools Flourish",
+    "approximate_year": 1610,
+    "region": "Middle East",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "port-royal-convent",
+    "event_title": "Port-Royal-des-Champs Monastery Flourishes",
+    "approximate_year": 1626,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "spanish-baroque-drama",
+    "event_title": "Spanish Baroque Drama with Calderón",
+    "approximate_year": 1635,
+    "region": "Spain",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "descartes-cogito-philosophy",
+    "event_title": "Descartes Cogito Ergo Sum",
+    "approximate_year": 1637,
+    "region": "France",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "corneille-le-cid",
+    "event_title": "Corneille Writes Le Cid Drama",
+    "approximate_year": 1637,
+    "region": "France",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "jansenism-controversy",
+    "event_title": "Jansenism Controversy Peaks",
+    "approximate_year": 1640,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "enlightenment-age-begins",
+    "event_title": "Age of Enlightenment Begins",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "tokugawa-kabuki-theatre",
+    "event_title": "Tokugawa Kabuki Theatre Development",
+    "approximate_year": 1650,
+    "region": "East Asia",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "kuba-raffia-textiles",
+    "event_title": "Kuba Raffia Textile Art",
+    "approximate_year": 1650,
+    "region": "Africa",
+    "original_category": "art",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "quaker-founding",
+    "event_title": "Quaker Society Founding and Growth",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "baroque-period-peak",
+    "event_title": "Baroque Period Artistic Peak",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "kabuki-women-actors",
+    "event_title": "Kabuki Theater Becomes Popular Entertainment",
+    "approximate_year": 1650,
+    "region": "Japan",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "moronobu-woodblock-pioneer",
+    "event_title": "Moronobu Pioneers Woodblock Print Art",
+    "approximate_year": 1650,
+    "region": "Japan",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "hobbes-leviathan",
+    "event_title": "Hobbes Publishes Leviathan",
+    "approximate_year": 1651,
+    "region": "England",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "louis-xiv-ballet",
+    "event_title": "Louis XIV Establishes Ballet as Art Form",
+    "approximate_year": 1661,
+    "region": "France",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "moliere-comedies",
+    "event_title": "Molière Writes Tartuffe and Major Comedies",
+    "approximate_year": 1664,
+    "region": "France",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "racine-theatre",
+    "event_title": "Jean Racine Writes Major Tragedies",
+    "approximate_year": 1667,
+    "region": "France",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "milton-paradise-lost",
+    "event_title": "Milton Writes Paradise Lost",
+    "approximate_year": 1667,
+    "region": "England",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "aurangzeb-orthodox-policies",
+    "event_title": "Aurangzeb's Religious Orthodoxy Policies",
+    "approximate_year": 1670,
+    "region": "South Asia",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "ukiyo-e-art-development",
+    "event_title": "Ukiyo-e Woodblock Art Development",
+    "approximate_year": 1670,
+    "region": "East Asia",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "pietism-germany",
+    "event_title": "Pietism Movement in German Protestantism",
+    "approximate_year": 1670,
+    "region": "Europe",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "baroque-music-development",
+    "event_title": "Baroque Music Composition and Development",
+    "approximate_year": 1680,
+    "region": "Europe",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "haiku-poetry-tradition",
+    "event_title": "Haiku Poetry Tradition Formalized",
+    "approximate_year": 1680,
+    "region": "Japan",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "genroku-era-culture",
+    "event_title": "Genroku Era Cultural and Artistic Peak",
+    "approximate_year": 1688,
+    "region": "East Asia",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "locke-second-treatise",
+    "event_title": "Locke Second Treatise on Government",
+    "approximate_year": 1689,
+    "region": "England",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "tokugawa-edo-period-culture",
+    "event_title": "Edo Period Cultural Flourishing",
+    "approximate_year": 1700,
+    "region": "East Asia",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ethiopian-gondar-cultural-center",
+    "event_title": "Gondar Becomes Ethiopian Cultural Center",
+    "approximate_year": 1700,
+    "region": "East Africa",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "asante-golden-stool",
+    "event_title": "Asante Golden Stool Ceremonial",
+    "approximate_year": 1701,
+    "region": "Africa",
+    "original_category": "culture",
+    "game_category": "cultural",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "handel-baroque-music",
+    "event_title": "Handel Composes Major Baroque Works",
+    "approximate_year": 1710,
+    "region": "Germany",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "paris-salon-culture",
+    "event_title": "Parisian Salon Culture Establishment",
+    "approximate_year": 1715,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "tulip-era-ottoman",
+    "event_title": "Tulip Era (Lale Devri) Cultural Peak",
+    "approximate_year": 1718,
+    "region": "Middle East",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "bach-welltempered-clavier",
+    "event_title": "Bach Composes Well-Tempered Clavier",
+    "approximate_year": 1722,
+    "region": "Germany",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "vivaldi-four-seasons",
+    "event_title": "Vivaldi Composes The Four Seasons",
+    "approximate_year": 1725,
+    "region": "Italy",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "french-enlightenment-peak",
+    "event_title": "French Enlightenment Flourishes",
+    "approximate_year": 1730,
+    "region": "France",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "voltaire-major-works",
+    "event_title": "Voltaire's Major Philosophical Works",
+    "approximate_year": 1732,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "muhendishane-school",
+    "event_title": "Mühendishane (Ottoman Engineering School) Founded",
+    "approximate_year": 1734,
+    "region": "Middle East",
+    "original_category": "educational",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "montesquieu-spirit-laws",
+    "event_title": "Montesquieu Spirit of the Laws",
+    "approximate_year": 1748,
+    "region": "France",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "bach-mass-in-b-minor",
+    "event_title": "Bach Composes Mass in B Minor",
+    "approximate_year": 1749,
+    "region": "Germany",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "rousseau-publications",
+    "event_title": "Rousseau's Major Publications (Discourse and Emile)",
+    "approximate_year": 1750,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "ukiyo-woodblock-prints",
+    "event_title": "Ukiyo-e Woodblock Print Tradition Peak",
+    "approximate_year": 1750,
+    "region": "Japan",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "encyclopedie-diderot",
+    "event_title": "Encyclopédie Project by Diderot and d'Alembert Begins",
+    "approximate_year": 1751,
+    "region": "Europe",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "haydn-symphonies",
+    "event_title": "Haydn Composes Symphony Series",
+    "approximate_year": 1765,
+    "region": "Austria",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "maori-european-encounters",
+    "event_title": "Maori-European Contact and Trade",
+    "approximate_year": 1770,
+    "region": "Pacific",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "kant-critique-pure-reason",
+    "event_title": "Kant Critique of Pure Reason",
+    "approximate_year": 1781,
+    "region": "Prussia",
+    "original_category": "intellectual",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "schiller-major-plays",
+    "event_title": "Schiller Writes Major German Dramas",
+    "approximate_year": 1784,
+    "region": "Germany",
+    "original_category": "theatrical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "mozart-operas",
+    "event_title": "Mozart Composes Don Giovanni and Operas",
+    "approximate_year": 1787,
+    "region": "Austria",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "civil-constitution-clergy",
+    "event_title": "Civil Constitution of the Clergy",
+    "approximate_year": 1790,
+    "region": "France",
+    "original_category": "religious",
+    "game_category": "cultural",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "haida-totem-poles",
+    "event_title": "Haida Totem Pole Carving Peak",
+    "approximate_year": 1800,
+    "region": "North America",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "jacquard-loom-invented",
+    "event_title": "Jacquard Loom Textile Innovation",
+    "approximate_year": 1804,
+    "region": "France",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "goethe-faust-publication",
+    "event_title": "Goethe Publishes Faust",
+    "approximate_year": 1808,
+    "region": "Germany",
+    "original_category": "literary",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "beethoven-symphony-nine",
+    "event_title": "Beethoven Composes Symphony No. 9",
+    "approximate_year": 1824,
+    "region": "Austria",
+    "original_category": "musical",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "hokusai-great-wave",
+    "event_title": "Hokusai Creates Mount Fuji Series",
+    "approximate_year": 1830,
+    "region": "Japan",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "hiroshige-landscape-prints",
+    "event_title": "Hiroshige Creates Landscape Print Series",
+    "approximate_year": 1830,
+    "region": "Japan",
+    "original_category": "artistic",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "bharatanatyam-tradition",
+    "event_title": "Bharatanatyam Dance Tradition Codified",
+    "approximate_year": 1830,
+    "region": "South Asia",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "r2_cultural"
+  },
+  {
+    "event_name": "roaring-twenties-era",
+    "event_title": "Roaring Twenties Begin",
+    "approximate_year": 1920,
+    "region": "America",
+    "original_category": "cultural",
+    "game_category": "cultural",
+    "sources": "chronology"
+  }
+]

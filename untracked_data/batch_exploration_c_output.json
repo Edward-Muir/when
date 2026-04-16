@@ -1,0 +1,962 @@
+[
+  {
+    "name": "joseon-korean-medicine",
+    "friendly_name": "Dongeuibogam Medical Encyclopedia",
+    "year": 1613,
+    "category": "exploration",
+    "description": "Korean physician Heo Jun published the Dongeuibogam, a comprehensive medical encyclopedia that became a key East Asian medical text.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kepler-second-law",
+    "friendly_name": "Kepler's Second Law of Planetary Motion Published",
+    "year": 1609,
+    "category": "exploration",
+    "description": "Johannes Kepler published his first two laws of planetary motion in Astronomia Nova, showing planets sweep equal areas in equal times.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "plymouth-colony-pilgrims",
+    "friendly_name": "Plymouth Colony Pilgrims",
+    "year": 1620,
+    "category": "exploration",
+    "description": "English Pilgrims aboard the Mayflower established Plymouth Colony in present-day Massachusetts.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "harvey-blood-circulation",
+    "friendly_name": "Harvey Discovers Blood Circulation",
+    "year": 1628,
+    "category": "exploration",
+    "description": "William Harvey published De Motu Cordis, demonstrating that blood circulates through the body pumped by the heart.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "descartes-analytical-geometry",
+    "friendly_name": "Descartes Develops Analytic Geometry",
+    "year": 1637,
+    "category": "exploration",
+    "description": "René Descartes published La Géométrie, uniting algebra and geometry through coordinate systems.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "barometer-invention",
+    "friendly_name": "Barometer Invented",
+    "year": 1643,
+    "category": "exploration",
+    "description": "Evangelista Torricelli invented the mercury barometer, proving atmospheric pressure and the existence of vacuum.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-barometer",
+    "friendly_name": "Torricelli Barometer",
+    "year": 1643,
+    "category": "exploration",
+    "description": "Torricelli created the first mercury barometer in Florence, measuring atmospheric pressure for the first time.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pascal-vacuum-experiments",
+    "friendly_name": "Pascal's Vacuum Experiments (Magdeburg Hemispheres)",
+    "year": 1648,
+    "category": "exploration",
+    "description": "Blaise Pascal's Puy-de-Dôme experiment confirmed atmospheric pressure decreases with altitude, advancing vacuum science.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dutch-naval-dominance",
+    "friendly_name": "Dutch Naval Dominance Established",
+    "year": 1650,
+    "category": "exploration",
+    "description": "The Dutch Republic became the foremost maritime power, controlling global trade routes and dominating European shipping.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "thermometer-development",
+    "friendly_name": "Thermometer Developed",
+    "year": 1654,
+    "category": "exploration",
+    "description": "Ferdinand II de' Medici developed sealed liquid-in-glass thermometers, improving on earlier open-tube designs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bleaching-techniques-development",
+    "friendly_name": "Bleaching Techniques Development",
+    "year": 1650,
+    "category": "exploration",
+    "description": "European textile workers refined bleaching methods using buttermilk and sunlight to whiten linen and cloth.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "pascal-probability-theory",
+    "friendly_name": "Pascal Develops Probability Theory",
+    "year": 1654,
+    "category": "exploration",
+    "description": "Blaise Pascal and Pierre de Fermat exchanged letters founding probability theory through the problem of points.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "optical-lens-advancement",
+    "friendly_name": "Optical Lens Technology Advancement",
+    "year": 1660,
+    "category": "exploration",
+    "description": "Advances in glass grinding and polishing enabled improved lenses for telescopes and microscopes across Europe.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "boyle-gas-laws",
+    "friendly_name": "Robert Boyle's Gas Laws Established",
+    "year": 1662,
+    "category": "exploration",
+    "description": "Robert Boyle published his law showing the inverse relationship between gas pressure and volume.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "boyle-law-gases",
+    "friendly_name": "Boyle Discovers Law of Gases",
+    "year": 1662,
+    "category": "exploration",
+    "description": "Boyle demonstrated that gas volume is inversely proportional to pressure at constant temperature.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "philosophical-transactions",
+    "friendly_name": "Philosophical Transactions",
+    "year": 1665,
+    "category": "exploration",
+    "description": "The Royal Society launched Philosophical Transactions, the world's first peer-reviewed scientific journal.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hooke-microscopy",
+    "friendly_name": "Robert Hooke's Microscopy Observations",
+    "year": 1665,
+    "category": "exploration",
+    "description": "Robert Hooke published Micrographia, coining the term 'cell' and revealing the microscopic world through detailed illustrations.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "newton-calculus",
+    "friendly_name": "Newton Develops Calculus",
+    "year": 1666,
+    "category": "exploration",
+    "description": "Isaac Newton developed his method of fluxions (calculus) during his annus mirabilis at Woolsthorpe Manor.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spectroscopy-prism",
+    "friendly_name": "Spectroscopy and Prism Uses",
+    "year": 1666,
+    "category": "exploration",
+    "description": "Newton used a glass prism to split white light into its spectrum, revealing that light is composed of colors.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "blood-transfusion",
+    "friendly_name": "Successful Blood Transfusion",
+    "year": 1667,
+    "category": "exploration",
+    "description": "Jean-Baptiste Denys performed the first documented blood transfusion from a lamb to a human patient in Paris.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "leeuwenhoek-microscope",
+    "friendly_name": "Leeuwenhoek Invents Microscope",
+    "year": 1674,
+    "category": "exploration",
+    "description": "Antonie van Leeuwenhoek crafted powerful single-lens microscopes and became the first to observe microorganisms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joseon-silhak-agricultural",
+    "friendly_name": "Silhak Movement Agricultural Reform",
+    "year": 1670,
+    "category": "exploration",
+    "description": "Korean Silhak scholars promoted practical learning and agricultural reform during the Joseon Dynasty.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-microscope",
+    "friendly_name": "Leeuwenhoek Microscope",
+    "year": 1674,
+    "category": "exploration",
+    "description": "Leeuwenhoek reported his first observations of 'animalcules' (microorganisms) to the Royal Society using his handmade microscopes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "huygens-light-theory",
+    "friendly_name": "Huygens Develops Wave Theory of Light",
+    "year": 1678,
+    "category": "exploration",
+    "description": "Christiaan Huygens proposed that light travels as waves, explaining reflection and refraction phenomena.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "leibniz-binary-system",
+    "friendly_name": "Leibniz Develops Binary Number System",
+    "year": 1703,
+    "category": "exploration",
+    "description": "Gottfried Wilhelm Leibniz published his binary number system, using only 0 and 1, laying groundwork for modern computing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "newton-leibniz-calculus",
+    "friendly_name": "Newton and Leibniz Develop Calculus",
+    "year": 1684,
+    "category": "exploration",
+    "description": "Leibniz published his calculus notation in 1684, while Newton had developed his version independently in the 1660s.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "newton-gravitation-law",
+    "friendly_name": "Newton's Law of Gravitation",
+    "year": 1687,
+    "category": "exploration",
+    "description": "Newton published his universal law of gravitation in the Principia, explaining planetary orbits and earthly motion.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "newton-principia-published",
+    "friendly_name": "Isaac Newton's Principia Mathematica Published",
+    "year": 1687,
+    "category": "exploration",
+    "description": "Newton's Principia Mathematica laid the foundation for classical mechanics with laws of motion and universal gravitation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "newton-gravity-motion",
+    "friendly_name": "Newton Discovers Gravity and Laws of Motion",
+    "year": 1687,
+    "category": "exploration",
+    "description": "Newton's three laws of motion and law of universal gravitation transformed physics and astronomy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "agricultural-revolution",
+    "friendly_name": "Agricultural Revolution",
+    "year": 1701,
+    "category": "exploration",
+    "description": "Jethro Tull's seed drill and new crop rotation methods launched Britain's Agricultural Revolution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coal-mining-expansion",
+    "friendly_name": "Coal Mining Expansion",
+    "year": 1700,
+    "category": "exploration",
+    "description": "British coal output surged as demand grew for heating and early industrial processes, spurring deeper mining techniques.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "selective-breeding-animals",
+    "friendly_name": "Selective Breeding of Livestock",
+    "year": 1700,
+    "category": "exploration",
+    "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hydrochloric-acid-production",
+    "friendly_name": "Hydrochloric Acid Production",
+    "year": 1700,
+    "category": "exploration",
+    "description": "German chemists refined methods for producing hydrochloric acid, advancing chemical industry processes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "dye-chemistry-advances",
+    "friendly_name": "Dye Chemistry and Fast Dyes",
+    "year": 1700,
+    "category": "exploration",
+    "description": "European chemists developed more colorfast dyes for textiles, improving on centuries-old natural dyeing techniques.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "long-distance-travel-improvement",
+    "friendly_name": "Long-Distance Travel Time Decreases",
+    "year": 1700,
+    "category": "exploration",
+    "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "halley-comet-orbital",
+    "friendly_name": "Halley Calculates Comet Orbit",
+    "year": 1705,
+    "category": "exploration",
+    "description": "Edmond Halley predicted the periodic return of a comet using Newton's laws, later confirmed in 1758.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fahrenheit-temperature-scale",
+    "friendly_name": "Fahrenheit Creates Temperature Scale",
+    "year": 1724,
+    "category": "exploration",
+    "description": "Daniel Gabriel Fahrenheit developed the mercury thermometer and standardized temperature scale still used in the US.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "achromatic-lens",
+    "friendly_name": "Achromatic Lens Correction",
+    "year": 1733,
+    "category": "exploration",
+    "description": "Chester Moore Hall invented the achromatic lens, combining crown and flint glass to reduce chromatic aberration.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "euler-graph-theory",
+    "friendly_name": "Euler Initiates Graph Theory",
+    "year": 1736,
+    "category": "exploration",
+    "description": "Leonhard Euler solved the Seven Bridges of Königsberg problem, founding the mathematical field of graph theory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "euler-mathematics",
+    "friendly_name": "Euler Advances Mathematics and Physics",
+    "year": 1748,
+    "category": "exploration",
+    "description": "Euler published Introductio in Analysin Infinitorum, advancing analysis, number theory, and mathematical notation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "celsius-temperature-scale",
+    "friendly_name": "Celsius Develops Temperature Scale",
+    "year": 1742,
+    "category": "exploration",
+    "description": "Anders Celsius proposed a 100-degree temperature scale based on the freezing and boiling points of water.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "turbine-wheel-concept",
+    "friendly_name": "Turbine Wheel Concept Development",
+    "year": 1750,
+    "category": "exploration",
+    "description": "Early turbine wheel designs emerged in France as engineers explored rotary power from water and steam.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "natural-rubber-gathering",
+    "friendly_name": "Natural Rubber Gathering and Latex Extraction",
+    "year": 1736,
+    "category": "exploration",
+    "description": "Charles Marie de La Condamine sent rubber samples from South America to Europe, sparking scientific interest in latex.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "black-phlogiston-heat",
+    "friendly_name": "Joseph Black Studies Heat and Phlogiston",
+    "year": 1761,
+    "category": "exploration",
+    "description": "Joseph Black discovered latent heat and specific heat, challenging the phlogiston theory of combustion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sextant-refinement",
+    "friendly_name": "Sextant Design Refinement",
+    "year": 1757,
+    "category": "exploration",
+    "description": "John Bird built improved sextants for the Royal Navy, enabling more precise celestial navigation at sea.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cotton-spinning-jenny",
+    "friendly_name": "Spinning Jenny Invented",
+    "year": 1764,
+    "category": "exploration",
+    "description": "James Hargreaves invented the spinning jenny, enabling one worker to operate multiple spindles simultaneously.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "veterinary-school",
+    "friendly_name": "Royal Veterinary School",
+    "year": 1762,
+    "category": "exploration",
+    "description": "Claude Bourgelat founded the first veterinary school in Lyon, France, establishing veterinary medicine as a profession.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bougainville-circumnavigation",
+    "friendly_name": "Bougainville's Global Circumnavigation",
+    "year": 1766,
+    "category": "exploration",
+    "description": "Louis Antoine de Bougainville led the first French circumnavigation, exploring Tahiti and the Pacific Islands.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cook-pacific-voyages",
+    "friendly_name": "Captain Cook Pacific Voyages",
+    "year": 1768,
+    "category": "exploration",
+    "description": "Captain James Cook embarked on the first of three Pacific voyages, mapping coastlines and advancing navigation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arkwright-water-frame",
+    "friendly_name": "Arkwright Water Frame Invented",
+    "year": 1769,
+    "category": "exploration",
+    "description": "Richard Arkwright patented the water frame, a water-powered spinning machine that industrialized cotton production.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "watt-separate-condenser",
+    "friendly_name": "Watt Separate Condenser",
+    "year": 1769,
+    "category": "exploration",
+    "description": "James Watt patented the separate condenser for steam engines, dramatically improving fuel efficiency.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lagrange-number-theory",
+    "friendly_name": "Lagrange Advances Number Theory",
+    "year": 1770,
+    "category": "exploration",
+    "description": "Joseph-Louis Lagrange proved that every positive integer can be expressed as the sum of four squares.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zanzibar-clove-cultivation",
+    "friendly_name": "Zanzibar Sultanate Develops Clove Plantations",
+    "year": 1818,
+    "category": "exploration",
+    "description": "The Sultan of Zanzibar established clove plantations that made the island the world's leading spice exporter.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "lavoisier-oxygen-combustion",
+    "friendly_name": "Lavoisier Discovers Oxygen and Combustion",
+    "year": 1778,
+    "category": "exploration",
+    "description": "Antoine Lavoisier named oxygen and demonstrated its role in combustion, overthrowing phlogiston theory.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "priestley-oxygen-isolation",
+    "friendly_name": "Priestley Isolates Oxygen Gas",
+    "year": 1774,
+    "category": "exploration",
+    "description": "Joseph Priestley isolated oxygen by heating mercuric oxide, calling it 'dephlogisticated air.'",
+    "difficulty": "hard"
+  },
+  {
+    "name": "herschel-discovers-uranus",
+    "friendly_name": "Herschel Discovers Uranus",
+    "year": 1781,
+    "category": "exploration",
+    "description": "William Herschel discovered Uranus, the first planet found by telescope and the first since antiquity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cotton-power-loom",
+    "friendly_name": "Power Loom Invented",
+    "year": 1785,
+    "category": "exploration",
+    "description": "Edmund Cartwright patented the power loom, mechanizing weaving and transforming the textile industry.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coulomb-electrostatics",
+    "friendly_name": "Coulomb Formulates Electrostatic Law",
+    "year": 1785,
+    "category": "exploration",
+    "description": "Charles-Augustin de Coulomb published his law describing the force between electric charges using a torsion balance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lavoisier-chemical-nomenclature",
+    "friendly_name": "Lavoisier Develops Chemical Nomenclature",
+    "year": 1787,
+    "category": "exploration",
+    "description": "Lavoisier co-authored a systematic chemical naming system that replaced alchemical terminology with rational names.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lagrange-mechanics",
+    "friendly_name": "Lagrange Develops Lagrangian Mechanics",
+    "year": 1788,
+    "category": "exploration",
+    "description": "Lagrange published Mécanique Analytique, reformulating classical mechanics using calculus of variations.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "chemistry-lavoisier",
+    "friendly_name": "Modern Chemistry",
+    "year": 1789,
+    "category": "exploration",
+    "description": "Lavoisier published Traité Élémentaire de Chimie, establishing modern chemistry with a list of elements and conservation of mass.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "metric-system-france",
+    "friendly_name": "Metric System Adopted",
+    "year": 1795,
+    "category": "exploration",
+    "description": "France officially adopted the metric system, standardizing measurement based on decimal units.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jenner-vaccination-smallpox",
+    "friendly_name": "Jenner Develops Vaccination Against Smallpox",
+    "year": 1796,
+    "category": "exploration",
+    "description": "Edward Jenner demonstrated that cowpox inoculation protected against smallpox, pioneering vaccination.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "volta-electric-battery",
+    "friendly_name": "Volta Invents Electric Battery",
+    "year": 1800,
+    "category": "exploration",
+    "description": "Alessandro Volta invented the voltaic pile, the first true electric battery producing a steady current.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "high-pressure-steam",
+    "friendly_name": "High-Pressure Steam Boiler Development",
+    "year": 1802,
+    "category": "exploration",
+    "description": "Richard Trevithick developed high-pressure steam engines, enabling more powerful and compact designs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "breech-loading-mechanism",
+    "friendly_name": "Breech-Loading Gun Mechanism",
+    "year": 1812,
+    "category": "exploration",
+    "description": "Early breech-loading firearms allowed loading from the rear, increasing firing rate over muzzle-loaders.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "young-double-slit-experiment",
+    "friendly_name": "Young Performs Double-Slit Interference Experiment",
+    "year": 1801,
+    "category": "exploration",
+    "description": "Thomas Young's double-slit experiment demonstrated light interference, providing evidence for wave theory of light.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "percussion-cap-invention",
+    "friendly_name": "Percussion Cap Invention",
+    "year": 1807,
+    "category": "exploration",
+    "description": "Scottish clergyman Alexander Forsyth patented the percussion ignition system, replacing unreliable flintlocks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "atom-dalton",
+    "friendly_name": "Atomic Theory",
+    "year": 1808,
+    "category": "exploration",
+    "description": "John Dalton published his atomic theory, proposing that elements consist of indivisible atoms with specific weights.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "avogadro-molecular-hypothesis",
+    "friendly_name": "Avogadro Proposes Molecular Hypothesis",
+    "year": 1811,
+    "category": "exploration",
+    "description": "Amedeo Avogadro proposed that equal volumes of gases at equal temperature and pressure contain equal numbers of molecules.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cuvier-paleontology",
+    "friendly_name": "Cuvier Founds Paleontology and Comparative Anatomy",
+    "year": 1812,
+    "category": "exploration",
+    "description": "Georges Cuvier established paleontology through fossil studies and demonstrated that species could go extinct.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fresnel-wave-optics",
+    "friendly_name": "Fresnel Develops Wave Theory of Light",
+    "year": 1818,
+    "category": "exploration",
+    "description": "Augustin-Jean Fresnel mathematically formalized the wave theory of light, explaining diffraction patterns.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "smith-stratigraphy",
+    "friendly_name": "William Smith Develops Stratigraphic Principle",
+    "year": 1815,
+    "category": "exploration",
+    "description": "William Smith published the first geological map of England, establishing stratigraphy using fossil identification.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "magnetism-electromagnetism",
+    "friendly_name": "Electromagnetism",
+    "year": 1820,
+    "category": "exploration",
+    "description": "Hans Christian Ørsted discovered that electric current produces a magnetic field, linking electricity and magnetism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ampere-electromagnetism",
+    "friendly_name": "Ampere Develops Electromagnetism",
+    "year": 1820,
+    "category": "exploration",
+    "description": "André-Marie Ampère formulated the mathematical theory of electromagnetism and the right-hand rule for current.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "carnot-thermodynamics",
+    "friendly_name": "Carnot Develops Thermodynamic Cycle",
+    "year": 1824,
+    "category": "exploration",
+    "description": "Sadi Carnot published Reflections on the Motive Power of Fire, establishing the theoretical limits of heat engines.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "railway-locomotive-stephenson",
+    "friendly_name": "Stephenson's Locomotive Success",
+    "year": 1829,
+    "category": "exploration",
+    "description": "George Stephenson's Rocket won the Rainhill Trials, proving steam locomotives viable for passenger railways.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lyell-uniformitarianism",
+    "friendly_name": "Lyell Develops Uniformitarian Geology",
+    "year": 1830,
+    "category": "exploration",
+    "description": "Charles Lyell published Principles of Geology, arguing Earth was shaped by slow, continuous natural processes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "faraday-electromagnetic-induction",
+    "friendly_name": "Faraday Discovers Electromagnetic Induction",
+    "year": 1831,
+    "category": "exploration",
+    "description": "Michael Faraday discovered electromagnetic induction, showing that changing magnetic fields generate electric current.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cell-structure",
+    "friendly_name": "Cell Theory",
+    "year": 1839,
+    "category": "exploration",
+    "description": "Schleiden and Schwann proposed cell theory, establishing that all living organisms are composed of cells.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joule-heat-energy",
+    "friendly_name": "Joule Establishes Heat and Energy Relationship",
+    "year": 1843,
+    "category": "exploration",
+    "description": "James Prescott Joule demonstrated the mechanical equivalent of heat, showing energy conversion between forms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vulcanization-goodyear",
+    "friendly_name": "Vulcanization of Rubber (Goodyear)",
+    "year": 1839,
+    "category": "exploration",
+    "description": "Charles Goodyear discovered vulcanization, making rubber durable and heat-resistant through sulfur treatment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "faraday-electromagnetic-field",
+    "friendly_name": "Faraday Develops Field Theory",
+    "year": 1845,
+    "category": "exploration",
+    "description": "Faraday introduced the concept of electromagnetic fields and demonstrated the magneto-optical (Faraday) effect.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anesthesia-ether",
+    "friendly_name": "Ether Anesthesia",
+    "year": 1846,
+    "category": "exploration",
+    "description": "William Morton publicly demonstrated ether anesthesia during surgery at Massachusetts General Hospital.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joule-mechanical-equivalent-heat",
+    "friendly_name": "Joule Measures Mechanical Equivalent of Heat",
+    "year": 1845,
+    "category": "exploration",
+    "description": "Joule precisely measured the mechanical equivalent of heat using his famous paddle wheel apparatus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "semmelweis-childbed-fever",
+    "friendly_name": "Semmelweis Reduces Puerperal Fever Deaths",
+    "year": 1847,
+    "category": "exploration",
+    "description": "Ignaz Semmelweis showed that handwashing with chlorinated lime drastically reduced maternal mortality in hospitals.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hooker-plant-distribution",
+    "friendly_name": "Hooker Studies Geographic Plant Distribution",
+    "year": 1847,
+    "category": "exploration",
+    "description": "Joseph Dalton Hooker studied Antarctic and global flora, pioneering the field of plant biogeography.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "rubber-cultivation-begins",
+    "friendly_name": "Rubber Tree Cultivation in Southeast Asia",
+    "year": 1876,
+    "category": "exploration",
+    "description": "Henry Wickham smuggled rubber seeds from Brazil to Kew Gardens, enabling plantation cultivation in Southeast Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "clausius-entropy",
+    "friendly_name": "Clausius Formulates Second Law of Thermodynamics",
+    "year": 1850,
+    "category": "exploration",
+    "description": "Rudolf Clausius formulated the second law of thermodynamics and introduced the concept of entropy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "compound-steam-engine",
+    "friendly_name": "Compound Steam Engine",
+    "year": 1854,
+    "category": "exploration",
+    "description": "John Elder patented the marine compound steam engine, using steam in successive cylinders for greater efficiency.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "virchow-cellular-pathology",
+    "friendly_name": "Virchow Establishes Cellular Pathology",
+    "year": 1858,
+    "category": "exploration",
+    "description": "Rudolf Virchow published Cellular Pathology, establishing that all diseases arise from changes in normal cells.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wallace-evolution-theory",
+    "friendly_name": "Wallace Develops Evolution Theory Independently",
+    "year": 1858,
+    "category": "exploration",
+    "description": "Alfred Russel Wallace independently conceived natural selection, prompting the joint Darwin-Wallace presentation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "huxley-vertebrate-anatomy",
+    "friendly_name": "Huxley Advances Vertebrate Anatomy",
+    "year": 1858,
+    "category": "exploration",
+    "description": "Thomas Henry Huxley advanced comparative vertebrate anatomy and became a leading defender of Darwin's evolution theory.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "darwin-evolution-origin",
+    "friendly_name": "Darwin Publishes Origin of Species",
+    "year": 1859,
+    "category": "exploration",
+    "description": "Charles Darwin published On the Origin of Species, presenting natural selection as the mechanism of evolution.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "maxwell-kinetic-theory",
+    "friendly_name": "Maxwell Develops Kinetic Theory of Gases",
+    "year": 1860,
+    "category": "exploration",
+    "description": "James Clerk Maxwell described gas behavior statistically, founding the kinetic theory of gases.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nightingale-nursing-reform",
+    "friendly_name": "Florence Nightingale Reforms Nursing Practice",
+    "year": 1860,
+    "category": "exploration",
+    "description": "Florence Nightingale founded the first professional nursing school at St Thomas' Hospital in London.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-weather-forecast",
+    "friendly_name": "Weather Forecast Service",
+    "year": 1861,
+    "category": "exploration",
+    "description": "Robert FitzRoy established the first daily weather forecasts published in The Times newspaper.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antiseptic-surgery",
+    "friendly_name": "Antiseptic Surgery",
+    "year": 1867,
+    "category": "exploration",
+    "description": "Joseph Lister introduced carbolic acid as an antiseptic in surgery, dramatically reducing infection rates.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maxwell-electromagnetic-equations",
+    "friendly_name": "Maxwell Formulates Electromagnetic Equations",
+    "year": 1865,
+    "category": "exploration",
+    "description": "Maxwell unified electricity, magnetism, and optics into four equations predicting electromagnetic waves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "inheritance-mendel",
+    "friendly_name": "Laws of Inheritance",
+    "year": 1866,
+    "category": "exploration",
+    "description": "Gregor Mendel published his experiments on pea plants, establishing the fundamental laws of genetic inheritance.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "haeckel-embryology",
+    "friendly_name": "Haeckel Develops Embryological Studies",
+    "year": 1866,
+    "category": "exploration",
+    "description": "Ernst Haeckel published Generelle Morphologie, proposing that embryonic development recapitulates evolutionary history.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mendeleev-periodic-table",
+    "friendly_name": "Mendeleev Creates Periodic Table of Elements",
+    "year": 1869,
+    "category": "exploration",
+    "description": "Dmitri Mendeleev arranged elements by atomic weight, predicting undiscovered elements and their properties.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "surgery-antiseptic-system",
+    "friendly_name": "Listerine Antiseptic",
+    "year": 1879,
+    "category": "exploration",
+    "description": "Listerine was formulated as a surgical antiseptic inspired by Joseph Lister's carbolic acid methods.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "koch-tuberculosis-bacterium",
+    "friendly_name": "Koch Discovers Tuberculosis Bacterium",
+    "year": 1882,
+    "category": "exploration",
+    "description": "Robert Koch identified Mycobacterium tuberculosis as the cause of TB, establishing germ theory of disease.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "surgery-local-anesthesia",
+    "friendly_name": "Local Anesthesia",
+    "year": 1884,
+    "category": "exploration",
+    "description": "Karl Koller demonstrated cocaine as the first local anesthetic for eye surgery in Vienna.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "x-ray-discovery",
+    "friendly_name": "X-Ray Discovery",
+    "year": 1895,
+    "category": "exploration",
+    "description": "Wilhelm Röntgen discovered X-rays, revolutionizing medical diagnosis and earning the first Nobel Prize in Physics.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "wright-brothers-flight",
+    "friendly_name": "Wright Brothers' First Flight",
+    "year": 1903,
+    "category": "exploration",
+    "description": "Orville and Wilbur Wright achieved the first powered, controlled airplane flight at Kitty Hawk, North Carolina.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "blood-clotting",
+    "friendly_name": "Blood Clotting Theory",
+    "year": 1905,
+    "category": "exploration",
+    "description": "Paul Morawitz described the classical theory of blood coagulation involving four clotting factors.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "antibiotics",
+    "friendly_name": "Penicillin Discovery",
+    "year": 1928,
+    "category": "exploration",
+    "description": "Alexander Fleming discovered penicillin when mold contaminated a bacterial culture, launching the antibiotic era.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sputnik-launch-space",
+    "friendly_name": "Sputnik Launch",
+    "year": 1957,
+    "category": "exploration",
+    "description": "The Soviet Union launched Sputnik 1, the first artificial satellite, igniting the Space Race with the United States.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "recurved-bow-design",
+    "friendly_name": "Recurved Bow Design",
+    "year": -2000,
+    "category": "exploration",
+    "description": "Central Asian nomads developed the recurved composite bow, storing more energy in a shorter design for mounted archery.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "winnowing-tray-fan",
+    "friendly_name": "Winnowing Tray and Fan Development",
+    "year": -2000,
+    "category": "exploration",
+    "description": "Asian farmers developed winnowing trays and fans to separate grain from chaff using wind.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "grain-storage-silos",
+    "friendly_name": "Grain Storage and Silo Design",
+    "year": -2000,
+    "category": "exploration",
+    "description": "Ancient Egyptians built granaries and silo structures to store surplus grain for trade and famine relief.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bronze-adoption-mediterranean",
+    "friendly_name": "Bronze Working Spreads Mediterranean",
+    "year": -2000,
+    "category": "exploration",
+    "description": "Bronze metallurgy spread across the Mediterranean, enabling stronger tools and weapons than copper alone.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "domestication-potato-americas",
+    "friendly_name": "Potato Domestication in Andes",
+    "year": -5000,
+    "category": "exploration",
+    "description": "Andean peoples domesticated the potato near Lake Titicaca, creating a staple crop for high-altitude farming.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "millet-adoption-china",
+    "friendly_name": "Millet Cultivation Spreads in Northern China",
+    "year": -6000,
+    "category": "exploration",
+    "description": "Foxtail and broomcorn millet became major cultivated crops in northern China's Yellow River valley.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "domestication-rice-southeast-asia",
+    "friendly_name": "Rice Domestication in Southeast Asia",
+    "year": -5000,
+    "category": "exploration",
+    "description": "Rice was domesticated in the Yangtze River valley, eventually becoming the staple food for much of Asia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "domestication-llama-alpaca",
+    "friendly_name": "Camelid Domestication in South America",
+    "year": -4000,
+    "category": "exploration",
+    "description": "Andean peoples domesticated llamas and alpacas for transport, wool, and meat in the high Andes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "domestication-maize-americas",
+    "friendly_name": "Maize Domestication in Mesoamerica",
+    "year": -7000,
+    "category": "exploration",
+    "description": "Indigenous peoples in the Balsas River valley of Mexico domesticated teosinte into maize, the Americas' most important crop.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "domestication-wheat-middle-east",
+    "friendly_name": "Wheat Domestication in Fertile Crescent",
+    "year": -9000,
+    "category": "exploration",
+    "description": "Early farmers in the Fertile Crescent domesticated emmer and einkorn wheat, launching the Neolithic agricultural revolution.",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,1658 @@
+[
+  {
+    "event_name": "romanization-britain",
+    "event_title": "Roman Conquest of Britain",
+    "approximate_year": 43,
+    "region": "Britain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "vercingetorix-gallic-revolt",
+    "event_title": "Vercingetorix Leads Gallic Revolt",
+    "approximate_year": 52,
+    "region": "Gaul",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "julius-caesar-conquest-gaul",
+    "event_title": "Julius Caesar Conquers Gaul",
+    "approximate_year": 58,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "siege-of-jerusalem-70ce",
+    "event_title": "Siege of Jerusalem by Titus",
+    "approximate_year": 70,
+    "region": "Judea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "masada-siege-defense",
+    "event_title": "Siege of Masada",
+    "approximate_year": 73,
+    "region": "Judea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "agricola-britain-conquest",
+    "event_title": "Agricola's Conquest of Britain",
+    "approximate_year": 78,
+    "region": "Britain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "xiongnu-conflicts-han",
+    "event_title": "Xiongnu Conflicts with Han Dynasty",
+    "approximate_year": 200,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "battle-of-wei-qiao",
+    "event_title": "Battle of Wei Qiao - Han-Xiongnu War",
+    "approximate_year": 200,
+    "region": "China",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "han-expansion",
+    "event_title": "Han Dynasty Expansion",
+    "approximate_year": 206,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "punic-wars-second",
+    "event_title": "Second Punic War",
+    "approximate_year": 218,
+    "region": "Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "aurelian-reunites-empire",
+    "event_title": "Aurelian Reunites Roman Empire",
+    "approximate_year": 270,
+    "region": "Roman Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "sima-yan-jin-unification",
+    "event_title": "Sima Yan Unifies China - Jin Dynasty",
+    "approximate_year": 280,
+    "region": "China",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "samudragupta-deccan-campaigns",
+    "event_title": "Samudragupta Conquers Deccan",
+    "approximate_year": 350,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "aksumite-nubian-conflicts",
+    "event_title": "Aksumite Kingdom Conflicts with Nubia",
+    "approximate_year": 350,
+    "region": "Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "great-migration-barbarians",
+    "event_title": "Great Migration of Barbarians",
+    "approximate_year": 375,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "stilicho-roman-general",
+    "event_title": "Stilicho's Military Campaigns",
+    "approximate_year": 395,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "stirrup-east-asia",
+    "event_title": "Stirrup Adoption in East Asia",
+    "approximate_year": 400,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "anglo-saxon-migration",
+    "event_title": "Anglo-Saxon Migration to Britain",
+    "approximate_year": 410,
+    "region": "Britain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "attila-hunnic-invasions",
+    "event_title": "Attila Invades Roman Empire",
+    "approximate_year": 451,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "battle-of-catalaunian-plains",
+    "event_title": "Battle of Catalaunian Plains",
+    "approximate_year": 451,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "skandagupta-gupta-restoration",
+    "event_title": "Skandagupta Defends Gupta Against Invasions",
+    "approximate_year": 455,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "hephthalite-invasions",
+    "event_title": "Hephthalite Invasions of Persia",
+    "approximate_year": 490,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "battle-of-vouille",
+    "event_title": "Clovis Defeats Visigoths at Vouille",
+    "approximate_year": 507,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "clovis-frankish-expansion",
+    "event_title": "Clovis Expands Frankish Kingdom",
+    "approximate_year": 510,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "justinian-gothic-war",
+    "event_title": "Justinian's Gothic War in Italy",
+    "approximate_year": 535,
+    "region": "Italy",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "belisarius-gothic-war",
+    "event_title": "Belisarius Recaptures Italy",
+    "approximate_year": 540,
+    "region": "Italy",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "standing-army",
+    "event_title": "Spartan Standing Army",
+    "approximate_year": 600,
+    "region": "Greece",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "gokturk-empire-expansion",
+    "event_title": "Göktürk Empire Expands Across Steppe",
+    "approximate_year": 600,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "stirrup-adoption-europe",
+    "event_title": "Stirrup Adoption in Early Medieval Europe",
+    "approximate_year": 600,
+    "region": "Western Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "early-tang-expansion",
+    "event_title": "Early Tang Dynasty Military Expansion",
+    "approximate_year": 618,
+    "region": "China",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "heraclius-campaigns-persia",
+    "event_title": "Heraclius Defeats Chosroes II",
+    "approximate_year": 622,
+    "region": "Byzantine",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "battle-of-mu-ta",
+    "event_title": "Battle of Mu'ta - Muslim-Byzantine Conflict",
+    "approximate_year": 629,
+    "region": "Middle East",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "siege-of-damascus-636",
+    "event_title": "Siege of Damascus by Arab Forces",
+    "approximate_year": 636,
+    "region": "Syria",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "siege-of-jerusalem-638",
+    "event_title": "Siege of Jerusalem by Arab Forces",
+    "approximate_year": 638,
+    "region": "Palestine",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "goguryeo-namgnang-battle",
+    "event_title": "Battle of Namgnang",
+    "approximate_year": 645,
+    "region": "Korea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "battle-karbala-husayn",
+    "event_title": "Battle of Karbala",
+    "approximate_year": 680,
+    "region": "Arabia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "tikal-calakmul-war",
+    "event_title": "Tikal-Calakmul Wars Escalate",
+    "approximate_year": 695,
+    "region": "Mesoamerica",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "siege-constantinople-arab",
+    "event_title": "Arab Siege of Constantinople",
+    "approximate_year": 717,
+    "region": "Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "charles-martel-frankish-victory",
+    "event_title": "Charles Martel Defeats Umayyads at Tours",
+    "approximate_year": 732,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "charlemagne-saxon-wars",
+    "event_title": "Charlemagne Conquers Saxony",
+    "approximate_year": 777,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_antiquity"
+  },
+  {
+    "event_name": "viking-raids-begin",
+    "event_title": "Viking Age Begins",
+    "approximate_year": 793,
+    "region": "Scandinavia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "longship-technology",
+    "event_title": "Longship Technology Perfection",
+    "approximate_year": 800,
+    "region": "Scandinavia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "chain-mail-evolution",
+    "event_title": "Chain Mail Armor Dominates Medieval Warfare",
+    "approximate_year": 800,
+    "region": "Western Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "viking-dublin-settlement",
+    "event_title": "Viking Settlement of Dublin",
+    "approximate_year": 837,
+    "region": "Ireland",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "chola-naval-supremacy",
+    "event_title": "Chola Dynasty Establishes Naval Supremacy",
+    "approximate_year": 920,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "gunpowder-china-adoption",
+    "event_title": "Gunpowder Weaponry Dominance in China",
+    "approximate_year": 1000,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "crossbow-adoption-medieval",
+    "event_title": "Crossbow Adoption in Medieval Warfare",
+    "approximate_year": 1000,
+    "region": "Western Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "castle-fortification-shift",
+    "event_title": "Castle Fortification Paradigm Shift",
+    "approximate_year": 1000,
+    "region": "Western Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "rajendra-chola-conquest",
+    "event_title": "Rajendra Chola's Victorious Conquests",
+    "approximate_year": 1012,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "basil-ii-bulgar-victories",
+    "event_title": "Battle of Serres Basil II Victory",
+    "approximate_year": 1014,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "basil-ii-bulgar-slayer",
+    "event_title": "Basil II Campaigns Balkan Conquest",
+    "approximate_year": 1018,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "manzikert-consequences-byzant",
+    "event_title": "Battle of Manzikert Consequences",
+    "approximate_year": 1071,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "song-gunpowder-weapons",
+    "event_title": "Gunpowder Weapons Development in Song Dynasty",
+    "approximate_year": 1100,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "antioch-crusader-conflicts",
+    "event_title": "Crusader-Muslim Conflicts Antioch",
+    "approximate_year": 1100,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "khwarezmian-shah-conquest",
+    "event_title": "Khwarezmian Shah Conquers Khorasan",
+    "approximate_year": 1141,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "second-crusade",
+    "event_title": "Second Crusade Launched",
+    "approximate_year": 1147,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "dorian-invasion",
+    "event_title": "Dorian Invasion of Greece",
+    "approximate_year": 1150,
+    "region": "Greece",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "ayyubid-saladin-crusades",
+    "event_title": "Ayyubid Dynasty Under Saladin",
+    "approximate_year": 1169,
+    "region": "Middle East",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "montgisard-crusaders-saladin",
+    "event_title": "Battle of Montgisard - Crusaders Victory",
+    "approximate_year": 1177,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "second-crusade-battle-hattin",
+    "event_title": "Battle of Hattin Crusaders Defeated",
+    "approximate_year": 1187,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "jaffa-crusades",
+    "event_title": "Crusaders Capture Jaffa",
+    "approximate_year": 1192,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "rajasthan-kingdoms",
+    "event_title": "Rajasthani Kingdom Wars",
+    "approximate_year": 1200,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "maya-postclassic-conflicts",
+    "event_title": "Maya Postclassic Period Conflicts",
+    "approximate_year": 1200,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "tonga-tongan-conquest",
+    "event_title": "Tonga Expands Through Pacific Conquests",
+    "approximate_year": 1200,
+    "region": "Polynesia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "iron-stirrups-africa",
+    "event_title": "Iron Stirrup Adoption in Sub-Saharan Africa",
+    "approximate_year": 1200,
+    "region": "Sub-Saharan Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "mongolian-stirrup-cavalry",
+    "event_title": "Mongol Mounted Cavalry Revolution",
+    "approximate_year": 1200,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "fourth-crusade-byzantine",
+    "event_title": "Fourth Crusade Sack of Constantinople",
+    "approximate_year": 1204,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-conquest-china",
+    "event_title": "Mongol Conquest of China Begins",
+    "approximate_year": 1205,
+    "region": "China",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "damietta-crusade-fifth",
+    "event_title": "Fifth Crusade - Damietta Campaign Begins",
+    "approximate_year": 1218,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-conquest-khwarezm",
+    "event_title": "Mongol Conquest of Khwarezm",
+    "approximate_year": 1219,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-invasions-europe",
+    "event_title": "Mongol Invasions of Europe",
+    "approximate_year": 1237,
+    "region": "Eastern Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "mongol-invasion-hungary",
+    "event_title": "Mongol Invasion of Hungary",
+    "approximate_year": 1241,
+    "region": "Eastern Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "seventh-crusade",
+    "event_title": "Seventh Crusade Saint Louis",
+    "approximate_year": 1248,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "long-bow-english-development",
+    "event_title": "English Longbow Tactics Develop",
+    "approximate_year": 1250,
+    "region": "England",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "mongol-conquest-bagdad",
+    "event_title": "Mongol Siege of Baghdad",
+    "approximate_year": 1258,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-naval-expeditions",
+    "event_title": "Mongol Naval Expeditions Japan Invasion",
+    "approximate_year": 1274,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-invasion-japan-first",
+    "event_title": "Mongol Invasion Japan First",
+    "approximate_year": 1274,
+    "region": "Japan",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mongol-khubilai-conquest",
+    "event_title": "Kublai Khan Conquers Song Dynasty China",
+    "approximate_year": 1279,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mongol-invasion-japan-second",
+    "event_title": "Mongol Invasion Japan Second Kamikaze",
+    "approximate_year": 1281,
+    "region": "Japan",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "acre-final-siege",
+    "event_title": "Final Siege of Acre",
+    "approximate_year": 1291,
+    "region": "Eastern Mediterranean",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "alauddin-khalji-conquest",
+    "event_title": "Alauddin Khalji's Southern Indian Conquests",
+    "approximate_year": 1295,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "champa-vietnam-conflicts",
+    "event_title": "Champa Vietnam Military Conflicts",
+    "approximate_year": 1300,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "maori-pa-fortification",
+    "event_title": "Maori Pa Fortifications Become Standard",
+    "approximate_year": 1300,
+    "region": "Polynesia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "catalan-grand-company",
+    "event_title": "Catalan Grand Company Byzantine",
+    "approximate_year": 1302,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "mali-civil-war",
+    "event_title": "Mali Civil War After Musa",
+    "approximate_year": 1337,
+    "region": "Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "ottoman-standing-army",
+    "event_title": "Janissary Corps",
+    "approximate_year": 1365,
+    "region": "Ottoman Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "timur-tamerlane-conqueror",
+    "event_title": "Timur (Tamerlane) Begins Conquests",
+    "approximate_year": 1369,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "gunpowder-weapons-adoption",
+    "event_title": "Gunpowder Weapons Widely Adopted",
+    "approximate_year": 1400,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "ottoman-military-innovation",
+    "event_title": "Ottoman Janissary Corps Innovations",
+    "approximate_year": 1400,
+    "region": "Middle East",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "oyo-empire-military-innovation",
+    "event_title": "Oyo Empire Develops Cavalry-Based Military",
+    "approximate_year": 1400,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "hussite-wars",
+    "event_title": "Hussite Wars",
+    "approximate_year": 1419,
+    "region": "Bohemia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "ottoman-siege-galata",
+    "event_title": "Ottoman Siege of Galata",
+    "approximate_year": 1422,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "aztec-expansion-conquests",
+    "event_title": "Aztec Expansion Military Campaigns",
+    "approximate_year": 1440,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "inca-expansion",
+    "event_title": "Inca Empire Massive Expansion",
+    "approximate_year": 1450,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "gunpowder-military-adoption-europe",
+    "event_title": "Gunpowder Weaponry Adoption in European Warfare",
+    "approximate_year": 1450,
+    "region": "Western Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_paradigm_shifts"
+  },
+  {
+    "event_name": "fall-constantinople-1453",
+    "event_title": "Fall of Constantinople 1453",
+    "approximate_year": 1453,
+    "region": "Byzantine",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "ottoman-final-siege-1453",
+    "event_title": "Siege of Constantinople Final",
+    "approximate_year": 1453,
+    "region": "Byzantine Empire",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "hundred-years-war-conclusion",
+    "event_title": "Hundred Years War Ends",
+    "approximate_year": 1453,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "shimazu-sengoku",
+    "event_title": "Sengoku Daimyo Wars Begin",
+    "approximate_year": 1467,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "inca-conquest-expansion",
+    "event_title": "Inca Conquest Expansion Thupa",
+    "approximate_year": 1470,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "inca-tupac-amaru",
+    "event_title": "Inca Conquest of Lake Titicaca Region",
+    "approximate_year": 1470,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "reconquista-completion",
+    "event_title": "Reconquista Completed",
+    "approximate_year": 1492,
+    "region": "Spain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "italian-wars",
+    "event_title": "Italian Wars Begin",
+    "approximate_year": 1494,
+    "region": "Italy",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "songhai-expansion",
+    "event_title": "Songhai Empire Expansion under Askia",
+    "approximate_year": 1500,
+    "region": "Sub-Saharan Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "oromo-expansion",
+    "event_title": "Oromo Expansion in East Africa",
+    "approximate_year": 1500,
+    "region": "Sub-Saharan Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "ming-great-wall",
+    "event_title": "Great Wall Expansion During Ming Dynasty",
+    "approximate_year": 1500,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "songhai-military-gunpowder",
+    "event_title": "Songhai Military Gunpowder Infantry",
+    "approximate_year": 1500,
+    "region": "Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "inca-civil-war-dispute",
+    "event_title": "Inca Civil War Huascar Atahualpa",
+    "approximate_year": 1500,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_medieval"
+  },
+  {
+    "event_name": "kanem-bornu-gunpowder-adoption",
+    "event_title": "Kanem-Bornu Adopts Gunpowder Weapons",
+    "approximate_year": 1500,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "songhai-military-organization",
+    "event_title": "Songhai Military Organized into Professional Units",
+    "approximate_year": 1500,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "aztec-expansion-reign",
+    "event_title": "Aztec Empire Expansion Under Montezuma",
+    "approximate_year": 1502,
+    "region": "Mesoamerica",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "mombasa-portuguese-control",
+    "event_title": "Mombasa Becomes Portuguese Trading Post",
+    "approximate_year": 1505,
+    "region": "East Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "shaybanid-bukhara-captured",
+    "event_title": "Shaybanids Capture Bukhara",
+    "approximate_year": 1507,
+    "region": "Central Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "portuguese-goa-conquest",
+    "event_title": "Portuguese Conquest of Goa",
+    "approximate_year": 1510,
+    "region": "India",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "portuguese-calicut-control",
+    "event_title": "Portuguese Control Calicut",
+    "approximate_year": 1513,
+    "region": "India",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "safavid-battled-ottomans",
+    "event_title": "Safavid-Ottoman Military Conflicts",
+    "approximate_year": 1514,
+    "region": "Middle East",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "spanish-conquest-aztec",
+    "event_title": "Fall of Aztec Empire",
+    "approximate_year": 1521,
+    "region": "Mexico",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "madura-sultanate-fall",
+    "event_title": "Madura Sultanate Fall in Southeast Asia",
+    "approximate_year": 1528,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "spanish-tercio-formation",
+    "event_title": "Spanish Tercio Military Formation",
+    "approximate_year": 1530,
+    "region": "Spain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "inca-conflict-spanish",
+    "event_title": "Inca Civil War",
+    "approximate_year": 1532,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "spanish-conquest-peru",
+    "event_title": "Conquest of Peru by Spain",
+    "approximate_year": 1533,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "araucanians",
+    "event_title": "Araucanian Resistance Begins",
+    "approximate_year": 1540,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "mapuche-arauco-war",
+    "event_title": "Arauco War: Mapuche Resistance Against Spanish",
+    "approximate_year": 1550,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "mughal-akbar",
+    "event_title": "Akbar Expands Mughal Empire",
+    "approximate_year": 1556,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "wars-of-religion-france",
+    "event_title": "Wars of Religion in France",
+    "approximate_year": 1562,
+    "region": "France",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "oda-nobunaga-unification",
+    "event_title": "Oda Nobunaga's Unification Campaigns",
+    "approximate_year": 1570,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "ottoman-janissary-corps",
+    "event_title": "Janissary Corps Military Reorganization",
+    "approximate_year": 1580,
+    "region": "Middle East",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "toyotomi-hideo-invasions",
+    "event_title": "Toyotomi Hideyoshi Invades Korea",
+    "approximate_year": 1592,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "korean-imjin-war",
+    "event_title": "Korean Imjin War (Japanese Invasion)",
+    "approximate_year": 1592,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "imjin-war-turtle-ship",
+    "event_title": "First Turtle Ship Combat Victory",
+    "approximate_year": 1592,
+    "region": "Korea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "mombasa-fort",
+    "event_title": "Fort Jesus Built in Mombasa",
+    "approximate_year": 1593,
+    "region": "Sub-Saharan Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "imjin-war-second-invasion",
+    "event_title": "Second Japanese Invasion of Korea",
+    "approximate_year": 1597,
+    "region": "Korea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_korea_americas"
+  },
+  {
+    "event_name": "russo-swedish-wars",
+    "event_title": "Russo-Swedish Wars (Great Northern War Precursors)",
+    "approximate_year": 1600,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "spanish-armada-aftermath",
+    "event_title": "Spanish Naval Decline After Armada Era",
+    "approximate_year": 1600,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "russian-expansion-siberia",
+    "event_title": "Russian Expansion into Siberia",
+    "approximate_year": 1600,
+    "region": "Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "trinh-nguyen-civil-war",
+    "event_title": "Trinh-Nguyen Civil War in Vietnam",
+    "approximate_year": 1627,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "shimabara-rebellion",
+    "event_title": "Shimabara Rebellion - Tokugawa Japan",
+    "approximate_year": 1637,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "portuguese-restoration-war",
+    "event_title": "Portuguese Restoration War Independence",
+    "approximate_year": 1640,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "swedish-empire-peak",
+    "event_title": "Swedish Empire Military Peak",
+    "approximate_year": 1640,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "qing-expansion",
+    "event_title": "Qing Dynasty Expansion",
+    "approximate_year": 1644,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "louis-xiv-expansion",
+    "event_title": "Louis XIV's Territorial Expansion Begins",
+    "approximate_year": 1650,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "asante-confederacy-military",
+    "event_title": "Asante Confederacy Develops Professional Army",
+    "approximate_year": 1650,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "llanquihue-battle",
+    "event_title": "Battle of Llanquihue - Mapuche Victory",
+    "approximate_year": 1655,
+    "region": "South America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "aurangzeb-expansion-begin",
+    "event_title": "Aurangzeb's Deccan Expansion Campaign Begins",
+    "approximate_year": 1657,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "danish-swedish-wars",
+    "event_title": "Danish-Swedish Wars Over Baltic",
+    "approximate_year": 1660,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "three-years-war-maroons",
+    "event_title": "Three Years War - Jamaican Maroons",
+    "approximate_year": 1674,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "maratha-resistance-begins",
+    "event_title": "Maratha Resistance Against Mughal Empire",
+    "approximate_year": 1674,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "peter-great-reforms",
+    "event_title": "Peter the Great's Military Modernization",
+    "approximate_year": 1680,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "kangxi-military-campaigns",
+    "event_title": "Kangxi Emperor's Military Campaigns",
+    "approximate_year": 1680,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "deccan-campaigns-mughal",
+    "event_title": "Mughal Deccan Campaigns Peak",
+    "approximate_year": 1685,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "qing-conquers-mongolia",
+    "event_title": "Qing Dynasty Conquers Outer Mongolia",
+    "approximate_year": 1690,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "sikh-khalsa-panth",
+    "event_title": "Khalsa Panth Military Order Established",
+    "approximate_year": 1699,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "non_western"
+  },
+  {
+    "event_name": "prussian-discipline-training",
+    "event_title": "Prussian Military Training System",
+    "approximate_year": 1700,
+    "region": "Prussia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "dahomey-amazon-warriors-formation",
+    "event_title": "Dahomey Amazon Warriors Regiment Established",
+    "approximate_year": 1700,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "military-academy-russia",
+    "event_title": "Cadet Academy",
+    "approximate_year": 1701,
+    "region": "Russia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "historical_firsts"
+  },
+  {
+    "event_name": "sikh-mughal-conflicts",
+    "event_title": "Sikh-Mughal Military Conflicts Peak",
+    "approximate_year": 1705,
+    "region": "South Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "asante-akwamu-conquest",
+    "event_title": "Asante Confederacy Conquers Akwamu",
+    "approximate_year": 1717,
+    "region": "West Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "maroon-wars-jamaica",
+    "event_title": "Maroon Wars for Freedom in Jamaica",
+    "approximate_year": 1720,
+    "region": "Americas",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "frederick-great-militarism",
+    "event_title": "Frederick the Great's Military Reforms",
+    "approximate_year": 1740,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "qing-xinjiang-conquest",
+    "event_title": "Qing Conquest of Xinjiang",
+    "approximate_year": 1755,
+    "region": "East Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "burmese-siamese-wars",
+    "event_title": "Burmese-Siamese Wars",
+    "approximate_year": 1760,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "ayutthaya-fall",
+    "event_title": "Fall of Ayutthaya Kingdom - Burmese Invasion",
+    "approximate_year": 1767,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "tay-son-rebellion",
+    "event_title": "Tay Son Rebellion in Vietnam",
+    "approximate_year": 1771,
+    "region": "Southeast Asia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_early_modern"
+  },
+  {
+    "event_name": "washington-appointed-commander",
+    "event_title": "Washington Appointed Commander",
+    "approximate_year": 1775,
+    "region": "America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "valley-forge-winter",
+    "event_title": "Valley Forge Encampment",
+    "approximate_year": 1777,
+    "region": "Pennsylvania",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "yorktown-surrender",
+    "event_title": "Yorktown Surrender",
+    "approximate_year": 1781,
+    "region": "Virginia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "war-declared-austria",
+    "event_title": "War Declared Against Austria",
+    "approximate_year": 1792,
+    "region": "France",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "barbary-wars",
+    "event_title": "Barbary Wars Begin",
+    "approximate_year": 1801,
+    "region": "Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "napoleonic-wars-begin",
+    "event_title": "Napoleonic Wars Begin",
+    "approximate_year": 1803,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "peninsular-war",
+    "event_title": "Peninsular War Begins",
+    "approximate_year": 1808,
+    "region": "Spain",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "napoleon-retreat-russia",
+    "event_title": "Napoleon's Russian Campaign",
+    "approximate_year": 1812,
+    "region": "Russia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "battle-waterloo-napoleon",
+    "event_title": "Battle of Waterloo",
+    "approximate_year": 1815,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "zulu-military-innovation",
+    "event_title": "Zulu Develop Assegai Spear Tactics",
+    "approximate_year": 1818,
+    "region": "Southern Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "mfecane-wars",
+    "event_title": "Mfecane Wars and Zulu Expansion",
+    "approximate_year": 1820,
+    "region": "Sub-Saharan Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "gap_analysis"
+  },
+  {
+    "event_name": "zulu-impis-regiment",
+    "event_title": "Zulu Impis Military Regiments Organized",
+    "approximate_year": 1820,
+    "region": "Southern Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "sotho-moshoeshoe-reforms",
+    "event_title": "Moshoeshoe Reforms Sotho Military Organization",
+    "approximate_year": 1820,
+    "region": "Southern Africa",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "maori-musket-wars",
+    "event_title": "Maori Musket Wars Transform Warfare",
+    "approximate_year": 1820,
+    "region": "Polynesia",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "r2_africa_pacific"
+  },
+  {
+    "event_name": "opium-wars-second",
+    "event_title": "Second Opium War",
+    "approximate_year": 1856,
+    "region": "China",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "consequence_chain"
+  },
+  {
+    "event_name": "american-civil-war",
+    "event_title": "American Civil War Begins",
+    "approximate_year": 1861,
+    "region": "America",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "blitzkrieg-tactics-deployed",
+    "event_title": "Blitzkrieg Tactics Deployed",
+    "approximate_year": 1939,
+    "region": "Europe",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "atomic-bomb-nagasaki-ww2",
+    "event_title": "Atomic Bomb on Nagasaki",
+    "approximate_year": 1945,
+    "region": "Japan",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "korean-war-begins-1950",
+    "event_title": "Korean War Begins",
+    "approximate_year": 1950,
+    "region": "Korea",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "hungarian-uprising-1956",
+    "event_title": "Hungarian Uprising",
+    "approximate_year": 1956,
+    "region": "Hungary",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  },
+  {
+    "event_name": "vietnam-war-escalates-1964",
+    "event_title": "Vietnam War Escalates",
+    "approximate_year": 1964,
+    "region": "Vietnam",
+    "original_category": "military",
+    "game_category": "conflict",
+    "sources": "chronology"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "nero-great-fire",
+    "friendly_name": "Great Fire of Rome",
+    "year": 64,
+    "category": "disasters",
+    "description": "A devastating fire burned for six days, destroying ten of Rome's fourteen districts under Emperor Nero's reign.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "eruption-mount-vesuvius",
+    "friendly_name": "Mount Vesuvius Erupts - Pompeii Destroyed",
+    "year": 79,
+    "category": "disasters",
+    "description": "The volcanic eruption buried the Roman cities of Pompeii and Herculaneum under meters of ash and pumice.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "medieval-warm-period",
+    "friendly_name": "Medieval Warm Period Begins",
+    "year": 950,
+    "category": "disasters",
+    "description": "A period of unusually warm climate in the North Atlantic enabled Viking exploration and agricultural expansion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "deforestation-mediterranean",
+    "friendly_name": "Mediterranean Deforestation Crisis",
+    "year": 1000,
+    "category": "disasters",
+    "description": "Centuries of shipbuilding and agriculture stripped Mediterranean forests, causing widespread soil erosion.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "land-reclamation-netherlands",
+    "friendly_name": "Dutch Polder Land Reclamation",
+    "year": 1200,
+    "category": "disasters",
+    "description": "The Dutch began systematically draining lakes and marshes using dikes and windmills to create farmland.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "little-ice-age-onset",
+    "friendly_name": "Little Ice Age Begins",
+    "year": 1300,
+    "category": "disasters",
+    "description": "Global temperatures dropped, causing crop failures, famines, and the abandonment of Norse Greenland colonies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "irrigation-abandonment-southwest",
+    "friendly_name": "Ancestral Puebloan Irrigation Abandonment",
+    "year": 1300,
+    "category": "disasters",
+    "description": "Prolonged drought forced the Ancestral Puebloans to abandon their sophisticated irrigation systems and cliff dwellings.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "european-famine-1315-1317",
+    "friendly_name": "Great Famine of 1315-1317",
+    "year": 1315,
+    "category": "disasters",
+    "description": "Torrential rains and crop failures across Northern Europe killed millions and ended a period of growth.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "plague-rats-ships",
+    "friendly_name": "Plague-Infected Rats in Mediterranean Trade",
+    "year": 1347,
+    "category": "disasters",
+    "description": "Genoese trading ships carried plague-infected rats from Caffa to Sicily, introducing the Black Death to Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "plague-medieval-waves",
+    "friendly_name": "Medieval Plague Waves Hit Europe Repeatedly",
+    "year": 1361,
+    "category": "disasters",
+    "description": "Recurring plague outbreaks after the initial Black Death continued to devastate European populations for decades.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "horse-introduction-americas",
+    "friendly_name": "Horse Reintroduction to Americas",
+    "year": 1493,
+    "category": "disasters",
+    "description": "Spanish conquistadors brought horses to the Americas, transforming Indigenous cultures and Great Plains ecology.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "deforestation-britain",
+    "friendly_name": "Deforestation Crisis Drives Charcoal Shortage",
+    "year": 1600,
+    "category": "disasters",
+    "description": "Britain's forests were nearly depleted by iron smelting demand, spurring the eventual shift to coal fuel.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rinderpest-africa-impact",
+    "friendly_name": "Rinderpest Epizootic in East Africa",
+    "year": 1891,
+    "category": "disasters",
+    "description": "A cattle plague killed up to 90% of herds in East Africa, devastating pastoral societies and enabling colonial conquest.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "soil-exhaustion-mesopotamia",
+    "friendly_name": "Mesopotamian Soil Salinization Cycle",
+    "year": -2000,
+    "category": "disasters",
+    "description": "Irrigation salt buildup made Sumerian farmland unproductive, forcing civilizations to shift locations repeatedly.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nine-eleven-attacks",
+    "friendly_name": "September 11 Attacks",
+    "year": 2001,
+    "category": "disasters",
+    "description": "Terrorists hijacked four planes and attacked the World Trade Center and Pentagon, killing nearly 3,000 people.",
+    "difficulty": "easy"
+  }
+]

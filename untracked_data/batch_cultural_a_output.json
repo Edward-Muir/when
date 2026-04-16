@@ -1,0 +1,986 @@
+[
+  {
+    "name": "aboriginal-australian",
+    "friendly_name": "Aboriginal Australian Culture Established",
+    "year": -50000,
+    "category": "cultural",
+    "description": "Aboriginal Australians developed one of the world's oldest continuous cultures across the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indus-valley-civilization",
+    "friendly_name": "Indus Valley Civilization Peak",
+    "year": -2600,
+    "category": "cultural",
+    "description": "The Indus Valley civilization reached its height with advanced urban planning at Mohenjo-daro and Harappa.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aboriginal-rock-art",
+    "friendly_name": "Aboriginal Rock Art Traditions",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Aboriginal Australians created elaborate rock art depicting animals, spirits, and ceremonies across the continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aboriginal-songlines-mapping",
+    "friendly_name": "Aboriginal Songlines Map Australian Continent",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Songlines formed an intricate network of routes across Australia, encoding geography in oral tradition.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aboriginal-uluru-site",
+    "friendly_name": "Uluru Sacred Site in Aboriginal Culture",
+    "year": -2000,
+    "category": "cultural",
+    "description": "Uluru became a central sacred site in Aboriginal spiritual practice in Australia's Northern Territory.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lapita-culture-expansion",
+    "friendly_name": "Lapita Culture Spreads Through Melanesia",
+    "year": -1200,
+    "category": "cultural",
+    "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "aboriginal-didgeridoo-ceremonial",
+    "friendly_name": "Didgeridoo Used in Aboriginal Ceremonies",
+    "year": -1000,
+    "category": "cultural",
+    "description": "The didgeridoo became integral to Aboriginal ceremonial life in northern Australia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ovid-metamorphoses",
+    "friendly_name": "Ovid Writes Metamorphoses",
+    "year": 8,
+    "category": "cultural",
+    "description": "Roman poet Ovid completed his mythological epic of transformations, one of Western literature's most influential works.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "livy-ab-urbe-condita",
+    "friendly_name": "Livy's Ab Urbe Condita Written",
+    "year": -27,
+    "category": "cultural",
+    "description": "Roman historian Livy began his monumental 142-volume history of Rome from its founding.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "virgil-aeneid-composition",
+    "friendly_name": "Virgil Composes the Aeneid",
+    "year": -29,
+    "category": "cultural",
+    "description": "Virgil composed Rome's national epic linking Roman origins to the Trojan hero Aeneas.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "augustan-age-begins",
+    "friendly_name": "Augustan Age of Roman Literature Begins",
+    "year": -27,
+    "category": "cultural",
+    "description": "Augustus's reign inaugurated a golden age of Latin literature with Virgil, Horace, and Ovid.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "paul-apostle-missions",
+    "friendly_name": "Apostle Paul's Missionary Journeys",
+    "year": 47,
+    "category": "cultural",
+    "description": "Paul of Tarsus undertook missionary journeys across the Mediterranean, spreading Christianity to Gentile communities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "council-of-jerusalem",
+    "friendly_name": "Council of Jerusalem Addresses Jewish Law",
+    "year": 49,
+    "category": "cultural",
+    "description": "Early Christian leaders met in Jerusalem and decided Gentile converts need not follow all Jewish law.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "thomas-apostle-india",
+    "friendly_name": "Apostle Thomas Reaches India",
+    "year": 52,
+    "category": "cultural",
+    "description": "According to tradition, the Apostle Thomas brought Christianity to the Malabar Coast of India.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lucan-pharsalia",
+    "friendly_name": "Lucan Writes Pharsalia",
+    "year": 65,
+    "category": "cultural",
+    "description": "Roman poet Lucan composed his epic poem about the civil war between Caesar and Pompey.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tacitus-histories-written",
+    "friendly_name": "Tacitus' Histories Written",
+    "year": 105,
+    "category": "cultural",
+    "description": "Roman historian Tacitus wrote his Histories covering the turbulent Year of the Four Emperors and its aftermath.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-culture",
+    "friendly_name": "Nazca Culture Desert Lines Created",
+    "year": 100,
+    "category": "cultural",
+    "description": "The Nazca people created enormous geoglyphs in Peru's desert, visible only from above.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ancestral-puebloan-development",
+    "friendly_name": "Ancestral Puebloan Culture Develops",
+    "year": 100,
+    "category": "cultural",
+    "description": "Ancestral Puebloan peoples began developing distinctive architecture and agriculture in the American Southwest.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-fresco-paintings",
+    "friendly_name": "Roman Fresco Painting Tradition",
+    "year": 70,
+    "category": "cultural",
+    "description": "Roman fresco painting flourished, with masterworks preserved at Pompeii and Herculaneum.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kushana-buddhism",
+    "friendly_name": "Kushana Empire Spreads Buddhism Eastward",
+    "year": 150,
+    "category": "cultural",
+    "description": "Under Kanishka, the Kushan Empire promoted Buddhism and facilitated its spread along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marcus-aurelius-meditations",
+    "friendly_name": "Marcus Aurelius' Meditations Written",
+    "year": 170,
+    "category": "cultural",
+    "description": "The Roman emperor wrote his Stoic philosophical journal while campaigning on the empire's frontiers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "apuleius-golden-ass",
+    "friendly_name": "Apuleius Writes The Golden Ass",
+    "year": 170,
+    "category": "cultural",
+    "description": "Apuleius wrote the only complete surviving Latin novel, a comic tale of magical transformation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "library-pergamum",
+    "friendly_name": "Library of Pergamum Flourishes",
+    "year": -170,
+    "category": "cultural",
+    "description": "The Library of Pergamum rivaled Alexandria as a center of learning with 200,000 scrolls.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ajanta-caves",
+    "friendly_name": "Ajanta Caves Buddhist Art",
+    "year": 450,
+    "category": "cultural",
+    "description": "Indian artisans carved and painted elaborate Buddhist murals in the rock-cut Ajanta Caves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-lines",
+    "friendly_name": "Nazca Lines Construction Period",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Nazca civilization in Peru created massive desert geoglyphs depicting animals and geometric shapes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "buddhism-spreads-central-asia",
+    "friendly_name": "Buddhism Spreads Through Central Asia",
+    "year": 200,
+    "category": "cultural",
+    "description": "Buddhist monks and merchants carried the religion along Silk Road trade routes into Central Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mogollon-culture-agriculture",
+    "friendly_name": "Mogollon Culture Practices Agriculture",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Mogollon people developed farming communities in the mountains of the American Southwest.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mahabharata-complete",
+    "friendly_name": "Mahabharata Epic Completed",
+    "year": 200,
+    "category": "cultural",
+    "description": "India's great Sanskrit epic reached its final form, becoming the world's longest poem at 200,000 verses.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ramayana-classic-version",
+    "friendly_name": "Ramayana Epic Standardized",
+    "year": 200,
+    "category": "cultural",
+    "description": "The Ramayana, attributed to Valmiki, reached its classical form as a foundational Hindu epic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "silk-road-textile-exchange",
+    "friendly_name": "Silk Road Textile Trade and Exchange",
+    "year": 200,
+    "category": "cultural",
+    "description": "Silk and textile trade along the Silk Road facilitated cultural exchange between China, Central Asia, and Rome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zoroastrianism-state-religion-persia",
+    "friendly_name": "Zoroastrianism as State Religion of Persia",
+    "year": 224,
+    "category": "cultural",
+    "description": "The Sassanid Empire established Zoroastrianism as the official state religion of Persia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cyprian-bishop-carthage",
+    "friendly_name": "Cyprian Bishop of Carthage Leadership",
+    "year": 249,
+    "category": "cultural",
+    "description": "Cyprian became Bishop of Carthage, shaping early Christian theology on church unity and rebaptism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mayan-written-calendar",
+    "friendly_name": "Mayan Written Calendar System Develops",
+    "year": -100,
+    "category": "cultural",
+    "description": "The Maya developed sophisticated Long Count and Calendar Round systems for tracking time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hopewell-mound-group",
+    "friendly_name": "Hopewell Mound Group Burial Rites",
+    "year": 100,
+    "category": "cultural",
+    "description": "The Hopewell culture built elaborate burial mounds and maintained vast trade networks across eastern North America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ashoka-rock-edicts",
+    "friendly_name": "Ashoka Rock Edicts Spread Buddhism",
+    "year": -260,
+    "category": "cultural",
+    "description": "Emperor Ashoka inscribed Buddhist principles on pillars and rocks across the Indian subcontinent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nazca-settlement-lines",
+    "friendly_name": "Nazca Culture Creates Geoglyphs",
+    "year": 300,
+    "category": "cultural",
+    "description": "The Nazca people etched enormous figures into Peru's arid plains for ritual and astronomical purposes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "greek-mosaic-tradition",
+    "friendly_name": "Greek Mosaic Art Tradition Flourishes",
+    "year": -300,
+    "category": "cultural",
+    "description": "Greek artisans perfected pebble and tessera mosaic techniques, notably at Pella in Macedonia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "diocletian-persecution-christians",
+    "friendly_name": "Diocletian Persecution of Christians",
+    "year": 303,
+    "category": "cultural",
+    "description": "Emperor Diocletian launched the most severe Roman persecution of Christians, destroying churches and scriptures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "donatist-controversy",
+    "friendly_name": "Donatist Schism in African Christianity",
+    "year": 311,
+    "category": "cultural",
+    "description": "A schism erupted in North African Christianity over whether clergy who lapsed during persecution could serve.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "constantine-conversion",
+    "friendly_name": "Constantine's Conversion to Christianity",
+    "year": 312,
+    "category": "cultural",
+    "description": "Emperor Constantine converted to Christianity after the Battle of Milvian Bridge, transforming Roman religion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "arianism-controversy",
+    "friendly_name": "Arianism Spreads in Christian Church",
+    "year": 318,
+    "category": "cultural",
+    "description": "Arius of Alexandria taught that Christ was created, sparking a major theological crisis in early Christianity.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "council-of-antioch",
+    "friendly_name": "Council of Antioch Addresses Arianism",
+    "year": 341,
+    "category": "cultural",
+    "description": "Church leaders convened at Antioch to address the Arian controversy over the nature of Christ.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "alexander-spreading-hellenism",
+    "friendly_name": "Alexander the Great Spreads Hellenism",
+    "year": -330,
+    "category": "cultural",
+    "description": "Alexander's conquests spread Greek language, culture, and philosophy across the Near East and Central Asia.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "aksumite-christianity",
+    "friendly_name": "Aksumite Empire Adopts Christianity",
+    "year": 330,
+    "category": "cultural",
+    "description": "King Ezana of Aksum in modern Ethiopia converted to Christianity, making it one of the first Christian states.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wang-xifeng-calligraphy",
+    "friendly_name": "Wang Xi-Zhi's Calligraphy Codified",
+    "year": 353,
+    "category": "cultural",
+    "description": "Wang Xizhi created the Preface to the Orchid Pavilion, revered as the greatest Chinese calligraphy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moche-portrait-pottery",
+    "friendly_name": "Moche Portrait Pottery Production Peak",
+    "year": 350,
+    "category": "cultural",
+    "description": "Moche artisans in Peru created remarkably realistic ceramic portrait vessels of individuals.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "legalist-philosophy-qi",
+    "friendly_name": "Legalism Ascendant in Qi State",
+    "year": -360,
+    "category": "cultural",
+    "description": "Legalist philosophy gained influence in the Chinese state of Qi during the Warring States period.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "theodosius-christianity-official",
+    "friendly_name": "Theodosius Makes Christianity Official",
+    "year": 380,
+    "category": "cultural",
+    "description": "Emperor Theodosius declared Nicene Christianity the official religion of the Roman Empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "plato-founds-academy",
+    "friendly_name": "Plato Founds the Academy",
+    "year": -387,
+    "category": "cultural",
+    "description": "Plato established the Academy in Athens, the Western world's first institution of higher learning.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "cassian-monasticism",
+    "friendly_name": "Cassian Founds Monastic Traditions",
+    "year": 415,
+    "category": "cultural",
+    "description": "John Cassian founded monasteries in Marseille and wrote influential guides to monastic life.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "moche-civilization",
+    "friendly_name": "Moche Civilization Peak",
+    "year": 400,
+    "category": "cultural",
+    "description": "The Moche civilization reached its zenith in coastal Peru with monumental pyramids and fine metalwork.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gupta-golden-age",
+    "friendly_name": "Gupta Golden Age - Science and Mathematics",
+    "year": 400,
+    "category": "cultural",
+    "description": "India's Gupta dynasty presided over breakthroughs in mathematics, astronomy, and Sanskrit literature.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maya-writing-system",
+    "friendly_name": "Maya Hieroglyphic Writing System Develops",
+    "year": -300,
+    "category": "cultural",
+    "description": "The Maya developed one of the few fully independent writing systems in human history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nestorian-missionaries-asia",
+    "friendly_name": "Nestorian Missionaries Spread to Central Asia",
+    "year": 450,
+    "category": "cultural",
+    "description": "Nestorian Christian missionaries carried their faith along trade routes into Persia and Central Asia.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "zoroastrian-avesta",
+    "friendly_name": "Zoroastrian Avesta Codified",
+    "year": 400,
+    "category": "cultural",
+    "description": "The Sassanid Empire compiled Zoroastrian sacred texts into the written Avesta canon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kalidasa-shakuntala",
+    "friendly_name": "Kalidasa Writes Shakuntala Mahabharata",
+    "year": 400,
+    "category": "cultural",
+    "description": "Kalidasa wrote Abhijnanasakuntalam, considered the finest Sanskrit drama and a masterpiece of world literature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kalidasa-drama",
+    "friendly_name": "Kalidasa Pioneers Sanskrit Drama",
+    "year": 400,
+    "category": "cultural",
+    "description": "Kalidasa elevated Sanskrit drama to its peak during the Gupta period with poetic plays and epics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scythian-mound-burials",
+    "friendly_name": "Scythian Royal Mound Burials Peak",
+    "year": -400,
+    "category": "cultural",
+    "description": "Scythian nomads buried rulers in elaborate kurgans across the Eurasian steppe with gold artifacts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pelagian-controversy",
+    "friendly_name": "Pelagian Controversy on Free Will",
+    "year": 410,
+    "category": "cultural",
+    "description": "Pelagius challenged Augustine's doctrine of original sin, sparking a major debate on grace and free will.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "euripides-medea",
+    "friendly_name": "Euripides Writes Major Tragedies",
+    "year": -431,
+    "category": "cultural",
+    "description": "Euripides premiered Medea in Athens, revolutionizing Greek tragedy with psychologically complex characters.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sophocles-oedipus",
+    "friendly_name": "Sophocles Writes Oedipus Rex",
+    "year": -429,
+    "category": "cultural",
+    "description": "Sophocles wrote the definitive Greek tragedy about fate and self-knowledge, still performed worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nestorian-schism",
+    "friendly_name": "Nestorian Schism Divides Eastern Church",
+    "year": 431,
+    "category": "cultural",
+    "description": "The Council of Ephesus condemned Nestorius, splitting the Eastern church over the nature of Christ.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "saint-patrick-ireland",
+    "friendly_name": "Saint Patrick Brings Christianity to Ireland",
+    "year": 432,
+    "category": "cultural",
+    "description": "Saint Patrick began his mission to convert Ireland, becoming the island's patron saint.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "democritus-atomism",
+    "friendly_name": "Democritus Proposes Atomic Theory",
+    "year": -440,
+    "category": "cultural",
+    "description": "Greek philosopher Democritus proposed that all matter consists of indivisible atoms in a void.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aristophanes-comedy",
+    "friendly_name": "Aristophanes Pioneers Greek Comedy",
+    "year": -425,
+    "category": "cultural",
+    "description": "Aristophanes dominated Athenian comedy with satirical plays mocking politics, philosophy, and society.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bhartrihari-poetry",
+    "friendly_name": "Bhartrihari Writes Subhasita Poetry",
+    "year": 450,
+    "category": "cultural",
+    "description": "Indian poet Bhartrihari composed three centuries of verses on love, ethics, and renunciation.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "nasca-settlement-cahuachi",
+    "friendly_name": "Cahuachi Religious Center Flourishes",
+    "year": 200,
+    "category": "cultural",
+    "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "monophysite-controversy",
+    "friendly_name": "Monophysite Controversy in Christianity",
+    "year": 451,
+    "category": "cultural",
+    "description": "The Council of Chalcedon rejected Monophysitism, splitting churches in Egypt, Syria, and Armenia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aeschylus-tragedy-origins",
+    "friendly_name": "Aeschylus Develops Greek Tragedy Form",
+    "year": -472,
+    "category": "cultural",
+    "description": "Aeschylus introduced a second actor and complex dialogue, transforming Greek tragedy as an art form.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nok-civilization",
+    "friendly_name": "Nok Civilization in West Africa",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Nok culture in Nigeria produced some of sub-Saharan Africa's earliest terracotta sculptures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "zapotec-monte-alban",
+    "friendly_name": "Zapotec Culture at Monte Alban",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Zapotec founded Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ancestral-dorset",
+    "friendly_name": "Ancestral Dorset Culture Arctic Region",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Dorset culture adapted to life in the Arctic with specialized hunting technology and ivory carvings.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "nok-civilization-nigeria",
+    "friendly_name": "Nok Civilization Flourishes in Nigeria",
+    "year": -500,
+    "category": "cultural",
+    "description": "The Nok people of central Nigeria created distinctive terracotta figurines and early iron smelting.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "takshashila-university-scholars",
+    "friendly_name": "Takshashila University Advances Scholarship",
+    "year": -500,
+    "category": "cultural",
+    "description": "Takshashila (Taxila) in ancient India became a leading center of learning for Buddhist and Hindu scholars.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "boethius-logic-translation",
+    "friendly_name": "Boethius Translates Greek Logic",
+    "year": 510,
+    "category": "cultural",
+    "description": "Boethius translated Aristotle's logical works into Latin, preserving Greek philosophy for medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bamiyan-buddha-colossal",
+    "friendly_name": "Bamiyan Colossal Buddha Completed",
+    "year": 550,
+    "category": "cultural",
+    "description": "The 55-meter Bamiyan Buddha was carved into a cliff in Afghanistan, the tallest standing Buddha of its time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "adena-mound-burials",
+    "friendly_name": "Adena Mound Burial Complex Peak",
+    "year": -300,
+    "category": "cultural",
+    "description": "The Adena culture built conical burial mounds across the Ohio Valley for elite ceremonial interments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "boethius-consolation",
+    "friendly_name": "Boethius Writes Consolation of Philosophy",
+    "year": 524,
+    "category": "cultural",
+    "description": "Boethius wrote his philosophical masterwork while imprisoned, blending Platonic thought with Christian themes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baekje-five-temple-mission",
+    "friendly_name": "Baekje Buddhist Mission to Japan",
+    "year": 538,
+    "category": "cultural",
+    "description": "The Korean kingdom of Baekje formally introduced Buddhism to Japan, transforming Japanese culture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "greek-vase-painting-golden-age",
+    "friendly_name": "Greek Vase Painting Golden Age",
+    "year": -530,
+    "category": "cultural",
+    "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dunhuang-mogao-caves",
+    "friendly_name": "Mogao Caves Buddhist Complex Expanded",
+    "year": 550,
+    "category": "cultural",
+    "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "columba-scotland-monasticism",
+    "friendly_name": "Columba Founds Monastery on Iona",
+    "year": 563,
+    "category": "cultural",
+    "description": "Irish monk Columba founded a monastery on the island of Iona, spreading Christianity across Scotland.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "augustine-mission-britain",
+    "friendly_name": "Augustine's Mission to Britain",
+    "year": 597,
+    "category": "cultural",
+    "description": "Pope Gregory sent Augustine to convert the Anglo-Saxons, establishing the English church at Canterbury.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irish-monasticism-height",
+    "friendly_name": "Irish Monasticism Golden Age",
+    "year": 600,
+    "category": "cultural",
+    "description": "Irish monasteries became Europe's premier centers of learning, preserving classical texts through the Dark Ages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-classical-period",
+    "friendly_name": "Maya Classical Period Flourishes",
+    "year": 600,
+    "category": "cultural",
+    "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moche-civilization-peru",
+    "friendly_name": "Moche Civilization Flourishes in Peru",
+    "year": 450,
+    "category": "cultural",
+    "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fremont-culture",
+    "friendly_name": "Fremont Culture of Great Basin",
+    "year": 600,
+    "category": "cultural",
+    "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "byzantine-mosaic-tradition",
+    "friendly_name": "Byzantine Mosaic Art Tradition Peak",
+    "year": 547,
+    "category": "cultural",
+    "description": "Byzantine mosaic art reached its peak at Ravenna's San Vitale with luminous gold-ground compositions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "irish-monastery-art",
+    "friendly_name": "Irish Monastery Art Tradition",
+    "year": 600,
+    "category": "cultural",
+    "description": "Irish monks developed distinctive interlace and illumination styles in manuscript art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nazca-pottery-style",
+    "friendly_name": "Nazca Polychrome Pottery Flourishes",
+    "year": 400,
+    "category": "cultural",
+    "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "goguryeo-murals-tombs",
+    "friendly_name": "Goguryeo Tomb Murals Peak Artistic Period",
+    "year": 550,
+    "category": "cultural",
+    "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "spread-of-islam-arabian-peninsula",
+    "friendly_name": "Spread of Islam Across Arabian Peninsula",
+    "year": 630,
+    "category": "cultural",
+    "description": "Islam spread rapidly across the Arabian Peninsula following Muhammad's conquest of Mecca.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "samarkand-zoroastrian-temple",
+    "friendly_name": "Zoroastrian Fire Temple Built in Samarkand",
+    "year": 500,
+    "category": "cultural",
+    "description": "A Zoroastrian fire temple was constructed in Samarkand, reflecting the religion's reach along the Silk Road.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hejira-prophet-muhammad",
+    "friendly_name": "Hejira of Prophet Muhammad",
+    "year": 622,
+    "category": "cultural",
+    "description": "Muhammad's migration from Mecca to Medina marks year one of the Islamic calendar.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sutton-hoo-burial",
+    "friendly_name": "Sutton Hoo Ship Burial",
+    "year": 625,
+    "category": "cultural",
+    "description": "An Anglo-Saxon king was buried with treasure in a ship at Sutton Hoo in Suffolk, England.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "isidore-seville-encyclopedia",
+    "friendly_name": "Isidore of Seville's Encyclopaedia",
+    "year": 630,
+    "category": "cultural",
+    "description": "Isidore of Seville compiled the Etymologiae, a vast encyclopedia preserving classical knowledge for medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sappho-poetry",
+    "friendly_name": "Sappho's Poetry Collections",
+    "year": -600,
+    "category": "cultural",
+    "description": "Greek poet Sappho composed lyric poetry on the island of Lesbos, celebrated across the ancient world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moche-ceramics-art",
+    "friendly_name": "Moche Ceramic Art and Portraiture",
+    "year": 400,
+    "category": "cultural",
+    "description": "Moche potters in Peru produced highly realistic ceramic portraits and narrative scene vessels.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "durrow-gospel-manuscript",
+    "friendly_name": "Book of Durrow Illuminated Manuscript",
+    "year": 680,
+    "category": "cultural",
+    "description": "The Book of Durrow, one of the earliest insular illuminated manuscripts, blended Celtic and Anglo-Saxon art.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "umayyad-mosaics-art",
+    "friendly_name": "Umayyad Mosaic Art and Architecture",
+    "year": 710,
+    "category": "cultural",
+    "description": "The Umayyad Caliphate produced magnificent mosaics at the Dome of the Rock and the Great Mosque of Damascus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chavin-culture",
+    "friendly_name": "Chavin Culture Peak",
+    "year": -700,
+    "category": "cultural",
+    "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tang-poetry-golden-age",
+    "friendly_name": "Tang Dynasty Poetry Golden Age",
+    "year": 720,
+    "category": "cultural",
+    "description": "Tang China's golden age of poetry produced masters like Li Bai and Du Fu, still revered today.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tang-luoyang-capital",
+    "friendly_name": "Chang'an Becomes Cosmopolitan Capital",
+    "year": 700,
+    "category": "cultural",
+    "description": "Tang dynasty Chang'an became the world's largest city and a cosmopolitan hub of Silk Road trade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "islamic-calligraphy-tradition",
+    "friendly_name": "Islamic Calligraphy Tradition Established",
+    "year": 700,
+    "category": "cultural",
+    "description": "Islamic calligraphy emerged as a supreme art form for transcribing the Quran in early Arabic scripts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lindisfarne-gospels",
+    "friendly_name": "Lindisfarne Gospels Created",
+    "year": 715,
+    "category": "cultural",
+    "description": "Monks at Lindisfarne created a masterpiece of insular illuminated manuscript art in Northumbria.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "anglo-saxon-manuscript-art",
+    "friendly_name": "Anglo-Saxon Manuscript Illumination",
+    "year": 700,
+    "category": "cultural",
+    "description": "Anglo-Saxon scribes developed distinctive manuscript illumination blending Celtic, Germanic, and Mediterranean styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "beowulf-composition",
+    "friendly_name": "Beowulf Composition",
+    "year": 725,
+    "category": "cultural",
+    "description": "The oldest surviving English epic poem tells of a hero who slays monsters in Scandinavian lands.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "byzantine-image-dispute",
+    "friendly_name": "Byzantine Iconoclasm Period",
+    "year": 726,
+    "category": "cultural",
+    "description": "Emperor Leo III banned religious icons, sparking a century-long crisis in the Byzantine Empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bede-ecclesiastical-history",
+    "friendly_name": "Bede Writes Ecclesiastical History",
+    "year": 731,
+    "category": "cultural",
+    "description": "The Venerable Bede completed his history of the English church, earning the title Father of English History.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "copan-ruler-18-rabbit",
+    "friendly_name": "Copan Stela Erection Under 18 Rabbit",
+    "year": 731,
+    "category": "cultural",
+    "description": "Maya ruler 18 Rabbit commissioned elaborate stelae at Copan during the city's artistic peak.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tang-cosmopolitan-cities",
+    "friendly_name": "Tang Dynasty Cosmopolitan Cities - Chang'an Peak",
+    "year": 750,
+    "category": "cultural",
+    "description": "Tang dynasty cities like Chang'an hosted a million residents from across Eurasia at their peak.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-cities-peak",
+    "friendly_name": "Maya City-States Reach Population Peak",
+    "year": 750,
+    "category": "cultural",
+    "description": "Maya city-states reached peak populations of over 100,000 before the Classic period collapse.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "seokguram-grotto",
+    "friendly_name": "Seokguram Grotto Buddha Completed",
+    "year": 774,
+    "category": "cultural",
+    "description": "Korea's Silla kingdom completed the Seokguram Grotto, housing a masterful granite Buddha statue.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-olympic-games",
+    "friendly_name": "First Olympic Games",
+    "year": -776,
+    "category": "cultural",
+    "description": "The first Olympic Games were held at Olympia in Greece, honoring Zeus with athletic competitions.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "archaic-period-greece",
+    "friendly_name": "Archaic Period of Greece Begins",
+    "year": -800,
+    "category": "cultural",
+    "description": "Greece entered the Archaic period with the rise of city-states, colonization, and the Greek alphabet.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mayan-classic-period",
+    "friendly_name": "Mayan Classic Period Peak",
+    "year": 800,
+    "category": "cultural",
+    "description": "Maya civilization reached its architectural and artistic peak across the Yucatan and Guatemala.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "adena-culture",
+    "friendly_name": "Adena Culture Eastern North America",
+    "year": -800,
+    "category": "cultural",
+    "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mon-buddhism",
+    "friendly_name": "Mon Kingdom Theravada Buddhism",
+    "year": 600,
+    "category": "cultural",
+    "description": "The Mon people of Southeast Asia became key transmitters of Theravada Buddhism in the region.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "homer-iliad-odyssey",
+    "friendly_name": "Homer Composes Iliad and Odyssey",
+    "year": -750,
+    "category": "cultural",
+    "description": "Homer composed the foundational epics of Western literature about the Trojan War and Odysseus's journey home.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "byzantine-icon-painting",
+    "friendly_name": "Byzantine Icon Painting Formalized",
+    "year": 843,
+    "category": "cultural",
+    "description": "After iconoclasm ended, Byzantine icon painting was formalized with strict theological conventions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "japanese-calligraphy-art",
+    "friendly_name": "Japanese Calligraphy Art Tradition",
+    "year": 800,
+    "category": "cultural",
+    "description": "Japanese calligraphy emerged as a refined art form during the early Heian period, adapting Chinese styles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "java-temple-sculpture",
+    "friendly_name": "Javanese Hindu-Buddhist Temple Sculpture",
+    "year": 800,
+    "category": "cultural",
+    "description": "Javanese artisans carved elaborate reliefs at Borobudur and Prambanan, blending Hindu and Buddhist art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "la-venta-olmec",
+    "friendly_name": "La Venta Olmec Ceremonial Center",
+    "year": -900,
+    "category": "cultural",
+    "description": "La Venta became the Olmec civilization's major center with colossal stone heads and pyramid complexes.",
+    "difficulty": "hard"
+  }
+]
