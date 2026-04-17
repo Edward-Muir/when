@@ -19,9 +19,38 @@ interface SidebarProps {
   onMissingImageFilterChange: (value: boolean) => void;
 }
 
-function formatCategoryLabel(category: string): string {
-  return category.charAt(0).toUpperCase() + category.slice(1);
+const ERAS = [
+  { id: 'prehistory', name: 'Prehistory', startYear: -Infinity, endYear: -3001 },
+  { id: 'ancient', name: 'Ancient', startYear: -3000, endYear: 499 },
+  { id: 'medieval', name: 'Medieval', startYear: 500, endYear: 1499 },
+  { id: 'renaissance', name: 'Renaissance', startYear: 1500, endYear: 1759 },
+  { id: 'industrial', name: 'Industrial', startYear: 1760, endYear: 1913 },
+  { id: 'worldWars', name: 'World Wars', startYear: 1914, endYear: 1945 },
+  { id: 'coldWar', name: 'Cold War', startYear: 1946, endYear: 1991 },
+  { id: 'modern', name: 'Modern', startYear: 1992, endYear: 2100 },
+] as const;
+
+type EraId = (typeof ERAS)[number]['id'];
+
+function eraForYear(year: number): EraId {
+  const match = ERAS.find((e) => year >= e.startYear && year <= e.endYear);
+  return (match ?? ERAS[ERAS.length - 1]).id;
 }
+
+const CATEGORY_ABBR: Record<string, string> = {
+  conflict: 'CON',
+  cultural: 'CUL',
+  diplomatic: 'DIP',
+  disasters: 'DIS',
+  exploration: 'EXP',
+  infrastructure: 'INF',
+};
+
+function abbrFor(category: string): string {
+  return CATEGORY_ABBR[category] ?? category.slice(0, 3).toUpperCase();
+}
+
+type FlatEvent = HistoricalEvent & { category: string };
 
 export function Sidebar({
   eventsByCategory,
@@ -38,24 +67,16 @@ export function Sidebar({
   missingImageFilter,
   onMissingImageFilterChange,
 }: SidebarProps) {
-  const categoryOrder = useMemo(() => {
-    if (!eventsByCategory) return ['deprecated'];
-    const cats = Object.keys(eventsByCategory)
-      .filter((key) => key !== 'deprecated')
-      .sort();
-    cats.push('deprecated');
-    return cats;
-  }, [eventsByCategory]);
+  const [expandedEras, setExpandedEras] = useState<Set<string>>(new Set(['modern']));
+  const [deprecatedExpanded, setDeprecatedExpanded] = useState(false);
 
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(['conflict']));
-
-  const toggleCategory = (category: string) => {
-    setExpandedCategories((prev) => {
+  const toggleEra = (era: string) => {
+    setExpandedEras((prev) => {
       const next = new Set(prev);
-      if (next.has(category)) {
-        next.delete(category);
+      if (next.has(era)) {
+        next.delete(era);
       } else {
-        next.add(category);
+        next.add(era);
       }
       return next;
     });
@@ -68,59 +89,71 @@ export function Sidebar({
     difficultyFilter.size > 0 ||
     missingImageFilter;
 
-  // Filter events by search query, year range, and difficulty
-  const filteredEventsByCategory = useMemo(() => {
-    if (!eventsByCategory) return eventsByCategory;
+  const { allEvents, deprecatedEvents } = useMemo(() => {
+    if (!eventsByCategory) {
+      return { allEvents: [] as FlatEvent[], deprecatedEvents: [] as FlatEvent[] };
+    }
+    const main: FlatEvent[] = [];
+    const deprecated: FlatEvent[] = [];
+    for (const [category, events] of Object.entries(eventsByCategory)) {
+      if (!events) continue;
+      const target = category === 'deprecated' ? deprecated : main;
+      for (const event of events) {
+        target.push({ ...event, category });
+      }
+    }
+    main.sort((a, b) => a.year - b.year);
+    deprecated.sort((a, b) => a.year - b.year);
+    return { allEvents: main, deprecatedEvents: deprecated };
+  }, [eventsByCategory]);
 
+  const matchesFilters = useMemo(() => {
     const query = searchQuery.trim().toLowerCase();
     const hasSearchFilter = query.length > 0;
     const hasYearFilter = yearRange.min !== null || yearRange.max !== null;
     const hasDifficultyFilter = difficultyFilter.size > 0;
 
-    if (!hasSearchFilter && !hasYearFilter && !hasDifficultyFilter && !missingImageFilter) {
-      return eventsByCategory;
-    }
+    return (e: FlatEvent) => {
+      if (hasSearchFilter) {
+        const matchesSearch =
+          e.friendly_name.toLowerCase().includes(query) ||
+          e.name.toLowerCase().includes(query) ||
+          e.year.toString().includes(query);
+        if (!matchesSearch) return false;
+      }
+      if (hasYearFilter) {
+        if (yearRange.min !== null && e.year < yearRange.min) return false;
+        if (yearRange.max !== null && e.year > yearRange.max) return false;
+      }
+      if (hasDifficultyFilter) {
+        if (!difficultyFilter.has(e.difficulty)) return false;
+      }
+      if (missingImageFilter) {
+        if (e.image_url) return false;
+      }
+      return true;
+    };
+  }, [searchQuery, yearRange, difficultyFilter, missingImageFilter]);
 
-    const filtered: Record<string, HistoricalEvent[]> = {};
-    for (const category of categoryOrder) {
-      filtered[category] = [];
+  const eventsByEra = useMemo(() => {
+    const grouped: Record<string, { filtered: FlatEvent[]; total: number }> = {};
+    for (const era of ERAS) {
+      grouped[era.id] = { filtered: [], total: 0 };
     }
-
-    for (const category of categoryOrder) {
-      const events = eventsByCategory[category];
-      if (events) {
-        filtered[category] = events.filter((e) => {
-          if (hasSearchFilter) {
-            const matchesSearch =
-              e.friendly_name.toLowerCase().includes(query) ||
-              e.name.toLowerCase().includes(query) ||
-              e.year.toString().includes(query);
-            if (!matchesSearch) return false;
-          }
-          if (hasYearFilter) {
-            if (yearRange.min !== null && e.year < yearRange.min) return false;
-            if (yearRange.max !== null && e.year > yearRange.max) return false;
-          }
-          if (hasDifficultyFilter) {
-            if (!difficultyFilter.has(e.difficulty)) return false;
-          }
-          if (missingImageFilter) {
-            if (e.image_url) return false;
-          }
-          return true;
-        });
+    for (const event of allEvents) {
+      const era = eraForYear(event.year);
+      grouped[era].total += 1;
+      if (matchesFilters(event)) {
+        grouped[era].filtered.push(event);
       }
     }
+    return grouped;
+  }, [allEvents, matchesFilters]);
 
-    return filtered;
-  }, [
-    eventsByCategory,
-    categoryOrder,
-    searchQuery,
-    yearRange,
-    difficultyFilter,
-    missingImageFilter,
-  ]);
+  const filteredDeprecated = useMemo(
+    () => deprecatedEvents.filter(matchesFilters),
+    [deprecatedEvents, matchesFilters]
+  );
 
   if (!eventsByCategory) {
     return (
@@ -130,10 +163,51 @@ export function Sidebar({
     );
   }
 
+  const renderEventRow = (event: FlatEvent) => {
+    const categoryEvents = eventsByCategory[event.category] || [];
+    const originalIndex = categoryEvents.findIndex((e) => e.name === event.name);
+    const isSelected = currentCategory === event.category && currentIndex === originalIndex;
+    const hasChanges = pendingChanges.has(`${event.category}:${event.name}`);
+
+    return (
+      <button
+        key={`${event.category}:${event.name}`}
+        onClick={() => onSelectEvent(event.category, originalIndex)}
+        className={`flex w-full items-center gap-2 px-3 py-1.5 text-left text-xs transition-colors ${
+          isSelected ? 'bg-accent text-white' : 'text-text hover:bg-bg-secondary'
+        }`}
+      >
+        {hasChanges && (
+          <span
+            className={`h-1.5 w-1.5 flex-shrink-0 rounded-full ${
+              isSelected ? 'bg-white' : 'bg-warning'
+            }`}
+          />
+        )}
+        <span className="flex-1 truncate">{event.friendly_name}</span>
+        <span
+          className={`flex-shrink-0 font-mono text-[9px] tracking-wide ${
+            isSelected ? 'text-white/70' : 'text-text-secondary/70'
+          }`}
+          title={event.category}
+        >
+          {abbrFor(event.category)}
+        </span>
+        <span
+          className={`flex-shrink-0 tabular-nums ${
+            isSelected ? 'text-white/80' : 'text-text-secondary'
+          }`}
+        >
+          {event.year}
+        </span>
+      </button>
+    );
+  };
+
   return (
     <aside className="flex w-64 flex-col border-r border-border bg-white">
       <div className="flex items-center justify-between border-b border-border p-3">
-        <span className="text-sm font-medium text-text">Categories</span>
+        <span className="text-sm font-medium text-text">Eras</span>
         <button
           onClick={onAddEvent}
           className="flex h-7 w-7 items-center justify-center rounded bg-accent text-white transition-colors hover:bg-accent-hover"
@@ -238,17 +312,15 @@ export function Sidebar({
       </div>
 
       <div className="flex-1 overflow-auto">
-        {categoryOrder.map((category) => {
-          const events = filteredEventsByCategory?.[category] || [];
-          const originalEvents = eventsByCategory[category] || [];
-          const isExpanded = expandedCategories.has(category);
-          const isDeprecated = category === 'deprecated';
-          const Icon = isDeprecated ? Archive : isExpanded ? FolderOpen : Folder;
+        {ERAS.map((era) => {
+          const { filtered, total } = eventsByEra[era.id];
+          const isExpanded = expandedEras.has(era.id);
+          const Icon = isExpanded ? FolderOpen : Folder;
 
           return (
-            <div key={category} className="border-b border-border">
+            <div key={era.id} className="border-b border-border">
               <button
-                onClick={() => toggleCategory(category)}
+                onClick={() => toggleEra(era.id)}
                 className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors hover:bg-bg-secondary"
               >
                 {isExpanded ? (
@@ -256,63 +328,60 @@ export function Sidebar({
                 ) : (
                   <ChevronRight className="h-4 w-4 text-text-secondary" />
                 )}
-                <Icon className={`h-4 w-4 ${isDeprecated ? 'text-error' : 'text-accent'}`} />
-                <span className="flex-1 text-sm font-medium text-text">
-                  {formatCategoryLabel(category)}
-                </span>
+                <Icon className="h-4 w-4 text-accent" />
+                <span className="flex-1 text-sm font-medium text-text">{era.name}</span>
                 <span className="text-xs text-text-secondary">
-                  {hasAnyFilter
-                    ? `${events.length}/${originalEvents.length}`
-                    : originalEvents.length}
+                  {hasAnyFilter ? `${filtered.length}/${total}` : total}
                 </span>
               </button>
 
               {isExpanded && (
-                <div className="max-h-64 overflow-auto bg-bg">
-                  {events.length === 0 ? (
+                <div className="max-h-96 overflow-auto bg-bg">
+                  {filtered.length === 0 ? (
                     <div className="px-3 py-2 text-xs text-text-secondary">
                       {hasAnyFilter ? 'No matches' : 'No events'}
                     </div>
                   ) : (
-                    events.map((event) => {
-                      // Find original index for selection
-                      const originalIndex = originalEvents.findIndex((e) => e.name === event.name);
-                      const isSelected =
-                        currentCategory === category && currentIndex === originalIndex;
-                      const hasChanges = pendingChanges.has(`${category}:${event.name}`);
-
-                      return (
-                        <button
-                          key={event.name}
-                          onClick={() => onSelectEvent(category, originalIndex)}
-                          className={`flex w-full items-center gap-2 px-3 py-1.5 text-left text-xs transition-colors ${
-                            isSelected ? 'bg-accent text-white' : 'text-text hover:bg-bg-secondary'
-                          }`}
-                        >
-                          {hasChanges && (
-                            <span
-                              className={`h-1.5 w-1.5 flex-shrink-0 rounded-full ${
-                                isSelected ? 'bg-white' : 'bg-warning'
-                              }`}
-                            />
-                          )}
-                          <span className="flex-1 truncate">{event.friendly_name}</span>
-                          <span
-                            className={`flex-shrink-0 ${
-                              isSelected ? 'text-white/80' : 'text-text-secondary'
-                            }`}
-                          >
-                            {event.year}
-                          </span>
-                        </button>
-                      );
-                    })
+                    filtered.map(renderEventRow)
                   )}
                 </div>
               )}
             </div>
           );
         })}
+
+        {/* Deprecated folder */}
+        <div className="border-b border-border">
+          <button
+            onClick={() => setDeprecatedExpanded((v) => !v)}
+            className="flex w-full items-center gap-2 px-3 py-2 text-left transition-colors hover:bg-bg-secondary"
+          >
+            {deprecatedExpanded ? (
+              <ChevronDown className="h-4 w-4 text-text-secondary" />
+            ) : (
+              <ChevronRight className="h-4 w-4 text-text-secondary" />
+            )}
+            <Archive className="h-4 w-4 text-error" />
+            <span className="flex-1 text-sm font-medium text-text">Deprecated</span>
+            <span className="text-xs text-text-secondary">
+              {hasAnyFilter
+                ? `${filteredDeprecated.length}/${deprecatedEvents.length}`
+                : deprecatedEvents.length}
+            </span>
+          </button>
+
+          {deprecatedExpanded && (
+            <div className="max-h-96 overflow-auto bg-bg">
+              {filteredDeprecated.length === 0 ? (
+                <div className="px-3 py-2 text-xs text-text-secondary">
+                  {hasAnyFilter ? 'No matches' : 'No events'}
+                </div>
+              ) : (
+                filteredDeprecated.map(renderEventRow)
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </aside>
   );
