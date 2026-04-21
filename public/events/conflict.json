@@ -1101,11 +1101,13 @@
     "category": "conflict",
     "description": "American colonists proved they could stand against British regulars despite losing.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg/330px-The_Death_of_General_Warren_at_the_Battle_of_Bunker%27s_Hill.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-bunker-hill_phbd4h?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 460359,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bunker_Hill"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bunker_Hill",
+    "color": "#291e1b",
+    "text_color": "light"
   },
   {
     "name": "american-independence",
@@ -5089,11 +5091,13 @@
     "category": "conflict",
     "description": "The first military engagements of the American Revolution, where colonial militiamen fired the 'shot heard round the world' against British troops.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/The_Battle_of_Lexington.jpg/330px-The_Battle_of_Lexington.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battles-of-lexington-and-concord_peta3g?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 223,
+    "image_height": 440,
     "wikipedia_views": 580230,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord",
+    "color": "#9ea4a7",
+    "text_color": "dark"
   },
   {
     "name": "shays-rebellion",

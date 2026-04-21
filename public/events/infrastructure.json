@@ -66,11 +66,13 @@
     "category": "infrastructure",
     "description": "Construction began on the iconic prehistoric monument in England.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Stonehenge2007_07_30.jpg/330px-Stonehenge2007_07_30.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stonehenge-begins_wbfgdj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 1263613,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stonehenge",
+    "color": "#232022",
+    "text_color": "light"
   },
   {
     "name": "step-pyramid-djoser",
@@ -319,11 +321,13 @@
     "category": "infrastructure",
     "description": "A giant bronze statue of the sun god Helios was erected at the harbor.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Colosse_de_Rhodes_%28Barclay%29.jpg/330px-Colosse_de_Rhodes_%28Barclay%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/colossus-rhodes_kvdw2v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 451,
+    "image_height": 440,
     "wikipedia_views": 60748,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rhodes_Colossus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Rhodes_Colossus",
+    "color": "#464444",
+    "text_color": "light"
   },
   {
     "name": "lighthouse-alexandria",
@@ -1547,11 +1551,13 @@
     "category": "infrastructure",
     "description": "Commercial oil was discovered in Dammam, transforming Saudi Arabia's economy.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/330px-Flag_of_Saudi_Arabia.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oil-discovery-saudi_fw7ycj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 671379,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Aramco"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Saudi_Aramco",
+    "color": "#26201a",
+    "text_color": "light"
   },
   {
     "name": "rockefeller-center",

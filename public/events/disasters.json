@@ -381,11 +381,13 @@
     "category": "disasters",
     "description": "The bubonic plague arrived in Europe, eventually killing one-third of the population.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/1346-1353_spread_of_the_Black_Death_in_Europe_map.svg/330px-1346-1353_spread_of_the_Black_Death_in_Europe_map.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/black-death-arrives_wlhrjw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 288,
+    "image_height": 440,
     "wikipedia_views": 2124175,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Death",
+    "color": "#3f3b31",
+    "text_color": "light"
   },
   {
     "name": "black-death-peak",
@@ -409,11 +411,13 @@
     "category": "disasters",
     "description": "A mysterious disease swept through England, killing thousands within hours.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Illness_of_the_Duke_of_Normandy.jpg/330px-Illness_of_the_Duke_of_Normandy.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sweating-sickness_j0krjd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 407,
+    "image_height": 440,
     "wikipedia_views": 431027,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sweating_sickness"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sweating_sickness",
+    "color": "#25201f",
+    "text_color": "light"
   },
   {
     "name": "dancing-plague",
@@ -452,11 +456,13 @@
     "category": "disasters",
     "description": "The largest volcanic eruption in South American history caused global cooling.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flag_of_Peru.svg/330px-Flag_of_Peru.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huaynaputina-eruption_kdjwbn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 62304,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Huaynaputina"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Huaynaputina",
+    "color": "#30252a",
+    "text_color": "light"
   },
   {
     "name": "russian-famine-troubles",
@@ -495,11 +501,13 @@
     "category": "disasters",
     "description": "Bubonic plague killed over a million people in northern Italy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg/330px-Hillegaert%2C_Frederik_Hendrik_en_Ernst_Casimir_bij_het_beleg_van_Den_Bosch%2C_1629%2C_SK-A-607.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/italian-plague_yeswzo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 243,
+    "image_height": 440,
     "wikipedia_views": 14660,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1629–1631_Italian_plague"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1629–1631_Italian_plague",
+    "color": "#272017",
+    "text_color": "light"
   },
   {
     "name": "great-plague-london",
@@ -568,9 +576,13 @@
     "category": "disasters",
     "description": "Extreme cold killed 20-40% of Ireland's population in a lesser-known famine.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Chinezenmoord_van_stolk_%282%29.jpg/330px-Chinezenmoord_van_stolk_%282%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irish-famine-forgotten_txjyme?_a=BAMAMiiu0",
     "wikipedia_views": 2327,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_food_shortages_(1925)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Irish_food_shortages_(1925)",
+    "color": "#a7afb0",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lisbon-earthquake",
@@ -669,11 +681,13 @@
     "category": "disasters",
     "description": "Another severe famine killed 11 million in the Hyderabad region of India.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/DojiBaraFamineInJoppen1907India1795a.jpg/330px-DojiBaraFamineInJoppen1907India1795a.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/doji-bara-famine_dmpjti?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 478,
+    "image_height": 440,
     "wikipedia_views": 10938,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Doji_bara_famine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Doji_bara_famine",
+    "color": "#2b1e19",
+    "text_color": "light"
   },
   {
     "name": "unzen-eruption",
@@ -682,11 +696,13 @@
     "category": "disasters",
     "description": "A volcanic collapse triggered a tsunami that killed 15,000 in Japan.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Unzen_pyroclastic_and_lahar_deposits.jpg/330px-Unzen_pyroclastic_and_lahar_deposits.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/unzen-eruption_cfw1ef?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 206,
+    "image_height": 440,
     "wikipedia_views": 13533,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1792_Unzen_landslide_and_tsunami"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1792_Unzen_landslide_and_tsunami",
+    "color": "#2a1e19",
+    "text_color": "light"
   },
   {
     "name": "yellow-fever-philadelphia",
@@ -695,11 +711,13 @@
     "category": "disasters",
     "description": "Yellow fever killed about 5,000 people in the American capital.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Arch_Street_Ferry.jpg/330px-Arch_Street_Ferry.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yellow-fever-philadelphia_ymifet?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 282,
+    "image_height": 440,
     "wikipedia_views": 26854,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1793_Philadelphia_yellow_fever_epidemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1793_Philadelphia_yellow_fever_epidemic",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "new-madrid-earthquakes",
@@ -723,11 +741,13 @@
     "category": "disasters",
     "description": "A brewery vat explosion released a flood of beer that killed eight people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Horseshoe_Brewery%2C_London%2C_c._1800.jpg/330px-Horseshoe_Brewery%2C_London%2C_c._1800.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/london-beer-flood_bz6ovk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 242,
+    "image_height": 440,
     "wikipedia_views": 92963,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/London_Beer_Flood"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/London_Beer_Flood",
+    "color": "#453e33",
+    "text_color": "light"
   },
   {
     "name": "tambora-eruption",
@@ -736,9 +756,9 @@
     "category": "disasters",
     "description": "The largest volcanic eruption in recorded history caused global climate disruption.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg/330px-Mount_Tambora_Volcano%2C_Sumbawa_Island%2C_Indonesia.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tambora-eruption_ib9hrt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 347386,
     "wikipedia_url": "https://en.wikipedia.org/wiki/1815_eruption_of_Mount_Tambora",
     "color": "#7e7f78",
@@ -751,11 +771,13 @@
     "category": "disasters",
     "description": "Volcanic ash from Tambora caused crop failures and famine worldwide.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/1816_summer.png/330px-1816_summer.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/year-without-summer_pevvrw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 447978,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Year_Without_a_Summer",
+    "color": "#706f68",
+    "text_color": "light"
   },
   {
     "name": "great-fire-new-york",
@@ -764,11 +786,13 @@
     "category": "disasters",
     "description": "A devastating fire destroyed much of lower Manhattan.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/The_Great_Fire_of_the_City_of_New_York_Dec_16_1835.jpg/330px-The_Great_Fire_of_the_City_of_New_York_Dec_16_1835.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-fire-new-york_qoubcw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 254,
+    "image_height": 440,
     "wikipedia_views": 29701,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_New_York"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Fire_of_New_York",
+    "color": "#26201c",
+    "text_color": "light"
   },
   {
     "name": "irish-potato-famine",
@@ -777,11 +801,13 @@
     "category": "disasters",
     "description": "A potato blight caused mass starvation and emigration from Ireland.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Skibbereen_by_James_Mahony%2C_1847.JPG/330px-Skibbereen_by_James_Mahony%2C_1847.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irish-potato-famine_srbxrf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 456,
+    "image_height": 440,
     "wikipedia_views": 1351197,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)",
+    "color": "#2c2c29",
+    "text_color": "light"
   },
   {
     "name": "cholera-london",
@@ -790,11 +816,13 @@
     "category": "disasters",
     "description": "John Snow traced a deadly cholera outbreak to a contaminated water pump.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Pump_Handle_-_John_Snow_.jpg/330px-Pump_Handle_-_John_Snow_.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cholera-london_lenmam?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 23976,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2010s_Haiti_cholera_outbreak"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2010s_Haiti_cholera_outbreak",
+    "color": "#1f2125",
+    "text_color": "light"
   },
   {
     "name": "third-plague-pandemic",
@@ -803,9 +831,13 @@
     "category": "disasters",
     "description": "A bubonic plague pandemic began in China and spread worldwide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg/330px-Man_being_injected_by_doctor%2C_during_the_outbreak_of_bubonic_Wellcome_V0029287.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/third-plague-pandemic_clirb6?_a=BAMAMiiu0",
     "wikipedia_views": 100992,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_plague_pandemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Third_plague_pandemic",
+    "color": "#262829",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ansei-earthquake",
@@ -814,9 +846,13 @@
     "category": "disasters",
     "description": "A series of earthquakes struck Japan, killing over 10,000 in Edo (Tokyo).",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kawaraban-of-1855-Ansei-Edo-earthquake.png/330px-Kawaraban-of-1855-Ansei-Edo-earthquake.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ansei-earthquake_jldyrc?_a=BAMAMiiu0",
     "wikipedia_views": 4137,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ansei_great_earthquakes"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ansei_great_earthquakes",
+    "color": "#3b362d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "carrington-event",
@@ -825,11 +861,13 @@
     "category": "disasters",
     "description": "The most powerful solar storm on record caused worldwide telegraph failures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Carrington_Richard_drawing_of_1859_sunspots.jpeg/330px-Carrington_Richard_drawing_of_1859_sunspots.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carrington-event_grjyiy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214,
+    "image_height": 440,
     "wikipedia_views": 736007,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Carrington_Event"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Carrington_Event",
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "indian-rebellion-famine",
@@ -838,11 +876,13 @@
     "category": "disasters",
     "description": "A severe famine in India killed over one million people.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Indian_Rebellion_of_1857.jpg/330px-Indian_Rebellion_of_1857.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indian-rebellion-famine_kyeyrv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 277,
+    "image_height": 440,
     "wikipedia_views": 13462,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Orissa_famine_of_1866"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Orissa_famine_of_1866",
+    "color": "#202124",
+    "text_color": "light"
   },
   {
     "name": "finnish-famine",
@@ -851,11 +891,13 @@
     "category": "disasters",
     "description": "The last major famine in Europe killed 15% of Finland's population.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Detaching_inner_bark_of_pine.jpg/330px-Detaching_inner_bark_of_pine.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/finnish-famine_vmmwqo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 13750,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Finnish_famine_of_1866–1868"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Finnish_famine_of_1866–1868",
+    "color": "#abaeac",
+    "text_color": "dark"
   },
   {
     "name": "peshtigo-fire",
@@ -864,11 +906,13 @@
     "category": "disasters",
     "description": "The deadliest wildfire in American history killed over 1,500 people in Wisconsin.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Peshtigo_Fire_showing_people_seeking_refuge_in_the_Peshtigo_River.jpg/960px-The_Peshtigo_Fire_showing_people_seeking_refuge_in_the_Peshtigo_River.jpg",
-    "image_width": 141,
-    "image_height": 157,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peshtigo-fire_hnewhc?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 186197,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Peshtigo_fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peshtigo_fire",
+    "color": "#2c1d17",
+    "text_color": "light"
   },
   {
     "name": "great-chicago-fire",
@@ -877,11 +921,13 @@
     "category": "disasters",
     "description": "A devastating fire destroyed much of Chicago, leaving 100,000 homeless.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Chicago_in_Flames_by_Currier_%26_Ives%2C_1871_%28cropped%29.jpg/330px-Chicago_in_Flames_by_Currier_%26_Ives%2C_1871_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-chicago-fire_ssxc5y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 222,
+    "image_height": 440,
     "wikipedia_views": 446641,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Chicago_Fire",
+    "color": "#512f1b",
+    "text_color": "light"
   },
   {
     "name": "princess-alice-disaster",
@@ -890,9 +936,13 @@
     "category": "disasters",
     "description": "A pleasure steamer collision killed over 650 in the Thames River.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Princess_alice_collision_in_thames.jpg/330px-Princess_alice_collision_in_thames.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/princess-alice-disaster_zlawlc?_a=BAMAMiiu0",
     "wikipedia_views": 39566,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_SS_Princess_Alice"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_SS_Princess_Alice",
+    "color": "#3a382f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "krakatoa-eruption",
@@ -901,11 +951,13 @@
     "category": "disasters",
     "description": "A catastrophic volcanic eruption in Indonesia killed over 36,000 people.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/De_uitbarsting_van_de_Krakatau%2C_KITLV_5888.tiff/lossy-page1-320px-De_uitbarsting_van_de_Krakatau%2C_KITLV_5888.tiff.jpg",
-    "image_width": 320,
-    "image_height": 433,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/krakatoa-eruption_oixpxi?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 479476,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Krakatoa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Krakatoa",
+    "color": "#332d27",
+    "text_color": "light"
   },
   {
     "name": "mount-tarawera-eruption",
@@ -914,11 +966,13 @@
     "category": "disasters",
     "description": "New Zealand's deadliest volcanic eruption destroyed the famous Pink and White Terraces.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Okataina.jpg/330px-Okataina.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mount-tarawera-eruption_fjilw9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214,
+    "image_height": 440,
     "wikipedia_views": 23499,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1886_eruption_of_Mount_Tarawera"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1886_eruption_of_Mount_Tarawera",
+    "color": "#23211b",
+    "text_color": "light"
   },
   {
     "name": "johnstown-flood",
@@ -927,11 +981,13 @@
     "category": "disasters",
     "description": "A dam failure caused a devastating flood that killed over 2,200 people in Pennsylvania.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Johnstown_flood_debris.jpg/330px-Johnstown_flood_debris.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/johnstown-flood_rk7sjs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 493,
+    "image_height": 440,
     "wikipedia_views": 279086,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Johnstown_Flood"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Johnstown_Flood",
+    "color": "#2d2d26",
+    "text_color": "light"
   },
   {
     "name": "russian-flu",
@@ -940,11 +996,13 @@
     "category": "disasters",
     "description": "A global influenza pandemic killed over one million people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg/330px-Everyone_has_Influenza_-_The_Round_of_Doctors_and_Druggists.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russian-flu_bhacwv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 371,
+    "image_height": 440,
     "wikipedia_views": 91527,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1889–1890_pandemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1889–1890_pandemic",
+    "color": "#1f2125",
+    "text_color": "light"
   },
   {
     "name": "russian-famine-imperial",
@@ -953,11 +1011,13 @@
     "category": "disasters",
     "description": "Crop failures led to widespread famine affecting millions across Russia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg/330px-CossackPatrolNearKazanPreventingPeasantsFromLeavingTheirVillage3a43144r.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russian-famine-imperial_htf5ve?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 467,
+    "image_height": 440,
     "wikipedia_views": 21311,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1891–1892"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1891–1892",
+    "color": "#585448",
+    "text_color": "light"
   },
   {
     "name": "galveston-hurricane",
@@ -966,11 +1026,13 @@
     "category": "disasters",
     "description": "The deadliest natural disaster in US history killed up to 12,000 people in Texas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/1900_Galveston_hurricane_weather_map_%28high_quality%29_%2819877020%29.jpg/330px-1900_Galveston_hurricane_weather_map_%28high_quality%29_%2819877020%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galveston-hurricane_fanpwb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 332,
+    "image_height": 440,
     "wikipedia_views": 275894,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1900_Galveston_hurricane"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1900_Galveston_hurricane",
+    "color": "#3f301f",
+    "text_color": "light"
   },
   {
     "name": "general-slocum",
@@ -979,11 +1041,13 @@
     "category": "disasters",
     "description": "A steamship fire killed over 1,000 in New York's East River.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PS_General_Slocum.jpg/330px-PS_General_Slocum.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/general-slocum_wzrwsf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 100671,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/PS_General_Slocum"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/PS_General_Slocum",
+    "color": "#25201a",
+    "text_color": "light"
   },
   {
     "name": "san-francisco-earthquake",
@@ -992,11 +1056,13 @@
     "category": "disasters",
     "description": "A massive earthquake and subsequent fires devastated the California city.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Post-and-Grant-Avenue-Look.jpg/330px-Post-and-Grant-Avenue-Look.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/san-francisco-earthquake_gdwhmy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 209,
+    "image_height": 440,
     "wikipedia_views": 360184,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1906_San_Francisco_earthquake",
+    "color": "#4a331f",
+    "text_color": "light"
   },
   {
     "name": "valparaiso-earthquake",
@@ -1005,11 +1071,13 @@
     "category": "disasters",
     "description": "A devastating earthquake killed 3,000 and destroyed much of the Chilean city.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Terremoto_Valpara%C3%ADso_1906.jpg/330px-Terremoto_Valpara%C3%ADso_1906.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/valparaiso-earthquake_wrglwl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 241,
+    "image_height": 440,
     "wikipedia_views": 5857,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1906_Valparaíso_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1906_Valparaíso_earthquake",
+    "color": "#3b2c1d",
+    "text_color": "light"
   },
   {
     "name": "courrieres-mine",
@@ -1018,11 +1086,13 @@
     "category": "disasters",
     "description": "Europe's worst mining disaster killed 1,099 in France.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Courri%C3%A8res_1906_LeJ.jpg/330px-Courri%C3%A8res_1906_LeJ.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/courrieres-mine_n7geax?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 395,
+    "image_height": 440,
     "wikipedia_views": 34251,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Courrières_mine_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Courrières_mine_disaster",
+    "color": "#663820",
+    "text_color": "light"
   },
   {
     "name": "messina-earthquake",
@@ -1031,11 +1101,13 @@
     "category": "disasters",
     "description": "An earthquake and tsunami killed over 80,000 people in Sicily and Calabria.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Underwood_%26_Underwood_%C2%A9_1906_No._10495_-_Messina_-_The_once_beautiful_Water-front_after_the_earthquake_dett.jpg/330px-Underwood_%26_Underwood_%C2%A9_1906_No._10495_-_Messina_-_The_once_beautiful_Water-front_after_the_earthquake_dett.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/messina-earthquake_t1mbdc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 313,
+    "image_height": 440,
     "wikipedia_views": 63987,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1908_Messina_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1908_Messina_earthquake",
+    "color": "#543b26",
+    "text_color": "light"
   },
   {
     "name": "triangle-shirtwaist-fire",
@@ -1044,11 +1116,13 @@
     "category": "disasters",
     "description": "A factory fire killed 146 garment workers in New York City.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg/330px-Image_of_Triangle_Shirtwaist_Factory_fire_on_March_25_-_1911.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/triangle-shirtwaist-fire_sdzion?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 432,
+    "image_height": 440,
     "wikipedia_views": 490304,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire",
+    "color": "#2a1e19",
+    "text_color": "light"
   },
   {
     "name": "titanic-disaster",
@@ -1057,11 +1131,13 @@
     "category": "disasters",
     "description": "The unsinkable ocean liner struck an iceberg, killing over 1,500 passengers.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/St%C3%B6wer_Titanic.jpg/330px-St%C3%B6wer_Titanic.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/titanic-disaster_lcobre?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 226,
+    "image_height": 440,
     "wikipedia_views": 2485758,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_Titanic",
+    "color": "#282016",
+    "text_color": "light"
   },
   {
     "name": "empress-ireland",
@@ -1070,11 +1146,13 @@
     "category": "disasters",
     "description": "A collision sank the ocean liner in 14 minutes, killing 1,012.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Illustration_-_Sinking_of_the_Empress_of_Ireland%2C_1914.jpg/330px-Illustration_-_Sinking_of_the_Empress_of_Ireland%2C_1914.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/empress-ireland_bf0gjb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 206,
+    "image_height": 440,
     "wikipedia_views": 23841,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Empress_of_Ireland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_RMS_Empress_of_Ireland",
+    "color": "#3b2c1b",
+    "text_color": "light"
   },
   {
     "name": "eastland-disaster",
@@ -1083,11 +1161,13 @@
     "category": "disasters",
     "description": "A passenger ship capsized in the Chicago River, killing 844.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/S.S._Eastland_c.1911.jpg/330px-S.S._Eastland_c.1911.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eastland-disaster_thf3xs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 211,
+    "image_height": 440,
     "wikipedia_views": 146368,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Eastland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Eastland",
+    "color": "#3c2e1f",
+    "text_color": "light"
   },
   {
     "name": "ottawa-parliament-fire",
@@ -1096,11 +1176,13 @@
     "category": "disasters",
     "description": "The Centre Block of Canadas Parliament buildings burned down, killing seven.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg/330px-Palace_of_Westminster%2C_London_-_Feb_2007.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottawa-parliament-fire_wdkmna?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 130,
+    "image_height": 440,
     "wikipedia_views": 67182,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Parliament_Hill"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Parliament_Hill",
+    "color": "#482413",
+    "text_color": "light"
   },
   {
     "name": "persian-famine",
@@ -1109,11 +1191,13 @@
     "category": "disasters",
     "description": "World War I and occupation caused a famine killing two million Persians.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Bijar_in_First_World_War_%281914-1918%29_10.JPG/330px-Bijar_in_First_World_War_%281914-1918%29_10.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/persian-famine_zh38w5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 226,
+    "image_height": 440,
     "wikipedia_views": 8344,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_famine_of_1870–1872"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_famine_of_1870–1872",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "halifax-explosion",
@@ -1122,11 +1206,13 @@
     "category": "disasters",
     "description": "A munitions ship explosion devastated Halifax, killing 2,000.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Halifax_Explosion_blast_cloud_restored.jpg/330px-Halifax_Explosion_blast_cloud_restored.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/halifax-explosion_elgt9l?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 524,
+    "image_height": 440,
     "wikipedia_views": 685573,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Explosion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Halifax_Explosion",
+    "color": "#2c1e12",
+    "text_color": "light"
   },
   {
     "name": "spanish-flu-begins",
@@ -1135,11 +1221,13 @@
     "category": "disasters",
     "description": "The deadliest pandemic in modern history began infecting millions worldwide.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/330px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-flu-begins_vstadi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 862626,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_flu"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_flu",
+    "color": "#272019",
+    "text_color": "light"
   },
   {
     "name": "spanish-flu-peak",
@@ -1148,11 +1236,13 @@
     "category": "disasters",
     "description": "The deadly second wave of Spanish flu killed millions in the autumn months.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg/330px-Emergency_hospital_during_Influenza_epidemic%2C_Camp_Funston%2C_Kansas_-_NCP_1603.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-flu-peak_cdyhwj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 553,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_wave"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Second_wave",
+    "color": "#3f301e",
+    "text_color": "light"
   },
   {
     "name": "boston-molasses-flood",
@@ -1161,11 +1251,13 @@
     "category": "disasters",
     "description": "A molasses tank burst, sending a deadly wave through Boston streets.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/BostonMolassesDisaster.jpg/330px-BostonMolassesDisaster.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boston-molasses-flood_xgn6nc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 263,
+    "image_height": 440,
     "wikipedia_views": 647427,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Molasses_Flood",
+    "color": "#4a2e1d",
+    "text_color": "light"
   },
   {
     "name": "haiyuan-earthquake",
@@ -1174,11 +1266,13 @@
     "category": "disasters",
     "description": "A massive earthquake killed over 200,000 in northwestern China.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/1920_Gansu_earthquake.svg/330px-1920_Gansu_earthquake.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/haiyuan-earthquake_czjzx2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 268,
+    "image_height": 440,
     "wikipedia_views": 36803,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1920_Haiyuan_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1920_Haiyuan_earthquake",
+    "color": "#482f1a",
+    "text_color": "light"
   },
   {
     "name": "russian-famine-civil-war",
@@ -1187,9 +1281,9 @@
     "category": "disasters",
     "description": "Civil war aftermath and drought killed five million in Soviet Russia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/1921-Famine-map.jpg/330px-1921-Famine-map.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russian-famine-civil-war_yafaph?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 390,
+    "image_height": 440,
     "wikipedia_views": 129939,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1921–1922",
     "color": "#adadad",
@@ -1202,11 +1296,13 @@
     "category": "disasters",
     "description": "Washington D.C.s biggest snowfall caused theater roof collapse, killing over 100.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Weather_map_for_United_States_East_Coast_January_28%2C_1922.gif/330px-Weather_map_for_United_States_East_Coast_January_28%2C_1922.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/knickerbocker-storm_qtmw0u?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 292,
+    "image_height": 440,
     "wikipedia_views": 6624,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Knickerbocker_storm"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Knickerbocker_storm",
+    "color": "#291f16",
+    "text_color": "light"
   },
   {
     "name": "great-kanto-earthquake",
@@ -1215,11 +1311,13 @@
     "category": "disasters",
     "description": "A massive earthquake devastated Tokyo and Yokohama, killing over 100,000.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/The_Great_Kanto_Earthquake_%283767766524%29_%28cropped%29.jpg/330px-The_Great_Kanto_Earthquake_%283767766524%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-kanto-earthquake_zlnvdc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 213,
+    "image_height": 440,
     "wikipedia_views": 40022,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Kantō_Earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Kantō_Earthquake",
+    "color": "#2c1d12",
+    "text_color": "light"
   },
   {
     "name": "tri-state-tornado",
@@ -1228,11 +1326,13 @@
     "category": "disasters",
     "description": "The deadliest tornado in US history killed 695 across three states.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Tri_State_Tornado_Drawing.jpg/330px-Tri_State_Tornado_Drawing.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tri-state-tornado_jmrh5h?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 369,
+    "image_height": 440,
     "wikipedia_views": 88338,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1925_Tri-State_tornado"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1925_Tri-State_tornado",
+    "color": "#291f14",
+    "text_color": "light"
   },
   {
     "name": "st-francis-dam-failure",
@@ -1241,11 +1341,13 @@
     "category": "disasters",
     "description": "California dam failure killed 431 people in resulting floods.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/St_Francis_Dam_crop.jpg/330px-St_Francis_Dam_crop.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/st-francis-dam-failure_h6dp2k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 174,
+    "image_height": 440,
     "wikipedia_views": 165438,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/St._Francis_Dam"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/St._Francis_Dam",
+    "color": "#2c1d15",
+    "text_color": "light"
   },
   {
     "name": "great-depression-begins",
@@ -1254,11 +1356,13 @@
     "category": "disasters",
     "description": "The worst economic downturn in modern history began after the market crash.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg/330px-Unemployed_men_queued_outside_a_depression_soup_kitchen_opened_in_Chicago_by_Al_Capone%2C_02-1931_-_NARA_-_541927.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-depression-begins_v59dbo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 269,
+    "image_height": 440,
     "wikipedia_views": 231135,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Depression_in_the_United_States"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Depression_in_the_United_States",
+    "color": "#281f19",
+    "text_color": "light"
   },
   {
     "name": "china-great-floods",
@@ -1267,11 +1371,13 @@
     "category": "disasters",
     "description": "Massive flooding killed up to four million people in central China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Hankow_city_hall.jpg/330px-Hankow_city_hall.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/china-great-floods_smql2g?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 185,
+    "image_height": 440,
     "wikipedia_views": 39509,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Flood_(China)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Flood_(China)",
+    "color": "#53482d",
+    "text_color": "light"
   },
   {
     "name": "holodomor",
@@ -1280,11 +1386,13 @@
     "category": "disasters",
     "description": "Soviet policies caused a famine that killed millions of Ukrainians.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/HolodomorKharkiv_1933_Wienerberger.jpg/330px-HolodomorKharkiv_1933_Wienerberger.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/holodomor_yx1yyg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 246,
+    "image_height": 440,
     "wikipedia_views": 1374536,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Holodomor"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Holodomor",
+    "color": "#25201a",
+    "text_color": "light"
   },
   {
     "name": "dust-bowl",
@@ -1293,11 +1401,13 @@
     "category": "disasters",
     "description": "Severe drought and dust storms devastated the American Great Plains.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Farmer_walking_in_dust_storm_Cimarron_County_Oklahoma2.jpg/330px-Farmer_walking_in_dust_storm_Cimarron_County_Oklahoma2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dust-bowl_vdeg9f?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 323,
+    "image_height": 440,
     "wikipedia_views": 700272,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dust_Bowl"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dust_Bowl",
+    "color": "#402b1b",
+    "text_color": "light"
   },
   {
     "name": "nepal-bihar-earthquake-1934",
@@ -1306,11 +1416,13 @@
     "category": "disasters",
     "description": "Magnitude 8.0 earthquake struck Nepal and Bihar, killing 6,000-10,700 people.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Old_Darbhanga_Raj_Palace-Damaged_by_earthquake.jpg/330px-Old_Darbhanga_Raj_Palace-Damaged_by_earthquake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nepal-bihar-earthquake-1934_haduy4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 240,
+    "image_height": 440,
     "wikipedia_views": 2862,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1934_Nepal–Bihar_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1934_Nepal–Bihar_earthquake",
+    "color": "#553c22",
+    "text_color": "light"
   },
   {
     "name": "quetta-earthquake",
@@ -1319,11 +1431,13 @@
     "category": "disasters",
     "description": "An earthquake killed 30,000-60,000 in British India.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Quake_epicenters_1963-98.png/330px-Quake_epicenters_1963-98.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quetta-earthquake_pupsdr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 206,
+    "image_height": 440,
     "wikipedia_views": 19047,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1935_Quetta_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1935_Quetta_earthquake",
+    "color": "#57412f",
+    "text_color": "light"
   },
   {
     "name": "hindenburg-disaster",
@@ -1332,11 +1446,13 @@
     "category": "disasters",
     "description": "The German airship exploded while landing in New Jersey, ending the airship era.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Hindenburg_disaster.jpg/330px-Hindenburg_disaster.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hindenburg-disaster_kafddw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 264,
+    "image_height": 440,
     "wikipedia_views": 1043338,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hindenburg_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hindenburg_disaster",
+    "color": "#2b1e15",
+    "text_color": "light"
   },
   {
     "name": "ohio-river-flood",
@@ -1345,11 +1461,13 @@
     "category": "disasters",
     "description": "Massive flooding displaced one million people across the Ohio Valley.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ohiorivermap.png/330px-Ohiorivermap.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ohio-river-flood_estnbp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 331,
+    "image_height": 440,
     "wikipedia_views": 39074,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohio_River_flood_of_1937"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ohio_River_flood_of_1937",
+    "color": "#281f17",
+    "text_color": "light"
   },
   {
     "name": "twa-flight-3-crash",
@@ -1358,11 +1476,13 @@
     "category": "disasters",
     "description": "TWA Flight 3 crashes, killing all 22 aboard, including film star Carole Lombard.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Douglas_DC-3_FAA_%284653317638%29.jpg/330px-Douglas_DC-3_FAA_%284653317638%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/twa-flight-3-crash_m65oph?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 64556,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/TWA_Flight_3"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/TWA_Flight_3",
+    "color": "#3b2a19",
+    "text_color": "light"
   },
   {
     "name": "bengal-famine-wwii",
@@ -1371,11 +1491,13 @@
     "category": "disasters",
     "description": "A devastating wartime famine killed up to three million people in British India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg/330px-Dead_or_dying_children_on_a_Calcutta_street_%28the_Statesman_22_August_1943%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bengal-famine-wwii_mdildo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 202,
+    "image_height": 440,
     "wikipedia_views": 329348,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bengal_famine_of_1943"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bengal_famine_of_1943",
+    "color": "#4b331f",
+    "text_color": "light"
   },
   {
     "name": "dutch-hunger-winter",
@@ -1384,11 +1506,13 @@
     "category": "disasters",
     "description": "A Nazi blockade caused famine in the occupied Netherlands.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg/330px-Twee_deelnemers_aan_de_hongertochten_tijdens_de_hongerwinter.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dutch-hunger-winter_ixr60m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214,
+    "image_height": 440,
     "wikipedia_views": 67251,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_famine_of_1944–1945"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_famine_of_1944–1945",
+    "color": "#24211c",
+    "text_color": "light"
   },
   {
     "name": "hiroshima-bombing",
@@ -1397,11 +1521,13 @@
     "category": "disasters",
     "description": "The first atomic bomb used in warfare killed over 100,000 people instantly.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/330px-Atomic_bombing_of_Japan.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hiroshima-bombing_futg1z?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 196,
+    "image_height": 440,
     "wikipedia_views": 3722048,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+    "color": "#532f1a",
+    "text_color": "light"
   },
   {
     "name": "nagasaki-bombing",
@@ -1410,11 +1536,13 @@
     "category": "disasters",
     "description": "A second atomic bomb was dropped on Japan three days after Hiroshima.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/330px-Atomic_bombing_of_Japan.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nagasaki-bombing_zi3i1x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 196,
+    "image_height": 440,
     "wikipedia_views": 3722048,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+    "color": "#392b1c",
+    "text_color": "light"
   },
   {
     "name": "wilhelm-gustloff",
@@ -1423,11 +1551,13 @@
     "category": "disasters",
     "description": "A Soviet submarine sank a refugee ship, killing over 9,000.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Wilhelm-Gustloff.jpg/330px-Wilhelm-Gustloff.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wilhelm-gustloff_uhlj5w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 462,
+    "image_height": 440,
     "wikipedia_views": 311120,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Wilhelm_Gustloff"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Wilhelm_Gustloff",
+    "color": "#281f18",
+    "text_color": "light"
   },
   {
     "name": "texas-city-disaster",
@@ -1436,11 +1566,13 @@
     "category": "disasters",
     "description": "A ship explosion caused one of the deadliest industrial accidents in US history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Txcitydisasterboat.jpg/330px-Txcitydisasterboat.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/texas-city-disaster_bjab5s?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253,
+    "image_height": 440,
     "wikipedia_views": 192393,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Texas_City_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Texas_City_disaster",
+    "color": "#2e1d12",
+    "text_color": "light"
   },
   {
     "name": "ashgabat-earthquake",
@@ -1449,11 +1581,13 @@
     "category": "disasters",
     "description": "A massive earthquake killed over 100,000 in Soviet Turkmenistan.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/View_of_Ashgabat_%2842376779291%29.jpg/330px-View_of_Ashgabat_%2842376779291%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashgabat-earthquake_fak1ya?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 223,
+    "image_height": 440,
     "wikipedia_views": 23182,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1948_Ashgabat_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1948_Ashgabat_earthquake",
+    "color": "#3b2a1b",
+    "text_color": "light"
   },
   {
     "name": "great-smog-london",
@@ -1462,11 +1596,13 @@
     "category": "disasters",
     "description": "Severe air pollution killed thousands in London over five days.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nelson%27s_Column_during_the_Great_Smog_of_1952.jpg/330px-Nelson%27s_Column_during_the_Great_Smog_of_1952.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-smog-london_w1dhfv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 312,
+    "image_height": 440,
     "wikipedia_views": 363287,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Smog_of_London"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Smog_of_London",
+    "color": "#6e6444",
+    "text_color": "light"
   },
   {
     "name": "north-sea-flood",
@@ -1475,11 +1611,13 @@
     "category": "disasters",
     "description": "A devastating storm surge killed over 2,500 people in the Netherlands and UK.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/NASA_NorthSea1_2.jpg/330px-NASA_NorthSea1_2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/north-sea-flood_gwwrmu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 432,
+    "image_height": 440,
     "wikipedia_views": 106945,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/North_Sea_flood_of_1953",
+    "color": "#364c54",
+    "text_color": "light"
   },
   {
     "name": "andrea-doria",
@@ -1488,11 +1626,13 @@
     "category": "disasters",
     "description": "An Italian ocean liner sank after a collision off Massachusetts.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Andrea_Doria.jpg/330px-Andrea_Doria.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/andrea-doria_g4jp7a?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 480,
+    "image_height": 440,
     "wikipedia_views": 438775,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Andrea_Doria"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/SS_Andrea_Doria",
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "minamata-disease",
@@ -1501,11 +1641,13 @@
     "category": "disasters",
     "description": "Mercury poisoning from industrial waste caused neurological disease in Japan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Tomokos_hand.gif",
-    "image_width": 220,
-    "image_height": 250,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minamata-disease_hklsdd?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 212392,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Minamata_disease"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Minamata_disease",
+    "color": "#4f5657",
+    "text_color": "light"
   },
   {
     "name": "asian-flu",
@@ -1514,11 +1656,13 @@
     "category": "disasters",
     "description": "An influenza pandemic originating in East Asia killed 1-2 million worldwide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/H1N1_navbox.jpg/330px-H1N1_navbox.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asian-flu_stmuwr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 216,
+    "image_height": 440,
     "wikipedia_views": 34098,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1957–1958_influenza_pandemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1957–1958_influenza_pandemic",
+    "color": "#1f202b",
+    "text_color": "light"
   },
   {
     "name": "great-leap-forward-famine",
@@ -1527,11 +1671,13 @@
     "category": "disasters",
     "description": "Mao's Great Leap Forward policies caused a famine killing tens of millions.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mao_Zedong_1950_Portait_%283x4_cropped%29.jpg/330px-Mao_Zedong_1950_Portait_%283x4_cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-leap-forward-famine_rflwt6?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 1351197,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_(Ireland)",
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "valdivia-earthquake",
@@ -1540,11 +1686,13 @@
     "category": "disasters",
     "description": "The most powerful earthquake ever recorded struck Chile.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Valdivia_after_earthquake%2C_1960.jpg/330px-Valdivia_after_earthquake%2C_1960.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/valdivia-earthquake_d9rq8x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 176,
+    "image_height": 440,
     "wikipedia_views": 558273,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+    "color": "#3d434e",
+    "text_color": "light"
   },
   {
     "name": "thalidomide-scandal",
@@ -1553,11 +1701,13 @@
     "category": "disasters",
     "description": "A drug prescribed to pregnant women caused thousands of birth defects worldwide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Thalidomide_effects.jpg/330px-Thalidomide_effects.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thalidomide-scandal_ds9sfs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 178,
+    "image_height": 440,
     "wikipedia_views": 511313,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Thalidomide_scandal"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Thalidomide_scandal",
+    "color": "#212123",
+    "text_color": "light"
   },
   {
     "name": "vajont-dam",
@@ -1566,11 +1716,13 @@
     "category": "disasters",
     "description": "A landslide into a reservoir created a megatsunami that killed 2,000 in Italy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/VajontDiga.jpg/330px-VajontDiga.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vajont-dam_lvjdov?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 478,
+    "image_height": 440,
     "wikipedia_views": 200646,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vajont_Dam"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vajont_Dam",
+    "color": "#1d2228",
+    "text_color": "light"
   },
   {
     "name": "alaska-earthquake",
@@ -1579,11 +1731,13 @@
     "category": "disasters",
     "description": "The most powerful earthquake in North American history struck Alaska.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/AlaskaQuake-FourthAve.jpg/330px-AlaskaQuake-FourthAve.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alaska-earthquake_y7xevi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 254,
+    "image_height": 440,
     "wikipedia_views": 320079,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1964_Alaska_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1964_Alaska_earthquake",
+    "color": "#5f6f77",
+    "text_color": "light"
   },
   {
     "name": "aberfan-disaster",
@@ -1592,11 +1746,13 @@
     "category": "disasters",
     "description": "A coal waste tip collapsed onto a Welsh village school, killing 144 people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b3/Aberfan_disaster%2C_October_1966.jpg/330px-Aberfan_disaster%2C_October_1966.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aberfan-disaster_f6mhxh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 469,
+    "image_height": 440,
     "wikipedia_views": 862522,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aberfan_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aberfan_disaster",
+    "color": "#1d2228",
+    "text_color": "light"
   },
   {
     "name": "biafra-famine",
@@ -1605,11 +1761,13 @@
     "category": "disasters",
     "description": "A blockade during the Nigerian Civil War caused mass starvation in Biafra.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Starving-woman-africa-biafra-nigeria-conflict-famine.jpg/330px-Starving-woman-africa-biafra-nigeria-conflict-famine.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/biafra-famine_kfd9qm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 23588,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Blockade_of_Biafra"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Blockade_of_Biafra",
+    "color": "#a5b0b2",
+    "text_color": "dark"
   },
   {
     "name": "hong-kong-flu",
@@ -1618,11 +1776,13 @@
     "category": "disasters",
     "description": "A global flu pandemic killed approximately one million people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/330px-Flag_of_Hong_Kong.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hong-kong-flu_tfagvh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 94867,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_flu"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_flu",
+    "color": "#384a59",
+    "text_color": "light"
   },
   {
     "name": "thule-b52-crash",
@@ -1631,9 +1791,9 @@
     "category": "disasters",
     "description": "A B-52 bomber crashes near Thule Air Base, Greenland, contaminating the area when its nuclear payload ruptures.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Aerial_Picture_Of_Thule_Air_Base.jpg/330px-Aerial_Picture_Of_Thule_Air_Base.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thule-b52-crash_lkjznc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 183161,
     "wikipedia_url": "https://en.wikipedia.org/wiki/1968_Thule_Air_Base_B-52_crash",
     "color": "#a4adc2",
@@ -1646,11 +1806,13 @@
     "category": "disasters",
     "description": "The deadliest tropical cyclone in history killed up to 500,000 in Bangladesh.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/15B_1970-11-12_0956Z.png/330px-15B_1970-11-12_0956Z.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bhola-cyclone_hxhn9n?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 380,
+    "image_height": 440,
     "wikipedia_views": 225842,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Bhola_cyclone"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Bhola_cyclone",
+    "color": "#5b646b",
+    "text_color": "light"
   },
   {
     "name": "peru-earthquake",
@@ -1659,11 +1821,13 @@
     "category": "disasters",
     "description": "An earthquake triggered landslides that killed 70,000 in Peru.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Statue_of_Christ_at_Cemetery_Hill_overlooking_old_Yungay.jpg/330px-Statue_of_Christ_at_Cemetery_Hill_overlooking_old_Yungay.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peru-earthquake_fdismt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262,
+    "image_height": 440,
     "wikipedia_views": 48440,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Ancash_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Ancash_earthquake",
+    "color": "#1f2128",
+    "text_color": "light"
   },
   {
     "name": "tonghai-earthquake",
@@ -1672,11 +1836,13 @@
     "category": "disasters",
     "description": "A 7.1 magnitude earthquake in Yunnan, China kills 10,000-15,000 people.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/%E9%80%9A%E6%B5%B7%E5%9C%B0%E9%9C%87%E8%AE%B0%E4%BA%8B%E7%A2%91_-_2023-08-18.jpg/330px-%E9%80%9A%E6%B5%B7%E5%9C%B0%E9%9C%87%E8%AE%B0%E4%BA%8B%E7%A2%91_-_2023-08-18.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tonghai-earthquake_dir13d?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 3684,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Tonghai_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1970_Tonghai_earthquake",
+    "color": "#212025",
+    "text_color": "light"
   },
   {
     "name": "munich-massacre",
@@ -1685,11 +1851,13 @@
     "category": "disasters",
     "description": "Palestinian terrorists killed eleven Israeli athletes at the Olympic Games.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/1972_Summer_Olympics_logo.svg/330px-1972_Summer_Olympics_logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/munich-massacre_ewlbkn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 165,
+    "image_height": 440,
     "wikipedia_views": 1212822,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Munich_massacre",
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "bangladesh-famine",
@@ -1698,11 +1866,13 @@
     "category": "disasters",
     "description": "Flooding and economic crisis killed up to 1.5 million in Bangladesh.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg/330px-Rode_Kruis_hulp_in_Bangladesj_na_overstromingen%2C_Bestanddeelnr_927-4183.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bangladesh-famine_oxh2dd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 443,
+    "image_height": 440,
     "wikipedia_views": 40366,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bangladesh_famine_of_1974"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bangladesh_famine_of_1974",
+    "color": "#21323e",
+    "text_color": "light"
   },
   {
     "name": "super-tornado-outbreak",
@@ -1711,9 +1881,13 @@
     "category": "disasters",
     "description": "148 tornadoes struck across 13 US states in just 16 hours.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Super_Outbreak_1974-04-03_loop.gif/330px-Super_Outbreak_1974-04-03_loop.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/super-tornado-outbreak_eodzmw?_a=BAMAMiiu0",
     "wikipedia_views": 143682,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1974_Super_Outbreak"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1974_Super_Outbreak",
+    "color": "#374447",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "joelma-building-fire",
@@ -1722,11 +1896,13 @@
     "category": "disasters",
     "description": "A fire in the 25-story Joelma Building in Sao Paulo, Brazil kills 189 and injures 293.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Joelma_fire%2C_1974.jpg/330px-Joelma_fire%2C_1974.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joelma-building-fire_qy6fxe?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 288,
+    "image_height": 440,
     "wikipedia_views": 12703,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Joelma_Building_fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joelma_Building_fire",
+    "color": "#1a212e",
+    "text_color": "light"
   },
   {
     "name": "banqiao-dam",
@@ -1735,11 +1911,13 @@
     "category": "disasters",
     "description": "Dam failures killed an estimated 170,000 in the deadliest dam collapse.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Banqiao_Dam_Failure.svg/330px-Banqiao_Dam_Failure.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/banqiao-dam_x3vcki?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 258,
+    "image_height": 440,
     "wikipedia_views": 122838,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1975_Banqiao_Dam_failure"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1975_Banqiao_Dam_failure",
+    "color": "#506978",
+    "text_color": "light"
   },
   {
     "name": "tangshan-earthquake",
@@ -1748,11 +1926,13 @@
     "category": "disasters",
     "description": "A massive earthquake killed over 240,000 people in northeastern China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Tangshan_earthquake.jpg/330px-Tangshan_earthquake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tangshan-earthquake_asyryd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 179216,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Tangshan_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Tangshan_earthquake",
+    "color": "#1e2128",
+    "text_color": "light"
   },
   {
     "name": "guatemala-earthquake",
@@ -1761,11 +1941,13 @@
     "category": "disasters",
     "description": "A devastating earthquake killed 23,000 in Central America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/GuateQuake1976Patzicia.jpg/330px-GuateQuake1976Patzicia.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/guatemala-earthquake_hbncbq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 18248,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Guatemala_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1976_Guatemala_earthquake",
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "tenerife-airport",
@@ -1774,11 +1956,13 @@
     "category": "disasters",
     "description": "Two Boeing 747s collided, killing 583 in the deadliest aviation accident.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Het_verongelukte_KLM-toestel_De_Rijn%2C_Bestanddeelnr_929-1005_-_cropped.jpg/330px-Het_verongelukte_KLM-toestel_De_Rijn%2C_Bestanddeelnr_929-1005_-_cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tenerife-airport_kd4gdn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 1146869,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_airport_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenerife_airport_disaster",
+    "color": "#8099a9",
+    "text_color": "dark"
   },
   {
     "name": "jonestown-massacre",
@@ -1787,11 +1971,13 @@
     "category": "disasters",
     "description": "Over 900 members of a cult died in a mass murder-suicide in Guyana.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jonestown_entrance.jpg/330px-Jonestown_entrance.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jonestown-massacre_wgrrvz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 2226966,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jonestown"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jonestown",
+    "color": "#1b2228",
+    "text_color": "light"
   },
   {
     "name": "three-mile-island",
@@ -1800,11 +1986,13 @@
     "category": "disasters",
     "description": "A partial nuclear meltdown occurred at a Pennsylvania power plant.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Three_Mile_Island_%28color%29-2.jpg/330px-Three_Mile_Island_%28color%29-2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/three-mile-island_gzyfar?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 259,
+    "image_height": 440,
     "wikipedia_views": 954942,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Three_Mile_Island_accident",
+    "color": "#222b33",
+    "text_color": "light"
   },
   {
     "name": "mount-st-helens",
@@ -1813,11 +2001,13 @@
     "category": "disasters",
     "description": "A catastrophic volcanic eruption killed 57 people in Washington State.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg/330px-MSH80_eruption_mount_st_helens_05-18-80-dramatic-edit.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mount-st-helens_coa6je?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 496,
+    "image_height": 440,
     "wikipedia_views": 797004,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_St._Helens"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_St._Helens",
+    "color": "#69717b",
+    "text_color": "light"
   },
   {
     "name": "aids-epidemic-recognized",
@@ -1826,11 +2016,13 @@
     "category": "disasters",
     "description": "The CDC first reported cases of what would become the AIDS pandemic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/World_map_of_HIV_prevalence%2C_2023.png/330px-World_map_of_HIV_prevalence%2C_2023.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aids-epidemic-recognized_yg0zqz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 158748,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Epidemiology_of_HIV/AIDS"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Epidemiology_of_HIV/AIDS",
+    "color": "#1d212a",
+    "text_color": "light"
   },
   {
     "name": "ethiopian-famine",
@@ -1839,11 +2031,13 @@
     "category": "disasters",
     "description": "Drought and civil war caused a famine that killed 400,000 Ethiopians.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Map_of_Abyssinia_and_Nubia_-_DPLA_-_83edec2a46dd4cc5c780681e653753e5.jpg/330px-Map_of_Abyssinia_and_Nubia_-_DPLA_-_83edec2a46dd4cc5c780681e653753e5.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ethiopian-famine_lzypqq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 245,
+    "image_height": 440,
     "wikipedia_views": 136690,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1983–1985_famine_in_Ethiopia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1983–1985_famine_in_Ethiopia",
+    "color": "#8296a3",
+    "text_color": "dark"
   },
   {
     "name": "bhopal-disaster",
@@ -1852,11 +2046,13 @@
     "category": "disasters",
     "description": "A gas leak at a pesticide plant killed thousands in India.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg/330px-Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bhopal-disaster_iozogk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 202,
+    "image_height": 440,
     "wikipedia_views": 1296386,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster",
+    "color": "#192734",
+    "text_color": "light"
   },
   {
     "name": "bhopal-gas-disaster",
@@ -1865,11 +2061,13 @@
     "category": "disasters",
     "description": "A gas leak at a pesticide plant in India killed thousands in the world's worst industrial disaster.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg/330px-Union_Carbide_pesticide_factory%2C_Bhopal%2C_India%2C_1985.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bhopal-gas-disaster_klbfyz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 202,
+    "image_height": 440,
     "wikipedia_views": 1296386,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster",
+    "color": "#1b222b",
+    "text_color": "light"
   },
   {
     "name": "mexico-city-earthquake",
@@ -1878,11 +2076,13 @@
     "category": "disasters",
     "description": "A powerful earthquake killed over 10,000 people in the Mexican capital.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg/330px-Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mexico-city-earthquake_q6v7d0?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 173,
+    "image_height": 440,
     "wikipedia_views": 127652,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1985_Mexico_City_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1985_Mexico_City_earthquake",
+    "color": "#878c89",
+    "text_color": "dark"
   },
   {
     "name": "nevado-del-ruiz",
@@ -1891,11 +2091,13 @@
     "category": "disasters",
     "description": "A volcanic mudflow buried the Colombian town of Armero, killing 23,000.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Nevado_del_Ruiz_by_Edgar.png/330px-Nevado_del_Ruiz_by_Edgar.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nevado-del-ruiz_uqbnjc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 180741,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Armero_tragedy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Armero_tragedy",
+    "color": "#323b44",
+    "text_color": "light"
   },
   {
     "name": "japan-airlines-123",
@@ -1904,11 +2106,13 @@
     "category": "disasters",
     "description": "The deadliest single-aircraft accident killed 520 people in Japan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Japan_Airlines_123_124_The_accident_aircraft_flying_over_Okutama.png/330px-Japan_Airlines_123_124_The_accident_aircraft_flying_over_Okutama.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japan-airlines-123_kiym3e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 230,
+    "image_height": 440,
     "wikipedia_views": 936266,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Japan_Air_Lines_Flight_123"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Japan_Air_Lines_Flight_123",
+    "color": "#272e36",
+    "text_color": "light"
   },
   {
     "name": "challenger-disaster",
@@ -1917,11 +2121,13 @@
     "category": "disasters",
     "description": "The Space Shuttle Challenger exploded shortly after launch, killing seven astronauts.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Challenger_explosion.jpg/330px-Challenger_explosion.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/challenger-disaster_aii28v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 267,
+    "image_height": 440,
     "wikipedia_views": 1511498,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "chernobyl-disaster",
@@ -1930,11 +2136,13 @@
     "category": "disasters",
     "description": "The world's worst nuclear accident occurred at a Soviet power plant in Ukraine.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/IAEA_02790015_%285613115146%29.jpg/330px-IAEA_02790015_%285613115146%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chernobyl-disaster_ezo2gk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 507,
+    "image_height": 440,
     "wikipedia_views": 4361855,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernobyl_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chernobyl_disaster",
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "lake-nyos",
@@ -1943,11 +2151,13 @@
     "category": "disasters",
     "description": "A volcanic lake released CO2 that suffocated 1,700 people in Cameroon.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tml15-16_Nc.jpg/330px-Tml15-16_Nc.jpg",
-    "image_width": 329,
-    "image_height": 118,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lake-nyos_sbum9q?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 480141,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Nyos_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lake_Nyos_disaster",
+    "color": "#364149",
+    "text_color": "light"
   },
   {
     "name": "dona-paz-disaster",
@@ -1956,11 +2166,13 @@
     "category": "disasters",
     "description": "The deadliest peacetime maritime disaster killed over 4,000 in the Philippines.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Do%C3%B1a_Paz_at_Tacloban.jpg/330px-Do%C3%B1a_Paz_at_Tacloban.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dona-paz-disaster_kzvyzo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 201,
+    "image_height": 440,
     "wikipedia_views": 171487,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Doña_Paz"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MV_Doña_Paz",
+    "color": "#403e42",
+    "text_color": "light"
   },
   {
     "name": "lockerbie-bombing",
@@ -1969,11 +2181,13 @@
     "category": "disasters",
     "description": "A terrorist bomb destroyed Pan Am Flight 103 over Scotland, killing 270.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg/330px-Pan_Am_Flight_103._Crashed_Lockerbie%2C_Scotland%2C_21_December_1988.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lockerbie-bombing_eetucl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 238,
+    "image_height": 440,
     "wikipedia_views": 2224426,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pan_Am_Flight_103"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pan_Am_Flight_103",
+    "color": "#1b212c",
+    "text_color": "light"
   },
   {
     "name": "armenian-earthquake",
@@ -1982,11 +2196,13 @@
     "category": "disasters",
     "description": "A devastating earthquake killed over 25,000 people in Soviet Armenia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Spitak_%D0%A1%D0%BF%D0%B8%D1%82%D0%B0%D0%BA%2C_%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F.jpg/330px-Spitak_%D0%A1%D0%BF%D0%B8%D1%82%D0%B0%D0%BA%2C_%D0%90%D1%80%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/armenian-earthquake_wxm7er?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 187,
+    "image_height": 440,
     "wikipedia_views": 76088,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1988_Armenian_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1988_Armenian_earthquake",
+    "color": "#798080",
+    "text_color": "light"
   },
   {
     "name": "piper-alpha",
@@ -1995,11 +2211,13 @@
     "category": "disasters",
     "description": "An oil platform explosion killed 167 in the North Sea.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/Piper_Alpha_oil_rig_fire.jpg/330px-Piper_Alpha_oil_rig_fire.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/piper-alpha_h4prxo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 185,
+    "image_height": 440,
     "wikipedia_views": 457174,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Piper_Alpha"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Piper_Alpha",
+    "color": "#241f23",
+    "text_color": "light"
   },
   {
     "name": "exxon-valdez",
@@ -2008,11 +2226,13 @@
     "category": "disasters",
     "description": "An oil tanker spilled millions of gallons into Alaska's Prince William Sound.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Exxon_Valdez_Cleanup.jpg/330px-Exxon_Valdez_Cleanup.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/exxon-valdez_mdredn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 272876,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Exxon_Valdez_oil_spill",
+    "color": "#202126",
+    "text_color": "light"
   },
   {
     "name": "hillsborough-disaster",
@@ -2021,11 +2241,13 @@
     "category": "disasters",
     "description": "A crowd crush at a football stadium killed 97 people in Sheffield, England.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Hillsborough_disaster_main.jpg/330px-Hillsborough_disaster_main.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hillsborough-disaster_o8cc4j?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 154,
+    "image_height": 440,
     "wikipedia_views": 899915,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hillsborough_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hillsborough_disaster",
+    "color": "#1c2229",
+    "text_color": "light"
   },
   {
     "name": "iran-earthquake-manjil",
@@ -2034,11 +2256,13 @@
     "category": "disasters",
     "description": "A major earthquake killed 35,000-50,000 in northern Iran.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Collapse_of_Unreinforced_Masonry_Buildings%2C_Iran_%28Persia%29_-_1990_Manjil_Roudbar_Earthquake.jpg/330px-Collapse_of_Unreinforced_Masonry_Buildings%2C_Iran_%28Persia%29_-_1990_Manjil_Roudbar_Earthquake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iran-earthquake-manjil_sq9eg6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 16946,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1990_Manjil–Rudbar_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1990_Manjil–Rudbar_earthquake",
+    "color": "#3e454e",
+    "text_color": "light"
   },
   {
     "name": "bangladesh-cyclone-chittagong",
@@ -2047,11 +2271,13 @@
     "category": "disasters",
     "description": "A devastating cyclone killed approximately 138,000 people in Bangladesh.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BOB_01_Apr_29_1991_0744Z.png/330px-BOB_01_Apr_29_1991_0744Z.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bangladesh-cyclone-chittagong_b7cdof?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 44329,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1991_Bangladesh_cyclone"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1991_Bangladesh_cyclone",
+    "color": "#374951",
+    "text_color": "light"
   },
   {
     "name": "pinatubo-eruption",
@@ -2060,11 +2286,13 @@
     "category": "disasters",
     "description": "The second-largest volcanic eruption of the century lowered global temperatures.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg/330px-Mt_Pinatubo_trekking_-_panoramio_%285%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pinatubo-eruption_erl4pf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 214612,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1991_eruption_of_Mount_Pinatubo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1991_eruption_of_Mount_Pinatubo",
+    "color": "#3f4854",
+    "text_color": "light"
   },
   {
     "name": "somali-famine",
@@ -2073,9 +2301,9 @@
     "category": "disasters",
     "description": "Civil war and drought caused a famine killing over 200,000 in Somalia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Somali_Civil_War_%28Google_Live_Map%29.svg/330px-Somali_Civil_War_%28Google_Live_Map%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/somali-famine_owudg8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 421,
+    "image_height": 440,
     "wikipedia_views": 2328,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Famine_in_Somalia",
     "color": "#91b3c7",
@@ -2088,11 +2316,13 @@
     "category": "disasters",
     "description": "One of the costliest hurricanes devastated South Florida.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Andrew_1992-08-23_1231Z_%28Cropped%29.png/330px-Andrew_1992-08-23_1231Z_%28Cropped%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hurricane-andrew_mx8jp4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 217557,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Andrew"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Andrew",
+    "color": "#36494f",
+    "text_color": "light"
   },
   {
     "name": "waco-siege",
@@ -2101,11 +2331,13 @@
     "category": "disasters",
     "description": "A federal siege of a religious compound ended in a fire killing 76 people.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Mountcarmelfire04-19-93-n.jpg/330px-Mountcarmelfire04-19-93-n.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/waco-siege_fuuft5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 242,
+    "image_height": 440,
     "wikipedia_views": 1671151,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Waco_siege"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Waco_siege",
+    "color": "#242023",
+    "text_color": "light"
   },
   {
     "name": "northridge-earthquake",
@@ -2114,11 +2346,13 @@
     "category": "disasters",
     "description": "A powerful earthquake caused widespread damage in Los Angeles.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/FEMA_-_1681_-_Photograph_by_FEMA_News_Photo_taken_on_01-17-1994_in_California.jpg/330px-FEMA_-_1681_-_Photograph_by_FEMA_News_Photo_taken_on_01-17-1994_in_California.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/northridge-earthquake_v5mrq5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 273414,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1994_Northridge_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1994_Northridge_earthquake",
+    "color": "#414e5b",
+    "text_color": "light"
   },
   {
     "name": "estonia-ferry",
@@ -2127,11 +2361,13 @@
     "category": "disasters",
     "description": "A ferry sank in the Baltic Sea, killing 852 people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Estonia_ferry2.jpg/330px-Estonia_ferry2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/estonia-ferry_qtdry5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 269383,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_MS_Estonia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_the_MS_Estonia",
+    "color": "#19222c",
+    "text_color": "light"
   },
   {
     "name": "kobe-earthquake",
@@ -2140,11 +2376,13 @@
     "category": "disasters",
     "description": "A devastating earthquake killed over 6,000 people in Kobe, Japan.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hanshin_Expressway_Nada_b059.jpg/330px-Hanshin_Expressway_Nada_b059.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kobe-earthquake_iksb0k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 28828,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kobe_earthquake",
+    "color": "#3c3339",
+    "text_color": "light"
   },
   {
     "name": "north-korea-famine",
@@ -2153,11 +2391,13 @@
     "category": "disasters",
     "description": "Economic collapse and floods caused a famine killing hundreds of thousands.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg/330px-Kim_Jong-il_on_24_August_2011_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/north-korea-famine_narbtr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 449,
+    "image_height": 440,
     "wikipedia_views": 98312,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1990s_North_Korean_famine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1990s_North_Korean_famine",
+    "color": "#2a2f36",
+    "text_color": "light"
   },
   {
     "name": "tokyo-subway-attack",
@@ -2166,11 +2406,13 @@
     "category": "disasters",
     "description": "The Aum Shinrikyo cult released sarin gas on the Tokyo subway, killing 13.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/%E3%80%90%E5%9C%B0%E4%B8%8B%E9%89%84%E3%82%B5%E3%83%AA%E3%83%B3%E4%BA%8B%E4%BB%B6%E3%80%91%E9%99%A4%E6%9F%93%E3%82%92%E8%A1%8C%E3%81%86%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%93%A1%E3%81%A8%E8%AD%A6%E5%AF%9F%E5%AE%98.jpg/330px-%E3%80%90%E5%9C%B0%E4%B8%8B%E9%89%84%E3%82%B5%E3%83%AA%E3%83%B3%E4%BA%8B%E4%BB%B6%E3%80%91%E9%99%A4%E6%9F%93%E3%82%92%E8%A1%8C%E3%81%86%E8%87%AA%E8%A1%9B%E9%9A%8A%E5%93%A1%E3%81%A8%E8%AD%A6%E5%AF%9F%E5%AE%98.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tokyo-subway-attack_l5gdzz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 606913,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo_subway_sarin_attack"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tokyo_subway_sarin_attack",
+    "color": "#314445",
+    "text_color": "light"
   },
   {
     "name": "princess-diana-death",
@@ -2179,11 +2421,13 @@
     "category": "disasters",
     "description": "Princess Diana was killed in a car crash in Paris, shocking the world.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg/330px-Diana%2C_Princess_of_Wales_1997_%282%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/princess-diana-death_vbmkw5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 441,
+    "image_height": 440,
     "wikipedia_views": 1331720,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Death_of_Diana,_Princess_of_Wales",
+    "color": "#292e31",
+    "text_color": "light"
   },
   {
     "name": "asian-financial-crisis",
@@ -2192,11 +2436,13 @@
     "category": "disasters",
     "description": "A currency crisis devastated economies across East and Southeast Asia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Asienkrise.svg/330px-Asienkrise.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asian-financial-crisis_igqe5c?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 337702,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
+    "color": "#1f202c",
+    "text_color": "light"
   },
   {
     "name": "el-nino-super",
@@ -2205,9 +2451,13 @@
     "category": "disasters",
     "description": "One of the strongest El Niño events caused $35 billion in damage worldwide.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sst_9798_animated.gif/330px-Sst_9798_animated.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/el-nino-super_vv3xjl?_a=BAMAMiiu0",
     "wikipedia_views": 17002,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2023–2024_El_Niño_event"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2023–2024_El_Niño_event",
+    "color": "#1d2128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hurricane-mitch",
@@ -2216,11 +2466,13 @@
     "category": "disasters",
     "description": "The deadliest Atlantic hurricane in over 200 years killed over 11,000 in Central America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Mitch_1998-10-26_1845Z.png/330px-Mitch_1998-10-26_1845Z.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hurricane-mitch_jf4axp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 411,
+    "image_height": 440,
     "wikipedia_views": 132206,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Mitch"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Mitch",
+    "color": "#3b424c",
+    "text_color": "light"
   },
   {
     "name": "columbine-shooting",
@@ -2229,11 +2481,13 @@
     "category": "disasters",
     "description": "Two students killed 13 people at a Colorado high school in a mass shooting.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Columbine_Shooting_Security_Camera.jpg/330px-Columbine_Shooting_Security_Camera.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/columbine-shooting_h3e0vl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 249,
+    "image_height": 440,
     "wikipedia_views": 3191948,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Columbine_High_School_massacre"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Columbine_High_School_massacre",
+    "color": "#4c545d",
+    "text_color": "light"
   },
   {
     "name": "concorde-crash",
@@ -2255,11 +2509,13 @@
     "category": "disasters",
     "description": "A deadly respiratory disease spread from China to countries worldwide.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/SARS_map.svg/330px-SARS_map.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sars-outbreak_ayu36a?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 168,
+    "image_height": 440,
     "wikipedia_views": 132823,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2002–2004_SARS_outbreak"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2002–2004_SARS_outbreak",
+    "color": "#142138",
+    "text_color": "light"
   },
   {
     "name": "european-heat-wave",
@@ -2268,11 +2524,13 @@
     "category": "disasters",
     "description": "A prolonged heat wave killed over 70,000 people across Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Canicule_Europe_2003.jpg/330px-Canicule_Europe_2003.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/european-heat-wave_xyfnpc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 280,
+    "image_height": 440,
     "wikipedia_views": 197595,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Heat_wave"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heat_wave",
+    "color": "#adaea9",
+    "text_color": "dark"
   },
   {
     "name": "indian-ocean-tsunami",
@@ -2281,11 +2539,13 @@
     "category": "disasters",
     "description": "A massive earthquake triggered tsunamis killing over 230,000 people.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg/330px-US_Navy_050102-N-9593M-040_A_village_near_the_coast_of_Sumatra_lays_in_ruin_after_the_Tsunami_that_struck_South_East_Asia.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indian-ocean-tsunami_qe4cdu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 2075464,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami",
+    "color": "#19222a",
+    "text_color": "light"
   },
   {
     "name": "hurricane-katrina",
@@ -2294,11 +2554,13 @@
     "category": "disasters",
     "description": "A devastating hurricane flooded New Orleans and killed over 1,800 people.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Katrina_2005-08-28_1700Z.jpg/330px-Katrina_2005-08-28_1700Z.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hurricane-katrina_yryxzl?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 1790059,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Katrina"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Katrina",
+    "color": "#174464",
+    "text_color": "light"
   },
   {
     "name": "kashmir-earthquake",
@@ -2307,11 +2569,13 @@
     "category": "disasters",
     "description": "A powerful earthquake killed over 80,000 people in Pakistan and India.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/US_Navy_051021-F-9085B-053_Pakistani_soldiers_unload_disaster_relief_supplies_from_a_U.S._Navy_MH-53_Sea_Dragon_helicopter_at_Balakot%2C_Pakistan.jpg/330px-US_Navy_051021-F-9085B-053_Pakistani_soldiers_unload_disaster_relief_supplies_from_a_U.S._Navy_MH-53_Sea_Dragon_helicopter_at_Balakot%2C_Pakistan.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kashmir-earthquake_r6mla7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 215,
+    "image_height": 440,
     "wikipedia_views": 108087,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2005_Kashmir_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2005_Kashmir_earthquake",
+    "color": "#344348",
+    "text_color": "light"
   },
   {
     "name": "cyclone-nargis",
@@ -2320,11 +2584,13 @@
     "category": "disasters",
     "description": "A devastating cyclone killed over 138,000 people in Myanmar.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Nargis_2008-05-02_0645Z.jpg/330px-Nargis_2008-05-02_0645Z.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cyclone-nargis_ebwcy6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 424,
+    "image_height": 440,
     "wikipedia_views": 70758,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyclone_Nargis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyclone_Nargis",
+    "color": "#1c3a42",
+    "text_color": "light"
   },
   {
     "name": "sichuan-earthquake",
@@ -2333,11 +2599,13 @@
     "category": "disasters",
     "description": "A massive earthquake killed over 69,000 people in central China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2008%EB%85%84_%EC%A4%91%EC%95%99119%EA%B5%AC%EC%A1%B0%EB%8B%A8_%EC%A4%91%EA%B5%AD_%EC%93%B0%EC%B4%A8%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84_%EA%B5%AD%EC%A0%9C_%EC%B6%9C%EB%8F%99%28%E5%9B%9B%E5%B7%9D%E7%9C%81_%E5%A4%A7%E5%9C%B0%E9%9C%87%2C_%EC%82%AC%EC%B2%9C%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84%29_SSL27231.JPG/330px-2008%EB%85%84_%EC%A4%91%EC%95%99119%EA%B5%AC%EC%A1%B0%EB%8B%A8_%EC%A4%91%EA%B5%AD_%EC%93%B0%EC%B4%A8%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84_%EA%B5%AD%EC%A0%9C_%EC%B6%9C%EB%8F%99%28%E5%9B%9B%E5%B7%9D%E7%9C%81_%E5%A4%A7%E5%9C%B0%E9%9C%87%2C_%EC%82%AC%EC%B2%9C%EC%84%B1_%EB%8C%80%EC%A7%80%EC%A7%84%29_SSL27231.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sichuan-earthquake_tsxnqs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 155566,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2008_Sichuan_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2008_Sichuan_earthquake",
+    "color": "#143343",
+    "text_color": "light"
   },
   {
     "name": "global-financial-crisis",
@@ -2346,11 +2614,13 @@
     "category": "disasters",
     "description": "The collapse of Lehman Brothers triggered the worst financial crisis since the Great Depression.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/330px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/global-financial-crisis_kwz7w5?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 1072992,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2008_financial_crisis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2008_financial_crisis",
+    "color": "#2a3b5c",
+    "text_color": "light"
   },
   {
     "name": "swine-flu-pandemic",
@@ -2359,11 +2629,13 @@
     "category": "disasters",
     "description": "A new influenza strain caused a global pandemic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/H1N1_map_by_confirmed_cases.svg/330px-H1N1_map_by_confirmed_cases.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swine-flu-pandemic_pceg1x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 168,
+    "image_height": 440,
     "wikipedia_views": 135919,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2009_swine_flu_pandemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2009_swine_flu_pandemic",
+    "color": "#2d7e96",
+    "text_color": "light"
   },
   {
     "name": "haiti-earthquake",
@@ -2372,11 +2644,13 @@
     "category": "disasters",
     "description": "A catastrophic earthquake killed over 200,000 people and devastated Port-au-Prince.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Ruins_of_Haiti_National_Palace_-_Port_au_Prince_2012.jpg/330px-Ruins_of_Haiti_National_Palace_-_Port_au_Prince_2012.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/haiti-earthquake_urvilx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 354605,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2010_Haiti_earthquake",
+    "color": "#243c50",
+    "text_color": "light"
   },
   {
     "name": "deepwater-horizon",
@@ -2385,11 +2659,13 @@
     "category": "disasters",
     "description": "An oil rig explosion caused the largest marine oil spill in history.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deepwater_Horizon_oil_spill_-_May_24%2C_2010_-_with_locator.jpg/330px-Deepwater_Horizon_oil_spill_-_May_24%2C_2010_-_with_locator.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/deepwater-horizon_jf4tor?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253,
+    "image_height": 440,
     "wikipedia_views": 671431,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill",
+    "color": "#1b222a",
+    "text_color": "light"
   },
   {
     "name": "fukushima-disaster",
@@ -2398,11 +2674,13 @@
     "category": "disasters",
     "description": "An earthquake and tsunami caused meltdowns at a Japanese nuclear plant.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Fukushima_I_by_Digital_Globe.jpg/330px-Fukushima_I_by_Digital_Globe.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fukushima-disaster_nkx2co?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 192,
+    "image_height": 440,
     "wikipedia_views": 1141526,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fukushima_nuclear_accident"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fukushima_nuclear_accident",
+    "color": "#2e555c",
+    "text_color": "light"
   },
   {
     "name": "tohoku-earthquake",
@@ -2411,11 +2689,13 @@
     "category": "disasters",
     "description": "A massive earthquake and tsunami killed over 18,000 people in Japan.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/SH-60B_helicopter_flies_over_Sendai.jpg/330px-SH-60B_helicopter_flies_over_Sendai.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tohoku-earthquake_a9nesg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 1305422,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Tōhoku_earthquake_and_tsunami"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Tōhoku_earthquake_and_tsunami",
+    "color": "#1b2226",
+    "text_color": "light"
   },
   {
     "name": "christchurch-earthquake",
@@ -2424,11 +2704,13 @@
     "category": "disasters",
     "description": "An earthquake killed 185 people and devastated New Zealand's second-largest city.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/ChristchurchBasilicaPostEarthquake_gobeirne.jpg/330px-ChristchurchBasilicaPostEarthquake_gobeirne.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/christchurch-earthquake_omwgya?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 221304,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Christchurch_earthquake"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2011_Christchurch_earthquake",
+    "color": "#132137",
+    "text_color": "light"
   },
   {
     "name": "costa-concordia",
@@ -2437,11 +2719,13 @@
     "category": "disasters",
     "description": "A cruise ship capsized off the Italian coast, killing 32 people.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Collision_of_Costa_Concordia_11.jpg/330px-Collision_of_Costa_Concordia_11.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/costa-concordia_sfj07q?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 210,
+    "image_height": 440,
     "wikipedia_views": 586076,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Costa_Concordia_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Costa_Concordia_disaster",
+    "color": "#132331",
+    "text_color": "light"
   },
   {
     "name": "mers-outbreak",
@@ -2450,11 +2734,13 @@
     "category": "disasters",
     "description": "A deadly coronavirus emerged in the Middle East.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/World_MERS_outbreak.svg/330px-World_MERS_outbreak.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mers-outbreak_yt0oit?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 188,
+    "image_height": 440,
     "wikipedia_views": 9826,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/MERS_outbreak"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/MERS_outbreak",
+    "color": "#19222d",
+    "text_color": "light"
   },
   {
     "name": "typhoon-haiyan",
@@ -2463,11 +2749,13 @@
     "category": "disasters",
     "description": "One of the strongest tropical cyclones ever recorded killed over 6,000 in the Philippines.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Haiyan_2013-11-07_1345Z_%28alternate%2C_borderless%29.png/330px-Haiyan_2013-11-07_1345Z_%28alternate%2C_borderless%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/typhoon-haiyan_tvyxpr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 462,
+    "image_height": 440,
     "wikipedia_views": 516649,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Typhoon_Haiyan",
+    "color": "#132233",
+    "text_color": "light"
   },
   {
     "name": "rana-plaza-collapse",
@@ -2476,11 +2764,13 @@
     "category": "disasters",
     "description": "A garment factory collapse killed 1,134 in Bangladesh.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/2013_savar_building_collapse02.jpg/330px-2013_savar_building_collapse02.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rana-plaza-collapse_quckzx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 192679,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Rana_Plaza_collapse"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rana_Plaza_collapse",
+    "color": "#314658",
+    "text_color": "light"
   },
   {
     "name": "ebola-outbreak",
@@ -2489,11 +2779,13 @@
     "category": "disasters",
     "description": "The deadliest Ebola outbreak killed over 11,000 people in West Africa.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Africa-countries-WAFU-UFOA.png/330px-Africa-countries-WAFU-UFOA.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ebola-outbreak_htufso?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 359,
+    "image_height": 440,
     "wikipedia_views": 60242,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Western_African_Ebola_epidemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Western_African_Ebola_epidemic",
+    "color": "#1a2b36",
+    "text_color": "light"
   },
   {
     "name": "mh370-disappearance",
@@ -2502,11 +2794,13 @@
     "category": "disasters",
     "description": "A passenger plane vanished over the Indian Ocean and was never found.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Malaysia_Airlines%2C_Airbus_A350-900_9M-MAF_NRT_%2842887513761%29.jpg/330px-Malaysia_Airlines%2C_Airbus_A350-900_9M-MAF_NRT_%2842887513761%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mh370-disappearance_kgq36t?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 251866,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370_disappearance_theories"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Malaysia_Airlines_Flight_370_disappearance_theories",
+    "color": "#172231",
+    "text_color": "light"
   },
   {
     "name": "sewol-ferry",
@@ -2515,11 +2809,13 @@
     "category": "disasters",
     "description": "A ferry capsized off South Korea, killing 304, mostly students.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Korean_Ferry_Sewol_Capsized%2C_2014.jpg/330px-Korean_Ferry_Sewol_Capsized%2C_2014.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sewol-ferry_wovlgw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 429753,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sinking_of_MV_Sewol",
+    "color": "#102237",
+    "text_color": "light"
   },
   {
     "name": "nepal-earthquake",
@@ -2528,9 +2824,9 @@
     "category": "disasters",
     "description": "A powerful earthquake killed nearly 9,000 people and damaged historic sites.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2015_Nepal_depremi_%287%29.jpg/330px-2015_Nepal_depremi_%287%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nepal-earthquake_zmdtpm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 241254,
     "wikipedia_url": "https://en.wikipedia.org/wiki/April_2015_Nepal_earthquake",
     "color": "#4e453c",
@@ -2543,11 +2839,13 @@
     "category": "disasters",
     "description": "Coordinated terrorist attacks killed 130 people across Paris.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/13_November_2015_Paris_attacks_-_montage.jpg/330px-13_November_2015_Paris_attacks_-_montage.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paris-attacks_pekhre?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 498,
+    "image_height": 440,
     "wikipedia_views": 1011147,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/November_2015_Paris_attacks"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/November_2015_Paris_attacks",
+    "color": "#1b222b",
+    "text_color": "light"
   },
   {
     "name": "tianjin-explosions",
@@ -2556,11 +2854,13 @@
     "category": "disasters",
     "description": "Warehouse explosions killed 173 in the Chinese port city.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2015_Tianjin_explosion_-_Crop.jpg/330px-2015_Tianjin_explosion_-_Crop.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tianjin-explosions_jvr6od?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 297,
+    "image_height": 440,
     "wikipedia_views": 213663,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2015_Tianjin_explosions"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2015_Tianjin_explosions",
+    "color": "#415661",
+    "text_color": "light"
   },
   {
     "name": "zika-outbreak",
@@ -2569,11 +2869,13 @@
     "category": "disasters",
     "description": "A mosquito-borne virus spread through the Americas, causing birth defects.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Zika_EM_CDC_20541.png/330px-Zika_EM_CDC_20541.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zika-outbreak_e0zfyb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 12657,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2015–16_Zika_virus_epidemic"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2015–16_Zika_virus_epidemic",
+    "color": "#18222d",
+    "text_color": "light"
   },
   {
     "name": "grenfell-tower-fire",
@@ -2582,11 +2884,13 @@
     "category": "disasters",
     "description": "A fire engulfed a London apartment tower, killing 72 residents.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Grenfell_Tower_fire_%28wider_view%29.jpg/330px-Grenfell_Tower_fire_%28wider_view%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grenfell-tower-fire_cwfyee?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 1036937,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Grenfell_Tower_fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Grenfell_Tower_fire",
+    "color": "#272628",
+    "text_color": "light"
   },
   {
     "name": "camp-fire-paradise",
@@ -2595,9 +2899,13 @@
     "category": "disasters",
     "description": "California's deadliest wildfire destroyed the town of Paradise.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Campfire_Pinecone.png/330px-Campfire_Pinecone.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/camp-fire-paradise_q30uv3?_a=BAMAMiiu0",
     "wikipedia_views": 1005305,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Camp_Fire_(2018)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Camp_Fire_(2018)",
+    "color": "#6a8fa1",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "australia-bushfires",
@@ -2606,11 +2914,13 @@
     "category": "disasters",
     "description": "Catastrophic bushfires burned 46 million acres and killed one billion animals.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png/330px-2019-12-07_East_Australian_Fires_Aqua_MODIS-VIIRS-LABELS.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/australia-bushfires_rudcxu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 552,
+    "image_height": 440,
     "wikipedia_views": 78920,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bushfires_in_Australia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bushfires_in_Australia",
+    "color": "#0e223a",
+    "text_color": "light"
   },
   {
     "name": "covid-19-pandemic",
@@ -2619,11 +2929,13 @@
     "category": "disasters",
     "description": "A novel coronavirus spread globally, causing millions of deaths worldwide.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg/330px-Covid-19_SP_-_UTI_V._Nova_Cachoeirinha.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/covid-19-pandemic_ip3lj7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 517716,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States",
+    "color": "#16222f",
+    "text_color": "light"
   },
   {
     "name": "beirut-explosion",
@@ -2645,11 +2957,13 @@
     "category": "disasters",
     "description": "A severe winter storm caused power grid failures and over 200 deaths in Texas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Houston_bmhd_2021038_lrg_Feb_7_2021.jpg/330px-Houston_bmhd_2021038_lrg_Feb_7_2021.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/texas-winter-storm_ngdww7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 271,
+    "image_height": 440,
     "wikipedia_views": 92233,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/February_13–17,_2021_North_American_winter_storm"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/February_13–17,_2021_North_American_winter_storm",
+    "color": "#0e2431",
+    "text_color": "light"
   },
   {
     "name": "turkey-syria-earthquake",
@@ -2658,11 +2972,13 @@
     "category": "disasters",
     "description": "A devastating earthquake killed over 50,000 people in Turkey and Syria.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Collage_of_2023_Turkey%E2%80%93Syria_earthquake.jpg/330px-Collage_of_2023_Turkey%E2%80%93Syria_earthquake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/turkey-syria-earthquake_huddkj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 426396,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Turkey–Syria_earthquakes",
+    "color": "#424f57",
+    "text_color": "light"
   },
   {
     "name": "lahaina-fire",
@@ -2671,11 +2987,13 @@
     "category": "disasters",
     "description": "A devastating wildfire destroyed the historic Hawaiian town and killed 97 people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Coast_Guard_Station_Maui_-_7964748.jpg/330px-Coast_Guard_Station_Maui_-_7964748.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lahaina-fire_lqp0ac?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 295689,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Hawaii_wildfires"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2023_Hawaii_wildfires",
+    "color": "#102333",
+    "text_color": "light"
   },
   {
     "name": "neanderthal-extinction",
@@ -2789,11 +3107,13 @@
     "category": "disasters",
     "description": "Space Shuttle Columbia disintegrated during re-entry over Texas, killing all seven crew members due to heat shield damage from launch debris.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/ColumbiaFLIR2003.png/330px-ColumbiaFLIR2003.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/space-shuttle-columbia-disaster_vvv6if?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 256,
+    "image_height": 440,
     "wikipedia_views": 938180,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster",
+    "color": "#14406d",
+    "text_color": "light"
   },
   {
     "name": "lehman-brothers-collapse",
@@ -2802,11 +3122,13 @@
     "category": "disasters",
     "description": "The bankruptcy of Lehman Brothers became the largest in U.S. history, triggering the global financial crisis and worldwide recession.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lehman_Brothers_Times_Square_by_David_Shankbone.jpg/330px-Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lehman-brothers-collapse_e2enbw?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 248774,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+    "color": "#0f213a",
+    "text_color": "light"
   },
   {
     "name": "copenhagen-climate-summit",
@@ -2815,11 +3137,13 @@
     "category": "disasters",
     "description": "The UN climate conference ended without a binding agreement, widely seen as a diplomatic failure in addressing global warming.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/COP15_Logo.svg/330px-COP15_Logo.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copenhagen-climate-summit_gndqph?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 462,
+    "image_height": 440,
     "wikipedia_views": 12104,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_climate_summit"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Copenhagen_climate_summit",
+    "color": "#202028",
+    "text_color": "light"
   },
   {
     "name": "iceland-eyjafjallajokull-eruption",
@@ -2828,11 +3152,13 @@
     "category": "disasters",
     "description": "The eruption of Eyjafjallajokull created an ash cloud that halted European air travel for weeks, stranding millions of passengers.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Volcanic_system_of_Iceland-Map-en.svg/330px-Volcanic_system_of_Iceland-Map-en.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iceland-eyjafjallajokull-eruption_pixdod?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 268,
+    "image_height": 440,
     "wikipedia_views": 93430,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2010_eruptions_of_Eyjafjallajökull"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2010_eruptions_of_Eyjafjallajökull",
+    "color": "#152231",
+    "text_color": "light"
   },
   {
     "name": "hurricane-sandy",
@@ -2841,11 +3167,13 @@
     "category": "disasters",
     "description": "Hurricane Sandy devastated the northeastern U.S. coast, causing over $70 billion in damage and killing more than 230 people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sandy_2012-10-25_0320Z_%28cropped%29.png/330px-Sandy_2012-10-25_0320Z_%28cropped%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hurricane-sandy_lqgjsh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 427,
+    "image_height": 440,
     "wikipedia_views": 393174,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Sandy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hurricane_Sandy",
+    "color": "#0f324b",
+    "text_color": "light"
   },
   {
     "name": "notre-dame-fire",
@@ -2854,11 +3182,13 @@
     "category": "disasters",
     "description": "A fire engulfed Notre-Dame Cathedral in Paris, destroying its iconic spire and much of the roof of the 850-year-old landmark.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Incendie_Notre_Dame_de_Paris.jpg/330px-Incendie_Notre_Dame_de_Paris.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/notre-dame-fire_prkd0y?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 331371,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_fire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Notre-Dame_fire",
+    "color": "#293745",
+    "text_color": "light"
   },
   {
     "name": "extinction-rebellion-protests",
@@ -2867,11 +3197,13 @@
     "category": "disasters",
     "description": "Climate activists staged major civil disobedience protests across world capitals, blocking streets to demand action on climate change.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Extinction_Symbol.svg/330px-Extinction_Symbol.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/extinction-rebellion-protests_pxigoz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 106528,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Extinction_Rebellion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Extinction_Rebellion",
+    "color": "#1a212f",
+    "text_color": "light"
   },
   {
     "name": "svb-collapse",
@@ -2880,8 +3212,12 @@
     "category": "disasters",
     "description": "Silicon Valley Bank failed in the second-largest bank collapse in U.S. history, triggering fears of a broader banking crisis.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg/330px-3003_West_Tasman_Drive_entrance_2%2C_Santa_Clara%2C_California.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/svb-collapse_trzv33?_a=BAMAMiiu0",
     "wikipedia_views": 98466,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Collapse_of_Silicon_Valley_Bank",
+    "color": "#1b212e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   }
 ]

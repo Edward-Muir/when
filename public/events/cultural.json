@@ -441,11 +441,13 @@
     "category": "cultural",
     "description": "The Prophet Muhammad received the first verses of the Quran, founding Islam.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/muhammad-revelation_lbpvl1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 3452333,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad",
+    "color": "#232022",
+    "text_color": "light"
   },
   {
     "name": "islam-founded",
@@ -4129,11 +4131,13 @@
     "category": "cultural",
     "description": "The Prophet Muhammad was born in Mecca. He would later found Islam and unite the Arabian Peninsula.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg/330px-Dark_vignette_Al-Masjid_AL-Nabawi_Door800x600x300_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/birth-muhammad_ekjidx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 286724,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad_in_Islam"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Muhammad_in_Islam",
+    "color": "#271f1e",
+    "text_color": "light"
   },
   {
     "name": "gregory-great-becomes-pope",

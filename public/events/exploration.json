@@ -6,11 +6,13 @@
     "category": "exploration",
     "description": "Our planet formed from cosmic dust and gas around the young Sun.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/The_Blue_Marble%2C_AS17-148-22727.jpg/330px-The_Blue_Marble%2C_AS17-148-22727.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/earth-formation_sr3w6m?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 3549561,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "first-life",
@@ -19,11 +21,13 @@
     "category": "exploration",
     "description": "Single-celled organisms appeared in Earth's primordial oceans.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Origin_of_life_stages.svg/330px-Origin_of_life_stages.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-life_mtgpkj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 158495,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms",
+    "color": "#202124",
+    "text_color": "light"
   },
   {
     "name": "first-stone-tools",
@@ -32,11 +36,13 @@
     "category": "exploration",
     "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Canto_tallado_2-Guelmim-Es_Semara.jpg/330px-Canto_tallado_2-Guelmim-Es_Semara.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-stone-tools_bflkfw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248,
+    "image_height": 440,
     "wikipedia_views": 97548,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Stone_tool"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stone_tool",
+    "color": "#24201d",
+    "text_color": "light"
   },
   {
     "name": "homo-erectus-emerges",
@@ -45,11 +51,13 @@
     "category": "exploration",
     "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Java_Man_holotype.jpg/330px-Java_Man_holotype.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/homo-erectus-emerges_wjy3yb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 504,
+    "image_height": 440,
     "wikipedia_views": 777906,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Homo"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Homo",
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "fire-mastery",
@@ -58,11 +66,13 @@
     "category": "exploration",
     "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Large_bonfire.jpg/330px-Large_bonfire.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fire-mastery_wqiyqs?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 11342229,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash",
+    "color": "#232120",
+    "text_color": "light"
   },
   {
     "name": "first-humans",
@@ -71,11 +81,13 @@
     "category": "exploration",
     "description": "Modern humans emerged in Africa.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-humans_ya0ndj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 552,
+    "image_height": 440,
     "wikipedia_views": 2252168,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Human"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Human",
+    "color": "#26201c",
+    "text_color": "light"
   },
   {
     "name": "anatomically-modern-humans",
@@ -84,11 +96,13 @@
     "category": "exploration",
     "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Akha_cropped_hires.JPG/330px-Akha_cropped_hires.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anatomically-modern-humans_kzsktl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 552,
+    "image_height": 440,
     "wikipedia_views": 324336,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Early_modern_human"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Early_modern_human",
+    "color": "#26201c",
+    "text_color": "light"
   },
   {
     "name": "migration-out-africa",
@@ -97,11 +111,13 @@
     "category": "exploration",
     "description": "Modern humans began migrating out of Africa to populate the world.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Africa_%28orthographic_projection%29.svg/330px-Africa_%28orthographic_projection%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/migration-out-africa_pec6sz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 226356,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Recent_African_origin_of_modern_humans"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Recent_African_origin_of_modern_humans",
+    "color": "#291e18",
+    "text_color": "light"
   },
   {
     "name": "domestication-dogs",
@@ -110,11 +126,13 @@
     "category": "exploration",
     "description": "Wolves were domesticated into dogs, becoming humanity's first animal companions.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Huskiesatrest.jpg/330px-Huskiesatrest.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-dogs_atrg77?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219,
+    "image_height": 440,
     "wikipedia_views": 255101,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog",
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "pottery-invented",
@@ -123,9 +141,11 @@
     "category": "exploration",
     "description": "The earliest known ceramic vessels were created in Japan, marking the beginning of pottery.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Traditional_pottery_in_Nigeria_%28Ikpu_ite%29_19.jpg/330px-Traditional_pottery_in_Nigeria_%28Ikpu_ite%29_19.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pottery-invented_gd6yhg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 440,
+    "color": "#291f1a",
+    "text_color": "light"
   },
   {
     "name": "agriculture-begins",
@@ -134,11 +154,13 @@
     "category": "exploration",
     "description": "Humans began cultivating crops in the Fertile Crescent, starting the Neolithic Revolution.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/PivotWithDrops.JPG/330px-PivotWithDrops.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/agriculture-begins_engwvq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 327979,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "agriculture",
@@ -147,9 +169,9 @@
     "category": "exploration",
     "description": "Humans began farming, transforming civilization.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fertile_crescent_Neolithic_B_circa_7500_BC.jpg/330px-Fertile_crescent_Neolithic_B_circa_7500_BC.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/agriculture_uzoueb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 342,
+    "image_height": 440,
     "wikipedia_views": 327979,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
     "color": "#afb18a",
@@ -162,9 +184,11 @@
     "category": "exploration",
     "description": "The bow and arrow was developed as a ranged hunting weapon, revolutionizing hunting and warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Guinea_Fowl_Hunter_%2849109425873%29.jpg/330px-Guinea_Fowl_Hunter_%2849109425873%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bow-and-arrow-invented_tzb8ox?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 223
+    "image_height": 440,
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "domestication-wheat",
@@ -173,11 +197,13 @@
     "category": "exploration",
     "description": "Wild wheat was domesticated in the Fertile Crescent, enabling agriculture.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Vehn%C3%A4pelto_6.jpg/330px-Vehn%C3%A4pelto_6.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-wheat_xdotsu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 483068,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheat"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheat",
+    "color": "#54321c",
+    "text_color": "light"
   },
   {
     "name": "domestication-cattle",
@@ -186,11 +212,13 @@
     "category": "exploration",
     "description": "Cattle were domesticated in the Near East and Africa, transforming human societies.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-cattle_wpjoe1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 947434,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cattle"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cattle",
+    "color": "#291e19",
+    "text_color": "light"
   },
   {
     "name": "domestication-of-sheep-and-goats",
@@ -199,11 +227,13 @@
     "category": "exploration",
     "description": "Sheep and goats became the first livestock animals domesticated in the Fertile Crescent, providing wool, milk, and meat.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/330px-Flock_of_sheep.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-sheep-and-goats_wfg2ld?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 502,
+    "image_height": 440,
     "wikipedia_views": 621411,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Goat"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Goat",
+    "color": "#291e18",
+    "text_color": "light"
   },
   {
     "name": "copper-smelting-begins",
@@ -2493,11 +2523,13 @@
     "category": "exploration",
     "description": "Britain introduced the Penny Post system with the first adhesive postage stamp, democratizing mail delivery.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/UPP_POreg_handbill_1840jan7.png/330px-UPP_POreg_handbill_1840jan7.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penny-post-introduced_vdv8iy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 512,
+    "image_height": 440,
     "wikipedia_views": 8194,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Penny_Post"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penny_Post",
+    "color": "#1f2223",
+    "text_color": "light"
   },
   {
     "name": "postage-stamp",
@@ -2506,9 +2538,11 @@
     "category": "exploration",
     "description": "The Penny Black, the world's first adhesive postage stamp, was issued in Britain for prepaid mail delivery.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Nicaragua1_1913.jpg/330px-Nicaragua1_1913.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/postage-stamp_yvbnid?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 416
+    "image_height": 440,
+    "color": "#36302b",
+    "text_color": "light"
   },
   {
     "name": "calotype-photography",
@@ -2517,9 +2551,11 @@
     "category": "exploration",
     "description": "William Henry Fox Talbot introduced the calotype, the first photographic method producing negatives for multiple prints.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Henry_Fox_Talbot_-_The_Building_of_Nelson%5Es_Column_-_B2018.20.3_-_Yale_Center_for_British_Art.jpg/330px-Henry_Fox_Talbot_-_The_Building_of_Nelson%5Es_Column_-_B2018.20.3_-_Yale_Center_for_British_Art.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/calotype-photography_igp1up?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 275
+    "image_height": 440,
+    "color": "#212122",
+    "text_color": "light"
   },
   {
     "name": "anaesthesia-discovered",
@@ -2528,11 +2564,13 @@
     "category": "exploration",
     "description": "Crawford Long used ether to perform painless surgery, revolutionizing medicine.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Preoxygenation_before_anesthetic_induction.jpg/330px-Preoxygenation_before_anesthetic_induction.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anaesthesia-discovered_u9aykm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 230,
+    "image_height": 440,
     "wikipedia_views": 95510,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_general_anesthesia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_general_anesthesia",
+    "color": "#202123",
+    "text_color": "light"
   },
   {
     "name": "joule-thermodynamics",
@@ -2541,11 +2579,13 @@
     "category": "exploration",
     "description": "James Joule established the first law of thermodynamics.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Joule_James_sitting.jpg/330px-Joule_James_sitting.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joule-thermodynamics_el5g52?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 437,
+    "image_height": 440,
     "wikipedia_views": 6947,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Joule_effect"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Joule_effect",
+    "color": "#212122",
+    "text_color": "light"
   },
   {
     "name": "rubber-band-patented",
@@ -2554,9 +2594,11 @@
     "category": "exploration",
     "description": "Stephen Perry patented the rubber band, a simple loop of vulcanized rubber for holding objects together.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Rubber_bands.jpg/330px-Rubber_bands.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubber-band-patented_ds0kob?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 298
+    "image_height": 440,
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "neptune-discovered",
@@ -2565,11 +2607,13 @@
     "category": "exploration",
     "description": "Johann Galle observed Neptune based on mathematical predictions.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Neptune_Voyager2_color_calibrated.png/330px-Neptune_Voyager2_color_calibrated.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neptune-discovered_rspfug?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 1052694,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neptune"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Neptune",
+    "color": "#1f2124",
+    "text_color": "light"
   },
   {
     "name": "anesthesia-invented",
@@ -2578,9 +2622,11 @@
     "category": "exploration",
     "description": "William T.G. Morton publicly demonstrated ether anesthesia for surgery, enabling painless operations.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Ana_arbeitsplatz.JPG/330px-Ana_arbeitsplatz.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anesthesia-invented_zhwycy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "sewing-machine",
@@ -2589,9 +2635,11 @@
     "category": "exploration",
     "description": "Elias Howe patented the lockstitch sewing machine, revolutionizing garment manufacturing.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Sewingmachine1.jpg/330px-Sewingmachine1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sewing-machine_qt3pxl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214
+    "image_height": 440,
+    "color": "#222121",
+    "text_color": "light"
   },
   {
     "name": "gorillas-discovered",
@@ -2600,11 +2648,13 @@
     "category": "exploration",
     "description": "Western scientists first described gorillas from specimens found in Africa.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/330px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gorillas-discovered_nnozbh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 497,
+    "image_height": 440,
     "wikipedia_views": 1012964,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gorilla"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gorilla",
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "safety-pin-invented",
@@ -2613,9 +2663,11 @@
     "category": "exploration",
     "description": "Walter Hunt invented the safety pin in New York, designing and patenting it in just three hours.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Safety_Pin.jpg/330px-Safety_Pin.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/safety-pin-invented_cyziih?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 241
+    "image_height": 440,
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "foucault-pendulum",
@@ -2624,11 +2676,13 @@
     "category": "exploration",
     "description": "Léon Foucault demonstrated Earth's rotation with his famous pendulum.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Panth%C3%A9on_Pendule_de_Foucault2.JPG/330px-Panth%C3%A9on_Pendule_de_Foucault2.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/foucault-pendulum_ixamcf?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 187464,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Foucault_pendulum"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Foucault_pendulum",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "elevator-invented",
@@ -2637,9 +2691,11 @@
     "category": "exploration",
     "description": "Elisha Otis invented the safety elevator with an automatic brake, making tall buildings practical.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Spalding_Building%2C_Portland%2C_Oregon_%282012%29_-_15.JPG/330px-Spalding_Building%2C_Portland%2C_Oregon_%282012%29_-_15.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/elevator-invented_ut5d6e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "perry-expedition-japan",
@@ -2648,11 +2704,13 @@
     "category": "exploration",
     "description": "Commodore Perry's arrival forced Japan to end over 200 years of isolation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Japanese_1854_print_Commodore_Perry.jpg/330px-Japanese_1854_print_Commodore_Perry.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/perry-expedition-japan_z9bijk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 212,
+    "image_height": 440,
     "wikipedia_views": 198413,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Perry_Expedition"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Perry_Expedition",
+    "color": "#413d36",
+    "text_color": "light"
   },
   {
     "name": "bunsen-burner",
@@ -2661,11 +2719,13 @@
     "category": "exploration",
     "description": "Robert Bunsen invented the laboratory burner that bears his name.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mechero_Bunsen.jpg/330px-Mechero_Bunsen.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bunsen-burner_sbpyt2?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 462,
+    "image_height": 440,
     "wikipedia_views": 87218,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bunsen_burner"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bunsen_burner",
+    "color": "#1d2129",
+    "text_color": "light"
   },
   {
     "name": "can-opener-invented",
@@ -2674,9 +2734,11 @@
     "category": "exploration",
     "description": "Robert Yeates invented the first dedicated can opener, nearly 50 years after the tin can was patented.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Empty_tin_can2009-01-19.jpg/330px-Empty_tin_can2009-01-19.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/can-opener-invented_psycey?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 493
+    "image_height": 440,
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "bessemer-steel-process",
@@ -2685,9 +2747,11 @@
     "category": "exploration",
     "description": "Henry Bessemer invented a process for mass-producing steel cheaply, enabling skyscrapers and railways.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Bessemer_converter.jpg/330px-Bessemer_converter.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bessemer-steel-process_rg8vuv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 224
+    "image_height": 440,
+    "color": "#24201e",
+    "text_color": "light"
   },
   {
     "name": "source-of-nile",
@@ -2696,11 +2760,13 @@
     "category": "exploration",
     "description": "John Hanning Speke identified Lake Victoria as the source of the Nile.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg/330px-Cairo_skyline%2C_Panoramic_view%2C_Egypt.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/source-of-nile_auu4bi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 929059,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nile"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nile",
+    "color": "#b6ad95",
+    "text_color": "dark"
   },
   {
     "name": "burke-wills-australia",
@@ -2709,11 +2775,13 @@
     "category": "exploration",
     "description": "The ill-fated expedition crossed Australia from south to north.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Burke_and_Wills_Track.png/330px-Burke_and_Wills_Track.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/burke-wills-australia_q2zpk5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 592,
+    "image_height": 440,
     "wikipedia_views": 70153,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Burke_and_Wills_expedition"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Burke_and_Wills_expedition",
+    "color": "#7e807b",
+    "text_color": "light"
   },
   {
     "name": "garibaldis-expedition",
@@ -2722,11 +2790,13 @@
     "category": "exploration",
     "description": "Giuseppe Garibaldi led his Thousand Red Shirts to conquer Sicily and Naples, advancing Italian unification.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Giuseppe_Garibaldi_1861.jpg/330px-Giuseppe_Garibaldi_1861.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/garibaldis-expedition_lutk0v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 510,
+    "image_height": 440,
     "wikipedia_views": 109417,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Expedition_of_the_Thousand"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Expedition_of_the_Thousand",
+    "color": "#202121",
+    "text_color": "light"
   },
   {
     "name": "internal-combustion-engine",
@@ -2735,9 +2805,11 @@
     "category": "exploration",
     "description": "Étienne Lenoir built the first commercially successful internal combustion engine, powered by coal gas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Four_stroke_engine_diagram.jpg/330px-Four_stroke_engine_diagram.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/internal-combustion-engine_a5cwuk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 371
+    "image_height": 440,
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "pasteur-germ-theory",
@@ -2746,9 +2818,9 @@
     "category": "exploration",
     "description": "Louis Pasteur demonstrated that germs cause disease and fermentation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/330px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteur-germ-theory_euisnu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 455,
+    "image_height": 440,
     "wikipedia_views": 230253,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease",
     "color": "#333335",
@@ -2761,9 +2833,11 @@
     "category": "exploration",
     "description": "Richard Jordan Gatling invented a hand-cranked multi-barrel machine gun capable of firing hundreds of rounds per minute.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Fort_Laramie_National_Historic_Site_Gatling_gun_16-9-2014_15-26-03.jpg/330px-Fort_Laramie_National_Historic_Site_Gatling_gun_16-9-2014_15-26-03.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gatling-gun_nlgk7h?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 440,
+    "color": "#3d3831",
+    "text_color": "light"
   },
   {
     "name": "pasteurization",
@@ -2772,11 +2846,13 @@
     "category": "exploration",
     "description": "Louis Pasteur developed the process to kill harmful microorganisms in food and drink.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg/330px-Louis_Pasteur%2C_foto_av_Paul_Nadar%2C_Crisco_edit.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteurization_pfxtbp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 455,
+    "image_height": 440,
     "wikipedia_views": 277204,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pasteurization"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pasteurization",
+    "color": "#21211f",
+    "text_color": "light"
   },
   {
     "name": "submarine-first-practical",
@@ -2785,9 +2861,11 @@
     "category": "exploration",
     "description": "The French Navy launched the Plongeur, the first submarine powered by mechanical rather than human energy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg/330px-US_Navy_040730-N-1234E-002_PCU_Virginia_%28SSN_774%29_returns_to_the_General_Dynamics_Electric_Boat_shipyard.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/submarine-first-practical_yv8hgw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 264
+    "image_height": 440,
+    "color": "#2d2e2b",
+    "text_color": "light"
   },
   {
     "name": "pasteurization-invented",
@@ -2796,9 +2874,11 @@
     "category": "exploration",
     "description": "Louis Pasteur developed pasteurization, using heat to kill harmful bacteria in food and beverages.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Give_The_Bottle-Fed_Baby_a_Chance_For_It%27s_Life_poster.jpg/330px-Give_The_Bottle-Fed_Baby_a_Chance_For_It%27s_Life_poster.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteurization-invented_jfgtla?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 415
+    "image_height": 440,
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "maxwell-equations",
@@ -2807,11 +2887,13 @@
     "category": "exploration",
     "description": "James Clerk Maxwell unified electricity, magnetism, and light.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/James_Clerk_Maxwell_Statue_Equations.jpg/330px-James_Clerk_Maxwell_Statue_Equations.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maxwell-equations_beqpem?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 291,
+    "image_height": 440,
     "wikipedia_views": 680231,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxwell's_equations"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxwell's_equations",
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "mendel-genetics",
@@ -2820,11 +2902,13 @@
     "category": "exploration",
     "description": "Gregor Mendel published his laws of inheritance from pea plant experiments.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Gregor_Mendel_2.jpg/330px-Gregor_Mendel_2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mendel-genetics_l1krq3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 448,
+    "image_height": 440,
     "wikipedia_views": 175512,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mendelian_inheritance"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mendelian_inheritance",
+    "color": "#1f2124",
+    "text_color": "light"
   },
   {
     "name": "dynamite-invented",
@@ -2833,11 +2917,13 @@
     "category": "exploration",
     "description": "Alfred Nobel patented dynamite, a safer explosive using nitroglycerin absorbed in diatomaceous earth.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Inserting_dynamite_into_hole.jpg/330px-Inserting_dynamite_into_hole.jpg",
-    "image_width": 329,
-    "image_height": 251,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dynamite-invented_f7aafj?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 320401,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dynamite"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dynamite",
+    "color": "#232020",
+    "text_color": "light"
   },
   {
     "name": "reinforced-concrete",
@@ -2846,9 +2932,11 @@
     "category": "exploration",
     "description": "Joseph Monier patented reinforced concrete, embedding iron mesh within concrete for combined strength.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Talbruecke-Bruenn_2005-08-04.jpg/330px-Talbruecke-Bruenn_2005-08-04.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reinforced-concrete_aozljv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 326
+    "image_height": 440,
+    "color": "#403e3b",
+    "text_color": "light"
   },
   {
     "name": "stock-ticker",
@@ -2857,9 +2945,11 @@
     "category": "exploration",
     "description": "Edward Calahan invented the stock ticker, a telegraph machine printing stock prices on continuous paper tape.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Women_in_Waldorf-Astoria.jpg/330px-Women_in_Waldorf-Astoria.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stock-ticker_tusebe?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 424
+    "image_height": 440,
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "periodic-table",
@@ -2868,11 +2958,13 @@
     "category": "exploration",
     "description": "Dmitri Mendeleev organized elements into the periodic table.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Colour_18-col_PT_with_labels.png/330px-Colour_18-col_PT_with_labels.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/periodic-table_akyeeh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 193,
+    "image_height": 440,
     "wikipedia_views": 4129539,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Periodic_table"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Periodic_table",
+    "color": "#222023",
+    "text_color": "light"
   },
   {
     "name": "troy-discovered",
@@ -2881,11 +2973,13 @@
     "category": "exploration",
     "description": "Heinrich Schliemann excavated the legendary city of Troy in Turkey.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Walls_of_Troy_%282%29.jpg/330px-Walls_of_Troy_%282%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/troy-discovered_nvochm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 1081515,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Troy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Troy",
+    "color": "#23211d",
+    "text_color": "light"
   },
   {
     "name": "livingstone-stanley",
@@ -2894,11 +2988,13 @@
     "category": "exploration",
     "description": "Henry Morton Stanley found the missing explorer David Livingstone in Africa.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/David_Livingstone_by_Thomas_Annan.jpg/330px-David_Livingstone_by_Thomas_Annan.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/livingstone-stanley_t6glqb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 403,
+    "image_height": 440,
     "wikipedia_views": 11158,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Stanley_and_Livingstone"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Stanley_and_Livingstone",
+    "color": "#202124",
+    "text_color": "light"
   },
   {
     "name": "barbed-wire-invented",
@@ -2907,9 +3003,11 @@
     "category": "exploration",
     "description": "Joseph Glidden patented barbed wire, transforming land management and the American West.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Rusted_barbed_wire.jpg/330px-Rusted_barbed_wire.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barbed-wire-invented_i0ipan?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 440,
+    "color": "#23211c",
+    "text_color": "light"
   },
   {
     "name": "bell-telephone",
@@ -2918,11 +3016,13 @@
     "category": "exploration",
     "description": "Alexander Graham Bell patented the first practical telephone.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Alexander_Graham_Bell.jpg/330px-Alexander_Graham_Bell.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bell-telephone_mxttdm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 429,
+    "image_height": 440,
     "wikipedia_views": 189599,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telephone"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telephone",
+    "color": "#26201d",
+    "text_color": "light"
   },
   {
     "name": "stapler-invented",
@@ -2931,9 +3031,11 @@
     "category": "exploration",
     "description": "George McGill patented the first commercially successful stapler for fastening papers with wire staples.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/2017_Zszywacz_biurowy.jpg/330px-2017_Zszywacz_biurowy.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stapler-invented_h0qcf8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 214
+    "image_height": 440,
+    "color": "#23201f",
+    "text_color": "light"
   },
   {
     "name": "cash-register",
@@ -2942,9 +3044,11 @@
     "category": "exploration",
     "description": "James Ritty patented the mechanical cash register, nicknamed the 'Incorruptible Cashier,' to prevent employee theft.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/James_Jacob_Ritty.jpg",
-    "image_width": 251,
-    "image_height": 315
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cash-register_icbx3a?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#212122",
+    "text_color": "light"
   },
   {
     "name": "germ-theory",
@@ -2953,11 +3057,13 @@
     "category": "exploration",
     "description": "Louis Pasteur and Robert Koch established that microorganisms cause disease.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Cholera_bacteria_SEM.jpg/330px-Cholera_bacteria_SEM.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/germ-theory_ciansr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 258,
+    "image_height": 440,
     "wikipedia_views": 230253,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Germ_theory_of_disease",
+    "color": "#22211e",
+    "text_color": "light"
   },
   {
     "name": "electric-streetcar",
@@ -2966,9 +3072,11 @@
     "category": "exploration",
     "description": "Siemens built the first public electric tramway in Lichterfelde, Germany, pioneering electrified urban transit.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/330px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-streetcar_asn5h4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 440,
+    "color": "#31322f",
+    "text_color": "light"
   },
   {
     "name": "koch-tuberculosis",
@@ -2977,11 +3085,13 @@
     "category": "exploration",
     "description": "Robert Koch identified the bacterium that causes tuberculosis.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/RobertKoch_cropped.jpg/330px-RobertKoch_cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/koch-tuberculosis_zujfgm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 463,
+    "image_height": 440,
     "wikipedia_views": 201723,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mycobacterium_tuberculosis"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mycobacterium_tuberculosis",
+    "color": "#202122",
+    "text_color": "light"
   },
   {
     "name": "electric-fan",
@@ -2990,9 +3100,11 @@
     "category": "exploration",
     "description": "Schuyler Wheeler invented the first personal electric fan by mounting a propeller on an electric motor shaft.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ventilatore_a_piantana_3.jpg/330px-Ventilatore_a_piantana_3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-fan_mjdynu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "color": "#3e362e",
+    "text_color": "light"
   },
   {
     "name": "maxim-gun-invented",
@@ -3001,11 +3113,13 @@
     "category": "exploration",
     "description": "Hiram Maxim invented the first fully automatic machine gun, using recoil energy to fire continuously.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Maxim_gun%2C_Georgian_national_museum.JPG/330px-Maxim_gun%2C_Georgian_national_museum.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maxim-gun-invented_epcpqz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 300067,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxim_gun"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maxim_gun",
+    "color": "#22211d",
+    "text_color": "light"
   },
   {
     "name": "fountain-pen",
@@ -3014,9 +3128,11 @@
     "category": "exploration",
     "description": "Lewis Waterman patented the first practical fountain pen with a reliable capillary feed system.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Fountain_pen_writing_%28literacy%29.jpg/330px-Fountain_pen_writing_%28literacy%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fountain-pen_qgkbly?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 242
+    "image_height": 440,
+    "color": "#4b3c33",
+    "text_color": "light"
   },
   {
     "name": "steam-turbine",
@@ -3025,9 +3141,11 @@
     "category": "exploration",
     "description": "Sir Charles Parsons invented the modern compound steam turbine, making large-scale electricity generation practical.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Dampfturbine_Laeufer01.jpg/330px-Dampfturbine_Laeufer01.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steam-turbine_goyue7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#202126",
+    "text_color": "light"
   },
   {
     "name": "steel-frame-skyscraper",
@@ -3036,9 +3154,11 @@
     "category": "exploration",
     "description": "The Home Insurance Building in Chicago became the first steel-frame skyscraper, launching the age of tall buildings.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/GE_Building_by_David_Shankbone.JPG/330px-GE_Building_by_David_Shankbone.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steel-frame-skyscraper_flnf4r?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 444
+    "image_height": 440,
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "dishwasher-invented",
@@ -3047,9 +3167,11 @@
     "category": "exploration",
     "description": "Josephine Cochrane invented the first commercially successful dishwasher, debuting at the 1893 World's Fair.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Dishwasher_with_dishes.JPG/330px-Dishwasher_with_dishes.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dishwasher-invented_jlnl7j?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#24211d",
+    "text_color": "light"
   },
   {
     "name": "coca-cola-invented",
@@ -3058,9 +3180,11 @@
     "category": "exploration",
     "description": "Pharmacist John Pemberton invented Coca-Cola in Atlanta, Georgia, creating the world's most iconic beverage brand.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Coca_Cola_Flasche_-_Original_Taste.jpg/330px-Coca_Cola_Flasche_-_Original_Taste.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coca-cola-invented_iopfqj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 440,
+    "color": "#212121",
+    "text_color": "light"
   },
   {
     "name": "hertz-radio-waves",
@@ -3532,9 +3656,11 @@
     "category": "exploration",
     "description": "Harry Brearley produced the first true stainless steel in Sheffield, England, revolutionizing cutlery and construction.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Sink_and_taps_in_the_men%27s_locker_room_3_BW.jpg/330px-Sink_and_taps_in_the_men%27s_locker_room_3_BW.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stainless-steel_r9epvb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253
+    "image_height": 440,
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "shackleton-endurance",
@@ -3556,11 +3682,13 @@
     "category": "exploration",
     "description": "The SPT Airboat Line became the worlds first scheduled airline using winged aircraft.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Airboat4.JPG/330px-Airboat4.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-scheduled-airline_bauftv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 207,
+    "image_height": 440,
     "wikipedia_views": 133108,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Airline"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Airline",
+    "color": "#73717c",
+    "text_color": "light"
   },
   {
     "name": "electric-traffic-light",
@@ -3569,9 +3697,11 @@
     "category": "exploration",
     "description": "The first electric traffic signal was installed in Cleveland, Ohio, beginning automated road traffic management.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Modern_British_LED_Traffic_Light.jpg/330px-Modern_British_LED_Traffic_Light.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-traffic-light_lannt1?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "general-relativity",
@@ -3580,11 +3710,13 @@
     "category": "exploration",
     "description": "Albert Einstein published his theory of general relativity and gravity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/BBH_gravitational_lensing_of_gw150914.webm/320px--BBH_gravitational_lensing_of_gw150914.webm.jpg",
-    "image_width": 320,
-    "image_height": 180,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/general-relativity_veq0db?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 471922,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/General_relativity"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/General_relativity",
+    "color": "#462e1c",
+    "text_color": "light"
   },
   {
     "name": "color-film-technicolor",
@@ -3604,9 +3736,11 @@
     "category": "exploration",
     "description": "The British Mark I tank was first used in battle during World War I at the Somme.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/British_Mark_I_male_tank_Somme_25_September_1916.jpg/330px-British_Mark_I_male_tank_Somme_25_September_1916.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tank-invented_ke9csc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 234
+    "image_height": 440,
+    "color": "#503723",
+    "text_color": "light"
   },
   {
     "name": "band-aid-invented",
@@ -3615,9 +3749,11 @@
     "category": "exploration",
     "description": "Earle Dickson created the first adhesive bandage for home use, marketed by Johnson & Johnson as the Band-Aid.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/BandAid.jpg/330px-BandAid.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/band-aid-invented_lqhssi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 195
+    "image_height": 440,
+    "color": "#aeaea6",
+    "text_color": "dark"
   },
   {
     "name": "insulin-discovered",
@@ -3626,9 +3762,9 @@
     "category": "exploration",
     "description": "Frederick Banting and Charles Best discovered insulin, saving millions of diabetics.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Insulin_struct.png/330px-Insulin_struct.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/insulin-discovered_aov6wm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 354805,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Insulin",
     "color": "#adadad",
@@ -3641,9 +3777,11 @@
     "category": "exploration",
     "description": "Charles Strite patented the automatic pop-up toaster, freeing breakfast-makers from watching their bread.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff/lossless-page1-330px-Consumer_Reports_-_Hamilton_Beach_Digital_toaster.tiff.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pop-up-toaster_twkg1f?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 316
+    "image_height": 440,
+    "color": "#272018",
+    "text_color": "light"
   },
   {
     "name": "tutankhamun-tomb",
@@ -3717,11 +3855,13 @@
     "category": "exploration",
     "description": "British workers staged a nine-day general strike in support of coal miners facing wage cuts and longer hours.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tyldesley_miners_outside_the_Miners_Hall_during_the_1926_General_Strike.jpg/330px-Tyldesley_miners_outside_the_Miners_Hall_during_the_1926_General_Strike.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/general-strike-in-britain_neai6f?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 240,
+    "image_height": 440,
     "wikipedia_views": 59464,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1926_United_Kingdom_general_strike",
+    "color": "#45311f",
+    "text_color": "light"
   },
   {
     "name": "spirit-of-st-louis",
@@ -3730,11 +3870,13 @@
     "category": "exploration",
     "description": "Charles Lindbergh made the first solo nonstop transatlantic flight.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Spirit_Of_St_Louis2.jpg/330px-Spirit_Of_St_Louis2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spirit-of-st-louis_sa6gyi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 164,
+    "image_height": 440,
     "wikipedia_views": 947371,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Lindbergh"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Charles_Lindbergh",
+    "color": "#573a26",
+    "text_color": "light"
   },
   {
     "name": "heisenbergs-uncertainty-principle",
@@ -3754,11 +3896,13 @@
     "category": "exploration",
     "description": "Alexander Fleming discovered the first antibiotic by accident.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/330px-Penicillin_core.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penicillin-discovered_onofdq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 627568,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin",
+    "color": "#342513",
+    "text_color": "light"
   },
   {
     "name": "expanding-universe",
@@ -3767,11 +3911,13 @@
     "category": "exploration",
     "description": "Edwin Hubble discovered that the universe is expanding.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/CMB_Timeline300_no_WMAP.jpg/330px-CMB_Timeline300_no_WMAP.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/expanding-universe_r2hutr?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 218,
+    "image_height": 440,
     "wikipedia_views": 248086,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Expansion_of_the_universe",
+    "color": "#272019",
+    "text_color": "light"
   },
   {
     "name": "pluto-discovered",
@@ -3793,9 +3939,11 @@
     "category": "exploration",
     "description": "Frank Whittle patented the turbojet engine, which would transform aviation and make global air travel possible.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/F100_F-15_engine.JPG/330px-F100_F-15_engine.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jet-engine-invented_ta40ou?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 200
+    "image_height": 440,
+    "color": "#352a1e",
+    "text_color": "light"
   },
   {
     "name": "frozen-food",
@@ -3815,9 +3963,11 @@
     "category": "exploration",
     "description": "3M engineer Richard Drew developed the first transparent cellophane adhesive tape, marketed as Scotch Tape.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Scotch_tape.jpg/330px-Scotch_tape.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotch-tape_ekawr8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#24211a",
+    "text_color": "light"
   },
   {
     "name": "neutron-discovered",
@@ -3839,11 +3989,13 @@
     "category": "exploration",
     "description": "Amelia Earhart became the first woman to fly solo across the Atlantic.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg/330px-Amelia_Earhart_standing_under_nose_of_her_Lockheed_Model_10-E_Electra%2C_small_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amelia-earhart-atlantic_jbabul?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 444,
+    "image_height": 440,
     "wikipedia_views": 2021925,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Amelia_Earhart"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Amelia_Earhart",
+    "color": "#473524",
+    "text_color": "light"
   },
   {
     "name": "first-woman-us-senator",
@@ -3865,9 +4017,11 @@
     "category": "exploration",
     "description": "Robert Watson-Watt demonstrated radar, which proved crucial for air defense in World War II.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Radar_antenna.jpg/330px-Radar_antenna.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/radar-developed_xfyh5x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 421
+    "image_height": 440,
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "nylon-invented",
@@ -3911,9 +4065,11 @@
     "category": "exploration",
     "description": "Hungarian journalist László Bíró patented the first practical ballpoint pen, replacing the leak-prone fountain pen.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/03-BICcristal2008-03-26.jpg/330px-03-BICcristal2008-03-26.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ballpoint-pen_k5syog?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221
+    "image_height": 440,
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "teflon-discovered",
@@ -3957,11 +4113,13 @@
     "category": "exploration",
     "description": "Scientists developed methods to mass produce the life-saving antibiotic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Penicillin_core.svg/330px-Penicillin_core.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penicillin-mass-produced_tpxrwd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 627568,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin",
+    "color": "#291f18",
+    "text_color": "light"
   },
   {
     "name": "first-nuclear-reactor",
@@ -3970,11 +4128,13 @@
     "category": "exploration",
     "description": "Enrico Fermi achieved the first controlled nuclear chain reaction at Chicago Pile-1 beneath Stagg Field.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif/lossy-page1-320px-Time%2C_3-22_p.m%2C_December_2%2C_1942._Place%2C_Racquets_Court_under_West_Stands_of_Stagg_Field%2C_University_of_Chicago...._-_NARA_-_542144.tif.jpg",
-    "image_width": 320,
-    "image_height": 174,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-nuclear-reactor_l45xiy?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 179741,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Pile-1"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chicago_Pile-1",
+    "color": "#271f18",
+    "text_color": "light"
   },
   {
     "name": "kidney-dialysis",
@@ -4016,11 +4176,13 @@
     "category": "exploration",
     "description": "Ancient Jewish manuscripts were found in caves near the Dead Sea.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Part_of_Dead_Sea_Scroll_28a_from_Qumran_Cave_1._The_Jordan_Museum%2C_Amman.jpg/960px-Part_of_Dead_Sea_Scroll_28a_from_Qumran_Cave_1._The_Jordan_Museum%2C_Amman.jpg",
-    "image_width": 960,
-    "image_height": 641,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dead-sea-scrolls_axv0z8?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 996119,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "heyerdahl-kon-tiki",
@@ -4029,11 +4191,13 @@
     "category": "exploration",
     "description": "Thor Heyerdahl sailed a balsa raft from South America to Polynesia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg/330px-Kon-Tiki%2C_Kon-Tiki_Museum%2C_2019_%2802%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heyerdahl-kon-tiki_ayo7g8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 412,
+    "image_height": 440,
     "wikipedia_views": 163827,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kon-Tiki_expedition",
+    "color": "#24211b",
+    "text_color": "light"
   },
   {
     "name": "transistor-invented",
@@ -4042,11 +4206,13 @@
     "category": "exploration",
     "description": "Bell Labs scientists Bardeen, Brattain, and Shockley invented the transistor, enabling modern electronics.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Transistors.agr.jpg/330px-Transistors.agr.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/transistor-invented_shzpcd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 277,
+    "image_height": 440,
     "wikipedia_views": 524367,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Transistor"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Transistor",
+    "color": "#271f19",
+    "text_color": "light"
   },
   {
     "name": "velcro-invented",
@@ -4127,11 +4293,13 @@
     "category": "exploration",
     "description": "Watson and Crick discovered the double helix structure of DNA.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/DNA-structure-and-bases.png/330px-DNA-structure-and-bases.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dna-structure_r4hera?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 476,
+    "image_height": 440,
     "wikipedia_views": 829892,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA",
+    "color": "#222025",
+    "text_color": "light"
   },
   {
     "name": "everest",
@@ -4140,11 +4308,13 @@
     "category": "exploration",
     "description": "Edmund Hillary and Tenzing Norgay became the first to summit Mount Everest.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg/330px-Mount_Everest_as_seen_from_Drukair2_PLW_edit_Cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/everest_gqjhcl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 200,
+    "image_height": 440,
     "wikipedia_views": 2770627,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Everest"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mount_Everest",
+    "color": "#17222f",
+    "text_color": "light"
   },
   {
     "name": "georgetown-ibm-machine-translation",
@@ -4166,11 +4336,13 @@
     "category": "exploration",
     "description": "The first nuclear-powered submarine, USS Nautilus, is launched in Groton, Connecticut.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg/330px-Nautilus_%28SSN_571%29_Groton_CT_2002_May_08.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/uss-nautilus-launched_humywi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 226155,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/USS_Nautilus_(SSN-571)",
+    "color": "#1e2225",
+    "text_color": "light"
   },
   {
     "name": "first-solar-cell",
@@ -4179,9 +4351,11 @@
     "category": "exploration",
     "description": "Bell Labs created the first practical silicon solar cell, converting sunlight into electricity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Solar_cell.png/330px-Solar_cell.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-solar-cell_j9lyrv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 295
+    "image_height": 440,
+    "color": "#1b2229",
+    "text_color": "light"
   },
   {
     "name": "first-organ-transplant",
@@ -4190,9 +4364,11 @@
     "category": "exploration",
     "description": "Dr. Joseph Murray performed the first successful organ transplant, a kidney transplant between identical twins.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lost_towel_number_15_found.JPG/330px-Lost_towel_number_15_found.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-organ-transplant_kba5d3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#1d212a",
+    "text_color": "light"
   },
   {
     "name": "transistor-radio",
@@ -4201,9 +4377,11 @@
     "category": "exploration",
     "description": "The Regency TR-1 became the first commercially sold transistor radio, making portable music a reality.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Emerson_Model_888_Pioneer_8-Transistor_AM_Radio%2C_Made_in_the_USA%2C_Circa_1958_%2821973868670%29.jpg/330px-Emerson_Model_888_Pioneer_8-Transistor_AM_Radio%2C_Made_in_the_USA%2C_Circa_1958_%2821973868670%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/transistor-radio_lsz6lq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 461
+    "image_height": 440,
+    "color": "#1c2228",
+    "text_color": "light"
   },
   {
     "name": "polio-vaccine",
@@ -4212,11 +4390,13 @@
     "category": "exploration",
     "description": "Jonas Salk's vaccine was declared safe and effective against polio.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Poliodrops.jpg",
-    "image_width": 264,
-    "image_height": 288,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polio-vaccine_anmssx?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 257001,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Polio_vaccine"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Polio_vaccine",
+    "color": "#212025",
+    "text_color": "light"
   },
   {
     "name": "geneva-summit-1955",
@@ -4225,11 +4405,13 @@
     "category": "exploration",
     "description": "Leaders of the US, USSR, UK, and France met in Geneva, the first superpower summit since Potsdam in 1945.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg/330px-Dwight_D._Eisenhower%2C_official_photo_portrait%2C_May_29%2C_1959_%28cropped%29%283%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/geneva-summit-1955_j2wwhw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 431,
+    "image_height": 440,
     "wikipedia_views": 28119,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Summit_(1985)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Geneva_Summit_(1985)",
+    "color": "#1d2128",
+    "text_color": "light"
   },
   {
     "name": "tv-remote-control",
@@ -4249,9 +4431,11 @@
     "category": "exploration",
     "description": "Calder Hall in the UK became the world's first commercial nuclear power station.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/RIAN_archive_409173_World%27s_first_nuclear_power_plant_in_Obninsk.jpg/330px-RIAN_archive_409173_World%27s_first_nuclear_power_plant_in_Obninsk.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-nuclear-power-plant_mkr0vu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 219
+    "image_height": 440,
+    "color": "#454649",
+    "text_color": "light"
   },
   {
     "name": "sputnik-launched",
@@ -4273,11 +4457,13 @@
     "category": "exploration",
     "description": "Soviet dog Laika became the first animal to orbit Earth aboard Sputnik 2, proving life could survive in space.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Laika_%28Soviet_dog%29.jpg/330px-Laika_%28Soviet_dog%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/laika-in-space_sxwbev?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 249,
+    "image_height": 440,
     "wikipedia_views": 865624,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Laika"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laika",
+    "color": "#1f2127",
+    "text_color": "light"
   },
   {
     "name": "cochlear-implant",
@@ -4286,9 +4472,11 @@
     "category": "exploration",
     "description": "André Djourno performed the first cochlear implantation, enabling electrical stimulation of the auditory nerve.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Blausen_0244_CochlearImplant_01.png/330px-Blausen_0244_CochlearImplant_01.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cochlear-implant_ktzadx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#202126",
+    "text_color": "light"
   },
   {
     "name": "van-allen-belt-detected",
@@ -4297,11 +4485,13 @@
     "category": "exploration",
     "description": "The first successful American satellite detects the Van Allen radiation belt.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Van_Allen_Belts.ogv/320px--Van_Allen_Belts.ogv.jpg",
-    "image_width": 320,
-    "image_height": 180,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/van-allen-belt-detected_ewym6f?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 306263,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Allen_radiation_belt"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Van_Allen_radiation_belt",
+    "color": "#19222d",
+    "text_color": "light"
   },
   {
     "name": "pacemaker-implanted",
@@ -4310,9 +4500,11 @@
     "category": "exploration",
     "description": "Arne Larsson received the first implantable pacemaker, pioneering electronic cardiac treatment.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/St_Jude_Medical_pacemaker_with_ruler.jpg/330px-St_Jude_Medical_pacemaker_with_ruler.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pacemaker-implanted_hid2uw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 350
+    "image_height": 440,
+    "color": "#1f2126",
+    "text_color": "light"
   },
   {
     "name": "xerox-photocopier",
@@ -4321,9 +4513,11 @@
     "category": "exploration",
     "description": "Xerox introduced the 914, the first successful plain-paper photocopier, transforming office work.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Xerox_headquarters.jpg/330px-Xerox_headquarters.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/xerox-photocopier_bx6wrp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247
+    "image_height": 440,
+    "color": "#1d212a",
+    "text_color": "light"
   },
   {
     "name": "mariana-trench",
@@ -4332,11 +4526,13 @@
     "category": "exploration",
     "description": "Jacques Piccard and Don Walsh descended to the deepest point on Earth.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Marianatrenchmap.png/330px-Marianatrenchmap.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mariana-trench_rtj6oz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 430,
+    "image_height": 440,
     "wikipedia_views": 1202560,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mariana_Trench"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mariana_Trench",
+    "color": "#222025",
+    "text_color": "light"
   },
   {
     "name": "laser-invented",
@@ -4345,11 +4541,13 @@
     "category": "exploration",
     "description": "Theodore Maiman built the first working laser.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Guiding_the_Milky_Way_%28potw2222a%29.jpg/330px-Guiding_the_Milky_Way_%28potw2222a%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/laser-invented_dwftjm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 448962,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Laser"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Laser",
+    "color": "#1c212d",
+    "text_color": "light"
   },
   {
     "name": "bathyscaphe-trieste",
@@ -4358,11 +4556,13 @@
     "category": "exploration",
     "description": "The bathyscaphe Trieste descended to the bottom of the Mariana Trench.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Bathyscaphe_Trieste.jpg/330px-Bathyscaphe_Trieste.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bathyscaphe-trieste_lcjc6h?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 266,
+    "image_height": 440,
     "wikipedia_views": 109123,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)",
+    "color": "#1b212e",
+    "text_color": "light"
   },
   {
     "name": "oral-contraceptive-pill",
@@ -4535,11 +4735,13 @@
     "category": "exploration",
     "description": "Scientists confirmed that Earth's surface is divided into moving plates.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Tectonic_plates_%282022%29.svg/330px-Tectonic_plates_%282022%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plate-tectonics-confirmed_mfnmnz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 168,
+    "image_height": 440,
     "wikipedia_views": 702350,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Plate_tectonics"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Plate_tectonics",
+    "color": "#212123",
+    "text_color": "light"
   },
   {
     "name": "apollo-5-lunar-module",
@@ -4746,9 +4948,11 @@
     "category": "exploration",
     "description": "Martin Cooper of Motorola made the first handheld mobile phone call on the streets of New York City.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/UK_-_10_-_Phones_old_and_new_%282997615876%29.jpg/330px-UK_-_10_-_Phones_old_and_new_%282997615876%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mobile-phone-call_z3kdjq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 440
+    "image_height": 440,
+    "color": "#383f3f",
+    "text_color": "light"
   },
   {
     "name": "lucy-discovered",
@@ -4828,9 +5032,11 @@
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Voyager_spacecraft_model.png/330px-Voyager_spacecraft_model.png",
     "image_width": 330,
-    "image_height": 239,
+    "image_height": 440,
     "wikipedia_views": 961645,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Voyager_1"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Voyager_1",
+    "color": "#5f7382",
+    "text_color": "light"
   },
   {
     "name": "first-dna-sequencing",
@@ -5651,11 +5857,13 @@
     "category": "exploration",
     "description": "China became the third country to return lunar samples to Earth.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Chang-e-5-assembly-CG-1-Cropped.jpg/330px-Chang-e-5-assembly-CG-1-Cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/china-moon-samples_jilpzo?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 42276,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chang'e_6"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chang'e_6",
+    "color": "#91b3c9",
+    "text_color": "dark"
   },
   {
     "name": "james-webb-launched",
@@ -5664,11 +5872,13 @@
     "category": "exploration",
     "description": "NASA launched the most powerful space telescope ever built.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/JWST_spacecraft_model_3.png/330px-JWST_spacecraft_model_3.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/james-webb-launched_nai99o?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 283,
+    "image_height": 440,
     "wikipedia_views": 688045,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/James_Webb_Space_Telescope",
+    "color": "#14455c",
+    "text_color": "light"
   },
   {
     "name": "perseverance-mars-landing",
@@ -5677,11 +5887,13 @@
     "category": "exploration",
     "description": "NASA's Perseverance rover landed on Mars with the Ingenuity helicopter.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Perseverance-Selfie-at-Rochette-Horizontal-V2.gif/330px-Perseverance-Selfie-at-Rochette-Horizontal-V2.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/perseverance-mars-landing_jq50g3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186,
+    "image_height": 440,
     "wikipedia_views": 63882,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_2020"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Mars_2020",
+    "color": "#141f3e",
+    "text_color": "light"
   },
   {
     "name": "ingenuity-mars-flight",
@@ -5690,11 +5902,13 @@
     "category": "exploration",
     "description": "Ingenuity became the first aircraft to fly on another planet.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mars_helicopter_on_sol_46.png/330px-Mars_helicopter_on_sol_46.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ingenuity-mars-flight_utm7vz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 142168,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ingenuity_(helicopter)",
+    "color": "#304078",
+    "text_color": "light"
   },
   {
     "name": "parker-solar-probe",
@@ -5718,11 +5932,13 @@
     "category": "exploration",
     "description": "NASA successfully deflected an asteroid for the first time in history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Dart-poster3.jpg/330px-Dart-poster3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dart-asteroid-impact_xsfr2e?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 146392,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+    "color": "#182134",
+    "text_color": "light"
   },
   {
     "name": "nuclear-fusion-ignition",
@@ -5731,11 +5947,13 @@
     "category": "exploration",
     "description": "Scientists achieved fusion ignition, producing more energy than was input.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/EAST_Tokamak_plasma_image3.jpg/330px-EAST_Tokamak_plasma_image3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nuclear-fusion-ignition_qps15v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 387,
+    "image_height": 440,
     "wikipedia_views": 10639,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fusion_ignition"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fusion_ignition",
+    "color": "#18222f",
+    "text_color": "light"
   },
   {
     "name": "superconductor-claims",
@@ -5744,11 +5962,13 @@
     "category": "exploration",
     "description": "Claims of a room-temperature superconductor sparked global scientific interest.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/LK-99_pellet.png/330px-LK-99_pellet.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/superconductor-claims_o7qihi?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 212,
+    "image_height": 440,
     "wikipedia_views": 51437,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Room-temperature_superconductor"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Room-temperature_superconductor",
+    "color": "#1c2228",
+    "text_color": "light"
   },
   {
     "name": "advanced-acheulean-stone-tools",
@@ -5757,7 +5977,11 @@
     "category": "exploration",
     "description": "Improved hand axes with sharper edges marked a major leap in early human tool-making technology.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Distribution_of_the_Acheulean_cultural_tradition_as_it_is_currently_understood.webp/330px-Distribution_of_the_Acheulean_cultural_tradition_as_it_is_currently_understood.webp.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/advanced-acheulean-stone-tools_gjjchk?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bone-tools",
@@ -5766,7 +5990,11 @@
     "category": "exploration",
     "description": "Early hominins shaped animal bones into functional tools for cutting, scraping, and digging.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Os_Tart%C3%A9_MHNT_PRE.2009.0.248.2_Noir.jpg/330px-Os_Tart%C3%A9_MHNT_PRE.2009.0.248.2_Noir.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bone-tools_hojlnj?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "boats",
@@ -5784,7 +6012,11 @@
     "category": "exploration",
     "description": "Attaching stone blades to wooden handles created composite tools with greater leverage and cutting power.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Axe_%28AM_1918.69-3%29.jpg/330px-Axe_%28AM_1918.69-3%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hafting_wogahz?_a=BAMAMiiu0",
+    "color": "#271f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "woodworking-construction",
@@ -5793,7 +6025,11 @@
     "category": "exploration",
     "description": "Earliest evidence of wood being shaped for structural use, predating most other building materials.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Ing%C3%A5_hembygdsmuseum_Gammelg%C3%A5rden_09.jpg/330px-Ing%C3%A5_hembygdsmuseum_Gammelg%C3%A5rden_09.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woodworking-construction_qt3yli?_a=BAMAMiiu0",
+    "color": "#222120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "food-storage-marrow",
@@ -5802,7 +6038,11 @@
     "category": "exploration",
     "description": "Bone marrow stored inside bones for later consumption, representing the earliest known food preservation.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Food_caches%2C_Hooper_Bay%2C_Alaska.jpg/330px-Food_caches%2C_Hooper_Bay%2C_Alaska.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/food-storage-marrow_zqfco0?_a=BAMAMiiu0",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hide-and-leather-clothing-shelter",
@@ -5811,7 +6051,11 @@
     "category": "exploration",
     "description": "Animal hides were processed and used for protection from the elements as clothing and shelter.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leathertools.jpg/330px-Leathertools.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hide-and-leather-clothing-shelter_t1kp9b?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pigments",
@@ -5820,7 +6064,11 @@
     "category": "exploration",
     "description": "Natural minerals ground into colored pigments for body decoration and early artistic expression.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Indian_pigments.jpg/330px-Indian_pigments.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pigments_qzcolp?_a=BAMAMiiu0",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "simple-glue-birch-tar",
@@ -5829,7 +6077,11 @@
     "category": "exploration",
     "description": "Birch bark heated to produce a sticky adhesive used to bond stone tools to wooden handles.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Birkenpech.JPG/330px-Birkenpech.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/simple-glue-birch-tar_gemg86?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "beds",
@@ -5838,7 +6090,11 @@
     "category": "exploration",
     "description": "Grass and leaf bedding deliberately arranged for sleeping comfort in early human shelters.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2008-04-12_Freilichtmuseum_Detmold_%2811%29.jpg/330px-2008-04-12_Freilichtmuseum_Detmold_%2811%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beds_iwvoem?_a=BAMAMiiu0",
+    "color": "#222122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "clothing",
@@ -5847,7 +6103,11 @@
     "category": "exploration",
     "description": "Fitted garments sewn from animal hides using bone awls, enabling survival in colder climates.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Clothes.jpg/330px-Clothes.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clothing_kxbj0v?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "heat-treating-stone-blades",
@@ -5856,7 +6116,11 @@
     "category": "exploration",
     "description": "Heating stone before flaking improved its workability and produced sharper, more refined tool edges.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Heat-Treating-Furnace.jpg/330px-Heat-Treating-Furnace.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heat-treating-stone-blades_gnjexa?_a=BAMAMiiu0",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "beads-string-thread",
@@ -5865,7 +6129,11 @@
     "category": "exploration",
     "description": "Shell beads strung together as personal ornaments, implying the concurrent invention of thread.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Beads.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beads-string-thread_jqojba?_a=BAMAMiiu0",
+    "color": "#291f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "compound-paints",
@@ -5874,7 +6142,11 @@
     "category": "exploration",
     "description": "Multi-ingredient paints mixed from ochre, fat, and other materials for cave art and body decoration.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Multicolored_tempera_paints.jpg/330px-Multicolored_tempera_paints.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compound-paints_adsnjf?_a=BAMAMiiu0",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "funerals-burial",
@@ -5883,7 +6155,11 @@
     "category": "exploration",
     "description": "Deliberate burial of the dead with ritual significance, reflecting early symbolic thought.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Poulton_Chapel_Burial_-_geograph.org.uk_-_3343711.jpg/330px-Poulton_Chapel_Burial_-_geograph.org.uk_-_3343711.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/funerals-burial_bna7yw?_a=BAMAMiiu0",
+    "color": "#2b1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "harpoons",
@@ -5892,7 +6168,11 @@
     "category": "exploration",
     "description": "Barbed spears designed for fishing and hunting marine animals, expanding the prehistoric diet.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Inuit_hunter_with_harpoon.jpg/330px-Inuit_hunter_with_harpoon.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/harpoons_ct1mch?_a=BAMAMiiu0",
+    "color": "#22211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "compound-adhesives",
@@ -5901,7 +6181,11 @@
     "category": "exploration",
     "description": "Multi-ingredient glues combining plant gum, ochre, and fat for stronger tool assembly.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/AdhesivesForHouseUse004.jpg/330px-AdhesivesForHouseUse004.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compound-adhesives_xwizx8?_a=BAMAMiiu0",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sewing-needle",
@@ -5910,7 +6194,11 @@
     "category": "exploration",
     "description": "Bone needles with carved eyes for threading sinew, enabling stitching of fitted hide garments.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/A_depiction_of_needle.JPG/330px-A_depiction_of_needle.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sewing-needle_saswh4?_a=BAMAMiiu0",
+    "color": "#271f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ground-stone-tools",
@@ -5919,7 +6207,11 @@
     "category": "exploration",
     "description": "Stone tools shaped by grinding and polishing rather than chipping, producing smoother edges.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/N%C3%A9olithique_0001.jpg/330px-N%C3%A9olithique_0001.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ground-stone-tools_vkzxen?_a=BAMAMiiu0",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mines-hematite-ochre",
@@ -5928,7 +6220,11 @@
     "category": "exploration",
     "description": "Underground mining shafts dug to extract hematite for red ochre pigment used in rituals and art.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Hellocker-_Pigment.JPG/330px-Hellocker-_Pigment.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mines-hematite-ochre_jgbumh?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "shoes",
@@ -5937,7 +6233,11 @@
     "category": "exploration",
     "description": "Foot coverings crafted from animal hide to protect feet from rough terrain and cold.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Skor_fr%C3%A5n_1700-_till_1960-talet_-_Nordiska_Museet_-_NMA.0056302.jpg/330px-Skor_fr%C3%A5n_1700-_till_1960-talet_-_Nordiska_Museet_-_NMA.0056302.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shoes_avgkbq?_a=BAMAMiiu0",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tally-sticks",
@@ -5946,7 +6246,11 @@
     "category": "exploration",
     "description": "Notched bones used for counting, possibly the oldest known mathematical records.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Medieval_tally_sticks.jpg/330px-Medieval_tally_sticks.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tally-sticks_d7luap?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "flute",
@@ -5955,9 +6259,11 @@
     "category": "exploration",
     "description": "Bone flutes carved from vulture wing bones, the oldest known musical instruments ever discovered.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shinobue_and_other_flutes-3.jpg/330px-Shinobue_and_other_flutes-3.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flute_zxtwqh?_a=BAMAMiiu0",
     "color": "#beaa90",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spear-thrower-atlatl",
@@ -5966,7 +6272,11 @@
     "category": "exploration",
     "description": "A lever device that extended the arm's reach to throw spears with greater force and distance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nativo_do_Novo_Mundo_lan%C3%A7ando_flecha_com_o_propulsor_ou_est%C3%B3lica.jpg/330px-Nativo_do_Novo_Mundo_lan%C3%A7ando_flecha_com_o_propulsor_ou_est%C3%B3lica.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spear-thrower-atlatl_whpveg?_a=BAMAMiiu0",
+    "color": "#26201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mortar-and-pestle",
@@ -5975,7 +6285,11 @@
     "category": "exploration",
     "description": "Stone basins and grinding tools for processing food and pigments into fine powders.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/White-Mortar-and-Pestle.jpg/330px-White-Mortar-and-Pestle.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mortar-and-pestle_bequ7j?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rope-and-cords",
@@ -5984,7 +6298,11 @@
     "category": "exploration",
     "description": "Twisted plant fibers creating strong cordage for binding, carrying, and building.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Cordage_en_chanvre.jpg/330px-Cordage_en_chanvre.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rope-and-cords_rhpfbx?_a=BAMAMiiu0",
+    "color": "#291f18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "amputation-and-surgery",
@@ -5993,7 +6311,11 @@
     "category": "exploration",
     "description": "Earliest evidence of surgical limb removal performed on a living person who survived the procedure.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Cardiac_surgery_operating_room.jpg/330px-Cardiac_surgery_operating_room.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amputation-and-surgery_rd5uu3?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ceramics-and-weaving",
@@ -6002,7 +6324,11 @@
     "category": "exploration",
     "description": "Clay fired into ceramic objects and plant fibers woven into fabric, two transformative crafts.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warp_and_weft_2.jpg/330px-Warp_and_weft_2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ceramics-and-weaving_zdzln2?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ceramic-sculpture",
@@ -6011,7 +6337,11 @@
     "category": "exploration",
     "description": "Fired clay figurines including the Venus of Dolni Vestonice, the oldest known ceramic artwork.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Etruscan_amphora_Louvre_E703_side_B.jpg/330px-Etruscan_amphora_Louvre_E703_side_B.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ceramic-sculpture_yotko6?_a=BAMAMiiu0",
+    "color": "#2d1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bullroarer",
@@ -6020,7 +6350,11 @@
     "category": "exploration",
     "description": "A carved wooden blade swung on a cord to produce a deep roaring sound, used in rituals.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Bull_roarers.jpg/330px-Bull_roarers.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bullroarer_viwsot?_a=BAMAMiiu0",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fish-hook",
@@ -6029,7 +6363,11 @@
     "category": "exploration",
     "description": "Curved bone or shell hooks for catching fish, greatly expanding prehistoric food sources.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Fish_hooks.jpg/330px-Fish_hooks.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fish-hook_rzppdo?_a=BAMAMiiu0",
+    "color": "#27201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "star-chart",
@@ -6038,7 +6376,11 @@
     "category": "exploration",
     "description": "Cave paintings mapping star positions, among the earliest astronomical records ever created.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Planisph%C3%A6ri_c%C5%93leste.jpg/330px-Planisph%C3%A6ri_c%C5%93leste.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/star-chart_zvwcym?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bread",
@@ -6047,7 +6389,11 @@
     "category": "exploration",
     "description": "Flour from wild cereals mixed with water and baked, predating agriculture by thousands of years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Korb_mit_Br%C3%B6tchen.JPG/330px-Korb_mit_Br%C3%B6tchen.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bread_mdtgyn?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spindle-whorl",
@@ -6056,7 +6402,11 @@
     "category": "exploration",
     "description": "A weighted disk used to spin fibers into thread, one of the earliest wheel-like tools.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Wirtel01.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spindle-whorl_yytdxk?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "domestication-of-rice",
@@ -6065,7 +6415,11 @@
     "category": "exploration",
     "description": "Rice first cultivated in the Yangtze River valley of China, now feeding billions worldwide.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg/330px-20201102.Hengnan.Hybrid_rice_Sanyou-1.6.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-rice_nqwopq?_a=BAMAMiiu0",
+    "color": "#271f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mudbricks-and-clay-mortar",
@@ -6074,7 +6428,11 @@
     "category": "exploration",
     "description": "Sun-dried bricks bonded with clay mortar used to construct the first permanent buildings.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Mudbricks_in_Palestine_2011.jpg/330px-Mudbricks_in_Palestine_2011.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mudbricks-and-clay-mortar_d6jcee?_a=BAMAMiiu0",
+    "color": "#472613",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "water-well",
@@ -6083,7 +6441,11 @@
     "category": "exploration",
     "description": "Shafts dug deep into the ground to access underground water supplies for settlements.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Faryab-_village_dug_well.JPG/330px-Faryab-_village_dug_well.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-well_nznw2d?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pesse-canoe",
@@ -6092,7 +6454,11 @@
     "category": "exploration",
     "description": "A dugout canoe discovered in the Netherlands, the oldest known surviving boat in the world.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Boomstamkano_van_Pesse%2C_Drents_Museum%2C_1955-VIII-2.jpg/330px-Boomstamkano_van_Pesse%2C_Drents_Museum%2C_1955-VIII-2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pesse-canoe_dkbecc?_a=BAMAMiiu0",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "proto-city-large-settlements",
@@ -7706,7 +8072,11 @@
     "category": "exploration",
     "description": "William Otis invented the first mechanical excavator, powered by steam for digging earth.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/MarioModel90_1908.jpg/330px-MarioModel90_1908.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steam-shovel_oh4pap?_a=BAMAMiiu0",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "steam-hammer",
@@ -7715,7 +8085,11 @@
     "category": "exploration",
     "description": "James Nasmyth's powerful steam-driven forge hammer for shaping large metal components.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Dampfhammer2_brockhaus.jpg/330px-Dampfhammer2_brockhaus.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steam-hammer_vdedfm?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "solar-cell",
@@ -7724,7 +8098,11 @@
     "category": "exploration",
     "description": "Edmond Becquerel discovered the photovoltaic effect, generating electricity from light in a cell.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Solar_cell.png/330px-Solar_cell.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/solar-cell_n730sg?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "blueprint",
@@ -7733,7 +8111,11 @@
     "category": "exploration",
     "description": "John Herschel's cyanotype process for copying technical drawings, producing white lines on blue paper.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/AcotacionTecnico.svg/330px-AcotacionTecnico.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blueprint_apcyzz?_a=BAMAMiiu0",
+    "color": "#33444a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fuel-cell",
@@ -7742,7 +8124,11 @@
     "category": "exploration",
     "description": "William Grove generated electricity by combining hydrogen and oxygen in an electrochemical cell.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Fuel_cell_NASA_p48600ac.jpg/330px-Fuel_cell_NASA_p48600ac.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fuel-cell_cciqsk?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "superphosphate-fertilizer",
@@ -7751,7 +8137,11 @@
     "category": "exploration",
     "description": "John Bennet Lawes created the first artificial fertilizer by treating bones with sulfuric acid.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Manure_spreading_Hlokozi_2007_11_29.jpg/330px-Manure_spreading_Hlokozi_2007_11_29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/superphosphate-fertilizer_jw212s?_a=BAMAMiiu0",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wood-pulp-papermaking",
@@ -7760,7 +8150,11 @@
     "category": "exploration",
     "description": "Charles Fenerty made paper from wood pulp, replacing expensive cotton rags and lowering costs.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Zellstoff_200_fach_Polfilter.jpg/330px-Zellstoff_200_fach_Polfilter.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wood-pulp-papermaking_l8djiv?_a=BAMAMiiu0",
+    "color": "#212121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hypodermic-needle",
@@ -7769,7 +8163,11 @@
     "category": "exploration",
     "description": "Francis Rynd invented the hollow needle for injecting medication beneath the skin.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/HypodermicBronami.svg/330px-HypodermicBronami.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hypodermic-needle_xy5em4?_a=BAMAMiiu0",
+    "color": "#212123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tunnel-boring-machine",
@@ -7778,7 +8176,11 @@
     "category": "exploration",
     "description": "Mechanical drill designed for cutting tunnels through rock, greatly speeding underground construction.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/A_d%C3%A9li_pajzs_a_keresztez%C5%91kamr%C3%A1ban.jpg/330px-A_d%C3%A9li_pajzs_a_keresztez%C5%91kamr%C3%A1ban.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tunnel-boring-machine_hlt3c4?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "nitroglycerin",
@@ -7787,7 +8189,11 @@
     "category": "exploration",
     "description": "Ascanio Sobrero synthesized this powerful but dangerously unstable liquid explosive.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Nitroglycerin.svg/330px-Nitroglycerin.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nitroglycerin_earlug?_a=BAMAMiiu0",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pneumatic-drill",
@@ -7796,7 +8202,11 @@
     "category": "exploration",
     "description": "Compressed air-powered drill used in mining and construction to break rock and pavement.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pneumatic_drill.jpeg/330px-Pneumatic_drill.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pneumatic-drill_ufmzdt?_a=BAMAMiiu0",
+    "color": "#212123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pin-tumbler-lock",
@@ -7805,7 +8215,11 @@
     "category": "exploration",
     "description": "Linus Yale Sr.'s lock using spring-loaded pins of varying lengths, still the standard today.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Unbranded_Pin_Tumbler_Euro_cylinder_%28cropped%29.jpg/330px-Unbranded_Pin_Tumbler_Euro_cylinder_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pin-tumbler-lock_peio7v?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "repeating-rifle",
@@ -7814,7 +8228,11 @@
     "category": "exploration",
     "description": "Rifles using metallic cartridges and internal magazines, allowing rapid sequential firing.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Manual_Action_Firearms_with_English_inscription_CC_BY-SA_4.0_by_Grasyl.svg/330px-Manual_Action_Firearms_with_English_inscription_CC_BY-SA_4.0_by_Grasyl.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/repeating-rifle_fizsm3?_a=BAMAMiiu0",
+    "color": "#31302e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "francis-turbine",
@@ -7823,7 +8241,11 @@
     "category": "exploration",
     "description": "James Francis's efficient mixed-flow water turbine, still widely used in hydroelectric dams.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Francis_Turbine_inlet_scroll_Grand_Coulee_Dam.jpg/330px-Francis_Turbine_inlet_scroll_Grand_Coulee_Dam.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/francis-turbine_hnnrmf?_a=BAMAMiiu0",
+    "color": "#212121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "public-flush-toilets",
@@ -7832,7 +8254,11 @@
     "category": "exploration",
     "description": "George Jennings installed the first public flushing lavatories at London's Great Exhibition.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/FloralRestroomMosaic.JPG/330px-FloralRestroomMosaic.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/public-flush-toilets_snqwqf?_a=BAMAMiiu0",
+    "color": "#212123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dirigible-airship",
@@ -7841,7 +8267,11 @@
     "category": "exploration",
     "description": "Henri Giffard flew the first powered, steerable lighter-than-air craft using a steam engine.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Zeppellin_NT_amk.JPG/330px-Zeppellin_NT_amk.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dirigible-airship_a8npud?_a=BAMAMiiu0",
+    "color": "#3b3d3e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "celluloid-first-plastic",
@@ -7850,7 +8280,11 @@
     "category": "exploration",
     "description": "Alexander Parkes created parkesine, the first man-made plastic derived from cellulose.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Plastic_household_items.jpg/330px-Plastic_household_items.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/celluloid-first-plastic_kgfkqv?_a=BAMAMiiu0",
+    "color": "#4c463e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ice-making-machine",
@@ -7859,7 +8293,11 @@
     "category": "exploration",
     "description": "James Harrison's mechanical refrigeration system for commercial ice production in Australia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Grimsby_Ice_Factory_-_Slab_Ice_-_geograph.org.uk_-_1191556.jpg/330px-Grimsby_Ice_Factory_-_Slab_Ice_-_geograph.org.uk_-_1191556.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-making-machine_u83zvi?_a=BAMAMiiu0",
+    "color": "#212122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "synthetic-dye-mauveine",
@@ -7868,7 +8306,11 @@
     "category": "exploration",
     "description": "William Perkin accidentally created the first synthetic dye from coal tar, launching a new industry.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/The_aniline_colours_of_the_Badische_Anilin-_%26_Soda-Fabrik%2C_Ludwigshafen_on_Rhine_and_their_application_on_wool%2C_cotton%2C_silk_and_other_textile_fibres%2C_page_295.jpg/330px-thumbnail.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/synthetic-dye-mauveine_xh1wii?_a=BAMAMiiu0",
+    "color": "#232021",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "phonautograph",
@@ -7877,7 +8319,11 @@
     "category": "exploration",
     "description": "Édouard-Léon Scott's device that visually recorded sound waves on paper, predating the phonograph.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Phonautograph_1859.jpg/330px-Phonautograph_1859.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phonautograph_ezwmyl?_a=BAMAMiiu0",
+    "color": "#212120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lead-acid-battery",
@@ -7886,7 +8332,11 @@
     "category": "exploration",
     "description": "Gaston Planté invented the first rechargeable battery, still used in automobiles today.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Photo-CarBattery.jpg/330px-Photo-CarBattery.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lead-acid-battery_driwgy?_a=BAMAMiiu0",
+    "color": "#202126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "carbon-fibers",
@@ -7895,7 +8345,11 @@
     "category": "exploration",
     "description": "Joseph Swan produced carbon filaments by carbonizing paper, used in early incandescent light bulbs.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kohlenstofffasermatte.jpg/330px-Kohlenstofffasermatte.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carbon-fibers_dlchau?_a=BAMAMiiu0",
+    "color": "#21211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "polyvinyl-chloride-pvc",
@@ -7904,7 +8358,11 @@
     "category": "exploration",
     "description": "Eugen Baumann first observed polymerization of vinyl chloride, later becoming a ubiquitous plastic.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Pure_Polyvinyl_Chloride_powder.jpg/330px-Pure_Polyvinyl_Chloride_powder.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polyvinyl-chloride-pvc_yiuw11?_a=BAMAMiiu0",
+    "color": "#1e2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gramme-machine-generator",
@@ -7922,7 +8380,11 @@
     "category": "exploration",
     "description": "Gustave Trouvé's electromagnetic device for locating metal objects hidden underground.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/B020311e_-_PFC_Generett_and_SGT_Rutledge_probe_in_yard_of_house.png/330px-B020311e_-_PFC_Generett_and_SGT_Rutledge_probe_in_yard_of_house.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/metal-detector_nlae2c?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "electric-tram",
@@ -7931,9 +8393,11 @@
     "category": "exploration",
     "description": "Fyodor Pirotsky demonstrated the first electric-powered streetcar running on rails.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg/330px-Muzeum_MHD%2C_tramvaje_T3_8084_a_6149%2C_zep%C5%99edu.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electric-tram_a2ve1s?_a=BAMAMiiu0",
     "color": "#2b2116",
-    "text_color": "light"
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "four-stroke-engine",
@@ -7942,7 +8406,11 @@
     "category": "exploration",
     "description": "Nikolaus Otto built the first practical four-stroke internal combustion engine.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/4StrokeEngine_Ortho_3D_Small.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/four-stroke-engine_yauimz?_a=BAMAMiiu0",
+    "color": "#23211d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rebreather",
@@ -7951,7 +8419,11 @@
     "category": "exploration",
     "description": "Henry Fleuss's self-contained breathing apparatus that recycles exhaled air for underwater use.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Plongee-RecycleurInspiration_20040221-153656.jpg/330px-Plongee-RecycleurInspiration_20040221-153656.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rebreather_gvqdsy?_a=BAMAMiiu0",
+    "color": "#1e2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pelton-wheel",
@@ -7960,7 +8432,11 @@
     "category": "exploration",
     "description": "Lester Pelton's impulse water turbine designed for high-head, low-flow hydroelectric applications.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Peltonturbine-1.jpg/330px-Peltonturbine-1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pelton-wheel_zgrwol?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "carbon-arc-welding",
@@ -7969,7 +8445,11 @@
     "category": "exploration",
     "description": "Nikolay Benardos developed electric arc welding using carbon electrodes to join metals.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Xenon_short_arc_1.jpg/330px-Xenon_short_arc_1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carbon-arc-welding_rlbbb4?_a=BAMAMiiu0",
+    "color": "#202122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "smokeless-powder",
@@ -7978,9 +8458,11 @@
     "category": "exploration",
     "description": "Paul Vieille's Poudre B replaced black powder in firearms, producing less smoke and fouling.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Poudre_B.JPG",
-    "image_width": 516,
-    "image_height": 504
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smokeless-powder_bawmin?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#212122",
+    "text_color": "light"
   },
   {
     "name": "ac-power-distribution",
@@ -7989,9 +8471,11 @@
     "category": "exploration",
     "description": "Closed-core transformers enabled efficient alternating current power grids over long distances.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Active-and-reactive-power-064pf-en.svg/960px-Active-and-reactive-power-064pf-en.svg.png",
-    "image_width": 960,
-    "image_height": 624
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ac-power-distribution_azbrf8?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#413830",
+    "text_color": "light"
   },
   {
     "name": "zinc-carbon-battery",
@@ -8000,9 +8484,11 @@
     "category": "exploration",
     "description": "Carl Gassner's dry cell battery made portable electrical devices practical for everyday use.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Zincbattery_%281%29.png",
-    "image_width": 650,
-    "image_height": 355
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zinc-carbon-battery_fjiuxh?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#21211e",
+    "text_color": "light"
   },
   {
     "name": "hall-heroult-aluminum-process",
@@ -8184,7 +8670,11 @@
     "category": "exploration",
     "description": "High-pressure hydrogenation process converting coal into synthetic liquid fuel.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Friedrich_Bergius_%281884-1949%29_Chemist_of_Heidelberg_Wellcome_L0003155.jpg/330px-Friedrich_Bergius_%281884-1949%29_Chemist_of_Heidelberg_Wellcome_L0003155.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bergius-process_lvtq3d?_a=BAMAMiiu0",
+    "color": "#403123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "kaplan-turbine",
@@ -8193,7 +8683,11 @@
     "category": "exploration",
     "description": "Viktor Kaplan's adjustable-blade water turbine designed for low-head hydropower stations.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Kaplan_turbine_bonneville.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kaplan-turbine_hjvbs2?_a=BAMAMiiu0",
+    "color": "#705439",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "crystal-oscillator",
@@ -8202,7 +8696,11 @@
     "category": "exploration",
     "description": "Alexander Nicolson's piezoelectric device providing precise frequency for timekeeping.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/16MHZ_Crystal.jpg/330px-16MHZ_Crystal.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crystal-oscillator_wwyaro?_a=BAMAMiiu0",
+    "color": "#2a1e16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fischer-tropsch-process",
@@ -8220,7 +8718,11 @@
     "category": "exploration",
     "description": "Warren Marrison and J.W. Horton built the first clock regulated by a quartz crystal.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Circuitboard_from_chronograph-watch.jpg/330px-Circuitboard_from_chronograph-watch.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quartz-clock_mfmhdx?_a=BAMAMiiu0",
+    "color": "#24211b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "electron-microscope",
@@ -8229,7 +8731,11 @@
     "category": "exploration",
     "description": "Ernst Ruska's microscope using electron beams for magnification beyond optical limits.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/TITAN.jpg/330px-TITAN.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electron-microscope_ccoea9?_a=BAMAMiiu0",
+    "color": "#2b1e15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fm-radio",
@@ -8247,7 +8753,11 @@
     "category": "exploration",
     "description": "Herbert Everest and Harry Jennings created the first collapsible, portable wheelchair.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Man_in_wheelchair_with_AFO_braces_and_crutches_b.jpg/330px-Man_in_wheelchair_with_AFO_braces_and_crutches_b.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/folding-wheelchair_qed0xa?_a=BAMAMiiu0",
+    "color": "#24211d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "programmable-computer-z1",
@@ -8256,7 +8766,11 @@
     "category": "exploration",
     "description": "Konrad Zuse built the first freely programmable mechanical computer in his parents' living room.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/German_Museum_of_Technology%2C_Berlin_2017_024.jpg/330px-German_Museum_of_Technology%2C_Berlin_2017_024.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/programmable-computer-z1_tehmcv?_a=BAMAMiiu0",
+    "color": "#3d2c1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "defibrillator",
@@ -8265,9 +8779,11 @@
     "category": "exploration",
     "description": "First device to use electric current to restore a normal heartbeat in cardiac arrest.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Defibrillation_Electrode_Position.jpg/330px-Defibrillation_Electrode_Position.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/defibrillator_mkwp7n?_a=BAMAMiiu0",
     "color": "#adadae",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "electronic-digital-computer",
@@ -8285,7 +8801,11 @@
     "category": "exploration",
     "description": "Wernher von Braun's liquid-fueled ballistic missile, the first human-made object to reach space.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Fus%C3%A9e_V2.jpg/330px-Fus%C3%A9e_V2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/v2-rocket_onucyb?_a=BAMAMiiu0",
+    "color": "#562d19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "radiocarbon-dating",
@@ -8312,7 +8832,11 @@
     "category": "exploration",
     "description": "Floyd Farris and J.B. Clark developed a method to extract oil from rock using pressurized fluid.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Frac_job_in_process.JPG/330px-Frac_job_in_process.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hydraulic-fracturing_ir1ogk?_a=BAMAMiiu0",
+    "color": "#67482e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "video-game-bertie-the-brain",
@@ -8348,7 +8872,11 @@
     "category": "exploration",
     "description": "Christopher Cockerell invented an air-cushion vehicle that glides over land and water.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Formel1_hovercraft.jpg/330px-Formel1_hovercraft.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hovercraft_ciip8d?_a=BAMAMiiu0",
+    "color": "#1a222a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "intermodal-container",
@@ -8357,7 +8885,11 @@
     "category": "exploration",
     "description": "Malcolm McLean standardized shipping containers, revolutionizing global trade and logistics.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Container_01_KMJ.jpg/330px-Container_01_KMJ.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/intermodal-container_w8bz7k?_a=BAMAMiiu0",
+    "color": "#31363b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hard-disk-drive",
@@ -8366,7 +8898,11 @@
     "category": "exploration",
     "description": "IBM introduced the first magnetic disk storage system for computers, weighing over a ton.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hatachi_500_GB_hard_drive%2C_2011.jpg/330px-Hatachi_500_GB_hard_drive%2C_2011.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hard-disk-drive_hpbfir?_a=BAMAMiiu0",
+    "color": "#1e2128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-ai-program",
@@ -8375,7 +8911,11 @@
     "category": "exploration",
     "description": "Logic Theorist, created by Newell and Simon, was the first program designed to mimic human reasoning.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Half_Adder.svg/330px-Half_Adder.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-ai-program_t1nbgd?_a=BAMAMiiu0",
+    "color": "#1e2129",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mosfet-transistor",
@@ -8384,7 +8924,11 @@
     "category": "exploration",
     "description": "Atalla and Kahng invented the metal-oxide-semiconductor transistor powering modern electronics.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/D2PAK.JPG/330px-D2PAK.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mosfet-transistor_qbrpya?_a=BAMAMiiu0",
+    "color": "#3a5061",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "robotic-exoskeleton",
@@ -8419,7 +8963,11 @@
     "category": "exploration",
     "description": "E.A. Johnson invented a touch-sensitive screen at the Royal Radar Establishment in England.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hear_Music_touchscreen.jpg/330px-Hear_Music_touchscreen.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/capacitive-touchscreen_d92hml?_a=BAMAMiiu0",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pocket-calculator",
