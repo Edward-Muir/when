@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 20:59:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 20:08:25 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.10.6</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.10.6</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Yet more new images (<a href="https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994">1de0e14</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.10.5</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.8.0</guid>
       <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>When? v0.7.3</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.7.3</guid>
-      <pubDate>Sun, 01 Mar 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add extra share button and explaination (<a href="https://github.com/Edward-Muir/when/commit/7141d489638f19b0b9903b8f61a0608285c202f7">7141d48</a>)</li> <li>Clean up settings modal (<a href="https://github.com/Edward-Muir/when/commit/eaa4d976e2f9bcdbd0bb36d363fa4d8dfe517fa5">eaa4d97</a>)</li> <li>Make settings shareable (<a href="https://github.com/Edward-Muir/when/commit/a39430d6259898ac9c0365c0be30b6bf8bac4d04">a39430d</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>Ignore long word list file (<a href="https://github.com/Edward-Muir/when/commit/7167029030092f4c6ca1be28bf8443219dadc4e6">7167029</a>)</li> <li>Make challenge code readable (<a href="https://github.com/Edward-Muir/when/commit/70d0e9be99cd76d25e43d6e0a16f97bdf7ddd8aa">70d0e9b</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
