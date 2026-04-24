@@ -2497,10 +2497,12 @@
     "description": "A supersonic airliner crashed after takeoff from Paris, killing 113 people.",
     "difficulty": "medium",
     "image_url": "https://upload.wikimedia.org/wikipedia/en/0/03/Concorde_Air_France_Flight_4590_fire_on_runway.jpg",
-    "image_width": 310,
-    "image_height": 194,
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 631568,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Air_France_Flight_4590"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Air_France_Flight_4590",
+    "color": "#243340",
+    "text_color": "light"
   },
   {
     "name": "sars-outbreak",
@@ -2944,11 +2946,13 @@
     "category": "disasters",
     "description": "A massive ammonium nitrate explosion devastated the Lebanese capital.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Damages_after_2020_Beirut_explosions_1.jpg/330px-Damages_after_2020_Beirut_explosions_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beirut-explosion_gus8gk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 203,
+    "image_height": 440,
     "wikipedia_views": 788650,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/2020_Beirut_explosion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/2020_Beirut_explosion",
+    "color": "#43535e",
+    "text_color": "light"
   },
   {
     "name": "texas-winter-storm",

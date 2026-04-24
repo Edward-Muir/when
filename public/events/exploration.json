@@ -242,11 +242,13 @@
     "category": "exploration",
     "description": "Humans first extracted copper from ore, beginning the age of metallurgy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copper-smelting-begins_ozkopj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 256,
+    "image_height": 440,
     "wikipedia_views": 46369,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Copper_extraction"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Copper_extraction",
+    "color": "#281f1a",
+    "text_color": "light"
   },
   {
     "name": "domestication-of-pigs",
@@ -255,11 +257,13 @@
     "category": "exploration",
     "description": "Pigs were domesticated independently in multiple regions including China and Anatolia, becoming a key food source.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pig_farm_Vampula_1.jpg/330px-Pig_farm_Vampula_1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-pigs_inzsvz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 204,
+    "image_height": 440,
     "wikipedia_views": 639804,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pig"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pig",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "domestication-of-donkeys",
@@ -268,11 +272,13 @@
     "category": "exploration",
     "description": "Donkeys were domesticated from African wild asses in Northeast Africa, revolutionizing overland transport and trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg/330px-Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-donkeys_wrdyuw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236,
+    "image_height": 440,
     "wikipedia_views": 585964,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Donkey"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Donkey",
+    "color": "#2a1e1a",
+    "text_color": "light"
   },
   {
     "name": "domestication-horses",
@@ -281,11 +287,13 @@
     "category": "exploration",
     "description": "Horses were domesticated on the Eurasian steppes, revolutionizing transport and warfare.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Nokota_Horses_cropped.jpg/330px-Nokota_Horses_cropped.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-horses_ud21qx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 227,
+    "image_height": 440,
     "wikipedia_views": 96228,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_horse"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_horse",
+    "color": "#2d1d12",
+    "text_color": "light"
   },
   {
     "name": "plow-invented",
@@ -294,9 +302,11 @@
     "category": "exploration",
     "description": "The plow was invented in Mesopotamia, revolutionizing agriculture by enabling efficient soil cultivation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/AncientPlough.jpg/330px-AncientPlough.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plow-invented_i15htu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 164
+    "image_height": 440,
+    "color": "#281f1b",
+    "text_color": "light"
   },
   {
     "name": "wheel-invented",
@@ -307,9 +317,11 @@
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wheel-invented_gh6d5y?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 227701,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheel"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheel",
+    "color": "#25201d",
+    "text_color": "light"
   },
   {
     "name": "invention-sail",
@@ -318,11 +330,13 @@
     "category": "exploration",
     "description": "Ancient Egyptians invented sails, enabling long-distance sea travel.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Chesapeake.jpg/330px-Chesapeake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/invention-sail_sv3hrz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 290,
+    "image_height": 440,
     "wikipedia_views": 54655,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Sail"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sail",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "invention-glass",
@@ -331,11 +345,13 @@
     "category": "exploration",
     "description": "Ancient Mesopotamians discovered how to make glass from sand.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fassade_Wilhelmstrasse_65%2C_Berlin-Mitte%2C_160417%2C_ako.jpg/330px-Fassade_Wilhelmstrasse_65%2C_Berlin-Mitte%2C_160417%2C_ako.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/invention-glass_bcak3h?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 23797,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Flexible_glass"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Flexible_glass",
+    "color": "#262019",
+    "text_color": "light"
   },
   {
     "name": "silk-production-invented",
@@ -344,9 +360,11 @@
     "category": "exploration",
     "description": "Ancient Chinese began cultivating silkworms and weaving silk fabric, a closely guarded secret that fueled trade for millennia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Silk_raw_01a.jpg/330px-Silk_raw_01a.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-production-invented_wh9ku5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 440,
+    "color": "#281f1c",
+    "text_color": "light"
   },
   {
     "name": "bronze-discovered",
@@ -355,11 +373,13 @@
     "category": "exploration",
     "description": "Humans discovered how to alloy copper and tin to create bronze tools and weapons.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bronze-discovered_oja2l7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 344,
+    "image_height": 440,
     "wikipedia_views": 828417,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age",
+    "color": "#25201b",
+    "text_color": "light"
   },
   {
     "name": "writing-invention",
@@ -368,11 +388,13 @@
     "category": "exploration",
     "description": "Sumerians developed cuneiform, the first writing system.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Rosetta_Stone.JPG/330px-Rosetta_Stone.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/writing-invention_qhbp32?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 386,
+    "image_height": 440,
     "wikipedia_views": 237394,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing",
+    "color": "#25201c",
+    "text_color": "light"
   },
   {
     "name": "candle-invented",
@@ -381,9 +403,11 @@
     "category": "exploration",
     "description": "Ancient Egyptians created early wicked candles by soaking rush plants in melted animal fat, providing portable artificial light.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LA2_Skultuna_kontorsljusstake.jpg/330px-LA2_Skultuna_kontorsljusstake.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/candle-invented_rfdsjl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 417
+    "image_height": 440,
+    "color": "#1e202b",
+    "text_color": "light"
   },
   {
     "name": "soap-invented",
@@ -392,9 +416,11 @@
     "category": "exploration",
     "description": "Ancient Babylonians created an early form of soap by boiling animal fats with wood ashes and water.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Handmade_soap_cropped_and_simplified.jpg/330px-Handmade_soap_cropped_and_simplified.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soap-invented_lmonki?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 284
+    "image_height": 440,
+    "color": "#281e20",
+    "text_color": "light"
   },
   {
     "name": "abacus-invented",
@@ -403,9 +429,11 @@
     "category": "exploration",
     "description": "The Sumerians created one of the first known calculating tools, the abacus, enabling basic arithmetic and record-keeping.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Abacus_%28PSF%29.png/330px-Abacus_%28PSF%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/abacus-invented_psp1zp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233
+    "image_height": 440,
+    "color": "#2b1d17",
+    "text_color": "light"
   },
   {
     "name": "locks-and-keys-invented",
@@ -414,9 +442,11 @@
     "category": "exploration",
     "description": "Ancient Egyptians developed the first known pin tumbler lock mechanism made of wood.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg/330px-Solex_99_30_padlock_with_keys_%28DSCF2659%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/locks-and-keys-invented_hgz3f6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 300
+    "image_height": 440,
+    "color": "#26201d",
+    "text_color": "light"
   },
   {
     "name": "sundial-invented",
@@ -425,9 +455,11 @@
     "category": "exploration",
     "description": "Ancient Egyptians developed the sundial, using the sun's shadow to divide daylight into measurable time periods.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MootHallSundial.JPG/330px-MootHallSundial.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sundial-invented_mbbrtd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 461
+    "image_height": 440,
+    "color": "#573e33",
+    "text_color": "light"
   },
   {
     "name": "scissors-invented",
@@ -436,9 +468,11 @@
     "category": "exploration",
     "description": "Ancient Egyptians created the earliest cross-blade scissors, spring-loaded bronze shears used for cutting cloth and hair.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Standard_household_scissors.jpg/330px-Standard_household_scissors.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scissors-invented_gt2k58?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#2c1d19",
+    "text_color": "light"
   },
   {
     "name": "iron-smelting",
@@ -447,11 +481,13 @@
     "category": "exploration",
     "description": "The ability to smelt iron ore transformed warfare and agriculture.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/TVA_phosphate_smelting_furnace.jpg/330px-TVA_phosphate_smelting_furnace.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-smelting_tem6w5?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 256,
+    "image_height": 440,
     "wikipedia_views": 666073,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Iron_Age"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Iron_Age",
+    "color": "#271f1b",
+    "text_color": "light"
   },
   {
     "name": "polynesian-expansion",
@@ -460,11 +496,13 @@
     "category": "exploration",
     "description": "Polynesian navigators began exploring and settling islands across the Pacific Ocean.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pacific_Culture_Areas_%28Philippines%2BVanuatu_Correction%29.svg/330px-Pacific_Culture_Areas_%28Philippines%2BVanuatu_Correction%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polynesian-expansion_gs9t5q?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
+    "image_height": 440,
     "wikipedia_views": 457204,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Austronesian_peoples"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Austronesian_peoples",
+    "color": "#383636",
+    "text_color": "light"
   },
   {
     "name": "phoenician-circumnavigation",
@@ -473,11 +511,13 @@
     "category": "exploration",
     "description": "Phoenician sailors reportedly sailed around the entire African continent.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Phoenician_maritime_expansions_across_the_Mediterranean.jpg/330px-Phoenician_maritime_expansions_across_the_Mediterranean.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-circumnavigation_v8ozsu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 183,
+    "image_height": 440,
     "wikipedia_views": 1024800,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenicia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenicia",
+    "color": "#29201a",
+    "text_color": "light"
   },
   {
     "name": "coins-invented",
@@ -486,9 +526,11 @@
     "category": "exploration",
     "description": "The first metal coins were minted in Lydia (modern Turkey), transforming trade and commerce.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/India%2C_Chandragupta_II%2C_Gupta_Period_-_Coin_with_Figure_of_an_Archer_-_1977.62_-_Cleveland_Museum_of_Art.jpg/960px-India%2C_Chandragupta_II%2C_Gupta_Period_-_Coin_with_Figure_of_an_Archer_-_1977.62_-_Cleveland_Museum_of_Art.jpg",
-    "image_width": 960,
-    "image_height": 473
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coins-invented_k86htn?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#291e1c",
+    "text_color": "light"
   },
   {
     "name": "thales-eclipse",
@@ -497,11 +539,13 @@
     "category": "exploration",
     "description": "Thales of Miletus predicted a solar eclipse, marking a triumph of early science.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Illustrerad_Verldshistoria_band_I_Ill_107.jpg/330px-Illustrerad_Verldshistoria_band_I_Ill_107.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thales-eclipse_cyofsm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 502,
+    "image_height": 440,
     "wikipedia_views": 45101,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Eclipse_of_Thales"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Eclipse_of_Thales",
+    "color": "#31272a",
+    "text_color": "light"
   },
   {
     "name": "anaximander-world-map",
@@ -510,11 +554,13 @@
     "category": "exploration",
     "description": "The Greek philosopher created one of the first maps of the known world.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Pietro_Bellotti_%28attr%29_Anaximander.jpg/330px-Pietro_Bellotti_%28attr%29_Anaximander.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anaximander-world-map_gvu4jq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 351,
+    "image_height": 440,
     "wikipedia_views": 881893,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/World_map"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_map",
+    "color": "#281f1b",
+    "text_color": "light"
   },
   {
     "name": "pythagoras-theorem",
@@ -523,11 +569,13 @@
     "category": "exploration",
     "description": "Pythagoras proved the mathematical relationship between sides of a right triangle.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pythagorean.svg/330px-Pythagorean.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pythagoras-theorem_am1vtl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 301,
+    "image_height": 440,
     "wikipedia_views": 394200,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fermat's_Last_Theorem",
+    "color": "#25201a",
+    "text_color": "light"
   },
   {
     "name": "hanno-africa",
@@ -536,11 +584,13 @@
     "category": "exploration",
     "description": "The Carthaginian navigator explored the west coast of Africa.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Carthage_323_BC.png/330px-Carthage_323_BC.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hanno-africa_om3ml9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 189,
+    "image_height": 440,
     "wikipedia_views": 193381,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hanno_the_Navigator"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hanno_the_Navigator",
+    "color": "#241f24",
+    "text_color": "light"
   },
   {
     "name": "crossbow-invented",
@@ -549,9 +599,11 @@
     "category": "exploration",
     "description": "The crossbow was invented in China during the Warring States period, democratizing warfare with its ease of use.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Une_arbal%C3%A8te_classique.jpg/330px-Une_arbal%C3%A8te_classique.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossbow-invented_lsuiv7?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 222
+    "image_height": 440,
+    "color": "#23211e",
+    "text_color": "light"
   },
   {
     "name": "herodotus-histories",
@@ -560,11 +612,13 @@
     "category": "exploration",
     "description": "The Greek historian documented cultures and lands across the known world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg/330px-Marble_bust_of_Herodotos_MET_DT11742_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/herodotus-histories_rydx8k?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 151498,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Histories_(Herodotus)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Histories_(Herodotus)",
+    "color": "#271f1e",
+    "text_color": "light"
   },
   {
     "name": "hippocrates-medicine",
@@ -573,11 +627,13 @@
     "category": "exploration",
     "description": "The Greek physician established medicine as a rational discipline.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Hippocrates.jpg/330px-Hippocrates.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hippocrates-medicine_k466mw?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 485,
+    "image_height": 440,
     "wikipedia_views": 360855,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hippocrates"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hippocrates",
+    "color": "#261f1e",
+    "text_color": "light"
   },
   {
     "name": "catapult-invented",
@@ -597,9 +653,11 @@
     "category": "exploration",
     "description": "Ancient engineers developed the water wheel to harness river currents for grinding grain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Brucker_Wasserrad_01.webm/330px--Brucker_Wasserrad_01.webm.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-wheel-invented_r0kdmd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 186
+    "image_height": 440,
+    "color": "#261d2a",
+    "text_color": "light"
   },
   {
     "name": "alexander-india",
@@ -608,9 +666,9 @@
     "category": "exploration",
     "description": "Alexander the Great's conquests brought Greek knowledge to the Indian subcontinent.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AlexanderConquestsInIndia.jpg/330px-AlexanderConquestsInIndia.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-india_sx12qm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 412,
+    "image_height": 440,
     "wikipedia_views": 3606662,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
     "color": "#8bbe79",
@@ -623,11 +681,13 @@
     "category": "exploration",
     "description": "The Greek explorer sailed to Britain and possibly reached the Arctic Circle.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Ptolemy-british-isles.jpg/960px-Ptolemy-british-isles.jpg",
-    "image_width": 960,
-    "image_height": 694,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pytheas-arctic_cuscgz?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 97360,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pytheas"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pytheas",
+    "color": "#281d24",
+    "text_color": "light"
   },
   {
     "name": "roman-aqueducts",
@@ -636,9 +696,11 @@
     "category": "exploration",
     "description": "The first Roman aqueduct, Aqua Appia, was built to carry water into the city of Rome.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/The_Roman_Aquaduct_at_M%C3%B3ria_%28Lesvos%29.ogv/330px--The_Roman_Aquaduct_at_M%C3%B3ria_%28Lesvos%29.ogv.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-aqueducts_aafzas?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 185
+    "image_height": 440,
+    "color": "#342f2b",
+    "text_color": "light"
   },
   {
     "name": "roman-concrete",
@@ -647,9 +709,11 @@
     "category": "exploration",
     "description": "Romans invented hydraulic concrete using volcanic ash, enabling construction of arches, vaults, and domes.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Rome-Pantheon-Interieur1.jpg/330px-Rome-Pantheon-Interieur1.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-concrete_u8wdsa?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#241f24",
+    "text_color": "light"
   },
   {
     "name": "chainmail-armor",
@@ -658,9 +722,11 @@
     "category": "exploration",
     "description": "Chainmail armor was developed in the Hellenistic world, later adopted by Romans and used across Eurasia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cotte_de_Maille%2C_El_Bayadh%2C_Alg%C3%A9rie%2C_17%C3%A8me_si%C3%A8cle.jpg/330px-Cotte_de_Maille%2C_El_Bayadh%2C_Alg%C3%A9rie%2C_17%C3%A8me_si%C3%A8cle.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chainmail-armor_yjgyju?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 440,
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "archimedes-principle",
@@ -669,11 +735,13 @@
     "category": "exploration",
     "description": "Archimedes discovered the principle of buoyancy while taking a bath.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/330px-Domenico-Fetti_Archimedes_1620.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archimedes-principle_ncl6oi?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 181013,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Buoyancy"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Buoyancy",
+    "color": "#202126",
+    "text_color": "light"
   },
   {
     "name": "arched-bridge-invented",
@@ -682,9 +750,11 @@
     "category": "exploration",
     "description": "Roman engineers revolutionized bridge construction using the semicircular stone arch, enabling greater spans and heavier loads.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/NagasakiMeganebashi.jpg/330px-NagasakiMeganebashi.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arched-bridge-invented_wfutuy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 236
+    "image_height": 440,
+    "color": "#261f21",
+    "text_color": "light"
   },
   {
     "name": "eratosthenes-earth",
@@ -693,11 +763,13 @@
     "category": "exploration",
     "description": "Eratosthenes accurately calculated the circumference of the Earth using shadows.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Eratosthenes_measure_of_Earth_circumference_DE.svg/960px-Eratosthenes_measure_of_Earth_circumference_DE.svg.png",
-    "image_width": 960,
-    "image_height": 640,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eratosthenes-earth_qpsx47?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 171259,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth's_circumference"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth's_circumference",
+    "color": "#291c28",
+    "text_color": "light"
   },
   {
     "name": "compound-pulley-archimedes",
@@ -706,9 +778,11 @@
     "category": "exploration",
     "description": "Archimedes perfected the compound pulley system, demonstrating that one person could move enormous weights through mechanical advantage.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/PulleyShip.JPG/960px-PulleyShip.JPG",
-    "image_width": 960,
-    "image_height": 720
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compound-pulley-archimedes_pjk6gb?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#261f22",
+    "text_color": "light"
   },
   {
     "name": "astrolabe-invented",
@@ -717,9 +791,11 @@
     "category": "exploration",
     "description": "Greek astronomers invented the astrolabe, an instrument for measuring celestial positions and telling time.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Khalili_Collection_Islamic_Art_sci_0430_back.jpg/330px-Khalili_Collection_Islamic_Art_sci_0430_back.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/astrolabe-invented_gavur3?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 425
+    "image_height": 440,
+    "color": "#241f27",
+    "text_color": "light"
   },
   {
     "name": "hero-steam-engine",
@@ -728,11 +804,13 @@
     "category": "exploration",
     "description": "Hero of Alexandria invented a primitive steam engine, the aeolipile.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Aeolipile_%28from_Pneumatica%29.jpg",
-    "image_width": 204,
-    "image_height": 234,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hero-steam-engine_pivs3y?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 124430,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aeolipile"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Aeolipile",
+    "color": "#2c1c1b",
+    "text_color": "light"
   },
   {
     "name": "buddhism-spreads-china",
@@ -741,11 +819,13 @@
     "category": "exploration",
     "description": "Buddhism was officially introduced to China along the Silk Road.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Leshan_Giant_Buddha_%281%29.jpg/330px-Leshan_Giant_Buddha_%281%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/buddhism-spreads-china_ny4v7z?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 61984,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Buddhism_in_China"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Buddhism_in_China",
+    "color": "#91582b",
+    "text_color": "light"
   },
   {
     "name": "blast-furnace-invented",
@@ -754,9 +834,11 @@
     "category": "exploration",
     "description": "Chinese metalworkers developed the blast furnace, reaching temperatures high enough to produce cast iron on an industrial scale.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Alto_Horno%2C_Puerto_de_Sagunto%2C_Espa%C3%B1a%2C_2015-01-04%2C_DD_91.JPG/330px-Alto_Horno%2C_Puerto_de_Sagunto%2C_Espa%C3%B1a%2C_2015-01-04%2C_DD_91.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blast-furnace-invented_n6gy44?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 515
+    "image_height": 440,
+    "color": "#2b1c21",
+    "text_color": "light"
   },
   {
     "name": "paper-invented",
@@ -765,11 +847,13 @@
     "category": "exploration",
     "description": "Cai Lun standardized papermaking techniques in Han Dynasty China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Making_Paper.gif/330px-Making_Paper.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paper-invented_vffhd8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 471,
+    "image_height": 440,
     "wikipedia_views": 353605,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper",
+    "color": "#281f1d",
+    "text_color": "light"
   },
   {
     "name": "zhang-heng-seismoscope",
@@ -778,11 +862,13 @@
     "category": "exploration",
     "description": "Chinese scientist Zhang Heng invented the first device to detect distant earthquakes.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/20251004_Tomb_of_Zhang_Heng_03.jpg/330px-20251004_Tomb_of_Zhang_Heng_03.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zhang-heng-seismoscope_nuqc70?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495,
+    "image_height": 440,
     "wikipedia_views": 40509,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhang_Heng"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhang_Heng",
+    "color": "#2f1a23",
+    "text_color": "light"
   },
   {
     "name": "ptolemy-almagest",
@@ -791,11 +877,13 @@
     "category": "exploration",
     "description": "Ptolemy compiled ancient astronomical knowledge in his influential treatise.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu/page1-320px-Claudius_Ptolemaeus%2C_Almagestum%2C_1515.djvu.jpg",
-    "image_width": 319,
-    "image_height": 455,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ptolemy-almagest_ilnf9q?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 82064,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Almagest"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Almagest",
+    "color": "#291e1c",
+    "text_color": "light"
   },
   {
     "name": "wheelbarrow-invented",
@@ -804,9 +892,11 @@
     "category": "exploration",
     "description": "Chinese engineers invented the wheelbarrow during the Han dynasty, a simple but transformative tool for transporting heavy loads.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/2008-07-15_Construction_wheelbarrow_at_Duke.jpg/330px-2008-07-15_Construction_wheelbarrow_at_Duke.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wheelbarrow-invented_a6da0v?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 440,
+    "color": "#39231a",
+    "text_color": "light"
   },
   {
     "name": "compass-invented",
@@ -815,11 +905,13 @@
     "category": "exploration",
     "description": "Chinese inventors created the first magnetic compass for navigation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2016_Busola.JPG/330px-2016_Busola.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compass-invented_l80hsq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 297,
+    "image_height": 440,
     "wikipedia_views": 306974,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Compass"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Compass",
+    "color": "#261f24",
+    "text_color": "light"
   },
   {
     "name": "stirrup-invented",
@@ -828,9 +920,11 @@
     "category": "exploration",
     "description": "Riders in East Asia developed the paired metal stirrup, giving mounted warriors a stable platform that transformed cavalry warfare.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/EnduranceStirrup.jpg/330px-EnduranceStirrup.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stirrup-invented_xwpc09?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 253
+    "image_height": 440,
+    "color": "#301824",
+    "text_color": "light"
   },
   {
     "name": "horseshoe-invented",
@@ -839,9 +933,11 @@
     "category": "exploration",
     "description": "European horsemen began nailing U-shaped iron shoes to horses' hooves, protecting them on rough terrain.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Horseshoe.jpg/330px-Horseshoe.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/horseshoe-invented_znz7hl?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330
+    "image_height": 440,
+    "color": "#252021",
+    "text_color": "light"
   },
   {
     "name": "dionysius-exiguus-creates-ad-system",
@@ -850,11 +946,13 @@
     "category": "exploration",
     "description": "Scythian monk Dionysius Exiguus devised the Anno Domini dating system while calculating Easter dates in Rome.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Dionysius_Exiguus.jpg",
-    "image_width": 284,
-    "image_height": 400,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dionysius-exiguus-creates-ad-system_hpljre?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 56590,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dionysius_Exiguus"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dionysius_Exiguus",
+    "color": "#222024",
+    "text_color": "light"
   },
   {
     "name": "buddhism-officially-introduced-to-japan",
@@ -863,11 +961,13 @@
     "category": "exploration",
     "description": "Korean envoys brought Buddhist scriptures and images to the Japanese court, beginning Buddhism's spread in Japan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Japanese_Buddhist_flag.svg/330px-Japanese_Buddhist_flag.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/buddhism-officially-introduced-to-japan_iqxsqd?_a=BAMAMiiu0",
     "wikipedia_views": 53400,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yamato_period",
     "image_width": 330,
-    "image_height": 220
+    "image_height": 440,
+    "color": "#242021",
+    "text_color": "light"
   },
   {
     "name": "printing-invented-china",
@@ -876,11 +976,13 @@
     "category": "exploration",
     "description": "Woodblock printing was developed in China, transforming information dissemination.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Yangzhou_Museum_-_woodblock_for_printing_-_CIMG2878.JPG/960px-Yangzhou_Museum_-_woodblock_for_printing_-_CIMG2878.JPG",
-    "image_width": 960,
-    "image_height": 720,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-invented-china_jb3y44?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 110006,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing",
+    "color": "#242021",
+    "text_color": "light"
   },
   {
     "name": "al-khwarizmi-algebra",
@@ -889,11 +991,13 @@
     "category": "exploration",
     "description": "The Persian mathematician wrote the foundational treatise on algebra.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg/330px-Madrid_-_Ciudad_Universitaria%2C_Monumento_a_Muhammad_al-Juarismi_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-khwarizmi-algebra_fdayew?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 383339,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Khwarizmi"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Khwarizmi",
+    "color": "#251f24",
+    "text_color": "light"
   },
   {
     "name": "gunpowder-invented",
@@ -902,11 +1006,13 @@
     "category": "exploration",
     "description": "Chinese alchemists accidentally discovered gunpowder while seeking immortality.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Black_Powder-1.JPG/330px-Black_Powder-1.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-invented_dkctcv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 136729,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires",
+    "color": "#261e26",
+    "text_color": "light"
   },
   {
     "name": "cyrillic-alphabet-created",
@@ -915,11 +1021,13 @@
     "category": "exploration",
     "description": "Saints Cyril and Methodius developed the Glagolitic script, which evolved into Cyrillic for Slavic languages.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg/330px-Romanian_Cyrillic_-_Lord%27s_Prayer_text.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cyrillic-alphabet-created_uzzhng?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 119,
+    "image_height": 440,
     "wikipedia_views": 190631,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrillic_alphabets"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cyrillic_alphabets",
+    "color": "#261f1d",
+    "text_color": "light"
   },
   {
     "name": "vikings-iceland",
@@ -928,11 +1036,13 @@
     "category": "exploration",
     "description": "Norse explorers established permanent settlements on Iceland.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/The_Norwegians_land_in_Iceland_year_872.jpg/330px-The_Norwegians_land_in_Iceland_year_872.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vikings-iceland_qov1zz?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 221,
+    "image_height": 440,
     "wikipedia_views": 80354,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Settlement_of_Iceland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Settlement_of_Iceland",
+    "color": "#3b3a3b",
+    "text_color": "light"
   },
   {
     "name": "vikings-greenland",
@@ -941,11 +1051,13 @@
     "category": "exploration",
     "description": "Erik the Red explored and colonized Greenland.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_Greenland.svg/330px-Flag_of_Greenland.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vikings-greenland_tgbt3d?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 220,
+    "image_height": 440,
     "wikipedia_views": 81948,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlements_in_Greenland"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlements_in_Greenland",
+    "color": "#41474e",
+    "text_color": "light"
   },
   {
     "name": "viking-america",
@@ -954,11 +1066,13 @@
     "category": "exploration",
     "description": "Leif Erikson led the first known European expedition to North America.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Authentic_Viking_recreation.jpg/330px-Authentic_Viking_recreation.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/viking-america_hanqjp?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "wikipedia_views": 81952,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlement_of_North_America"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlement_of_North_America",
+    "color": "#737a78",
+    "text_color": "light"
   },
   {
     "name": "spinning-wheel-invented",
@@ -967,9 +1081,11 @@
     "category": "exploration",
     "description": "The spinning wheel, likely invented in India, mechanized the process of spinning fiber into yarn.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Elderlyspinnera.jpg/330px-Elderlyspinnera.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spinning-wheel-invented_n3qvki?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 448
+    "image_height": 440,
+    "color": "#24201d",
+    "text_color": "light"
   },
   {
     "name": "movable-type-china",
@@ -978,11 +1094,13 @@
     "category": "exploration",
     "description": "Bi Sheng invented movable type printing in China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Edit_Entry_-_Movable_Type_401.png/330px-Edit_Entry_-_Movable_Type_401.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/movable-type-china_qfhdeg?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 393,
+    "image_height": 440,
     "wikipedia_views": 114823,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Movable_type"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Movable_type",
+    "color": "#25201e",
+    "text_color": "light"
   },
   {
     "name": "gunpowder-formula-first-recorded",
@@ -991,11 +1109,13 @@
     "category": "exploration",
     "description": "The first written gunpowder formula appeared in the Chinese Wujing Zongyao military compendium during the Song Dynasty.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chinese_Gunpowder_Formula.JPG/330px-Chinese_Gunpowder_Formula.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-formula-first-recorded_exbotq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 239,
+    "image_height": 440,
     "wikipedia_views": 136729,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Gunpowder_empires",
+    "color": "#212123",
+    "text_color": "light"
   },
   {
     "name": "trebuchet-invented",
@@ -1004,9 +1124,11 @@
     "category": "exploration",
     "description": "Medieval engineers developed the counterweight trebuchet, a devastating siege weapon capable of hurling stones over 250 meters.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Trebuchet_Castelnaud.jpg/330px-Trebuchet_Castelnaud.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trebuchet-invented_mq9rt6?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 260
+    "image_height": 440,
+    "color": "#313435",
+    "text_color": "light"
   },
   {
     "name": "longbow-developed",
@@ -1015,9 +1137,11 @@
     "category": "exploration",
     "description": "Welsh archers developed the six-foot yew longbow, capable of piercing armor at 200 yards.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Battle_of_crecy_froissart.jpg/330px-Battle_of_crecy_froissart.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/longbow-developed_ioiyaj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 290
+    "image_height": 440,
+    "color": "#282a2b",
+    "text_color": "light"
   },
   {
     "name": "windmill-invented",
@@ -1026,9 +1150,11 @@
     "category": "exploration",
     "description": "Post windmills were built in Europe to harness wind power for grinding grain.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/DK_Fanoe_Windmill01.JPG/330px-DK_Fanoe_Windmill01.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmill-invented_vcyxtn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 495
+    "image_height": 440,
+    "color": "#1e2223",
+    "text_color": "light"
   },
   {
     "name": "fibonacci-arabic-numerals",
@@ -1037,11 +1163,13 @@
     "category": "exploration",
     "description": "Leonardo Fibonacci introduced Arabic numerals to Europe in his book Liber Abaci.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Leonardo_Fibonacci.JPG/330px-Leonardo_Fibonacci.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fibonacci-arabic-numerals_ssrfhm?_a=BAMAMiiu0",
     "image_width": 330,
     "image_height": 440,
     "wikipedia_views": 288956,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fibonacci"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fibonacci",
+    "color": "#212120",
+    "text_color": "light"
   },
   {
     "name": "roger-bacon-scientific-method",
@@ -1050,9 +1178,9 @@
     "category": "exploration",
     "description": "The English philosopher advocated for empirical observation in science.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Roger-bacon-statue.jpg/330px-Roger-bacon-statue.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roger-bacon-scientific-method_yt1bnn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 327,
+    "image_height": 440,
     "wikipedia_views": 638006,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Scientific_method",
     "color": "#9f9b90",
@@ -1065,11 +1193,13 @@
     "category": "exploration",
     "description": "Reading glasses were invented in Italy, transforming scholarship.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Eyeglasses_MET_CI44.8.61.jpg",
-    "image_width": 728,
-    "image_height": 300,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eyeglasses-invented_l314iu?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 206712,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Glasses"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Glasses",
+    "color": "#22211f",
+    "text_color": "light"
   },
   {
     "name": "mechanical-clock",
@@ -1078,9 +1208,11 @@
     "category": "exploration",
     "description": "The first weight-driven mechanical clocks appeared in Europe, transforming timekeeping.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg/330px-Pendulum_clock_by_Jacob_Kock%2C_antique_furniture_photography%2C_IMG_0931_edit.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mechanical-clock_iqit2c?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 452
+    "image_height": 440,
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "ibn-battuta-travels",
@@ -1089,11 +1221,13 @@
     "category": "exploration",
     "description": "The Moroccan explorer began a journey covering 75,000 miles across the Islamic world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg/330px-Handmade_oil_painting_reproduction_of_Ibn_Battuta_in_Egypt%2C_a_painting_by_Hippolyte_Leon_Benett..jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ibn-battuta-travels_lz9rjd?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 476,
+    "image_height": 440,
     "wikipedia_views": 486670,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ibn_Battuta"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ibn_Battuta",
+    "color": "#23211e",
+    "text_color": "light"
   },
   {
     "name": "tenochtitlan",
@@ -1102,11 +1236,13 @@
     "category": "exploration",
     "description": "The Aztec capital was founded on an island in Lake Texcoco.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Painting_of_Tenochtitlan-Tlatelolco_on_Lake_Texcoco_%289755215791%29.jpg/330px-Painting_of_Tenochtitlan-Tlatelolco_on_Lake_Texcoco_%289755215791%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tenochtitlan_mnu9fu?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 173,
+    "image_height": 440,
     "wikipedia_views": 584360,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenochtitlan"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenochtitlan",
+    "color": "#4d4e40",
+    "text_color": "light"
   },
   {
     "name": "zheng-he-voyages",
@@ -1115,11 +1251,13 @@
     "category": "exploration",
     "description": "The Chinese admiral began massive naval expeditions across the Indian Ocean.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/%E3%80%8A%E9%84%AD%E5%92%8C%E6%AD%B8%E4%BE%86%E3%80%8B%E3%80%82_%E8%97%9D%E8%A1%93%E5%AE%B6%E5%BC%97%E6%8B%89%E5%9F%BA%E7%B1%B3%E7%88%BE%C2%B7%E7%A7%91%E7%B4%A2%E5%A4%AB_2018.jpg/960px-%E3%80%8A%E9%84%AD%E5%92%8C%E6%AD%B8%E4%BE%86%E3%80%8B%E3%80%82_%E8%97%9D%E8%A1%93%E5%AE%B6%E5%BC%97%E6%8B%89%E5%9F%BA%E7%B1%B3%E7%88%BE%C2%B7%E7%A7%91%E7%B4%A2%E5%A4%AB_2018.jpg",
-    "image_width": 960,
-    "image_height": 564,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zheng-he-voyages_gemkgc?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 82996,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages",
+    "color": "#766d62",
+    "text_color": "light"
   },
   {
     "name": "chinese-discover-america-theory",
@@ -1128,11 +1266,13 @@
     "category": "exploration",
     "description": "Some historians claim Chinese fleets explored the Americas before Columbus.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/La_expedici%C3%B3n_de_Xu_Fu%2C_por_Utagawa_Kuniyoshi.jpg/960px-La_expedici%C3%B3n_de_Xu_Fu%2C_por_Utagawa_Kuniyoshi.jpg",
-    "image_width": 960,
-    "image_height": 466,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chinese-discover-america-theory_k98fst?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 969153,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/China–United_States_trade_war"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/China–United_States_trade_war",
+    "color": "#261f1e",
+    "text_color": "light"
   },
   {
     "name": "gutenberg-printing",
@@ -1141,11 +1281,13 @@
     "category": "exploration",
     "description": "Johannes Gutenberg invented movable type printing, revolutionizing knowledge sharing.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/PrintMus_038.jpg/330px-PrintMus_038.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gutenberg-printing_lkudue?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 416,
+    "image_height": 440,
     "wikipedia_views": 432507,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing_press"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing_press",
+    "color": "#261f1f",
+    "text_color": "light"
   },
   {
     "name": "portuguese-cape-verde",
@@ -1154,11 +1296,13 @@
     "category": "exploration",
     "description": "Portuguese explorers discovered the uninhabited Cape Verde islands.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Flag_of_Cape_Verde.svg/330px-Flag_of_Cape_Verde.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portuguese-cape-verde_m2uhce?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 195,
+    "image_height": 440,
     "wikipedia_views": 36050,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_Cape_Verde"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Portuguese_Cape_Verde",
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "dias-cape-good-hope",
@@ -1167,11 +1311,13 @@
     "category": "exploration",
     "description": "Bartolomeu Dias became the first European to sail around Africa's southern tip.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/F._Benda-The_planting_of_cross_by_Bartholomew_Dias_in_1488-0681_%28cropped%29.jpg/960px-F._Benda-The_planting_of_cross_by_Bartholomew_Dias_in_1488-0681_%28cropped%29.jpg",
-    "image_width": 640,
-    "image_height": 424,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dias-cape-good-hope_ofvgt3?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 861859,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bartolomeu_Dias"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Bartolomeu_Dias",
+    "color": "#222022",
+    "text_color": "light"
   },
   {
     "name": "columbus-americas",
@@ -1180,11 +1326,13 @@
     "category": "exploration",
     "description": "Christopher Columbus landed in the Caribbean, beginning European exploration of the Americas.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg/330px-Portrait_of_a_Man%2C_Said_to_be_Christopher_Columbus.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/columbus-americas_v9fcjt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 399,
+    "image_height": 440,
     "wikipedia_views": 886902,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chris_Columbus_(filmmaker)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Chris_Columbus_(filmmaker)",
+    "color": "#1b2322",
+    "text_color": "light"
   },
   {
     "name": "cabot-north-america",
@@ -1193,11 +1341,13 @@
     "category": "exploration",
     "description": "John Cabot explored the coast of North America for England.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/JohnCabotPainting.jpg/330px-JohnCabotPainting.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cabot-north-america_ynj8ky?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 444,
+    "image_height": 440,
     "wikipedia_views": 273482,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Cabot"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/John_Cabot",
+    "color": "#2a1e18",
+    "text_color": "light"
   },
   {
     "name": "vasco-da-gama-india",
@@ -1206,11 +1356,13 @@
     "category": "exploration",
     "description": "The Portuguese explorer found a sea route from Europe to India.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/330px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vasco-da-gama-india_g65osa?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 448,
+    "image_height": 440,
     "wikipedia_views": 79100,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_da_Gama,_Goa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_da_Gama,_Goa",
+    "color": "#684931",
+    "text_color": "light"
   },
   {
     "name": "cabral-brazil",
@@ -1219,11 +1371,13 @@
     "category": "exploration",
     "description": "Pedro Álvares Cabral claimed Brazil for Portugal.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Pedro_alvares_cabral_discovery_of_brazil_1500.jpg/960px-Pedro_alvares_cabral_discovery_of_brazil_1500.jpg",
-    "image_width": 960,
-    "image_height": 690,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cabral-brazil_cyewv3?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 39397,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Discovery_of_Brazil"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Discovery_of_Brazil",
+    "color": "#333d2c",
+    "text_color": "light"
   },
   {
     "name": "balboa-pacific",
@@ -1232,11 +1386,13 @@
     "category": "exploration",
     "description": "Vasco Núñez de Balboa became the first European to see the Pacific Ocean from the Americas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Matthias_Laurenz_Gr%C3%A4ff%2C_%22Die_Entdeckung_des_Pazifik._Vasco_N%C3%BA%C3%B1ez_de_Balboa%2C_Panama_-_25._9._1513%2C_11_Uhr%22.jpg/960px-Matthias_Laurenz_Gr%C3%A4ff%2C_%22Die_Entdeckung_des_Pazifik._Vasco_N%C3%BA%C3%B1ez_de_Balboa%2C_Panama_-_25._9._1513%2C_11_Uhr%22.jpg",
-    "image_width": 960,
-    "image_height": 509,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/balboa-pacific_ps6jt6?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 121439,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Vasco_Núñez_de_Balboa",
+    "color": "#223b51",
+    "text_color": "light"
   },
   {
     "name": "ponce-de-leon-florida",
@@ -1245,11 +1401,13 @@
     "category": "exploration",
     "description": "The Spanish explorer became the first European to reach Florida.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Juan_Ponce_de_Le%C3%B3n.jpg/330px-Juan_Ponce_de_Le%C3%B3n.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ponce-de-leon-florida_dbfubn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 429,
+    "image_height": 440,
     "wikipedia_views": 340792,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Ponce_de_León"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Juan_Ponce_de_León",
+    "color": "#a7b0a7",
+    "text_color": "dark"
   },
   {
     "name": "cortes-meets-aztecs",
@@ -1258,11 +1416,13 @@
     "category": "exploration",
     "description": "Hernán Cortés first encountered the Aztec Empire in Mexico.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Xicotencatl-Cortes.jpg/960px-Xicotencatl-Cortes.jpg",
-    "image_width": 960,
-    "image_height": 1288,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cortes-meets-aztecs_fuetko?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 378606,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire",
+    "color": "#5d3e2a",
+    "text_color": "light"
   },
   {
     "name": "magellan-circumnavigation",
@@ -1271,11 +1431,13 @@
     "category": "exploration",
     "description": "Magellan's expedition completed the first voyage around the world.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Descubrimiento_del_Estrecho_de_Magallanes.jpg/960px-Descubrimiento_del_Estrecho_de_Magallanes.jpg",
-    "image_width": 960,
-    "image_height": 631,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magellan-circumnavigation_gaurty?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 272959,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition",
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "pizarro-meets-incas",
@@ -1284,11 +1446,13 @@
     "category": "exploration",
     "description": "Francisco Pizarro first encountered the Inca Empire in Peru.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Millais%2C_John_Everett_%28Sir%29_-_Pizarro_Seizing_the_Inca_of_Peru_-_Google_Art_Project.jpg/960px-Millais%2C_John_Everett_%28Sir%29_-_Pizarro_Seizing_the_Inca_of_Peru_-_Google_Art_Project.jpg",
-    "image_width": 960,
-    "image_height": 718,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pizarro-meets-incas_i16zzj?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 289742,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Pizarro"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Francisco_Pizarro",
+    "color": "#6b6055",
+    "text_color": "light"
   },
   {
     "name": "cartier-st-lawrence",
@@ -1297,11 +1461,13 @@
     "category": "exploration",
     "description": "Jacques Cartier explored the St. Lawrence River and claimed Canada for France.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jacques_Cartier_1851-1852.jpg/330px-Jacques_Cartier_1851-1852.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cartier-st-lawrence_lo0iia?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 443,
+    "image_height": 440,
     "wikipedia_views": 221576,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacques_Cartier"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jacques_Cartier",
+    "color": "#271f1a",
+    "text_color": "light"
   },
   {
     "name": "de-soto-mississippi",
@@ -1310,11 +1476,13 @@
     "category": "exploration",
     "description": "Hernando de Soto became the first European to cross the Mississippi River.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/De_Soto_by_Telfer_%26_Sartain.jpg/330px-De_Soto_by_Telfer_%26_Sartain.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/de-soto-mississippi_zjcmzh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 391,
+    "image_height": 440,
     "wikipedia_views": 153166,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hernando_de_Soto"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hernando_de_Soto",
+    "color": "#252020",
+    "text_color": "light"
   },
   {
     "name": "copernicus-heliocentric",
@@ -1323,11 +1491,13 @@
     "category": "exploration",
     "description": "Nicolaus Copernicus published his theory that Earth orbits the Sun.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Heliocentric.jpg",
-    "image_width": 570,
-    "image_height": 480,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copernicus-heliocentric_hzckut?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 252248,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliocentrism"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliocentrism",
+    "color": "#202125",
+    "text_color": "light"
   },
   {
     "name": "vesalius-anatomy",
@@ -1336,11 +1506,13 @@
     "category": "exploration",
     "description": "Andreas Vesalius published groundbreaking anatomical illustrations.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg/330px-Man_dressed_in_Black_by_Calcar_%28Hermitage%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vesalius-anatomy_lhmwki?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 408,
+    "image_height": 440,
     "wikipedia_views": 103767,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Andreas_Vesalius"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Andreas_Vesalius",
+    "color": "#222120",
+    "text_color": "light"
   },
   {
     "name": "silver-discovered-at-potosi",
@@ -1349,11 +1521,13 @@
     "category": "exploration",
     "description": "Spanish colonizers discovered rich silver deposits at Cerro Rico in present-day Bolivia, fueling global trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Capitulo-CIX.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silver-discovered-at-potosi_n17u8f?_a=BAMAMiiu0",
     "wikipedia_views": 42302,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cerro_Rico",
-    "image_width": 862,
-    "image_height": 650
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#584636",
+    "text_color": "light"
   },
   {
     "name": "tycho-brahe-observatory",
@@ -1362,11 +1536,13 @@
     "category": "exploration",
     "description": "The Danish astronomer built Uraniborg, the most advanced observatory of his time.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif/lossy-page1-320px-Portr%C3%A4tt_av_Tycho_Brahe_-_Skoklosters_slott_-_90153.tif.jpg",
-    "image_width": 320,
-    "image_height": 394,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tycho-brahe-observatory_yrs1eo?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 308640,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tycho_Brahe"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tycho_Brahe",
+    "color": "#443426",
+    "text_color": "light"
   },
   {
     "name": "drake-circumnavigation",
@@ -1375,11 +1551,13 @@
     "category": "exploration",
     "description": "Francis Drake completed the second circumnavigation of the world.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Gheeraerts_Francis_Drake_1591.jpg/330px-Gheeraerts_Francis_Drake_1591.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/drake-circumnavigation_jswdum?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 427,
+    "image_height": 440,
     "wikipedia_views": 112995,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Circumnavigation"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Circumnavigation",
+    "color": "#403f3b",
+    "text_color": "light"
   },
   {
     "name": "knitting-machine",
@@ -1388,9 +1566,11 @@
     "category": "exploration",
     "description": "William Lee invented the stocking frame, the first hand-operated knitting machine.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Stocking_Frame.jpg/330px-Stocking_Frame.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/knitting-machine_jrkj4x?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 248
+    "image_height": 440,
+    "color": "#25201f",
+    "text_color": "light"
   },
   {
     "name": "microscope-invented",
@@ -1399,11 +1579,13 @@
     "category": "exploration",
     "description": "Dutch spectacle makers invented the first compound microscope.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ukrainian_microscope_%28cropped%29.jpg/330px-Ukrainian_microscope_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/microscope-invented_r8kmjq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 331,
+    "image_height": 440,
     "wikipedia_views": 172750,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Microscope"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Microscope",
+    "color": "#252020",
+    "text_color": "light"
   },
   {
     "name": "barents-arctic",
@@ -1412,11 +1594,13 @@
     "category": "exploration",
     "description": "Willem Barents explored the Arctic Ocean seeking a northeast passage.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Willem_Barents_%281883%29.png/330px-Willem_Barents_%281883%29.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barents-arctic_ulxjmm?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 426,
+    "image_height": 440,
     "wikipedia_views": 84720,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Arctic_expeditions"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Arctic_expeditions",
+    "color": "#202221",
+    "text_color": "light"
   },
   {
     "name": "dutch-reach-australia",
@@ -1425,11 +1609,13 @@
     "category": "exploration",
     "description": "Willem Janszoon became the first European to reach Australia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/New_Holland_including_New_South_Wales.jpg/960px-New_Holland_including_New_South_Wales.jpg",
-    "image_width": 960,
-    "image_height": 844,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dutch-reach-australia_puxrtk?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 38571,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/European_exploration_of_Australia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/European_exploration_of_Australia",
+    "color": "#2c1d19",
+    "text_color": "light"
   },
   {
     "name": "jamestown",
@@ -1438,9 +1624,13 @@
     "category": "exploration",
     "description": "English settlers established the first permanent settlement in North America.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Jamestown_Church_Tower_2006.jpg/330px-Jamestown_Church_Tower_2006.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jamestown_rrbow7?_a=BAMAMiiu0",
     "wikipedia_views": 515430,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia",
+    "color": "#423329",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "telescope-invented",
@@ -1449,11 +1639,13 @@
     "category": "exploration",
     "description": "Hans Lippershey invented the first practical telescope in the Netherlands.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/100inchHooker.jpg/330px-100inchHooker.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telescope-invented_gwefwy?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 538,
+    "image_height": 440,
     "wikipedia_views": 75550,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telescope"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telescope",
+    "color": "#24201f",
+    "text_color": "light"
   },
   {
     "name": "hudson-river",
@@ -1462,11 +1654,13 @@
     "category": "exploration",
     "description": "Henry Hudson explored the river later named after him while seeking a northwest passage.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/HenryHudson.jpg/330px-HenryHudson.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hudson-river_uyjoia?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 356,
+    "image_height": 440,
     "wikipedia_views": 447463,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hudson_River"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Hudson_River",
+    "color": "#2f1b19",
+    "text_color": "light"
   },
   {
     "name": "galileo-telescope",
@@ -1475,11 +1669,13 @@
     "category": "exploration",
     "description": "Galileo made groundbreaking astronomical observations with his telescope.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-320px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
-    "image_width": 320,
-    "image_height": 406,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galileo-telescope_kxdskx?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 1314302,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Galileo_Galilei"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+    "color": "#162232",
+    "text_color": "light"
   },
   {
     "name": "kepler-laws",
@@ -1488,11 +1684,13 @@
     "category": "exploration",
     "description": "Johannes Kepler discovered that planets move in elliptical orbits.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kepler_laws_diagram.svg/330px-Kepler_laws_diagram.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kepler-laws_cm3i2w?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 354,
+    "image_height": 440,
     "wikipedia_views": 323490,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion",
+    "color": "#2a1e1a",
+    "text_color": "light"
   },
   {
     "name": "galileo-jupiter-moons",
@@ -1501,11 +1699,13 @@
     "category": "exploration",
     "description": "Galileo observed four moons orbiting Jupiter, supporting heliocentrism.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-320px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
-    "image_width": 320,
-    "image_height": 406,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galileo-jupiter-moons_gcgf54?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
     "wikipedia_views": 159685,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Galilean_moons"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Galilean_moons",
+    "color": "#2d1c1d",
+    "text_color": "light"
   },
   {
     "name": "mayflower",
@@ -1514,9 +1714,9 @@
     "category": "exploration",
     "description": "The Pilgrims arrived in Massachusetts aboard the Mayflower.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg/330px-Copyrighted_and_Published_by_A_S_Burbank%2C_The_Mayflower_at_Sea_%28NBY_21340%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mayflower_zvd94k?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 213,
+    "image_height": 440,
     "wikipedia_views": 688859,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower",
     "color": "#39493e",
@@ -1529,11 +1729,13 @@
     "category": "exploration",
     "description": "William Harvey published his discovery of how blood circulates through the body.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/William_Harvey_2.jpg/330px-William_Harvey_2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/harvey-circulation_euxnln?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 389,
+    "image_height": 440,
     "wikipedia_views": 97738,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Harvey"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Harvey",
+    "color": "#2e1b1a",
+    "text_color": "light"
   },
   {
     "name": "tasman-australia",
@@ -1542,11 +1744,13 @@
     "category": "exploration",
     "description": "Abel Tasman became the first European to reach Tasmania and New Zealand.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Abel_Tasman_Navigateur_en_Australie_%28cropped%29.jpg/330px-Abel_Tasman_Navigateur_en_Australie_%28cropped%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tasman-australia_luvs9n?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 156847,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Abel_Tasman"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Abel_Tasman",
+    "color": "#261f1d",
+    "text_color": "light"
   },
   {
     "name": "torricelli-barometer",
@@ -1555,11 +1759,13 @@
     "category": "exploration",
     "description": "Evangelista Torricelli invented the mercury barometer to measure air pressure.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg/330px-Evangelista_Torricelli_by_Lorenzo_Lippi_%28circa_1647%2C_Galleria_Silvano_Lodi_%26_Due%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/torricelli-barometer_beahdq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 443,
+    "image_height": 440,
     "wikipedia_views": 148378,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Barometer"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Barometer",
+    "color": "#271f1f",
+    "text_color": "light"
   },
   {
     "name": "pendulum-clock",
@@ -1568,9 +1774,11 @@
     "category": "exploration",
     "description": "Christiaan Huygens invented the pendulum clock, achieving unprecedented accuracy in timekeeping.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Galileo_Pendulum_Clock.jpg",
-    "image_width": 250,
-    "image_height": 401
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pendulum-clock_ecwxh1?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#271f1c",
+    "text_color": "light"
   },
   {
     "name": "boyle-law",
@@ -1579,11 +1787,13 @@
     "category": "exploration",
     "description": "Robert Boyle discovered the relationship between gas pressure and volume.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Boyles_Law_animated.gif/330px-Boyles_Law_animated.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boyle-law_spz4u4?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 250,
+    "image_height": 440,
     "wikipedia_views": 191047,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Boyle's_law"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Boyle's_law",
+    "color": "#271f1c",
+    "text_color": "light"
   },
   {
     "name": "hooke-discovers-cells",
@@ -1592,11 +1802,13 @@
     "category": "exploration",
     "description": "Robert Hooke observed cells for the first time under a microscope.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Portrait_of_a_Mathematician_1680c.jpg/330px-Portrait_of_a_Mathematician_1680c.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hooke-discovers-cells_n6kgqq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 408,
+    "image_height": 440,
     "wikipedia_views": 488074,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cell_(biology)"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cell_(biology)",
+    "color": "#3c2720",
+    "text_color": "light"
   },
   {
     "name": "newton-gravity",
@@ -1605,11 +1817,13 @@
     "category": "exploration",
     "description": "Isaac Newton developed his theory of universal gravitation.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/330px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-gravity_b6cyer?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 397,
+    "image_height": 440,
     "wikipedia_views": 3028966,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_Newton"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+    "color": "#281f1d",
+    "text_color": "light"
   },
   {
     "name": "leeuwenhoek-bacteria",
@@ -1618,11 +1832,13 @@
     "category": "exploration",
     "description": "Antonie van Leeuwenhoek observed bacteria through his microscope.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/E._coli_Bacteria_%287316101966%29.jpg/330px-E._coli_Bacteria_%287316101966%29.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leeuwenhoek-bacteria_khrdsv?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 278,
+    "image_height": 440,
     "wikipedia_views": 21826,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Purple_bacteria"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Purple_bacteria",
+    "color": "#291e1b",
+    "text_color": "light"
   },
   {
     "name": "great-comet-1680",
@@ -1631,11 +1847,13 @@
     "category": "exploration",
     "description": "German astronomer Gottfried Kirch discovered the Great Comet of 1680, the first comet discovered by telescope.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg/330px-Staartster_boven_Alkmaar%2C_1681%2C_RP-T-00-341.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-comet-1680_hghvbh?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 217,
+    "image_height": 440,
     "wikipedia_views": 30550,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Comet_of_1680"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Comet_of_1680",
+    "color": "#251f24",
+    "text_color": "light"
   },
   {
     "name": "la-salle-mississippi",
@@ -1644,11 +1862,13 @@
     "category": "exploration",
     "description": "René-Robert de La Salle explored the Mississippi to its mouth.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Cavelier_de_la_salle.jpg/330px-Cavelier_de_la_salle.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/la-salle-mississippi_pkelwt?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 401,
+    "image_height": 440,
     "wikipedia_views": 90342,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/René-Robert_Cavelier,_Sieur_de_La_Salle"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/René-Robert_Cavelier,_Sieur_de_La_Salle",
+    "color": "#2d1c1a",
+    "text_color": "light"
   },
   {
     "name": "newton-principia",
@@ -1657,11 +1877,13 @@
     "category": "exploration",
     "description": "Newton published his laws of motion and universal gravitation.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Newton%27s_Principia_title_page.png/330px-Newton%27s_Principia_title_page.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-principia_zwo5po?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 457,
+    "image_height": 440,
     "wikipedia_views": 217644,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Philosophiæ_Naturalis_Principia_Mathematica"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Philosophiæ_Naturalis_Principia_Mathematica",
+    "color": "#291f1a",
+    "text_color": "light"
   },
   {
     "name": "first-paper-money-americas",
@@ -1670,11 +1892,13 @@
     "category": "exploration",
     "description": "The colony of Massachusetts issued the first paper money in the Americas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Americas_%28orthographic_projection%29.svg/330px-Americas_%28orthographic_projection%29.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-paper-money-americas_i1aseb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 330,
+    "image_height": 440,
     "wikipedia_views": 59110,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper_money"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper_money",
+    "color": "#2a1e1b",
+    "text_color": "light"
   },
   {
     "name": "first-newspaper-americas",
@@ -1683,11 +1907,13 @@
     "category": "exploration",
     "description": "Publick Occurrences Both Forreign and Domestick, the first newspaper in the Americas, was published.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg/330px-Boston_News_Letter%2C_first_issue%2C_April_17%2C_1704.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-newspaper-americas_uj8qyc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 506,
+    "image_height": 440,
     "wikipedia_views": 29727,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_American_newspapers"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_American_newspapers",
+    "color": "#251f22",
+    "text_color": "light"
   },
   {
     "name": "dampier-circumnavigation",
@@ -1696,11 +1922,13 @@
     "category": "exploration",
     "description": "William Dampier became the first person to circumnavigate the world three times.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Dampier-portrait.jpg/330px-Dampier-portrait.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dampier-circumnavigation_xmhf5p?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 400,
+    "image_height": 440,
     "wikipedia_views": 67017,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier",
+    "color": "#251f21",
+    "text_color": "light"
   },
   {
     "name": "dampier-new-britain",
@@ -1709,11 +1937,13 @@
     "category": "exploration",
     "description": "William Dampier became the first European to circumnavigate New Britain, discovering it was an island.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Newbritain_lrg.jpg/330px-Newbritain_lrg.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dampier-new-britain_dpfpj9?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 200,
+    "image_height": 440,
     "wikipedia_views": 67017,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier",
+    "color": "#261f1c",
+    "text_color": "light"
   },
   {
     "name": "piano-invented",
@@ -1722,9 +1952,11 @@
     "category": "exploration",
     "description": "Bartolomeo Cristofori invented the piano in Italy, allowing musicians to play soft and loud dynamics.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Steinway_Vienna_002.JPG/330px-Steinway_Vienna_002.JPG",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/piano-invented_ijbzdc?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 392
+    "image_height": 440,
+    "color": "#2c1d17",
+    "text_color": "light"
   },
   {
     "name": "seed-drill",
@@ -1733,9 +1965,11 @@
     "category": "exploration",
     "description": "Jethro Tull invented the seed drill, enabling efficient planting in neat rows and increasing crop yields.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/7263_Canterbury_Agricultural_College_farm.jpg/330px-7263_Canterbury_Agricultural_College_farm.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seed-drill_irafnx?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 242
+    "image_height": 440,
+    "color": "#664626",
+    "text_color": "light"
   },
   {
     "name": "newcomen-steam-engine",
@@ -1744,9 +1978,11 @@
     "category": "exploration",
     "description": "Thomas Newcomen built the first practical steam-powered engine for pumping water from mines.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Newcomen_atmospheric_engine_animation.gif/330px-Newcomen_atmospheric_engine_animation.gif",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newcomen-steam-engine_adugvf?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 476
+    "image_height": 440,
+    "color": "#222022",
+    "text_color": "light"
   },
   {
     "name": "mercury-thermometer",
@@ -1755,9 +1991,11 @@
     "category": "exploration",
     "description": "Daniel Gabriel Fahrenheit invented the mercury-in-glass thermometer, the first reliable tool for measuring temperature.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mercury_Thermometer.jpg/330px-Mercury_Thermometer.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mercury-thermometer_lntrcq?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 712
+    "image_height": 440,
+    "color": "#222025",
+    "text_color": "light"
   },
   {
     "name": "bering-strait",
@@ -1766,11 +2004,13 @@
     "category": "exploration",
     "description": "Vitus Bering proved that Asia and North America were separate continents.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Vitus_Bering_reconstruction.jpg/330px-Vitus_Bering_reconstruction.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bering-strait_xzp3ht?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 331,
+    "image_height": 440,
     "wikipedia_views": 212055,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Beringia"
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Beringia",
+    "color": "#261f22",
+    "text_color": "light"
   },
   {
     "name": "first-synagogue-nyc",
@@ -2512,9 +2752,11 @@
     "category": "exploration",
     "description": "Charles Goodyear discovered vulcanization, making rubber durable and weather-resistant for industrial use.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/VulcanizationMold1941.jpg/330px-VulcanizationMold1941.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vulcanized-rubber_anlius?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 262
+    "image_height": 440,
+    "color": "#212123",
+    "text_color": "light"
   },
   {
     "name": "penny-post-introduced",
@@ -6003,7 +6245,11 @@
     "category": "exploration",
     "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Motorboat_at_Kankaria_lake.JPG/330px-Motorboat_at_Kankaria_lake.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boats_jipcya?_a=BAMAMiiu0",
+    "color": "#242022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hafting",
@@ -6467,7 +6713,11 @@
     "category": "exploration",
     "description": "First large permanent settlements like Jericho emerged, housing hundreds of people.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg/330px-%C3%87atalh%C3%B6y%C3%BCk%2C_7400_BC%2C_Konya%2C_Turkey_-_UNESCO_World_Heritage_Site%2C_08.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-city-large-settlements_fzzlto?_a=BAMAMiiu0",
+    "color": "#291e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "domestication-of-potatoes",
@@ -6476,7 +6726,11 @@
     "category": "exploration",
     "description": "Potatoes first cultivated in the Andes of South America, eventually becoming a global staple crop.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Patates.jpg/330px-Patates.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-potatoes_lo4gp2?_a=BAMAMiiu0",
+    "color": "#552d20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "alcohol-fermentation-mead",
@@ -6485,7 +6739,11 @@
     "category": "exploration",
     "description": "Honey fermented with water to create mead, believed to be the first alcoholic beverage.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Ethanol_fermentation-1.svg/330px-Ethanol_fermentation-1.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alcohol-fermentation-mead_ujae1r?_a=BAMAMiiu0",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sled-dog-dog-sled",
@@ -6494,7 +6752,11 @@
     "category": "exploration",
     "description": "Dogs trained to pull sleds across snow and ice, the first use of animals for transport.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/%22Nugget_Express%22_Dawson%2C_Yukon_Territory_%28CURTIS_565%29.jpeg/330px-%22Nugget_Express%22_Dawson%2C_Yukon_Territory_%28CURTIS_565%29.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sled-dog-dog-sled_b7hyvg?_a=BAMAMiiu0",
+    "color": "#563b22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lead-smelting",
@@ -6503,7 +6765,11 @@
     "category": "exploration",
     "description": "Lead ore heated to extract pure metal, one of the earliest examples of metallurgy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Doe_Run_smelter_Herculaneum_22.jpg/330px-Doe_Run_smelter_Herculaneum_22.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lead-smelting_v2fzre?_a=BAMAMiiu0",
+    "color": "#24201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "kiln",
@@ -6512,7 +6778,11 @@
     "category": "exploration",
     "description": "High-temperature ovens developed for firing pottery and bricks at controlled heat levels.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Charcoal_Kilns%2C_California.JPG/330px-Charcoal_Kilns%2C_California.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kiln_w3q7og?_a=BAMAMiiu0",
+    "color": "#281f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "irrigation",
@@ -6521,7 +6791,11 @@
     "category": "exploration",
     "description": "Channels and ditches dug to direct water to crops, enabling farming in arid regions.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Fields_SW_from_Sevilla.jpg/330px-Fields_SW_from_Sevilla.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irrigation_hjx1lf?_a=BAMAMiiu0",
+    "color": "#2a1e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "proto-writing",
@@ -6530,7 +6804,11 @@
     "category": "exploration",
     "description": "Symbolic marks on clay tokens recording trade and ownership, precursors to full writing systems.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tableta_con_trillo.png/330px-Tableta_con_trillo.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-writing_bdccl4?_a=BAMAMiiu0",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "salt-production",
@@ -6539,7 +6817,11 @@
     "category": "exploration",
     "description": "Salt extracted from springs and seawater through evaporation for food preservation and seasoning.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Rock_salt_%28halitite%29_%28Billianwala_Salt_Member%2C_Salt_Range_Formation%2C_Ediacaran_to_Lower_Cambrian%3B_Khewra_Salt_Mine%2C_Salt_Range%2C_Pakistan%29_14.jpg/330px-Rock_salt_%28halitite%29_%28Billianwala_Salt_Member%2C_Salt_Range_Formation%2C_Ediacaran_to_Lower_Cambrian%3B_Khewra_Salt_Mine%2C_Salt_Range%2C_Pakistan%29_14.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/salt-production_duvxx6?_a=BAMAMiiu0",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cheese",
@@ -6548,7 +6830,11 @@
     "category": "exploration",
     "description": "Milk curdled and aged to create one of the oldest processed foods, preserved in pottery residues.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cheese_platter.jpg/330px-Cheese_platter.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cheese_zjxh3m?_a=BAMAMiiu0",
+    "color": "#26201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "seawall",
@@ -6557,7 +6843,11 @@
     "category": "exploration",
     "description": "Coastal barriers built to protect settlements from flooding and rising sea levels.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Seawallventnor.jpg/330px-Seawallventnor.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seawall_n1gngm?_a=BAMAMiiu0",
+    "color": "#2a1e15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lacquer",
@@ -6566,7 +6856,11 @@
     "category": "exploration",
     "description": "Tree sap refined into a durable, waterproof protective coating originating in East Asia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E6%98%8E%E5%98%89%E9%9D%96_%E5%89%94%E7%B4%85%E5%A3%BD%E5%AD%97%E7%B4%8B%E5%85%AB%E8%A7%92%E6%BC%86%E7%9B%A4-Dish_with_character_for_longevity_%28shou%29_MET_DP704215.jpg/330px-%E6%98%8E%E5%98%89%E9%9D%96_%E5%89%94%E7%B4%85%E5%A3%BD%E5%AD%97%E7%B4%8B%E5%85%AB%E8%A7%92%E6%BC%86%E7%9B%A4-Dish_with_character_for_longevity_%28shou%29_MET_DP704215.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lacquer_qcttpe?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cotton-thread",
@@ -6575,7 +6869,11 @@
     "category": "exploration",
     "description": "Cotton fibers spun into thread for weaving fabric, first developed in South Asia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CottonPlant.JPG/330px-CottonPlant.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cotton-thread_kfnfcu?_a=BAMAMiiu0",
+    "color": "#291e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rowing-oars",
@@ -6584,7 +6882,11 @@
     "category": "exploration",
     "description": "Flat-bladed paddles fixed to boat hulls used to propel watercraft with greater efficiency.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/OarCollection01.JPG/330px-OarCollection01.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rowing-oars_abt1hj?_a=BAMAMiiu0",
+    "color": "#202220",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lost-wax-casting",
@@ -6593,7 +6895,11 @@
     "category": "exploration",
     "description": "Molten metal poured into wax molds to create intricately detailed metal objects and jewelry.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Bronze_casting_by_the_Lost_Wax_Method.png/330px-Bronze_casting_by_the_Lost_Wax_Method.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lost-wax-casting_eivq5r?_a=BAMAMiiu0",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fired-bricks",
@@ -6602,7 +6908,11 @@
     "category": "exploration",
     "description": "Clay bricks baked in kilns for stronger, weather-resistant construction material.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Brick.jpg/330px-Brick.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fired-bricks_egoz3t?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "diamond-mines",
@@ -6611,7 +6921,11 @@
     "category": "exploration",
     "description": "Diamonds first mined in India for use as cutting tools and gemstones.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Diamonds-Russia_%288458938450%29.jpg/330px-Diamonds-Russia_%288458938450%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diamond-mines_la8ozb?_a=BAMAMiiu0",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "paved-roads",
@@ -6620,7 +6934,11 @@
     "category": "exploration",
     "description": "Stone-surfaced roads built for easier transport of goods and people between settlements.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Roads_in_the_Roman_Empire.jpg/330px-Roads_in_the_Roman_Empire.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paved-roads_htov4k?_a=BAMAMiiu0",
+    "color": "#2a1e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "plumbing-clay-pipes",
@@ -6629,7 +6947,11 @@
     "category": "exploration",
     "description": "Clay pipes channeled fresh water into buildings and waste water out, enabling urban sanitation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Pipes_various.jpg/330px-Pipes_various.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plumbing-clay-pipes_sz3xsg?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wine-as-anaesthesia",
@@ -6638,9 +6960,11 @@
     "category": "exploration",
     "description": "Wine administered to patients to dull pain during medical and surgical procedures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Red_and_white_wine_in_glass.jpg/330px-Red_and_white_wine_in_glass.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wine-as-anaesthesia_qgzclz?_a=BAMAMiiu0",
     "color": "#aeadaf",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "seal-emblem",
@@ -6649,7 +6973,11 @@
     "category": "exploration",
     "description": "Carved stamps pressed into clay to authenticate documents and mark ownership of goods.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Seal_of_N%C3%A1chod_town_from_1570_%28big%29.jpg/330px-Seal_of_N%C3%A1chod_town_from_1570_%28big%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seal-emblem_xttpbq?_a=BAMAMiiu0",
+    "color": "#281f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tattoos",
@@ -6658,7 +6986,11 @@
     "category": "exploration",
     "description": "Pigment inserted under the skin for permanent body decoration, found on ancient mummies.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Anchor_tattoo_and_sketch.jpg/330px-Anchor_tattoo_and_sketch.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tattoos_swz0t2?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "swords",
@@ -6667,7 +6999,11 @@
     "category": "exploration",
     "description": "Long metal blades forged from bronze for close combat, first appearing in the Near East.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hand-and-a-Half_Sword_MET_DP146428.jpg/330px-Hand-and-a-Half_Sword_MET_DP146428.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swords_eka9ro?_a=BAMAMiiu0",
+    "color": "#2d1d11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "city-of-uruk",
@@ -6676,7 +7012,11 @@
     "category": "exploration",
     "description": "The world's first true city emerged in Mesopotamia with up to 80,000 residents at its peak.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Relief_on_the_Ishtar_Gate%2C_Pergamenmuseum_4.jpg/330px-Relief_on_the_Ishtar_Gate%2C_Pergamenmuseum_4.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/city-of-uruk_ke3wjx?_a=BAMAMiiu0",
+    "color": "#281f17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hat-earliest-documented",
@@ -6685,7 +7025,11 @@
     "category": "exploration",
     "description": "Otzi the Iceman's bearskin cap, the oldest known hat, preserved in Alpine ice for millennia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Chapeaux_en_peau_de_castor.jpg/330px-Chapeaux_en_peau_de_castor.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hat-earliest-documented_a7iuht?_a=BAMAMiiu0",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dry-latrines-toilets",
@@ -6694,7 +7038,11 @@
     "category": "exploration",
     "description": "Designated waste disposal structures built in early settlements for improved sanitation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Toilet_photo.jpg/330px-Toilet_photo.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dry-latrines-toilets_l1lg5r?_a=BAMAMiiu0",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dice",
@@ -6703,7 +7051,11 @@
     "category": "exploration",
     "description": "Cube-shaped objects marked with dots for games of chance, found in Mesopotamian ruins.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/6sided_dice_%28cropped%29.jpg/330px-6sided_dice_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dice_dcz0vb?_a=BAMAMiiu0",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tin-extraction",
@@ -6712,7 +7064,11 @@
     "category": "exploration",
     "description": "Tin smelted from ore and alloyed with copper to create bronze, launching the Bronze Age.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sn-Alpha-Beta.jpg/330px-Sn-Alpha-Beta.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tin-extraction_pq5txp?_a=BAMAMiiu0",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "papyrus",
@@ -6721,7 +7077,11 @@
     "category": "exploration",
     "description": "Reed strips pressed and dried into sheets for writing, the primary medium of ancient Egypt.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Papyrus.jpg/330px-Papyrus.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/papyrus_bz2ih4?_a=BAMAMiiu0",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "reservoir",
@@ -6730,7 +7090,11 @@
     "category": "exploration",
     "description": "Artificial basins constructed to store water supplies for communities during dry seasons.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/%D0%AF%D0%B7%D0%BE%D0%B2%D0%B8%D1%80_%D0%9A%D1%8A%D1%80%D0%B4%D0%B6%D0%B0%D0%BB%D0%B8_%D0%9D%D1%83%D0%BB%D0%B0%D1%82%D0%B0.jpg/330px-%D0%AF%D0%B7%D0%BE%D0%B2%D0%B8%D1%80_%D0%9A%D1%8A%D1%80%D0%B4%D0%B6%D0%B0%D0%BB%D0%B8_%D0%9D%D1%83%D0%BB%D0%B0%D1%82%D0%B0.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reservoir_w1tzgq?_a=BAMAMiiu0",
+    "color": "#442a1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "receipt",
@@ -6739,7 +7103,11 @@
     "category": "exploration",
     "description": "Clay tablets recording commercial transactions in Sumer, the earliest proof-of-purchase records.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/US-BEP-Receipt_for_currency_%2823_July_1915%29.jpg/330px-US-BEP-Receipt_for_currency_%2823_July_1915%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/receipt_ogcfxe?_a=BAMAMiiu0",
+    "color": "#221f2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "prosthesis-eye",
@@ -6748,7 +7116,11 @@
     "category": "exploration",
     "description": "An artificial eye made from bitumen paste discovered in modern-day Iran, the oldest known prosthetic.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flickr_-_The_U.S._Army_-_U.S._Army_World_Class_Athlete_Program_Paralympic.jpg/330px-Flickr_-_The_U.S._Army_-_U.S._Army_World_Class_Athlete_Program_Paralympic.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/prosthesis-eye_zc7ark?_a=BAMAMiiu0",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rhinoplasty",
@@ -6757,7 +7129,11 @@
     "category": "exploration",
     "description": "Nose reconstruction surgery described in ancient Indian texts, the earliest known plastic surgery.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Exposing_lower_lateral_cartilage_during_rhinoplasty.jpg/330px-Exposing_lower_lateral_cartilage_during_rhinoplasty.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rhinoplasty_me7hao?_a=BAMAMiiu0",
+    "color": "#261f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "measuring-rod-ruler",
@@ -6766,7 +7142,11 @@
     "category": "exploration",
     "description": "Standardized measuring sticks used in Egyptian construction to ensure precise dimensions.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Diverse%C2%B7Ma%C3%9Fst%C3%A4be%2C15.365.jpg/330px-Diverse%C2%B7Ma%C3%9Fst%C3%A4be%2C15.365.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/measuring-rod-ruler_v4ibl6?_a=BAMAMiiu0",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "planned-city",
@@ -6775,7 +7155,11 @@
     "category": "exploration",
     "description": "Indus Valley cities like Mohenjo-daro were built on deliberate grid layouts with zoned areas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Partizanske4.jpg/330px-Partizanske4.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/planned-city_irukk4?_a=BAMAMiiu0",
+    "color": "#503828",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "public-sewage-sanitation",
@@ -6784,7 +7168,11 @@
     "category": "exploration",
     "description": "Covered drains and sewage systems in Indus Valley cities, remarkably advanced for the era.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Sanitation_Value_Chain.jpg/330px-Sanitation_Value_Chain.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/public-sewage-sanitation_y6zuh9?_a=BAMAMiiu0",
+    "color": "#422b1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "public-bath",
@@ -6793,7 +7181,11 @@
     "category": "exploration",
     "description": "The Great Bath of Mohenjo-daro, a large communal bathing facility with waterproofed walls.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Asser_Levy_Recreation_Center.jpg/330px-Asser_Levy_Recreation_Center.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/public-bath_idhftt?_a=BAMAMiiu0",
+    "color": "#222026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "levee",
@@ -6802,7 +7194,11 @@
     "category": "exploration",
     "description": "Raised embankments built along rivers to prevent flooding of settlements and farmland.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Sacramento_River_Levee.jpg/330px-Sacramento_River_Levee.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/levee_tgs8jb?_a=BAMAMiiu0",
+    "color": "#382925",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "balance-weights-scales",
@@ -6811,7 +7207,11 @@
     "category": "exploration",
     "description": "Standardized weights and balance scales for measuring goods in trade across the Indus Valley.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Balance_%C3%A0_tabac_1850.JPG/330px-Balance_%C3%A0_tabac_1850.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/balance-weights-scales_fpkcla?_a=BAMAMiiu0",
+    "color": "#23211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "docks",
@@ -6820,7 +7220,11 @@
     "category": "exploration",
     "description": "The tidal dock at Lothal in India, the earliest known maritime docking structure.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cruise_ship_dock_in_St_Maarten.JPG/330px-Cruise_ship_dock_in_St_Maarten.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/docks_yhburt?_a=BAMAMiiu0",
+    "color": "#493428",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "puppetry",
@@ -6829,7 +7233,11 @@
     "category": "exploration",
     "description": "Figures manipulated by strings or rods for entertainment and storytelling performances.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Swanage_Punch_%26_Judy.JPG/330px-Swanage_Punch_%26_Judy.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/puppetry_g3eafl?_a=BAMAMiiu0",
+    "color": "#372e23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fork",
@@ -6838,7 +7246,11 @@
     "category": "exploration",
     "description": "Two-pronged utensils for eating and serving food, found in ancient Mesopotamian sites.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Assorted_forks.jpg/330px-Assorted_forks.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fork_r6noah?_a=BAMAMiiu0",
+    "color": "#201f2d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "copper-pipes",
@@ -6847,7 +7259,11 @@
     "category": "exploration",
     "description": "Copper tubing used for plumbing in Egyptian temples, carrying water over long distances.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Rorskararemedror.jpg/330px-Rorskararemedror.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copper-pipes_sukj0o?_a=BAMAMiiu0",
+    "color": "#593623",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "touchstone",
@@ -6856,7 +7272,11 @@
     "category": "exploration",
     "description": "A dark stone used to test the purity of gold and silver by examining the color of the streak left.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gold-crystals.jpg/330px-Gold-crystals.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/touchstone_h6fxyi?_a=BAMAMiiu0",
+    "color": "#212025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dictionary",
@@ -6865,7 +7285,11 @@
     "category": "exploration",
     "description": "Sumerian-Akkadian word lists inscribed on clay tablets, the earliest known dictionaries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Woerterbuchstapel_Langenscheidt.jpg/330px-Woerterbuchstapel_Langenscheidt.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dictionary_wlbjy2?_a=BAMAMiiu0",
+    "color": "#251e26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "protractor",
@@ -6874,7 +7298,11 @@
     "category": "exploration",
     "description": "Angle-measuring instruments used in ancient construction and astronomical observation.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Goniometer_IMG_4841.jpg/330px-Goniometer_IMG_4841.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/protractor_vppxg6?_a=BAMAMiiu0",
+    "color": "#311a11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "water-clock",
@@ -6883,7 +7311,11 @@
     "category": "exploration",
     "description": "Vessels that measured time by regulated water flow, used in Egypt and Babylon.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/AGMA_Clepsydre.jpg/330px-AGMA_Clepsydre.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-clock_oz4lsm?_a=BAMAMiiu0",
+    "color": "#261f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "proto-alphabet",
@@ -6892,7 +7324,11 @@
     "category": "exploration",
     "description": "A simplified writing system developed in Egypt that evolved into the first true alphabets.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Ba%60alat.jpg/330px-Ba%60alat.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-alphabet_wekwte?_a=BAMAMiiu0",
+    "color": "#271e25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "surgical-treatise",
@@ -6901,7 +7337,11 @@
     "category": "exploration",
     "description": "The Edwin Smith Papyrus documented 48 surgical cases, the oldest known surgical text.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Edwin_Smith_Papyrus_v2.jpg/330px-Edwin_Smith_Papyrus_v2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/surgical-treatise_s76duw?_a=BAMAMiiu0",
+    "color": "#281e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rubber-mesoamerican-ballgame",
@@ -6910,9 +7350,11 @@
     "category": "exploration",
     "description": "Natural latex processed into bouncing balls for ritual games played across Mesoamerica.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Pok_ta_pok_ballgame_maya_indians_mexico_3.JPG/500px-Pok_ta_pok_ballgame_maya_indians_mexico_3.JPG",
-    "image_width": 500,
-    "image_height": 591
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubber-mesoamerican-ballgame_pqetpg?_a=BAMAMiiu0",
+    "image_width": 330,
+    "image_height": 440,
+    "color": "#2a1d1d",
+    "text_color": "light"
   },
   {
     "name": "concrete",
@@ -6921,7 +7363,11 @@
     "category": "exploration",
     "description": "Mixtures of calcium oxide and water creating early cement used in ancient construction.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bloczek_betonowy.jpg/330px-Bloczek_betonowy.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/concrete_vyohrz?_a=BAMAMiiu0",
+    "color": "#212029",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lathe",
@@ -6930,7 +7376,11 @@
     "category": "exploration",
     "description": "A rotating device for shaping wood and metal symmetrically, fundamental to precision craftsmanship.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/HwacheonCentreLathe_460x1000.jpg/330px-HwacheonCentreLathe_460x1000.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lathe_ecigqo?_a=BAMAMiiu0",
+    "color": "#222123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "distillation",
@@ -6939,7 +7389,11 @@
     "category": "exploration",
     "description": "Heating liquids to separate components by their boiling points, first practiced in Mesopotamia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Simple_distillation_apparatus.svg/330px-Simple_distillation_apparatus.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/distillation_zc3wkg?_a=BAMAMiiu0",
+    "color": "#2a1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "star-catalogue",
@@ -6948,7 +7402,11 @@
     "category": "exploration",
     "description": "Babylonian records systematically cataloguing the positions of hundreds of visible stars.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Perseus_-_Prodromus_astronomiae_1690_%285590393%29.jpg/330px-Perseus_-_Prodromus_astronomiae_1690_%285590393%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/star-catalogue_dzywo5?_a=BAMAMiiu0",
+    "color": "#251f21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "saddle",
@@ -6957,7 +7415,11 @@
     "category": "exploration",
     "description": "Padded seats strapped to horses for stable riding, transforming mounted warfare and travel.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Saddle_with_shabrack_according_to_tradition_linked_with_Hetman_Miko%C5%82aj_Hieronim_Sieniawski.jpg/330px-Saddle_with_shabrack_according_to_tradition_linked_with_Hetman_Miko%C5%82aj_Hieronim_Sieniawski.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saddle_ucjeyv?_a=BAMAMiiu0",
+    "color": "#232026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "library-catalog",
@@ -6966,7 +7428,11 @@
     "category": "exploration",
     "description": "Organized indexes of clay tablets in Assyrian libraries, enabling retrieval of stored knowledge.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Yale_card_catalog.jpg/330px-Yale_card_catalog.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/library-catalog_ltzcvh?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "waterproof-concrete",
@@ -6975,9 +7441,11 @@
     "category": "exploration",
     "description": "Hydraulic concrete used in Assyrian aqueduct construction, resistant to water erosion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Bloczek_betonowy.jpg/330px-Bloczek_betonowy.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/waterproof-concrete_ds1kj6?_a=BAMAMiiu0",
     "color": "#98a1a3",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wagonway-diolkos",
@@ -6986,7 +7454,11 @@
     "category": "exploration",
     "description": "A stone trackway for wheeled vehicles across the Isthmus of Corinth, a precursor to railways.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Istmo_de_Corinto_ESC_large_ISS011_ISS011-E-13188.JPG/330px-Istmo_de_Corinto_ESC_large_ISS011_ISS011-E-13188.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wagonway-diolkos_nznwta?_a=BAMAMiiu0",
+    "color": "#423f40",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "high-carbon-steel-wootz",
@@ -6995,7 +7467,11 @@
     "category": "exploration",
     "description": "Superior crucible steel produced in India, later renowned worldwide as Damascus steel.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/%D0%90%D1%80%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D0%BA%D0%B0%D1%82.jpg/330px-%D0%90%D1%80%D0%BC%D0%B0%D1%82%D1%83%D1%80%D0%BD%D1%8B%D0%B9_%D0%BF%D1%80%D0%BE%D0%BA%D0%B0%D1%82.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/high-carbon-steel-wootz_uuuhz9?_a=BAMAMiiu0",
+    "color": "#222023",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "systematization-of-medicine",
@@ -7004,7 +7480,11 @@
     "category": "exploration",
     "description": "The Sushruta Samhita codified surgical and medical knowledge in India, covering over 300 procedures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/The_Doctor_Luke_Fildes_crop.jpg/330px-The_Doctor_Luke_Fildes_crop.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/systematization-of-medicine_ei2esn?_a=BAMAMiiu0",
+    "color": "#241f26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "crank-motion-rotary-quern",
@@ -7013,7 +7493,11 @@
     "category": "exploration",
     "description": "Hand-cranked grain mills replacing back-and-forth grinding, introducing rotary mechanical motion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Basalt_quern.jpg/330px-Basalt_quern.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crank-motion-rotary-quern_io4dzk?_a=BAMAMiiu0",
+    "color": "#251f25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lighthouse",
@@ -7022,7 +7506,11 @@
     "category": "exploration",
     "description": "Elevated fires on towers guiding ships safely to harbor, protecting sailors from coastal hazards.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/NJ_LBI_Lighthouse_04.JPG/330px-NJ_LBI_Lighthouse_04.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lighthouse_yqoveu?_a=BAMAMiiu0",
+    "color": "#222027",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "toe-stirrup",
@@ -7031,7 +7519,11 @@
     "category": "exploration",
     "description": "Foot loops attached to saddles giving riders better balance and control while mounted.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/EnduranceStirrup.jpg/330px-EnduranceStirrup.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toe-stirrup_whb9e0?_a=BAMAMiiu0",
+    "color": "#221f29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cast-iron",
@@ -7040,7 +7532,11 @@
     "category": "exploration",
     "description": "Iron melted at high temperatures and poured into molds, first achieved in ancient China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/P%C3%A8re-Lachaise%2C_The_bat_%2810153312114%29.jpg/330px-P%C3%A8re-Lachaise%2C_The_bat_%2810153312114%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cast-iron_apxegc?_a=BAMAMiiu0",
+    "color": "#26201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spiral-stairs",
@@ -7049,7 +7545,11 @@
     "category": "exploration",
     "description": "Helical staircases first built in ancient Greek temples, saving space while connecting floors.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/SXSW_2019_-Spiral_Stairs_%2833493614768%29_%28cropped%29.jpg/330px-SXSW_2019_-Spiral_Stairs_%2833493614768%29_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spiral-stairs_rimfge?_a=BAMAMiiu0",
+    "color": "#492c35",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "scythed-chariot",
@@ -7058,7 +7558,11 @@
     "category": "exploration",
     "description": "War chariots fitted with bladed wheels used by Persian forces to devastate enemy infantry.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/The_charge_of_the_Persian_scythed_chariots_at_the_battle_of_Gaugamela_by_Andre_Castaigne_%281898-1899%29.jpg/330px-The_charge_of_the_Persian_scythed_chariots_at_the_battle_of_Gaugamela_by_Andre_Castaigne_%281898-1899%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scythed-chariot_yrajxj?_a=BAMAMiiu0",
+    "color": "#292423",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "loan-deeds",
@@ -7067,7 +7571,11 @@
     "category": "exploration",
     "description": "Written contracts documenting loans and repayment terms in ancient Mesopotamia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Burma_1926_Promissory_Note.jpg/330px-Burma_1926_Promissory_Note.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/loan-deeds_tvvedy?_a=BAMAMiiu0",
+    "color": "#271d27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "concept-of-zero",
@@ -7076,7 +7584,11 @@
     "category": "exploration",
     "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/NumberSetinR2.svg/330px-NumberSetinR2.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/concept-of-zero_to7bpd?_a=BAMAMiiu0",
+    "color": "#2e1b1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "traction-trebuchet",
@@ -7103,7 +7615,11 @@
     "category": "exploration",
     "description": "Hollow reed stalks cut to a point for writing with ink, used widely in ancient Egypt and Mesopotamia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Reed_Pens.jpg/330px-Reed_Pens.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reed-pens_myvrfi?_a=BAMAMiiu0",
+    "color": "#c2a98a",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "animal-driven-rotary-mill",
@@ -7112,7 +7628,11 @@
     "category": "exploration",
     "description": "Grain mills powered by oxen or donkeys walking in circles to turn heavy grinding stones.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Allied_Mills%2C_Manchester.jpg/330px-Allied_Mills%2C_Manchester.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/animal-driven-rotary-mill_cqd1qz?_a=BAMAMiiu0",
+    "color": "#2b1c24",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "corporations",
@@ -7121,7 +7641,11 @@
     "category": "exploration",
     "description": "Legal entities separate from their owners, first established in ancient Rome for public works and trade.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/New_McDonald%27s_restaurant_in_Mount_Pleasant%2C_Iowa.jpg/330px-New_McDonald%27s_restaurant_in_Mount_Pleasant%2C_Iowa.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/corporations_alwfke?_a=BAMAMiiu0",
+    "color": "#493e38",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cheque",
@@ -7130,7 +7654,11 @@
     "category": "exploration",
     "description": "Written orders to a bank to pay a specified sum, used by ancient Roman merchants to settle debts.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Community_Noun_project_39956.svg/330px-Community_Noun_project_39956.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cheque_ibotsu?_a=BAMAMiiu0",
+    "color": "#2b1d20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "formal-systems-panini",
@@ -7139,7 +7667,11 @@
     "category": "exploration",
     "description": "Panini's Sanskrit grammar was the first formal system in linguistics, using rules to generate all valid word forms.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Stamp_of_India_-_2004_-_Colnect_158527_-_Panini.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/formal-systems-panini_xgtli8?_a=BAMAMiiu0",
+    "color": "#281e20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "zinc-production",
@@ -7148,7 +7680,11 @@
     "category": "exploration",
     "description": "Zinc smelted from ore in India for use in alloys and coatings, requiring advanced high-temperature techniques.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Zinc_fragment_sublimed_and_1cm3_cube.jpg/330px-Zinc_fragment_sublimed_and_1cm3_cube.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zinc-production_olybop?_a=BAMAMiiu0",
+    "color": "#271e24",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "antikythera-mechanism",
@@ -7157,7 +7693,11 @@
     "category": "exploration",
     "description": "Ancient Greek analog computer using bronze gears to track astronomical positions and predict eclipses.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Antikythera_Fragment_A_%28Front%29.webp/330px-Antikythera_Fragment_A_%28Front%29.webp.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antikythera-mechanism_dcwkwx?_a=BAMAMiiu0",
+    "color": "#261e27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "archimedes-screw",
@@ -7166,7 +7706,11 @@
     "category": "exploration",
     "description": "Helical pump raising water from lower to higher elevations by rotating a screw-shaped blade inside a cylinder.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Archimedes-screw_one-screw-threads_with-ball_3D-view_animated_small.gif/330px-Archimedes-screw_one-screw-threads_with-ball_3D-view_animated_small.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archimedes-screw_diqht7?_a=BAMAMiiu0",
+    "color": "#271f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "canal-lock",
@@ -7175,7 +7719,11 @@
     "category": "exploration",
     "description": "Gated chambers allowing boats to navigate changes in water level, first built in ancient China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lock_and_cottage_on_Aylesbury_Arm_of_Grand_Union_-_geograph.org.uk_-_112420.jpg/330px-Lock_and_cottage_on_Aylesbury_Arm_of_Grand_Union_-_geograph.org.uk_-_112420.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canal-lock_wr2t0l?_a=BAMAMiiu0",
+    "color": "#2a1c26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cam",
@@ -7184,7 +7732,11 @@
     "category": "exploration",
     "description": "A rotating or sliding piece in a mechanism that converts circular motion into linear motion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Nockenwelle_ani.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cam_ywxkr9?_a=BAMAMiiu0",
+    "color": "#291d23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gimbal",
@@ -7193,7 +7745,11 @@
     "category": "exploration",
     "description": "Pivoting rings keeping objects level regardless of surrounding motion, described by the Greek inventor Philo of Byzantium.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Gyroscope_operation.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gimbal_gs7zoq?_a=BAMAMiiu0",
+    "color": "#291e1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dry-dock",
@@ -7202,7 +7758,11 @@
     "category": "exploration",
     "description": "Enclosed basin drained to expose ship hulls for repair, first constructed in Ptolemaic Egypt.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USS_Greeneville_%28SSN_772%29_-_dry_dock_Pearl_Harbor_%281%29.jpg/330px-USS_Greeneville_%28SSN_772%29_-_dry_dock_Pearl_Harbor_%281%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dry-dock_q85mkt?_a=BAMAMiiu0",
+    "color": "#514448",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spritsail",
@@ -7211,7 +7771,11 @@
     "category": "exploration",
     "description": "A diagonal spar holding a sail taut from the mast, improving sailing efficiency in the ancient Mediterranean.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Spritsail-parts_of_sail_%28en%29.svg/330px-Spritsail-parts_of_sail_%28en%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spritsail_miadef?_a=BAMAMiiu0",
+    "color": "#8d8585",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "segmental-arch-bridge",
@@ -7220,7 +7784,11 @@
     "category": "exploration",
     "description": "Bridges using partial circle arches for wider, flatter spans, requiring less material than full semicircular arches.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Segmentb%C3%A5ge.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/segmental-arch-bridge_njivgs?_a=BAMAMiiu0",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "news-bulletin",
@@ -7229,7 +7797,11 @@
     "category": "exploration",
     "description": "The Roman Acta Diurna were daily public notices posted in prominent locations to inform citizens of events.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/CBS_News_Bulletin_1963.PNG/330px-CBS_News_Bulletin_1963.PNG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/news-bulletin_bqclrr?_a=BAMAMiiu0",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "arch-dam",
@@ -7238,7 +7810,11 @@
     "category": "exploration",
     "description": "Curved dams transferring water pressure to canyon walls, allowing thinner construction than straight dams.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Morrowdam.JPG/330px-Morrowdam.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arch-dam_ivzvaw?_a=BAMAMiiu0",
+    "color": "#2b1b27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "trip-hammer",
@@ -7247,7 +7823,11 @@
     "category": "exploration",
     "description": "Water-powered hammer using a cam to lift and drop a heavy weight for forging metal and processing grain.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Hammer_und_Schleiferei_zum_Kini_Schwanzhammer-9546.jpg/330px-Hammer_und_Schleiferei_zum_Kini_Schwanzhammer-9546.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trip-hammer_zlfyv9?_a=BAMAMiiu0",
+    "color": "#281c29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "glass-blowing",
@@ -7256,7 +7836,11 @@
     "category": "exploration",
     "description": "Technique of inflating molten glass into shapes using a blowpipe, revolutionizing glassware production in the Roman world.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Glass_bubble.jpg/330px-Glass_bubble.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/glass-blowing_dbzqmx?_a=BAMAMiiu0",
+    "color": "#281c2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "reverse-overshot-water-wheel",
@@ -7265,7 +7849,11 @@
     "category": "exploration",
     "description": "Water wheel driven by water flowing over the top, harnessing gravity for greater efficiency than undershot designs.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Brucker_Wasserrad_01.webm/330px--Brucker_Wasserrad_01.webm.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reverse-overshot-water-wheel_gmfsvm?_a=BAMAMiiu0",
+    "color": "#291d23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "noodles",
@@ -7274,7 +7862,11 @@
     "category": "exploration",
     "description": "Long strands of dough boiled or fried as a staple food, originating in Han Dynasty China.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Dalian_Liaoning_China_Noodlemaker-01.jpg/330px-Dalian_Liaoning_China_Noodlemaker-01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/noodles_cbb2qy?_a=BAMAMiiu0",
+    "color": "#321626",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "respiratory-protective-equipment",
@@ -7283,7 +7875,11 @@
     "category": "exploration",
     "description": "Pliny the Elder described using animal bladders as makeshift masks to filter dust while working in mines.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Cologne_Germany_Industrial-work-with-Personal-Protective-Equipment-02.jpg/330px-Cologne_Germany_Industrial-work-with-Personal-Protective-Equipment-02.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/respiratory-protective-equipment_qernnv?_a=BAMAMiiu0",
+    "color": "#2b1b28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vending-machine",
@@ -7292,9 +7888,11 @@
     "category": "exploration",
     "description": "Hero of Alexandria designed a coin-operated device that dispensed holy water in Egyptian temples.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/CandiesVendingMachine1952.jpg/330px-CandiesVendingMachine1952.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vending-machine_jrcj3a?_a=BAMAMiiu0",
     "color": "#788988",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "carding",
@@ -7303,7 +7901,11 @@
     "category": "exploration",
     "description": "Combing raw fibers with toothed implements to align them before spinning into thread or yarn.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Jamieson_wool_Shetland.jpg/330px-Jamieson_wool_Shetland.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carding_crwvqr?_a=BAMAMiiu0",
+    "color": "#2b1b29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "water-turbine",
@@ -7312,7 +7914,11 @@
     "category": "exploration",
     "description": "Turbines using directed water flow to generate rotational power, employed in Roman Empire grain mills.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hydroelectric_Generator.svg/330px-Hydroelectric_Generator.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-turbine_ohl7ij?_a=BAMAMiiu0",
+    "color": "#281d25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chaturanga-proto-chess",
@@ -7321,7 +7927,11 @@
     "category": "exploration",
     "description": "Indian board game with pieces representing infantry, cavalry, elephants, and chariots that evolved into modern chess.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Chaturanga_Chess_Set.jpg/330px-Chaturanga_Chess_Set.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chaturanga-proto-chess_olu2wy?_a=BAMAMiiu0",
+    "color": "#2c1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "roman-dichroic-glass",
@@ -7330,7 +7940,11 @@
     "category": "exploration",
     "description": "Glass containing metal nanoparticles that changes color depending on the light, exemplified by the Lycurgus Cup.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Front_of_4th_century_CE_Roman_Lycurgus_Cup%2C_British_Museum_%281958%2C1202.1%29.jpg/330px-Front_of_4th_century_CE_Roman_Lycurgus_Cup%2C_British_Museum_%281958%2C1202.1%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-dichroic-glass_pmqoi4?_a=BAMAMiiu0",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "simple-suspension-bridge",
@@ -7339,7 +7953,11 @@
     "category": "exploration",
     "description": "Bridges hung from cables or chains spanning gorges and rivers, first built in mountainous regions of Asia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/H%C3%A4ngebr%C3%BCcke_am_Berliner_H%C3%B6henweg_Nr_526%2C_Zillertaler_Alpen_2.JPG/330px-H%C3%A4ngebr%C3%BCcke_am_Berliner_H%C3%B6henweg_Nr_526%2C_Zillertaler_Alpen_2.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/simple-suspension-bridge_ocbflj?_a=BAMAMiiu0",
+    "color": "#412335",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fishing-reel",
@@ -7348,7 +7966,11 @@
     "category": "exploration",
     "description": "Spool mechanism for winding and releasing fishing line, first depicted in Chinese artwork of the period.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Fishing_reel.svg/330px-Fishing_reel.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fishing-reel_q6j65u?_a=BAMAMiiu0",
+    "color": "#241e29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "oil-wells-borehole-drilling",
@@ -7357,7 +7979,11 @@
     "category": "exploration",
     "description": "Wells drilled to depths of 240 meters for natural gas and brine in ancient Sichuan, China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/West_Texas_Pumpjack.JPG/330px-West_Texas_Pumpjack.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oil-wells-borehole-drilling_jl9ypg?_a=BAMAMiiu0",
+    "color": "#522134",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "paddle-wheel-boat",
@@ -7366,7 +7992,11 @@
     "category": "exploration",
     "description": "Boats propelled by rotating paddle wheels mounted on the sides, first developed in China and the Roman Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paddlewheel_aerator.jpg/330px-Paddlewheel_aerator.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paddle-wheel-boat_pl7pib?_a=BAMAMiiu0",
+    "color": "#4e3a30",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "iron-pillar-of-delhi",
@@ -7375,7 +8005,11 @@
     "category": "exploration",
     "description": "A 7-meter rust-resistant iron column in India showcasing advanced Gupta-era metallurgy and corrosion resistance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Iron_Pillar%2C_Delhi%2C_May_2008.jpg/330px-Iron_Pillar%2C_Delhi%2C_May_2008.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-pillar-of-delhi_kccwjf?_a=BAMAMiiu0",
+    "color": "#231f25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "horse-collar",
@@ -7384,7 +8018,11 @@
     "category": "exploration",
     "description": "Padded collar resting on a horse's shoulders, allowing it to pull heavy loads without choking.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Horse_collar_%28AM_615168-1%29.jpg/330px-Horse_collar_%28AM_615168-1%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/horse-collar_qtepav?_a=BAMAMiiu0",
+    "color": "#2d1b20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pointed-arch-bridge",
@@ -7393,7 +8031,11 @@
     "category": "exploration",
     "description": "Bridges using pointed arches that distribute weight more efficiently, allowing greater strength and height.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Worcester_cathedral_010.JPG/330px-Worcester_cathedral_010.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pointed-arch-bridge_avrti0?_a=BAMAMiiu0",
+    "color": "#261f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "incense-clock",
@@ -7402,7 +8044,11 @@
     "category": "exploration",
     "description": "Burning incense of calibrated duration used to measure time, with different scents marking the hours.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/IncenseAlarmClock.JPG/330px-IncenseAlarmClock.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/incense-clock_b6i1fe?_a=BAMAMiiu0",
+    "color": "#232021",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pendentive-dome-hagia-sophia",
@@ -7411,7 +8057,11 @@
     "category": "exploration",
     "description": "Triangular vault sections supporting a circular dome over a square base, perfected in Constantinople's Hagia Sophia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/330px-Hagia_Sophia_%28228968325%29.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pendentive-dome-hagia-sophia_tl3n66?_a=BAMAMiiu0",
+    "color": "#36271d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sulfur-matches",
@@ -7420,7 +8070,11 @@
     "category": "exploration",
     "description": "Sulfur-tipped pine sticks that could be ignited for starting fires, first documented in China during wartime.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Friction_d%27une_allumette.jpg/330px-Friction_d%27une_allumette.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sulfur-matches_ajy8ce?_a=BAMAMiiu0",
+    "color": "#252020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "toilet-paper",
@@ -7429,7 +8083,11 @@
     "category": "exploration",
     "description": "Paper used for personal hygiene, first documented by a Chinese scholar who noted the practice in 589 CE.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Toiletpapier_%28Gobran111%29.jpg/330px-Toiletpapier_%28Gobran111%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toilet-paper_utgdtz?_a=BAMAMiiu0",
+    "color": "#202126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "toothbrush",
@@ -7438,7 +8096,11 @@
     "category": "exploration",
     "description": "Bristle brush for cleaning teeth, originating in Tang Dynasty China using hog hair attached to bone handles.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Toothbrush_20050716_004.jpg/330px-Toothbrush_20050716_004.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toothbrush_mdknxi?_a=BAMAMiiu0",
+    "color": "#1f2129",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "greek-fire",
@@ -7447,7 +8109,11 @@
     "category": "exploration",
     "description": "Byzantine incendiary weapon that burned even on water, its exact composition remains a historical mystery.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Greekfire-madridskylitzes1.jpg/330px-Greekfire-madridskylitzes1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-fire_zwbrhv?_a=BAMAMiiu0",
+    "color": "#2a1d1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "banknote",
@@ -7456,7 +8122,11 @@
     "category": "exploration",
     "description": "Paper currency first issued in Tang Dynasty China, replacing heavy copper coins for large transactions.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Vereinigte_Ostindische_Compagnie_bond_-_Middelburg_-_Amsterdam_-_1622.jpg/330px-Vereinigte_Ostindische_Compagnie_bond_-_Middelburg_-_Amsterdam_-_1622.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/banknote_iyayvl?_a=BAMAMiiu0",
+    "color": "#242020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "porcelain",
@@ -7465,7 +8135,11 @@
     "category": "exploration",
     "description": "High-fired ceramic prized for its strength, whiteness, and translucency, perfected in Tang Dynasty China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/%E6%B1%9D%E7%AA%AF_%E9%9D%92%E7%93%B7%E8%86%BD%E7%93%B6.png/330px-%E6%B1%9D%E7%AA%AF_%E9%9D%92%E7%93%B7%E8%86%BD%E7%93%B6.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/porcelain_npdd7p?_a=BAMAMiiu0",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "playing-cards",
@@ -7474,7 +8148,11 @@
     "category": "exploration",
     "description": "Card games originating in Tang Dynasty China, later spreading to the Islamic world and Europe.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/AcetoFive.JPG/330px-AcetoFive.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/playing-cards_ckyfoj?_a=BAMAMiiu0",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fire-lance",
@@ -7483,7 +8161,11 @@
     "category": "exploration",
     "description": "Gunpowder-filled tube attached to a spear that shot flames and projectiles, the earliest known firearm.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/%E6%A2%A8%E8%8A%B1%E9%8E%97.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fire-lance_ql4z7y?_a=BAMAMiiu0",
+    "color": "#291d20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fireworks",
@@ -7492,7 +8174,11 @@
     "category": "exploration",
     "description": "Gunpowder packed in bamboo tubes and ignited for spectacle, originating in Song Dynasty China.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/New_Year%27s_Eve_on_Sydney_Harbour.jpg/330px-New_Year%27s_Eve_on_Sydney_Harbour.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fireworks_mdibne?_a=BAMAMiiu0",
+    "color": "#251f23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "endless-chain-drive",
@@ -7501,7 +8187,11 @@
     "category": "exploration",
     "description": "Su Song's chain drive mechanism transmitted power in his astronomical clock tower, a precursor to modern chain drives.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Chain.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/endless-chain-drive_uehlc4?_a=BAMAMiiu0",
+    "color": "#202125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "calico",
@@ -7510,7 +8200,11 @@
     "category": "exploration",
     "description": "Plain-woven cotton fabric named after Calicut, India, valued for its printability and affordability.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Calico_Sample.JPG/330px-Calico_Sample.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/calico_mzv45o?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rocket",
@@ -7519,7 +8213,11 @@
     "category": "exploration",
     "description": "Gunpowder-propelled projectiles used in Chinese warfare, later spreading to the Middle East and Europe.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Soyuz_TMA-9_launch.jpg/330px-Soyuz_TMA-9_launch.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rocket_hp3qem?_a=BAMAMiiu0",
+    "color": "#1f2223",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "buttons-with-buttonholes",
@@ -7528,7 +8226,11 @@
     "category": "exploration",
     "description": "Fastening system replacing pins and brooches for securing clothing, emerging in medieval Germany.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Reserveknapper_til_Hans%27_uniform.jpg/330px-Reserveknapper_til_Hans%27_uniform.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/buttons-with-buttonholes_cnr9dq?_a=BAMAMiiu0",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "explosive-bomb",
@@ -7537,7 +8239,11 @@
     "category": "exploration",
     "description": "Cast-iron shells filled with gunpowder used in Chinese and Mongol warfare as devastating siege weapons.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Saarlouis_Bombe.jpg/330px-Saarlouis_Bombe.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/explosive-bomb_a2nd0t?_a=BAMAMiiu0",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hand-cannon",
@@ -7546,7 +8252,11 @@
     "category": "exploration",
     "description": "Handheld metal tube firing projectiles with gunpowder, bridging the gap between fire lances and true guns.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dictionnaire_raisonn%C3%A9_du_mobilier_fran%C3%A7ais_de_l%E2%80%99%C3%A9poque_carlovingienne_%C3%A0_la_Renaissance%2C_tome_6_-_357.png/330px-Dictionnaire_raisonn%C3%A9_du_mobilier_fran%C3%A7ais_de_l%E2%80%99%C3%A9poque_carlovingienne_%C3%A0_la_Renaissance%2C_tome_6_-_357.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hand-cannon_p9dezu?_a=BAMAMiiu0",
+    "color": "#35312b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sunglasses-snow-goggles",
@@ -7555,7 +8265,11 @@
     "category": "exploration",
     "description": "Inuit snow goggles carved from bone or antler with narrow slits to reduce blinding snow glare.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sunglasses_pic17.jpg/330px-Sunglasses_pic17.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sunglasses-snow-goggles_oygvxf?_a=BAMAMiiu0",
+    "color": "#232022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "double-entry-bookkeeping",
@@ -7564,7 +8278,11 @@
     "category": "exploration",
     "description": "Accounting method recording every transaction as both a debit and credit, refined by medieval Italian merchants.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Pacioli.jpg/330px-Pacioli.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/double-entry-bookkeeping_clexap?_a=BAMAMiiu0",
+    "color": "#c5a97a",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "worm-gear-cotton-gin",
@@ -7573,7 +8291,11 @@
     "category": "exploration",
     "description": "Roller device using a worm gear to separate cotton fibers from seeds, developed in India.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Engrenage_%C3%A0_vis_creuse_CNAM-IMG_0602.jpg/330px-Engrenage_%C3%A0_vis_creuse_CNAM-IMG_0602.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/worm-gear-cotton-gin_fzctfb?_a=BAMAMiiu0",
+    "color": "#212026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "land-mine",
@@ -7582,7 +8304,11 @@
     "category": "exploration",
     "description": "Buried explosive devices triggered by enemy movement, first used by the Song Dynasty against Mongol invaders.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mines_501556_fh000026.jpg/330px-Mines_501556_fh000026.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/land-mine_ukjkdn?_a=BAMAMiiu0",
+    "color": "#22211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "multistage-rocket",
@@ -7591,7 +8317,11 @@
     "category": "exploration",
     "description": "Rockets with sequential stages that ignite in succession for extended range, developed in medieval China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Black_Brant.jpg/330px-Black_Brant.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/multistage-rocket_hpfq1w?_a=BAMAMiiu0",
+    "color": "#22211b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "painting-canvas",
@@ -7600,7 +8330,11 @@
     "category": "exploration",
     "description": "Stretched fabric replacing wood panels as a portable, lightweight surface for painting in medieval Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sj%C3%B6manss%C3%A4ck_-_1991.jpg/330px-Sj%C3%B6manss%C3%A4ck_-_1991.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/painting-canvas_uuglli?_a=BAMAMiiu0",
+    "color": "#b1ada4",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "jacobs-staff",
@@ -7609,7 +8343,11 @@
     "category": "exploration",
     "description": "Cross-staff instrument for measuring angles between celestial bodies, used in navigation and astronomy.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Bastone_di_Giacobbe_inv_3167_IF_46850.jpg/330px-Bastone_di_Giacobbe_inv_3167_IF_46850.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jacobs-staff_jdxeg5?_a=BAMAMiiu0",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "naval-mine",
@@ -7618,9 +8356,11 @@
     "category": "exploration",
     "description": "Floating explosive devices deployed in waterways to damage or destroy enemy ships in naval warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Mina_morska_typu_M_1908-39.jpg/330px-Mina_morska_typu_M_1908-39.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/naval-mine_qcbdd9?_a=BAMAMiiu0",
     "color": "#40443d",
-    "text_color": "light"
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "handgun-first-use",
@@ -7629,7 +8369,11 @@
     "category": "exploration",
     "description": "First documented use of handheld firearms in European battle, recorded at the Battle of Perugia in Italy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Handgun_collection.JPG/330px-Handgun_collection.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/handgun-first-use_hi0fak?_a=BAMAMiiu0",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "coil-spring",
@@ -7638,7 +8382,11 @@
     "category": "exploration",
     "description": "Wound metal wire that stores and releases mechanical energy, enabling portable clocks and door locks.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ressort_de_traction_%C3%A0_spires_jointives.jpg/330px-Ressort_de_traction_%C3%A0_spires_jointives.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coil-spring_pjqvt2?_a=BAMAMiiu0",
+    "color": "#3b2818",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mainspring",
@@ -7647,7 +8395,11 @@
     "category": "exploration",
     "description": "Coiled flat spring that stores energy to power portable clocks and watches, replacing hanging weights.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mainspring_Chinese_uncoiled.jpg/330px-Mainspring_Chinese_uncoiled.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mainspring_ktupx6?_a=BAMAMiiu0",
+    "color": "#261f21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "brace-drill",
@@ -7656,7 +8408,11 @@
     "category": "exploration",
     "description": "U-shaped hand tool for drilling holes, the first practical rotary drill used widely in woodworking.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bohrwinde_und_Schraubendreherklinge.jpg/330px-Bohrwinde_und_Schraubendreherklinge.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brace-drill_eyogaz?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "arquebus",
@@ -7665,7 +8421,11 @@
     "category": "exploration",
     "description": "Portable matchlock firearm that transformed European infantry warfare in the 15th century.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Antique_Japanese_%28samurai%29_tanegashima_rack.jpg/330px-Antique_Japanese_%28samurai%29_tanegashima_rack.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arquebus_s645pd?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mariners-astrolabe",
@@ -7674,7 +8434,11 @@
     "category": "exploration",
     "description": "Simplified astrolabe designed for use at sea, allowing navigators to determine latitude.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Lagos44.jpg/330px-Lagos44.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mariners-astrolabe_d5klgf?_a=BAMAMiiu0",
+    "color": "#291d21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chintz-printed-clothing",
@@ -7683,7 +8447,11 @@
     "category": "exploration",
     "description": "Brightly printed cotton fabric originating in India, hugely popular across Europe by the 17th century.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jacket_and_shawl_in_chintz%2C_skirt_in_glazed_printed_cotton%2C_1770-1800._MoMu_-_Fashion_Museum_Province_of_Antwerp%2C_www.momu.be._Photo_by_Hugo_Maertens%2C_Bruges..jpg/330px-thumbnail.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chintz-printed-clothing_gccjsh?_a=BAMAMiiu0",
+    "color": "#7b4a2e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hookah",
@@ -7692,7 +8460,11 @@
     "category": "exploration",
     "description": "Water pipe that filters smoke through a water basin before inhalation, originating in India.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Rajput_%28Jodhpur%29_%288411728143%29.jpg/330px-Rajput_%28Jodhpur%29_%288411728143%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hookah_gcceq5?_a=BAMAMiiu0",
+    "color": "#21211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rifling-in-firearms",
@@ -7701,7 +8473,11 @@
     "category": "exploration",
     "description": "Spiral grooves cut inside gun barrels to spin projectiles, dramatically improving accuracy.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/105mm_tank_gun_Rifling.jpg/330px-105mm_tank_gun_Rifling.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rifling-in-firearms_xq5edv?_a=BAMAMiiu0",
+    "color": "#1b2031",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "floating-dry-dock",
@@ -7710,7 +8486,11 @@
     "category": "exploration",
     "description": "Buoyant platform that submerges to receive ships, then rises to expose the hull for repair.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/USS_Greeneville_%28SSN_772%29_-_dry_dock_Pearl_Harbor_%281%29.jpg/330px-USS_Greeneville_%28SSN_772%29_-_dry_dock_Pearl_Harbor_%281%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/floating-dry-dock_cbmubn?_a=BAMAMiiu0",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "stocking-frame",
@@ -7719,7 +8499,11 @@
     "category": "exploration",
     "description": "William Lee's mechanical knitting machine for manufacturing stockings, an early textile innovation.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Stocking_Frame.jpg/330px-Stocking_Frame.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stocking-frame_bz7i86?_a=BAMAMiiu0",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "newspaper-relation",
@@ -7728,7 +8512,11 @@
     "category": "exploration",
     "description": "The Relation, published in Strasbourg, was the first regularly printed newspaper in history.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/NYTimes-Page1-11-11-1918.jpg/330px-NYTimes-Page1-11-11-1918.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newspaper-relation_w8voo2?_a=BAMAMiiu0",
+    "color": "#2a1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "slide-rule",
@@ -7737,7 +8525,11 @@
     "category": "exploration",
     "description": "Logarithmic calculating device used by engineers and scientists for over three centuries.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Sliderule.PickettN902T.agr.jpg/330px-Sliderule.PickettN902T.agr.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/slide-rule_qulcom?_a=BAMAMiiu0",
+    "color": "#281e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "flintlock",
@@ -7746,7 +8538,11 @@
     "category": "exploration",
     "description": "Firearm ignition mechanism using a flint striking steel to create sparks, standard for two centuries.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Musee-historique-lausanne-img_0086.jpg/330px-Musee-historique-lausanne-img_0086.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flintlock_jotiqy?_a=BAMAMiiu0",
+    "color": "#281f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mechanical-calculator-pascaline",
@@ -7755,7 +8551,11 @@
     "category": "exploration",
     "description": "Blaise Pascal's gear-based adding machine, one of the earliest mechanical calculators.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Mechanical_calculators_Keyboards.png/330px-Mechanical_calculators_Keyboards.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mechanical-calculator-pascaline_g7muzp?_a=BAMAMiiu0",
+    "color": "#2a1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vacuum-pump",
@@ -7764,7 +8564,11 @@
     "category": "exploration",
     "description": "Otto von Guericke's device for removing air from a sealed container, proving the existence of vacuum.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Roots_blower_-_2_lobes.svg/330px-Roots_blower_-_2_lobes.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vacuum-pump_rijeer?_a=BAMAMiiu0",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "reflecting-telescope",
@@ -7773,7 +8577,11 @@
     "category": "exploration",
     "description": "Isaac Newton's telescope design using curved mirrors instead of lenses to focus light.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/SOFIA_2.5M_Primary_Mirror.jpg/330px-SOFIA_2.5M_Primary_Mirror.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reflecting-telescope_fccymn?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pressure-cooker",
@@ -7782,7 +8590,11 @@
     "category": "exploration",
     "description": "Denis Papin's sealed vessel that cooks food under high steam pressure, reducing cooking time.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Pressure_cooker.jpg/330px-Pressure_cooker.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pressure-cooker_bqgrsx?_a=BAMAMiiu0",
+    "color": "#2c1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "steam-powered-water-pump",
@@ -7791,7 +8603,11 @@
     "category": "exploration",
     "description": "Thomas Savery's steam pump for draining water from mines, an early application of steam power.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Thomas_Savery.gif/330px-Thomas_Savery.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steam-powered-water-pump_l7ln1u?_a=BAMAMiiu0",
+    "color": "#261f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mechanized-cotton-spinning",
