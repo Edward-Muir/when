@@ -106,7 +106,11 @@ def kmeans_pp_init(data: np.ndarray, k: int, rng: np.random.Generator) -> np.nda
         dists = np.min(
             np.sum((data[:, None, :] - centers[None, :i, :]) ** 2, axis=2), axis=1
         )
-        probs = dists / dists.sum()
+        total = dists.sum()
+        if total == 0 or not np.isfinite(total):
+            centers[i] = data[rng.integers(n)]
+            continue
+        probs = dists / total
         centers[i] = data[rng.choice(n, p=probs)]
     return centers
 
