@@ -9,6 +9,7 @@ import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
+import { getImageUrl } from '../utils/cloudinaryImage';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -85,7 +86,11 @@ function EventImage({ event }: { event: HistoricalEvent }) {
   return (
     <div className="relative overflow-hidden" style={{ height: `${imageHeight}px` }}>
       {event.image_url ? (
-        <img src={event.image_url} alt="" className="w-full h-full object-cover" />
+        <img
+          src={getImageUrl(event.image_url, 'detail')}
+          alt=""
+          className="w-full h-full object-cover"
+        />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-border/30">
           <CategoryIcon category={event.category} className="text-text-muted w-16 h-16" />

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
+import { getImageUrl } from '../utils/cloudinaryImage';
 
 export type CardSize = 'normal' | 'large' | 'landscape';
 
@@ -63,7 +64,7 @@ const Card: React.FC<CardProps> = ({
         <div className="w-[40%] h-full relative overflow-hidden">
           {hasImage ? (
             <img
-              src={event.image_url}
+              src={getImageUrl(event.image_url, 'thumbnail')}
               alt=""
               loading="lazy"
               onError={() => setImageError(true)}
@@ -111,7 +112,7 @@ const Card: React.FC<CardProps> = ({
       <div className="flex-1 relative overflow-hidden">
         {hasImage ? (
           <img
-            src={event.image_url}
+            src={getImageUrl(event.image_url, 'thumbnail')}
             alt=""
             loading="lazy"
             onError={() => setImageError(true)}

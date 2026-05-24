@@ -5,6 +5,7 @@ import { formatYear } from '../../utils/gameLogic';
 import CategoryIcon from '../CategoryIcon';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
+import { getImageUrl } from '../../utils/cloudinaryImage';
 
 // Export ripple duration for Timeline.tsx to use
 export const RIPPLE_DURATION_MS = 2000;
@@ -39,7 +40,7 @@ const EventImage: React.FC<{
   if (hasImage) {
     return (
       <img
-        src={imageUrl}
+        src={getImageUrl(imageUrl, 'thumbnail')}
         alt=""
         loading="lazy"
         onError={() => setImageError(true)}

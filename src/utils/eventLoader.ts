@@ -1,5 +1,6 @@
 import { HistoricalEvent, EventManifest, Difficulty, Category, Era } from '../types';
 import { ERA_DEFINITIONS } from './eras';
+import { isCloudinaryImage } from './cloudinaryImage';
 
 /**
  * Loads all historical events from JSON files in the public/events directory.
@@ -35,7 +36,11 @@ export async function loadAllEvents(): Promise<HistoricalEvent[]> {
 
     // Deduplicate by name
     const deduplicatedEvents = deduplicateEvents(allEvents);
-    return deduplicatedEvents;
+
+    // Only show events that have a custom (Cloudinary) image. Events still backed
+    // by legacy Wikimedia thumbnails or no image stay in the JSON but are hidden
+    // from play until a custom image is added.
+    return deduplicatedEvents.filter((event) => isCloudinaryImage(event.image_url));
   } catch (error) {
     console.error('Failed to load events:', error);
     return [];
