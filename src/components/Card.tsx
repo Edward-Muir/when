@@ -3,6 +3,7 @@ import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
+import { useImagePreload } from '../hooks/useImagePreload';
 
 export type CardSize = 'normal' | 'large' | 'landscape';
 
@@ -22,6 +23,9 @@ const Card: React.FC<CardProps> = ({
   size = 'normal',
 }) => {
   const [imageError, setImageError] = useState(false);
+
+  // Warm the full-size detail image so the description/result popup opens instantly.
+  useImagePreload(getImageUrl(event.image_url, 'detail'));
 
   const rotationStyle = {
     transform: `rotate(${rotation}deg)`,

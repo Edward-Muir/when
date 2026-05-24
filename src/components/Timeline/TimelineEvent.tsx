@@ -6,6 +6,7 @@ import CategoryIcon from '../CategoryIcon';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 import { getImageUrl } from '../../utils/cloudinaryImage';
+import { useImagePreload } from '../../hooks/useImagePreload';
 
 // Export ripple duration for Timeline.tsx to use
 export const RIPPLE_DURATION_MS = 2000;
@@ -216,6 +217,10 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   rippleAmplitudeMultiplier,
 }) => {
   const shouldReduceMotion = useReducedMotion();
+
+  // Warm the full-size detail image so tapping this event opens its popup instantly.
+  useImagePreload(getImageUrl(event.image_url, 'detail'));
+
   const { cardAnimationClass, isSuccessAnimation, isErrorAnimation, shouldPopYear, isMovingPhase } =
     useEventAnimations(
       isAnimating,

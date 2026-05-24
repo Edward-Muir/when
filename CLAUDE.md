@@ -36,3 +36,4 @@ npm run release              # Bump version (auto-detect from commits)
 - Touch targets: min 44x44px, 8px spacing between targets
 - Viewport: `--vh` CSS variable in App.tsx for iOS Safari, `dvh` units in Tailwind
 - Events: JSON files in `public/events/`, 6 categories, loaded via `manifest.json`
+- Event `friendly_name` is capped at 35 chars (`MAX_FRIENDLY_NAME_LENGTH`) so it fits the card without an ellipsis; enforced by `src/utils/eventNameLength.test.ts`

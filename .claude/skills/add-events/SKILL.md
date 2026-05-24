@@ -132,6 +132,9 @@ npm run build            # Verify JSON is valid
 - Title Case: "Battle of Thermopylae"
 - Can include verbs: "Completed", "Begins", "Founded", "Signed"
 - Keep concise: 2-6 words typical
+- **Hard limit: 35 characters.** Longer titles get truncated with an ellipsis on the
+  portrait event card (`src/components/Card.tsx`, `line-clamp-2`). Enforced by
+  `src/utils/eventNameLength.test.ts` (`MAX_FRIENDLY_NAME_LENGTH`).
 
 ### `description` conventions
 
