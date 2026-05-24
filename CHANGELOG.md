@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.10](https://github.com/Edward-Muir/when/compare/v0.10.9...v0.10.10) (2026-05-24)
+
+
+### Bug Fixes
+
+* Prevent the view timeline page from loading all deatiled images at once ([6a8cf28](https://github.com/Edward-Muir/when/commit/6a8cf28ef1c4ac84ce47460cc205ef16dc5a87aa))
+
 ## [0.10.9](https://github.com/Edward-Muir/when/compare/v0.10.8...v0.10.9) (2026-05-24)
 
 
