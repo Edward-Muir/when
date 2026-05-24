@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 20:23:37 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 20:59:32 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.10.8</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.10.8</guid>
+      <pubDate>Sun, 24 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Lower resolution of thumbnail images for faster loading (<a href="https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7">4bc9a24</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.10.7</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.9.1</guid>
       <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix leaderboard message (<a href="https://github.com/Edward-Muir/when/commit/46039e7c6c1d9541a97c9e161af0bee27eda9690">46039e7</a>)</li> <li>Sync ios version with app version (<a href="https://github.com/Edward-Muir/when/commit/6a74a1c2fcff6b550b4b5d6f1c5786a4f1ecee85">6a74a1c</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.9.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.9.0</guid>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add terms and privacy policy for App submission (<a href="https://github.com/Edward-Muir/when/commit/eb40e75e486ad2168711672be44ac9b994867308">eb40e75</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

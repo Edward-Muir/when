@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.8](https://github.com/Edward-Muir/when/compare/v0.10.7...v0.10.8) (2026-05-24)
+
+
+### Bug Fixes
+
+* Lower resolution of thumbnail images for faster loading ([4bc9a24](https://github.com/Edward-Muir/when/commit/4bc9a24d667a3d27aed88cd84e12e041027523f7))
+
 ## [0.10.7](https://github.com/Edward-Muir/when/compare/v0.10.6...v0.10.7) (2026-05-24)
 
 
