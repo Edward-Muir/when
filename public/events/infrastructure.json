@@ -2516,7 +2516,7 @@
     "image_height": 440,
     "wikipedia_views": 27128,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jewish_Museum_Berlin",
-    "color": "#21211e",
+    "color": "#182130",
     "text_color": "light"
   },
   {
@@ -3036,7 +3036,11 @@
     "category": "infrastructure",
     "description": "The Land of Punt traded gold, myrrh, and incense with ancient Egypt, as recorded in Old Kingdom texts.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Egypt_1450_BC.svg/330px-Egypt_1450_BC.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/punt-trade-egypt_sqxgag?_a=BAMAMiiu0",
+    "color": "#d3a461",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "teotihuacan-pyramid-founded",
@@ -3045,7 +3049,11 @@
     "category": "infrastructure",
     "description": "Construction began on the massive Pyramid of the Sun at Teotihuacan, one of the largest structures in the ancient Americas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2020-02-11_Teotihuacan_la_Avenida_de_los_Muertos_y_la_Pir%C3%A1mide_del_Sol.jpg/330px-2020-02-11_Teotihuacan_la_Avenida_de_los_Muertos_y_la_Pir%C3%A1mide_del_Sol.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/teotihuacan-pyramid-founded_ieb4ah?_a=BAMAMiiu0",
+    "color": "#4e261e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-aqueduct",
@@ -3054,7 +3062,11 @@
     "category": "infrastructure",
     "description": "The Aqua Claudia aqueduct was completed under Emperor Claudius, carrying water 69 km into Rome.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Aqua_claudia_planlatium_2.png/330px-Aqua_claudia_planlatium_2.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-aqueduct_gera5a?_a=BAMAMiiu0",
+    "color": "#4a372e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "colosseum-architecture-ancient",
@@ -3063,7 +3075,11 @@
     "category": "infrastructure",
     "description": "Emperor Vespasian began construction of the Flavian Amphitheatre, the largest amphitheater ever built.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/colosseum-architecture-ancient_kd2qyx?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vespasian-colosseum-begun",
@@ -3090,7 +3106,11 @@
     "category": "infrastructure",
     "description": "The Colosseum was completed under Emperor Titus, holding an estimated 50,000 spectators.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/colosseum-rome_tpv6yu?_a=BAMAMiiu0",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "silk-road-major-routes",
@@ -3099,7 +3119,11 @@
     "category": "infrastructure",
     "description": "Overland trade networks connecting China to Rome reached peak activity, exchanging silk, spices, and ideas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-road-major-routes_epqju3?_a=BAMAMiiu0",
+    "color": "#845046",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "nabataean-trade-routes",
@@ -3108,7 +3132,11 @@
     "category": "infrastructure",
     "description": "The Nabataean Kingdom dominated incense trade routes connecting Arabia to the Mediterranean world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Roman_Empire_125.png/330px-Roman_Empire_125.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nabataean-trade-routes_kl9mkd?_a=BAMAMiiu0",
+    "color": "#52241b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "nabataean-petra-city",
@@ -3117,7 +3145,11 @@
     "category": "infrastructure",
     "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Al_Deir_Petra.JPG/330px-Al_Deir_Petra.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nabataean-petra-city_zhcnsw?_a=BAMAMiiu0",
+    "color": "#502116",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bactria-silk-road",
@@ -3153,7 +3185,11 @@
     "category": "infrastructure",
     "description": "Emperor Hadrian rebuilt the Pantheon with its iconic unreinforced concrete dome, still the world's largest.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/330px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pantheon-rome-built_ospqdq?_a=BAMAMiiu0",
+    "color": "#3d3534",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "moche-mound-construction",
@@ -3162,7 +3198,11 @@
     "category": "infrastructure",
     "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Huaca_Sol_lou.jpg/330px-Huaca_Sol_lou.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moche-mound-construction_ibz0ov?_a=BAMAMiiu0",
+    "color": "#5b3029",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "roman-roads-network",
@@ -3171,7 +3211,11 @@
     "category": "infrastructure",
     "description": "The Roman road network reached its greatest extent, spanning over 400,000 km across the empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Roads_in_the_Roman_Empire.jpg/330px-Roads_in_the_Roman_Empire.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-roads-network_bfjvut?_a=BAMAMiiu0",
+    "color": "#4a413d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hopewell-culture",
@@ -3180,7 +3224,11 @@
     "category": "infrastructure",
     "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Hopewell_Exchange_Network_HRoe_2010.jpg/330px-Hopewell_Exchange_Network_HRoe_2010.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hopewell-culture_dof3zr?_a=BAMAMiiu0",
+    "color": "#281f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "damascus-steel-pattern",
@@ -3189,7 +3237,11 @@
     "category": "infrastructure",
     "description": "Pattern-welded steel with distinctive wavy patterns was developed in Persia and traded across the ancient world.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Watered_pattern_on_sword_blade1.Iran.JPG/330px-Watered_pattern_on_sword_blade1.Iran.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/damascus-steel-pattern_amkqqp?_a=BAMAMiiu0",
+    "color": "#2a1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "roman-roads",
@@ -3198,11 +3250,11 @@
     "category": "infrastructure",
     "description": "The Via Appia, Rome's first major highway, was built by censor Appius Claudius Caecus from Rome to Capua.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Roads_in_the_Roman_Empire.jpg/330px-Roads_in_the_Roman_Empire.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-roads_tqorsn?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 233,
-    "color": "#adb193",
-    "text_color": "dark"
+    "image_height": 440,
+    "color": "#2d1c18",
+    "text_color": "light"
   },
   {
     "name": "samarkand-founded",
@@ -3211,7 +3263,11 @@
     "category": "infrastructure",
     "description": "Ancient Maracanda was founded in the Zeravshan valley, becoming one of Central Asia's oldest continuously inhabited cities.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/RegistanSquare_Samarkand.jpg/330px-RegistanSquare_Samarkand.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-founded_czsxj8?_a=BAMAMiiu0",
+    "color": "#30262b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sogdian-traders",
@@ -3220,7 +3276,11 @@
     "category": "infrastructure",
     "description": "Sogdian merchants from Central Asia became the dominant middlemen of Silk Road trade between China and the West.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Map_of_Sogdia.png/330px-Map_of_Sogdia.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sogdian-traders_rijho7?_a=BAMAMiiu0",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "postal-system-persia",
@@ -3229,7 +3289,11 @@
     "category": "infrastructure",
     "description": "The Achaemenid Empire established the Angareion relay postal system under Darius I across the Royal Road.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Achaemenid_Empire_500_BCE.jpg/330px-Achaemenid_Empire_500_BCE.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/postal-system-persia_buqsgy?_a=BAMAMiiu0",
+    "color": "#251f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "crucible-steel-wootz",
@@ -3255,7 +3319,11 @@
     "category": "infrastructure",
     "description": "The Tiwanaku civilization built monumental stone architecture near Lake Titicaca in the Bolivian highlands.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/PUERTA_DEL_SOL_TIWANAKU.jpg/330px-PUERTA_DEL_SOL_TIWANAKU.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiwanaku-monumental-center_ygmdhh?_a=BAMAMiiu0",
+    "color": "#432c23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "nazca-puquios-aqueducts",
@@ -3273,7 +3341,11 @@
     "category": "infrastructure",
     "description": "Engineer Eupalinos built a 1,036-meter tunnel through a mountain on Samos, dug from both ends simultaneously.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Eupalinian_aqueduct.JPG/330px-Eupalinian_aqueduct.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tunnel-engineering_abgd7n?_a=BAMAMiiu0",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "construction-hagia-sophia",
@@ -3304,7 +3376,11 @@
     "category": "infrastructure",
     "description": "Byzantine church architecture reached its zenith under Justinian I with domed basilicas across the empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/330px-Hagia_Sophia_Mars_2013.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/byzantine-church-architecture_cji6iq?_a=BAMAMiiu0",
+    "color": "#35445a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hanging-gardens-babylon",
@@ -3321,7 +3397,12 @@
     "year": 650,
     "category": "infrastructure",
     "description": "Rock-cut temples at Ellora in India were carved over centuries, featuring Hindu, Buddhist, and Jain monuments.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#392426",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ellora-caves_uazoqn?_a=BAMAMiiu0"
   },
   {
     "name": "first-sewer-system",
@@ -3366,7 +3447,11 @@
     "category": "infrastructure",
     "description": "The Pallava dynasty built the Shore Temple at Mahabalipuram, one of India's earliest structural stone temples.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg/330px-Shore_Temple_-Mamallapuram_-Tamil_Nadu_-N-TN-C55.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pallava-shore-temples_daqjo2?_a=BAMAMiiu0",
+    "color": "#4e281d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "great-wall-china",
@@ -3375,9 +3460,11 @@
     "category": "infrastructure",
     "description": "Qin Shi Huang began connecting existing walls into a unified defensive barrier across northern China.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
-    "color": "#ee1c24",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-wall-china_xtcx8z?_a=BAMAMiiu0",
+    "color": "#232025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tikal-great-plaza",
@@ -3395,7 +3482,11 @@
     "category": "infrastructure",
     "description": "The Tang Dynasty extended Chinese trade influence across Central Asia with posts along the Silk Road.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tang_outline_map%2C_661.svg/330px-Tang_outline_map%2C_661.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tang-trade-networks_axdmt4?_a=BAMAMiiu0",
+    "color": "#362f33",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bulguksa-temple",
@@ -3404,7 +3495,11 @@
     "category": "infrastructure",
     "description": "Bulguksa Temple was built during the Silla Kingdom in Gyeongju, Korea, as a masterpiece of Buddhist architecture.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg/330px-Lotus_Flower_Bridge_and_Seven_Treasure_Bridge_at_Bulguksa_in_Gyeongju%2C_Korea.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bulguksa-temple_qflyi2?_a=BAMAMiiu0",
+    "color": "#50433b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bukhara-trading-city",
@@ -3442,7 +3537,11 @@
     "category": "infrastructure",
     "description": "The Sailendra dynasty built Borobudur in Java, the world's largest Buddhist temple with over 500 Buddha statues.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Pradaksina.jpg/330px-Pradaksina.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/borobudur-construction_ujyy6n?_a=BAMAMiiu0",
+    "color": "#261e26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "woodblock-printing-refinement",
@@ -3451,7 +3550,11 @@
     "category": "infrastructure",
     "description": "Chinese woodblock printing was refined during the Tang Dynasty, enabling mass production of texts and images.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Jingangjing.jpg/330px-Jingangjing.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woodblock-printing-refinement_leqhhp?_a=BAMAMiiu0",
+    "color": "#3f2e2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "huari-road-system",
@@ -3460,7 +3563,11 @@
     "category": "infrastructure",
     "description": "The Wari Empire built an extensive road network across the Andes, prefiguring the later Inca road system.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Map_of_Wari_and_Tiawaku.svg/330px-Map_of_Wari_and_Tiawaku.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huari-road-system_dujtyk?_a=BAMAMiiu0",
+    "color": "#442f29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "jenne-city-foundation",
@@ -3487,7 +3594,11 @@
     "category": "infrastructure",
     "description": "The Maya-Toltec city of Chichen Itza reached its zenith, featuring the iconic El Castillo pyramid.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/330px-Chichen_Itza_3.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chichen-itza-peak_uhbfee?_a=BAMAMiiu0",
+    "color": "#b0804e",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "toltec-teotihuacan-influence",
@@ -3496,7 +3607,11 @@
     "category": "infrastructure",
     "description": "The Toltec civilization built pyramid complexes at Tula, influencing Mesoamerican architecture for centuries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Toltecas.png/330px-Toltecas.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toltec-teotihuacan-influence_wleclp?_a=BAMAMiiu0",
+    "color": "#c7aa67",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pueblo-bonito",
@@ -3505,7 +3620,11 @@
     "category": "infrastructure",
     "description": "Ancestral Puebloans built Pueblo Bonito in Chaco Canyon, a massive multi-story structure with over 600 rooms.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pueblo_Bonito_Aerial.JPG/330px-Pueblo_Bonito_Aerial.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pueblo-bonito_y6lhg4?_a=BAMAMiiu0",
+    "color": "#633e31",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "canal-system",
@@ -3514,7 +3633,11 @@
     "category": "infrastructure",
     "description": "Venice developed its canal system as the city grew into a major maritime trading power in the Adriatic.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Venezia_aerial_view.jpg/330px-Venezia_aerial_view.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canal-system_rmitqe?_a=BAMAMiiu0",
+    "color": "#20221f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "amber-trade-routes",
@@ -3523,7 +3646,11 @@
     "category": "infrastructure",
     "description": "Baltic amber was traded along routes stretching to the Mediterranean during the Bronze Age.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Baltis_amber_road.jpg/330px-Baltis_amber_road.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amber-trade-routes_eh4obv?_a=BAMAMiiu0",
+    "color": "#7c6f62",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lapis-lazuli-trade",
@@ -3532,7 +3659,11 @@
     "category": "infrastructure",
     "description": "Lapis lazuli from Afghan mines was traded across Mesopotamia and Egypt, prized for its deep blue color.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Lapis-lazuli_hg.jpg/330px-Lapis-lazuli_hg.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lapis-lazuli-trade_e4nglg?_a=BAMAMiiu0",
+    "color": "#202127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "incense-trade-frankincense",
@@ -3541,7 +3672,11 @@
     "category": "infrastructure",
     "description": "Arabian frankincense was traded along overland routes to Egypt and Mesopotamia for religious ceremonies.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Mer_rouge1b.jpg/330px-Mer_rouge1b.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/incense-trade-frankincense_xe7otp?_a=BAMAMiiu0",
+    "color": "#281f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "caravan-routes-central-asia",
@@ -3550,7 +3685,11 @@
     "category": "infrastructure",
     "description": "Organized caravan routes linked Central Asian oases, forming the precursors to the Silk Road trade network.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caravan-routes-central-asia_d7ccfe?_a=BAMAMiiu0",
+    "color": "#622b17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "escapement-mechanism",
@@ -3568,7 +3707,11 @@
     "category": "infrastructure",
     "description": "West and Central African communities developed sophisticated talking drum communication systems across dense forests.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/TalkingDrum.jpg/330px-TalkingDrum.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/drum-signal-codes_nru83o?_a=BAMAMiiu0",
+    "color": "#212121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "arch-mechanics-understanding",
@@ -3604,7 +3747,11 @@
     "category": "infrastructure",
     "description": "A wave of Romanesque cathedral construction swept Western Europe following the millennium.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg/330px-Wells_Cathedral_West_Front_Exterior%2C_UK_-_Diliff.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cathedral-construction-boom_oansq4?_a=BAMAMiiu0",
+    "color": "#281f18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tanjore-temple",
@@ -3613,7 +3760,11 @@
     "category": "infrastructure",
     "description": "The Brihadeeswarar Temple at Thanjavur was completed under Chola king Rajaraja I, with a 66-meter tower.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg/330px-Brihadisvara_Temple_during_Maha_Shivaratri-WUS03611_%28edit%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tanjore-temple_bshbaw?_a=BAMAMiiu0",
+    "color": "#202222",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "printing-movable-china",
@@ -3631,7 +3782,11 @@
     "category": "infrastructure",
     "description": "Bi Sheng's movable type system used clay characters; metal type followed in Korea around 1230.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/330px-Metal_movable_type.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/metal-type-development_xrxuo9?_a=BAMAMiiu0",
+    "color": "#1b2322",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chola-maritime-network",
@@ -3640,7 +3795,11 @@
     "category": "infrastructure",
     "description": "The Chola dynasty projected naval power across the Indian Ocean, raiding Southeast Asian ports.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Chola_Empire_Map_%281%29.svg/330px-Chola_Empire_Map_%281%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chola-maritime-network_l4nczf?_a=BAMAMiiu0",
+    "color": "#5e4f3d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "anasazi-cliff-dwellings",
@@ -3649,7 +3808,11 @@
     "category": "infrastructure",
     "description": "Ancestral Puebloans built elaborate cliff dwellings in canyon alcoves across the American Southwest.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Hohokam_cliff_dwelling_%28Montezuma_Castle%29%2C_Arizona.jpg/330px-Hohokam_cliff_dwelling_%28Montezuma_Castle%29%2C_Arizona.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anasazi-cliff-dwellings_wgepjx?_a=BAMAMiiu0",
+    "color": "#251f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "romanesque-development",
@@ -3667,7 +3830,11 @@
     "category": "infrastructure",
     "description": "The Romanesque style emerged in Western Europe with massive stone churches and decorative arcading.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/LessayAbbaye3.JPG/330px-LessayAbbaye3.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romanesque-architecture-style_tvvfgh?_a=BAMAMiiu0",
+    "color": "#3d4140",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mississippian-cahokia-settlement",
@@ -3676,7 +3843,11 @@
     "category": "infrastructure",
     "description": "Cahokia near modern St. Louis became the largest pre-Columbian settlement north of Mexico.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/330px-Monks_Mound_-_Summer_2024.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mississippian-cahokia-settlement_opngps?_a=BAMAMiiu0",
+    "color": "#8a8c6f",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "shwesandaw-pagoda",
@@ -3685,7 +3856,11 @@
     "category": "infrastructure",
     "description": "King Anawrahta built the Shwesandaw Pagoda in Bagan, Myanmar after conquering the Mon kingdom of Thaton.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Die_Gartenlaube_%281887%29_b_016.jpg/330px-Die_Gartenlaube_%281887%29_b_016.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shwesandaw-pagoda_uw4naz?_a=BAMAMiiu0",
+    "color": "#483131",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chaco-canyon-development",
@@ -3694,7 +3869,11 @@
     "category": "infrastructure",
     "description": "Chaco Canyon great houses expanded with multi-story masonry buildings serving as ceremonial centers.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chaco_Culture_NHP_%288023723138%29.jpg/330px-Chaco_Culture_NHP_%288023723138%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chaco-canyon-development_xuwprj?_a=BAMAMiiu0",
+    "color": "#1e2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "angkor-period-peak",
@@ -3703,7 +3882,11 @@
     "category": "infrastructure",
     "description": "The Khmer Empire's Angkor region reached its peak with massive temple complexes and hydraulic systems.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Angkor_Wat_W-Seite.jpg/330px-Angkor_Wat_W-Seite.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-period-peak_snrwqg?_a=BAMAMiiu0",
+    "color": "#4b3941",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hoysala-temples",
@@ -3739,7 +3922,11 @@
     "category": "infrastructure",
     "description": "Chinese navigators adopted the magnetic compass for maritime navigation during the Song Dynasty.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/2016_Busola.JPG/330px-2016_Busola.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compass-navigation_zbnrfg?_a=BAMAMiiu0",
+    "color": "#2a2721",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "khmer-baray-hydraulics",
@@ -3748,7 +3935,11 @@
     "category": "infrastructure",
     "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Srah_Srang%2C_Angkor%2C_Camboya%2C_2013-08-16%2C_DD_07.JPG/330px-Srah_Srang%2C_Angkor%2C_Camboya%2C_2013-08-16%2C_DD_07.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/khmer-baray-hydraulics_zbvsbf?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hoysala-temple-architecture",
@@ -3757,7 +3948,11 @@
     "category": "infrastructure",
     "description": "Hoysala temples like Chennakeshava at Belur showcased extraordinary sculptural detail in soapstone.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Close_up_of_Hoysala_style_shrine_and_sikhara_with_decorative_molding_frieze_in_the_Chennakeshava_temple_at_Somanathapura.jpg/330px-Close_up_of_Hoysala_style_shrine_and_sikhara_with_decorative_molding_frieze_in_the_Chennakeshava_temple_at_Somanathapura.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hoysala-temple-architecture_z2p9cq?_a=BAMAMiiu0",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "angkor-wat-temple",
@@ -3775,7 +3970,11 @@
     "category": "infrastructure",
     "description": "Angkor Wat was completed as the spiritual center of the Khmer Empire in present-day Cambodia.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Buddhist_monks_in_front_of_the_Angkor_Wat.jpg/330px-Buddhist_monks_in_front_of_the_Angkor_Wat.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-construction_yylaz7?_a=BAMAMiiu0",
+    "color": "#22211d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cahokia-moundbuilder",
@@ -3811,9 +4010,11 @@
     "category": "infrastructure",
     "description": "The Knights Templar created an international banking system allowing pilgrims to deposit funds across Europe.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Codex_Manesse_Hartmann_von_Aue.jpg/330px-Codex_Manesse_Hartmann_von_Aue.jpg",
-    "color": "#b6ad94",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/templars-banking-network_yfo24z?_a=BAMAMiiu0",
+    "color": "#1f2223",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "khmer-temple-architecture",
@@ -3831,7 +4032,11 @@
     "category": "infrastructure",
     "description": "The medieval stone London Bridge was completed after 33 years of construction, lasting over 600 years.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/London_Bridge_from_St_Olaf_Stairs.jpg/330px-London_Bridge_from_St_Olaf_Stairs.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pont-old-london_ql2wu4?_a=BAMAMiiu0",
+    "color": "#1c2129",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cliff-palace",
@@ -3849,7 +4054,11 @@
     "category": "infrastructure",
     "description": "Mesa Verde cliff dwellings in Colorado housed hundreds of Ancestral Puebloan families in canyon alcoves.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cliff_Palace-Colorado-Mesa_Verde_NP.jpg/330px-Cliff_Palace-Colorado-Mesa_Verde_NP.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mesa-verde-cliff-dwellings_rf146j?_a=BAMAMiiu0",
+    "color": "#1f2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gothic-cathedral-construction",
@@ -3858,7 +4067,11 @@
     "category": "infrastructure",
     "description": "Chartres Cathedral was rebuilt in the Gothic style after a fire, with pioneering flying buttresses and stained glass.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Notre_Dame_de_Chartres.jpg/330px-Notre_Dame_de_Chartres.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gothic-cathedral-construction_osuqsm?_a=BAMAMiiu0",
+    "color": "#1f221d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ethiopian-lalibela-churches",
@@ -3867,7 +4080,11 @@
     "category": "infrastructure",
     "description": "King Lalibela ordered eleven churches carved from solid rock in Ethiopia, still used for worship today.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lalibela%2C_san_giorgio%2C_esterno_24.jpg/330px-Lalibela%2C_san_giorgio%2C_esterno_24.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ethiopian-lalibela-churches_wjvtns?_a=BAMAMiiu0",
+    "color": "#5c2a1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chimor-chan-chan-city",
@@ -3876,7 +4093,11 @@
     "category": "infrastructure",
     "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Chan_chan_view1.jpg/330px-Chan_chan_view1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chimor-chan-chan-city_bs5sxl?_a=BAMAMiiu0",
+    "color": "#463c2f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rapa-nui-moai",
@@ -3885,7 +4106,11 @@
     "category": "infrastructure",
     "description": "The Rapa Nui people carved and transported massive moai stone statues on Easter Island in the Pacific.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/AhuTongariki.JPG/330px-AhuTongariki.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rapa-nui-moai_y41sjp?_a=BAMAMiiu0",
+    "color": "#2c1d19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tonga-maritime-network",
@@ -3894,7 +4119,11 @@
     "category": "infrastructure",
     "description": "The Tongan maritime empire maintained trade networks spanning thousands of kilometers across the Pacific.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Flag_of_Tonga_%281862-1866%29.svg/330px-Flag_of_Tonga_%281862-1866%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tonga-maritime-network_ldervr?_a=BAMAMiiu0",
+    "color": "#424346",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lapita-culture",
@@ -3930,7 +4159,11 @@
     "category": "infrastructure",
     "description": "Cornwall's tin mines supplied most of medieval Europe's tin for bronze and pewter production.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Map_of_bronze-age_tin_finds._Objects_in_the_eastern_Mediterranean_and_the_Near_East%2C_and_major_and_minor_tin_deposits.png/330px-Map_of_bronze-age_tin_finds._Objects_in_the_eastern_Mediterranean_and_the_Near_East%2C_and_major_and_minor_tin_deposits.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tin-trade-cornwall_a3xrj4?_a=BAMAMiiu0",
+    "color": "#383535",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "perfume-trade-arabia",
@@ -3957,7 +4190,11 @@
     "category": "infrastructure",
     "description": "European clockmakers developed the verge escapement, enabling the first mechanical clocks in church towers.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Verge_watch_escapement.png/330px-Verge_watch_escapement.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/verge-escapement_mtybnh?_a=BAMAMiiu0",
+    "color": "#221f28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "brick-mortar-improvements",
@@ -3966,7 +4203,11 @@
     "category": "infrastructure",
     "description": "Medieval European builders improved brick and mortar formulations, enabling larger Gothic structures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Three_old_bricks_held_together_with_mortar.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brick-mortar-improvements_f960ad?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vault-construction-techniques",
@@ -3975,7 +4216,11 @@
     "category": "infrastructure",
     "description": "Ribbed vault construction techniques enabled the soaring ceilings of Gothic cathedrals across Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vo%C3%BBte_de_l%27%C3%A9glise_Saint-S%C3%A9verin_%C3%A0_Paris.jpg/330px-Vo%C3%BBte_de_l%27%C3%A9glise_Saint-S%C3%A9verin_%C3%A0_Paris.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vault-construction-techniques_mvsvei?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "nan-madol-city-construction",
@@ -3984,7 +4229,11 @@
     "category": "infrastructure",
     "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Nan_madol.jpg/330px-Nan_madol.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nan-madol-city-construction_vvo8mi?_a=BAMAMiiu0",
+    "color": "#1d2222",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pacific-northwest-cedar-houses",
@@ -3993,7 +4242,11 @@
     "category": "infrastructure",
     "description": "Pacific Northwest peoples built large cedar plank longhouses that housed multiple families and displayed clan crests.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Yurok-Plank-house2.jpg/330px-Yurok-Plank-house2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pacific-northwest-cedar-houses_fdlktd?_a=BAMAMiiu0",
+    "color": "#2d2c2e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "trade-route-risk-reduction",
@@ -4002,7 +4255,11 @@
     "category": "infrastructure",
     "description": "The Mongol Empire's Pax Mongolica secured Eurasian trade routes, reducing banditry and enabling safer commerce.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trade-route-risk-reduction_djr7uf?_a=BAMAMiiu0",
+    "color": "#1d2222",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "notre-dame-reims-built",
@@ -4011,7 +4268,11 @@
     "category": "infrastructure",
     "description": "Reims Cathedral, the coronation church of French kings, began construction in the High Gothic style.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Exterior_view_of_the_west_facade_of_Notre-Dame_Cathedral_in_Reims.jpg/330px-Exterior_view_of_the_west_facade_of_Notre-Dame_Cathedral_in_Reims.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/notre-dame-reims-built_vnvwxe?_a=BAMAMiiu0",
+    "color": "#68655b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chartres-cathedral-construction",
@@ -4020,7 +4281,11 @@
     "category": "infrastructure",
     "description": "Chartres Cathedral was largely completed, renowned for its 176 stained glass windows and Gothic design.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Notre_Dame_de_Chartres.jpg/330px-Notre_Dame_de_Chartres.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chartres-cathedral-construction_qoabuo?_a=BAMAMiiu0",
+    "color": "#342419",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cologne-cathedral-begun",
@@ -4029,7 +4294,11 @@
     "category": "infrastructure",
     "description": "Cologne Cathedral began construction in Gothic style; it would not be completed until 1880.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg/330px-K%C3%B6lner_Dom_-_Westfassade_2022_ohne_Ger%C3%BCst-0968_b.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cologne-cathedral-begun_tyt34g?_a=BAMAMiiu0",
+    "color": "#212122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "letters-exchange-banking",
@@ -4038,7 +4307,11 @@
     "category": "infrastructure",
     "description": "Italian merchants developed letters of exchange, enabling cashless long-distance trade across medieval Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/R1000_Rangoon_1939_promissory_note.jpg/330px-R1000_Rangoon_1939_promissory_note.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/letters-exchange-banking_wnjnzs?_a=BAMAMiiu0",
+    "color": "#32251b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "marco-polo-yuan-court",
@@ -4056,7 +4329,11 @@
     "category": "infrastructure",
     "description": "The Yuan Dynasty extended and realigned the Grand Canal to connect Beijing directly with southern China.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Wanning_Bridge_1.jpg/330px-Wanning_Bridge_1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yuan-grand-canal_zuz8ym?_a=BAMAMiiu0",
+    "color": "#1f231b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wool-merchant-regulations",
@@ -4065,7 +4342,11 @@
     "category": "infrastructure",
     "description": "Edward I established regulations and export duties on English wool, a key medieval commodity.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_%28waardijns%29_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg/330px-Rembrandt_-_De_Staalmeesters-_het_college_van_staalmeesters_%28waardijns%29_van_het_Amsterdamse_lakenbereidersgilde_-_Google_Art_Project.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wool-merchant-regulations_v0wmfa?_a=BAMAMiiu0",
+    "color": "#262019",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "coral-trade-mediterranean",
@@ -4074,7 +4355,11 @@
     "category": "infrastructure",
     "description": "Red coral harvested off Sardinia and North Africa became a luxury trade commodity across medieval Europe.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Corallium_rubrum_%28Linnaeus%2C_1758%29_11.jpg/330px-Corallium_rubrum_%28Linnaeus%2C_1758%29_11.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coral-trade-mediterranean_wbfznb?_a=BAMAMiiu0",
+    "color": "#504136",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "herring-trade-northern",
@@ -4083,7 +4368,11 @@
     "category": "infrastructure",
     "description": "The Hanseatic League dominated the herring trade, with Scania fairs becoming major commercial events.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg/330px-Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/herring-trade-northern_e6rydd?_a=BAMAMiiu0",
+    "color": "#23201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "banking-loans-innovation",
@@ -4101,7 +4390,11 @@
     "category": "infrastructure",
     "description": "The foliot balance was developed as a timekeeping regulator in early European mechanical tower clocks.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Verge_watch_escapement.png/330px-Verge_watch_escapement.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/foliot-balance_nsuquo?_a=BAMAMiiu0",
+    "color": "#2f1c0e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "buttress-flying-buttress",
@@ -4119,7 +4412,11 @@
     "category": "infrastructure",
     "description": "Nan Madol's basalt log-cabin walls on Pohnpei demonstrate advanced engineering on artificial coral reef islands.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Nan_madol.jpg/330px-Nan_madol.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nan-madol-basalt-engineering_magwon?_a=BAMAMiiu0",
+    "color": "#1e2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "casa-grande-pueblo",
@@ -4128,7 +4425,11 @@
     "category": "infrastructure",
     "description": "The Ancestral Sonoran Desert people built Casa Grande, a four-story adobe great house in present-day Arizona.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/CasaGrandeRuin.jpg/330px-CasaGrandeRuin.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/casa-grande-pueblo_slwsh3?_a=BAMAMiiu0",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gila-cliff-dwellings",
@@ -4137,7 +4438,11 @@
     "category": "infrastructure",
     "description": "Mogollon people built cliff dwellings in natural caves above the Gila River in present-day New Mexico.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Gila_Cliff_Dwellings%2C_New_Mexico%2C_USA_2012.jpg/330px-Gila_Cliff_Dwellings%2C_New_Mexico%2C_USA_2012.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gila-cliff-dwellings_dvtblx?_a=BAMAMiiu0",
+    "color": "#1f202a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "golden-horde-sarai-al-jadid",
@@ -4146,7 +4451,11 @@
     "category": "infrastructure",
     "description": "The Golden Horde built New Sarai on the Volga River as their capital, becoming one of the largest cities in the medieval world.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Map_of_the_Golden_Horde_%28with_text%29.png/330px-Map_of_the_Golden_Horde_%28with_text%29.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/golden-horde-sarai-al-jadid_em3skq?_a=BAMAMiiu0",
+    "color": "#251f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bruges-bourse-trading",
@@ -4164,7 +4473,11 @@
     "category": "infrastructure",
     "description": "The Nasrid sultans expanded the Alhambra in Granada into a masterpiece of Islamic palatial architecture.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg/330px-Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alhambra-palace-built_dbhhkm?_a=BAMAMiiu0",
+    "color": "#8c6943",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chimú-chan-chan-peak",
@@ -4182,7 +4495,11 @@
     "category": "infrastructure",
     "description": "The Hanseatic League dominated Baltic and North Sea trade with a network of allied merchant cities.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg/330px-Ausbreitung_der_Hanse_um_das_Jahr_1400-Droysens_28.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hanse-trades-monopoly_tfizry?_a=BAMAMiiu0",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "genovese-banking-families",
@@ -4191,7 +4508,11 @@
     "category": "infrastructure",
     "description": "Genoese banking families built financial networks rivaling Florence, financing Mediterranean trade and warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Palazzo_San_Georgio_Genova_W.jpg/330px-Palazzo_San_Georgio_Genova_W.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genovese-banking-families_qckk5b?_a=BAMAMiiu0",
+    "color": "#403527",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "insurance-maritime-contracts",
@@ -4209,7 +4530,11 @@
     "category": "infrastructure",
     "description": "Medieval European monarchs granted exclusive trade monopoly charters to merchant guilds and companies.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/King%27s_College_royal_charter_1827_leaf1.jpg/330px-King%27s_College_royal_charter_1827_leaf1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monopoly-privileges-medieval_wkpkgi?_a=BAMAMiiu0",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wool-staple-monopoly",
@@ -4227,7 +4552,11 @@
     "category": "infrastructure",
     "description": "Timur began transforming Samarkand into a magnificent capital with mosques, gardens, and monuments after his conquests.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Gur-e-Amir_Mausolueum_-_Samarkand_-_Uzbekistan_%287488414078%29.jpg/330px-Gur-e-Amir_Mausolueum_-_Samarkand_-_Uzbekistan_%287488414078%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/timur-architectural-patronage_xf1tv5?_a=BAMAMiiu0",
+    "color": "#23293b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tulum-city",
@@ -4236,7 +4565,11 @@
     "category": "infrastructure",
     "description": "Tulum was built as a walled Maya trading port on the Caribbean coast of the Yucatan Peninsula in Mexico.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tulum_2.jpg/330px-Tulum_2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tulum-city_dwe092?_a=BAMAMiiu0",
+    "color": "#3c4e44",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mamluk-sultanate-splendor",
@@ -4245,7 +4578,11 @@
     "category": "infrastructure",
     "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flickr_-_archer10_%28Dennis%29_-_Egypt-13A-061_%28cropped%29.jpg/330px-Flickr_-_archer10_%28Dennis%29_-_Egypt-13A-061_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mamluk-sultanate-splendor_s22waa?_a=BAMAMiiu0",
+    "color": "#2e2920",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "saffron-trade-persia",
@@ -4254,7 +4591,11 @@
     "category": "infrastructure",
     "description": "Persian saffron became a prized luxury commodity in European markets, traded via Mediterranean merchant networks.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Saffron_-_premium_spice.jpg/330px-Saffron_-_premium_spice.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saffron-trade-persia_sclori?_a=BAMAMiiu0",
+    "color": "#5b3943",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cashmere-wool-trade",
@@ -4263,7 +4604,11 @@
     "category": "infrastructure",
     "description": "Fine cashmere wool from Kashmir goats entered international trade networks, prized for luxury shawl production.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Kaschmirschal_1.jpg/330px-Kaschmirschal_1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cashmere-wool-trade_fix6ju?_a=BAMAMiiu0",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "grain-trade-monopoly",
@@ -4281,7 +4626,11 @@
     "category": "infrastructure",
     "description": "Madder root from the Low Countries dominated European red dye markets, essential for the textile industry.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg/330px-Europe_orthographic_Caucasus_Urals_boundary_%28with_borders%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/madder-dye-monopoly_ypda3f?_a=BAMAMiiu0",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "slave-trade-ottomans",
@@ -4290,7 +4639,11 @@
     "category": "infrastructure",
     "description": "The Ottoman Empire expanded its slave trade networks across the Black Sea, Balkans, and eastern Mediterranean.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Gefangene_Schriften_gegen_Constantinopel_gebracht_-_Schweigger_Salomon_-_1608.jpg/330px-Gefangene_Schriften_gegen_Constantinopel_gebracht_-_Schweigger_Salomon_-_1608.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/slave-trade-ottomans_r5weyy?_a=BAMAMiiu0",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bankruptcy-legal-framework",
@@ -4299,7 +4652,11 @@
     "category": "infrastructure",
     "description": "Italian city-states developed early bankruptcy laws to manage merchant insolvency and protect creditors.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/No_Bailout_for_Drug_Fair%3F_%283390579592%29.jpg/330px-No_Bailout_for_Drug_Fair%3F_%283390579592%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bankruptcy-legal-framework_vdtnfb?_a=BAMAMiiu0",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cast-iron-production",
@@ -4319,7 +4676,11 @@
     "category": "infrastructure",
     "description": "Renaissance architects mastered dome construction techniques, culminating in Brunelleschi's revolutionary Florence Cathedral dome.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Cupola_without_text.svg/330px-Cupola_without_text.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dome-construction-mastery_tdwukz?_a=BAMAMiiu0",
+    "color": "#6e432b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "swahili-stone-architecture",
@@ -4328,7 +4689,11 @@
     "category": "infrastructure",
     "description": "Swahili coastal cities like Kilwa and Mombasa built coral stone mosques, palaces, and merchant houses.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LamuIsland-PortAuthority.jpg/330px-LamuIsland-PortAuthority.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swahili-stone-architecture_vkfojt?_a=BAMAMiiu0",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tuvalu-mausoleum-built",
@@ -4346,7 +4711,11 @@
     "category": "infrastructure",
     "description": "The Forbidden City in Beijing was completed under the Yongle Emperor with 980 buildings across 178 acres.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Forbidden_City_-_View_from_Coal_Hill.jpg/330px-The_Forbidden_City_-_View_from_Coal_Hill.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ming-forbidden-city_z57pus?_a=BAMAMiiu0",
+    "color": "#404653",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "florence-cathedral-dome",
@@ -4355,7 +4724,11 @@
     "category": "infrastructure",
     "description": "Filippo Brunelleschi began constructing the Florence Cathedral dome using an innovative double-shell design without scaffolding.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/330px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/florence-cathedral-dome_wlemzo?_a=BAMAMiiu0",
+    "color": "#2a1d1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "oil-based-printing-ink",
@@ -4364,7 +4737,11 @@
     "category": "infrastructure",
     "description": "Oil-based ink was developed in Germany, enabling sharper print quality essential for Gutenberg's movable type press.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/F%C3%BCller-tinte_hg.jpg/330px-F%C3%BCller-tinte_hg.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oil-based-printing-ink_f9zghh?_a=BAMAMiiu0",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "samarkand-ulugh-beg-madrasah",
@@ -4373,7 +4750,11 @@
     "category": "infrastructure",
     "description": "Ulugh Beg built a grand madrasah on the Registan in Samarkand, which also served as his astronomical center.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Samarkand%2C_Registan%2C_Ulugbek_Medressa_%286238565020%29.jpg/330px-Samarkand%2C_Registan%2C_Ulugbek_Medressa_%286238565020%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-ulugh-beg-madrasah_zkzvig?_a=BAMAMiiu0",
+    "color": "#2b1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "printing-engraving",
@@ -4382,7 +4763,11 @@
     "category": "infrastructure",
     "description": "Copperplate engraving techniques enabled detailed image reproduction in European printmaking workshops.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/D%C3%BCrer-Hieronymus-im-Geh%C3%A4us.jpg/330px-D%C3%BCrer-Hieronymus-im-Geh%C3%A4us.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-engraving_xqiw7w?_a=BAMAMiiu0",
+    "color": "#281e1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "medici-florentine-bank",
@@ -4409,7 +4794,11 @@
     "category": "infrastructure",
     "description": "Malacca became Southeast Asia's greatest trading port, connecting Chinese, Indian, and Arab merchant networks.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Malacca_Sultanate_en.svg/330px-Malacca_Sultanate_en.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/malacca-entrepot_j5ttvq?_a=BAMAMiiu0",
+    "color": "#442c16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "qhapaq-nan-expansion",
@@ -4418,7 +4807,11 @@
     "category": "infrastructure",
     "description": "The Inca Empire expanded the Qhapaq Ñan road network to over 30,000 km across the Andes mountains.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Inca_road_system.jpg/330px-Inca_road_system.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qhapaq-nan-expansion_t0okvm?_a=BAMAMiiu0",
+    "color": "#2c2d27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "machu-picchu-construction",
@@ -4427,7 +4820,11 @@
     "category": "infrastructure",
     "description": "The Inca citadel of Machu Picchu was built high in the Andes as a royal estate for Emperor Pachacuti.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Machu_Picchu%2C_2023_%28012%29.jpg/330px-Machu_Picchu%2C_2023_%28012%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/machu-picchu-construction_b7xtoh?_a=BAMAMiiu0",
+    "color": "#8d7c67",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "printing-bible",
@@ -4445,7 +4842,11 @@
     "category": "infrastructure",
     "description": "The Mainz Psalter became the first book printed with color using multiple print runs for red and blue initials.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Collage_of_printing.png/330px-Collage_of_printing.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-color_minqv5?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "antwerp-bourse-replacement",
@@ -4463,7 +4864,11 @@
     "category": "infrastructure",
     "description": "Sultan Mehmed II began building Topkapi Palace in Constantinople as the primary residence of Ottoman sultans.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Topkap%C4%B1_-_01.jpg/330px-Topkap%C4%B1_-_01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-topkapi-palace_fgyzvh?_a=BAMAMiiu0",
+    "color": "#202125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fugger-banking-empire",
@@ -4472,7 +4877,11 @@
     "category": "infrastructure",
     "description": "Jakob Fugger expanded the family banking house in Augsburg into the wealthiest financial empire in Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Ulm-Wiblingen-Fugger.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fugger-banking-empire_ayrezj?_a=BAMAMiiu0",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "kongo-portuguese-contact",
@@ -4490,7 +4899,11 @@
     "category": "infrastructure",
     "description": "Mbanza Kongo served as the capital of the Kongo Kingdom with a population rivaling many contemporary European cities.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/The_Bansa%2C_or_residence_of_the_King_of_Kongo%2C_called_St._Salvador_%28M%27Banza_Kongo%29%2C_Astley_1745.jpg/330px-The_Bansa%2C_or_residence_of_the_King_of_Kongo%2C_called_St._Salvador_%28M%27Banza_Kongo%29%2C_Astley_1745.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kongo-mani-congo-capital_fporau?_a=BAMAMiiu0",
+    "color": "#926e4d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-globe",
@@ -4499,7 +4912,11 @@
     "category": "infrastructure",
     "description": "Martin Behaim created the oldest surviving terrestrial globe in Nuremberg, just before Columbus's voyage.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Erdglobus%2C_sogenannter_Behaim-Globus.jpg/330px-Erdglobus%2C_sogenannter_Behaim-Globus.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-globe_lz8h9w?_a=BAMAMiiu0",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "publishing-house",
@@ -4508,7 +4925,11 @@
     "category": "infrastructure",
     "description": "Aldus Manutius founded the Aldine Press in Venice, pioneering pocket-sized books and italic typefaces.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Portrait_d%27Alde_Manuce%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_-_estampe_-_btv1b84007044_%28cropped%29.jpg/330px-Portrait_d%27Alde_Manuce%2C_en_buste%2C_de_profil_dirig%C3%A9_%C3%A0_droite_-_estampe_-_btv1b84007044_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/publishing-house_wlcmk9?_a=BAMAMiiu0",
+    "color": "#281e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-almanac",
@@ -4517,7 +4938,11 @@
     "category": "infrastructure",
     "description": "The Kalendrier des Bergers was published in Paris, becoming one of the first widely distributed almanacs in Europe.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/OldMooresAlmanac1862.jpg/330px-OldMooresAlmanac1862.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-almanac_jjyfvr?_a=BAMAMiiu0",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "songhai-timbuktu",
@@ -4526,7 +4951,11 @@
     "category": "infrastructure",
     "description": "Timbuktu reached its commercial peak under the Songhai Empire as a center of trans-Saharan gold and salt trade.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/songhai-timbuktu_pfzra0?_a=BAMAMiiu0",
+    "color": "#2d1c1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "silk-debasement-trade",
@@ -4535,7 +4964,11 @@
     "category": "infrastructure",
     "description": "Declining quality standards in the silk trade led to disputes between Asian producers and European merchants.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Silk_road_Kazakhstan.svg/330px-Silk_road_Kazakhstan.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-debasement-trade_i9gd5x?_a=BAMAMiiu0",
+    "color": "#271f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cotton-trade-begins",
@@ -4553,7 +4986,11 @@
     "category": "infrastructure",
     "description": "Indian indigo dye entered European markets through Portuguese trade, eventually displacing local woad production.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Indigo_cake.jpg/330px-Indigo_cake.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indigo-dye-trade_xhpoic?_a=BAMAMiiu0",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fur-trade-russian",
@@ -4562,7 +4999,11 @@
     "category": "infrastructure",
     "description": "Russia expanded eastward into Siberia driven by demand for sable and other luxury furs in European markets.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Alberta_1890s_fur_trader.jpg/330px-Alberta_1890s_fur_trader.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fur-trade-russian_ixomuw?_a=BAMAMiiu0",
+    "color": "#9bb1be",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cod-fishery-expansion",
@@ -4571,7 +5012,11 @@
     "category": "infrastructure",
     "description": "European fishermen expanded Atlantic cod fishing to the Grand Banks off Newfoundland, feeding growing demand for salt cod.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Atlantic_Cod%2C_Atlantischer_Kabeljau_%28Gadus_morhua%29.jpg/330px-Atlantic_Cod%2C_Atlantischer_Kabeljau_%28Gadus_morhua%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cod-fishery-expansion_bmlrqf?_a=BAMAMiiu0",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "quenching-tempering-steel",
@@ -4580,7 +5025,11 @@
     "category": "infrastructure",
     "description": "European smiths refined quenching and tempering methods to produce stronger, more flexible steel for weapons and tools.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ArthurSiegelcoke1.jpg/330px-ArthurSiegelcoke1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quenching-tempering-steel_iqgjst?_a=BAMAMiiu0",
+    "color": "#1f2128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rozwi-stone-fortifications",
@@ -4589,7 +5038,11 @@
     "category": "infrastructure",
     "description": "The Rozwi Kingdom in southern Africa built stone-walled enclosures and fortifications across the Zimbabwe Plateau.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Empire-rozvi.png/330px-Empire-rozvi.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rozwi-stone-fortifications_xuu3md?_a=BAMAMiiu0",
+    "color": "#2b1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "canal-building-netherlands",
@@ -4598,7 +5051,11 @@
     "category": "infrastructure",
     "description": "The Dutch expanded their canal network for drainage, transport, and trade across the Low Countries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Alter_Strom.jpg/330px-Alter_Strom.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canal-building-netherlands_sdihsf?_a=BAMAMiiu0",
+    "color": "#aeaea6",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "postal-system-expansion",
@@ -4607,7 +5064,11 @@
     "category": "infrastructure",
     "description": "The Thurn und Taxis family established a postal network linking major European cities for the Holy Roman Emperor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Map_Thurn-und-Taxis-Post.jpg/330px-Map_Thurn-und-Taxis-Post.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/postal-system-expansion_ekam7h?_a=BAMAMiiu0",
+    "color": "#1f202b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "printing-music",
@@ -4625,7 +5086,11 @@
     "category": "infrastructure",
     "description": "Martin Waldseemuller printed a world map that first used the name \"America\" for the New World continents.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Waldseemuller_map_2.jpg/330px-Waldseemuller_map_2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-map-printing_dmrtdo?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vijayanagara-architecture",
@@ -4634,7 +5099,11 @@
     "category": "infrastructure",
     "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/View_of_the_Virupaksha_temple_gopura_from_Hemakuta_hill_2.JPG/330px-View_of_the_Virupaksha_temple_gopura_from_Hemakuta_hill_2.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vijayanagara-architecture_ssm6vb?_a=BAMAMiiu0",
+    "color": "#846340",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sher-shah-architecture",
@@ -4643,7 +5112,11 @@
     "category": "infrastructure",
     "description": "Sher Shah Suri built the Grand Trunk Road and introduced innovative tomb architecture at Sasaram in Bihar.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/4/46/Painting_of_Sher_Shah_Suri_%28colored%29_from_a_manuscript_of_Tarikh-i-Khandan-i-Timuriya%2C_prepared_by_the_court_painters_of_Mughal_emperor_Akbar%2C_circa_16th_century_%28Detailed%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sher-shah-architecture_qi6vss?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cocoa-trade-beans",
@@ -4661,7 +5134,11 @@
     "category": "infrastructure",
     "description": "England's Muscovy Company received a royal charter, becoming the first major English joint-stock trading company.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/MuscovyCompany_Seal_1555.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/muscovy-company-founding_vyl5h8?_a=BAMAMiiu0",
+    "color": "#2e3337",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ottoman-architecture-peak",
@@ -4670,7 +5147,11 @@
     "category": "infrastructure",
     "description": "Architect Sinan completed the Suleymaniye Mosque in Istanbul, the masterpiece of Ottoman imperial architecture.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/S%C3%BCleymaniyeMosqueIstanbul_%28cropped%29.jpg/330px-S%C3%BCleymaniyeMosqueIstanbul_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-architecture-peak_qhb9qa?_a=BAMAMiiu0",
+    "color": "#a57761",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "galleon-trade-route",
@@ -4688,7 +5169,11 @@
     "category": "infrastructure",
     "description": "The Djinguereber Mosque was built in Timbuktu under Mansa Musa using Andalusian architect Abu Ishaq al-Sahili.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Djingareiber_cour.jpg/330px-Djingareiber_cour.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/songhai-djinguereber-mosque_zqdupl?_a=BAMAMiiu0",
+    "color": "#2a4659",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-atlas",
@@ -4697,7 +5182,11 @@
     "category": "infrastructure",
     "description": "Abraham Ortelius published the Theatrum Orbis Terrarum in Antwerp, considered the first modern world atlas.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Theatrum_Orbis_Terrarum%2C_by_Abraham_Ortelius%2C_World%2C_1572.jpg/330px-Theatrum_Orbis_Terrarum%2C_by_Abraham_Ortelius%2C_World%2C_1572.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-atlas_yxaqqa?_a=BAMAMiiu0",
+    "color": "#2c1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mughal-architecture-akbar",
@@ -4706,7 +5195,11 @@
     "category": "infrastructure",
     "description": "Emperor Akbar built the planned city of Fatehpur Sikri, blending Hindu and Islamic architectural styles.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Taj_Mahal%2C_Agra%2C_India.jpg/330px-Taj_Mahal%2C_Agra%2C_India.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mughal-architecture-akbar_ivxghl?_a=BAMAMiiu0",
+    "color": "#6d2d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "levant-company-charter",
@@ -4715,7 +5208,11 @@
     "category": "infrastructure",
     "description": "Queen Elizabeth I chartered the Levant Company to conduct English trade with the Ottoman Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Levant_or_Turkey_Company_coat_of_arms.jpg/330px-Levant_or_Turkey_Company_coat_of_arms.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/levant-company-charter_xf9sjy?_a=BAMAMiiu0",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chocolate-trade-establishment",
@@ -4724,7 +5221,11 @@
     "category": "infrastructure",
     "description": "Regular chocolate shipments from Veracruz to Seville established a permanent European chocolate trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Ca%27_Rezzonico_-_La_cioccolata_del_mattino_-_Pietro_Longhi.jpg/330px-Ca%27_Rezzonico_-_La_cioccolata_del_mattino_-_Pietro_Longhi.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chocolate-trade-establishment_zubjcn?_a=BAMAMiiu0",
+    "color": "#291f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mombasa-fort-jesus-construction",
@@ -4733,7 +5234,11 @@
     "category": "infrastructure",
     "description": "The Portuguese built Fort Jesus at Mombasa to guard their East African trade routes and control the harbor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Fort_Jesus_at_the_Mombasa_Island.jpg/330px-Fort_Jesus_at_the_Mombasa_Island.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mombasa-fort-jesus-construction_kyrx0k?_a=BAMAMiiu0",
+    "color": "#422725",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "isfahan-city-building",
@@ -4742,7 +5247,11 @@
     "category": "infrastructure",
     "description": "Shah Abbas I moved the Safavid capital to Isfahan and transformed it with grand mosques, bazaars, and bridges.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Naghshe_jahan_01.jpg/330px-Naghshe_jahan_01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/isfahan-city-building_mjfjte?_a=BAMAMiiu0",
+    "color": "#262225",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "beaver-pelt-european-demand",
@@ -4751,7 +5260,11 @@
     "category": "infrastructure",
     "description": "European demand for beaver pelts for felt hats drove a massive fur trade in North America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Fur_traders_in_canada_1777.jpg/330px-Fur_traders_in_canada_1777.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beaver-pelt-european-demand_cmyhz2?_a=BAMAMiiu0",
+    "color": "#2b1d1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "color-printing-techniques",
@@ -4768,7 +5281,12 @@
     "year": 1600,
     "category": "infrastructure",
     "description": "Naval fleets developed standardized flag signal systems for ship-to-ship communication during maritime operations.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#383b3e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flag-signal-development_us5nt5?_a=BAMAMiiu0"
   },
   {
     "name": "iron-reinforcement-concept",
@@ -4777,7 +5295,11 @@
     "category": "infrastructure",
     "description": "Renaissance builders began embedding iron bars and clamps in masonry to reinforce large-scale structures.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Talbruecke-Bruenn_2005-08-04.jpg/330px-Talbruecke-Bruenn_2005-08-04.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-reinforcement-concept_goizyr?_a=BAMAMiiu0",
+    "color": "#2b1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "voc-dutch-east-india",
@@ -4795,7 +5317,11 @@
     "category": "infrastructure",
     "description": "The Sultan Ahmed Mosque (Blue Mosque) was completed in Istanbul, notable for its six minarets and blue tile interior.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg/330px-Historical_peninsula_and_modern_skyline_of_Istanbul.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/istanbul-blue-mosque_phd1n3?_a=BAMAMiiu0",
+    "color": "#2b1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "isfahan-bazaar-construction",
@@ -4804,7 +5330,11 @@
     "category": "infrastructure",
     "description": "The Grand Bazaar of Isfahan was expanded under Shah Abbas I, stretching two kilometers as a major trade center.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Naghshe_jahan_01.jpg/330px-Naghshe_jahan_01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/isfahan-bazaar-construction_fdlo2f?_a=BAMAMiiu0",
+    "color": "#2a1e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "edo-castle-architecture",
@@ -4831,7 +5361,11 @@
     "category": "infrastructure",
     "description": "St. Peter's Basilica was consecrated after 120 years of construction, becoming the world's largest church.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Saint_Peter-Sinai_%286th_Century%29_Crop.jpg/330px-Saint_Peter-Sinai_%286th_Century%29_Crop.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/st-peters-basilica-completion_zwmut2?_a=BAMAMiiu0",
+    "color": "#778faa",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mughal-taj-mahal",
@@ -4849,7 +5383,11 @@
     "category": "infrastructure",
     "description": "Construction of the Taj Mahal began in Agra, employing over 20,000 workers for more than 20 years.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taj_Mahal_%28Edited%29.jpeg/330px-Taj_Mahal_%28Edited%29.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/taj-mahal-construction_hnxqfy?_a=BAMAMiiu0",
+    "color": "#9cb1bb",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "taj-mahal-begun",
@@ -4876,7 +5414,11 @@
     "category": "infrastructure",
     "description": "Edo Castle was completed as the seat of the Tokugawa shogunate, making Edo (Tokyo) Japan's political center.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Edo_P_detail.jpg/330px-Edo_P_detail.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edo-castle-completion_lxugcf?_a=BAMAMiiu0",
+    "color": "#232021",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gondar-castles-construction",
@@ -4885,7 +5427,11 @@
     "category": "infrastructure",
     "description": "The Fasil Ghebbi royal enclosure at Gondar grew with successive Ethiopian emperors adding palaces and churches.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fasilides_Palace_01.jpg/330px-Fasilides_Palace_01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gondar-castles-construction_owa5ns?_a=BAMAMiiu0",
+    "color": "#48321f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tea-trade-begins",
@@ -4894,7 +5440,11 @@
     "category": "infrastructure",
     "description": "Dutch traders first shipped Chinese tea to Europe, beginning a trade that would reshape global commerce.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Tea_plantation_in_Ciwidey%2C_Bandung_2014-08-21.jpg/330px-Tea_plantation_in_Ciwidey%2C_Bandung_2014-08-21.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tea-trade-begins_snvg6v?_a=BAMAMiiu0",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "whale-oil-trade",
@@ -4903,7 +5453,11 @@
     "category": "infrastructure",
     "description": "Whale oil became a major commodity for lighting and lubrication, driving large-scale Atlantic whaling operations.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/To_the_left%2C_the_black-hulled_whaling_ships._To_the_right%2C_the_red-hulled_whale-watching_ship.jpg/330px-To_the_left%2C_the_black-hulled_whaling_ships._To_the_right%2C_the_red-hulled_whale-watching_ship.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/whale-oil-trade_bmtt0x?_a=BAMAMiiu0",
+    "color": "#323337",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "baroque-church-architecture",
@@ -4939,7 +5493,11 @@
     "category": "infrastructure",
     "description": "Christiaan Huygens invented the balance wheel with spiral hairspring, enabling accurate portable timepieces.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Floating_Balance_Escapement.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hairspring-balance-wheel_wzszfm?_a=BAMAMiiu0",
+    "color": "#2f1b15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "versailles-construction",
@@ -4948,7 +5506,11 @@
     "category": "infrastructure",
     "description": "Louis XIV began transforming a hunting lodge into the Palace of Versailles, the grandest royal residence in Europe.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Versailles-Chateau-Jardins02.jpg/330px-Versailles-Chateau-Jardins02.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/versailles-construction_eus3ab?_a=BAMAMiiu0",
+    "color": "#3a322f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "versailles-palace",
@@ -4957,7 +5519,11 @@
     "category": "infrastructure",
     "description": "Louis XIV commissioned the massive expansion of Versailles, which became the seat of French government in 1682.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Versailles-Chateau-Jardins02.jpg/330px-Versailles-Chateau-Jardins02.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/versailles-palace_ihhlph?_a=BAMAMiiu0",
+    "color": "#503724",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bus-service",
@@ -4975,7 +5541,11 @@
     "category": "infrastructure",
     "description": "The Dojima Rice Exchange in Osaka became the world's first organized futures trading market.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Dojima_komeichiba.jpg/330px-Dojima_komeichiba.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dojima-rice-exchange_gtvnqj?_a=BAMAMiiu0",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wren-st-pauls-cathedral",
@@ -5013,7 +5583,11 @@
     "category": "infrastructure",
     "description": "John Kay invented the flying shuttle, doubling weaving speed and enabling wider cloth production.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Frisador_Curler.jpg/330px-Frisador_Curler.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/flying-shuttle-refinement_zcxtms?_a=BAMAMiiu0",
+    "color": "#2c1c20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "detent-escapement",
@@ -5022,7 +5596,11 @@
     "category": "infrastructure",
     "description": "Pierre Le Roy developed the detent escapement, improving marine chronometer precision for navigation.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Anchor_escapement_animation_217x328px.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/detent-escapement_j0sf6s?_a=BAMAMiiu0",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "canal-network-britain",
@@ -5049,7 +5627,11 @@
     "category": "infrastructure",
     "description": "Henry Cort patented the puddling process to produce wrought iron using coal, replacing charcoal-based methods.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Puddling_furnace.jpg/330px-Puddling_furnace.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wrought-iron-puddling_pfswac?_a=BAMAMiiu0",
+    "color": "#26201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "stereotyping-process",
@@ -5058,7 +5640,11 @@
     "category": "infrastructure",
     "description": "William Ged developed stereotyping in Edinburgh, casting whole pages as single plates for efficient reprinting.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Fotothek_df_roe-neg_0006484_033_Herstellen_einer_Mater_%28Stereotypie%29.jpg/330px-Fotothek_df_roe-neg_0006484_033_Herstellen_einer_Mater_%28Stereotypie%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stereotyping-process_ltsurn?_a=BAMAMiiu0",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "optical-telegraph-system",
@@ -5067,7 +5653,11 @@
     "category": "infrastructure",
     "description": "Claude Chappe built the first optical telegraph line in France, transmitting messages via semaphore towers.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/OptischerTelegraf.jpg/330px-OptischerTelegraf.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/optical-telegraph-system_dr0glv?_a=BAMAMiiu0",
+    "color": "#1e2223",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "lithography-development",
@@ -5076,7 +5666,11 @@
     "category": "infrastructure",
     "description": "Alois Senefelder invented lithography in Bavaria, enabling high-quality image printing from flat stone surfaces.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Charles_Marion_Russell_-_The_Custer_Fight_%281903%29.jpg/330px-Charles_Marion_Russell_-_The_Custer_Fight_%281903%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lithography-development_vfjmdx?_a=BAMAMiiu0",
+    "color": "#4c4134",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "dobby-mechanism",
@@ -5094,7 +5688,11 @@
     "category": "infrastructure",
     "description": "The SS Savannah became the first steamship to cross the Atlantic Ocean, sailing from Georgia to Liverpool.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SS-Savannah.jpg/330px-SS-Savannah.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-steamship_etsyge?_a=BAMAMiiu0",
+    "color": "#7a8186",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "power-loom-mechanical",
@@ -5103,7 +5701,11 @@
     "category": "infrastructure",
     "description": "Richard Roberts and others improved the power loom with iron frames and automatic mechanisms for factory use.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Strickmaschine_im_Museum.JPG/330px-Strickmaschine_im_Museum.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/power-loom-mechanical_ymplsi?_a=BAMAMiiu0",
+    "color": "#504740",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "portland-cement-development",
@@ -5121,7 +5723,11 @@
     "category": "infrastructure",
     "description": "George Stephenson's Locomotion No. 1 hauled the first public steam railway between Stockton and Darlington.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Stephenson%27s_Rocket_drawing.jpg/330px-Stephenson%27s_Rocket_drawing.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-locomotive_o7qe7n?_a=BAMAMiiu0",
+    "color": "#4e4943",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-railroad",
@@ -5130,7 +5736,11 @@
     "category": "infrastructure",
     "description": "The Liverpool and Manchester Railway opened as the first inter-city passenger railway powered entirely by steam.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Opening_Liverpool_and_Manchester_Railway.jpg/330px-Opening_Liverpool_and_Manchester_Railway.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-railroad_xgbrdr?_a=BAMAMiiu0",
+    "color": "#494139",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "railroad-station",
@@ -5184,7 +5794,11 @@
     "category": "infrastructure",
     "description": "The telegraph sounder replaced visual registers, allowing operators to decode Morse code by ear.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Telegraph_Sounder.JPG/330px-Telegraph_Sounder.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telegraph-sounder-design_b4ewle?_a=BAMAMiiu0",
+    "color": "#212122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "telegraph-cable-insulation",
@@ -5193,7 +5807,11 @@
     "category": "infrastructure",
     "description": "Gutta-percha insulation enabled the first transatlantic telegraph cable, briefly connecting Europe and North America.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Submarine_cable_cross-section_3D_plain.svg/330px-Submarine_cable_cross-section_3D_plain.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telegraph-cable-insulation_cksucz?_a=BAMAMiiu0",
+    "color": "#636461",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "subway-system",
@@ -5202,7 +5820,11 @@
     "category": "infrastructure",
     "description": "The Metropolitan Railway opened in London as the world's first underground passenger railway system.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Underground.svg/330px-Underground.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/subway-system_dmkegp?_a=BAMAMiiu0",
+    "color": "#393028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "geunjeongjeon-completion",
@@ -5220,7 +5842,11 @@
     "category": "infrastructure",
     "description": "Alexander Graham Bell patented the telephone, using a vibrating diaphragm to convert sound to electrical signals.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Telefon_BW_2012-02-18_13-44-32.JPG/330px-Telefon_BW_2012-02-18_13-44-32.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telephone-diaphragm_mh7uvi?_a=BAMAMiiu0",
+    "color": "#252117",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "microphone-technology",
@@ -5238,7 +5864,11 @@
     "category": "infrastructure",
     "description": "The first commercial telephone exchange opened in New Haven, Connecticut, connecting 21 subscribers.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Jersey_Telecom_switchboard_and_operator.jpg/330px-Jersey_Telecom_switchboard_and_operator.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telephone-exchange-system_k0tw5x?_a=BAMAMiiu0",
+    "color": "#1f2220",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mild-steel-production",
@@ -5265,7 +5895,11 @@
     "category": "infrastructure",
     "description": "The Home Insurance Building in Chicago used a steel frame structure, pioneering modern skyscraper construction.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Steel_frame_structure.jpg/330px-Steel_frame_structure.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steel-frame-building_nzkek6?_a=BAMAMiiu0",
+    "color": "#7b7b77",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "time-zone-development",
@@ -5274,7 +5908,11 @@
     "category": "infrastructure",
     "description": "The International Meridian Conference in Washington established standardized time zones and the prime meridian at Greenwich.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/World_Time_Zones_Map.svg/330px-World_Time_Zones_Map.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/time-zone-development_g4jtvf?_a=BAMAMiiu0",
+    "color": "#444f6e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "transportation-map",
@@ -5301,7 +5939,11 @@
     "category": "infrastructure",
     "description": "Egyptian weavers developed reed shuttles to pass weft threads through the warp, speeding textile production.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Loom_2%2C_Lesbos_%28Skala_Sykamias%29.jpg/330px-Loom_2%2C_Lesbos_%28Skala_Sykamias%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reed-shuttle-developed_hbbykw?_a=BAMAMiiu0",
+    "color": "#211f2b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "iron-smelting-bloomery",
@@ -5310,7 +5952,11 @@
     "category": "infrastructure",
     "description": "Anatolian metalworkers developed bloomery furnaces to smelt iron ore, beginning the transition from the Bronze Age.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/%C5%9Awi%C4%99to_%C5%9Al%C4%85ska_piec_p.jpg/330px-%C5%9Awi%C4%99to_%C5%9Al%C4%85ska_piec_p.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-smelting-bloomery_ckq8o1?_a=BAMAMiiu0",
+    "color": "#1d212a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "water-clock-clepsydra",
@@ -5348,7 +5994,11 @@
     "category": "infrastructure",
     "description": "The drop spindle was invented in Mesopotamia, enabling efficient spinning of fibers into thread for weaving.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Drop_spindles.jpg/330px-Drop_spindles.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/drop-spindle-invented_zbfls0?_a=BAMAMiiu0",
+    "color": "#2f1c12",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gnomon-shadow-clock",
@@ -5366,7 +6016,11 @@
     "category": "infrastructure",
     "description": "Ancient peoples developed smoke signal systems for long-distance communication across open terrain.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/The_Smoke_Signal%2C_1905%2C_by_Frederic_S._Remington.jpg/330px-The_Smoke_Signal%2C_1905%2C_by_Frederic_S._Remington.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smoke-signal-systems_eghayp?_a=BAMAMiiu0",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tin-smelting-mines",
@@ -5375,7 +6029,11 @@
     "category": "infrastructure",
     "description": "Tin mining and smelting developed in Anatolia, providing the essential alloy component for bronze production.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Sn-Alpha-Beta.jpg/330px-Sn-Alpha-Beta.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tin-smelting-mines_ewl3i7?_a=BAMAMiiu0",
+    "color": "#74472f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fiber-preparation-flax",
@@ -5384,7 +6042,11 @@
     "category": "infrastructure",
     "description": "Egyptians developed retting and hackling techniques to prepare flax fibers for linen textile production.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_16%29_BHL303594.jpg/330px-K%C3%B6hler%27s_Medizinal-Pflanzen_in_naturgetreuen_Abbildungen_mit_kurz_erl%C3%A4uterndem_Texte_%28Plate_16%29_BHL303594.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fiber-preparation-flax_xnx40j?_a=BAMAMiiu0",
+    "color": "#5e3824",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "copper-smelting-developed",
@@ -5402,6 +6064,10 @@
     "category": "infrastructure",
     "description": "People in the Middle East began cold-hammering native copper nuggets into tools and ornaments.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Copper-21991.jpg/330px-Copper-21991.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/native-copper-working_xycaiq?_a=BAMAMiiu0",
+    "color": "#291f17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   }
 ]

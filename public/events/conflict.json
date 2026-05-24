@@ -4601,7 +4601,7 @@
     "image_height": 440,
     "wikipedia_views": 339733,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Bosworth_Field",
-    "color": "#25201e",
+    "color": "#25201f",
     "text_color": "light"
   },
   {
@@ -6291,7 +6291,11 @@
     "category": "conflict",
     "description": "Emperor Claudius launched the Roman invasion of Britain, establishing a province that lasted nearly four centuries.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Roman.Britain.campaigns.43.to.84.jpg/330px-Roman.Britain.campaigns.43.to.84.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romanization-britain_aq4gtk?_a=BAMAMiiu0",
+    "color": "#534e46",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "vercingetorix-gallic-revolt",
@@ -6300,7 +6304,11 @@
     "category": "conflict",
     "description": "Gallic chieftain Vercingetorix united the tribes against Caesar but was defeated at the Siege of Alesia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Vercing%C3%A9torix_stat%C3%A8re_Gallica_avers.jpg/330px-Vercing%C3%A9torix_stat%C3%A8re_Gallica_avers.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vercingetorix-gallic-revolt_lppxof?_a=BAMAMiiu0",
+    "color": "#543327",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "julius-caesar-conquest-gaul",
@@ -6327,7 +6335,11 @@
     "category": "conflict",
     "description": "Jewish rebels held out against a Roman siege atop a desert fortress before choosing mass suicide over capture.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Israel-2013-Aerial_21-Masada.jpg/330px-Israel-2013-Aerial_21-Masada.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/masada-siege-defense_cwqxjn?_a=BAMAMiiu0",
+    "color": "#5e342f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "agricola-britain-conquest",
@@ -6345,7 +6357,11 @@
     "category": "conflict",
     "description": "Nomadic Xiongnu clashed with the Han Dynasty along China's northern frontier for decades.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/ZhangQianTravels.jpg/330px-ZhangQianTravels.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/xiongnu-conflicts-han_yynkpw?_a=BAMAMiiu0",
+    "color": "#50505b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-of-wei-qiao",
@@ -6353,7 +6369,12 @@
     "year": -133,
     "category": "conflict",
     "description": "Han Emperor Wu launched an ambush campaign against the Xiongnu, escalating their frontier conflict.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-wei-qiao_ft9b3y?_a=BAMAMiiu0"
   },
   {
     "name": "han-expansion",
@@ -6362,9 +6383,11 @@
     "category": "conflict",
     "description": "Emperor Wu expanded Han territory into Central Asia, Korea, and Vietnam through aggressive military campaigns.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Han_Dynasty_2_BC_%28cropped%29.svg/330px-Han_Dynasty_2_BC_%28cropped%29.svg.png",
-    "color": "#adadae",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/han-expansion_gemooq?_a=BAMAMiiu0",
+    "color": "#4f322f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "punic-wars-second",
@@ -6373,7 +6396,11 @@
     "category": "conflict",
     "description": "Hannibal marched elephants over the Alps to invade Italy, threatening Rome's survival for over a decade.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Map_of_Rome_and_Carthage_at_the_start_of_the_Second_Punic_War.svg/330px-Map_of_Rome_and_Carthage_at_the_start_of_the_Second_Punic_War.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/punic-wars-second_ptvze1?_a=BAMAMiiu0",
+    "color": "#a9aeb4",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "aurelian-reunites-empire",
@@ -6382,7 +6409,11 @@
     "category": "conflict",
     "description": "Emperor Aurelian defeated the Palmyrene and Gallic empires, reunifying Rome after the Crisis of the Third Century.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/5305_-_Brescia_-_S._Giulia_-_Ritratto_di_Claudio_II_il_Gotico_-_Foto_Giovanni_Dall%27Orto%2C_25_Giu_2011.jpg/330px-5305_-_Brescia_-_S._Giulia_-_Ritratto_di_Claudio_II_il_Gotico_-_Foto_Giovanni_Dall%27Orto%2C_25_Giu_2011.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aurelian-reunites-empire_uym8yl?_a=BAMAMiiu0",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sima-yan-jin-unification",
@@ -6418,7 +6449,11 @@
     "category": "conflict",
     "description": "Hun pressure drove Germanic tribes westward across Roman borders, destabilizing the Western Roman Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/De_Neuville_-_The_Huns_at_the_Battle_of_Chalons.jpg/330px-De_Neuville_-_The_Huns_at_the_Battle_of_Chalons.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-migration-barbarians_xfpclc?_a=BAMAMiiu0",
+    "color": "#402e37",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "stilicho-roman-general",
@@ -6427,7 +6462,11 @@
     "category": "conflict",
     "description": "Half-Vandal general Stilicho defended the Western Roman Empire against Gothic and other barbarian invasions.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Diptych_of_Stilicho.jpg/330px-Diptych_of_Stilicho.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stilicho-roman-general_he1qkj?_a=BAMAMiiu0",
+    "color": "#2b2b28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "stirrup-east-asia",
@@ -6436,7 +6475,11 @@
     "category": "conflict",
     "description": "The stirrup emerged in China around the 4th century, revolutionizing mounted cavalry warfare across Asia.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/East_Asia_%28orthographic_projection%29.svg/330px-East_Asia_%28orthographic_projection%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stirrup-east-asia_czakfs?_a=BAMAMiiu0",
+    "color": "#341a0b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "anglo-saxon-migration",
@@ -6445,7 +6488,11 @@
     "category": "conflict",
     "description": "Germanic Angles, Saxons, and Jutes migrated to post-Roman Britain, gradually displacing the native Britons.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/2008-05-17-SuttonHoo_crop.jpg/330px-2008-05-17-SuttonHoo_crop.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anglo-saxon-migration_mkvauh?_a=BAMAMiiu0",
+    "color": "#3a3943",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "attila-hunnic-invasions",
@@ -6454,7 +6501,11 @@
     "category": "conflict",
     "description": "Attila the Hun invaded Gaul with a massive army but was halted at the Battle of the Catalaunian Plains.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Attila_%28K%C3%A9pes_kr%C3%B3nika%29_%28cropped%29.jpg/330px-Attila_%28K%C3%A9pes_kr%C3%B3nika%29_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/attila-hunnic-invasions_v2onua?_a=BAMAMiiu0",
+    "color": "#2a2220",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-of-catalaunian-plains",
@@ -6472,7 +6523,11 @@
     "category": "conflict",
     "description": "Gupta emperor Skandagupta repelled Hephthalite Hun invasions, briefly restoring the empire's military strength.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Skandagupta_Circa_455-480_CE.jpg/330px-Skandagupta_Circa_455-480_CE.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/skandagupta-gupta-restoration_uv19zx?_a=BAMAMiiu0",
+    "color": "#986d51",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hephthalite-invasions",
@@ -6481,7 +6536,11 @@
     "category": "conflict",
     "description": "The White Huns invaded the Sasanian Empire, killing King Peroz I and destabilizing Persia for decades.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Iran_%28official%29.svg/330px-Flag_of_Iran_%28official%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hephthalite-invasions_yeiyo8?_a=BAMAMiiu0",
+    "color": "#3c2c1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-of-vouille",
@@ -6490,7 +6549,11 @@
     "category": "conflict",
     "description": "Frankish king Clovis I defeated the Visigoths, driving them from most of Gaul into Iberia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Clovis_tue_Alaric_II.jpg/330px-Clovis_tue_Alaric_II.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-vouille_mpq5a6?_a=BAMAMiiu0",
+    "color": "#353128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "clovis-frankish-expansion",
@@ -6508,9 +6571,11 @@
     "category": "conflict",
     "description": "Byzantine Emperor Justinian launched a campaign to reconquer Italy from the Ostrogoths, devastating the peninsula.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png",
-    "color": "#cd2a36",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/justinian-gothic-war_hqdlhr?_a=BAMAMiiu0",
+    "color": "#806751",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "belisarius-gothic-war",
@@ -6563,7 +6628,11 @@
     "category": "conflict",
     "description": "Byzantine Emperor Heraclius launched a daring counter-invasion of Persia, winning the decisive Battle of Nineveh.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Heraclius_solidus.jpg/330px-Heraclius_solidus.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heraclius-campaigns-persia_llcobe?_a=BAMAMiiu0",
+    "color": "#422621",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-of-mu-ta",
@@ -6572,7 +6641,11 @@
     "category": "conflict",
     "description": "Early Muslims clashed with Byzantine forces in Transjordan in one of Islam's first major military engagements.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Battle_of_Mu%27tah_-_Strategic_Map_%28629_AD%29.svg/330px-Battle_of_Mu%27tah_-_Strategic_Map_%28629_AD%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-mu-ta_mnseld?_a=BAMAMiiu0",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "siege-of-damascus-636",
@@ -6581,7 +6654,11 @@
     "category": "conflict",
     "description": "Arab Muslim forces captured Damascus from the Byzantines, a pivotal early conquest of the Rashidun Caliphate.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gari-Melchers-War-Highsmith.jpeg/330px-Gari-Melchers-War-Highsmith.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-damascus-636_zj9reb?_a=BAMAMiiu0",
+    "color": "#3d2829",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "siege-of-jerusalem-638",
@@ -6599,7 +6676,11 @@
     "category": "conflict",
     "description": "Tang China's invasion of Goguryeo was repelled at Ansi Fortress, preserving Korean independence.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/History_of_Korea-476.PNG/330px-History_of_Korea-476.PNG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goguryeo-namgnang-battle_s6s5qj?_a=BAMAMiiu0",
+    "color": "#281d25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-karbala-husayn",
@@ -6608,7 +6689,11 @@
     "category": "conflict",
     "description": "Husayn ibn Ali was killed by Umayyad forces, creating the defining martyrdom of Shia Islam.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Brooklyn_Museum_-_Battle_of_Karbala_-_Abbas_Al-Musavi_-_cropped.jpg/330px-Brooklyn_Museum_-_Battle_of_Karbala_-_Abbas_Al-Musavi_-_cropped.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-karbala-husayn_eci5sx?_a=BAMAMiiu0",
+    "color": "#482726",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tikal-calakmul-war",
@@ -6626,9 +6711,11 @@
     "category": "conflict",
     "description": "A massive Arab naval and land assault on Constantinople was repelled, preserving the Byzantine Empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
-    "color": "#b1b08d",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-constantinople-arab_ji5bfl?_a=BAMAMiiu0",
+    "color": "#271e22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "charles-martel-frankish-victory",
@@ -6637,7 +6724,11 @@
     "category": "conflict",
     "description": "Frankish leader Charles Martel halted the Umayyad advance into Western Europe near Poitiers.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Charles_Martel_divise_le_royaume_entre_P%C3%A9pin_et_Carloman.jpg/330px-Charles_Martel_divise_le_royaume_entre_P%C3%A9pin_et_Carloman.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-martel-frankish-victory_gb4byg?_a=BAMAMiiu0",
+    "color": "#45311f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "charlemagne-saxon-wars",
@@ -6666,7 +6757,11 @@
     "category": "conflict",
     "description": "Viking longships reached peak design, enabling ocean crossings and shallow river raids across Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Viking_longship.png/330px-Viking_longship.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/longship-technology_adtcf2?_a=BAMAMiiu0",
+    "color": "#434a44",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chain-mail-evolution",
@@ -6675,7 +6770,11 @@
     "category": "conflict",
     "description": "Chain mail became standard armor for European knights, offering flexible protection in mounted combat.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cotte_de_Maille%2C_El_Bayadh%2C_Alg%C3%A9rie%2C_17%C3%A8me_si%C3%A8cle.jpg/330px-Cotte_de_Maille%2C_El_Bayadh%2C_Alg%C3%A9rie%2C_17%C3%A8me_si%C3%A8cle.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chain-mail-evolution_sxinm1?_a=BAMAMiiu0",
+    "color": "#31261f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "viking-dublin-settlement",
@@ -6684,7 +6783,11 @@
     "category": "conflict",
     "description": "Norse Vikings established a permanent longphort at Dublin, which became a major trading hub.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Dublin_-_aerial_-_2025-07-07_01.jpg/330px-Dublin_-_aerial_-_2025-07-07_01.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/viking-dublin-settlement_eawlqp?_a=BAMAMiiu0",
+    "color": "#212025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chola-naval-supremacy",
@@ -6702,9 +6805,11 @@
     "category": "conflict",
     "description": "Chinese armies deployed fire arrows, bombs, and early rockets, pioneering gunpowder warfare.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/330px-Flag_of_the_People%27s_Republic_of_China.svg.png",
-    "color": "#ee1c24",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-china-adoption_vbf1tc?_a=BAMAMiiu0",
+    "color": "#202028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "crossbow-adoption-medieval",
@@ -6713,7 +6818,11 @@
     "category": "conflict",
     "description": "The crossbow became widespread in European warfare, allowing untrained soldiers to pierce heavy armor.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Une_arbal%C3%A8te_classique.jpg/330px-Une_arbal%C3%A8te_classique.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossbow-adoption-medieval_nvheih?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "castle-fortification-shift",
@@ -6776,7 +6885,11 @@
     "category": "conflict",
     "description": "Crusaders captured Antioch after a grueling siege, establishing one of the major Crusader states.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/SiegeofAntioch.jpeg/330px-SiegeofAntioch.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antioch-crusader-conflicts_pdtlaa?_a=BAMAMiiu0",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "khwarezmian-shah-conquest",
@@ -6803,9 +6916,11 @@
     "category": "conflict",
     "description": "Dorian Greeks migrated into the Peloponnese during the Bronze Age collapse, reshaping Greek civilization.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Greece.svg/330px-Flag_of_Greece.svg.png",
-    "color": "#0b5cae",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dorian-invasion_owunzm?_a=BAMAMiiu0",
+    "color": "#362320",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ayyubid-saladin-crusades",
@@ -6841,7 +6956,11 @@
     "category": "conflict",
     "description": "Richard the Lionheart defended Jaffa against Saladin during the Third Crusade, securing a coastal truce.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Battle_of_Jaffa_%281192%29.jpg/330px-Battle_of_Jaffa_%281192%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jaffa-crusades_izse4z?_a=BAMAMiiu0",
+    "color": "#48453d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rajasthan-kingdoms",
@@ -6850,7 +6969,11 @@
     "category": "conflict",
     "description": "Rajput kingdoms battled Muslim invaders at the Battles of Tarain, shaping northern India's political future.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rajputana_1909.jpg/330px-Rajputana_1909.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rajasthan-kingdoms_huaz5g?_a=BAMAMiiu0",
+    "color": "#c5aa73",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "maya-postclassic-conflicts",
@@ -6859,7 +6982,11 @@
     "category": "conflict",
     "description": "Postclassic Maya city-states like Mayapan waged wars for dominance after the Classic period collapse.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mayamap.png/330px-Mayamap.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maya-postclassic-conflicts_ueh1hg?_a=BAMAMiiu0",
+    "color": "#4c3c29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tonga-tongan-conquest",
@@ -6877,7 +7004,11 @@
     "category": "conflict",
     "description": "West African kingdoms adopted iron stirrups, enabling cavalry forces that powered Sahel empire expansion.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sahara_Sahel_sub-Saharan_Africa.svg/330px-Sahara_Sahel_sub-Saharan_Africa.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-stirrups-africa_hyk2wq?_a=BAMAMiiu0",
+    "color": "#393235",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongolian-stirrup-cavalry",
@@ -6886,7 +7017,11 @@
     "category": "conflict",
     "description": "Mongol cavalry combined stirrups, composite bows, and tactical discipline into history's most effective mounted force.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pursuit_by_Mongol_Warriors_%28Diez_Albums%29.jpg/330px-Pursuit_by_Mongol_Warriors_%28Diez_Albums%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongolian-stirrup-cavalry_dporkq?_a=BAMAMiiu0",
+    "color": "#4a372b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fourth-crusade-byzantine",
@@ -6895,9 +7030,11 @@
     "category": "conflict",
     "description": "Crusaders diverted to sack Constantinople, fatally weakening the Byzantine Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Byzantine_Constantinople-en.png/330px-Byzantine_Constantinople-en.png",
-    "color": "#b1b08d",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fourth-crusade-byzantine_vmv5l4?_a=BAMAMiiu0",
+    "color": "#271e21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongol-conquest-china",
@@ -6915,7 +7052,11 @@
     "category": "conflict",
     "description": "Crusaders captured the Egyptian port of Damietta but ultimately failed to advance on Cairo.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Capturing_Damiate.jpg/330px-Capturing_Damiate.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/damietta-crusade-fifth_zl14sy?_a=BAMAMiiu0",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongol-conquest-khwarezm",
@@ -6924,7 +7065,11 @@
     "category": "conflict",
     "description": "Genghis Khan destroyed the Khwarezmian Empire after its shah executed Mongol envoys.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Map_of_Khwarazm_in_the_Islamic_period%2C_before_the_Mongol_invasion.svg/330px-Map_of_Khwarazm_in_the_Islamic_period%2C_before_the_Mongol_invasion.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-conquest-khwarezm_bbo5d7?_a=BAMAMiiu0",
+    "color": "#41302d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongol-invasions-europe",
@@ -6942,7 +7087,11 @@
     "category": "conflict",
     "description": "Batu Khan's forces crushed the Hungarian army at Mohi, killing much of the country's population.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Flag_of_Hungary.svg/330px-Flag_of_Hungary.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-hungary_jeoqpk?_a=BAMAMiiu0",
+    "color": "#574d3b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "seventh-crusade",
@@ -6978,7 +7127,11 @@
     "category": "conflict",
     "description": "Kublai Khan launched the first Mongol naval invasion of Japan, which was repelled by storms and resistance.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Mongol_invasions_of_Japan_1274%2C_1281.jpg/330px-Mongol_invasions_of_Japan_1274%2C_1281.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-naval-expeditions_tht7gb?_a=BAMAMiiu0",
+    "color": "#22211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongol-invasion-japan-first",
@@ -6996,7 +7149,11 @@
     "category": "conflict",
     "description": "Kublai Khan defeated the Southern Song at the naval Battle of Yamen, unifying China under the Yuan Dynasty.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/YuanEmperorAlbumKhubilaiPortrait.jpg/330px-YuanEmperorAlbumKhubilaiPortrait.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-khubilai-conquest_fmfivd?_a=BAMAMiiu0",
+    "color": "#332d28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mongol-invasion-japan-second",
@@ -7005,7 +7162,11 @@
     "category": "conflict",
     "description": "A massive Mongol fleet was destroyed by a typhoon, called kamikaze ('divine wind') by the Japanese.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Mongol_Empire_map.gif/330px-Mongol_Empire_map.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-japan-second_ycaz9b?_a=BAMAMiiu0",
+    "color": "#24211c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "acre-final-siege",
@@ -7014,7 +7175,11 @@
     "category": "conflict",
     "description": "Mamluk forces captured Acre, the last major Crusader stronghold, ending the Crusader presence in the Holy Land.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Acre_superimposed_over_football_fields.svg/330px-Acre_superimposed_over_football_fields.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/acre-final-siege_ocfgev?_a=BAMAMiiu0",
+    "color": "#3c2e1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "alauddin-khalji-conquest",
@@ -7023,7 +7188,11 @@
     "category": "conflict",
     "description": "Delhi Sultan Alauddin Khalji conquered much of southern India and repelled multiple Mongol invasions.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/The_Execution_of_Jalal-al-Din_Firuzshah_II_%28r1290-96%29%2C_Jami_al-Tawarikh_%28Alauddin_Khalji_detail%29.jpg/330px-The_Execution_of_Jalal-al-Din_Firuzshah_II_%28r1290-96%29%2C_Jami_al-Tawarikh_%28Alauddin_Khalji_detail%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alauddin-khalji-conquest_pjdxsr?_a=BAMAMiiu0",
+    "color": "#4d3826",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "champa-vietnam-conflicts",
@@ -7032,7 +7201,11 @@
     "category": "conflict",
     "description": "The Champa kingdom and Dai Viet fought repeatedly, with Mongol invasions further destabilizing the region.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Map-of-southeast-asia_1000_-_1100_CE.png/330px-Map-of-southeast-asia_1000_-_1100_CE.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/champa-vietnam-conflicts_gfteno?_a=BAMAMiiu0",
+    "color": "#202121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "maori-pa-fortification",
@@ -7050,7 +7223,11 @@
     "category": "conflict",
     "description": "Catalan mercenaries hired by Byzantium turned rogue, ravaging Greece and seizing the Duchy of Athens.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Cr%C3%B2nica_de_Ramon_Muntaner.jpg/330px-Cr%C3%B2nica_de_Ramon_Muntaner.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/catalan-grand-company_tdex8w?_a=BAMAMiiu0",
+    "color": "#382e27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mali-civil-war",
@@ -7068,7 +7245,11 @@
     "category": "conflict",
     "description": "The Ottomans created the Janissary corps, an elite slave-soldier infantry that became Europe's first standing army.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lambert_Wyts_-_Agha_of_the_Janissaries_and_a_B%C3%B6l%C3%BCk_of_the_Janissaries.jpg/330px-Lambert_Wyts_-_Agha_of_the_Janissaries_and_a_B%C3%B6l%C3%BCk_of_the_Janissaries.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-standing-army_ycvrgd?_a=BAMAMiiu0",
+    "color": "#1f2124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "timur-tamerlane-conqueror",
@@ -7077,7 +7258,11 @@
     "category": "conflict",
     "description": "Turco-Mongol conqueror Timur launched devastating campaigns from Persia to India, building a vast empire.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Timur_reconstruction03.jpg/330px-Timur_reconstruction03.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/timur-tamerlane-conqueror_yzhsm9?_a=BAMAMiiu0",
+    "color": "#261f21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gunpowder-weapons-adoption",
@@ -7095,7 +7280,11 @@
     "category": "conflict",
     "description": "The Janissaries adopted firearms early, making the Ottoman military one of the first gunpowder armies.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Lambert_Wyts_-_Agha_of_the_Janissaries_and_a_B%C3%B6l%C3%BCk_of_the_Janissaries.jpg/330px-Lambert_Wyts_-_Agha_of_the_Janissaries_and_a_B%C3%B6l%C3%BCk_of_the_Janissaries.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-military-innovation_lvbgoc?_a=BAMAMiiu0",
+    "color": "#3c2719",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "oyo-empire-military-innovation",
@@ -7104,7 +7293,11 @@
     "category": "conflict",
     "description": "The Oyo Empire in West Africa built a powerful cavalry force that dominated the Yoruba region.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Oyo_Empire_at_Its_Greatest_Extent%2C_c._1780_%285%29.jpg/330px-Oyo_Empire_at_Its_Greatest_Extent%2C_c._1780_%285%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oyo-empire-military-innovation_ij4iia?_a=BAMAMiiu0",
+    "color": "#533f39",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hussite-wars",
@@ -7113,7 +7306,11 @@
     "category": "conflict",
     "description": "Czech followers of Jan Hus fought Catholic crusaders using innovative wagon-fort tactics.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hussitenkriege.tif/lossy-page1-330px-Hussitenkriege.tif.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hussite-wars_rduyww?_a=BAMAMiiu0",
+    "color": "#45372e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ottoman-siege-galata",
@@ -7122,7 +7319,11 @@
     "category": "conflict",
     "description": "Sultan Murad II besieged Constantinople but failed to breach its walls, delaying Ottoman conquest by decades.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Istanbul_asv2020-02_img47_Galata_Tower.jpg/330px-Istanbul_asv2020-02_img47_Galata_Tower.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-siege-galata_l6hyop?_a=BAMAMiiu0",
+    "color": "#222025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "aztec-expansion-conquests",
@@ -7131,7 +7332,11 @@
     "category": "conflict",
     "description": "Under Montezuma I, the Aztec Triple Alliance expanded aggressively through central Mexico.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aztec_Empire_ME_%28orthographic_projection%29.svg/330px-Aztec_Empire_ME_%28orthographic_projection%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aztec-expansion-conquests_sz6d56?_a=BAMAMiiu0",
+    "color": "#2b1e15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "inca-expansion",
@@ -7140,7 +7345,11 @@
     "category": "conflict",
     "description": "Pachacuti transformed the Inca from a small kingdom into the largest empire in the pre-Columbian Americas.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suntur_Paucar.svg/330px-Suntur_Paucar.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inca-expansion_b1wlgx?_a=BAMAMiiu0",
+    "color": "#433f3c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gunpowder-military-adoption-europe",
@@ -7149,7 +7358,11 @@
     "category": "conflict",
     "description": "Cannons and handguns reshaped European warfare, ending the dominance of castles and armored knights.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Chinese_Gunpowder_Formula.JPG/330px-Chinese_Gunpowder_Formula.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-military-adoption-europe_kmupy8?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "fall-constantinople-1453",
@@ -7167,7 +7380,11 @@
     "category": "conflict",
     "description": "Mehmed II's 53-day siege breached the Theodosian Walls, ending over a millennium of Roman imperial continuity.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Gari-Melchers-War-Highsmith.jpeg/330px-Gari-Melchers-War-Highsmith.jpeg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-final-siege-1453_vuhwe8?_a=BAMAMiiu0",
+    "color": "#5a3a27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hundred-years-war-conclusion",
@@ -7176,7 +7393,11 @@
     "category": "conflict",
     "description": "France's victory at Castillon ended the 116-year Anglo-French conflict, expelling England from the continent.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Schlacht_von_Azincourt.jpg/330px-Schlacht_von_Azincourt.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hundred-years-war-conclusion_ikkysv?_a=BAMAMiiu0",
+    "color": "#473f41",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "shimazu-sengoku",
@@ -7194,7 +7415,11 @@
     "category": "conflict",
     "description": "Topa Inca Yupanqui conquered the Chimor kingdom and expanded the empire into Ecuador and Chile.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suntur_Paucar.svg/330px-Suntur_Paucar.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inca-conquest-expansion_djdz7c?_a=BAMAMiiu0",
+    "color": "#473531",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "inca-tupac-amaru",
@@ -7212,7 +7437,11 @@
     "category": "conflict",
     "description": "Ferdinand and Isabella captured Granada, ending nearly 800 years of Muslim rule in Iberia.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cantigas_battle.jpg/330px-Cantigas_battle.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reconquista-completion_fjnvry?_a=BAMAMiiu0",
+    "color": "#653824",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "italian-wars",
@@ -7230,7 +7459,11 @@
     "category": "conflict",
     "description": "Askia Muhammad expanded the Songhai Empire across West Africa, creating the region's largest state.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/songhai-expansion_zk2vmb?_a=BAMAMiiu0",
+    "color": "#562a17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "oromo-expansion",
@@ -7239,7 +7472,11 @@
     "category": "conflict",
     "description": "Oromo pastoralists migrated northward through the Ethiopian highlands, reshaping the region's demographics.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Map_of_East_Africa_Countries.svg/330px-Map_of_East_Africa_Countries.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oromo-expansion_i1inlu?_a=BAMAMiiu0",
+    "color": "#453229",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ming-great-wall",
@@ -7248,7 +7485,11 @@
     "category": "conflict",
     "description": "The Ming Dynasty rebuilt and extended the Great Wall with brick and stone to defend against Mongol raids.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg/330px-The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ming-great-wall_t6sogt?_a=BAMAMiiu0",
+    "color": "#404277",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "songhai-military-gunpowder",
@@ -7257,7 +7498,11 @@
     "category": "conflict",
     "description": "The Songhai Empire employed gunpowder weapons acquired through trans-Saharan trade networks.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Map_of_the_Songhay_Empire.png/330px-Map_of_the_Songhay_Empire.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/songhai-military-gunpowder_qxyksg?_a=BAMAMiiu0",
+    "color": "#aeaea5",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "inca-civil-war-dispute",
@@ -7275,7 +7520,11 @@
     "category": "conflict",
     "description": "The Kanem-Bornu Empire acquired Ottoman firearms, strengthening its military in the Lake Chad region.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Kanem%E2%80%93Bornu%2C_13th_century.png/330px-Kanem%E2%80%93Bornu%2C_13th_century.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kanem-bornu-gunpowder-adoption_tbpiqb?_a=BAMAMiiu0",
+    "color": "#2a1e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "songhai-military-organization",
@@ -7302,7 +7551,11 @@
     "category": "conflict",
     "description": "Portuguese forces sacked and occupied Mombasa, asserting control over Indian Ocean trade routes.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Mombasa_Island.jpg/330px-Mombasa_Island.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mombasa-portuguese-control_ufslj1?_a=BAMAMiiu0",
+    "color": "#5a4b3e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "shaybanid-bukhara-captured",
@@ -7311,7 +7564,11 @@
     "category": "conflict",
     "description": "Uzbek Shaybanid forces captured Bukhara and Samarkand, ending Timurid rule in Central Asia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5b/Shaybani_ger.jpg/330px-Shaybani_ger.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shaybanid-bukhara-captured_jmride?_a=BAMAMiiu0",
+    "color": "#5a3d30",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "portuguese-goa-conquest",
@@ -7331,7 +7588,11 @@
     "category": "conflict",
     "description": "Portugal bombarded and dominated Calicut's trade, enforcing a monopoly on Indian Ocean spice routes.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Kozhikode_beach_kites.jpg/330px-Kozhikode_beach_kites.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portuguese-calicut-control_x97yok?_a=BAMAMiiu0",
+    "color": "#353945",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "safavid-battled-ottomans",
@@ -7349,7 +7610,11 @@
     "category": "conflict",
     "description": "Hernan Cortes and indigenous allies besieged and captured Tenochtitlan, destroying the Aztec Empire.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aztec_Empire_ME_%28orthographic_projection%29.svg/330px-Aztec_Empire_ME_%28orthographic_projection%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-conquest-aztec_pxpnsb?_a=BAMAMiiu0",
+    "color": "#5c3a2e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "madura-sultanate-fall",
@@ -7358,9 +7623,11 @@
     "category": "conflict",
     "description": "The Madura Sultanate on Java was overthrown by the expanding Majapahit Empire.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Southeast_Asia_%28orthographic_projection%29.svg/330px-Southeast_Asia_%28orthographic_projection%29.svg.png",
-    "color": "#adadad",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/madura-sultanate-fall_vnpmtk?_a=BAMAMiiu0",
+    "color": "#2b1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spanish-tercio-formation",
@@ -7387,7 +7654,11 @@
     "category": "conflict",
     "description": "Pizarro executed Atahualpa and captured Cusco, toppling the Inca Empire.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Montaje_2_conquista_del_Peru.png/330px-Montaje_2_conquista_del_Peru.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-conquest-peru_o8fdcm?_a=BAMAMiiu0",
+    "color": "#343132",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "araucanians",
@@ -7405,7 +7676,11 @@
     "category": "conflict",
     "description": "The Mapuche fought a prolonged guerrilla war against Spanish colonizers in southern Chile.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Mapa_Chile_Espa%C3%B1oles_y_Araucanos.jpg/330px-Mapa_Chile_Espa%C3%B1oles_y_Araucanos.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mapuche-arauco-war_ikkfpr?_a=BAMAMiiu0",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mughal-akbar",
@@ -7414,7 +7689,11 @@
     "category": "conflict",
     "description": "Emperor Akbar won the Second Battle of Panipat and expanded Mughal rule across most of the Indian subcontinent.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg/330px-Govardhan._Akbar_With_Lion_and_Calf_ca._1630%2C_Metmuseum_%28cropped%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mughal-akbar_zeshue?_a=BAMAMiiu0",
+    "color": "#8e5930",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wars-of-religion-france",
@@ -7423,9 +7702,11 @@
     "category": "conflict",
     "description": "Decades of civil war between French Catholics and Huguenots devastated France and killed millions.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/330px-Flag_of_France.svg.png",
-    "color": "#cd1025",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wars-of-religion-france_pmwggm?_a=BAMAMiiu0",
+    "color": "#242020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "oda-nobunaga-unification",
@@ -7434,7 +7715,11 @@
     "category": "conflict",
     "description": "Warlord Oda Nobunaga began unifying Japan through military innovation, including mass use of firearms.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Odanobunaga.jpg/330px-Odanobunaga.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oda-nobunaga-unification_iyipzs?_a=BAMAMiiu0",
+    "color": "#261f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ottoman-janissary-corps",
@@ -7470,7 +7755,11 @@
     "category": "conflict",
     "description": "Admiral Yi Sun-sin deployed armored turtle ships to devastating effect against the Japanese navy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Turtle_boat.jpg/330px-Turtle_boat.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/imjin-war-turtle-ship_g4dvic?_a=BAMAMiiu0",
+    "color": "#291f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mombasa-fort",
@@ -7517,7 +7806,11 @@
     "category": "conflict",
     "description": "Cossack leader Yermak crossed the Urals to defeat the Siberian Khanate, beginning Russia's eastward expansion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Vasily_Surikov_-_Yermak%27s_Conquest_of_Siberia_-_Google_Art_Project.jpg/330px-Vasily_Surikov_-_Yermak%27s_Conquest_of_Siberia_-_Google_Art_Project.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russian-expansion-siberia_mq6wdt?_a=BAMAMiiu0",
+    "color": "#c4aa78",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "trinh-nguyen-civil-war",
@@ -7526,9 +7819,11 @@
     "category": "conflict",
     "description": "Vietnam split between the Trinh lords in the north and Nguyen lords in the south for over a century.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png",
-    "color": "#da251d",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trinh-nguyen-civil-war_p5g5t1?_a=BAMAMiiu0",
+    "color": "#2d2a25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "shimabara-rebellion",
@@ -7537,7 +7832,11 @@
     "category": "conflict",
     "description": "Japanese Christian peasants revolted against persecution; their defeat led to Japan's isolation policy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Shimabara-Battle-Map-c17th-century.png/330px-Shimabara-Battle-Map-c17th-century.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shimabara-rebellion_hpglus?_a=BAMAMiiu0",
+    "color": "#3d3735",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "portuguese-restoration-war",
@@ -7564,7 +7863,11 @@
     "category": "conflict",
     "description": "Manchu forces captured Beijing and established the Qing Dynasty, conquering all of China over decades.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_China_%281889%E2%80%931912%29.svg/330px-Flag_of_China_%281889%E2%80%931912%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qing-expansion_i9nevr?_a=BAMAMiiu0",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "louis-xiv-expansion",
@@ -7573,7 +7876,11 @@
     "category": "conflict",
     "description": "Louis XIV invaded the Spanish Netherlands in the War of Devolution, beginning decades of French expansion.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_%28by_Hyacinthe_Rigaud%29_-_Louvre_Museum.jpg/330px-Portrait_of_Louis_XIV_of_France_in_Coronation_Robes_%28by_Hyacinthe_Rigaud%29_-_Louvre_Museum.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/louis-xiv-expansion_lq2ee8?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "asante-confederacy-military",
@@ -7582,7 +7889,11 @@
     "category": "conflict",
     "description": "The Asante Confederacy built a powerful military with firearms, dominating the Gold Coast region.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Asante_map.jpg/330px-Asante_map.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asante-confederacy-military_a1hust?_a=BAMAMiiu0",
+    "color": "#27201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "llanquihue-battle",
@@ -7591,7 +7902,11 @@
     "category": "conflict",
     "description": "Mapuche forces defeated Spanish settlers in southern Chile during a widespread indigenous uprising.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ancient_mapuche_flag.svg/330px-Ancient_mapuche_flag.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/llanquihue-battle_tsqpij?_a=BAMAMiiu0",
+    "color": "#393530",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "aurangzeb-expansion-begin",
@@ -7609,7 +7924,11 @@
     "category": "conflict",
     "description": "Denmark and Sweden fought repeatedly for Baltic dominance, with Sweden marching across the frozen Great Belt.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/T%C3%A5get_%C3%B6ver_b%C3%A4lt2.jpg/330px-T%C3%A5get_%C3%B6ver_b%C3%A4lt2.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/danish-swedish-wars_urfqjj?_a=BAMAMiiu0",
+    "color": "#22211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "maratha-resistance-begins",
@@ -7627,7 +7946,11 @@
     "category": "conflict",
     "description": "Peter the Great rebuilt Russia's army along European lines after his Grand Embassy tour of the West.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg/330px-Inconnu_d%27apr%C3%A8s_J.-M._Nattier%2C_Portrait_de_Pierre_Ier_%28mus%C3%A9e_de_l%E2%80%99Ermitage%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peter-great-reforms_uoc4zd?_a=BAMAMiiu0",
+    "color": "#434755",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "kangxi-military-campaigns",
@@ -7636,7 +7959,11 @@
     "category": "conflict",
     "description": "Emperor Kangxi suppressed the Three Feudatories rebellion and later conquered Taiwan and fought the Dzungars.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/%E6%B8%85%E5%9C%A3%E7%A5%96%E5%BA%B7%E7%86%99%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F.jpg/330px-%E6%B8%85%E5%9C%A3%E7%A5%96%E5%BA%B7%E7%86%99%E7%9A%87%E5%B8%9D%E6%9C%9D%E6%9C%8D%E5%83%8F.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kangxi-military-campaigns_hcmhld?_a=BAMAMiiu0",
+    "color": "#3e302a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "deccan-campaigns-mughal",
@@ -7645,7 +7972,11 @@
     "category": "conflict",
     "description": "Aurangzeb captured and executed Maratha king Sambhaji, but guerrilla resistance drained Mughal resources.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Early_Maratha_History-Joppen.jpg/330px-Early_Maratha_History-Joppen.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/deccan-campaigns-mughal_gjxtku?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "qing-conquers-mongolia",
@@ -7654,7 +7985,11 @@
     "category": "conflict",
     "description": "Emperor Kangxi personally led campaigns that defeated the Dzungar Mongols at Zuunmod.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Flag_of_China_%281889%E2%80%931912%29.svg/330px-Flag_of_China_%281889%E2%80%931912%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qing-conquers-mongolia_wmnwun?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sikh-khalsa-panth",
@@ -7663,7 +7998,11 @@
     "category": "conflict",
     "description": "Guru Gobind Singh founded the Khalsa, transforming the Sikh community into a martial brotherhood.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Khanda_%28Sikh_Symbol%29.svg/330px-Khanda_%28Sikh_Symbol%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikh-khalsa-panth_pbm1di?_a=BAMAMiiu0",
+    "color": "#2b1d1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "prussian-discipline-training",
@@ -7672,7 +8011,11 @@
     "category": "conflict",
     "description": "Frederick William I created Prussia's rigorous military drill system, building Europe's most disciplined army.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/War_Ensign_of_Prussia_%281816%29.svg/330px-War_Ensign_of_Prussia_%281816%29.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/prussian-discipline-training_kjagqa?_a=BAMAMiiu0",
+    "color": "#8e6c47",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "military-academy-russia",
@@ -7681,7 +8024,11 @@
     "category": "conflict",
     "description": "Russia established the Noble Cadet Corps in St. Petersburg, formalizing military officer training.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/10_Representation_of_the_Uniforms_of_the_Russian_Imperial_Army.jpg/330px-10_Representation_of_the_Uniforms_of_the_Russian_Imperial_Army.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/military-academy-russia_mmfkk2?_a=BAMAMiiu0",
+    "color": "#3c352a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sikh-mughal-conflicts",
@@ -7689,7 +8036,12 @@
     "year": 1705,
     "category": "conflict",
     "description": "Sikh warrior bands clashed with Mughal forces across Punjab after the execution of Guru Tegh Bahadur.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "color": "#261f21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikh-mughal-conflicts_z6pip3?_a=BAMAMiiu0"
   },
   {
     "name": "asante-akwamu-conquest",
@@ -7707,9 +8059,11 @@
     "category": "conflict",
     "description": "Jamaican Maroons fought the British to a peace treaty recognizing their autonomy and land rights.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/330px-Flag_of_Jamaica.svg.png",
-    "color": "#e39f00",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maroon-wars-jamaica_bkep5e?_a=BAMAMiiu0",
+    "color": "#222122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "frederick-great-militarism",
@@ -7738,7 +8092,11 @@
     "category": "conflict",
     "description": "Burma and Siam fought devastating wars, culminating in the Burmese destruction of Ayutthaya.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Burmese-Siamese_war_%281765-1767%29_map_-_EN_-_001.jpg/330px-Burmese-Siamese_war_%281765-1767%29_map_-_EN_-_001.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/burmese-siamese-wars_mvcmex?_a=BAMAMiiu0",
+    "color": "#2d1d17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ayutthaya-fall",
@@ -7747,7 +8105,11 @@
     "category": "conflict",
     "description": "Burmese forces sacked Ayutthaya, destroying the 400-year-old Siamese capital and its cultural treasures.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Burmese-Siamese_war_%281765-1767%29_map_-_EN_-_001.jpg/330px-Burmese-Siamese_war_%281765-1767%29_map_-_EN_-_001.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ayutthaya-fall_vvafym?_a=BAMAMiiu0",
+    "color": "#26201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tay-son-rebellion",
@@ -7756,9 +8118,11 @@
     "category": "conflict",
     "description": "Three brothers led a peasant uprising that overthrew both the Nguyen and Trinh lords, briefly unifying Vietnam.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/330px-Flag_of_Vietnam.svg.png",
-    "color": "#da251d",
-    "text_color": "light"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tay-son-rebellion_xud2f0?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "washington-appointed-commander",
@@ -7767,7 +8131,11 @@
     "category": "conflict",
     "description": "The Continental Congress appointed George Washington as commander-in-chief of the Continental Army.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/330px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/washington-appointed-commander_m7soyc?_a=BAMAMiiu0",
+    "color": "#2c1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "valley-forge-winter",
@@ -7776,7 +8144,11 @@
     "category": "conflict",
     "description": "Washington's army endured a brutal winter at Valley Forge but emerged as a disciplined fighting force.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Washington_and_Lafayette_at_Valley_Forge.jpg/330px-Washington_and_Lafayette_at_Valley_Forge.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/valley-forge-winter_xpnxyn?_a=BAMAMiiu0",
+    "color": "#565e65",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "yorktown-surrender",
@@ -7785,7 +8157,11 @@
     "category": "conflict",
     "description": "British General Cornwallis surrendered at Yorktown, effectively ending the American Revolutionary War.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yorktown-surrender_wufomd?_a=BAMAMiiu0",
+    "color": "#301e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "war-declared-austria",
@@ -7803,7 +8179,11 @@
     "category": "conflict",
     "description": "The United States fought North African pirates to end tribute payments and protect American shipping.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Burning_of_the_uss_philadelphia.jpg/330px-Burning_of_the_uss_philadelphia.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barbary-wars_eesdkd?_a=BAMAMiiu0",
+    "color": "#b9ac92",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "napoleonic-wars-begin",
@@ -7821,7 +8201,11 @@
     "category": "conflict",
     "description": "Napoleon invaded Spain, provoking a brutal guerrilla war that drained French resources for six years.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Peninsular_war_collage.jpg/330px-Peninsular_war_collage.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peninsular-war_nt8pwm?_a=BAMAMiiu0",
+    "color": "#2f2a23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "napoleon-retreat-russia",
@@ -7830,7 +8214,11 @@
     "category": "conflict",
     "description": "Napoleon invaded Russia with 600,000 troops but retreated in devastating winter conditions, losing most of his army.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/330px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napoleon-retreat-russia_pqeyyt?_a=BAMAMiiu0",
+    "color": "#b3ad9d",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "battle-waterloo-napoleon",
@@ -7866,7 +8254,11 @@
     "category": "conflict",
     "description": "Shaka organized Zulu warriors into age-based impis using the 'horns of the buffalo' encirclement tactic.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Zuluchargegutt.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zulu-impis-regiment_bncm0z?_a=BAMAMiiu0",
+    "color": "#4b483e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sotho-moshoeshoe-reforms",
@@ -7875,7 +8267,11 @@
     "category": "conflict",
     "description": "King Moshoeshoe I united the Sotho people at Thaba Bosiu, using diplomacy and defense to survive the Mfecane.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/King_Moshoeshoe_of_the_Sotho_-_Lesotho_-_from_the_Natal_Archives.jpg/330px-King_Moshoeshoe_of_the_Sotho_-_Lesotho_-_from_the_Natal_Archives.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sotho-moshoeshoe-reforms_mymeds?_a=BAMAMiiu0",
+    "color": "#53504a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "maori-musket-wars",
@@ -7884,7 +8280,11 @@
     "category": "conflict",
     "description": "Maori tribes with European muskets launched devastating raids, reshaping New Zealand's tribal landscape.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MaoriWardanceKahuroa.jpg/330px-MaoriWardanceKahuroa.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maori-musket-wars_div1iq?_a=BAMAMiiu0",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "opium-wars-second",
@@ -7893,7 +8293,11 @@
     "category": "conflict",
     "description": "Britain and France forced China to open more ports and legalize the opium trade after military defeat.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/La_bataille_de_Palikiao.jpg/330px-La_bataille_de_Palikiao.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/opium-wars-second_nidmth?_a=BAMAMiiu0",
+    "color": "#6f6c64",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "american-civil-war",
@@ -7920,7 +8324,11 @@
     "category": "conflict",
     "description": "The US dropped a plutonium bomb on Nagasaki three days after Hiroshima, hastening Japan's surrender.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Atomic_bombing_of_Japan.jpg/330px-Atomic_bombing_of_Japan.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/atomic-bomb-nagasaki-ww2_bbgyvo?_a=BAMAMiiu0",
+    "color": "#26201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "korean-war-begins-1950",
@@ -7947,8 +8355,10 @@
     "category": "conflict",
     "description": "The Gulf of Tonkin incident led to massive US military escalation in Vietnam.",
     "difficulty": "easy",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg/330px-U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c%2C_Vietnam%2C_12_July_1970_%2879431435%29.jpg",
-    "color": "#acaeae",
-    "text_color": "dark"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vietnam-war-escalates-1964_fdz2fk?_a=BAMAMiiu0",
+    "color": "#293138",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   }
 ]
