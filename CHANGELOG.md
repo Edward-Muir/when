@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.9](https://github.com/Edward-Muir/when/compare/v0.10.8...v0.10.9) (2026-05-24)
+
+
+### Bug Fixes
+
+* Fix verbose names, fix detailed image load time ([644a6ac](https://github.com/Edward-Muir/when/commit/644a6acea8a8c82206630706da9bea79a87dfe85))
+
 ## [0.10.8](https://github.com/Edward-Muir/when/compare/v0.10.7...v0.10.8) (2026-05-24)
 
 
