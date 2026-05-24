@@ -19,6 +19,8 @@ interface TimelineProps {
   animationPhase: AnimationPhase;
   // Streak
   currentStreak?: number;
+  // Whether placed events should preload their full-size detail image (off in view mode)
+  preloadDetailImages?: boolean;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -47,6 +49,7 @@ const Timeline: React.FC<TimelineProps> = ({
   lastPlacementResult,
   animationPhase,
   currentStreak = 0,
+  preloadDetailImages = true,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasInitialScrolled = useRef(false);
@@ -165,6 +168,7 @@ const Timeline: React.FC<TimelineProps> = ({
                   rippleTrigger={rippleData?.timestamp}
                   glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
                   rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
+                  preloadDetailImages={preloadDetailImages}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}
                 {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (

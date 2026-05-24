@@ -28,6 +28,8 @@ interface TimelineEventProps {
   glowIntensity?: GlowIntensity;
   // Streak-aware ripple amplitude multiplier
   rippleAmplitudeMultiplier?: number;
+  // Whether to preload the full-size detail image (disabled on the View Timeline page)
+  preloadDetailImages?: boolean;
 }
 
 // Extracted image section to reduce component complexity
@@ -215,11 +217,13 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   rippleTrigger,
   glowIntensity,
   rippleAmplitudeMultiplier,
+  preloadDetailImages = true,
 }) => {
   const shouldReduceMotion = useReducedMotion();
 
   // Warm the full-size detail image so tapping this event opens its popup instantly.
-  useImagePreload(getImageUrl(event.image_url, 'detail'));
+  // Disabled on the View Timeline page, where every event renders at once.
+  useImagePreload(preloadDetailImages ? getImageUrl(event.image_url, 'detail') : undefined);
 
   const { cardAnimationClass, isSuccessAnimation, isErrorAnimation, shouldPopYear, isMovingPhase } =
     useEventAnimations(
