@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.7](https://github.com/Edward-Muir/when/compare/v0.10.6...v0.10.7) (2026-05-24)
+
+
+### Features
+
+* Add many new events ([c9f4bdf](https://github.com/Edward-Muir/when/commit/c9f4bdf6be37be6ada145ddbcf8b9226876e6dc2))
+* Add many new events ([8663d4c](https://github.com/Edward-Muir/when/commit/8663d4c985c47342b1bad16c26bcdff57740ac80))
+
 ## [0.10.6](https://github.com/Edward-Muir/when/compare/v0.10.5...v0.10.6) (2026-04-24)
 
 
