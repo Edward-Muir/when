@@ -101,9 +101,11 @@ body {
   user-select: none;
 }
 
-/* Timeline scroll optimization for mobile */
+/* Timeline scroll: native momentum + native elastic rubber-band overscroll (iOS/Android). */
 .timeline-scroll-vertical {
   -webkit-overflow-scrolling: touch;
+  /* `contain` blocks scroll-chaining to the page while keeping the inner bounce affordance.
+     If the inner scroller doesn't rubber-band on a given platform, switch this to `auto`. */
   overscroll-behavior-y: contain;
   scrollbar-width: thin;
   scrollbar-color: var(--color-accent) var(--color-bg);
