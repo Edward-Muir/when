@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.11](https://github.com/Edward-Muir/when/compare/v0.10.10...v0.10.11) (2026-05-26)
+
+
+### Features
+
+* Center first timeline card and add elastic scrolling ([25d6aa2](https://github.com/Edward-Muir/when/commit/25d6aa22cc078d8002fc8a1f141384bfe431e5e3))
+
 ## [0.10.10](https://github.com/Edward-Muir/when/compare/v0.10.9...v0.10.10) (2026-05-24)
 
 
