@@ -268,6 +268,7 @@ const Game: React.FC<GameProps> = ({
               lastPlacementResult={state.lastPlacementResult}
               animationPhase={state.animationPhase}
               currentStreak={state.currentStreak}
+              enableCentering={true}
             />
           </div>
 

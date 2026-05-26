@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useMemo, useState } from 'react';
+import React, { useRef, useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
 import TimelineEvent, { RIPPLE_DURATION_MS } from './TimelineEvent';
@@ -21,6 +21,8 @@ interface TimelineProps {
   currentStreak?: number;
   // Whether placed events should preload their full-size detail image (off in view mode)
   preloadDetailImages?: boolean;
+  // Center the first card in the viewport on game start (default false; on in gameplay, off in view mode)
+  enableCentering?: boolean;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -50,9 +52,11 @@ const Timeline: React.FC<TimelineProps> = ({
   animationPhase,
   currentStreak = 0,
   preloadDetailImages = true,
+  enableCentering = false,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const hasInitialScrolled = useRef(false);
+  const hasCenteredRef = useRef(false);
+  const prevLen = useRef(events.length);
 
   // Make the entire timeline a single drop zone
   const { setNodeRef: setTimelineDropRef } = useDroppable({
@@ -100,21 +104,38 @@ const Timeline: React.FC<TimelineProps> = ({
     return distances;
   }, [rippleData, events]);
 
-  // Center the timeline content vertically on initial load
+  // Re-arm the one-time centering whenever a new game starts (timeline goes empty -> populated)
   useEffect(() => {
-    if (!hasInitialScrolled.current && scrollRef.current && events.length > 0) {
-      // Small delay to allow the DOM to render
-      setTimeout(() => {
-        const container = scrollRef.current;
-        if (container) {
-          // Scroll to center the content vertically
-          const scrollTop = (container.scrollHeight - container.clientHeight) / 2;
-          container.scrollTop = scrollTop;
-          hasInitialScrolled.current = true;
-        }
-      }, 50);
+    if (prevLen.current === 0 && events.length > 0) {
+      hasCenteredRef.current = false;
     }
+    prevLen.current = events.length;
   }, [events.length]);
+
+  // Center the first card in the viewport once per game. With the 50vh spacers there is room
+  // above and below it to drop the next card "earlier" or "later".
+  useLayoutEffect(() => {
+    const container = scrollRef.current;
+    if (!container || !enableCentering) return;
+
+    const recenter = () => {
+      if (hasCenteredRef.current || events.length === 0) return;
+      const first = container.querySelector('[data-timeline-index="0"]') as HTMLElement | null;
+      if (!first) return;
+      // offsetParent-agnostic: position the first card's center at the viewport's center.
+      const cRect = container.getBoundingClientRect();
+      const fRect = first.getBoundingClientRect();
+      const cardCenter = fRect.top - cRect.top + container.scrollTop + fRect.height / 2;
+      container.scrollTop = cardCenter - container.clientHeight / 2;
+      hasCenteredRef.current = true;
+    };
+
+    recenter();
+    // Re-run on rotation / late layout; guarded so it only centers once.
+    const ro = new ResizeObserver(recenter);
+    ro.observe(container);
+    return () => ro.disconnect();
+  }, [events.length, enableCentering]);
 
   return (
     <div className="h-full relative">
@@ -129,19 +150,21 @@ const Timeline: React.FC<TimelineProps> = ({
       {/* Vertical timeline line - positioned at 96px (matches year column width) */}
       <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
-      {/* Scrollable timeline content - entire area is a single drop zone */}
-      {/* Scroll is disabled while dragging so year labels stay fixed as reference points */}
+      {/* Native scroll container (compositor-driven = snappy; native elastic overscroll). */}
+      {/* Scroll is disabled while dragging a card so year labels stay fixed reference points. */}
       <div
         ref={(node) => {
-          // Combine refs: scrollRef for scroll behavior, setTimelineDropRef for drop zone
           scrollRef.current = node;
           setTimelineDropRef(node);
         }}
-        className={`h-full pt-16 pb-12 relative z-10 ${
+        className={`h-full relative z-10 ${
           isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
         }`}
       >
-        <div className="relative flex flex-col items-start min-h-full w-full">
+        <div className="relative flex flex-col items-start w-full">
+          {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
+          <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
+
           {/* Ghost card at position 0 if inserting at start */}
           {isDragging && isOverTimeline && insertionIndex === 0 && draggedCard && (
             <GhostCard event={draggedCard} />
@@ -177,6 +200,9 @@ const Timeline: React.FC<TimelineProps> = ({
               </React.Fragment>
             );
           })}
+
+          {/* Bottom spacer: room to drop "later"; bounce runway below the last card */}
+          <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
         </div>
       </div>
 
