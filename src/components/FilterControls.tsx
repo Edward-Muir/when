@@ -18,6 +18,22 @@ export interface FilterControlsProps {
   onErasChange: (eras: Era[]) => void;
 }
 
+// Shared pill button shape. Selected = blue (accent-secondary); unselected = white outline.
+const pillClass = (isSelected: boolean): string =>
+  `px-3 py-1.5 rounded-full text-sm font-medium font-body transition-all active:scale-95 border capitalize ${
+    isSelected
+      ? 'bg-accent-secondary text-white border-transparent'
+      : 'bg-surface text-text border-border hover:border-accent-secondary/50'
+  }`;
+
+const GroupHeader: React.FC<{ label: string }> = ({ label }) => (
+  <div className="mb-1.5">
+    <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
+      {label}
+    </span>
+  </div>
+);
+
 const FilterControls: React.FC<FilterControlsProps> = ({
   selectedDifficulties,
   onDifficultiesChange,
@@ -50,52 +66,15 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
   return (
     <div className="space-y-4">
-      {/* Difficulty selection */}
-      <div>
-        <label className="block text-sm font-medium text-text mb-2 font-body">
-          Card Difficulty
-        </label>
-        <div className="flex gap-2">
-          {ALL_DIFFICULTIES.map((difficulty) => (
-            <button
-              key={difficulty}
-              onClick={() => toggleDifficulty(difficulty)}
-              className={`
-                flex-1 py-2 px-3 rounded-lg text-sm font-body
-                transition-all
-                ${
-                  selectedDifficulties.includes(difficulty)
-                    ? 'bg-accent text-white shadow-md'
-                    : 'bg-border text-text-muted hover:bg-border/80'
-                }
-              `}
-            >
-              {DIFFICULTY_LABELS.get(difficulty)}
-            </button>
-          ))}
-        </div>
-        {selectedDifficulties.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
-        )}
-      </div>
-
       {/* Category selection */}
       <div>
-        <label className="block text-sm font-medium text-text mb-2 font-body">Categories</label>
-        <div className="grid grid-cols-3 gap-2">
+        <GroupHeader label="Categories" />
+        <div className="flex flex-wrap gap-2">
           {ALL_CATEGORIES.map((category) => (
             <button
               key={category}
               onClick={() => toggleCategory(category)}
-              className={`
-                py-2 px-2 rounded-lg text-xs font-body
-                transition-all capitalize
-                ${
-                  selectedCategories.includes(category)
-                    ? 'bg-accent text-white shadow-md'
-                    : 'bg-border text-text-muted hover:bg-border/80'
-                }
-              `}
+              className={pillClass(selectedCategories.includes(category))}
             >
               {category}
             </button>
@@ -108,21 +87,13 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
       {/* Era selection */}
       <div>
-        <label className="block text-sm font-medium text-text mb-2 font-body">Eras</label>
-        <div className="grid grid-cols-2 gap-2">
+        <GroupHeader label="Eras" />
+        <div className="flex flex-wrap gap-2">
           {ERA_DEFINITIONS.map((era) => (
             <button
               key={era.id}
               onClick={() => toggleEra(era.id)}
-              className={`
-                py-2 px-2 rounded-lg text-xs font-body
-                transition-all
-                ${
-                  selectedEras.includes(era.id)
-                    ? 'bg-accent text-white shadow-md'
-                    : 'bg-border text-text-muted hover:bg-border/80'
-                }
-              `}
+              className={pillClass(selectedEras.includes(era.id))}
             >
               {era.name}
             </button>
@@ -130,6 +101,25 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         </div>
         {selectedEras.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
+        )}
+      </div>
+
+      {/* Difficulty selection */}
+      <div>
+        <GroupHeader label="Card Difficulty" />
+        <div className="flex flex-wrap gap-2">
+          {ALL_DIFFICULTIES.map((difficulty) => (
+            <button
+              key={difficulty}
+              onClick={() => toggleDifficulty(difficulty)}
+              className={pillClass(selectedDifficulties.includes(difficulty))}
+            >
+              {DIFFICULTY_LABELS.get(difficulty)}
+            </button>
+          ))}
+        </div>
+        {selectedDifficulties.length === 0 && (
+          <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
         )}
       </div>
     </div>
