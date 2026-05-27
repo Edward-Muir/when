@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Play, Share2, Check, Trophy } from 'lucide-react';
+import { Play, Share2, Check } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -12,15 +12,18 @@ import {
 } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-import SettingsPopup from './SettingsPopup';
+import CustomGameSettings from './CustomGameSettings';
 import TopBar from './TopBar';
+import ModePager from './ModePager';
+import DailyDeckPreview from './DailyDeckPreview';
+import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { buildDailyConfig } from '../utils/dailyConfig';
+import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
-import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
+import { useLeaderboard } from '../hooks/useLeaderboard';
 
 import Leaderboard from './Leaderboard';
 
@@ -51,69 +54,6 @@ const LoadingState: React.FC = () => (
     </div>
   </motion.div>
 );
-
-// Inline mini-leaderboard showing top 3 entries, tappable to open full leaderboard
-const MiniLeaderboard: React.FC<{
-  entries: LeaderboardEntry[];
-  isLoading: boolean;
-  onOpenFull: () => void;
-}> = ({ entries, isLoading, onOpenFull }) => {
-  const top4 = entries.slice(0, 4);
-
-  return (
-    <button
-      onClick={onOpenFull}
-      className="mt-4 w-full text-left cursor-pointer rounded-lg hover:bg-bg/50 p-2 pt-3 transition-colors border-t border-border h-[156px] relative overflow-hidden"
-    >
-      <div className="flex items-center gap-1.5 text-sm text-text-muted font-medium font-body mb-2">
-        <Trophy className="w-3.5 h-3.5" />
-        <span>Longest Timelines</span>
-      </div>
-      {!isLoading && top4.length === 0 ? (
-        <div className="text-sm text-text-muted font-body text-center mt-4">
-          No entries yet. Be the first!
-        </div>
-      ) : (
-        <div className="space-y-1">
-          {[0, 1, 2, 3].map((i) => {
-            const entry = !isLoading ? (top4.at(i) ?? null) : null;
-            return (
-              <div key={i} className="flex items-center gap-2 text-sm py-0.5">
-                {entry ? (
-                  <>
-                    <span className="w-5 text-center flex-shrink-0 text-text-muted font-body">
-                      {entry.rank}
-                    </span>
-                    <span className="flex-1 text-left truncate text-text font-body">
-                      {entry.displayName}
-                    </span>
-                    <span className="font-body text-accent font-semibold flex-shrink-0">
-                      {entry.correctCount}
-                    </span>
-                  </>
-                ) : isLoading ? (
-                  <>
-                    <div className="w-5 h-5 bg-border rounded animate-pulse" />
-                    <div
-                      className="flex-1 h-5 bg-border rounded animate-pulse"
-                      style={{ width: `${65 - i * 10}%` }}
-                    />
-                    <div className="w-6 h-5 bg-border rounded animate-pulse flex-shrink-0" />
-                  </>
-                ) : (
-                  <span className="flex-1 invisible">&nbsp;</span>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      )}
-      {entries.length > 4 && (
-        <div className="absolute bottom-0 left-0 right-0 h-6 bg-gradient-to-t from-surface to-transparent pointer-events-none" />
-      )}
-    </button>
-  );
-};
 
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
@@ -171,7 +111,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     }
   }, [rank, totalPlayers, todayResult]);
 
-  // Play mode settings
+  // Play mode settings. The Marathon/Casual, players and hand-size controls are hidden for
+  // now (Marathon is the default), but their setters are still wired so the Share Game
+  // Settings code input can apply a decoded code to all settings.
   const [isSuddenDeath, setIsSuddenDeath] = useState(true);
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
     ...DEFAULT_DIFFICULTIES,
@@ -179,12 +121,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
 
-  // Player settings
+  // Player settings (the players UI is hidden; `playerNames` is unused until it returns)
   const [playerCount, setPlayerCount] = useState(1);
-  const [playerNames, setPlayerNames] = useState<string[]>(['', '', '', '', '', '']);
-
-  // Settings popup state
-  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+  const [playerNames] = useState<string[]>(['', '', '', '', '', '']);
 
   // Hand size setting (3-8 cards) - default varies by player count
   const [cardsPerHand, setCardsPerHand] = useState(7);
@@ -225,10 +164,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     suddenDeathHandSize,
   ]);
 
-  // Daily theme - computed from today's date
+  // Daily theme + preview - computed from today's date
   const dailySeed = new Date().toISOString().split('T')[0];
   const dailyTheme = useMemo(() => getDailyTheme(dailySeed), [dailySeed]);
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
+  const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents), [allEvents]);
 
   const handleDailyStart = () => {
     onStart(buildDailyConfig());
@@ -286,121 +226,105 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     return <LoadingState />;
   }
 
+  // Daily CTA: play when unplayed, share when already completed today.
+  const dailyCta = todayResult ? (
+    <button
+      onClick={handleShareDaily}
+      className="w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+    >
+      <Share2 className="w-4 h-4" />
+      Challenge a Friend
+    </button>
+  ) : (
+    <button
+      onClick={handleDailyStart}
+      className="w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
+    >
+      <Play className="w-4 h-4" />
+      Play Daily Challenge
+    </button>
+  );
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="min-h-dvh min-h-screen-safe flex flex-col items-center justify-center p-4 bg-bg pt-20 pb-safe overflow-auto transition-colors"
+      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-20 pb-safe overflow-hidden transition-colors"
     >
       {/* Top Bar */}
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
 
-      <div className="max-w-sm w-full text-center relative z-10">
-        {/* Title */}
-        <h1 className="text-4xl font-bold text-text mb-1 font-display">When?</h1>
-        <p className="text-text-muted text-sm mb-2 font-body">
-          Place events to make the longest timeline
-        </p>
+      <div className="w-full max-w-sm mx-auto flex flex-col flex-1 min-h-0 px-3">
+        <ModePager labels={['Daily', 'Custom']} hintKey="when:modeSwipeHintSeen">
+          {/* Daily page */}
+          <div className="flex flex-col flex-1 min-h-0">
+            <div className="text-left mb-3">
+              <h1 className="text-5xl font-bold text-text font-display leading-none">
+                When<span className="text-accent">?</span>
+              </h1>
+              <p className="text-text-muted text-sm mt-1 font-body">
+                Place events to make the longest timeline
+              </p>
+            </div>
 
-        {/* Game Modes */}
-        <div className="space-y-4">
-          {/* Daily Challenge (Hero) */}
-          <div className="bg-surface rounded-2xl border border-border p-5">
-            <h3 className="text-lg font-semibold font-body text-left">
-              <span className="text-text">Daily Challenge: </span>
-              <span className="text-accent">
-                {todayResult ? todayResult.theme : dailyThemeDisplayName}
-              </span>
-            </h3>
-            <p className="text-sm text-text-muted text-left mb-3 font-body">
-              Same puzzle for everyone, every day
-            </p>
+            <DailyDeckPreview
+              event={previewEvent}
+              themeName={todayResult ? todayResult.theme : dailyThemeDisplayName}
+              cta={dailyCta}
+              className="flex-1 min-h-0"
+            />
 
-            {todayResult ? (
-              /* Completed daily state */
-              <div className="space-y-2">
-                <div className="text-sm font-medium text-text-muted font-body text-left">
-                  {todayResult.correctCount} event
-                  {todayResult.correctCount !== 1 ? 's' : ''} placed correctly
-                </div>
-                <button
-                  onClick={handleShareDaily}
-                  className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-                >
-                  <Share2 className="w-4 h-4" />
-                  Challenge a Friend
-                </button>
-              </div>
-            ) : (
-              /* Play daily CTA */
-              <button
-                onClick={handleDailyStart}
-                className="w-full py-3 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-              >
-                <Play className="w-4 h-4" />
-                Play Daily Challenge
-              </button>
-            )}
+            <div className="mt-3 flex-shrink-0">
+              <TodaysLongest
+                entries={leaderboard}
+                isLoading={isLeaderboardLoading}
+                playerEntry={playerEntry}
+                playerRank={rank}
+                onOpenFull={() => setIsLeaderboardOpen(true)}
+              />
+            </div>
+          </div>
 
-            {/* Mini-Leaderboard */}
-            <MiniLeaderboard
-              entries={leaderboard}
-              isLoading={isLeaderboardLoading}
-              onOpenFull={() => setIsLeaderboardOpen(true)}
+          {/* Custom page */}
+          <div className="flex flex-col flex-1 min-h-0">
+            <div className="text-left mb-3">
+              <h1 className="text-5xl font-bold text-text font-display leading-none">Custom</h1>
+              <p className="text-text-muted text-sm mt-1 font-body">
+                Choose your eras, categories & difficulty
+              </p>
+            </div>
+
+            <CustomGameSettings
+              isSuddenDeath={isSuddenDeath}
+              setIsSuddenDeath={setIsSuddenDeath}
+              selectedDifficulties={selectedDifficulties}
+              setSelectedDifficulties={setSelectedDifficulties}
+              selectedCategories={selectedCategories}
+              setSelectedCategories={setSelectedCategories}
+              selectedEras={selectedEras}
+              setSelectedEras={setSelectedEras}
+              playerCount={playerCount}
+              onPlayerCountChange={handlePlayerCountChange}
+              cardsPerHand={cardsPerHand}
+              setCardsPerHand={setCardsPerHand}
+              suddenDeathHandSize={suddenDeathHandSize}
+              setSuddenDeathHandSize={setSuddenDeathHandSize}
+              onPlay={handlePlayStart}
+              isPlayValid={isPlayValid}
             />
           </div>
-
-          {/* Custom Game */}
-          <div className="bg-surface rounded-2xl border border-border p-5">
-            <h3 className="text-lg font-semibold font-body text-left text-text">Custom Game</h3>
-            <p className="text-sm text-text-muted text-left mb-3 font-body">
-              Choose eras, categories & local multiplayer
-            </p>
-            <button
-              onClick={() => setIsSettingsOpen(true)}
-              className="w-full py-3 px-4 text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white"
-            >
-              <Play className="w-4 h-4" />
-              Play
-            </button>
-          </div>
-        </div>
-
-        {/* Share toast */}
-        {showShareToast && (
-          <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
-            <Check className="w-4 h-4" />
-            Copied to clipboard!
-          </div>
-        )}
+        </ModePager>
       </div>
 
-      {/* Settings Popup */}
-      <SettingsPopup
-        isOpen={isSettingsOpen}
-        onClose={() => setIsSettingsOpen(false)}
-        allEvents={allEvents}
-        isSuddenDeath={isSuddenDeath}
-        setIsSuddenDeath={setIsSuddenDeath}
-        selectedDifficulties={selectedDifficulties}
-        setSelectedDifficulties={setSelectedDifficulties}
-        selectedCategories={selectedCategories}
-        setSelectedCategories={setSelectedCategories}
-        selectedEras={selectedEras}
-        setSelectedEras={setSelectedEras}
-        playerCount={playerCount}
-        playerNames={playerNames}
-        setPlayerNames={setPlayerNames}
-        cardsPerHand={cardsPerHand}
-        setCardsPerHand={setCardsPerHand}
-        suddenDeathHandSize={suddenDeathHandSize}
-        setSuddenDeathHandSize={setSuddenDeathHandSize}
-        onPlayerCountChange={handlePlayerCountChange}
-        onPlay={handlePlayStart}
-        isPlayValid={isPlayValid}
-      />
+      {/* Share toast */}
+      {showShareToast && (
+        <div className="fixed bottom-20 left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body">
+          <Check className="w-4 h-4" />
+          Copied to clipboard!
+        </div>
+      )}
 
       {/* Leaderboard Modal */}
       <Leaderboard
