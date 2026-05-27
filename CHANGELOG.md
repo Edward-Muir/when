@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.12](https://github.com/Edward-Muir/when/compare/v0.10.11...v0.10.12) (2026-05-27)
+
+
+### Features
+
+* Redesign home UI ([4d92cfd](https://github.com/Edward-Muir/when/commit/4d92cfdd3952c81ad41cece78b91733e1027b981))
+
 ## [0.10.11](https://github.com/Edward-Muir/when/compare/v0.10.10...v0.10.11) (2026-05-26)
 
 
