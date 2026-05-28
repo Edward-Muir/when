@@ -31,6 +31,8 @@ interface CustomGameSettingsProps {
   // Play action
   onPlay: () => void;
   isPlayValid: boolean;
+  // Total cards matching the current era/category/difficulty selection
+  deckCount: number;
 }
 
 /**
@@ -58,6 +60,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   setSuddenDeathHandSize,
   onPlay,
   isPlayValid,
+  deckCount,
 }) => {
   const [challengeSeed, setChallengeSeed] = useState(() => generateChallengeSeed());
   const [showShareToast, setShowShareToast] = useState(false);
@@ -188,7 +191,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           }`}
         >
           <Play className="w-4 h-4" />
-          Play
+          Play · {deckCount} events
         </button>
       </div>
 

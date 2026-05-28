@@ -7,6 +7,11 @@ interface ModePagerProps {
   children: React.ReactNode;
   /** localStorage key guarding the one-time first-launch swipe hint. */
   hintKey?: string;
+  /**
+   * Tailwind classes for the active indicator (pill + label), one entry per page, so each
+   * page's indicator can match its own accent. Defaults to gold (`accent`) for every page.
+   */
+  activeColors?: { dot: string; text: string }[];
 }
 
 /**
@@ -14,10 +19,14 @@ interface ModePagerProps {
  * sliver of the neighbour peeks (swipe affordance). Below the pages sits a tappable
  * page indicator, and on first visit a subtle nudge animation hints that you can swipe.
  */
-const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey }) => {
+const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey, activeColors }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const pages = React.Children.toArray(children);
+  const colors = activeColors ?? labels.map(() => ({ dot: 'bg-accent', text: 'text-accent' }));
+  // activeIndex is clamped to a valid page index in handleScroll.
+  // eslint-disable-next-line security/detect-object-injection
+  const activeColor = colors[activeIndex] ?? { dot: 'bg-accent', text: 'text-accent' };
 
   const handleScroll = useCallback(() => {
     const track = trackRef.current;
@@ -91,7 +100,7 @@ const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey }) => {
             >
               <span
                 className={`block h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIndex ? 'w-6 bg-accent' : 'w-1.5 bg-border'
+                  i === activeIndex ? `w-6 ${activeColor.dot}` : 'w-1.5 bg-border'
                 }`}
               />
             </button>
@@ -104,7 +113,7 @@ const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey }) => {
               <button
                 onClick={() => goToPage(i)}
                 className={`align-middle transition-colors ${
-                  i === activeIndex ? 'text-accent' : 'text-text-muted'
+                  i === activeIndex ? activeColor.text : 'text-border'
                 }`}
               >
                 {label}

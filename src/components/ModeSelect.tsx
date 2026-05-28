@@ -164,6 +164,16 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     suddenDeathHandSize,
   ]);
 
+  // Total cards matching the current selection — shown on the Custom page.
+  const deckCount = useMemo(
+    () =>
+      filterByEra(
+        filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
+        selectedEras
+      ).length,
+    [allEvents, selectedDifficulties, selectedCategories, selectedEras]
+  );
+
   // Daily theme + preview - computed from today's date
   const dailySeed = new Date().toISOString().split('T')[0];
   const dailyTheme = useMemo(() => getDailyTheme(dailySeed), [dailySeed]);
@@ -257,7 +267,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
 
       <div className="w-full max-w-sm mx-auto flex flex-col flex-1 min-h-0 px-3">
-        <ModePager labels={['Daily', 'Custom']} hintKey="when:modeSwipeHintSeen">
+        <ModePager
+          labels={['Daily', 'Custom']}
+          hintKey="when:modeSwipeHintSeen"
+          activeColors={[
+            { dot: 'bg-accent', text: 'text-accent' },
+            { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
+          ]}
+        >
           {/* Daily page */}
           <div className="flex flex-col flex-1 min-h-0">
             <div className="text-left mb-3">
@@ -312,6 +329,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
               suddenDeathHandSize={suddenDeathHandSize}
               setSuddenDeathHandSize={setSuddenDeathHandSize}
               onPlay={handlePlayStart}
+              deckCount={deckCount}
               isPlayValid={isPlayValid}
             />
           </div>

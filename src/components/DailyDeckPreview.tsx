@@ -60,6 +60,7 @@ const DailyDeckPreview: React.FC<DailyDeckPreviewProps> = ({
       <div className="bg-surface px-4 py-2.5 border-t border-border text-xs font-body font-semibold uppercase tracking-[0.15em]">
         <span className="text-text-muted">· Today&apos;s Challenge · </span>
         <span className="text-accent">{themeName}</span>
+        <span className="text-text-muted"> ·</span>
       </div>
 
       {/* Primary CTA */}

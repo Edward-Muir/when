@@ -66,6 +66,25 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
   return (
     <div className="space-y-4">
+      {/* Difficulty selection */}
+      <div>
+        <GroupHeader label="Card Difficulty" />
+        <div className="flex flex-wrap gap-2">
+          {ALL_DIFFICULTIES.map((difficulty) => (
+            <button
+              key={difficulty}
+              onClick={() => toggleDifficulty(difficulty)}
+              className={pillClass(selectedDifficulties.includes(difficulty))}
+            >
+              {DIFFICULTY_LABELS.get(difficulty)}
+            </button>
+          ))}
+        </div>
+        {selectedDifficulties.length === 0 && (
+          <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
+        )}
+      </div>
+
       {/* Category selection */}
       <div>
         <GroupHeader label="Categories" />
@@ -101,25 +120,6 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         </div>
         {selectedEras.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one era</p>
-        )}
-      </div>
-
-      {/* Difficulty selection */}
-      <div>
-        <GroupHeader label="Card Difficulty" />
-        <div className="flex flex-wrap gap-2">
-          {ALL_DIFFICULTIES.map((difficulty) => (
-            <button
-              key={difficulty}
-              onClick={() => toggleDifficulty(difficulty)}
-              className={pillClass(selectedDifficulties.includes(difficulty))}
-            >
-              {DIFFICULTY_LABELS.get(difficulty)}
-            </button>
-          ))}
-        </div>
-        {selectedDifficulties.length === 0 && (
-          <p className="text-error text-xs mt-1 font-body">Select at least one difficulty</p>
         )}
       </div>
     </div>

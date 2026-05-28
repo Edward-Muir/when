@@ -59,7 +59,9 @@ const TopBar: React.FC<TopBarProps> = ({
           {/* Game Title */}
           {showTitle ? (
             <div className="flex items-start gap-2 pl-2">
-              <h1 className="text-3xl font-display font-semibold text-text">When?</h1>
+              <h1 className="text-3xl font-display font-semibold text-text">
+                When<span className="text-accent">?</span>
+              </h1>
               <AnimatePresence>
                 {dailyTheme && (
                   <motion.span
