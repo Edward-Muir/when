@@ -2120,9 +2120,9 @@
     "category": "exploration",
     "description": "Henry Cavendish isolated hydrogen gas and described its properties, calling it 'inflammable air' in his research.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Hydrogen_discharge_tube.jpg/330px-Hydrogen_discharge_tube.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hydrogen-discovered_jcvzl8?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 110,
+    "image_height": 440,
     "wikipedia_views": 755107,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hydrogen",
     "color": "#212121",
@@ -2135,9 +2135,9 @@
     "category": "exploration",
     "description": "Captain James Cook departed England on HMS Endeavour to observe the Transit of Venus and explore the Pacific.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/330px-Captainjamescookportrait.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-voyage-of-james-cook_asr2tk?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 414,
+    "image_height": 440,
     "wikipedia_views": 78706,
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook",
     "color": "#24201f",
@@ -2419,9 +2419,9 @@
     "category": "exploration",
     "description": "Alessandro Volta invented the first true battery, the voltaic pile.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Alessandro_Volta.jpeg/330px-Alessandro_Volta.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/volta-battery_jpex03?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 406,
+    "image_height": 440,
     "wikipedia_views": 169032,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alessandro_Volta",
     "color": "#232220",
@@ -2557,9 +2557,9 @@
     "category": "exploration",
     "description": "Karl von Drais invented the draisine, the first two-wheeled human-powered vehicle and precursor to the bicycle.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Draisine-templin.jpg/330px-Draisine-templin.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bicycle-invented_feil2l?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 247,
+    "image_height": 440,
     "color": "#635c5f",
     "text_color": "light"
   },
@@ -3702,9 +3702,9 @@
     "category": "exploration",
     "description": "The Lumière brothers held the first public film screening in Paris, marking the birth of cinema.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Institut_Lumi%C3%A8re_-_CINEMATOGRAPHE_Camera.jpg/330px-Institut_Lumi%C3%A8re_-_CINEMATOGRAPHE_Camera.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lumiere-cinematograph_qnjucb?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 509,
+    "image_height": 440,
     "color": "#905a41",
     "text_color": "light"
   },
@@ -3924,9 +3924,9 @@
     "category": "exploration",
     "description": "Leo Baekeland invented Bakelite, the first fully synthetic plastic that could be molded into any shape.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bakelit_Struktur.svg/330px-Bakelit_Struktur.svg.png",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bakelite-plastic_ynqv4d?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 320,
+    "image_height": 440,
     "color": "#212121",
     "text_color": "light"
   },
@@ -10053,9 +10053,11 @@
     "category": "exploration",
     "description": "Dennis Gabor invented a technique for creating three-dimensional images using light waves.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Holomouse2.jpg/330px-Holomouse2.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/holography_peuikv?_a=BAMAMiiu0",
     "color": "#653f39",
-    "text_color": "light"
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hydraulic-fracturing",
@@ -12833,7 +12835,11 @@
     "category": "exploration",
     "description": "German gunsmiths developed spiral grooves inside gun barrels to spin projectiles, improving accuracy.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/105mm_tank_gun_Rifling.jpg/330px-105mm_tank_gun_Rifling.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rifling-development_wpjcva?_a=BAMAMiiu0",
+    "color": "#332620",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "scratch-plow-design",
@@ -13065,7 +13071,11 @@
     "category": "exploration",
     "description": "Venetian merchants brought coffee to Europe from Ottoman markets, sparking the continent's coffeehouse culture.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/John_Frederick_Lewis_004.jpg/330px-John_Frederick_Lewis_004.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coffee-introduction_wmpga9?_a=BAMAMiiu0",
+    "color": "#242020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "scientific-instruments-development",
@@ -13087,7 +13097,11 @@
     "category": "exploration",
     "description": "India's cotton textile industry dominated global trade, producing finely woven fabrics exported across Asia and Europe.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CottonPlant.JPG/330px-CottonPlant.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cotton-production-india_qnvktf?_a=BAMAMiiu0",
+    "color": "#2b1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "compound-lens-system",
@@ -13096,7 +13110,11 @@
     "category": "exploration",
     "description": "Dutch opticians developed compound lens systems combining multiple lenses, enabling microscopes and telescopes.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Loupe-binoculaire-p1030891.jpg/330px-Loupe-binoculaire-p1030891.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compound-lens-system_ezxphx?_a=BAMAMiiu0",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "cartridge-paper-development",
@@ -13105,7 +13123,11 @@
     "category": "exploration",
     "description": "Paper cartridges combining powder and ball were developed, speeding up musket reloading on the battlefield.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Chassepot_paper_cartridge.jpg/330px-Chassepot_paper_cartridge.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cartridge-paper-development_rflhfl?_a=BAMAMiiu0",
+    "color": "#202126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "sulfuric-acid-production",
@@ -14360,7 +14382,11 @@
     "category": "exploration",
     "description": "Thomas Henry Huxley advanced comparative vertebrate anatomy and became a leading defender of Darwin's evolution theory.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Thomas_Henry_Huxley._Photograph_by_Lock_%26_Whitfield._Wellcome_V0026596.jpg/330px-Thomas_Henry_Huxley._Photograph_by_Lock_%26_Whitfield._Wellcome_V0026596.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huxley-vertebrate-anatomy_gwjdxw?_a=BAMAMiiu0",
+    "color": "#3a3733",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "darwin-evolution-origin",
@@ -14443,7 +14469,11 @@
     "category": "exploration",
     "description": "Gregor Mendel published his experiments on pea plants, establishing the fundamental laws of genetic inheritance.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/William_Hogarth_-_A_Rake%27s_Progress_-_Plate_1_-_The_Young_Heir_Takes_Possession_Of_The_Miser%27s_Effects.jpg/330px-William_Hogarth_-_A_Rake%27s_Progress_-_Plate_1_-_The_Young_Heir_Takes_Possession_Of_The_Miser%27s_Effects.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inheritance-mendel_plqmjm?_a=BAMAMiiu0",
+    "color": "#50412c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "haeckel-embryology",
@@ -14605,7 +14635,11 @@
     "category": "exploration",
     "description": "Bronze metallurgy spread across the Mediterranean, enabling stronger tools and weapons than copper alone.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/AlacaStandarte.jpg/330px-AlacaStandarte.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bronze-adoption-mediterranean_xrv3ke?_a=BAMAMiiu0",
+    "color": "#2d1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "domestication-potato-americas",

@@ -3528,7 +3528,11 @@
     "category": "infrastructure",
     "description": "Mississippian cultures began constructing massive earthen mounds across the southeastern United States.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/330px-Monks_Mound_in_July.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/330px-Monks_Mound_in_July.JPG",
+    "color": "#735f4a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "borobudur-construction",
@@ -4141,7 +4145,11 @@
     "category": "infrastructure",
     "description": "The Khwarezmian Empire developed extensive canal irrigation systems along the Amu Darya river in Central Asia.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Map_of_Khwarazm_in_the_Islamic_period%2C_before_the_Mongol_invasion.svg/330px-Map_of_Khwarazm_in_the_Islamic_period%2C_before_the_Mongol_invasion.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/khwarezm-development-canal_uv6umi?_a=BAMAMiiu0",
+    "color": "#8b825d",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "mound-builder-tradition",
@@ -4150,7 +4158,11 @@
     "category": "infrastructure",
     "description": "Mississippian mound-building traditions peaked across the American Southeast with ceremonial platform mounds.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/330px-Monks_Mound_in_July.JPG"
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Monks_Mound_in_July.JPG/330px-Monks_Mound_in_July.JPG",
+    "color": "#252019",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tin-trade-cornwall",
@@ -4855,7 +4867,11 @@
     "category": "infrastructure",
     "description": "Antwerp replaced Bruges as northern Europe's commercial center as the Zwin channel silted up.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Handelsbeurs_Antwerpen_1.jpg/330px-Handelsbeurs_Antwerpen_1.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antwerp-bourse-replacement_qfmvut?_a=BAMAMiiu0",
+    "color": "#23211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "ottoman-topkapi-palace",
@@ -4977,7 +4993,11 @@
     "category": "infrastructure",
     "description": "Indian cotton textiles entered European markets via Portuguese trade routes, transforming global textile commerce.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/CottonPlant.JPG/330px-CottonPlant.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cotton-trade-begins_j2t0gx?_a=BAMAMiiu0",
+    "color": "#654533",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "indigo-dye-trade",
@@ -5618,7 +5638,11 @@
     "category": "infrastructure",
     "description": "Samuel Crompton invented the spinning mule, combining features of the spinning jenny and water frame.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/A_working_Mule_spinning_machine_at_Quarry_Bank_Mill.theora.ogv/330px--A_working_Mule_spinning_machine_at_Quarry_Bank_Mill.theora.ogv.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spinning-mule-details_iooozx?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "wrought-iron-puddling",
