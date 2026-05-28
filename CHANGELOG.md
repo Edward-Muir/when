@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.15](https://github.com/Edward-Muir/when/compare/v0.10.14...v0.10.15) (2026-05-28)
+
+
+### Features
+
+* UX polish ([b68785a](https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca))
+
 ## [0.10.14](https://github.com/Edward-Muir/when/compare/v0.10.13...v0.10.14) (2026-05-28)
 
 

@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2026 21:18:55 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 21:58:14 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.10.15</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.10.15</guid>
+      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>UX polish (<a href="https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca">b68785a</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.10.14</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.10.6</guid>
       <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Yet more new images (<a href="https://github.com/Edward-Muir/when/commit/1de0e147f5dee5eeeac9f496383bdbce80602994">1de0e14</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.10.5</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.10.5</guid>
-      <pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Adding more generated images (<a href="https://github.com/Edward-Muir/when/commit/e9253e23eee83193d03a7ece5f2c4bfff861ed89">e9253e2</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
