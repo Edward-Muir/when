@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.14](https://github.com/Edward-Muir/when/compare/v0.10.13...v0.10.14) (2026-05-28)
+
+
+### Bug Fixes
+
+* Fix zoom issue and title cutoff ([841b3c6](https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb))
+
 ## [0.10.13](https://github.com/Edward-Muir/when/compare/v0.10.12...v0.10.13) (2026-05-28)
 
 
