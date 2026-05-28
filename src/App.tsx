@@ -63,6 +63,18 @@ function App({
     };
   }, []);
 
+  // Native only: lock zoom. WKWebView honors these constraints (Safari ignores
+  // them for accessibility), so the web keeps pinch-to-zoom while the app can't
+  // get stuck zoomed in with no chrome to reset it.
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    const viewport = document.querySelector('meta[name="viewport"]');
+    viewport?.setAttribute(
+      'content',
+      'width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no'
+    );
+  }, []);
+
   const {
     state,
     allEvents,

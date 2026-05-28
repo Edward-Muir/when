@@ -17,6 +17,11 @@ module.exports = {
       padding: {
         'safe-top': 'env(safe-area-inset-top)',
         'safe-bottom': 'env(safe-area-inset-bottom)',
+        // Offsets that clear the fixed TopBar (bar height + status-bar inset).
+        // On web env() = 0, so these equal the old hardcoded values (no visual change).
+        'topbar': 'calc(env(safe-area-inset-top) + 3.5rem)', // was pt-14 (Game)
+        'topbar-wide': 'calc(env(safe-area-inset-top) + 5rem)', // was pt-20 (ModeSelect)
+        'topbar-fixed': 'calc(env(safe-area-inset-top) + 60px)', // was pt-[60px] (ViewTimeline, InfoPageLayout)
       },
       transitionDuration: {
         'DEFAULT': '150ms',

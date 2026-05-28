@@ -235,7 +235,7 @@ const Game: React.FC<GameProps> = ({
         measuring={{ droppable: { strategy: MeasuringStrategy.Always } }}
       >
         <div
-          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-14 transition-colors ${shakeClassName}`}
+          className={`h-dvh min-h-screen-safe flex flex-col bg-bg overflow-hidden pt-topbar transition-colors ${shakeClassName}`}
         >
           <TopBar
             showHome={true}

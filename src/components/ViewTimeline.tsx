@@ -66,7 +66,7 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
       />
 
       {/* Timeline takes full screen below TopBar */}
-      <div className="flex-1 pt-[60px] overflow-hidden">
+      <div className="flex-1 pt-topbar-fixed overflow-hidden">
         {filteredEvents.length > 0 ? (
           <Timeline
             events={filteredEvents}

@@ -25,7 +25,7 @@ const InfoPageLayout: React.FC<InfoPageLayoutProps> = ({ title, children }) => {
         </div>
       </div>
 
-      <div className="flex-1 pt-[60px] overflow-y-auto pb-safe">
+      <div className="flex-1 pt-topbar-fixed overflow-y-auto pb-safe">
         <div className="max-w-2xl mx-auto px-4 py-6">{children}</div>
       </div>
     </div>

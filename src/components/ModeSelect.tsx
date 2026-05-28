@@ -251,7 +251,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-20 pb-safe overflow-hidden transition-colors"
+      className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide pb-safe overflow-hidden transition-colors"
     >
       {/* Top Bar */}
       <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
