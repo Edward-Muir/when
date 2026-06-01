@@ -103,11 +103,37 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     fetchLeaderboard,
   } = useLeaderboard();
 
-  // Prefetch leaderboard data in background on mount
+  // Source of truth for "today" (UTC date string). Refreshed on app resume, tab
+  // visibility change, and at UTC midnight so the Daily tab rolls over to the new day
+  // without a manual reload — important for the iOS Capacitor app, whose WKWebView keeps
+  // its React state alive across background/foreground.
+  const [today, setToday] = useState(() => new Date().toISOString().split('T')[0]);
+
   useEffect(() => {
-    const today = new Date().toISOString().split('T')[0];
+    const refresh = () => {
+      const next = new Date().toISOString().split('T')[0];
+      setToday((curr) => (curr === next ? curr : next));
+    };
+    const onVisibility = () => {
+      if (!document.hidden) refresh();
+    };
+    // `appResume` is dispatched by App.tsx via @capacitor/app's native `resume` event.
+    window.addEventListener('appResume', refresh);
+    document.addEventListener('visibilitychange', onVisibility);
+    // Fire once at the next UTC midnight even if the app stays foregrounded across it.
+    const msUntilMidnight = 86_400_000 - (Date.now() % 86_400_000) + 1_000;
+    const t = window.setTimeout(refresh, msUntilMidnight);
+    return () => {
+      window.removeEventListener('appResume', refresh);
+      document.removeEventListener('visibilitychange', onVisibility);
+      window.clearTimeout(t);
+    };
+  }, []);
+
+  // Prefetch leaderboard data in background; refetch when the day rolls over.
+  useEffect(() => {
     fetchLeaderboard(today);
-  }, [fetchLeaderboard]);
+  }, [fetchLeaderboard, today]);
 
   // Sync leaderboard data to localStorage when fetched (for returning users)
   useEffect(() => {
@@ -211,11 +237,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     [allEvents, selectedDifficulties, selectedCategories, selectedEras]
   );
 
-  // Daily theme + preview - computed from today's date
-  const dailySeed = new Date().toISOString().split('T')[0];
-  const dailyTheme = useMemo(() => getDailyTheme(dailySeed), [dailySeed]);
+  // Daily theme + preview - keyed on `today` so they recompute when the day rolls over.
+  const dailyTheme = useMemo(() => getDailyTheme(today), [today]);
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
-  const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents), [allEvents]);
+  const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents, today), [allEvents, today]);
 
   const handleDailyStart = () => {
     onStart(buildDailyConfig());

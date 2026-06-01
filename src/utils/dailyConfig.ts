@@ -28,9 +28,15 @@ export function buildDailyConfig(): GameConfig {
  * Get the first card of today's daily deck, for previewing on the mode-select screen.
  * Mirrors the daily seeding pipeline (same filters + seeded shuffle as gameplay) so the
  * preview matches the real starting event. Returns null if no events qualify.
+ *
+ * `dateString` (UTC YYYY-MM-DD) defaults to today; callers can pass an explicit date so
+ * memoization deps stay visible to the linter and the preview refreshes on day rollover.
  */
-export function getDailyPreviewEvent(allEvents: HistoricalEvent[]): HistoricalEvent | null {
-  const dailySeed = new Date().toISOString().split('T')[0];
+export function getDailyPreviewEvent(
+  allEvents: HistoricalEvent[],
+  dateString: string = new Date().toISOString().split('T')[0]
+): HistoricalEvent | null {
+  const dailySeed = dateString;
   const dailyTheme = getDailyTheme(dailySeed);
 
   const filtered = filterByEra(
