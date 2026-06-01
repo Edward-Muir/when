@@ -4,7 +4,7 @@
  * - First-time mode plays (for showing rules popup)
  */
 
-import { GameMode } from '../types';
+import { GameMode, Difficulty, Category, Era } from '../types';
 
 // --- Daily Result Storage ---
 
@@ -238,5 +238,69 @@ export function updateDailyResultWithLeaderboard(rank: number, totalPlayers: num
     }
   } catch {
     console.warn('Failed to update daily result with leaderboard data');
+  }
+}
+
+// --- Custom Game Settings Storage ---
+
+/**
+ * The player's last Custom-game configuration, persisted so their tuned filters/mode
+ * survive a refresh. The random deck seed is intentionally NOT stored — it is generated
+ * fresh per play, so reloading keeps the settings but still produces a different game.
+ */
+export interface CustomSettings {
+  isSuddenDeath: boolean;
+  selectedDifficulties: Difficulty[];
+  selectedCategories: Category[];
+  selectedEras: Era[];
+  playerCount: number;
+  cardsPerHand: number;
+  suddenDeathHandSize: number;
+}
+
+const CUSTOM_SETTINGS_KEY = 'when-custom-settings';
+
+/**
+ * Save the player's Custom-game settings to localStorage.
+ */
+export function saveCustomSettings(settings: CustomSettings): void {
+  try {
+    localStorage.setItem(CUSTOM_SETTINGS_KEY, JSON.stringify(settings));
+  } catch {
+    // localStorage may be disabled or full - fail silently
+    console.warn('Failed to save custom settings to localStorage');
+  }
+}
+
+const isNonEmptyArray = (value: unknown): boolean => Array.isArray(value) && value.length > 0;
+
+/**
+ * Get the player's saved Custom-game settings, or null if none/corrupted.
+ * Returns null on any validation failure so callers fall back to defaults.
+ */
+export function getCustomSettings(): CustomSettings | null {
+  try {
+    const stored = localStorage.getItem(CUSTOM_SETTINGS_KEY);
+    if (!stored) return null;
+
+    const parsed = JSON.parse(stored) as Partial<CustomSettings>;
+
+    // Validate: filters must be non-empty arrays, numbers must be finite, mode a boolean.
+    if (
+      typeof parsed.isSuddenDeath !== 'boolean' ||
+      !isNonEmptyArray(parsed.selectedDifficulties) ||
+      !isNonEmptyArray(parsed.selectedCategories) ||
+      !isNonEmptyArray(parsed.selectedEras) ||
+      !Number.isFinite(parsed.playerCount) ||
+      !Number.isFinite(parsed.cardsPerHand) ||
+      !Number.isFinite(parsed.suddenDeathHandSize)
+    ) {
+      return null;
+    }
+
+    return parsed as CustomSettings;
+  } catch {
+    // localStorage may be disabled or data corrupted - fail silently
+    return null;
   }
 }

@@ -16,6 +16,8 @@ export interface FilterControlsProps {
   onCategoriesChange: (categories: Category[]) => void;
   selectedEras: Era[];
   onErasChange: (eras: Era[]) => void;
+  // When true, show an `n/N` (or `All`) selected-count next to each group header.
+  showCounts?: boolean;
 }
 
 // Shared pill button shape. Selected = blue (accent-secondary); unselected = white outline.
@@ -26,11 +28,19 @@ const pillClass = (isSelected: boolean): string =>
       : 'bg-surface text-text border-border hover:border-accent-secondary/50'
   }`;
 
-const GroupHeader: React.FC<{ label: string }> = ({ label }) => (
-  <div className="mb-1.5">
+const GroupHeader: React.FC<{ label: string; count?: { selected: number; total: number } }> = ({
+  label,
+  count,
+}) => (
+  <div className="mb-1.5 flex items-center justify-between">
     <span className="text-xs font-medium uppercase tracking-wide text-text-muted font-body">
       {label}
     </span>
+    {count && (
+      <span className="text-xs font-medium text-text-muted font-body tabular-nums">
+        {count.selected === count.total ? 'All' : `${count.selected}/${count.total}`}
+      </span>
+    )}
   </div>
 );
 
@@ -41,6 +51,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   onCategoriesChange,
   selectedEras,
   onErasChange,
+  showCounts = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
     onDifficultiesChange(
@@ -68,7 +79,14 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     <div className="space-y-4">
       {/* Difficulty selection */}
       <div>
-        <GroupHeader label="Card Difficulty" />
+        <GroupHeader
+          label="Card Difficulty"
+          count={
+            showCounts
+              ? { selected: selectedDifficulties.length, total: ALL_DIFFICULTIES.length }
+              : undefined
+          }
+        />
         <div className="flex flex-wrap gap-2">
           {ALL_DIFFICULTIES.map((difficulty) => (
             <button
@@ -87,7 +105,14 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
       {/* Category selection */}
       <div>
-        <GroupHeader label="Categories" />
+        <GroupHeader
+          label="Categories"
+          count={
+            showCounts
+              ? { selected: selectedCategories.length, total: ALL_CATEGORIES.length }
+              : undefined
+          }
+        />
         <div className="flex flex-wrap gap-2">
           {ALL_CATEGORIES.map((category) => (
             <button
@@ -106,7 +131,14 @@ const FilterControls: React.FC<FilterControlsProps> = ({
 
       {/* Era selection */}
       <div>
-        <GroupHeader label="Eras" />
+        <GroupHeader
+          label="Eras"
+          count={
+            showCounts
+              ? { selected: selectedEras.length, total: ERA_DEFINITIONS.length }
+              : undefined
+          }
+        />
         <div className="flex flex-wrap gap-2">
           {ERA_DEFINITIONS.map((era) => (
             <button

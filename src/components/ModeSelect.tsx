@@ -19,7 +19,12 @@ import DailyDeckPreview from './DailyDeckPreview';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
-import { getTodayResult, updateDailyResultWithLeaderboard } from '../utils/playerStorage';
+import {
+  getTodayResult,
+  updateDailyResultWithLeaderboard,
+  getCustomSettings,
+  saveCustomSettings,
+} from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
@@ -111,25 +116,57 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     }
   }, [rank, totalPlayers, todayResult]);
 
+  // Restore the player's last Custom-game configuration (read localStorage once on mount).
+  // The deck seed is NOT restored — it stays random per play, so a refresh keeps the settings
+  // but still yields a different game.
+  const [savedSettings] = useState(() => getCustomSettings());
+
   // Play mode settings. The Marathon/Casual, players and hand-size controls are hidden for
   // now (Marathon is the default), but their setters are still wired so the Share Game
   // Settings code input can apply a decoded code to all settings.
-  const [isSuddenDeath, setIsSuddenDeath] = useState(true);
-  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
-    ...DEFAULT_DIFFICULTIES,
-  ]);
-  const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
-  const [selectedEras, setSelectedEras] = useState<Era[]>([...ALL_ERAS]);
+  const [isSuddenDeath, setIsSuddenDeath] = useState(savedSettings?.isSuddenDeath ?? true);
+  const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(
+    savedSettings?.selectedDifficulties ?? [...DEFAULT_DIFFICULTIES]
+  );
+  const [selectedCategories, setSelectedCategories] = useState<Category[]>(
+    savedSettings?.selectedCategories ?? [...ALL_CATEGORIES]
+  );
+  const [selectedEras, setSelectedEras] = useState<Era[]>(
+    savedSettings?.selectedEras ?? [...ALL_ERAS]
+  );
 
   // Player settings (the players UI is hidden; `playerNames` is unused until it returns)
-  const [playerCount, setPlayerCount] = useState(1);
+  const [playerCount, setPlayerCount] = useState(savedSettings?.playerCount ?? 1);
   const [playerNames] = useState<string[]>(['', '', '', '', '', '']);
 
   // Hand size setting (3-8 cards) - default varies by player count
-  const [cardsPerHand, setCardsPerHand] = useState(7);
+  const [cardsPerHand, setCardsPerHand] = useState(savedSettings?.cardsPerHand ?? 7);
 
   // Sudden death hand size (1-7 cards, acts as "lives")
-  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(5);
+  const [suddenDeathHandSize, setSuddenDeathHandSize] = useState(
+    savedSettings?.suddenDeathHandSize ?? 5
+  );
+
+  // Persist Custom-game settings on every change so they survive a refresh.
+  useEffect(() => {
+    saveCustomSettings({
+      isSuddenDeath,
+      selectedDifficulties,
+      selectedCategories,
+      selectedEras,
+      playerCount,
+      cardsPerHand,
+      suddenDeathHandSize,
+    });
+  }, [
+    isSuddenDeath,
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+    playerCount,
+    cardsPerHand,
+    suddenDeathHandSize,
+  ]);
 
   const handlePlayerCountChange = (count: number) => {
     setPlayerCount(count);

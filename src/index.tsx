@@ -33,5 +33,11 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-// Register service worker for PWA functionality
-serviceWorkerRegistration.register();
+// Register the service worker only in production builds. In development, actively
+// unregister so a previously-installed SW (e.g. from an earlier `npm run build` run on
+// localhost) can't serve stale cached assets on refresh and hide live source edits.
+if (process.env.NODE_ENV === 'production') {
+  serviceWorkerRegistration.register();
+} else {
+  serviceWorkerRegistration.unregister();
+}
