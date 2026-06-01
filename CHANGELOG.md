@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.16](https://github.com/Edward-Muir/when/compare/v0.10.15...v0.10.16) (2026-06-01)
+
+
+### Features
+
+* options persistance and ux ([6369cdc](https://github.com/Edward-Muir/when/commit/6369cdcdde47319d9b195058ca9661c1b601a97a))
+
+
+### Bug Fixes
+
+* Fix refresh timing ([07e2b05](https://github.com/Edward-Muir/when/commit/07e2b0536df6e6e8b9e5ed455d8a8b561fe7d47e))
+
 ## [0.10.15](https://github.com/Edward-Muir/when/compare/v0.10.14...v0.10.15) (2026-05-28)
 
 
