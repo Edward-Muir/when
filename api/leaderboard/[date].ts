@@ -90,6 +90,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       }
     }
 
+    // Defeat any intermediate caches (WKWebView, browser HTTP cache, CDN) so the
+    // leaderboard always reflects the latest submissions.
+    res.setHeader('Cache-Control', 'no-store, max-age=0');
+
     return res.status(200).json({
       date,
       leaderboard,

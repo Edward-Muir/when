@@ -111,7 +111,8 @@ export function useLeaderboard() {
     try {
       const deviceId = await getDeviceFingerprint();
       const response = await fetch(
-        `/api/leaderboard/${date}?deviceId=${encodeURIComponent(deviceId)}`
+        `/api/leaderboard/${date}?deviceId=${encodeURIComponent(deviceId)}`,
+        { cache: 'no-store' }
       );
 
       if (!response.ok) {

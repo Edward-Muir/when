@@ -101,6 +101,42 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
     fetchLeaderboard(dailyResult.date);
   }, [dailyResult.date, fetchLeaderboard]);
 
+  // Keep the post-game leaderboard preview live: refetch on app resume / tab refocus,
+  // and poll every 15s while visible. Polling pauses when the tab is hidden.
+  useEffect(() => {
+    const date = dailyResult.date;
+    const refresh = () => {
+      void fetchLeaderboard(date);
+    };
+    let intervalId: number | null = null;
+    const start = () => {
+      if (intervalId !== null) return;
+      intervalId = window.setInterval(refresh, 15_000);
+    };
+    const stop = () => {
+      if (intervalId !== null) {
+        window.clearInterval(intervalId);
+        intervalId = null;
+      }
+    };
+    const onVisibility = () => {
+      if (document.hidden) {
+        stop();
+      } else {
+        refresh();
+        start();
+      }
+    };
+    window.addEventListener('appResume', refresh);
+    document.addEventListener('visibilitychange', onVisibility);
+    if (!document.hidden) start();
+    return () => {
+      window.removeEventListener('appResume', refresh);
+      document.removeEventListener('visibilitychange', onVisibility);
+      stop();
+    };
+  }, [dailyResult.date, fetchLeaderboard]);
+
   // Check if already submitted on mount
   useEffect(() => {
     setAlreadySubmitted(hasSubmittedToLeaderboard());

@@ -113,6 +113,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     const refresh = () => {
       const next = new Date().toISOString().split('T')[0];
       setToday((curr) => (curr === next ? curr : next));
+      // Always refetch the leaderboard on resume/visibility, even when the date hasn't
+      // rolled over — other players' submissions need to land without a full reload.
+      fetchLeaderboard(next);
     };
     const onVisibility = () => {
       if (!document.hidden) refresh();
@@ -128,7 +131,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       document.removeEventListener('visibilitychange', onVisibility);
       window.clearTimeout(t);
     };
-  }, []);
+  }, [fetchLeaderboard]);
 
   // Prefetch leaderboard data in background; refetch when the day rolls over.
   useEffect(() => {
@@ -416,6 +419,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         playerEntry={playerEntry}
         isLoading={isLeaderboardLoading}
         error={leaderboardError}
+        onRefresh={() => {
+          void fetchLeaderboard(today);
+        }}
       />
     </motion.div>
   );
