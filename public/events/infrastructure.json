@@ -3088,7 +3088,11 @@
     "category": "infrastructure",
     "description": "Vespasian ordered construction of the Colosseum on the site of Nero's drained artificial lake.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/330px-Colosseo_2020.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vespasian-colosseum-begun_x9epit?_a=BAMAMiiu0",
+    "color": "#3b2a1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-encyclopedia",
@@ -3097,7 +3101,11 @@
     "category": "infrastructure",
     "description": "Pliny the Elder published Naturalis Historia, an encyclopedic work covering natural science in 37 books.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/First_page_from_the_Editio_Princeps_of_the_Pliny%27s_%22Historia_Naturalis%22.jpg/330px-First_page_from_the_Editio_Princeps_of_the_Pliny%27s_%22Historia_Naturalis%22.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-encyclopedia_ibv0kb?_a=BAMAMiiu0",
+    "color": "#2c1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "colosseum-rome",
@@ -3310,7 +3318,12 @@
     "year": -400,
     "category": "infrastructure",
     "description": "Ancient Mediterranean civilizations used hilltop beacon fire relay chains to transmit military signals over long distances.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#362e2e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beacon-fire-chains_hyncpu?_a=BAMAMiiu0"
   },
   {
     "name": "tiwanaku-monumental-center",
@@ -3332,7 +3345,11 @@
     "category": "infrastructure",
     "description": "The Nazca people built an underground aqueduct system called puquios to irrigate Peru's arid coastal desert.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Puquios_aqueduct_Nazca_Peru.JPG/330px-Puquios_aqueduct_Nazca_Peru.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nazca-puquios-aqueducts_pfxa9w?_a=BAMAMiiu0",
+    "color": "#895e36",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tunnel-engineering",
@@ -3354,9 +3371,9 @@
     "category": "infrastructure",
     "description": "Emperor Justinian I completed the Hagia Sophia in Constantinople, featuring an innovative massive dome.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Hagia_Sophia_%28228968325%29.jpeg/330px-Hagia_Sophia_%28228968325%29.jpeg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/construction-hagia-sophia_wh1rvj?_a=BAMAMiiu0",
     "image_width": 330,
-    "image_height": 199,
+    "image_height": 440,
     "color": "#798ba4",
     "text_color": "dark"
   },
@@ -3411,7 +3428,11 @@
     "category": "infrastructure",
     "description": "Rome's Cloaca Maxima sewer was built during the Roman Kingdom to drain marshes in the Forum valley.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg/330px-Map_of_downtown_Rome_during_the_Roman_Empire_large-annotated.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-sewer-system_cyuuya?_a=BAMAMiiu0",
+    "color": "#3c2d27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "camel-adoption-sahara",
@@ -3429,7 +3450,11 @@
     "category": "infrastructure",
     "description": "Early Anglo-Saxon stone churches like those at Monkwearmouth and Jarrow were built in northern England.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/EarlsBartonChurch.JPG/330px-EarlsBartonChurch.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anglo-saxon-stone-churches_sjdl1l?_a=BAMAMiiu0",
+    "color": "#383e40",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "palenque-city",
@@ -3438,7 +3463,11 @@
     "category": "infrastructure",
     "description": "The Maya city of Palenque reached its height under King Pakal, featuring the Temple of Inscriptions.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Palenque_Collage.jpg/330px-Palenque_Collage.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/palenque-city_sfxhag?_a=BAMAMiiu0",
+    "color": "#37493d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "pallava-shore-temples",
@@ -3473,7 +3502,11 @@
     "category": "infrastructure",
     "description": "The Maya city of Tikal's Great Plaza and towering temple pyramids dominated the Guatemalan lowlands.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Tikal_3.jpg/330px-Tikal_3.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tikal-great-plaza_ceqzn0?_a=BAMAMiiu0",
+    "color": "#1e2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "tang-trade-networks",
@@ -3589,7 +3622,11 @@
     "category": "infrastructure",
     "description": "The Hindu Prambanan temple complex was built in Java, featuring towering spires dedicated to the Trimurti.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Prambanan_Temple_Yogyakarta_Indonesia.jpg/330px-Prambanan_Temple_Yogyakarta_Indonesia.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/prambanan-temple_d95ahu?_a=BAMAMiiu0",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "chichen-itza-peak",
@@ -3702,7 +3739,11 @@
     "category": "infrastructure",
     "description": "Yi Xing and Liang Lingzan invented the escapement mechanism in China for their astronomical clock tower.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Anchor_escapement_animation_217x328px.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/escapement-mechanism_c8yw3h?_a=BAMAMiiu0",
+    "color": "#231f2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "drum-signal-codes",
@@ -3777,7 +3818,11 @@
     "category": "infrastructure",
     "description": "Bi Sheng invented movable type printing using ceramic pieces in Song Dynasty China.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/330px-Metal_movable_type.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-movable-china_e9yk8x?_a=BAMAMiiu0",
+    "color": "#281e21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "metal-type-development",
@@ -3825,7 +3870,11 @@
     "category": "infrastructure",
     "description": "Romanesque architecture spread across Europe featuring thick walls, round arches, and barrel vaults.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/LessayAbbaye3.JPG/330px-LessayAbbaye3.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romanesque-development_dops8p?_a=BAMAMiiu0",
+    "color": "#2e2815",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "romanesque-architecture-style",
@@ -3899,7 +3948,11 @@
     "category": "infrastructure",
     "description": "Hoysala dynasty temples in Karnataka featured intricate star-shaped plans and elaborate stone carvings.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Close_up_of_Hoysala_style_shrine_and_sikhara_with_decorative_molding_frieze_in_the_Chennakeshava_temple_at_Somanathapura.jpg/330px-Close_up_of_Hoysala_style_shrine_and_sikhara_with_decorative_molding_frieze_in_the_Chennakeshava_temple_at_Somanathapura.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hoysala-temples_sjeyy1?_a=BAMAMiiu0",
+    "color": "#212120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "song-maritime-commerce",
@@ -3917,7 +3970,11 @@
     "category": "infrastructure",
     "description": "Cahokia reached a population of up to 20,000, rivaling contemporary European cities in size.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/330px-Monks_Mound_-_Summer_2024.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cahokia-metropolis_gvbrep?_a=BAMAMiiu0",
+    "color": "#525043",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "compass-navigation",
@@ -3965,7 +4022,11 @@
     "category": "infrastructure",
     "description": "King Suryavarman II built Angkor Wat, the world's largest religious monument, dedicated to Vishnu.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Buddhist_monks_in_front_of_the_Angkor_Wat.jpg/330px-Buddhist_monks_in_front_of_the_Angkor_Wat.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-temple_blu2gs?_a=BAMAMiiu0",
+    "color": "#41393e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "angkor-wat-construction",
@@ -3987,7 +4048,11 @@
     "category": "infrastructure",
     "description": "Cahokia's Monks Mound, the largest earthwork in the Americas, anchored a thriving urban center.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Monks_Mound_-_Summer_2024.jpg/330px-Monks_Mound_-_Summer_2024.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cahokia-moundbuilder_jqyd9r?_a=BAMAMiiu0",
+    "color": "#99937a",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "great-zimbabwe-stone-construction",
@@ -3996,7 +4061,11 @@
     "category": "infrastructure",
     "description": "Massive dry-stone walls were constructed at Great Zimbabwe, center of a wealthy trading kingdom.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg/330px-Conical_Tower_-_Great_Enclosure_III_%2833736918448%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-zimbabwe-stone-construction_ladzuc?_a=BAMAMiiu0",
+    "color": "#453d46",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "gothic-architecture-emergence",
@@ -4136,7 +4205,11 @@
     "category": "infrastructure",
     "description": "The Lapita people spread distinctive pottery and maritime culture across the western Pacific islands.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Carte_lapita.png/330px-Carte_lapita.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lapita-culture_kkni4e?_a=BAMAMiiu0",
+    "color": "#323136",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "khwarezm-development-canal",
@@ -4193,7 +4266,11 @@
     "category": "infrastructure",
     "description": "Arab slave trade networks transported enslaved people from East Africa across the Indian Ocean and Sahara.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Slavezanzibar2.JPG/330px-Slavezanzibar2.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/slave-trade-arab_idqqso?_a=BAMAMiiu0",
+    "color": "#232b27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "verge-escapement",
@@ -4393,7 +4470,11 @@
     "category": "infrastructure",
     "description": "Italian merchants developed double-entry bookkeeping, revolutionizing commercial accounting practices.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Petrevene_18.jpg/330px-Petrevene_18.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/banking-loans-innovation_pcemyt?_a=BAMAMiiu0",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "foliot-balance",
@@ -4533,7 +4614,11 @@
     "category": "infrastructure",
     "description": "The earliest known maritime insurance contract was written in Genoa, spreading risk across sea voyages.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Coast_review_%281910%29_%2814760820941%29.jpg/330px-Coast_review_%281910%29_%2814760820941%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/insurance-maritime-contracts_cmumzu?_a=BAMAMiiu0",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "monopoly-privileges-medieval",
@@ -4555,7 +4640,11 @@
     "category": "infrastructure",
     "description": "The English Staple system required all wool exports to pass through designated towns for taxation.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Wool_staples.JPG/330px-Wool_staples.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wool-staple-monopoly_u94qbj?_a=BAMAMiiu0",
+    "color": "#76664a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "timur-architectural-patronage",
@@ -4788,7 +4877,11 @@
     "category": "infrastructure",
     "description": "Under Cosimo de' Medici, the Medici Bank became Europe's largest financial institution with branches across major cities.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Augmented_Arms_of_Medici.svg/330px-Augmented_Arms_of_Medici.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medici-florentine-bank_bcxr3j?_a=BAMAMiiu0",
+    "color": "#2a1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "brunelleschi-dome",
@@ -4797,7 +4890,11 @@
     "category": "infrastructure",
     "description": "Brunelleschi completed the dome of Florence Cathedral, the largest masonry dome ever built at 45 meters in diameter.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg/330px-Cattedrale_di_Santa_Maria_del_Fiore_%E2%80%93_Il_Duomo_di_Firenze.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brunelleschi-dome_id26br?_a=BAMAMiiu0",
+    "color": "#322233",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "malacca-entrepot",
@@ -5097,7 +5194,11 @@
     "category": "infrastructure",
     "description": "Ottaviano Petrucci published Harmonice Musices Odhecaton in Venice, the first major collection of printed polyphonic music.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Music-ms1s.jpg/330px-Music-ms1s.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-music_j7zlix?_a=BAMAMiiu0",
+    "color": "#261f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-map-printing",
@@ -5145,7 +5246,11 @@
     "category": "infrastructure",
     "description": "Cocoa beans were first shipped from the Americas to Spain, beginning the European chocolate trade.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Ca%27_Rezzonico_-_La_cioccolata_del_mattino_-_Pietro_Longhi.jpg/330px-Ca%27_Rezzonico_-_La_cioccolata_del_mattino_-_Pietro_Longhi.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cocoa-trade-beans_vrht1h?_a=BAMAMiiu0",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "muscovy-company-founding",
@@ -5180,7 +5285,11 @@
     "category": "infrastructure",
     "description": "Spain established the Manila-Acapulco galleon route, linking Asia and the Americas for 250 years of trade.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Padre_Eterno_em_gravura_de_1683.jpg/330px-Padre_Eterno_em_gravura_de_1683.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galleon-trade-route_mvoqpl?_a=BAMAMiiu0",
+    "color": "#6889a2",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "songhai-djinguereber-mosque",
@@ -5293,7 +5402,11 @@
     "category": "infrastructure",
     "description": "Dutch and Flemish printers advanced multi-color printing using successive impressions from separate blocks.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Collage_of_printing.png/330px-Collage_of_printing.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/color-printing-techniques_yjbdvj?_a=BAMAMiiu0",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "flag-signal-development",
@@ -5363,7 +5476,11 @@
     "category": "infrastructure",
     "description": "Japanese daimyo built massive stone castles across Japan during the early Edo period's castle-building boom.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Himeji_Castle_The_Keep_Towers.jpg/330px-Himeji_Castle_The_Keep_Towers.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edo-castle-architecture_vxf2rn?_a=BAMAMiiu0",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spice-monopoly-nutmeg",
@@ -5372,7 +5489,11 @@
     "category": "infrastructure",
     "description": "The Dutch VOC seized the Banda Islands and established a brutal monopoly over the global nutmeg supply.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Biji_Pala_Bubuk.jpg/330px-Biji_Pala_Bubuk.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spice-monopoly-nutmeg_aqvebj?_a=BAMAMiiu0",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "st-peters-basilica-completion",
@@ -5425,7 +5546,11 @@
     "category": "infrastructure",
     "description": "Emperor Fasilides established Gondar as Ethiopia's capital, building castles blending Ethiopian and Portuguese styles.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Gonder_from_the_Goha_hotel.jpg/330px-Gonder_from_the_Goha_hotel.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gondar-city-planning_ysov16?_a=BAMAMiiu0",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "edo-castle-completion",
@@ -5486,7 +5611,11 @@
     "category": "infrastructure",
     "description": "Elaborate Baroque churches spread across Catholic Europe with dramatic facades, domes, and ornate interiors.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Lazio_Roma_SIgnazio_tango7174.jpg/330px-Lazio_Roma_SIgnazio_tango7174.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/baroque-church-architecture_yoxzxz?_a=BAMAMiiu0",
+    "color": "#442d1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "poverty-point-earthworks",
@@ -5504,7 +5633,11 @@
     "category": "infrastructure",
     "description": "Robert Hooke developed the anchor escapement for pendulum clocks, greatly improving timekeeping accuracy.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Anchor_escapement_animation_217x328px.gif"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anchor-escapement_sbxvgh?_a=BAMAMiiu0",
+    "color": "#291e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "hairspring-balance-wheel",
@@ -5574,9 +5707,11 @@
     "category": "infrastructure",
     "description": "Christopher Wren began rebuilding St Paul's Cathedral in London after the Great Fire, completing it in 1710.",
     "difficulty": "medium",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Catedral_da_S%C3%A9_em_S%C3%A3o_Paulo.jpg/330px-Catedral_da_S%C3%A9_em_S%C3%A3o_Paulo.jpg",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wren-st-pauls-cathedral_vxy0jj?_a=BAMAMiiu0",
     "color": "#81a1b7",
-    "text_color": "dark"
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "rococo-architecture-style",
@@ -5629,7 +5764,11 @@
     "category": "infrastructure",
     "description": "James Brindley built the Bridgewater Canal, launching Britain's canal-building era that fueled the Industrial Revolution.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/James_Brindley_by_Francis_Parsons.jpg/330px-James_Brindley_by_Francis_Parsons.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canal-network-britain_icvvza?_a=BAMAMiiu0",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "spinning-mule-details",
@@ -5738,7 +5877,11 @@
     "category": "infrastructure",
     "description": "Joseph Aspdin patented Portland cement in Britain, creating the foundation for modern concrete construction.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Portland_Cement_Bags.jpg/330px-Portland_Cement_Bags.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portland-cement-development_ucialj?_a=BAMAMiiu0",
+    "color": "#7b7b76",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "first-locomotive",
@@ -5773,7 +5916,11 @@
     "category": "infrastructure",
     "description": "Liverpool's Crown Street station opened as one of the world's first purpose-built railway terminal stations.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Milan_CentralStation_016_4294.jpg/330px-Milan_CentralStation_016_4294.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/railroad-station_rofoyb?_a=BAMAMiiu0",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "penny-post-britain",
@@ -5791,7 +5938,11 @@
     "category": "infrastructure",
     "description": "Moritz von Jacobi developed electrotyping, using electroplating to create copper duplicates of printing plates.",
     "difficulty": "very-hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Electrotyping.svg/330px-Electrotyping.svg.png"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electrotyping-process_bu2xyh?_a=BAMAMiiu0",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "morse-telegraph-refinement",
@@ -5879,7 +6030,11 @@
     "category": "infrastructure",
     "description": "David Hughes developed the carbon microphone, enabling clearer voice transmission over telephone lines.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shure_mikrofon_55S.jpg/330px-Shure_mikrofon_55S.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/microphone-technology_flfywo?_a=BAMAMiiu0",
+    "color": "#2b1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "telephone-exchange-system",
@@ -5954,7 +6109,11 @@
     "category": "infrastructure",
     "description": "Early frame looms were developed in Anatolia and the Near East, enabling more efficient textile production.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Loom_2%2C_Lesbos_%28Skala_Sykamias%29.jpg/330px-Loom_2%2C_Lesbos_%28Skala_Sykamias%29.jpg"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/handloom-frame-loom_os5qy5?_a=BAMAMiiu0",
+    "color": "#231f27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "reed-shuttle-developed",
@@ -6000,7 +6159,11 @@
     "category": "infrastructure",
     "description": "Mesopotamian builders developed kiln-fired clay bricks, producing durable building materials for temples and city walls.",
     "difficulty": "hard",
-    "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Charcoal_Kilns%2C_California.JPG/330px-Charcoal_Kilns%2C_California.JPG"
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clay-brick-kiln_hwdrzp?_a=BAMAMiiu0",
+    "color": "#502a1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   },
   {
     "name": "bronze-casting-techniques",
