@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.20](https://github.com/Edward-Muir/when/compare/v0.10.19...v0.10.20) (2026-06-04)
+
+
+### Bug Fixes
+
+* FIx leaderboard pop out infinite get glitch ([fb8f3ff](https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53))
+
 ## [0.10.19](https://github.com/Edward-Muir/when/compare/v0.10.18...v0.10.19) (2026-06-04)
 
 
