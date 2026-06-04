@@ -104,7 +104,10 @@ export function useLeaderboard() {
   const fetchLeaderboard = useCallback(async (date: string): Promise<LeaderboardData | null> => {
     setState((prev) => ({
       ...prev,
-      isLoading: true,
+      // Only show the loading skeleton on the very first load. Background
+      // refreshes (polling, app resume, day rollover) keep the existing data on
+      // screen until the new response replaces it — no flicker.
+      isLoading: prev.data === null,
       loadError: null,
     }));
 

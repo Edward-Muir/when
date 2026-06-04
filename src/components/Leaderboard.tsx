@@ -1,6 +1,6 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Loader2, Trophy, Users, X } from 'lucide-react';
+import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { getMedalEmoji } from '../utils/leaderboardUtils';
 
@@ -17,74 +17,31 @@ interface LeaderboardProps {
 }
 
 const POLL_INTERVAL_MS = 15_000;
-const PULL_THRESHOLD = 60;
-const PULL_MAX = 90;
-
-const PullIndicator: React.FC<{
-  pullDistance: number;
-  isRefreshing: boolean;
-  isPulling: boolean;
-}> = ({ pullDistance, isRefreshing, isPulling }) => {
-  if (pullDistance <= 0 && !isRefreshing) return null;
-  const past = isRefreshing || pullDistance >= PULL_THRESHOLD;
-  return (
-    <div
-      className="flex items-center justify-center overflow-hidden shrink-0"
-      style={{
-        height: isRefreshing ? PULL_THRESHOLD : pullDistance,
-        transition: isPulling ? 'none' : 'height 200ms ease-out',
-      }}
-    >
-      <Loader2
-        className={`w-5 h-5 text-text-muted ${past ? 'animate-spin' : ''}`}
-        style={{
-          opacity: isRefreshing ? 1 : Math.min(1, pullDistance / PULL_THRESHOLD),
-          transform: isRefreshing ? undefined : `rotate(${pullDistance * 4}deg)`,
-        }}
-      />
-    </div>
-  );
-};
-
-const LeaderboardRow: React.FC<{ entry: LeaderboardEntry; isPlayer: boolean }> = ({
-  entry,
-  isPlayer,
-}) => {
-  const medal = getMedalEmoji(entry.rank);
-  return (
-    <div
-      className={`px-4 py-3 flex items-center gap-3 ${isPlayer ? 'bg-accent/20 border-l-2 border-accent' : ''}`}
-    >
-      <div className="w-8 text-center shrink-0">
-        {medal ? (
-          <span className="text-lg">{medal}</span>
-        ) : (
-          <span className="text-sm text-text-muted font-mono">#{entry.rank}</span>
-        )}
-      </div>
-      <div className="flex-1 min-w-0">
-        <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
-      </div>
-      <div className="text-right shrink-0">
-        <span className="text-lg font-bold font-mono text-accent">{entry.correctCount}</span>
-      </div>
-    </div>
-  );
-};
 
 // Poll `onRefresh` every `intervalMs` while `active` and the tab is visible.
-// Pauses on tab-hidden, resumes (with an immediate refresh) on tab-visible.
+// Fires an immediate refresh whenever activation starts or the tab becomes visible.
+// Pauses on tab-hidden. Uses a ref so unstable inline callbacks don't restart the
+// effect on every render.
 function useVisiblePolling(
   active: boolean,
   intervalMs: number,
   onRefresh: (() => void | Promise<void>) | undefined
 ) {
+  const onRefreshRef = useRef(onRefresh);
   useEffect(() => {
-    if (!active || !onRefresh) return;
+    onRefreshRef.current = onRefresh;
+  });
+
+  useEffect(() => {
+    if (!active) return;
+    const fire = () => {
+      const cb = onRefreshRef.current;
+      if (cb) void cb();
+    };
     let intervalId: number | null = null;
     const start = () => {
       if (intervalId === null) {
-        intervalId = window.setInterval(() => void onRefresh(), intervalMs);
+        intervalId = window.setInterval(fire, intervalMs);
       }
     };
     const stop = () => {
@@ -97,69 +54,20 @@ function useVisiblePolling(
       if (document.hidden) {
         stop();
       } else {
-        void onRefresh();
+        fire();
         start();
       }
     };
-    if (!document.hidden) start();
+    if (!document.hidden) {
+      fire();
+      start();
+    }
     document.addEventListener('visibilitychange', onVisibility);
     return () => {
       stop();
       document.removeEventListener('visibilitychange', onVisibility);
     };
-  }, [active, intervalMs, onRefresh]);
-}
-
-function usePullToRefresh(
-  scrollRef: React.RefObject<HTMLDivElement | null>,
-  onRefresh: (() => void | Promise<void>) | undefined
-) {
-  const pullStartY = useRef<number | null>(null);
-  const pullDistanceRef = useRef(0);
-  const [pullDistance, setPullDistance] = useState(0);
-  const [isRefreshing, setIsRefreshing] = useState(false);
-
-  const setPull = (d: number) => {
-    pullDistanceRef.current = d;
-    setPullDistance(d);
-  };
-
-  const onTouchStart = (e: React.TouchEvent) => {
-    if (!onRefresh || isRefreshing) return;
-    const el = scrollRef.current;
-    if (!el || el.scrollTop > 0) return;
-    pullStartY.current = e.touches[0].clientY;
-  };
-
-  const onTouchMove = (e: React.TouchEvent) => {
-    if (pullStartY.current === null || isRefreshing) return;
-    const delta = e.touches[0].clientY - pullStartY.current;
-    setPull(delta <= 0 ? 0 : Math.min(PULL_MAX, delta * 0.5));
-  };
-
-  const onTouchEnd = async () => {
-    if (pullStartY.current === null) return;
-    pullStartY.current = null;
-    const shouldRefresh = pullDistanceRef.current >= PULL_THRESHOLD && onRefresh && !isRefreshing;
-    if (!shouldRefresh) {
-      setPull(0);
-      return;
-    }
-    setIsRefreshing(true);
-    try {
-      await onRefresh();
-    } finally {
-      setIsRefreshing(false);
-      setPull(0);
-    }
-  };
-
-  return {
-    pullDistance,
-    isRefreshing,
-    isPulling: pullStartY.current !== null,
-    handlers: { onTouchStart, onTouchMove, onTouchEnd, onTouchCancel: onTouchEnd },
-  };
+  }, [active, intervalMs]);
 }
 
 const Leaderboard: React.FC<LeaderboardProps> = ({
@@ -184,20 +92,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
     }
   }, [isOpen, onClose]);
 
-  // Refetch the moment the modal opens — guarantees fresh data on entry.
-  useEffect(() => {
-    if (isOpen && onRefresh) void onRefresh();
-  }, [isOpen, onRefresh]);
-
-  // Poll every 15s while the modal is open AND the tab is visible.
+  // Poll every 15s while the modal is open AND the tab is visible. The hook also
+  // fires an immediate refresh on activation, so opening the modal triggers a
+  // fresh fetch — no separate refetch-on-open effect needed.
   useVisiblePolling(isOpen, POLL_INTERVAL_MS, onRefresh);
-
-  // Pull-to-refresh on the entries scroll container (mobile).
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const { pullDistance, isRefreshing, isPulling, handlers } = usePullToRefresh(
-    scrollRef,
-    onRefresh
-  );
 
   // Compute display entries: top 5 + player if outside top 5
   const displayData = useMemo(() => {
@@ -265,16 +163,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             </div>
 
             {/* Entries */}
-            <div
-              ref={scrollRef}
-              className="overflow-y-auto flex-1 overscroll-contain"
-              {...handlers}
-            >
-              <PullIndicator
-                pullDistance={pullDistance}
-                isRefreshing={isRefreshing}
-                isPulling={isPulling}
-              />
+            <div className="overflow-y-auto flex-1">
               {isLoading ? (
                 <div className="divide-y divide-border">
                   {[0, 1, 2, 3, 4].map((i) => (
@@ -296,20 +185,73 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 </div>
               ) : (
                 <div className="divide-y divide-border">
-                  {displayData.entries.map((entry) => (
-                    <LeaderboardRow
-                      key={entry.rank}
-                      entry={entry}
-                      isPlayer={entry.rank === playerRank}
-                    />
-                  ))}
+                  {/* Top 5 entries */}
+                  {displayData.entries.map((entry, index) => {
+                    const isPlayer = entry.rank === playerRank;
+                    const medal = getMedalEmoji(entry.rank);
+
+                    return (
+                      <div
+                        key={index}
+                        className={`px-4 py-3 flex items-center gap-3 ${isPlayer ? 'bg-accent/20 border-l-2 border-accent' : ''}`}
+                      >
+                        {/* Rank */}
+                        <div className="w-8 text-center shrink-0">
+                          {medal ? (
+                            <span className="text-lg">{medal}</span>
+                          ) : (
+                            <span className="text-sm text-text-muted font-mono">#{entry.rank}</span>
+                          )}
+                        </div>
+
+                        {/* Name */}
+                        <div className="flex-1 min-w-0">
+                          <div className="font-medium text-text truncate font-body">
+                            {entry.displayName}
+                          </div>
+                        </div>
+
+                        {/* Score */}
+                        <div className="text-right shrink-0">
+                          <span className="text-lg font-bold font-mono text-accent">
+                            {entry.correctCount}
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  {/* Ellipsis separator if player is outside top 5 */}
                   {displayData.showEllipsis && (
                     <div className="px-4 py-2 text-center text-text-muted text-sm font-body">
                       •••
                     </div>
                   )}
+
+                  {/* Player's entry if outside top 5 */}
                   {displayData.playerEntryToShow && (
-                    <LeaderboardRow entry={displayData.playerEntryToShow} isPlayer />
+                    <div className="px-4 py-3 flex items-center gap-3 bg-accent/20 border-l-2 border-accent">
+                      {/* Rank */}
+                      <div className="w-8 text-center shrink-0">
+                        <span className="text-sm text-text-muted font-mono">
+                          #{displayData.playerEntryToShow.rank}
+                        </span>
+                      </div>
+
+                      {/* Name */}
+                      <div className="flex-1 min-w-0">
+                        <div className="font-medium text-text truncate font-body">
+                          {displayData.playerEntryToShow.displayName}
+                        </div>
+                      </div>
+
+                      {/* Score */}
+                      <div className="text-right shrink-0">
+                        <span className="text-lg font-bold font-mono text-accent">
+                          {displayData.playerEntryToShow.correctCount}
+                        </span>
+                      </div>
+                    </div>
                   )}
                 </div>
               )}
