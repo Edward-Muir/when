@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.19](https://github.com/Edward-Muir/when/compare/v0.10.18...v0.10.19) (2026-06-04)
+
+
+### Bug Fixes
+
+* Refresh the leaderboard more often ([d10d6a7](https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84))
+
 ## [0.10.18](https://github.com/Edward-Muir/when/compare/v0.10.17...v0.10.18) (2026-06-04)
 
 
