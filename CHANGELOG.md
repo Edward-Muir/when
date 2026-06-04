@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.10.18](https://github.com/Edward-Muir/when/compare/v0.10.17...v0.10.18) (2026-06-04)
+
+
+### Bug Fixes
+
+* Remove references to centuries and dates ([d59c625](https://github.com/Edward-Muir/when/commit/d59c625723aac359edf90473e8feb729c291646f))
+
 ## [0.10.17](https://github.com/Edward-Muir/when/compare/v0.10.16...v0.10.17) (2026-06-04)
 
 
