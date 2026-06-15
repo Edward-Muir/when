@@ -1,0 +1,2394 @@
+[
+  {
+    "name": "birth-hatshepsut",
+    "friendly_name": "Birth of Hatshepsut",
+    "year": -1507,
+    "category": "people",
+    "description": "One of Egypt's few female pharaohs, who reigned prosperously and built grand monuments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-akhenaten",
+    "friendly_name": "Birth of Akhenaten",
+    "year": -1380,
+    "category": "people",
+    "description": "The Egyptian pharaoh who upended tradition by imposing worship of the sun disk Aten.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-nefertiti",
+    "friendly_name": "Birth of Nefertiti",
+    "year": -1370,
+    "category": "people",
+    "description": "The Egyptian queen and wife of Akhenaten, famed for her painted bust and royal influence.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-ramesses-ii",
+    "friendly_name": "Birth of Ramesses II",
+    "year": -1303,
+    "category": "people",
+    "description": "The Egyptian pharaoh 'Ramesses the Great' famed for his monuments and long, powerful reign.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-homer",
+    "friendly_name": "Birth of Homer",
+    "year": -800,
+    "category": "people",
+    "description": "The Greek epic poet traditionally credited with composing the Iliad and the Odyssey.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-sappho",
+    "friendly_name": "Birth of Sappho",
+    "year": -630,
+    "category": "people",
+    "description": "The Greek lyric poet of Lesbos celebrated in antiquity for her intimate verses on love.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-solon",
+    "friendly_name": "Birth of Solon",
+    "year": -630,
+    "category": "people",
+    "description": "The Athenian statesman and lawmaker whose reforms laid the foundations for later democracy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-lao-tzu",
+    "friendly_name": "Birth of Lao Tzu",
+    "year": -601,
+    "category": "people",
+    "description": "The Chinese sage traditionally credited with the Tao Te Ching and founding philosophical Taoism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-cyrus-the-great",
+    "friendly_name": "Birth of Cyrus the Great",
+    "year": -600,
+    "category": "people",
+    "description": "The Persian king who founded the Achaemenid Empire and was noted for his tolerant rule.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-pythagoras",
+    "friendly_name": "Birth of Pythagoras",
+    "year": -570,
+    "category": "people",
+    "description": "The Greek mathematician and philosopher remembered for his theorem on right triangles.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-darius-the-great",
+    "friendly_name": "Birth of Darius the Great",
+    "year": -550,
+    "category": "people",
+    "description": "The Persian king who expanded the Achaemenid Empire to its height and built Persepolis.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-sun-tzu",
+    "friendly_name": "Birth of Sun Tzu",
+    "year": -544,
+    "category": "people",
+    "description": "The Chinese military strategist credited with The Art of War, an enduring classic on tactics.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-aeschylus",
+    "friendly_name": "Birth of Aeschylus",
+    "year": -525,
+    "category": "people",
+    "description": "The Greek playwright known as the father of tragedy and author of the Oresteia trilogy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-sophocles",
+    "friendly_name": "Birth of Sophocles",
+    "year": -497,
+    "category": "people",
+    "description": "The Greek tragedian who wrote Oedipus Rex and Antigone, deepening drama with a third actor.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-herodotus",
+    "friendly_name": "Birth of Herodotus",
+    "year": -484,
+    "category": "people",
+    "description": "The Greek writer called the Father of History for his account of the Greco-Persian Wars.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-euripides",
+    "friendly_name": "Birth of Euripides",
+    "year": -480,
+    "category": "people",
+    "description": "The Greek tragedian behind Medea and The Bacchae, known for realistic, psychologically complex characters.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-leonidas-i",
+    "friendly_name": "Death of Leonidas I",
+    "year": -480,
+    "category": "people",
+    "description": "The Spartan king died leading his 300 warriors against the Persians at the Battle of Thermopylae.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-xerxes-i",
+    "friendly_name": "Death of Xerxes I",
+    "year": -465,
+    "category": "people",
+    "description": "The Persian king who invaded Greece and fought at Thermopylae was assassinated in his palace.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-thucydides",
+    "friendly_name": "Birth of Thucydides",
+    "year": -460,
+    "category": "people",
+    "description": "The Greek historian of the Peloponnesian War, a pioneer of rigorous, evidence-based history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-aristophanes",
+    "friendly_name": "Birth of Aristophanes",
+    "year": -446,
+    "category": "people",
+    "description": "The Greek comic playwright whose satirical works like Lysistrata defined Old Comedy in Athens.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-plato",
+    "friendly_name": "Birth of Plato",
+    "year": -428,
+    "category": "people",
+    "description": "The Greek philosopher who founded the Academy in Athens and wrote dialogues shaping Western thought.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-diogenes",
+    "friendly_name": "Birth of Diogenes",
+    "year": -412,
+    "category": "people",
+    "description": "The Greek founder of Cynic philosophy who lived in a barrel and mocked social convention.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-aristotle",
+    "friendly_name": "Birth of Aristotle",
+    "year": -384,
+    "category": "people",
+    "description": "The Greek polymath who tutored Alexander and laid foundations for logic, ethics, and natural science.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-epicurus",
+    "friendly_name": "Birth of Epicurus",
+    "year": -341,
+    "category": "people",
+    "description": "The Greek philosopher who founded Epicureanism, teaching that pleasure and tranquility are life's aim.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-euclid",
+    "friendly_name": "Birth of Euclid",
+    "year": -325,
+    "category": "people",
+    "description": "The Greek mathematician whose Elements laid the foundations of geometry for over two millennia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-ashoka",
+    "friendly_name": "Birth of Ashoka",
+    "year": -304,
+    "category": "people",
+    "description": "The Indian Mauryan emperor who, after bloody conquest, embraced Buddhism and spread it across his realm.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-archimedes",
+    "friendly_name": "Birth of Archimedes",
+    "year": -287,
+    "category": "people",
+    "description": "The Greek mathematician and inventor who advanced geometry, hydrostatics, and the lever.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-hannibal",
+    "friendly_name": "Birth of Hannibal",
+    "year": -247,
+    "category": "people",
+    "description": "The Carthaginian general who crossed the Alps with elephants to wage war on Rome in the Punic Wars.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-spartacus",
+    "friendly_name": "Death of Spartacus",
+    "year": -71,
+    "category": "people",
+    "description": "The Thracian gladiator who led a vast slave revolt against Rome died in the final battle of the uprising.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-virgil",
+    "friendly_name": "Birth of Virgil",
+    "year": -70,
+    "category": "people",
+    "description": "The Roman poet who wrote the Aeneid, Rome's national epic celebrating the city's mythic founding.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-ovid",
+    "friendly_name": "Birth of Ovid",
+    "year": -43,
+    "category": "people",
+    "description": "The Roman poet of the Metamorphoses, whose tales of transformation shaped Western literature and art.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-cicero",
+    "friendly_name": "Death of Cicero",
+    "year": -43,
+    "category": "people",
+    "description": "The Roman orator and statesman, master of Latin prose, was executed during the proscriptions of the Triumvirate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-seneca",
+    "friendly_name": "Birth of Seneca",
+    "year": -4,
+    "category": "people",
+    "description": "The Roman Stoic philosopher, dramatist, and adviser to Nero, famed for his moral essays and letters.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-nero",
+    "friendly_name": "Birth of Nero",
+    "year": 37,
+    "category": "people",
+    "description": "The Roman emperor infamous for tyranny, the Great Fire of Rome, and persecuting Christians.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-trajan",
+    "friendly_name": "Birth of Trajan",
+    "year": 53,
+    "category": "people",
+    "description": "The Roman emperor under whom the empire reached its greatest extent, celebrated for public works and conquests.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-hadrian",
+    "friendly_name": "Birth of Hadrian",
+    "year": 76,
+    "category": "people",
+    "description": "The Roman emperor who consolidated the empire's borders and built Hadrian's Wall across northern Britain.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-ptolemy",
+    "friendly_name": "Birth of Ptolemy",
+    "year": 100,
+    "category": "people",
+    "description": "The Greek astronomer whose Almagest enshrined the geocentric model that dominated science for centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-marcus-aurelius",
+    "friendly_name": "Birth of Marcus Aurelius",
+    "year": 121,
+    "category": "people",
+    "description": "The Roman emperor and Stoic philosopher whose Meditations remain a classic of personal reflection.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-constantine",
+    "friendly_name": "Birth of Constantine the Great",
+    "year": 272,
+    "category": "people",
+    "description": "The Roman emperor who legalized Christianity and founded Constantinople as a new imperial capital.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-attila",
+    "friendly_name": "Birth of Attila the Hun",
+    "year": 406,
+    "category": "people",
+    "description": "The feared leader of the Huns who ravaged the Eastern and Western Roman Empires in the 5th century.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-justinian",
+    "friendly_name": "Birth of Justinian I",
+    "year": 482,
+    "category": "people",
+    "description": "The Byzantine emperor who reconquered much of the West and codified Roman law in his Corpus Juris Civilis.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-william-conqueror",
+    "friendly_name": "Birth of William the Conqueror",
+    "year": 1028,
+    "category": "people",
+    "description": "The Norman duke who won the 1066 Battle of Hastings and became the first Norman king of England.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-saladin",
+    "friendly_name": "Birth of Saladin",
+    "year": 1137,
+    "category": "people",
+    "description": "The Muslim sultan who united Egypt and Syria and retook Jerusalem from the Crusaders in 1187.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-richard-lionheart",
+    "friendly_name": "Birth of Richard the Lionheart",
+    "year": 1157,
+    "category": "people",
+    "description": "The English king and Crusader renowned for his military prowess against Saladin in the Third Crusade.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-francis-assisi",
+    "friendly_name": "Birth of Francis of Assisi",
+    "year": 1181,
+    "category": "people",
+    "description": "The Italian friar who founded the Franciscan order, embracing poverty and devotion to nature.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-kublai-khan",
+    "friendly_name": "Birth of Kublai Khan",
+    "year": 1215,
+    "category": "people",
+    "description": "The Mongol ruler who founded China's Yuan dynasty and reigned over an empire visited by Marco Polo.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-thomas-aquinas",
+    "friendly_name": "Birth of Thomas Aquinas",
+    "year": 1225,
+    "category": "people",
+    "description": "The Italian theologian who fused Aristotle with Christian doctrine in his Summa Theologica.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-marco-polo",
+    "friendly_name": "Birth of Marco Polo",
+    "year": 1254,
+    "category": "people",
+    "description": "The Venetian merchant whose travels to Asia and Kublai Khan's court inspired generations of explorers.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-dante",
+    "friendly_name": "Birth of Dante Alighieri",
+    "year": 1265,
+    "category": "people",
+    "description": "The Italian poet whose Divine Comedy is a cornerstone of world literature and the Italian language.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-robert-bruce",
+    "friendly_name": "Birth of Robert the Bruce",
+    "year": 1274,
+    "category": "people",
+    "description": "The king who secured Scottish independence with his victory at Bannockburn in 1314.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-petrarch",
+    "friendly_name": "Birth of Petrarch",
+    "year": 1304,
+    "category": "people",
+    "description": "The Italian scholar and poet, father of humanism, whose sonnets shaped Renaissance literature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-william-wallace",
+    "friendly_name": "Death of William Wallace",
+    "year": 1305,
+    "category": "people",
+    "description": "The Scottish knight who led resistance in the Wars of Independence was captured and executed by the English.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-boccaccio",
+    "friendly_name": "Birth of Giovanni Boccaccio",
+    "year": 1313,
+    "category": "people",
+    "description": "The Italian writer whose Decameron, a collection of tales told during the plague, founded Italian prose.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-tamerlane",
+    "friendly_name": "Birth of Tamerlane",
+    "year": 1336,
+    "category": "people",
+    "description": "The Turco-Mongol conqueror who built a vast Central Asian empire from his capital at Samarkand.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-chaucer",
+    "friendly_name": "Birth of Geoffrey Chaucer",
+    "year": 1343,
+    "category": "people",
+    "description": "The English poet known as a father of English literature for The Canterbury Tales.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-cosimo-medici",
+    "friendly_name": "Birth of Cosimo de Medici",
+    "year": 1389,
+    "category": "people",
+    "description": "The Florentine banker who founded Medici power and patronized Renaissance art and learning.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-gutenberg",
+    "friendly_name": "Birth of Gutenberg",
+    "year": 1398,
+    "category": "people",
+    "description": "The German inventor of Europe's movable-type printing press, which transformed the spread of knowledge.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-lorenzo-medici",
+    "friendly_name": "Birth of Lorenzo de Medici",
+    "year": 1449,
+    "category": "people",
+    "description": "The Florentine statesman called the Magnificent, a leading patron of the Italian Renaissance.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-columbus",
+    "friendly_name": "Birth of Columbus",
+    "year": 1451,
+    "category": "people",
+    "description": "The Italian explorer whose 1492 Atlantic voyage opened the Americas to European contact.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-amerigo-vespucci",
+    "friendly_name": "Birth of Amerigo Vespucci",
+    "year": 1454,
+    "category": "people",
+    "description": "The Italian explorer for whom the Americas were named after he recognized them as a new continent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-vasco-da-gama",
+    "friendly_name": "Birth of Vasco da Gama",
+    "year": 1460,
+    "category": "people",
+    "description": "The Portuguese explorer who pioneered the sea route from Europe to India around Africa.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-erasmus",
+    "friendly_name": "Birth of Desiderius Erasmus",
+    "year": 1466,
+    "category": "people",
+    "description": "The Dutch humanist and scholar whose writings and Greek New Testament shaped Renaissance learning.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-machiavelli",
+    "friendly_name": "Birth of Machiavelli",
+    "year": 1469,
+    "category": "people",
+    "description": "The Italian political theorist whose treatise The Prince founded modern political philosophy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-copernicus",
+    "friendly_name": "Birth of Copernicus",
+    "year": 1473,
+    "category": "people",
+    "description": "The Polish astronomer who placed the Sun at the center of the cosmos, sparking a scientific revolution.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-michelangelo",
+    "friendly_name": "Birth of Michelangelo",
+    "year": 1475,
+    "category": "people",
+    "description": "The Italian Renaissance master behind the David sculpture and the Sistine Chapel ceiling.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-francisco-pizarro",
+    "friendly_name": "Birth of Francisco Pizarro",
+    "year": 1478,
+    "category": "people",
+    "description": "The Spanish conquistador who conquered the Inca Empire and founded the city of Lima.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-magellan",
+    "friendly_name": "Birth of Ferdinand Magellan",
+    "year": 1480,
+    "category": "people",
+    "description": "The Portuguese explorer who led the first expedition to circumnavigate the globe.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-raphael",
+    "friendly_name": "Birth of Raphael",
+    "year": 1483,
+    "category": "people",
+    "description": "The Italian High Renaissance painter celebrated for his Madonnas and The School of Athens.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-hernan-cortes",
+    "friendly_name": "Birth of Hernan Cortes",
+    "year": 1485,
+    "category": "people",
+    "description": "The Spanish conquistador who toppled the Aztec Empire and claimed Mexico for Spain.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-titian",
+    "friendly_name": "Birth of Titian",
+    "year": 1488,
+    "category": "people",
+    "description": "The Venetian master painter whose rich color and technique made him the dominant artist of his age.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-john-calvin",
+    "friendly_name": "Birth of John Calvin",
+    "year": 1509,
+    "category": "people",
+    "description": "The French theologian whose teachings on predestination shaped Protestant Reformed Christianity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-ivan-terrible",
+    "friendly_name": "Birth of Ivan the Terrible",
+    "year": 1530,
+    "category": "people",
+    "description": "The first crowned Tsar of Russia, who expanded the realm but ruled with notorious cruelty.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-thomas-more",
+    "friendly_name": "Death of Thomas More",
+    "year": 1535,
+    "category": "people",
+    "description": "The English statesman and author of Utopia was executed for refusing Henry VIII's break with Rome.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-francis-drake",
+    "friendly_name": "Birth of Francis Drake",
+    "year": 1540,
+    "category": "people",
+    "description": "The English explorer who circumnavigated the globe and helped defeat the Spanish Armada.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-tycho-brahe",
+    "friendly_name": "Birth of Tycho Brahe",
+    "year": 1546,
+    "category": "people",
+    "description": "The Danish astronomer whose precise observations of the heavens underpinned Kepler's laws.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-henry-viii",
+    "friendly_name": "Death of Henry VIII",
+    "year": 1547,
+    "category": "people",
+    "description": "The King of England who broke with Rome to found the Church of England and married six times.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-walter-raleigh",
+    "friendly_name": "Birth of Walter Raleigh",
+    "year": 1552,
+    "category": "people",
+    "description": "The English explorer, writer, and courtier who sponsored colonies in the New World under Elizabeth I.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-francis-bacon",
+    "friendly_name": "Birth of Francis Bacon",
+    "year": 1561,
+    "category": "people",
+    "description": "The English philosopher who championed the scientific method and empirical inquiry.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-galileo",
+    "friendly_name": "Birth of Galileo Galilei",
+    "year": 1564,
+    "category": "people",
+    "description": "The Italian astronomer who championed heliocentrism and pioneered the use of the telescope.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-suleiman",
+    "friendly_name": "Death of Suleiman",
+    "year": 1566,
+    "category": "people",
+    "description": "The Ottoman sultan who expanded the empire to its peak and reformed its laws, dying on campaign in Hungary.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-caravaggio",
+    "friendly_name": "Birth of Caravaggio",
+    "year": 1571,
+    "category": "people",
+    "description": "The Italian painter who revolutionized art with dramatic light, shadow, and gritty realism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-kepler",
+    "friendly_name": "Birth of Johannes Kepler",
+    "year": 1571,
+    "category": "people",
+    "description": "The German astronomer who formulated the laws of planetary motion governing orbits around the Sun.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-rubens",
+    "friendly_name": "Birth of Peter Paul Rubens",
+    "year": 1577,
+    "category": "people",
+    "description": "The Flemish master of the Baroque, celebrated for his dynamic, sensuous paintings and altarpieces.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-thomas-hobbes",
+    "friendly_name": "Birth of Thomas Hobbes",
+    "year": 1588,
+    "category": "people",
+    "description": "The English philosopher whose Leviathan founded modern political theory on the social contract.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-descartes",
+    "friendly_name": "Birth of Rene Descartes",
+    "year": 1596,
+    "category": "people",
+    "description": "The French philosopher and mathematician who wrote 'I think, therefore I am' and founded analytic geometry.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-velazquez",
+    "friendly_name": "Birth of Diego Velazquez",
+    "year": 1599,
+    "category": "people",
+    "description": "The Spanish painter to the royal court, whose masterpiece Las Meninas redefined Baroque portraiture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-elizabeth-i",
+    "friendly_name": "Death of Elizabeth I",
+    "year": 1603,
+    "category": "people",
+    "description": "The queen whose long reign saw the Armada's defeat and a golden age, ending the Tudor dynasty.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-rembrandt",
+    "friendly_name": "Birth of Rembrandt",
+    "year": 1606,
+    "category": "people",
+    "description": "The Dutch Golden Age master renowned for his portraits, dramatic light, and The Night Watch.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-pascal",
+    "friendly_name": "Birth of Blaise Pascal",
+    "year": 1623,
+    "category": "people",
+    "description": "The French mathematician and physicist who pioneered probability theory and built an early calculator.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-john-locke",
+    "friendly_name": "Birth of John Locke",
+    "year": 1632,
+    "category": "people",
+    "description": "The English philosopher whose ideas on natural rights and government shaped liberalism and the Enlightenment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-newton",
+    "friendly_name": "Birth of Isaac Newton",
+    "year": 1643,
+    "category": "people",
+    "description": "The English physicist who formulated the laws of motion and universal gravitation, founding classical mechanics.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-antonio-vivaldi",
+    "friendly_name": "Birth of Vivaldi",
+    "year": 1678,
+    "category": "people",
+    "description": "The Italian Baroque composer and violinist behind The Four Seasons, master of the concerto form.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-handel",
+    "friendly_name": "Birth of Handel",
+    "year": 1685,
+    "category": "people",
+    "description": "The German-British Baroque composer of Messiah and Water Music, a giant of choral and orchestral music.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-voltaire",
+    "friendly_name": "Birth of Voltaire",
+    "year": 1694,
+    "category": "people",
+    "description": "The French Enlightenment writer and wit who championed free speech, reason, and religious tolerance.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-benjamin-franklin",
+    "friendly_name": "Birth of Benjamin Franklin",
+    "year": 1706,
+    "category": "people",
+    "description": "The American polymath, inventor, and Founding Father who studied electricity and helped shape the new nation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-linnaeus",
+    "friendly_name": "Birth of Carl Linnaeus",
+    "year": 1707,
+    "category": "people",
+    "description": "The Swedish botanist who created the modern system for naming and classifying living organisms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-david-hume",
+    "friendly_name": "Birth of David Hume",
+    "year": 1711,
+    "category": "people",
+    "description": "The Scottish philosopher whose empiricism and skepticism deeply influenced Enlightenment thought.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-rousseau",
+    "friendly_name": "Birth of Rousseau",
+    "year": 1712,
+    "category": "people",
+    "description": "The Swiss-French philosopher whose ideas on the social contract influenced the French Revolution.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-adam-smith",
+    "friendly_name": "Birth of Adam Smith",
+    "year": 1723,
+    "category": "people",
+    "description": "The Scottish economist whose The Wealth of Nations founded modern economics and championed free markets.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-immanuel-kant",
+    "friendly_name": "Birth of Immanuel Kant",
+    "year": 1724,
+    "category": "people",
+    "description": "The German philosopher of the Critique of Pure Reason who reshaped ethics and the theory of knowledge.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-edmund-burke",
+    "friendly_name": "Birth of Edmund Burke",
+    "year": 1729,
+    "category": "people",
+    "description": "The Irish statesman and philosopher whose writings on tradition founded modern conservative thought.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-george-washington",
+    "friendly_name": "Birth of George Washington",
+    "year": 1732,
+    "category": "people",
+    "description": "The commander of the Continental Army and first US president who set the precedents of the new republic.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-joseph-haydn",
+    "friendly_name": "Birth of Joseph Haydn",
+    "year": 1732,
+    "category": "people",
+    "description": "The Austrian composer who shaped the symphony and string quartet, mentor to Mozart and Beethoven.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-john-adams",
+    "friendly_name": "Birth of John Adams",
+    "year": 1735,
+    "category": "people",
+    "description": "The American Founding Father and second US president who championed independence from Britain.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-paul-revere",
+    "friendly_name": "Birth of Paul Revere",
+    "year": 1735,
+    "category": "people",
+    "description": "The American silversmith and patriot famed for his midnight ride warning of the British advance in 1775.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-james-watt",
+    "friendly_name": "Birth of James Watt",
+    "year": 1736,
+    "category": "people",
+    "description": "The Scottish engineer whose improved steam engine became a driving force of the Industrial Revolution.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-thomas-jefferson",
+    "friendly_name": "Birth of Thomas Jefferson",
+    "year": 1743,
+    "category": "people",
+    "description": "The principal author of the Declaration of Independence and third US president who doubled the nation's size.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-mozart",
+    "friendly_name": "Birth of Mozart",
+    "year": 1756,
+    "category": "people",
+    "description": "The Austrian composer and prodigy whose operas, symphonies, and concertos epitomize the Classical era.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-lafayette",
+    "friendly_name": "Birth of Lafayette",
+    "year": 1757,
+    "category": "people",
+    "description": "The French general who served the American Revolution and championed liberty in the French Revolution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-mary-wollstonecraft",
+    "friendly_name": "Birth of Mary Wollstonecraft",
+    "year": 1759,
+    "category": "people",
+    "description": "The English writer whose Vindication of the Rights of Woman laid foundations for modern feminism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-robert-burns",
+    "friendly_name": "Birth of Robert Burns",
+    "year": 1759,
+    "category": "people",
+    "description": "Scotland's national poet, author of Auld Lang Syne and a pioneer of the Romantic movement.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-eli-whitney",
+    "friendly_name": "Birth of Eli Whitney",
+    "year": 1765,
+    "category": "people",
+    "description": "The American inventor of the cotton gin who pioneered interchangeable parts in manufacturing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-andrew-jackson",
+    "friendly_name": "Birth of Andrew Jackson",
+    "year": 1767,
+    "category": "people",
+    "description": "The seventh US president and war hero whose populist era reshaped American democracy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-georges-cuvier",
+    "friendly_name": "Birth of Georges Cuvier",
+    "year": 1769,
+    "category": "people",
+    "description": "The French naturalist who founded comparative anatomy and paleontology and established extinction as fact.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-beethoven",
+    "friendly_name": "Birth of Beethoven",
+    "year": 1770,
+    "category": "people",
+    "description": "The German composer who bridged Classical and Romantic music, creating symphonies even as he went deaf.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-georg-hegel",
+    "friendly_name": "Birth of Georg Hegel",
+    "year": 1770,
+    "category": "people",
+    "description": "The German idealist philosopher whose dialectic shaped modern thought from Marxism to existentialism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-william-wordsworth",
+    "friendly_name": "Birth of W. Wordsworth",
+    "year": 1770,
+    "category": "people",
+    "description": "The English Romantic poet of Lyrical Ballads and The Prelude who exalted nature and inner experience.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-jane-austen",
+    "friendly_name": "Birth of Jane Austen",
+    "year": 1775,
+    "category": "people",
+    "description": "The English novelist behind Pride and Prejudice, master of the social comedy of manners.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-james-cook",
+    "friendly_name": "Death of Captain James Cook",
+    "year": 1779,
+    "category": "people",
+    "description": "The British explorer who charted the Pacific and reached Australia and Hawaii, where he was killed.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-simon-bolivar",
+    "friendly_name": "Birth of Simon Bolivar",
+    "year": 1783,
+    "category": "people",
+    "description": "The liberator who freed much of South America from Spanish rule and dreamed of a united continent.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-lord-byron",
+    "friendly_name": "Birth of Lord Byron",
+    "year": 1788,
+    "category": "people",
+    "description": "The English Romantic poet of Don Juan and Childe Harold, as famed for his scandalous life as his verse.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-schopenhauer",
+    "friendly_name": "Birth of Schopenhauer",
+    "year": 1788,
+    "category": "people",
+    "description": "The German philosopher of The World as Will and Representation whose pessimism shaped later thinkers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-charles-babbage",
+    "friendly_name": "Birth of Charles Babbage",
+    "year": 1791,
+    "category": "people",
+    "description": "The English mathematician who designed the Analytical Engine, conceiving the first programmable computer.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-michael-faraday",
+    "friendly_name": "Birth of Michael Faraday",
+    "year": 1791,
+    "category": "people",
+    "description": "The English scientist who discovered electromagnetic induction, laying the foundations of electric power.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-samuel-morse",
+    "friendly_name": "Birth of Samuel Morse",
+    "year": 1791,
+    "category": "people",
+    "description": "The American inventor and painter who developed the telegraph and co-created Morse code.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-antoine-lavoisier",
+    "friendly_name": "Death of Lavoisier",
+    "year": 1794,
+    "category": "people",
+    "description": "The French chemist who named oxygen and founded modern chemistry, guillotined during the Reign of Terror.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-catherine-the-great",
+    "friendly_name": "Death of Catherine the Great",
+    "year": 1796,
+    "category": "people",
+    "description": "Empress of Russia who expanded the empire and championed the Enlightenment over a 34-year reign.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-franz-schubert",
+    "friendly_name": "Birth of Franz Schubert",
+    "year": 1797,
+    "category": "people",
+    "description": "The Austrian composer of over 600 songs along with symphonies and chamber works, master of the lied.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-mary-shelley",
+    "friendly_name": "Birth of Mary Shelley",
+    "year": 1797,
+    "category": "people",
+    "description": "The English novelist who created Frankenstein, pioneering the science fiction genre at age twenty.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-sojourner-truth",
+    "friendly_name": "Birth of Sojourner Truth",
+    "year": 1797,
+    "category": "people",
+    "description": "The American abolitionist and women's rights orator known for her Ain't I a Woman speech.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-balzac",
+    "friendly_name": "Birth of Honore de Balzac",
+    "year": 1799,
+    "category": "people",
+    "description": "The French novelist whose vast Human Comedy chronicled the society of post-Napoleonic France.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-victor-hugo",
+    "friendly_name": "Birth of Victor Hugo",
+    "year": 1802,
+    "category": "people",
+    "description": "The French writer behind Les Miserables and The Hunchback of Notre-Dame, giant of Romantic literature.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-ralph-waldo-emerson",
+    "friendly_name": "Birth of Emerson",
+    "year": 1803,
+    "category": "people",
+    "description": "The American essayist and leader of Transcendentalism who championed self-reliance and nature.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-alexander-hamilton",
+    "friendly_name": "Death of Alexander Hamilton",
+    "year": 1804,
+    "category": "people",
+    "description": "The American founding father and first Treasury Secretary, killed in a duel with Aaron Burr.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-andersen",
+    "friendly_name": "Birth of H.C. Andersen",
+    "year": 1805,
+    "category": "people",
+    "description": "The Danish author of beloved fairy tales including The Little Mermaid and The Ugly Duckling.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "death-horatio-nelson",
+    "friendly_name": "Death of Horatio Nelson",
+    "year": 1805,
+    "category": "people",
+    "description": "The British admiral who crushed Napoleon's fleet at Trafalgar, where he was mortally wounded in victory.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-edgar-allan-poe",
+    "friendly_name": "Birth of Edgar Allan Poe",
+    "year": 1809,
+    "category": "people",
+    "description": "The American writer who pioneered the detective story and tales of mystery, horror, and the macabre.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-frederic-chopin",
+    "friendly_name": "Birth of Frederic Chopin",
+    "year": 1810,
+    "category": "people",
+    "description": "The Polish composer and pianist whose poetic works defined the Romantic piano repertoire.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-charles-dickens",
+    "friendly_name": "Birth of Charles Dickens",
+    "year": 1812,
+    "category": "people",
+    "description": "The English novelist behind Oliver Twist and A Christmas Carol who exposed Victorian social ills.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-richard-wagner",
+    "friendly_name": "Birth of Richard Wagner",
+    "year": 1813,
+    "category": "people",
+    "description": "The German composer of epic operas like the Ring cycle who transformed the art form with leitmotifs.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-henry-david-thoreau",
+    "friendly_name": "Birth of Thoreau",
+    "year": 1817,
+    "category": "people",
+    "description": "The American writer of Walden whose essay Civil Disobedience inspired generations of activists.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-emily-bronte",
+    "friendly_name": "Birth of Emily Bronte",
+    "year": 1818,
+    "category": "people",
+    "description": "The English novelist and poet who wrote the singular Gothic masterpiece Wuthering Heights.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-frederick-douglass",
+    "friendly_name": "Birth of Frederick Douglass",
+    "year": 1818,
+    "category": "people",
+    "description": "The American abolitionist, orator, and writer who escaped slavery to become a leading voice for emancipation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-karl-marx",
+    "friendly_name": "Birth of Karl Marx",
+    "year": 1818,
+    "category": "people",
+    "description": "The German philosopher and author of Das Kapital whose theories shaped communism and modern politics.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-walt-whitman",
+    "friendly_name": "Birth of Walt Whitman",
+    "year": 1819,
+    "category": "people",
+    "description": "The American poet whose Leaves of Grass revolutionized verse with its free-flowing celebration of democracy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-nightingale",
+    "friendly_name": "Birth of F. Nightingale",
+    "year": 1820,
+    "category": "people",
+    "description": "The British nurse who reformed sanitation in the Crimean War and founded modern professional nursing.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-susan-b-anthony",
+    "friendly_name": "Birth of Susan B. Anthony",
+    "year": 1820,
+    "category": "people",
+    "description": "The American suffragist who led the decades-long campaign to win women the right to vote.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-fyodor-dostoevsky",
+    "friendly_name": "Birth of Dostoevsky",
+    "year": 1821,
+    "category": "people",
+    "description": "The Russian novelist of Crime and Punishment and The Brothers Karamazov, master of psychological depth.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-gustave-flaubert",
+    "friendly_name": "Birth of Gustave Flaubert",
+    "year": 1821,
+    "category": "people",
+    "description": "The French novelist of Madame Bovary, celebrated for his pursuit of literary realism and precise prose.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-gregor-mendel",
+    "friendly_name": "Birth of Gregor Mendel",
+    "year": 1822,
+    "category": "people",
+    "description": "The Austrian friar whose pea-plant experiments revealed the laws of heredity, founding genetics.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-harriet-tubman",
+    "friendly_name": "Birth of Harriet Tubman",
+    "year": 1822,
+    "category": "people",
+    "description": "The American abolitionist who escaped slavery and guided dozens to freedom via the Underground Railroad.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-louis-pasteur",
+    "friendly_name": "Birth of Louis Pasteur",
+    "year": 1822,
+    "category": "people",
+    "description": "The French scientist who developed pasteurization, vaccines, and proved the germ theory of disease.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-jules-verne",
+    "friendly_name": "Birth of Jules Verne",
+    "year": 1828,
+    "category": "people",
+    "description": "The French novelist and father of science fiction who imagined submarines, spaceflight, and world travel.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-leo-tolstoy",
+    "friendly_name": "Birth of Leo Tolstoy",
+    "year": 1828,
+    "category": "people",
+    "description": "The Russian novelist of War and Peace and Anna Karenina, a towering figure of realist fiction.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-emily-dickinson",
+    "friendly_name": "Birth of Emily Dickinson",
+    "year": 1830,
+    "category": "people",
+    "description": "The reclusive American poet whose terse, original verse became a cornerstone of American literature.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-maxwell",
+    "friendly_name": "Birth of J.C. Maxwell",
+    "year": 1831,
+    "category": "people",
+    "description": "The Scottish physicist who unified electricity, magnetism, and light in his equations of electromagnetism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-alfred-nobel",
+    "friendly_name": "Birth of Alfred Nobel",
+    "year": 1833,
+    "category": "people",
+    "description": "The Swedish inventor of dynamite who endowed the Nobel Prizes recognizing achievement and peace.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-johannes-brahms",
+    "friendly_name": "Birth of Johannes Brahms",
+    "year": 1833,
+    "category": "people",
+    "description": "The German Romantic composer of four symphonies and the German Requiem, heir to the classical tradition.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-edgar-degas",
+    "friendly_name": "Birth of Edgar Degas",
+    "year": 1834,
+    "category": "people",
+    "description": "The French Impressionist painter and sculptor renowned for his studies of ballet dancers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-andrew-carnegie",
+    "friendly_name": "Birth of Andrew Carnegie",
+    "year": 1835,
+    "category": "people",
+    "description": "The Scottish-American steel magnate and philanthropist who funded thousands of public libraries.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-mark-twain",
+    "friendly_name": "Birth of Mark Twain",
+    "year": 1835,
+    "category": "people",
+    "description": "The American author of Tom Sawyer and Huckleberry Finn, celebrated humorist and social critic.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-john-d-rockefeller",
+    "friendly_name": "Birth of John D. Rockefeller",
+    "year": 1839,
+    "category": "people",
+    "description": "The American oil tycoon who founded Standard Oil and became history's wealthiest industrialist.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-paul-cezanne",
+    "friendly_name": "Birth of Paul Cezanne",
+    "year": 1839,
+    "category": "people",
+    "description": "The French Post-Impressionist painter whose structured forms bridged Impressionism and Cubism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-auguste-rodin",
+    "friendly_name": "Birth of Auguste Rodin",
+    "year": 1840,
+    "category": "people",
+    "description": "The French sculptor of The Thinker and The Kiss, regarded as the father of modern sculpture.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-claude-monet",
+    "friendly_name": "Birth of Claude Monet",
+    "year": 1840,
+    "category": "people",
+    "description": "The French painter whose Impression, Sunrise gave Impressionism its name through studies of light.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-tchaikovsky",
+    "friendly_name": "Birth of Tchaikovsky",
+    "year": 1840,
+    "category": "people",
+    "description": "The Russian composer of Swan Lake, The Nutcracker, and the 1812 Overture, master of Romantic melody.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-thomas-hardy",
+    "friendly_name": "Birth of Thomas Hardy",
+    "year": 1840,
+    "category": "people",
+    "description": "The English novelist and poet of Tess of the d'Urbervilles who chronicled rural Wessex and fate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-dvorak",
+    "friendly_name": "Birth of Antonin Dvorak",
+    "year": 1841,
+    "category": "people",
+    "description": "The Czech composer of the New World Symphony who wove folk melody into the Romantic tradition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-renoir",
+    "friendly_name": "Birth of Renoir",
+    "year": 1841,
+    "category": "people",
+    "description": "The French Impressionist painter celebrated for his luminous, joyful scenes of social life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-nietzsche",
+    "friendly_name": "Birth of Nietzsche",
+    "year": 1844,
+    "category": "people",
+    "description": "The German philosopher who proclaimed the death of God and explored will, morality, and the overman.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-wilhelm-roentgen",
+    "friendly_name": "Birth of Wilhelm Roentgen",
+    "year": 1845,
+    "category": "people",
+    "description": "The German physicist who discovered X-rays, earning the first Nobel Prize in Physics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-alexander-graham-bell",
+    "friendly_name": "Birth of A.G. Bell",
+    "year": 1847,
+    "category": "people",
+    "description": "The Scottish-American inventor credited with patenting the first practical telephone.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-thomas-edison",
+    "friendly_name": "Birth of Thomas Edison",
+    "year": 1847,
+    "category": "people",
+    "description": "The prolific American inventor of the phonograph and practical electric light who founded modern R&D.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-wyatt-earp",
+    "friendly_name": "Birth of Wyatt Earp",
+    "year": 1848,
+    "category": "people",
+    "description": "The American frontier lawman known for the gunfight at the O.K. Corral in Tombstone, Arizona.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-vincent-van-gogh",
+    "friendly_name": "Birth of Van Gogh",
+    "year": 1853,
+    "category": "people",
+    "description": "The Dutch Post-Impressionist painter of The Starry Night, whose bold color and emotion shaped modern art.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-oscar-wilde",
+    "friendly_name": "Birth of Oscar Wilde",
+    "year": 1854,
+    "category": "people",
+    "description": "The Irish wit and playwright of The Importance of Being Earnest and The Picture of Dorian Gray.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-booker-t-washington",
+    "friendly_name": "Birth of Booker T Washington",
+    "year": 1856,
+    "category": "people",
+    "description": "The American educator born into slavery who founded Tuskegee Institute and led Black education and uplift.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-nikola-tesla",
+    "friendly_name": "Birth of Nikola Tesla",
+    "year": 1856,
+    "category": "people",
+    "description": "The Serbian-American inventor who pioneered alternating current and revolutionized electrical power systems.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-sigmund-freud",
+    "friendly_name": "Birth of Sigmund Freud",
+    "year": 1856,
+    "category": "people",
+    "description": "The Austrian founder of psychoanalysis who theorized the unconscious mind, dreams, and human sexuality.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-joseph-conrad",
+    "friendly_name": "Birth of Joseph Conrad",
+    "year": 1857,
+    "category": "people",
+    "description": "The Polish-British novelist of Heart of Darkness and Lord Jim, a master of moral ambiguity at sea.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-max-planck",
+    "friendly_name": "Birth of Max Planck",
+    "year": 1858,
+    "category": "people",
+    "description": "The German physicist who originated quantum theory, transforming science with his idea of energy quanta.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-theodore-roosevelt",
+    "friendly_name": "Birth of Theodore Roosevelt",
+    "year": 1858,
+    "category": "people",
+    "description": "The 26th US president, trust-busting reformer and conservationist who championed the Square Deal.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-arthur-conan-doyle",
+    "friendly_name": "Birth of Conan Doyle",
+    "year": 1859,
+    "category": "people",
+    "description": "The Scottish author who created the detective Sherlock Holmes, defining modern crime fiction.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-pierre-curie",
+    "friendly_name": "Birth of Pierre Curie",
+    "year": 1859,
+    "category": "people",
+    "description": "The French physicist who studied radioactivity and magnetism, sharing a Nobel Prize with Marie Curie.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-anton-chekhov",
+    "friendly_name": "Birth of Anton Chekhov",
+    "year": 1860,
+    "category": "people",
+    "description": "The Russian playwright and short-story master of The Cherry Orchard and The Seagull.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-gustav-mahler",
+    "friendly_name": "Birth of Gustav Mahler",
+    "year": 1860,
+    "category": "people",
+    "description": "The Austrian composer and conductor whose vast, emotional symphonies bridged Romantic and modern music.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-rabindranath-tagore",
+    "friendly_name": "Birth of Tagore",
+    "year": 1861,
+    "category": "people",
+    "description": "The Indian poet and polymath, first non-European Nobel laureate in Literature for his work Gitanjali.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-gustav-klimt",
+    "friendly_name": "Birth of Gustav Klimt",
+    "year": 1862,
+    "category": "people",
+    "description": "The Austrian Symbolist painter of The Kiss, leader of the Vienna Secession and its golden style.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-edvard-munch",
+    "friendly_name": "Birth of Edvard Munch",
+    "year": 1863,
+    "category": "people",
+    "description": "The Norwegian painter of The Scream, a pioneer of Expressionism exploring anxiety and emotion.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-henry-ford",
+    "friendly_name": "Birth of Henry Ford",
+    "year": 1863,
+    "category": "people",
+    "description": "The American industrialist whose assembly line and Model T put the automobile within reach of millions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-richard-strauss",
+    "friendly_name": "Birth of Richard Strauss",
+    "year": 1864,
+    "category": "people",
+    "description": "The German composer of tone poems and operas like Also sprach Zarathustra and Der Rosenkavalier.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-rudyard-kipling",
+    "friendly_name": "Birth of Rudyard Kipling",
+    "year": 1865,
+    "category": "people",
+    "description": "The British author of The Jungle Book and Kim, the first English-language Nobel laureate in Literature.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-wb-yeats",
+    "friendly_name": "Birth of W B Yeats",
+    "year": 1865,
+    "category": "people",
+    "description": "The Irish poet and dramatist, a pillar of literary modernism and Nobel laureate in Literature.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-wassily-kandinsky",
+    "friendly_name": "Birth of Kandinsky",
+    "year": 1866,
+    "category": "people",
+    "description": "The Russian painter and theorist credited with creating some of the first purely abstract works.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-frank-lloyd-wright",
+    "friendly_name": "Birth of Frank Lloyd Wright",
+    "year": 1867,
+    "category": "people",
+    "description": "The American architect of Fallingwater who pioneered organic architecture and the Prairie style.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-marie-curie",
+    "friendly_name": "Birth of Marie Curie",
+    "year": 1867,
+    "category": "people",
+    "description": "The Polish-French physicist who pioneered radioactivity and won Nobel Prizes in physics and chemistry.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-wilbur-wright",
+    "friendly_name": "Birth of Wilbur Wright",
+    "year": 1867,
+    "category": "people",
+    "description": "The American aviation pioneer who, with his brother Orville, invented and flew the first powered airplane.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-henri-matisse",
+    "friendly_name": "Birth of Henri Matisse",
+    "year": 1869,
+    "category": "people",
+    "description": "The French artist who led the Fauvist movement and revolutionized color and form in modern art.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-marcel-proust",
+    "friendly_name": "Birth of Marcel Proust",
+    "year": 1871,
+    "category": "people",
+    "description": "The French novelist of In Search of Lost Time, a monumental exploration of memory and time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-orville-wright",
+    "friendly_name": "Birth of Orville Wright",
+    "year": 1871,
+    "category": "people",
+    "description": "The American aviation pioneer who, with his brother Wilbur, built and flew the first powered airplane.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-ernest-rutherford",
+    "friendly_name": "Birth of Rutherford",
+    "year": 1871,
+    "category": "people",
+    "description": "The New Zealand physicist who discovered the atomic nucleus, becoming the father of nuclear physics.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-bertrand-russell",
+    "friendly_name": "Birth of Bertrand Russell",
+    "year": 1872,
+    "category": "people",
+    "description": "The British philosopher and logician, co-author of Principia Mathematica and a noted pacifist.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-sergei-rachmaninoff",
+    "friendly_name": "Birth of Rachmaninoff",
+    "year": 1873,
+    "category": "people",
+    "description": "The Russian composer and virtuoso pianist of sweeping, late-Romantic concertos and preludes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-harry-houdini",
+    "friendly_name": "Birth of Harry Houdini",
+    "year": 1874,
+    "category": "people",
+    "description": "The American magician and escape artist whose daring stunts made him a legend of stage illusion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-guglielmo-marconi",
+    "friendly_name": "Birth of Marconi",
+    "year": 1874,
+    "category": "people",
+    "description": "The Italian inventor who developed long-distance radio transmission, sharing a Nobel Prize in physics.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-winston-churchill",
+    "friendly_name": "Birth of Winston Churchill",
+    "year": 1874,
+    "category": "people",
+    "description": "The British prime minister who led the nation to victory in World War II with defiant wartime leadership.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-albert-schweitzer",
+    "friendly_name": "Birth of Albert Schweitzer",
+    "year": 1875,
+    "category": "people",
+    "description": "The French-German physician, theologian, and Nobel Peace laureate who served as a missionary doctor.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-carl-jung",
+    "friendly_name": "Birth of Carl Jung",
+    "year": 1875,
+    "category": "people",
+    "description": "The Swiss psychiatrist who founded analytical psychology and theorized the collective unconscious.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-thomas-mann",
+    "friendly_name": "Birth of Thomas Mann",
+    "year": 1875,
+    "category": "people",
+    "description": "The German novelist of Buddenbrooks and The Magic Mountain, a Nobel laureate in Literature.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-jack-london",
+    "friendly_name": "Birth of Jack London",
+    "year": 1876,
+    "category": "people",
+    "description": "The American author of The Call of the Wild and White Fang, drawn from his Klondike adventures.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-albert-einstein",
+    "friendly_name": "Birth of Albert Einstein",
+    "year": 1879,
+    "category": "people",
+    "description": "The German-American physicist whose theory of relativity reshaped our understanding of space and time.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-helen-keller",
+    "friendly_name": "Birth of Helen Keller",
+    "year": 1880,
+    "category": "people",
+    "description": "The deaf-blind American author and activist who became a global advocate for the disabled.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-alexander-fleming",
+    "friendly_name": "Birth of Alexander Fleming",
+    "year": 1881,
+    "category": "people",
+    "description": "The Scottish biologist who discovered penicillin, ushering in the age of antibiotics.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-pablo-picasso",
+    "friendly_name": "Birth of Pablo Picasso",
+    "year": 1881,
+    "category": "people",
+    "description": "The Spanish painter who co-founded Cubism and reshaped 20th-century art with works like Guernica.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-igor-stravinsky",
+    "friendly_name": "Birth of Igor Stravinsky",
+    "year": 1882,
+    "category": "people",
+    "description": "The Russian composer of The Rite of Spring, whose rhythmic daring revolutionized modern music.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-james-joyce",
+    "friendly_name": "Birth of James Joyce",
+    "year": 1882,
+    "category": "people",
+    "description": "The Irish novelist of Ulysses and Dubliners, a towering figure of literary modernism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-virginia-woolf",
+    "friendly_name": "Birth of Virginia Woolf",
+    "year": 1882,
+    "category": "people",
+    "description": "The English modernist of Mrs Dalloway and To the Lighthouse, a pioneer of stream-of-consciousness.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-franz-kafka",
+    "friendly_name": "Birth of Franz Kafka",
+    "year": 1883,
+    "category": "people",
+    "description": "The Czech writer of The Trial and The Metamorphosis, whose nightmarish visions defined the Kafkaesque.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-john-maynard-keynes",
+    "friendly_name": "Birth of J M Keynes",
+    "year": 1883,
+    "category": "people",
+    "description": "The British economist whose theories on demand and government spending reshaped modern economics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-harry-truman",
+    "friendly_name": "Birth of Harry S Truman",
+    "year": 1884,
+    "category": "people",
+    "description": "The 33rd US president who oversaw the end of World War II and authorized the atomic bombings of Japan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-dh-lawrence",
+    "friendly_name": "Birth of D H Lawrence",
+    "year": 1885,
+    "category": "people",
+    "description": "The English writer of Sons and Lovers and Lady Chatterley's Lover, known for his frank treatment of sexuality.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-niels-bohr",
+    "friendly_name": "Birth of Niels Bohr",
+    "year": 1885,
+    "category": "people",
+    "description": "The Danish physicist whose model of the atom and work on quantum theory earned him a Nobel Prize.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-diego-rivera",
+    "friendly_name": "Birth of Diego Rivera",
+    "year": 1886,
+    "category": "people",
+    "description": "The Mexican muralist whose sweeping public frescoes depicted Mexico's history and social struggles.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-erwin-schrodinger",
+    "friendly_name": "Birth of Erwin Schrodinger",
+    "year": 1887,
+    "category": "people",
+    "description": "The Austrian physicist whose wave equation founded quantum mechanics, famed for the cat thought experiment.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-georgia-okeeffe",
+    "friendly_name": "Birth of Georgia O'Keeffe",
+    "year": 1887,
+    "category": "people",
+    "description": "The American modernist painter famed for her magnified flowers and New Mexico desert landscapes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-ts-eliot",
+    "friendly_name": "Birth of T S Eliot",
+    "year": 1888,
+    "category": "people",
+    "description": "The American-British poet behind The Waste Land and a towering figure of literary modernism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-charlie-chaplin",
+    "friendly_name": "Birth of Charlie Chaplin",
+    "year": 1889,
+    "category": "people",
+    "description": "The British actor and filmmaker whose Tramp character made him an icon of silent comedy cinema.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-ludwig-wittgenstein",
+    "friendly_name": "Birth of Wittgenstein",
+    "year": 1889,
+    "category": "people",
+    "description": "The Austrian philosopher whose work on language and logic reshaped twentieth-century thought.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-agatha-christie",
+    "friendly_name": "Birth of Agatha Christie",
+    "year": 1890,
+    "category": "people",
+    "description": "The English novelist and best-selling mystery writer who created Hercule Poirot and Miss Marple.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-charles-de-gaulle",
+    "friendly_name": "Birth of Charles de Gaulle",
+    "year": 1890,
+    "category": "people",
+    "description": "The French general who led the Free French in WWII and founded the Fifth Republic as president.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-dwight-eisenhower",
+    "friendly_name": "Birth of Eisenhower",
+    "year": 1890,
+    "category": "people",
+    "description": "The Allied supreme commander on D-Day who later served as the 34th US president.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "death-sitting-bull",
+    "friendly_name": "Death of Sitting Bull",
+    "year": 1890,
+    "category": "people",
+    "description": "The Lakota leader who united the Sioux against US expansion and was killed by police during his arrest.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-sergei-prokofiev",
+    "friendly_name": "Birth of Sergei Prokofiev",
+    "year": 1891,
+    "category": "people",
+    "description": "The Russian composer of Peter and the Wolf and Romeo and Juliet, a master of modern orchestral music.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-jrr-tolkien",
+    "friendly_name": "Birth of J R R Tolkien",
+    "year": 1892,
+    "category": "people",
+    "description": "The English author of The Hobbit and The Lord of the Rings, founder of modern high fantasy.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-aldous-huxley",
+    "friendly_name": "Birth of Aldous Huxley",
+    "year": 1894,
+    "category": "people",
+    "description": "The English writer of Brave New World, a dystopian vision of a controlled future society.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-nikita-khrushchev",
+    "friendly_name": "Birth of Khrushchev",
+    "year": 1894,
+    "category": "people",
+    "description": "The Soviet leader who denounced Stalin and faced off with the US during the Cuban Missile Crisis.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-f-scott-fitzgerald",
+    "friendly_name": "Birth of F Scott Fitzgerald",
+    "year": 1896,
+    "category": "people",
+    "description": "The American author of The Great Gatsby who chronicled the glamour and excess of the Jazz Age.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-amelia-earhart",
+    "friendly_name": "Birth of Amelia Earhart",
+    "year": 1897,
+    "category": "people",
+    "description": "The American aviator and first woman to fly solo across the Atlantic, who vanished over the Pacific.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-ernest-hemingway",
+    "friendly_name": "Birth of Ernest Hemingway",
+    "year": 1899,
+    "category": "people",
+    "description": "The American author of The Old Man and the Sea, whose spare prose won him the Nobel Prize.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-jorge-luis-borges",
+    "friendly_name": "Birth of Jorge Luis Borges",
+    "year": 1899,
+    "category": "people",
+    "description": "The Argentine writer of labyrinthine short stories that fused philosophy, fantasy, and metafiction.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-enrico-fermi",
+    "friendly_name": "Birth of Enrico Fermi",
+    "year": 1901,
+    "category": "people",
+    "description": "The Italian physicist who built the first nuclear reactor and pioneered the atomic age.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-werner-heisenberg",
+    "friendly_name": "Birth of Heisenberg",
+    "year": 1901,
+    "category": "people",
+    "description": "The German physicist whose uncertainty principle became a cornerstone of quantum mechanics.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-louis-armstrong",
+    "friendly_name": "Birth of Louis Armstrong",
+    "year": 1901,
+    "category": "people",
+    "description": "The American trumpeter and singer whose virtuosity and charisma made him a defining voice of jazz.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-walt-disney",
+    "friendly_name": "Birth of Walt Disney",
+    "year": 1901,
+    "category": "people",
+    "description": "The American animator who created Mickey Mouse and built an entertainment empire of films and theme parks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-charles-lindbergh",
+    "friendly_name": "Birth of Charles Lindbergh",
+    "year": 1902,
+    "category": "people",
+    "description": "The American aviator who made the first solo nonstop flight across the Atlantic in 1927.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-john-steinbeck",
+    "friendly_name": "Birth of John Steinbeck",
+    "year": 1902,
+    "category": "people",
+    "description": "The American author of The Grapes of Wrath, a Nobel laureate who portrayed Depression-era hardship.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-george-orwell",
+    "friendly_name": "Birth of George Orwell",
+    "year": 1903,
+    "category": "people",
+    "description": "The English author of 1984 and Animal Farm, whose work warned against totalitarianism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-john-von-neumann",
+    "friendly_name": "Birth of Von Neumann",
+    "year": 1903,
+    "category": "people",
+    "description": "The Hungarian mathematician who pioneered game theory and the architecture of modern computers.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-robert-oppenheimer",
+    "friendly_name": "Birth of Oppenheimer",
+    "year": 1904,
+    "category": "people",
+    "description": "The American physicist who led the Manhattan Project to build the first atomic bomb.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-pablo-neruda",
+    "friendly_name": "Birth of Pablo Neruda",
+    "year": 1904,
+    "category": "people",
+    "description": "The Chilean poet and Nobel laureate celebrated for his passionate love poems and political verse.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-salvador-dali",
+    "friendly_name": "Birth of Salvador Dali",
+    "year": 1904,
+    "category": "people",
+    "description": "The Spanish painter of melting clocks whose surrealist images explored dreams and the subconscious.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-jean-paul-sartre",
+    "friendly_name": "Birth of Jean-Paul Sartre",
+    "year": 1905,
+    "category": "people",
+    "description": "The French philosopher and leading voice of existentialism who declined the Nobel Prize.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-kurt-godel",
+    "friendly_name": "Birth of Kurt Godel",
+    "year": 1906,
+    "category": "people",
+    "description": "The Austrian logician whose incompleteness theorems transformed mathematics and logic.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-dmitri-shostakovich",
+    "friendly_name": "Birth of Shostakovich",
+    "year": 1906,
+    "category": "people",
+    "description": "The Russian composer whose symphonies endured an uneasy relationship with the Soviet state.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-frida-kahlo",
+    "friendly_name": "Birth of Frida Kahlo",
+    "year": 1907,
+    "category": "people",
+    "description": "The Mexican painter whose vivid self-portraits explored identity, pain, and her own body.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-katharine-hepburn",
+    "friendly_name": "Birth of Katharine Hepburn",
+    "year": 1907,
+    "category": "people",
+    "description": "The American actress and four-time Oscar winner known for fierce independence and screen wit.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-lyndon-johnson",
+    "friendly_name": "Birth of Lyndon B Johnson",
+    "year": 1908,
+    "category": "people",
+    "description": "The 36th US president who enacted landmark civil rights laws and escalated the Vietnam War.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-simone-de-beauvoir",
+    "friendly_name": "Birth of Simone de Beauvoir",
+    "year": 1908,
+    "category": "people",
+    "description": "The French philosopher whose book The Second Sex became a foundational text of feminism.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-jacques-cousteau",
+    "friendly_name": "Birth of Jacques Cousteau",
+    "year": 1910,
+    "category": "people",
+    "description": "The French oceanographer who co-invented the aqua-lung and popularized undersea exploration on film.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-mother-teresa",
+    "friendly_name": "Birth of Mother Teresa",
+    "year": 1910,
+    "category": "people",
+    "description": "The Albanian-Indian nun who served Kolkata's poor and was later canonized as a Catholic saint.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-alan-turing",
+    "friendly_name": "Birth of Alan Turing",
+    "year": 1912,
+    "category": "people",
+    "description": "The English mathematician who broke the Enigma code and laid the foundations of computer science.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-jackson-pollock",
+    "friendly_name": "Birth of Jackson Pollock",
+    "year": 1912,
+    "category": "people",
+    "description": "The American painter who pioneered drip-painting and led the Abstract Expressionist movement.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-albert-camus",
+    "friendly_name": "Birth of Albert Camus",
+    "year": 1913,
+    "category": "people",
+    "description": "The French author of The Stranger and a Nobel laureate associated with the philosophy of the absurd.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-richard-nixon",
+    "friendly_name": "Birth of Richard Nixon",
+    "year": 1913,
+    "category": "people",
+    "description": "The 37th US president who opened relations with China and resigned over the Watergate scandal.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-rosa-parks",
+    "friendly_name": "Birth of Rosa Parks",
+    "year": 1913,
+    "category": "people",
+    "description": "The American activist whose 1955 refusal to give up her bus seat sparked the Montgomery boycott.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-frank-sinatra",
+    "friendly_name": "Birth of Frank Sinatra",
+    "year": 1915,
+    "category": "people",
+    "description": "The American singer and actor whose smooth voice made him one of the most popular entertainers ever.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-orson-welles",
+    "friendly_name": "Birth of Orson Welles",
+    "year": 1915,
+    "category": "people",
+    "description": "The American filmmaker behind Citizen Kane, widely regarded as one of cinema's greatest works.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-richard-feynman",
+    "friendly_name": "Birth of Richard Feynman",
+    "year": 1918,
+    "category": "people",
+    "description": "The American physicist who reshaped quantum electrodynamics and shared the 1965 Nobel Prize in Physics.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-jackie-robinson",
+    "friendly_name": "Birth of Jackie Robinson",
+    "year": 1919,
+    "category": "people",
+    "description": "The American ballplayer who broke baseball's color barrier in 1947, becoming a civil rights icon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-isaac-asimov",
+    "friendly_name": "Birth of Isaac Asimov",
+    "year": 1920,
+    "category": "people",
+    "description": "The prolific American author of the Foundation and Robot series who shaped modern science fiction.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-john-paul-ii",
+    "friendly_name": "Birth of Pope John Paul II",
+    "year": 1920,
+    "category": "people",
+    "description": "The Polish pope who led the Catholic Church from 1978 and helped hasten communism's fall in Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-betty-friedan",
+    "friendly_name": "Birth of Betty Friedan",
+    "year": 1921,
+    "category": "people",
+    "description": "The American writer whose book The Feminine Mystique ignited second-wave feminism in the 1960s.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-maria-callas",
+    "friendly_name": "Birth of Maria Callas",
+    "year": 1923,
+    "category": "people",
+    "description": "The Greek-American soprano whose dramatic voice and artistry revived the bel canto opera tradition.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-george-hw-bush",
+    "friendly_name": "Birth of George H. W. Bush",
+    "year": 1924,
+    "category": "people",
+    "description": "The 41st US president who oversaw the Cold War's end and led the 1991 Gulf War coalition.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "birth-margaret-thatcher",
+    "friendly_name": "Birth of Margaret Thatcher",
+    "year": 1925,
+    "category": "people",
+    "description": "Britain's first woman prime minister, the 'Iron Lady' who reshaped the economy through the 1980s.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-fidel-castro",
+    "friendly_name": "Birth of Fidel Castro",
+    "year": 1926,
+    "category": "people",
+    "description": "The revolutionary who led Cuba's 1959 revolution and ruled the communist island for decades.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-marilyn-monroe",
+    "friendly_name": "Birth of Marilyn Monroe",
+    "year": 1926,
+    "category": "people",
+    "description": "The American actress and Hollywood icon famed for Some Like It Hot and her enduring star allure.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-andy-warhol",
+    "friendly_name": "Birth of Andy Warhol",
+    "year": 1928,
+    "category": "people",
+    "description": "The American artist who led the Pop Art movement with works like his Campbell's Soup Cans.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-maya-angelou",
+    "friendly_name": "Birth of Maya Angelou",
+    "year": 1928,
+    "category": "people",
+    "description": "The American poet and memoirist behind I Know Why the Caged Bird Sings and a civil rights voice.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-anne-frank",
+    "friendly_name": "Birth of Anne Frank",
+    "year": 1929,
+    "category": "people",
+    "description": "The German-Dutch diarist whose journal in hiding became the most-read account of the Holocaust.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-audrey-hepburn",
+    "friendly_name": "Birth of Audrey Hepburn",
+    "year": 1929,
+    "category": "people",
+    "description": "The British actress of Roman Holiday and Breakfast at Tiffany's, later a devoted UNICEF humanitarian.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-neil-armstrong",
+    "friendly_name": "Birth of Neil Armstrong",
+    "year": 1930,
+    "category": "people",
+    "description": "The American astronaut who became the first person to walk on the Moon during Apollo 11 in 1969.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-mikhail-gorbachev",
+    "friendly_name": "Birth of Mikhail Gorbachev",
+    "year": 1931,
+    "category": "people",
+    "description": "The last Soviet leader whose glasnost and perestroika reforms helped bring the Cold War to an end.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "birth-elizabeth-taylor",
+    "friendly_name": "Birth of Elizabeth Taylor",
+    "year": 1932,
+    "category": "people",
+    "description": "The British-American actress and Cleopatra star, a screen legend and pioneering AIDS activist.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-carl-sagan",
+    "friendly_name": "Birth of Carl Sagan",
+    "year": 1934,
+    "category": "people",
+    "description": "The American astronomer who popularized science through the Cosmos series and championed SETI.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-yuri-gagarin",
+    "friendly_name": "Birth of Yuri Gagarin",
+    "year": 1934,
+    "category": "people",
+    "description": "The Soviet cosmonaut who in 1961 became the first human to journey into outer space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-elvis-presley",
+    "friendly_name": "Birth of Elvis Presley",
+    "year": 1935,
+    "category": "people",
+    "description": "The American singer crowned the 'King of Rock and Roll' who transformed popular music.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "birth-dalai-lama",
+    "friendly_name": "Birth of the 14th Dalai Lama",
+    "year": 1935,
+    "category": "people",
+    "description": "Tenzin Gyatso, the Tibetan Buddhist spiritual leader awarded the 1989 Nobel Peace Prize.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-jimi-hendrix",
+    "friendly_name": "Birth of Jimi Hendrix",
+    "year": 1942,
+    "category": "people",
+    "description": "The American guitarist who redefined rock with virtuosic, electrifying playing in the 1960s.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-muhammad-ali",
+    "friendly_name": "Birth of Muhammad Ali",
+    "year": 1942,
+    "category": "people",
+    "description": "The American boxer and three-time heavyweight champion known for his activism and bravado.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-stephen-hawking",
+    "friendly_name": "Birth of Stephen Hawking",
+    "year": 1942,
+    "category": "people",
+    "description": "The English physicist who advanced black hole theory and wrote the bestseller A Brief History of Time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-bob-marley",
+    "friendly_name": "Birth of Bob Marley",
+    "year": 1945,
+    "category": "people",
+    "description": "The Jamaican musician who brought reggae and Rastafari to the world with songs of unity and peace.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-benito-mussolini",
+    "friendly_name": "Death of Mussolini",
+    "year": 1945,
+    "category": "people",
+    "description": "The Italian Fascist dictator who founded the movement was captured and executed by partisans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-freddie-mercury",
+    "friendly_name": "Birth of Freddie Mercury",
+    "year": 1946,
+    "category": "people",
+    "description": "The British singer and Queen frontman renowned for his vocal range and electric stage presence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-david-bowie",
+    "friendly_name": "Birth of David Bowie",
+    "year": 1947,
+    "category": "people",
+    "description": "The British musician and shape-shifting innovator behind Ziggy Stardust and decades of pop reinvention.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-john-f-kennedy",
+    "friendly_name": "Death of John F Kennedy",
+    "year": 1963,
+    "category": "people",
+    "description": "The 35th US president, who led during the Cuban Missile Crisis, was assassinated in Dallas in 1963.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-kobe-bryant",
+    "friendly_name": "Birth of Kobe Bryant",
+    "year": 1978,
+    "category": "people",
+    "description": "The American basketball star who won five NBA titles with the Lakers across a 20-year career.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-saddam-hussein",
+    "friendly_name": "Death of Saddam Hussein",
+    "year": 2006,
+    "category": "people",
+    "description": "The Iraqi dictator, ousted in the 2003 US-led invasion, was executed by hanging in Baghdad.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-nelson-mandela",
+    "friendly_name": "Death of Nelson Mandela",
+    "year": 2013,
+    "category": "people",
+    "description": "The anti-apartheid leader who, after 27 years in prison, became South Africa's first Black president.",
+    "difficulty": "medium"
+  }
+]

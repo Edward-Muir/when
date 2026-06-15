@@ -1,0 +1,610 @@
+[
+  {
+    "name": "edwin-smith-surgical-papyrus",
+    "friendly_name": "Edwin Smith Surgical Papyrus",
+    "year": -1600,
+    "category": "medicine",
+    "description": "An Egyptian scroll detailed the examination and treatment of wounds, the oldest known surgical text.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ebers-papyrus-written",
+    "friendly_name": "Ebers Medical Papyrus Written",
+    "year": -1550,
+    "category": "medicine",
+    "description": "This Egyptian medical scroll recorded hundreds of remedies, ailments, and treatments for diseases.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "asclepius-healing-cult",
+    "friendly_name": "Cult of Asclepius Spreads",
+    "year": -420,
+    "category": "medicine",
+    "description": "Greek healing temples devoted to Asclepius offered sleep-cures and treatments to the sick and injured.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hippocratic-oath-composed",
+    "friendly_name": "Hippocratic Oath Composed",
+    "year": -400,
+    "category": "medicine",
+    "description": "Greek physicians adopted an ethical pledge defining a doctor's duties, still echoed in medicine today.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "herophilus-dissects-human-body",
+    "friendly_name": "Herophilus Dissects the Body",
+    "year": -300,
+    "category": "medicine",
+    "description": "In Alexandria, Herophilus performed systematic human dissections, founding the study of anatomy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "huangdi-neijing-compiled",
+    "friendly_name": "Huangdi Neijing Compiled",
+    "year": -200,
+    "category": "medicine",
+    "description": "China's foundational medical text outlined theories of the body, disease, and treatment by needling.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "acupuncture-systematized",
+    "friendly_name": "Acupuncture Systematized",
+    "year": -100,
+    "category": "medicine",
+    "description": "Chinese physicians formalized inserting fine needles at body points to treat illness and relieve pain.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "celsus-de-medicina-encyclopedia",
+    "friendly_name": "Celsus Compiles De Medicina",
+    "year": 30,
+    "category": "medicine",
+    "description": "The Roman writer Celsus described surgery and the four signs of inflammation in a vast medical encyclopedia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-hospital-byzantine",
+    "friendly_name": "First Christian Hospitals",
+    "year": 370,
+    "category": "medicine",
+    "description": "Bishop Basil of Caesarea founded a charitable complex caring for the sick, a model for later hospitals.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hua-tuo-surgical-anesthesia",
+    "friendly_name": "Hua Tuo's Herbal Anesthesia",
+    "year": 200,
+    "category": "medicine",
+    "description": "The Chinese surgeon Hua Tuo reputedly used a herbal anesthetic powder to perform abdominal operations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-razi-distinguishes-smallpox",
+    "friendly_name": "Al-Razi Distinguishes Diseases",
+    "year": 910,
+    "category": "medicine",
+    "description": "The Persian physician Al-Razi wrote the first clear clinical account separating smallpox from measles.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "al-zahrawi-surgical-encyclopedia",
+    "friendly_name": "Al-Zahrawi's Surgery Manual",
+    "year": 1000,
+    "category": "medicine",
+    "description": "The Andalusian surgeon Al-Zahrawi illustrated hundreds of instruments in an influential surgical treatise.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "constantine-african-translations",
+    "friendly_name": "Arabic Medicine Reaches Europe",
+    "year": 1080,
+    "category": "medicine",
+    "description": "Constantine the African translated Arabic medical works into Latin, reviving European medical learning.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trotula-women-medicine",
+    "friendly_name": "Trotula's Women's Medicine",
+    "year": 1100,
+    "category": "medicine",
+    "description": "Texts attributed to Trotula of Salerno addressed women's health and childbirth in medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "leprosy-hospitals-spread",
+    "friendly_name": "Leper Hospitals Spread",
+    "year": 1150,
+    "category": "medicine",
+    "description": "Thousands of leprosaria were built across Europe to isolate and care for sufferers of leprosy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-medical-licensing-law",
+    "friendly_name": "First Medical Licensing Law",
+    "year": 1231,
+    "category": "medicine",
+    "description": "Emperor Frederick II required physicians in Sicily to be examined and licensed before practicing.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mondino-anatomy-dissection",
+    "friendly_name": "Mondino Revives Dissection",
+    "year": 1316,
+    "category": "medicine",
+    "description": "Mondino de Luzzi wrote the first European anatomy manual based on hands-on human dissection in Bologna.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "guy-de-chauliac-surgery-text",
+    "friendly_name": "Chauliac Writes Great Surgery",
+    "year": 1363,
+    "category": "medicine",
+    "description": "French surgeon Guy de Chauliac wrote a treatise that guided European surgery for two hundred years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-anatomy-theatre",
+    "friendly_name": "First Anatomy Theatre Built",
+    "year": 1594,
+    "category": "medicine",
+    "description": "The University of Padua built a permanent theatre where students watched public human dissections.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "paracelsus-chemical-medicine",
+    "friendly_name": "Paracelsus Founds Chemical Medicine",
+    "year": 1530,
+    "category": "medicine",
+    "description": "The Swiss physician Paracelsus pioneered using minerals and chemicals as remedies, challenging old dogma.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pare-improves-wound-care",
+    "friendly_name": "Pare Reforms Battlefield Surgery",
+    "year": 1545,
+    "category": "medicine",
+    "description": "The French surgeon Ambroise Pare replaced cauterizing wounds with gentler dressings and vessel ligation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fracastoro-contagion-theory",
+    "friendly_name": "Fracastoro's Contagion Theory",
+    "year": 1546,
+    "category": "medicine",
+    "description": "Italian scholar Fracastoro proposed that tiny invisible seeds spread disease between people and objects.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-pharmacopoeia",
+    "friendly_name": "First Official Pharmacopoeia",
+    "year": 1546,
+    "category": "medicine",
+    "description": "Nuremberg published a standardized list of medicines and recipes for apothecaries to follow.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "santorio-metabolism-experiments",
+    "friendly_name": "Santorio Measures Metabolism",
+    "year": 1614,
+    "category": "medicine",
+    "description": "Santorio weighed himself for decades on a balance chair, founding the quantitative study of metabolism.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cinchona-bark-malaria",
+    "friendly_name": "Quinine Bark Treats Malaria",
+    "year": 1632,
+    "category": "medicine",
+    "description": "Jesuits brought Peruvian cinchona bark to Europe, the first effective remedy against malarial fevers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wiseman-english-surgery",
+    "friendly_name": "Wiseman Advances Surgery",
+    "year": 1676,
+    "category": "medicine",
+    "description": "Richard Wiseman, called the father of English surgery, wrote influential works on wounds and treatment.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-recorded-vital-statistics",
+    "friendly_name": "First Disease Statistics",
+    "year": 1662,
+    "category": "medicine",
+    "description": "John Graunt analyzed London's death records, founding epidemiology and the study of public health data.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "smallpox-variolation-europe",
+    "friendly_name": "Variolation Reaches Europe",
+    "year": 1721,
+    "category": "medicine",
+    "description": "Lady Mary Montagu introduced smallpox inoculation to Britain after observing the practice in Istanbul.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-clinical-trial-scurvy",
+    "friendly_name": "First Clinical Trial",
+    "year": 1747,
+    "category": "medicine",
+    "description": "Naval surgeon James Lind tested treatments on sailors and found citrus fruit cured scurvy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "morgagni-founds-pathology",
+    "friendly_name": "Morgagni Founds Pathology",
+    "year": 1761,
+    "category": "medicine",
+    "description": "Giovanni Morgagni linked symptoms in life to organ damage found at autopsy, founding modern pathology.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-maternity-hospital",
+    "friendly_name": "First Maternity Hospital",
+    "year": 1739,
+    "category": "medicine",
+    "description": "London's lying-in hospitals opened to provide poor women with care and shelter during childbirth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "withering-digitalis",
+    "friendly_name": "Digitalis Treats Heart Failure",
+    "year": 1785,
+    "category": "medicine",
+    "description": "William Withering documented foxglove extract as a drug to treat dropsy and failing hearts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pinel-reforms-asylums",
+    "friendly_name": "Pinel Reforms Asylums",
+    "year": 1793,
+    "category": "medicine",
+    "description": "Philippe Pinel unchained the mentally ill in Paris, promoting humane treatment over confinement.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-dental-drill-foot",
+    "friendly_name": "First Dental Drill Built",
+    "year": 1790,
+    "category": "medicine",
+    "description": "John Greenwood adapted a spinning-wheel pedal to power a dental drill, modernizing tooth treatment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-cesarean-mother-survives",
+    "friendly_name": "Mother Survives Cesarean",
+    "year": 1794,
+    "category": "medicine",
+    "description": "Jesse Bennett reportedly performed an early cesarean section in America in which both mother and child lived.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "homeopathy-founded",
+    "friendly_name": "Homeopathy Founded",
+    "year": 1796,
+    "category": "medicine",
+    "description": "Samuel Hahnemann proposed treating illness with highly diluted substances, founding homeopathy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-blood-pressure-measurement",
+    "friendly_name": "Blood Pressure Measured",
+    "year": 1733,
+    "category": "medicine",
+    "description": "Stephen Hales first measured arterial blood pressure by inserting a tube into a horse's artery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ophthalmoscope-invented",
+    "friendly_name": "Ophthalmoscope Invented",
+    "year": 1851,
+    "category": "medicine",
+    "description": "Hermann von Helmholtz built a device to look into the living eye, transforming the study of vision.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-nursing-textbook",
+    "friendly_name": "First Nursing Textbook",
+    "year": 1860,
+    "category": "medicine",
+    "description": "Florence Nightingale published Notes on Nursing, laying the foundations of professional patient care.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chloroform-eases-childbirth",
+    "friendly_name": "Chloroform Eases Childbirth",
+    "year": 1853,
+    "category": "medicine",
+    "description": "James Simpson popularized chloroform anesthesia, and Queen Victoria used it to deliver a baby.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lister-spray-operating-theatre",
+    "friendly_name": "Carbolic Spray in Surgery",
+    "year": 1871,
+    "category": "medicine",
+    "description": "Joseph Lister introduced a carbolic acid spray in the operating theatre to kill germs during surgery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "diphtheria-antitoxin-developed",
+    "friendly_name": "Diphtheria Antitoxin Developed",
+    "year": 1894,
+    "category": "medicine",
+    "description": "Emil von Behring's antitoxin treated diphtheria, the first serum therapy and an early Nobel-winning advance.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ehrlich-magic-bullet",
+    "friendly_name": "First Targeted Drug Created",
+    "year": 1910,
+    "category": "medicine",
+    "description": "Paul Ehrlich's Salvarsan treated syphilis, launching chemotherapy and the search for magic-bullet drugs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vitamins-discovered",
+    "friendly_name": "Vitamins Discovered",
+    "year": 1912,
+    "category": "medicine",
+    "description": "Casimir Funk coined the word vitamine after finding nutrients whose lack caused diseases like beriberi.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-typhoid-vaccine",
+    "friendly_name": "Typhoid Vaccine Created",
+    "year": 1896,
+    "category": "medicine",
+    "description": "Almroth Wright developed a vaccine against typhoid fever, later credited with saving wartime soldiers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "blood-groups-transfusion-safe",
+    "friendly_name": "Blood Typing Makes Transfusion Safe",
+    "year": 1907,
+    "category": "medicine",
+    "description": "Matching donors by Landsteiner's blood groups made transfusions reliable for the first time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bcg-tuberculosis-vaccine",
+    "friendly_name": "BCG Tuberculosis Vaccine",
+    "year": 1921,
+    "category": "medicine",
+    "description": "The BCG vaccine against tuberculosis was first given to a child, becoming one of the world's most used.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "iron-lung-developed",
+    "friendly_name": "Iron Lung Saves Polio Patients",
+    "year": 1928,
+    "category": "medicine",
+    "description": "The iron lung used air pressure to breathe for paralyzed polio patients, keeping thousands alive.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "blood-bank-established",
+    "friendly_name": "First Blood Bank Opens",
+    "year": 1937,
+    "category": "medicine",
+    "description": "A Chicago hospital opened the first blood bank, storing donated blood for transfusion on demand.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pap-smear-introduced",
+    "friendly_name": "Pap Smear Detects Cancer",
+    "year": 1943,
+    "category": "medicine",
+    "description": "George Papanicolaou's cervical smear test let doctors catch cancer early, saving countless lives.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "streptomycin-cures-tb",
+    "friendly_name": "Streptomycin Cures Tuberculosis",
+    "year": 1943,
+    "category": "medicine",
+    "description": "Selman Waksman's team isolated streptomycin, the first antibiotic effective against tuberculosis.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-kidney-transplant",
+    "friendly_name": "First Successful Kidney Transplant",
+    "year": 1954,
+    "category": "medicine",
+    "description": "Surgeons in Boston transplanted a kidney between identical twins, the first lasting organ transplant.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "birth-control-pill-developed",
+    "friendly_name": "The Pill Developed",
+    "year": 1957,
+    "category": "medicine",
+    "description": "Researchers developed the first oral contraceptive, giving women reliable control over pregnancy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-hip-replacement",
+    "friendly_name": "First Modern Hip Replacement",
+    "year": 1962,
+    "category": "medicine",
+    "description": "John Charnley pioneered a durable artificial hip joint, freeing arthritis sufferers from chronic pain.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-liver-transplant",
+    "friendly_name": "First Liver Transplant",
+    "year": 1963,
+    "category": "medicine",
+    "description": "Thomas Starzl attempted the first human liver transplant, pioneering a now life-saving operation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-lung-transplant",
+    "friendly_name": "First Lung Transplant",
+    "year": 1963,
+    "category": "medicine",
+    "description": "Surgeon James Hardy performed the first human lung transplant, opening a new field of organ surgery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ct-scanner-invented",
+    "friendly_name": "CT Scanner Invented",
+    "year": 1971,
+    "category": "medicine",
+    "description": "Godfrey Hounsfield built the first CT scanner, letting doctors see cross-sections inside the body.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ultrasound-imaging",
+    "friendly_name": "Ultrasound Imaging Developed",
+    "year": 1958,
+    "category": "medicine",
+    "description": "Ian Donald used sonar-like ultrasound to image the womb, making it routine to scan unborn babies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "monoclonal-antibodies-created",
+    "friendly_name": "Monoclonal Antibodies Created",
+    "year": 1975,
+    "category": "medicine",
+    "description": "Kohler and Milstein produced identical antibodies in the lab, enabling new diagnostics and drugs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-statin-discovered",
+    "friendly_name": "First Statin Discovered",
+    "year": 1976,
+    "category": "medicine",
+    "description": "Akira Endo isolated the first statin, leading to drugs that lower cholesterol and prevent heart disease.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "last-natural-smallpox-case",
+    "friendly_name": "Last Natural Smallpox Case",
+    "year": 1977,
+    "category": "medicine",
+    "description": "A hospital cook in Somalia became the last person to catch smallpox naturally, ending its spread.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-hepatitis-b-vaccine",
+    "friendly_name": "Hepatitis B Vaccine Approved",
+    "year": 1981,
+    "category": "medicine",
+    "description": "The first vaccine against hepatitis B was approved, later credited with preventing liver cancer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "azt-approved-aids",
+    "friendly_name": "First AIDS Drug Approved",
+    "year": 1987,
+    "category": "medicine",
+    "description": "AZT became the first drug approved to treat HIV, slowing the virus in patients with AIDS.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "human-genome-completed",
+    "friendly_name": "Human Genome Mapped",
+    "year": 2003,
+    "category": "medicine",
+    "description": "Scientists finished sequencing the human genome, reading the full genetic blueprint of our species.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-face-transplant",
+    "friendly_name": "First Face Transplant",
+    "year": 2005,
+    "category": "medicine",
+    "description": "Surgeons in France performed the world's first partial face transplant on a disfigured patient.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "induced-stem-cells-created",
+    "friendly_name": "Stem Cells Reprogrammed",
+    "year": 2006,
+    "category": "medicine",
+    "description": "Shinya Yamanaka turned ordinary skin cells into stem cells, opening new paths in regenerative medicine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hpv-vaccine-approved",
+    "friendly_name": "HPV Vaccine Approved",
+    "year": 2006,
+    "category": "medicine",
+    "description": "The first vaccine against human papillomavirus was approved, aiming to prevent cervical cancer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-gene-therapy-approved-west",
+    "friendly_name": "First Gene Therapy Approved",
+    "year": 2017,
+    "category": "medicine",
+    "description": "US regulators approved a therapy that reprograms a patient's own cells to attack their cancer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-malaria-vaccine-rollout",
+    "friendly_name": "First Malaria Vaccine Approved",
+    "year": 2021,
+    "category": "medicine",
+    "description": "The WHO endorsed the first malaria vaccine for children, targeting a disease that kills hundreds of thousands.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-pig-heart-transplant",
+    "friendly_name": "First Pig Heart Transplant",
+    "year": 2022,
+    "category": "medicine",
+    "description": "Surgeons transplanted a genetically modified pig heart into a human, a milestone in xenotransplantation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "anatomy-act-passed",
+    "friendly_name": "Anatomy Act Regulates Dissection",
+    "year": 1832,
+    "category": "medicine",
+    "description": "Britain's Anatomy Act gave schools legal access to corpses, ending the trade in stolen bodies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-modern-prosthetic-limb",
+    "friendly_name": "Articulated Prosthetic Leg",
+    "year": 1846,
+    "category": "medicine",
+    "description": "Benjamin Palmer patented an artificial leg with bending joints, advancing prosthetics for amputees.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-rabies-vaccine",
+    "friendly_name": "Pasteur's Rabies Vaccine",
+    "year": 1885,
+    "category": "medicine",
+    "description": "Louis Pasteur saved a boy bitten by a rabid dog with the first vaccine against rabies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-organ-grown-lab",
+    "friendly_name": "First Lab-Grown Organ Implanted",
+    "year": 2006,
+    "category": "medicine",
+    "description": "Surgeons implanted bladders grown from patients' own cells, an early triumph of tissue engineering.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "keyhole-laparoscopic-surgery",
+    "friendly_name": "First Keyhole Surgery",
+    "year": 1987,
+    "category": "medicine",
+    "description": "A French surgeon removed a gallbladder through tiny incisions, launching minimally invasive surgery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-laser-eye-surgery",
+    "friendly_name": "First Laser Eye Surgery",
+    "year": 1987,
+    "category": "medicine",
+    "description": "Surgeons first used a laser to reshape the cornea, leading to vision correction for millions.",
+    "difficulty": "medium"
+  }
+]

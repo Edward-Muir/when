@@ -1,0 +1,578 @@
+[
+  {
+    "name": "first-symbolic-engravings",
+    "friendly_name": "First Symbolic Engravings",
+    "year": -73000,
+    "category": "communication",
+    "description": "Early humans scratched deliberate cross-hatched patterns onto ochre in South Africa's Blombos Cave.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tally-bone-counting",
+    "friendly_name": "Notched Tally Bones",
+    "year": -20000,
+    "category": "communication",
+    "description": "Humans carved notches into bones like the Ishango bone to record counts, an early data-keeping method.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "clay-token-accounting",
+    "friendly_name": "Clay Tokens Track Goods",
+    "year": -8000,
+    "category": "communication",
+    "description": "Mesopotamians used small clay tokens to count grain and livestock, a precursor to written records.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "proto-cuneiform-tablets",
+    "friendly_name": "Proto-Cuneiform Tablets",
+    "year": -3300,
+    "category": "communication",
+    "description": "Scribes in Uruk pressed pictographs into clay to record trade, the earliest known writing system.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "egyptian-hieroglyphs-emerge",
+    "friendly_name": "Egyptian Hieroglyphs Emerge",
+    "year": -3200,
+    "category": "communication",
+    "description": "Egypt developed hieroglyphic writing, combining pictures and sounds to record religion and kingship.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "indus-script-appears",
+    "friendly_name": "Indus Script Appears",
+    "year": -2600,
+    "category": "communication",
+    "description": "The Indus Valley civilization carved a still-undeciphered script onto seals and tablets.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "egyptian-papyrus-scrolls",
+    "friendly_name": "Egyptian Papyrus Scrolls",
+    "year": -2500,
+    "category": "communication",
+    "description": "Egyptians wove papyrus reeds into smooth sheets, creating a lightweight writing surface for scrolls.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "cuneiform-cylinder-seals",
+    "friendly_name": "Cylinder Seals Used",
+    "year": -3400,
+    "category": "communication",
+    "description": "Mesopotamians rolled engraved stone cylinders over clay to sign documents and mark ownership.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "phaistos-disc-stamped",
+    "friendly_name": "Phaistos Disc Stamped",
+    "year": -1700,
+    "category": "communication",
+    "description": "A Cretan clay disc was stamped with mysterious symbols, possibly the earliest movable-type printing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "linear-b-script",
+    "friendly_name": "Linear B Script Used",
+    "year": -1450,
+    "category": "communication",
+    "description": "Mycenaean Greeks recorded an early form of Greek on clay tablets using the Linear B syllabary.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ugaritic-cuneiform-alphabet",
+    "friendly_name": "Ugaritic Alphabet Written",
+    "year": -1400,
+    "category": "communication",
+    "description": "Scribes at Ugarit devised a cuneiform alphabet of 30 signs, among the earliest alphabetic systems.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "proto-sinaitic-alphabet",
+    "friendly_name": "First Alphabet Invented",
+    "year": -1800,
+    "category": "communication",
+    "description": "Semitic workers in Egypt adapted hieroglyphs into the first alphabet, ancestor of most modern scripts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chinese-bronze-inscriptions",
+    "friendly_name": "Chinese Bronze Inscriptions",
+    "year": -1100,
+    "category": "communication",
+    "description": "Zhou-era China cast inscriptions into ritual bronze vessels, preserving early Chinese writing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "greek-alphabet-vowels",
+    "friendly_name": "Greek Alphabet Adds Vowels",
+    "year": -800,
+    "category": "communication",
+    "description": "Greeks adapted the Phoenician alphabet, adding vowels to create the first fully phonetic script.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "homeric-epics-written-down",
+    "friendly_name": "Homeric Epics Written Down",
+    "year": -650,
+    "category": "communication",
+    "description": "The oral Iliad and Odyssey were recorded in writing as the Greek alphabet spread literacy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aramaic-becomes-lingua-franca",
+    "friendly_name": "Aramaic Spreads Widely",
+    "year": -500,
+    "category": "communication",
+    "description": "Aramaic became the common written language of the Persian Empire, linking diverse peoples.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "behistun-inscription-carved",
+    "friendly_name": "Behistun Inscription Carved",
+    "year": -520,
+    "category": "communication",
+    "description": "Darius I carved a trilingual cliff inscription that later helped scholars decipher cuneiform.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "latin-alphabet-develops",
+    "friendly_name": "Latin Alphabet Develops",
+    "year": -700,
+    "category": "communication",
+    "description": "Romans adapted the Etruscan script into the Latin alphabet, now the world's most widely used.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "panini-sanskrit-grammar",
+    "friendly_name": "Panini's Sanskrit Grammar",
+    "year": -400,
+    "category": "communication",
+    "description": "The scholar Panini codified Sanskrit grammar in nearly 4,000 precise rules, a milestone in linguistics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "brahmi-script-spreads",
+    "friendly_name": "Brahmi Script Spreads",
+    "year": -300,
+    "category": "communication",
+    "description": "India's Brahmi script became the ancestor of most writing systems across South and Southeast Asia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "septuagint-translation",
+    "friendly_name": "Hebrew Bible Translated",
+    "year": -250,
+    "category": "communication",
+    "description": "Jewish scholars in Alexandria translated the Hebrew scriptures into Greek as the Septuagint.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "parchment-developed-pergamum",
+    "friendly_name": "Parchment Developed",
+    "year": -190,
+    "category": "communication",
+    "description": "Pergamum refined treated animal skin into parchment, a durable writing surface that rivaled papyrus.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roman-acta-diurna",
+    "friendly_name": "Rome's Daily Gazette",
+    "year": -59,
+    "category": "communication",
+    "description": "Julius Caesar ordered the Acta Diurna posted publicly, an early forerunner of the daily newspaper.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wax-tablet-writing",
+    "friendly_name": "Wax Tablets for Notes",
+    "year": -200,
+    "category": "communication",
+    "description": "Greeks and Romans wrote on reusable wax-coated tablets with a stylus for everyday notes and lessons.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roman-cursive-handwriting",
+    "friendly_name": "Roman Cursive Handwriting",
+    "year": 100,
+    "category": "communication",
+    "description": "Romans developed flowing cursive script for fast everyday writing on tablets and papyrus.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "codex-replaces-scroll",
+    "friendly_name": "Codex Replaces the Scroll",
+    "year": 150,
+    "category": "communication",
+    "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chinese-paper-cai-lun",
+    "friendly_name": "Paper Invented in China",
+    "year": 105,
+    "category": "communication",
+    "description": "The official Cai Lun standardized papermaking in Han China, transforming how information was recorded.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "armenian-alphabet-created",
+    "friendly_name": "Armenian Alphabet Created",
+    "year": 405,
+    "category": "communication",
+    "description": "The monk Mesrop Mashtots devised the Armenian alphabet to record scripture in the native language.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "carolingian-minuscule",
+    "friendly_name": "Carolingian Minuscule",
+    "year": 780,
+    "category": "communication",
+    "description": "Scribes under Charlemagne standardized a clear lowercase script, easing reading across Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "arabic-numerals-india",
+    "friendly_name": "Decimal Numerals Spread",
+    "year": 600,
+    "category": "communication",
+    "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "diamond-sutra-printed",
+    "friendly_name": "Diamond Sutra Printed",
+    "year": 868,
+    "category": "communication",
+    "description": "A Chinese Buddhist scroll became the earliest dated printed book, made with carved woodblocks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "house-of-wisdom-translations",
+    "friendly_name": "Greek Texts Translated Arabic",
+    "year": 800,
+    "category": "communication",
+    "description": "Scholars in Baghdad translated Greek science into Arabic, preserving knowledge for centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "glagolitic-script-created",
+    "friendly_name": "Glagolitic Script Created",
+    "year": 863,
+    "category": "communication",
+    "description": "Saints Cyril and Methodius devised the Glagolitic alphabet to write Slavic languages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-illustrated-paper-book",
+    "friendly_name": "Paper Reaches the Islamic World",
+    "year": 750,
+    "category": "communication",
+    "description": "Papermaking spread west to Samarkand and Baghdad, where paper mills supplied a thriving book trade.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "japanese-kana-developed",
+    "friendly_name": "Japanese Kana Developed",
+    "year": 900,
+    "category": "communication",
+    "description": "Japan simplified Chinese characters into kana syllabaries, enabling literature in the native language.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pillow-book-vernacular-prose",
+    "friendly_name": "Vernacular Prose in Japan",
+    "year": 1000,
+    "category": "communication",
+    "description": "Court women writing in kana created classic Japanese literature, free of formal Chinese characters.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "domesday-style-record-keeping",
+    "friendly_name": "Word Spacing in Texts",
+    "year": 700,
+    "category": "communication",
+    "description": "Irish monks introduced spaces between words, making written Latin far easier to read silently.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spectacles-aid-reading",
+    "friendly_name": "Spectacles Aid Reading",
+    "year": 1286,
+    "category": "communication",
+    "description": "Italian craftsmen made the first eyeglasses, letting scholars and scribes read into old age.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-european-paper-mill",
+    "friendly_name": "Paper Mills Reach Europe",
+    "year": 1276,
+    "category": "communication",
+    "description": "Italy's Fabriano mill began producing paper, cutting book costs across medieval Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gutenberg-movable-type-europe",
+    "friendly_name": "Movable Type Reaches Europe",
+    "year": 1450,
+    "category": "communication",
+    "description": "Johannes Gutenberg combined metal movable type and the press to print books in quantity.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "aldine-italic-type",
+    "friendly_name": "Italic Type Introduced",
+    "year": 1501,
+    "category": "communication",
+    "description": "Venetian printer Aldus Manutius introduced slanted italic type and small portable books.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-printed-newspaper-relation",
+    "friendly_name": "First Printed Newspaper",
+    "year": 1605,
+    "category": "communication",
+    "description": "Strasbourg's Relation became the first regularly printed newspaper, spreading news to the public.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "copperplate-engraved-printing",
+    "friendly_name": "Engraved Map Printing",
+    "year": 1570,
+    "category": "communication",
+    "description": "Copperplate engraving let printers reproduce detailed maps and illustrations far more precisely.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "graphite-pencil-invented",
+    "friendly_name": "Graphite Pencil Invented",
+    "year": 1565,
+    "category": "communication",
+    "description": "Encased graphite from Cumberland created the wooden pencil, an erasable everyday writing tool.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "shorthand-system-published",
+    "friendly_name": "Shorthand System Published",
+    "year": 1588,
+    "category": "communication",
+    "description": "Timothy Bright published an English shorthand method for writing speech down at speed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "johnson-dictionary-published",
+    "friendly_name": "Johnson's Dictionary",
+    "year": 1755,
+    "category": "communication",
+    "description": "Samuel Johnson published his influential Dictionary of the English Language after nine years' work.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-daily-english-newspaper",
+    "friendly_name": "First Daily Newspaper",
+    "year": 1702,
+    "category": "communication",
+    "description": "London's Daily Courant became the first daily newspaper printed in the English language.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chappe-optical-telegraph",
+    "friendly_name": "Optical Telegraph Built",
+    "year": 1792,
+    "category": "communication",
+    "description": "Claude Chappe's tower network relayed messages across France using movable signal arms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lithography-invented",
+    "friendly_name": "Lithography Invented",
+    "year": 1796,
+    "category": "communication",
+    "description": "Alois Senefelder devised lithography, printing images and text from a flat greased stone surface.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-encyclopedia-britannica-pub",
+    "friendly_name": "Encyclopaedia Britannica",
+    "year": 1768,
+    "category": "communication",
+    "description": "The first Encyclopaedia Britannica began publication in Edinburgh, gathering knowledge for readers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "braille-tactile-reading",
+    "friendly_name": "Braille System Created",
+    "year": 1824,
+    "category": "communication",
+    "description": "Louis Braille devised a raised-dot alphabet letting blind people read and write by touch.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "morse-code-telegraph-message",
+    "friendly_name": "Morse Code Demonstrated",
+    "year": 1844,
+    "category": "communication",
+    "description": "Samuel Morse sent the message 'What hath God wrought' by electric telegraph between cities.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "penny-black-postage-stamp",
+    "friendly_name": "First Postage Stamp",
+    "year": 1840,
+    "category": "communication",
+    "description": "Britain issued the Penny Black, the first adhesive postage stamp, making prepaid mail affordable.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cherokee-syllabary-sequoyah",
+    "friendly_name": "Cherokee Syllabary Created",
+    "year": 1821,
+    "category": "communication",
+    "description": "Sequoyah invented a writing system for the Cherokee language, rapidly spreading native literacy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rotary-printing-press-hoe",
+    "friendly_name": "Rotary Printing Press",
+    "year": 1843,
+    "category": "communication",
+    "description": "Richard Hoe's rotary press printed newspapers far faster by curving type around a spinning cylinder.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-transatlantic-telegraph",
+    "friendly_name": "Transatlantic Telegraph Cable",
+    "year": 1858,
+    "category": "communication",
+    "description": "An undersea cable first linked Europe and North America, allowing telegraph messages across the ocean.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "qwerty-typewriter",
+    "friendly_name": "QWERTY Typewriter",
+    "year": 1873,
+    "category": "communication",
+    "description": "The Sholes and Glidden typewriter introduced the QWERTY keyboard still used today.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fountain-pen-perfected",
+    "friendly_name": "Fountain Pen Perfected",
+    "year": 1884,
+    "category": "communication",
+    "description": "Lewis Waterman patented a reliable fountain pen with steady ink flow, replacing the dip pen.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "linotype-machine",
+    "friendly_name": "Linotype Machine Invented",
+    "year": 1884,
+    "category": "communication",
+    "description": "Ottmar Mergenthaler's Linotype cast whole lines of type, speeding newspaper printing dramatically.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-touch-typing-method",
+    "friendly_name": "Touch Typing Method Taught",
+    "year": 1888,
+    "category": "communication",
+    "description": "Frank McGurrin won a contest using all ten fingers without looking, popularizing touch typing.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "comic-strip-debuts",
+    "friendly_name": "First Newspaper Comic Strip",
+    "year": 1895,
+    "category": "communication",
+    "description": "The Yellow Kid popularized the comic strip as a regular feature in American newspapers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "oxford-english-dictionary",
+    "friendly_name": "Oxford English Dictionary",
+    "year": 1928,
+    "category": "communication",
+    "description": "The complete Oxford English Dictionary was published after decades of charting English word histories.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ballpoint-pen-biro",
+    "friendly_name": "Ballpoint Pen Invented",
+    "year": 1938,
+    "category": "communication",
+    "description": "László Bíró patented the ballpoint pen, using quick-drying ink and a rolling ball tip.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ascii-character-standard",
+    "friendly_name": "ASCII Code Standardized",
+    "year": 1963,
+    "category": "communication",
+    "description": "ASCII set a standard numeric code for letters and symbols, letting computers share text.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "communications-satellite-relay",
+    "friendly_name": "Telstar Relays TV Signal",
+    "year": 1962,
+    "category": "communication",
+    "description": "The Telstar satellite relayed the first live transatlantic television broadcast through space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fax-machine-widespread",
+    "friendly_name": "Fax Machine Standardized",
+    "year": 1980,
+    "category": "communication",
+    "description": "A global standard for fax machines let offices transmit document images over phone lines worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "unicode-standard-released",
+    "friendly_name": "Unicode Standard Released",
+    "year": 1991,
+    "category": "communication",
+    "description": "Unicode assigned every character a unique code, letting computers handle the world's writing systems.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-emoji-created",
+    "friendly_name": "First Emoji Created",
+    "year": 1999,
+    "category": "communication",
+    "description": "Shigetaka Kurita designed a set of small pictographs for Japanese phones, the first emoji.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "smiley-emoticon-proposed",
+    "friendly_name": "First Emoticon Proposed",
+    "year": 1982,
+    "category": "communication",
+    "description": "Scott Fahlman suggested the sideways smiley to mark jokes in early online message boards.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pdf-format-released",
+    "friendly_name": "PDF Format Released",
+    "year": 1993,
+    "category": "communication",
+    "description": "Adobe released the PDF, a portable format preserving documents identically across all devices.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-printed-music-notation",
+    "friendly_name": "Printed Music Notation",
+    "year": 1501,
+    "category": "communication",
+    "description": "Ottaviano Petrucci printed the first book of sheet music using movable type for notes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rongorongo-easter-island",
+    "friendly_name": "Rongorongo Glyphs Carved",
+    "year": 1700,
+    "category": "communication",
+    "description": "Easter Islanders carved the undeciphered rongorongo glyphs into wooden tablets by hand.",
+    "difficulty": "hard"
+  }
+]

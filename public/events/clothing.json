@@ -1,0 +1,434 @@
+[
+  {
+    "name": "first-dyed-flax-fibers",
+    "friendly_name": "First Dyed Fibers",
+    "year": -34000,
+    "category": "clothing",
+    "description": "Wild flax fibers found in a Georgian cave were twisted and colored, the earliest known dyed textile material.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bone-eyed-needle",
+    "friendly_name": "Eyed Bone Needle",
+    "year": -28000,
+    "category": "clothing",
+    "description": "Ice age hunters carved bone needles with eyes, allowing fitted, sewn clothing that aided survival in cold climates.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "venus-of-willendorf-attire",
+    "friendly_name": "Carved Figures Show Woven Caps",
+    "year": -25000,
+    "category": "clothing",
+    "description": "Paleolithic Venus figurines depict woven caps and string skirts, hinting at early textile craft in ice age Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-woven-linen",
+    "friendly_name": "First Woven Linen Cloth",
+    "year": -6000,
+    "category": "clothing",
+    "description": "Neolithic weavers in the Near East spun and wove flax into linen, producing the earliest true woven fabric.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wool-textile-production",
+    "friendly_name": "Wool First Spun Into Cloth",
+    "year": -4000,
+    "category": "clothing",
+    "description": "Selective breeding of woolly sheep let early peoples spin and weave wool, a warm and renewable fiber for clothing.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "otzi-clothing",
+    "friendly_name": "Otzi the Iceman's Outfit",
+    "year": -3300,
+    "category": "clothing",
+    "description": "The frozen Alpine mummy wore a grass cloak, leather leggings and bearskin cap, preserving Copper Age dress.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "egyptian-kohl-eyeliner",
+    "friendly_name": "Egyptians Wear Kohl Eyeliner",
+    "year": -3100,
+    "category": "clothing",
+    "description": "Ancient Egyptians lined their eyes with kohl, a lead-based cosmetic believed to protect against sun glare and disease.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "egyptian-linen-pleating",
+    "friendly_name": "Egyptian Pleated Linen Dress",
+    "year": -2600,
+    "category": "clothing",
+    "description": "Egyptian elites wore finely pleated white linen garments, a sign of status and skilled craft along the Nile.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "indus-cotton-cultivation",
+    "friendly_name": "Indus Valley Cotton Spinning",
+    "year": -2500,
+    "category": "clothing",
+    "description": "Indus Valley artisans cultivated and spun cotton into cloth, the first large-scale cotton textile industry.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tyrian-purple-dye",
+    "friendly_name": "Phoenicians Make Tyrian Purple",
+    "year": -1570,
+    "category": "clothing",
+    "description": "Phoenicians extracted prized purple dye from sea snails, a costly color reserved for royalty and the elite.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "egyptian-wig-fashion",
+    "friendly_name": "Egyptian Elite Wear Wigs",
+    "year": -1500,
+    "category": "clothing",
+    "description": "Wealthy Egyptians shaved their heads and wore elaborate wigs of human hair scented with perfumed cones.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tutankhamun-gold-sandals",
+    "friendly_name": "Tutankhamun's Golden Sandals",
+    "year": -1323,
+    "category": "clothing",
+    "description": "The boy pharaoh was buried in gold sandals and jeweled regalia, showcasing New Kingdom royal adornment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "greek-chiton-garment",
+    "friendly_name": "Greeks Adopt the Chiton",
+    "year": -600,
+    "category": "clothing",
+    "description": "Ancient Greeks draped the chiton, a simple pinned tunic of linen or wool that defined classical dress.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roman-toga-adopted",
+    "friendly_name": "Romans Adopt the Toga",
+    "year": -500,
+    "category": "clothing",
+    "description": "The draped woolen toga became the formal garment of Roman male citizens, marking their legal status and rank.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "celtic-tartan-weaving",
+    "friendly_name": "Celts Weave Checked Tartan",
+    "year": -400,
+    "category": "clothing",
+    "description": "Iron Age Celtic peoples wove brightly checked woolen cloth, an early ancestor of later Scottish tartan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-fibula-brooch",
+    "friendly_name": "Roman Fibula Brooch",
+    "year": -200,
+    "category": "clothing",
+    "description": "Romans fastened cloaks with the fibula, a decorative pin functioning much like a modern safety pin.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roman-leather-shoes-caligae",
+    "friendly_name": "Roman Soldiers Wear Caligae",
+    "year": -50,
+    "category": "clothing",
+    "description": "Roman legionaries marched in caligae, hobnailed leather sandals built for durability on long campaigns.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "roman-sumptuary-laws",
+    "friendly_name": "Roman Sumptuary Laws",
+    "year": -215,
+    "category": "clothing",
+    "description": "Rome passed laws restricting luxury dress and purple cloth, limiting displays of wealth to certain ranks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "byzantine-silk-monopoly",
+    "friendly_name": "Byzantines Steal Silk Secret",
+    "year": 552,
+    "category": "clothing",
+    "description": "Monks smuggled silkworm eggs to Constantinople, breaking China's monopoly and founding Byzantine silk weaving.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "viking-wool-sails-clothing",
+    "friendly_name": "Vikings Weave Wool Garments",
+    "year": 800,
+    "category": "clothing",
+    "description": "Norse households spun and wove wool into tunics, cloaks and sails, a labor-intensive backbone of Viking life.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "japanese-kimono-emerges",
+    "friendly_name": "The Kimono Emerges in Japan",
+    "year": 794,
+    "category": "clothing",
+    "description": "During the Heian period the straight-cut kimono took shape, becoming Japan's enduring traditional garment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chinese-foot-binding-begins",
+    "friendly_name": "Foot Binding Begins in China",
+    "year": 1000,
+    "category": "clothing",
+    "description": "Chinese elites began binding girls' feet to alter their shape, a painful beauty practice lasting nearly a millennium.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "medieval-pointed-shoes",
+    "friendly_name": "Pointed Poulaine Shoes",
+    "year": 1390,
+    "category": "clothing",
+    "description": "Fashionable medieval Europeans wore poulaines, shoes with exaggerated long points that signaled wealth and leisure.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "houppelande-court-gown",
+    "friendly_name": "The Houppelande Court Gown",
+    "year": 1400,
+    "category": "clothing",
+    "description": "Late medieval European courts favored the houppelande, a voluminous flowing robe with deep trailing sleeves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "burgundian-court-fashion",
+    "friendly_name": "Burgundian Court Sets Fashion",
+    "year": 1450,
+    "category": "clothing",
+    "description": "The wealthy court of Burgundy led European fashion, with towering hennin headdresses and rich brocades.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "high-heeled-shoes-persia",
+    "friendly_name": "First High Heels Worn",
+    "year": 1599,
+    "category": "clothing",
+    "description": "Persian cavalry wore raised heels to grip stirrups, a style that spread to European aristocrats as status footwear.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "corset-becomes-fashion",
+    "friendly_name": "The Corset Shapes the Body",
+    "year": 1550,
+    "category": "clothing",
+    "description": "Stiffened corsets entered European fashion, reshaping women's waists and dominating dress for over three centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "elizabethan-ruff-collar",
+    "friendly_name": "The Elizabethan Ruff",
+    "year": 1560,
+    "category": "clothing",
+    "description": "Starched pleated ruff collars framed the necks of Elizabethan nobility, growing ever larger as a sign of status.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "farthingale-hoop-skirt",
+    "friendly_name": "The Farthingale Hoop Skirt",
+    "year": 1545,
+    "category": "clothing",
+    "description": "The farthingale used hoops to hold skirts in a wide bell or drum shape, defining elite women's silhouettes.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "necktie-cravat-origin",
+    "friendly_name": "Croatian Soldiers Inspire Cravat",
+    "year": 1660,
+    "category": "clothing",
+    "description": "Croatian mercenaries' neck scarves inspired the French cravat, the ancestor of the modern necktie.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "powdered-wig-fashion",
+    "friendly_name": "Powdered Wigs Become Fashion",
+    "year": 1665,
+    "category": "clothing",
+    "description": "Louis XIV popularized large powdered wigs, which became essential formal dress for European men of rank.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "stiletto-three-piece-suit",
+    "friendly_name": "The Three-Piece Suit Debuts",
+    "year": 1666,
+    "category": "clothing",
+    "description": "Charles II of England introduced the vest and coat ensemble, founding the lasting three-piece suit for men.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "panniers-wide-skirts",
+    "friendly_name": "Panniers Widen Court Skirts",
+    "year": 1720,
+    "category": "clothing",
+    "description": "Side hoops called panniers extended skirts dramatically outward at the hips in 18th-century European courts.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marie-antoinette-pouf",
+    "friendly_name": "Marie Antoinette's Pouf Hair",
+    "year": 1774,
+    "category": "clothing",
+    "description": "French court fashion reached extremes with towering pouf hairstyles adorned with feathers, ribbons and models.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "umbrella-popularized",
+    "friendly_name": "Umbrella Popularized in Europe",
+    "year": 1750,
+    "category": "clothing",
+    "description": "Jonas Hanway championed the umbrella in London, transforming it from an oddity into a common accessory.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "top-hat-introduced",
+    "friendly_name": "The Top Hat Appears",
+    "year": 1797,
+    "category": "clothing",
+    "description": "The tall silk top hat debuted in London, becoming the defining formal headwear of 19th-century gentlemen.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "macintosh-raincoat",
+    "friendly_name": "Waterproof Mackintosh Coat",
+    "year": 1824,
+    "category": "clothing",
+    "description": "Charles Macintosh patented a rubberized fabric, creating the first practical waterproof raincoat.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "crinoline-cage-skirt",
+    "friendly_name": "The Crinoline Cage Skirt",
+    "year": 1856,
+    "category": "clothing",
+    "description": "The steel-hooped crinoline let women support enormous skirts without heavy petticoats, a Victorian craze.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bowler-hat-invented",
+    "friendly_name": "The Bowler Hat Invented",
+    "year": 1849,
+    "category": "clothing",
+    "description": "London hatters Thomas and William Bowler designed a hard rounded hat for gamekeepers that became a city icon.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "levis-blue-jeans-patent",
+    "friendly_name": "Levi's Riveted Blue Jeans",
+    "year": 1873,
+    "category": "clothing",
+    "description": "Levi Strauss and Jacob Davis patented riveted denim work trousers, the origin of modern blue jeans.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rubber-sole-sneakers",
+    "friendly_name": "First Rubber-Soled Sneakers",
+    "year": 1892,
+    "category": "clothing",
+    "description": "Keds-style canvas shoes with rubber soles, dubbed sneakers for their quiet tread, brought comfort to footwear.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "burberry-trench-coat",
+    "friendly_name": "The Trench Coat Designed",
+    "year": 1914,
+    "category": "clothing",
+    "description": "Burberry refined a weatherproof gabardine coat for British officers in World War I, later a fashion staple.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "modern-bra-patented",
+    "friendly_name": "Modern Bra Patented",
+    "year": 1914,
+    "category": "clothing",
+    "description": "Mary Phelps Jacob patented a lightweight backless brassiere, offering an alternative to the restrictive corset.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "flapper-dress-1920s",
+    "friendly_name": "The Flapper Dress Era",
+    "year": 1925,
+    "category": "clothing",
+    "description": "Jazz Age women embraced loose, knee-length flapper dresses that freed the body and broke with Victorian dress.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chanel-little-black-dress",
+    "friendly_name": "Chanel's Little Black Dress",
+    "year": 1926,
+    "category": "clothing",
+    "description": "Coco Chanel introduced a simple, elegant black dress that Vogue hailed as a timeless wardrobe essential.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nylon-stockings-debut",
+    "friendly_name": "Nylon Stockings Go on Sale",
+    "year": 1940,
+    "category": "clothing",
+    "description": "DuPont's nylon stockings hit American stores and sold millions of pairs, revolutionizing women's hosiery.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bikini-introduced",
+    "friendly_name": "The Bikini Unveiled",
+    "year": 1946,
+    "category": "clothing",
+    "description": "Designer Louis Reard debuted the two-piece bikini in Paris, named after a nuclear test site for its impact.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "diors-new-look",
+    "friendly_name": "Dior's New Look Debuts",
+    "year": 1947,
+    "category": "clothing",
+    "description": "Christian Dior's New Look brought back full skirts and nipped waists, redefining postwar women's fashion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "stiletto-heel-invented",
+    "friendly_name": "The Stiletto Heel",
+    "year": 1954,
+    "category": "clothing",
+    "description": "Slim, towering stiletto heels emerged in Italian and French fashion, becoming an icon of glamour.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "velcro-patented",
+    "friendly_name": "Velcro Fastener Patented",
+    "year": 1955,
+    "category": "clothing",
+    "description": "Swiss engineer George de Mestral patented the hook-and-loop fastener inspired by burrs clinging to his dog.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "miniskirt-popularized",
+    "friendly_name": "The Miniskirt Takes Off",
+    "year": 1965,
+    "category": "clothing",
+    "description": "Mary Quant popularized the miniskirt in swinging London, making the daring hemline a symbol of the era.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "lycra-spandex-invented",
+    "friendly_name": "Spandex Stretch Fiber Invented",
+    "year": 1958,
+    "category": "clothing",
+    "description": "DuPont chemist Joseph Shivers invented spandex, an elastic fiber that transformed activewear and form-fitting dress.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "air-jordan-sneakers",
+    "friendly_name": "Air Jordan Sneakers Launch",
+    "year": 1985,
+    "category": "clothing",
+    "description": "Nike released the first Air Jordan basketball shoe, igniting the global sneaker culture and collector market.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "fast-fashion-rise",
+    "friendly_name": "Fast Fashion Goes Global",
+    "year": 2000,
+    "category": "clothing",
+    "description": "Retailers like Zara and H&M scaled rapid, low-cost clothing turnover, reshaping how the world buys fashion.",
+    "difficulty": "medium"
+  }
+]

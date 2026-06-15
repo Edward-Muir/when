@@ -1,0 +1,626 @@
+[
+  {
+    "name": "first-cooking-with-fire",
+    "friendly_name": "Early Humans Cook Food",
+    "year": -1500000,
+    "category": "food",
+    "description": "Early hominins began cooking food over fire, making nutrients easier to digest and fueling brain growth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wild-grain-harvesting",
+    "friendly_name": "Wild Grains First Harvested",
+    "year": -23000,
+    "category": "food",
+    "description": "Hunter-gatherers in the Near East began gathering and grinding wild cereal grains long before farming.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-bread-baked",
+    "friendly_name": "First Bread Baked",
+    "year": -12000,
+    "category": "food",
+    "description": "Hunter-gatherers in the Near East baked flatbread from wild grains thousands of years before farming began.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "barley-domesticated",
+    "friendly_name": "Barley Domesticated",
+    "year": -9000,
+    "category": "food",
+    "description": "Farmers in the Fertile Crescent domesticated barley, a staple grain used for food and early brewing.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-beer-brewed",
+    "friendly_name": "Beer First Brewed",
+    "year": -7000,
+    "category": "food",
+    "description": "Early farmers in the Near East and China fermented grains into beer, one of humanity's oldest drinks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "goat-milk-dairying",
+    "friendly_name": "Dairy Farming Begins",
+    "year": -7000,
+    "category": "food",
+    "description": "Neolithic farmers in the Near East began milking domesticated goats and cattle, starting dairy farming.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chickens-domesticated",
+    "friendly_name": "Chickens Domesticated",
+    "year": -6000,
+    "category": "food",
+    "description": "Wild jungle fowl were domesticated in Southeast Asia, becoming the world's most common food bird.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-wine-making",
+    "friendly_name": "Wine First Made",
+    "year": -6000,
+    "category": "food",
+    "description": "People in the Caucasus region fermented grapes into wine, beginning a tradition spread across Eurasia.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "olive-cultivation-begins",
+    "friendly_name": "Olive Cultivation Begins",
+    "year": -5000,
+    "category": "food",
+    "description": "Mediterranean farmers began cultivating olive trees for oil, a cornerstone of regional diet and trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "honey-collecting-depicted",
+    "friendly_name": "Honey Gathering Depicted",
+    "year": -6000,
+    "category": "food",
+    "description": "Rock art in Spain shows people climbing to gather wild honey, humanity's earliest sweetener.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-sugarcane-cultivation",
+    "friendly_name": "Sugarcane First Cultivated",
+    "year": -8000,
+    "category": "food",
+    "description": "People in New Guinea began cultivating sugarcane, chewing the stalks for their sweet juice.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "salt-evaporation-ponds",
+    "friendly_name": "Salt Harvesting Begins",
+    "year": -6000,
+    "category": "food",
+    "description": "Early communities harvested salt by evaporating seawater and mining deposits to preserve and flavor food.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bananas-cultivated",
+    "friendly_name": "Bananas First Cultivated",
+    "year": -5000,
+    "category": "food",
+    "description": "Farmers in New Guinea cultivated bananas, one of the earliest domesticated fruit crops.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-cheese-making",
+    "friendly_name": "Cheese Making Begins",
+    "year": -5500,
+    "category": "food",
+    "description": "Neolithic dairy farmers curdled milk into early cheese, preserving nutrition long after milking.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beekeeping-in-egypt",
+    "friendly_name": "Egyptians Keep Bees",
+    "year": -2400,
+    "category": "food",
+    "description": "Ancient Egyptians kept bees in clay hives, harvesting honey as a sweetener, medicine, and offering.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "egyptian-leavened-bread",
+    "friendly_name": "Egyptians Bake Risen Bread",
+    "year": -2000,
+    "category": "food",
+    "description": "Ancient Egyptians used yeast to bake the first leavened, risen bread, perfecting the baking craft.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-recipes-written",
+    "friendly_name": "World's Oldest Recipes",
+    "year": -1750,
+    "category": "food",
+    "description": "Babylonian clay tablets recorded the world's oldest known recipes, detailing stews and broths.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tea-discovered-china",
+    "friendly_name": "Tea Drinking Begins in China",
+    "year": -2700,
+    "category": "food",
+    "description": "Tradition holds that tea was first brewed in ancient China, becoming a defining drink of the region.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "soybean-domesticated",
+    "friendly_name": "Soybeans Domesticated",
+    "year": -1100,
+    "category": "food",
+    "description": "Farmers in ancient China domesticated the soybean, a protein-rich crop central to East Asian cuisine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "chocolate-in-mesoamerica",
+    "friendly_name": "Chocolate Drink in Mesoamerica",
+    "year": -1500,
+    "category": "food",
+    "description": "Mesoamerican peoples ground cacao beans into a bitter, frothy drink prized in rituals and trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "garum-fish-sauce",
+    "friendly_name": "Romans Make Garum Sauce",
+    "year": -100,
+    "category": "food",
+    "description": "Romans produced garum, a fermented fish sauce used as a popular seasoning across the empire.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-cookbook-apicius",
+    "friendly_name": "Apicius Roman Cookbook",
+    "year": 400,
+    "category": "food",
+    "description": "The Roman text Apicius compiled elaborate recipes, becoming one of the oldest surviving cookbooks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "vineyards-spread-rome",
+    "friendly_name": "Romans Spread Vineyards",
+    "year": 100,
+    "category": "food",
+    "description": "The Roman Empire planted vineyards across Europe, spreading wine production from Spain to Britain.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "watermelon-cultivated-egypt",
+    "friendly_name": "Watermelons Cultivated in Egypt",
+    "year": -2000,
+    "category": "food",
+    "description": "Ancient Egyptians cultivated watermelons, storing the water-rich fruit and depicting it in tombs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rice-paddy-cultivation",
+    "friendly_name": "Wet Rice Paddies Developed",
+    "year": -4000,
+    "category": "food",
+    "description": "Farmers in China developed flooded paddy fields for rice, boosting yields and supporting dense populations.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "spice-trade-incense-route",
+    "friendly_name": "Ancient Spice Routes Open",
+    "year": -1000,
+    "category": "food",
+    "description": "Arabian and Indian traders moved cinnamon, pepper, and spices west, linking distant cuisines and economies.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "noodles-in-china",
+    "friendly_name": "Noodles Made in China",
+    "year": -2000,
+    "category": "food",
+    "description": "Ancient Chinese cooks made noodles from millet, leaving the earliest known evidence of the dish.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-cabbage-cultivation",
+    "friendly_name": "Cabbage First Cultivated",
+    "year": -1000,
+    "category": "food",
+    "description": "Europeans cultivated wild cabbage, breeding it into kale, broccoli, and many related vegetables.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tofu-invented-china",
+    "friendly_name": "Tofu Invented in China",
+    "year": -150,
+    "category": "food",
+    "description": "Chinese cooks created tofu by curdling soy milk, adding a versatile protein to East Asian cuisine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coffee-origins-ethiopia",
+    "friendly_name": "Coffee Discovered in Ethiopia",
+    "year": 850,
+    "category": "food",
+    "description": "Coffee plants native to Ethiopia were brewed into a stimulating drink that spread across the Arab world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "yemen-coffee-cultivation",
+    "friendly_name": "Coffee Cultivated in Yemen",
+    "year": 1450,
+    "category": "food",
+    "description": "Sufi communities in Yemen brewed coffee to stay awake for prayer, spreading the drink across Arabia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pasta-dried-sicily",
+    "friendly_name": "Dried Pasta Made in Sicily",
+    "year": 1150,
+    "category": "food",
+    "description": "Arab-influenced cooks in Sicily produced dried pasta, allowing the storable food to be traded widely.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "champagne-region-wine",
+    "friendly_name": "Champagne Winemaking Grows",
+    "year": 1100,
+    "category": "food",
+    "description": "Monasteries in the Champagne region of France developed prized vineyards centuries before sparkling wine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "windmills-grind-grain",
+    "friendly_name": "Windmills Grind Grain",
+    "year": 1180,
+    "category": "food",
+    "description": "European communities built windmills to grind grain into flour, mechanizing a vital food task.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "medieval-guild-bakers",
+    "friendly_name": "Bakers' Guilds Regulate Bread",
+    "year": 1266,
+    "category": "food",
+    "description": "England's Assize of Bread set legal weights and prices for loaves to protect customers from cheating bakers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marco-polo-asian-foods",
+    "friendly_name": "Marco Polo Describes Asian Food",
+    "year": 1295,
+    "category": "food",
+    "description": "Returning from Asia, Marco Polo described foods like noodles and exotic spices to fascinated Europeans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aztec-chinampa-farming",
+    "friendly_name": "Aztec Floating Gardens",
+    "year": 1400,
+    "category": "food",
+    "description": "The Aztecs built chinampas, fertile floating garden plots in lake shallows that fed their capital city.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "columbian-exchange-food",
+    "friendly_name": "Columbian Food Exchange",
+    "year": 1492,
+    "category": "food",
+    "description": "Columbus's voyages began a global swap of crops and animals, moving potatoes, maize, and more worldwide.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tomato-reaches-europe",
+    "friendly_name": "Tomato Reaches Europe",
+    "year": 1540,
+    "category": "food",
+    "description": "Spanish explorers brought the tomato from the Americas to Europe, where it slowly entered local cuisine.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "chili-peppers-spread",
+    "friendly_name": "Chili Peppers Spread Worldwide",
+    "year": 1500,
+    "category": "food",
+    "description": "Traders carried American chili peppers across Asia and Africa, transforming cuisines from India to Korea.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "turkey-reaches-europe",
+    "friendly_name": "Turkey Brought to Europe",
+    "year": 1520,
+    "category": "food",
+    "description": "Spanish explorers brought the domesticated turkey from the Americas to Europe as a new food bird.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "potato-reaches-spain",
+    "friendly_name": "Potato Arrives in Spain",
+    "year": 1570,
+    "category": "food",
+    "description": "Spanish ships carried the Andean potato to Europe, where it became a staple crop centuries later.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-european-coffeehouse",
+    "friendly_name": "First European Coffeehouse",
+    "year": 1645,
+    "category": "food",
+    "description": "Venice opened one of Europe's first coffeehouses, sparking a social culture around the new drink.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "london-coffeehouse-opens",
+    "friendly_name": "London Coffeehouse Opens",
+    "year": 1652,
+    "category": "food",
+    "description": "London's first coffeehouse opened, beginning hubs where merchants and thinkers gathered to trade news.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "champagne-sparkling-wine",
+    "friendly_name": "Sparkling Champagne Perfected",
+    "year": 1700,
+    "category": "food",
+    "description": "French winemakers in Champagne refined methods to trap bubbles, creating celebrated sparkling wine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tea-craze-britain",
+    "friendly_name": "Tea Becomes British Staple",
+    "year": 1700,
+    "category": "food",
+    "description": "Imported Chinese tea became a daily British drink, fueling vast trade and afternoon tea customs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "champagne-region-bubbly",
+    "friendly_name": "Dom Pérignon Improves Wine",
+    "year": 1690,
+    "category": "food",
+    "description": "Monk Dom Pérignon advanced winemaking techniques in Champagne that shaped its famous sparkling style.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gin-craze-london",
+    "friendly_name": "London Gin Craze",
+    "year": 1730,
+    "category": "food",
+    "description": "Cheap gin flooded London, causing widespread drunkenness and prompting laws to curb its sale.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-restaurant-paris",
+    "friendly_name": "First Modern Restaurant Opens",
+    "year": 1765,
+    "category": "food",
+    "description": "A Paris establishment offered restorative broths and menu choices, pioneering the modern restaurant.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "potato-embraced-europe",
+    "friendly_name": "Potato Wins Over Europe",
+    "year": 1770,
+    "category": "food",
+    "description": "Once feared, the potato became a vital European staple, championed by reformers to fight famine.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sandwich-named",
+    "friendly_name": "The Sandwich Is Named",
+    "year": 1762,
+    "category": "food",
+    "description": "The Earl of Sandwich popularized meat between bread so he could eat without leaving the gambling table.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "canning-food-preservation",
+    "friendly_name": "Food Canning Invented",
+    "year": 1810,
+    "category": "food",
+    "description": "Nicolas Appert developed sealing food in jars, and Britain patented the tin can to preserve food longer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-chocolate-bar",
+    "friendly_name": "First Solid Chocolate Bar",
+    "year": 1847,
+    "category": "food",
+    "description": "British firm J.S. Fry produced the first molded eating chocolate bar, turning the drink into a candy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "margarine-invented",
+    "friendly_name": "Margarine Invented",
+    "year": 1869,
+    "category": "food",
+    "description": "A French chemist created margarine as a cheap butter substitute, winning a prize set by Napoleon III.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "milk-chocolate-invented",
+    "friendly_name": "Milk Chocolate Invented",
+    "year": 1875,
+    "category": "food",
+    "description": "Swiss makers combined chocolate with condensed milk, creating the creamy milk chocolate eaten today.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "mechanical-refrigeration-meat",
+    "friendly_name": "Refrigerated Meat Shipping",
+    "year": 1877,
+    "category": "food",
+    "description": "Refrigerated ships first carried frozen meat across oceans, transforming the global food trade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-breakfast-cereal",
+    "friendly_name": "Breakfast Cereal Invented",
+    "year": 1894,
+    "category": "food",
+    "description": "The Kellogg brothers created flaked breakfast cereal at a Michigan sanitarium, launching a food industry.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "coca-cola-first-sold",
+    "friendly_name": "Coca-Cola First Sold",
+    "year": 1886,
+    "category": "food",
+    "description": "Pharmacist John Pemberton mixed the first Coca-Cola syrup in Atlanta, creating an iconic soft drink.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "phylloxera-wine-blight",
+    "friendly_name": "Phylloxera Devastates Vineyards",
+    "year": 1863,
+    "category": "food",
+    "description": "An American insect destroyed most of Europe's vineyards before grafting onto resistant rootstock saved them.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-hamburger-served",
+    "friendly_name": "Hamburger Becomes Popular",
+    "year": 1900,
+    "category": "food",
+    "description": "Ground beef patties served in buns gained popularity in the United States, becoming an iconic food.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "ice-cream-cone-debut",
+    "friendly_name": "Ice Cream Cone Popularized",
+    "year": 1904,
+    "category": "food",
+    "description": "The St. Louis World's Fair helped popularize the edible ice cream cone to a mass American audience.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "instant-coffee-introduced",
+    "friendly_name": "Instant Coffee Introduced",
+    "year": 1909,
+    "category": "food",
+    "description": "Soluble instant coffee reached the mass market, letting people brew a cup by adding hot water.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "household-refrigerator-sold",
+    "friendly_name": "Home Refrigerator Marketed",
+    "year": 1913,
+    "category": "food",
+    "description": "The first electric household refrigerator went on sale, letting families safely store fresh food at home.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "frozen-food-flash-freezing",
+    "friendly_name": "Flash-Frozen Food Invented",
+    "year": 1924,
+    "category": "food",
+    "description": "Clarence Birdseye patented quick-freezing, locking in flavor and launching the frozen food industry.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "sliced-bread-sold",
+    "friendly_name": "Sliced Bread Goes on Sale",
+    "year": 1928,
+    "category": "food",
+    "description": "A Missouri bakery first sold machine-sliced bread, an innovation that inspired the famous phrase.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "chocolate-chip-cookie",
+    "friendly_name": "Chocolate Chip Cookie Created",
+    "year": 1938,
+    "category": "food",
+    "description": "Ruth Wakefield invented the chocolate chip cookie at her Toll House inn in Massachusetts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "supermarket-self-service",
+    "friendly_name": "First Self-Service Supermarket",
+    "year": 1916,
+    "category": "food",
+    "description": "Piggly Wiggly opened in Memphis, letting shoppers pick their own groceries and pioneering the supermarket.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-mcdonalds-franchise",
+    "friendly_name": "McDonald's Franchising Begins",
+    "year": 1955,
+    "category": "food",
+    "description": "Ray Kroc opened a franchised McDonald's, building a global fast food empire from a burger stand.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tv-dinner-launched",
+    "friendly_name": "TV Dinner Launched",
+    "year": 1953,
+    "category": "food",
+    "description": "Swanson sold the first frozen TV dinner in a partitioned tray, reshaping convenient home eating.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "green-revolution-begins",
+    "friendly_name": "Green Revolution Begins",
+    "year": 1965,
+    "category": "food",
+    "description": "High-yield crop varieties and fertilizers vastly raised harvests, easing famine across the developing world.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "microwave-meals-spread",
+    "friendly_name": "Microwave Cooking Spreads",
+    "year": 1967,
+    "category": "food",
+    "description": "Affordable countertop microwave ovens reached homes, changing how families reheated and cooked food.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "instant-noodles-invented",
+    "friendly_name": "Instant Noodles Invented",
+    "year": 1958,
+    "category": "food",
+    "description": "Momofuku Ando created instant ramen in Japan, a cheap quick meal that became a global staple.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "fair-trade-coffee-movement",
+    "friendly_name": "Fair Trade Food Labeling",
+    "year": 1988,
+    "category": "food",
+    "description": "The first fair trade label launched in the Netherlands, certifying ethical pay for coffee and crops.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "starbucks-coffee-chain",
+    "friendly_name": "Starbucks Coffee Chain Founded",
+    "year": 1971,
+    "category": "food",
+    "description": "Starbucks opened in Seattle, growing into a global chain that spread café coffee culture worldwide.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "genetically-modified-crop",
+    "friendly_name": "First GMO Crop Approved",
+    "year": 1994,
+    "category": "food",
+    "description": "The Flavr Savr tomato became the first genetically modified food sold, opening debate over GM crops.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lab-grown-meat-tasted",
+    "friendly_name": "First Lab-Grown Burger",
+    "year": 2013,
+    "category": "food",
+    "description": "Scientists unveiled a hamburger grown from cultured cattle cells, a step toward meat without slaughter.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "plant-based-meat-mainstream",
+    "friendly_name": "Plant-Based Meat Goes Mainstream",
+    "year": 2019,
+    "category": "food",
+    "description": "Plant-based burgers from Impossible and Beyond Meat reached fast food chains and supermarket shelves.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "food-delivery-apps-rise",
+    "friendly_name": "Food Delivery Apps Rise",
+    "year": 2013,
+    "category": "food",
+    "description": "Smartphone apps let users order restaurant meals to their door, reshaping how people eat out.",
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,546 @@
+[
+  {
+    "name": "code-of-lipit-ishtar",
+    "friendly_name": "Code of Lipit-Ishtar",
+    "year": -1870,
+    "category": "law",
+    "description": "A Sumerian king issued a law code in the Akkadian language, predating Hammurabi by over a century.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "laws-of-eshnunna",
+    "friendly_name": "Laws of Eshnunna",
+    "year": -1930,
+    "category": "law",
+    "description": "This Babylonian-era code set fixed prices and penalties, an early Mesopotamian legal milestone.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hittite-law-code",
+    "friendly_name": "Hittite Law Code",
+    "year": -1650,
+    "category": "law",
+    "description": "The Hittite empire compiled around 200 laws favoring fines and restitution over harsh physical punishment.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mosaic-law-given",
+    "friendly_name": "Ten Commandments Given",
+    "year": -1300,
+    "category": "law",
+    "description": "Hebrew tradition holds that Moses received the Ten Commandments at Mount Sinai, shaping Western moral law.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gortyn-law-code",
+    "friendly_name": "Gortyn Law Code",
+    "year": -450,
+    "category": "law",
+    "description": "Carved on a stone wall in Crete, this is the most complete surviving ancient Greek legal code.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "solon-reforms-athens",
+    "friendly_name": "Solon Reforms Athenian Law",
+    "year": -594,
+    "category": "law",
+    "description": "Solon cancelled debts and rewrote Athens' harsh laws, laying foundations for later Greek democracy.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trial-of-socrates",
+    "friendly_name": "Trial of Socrates",
+    "year": -399,
+    "category": "law",
+    "description": "An Athenian jury condemned the philosopher Socrates for impiety, sentencing him to drink hemlock.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lex-canuleia",
+    "friendly_name": "Lex Canuleia Passed",
+    "year": -445,
+    "category": "law",
+    "description": "This Roman law legalized marriage between patricians and plebeians, easing class tensions in the republic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lex-villia-annalis",
+    "friendly_name": "Lex Villia Annalis",
+    "year": -180,
+    "category": "law",
+    "description": "Rome set minimum ages for holding public office, regulating the political career ladder of magistrates.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lex-aquilia",
+    "friendly_name": "Lex Aquilia on Damages",
+    "year": -286,
+    "category": "law",
+    "description": "This Roman statute established liability for wrongful damage to property, shaping later tort law.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "praetor-peregrinus-created",
+    "friendly_name": "Praetor for Foreigners Created",
+    "year": -242,
+    "category": "law",
+    "description": "Rome appointed a magistrate to judge disputes involving foreigners, developing a flexible body of law.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "qin-legalist-code",
+    "friendly_name": "Qin Legalist Law Code",
+    "year": -221,
+    "category": "law",
+    "description": "China's Qin dynasty imposed a strict, uniform legal code with severe punishments across the unified empire.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trial-of-jesus",
+    "friendly_name": "Trial of Jesus",
+    "year": 33,
+    "category": "law",
+    "description": "Roman governor Pontius Pilate tried Jesus of Nazareth in Jerusalem, ordering his crucifixion.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gaius-institutes-written",
+    "friendly_name": "Gaius Writes the Institutes",
+    "year": 161,
+    "category": "law",
+    "description": "The jurist Gaius produced an influential Roman legal textbook used to train students for centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "digest-of-justinian",
+    "friendly_name": "Digest of Justinian",
+    "year": 533,
+    "category": "law",
+    "description": "Justinian's jurists distilled centuries of Roman legal writing into an authoritative reference work.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lex-salica-issued",
+    "friendly_name": "Salic Law Issued",
+    "year": 507,
+    "category": "law",
+    "description": "The Frankish kingdom codified its customs in the Salic Law, later cited to bar women from royal succession.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tang-code-promulgated",
+    "friendly_name": "Tang Legal Code",
+    "year": 653,
+    "category": "law",
+    "description": "China's Tang dynasty issued a comprehensive penal code that influenced legal systems across East Asia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "visigothic-code",
+    "friendly_name": "Visigothic Code Issued",
+    "year": 654,
+    "category": "law",
+    "description": "Spain's Visigoths issued a unified code applying the same laws to both Goths and Romans alike.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "law-of-aethelberht",
+    "friendly_name": "Law of Aethelberht",
+    "year": 600,
+    "category": "law",
+    "description": "Kent's King Aethelberht issued the earliest known English law code, written in the Anglo-Saxon language.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "trial-by-ordeal-spreads",
+    "friendly_name": "Trial by Ordeal Spreads",
+    "year": 800,
+    "category": "law",
+    "description": "Medieval Europe judged guilt by ordeals of fire or water, trusting divine intervention to reveal the truth.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gratian-decretum",
+    "friendly_name": "Gratian's Decretum",
+    "year": 1140,
+    "category": "law",
+    "description": "Gratian compiled church laws into a systematic text that became the foundation of canon law study.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "assize-of-clarendon",
+    "friendly_name": "Assize of Clarendon",
+    "year": 1166,
+    "category": "law",
+    "description": "England's Henry II expanded royal courts and grand juries, advancing the English common law system.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sachsenspiegel-compiled",
+    "friendly_name": "Sachsenspiegel Compiled",
+    "year": 1235,
+    "category": "law",
+    "description": "This German law book recorded customary law in the vernacular and shaped Central European justice for ages.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jury-trial-replaces-ordeal",
+    "friendly_name": "Trial by Jury Adopted",
+    "year": 1219,
+    "category": "law",
+    "description": "After the church banned ordeals, English courts turned to juries of peers to decide guilt or innocence.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "model-parliament-statutes",
+    "friendly_name": "First Statute of Westminster",
+    "year": 1275,
+    "category": "law",
+    "description": "Edward I's English statute codified dozens of laws, becoming a cornerstone of medieval common law.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siete-partidas",
+    "friendly_name": "Siete Partidas Compiled",
+    "year": 1265,
+    "category": "law",
+    "description": "Castile's Alfonso X created a sweeping legal code covering law, religion, and daily life in Spain.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-yassa-code",
+    "friendly_name": "Genghis Khan's Yassa Code",
+    "year": 1206,
+    "category": "law",
+    "description": "Genghis Khan established the Yassa, a secret legal code governing the vast Mongol Empire's affairs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "magdeburg-rights-spread",
+    "friendly_name": "Magdeburg Rights Spread",
+    "year": 1300,
+    "category": "law",
+    "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "statute-of-laborers",
+    "friendly_name": "Statute of Labourers",
+    "year": 1351,
+    "category": "law",
+    "description": "After the Black Death, England capped wages and forced laborers to work, sparking widespread resentment.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ming-code-issued",
+    "friendly_name": "Great Ming Code Issued",
+    "year": 1397,
+    "category": "law",
+    "description": "China's Ming dynasty issued a detailed legal code that governed the empire for nearly three centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "carolina-criminal-code",
+    "friendly_name": "Carolina Criminal Code",
+    "year": 1532,
+    "category": "law",
+    "description": "Charles V issued the first general criminal code of the Holy Roman Empire, standardizing trials and torture.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "statute-of-artificers",
+    "friendly_name": "Statute of Artificers",
+    "year": 1563,
+    "category": "law",
+    "description": "England regulated apprenticeships, wages, and working hours, shaping labor law for over two centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "court-of-star-chamber-peak",
+    "friendly_name": "Star Chamber at Its Height",
+    "year": 1620,
+    "category": "law",
+    "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trial-of-charles-i",
+    "friendly_name": "Trial of King Charles I",
+    "year": 1649,
+    "category": "law",
+    "description": "England put its own king on trial for treason and executed him, an unprecedented act in European history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "petition-of-right",
+    "friendly_name": "Petition of Right",
+    "year": 1628,
+    "category": "law",
+    "description": "English Parliament forced King Charles I to accept limits on taxation and imprisonment without cause.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pendle-witch-trials",
+    "friendly_name": "Pendle Witch Trials",
+    "year": 1612,
+    "category": "law",
+    "description": "England tried and hanged ten people for witchcraft in Lancashire, one of the era's best-documented cases.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "blackstone-commentaries",
+    "friendly_name": "Blackstone's Commentaries",
+    "year": 1765,
+    "category": "law",
+    "description": "William Blackstone published an influential survey of English common law, widely read on both sides of the Atlantic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "beccaria-on-crimes",
+    "friendly_name": "Beccaria's On Crimes",
+    "year": 1764,
+    "category": "law",
+    "description": "Cesare Beccaria condemned torture and the death penalty, founding modern criminal justice reform.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "somerset-slavery-case",
+    "friendly_name": "Somerset v Stewart Ruling",
+    "year": 1772,
+    "category": "law",
+    "description": "An English court ruled slavery unsupported by common law, freeing a slave and fueling abolitionism.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "guillotine-first-used",
+    "friendly_name": "Guillotine First Used",
+    "year": 1792,
+    "category": "law",
+    "description": "France adopted the guillotine for executions, intended as a swift and equal method of capital punishment.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "us-supreme-court-first-session",
+    "friendly_name": "US Supreme Court Convenes",
+    "year": 1790,
+    "category": "law",
+    "description": "The newly created United States Supreme Court held its first session in New York City.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "marbury-v-madison",
+    "friendly_name": "Marbury v Madison",
+    "year": 1803,
+    "category": "law",
+    "description": "The US Supreme Court established judicial review, its power to strike down unconstitutional laws.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-modern-penitentiary",
+    "friendly_name": "Eastern State Penitentiary",
+    "year": 1829,
+    "category": "law",
+    "description": "Philadelphia opened a prison built around solitary confinement, pioneering a new model of incarceration.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-detective-bureau",
+    "friendly_name": "First Detective Bureau",
+    "year": 1842,
+    "category": "law",
+    "description": "London's Scotland Yard formed a plainclothes detective branch, an early model for modern police work.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fugitive-slave-act",
+    "friendly_name": "Fugitive Slave Act",
+    "year": 1850,
+    "category": "law",
+    "description": "A US law forced citizens to help capture escaped slaves, deepening sectional conflict before the Civil War.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fingerprinting-adopted",
+    "friendly_name": "Fingerprinting Adopted",
+    "year": 1892,
+    "category": "law",
+    "description": "Argentine police solved a murder using fingerprints, launching their use in criminal investigations worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dreyfus-retrial-pardon",
+    "friendly_name": "Dreyfus Pardoned",
+    "year": 1899,
+    "category": "law",
+    "description": "France pardoned officer Alfred Dreyfus after a notorious wrongful conviction split the nation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pinkerton-detective-agency",
+    "friendly_name": "Pinkerton Agency Founded",
+    "year": 1850,
+    "category": "law",
+    "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fbi-founded",
+    "friendly_name": "FBI Founded",
+    "year": 1908,
+    "category": "law",
+    "description": "The United States created a federal investigative bureau, later renamed the FBI, to enforce national laws.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "lindbergh-kidnapping-trial",
+    "friendly_name": "Lindbergh Kidnapping Trial",
+    "year": 1935,
+    "category": "law",
+    "description": "Dubbed the trial of the century, a German immigrant was convicted of kidnapping the aviator's baby son.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "interpol-founded",
+    "friendly_name": "Interpol Founded",
+    "year": 1923,
+    "category": "law",
+    "description": "Police agencies created an international body in Vienna to coordinate the fight against cross-border crime.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "leopold-and-loeb-trial",
+    "friendly_name": "Leopold and Loeb Trial",
+    "year": 1924,
+    "category": "law",
+    "description": "Two wealthy Chicago students were tried for a thrill killing in a case that gripped the United States.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moscow-show-trials",
+    "friendly_name": "Moscow Show Trials",
+    "year": 1936,
+    "category": "law",
+    "description": "Stalin staged public trials of Soviet officials on fabricated charges, executing rivals during the Great Purge.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tokyo-war-crimes-trials",
+    "friendly_name": "Tokyo War Crimes Trials",
+    "year": 1946,
+    "category": "law",
+    "description": "An Allied tribunal tried Japanese leaders for wartime atrocities, the Pacific counterpart to Nuremberg.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "universal-declaration-human-rights",
+    "friendly_name": "Universal Human Rights Declared",
+    "year": 1948,
+    "category": "law",
+    "description": "The United Nations adopted a declaration setting out fundamental human rights for all people everywhere.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "genocide-convention-adopted",
+    "friendly_name": "Genocide Convention Adopted",
+    "year": 1948,
+    "category": "law",
+    "description": "The United Nations made genocide an international crime, pledging to prevent and punish it worldwide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "european-court-human-rights",
+    "friendly_name": "European Court of Human Rights",
+    "year": 1959,
+    "category": "law",
+    "description": "Europe established a court in Strasbourg to hear cases of human rights violations against member states.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gideon-v-wainwright",
+    "friendly_name": "Gideon v Wainwright",
+    "year": 1963,
+    "category": "law",
+    "description": "The US Supreme Court ruled that poor defendants have a right to a free lawyer in criminal cases.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "eichmann-trial",
+    "friendly_name": "Eichmann Trial",
+    "year": 1961,
+    "category": "law",
+    "description": "Israel tried Nazi organizer Adolf Eichmann in Jerusalem for his role in the Holocaust, then executed him.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "death-penalty-abolished-uk",
+    "friendly_name": "UK Abolishes Death Penalty",
+    "year": 1965,
+    "category": "law",
+    "description": "Britain suspended capital punishment for murder, ending centuries of executions for the crime.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "amnesty-international-founded",
+    "friendly_name": "Amnesty International Founded",
+    "year": 1961,
+    "category": "law",
+    "description": "A London lawyer launched a global movement to free prisoners of conscience and defend human rights.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pentagon-papers-ruling",
+    "friendly_name": "Pentagon Papers Ruling",
+    "year": 1971,
+    "category": "law",
+    "description": "The US Supreme Court allowed newspapers to publish secret Vietnam War documents, upholding press freedom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "truth-reconciliation-commission",
+    "friendly_name": "Truth Commission Hearings",
+    "year": 1996,
+    "category": "law",
+    "description": "South Africa's Truth and Reconciliation Commission opened hearings into apartheid-era crimes and abuses.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rwanda-tribunal-established",
+    "friendly_name": "Rwanda Genocide Tribunal",
+    "year": 1994,
+    "category": "law",
+    "description": "The United Nations created a court to prosecute those responsible for the Rwandan genocide.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "oj-simpson-trial",
+    "friendly_name": "O.J. Simpson Trial",
+    "year": 1995,
+    "category": "law",
+    "description": "A televised murder trial of the former football star gripped the United States before his acquittal.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "international-criminal-court-opens",
+    "friendly_name": "International Criminal Court Opens",
+    "year": 2002,
+    "category": "law",
+    "description": "A permanent court opened in The Hague to prosecute genocide, war crimes, and crimes against humanity.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "guantanamo-bay-opens",
+    "friendly_name": "Guantanamo Bay Opens",
+    "year": 2002,
+    "category": "law",
+    "description": "The United States began holding terrorism suspects at a military prison in Cuba, sparking legal disputes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gdpr-takes-effect",
+    "friendly_name": "GDPR Takes Effect",
+    "year": 2018,
+    "category": "law",
+    "description": "The European Union's sweeping data privacy law took effect, reshaping how companies handle personal data.",
+    "difficulty": "medium"
+  }
+]

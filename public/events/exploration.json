@@ -15205,5 +15205,357 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
+  },
+  {
+    "name": "archean-eon-begins",
+    "friendly_name": "Archean Eon Begins",
+    "year": -4031000000,
+    "category": "exploration",
+    "description": "The Archean Eon began as Earth's first stable continents formed and the earliest microbial life emerged.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-photosynthetic-bacteria",
+    "friendly_name": "First Photosynthetic Bacteria",
+    "year": -3400000000,
+    "category": "exploration",
+    "description": "Cyanobacteria began performing photosynthesis, slowly producing the oxygen that would transform the atmosphere.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "proterozoic-eon-begins",
+    "friendly_name": "Proterozoic Eon Begins",
+    "year": -2500000000,
+    "category": "exploration",
+    "description": "The Proterozoic Eon began, an age dominated by early single-celled organisms and rising atmospheric oxygen.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "great-oxidation-event",
+    "friendly_name": "Great Oxidation Event",
+    "year": -2400000000,
+    "category": "exploration",
+    "description": "Free oxygen from photosynthesis accumulated in the atmosphere, reshaping the planet's chemistry and biology.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-complex-cells",
+    "friendly_name": "First Complex Cells",
+    "year": -1800000000,
+    "category": "exploration",
+    "description": "Eukaryotes, the first cells with a nucleus and internal structures, appeared as a major step in life's evolution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-animals-sponges",
+    "friendly_name": "First Animals (Sponges)",
+    "year": -800000000,
+    "category": "exploration",
+    "description": "The earliest animals, simple sponge-like organisms, emerged in the oceans as the first multicellular animal life.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "snowball-earth-cryogenian",
+    "friendly_name": "Snowball Earth (Cryogenian)",
+    "year": -720000000,
+    "category": "exploration",
+    "description": "During the Cryogenian Period, global glaciation covered much of Earth's surface in ice in a deep freeze.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "ediacaran-period-begins",
+    "friendly_name": "Ediacaran Period Begins",
+    "year": -635000000,
+    "category": "exploration",
+    "description": "The Ediacaran Period began, producing the first large, complex multicellular organisms in the fossil record.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "cambrian-period-begins",
+    "friendly_name": "Cambrian Period Begins",
+    "year": -538800000,
+    "category": "exploration",
+    "description": "The Cambrian Explosion saw a rapid diversification of animal life, producing most major modern groups.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-fish",
+    "friendly_name": "First Fish",
+    "year": -525000000,
+    "category": "exploration",
+    "description": "The earliest fish appeared as the first vertebrates, the ancestors of all backboned animals.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ordovician-period-begins",
+    "friendly_name": "Ordovician Period Begins",
+    "year": -486850000,
+    "category": "exploration",
+    "description": "The Ordovician Period began, marked by the rapid diversification of marine vertebrates and invertebrates.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-land-plants",
+    "friendly_name": "First Land Plants",
+    "year": -470000000,
+    "category": "exploration",
+    "description": "Early plants colonized dry land for the first time, beginning the greening of the continents.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "silurian-period-begins",
+    "friendly_name": "Silurian Period Begins",
+    "year": -443800000,
+    "category": "exploration",
+    "description": "The Silurian Period began as life increasingly expanded from the oceans onto land.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "devonian-period-begins",
+    "friendly_name": "Devonian Period Begins",
+    "year": -419200000,
+    "category": "exploration",
+    "description": "The Devonian Period, known as the Age of Fishes, began with an abundance and diversity of marine life.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-insects",
+    "friendly_name": "First Insects",
+    "year": -400000000,
+    "category": "exploration",
+    "description": "The earliest insects appeared on land, becoming one of the most successful animal groups in history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-amphibians-tiktaalik",
+    "friendly_name": "First Amphibians (Tiktaalik)",
+    "year": -375000000,
+    "category": "exploration",
+    "description": "Transitional vertebrates such as Tiktaalik crawled from water onto land, foreshadowing amphibians.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "carboniferous-period-begins",
+    "friendly_name": "Carboniferous Period Begins",
+    "year": -358900000,
+    "category": "exploration",
+    "description": "The Carboniferous Period began, with vast coal-forming forests and unusually large insects.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-reptiles",
+    "friendly_name": "First Reptiles",
+    "year": -320000000,
+    "category": "exploration",
+    "description": "The first reptiles emerged as the earliest vertebrates fully adapted to live on dry land.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "permian-period-begins",
+    "friendly_name": "Permian Period Begins",
+    "year": -298900000,
+    "category": "exploration",
+    "description": "The Permian Period began as Earth's landmasses joined together to form the supercontinent Pangaea.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "end-permian-mass-extinction",
+    "friendly_name": "End-Permian Mass Extinction",
+    "year": -251900000,
+    "category": "exploration",
+    "description": "Known as the Great Dying, this was the most severe mass extinction, wiping out most marine and land species.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "triassic-period-begins",
+    "friendly_name": "Triassic Period Begins",
+    "year": -251902000,
+    "category": "exploration",
+    "description": "The Triassic Period began in the wake of mass extinction, giving rise to the first dinosaurs and mammals.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-mammals",
+    "friendly_name": "First Mammals",
+    "year": -225000000,
+    "category": "exploration",
+    "description": "The first small, shrew-like mammals appeared, living alongside the early dinosaurs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "plateosaurus",
+    "friendly_name": "Plateosaurus",
+    "year": -210000000,
+    "category": "exploration",
+    "description": "Plateosaurus, one of the earliest large dinosaurs, roamed during the Late Triassic Period.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jurassic-period-begins",
+    "friendly_name": "Jurassic Period Begins",
+    "year": -201400000,
+    "category": "exploration",
+    "description": "The Jurassic Period began, an age dominated by enormous dinosaurs and lush vegetation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-birds-archaeopteryx",
+    "friendly_name": "First Birds (Archaeopteryx)",
+    "year": -150000000,
+    "category": "exploration",
+    "description": "Archaeopteryx, a feathered dinosaur often called the first bird, lived during the Jurassic Period.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "stegosaurus",
+    "friendly_name": "Stegosaurus",
+    "year": -150000000,
+    "category": "exploration",
+    "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "brachiosaurus",
+    "friendly_name": "Brachiosaurus",
+    "year": -150000000,
+    "category": "exploration",
+    "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cretaceous-period-begins",
+    "friendly_name": "Cretaceous Period Begins",
+    "year": -143100000,
+    "category": "exploration",
+    "description": "The Cretaceous Period began, notable for the appearance and spread of the first flowering plants.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "velociraptor",
+    "friendly_name": "Velociraptor",
+    "year": -75000000,
+    "category": "exploration",
+    "description": "Velociraptor, a small feathered predatory dinosaur, hunted during the Late Cretaceous Period.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "triceratops",
+    "friendly_name": "Triceratops",
+    "year": -68000000,
+    "category": "exploration",
+    "description": "Triceratops, a large herbivore with three facial horns and a bony frill, lived in the Late Cretaceous.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "tyrannosaurus-rex",
+    "friendly_name": "Tyrannosaurus rex",
+    "year": -68000000,
+    "category": "exploration",
+    "description": "Tyrannosaurus rex, one of the largest land predators ever, ruled North America in the Late Cretaceous.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "paleocene-epoch-begins",
+    "friendly_name": "Paleocene Epoch Begins",
+    "year": -66000000,
+    "category": "exploration",
+    "description": "The Paleocene Epoch began as mammals rapidly diversified to fill niches left by the extinct dinosaurs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "eocene-epoch-begins",
+    "friendly_name": "Eocene Epoch Begins",
+    "year": -56000000,
+    "category": "exploration",
+    "description": "The Eocene Epoch began, marked by the emergence of many of the first modern mammal groups.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "oligocene-epoch-begins",
+    "friendly_name": "Oligocene Epoch Begins",
+    "year": -33900000,
+    "category": "exploration",
+    "description": "The Oligocene Epoch began, a time when open grasslands spread widely across the continents.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "miocene-epoch-begins",
+    "friendly_name": "Miocene Epoch Begins",
+    "year": -23030000,
+    "category": "exploration",
+    "description": "The Miocene Epoch began, an interval during which apes diversified across Africa and Eurasia.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pliocene-epoch-begins",
+    "friendly_name": "Pliocene Epoch Begins",
+    "year": -5333000,
+    "category": "exploration",
+    "description": "The Pliocene Epoch began, the time when the earliest human ancestors known as hominins appeared.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-hominins-australopithecus",
+    "friendly_name": "First Hominins",
+    "year": -4000000,
+    "category": "exploration",
+    "description": "Australopithecus, among the first hominins, walked upright on two legs as a key human ancestor.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pleistocene-epoch-ice-age-begins",
+    "friendly_name": "Pleistocene (Ice Age) Begins",
+    "year": -2580000,
+    "category": "exploration",
+    "description": "The Pleistocene Epoch began, ushering in the Ice Age and the appearance of the genus Homo.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "homo-habilis",
+    "friendly_name": "Homo habilis",
+    "year": -2300000,
+    "category": "exploration",
+    "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "neanderthals-appear",
+    "friendly_name": "Neanderthals Appear",
+    "year": -400000,
+    "category": "exploration",
+    "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "last-glacial-maximum",
+    "friendly_name": "Last Glacial Maximum",
+    "year": -21000,
+    "category": "exploration",
+    "description": "The Last Glacial Maximum marked the peak of the most recent Ice Age, when ice sheets reached their largest extent.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "humans-reach-the-americas",
+    "friendly_name": "Humans Reach the Americas",
+    "year": -15000,
+    "category": "exploration",
+    "description": "The first people crossed into the Americas, settling continents previously without humans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "holocene-epoch-begins",
+    "friendly_name": "Holocene Epoch Begins",
+    "year": -11700,
+    "category": "exploration",
+    "description": "The Holocene Epoch began as the last Ice Age ended, ushering in the warm modern climate era.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "woolly-mammoth-extinction",
+    "friendly_name": "Woolly Mammoth Extinction",
+    "year": -4000,
+    "category": "exploration",
+    "description": "The last woolly mammoths, surviving on isolated islands, finally died out, ending the species.",
+    "difficulty": "medium"
   }
 ]

@@ -35,6 +35,12 @@
       "files": [
         "infrastructure.json"
       ]
+    },
+    {
+      "name": "people",
+      "files": [
+        "people.json"
+      ]
     }
   ]
 }

@@ -46,3 +46,7 @@ android/local.properties
 
 images/
 untracked_data/
+
+# experiments
+experiments/category-clustering/.venv/
+experiments/category-clustering/output/
