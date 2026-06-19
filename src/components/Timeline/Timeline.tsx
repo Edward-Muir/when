@@ -192,6 +192,8 @@ const Timeline: React.FC<TimelineProps> = ({
                   glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
                   rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
                   preloadDetailImages={preloadDetailImages}
+                  // Eagerly load the first couple of cards — they're the LCP element.
+                  priority={idx < 2}
                 />
                 {/* Show ghost card AFTER this event if inserting at idx + 1 */}
                 {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (

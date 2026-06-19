@@ -30,13 +30,17 @@ interface TimelineEventProps {
   rippleAmplitudeMultiplier?: number;
   // Whether to preload the full-size detail image (disabled on the View Timeline page)
   preloadDetailImages?: boolean;
+  // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
+  // Defaults to lazy so off-screen events keep deferring their image download.
+  priority?: boolean;
 }
 
 // Extracted image section to reduce component complexity
 const EventImage: React.FC<{
   imageUrl?: string;
   category: Category;
-}> = ({ imageUrl, category }) => {
+  priority?: boolean;
+}> = ({ imageUrl, category, priority = false }) => {
   const [imageError, setImageError] = useState(false);
   const hasImage = imageUrl && !imageError;
 
@@ -45,7 +49,9 @@ const EventImage: React.FC<{
       <img
         src={getImageUrl(imageUrl, 'thumbnail')}
         alt=""
-        loading="lazy"
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'auto'}
+        decoding="async"
         onError={() => setImageError(true)}
         className="w-full h-full object-cover"
       />
@@ -218,6 +224,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   glowIntensity,
   rippleAmplitudeMultiplier,
   preloadDetailImages = true,
+  priority = false,
 }) => {
   const shouldReduceMotion = useReducedMotion();
 
@@ -272,7 +279,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
         >
           {/* Image section (40% width) */}
           <div className="w-[40%] h-full relative overflow-hidden">
-            <EventImage imageUrl={event.image_url} category={event.category} />
+            <EventImage imageUrl={event.image_url} category={event.category} priority={priority} />
           </div>
           {/* Title section (60% width) */}
           <div

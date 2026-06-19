@@ -11,6 +11,11 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo180.png" />
 
+    <!-- Pre-warm DNS+TLS for the image CDN and fonts (helps LCP) -->
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!-- Apple PWA meta tags -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />

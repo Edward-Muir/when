@@ -94,6 +94,16 @@ body {
   }
 }
 
+/* Slow rotating shimmer for the top-tier (diamond) achievement badge ring. */
+@keyframes tierSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-tier-spin {
+  animation: tierSpin 14s linear infinite;
+}
+
 /* Hide scrollbar while keeping scroll/snap behaviour (used by the mode-select pager). */
 .hide-scrollbar {
   -ms-overflow-style: none;

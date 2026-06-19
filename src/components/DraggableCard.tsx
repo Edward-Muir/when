@@ -10,6 +10,7 @@ interface DraggableCardProps {
   isOverTimeline?: boolean;
   isHidden?: boolean;
   size?: CardSize;
+  priority?: boolean;
 }
 
 const DraggableCard: React.FC<DraggableCardProps> = ({
@@ -19,6 +20,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
   isOverTimeline = false,
   isHidden = false,
   size = 'normal',
+  priority = false,
 }) => {
   const { attributes, listeners, setNodeRef, setActivatorNodeRef, isDragging } = useDraggable({
     id: 'active-card',
@@ -54,7 +56,7 @@ const DraggableCard: React.FC<DraggableCardProps> = ({
           }
         }}
       >
-        <Card event={event} size={size} />
+        <Card event={event} size={size} priority={priority} />
       </div>
     </div>
   );
