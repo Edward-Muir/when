@@ -3,7 +3,7 @@
     "name": "moon-forming-impact",
     "friendly_name": "Moon-Forming Impact",
     "year": -4500000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A Mars-sized body struck the young Earth, and debris from the collision coalesced into the Moon.",
     "difficulty": "medium"
   },
@@ -11,7 +11,7 @@
     "name": "earth-oceans-form",
     "friendly_name": "Earth's First Oceans Form",
     "year": -4400000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "As the molten surface cooled, water vapor condensed into rain and filled the planet's first oceans.",
     "difficulty": "medium"
   },
@@ -19,7 +19,7 @@
     "name": "late-heavy-bombardment",
     "friendly_name": "Late Heavy Bombardment",
     "year": -3900000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A surge of asteroids and comets battered the inner planets, scarring the young Earth and Moon.",
     "difficulty": "hard"
   },
@@ -27,7 +27,7 @@
     "name": "first-cyanobacteria",
     "friendly_name": "First Cyanobacteria Appear",
     "year": -3500000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
     "difficulty": "medium"
   },
@@ -35,7 +35,7 @@
     "name": "oldest-stromatolites",
     "friendly_name": "Stromatolites Form",
     "year": -3450000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Layered mats built by microbial colonies created some of the oldest visible records of life on Earth.",
     "difficulty": "medium"
   },
@@ -43,7 +43,7 @@
     "name": "first-eukaryotic-cells",
     "friendly_name": "First Complex Cells Evolve",
     "year": -1800000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Cells with a nucleus arose, likely when one microbe engulfed another, paving the way for complex life.",
     "difficulty": "medium"
   },
@@ -51,7 +51,7 @@
     "name": "first-multicellular-life",
     "friendly_name": "First Multicellular Life",
     "year": -1000000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
     "difficulty": "medium"
   },
@@ -59,7 +59,7 @@
     "name": "ediacaran-biota",
     "friendly_name": "Ediacaran Animals Appear",
     "year": -575000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Soft-bodied creatures formed Earth's earliest complex animal communities on the ancient seafloor.",
     "difficulty": "medium"
   },
@@ -67,7 +67,7 @@
     "name": "cambrian-explosion",
     "friendly_name": "Cambrian Explosion",
     "year": -538000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Most major animal groups appeared in a relatively short burst, filling the seas with diverse life.",
     "difficulty": "medium"
   },
@@ -75,7 +75,7 @@
     "name": "first-trilobites",
     "friendly_name": "Trilobites Appear",
     "year": -521000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "These armored sea creatures became some of the most successful and widespread early animals.",
     "difficulty": "medium"
   },
@@ -83,7 +83,7 @@
     "name": "first-vertebrates",
     "friendly_name": "First Vertebrates Evolve",
     "year": -518000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The earliest animals with backbones appeared in the oceans, ancestors of all later vertebrate life.",
     "difficulty": "medium"
   },
@@ -91,7 +91,7 @@
     "name": "first-coral-reefs",
     "friendly_name": "First Coral Reefs",
     "year": -485000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Reef-building organisms began constructing vast underwater structures teeming with marine life.",
     "difficulty": "medium"
   },
@@ -99,7 +99,7 @@
     "name": "plants-colonize-land",
     "friendly_name": "Plants Colonize Land",
     "year": -470000000,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Simple plants spread from water onto the continents, greening the once-barren land surfaces.",
     "difficulty": "medium"
   },
@@ -107,7 +107,7 @@
     "name": "ordovician-mass-extinction",
     "friendly_name": "Ordovician Mass Extinction",
     "year": -445000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Global cooling wiped out much marine life in one of the largest extinctions in Earth's history.",
     "difficulty": "hard"
   },
@@ -115,7 +115,7 @@
     "name": "first-jawed-fish",
     "friendly_name": "First Jawed Fish",
     "year": -425000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Fish evolved hinged jaws, transforming them into active predators and reshaping ocean food chains.",
     "difficulty": "medium"
   },
@@ -123,7 +123,7 @@
     "name": "arthropods-colonize-land",
     "friendly_name": "First Land Animals",
     "year": -420000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Early arthropods such as millipedes crawled ashore, becoming the first animals to live on land.",
     "difficulty": "medium"
   },
@@ -131,7 +131,7 @@
     "name": "age-of-fishes",
     "friendly_name": "Age of Fishes",
     "year": -400000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Fish diversified across the world's seas, dominating the oceans during the Devonian Period.",
     "difficulty": "medium"
   },
@@ -139,7 +139,7 @@
     "name": "first-forests",
     "friendly_name": "First Forests Grow",
     "year": -385000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Tree-like plants formed Earth's earliest forests, drawing down carbon and changing the climate.",
     "difficulty": "medium"
   },
@@ -147,7 +147,7 @@
     "name": "fish-walk-onto-land",
     "friendly_name": "Fish Crawl Onto Land",
     "year": -375000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Lobe-finned fish with limb-like fins began moving onto land, foreshadowing four-legged animals.",
     "difficulty": "medium"
   },
@@ -155,7 +155,7 @@
     "name": "late-devonian-extinction",
     "friendly_name": "Late Devonian Extinction",
     "year": -372000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A drawn-out series of die-offs devastated marine life, especially reef-building organisms.",
     "difficulty": "hard"
   },
@@ -163,7 +163,7 @@
     "name": "first-amniote-egg",
     "friendly_name": "First Egg-Laying Animals",
     "year": -340000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Animals evolved tough-shelled eggs, freeing them from water and letting them spread across dry land.",
     "difficulty": "medium"
   },
@@ -171,7 +171,7 @@
     "name": "giant-insects-of-carboniferous",
     "friendly_name": "Giant Insects Roam Earth",
     "year": -315000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "High oxygen levels let dragonflies grow to hawk-sized wingspans in vast Carboniferous swamps.",
     "difficulty": "medium"
   },
@@ -179,7 +179,7 @@
     "name": "pangaea-forms",
     "friendly_name": "Supercontinent Pangaea Forms",
     "year": -335000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Drifting landmasses merged into one giant continent, Pangaea, surrounded by a single global ocean.",
     "difficulty": "medium"
   },
@@ -187,7 +187,7 @@
     "name": "great-dying-extinction",
     "friendly_name": "The Great Dying",
     "year": -252000000,
-    "category": "earth-life",
+    "category": "disasters",
     "description": "Earth's worst extinction killed most marine and land species, nearly ending complex life entirely.",
     "difficulty": "medium"
   },
@@ -195,7 +195,7 @@
     "name": "first-dinosaurs-appear",
     "friendly_name": "First Dinosaurs Appear",
     "year": -233000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Small, fast reptiles emerged that would diversify into the dinosaurs ruling Earth for ages.",
     "difficulty": "easy"
   },
@@ -203,7 +203,7 @@
     "name": "first-mammals-evolve",
     "friendly_name": "First Mammals Evolve",
     "year": -225000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Tiny, shrew-like creatures became the first mammals, living in the shadow of the early dinosaurs.",
     "difficulty": "medium"
   },
@@ -211,7 +211,7 @@
     "name": "pangaea-breaks-apart",
     "friendly_name": "Pangaea Breaks Apart",
     "year": -175000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
     "difficulty": "medium"
   },
@@ -219,7 +219,7 @@
     "name": "age-of-dinosaurs",
     "friendly_name": "Dinosaurs Rule the Earth",
     "year": -160000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
     "difficulty": "easy"
   },
@@ -227,7 +227,7 @@
     "name": "first-flowering-plants",
     "friendly_name": "First Flowering Plants",
     "year": -130000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
     "difficulty": "medium"
   },
@@ -235,7 +235,7 @@
     "name": "first-bees",
     "friendly_name": "First Bees Appear",
     "year": -100000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
     "difficulty": "medium"
   },
@@ -243,7 +243,7 @@
     "name": "tyrannosaurus-roams",
     "friendly_name": "T. rex Roams North America",
     "year": -68000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The huge predator Tyrannosaurus rex hunted across North America in the final age of the dinosaurs.",
     "difficulty": "easy"
   },
@@ -251,7 +251,7 @@
     "name": "first-grasses",
     "friendly_name": "First Grasses Spread",
     "year": -55000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
     "difficulty": "medium"
   },
@@ -259,7 +259,7 @@
     "name": "first-primates",
     "friendly_name": "First Primates Evolve",
     "year": -55000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Early tree-dwelling mammals with grasping hands appeared, ancestors of monkeys, apes, and humans.",
     "difficulty": "medium"
   },
@@ -267,7 +267,7 @@
     "name": "whales-return-to-sea",
     "friendly_name": "Whales Return to the Sea",
     "year": -50000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
     "difficulty": "medium"
   },
@@ -275,7 +275,7 @@
     "name": "himalayas-rise",
     "friendly_name": "The Himalayas Begin to Rise",
     "year": -50000000,
-    "category": "earth-life",
+    "category": "empires",
     "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
     "difficulty": "medium"
   },
@@ -283,7 +283,7 @@
     "name": "first-apes",
     "friendly_name": "First Apes Evolve",
     "year": -25000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
     "difficulty": "medium"
   },
@@ -291,7 +291,7 @@
     "name": "human-chimp-split",
     "friendly_name": "Humans and Chimps Diverge",
     "year": -7000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
     "difficulty": "medium"
   },
@@ -299,7 +299,7 @@
     "name": "first-upright-walkers",
     "friendly_name": "Early Humans Walk Upright",
     "year": -4000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
     "difficulty": "medium"
   },
@@ -307,7 +307,7 @@
     "name": "lucy-australopithecus-lived",
     "friendly_name": "Lucy Walks the Earth",
     "year": -3200000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Lucy, a small upright Australopithecus, lived in Africa and became a famous human ancestor fossil.",
     "difficulty": "medium"
   },
@@ -315,7 +315,7 @@
     "name": "woolly-mammoths-appear",
     "friendly_name": "Woolly Mammoths Appear",
     "year": -400000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
     "difficulty": "easy"
   },
@@ -323,7 +323,7 @@
     "name": "saber-toothed-cats",
     "friendly_name": "Saber-Toothed Cats Hunt",
     "year": -300000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
     "difficulty": "easy"
   },
@@ -331,7 +331,7 @@
     "name": "ice-age-megafauna-extinction",
     "friendly_name": "Ice Age Megafauna Die Out",
     "year": -11000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Mammoths, giant sloths, and other huge mammals vanished as the last Ice Age ended worldwide.",
     "difficulty": "medium"
   },
@@ -339,7 +339,7 @@
     "name": "dog-becomes-companion",
     "friendly_name": "Dogs Become Human Companions",
     "year": -15000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Wolves drawn to human camps gradually became dogs, the first animals tamed by people.",
     "difficulty": "easy"
   },
@@ -347,7 +347,7 @@
     "name": "first-crops-cultivated",
     "friendly_name": "First Crops Are Cultivated",
     "year": -9500,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Peoples of the Fertile Crescent began planting and harvesting wild grains, dawning farming.",
     "difficulty": "easy"
   },
@@ -355,7 +355,7 @@
     "name": "cattle-domesticated",
     "friendly_name": "Cattle Are Tamed",
     "year": -8500,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Wild aurochs were tamed into cattle, giving early farmers meat, milk, and muscle power.",
     "difficulty": "medium"
   },
@@ -363,7 +363,7 @@
     "name": "cats-domesticated",
     "friendly_name": "Cats Join Human Settlements",
     "year": -7500,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Wild cats moved into early farming villages to hunt rodents, beginning a long bond with humans.",
     "difficulty": "medium"
   },
@@ -371,7 +371,7 @@
     "name": "silkworm-domesticated",
     "friendly_name": "Silkworms Domesticated in China",
     "year": -3500,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Chinese farmers raised silkworms on mulberry leaves to harvest threads for weaving silk.",
     "difficulty": "medium"
   },
@@ -379,7 +379,7 @@
     "name": "giant-ground-sloths-roam",
     "friendly_name": "Giant Ground Sloths Roam",
     "year": -2000000,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
     "difficulty": "medium"
   },
@@ -387,7 +387,7 @@
     "name": "honeybee-keeping-begins",
     "friendly_name": "First Beekeeping",
     "year": -2400,
-    "category": "earth-life",
+    "category": "agriculture",
     "description": "Ancient Egyptians kept honeybees in clay hives, harvesting honey and wax for food and trade.",
     "difficulty": "medium"
   },
@@ -395,7 +395,7 @@
     "name": "aristotle-studies-animals",
     "friendly_name": "Aristotle Studies Animals",
     "year": -350,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The Greek philosopher Aristotle described and classified hundreds of species, founding biology.",
     "difficulty": "medium"
   },
@@ -403,7 +403,7 @@
     "name": "shen-kuo-explains-fossils",
     "friendly_name": "Shen Kuo Explains Fossils",
     "year": 1088,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Chinese scholar Shen Kuo recognized seashell fossils inland as evidence of ancient seas.",
     "difficulty": "hard"
   },
@@ -411,7 +411,7 @@
     "name": "steno-fossils-rock-layers",
     "friendly_name": "Steno's Law of Rock Layers",
     "year": 1669,
-    "category": "earth-life",
+    "category": "science",
     "description": "Nicolas Steno argued that rock layers form in order over time, founding the study of geology.",
     "difficulty": "medium"
   },
@@ -419,7 +419,7 @@
     "name": "leeuwenhoek-microbes",
     "friendly_name": "Leeuwenhoek Sees Microbes",
     "year": 1676,
-    "category": "earth-life",
+    "category": "medicine",
     "description": "Antonie van Leeuwenhoek used his microscope to observe tiny living organisms for the first time.",
     "difficulty": "medium"
   },
@@ -427,7 +427,7 @@
     "name": "linnaeus-systema-naturae",
     "friendly_name": "Linnaeus Names the Species",
     "year": 1735,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Carl Linnaeus introduced a system of two-part Latin names to classify all living things.",
     "difficulty": "medium"
   },
@@ -435,7 +435,7 @@
     "name": "hutton-deep-time",
     "friendly_name": "Hutton Discovers Deep Time",
     "year": 1788,
-    "category": "earth-life",
+    "category": "science",
     "description": "James Hutton argued Earth was shaped by slow processes over an unimaginably vast span of time.",
     "difficulty": "hard"
   },
@@ -443,7 +443,7 @@
     "name": "cuvier-proves-extinction",
     "friendly_name": "Cuvier Proves Extinction",
     "year": 1796,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Georges Cuvier showed that fossil animals like mastodons were species that no longer existed.",
     "difficulty": "medium"
   },
@@ -451,7 +451,7 @@
     "name": "smith-geological-map",
     "friendly_name": "First Geological Map",
     "year": 1815,
-    "category": "earth-life",
+    "category": "science",
     "description": "William Smith mapped England's rock strata using fossils, founding modern geological mapping.",
     "difficulty": "medium"
   },
@@ -459,7 +459,7 @@
     "name": "anning-finds-ichthyosaur",
     "friendly_name": "Mary Anning Finds Sea Reptiles",
     "year": 1811,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Fossil hunter Mary Anning uncovered ancient marine reptiles on England's Dorset coast.",
     "difficulty": "medium"
   },
@@ -467,7 +467,7 @@
     "name": "lyell-principles-geology",
     "friendly_name": "Lyell's Principles of Geology",
     "year": 1830,
-    "category": "earth-life",
+    "category": "science",
     "description": "Charles Lyell's book argued that gradual forces still at work had shaped Earth over ages.",
     "difficulty": "medium"
   },
@@ -475,7 +475,7 @@
     "name": "dinosaur-word-coined",
     "friendly_name": "The Word Dinosaur Is Coined",
     "year": 1842,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Richard Owen named the great extinct reptiles dinosaurs, meaning terrible lizards.",
     "difficulty": "medium"
   },
@@ -483,7 +483,7 @@
     "name": "ice-age-theory-proposed",
     "friendly_name": "Ice Ages Are Discovered",
     "year": 1837,
-    "category": "earth-life",
+    "category": "science",
     "description": "Louis Agassiz proposed that vast ice sheets once covered much of Europe and North America.",
     "difficulty": "medium"
   },
@@ -491,7 +491,7 @@
     "name": "neanderthal-fossil-found",
     "friendly_name": "Neanderthal Fossil Identified",
     "year": 1856,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Bones found in Germany's Neander Valley revealed a distinct extinct human cousin.",
     "difficulty": "medium"
   },
@@ -499,7 +499,7 @@
     "name": "archaeopteryx-discovered",
     "friendly_name": "Archaeopteryx Fossil Found",
     "year": 1861,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A feathered fossil linking dinosaurs and birds was discovered in Germany, supporting evolution.",
     "difficulty": "medium"
   },
@@ -507,7 +507,7 @@
     "name": "pasteur-disproves-spontaneous",
     "friendly_name": "Pasteur Disproves Spontaneous Life",
     "year": 1859,
-    "category": "earth-life",
+    "category": "medicine",
     "description": "Louis Pasteur showed that microbes come from other microbes, not from lifeless matter.",
     "difficulty": "medium"
   },
@@ -515,7 +515,7 @@
     "name": "last-aurochs-dies",
     "friendly_name": "Last Wild Aurochs Dies",
     "year": 1627,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The last aurochs, the wild ancestor of cattle, died in Poland, marking the species' extinction.",
     "difficulty": "hard"
   },
@@ -523,7 +523,7 @@
     "name": "dodo-driven-extinct",
     "friendly_name": "The Dodo Goes Extinct",
     "year": 1681,
-    "category": "earth-life",
+    "category": "disasters",
     "description": "The flightless dodo of Mauritius vanished within decades of sailors reaching the island.",
     "difficulty": "easy"
   },
@@ -531,7 +531,7 @@
     "name": "wallace-line-described",
     "friendly_name": "Wallace Maps Animal Regions",
     "year": 1859,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Alfred Russel Wallace charted a sharp boundary dividing the animals of Asia and Australia.",
     "difficulty": "medium"
   },
@@ -539,7 +539,7 @@
     "name": "last-quagga-dies",
     "friendly_name": "The Last Quagga Dies",
     "year": 1883,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The quagga, a half-striped relative of the zebra, became extinct in an Amsterdam zoo.",
     "difficulty": "hard"
   },
@@ -547,7 +547,7 @@
     "name": "passenger-pigeon-extinct",
     "friendly_name": "Last Passenger Pigeon Dies",
     "year": 1914,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Once numbering billions, the passenger pigeon went extinct when the last bird died in a zoo.",
     "difficulty": "medium"
   },
@@ -555,7 +555,7 @@
     "name": "wegener-continental-drift",
     "friendly_name": "Continents Are Found to Drift",
     "year": 1912,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Alfred Wegener proposed that continents slowly move across the globe over millions of years.",
     "difficulty": "medium"
   },
@@ -563,7 +563,7 @@
     "name": "java-man-discovered",
     "friendly_name": "Java Man Discovered",
     "year": 1891,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Eugene Dubois found fossils in Indonesia of Homo erectus, an early upright human ancestor.",
     "difficulty": "hard"
   },
@@ -571,7 +571,7 @@
     "name": "tutankhamun-fossil-coelacanth",
     "friendly_name": "Living Fossil Fish Found",
     "year": 1938,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A coelacanth, a fish thought extinct for millions of years, was caught off South Africa.",
     "difficulty": "medium"
   },
@@ -579,7 +579,7 @@
     "name": "last-thylacine-dies",
     "friendly_name": "Last Tasmanian Tiger Dies",
     "year": 1936,
-    "category": "earth-life",
+    "category": "nature",
     "description": "The thylacine, a striped marsupial predator, went extinct when the last one died in a zoo.",
     "difficulty": "medium"
   },
@@ -587,7 +587,7 @@
     "name": "miller-urey-experiment",
     "friendly_name": "Miller-Urey Life Experiment",
     "year": 1953,
-    "category": "earth-life",
+    "category": "science",
     "description": "Scientists sparked simple chemicals into amino acids, hinting how life's building blocks arose.",
     "difficulty": "medium"
   },
@@ -595,7 +595,7 @@
     "name": "olduvai-tools-found",
     "friendly_name": "Oldest Stone Tools Found",
     "year": 1959,
-    "category": "earth-life",
+    "category": "architecture",
     "description": "The Leakeys uncovered early human fossils and stone tools at Olduvai Gorge in Tanzania.",
     "difficulty": "hard"
   },
@@ -603,7 +603,7 @@
     "name": "seafloor-spreading-confirmed",
     "friendly_name": "Seafloor Spreading Confirmed",
     "year": 1963,
-    "category": "earth-life",
+    "category": "science",
     "description": "Magnetic stripes on the ocean floor proved new crust forms there, confirming plate tectonics.",
     "difficulty": "medium"
   },
@@ -611,7 +611,7 @@
     "name": "asteroid-killed-dinosaurs",
     "friendly_name": "Asteroid Theory of Dinosaur Death",
     "year": 1980,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Walter and Luis Alvarez proposed an asteroid impact wiped out the dinosaurs 66 million years ago.",
     "difficulty": "medium"
   },
@@ -619,7 +619,7 @@
     "name": "chicxulub-crater-confirmed",
     "friendly_name": "Dinosaur-Killer Crater Found",
     "year": 1991,
-    "category": "earth-life",
+    "category": "nature",
     "description": "A vast buried crater in Mexico was identified as the asteroid impact that doomed the dinosaurs.",
     "difficulty": "medium"
   },
@@ -627,7 +627,7 @@
     "name": "ardi-fossil-described",
     "friendly_name": "Ardi Human Ancestor Described",
     "year": 2009,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Scientists unveiled Ardi, a 4.4-million-year-old skeleton revealing how early humans walked.",
     "difficulty": "hard"
   },
@@ -635,7 +635,7 @@
     "name": "denisovans-identified",
     "friendly_name": "Denisovans Discovered by DNA",
     "year": 2010,
-    "category": "earth-life",
+    "category": "nature",
     "description": "DNA from a finger bone in Siberia revealed Denisovans, a previously unknown human cousin.",
     "difficulty": "hard"
   },
@@ -643,7 +643,7 @@
     "name": "northern-white-rhino-decline",
     "friendly_name": "Last Male White Rhino Dies",
     "year": 2018,
-    "category": "earth-life",
+    "category": "nature",
     "description": "Sudan, the last male northern white rhino, died, leaving the subspecies functionally extinct.",
     "difficulty": "medium"
   }

@@ -127,22 +127,9 @@ export function formatYear(year: number): string {
 }
 
 export function getCategoryDisplayName(category: Category): string {
-  switch (category) {
-    case 'conflict':
-      return 'Conflict';
-    case 'disasters':
-      return 'Disasters';
-    case 'exploration':
-      return 'Exploration';
-    case 'cultural':
-      return 'Cultural';
-    case 'infrastructure':
-      return 'Infrastructure';
-    case 'diplomatic':
-      return 'Diplomatic';
-    default:
-      return category;
-  }
+  // Categories are single lowercase words (e.g. "empires", "architecture") — capitalize
+  // the first letter for display.
+  return category.charAt(0).toUpperCase() + category.slice(1);
 }
 
 // ==========================================

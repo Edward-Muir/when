@@ -51,7 +51,7 @@
     "name": "trial-of-socrates",
     "friendly_name": "Trial of Socrates",
     "year": -399,
-    "category": "law",
+    "category": "revolution",
     "description": "An Athenian jury condemned the philosopher Socrates for impiety, sentencing him to drink hemlock.",
     "difficulty": "medium"
   },
@@ -99,7 +99,7 @@
     "name": "trial-of-jesus",
     "friendly_name": "Trial of Jesus",
     "year": 33,
-    "category": "law",
+    "category": "revolution",
     "description": "Roman governor Pontius Pilate tried Jesus of Nazareth in Jerusalem, ordering his crucifixion.",
     "difficulty": "easy"
   },
@@ -107,7 +107,7 @@
     "name": "gaius-institutes-written",
     "friendly_name": "Gaius Writes the Institutes",
     "year": 161,
-    "category": "law",
+    "category": "writing",
     "description": "The jurist Gaius produced an influential Roman legal textbook used to train students for centuries.",
     "difficulty": "hard"
   },
@@ -115,7 +115,7 @@
     "name": "digest-of-justinian",
     "friendly_name": "Digest of Justinian",
     "year": 533,
-    "category": "law",
+    "category": "writing",
     "description": "Justinian's jurists distilled centuries of Roman legal writing into an authoritative reference work.",
     "difficulty": "medium"
   },
@@ -267,7 +267,7 @@
     "name": "trial-of-charles-i",
     "friendly_name": "Trial of King Charles I",
     "year": 1649,
-    "category": "law",
+    "category": "revolution",
     "description": "England put its own king on trial for treason and executed him, an unprecedented act in European history.",
     "difficulty": "medium"
   },
@@ -283,7 +283,7 @@
     "name": "pendle-witch-trials",
     "friendly_name": "Pendle Witch Trials",
     "year": 1612,
-    "category": "law",
+    "category": "revolution",
     "description": "England tried and hanged ten people for witchcraft in Lancashire, one of the era's best-documented cases.",
     "difficulty": "medium"
   },
@@ -291,7 +291,7 @@
     "name": "blackstone-commentaries",
     "friendly_name": "Blackstone's Commentaries",
     "year": 1765,
-    "category": "law",
+    "category": "writing",
     "description": "William Blackstone published an influential survey of English common law, widely read on both sides of the Atlantic.",
     "difficulty": "medium"
   },
@@ -299,7 +299,7 @@
     "name": "beccaria-on-crimes",
     "friendly_name": "Beccaria's On Crimes",
     "year": 1764,
-    "category": "law",
+    "category": "writing",
     "description": "Cesare Beccaria condemned torture and the death penalty, founding modern criminal justice reform.",
     "difficulty": "medium"
   },
@@ -315,7 +315,7 @@
     "name": "guillotine-first-used",
     "friendly_name": "Guillotine First Used",
     "year": 1792,
-    "category": "law",
+    "category": "medicine",
     "description": "France adopted the guillotine for executions, intended as a swift and equal method of capital punishment.",
     "difficulty": "easy"
   },
@@ -323,7 +323,7 @@
     "name": "us-supreme-court-first-session",
     "friendly_name": "US Supreme Court Convenes",
     "year": 1790,
-    "category": "law",
+    "category": "commerce",
     "description": "The newly created United States Supreme Court held its first session in New York City.",
     "difficulty": "medium"
   },
@@ -339,7 +339,7 @@
     "name": "first-modern-penitentiary",
     "friendly_name": "Eastern State Penitentiary",
     "year": 1829,
-    "category": "law",
+    "category": "commerce",
     "description": "Philadelphia opened a prison built around solitary confinement, pioneering a new model of incarceration.",
     "difficulty": "medium"
   },
@@ -347,7 +347,7 @@
     "name": "first-detective-bureau",
     "friendly_name": "First Detective Bureau",
     "year": 1842,
-    "category": "law",
+    "category": "commerce",
     "description": "London's Scotland Yard formed a plainclothes detective branch, an early model for modern police work.",
     "difficulty": "medium"
   },
@@ -363,7 +363,7 @@
     "name": "fingerprinting-adopted",
     "friendly_name": "Fingerprinting Adopted",
     "year": 1892,
-    "category": "law",
+    "category": "medicine",
     "description": "Argentine police solved a murder using fingerprints, launching their use in criminal investigations worldwide.",
     "difficulty": "medium"
   },
@@ -371,7 +371,7 @@
     "name": "dreyfus-retrial-pardon",
     "friendly_name": "Dreyfus Pardoned",
     "year": 1899,
-    "category": "law",
+    "category": "revolution",
     "description": "France pardoned officer Alfred Dreyfus after a notorious wrongful conviction split the nation.",
     "difficulty": "medium"
   },
@@ -379,7 +379,7 @@
     "name": "pinkerton-detective-agency",
     "friendly_name": "Pinkerton Agency Founded",
     "year": 1850,
-    "category": "law",
+    "category": "commerce",
     "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
     "difficulty": "medium"
   },
@@ -387,7 +387,7 @@
     "name": "fbi-founded",
     "friendly_name": "FBI Founded",
     "year": 1908,
-    "category": "law",
+    "category": "commerce",
     "description": "The United States created a federal investigative bureau, later renamed the FBI, to enforce national laws.",
     "difficulty": "easy"
   },
@@ -395,7 +395,7 @@
     "name": "lindbergh-kidnapping-trial",
     "friendly_name": "Lindbergh Kidnapping Trial",
     "year": 1935,
-    "category": "law",
+    "category": "revolution",
     "description": "Dubbed the trial of the century, a German immigrant was convicted of kidnapping the aviator's baby son.",
     "difficulty": "medium"
   },
@@ -403,7 +403,7 @@
     "name": "interpol-founded",
     "friendly_name": "Interpol Founded",
     "year": 1923,
-    "category": "law",
+    "category": "commerce",
     "description": "Police agencies created an international body in Vienna to coordinate the fight against cross-border crime.",
     "difficulty": "medium"
   },
@@ -411,7 +411,7 @@
     "name": "leopold-and-loeb-trial",
     "friendly_name": "Leopold and Loeb Trial",
     "year": 1924,
-    "category": "law",
+    "category": "revolution",
     "description": "Two wealthy Chicago students were tried for a thrill killing in a case that gripped the United States.",
     "difficulty": "hard"
   },
@@ -419,7 +419,7 @@
     "name": "moscow-show-trials",
     "friendly_name": "Moscow Show Trials",
     "year": 1936,
-    "category": "law",
+    "category": "revolution",
     "description": "Stalin staged public trials of Soviet officials on fabricated charges, executing rivals during the Great Purge.",
     "difficulty": "medium"
   },
@@ -427,7 +427,7 @@
     "name": "tokyo-war-crimes-trials",
     "friendly_name": "Tokyo War Crimes Trials",
     "year": 1946,
-    "category": "law",
+    "category": "revolution",
     "description": "An Allied tribunal tried Japanese leaders for wartime atrocities, the Pacific counterpart to Nuremberg.",
     "difficulty": "medium"
   },
@@ -467,7 +467,7 @@
     "name": "eichmann-trial",
     "friendly_name": "Eichmann Trial",
     "year": 1961,
-    "category": "law",
+    "category": "revolution",
     "description": "Israel tried Nazi organizer Adolf Eichmann in Jerusalem for his role in the Holocaust, then executed him.",
     "difficulty": "medium"
   },
@@ -483,7 +483,7 @@
     "name": "amnesty-international-founded",
     "friendly_name": "Amnesty International Founded",
     "year": 1961,
-    "category": "law",
+    "category": "commerce",
     "description": "A London lawyer launched a global movement to free prisoners of conscience and defend human rights.",
     "difficulty": "medium"
   },
@@ -515,7 +515,7 @@
     "name": "oj-simpson-trial",
     "friendly_name": "O.J. Simpson Trial",
     "year": 1995,
-    "category": "law",
+    "category": "revolution",
     "description": "A televised murder trial of the former football star gripped the United States before his acquittal.",
     "difficulty": "easy"
   },
@@ -523,7 +523,7 @@
     "name": "international-criminal-court-opens",
     "friendly_name": "International Criminal Court Opens",
     "year": 2002,
-    "category": "law",
+    "category": "diplomacy",
     "description": "A permanent court opened in The Hague to prosecute genocide, war crimes, and crimes against humanity.",
     "difficulty": "medium"
   },
@@ -531,7 +531,7 @@
     "name": "guantanamo-bay-opens",
     "friendly_name": "Guantanamo Bay Opens",
     "year": 2002,
-    "category": "law",
+    "category": "revolution",
     "description": "The United States began holding terrorism suspects at a military prison in Cuba, sparking legal disputes.",
     "difficulty": "medium"
   },

@@ -75,7 +75,7 @@
     "name": "neolithic-farmers-europe",
     "friendly_name": "Farmers Migrate Into Europe",
     "year": -6500,
-    "category": "migration",
+    "category": "agriculture",
     "description": "Anatolian farmers spread agriculture across Europe, replacing many hunter-gatherer populations.",
     "difficulty": "medium"
   },
@@ -147,7 +147,7 @@
     "name": "germanic-migration-period",
     "friendly_name": "Germanic Migration Period",
     "year": 376,
-    "category": "migration",
+    "category": "empires",
     "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
     "difficulty": "medium"
   },
@@ -219,7 +219,7 @@
     "name": "expulsion-jews-from-spain",
     "friendly_name": "Sephardi Jews Expelled",
     "year": 1492,
-    "category": "migration",
+    "category": "empires",
     "description": "Spain expelled its Jews, scattering the Sephardi people across North Africa, the Levant, and Europe.",
     "difficulty": "medium"
   },
@@ -235,7 +235,7 @@
     "name": "huguenot-diaspora",
     "friendly_name": "Huguenot Diaspora",
     "year": 1685,
-    "category": "migration",
+    "category": "revolution",
     "description": "France revoked Protestant freedoms, driving Huguenots to flee to England, the Dutch Republic, and beyond.",
     "difficulty": "medium"
   },
@@ -283,7 +283,7 @@
     "name": "irish-famine-emigration",
     "friendly_name": "Irish Famine Emigration",
     "year": 1846,
-    "category": "migration",
+    "category": "revolution",
     "description": "The Great Famine drove over a million Irish to emigrate, transforming America's cities.",
     "difficulty": "easy"
   },
@@ -339,7 +339,7 @@
     "name": "great-migration-black-americans",
     "friendly_name": "The Great Migration",
     "year": 1916,
-    "category": "migration",
+    "category": "revolution",
     "description": "Millions of Black Americans moved from the rural South to northern cities seeking work and freedom.",
     "difficulty": "medium"
   },
@@ -347,7 +347,7 @@
     "name": "dust-bowl-migration",
     "friendly_name": "Dust Bowl Migration",
     "year": 1935,
-    "category": "migration",
+    "category": "agriculture",
     "description": "Drought drove hundreds of thousands of farmers to flee the Great Plains for California.",
     "difficulty": "medium"
   },
@@ -355,7 +355,7 @@
     "name": "partition-of-india-migration",
     "friendly_name": "Partition of India Migration",
     "year": 1947,
-    "category": "migration",
+    "category": "revolution",
     "description": "Partition triggered one of history's largest migrations, with millions crossing the India-Pakistan border.",
     "difficulty": "easy"
   },
@@ -371,7 +371,7 @@
     "name": "palestinian-exodus",
     "friendly_name": "Palestinian Exodus",
     "year": 1948,
-    "category": "migration",
+    "category": "revolution",
     "description": "Around 700,000 Palestinians fled or were expelled during the war that founded Israel, the Nakba.",
     "difficulty": "medium"
   },
@@ -379,7 +379,7 @@
     "name": "post-war-german-expulsions",
     "friendly_name": "German Expulsions From the East",
     "year": 1945,
-    "category": "migration",
+    "category": "revolution",
     "description": "Millions of ethnic Germans were expelled from Eastern Europe at the close of the Second World War.",
     "difficulty": "hard"
   },
@@ -387,7 +387,7 @@
     "name": "bracero-program-begins",
     "friendly_name": "Bracero Program Begins",
     "year": 1942,
-    "category": "migration",
+    "category": "revolution",
     "description": "The US recruited millions of Mexican guest workers under the Bracero labor migration program.",
     "difficulty": "hard"
   },
@@ -395,7 +395,7 @@
     "name": "gastarbeiter-migration",
     "friendly_name": "Guest Workers Reach Germany",
     "year": 1961,
-    "category": "migration",
+    "category": "trade",
     "description": "West Germany recruited Turkish and southern European guest workers to rebuild its postwar economy.",
     "difficulty": "medium"
   },
@@ -419,7 +419,7 @@
     "name": "european-migrant-crisis",
     "friendly_name": "European Migrant Crisis",
     "year": 2015,
-    "category": "migration",
+    "category": "revolution",
     "description": "Over a million refugees, many fleeing Syria, crossed the Mediterranean and Balkans to reach Europe.",
     "difficulty": "easy"
   },
@@ -459,7 +459,7 @@
     "name": "cuban-exile-to-miami",
     "friendly_name": "Cuban Exodus to Miami",
     "year": 1960,
-    "category": "migration",
+    "category": "revolution",
     "description": "After Castro's revolution, waves of Cubans fled to Miami, transforming the city's culture.",
     "difficulty": "medium"
   },

@@ -3,7 +3,7 @@
     "name": "shekel-weight-standard",
     "friendly_name": "Shekel Weight Standard",
     "year": -3000,
-    "category": "money",
+    "category": "writing",
     "description": "Mesopotamians adopted the shekel as a unit of weight for silver, an early standard for measuring value.",
     "difficulty": "medium"
   },
@@ -11,7 +11,7 @@
     "name": "first-promissory-clay-tablets",
     "friendly_name": "Clay Tablet Debt Records",
     "year": -2400,
-    "category": "money",
+    "category": "writing",
     "description": "Sumerian scribes recorded loans, interest, and debts on clay tablets, among the earliest written finance.",
     "difficulty": "medium"
   },
@@ -19,7 +19,7 @@
     "name": "code-hammurabi-interest-rules",
     "friendly_name": "Hammurabi's Interest Laws",
     "year": -1754,
-    "category": "money",
+    "category": "law",
     "description": "Babylon's code set legal limits on loan interest rates and rules for debt, an early financial regulation.",
     "difficulty": "medium"
   },
@@ -27,7 +27,7 @@
     "name": "egyptian-grain-banking",
     "friendly_name": "Egyptian Grain Banking",
     "year": -1500,
-    "category": "money",
+    "category": "writing",
     "description": "Ancient Egypt ran state granaries where stored grain served as deposits and a medium of exchange.",
     "difficulty": "hard"
   },
@@ -35,7 +35,7 @@
     "name": "phoenician-trade-network",
     "friendly_name": "Phoenician Trade Network",
     "year": -1000,
-    "category": "money",
+    "category": "trade",
     "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
     "difficulty": "medium"
   },
@@ -43,7 +43,7 @@
     "name": "athenian-owl-tetradrachm",
     "friendly_name": "Athenian Owl Coins",
     "year": -510,
-    "category": "money",
+    "category": "writing",
     "description": "Athens minted silver tetradrachms stamped with an owl, becoming a trusted currency across the Mediterranean.",
     "difficulty": "medium"
   },
@@ -51,7 +51,7 @@
     "name": "athenian-laurion-silver-mines",
     "friendly_name": "Laurion Silver Mines Boom",
     "year": -483,
-    "category": "money",
+    "category": "trade",
     "description": "Rich silver strikes at Laurion funded Athens' navy and coinage, fueling its rise to a sea power.",
     "difficulty": "hard"
   },
@@ -59,7 +59,7 @@
     "name": "persian-daric-gold-coin",
     "friendly_name": "Persian Gold Daric",
     "year": -515,
-    "category": "money",
+    "category": "writing",
     "description": "Darius I issued the gold daric, a pure coin that standardized money across the vast Persian Empire.",
     "difficulty": "medium"
   },
@@ -67,7 +67,7 @@
     "name": "roman-denarius-introduced",
     "friendly_name": "Roman Denarius Introduced",
     "year": -211,
-    "category": "money",
+    "category": "writing",
     "description": "Rome introduced the silver denarius, which became the backbone of its economy for centuries.",
     "difficulty": "medium"
   },
@@ -75,7 +75,7 @@
     "name": "roman-tax-census-augustus",
     "friendly_name": "Augustus Imperial Tax Census",
     "year": -6,
-    "category": "money",
+    "category": "law",
     "description": "Emperor Augustus ordered empire-wide censuses to assess property and collect taxes more efficiently.",
     "difficulty": "medium"
   },
@@ -83,7 +83,7 @@
     "name": "roman-aureus-gold-coin",
     "friendly_name": "Roman Aureus Gold Coin",
     "year": -40,
-    "category": "money",
+    "category": "writing",
     "description": "Rome's gold aureus circulated alongside the silver denarius, anchoring high-value transactions across the empire.",
     "difficulty": "medium"
   },
@@ -91,7 +91,7 @@
     "name": "roman-currency-debasement",
     "friendly_name": "Roman Coin Debasement",
     "year": 270,
-    "category": "money",
+    "category": "empires",
     "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
     "difficulty": "hard"
   },
@@ -99,7 +99,7 @@
     "name": "byzantine-solidus-introduced",
     "friendly_name": "Byzantine Gold Solidus",
     "year": 312,
-    "category": "money",
+    "category": "writing",
     "description": "Constantine issued the gold solidus, a stable coin that dominated Mediterranean trade for centuries.",
     "difficulty": "medium"
   },
@@ -107,7 +107,7 @@
     "name": "islamic-gold-dinar-minted",
     "friendly_name": "Islamic Gold Dinar Minted",
     "year": 696,
-    "category": "money",
+    "category": "writing",
     "description": "Caliph Abd al-Malik issued the gold dinar, establishing a distinct Islamic currency across the caliphate.",
     "difficulty": "medium"
   },
@@ -115,7 +115,7 @@
     "name": "song-dynasty-jiaozi-paper",
     "friendly_name": "World's First Paper Money",
     "year": 1024,
-    "category": "money",
+    "category": "writing",
     "description": "China's Song dynasty issued jiaozi, the first government-backed paper banknotes in world history.",
     "difficulty": "medium"
   },
@@ -123,7 +123,7 @@
     "name": "hawala-money-transfer",
     "friendly_name": "Hawala Money Transfer System",
     "year": 800,
-    "category": "money",
+    "category": "trade",
     "description": "Medieval Islamic merchants developed hawala, an informal network for transferring money without moving cash.",
     "difficulty": "medium"
   },
@@ -131,7 +131,7 @@
     "name": "domesday-tax-survey",
     "friendly_name": "Domesday Tax Survey",
     "year": 1086,
-    "category": "money",
+    "category": "law",
     "description": "William the Conqueror surveyed England's lands and wealth to assess taxes, producing the Domesday Book.",
     "difficulty": "medium"
   },
@@ -139,7 +139,7 @@
     "name": "english-exchequer-tally",
     "friendly_name": "English Exchequer Founded",
     "year": 1110,
-    "category": "money",
+    "category": "commerce",
     "description": "England's royal Exchequer used a checkered cloth and tally sticks to audit and collect crown revenues.",
     "difficulty": "hard"
   },
@@ -147,7 +147,7 @@
     "name": "kublai-khan-paper-currency",
     "friendly_name": "Kublai Khan's Paper Money",
     "year": 1260,
-    "category": "money",
+    "category": "writing",
     "description": "Kublai Khan enforced paper currency across China, amazing Marco Polo with money made from mulberry bark.",
     "difficulty": "medium"
   },
@@ -155,7 +155,7 @@
     "name": "english-pound-sterling-origin",
     "friendly_name": "Pound Sterling Standardized",
     "year": 1158,
-    "category": "money",
+    "category": "writing",
     "description": "Henry II issued the Tealby penny, standardizing English silver coinage that defined the pound sterling.",
     "difficulty": "medium"
   },
@@ -163,7 +163,7 @@
     "name": "venetian-state-bond-prestiti",
     "friendly_name": "Venice Issues State Bonds",
     "year": 1262,
-    "category": "money",
+    "category": "commerce",
     "description": "Venice consolidated its debts into tradable government bonds, an early form of the public bond market.",
     "difficulty": "hard"
   },
@@ -171,7 +171,7 @@
     "name": "first-marine-insurance-policy",
     "friendly_name": "First Marine Insurance Policy",
     "year": 1347,
-    "category": "money",
+    "category": "commerce",
     "description": "Genoese merchants signed early marine insurance contracts to protect cargo against losses at sea.",
     "difficulty": "hard"
   },
@@ -179,7 +179,7 @@
     "name": "double-entry-pacioli-treatise",
     "friendly_name": "Pacioli Codifies Bookkeeping",
     "year": 1494,
-    "category": "money",
+    "category": "writing",
     "description": "Luca Pacioli published the first printed description of double-entry bookkeeping, the basis of accounting.",
     "difficulty": "medium"
   },
@@ -187,7 +187,7 @@
     "name": "potosi-silver-floods-spain",
     "friendly_name": "Potosi Silver Funds Spain",
     "year": 1545,
-    "category": "money",
+    "category": "trade",
     "description": "Vast silver from Potosi in Bolivia poured into Spain, reshaping global trade and sparking price inflation.",
     "difficulty": "medium"
   },
@@ -195,7 +195,7 @@
     "name": "spanish-price-revolution",
     "friendly_name": "Spanish Price Revolution",
     "year": 1550,
-    "category": "money",
+    "category": "revolution",
     "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
     "difficulty": "hard"
   },
@@ -203,7 +203,7 @@
     "name": "spanish-pieces-of-eight",
     "friendly_name": "Spanish Pieces of Eight",
     "year": 1497,
-    "category": "money",
+    "category": "writing",
     "description": "Spain's silver peso, the piece of eight, became the first truly global currency used across continents.",
     "difficulty": "medium"
   },
@@ -211,7 +211,7 @@
     "name": "greshams-law-coinage",
     "friendly_name": "Gresham's Law Described",
     "year": 1558,
-    "category": "money",
+    "category": "law",
     "description": "Financier Thomas Gresham observed that bad money drives good money out of circulation.",
     "difficulty": "hard"
   },
@@ -219,7 +219,7 @@
     "name": "royal-exchange-london-opens",
     "friendly_name": "London Royal Exchange Opens",
     "year": 1571,
-    "category": "money",
+    "category": "commerce",
     "description": "Thomas Gresham founded the Royal Exchange, giving London merchants a central place to trade and finance.",
     "difficulty": "medium"
   },
@@ -227,7 +227,7 @@
     "name": "bank-of-amsterdam-founded",
     "friendly_name": "Bank of Amsterdam Founded",
     "year": 1609,
-    "category": "money",
+    "category": "commerce",
     "description": "The Bank of Amsterdam created a stable public deposit bank that helped make the city a financial hub.",
     "difficulty": "medium"
   },
@@ -235,7 +235,7 @@
     "name": "first-stock-dividend-voc",
     "friendly_name": "First Stock Dividend Paid",
     "year": 1610,
-    "category": "money",
+    "category": "media",
     "description": "The Dutch East India Company paid shareholders the first regular dividends on publicly traded stock.",
     "difficulty": "hard"
   },
@@ -243,7 +243,7 @@
     "name": "swedish-banknotes-issued",
     "friendly_name": "Europe's First Banknotes",
     "year": 1661,
-    "category": "money",
+    "category": "media",
     "description": "Stockholms Banco issued the first paper banknotes in Europe, an experiment that soon overstretched.",
     "difficulty": "medium"
   },
@@ -251,7 +251,7 @@
     "name": "first-cheques-england",
     "friendly_name": "First Modern Cheques",
     "year": 1659,
-    "category": "money",
+    "category": "commerce",
     "description": "London goldsmith-bankers issued early written cheques, letting depositors pay others from their accounts.",
     "difficulty": "hard"
   },
@@ -259,7 +259,7 @@
     "name": "lloyds-coffeehouse-insurance",
     "friendly_name": "Lloyd's Coffeehouse Insurance",
     "year": 1688,
-    "category": "money",
+    "category": "commerce",
     "description": "Edward Lloyd's London coffeehouse became a hub for marine insurers, growing into Lloyd's of London.",
     "difficulty": "medium"
   },
@@ -267,7 +267,7 @@
     "name": "gold-standard-newton",
     "friendly_name": "Britain Adopts Gold Standard",
     "year": 1717,
-    "category": "money",
+    "category": "law",
     "description": "Isaac Newton, master of the Mint, set a gold price that effectively put Britain on the gold standard.",
     "difficulty": "medium"
   },
@@ -275,7 +275,7 @@
     "name": "first-paper-money-colonial",
     "friendly_name": "First American Paper Money",
     "year": 1690,
-    "category": "money",
+    "category": "writing",
     "description": "Massachusetts Bay issued the first government paper money in the American colonies to pay soldiers.",
     "difficulty": "medium"
   },
@@ -283,7 +283,7 @@
     "name": "first-building-society",
     "friendly_name": "First Building Society",
     "year": 1775,
-    "category": "money",
+    "category": "commerce",
     "description": "Ketley's of Birmingham formed the first building society, pooling members' savings to finance their homes.",
     "difficulty": "hard"
   },
@@ -291,7 +291,7 @@
     "name": "continental-dollar-collapse",
     "friendly_name": "Continental Dollar Collapses",
     "year": 1781,
-    "category": "money",
+    "category": "revolution",
     "description": "Over-issued paper Continentals lost nearly all value during the American Revolution, fueling distrust of paper money.",
     "difficulty": "medium"
   },
@@ -299,7 +299,7 @@
     "name": "us-dollar-established",
     "friendly_name": "US Dollar Established",
     "year": 1792,
-    "category": "money",
+    "category": "law",
     "description": "The Coinage Act created the US dollar and a national mint, setting the new nation's monetary system.",
     "difficulty": "medium"
   },
@@ -307,7 +307,7 @@
     "name": "new-york-stock-exchange-founded",
     "friendly_name": "New York Stock Exchange Born",
     "year": 1792,
-    "category": "money",
+    "category": "commerce",
     "description": "Brokers signed the Buttonwood Agreement under a tree on Wall Street, founding the New York Stock Exchange.",
     "difficulty": "easy"
   },
@@ -315,7 +315,7 @@
     "name": "first-british-income-tax",
     "friendly_name": "First Income Tax Levied",
     "year": 1799,
-    "category": "money",
+    "category": "law",
     "description": "Britain introduced the first income tax to fund the wars against Napoleonic France.",
     "difficulty": "medium"
   },
@@ -323,7 +323,7 @@
     "name": "panic-of-1837",
     "friendly_name": "Panic of 1837",
     "year": 1837,
-    "category": "money",
+    "category": "disasters",
     "description": "A US banking crisis triggered a deep depression, bank failures, and years of economic hardship.",
     "difficulty": "medium"
   },
@@ -331,7 +331,7 @@
     "name": "rothschild-banking-empire",
     "friendly_name": "Rothschild Banking Empire",
     "year": 1815,
-    "category": "money",
+    "category": "commerce",
     "description": "The Rothschild family financed governments across Europe, becoming the era's most powerful banking dynasty.",
     "difficulty": "medium"
   },
@@ -339,7 +339,7 @@
     "name": "first-savings-bank",
     "friendly_name": "First Savings Bank Opens",
     "year": 1810,
-    "category": "money",
+    "category": "commerce",
     "description": "Scotland's Reverend Henry Duncan founded an early savings bank to help ordinary workers store money safely.",
     "difficulty": "medium"
   },
@@ -347,7 +347,7 @@
     "name": "us-federal-income-tax",
     "friendly_name": "US Federal Income Tax",
     "year": 1913,
-    "category": "money",
+    "category": "law",
     "description": "The Sixteenth Amendment let the US government levy a permanent federal income tax on its citizens.",
     "difficulty": "medium"
   },
@@ -355,7 +355,7 @@
     "name": "gold-rush-currency-clipper",
     "friendly_name": "Comstock Lode Silver Strike",
     "year": 1859,
-    "category": "money",
+    "category": "trade",
     "description": "Nevada's Comstock Lode unearthed huge silver deposits that enriched the US and influenced its coinage.",
     "difficulty": "hard"
   },
@@ -363,7 +363,7 @@
     "name": "first-travelers-cheque",
     "friendly_name": "First Traveler's Cheque",
     "year": 1772,
-    "category": "money",
+    "category": "commerce",
     "description": "The London Credit Exchange Company issued early traveler's cheques usable across European cities.",
     "difficulty": "medium"
   },
@@ -371,7 +371,7 @@
     "name": "western-union-money-transfer",
     "friendly_name": "Western Union Money Transfers",
     "year": 1871,
-    "category": "money",
+    "category": "trade",
     "description": "Western Union began wiring money by telegraph, letting people send funds across the country in minutes.",
     "difficulty": "medium"
   },
@@ -379,7 +379,7 @@
     "name": "panic-of-1907",
     "friendly_name": "Panic of 1907",
     "year": 1907,
-    "category": "money",
+    "category": "commerce",
     "description": "A New York banking panic, calmed by J.P. Morgan, exposed the need for a central bank in the US.",
     "difficulty": "medium"
   },
@@ -387,7 +387,7 @@
     "name": "weimar-hyperinflation",
     "friendly_name": "Weimar Hyperinflation",
     "year": 1923,
-    "category": "money",
+    "category": "disasters",
     "description": "German prices spiraled so fast that banknotes became nearly worthless and people burned cash for heat.",
     "difficulty": "medium"
   },
@@ -395,7 +395,7 @@
     "name": "wall-street-crash-1929",
     "friendly_name": "Wall Street Crash of 1929",
     "year": 1929,
-    "category": "money",
+    "category": "disasters",
     "description": "The US stock market collapsed in October, wiping out fortunes and ushering in the Great Depression.",
     "difficulty": "easy"
   },
@@ -403,7 +403,7 @@
     "name": "glass-steagall-act",
     "friendly_name": "Glass-Steagall Banking Act",
     "year": 1933,
-    "category": "money",
+    "category": "law",
     "description": "The US separated commercial and investment banking and created deposit insurance after mass bank failures.",
     "difficulty": "medium"
   },
@@ -411,7 +411,7 @@
     "name": "fdr-gold-confiscation",
     "friendly_name": "US Bans Private Gold",
     "year": 1933,
-    "category": "money",
+    "category": "law",
     "description": "Roosevelt ordered Americans to surrender most gold coins and bullion as the US left the gold standard at home.",
     "difficulty": "medium"
   },
@@ -419,7 +419,7 @@
     "name": "diners-club-charge-card",
     "friendly_name": "First Charge Card",
     "year": 1950,
-    "category": "money",
+    "category": "media",
     "description": "The Diners Club card let members charge restaurant meals, launching the modern payment-card industry.",
     "difficulty": "medium"
   },
@@ -427,7 +427,7 @@
     "name": "first-credit-card-bankamericard",
     "friendly_name": "First Bank Credit Card",
     "year": 1958,
-    "category": "money",
+    "category": "media",
     "description": "Bank of America mailed the BankAmericard, the first widely used revolving bank credit card, later becoming Visa.",
     "difficulty": "medium"
   },
@@ -435,7 +435,7 @@
     "name": "first-eurodollar-market",
     "friendly_name": "Eurodollar Market Emerges",
     "year": 1957,
-    "category": "money",
+    "category": "trade",
     "description": "US dollars held in European banks formed the eurodollar market, a vast pool of offshore international money.",
     "difficulty": "hard"
   },
@@ -443,7 +443,7 @@
     "name": "decimal-currency-uk",
     "friendly_name": "Britain Goes Decimal",
     "year": 1971,
-    "category": "money",
+    "category": "law",
     "description": "On Decimal Day, Britain replaced its old pounds, shillings, and pence with a decimal pound of 100 pence.",
     "difficulty": "medium"
   },
@@ -451,7 +451,7 @@
     "name": "smithsonian-agreement",
     "friendly_name": "Smithsonian Agreement",
     "year": 1971,
-    "category": "money",
+    "category": "diplomacy",
     "description": "Major nations realigned currencies after the US ended dollar-gold convertibility, ending fixed Bretton Woods rates.",
     "difficulty": "medium"
   },
@@ -459,7 +459,7 @@
     "name": "nasdaq-launches",
     "friendly_name": "NASDAQ Stock Market Opens",
     "year": 1971,
-    "category": "money",
+    "category": "media",
     "description": "NASDAQ began as the world's first electronic stock market, trading shares through computers instead of a floor.",
     "difficulty": "medium"
   },
@@ -467,7 +467,7 @@
     "name": "first-debit-card",
     "friendly_name": "First Debit Card Issued",
     "year": 1966,
-    "category": "money",
+    "category": "media",
     "description": "US banks introduced early debit cards, letting customers pay directly from their checking accounts.",
     "difficulty": "medium"
   },
@@ -475,7 +475,7 @@
     "name": "grameen-microcredit",
     "friendly_name": "Grameen Microcredit Begins",
     "year": 1976,
-    "category": "money",
+    "category": "commerce",
     "description": "Muhammad Yunus began lending tiny sums to poor villagers in Bangladesh, pioneering modern microfinance.",
     "difficulty": "medium"
   },
@@ -483,7 +483,7 @@
     "name": "plaza-accord-signed",
     "friendly_name": "Plaza Accord Signed",
     "year": 1985,
-    "category": "money",
+    "category": "diplomacy",
     "description": "Five major economies agreed to weaken the US dollar against the yen and mark to fix trade imbalances.",
     "difficulty": "medium"
   },
@@ -491,7 +491,7 @@
     "name": "japanese-asset-bubble-bursts",
     "friendly_name": "Japan's Bubble Bursts",
     "year": 1990,
-    "category": "money",
+    "category": "disasters",
     "description": "Japan's inflated stock and property prices collapsed, beginning a long economic stagnation.",
     "difficulty": "medium"
   },
@@ -499,7 +499,7 @@
     "name": "black-wednesday-pound",
     "friendly_name": "Black Wednesday",
     "year": 1992,
-    "category": "money",
+    "category": "disasters",
     "description": "Speculators forced the British pound out of Europe's exchange rate system, costing the government billions.",
     "difficulty": "medium"
   },
@@ -507,7 +507,7 @@
     "name": "swiss-bank-secrecy-law",
     "friendly_name": "Swiss Bank Secrecy Law",
     "year": 1934,
-    "category": "money",
+    "category": "law",
     "description": "Switzerland made it a crime to reveal bank client details, cementing its reputation for secret banking.",
     "difficulty": "medium"
   },
@@ -515,7 +515,7 @@
     "name": "dot-com-bubble-bursts",
     "friendly_name": "Dot-Com Bubble Bursts",
     "year": 2000,
-    "category": "money",
+    "category": "disasters",
     "description": "Inflated internet-company stock prices crashed, wiping out trillions in market value.",
     "difficulty": "medium"
   },
@@ -523,7 +523,7 @@
     "name": "paypal-online-payments",
     "friendly_name": "PayPal Online Payments",
     "year": 1998,
-    "category": "money",
+    "category": "media",
     "description": "PayPal launched to let people send money over the internet, helping power the rise of online commerce.",
     "difficulty": "medium"
   },
@@ -531,7 +531,7 @@
     "name": "subprime-mortgage-crisis",
     "friendly_name": "Subprime Mortgage Crisis",
     "year": 2007,
-    "category": "money",
+    "category": "disasters",
     "description": "Defaults on risky US home loans triggered a banking meltdown and the global financial crisis.",
     "difficulty": "medium"
   },
@@ -539,7 +539,7 @@
     "name": "greek-debt-crisis",
     "friendly_name": "Greek Debt Crisis",
     "year": 2010,
-    "category": "money",
+    "category": "revolution",
     "description": "Greece needed massive bailouts as its government debt threatened the stability of the entire eurozone.",
     "difficulty": "medium"
   },
@@ -547,7 +547,7 @@
     "name": "ethereum-smart-contracts",
     "friendly_name": "Ethereum Launches",
     "year": 2015,
-    "category": "money",
+    "category": "media",
     "description": "Ethereum launched a blockchain with smart contracts, enabling new digital currencies and finance apps.",
     "difficulty": "medium"
   },
@@ -555,7 +555,7 @@
     "name": "contactless-payment-spreads",
     "friendly_name": "Contactless Payment Spreads",
     "year": 2007,
-    "category": "money",
+    "category": "media",
     "description": "Tap-to-pay cards let shoppers buy goods by waving a card near a reader, speeding up everyday payments.",
     "difficulty": "medium"
   },
@@ -563,7 +563,7 @@
     "name": "m-pesa-mobile-money",
     "friendly_name": "M-Pesa Mobile Money",
     "year": 2007,
-    "category": "money",
+    "category": "media",
     "description": "Kenya's M-Pesa let people send and store money on basic mobile phones, transforming finance in Africa.",
     "difficulty": "hard"
   },
@@ -571,7 +571,7 @@
     "name": "gamestop-short-squeeze",
     "friendly_name": "GameStop Short Squeeze",
     "year": 2021,
-    "category": "money",
+    "category": "media",
     "description": "Small online investors bid up GameStop shares, inflicting huge losses on hedge funds betting against it.",
     "difficulty": "medium"
   },
@@ -579,7 +579,7 @@
     "name": "ftx-crypto-collapse",
     "friendly_name": "FTX Crypto Exchange Collapse",
     "year": 2022,
-    "category": "money",
+    "category": "disasters",
     "description": "The major cryptocurrency exchange FTX failed amid fraud, wiping out billions in customer funds overnight.",
     "difficulty": "medium"
   },
@@ -587,7 +587,7 @@
     "name": "roman-argentarii-banking",
     "friendly_name": "Roman Argentarii Bankers",
     "year": -100,
-    "category": "money",
+    "category": "commerce",
     "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
     "difficulty": "hard"
   }
