@@ -93,14 +93,16 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     ]
   );
 
-  // Sync codeInput to the computed challengeCode when settings change
+  const shareUrl = `${CHALLENGE_URL}/${challengeCode}`;
+
+  // Sync the displayed share URL to the computed game state when settings change
   useEffect(() => {
     if (!applyingCodeRef.current) {
-      setCodeInput(challengeCode);
+      setCodeInput(shareUrl);
       setIsCodeValid(true);
     }
     applyingCodeRef.current = false;
-  }, [challengeCode]);
+  }, [shareUrl]);
 
   const handleCodeInput = (value: string) => {
     setCodeInput(value);
@@ -122,7 +124,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   };
 
   const handleShareChallenge = async () => {
-    const text = `Play the same game I'm about to play! 👇\n${CHALLENGE_URL}/${challengeCode}`;
+    const text = `Play the same game I'm about to play! 👇\n${shareUrl}`;
     const copied = await shareContent(text, 'When - Timeline Game');
     setShowShareToast(copied);
     setTimeout(() => setShowShareToast(false), 2000);
@@ -143,14 +145,14 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           onErasChange={setSelectedEras}
         />
 
-        {/* Share Game Settings — editable code + shuffle + share */}
+        {/* Share this game — full game-state URL + shuffle + share */}
         <div>
           <h3 className="text-xs font-medium uppercase tracking-wide text-text-muted font-body mb-1.5">
-            Share Game Settings
+            Share this game
           </h3>
           <p className="text-xs text-text-muted font-body mb-2">
-            Edit or shuffle the code, then share so others can play the same cards in the same
-            order.
+            Shuffle for a fresh deck, then share this link so others play the exact same game. Paste
+            a link here to load it.
           </p>
           <div className="flex items-center gap-2">
             <input
@@ -160,7 +162,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
               className={`flex-1 text-sm font-mono text-accent bg-bg rounded-lg px-3 py-2 border transition-colors focus:outline-none font-body ${
                 isCodeValid ? 'border-border focus:border-accent' : 'border-error'
               }`}
-              placeholder="word-word-word"
+              placeholder="paste a share link"
             />
             <button
               onClick={() => setChallengeSeed(generateChallengeSeed())}

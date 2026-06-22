@@ -27,8 +27,9 @@ export async function loadAllEvents(): Promise<HistoricalEvent[]> {
     }
     const manifest: EventManifest = await manifestResponse.json();
 
-    // Flatten all file paths from manifest
-    const files = manifest.categories.flatMap((category) => category.files);
+    // Event files each hold a mix of categories now, so the manifest is just a flat
+    // file list. Each event's own `category` field is the source of truth.
+    const files = manifest.files;
 
     // Load all files in parallel
     const eventArrays = await Promise.all(files.map(loadEventFile));

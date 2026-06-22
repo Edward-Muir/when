@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
+
+// Max gap (ms) between two taps on the same pill to count as a double-tap.
+// 400ms matches macOS/Windows double-click defaults and sits just above
+// WebKit's 350ms touch threshold. Safe to be generous since a single tap
+// fires instantly (no debounce), so a wider window adds no input lag.
+const DOUBLE_TAP_MS = 400;
 
 const DIFFICULTY_LABELS = new Map<Difficulty, string>([
   ['easy', 'Easy'],
@@ -75,6 +81,37 @@ const FilterControls: React.FC<FilterControlsProps> = ({
     );
   };
 
+  // Plotly-style tap handling. Single-tap toggles a pill INSTANTLY (no debounce,
+  // so it never feels laggy). A second tap on the same pill within the window is
+  // a double-tap: the two toggles cancel out (net no-op on that pill), so we
+  // isolate to just that pill — or restore all if it was already the only one.
+  // We act on the state captured at the first tap (`before`), not the live prop,
+  // so the result is correct regardless of re-render timing. Works on touch too.
+  const lastTap = useRef<{ key: string; time: number; before: unknown[] } | null>(null);
+
+  function handlePillTap<T>(
+    item: T,
+    key: string,
+    selected: T[],
+    all: T[],
+    onChange: (next: T[]) => void,
+    toggle: (item: T) => void
+  ) {
+    const now = Date.now();
+    const prev = lastTap.current;
+    if (prev && prev.key === key && now - prev.time < DOUBLE_TAP_MS) {
+      // Double-tap: undo the flicker and isolate/restore from the pre-tap state.
+      lastTap.current = null;
+      const before = prev.before as T[];
+      const wasOnlyThis = before.length === 1 && before[0] === item;
+      onChange(wasOnlyThis ? [...all] : [item]); // restore all ↔ isolate one
+    } else {
+      // First tap: toggle immediately and remember the state for a possible double.
+      lastTap.current = { key, time: now, before: selected };
+      toggle(item);
+    }
+  }
+
   return (
     <div className="space-y-4">
       {/* Difficulty selection */}
@@ -91,7 +128,16 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           {ALL_DIFFICULTIES.map((difficulty) => (
             <button
               key={difficulty}
-              onClick={() => toggleDifficulty(difficulty)}
+              onClick={() =>
+                handlePillTap(
+                  difficulty,
+                  String(difficulty),
+                  selectedDifficulties,
+                  ALL_DIFFICULTIES,
+                  onDifficultiesChange,
+                  toggleDifficulty
+                )
+              }
               className={pillClass(selectedDifficulties.includes(difficulty))}
             >
               {DIFFICULTY_LABELS.get(difficulty)}
@@ -117,7 +163,16 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           {ALL_CATEGORIES.map((category) => (
             <button
               key={category}
-              onClick={() => toggleCategory(category)}
+              onClick={() =>
+                handlePillTap(
+                  category,
+                  String(category),
+                  selectedCategories,
+                  ALL_CATEGORIES,
+                  onCategoriesChange,
+                  toggleCategory
+                )
+              }
               className={pillClass(selectedCategories.includes(category))}
             >
               {category}
@@ -143,7 +198,16 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           {ERA_DEFINITIONS.map((era) => (
             <button
               key={era.id}
-              onClick={() => toggleEra(era.id)}
+              onClick={() =>
+                handlePillTap(
+                  era.id,
+                  era.id,
+                  selectedEras,
+                  ERA_DEFINITIONS.map((e) => e.id),
+                  onErasChange,
+                  toggleEra
+                )
+              }
               className={pillClass(selectedEras.includes(era.id))}
             >
               {era.name}

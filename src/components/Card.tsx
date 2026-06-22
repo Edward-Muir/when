@@ -13,6 +13,9 @@ interface CardProps {
   rotation?: number;
   onClick?: () => void;
   size?: CardSize;
+  // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
+  // Defaults to lazy so off-screen cards keep deferring their image download.
+  priority?: boolean;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -21,6 +24,7 @@ const Card: React.FC<CardProps> = ({
   rotation = 0,
   onClick,
   size = 'normal',
+  priority = false,
 }) => {
   const [imageError, setImageError] = useState(false);
 
@@ -70,7 +74,9 @@ const Card: React.FC<CardProps> = ({
             <img
               src={getImageUrl(event.image_url, 'thumbnail')}
               alt=""
-              loading="lazy"
+              loading={priority ? 'eager' : 'lazy'}
+              fetchPriority={priority ? 'high' : 'auto'}
+              decoding="async"
               onError={() => setImageError(true)}
               className="w-full h-full object-cover"
             />
@@ -118,7 +124,9 @@ const Card: React.FC<CardProps> = ({
           <img
             src={getImageUrl(event.image_url, 'thumbnail')}
             alt=""
-            loading="lazy"
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : 'auto'}
+            decoding="async"
             onError={() => setImageError(true)}
             className="w-full h-full object-cover"
           />

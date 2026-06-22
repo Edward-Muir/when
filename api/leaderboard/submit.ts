@@ -3,22 +3,51 @@ import { Redis } from '@upstash/redis';
 
 const redis = Redis.fromEnv();
 
-// Category type matching the frontend
+// Category type matching the frontend (keep in sync with src/types/index.ts)
 type Category =
-  | 'conflict'
+  | 'empires'
+  | 'revolution'
+  | 'architecture'
+  | 'writing'
+  | 'invention'
+  | 'figures'
+  | 'media'
+  | 'craft'
+  | 'diplomacy'
   | 'disasters'
-  | 'exploration'
-  | 'cultural'
-  | 'infrastructure'
-  | 'diplomatic';
+  | 'commerce'
+  | 'law'
+  | 'agriculture'
+  | 'warfare'
+  | 'science'
+  | 'trade'
+  | 'migration'
+  | 'art'
+  | 'medicine'
+  | 'nature';
 
+// Order must match src/types/index.ts — getDailyTheme indexes into this array.
 const ALL_CATEGORIES: Category[] = [
-  'conflict',
+  'empires',
+  'revolution',
+  'architecture',
+  'writing',
+  'invention',
+  'figures',
+  'media',
+  'craft',
+  'diplomacy',
   'disasters',
-  'exploration',
-  'cultural',
-  'infrastructure',
-  'diplomatic',
+  'commerce',
+  'law',
+  'agriculture',
+  'warfare',
+  'science',
+  'trade',
+  'migration',
+  'art',
+  'medicine',
+  'nature',
 ];
 
 interface DailyTheme {
@@ -47,35 +76,23 @@ function stringToSeed(str: string): number {
   return Math.abs(hash);
 }
 
-// Get daily theme from seed - must match frontend logic exactly
+// Get daily theme from seed - must match src/utils/dailyTheme.ts exactly, including the
+// number and order of random() calls (~50% "Everything", else a random single category).
 function getDailyTheme(seed: string): DailyTheme {
   const random = seededRandom(stringToSeed(seed));
-  const roll = Math.floor(random() * 8);
 
-  if (roll >= 6) {
+  if (random() < 0.5) {
     return { type: 'all', value: null };
-  } else {
-    const category = ALL_CATEGORIES.at(roll) ?? ALL_CATEGORIES[0];
-    return { type: 'category', value: category };
   }
+
+  const idx = Math.floor(random() * ALL_CATEGORIES.length);
+  const category = ALL_CATEGORIES.at(idx) ?? ALL_CATEGORIES[0];
+  return { type: 'category', value: category };
 }
 
-// Get display name for category
+// Get display name for category - must match src/utils/gameLogic.ts (capitalize-first).
 function getCategoryDisplayName(category: Category): string {
-  switch (category) {
-    case 'conflict':
-      return 'Conflict';
-    case 'disasters':
-      return 'Disasters';
-    case 'exploration':
-      return 'Exploration';
-    case 'cultural':
-      return 'Cultural';
-    case 'infrastructure':
-      return 'Infrastructure';
-    case 'diplomatic':
-      return 'Diplomatic';
-  }
+  return category.charAt(0).toUpperCase() + category.slice(1);
 }
 
 // Get theme display name - must match frontend

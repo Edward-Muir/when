@@ -3,21 +3,48 @@ import { ALL_ERAS } from './eras';
 import { WORDLIST, wordMap } from './wordlists';
 
 /**
- * Challenge code encoding/decoding for shareable seeded custom games.
+ * Shareable-game encoding for custom games.
  *
- * A challenge code is a 3-word string (e.g., "bright-falcon-ember") that encodes
- * all game settings + a random seed into 36 bits (3 × 12-bit word indices).
- * Words are drawn from a single 4096-word list (same list for all 3 positions).
+ * A game is encoded as a hyphenated word-string (the "token") embedded in a share URL
+ * (`/challenge/<token>`). Because a URL has no length budget, the token carries the FULL
+ * game state — including an arbitrary multiselect of up to 32 categories — rather than the
+ * old space-constrained 3-word code.
  *
- * Bit layout (36 bits total):
- *   Bit 0:      Game mode (0=suddenDeath, 1=freeplay)
- *   Bits 1-3:   Hand size (value - 1, range 0-7)
- *   Bits 4-6:   Player count (value - 1, range 0-5)
- *   Bits 7-10:  Difficulties bitmask (4 bits: easy, medium, hard, very-hard)
- *   Bits 11-16: Categories bitmask (6 bits: conflict, disasters, exploration, cultural, infrastructure, diplomatic)
- *   Bits 17-24: Eras bitmask (8 bits: prehistory, ancient, medieval, earlyModern, industrial, worldWars, coldWar, modern)
- *   Bits 25-35: Random seed (11 bits, 0-2047)
+ * Bit layout (72 bits total = 6 × 12-bit WORDLIST indices):
+ *   offset  0, width  1:  Game mode (0=suddenDeath, 1=freeplay)
+ *   offset  1, width  3:  Hand size (value - 1, range 0-7)
+ *   offset  4, width  3:  Player count (value - 1, range 0-7)
+ *   offset  7, width  4:  Difficulties bitmask (easy, medium, hard, very-hard)
+ *   offset 11, width  8:  Eras bitmask (8 eras)
+ *   offset 19, width 32:  Categories bitmask (up to 32 categories — fixed width so the
+ *                         layout stays stable as the category list grows)
+ *   offset 51, width 21:  Random seed (0 - 2,097,151)
  */
+
+const WORD_COUNT = 6;
+
+// BigInt is used for the 72-bit packed value (exceeds JS's 53-bit safe-integer range).
+// Literals (`12n`) require an ES2020 target, so the sanctioned `BigInt()` form is used.
+const ZERO = BigInt(0);
+const ONE = BigInt(1);
+const WORD_BITS = BigInt(12);
+const WORD_MASK = BigInt(0xfff);
+
+const OFFSET_MODE = BigInt(0);
+const OFFSET_HAND = BigInt(1);
+const OFFSET_PLAYER = BigInt(4);
+const OFFSET_DIFF = BigInt(7);
+const OFFSET_ERA = BigInt(11);
+const OFFSET_CATEGORIES = BigInt(19);
+const OFFSET_SEED = BigInt(51);
+
+const MASK_3 = BigInt(0x7);
+const MASK_DIFF = BigInt(0xf); // 4 bits
+const MASK_ERA = BigInt(0xff); // 8 bits
+const MASK_CATEGORIES = BigInt(0xffffffff); // 32 bits
+const MASK_SEED = BigInt(0x1fffff); // 21 bits
+
+const SEED_RANGE = 2_097_152; // 2^21
 
 export interface ChallengeConfig {
   mode: 'suddenDeath' | 'freeplay';
@@ -26,82 +53,83 @@ export interface ChallengeConfig {
   difficulties: Difficulty[];
   categories: Category[];
   eras: Era[];
-  seed: number; // 0-2047
+  seed: number; // 0 - 2,097,151
 }
 
-function arrayToBitmask<T>(selected: T[], all: readonly T[]): number {
-  let mask = 0;
+function arrayToBitmask<T>(selected: T[], all: readonly T[]): bigint {
+  let mask = ZERO;
   for (const item of selected) {
     const idx = all.indexOf(item);
-    if (idx >= 0) mask |= 1 << idx;
+    if (idx >= 0) mask |= ONE << BigInt(idx);
   }
   return mask;
 }
 
-function bitmaskToArray<T>(mask: number, all: readonly T[]): T[] {
-  return all.filter((_, i) => mask & (1 << i));
+function bitmaskToArray<T>(mask: bigint, all: readonly T[]): T[] {
+  return all.filter((_, i) => ((mask >> BigInt(i)) & ONE) === ONE);
 }
 
 /**
- * Encode a challenge config into a 3-word hyphenated string.
+ * Encode a challenge config into a hyphenated word-string token.
  */
 export function encodeChallengeCode(config: ChallengeConfig): string {
-  const modeBit = config.mode === 'freeplay' ? 1 : 0;
-  const handBits = (config.handSize - 1) & 0x7; // 3 bits
-  const playerBits = (config.playerCount - 1) & 0x7; // 3 bits
-  const diffBits = arrayToBitmask(config.difficulties, ALL_DIFFICULTIES) & 0xf; // 4 bits
-  const catBits = arrayToBitmask(config.categories, ALL_CATEGORIES) & 0x3f; // 6 bits
-  const eraBits = arrayToBitmask(config.eras, ALL_ERAS) & 0xff; // 8 bits
-  const seedBits = config.seed & 0x7ff; // 11 bits
+  const modeBit = config.mode === 'freeplay' ? ONE : ZERO;
+  const handBits = BigInt((config.handSize - 1) & 0x7);
+  const playerBits = BigInt((config.playerCount - 1) & 0x7);
+  const diffBits = arrayToBitmask(config.difficulties, ALL_DIFFICULTIES) & MASK_DIFF;
+  const eraBits = arrayToBitmask(config.eras, ALL_ERAS) & MASK_ERA;
+  const catBits = arrayToBitmask(config.categories, ALL_CATEGORIES) & MASK_CATEGORIES;
+  const seedBits = BigInt(config.seed & (SEED_RANGE - 1));
 
-  // Pack into 36 bits using regular number arithmetic (safe up to 53 bits)
-  let packed = 0;
-  packed += modeBit;
-  packed += handBits * 2; // << 1
-  packed += playerBits * 16; // << 4
-  packed += diffBits * 128; // << 7
-  packed += catBits * 2048; // << 11
-  packed += eraBits * 131072; // << 17
-  packed += seedBits * 33554432; // << 25
+  let packed = ZERO;
+  packed |= modeBit << OFFSET_MODE;
+  packed |= handBits << OFFSET_HAND;
+  packed |= playerBits << OFFSET_PLAYER;
+  packed |= diffBits << OFFSET_DIFF;
+  packed |= eraBits << OFFSET_ERA;
+  packed |= catBits << OFFSET_CATEGORIES;
+  packed |= seedBits << OFFSET_SEED;
 
-  // Split into 3 × 12-bit indices
-  const idx0 = packed & 0xfff; // bits 0-11
-  const idx1 = Math.floor(packed / 4096) & 0xfff; // bits 12-23
-  const idx2 = Math.floor(packed / 16777216) & 0xfff; // bits 24-35
-
-  return `${WORDLIST.at(idx0)}-${WORDLIST.at(idx1)}-${WORDLIST.at(idx2)}`;
+  const words: string[] = [];
+  let shift = ZERO;
+  for (let i = 0; i < WORD_COUNT; i++) {
+    const idx = Number((packed >> shift) & WORD_MASK);
+    words.push(WORDLIST.at(idx) ?? '');
+    shift += WORD_BITS;
+  }
+  return words.join('-');
 }
 
 /**
- * Decode a 3-word challenge code into a config, or null if invalid.
+ * Decode a token (or a full share URL containing one) into a config, or null if invalid.
  */
 export function decodeChallengeCode(code: string): ChallengeConfig | null {
-  const parts = code.toLowerCase().split('-');
-  if (parts.length !== 3) return null;
+  // Accept a pasted full URL (".../challenge/<token>") as well as a bare token.
+  const afterChallenge = code.includes('/challenge/') ? code.split('/challenge/')[1] : code;
+  const token = afterChallenge.split(/[/?#]/)[0].trim().toLowerCase();
 
-  const idx0 = wordMap.get(parts[0]);
-  const idx1 = wordMap.get(parts[1]);
-  const idx2 = wordMap.get(parts[2]);
+  const parts = token.split('-');
+  if (parts.length !== WORD_COUNT) return null;
 
-  if (idx0 === undefined || idx1 === undefined || idx2 === undefined) return null;
+  let packed = ZERO;
+  let shift = ZERO;
+  for (const part of parts) {
+    const idx = wordMap.get(part);
+    if (idx === undefined) return null;
+    packed |= BigInt(idx) << shift;
+    shift += WORD_BITS;
+  }
 
-  // Reconstruct 36-bit packed value using regular arithmetic
-  const packed = idx0 + idx1 * 4096 + idx2 * 16777216;
-
-  const modeBit = packed & 1;
-  const handBits = Math.floor(packed / 2) & 0x7;
-  const playerBits = Math.floor(packed / 16) & 0x7;
-  const diffBits = Math.floor(packed / 128) & 0xf;
-  const catBits = Math.floor(packed / 2048) & 0x3f;
-  const eraBits = Math.floor(packed / 131072) & 0xff;
-  const seedBits = Math.floor(packed / 33554432) & 0x7ff;
-
-  const mode = modeBit === 1 ? 'freeplay' : 'suddenDeath';
-  const handSize = handBits + 1;
-  const playerCount = playerBits + 1;
-  const difficulties = bitmaskToArray(diffBits, ALL_DIFFICULTIES);
-  const categories = bitmaskToArray(catBits, ALL_CATEGORIES);
-  const eras = bitmaskToArray(eraBits, ALL_ERAS);
+  const mode = ((packed >> OFFSET_MODE) & ONE) === ONE ? 'freeplay' : 'suddenDeath';
+  const handSize = Number((packed >> OFFSET_HAND) & MASK_3) + 1;
+  const playerCount = Number((packed >> OFFSET_PLAYER) & MASK_3) + 1;
+  const difficulties = bitmaskToArray((packed >> OFFSET_DIFF) & MASK_DIFF, ALL_DIFFICULTIES);
+  const eras = bitmaskToArray((packed >> OFFSET_ERA) & MASK_ERA, ALL_ERAS);
+  const categories = bitmaskToArray(
+    (packed >> OFFSET_CATEGORIES) & MASK_CATEGORIES,
+    ALL_CATEGORIES
+  );
+  const seed = Number((packed >> OFFSET_SEED) & MASK_SEED);
 
   // Validate
   if (handSize < 1 || handSize > 8) return null;
@@ -110,14 +138,14 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
   if (categories.length === 0) return null;
   if (eras.length === 0) return null;
 
-  return { mode, handSize, playerCount, difficulties, categories, eras, seed: seedBits };
+  return { mode, handSize, playerCount, difficulties, categories, eras, seed };
 }
 
 /**
- * Generate a random 11-bit seed (0-2047).
+ * Generate a random 21-bit seed (0 - 2,097,151).
  */
 export function generateChallengeSeed(): number {
-  return Math.floor(Math.random() * 2048);
+  return Math.floor(Math.random() * SEED_RANGE);
 }
 
 /**

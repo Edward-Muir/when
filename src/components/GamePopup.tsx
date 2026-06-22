@@ -145,11 +145,7 @@ function ChallengeShareSection({ gameState }: { gameState: WhenGameState }) {
 
   return (
     <div className="relative mt-3 pt-3 border-t border-border">
-      <div className="text-center">
-        <p className="text-xs text-text-muted font-body">Challenge Code</p>
-        <p className="text-sm font-mono text-accent mt-0.5">{challengeCode}</p>
-      </div>
-      <p className="text-xs text-text-muted font-body mt-2 text-center">
+      <p className="text-xs text-text-muted font-body text-center">
         Challenge a friend — they&apos;ll play with the same cards in the same order.
       </p>
       <button

@@ -157,9 +157,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(
     savedSettings?.selectedDifficulties ?? [...DEFAULT_DIFFICULTIES]
   );
-  const [selectedCategories, setSelectedCategories] = useState<Category[]>(
-    savedSettings?.selectedCategories ?? [...ALL_CATEGORIES]
-  );
+  const [selectedCategories, setSelectedCategories] = useState<Category[]>(() => {
+    // Drop any stale categories from a previous taxonomy in saved settings; if nothing
+    // valid remains (e.g. an old install), fall back to all categories.
+    const restored = savedSettings?.selectedCategories?.filter((c) => ALL_CATEGORIES.includes(c));
+    return restored && restored.length > 0 ? restored : [...ALL_CATEGORIES];
+  });
   const [selectedEras, setSelectedEras] = useState<Era[]>(
     savedSettings?.selectedEras ?? [...ALL_ERAS]
   );

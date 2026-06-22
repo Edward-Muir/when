@@ -1,40 +1,21 @@
 {
-  "categories": [
-    {
-      "name": "conflict",
-      "files": [
-        "conflict.json"
-      ]
-    },
-    {
-      "name": "cultural",
-      "files": [
-        "cultural.json"
-      ]
-    },
-    {
-      "name": "diplomatic",
-      "files": [
-        "diplomatic.json"
-      ]
-    },
-    {
-      "name": "disasters",
-      "files": [
-        "disasters.json"
-      ]
-    },
-    {
-      "name": "exploration",
-      "files": [
-        "exploration.json"
-      ]
-    },
-    {
-      "name": "infrastructure",
-      "files": [
-        "infrastructure.json"
-      ]
-    }
+  "files": [
+    "conflict.json",
+    "cultural.json",
+    "diplomatic.json",
+    "disasters.json",
+    "exploration.json",
+    "infrastructure.json",
+    "people.json",
+    "clothing.json",
+    "communication.json",
+    "earth-life.json",
+    "food.json",
+    "games-sport.json",
+    "law.json",
+    "medicine.json",
+    "migration.json",
+    "money.json",
+    "candidates.json"
   ]
 }

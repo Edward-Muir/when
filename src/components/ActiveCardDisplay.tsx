@@ -72,6 +72,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
               isOverTimeline={isOverTimeline}
               isHidden={isAnimating}
               size="landscape"
+              priority
             />
           </div>
         </div>

@@ -1,0 +1,8 @@
+# Python dependencies for the image pipeline scripts.
+#   scripts/extract_event_colors.py, scripts/generate_images.py
+#   images/scripts/downsample.py, images/scripts/extract_colors.py
+#
+# Install:  pip install -r scripts/requirements.txt
+Pillow==10.1.0
+numpy==1.26.2
+requests==2.31.0

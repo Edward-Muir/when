@@ -34,7 +34,7 @@ function createTestEvent(name: string, year: number): HistoricalEvent {
     name,
     friendly_name: name,
     year,
-    category: 'cultural', // Must match selectedCategories in startGame
+    category: 'empires', // Must match selectedCategories in startGame
     description: 'Test event',
     difficulty: 'medium', // Must match selectedDifficulties in startGame
   };
@@ -90,7 +90,7 @@ describe('useWhenGame - Sudden Death Mode', () => {
         mode: 'suddenDeath',
         totalTurns: 10,
         selectedDifficulties: ['easy', 'medium', 'hard'],
-        selectedCategories: ['cultural'],
+        selectedCategories: ['empires'],
         selectedEras: [...ALL_ERAS],
         playerCount,
         playerNames,

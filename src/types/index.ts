@@ -1,18 +1,46 @@
 export type Category =
-  | 'conflict'
+  | 'empires'
+  | 'revolution'
+  | 'architecture'
+  | 'writing'
+  | 'invention'
+  | 'figures'
+  | 'media'
+  | 'craft'
+  | 'diplomacy'
   | 'disasters'
-  | 'exploration'
-  | 'cultural'
-  | 'infrastructure'
-  | 'diplomatic';
+  | 'commerce'
+  | 'law'
+  | 'agriculture'
+  | 'warfare'
+  | 'science'
+  | 'trade'
+  | 'migration'
+  | 'art'
+  | 'medicine'
+  | 'nature';
 
 export const ALL_CATEGORIES: Category[] = [
-  'conflict',
+  'empires',
+  'revolution',
+  'architecture',
+  'writing',
+  'invention',
+  'figures',
+  'media',
+  'craft',
+  'diplomacy',
   'disasters',
-  'exploration',
-  'cultural',
-  'infrastructure',
-  'diplomatic',
+  'commerce',
+  'law',
+  'agriculture',
+  'warfare',
+  'science',
+  'trade',
+  'migration',
+  'art',
+  'medicine',
+  'nature',
 ];
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';
@@ -117,10 +145,7 @@ export interface WhenGameState {
 }
 
 export interface EventManifest {
-  categories: {
-    name: Category;
-    files: string[];
-  }[];
+  files: string[];
 }
 
 export interface GameConfig {

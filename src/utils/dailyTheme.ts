@@ -9,23 +9,21 @@ export interface DailyTheme {
 
 /**
  * Get the daily theme based on a seed string (typically YYYY-MM-DD date)
- * Deterministically selects either a single category or "Everything" (all categories)
- * "Everything" has 2x the probability of any single category (25% vs 12.5% each)
+ * Deterministically selects either a single category or "Everything" (all categories).
+ * "Everything" comes up ~50% of the time; the other ~50% is split evenly across the
+ * individual categories.
  */
 export function getDailyTheme(seed: string): DailyTheme {
   const random = seededRandom(stringToSeed(seed));
-  // Weighted selection: categories (weight 1 each) + "Everything" (weight 2)
-  const totalWeight = ALL_CATEGORIES.length + 2;
-  const roll = Math.floor(random() * totalWeight);
 
-  if (roll >= ALL_CATEGORIES.length) {
-    // "Everything" - 2/totalWeight chance (~25%)
+  // ~50% "Everything", ~50% a single random category.
+  if (random() < 0.5) {
     return { type: 'all', value: null };
-  } else {
-    // Single category
-    // eslint-disable-next-line security/detect-object-injection
-    return { type: 'category', value: ALL_CATEGORIES[roll] };
   }
+
+  const idx = Math.floor(random() * ALL_CATEGORIES.length);
+  // eslint-disable-next-line security/detect-object-injection
+  return { type: 'category', value: ALL_CATEGORIES[idx] };
 }
 
 /**
