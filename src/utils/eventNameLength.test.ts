@@ -21,6 +21,7 @@ const EVENT_FILES = [
   'medicine',
   'migration',
   'money',
+  'candidates',
 ];
 
 describe('event friendly_name length', () => {

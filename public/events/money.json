@@ -5,7 +5,12 @@
     "year": -3000,
     "category": "writing",
     "description": "Mesopotamians adopted the shekel as a unit of weight for silver, an early standard for measuring value.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shekel-weight-standard_t1rple?_a=BAMAMikS0"
   },
   {
     "name": "first-promissory-clay-tablets",
@@ -13,7 +18,12 @@
     "year": -2400,
     "category": "writing",
     "description": "Sumerian scribes recorded loans, interest, and debts on clay tablets, among the earliest written finance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-promissory-clay-tablets_euixck?_a=BAMAMikS0"
   },
   {
     "name": "code-hammurabi-interest-rules",
@@ -21,7 +31,12 @@
     "year": -1754,
     "category": "law",
     "description": "Babylon's code set legal limits on loan interest rates and rules for debt, an early financial regulation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/code-hammurabi-interest-rules_rneghv?_a=BAMAMikS0"
   },
   {
     "name": "egyptian-grain-banking",
@@ -29,7 +44,12 @@
     "year": -1500,
     "category": "writing",
     "description": "Ancient Egypt ran state granaries where stored grain served as deposits and a medium of exchange.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#3f2d23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-grain-banking_zjisuo?_a=BAMAMikS0"
   },
   {
     "name": "phoenician-trade-network",
@@ -37,7 +57,12 @@
     "year": -1000,
     "category": "trade",
     "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-trade-network_oq3suz?_a=BAMAMikS0"
   },
   {
     "name": "athenian-owl-tetradrachm",
@@ -45,7 +70,12 @@
     "year": -510,
     "category": "writing",
     "description": "Athens minted silver tetradrachms stamped with an owl, becoming a trusted currency across the Mediterranean.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e202f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/athenian-owl-tetradrachm_wmhfes?_a=BAMAMikS0"
   },
   {
     "name": "athenian-laurion-silver-mines",
@@ -53,7 +83,12 @@
     "year": -483,
     "category": "trade",
     "description": "Rich silver strikes at Laurion funded Athens' navy and coinage, fueling its rise to a sea power.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2c1d17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/athenian-laurion-silver-mines_azxjec?_a=BAMAMikS0"
   },
   {
     "name": "persian-daric-gold-coin",
@@ -61,7 +96,12 @@
     "year": -515,
     "category": "writing",
     "description": "Darius I issued the gold daric, a pure coin that standardized money across the vast Persian Empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/persian-daric-gold-coin_zeatgi?_a=BAMAMikS0"
   },
   {
     "name": "roman-denarius-introduced",
@@ -69,7 +109,12 @@
     "year": -211,
     "category": "writing",
     "description": "Rome introduced the silver denarius, which became the backbone of its economy for centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-denarius-introduced_wbaiyd?_a=BAMAMikS0"
   },
   {
     "name": "roman-tax-census-augustus",
@@ -77,7 +122,12 @@
     "year": -6,
     "category": "law",
     "description": "Emperor Augustus ordered empire-wide censuses to assess property and collect taxes more efficiently.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-tax-census-augustus_ipox0j?_a=BAMAMikS0"
   },
   {
     "name": "roman-aureus-gold-coin",
@@ -85,7 +135,12 @@
     "year": -40,
     "category": "writing",
     "description": "Rome's gold aureus circulated alongside the silver denarius, anchoring high-value transactions across the empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1c18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-aureus-gold-coin_vdamlj?_a=BAMAMikS0"
   },
   {
     "name": "roman-currency-debasement",
@@ -93,7 +148,12 @@
     "year": 270,
     "category": "empires",
     "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-currency-debasement_iexoxn?_a=BAMAMikS0"
   },
   {
     "name": "byzantine-solidus-introduced",
@@ -101,7 +161,12 @@
     "year": 312,
     "category": "writing",
     "description": "Constantine issued the gold solidus, a stable coin that dominated Mediterranean trade for centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#301b18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/byzantine-solidus-introduced_sjp41z?_a=BAMAMikS0"
   },
   {
     "name": "islamic-gold-dinar-minted",
@@ -109,7 +174,12 @@
     "year": 696,
     "category": "writing",
     "description": "Caliph Abd al-Malik issued the gold dinar, establishing a distinct Islamic currency across the caliphate.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/islamic-gold-dinar-minted_czkdkg?_a=BAMAMikS0"
   },
   {
     "name": "song-dynasty-jiaozi-paper",
@@ -117,7 +187,12 @@
     "year": 1024,
     "category": "writing",
     "description": "China's Song dynasty issued jiaozi, the first government-backed paper banknotes in world history.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1c1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-dynasty-jiaozi-paper_ggdvnl?_a=BAMAMikS0"
   },
   {
     "name": "hawala-money-transfer",
@@ -125,7 +200,12 @@
     "year": 800,
     "category": "trade",
     "description": "Medieval Islamic merchants developed hawala, an informal network for transferring money without moving cash.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hawala-money-transfer_dvmldv?_a=BAMAMikS0"
   },
   {
     "name": "domesday-tax-survey",
@@ -133,7 +213,12 @@
     "year": 1086,
     "category": "law",
     "description": "William the Conqueror surveyed England's lands and wealth to assess taxes, producing the Domesday Book.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#624b36",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domesday-tax-survey_vbmbaw?_a=BAMAMikS0"
   },
   {
     "name": "english-exchequer-tally",
@@ -141,7 +226,12 @@
     "year": 1110,
     "category": "commerce",
     "description": "England's royal Exchequer used a checkered cloth and tally sticks to audit and collect crown revenues.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/english-exchequer-tally_vq0qkl?_a=BAMAMikS0"
   },
   {
     "name": "kublai-khan-paper-currency",
@@ -149,7 +239,12 @@
     "year": 1260,
     "category": "writing",
     "description": "Kublai Khan enforced paper currency across China, amazing Marco Polo with money made from mulberry bark.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kublai-khan-paper-currency_m0yakw?_a=BAMAMikS0"
   },
   {
     "name": "english-pound-sterling-origin",
@@ -157,7 +252,12 @@
     "year": 1158,
     "category": "writing",
     "description": "Henry II issued the Tealby penny, standardizing English silver coinage that defined the pound sterling.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/english-pound-sterling-origin_iqk8f4?_a=BAMAMikS0"
   },
   {
     "name": "venetian-state-bond-prestiti",
@@ -165,7 +265,12 @@
     "year": 1262,
     "category": "commerce",
     "description": "Venice consolidated its debts into tradable government bonds, an early form of the public bond market.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/venetian-state-bond-prestiti_v8zqvr?_a=BAMAMikS0"
   },
   {
     "name": "first-marine-insurance-policy",
@@ -173,7 +278,12 @@
     "year": 1347,
     "category": "commerce",
     "description": "Genoese merchants signed early marine insurance contracts to protect cargo against losses at sea.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-marine-insurance-policy_lguttm?_a=BAMAMikS0"
   },
   {
     "name": "double-entry-pacioli-treatise",
@@ -181,7 +291,12 @@
     "year": 1494,
     "category": "writing",
     "description": "Luca Pacioli published the first printed description of double-entry bookkeeping, the basis of accounting.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/double-entry-pacioli-treatise_bh49z4?_a=BAMAMikS0"
   },
   {
     "name": "potosi-silver-floods-spain",
@@ -189,7 +304,12 @@
     "year": 1545,
     "category": "trade",
     "description": "Vast silver from Potosi in Bolivia poured into Spain, reshaping global trade and sparking price inflation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#523131",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/potosi-silver-floods-spain_kx9ko6?_a=BAMAMikS0"
   },
   {
     "name": "spanish-price-revolution",
@@ -197,7 +317,12 @@
     "year": 1550,
     "category": "revolution",
     "description": "A flood of New World silver caused sustained inflation across Europe over the sixteenth century.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-price-revolution_nkkuk7?_a=BAMAMikS0"
   },
   {
     "name": "spanish-pieces-of-eight",
@@ -205,7 +330,12 @@
     "year": 1497,
     "category": "writing",
     "description": "Spain's silver peso, the piece of eight, became the first truly global currency used across continents.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-pieces-of-eight_td2szf?_a=BAMAMikS0"
   },
   {
     "name": "greshams-law-coinage",
@@ -213,7 +343,12 @@
     "year": 1558,
     "category": "law",
     "description": "Financier Thomas Gresham observed that bad money drives good money out of circulation.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#231f25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greshams-law-coinage_f3jeec?_a=BAMAMikS0"
   },
   {
     "name": "royal-exchange-london-opens",
@@ -221,7 +356,12 @@
     "year": 1571,
     "category": "commerce",
     "description": "Thomas Gresham founded the Royal Exchange, giving London merchants a central place to trade and finance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/royal-exchange-london-opens_abfkqk?_a=BAMAMikS0"
   },
   {
     "name": "bank-of-amsterdam-founded",
@@ -229,7 +369,12 @@
     "year": 1609,
     "category": "commerce",
     "description": "The Bank of Amsterdam created a stable public deposit bank that helped make the city a financial hub.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bank-of-amsterdam-founded_c6pguk?_a=BAMAMikS0"
   },
   {
     "name": "first-stock-dividend-voc",
@@ -237,7 +382,12 @@
     "year": 1610,
     "category": "media",
     "description": "The Dutch East India Company paid shareholders the first regular dividends on publicly traded stock.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1e16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-stock-dividend-voc_njzok5?_a=BAMAMikS0"
   },
   {
     "name": "swedish-banknotes-issued",
@@ -245,7 +395,12 @@
     "year": 1661,
     "category": "media",
     "description": "Stockholms Banco issued the first paper banknotes in Europe, an experiment that soon overstretched.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swedish-banknotes-issued_wfc6eg?_a=BAMAMikS0"
   },
   {
     "name": "first-cheques-england",
@@ -253,7 +408,12 @@
     "year": 1659,
     "category": "commerce",
     "description": "London goldsmith-bankers issued early written cheques, letting depositors pay others from their accounts.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cheques-england_shnnxj?_a=BAMAMikS0"
   },
   {
     "name": "lloyds-coffeehouse-insurance",
@@ -261,7 +421,12 @@
     "year": 1688,
     "category": "commerce",
     "description": "Edward Lloyd's London coffeehouse became a hub for marine insurers, growing into Lloyd's of London.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1f16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lloyds-coffeehouse-insurance_kucrcq?_a=BAMAMikS0"
   },
   {
     "name": "gold-standard-newton",
@@ -269,7 +434,12 @@
     "year": 1717,
     "category": "law",
     "description": "Isaac Newton, master of the Mint, set a gold price that effectively put Britain on the gold standard.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gold-standard-newton_hkzcbj?_a=BAMAMikS0"
   },
   {
     "name": "first-paper-money-colonial",
@@ -277,7 +447,12 @@
     "year": 1690,
     "category": "writing",
     "description": "Massachusetts Bay issued the first government paper money in the American colonies to pay soldiers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#362416",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-paper-money-colonial_qlbh7b?_a=BAMAMikS0"
   },
   {
     "name": "first-building-society",
@@ -285,7 +460,12 @@
     "year": 1775,
     "category": "commerce",
     "description": "Ketley's of Birmingham formed the first building society, pooling members' savings to finance their homes.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-building-society_gnq8ii?_a=BAMAMikS0"
   },
   {
     "name": "continental-dollar-collapse",
@@ -293,7 +473,12 @@
     "year": 1781,
     "category": "revolution",
     "description": "Over-issued paper Continentals lost nearly all value during the American Revolution, fueling distrust of paper money.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/continental-dollar-collapse_nbhc6z?_a=BAMAMikS0"
   },
   {
     "name": "us-dollar-established",
@@ -301,7 +486,12 @@
     "year": 1792,
     "category": "law",
     "description": "The Coinage Act created the US dollar and a national mint, setting the new nation's monetary system.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-dollar-established_ebtiwq?_a=BAMAMikS0"
   },
   {
     "name": "new-york-stock-exchange-founded",
@@ -309,7 +499,12 @@
     "year": 1792,
     "category": "commerce",
     "description": "Brokers signed the Buttonwood Agreement under a tree on Wall Street, founding the New York Stock Exchange.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#251f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/new-york-stock-exchange-founded_nkycmx?_a=BAMAMikS0"
   },
   {
     "name": "first-british-income-tax",
@@ -317,7 +512,12 @@
     "year": 1799,
     "category": "law",
     "description": "Britain introduced the first income tax to fund the wars against Napoleonic France.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-british-income-tax_rrsgav?_a=BAMAMikS0"
   },
   {
     "name": "panic-of-1837",
@@ -325,7 +525,12 @@
     "year": 1837,
     "category": "disasters",
     "description": "A US banking crisis triggered a deep depression, bank failures, and years of economic hardship.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/panic-of-1837_tjr4oa?_a=BAMAMikS0"
   },
   {
     "name": "rothschild-banking-empire",
@@ -333,7 +538,12 @@
     "year": 1815,
     "category": "commerce",
     "description": "The Rothschild family financed governments across Europe, becoming the era's most powerful banking dynasty.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rothschild-banking-empire_ncgaz1?_a=BAMAMikS0"
   },
   {
     "name": "first-savings-bank",
@@ -341,7 +551,12 @@
     "year": 1810,
     "category": "commerce",
     "description": "Scotland's Reverend Henry Duncan founded an early savings bank to help ordinary workers store money safely.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-savings-bank_pthd8d?_a=BAMAMikS0"
   },
   {
     "name": "us-federal-income-tax",
@@ -349,7 +564,12 @@
     "year": 1913,
     "category": "law",
     "description": "The Sixteenth Amendment let the US government levy a permanent federal income tax on its citizens.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#23211c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-federal-income-tax_rwnajp?_a=BAMAMikS0"
   },
   {
     "name": "gold-rush-currency-clipper",
@@ -357,7 +577,12 @@
     "year": 1859,
     "category": "trade",
     "description": "Nevada's Comstock Lode unearthed huge silver deposits that enriched the US and influenced its coinage.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#382f2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gold-rush-currency-clipper_uxkc9y?_a=BAMAMikS0"
   },
   {
     "name": "first-travelers-cheque",
@@ -365,7 +590,12 @@
     "year": 1772,
     "category": "commerce",
     "description": "The London Credit Exchange Company issued early traveler's cheques usable across European cities.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-travelers-cheque_vuv9ip?_a=BAMAMikS0"
   },
   {
     "name": "western-union-money-transfer",
@@ -373,7 +603,12 @@
     "year": 1871,
     "category": "trade",
     "description": "Western Union began wiring money by telegraph, letting people send funds across the country in minutes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3f3834",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/western-union-money-transfer_ximoez?_a=BAMAMikS0"
   },
   {
     "name": "panic-of-1907",
@@ -381,7 +616,12 @@
     "year": 1907,
     "category": "commerce",
     "description": "A New York banking panic, calmed by J.P. Morgan, exposed the need for a central bank in the US.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#262018",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/panic-of-1907_depot6?_a=BAMAMikS0"
   },
   {
     "name": "weimar-hyperinflation",
@@ -389,7 +629,12 @@
     "year": 1923,
     "category": "disasters",
     "description": "German prices spiraled so fast that banknotes became nearly worthless and people burned cash for heat.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/weimar-hyperinflation_ylcd0s?_a=BAMAMikS0"
   },
   {
     "name": "wall-street-crash-1929",
@@ -397,7 +642,12 @@
     "year": 1929,
     "category": "disasters",
     "description": "The US stock market collapsed in October, wiping out fortunes and ushering in the Great Depression.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#433b2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wall-street-crash-1929_bhwap8?_a=BAMAMikS0"
   },
   {
     "name": "glass-steagall-act",
@@ -405,7 +655,12 @@
     "year": 1933,
     "category": "law",
     "description": "The US separated commercial and investment banking and created deposit insurance after mass bank failures.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#332b1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/glass-steagall-act_jzbygo?_a=BAMAMikS0"
   },
   {
     "name": "fdr-gold-confiscation",
@@ -413,7 +668,12 @@
     "year": 1933,
     "category": "law",
     "description": "Roosevelt ordered Americans to surrender most gold coins and bullion as the US left the gold standard at home.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c281d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fdr-gold-confiscation_jls9of?_a=BAMAMikS0"
   },
   {
     "name": "diners-club-charge-card",
@@ -421,7 +681,12 @@
     "year": 1950,
     "category": "media",
     "description": "The Diners Club card let members charge restaurant meals, launching the modern payment-card industry.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202027",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diners-club-charge-card_miw8j4?_a=BAMAMikS0"
   },
   {
     "name": "first-credit-card-bankamericard",
@@ -429,7 +694,12 @@
     "year": 1958,
     "category": "media",
     "description": "Bank of America mailed the BankAmericard, the first widely used revolving bank credit card, later becoming Visa.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-credit-card-bankamericard_dzjwtd?_a=BAMAMikS0"
   },
   {
     "name": "first-eurodollar-market",
@@ -437,7 +707,12 @@
     "year": 1957,
     "category": "trade",
     "description": "US dollars held in European banks formed the eurodollar market, a vast pool of offshore international money.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a2627",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-eurodollar-market_mwhv2i?_a=BAMAMikS0"
   },
   {
     "name": "decimal-currency-uk",
@@ -445,7 +720,12 @@
     "year": 1971,
     "category": "law",
     "description": "On Decimal Day, Britain replaced its old pounds, shillings, and pence with a decimal pound of 100 pence.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/decimal-currency-uk_mk89fl?_a=BAMAMikS0"
   },
   {
     "name": "smithsonian-agreement",
@@ -453,7 +733,12 @@
     "year": 1971,
     "category": "diplomacy",
     "description": "Major nations realigned currencies after the US ended dollar-gold convertibility, ending fixed Bretton Woods rates.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smithsonian-agreement_lftu2e?_a=BAMAMikS0"
   },
   {
     "name": "nasdaq-launches",
@@ -461,7 +746,12 @@
     "year": 1971,
     "category": "media",
     "description": "NASDAQ began as the world's first electronic stock market, trading shares through computers instead of a floor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#28252a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nasdaq-launches_wi8zcn?_a=BAMAMikS0"
   },
   {
     "name": "first-debit-card",
@@ -469,7 +759,12 @@
     "year": 1966,
     "category": "media",
     "description": "US banks introduced early debit cards, letting customers pay directly from their checking accounts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212027",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-debit-card_s20u8y?_a=BAMAMikS0"
   },
   {
     "name": "grameen-microcredit",
@@ -477,7 +772,12 @@
     "year": 1976,
     "category": "commerce",
     "description": "Muhammad Yunus began lending tiny sums to poor villagers in Bangladesh, pioneering modern microfinance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#37424c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/grameen-microcredit_if6man?_a=BAMAMikS0"
   },
   {
     "name": "plaza-accord-signed",
@@ -485,7 +785,12 @@
     "year": 1985,
     "category": "diplomacy",
     "description": "Five major economies agreed to weaken the US dollar against the yen and mark to fix trade imbalances.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1d2128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plaza-accord-signed_juci5v?_a=BAMAMikS0"
   },
   {
     "name": "japanese-asset-bubble-bursts",
@@ -493,7 +798,12 @@
     "year": 1990,
     "category": "disasters",
     "description": "Japan's inflated stock and property prices collapsed, beginning a long economic stagnation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#38282b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japanese-asset-bubble-bursts_el1qqz?_a=BAMAMikS0"
   },
   {
     "name": "black-wednesday-pound",
@@ -501,7 +811,12 @@
     "year": 1992,
     "category": "disasters",
     "description": "Speculators forced the British pound out of Europe's exchange rate system, costing the government billions.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3f4143",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/black-wednesday-pound_xhkac6?_a=BAMAMikS0"
   },
   {
     "name": "swiss-bank-secrecy-law",
@@ -509,7 +824,12 @@
     "year": 1934,
     "category": "law",
     "description": "Switzerland made it a crime to reveal bank client details, cementing its reputation for secret banking.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#252118",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swiss-bank-secrecy-law_blb8gn?_a=BAMAMikS0"
   },
   {
     "name": "dot-com-bubble-bursts",
@@ -517,7 +837,12 @@
     "year": 2000,
     "category": "disasters",
     "description": "Inflated internet-company stock prices crashed, wiping out trillions in market value.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1a2228",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dot-com-bubble-bursts_mdzm2m?_a=BAMAMikS0"
   },
   {
     "name": "paypal-online-payments",
@@ -525,7 +850,12 @@
     "year": 1998,
     "category": "media",
     "description": "PayPal launched to let people send money over the internet, helping power the rise of online commerce.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202029",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paypal-online-payments_sueysx?_a=BAMAMikS0"
   },
   {
     "name": "subprime-mortgage-crisis",
@@ -533,7 +863,12 @@
     "year": 2007,
     "category": "disasters",
     "description": "Defaults on risky US home loans triggered a banking meltdown and the global financial crisis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#162232",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/subprime-mortgage-crisis_w0o5xa?_a=BAMAMikS0"
   },
   {
     "name": "greek-debt-crisis",
@@ -541,7 +876,12 @@
     "year": 2010,
     "category": "revolution",
     "description": "Greece needed massive bailouts as its government debt threatened the stability of the entire eurozone.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#11203e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-debt-crisis_dwqsxx?_a=BAMAMikS0"
   },
   {
     "name": "ethereum-smart-contracts",
@@ -549,7 +889,12 @@
     "year": 2015,
     "category": "media",
     "description": "Ethereum launched a blockchain with smart contracts, enabling new digital currencies and finance apps.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1a2131",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ethereum-smart-contracts_pdgxoa?_a=BAMAMikS0"
   },
   {
     "name": "contactless-payment-spreads",
@@ -557,7 +902,12 @@
     "year": 2007,
     "category": "media",
     "description": "Tap-to-pay cards let shoppers buy goods by waving a card near a reader, speeding up everyday payments.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e2128",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/contactless-payment-spreads_ouebzp?_a=BAMAMikS0"
   },
   {
     "name": "m-pesa-mobile-money",
@@ -565,7 +915,12 @@
     "year": 2007,
     "category": "media",
     "description": "Kenya's M-Pesa let people send and store money on basic mobile phones, transforming finance in Africa.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#182133",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/m-pesa-mobile-money_wpzebs?_a=BAMAMikS0"
   },
   {
     "name": "gamestop-short-squeeze",
@@ -573,7 +928,12 @@
     "year": 2021,
     "category": "media",
     "description": "Small online investors bid up GameStop shares, inflicting huge losses on hedge funds betting against it.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1b212e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gamestop-short-squeeze_cmab7b?_a=BAMAMikS0"
   },
   {
     "name": "ftx-crypto-collapse",
@@ -581,7 +941,12 @@
     "year": 2022,
     "category": "disasters",
     "description": "The major cryptocurrency exchange FTX failed amid fraud, wiping out billions in customer funds overnight.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f202c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ftx-crypto-collapse_ijoblr?_a=BAMAMikS0"
   },
   {
     "name": "roman-argentarii-banking",
@@ -589,6 +954,11 @@
     "year": -100,
     "category": "commerce",
     "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#3b302c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-argentarii-banking_pu79vl?_a=BAMAMikS0"
   }
 ]

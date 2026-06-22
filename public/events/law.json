@@ -5,7 +5,12 @@
     "year": -1870,
     "category": "law",
     "description": "A Sumerian king issued a law code in the Akkadian language, predating Hammurabi by over a century.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/code-of-lipit-ishtar_fubcwu?_a=BAMAMikS0"
   },
   {
     "name": "laws-of-eshnunna",
@@ -13,7 +18,12 @@
     "year": -1930,
     "category": "law",
     "description": "This Babylonian-era code set fixed prices and penalties, an early Mesopotamian legal milestone.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2f1c14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/laws-of-eshnunna_rsg2ny?_a=BAMAMikS0"
   },
   {
     "name": "hittite-law-code",
@@ -21,7 +31,12 @@
     "year": -1650,
     "category": "law",
     "description": "The Hittite empire compiled around 200 laws favoring fines and restitution over harsh physical punishment.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1c22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hittite-law-code_qpdxrs?_a=BAMAMikS0"
   },
   {
     "name": "mosaic-law-given",
@@ -29,7 +44,12 @@
     "year": -1300,
     "category": "law",
     "description": "Hebrew tradition holds that Moses received the Ten Commandments at Mount Sinai, shaping Western moral law.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#212124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mosaic-law-given_okjafb?_a=BAMAMikS0"
   },
   {
     "name": "gortyn-law-code",
@@ -37,7 +57,12 @@
     "year": -450,
     "category": "law",
     "description": "Carved on a stone wall in Crete, this is the most complete surviving ancient Greek legal code.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gortyn-law-code_r9jrtl?_a=BAMAMikS0"
   },
   {
     "name": "solon-reforms-athens",
@@ -45,7 +70,12 @@
     "year": -594,
     "category": "law",
     "description": "Solon cancelled debts and rewrote Athens' harsh laws, laying foundations for later Greek democracy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/solon-reforms-athens_mn8mex?_a=BAMAMikS0"
   },
   {
     "name": "trial-of-socrates",
@@ -53,7 +83,12 @@
     "year": -399,
     "category": "revolution",
     "description": "An Athenian jury condemned the philosopher Socrates for impiety, sentencing him to drink hemlock.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-of-socrates_b6ixkc?_a=BAMAMikS0"
   },
   {
     "name": "lex-canuleia",
@@ -61,7 +96,12 @@
     "year": -445,
     "category": "law",
     "description": "This Roman law legalized marriage between patricians and plebeians, easing class tensions in the republic.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lex-canuleia_v2aeox?_a=BAMAMikS0"
   },
   {
     "name": "lex-villia-annalis",
@@ -69,7 +109,12 @@
     "year": -180,
     "category": "law",
     "description": "Rome set minimum ages for holding public office, regulating the political career ladder of magistrates.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2c1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lex-villia-annalis_lk49jp?_a=BAMAMikS0"
   },
   {
     "name": "lex-aquilia",
@@ -77,7 +122,12 @@
     "year": -286,
     "category": "law",
     "description": "This Roman statute established liability for wrongful damage to property, shaping later tort law.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#3e2d26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lex-aquilia_iy94le?_a=BAMAMikS0"
   },
   {
     "name": "praetor-peregrinus-created",
@@ -85,7 +135,12 @@
     "year": -242,
     "category": "law",
     "description": "Rome appointed a magistrate to judge disputes involving foreigners, developing a flexible body of law.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#301b13",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/praetor-peregrinus-created_jzpdjj?_a=BAMAMikS0"
   },
   {
     "name": "qin-legalist-code",
@@ -93,7 +148,12 @@
     "year": -221,
     "category": "law",
     "description": "China's Qin dynasty imposed a strict, uniform legal code with severe punishments across the unified empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qin-legalist-code_mk41sj?_a=BAMAMikS0"
   },
   {
     "name": "trial-of-jesus",
@@ -101,7 +161,12 @@
     "year": 33,
     "category": "revolution",
     "description": "Roman governor Pontius Pilate tried Jesus of Nazareth in Jerusalem, ordering his crucifixion.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2b1d1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-of-jesus_swkohh?_a=BAMAMikS0"
   },
   {
     "name": "gaius-institutes-written",
@@ -109,7 +174,12 @@
     "year": 161,
     "category": "writing",
     "description": "The jurist Gaius produced an influential Roman legal textbook used to train students for centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#553823",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gaius-institutes-written_s6lxrv?_a=BAMAMikS0"
   },
   {
     "name": "digest-of-justinian",
@@ -117,7 +187,12 @@
     "year": 533,
     "category": "writing",
     "description": "Justinian's jurists distilled centuries of Roman legal writing into an authoritative reference work.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/digest-of-justinian_mopasn?_a=BAMAMikS0"
   },
   {
     "name": "lex-salica-issued",
@@ -125,7 +200,12 @@
     "year": 507,
     "category": "law",
     "description": "The Frankish kingdom codified its customs in the Salic Law, later cited to bar women from royal succession.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#251f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lex-salica-issued_ymtitc?_a=BAMAMikS0"
   },
   {
     "name": "tang-code-promulgated",
@@ -133,7 +213,12 @@
     "year": 653,
     "category": "law",
     "description": "China's Tang dynasty issued a comprehensive penal code that influenced legal systems across East Asia.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#221f27",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tang-code-promulgated_wljca3?_a=BAMAMikS0"
   },
   {
     "name": "visigothic-code",
@@ -141,7 +226,12 @@
     "year": 654,
     "category": "law",
     "description": "Spain's Visigoths issued a unified code applying the same laws to both Goths and Romans alike.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#1d2226",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/visigothic-code_rm0cf1?_a=BAMAMikS0"
   },
   {
     "name": "law-of-aethelberht",
@@ -149,7 +239,12 @@
     "year": 600,
     "category": "law",
     "description": "Kent's King Aethelberht issued the earliest known English law code, written in the Anglo-Saxon language.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/law-of-aethelberht_fsnqbh?_a=BAMAMikS0"
   },
   {
     "name": "trial-by-ordeal-spreads",
@@ -157,7 +252,12 @@
     "year": 800,
     "category": "law",
     "description": "Medieval Europe judged guilt by ordeals of fire or water, trusting divine intervention to reveal the truth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-by-ordeal-spreads_jnrvnb?_a=BAMAMikS0"
   },
   {
     "name": "gratian-decretum",
@@ -165,7 +265,12 @@
     "year": 1140,
     "category": "law",
     "description": "Gratian compiled church laws into a systematic text that became the foundation of canon law study.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gratian-decretum_fvyzsh?_a=BAMAMikS0"
   },
   {
     "name": "assize-of-clarendon",
@@ -173,7 +278,12 @@
     "year": 1166,
     "category": "law",
     "description": "England's Henry II expanded royal courts and grand juries, advancing the English common law system.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/assize-of-clarendon_soldgd?_a=BAMAMikS0"
   },
   {
     "name": "sachsenspiegel-compiled",
@@ -181,7 +291,12 @@
     "year": 1235,
     "category": "law",
     "description": "This German law book recorded customary law in the vernacular and shaped Central European justice for ages.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sachsenspiegel-compiled_kgb9pb?_a=BAMAMikS0"
   },
   {
     "name": "jury-trial-replaces-ordeal",
@@ -189,7 +304,12 @@
     "year": 1219,
     "category": "law",
     "description": "After the church banned ordeals, English courts turned to juries of peers to decide guilt or innocence.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jury-trial-replaces-ordeal_kakkos?_a=BAMAMikS0"
   },
   {
     "name": "model-parliament-statutes",
@@ -197,7 +317,12 @@
     "year": 1275,
     "category": "law",
     "description": "Edward I's English statute codified dozens of laws, becoming a cornerstone of medieval common law.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/model-parliament-statutes_ewglog?_a=BAMAMikS0"
   },
   {
     "name": "siete-partidas",
@@ -205,7 +330,12 @@
     "year": 1265,
     "category": "law",
     "description": "Castile's Alfonso X created a sweeping legal code covering law, religion, and daily life in Spain.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siete-partidas_gfwkqu?_a=BAMAMikS0"
   },
   {
     "name": "great-yassa-code",
@@ -213,7 +343,12 @@
     "year": 1206,
     "category": "law",
     "description": "Genghis Khan established the Yassa, a secret legal code governing the vast Mongol Empire's affairs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#22211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-yassa-code_mswzeo?_a=BAMAMikS0"
   },
   {
     "name": "magdeburg-rights-spread",
@@ -221,7 +356,12 @@
     "year": 1300,
     "category": "law",
     "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#222122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magdeburg-rights-spread_q0ffpi?_a=BAMAMikS0"
   },
   {
     "name": "statute-of-laborers",
@@ -229,7 +369,12 @@
     "year": 1351,
     "category": "law",
     "description": "After the Black Death, England capped wages and forced laborers to work, sparking widespread resentment.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#272019",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/statute-of-laborers_zhu10u?_a=BAMAMikS0"
   },
   {
     "name": "ming-code-issued",
@@ -237,7 +382,12 @@
     "year": 1397,
     "category": "law",
     "description": "China's Ming dynasty issued a detailed legal code that governed the empire for nearly three centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ming-code-issued_kllxy8?_a=BAMAMikS0"
   },
   {
     "name": "carolina-criminal-code",
@@ -245,7 +395,12 @@
     "year": 1532,
     "category": "law",
     "description": "Charles V issued the first general criminal code of the Holy Roman Empire, standardizing trials and torture.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carolina-criminal-code_hgiajt?_a=BAMAMikS0"
   },
   {
     "name": "statute-of-artificers",
@@ -253,7 +408,12 @@
     "year": 1563,
     "category": "law",
     "description": "England regulated apprenticeships, wages, and working hours, shaping labor law for over two centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/statute-of-artificers_dhzcmx?_a=BAMAMikS0"
   },
   {
     "name": "court-of-star-chamber-peak",
@@ -261,7 +421,12 @@
     "year": 1620,
     "category": "law",
     "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/court-of-star-chamber-peak_schkch?_a=BAMAMikS0"
   },
   {
     "name": "trial-of-charles-i",
@@ -269,7 +434,12 @@
     "year": 1649,
     "category": "revolution",
     "description": "England put its own king on trial for treason and executed him, an unprecedented act in European history.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-of-charles-i_llf7yz?_a=BAMAMikS0"
   },
   {
     "name": "petition-of-right",
@@ -277,7 +447,12 @@
     "year": 1628,
     "category": "law",
     "description": "English Parliament forced King Charles I to accept limits on taxation and imprisonment without cause.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/petition-of-right_bmn9zc?_a=BAMAMikS0"
   },
   {
     "name": "pendle-witch-trials",
@@ -285,7 +460,12 @@
     "year": 1612,
     "category": "revolution",
     "description": "England tried and hanged ten people for witchcraft in Lancashire, one of the era's best-documented cases.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#231f29",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pendle-witch-trials_c7oc2c?_a=BAMAMikS0"
   },
   {
     "name": "blackstone-commentaries",
@@ -293,7 +473,12 @@
     "year": 1765,
     "category": "writing",
     "description": "William Blackstone published an influential survey of English common law, widely read on both sides of the Atlantic.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blackstone-commentaries_dkdy1z?_a=BAMAMikS0"
   },
   {
     "name": "beccaria-on-crimes",
@@ -301,7 +486,12 @@
     "year": 1764,
     "category": "writing",
     "description": "Cesare Beccaria condemned torture and the death penalty, founding modern criminal justice reform.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d13",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beccaria-on-crimes_w2xu3i?_a=BAMAMikS0"
   },
   {
     "name": "somerset-slavery-case",
@@ -309,7 +499,12 @@
     "year": 1772,
     "category": "law",
     "description": "An English court ruled slavery unsupported by common law, freeing a slave and fueling abolitionism.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1c17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/somerset-slavery-case_hlgi8u?_a=BAMAMikS0"
   },
   {
     "name": "guillotine-first-used",
@@ -317,7 +512,12 @@
     "year": 1792,
     "category": "medicine",
     "description": "France adopted the guillotine for executions, intended as a swift and equal method of capital punishment.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#a4b1af",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/guillotine-first-used_zrkzry?_a=BAMAMikS0"
   },
   {
     "name": "us-supreme-court-first-session",
@@ -325,7 +525,12 @@
     "year": 1790,
     "category": "commerce",
     "description": "The newly created United States Supreme Court held its first session in New York City.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#301b12",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-supreme-court-first-session_nzpgmk?_a=BAMAMikS0"
   },
   {
     "name": "marbury-v-madison",
@@ -341,7 +546,12 @@
     "year": 1829,
     "category": "commerce",
     "description": "Philadelphia opened a prison built around solitary confinement, pioneering a new model of incarceration.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3d362d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-modern-penitentiary_ntnvl3?_a=BAMAMikS0"
   },
   {
     "name": "first-detective-bureau",
@@ -349,7 +559,12 @@
     "year": 1842,
     "category": "commerce",
     "description": "London's Scotland Yard formed a plainclothes detective branch, an early model for modern police work.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#413b30",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-detective-bureau_xn1wp4?_a=BAMAMikS0"
   },
   {
     "name": "fugitive-slave-act",
@@ -357,7 +572,12 @@
     "year": 1850,
     "category": "law",
     "description": "A US law forced citizens to help capture escaped slaves, deepening sectional conflict before the Civil War.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fugitive-slave-act_mzk6io?_a=BAMAMikS0"
   },
   {
     "name": "fingerprinting-adopted",
@@ -365,7 +585,12 @@
     "year": 1892,
     "category": "medicine",
     "description": "Argentine police solved a murder using fingerprints, launching their use in criminal investigations worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#403629",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fingerprinting-adopted_c6fley?_a=BAMAMikS0"
   },
   {
     "name": "dreyfus-retrial-pardon",
@@ -373,7 +598,12 @@
     "year": 1899,
     "category": "revolution",
     "description": "France pardoned officer Alfred Dreyfus after a notorious wrongful conviction split the nation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#342f2c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dreyfus-retrial-pardon_hq9phl?_a=BAMAMikS0"
   },
   {
     "name": "pinkerton-detective-agency",
@@ -381,7 +611,12 @@
     "year": 1850,
     "category": "commerce",
     "description": "Allan Pinkerton founded a private detective agency in Chicago that pursued criminals across the United States.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#342c26",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pinkerton-detective-agency_rxxwh4?_a=BAMAMikS0"
   },
   {
     "name": "fbi-founded",
@@ -389,7 +624,12 @@
     "year": 1908,
     "category": "commerce",
     "description": "The United States created a federal investigative bureau, later renamed the FBI, to enforce national laws.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#281f17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fbi-founded_ma2kgw?_a=BAMAMikS0"
   },
   {
     "name": "lindbergh-kidnapping-trial",
@@ -397,7 +637,12 @@
     "year": 1935,
     "category": "revolution",
     "description": "Dubbed the trial of the century, a German immigrant was convicted of kidnapping the aviator's baby son.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lindbergh-kidnapping-trial_d4zwa7?_a=BAMAMikS0"
   },
   {
     "name": "interpol-founded",
@@ -405,7 +650,12 @@
     "year": 1923,
     "category": "commerce",
     "description": "Police agencies created an international body in Vienna to coordinate the fight against cross-border crime.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/interpol-founded_av0ckw?_a=BAMAMikS0"
   },
   {
     "name": "leopold-and-loeb-trial",
@@ -413,7 +663,12 @@
     "year": 1924,
     "category": "revolution",
     "description": "Two wealthy Chicago students were tried for a thrill killing in a case that gripped the United States.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leopold-and-loeb-trial_dbwvsi?_a=BAMAMikS0"
   },
   {
     "name": "moscow-show-trials",
@@ -421,7 +676,12 @@
     "year": 1936,
     "category": "revolution",
     "description": "Stalin staged public trials of Soviet officials on fabricated charges, executing rivals during the Great Purge.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2e241b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moscow-show-trials_w7uxav?_a=BAMAMikS0"
   },
   {
     "name": "tokyo-war-crimes-trials",
@@ -429,7 +689,12 @@
     "year": 1946,
     "category": "revolution",
     "description": "An Allied tribunal tried Japanese leaders for wartime atrocities, the Pacific counterpart to Nuremberg.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3a2d21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tokyo-war-crimes-trials_z7ulve?_a=BAMAMikS0"
   },
   {
     "name": "universal-declaration-human-rights",
@@ -437,7 +702,12 @@
     "year": 1948,
     "category": "law",
     "description": "The United Nations adopted a declaration setting out fundamental human rights for all people everywhere.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#413529",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/universal-declaration-human-rights_t3dgw8?_a=BAMAMikS0"
   },
   {
     "name": "genocide-convention-adopted",
@@ -445,7 +715,12 @@
     "year": 1948,
     "category": "law",
     "description": "The United Nations made genocide an international crime, pledging to prevent and punish it worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#33291e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genocide-convention-adopted_ghx11w?_a=BAMAMikS0"
   },
   {
     "name": "european-court-human-rights",
@@ -453,7 +728,12 @@
     "year": 1959,
     "category": "law",
     "description": "Europe established a court in Strasbourg to hear cases of human rights violations against member states.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#808683",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/european-court-human-rights_a9x2ka?_a=BAMAMikS0"
   },
   {
     "name": "gideon-v-wainwright",
@@ -461,7 +741,12 @@
     "year": 1963,
     "category": "law",
     "description": "The US Supreme Court ruled that poor defendants have a right to a free lawyer in criminal cases.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232023",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gideon-v-wainwright_gxfeco?_a=BAMAMikS0"
   },
   {
     "name": "eichmann-trial",
@@ -469,7 +754,12 @@
     "year": 1961,
     "category": "revolution",
     "description": "Israel tried Nazi organizer Adolf Eichmann in Jerusalem for his role in the Holocaust, then executed him.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c3032",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eichmann-trial_qdkzyf?_a=BAMAMikS0"
   },
   {
     "name": "death-penalty-abolished-uk",
@@ -477,7 +767,12 @@
     "year": 1965,
     "category": "law",
     "description": "Britain suspended capital punishment for murder, ending centuries of executions for the crime.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26303b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/death-penalty-abolished-uk_ke34ub?_a=BAMAMikS0"
   },
   {
     "name": "amnesty-international-founded",
@@ -485,7 +780,12 @@
     "year": 1961,
     "category": "commerce",
     "description": "A London lawyer launched a global movement to free prisoners of conscience and defend human rights.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#251f23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/amnesty-international-founded_bns08i?_a=BAMAMikS0"
   },
   {
     "name": "pentagon-papers-ruling",
@@ -493,7 +793,12 @@
     "year": 1971,
     "category": "law",
     "description": "The US Supreme Court allowed newspapers to publish secret Vietnam War documents, upholding press freedom.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#222025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pentagon-papers-ruling_w2d0ta?_a=BAMAMikS0"
   },
   {
     "name": "truth-reconciliation-commission",
@@ -501,7 +806,12 @@
     "year": 1996,
     "category": "law",
     "description": "South Africa's Truth and Reconciliation Commission opened hearings into apartheid-era crimes and abuses.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/truth-reconciliation-commission_ztu8pw?_a=BAMAMikS0"
   },
   {
     "name": "rwanda-tribunal-established",
@@ -509,7 +819,12 @@
     "year": 1994,
     "category": "law",
     "description": "The United Nations created a court to prosecute those responsible for the Rwandan genocide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#595e61",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rwanda-tribunal-established_r38pkw?_a=BAMAMikS0"
   },
   {
     "name": "oj-simpson-trial",
@@ -517,7 +832,12 @@
     "year": 1995,
     "category": "revolution",
     "description": "A televised murder trial of the former football star gripped the United States before his acquittal.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#221f2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oj-simpson-trial_w76h1d?_a=BAMAMikS0"
   },
   {
     "name": "international-criminal-court-opens",
@@ -525,7 +845,12 @@
     "year": 2002,
     "category": "diplomacy",
     "description": "A permanent court opened in The Hague to prosecute genocide, war crimes, and crimes against humanity.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#11203c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/international-criminal-court-opens_oefyr3?_a=BAMAMikS0"
   },
   {
     "name": "guantanamo-bay-opens",
@@ -533,7 +858,12 @@
     "year": 2002,
     "category": "revolution",
     "description": "The United States began holding terrorism suspects at a military prison in Cuba, sparking legal disputes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202027",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/guantanamo-bay-opens_gnl9te?_a=BAMAMikS0"
   },
   {
     "name": "gdpr-takes-effect",
@@ -541,6 +871,11 @@
     "year": 2018,
     "category": "law",
     "description": "The European Union's sweeping data privacy law took effect, reshaping how companies handle personal data.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#152134",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gdpr-takes-effect_j9q4s4?_a=BAMAMikS0"
   }
 ]

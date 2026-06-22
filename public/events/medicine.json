@@ -5,7 +5,12 @@
     "year": -1600,
     "category": "medicine",
     "description": "An Egyptian scroll detailed the examination and treatment of wounds, the oldest known surgical text.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edwin-smith-surgical-papyrus_hx1g9j?_a=BAMAMikS0"
   },
   {
     "name": "ebers-papyrus-written",
@@ -13,7 +18,12 @@
     "year": -1550,
     "category": "medicine",
     "description": "This Egyptian medical scroll recorded hundreds of remedies, ailments, and treatments for diseases.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ebers-papyrus-written_b9akav?_a=BAMAMikS0"
   },
   {
     "name": "asclepius-healing-cult",
@@ -21,7 +31,12 @@
     "year": -420,
     "category": "medicine",
     "description": "Greek healing temples devoted to Asclepius offered sleep-cures and treatments to the sick and injured.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asclepius-healing-cult_nxp2yu?_a=BAMAMikS0"
   },
   {
     "name": "hippocratic-oath-composed",
@@ -29,7 +44,12 @@
     "year": -400,
     "category": "medicine",
     "description": "Greek physicians adopted an ethical pledge defining a doctor's duties, still echoed in medicine today.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#291e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hippocratic-oath-composed_gohqfi?_a=BAMAMikS0"
   },
   {
     "name": "herophilus-dissects-human-body",
@@ -37,7 +57,12 @@
     "year": -300,
     "category": "medicine",
     "description": "In Alexandria, Herophilus performed systematic human dissections, founding the study of anatomy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/herophilus-dissects-human-body_tobzox?_a=BAMAMikS0"
   },
   {
     "name": "huangdi-neijing-compiled",
@@ -45,7 +70,12 @@
     "year": -200,
     "category": "medicine",
     "description": "China's foundational medical text outlined theories of the body, disease, and treatment by needling.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huangdi-neijing-compiled_law6ep?_a=BAMAMikS0"
   },
   {
     "name": "acupuncture-systematized",
@@ -53,7 +83,12 @@
     "year": -100,
     "category": "medicine",
     "description": "Chinese physicians formalized inserting fine needles at body points to treat illness and relieve pain.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/acupuncture-systematized_fxze5t?_a=BAMAMikS0"
   },
   {
     "name": "celsus-de-medicina-encyclopedia",
@@ -61,7 +96,12 @@
     "year": 30,
     "category": "medicine",
     "description": "The Roman writer Celsus described surgery and the four signs of inflammation in a vast medical encyclopedia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#251f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/celsus-de-medicina-encyclopedia_qsrmb8?_a=BAMAMikS0"
   },
   {
     "name": "first-hospital-byzantine",
@@ -69,7 +109,12 @@
     "year": 370,
     "category": "commerce",
     "description": "Bishop Basil of Caesarea founded a charitable complex caring for the sick, a model for later hospitals.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-hospital-byzantine_qww7gg?_a=BAMAMikS0"
   },
   {
     "name": "hua-tuo-surgical-anesthesia",
@@ -77,7 +122,12 @@
     "year": 200,
     "category": "medicine",
     "description": "The Chinese surgeon Hua Tuo reputedly used a herbal anesthetic powder to perform abdominal operations.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hua-tuo-surgical-anesthesia_s37s3l?_a=BAMAMikS0"
   },
   {
     "name": "al-razi-distinguishes-smallpox",
@@ -85,7 +135,12 @@
     "year": 910,
     "category": "medicine",
     "description": "The Persian physician Al-Razi wrote the first clear clinical account separating smallpox from measles.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-razi-distinguishes-smallpox_smyg2f?_a=BAMAMikS0"
   },
   {
     "name": "al-zahrawi-surgical-encyclopedia",
@@ -93,7 +148,12 @@
     "year": 1000,
     "category": "medicine",
     "description": "The Andalusian surgeon Al-Zahrawi illustrated hundreds of instruments in an influential surgical treatise.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-zahrawi-surgical-encyclopedia_vb7lny?_a=BAMAMikS0"
   },
   {
     "name": "constantine-african-translations",
@@ -101,7 +161,12 @@
     "year": 1080,
     "category": "medicine",
     "description": "Constantine the African translated Arabic medical works into Latin, reviving European medical learning.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/constantine-african-translations_n4eocr?_a=BAMAMikS0"
   },
   {
     "name": "trotula-women-medicine",
@@ -109,7 +174,12 @@
     "year": 1100,
     "category": "writing",
     "description": "Texts attributed to Trotula of Salerno addressed women's health and childbirth in medieval Europe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#212024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trotula-women-medicine_shkdrg?_a=BAMAMikS0"
   },
   {
     "name": "leprosy-hospitals-spread",
@@ -117,7 +187,12 @@
     "year": 1150,
     "category": "medicine",
     "description": "Thousands of leprosaria were built across Europe to isolate and care for sufferers of leprosy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leprosy-hospitals-spread_uh4sto?_a=BAMAMikS0"
   },
   {
     "name": "first-medical-licensing-law",
@@ -125,7 +200,12 @@
     "year": 1231,
     "category": "law",
     "description": "Emperor Frederick II required physicians in Sicily to be examined and licensed before practicing.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-medical-licensing-law_s81ldw?_a=BAMAMikS0"
   },
   {
     "name": "mondino-anatomy-dissection",
@@ -133,7 +213,12 @@
     "year": 1316,
     "category": "medicine",
     "description": "Mondino de Luzzi wrote the first European anatomy manual based on hands-on human dissection in Bologna.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mondino-anatomy-dissection_dw2si7?_a=BAMAMikS0"
   },
   {
     "name": "guy-de-chauliac-surgery-text",
@@ -141,7 +226,12 @@
     "year": 1363,
     "category": "medicine",
     "description": "French surgeon Guy de Chauliac wrote a treatise that guided European surgery for two hundred years.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/guy-de-chauliac-surgery-text_i70ryr?_a=BAMAMikS0"
   },
   {
     "name": "first-anatomy-theatre",
@@ -149,7 +239,12 @@
     "year": 1594,
     "category": "medicine",
     "description": "The University of Padua built a permanent theatre where students watched public human dissections.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#301e15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-anatomy-theatre_el5ymm?_a=BAMAMikS0"
   },
   {
     "name": "paracelsus-chemical-medicine",
@@ -157,7 +252,12 @@
     "year": 1530,
     "category": "medicine",
     "description": "The Swiss physician Paracelsus pioneered using minerals and chemicals as remedies, challenging old dogma.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paracelsus-chemical-medicine_n4lzej?_a=BAMAMikS0"
   },
   {
     "name": "pare-improves-wound-care",
@@ -165,7 +265,12 @@
     "year": 1545,
     "category": "medicine",
     "description": "The French surgeon Ambroise Pare replaced cauterizing wounds with gentler dressings and vessel ligation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#322b28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pare-improves-wound-care_arsahi?_a=BAMAMikS0"
   },
   {
     "name": "fracastoro-contagion-theory",
@@ -173,7 +278,12 @@
     "year": 1546,
     "category": "science",
     "description": "Italian scholar Fracastoro proposed that tiny invisible seeds spread disease between people and objects.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fracastoro-contagion-theory_hr5m52?_a=BAMAMikS0"
   },
   {
     "name": "first-pharmacopoeia",
@@ -181,7 +291,12 @@
     "year": 1546,
     "category": "medicine",
     "description": "Nuremberg published a standardized list of medicines and recipes for apothecaries to follow.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#543a28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-pharmacopoeia_egs3i1?_a=BAMAMikS0"
   },
   {
     "name": "santorio-metabolism-experiments",
@@ -189,7 +304,12 @@
     "year": 1614,
     "category": "medicine",
     "description": "Santorio weighed himself for decades on a balance chair, founding the quantitative study of metabolism.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/santorio-metabolism-experiments_qxkfyw?_a=BAMAMikS0"
   },
   {
     "name": "cinchona-bark-malaria",
@@ -197,7 +317,12 @@
     "year": 1632,
     "category": "medicine",
     "description": "Jesuits brought Peruvian cinchona bark to Europe, the first effective remedy against malarial fevers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cinchona-bark-malaria_yimrjw?_a=BAMAMikS0"
   },
   {
     "name": "wiseman-english-surgery",
@@ -205,7 +330,12 @@
     "year": 1676,
     "category": "medicine",
     "description": "Richard Wiseman, called the father of English surgery, wrote influential works on wounds and treatment.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wiseman-english-surgery_rehgzu?_a=BAMAMikS0"
   },
   {
     "name": "first-recorded-vital-statistics",
@@ -213,7 +343,12 @@
     "year": 1662,
     "category": "medicine",
     "description": "John Graunt analyzed London's death records, founding epidemiology and the study of public health data.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-recorded-vital-statistics_vvcbhp?_a=BAMAMikS0"
   },
   {
     "name": "smallpox-variolation-europe",
@@ -221,7 +356,12 @@
     "year": 1721,
     "category": "medicine",
     "description": "Lady Mary Montagu introduced smallpox inoculation to Britain after observing the practice in Istanbul.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smallpox-variolation-europe_pl6bbf?_a=BAMAMikS0"
   },
   {
     "name": "first-clinical-trial-scurvy",
@@ -229,7 +369,12 @@
     "year": 1747,
     "category": "medicine",
     "description": "Naval surgeon James Lind tested treatments on sailors and found citrus fruit cured scurvy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-clinical-trial-scurvy_co1atg?_a=BAMAMikS0"
   },
   {
     "name": "morgagni-founds-pathology",
@@ -237,7 +382,12 @@
     "year": 1761,
     "category": "medicine",
     "description": "Giovanni Morgagni linked symptoms in life to organ damage found at autopsy, founding modern pathology.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/morgagni-founds-pathology_ycan90?_a=BAMAMikS0"
   },
   {
     "name": "first-maternity-hospital",
@@ -245,7 +395,12 @@
     "year": 1739,
     "category": "commerce",
     "description": "London's lying-in hospitals opened to provide poor women with care and shelter during childbirth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-maternity-hospital_xizs9j?_a=BAMAMikS0"
   },
   {
     "name": "withering-digitalis",
@@ -253,7 +408,12 @@
     "year": 1785,
     "category": "medicine",
     "description": "William Withering documented foxglove extract as a drug to treat dropsy and failing hearts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/withering-digitalis_qrqhqe?_a=BAMAMikS0"
   },
   {
     "name": "pinel-reforms-asylums",
@@ -261,7 +421,12 @@
     "year": 1793,
     "category": "medicine",
     "description": "Philippe Pinel unchained the mentally ill in Paris, promoting humane treatment over confinement.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#30241a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pinel-reforms-asylums_nvnrf2?_a=BAMAMikS0"
   },
   {
     "name": "first-dental-drill-foot",
@@ -269,7 +434,12 @@
     "year": 1790,
     "category": "invention",
     "description": "John Greenwood adapted a spinning-wheel pedal to power a dental drill, modernizing tooth treatment.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dental-drill-foot_lhx1b7?_a=BAMAMikS0"
   },
   {
     "name": "first-cesarean-mother-survives",
@@ -277,7 +447,12 @@
     "year": 1794,
     "category": "medicine",
     "description": "Jesse Bennett reportedly performed an early cesarean section in America in which both mother and child lived.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cesarean-mother-survives_qwa51o?_a=BAMAMikS0"
   },
   {
     "name": "homeopathy-founded",
@@ -285,7 +460,12 @@
     "year": 1796,
     "category": "medicine",
     "description": "Samuel Hahnemann proposed treating illness with highly diluted substances, founding homeopathy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/homeopathy-founded_uwosyr?_a=BAMAMikS0"
   },
   {
     "name": "first-blood-pressure-measurement",
@@ -293,7 +473,12 @@
     "year": 1733,
     "category": "medicine",
     "description": "Stephen Hales first measured arterial blood pressure by inserting a tube into a horse's artery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-blood-pressure-measurement_yyjpqc?_a=BAMAMikS0"
   },
   {
     "name": "ophthalmoscope-invented",
@@ -301,7 +486,12 @@
     "year": 1851,
     "category": "invention",
     "description": "Hermann von Helmholtz built a device to look into the living eye, transforming the study of vision.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b2b2b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ophthalmoscope-invented_u0jlbt?_a=BAMAMikS0"
   },
   {
     "name": "first-nursing-textbook",
@@ -309,7 +499,12 @@
     "year": 1860,
     "category": "medicine",
     "description": "Florence Nightingale published Notes on Nursing, laying the foundations of professional patient care.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#22211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-nursing-textbook_xwyh9k?_a=BAMAMikS0"
   },
   {
     "name": "chloroform-eases-childbirth",
@@ -317,7 +512,12 @@
     "year": 1853,
     "category": "medicine",
     "description": "James Simpson popularized chloroform anesthesia, and Queen Victoria used it to deliver a baby.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#262423",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chloroform-eases-childbirth_zx1g9j?_a=BAMAMikS0"
   },
   {
     "name": "lister-spray-operating-theatre",
@@ -325,7 +525,12 @@
     "year": 1871,
     "category": "medicine",
     "description": "Joseph Lister introduced a carbolic acid spray in the operating theatre to kill germs during surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lister-spray-operating-theatre_vrgqvi?_a=BAMAMikS0"
   },
   {
     "name": "diphtheria-antitoxin-developed",
@@ -333,7 +538,12 @@
     "year": 1894,
     "category": "medicine",
     "description": "Emil von Behring's antitoxin treated diphtheria, the first serum therapy and an early Nobel-winning advance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diphtheria-antitoxin-developed_hzlwko?_a=BAMAMikS0"
   },
   {
     "name": "ehrlich-magic-bullet",
@@ -341,7 +551,12 @@
     "year": 1910,
     "category": "medicine",
     "description": "Paul Ehrlich's Salvarsan treated syphilis, launching chemotherapy and the search for magic-bullet drugs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24211a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ehrlich-magic-bullet_mvzglq?_a=BAMAMikS0"
   },
   {
     "name": "vitamins-discovered",
@@ -349,7 +564,12 @@
     "year": 1912,
     "category": "medicine",
     "description": "Casimir Funk coined the word vitamine after finding nutrients whose lack caused diseases like beriberi.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24211c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vitamins-discovered_l9slof?_a=BAMAMikS0"
   },
   {
     "name": "first-typhoid-vaccine",
@@ -357,7 +577,12 @@
     "year": 1896,
     "category": "medicine",
     "description": "Almroth Wright developed a vaccine against typhoid fever, later credited with saving wartime soldiers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#34322e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-typhoid-vaccine_ikmuwn?_a=BAMAMikS0"
   },
   {
     "name": "blood-groups-transfusion-safe",
@@ -365,7 +590,12 @@
     "year": 1907,
     "category": "medicine",
     "description": "Matching donors by Landsteiner's blood groups made transfusions reliable for the first time.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#252119",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blood-groups-transfusion-safe_xf84ob?_a=BAMAMikS0"
   },
   {
     "name": "bcg-tuberculosis-vaccine",
@@ -373,7 +603,12 @@
     "year": 1921,
     "category": "medicine",
     "description": "The BCG vaccine against tuberculosis was first given to a child, becoming one of the world's most used.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#463f31",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bcg-tuberculosis-vaccine_x0qw9r?_a=BAMAMikS0"
   },
   {
     "name": "iron-lung-developed",
@@ -381,7 +616,12 @@
     "year": 1928,
     "category": "medicine",
     "description": "The iron lung used air pressure to breathe for paralyzed polio patients, keeping thousands alive.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-lung-developed_y3segt?_a=BAMAMikS0"
   },
   {
     "name": "blood-bank-established",
@@ -389,7 +629,12 @@
     "year": 1937,
     "category": "commerce",
     "description": "A Chicago hospital opened the first blood bank, storing donated blood for transfusion on demand.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#322a1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blood-bank-established_dmc1rl?_a=BAMAMikS0"
   },
   {
     "name": "pap-smear-introduced",
@@ -397,7 +642,12 @@
     "year": 1943,
     "category": "medicine",
     "description": "George Papanicolaou's cervical smear test let doctors catch cancer early, saving countless lives.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#403120",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pap-smear-introduced_qlmskk?_a=BAMAMikS0"
   },
   {
     "name": "streptomycin-cures-tb",
@@ -405,7 +655,12 @@
     "year": 1943,
     "category": "medicine",
     "description": "Selman Waksman's team isolated streptomycin, the first antibiotic effective against tuberculosis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/streptomycin-cures-tb_krwd0s?_a=BAMAMikS0"
   },
   {
     "name": "first-kidney-transplant",
@@ -413,7 +668,12 @@
     "year": 1954,
     "category": "medicine",
     "description": "Surgeons in Boston transplanted a kidney between identical twins, the first lasting organ transplant.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f202c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-kidney-transplant_ai4i3h?_a=BAMAMikS0"
   },
   {
     "name": "birth-control-pill-developed",
@@ -421,7 +681,12 @@
     "year": 1957,
     "category": "medicine",
     "description": "Researchers developed the first oral contraceptive, giving women reliable control over pregnancy.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#212026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/birth-control-pill-developed_adwkl3?_a=BAMAMikS0"
   },
   {
     "name": "first-hip-replacement",
@@ -429,7 +694,12 @@
     "year": 1962,
     "category": "medicine",
     "description": "John Charnley pioneered a durable artificial hip joint, freeing arthritis sufferers from chronic pain.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#19222d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-hip-replacement_ak8xoo?_a=BAMAMikS0"
   },
   {
     "name": "first-liver-transplant",
@@ -437,7 +707,12 @@
     "year": 1963,
     "category": "medicine",
     "description": "Thomas Starzl attempted the first human liver transplant, pioneering a now life-saving operation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-liver-transplant_x8ijqw?_a=BAMAMikS0"
   },
   {
     "name": "first-lung-transplant",
@@ -445,7 +720,12 @@
     "year": 1963,
     "category": "medicine",
     "description": "Surgeon James Hardy performed the first human lung transplant, opening a new field of organ surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e2226",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-lung-transplant_ojkg3b?_a=BAMAMikS0"
   },
   {
     "name": "ct-scanner-invented",
@@ -453,7 +733,12 @@
     "year": 1971,
     "category": "invention",
     "description": "Godfrey Hounsfield built the first CT scanner, letting doctors see cross-sections inside the body.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e212a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ct-scanner-invented_nge1kt?_a=BAMAMikS0"
   },
   {
     "name": "first-ultrasound-imaging",
@@ -461,7 +746,12 @@
     "year": 1958,
     "category": "medicine",
     "description": "Ian Donald used sonar-like ultrasound to image the womb, making it routine to scan unborn babies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-ultrasound-imaging_r5bacc?_a=BAMAMikS0"
   },
   {
     "name": "monoclonal-antibodies-created",
@@ -469,7 +759,12 @@
     "year": 1975,
     "category": "medicine",
     "description": "Kohler and Milstein produced identical antibodies in the lab, enabling new diagnostics and drugs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monoclonal-antibodies-created_eyzuba?_a=BAMAMikS0"
   },
   {
     "name": "first-statin-discovered",
@@ -477,7 +772,12 @@
     "year": 1976,
     "category": "medicine",
     "description": "Akira Endo isolated the first statin, leading to drugs that lower cholesterol and prevent heart disease.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#393e46",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-statin-discovered_dgcpun?_a=BAMAMikS0"
   },
   {
     "name": "last-natural-smallpox-case",
@@ -485,7 +785,12 @@
     "year": 1977,
     "category": "medicine",
     "description": "A hospital cook in Somalia became the last person to catch smallpox naturally, ending its spread.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#8c8179",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-natural-smallpox-case_qkc6jd?_a=BAMAMikS0"
   },
   {
     "name": "first-hepatitis-b-vaccine",
@@ -493,7 +798,12 @@
     "year": 1981,
     "category": "medicine",
     "description": "The first vaccine against hepatitis B was approved, later credited with preventing liver cancer.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#29323d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-hepatitis-b-vaccine_llr0zr?_a=BAMAMikS0"
   },
   {
     "name": "azt-approved-aids",
@@ -501,7 +811,12 @@
     "year": 1987,
     "category": "medicine",
     "description": "AZT became the first drug approved to treat HIV, slowing the virus in patients with AIDS.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#546162",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/azt-approved-aids_uyixcp?_a=BAMAMikS0"
   },
   {
     "name": "human-genome-completed",
@@ -509,7 +824,12 @@
     "year": 2003,
     "category": "medicine",
     "description": "Scientists finished sequencing the human genome, reading the full genetic blueprint of our species.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#1b2130",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/human-genome-completed_wugkwh?_a=BAMAMikS0"
   },
   {
     "name": "first-face-transplant",
@@ -517,7 +837,12 @@
     "year": 2005,
     "category": "medicine",
     "description": "Surgeons in France performed the world's first partial face transplant on a disfigured patient.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#132138",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-face-transplant_aqrrye?_a=BAMAMikS0"
   },
   {
     "name": "induced-stem-cells-created",
@@ -525,7 +850,12 @@
     "year": 2006,
     "category": "medicine",
     "description": "Shinya Yamanaka turned ordinary skin cells into stem cells, opening new paths in regenerative medicine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#172231",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/induced-stem-cells-created_itub7d?_a=BAMAMikS0"
   },
   {
     "name": "hpv-vaccine-approved",
@@ -533,7 +863,12 @@
     "year": 2006,
     "category": "medicine",
     "description": "The first vaccine against human papillomavirus was approved, aiming to prevent cervical cancer.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#a6afb5",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hpv-vaccine-approved_pinvjl?_a=BAMAMikS0"
   },
   {
     "name": "first-gene-therapy-approved-west",
@@ -541,7 +876,12 @@
     "year": 2017,
     "category": "medicine",
     "description": "US regulators approved a therapy that reprograms a patient's own cells to attack their cancer.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#122139",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-gene-therapy-approved-west_vbjoin?_a=BAMAMikS0"
   },
   {
     "name": "first-malaria-vaccine-rollout",
@@ -549,7 +889,12 @@
     "year": 2021,
     "category": "medicine",
     "description": "The WHO endorsed the first malaria vaccine for children, targeting a disease that kills hundreds of thousands.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#132139",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-malaria-vaccine-rollout_jqnylt?_a=BAMAMikS0"
   },
   {
     "name": "first-pig-heart-transplant",
@@ -557,7 +902,12 @@
     "year": 2022,
     "category": "medicine",
     "description": "Surgeons transplanted a genetically modified pig heart into a human, a milestone in xenotransplantation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202029",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-pig-heart-transplant_ygbuen?_a=BAMAMikS0"
   },
   {
     "name": "anatomy-act-passed",
@@ -565,7 +915,12 @@
     "year": 1832,
     "category": "law",
     "description": "Britain's Anatomy Act gave schools legal access to corpses, ending the trade in stolen bodies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anatomy-act-passed_fyeoik?_a=BAMAMikS0"
   },
   {
     "name": "first-modern-prosthetic-limb",
@@ -573,7 +928,12 @@
     "year": 1846,
     "category": "invention",
     "description": "Benjamin Palmer patented an artificial leg with bending joints, advancing prosthetics for amputees.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-modern-prosthetic-limb_opaf3e?_a=BAMAMikS0"
   },
   {
     "name": "first-rabies-vaccine",
@@ -581,7 +941,12 @@
     "year": 1885,
     "category": "medicine",
     "description": "Louis Pasteur saved a boy bitten by a rabid dog with the first vaccine against rabies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#332a25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-rabies-vaccine_boiczv?_a=BAMAMikS0"
   },
   {
     "name": "first-organ-grown-lab",
@@ -589,7 +954,12 @@
     "year": 2006,
     "category": "medicine",
     "description": "Surgeons implanted bladders grown from patients' own cells, an early triumph of tissue engineering.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2f4d5f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-organ-grown-lab_rvspzs?_a=BAMAMikS0"
   },
   {
     "name": "keyhole-laparoscopic-surgery",
@@ -597,7 +967,12 @@
     "year": 1987,
     "category": "medicine",
     "description": "A French surgeon removed a gallbladder through tiny incisions, launching minimally invasive surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1a212e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/keyhole-laparoscopic-surgery_uil43x?_a=BAMAMikS0"
   },
   {
     "name": "first-laser-eye-surgery",
@@ -605,6 +980,11 @@
     "year": 1987,
     "category": "medicine",
     "description": "Surgeons first used a laser to reshape the cornea, leading to vision correction for millions.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1c212a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-laser-eye-surgery_asxkrf?_a=BAMAMikS0"
   }
 ]

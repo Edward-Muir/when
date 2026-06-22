@@ -5,7 +5,12 @@
     "year": -73000,
     "category": "writing",
     "description": "Early humans scratched deliberate cross-hatched patterns onto ochre in South Africa's Blombos Cave.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-symbolic-engravings_a4vyjn?_a=BAMAMikS0"
   },
   {
     "name": "tally-bone-counting",
@@ -13,7 +18,12 @@
     "year": -20000,
     "category": "craft",
     "description": "Humans carved notches into bones like the Ishango bone to record counts, an early data-keeping method.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tally-bone-counting_hkf6zs?_a=BAMAMikS0"
   },
   {
     "name": "clay-token-accounting",
@@ -21,7 +31,12 @@
     "year": -8000,
     "category": "writing",
     "description": "Mesopotamians used small clay tokens to count grain and livestock, a precursor to written records.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#33190e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clay-token-accounting_g6krjx?_a=BAMAMikS0"
   },
   {
     "name": "proto-cuneiform-tablets",
@@ -29,7 +44,12 @@
     "year": -3300,
     "category": "writing",
     "description": "Scribes in Uruk pressed pictographs into clay to record trade, the earliest known writing system.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-cuneiform-tablets_rdzkza?_a=BAMAMikS0"
   },
   {
     "name": "egyptian-hieroglyphs-emerge",
@@ -37,7 +57,12 @@
     "year": -3200,
     "category": "writing",
     "description": "Egypt developed hieroglyphic writing, combining pictures and sounds to record religion and kingship.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#291e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-hieroglyphs-emerge_vwelsx?_a=BAMAMikS0"
   },
   {
     "name": "indus-script-appears",
@@ -45,7 +70,12 @@
     "year": -2600,
     "category": "writing",
     "description": "The Indus Valley civilization carved a still-undeciphered script onto seals and tablets.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indus-script-appears_aemqtv?_a=BAMAMikS0"
   },
   {
     "name": "egyptian-papyrus-scrolls",
@@ -53,7 +83,12 @@
     "year": -2500,
     "category": "writing",
     "description": "Egyptians wove papyrus reeds into smooth sheets, creating a lightweight writing surface for scrolls.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#202028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-papyrus-scrolls_t3ruja?_a=BAMAMikS0"
   },
   {
     "name": "cuneiform-cylinder-seals",
@@ -61,7 +96,12 @@
     "year": -3400,
     "category": "writing",
     "description": "Mesopotamians rolled engraved stone cylinders over clay to sign documents and mark ownership.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2c1d15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuneiform-cylinder-seals_zcupu2?_a=BAMAMikS0"
   },
   {
     "name": "phaistos-disc-stamped",
@@ -69,7 +109,12 @@
     "year": -1700,
     "category": "writing",
     "description": "A Cretan clay disc was stamped with mysterious symbols, possibly the earliest movable-type printing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1c22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phaistos-disc-stamped_gyiidr?_a=BAMAMikS0"
   },
   {
     "name": "linear-b-script",
@@ -77,7 +122,12 @@
     "year": -1450,
     "category": "writing",
     "description": "Mycenaean Greeks recorded an early form of Greek on clay tablets using the Linear B syllabary.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/linear-b-script_szpxqx?_a=BAMAMikS0"
   },
   {
     "name": "ugaritic-cuneiform-alphabet",
@@ -85,7 +135,12 @@
     "year": -1400,
     "category": "writing",
     "description": "Scribes at Ugarit devised a cuneiform alphabet of 30 signs, among the earliest alphabetic systems.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#251f25",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ugaritic-cuneiform-alphabet_nmkatt?_a=BAMAMikS0"
   },
   {
     "name": "proto-sinaitic-alphabet",
@@ -93,7 +148,12 @@
     "year": -1800,
     "category": "writing",
     "description": "Semitic workers in Egypt adapted hieroglyphs into the first alphabet, ancestor of most modern scripts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-sinaitic-alphabet_y4igrf?_a=BAMAMikS0"
   },
   {
     "name": "chinese-bronze-inscriptions",
@@ -101,7 +161,12 @@
     "year": -1100,
     "category": "writing",
     "description": "Zhou-era China cast inscriptions into ritual bronze vessels, preserving early Chinese writing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chinese-bronze-inscriptions_xryvfm?_a=BAMAMikS0"
   },
   {
     "name": "greek-alphabet-vowels",
@@ -109,7 +174,12 @@
     "year": -800,
     "category": "writing",
     "description": "Greeks adapted the Phoenician alphabet, adding vowels to create the first fully phonetic script.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#442915",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-alphabet-vowels_lomzyp?_a=BAMAMikS0"
   },
   {
     "name": "homeric-epics-written-down",
@@ -117,7 +187,12 @@
     "year": -650,
     "category": "writing",
     "description": "The oral Iliad and Odyssey were recorded in writing as the Greek alphabet spread literacy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/homeric-epics-written-down_ucesvh?_a=BAMAMikS0"
   },
   {
     "name": "aramaic-becomes-lingua-franca",
@@ -125,7 +200,12 @@
     "year": -500,
     "category": "writing",
     "description": "Aramaic became the common written language of the Persian Empire, linking diverse peoples.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#4a3423",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aramaic-becomes-lingua-franca_ljhjr8?_a=BAMAMikS0"
   },
   {
     "name": "behistun-inscription-carved",
@@ -133,7 +213,12 @@
     "year": -520,
     "category": "writing",
     "description": "Darius I carved a trilingual cliff inscription that later helped scholars decipher cuneiform.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#3f3f3f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/behistun-inscription-carved_zxayvd?_a=BAMAMikS0"
   },
   {
     "name": "latin-alphabet-develops",
@@ -141,7 +226,12 @@
     "year": -700,
     "category": "writing",
     "description": "Romans adapted the Etruscan script into the Latin alphabet, now the world's most widely used.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/latin-alphabet-develops_vhnplf?_a=BAMAMikS0"
   },
   {
     "name": "panini-sanskrit-grammar",
@@ -149,7 +239,12 @@
     "year": -400,
     "category": "writing",
     "description": "The scholar Panini codified Sanskrit grammar in nearly 4,000 precise rules, a milestone in linguistics.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/panini-sanskrit-grammar_t3pvzy?_a=BAMAMikS0"
   },
   {
     "name": "brahmi-script-spreads",
@@ -157,7 +252,12 @@
     "year": -300,
     "category": "writing",
     "description": "India's Brahmi script became the ancestor of most writing systems across South and Southeast Asia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#232023",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brahmi-script-spreads_meathi?_a=BAMAMikS0"
   },
   {
     "name": "septuagint-translation",
@@ -165,7 +265,12 @@
     "year": -250,
     "category": "writing",
     "description": "Jewish scholars in Alexandria translated the Hebrew scriptures into Greek as the Septuagint.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/septuagint-translation_ppo1ay?_a=BAMAMikS0"
   },
   {
     "name": "parchment-developed-pergamum",
@@ -173,7 +278,12 @@
     "year": -190,
     "category": "writing",
     "description": "Pergamum refined treated animal skin into parchment, a durable writing surface that rivaled papyrus.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1d14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/parchment-developed-pergamum_mpio5f?_a=BAMAMikS0"
   },
   {
     "name": "roman-acta-diurna",
@@ -181,7 +291,12 @@
     "year": -59,
     "category": "writing",
     "description": "Julius Caesar ordered the Acta Diurna posted publicly, an early forerunner of the daily newspaper.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#c0aa86",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-acta-diurna_vibz2o?_a=BAMAMikS0"
   },
   {
     "name": "wax-tablet-writing",
@@ -189,7 +304,12 @@
     "year": -200,
     "category": "writing",
     "description": "Greeks and Romans wrote on reusable wax-coated tablets with a stylus for everyday notes and lessons.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wax-tablet-writing_ef6mqh?_a=BAMAMikS0"
   },
   {
     "name": "roman-cursive-handwriting",
@@ -197,7 +317,12 @@
     "year": 100,
     "category": "writing",
     "description": "Romans developed flowing cursive script for fast everyday writing on tablets and papyrus.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2b1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-cursive-handwriting_jlvgb8?_a=BAMAMikS0"
   },
   {
     "name": "codex-replaces-scroll",
@@ -205,7 +330,12 @@
     "year": 150,
     "category": "writing",
     "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/codex-replaces-scroll_frfqe5?_a=BAMAMikS0"
   },
   {
     "name": "chinese-paper-cai-lun",
@@ -213,7 +343,12 @@
     "year": 105,
     "category": "writing",
     "description": "The official Cai Lun standardized papermaking in Han China, transforming how information was recorded.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2a1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chinese-paper-cai-lun_qinuga?_a=BAMAMikS0"
   },
   {
     "name": "armenian-alphabet-created",
@@ -221,7 +356,12 @@
     "year": 405,
     "category": "writing",
     "description": "The monk Mesrop Mashtots devised the Armenian alphabet to record scripture in the native language.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/armenian-alphabet-created_d4lvm0?_a=BAMAMikS0"
   },
   {
     "name": "carolingian-minuscule",
@@ -229,7 +369,12 @@
     "year": 780,
     "category": "writing",
     "description": "Scribes under Charlemagne standardized a clear lowercase script, easing reading across Europe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#252021",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/carolingian-minuscule_icunab?_a=BAMAMikS0"
   },
   {
     "name": "arabic-numerals-india",
@@ -237,7 +382,12 @@
     "year": 600,
     "category": "writing",
     "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arabic-numerals-india_frz2pb?_a=BAMAMikS0"
   },
   {
     "name": "diamond-sutra-printed",
@@ -245,7 +395,12 @@
     "year": 868,
     "category": "writing",
     "description": "A Chinese Buddhist scroll became the earliest dated printed book, made with carved woodblocks.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diamond-sutra-printed_t7bnnf?_a=BAMAMikS0"
   },
   {
     "name": "house-of-wisdom-translations",
@@ -253,7 +408,12 @@
     "year": 800,
     "category": "writing",
     "description": "Scholars in Baghdad translated Greek science into Arabic, preserving knowledge for centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/house-of-wisdom-translations_zpg3la?_a=BAMAMikS0"
   },
   {
     "name": "glagolitic-script-created",
@@ -261,7 +421,12 @@
     "year": 863,
     "category": "writing",
     "description": "Saints Cyril and Methodius devised the Glagolitic alphabet to write Slavic languages.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#281f1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/glagolitic-script-created_spfw2t?_a=BAMAMikS0"
   },
   {
     "name": "first-illustrated-paper-book",
@@ -269,7 +434,12 @@
     "year": 750,
     "category": "writing",
     "description": "Papermaking spread west to Samarkand and Baghdad, where paper mills supplied a thriving book trade.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2c1c1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-illustrated-paper-book_bdxkv2?_a=BAMAMikS0"
   },
   {
     "name": "japanese-kana-developed",
@@ -277,7 +447,12 @@
     "year": 900,
     "category": "writing",
     "description": "Japan simplified Chinese characters into kana syllabaries, enabling literature in the native language.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#443927",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japanese-kana-developed_v2jydf?_a=BAMAMikS0"
   },
   {
     "name": "pillow-book-vernacular-prose",
@@ -285,7 +460,12 @@
     "year": 1000,
     "category": "writing",
     "description": "Court women writing in kana created classic Japanese literature, free of formal Chinese characters.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pillow-book-vernacular-prose_rxsx1j?_a=BAMAMikS0"
   },
   {
     "name": "domesday-style-record-keeping",
@@ -293,7 +473,12 @@
     "year": 700,
     "category": "writing",
     "description": "Irish monks introduced spaces between words, making written Latin far easier to read silently.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271d2a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domesday-style-record-keeping_ugniv2?_a=BAMAMikS0"
   },
   {
     "name": "spectacles-aid-reading",
@@ -301,7 +486,12 @@
     "year": 1286,
     "category": "writing",
     "description": "Italian craftsmen made the first eyeglasses, letting scholars and scribes read into old age.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spectacles-aid-reading_utxchr?_a=BAMAMikS0"
   },
   {
     "name": "first-european-paper-mill",
@@ -309,7 +499,12 @@
     "year": 1276,
     "category": "agriculture",
     "description": "Italy's Fabriano mill began producing paper, cutting book costs across medieval Europe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#232021",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-european-paper-mill_uszqw4?_a=BAMAMikS0"
   },
   {
     "name": "gutenberg-movable-type-europe",
@@ -317,7 +512,12 @@
     "year": 1450,
     "category": "writing",
     "description": "Johannes Gutenberg combined metal movable type and the press to print books in quantity.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#291e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gutenberg-movable-type-europe_gcnequ?_a=BAMAMikS0"
   },
   {
     "name": "aldine-italic-type",
@@ -325,7 +525,12 @@
     "year": 1501,
     "category": "writing",
     "description": "Venetian printer Aldus Manutius introduced slanted italic type and small portable books.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aldine-italic-type_uvzkwr?_a=BAMAMikS0"
   },
   {
     "name": "first-printed-newspaper-relation",
@@ -333,7 +538,12 @@
     "year": 1605,
     "category": "media",
     "description": "Strasbourg's Relation became the first regularly printed newspaper, spreading news to the public.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-printed-newspaper-relation_x4riyd?_a=BAMAMikS0"
   },
   {
     "name": "copperplate-engraved-printing",
@@ -341,7 +551,12 @@
     "year": 1570,
     "category": "writing",
     "description": "Copperplate engraving let printers reproduce detailed maps and illustrations far more precisely.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#251f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copperplate-engraved-printing_mwzodi?_a=BAMAMikS0"
   },
   {
     "name": "graphite-pencil-invented",
@@ -349,7 +564,12 @@
     "year": 1565,
     "category": "invention",
     "description": "Encased graphite from Cumberland created the wooden pencil, an erasable everyday writing tool.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1d1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/graphite-pencil-invented_ezyshq?_a=BAMAMikS0"
   },
   {
     "name": "shorthand-system-published",
@@ -357,7 +577,12 @@
     "year": 1588,
     "category": "writing",
     "description": "Timothy Bright published an English shorthand method for writing speech down at speed.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shorthand-system-published_r0a3zt?_a=BAMAMikS0"
   },
   {
     "name": "johnson-dictionary-published",
@@ -365,7 +590,12 @@
     "year": 1755,
     "category": "writing",
     "description": "Samuel Johnson published his influential Dictionary of the English Language after nine years' work.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/johnson-dictionary-published_srx5lv?_a=BAMAMikS0"
   },
   {
     "name": "first-daily-english-newspaper",
@@ -373,7 +603,12 @@
     "year": 1702,
     "category": "media",
     "description": "London's Daily Courant became the first daily newspaper printed in the English language.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-daily-english-newspaper_khley4?_a=BAMAMikS0"
   },
   {
     "name": "chappe-optical-telegraph",
@@ -381,7 +616,12 @@
     "year": 1792,
     "category": "invention",
     "description": "Claude Chappe's tower network relayed messages across France using movable signal arms.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chappe-optical-telegraph_zjclot?_a=BAMAMikS0"
   },
   {
     "name": "lithography-invented",
@@ -389,7 +629,12 @@
     "year": 1796,
     "category": "invention",
     "description": "Alois Senefelder devised lithography, printing images and text from a flat greased stone surface.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#242022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lithography-invented_npqynr?_a=BAMAMikS0"
   },
   {
     "name": "first-encyclopedia-britannica-pub",
@@ -397,7 +642,12 @@
     "year": 1768,
     "category": "commerce",
     "description": "The first Encyclopaedia Britannica began publication in Edinburgh, gathering knowledge for readers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232022",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-encyclopedia-britannica-pub_i3bjob?_a=BAMAMikS0"
   },
   {
     "name": "braille-tactile-reading",
@@ -405,7 +655,12 @@
     "year": 1824,
     "category": "writing",
     "description": "Louis Braille devised a raised-dot alphabet letting blind people read and write by touch.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#41403e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/braille-tactile-reading_fxajuj?_a=BAMAMikS0"
   },
   {
     "name": "morse-code-telegraph-message",
@@ -413,7 +668,12 @@
     "year": 1844,
     "category": "science",
     "description": "Samuel Morse sent the message 'What hath God wrought' by electric telegraph between cities.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#3e3a35",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/morse-code-telegraph-message_hoazpd?_a=BAMAMikS0"
   },
   {
     "name": "penny-black-postage-stamp",
@@ -421,7 +681,12 @@
     "year": 1840,
     "category": "media",
     "description": "Britain issued the Penny Black, the first adhesive postage stamp, making prepaid mail affordable.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penny-black-postage-stamp_uzwjco?_a=BAMAMikS0"
   },
   {
     "name": "cherokee-syllabary-sequoyah",
@@ -429,7 +694,12 @@
     "year": 1821,
     "category": "writing",
     "description": "Sequoyah invented a writing system for the Cherokee language, rapidly spreading native literacy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cherokee-syllabary-sequoyah_kjyg6l?_a=BAMAMikS0"
   },
   {
     "name": "rotary-printing-press-hoe",
@@ -437,7 +707,12 @@
     "year": 1843,
     "category": "invention",
     "description": "Richard Hoe's rotary press printed newspapers far faster by curving type around a spinning cylinder.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rotary-printing-press-hoe_ggr9cz?_a=BAMAMikS0"
   },
   {
     "name": "first-transatlantic-telegraph",
@@ -445,7 +720,12 @@
     "year": 1858,
     "category": "migration",
     "description": "An undersea cable first linked Europe and North America, allowing telegraph messages across the ocean.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#636d73",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-transatlantic-telegraph_zza3gc?_a=BAMAMikS0"
   },
   {
     "name": "qwerty-typewriter",
@@ -453,7 +733,12 @@
     "year": 1873,
     "category": "invention",
     "description": "The Sholes and Glidden typewriter introduced the QWERTY keyboard still used today.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qwerty-typewriter_p7bgud?_a=BAMAMikS0"
   },
   {
     "name": "fountain-pen-perfected",
@@ -461,7 +746,12 @@
     "year": 1884,
     "category": "invention",
     "description": "Lewis Waterman patented a reliable fountain pen with steady ink flow, replacing the dip pen.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3e362e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fountain-pen-perfected_ac6f4t?_a=BAMAMikS0"
   },
   {
     "name": "linotype-machine",
@@ -469,7 +759,12 @@
     "year": 1884,
     "category": "invention",
     "description": "Ottmar Mergenthaler's Linotype cast whole lines of type, speeding newspaper printing dramatically.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#26201c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/linotype-machine_ofucwn?_a=BAMAMikS0"
   },
   {
     "name": "first-touch-typing-method",
@@ -477,7 +772,12 @@
     "year": 1888,
     "category": "invention",
     "description": "Frank McGurrin won a contest using all ten fingers without looking, popularizing touch typing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#4b362c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-touch-typing-method_jgphpz?_a=BAMAMikS0"
   },
   {
     "name": "comic-strip-debuts",
@@ -485,7 +785,12 @@
     "year": 1895,
     "category": "media",
     "description": "The Yellow Kid popularized the comic strip as a regular feature in American newspapers.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#26201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/comic-strip-debuts_euh0d6?_a=BAMAMikS0"
   },
   {
     "name": "oxford-english-dictionary",
@@ -493,7 +798,12 @@
     "year": 1928,
     "category": "writing",
     "description": "The complete Oxford English Dictionary was published after decades of charting English word histories.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oxford-english-dictionary_prh3v0?_a=BAMAMikS0"
   },
   {
     "name": "ballpoint-pen-biro",
@@ -501,7 +811,12 @@
     "year": 1938,
     "category": "invention",
     "description": "László Bíró patented the ballpoint pen, using quick-drying ink and a rolling ball tip.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3d3620",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ballpoint-pen-biro_w2rofa?_a=BAMAMikS0"
   },
   {
     "name": "ascii-character-standard",
@@ -509,7 +824,12 @@
     "year": 1963,
     "category": "writing",
     "description": "ASCII set a standard numeric code for letters and symbols, letting computers share text.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ascii-character-standard_ofgxxw?_a=BAMAMikS0"
   },
   {
     "name": "communications-satellite-relay",
@@ -517,7 +837,12 @@
     "year": 1962,
     "category": "media",
     "description": "The Telstar satellite relayed the first live transatlantic television broadcast through space.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1a212e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/communications-satellite-relay_xcr5zd?_a=BAMAMikS0"
   },
   {
     "name": "fax-machine-widespread",
@@ -525,7 +850,12 @@
     "year": 1980,
     "category": "writing",
     "description": "A global standard for fax machines let offices transmit document images over phone lines worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222027",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fax-machine-widespread_xi4rid?_a=BAMAMikS0"
   },
   {
     "name": "unicode-standard-released",
@@ -533,7 +863,12 @@
     "year": 1991,
     "category": "writing",
     "description": "Unicode assigned every character a unique code, letting computers handle the world's writing systems.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f202b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/unicode-standard-released_qoipc5?_a=BAMAMikS0"
   },
   {
     "name": "first-emoji-created",
@@ -541,7 +876,12 @@
     "year": 1999,
     "category": "invention",
     "description": "Shigetaka Kurita designed a set of small pictographs for Japanese phones, the first emoji.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#1a212f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-emoji-created_ohhwzy?_a=BAMAMikS0"
   },
   {
     "name": "smiley-emoticon-proposed",
@@ -549,7 +889,12 @@
     "year": 1982,
     "category": "writing",
     "description": "Scott Fahlman suggested the sideways smiley to mark jokes in early online message boards.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212025",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smiley-emoticon-proposed_ukhahn?_a=BAMAMikS0"
   },
   {
     "name": "pdf-format-released",
@@ -557,7 +902,12 @@
     "year": 1993,
     "category": "media",
     "description": "Adobe released the PDF, a portable format preserving documents identically across all devices.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pdf-format-released_e89mvc?_a=BAMAMikS0"
   },
   {
     "name": "first-printed-music-notation",
@@ -565,7 +915,12 @@
     "year": 1501,
     "category": "writing",
     "description": "Ottaviano Petrucci printed the first book of sheet music using movable type for notes.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#222026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-printed-music-notation_onlvzy?_a=BAMAMikS0"
   },
   {
     "name": "rongorongo-easter-island",
@@ -573,6 +928,11 @@
     "year": 1700,
     "category": "writing",
     "description": "Easter Islanders carved the undeciphered rongorongo glyphs into wooden tablets by hand.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rongorongo-easter-island_scn61k?_a=BAMAMikS0"
   }
 ]

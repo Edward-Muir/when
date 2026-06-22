@@ -5,7 +5,12 @@
     "year": -4500000000,
     "category": "nature",
     "description": "A Mars-sized body struck the young Earth, and debris from the collision coalesced into the Moon.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moon-forming-impact_w3dso3?_a=BAMAMikS0"
   },
   {
     "name": "earth-oceans-form",
@@ -13,7 +18,12 @@
     "year": -4400000000,
     "category": "nature",
     "description": "As the molten surface cooled, water vapor condensed into rain and filled the planet's first oceans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d3322",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/earth-oceans-form_iy5oin?_a=BAMAMikS0"
   },
   {
     "name": "late-heavy-bombardment",
@@ -21,7 +31,12 @@
     "year": -3900000000,
     "category": "nature",
     "description": "A surge of asteroids and comets battered the inner planets, scarring the young Earth and Moon.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#453028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-heavy-bombardment_ssnibr?_a=BAMAMikS0"
   },
   {
     "name": "first-cyanobacteria",
@@ -29,7 +44,12 @@
     "year": -3500000000,
     "category": "nature",
     "description": "Microbes that release oxygen through photosynthesis emerged, slowly transforming the atmosphere.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#9e742e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cyanobacteria_i1bydy?_a=BAMAMikS0"
   },
   {
     "name": "oldest-stromatolites",
@@ -37,7 +57,12 @@
     "year": -3450000000,
     "category": "nature",
     "description": "Layered mats built by microbial colonies created some of the oldest visible records of life on Earth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#321a0d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oldest-stromatolites_gqemfi?_a=BAMAMikS0"
   },
   {
     "name": "first-eukaryotic-cells",
@@ -45,7 +70,12 @@
     "year": -1800000000,
     "category": "nature",
     "description": "Cells with a nucleus arose, likely when one microbe engulfed another, paving the way for complex life.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-eukaryotic-cells_vfuajd?_a=BAMAMikS0"
   },
   {
     "name": "first-multicellular-life",
@@ -53,7 +83,12 @@
     "year": -1000000000,
     "category": "nature",
     "description": "Cells began cooperating in groups, marking an early step from single cells toward complex organisms.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2e1c12",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-multicellular-life_k1biyq?_a=BAMAMikS0"
   },
   {
     "name": "ediacaran-biota",
@@ -61,7 +96,12 @@
     "year": -575000000,
     "category": "nature",
     "description": "Soft-bodied creatures formed Earth's earliest complex animal communities on the ancient seafloor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3e3214",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ediacaran-biota_vspdrm?_a=BAMAMikS0"
   },
   {
     "name": "cambrian-explosion",
@@ -69,7 +109,12 @@
     "year": -538000000,
     "category": "nature",
     "description": "Most major animal groups appeared in a relatively short burst, filling the seas with diverse life.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d2a11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambrian-explosion_vj3xcl?_a=BAMAMikS0"
   },
   {
     "name": "first-trilobites",
@@ -77,7 +122,12 @@
     "year": -521000000,
     "category": "nature",
     "description": "These armored sea creatures became some of the most successful and widespread early animals.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#472f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-trilobites_atdqtc?_a=BAMAMikS0"
   },
   {
     "name": "first-vertebrates",
@@ -85,7 +135,12 @@
     "year": -518000000,
     "category": "nature",
     "description": "The earliest animals with backbones appeared in the oceans, ancestors of all later vertebrate life.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#512d11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-vertebrates_w9yolm?_a=BAMAMikS0"
   },
   {
     "name": "first-coral-reefs",
@@ -93,7 +148,12 @@
     "year": -485000000,
     "category": "nature",
     "description": "Reef-building organisms began constructing vast underwater structures teeming with marine life.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#543624",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-coral-reefs_b7mbp9?_a=BAMAMikS0"
   },
   {
     "name": "plants-colonize-land",
@@ -101,7 +161,12 @@
     "year": -470000000,
     "category": "agriculture",
     "description": "Simple plants spread from water onto the continents, greening the once-barren land surfaces.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#553815",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plants-colonize-land_vwpr5t?_a=BAMAMikS0"
   },
   {
     "name": "ordovician-mass-extinction",
@@ -109,7 +174,12 @@
     "year": -445000000,
     "category": "nature",
     "description": "Global cooling wiped out much marine life in one of the largest extinctions in Earth's history.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#272019",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ordovician-mass-extinction_cbv2lz?_a=BAMAMikS0"
   },
   {
     "name": "first-jawed-fish",
@@ -117,7 +187,12 @@
     "year": -425000000,
     "category": "nature",
     "description": "Fish evolved hinged jaws, transforming them into active predators and reshaping ocean food chains.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#723b11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-jawed-fish_amnqe6?_a=BAMAMikS0"
   },
   {
     "name": "arthropods-colonize-land",
@@ -125,7 +200,12 @@
     "year": -420000000,
     "category": "nature",
     "description": "Early arthropods such as millipedes crawled ashore, becoming the first animals to live on land.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arthropods-colonize-land_qn1kgn?_a=BAMAMikS0"
   },
   {
     "name": "age-of-fishes",
@@ -133,7 +213,12 @@
     "year": -400000000,
     "category": "nature",
     "description": "Fish diversified across the world's seas, dominating the oceans during the Devonian Period.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#303026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/age-of-fishes_bljukr?_a=BAMAMikS0"
   },
   {
     "name": "first-forests",
@@ -141,7 +226,12 @@
     "year": -385000000,
     "category": "nature",
     "description": "Tree-like plants formed Earth's earliest forests, drawing down carbon and changing the climate.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1d14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-forests_f0dgov?_a=BAMAMikS0"
   },
   {
     "name": "fish-walk-onto-land",
@@ -149,7 +239,12 @@
     "year": -375000000,
     "category": "nature",
     "description": "Lobe-finned fish with limb-like fins began moving onto land, foreshadowing four-legged animals.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#492c19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fish-walk-onto-land_vtuwwe?_a=BAMAMikS0"
   },
   {
     "name": "late-devonian-extinction",
@@ -157,7 +252,12 @@
     "year": -372000000,
     "category": "nature",
     "description": "A drawn-out series of die-offs devastated marine life, especially reef-building organisms.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/late-devonian-extinction_busxae?_a=BAMAMikS0"
   },
   {
     "name": "first-amniote-egg",
@@ -165,7 +265,12 @@
     "year": -340000000,
     "category": "nature",
     "description": "Animals evolved tough-shelled eggs, freeing them from water and letting them spread across dry land.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d2910",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-amniote-egg_jaoi1l?_a=BAMAMikS0"
   },
   {
     "name": "giant-insects-of-carboniferous",
@@ -173,7 +278,12 @@
     "year": -315000000,
     "category": "nature",
     "description": "High oxygen levels let dragonflies grow to hawk-sized wingspans in vast Carboniferous swamps.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d2c18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giant-insects-of-carboniferous_ca8c4t?_a=BAMAMikS0"
   },
   {
     "name": "pangaea-forms",
@@ -181,7 +291,12 @@
     "year": -335000000,
     "category": "nature",
     "description": "Drifting landmasses merged into one giant continent, Pangaea, surrounded by a single global ocean.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2125",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pangaea-forms_zn5ita?_a=BAMAMikS0"
   },
   {
     "name": "great-dying-extinction",
@@ -189,7 +304,12 @@
     "year": -252000000,
     "category": "disasters",
     "description": "Earth's worst extinction killed most marine and land species, nearly ending complex life entirely.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#462613",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-dying-extinction_nofuxe?_a=BAMAMikS0"
   },
   {
     "name": "first-dinosaurs-appear",
@@ -197,7 +317,12 @@
     "year": -233000000,
     "category": "nature",
     "description": "Small, fast reptiles emerged that would diversify into the dinosaurs ruling Earth for ages.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#66321c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dinosaurs-appear_yfd2kn?_a=BAMAMikS0"
   },
   {
     "name": "first-mammals-evolve",
@@ -205,7 +330,12 @@
     "year": -225000000,
     "category": "nature",
     "description": "Tiny, shrew-like creatures became the first mammals, living in the shadow of the early dinosaurs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mammals-evolve_tz0oaw?_a=BAMAMikS0"
   },
   {
     "name": "pangaea-breaks-apart",
@@ -213,7 +343,12 @@
     "year": -175000000,
     "category": "nature",
     "description": "The supercontinent began splitting, slowly opening oceans and drifting toward today's continents.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#5d3e2b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pangaea-breaks-apart_vueiz5?_a=BAMAMikS0"
   },
   {
     "name": "age-of-dinosaurs",
@@ -221,7 +356,12 @@
     "year": -160000000,
     "category": "nature",
     "description": "Dinosaurs dominated land ecosystems worldwide during the Jurassic, growing to enormous sizes.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2e1c14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/age-of-dinosaurs_fcraek?_a=BAMAMikS0"
   },
   {
     "name": "first-flowering-plants",
@@ -229,7 +369,12 @@
     "year": -130000000,
     "category": "nature",
     "description": "Flowers evolved and spread rapidly, transforming landscapes and feeding pollinating insects.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291f16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-flowering-plants_dm1qsj?_a=BAMAMikS0"
   },
   {
     "name": "first-bees",
@@ -237,7 +382,12 @@
     "year": -100000000,
     "category": "nature",
     "description": "Bees evolved alongside flowers, forming a partnership that shaped plant life across the planet.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e12",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-bees_atiudu?_a=BAMAMikS0"
   },
   {
     "name": "tyrannosaurus-roams",
@@ -245,7 +395,12 @@
     "year": -68000000,
     "category": "nature",
     "description": "The huge predator Tyrannosaurus rex hunted across North America in the final age of the dinosaurs.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2c1d17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tyrannosaurus-roams_reoi5x?_a=BAMAMikS0"
   },
   {
     "name": "first-grasses",
@@ -253,7 +408,12 @@
     "year": -55000000,
     "category": "nature",
     "description": "Grasses spread across the world after the dinosaurs, eventually forming vast plains and savannas.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#6e4629",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-grasses_jc4noy?_a=BAMAMikS0"
   },
   {
     "name": "first-primates",
@@ -261,7 +421,12 @@
     "year": -55000000,
     "category": "nature",
     "description": "Early tree-dwelling mammals with grasping hands appeared, ancestors of monkeys, apes, and humans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#542c13",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-primates_dwpjnh?_a=BAMAMikS0"
   },
   {
     "name": "whales-return-to-sea",
@@ -269,7 +434,12 @@
     "year": -50000000,
     "category": "nature",
     "description": "Land mammals gradually evolved into whales, abandoning the shore to live entirely in the oceans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#7e7354",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/whales-return-to-sea_fnqbvf?_a=BAMAMikS0"
   },
   {
     "name": "himalayas-rise",
@@ -277,7 +447,12 @@
     "year": -50000000,
     "category": "empires",
     "description": "India collided with Asia, crumpling the crust upward to build the towering Himalayan mountains.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#5d341d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/himalayas-rise_tjgqey?_a=BAMAMikS0"
   },
   {
     "name": "first-apes",
@@ -285,7 +460,12 @@
     "year": -25000000,
     "category": "nature",
     "description": "Tailless primates known as apes appeared in Africa, the lineage leading toward gorillas and humans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2d1d15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-apes_mnrsvx?_a=BAMAMikS0"
   },
   {
     "name": "human-chimp-split",
@@ -293,7 +473,12 @@
     "year": -7000000,
     "category": "nature",
     "description": "The lineages leading to humans and chimpanzees split from a common ancestor in Africa.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/human-chimp-split_hluidn?_a=BAMAMikS0"
   },
   {
     "name": "first-upright-walkers",
@@ -301,7 +486,12 @@
     "year": -4000000,
     "category": "nature",
     "description": "Early human relatives in Africa began walking on two legs, freeing their hands for other tasks.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#8c4e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-upright-walkers_xt5og3?_a=BAMAMikS0"
   },
   {
     "name": "lucy-australopithecus-lived",
@@ -309,7 +499,12 @@
     "year": -3200000,
     "category": "nature",
     "description": "Lucy, a small upright Australopithecus, lived in Africa and became a famous human ancestor fossil.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#612e11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lucy-australopithecus-lived_subca9?_a=BAMAMikS0"
   },
   {
     "name": "woolly-mammoths-appear",
@@ -317,7 +512,12 @@
     "year": -400000,
     "category": "nature",
     "description": "Shaggy, cold-adapted mammoths spread across the frozen steppes of Ice Age Europe and Asia.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#bfaa8c",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woolly-mammoths-appear_op3zre?_a=BAMAMikS0"
   },
   {
     "name": "saber-toothed-cats",
@@ -325,7 +525,12 @@
     "year": -300000,
     "category": "nature",
     "description": "Powerful cats with long curved fangs preyed on large Ice Age mammals across the Americas.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#402211",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/saber-toothed-cats_nlfj53?_a=BAMAMikS0"
   },
   {
     "name": "ice-age-megafauna-extinction",
@@ -333,7 +538,12 @@
     "year": -11000,
     "category": "nature",
     "description": "Mammoths, giant sloths, and other huge mammals vanished as the last Ice Age ended worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#543622",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-age-megafauna-extinction_fu1wrc?_a=BAMAMikS0"
   },
   {
     "name": "dog-becomes-companion",
@@ -341,7 +551,12 @@
     "year": -15000,
     "category": "nature",
     "description": "Wolves drawn to human camps gradually became dogs, the first animals tamed by people.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#827374",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dog-becomes-companion_jh4xqd?_a=BAMAMikS0"
   },
   {
     "name": "first-crops-cultivated",
@@ -349,7 +564,12 @@
     "year": -9500,
     "category": "agriculture",
     "description": "Peoples of the Fertile Crescent began planting and harvesting wild grains, dawning farming.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2c1d16",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-crops-cultivated_mtlzum?_a=BAMAMikS0"
   },
   {
     "name": "cattle-domesticated",
@@ -357,7 +577,12 @@
     "year": -8500,
     "category": "agriculture",
     "description": "Wild aurochs were tamed into cattle, giving early farmers meat, milk, and muscle power.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b2221",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cattle-domesticated_bjzvlb?_a=BAMAMikS0"
   },
   {
     "name": "cats-domesticated",
@@ -365,7 +590,12 @@
     "year": -7500,
     "category": "agriculture",
     "description": "Wild cats moved into early farming villages to hunt rodents, beginning a long bond with humans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cats-domesticated_pox2am?_a=BAMAMikS0"
   },
   {
     "name": "silkworm-domesticated",
@@ -373,7 +603,12 @@
     "year": -3500,
     "category": "agriculture",
     "description": "Chinese farmers raised silkworms on mulberry leaves to harvest threads for weaving silk.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silkworm-domesticated_evyi7u?_a=BAMAMikS0"
   },
   {
     "name": "giant-ground-sloths-roam",
@@ -381,7 +616,12 @@
     "year": -2000000,
     "category": "nature",
     "description": "Elephant-sized ground sloths lumbered across the Americas during the Ice Age before dying out.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giant-ground-sloths-roam_qrbn15?_a=BAMAMikS0"
   },
   {
     "name": "honeybee-keeping-begins",
@@ -389,7 +629,12 @@
     "year": -2400,
     "category": "agriculture",
     "description": "Ancient Egyptians kept honeybees in clay hives, harvesting honey and wax for food and trade.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3b2925",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/honeybee-keeping-begins_fvvavh?_a=BAMAMikS0"
   },
   {
     "name": "aristotle-studies-animals",
@@ -397,7 +642,12 @@
     "year": -350,
     "category": "nature",
     "description": "The Greek philosopher Aristotle described and classified hundreds of species, founding biology.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aristotle-studies-animals_xhkwjh?_a=BAMAMikS0"
   },
   {
     "name": "shen-kuo-explains-fossils",
@@ -405,7 +655,12 @@
     "year": 1088,
     "category": "nature",
     "description": "Chinese scholar Shen Kuo recognized seashell fossils inland as evidence of ancient seas.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#957154",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shen-kuo-explains-fossils_kbiurf?_a=BAMAMikS0"
   },
   {
     "name": "steno-fossils-rock-layers",
@@ -413,7 +668,12 @@
     "year": 1669,
     "category": "science",
     "description": "Nicolas Steno argued that rock layers form in order over time, founding the study of geology.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#242020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steno-fossils-rock-layers_i0bfq5?_a=BAMAMikS0"
   },
   {
     "name": "leeuwenhoek-microbes",
@@ -421,7 +681,12 @@
     "year": 1676,
     "category": "medicine",
     "description": "Antonie van Leeuwenhoek used his microscope to observe tiny living organisms for the first time.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leeuwenhoek-microbes_lmacpf?_a=BAMAMikS0"
   },
   {
     "name": "linnaeus-systema-naturae",
@@ -429,7 +694,12 @@
     "year": 1735,
     "category": "nature",
     "description": "Carl Linnaeus introduced a system of two-part Latin names to classify all living things.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/linnaeus-systema-naturae_aye6zp?_a=BAMAMikS0"
   },
   {
     "name": "hutton-deep-time",
@@ -437,7 +707,12 @@
     "year": 1788,
     "category": "science",
     "description": "James Hutton argued Earth was shaped by slow processes over an unimaginably vast span of time.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#251f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hutton-deep-time_bvmi1i?_a=BAMAMikS0"
   },
   {
     "name": "cuvier-proves-extinction",
@@ -445,7 +720,12 @@
     "year": 1796,
     "category": "nature",
     "description": "Georges Cuvier showed that fossil animals like mastodons were species that no longer existed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuvier-proves-extinction_x5b0np?_a=BAMAMikS0"
   },
   {
     "name": "smith-geological-map",
@@ -453,7 +733,12 @@
     "year": 1815,
     "category": "science",
     "description": "William Smith mapped England's rock strata using fossils, founding modern geological mapping.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#827258",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smith-geological-map_gaz5vv?_a=BAMAMikS0"
   },
   {
     "name": "anning-finds-ichthyosaur",
@@ -461,7 +746,12 @@
     "year": 1811,
     "category": "nature",
     "description": "Fossil hunter Mary Anning uncovered ancient marine reptiles on England's Dorset coast.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#40413e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anning-finds-ichthyosaur_r2gegk?_a=BAMAMikS0"
   },
   {
     "name": "lyell-principles-geology",
@@ -469,7 +759,12 @@
     "year": 1830,
     "category": "science",
     "description": "Charles Lyell's book argued that gradual forces still at work had shaped Earth over ages.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#484642",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lyell-principles-geology_s60qfp?_a=BAMAMikS0"
   },
   {
     "name": "dinosaur-word-coined",
@@ -477,7 +772,12 @@
     "year": 1842,
     "category": "nature",
     "description": "Richard Owen named the great extinct reptiles dinosaurs, meaning terrible lizards.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#47392c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dinosaur-word-coined_s5irs2?_a=BAMAMikS0"
   },
   {
     "name": "ice-age-theory-proposed",
@@ -485,7 +785,12 @@
     "year": 1837,
     "category": "science",
     "description": "Louis Agassiz proposed that vast ice sheets once covered much of Europe and North America.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#82827b",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ice-age-theory-proposed_j9dirn?_a=BAMAMikS0"
   },
   {
     "name": "neanderthal-fossil-found",
@@ -493,7 +798,12 @@
     "year": 1856,
     "category": "nature",
     "description": "Bones found in Germany's Neander Valley revealed a distinct extinct human cousin.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthal-fossil-found_gkhwke?_a=BAMAMikS0"
   },
   {
     "name": "archaeopteryx-discovered",
@@ -501,7 +811,12 @@
     "year": 1861,
     "category": "nature",
     "description": "A feathered fossil linking dinosaurs and birds was discovered in Germany, supporting evolution.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#b1ada3",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archaeopteryx-discovered_awozxr?_a=BAMAMikS0"
   },
   {
     "name": "pasteur-disproves-spontaneous",
@@ -509,7 +824,12 @@
     "year": 1859,
     "category": "medicine",
     "description": "Louis Pasteur showed that microbes come from other microbes, not from lifeless matter.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222122",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteur-disproves-spontaneous_gnmckh?_a=BAMAMikS0"
   },
   {
     "name": "last-aurochs-dies",
@@ -517,7 +837,12 @@
     "year": 1627,
     "category": "nature",
     "description": "The last aurochs, the wild ancestor of cattle, died in Poland, marking the species' extinction.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#25201e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-aurochs-dies_brpsbt?_a=BAMAMikS0"
   },
   {
     "name": "dodo-driven-extinct",
@@ -525,7 +850,12 @@
     "year": 1681,
     "category": "disasters",
     "description": "The flightless dodo of Mauritius vanished within decades of sailors reaching the island.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2c1d18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dodo-driven-extinct_jreav4?_a=BAMAMikS0"
   },
   {
     "name": "wallace-line-described",
@@ -533,7 +863,12 @@
     "year": 1859,
     "category": "nature",
     "description": "Alfred Russel Wallace charted a sharp boundary dividing the animals of Asia and Australia.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#494b4b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wallace-line-described_rokdvo?_a=BAMAMikS0"
   },
   {
     "name": "last-quagga-dies",
@@ -541,7 +876,12 @@
     "year": 1883,
     "category": "nature",
     "description": "The quagga, a half-striped relative of the zebra, became extinct in an Amsterdam zoo.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#272013",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-quagga-dies_wtmfsp?_a=BAMAMikS0"
   },
   {
     "name": "passenger-pigeon-extinct",
@@ -549,7 +889,12 @@
     "year": 1914,
     "category": "nature",
     "description": "Once numbering billions, the passenger pigeon went extinct when the last bird died in a zoo.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#534e50",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/passenger-pigeon-extinct_zovrmg?_a=BAMAMikS0"
   },
   {
     "name": "wegener-continental-drift",
@@ -557,7 +902,12 @@
     "year": 1912,
     "category": "nature",
     "description": "Alfred Wegener proposed that continents slowly move across the globe over millions of years.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#606e6f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wegener-continental-drift_cktwzr?_a=BAMAMikS0"
   },
   {
     "name": "java-man-discovered",
@@ -565,7 +915,12 @@
     "year": 1891,
     "category": "nature",
     "description": "Eugene Dubois found fossils in Indonesia of Homo erectus, an early upright human ancestor.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#3f3a33",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/java-man-discovered_p54j8k?_a=BAMAMikS0"
   },
   {
     "name": "tutankhamun-fossil-coelacanth",
@@ -573,7 +928,12 @@
     "year": 1938,
     "category": "nature",
     "description": "A coelacanth, a fish thought extinct for millions of years, was caught off South Africa.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3e382d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tutankhamun-fossil-coelacanth_sslnpm?_a=BAMAMikS0"
   },
   {
     "name": "last-thylacine-dies",
@@ -581,7 +941,12 @@
     "year": 1936,
     "category": "nature",
     "description": "The thylacine, a striped marsupial predator, went extinct when the last one died in a zoo.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#302c24",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-thylacine-dies_mwgkgh?_a=BAMAMikS0"
   },
   {
     "name": "miller-urey-experiment",
@@ -589,7 +954,12 @@
     "year": 1953,
     "category": "science",
     "description": "Scientists sparked simple chemicals into amino acids, hinting how life's building blocks arose.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#232e37",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/miller-urey-experiment_dt9zth?_a=BAMAMikS0"
   },
   {
     "name": "olduvai-tools-found",
@@ -597,7 +967,12 @@
     "year": 1959,
     "category": "architecture",
     "description": "The Leakeys uncovered early human fossils and stone tools at Olduvai Gorge in Tanzania.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#222024",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/olduvai-tools-found_lgpxis?_a=BAMAMikS0"
   },
   {
     "name": "seafloor-spreading-confirmed",
@@ -605,7 +980,12 @@
     "year": 1963,
     "category": "science",
     "description": "Magnetic stripes on the ocean floor proved new crust forms there, confirming plate tectonics.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#424950",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seafloor-spreading-confirmed_pbptw4?_a=BAMAMikS0"
   },
   {
     "name": "asteroid-killed-dinosaurs",
@@ -613,7 +993,12 @@
     "year": 1980,
     "category": "nature",
     "description": "Walter and Luis Alvarez proposed an asteroid impact wiped out the dinosaurs 66 million years ago.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d4448",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/asteroid-killed-dinosaurs_kgikvn?_a=BAMAMikS0"
   },
   {
     "name": "chicxulub-crater-confirmed",
@@ -621,7 +1006,12 @@
     "year": 1991,
     "category": "nature",
     "description": "A vast buried crater in Mexico was identified as the asteroid impact that doomed the dinosaurs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4e5660",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chicxulub-crater-confirmed_aeed9h?_a=BAMAMikS0"
   },
   {
     "name": "ardi-fossil-described",
@@ -629,7 +1019,12 @@
     "year": 2009,
     "category": "nature",
     "description": "Scientists unveiled Ardi, a 4.4-million-year-old skeleton revealing how early humans walked.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#1a212f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ardi-fossil-described_smsvgj?_a=BAMAMikS0"
   },
   {
     "name": "denisovans-identified",
@@ -637,7 +1032,12 @@
     "year": 2010,
     "category": "nature",
     "description": "DNA from a finger bone in Siberia revealed Denisovans, a previously unknown human cousin.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#182230",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/denisovans-identified_jsl33u?_a=BAMAMikS0"
   },
   {
     "name": "northern-white-rhino-decline",
@@ -645,6 +1045,11 @@
     "year": 2018,
     "category": "nature",
     "description": "Sudan, the last male northern white rhino, died, leaving the subspecies functionally extinct.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3e3340",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/northern-white-rhino-decline_i0ncmb?_a=BAMAMikS0"
   }
 ]

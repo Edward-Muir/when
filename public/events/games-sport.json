@@ -5,7 +5,12 @@
     "year": -3100,
     "category": "art",
     "description": "Egyptians played Senet, a race board game of squares thought to symbolize the soul's journey to the afterlife.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2e1c14",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/senet-board-game-egypt_ob4mlr?_a=BAMAMikS0"
   },
   {
     "name": "royal-game-of-ur",
@@ -13,7 +18,12 @@
     "year": -2600,
     "category": "empires",
     "description": "A two-player race game played in Mesopotamia, its inlaid boards were unearthed in the royal tombs of Ur.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/royal-game-of-ur_qq24p6?_a=BAMAMikS0"
   },
   {
     "name": "mehen-snake-game",
@@ -21,7 +31,12 @@
     "year": -3000,
     "category": "craft",
     "description": "Ancient Egyptians played Mehen on a spiral board shaped like a coiled snake, using marble pieces and lions.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#24211d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mehen-snake-game_m122tz?_a=BAMAMikS0"
   },
   {
     "name": "minoan-bull-leaping",
@@ -29,7 +44,12 @@
     "year": -1600,
     "category": "craft",
     "description": "Athletes on Bronze Age Crete vaulted over charging bulls, a ritual sport depicted in Minoan palace frescoes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#504641",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/minoan-bull-leaping_mexxce?_a=BAMAMikS0"
   },
   {
     "name": "egyptian-wrestling-beni-hasan",
@@ -37,7 +57,12 @@
     "year": -2000,
     "category": "art",
     "description": "Tomb walls at Beni Hasan show hundreds of wrestling holds, the earliest detailed record of the sport.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#5c3918",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-wrestling-beni-hasan_lg9sdw?_a=BAMAMikS0"
   },
   {
     "name": "first-ancient-olympics",
@@ -45,7 +70,12 @@
     "year": -776,
     "category": "commerce",
     "description": "Greeks held the first recorded Olympic Games at Olympia, honoring Zeus with footraces and athletic contests.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#3e3227",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-ancient-olympics_htxm6s?_a=BAMAMikS0"
   },
   {
     "name": "go-game-china",
@@ -53,7 +83,12 @@
     "year": -500,
     "category": "writing",
     "description": "The strategy board game Go, played with black and white stones on a grid, was established in ancient China.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/go-game-china_lv4ec1?_a=BAMAMikS0"
   },
   {
     "name": "pankration-added-olympics",
@@ -61,7 +96,12 @@
     "year": -648,
     "category": "craft",
     "description": "Greeks introduced pankration, a brutal mix of boxing and wrestling with almost no rules, to the Olympic Games.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#b98348",
+    "text_color": "dark",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pankration-added-olympics_dmtiw1?_a=BAMAMikS0"
   },
   {
     "name": "pythian-games-founded",
@@ -69,7 +109,12 @@
     "year": -582,
     "category": "commerce",
     "description": "Held at Delphi to honor Apollo, the Pythian Games joined the Olympics among Greece's great athletic festivals.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#241f28",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pythian-games-founded_rty0q6?_a=BAMAMikS0"
   },
   {
     "name": "knucklebones-astragaloi",
@@ -77,7 +122,12 @@
     "year": -800,
     "category": "craft",
     "description": "Greeks and Romans played knucklebones, tossing small animal ankle bones in a popular game of skill and chance.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3f291c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/knucklebones-astragaloi_ocky2y?_a=BAMAMikS0"
   },
   {
     "name": "mesoamerican-ballgame-rise",
@@ -85,7 +135,12 @@
     "year": -1400,
     "category": "craft",
     "description": "Olmec peoples played a ritual ball game with a heavy rubber ball, a tradition spanning Mesoamerican cultures.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#261f23",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mesoamerican-ballgame-rise_w8wuya?_a=BAMAMikS0"
   },
   {
     "name": "petteia-greek-board-game",
@@ -93,7 +148,12 @@
     "year": -500,
     "category": "craft",
     "description": "Greeks played petteia, a strategy game of capturing pieces on a board, an ancestor of later war games.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/petteia-greek-board-game_oc4oev?_a=BAMAMikS0"
   },
   {
     "name": "cuju-football-china",
@@ -101,7 +161,12 @@
     "year": -200,
     "category": "craft",
     "description": "Han dynasty China played cuju, a kicking ball game using a leather ball and a goal, an ancient form of football.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuju-football-china_l5bpy1?_a=BAMAMikS0"
   },
   {
     "name": "circus-maximus-races",
@@ -109,7 +174,12 @@
     "year": -329,
     "category": "empires",
     "description": "Rome's Circus Maximus hosted thundering chariot races before crowds of tens of thousands of spectators.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4e382f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/circus-maximus-races_ruyvpe?_a=BAMAMikS0"
   },
   {
     "name": "first-roman-gladiator-games",
@@ -117,7 +187,12 @@
     "year": -264,
     "category": "media",
     "description": "Romans staged their first gladiatorial combat as a funeral tribute, beginning centuries of arena spectacle.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#412b20",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-roman-gladiator-games_ranqxj?_a=BAMAMikS0"
   },
   {
     "name": "ludus-latrunculorum",
@@ -125,7 +200,12 @@
     "year": 100,
     "category": "craft",
     "description": "Romans played latrunculi, a two-player strategy board game of military maneuver popular across the empire.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ludus-latrunculorum_jap4z5?_a=BAMAMikS0"
   },
   {
     "name": "tabula-roman-backgammon",
@@ -133,7 +213,12 @@
     "year": 480,
     "category": "craft",
     "description": "Romans favored tabula, a dice-and-counters race game on a board that became the ancestor of backgammon.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2d1c19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tabula-roman-backgammon_gdugka?_a=BAMAMikS0"
   },
   {
     "name": "patolli-aztec-game",
@@ -141,7 +226,12 @@
     "year": 200,
     "category": "craft",
     "description": "Mesoamericans gambled on patolli, a race game on a cross-shaped board played with marked beans as dice.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2f1b19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/patolli-aztec-game_nnagql?_a=BAMAMikS0"
   },
   {
     "name": "chess-emerges-india",
@@ -149,7 +239,12 @@
     "year": 600,
     "category": "empires",
     "description": "The game chaturanga developed in India, evolving into chess with pieces representing the parts of an army.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#2c1e15",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chess-emerges-india_clx3lr?_a=BAMAMikS0"
   },
   {
     "name": "playing-cards-tang-china",
@@ -157,7 +252,12 @@
     "year": 868,
     "category": "writing",
     "description": "China developed the earliest playing cards during the Tang dynasty, spreading the games westward over centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2a1d1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/playing-cards-tang-china_oi3ati?_a=BAMAMikS0"
   },
   {
     "name": "hnefatafl-viking-game",
@@ -165,7 +265,12 @@
     "year": 700,
     "category": "craft",
     "description": "Norse peoples played hnefatafl, an asymmetric board game where a king sought escape from surrounding attackers.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#261f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hnefatafl-viking-game_t3ecaz?_a=BAMAMikS0"
   },
   {
     "name": "shogi-japan",
@@ -173,7 +278,12 @@
     "year": 1000,
     "category": "art",
     "description": "Japan developed shogi, a chess-like game in which captured pieces can be returned to the board to fight again.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2e1b1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shogi-japan_tq1o0g?_a=BAMAMikS0"
   },
   {
     "name": "xiangqi-chinese-chess",
@@ -181,7 +291,12 @@
     "year": 1100,
     "category": "empires",
     "description": "Xiangqi, Chinese chess played with a river dividing the board, took its classic form during the Song dynasty.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/xiangqi-chinese-chess_xbwaj2?_a=BAMAMikS0"
   },
   {
     "name": "byzantine-hippodrome-races",
@@ -189,7 +304,12 @@
     "year": 500,
     "category": "empires",
     "description": "Constantinople's Hippodrome hosted fierce chariot races whose fan factions even sparked deadly city riots.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4c392d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/byzantine-hippodrome-races_sqqg60?_a=BAMAMikS0"
   },
   {
     "name": "real-tennis-medieval",
@@ -197,7 +317,12 @@
     "year": 1200,
     "category": "art",
     "description": "French monks and nobles played jeu de paume, striking a ball by hand, the ancestor of modern racket tennis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/real-tennis-medieval_us2s35?_a=BAMAMikS0"
   },
   {
     "name": "mob-football-england",
@@ -205,7 +330,12 @@
     "year": 1200,
     "category": "agriculture",
     "description": "Medieval English villages played chaotic mob football, with whole crowds chasing a ball between settlements.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#513926",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mob-football-england_argc3z?_a=BAMAMikS0"
   },
   {
     "name": "scotland-bans-golf-1457",
@@ -213,7 +343,12 @@
     "year": 1457,
     "category": "law",
     "description": "Scotland's parliament banned golf and football so men would practice archery for national defense instead.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291e1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotland-bans-golf-1457_evw3kr?_a=BAMAMikS0"
   },
   {
     "name": "medieval-jousting-tournaments",
@@ -221,7 +356,12 @@
     "year": 1100,
     "category": "craft",
     "description": "European knights competed in jousting tournaments, charging on horseback with lances to unseat their rivals.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#281f18",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medieval-jousting-tournaments_peydlf?_a=BAMAMikS0"
   },
   {
     "name": "tarot-cards-italy",
@@ -229,7 +369,12 @@
     "year": 1440,
     "category": "writing",
     "description": "Italian courts created tarot decks with trump cards for trick-taking games long before they were used to divine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#222121",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tarot-cards-italy_bvqmsg?_a=BAMAMikS0"
   },
   {
     "name": "modern-chess-queen-rules",
@@ -237,7 +382,12 @@
     "year": 1475,
     "category": "law",
     "description": "European players gave the queen and bishop sweeping moves, creating the faster game of chess played today.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#271f1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/modern-chess-queen-rules_hmciqp?_a=BAMAMikS0"
   },
   {
     "name": "mary-queen-scots-billiards",
@@ -245,7 +395,12 @@
     "year": 1550,
     "category": "agriculture",
     "description": "Billiards moved from a lawn game to indoor tables in Europe, becoming a fashionable pastime of the nobility.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281f1b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mary-queen-scots-billiards_vi4dvc?_a=BAMAMikS0"
   },
   {
     "name": "first-recorded-cricket",
@@ -253,7 +408,12 @@
     "year": 1611,
     "category": "media",
     "description": "England produced the earliest clear records of cricket, a bat-and-ball game that grew from village contests.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#291f17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-recorded-cricket_fsq6qb?_a=BAMAMikS0"
   },
   {
     "name": "ascot-racecourse-founded",
@@ -261,7 +421,12 @@
     "year": 1711,
     "category": "commerce",
     "description": "Queen Anne founded Ascot racecourse near Windsor, beginning one of horse racing's most prestigious meetings.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ascot-racecourse-founded_mptmyv?_a=BAMAMikS0"
   },
   {
     "name": "first-boxing-rules-broughton",
@@ -269,7 +434,12 @@
     "year": 1743,
     "category": "law",
     "description": "English champion Jack Broughton drew up boxing's first rules, banning hitting a downed opponent in the ring.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291f19",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-boxing-rules-broughton_uvyfhn?_a=BAMAMikS0"
   },
   {
     "name": "jockey-club-founded",
@@ -277,7 +447,12 @@
     "year": 1750,
     "category": "commerce",
     "description": "Britain's Jockey Club formed to govern horse racing, standardizing rules for the rapidly growing sport.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#2a1e1a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jockey-club-founded_bvlawu?_a=BAMAMikS0"
   },
   {
     "name": "marylebone-cricket-club",
@@ -285,7 +460,12 @@
     "year": 1787,
     "category": "commerce",
     "description": "The Marylebone Cricket Club formed at Lord's in London, becoming the long-time guardian of cricket's laws.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#473822",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marylebone-cricket-club_c9eate?_a=BAMAMikS0"
   },
   {
     "name": "first-epsom-derby",
@@ -293,7 +473,12 @@
     "year": 1780,
     "category": "media",
     "description": "England ran the first Epsom Derby, a horse race for three-year-olds that became a model for derbies worldwide.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#463621",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-epsom-derby_ray8fx?_a=BAMAMikS0"
   },
   {
     "name": "snakes-and-ladders-india",
@@ -301,7 +486,12 @@
     "year": 1750,
     "category": "empires",
     "description": "India played a moral board game of virtues and vices that later spread worldwide as Snakes and Ladders.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2f1b13",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/snakes-and-ladders-india_rlkxzi?_a=BAMAMikS0"
   },
   {
     "name": "first-jigsaw-puzzle",
@@ -309,7 +499,12 @@
     "year": 1767,
     "category": "invention",
     "description": "Mapmaker John Spilsbury mounted a map on wood and cut it into pieces, inventing the educational jigsaw puzzle.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2b1e17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-jigsaw-puzzle_gxfxuj?_a=BAMAMikS0"
   },
   {
     "name": "checkers-draughts-standardized",
@@ -317,7 +512,12 @@
     "year": 1756,
     "category": "law",
     "description": "English writers codified the rules of draughts, the board game of jumping pieces known in America as checkers.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#291e1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/checkers-draughts-standardized_kog8zi?_a=BAMAMikS0"
   },
   {
     "name": "first-baseball-knickerbocker",
@@ -325,7 +525,12 @@
     "year": 1845,
     "category": "commerce",
     "description": "New York's Knickerbocker club wrote rules for baseball, shaping the diamond, bases, and play of the game.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d4a42",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-baseball-knickerbocker_vvut6a?_a=BAMAMikS0"
   },
   {
     "name": "first-modern-rugby",
@@ -333,7 +538,12 @@
     "year": 1845,
     "category": "commerce",
     "description": "Pupils at Rugby School in England wrote down rules for their handling form of football, founding the sport.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3c3430",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-modern-rugby_vizee7?_a=BAMAMikS0"
   },
   {
     "name": "queensberry-boxing-rules",
@@ -341,7 +551,12 @@
     "year": 1867,
     "category": "law",
     "description": "The Marquess of Queensberry rules introduced gloves and timed rounds, shaping the modern sport of boxing.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#464037",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/queensberry-boxing-rules_of4dkh?_a=BAMAMikS0"
   },
   {
     "name": "fa-football-rules-1863",
@@ -349,7 +564,12 @@
     "year": 1863,
     "category": "commerce",
     "description": "England's Football Association set unified rules for soccer, splitting it from the handling game of rugby.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#4f4f4c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fa-football-rules-1863_ctgtkc?_a=BAMAMikS0"
   },
   {
     "name": "first-kentucky-derby",
@@ -357,7 +577,12 @@
     "year": 1875,
     "category": "media",
     "description": "The first Kentucky Derby was run at Churchill Downs in Louisville, launching a famous American horse race.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3e3b36",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-kentucky-derby_totqfk?_a=BAMAMikS0"
   },
   {
     "name": "first-wimbledon-championship",
@@ -365,7 +590,12 @@
     "year": 1877,
     "category": "media",
     "description": "The All England Club held the first Wimbledon tennis tournament, the oldest of the game's major championships.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#514c3b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-wimbledon-championship_lafodl?_a=BAMAMikS0"
   },
   {
     "name": "first-test-cricket-match",
@@ -373,7 +603,12 @@
     "year": 1877,
     "category": "media",
     "description": "Australia and England met in the first international Test cricket match, played over several days in Melbourne.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#534531",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-test-cricket-match_gaztui?_a=BAMAMikS0"
   },
   {
     "name": "first-stanley-cup",
@@ -381,7 +616,12 @@
     "year": 1893,
     "category": "media",
     "description": "Canada first awarded the Stanley Cup to its top ice hockey team, beginning the sport's most coveted trophy.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212123",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-stanley-cup_tpqdhv?_a=BAMAMikS0"
   },
   {
     "name": "basketball-invented-naismith",
@@ -389,7 +629,12 @@
     "year": 1891,
     "category": "invention",
     "description": "James Naismith hung peach baskets in a Massachusetts gym and devised basketball as an indoor winter sport.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/basketball-invented-naismith_e275yf?_a=BAMAMikS0"
   },
   {
     "name": "volleyball-invented",
@@ -397,7 +642,12 @@
     "year": 1895,
     "category": "invention",
     "description": "William Morgan created volleyball in Massachusetts as a gentler indoor game blending tennis and handball.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#35332f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/volleyball-invented_apmjfy?_a=BAMAMikS0"
   },
   {
     "name": "ioc-founded-coubertin",
@@ -405,7 +655,12 @@
     "year": 1894,
     "category": "commerce",
     "description": "Pierre de Coubertin founded the International Olympic Committee in Paris to revive the ancient Olympic Games.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24201f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ioc-founded-coubertin_jbw9a1?_a=BAMAMikS0"
   },
   {
     "name": "first-boston-marathon",
@@ -413,7 +668,12 @@
     "year": 1897,
     "category": "media",
     "description": "Runners contested the first Boston Marathon, which became the world's oldest annual marathon footrace.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#47443d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-boston-marathon_iusgz1?_a=BAMAMikS0"
   },
   {
     "name": "first-tour-de-france",
@@ -421,7 +681,12 @@
     "year": 1903,
     "category": "media",
     "description": "Cyclists rode the first Tour de France, a grueling multi-stage race around the country to sell newspapers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d4130",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-tour-de-france_cfxpc6?_a=BAMAMikS0"
   },
   {
     "name": "fifa-founded",
@@ -429,7 +694,12 @@
     "year": 1904,
     "category": "commerce",
     "description": "Seven nations founded FIFA in Paris to govern international soccer and organize matches between countries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#342b1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fifa-founded_fgtipn?_a=BAMAMikS0"
   },
   {
     "name": "first-world-series",
@@ -437,7 +707,12 @@
     "year": 1903,
     "category": "media",
     "description": "Baseball's American and National Leagues met in the first World Series, won by the Boston Americans.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#252018",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-world-series_p9x6fl?_a=BAMAMikS0"
   },
   {
     "name": "first-indianapolis-500",
@@ -445,7 +720,12 @@
     "year": 1911,
     "category": "media",
     "description": "Cars raced 500 miles at the Indianapolis Motor Speedway in the first running of the famous American race.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#605943",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-indianapolis-500_ijzbrn?_a=BAMAMikS0"
   },
   {
     "name": "monopoly-board-game",
@@ -453,7 +733,12 @@
     "year": 1935,
     "category": "media",
     "description": "Parker Brothers launched Monopoly, the property-trading board game that became one of the best-selling ever.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#23211e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monopoly-board-game_zc39wj?_a=BAMAMikS0"
   },
   {
     "name": "first-world-cup-1930",
@@ -461,7 +746,12 @@
     "year": 1930,
     "category": "media",
     "description": "Uruguay hosted and won the first FIFA World Cup, launching soccer's premier international tournament.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#584835",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-world-cup-1930_vvltw5?_a=BAMAMikS0"
   },
   {
     "name": "babe-ruth-60-home-runs",
@@ -469,7 +759,12 @@
     "year": 1927,
     "category": "media",
     "description": "Babe Ruth hit 60 home runs in a single season for the Yankees, a baseball record that stood for decades.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#24211b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/babe-ruth-60-home-runs_z6fcdd?_a=BAMAMikS0"
   },
   {
     "name": "crossword-puzzle-published",
@@ -477,7 +772,12 @@
     "year": 1913,
     "category": "media",
     "description": "A New York newspaper printed the first crossword puzzle, sparking a craze for the word-grid game.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#25211a",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crossword-puzzle-published_gsyjfa?_a=BAMAMikS0"
   },
   {
     "name": "scrabble-invented",
@@ -485,7 +785,12 @@
     "year": 1938,
     "category": "invention",
     "description": "Alfred Butts designed the tile-based word game later sold as Scrabble, scoring points for words on a grid.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#272019",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scrabble-invented_ixbdfg?_a=BAMAMikS0"
   },
   {
     "name": "jesse-owens-four-golds",
@@ -493,7 +798,12 @@
     "year": 1936,
     "category": "revolution",
     "description": "American sprinter Jesse Owens won four gold medals at the Berlin Olympics, defying Nazi racial propaganda.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#463d2b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jesse-owens-four-golds_kttngg?_a=BAMAMikS0"
   },
   {
     "name": "jackie-robinson-mlb-debut",
@@ -501,7 +811,12 @@
     "year": 1947,
     "category": "media",
     "description": "Jackie Robinson debuted for the Brooklyn Dodgers, breaking Major League Baseball's racial color line.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#4d2813",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jackie-robinson-mlb-debut_l4cpqa?_a=BAMAMikS0"
   },
   {
     "name": "bannister-four-minute-mile",
@@ -509,7 +824,12 @@
     "year": 1954,
     "category": "media",
     "description": "Roger Bannister ran a mile in under four minutes in Oxford, breaking a barrier long thought impossible.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#373c41",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bannister-four-minute-mile_yyi6ls?_a=BAMAMikS0"
   },
   {
     "name": "first-summer-paralympics",
@@ -517,7 +837,12 @@
     "year": 1960,
     "category": "media",
     "description": "Rome hosted the first Paralympic Games for athletes with disabilities, held just after the Summer Olympics.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-summer-paralympics_gxslxy?_a=BAMAMikS0"
   },
   {
     "name": "pele-first-world-cup-win",
@@ -525,7 +850,12 @@
     "year": 1958,
     "category": "media",
     "description": "A teenage Pele starred as Brazil won the 1958 World Cup in Sweden, announcing one of soccer's greatest players.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#43433f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pele-first-world-cup-win_smxm0r?_a=BAMAMikS0"
   },
   {
     "name": "ali-defeats-liston",
@@ -533,7 +863,12 @@
     "year": 1964,
     "category": "warfare",
     "description": "Cassius Clay, soon known as Muhammad Ali, upset Sonny Liston to win the world heavyweight boxing title.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1d2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ali-defeats-liston_xc33bl?_a=BAMAMikS0"
   },
   {
     "name": "rubiks-cube-invented",
@@ -541,7 +876,12 @@
     "year": 1974,
     "category": "invention",
     "description": "Hungarian Erno Rubik built a twisting cube of colored squares that became a hugely popular puzzle toy.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#686c69",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubiks-cube-invented_plktiy?_a=BAMAMikS0"
   },
   {
     "name": "dungeons-and-dragons-released",
@@ -549,7 +889,12 @@
     "year": 1974,
     "category": "media",
     "description": "Gygax and Arneson published Dungeons & Dragons, the first tabletop role-playing game guided by dice and rules.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#221f2b",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dungeons-and-dragons-released_tonf4y?_a=BAMAMikS0"
   },
   {
     "name": "billie-jean-king-battle-sexes",
@@ -557,7 +902,12 @@
     "year": 1973,
     "category": "warfare",
     "description": "Billie Jean King beat Bobby Riggs in a televised tennis match billed as a contest between the sexes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#3a3843",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/billie-jean-king-battle-sexes_fkahte?_a=BAMAMikS0"
   },
   {
     "name": "fischer-spassky-world-chess",
@@ -565,7 +915,12 @@
     "year": 1972,
     "category": "warfare",
     "description": "American Bobby Fischer defeated Boris Spassky in Reykjavik to win the world chess title amid Cold War tension.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1f2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fischer-spassky-world-chess_dvf2xj?_a=BAMAMikS0"
   },
   {
     "name": "nadia-comaneci-perfect-ten",
@@ -573,7 +928,12 @@
     "year": 1976,
     "category": "media",
     "description": "Gymnast Nadia Comaneci earned the first perfect score of 10 at the Olympics, in Montreal at age fourteen.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#202126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nadia-comaneci-perfect-ten_lnsttl?_a=BAMAMikS0"
   },
   {
     "name": "miracle-on-ice",
@@ -581,7 +941,12 @@
     "year": 1980,
     "category": "warfare",
     "description": "A US college hockey team upset the Soviet squad at the Lake Placid Winter Olympics in a Cold War shock.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#252229",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/miracle-on-ice_yefvdj?_a=BAMAMikS0"
   },
   {
     "name": "trivial-pursuit-launched",
@@ -589,7 +954,12 @@
     "year": 1981,
     "category": "media",
     "description": "Two Canadians launched Trivial Pursuit, a board game of general-knowledge questions that became a sensation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e2126",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trivial-pursuit-launched_qymjvl?_a=BAMAMikS0"
   },
   {
     "name": "deep-blue-beats-kasparov",
@@ -597,7 +967,12 @@
     "year": 1997,
     "category": "media",
     "description": "IBM's Deep Blue defeated world champion Garry Kasparov, the first computer to beat a top human at chess.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#202028",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/deep-blue-beats-kasparov_qg9z5x?_a=BAMAMikS0"
   },
   {
     "name": "tiger-woods-first-masters",
@@ -605,7 +980,12 @@
     "year": 1997,
     "category": "media",
     "description": "Tiger Woods won the Masters golf tournament by a record margin, the first Black golfer to take the title.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#454a2f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tiger-woods-first-masters_iyfucl?_a=BAMAMikS0"
   },
   {
     "name": "settlers-of-catan-released",
@@ -613,7 +993,12 @@
     "year": 1995,
     "category": "media",
     "description": "Klaus Teuber's Settlers of Catan launched in Germany, sparking a global revival of modern board gaming.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#212124",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/settlers-of-catan-released_jqrmgr?_a=BAMAMikS0"
   },
   {
     "name": "alphago-beats-lee-sedol",
@@ -621,7 +1006,12 @@
     "year": 2016,
     "category": "media",
     "description": "DeepMind's AlphaGo defeated Go champion Lee Sedol, mastering a game long thought too complex for computers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#1e2127",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alphago-beats-lee-sedol_ikfwzy?_a=BAMAMikS0"
   },
   {
     "name": "usain-bolt-world-record",
@@ -629,7 +1019,12 @@
     "year": 2009,
     "category": "media",
     "description": "Jamaican sprinter Usain Bolt ran the 100 metres in 9.58 seconds in Berlin, a world record that still stands.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#0e203e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/usain-bolt-world-record_hza50b?_a=BAMAMikS0"
   },
   {
     "name": "wii-motion-gaming",
@@ -637,6 +1032,11 @@
     "year": 2006,
     "category": "media",
     "description": "Nintendo's Wii used a motion-sensing controller for sports and active games, broadening the gaming audience.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "color": "#152338",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wii-motion-gaming_vijvay?_a=BAMAMikS0"
   }
 ]
