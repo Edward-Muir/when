@@ -1,0 +1,12 @@
+# Large non-build dirs that overwhelm `vercel dev`'s file watcher (chokidar 4 on macOS)
+# → `spawn EBADF` → NO_RESPONSE_FROM_FUNCTION 502. None are part of the web build or
+# the serverless functions, so excluding them is safe for dev and deploy.
+venv/
+experiments/
+
+# Not needed for the web build or serverless functions
+docs/
+ios/
+android/
+tools/
+*.log
