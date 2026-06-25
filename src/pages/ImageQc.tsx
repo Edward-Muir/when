@@ -193,11 +193,11 @@ const ImageQc: React.FC = () => {
                 )}
               </div>
               <div className="mt-4 flex items-start justify-between gap-3">
-                <div>
-                  <h2 className="font-display text-xl font-bold text-text">
+                <div className="min-w-0">
+                  <h2 className="line-clamp-2 min-h-[3.25rem] font-display text-lg font-bold leading-snug text-text">
                     {current.friendly_name}
                   </h2>
-                  <p className="mt-1 font-mono text-sm text-text/60">
+                  <p className="mt-1 truncate font-mono text-sm text-text/60">
                     {current.year} · {current.name}
                   </p>
                 </div>
@@ -239,16 +239,18 @@ const ImageQc: React.FC = () => {
                 <button
                   onClick={goBack}
                   disabled={pos === 0}
-                  className="flex items-center gap-1 rounded-xl border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:bg-border active:scale-95 disabled:opacity-40"
+                  aria-label="Back"
+                  className="flex items-center justify-center rounded-xl border border-border bg-surface px-5 py-3 text-text transition-colors hover:bg-border active:scale-95 disabled:opacity-40"
                 >
-                  <ChevronLeft className="h-4 w-4" /> Back
+                  <ChevronLeft className="h-7 w-7" />
                 </button>
                 <button
                   onClick={goForward}
                   disabled={pos >= queue.length}
-                  className="flex items-center gap-1 rounded-xl border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:bg-border active:scale-95 disabled:opacity-40"
+                  aria-label="Forward"
+                  className="flex items-center justify-center rounded-xl border border-border bg-surface px-5 py-3 text-text transition-colors hover:bg-border active:scale-95 disabled:opacity-40"
                 >
-                  Forward <ChevronRight className="h-4 w-4" />
+                  <ChevronRight className="h-7 w-7" />
                 </button>
               </div>
               <button
