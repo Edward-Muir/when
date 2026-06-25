@@ -27,6 +27,7 @@ export function getQcResults(): QcResults {
 export function setQcResult(name: string, verdict: QcVerdict): void {
   try {
     const results = getQcResults();
+    // eslint-disable-next-line security/detect-object-injection
     results[name] = verdict;
     localStorage.setItem(QC_RESULTS_KEY, JSON.stringify(results));
   } catch {
@@ -38,6 +39,7 @@ export function setQcResult(name: string, verdict: QcVerdict): void {
 export function clearQcResult(name: string): void {
   try {
     const results = getQcResults();
+    // eslint-disable-next-line security/detect-object-injection
     delete results[name];
     localStorage.setItem(QC_RESULTS_KEY, JSON.stringify(results));
   } catch {

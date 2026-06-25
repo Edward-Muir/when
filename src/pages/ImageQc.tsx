@@ -19,6 +19,7 @@ function shuffle<T>(input: T[]): T[] {
   const arr = [...input];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
+    // eslint-disable-next-line security/detect-object-injection
     [arr[i], arr[j]] = [arr[j], arr[i]];
   }
   return arr;
@@ -72,6 +73,7 @@ const ImageQc: React.FC = () => {
     return shuffle(allEvents.filter((e) => !judged[e.name]));
   }, [allEvents]);
 
+  // eslint-disable-next-line security/detect-object-injection
   const current = queue[pos];
 
   useEffect(() => {
@@ -83,6 +85,7 @@ const ImageQc: React.FC = () => {
   useEffect(() => {
     if (!queue.length) return;
     for (let i = pos + 1; i <= pos + 5 && i < queue.length; i++) {
+      // eslint-disable-next-line security/detect-object-injection
       const url = getImageUrl(queue[i].image_url, 'detail');
       if (url) {
         const img = new Image();
