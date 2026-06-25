@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.11.2](https://github.com/Edward-Muir/when/compare/v0.11.1...v0.11.2) (2026-06-25)
+
+
+### Features
+
+* Improve QC page ([45b868f](https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a))
+
 ## [0.11.1](https://github.com/Edward-Muir/when/compare/v0.11.0...v0.11.1) (2026-06-25)
 
 

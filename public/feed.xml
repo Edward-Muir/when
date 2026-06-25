@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 22:02:51 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 22:04:58 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v0.11.2</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v0.11.2</guid>
+      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Improve QC page (<a href="https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a">45b868f</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v0.11.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.10.15</guid>
       <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>UX polish (<a href="https://github.com/Edward-Muir/when/commit/b68785a0da0f13554c8ac0a92512f34579de9eca">b68785a</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.10.14</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.10.14</guid>
-      <pubDate>Thu, 28 May 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix zoom issue and title cutoff (<a href="https://github.com/Edward-Muir/when/commit/841b3c6c044d523fc264fccce05a629522334bfb">841b3c6</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
