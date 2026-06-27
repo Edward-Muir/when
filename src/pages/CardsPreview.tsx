@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { ACHIEVEMENTS } from '../data/achievements';
 import AchievementCard from '../components/AchievementCard';
 import { useTheme } from '../hooks/useTheme';
+import { loadAllEvents } from '../utils/eventLoader';
+import { buildEventsByName } from '../utils/statsStorage';
+import type { HistoricalEvent } from '../types';
 
 type Mode = 'mixed' | 'unlocked' | 'locked';
 
@@ -14,6 +17,13 @@ type Mode = 'mixed' | 'unlocked' | 'locked';
 const CardsPreview: React.FC = () => {
   const { isDark, toggleTheme } = useTheme();
   const [mode, setMode] = useState<Mode>('mixed');
+
+  // Card art is resolved from the linked event, so load the catalogue once and pass
+  // the name->event map down. Undefined until loaded → cards render without art.
+  const [eventsByName, setEventsByName] = useState<Map<string, HistoricalEvent>>();
+  useEffect(() => {
+    loadAllEvents().then((events) => setEventsByName(buildEventsByName(events)));
+  }, []);
 
   // In "mixed" mode, treat every other badge as unlocked so both states show together.
   const isUnlocked = (index: number) => {
@@ -32,7 +42,12 @@ const CardsPreview: React.FC = () => {
         <h2 className="mb-3 font-display text-lg font-bold text-text">{title}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {items.map((a) => (
-            <AchievementCard key={a.id} achievement={a} unlocked={unlocked.includes(a)} />
+            <AchievementCard
+              key={a.id}
+              achievement={a}
+              unlocked={unlocked.includes(a)}
+              eventsByName={eventsByName}
+            />
           ))}
         </div>
       </section>

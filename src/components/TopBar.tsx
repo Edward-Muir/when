@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, Share2 } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import {
+  Sun,
+  Moon,
+  Home,
+  Menu as MenuIcon,
+  SlidersHorizontal,
+  Share2,
+  BarChart3,
+  Trophy,
+} from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
 import { useVersionCheck } from '../hooks/useVersionCheck';
@@ -18,6 +28,8 @@ interface TopBarProps {
   onFilterClick?: () => void;
   onViewTimeline?: () => void;
   dailyTheme?: string;
+  /** Home screen only: show Stats + Achievements buttons (navigate to their pages). */
+  showStatsAchievements?: boolean;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -29,8 +41,10 @@ const TopBar: React.FC<TopBarProps> = ({
   onFilterClick,
   onViewTimeline,
   dailyTheme,
+  showStatsAchievements = false,
 }) => {
   const { isDark, toggleTheme } = useTheme();
+  const navigate = useNavigate();
   const { updateAvailable } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,6 +99,26 @@ const TopBar: React.FC<TopBarProps> = ({
             <button onClick={handleShare} className={buttonClass} aria-label="Share app">
               <Share2 className={iconClass} />
             </button>
+
+            {/* Stats + Achievements - home screen only */}
+            {showStatsAchievements && (
+              <>
+                <button
+                  onClick={() => navigate('/stats')}
+                  className={buttonClass}
+                  aria-label="View stats"
+                >
+                  <BarChart3 className={iconClass} />
+                </button>
+                <button
+                  onClick={() => navigate('/achievements')}
+                  className={buttonClass}
+                  aria-label="View achievements"
+                >
+                  <Trophy className={iconClass} />
+                </button>
+              </>
+            )}
 
             {/* Theme Toggle */}
             <button

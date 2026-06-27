@@ -89,6 +89,7 @@ function App({
     showDescriptionPopup,
     showGameOverPopup,
     dismissPopup,
+    newlyUnlockedAchievements,
   } = useWhenGame();
 
   // Auto-start daily game when accessed via /daily route
@@ -163,6 +164,8 @@ function App({
           dismissPopup={dismissPopup}
           onRestart={restartGame}
           onNewGame={handlePlayAgain}
+          newlyUnlockedAchievements={newlyUnlockedAchievements}
+          allEvents={allEvents}
         />
       )}
     </AnimatePresence>

@@ -124,6 +124,8 @@ export interface WhenGameState {
   phase: GamePhase;
   gameMode: GameMode | null;
   timeline: HistoricalEvent[];
+  /** `name` of the initial seed event (excluded from per-game placement counts). */
+  seedEventName?: string;
   deck: HistoricalEvent[];
   placementHistory: boolean[];
   lastPlacementResult: PlacementResult | null;

@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import {
   HistoricalEvent,
   WhenGameState,
@@ -13,6 +13,7 @@ import {
   filterByEra,
 } from '../utils/eventLoader';
 import { saveDailyResult } from '../utils/playerStorage';
+import { buildEventsByName, recordGameResult } from '../utils/statsStorage';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
@@ -48,12 +49,15 @@ interface UseWhenGameReturn {
   showDescriptionPopup: (event: HistoricalEvent) => void;
   showGameOverPopup: () => void;
   dismissPopup: () => void;
+  /** Achievement ids unlocked by the most recently recorded game (for Phase 5 UI). */
+  newlyUnlockedAchievements: string[];
 }
 
 const initialState: WhenGameState = {
   phase: 'loading',
   gameMode: null,
   timeline: [],
+  seedEventName: undefined,
   deck: [],
   placementHistory: [],
   lastPlacementResult: null,
@@ -121,6 +125,24 @@ export function useWhenGame(): UseWhenGameReturn {
 
   useSaveDailyResult(state);
 
+  // Record every finished game into stats + unlock achievements. Unlike the daily save
+  // (idempotent by overwrite), this increments counters, so a ref guards once-per-game.
+  const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
+  const recordedRef = useRef(false);
+  const [newlyUnlockedAchievements, setNewlyUnlockedAchievements] = useState<string[]>([]);
+  useEffect(() => {
+    if (state.phase !== 'gameOver') {
+      recordedRef.current = false;
+      return;
+    }
+    if (recordedRef.current || eventsByName.size === 0) return;
+    recordedRef.current = true;
+    const unlocked = recordGameResult(state, eventsByName);
+    // Always set (empty when nothing new) so a later game doesn't re-surface a prior game's unlocks.
+    setNewlyUnlockedAchievements(unlocked);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- `state` read once per game, ref-guarded
+  }, [state.phase, eventsByName]);
+
   const startGame = useCallback(
     (config: GameConfig) => {
       const {
@@ -175,6 +197,7 @@ export function useWhenGame(): UseWhenGameReturn {
         phase: 'transitioning',
         gameMode: mode,
         timeline: timelineEvents,
+        seedEventName: shuffled[0].name,
         players,
         currentPlayerIndex: 0,
         turnNumber: 1,
@@ -456,5 +479,6 @@ export function useWhenGame(): UseWhenGameReturn {
     showDescriptionPopup,
     showGameOverPopup,
     dismissPopup,
+    newlyUnlockedAchievements,
   };
 }

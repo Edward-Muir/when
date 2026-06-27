@@ -1,12 +1,19 @@
 import React from 'react';
 import { Lock } from 'lucide-react';
 import type { AchievementDef } from '../data/achievements';
+import type { HistoricalEvent } from '../types';
 import { TIER_STYLES, LOCKED_RING } from '../data/achievementTiers';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
 interface AchievementCardProps {
   achievement: AchievementDef;
   unlocked: boolean;
+  /**
+   * Event catalogue keyed by `name`. The card's art is resolved from the linked
+   * event (`achievement.eventName`) so the image URL has a single source of truth
+   * (the event JSON). Undefined while the catalogue is still loading → no image.
+   */
+  eventsByName?: Map<string, HistoricalEvent>;
 }
 
 /**
@@ -16,9 +23,14 @@ interface AchievementCardProps {
  *
  * Session 1 is visual-only; real unlock state gets wired in later.
  */
-const AchievementCard: React.FC<AchievementCardProps> = ({ achievement, unlocked }) => {
+const AchievementCard: React.FC<AchievementCardProps> = ({
+  achievement,
+  unlocked,
+  eventsByName,
+}) => {
   const tier = TIER_STYLES[achievement.tier];
-  const imageSrc = getImageUrl(achievement.imageUrl, 'detail');
+  const event = eventsByName?.get(achievement.eventName);
+  const imageSrc = getImageUrl(event?.image_url, 'detail');
 
   return (
     <div className="flex flex-col items-center text-center rounded-2xl border border-border bg-surface/60 backdrop-blur-md shadow-sm px-3 pt-3 pb-4">

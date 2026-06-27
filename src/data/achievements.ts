@@ -30,10 +30,9 @@ export interface AchievementDef {
   tier: AchievementTier;
   /** The "how to unlock" line shown on the card. */
   unlockCriteria: string;
-  /** Stable event `name` (kept for wiring real unlock logic later). */
+  /** Stable event `name`. The card art is resolved from this event so the image URL
+   *  has a single source of truth (the event JSON). */
   eventName: string;
-  /** Raw Cloudinary event-art URL; run through getImageUrl() before display. */
-  imageUrl: string;
 }
 
 export const ACHIEVEMENTS: AchievementDef[] = [
@@ -44,8 +43,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'none',
     unlockCriteria: 'Play your 1st game',
     eventName: 'moon-landing',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moon-landing_olbhii?_a=BAMAMiiu0',
   },
   {
     id: '02',
@@ -54,8 +51,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'bronze',
     unlockCriteria: 'Play 10 games',
     eventName: 'first-olympics',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-olympics_rlacqv?_a=BAMAMiiu0',
   },
   {
     id: '03',
@@ -64,8 +59,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'silver',
     unlockCriteria: 'Play 50 games',
     eventName: 'angkor-wat-temple',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-temple_blu2gs?_a=BAMAMiiu0',
   },
   {
     id: '04',
@@ -74,8 +67,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Play 100 games',
     eventName: 'colosseum-completed',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/colosseum-completed_synpwn?_a=BAMAMiiu0',
   },
   {
     id: '05',
@@ -84,8 +75,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'bronze',
     unlockCriteria: 'Place 100 events correctly',
     eventName: 'great-wall-begins',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-wall-begins_so9bxm?_a=BAMAMiiu0',
   },
   {
     id: '06',
@@ -94,8 +83,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'silver',
     unlockCriteria: 'Place 500 events correctly',
     eventName: 'pyramids',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pyramids_gqlrge?_a=BAMAMiiu0',
   },
   {
     id: '07',
@@ -104,88 +91,177 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Place 1,000 events correctly',
     eventName: 'step-pyramid-djoser',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/step-pyramid-djoser_cucfih?_a=BAMAMiiu0',
   },
   {
     id: '08',
     name: 'Polymath',
     family: 'Collection',
     tier: 'gold',
-    unlockCriteria: 'Place an event in all 7 categories',
+    unlockCriteria: 'Place an event in all 20 categories',
     eventName: 'leonardo-mona-lisa',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leonardo-mona-lisa_rgz72q?_a=BAMAMiiu0',
   },
+  // Each category badge links to a recognizable event of that category (art derives
+  // from the event JSON via eventName). Ids MUST stay `cat-<category>` to match the
+  // generated ACHIEVEMENT_TESTS in achievementLogic.ts.
   {
-    id: '09',
-    name: 'Category Buff: Conflict',
+    id: 'cat-empires',
+    name: 'Imperator',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Conflict events',
-    eventName: 'battle-marathon',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-marathon_soclqv?_a=BAMAMiiu0',
+    unlockCriteria: 'Place 20 Empires events',
+    eventName: 'roman-empire-founded',
   },
   {
-    id: '10',
-    name: 'Category Buff: Cultural',
+    id: 'cat-revolution',
+    name: 'Firebrand',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Cultural events',
-    eventName: 'printing-press-revolution',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-press-revolution_kaudvb?_a=BAMAMiiu0',
+    unlockCriteria: 'Place 20 Revolution events',
+    eventName: 'tiananmen-square',
   },
   {
-    id: '11',
-    name: 'Category Buff: Diplomatic',
+    id: 'cat-architecture',
+    name: 'Architect',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Diplomatic events',
-    eventName: 'magna-carta',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magna-carta_n1rc9i?_a=BAMAMiiu0',
+    unlockCriteria: 'Place 20 Architecture events',
+    eventName: 'taj-mahal-completed',
   },
   {
-    id: '12',
-    name: 'Category Buff: Disasters',
+    id: 'cat-writing',
+    name: 'Wordsmith',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Disasters events',
-    eventName: 'pompeii',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pompeii_mmd3nh?_a=BAMAMiiu0',
+    unlockCriteria: 'Place 20 Writing events',
+    eventName: 'frankenstein-published',
   },
   {
-    id: '13',
-    name: 'Category Buff: Exploration',
+    id: 'cat-invention',
+    name: 'Inventor',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Exploration events',
-    eventName: 'wright-brothers-flight',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wright-brothers-flight_bwni0n?_a=BAMAMiiu0',
+    unlockCriteria: 'Place 20 Invention events',
+    eventName: 'wheel-invented',
   },
   {
-    id: '14',
-    name: 'Category Buff: Infrastructure',
+    id: 'cat-figures',
+    name: 'Luminary',
     family: 'Collection',
     tier: 'steel',
-    unlockCriteria: 'Place 5 Infrastructure events',
-    eventName: 'eiffel-tower',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eiffel-tower_hmglcq?_a=BAMAMiiu0',
-  },
-  {
-    id: '15',
-    name: 'Category Buff: People',
-    family: 'Collection',
-    tier: 'steel',
-    unlockCriteria: 'Place 5 People events',
+    unlockCriteria: 'Place 20 Figures events',
     eventName: 'shakespeare-born',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/shakespeare-born_nwygy0?_a=BAMAMiiu0',
+  },
+  {
+    id: 'cat-media',
+    name: 'Trendsetter',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Media events',
+    eventName: 'instagram-launched',
+  },
+  {
+    id: 'cat-craft',
+    name: 'Artisan',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Craft events',
+    eventName: 'chain-mail-evolution',
+  },
+  {
+    id: 'cat-diplomacy',
+    name: 'Diplomat',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Diplomacy events',
+    eventName: 'swiss-confederation',
+  },
+  {
+    id: 'cat-disasters',
+    name: 'Survivor',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Disasters events',
+    eventName: 'titanic-disaster',
+  },
+  {
+    id: 'cat-commerce',
+    name: 'Tycoon',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Commerce events',
+    eventName: 'google-founded',
+  },
+  {
+    id: 'cat-law',
+    name: 'Magistrate',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Law events',
+    eventName: 'magna-carta',
+  },
+  {
+    id: 'cat-agriculture',
+    name: 'Cultivator',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Agriculture events',
+    eventName: 'domestication-cattle',
+  },
+  {
+    id: 'cat-warfare',
+    name: 'Warmonger',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Warfare events',
+    eventName: 'd-day',
+  },
+  {
+    id: 'cat-science',
+    name: 'Empiricist',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Science events',
+    eventName: 'periodic-table',
+  },
+  {
+    id: 'cat-trade',
+    name: 'Navigator',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Trade events',
+    eventName: 'panama-canal',
+  },
+  {
+    id: 'cat-migration',
+    name: 'Wayfarer',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Migration events',
+    eventName: 'columbus-americas',
+  },
+  {
+    id: 'cat-art',
+    name: 'Maestro',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Art events',
+    eventName: 'van-gogh-starry-night',
+  },
+  {
+    id: 'cat-medicine',
+    name: 'Physician',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Medicine events',
+    eventName: 'florence-nightingale-crimea',
+  },
+  {
+    id: 'cat-nature',
+    name: 'Naturalist',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Nature events',
+    eventName: 'earth-formation',
   },
   {
     id: '16',
@@ -194,18 +270,14 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'verdigris',
     unlockCriteria: 'Place an event older than 1000 BCE',
     eventName: 'battle-megiddo',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-megiddo_b8ke6w?_a=BAMAMiiu0',
   },
   {
     id: '17',
     name: 'Across the Ages',
     family: 'Collection',
     tier: 'gold',
-    unlockCriteria: 'Place events spanning many centuries',
+    unlockCriteria: 'Place an event in every century from the 1st to the 21st',
     eventName: 'great-wall-china',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-wall-china_xtcx8z?_a=BAMAMiiu0',
   },
   {
     id: '18',
@@ -214,58 +286,46 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'obsidian',
     unlockCriteria: 'Place 10 very-hard events',
     eventName: 'everest',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/everest_gqjhcl?_a=BAMAMiiu0',
   },
   {
     id: '19',
     name: 'On a Roll',
     family: 'Streak',
     tier: 'bronze',
-    unlockCriteria: 'In-game streak of 5',
+    unlockCriteria: 'In-game streak of 5 (Daily only)',
     eventName: 'blitzkrieg-tactics-deployed',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blitzkrieg-tactics-deployed_igse4f?_a=BAMAMiiu0',
   },
   {
     id: '20',
     name: 'Momentum',
     family: 'Streak',
     tier: 'copper',
-    unlockCriteria: 'In-game streak of 10',
+    unlockCriteria: 'In-game streak of 10 (Daily only)',
     eventName: 'genghis-khan',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genghis-khan_kvlsgi?_a=BAMAMiiu0',
   },
   {
     id: '21',
     name: 'Rampage',
     family: 'Streak',
     tier: 'silver',
-    unlockCriteria: 'In-game streak of 15',
+    unlockCriteria: 'In-game streak of 15 (Daily only)',
     eventName: 'alexander-empire',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-empire_duesbg?_a=BAMAMiiu0',
   },
   {
     id: '22',
     name: 'Juggernaut',
     family: 'Streak',
     tier: 'gold',
-    unlockCriteria: 'In-game streak of 20',
+    unlockCriteria: 'In-game streak of 20 (Daily only)',
     eventName: 'napoleon-emperor',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napoleon-emperor_owadjr?_a=BAMAMiiu0',
   },
   {
     id: '23',
     name: 'Unstoppable',
     family: 'Streak',
     tier: 'platinum',
-    unlockCriteria: 'In-game streak of 25',
+    unlockCriteria: 'In-game streak of 25 (Daily only)',
     eventName: 'charlemagne',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charlemagne_uodxna?_a=BAMAMiiu0',
   },
   {
     id: '24',
@@ -274,8 +334,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'bronze',
     unlockCriteria: 'Daily streak of 3 days',
     eventName: 'monets-impression-sunrise',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monets-impression-sunrise_xvobz6?_a=BAMAMiiu0',
   },
   {
     id: '25',
@@ -284,8 +342,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'silver',
     unlockCriteria: 'Daily streak of 7 days',
     eventName: 'mayan-written-calendar',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mayan-written-calendar_di0dm3?_a=BAMAMiiu0',
   },
   {
     id: '26',
@@ -294,8 +350,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Daily streak of 30 days',
     eventName: 'maya-astronomical-calendar',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maya-astronomical-calendar_mcjyty?_a=BAMAMiiu0',
   },
   {
     id: '27',
@@ -304,8 +358,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'diamond',
     unlockCriteria: 'Daily streak of 100 days',
     eventName: 'russia-anno-domini',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/russia-anno-domini_tonm54?_a=BAMAMiiu0',
   },
   {
     id: '28',
@@ -314,8 +366,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'bronze',
     unlockCriteria: 'Best single game of 10 correct',
     eventName: 'sundial-invented',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sundial-invented_mbbrtd?_a=BAMAMiiu0',
   },
   {
     id: '29',
@@ -324,8 +374,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'copper',
     unlockCriteria: 'Best single game of 15 correct',
     eventName: 'water-clock',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-clock_oz4lsm?_a=BAMAMiiu0',
   },
   {
     id: '30',
@@ -334,8 +382,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'silver',
     unlockCriteria: 'Best single game of 20 correct',
     eventName: 'incense-clock',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/incense-clock_b6i1fe?_a=BAMAMiiu0',
   },
   {
     id: '31',
@@ -344,8 +390,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Best single game of 25 correct',
     eventName: 'mechanical-clock',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mechanical-clock_iqit2c?_a=BAMAMiiu0',
   },
   {
     id: '32',
@@ -354,8 +398,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'platinum',
     unlockCriteria: 'Best single game of 30 correct',
     eventName: 'pendulum-clock',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pendulum-clock_ecwxh1?_a=BAMAMiiu0',
   },
   {
     id: '33',
@@ -364,8 +406,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Play on 50 distinct days',
     eventName: 'tennis-court-oath',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tennis-court-oath_ttwebk?_a=BAMAMiiu0',
   },
   {
     id: '34',
@@ -374,8 +414,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'bronze',
     unlockCriteria: 'Place 80 easy events',
     eventName: 'hot-air-balloon',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hot-air-balloon_aby468?_a=BAMAMiiu0',
   },
   {
     id: '35',
@@ -384,8 +422,6 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'silver',
     unlockCriteria: 'Place 40 medium events',
     eventName: 'domestication-horses',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-horses_ud21qx?_a=BAMAMiiu0',
   },
   {
     id: '36',
@@ -394,7 +430,5 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Place 20 hard events',
     eventName: 'hannibal-crosses-alps',
-    imageUrl:
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hannibal-crosses-alps_wbh7cz?_a=BAMAMiiu0',
   },
 ];

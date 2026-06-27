@@ -9,6 +9,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Support from './pages/Support';
 import CardsPreview from './pages/CardsPreview';
+import Achievements from './pages/Achievements';
+import Stats from './pages/Stats';
 import ImageQc from './pages/ImageQc';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
@@ -25,6 +27,8 @@ root.render(
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/support" element={<Support />} />
         <Route path="/cards-preview" element={<CardsPreview />} />
+        <Route path="/stats" element={<Stats />} />
+        <Route path="/achievements" element={<Achievements />} />
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

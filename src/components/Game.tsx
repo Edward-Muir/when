@@ -29,7 +29,10 @@ import TopBar from './TopBar';
 import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
+import AchievementUnlock from './AchievementUnlock';
 import { getStreakFeedback } from '../utils/streakFeedback';
+import { ACHIEVEMENTS } from '../data/achievements';
+import { buildEventsByName } from '../utils/statsStorage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
@@ -86,6 +89,8 @@ interface GameProps {
   dismissPopup: () => void;
   onRestart: () => void;
   onNewGame: () => void;
+  newlyUnlockedAchievements: string[];
+  allEvents: HistoricalEvent[];
 }
 
 const Game: React.FC<GameProps> = ({
@@ -98,6 +103,8 @@ const Game: React.FC<GameProps> = ({
   dismissPopup,
   onRestart,
   onNewGame,
+  newlyUnlockedAchievements,
+  allEvents,
 }) => {
   const [showConfetti, setShowConfetti] = useState(false);
   const [newEventName, setNewEventName] = useState<string | undefined>(undefined);
@@ -106,6 +113,23 @@ const Game: React.FC<GameProps> = ({
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
   const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
+  const [showUnlock, setShowUnlock] = useState(false);
+
+  // Catalogue keyed by name so unlocked badges can resolve their art (reuses loaded events).
+  const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
+
+  // Resolve the unlocked ids to badge defs (skip any id without a card).
+  const unlockedDefs = useMemo(
+    () =>
+      newlyUnlockedAchievements
+        .map((id) => ACHIEVEMENTS.find((a) => a.id === id))
+        .filter((def): def is (typeof ACHIEVEMENTS)[number] => def !== undefined),
+    [newlyUnlockedAchievements]
+  );
+
+  // Detect the game-over popup → null transition to reveal the unlock modal once per game.
+  const prevPopupTypeRef = useRef(pendingPopup?.type);
+  const unlockConsumedRef = useRef(false);
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -184,8 +208,27 @@ const Game: React.FC<GameProps> = ({
     // Reset when starting a new game
     if (state.phase === 'playing') {
       setGameOverPopupShown(false);
+      setShowUnlock(false);
+      unlockConsumedRef.current = false;
     }
   }, [state.phase, gameOverPopupShown, showGameOverPopup]);
+
+  // Reveal the achievement-unlock modal once the game-over popup is dismissed (popup → null),
+  // if this game crossed any threshold. Gating on the dismissal means daily mode naturally waits
+  // for the leaderboard step (the game-over popup can't be dismissed until then).
+  useEffect(() => {
+    const wasGameOverPopup = prevPopupTypeRef.current === 'gameOver';
+    prevPopupTypeRef.current = pendingPopup?.type;
+    if (
+      wasGameOverPopup &&
+      !pendingPopup &&
+      !unlockConsumedRef.current &&
+      unlockedDefs.length > 0
+    ) {
+      unlockConsumedRef.current = true;
+      setShowUnlock(true);
+    }
+  }, [pendingPopup, unlockedDefs.length]);
 
   // Show first-time rules popup when starting a new game mode for the first time
   useEffect(() => {
@@ -365,6 +408,13 @@ const Game: React.FC<GameProps> = ({
               }}
             />
           )}
+
+          <AchievementUnlock
+            open={showUnlock}
+            achievements={unlockedDefs}
+            eventsByName={eventsByName}
+            onDismiss={() => setShowUnlock(false)}
+          />
         </div>
       </DndContext>
     </motion.div>

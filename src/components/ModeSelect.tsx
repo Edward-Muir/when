@@ -332,7 +332,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide pb-safe overflow-hidden transition-colors"
     >
       {/* Top Bar */}
-      <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
+      <TopBar
+        showHome={false}
+        showTitle={false}
+        onViewTimeline={onViewTimeline}
+        showStatsAchievements
+      />
 
       <div className="w-full max-w-sm mx-auto flex flex-col flex-1 min-h-0 px-3">
         <ModePager
