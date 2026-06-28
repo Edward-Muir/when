@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.2](https://github.com/Edward-Muir/when/compare/v1.2.1...v1.2.2) (2026-06-28)
+
+
+### Bug Fixes
+
+* Fix the flashing buttons whennaving ([3af98e6](https://github.com/Edward-Muir/when/commit/3af98e68ac9b18bc1ca03bd1b398a715948ee916))
+
 ## [1.2.1](https://github.com/Edward-Muir/when/compare/v1.2.0...v1.2.1) (2026-06-28)
 
 
