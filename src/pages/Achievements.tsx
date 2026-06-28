@@ -51,7 +51,7 @@ const Achievements: React.FC = () => {
 
   return (
     <div className="h-screen-safe overflow-y-auto bg-bg">
-      <TopBar showHome showTitle={false} onHomeClick={() => navigate('/')} />
+      <TopBar showHome showStatsAchievements showTitle={false} onHomeClick={() => navigate('/')} />
 
       {/* Decorative gradient backdrop so the frosted-glass card shell reads well. */}
       <div

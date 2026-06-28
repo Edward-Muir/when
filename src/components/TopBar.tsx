@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import {
-  Sun,
-  Moon,
-  Home,
-  Menu as MenuIcon,
-  SlidersHorizontal,
-  Share2,
-  BarChart3,
-  Trophy,
-} from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
+import { Home, Menu as MenuIcon, SlidersHorizontal, Share2, BarChart3, Trophy } from 'lucide-react';
 import { shareApp } from '../utils/share';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
@@ -28,7 +18,7 @@ interface TopBarProps {
   onFilterClick?: () => void;
   onViewTimeline?: () => void;
   dailyTheme?: string;
-  /** Home screen only: show Stats + Achievements buttons (navigate to their pages). */
+  /** Show the Stats + Achievements buttons (navigate to their pages). */
   showStatsAchievements?: boolean;
 }
 
@@ -43,7 +33,6 @@ const TopBar: React.FC<TopBarProps> = ({
   dailyTheme,
   showStatsAchievements = false,
 }) => {
-  const { isDark, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const { updateAvailable } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
@@ -94,13 +83,17 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
+          {/* Consistent order across screens: Home · Stats · Achievements · Share · Filter · Menu.
+              Home stays the first slot so it never reshuffles the others when it appears. */}
           <div className="flex items-center gap-2">
-            {/* Share Button */}
-            <button onClick={handleShare} className={buttonClass} aria-label="Share app">
-              <Share2 className={iconClass} />
-            </button>
+            {/* Home Button - first slot, shown off the main menu */}
+            {showHome && onHomeClick && (
+              <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
+                <Home className={iconClass} />
+              </button>
+            )}
 
-            {/* Stats + Achievements - home screen only */}
+            {/* Stats + Achievements */}
             {showStatsAchievements && (
               <>
                 <button
@@ -120,26 +113,15 @@ const TopBar: React.FC<TopBarProps> = ({
               </>
             )}
 
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className={buttonClass}
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            >
-              {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
+            {/* Share Button */}
+            <button onClick={handleShare} className={buttonClass} aria-label="Share app">
+              <Share2 className={iconClass} />
             </button>
 
             {/* Filter Button - only shows on View Timeline */}
             {showFilter && onFilterClick && (
               <button onClick={onFilterClick} className={buttonClass} aria-label="Filter timeline">
                 <SlidersHorizontal className={iconClass} />
-              </button>
-            )}
-
-            {/* Home Button - only shows during gameplay */}
-            {showHome && onHomeClick && (
-              <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
-                <Home className={iconClass} />
               </button>
             )}
 

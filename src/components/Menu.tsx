@@ -1,8 +1,20 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, SquarePlus, HelpCircle, X, Mail, List, Shield, FileText } from 'lucide-react';
+import {
+  Share2,
+  SquarePlus,
+  HelpCircle,
+  X,
+  Mail,
+  List,
+  Shield,
+  FileText,
+  Sun,
+  Moon,
+} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
+import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
@@ -192,6 +204,7 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
 
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onViewTimeline }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
+  const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
 
@@ -271,6 +284,12 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
 
               {/* Menu Items */}
               <div className="py-2 flex-1">
+                {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
+                <button onClick={toggleTheme} className={menuItemClass}>
+                  {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
+                  <span className="font-body">{isDark ? 'Light Mode' : 'Dark Mode'}</span>
+                </button>
+
                 <button onClick={handleShare} className={menuItemClass}>
                   <Share2 className={iconClass} />
                   <span className="font-body">Share App</span>

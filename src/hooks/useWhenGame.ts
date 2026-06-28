@@ -8,6 +8,7 @@ import {
 } from '../types';
 import {
   loadAllEvents,
+  getCachedEvents,
   filterByDifficulty,
   filterByCategory,
   filterByEra,
@@ -107,8 +108,13 @@ function useSaveDailyResult(state: WhenGameState) {
 }
 
 export function useWhenGame(): UseWhenGameReturn {
-  const [state, setState] = useState<WhenGameState>(initialState);
-  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
+  // On a warm events cache (e.g. remount after visiting /stats or /achievements), start
+  // straight in modeSelect with the catalogue already in hand — no loading-screen flash.
+  // Cold first load still falls through to 'loading' and the effect below.
+  const [state, setState] = useState<WhenGameState>(() =>
+    (getCachedEvents()?.length ?? 0) > 0 ? { ...initialState, phase: 'modeSelect' } : initialState
+  );
+  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>(() => getCachedEvents() ?? []);
   const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
   const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
     popup: null,

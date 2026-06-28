@@ -80,7 +80,7 @@ const Stats: React.FC = () => {
 
   return (
     <div className="h-screen-safe overflow-y-auto bg-bg">
-      <TopBar showHome showTitle={false} onHomeClick={() => navigate('/')} />
+      <TopBar showHome showStatsAchievements showTitle={false} onHomeClick={() => navigate('/')} />
 
       <div className="mx-auto max-w-2xl px-4 pt-topbar-fixed pb-safe">
         <h1 className="py-5 font-display text-2xl font-bold text-text">Stats</h1>
