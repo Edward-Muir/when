@@ -28,6 +28,8 @@ interface AchievementRevealProps {
   glowFlash?: boolean;
   /** Force the reduced-motion fallback (the harness toggle); ORed with the OS setting. */
   forceReduced?: boolean;
+  /** Badge scale forwarded to `AchievementCard`. `'lg'` doubles the image diameter. */
+  size?: 'sm' | 'lg';
 }
 
 /** Per-variant framer-motion config for the badge wrapper. */
@@ -98,6 +100,7 @@ const AchievementReveal: React.FC<AchievementRevealProps> = ({
   haptic = false,
   glowFlash = false,
   forceReduced = false,
+  size = 'sm',
 }) => {
   const reduced = (useReducedMotion() ?? false) || forceReduced;
   const m = useRevealMotion(variant, reduced);
@@ -113,7 +116,9 @@ const AchievementReveal: React.FC<AchievementRevealProps> = ({
     return () => clearTimeout(t);
   }, [replayKey, haptic, variant, burstDelay, haptics]);
 
-  const card = <AchievementCard achievement={achievement} unlocked eventsByName={eventsByName} />;
+  const card = (
+    <AchievementCard achievement={achievement} unlocked eventsByName={eventsByName} size={size} />
+  );
 
   return (
     <div className="relative flex items-center justify-center" style={{ perspective: 800 }}>

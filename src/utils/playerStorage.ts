@@ -168,6 +168,17 @@ function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
   }
 }
 
+function clearNavSeen(data: NavSeen, key: NavKey): NavSeen {
+  switch (key) {
+    case 'stats':
+      return { ...data, stats: false };
+    case 'achievements':
+      return { ...data, achievements: false };
+    case 'timeline':
+      return { ...data, timeline: false };
+  }
+}
+
 /**
  * Check whether a nav destination's "new" dot has already been dismissed
  * (i.e. the user has clicked/visited it before).
@@ -191,6 +202,20 @@ export function markNavSeen(key: NavKey): void {
     const stored = localStorage.getItem(NAV_SEEN_KEY);
     const data: NavSeen = stored ? JSON.parse(stored) : {};
     localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(setNavSeen(data, key)));
+  } catch {
+    console.warn('Failed to save nav seen state to localStorage');
+  }
+}
+
+/**
+ * Re-arm a nav destination's "new" dot (e.g. after a new achievement unlocks),
+ * so it shows again until the user next visits that page.
+ */
+export function markNavUnseen(key: NavKey): void {
+  try {
+    const stored = localStorage.getItem(NAV_SEEN_KEY);
+    const data: NavSeen = stored ? JSON.parse(stored) : {};
+    localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(clearNavSeen(data, key)));
   } catch {
     console.warn('Failed to save nav seen state to localStorage');
   }

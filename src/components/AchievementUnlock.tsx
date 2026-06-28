@@ -70,7 +70,7 @@ const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
           transition={{ duration: 0.15 }}
         >
           <motion.div
-            className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors px-5 py-6 flex flex-col items-center text-center"
+            className="w-[85vw] max-w-[340px] sm:max-w-[400px] max-h-[90vh] overflow-y-auto rounded-lg border border-border bg-surface shadow-sm transition-colors px-5 py-8 flex flex-col items-center text-center"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
@@ -86,6 +86,7 @@ const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
                 achievement={current}
                 eventsByName={eventsByName}
                 replayKey={index}
+                size="lg"
               />
             </div>
 

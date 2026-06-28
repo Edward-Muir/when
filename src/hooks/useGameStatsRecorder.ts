@@ -8,6 +8,7 @@ import {
   getDailyCadence,
   GameMilestone,
 } from '../utils/statsStorage';
+import { markNavUnseen } from '../utils/playerStorage';
 
 interface GameStatsRecording {
   /** Achievement ids unlocked by the most recently recorded game. */
@@ -40,7 +41,10 @@ export function useGameStatsRecorder(
     recordedRef.current = true;
     // Snapshot records BEFORE recording so we can tell which the game just beat.
     const prev = { lifetime: getLifetimeStats(), cadence: getDailyCadence() };
-    setNewlyUnlockedAchievements(recordGameResult(state, eventsByName));
+    const unlocked = recordGameResult(state, eventsByName);
+    // Re-arm the Achievements nav dot so the player is nudged to go see what they earned.
+    if (unlocked.length > 0) markNavUnseen('achievements');
+    setNewlyUnlockedAchievements(unlocked);
     setGameMilestones(detectMilestones(state, prev));
     // eslint-disable-next-line react-hooks/exhaustive-deps -- `state` read once per game, ref-guarded
   }, [state.phase, eventsByName]);

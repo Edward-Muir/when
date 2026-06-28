@@ -14,6 +14,11 @@ interface AchievementCardProps {
    * (the event JSON). Undefined while the catalogue is still loading → no image.
    */
   eventsByName?: Map<string, HistoricalEvent>;
+  /**
+   * Badge/text scale. `'sm'` (default) is the grid/preview size; `'lg'` doubles the
+   * circular image diameter for the post-game unlock celebration.
+   */
+  size?: 'sm' | 'lg';
 }
 
 /**
@@ -27,15 +32,17 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
   achievement,
   unlocked,
   eventsByName,
+  size = 'sm',
 }) => {
   const tier = TIER_STYLES[achievement.tier];
   const event = eventsByName?.get(achievement.eventName);
   const imageSrc = getImageUrl(event?.image_url, 'detail');
+  const large = size === 'lg';
 
   return (
     <div className="flex flex-col items-center text-center rounded-2xl border border-border bg-surface/60 backdrop-blur-md shadow-sm px-3 pt-3 pb-4">
       {/* Badge: ring + circular art + (locked) lock overlay */}
-      <div className="relative w-28 h-28">
+      <div className={`relative ${large ? 'w-56 h-56' : 'w-28 h-28'}`}>
         {/* Metallic tier ring (its own layer so it can shimmer without spinning the art) */}
         <div
           className={`absolute inset-0 rounded-full ${
@@ -48,7 +55,9 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
         />
 
         {/* Circular event art, inset to reveal the ring as a band */}
-        <div className="absolute inset-[5px] rounded-full overflow-hidden bg-black/20">
+        <div
+          className={`absolute ${large ? 'inset-[10px]' : 'inset-[5px]'} rounded-full overflow-hidden bg-black/20`}
+        >
           {imageSrc && (
             <img
               src={imageSrc}
@@ -76,7 +85,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
 
       {/* Title */}
       <h3
-        className={`mt-3 font-display font-bold leading-tight text-[0.95rem] ${
+        className={`mt-3 font-display font-bold leading-tight ${large ? 'text-lg' : 'text-[0.95rem]'} ${
           unlocked ? 'text-text' : 'text-text-muted'
         }`}
       >
@@ -84,7 +93,7 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
       </h3>
 
       {/* How-to-unlock / criterion (shown in both states) */}
-      <p className="mt-1 font-body text-xs leading-snug text-text-muted">
+      <p className={`mt-1 font-body ${large ? 'text-sm' : 'text-xs'} leading-snug text-text-muted`}>
         {achievement.unlockCriteria}
       </p>
     </div>

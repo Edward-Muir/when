@@ -116,6 +116,7 @@ const UnlockPreview: React.FC = () => {
                     haptic={haptic}
                     glowFlash={glowFlash}
                     forceReduced={forceReduced}
+                    size="lg"
                   />
                 )}
               </div>
