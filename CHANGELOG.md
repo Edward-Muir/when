@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.1](https://github.com/Edward-Muir/when/compare/v1.1.0...v1.1.1) (2026-06-28)
+
+
+### Bug Fixes
+
+* Track custom streaks ([402a3f1](https://github.com/Edward-Muir/when/commit/402a3f1b0585e26c41ad66f33b03e33148693595))
+
 ## [1.1.0](https://github.com/Edward-Muir/when/compare/v1.0.0...v1.1.0) (2026-06-28)
 
 
