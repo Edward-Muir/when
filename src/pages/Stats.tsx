@@ -69,6 +69,9 @@ const Stats: React.FC = () => {
     lifetime.timelineLengthSum.freeplay;
   const avgTimeline = gamesPlayed > 0 ? (totalTimelineLength / gamesPlayed).toFixed(1) : '—';
 
+  // Best run of correct placements across either daily or custom (non-daily) play.
+  const bestInGameStreak = Math.max(lifetime.bestInGameStreakEver, lifetime.bestCustomStreakEver);
+
   const totalPlacements = lifetime.eventsPlacedCorrect + lifetime.eventsPlacedWrong;
   const accuracy =
     totalPlacements > 0
@@ -110,7 +113,7 @@ const Stats: React.FC = () => {
           <Card>
             <StatRow
               icon={<Zap className={iconClass} />}
-              value={lifetime.bestInGameStreakEver}
+              value={bestInGameStreak}
               label="Best in-game streak"
             />
           </Card>
@@ -160,7 +163,7 @@ const Stats: React.FC = () => {
             />
             <StatRow
               icon={<Zap className={iconClass} />}
-              value={lifetime.bestInGameStreakEver}
+              value={bestInGameStreak}
               label="Best in-game streak"
             />
             <StatRow
