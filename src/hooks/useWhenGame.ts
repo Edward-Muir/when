@@ -43,7 +43,6 @@ interface UseWhenGameReturn {
   cycleHand: () => void;
   resetGame: () => void;
   restartGame: () => void;
-  viewTimeline: () => void;
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
@@ -406,10 +405,6 @@ export function useWhenGame(): UseWhenGameReturn {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
 
-  const viewTimeline = useCallback(() => {
-    setState((prev) => ({ ...prev, phase: 'viewTimeline' }));
-  }, []);
-
   const restartGame = useCallback(() => {
     if (state.lastConfig) {
       startGame(state.lastConfig);
@@ -465,7 +460,6 @@ export function useWhenGame(): UseWhenGameReturn {
     cycleHand,
     resetGame,
     restartGame,
-    viewTimeline,
     modalEvent,
     openModal,
     closeModal,

@@ -64,6 +64,24 @@ function centuryCE(year: number): number | null {
   return year >= 1 ? Math.floor((year - 1) / 100) + 1 : null;
 }
 
+/**
+ * Bucket events into 5 broad historical eras and return per-band counts, in order:
+ * [Prehistory (<-3000), Antiquity (-3000..476), Medieval (476..1500),
+ *  Early-Modern (1500..1800), Modern (>=1800)]. Used by the Epoch Hopper badge.
+ */
+function epochBands(events: HistoricalEvent[]): [number, number, number, number, number] {
+  const bands: [number, number, number, number, number] = [0, 0, 0, 0, 0];
+  for (const e of events) {
+    const y = e.year;
+    if (y < -3000) bands[0]++;
+    else if (y < 476) bands[1]++;
+    else if (y < 1500) bands[2]++;
+    else if (y < 1800) bands[3]++;
+    else bands[4]++;
+  }
+  return bands;
+}
+
 const totalGames = (s: StatsSnapshot): number =>
   s.lifetime.gamesPlayed.daily +
   s.lifetime.gamesPlayed.suddenDeath +
@@ -132,6 +150,37 @@ export const ACHIEVEMENT_TESTS: Record<string, AchievementTest> = {
   '30': (s) => s.lifetime.bestGameCorrectEver >= 20,
   '31': (s) => s.lifetime.bestGameCorrectEver >= 25,
   '32': (s) => s.lifetime.bestGameCorrectEver >= 30,
+
+  // Collection breadth — distinct unique events collected (any mode).
+  'coll-100': (s) => s.collection.placedEventIds.length >= 100,
+  'coll-500': (s) => s.collection.placedEventIds.length >= 500,
+  'coll-1500': (s) => s.collection.placedEventIds.length >= 1500,
+  'coll-3000': (s) => s.collection.placedEventIds.length >= 3000,
+
+  // Era / epoch — derived from placed-event years.
+  'era-bce': (s, byName) => placedEvents(s, byName).filter((e) => e.year < 0).length >= 25,
+  'era-modern': (s, byName) =>
+    placedEvents(s, byName).filter((e) => centuryCE(e.year) === 21).length >= 50,
+  'era-epochs': (s, byName) => epochBands(placedEvents(s, byName)).every((n) => n >= 15),
+
+  // Themed multi-category combos — 15 of each named category.
+  'theme-renaissance': (s, byName) =>
+    countByCategory(s, byName, 'art') >= 15 &&
+    countByCategory(s, byName, 'science') >= 15 &&
+    countByCategory(s, byName, 'writing') >= 15,
+  'theme-statecraft': (s, byName) =>
+    countByCategory(s, byName, 'empires') >= 15 &&
+    countByCategory(s, byName, 'law') >= 15 &&
+    countByCategory(s, byName, 'diplomacy') >= 15,
+
+  // Completionist meta — every category badge earned (i.e. CATEGORY_THRESHOLD of each).
+  // Derived from counts (not from `unlocked`) so it can't lag a category unlock by a game.
+  'meta-categories': (s, byName) => {
+    const counts = new Map<Category, number>();
+    for (const e of placedEvents(s, byName))
+      counts.set(e.category, (counts.get(e.category) ?? 0) + 1);
+    return ALL_CATEGORIES.every((c) => (counts.get(c) ?? 0) >= CATEGORY_THRESHOLD);
+  },
 };
 
 // Category badges, generated from the taxonomy — adding a category needs only a card row.

@@ -292,7 +292,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'On a Roll',
     family: 'Streak',
     tier: 'bronze',
-    unlockCriteria: 'In-game streak of 5 (Daily only)',
+    unlockCriteria: 'Get 5 events right in a row',
     eventName: 'blitzkrieg-tactics-deployed',
   },
   {
@@ -300,7 +300,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Momentum',
     family: 'Streak',
     tier: 'copper',
-    unlockCriteria: 'In-game streak of 10 (Daily only)',
+    unlockCriteria: 'Get 10 events right in a row',
     eventName: 'genghis-khan',
   },
   {
@@ -308,7 +308,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Rampage',
     family: 'Streak',
     tier: 'silver',
-    unlockCriteria: 'In-game streak of 15 (Daily only)',
+    unlockCriteria: 'Get 15 events right in a row',
     eventName: 'alexander-empire',
   },
   {
@@ -316,7 +316,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Juggernaut',
     family: 'Streak',
     tier: 'gold',
-    unlockCriteria: 'In-game streak of 20 (Daily only)',
+    unlockCriteria: 'Get 20 events right in a row',
     eventName: 'napoleon-emperor',
   },
   {
@@ -324,7 +324,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Unstoppable',
     family: 'Streak',
     tier: 'platinum',
-    unlockCriteria: 'In-game streak of 25 (Daily only)',
+    unlockCriteria: 'Get 25 events right in a row',
     eventName: 'charlemagne',
   },
   {
@@ -332,7 +332,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Daily Grind',
     family: 'Cadence',
     tier: 'bronze',
-    unlockCriteria: 'Daily streak of 3 days',
+    unlockCriteria: 'Play 3 days in a row',
     eventName: 'monets-impression-sunrise',
   },
   {
@@ -340,7 +340,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Routine',
     family: 'Cadence',
     tier: 'silver',
-    unlockCriteria: 'Daily streak of 7 days',
+    unlockCriteria: 'Play 7 days in a row',
     eventName: 'mayan-written-calendar',
   },
   {
@@ -348,7 +348,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Devotion',
     family: 'Cadence',
     tier: 'gold',
-    unlockCriteria: 'Daily streak of 30 days',
+    unlockCriteria: 'Play 30 days in a row',
     eventName: 'maya-astronomical-calendar',
   },
   {
@@ -356,7 +356,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Time Immemorial',
     family: 'Cadence',
     tier: 'diamond',
-    unlockCriteria: 'Daily streak of 100 days',
+    unlockCriteria: 'Play 100 days in a row',
     eventName: 'russia-anno-domini',
   },
   {
@@ -364,7 +364,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Good Timing',
     family: 'Single-Game',
     tier: 'bronze',
-    unlockCriteria: 'Best single game of 10 correct',
+    unlockCriteria: 'Build a 10-event timeline',
     eventName: 'sundial-invented',
   },
   {
@@ -372,7 +372,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Clockwork',
     family: 'Single-Game',
     tier: 'copper',
-    unlockCriteria: 'Best single game of 15 correct',
+    unlockCriteria: 'Build a 15-event timeline',
     eventName: 'water-clock',
   },
   {
@@ -380,7 +380,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Well-Oiled',
     family: 'Single-Game',
     tier: 'silver',
-    unlockCriteria: 'Best single game of 20 correct',
+    unlockCriteria: 'Build a 20-event timeline',
     eventName: 'incense-clock',
   },
   {
@@ -388,7 +388,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Horologist',
     family: 'Single-Game',
     tier: 'gold',
-    unlockCriteria: 'Best single game of 25 correct',
+    unlockCriteria: 'Build a 25-event timeline',
     eventName: 'mechanical-clock',
   },
   {
@@ -396,7 +396,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Time Lord',
     family: 'Single-Game',
     tier: 'platinum',
-    unlockCriteria: 'Best single game of 30 correct',
+    unlockCriteria: 'Build a 30-event timeline',
     eventName: 'pendulum-clock',
   },
   {
@@ -430,5 +430,89 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'gold',
     unlockCriteria: 'Place 20 hard events',
     eventName: 'hannibal-crosses-alps',
+  },
+  // --- Collection breadth: unique-event milestones (distinct from Volume, which counts repeats).
+  {
+    id: 'coll-100',
+    name: 'Curator',
+    family: 'Collection',
+    tier: 'bronze',
+    unlockCriteria: 'Collect 100 unique events',
+    eventName: 'rosetta-stone',
+  },
+  {
+    id: 'coll-500',
+    name: 'Archivist',
+    family: 'Collection',
+    tier: 'silver',
+    unlockCriteria: 'Collect 500 unique events',
+    eventName: 'library-alexandria',
+  },
+  {
+    id: 'coll-1500',
+    name: 'Custodian',
+    family: 'Collection',
+    tier: 'gold',
+    unlockCriteria: 'Collect 1,500 unique events',
+    eventName: 'british-museum-founded',
+  },
+  {
+    id: 'coll-3000',
+    name: 'Keeper of Time',
+    family: 'Collection',
+    tier: 'diamond',
+    unlockCriteria: 'Collect 3,000 unique events',
+    eventName: 'stonehenge',
+  },
+  // --- Era / epoch flavor (derived from placed-event years).
+  {
+    id: 'era-bce',
+    name: 'Antiquarian',
+    family: 'Collection',
+    tier: 'silver',
+    unlockCriteria: 'Place 25 events from BCE',
+    eventName: 'code-hammurabi',
+  },
+  {
+    id: 'era-modern',
+    name: 'Present Tense',
+    family: 'Collection',
+    tier: 'silver',
+    unlockCriteria: 'Place 50 events from the 21st century',
+    eventName: 'iphone-released',
+  },
+  {
+    id: 'era-epochs',
+    name: 'Epoch Hopper',
+    family: 'Collection',
+    tier: 'gold',
+    unlockCriteria: 'Place 15 events in each of 5 great eras',
+    eventName: 'antikythera-mechanism',
+  },
+  // --- Themed multi-category combos.
+  {
+    id: 'theme-renaissance',
+    name: 'Renaissance Soul',
+    family: 'Collection',
+    tier: 'gold',
+    unlockCriteria: 'Place 15 each of Art, Science & Writing',
+    eventName: 'italian-renaissance-begins',
+  },
+  {
+    id: 'theme-statecraft',
+    name: 'Power Broker',
+    family: 'Collection',
+    tier: 'gold',
+    unlockCriteria: 'Place 15 each of Empires, Law & Diplomacy',
+    eventName: 'peace-westphalia',
+  },
+  // --- Completionist meta: every category badge earned.
+  {
+    id: 'meta-categories',
+    name: 'The Complete Collection',
+    family: 'Collection',
+    tier: 'obsidian',
+    unlockCriteria: 'Earn all 20 category badges',
+    eventName: 'hanging-gardens-babylon',
   },
 ];

@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, SlidersHorizontal, Share2, BarChart3, Trophy } from 'lucide-react';
+import {
+  Home,
+  Menu as MenuIcon,
+  SlidersHorizontal,
+  Share2,
+  BarChart3,
+  Trophy,
+  History,
+} from 'lucide-react';
 import { shareApp } from '../utils/share';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { Toast } from './Toast';
@@ -16,10 +24,11 @@ interface TopBarProps {
   gameMode?: GameMode | null;
   showFilter?: boolean;
   onFilterClick?: () => void;
-  onViewTimeline?: () => void;
   dailyTheme?: string;
-  /** Show the Stats + Achievements buttons (navigate to their pages). */
+  /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
   showStatsAchievements?: boolean;
+  /** Which nav destination is the current page — that button renders in the active style. */
+  activeNav?: 'stats' | 'achievements' | 'timeline';
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -29,9 +38,9 @@ const TopBar: React.FC<TopBarProps> = ({
   gameMode,
   showFilter = false,
   onFilterClick,
-  onViewTimeline,
   dailyTheme,
   showStatsAchievements = false,
+  activeNav,
 }) => {
   const navigate = useNavigate();
   const { updateAvailable } = useVersionCheck();
@@ -49,6 +58,21 @@ const TopBar: React.FC<TopBarProps> = ({
   `;
 
   const iconClass = 'w-5 h-5 text-text';
+
+  // Active (current-page) nav button: filled accent + white icon.
+  const activeButtonClass = `
+    p-2 rounded-xl
+    bg-accent
+    border border-accent
+    transition-colors
+    active:scale-95
+  `;
+  const activeIconClass = 'w-5 h-5 text-white';
+
+  const navBtn = (key: 'stats' | 'achievements' | 'timeline') =>
+    activeNav === key ? activeButtonClass : buttonClass;
+  const navIcon = (key: 'stats' | 'achievements' | 'timeline') =>
+    activeNav === key ? activeIconClass : iconClass;
 
   const handleShare = async () => {
     const showClipboardToast = await shareApp();
@@ -83,32 +107,50 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Consistent order across screens: Home · Stats · Achievements · Share · Filter · Menu.
-              Home stays the first slot so it never reshuffles the others when it appears. */}
+          {/* Consistent order across screens: Filter · Home · Stats · Achievements · Timeline · Share · Menu.
+              The group is right-aligned, so the page-specific Filter sits in the leftmost slot —
+              its appearance/absence never shifts the consistent Home…Menu cluster. */}
           <div className="flex items-center gap-2">
-            {/* Home Button - first slot, shown off the main menu */}
+            {/* Filter Button - only shows on the timeline page; leftmost so it doesn't shift the rest */}
+            {showFilter && onFilterClick && (
+              <button onClick={onFilterClick} className={buttonClass} aria-label="Filter timeline">
+                <SlidersHorizontal className={iconClass} />
+              </button>
+            )}
+
+            {/* Home Button - shown off the main menu */}
             {showHome && onHomeClick && (
               <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
                 <Home className={iconClass} />
               </button>
             )}
 
-            {/* Stats + Achievements */}
+            {/* Stats + Achievements + Timeline (sibling routes; active one is highlighted) */}
             {showStatsAchievements && (
               <>
                 <button
                   onClick={() => navigate('/stats')}
-                  className={buttonClass}
+                  className={navBtn('stats')}
                   aria-label="View stats"
+                  aria-current={activeNav === 'stats' ? 'page' : undefined}
                 >
-                  <BarChart3 className={iconClass} />
+                  <BarChart3 className={navIcon('stats')} />
                 </button>
                 <button
                   onClick={() => navigate('/achievements')}
-                  className={buttonClass}
+                  className={navBtn('achievements')}
                   aria-label="View achievements"
+                  aria-current={activeNav === 'achievements' ? 'page' : undefined}
                 >
-                  <Trophy className={iconClass} />
+                  <Trophy className={navIcon('achievements')} />
+                </button>
+                <button
+                  onClick={() => navigate('/timeline')}
+                  className={navBtn('timeline')}
+                  aria-label="View my timeline"
+                  aria-current={activeNav === 'timeline' ? 'page' : undefined}
+                >
+                  <History className={navIcon('timeline')} />
                 </button>
               </>
             )}
@@ -117,13 +159,6 @@ const TopBar: React.FC<TopBarProps> = ({
             <button onClick={handleShare} className={buttonClass} aria-label="Share app">
               <Share2 className={iconClass} />
             </button>
-
-            {/* Filter Button - only shows on View Timeline */}
-            {showFilter && onFilterClick && (
-              <button onClick={onFilterClick} className={buttonClass} aria-label="Filter timeline">
-                <SlidersHorizontal className={iconClass} />
-              </button>
-            )}
 
             {/* Menu Button */}
             <button
@@ -150,7 +185,6 @@ const TopBar: React.FC<TopBarProps> = ({
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
-        onViewTimeline={onViewTimeline}
       />
 
       {/* Update Available Popup */}

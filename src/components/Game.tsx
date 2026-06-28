@@ -34,8 +34,7 @@ import MilestonePopup from './MilestonePopup';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { ACHIEVEMENTS } from '../data/achievements';
 import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
-import { preloadImage } from '../utils/preloadImage';
-import { getImageUrl } from '../utils/cloudinaryImage';
+import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
@@ -135,10 +134,11 @@ const Game: React.FC<GameProps> = ({
 
   // Warm the badge-art cache at game over (when unlockedDefs lands), so by the time the
   // unlock modal opens — after the game-over popup is dismissed — the images are ready.
-  // Same getImageUrl(url, 'detail') call AchievementCard uses, so the URL is a cache hit.
+  // Detail variant matches what AchievementCard renders, so the URL is a cache hit.
   useEffect(() => {
-    unlockedDefs.forEach((def) =>
-      preloadImage(getImageUrl(eventsByName.get(def.eventName)?.image_url, 'detail'))
+    preloadEventImages(
+      unlockedDefs.map((def) => eventsByName.get(def.eventName)),
+      ['detail']
     );
   }, [unlockedDefs, eventsByName]);
 

@@ -80,7 +80,13 @@ const Stats: React.FC = () => {
 
   return (
     <div className="h-screen-safe overflow-y-auto bg-bg">
-      <TopBar showHome showStatsAchievements showTitle={false} onHomeClick={() => navigate('/')} />
+      <TopBar
+        showHome
+        showStatsAchievements
+        showTitle={false}
+        activeNav="stats"
+        onHomeClick={() => navigate('/')}
+      />
 
       <div className="mx-auto max-w-2xl px-4 pt-topbar-fixed pb-safe">
         <h1 className="py-5 font-display text-2xl font-bold text-text">Stats</h1>
@@ -105,7 +111,7 @@ const Stats: React.FC = () => {
             <StatRow
               icon={<Flame className={iconClass} />}
               value={cadence.maxDailyStreak}
-              label="Max daily streak"
+              label="Max days in a row"
             />
           </Card>
         </div>
@@ -138,12 +144,12 @@ const Stats: React.FC = () => {
             <StatRow
               icon={<CalendarDays className={iconClass} />}
               value={cadence.currentDailyStreak}
-              label="Current daily streak"
+              label="Days played in a row"
             />
             <StatRow
               icon={<CalendarDays className={iconClass} />}
               value={cadence.playedDates.length}
-              label="Days played"
+              label="Daily games played"
             />
             <StatRow
               icon={<Zap className={iconClass} />}

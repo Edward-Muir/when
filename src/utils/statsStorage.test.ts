@@ -1,4 +1,11 @@
-import { HistoricalEvent, WhenGameState, GameMode } from '../types';
+import {
+  HistoricalEvent,
+  WhenGameState,
+  GameMode,
+  Category,
+  Difficulty,
+  ALL_CATEGORIES,
+} from '../types';
 import {
   getLifetimeStats,
   saveLifetimeStats,
@@ -11,10 +18,12 @@ import {
   saveAchievements,
   buildEventsByName,
   recordGameResult,
+  reevaluateAchievements,
   detectMilestones,
   LifetimeStats,
   DailyCadence,
 } from './statsStorage';
+import { findAchievementConfigMismatches } from '../data/achievementLogic';
 
 // Build a minimal finished-game state for the recorder (only the fields it reads).
 function makeGameState(opts: {
@@ -453,5 +462,120 @@ describe('detectMilestones', () => {
       makeGameState({ gameMode: 'daily', dailySeed: '2026-06-02', placedNames: ['b'] })
     );
     expect(day2).toContainEqual({ kind: 'longestDailyRun', value: 2, previous: 1 });
+  });
+});
+
+describe('collection / era / themed / meta achievement tests', () => {
+  // Build `count` synthetic events for a category/year/difficulty, registered in a
+  // name->event map AND seeded into the stored collection. Returns the cumulative map so
+  // multiple specs can be combined before a single reevaluate.
+  function seed(
+    specs: Array<{
+      prefix: string;
+      count: number;
+      category?: Category;
+      year?: number;
+      difficulty?: Difficulty;
+    }>
+  ): Map<string, HistoricalEvent> {
+    const byName = new Map<string, HistoricalEvent>();
+    const ids: string[] = [];
+    for (const sp of specs) {
+      for (let i = 0; i < sp.count; i++) {
+        const name = `${sp.prefix}-${i}`;
+        byName.set(name, {
+          name,
+          friendly_name: name,
+          year: sp.year ?? 1900,
+          category: sp.category ?? 'science',
+          description: '',
+          difficulty: sp.difficulty ?? 'medium',
+        });
+        ids.push(name);
+      }
+    }
+    addPlacedEventIds(ids);
+    return byName;
+  }
+
+  // Merge event maps without spreading Map iterators (es5-target safe).
+  function mergeMaps(...maps: Map<string, HistoricalEvent>[]): Map<string, HistoricalEvent> {
+    const out = new Map<string, HistoricalEvent>();
+    for (const m of maps) m.forEach((v, k) => out.set(k, v));
+    return out;
+  }
+
+  it('coll-100 fires at exactly 100 unique events, not 99', () => {
+    const just99 = seed([{ prefix: 'e', count: 99 }]);
+    expect(reevaluateAchievements(just99)).not.toContain('coll-100');
+
+    const one = seed([{ prefix: 'extra', count: 1 }]); // now 100 total
+    const merged = mergeMaps(just99, one);
+    expect(reevaluateAchievements(merged)).toContain('coll-100');
+    expect(getAchievements().unlocked['coll-100']).toBeDefined();
+  });
+
+  it('coll milestones unlock cumulatively (500 implies 100)', () => {
+    const byName = seed([{ prefix: 'e', count: 500 }]);
+    const unlocked = reevaluateAchievements(byName);
+    expect(unlocked).toEqual(expect.arrayContaining(['coll-100', 'coll-500']));
+    expect(unlocked).not.toContain('coll-1500');
+  });
+
+  it('era-bce fires at 25 BCE events', () => {
+    const byName = seed([{ prefix: 'bce', count: 25, category: 'nature', year: -500 }]);
+    expect(reevaluateAchievements(byName)).toContain('era-bce');
+  });
+
+  it('era-modern fires at 50 events in the 21st century', () => {
+    const byName = seed([{ prefix: 'now', count: 50, category: 'media', year: 2007 }]);
+    expect(reevaluateAchievements(byName)).toContain('era-modern');
+  });
+
+  it('era-epochs needs 15 in each of the 5 great eras', () => {
+    const fourBands = seed([
+      { prefix: 'pre', count: 15, year: -4000 },
+      { prefix: 'ant', count: 15, year: 100 },
+      { prefix: 'med', count: 15, year: 1000 },
+      { prefix: 'emo', count: 15, year: 1600 },
+      // modern band missing
+    ]);
+    expect(reevaluateAchievements(fourBands)).not.toContain('era-epochs');
+
+    const modern = seed([{ prefix: 'mod', count: 15, year: 1900 }]);
+    const all = mergeMaps(fourBands, modern);
+    expect(reevaluateAchievements(all)).toContain('era-epochs');
+  });
+
+  it('theme-renaissance needs 15 each of art, science & writing', () => {
+    const incomplete = seed([
+      { prefix: 'art', count: 15, category: 'art' },
+      { prefix: 'sci', count: 15, category: 'science' },
+      { prefix: 'wri', count: 14, category: 'writing' }, // one short
+    ]);
+    expect(reevaluateAchievements(incomplete)).not.toContain('theme-renaissance');
+
+    const lastWriting = seed([{ prefix: 'wri', count: 15, category: 'writing' }]);
+    const complete = mergeMaps(incomplete, lastWriting);
+    expect(reevaluateAchievements(complete)).toContain('theme-renaissance');
+  });
+
+  it('meta-categories fires only when every category has 20+ placed events', () => {
+    // 20 of every category but one -> not yet.
+    const missingOne = seed(
+      ALL_CATEGORIES.slice(0, -1).map((c) => ({ prefix: c, count: 20, category: c }))
+    );
+    expect(reevaluateAchievements(missingOne)).not.toContain('meta-categories');
+
+    const lastCat = ALL_CATEGORIES[ALL_CATEGORIES.length - 1];
+    const rest = seed([{ prefix: lastCat, count: 20, category: lastCat }]);
+    const full = mergeMaps(missingOne, rest);
+    expect(reevaluateAchievements(full)).toContain('meta-categories');
+  });
+});
+
+describe('achievement config consistency', () => {
+  it('every card has a test and every test has a card', () => {
+    expect(findAchievementConfigMismatches()).toEqual({ missingTests: [], missingCards: [] });
   });
 });

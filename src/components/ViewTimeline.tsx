@@ -6,8 +6,10 @@ import {
   Era,
   GamePopupData,
   ALL_CATEGORIES,
+  ALL_DIFFICULTIES,
 } from '../types';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
+import { getCollectionState } from '../utils/statsStorage';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import TopBar from './TopBar';
 import Timeline from './Timeline/Timeline';
@@ -22,9 +24,7 @@ interface ViewTimelineProps {
 const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) => {
   // Filter state - default to all selected
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
-    'easy',
-    'medium',
-    'hard',
+    ...ALL_DIFFICULTIES,
   ]);
   const [selectedCategories, setSelectedCategories] = useState<Category[]>([...ALL_CATEGORIES]);
   const [selectedEras, setSelectedEras] = useState<Era[]>(ERA_DEFINITIONS.map((e) => e.id));
@@ -33,14 +33,24 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
   const [showFilterPopup, setShowFilterPopup] = useState(false);
   const [pendingPopup, setPendingPopup] = useState<GamePopupData | null>(null);
 
-  // Filter and sort events
+  // The player's personal collection: only events they've correctly placed across all games.
+  const collectedEvents = useMemo(() => {
+    const owned = new Set(getCollectionState().placedEventIds);
+    return allEvents.filter((e) => owned.has(e.name));
+  }, [allEvents]);
+
+  // Collection counts (collected vs full catalogue).
+  const collected = collectedEvents.length;
+  const total = allEvents.length;
+
+  // Filter and sort the collection
   const filteredEvents = useMemo(() => {
-    let events = filterByDifficulty(allEvents, selectedDifficulties);
+    let events = filterByDifficulty(collectedEvents, selectedDifficulties);
     events = filterByCategory(events, selectedCategories);
     events = filterByEra(events, selectedEras);
     // Sort by year for chronological display
     return [...events].sort((a, b) => a.year - b.year);
-  }, [allEvents, selectedDifficulties, selectedCategories, selectedEras]);
+  }, [collectedEvents, selectedDifficulties, selectedCategories, selectedEras]);
 
   // Handle event tap to show description
   const handleEventTap = (event: HistoricalEvent) => {
@@ -57,17 +67,38 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
   return (
     <div className="h-screen-safe flex flex-col bg-bg">
       <TopBar
-        showTitle={true}
+        showTitle={false}
         showHome={true}
         onHomeClick={onHomeClick}
+        showStatsAchievements
+        activeNav="timeline"
         showFilter={true}
         onFilterClick={() => setShowFilterPopup(true)}
         gameMode={null}
       />
 
-      {/* Timeline takes full screen below TopBar */}
-      <div className="flex-1 pt-topbar-fixed overflow-hidden">
-        {filteredEvents.length > 0 ? (
+      {/* Header — styled like the Achievements page heading */}
+      <div className="pt-topbar-fixed px-4">
+        <div className="mx-auto flex w-full max-w-2xl flex-wrap items-baseline justify-between gap-2 py-5">
+          <h1 className="font-display text-2xl font-bold text-text">My Timeline</h1>
+          <span className="font-mono text-sm text-text-muted">
+            {collected} / {total || '…'} collected
+          </span>
+        </div>
+      </div>
+
+      {/* Timeline takes the remaining space below the header */}
+      <div className="flex-1 overflow-hidden">
+        {collected === 0 ? (
+          <div className="h-full flex items-center justify-center p-8">
+            <div className="text-center">
+              <p className="text-text-muted text-lg font-body mb-2">Your collection is empty</p>
+              <p className="text-text-muted/60 text-sm font-body">
+                Place events correctly in a game to collect them — they'll appear here.
+              </p>
+            </div>
+          </div>
+        ) : filteredEvents.length > 0 ? (
           <Timeline
             events={filteredEvents}
             onEventTap={handleEventTap}
@@ -96,7 +127,7 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
         isOpen={showFilterPopup}
         onClose={() => setShowFilterPopup(false)}
         filteredCount={filteredEvents.length}
-        totalCount={allEvents.length}
+        totalCount={collectedEvents.length}
         selectedDifficulties={selectedDifficulties}
         setSelectedDifficulties={setSelectedDifficulties}
         selectedCategories={selectedCategories}
