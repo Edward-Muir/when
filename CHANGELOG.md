@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.0](https://github.com/Edward-Muir/when/compare/v0.11.3...v1.0.0) (2026-06-28)
+
+
+### Features
+
+* Add stats tracking and achievements system ([10b917a](https://github.com/Edward-Muir/when/commit/10b917ac065b3f396aef5d1562287ab4195f34e2))
+* Cache events, move theme toggle to menu, reorder TopBar ([0144794](https://github.com/Edward-Muir/when/commit/01447943f62c6ab42d5695c90673bfd8701d4d9c))
+* Center my timeline ([87b558b](https://github.com/Edward-Muir/when/commit/87b558b15b2b9e3221a4f3af22bb0288bc912f23))
+* Image preload unification, my timeline page ([c5d9947](https://github.com/Edward-Muir/when/commit/c5d99474fc48247eda52b2f866fe7028072da24e))
+* Improve Navigation, add helper text ([b6f29f3](https://github.com/Edward-Muir/when/commit/b6f29f39e87372bee091fa517516d44bd4c38249))
+* Refining stats and achievments ([01d953d](https://github.com/Edward-Muir/when/commit/01d953d2b58299fc61bc5c0fd080237fc5d90690))
+
 ## [0.11.3](https://github.com/Edward-Muir/when/compare/v0.11.2...v0.11.3) (2026-06-25)
 
 
