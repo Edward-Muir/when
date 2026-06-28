@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Edward-Muir/when/compare/v1.0.0...v1.1.0) (2026-06-28)
+
+
+### Features
+
+* Larger achievments, when bakc button, reminder ([bf170a5](https://github.com/Edward-Muir/when/commit/bf170a59075c72ec1de7c6293863d2552f9754be))
+
 ## [1.0.0](https://github.com/Edward-Muir/when/compare/v0.11.3...v1.0.0) (2026-06-28)
 
 
