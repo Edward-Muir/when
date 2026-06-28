@@ -11,6 +11,7 @@ import {
   saveAchievements,
   buildEventsByName,
   recordGameResult,
+  detectMilestones,
   LifetimeStats,
   DailyCadence,
 } from './statsStorage';
@@ -71,6 +72,7 @@ describe('zero-default getters (empty storage)', () => {
       timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
       longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
       bestInGameStreakEver: 0,
+      bestCustomStreakEver: 0,
       bestGameCorrectEver: 0,
       flawlessFreeplayGames: 0,
       firstPlayedDate: '',
@@ -115,6 +117,7 @@ describe('save/get round-trips', () => {
       timelineLengthSum: { daily: 30, suddenDeath: 55, freeplay: 70 },
       longestTimeline: { daily: 10, suddenDeath: 12, freeplay: 14 },
       bestInGameStreakEver: 8,
+      bestCustomStreakEver: 6,
       bestGameCorrectEver: 13,
       flawlessFreeplayGames: 2,
       firstPlayedDate: '2026-01-01',
@@ -290,7 +293,8 @@ describe('recordGameResult', () => {
     expect(lifetime.eventsPlacedCorrect).toBe(2);
     expect(lifetime.gamesPlayed.suddenDeath).toBe(1);
     expect(lifetime.bestGameCorrectEver).toBe(2);
-    expect(lifetime.bestInGameStreakEver).toBe(0); // streak NOT advanced by non-daily
+    expect(lifetime.bestInGameStreakEver).toBe(0); // daily streak NOT advanced by non-daily
+    expect(lifetime.bestCustomStreakEver).toBe(12); // custom streak record advances instead
   });
 
   it('daily games advance the in-game streak', () => {
@@ -362,5 +366,92 @@ describe('recordGameResult', () => {
     );
     expect(second).not.toContain('01'); // already unlocked, not re-returned
     expect(getAchievements().unlocked['01']).toBeDefined();
+  });
+});
+
+describe('detectMilestones', () => {
+  // Seed a single lifetime field over zero-defaults.
+  function seedLifetime(patch: Partial<LifetimeStats>): void {
+    saveLifetimeStats({ ...getLifetimeStats(), ...patch });
+  }
+
+  // Mirror real usage: snapshot records, record the game, then detect against the snapshot.
+  function play(game: WhenGameState) {
+    const prev = { lifetime: getLifetimeStats(), cadence: getDailyCadence() };
+    recordGameResult(game, NO_EVENTS);
+    return detectMilestones(game, prev);
+  }
+
+  it('fires nothing on first-ever records (no prior best to beat)', () => {
+    const milestones = play(
+      makeGameState({
+        gameMode: 'daily',
+        dailySeed: '2026-06-01',
+        placedNames: ['a', 'b'],
+        bestStreak: 5,
+      })
+    );
+    expect(milestones).toEqual([]);
+  });
+
+  it('fires longest daily timeline when it beats the daily record', () => {
+    seedLifetime({ longestTimeline: { daily: 5, suddenDeath: 0, freeplay: 0 } });
+    const milestones = play(
+      // seed + 6 placements = timeline length 7
+      makeGameState({
+        gameMode: 'daily',
+        dailySeed: '2026-06-01',
+        placedNames: ['a', 'b', 'c', 'd', 'e', 'f'],
+      })
+    );
+    expect(milestones).toContainEqual({ kind: 'longestTimelineDaily', value: 7, previous: 5 });
+  });
+
+  it('fires longest custom timeline against the max of the non-daily buckets', () => {
+    seedLifetime({ longestTimeline: { daily: 99, suddenDeath: 4, freeplay: 3 } });
+    const milestones = play(
+      // length 6, beats max(suddenDeath 4, freeplay 3) = 4
+      makeGameState({ gameMode: 'freeplay', placedNames: ['a', 'b', 'c', 'd', 'e'] })
+    );
+    expect(milestones).toContainEqual({ kind: 'longestTimelineCustom', value: 6, previous: 4 });
+    // The daily record (99) is untouched, so no daily timeline milestone.
+    expect(milestones.find((m) => m.kind === 'longestTimelineDaily')).toBeUndefined();
+  });
+
+  it('routes streak milestones by mode (daily beats daily, never custom)', () => {
+    seedLifetime({ bestInGameStreakEver: 3, bestCustomStreakEver: 2 });
+    const milestones = play(
+      makeGameState({
+        gameMode: 'daily',
+        dailySeed: '2026-06-01',
+        placedNames: ['a'],
+        bestStreak: 5,
+      })
+    );
+    expect(milestones).toContainEqual({ kind: 'longestStreakDaily', value: 5, previous: 3 });
+    expect(milestones.find((m) => m.kind === 'longestStreakCustom')).toBeUndefined();
+  });
+
+  it('fires custom streak against the custom record on non-daily games', () => {
+    seedLifetime({ bestInGameStreakEver: 99, bestCustomStreakEver: 2 });
+    const milestones = play(
+      makeGameState({ gameMode: 'suddenDeath', placedNames: ['a'], bestStreak: 4 })
+    );
+    expect(milestones).toContainEqual({ kind: 'longestStreakCustom', value: 4, previous: 2 });
+    expect(milestones.find((m) => m.kind === 'longestStreakDaily')).toBeUndefined();
+  });
+
+  it('fires longest daily run once an existing consecutive-days record is beaten', () => {
+    // Day 1 sets maxDailyStreak 0 -> 1: no milestone (no prior record).
+    const day1 = play(
+      makeGameState({ gameMode: 'daily', dailySeed: '2026-06-01', placedNames: ['a'] })
+    );
+    expect(day1.find((m) => m.kind === 'longestDailyRun')).toBeUndefined();
+
+    // Day 2 (consecutive) advances the run to 2, beating the record of 1.
+    const day2 = play(
+      makeGameState({ gameMode: 'daily', dailySeed: '2026-06-02', placedNames: ['b'] })
+    );
+    expect(day2).toContainEqual({ kind: 'longestDailyRun', value: 2, previous: 1 });
   });
 });

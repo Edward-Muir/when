@@ -25,6 +25,7 @@ function makeSnapshot(
       timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
       longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
       bestInGameStreakEver: 0,
+      bestCustomStreakEver: 0,
       bestGameCorrectEver: 0,
       flawlessFreeplayGames: 0,
       firstPlayedDate: '',

@@ -26,6 +26,8 @@ export interface LifetimeStats {
   timelineLengthSum: { daily: number; suddenDeath: number; freeplay: number };
   longestTimeline: { daily: number; suddenDeath: number; freeplay: number };
   bestInGameStreakEver: number;
+  /** Best in-game streak across non-daily (custom) games. Companion to the daily-only field above. */
+  bestCustomStreakEver: number;
   bestGameCorrectEver: number;
   flawlessFreeplayGames: number;
   firstPlayedDate: string;
@@ -42,6 +44,7 @@ function defaultLifetimeStats(): LifetimeStats {
     timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
     longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
     bestInGameStreakEver: 0,
+    bestCustomStreakEver: 0,
     bestGameCorrectEver: 0,
     flawlessFreeplayGames: 0,
     firstPlayedDate: '',
@@ -308,9 +311,12 @@ export function recordGameResult(
   }
   if (!lifetime.firstPlayedDate) lifetime.firstPlayedDate = today;
   lifetime.lastPlayedDate = today;
-  // In-game streak is daily-only.
+  // In-game streak is split: the daily-only field feeds the streak achievements (19–23); the
+  // custom field feeds the custom-streak milestone only.
   if (isDaily) {
     lifetime.bestInGameStreakEver = Math.max(lifetime.bestInGameStreakEver, state.bestStreak);
+  } else {
+    lifetime.bestCustomStreakEver = Math.max(lifetime.bestCustomStreakEver, state.bestStreak);
   }
   saveLifetimeStats(lifetime);
 
@@ -367,4 +373,59 @@ export function reevaluateAchievements(eventsByName: Map<string, HistoricalEvent
 
   if (newlyUnlocked.length > 0) saveAchievements(achievements);
   return newlyUnlocked;
+}
+
+// --- Personal-best milestones (ephemeral end-of-game celebration, not persisted) ---
+
+export type MilestoneKind =
+  | 'longestTimelineDaily'
+  | 'longestTimelineCustom'
+  | 'longestStreakDaily'
+  | 'longestStreakCustom'
+  | 'longestDailyRun';
+
+/** A new personal best set by the just-finished game. `previous` is the record it beat. */
+export interface GameMilestone {
+  kind: MilestoneKind;
+  value: number;
+  previous: number;
+}
+
+/**
+ * Compare a finished game against the records captured BEFORE `recordGameResult` ran, and return
+ * any personal bests it set. A milestone fires only when it strictly beat a record that already
+ * existed (`previous > 0`), so first-ever games and trivial "1" cases never celebrate.
+ *
+ * Daily vs custom are tracked separately: daily games can only fire the *Daily / DailyRun kinds,
+ * custom (non-daily) games only the *Custom kinds. The daily-run value is read post-record from
+ * the cadence (it depends on date gaps, so it isn't derivable from `state` alone).
+ */
+export function detectMilestones(
+  state: WhenGameState,
+  prev: { lifetime: LifetimeStats; cadence: DailyCadence }
+): GameMilestone[] {
+  const isDaily = !!state.lastConfig?.dailySeed;
+  const len = state.timeline.length;
+  const streak = state.bestStreak;
+  const milestones: GameMilestone[] = [];
+
+  const beat = (kind: MilestoneKind, value: number, previous: number) => {
+    if (value > previous && previous > 0) milestones.push({ kind, value, previous });
+  };
+
+  if (isDaily) {
+    beat('longestTimelineDaily', len, prev.lifetime.longestTimeline.daily);
+    beat('longestStreakDaily', streak, prev.lifetime.bestInGameStreakEver);
+    // Daily run: max consecutive days, read after recording (cadence already advanced).
+    beat('longestDailyRun', getDailyCadence().maxDailyStreak, prev.cadence.maxDailyStreak);
+  } else {
+    const prevCustomTimeline = Math.max(
+      prev.lifetime.longestTimeline.suddenDeath,
+      prev.lifetime.longestTimeline.freeplay
+    );
+    beat('longestTimelineCustom', len, prevCustomTimeline);
+    beat('longestStreakCustom', streak, prev.lifetime.bestCustomStreakEver);
+  }
+
+  return milestones;
 }

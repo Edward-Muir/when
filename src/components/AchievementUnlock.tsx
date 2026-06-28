@@ -1,9 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import ConfettiExplosion from 'react-confetti-explosion';
 import type { AchievementDef } from '../data/achievements';
 import type { HistoricalEvent } from '../types';
-import AchievementCard from './AchievementCard';
+import AchievementReveal from './AchievementReveal';
 
 interface AchievementUnlockProps {
   /** Whether the modal is visible. Self-gates so the caller adds no render branch. */
@@ -79,29 +78,15 @@ const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
           >
             <p className="font-display font-bold text-lg text-accent mb-1">Achievement Unlocked!</p>
 
-            {/* Confetti origin, behind the card */}
+            {/* Badge reveal — handles its own confetti + entrance animation. replayKey={index}
+                re-triggers it as the player advances through multiple unlocks. */}
             <div className="relative w-full flex justify-center">
-              <div className="absolute -top-2 left-1/2 -translate-x-1/2 z-0 pointer-events-none">
-                <ConfettiExplosion
-                  key={index}
-                  force={0.6}
-                  duration={2200}
-                  particleCount={90}
-                  width={900}
-                />
-              </div>
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={current.id}
-                  className="relative z-[1] w-full flex justify-center"
-                  initial={{ scale: 0.8, opacity: 0, y: 8 }}
-                  animate={{ scale: 1, opacity: 1, y: 0 }}
-                  exit={{ scale: 0.8, opacity: 0, y: -8 }}
-                  transition={{ type: 'spring', stiffness: 420, damping: 26 }}
-                >
-                  <AchievementCard achievement={current} unlocked eventsByName={eventsByName} />
-                </motion.div>
-              </AnimatePresence>
+              <AchievementReveal
+                variant="stagger"
+                achievement={current}
+                eventsByName={eventsByName}
+                replayKey={index}
+              />
             </div>
 
             <p className="mt-4 font-body text-sm text-text-muted">

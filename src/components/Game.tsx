@@ -30,9 +30,12 @@ import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 import AchievementUnlock from './AchievementUnlock';
+import MilestonePopup from './MilestonePopup';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { ACHIEVEMENTS } from '../data/achievements';
-import { buildEventsByName } from '../utils/statsStorage';
+import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
+import { preloadImage } from '../utils/preloadImage';
+import { getImageUrl } from '../utils/cloudinaryImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
@@ -90,6 +93,7 @@ interface GameProps {
   onRestart: () => void;
   onNewGame: () => void;
   newlyUnlockedAchievements: string[];
+  gameMilestones: GameMilestone[];
   allEvents: HistoricalEvent[];
 }
 
@@ -104,6 +108,7 @@ const Game: React.FC<GameProps> = ({
   onRestart,
   onNewGame,
   newlyUnlockedAchievements,
+  gameMilestones,
   allEvents,
 }) => {
   const [showConfetti, setShowConfetti] = useState(false);
@@ -114,6 +119,7 @@ const Game: React.FC<GameProps> = ({
   const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
   const [showUnlock, setShowUnlock] = useState(false);
+  const [showMilestones, setShowMilestones] = useState(false);
 
   // Catalogue keyed by name so unlocked badges can resolve their art (reuses loaded events).
   const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
@@ -126,6 +132,15 @@ const Game: React.FC<GameProps> = ({
         .filter((def): def is (typeof ACHIEVEMENTS)[number] => def !== undefined),
     [newlyUnlockedAchievements]
   );
+
+  // Warm the badge-art cache at game over (when unlockedDefs lands), so by the time the
+  // unlock modal opens — after the game-over popup is dismissed — the images are ready.
+  // Same getImageUrl(url, 'detail') call AchievementCard uses, so the URL is a cache hit.
+  useEffect(() => {
+    unlockedDefs.forEach((def) =>
+      preloadImage(getImageUrl(eventsByName.get(def.eventName)?.image_url, 'detail'))
+    );
+  }, [unlockedDefs, eventsByName]);
 
   // Detect the game-over popup → null transition to reveal the unlock modal once per game.
   const prevPopupTypeRef = useRef(pendingPopup?.type);
@@ -209,6 +224,7 @@ const Game: React.FC<GameProps> = ({
     if (state.phase === 'playing') {
       setGameOverPopupShown(false);
       setShowUnlock(false);
+      setShowMilestones(false);
       unlockConsumedRef.current = false;
     }
   }, [state.phase, gameOverPopupShown, showGameOverPopup]);
@@ -219,16 +235,13 @@ const Game: React.FC<GameProps> = ({
   useEffect(() => {
     const wasGameOverPopup = prevPopupTypeRef.current === 'gameOver';
     prevPopupTypeRef.current = pendingPopup?.type;
-    if (
-      wasGameOverPopup &&
-      !pendingPopup &&
-      !unlockConsumedRef.current &&
-      unlockedDefs.length > 0
-    ) {
+    if (wasGameOverPopup && !pendingPopup && !unlockConsumedRef.current) {
       unlockConsumedRef.current = true;
-      setShowUnlock(true);
+      // Reveal personal-best milestones first; achievements follow when milestones are dismissed.
+      if (gameMilestones.length > 0) setShowMilestones(true);
+      else if (unlockedDefs.length > 0) setShowUnlock(true);
     }
-  }, [pendingPopup, unlockedDefs.length]);
+  }, [pendingPopup, unlockedDefs.length, gameMilestones.length]);
 
   // Show first-time rules popup when starting a new game mode for the first time
   useEffect(() => {
@@ -408,6 +421,15 @@ const Game: React.FC<GameProps> = ({
               }}
             />
           )}
+
+          <MilestonePopup
+            open={showMilestones}
+            milestones={gameMilestones}
+            onDismiss={() => {
+              setShowMilestones(false);
+              if (unlockedDefs.length > 0) setShowUnlock(true);
+            }}
+          />
 
           <AchievementUnlock
             open={showUnlock}

@@ -361,6 +361,41 @@ input,
   animation: streakGlow 1.2s ease-in-out infinite;
 }
 
+/* Achievement-unlock reveal: diagonal light sweep across the badge ("stagger" variant). */
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(130%) skewX(-18deg);
+    opacity: 0;
+  }
+}
+
+.animate-shine-sweep {
+  animation: shineSweep 0.9s ease-out;
+}
+
+/* Achievement-unlock reveal: radiating halo behind the badge ("glow" variant / glow flash). */
+@keyframes haloPulse {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+.animate-halo-pulse {
+  animation: haloPulse 0.8s ease-out;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-shake-light,
@@ -369,7 +404,9 @@ input,
   .animate-success-glow-bright,
   .animate-success-glow-golden,
   .animate-streak-pulse,
-  .animate-streak-glow {
+  .animate-streak-glow,
+  .animate-shine-sweep,
+  .animate-halo-pulse {
     animation: none;
   }
 }

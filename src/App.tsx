@@ -90,6 +90,7 @@ function App({
     showGameOverPopup,
     dismissPopup,
     newlyUnlockedAchievements,
+    gameMilestones,
   } = useWhenGame();
 
   // Auto-start daily game when accessed via /daily route
@@ -165,6 +166,7 @@ function App({
           onRestart={restartGame}
           onNewGame={handlePlayAgain}
           newlyUnlockedAchievements={newlyUnlockedAchievements}
+          gameMilestones={gameMilestones}
           allEvents={allEvents}
         />
       )}

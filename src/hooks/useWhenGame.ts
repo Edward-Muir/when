@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import {
   HistoricalEvent,
   WhenGameState,
@@ -14,7 +14,8 @@ import {
   filterByEra,
 } from '../utils/eventLoader';
 import { saveDailyResult } from '../utils/playerStorage';
-import { buildEventsByName, recordGameResult } from '../utils/statsStorage';
+import { GameMilestone } from '../utils/statsStorage';
+import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
@@ -52,6 +53,8 @@ interface UseWhenGameReturn {
   dismissPopup: () => void;
   /** Achievement ids unlocked by the most recently recorded game (for Phase 5 UI). */
   newlyUnlockedAchievements: string[];
+  /** Personal-best milestones set by the most recently recorded game (text-only end-of-game popups). */
+  gameMilestones: GameMilestone[];
 }
 
 const initialState: WhenGameState = {
@@ -131,23 +134,8 @@ export function useWhenGame(): UseWhenGameReturn {
 
   useSaveDailyResult(state);
 
-  // Record every finished game into stats + unlock achievements. Unlike the daily save
-  // (idempotent by overwrite), this increments counters, so a ref guards once-per-game.
-  const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
-  const recordedRef = useRef(false);
-  const [newlyUnlockedAchievements, setNewlyUnlockedAchievements] = useState<string[]>([]);
-  useEffect(() => {
-    if (state.phase !== 'gameOver') {
-      recordedRef.current = false;
-      return;
-    }
-    if (recordedRef.current || eventsByName.size === 0) return;
-    recordedRef.current = true;
-    const unlocked = recordGameResult(state, eventsByName);
-    // Always set (empty when nothing new) so a later game doesn't re-surface a prior game's unlocks.
-    setNewlyUnlockedAchievements(unlocked);
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- `state` read once per game, ref-guarded
-  }, [state.phase, eventsByName]);
+  // Record every finished game into stats, unlocking achievements and detecting personal bests.
+  const { newlyUnlockedAchievements, gameMilestones } = useGameStatsRecorder(state, allEvents);
 
   const startGame = useCallback(
     (config: GameConfig) => {
@@ -486,5 +474,6 @@ export function useWhenGame(): UseWhenGameReturn {
     showGameOverPopup,
     dismissPopup,
     newlyUnlockedAchievements,
+    gameMilestones,
   };
 }
