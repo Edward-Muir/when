@@ -132,6 +132,96 @@ export function markModePlayed(mode: GameMode): void {
   }
 }
 
+// --- Nav "new" Dot Storage ---
+
+/** Top-bar nav destinations that get a one-time "new" dot until first clicked. */
+export type NavKey = 'stats' | 'achievements' | 'timeline';
+
+interface NavSeen {
+  stats?: boolean;
+  achievements?: boolean;
+  timeline?: boolean;
+}
+
+const NAV_SEEN_KEY = 'when-nav-seen';
+
+// Switch-based access (mirrors getModePlayed/setModePlayed) to avoid dynamic key indexing.
+function getNavSeen(data: NavSeen, key: NavKey): boolean {
+  switch (key) {
+    case 'stats':
+      return data.stats === true;
+    case 'achievements':
+      return data.achievements === true;
+    case 'timeline':
+      return data.timeline === true;
+  }
+}
+
+function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
+  switch (key) {
+    case 'stats':
+      return { ...data, stats: true };
+    case 'achievements':
+      return { ...data, achievements: true };
+    case 'timeline':
+      return { ...data, timeline: true };
+  }
+}
+
+/**
+ * Check whether a nav destination's "new" dot has already been dismissed
+ * (i.e. the user has clicked/visited it before).
+ */
+export function hasSeenNav(key: NavKey): boolean {
+  try {
+    const stored = localStorage.getItem(NAV_SEEN_KEY);
+    if (!stored) return false;
+    const data: NavSeen = JSON.parse(stored);
+    return getNavSeen(data, key);
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Mark a nav destination as seen so its "new" dot no longer shows.
+ */
+export function markNavSeen(key: NavKey): void {
+  try {
+    const stored = localStorage.getItem(NAV_SEEN_KEY);
+    const data: NavSeen = stored ? JSON.parse(stored) : {};
+    localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(setNavSeen(data, key)));
+  } catch {
+    console.warn('Failed to save nav seen state to localStorage');
+  }
+}
+
+// --- Timeline Intro Storage ---
+
+const TIMELINE_INTRO_SEEN_KEY = 'when-timeline-intro-seen';
+
+/**
+ * Check if the first-view My Timeline explainer has been shown before.
+ */
+export function hasSeenTimelineIntro(): boolean {
+  try {
+    return localStorage.getItem(TIMELINE_INTRO_SEEN_KEY) === '1';
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Mark the My Timeline explainer as seen so it won't auto-show again.
+ */
+export function markTimelineIntroSeen(): void {
+  try {
+    localStorage.setItem(TIMELINE_INTRO_SEEN_KEY, '1');
+  } catch {
+    console.warn('Failed to save timeline intro seen state to localStorage');
+  }
+}
+
 // --- Timeline High Score Storage ---
 
 const TIMELINE_HIGH_SCORE_KEY = 'when-timeline-high-score';

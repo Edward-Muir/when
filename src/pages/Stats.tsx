@@ -91,8 +91,8 @@ const Stats: React.FC = () => {
       <div className="mx-auto max-w-2xl px-4 pt-topbar-fixed pb-safe">
         <h1 className="py-5 font-display text-2xl font-bold text-text">Stats</h1>
 
-        {/* Headline trio */}
-        <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
+        {/* Headline stats */}
+        <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
           <Card>
             <StatRow
               icon={<Gamepad2 className={iconClass} />}
@@ -105,6 +105,13 @@ const Stats: React.FC = () => {
               icon={<Ruler className={iconClass} />}
               value={longestTimeline}
               label="Longest timeline"
+            />
+          </Card>
+          <Card>
+            <StatRow
+              icon={<Zap className={iconClass} />}
+              value={lifetime.bestInGameStreakEver}
+              label="Best in-game streak"
             />
           </Card>
           <Card>

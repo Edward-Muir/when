@@ -1,4 +1,5 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
+import { SlidersHorizontal } from 'lucide-react';
 import {
   HistoricalEvent,
   Difficulty,
@@ -11,10 +12,12 @@ import {
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import { getCollectionState } from '../utils/statsStorage';
 import { ERA_DEFINITIONS } from '../utils/eras';
+import { hasSeenTimelineIntro, markTimelineIntroSeen } from '../utils/playerStorage';
 import TopBar from './TopBar';
 import Timeline from './Timeline/Timeline';
 import FilterPopup from './FilterPopup';
 import GamePopup from './GamePopup';
+import TimelineIntroModal from './TimelineIntroModal';
 
 interface ViewTimelineProps {
   allEvents: HistoricalEvent[];
@@ -32,6 +35,12 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
   // UI state
   const [showFilterPopup, setShowFilterPopup] = useState(false);
   const [pendingPopup, setPendingPopup] = useState<GamePopupData | null>(null);
+  const [showIntro, setShowIntro] = useState(false);
+
+  // First-view explainer: show once, then remember it's been seen.
+  useEffect(() => {
+    if (!hasSeenTimelineIntro()) setShowIntro(true);
+  }, []);
 
   // The player's personal collection: only events they've correctly placed across all games.
   const collectedEvents = useMemo(() => {
@@ -72,18 +81,26 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
         onHomeClick={onHomeClick}
         showStatsAchievements
         activeNav="timeline"
-        showFilter={true}
-        onFilterClick={() => setShowFilterPopup(true)}
         gameMode={null}
       />
 
-      {/* Header — styled like the Achievements page heading */}
+      {/* Header — styled like the Achievements page heading.
+          Filter sits here (a content control), not in the nav bar. */}
       <div className="pt-topbar-fixed px-4">
-        <div className="mx-auto flex w-full max-w-2xl flex-wrap items-baseline justify-between gap-2 py-5">
+        <div className="mx-auto flex w-full max-w-2xl flex-wrap items-center justify-between gap-2 py-5">
           <h1 className="font-display text-2xl font-bold text-text">My Timeline</h1>
-          <span className="font-mono text-sm text-text-muted">
-            {collected} / {total || '…'} collected
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="font-mono text-sm text-text-muted">
+              {collected} / {total || '…'} collected
+            </span>
+            <button
+              onClick={() => setShowFilterPopup(true)}
+              className="p-2 rounded-xl bg-surface border border-border hover:bg-border transition-colors active:scale-95"
+              aria-label="Filter timeline"
+            >
+              <SlidersHorizontal className="w-5 h-5 text-text" />
+            </button>
+          </div>
         </div>
       </div>
 
@@ -134,6 +151,15 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
         setSelectedCategories={setSelectedCategories}
         selectedEras={selectedEras}
         setSelectedEras={setSelectedEras}
+      />
+
+      {/* First-view explainer */}
+      <TimelineIntroModal
+        isOpen={showIntro}
+        onDismiss={() => {
+          markTimelineIntroSeen();
+          setShowIntro(false);
+        }}
       />
 
       {/* Event Description Popup */}
