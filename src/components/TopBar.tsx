@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Sun, Moon, Home, Menu as MenuIcon, SlidersHorizontal, Share2 } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
-import { shareApp } from '../utils/share';
+import { useNavigate } from 'react-router-dom';
+import { Home, Menu as MenuIcon, BarChart3, Trophy, Hourglass } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
+import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
@@ -14,10 +14,11 @@ interface TopBarProps {
   showTitle?: boolean;
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
-  showFilter?: boolean;
-  onFilterClick?: () => void;
-  onViewTimeline?: () => void;
   dailyTheme?: string;
+  /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
+  showStatsAchievements?: boolean;
+  /** Which nav destination is the current page — that button renders in the active style. */
+  activeNav?: 'home' | 'stats' | 'achievements' | 'timeline';
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -25,18 +26,19 @@ const TopBar: React.FC<TopBarProps> = ({
   showTitle = true,
   onHomeClick,
   gameMode,
-  showFilter = false,
-  onFilterClick,
-  onViewTimeline,
   dailyTheme,
+  showStatsAchievements = false,
+  activeNav,
 }) => {
-  const { isDark, toggleTheme } = useTheme();
+  const navigate = useNavigate();
   const { updateAvailable } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [updateDismissed, setUpdateDismissed] = useState(false);
 
+  // `relative` lets the "new" dot anchor to the top-right of nav buttons.
   const buttonClass = `
+    relative
     p-2 rounded-xl
     bg-surface
     border border-border
@@ -47,10 +49,71 @@ const TopBar: React.FC<TopBarProps> = ({
 
   const iconClass = 'w-5 h-5 text-text';
 
-  const handleShare = async () => {
-    const showClipboardToast = await shareApp();
-    if (showClipboardToast) setShowToast(true);
+  // Active (current-page) nav button: filled accent + white icon.
+  const activeButtonClass = `
+    relative
+    p-2 rounded-xl
+    bg-accent
+    border border-accent
+    transition-colors
+    active:scale-95
+  `;
+  const activeIconClass = 'w-5 h-5 text-white';
+
+  const navBtn = (key: 'home' | 'stats' | 'achievements' | 'timeline') =>
+    activeNav === key ? activeButtonClass : buttonClass;
+  const navIcon = (key: 'home' | 'stats' | 'achievements' | 'timeline') =>
+    activeNav === key ? activeIconClass : iconClass;
+
+  // One-time "new" dots on the Stats/Achievements/Timeline buttons until first visited.
+  const [seenNav, setSeenNav] = useState(() => ({
+    stats: hasSeenNav('stats'),
+    achievements: hasSeenNav('achievements'),
+    timeline: hasSeenNav('timeline'),
+  }));
+
+  // Switch-based updates avoid dynamic key indexing (security/detect-object-injection).
+  const markSeen = (key: NavKey) => {
+    markNavSeen(key);
+    setSeenNav((prev) => {
+      switch (key) {
+        case 'stats':
+          return { ...prev, stats: true };
+        case 'achievements':
+          return { ...prev, achievements: true };
+        case 'timeline':
+          return { ...prev, timeline: true };
+      }
+    });
   };
+  const isSeen = (key: NavKey) => {
+    switch (key) {
+      case 'stats':
+        return seenNav.stats;
+      case 'achievements':
+        return seenNav.achievements;
+      case 'timeline':
+        return seenNav.timeline;
+    }
+  };
+
+  // Being on a nav page counts as seeing it — clear its dot so it never shows on its own button.
+  useEffect(() => {
+    if (activeNav && activeNav !== 'home' && !isSeen(activeNav)) {
+      markSeen(activeNav);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeNav]);
+
+  const visitNav = (key: NavKey) => {
+    if (!isSeen(key)) markSeen(key);
+    navigate(`/${key}`);
+  };
+
+  // Gold "new" dot; the bg ring separates it from the button edge.
+  const newDot = (
+    <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
+  );
 
   return (
     <>
@@ -80,33 +143,52 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
+          {/* Navigation only: Home · Stats · Achievements · Timeline · Menu.
+              The current destination is rendered in the active (accent-filled) style. */}
           <div className="flex items-center gap-2">
-            {/* Share Button */}
-            <button onClick={handleShare} className={buttonClass} aria-label="Share app">
-              <Share2 className={iconClass} />
-            </button>
-
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className={buttonClass}
-              aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            >
-              {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
-            </button>
-
-            {/* Filter Button - only shows on View Timeline */}
-            {showFilter && onFilterClick && (
-              <button onClick={onFilterClick} className={buttonClass} aria-label="Filter timeline">
-                <SlidersHorizontal className={iconClass} />
+            {/* Home Button - a permanent nav destination; active when on the home page */}
+            {showHome && onHomeClick && (
+              <button
+                onClick={onHomeClick}
+                className={navBtn('home')}
+                aria-label="Go home"
+                aria-current={activeNav === 'home' ? 'page' : undefined}
+              >
+                <Home className={navIcon('home')} />
               </button>
             )}
 
-            {/* Home Button - only shows during gameplay */}
-            {showHome && onHomeClick && (
-              <button onClick={onHomeClick} className={buttonClass} aria-label="Go home">
-                <Home className={iconClass} />
-              </button>
+            {/* Stats + Achievements + Timeline (sibling routes; active one is highlighted) */}
+            {showStatsAchievements && (
+              <>
+                <button
+                  onClick={() => visitNav('stats')}
+                  className={navBtn('stats')}
+                  aria-label="View stats"
+                  aria-current={activeNav === 'stats' ? 'page' : undefined}
+                >
+                  <BarChart3 className={navIcon('stats')} />
+                  {!seenNav.stats && newDot}
+                </button>
+                <button
+                  onClick={() => visitNav('achievements')}
+                  className={navBtn('achievements')}
+                  aria-label="View achievements"
+                  aria-current={activeNav === 'achievements' ? 'page' : undefined}
+                >
+                  <Trophy className={navIcon('achievements')} />
+                  {!seenNav.achievements && newDot}
+                </button>
+                <button
+                  onClick={() => visitNav('timeline')}
+                  className={navBtn('timeline')}
+                  aria-label="View my timeline"
+                  aria-current={activeNav === 'timeline' ? 'page' : undefined}
+                >
+                  <Hourglass className={navIcon('timeline')} />
+                  {!seenNav.timeline && newDot}
+                </button>
+              </>
             )}
 
             {/* Menu Button */}
@@ -134,7 +216,6 @@ const TopBar: React.FC<TopBarProps> = ({
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
-        onViewTimeline={onViewTimeline}
       />
 
       {/* Update Available Popup */}

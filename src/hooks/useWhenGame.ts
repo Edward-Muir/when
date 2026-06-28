@@ -8,11 +8,14 @@ import {
 } from '../types';
 import {
   loadAllEvents,
+  getCachedEvents,
   filterByDifficulty,
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
 import { saveDailyResult } from '../utils/playerStorage';
+import { GameMilestone } from '../utils/statsStorage';
+import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
@@ -40,7 +43,6 @@ interface UseWhenGameReturn {
   cycleHand: () => void;
   resetGame: () => void;
   restartGame: () => void;
-  viewTimeline: () => void;
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
@@ -48,12 +50,17 @@ interface UseWhenGameReturn {
   showDescriptionPopup: (event: HistoricalEvent) => void;
   showGameOverPopup: () => void;
   dismissPopup: () => void;
+  /** Achievement ids unlocked by the most recently recorded game (for Phase 5 UI). */
+  newlyUnlockedAchievements: string[];
+  /** Personal-best milestones set by the most recently recorded game (text-only end-of-game popups). */
+  gameMilestones: GameMilestone[];
 }
 
 const initialState: WhenGameState = {
   phase: 'loading',
   gameMode: null,
   timeline: [],
+  seedEventName: undefined,
   deck: [],
   placementHistory: [],
   lastPlacementResult: null,
@@ -103,8 +110,13 @@ function useSaveDailyResult(state: WhenGameState) {
 }
 
 export function useWhenGame(): UseWhenGameReturn {
-  const [state, setState] = useState<WhenGameState>(initialState);
-  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>([]);
+  // On a warm events cache (e.g. remount after visiting /stats or /achievements), start
+  // straight in modeSelect with the catalogue already in hand — no loading-screen flash.
+  // Cold first load still falls through to 'loading' and the effect below.
+  const [state, setState] = useState<WhenGameState>(() =>
+    (getCachedEvents()?.length ?? 0) > 0 ? { ...initialState, phase: 'modeSelect' } : initialState
+  );
+  const [allEvents, setAllEvents] = useState<HistoricalEvent[]>(() => getCachedEvents() ?? []);
   const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
   const [pendingPopupState, setPendingPopupState] = useState<PendingPopupState>({
     popup: null,
@@ -120,6 +132,9 @@ export function useWhenGame(): UseWhenGameReturn {
   }, []);
 
   useSaveDailyResult(state);
+
+  // Record every finished game into stats, unlocking achievements and detecting personal bests.
+  const { newlyUnlockedAchievements, gameMilestones } = useGameStatsRecorder(state, allEvents);
 
   const startGame = useCallback(
     (config: GameConfig) => {
@@ -175,6 +190,7 @@ export function useWhenGame(): UseWhenGameReturn {
         phase: 'transitioning',
         gameMode: mode,
         timeline: timelineEvents,
+        seedEventName: shuffled[0].name,
         players,
         currentPlayerIndex: 0,
         turnNumber: 1,
@@ -389,10 +405,6 @@ export function useWhenGame(): UseWhenGameReturn {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
 
-  const viewTimeline = useCallback(() => {
-    setState((prev) => ({ ...prev, phase: 'viewTimeline' }));
-  }, []);
-
   const restartGame = useCallback(() => {
     if (state.lastConfig) {
       startGame(state.lastConfig);
@@ -448,7 +460,6 @@ export function useWhenGame(): UseWhenGameReturn {
     cycleHand,
     resetGame,
     restartGame,
-    viewTimeline,
     modalEvent,
     openModal,
     closeModal,
@@ -456,5 +467,7 @@ export function useWhenGame(): UseWhenGameReturn {
     showDescriptionPopup,
     showGameOverPopup,
     dismissPopup,
+    newlyUnlockedAchievements,
+    gameMilestones,
   };
 }

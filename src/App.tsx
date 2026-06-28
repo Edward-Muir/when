@@ -1,16 +1,17 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
 import { useWhenGame } from './hooks/useWhenGame';
-import { GameConfig } from './types';
+import { useImagePrefetch } from './hooks/useImagePrefetch';
+import { pickIntroEvents } from './utils/introEvents';
+import { GameConfig, HistoricalEvent } from './types';
 import { buildDailyConfig } from './utils/dailyConfig';
 import { hasPlayedToday } from './utils/playerStorage';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
-import ViewTimeline from './components/ViewTimeline';
 
 interface AppProps {
   autoStartDaily?: boolean;
@@ -84,12 +85,25 @@ function App({
     cycleHand,
     resetGame,
     restartGame,
-    viewTimeline,
     pendingPopup,
     showDescriptionPopup,
     showGameOverPopup,
     dismissPopup,
+    newlyUnlockedAchievements,
+    gameMilestones,
   } = useWhenGame();
+
+  // Intro-animation cards: re-rolled whenever we (re)enter modeSelect so each game
+  // gets a fresh intro, but held in state so the set warmed during the home-screen
+  // dwell is exactly the set the transition renders. Warmed by useImagePrefetch.
+  const [introEvents, setIntroEvents] = useState<HistoricalEvent[]>([]);
+  useEffect(() => {
+    if (state.phase === 'modeSelect' && allEvents.length > 0) {
+      setIntroEvents(pickIntroEvents(allEvents));
+    }
+  }, [state.phase, allEvents]);
+
+  useImagePrefetch(state, introEvents);
 
   // Auto-start daily game when accessed via /daily route
   const hasAutoStarted = useRef(false);
@@ -136,19 +150,15 @@ function App({
         <ModeSelect
           key="modeSelect"
           onStart={handleStart}
-          onViewTimeline={viewTimeline}
           isLoading={state.phase === 'loading'}
           allEvents={allEvents}
         />
-      )}
-      {state.phase === 'viewTimeline' && (
-        <ViewTimeline key="viewTimeline" allEvents={allEvents} onHomeClick={resetGame} />
       )}
       {state.phase === 'transitioning' && (
         <GameStartTransition
           key="transition"
           onComplete={completeTransition}
-          allEvents={allEvents}
+          events={introEvents}
         />
       )}
       {(state.phase === 'playing' || state.phase === 'gameOver') && (
@@ -163,6 +173,9 @@ function App({
           dismissPopup={dismissPopup}
           onRestart={restartGame}
           onNewGame={handlePlayAgain}
+          newlyUnlockedAchievements={newlyUnlockedAchievements}
+          gameMilestones={gameMilestones}
+          allEvents={allEvents}
         />
       )}
     </AnimatePresence>

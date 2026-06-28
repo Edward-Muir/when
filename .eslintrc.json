@@ -28,7 +28,7 @@
       }
     },
     {
-      "files": ["src/utils/wordlists.ts"],
+      "files": ["src/utils/wordlists.ts", "src/data/achievements.ts"],
       "rules": {
         "max-lines": "off"
       }

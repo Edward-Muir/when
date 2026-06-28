@@ -4,6 +4,7 @@ import { ArrowLeft, Check, X, ChevronLeft, ChevronRight, Clipboard, Sun, Moon } 
 import { HistoricalEvent } from '../types';
 import { loadAllEvents } from '../utils/eventLoader';
 import { getImageUrl } from '../utils/cloudinaryImage';
+import { preloadEventImages } from '../utils/preloadImage';
 import { getQcResults, setQcResult } from '../utils/imageQcStorage';
 import { useTheme } from '../hooks/useTheme';
 
@@ -83,15 +84,7 @@ const ImageQc: React.FC = () => {
   // Prefetch the next few images so they're warm in the browser cache by the
   // time we navigate to them — no waiting on each step forward.
   useEffect(() => {
-    if (!queue.length) return;
-    for (let i = pos + 1; i <= pos + 5 && i < queue.length; i++) {
-      // eslint-disable-next-line security/detect-object-injection
-      const url = getImageUrl(queue[i].image_url, 'detail');
-      if (url) {
-        const img = new Image();
-        img.src = url;
-      }
-    }
+    preloadEventImages(queue.slice(pos + 1, pos + 6), ['detail']);
   }, [pos, queue]);
 
   // The verdict already recorded for the event on screen (so revisiting via Back

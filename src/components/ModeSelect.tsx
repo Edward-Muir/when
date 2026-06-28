@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Play, Share2, Check } from 'lucide-react';
 import {
@@ -34,7 +35,6 @@ import Leaderboard from './Leaderboard';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
-  onViewTimeline?: () => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
 }
@@ -79,12 +79,8 @@ const getDefaultHandSize = (count: number): number => {
   }
 };
 
-const ModeSelect: React.FC<ModeSelectProps> = ({
-  onStart,
-  onViewTimeline,
-  isLoading = false,
-  allEvents,
-}) => {
+const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
+  const navigate = useNavigate();
   // Check if daily has been played today
   const todayResult = getTodayResult();
 
@@ -332,7 +328,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide pb-safe overflow-hidden transition-colors"
     >
       {/* Top Bar */}
-      <TopBar showHome={false} showTitle={false} onViewTimeline={onViewTimeline} />
+      <TopBar
+        showHome
+        showTitle={false}
+        showStatsAchievements
+        activeNav="home"
+        onHomeClick={() => navigate('/')}
+      />
 
       <div className="w-full max-w-sm mx-auto flex flex-col flex-1 min-h-0 px-3">
         <ModePager

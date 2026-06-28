@@ -19,33 +19,56 @@ async function loadEventFile(file: string): Promise<HistoricalEvent[]> {
   }
 }
 
+// Module-level cache. Events are static for a session, so the first successful load is
+// reused for the lifetime of the SPA — this is what lets a remount (e.g. navigating Home
+// from /stats or /achievements) start instantly instead of re-fetching and flashing the
+// loading screen. Only non-empty results are cached so a failed/empty load can still retry.
+let cachedEvents: HistoricalEvent[] | null = null;
+let inflight: Promise<HistoricalEvent[]> | null = null;
+
+/** Synchronous peek at the cache (null until the first successful load). */
+export function getCachedEvents(): HistoricalEvent[] | null {
+  return cachedEvents;
+}
+
 export async function loadAllEvents(): Promise<HistoricalEvent[]> {
-  try {
-    const manifestResponse = await fetch('/events/manifest.json');
-    if (!manifestResponse.ok) {
-      throw new Error('Failed to load events manifest');
+  if (cachedEvents) return cachedEvents;
+  if (inflight) return inflight;
+
+  inflight = (async () => {
+    try {
+      const manifestResponse = await fetch('/events/manifest.json');
+      if (!manifestResponse.ok) {
+        throw new Error('Failed to load events manifest');
+      }
+      const manifest: EventManifest = await manifestResponse.json();
+
+      // Event files each hold a mix of categories now, so the manifest is just a flat
+      // file list. Each event's own `category` field is the source of truth.
+      const files = manifest.files;
+
+      // Load all files in parallel
+      const eventArrays = await Promise.all(files.map(loadEventFile));
+      const allEvents = eventArrays.flat();
+
+      // Deduplicate by name
+      const deduplicatedEvents = deduplicateEvents(allEvents);
+
+      // Only show events that have a custom (Cloudinary) image. Events still backed
+      // by legacy Wikimedia thumbnails or no image stay in the JSON but are hidden
+      // from play until a custom image is added.
+      const events = deduplicatedEvents.filter((event) => isCloudinaryImage(event.image_url));
+      if (events.length > 0) cachedEvents = events;
+      return events;
+    } catch (error) {
+      console.error('Failed to load events:', error);
+      return [];
+    } finally {
+      inflight = null;
     }
-    const manifest: EventManifest = await manifestResponse.json();
+  })();
 
-    // Event files each hold a mix of categories now, so the manifest is just a flat
-    // file list. Each event's own `category` field is the source of truth.
-    const files = manifest.files;
-
-    // Load all files in parallel
-    const eventArrays = await Promise.all(files.map(loadEventFile));
-    const allEvents = eventArrays.flat();
-
-    // Deduplicate by name
-    const deduplicatedEvents = deduplicateEvents(allEvents);
-
-    // Only show events that have a custom (Cloudinary) image. Events still backed
-    // by legacy Wikimedia thumbnails or no image stay in the JSON but are hidden
-    // from play until a custom image is added.
-    return deduplicatedEvents.filter((event) => isCloudinaryImage(event.image_url));
-  } catch (error) {
-    console.error('Failed to load events:', error);
-    return [];
-  }
+  return inflight;
 }
 
 function deduplicateEvents(events: HistoricalEvent[]): HistoricalEvent[] {

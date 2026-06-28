@@ -1,8 +1,21 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Share2, SquarePlus, HelpCircle, X, Mail, List, Shield, FileText } from 'lucide-react';
+import {
+  Share2,
+  SquarePlus,
+  HelpCircle,
+  X,
+  Mail,
+  Shield,
+  FileText,
+  Sun,
+  Moon,
+  Apple,
+} from 'lucide-react';
+import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
+import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
@@ -12,7 +25,6 @@ interface MenuProps {
   onClose: () => void;
   onShowToast: () => void;
   gameMode?: GameMode | null;
-  onViewTimeline?: () => void;
 }
 
 // Install instructions component (moved from TopBar)
@@ -190,10 +202,15 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
   );
 };
 
-const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onViewTimeline }) => {
+const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
+  const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
+
+  // Show the App Store link only to iOS users on the web — not inside the
+  // native Capacitor app (redundant) and not on Android/desktop (iOS-only app).
+  const isIosWeb = installScenario.startsWith('ios-') && !Capacitor.isNativePlatform();
 
   const handleShare = async () => {
     const showClipboardToast = await shareApp();
@@ -212,11 +229,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
 
   const handleRules = () => {
     setShowRulesModal(true);
-  };
-
-  const handleViewTimeline = () => {
-    onClose();
-    onViewTimeline?.();
   };
 
   const menuItemClass = `
@@ -271,10 +283,29 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
 
               {/* Menu Items */}
               <div className="py-2 flex-1">
+                {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
+                <button onClick={toggleTheme} className={menuItemClass}>
+                  {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
+                  <span className="font-body">{isDark ? 'Light Mode' : 'Dark Mode'}</span>
+                </button>
+
                 <button onClick={handleShare} className={menuItemClass}>
                   <Share2 className={iconClass} />
                   <span className="font-body">Share App</span>
                 </button>
+
+                {isIosWeb && (
+                  <a
+                    href="https://apps.apple.com/app/id6760845006"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={menuItemClass}
+                    onClick={onClose}
+                  >
+                    <Apple className={iconClass} />
+                    <span className="font-body">Download the App</span>
+                  </a>
+                )}
 
                 {canShowInstallButton && (
                   <button onClick={handleInstall} className={menuItemClass}>
@@ -287,13 +318,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode, onV
                   <button onClick={handleRules} className={menuItemClass}>
                     <HelpCircle className={iconClass} />
                     <span className="font-body">How to Play</span>
-                  </button>
-                )}
-
-                {onViewTimeline && (
-                  <button onClick={handleViewTimeline} className={menuItemClass}>
-                    <List className={iconClass} />
-                    <span className="font-body">View Timeline</span>
                   </button>
                 )}
 

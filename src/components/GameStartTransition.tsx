@@ -1,17 +1,17 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { HistoricalEvent } from '../types';
 import TimelineEvent from './Timeline/TimelineEvent';
 
 interface GameStartTransitionProps {
   onComplete: () => void;
-  allEvents: HistoricalEvent[];
+  /** Pre-selected intro events (random subset, sorted by year), warmed during modeSelect. */
+  events: HistoricalEvent[];
 }
 
 // Animation timing constants
 const TOTAL_DURATION = 3000; // ms before auto-complete
 const SCROLL_DURATION = 6.0; // seconds for scroll animation (slower)
-const EVENT_COUNT = 20; // number of random events to show
 const SCROLL_PERCENTAGE = 0.66; // Scroll through 66% of cards (leaving ~8 visible at end)
 
 // Approximate height per timeline event (matches TimelineEvent padding/sizing)
@@ -38,16 +38,11 @@ const LoadingEllipsis: React.FC = () => (
   </span>
 );
 
-const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, allEvents }) => {
+const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, events }) => {
   const shouldReduceMotion = useReducedMotion();
 
-  // Pick random events, sorted by year for the timeline
-  const transitionEvents = useMemo(() => {
-    if (allEvents.length === 0) return [];
-    const shuffled = [...allEvents].sort(() => Math.random() - 0.5);
-    const selected = shuffled.slice(0, Math.min(EVENT_COUNT, allEvents.length));
-    return selected.sort((a, b) => a.year - b.year);
-  }, [allEvents]);
+  // Pre-selected by App so the warmed set matches what's shown.
+  const transitionEvents = events;
 
   // Calculate scroll distance - scroll upward through 66% of events
   // This leaves ~8 cards visible on screen at the end of the animation
