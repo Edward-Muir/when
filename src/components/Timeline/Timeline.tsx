@@ -23,6 +23,8 @@ interface TimelineProps {
   preloadDetailImages?: boolean;
   // Center the first card in the viewport on game start (default false; on in gameplay, off in view mode)
   enableCentering?: boolean;
+  // Open scrolled to the middle (median) event instead of the top (default false; on in view mode)
+  startAtMiddle?: boolean;
 }
 
 // Ghost card that shows where the dragged card will land
@@ -53,9 +55,11 @@ const Timeline: React.FC<TimelineProps> = ({
   currentStreak = 0,
   preloadDetailImages = true,
   enableCentering = false,
+  startAtMiddle = false,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasCenteredRef = useRef(false);
+  const hasScrolledMiddleRef = useRef(false);
   const prevLen = useRef(events.length);
 
   // Make the entire timeline a single drop zone
@@ -136,6 +140,33 @@ const Timeline: React.FC<TimelineProps> = ({
     ro.observe(container);
     return () => ro.disconnect();
   }, [events.length, enableCentering]);
+
+  // View mode: open scrolled to the middle (median) event instead of the empty top spacer.
+  // Cards are fixed-height, so scrollHeight is stable as images lazy-load — the median card
+  // stays put. Guarded to run once per load.
+  useLayoutEffect(() => {
+    const container = scrollRef.current;
+    if (!container || !startAtMiddle) return;
+
+    const centerMiddle = () => {
+      if (hasScrolledMiddleRef.current || events.length === 0) return;
+      const midIdx = Math.floor((events.length - 1) / 2);
+      const mid = container.querySelector(
+        `[data-timeline-index="${midIdx}"]`
+      ) as HTMLElement | null;
+      if (!mid) return;
+      const cRect = container.getBoundingClientRect();
+      const mRect = mid.getBoundingClientRect();
+      const cardCenter = mRect.top - cRect.top + container.scrollTop + mRect.height / 2;
+      container.scrollTop = cardCenter - container.clientHeight / 2;
+      hasScrolledMiddleRef.current = true;
+    };
+
+    centerMiddle();
+    const ro = new ResizeObserver(centerMiddle);
+    ro.observe(container);
+    return () => ro.disconnect();
+  }, [events.length, startAtMiddle]);
 
   return (
     <div className="h-full relative">

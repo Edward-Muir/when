@@ -126,6 +126,7 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
             lastPlacementResult={null}
             animationPhase={null}
             preloadDetailImages={false}
+            startAtMiddle
           />
         ) : (
           <div className="h-full flex items-center justify-center p-8">
