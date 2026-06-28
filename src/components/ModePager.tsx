@@ -12,6 +12,13 @@ interface ModePagerProps {
    * page's indicator can match its own accent. Defaults to gold (`accent`) for every page.
    */
   activeColors?: { dot: string; text: string }[];
+  /**
+   * Controlled active page. When provided, the pager scrolls to this index whenever it
+   * changes externally (e.g. a top-nav button), keeping swipe and buttons in sync.
+   */
+  activeIndex?: number;
+  /** Reports the active page index back to the parent as the user swipes. */
+  onIndexChange?: (index: number) => void;
 }
 
 /**
@@ -19,7 +26,14 @@ interface ModePagerProps {
  * sliver of the neighbour peeks (swipe affordance). Below the pages sits a tappable
  * page indicator, and on first visit a subtle nudge animation hints that you can swipe.
  */
-const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey, activeColors }) => {
+const ModePager: React.FC<ModePagerProps> = ({
+  labels,
+  children,
+  hintKey,
+  activeColors,
+  activeIndex: controlledIndex,
+  onIndexChange,
+}) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const pages = React.Children.toArray(children);
@@ -28,21 +42,43 @@ const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey, active
   // eslint-disable-next-line security/detect-object-injection
   const activeColor = colors[activeIndex] ?? { dot: 'bg-accent', text: 'text-accent' };
 
+  const goToPage = useCallback(
+    (index: number) => {
+      const track = trackRef.current;
+      if (!track) return;
+      const panelWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
+      if (!panelWidth) return;
+      const clamped = Math.max(0, Math.min(pages.length - 1, index));
+      track.scrollTo({ left: clamped * panelWidth, behavior: 'smooth' });
+    },
+    [pages.length]
+  );
+
   const handleScroll = useCallback(() => {
     const track = trackRef.current;
     if (!track) return;
     const panelWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
     if (!panelWidth) return;
-    const index = Math.round(track.scrollLeft / panelWidth);
-    setActiveIndex(Math.max(0, Math.min(pages.length - 1, index)));
-  }, [pages.length]);
+    const index = Math.max(
+      0,
+      Math.min(pages.length - 1, Math.round(track.scrollLeft / panelWidth))
+    );
+    setActiveIndex(index);
+    onIndexChange?.(index);
+  }, [pages.length, onIndexChange]);
 
-  const goToPage = useCallback((index: number) => {
+  // Controlled mode: scroll the track when the parent changes the active page (e.g. a
+  // top-nav button). Only act when it diverges from the current scroll position so the
+  // scroll handler's own updates don't fight this effect.
+  useEffect(() => {
+    if (controlledIndex === undefined) return;
     const track = trackRef.current;
     if (!track) return;
-    const left = index <= 0 ? 0 : track.scrollWidth - track.clientWidth;
-    track.scrollTo({ left, behavior: 'smooth' });
-  }, []);
+    const panelWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
+    if (!panelWidth) return;
+    const current = Math.round(track.scrollLeft / panelWidth);
+    if (current !== controlledIndex) goToPage(controlledIndex);
+  }, [controlledIndex, goToPage]);
 
   // One-time first-launch hint: nudge slightly right, then snap back.
   useEffect(() => {
@@ -88,37 +124,41 @@ const ModePager: React.FC<ModePagerProps> = ({ labels, children, hintKey, active
         ))}
       </div>
 
-      {/* Page indicator (tappable fallback for the swipe gesture) */}
-      <div className="flex items-center justify-center gap-3 py-3">
-        <div className="flex items-center gap-1.5">
-          {labels.map((label, i) => (
-            <button
-              key={i}
-              onClick={() => goToPage(i)}
-              aria-label={`Go to ${label} page`}
-              className="py-2 px-0.5"
-            >
-              <span
-                className={`block h-1.5 rounded-full transition-all duration-300 ${
-                  i === activeIndex ? `w-6 ${activeColor.dot}` : 'w-1.5 bg-border'
-                }`}
-              />
-            </button>
-          ))}
-        </div>
-        <div className="text-[11px] font-body font-semibold uppercase tracking-[0.15em] text-text-muted">
-          {labels.map((label, i) => (
-            <React.Fragment key={i}>
-              {i > 0 && <span className="mx-1.5 text-border">·</span>}
+      {/* Page indicator (tappable fallback for the swipe gesture). Two equal halves meet at
+          the viewport centerline: dots right-aligned in the left half, label left-aligned in
+          the right half, so the gap between them sits dead-center. */}
+      <div className="flex items-center py-3">
+        <div className="flex flex-1 justify-end pr-1.5">
+          <div className="flex items-center gap-1.5">
+            {labels.map((label, i) => (
               <button
+                key={i}
                 onClick={() => goToPage(i)}
-                className={`align-middle transition-colors ${
-                  i === activeIndex ? activeColor.text : 'text-border'
-                }`}
+                aria-label={`Go to ${label} page`}
+                className="py-2 px-0.5"
               >
-                {label}
+                <span
+                  className={`block h-1.5 rounded-full transition-all duration-300 ${
+                    i === activeIndex ? `w-6 ${activeColor.dot}` : 'w-1.5 bg-border'
+                  }`}
+                />
               </button>
-            </React.Fragment>
+            ))}
+          </div>
+        </div>
+        {/* Only the active page's label is shown, but every label is stacked in the same
+            grid cell (the inactive ones invisible) so the slot is always as wide as the
+            widest label — the indicator never shifts as you navigate. */}
+        <div className="grid flex-1 justify-items-start pl-1.5">
+          {labels.map((label, i) => (
+            <span
+              key={i}
+              className={`[grid-area:1/1] whitespace-nowrap text-[11px] font-body font-semibold uppercase tracking-[0.15em] transition-colors ${
+                i === activeIndex ? activeColor.text : 'invisible'
+              }`}
+            >
+              {label}
+            </span>
           ))}
         </div>
       </div>

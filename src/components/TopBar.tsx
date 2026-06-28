@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, BarChart3, Trophy, Hourglass } from 'lucide-react';
+import { Home, Menu as MenuIcon, BarChart3, Trophy, Hourglass, Settings } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
@@ -18,7 +18,13 @@ interface TopBarProps {
   /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
-  activeNav?: 'home' | 'stats' | 'achievements' | 'timeline';
+  activeNav?: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
+  /**
+   * When provided, nav buttons call this with the destination key instead of routing — the
+   * home screen uses it to scroll its unified pager. A Custom (cog) button is shown only in
+   * this mode (Custom has no standalone route). When absent, buttons navigate to routes.
+   */
+  onNavClick?: (key: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline') => void;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -29,6 +35,7 @@ const TopBar: React.FC<TopBarProps> = ({
   dailyTheme,
   showStatsAchievements = false,
   activeNav,
+  onNavClick,
 }) => {
   const navigate = useNavigate();
   const { updateAvailable } = useVersionCheck();
@@ -60,10 +67,25 @@ const TopBar: React.FC<TopBarProps> = ({
   `;
   const activeIconClass = 'w-5 h-5 text-white';
 
-  const navBtn = (key: 'home' | 'stats' | 'achievements' | 'timeline') =>
-    activeNav === key ? activeButtonClass : buttonClass;
-  const navIcon = (key: 'home' | 'stats' | 'achievements' | 'timeline') =>
-    activeNav === key ? activeIconClass : iconClass;
+  // Custom's active style is blue (accent-secondary), matching the Custom screen's theme,
+  // while the other tabs stay gold.
+  const activeButtonClassCustom = `
+    relative
+    p-2 rounded-xl
+    bg-accent-secondary
+    border border-accent-secondary
+    transition-colors
+    active:scale-95
+  `;
+
+  type NavDest = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
+  const navBtn = (key: NavDest) => {
+    if (activeNav !== key) return buttonClass;
+    return key === 'custom' ? activeButtonClassCustom : activeButtonClass;
+  };
+  const navIcon = (key: NavDest) => (activeNav === key ? activeIconClass : iconClass);
+  const ariaCurrent = (key: NavDest): 'page' | undefined =>
+    activeNav === key ? 'page' : undefined;
 
   // One-time "new" dots on the Stats/Achievements/Timeline buttons until first visited.
   const [seenNav, setSeenNav] = useState(() => ({
@@ -97,17 +119,27 @@ const TopBar: React.FC<TopBarProps> = ({
     }
   };
 
-  // Being on a nav page counts as seeing it — clear its dot so it never shows on its own button.
+  // Being on a nav tab/page counts as seeing it — clear its dot. Also fires when the home
+  // pager is swiped to a tab (activeNav follows the active page). Home/Custom have no dot.
   useEffect(() => {
-    if (activeNav && activeNav !== 'home' && !isSeen(activeNav)) {
+    if (activeNav && activeNav !== 'home' && activeNav !== 'custom' && !isSeen(activeNav)) {
       markSeen(activeNav);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeNav]);
 
-  const visitNav = (key: NavKey) => {
-    if (!isSeen(key)) markSeen(key);
-    navigate(`/${key}`);
+  // Unified nav handler. In pager mode (onNavClick set) it scrolls the home pager; otherwise
+  // it routes. Stats/Achievements/Timeline clear their one-time "new" dot on first visit.
+  const handleNav = (key: NavDest) => {
+    if (key !== 'home' && key !== 'custom' && !isSeen(key)) markSeen(key);
+    if (onNavClick) {
+      onNavClick(key);
+    } else if (key === 'home') {
+      onHomeClick?.();
+    } else if (key !== 'custom') {
+      // Custom has no standalone route — its button only renders in pager mode.
+      navigate(`/${key}`);
+    }
   };
 
   // Gold "new" dot; the bg ring separates it from the button edge.
@@ -161,41 +193,53 @@ const TopBar: React.FC<TopBarProps> = ({
             {/* Home Button - a permanent nav destination; active when on the home page */}
             {showHome && onHomeClick && (
               <button
-                onClick={onHomeClick}
+                onClick={() => handleNav('home')}
                 className={navBtn('home')}
                 aria-label="Go home"
-                aria-current={activeNav === 'home' ? 'page' : undefined}
+                aria-current={ariaCurrent('home')}
               >
                 <Home className={navIcon('home')} />
               </button>
             )}
 
-            {/* Stats + Achievements + Timeline (sibling routes; active one is highlighted) */}
+            {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
+            {showStatsAchievements && onNavClick && (
+              <button
+                onClick={() => handleNav('custom')}
+                className={navBtn('custom')}
+                aria-label="Custom game"
+                aria-current={ariaCurrent('custom')}
+              >
+                <Settings className={navIcon('custom')} />
+              </button>
+            )}
+
+            {/* Stats + Achievements + Timeline (sibling tabs/routes; active one is highlighted) */}
             {showStatsAchievements && (
               <>
                 <button
-                  onClick={() => visitNav('stats')}
+                  onClick={() => handleNav('stats')}
                   className={navBtn('stats')}
                   aria-label="View stats"
-                  aria-current={activeNav === 'stats' ? 'page' : undefined}
+                  aria-current={ariaCurrent('stats')}
                 >
                   <BarChart3 className={navIcon('stats')} />
                   {!seenNav.stats && newDot}
                 </button>
                 <button
-                  onClick={() => visitNav('achievements')}
+                  onClick={() => handleNav('achievements')}
                   className={navBtn('achievements')}
                   aria-label="View achievements"
-                  aria-current={activeNav === 'achievements' ? 'page' : undefined}
+                  aria-current={ariaCurrent('achievements')}
                 >
                   <Trophy className={navIcon('achievements')} />
                   {!seenNav.achievements && newDot}
                 </button>
                 <button
-                  onClick={() => visitNav('timeline')}
+                  onClick={() => handleNav('timeline')}
                   className={navBtn('timeline')}
                   aria-label="View my timeline"
-                  aria-current={activeNav === 'timeline' ? 'page' : undefined}
+                  aria-current={ariaCurrent('timeline')}
                 >
                   <Hourglass className={navIcon('timeline')} />
                   {!seenNav.timeline && newDot}

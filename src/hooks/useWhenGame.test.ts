@@ -24,6 +24,7 @@ jest.mock('../utils/playerStorage', () => ({
   hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
   hasPlayedMode: jest.fn().mockReturnValue(true),
   markModePlayed: jest.fn(),
+  markNavUnseen: jest.fn(), // Re-armed by the stats recorder when achievements unlock
 }));
 
 const mockedLoadAllEvents = loadAllEvents as jest.MockedFunction<typeof loadAllEvents>;

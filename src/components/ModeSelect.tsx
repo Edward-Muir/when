@@ -16,6 +16,9 @@ import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/even
 import CustomGameSettings from './CustomGameSettings';
 import TopBar from './TopBar';
 import ModePager from './ModePager';
+import StatsPanel from './panels/StatsPanel';
+import AchievementsPanel from './panels/AchievementsPanel';
+import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
@@ -60,6 +63,22 @@ const LoadingState: React.FC = () => (
   </motion.div>
 );
 
+// Unified pager tabs, in order. The TopBar nav buttons and the swipe pager both address
+// these by key; keep the index<->key maps below in sync with the children in render order.
+type TabKey = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
+const tabKeyForIndex = (i: number): TabKey =>
+  i === 1 ? 'custom' : i === 2 ? 'stats' : i === 3 ? 'achievements' : i === 4 ? 'timeline' : 'home';
+const indexForTabKey = (key: TabKey): number =>
+  key === 'custom'
+    ? 1
+    : key === 'stats'
+      ? 2
+      : key === 'achievements'
+        ? 3
+        : key === 'timeline'
+          ? 4
+          : 0;
+
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
   switch (count) {
@@ -86,6 +105,15 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
+
+  // Unified pager: which tab is active. Driven by both swipe (onIndexChange) and the
+  // top-nav buttons (onNavClick). Daily (0) and Custom (1) mount eagerly; the heavier
+  // Stats/Achievements/Timeline tabs mount lazily once first visited.
+  const [activePage, setActivePage] = useState(0);
+  const [visited, setVisited] = useState<Set<number>>(() => new Set([0, 1]));
+  useEffect(() => {
+    setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
+  }, [activePage]);
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
@@ -327,26 +355,36 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       transition={{ duration: 0.3, ease: 'easeOut' }}
       className="flex flex-col h-dvh min-h-screen-safe bg-bg pt-topbar-wide pb-safe overflow-hidden transition-colors"
     >
-      {/* Top Bar */}
+      {/* Top Bar — nav buttons drive the same pager as swipe (onNavClick), keeping the
+          two navigation methods unified. */}
       <TopBar
         showHome
         showTitle={false}
         showStatsAchievements
-        activeNav="home"
+        activeNav={tabKeyForIndex(activePage)}
         onHomeClick={() => navigate('/')}
+        onNavClick={(key) => setActivePage(indexForTabKey(key))}
       />
 
-      <div className="w-full max-w-sm mx-auto flex flex-col flex-1 min-h-0 px-3">
+      {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
+          Stats/Achievements/Timeline panels use their own wider max-widths so the timeline
+          isn't squashed. */}
+      <div className="flex flex-col flex-1 min-h-0">
         <ModePager
-          labels={['Daily', 'Custom']}
+          labels={['Daily', 'Custom', 'Stats', 'Achievements', 'Timeline']}
           hintKey="when:modeSwipeHintSeen"
+          activeIndex={activePage}
+          onIndexChange={setActivePage}
           activeColors={[
             { dot: 'bg-accent', text: 'text-accent' },
             { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
+            { dot: 'bg-accent', text: 'text-accent' },
+            { dot: 'bg-accent', text: 'text-accent' },
+            { dot: 'bg-accent', text: 'text-accent' },
           ]}
         >
           {/* Daily page */}
-          <div className="flex flex-col flex-1 min-h-0">
+          <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
             <div className="text-left mb-3">
               <h1 className="text-5xl font-bold text-text font-display leading-none">
                 When<span className="text-accent">?</span>
@@ -375,7 +413,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           </div>
 
           {/* Custom page */}
-          <div className="flex flex-col flex-1 min-h-0">
+          <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
             <div className="text-left mb-3">
               <h1 className="text-5xl font-bold text-text font-display leading-none">Custom</h1>
               <p className="text-text-muted text-sm mt-1 font-body">
@@ -403,6 +441,15 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               isPlayValid={isPlayValid}
             />
           </div>
+
+          {/* Stats page (lazy: mounted once first visited) */}
+          {visited.has(2) ? <StatsPanel /> : <div />}
+
+          {/* Achievements page (lazy) */}
+          {visited.has(3) ? <AchievementsPanel /> : <div />}
+
+          {/* Timeline page (lazy) */}
+          {visited.has(4) ? <TimelinePanel allEvents={allEvents} /> : <div />}
         </ModePager>
       </div>
 
