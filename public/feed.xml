@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 21:22:17 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2026 21:49:21 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.2.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.2.0</guid>
+      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Unify navigation options (<a href="https://github.com/Edward-Muir/when/commit/5c19e660e2cac869b673b6417fa1dacdd55ade80">5c19e66</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.1.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.10.20</guid>
       <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>FIx leaderboard pop out infinite get glitch (<a href="https://github.com/Edward-Muir/when/commit/fb8f3ff1724443424635402cb0358d5d19662b53">fb8f3ff</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.10.19</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.10.19</guid>
-      <pubDate>Thu, 04 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Refresh the leaderboard more often (<a href="https://github.com/Edward-Muir/when/commit/d10d6a730a5c21ec567a64170412d0cdadab6e84">d10d6a7</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
