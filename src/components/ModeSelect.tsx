@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Play, Share2, Check } from 'lucide-react';
@@ -15,7 +15,7 @@ import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import CustomGameSettings from './CustomGameSettings';
 import TopBar from './TopBar';
-import ModePager from './ModePager';
+import ModePager, { ModePagerHandle } from './ModePager';
 import StatsPanel from './panels/StatsPanel';
 import AchievementsPanel from './panels/AchievementsPanel';
 import TimelinePanel from './panels/TimelinePanel';
@@ -68,6 +68,15 @@ const LoadingState: React.FC = () => (
 type TabKey = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
 const tabKeyForIndex = (i: number): TabKey =>
   i === 1 ? 'custom' : i === 2 ? 'stats' : i === 3 ? 'achievements' : i === 4 ? 'timeline' : 'home';
+// Indicator accent per tab: Custom is blue (accent-secondary), the rest gold.
+const PAGER_ACTIVE_COLORS = [
+  { dot: 'bg-accent', text: 'text-accent' },
+  { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
+  { dot: 'bg-accent', text: 'text-accent' },
+  { dot: 'bg-accent', text: 'text-accent' },
+  { dot: 'bg-accent', text: 'text-accent' },
+];
+
 const indexForTabKey = (key: TabKey): number =>
   key === 'custom'
     ? 1
@@ -106,9 +115,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
 
-  // Unified pager: which tab is active. Driven by both swipe (onIndexChange) and the
-  // top-nav buttons (onNavClick). Daily (0) and Custom (1) mount eagerly; the heavier
-  // Stats/Achievements/Timeline tabs mount lazily once first visited.
+  // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
+  // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
+  const pagerRef = useRef<ModePagerHandle>(null);
   const [activePage, setActivePage] = useState(0);
   const [visited, setVisited] = useState<Set<number>>(() => new Set([0, 1]));
   useEffect(() => {
@@ -363,7 +372,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         showStatsAchievements
         activeNav={tabKeyForIndex(activePage)}
         onHomeClick={() => navigate('/')}
-        onNavClick={(key) => setActivePage(indexForTabKey(key))}
+        onNavClick={(key) => pagerRef.current?.scrollToPage(indexForTabKey(key))}
       />
 
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
@@ -371,17 +380,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           isn't squashed. */}
       <div className="flex flex-col flex-1 min-h-0">
         <ModePager
+          ref={pagerRef}
           labels={['Daily', 'Custom', 'Stats', 'Achievements', 'Timeline']}
           hintKey="when:modeSwipeHintSeen"
-          activeIndex={activePage}
           onIndexChange={setActivePage}
-          activeColors={[
-            { dot: 'bg-accent', text: 'text-accent' },
-            { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
-            { dot: 'bg-accent', text: 'text-accent' },
-            { dot: 'bg-accent', text: 'text-accent' },
-            { dot: 'bg-accent', text: 'text-accent' },
-          ]}
+          activeColors={PAGER_ACTIVE_COLORS}
         >
           {/* Daily page */}
           <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">

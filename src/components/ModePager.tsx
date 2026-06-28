@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useImperativeHandle, useRef, useState } from 'react';
 
 interface ModePagerProps {
   /** Short labels for each page, shown in the indicator (e.g. ['Daily', 'Custom']). */
@@ -12,28 +12,28 @@ interface ModePagerProps {
    * page's indicator can match its own accent. Defaults to gold (`accent`) for every page.
    */
   activeColors?: { dot: string; text: string }[];
-  /**
-   * Controlled active page. When provided, the pager scrolls to this index whenever it
-   * changes externally (e.g. a top-nav button), keeping swipe and buttons in sync.
-   */
-  activeIndex?: number;
-  /** Reports the active page index back to the parent as the user swipes. */
+  /** Reports the active page index back to the parent as the scroll position changes. */
   onIndexChange?: (index: number) => void;
+}
+
+/** Imperative handle: lets a parent (the top-nav buttons) scroll the pager to a page. */
+export interface ModePagerHandle {
+  scrollToPage: (index: number) => void;
 }
 
 /**
  * Horizontal scroll-snap pager for the mode-select screen. Each page is ~90% wide so a
  * sliver of the neighbour peeks (swipe affordance). Below the pages sits a tappable
  * page indicator, and on first visit a subtle nudge animation hints that you can swipe.
+ *
+ * The active page is a pure function of the scroll position (reported via `onIndexChange`).
+ * Buttons scroll via the imperative `scrollToPage` handle rather than setting the highlight
+ * directly, so the highlight only ever tracks the scroll — no instant-then-walk flashing.
  */
-const ModePager: React.FC<ModePagerProps> = ({
-  labels,
-  children,
-  hintKey,
-  activeColors,
-  activeIndex: controlledIndex,
-  onIndexChange,
-}) => {
+const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function ModePager(
+  { labels, children, hintKey, activeColors, onIndexChange },
+  ref
+) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [activeIndex, setActiveIndex] = useState(0);
   const pages = React.Children.toArray(children);
@@ -67,18 +67,9 @@ const ModePager: React.FC<ModePagerProps> = ({
     onIndexChange?.(index);
   }, [pages.length, onIndexChange]);
 
-  // Controlled mode: scroll the track when the parent changes the active page (e.g. a
-  // top-nav button). Only act when it diverges from the current scroll position so the
-  // scroll handler's own updates don't fight this effect.
-  useEffect(() => {
-    if (controlledIndex === undefined) return;
-    const track = trackRef.current;
-    if (!track) return;
-    const panelWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
-    if (!panelWidth) return;
-    const current = Math.round(track.scrollLeft / panelWidth);
-    if (current !== controlledIndex) goToPage(controlledIndex);
-  }, [controlledIndex, goToPage]);
+  // Imperative scroll for the top-nav buttons: starts a smooth scroll without touching the
+  // highlight, so the active tab only changes as the scroll position crosses each page.
+  useImperativeHandle(ref, () => ({ scrollToPage: goToPage }), [goToPage]);
 
   // One-time first-launch hint: nudge slightly right, then snap back.
   useEffect(() => {
@@ -164,6 +155,6 @@ const ModePager: React.FC<ModePagerProps> = ({
       </div>
     </div>
   );
-};
+});
 
 export default ModePager;
