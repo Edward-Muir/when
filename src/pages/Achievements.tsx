@@ -20,7 +20,7 @@ const Achievements: React.FC = () => {
         onHomeClick={() => navigate('/')}
       />
 
-      <div className="px-4 pt-topbar-fixed pb-safe">
+      <div className="pt-topbar-fixed pb-safe">
         <AchievementsPanel />
       </div>
     </div>

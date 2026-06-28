@@ -82,8 +82,8 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents }) => {
     <div className="flex flex-1 min-h-0 flex-col">
       {/* Header — styled like the Achievements page heading.
           Filter sits here (a content control), not in the nav bar. */}
-      <div className="px-4">
-        <div className="mx-auto flex w-full max-w-2xl flex-wrap items-center justify-between gap-2 py-5">
+      <div className="px-3">
+        <div className="mx-auto flex w-full max-w-sm flex-wrap items-center justify-between gap-2 py-5">
           <h1 className="font-display text-2xl font-bold text-text">My Timeline</h1>
           <div className="flex items-center gap-2">
             <span className="font-mono text-sm text-text-muted">

@@ -47,7 +47,7 @@ const AchievementsPanel: React.FC = () => {
   return (
     // `relative` so the decorative gradient stays scoped to this panel (it's `absolute`,
     // not `fixed`) and doesn't bleed across other pager tabs.
-    <div className="relative mx-auto w-full max-w-5xl px-1">
+    <div className="relative mx-auto w-full max-w-sm px-3">
       <div
         className="pointer-events-none absolute inset-0 -z-10 opacity-60"
         style={{

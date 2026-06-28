@@ -79,7 +79,7 @@ const StatsPanel: React.FC = () => {
   const collectionPct = totalEvents > 0 ? Math.round((collected / totalEvents) * 100) : 0;
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-1">
+    <div className="mx-auto w-full max-w-sm px-3">
       <h1 className="py-5 font-display text-2xl font-bold text-text">Stats</h1>
 
       {/* Headline stats */}
