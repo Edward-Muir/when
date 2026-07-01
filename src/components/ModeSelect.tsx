@@ -88,6 +88,21 @@ const indexForTabKey = (key: TabKey): number =>
           ? 4
           : 0;
 
+// Pre-mount the remaining pager panels at idle: mounting AchievementsPanel mid-swipe
+// (59 cards + an image burst) mutates the DOM during scroll-snap momentum, which stalls
+// the gesture on iOS. Mounting early also lets the badge art warm before the first swipe.
+function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<number>>>) {
+  useEffect(() => {
+    const mountAll = () => setVisited(new Set([0, 1, 2, 3, 4]));
+    if (typeof window.requestIdleCallback === 'function') {
+      const handle = window.requestIdleCallback(mountAll, { timeout: 2000 });
+      return () => window.cancelIdleCallback(handle);
+    }
+    const handle = window.setTimeout(mountAll, 300);
+    return () => window.clearTimeout(handle);
+  }, [setVisited]);
+}
+
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
   switch (count) {
@@ -123,6 +138,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   useEffect(() => {
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
+  useIdlePremount(setVisited);
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
@@ -452,7 +468,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           {visited.has(3) ? <AchievementsPanel /> : <div />}
 
           {/* Timeline page (lazy) */}
-          {visited.has(4) ? <TimelinePanel allEvents={allEvents} /> : <div />}
+          {visited.has(4) ? (
+            <TimelinePanel allEvents={allEvents} active={activePage === 4} />
+          ) : (
+            <div />
+          )}
         </ModePager>
       </div>
 

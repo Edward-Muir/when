@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { ACHIEVEMENTS } from '../../data/achievements';
+import { ACHIEVEMENTS, type AchievementDef } from '../../data/achievements';
 import AchievementCard from '../AchievementCard';
-import { loadAllEvents } from '../../utils/eventLoader';
+import AchievementDetailPopup from '../AchievementDetailPopup';
+import { loadAllEvents, getCachedEvents } from '../../utils/eventLoader';
 import { buildEventsByName, getAchievements } from '../../utils/statsStorage';
+import { preloadEventImages } from '../../utils/preloadImage';
 import type { HistoricalEvent } from '../../types';
 
 /**
@@ -10,12 +12,34 @@ import type { HistoricalEvent } from '../../types';
  * Rendered both by the `/achievements` route (wrapped in a TopBar) and as a tab inside the
  * home-screen pager. Card art is resolved from the linked event, so the catalogue is loaded
  * once and the name->event map passed down (undefined until loaded → cards render without art).
+ * Tapping a badge opens the large-format inspection popup.
  */
 const AchievementsPanel: React.FC = () => {
-  const [eventsByName, setEventsByName] = useState<Map<string, HistoricalEvent>>();
+  // Seed synchronously from the module-level catalogue cache (populated during the app's
+  // loading phase) so remounts render art immediately instead of flashing art-less cards.
+  const [eventsByName, setEventsByName] = useState<Map<string, HistoricalEvent> | undefined>(() => {
+    const cached = getCachedEvents();
+    return cached ? buildEventsByName(cached) : undefined;
+  });
   useEffect(() => {
+    if (eventsByName) return;
     loadAllEvents().then((events) => setEventsByName(buildEventsByName(events)));
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- fallback fetch, run once on mount
   }, []);
+
+  // Warm every badge thumbnail at low priority so the grid renders from cache on first
+  // view (the panel is pre-mounted at idle by the pager). Deduplicated by preloadImage.
+  useEffect(() => {
+    if (!eventsByName) return;
+    preloadEventImages(
+      ACHIEVEMENTS.map((a) => eventsByName.get(a.eventName)),
+      ['thumbnail'],
+      'low'
+    );
+  }, [eventsByName]);
+
+  // The tapped badge shown in the inspection popup (null = closed).
+  const [selected, setSelected] = useState<AchievementDef | null>(null);
 
   // Unlock state is a snapshot read on mount.
   const unlockedMap = getAchievements().unlocked;
@@ -32,12 +56,18 @@ const AchievementsPanel: React.FC = () => {
         <h2 className="mb-3 font-display text-lg font-bold text-text">{title}</h2>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
           {items.map((a) => (
-            <AchievementCard
+            <button
               key={a.id}
-              achievement={a}
-              unlocked={isUnlocked(a.id)}
-              eventsByName={eventsByName}
-            />
+              onClick={() => setSelected(a)}
+              aria-label={`View ${a.name} achievement`}
+              className="h-full text-left touch-manipulation active:scale-95"
+            >
+              <AchievementCard
+                achievement={a}
+                unlocked={isUnlocked(a.id)}
+                eventsByName={eventsByName}
+              />
+            </button>
           ))}
         </div>
       </section>
@@ -65,6 +95,13 @@ const AchievementsPanel: React.FC = () => {
 
       <Section title="Unlocked" items={unlocked} />
       <Section title="Locked" items={locked} />
+
+      <AchievementDetailPopup
+        achievement={selected}
+        unlocked={selected ? isUnlocked(selected.id) : false}
+        eventsByName={eventsByName}
+        onDismiss={() => setSelected(null)}
+      />
     </div>
   );
 };

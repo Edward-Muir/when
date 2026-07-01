@@ -20,6 +20,12 @@ import TimelineIntroModal from '../TimelineIntroModal';
 
 interface TimelinePanelProps {
   allEvents: HistoricalEvent[];
+  /**
+   * Whether this panel is the visible pager tab. The home-screen pager pre-mounts panels
+   * at idle, so the first-view intro must wait until the tab is actually shown. Defaults
+   * to true for the standalone `/timeline` route.
+   */
+  active?: boolean;
 }
 
 /**
@@ -29,7 +35,7 @@ interface TimelinePanelProps {
  * home-screen pager. The Filter button lives in the panel header — it's a content control,
  * not navigation.
  */
-const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents }) => {
+const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true }) => {
   // Filter state - default to all selected
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>([
     ...ALL_DIFFICULTIES,
@@ -42,10 +48,11 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents }) => {
   const [pendingPopup, setPendingPopup] = useState<GamePopupData | null>(null);
   const [showIntro, setShowIntro] = useState(false);
 
-  // First-view explainer: show once, then remember it's been seen.
+  // First-view explainer: show once the tab is actually visible, then remember it's been
+  // seen. Gated on `active` because the pager pre-mounts this panel in the background.
   useEffect(() => {
-    if (!hasSeenTimelineIntro()) setShowIntro(true);
-  }, []);
+    if (active && !hasSeenTimelineIntro()) setShowIntro(true);
+  }, [active]);
 
   // The player's personal collection: only events they've correctly placed across all games.
   const collectedEvents = useMemo(() => {
