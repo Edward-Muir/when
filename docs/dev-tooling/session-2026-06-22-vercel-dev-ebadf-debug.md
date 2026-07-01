@@ -40,7 +40,7 @@ returns **200 OK** with real JSON. (This was a separate, pre-existing env mismat
 
 ---
 
-Continues `docs/session-2026-06-21-vercel-dev-ebadf-leaderboard.md`.
+Continues `docs/dev-tooling/session-2026-06-21-vercel-dev-ebadf-leaderboard.md`.
 
 ---
 
@@ -102,7 +102,7 @@ invocation), not a fixed boot-time set of 4 as first assumed. So the failing spa
   Do **not** add `scripts/`, `src/`, `public/`, `api/`, or config — the build/functions need them.
 - **`.gitignore`** — a `/venv` line was added then **reverted by the user**; left without it
   per the user's choice. `venv/` is therefore still git-trackable but is excluded from Vercel.
-- **`docs/session-2026-06-22-vercel-dev-ebadf-debug.md`** (this file).
+- **`docs/dev-tooling/session-2026-06-22-vercel-dev-ebadf-debug.md`** (this file).
 
 No application/source code was changed this session.
 

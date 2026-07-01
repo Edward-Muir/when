@@ -3,7 +3,7 @@
 **Date:** 2026-06-27 · **Branch:** `feature/people` · **Status:** Planning complete, no code written.
 
 This is a **self-contained, phased restart point**. Each phase below is sized to run in its own
-session. It supersedes `docs/session-2026-06-21-stats-category-achievements-plan.md` (same skeleton,
+session. It supersedes `docs/stats-achievements/session-2026-06-21-stats-category-achievements-plan.md` (same skeleton,
 updated to current code: **no generator script exists**, art chosen by per-category sub-agents,
 and a new unlock-presentation phase). Read the **Grounding facts** section before starting any phase.
 
@@ -384,8 +384,8 @@ gameMode==='daily' && lastConfig?.dailySeed`. `startGame` builds seed via
 
 ## Related docs
 
-- `docs/session-2026-06-21-stats-category-achievements-plan.md` — prior handoff (superseded by this).
+- `docs/stats-achievements/session-2026-06-21-stats-category-achievements-plan.md` — prior handoff (superseded by this).
 - `docs/stats-achievements-plan.md` — full original spec (List 1 stats, List 2 badges, per-badge
   "Derived from" derivations — use when implementing the Phase 2 non-category tests).
-- `docs/session-2026-06-21-achievement-cards.md` — card visual-design session.
-- `docs/session-2026-06-21-category-clustering.md` — 20-category taxonomy + counts.
+- `docs/stats-achievements/session-2026-06-21-achievement-cards.md` — card visual-design session.
+- `docs/dev-tooling/session-2026-06-21-category-clustering.md` — 20-category taxonomy + counts.

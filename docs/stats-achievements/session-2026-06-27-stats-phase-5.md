@@ -1,8 +1,8 @@
 # Session Summary — Stats Foundation: Phase 5 (Unlock-Moment Presentation)
 
 **Date:** 2026-06-27 · **Branch:** `feature/stats-achievments`
-**Master plan:** `docs/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
-**Prior sessions:** `docs/session-2026-06-27-stats-phases-1-2.md`, `docs/session-2026-06-27-stats-phases-3-4.md`
+**Master plan:** `docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
+**Prior sessions:** `docs/stats-achievements/session-2026-06-27-stats-phases-1-2.md`, `docs/stats-achievements/session-2026-06-27-stats-phases-3-4.md`
 **Status this session:** Phase 5 ✅ complete. Phase 6 remains.
 
 ## Overview

@@ -2,7 +2,7 @@
 
 **Date:** 2026-06-28 · **Branch:** `feature/stats-achievments`
 **Builds on:** the Stats & Achievements feature (Phases 1–6,
-`docs/session-2026-06-27-stats-*.md`).
+`docs/stats-achievements/session-2026-06-27-stats-*.md`).
 
 ## Overview
 

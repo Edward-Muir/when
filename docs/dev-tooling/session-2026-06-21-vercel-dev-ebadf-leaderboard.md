@@ -162,5 +162,5 @@ after the code changes — making the correlation real but non-causal. **Unverif
 
 The category refactor (Part B) and the `submit.ts` theme sync are complete and independently verified
 (typecheck/lint/46 tests + a 400-date frontend↔backend theme parity check). See
-`docs/session-2026-06-21-category-refactor-partB.md`. This leaderboard/`vercel dev` failure is
+`docs/dev-tooling/session-2026-06-21-category-refactor-partB.md`. This leaderboard/`vercel dev` failure is
 tracked separately here because its cause is **not yet proven**.

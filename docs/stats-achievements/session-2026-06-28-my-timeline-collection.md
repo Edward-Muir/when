@@ -2,8 +2,8 @@
 
 **Date:** 2026-06-28 · **Branch:** `feature/stats-achievments`
 **Builds on:** the completed stats/achievements system (see
-`docs/session-2026-06-28-stats-phase-6-polish.md` and the master plan
-`docs/session-2026-06-27-stats-achievements-master-plan.md`).
+`docs/stats-achievements/session-2026-06-28-stats-phase-6-polish.md` and the master plan
+`docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md`).
 
 ## Overview
 

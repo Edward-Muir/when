@@ -130,6 +130,6 @@ Early-Modern `1500..1800`, Modern `>=1800`.
   category tests generated from `ALL_CATEGORIES`; a dev consistency assert requires every card↔test).
 - Recording/eval in `src/utils/statsStorage.ts`: `recordGameResult(state, eventsByName)` →
   `reevaluateAchievements(eventsByName)` returns newly-unlocked ids.
-- Related plan: `docs/session-2026-06-27-stats-achievements-master-plan.md` (phased build of the whole
+- Related plan: `docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md` (phased build of the whole
   stats/achievements system — Phases 5 (unlock modal) and 6 (Stats/trophy page) still pending there).
 - Plan file for this session: `/Users/emuir/.claude/plans/users-emuir-documents-github-vibes-time-vast-newt.md`.

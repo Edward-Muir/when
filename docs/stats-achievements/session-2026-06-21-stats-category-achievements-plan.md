@@ -15,12 +15,12 @@ Two prior 2026-06-21 sessions left two threads to join:
    36 `AchievementDef`s rendered by `src/components/AchievementCard.tsx` on the
    `/cards-preview` harness (`src/pages/CardsPreview.tsx`). **No unlock logic, no stats
    tracking, no in-app page.** Spec lives in `docs/stats-achievements-plan.md`.
-   See `docs/session-2026-06-21-achievement-cards.md`.
+   See `docs/stats-achievements/session-2026-06-21-achievement-cards.md`.
 2. **Category re-clustering** — taxonomy went **7 → 20 categories** (`type Category` /
    `ALL_CATEGORIES` in `src/types/index.ts`). The achievement config is now **stale**:
    badges 09–15 are "Category Buff: <OldCategory>" (Conflict/Cultural/Diplomatic/Disasters/
    Exploration/Infrastructure/People) and Polymath (08) says "all 7 categories".
-   See `docs/session-2026-06-21-category-clustering.md`.
+   See `docs/dev-tooling/session-2026-06-21-category-clustering.md`.
 
 **Goal:** build the full stats foundation from `docs/stats-achievements-plan.md`, and add a
 **per-category achievement** that unlocks when the player has correctly placed **20 distinct
@@ -250,6 +250,6 @@ onDismiss }`; 3-stat card layout (Layers/Ruler/Zap icons) — mid-game only toda
 ## Related docs / plan
 
 - `docs/stats-achievements-plan.md` — full original spec (List 1 stats, List 2 badges, primitives).
-- `docs/session-2026-06-21-achievement-cards.md` — card visual design session.
-- `docs/session-2026-06-21-category-clustering.md` — 20-category taxonomy + counts.
+- `docs/stats-achievements/session-2026-06-21-achievement-cards.md` — card visual design session.
+- `docs/dev-tooling/session-2026-06-21-category-clustering.md` — 20-category taxonomy + counts.
 - Plan-mode file (same content as this doc): `~/.claude/plans/users-emuir-documents-github-vibes-time-tender-neumann.md`

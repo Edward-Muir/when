@@ -34,7 +34,7 @@ The process involved CSV parsing, category remapping, parallel sub-agent convers
 
 ### Phase 2 — Opus sub-agent conversion (parallel, 13 agents)
 
-Each agent read its batch file and for every event produced: precise `year` (researched), `description` (80-150 chars, factual tone), `difficulty` per the rubric in `docs/old/difficulty-grading-rubric.md`, plus the pass-through `name`/`friendly_name`/`category` fields. Wrote output to `batch_<cat>_output.json`. All 14 files validated OK (correct counts, all required fields, no name collisions).
+Each agent read its batch file and for every event produced: precise `year` (researched), `description` (80-150 chars, factual tone), `difficulty` per the rubric in `docs/events-images/difficulty-grading-rubric.md`, plus the pass-through `name`/`friendly_name`/`category` fields. Wrote output to `batch_<cat>_output.json`. All 14 files validated OK (correct counts, all required fields, no name collisions).
 
 ### Phase 3 — Year verification (Sonnet flag-only agents, parallel)
 
@@ -113,7 +113,7 @@ Notable deletions: generic "Aboriginal Dreamtime / Songlines" entries (indetermi
 
 - The input CSV `untracked_data/new_events_final.csv` is the deduplicated combination of the user's two earlier CSVs (`new_events_deduped.csv` + `new_events_round2_deduped.csv`).
 - The event schema (6 required fields: name, friendly_name, year, category, description, difficulty) is documented in `.claude/skills/add-events/SKILL.md` and enforced by `src/types/index.ts`.
-- The difficulty rubric is in `docs/old/difficulty-grading-rubric.md` — key insight is "placeability, not just recognition" (an obscure event with strong temporal anchors in the description is easier than a famous event with an ambiguous timeframe).
+- The difficulty rubric is in `docs/events-images/difficulty-grading-rubric.md` — key insight is "placeability, not just recognition" (an obscure event with strong temporal anchors in the description is easier than a famous event with an ambiguous timeframe).
 - Event files are not sorted by year — just append new events.
 - BCE uses negative numbers (e.g., `year: -490` for 490 BCE).
 - The `manifest.json` in `public/events/` only lists 6 categories (no `inventions` despite what SKILL.md implies).

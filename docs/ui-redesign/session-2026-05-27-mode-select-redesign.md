@@ -41,7 +41,7 @@ and live screenshots driven by headless Chrome (Puppeteer) at a 390×844 iPhone 
   (top), the "More Options" expander (existing `grid grid-rows-[0fr→1fr]` reveal of
   `FilterControls`, hand size, players, deck counter, share-code), and the **Play button at the
   bottom**. Same props as the old popup minus `isOpen`/`onClose`.
-- **`docs/session-2026-05-27-mode-select-redesign.md`** — this summary.
+- **`docs/ui-redesign/session-2026-05-27-mode-select-redesign.md`** — this summary.
 
 ## Files Modified
 

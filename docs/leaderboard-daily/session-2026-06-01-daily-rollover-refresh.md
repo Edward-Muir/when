@@ -3,7 +3,7 @@
 **Date:** 2026-06-01
 **Branch:** main (working tree)
 **Plan file:** `~/.claude/plans/users-emuir-documents-github-vibes-time-validated-truffle.md`
-**Companion summary:** `docs/session-2026-06-01-persist-custom-settings.md` (earlier session
+**Companion summary:** `docs/ui-redesign/session-2026-06-01-persist-custom-settings.md` (earlier session
 the same day, separate task)
 
 ## Overview
@@ -150,5 +150,5 @@ The investigation traced every place that touches "today" to confirm the fix is 
   `useSaveDailyResult` uses `state.lastConfig.dailySeed` (captured at game start), so a
   game finishes against the date it began under. Don't conflate these.
 - **The Custom-page persistence work from earlier today** is in a separate summary
-  (`docs/session-2026-06-01-persist-custom-settings.md`) and is functionally independent;
+  (`docs/ui-redesign/session-2026-06-01-persist-custom-settings.md`) and is functionally independent;
   the only file both sessions touched is `ModeSelect.tsx`, but in different regions.

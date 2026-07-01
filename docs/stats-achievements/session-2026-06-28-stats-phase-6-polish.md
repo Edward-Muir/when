@@ -1,8 +1,8 @@
 # Session Summary — Stats/Achievements Phase 6 Polish (UI consistency, reveal jig, prefetch)
 
 **Date:** 2026-06-28 · **Branch:** `feature/stats-achievments`
-**Builds on:** `docs/session-2026-06-27-stats-phase-6.md` (Stats/Achievements pages + top-bar buttons)
-**Master plan:** `docs/session-2026-06-27-stats-achievements-master-plan.md`
+**Builds on:** `docs/stats-achievements/session-2026-06-27-stats-phase-6.md` (Stats/Achievements pages + top-bar buttons)
+**Master plan:** `docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md`
 
 ## Overview
 

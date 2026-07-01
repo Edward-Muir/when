@@ -4,7 +4,7 @@
 
 ## Overview
 
-A previous bulk import (`docs/session-2026-04-12-bulk-event-import.md`) added ~1,749 events,
+A previous bulk import (`docs/events-images/session-2026-04-12-bulk-event-import.md`) added ~1,749 events,
 many with verbose, descriptive `friendly_name`s that overflowed the event card and got
 truncated with an ellipsis (e.g. "Camel Trade Networks Transform African Commerce"). This
 session:

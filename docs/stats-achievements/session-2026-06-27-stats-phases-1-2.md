@@ -1,7 +1,7 @@
 # Session Summary — Stats Foundation: Phases 1 & 2
 
 **Date:** 2026-06-27 · **Branch:** `feature/stats-achievments`
-**Master plan:** `docs/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
+**Master plan:** `docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
 **Status this session:** Phase 1 ✅ and Phase 2 ✅ complete. Phases 3–6 remain.
 
 ---

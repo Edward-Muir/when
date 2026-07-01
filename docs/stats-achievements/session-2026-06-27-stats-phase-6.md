@@ -1,9 +1,9 @@
 # Session Summary — Stats Foundation: Phase 6 (UI Surfaces)
 
 **Date:** 2026-06-27 · **Branch:** `feature/stats-achievments`
-**Master plan:** `docs/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
-**Prior sessions:** `docs/session-2026-06-27-stats-phases-1-2.md`,
-`docs/session-2026-06-27-stats-phases-3-4.md`, `docs/session-2026-06-27-stats-phase-5.md`
+**Master plan:** `docs/stats-achievements/session-2026-06-27-stats-achievements-master-plan.md` (6 phases)
+**Prior sessions:** `docs/stats-achievements/session-2026-06-27-stats-phases-1-2.md`,
+`docs/stats-achievements/session-2026-06-27-stats-phases-3-4.md`, `docs/stats-achievements/session-2026-06-27-stats-phase-5.md`
 **Status this session:** Phase 6 ✅ complete (manual browser QA still pending). **All 6 phases now done.**
 
 ## Overview
