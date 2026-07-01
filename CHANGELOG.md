@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.3](https://github.com/Edward-Muir/when/compare/v1.2.2...v1.2.3) (2026-07-01)
+
+
+### Bug Fixes
+
+* Fix achievment scrolling bug, add achievment modals ([28ba1aa](https://github.com/Edward-Muir/when/commit/28ba1aaa89d005182b2191e6fb66170c716894e8))
+* Remove give away dates in events ([08816cb](https://github.com/Edward-Muir/when/commit/08816cbef9d504d38eb8aea7d8e4a02aedcbaa58))
+
 ## [1.2.2](https://github.com/Edward-Muir/when/compare/v1.2.1...v1.2.2) (2026-06-28)
 
 
