@@ -105,6 +105,15 @@ export interface PlacementResult {
 
 export type AnimationPhase = 'flash' | 'moving' | null;
 
+/** A card that was placed incorrectly — shown as a display-only tombstone at its true position. */
+export interface FailedPlacement {
+  event: HistoricalEvent;
+  /** Timeline index the player attempted at the time of the miss (animation origin). */
+  attemptedPosition: number;
+  /** Turn number of the miss; stable ordering for equal-year tombstones. */
+  seq: number;
+}
+
 export type GamePopupType = 'description' | 'correct' | 'incorrect' | 'gameOver';
 
 export interface GamePopupData {
@@ -122,6 +131,8 @@ export interface WhenGameState {
   seedEventName?: string;
   deck: HistoricalEvent[];
   placementHistory: boolean[];
+  /** Incorrectly placed cards, shown as tombstones at their true position (ignored by placement rules). */
+  failedPlacements: FailedPlacement[];
   lastPlacementResult: PlacementResult | null;
   isAnimating: boolean;
   animationPhase: AnimationPhase;

@@ -322,6 +322,84 @@ describe('useWhenGame - Sudden Death Mode', () => {
     });
   });
 
+  describe('Failed Placements (tombstones)', () => {
+    it('single-player miss records a tombstone and shows no popup', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
+
+      // Timeline starts at 1800; active card is 1810. Placing at index 0 is wrong.
+      act(() => {
+        result.current.placeCard(0);
+      });
+      expect(result.current.pendingPopup).toBeNull();
+
+      act(() => {
+        jest.runAllTimers();
+      });
+
+      expect(result.current.pendingPopup).toBeNull();
+      expect(result.current.state.failedPlacements).toHaveLength(1);
+      expect(result.current.state.failedPlacements[0].event.name).toBe('event-1810');
+      expect(result.current.state.failedPlacements[0].attemptedPosition).toBe(0);
+      // The failed card must not remain on the real timeline
+      expect(result.current.state.timeline.some((e) => e.name === 'event-1810')).toBe(false);
+    });
+
+    it('correct placement does not record a tombstone', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 3 });
+
+      placeCardAndWait(result, 1); // Correct: 1810 after 1800
+
+      expect(result.current.state.failedPlacements).toHaveLength(0);
+    });
+
+    it('multiplayer miss still fires the incorrect popup and records a tombstone', async () => {
+      const testEvents = [
+        createTestEvent('timeline-start', 1800),
+        createTestEvent('p1-card', 1810),
+        createTestEvent('p2-card', 1820),
+        ...createTestEventDeck(10, 1900),
+      ];
+      mockedLoadAllEvents.mockResolvedValue(testEvents);
+
+      const result = await setupGame();
+      startSuddenDeathGame(result, {
+        playerCount: 2,
+        playerNames: ['Player 1', 'Player 2'],
+        suddenDeathHandSize: 2,
+      });
+
+      act(() => {
+        result.current.placeCard(0); // Wrong for 1810
+      });
+      expect(result.current.pendingPopup?.type).toBe('incorrect');
+
+      act(() => {
+        jest.runAllTimers();
+      });
+      act(() => {
+        result.current.dismissPopup();
+      });
+
+      expect(result.current.state.failedPlacements).toHaveLength(1);
+      expect(result.current.state.failedPlacements[0].event.name).toBe('p1-card');
+    });
+
+    it('tombstones survive into gameOver and are cleared on a new game', async () => {
+      const result = await setupGame();
+      startSuddenDeathGame(result, { suddenDeathHandSize: 1 });
+
+      placeCardAndWait(result, 0); // Wrong - hand empties, game over
+
+      expect(result.current.state.phase).toBe('gameOver');
+      expect(result.current.state.failedPlacements).toHaveLength(1);
+
+      startSuddenDeathGame(result, { suddenDeathHandSize: 1 });
+      expect(result.current.state.failedPlacements).toHaveLength(0);
+    });
+  });
+
   describe('Edge Cases', () => {
     it('multiple players survive with cards - game continues', async () => {
       const testEvents = [

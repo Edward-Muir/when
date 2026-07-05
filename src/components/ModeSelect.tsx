@@ -20,6 +20,7 @@ import StatsPanel from './panels/StatsPanel';
 import AchievementsPanel from './panels/AchievementsPanel';
 import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
+import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
@@ -102,6 +103,35 @@ function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<num
     return () => window.clearTimeout(handle);
   }, [setVisited]);
 }
+
+// Daily CTA: play when unplayed, share + next-daily countdown when already completed today.
+const DailyCta: React.FC<{ played: boolean; onShare: () => void; onPlay: () => void }> = ({
+  played,
+  onShare,
+  onPlay,
+}) => {
+  const buttonClass =
+    'w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body';
+
+  if (played) {
+    return (
+      <div className="w-full flex flex-col items-center gap-2">
+        <button onClick={onShare} className={buttonClass}>
+          <Share2 className="w-4 h-4" />
+          Challenge a Friend
+        </button>
+        <NextDailyCountdown />
+      </div>
+    );
+  }
+
+  return (
+    <button onClick={onPlay} className={buttonClass}>
+      <Play className="w-4 h-4" />
+      Play Daily Challenge
+    </button>
+  );
+};
 
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
@@ -353,23 +383,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     return <LoadingState />;
   }
 
-  // Daily CTA: play when unplayed, share when already completed today.
-  const dailyCta = todayResult ? (
-    <button
-      onClick={handleShareDaily}
-      className="w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-    >
-      <Share2 className="w-4 h-4" />
-      Challenge a Friend
-    </button>
-  ) : (
-    <button
-      onClick={handleDailyStart}
-      className="w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body"
-    >
-      <Play className="w-4 h-4" />
-      Play Daily Challenge
-    </button>
+  const dailyCta = (
+    <DailyCta played={!!todayResult} onShare={handleShareDaily} onPlay={handleDailyStart} />
   );
 
   return (
@@ -409,7 +424,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 When<span className="text-accent">?</span>
               </h1>
               <p className="text-text-muted text-sm mt-1 font-body">
-                Place events to make the longest timeline
+                Drag events into place — build the longest timeline
               </p>
             </div>
 

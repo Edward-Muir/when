@@ -76,10 +76,29 @@ const FirstTimeRulesModal: React.FC<{
       </div>
       <div className="p-4">
         <GameRules gameMode={gameMode} />
+        <button
+          onClick={onDismiss}
+          className="w-full mt-4 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
+        >
+          Got it
+        </button>
       </div>
     </div>
   </div>
 );
+
+// Whether the popup should reveal the event's year: cards already on the timeline and
+// revealed tombstones do; a hand card being previewed doesn't (that's the puzzle).
+function shouldShowYearInPopup(pendingPopup: GamePopupData | null, state: WhenGameState): boolean {
+  if (pendingPopup?.type === 'description' && pendingPopup.event) {
+    const name = pendingPopup.event.name;
+    return (
+      state.timeline.some((e) => e.name === name) ||
+      state.failedPlacements.some((f) => f.event.name === name)
+    );
+  }
+  return pendingPopup?.type !== 'gameOver'; // Show year for correct/incorrect, not for gameOver
+}
 
 interface GameProps {
   state: WhenGameState;
@@ -268,11 +287,11 @@ const Game: React.FC<GameProps> = ({
     showDescriptionPopup(event);
   };
 
-  // Determine if we should show the year in the popup (only for cards in timeline)
-  const showYearInPopup =
-    pendingPopup?.type === 'description' && pendingPopup.event
-      ? state.timeline.some((e) => e.name === pendingPopup.event!.name)
-      : pendingPopup?.type !== 'gameOver'; // Show year for correct/incorrect, not for gameOver
+  const showYearInPopup = shouldShowYearInPopup(pendingPopup, state);
+  // Tombstoned (failed) events get the muted/greyscale popup treatment
+  const isTombstonePopup =
+    pendingPopup?.type === 'description' &&
+    state.failedPlacements.some((f) => f.event.name === pendingPopup.event?.name);
 
   return (
     <motion.div
@@ -312,10 +331,11 @@ const Game: React.FC<GameProps> = ({
           )}
 
           {/* Main Timeline Area - takes remaining space */}
-          <div className="flex-1 overflow-hidden">
+          <div className="flex-1 overflow-hidden relative">
             <Timeline
               events={state.timeline}
               onEventTap={handleTimelineCardTap}
+              failedPlacements={state.failedPlacements}
               newEventName={newEventName}
               isDragging={dragState.isDragging}
               insertionIndex={dragState.insertionIndex}
@@ -391,6 +411,7 @@ const Game: React.FC<GameProps> = ({
               nextPlayer={pendingPopup.nextPlayer}
               showYear={showYearInPopup}
               gameState={pendingPopup.gameState}
+              tombstone={isTombstonePopup}
             />
           )}
 

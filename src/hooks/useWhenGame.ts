@@ -63,6 +63,7 @@ const initialState: WhenGameState = {
   seedEventName: undefined,
   deck: [],
   placementHistory: [],
+  failedPlacements: [],
   lastPlacementResult: null,
   isAnimating: false,
   animationPhase: null,
@@ -198,6 +199,7 @@ export function useWhenGame(): UseWhenGameReturn {
         winners: [],
         deck: remainingDeck,
         placementHistory: [],
+        failedPlacements: [],
         lastPlacementResult: null,
         isAnimating: false,
         animationPhase: null,
@@ -223,12 +225,11 @@ export function useWhenGame(): UseWhenGameReturn {
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
 
-      // 3. Show popup immediately for multiplayer, or for incorrect single-player placements
-      if (!isSinglePlayer || !result.success) {
-        const nextPlayerIdx = !isSinglePlayer
-          ? getNextActivePlayerIndex(state.currentPlayerIndex, state.players)
-          : state.currentPlayerIndex;
-        const nextPlayer = !isSinglePlayer ? state.players.at(nextPlayerIdx) : undefined;
+      // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
+      // the tombstone reveal + miss banner instead of a blocking popup.
+      if (!isSinglePlayer) {
+        const nextPlayerIdx = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
+        const nextPlayer = state.players.at(nextPlayerIdx);
         setPendingPopupState({
           popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
           pendingStateUpdate: null,
@@ -311,11 +312,16 @@ export function useWhenGame(): UseWhenGameReturn {
           currentStreak: 0,
         }));
 
-        // 5b. After red flash, remove card from timeline
+        // 5b. After red flash, remove card from timeline; it reappears as a tombstone
+        // at its true position (display only — placement rules ignore failedPlacements)
         setTimeout(() => {
           setState((prev) => ({
             ...prev,
             timeline: prev.timeline.filter((e) => e.name !== activeCard.name),
+            failedPlacements: [
+              ...prev.failedPlacements,
+              { event: activeCard, attemptedPosition: insertionIndex, seq: prev.turnNumber },
+            ],
             animationPhase: 'moving',
           }));
         }, 400);

@@ -1,13 +1,18 @@
 import React, { useRef, useEffect, useLayoutEffect, useMemo, useState } from 'react';
+import { LayoutGroup, useReducedMotion } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
-import { HistoricalEvent, PlacementResult, AnimationPhase } from '../../types';
+import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
 import TimelineEvent, { RIPPLE_DURATION_MS } from './TimelineEvent';
+import TombstoneRow from './TombstoneRow';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
+import { buildTimelineRows } from '../../utils/timelineRows';
 
 interface TimelineProps {
   events: HistoricalEvent[];
   onEventTap: (event: HistoricalEvent) => void;
+  // Failed placements shown as display-only tombstones at their true position
+  failedPlacements?: FailedPlacement[];
   newEventName?: string; // Name of newly added event for animation
   // Drag and drop props
   isDragging: boolean;
@@ -45,6 +50,7 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
 const Timeline: React.FC<TimelineProps> = ({
   events,
   onEventTap,
+  failedPlacements = [],
   newEventName,
   isDragging,
   insertionIndex,
@@ -61,6 +67,8 @@ const Timeline: React.FC<TimelineProps> = ({
   const hasCenteredRef = useRef(false);
   const hasScrolledMiddleRef = useRef(false);
   const prevLen = useRef(events.length);
+  const prevFailedLen = useRef(failedPlacements.length);
+  const shouldReduceMotion = useReducedMotion();
 
   // Make the entire timeline a single drop zone
   const { setNodeRef: setTimelineDropRef } = useDroppable({
@@ -168,6 +176,32 @@ const Timeline: React.FC<TimelineProps> = ({
     return () => ro.disconnect();
   }, [events.length, startAtMiddle]);
 
+  // Bring a freshly revealed tombstone into view so the player sees where the card belonged
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (container && failedPlacements.length > prevFailedLen.current) {
+      const newest = failedPlacements[failedPlacements.length - 1];
+      const el = container.querySelector(
+        `[data-tombstone-name="${CSS.escape(newest.event.name)}"]`
+      );
+      el?.scrollIntoView({ block: 'center', behavior: shouldReduceMotion ? 'auto' : 'smooth' });
+    }
+    prevFailedLen.current = failedPlacements.length;
+  }, [failedPlacements, shouldReduceMotion]);
+
+  const rows = buildTimelineRows(events, failedPlacements);
+  // The insertion gap the ghost currently previews (null when not dragging over the timeline)
+  const ghostGap = isDragging && isOverTimeline && draggedCard !== null ? insertionIndex : null;
+  // If that gap holds tombstone(s), the first one hosts the ghost in its own row —
+  // the ghost takes the tombstone's place instead of inserting an extra row.
+  const ghostHostRowIndex =
+    ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
+  // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
+  const revealingFailedName =
+    lastPlacementResult?.success === false && animationPhase !== null
+      ? lastPlacementResult.event.name
+      : null;
+
   return (
     <div className="h-full relative">
       {/* Fixed "Earlier" indicator at top with fade */}
@@ -196,43 +230,67 @@ const Timeline: React.FC<TimelineProps> = ({
           {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
 
-          {/* Ghost card at position 0 if inserting at start */}
-          {isDragging && isOverTimeline && insertionIndex === 0 && draggedCard && (
-            <GhostCard event={draggedCard} />
-          )}
+          {/* Events (with inline ghost cards at insertion points) and tombstones */}
+          <LayoutGroup>
+            {rows.map((row, rowIndex) => {
+              if (row.kind === 'tombstone') {
+                const { failed } = row;
+                return (
+                  <TombstoneRow
+                    key={`tombstone-${failed.event.name}`}
+                    failed={failed}
+                    onTap={() => onEventTap(failed.event)}
+                    displaced={ghostGap !== null && row.gap === ghostGap}
+                    ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
+                    // layoutId only during the reveal FLIP — permanent layoutId would
+                    // smoothly layout-animate vertical moves while real cards snap
+                    revealing={revealingFailedName === failed.event.name}
+                  />
+                );
+              }
 
-          {/* Events with inline ghost cards at insertion points */}
-          {events.map((event, idx) => {
-            // Check if this event is the one being animated
-            const isAnimatingEvent =
-              lastPlacementResult?.event.name === event.name && animationPhase !== null;
-            const animationSuccess = isAnimatingEvent ? lastPlacementResult?.success : undefined;
+              const { event, realIndex: idx } = row;
+              // Check if this event is the one being animated
+              const isAnimatingEvent =
+                lastPlacementResult?.event.name === event.name && animationPhase !== null;
+              const animationSuccess = isAnimatingEvent ? lastPlacementResult?.success : undefined;
+              // The rejected card morphs into its tombstone via a shared layoutId
+              const isFailedReveal = isAnimatingEvent && animationSuccess === false;
 
-            return (
-              <React.Fragment key={event.name}>
-                <TimelineEvent
-                  event={event}
-                  onTap={() => onEventTap(event)}
-                  isNew={event.name === newEventName}
-                  index={idx}
-                  isAnimating={isAnimatingEvent}
-                  animationSuccess={animationSuccess}
-                  animationPhase={isAnimatingEvent ? animationPhase : null}
-                  rippleDistance={waveDistances.get(idx)}
-                  rippleTrigger={rippleData?.timestamp}
-                  glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
-                  rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
-                  preloadDetailImages={preloadDetailImages}
-                  // Eagerly load the first couple of cards — they're the LCP element.
-                  priority={idx < 2}
-                />
-                {/* Show ghost card AFTER this event if inserting at idx + 1 */}
-                {isDragging && isOverTimeline && insertionIndex === idx + 1 && draggedCard && (
-                  <GhostCard event={draggedCard} />
-                )}
-              </React.Fragment>
-            );
-          })}
+              return (
+                <React.Fragment key={event.name}>
+                  {/* Ghost card before this event when its gap is here and no tombstone hosts it */}
+                  {ghostGap === idx && ghostHostRowIndex === -1 && draggedCard && (
+                    <GhostCard event={draggedCard} />
+                  )}
+                  <TimelineEvent
+                    event={event}
+                    onTap={() => onEventTap(event)}
+                    isNew={event.name === newEventName}
+                    index={idx}
+                    isAnimating={isAnimatingEvent}
+                    animationSuccess={animationSuccess}
+                    animationPhase={isAnimatingEvent ? animationPhase : null}
+                    layoutId={
+                      isFailedReveal && !shouldReduceMotion ? `placed-${event.name}` : undefined
+                    }
+                    rippleDistance={waveDistances.get(idx)}
+                    rippleTrigger={rippleData?.timestamp}
+                    glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
+                    rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
+                    preloadDetailImages={preloadDetailImages}
+                    // Eagerly load the first couple of cards — they're the LCP element.
+                    priority={idx < 2}
+                  />
+                </React.Fragment>
+              );
+            })}
+
+            {/* Ghost card after the last event (or on an empty timeline) */}
+            {ghostGap === events.length && ghostHostRowIndex === -1 && draggedCard && (
+              <GhostCard event={draggedCard} />
+            )}
+          </LayoutGroup>
 
           {/* Bottom spacer: room to drop "later"; bounce runway below the last card */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />

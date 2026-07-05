@@ -33,6 +33,8 @@ interface TimelineEventProps {
   // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
   // Defaults to lazy so off-screen events keep deferring their image download.
   priority?: boolean;
+  // Shared layout id so a rejected card can morph into its tombstone (FLIP reveal)
+  layoutId?: string;
 }
 
 // Extracted image section to reduce component complexity
@@ -225,6 +227,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   rippleAmplitudeMultiplier,
   preloadDetailImages = true,
   priority = false,
+  layoutId,
 }) => {
   const shouldReduceMotion = useReducedMotion();
 
@@ -272,6 +275,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
       <div className="flex-1 pl-3">
         <motion.button
           onClick={onTap}
+          layoutId={layoutId}
           initial={isSuccessAnimation ? springBounce.initial : false}
           animate={isSuccessAnimation ? springBounce.animate : undefined}
           exit={isErrorAnimation ? rejectionExit.exit : undefined}
