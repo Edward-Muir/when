@@ -171,8 +171,10 @@ input,
   }
 }
 
+/* Glow/pulse durations read --anim-*-dur so the /anim-jig dev page can tune them;
+   the fallbacks are the shipped values — the game never sets the variables. */
 .animate-success-glow {
-  animation: successGlow 0.6s ease-out;
+  animation: successGlow var(--anim-glow-dur, 0.6s) ease-out;
 }
 
 /* Streak tier 1: brighter green glow */
@@ -189,7 +191,7 @@ input,
 }
 
 .animate-success-glow-bright {
-  animation: successGlowBright 0.6s ease-out;
+  animation: successGlowBright var(--anim-glow-dur, 0.6s) ease-out;
 }
 
 /* Streak tier 2+: golden glow */
@@ -206,7 +208,7 @@ input,
 }
 
 .animate-success-glow-golden {
-  animation: successGlowGolden 0.6s ease-out;
+  animation: successGlowGolden var(--anim-glow-dur, 0.6s) ease-out;
 }
 
 /* Error shake and glow */
@@ -223,7 +225,7 @@ input,
 }
 
 .animate-error-pulse {
-  animation: errorPulse 0.6s ease-out;
+  animation: errorPulse var(--anim-error-pulse-dur, 0.6s) ease-out;
 }
 
 /* Feedback banner animation - snappy slide + fade */

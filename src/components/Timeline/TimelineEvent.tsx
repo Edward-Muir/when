@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase, Category } from '../../types';
 import { formatYear } from '../../utils/gameLogic';
@@ -7,9 +7,15 @@ import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 import { getImageUrl } from '../../utils/cloudinaryImage';
 import { useImagePreload } from '../../hooks/useImagePreload';
+import { AnimationTuning, useAnimationTuning } from './animationTuning';
 
-// Export ripple duration for Timeline.tsx to use
-export const RIPPLE_DURATION_MS = 2000;
+// One scheduled wave bump for this row: Timeline computes when (delay) and how hard
+// (amplitudePx); trigger is a timestamp identifying the wave instance.
+export interface RippleSpec {
+  delay: number;
+  amplitudePx: number;
+  trigger: number;
+}
 
 interface TimelineEventProps {
   event: HistoricalEvent;
@@ -20,14 +26,10 @@ interface TimelineEventProps {
   isAnimating?: boolean;
   animationSuccess?: boolean;
   animationPhase?: AnimationPhase;
-  // Wave ripple: distance from placed card (1 = adjacent, 2 = two away, etc.)
-  rippleDistance?: number;
-  // Unique ID to trigger ripple animation (timestamp)
-  rippleTrigger?: number;
+  // Wave ripple bump scheduled by Timeline (success wave or miss wake)
+  ripple?: RippleSpec | null;
   // Streak-aware glow intensity
   glowIntensity?: GlowIntensity;
-  // Streak-aware ripple amplitude multiplier
-  rippleAmplitudeMultiplier?: number;
   // Whether to preload the full-size detail image (disabled on the View Timeline page)
   preloadDetailImages?: boolean;
   // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
@@ -35,6 +37,10 @@ interface TimelineEventProps {
   priority?: boolean;
   // Shared layout id so a rejected card can morph into its tombstone (FLIP reveal)
   layoutId?: string;
+  // Miss-reveal wake: when set, this row's one-row displacement (the failed card vacating /
+  // the tombstone inserting) is layout-animated with this delay (s) so cards ripple out of
+  // the mover's way in passage order. Null/undefined = no layout animation (rows snap).
+  layoutShiftDelay?: number | null;
 }
 
 // Extracted image section to reduce component complexity
@@ -68,21 +74,20 @@ const EventImage: React.FC<{
 };
 
 // Spring animation for newly placed cards
-const springBounce = {
+const makeSpringBounce = (t: AnimationTuning) => ({
   initial: { scale: 0.95, opacity: 0.8 },
   animate: {
     scale: 1,
     opacity: 1,
     transition: {
       type: 'spring' as const,
-      stiffness: 400,
-      damping: 25,
+      ...t.success.bounceSpring,
     },
   },
-};
+});
 
 // Enhanced exit animation for rejected cards
-const rejectionExit = {
+const makeRejectionExit = (t: AnimationTuning) => ({
   exit: {
     scale: 0.9,
     opacity: 0,
@@ -90,30 +95,24 @@ const rejectionExit = {
     x: -20,
     transition: {
       type: 'spring' as const,
-      stiffness: 300,
-      damping: 20,
+      ...t.miss.rejectionSpring,
       duration: 0.3,
     },
   },
-};
+});
 
 // Year pop animation for successful placement
-const yearPopVariants = {
+const makeYearPopVariants = (t: AnimationTuning) => ({
   idle: { scale: 1 },
   pop: {
-    scale: [1, 1.3, 1],
+    scale: [1, t.success.yearPopPeakScale, 1],
     transition: {
-      duration: 0.4,
+      duration: t.success.yearPopDurationS,
       times: [0, 0.4, 1],
       ease: 'easeOut' as const,
     },
   },
-};
-
-// Wave ripple animation constants
-const RIPPLE_STAGGER_S = 0.2; // 100ms stagger per card distance
-const BASE_Y_OFFSET = 6; // Push DOWN initially (impact effect)
-const HALF_LIFE_CARDS = 1.0; // Amplitude halves every 1.25 card distances
+});
 
 function getGlowClass(intensity: GlowIntensity): string {
   switch (intensity) {
@@ -164,32 +163,31 @@ function useEventAnimations(
 
 // Hook for one-shot ripple animation using useAnimate
 function useRippleAnimation(
-  rippleDistance: number | undefined,
-  rippleTrigger: number | undefined,
+  ripple: RippleSpec | null,
   shouldReduceMotion: boolean | null,
-  amplitudeMultiplier: number = 1.0
+  tuning: AnimationTuning
 ) {
   const [scope, animate] = useAnimate();
+  const delay = ripple?.delay;
+  const amplitudePx = ripple?.amplitudePx;
+  const trigger = ripple?.trigger;
+  const { ripplePushDurationS, rippleReturnSpring } = tuning.success;
 
   useEffect(() => {
     if (
-      rippleDistance !== undefined &&
-      rippleDistance > 0 &&
-      rippleTrigger !== undefined &&
+      delay !== undefined &&
+      amplitudePx !== undefined &&
+      trigger !== undefined &&
+      amplitudePx > 0 &&
       !shouldReduceMotion
     ) {
-      // Exponential decay: amplitude halves every HALF_LIFE_CARDS distance
-      const decayFactor = Math.pow(0.5, (rippleDistance - 1) / HALF_LIFE_CARDS);
-      const yOffset = BASE_Y_OFFSET * decayFactor * amplitudeMultiplier;
-      const delay = rippleDistance * RIPPLE_STAGGER_S;
-
       // Two-phase animation: quick push down, then spring back with oscillations
       // Phase 1: Push down quickly
       animate(
         scope.current,
-        { y: yOffset },
+        { y: amplitudePx },
         {
-          duration: 0.15,
+          duration: ripplePushDurationS,
           ease: 'easeOut',
           delay,
         }
@@ -200,15 +198,22 @@ function useRippleAnimation(
           { y: 0 },
           {
             type: 'spring',
-            stiffness: 150,
-            damping: 4,
-            mass: 1,
+            ...rippleReturnSpring,
           }
         );
       });
     }
-    // rippleTrigger is the key dependency - it changes each time a new ripple starts
-  }, [rippleTrigger, rippleDistance, animate, scope, shouldReduceMotion, amplitudeMultiplier]);
+    // trigger is the key dependency - it changes each time a new wave starts
+  }, [
+    trigger,
+    delay,
+    amplitudePx,
+    animate,
+    scope,
+    shouldReduceMotion,
+    ripplePushDurationS,
+    rippleReturnSpring,
+  ]);
 
   return scope;
 }
@@ -221,15 +226,22 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   isAnimating = false,
   animationSuccess,
   animationPhase,
-  rippleDistance,
-  rippleTrigger,
+  ripple = null,
   glowIntensity,
-  rippleAmplitudeMultiplier,
   preloadDetailImages = true,
   priority = false,
   layoutId,
+  layoutShiftDelay = null,
 }) => {
   const shouldReduceMotion = useReducedMotion();
+  const tuning = useAnimationTuning();
+  const hasLayoutShift = layoutShiftDelay !== null && !shouldReduceMotion;
+
+  // Tuning is the stable DEFAULT_TUNING in the game (module constant context default),
+  // so these memos behave exactly like the former module-level constants.
+  const springBounce = useMemo(() => makeSpringBounce(tuning), [tuning]);
+  const rejectionExit = useMemo(() => makeRejectionExit(tuning), [tuning]);
+  const yearPopVariants = useMemo(() => makeYearPopVariants(tuning), [tuning]);
 
   // Warm the full-size detail image so tapping this event opens its popup instantly.
   // Disabled on the View Timeline page, where every event renders at once.
@@ -245,59 +257,73 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
     );
 
   // Imperative ripple animation - triggers once and self-completes
-  const rippleScope = useRippleAnimation(
-    rippleDistance,
-    rippleTrigger,
-    shouldReduceMotion,
-    rippleAmplitudeMultiplier
-  );
+  const rippleScope = useRippleAnimation(ripple, shouldReduceMotion, tuning);
 
   return (
     <motion.div
-      ref={rippleScope}
       data-timeline-index={index}
-      className={`flex items-center w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
+      layout={hasLayoutShift ? 'position' : undefined}
+      transition={
+        hasLayoutShift
+          ? {
+              layout: {
+                type: 'spring',
+                ...tuning.wake.layoutShiftSpring,
+                delay: layoutShiftDelay,
+              },
+            }
+          : undefined
+      }
+      className={`w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
     >
-      {/* Year column (fixed 96px width) with tick */}
-      <div className="w-24 pl-2 flex items-center justify-end shrink-0">
-        <motion.span
-          data-timeline-year={event.year}
-          variants={yearPopVariants}
-          animate={shouldPopYear ? 'pop' : 'idle'}
-          className="text-text font-bold text-sm font-mono pr-2 text-right leading-tight"
-        >
-          {formatYear(event.year)}
-        </motion.span>
-        <div className="w-3 h-1 bg-accent shrink-0" />
-      </div>
-
-      {/* Card area - landscape card */}
-      <div className="flex-1 pl-3">
-        <motion.button
-          onClick={onTap}
-          layoutId={layoutId}
-          initial={isSuccessAnimation ? springBounce.initial : false}
-          animate={isSuccessAnimation ? springBounce.animate : undefined}
-          exit={isErrorAnimation ? rejectionExit.exit : undefined}
-          className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
-        >
-          {/* Image section (40% width) */}
-          <div className="w-[40%] h-full relative overflow-hidden">
-            <EventImage imageUrl={event.image_url} category={event.category} priority={priority} />
-          </div>
-          {/* Title section (60% width) */}
-          <div
-            className="w-[60%] h-full flex items-center px-2 py-1"
-            style={getEventColorStyle(event)}
+      {/* Ripple bump lives on an inner wrapper: animating `y` on the outer row would
+          overwrite the layout projection's transform and snap an in-flight wake shift */}
+      <motion.div ref={rippleScope} className="flex items-center w-full">
+        {/* Year column (fixed 96px width) with tick */}
+        <div className="w-24 pl-2 flex items-center justify-end shrink-0">
+          <motion.span
+            data-timeline-year={event.year}
+            variants={yearPopVariants}
+            animate={shouldPopYear ? 'pop' : 'idle'}
+            className="text-text font-bold text-sm font-mono pr-2 text-right leading-tight"
           >
-            <span
-              className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
+            {formatYear(event.year)}
+          </motion.span>
+          <div className="w-3 h-1 bg-accent shrink-0" />
+        </div>
+
+        {/* Card area - landscape card */}
+        <div className="flex-1 pl-3">
+          <motion.button
+            onClick={onTap}
+            layoutId={layoutId}
+            initial={isSuccessAnimation ? springBounce.initial : false}
+            animate={isSuccessAnimation ? springBounce.animate : undefined}
+            exit={isErrorAnimation ? rejectionExit.exit : undefined}
+            className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm touch-manipulation active:scale-95 z-10 transition-colors duration-200 ${cardAnimationClass}`}
+          >
+            {/* Image section (40% width) */}
+            <div className="w-[40%] h-full relative overflow-hidden">
+              <EventImage
+                imageUrl={event.image_url}
+                category={event.category}
+                priority={priority}
+              />
+            </div>
+            {/* Title section (60% width) */}
+            <div
+              className="w-[60%] h-full flex items-center px-2 py-1"
+              style={getEventColorStyle(event)}
             >
-              {event.friendly_name}
-            </span>
-          </div>
-        </motion.button>
-      </div>
+              <span
+                className={`${getEventTextClass(event)} text-sm leading-tight line-clamp-3 font-body`}
+              >
+                {event.friendly_name}
+              </span>
+            </div>
+          </motion.button>
+        </div>
+      </motion.div>
     </motion.div>
   );
 };

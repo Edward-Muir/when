@@ -33,6 +33,11 @@ import {
   processIncorrectPlacement,
   buildPopupData,
 } from '../utils/placementLogic';
+import {
+  DEFAULT_TUNING,
+  MISS_FLASH_MS,
+  getMissTravelMs,
+} from '../components/Timeline/animationTuning';
 
 interface UseWhenGameReturn {
   state: WhenGameState;
@@ -55,6 +60,11 @@ interface UseWhenGameReturn {
   /** Personal-best milestones set by the most recently recorded game (text-only end-of-game popups). */
   gameMilestones: GameMilestone[];
 }
+
+// Miss-reveal choreography timings now live in the shared tuning module
+// (re-exported here for existing importers). The hook reads DEFAULT_TUNING
+// directly — game sequencing is not affected by the jig's tuning provider.
+export { MISS_FLASH_MS, getMissTravelMs };
 
 const initialState: WhenGameState = {
   phase: 'loading',
@@ -297,7 +307,7 @@ export function useWhenGame(): UseWhenGameReturn {
               activePlayersAtRoundStart: update.activePlayersAtRoundStart,
             };
           });
-        }, 600);
+        }, DEFAULT_TUNING.success.flashMs);
       } else {
         // 4b. Incorrect placement: show card at attempted position briefly
         const tempTimeline = insertIntoTimeline(state.timeline, activeCard, insertionIndex);
@@ -324,56 +334,62 @@ export function useWhenGame(): UseWhenGameReturn {
             ],
             animationPhase: 'moving',
           }));
-        }, 400);
+        }, MISS_FLASH_MS);
 
         // 6b. After animation, finalize incorrect placement
-        setTimeout(() => {
-          setState((prev) => {
-            const update = processIncorrectPlacement(prev, activeCard);
+        setTimeout(
+          () => {
+            setState((prev) => {
+              const update = processIncorrectPlacement(prev, activeCard);
 
-            // For multiplayer, defer turn advancement to popup dismiss
-            if (!isSinglePlayer) {
-              const pendingUpdate = () => {
-                setState((s) => ({
-                  ...s,
-                  currentPlayerIndex: update.currentPlayerIndex,
-                  turnNumber: update.turnNumber,
-                  roundNumber: update.roundNumber,
-                  activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-                  phase: update.isGameOver ? 'gameOver' : 'playing',
+              // For multiplayer, defer turn advancement to popup dismiss
+              if (!isSinglePlayer) {
+                const pendingUpdate = () => {
+                  setState((s) => ({
+                    ...s,
+                    currentPlayerIndex: update.currentPlayerIndex,
+                    turnNumber: update.turnNumber,
+                    roundNumber: update.roundNumber,
+                    activePlayersAtRoundStart: update.activePlayersAtRoundStart,
+                    phase: update.isGameOver ? 'gameOver' : 'playing',
+                  }));
+                };
+                setPendingPopupState((prevPopup) => ({
+                  ...prevPopup,
+                  pendingStateUpdate: pendingUpdate,
                 }));
-              };
-              setPendingPopupState((prevPopup) => ({
-                ...prevPopup,
-                pendingStateUpdate: pendingUpdate,
-              }));
 
+                return {
+                  ...prev,
+                  players: update.players,
+                  deck: update.deck,
+                  winners: update.winners,
+                  isAnimating: false,
+                  animationPhase: null,
+                };
+              }
+
+              // For single player, apply all updates immediately
               return {
                 ...prev,
                 players: update.players,
                 deck: update.deck,
+                currentPlayerIndex: update.currentPlayerIndex,
+                turnNumber: update.turnNumber,
+                roundNumber: update.roundNumber,
                 winners: update.winners,
+                phase: update.isGameOver ? 'gameOver' : 'playing',
                 isAnimating: false,
                 animationPhase: null,
+                activePlayersAtRoundStart: update.activePlayersAtRoundStart,
               };
-            }
-
-            // For single player, apply all updates immediately
-            return {
-              ...prev,
-              players: update.players,
-              deck: update.deck,
-              currentPlayerIndex: update.currentPlayerIndex,
-              turnNumber: update.turnNumber,
-              roundNumber: update.roundNumber,
-              winners: update.winners,
-              phase: update.isGameOver ? 'gameOver' : 'playing',
-              isAnimating: false,
-              animationPhase: null,
-              activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-            };
-          });
-        }, 800);
+            });
+            // Input stays locked through flash + travel + a settle margin for the wake springs
+          },
+          MISS_FLASH_MS +
+            getMissTravelMs(Math.abs(insertionIndex - result.correctPosition)) +
+            DEFAULT_TUNING.miss.settleMarginMs
+        );
       }
 
       return result;

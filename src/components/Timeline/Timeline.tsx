@@ -2,11 +2,12 @@ import React, { useRef, useEffect, useLayoutEffect, useMemo, useState } from 're
 import { LayoutGroup, useReducedMotion } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
-import TimelineEvent, { RIPPLE_DURATION_MS } from './TimelineEvent';
+import TimelineEvent, { RippleSpec } from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
+import { getMissTravelMs, invTravelEase, useAnimationTuning } from './animationTuning';
 
 interface TimelineProps {
   events: HistoricalEvent[];
@@ -69,6 +70,8 @@ const Timeline: React.FC<TimelineProps> = ({
   const prevLen = useRef(events.length);
   const prevFailedLen = useRef(failedPlacements.length);
   const shouldReduceMotion = useReducedMotion();
+  // DEFAULT_TUNING unless the anim-jig's provider is mounted — stable identity in the game
+  const tuning = useAnimationTuning();
 
   // Make the entire timeline a single drop zone
   const { setNodeRef: setTimelineDropRef } = useDroppable({
@@ -81,6 +84,12 @@ const Timeline: React.FC<TimelineProps> = ({
     timestamp: number;
   } | null>(null);
 
+  // Miss wake trigger: stamped once when a failure reveal begins (flash render). All wake
+  // delays are offset by the flash duration so they line up with the travel that starts
+  // MISS_FLASH_MS later. Deliberately NOT set at travel start — a re-render while framer
+  // holds delayed layout springs re-measures the rows and cancels the pending shifts.
+  const [wakeTrigger, setWakeTrigger] = useState<number | null>(null);
+
   // Trigger ripple when a successful placement happens
   useEffect(() => {
     if (lastPlacementResult?.success && animationPhase === 'flash') {
@@ -91,30 +100,94 @@ const Timeline: React.FC<TimelineProps> = ({
     }
   }, [lastPlacementResult, animationPhase]);
 
-  // Clear ripple after animation completes (~2 seconds for 3 oscillations)
+  // Clear ripples after the animation completes (~2 seconds for 3 oscillations)
   useEffect(() => {
     if (rippleData) {
-      const timer = setTimeout(() => setRippleData(null), RIPPLE_DURATION_MS);
+      const timer = setTimeout(() => setRippleData(null), tuning.success.rippleCleanupMs);
       return () => clearTimeout(timer);
     }
-  }, [rippleData]);
+  }, [rippleData, tuning]);
 
   // Get streak-based glow and ripple config
   const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
 
-  // Calculate wave animation data: distance from placed card for staggered ripple effect
-  const waveDistances = useMemo(() => {
-    if (!rippleData) return new Map<number, number>();
+  // Success wave: bumps radiate outward from the placed card (unchanged behavior,
+  // expressed as explicit per-row delay/amplitude)
+  const successWave = useMemo(() => {
+    const bumps = new Map<number, RippleSpec>();
+    if (!rippleData) return bumps;
     const placedIndex = events.findIndex((e) => e.name === rippleData.placedEventName);
-    if (placedIndex === -1) return new Map<number, number>();
-
-    const distances = new Map<number, number>();
+    if (placedIndex === -1) return bumps;
+    const { rippleStaggerS, rippleBaseYOffsetPx, rippleHalfLifeCards } = tuning.success;
     events.forEach((_, idx) => {
       if (idx === placedIndex) return; // Skip the placed card itself
-      distances.set(idx, Math.abs(idx - placedIndex));
+      const d = Math.abs(idx - placedIndex);
+      bumps.set(idx, {
+        delay: d * rippleStaggerS,
+        amplitudePx:
+          rippleBaseYOffsetPx *
+          Math.pow(0.5, (d - 1) / rippleHalfLifeCards) *
+          streakConfig.rippleMultiplier,
+        trigger: rippleData.timestamp,
+      });
     });
-    return distances;
-  }, [rippleData, events]);
+    return bumps;
+  }, [rippleData, events, streakConfig, tuning]);
+
+  // Name of the failed card whose reveal is currently running (flash or moving phase)
+  const missReveal =
+    lastPlacementResult !== null && !lastPlacementResult.success && animationPhase !== null
+      ? lastPlacementResult
+      : null;
+
+  // Stamp the wake trigger once per reveal, at flash time (see comment on wakeTrigger)
+  useEffect(() => {
+    if (missReveal) setWakeTrigger(Date.now());
+  }, [missReveal]);
+
+  // Miss wake wave: each passed row bumps just behind the traveling card (passage times
+  // from the inverted travel ease, offset by the flash), then the wave runs out past the
+  // landing gap, decaying. Keyed by event name — stable across the flash render (mover
+  // still in `events`) and the moving render, so each row's bump schedules exactly once.
+  const missWaveBumps = useMemo(() => {
+    const bumps = new Map<string, RippleSpec>();
+    if (!missReveal || wakeTrigger === null) return bumps;
+    const { attemptedPosition: a, correctPosition: g } = missReveal;
+    const pathLen = Math.abs(a - g);
+    if (pathLen === 0) return bumps;
+    const preInsert = events.filter((e) => e.name !== missReveal.event.name);
+    const travelS = getMissTravelMs(pathLen, tuning.miss) / 1000;
+    const flashS = tuning.miss.flashMs / 1000;
+    const { amplitudePx, bumpOffsetS, runOutBumps, runOutBaseDelayS, runOutStepS, runOutDecay } =
+      tuning.wake;
+    const down = g > a; // travel direction in index space
+    const lo = Math.min(a, g);
+    const hi = Math.max(a, g);
+    for (let i = lo; i < hi; i++) {
+      const passageOrder = down ? i - a : a - 1 - i; // 0 = first row the mover passes
+      const passageS = invTravelEase((passageOrder + 0.5) / pathLen) * travelS;
+      const evt = preInsert.at(i);
+      if (evt) {
+        bumps.set(evt.name, {
+          delay: flashS + passageS + bumpOffsetS,
+          amplitudePx,
+          trigger: wakeTrigger,
+        });
+      }
+    }
+    // Run-out: the wave continues through the landing spot and dies off
+    for (let extra = 0; extra < runOutBumps; extra++) {
+      const idx = down ? g + extra : g - 1 - extra;
+      const evt = idx >= 0 ? preInsert.at(idx) : undefined;
+      if (!evt || bumps.has(evt.name)) continue;
+      bumps.set(evt.name, {
+        delay: flashS + travelS + runOutBaseDelayS + extra * runOutStepS,
+        amplitudePx: amplitudePx * Math.pow(runOutDecay, extra),
+        trigger: wakeTrigger,
+      });
+    }
+    return bumps;
+  }, [missReveal, wakeTrigger, events, tuning]);
 
   // Re-arm the one-time centering whenever a new game starts (timeline goes empty -> populated)
   useEffect(() => {
@@ -176,7 +249,8 @@ const Timeline: React.FC<TimelineProps> = ({
     return () => ro.disconnect();
   }, [events.length, startAtMiddle]);
 
-  // Bring a freshly revealed tombstone into view so the player sees where the card belonged
+  // Bring a freshly revealed tombstone into view so the player sees where the card
+  // belonged, and start the wake wave clock at the same instant the travel begins
   useEffect(() => {
     const container = scrollRef.current;
     if (container && failedPlacements.length > prevFailedLen.current) {
@@ -197,10 +271,69 @@ const Timeline: React.FC<TimelineProps> = ({
   const ghostHostRowIndex =
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
-  const revealingFailedName =
-    lastPlacementResult?.success === false && animationPhase !== null
-      ? lastPlacementResult.event.name
-      : null;
+  const revealingFailedName = missReveal?.event.name ?? null;
+
+  // Miss-reveal wake shifts: only cards between the attempted spot (a) and the correct
+  // gap (g) shift (by one row-height, in one render) — layout-animate exactly those rows,
+  // each starting just before the mover reaches it (passage time from the inverted travel
+  // ease). Keyed by name because indices differ between the flash render (mover still in
+  // `events`) and the moving render; a parallel index map covers tombstone rows.
+  const wakeDelays = useMemo(() => {
+    const byName = new Map<string, number>();
+    const byIndex = new Map<number, number>();
+    if (!missReveal) return { byName, byIndex };
+    const { attemptedPosition: a, correctPosition: g } = missReveal;
+    const preInsert = events.filter((e) => e.name !== missReveal.event.name);
+    const lo = Math.min(a, g);
+    const hi = Math.max(a, g);
+    const pathLen = hi - lo;
+    if (pathLen === 0) return { byName, byIndex };
+    const travelS = getMissTravelMs(pathLen, tuning.miss) / 1000;
+    for (let i = lo; i < hi; i++) {
+      const passageOrder = a > g ? a - 1 - i : i - a; // 0 = first card the mover passes
+      const passageS = invTravelEase((passageOrder + 0.5) / pathLen) * travelS;
+      // part just before the card arrives
+      const delay = Math.max(0, passageS - tuning.wake.layoutShiftLeadS);
+      byIndex.set(i, delay);
+      const evt = preInsert.at(i);
+      if (evt) byName.set(evt.name, delay);
+    }
+    return { byName, byIndex };
+  }, [missReveal, events, tuning]);
+
+  // Distance-scaled travel duration for the reveal target's FLIP
+  const missTravelMs = missReveal
+    ? getMissTravelMs(
+        Math.abs(missReveal.attemptedPosition - missReveal.correctPosition),
+        tuning.miss
+      )
+    : undefined;
+
+  const renderTombstoneRow = (
+    row: Extract<ReturnType<typeof buildTimelineRows>[number], { kind: 'tombstone' }>,
+    rowIndex: number
+  ) => {
+    const { failed } = row;
+    const isRevealTarget = revealingFailedName === failed.event.name;
+    return (
+      <TombstoneRow
+        key={`tombstone-${failed.event.name}`}
+        failed={failed}
+        onTap={() => onEventTap(failed.event)}
+        displaced={ghostGap !== null && row.gap === ghostGap}
+        ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
+        // layoutId only during the reveal FLIP — permanent layoutId would
+        // smoothly layout-animate vertical moves while real cards snap
+        revealing={isRevealTarget}
+        travelMs={isRevealTarget ? missTravelMs : undefined}
+        layoutShiftDelay={
+          isRevealTarget
+            ? null
+            : (wakeDelays.byIndex.get(row.gap) ?? wakeDelays.byIndex.get(row.gap - 1) ?? null)
+        }
+      />
+    );
+  };
 
   return (
     <div className="h-full relative">
@@ -234,19 +367,7 @@ const Timeline: React.FC<TimelineProps> = ({
           <LayoutGroup>
             {rows.map((row, rowIndex) => {
               if (row.kind === 'tombstone') {
-                const { failed } = row;
-                return (
-                  <TombstoneRow
-                    key={`tombstone-${failed.event.name}`}
-                    failed={failed}
-                    onTap={() => onEventTap(failed.event)}
-                    displaced={ghostGap !== null && row.gap === ghostGap}
-                    ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
-                    // layoutId only during the reveal FLIP — permanent layoutId would
-                    // smoothly layout-animate vertical moves while real cards snap
-                    revealing={revealingFailedName === failed.event.name}
-                  />
-                );
+                return renderTombstoneRow(row, rowIndex);
               }
 
               const { event, realIndex: idx } = row;
@@ -274,10 +395,9 @@ const Timeline: React.FC<TimelineProps> = ({
                     layoutId={
                       isFailedReveal && !shouldReduceMotion ? `placed-${event.name}` : undefined
                     }
-                    rippleDistance={waveDistances.get(idx)}
-                    rippleTrigger={rippleData?.timestamp}
+                    ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
                     glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
-                    rippleAmplitudeMultiplier={streakConfig.rippleMultiplier}
+                    layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
                     preloadDetailImages={preloadDetailImages}
                     // Eagerly load the first couple of cards — they're the LCP element.
                     priority={idx < 2}

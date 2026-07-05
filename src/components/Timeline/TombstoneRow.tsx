@@ -5,6 +5,9 @@ import { formatYear } from '../../utils/gameLogic';
 import { getImageUrl } from '../../utils/cloudinaryImage';
 import CategoryIcon from '../CategoryIcon';
 import Card from '../Card';
+import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
+
+export { TRAVEL_EASE };
 
 interface TombstoneRowProps {
   failed: FailedPlacement;
@@ -15,6 +18,35 @@ interface TombstoneRowProps {
   ghostEvent?: HistoricalEvent | null;
   /** True only while this card's failed-reveal FLIP runs; enables the shared layoutId. */
   revealing?: boolean;
+  /** Reveal travel duration (ms), distance-scaled — set only on the reveal target. */
+  travelMs?: number;
+  /** Miss-reveal wake: layout-animate this row's displacement with this delay (s). */
+  layoutShiftDelay?: number | null;
+}
+
+// While revealing, the whole transition is the distance-scaled travel tween — the shared
+// layoutId FLIP reads the top-level transition, not a nested `layout` key. At rest the
+// snappy spring drives x/opacity (displaced slide). TRAVEL_EASE lives in animationTuning
+// next to its analytic inverse (Timeline schedules the trailing wave by inverting it).
+function cardTransition(
+  shouldReduceMotion: boolean | null,
+  revealing: boolean,
+  travelMs: number | undefined,
+  miss: AnimationTuning['miss']
+) {
+  if (shouldReduceMotion) return { duration: 0 };
+  if (revealing) {
+    const durationMs = travelMs ?? miss.travelMinMs;
+    return { type: 'tween' as const, duration: durationMs / 1000, ease: TRAVEL_EASE };
+  }
+  return { type: 'spring' as const, ...miss.restSpring };
+}
+
+// Wake shift: the row parts for the traveling card with a springy, delayed layout move
+function rowShiftTransition(layoutShiftDelay: number, shiftSpring: SpringParams) {
+  return {
+    layout: { type: 'spring' as const, ...shiftSpring, delay: layoutShiftDelay },
+  };
 }
 
 // A failed card shown at its true position as a washed-out "dead" card: regular card
@@ -30,17 +62,28 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
   displaced,
   ghostEvent,
   revealing = false,
+  travelMs,
+  layoutShiftDelay = null,
 }) => {
   const shouldReduceMotion = useReducedMotion();
+  const tuning = useAnimationTuning();
   const [imageError, setImageError] = useState(false);
   const { event } = failed;
   const hasImage = event.image_url && !imageError;
-  const transition = shouldReduceMotion
-    ? { duration: 0 }
-    : { type: 'spring' as const, stiffness: 400, damping: 30 };
+  const hasLayoutShift = layoutShiftDelay !== null && !shouldReduceMotion;
+  const transition = cardTransition(shouldReduceMotion, revealing, travelMs, tuning.miss);
 
   return (
-    <div data-tombstone-name={event.name} className="flex items-center w-full py-1">
+    <motion.div
+      data-tombstone-name={event.name}
+      layout={hasLayoutShift ? 'position' : undefined}
+      transition={
+        hasLayoutShift
+          ? rowShiftTransition(layoutShiftDelay, tuning.wake.layoutShiftSpring)
+          : undefined
+      }
+      className="flex items-center w-full py-1"
+    >
       {/* Year column (fixed 96px width): faint year at rest, ghost's "?" while hosting */}
       <div className="w-24 pl-2 flex items-center justify-end shrink-0">
         {ghostEvent ? (
@@ -78,9 +121,9 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             initial={false}
             animate={{ x: displaced ? '105%' : 0, opacity: displaced ? 0.35 : 1 }}
             transition={transition}
-            className={`absolute inset-0 rounded-lg overflow-hidden border border-border bg-transparent flex flex-row touch-manipulation ${
+            className={`absolute inset-0 rounded-lg overflow-hidden border border-border flex flex-row touch-manipulation ${
               displaced ? 'pointer-events-none' : ''
-            }`}
+            } ${revealing ? 'z-20 shadow-lg bg-surface' : 'bg-transparent'}`}
           >
             {/* Image section (40% width), greyscaled */}
             <div className="w-[40%] h-full relative overflow-hidden">
@@ -108,7 +151,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
           </motion.button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
