@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Edward-Muir/when/compare/v1.2.3...v1.3.0) (2026-07-05)
+
+
+### Features
+
+* Add tombstone cards to timeline ([57366d9](https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f))
+* Polish failure mode ([cb909f0](https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71))
+
 ## [1.2.3](https://github.com/Edward-Muir/when/compare/v1.2.2...v1.2.3) (2026-07-01)
 
 

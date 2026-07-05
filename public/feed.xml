@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2026 21:15:41 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 17:55:45 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.3.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.3.0</guid>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add tombstone cards to timeline (<a href="https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f">57366d9</a>)</li> <li>Polish failure mode (<a href="https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71">cb909f0</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.2.3</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.11.2</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Improve QC page (<a href="https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a">45b868f</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.11.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.11.1</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add QC page (<a href="https://github.com/Edward-Muir/when/commit/affd977b8b0747ca2f5ad454cc1e1abc04e4f62f">affd977</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
