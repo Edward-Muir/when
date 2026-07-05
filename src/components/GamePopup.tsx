@@ -8,6 +8,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
+import NextDailyCountdown from './NextDailyCountdown';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
@@ -18,6 +19,9 @@ interface GamePopupProps {
   nextPlayer?: Player;
   showYear?: boolean;
   gameState?: WhenGameState;
+  // Tombstoned (failed) event: greyscale image, muted text, surface background —
+  // matches the tombstone card treatment on the timeline
+  tombstone?: boolean;
 }
 
 // Sub-component for result banner (full-width colored banner at top)
@@ -43,21 +47,22 @@ function EventHeader({
   event,
   showYear,
   isIncorrect,
+  tombstone,
 }: {
   event: HistoricalEvent;
   showYear: boolean;
   isIncorrect?: boolean;
+  tombstone?: boolean;
 }) {
+  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
   return (
     <div className="px-4 py-3">
-      <h2
-        className={`text-lg font-display font-semibold leading-tight ${getEventTextClass(event)}`}
-      >
+      <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
         {event.friendly_name}
       </h2>
       {showYear && (
         <span
-          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${getEventTextClass(event)} opacity-100`}`}
+          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
         >
           {formatYear(event.year)}
         </span>
@@ -73,7 +78,7 @@ const IMAGE_MAX_HEIGHT = 384;
 const IMAGE_DEFAULT_HEIGHT = 192;
 
 // Sub-component for image section (clean, no overlay)
-function EventImage({ event }: { event: HistoricalEvent }) {
+function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
   const getImageHeight = () => {
     if (!event.image_width || !event.image_height) return IMAGE_DEFAULT_HEIGHT;
     const aspectRatio = event.image_width / event.image_height;
@@ -89,7 +94,7 @@ function EventImage({ event }: { event: HistoricalEvent }) {
         <img
           src={getImageUrl(event.image_url, 'detail')}
           alt=""
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${tombstone ? 'grayscale opacity-70' : ''}`}
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-border/30">
@@ -282,6 +287,13 @@ function GameOverContent({
       {dailyResult && (
         <LeaderboardSubmit dailyResult={dailyResult} onSubmitted={onLeaderboardSubmit} />
       )}
+
+      {/* Return hook: countdown to the next daily puzzle */}
+      {isDaily && (
+        <p className="text-center text-text-muted text-sm mt-4 font-body">
+          Come back tomorrow — <NextDailyCountdown />
+        </p>
+      )}
     </div>
   );
 }
@@ -299,11 +311,13 @@ function EventPopupContent({
   event,
   showYear,
   nextPlayer,
+  tombstone,
 }: {
   type: GamePopupType;
   event: HistoricalEvent;
   showYear: boolean;
   nextPlayer?: Player;
+  tombstone?: boolean;
 }) {
   const isCorrect = type === 'correct';
   const isIncorrect = type === 'incorrect';
@@ -312,11 +326,18 @@ function EventPopupContent({
   return (
     <>
       {(isCorrect || isIncorrect) && <ResultBanner isCorrect={isCorrect} />}
-      <EventHeader event={event} showYear={showYear} isIncorrect={isIncorrect} />
-      <EventImage event={event} />
+      <EventHeader
+        event={event}
+        showYear={showYear}
+        isIncorrect={isIncorrect}
+        tombstone={tombstone}
+      />
+      <EventImage event={event} tombstone={tombstone} />
       {(isDescription || isIncorrect) && (
         <div className="px-4 py-3">
-          <p className={`${getEventTextClass(event)} text-sm leading-relaxed font-body`}>
+          <p
+            className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
+          >
             {event.description}
           </p>
         </div>
@@ -340,6 +361,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
   nextPlayer,
   showYear = true,
   gameState,
+  tombstone = false,
 }) => {
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
@@ -372,7 +394,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
         >
           <motion.div
             className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors"
-            style={!isGameOver && event ? getEventColorStyle(event) : undefined}
+            style={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
             onClick={isGameOver ? (e) => e.stopPropagation() : undefined}
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -391,6 +413,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
                   event={event}
                   showYear={showYear}
                   nextPlayer={nextPlayer}
+                  tombstone={tombstone}
                 />
               )
             )}

@@ -50,6 +50,7 @@ function makeGameState(opts: {
     seedEventName,
     deck: [],
     placementHistory,
+    failedPlacements: [],
     lastPlacementResult: null,
     isAnimating: false,
     animationPhase: null,
