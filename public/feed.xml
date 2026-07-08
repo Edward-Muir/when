@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 17:55:45 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 08 Jul 2026 21:18:31 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.4.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.4.0</guid>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add push notifactions to ios app (<a href="https://github.com/Edward-Muir/when/commit/bc9422d77c0eaf3984db51012d12916345b3ada3">bc9422d</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.3.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v0.11.3</guid>
       <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix qc page routing (<a href="https://github.com/Edward-Muir/when/commit/934afeca08907cfd1d05ff52742a2186da3d4752">934afec</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.11.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.11.2</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Improve QC page (<a href="https://github.com/Edward-Muir/when/commit/45b868f875565dc2c94220e57dc3950452440a1a">45b868f</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
