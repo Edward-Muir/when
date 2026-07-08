@@ -11,10 +11,13 @@ import {
   Sun,
   Moon,
   Apple,
+  Bell,
+  BellOff,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
+import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
@@ -211,6 +214,47 @@ export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
   );
 };
 
+// Daily-reminder toggle row (native app only) — kept open like the theme row
+// so the user sees the state change. "On" means it will actually fire: user
+// intent AND OS permission.
+const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> = ({
+  itemClass,
+  iconClass,
+}) => {
+  const reminder = useDailyReminder();
+  const [showSettingsHint, setShowSettingsHint] = React.useState(false);
+
+  if (!reminder.isSupported) return null;
+
+  const reminderOn = reminder.enabled && reminder.permission === 'granted';
+
+  const handleToggle = () => {
+    if (reminderOn) {
+      reminder.disable();
+    } else if (reminder.permission === 'denied') {
+      setShowSettingsHint(true);
+    } else if (reminder.permission === 'granted') {
+      reminder.enable();
+    } else {
+      reminder.requestAndEnable();
+    }
+  };
+
+  return (
+    <>
+      <button onClick={handleToggle} className={itemClass}>
+        {reminderOn ? <Bell className={iconClass} /> : <BellOff className={iconClass} />}
+        <span className="font-body">Daily Reminder (8 AM) {reminderOn ? 'On' : 'Off'}</span>
+      </button>
+      {showSettingsHint && (
+        <p className="px-4 pb-2 -mt-1 text-sm text-text-muted font-body">
+          Notifications are off for When? — enable them in iOS Settings.
+        </p>
+      )}
+    </>
+  );
+};
+
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
@@ -297,6 +341,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                   {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
                   <span className="font-body">{isDark ? 'Light Mode' : 'Dark Mode'}</span>
                 </button>
+
+                <DailyReminderMenuItem itemClass={menuItemClass} iconClass={iconClass} />
 
                 <button onClick={handleShare} className={menuItemClass}>
                   <Share2 className={iconClass} />

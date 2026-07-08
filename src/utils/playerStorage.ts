@@ -356,6 +356,92 @@ export function updateDailyResultWithLeaderboard(rank: number, totalPlayers: num
   }
 }
 
+// --- Daily Reminder Storage ---
+
+const DAILY_REMINDER_KEY = 'when-daily-reminder';
+
+/**
+ * Whether the player wants the 8am daily-puzzle reminder. Defaults to ON:
+ * only an explicit opt-out (value '0') disables it. Intent only — the OS
+ * notification permission is a separate gate checked at scheduling time.
+ */
+export function isDailyReminderEnabled(): boolean {
+  try {
+    return localStorage.getItem(DAILY_REMINDER_KEY) !== '0';
+  } catch {
+    return true;
+  }
+}
+
+export function setDailyReminderEnabled(enabled: boolean): void {
+  try {
+    localStorage.setItem(DAILY_REMINDER_KEY, enabled ? '1' : '0');
+  } catch {
+    console.warn('Failed to save daily reminder setting to localStorage');
+  }
+}
+
+// --- Reminder Priming Storage ---
+
+const REMINDER_PRIMING_KEY = 'when-reminder-priming';
+
+const PRIMING_MAX_DISMISSALS = 3;
+const PRIMING_COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000;
+
+interface ReminderPriming {
+  dismissedAt: string; // ISO timestamp of the last "Not now"
+  count: number; // total dismissals
+}
+
+function getReminderPriming(): ReminderPriming | null {
+  try {
+    const stored = localStorage.getItem(REMINDER_PRIMING_KEY);
+    return stored ? (JSON.parse(stored) as ReminderPriming) : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Whether the pre-permission priming card ("Get a reminder at 8 AM?") may show:
+ * fewer than 3 dismissals and at least 7 days since the last one.
+ */
+export function shouldShowReminderPriming(now: Date = new Date()): boolean {
+  const priming = getReminderPriming();
+  if (!priming) return true;
+  if (priming.count >= PRIMING_MAX_DISMISSALS) return false;
+  const dismissedAt = Date.parse(priming.dismissedAt);
+  if (Number.isNaN(dismissedAt)) return true;
+  return now.getTime() - dismissedAt >= PRIMING_COOLDOWN_MS;
+}
+
+/**
+ * Record a "Not now" on the priming card, starting the 7-day cooldown.
+ */
+export function recordPrimingDismissed(now: Date = new Date()): void {
+  try {
+    const priming = getReminderPriming();
+    const updated: ReminderPriming = {
+      dismissedAt: now.toISOString(),
+      count: (priming?.count ?? 0) + 1,
+    };
+    localStorage.setItem(REMINDER_PRIMING_KEY, JSON.stringify(updated));
+  } catch {
+    console.warn('Failed to save reminder priming state to localStorage');
+  }
+}
+
+/**
+ * Clear priming dismissal state (dev/admin use — /reminder-preview).
+ */
+export function resetReminderPriming(): void {
+  try {
+    localStorage.removeItem(REMINDER_PRIMING_KEY);
+  } catch {
+    console.warn('Failed to clear reminder priming state from localStorage');
+  }
+}
+
 // --- Custom Game Settings Storage ---
 
 /**

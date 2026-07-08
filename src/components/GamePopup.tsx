@@ -7,6 +7,7 @@ import { generateEmojiGrid, shareResults } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
 import CategoryIcon from './CategoryIcon';
+import DailyReminderPrompt from './DailyReminderPrompt';
 import LeaderboardSubmit from './LeaderboardSubmit';
 import NextDailyCountdown from './NextDailyCountdown';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
@@ -288,11 +289,14 @@ function GameOverContent({
         <LeaderboardSubmit dailyResult={dailyResult} onSubmitted={onLeaderboardSubmit} />
       )}
 
-      {/* Return hook: countdown to the next daily puzzle */}
+      {/* Return hooks: reminder opt-in (native only) + countdown to the next daily */}
       {isDaily && (
-        <p className="text-center text-text-muted text-sm mt-4 font-body">
-          Come back tomorrow — <NextDailyCountdown />
-        </p>
+        <>
+          <DailyReminderPrompt />
+          <p className="text-center text-text-muted text-sm mt-4 font-body">
+            Come back tomorrow — <NextDailyCountdown />
+          </p>
+        </>
       )}
     </div>
   );

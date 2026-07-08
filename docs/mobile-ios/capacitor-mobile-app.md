@@ -16,6 +16,7 @@ The "When?" web app is wrapped as a native iOS (and eventually Android) app usin
 - `@capacitor/status-bar` — Native status bar control
 - `@capacitor/splash-screen` — Native splash screen
 - `@capacitor/haptics` — Native Taptic Engine haptic feedback
+- `@capacitor/local-notifications` — 8am daily-puzzle reminders (see [daily-reminder-notifications.md](daily-reminder-notifications.md))
 
 ### Configuration
 

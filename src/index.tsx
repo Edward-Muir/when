@@ -15,6 +15,7 @@ import Timeline from './pages/Timeline';
 import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
 import AnimJig from './pages/AnimJig';
+import ReminderPreview from './pages/ReminderPreview';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -36,6 +37,7 @@ root.render(
         <Route path="/unlock-preview" element={<UnlockPreview />} />
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="/anim-jig" element={<AnimJig />} />
+        <Route path="/reminder-preview" element={<ReminderPreview />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

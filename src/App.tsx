@@ -2,6 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
+import { LocalNotifications } from '@capacitor/local-notifications';
+import { useNavigate } from 'react-router-dom';
+import { isDailyReminderSupported, resyncDailyReminders } from './utils/dailyReminder';
 import { useWhenGame } from './hooks/useWhenGame';
 import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { pickIntroEvents } from './utils/introEvents';
@@ -64,6 +67,30 @@ function App({
     };
   }, []);
 
+  // Daily reminder: top up the rolling 8am notification window on launch and
+  // resume, and deep-link notification taps to /daily. No-op on web and in app
+  // shells that predate the LocalNotifications plugin.
+  const navigate = useNavigate();
+  const navigateRef = useRef(navigate);
+  navigateRef.current = navigate;
+  useEffect(() => {
+    if (!isDailyReminderSupported()) return;
+
+    resyncDailyReminders();
+    const onResume = () => resyncDailyReminders();
+    window.addEventListener('appResume', onResume);
+
+    // Cold-start taps are retained by the plugin and delivered once this registers.
+    const tapListener = LocalNotifications.addListener('localNotificationActionPerformed', () => {
+      navigateRef.current('/daily');
+    });
+
+    return () => {
+      window.removeEventListener('appResume', onResume);
+      tapListener.then((h) => h.remove());
+    };
+  }, []);
+
   // Native only: lock zoom. WKWebView honors these constraints (Safari ignores
   // them for accessibility), so the web keeps pinch-to-zoom while the app can't
   // get stuck zoomed in with no chrome to reset it.
@@ -104,6 +131,11 @@ function App({
   }, [state.phase, allEvents]);
 
   useImagePrefetch(state, introEvents);
+
+  // Drop today's pending 8am reminder once the daily is played (resync skips it).
+  useEffect(() => {
+    if (state.phase === 'gameOver') resyncDailyReminders();
+  }, [state.phase]);
 
   // Auto-start daily game when accessed via /daily route
   const hasAutoStarted = useRef(false);
