@@ -97,7 +97,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'Polymath',
     family: 'Collection',
     tier: 'gold',
-    unlockCriteria: 'Place an event in all 20 categories',
+    unlockCriteria: 'Place an event in all 21 categories',
     eventName: 'leonardo-mona-lisa',
   },
   // Each category badge links to a recognizable event of that category (art derives
@@ -262,6 +262,14 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     tier: 'steel',
     unlockCriteria: 'Place 20 Nature events',
     eventName: 'earth-formation',
+  },
+  {
+    id: 'cat-sports',
+    name: 'Champion',
+    family: 'Collection',
+    tier: 'steel',
+    unlockCriteria: 'Place 20 Sports events',
+    eventName: 'first-ancient-olympics',
   },
   {
     id: '16',
@@ -512,7 +520,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     name: 'The Complete Collection',
     family: 'Collection',
     tier: 'obsidian',
-    unlockCriteria: 'Earn all 20 category badges',
+    unlockCriteria: 'Earn all 21 category badges',
     eventName: 'hanging-gardens-babylon',
   },
 ];
