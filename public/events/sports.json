@@ -1,10 +1,34 @@
 [
   {
+    "name": "sumerian-belt-wrestlers-khafajah",
+    "friendly_name": "Sumerian Belt-Wrestling Bronze",
+    "year": -2600,
+    "category": "sports",
+    "description": "A cast copper figurine from the Nintu temple at Khafajah depicts two belt-wrestlers, among the oldest sculptural images of sport.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "beni-hasan-wrestling-murals",
+    "friendly_name": "Beni Hasan Wrestling Murals",
+    "year": -2000,
+    "category": "sports",
+    "description": "The tomb of Baqet III at Beni Hasan shows roughly 400 paired wrestlers, the most detailed wrestling sequence surviving from antiquity.",
+    "difficulty": "hard"
+  },
+  {
     "name": "paso-de-la-amada-ballcourt",
     "friendly_name": "Oldest Mesoamerican Ballcourt",
     "year": -1650,
     "category": "sports",
     "description": "The earliest known formal ballcourt was built at Paso de la Amada in Chiapas, Mexico, launching the Mesoamerican ballgame.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "coroebus-first-olympic-victor-776-bce",
+    "friendly_name": "First Recorded Olympic Victor",
+    "year": -776,
+    "category": "sports",
+    "description": "Coroebus of Elis, a cook, won the stadion sprint at Olympia, becoming the first recorded champion of the ancient Games.",
     "difficulty": "medium"
   },
   {
@@ -32,12 +56,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "circus-maximus-founded-tarquinius",
+    "friendly_name": "Circus Maximus Founded",
+    "year": -600,
+    "category": "sports",
+    "description": "Rome's first permanent chariot-racing arena took shape under the Etruscan king Tarquinius Priscus in the Palatine valley.",
+    "difficulty": "hard"
+  },
+  {
     "name": "pythian-games-crown-582-bce",
     "friendly_name": "Pythian Games Become Crown Games",
     "year": -582,
     "category": "sports",
     "description": "The Pythian Games at Delphi, honoring Apollo, were reorganized as a four-yearly crown festival with athletic contests added.",
     "difficulty": "hard"
+  },
+  {
+    "name": "milo-of-croton-olympic-wrestler-540-bce",
+    "friendly_name": "Milo of Croton Wrestles",
+    "year": -540,
+    "category": "sports",
+    "description": "Milo of Croton won his first Olympic wrestling crown, beginning a career of six titles that made him antiquity's most famous athlete.",
+    "difficulty": "medium"
   },
   {
     "name": "milo-croton-wrestling-reign-532-bce",
@@ -56,11 +96,11 @@
     "difficulty": "medium"
   },
   {
-    "name": "first-roman-gladiator-munus-264-bce",
-    "friendly_name": "First Roman Gladiator Munus",
-    "year": -264,
+    "name": "cuju-linzi-earliest-football",
+    "friendly_name": "Cuju First Recorded in Linzi",
+    "year": -300,
     "category": "sports",
-    "description": "The sons of Brutus Pera staged Rome's first gladiatorial combat, three pairs of fighters, as a funeral rite in the Forum Boarium.",
+    "description": "The Warring States text Zhan Guo Ce records citizens of Linzi in Qi state playing cuju, the earliest documented form of football.",
     "difficulty": "medium"
   },
   {
@@ -86,6 +126,22 @@
     "category": "sports",
     "description": "Emperor Titus opened the Colosseum with 100 days of gladiatorial fights, wild-beast hunts, and staged spectacles in Rome.",
     "difficulty": "medium"
+  },
+  {
+    "name": "diocles-charioteer-retires-146",
+    "friendly_name": "Diocles the Charioteer Retires",
+    "year": 146,
+    "category": "sports",
+    "description": "Charioteer Gaius Appuleius Diocles retired after winning 35,863,120 sesterces, likely the best-paid athlete ever.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "constantinople-hippodrome-completed-330",
+    "friendly_name": "Constantinople Hippodrome Built",
+    "year": 330,
+    "category": "sports",
+    "description": "Constantine completed the Hippodrome of Constantinople, the vast chariot arena at the heart of Byzantine public life.",
+    "difficulty": "hard"
   },
   {
     "name": "ancient-olympics-abolished-393-ce",
@@ -128,6 +184,22 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "fitzstephen-football-1174",
+    "friendly_name": "First English Football Account",
+    "year": 1174,
+    "category": "sports",
+    "description": "William Fitzstephen described London youths playing a Shrovetide ball game, an early written record of football.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bone-skate-skating-london-1174",
+    "friendly_name": "Bone-Skate Skating in London",
+    "year": 1174,
+    "category": "sports",
+    "description": "Londoners strapped animal-bone skates to their feet and slid across frozen Moorfields, per Fitzstephen's account.",
+    "difficulty": "medium"
+  },
+  {
     "name": "yabusame-established-yoritomo",
     "friendly_name": "Yabusame Ritual Established",
     "year": 1187,
@@ -141,6 +213,14 @@
     "year": 1224,
     "category": "sports",
     "description": "A Mongolian stele recorded Yesungge's archery shot of over 500 meters at a gathering of Genghis Khan's nobles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "colf-loenen-match-1297",
+    "friendly_name": "First Recorded Colf Match",
+    "year": 1297,
+    "category": "sports",
+    "description": "A colf match was reportedly played at Loenen aan de Vecht, an early ancestor of golf and the modern Dutch kolf.",
     "difficulty": "hard"
   },
   {
@@ -168,12 +248,28 @@
     "difficulty": "hard"
   },
   {
+    "name": "kirkpinar-oil-wrestling-founded-1362",
+    "friendly_name": "Kirkpinar Oil Wrestling Begins",
+    "year": 1362,
+    "category": "sports",
+    "description": "Ottoman soldiers near Edirne launched the Kirkpinar oiled-wrestling tournament, now the world's oldest continuous one.",
+    "difficulty": "medium"
+  },
+  {
     "name": "edward-iii-archery-law-1363",
     "friendly_name": "England's 1363 Archery Law",
     "year": 1363,
     "category": "sports",
     "description": "King Edward III's 1363 decree ordered every able-bodied Englishman to practise archery on Sundays and forbade rival sports.",
     "difficulty": "hard"
+  },
+  {
+    "name": "edward-iii-football-ban-1363",
+    "friendly_name": "Edward III Bans Football",
+    "year": 1363,
+    "category": "sports",
+    "description": "King Edward III outlawed football and other idle games to force Englishmen to practise archery for war instead.",
+    "difficulty": "medium"
   },
   {
     "name": "scotland-football-act-1424",
@@ -184,12 +280,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "stoolball-first-reference-1450",
+    "friendly_name": "Earliest Stoolball Reference",
+    "year": 1450,
+    "category": "sports",
+    "description": "A manual for parish priests condemned playing 'stoolball' in churchyards, the game's first known written mention.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aztec-ballgame-for-charles-v",
+    "friendly_name": "Aztec Ballgame for Charles V",
+    "year": 1528,
+    "category": "sports",
+    "description": "Hernan Cortes took Aztec ballplayers to Spain, where they performed the Mesoamerican rubber-ball game before Emperor Charles V.",
+    "difficulty": "medium"
+  },
+  {
     "name": "calcio-fiorentino-siege-match-1530",
     "friendly_name": "Calcio Played Under Siege",
     "year": 1530,
     "category": "sports",
     "description": "Florentines defiantly played calcio in the Piazza Santa Croce in 1530 while the city was under siege by Emperor Charles V's troops.",
     "difficulty": "hard"
+  },
+  {
+    "name": "calcio-storico-siege-1530",
+    "friendly_name": "Calcio Storico Siege Match",
+    "year": 1530,
+    "category": "sports",
+    "description": "During the 1530 siege of Florence, defiant citizens played a calcio match in Piazza Santa Croce to mock the besiegers.",
+    "difficulty": "medium"
   },
   {
     "name": "falkland-oldest-real-tennis-court-1539",
@@ -205,6 +325,14 @@
     "year": 1539,
     "category": "sports",
     "description": "Horse racing began at Chester's Roodee course in 1539, recognised by Guinness as the oldest racecourse still in operation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-pallone-rules-1555",
+    "friendly_name": "First Pallone Rules Codified",
+    "year": 1555,
+    "category": "sports",
+    "description": "Antonio Scaino published the first formal rules for pallone col bracciale, Italy's popular arm-guard ball game.",
     "difficulty": "hard"
   },
   {
@@ -240,12 +368,28 @@
     "difficulty": "hard"
   },
   {
+    "name": "naqsh-e-jahan-polo-ground-1598",
+    "friendly_name": "Isfahan Royal Polo Ground",
+    "year": 1598,
+    "category": "sports",
+    "description": "Shah Abbas I laid out Isfahan's vast Naqsh-e Jahan square as a royal ground for chogan, the Persian ancestor of polo.",
+    "difficulty": "medium"
+  },
+  {
     "name": "newmarket-town-plate-founded",
     "friendly_name": "Newmarket Town Plate Founded",
     "year": 1665,
     "category": "sports",
     "description": "King Charles II set out the rules for the Newmarket Town Plate in 1665, one of the first horse races run under a formal code.",
     "difficulty": "hard"
+  },
+  {
+    "name": "edo-professional-sumo-tomioka",
+    "friendly_name": "Edo Professional Sumo Begins",
+    "year": 1684,
+    "category": "sports",
+    "description": "Fifteen rikishi including Ikazuchi Gondayu won shogunal permits for kanjin sumo at Tomioka Hachiman, marking pro sumo's birth.",
+    "difficulty": "medium"
   },
   {
     "name": "james-figg-first-boxing-champion",
@@ -325,14 +469,6 @@
     "year": 1860,
     "category": "sports",
     "description": "Willie Park Sr won the inaugural Open at Prestwick in Scotland, beating Tom Morris Sr among a field of eight golfers.",
-    "difficulty": "medium"
-  },
-  {
-    "name": "queensberry-rules-published-1867",
-    "friendly_name": "Queensberry Rules Published",
-    "year": 1867,
-    "category": "sports",
-    "description": "The glove-mandating Marquess of Queensberry Rules, drafted by John Graham Chambers, were published in London.",
     "difficulty": "medium"
   },
   {
@@ -760,14 +896,6 @@
     "difficulty": "medium"
   },
   {
-    "name": "jesse-owens-four-golds-1936",
-    "friendly_name": "Jesse Owens Wins Four Golds",
-    "year": 1936,
-    "category": "sports",
-    "description": "American Jesse Owens won four gold medals at the Berlin Olympics, defying Nazi theories of Aryan racial supremacy.",
-    "difficulty": "easy"
-  },
-  {
     "name": "basketball-olympic-debut-1936",
     "friendly_name": "Basketball's Olympic Debut",
     "year": 1936,
@@ -808,6 +936,38 @@
     "difficulty": "easy"
   },
   {
+    "name": "first-fiba-world-championship-1950",
+    "friendly_name": "First Basketball World Cup",
+    "year": 1950,
+    "category": "sports",
+    "description": "Argentina beat the United States to win the first FIBA World Championship, hosted in Buenos Aires in 1950.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-formula-one-world-championship-1950",
+    "friendly_name": "First Formula One Championship",
+    "year": 1950,
+    "category": "sports",
+    "description": "Italy's Giuseppe Farina won the inaugural FIA Formula One World Drivers' Championship over a seven-race season.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-asian-games-1951",
+    "friendly_name": "First Asian Games",
+    "year": 1951,
+    "category": "sports",
+    "description": "New Delhi hosted the inaugural Asian Games in 1951, with 489 athletes from 11 nations competing across eight sports.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-pan-american-games-1951",
+    "friendly_name": "First Pan-American Games",
+    "year": 1951,
+    "category": "sports",
+    "description": "Buenos Aires staged the first Pan American Games in 1951, gathering over 2,500 athletes from 21 nations of the Americas.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nba-24-second-shot-clock-introduced",
     "friendly_name": "NBA 24-Second Shot Clock",
     "year": 1954,
@@ -840,6 +1000,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-european-nations-cup-1960",
+    "friendly_name": "First European Nations' Cup",
+    "year": 1960,
+    "category": "sports",
+    "description": "The Soviet Union won the first European Nations' Cup in 1960, beating Yugoslavia 2-1 in the final in Paris.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "abebe-bikila-barefoot-marathon-1960",
+    "friendly_name": "Bikila's Barefoot Marathon",
+    "year": 1960,
+    "category": "sports",
+    "description": "Ethiopia's Abebe Bikila won the Rome Olympic marathon running barefoot, the first sub-Saharan African Olympic champion.",
+    "difficulty": "medium"
+  },
+  {
     "name": "judo-olympic-debut-tokyo-1964",
     "friendly_name": "Judo Debuts at the Olympics",
     "year": 1964,
@@ -854,6 +1030,14 @@
     "category": "sports",
     "description": "Tommie Smith and John Carlos raised black-gloved fists on the Mexico City podium to protest racial injustice.",
     "difficulty": "easy"
+  },
+  {
+    "name": "tennis-open-era-begins-1968",
+    "friendly_name": "Tennis Open Era Begins",
+    "year": 1968,
+    "category": "sports",
+    "description": "In 1968 tennis entered the Open era, letting professionals and amateurs compete together at the Grand Slam tournaments.",
+    "difficulty": "medium"
   },
   {
     "name": "afl-nfl-merger-1970",
@@ -877,14 +1061,6 @@
     "year": 1971,
     "category": "sports",
     "description": "Apollo 14 astronaut Alan Shepard hit two golf balls on the lunar surface, the first time golf was played off Earth.",
-    "difficulty": "easy"
-  },
-  {
-    "name": "battle-of-the-sexes-king-riggs-1973",
-    "friendly_name": "Battle of the Sexes",
-    "year": 1973,
-    "category": "sports",
-    "description": "Billie Jean King beat Bobby Riggs in straight sets before some 90 million viewers in the 1973 Battle of the Sexes tennis match.",
     "difficulty": "easy"
   },
   {
