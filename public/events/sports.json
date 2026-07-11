@@ -1,1 +1,1010 @@
-[]
+[
+  {
+    "name": "paso-de-la-amada-ballcourt",
+    "friendly_name": "Oldest Mesoamerican Ballcourt",
+    "year": -1650,
+    "category": "sports",
+    "description": "The earliest known formal ballcourt was built at Paso de la Amada in Chiapas, Mexico, launching the Mesoamerican ballgame.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wrestling-pentathlon-added-708-bce",
+    "friendly_name": "Wrestling & Pentathlon Added",
+    "year": -708,
+    "category": "sports",
+    "description": "Wrestling and the five-event pentathlon joined the ancient Olympic program at Olympia, broadening it beyond footraces.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "boxing-added-olympics-688-bce",
+    "friendly_name": "Boxing Added to the Olympics",
+    "year": -688,
+    "category": "sports",
+    "description": "Boxing, or pygmachia, was added to the ancient Olympic Games at Olympia, with fighters binding their hands in leather thongs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tethrippon-chariot-race-680-bce",
+    "friendly_name": "Four-Horse Chariot Race Debuts",
+    "year": -680,
+    "category": "sports",
+    "description": "The four-horse chariot race, the tethrippon, debuted at Olympia as the ancient Games' first equestrian event.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pythian-games-crown-582-bce",
+    "friendly_name": "Pythian Games Become Crown Games",
+    "year": -582,
+    "category": "sports",
+    "description": "The Pythian Games at Delphi, honoring Apollo, were reorganized as a four-yearly crown festival with athletic contests added.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "milo-croton-wrestling-reign-532-bce",
+    "friendly_name": "Milo of Croton's Wrestling Reign",
+    "year": -532,
+    "category": "sports",
+    "description": "Milo of Croton won the first of five straight Olympic men's wrestling crowns, becoming antiquity's most famous athlete.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cuju-earliest-football",
+    "friendly_name": "Cuju, Earliest Form of Football",
+    "year": -300,
+    "category": "sports",
+    "description": "Cuju, a kicking ball game recognized by FIFA as football's ancestor, is documented in China's Warring States era.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-roman-gladiator-munus-264-bce",
+    "friendly_name": "First Roman Gladiator Munus",
+    "year": -264,
+    "category": "sports",
+    "description": "The sons of Brutus Pera staged Rome's first gladiatorial combat, three pairs of fighters, as a funeral rite in the Forum Boarium.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "leonidas-rhodes-twelve-crowns-152-bce",
+    "friendly_name": "Leonidas of Rhodes' 12 Crowns",
+    "year": -152,
+    "category": "sports",
+    "description": "Leonidas of Rhodes finished a fourth Olympiad sweep of three footraces, amassing a record twelve individual crowns.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "pompeii-amphitheatre-built-70-bce",
+    "friendly_name": "Pompeii Amphitheatre Built",
+    "year": -70,
+    "category": "sports",
+    "description": "Magistrates Valgus and Porcius built the amphitheatre at Pompeii, the oldest surviving Roman stone arena for gladiatorial games.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "colosseum-inaugural-games-80-ce",
+    "friendly_name": "Colosseum's Inaugural Games",
+    "year": 80,
+    "category": "sports",
+    "description": "Emperor Titus opened the Colosseum with 100 days of gladiatorial fights, wild-beast hunts, and staged spectacles in Rome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ancient-olympics-abolished-393-ce",
+    "friendly_name": "End of the Ancient Olympics",
+    "year": 393,
+    "category": "sports",
+    "description": "Emperor Theodosius I's ban on pagan festivals is traditionally credited with ending the ancient Olympic Games.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nika-riots-constantinople-532-ce",
+    "friendly_name": "Nika Riots in Constantinople",
+    "year": 532,
+    "category": "sports",
+    "description": "Constantinople's Blue and Green chariot factions united in revolt against Justinian, killing tens of thousands and burning the city.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kemari-earliest-record",
+    "friendly_name": "Earliest Kemari Game Recorded",
+    "year": 644,
+    "category": "sports",
+    "description": "Japan's Nihon Shoki records Prince Naka no Oe and Nakatomi no Kamatari meeting at a kemari football game.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sechie-zumo-imperial-court",
+    "friendly_name": "Imperial Court Sumo Begins",
+    "year": 726,
+    "category": "sports",
+    "description": "Emperor Shomu staged formal palace sumo tournaments, launching the sechie-zumo court ritual in Nara Japan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-recorded-tournament-valenciennes-1114",
+    "friendly_name": "First Recorded 'Tournament'",
+    "year": 1114,
+    "category": "sports",
+    "description": "The word 'tournament' first appears in Count Baldwin III of Hainaut's 1114 peace charter for the town of Valenciennes.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "yabusame-established-yoritomo",
+    "friendly_name": "Yabusame Ritual Established",
+    "year": 1187,
+    "category": "sports",
+    "description": "Shogun Minamoto no Yoritomo instituted yabusame horseback archery as a Shinto rite at Tsurugaoka Hachimangu.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "genghis-khan-stele-archery",
+    "friendly_name": "Genghis Khan Archery Stele",
+    "year": 1224,
+    "category": "sports",
+    "description": "A Mongolian stele recorded Yesungge's archery shot of over 500 meters at a gathering of Genghis Khan's nobles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "southampton-oldest-bowling-green-1299",
+    "friendly_name": "Southampton Old Bowling Green",
+    "year": 1299,
+    "category": "sports",
+    "description": "The Old Bowling Green in Southampton, England, hosted its first recorded game of bowls in 1299 and is still played on today.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "edward-ii-bans-football-london-1314",
+    "friendly_name": "Edward II Bans Football in London",
+    "year": 1314,
+    "category": "sports",
+    "description": "King Edward II banned football within the City of London in 1314, citing the tumult and brawling caused by mob football games.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kirkpinar-oil-wrestling-founded",
+    "friendly_name": "Kırkpınar Oil Wrestling Begins",
+    "year": 1346,
+    "category": "sports",
+    "description": "The Ottoman Kırkpınar tournament in Edirne began, becoming the world's oldest continuous sanctioned sport.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "edward-iii-archery-law-1363",
+    "friendly_name": "England's 1363 Archery Law",
+    "year": 1363,
+    "category": "sports",
+    "description": "King Edward III's 1363 decree ordered every able-bodied Englishman to practise archery on Sundays and forbade rival sports.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scotland-football-act-1424",
+    "friendly_name": "Scotland's Football Act of 1424",
+    "year": 1424,
+    "category": "sports",
+    "description": "Scotland's Parliament under King James I passed the Football Act of 1424, fining anyone caught playing football fourpence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "calcio-fiorentino-siege-match-1530",
+    "friendly_name": "Calcio Played Under Siege",
+    "year": 1530,
+    "category": "sports",
+    "description": "Florentines defiantly played calcio in the Piazza Santa Croce in 1530 while the city was under siege by Emperor Charles V's troops.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "falkland-oldest-real-tennis-court-1539",
+    "friendly_name": "Oldest Real Tennis Court",
+    "year": 1539,
+    "category": "sports",
+    "description": "King James V built the real tennis court at Falkland Palace, Scotland, in 1539, now the oldest surviving court in the world.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "chester-races-roodee",
+    "friendly_name": "Chester Races at the Roodee",
+    "year": 1539,
+    "category": "sports",
+    "description": "Horse racing began at Chester's Roodee course in 1539, recognised by Guinness as the oldest racecourse still in operation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "henry-ii-france-jousting-death-1559",
+    "friendly_name": "Henry II Killed While Jousting",
+    "year": 1559,
+    "category": "sports",
+    "description": "King Henry II of France was fatally wounded when a lance splinter pierced his eye during a Paris joust in 1559.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bardi-calcio-fiorentino-rules-1580",
+    "friendly_name": "Calcio Fiorentino Codified",
+    "year": 1580,
+    "category": "sports",
+    "description": "Florentine count Giovanni de' Bardi published the first codified rules of calcio fiorentino, set out in 33 articles, in 1580.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "naqsh-e-jahan-polo-ground",
+    "friendly_name": "World's Oldest Polo Goalposts",
+    "year": 1598,
+    "category": "sports",
+    "description": "Shah Abbas laid out Isfahan's Naqsh-e Jahan Square as a polo field; its stone goalposts still stand today.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "earliest-cricket-reference-guildford",
+    "friendly_name": "Earliest Cricket Reference",
+    "year": 1598,
+    "category": "sports",
+    "description": "A 1598 court case in Guildford recorded testimony that cricket, or 'creckett', had been played there by schoolboys around 1550.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "newmarket-town-plate-founded",
+    "friendly_name": "Newmarket Town Plate Founded",
+    "year": 1665,
+    "category": "sports",
+    "description": "King Charles II set out the rules for the Newmarket Town Plate in 1665, one of the first horse races run under a formal code.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "james-figg-first-boxing-champion",
+    "friendly_name": "James Figg, First Boxing Champion",
+    "year": 1719,
+    "category": "sports",
+    "description": "James Figg opened his London amphitheatre in 1719 and became recognised as England's first bare-knuckle boxing champion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "broughtons-rules-boxing",
+    "friendly_name": "Broughton's Rules of Boxing",
+    "year": 1743,
+    "category": "sports",
+    "description": "English champion Jack Broughton drew up boxing's first written code in 1743, introducing the count and banning hits to a downed man.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-rules-of-golf-leith",
+    "friendly_name": "First Rules of Golf",
+    "year": 1744,
+    "category": "sports",
+    "description": "The Gentlemen Golfers of Edinburgh drew up golf's first 13 written rules in 1744 for a competition on Leith Links.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "laws-of-cricket-codified-1744",
+    "friendly_name": "Laws of Cricket Codified",
+    "year": 1744,
+    "category": "sports",
+    "description": "The London Cricket Club at the Artillery Ground drew up the earliest known code of the Laws of Cricket, fixing the 22-yard pitch.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "society-of-st-andrews-golfers",
+    "friendly_name": "Society of St Andrews Golfers",
+    "year": 1754,
+    "category": "sports",
+    "description": "Formed in 1754, the Society of St Andrews Golfers later became the Royal and Ancient, golf's global rule-making authority.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-oxford-cambridge-boat-race",
+    "friendly_name": "First Oxford-Cambridge Boat Race",
+    "year": 1829,
+    "category": "sports",
+    "description": "Oxford beat Cambridge at Henley-on-Thames in the first University Boat Race, launching one of sport's oldest rivalries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-henley-regatta",
+    "friendly_name": "First Henley Regatta",
+    "year": 1839,
+    "category": "sports",
+    "description": "The inaugural Henley Regatta was held on the Thames at Henley-on-Thames, later gaining royal patronage from Prince Albert in 1851.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-americas-cup-race",
+    "friendly_name": "First America's Cup Race",
+    "year": 1851,
+    "category": "sports",
+    "description": "The schooner America won the Royal Yacht Squadron's race around the Isle of Wight, originating the America's Cup trophy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "aussie-rules-first-laws-1859",
+    "friendly_name": "First Laws of Australian Football",
+    "year": 1859,
+    "category": "sports",
+    "description": "Tom Wills and colleagues drafted the ten original Rules of the Melbourne Football Club, founding Australian rules football.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-open-championship-1860",
+    "friendly_name": "First Open Championship",
+    "year": 1860,
+    "category": "sports",
+    "description": "Willie Park Sr won the inaugural Open at Prestwick in Scotland, beating Tom Morris Sr among a field of eight golfers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "queensberry-rules-published-1867",
+    "friendly_name": "Queensberry Rules Published",
+    "year": 1867,
+    "category": "sports",
+    "description": "The glove-mandating Marquess of Queensberry Rules, drafted by John Graham Chambers, were published in London.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-college-football-game-1869",
+    "friendly_name": "First College Football Game",
+    "year": 1869,
+    "category": "sports",
+    "description": "In New Brunswick, Rutgers beat Princeton 6-4 in the first intercollegiate American football game, played under rugby-like rules.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cincinnati-red-stockings-first-pro-team-1869",
+    "friendly_name": "First Pro Baseball Team",
+    "year": 1869,
+    "category": "sports",
+    "description": "Harry Wright's Cincinnati Red Stockings became baseball's first openly all-salaried team, touring the nation undefeated.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rugby-football-union-founded-1871",
+    "friendly_name": "Rugby Football Union Founded",
+    "year": 1871,
+    "category": "sports",
+    "description": "Representatives of 21 clubs met at London's Pall Mall Restaurant to found the Rugby Football Union and codify its laws.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-rugby-international-scotland-england",
+    "friendly_name": "First Rugby International",
+    "year": 1871,
+    "category": "sports",
+    "description": "Scotland beat England at Raeburn Place in Edinburgh in the world's first international rugby match, played 20-a-side.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-football-international-1872",
+    "friendly_name": "First Football International",
+    "year": 1872,
+    "category": "sports",
+    "description": "Scotland and England drew 0-0 at Hamilton Crescent in Glasgow in the first officially recognised international match.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wingfield-patents-lawn-tennis",
+    "friendly_name": "Wingfield Patents Lawn Tennis",
+    "year": 1874,
+    "category": "sports",
+    "description": "Major Walter Clopton Wingfield patented his portable court game 'Sphairistike' in England, launching lawn tennis.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "webb-first-english-channel-swim-1875",
+    "friendly_name": "First English Channel Swim",
+    "year": 1875,
+    "category": "sports",
+    "description": "Captain Matthew Webb became the first person to swim the English Channel unaided, from Dover to Calais.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "snooker-invented-chamberlain-india",
+    "friendly_name": "Snooker Invented in India",
+    "year": 1875,
+    "category": "sports",
+    "description": "British officer Neville Chamberlain devised snooker at an army mess in Jabalpur, India, blending pyramids and black pool.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "national-league-founded-1876",
+    "friendly_name": "National League Founded",
+    "year": 1876,
+    "category": "sports",
+    "description": "William Hulbert founded the National League of Professional Base Ball Clubs, still one of Major League Baseball's two leagues.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-us-national-tennis-championship",
+    "friendly_name": "First US Tennis Championship",
+    "year": 1881,
+    "category": "sports",
+    "description": "The inaugural U.S. National Championship was played at the Newport Casino in Rhode Island, the event that became the US Open.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "the-ashes-born-1882",
+    "friendly_name": "The Ashes Are Born",
+    "year": 1882,
+    "category": "sports",
+    "description": "After Australia's first Test win on English soil at The Oval, a mock obituary in the Sporting Times gave birth to the Ashes.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jigoro-kano-founds-judo-1882",
+    "friendly_name": "Jigoro Kano Founds Judo",
+    "year": 1882,
+    "category": "sports",
+    "description": "Jigoro Kano founded Kodokan judo in Tokyo, opening his first dojo at Eishoji Temple with nine students.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "axel-paulsen-invents-axel-jump",
+    "friendly_name": "Axel Paulsen Invents the Axel",
+    "year": 1882,
+    "category": "sports",
+    "description": "Norwegian Axel Paulsen debuted his forward-takeoff jump in Vienna, creating the axel, figure skating's oldest jump.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maud-watson-first-wimbledon-ladies-1884",
+    "friendly_name": "First Wimbledon Ladies' Singles",
+    "year": 1884,
+    "category": "sports",
+    "description": "Maud Watson beat her sister Lilian in 1884 to win Wimbledon's first Ladies' Singles, tennis's first women's major title.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gaelic-athletic-association-founded-1884",
+    "friendly_name": "Gaelic Athletic Association Founded",
+    "year": 1884,
+    "category": "sports",
+    "description": "Michael Cusack and others founded the GAA at Hayes' Hotel in Thurles to revive hurling and Gaelic football in Ireland.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "football-league-founded-1888",
+    "friendly_name": "Football League Founded",
+    "year": 1888,
+    "category": "sports",
+    "description": "Aston Villa's William McGregor founded the Football League with twelve clubs, the world's first organised football league.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "naismith-basketball-rules-published",
+    "friendly_name": "Naismith's 13 Rules Published",
+    "year": 1892,
+    "category": "sports",
+    "description": "James Naismith's original 13 rules of basketball were published in the Springfield YMCA journal The Triangle in January 1892.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-gloved-heavyweight-title-1892",
+    "friendly_name": "First Gloved Heavyweight Title",
+    "year": 1892,
+    "category": "sports",
+    "description": "James J. Corbett knocked out John L. Sullivan in New Orleans to win boxing's first gloved world heavyweight title.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-motor-race-paris-rouen-1894",
+    "friendly_name": "First Motor Race, Paris-Rouen",
+    "year": 1894,
+    "category": "sports",
+    "description": "Le Petit Journal's Paris-to-Rouen contest in France is widely regarded as the world's first competitive motor race.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "great-schism-northern-union-1895",
+    "friendly_name": "Rugby's Great Schism of 1895",
+    "year": 1895,
+    "category": "sports",
+    "description": "Twenty-one northern clubs met at Huddersfield's George Hotel and broke from the RFU, founding rugby league's forerunner.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-us-open-golf-1895",
+    "friendly_name": "First U.S. Open Golf",
+    "year": 1895,
+    "category": "sports",
+    "description": "Englishman Horace Rawlins won the inaugural U.S. Open at Newport Golf Club in Rhode Island, staged by the USGA.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-modern-olympics-athens-1896",
+    "friendly_name": "First Modern Olympics, Athens",
+    "year": 1896,
+    "category": "sports",
+    "description": "The first modern Olympic Games opened in Athens, with 241 male athletes from 14 nations competing.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "cycling-olympic-debut-athens-1896",
+    "friendly_name": "Cycling Debuts at Olympics",
+    "year": 1896,
+    "category": "sports",
+    "description": "Cycling featured at the first modern Olympics in Athens, with six track and road events at the Neo Phaliron Velodrome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-paris-roubaix-1896-fischer",
+    "friendly_name": "First Paris-Roubaix",
+    "year": 1896,
+    "category": "sports",
+    "description": "Germany's Josef Fischer won the inaugural Paris-Roubaix, the 280 km classic later nicknamed the Hell of the North.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-davis-cup-tennis",
+    "friendly_name": "First Davis Cup",
+    "year": 1900,
+    "category": "sports",
+    "description": "The United States beat the British Isles in Boston in the first international team tennis competition, founded by Dwight Davis.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "uci-founded-1900-paris",
+    "friendly_name": "UCI Founded",
+    "year": 1900,
+    "category": "sports",
+    "description": "The Union Cycliste Internationale, cycling's world governing body, was founded in Paris by five national federations.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "women-first-compete-olympics-1900",
+    "friendly_name": "Women First Compete at Olympics",
+    "year": 1900,
+    "category": "sports",
+    "description": "Women competed at the Olympics for the first time in Paris, where Charlotte Cooper became the first female champion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rowing-olympic-debut-1900",
+    "friendly_name": "Rowing's Olympic Debut",
+    "year": 1900,
+    "category": "sports",
+    "description": "Rowing was contested at the Paris Olympics after the 1896 races were cancelled by weather, marking its first Olympic appearance.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-bodybuilding-contest-1901",
+    "friendly_name": "First Bodybuilding Contest",
+    "year": 1901,
+    "category": "sports",
+    "description": "Eugen Sandow staged 'The Great Competition' at London's Royal Albert Hall, regarded as the first modern bodybuilding show.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "forward-pass-legalized-1906",
+    "friendly_name": "Forward Pass Legalized",
+    "year": 1906,
+    "category": "sports",
+    "description": "College rules makers legalized the forward pass to open up play and curb the deadly mass formations causing fatalities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-french-grand-prix-1906",
+    "friendly_name": "First French Grand Prix",
+    "year": 1906,
+    "category": "sports",
+    "description": "The Automobile Club de France ran the first race titled Grand Prix on closed roads near Le Mans, won by Ferenc Szisz.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fina-founded-1908",
+    "friendly_name": "FINA Founded",
+    "year": 1908,
+    "category": "sports",
+    "description": "Eight national federations founded FINA during the London Olympics to govern swimming, diving and water polo.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-giro-ditalia-1909-ganna",
+    "friendly_name": "First Giro d'Italia",
+    "year": 1909,
+    "category": "sports",
+    "description": "Luigi Ganna won the first Giro d'Italia, an eight-stage race launched by La Gazzetta dello Sport starting in Milan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-monte-carlo-rally-1911",
+    "friendly_name": "First Monte Carlo Rally",
+    "year": 1911,
+    "category": "sports",
+    "description": "Henri Rougier won the first Monte Carlo Rally, driving a Turcat-Méry to Monaco from one of eleven European start cities.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "iaaf-founded-stockholm-1912",
+    "friendly_name": "IAAF Founded in Stockholm",
+    "year": 1912,
+    "category": "sports",
+    "description": "Delegates from 17 national federations met after the Stockholm Olympics to found the IAAF, athletics' world governing body.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-olympic-decathlon-thorpe",
+    "friendly_name": "First Olympic Decathlon",
+    "year": 1912,
+    "category": "sports",
+    "description": "The ten-event decathlon debuted at the Stockholm Olympics, won by American Jim Thorpe with a score that stood for years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "olympic-rings-designed-1913",
+    "friendly_name": "Olympic Rings Symbol Created",
+    "year": 1913,
+    "category": "sports",
+    "description": "Pierre de Coubertin designed the five interlocking Olympic rings, symbolizing the union of the world's continents.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-pga-championship-1916",
+    "friendly_name": "First PGA Championship",
+    "year": 1916,
+    "category": "sports",
+    "description": "Jim Barnes won the first PGA Championship at Siwanoy Country Club the same year the PGA of America was founded.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nfl-founded-canton-1920",
+    "friendly_name": "NFL Founded",
+    "year": 1920,
+    "category": "sports",
+    "description": "The American Professional Football Association, renamed the NFL in 1922, formed in Ralph Hay's Canton, Ohio auto showroom.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "negro-national-league-founded-1920",
+    "friendly_name": "Negro National League Founded",
+    "year": 1920,
+    "category": "sports",
+    "description": "Rube Foster founded the Negro National League in Kansas City, the first lasting professional league for Black ballplayers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-prix-arc-de-triomphe",
+    "friendly_name": "First Prix de l'Arc de Triomphe",
+    "year": 1920,
+    "category": "sports",
+    "description": "The Prix de l'Arc de Triomphe was first run at Longchamp in Paris in 1920, won by Comrade, becoming Europe's premier race.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-24-hours-le-mans-1923",
+    "friendly_name": "First 24 Hours of Le Mans",
+    "year": 1923,
+    "category": "sports",
+    "description": "André Lagache and René Léonard won the inaugural 24 Hours of Le Mans endurance race in a Chenard-Walcker in France.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "harlem-globetrotters-founded",
+    "friendly_name": "Harlem Globetrotters Founded",
+    "year": 1926,
+    "category": "sports",
+    "description": "Abe Saperstein founded the Harlem Globetrotters, an all-Black touring exhibition team, in Chicago in 1926.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ederle-first-woman-channel-swim-1926",
+    "friendly_name": "First Woman Swims the Channel",
+    "year": 1926,
+    "category": "sports",
+    "description": "American Gertrude Ederle became the first woman to swim the English Channel, beating the men's record.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ryder-cup-1927",
+    "friendly_name": "First Ryder Cup",
+    "year": 1927,
+    "category": "sports",
+    "description": "The United States, captained by Walter Hagen, beat Great Britain at Worcester Country Club in the first Ryder Cup.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "women-first-olympic-athletics-1928",
+    "friendly_name": "Women First Run Olympic Athletics",
+    "year": 1928,
+    "category": "sports",
+    "description": "Women competed in Olympic track and field for the first time at Amsterdam, where Lina Radke won the debut 800m in a world record.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sonja-henie-first-olympic-gold",
+    "friendly_name": "Sonja Henie's First Olympic Gold",
+    "year": 1928,
+    "category": "sports",
+    "description": "Norway's Sonja Henie won her first Olympic gold at age 15 in St. Moritz, transforming ladies' skating with balletic style.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-monaco-grand-prix-1929",
+    "friendly_name": "First Monaco Grand Prix",
+    "year": 1929,
+    "category": "sports",
+    "description": "William Grover-Williams won the first Monaco Grand Prix in a Bugatti T35B on the streets of Monte Carlo.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bobby-jones-grand-slam-1930",
+    "friendly_name": "Bobby Jones's Grand Slam",
+    "year": 1930,
+    "category": "sports",
+    "description": "Amateur Bobby Jones won all four majors of his era in one calendar year, golf's only single-season Grand Slam.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-masters-tournament-1934",
+    "friendly_name": "First Masters Tournament",
+    "year": 1934,
+    "category": "sports",
+    "description": "Horton Smith won the inaugural Masters at Augusta National, the Georgia course co-founded by Bobby Jones.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trampoline-invented-nissen-1934",
+    "friendly_name": "Trampoline Invented",
+    "year": 1934,
+    "category": "sports",
+    "description": "American gymnast George Nissen and coach Larry Griswold built the first modern trampoline from iron, canvas and rubber.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-heisman-trophy-1935",
+    "friendly_name": "First Heisman Trophy",
+    "year": 1935,
+    "category": "sports",
+    "description": "Chicago halfback Jay Berwanger won the first Downtown Athletic Club Trophy, renamed the Heisman Trophy the next year.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-vuelta-a-espana-1935-deloor",
+    "friendly_name": "First Vuelta a España",
+    "year": 1935,
+    "category": "sports",
+    "description": "Belgian Gustaaf Deloor won the inaugural Vuelta a España, a 14-stage race finishing in Madrid.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jesse-owens-four-golds-1936",
+    "friendly_name": "Jesse Owens Wins Four Golds",
+    "year": 1936,
+    "category": "sports",
+    "description": "American Jesse Owens won four gold medals at the Berlin Olympics, defying Nazi theories of Aryan racial supremacy.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "basketball-olympic-debut-1936",
+    "friendly_name": "Basketball's Olympic Debut",
+    "year": 1936,
+    "category": "sports",
+    "description": "Basketball debuted as an Olympic medal event at the 1936 Berlin Games, with the USA winning gold on an outdoor court.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "alpine-skiing-olympic-debut-1936",
+    "friendly_name": "Alpine Skiing Olympic Debut",
+    "year": 1936,
+    "category": "sports",
+    "description": "Alpine skiing debuted at the Olympics at Garmisch-Partenkirchen in 1936 with a combined downhill and slalom event.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-olympic-torch-relay-1936",
+    "friendly_name": "First Olympic Torch Relay",
+    "year": 1936,
+    "category": "sports",
+    "description": "The Berlin Games introduced the Olympic torch relay, carrying a flame lit in Olympia, Greece, to the host stadium.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nba-formed-baa-nbl-merger",
+    "friendly_name": "NBA Formed by Merger",
+    "year": 1949,
+    "category": "sports",
+    "description": "The NBA was created on August 3, 1949, when the Basketball Association of America merged with the National Basketball League.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-f1-world-championship-race-1950",
+    "friendly_name": "First F1 World Championship",
+    "year": 1950,
+    "category": "sports",
+    "description": "Nino Farina won the first Formula One World Championship race at Silverstone in an Alfa Romeo, watched by King George VI.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "nba-24-second-shot-clock-introduced",
+    "friendly_name": "NBA 24-Second Shot Clock",
+    "year": 1954,
+    "category": "sports",
+    "description": "The NBA introduced Danny Biasone's 24-second shot clock for the 1954-55 season, transforming the pace of the game.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "taekwondo-is-named-1955",
+    "friendly_name": "Taekwondo Is Named",
+    "year": 1955,
+    "category": "sports",
+    "description": "General Choi Hong Hi coined the name taekwondo in South Korea, unifying Korean kicking-and-striking martial arts.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-european-cup-1956",
+    "friendly_name": "First European Cup",
+    "year": 1956,
+    "category": "sports",
+    "description": "Real Madrid beat Stade de Reims 4-3 in Paris to win the first European Cup, Europe's premier club competition.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "afl-founded-lamar-hunt-1959",
+    "friendly_name": "AFL Founded",
+    "year": 1959,
+    "category": "sports",
+    "description": "Lamar Hunt founded the American Football League with eight teams to rival the NFL, beginning play in the 1960 season.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "judo-olympic-debut-tokyo-1964",
+    "friendly_name": "Judo Debuts at the Olympics",
+    "year": 1964,
+    "category": "sports",
+    "description": "Judo made its Olympic debut in Tokyo, where Dutchman Anton Geesink upset the hosts to win the open weight gold.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "black-power-salute-mexico-1968",
+    "friendly_name": "1968 Olympic Black Power Salute",
+    "year": 1968,
+    "category": "sports",
+    "description": "Tommie Smith and John Carlos raised black-gloved fists on the Mexico City podium to protest racial injustice.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "afl-nfl-merger-1970",
+    "friendly_name": "AFL-NFL Merger",
+    "year": 1970,
+    "category": "sports",
+    "description": "The AFL and NFL completed their merger into one league split into two conferences, the AFC and NFC, for the 1970 season.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-one-day-international-1971",
+    "friendly_name": "First One-Day International",
+    "year": 1971,
+    "category": "sports",
+    "description": "After a washed-out Test, Australia beat England at Melbourne in the first One Day International, watched by 46,000 fans.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "golf-played-on-the-moon-1971",
+    "friendly_name": "Golf Played on the Moon",
+    "year": 1971,
+    "category": "sports",
+    "description": "Apollo 14 astronaut Alan Shepard hit two golf balls on the lunar surface, the first time golf was played off Earth.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "battle-of-the-sexes-king-riggs-1973",
+    "friendly_name": "Battle of the Sexes",
+    "year": 1973,
+    "category": "sports",
+    "description": "Billie Jean King beat Bobby Riggs in straight sets before some 90 million viewers in the 1973 Battle of the Sexes tennis match.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "hank-aaron-715th-home-run-1974",
+    "friendly_name": "Aaron Breaks Home Run Record",
+    "year": 1974,
+    "category": "sports",
+    "description": "Atlanta's Hank Aaron hit his 715th home run off Al Downing, surpassing Babe Ruth as baseball's career home run king.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-cricket-world-cup-1975",
+    "friendly_name": "First Cricket World Cup",
+    "year": 1975,
+    "category": "sports",
+    "description": "West Indies beat Australia at Lord's to win the first men's Cricket World Cup, the Prudential Cup, with Clive Lloyd scoring 102.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "comaneci-first-perfect-ten-1976",
+    "friendly_name": "Comaneci's Perfect 10",
+    "year": 1976,
+    "category": "sports",
+    "description": "At the Montreal Olympics, Romania's Nadia Comaneci scored the first perfect 10 in Olympic gymnastics on the uneven bars.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-rugby-world-cup-1987",
+    "friendly_name": "First Rugby World Cup",
+    "year": 1987,
+    "category": "sports",
+    "description": "New Zealand's All Blacks beat France in Auckland to win the first Rugby World Cup, co-hosted by New Zealand and Australia.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-womens-world-cup-1991",
+    "friendly_name": "First Women's World Cup",
+    "year": 1991,
+    "category": "sports",
+    "description": "The United States beat Norway 2-1 in China to win the inaugural FIFA Women's World Cup football tournament.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "short-track-olympic-debut-1992",
+    "friendly_name": "Short Track's Olympic Debut",
+    "year": 1992,
+    "category": "sports",
+    "description": "Short track speed skating made its official Olympic debut at the Albertville Winter Games with four medal events.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-ufc-event-1993",
+    "friendly_name": "First UFC Event Held",
+    "year": 1993,
+    "category": "sports",
+    "description": "UFC 1 took place in Denver, Colorado, where Brazilian Royce Gracie won the no-rules eight-man tournament.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-extreme-games-1995-rhode-island",
+    "friendly_name": "First X Games",
+    "year": 1995,
+    "category": "sports",
+    "description": "ESPN staged the first Extreme Games in Rhode Island, launching the action-sports showcase later renamed the X Games.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wnba-inaugural-season-1997",
+    "friendly_name": "First WNBA Season",
+    "year": 1997,
+    "category": "sports",
+    "description": "The Women's National Basketball Association tipped off its first season in 1997, launching a lasting US women's pro league.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "italy-joins-six-nations-2000",
+    "friendly_name": "Italy Joins: Six Nations Born",
+    "year": 2000,
+    "category": "sports",
+    "description": "Italy joined the Five Nations to create the Six Nations Championship, beating Scotland in their debut match in Rome.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "taekwondo-becomes-olympic-sport-2000",
+    "friendly_name": "Taekwondo Becomes Olympic Sport",
+    "year": 2000,
+    "category": "sports",
+    "description": "Taekwondo became a full Olympic medal sport at the Sydney Games, with eight weight divisions for men and women.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-twenty20-match-2003",
+    "friendly_name": "First Twenty20 Match",
+    "year": 2003,
+    "category": "sports",
+    "description": "Hampshire beat Sussex at the Rose Bowl in the first Twenty20 match, launching England's inaugural Twenty20 Cup competition.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-kabaddi-world-cup-india",
+    "friendly_name": "First Kabaddi World Cup",
+    "year": 2004,
+    "category": "sports",
+    "description": "India beat Iran 55-27 in Mumbai to win the inaugural Kabaddi World Cup, cementing its dominance of the international game.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bolt-100m-world-record-958",
+    "friendly_name": "Bolt Runs 9.58 for 100m Record",
+    "year": 2009,
+    "category": "sports",
+    "description": "Usain Bolt clocked 9.58 seconds at the Berlin World Championships, setting the 100m world record that still stands.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "womens-olympic-boxing-debut-2012",
+    "friendly_name": "Women's Olympic Boxing Debuts",
+    "year": 2012,
+    "category": "sports",
+    "description": "Women's boxing debuted at the London Olympics, where Britain's Nicola Adams won the first female Olympic gold.",
+    "difficulty": "medium"
+  }
+]
