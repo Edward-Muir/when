@@ -253,7 +253,7 @@ input,
 }
 
 .animate-vignette {
-  animation: vignettePulse var(--anim-vignette-dur, 0.7s) ease-out;
+  animation: vignettePulse var(--anim-vignette-dur, 0.9s) ease-out;
 }
 
 /* Feedback banner animation - snappy slide + fade */

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useLayoutEffect, useMemo, useState } from 'react';
-import { LayoutGroup, useReducedMotion } from 'framer-motion';
+import { animate, LayoutGroup, useReducedMotion } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
 import TimelineEvent, { RippleSpec } from './TimelineEvent';
@@ -7,7 +7,13 @@ import TombstoneRow from './TombstoneRow';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
-import { getMissTravelMs, invTravelEase, useAnimationTuning } from './animationTuning';
+import {
+  AnimationTuning,
+  getMissTravelMs,
+  invTravelEase,
+  TRAVEL_EASE,
+  useAnimationTuning,
+} from './animationTuning';
 
 interface TimelineProps {
   events: HistoricalEvent[];
@@ -48,6 +54,45 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
   </div>
 );
 
+// Camera-follow the rejected card: glide the viewport so the just-revealed tombstone
+// (`tombstoneName`) is centered. Under reduced motion it jumps instantly; otherwise it
+// eases on the SAME clock + curve as the miss-reveal FLIP (TombstoneRow's travel tween,
+// distance-scaled via getMissTravelMs), so the viewport tracks the card frame-for-frame
+// with no jitter. Returns the animation controls so the caller can cancel it.
+function followRevealScroll(
+  container: HTMLElement,
+  tombstoneName: string,
+  result: PlacementResult | null,
+  miss: AnimationTuning['miss'],
+  reduceMotion: boolean
+): { stop: () => void } | null {
+  const el = container.querySelector(
+    `[data-tombstone-name="${CSS.escape(tombstoneName)}"]`
+  ) as HTMLElement | null;
+  if (!el) return null;
+
+  const cRect = container.getBoundingClientRect();
+  const eRect = el.getBoundingClientRect();
+  const cardCenter = eRect.top - cRect.top + container.scrollTop + eRect.height / 2;
+  const maxScroll = Math.max(0, container.scrollHeight - container.clientHeight);
+  const target = Math.min(Math.max(cardCenter - container.clientHeight / 2, 0), maxScroll);
+
+  if (reduceMotion) {
+    container.scrollTop = target;
+    return null;
+  }
+  const pathLen = result && !result.success
+    ? Math.abs(result.attemptedPosition - result.correctPosition)
+    : 0;
+  return animate(container.scrollTop, target, {
+    duration: getMissTravelMs(pathLen, miss) / 1000,
+    ease: TRAVEL_EASE,
+    onUpdate: (v) => {
+      container.scrollTop = v;
+    },
+  });
+}
+
 const Timeline: React.FC<TimelineProps> = ({
   events,
   onEventTap,
@@ -65,6 +110,8 @@ const Timeline: React.FC<TimelineProps> = ({
   startAtMiddle = false,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  // In-flight camera-follow scroll animation for a miss reveal (cancel on re-trigger/unmount)
+  const followScrollRef = useRef<{ stop: () => void } | null>(null);
   const hasCenteredRef = useRef(false);
   const hasScrolledMiddleRef = useRef(false);
   const prevLen = useRef(events.length);
@@ -249,19 +296,27 @@ const Timeline: React.FC<TimelineProps> = ({
     return () => ro.disconnect();
   }, [events.length, startAtMiddle]);
 
-  // Bring a freshly revealed tombstone into view so the player sees where the card
-  // belonged, and start the wake wave clock at the same instant the travel begins
-  useEffect(() => {
+  // Camera-follow the rejected card: as it FLIPs from the attempted slot to its true
+  // position, glide the viewport to center that position on the SAME clock + easing as
+  // the travel tween (TombstoneRow's `cardTransition`). Matching progress every frame
+  // keeps the card tracking the viewport with no jitter — unlike a browser smooth-scroll,
+  // whose independent duration/easing fights the FLIP and flashes. useLayoutEffect so the
+  // follow starts in the same commit the FLIP measures.
+  useLayoutEffect(() => {
     const container = scrollRef.current;
     if (container && failedPlacements.length > prevFailedLen.current) {
-      const newest = failedPlacements[failedPlacements.length - 1];
-      const el = container.querySelector(
-        `[data-tombstone-name="${CSS.escape(newest.event.name)}"]`
+      followScrollRef.current?.stop();
+      followScrollRef.current = followRevealScroll(
+        container,
+        failedPlacements[failedPlacements.length - 1].event.name,
+        lastPlacementResult,
+        tuning.miss,
+        !!shouldReduceMotion
       );
-      el?.scrollIntoView({ block: 'center', behavior: shouldReduceMotion ? 'auto' : 'smooth' });
     }
     prevFailedLen.current = failedPlacements.length;
-  }, [failedPlacements, shouldReduceMotion]);
+    return () => followScrollRef.current?.stop();
+  }, [failedPlacements, lastPlacementResult, shouldReduceMotion, tuning]);
 
   const rows = buildTimelineRows(events, failedPlacements);
   // The insertion gap the ghost currently previews (null when not dragging over the timeline)

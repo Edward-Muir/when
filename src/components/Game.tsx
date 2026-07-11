@@ -226,7 +226,7 @@ const Game: React.FC<GameProps> = ({
         state.currentStreak
       );
       setVignette({ color: vignetteColor, key: Date.now() });
-      setTimeout(() => setVignette(null), 700); // matches --anim-vignette-dur
+      setTimeout(() => setVignette(null), 900); // matches --anim-vignette-dur
       if (state.lastPlacementResult.success) {
         // Capture streak feedback for this placement
         streakFeedbackRef.current = getStreakFeedback(state.currentStreak);
