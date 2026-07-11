@@ -72,12 +72,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "first-great-panathenaic-games-566bce",
+    "friendly_name": "First Great Panathenaic Games",
+    "year": -566,
+    "category": "sports",
+    "description": "Pisistratus reorganized Athens' festival of Athena into the Great Panathenaia, awarding victors prize amphorae of sacred olive oil.",
+    "difficulty": "hard"
+  },
+  {
     "name": "milo-croton-wrestling-reign-532-bce",
     "friendly_name": "Milo of Croton's Wrestling Reign",
     "year": -532,
     "category": "sports",
     "description": "Milo of Croton won the first of five straight Olympic men's wrestling crowns, becoming antiquity's most famous athlete.",
     "difficulty": "medium"
+  },
+  {
+    "name": "theagenes-thasos-olympic-boxing-480bce",
+    "friendly_name": "Theagenes of Thasos Wins Boxing",
+    "year": -480,
+    "category": "sports",
+    "description": "Theagenes of Thasos won the Olympic boxing crown, part of a legendary career later credited with some 1,400 combat victories.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "diagoras-rhodes-carried-by-sons-448bce",
+    "friendly_name": "Diagoras Carried by His Sons",
+    "year": -448,
+    "category": "sports",
+    "description": "After his sons won Olympic boxing and pankration titles, they carried the aged champion Diagoras of Rhodes around the stadium.",
+    "difficulty": "hard"
   },
   {
     "name": "leonidas-rhodes-twelve-crowns-152-bce",
@@ -93,6 +117,14 @@
     "year": -70,
     "category": "sports",
     "description": "Magistrates Valgus and Porcius built the amphitheatre at Pompeii, the oldest surviving Roman stone arena for gladiatorial games.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nero-olympic-chariot-victory-67ad",
+    "friendly_name": "Nero Wins the Rigged Olympics",
+    "year": 67,
+    "category": "sports",
+    "description": "Emperor Nero fell from his ten-horse chariot at Olympia yet was declared the winner, later stripped from the victor lists.",
     "difficulty": "hard"
   },
   {
@@ -149,6 +181,14 @@
     "year": 726,
     "category": "sports",
     "description": "Emperor Shomu staged formal palace sumo tournaments, launching the sechie-zumo court ritual in Nara Japan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-ballcourt-chichen-itza-864",
+    "friendly_name": "Great Ballcourt of Chichen Itza",
+    "year": 864,
+    "category": "sports",
+    "description": "The Maya dedicated the Great Ballcourt at Chichen Itza, the largest ballcourt in Mesoamerica at 168 metres long.",
     "difficulty": "hard"
   },
   {
@@ -221,6 +261,14 @@
     "year": 1346,
     "category": "sports",
     "description": "The Ottoman Kırkpınar tournament in Edirne began, becoming the world's oldest continuous sanctioned sport.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "combat-of-the-thirty-1351",
+    "friendly_name": "Combat of the Thirty",
+    "year": 1351,
+    "category": "sports",
+    "description": "Thirty champions a side fought a celebrated arranged combat between Josselin and Ploermel in the Breton War of Succession.",
     "difficulty": "hard"
   },
   {
@@ -376,6 +424,38 @@
     "difficulty": "medium"
   },
   {
+    "name": "eclipse-retires-unbeaten-1770",
+    "friendly_name": "Eclipse Retires Unbeaten",
+    "year": 1770,
+    "category": "sports",
+    "description": "The English thoroughbred Eclipse retired in 1770 unbeaten in 18 races and became an ancestor of most modern racehorses.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-st-leger-stakes-1776",
+    "friendly_name": "First St Leger Stakes Run",
+    "year": 1776,
+    "category": "sports",
+    "description": "The St Leger, run at Doncaster and the oldest of Britain's five Classics, held its first running in 1776.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "jahn-first-turnplatz-1811",
+    "friendly_name": "First Turnplatz Opens in Berlin",
+    "year": 1811,
+    "category": "sports",
+    "description": "Friedrich Ludwig Jahn opened the first open-air Turnplatz gymnasium in Berlin's Hasenheide, launching the German Turnen movement.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "william-webb-ellis-legend",
+    "friendly_name": "William Webb Ellis Legend",
+    "year": 1823,
+    "category": "sports",
+    "description": "By legend, schoolboy William Webb Ellis picked up the ball and ran during a game at Rugby School, birthing rugby.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-oxford-cambridge-boat-race",
     "friendly_name": "First Oxford-Cambridge Boat Race",
     "year": 1829,
@@ -392,12 +472,36 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-grand-national-1839",
+    "friendly_name": "First Grand National",
+    "year": 1839,
+    "category": "sports",
+    "description": "Lottery won the first official Grand National steeplechase at Aintree near Liverpool in 1839.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "first-baseball-game-hoboken-1846",
+    "friendly_name": "First Baseball Game, Hoboken",
+    "year": 1846,
+    "category": "sports",
+    "description": "The Knickerbockers lost the first recorded baseball game under written rules to the New York Nine at Elysian Fields, Hoboken.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-americas-cup-race",
     "friendly_name": "First America's Cup Race",
     "year": 1851,
     "category": "sports",
     "description": "The schooner America won the Royal Yacht Squadron's race around the Isle of Wight, originating the America's Cup trophy.",
     "difficulty": "easy"
+  },
+  {
+    "name": "first-australian-rules-match-1858",
+    "friendly_name": "First Australian Rules Match",
+    "year": 1858,
+    "category": "sports",
+    "description": "Scotch College and Melbourne Grammar played the first recorded game of what became Australian rules football.",
+    "difficulty": "hard"
   },
   {
     "name": "aussie-rules-first-laws-1859",
@@ -414,6 +518,30 @@
     "category": "sports",
     "description": "Willie Park Sr won the inaugural Open at Prestwick in Scotland, beating Tom Morris Sr among a field of eight golfers.",
     "difficulty": "medium"
+  },
+  {
+    "name": "first-melbourne-cup-1861",
+    "friendly_name": "First Melbourne Cup",
+    "year": 1861,
+    "category": "sports",
+    "description": "Archer won the inaugural Melbourne Cup at Flemington in 1861, launching Australia's race that stops a nation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "overarm-bowling-legalized-1864",
+    "friendly_name": "Overarm Bowling Legalized",
+    "year": 1864,
+    "category": "sports",
+    "description": "In 1864 overarm bowling was made legal, transforming the sport by allowing bowlers far more pace, bounce and variation.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-bicycle-race-saint-cloud-1868",
+    "friendly_name": "World's First Bicycle Race",
+    "year": 1868,
+    "category": "sports",
+    "description": "On 31 May 1868 Englishman James Moore won the first documented bicycle race, a 1,200 m sprint in the Parc de Saint-Cloud, Paris.",
+    "difficulty": "hard"
   },
   {
     "name": "first-college-football-game-1869",
@@ -480,6 +608,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-indoor-hockey-game-1875",
+    "friendly_name": "First Indoor Hockey Game",
+    "year": 1875,
+    "category": "sports",
+    "description": "The first organized indoor ice hockey game was played at Montreal's Victoria Skating Rink using a flat wooden puck.",
+    "difficulty": "hard"
+  },
+  {
     "name": "national-league-founded-1876",
     "friendly_name": "National League Founded",
     "year": 1876,
@@ -488,12 +624,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "kincsem-undefeated-54-races",
+    "friendly_name": "Kincsem Retires Undefeated",
+    "year": 1879,
+    "category": "sports",
+    "description": "Hungarian mare Kincsem retired in 1879 having won all 54 of her races, the longest unbeaten record in the sport.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "first-us-national-tennis-championship",
     "friendly_name": "First US Tennis Championship",
     "year": 1881,
     "category": "sports",
     "description": "The inaugural U.S. National Championship was played at the Newport Casino in Rhode Island, the event that became the US Open.",
     "difficulty": "medium"
+  },
+  {
+    "name": "fig-gymnastics-federation-founded-1881",
+    "friendly_name": "Gymnastics Federation Founded",
+    "year": 1881,
+    "category": "sports",
+    "description": "The Federation Internationale de Gymnastique was founded in Liege, Belgium, the world's oldest international sports federation.",
+    "difficulty": "hard"
   },
   {
     "name": "the-ashes-born-1882",
@@ -520,6 +672,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-home-nations-championship",
+    "friendly_name": "First Home Nations Championship",
+    "year": 1883,
+    "category": "sports",
+    "description": "England, Scotland, Ireland and Wales contested the first Home Nations Championship, ancestor of the Six Nations.",
+    "difficulty": "hard"
+  },
+  {
     "name": "maud-watson-first-wimbledon-ladies-1884",
     "friendly_name": "First Wimbledon Ladies' Singles",
     "year": 1884,
@@ -536,12 +696,44 @@
     "difficulty": "medium"
   },
   {
+    "name": "softball-invented-1887",
+    "friendly_name": "Softball Invented",
+    "year": 1887,
+    "category": "sports",
+    "description": "George Hancock devised the first indoor game of softball at Chicago's Farragut Boat Club on Thanksgiving Day.",
+    "difficulty": "hard"
+  },
+  {
     "name": "football-league-founded-1888",
     "friendly_name": "Football League Founded",
     "year": 1888,
     "category": "sports",
     "description": "Aston Villa's William McGregor founded the Football League with twelve clubs, the world's first organised football league.",
     "difficulty": "medium"
+  },
+  {
+    "name": "first-british-isles-rugby-tour",
+    "friendly_name": "First British Isles Rugby Tour",
+    "year": 1888,
+    "category": "sports",
+    "description": "A British Isles team toured Australia and New Zealand, the pioneering tour that became the British and Irish Lions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "county-championship-founded-1890",
+    "friendly_name": "First County Championship",
+    "year": 1890,
+    "category": "sports",
+    "description": "The English County Championship was officially constituted in 1890, with Surrey crowned the inaugural champions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-french-championships-1891",
+    "friendly_name": "First French Championships",
+    "year": 1891,
+    "category": "sports",
+    "description": "The first French Championships were held in Paris as a men's interclub event, the tournament that would become the French Open.",
+    "difficulty": "hard"
   },
   {
     "name": "naismith-basketball-rules-published",
@@ -558,6 +750,22 @@
     "category": "sports",
     "description": "James J. Corbett knocked out John L. Sullivan in New Orleans to win boxing's first gloved world heavyweight title.",
     "difficulty": "medium"
+  },
+  {
+    "name": "first-liege-bastogne-liege-1892",
+    "friendly_name": "First Liège-Bastogne-Liège",
+    "year": 1892,
+    "category": "sports",
+    "description": "Léon Houa won the inaugural Liège-Bastogne-Liège in 1892, the race that became the oldest of cycling's five Monuments.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "desgrange-first-hour-record-1893",
+    "friendly_name": "First Official Hour Record",
+    "year": 1893,
+    "category": "sports",
+    "description": "Henri Desgrange rode 35.325 km in Paris on 11 May 1893 to set the first officially recognised cycling hour record.",
+    "difficulty": "very-hard"
   },
   {
     "name": "first-motor-race-paris-rouen-1894",
@@ -608,6 +816,30 @@
     "difficulty": "medium"
   },
   {
+    "name": "hajos-first-olympic-swim-1896",
+    "friendly_name": "First Olympic Swimming Champion",
+    "year": 1896,
+    "category": "sports",
+    "description": "Hungary's Alfred Hajos won the 100m freestyle at the 1896 Athens Games, the first Olympic swimming title ever awarded.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-world-figure-skating-champs-1896",
+    "friendly_name": "First Figure Skating Worlds",
+    "year": 1896,
+    "category": "sports",
+    "description": "The inaugural World Figure Skating Championships were held in St. Petersburg and won by Germany's Gilbert Fuchs.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-all-england-badminton-1899",
+    "friendly_name": "First All England Badminton",
+    "year": 1899,
+    "category": "sports",
+    "description": "The inaugural All England Badminton Championships were staged in London, becoming the sport's oldest and most prestigious event.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-davis-cup-tennis",
     "friendly_name": "First Davis Cup",
     "year": 1900,
@@ -648,6 +880,38 @@
     "difficulty": "medium"
   },
   {
+    "name": "american-league-founded-1901",
+    "friendly_name": "American League Founded",
+    "year": 1901,
+    "category": "sports",
+    "description": "The American League declared itself a major league, launching a rivalry that would create modern Major League Baseball.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-artistic-gymnastics-worlds-1903",
+    "friendly_name": "First Gymnastics World Champs",
+    "year": 1903,
+    "category": "sports",
+    "description": "The first Artistic Gymnastics World Championships were held in Antwerp, contested as a men's team event by four European nations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "original-all-blacks-tour",
+    "friendly_name": "Original All Blacks Tour Britain",
+    "year": 1905,
+    "category": "sports",
+    "description": "New Zealand's Original All Blacks toured Britain, winning 34 of 35 games and cementing their black-jersey mystique.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-australasian-championships-1905",
+    "friendly_name": "First Australasian Championships",
+    "year": 1905,
+    "category": "sports",
+    "description": "The first Australasian Championships were played in Melbourne, the tournament that later became the Australian Open.",
+    "difficulty": "hard"
+  },
+  {
     "name": "forward-pass-legalized-1906",
     "friendly_name": "Forward Pass Legalized",
     "year": 1906,
@@ -664,6 +928,30 @@
     "difficulty": "medium"
   },
   {
+    "name": "rugby-league-adopts-thirteen",
+    "friendly_name": "Rugby League Adopts 13 a Side",
+    "year": 1906,
+    "category": "sports",
+    "description": "The Northern Union cut teams from 15 to 13 players and introduced the play-the-ball, defining rugby league's style.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-isle-of-man-tt-1907",
+    "friendly_name": "First Isle of Man TT",
+    "year": 1907,
+    "category": "sports",
+    "description": "The first Isle of Man Tourist Trophy motorcycle race was held, launching what became road racing's most famous event.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-milan-san-remo-1907",
+    "friendly_name": "First Milan-San Remo",
+    "year": 1907,
+    "category": "sports",
+    "description": "The inaugural Milan-San Remo, cycling's longest Monument, was held in 1907 and won by Frenchman Lucien Petit-Breton.",
+    "difficulty": "hard"
+  },
+  {
     "name": "fina-founded-1908",
     "friendly_name": "FINA Founded",
     "year": 1908,
@@ -672,12 +960,44 @@
     "difficulty": "medium"
   },
   {
+    "name": "jack-johnson-wins-world-title",
+    "friendly_name": "Jack Johnson Wins the World Title",
+    "year": 1908,
+    "category": "sports",
+    "description": "Jack Johnson defeated Tommy Burns in Sydney to become the first Black world heavyweight boxing champion.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "iihf-founded-1908",
+    "friendly_name": "IIHF Founded in Paris",
+    "year": 1908,
+    "category": "sports",
+    "description": "Belgium, France, Great Britain and Switzerland founded the International Ice Hockey Federation in Paris.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-giro-ditalia-1909-ganna",
     "friendly_name": "First Giro d'Italia",
     "year": 1909,
     "category": "sports",
     "description": "Luigi Ganna won the first Giro d'Italia, an eight-stage race launched by La Gazzetta dello Sport starting in Milan.",
     "difficulty": "medium"
+  },
+  {
+    "name": "first-grey-cup",
+    "friendly_name": "First Grey Cup",
+    "year": 1909,
+    "category": "sports",
+    "description": "The University of Toronto won the inaugural Grey Cup, the trophy for Canada's Dominion football championship donated by Earl Grey.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "france-joins-five-nations",
+    "friendly_name": "France Joins the Five Nations",
+    "year": 1910,
+    "category": "sports",
+    "description": "France joined the Home Nations Championship, expanding it into the Five Nations rugby union tournament.",
+    "difficulty": "hard"
   },
   {
     "name": "first-monte-carlo-rally-1911",
@@ -704,6 +1024,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "equestrian-olympic-debut-1912",
+    "friendly_name": "Equestrian Joins the Olympics",
+    "year": 1912,
+    "category": "sports",
+    "description": "Dressage, eventing and show jumping debuted as Olympic sports at the 1912 Stockholm Games, open only to military officers.",
+    "difficulty": "hard"
+  },
+  {
     "name": "olympic-rings-designed-1913",
     "friendly_name": "Olympic Rings Symbol Created",
     "year": 1913,
@@ -712,12 +1040,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "ouimet-us-open-upset-1913",
+    "friendly_name": "Ouimet's U.S. Open Upset",
+    "year": 1913,
+    "category": "sports",
+    "description": "Amateur Francis Ouimet beat British stars Harry Vardon and Ted Ray in a playoff to win the U.S. Open at Brookline.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-pga-championship-1916",
     "friendly_name": "First PGA Championship",
     "year": 1916,
     "category": "sports",
     "description": "Jim Barnes won the first PGA Championship at Siwanoy Country Club the same year the PGA of America was founded.",
     "difficulty": "medium"
+  },
+  {
+    "name": "first-copa-america-1916",
+    "friendly_name": "First Copa América",
+    "year": 1916,
+    "category": "sports",
+    "description": "The South American Championship, later Copa América, was first held, becoming football's oldest continental tournament.",
+    "difficulty": "hard"
   },
   {
     "name": "nfl-founded-canton-1920",
@@ -744,12 +1088,84 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-comrades-marathon-1921",
+    "friendly_name": "First Comrades Marathon",
+    "year": 1921,
+    "category": "sports",
+    "description": "Bill Rowan won the first Comrades Marathon in South Africa, now the world's oldest and largest ultramarathon.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rugby-football-league-named",
+    "friendly_name": "Rugby Football League Named",
+    "year": 1922,
+    "category": "sports",
+    "description": "The Northern Union renamed itself the Rugby Football League, giving the breakaway code its enduring name.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "funakoshi-brings-karate-to-japan",
+    "friendly_name": "Funakoshi Brings Karate to Japan",
+    "year": 1922,
+    "category": "sports",
+    "description": "Gichin Funakoshi gave the first public demonstration of Okinawan karate in mainland Japan, spreading the art nationwide.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "weissmuller-sub-minute-1922",
+    "friendly_name": "Weissmuller Breaks the Minute",
+    "year": 1922,
+    "category": "sports",
+    "description": "Johnny Weissmuller became the first man to swim 100m freestyle under one minute, clocking 58.6 seconds.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-walker-cup-1922",
+    "friendly_name": "First Walker Cup Match",
+    "year": 1922,
+    "category": "sports",
+    "description": "The first Walker Cup pitted amateur teams from the United States and Great Britain, with the U.S. winning 8-4.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "first-24-hours-le-mans-1923",
     "friendly_name": "First 24 Hours of Le Mans",
     "year": 1923,
     "category": "sports",
     "description": "André Lagache and René Léonard won the inaugural 24 Hours of Le Mans endurance race in a Chenard-Walcker in France.",
     "difficulty": "easy"
+  },
+  {
+    "name": "paavo-nurmi-paris-golds-1924",
+    "friendly_name": "Paavo Nurmi's Paris Golds",
+    "year": 1924,
+    "category": "sports",
+    "description": "Finland's Paavo Nurmi, the Flying Finn, won five gold medals at the 1924 Paris Olympics, twice within an hour.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-deaflympics-paris-1924",
+    "friendly_name": "First Deaflympics",
+    "year": 1924,
+    "category": "sports",
+    "description": "The first International Silent Games for deaf athletes, later renamed the Deaflympics, were held in Paris, France.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "offside-law-changed-1925",
+    "friendly_name": "Offside Law Changed",
+    "year": 1925,
+    "category": "sports",
+    "description": "The offside law was amended to require two defenders instead of three, boosting goalscoring across the game.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "red-grange-turns-pro",
+    "friendly_name": "Red Grange Turns Pro",
+    "year": 1925,
+    "category": "sports",
+    "description": "Star halfback Red Grange signed with the Chicago Bears, drawing huge crowds and boosting the credibility of pro football.",
+    "difficulty": "hard"
   },
   {
     "name": "harlem-globetrotters-founded",
@@ -768,12 +1184,36 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-world-table-tennis-champs-1926",
+    "friendly_name": "First World Table Tennis Champs",
+    "year": 1926,
+    "category": "sports",
+    "description": "London hosted the first World Table Tennis Championships as the International Table Tennis Federation was founded the same year.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-ryder-cup-1927",
     "friendly_name": "First Ryder Cup",
     "year": 1927,
     "category": "sports",
     "description": "The United States, captained by Walter Hagen, beat Great Britain at Worcester Country Club in the first Ryder Cup.",
     "difficulty": "medium"
+  },
+  {
+    "name": "nurburgring-opens-1927",
+    "friendly_name": "Nurburgring Opens",
+    "year": 1927,
+    "category": "sports",
+    "description": "The Nurburgring opened in Germany's Eifel mountains, its 22 km Nordschleife later nicknamed 'The Green Hell'.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-pro-road-worlds-1927",
+    "friendly_name": "First Pro Road World Champs",
+    "year": 1927,
+    "category": "sports",
+    "description": "Italy's Alfredo Binda won the first professional UCI Road World Championship at the Nürburgring, earning the first rainbow jersey.",
+    "difficulty": "very-hard"
   },
   {
     "name": "women-first-olympic-athletics-1928",
@@ -789,6 +1229,14 @@
     "year": 1928,
     "category": "sports",
     "description": "Norway's Sonja Henie won her first Olympic gold at age 15 in St. Moritz, transforming ladies' skating with balletic style.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "women-olympic-gymnastics-debut-1928",
+    "friendly_name": "Women's Olympic Gymnastics Debut",
+    "year": 1928,
+    "category": "sports",
+    "description": "Women competed in Olympic gymnastics for the first time at the Amsterdam Games, where the host Netherlands won the team event.",
     "difficulty": "medium"
   },
   {
@@ -808,6 +1256,38 @@
     "difficulty": "medium"
   },
   {
+    "name": "phar-lap-melbourne-cup-1930",
+    "friendly_name": "Phar Lap Wins Melbourne Cup",
+    "year": 1930,
+    "category": "sports",
+    "description": "Australian champion Phar Lap won the 1930 Melbourne Cup as the shortest-priced favourite in the race's history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-british-empire-games-1930",
+    "friendly_name": "First British Empire Games",
+    "year": 1930,
+    "category": "sports",
+    "description": "The first British Empire Games, forerunner of the Commonwealth Games, were held in Hamilton, Canada.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "world-archery-fita-founded-1931",
+    "friendly_name": "World Archery Founded",
+    "year": 1931,
+    "category": "sports",
+    "description": "Seven nations founded FITA, now World Archery, in Lwów to govern the sport and return it to the Olympic programme.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "bodyline-series-1932",
+    "friendly_name": "Bodyline Series",
+    "year": 1932,
+    "category": "sports",
+    "description": "England's 1932-33 Bodyline tactics of fast leg-side bowling to curb Don Bradman sparked a major diplomatic row.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-masters-tournament-1934",
     "friendly_name": "First Masters Tournament",
     "year": 1934,
@@ -824,6 +1304,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "badminton-federation-founded-1934",
+    "friendly_name": "Badminton Federation Founded",
+    "year": 1934,
+    "category": "sports",
+    "description": "Nine nations founded the International Badminton Federation, now the Badminton World Federation, the sport's global governing body.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-heisman-trophy-1935",
     "friendly_name": "First Heisman Trophy",
     "year": 1935,
@@ -838,6 +1326,22 @@
     "category": "sports",
     "description": "Belgian Gustaaf Deloor won the inaugural Vuelta a España, a 14-stage race finishing in Madrid.",
     "difficulty": "medium"
+  },
+  {
+    "name": "owens-six-records-ann-arbor-1935",
+    "friendly_name": "Owens' Six Records in 45 Minutes",
+    "year": 1935,
+    "category": "sports",
+    "description": "Jesse Owens set five world records and tied a sixth in 45 minutes at the Big Ten meet in Ann Arbor, Michigan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "campbell-tops-300-mph-1935",
+    "friendly_name": "Campbell Tops 300 mph",
+    "year": 1935,
+    "category": "sports",
+    "description": "Malcolm Campbell drove his Bluebird past 300 mph at Bonneville Salt Flats, the first person to reach that speed on land.",
+    "difficulty": "hard"
   },
   {
     "name": "basketball-olympic-debut-1936",
@@ -864,12 +1368,100 @@
     "difficulty": "medium"
   },
   {
+    "name": "japanese-pro-baseball-league-1936",
+    "friendly_name": "Japanese Pro Baseball Founded",
+    "year": 1936,
+    "category": "sports",
+    "description": "The Japanese Baseball League launched with seven teams, establishing professional baseball in Japan for the first time.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-televised-nfl-game",
+    "friendly_name": "First Televised NFL Game",
+    "year": 1939,
+    "category": "sports",
+    "description": "NBC broadcast the first televised NFL game as the Brooklyn Dodgers beat the Philadelphia Eagles at Ebbets Field.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baseball-hall-of-fame-opens-1939",
+    "friendly_name": "Baseball Hall of Fame Opens",
+    "year": 1939,
+    "category": "sports",
+    "description": "The National Baseball Hall of Fame and Museum opened in Cooperstown, New York, honoring its first inducted class.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ncaa-basketball-tournament",
+    "friendly_name": "First NCAA Basketball Tournament",
+    "year": 1939,
+    "category": "sports",
+    "description": "The inaugural NCAA men's basketball tournament was held, with Oregon defeating Ohio State to claim the first national title.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rocket-richard-50-goals-50-games-1945",
+    "friendly_name": "Rocket Richard's 50 in 50",
+    "year": 1945,
+    "category": "sports",
+    "description": "Maurice 'Rocket' Richard became the first NHL player to score 50 goals in a season, doing it in just 50 games.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bradman-final-test-duck-1948",
+    "friendly_name": "Bradman's Farewell Duck",
+    "year": 1948,
+    "category": "sports",
+    "description": "Don Bradman was bowled for a duck in his final Test innings in 1948, leaving his career batting average at 99.94.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nascar-founded-1948",
+    "friendly_name": "NASCAR Is Founded",
+    "year": 1948,
+    "category": "sports",
+    "description": "Bill France Sr. founded the National Association for Stock Car Auto Racing in Daytona Beach, Florida, on February 21.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-stoke-mandeville-games-1948",
+    "friendly_name": "First Stoke Mandeville Games",
+    "year": 1948,
+    "category": "sports",
+    "description": "Dr Ludwig Guttmann staged the Stoke Mandeville Games for wheelchair veterans in England, seeding the Paralympic movement.",
+    "difficulty": "hard"
+  },
+  {
     "name": "nba-formed-baa-nbl-merger",
     "friendly_name": "NBA Formed by Merger",
     "year": 1949,
     "category": "sports",
     "description": "The NBA was created on August 3, 1949, when the Basketball Association of America merged with the National Basketball League.",
     "difficulty": "easy"
+  },
+  {
+    "name": "first-thomas-cup-1949",
+    "friendly_name": "First Thomas Cup",
+    "year": 1949,
+    "category": "sports",
+    "description": "Malaysia won the inaugural Thomas Cup, the world men's team badminton championship donated by former champion George Thomas.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-motorcycle-gp-world-championship-1949",
+    "friendly_name": "First Motorcycle GP Season",
+    "year": 1949,
+    "category": "sports",
+    "description": "The FIM launched the first motorcycle road racing world championship, the oldest of all motorsport world titles.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "coppi-giro-tour-double-1949",
+    "friendly_name": "Coppi's Giro-Tour Double",
+    "year": 1949,
+    "category": "sports",
+    "description": "Fausto Coppi became the first rider to win the Giro d'Italia and Tour de France in the same year in 1949.",
+    "difficulty": "hard"
   },
   {
     "name": "first-f1-world-championship-race-1950",
@@ -885,6 +1477,14 @@
     "year": 1950,
     "category": "sports",
     "description": "Argentina beat the United States to win the first FIBA World Championship, hosted in Buenos Aires in 1950.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "the-maracanazo-1950",
+    "friendly_name": "The Maracanazo",
+    "year": 1950,
+    "category": "sports",
+    "description": "Uruguay stunned host Brazil 2-1 before a record Maracanã crowd to win the World Cup in Rio de Janeiro.",
     "difficulty": "hard"
   },
   {
@@ -904,6 +1504,62 @@
     "difficulty": "medium"
   },
   {
+    "name": "shot-heard-round-the-world-1951",
+    "friendly_name": "Shot Heard Round the World",
+    "year": 1951,
+    "category": "sports",
+    "description": "Bobby Thomson's walk-off pennant-winning home run for the Giants over the Dodgers became known as the Shot Heard Round the World.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "zatopek-helsinki-triple-1952",
+    "friendly_name": "Zatopek's Helsinki Triple",
+    "year": 1952,
+    "category": "sports",
+    "description": "Emil Zatopek won the 5000m, 10000m and marathon at the 1952 Helsinki Olympics, an unmatched distance triple.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dick-button-first-triple-jump-1952",
+    "friendly_name": "First Triple Jump on Ice",
+    "year": 1952,
+    "category": "sports",
+    "description": "American Dick Button landed the first triple jump in figure skating competition at the Oslo Winter Olympics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lis-hartel-dressage-silver-1952",
+    "friendly_name": "Hartel's Historic Dressage Medal",
+    "year": 1952,
+    "category": "sports",
+    "description": "Denmark's Lis Hartel took dressage silver at the 1952 Helsinki Olympics, the first woman to win an Olympic equestrian medal.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hungary-beat-england-1953",
+    "friendly_name": "Hungary Beat England 6-3",
+    "year": 1953,
+    "category": "sports",
+    "description": "Hungary's Mighty Magyars thrashed England 6-3 at Wembley, the first foreign side to beat England at home.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hogan-triple-major-year-1953",
+    "friendly_name": "Hogan's Triple-Major Year",
+    "year": 1953,
+    "category": "sports",
+    "description": "Ben Hogan won the Masters, U.S. Open and Open Championship in a single season, a feat later called the Hogan Slam.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "butterfly-separate-stroke-1953",
+    "friendly_name": "Butterfly Becomes Its Own Stroke",
+    "year": 1953,
+    "category": "sports",
+    "description": "FINA recognized butterfly as a distinct competitive stroke, splitting it from breaststroke after the 1952 Olympics.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "nba-24-second-shot-clock-introduced",
     "friendly_name": "NBA 24-Second Shot Clock",
     "year": 1954,
@@ -920,6 +1576,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "le-mans-disaster-1955",
+    "friendly_name": "1955 Le Mans Disaster",
+    "year": 1955,
+    "category": "sports",
+    "description": "Pierre Levegh's Mercedes crashed into the crowd at Le Mans, killing over 80 spectators in motorsport's deadliest accident.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-european-cup-1956",
     "friendly_name": "First European Cup",
     "year": 1956,
@@ -928,11 +1592,75 @@
     "difficulty": "medium"
   },
   {
+    "name": "laker-nineteen-wickets-1956",
+    "friendly_name": "Laker Takes 19 in a Test",
+    "year": 1956,
+    "category": "sports",
+    "description": "Jim Laker took a record 19 wickets in the 1956 Old Trafford Test against Australia, a feat unmatched in Test cricket.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "blood-in-the-water-1956",
+    "friendly_name": "Blood in the Water Match",
+    "year": 1956,
+    "category": "sports",
+    "description": "Hungary beat the USSR 4-0 in a violent Olympic water polo semi-final weeks after the crushed Hungarian Revolution.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "larsen-world-series-perfect-game-1956",
+    "friendly_name": "Larsen's World Series Perfecto",
+    "year": 1956,
+    "category": "sports",
+    "description": "Yankee Don Larsen pitched the only perfect game in World Series history, beating the Brooklyn Dodgers in Game 5.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-uber-cup-1957",
+    "friendly_name": "First Uber Cup",
+    "year": 1957,
+    "category": "sports",
+    "description": "The first Uber Cup, the women's world team badminton championship proposed by Betty Uber, was won by the United States.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fangio-fifth-f1-title-1957",
+    "friendly_name": "Fangio's Fifth F1 Title",
+    "year": 1957,
+    "category": "sports",
+    "description": "Juan Manuel Fangio clinched his fifth Formula One title, a record that stood for 46 years until Michael Schumacher.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "munich-air-disaster-1958",
+    "friendly_name": "Munich Air Disaster",
+    "year": 1958,
+    "category": "sports",
+    "description": "A plane crash in Munich killed eight Manchester United players, devastating Matt Busby's celebrated young side.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "greatest-game-ever-played",
+    "friendly_name": "The Greatest Game Ever Played",
+    "year": 1958,
+    "category": "sports",
+    "description": "The Baltimore Colts beat the New York Giants in sudden-death overtime for the NFL title in a game credited with popularizing pro football.",
+    "difficulty": "hard"
+  },
+  {
     "name": "afl-founded-lamar-hunt-1959",
     "friendly_name": "AFL Founded",
     "year": 1959,
     "category": "sports",
     "description": "Lamar Hunt founded the American Football League with eight teams to rival the NFL, beginning play in the 1960 season.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-daytona-500-1959",
+    "friendly_name": "First Daytona 500",
+    "year": 1959,
+    "category": "sports",
+    "description": "The first Daytona 500 ran at the new Daytona International Speedway, with Lee Petty declared winner after a photo finish.",
     "difficulty": "medium"
   },
   {
@@ -952,12 +1680,108 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-tied-test-1960",
+    "friendly_name": "First Tied Test",
+    "year": 1960,
+    "category": "sports",
+    "description": "The first tied Test came in 1960 at Brisbane, where Australia and the West Indies finished level after a dramatic finish.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "wilt-chamberlain-100-points",
+    "friendly_name": "Wilt Chamberlain 100-Point Game",
+    "year": 1962,
+    "category": "sports",
+    "description": "Wilt Chamberlain scored 100 points in a single NBA game for the Philadelphia Warriors against the New York Knicks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fraser-sub-minute-1962",
+    "friendly_name": "Fraser First Woman Under a Minute",
+    "year": 1962,
+    "category": "sports",
+    "description": "Dawn Fraser became the first woman to break one minute for 100m freestyle, swimming 59.9 in Melbourne.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-rhythmic-gymnastics-worlds-1963",
+    "friendly_name": "First Rhythmic Gym World Champs",
+    "year": 1963,
+    "category": "sports",
+    "description": "The first Rhythmic Gymnastics World Championships were held in Budapest, won by Soviet gymnast Ludmila Savinkova.",
+    "difficulty": "hard"
+  },
+  {
     "name": "judo-olympic-debut-tokyo-1964",
     "friendly_name": "Judo Debuts at the Olympics",
     "year": 1964,
     "category": "sports",
     "description": "Judo made its Olympic debut in Tokyo, where Dutchman Anton Geesink upset the hosts to win the open weight gold.",
     "difficulty": "medium"
+  },
+  {
+    "name": "latynina-most-olympic-medals-1964",
+    "friendly_name": "Latynina's 18 Olympic Medals",
+    "year": 1964,
+    "category": "sports",
+    "description": "Soviet gymnast Larisa Latynina ended her career with 18 Olympic medals, a record for any athlete that stood for 48 years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "luge-olympic-debut-1964",
+    "friendly_name": "Luge Joins the Olympics",
+    "year": 1964,
+    "category": "sports",
+    "description": "Luge made its Olympic debut at the Innsbruck Winter Games with men's and women's singles and doubles events.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-all-africa-games-1965",
+    "friendly_name": "First All-Africa Games",
+    "year": 1965,
+    "category": "sports",
+    "description": "The first All-Africa Games were held in Brazzaville, Congo, drawing around 2,500 athletes from 30 African nations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "england-win-world-cup-1966",
+    "friendly_name": "England Win the World Cup",
+    "year": 1966,
+    "category": "sports",
+    "description": "England beat West Germany 4-2 after extra time at Wembley, with Geoff Hurst scoring a famous hat-trick.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "celtics-eighth-straight-title-1966",
+    "friendly_name": "Celtics Win Eighth Straight Title",
+    "year": 1966,
+    "category": "sports",
+    "description": "The Bill Russell-led Boston Celtics won their eighth consecutive NBA championship, a record dynasty in North American sports.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ford-gt40-sweeps-le-mans-1966",
+    "friendly_name": "Ford GT40 Sweeps Le Mans",
+    "year": 1966,
+    "category": "sports",
+    "description": "Ford's GT40 Mk II took a 1-2-3 finish at Le Mans, ending Ferrari's dominance and giving America its first overall win.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "ice-bowl",
+    "friendly_name": "The Ice Bowl",
+    "year": 1967,
+    "category": "sports",
+    "description": "Green Bay beat Dallas for the NFL title at minus-13 degrees in Green Bay, one of the coldest games in football history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tom-simpson-ventoux-death-1967",
+    "friendly_name": "Tom Simpson Dies on Ventoux",
+    "year": 1967,
+    "category": "sports",
+    "description": "British champion Tom Simpson collapsed and died climbing Mont Ventoux during the 1967 Tour de France, amphetamines in his system.",
+    "difficulty": "hard"
   },
   {
     "name": "black-power-salute-mexico-1968",
@@ -976,12 +1800,76 @@
     "difficulty": "medium"
   },
   {
+    "name": "fosbury-flop-high-jump-1968",
+    "friendly_name": "The Fosbury Flop",
+    "year": 1968,
+    "category": "sports",
+    "description": "Dick Fosbury won Olympic high jump gold with his revolutionary backwards Fosbury Flop, transforming the event.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "beamon-long-jump-leap-1968",
+    "friendly_name": "Beamon's Long Jump Leap",
+    "year": 1968,
+    "category": "sports",
+    "description": "Bob Beamon long jumped 8.90m at the Mexico City Olympics, shattering the world record by nearly 55 centimetres.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "killy-triple-gold-1968",
+    "friendly_name": "Killy Sweeps Alpine Gold",
+    "year": 1968,
+    "category": "sports",
+    "description": "France's Jean-Claude Killy swept all three Alpine skiing gold medals at the Grenoble Winter Olympics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "super-bowl-iii-jets-upset",
+    "friendly_name": "Jets Win Super Bowl III",
+    "year": 1969,
+    "category": "sports",
+    "description": "Joe Namath backed up his guarantee as the AFL's New York Jets upset the heavily favored Baltimore Colts 16-7.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "laver-calendar-grand-slam-1969",
+    "friendly_name": "Laver's Calendar Grand Slam",
+    "year": 1969,
+    "category": "sports",
+    "description": "Rod Laver won all four majors in one year, becoming the only man to complete a calendar-year Grand Slam in the Open era.",
+    "difficulty": "medium"
+  },
+  {
     "name": "afl-nfl-merger-1970",
     "friendly_name": "AFL-NFL Merger",
     "year": 1970,
     "category": "sports",
     "description": "The AFL and NFL completed their merger into one league split into two conferences, the AFC and NFC, for the 1970 season.",
     "difficulty": "medium"
+  },
+  {
+    "name": "monday-night-football-debut",
+    "friendly_name": "Monday Night Football Debuts",
+    "year": 1970,
+    "category": "sports",
+    "description": "ABC aired the first Monday Night Football broadcast, with the Cleveland Browns hosting the New York Jets in prime time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "red-yellow-cards-debut-1970",
+    "friendly_name": "Red and Yellow Cards Debut",
+    "year": 1970,
+    "category": "sports",
+    "description": "Colour-coded yellow and red cards were introduced at the 1970 World Cup in Mexico to clarify disciplinary decisions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "alekseyev-600kg-total-1970",
+    "friendly_name": "Alekseyev Tops 600 kg Total",
+    "year": 1970,
+    "category": "sports",
+    "description": "Soviet weightlifter Vasily Alekseyev became the first man to total 600 kg across the three lifts, starting a run of 80 world records.",
+    "difficulty": "hard"
   },
   {
     "name": "first-one-day-international-1971",
@@ -1000,11 +1888,107 @@
     "difficulty": "easy"
   },
   {
+    "name": "ali-frazier-fight-of-century",
+    "friendly_name": "Ali-Frazier Fight of Century",
+    "year": 1971,
+    "category": "sports",
+    "description": "Joe Frazier beat Muhammad Ali by decision in the 'Fight of the Century,' the first bout between undefeated heavyweight champions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lions-series-win-new-zealand-1971",
+    "friendly_name": "Lions Win Series in New Zealand",
+    "year": 1971,
+    "category": "sports",
+    "description": "The British and Irish Lions won their only Test series in New Zealand, a landmark result over the All Blacks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spitz-seven-golds-1972",
+    "friendly_name": "Spitz Wins Seven Munich Golds",
+    "year": 1972,
+    "category": "sports",
+    "description": "Mark Spitz won seven gold medals at the 1972 Munich Olympics, each in world-record time, a record that stood 36 years.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "immaculate-reception",
+    "friendly_name": "The Immaculate Reception",
+    "year": 1972,
+    "category": "sports",
+    "description": "Franco Harris scooped a deflected pass off his shoetops to score a last-second playoff touchdown for the Pittsburgh Steelers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "summit-series-henderson-goal-1972",
+    "friendly_name": "Henderson's Summit Series Goal",
+    "year": 1972,
+    "category": "sports",
+    "description": "Paul Henderson scored late in Game 8 to win the 1972 Summit Series for Canada over the Soviet Union.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "korbut-flip-munich-1972",
+    "friendly_name": "Olga Korbut's Backflip",
+    "year": 1972,
+    "category": "sports",
+    "description": "Olga Korbut performed the first backward release move on the uneven bars at the Munich Olympics, later named the Korbut Flip.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "merckx-hour-record-1972",
+    "friendly_name": "Merckx's Hour Record",
+    "year": 1972,
+    "category": "sports",
+    "description": "Eddy Merckx rode 49.431 km at altitude in Mexico City in 1972 to set a legendary hour record that stood for years.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "secretariat-triple-crown-1973",
+    "friendly_name": "Secretariat's Triple Crown",
+    "year": 1973,
+    "category": "sports",
+    "description": "Secretariat swept the 1973 US Triple Crown, winning the Belmont Stakes by a record 31 lengths.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "gareth-edwards-greatest-try",
+    "friendly_name": "Gareth Edwards' Greatest Try",
+    "year": 1973,
+    "category": "sports",
+    "description": "Gareth Edwards finished a flowing Barbarians move against the All Blacks, often called rugby's greatest try.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "world-rally-championship-founded-1973",
+    "friendly_name": "World Rally Championship Born",
+    "year": 1973,
+    "category": "sports",
+    "description": "The World Rally Championship debuted with the Monte Carlo Rally, and Alpine-Renault won the first manufacturers' title.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-world-champs-1973",
+    "friendly_name": "First World Aquatics Champs",
+    "year": 1973,
+    "category": "sports",
+    "description": "The inaugural World Aquatics Championships were held in Belgrade, gathering swimmers, divers and water polo from 47 nations.",
+    "difficulty": "hard"
+  },
+  {
     "name": "hank-aaron-715th-home-run-1974",
     "friendly_name": "Aaron Breaks Home Run Record",
     "year": 1974,
     "category": "sports",
     "description": "Atlanta's Hank Aaron hit his 715th home run off Al Downing, surpassing Babe Ruth as baseball's career home run king.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "rumble-in-the-jungle",
+    "friendly_name": "Rumble in the Jungle",
+    "year": 1974,
+    "category": "sports",
+    "description": "Muhammad Ali knocked out George Foreman in Kinshasa, Zaire, reclaiming the heavyweight title in the 'Rumble in the Jungle.'",
     "difficulty": "easy"
   },
   {
@@ -1016,12 +2000,268 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-squash-world-open-1976",
+    "friendly_name": "First Squash World Open",
+    "year": 1976,
+    "category": "sports",
+    "description": "Geoff Hunt won the first men's World Open in London, the tournament that became squash's world individual championship.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "red-rum-third-grand-national-1977",
+    "friendly_name": "Red Rum's Third Grand National",
+    "year": 1977,
+    "category": "sports",
+    "description": "Red Rum won a record third Grand National in 1977, cementing his status as Aintree's most beloved steeplechaser.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sadaharu-oh-756th-home-run-1977",
+    "friendly_name": "Sadaharu Oh's 756th Home Run",
+    "year": 1977,
+    "category": "sports",
+    "description": "Japan's Sadaharu Oh hit his 756th career home run, passing Hank Aaron to become the world's all-time home run king.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-ironman-triathlon-1978",
+    "friendly_name": "First Ironman Triathlon",
+    "year": 1978,
+    "category": "sports",
+    "description": "Fifteen athletes raced a swim, bike and run on Oahu in the first Ironman; Gordon Haller won in under twelve hours.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nba-three-point-line-adopted",
+    "friendly_name": "NBA Adopts Three-Point Line",
+    "year": 1979,
+    "category": "sports",
+    "description": "The NBA introduced the three-point line for the 1979-80 season, with Chris Ford making the league's first three-pointer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "magic-bird-ncaa-final-1979",
+    "friendly_name": "Magic vs Bird NCAA Final",
+    "year": 1979,
+    "category": "sports",
+    "description": "Magic Johnson's Michigan State beat Larry Bird's Indiana State in the highest-rated NCAA title game ever televised.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "eric-heiden-five-golds-1980",
+    "friendly_name": "Eric Heiden's Five Golds",
+    "year": 1980,
+    "category": "sports",
+    "description": "American Eric Heiden won all five speed skating events at the Lake Placid Olympics, setting records in each.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "moscow-olympics-boycott-1980",
+    "friendly_name": "Moscow Olympics Boycott",
+    "year": 1980,
+    "category": "sports",
+    "description": "Over 60 nations led by the United States boycotted the Moscow Summer Olympics over the Soviet invasion of Afghanistan.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-state-of-origin-match",
+    "friendly_name": "First State of Origin Match",
+    "year": 1980,
+    "category": "sports",
+    "description": "Queensland beat New South Wales in the first State of Origin game, launching Australia's fierce rugby league series.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gretzky-92-goal-season-1982",
+    "friendly_name": "Gretzky's 92-Goal Season",
+    "year": 1982,
+    "category": "sports",
+    "description": "Wayne Gretzky set the NHL single-season record with 92 goals for the Edmonton Oilers in 1981-82.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kbo-league-founded-korea-1982",
+    "friendly_name": "KBO League Founded in Korea",
+    "year": 1982,
+    "category": "sports",
+    "description": "South Korea's professional KBO League launched with six franchises, opening its inaugural season in Seoul.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-televised-147-break-1982",
+    "friendly_name": "First Televised 147 Break",
+    "year": 1982,
+    "category": "sports",
+    "description": "Steve Davis compiled snooker's first televised maximum 147 break at the Lada Classic, winning a car for the feat.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "india-world-cup-1983",
+    "friendly_name": "India Win 1983 World Cup",
+    "year": 1983,
+    "category": "sports",
+    "description": "India stunned the West Indies at Lord's to win the 1983 World Cup, transforming cricket's popularity across India.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "australia-ii-wins-americas-cup-1983",
+    "friendly_name": "Australia II Wins America's Cup",
+    "year": 1983,
+    "category": "sports",
+    "description": "John Bertrand's Australia II ended the New York Yacht Club's 132-year hold on the America's Cup, sailing's longest streak.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kareem-scoring-record-1984",
+    "friendly_name": "Kareem Sets Scoring Record",
+    "year": 1984,
+    "category": "sports",
+    "description": "Kareem Abdul-Jabbar passed Wilt Chamberlain to become the NBA's all-time leading scorer with a signature skyhook.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-womens-olympic-marathon-1984",
+    "friendly_name": "First Women's Olympic Marathon",
+    "year": 1984,
+    "category": "sports",
+    "description": "Joan Benoit of the USA won the first women's Olympic marathon at the Los Angeles Games in 1984.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "torvill-dean-bolero-1984",
+    "friendly_name": "Torvill and Dean's Bolero",
+    "year": 1984,
+    "category": "sports",
+    "description": "Britain's Torvill and Dean earned perfect artistic scores skating to Ravel's Bolero at the Sarajevo Olympics.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rhythmic-gymnastics-olympic-debut-1984",
+    "friendly_name": "Rhythmic Gym Olympic Debut",
+    "year": 1984,
+    "category": "sports",
+    "description": "Rhythmic gymnastics debuted at the Los Angeles Olympics, where Canada's Lori Fung won the first all-around gold medal.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sync-swim-olympic-1984",
+    "friendly_name": "Synchro Swimming Joins Olympics",
+    "year": 1984,
+    "category": "sports",
+    "description": "Synchronized swimming made its Olympic debut at the 1984 Los Angeles Games with solo and duet events for women.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "snooker-black-ball-final-1985",
+    "friendly_name": "Snooker's Black Ball Final",
+    "year": 1985,
+    "category": "sports",
+    "description": "Dennis Taylor beat Steve Davis on the final black to win the World Championship before 18.5 million late-night viewers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "maradona-hand-of-god-1986",
+    "friendly_name": "Maradona's Hand of God",
+    "year": 1986,
+    "category": "sports",
+    "description": "Diego Maradona scored the Hand of God and Goal of the Century against England en route to Argentina's World Cup win.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "nicklaus-masters-at-46-1986",
+    "friendly_name": "Nicklaus Wins Masters at 46",
+    "year": 1986,
+    "category": "sports",
+    "description": "Jack Nicklaus won the Masters at age 46 to claim a record 18th major, becoming the oldest Masters champion.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "lemond-first-us-tour-win-1986",
+    "friendly_name": "LeMond First US Tour Winner",
+    "year": 1986,
+    "category": "sports",
+    "description": "Greg LeMond became the first American to win the Tour de France in 1986, beating teammate Bernard Hinault.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-rugby-world-cup-1987",
     "friendly_name": "First Rugby World Cup",
     "year": 1987,
     "category": "sports",
     "description": "New Zealand's All Blacks beat France in Auckland to win the first Rugby World Cup, co-hosted by New Zealand and Australia.",
     "difficulty": "easy"
+  },
+  {
+    "name": "cox-bering-strait-1987",
+    "friendly_name": "Cox Swims the Bering Strait",
+    "year": 1987,
+    "category": "sports",
+    "description": "Lynne Cox swam the icy Bering Strait from Alaska to a Soviet island, helping thaw Cold War tensions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "table-tennis-olympic-debut-1988",
+    "friendly_name": "Table Tennis Olympic Debut",
+    "year": 1988,
+    "category": "sports",
+    "description": "Table tennis made its Olympic debut at the Seoul Games, with China and South Korea sharing the first gold medals.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "graf-golden-slam-1988",
+    "friendly_name": "Graf's Golden Slam",
+    "year": 1988,
+    "category": "sports",
+    "description": "Steffi Graf won all four majors and Olympic gold in one year, the only Golden Slam in tennis history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "flo-jo-100m-world-record-1988",
+    "friendly_name": "Flo-Jo's 100m World Record",
+    "year": 1988,
+    "category": "sports",
+    "description": "Florence Griffith-Joyner ran a stunning 10.49 for the 100m, setting a women's world record that still stands.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "louganis-head-injury-1988",
+    "friendly_name": "Louganis Wins After Head Injury",
+    "year": 1988,
+    "category": "sports",
+    "description": "Greg Louganis struck his head on the springboard yet came back to win Olympic diving gold at the 1988 Seoul Games.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "suleymanoglu-seoul-triple-1988",
+    "friendly_name": "Suleymanoglu's Seoul Triple",
+    "year": 1988,
+    "category": "sports",
+    "description": "Turkey's Naim Suleymanoglu set three world records at Seoul, clean and jerking 190 kg at over three times his body weight.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lemond-eight-second-win-1989",
+    "friendly_name": "LeMond's 8-Second Tour Win",
+    "year": 1989,
+    "category": "sports",
+    "description": "Greg LeMond overturned a 50-second deficit on the final time trial to beat Laurent Fignon by eight seconds in the 1989 Tour de France.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-vendee-globe-1989",
+    "friendly_name": "First Vendée Globe",
+    "year": 1989,
+    "category": "sports",
+    "description": "Titouan Lamazou won the inaugural Vendée Globe, the solo, non-stop, unassisted round-the-world yacht race, in 109 days.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-solheim-cup-1990",
+    "friendly_name": "First Solheim Cup",
+    "year": 1990,
+    "category": "sports",
+    "description": "The inaugural Solheim Cup, women's golf's answer to the Ryder Cup, was won by the United States at Lake Nona, Florida.",
+    "difficulty": "hard"
   },
   {
     "name": "first-womens-world-cup-1991",
@@ -1040,12 +2280,60 @@
     "difficulty": "hard"
   },
   {
+    "name": "dream-team-1992-olympics",
+    "friendly_name": "Dream Team Wins Gold",
+    "year": 1992,
+    "category": "sports",
+    "description": "The USA Dream Team of NBA stars including Jordan, Magic, and Bird dominated the Barcelona Olympics to win gold.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "badminton-olympic-debut-1992",
+    "friendly_name": "Badminton Olympic Debut",
+    "year": 1992,
+    "category": "sports",
+    "description": "Badminton made its Olympic debut at the Barcelona Games, with Indonesia winning both singles gold medals.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-ufc-event-1993",
     "friendly_name": "First UFC Event Held",
     "year": 1993,
     "category": "sports",
     "description": "UFC 1 took place in Denver, Colorado, where Brazilian Royce Gracie won the no-rules eight-man tournament.",
     "difficulty": "easy"
+  },
+  {
+    "name": "akebono-first-foreign-yokozuna",
+    "friendly_name": "Akebono, First Foreign Yokozuna",
+    "year": 1993,
+    "category": "sports",
+    "description": "Hawaiian-born Akebono was promoted to yokozuna, becoming the first foreign-born grand champion in sumo's history.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "lara-375-test-record-1994",
+    "friendly_name": "Lara's 375 Test Record",
+    "year": 1994,
+    "category": "sports",
+    "description": "Brian Lara scored 375 against England at Antigua in 1994, breaking Garfield Sobers' 36-year-old Test batting record.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kerrigan-harding-attack-1994",
+    "friendly_name": "The Kerrigan Attack",
+    "year": 1994,
+    "category": "sports",
+    "description": "US skater Nancy Kerrigan was clubbed in a plot linked to rival Tonya Harding's camp weeks before the Olympics.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-presidents-cup-1994",
+    "friendly_name": "First Presidents Cup",
+    "year": 1994,
+    "category": "sports",
+    "description": "The first Presidents Cup was held in Virginia, with the U.S. team beating an International side of non-European players.",
+    "difficulty": "hard"
   },
   {
     "name": "first-extreme-games-1995-rhode-island",
@@ -1056,11 +2344,83 @@
     "difficulty": "medium"
   },
   {
+    "name": "mandela-1995-springboks",
+    "friendly_name": "Mandela and the 1995 Springboks",
+    "year": 1995,
+    "category": "sports",
+    "description": "South Africa won the Rugby World Cup on home soil as Nelson Mandela donned a Springbok jersey to unite the nation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rugby-union-turns-professional",
+    "friendly_name": "Rugby Union Turns Professional",
+    "year": 1995,
+    "category": "sports",
+    "description": "The IRB declared rugby union an open game, ending amateurism a century after the split that created rugby league.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ripken-breaks-iron-man-record-1995",
+    "friendly_name": "Ripken Breaks Iron Man Record",
+    "year": 1995,
+    "category": "sports",
+    "description": "Cal Ripken Jr. played his 2,131st consecutive game, breaking Lou Gehrig's long-standing durability record.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bosman-ruling-1995",
+    "friendly_name": "The Bosman Ruling",
+    "year": 1995,
+    "category": "sports",
+    "description": "A European court ruling let players move freely at contract's end, transforming transfers and player wages in football.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "olympic-softball-debut-1996",
+    "friendly_name": "Olympic Softball Debuts",
+    "year": 1996,
+    "category": "sports",
+    "description": "Women's fast-pitch softball debuted at the Atlanta Olympics, with the United States winning the first gold medal.",
+    "difficulty": "medium"
+  },
+  {
     "name": "wnba-inaugural-season-1997",
     "friendly_name": "First WNBA Season",
     "year": 1997,
     "category": "sports",
     "description": "The Women's National Basketball Association tipped off its first season in 1997, launching a lasting US women's pro league.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tyson-bites-holyfields-ear",
+    "friendly_name": "Tyson Bites Holyfield's Ear",
+    "year": 1997,
+    "category": "sports",
+    "description": "Mike Tyson was disqualified for biting Evander Holyfield's ear in one of boxing's most infamous heavyweight bouts.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "thrustssc-breaks-sound-barrier-1997",
+    "friendly_name": "ThrustSSC Breaks Sound Barrier",
+    "year": 1997,
+    "category": "sports",
+    "description": "Andy Green drove ThrustSSC to 763 mph in Nevada's Black Rock Desert, the first land vehicle to break the sound barrier.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jordan-sixth-title-1998",
+    "friendly_name": "Jordan's Last Shot for Sixth Title",
+    "year": 1998,
+    "category": "sports",
+    "description": "Michael Jordan hit a jumper over Bryon Russell to clinch the Chicago Bulls' sixth NBA championship of the decade.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "snowboarding-olympic-debut-1998",
+    "friendly_name": "Snowboarding Joins Olympics",
+    "year": 1998,
+    "category": "sports",
+    "description": "Snowboarding made its Olympic debut at the Nagano Winter Games with halfpipe and giant slalom events.",
     "difficulty": "medium"
   },
   {
@@ -1080,12 +2440,36 @@
     "difficulty": "medium"
   },
   {
+    "name": "tiger-pebble-beach-us-open-2000",
+    "friendly_name": "Tiger's 15-Shot U.S. Open Win",
+    "year": 2000,
+    "category": "sports",
+    "description": "Tiger Woods won the U.S. Open at Pebble Beach by a record 15 strokes, the largest winning margin in any men's major.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "redgrave-fifth-rowing-gold-2000",
+    "friendly_name": "Redgrave's Fifth Rowing Gold",
+    "year": 2000,
+    "category": "sports",
+    "description": "Steve Redgrave won gold in the coxless four at Sydney, becoming the only rower with five golds at five straight Olympics.",
+    "difficulty": "medium"
+  },
+  {
     "name": "first-twenty20-match-2003",
     "friendly_name": "First Twenty20 Match",
     "year": 2003,
     "category": "sports",
     "description": "Hampshire beat Sussex at the Rose Bowl in the first Twenty20 match, launching England's inaugural Twenty20 Cup competition.",
     "difficulty": "medium"
+  },
+  {
+    "name": "england-win-rugby-world-cup-2003",
+    "friendly_name": "England Win Rugby World Cup",
+    "year": 2003,
+    "category": "sports",
+    "description": "Jonny Wilkinson's extra-time drop goal beat Australia to win England their first Rugby Union World Cup.",
+    "difficulty": "easy"
   },
   {
     "name": "first-kabaddi-world-cup-india",
@@ -1096,11 +2480,171 @@
     "difficulty": "medium"
   },
   {
+    "name": "red-sox-end-86-year-drought-2004",
+    "friendly_name": "Red Sox End 86-Year Drought",
+    "year": 2004,
+    "category": "sports",
+    "description": "The Boston Red Sox swept the World Series to win their first title since 1918, ending the Curse of the Bambino.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kobe-81-point-game-2006",
+    "friendly_name": "Kobe Bryant 81-Point Game",
+    "year": 2006,
+    "category": "sports",
+    "description": "Kobe Bryant scored 81 points against the Toronto Raptors, the second-highest single-game total in NBA history.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "patriots-perfect-regular-season",
+    "friendly_name": "Patriots Go 16-0",
+    "year": 2007,
+    "category": "sports",
+    "description": "The New England Patriots completed the NFL's first 16-0 regular season before losing to the Giants in Super Bowl XLII.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-ipl-season-2008",
+    "friendly_name": "First IPL Season",
+    "year": 2008,
+    "category": "sports",
+    "description": "The Indian Premier League's inaugural franchise season in 2008 reshaped cricket's economy, with Rajasthan Royals champions.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "phelps-eight-golds-2008",
+    "friendly_name": "Phelps Wins Eight Beijing Golds",
+    "year": 2008,
+    "category": "sports",
+    "description": "Michael Phelps won a record eight gold medals at the 2008 Beijing Olympics, surpassing Mark Spitz's mark of seven.",
+    "difficulty": "easy"
+  },
+  {
     "name": "womens-olympic-boxing-debut-2012",
     "friendly_name": "Women's Olympic Boxing Debuts",
     "year": 2012,
     "category": "sports",
     "description": "Women's boxing debuted at the London Olympics, where Britain's Nicola Adams won the first female Olympic gold.",
     "difficulty": "medium"
+  },
+  {
+    "name": "armstrong-stripped-titles-2012",
+    "friendly_name": "Armstrong Stripped of Titles",
+    "year": 2012,
+    "category": "sports",
+    "description": "Lance Armstrong was stripped of his seven Tour de France titles and banned for life in 2012 after a US doping investigation.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "frankel-retires-unbeaten-2012",
+    "friendly_name": "Frankel Retires Unbeaten",
+    "year": 2012,
+    "category": "sports",
+    "description": "Unbeaten in all 14 starts, the British colt Frankel retired in 2012 as the highest-rated racehorse in the world.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nyad-cuba-florida-2013",
+    "friendly_name": "Nyad Swims Cuba to Florida",
+    "year": 2013,
+    "category": "sports",
+    "description": "At 64, Diana Nyad became the first to swim from Cuba to Florida without a shark cage, a 53-hour crossing.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "first-college-football-playoff",
+    "friendly_name": "First College Football Playoff",
+    "year": 2014,
+    "category": "sports",
+    "description": "The four-team College Football Playoff debuted for the 2014 season, replacing the BCS, with Ohio State winning the first title.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ledecky-1500-wr-2015",
+    "friendly_name": "Ledecky's 1500m Freestyle Record",
+    "year": 2015,
+    "category": "sports",
+    "description": "Katie Ledecky smashed the 1500m freestyle world record at the 2015 Kazan Worlds, extending her long-distance reign.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "american-pharoah-triple-crown-2015",
+    "friendly_name": "American Pharoah's Triple Crown",
+    "year": 2015,
+    "category": "sports",
+    "description": "American Pharoah won the 2015 Belmont Stakes to claim the first US Triple Crown in 37 years since Affirmed.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "biles-four-rio-golds-2016",
+    "friendly_name": "Biles Wins Four Rio Golds",
+    "year": 2016,
+    "category": "sports",
+    "description": "Simone Biles won four gymnastics gold medals at the Rio Olympics, taking the team, all-around, vault and floor titles.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "super-bowl-li-comeback",
+    "friendly_name": "Super Bowl LI Comeback",
+    "year": 2017,
+    "category": "sports",
+    "description": "The New England Patriots erased a 28-3 deficit to beat the Atlanta Falcons in the first Super Bowl decided in overtime.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "var-world-cup-2018",
+    "friendly_name": "VAR at the World Cup",
+    "year": 2018,
+    "category": "sports",
+    "description": "Video Assistant Referee technology was used for the first time at a FIFA World Cup, held in Russia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "world-cup-super-over-final-2019",
+    "friendly_name": "2019 World Cup Super Over",
+    "year": 2019,
+    "category": "sports",
+    "description": "England won the 2019 World Cup final over New Zealand on boundary count after the match and super over finished level.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tiger-masters-comeback-2019",
+    "friendly_name": "Tiger's 2019 Masters Comeback",
+    "year": 2019,
+    "category": "sports",
+    "description": "Tiger Woods won the Masters for his 15th major, an emotional comeback 11 years after his previous major title.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "kipchoge-sub-two-hour-marathon-2019",
+    "friendly_name": "Kipchoge Breaks Two Hours",
+    "year": 2019,
+    "category": "sports",
+    "description": "Eliud Kipchoge ran 1:59:40 in Vienna, the first sub-two-hour marathon, though not an official world record.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "winx-33rd-straight-win-2019",
+    "friendly_name": "Winx Wins 33rd Straight",
+    "year": 2019,
+    "category": "sports",
+    "description": "Australian mare Winx won her 33rd consecutive race in her 2019 farewell, a modern record for a top-level horse.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "action-sports-olympic-debut-2021",
+    "friendly_name": "Action Sports Enter Olympics",
+    "year": 2021,
+    "category": "sports",
+    "description": "Skateboarding, surfing and sport climbing all made their Olympic debut at the Tokyo Games held in 2021.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "lebron-nba-scoring-record-2023",
+    "friendly_name": "LeBron Sets NBA Scoring Record",
+    "year": 2023,
+    "category": "sports",
+    "description": "LeBron James passed Kareem Abdul-Jabbar to become the NBA's all-time leading scorer with a fadeaway jumper.",
+    "difficulty": "easy"
   }
 ]
