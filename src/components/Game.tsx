@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo, CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
 import { motion } from 'framer-motion';
 import ConfettiExplosion from 'react-confetti-explosion';
@@ -32,6 +32,7 @@ import ActiveCardDisplay from './ActiveCardDisplay';
 import AchievementUnlock from './AchievementUnlock';
 import MilestonePopup from './MilestonePopup';
 import { getStreakFeedback } from '../utils/streakFeedback';
+import { getVignetteColor } from '../utils/vignettePulse';
 import { ACHIEVEMENTS } from '../data/achievements';
 import { buildEventsByName, GameMilestone } from '../utils/statsStorage';
 import { preloadEventImages } from '../utils/preloadImage';
@@ -138,6 +139,9 @@ const Game: React.FC<GameProps> = ({
   const [showStatsPopup, setShowStatsPopup] = useState(false);
   const [showUnlock, setShowUnlock] = useState(false);
   const [showMilestones, setShowMilestones] = useState(false);
+  // Full-screen edge-in colour pulse shown on each placement. `key` remounts
+  // the overlay so the animation retriggers on rapid back-to-back placements.
+  const [vignette, setVignette] = useState<{ color: string; key: number } | null>(null);
 
   // Catalogue keyed by name so unlocked badges can resolve their art (reuses loaded events).
   const eventsByName = useMemo(() => buildEventsByName(allEvents), [allEvents]);
@@ -216,6 +220,13 @@ const Game: React.FC<GameProps> = ({
 
   useEffect(() => {
     if (state.lastPlacementResult && state.lastPlacementResult !== prevPlacementRef.current) {
+      // Whole-screen edge-in pulse: red on a miss, streak colour on a hit.
+      const vignetteColor = getVignetteColor(
+        state.lastPlacementResult.success,
+        state.currentStreak
+      );
+      setVignette({ color: vignetteColor, key: Date.now() });
+      setTimeout(() => setVignette(null), 700); // matches --anim-vignette-dur
       if (state.lastPlacementResult.success) {
         // Capture streak feedback for this placement
         streakFeedbackRef.current = getStreakFeedback(state.currentStreak);
@@ -460,6 +471,18 @@ const Game: React.FC<GameProps> = ({
           />
         </div>
       </DndContext>
+
+      {/* Whole-screen placement feedback: colour blooms in from the edges and
+          fades toward the centre. Sits outside the shake container so it stays
+          stationary while the board shakes on a miss. */}
+      {vignette && (
+        <div
+          key={vignette.key}
+          aria-hidden="true"
+          className="vignette-overlay animate-vignette pointer-events-none fixed inset-0 z-[45]"
+          style={{ '--vignette-color': vignette.color } as CSSProperties}
+        />
+      )}
     </motion.div>
   );
 };

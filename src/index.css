@@ -228,6 +228,34 @@ input,
   animation: errorPulse var(--anim-error-pulse-dur, 0.6s) ease-out;
 }
 
+/* Full-screen placement feedback vignette (edge-in pulse).
+   Colour bleeds in from the screen edges and fades toward the centre,
+   which stays clear so the timeline remains visible. --vignette-color is
+   set inline per placement (error red / streak green or gold). */
+.vignette-overlay {
+  background: radial-gradient(
+    ellipse at center,
+    transparent 42%,
+    color-mix(in srgb, var(--vignette-color) 55%, transparent) 100%
+  );
+}
+
+@keyframes vignettePulse {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-vignette {
+  animation: vignettePulse var(--anim-vignette-dur, 0.7s) ease-out;
+}
+
 /* Feedback banner animation - snappy slide + fade */
 @keyframes bannerSlideIn {
   0% {
@@ -408,7 +436,8 @@ input,
   .animate-streak-pulse,
   .animate-streak-glow,
   .animate-shine-sweep,
-  .animate-halo-pulse {
+  .animate-halo-pulse,
+  .animate-vignette {
     animation: none;
   }
 }

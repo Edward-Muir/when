@@ -89,6 +89,7 @@ Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-gen
 | Timeline fade overlays  | z-30    | Timeline.tsx |
 | Left panel (hand zone)  | z-40    | Game.tsx     |
 | Card stack container    | z-40    | Game.tsx     |
+| Placement vignette      | z-45    | Game.tsx     |
 | Cycle button            | z-50    | Game.tsx     |
 
 ## Drag and Drop
