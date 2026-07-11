@@ -1,8 +1,12 @@
 name: Release
 
-# Cut a release from anywhere (incl. the GitHub mobile app): Actions -> Release
-# -> Run workflow -> pick the bump. Mirrors scripts/release.sh, but runs in CI
-# with GITHUB_TOKEN so it can push the release commit + tag to main.
+# Two ways to release, both running in CI with GITHUB_TOKEN (which can push the
+# release commit + tag to main):
+#   - Automatic: on push to main (i.e. a merged PR) that contains a feat/fix/perf
+#     commit. Docs/chore/ci/refactor-only merges run the job but skip releasing.
+#   - Manual: Actions -> Release -> Run workflow (also from GitHub mobile web),
+#     which forces any bump. Handy for releasing a merge that was auto-skipped.
+# Mirrors scripts/release.sh.
 on:
   workflow_dispatch:
     inputs:
@@ -15,6 +19,8 @@ on:
           - patch
           - minor
           - major
+  push:
+    branches: [main]
 
 permissions:
   contents: write
@@ -26,6 +32,9 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    # Ignore the release job's own commit (belt-and-suspenders: GITHUB_TOKEN pushes
+    # don't re-trigger workflows anyway). Manual dispatch always proceeds.
+    if: ${{ github.event_name == 'workflow_dispatch' || !startsWith(github.event.head_commit.message, 'chore(release):') }}
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -33,7 +42,28 @@ jobs:
           ref: main
           fetch-depth: 0 # full history + tags for changelog / version detection
 
+      # Manual dispatch -> release with the chosen bump. Push -> release only if a
+      # feat/fix/perf commit landed since the last tag (auto-detect minor/patch).
+      - name: Decide whether to release
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"
+            echo "mode=${{ inputs.release-type }}" >> "$GITHUB_OUTPUT"
+          else
+            LAST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+            RANGE=${LAST_TAG:+$LAST_TAG..HEAD}
+            if git log --format='%s' $RANGE | grep -qE '^(feat|fix|perf)(\(.+\))?!?:'; then
+              echo "go=true" >> "$GITHUB_OUTPUT"
+              echo "mode=auto" >> "$GITHUB_OUTPUT"
+            else
+              echo "go=false" >> "$GITHUB_OUTPUT"
+              echo "No feat/fix/perf commits since ${LAST_TAG:-repo start}; skipping release."
+            fi
+          fi
+
       - name: Set up Node
+        if: steps.gate.outputs.go == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -41,15 +71,18 @@ jobs:
       # --ignore-scripts skips husky's prepare and the sharp native build; neither
       # is needed to cut a release, and it keeps the run fast and network-robust.
       - name: Install dependencies
+        if: steps.gate.outputs.go == 'true'
         run: npm ci --ignore-scripts
 
       - name: Configure git identity
+        if: steps.gate.outputs.go == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       # Never tag a broken main.
       - name: Sanity checks
+        if: steps.gate.outputs.go == 'true'
         run: |
           npm run typecheck
           npm test -- --watchAll=false
@@ -57,12 +90,14 @@ jobs:
           CI: true
 
       - name: Bump version, changelog and tag
+        if: steps.gate.outputs.go == 'true'
         run: |
-          if [ "${{ inputs.release-type }}" = "auto" ]; then
+          if [ "${{ steps.gate.outputs.mode }}" = "auto" ]; then
             npm run release
           else
-            npm run release:${{ inputs.release-type }}
+            npm run release:${{ steps.gate.outputs.mode }}
           fi
 
       - name: Push commit and tag
+        if: steps.gate.outputs.go == 'true'
         run: git push --follow-tags origin main
