@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jul 2026 21:18:31 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 15:23:20 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.5.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.5.0</guid>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>full-screen placement pulse with camera-follow on incorrect placements (<a href="https://github.com/Edward-Muir/when/issues/20">#20</a>) (<a href="https://github.com/Edward-Muir/when/commit/90115599d665c88417d07c324e72110c8e512035">9011559</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.4.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.0.0</guid>
       <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add stats tracking and achievements system (<a href="https://github.com/Edward-Muir/when/commit/10b917ac065b3f396aef5d1562287ab4195f34e2">10b917a</a>)</li> <li>Cache events, move theme toggle to menu, reorder TopBar (<a href="https://github.com/Edward-Muir/when/commit/01447943f62c6ab42d5695c90673bfd8701d4d9c">0144794</a>)</li> <li>Center my timeline (<a href="https://github.com/Edward-Muir/when/commit/87b558b15b2b9e3221a4f3af22bb0288bc912f23">87b558b</a>)</li> <li>Image preload unification, my timeline page (<a href="https://github.com/Edward-Muir/when/commit/c5d99474fc48247eda52b2f866fe7028072da24e">c5d9947</a>)</li> <li>Improve Navigation, add helper text (<a href="https://github.com/Edward-Muir/when/commit/b6f29f39e87372bee091fa517516d44bd4c38249">b6f29f3</a>)</li> <li>Refining stats and achievments (<a href="https://github.com/Edward-Muir/when/commit/01d953d2b58299fc61bc5c0fd080237fc5d90690">01d953d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v0.11.3</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v0.11.3</guid>
-      <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix qc page routing (<a href="https://github.com/Edward-Muir/when/commit/934afeca08907cfd1d05ff52742a2186da3d4752">934afec</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

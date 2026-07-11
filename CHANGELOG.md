@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Edward-Muir/when/compare/v1.4.0...v1.5.0) (2026-07-11)
+
+
+### Features
+
+* full-screen placement pulse with camera-follow on incorrect placements ([#20](https://github.com/Edward-Muir/when/issues/20)) ([9011559](https://github.com/Edward-Muir/when/commit/90115599d665c88417d07c324e72110c8e512035))
+
 ## [1.4.0](https://github.com/Edward-Muir/when/compare/v1.3.0...v1.4.0) (2026-07-08)
 
 
