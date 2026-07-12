@@ -16,6 +16,7 @@ import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
 import AnimJig from './pages/AnimJig';
 import ReminderPreview from './pages/ReminderPreview';
+import AdminDedup from './pages/AdminDedup';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -38,6 +39,11 @@ root.render(
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="/anim-jig" element={<AnimJig />} />
         <Route path="/reminder-preview" element={<ReminderPreview />} />
+        {/* Dev-only duplicate-review jig — unregistered in production builds so it never
+            ships in normal navigation (falls through to the "/" redirect). */}
+        {process.env.NODE_ENV !== 'production' && (
+          <Route path="/admin/dedup" element={<AdminDedup />} />
+        )}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

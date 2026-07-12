@@ -49,6 +49,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "find-duplicates": "node scripts/find-duplicate-events.js",
+    "build-dedup-clusters": "node scripts/build-dedup-clusters.js",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
