@@ -14,6 +14,26 @@ export type DedupDecision = { kind: 'keep'; keep: string[] } | { kind: 'pass' };
 export type DedupDecisions = Record<number, DedupDecision>;
 
 const STORAGE_KEY = 'when-dedup-decisions-v1';
+const POSITION_KEY = 'when-dedup-position-v1';
+
+/** The cluster index the reviewer was last viewing, so reload resumes in place. */
+export function getLastPosition(): number {
+  try {
+    const raw = localStorage.getItem(POSITION_KEY);
+    const n = raw ? parseInt(raw, 10) : 0;
+    return Number.isFinite(n) && n >= 0 ? n : 0;
+  } catch {
+    return 0;
+  }
+}
+
+export function setLastPosition(index: number): void {
+  try {
+    localStorage.setItem(POSITION_KEY, String(index));
+  } catch {
+    // Ignore — position resume is best-effort.
+  }
+}
 
 export function getDecisions(): DedupDecisions {
   try {
