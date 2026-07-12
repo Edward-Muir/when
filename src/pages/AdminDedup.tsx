@@ -161,7 +161,7 @@ const AdminDedup: React.FC = () => {
     if (!clusters) return;
     // eslint-disable-next-line security/detect-object-injection
     const nextCluster = clusters[pos + 1];
-    if (nextCluster) preloadEventImages(nextCluster.map((m) => m.event), ['thumbnail']);
+    if (nextCluster) preloadEventImages(nextCluster.map((m) => m.event), ['detail']);
   }, [pos, clusters]);
 
   const counts = useMemo(() => {

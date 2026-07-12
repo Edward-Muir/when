@@ -130,7 +130,8 @@ const MemberCard: React.FC<MemberCardProps> = ({
   const [imgError, setImgError] = useState(false);
   const { event, name } = member;
   const hasCloudinary = isCloudinaryImage(event?.image_url);
-  const thumb = getImageUrl(event?.image_url, 'thumbnail');
+  // Full-quality variant (no width cap) so duplicate images can be compared closely.
+  const thumb = getImageUrl(event?.image_url, 'detail');
   const showImg = !!thumb && !imgError;
 
   return (
@@ -143,15 +144,15 @@ const MemberCard: React.FC<MemberCardProps> = ({
             : 'border-border bg-bg'
       }`}
     >
-      {/* Image / placeholder */}
-      <div className="relative flex h-32 items-center justify-center overflow-hidden bg-surface">
+      {/* Image / placeholder — full image (object-contain, letterboxed) so nothing is cropped */}
+      <div className="relative flex h-72 items-center justify-center overflow-hidden bg-surface sm:h-80">
         {showImg ? (
           <img
             src={thumb}
             alt={event?.friendly_name ?? name}
             loading="lazy"
             onError={() => setImgError(true)}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         ) : (
           <span className="font-mono text-xs text-text/40">no image</span>
