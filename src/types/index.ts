@@ -18,7 +18,8 @@ export type Category =
   | 'migration'
   | 'art'
   | 'medicine'
-  | 'nature';
+  | 'nature'
+  | 'sports';
 
 export const ALL_CATEGORIES: Category[] = [
   'empires',
@@ -41,6 +42,7 @@ export const ALL_CATEGORIES: Category[] = [
   'art',
   'medicine',
   'nature',
+  'sports',
 ];
 
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';

@@ -12,6 +12,7 @@ Session summaries and reference docs for the "When" timeline game. Session files
 - [gameplay-feel/](gameplay-feel/index.md) — Game feel: streak feedback, game-over popup, transitions, and the color system
 - [mobile-ios/](mobile-ios/index.md) — Capacitor iOS app setup and iOS-specific fixes
 - [dev-tooling/](dev-tooling/index.md) — Local dev troubleshooting (`vercel dev`), category clustering/refactor tooling
+- [sports-events/](sports-events/index.md) — The `sports` category (sub-agent research + dedup) and the game-wide duplicate audit
 
 ## Root docs
 
