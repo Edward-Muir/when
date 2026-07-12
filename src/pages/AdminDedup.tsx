@@ -172,7 +172,7 @@ const AdminDedup: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-bg text-text">
+    <div className="h-screen-safe overflow-y-auto bg-bg text-text pb-safe">
       <div className="mx-auto max-w-6xl px-4 pb-24 pt-safe">
         {/* Header */}
         <div className="flex items-center justify-between gap-3 py-4">
