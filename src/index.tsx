@@ -39,11 +39,10 @@ root.render(
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="/anim-jig" element={<AnimJig />} />
         <Route path="/reminder-preview" element={<ReminderPreview />} />
-        {/* Dev-only duplicate-review jig — unregistered in production builds so it never
-            ships in normal navigation (falls through to the "/" redirect). */}
-        {process.env.NODE_ENV !== 'production' && (
-          <Route path="/admin/dedup" element={<AdminDedup />} />
-        )}
+        {/* Internal duplicate-review jig. Linked from no navigation (dev-only by
+            convention); reachable only by typing the URL — including on the deployed
+            dev preview, which is a production build. Needs a matching vercel.json rewrite. */}
+        <Route path="/admin/dedup" element={<AdminDedup />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
