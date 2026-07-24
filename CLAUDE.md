@@ -4,6 +4,8 @@
 
 For detailed architecture (component hierarchy, hooks, utils, API routes, z-index, dependencies): see [docs/architecture-reference.md](docs/architecture-reference.md)
 
+To drive/play the app end-to-end with Playwright (smoke tests, or playing the live daily) — including the drag-and-drop recipe, the proxy/TLS workaround, and a copy-pasteable script: see [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md)
+
 ## Commands
 
 ```bash
@@ -22,7 +24,7 @@ npm run release              # Bump version (auto-detect from commits)
 - **Production deploys on every push to `main`** (Vercel default Git integration; `vercel.json` has only rewrites, no deploy config). Merging a PR to `main` ships to production — the release step below is separate version/changelog/tag bookkeeping, not what deploys the app.
 - **Versioning** uses `commit-and-tag-version` (config in `.versionrc.json`). Run `./scripts/release.sh [patch|minor|major]` (or `npm run release[:patch|:minor|:major]`). It bumps `package.json`, regenerates `CHANGELOG.md`, runs the `postchangelog` hook (`scripts/inject-version.js` + `generate-rss.js` → updates `public/feed.xml`, `src/version.ts`, `public/version.json`, `public/service-worker.js`), commits `chore(release): x.y.z`, tags `vX.Y.Z`, and pushes with `--follow-tags`.
 - **Bump auto-detect** reads Conventional Commits since the last tag: `feat` → minor, `fix`/`perf` → patch; `docs`/`refactor`/`chore`/`ci`/etc. are hidden from the changelog. Squash-merge PRs with a conventional title (e.g. `feat: …`) so `main` history stays clean and auto-detect works; otherwise pass an explicit bump type.
-- **Automatic release on merge:** the **Release GitHub Action** (`.github/workflows/release.yml`) runs in CI with `GITHUB_TOKEN` (which *can* push to `main`). On push to `main`, it auto-releases **only when the merge contains a `feat`/`fix`/`perf` commit** (auto-detecting minor/patch); docs/chore/ci/refactor-only merges are skipped. So squash-merging a PR with a `feat:`/`fix:` title ships a release with no further action.
+- **Automatic release on merge:** the **Release GitHub Action** (`.github/workflows/release.yml`) runs in CI with `GITHUB_TOKEN` (which _can_ push to `main`). On push to `main`, it auto-releases **only when the merge contains a `feat`/`fix`/`perf` commit** (auto-detecting minor/patch); docs/chore/ci/refactor-only merges are skipped. So squash-merging a PR with a `feat:`/`fix:` title ships a release with no further action.
 - **Manual release:** the same workflow also has `workflow_dispatch` — GitHub → **Actions → Release → Run workflow** → pick the bump (forces any version, and releases a merge that auto-skipped). The GitHub **mobile app can't trigger workflows** — use mobile web: `github.com/Edward-Muir/when/actions/workflows/release.yml`.
 - **Why CI, not local:** sandboxed/cloud (Claude Code on the web) sessions are org-policy-blocked from pushing to `main` (`git push` → HTTP 403), so they open+merge PRs but never run the release directly — the Action does it. (`main` is currently unprotected.)
 
