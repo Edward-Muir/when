@@ -1,0 +1,522 @@
+<title>When — Soundscape Audition Console</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<style>
+  :root {
+    /* When's own tokens — light ground */
+    --bg: #efece6;          /* warm-biased neutral, not flat grey */
+    --surface: #f6f4ef;
+    --surface-2: #e7e3da;
+    --text: #001524;        /* deep navy */
+    --muted: #566372;
+    --border: #ccc6ba;
+    --accent: #b8860b;       /* streak gold */
+    --accent-soft: #b8860b22;
+    --teal: #15616d;
+    --success: #5c9a56;
+    --error: #d9694f;
+    --shadow: 0 1px 2px rgba(0,21,36,.06), 0 8px 24px rgba(0,21,36,.06);
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --mono: ui-monospace, 'SF Mono', 'DM Mono', Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1b2a;
+      --surface: #16273a;
+      --surface-2: #1f3346;
+      --text: #e7e7e4;
+      --muted: #93a3b5;
+      --border: #2b3f54;
+      --accent: #d4a84b;
+      --accent-soft: #d4a84b1f;
+      --teal: #22a0b0;
+      --success: #7abf70;
+      --error: #f0836b;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #efece6; --surface: #f6f4ef; --surface-2: #e7e3da; --text: #001524;
+    --muted: #566372; --border: #ccc6ba; --accent: #b8860b; --accent-soft: #b8860b22;
+    --teal: #15616d; --success: #5c9a56; --error: #d9694f;
+    --shadow: 0 1px 2px rgba(0,21,36,.06), 0 8px 24px rgba(0,21,36,.06);
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1b2a; --surface: #16273a; --surface-2: #1f3346; --text: #e7e7e4;
+    --muted: #93a3b5; --border: #2b3f54; --accent: #d4a84b; --accent-soft: #d4a84b1f;
+    --teal: #22a0b0; --success: #7abf70; --error: #f0836b;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--sans); line-height: 1.5;
+    -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;
+    padding: env(safe-area-inset-top) 0 calc(env(safe-area-inset-bottom) + 40px);
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 24px 18px 0; }
+
+  /* ---- Masthead ---- */
+  .eyebrow {
+    font-family: var(--mono); font-size: 11px; letter-spacing: .22em;
+    text-transform: uppercase; color: var(--accent); margin: 0 0 10px;
+  }
+  h1 {
+    font-family: var(--serif); font-weight: 600; font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.08; margin: 0; text-wrap: balance; letter-spacing: -.01em;
+  }
+  h1 em { font-style: italic; color: var(--accent); }
+  .lede { color: var(--muted); font-size: 15px; margin: 12px 0 0; max-width: 42ch; }
+
+  /* ---- Enable gate ---- */
+  .gate {
+    margin-top: 20px; display: flex; align-items: center; gap: 12px;
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow);
+  }
+  .gate.ready { border-color: color-mix(in srgb, var(--success) 55%, var(--border)); }
+  .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); flex: none;
+         transition: background .2s ease; }
+  .gate.ready .dot { background: var(--success); box-shadow: 0 0 0 4px color-mix(in srgb, var(--success) 22%, transparent); }
+  .gate-txt { font-size: 13.5px; color: var(--muted); flex: 1; }
+  .gate-txt b { color: var(--text); font-weight: 600; }
+  .btn-enable {
+    font-family: var(--sans); font-weight: 600; font-size: 14px; cursor: pointer;
+    border: 0; border-radius: 10px; padding: 10px 16px; color: #fff;
+    background: var(--accent); flex: none; min-height: 44px;
+  }
+  .btn-enable:disabled { opacity: .5; }
+
+  /* ---- Section frame ---- */
+  section { margin-top: 30px; }
+  .sec-head { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+  .sec-head h2 {
+    font-family: var(--serif); font-weight: 600; font-size: 19px; margin: 0; letter-spacing: -.01em;
+  }
+  .sec-head .n {
+    font-family: var(--mono); font-size: 11px; color: var(--accent);
+    border: 1px solid var(--border); border-radius: 6px; padding: 2px 6px; letter-spacing: .1em;
+  }
+  .sec-note { color: var(--muted); font-size: 13px; margin: -6px 0 14px; }
+
+  .panel {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 18px; padding: 18px; box-shadow: var(--shadow);
+  }
+
+  /* ---- Streak simulator (hero) ---- */
+  .sim-top { display: flex; align-items: stretch; gap: 16px; }
+  .ladder { display: flex; flex-direction: column-reverse; gap: 5px; flex: none; width: 84px; }
+  .rung {
+    height: 22px; border-radius: 5px; background: var(--surface-2);
+    border: 1px solid var(--border); display: flex; align-items: center;
+    justify-content: flex-end; padding-right: 7px;
+    font-family: var(--mono); font-size: 10px; color: var(--muted);
+    transition: background .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease;
+  }
+  .rung.on {
+    background: color-mix(in srgb, var(--accent) 82%, transparent);
+    border-color: var(--accent); color: #1a1206; font-weight: 500;
+  }
+  .rung.tip { box-shadow: 0 0 0 3px var(--accent-soft); }
+  .readout { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 4px; }
+  .streak-num { font-family: var(--serif); font-weight: 600; font-size: 54px; line-height: 1;
+                font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+  .streak-num small { font-size: 15px; font-family: var(--sans); color: var(--muted); font-weight: 400; margin-left: 6px; }
+  .rd-line { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .rd-line b { color: var(--text); }
+  .tierpill {
+    display: inline-block; font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 999px; margin-top: 2px;
+    background: var(--accent-soft); color: var(--accent);
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  .sim-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px; }
+  .big {
+    font-family: var(--sans); font-weight: 600; font-size: 15px; cursor: pointer;
+    border-radius: 12px; padding: 15px 12px; min-height: 54px; border: 1px solid transparent;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+  }
+  .big.correct { background: color-mix(in srgb, var(--success) 16%, var(--surface)); color: var(--success);
+                 border-color: color-mix(in srgb, var(--success) 45%, var(--border)); }
+  .big.miss { background: color-mix(in srgb, var(--error) 14%, var(--surface)); color: var(--error);
+              border-color: color-mix(in srgb, var(--error) 45%, var(--border)); }
+  .big:active { transform: scale(.97); }
+
+  /* ---- Cue grid ---- */
+  .cues { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .cue {
+    text-align: left; cursor: pointer; background: var(--surface); color: var(--text);
+    border: 1px solid var(--border); border-radius: 14px; padding: 13px 14px;
+    box-shadow: var(--shadow); min-height: 66px; display: flex; flex-direction: column; gap: 3px;
+    transition: transform .08s ease, border-color .15s ease;
+  }
+  .cue:active { transform: scale(.98); }
+  .cue .name { font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 7px; }
+  .cue .desc { font-size: 11.5px; color: var(--muted); line-height: 1.35; }
+  .cue .swatch { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+  .s-gold { background: var(--accent); } .s-green { background: var(--success); }
+  .s-red { background: var(--error); } .s-teal { background: var(--teal); }
+  .s-muted { background: var(--muted); }
+  .cue.silent { border-style: dashed; opacity: .82; box-shadow: none; }
+  .cue.silent .name { color: var(--muted); }
+
+  /* ---- Tuning ---- */
+  .tune-row { display: flex; align-items: center; gap: 12px; padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .tune-row:last-child { border-bottom: 0; }
+  .tune-label { flex: none; width: 108px; font-size: 13px; }
+  .tune-label small { display: block; color: var(--muted); font-size: 10.5px; }
+  input[type=range] { flex: 1; accent-color: var(--accent); height: 26px; }
+  .tune-val { flex: none; width: 74px; text-align: right; font-family: var(--mono); font-size: 13px;
+              font-variant-numeric: tabular-nums; color: var(--text); }
+  .readback {
+    margin-top: 14px; background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 12px; padding: 12px 14px; overflow-x: auto;
+  }
+  .readback pre { margin: 0; font-family: var(--mono); font-size: 12px; color: var(--text); white-space: pre; }
+  .btn-copy {
+    margin-top: 10px; font-family: var(--sans); font-size: 13px; font-weight: 600; cursor: pointer;
+    background: transparent; color: var(--accent); border: 1px solid var(--border);
+    border-radius: 9px; padding: 9px 14px; min-height: 42px;
+  }
+  .btn-reset { margin-left: 8px; color: var(--muted); }
+
+  footer { margin-top: 34px; color: var(--muted); font-size: 12px; text-align: center; line-height: 1.6; }
+  footer b { color: var(--text); }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+    .big:active, .cue:active { transform: none; }
+  }
+</style>
+
+<div class="wrap">
+  <header>
+    <p class="eyebrow">When · Sound Design · Audition</p>
+    <h1>The sound of <em>getting it right.</em></h1>
+    <p class="lede">One instrument, one scale. Tap through every cue, then run a streak
+      to hear the pitch climb the pentatonic ladder — and resolve on a miss. Tune it by
+      ear, on your phone, before a line of app code is written.</p>
+
+    <div class="gate" id="gate">
+      <span class="dot"></span>
+      <span class="gate-txt" id="gateTxt"><b>Audio is asleep.</b> Tap to wake it (this is the iOS unlock gesture).</span>
+      <button class="btn-enable" id="enable">Enable&nbsp;sound</button>
+    </div>
+  </header>
+
+  <!-- HERO: streak simulator -->
+  <section id="sim">
+    <div class="sec-head"><span class="n">01</span><h2>Streak simulator</h2></div>
+    <p class="sec-note">The musical core. Each correct placement climbs one degree of A-major
+      pentatonic; tiers ignite at 2 / 4 / 6, adding a fifth, an octave shimmer, then a sparkle.</p>
+    <div class="panel">
+      <div class="sim-top">
+        <div class="ladder" id="ladder"></div>
+        <div class="readout">
+          <div class="streak-num"><span id="streakN">0</span><small>in a row</small></div>
+          <div class="rd-line">note <b id="rdNote">—</b> · <b id="rdHz">—</b> Hz</div>
+          <div><span class="tierpill" id="tierPill">Tier 0 — baseline</span></div>
+        </div>
+      </div>
+      <div class="sim-controls">
+        <button class="big correct" id="btnCorrect">✓ &nbsp;Place correct</button>
+        <button class="big miss" id="btnMiss">✗ &nbsp;Miss</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUE LIBRARY -->
+  <section>
+    <div class="sec-head"><span class="n">02</span><h2>Cue library</h2></div>
+    <p class="sec-note">Every voiced moment. Dashed cards are <b>silent by design</b> —
+      restraint is part of the palette.</p>
+    <div class="cues" id="cues"></div>
+  </section>
+
+  <!-- TUNING -->
+  <section>
+    <div class="sec-head"><span class="n">03</span><h2>Tuning</h2></div>
+    <p class="sec-note">Shape the whole instrument live, then read the values back.</p>
+    <div class="panel">
+      <div id="tuners"></div>
+      <div class="readback"><pre id="readback"></pre></div>
+      <button class="btn-copy" id="btnCopy">Copy values</button>
+      <button class="btn-copy btn-reset" id="btnReset">Reset</button>
+    </div>
+  </section>
+
+  <footer>
+    <b>When</b> — soundscape audition · Web Audio synthesis, zero audio files<br />
+    Sound reinforces the existing visual + haptic feedback; the game stays fully playable muted.
+  </footer>
+</div>
+
+<script>
+(() => {
+  'use strict';
+
+  // ---------- Parameters (the tunable palette) ----------
+  const DEFAULTS = { baseFreq: 220, attack: 5, decay: 250, masterGain: 0.55, lowpass: 2600, ladderCap: 11 };
+  let P = { ...DEFAULTS };
+
+  // ---------- Audio graph ----------
+  let ctx = null, master = null, comp = null, voices = [];
+  const PENTA = [0, 2, 4, 7, 9];              // A major pentatonic semitone offsets
+  const NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+
+  function ensureCtx() {
+    if (ctx) return;
+    ctx = new (window.AudioContext || window.webkitAudioContext)();
+    master = ctx.createGain(); master.gain.value = P.masterGain;
+    comp = ctx.createDynamicsCompressor();
+    comp.threshold.value = -14; comp.knee.value = 24; comp.ratio.value = 6;
+    comp.attack.value = 0.003; comp.release.value = 0.25;
+    master.connect(comp); comp.connect(ctx.destination);
+  }
+  function unlock() {
+    ensureCtx();
+    if (ctx.state === 'suspended') ctx.resume();
+    const g = document.getElementById('gate');
+    g.classList.add('ready');
+    document.getElementById('gateTxt').innerHTML = '<b>Audio is live.</b> Play any cue below.';
+    document.getElementById('enable').disabled = true;
+    document.getElementById('enable').textContent = 'Enabled';
+  }
+
+  function scaleFreqs(root, n) {
+    const out = [];
+    for (let i = 0; i < n; i++) {
+      const oct = Math.floor(i / 5), deg = PENTA[i % 5];
+      out.push(root * Math.pow(2, (oct * 12 + deg) / 12));
+    }
+    return out;
+  }
+  function noteName(f) {
+    const n = Math.round(12 * Math.log2(f / 440)) + 69;
+    return NAMES[((n % 12) + 12) % 12] + (Math.floor(n / 12) - 1);
+  }
+
+  // A single mallet voice: sine fundamental + quiet octave partial → lowpass → master.
+  function voice(freq, opt) {
+    if (!ctx) return;
+    opt = opt || {};
+    const attack = (opt.attack != null ? opt.attack : P.attack) / 1000;
+    const decay  = (opt.decay  != null ? opt.decay  : P.decay)  / 1000;
+    const gain   = opt.gain != null ? opt.gain : 0.35;
+    const partial = opt.partial != null ? opt.partial : 0.3;
+    const type = opt.type || 'sine';
+    const t0 = ctx.currentTime + (opt.when || 0);
+
+    const env = ctx.createGain();
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = P.lowpass;
+    env.connect(lp); lp.connect(master);
+
+    const osc = ctx.createOscillator(); osc.type = type;
+    osc.frequency.setValueAtTime(freq, t0);
+    if (opt.glideTo) osc.frequency.exponentialRampToValueAtTime(Math.max(20, opt.glideTo), t0 + (opt.glideTime || 0.15));
+    osc.connect(env);
+
+    let osc2 = null;
+    if (partial > 0) {
+      osc2 = ctx.createOscillator(); osc2.type = 'sine';
+      osc2.frequency.setValueAtTime(freq * 2, t0);
+      if (opt.glideTo) osc2.frequency.exponentialRampToValueAtTime(Math.max(20, opt.glideTo * 2), t0 + (opt.glideTime || 0.15));
+      const pg = ctx.createGain(); pg.gain.value = partial; osc2.connect(pg); pg.connect(env);
+    }
+
+    env.gain.setValueAtTime(0.0001, t0);
+    env.gain.exponentialRampToValueAtTime(gain, t0 + attack);
+    env.gain.exponentialRampToValueAtTime(0.0001, t0 + attack + decay);
+
+    const stop = t0 + attack + decay + 0.05;
+    osc.start(t0); osc.stop(stop);
+    if (osc2) { osc2.start(t0); osc2.stop(stop); }
+
+    // simple voice-cap: keep the 4 most recent
+    voices.push(stop);
+    if (voices.length > 8) voices.shift();
+  }
+
+  function noiseBody(gain, dur, cutoff) {
+    if (!ctx) return;
+    const t0 = ctx.currentTime;
+    const buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * dur), ctx.sampleRate);
+    const d = buf.getChannelData(0);
+    for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    const src = ctx.createBufferSource(); src.buffer = buf;
+    const lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = cutoff;
+    const g = ctx.createGain();
+    g.gain.setValueAtTime(gain, t0);
+    g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+    src.connect(lp); lp.connect(g); g.connect(master);
+    src.start(t0); src.stop(t0 + dur);
+  }
+
+  // ---------- Cue definitions (mirror the spec) ----------
+  function tierOf(streak) { return streak >= 6 ? 3 : streak >= 4 ? 2 : streak >= 2 ? 1 : 0; }
+
+  function playCorrect(streak) {
+    ensureCtx();
+    const scale = scaleFreqs(P.baseFreq, 28);
+    const idx = Math.min(Math.max(streak - 1, 0), P.ladderCap - 1);
+    const f = scale[idx];
+    const tier = tierOf(streak);
+    voice(f, { gain: 0.35 });
+    if (tier === 1) voice(f * Math.pow(2, 7 / 12), { gain: 0.10, decay: P.decay * 0.9 });   // added fifth
+    if (tier >= 2) voice(f * 2, { gain: 0.12, decay: P.decay * 1.15, partial: 0.2 });        // octave shimmer
+    if (tier >= 3) voice(f * 4, { gain: 0.06, attack: 4, decay: 170, when: 0.06, partial: 0 }); // sparkle grace
+    return { idx, f, tier };
+  }
+  function playPickup() { ensureCtx(); voice(P.baseFreq * 4, { gain: 0.05, attack: 6, decay: 70, partial: 0.15 }); }
+  function playMiss() {
+    ensureCtx();
+    voice(P.baseFreq * 0.68, { gain: 0.5, attack: 4, decay: 400, partial: 0.15, type: 'triangle',
+                               glideTo: P.baseFreq * 0.36, glideTime: 0.18 });
+    noiseBody(0.16, 0.22, 300);
+  }
+  function playGameOver(kind) {
+    ensureCtx();
+    const s = scaleFreqs(P.baseFreq, 14);
+    if (kind === 'legendary') {
+      [0, 2, 4, 5, 7].forEach((i, k) => voice(s[i], { when: k * 0.11, gain: 0.45, decay: k === 4 ? 700 : 320 }));
+    } else if (kind === 'strong') {
+      [0, 2, 4, 5].forEach((i, k) => voice(s[i], { when: k * 0.13, gain: 0.4, decay: k === 3 ? 600 : 300 }));
+    } else { // weak — gentle low fall, not punishing
+      [3, 1, 0].forEach((i, k) => voice(s[i], { when: k * 0.16, gain: 0.3, decay: 500, partial: 0.35 }));
+    }
+  }
+  function playPersonalBest() {
+    ensureCtx();
+    const s = scaleFreqs(P.baseFreq, 18);
+    [5, 7, 9, 10].forEach((i, k) => {
+      voice(s[i], { when: k * 0.09, gain: 0.5 });
+      voice(s[i] * 2, { when: k * 0.09 + 0.02, gain: 0.12, partial: 0, decay: 300 });
+    });
+    voice(s[12] * 2, { when: 0.42, gain: 0.08, decay: 320, partial: 0 }); // top sparkle
+  }
+
+  // ---------- Streak simulator UI ----------
+  let streak = 0;
+  const ladderEl = document.getElementById('ladder');
+  const TIER_LABEL = ['Tier 0 — baseline', 'Tier 1 — +fifth', 'Tier 2 — +octave shimmer', 'Tier 3 — +sparkle'];
+
+  function buildLadder() {
+    ladderEl.innerHTML = '';
+    const scale = scaleFreqs(P.baseFreq, P.ladderCap);
+    for (let i = 0; i < P.ladderCap; i++) {
+      const r = document.createElement('div');
+      r.className = 'rung'; r.dataset.i = i;
+      r.textContent = noteName(scale[i]);
+      ladderEl.appendChild(r);
+    }
+  }
+  function renderStreak() {
+    const idx = Math.min(Math.max(streak - 1, 0), P.ladderCap - 1);
+    const scale = scaleFreqs(P.baseFreq, P.ladderCap);
+    const rungs = ladderEl.children;
+    for (let i = 0; i < rungs.length; i++) {
+      rungs[i].classList.toggle('on', streak > 0 && i <= idx);
+      rungs[i].classList.toggle('tip', streak > 0 && i === idx);
+    }
+    document.getElementById('streakN').textContent = streak;
+    const t = tierOf(streak);
+    document.getElementById('tierPill').textContent = TIER_LABEL[t];
+    if (streak > 0) {
+      document.getElementById('rdNote').textContent = noteName(scale[idx]);
+      document.getElementById('rdHz').textContent = Math.round(scale[idx]);
+    } else {
+      document.getElementById('rdNote').textContent = '—';
+      document.getElementById('rdHz').textContent = '—';
+    }
+  }
+
+  document.getElementById('btnCorrect').addEventListener('click', () => { streak++; playCorrect(streak); renderStreak(); });
+  document.getElementById('btnMiss').addEventListener('click', () => { playMiss(); streak = 0; renderStreak(); });
+
+  // ---------- Cue grid ----------
+  const CUES = [
+    { name: 'Card pickup', sw: 's-muted', desc: 'Whisper "lift" on drag start · pairs with light haptic', fn: playPickup },
+    { name: 'Correct settle', sw: 's-gold', desc: 'Warm mallet ding · pitch rises with the streak', fn: () => { streak++; playCorrect(streak); renderStreak(); } },
+    { name: 'Wrong · thud', sw: 's-red', desc: 'Soft heavy thunk with weight · resets the streak', fn: playMiss },
+    { name: 'Game over · strong', sw: 's-green', desc: '≥5 placed — warm resolving cadence to the tonic', fn: () => playGameOver('strong') },
+    { name: 'Game over · weak', sw: 's-teal', desc: '<5 placed — gentle low fall, never punishing', fn: () => playGameOver('weak') },
+    { name: 'Game over · legendary', sw: 's-gold', desc: '≥12 placed — fuller rising flourish', fn: () => playGameOver('legendary') },
+    { name: 'Personal best / #1', sw: 's-gold', desc: 'Brightest, rarest — arpeggio + shimmer + sparkle', fn: playPersonalBest },
+  ];
+  const SILENT = [
+    { name: 'Button taps', desc: 'Menu, mode-select — haptic only' },
+    { name: 'Cycle hand', desc: 'Frequent, low-stakes — stays quiet' },
+    { name: 'Countdown / start', desc: 'Preserve the calm entrance' },
+    { name: 'Popups / description', desc: 'Open, close, dismiss — silent' },
+  ];
+  const cuesEl = document.getElementById('cues');
+  CUES.forEach((c) => {
+    const b = document.createElement('button');
+    b.className = 'cue';
+    b.innerHTML = `<span class="name"><span class="swatch ${c.sw}"></span>${c.name}</span><span class="desc">${c.desc}</span>`;
+    b.addEventListener('click', c.fn);
+    cuesEl.appendChild(b);
+  });
+  SILENT.forEach((c) => {
+    const d = document.createElement('div');
+    d.className = 'cue silent';
+    d.innerHTML = `<span class="name">${c.name} · silent</span><span class="desc">${c.desc}</span>`;
+    cuesEl.appendChild(d);
+  });
+
+  // ---------- Tuning ----------
+  const TUNERS = [
+    { key: 'baseFreq', label: 'Root / key', sub: 'scale root', min: 130, max: 330, step: 1, unit: ' Hz' },
+    { key: 'attack', label: 'Attack', sub: 'strike sharpness', min: 1, max: 40, step: 1, unit: ' ms' },
+    { key: 'decay', label: 'Decay', sub: 'note length', min: 80, max: 600, step: 10, unit: ' ms' },
+    { key: 'masterGain', label: 'Master gain', sub: 'felt, not heard', min: 0.1, max: 1, step: 0.05, unit: '' },
+    { key: 'lowpass', label: 'Lowpass', sub: 'warmth', min: 900, max: 6000, step: 100, unit: ' Hz' },
+    { key: 'ladderCap', label: 'Ladder cap', sub: 'max climb', min: 5, max: 16, step: 1, unit: ' deg' },
+  ];
+  const tunersEl = document.getElementById('tuners');
+  function fmt(k, v) { return k === 'masterGain' ? v.toFixed(2) : String(v); }
+  TUNERS.forEach((t) => {
+    const row = document.createElement('div'); row.className = 'tune-row';
+    row.innerHTML = `<div class="tune-label">${t.label}<small>${t.sub}</small></div>`;
+    const inp = document.createElement('input');
+    inp.type = 'range'; inp.min = t.min; inp.max = t.max; inp.step = t.step; inp.value = P[t.key];
+    const val = document.createElement('div'); val.className = 'tune-val';
+    val.textContent = fmt(t.key, P[t.key]) + t.unit;
+    inp.addEventListener('input', () => {
+      P[t.key] = t.key === 'ladderCap' ? parseInt(inp.value, 10) : parseFloat(inp.value);
+      val.textContent = fmt(t.key, P[t.key]) + t.unit;
+      if (master) master.gain.setTargetAtTime(P.masterGain, ctx.currentTime, 0.02);
+      if (t.key === 'baseFreq' || t.key === 'ladderCap') { buildLadder(); renderStreak(); }
+      renderReadback();
+    });
+    row.appendChild(inp); row.appendChild(val); tunersEl.appendChild(row);
+    t._val = val; t._inp = inp;
+  });
+  function renderReadback() {
+    document.getElementById('readback').textContent =
+      'scale:  A major pentatonic  [0,2,4,7,9]\n' +
+      `root:   ${P.baseFreq} Hz  (${noteName(P.baseFreq)})\n` +
+      `attack: ${P.attack} ms      decay: ${P.decay} ms\n` +
+      `master: ${P.masterGain.toFixed(2)}      lowpass: ${P.lowpass} Hz\n` +
+      `ladder: climb ${P.ladderCap} degrees, reset on miss`;
+  }
+  document.getElementById('btnCopy').addEventListener('click', async (e) => {
+    try { await navigator.clipboard.writeText(document.getElementById('readback').textContent);
+      e.target.textContent = 'Copied ✓'; setTimeout(() => (e.target.textContent = 'Copy values'), 1400);
+    } catch { e.target.textContent = 'Select & copy above'; }
+  });
+  document.getElementById('btnReset').addEventListener('click', () => {
+    P = { ...DEFAULTS };
+    TUNERS.forEach((t) => { t._inp.value = P[t.key]; t._val.textContent = fmt(t.key, P[t.key]) + t.unit; });
+    if (master) master.gain.value = P.masterGain;
+    buildLadder(); renderStreak(); renderReadback();
+  });
+
+  // ---------- Boot ----------
+  document.getElementById('enable').addEventListener('click', unlock);
+  document.body.addEventListener('pointerdown', () => { if (!ctx) unlock(); }, { once: true });
+  buildLadder(); renderStreak(); renderReadback();
+})();
+</script>
