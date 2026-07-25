@@ -6,9 +6,29 @@ calm, elegant mood of the loading screen. Audio maps onto the **existing** feedb
 tiers (streak ≥2/≥4/≥6 in `src/utils/streakFeedback.ts`) and fires as **one coordinated
 cue alongside the current haptics**, never as a second competing system.
 
-Status: **design + auditionable prototype for sign-off.** No game code wired yet. The
-palette is approved by ear via the Web-Audio demo (see "Prototype" below) before
-`useSound`/`soundEngine` are built.
+Status: **palette APPROVED by ear (2026-07-25) — warm variant.** No game code wired yet;
+implementation (`useSound`/`soundEngine` + wiring) happens in a follow-up session, seeded
+with the locked values below.
+
+### Approved values (locked)
+
+```
+scale:  A major pentatonic  [0, 2, 4, 7, 9]
+root:   220 Hz  (A3)
+attack: 5 ms       decay: 250 ms
+master: 0.55       lowpass: 900 Hz     ← warm (default was ~2600)
+ladder: climb 11 degrees, reset on miss
+pickup: keep the whisper tick (not silenced)
+default: sound ON
+```
+
+**Warm-variant intent.** The 900 Hz lowpass is the character choice — it rolls off the
+octave partial and upper harmonics for a soft, mellow, "felt not heard" tone rather than a
+bright glassy one. Consequence (intended): the highest voices sit at or above the cutoff
+and therefore read *very* soft — the **pickup whisper** (~880 Hz) and the **tier-3 sparkle
+grace** (2 octaves up) are nearly subliminal, which suits the restraint goal. If, once in
+the app, the top-streak notes feel too dull, the single lever is the lowpass cutoff (raise
+toward ~1200–1500 Hz); everything else stays as locked.
 
 ---
 
@@ -43,8 +63,9 @@ Principles carried into this design:
 ## Palette (one instrument)
 
 - **Timbre:** soft struck-mallet / music-box voice — a **sine fundamental + one quiet
-  octave partial** (partial gain ≈ 0.3× fundamental) through a gentle **lowpass**
-  (~2–3 kHz) to shave any harshness. No saw/square anywhere. Warm, glassy, calm.
+  octave partial** (partial gain ≈ 0.3× fundamental) through a **lowpass at 900 Hz**
+  (approved warm setting) that rolls off the partial and upper harmonics for a mellow,
+  muffled tone. No saw/square anywhere. Warm and calm — deliberately not glassy.
 - **Scale / key:** **A major pentatonic** (A B C♯ E F♯). Pentatonic = every cue is
   consonant with every other, so hot streaks and rapid placements never clash.
 
