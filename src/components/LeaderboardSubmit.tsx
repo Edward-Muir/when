@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Trophy } from 'lucide-react';
 import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
 import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
+import { useSound } from '../hooks/useSound';
 import { getMedalEmoji } from '../utils/leaderboardUtils';
 import {
   DailyResult,
@@ -83,6 +84,8 @@ function LeaderboardPreview({
 const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSubmitted }) => {
   const [name, setName] = useState(() => getDisplayName() || generateRandomName());
   const [alreadySubmitted, setAlreadySubmitted] = useState(hasSubmittedToLeaderboard());
+  const { sounds } = useSound();
+  const playedRankOneRef = useRef(false);
 
   const {
     isSubmitting,
@@ -148,6 +151,15 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
       updateDailyResultWithLeaderboard(rank, totalPlayers);
     }
   }, [rank, totalPlayers]);
+
+  // Landing at #1 on a fresh submission earns the brightest, rarest cue — once.
+  // Gated on hasSubmitted (this-session submit), not a returning visitor's saved rank.
+  useEffect(() => {
+    if (hasSubmitted && rank === 1 && !playedRankOneRef.current) {
+      playedRankOneRef.current = true;
+      sounds.personalBest();
+    }
+  }, [hasSubmitted, rank, sounds]);
 
   const handleSubmit = async () => {
     // Save name for future use

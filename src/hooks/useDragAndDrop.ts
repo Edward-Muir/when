@@ -2,6 +2,7 @@ import { useState, useCallback, useRef } from 'react';
 import { DragStartEvent, DragEndEvent, DragOverEvent, DragMoveEvent } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult } from '../types';
 import { useHaptics } from './useHaptics';
+import { SoundControls } from './useSound';
 
 type HapticsType = ReturnType<typeof useHaptics>['haptics'];
 
@@ -10,6 +11,7 @@ interface UseDragAndDropProps {
   onPlacement: (index: number) => PlacementResult | null;
   isAnimating: boolean;
   haptics?: HapticsType;
+  sounds?: SoundControls;
 }
 
 interface DragState {
@@ -39,6 +41,7 @@ export function useDragAndDrop({
   onPlacement,
   isAnimating,
   haptics,
+  sounds,
 }: UseDragAndDropProps): UseDragAndDropReturn {
   const [isDragging, setIsDragging] = useState(false);
   const [insertionIndex, setInsertionIndex] = useState<number | null>(null);
@@ -67,6 +70,11 @@ export function useDragAndDrop({
       prevInsertionIndexRef.current = null;
       draggedCardRef.current = activeCard;
 
+      // Coordinated pickup cue: unlock the AudioContext on this gesture, then a
+      // whisper "lift" tick alongside the confirming haptic.
+      sounds?.unlock();
+      sounds?.pickup();
+
       // Haptic feedback: light tap to confirm card is grabbed
       haptics?.select();
 
@@ -77,7 +85,7 @@ export function useDragAndDrop({
       });
       setYearPositions(positions);
     },
-    [activeCard, haptics]
+    [activeCard, haptics, sounds]
   );
 
   const handleDragMove = useCallback(

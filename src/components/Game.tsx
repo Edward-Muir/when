@@ -16,6 +16,7 @@ import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData, GameMod
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
+import { useSound } from '../hooks/useSound';
 import { useLeaderboard } from '../hooks/useLeaderboard';
 import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
@@ -116,6 +117,11 @@ interface GameProps {
   allEvents: HistoricalEvent[];
 }
 
+// Game is the central orchestrator; the soundscape cues are wired inline so they
+// fire as one coordinated cue alongside the existing haptics/confetti/shake (see
+// docs/gameplay-feel/soundscape-design.md), which nudges this already-large render
+// just past the line cap. A full decomposition is out of scope for this change.
+// eslint-disable-next-line max-lines-per-function
 const Game: React.FC<GameProps> = ({
   state,
   onPlacement,
@@ -172,6 +178,7 @@ const Game: React.FC<GameProps> = ({
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
   const { haptics, vibrate } = useHaptics();
+  const { sounds } = useSound();
 
   // Prefetch leaderboard for daily mode
   const { fetchLeaderboard } = useLeaderboard();
@@ -216,6 +223,7 @@ const Game: React.FC<GameProps> = ({
     onPlacement,
     isAnimating: state.isAnimating,
     haptics,
+    sounds,
   });
 
   useEffect(() => {
@@ -234,21 +242,28 @@ const Game: React.FC<GameProps> = ({
         setTimeout(() => setShowConfetti(false), 2000);
         // Use streak-based haptic pattern
         vibrate(streakFeedbackRef.current.hapticPattern);
+        // Warm mallet ding that climbs the pentatonic ladder with the streak.
+        sounds.correct(state.currentStreak);
       } else {
         triggerShake('medium');
         haptics.error();
+        // Soft heavy thud alongside the shake; resets the ladder to root.
+        sounds.miss();
       }
       setNewEventName(state.lastPlacementResult.event.name);
       setTimeout(() => setNewEventName(undefined), 1000);
     }
     prevPlacementRef.current = state.lastPlacementResult;
-  }, [state.lastPlacementResult, state.currentStreak, haptics, vibrate, triggerShake]);
+  }, [state.lastPlacementResult, state.currentStreak, haptics, vibrate, triggerShake, sounds]);
 
   // Show game over popup when game ends
   useEffect(() => {
     if (state.phase === 'gameOver' && !gameOverPopupShown) {
       setGameOverPopupShown(true);
       showGameOverPopup();
+      // Resolving cadence whose shape (weak / strong / legendary) matches the
+      // on-screen title thresholds. Fires once, guarded by gameOverPopupShown.
+      sounds.gameOver(state.placementHistory.filter(Boolean).length);
     }
     // Reset when starting a new game
     if (state.phase === 'playing') {
@@ -257,7 +272,7 @@ const Game: React.FC<GameProps> = ({
       setShowMilestones(false);
       unlockConsumedRef.current = false;
     }
-  }, [state.phase, gameOverPopupShown, showGameOverPopup]);
+  }, [state.phase, gameOverPopupShown, showGameOverPopup, state.placementHistory, sounds]);
 
   // Reveal the achievement-unlock modal once the game-over popup is dismissed (popup → null),
   // if this game crossed any threshold. Gating on the dismissal means daily mode naturally waits
@@ -268,10 +283,13 @@ const Game: React.FC<GameProps> = ({
     if (wasGameOverPopup && !pendingPopup && !unlockConsumedRef.current) {
       unlockConsumedRef.current = true;
       // Reveal personal-best milestones first; achievements follow when milestones are dismissed.
-      if (gameMilestones.length > 0) setShowMilestones(true);
-      else if (unlockedDefs.length > 0) setShowUnlock(true);
+      if (gameMilestones.length > 0) {
+        setShowMilestones(true);
+        // Brightest, rarest cue — reserved for beating a personal best.
+        sounds.personalBest();
+      } else if (unlockedDefs.length > 0) setShowUnlock(true);
     }
-  }, [pendingPopup, unlockedDefs.length, gameMilestones.length]);
+  }, [pendingPopup, unlockedDefs.length, gameMilestones.length, sounds]);
 
   // Show first-time rules popup when starting a new game mode for the first time
   useEffect(() => {
