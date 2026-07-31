@@ -1350,21 +1350,6 @@
     "text_color": "light"
   },
   {
-    "name": "great-depression-begins",
-    "friendly_name": "Great Depression Begins",
-    "year": 1929,
-    "category": "revolution",
-    "description": "The worst economic downturn in modern history began after the market crash.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-depression-begins_v59dbo?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 231135,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Depression_in_the_United_States",
-    "color": "#281f19",
-    "text_color": "light"
-  },
-  {
     "name": "china-great-floods",
     "friendly_name": "Great China Floods",
     "year": 1931,
@@ -1512,36 +1497,6 @@
     "wikipedia_views": 67251,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_famine_of_1944–1945",
     "color": "#24211c",
-    "text_color": "light"
-  },
-  {
-    "name": "hiroshima-bombing",
-    "friendly_name": "Atomic Bombing of Hiroshima",
-    "year": 1945,
-    "category": "revolution",
-    "description": "The first atomic bomb used in warfare killed over 100,000 people instantly.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hiroshima-bombing_futg1z?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 3722048,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
-    "color": "#532f1a",
-    "text_color": "light"
-  },
-  {
-    "name": "nagasaki-bombing",
-    "friendly_name": "Atomic Bombing of Nagasaki",
-    "year": 1945,
-    "category": "revolution",
-    "description": "A second atomic bomb was dropped on Japan three days after Hiroshima.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nagasaki-bombing_zi3i1x?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 3722048,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
-    "color": "#392b1c",
     "text_color": "light"
   },
   {
@@ -2038,21 +1993,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1983–1985_famine_in_Ethiopia",
     "color": "#8296a3",
     "text_color": "dark"
-  },
-  {
-    "name": "bhopal-disaster",
-    "friendly_name": "Bhopal Disaster",
-    "year": 1984,
-    "category": "disasters",
-    "description": "A gas leak at a pesticide plant killed thousands in India.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bhopal-disaster_iozogk?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1296386,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bhopal_disaster",
-    "color": "#192734",
-    "text_color": "light"
   },
   {
     "name": "bhopal-gas-disaster",
@@ -3045,21 +2985,6 @@
     "text_color": "light"
   },
   {
-    "name": "extinction-neanderthals",
-    "friendly_name": "Extinction of Neanderthals",
-    "year": -30000,
-    "category": "nature",
-    "description": "Neanderthals disappeared from Europe after coexisting with modern humans for thousands of years, likely due to competition and climate change.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/extinction-neanderthals_buaiss?_a=BAMAMikS0",
-    "wikipedia_views": 133398,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#24201e",
-    "text_color": "light"
-  },
-  {
     "name": "younger-dryas-climate-event",
     "friendly_name": "Younger Dryas Climate Event",
     "year": -12000,
@@ -3117,21 +3042,6 @@
     "wikipedia_views": 938180,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Space_Shuttle_Columbia_disaster",
     "color": "#14406d",
-    "text_color": "light"
-  },
-  {
-    "name": "lehman-brothers-collapse",
-    "friendly_name": "Lehman Brothers Collapse",
-    "year": 2008,
-    "category": "disasters",
-    "description": "The bankruptcy of Lehman Brothers became the largest in U.S. history, triggering the global financial crisis and worldwide recession.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lehman-brothers-collapse_e2enbw?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 248774,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
-    "color": "#0f213a",
     "text_color": "light"
   },
   {

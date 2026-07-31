@@ -5,7 +5,8 @@ in `public/dedup/clusters.json` now have a decision: **458 resolved** (a keeper 
 the rest of the cluster marked for deletion) and **34 passed** ("not a duplicate", nothing
 deleted). The page reports `0 pending`.
 
-Result: **530 event ids marked for deletion**, 533 kept across the clusters.
+Result: **530 event ids marked for deletion**, 533 kept across the clusters. The list has
+since been applied — see "Applying the list" below.
 
 ## What was already done vs. what this session added
 
@@ -76,12 +77,52 @@ Also cosmetic, not acted on: a few kept ids still embed their year
 (`cuban-missile-crisis-1962`, `first-world-cup-1930`, `vietnam-war-escalates-1964` was dropped
 for this reason where an alternative existed).
 
-## Nothing has been deleted
+## Applying the list
 
-Per the tool's own contract, this is a **record of decisions only** — no event JSON was
-touched. Applying the list is a separate, deliberate step. Three ids in the export no longer
-exist in `public/events/` at all (already removed at some point):
-`nika-riots-constantinople-532-ce`, `first-modern-olympics-athens-1896`, `nascar-founded-1948`.
+The review itself only records decisions. The list was then applied with
+`node scripts/apply-dedup-deletions.js` (`--dry-run` supported), which follows the same
+convention as the event-editor's `deprecateEvent()`: each removed event is appended to
+`public/events/deprecated.json` with `_originalCategory` and `_deprecatedAt`, so nothing is
+hard-deleted and the removal is reversible.
 
-If the list is applied as-is, `public/events/` goes from **5,622 → 5,095** events
-(527 of the 530 ids are present to delete).
+- Events served via `manifest.json`: **5,618 → 5,091** (527 removed).
+- `deprecated.json`: 6 → 533 entries.
+- Three ids in the export were not in any category file (already removed at some point):
+  `nika-riots-constantinople-532-ce`, `first-modern-olympics-athens-1896`,
+  `nascar-founded-1948`. That is why 530 decisions produce 527 removals.
+
+No id turned out to live in more than one category file (527 records for 527 ids).
+
+### Achievement links that had to be repointed
+
+`src/data/achievements.ts` resolves each badge's card art from a stable event `name`, and
+eight badges pointed at events on the delete-list — five of them from the earlier review
+pass, so this breakage predates the clusters reviewed in this session. Each was repointed to
+the keeper from its own cluster:
+
+| Badge                    | was                           | now                             |
+| ------------------------ | ----------------------------- | ------------------------------- |
+| `04` Centurion           | `colosseum-completed`         | `colosseum-rome`                |
+| `cat-science` Empiricist | `periodic-table`              | `mendeleev-periodic-table`      |
+| `19` On a Roll           | `blitzkrieg-tactics-deployed` | `wwii-start`                    |
+| `22` Juggernaut          | `napoleon-emperor`            | `napoleon-coronation`           |
+| `coll-500` Archivist     | `library-alexandria`          | `first-public-library`          |
+| `era-bce` Antiquarian    | `code-hammurabi`              | `code-hammurabi-interest-rules` |
+| `05` Bricklayer          | `great-wall-begins`           | `fired-bricks`                  |
+| `cat-sports` Champion    | `first-ancient-olympics`      | `first-world-cup-1930`          |
+
+The last two needed a judgement call rather than the cluster keeper. `great-wall-begins`'
+keeper is `great-wall-china`, which badge 17 "Across the Ages" already used, so Bricklayer
+took `fired-bricks` instead (on-theme, and keeps every badge's art unique).
+`first-ancient-olympics`' keeper `first-olympics` sits in `cultural.json` with category
+`media` and was already used by badge 02, so the Sports collection badge took
+`first-world-cup-1930` — a real `sports`-category event, which is what that badge's art
+should be.
+
+All 60 `eventName` references now resolve to a surviving event, with no duplicates.
+
+### Verification
+
+`npm run typecheck` clean, `npm run lint` clean (one pre-existing `max-lines` warning in
+`statsStorage.test.ts`), `npm test` 132/132 passing. Smoke-tested in the browser: home,
+`/achievements` (60 badges render), and `/daily` all boot against the reduced dataset.

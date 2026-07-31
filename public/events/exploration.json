@@ -105,36 +105,6 @@
     "text_color": "light"
   },
   {
-    "name": "migration-out-africa",
-    "friendly_name": "Human Migration Out of Africa",
-    "year": -70000,
-    "category": "migration",
-    "description": "Modern humans began migrating out of Africa to populate the world.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/migration-out-africa_pec6sz?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 226356,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Recent_African_origin_of_modern_humans",
-    "color": "#291e18",
-    "text_color": "light"
-  },
-  {
-    "name": "domestication-dogs",
-    "friendly_name": "Domestication of Dogs",
-    "year": -15000,
-    "category": "agriculture",
-    "description": "Wolves were domesticated into dogs, becoming humanity's first animal companions.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-dogs_atrg77?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 255101,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_dog",
-    "color": "#271f1b",
-    "text_color": "light"
-  },
-  {
     "name": "pottery-invented",
     "friendly_name": "Pottery Invented",
     "year": -14000,
@@ -163,21 +133,6 @@
     "text_color": "light"
   },
   {
-    "name": "agriculture",
-    "friendly_name": "Agricultural Revolution",
-    "year": -10000,
-    "category": "agriculture",
-    "description": "Humans began farming, transforming civilization.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/agriculture_uzoueb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 327979,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
-    "color": "#3f2415",
-    "text_color": "light"
-  },
-  {
     "name": "bow-and-arrow-invented",
     "friendly_name": "Bow and Arrow Invented",
     "year": -10000,
@@ -188,21 +143,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#25201c",
-    "text_color": "light"
-  },
-  {
-    "name": "domestication-wheat",
-    "friendly_name": "Domestication of Wheat",
-    "year": -9500,
-    "category": "agriculture",
-    "description": "Wild wheat was domesticated in the Fertile Crescent, enabling agriculture.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-wheat_xdotsu?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 483068,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wheat",
-    "color": "#54321c",
     "text_color": "light"
   },
   {
@@ -233,21 +173,6 @@
     "wikipedia_views": 621411,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Goat",
     "color": "#291e18",
-    "text_color": "light"
-  },
-  {
-    "name": "copper-smelting-begins",
-    "friendly_name": "Copper Smelting Begins",
-    "year": -7000,
-    "category": "agriculture",
-    "description": "Humans first extracted copper from ore, beginning the age of metallurgy.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copper-smelting-begins_ozkopj?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 46369,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Copper_extraction",
-    "color": "#281f1a",
     "text_color": "light"
   },
   {
@@ -354,19 +279,6 @@
     "text_color": "light"
   },
   {
-    "name": "silk-production-invented",
-    "friendly_name": "Silk Production Invented",
-    "year": -3500,
-    "category": "agriculture",
-    "description": "Ancient Chinese began cultivating silkworms and weaving silk fabric, a closely guarded secret that fueled trade for millennia.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-production-invented_wh9ku5?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#281f1c",
-    "text_color": "light"
-  },
-  {
     "name": "bronze-discovered",
     "friendly_name": "Bronze Metallurgy Developed",
     "year": -3300,
@@ -379,21 +291,6 @@
     "wikipedia_views": 828417,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age",
     "color": "#25201b",
-    "text_color": "light"
-  },
-  {
-    "name": "writing-invention",
-    "friendly_name": "Invention of Writing",
-    "year": -3200,
-    "category": "writing",
-    "description": "Sumerians developed cuneiform, the first writing system.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/writing-invention_qhbp32?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 237394,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing",
-    "color": "#25201c",
     "text_color": "light"
   },
   {
@@ -759,21 +656,6 @@
     "text_color": "light"
   },
   {
-    "name": "eratosthenes-earth",
-    "friendly_name": "Earth's Circumference Calculated",
-    "year": -240,
-    "category": "science",
-    "description": "Eratosthenes accurately calculated the circumference of the Earth using shadows.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/eratosthenes-earth_qpsx47?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 171259,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Earth's_circumference",
-    "color": "#291c28",
-    "text_color": "light"
-  },
-  {
     "name": "compound-pulley-archimedes",
     "friendly_name": "Archimedes' Compound Pulley",
     "year": -240,
@@ -987,21 +869,6 @@
     "text_color": "light"
   },
   {
-    "name": "al-khwarizmi-algebra",
-    "friendly_name": "Al-Khwarizmi Develops Algebra",
-    "year": 820,
-    "category": "writing",
-    "description": "The Persian mathematician wrote the foundational treatise on algebra.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-khwarizmi-algebra_fdayew?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 383339,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Khwarizmi",
-    "color": "#251f24",
-    "text_color": "light"
-  },
-  {
     "name": "gunpowder-invented",
     "friendly_name": "Gunpowder Invented",
     "year": 850,
@@ -1146,49 +1013,6 @@
     "text_color": "light"
   },
   {
-    "name": "windmill-invented",
-    "friendly_name": "Windmill Invented",
-    "year": 1185,
-    "category": "invention",
-    "description": "Post windmills were built in Europe to harness wind power for grinding grain.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmill-invented_vcyxtn?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#1e2223",
-    "text_color": "light"
-  },
-  {
-    "name": "fibonacci-arabic-numerals",
-    "friendly_name": "Fibonacci's Arabic Numerals",
-    "year": 1202,
-    "category": "writing",
-    "description": "Leonardo Fibonacci introduced Arabic numerals to Europe in his book Liber Abaci.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fibonacci-arabic-numerals_ssrfhm?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 288956,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Fibonacci",
-    "color": "#212120",
-    "text_color": "light"
-  },
-  {
-    "name": "roger-bacon-scientific-method",
-    "friendly_name": "Bacon Promotes Empiricism",
-    "year": 1267,
-    "category": "science",
-    "description": "The English philosopher advocated for empirical observation in science.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roger-bacon-scientific-method_yt1bnn?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 638006,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Scientific_method",
-    "color": "#24201d",
-    "text_color": "light"
-  },
-  {
     "name": "eyeglasses-invented",
     "friendly_name": "Eyeglasses Invented",
     "year": 1286,
@@ -1232,36 +1056,6 @@
     "text_color": "light"
   },
   {
-    "name": "tenochtitlan",
-    "friendly_name": "Tenochtitlan Founded",
-    "year": 1325,
-    "category": "architecture",
-    "description": "The Aztec capital was founded on an island in Lake Texcoco.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tenochtitlan_mnu9fu?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 584360,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tenochtitlan",
-    "color": "#4d4e40",
-    "text_color": "light"
-  },
-  {
-    "name": "zheng-he-voyages",
-    "friendly_name": "Zheng He's First Voyage",
-    "year": 1405,
-    "category": "migration",
-    "description": "The Chinese admiral began massive naval expeditions across the Indian Ocean.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zheng-he-voyages_gemkgc?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 82996,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ming_treasure_voyages",
-    "color": "#766d62",
-    "text_color": "light"
-  },
-  {
     "name": "chinese-discover-america-theory",
     "friendly_name": "Chinese Reach Americas (Disputed)",
     "year": 1421,
@@ -1274,21 +1068,6 @@
     "wikipedia_views": 969153,
     "wikipedia_url": "https://en.wikipedia.org/wiki/China–United_States_trade_war",
     "color": "#261f1e",
-    "text_color": "light"
-  },
-  {
-    "name": "gutenberg-printing",
-    "friendly_name": "Gutenberg Printing Press",
-    "year": 1440,
-    "category": "invention",
-    "description": "Johannes Gutenberg invented movable type printing, revolutionizing knowledge sharing.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gutenberg-printing_lkudue?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 432507,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Printing_press",
-    "color": "#261f1f",
     "text_color": "light"
   },
   {
@@ -1487,21 +1266,6 @@
     "text_color": "light"
   },
   {
-    "name": "copernicus-heliocentric",
-    "friendly_name": "Copernicus Proposes Heliocentrism",
-    "year": 1543,
-    "category": "science",
-    "description": "Nicolaus Copernicus published his theory that Earth orbits the Sun.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copernicus-heliocentric_hzckut?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 252248,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Heliocentrism",
-    "color": "#202125",
-    "text_color": "light"
-  },
-  {
     "name": "vesalius-anatomy",
     "friendly_name": "Vesalius Publishes Anatomy",
     "year": 1543,
@@ -1529,21 +1293,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#584636",
-    "text_color": "light"
-  },
-  {
-    "name": "tycho-brahe-observatory",
-    "friendly_name": "Tycho Brahe's Observatory",
-    "year": 1576,
-    "category": "science",
-    "description": "The Danish astronomer built Uraniborg, the most advanced observatory of his time.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tycho-brahe-observatory_yrs1eo?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 308640,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Tycho_Brahe",
-    "color": "#443426",
     "text_color": "light"
   },
   {
@@ -1620,36 +1369,6 @@
     "text_color": "light"
   },
   {
-    "name": "jamestown",
-    "friendly_name": "Jamestown Colony Founded",
-    "year": 1607,
-    "category": "migration",
-    "description": "English settlers established the first permanent settlement in North America.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jamestown_rrbow7?_a=BAMAMikS0",
-    "wikipedia_views": 515430,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jamestown,_Virginia",
-    "color": "#423329",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "telescope-invented",
-    "friendly_name": "Telescope Invented",
-    "year": 1608,
-    "category": "invention",
-    "description": "Hans Lippershey invented the first practical telescope in the Netherlands.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telescope-invented_gwefwy?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 75550,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_the_telescope",
-    "color": "#24201f",
-    "text_color": "light"
-  },
-  {
     "name": "hudson-river",
     "friendly_name": "Hudson Explores Hudson River",
     "year": 1609,
@@ -1662,36 +1381,6 @@
     "wikipedia_views": 447463,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hudson_River",
     "color": "#2f1b19",
-    "text_color": "light"
-  },
-  {
-    "name": "galileo-telescope",
-    "friendly_name": "Galileo Uses Telescope",
-    "year": 1609,
-    "category": "science",
-    "description": "Galileo made groundbreaking astronomical observations with his telescope.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galileo-telescope_kxdskx?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1314302,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
-    "color": "#162232",
-    "text_color": "light"
-  },
-  {
-    "name": "kepler-laws",
-    "friendly_name": "Kepler's Laws of Planetary Motion",
-    "year": 1609,
-    "category": "science",
-    "description": "Johannes Kepler discovered that planets move in elliptical orbits.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kepler-laws_cm3i2w?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 323490,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kepler's_laws_of_planetary_motion",
-    "color": "#2a1e1a",
     "text_color": "light"
   },
   {
@@ -1722,21 +1411,6 @@
     "wikipedia_views": 688859,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mayflower",
     "color": "#414142",
-    "text_color": "light"
-  },
-  {
-    "name": "harvey-circulation",
-    "friendly_name": "Harvey Describes Blood Circulation",
-    "year": 1628,
-    "category": "science",
-    "description": "William Harvey published his discovery of how blood circulates through the body.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/harvey-circulation_euxnln?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 97738,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Harvey",
-    "color": "#2e1b1a",
     "text_color": "light"
   },
   {
@@ -1885,21 +1559,6 @@
     "wikipedia_views": 217644,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Philosophiæ_Naturalis_Principia_Mathematica",
     "color": "#291f1a",
-    "text_color": "light"
-  },
-  {
-    "name": "first-paper-money-americas",
-    "friendly_name": "First Paper Money in Americas",
-    "year": 1690,
-    "category": "writing",
-    "description": "The colony of Massachusetts issued the first paper money in the Americas.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-paper-money-americas_i1aseb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 59110,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Paper_money",
-    "color": "#2a1e1b",
     "text_color": "light"
   },
   {
@@ -2230,21 +1889,6 @@
     "text_color": "light"
   },
   {
-    "name": "uranus-discovered",
-    "friendly_name": "Uranus Discovered",
-    "year": 1781,
-    "category": "science",
-    "description": "William Herschel discovered the seventh planet in our solar system.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/uranus-discovered_g8fqpi?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 915636,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Uranus",
-    "color": "#212124",
-    "text_color": "light"
-  },
-  {
     "name": "hot-air-balloon",
     "friendly_name": "Hot Air Balloon Flight",
     "year": 1783,
@@ -2365,21 +2009,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#291d22",
-    "text_color": "light"
-  },
-  {
-    "name": "vaccination-invented",
-    "friendly_name": "Smallpox Vaccine Developed",
-    "year": 1796,
-    "category": "medicine",
-    "description": "Edward Jenner developed the first successful vaccine using cowpox.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vaccination-invented_njt1ih?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 203225,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Smallpox_vaccine",
-    "color": "#463a29",
     "text_color": "light"
   },
   {
@@ -2512,19 +2141,6 @@
     "text_color": "light"
   },
   {
-    "name": "canning-invented",
-    "friendly_name": "Canning Invented",
-    "year": 1810,
-    "category": "invention",
-    "description": "Peter Durand patented the tin can for food preservation, building on Nicolas Appert's glass jar method.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/canning-invented_ozigqs?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#232023",
-    "text_color": "light"
-  },
-  {
     "name": "metronome-patented",
     "friendly_name": "Metronome Patented",
     "year": 1815,
@@ -2606,21 +2222,6 @@
     "wikipedia_views": 551022,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Venus_de_Milo",
     "color": "#222120",
-    "text_color": "light"
-  },
-  {
-    "name": "faraday-electric-motor",
-    "friendly_name": "Faraday's Electric Motor",
-    "year": 1821,
-    "category": "invention",
-    "description": "Michael Faraday built the first device to convert electricity to motion.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/faraday-electric-motor_n9vfzd?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 29116,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Homopolar_motor",
-    "color": "#212120",
     "text_color": "light"
   },
   {
@@ -2881,21 +2482,6 @@
     "text_color": "light"
   },
   {
-    "name": "penny-post-introduced",
-    "friendly_name": "Penny Post Introduced",
-    "year": 1840,
-    "category": "media",
-    "description": "Britain introduced the Penny Post system with the first adhesive postage stamp, democratizing mail delivery.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penny-post-introduced_vdv8iy?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 8194,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Penny_Post",
-    "color": "#1f2223",
-    "text_color": "light"
-  },
-  {
     "name": "postage-stamp",
     "friendly_name": "First Postage Stamp Issued",
     "year": 1840,
@@ -2919,21 +2505,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#212122",
-    "text_color": "light"
-  },
-  {
-    "name": "anaesthesia-discovered",
-    "friendly_name": "Anaesthesia Discovered",
-    "year": 1842,
-    "category": "medicine",
-    "description": "Crawford Long used ether to perform painless surgery, revolutionizing medicine.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anaesthesia-discovered_u9aykm?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 95510,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_general_anesthesia",
-    "color": "#202123",
     "text_color": "light"
   },
   {
@@ -3232,19 +2803,6 @@
     "text_color": "light"
   },
   {
-    "name": "pasteurization-invented",
-    "friendly_name": "Pasteurization Developed",
-    "year": 1864,
-    "category": "medicine",
-    "description": "Louis Pasteur developed pasteurization, using heat to kill harmful bacteria in food and beverages.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pasteurization-invented_jfgtla?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#212121",
-    "text_color": "light"
-  },
-  {
     "name": "maxwell-equations",
     "friendly_name": "Maxwell's Equations",
     "year": 1865,
@@ -3313,21 +2871,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#222120",
-    "text_color": "light"
-  },
-  {
-    "name": "periodic-table",
-    "friendly_name": "Periodic Table Created",
-    "year": 1869,
-    "category": "science",
-    "description": "Dmitri Mendeleev organized elements into the periodic table.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/periodic-table_akyeeh?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 4129539,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Periodic_table",
-    "color": "#222023",
     "text_color": "light"
   },
   {
@@ -3440,21 +2983,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#31322f",
-    "text_color": "light"
-  },
-  {
-    "name": "koch-tuberculosis",
-    "friendly_name": "Koch Identifies TB Bacteria",
-    "year": 1882,
-    "category": "medicine",
-    "description": "Robert Koch identified the bacterium that causes tuberculosis.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/koch-tuberculosis_zujfgm?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 201723,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mycobacterium_tuberculosis",
-    "color": "#202122",
     "text_color": "light"
   },
   {
@@ -3700,19 +3228,6 @@
     "text_color": "light"
   },
   {
-    "name": "lumiere-cinematograph",
-    "friendly_name": "Lumière Cinematograph",
-    "year": 1895,
-    "category": "media",
-    "description": "The Lumière brothers held the first public film screening in Paris, marking the birth of cinema.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lumiere-cinematograph_qnjucb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#212123",
-    "text_color": "light"
-  },
-  {
     "name": "player-piano",
     "friendly_name": "Player Piano Invented",
     "year": 1895,
@@ -3877,21 +3392,6 @@
     "image_height": 440,
     "color": "#3c291b",
     "text_color": "light"
-  },
-  {
-    "name": "powered-flight",
-    "friendly_name": "First Powered Flight",
-    "year": 1903,
-    "category": "media",
-    "description": "The Wright brothers achieved the first controlled, powered airplane flight.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/powered-flight_fycwuw?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1112471,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wright_brothers",
-    "color": "#948c7f",
-    "text_color": "dark"
   },
   {
     "name": "electrocardiogram-invented",
@@ -5050,21 +4550,6 @@
     "text_color": "light"
   },
   {
-    "name": "bathyscaphe-trieste",
-    "friendly_name": "Trieste Reaches Ocean Floor",
-    "year": 1960,
-    "category": "media",
-    "description": "The bathyscaphe Trieste descended to the bottom of the Mariana Trench.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bathyscaphe-trieste_lcjc6h?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 109123,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)",
-    "color": "#19222a",
-    "text_color": "light"
-  },
-  {
     "name": "oral-contraceptive-pill",
     "friendly_name": "Birth Control Pill Approved",
     "year": 1960,
@@ -5375,19 +4860,6 @@
     "text_color": "light"
   },
   {
-    "name": "email-invented",
-    "friendly_name": "Email Invented",
-    "year": 1971,
-    "category": "invention",
-    "description": "Ray Tomlinson sent the first network email using the @ symbol to route messages between computers.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/email-invented_cwptiq?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#292e36",
-    "text_color": "light"
-  },
-  {
     "name": "first-arcade-video-game",
     "friendly_name": "First Arcade Video Game",
     "year": 1971,
@@ -5539,21 +5011,6 @@
     "text_color": "light"
   },
   {
-    "name": "first-dna-sequencing",
-    "friendly_name": "First Human DNA Sequencing",
-    "year": 1977,
-    "category": "medicine",
-    "description": "Frederick Sanger developed a method to sequence DNA, revolutionizing genetics.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dna-sequencing_rc77no?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 97193,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/DNA_sequencing",
-    "color": "#1d212c",
-    "text_color": "light"
-  },
-  {
     "name": "atari-2600",
     "friendly_name": "Atari 2600 Home Console Released",
     "year": 1977,
@@ -5592,19 +5049,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#526a7b",
-    "text_color": "light"
-  },
-  {
-    "name": "ivf-first-baby",
-    "friendly_name": "First IVF Baby Born",
-    "year": 1978,
-    "category": "medicine",
-    "description": "Louise Brown was born in England as the world's first baby conceived through in vitro fertilization.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ivf-first-baby_fm9i9r?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#202126",
     "text_color": "light"
   },
   {
@@ -5661,19 +5105,6 @@
     "image_width": 330,
     "image_height": 440,
     "color": "#291d21",
-    "text_color": "light"
-  },
-  {
-    "name": "artificial-heart-implanted",
-    "friendly_name": "First Artificial Heart Implanted",
-    "year": 1982,
-    "category": "medicine",
-    "description": "The Jarvik-7 became the first artificial heart successfully implanted in a human patient.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/artificial-heart-implanted_uwiqdp?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#1c212b",
     "text_color": "light"
   },
   {
@@ -5980,19 +5411,6 @@
     "wikipedia_views": 436339,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Eris_(dwarf_planet)",
     "color": "#1c212d",
-    "text_color": "light"
-  },
-  {
-    "name": "youtube-launched",
-    "friendly_name": "YouTube Launched",
-    "year": 2005,
-    "category": "media",
-    "description": "YouTube launched as the first major video-sharing platform, transforming online media consumption.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/youtube-launched_pbosuu?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#1e212b",
     "text_color": "light"
   },
   {
@@ -6978,19 +6396,6 @@
     "image_height": 440
   },
   {
-    "name": "domestication-of-potatoes",
-    "friendly_name": "Domestication of Potatoes",
-    "year": -8000,
-    "category": "agriculture",
-    "description": "Potatoes first cultivated in the Andes of South America, eventually becoming a global staple crop.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-of-potatoes_lo4gp2?_a=BAMAMikS0",
-    "color": "#552d20",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "alcohol-fermentation-mead",
     "friendly_name": "Alcohol Fermentation (Mead)",
     "year": -7000,
@@ -7043,19 +6448,6 @@
     "image_height": 440
   },
   {
-    "name": "irrigation",
-    "friendly_name": "Irrigation",
-    "year": -6000,
-    "category": "agriculture",
-    "description": "Channels and ditches dug to direct water to crops, enabling farming in arid regions.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irrigation_hjx1lf?_a=BAMAMikS0",
-    "color": "#2a1e17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "proto-writing",
     "friendly_name": "Proto-Writing",
     "year": -6000,
@@ -7064,19 +6456,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-writing_bdccl4?_a=BAMAMikS0",
     "color": "#291e1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "salt-production",
-    "friendly_name": "Salt Production",
-    "year": -5900,
-    "category": "craft",
-    "description": "Salt extracted from springs and seawater through evaporation for food preservation and seasoning.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/salt-production_duvxx6?_a=BAMAMikS0",
-    "color": "#291f19",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7272,19 +6651,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/city-of-uruk_ke3wjx?_a=BAMAMikS0",
     "color": "#281f17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "hat-earliest-documented",
-    "friendly_name": "Hat (Earliest Documented)",
-    "year": -3250,
-    "category": "craft",
-    "description": "Otzi the Iceman's bearskin cap, the oldest known hat, preserved in Alpine ice for millennia.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hat-earliest-documented_a7iuht?_a=BAMAMikS0",
-    "color": "#26201b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7584,19 +6950,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/proto-alphabet_wekwte?_a=BAMAMikS0",
     "color": "#271e25",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "surgical-treatise",
-    "friendly_name": "Surgical Treatise",
-    "year": -1600,
-    "category": "medicine",
-    "description": "The Edwin Smith Papyrus documented 48 surgical cases, the oldest known surgical text.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/surgical-treatise_s76duw?_a=BAMAMikS0",
-    "color": "#281e1c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8408,19 +7761,6 @@
     "image_height": 440
   },
   {
-    "name": "playing-cards",
-    "friendly_name": "Playing Cards",
-    "year": 900,
-    "category": "craft",
-    "description": "Card games originating in Tang Dynasty China, later spreading to the Islamic world and Europe.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/playing-cards_ckyfoj?_a=BAMAMikS0",
-    "color": "#24201f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "fire-lance",
     "friendly_name": "Fire Lance (First Firearm)",
     "year": 1000,
@@ -8759,32 +8099,6 @@
     "image_height": 440
   },
   {
-    "name": "stocking-frame",
-    "friendly_name": "Stocking Frame",
-    "year": 1589,
-    "category": "craft",
-    "description": "William Lee's mechanical knitting machine for manufacturing stockings, an early textile innovation.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stocking-frame_bz7i86?_a=BAMAMikS0",
-    "color": "#25201c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "newspaper-relation",
-    "friendly_name": "Newspaper (Relation)",
-    "year": 1605,
-    "category": "media",
-    "description": "The Relation, published in Strasbourg, was the first regularly printed newspaper in history.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newspaper-relation_w8voo2?_a=BAMAMikS0",
-    "color": "#2a1e19",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "slide-rule",
     "friendly_name": "Slide Rule",
     "year": 1630,
@@ -8980,19 +8294,6 @@
     "image_height": 440
   },
   {
-    "name": "semaphore-telegraph",
-    "friendly_name": "Semaphore Telegraph",
-    "year": 1792,
-    "category": "media",
-    "description": "Claude Chappe's visual signaling network using towers and moving arms for rapid long-distance messaging.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/semaphore-telegraph_zsfibs?_a=BAMAMikS0",
-    "color": "#2d1d19",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "hydraulic-press",
     "friendly_name": "Hydraulic Press",
     "year": 1795,
@@ -9001,19 +8302,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hydraulic-press_of8eno?_a=BAMAMikS0",
     "color": "#2b1d21",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "lithography",
-    "friendly_name": "Lithography",
-    "year": 1796,
-    "category": "writing",
-    "description": "Alois Senefelder's printing technique using oil and water on flat stone to reproduce images and text.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lithography_zioo8p?_a=BAMAMikS0",
-    "color": "#2a1c23",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -9066,19 +8354,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hydrogen-powered-automobile_klnovy?_a=BAMAMikS0",
     "color": "#202122",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "commercial-steamboat",
-    "friendly_name": "Commercial Steamboat",
-    "year": 1807,
-    "category": "commerce",
-    "description": "Robert Fulton's Clermont began regular passenger steamboat service on the Hudson River.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/commercial-steamboat_xxfcnr?_a=BAMAMikS0",
-    "color": "#3c3a34",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -10280,19 +9555,6 @@
     "image_height": 440
   },
   {
-    "name": "rubiks-cube",
-    "friendly_name": "Rubik's Cube",
-    "year": 1974,
-    "category": "invention",
-    "description": "Erno Rubik invented the iconic three-dimensional combination puzzle, the bestselling toy of all time.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rubiks-cube_buaili?_a=BAMAMikS0",
-    "color": "#2d2f31",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "home-automation",
     "friendly_name": "Home Automation",
     "year": 1975,
@@ -10683,19 +9945,6 @@
     "image_height": 440
   },
   {
-    "name": "pliny-natural-history",
-    "friendly_name": "Pliny's Natural History Published",
-    "year": 77,
-    "category": "writing",
-    "description": "Pliny the Elder published his encyclopedic Natural History, covering topics from astronomy to zoology in 37 books.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pliny-natural-history_ilcwym?_a=BAMAMikS0",
-    "color": "#2b1d1c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "roman-horse-breeding",
     "friendly_name": "Roman Horse Breeding",
     "year": 100,
@@ -10707,19 +9956,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-horse-breeding_jfvgbd?_a=BAMAMikS0"
-  },
-  {
-    "name": "paper-invention-china",
-    "friendly_name": "Paper Invention in China",
-    "year": 105,
-    "category": "writing",
-    "description": "Cai Lun refined papermaking using bark, hemp, and rags during the Han Dynasty, revolutionizing record-keeping.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paper-invention-china_s8smmv?_a=BAMAMikS0",
-    "color": "#2a1d1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
   },
   {
     "name": "hipparcus-astronomy",
@@ -10743,32 +9979,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galen-medical-advances_qu0rnw?_a=BAMAMikS0",
     "color": "#25201c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "printing-woodblock-china",
-    "friendly_name": "Woodblock Printing in China",
-    "year": 700,
-    "category": "writing",
-    "description": "Early woodblock printing techniques emerged in Han Dynasty China for reproducing text and images on cloth and paper.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-woodblock-china_jjohlp?_a=BAMAMikS0",
-    "color": "#271f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "galen-medical-dominance",
-    "friendly_name": "Galen Medical Authority Established",
-    "year": 200,
-    "category": "medicine",
-    "description": "Galen's prolific writings on anatomy and treatment became the unchallenged authority in European and Islamic medicine.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galen-medical-dominance_jiywcf?_a=BAMAMikS0",
-    "color": "#2e1c18",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -10837,19 +10047,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diophantus-algebra_rkwgz1?_a=BAMAMikS0"
-  },
-  {
-    "name": "archimedes-buoyancy",
-    "friendly_name": "Archimedes Principle",
-    "year": -250,
-    "category": "science",
-    "description": "Archimedes of Syracuse discovered that objects displace their weight in fluid, allegedly while stepping into a bath.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archimedes-buoyancy_szznrb?_a=BAMAMikS0",
-    "color": "#261f1c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
   },
   {
     "name": "aristarchus-heliocentric",
@@ -10930,19 +10127,6 @@
     "image_height": 440
   },
   {
-    "name": "nazca-geoglyphs",
-    "friendly_name": "Nazca Geoglyphs Created",
-    "year": 400,
-    "category": "architecture",
-    "description": "The Nazca people created enormous ground drawings in Peru's desert, possibly aligned with astronomical events.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nazca-geoglyphs_rmu40v?_a=BAMAMikS0",
-    "color": "#813e32",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "polynesian-easter-island-settlement",
     "friendly_name": "Easter Island Settled",
     "year": 1200,
@@ -10969,19 +10153,6 @@
     "image_height": 440
   },
   {
-    "name": "hawaiian-settlement",
-    "friendly_name": "Settlement of Hawaiian Islands",
-    "year": 1000,
-    "category": "migration",
-    "description": "Polynesian navigators from the Marquesas sailed over 2,000 miles of open ocean to settle the Hawaiian archipelago.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hawaiian-settlement_qt8sir?_a=BAMAMikS0",
-    "color": "#44494c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "hippocrates-corpus",
     "friendly_name": "Hippocrates Corpus Medical Writings",
     "year": -400,
@@ -10990,19 +10161,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hippocrates-corpus_zr1kjr?_a=BAMAMikS0",
     "color": "#2a1e18",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "hypatia-mathematics-astronomy",
-    "friendly_name": "Hypatia Teaches in Alexandria",
-    "year": 400,
-    "category": "writing",
-    "description": "Hypatia of Alexandria edited Ptolemy's astronomical works and taught Neoplatonic philosophy until her murder in 415 CE.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hypatia-mathematics-astronomy_aadbcj?_a=BAMAMikS0",
-    "color": "#202122",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -11055,19 +10213,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/heavy-plow_irbmv6?_a=BAMAMikS0",
     "color": "#291e1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "nok-culture-ironworking",
-    "friendly_name": "Nok Culture Develops Ironworking",
-    "year": -500,
-    "category": "architecture",
-    "description": "The Nok culture of central Nigeria developed independent iron smelting technology and distinctive terracotta sculptures.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nok-culture-ironworking_bz8wsx?_a=BAMAMikS0",
-    "color": "#202127",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -11159,19 +10304,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aryabhata-pi-calculation_w6mtwe?_a=BAMAMikS0",
     "color": "#321911",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "pythagoras-theorem-geometry",
-    "friendly_name": "Pythagorean Theorem",
-    "year": -530,
-    "category": "science",
-    "description": "Pythagoras and his school in Croton formalized the relationship between the sides of a right triangle.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pythagoras-theorem-geometry_exsvmu?_a=BAMAMikS0",
-    "color": "#2b1e19",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -11580,19 +10712,6 @@
     "image_height": 440
   },
   {
-    "name": "norse-settlement-iceland",
-    "friendly_name": "Norse Settlement of Iceland",
-    "year": 874,
-    "category": "migration",
-    "description": "Norwegian Vikings established permanent settlements in Iceland, beginning with Ingolfr Arnarson at Reykjavik.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norse-settlement-iceland_senjh2?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "color": "#303133",
-    "text_color": "light"
-  },
-  {
     "name": "al-razi-physician",
     "friendly_name": "Al-Razi Medical Advances",
     "year": 900,
@@ -11658,19 +10777,6 @@
     "image_height": 440
   },
   {
-    "name": "al-razi-medical-treatise",
-    "friendly_name": "Al-Razi on Smallpox",
-    "year": 910,
-    "category": "medicine",
-    "description": "Al-Razi wrote the first clinical distinction between smallpox and measles, a landmark in diagnostic medicine.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/al-razi-medical-treatise_ipzysu?_a=BAMAMikS0",
-    "color": "#291e21",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "goryeo-printing-woodblocks",
     "friendly_name": "Goryeo Woodblock Printing",
     "year": 950,
@@ -11679,32 +10785,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goryeo-printing-woodblocks_fpwbdf?_a=BAMAMikS0",
     "color": "#442519",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "norse-settlement-greenland",
-    "friendly_name": "Norse Settlement of Greenland",
-    "year": 985,
-    "category": "migration",
-    "description": "Erik the Red led Norse settlers to Greenland's southwest coast, establishing colonies that lasted nearly 500 years.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norse-settlement-greenland_z16ytx?_a=BAMAMikS0",
-    "color": "#261f1f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "norse-colonization-atlantic",
-    "friendly_name": "Norse Atlantic Colonization Begins",
-    "year": 985,
-    "category": "migration",
-    "description": "Norse expansion into the North Atlantic reached Greenland under Erik the Red, pushing European exploration westward.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norse-colonization-atlantic_dqzzhl?_a=BAMAMikS0",
-    "color": "#51595e",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -11723,32 +10803,6 @@
     "image_height": 440
   },
   {
-    "name": "vinland-norse-discovery",
-    "friendly_name": "Vinland Discovered by Norse",
-    "year": 1000,
-    "category": "migration",
-    "description": "Leif Erikson reached North America around the turn of the millennium, establishing a short-lived settlement at L'Anse aux Meadows.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vinland-norse-discovery_s5gpin?_a=BAMAMikS0",
-    "color": "#202126",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "bantu-migration",
-    "friendly_name": "Bantu Migration Wave East",
-    "year": 1000,
-    "category": "migration",
-    "description": "Bantu-speaking peoples completed their eastward migration through sub-Saharan Africa, spreading farming and ironworking.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bantu-migration_cgen2t?_a=BAMAMikS0",
-    "color": "#3f3022",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "polynesian-settlement",
     "friendly_name": "Pacific Islands Settled",
     "year": 1000,
@@ -11757,32 +10811,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/polynesian-settlement_vfkvvc?_a=BAMAMikS0",
     "color": "#1f2125",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "ibn-sina-medicine",
-    "friendly_name": "Ibn Sina Medical Works",
-    "year": 1025,
-    "category": "medicine",
-    "description": "Ibn Sina (Avicenna) wrote The Canon of Medicine, a systematic medical encyclopedia used in Europe for centuries.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ibn-sina-medicine_lsgtuc?_a=BAMAMikS0",
-    "color": "#493422",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "optical-science",
-    "friendly_name": "Al-Haytham Optical Science",
-    "year": 1011,
-    "category": "science",
-    "description": "Ibn al-Haytham's Book of Optics pioneered the scientific method and explained vision as light entering the eye.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/optical-science_fzsxet?_a=BAMAMikS0",
-    "color": "#25201c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -11861,19 +10889,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/slash-burn-agriculture-americas_fw7bhi?_a=BAMAMikS0",
     "color": "#834928",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "lodestone-compass-early",
-    "friendly_name": "Lodestone Compass at Sea",
-    "year": 1040,
-    "category": "writing",
-    "description": "Chinese navigators began using magnetized lodestone compasses for maritime navigation during the Song Dynasty.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lodestone-compass-early_puvh3m?_a=BAMAMikS0",
-    "color": "#1f2329",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12100,32 +11115,6 @@
     "image_height": 440
   },
   {
-    "name": "wind-mill-adoption",
-    "friendly_name": "Windmills Spread in Europe",
-    "year": 1180,
-    "category": "agriculture",
-    "description": "Windmills spread across the Low Countries and England, providing mechanical power for grain milling and drainage.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wind-mill-adoption_rauvkj?_a=BAMAMikS0",
-    "color": "#47504a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "song-magnetic-compass",
-    "friendly_name": "Song Compass Navigation",
-    "year": 1119,
-    "category": "writing",
-    "description": "Chinese navigators adapted the magnetic compass for maritime use during the Song Dynasty, revolutionizing seafaring.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-magnetic-compass_tbsyb7?_a=BAMAMikS0",
-    "color": "#202026",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "song-sternpost-rudder",
     "friendly_name": "Song Sternpost Rudder",
     "year": 1150,
@@ -12199,19 +11188,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-color-printing_ytogln?_a=BAMAMikS0",
     "color": "#533d2d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "easter-island-settlement",
-    "friendly_name": "Easter Island Settlement",
-    "year": 1200,
-    "category": "migration",
-    "description": "Polynesian voyagers settled Rapa Nui (Easter Island), one of the most remote inhabited islands on Earth.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/easter-island-settlement_i5mkkd?_a=BAMAMikS0",
-    "color": "#1c212b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12295,19 +11271,6 @@
     "image_height": 440
   },
   {
-    "name": "windmill-introduction",
-    "friendly_name": "Windmill Introduction to Europe",
-    "year": 1185,
-    "category": "agriculture",
-    "description": "Post-style windmills appeared in northwestern Europe, providing power for grain milling in flat, windy regions.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmill-introduction_f0xoww?_a=BAMAMikS0",
-    "color": "#404036",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "terracing-agriculture-andes",
     "friendly_name": "Andean Terrace Farming",
     "year": 1200,
@@ -12342,19 +11305,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/breast-wheel-design_dgtsqi?_a=BAMAMikS0",
     "color": "#202122",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "windmill-vertical-axis",
-    "friendly_name": "Vertical Axis Windmill",
-    "year": 1180,
-    "category": "agriculture",
-    "description": "Post-mills with vertical rotation axes appeared in the Low Countries, becoming iconic features of the Dutch landscape.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmill-vertical-axis_epzop6?_a=BAMAMikS0",
-    "color": "#453739",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12542,19 +11492,6 @@
     "image_height": 440
   },
   {
-    "name": "mechanical-clock-adoption",
-    "friendly_name": "Mechanical Clock Adoption in Europe",
-    "year": 1283,
-    "category": "agriculture",
-    "description": "Early mechanical clocks appeared in European churches and monasteries, transforming timekeeping practices.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mechanical-clock-adoption_grmtna?_a=BAMAMikS0",
-    "color": "#252020",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "gunpowder-cannons-develop",
     "friendly_name": "Gunpowder Cannons Developed",
     "year": 1280,
@@ -12641,19 +11578,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chimu-irrigation-expansion_bqsi1z?_a=BAMAMikS0",
     "color": "#3d442e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "quarantine-origins",
-    "friendly_name": "Origins of Quarantine",
-    "year": 1377,
-    "category": "medicine",
-    "description": "Ragusa (Dubrovnik) established a 30-day isolation period for arriving ships, creating the first formal quarantine system.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/quarantine-origins_q4vnan?_a=BAMAMikS0",
-    "color": "#34433b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12841,19 +11765,6 @@
     "image_height": 440
   },
   {
-    "name": "astronomical-observatory",
-    "friendly_name": "Ulugh Beg Observatory",
-    "year": 1424,
-    "category": "architecture",
-    "description": "Timurid ruler Ulugh Beg built a massive observatory in Samarkand, producing the era's most accurate star catalog.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/astronomical-observatory_gdvs1r?_a=BAMAMikS0",
-    "color": "#261f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "ulugh-beg-observatory",
     "friendly_name": "Ulugh Beg Observatory Samarkand",
     "year": 1424,
@@ -12862,19 +11773,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ulugh-beg-observatory_hjg33q?_a=BAMAMikS0",
     "color": "#2e2015",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "samarkand-observatory",
-    "friendly_name": "Ulugh Beg's Observatory Built",
-    "year": 1424,
-    "category": "architecture",
-    "description": "The Samarkand observatory, built by Ulugh Beg, became the leading astronomical center of the 15th-century Islamic world.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-observatory_clk5p1?_a=BAMAMikS0",
-    "color": "#252c41",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12901,32 +11799,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joseon-sejong-water-clock_s5v8t7?_a=BAMAMikS0",
     "color": "#202029",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "caravel-ship-design",
-    "friendly_name": "Caravel Ship Design Development",
-    "year": 1440,
-    "category": "craft",
-    "description": "The caravel's combination of lateen and square sails made it the preferred vessel for Portuguese Age of Discovery voyages.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/caravel-ship-design_owkuok?_a=BAMAMikS0",
-    "color": "#4f3a30",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "hangul-creation-edict",
-    "friendly_name": "Hangul Creation Edict Issued",
-    "year": 1443,
-    "category": "writing",
-    "description": "King Sejong the Great of Korea promulgated Hangul, a phonetic alphabet designed to improve literacy among commoners.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hangul-creation-edict_w7iqpg?_a=BAMAMikS0",
-    "color": "#261f1f",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -12992,19 +11864,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inca-terrace-agriculture_xzqyqw?_a=BAMAMikS0",
     "color": "#222217",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "dias-cape-rounding",
-    "friendly_name": "Dias Rounds Cape of Good Hope",
-    "year": 1488,
-    "category": "migration",
-    "description": "Portuguese explorer Bartolomeu Dias became the first European to sail around the southern tip of Africa.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dias-cape-rounding_khar41?_a=BAMAMikS0",
-    "color": "#4f322f",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13140,19 +11999,6 @@
     "image_height": 440
   },
   {
-    "name": "scratch-plow-design",
-    "friendly_name": "Scratch Plow Early Design",
-    "year": -4000,
-    "category": "agriculture",
-    "description": "Early farmers in the Fertile Crescent developed the scratch plow (ard), one of the first tools to break soil for planting.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scratch-plow-design_dddw2m?_a=BAMAMikS0",
-    "color": "#a2561c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "varnish-composition-formulas",
     "friendly_name": "Varnish Composition and Formulas",
     "year": 1500,
@@ -13192,19 +12038,6 @@
     "image_height": 440
   },
   {
-    "name": "literacy-expansion-post-printing",
-    "friendly_name": "Literacy Expands After Printing",
-    "year": 1500,
-    "category": "writing",
-    "description": "Affordable printed materials enabled wider access to knowledge, fueling the Renaissance and Reformation movements.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/literacy-expansion-post-printing_bkoj5y?_a=BAMAMikS0",
-    "color": "#25201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "first-autopsy",
     "friendly_name": "Leonardo Da Vinci Autopsy",
     "year": 1507,
@@ -13213,19 +12046,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-autopsy_kja4jr?_a=BAMAMikS0",
     "color": "#26201c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "copernican-astronomy",
-    "friendly_name": "Copernican Astronomical Revolution",
-    "year": 1543,
-    "category": "science",
-    "description": "Copernicus published De Revolutionibus, proposing a heliocentric model that placed the Sun at the center of the cosmos.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/copernican-astronomy_oosxve?_a=BAMAMikS0",
-    "color": "#37281d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13343,19 +12163,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tycho-brahe-astronomical-observations_v4bgs3?_a=BAMAMikS0",
     "color": "#232021",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "compound-microscope",
-    "friendly_name": "Compound Microscope Development",
-    "year": 1590,
-    "category": "invention",
-    "description": "Dutch spectacle makers Hans and Zacharias Janssen built the first compound microscope using multiple lenses.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/compound-microscope_cylfpq?_a=BAMAMikS0",
-    "color": "#2c1d18",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13530,19 +12337,6 @@
     "image_height": 440
   },
   {
-    "name": "virginia-colony-established",
-    "friendly_name": "Virginia Colony Established",
-    "year": 1607,
-    "category": "commerce",
-    "description": "English settlers founded Jamestown, Virginia, the first permanent English colony in the Americas.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/virginia-colony-established_id062c?_a=BAMAMikS0",
-    "color": "#271f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "telescope-invention",
     "friendly_name": "Telescope Invented",
     "year": 1608,
@@ -13569,84 +12363,6 @@
     "image_height": 440
   },
   {
-    "name": "keplers-laws",
-    "friendly_name": "Kepler Laws of Planetary Motion",
-    "year": 1609,
-    "category": "science",
-    "description": "Kepler's Astronomia Nova introduced elliptical orbits and the equal-area law, transforming celestial mechanics.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/keplers-laws_ywohub?_a=BAMAMikS0",
-    "color": "#262016",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "first-telescope",
-    "friendly_name": "Galileo Telescope",
-    "year": 1609,
-    "category": "science",
-    "description": "Galileo built an improved telescope and turned it skyward, discovering Jupiter's moons, lunar craters, and sunspots.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-telescope_aevvb3?_a=BAMAMikS0",
-    "color": "#271f20",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "kepler-laws-motion",
-    "friendly_name": "Kepler's Laws of Motion",
-    "year": 1609,
-    "category": "science",
-    "description": "Kepler derived three fundamental laws describing planetary motion from Tycho Brahe's observational data.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kepler-laws-motion_fq8c7n?_a=BAMAMikS0",
-    "color": "#2c1d19",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "tea-introduction",
-    "friendly_name": "Tea Reaching Europe",
-    "year": 1610,
-    "category": "trade",
-    "description": "Dutch traders brought Chinese tea to Europe, beginning a trade that would reshape global commerce and culture.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tea-introduction_s0tuoz?_a=BAMAMikS0",
-    "color": "#26201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "galileo-telescopic-observations",
-    "friendly_name": "Galileo's Telescopic Discoveries",
-    "year": 1610,
-    "category": "science",
-    "description": "Galileo published Sidereus Nuncius describing telescopic discoveries including Jupiter's moons and lunar mountains.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galileo-telescopic-observations_akolvk?_a=BAMAMikS0",
-    "color": "#271f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "galileo-telescope-discoveries",
-    "friendly_name": "Galileo Confirms Heliocentrism",
-    "year": 1610,
-    "category": "science",
-    "description": "Galileo's telescopic observations provided key evidence for the Copernican heliocentric model of the solar system.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/galileo-telescope-discoveries_py0mou?_a=BAMAMikS0",
-    "color": "#212025",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "joseon-korean-medicine",
     "friendly_name": "Dongeuibogam Medical Encyclopedia",
     "year": 1613,
@@ -13656,32 +12372,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joseon-korean-medicine_otqgd7?_a=BAMAMikS0",
     "color": "#26201d",
     "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "kepler-second-law",
-    "friendly_name": "Kepler's Second Law",
-    "year": 1609,
-    "category": "science",
-    "description": "Johannes Kepler published his first two laws of planetary motion in Astronomia Nova, showing planets sweep equal areas in equal times.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kepler-second-law_mmckkf?_a=BAMAMikS0",
-    "color": "#222027",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "plymouth-colony-pilgrims",
-    "friendly_name": "Plymouth Colony Pilgrims",
-    "year": 1620,
-    "category": "migration",
-    "description": "English Pilgrims aboard the Mayflower established Plymouth Colony in present-day Massachusetts.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plymouth-colony-pilgrims_nsi42h?_a=BAMAMikS0",
-    "color": "#92b3c5",
-    "text_color": "dark",
     "image_width": 330,
     "image_height": 440
   },
@@ -13707,32 +12397,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/descartes-analytical-geometry_zlyocq?_a=BAMAMikS0",
     "color": "#24201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "barometer-invention",
-    "friendly_name": "Barometer Invented",
-    "year": 1643,
-    "category": "invention",
-    "description": "Evangelista Torricelli invented the mercury barometer, proving atmospheric pressure and the existence of vacuum.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barometer-invention_kprpr4?_a=BAMAMikS0",
-    "color": "#271f1f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "first-barometer",
-    "friendly_name": "Torricelli Barometer",
-    "year": 1643,
-    "category": "invention",
-    "description": "Torricelli created the first mercury barometer in Florence, measuring atmospheric pressure for the first time.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-barometer_zvp73b?_a=BAMAMikS0",
-    "color": "#2c1d1b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13816,32 +12480,6 @@
     "image_height": 440
   },
   {
-    "name": "boyle-gas-laws",
-    "friendly_name": "Robert Boyle's Gas Laws Established",
-    "year": 1662,
-    "category": "science",
-    "description": "Robert Boyle published his law showing the inverse relationship between gas pressure and volume.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boyle-gas-laws_p3vzq2?_a=BAMAMikS0",
-    "color": "#2c211c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "boyle-law-gases",
-    "friendly_name": "Boyle Discovers Law of Gases",
-    "year": 1662,
-    "category": "science",
-    "description": "Boyle demonstrated that gas volume is inversely proportional to pressure at constant temperature.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boyle-law-gases_ipvum2?_a=BAMAMikS0",
-    "color": "#341b10",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "philosophical-transactions",
     "friendly_name": "Philosophical Transactions",
     "year": 1665,
@@ -13850,19 +12488,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/philosophical-transactions_bs6f26?_a=BAMAMikS0",
     "color": "#25201f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "hooke-microscopy",
-    "friendly_name": "Hooke's Micrographia",
-    "year": 1665,
-    "category": "science",
-    "description": "Robert Hooke published Micrographia, coining the term 'cell' and revealing the microscopic world through detailed illustrations.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hooke-microscopy_uux9fm?_a=BAMAMikS0",
-    "color": "#291e1a",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13902,19 +12527,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blood-transfusion_c4kluf?_a=BAMAMikS0",
     "color": "#271f1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "leeuwenhoek-microscope",
-    "friendly_name": "Leeuwenhoek Invents Microscope",
-    "year": 1674,
-    "category": "invention",
-    "description": "Antonie van Leeuwenhoek crafted powerful single-lens microscopes and became the first to observe microorganisms.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leeuwenhoek-microscope_aogd6x?_a=BAMAMikS0",
-    "color": "#261f1d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -13983,58 +12595,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-leibniz-calculus_kvr0p6?_a=BAMAMikS0"
-  },
-  {
-    "name": "newton-gravitation-law",
-    "friendly_name": "Newton's Law of Gravitation",
-    "year": 1687,
-    "category": "science",
-    "description": "Newton published his universal law of gravitation in the Principia, explaining planetary orbits and earthly motion.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-gravitation-law_m5w6hq?_a=BAMAMikS0",
-    "color": "#232020",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "newton-principia-published",
-    "friendly_name": "Newton's Principia Published",
-    "year": 1687,
-    "category": "science",
-    "description": "Newton's Principia Mathematica laid the foundation for classical mechanics with laws of motion and universal gravitation.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-principia-published_foefoz?_a=BAMAMikS0",
-    "color": "#2a1e1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "newton-gravity-motion",
-    "friendly_name": "Newton's Laws of Motion",
-    "year": 1687,
-    "category": "science",
-    "description": "Newton's three laws of motion and law of universal gravitation transformed physics and astronomy.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/newton-gravity-motion_qs4qlk?_a=BAMAMikS0",
-    "color": "#1e2127",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "agricultural-revolution",
-    "friendly_name": "Agricultural Revolution",
-    "year": 1701,
-    "category": "agriculture",
-    "description": "Jethro Tull's seed drill and new crop rotation methods launched Britain's Agricultural Revolution.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/agricultural-revolution_fe252n?_a=BAMAMikS0",
-    "color": "#26201a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
   },
   {
     "name": "coal-mining-expansion",
@@ -14232,19 +12792,6 @@
     "image_height": 440
   },
   {
-    "name": "cotton-spinning-jenny",
-    "friendly_name": "Spinning Jenny Invented",
-    "year": 1764,
-    "category": "invention",
-    "description": "James Hargreaves invented the spinning jenny, enabling one worker to operate multiple spindles simultaneously.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cotton-spinning-jenny_aqxcsl?_a=BAMAMikS0",
-    "color": "#291e19",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "veterinary-school",
     "friendly_name": "Royal Veterinary School",
     "year": 1762,
@@ -14271,19 +12818,6 @@
     "image_height": 440
   },
   {
-    "name": "cook-pacific-voyages",
-    "friendly_name": "Captain Cook Pacific Voyages",
-    "year": 1768,
-    "category": "migration",
-    "description": "Captain James Cook embarked on the first of three Pacific voyages, mapping coastlines and advancing navigation.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cook-pacific-voyages_phpnww?_a=BAMAMikS0",
-    "color": "#392e28",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "arkwright-water-frame",
     "friendly_name": "Arkwright Water Frame Invented",
     "year": 1769,
@@ -14292,19 +12826,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arkwright-water-frame_gzqaze?_a=BAMAMikS0",
     "color": "#25201f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "watt-separate-condenser",
-    "friendly_name": "Watt Separate Condenser",
-    "year": 1769,
-    "category": "invention",
-    "description": "James Watt patented the separate condenser for steam engines, dramatically improving fuel efficiency.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/watt-separate-condenser_zd3hw5?_a=BAMAMikS0",
-    "color": "#2b1d18",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -14336,32 +12857,6 @@
     "image_height": 440
   },
   {
-    "name": "lavoisier-oxygen-combustion",
-    "friendly_name": "Lavoisier Discovers Oxygen",
-    "year": 1778,
-    "category": "science",
-    "description": "Antoine Lavoisier named oxygen and demonstrated its role in combustion, overthrowing phlogiston theory.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lavoisier-oxygen-combustion_oadzyd?_a=BAMAMikS0",
-    "color": "#242021",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "priestley-oxygen-isolation",
-    "friendly_name": "Priestley Isolates Oxygen Gas",
-    "year": 1774,
-    "category": "medicine",
-    "description": "Joseph Priestley isolated oxygen by heating mercuric oxide, calling it 'dephlogisticated air.'",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/priestley-oxygen-isolation_movswl?_a=BAMAMikS0",
-    "color": "#26201d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "herschel-discovers-uranus",
     "friendly_name": "Herschel Discovers Uranus",
     "year": 1781,
@@ -14370,19 +12865,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/herschel-discovers-uranus_eekr2j?_a=BAMAMikS0",
     "color": "#202123",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "cotton-power-loom",
-    "friendly_name": "Power Loom Invented",
-    "year": 1785,
-    "category": "invention",
-    "description": "Edmund Cartwright patented the power loom, mechanizing weaving and transforming the textile industry.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cotton-power-loom_g0rh8j?_a=BAMAMikS0",
-    "color": "#202029",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -14466,19 +12948,6 @@
     "image_height": 440
   },
   {
-    "name": "volta-electric-battery",
-    "friendly_name": "Volta Invents Electric Battery",
-    "year": 1800,
-    "category": "invention",
-    "description": "Alessandro Volta invented the voltaic pile, the first true electric battery producing a steady current.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/volta-electric-battery_wo6zrw?_a=BAMAMikS0",
-    "color": "#26201c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "high-pressure-steam",
     "friendly_name": "High-Pressure Steam Engine",
     "year": 1802,
@@ -14531,19 +13000,6 @@
     "image_height": 440
   },
   {
-    "name": "atom-dalton",
-    "friendly_name": "Atomic Theory",
-    "year": 1808,
-    "category": "science",
-    "description": "John Dalton published his atomic theory, proposing that elements consist of indivisible atoms with specific weights.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/atom-dalton_a5sbza?_a=BAMAMikS0",
-    "color": "#251f23",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "avogadro-molecular-hypothesis",
     "friendly_name": "Avogadro's Hypothesis",
     "year": 1811,
@@ -14578,32 +13034,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fresnel-wave-optics_edl3ti?_a=BAMAMikS0",
     "color": "#291d23",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "smith-stratigraphy",
-    "friendly_name": "Smith Founds Stratigraphy",
-    "year": 1815,
-    "category": "science",
-    "description": "William Smith published the first geological map of England, establishing stratigraphy using fossil identification.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/smith-stratigraphy_dp1fnf?_a=BAMAMikS0",
-    "color": "#291e1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "magnetism-electromagnetism",
-    "friendly_name": "Electromagnetism",
-    "year": 1820,
-    "category": "science",
-    "description": "Hans Christian Ørsted discovered that electric current produces a magnetic field, linking electricity and magnetism.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magnetism-electromagnetism_ltc6ky?_a=BAMAMikS0",
-    "color": "#212123",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -14648,45 +13078,6 @@
     "image_height": 440
   },
   {
-    "name": "lyell-uniformitarianism",
-    "friendly_name": "Lyell's Uniformitarian Geology",
-    "year": 1830,
-    "category": "science",
-    "description": "Charles Lyell published Principles of Geology, arguing Earth was shaped by slow, continuous natural processes.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lyell-uniformitarianism_valhum?_a=BAMAMikS0",
-    "color": "#4c4e49",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "faraday-electromagnetic-induction",
-    "friendly_name": "Faraday's Induction",
-    "year": 1831,
-    "category": "science",
-    "description": "Michael Faraday discovered electromagnetic induction, showing that changing magnetic fields generate electric current.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/faraday-electromagnetic-induction_pgkchx?_a=BAMAMikS0",
-    "color": "#22211e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "cell-structure",
-    "friendly_name": "Cell Theory",
-    "year": 1839,
-    "category": "science",
-    "description": "Schleiden and Schwann proposed cell theory, establishing that all living organisms are composed of cells.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cell-structure_einkyh?_a=BAMAMikS0",
-    "color": "#363128",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "joule-heat-energy",
     "friendly_name": "Joule Links Heat and Energy",
     "year": 1843,
@@ -14700,19 +13091,6 @@
     "image_height": 440
   },
   {
-    "name": "vulcanization-goodyear",
-    "friendly_name": "Vulcanization of Rubber (Goodyear)",
-    "year": 1839,
-    "category": "invention",
-    "description": "Charles Goodyear discovered vulcanization, making rubber durable and heat-resistant through sulfur treatment.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vulcanization-goodyear_riz2qx?_a=BAMAMikS0",
-    "color": "#232020",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "faraday-electromagnetic-field",
     "friendly_name": "Faraday Develops Field Theory",
     "year": 1845,
@@ -14721,32 +13099,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/faraday-electromagnetic-field_fxooy9?_a=BAMAMikS0",
     "color": "#342f29",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "anesthesia-ether",
-    "friendly_name": "Ether Anesthesia",
-    "year": 1846,
-    "category": "medicine",
-    "description": "William Morton publicly demonstrated ether anesthesia during surgery at Massachusetts General Hospital.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anesthesia-ether_nvy6h5?_a=BAMAMikS0",
-    "color": "#1d2224",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "joule-mechanical-equivalent-heat",
-    "friendly_name": "Joule Measures Heat Equivalent",
-    "year": 1845,
-    "category": "science",
-    "description": "Joule precisely measured the mechanical equivalent of heat using his famous paddle wheel apparatus.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joule-mechanical-equivalent-heat_du5dcu?_a=BAMAMikS0",
-    "color": "#4b3a2d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -14856,19 +13208,6 @@
     "image_height": 440
   },
   {
-    "name": "darwin-evolution-origin",
-    "friendly_name": "Darwin Publishes Origin of Species",
-    "year": 1859,
-    "category": "writing",
-    "description": "Charles Darwin published On the Origin of Species, presenting natural selection as the mechanism of evolution.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/darwin-evolution-origin_khnye4?_a=BAMAMikS0",
-    "color": "#24201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "maxwell-kinetic-theory",
     "friendly_name": "Maxwell's Kinetic Theory",
     "year": 1860,
@@ -14877,19 +13216,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maxwell-kinetic-theory_cacbe1?_a=BAMAMikS0",
     "color": "#24201f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "nightingale-nursing-reform",
-    "friendly_name": "Nightingale Reforms Nursing",
-    "year": 1860,
-    "category": "commerce",
-    "description": "Florence Nightingale founded the first professional nursing school at St Thomas' Hospital in London.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nightingale-nursing-reform_lovct7?_a=BAMAMikS0",
-    "color": "#271f1c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -14916,32 +13242,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antiseptic-surgery_y094at?_a=BAMAMikS0",
     "color": "#3b342a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "maxwell-electromagnetic-equations",
-    "friendly_name": "Maxwell Unifies Electromagnetism",
-    "year": 1865,
-    "category": "science",
-    "description": "Maxwell unified electricity, magnetism, and optics into four equations predicting electromagnetic waves.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maxwell-electromagnetic-equations_ccz3t5?_a=BAMAMikS0",
-    "color": "#222120",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "inheritance-mendel",
-    "friendly_name": "Laws of Inheritance",
-    "year": 1866,
-    "category": "science",
-    "description": "Gregor Mendel published his experiments on pea plants, establishing the fundamental laws of genetic inheritance.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inheritance-mendel_plqmjm?_a=BAMAMikS0",
-    "color": "#50412c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -15012,19 +13312,6 @@
     "image_height": 440
   },
   {
-    "name": "x-ray-discovery",
-    "friendly_name": "X-Ray Discovery",
-    "year": 1895,
-    "category": "science",
-    "description": "Wilhelm Röntgen discovered X-rays, revolutionizing medical diagnosis and earning the first Nobel Prize in Physics.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/x-ray-discovery_pevkxe?_a=BAMAMikS0",
-    "color": "#37382f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "wright-brothers-flight",
     "friendly_name": "Wright Brothers' First Flight",
     "year": 1903,
@@ -15046,32 +13333,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blood-clotting_vuynpx?_a=BAMAMikS0",
     "color": "#25201b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "antibiotics",
-    "friendly_name": "Penicillin Discovery",
-    "year": 1928,
-    "category": "medicine",
-    "description": "Alexander Fleming discovered penicillin when mold contaminated a bacterial culture, launching the antibiotic era.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antibiotics_ubv0qb?_a=BAMAMikS0",
-    "color": "#24211d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "sputnik-launch-space",
-    "friendly_name": "Sputnik Launch",
-    "year": 1957,
-    "category": "media",
-    "description": "The Soviet Union launched Sputnik 1, the first artificial satellite, igniting the Space Race with the United States.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sputnik-launch-space_savfbo?_a=BAMAMikS0",
-    "color": "#1e2128",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -15129,19 +13390,6 @@
     "image_height": 440
   },
   {
-    "name": "domestication-potato-americas",
-    "friendly_name": "Potato Domestication in Andes",
-    "year": -5000,
-    "category": "agriculture",
-    "description": "Andean peoples domesticated the potato near Lake Titicaca, creating a staple crop for high-altitude farming.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-potato-americas_u96ss3?_a=BAMAMikS0",
-    "color": "#44281c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "millet-adoption-china",
     "friendly_name": "Millet Cultivation in China",
     "year": -6000,
@@ -15150,19 +13398,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/millet-adoption-china_jwraww?_a=BAMAMikS0",
     "color": "#502a12",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "domestication-rice-southeast-asia",
-    "friendly_name": "Rice Domesticated in Asia",
-    "year": -5000,
-    "category": "agriculture",
-    "description": "Rice was domesticated in the Yangtze River valley, eventually becoming the staple food for much of Asia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domestication-rice-southeast-asia_lfk6as?_a=BAMAMikS0",
-    "color": "#694928",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -15218,19 +13453,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archean-eon-begins_unbb3h?_a=BAMAMikS0"
-  },
-  {
-    "name": "first-photosynthetic-bacteria",
-    "friendly_name": "First Photosynthetic Bacteria",
-    "year": -3400000000,
-    "category": "nature",
-    "description": "Cyanobacteria began performing photosynthesis, slowly producing the oxygen that would transform the atmosphere.",
-    "difficulty": "hard",
-    "color": "#463119",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-photosynthetic-bacteria_g4lrss?_a=BAMAMikS0"
   },
   {
     "name": "proterozoic-eon-begins",
@@ -15348,19 +13570,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ordovician-period-begins_pxbdhz?_a=BAMAMikS0"
-  },
-  {
-    "name": "first-land-plants",
-    "friendly_name": "First Land Plants",
-    "year": -470000000,
-    "category": "nature",
-    "description": "Early plants colonized dry land for the first time, beginning the greening of the continents.",
-    "difficulty": "medium",
-    "color": "#2b1e17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-land-plants_omhzba?_a=BAMAMikS0"
   },
   {
     "name": "silurian-period-begins",
@@ -15673,19 +13882,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pliocene-epoch-begins_ffusmv?_a=BAMAMikS0"
-  },
-  {
-    "name": "first-hominins-australopithecus",
-    "friendly_name": "First Hominins",
-    "year": -4000000,
-    "category": "nature",
-    "description": "Australopithecus, among the first hominins, walked upright on two legs as a key human ancestor.",
-    "difficulty": "medium",
-    "color": "#e19d54",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-hominins-australopithecus_jhwppb?_a=BAMAMikS0"
   },
   {
     "name": "pleistocene-epoch-ice-age-begins",

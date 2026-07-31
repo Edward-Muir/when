@@ -78,19 +78,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-siberia_n9pqet?_a=BAMAMikS0"
   },
   {
-    "name": "peopling-beringia",
-    "friendly_name": "Peopling via Beringia",
-    "year": -16000,
-    "category": "migration",
-    "description": "Migrants crossed the Bering land bridge from Asia into the Americas, the first Americans.",
-    "difficulty": "medium",
-    "color": "#463325",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/peopling-beringia_dm3u2p?_a=BAMAMikS0"
-  },
-  {
     "name": "settlement-south-america",
     "friendly_name": "South America Settled",
     "year": -12500,
@@ -312,19 +299,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magyars-settle-hungary_mllxge?_a=BAMAMikS0"
   },
   {
-    "name": "norse-settle-greenland",
-    "friendly_name": "Norse Colonize Greenland",
-    "year": 985,
-    "category": "migration",
-    "description": "Erik the Red led settlers from Iceland to establish Norse colonies on the coast of Greenland.",
-    "difficulty": "medium",
-    "color": "#303732",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norse-settle-greenland_t0oqnd?_a=BAMAMikS0"
-  },
-  {
     "name": "maori-reach-new-zealand",
     "friendly_name": "Maori Reach New Zealand",
     "year": 1300,
@@ -349,19 +323,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moriori-settle-chathams_tfrwm8?_a=BAMAMikS0"
-  },
-  {
-    "name": "expulsion-jews-from-spain",
-    "friendly_name": "Sephardi Jews Expelled",
-    "year": 1492,
-    "category": "empires",
-    "description": "Spain expelled its Jews, scattering the Sephardi people across North Africa, the Levant, and Europe.",
-    "difficulty": "medium",
-    "color": "#9a6e3b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/expulsion-jews-from-spain_risci6?_a=BAMAMikS0"
   },
   {
     "name": "transatlantic-slave-trade-begins",
@@ -429,19 +390,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scotch-irish-migration_pqmihh?_a=BAMAMikS0"
   },
   {
-    "name": "convict-transport-australia",
-    "friendly_name": "Convicts Transported to Australia",
-    "year": 1787,
-    "category": "migration",
-    "description": "Britain began shipping convicts to Australia, seeding the first large European settlement there.",
-    "difficulty": "medium",
-    "color": "#acafa4",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/convict-transport-australia_gs5w2d?_a=BAMAMikS0"
-  },
-  {
     "name": "great-trek-south-africa",
     "friendly_name": "The Great Trek",
     "year": 1836,
@@ -453,19 +401,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-trek-south-africa_l81ivf?_a=BAMAMikS0"
-  },
-  {
-    "name": "irish-famine-emigration",
-    "friendly_name": "Irish Famine Emigration",
-    "year": 1846,
-    "category": "revolution",
-    "description": "The Great Famine drove over a million Irish to emigrate, transforming America's cities.",
-    "difficulty": "easy",
-    "color": "#959a9a",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/irish-famine-emigration_b3nnyl?_a=BAMAMikS0"
   },
   {
     "name": "mormon-trek-to-utah",
@@ -570,19 +505,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dust-bowl-migration_rdj6dj?_a=BAMAMikS0"
-  },
-  {
-    "name": "partition-of-india-migration",
-    "friendly_name": "Partition of India Migration",
-    "year": 1947,
-    "category": "revolution",
-    "description": "Partition triggered one of history's largest migrations, with millions crossing the India-Pakistan border.",
-    "difficulty": "easy",
-    "color": "#4c3f2d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/partition-of-india-migration_txw6ea?_a=BAMAMikS0"
   },
   {
     "name": "windrush-arrival",

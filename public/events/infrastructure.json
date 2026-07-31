@@ -240,21 +240,6 @@
     "text_color": "light"
   },
   {
-    "name": "cloaca-maxima",
-    "friendly_name": "Cloaca Maxima Built",
-    "year": -600,
-    "category": "architecture",
-    "description": "Rome constructed one of the world's earliest sewage systems.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cloaca-maxima_nfcdfp?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 54148,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cloaca_Maxima",
-    "color": "#513e2e",
-    "text_color": "light"
-  },
-  {
     "name": "ishtar-gate",
     "friendly_name": "Ishtar Gate of Babylon Built",
     "year": -575,
@@ -300,21 +285,6 @@
     "text_color": "dark"
   },
   {
-    "name": "appian-way",
-    "friendly_name": "Appian Way Constructed",
-    "year": -312,
-    "category": "architecture",
-    "description": "Rome built its first major highway connecting the city to southern Italy.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/appian-way_jfs94l?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 226371,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Appian_Way",
-    "color": "#26201d",
-    "text_color": "light"
-  },
-  {
     "name": "colossus-rhodes",
     "friendly_name": "Colossus of Rhodes Completed",
     "year": -280,
@@ -345,21 +315,6 @@
     "text_color": "light"
   },
   {
-    "name": "great-wall-begins",
-    "friendly_name": "Great Wall Construction Begins",
-    "year": -221,
-    "category": "architecture",
-    "description": "Emperor Qin Shi Huang began connecting and extending defensive walls across China.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-wall-begins_so9bxm?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1578916,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Wall_of_China",
-    "color": "#232025",
-    "text_color": "light"
-  },
-  {
     "name": "terracotta-army",
     "friendly_name": "Terracotta Army Created",
     "year": -210,
@@ -372,36 +327,6 @@
     "wikipedia_views": 846893,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Terracotta_Army",
     "color": "#584130",
-    "text_color": "light"
-  },
-  {
-    "name": "pont-du-gard",
-    "friendly_name": "Pont du Gard Built",
-    "year": 19,
-    "category": "architecture",
-    "description": "Romans built the impressive aqueduct bridge in southern France.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pont-du-gard_hjx786?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 140094,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pont_du_Gard",
-    "color": "#462c53",
-    "text_color": "light"
-  },
-  {
-    "name": "colosseum-completed",
-    "friendly_name": "Colosseum Completed",
-    "year": 80,
-    "category": "architecture",
-    "description": "Rome finished building its massive amphitheater for gladiatorial games.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/colosseum-completed_synpwn?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1525820,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Colosseum",
-    "color": "#1e2127",
     "text_color": "light"
   },
   {
@@ -418,21 +343,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan's_Column",
     "color": "#202125",
     "text_color": "light"
-  },
-  {
-    "name": "pantheon-rebuilt",
-    "friendly_name": "Pantheon Rebuilt",
-    "year": 125,
-    "category": "architecture",
-    "description": "Emperor Hadrian rebuilt the Roman temple with its famous domed roof.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pantheon-rebuilt_usa9tw?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1184651,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Pantheon,_Rome",
-    "color": "#91837e",
-    "text_color": "dark"
   },
   {
     "name": "hadrians-wall",
@@ -477,21 +387,6 @@
     "wikipedia_views": 1250077,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Constantinople",
     "color": "#232021",
-    "text_color": "light"
-  },
-  {
-    "name": "hagia-sophia-completed",
-    "friendly_name": "Hagia Sophia Completed",
-    "year": 537,
-    "category": "architecture",
-    "description": "The Byzantine cathedral with its massive dome was finished in Constantinople.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hagia-sophia-completed_oynzdf?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1276677,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hagia_Sophia",
-    "color": "#261f1f",
     "text_color": "light"
   },
   {
@@ -540,21 +435,6 @@
     "text_color": "light"
   },
   {
-    "name": "borobudur-temple",
-    "friendly_name": "Borobudur Temple Built",
-    "year": 825,
-    "category": "architecture",
-    "description": "The world's largest Buddhist temple was completed in Java.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/borobudur-temple_pktcjl?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 288694,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Borobudur",
-    "color": "#2d2e2a",
-    "text_color": "light"
-  },
-  {
     "name": "great-mosque-cordoba",
     "friendly_name": "Great Mosque of Córdoba Expanded",
     "year": 987,
@@ -600,21 +480,6 @@
     "text_color": "dark"
   },
   {
-    "name": "angkor-wat-completed",
-    "friendly_name": "Angkor Wat Completed",
-    "year": 1150,
-    "category": "architecture",
-    "description": "The massive Hindu temple complex was finished in Cambodia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-completed_bb36sa?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1241500,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Angkor_Wat",
-    "color": "#4c4639",
-    "text_color": "light"
-  },
-  {
     "name": "leaning-tower-pisa",
     "friendly_name": "Leaning Tower of Pisa Begun",
     "year": 1173,
@@ -627,81 +492,6 @@
     "wikipedia_views": 29697,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pisa_Baptistery",
     "color": "#484b31",
-    "text_color": "light"
-  },
-  {
-    "name": "chartres-cathedral",
-    "friendly_name": "Chartres Cathedral Completed",
-    "year": 1220,
-    "category": "architecture",
-    "description": "The French Gothic masterpiece with its famous stained glass was finished.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chartres-cathedral_gma4hc?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 176406,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Chartres_Cathedral",
-    "color": "#28312b",
-    "text_color": "light"
-  },
-  {
-    "name": "alhambra-expanded",
-    "friendly_name": "Alhambra Palace Expanded",
-    "year": 1333,
-    "category": "architecture",
-    "description": "The Nasrid dynasty expanded the stunning palace complex in Granada.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alhambra-expanded_vlrhk1?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 688701,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Alhambra",
-    "color": "#3b3c36",
-    "text_color": "light"
-  },
-  {
-    "name": "forbidden-city-completed",
-    "friendly_name": "Forbidden City Completed",
-    "year": 1420,
-    "category": "architecture",
-    "description": "The massive imperial palace complex was finished in Beijing.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/forbidden-city-completed_vgxrgn?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 710042,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Forbidden_City",
-    "color": "#291e1d",
-    "text_color": "light"
-  },
-  {
-    "name": "florence-dome",
-    "friendly_name": "Florence Cathedral Dome Completed",
-    "year": 1436,
-    "category": "architecture",
-    "description": "Brunelleschi finished the largest masonry dome ever built.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/florence-dome_e8h1te?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 386811,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Cathedral",
-    "color": "#301b15",
-    "text_color": "light"
-  },
-  {
-    "name": "machu-picchu-built",
-    "friendly_name": "Machu Picchu Built",
-    "year": 1450,
-    "category": "architecture",
-    "description": "The Inca constructed their famous citadel high in the Andes Mountains.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/machu-picchu-built_oawuw6?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1562851,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Machu_Picchu",
-    "color": "#715539",
     "text_color": "light"
   },
   {
@@ -975,21 +765,6 @@
     "text_color": "light"
   },
   {
-    "name": "first-cotton-mill",
-    "friendly_name": "First Cotton Mill Opens",
-    "year": 1771,
-    "category": "invention",
-    "description": "Richard Arkwright opened the first water-powered cotton mill in England.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cotton-mill_gpaqsy?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 16072,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cromford_Mill",
-    "color": "#271f1d",
-    "text_color": "light"
-  },
-  {
     "name": "iron-bridge",
     "friendly_name": "Iron Bridge Completed",
     "year": 1781,
@@ -1242,21 +1017,6 @@
     "wikipedia_views": 687106,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Brooklyn_Bridge",
     "color": "#2a2f32",
-    "text_color": "light"
-  },
-  {
-    "name": "first-skyscraper-chicago",
-    "friendly_name": "First Skyscraper Built",
-    "year": 1885,
-    "category": "architecture",
-    "description": "The Home Insurance Building in Chicago pioneered steel-frame construction.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-skyscraper-chicago_fx9qpt?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 102879,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Early_skyscrapers",
-    "color": "#31332f",
     "text_color": "light"
   },
   {
@@ -3134,19 +2894,6 @@
     "image_height": 440
   },
   {
-    "name": "nabataean-trade-routes",
-    "friendly_name": "Nabataean Trade Routes",
-    "year": -50,
-    "category": "trade",
-    "description": "The Nabataean Kingdom dominated incense trade routes connecting Arabia to the Mediterranean world.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nabataean-trade-routes_kl9mkd?_a=BAMAMikS0",
-    "color": "#52241b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "nabataean-petra-city",
     "friendly_name": "Petra Built as Nabataean Capital",
     "year": -100,
@@ -3285,19 +3032,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-founded_czsxj8?_a=BAMAMikS0",
     "color": "#30262b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "sogdian-traders",
-    "friendly_name": "Sogdian Traders Dominate Silk Road",
-    "year": 500,
-    "category": "trade",
-    "description": "Sogdian merchants from Central Asia became the dominant middlemen of Silk Road trade between China and the West.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sogdian-traders_rijho7?_a=BAMAMikS0",
-    "color": "#2a1e1b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -3615,32 +3349,6 @@
     "image_height": 440
   },
   {
-    "name": "woodblock-printing-refinement",
-    "friendly_name": "Woodblock Printing Refinement",
-    "year": 800,
-    "category": "writing",
-    "description": "Chinese woodblock printing was refined during the Tang Dynasty, enabling mass production of texts and images.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woodblock-printing-refinement_leqhhp?_a=BAMAMikS0",
-    "color": "#3f2e2a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "huari-road-system",
-    "friendly_name": "Huari Road Network Established",
-    "year": 800,
-    "category": "empires",
-    "description": "The Wari Empire built an extensive road network across the Andes, prefiguring the later Inca road system.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huari-road-system_dujtyk?_a=BAMAMikS0",
-    "color": "#442f29",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "jenne-city-foundation",
     "friendly_name": "Jenne City Major Trading Hub",
     "year": 900,
@@ -3862,19 +3570,6 @@
     "image_height": 440
   },
   {
-    "name": "printing-movable-china",
-    "friendly_name": "Movable Type China",
-    "year": 1040,
-    "category": "writing",
-    "description": "Bi Sheng invented movable type printing using ceramic pieces in Song Dynasty China.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-movable-china_e9yk8x?_a=BAMAMikS0",
-    "color": "#281e21",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "metal-type-development",
     "friendly_name": "Metal Type Casting and Development",
     "year": 1230,
@@ -3888,19 +3583,6 @@
     "image_height": 440
   },
   {
-    "name": "chola-maritime-network",
-    "friendly_name": "Chola Naval Expansion",
-    "year": 1025,
-    "category": "empires",
-    "description": "The Chola dynasty projected naval power across the Indian Ocean, raiding Southeast Asian ports.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/chola-maritime-network_l4nczf?_a=BAMAMikS0",
-    "color": "#5e4f3d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "anasazi-cliff-dwellings",
     "friendly_name": "Anasazi Cliff Dwelling Construction",
     "year": 1190,
@@ -3909,19 +3591,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anasazi-cliff-dwellings_wgepjx?_a=BAMAMikS0",
     "color": "#251f22",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "romanesque-development",
-    "friendly_name": "Romanesque Architecture Development",
-    "year": 1050,
-    "category": "agriculture",
-    "description": "Romanesque architecture spread across Europe featuring thick walls, round arches, and barrel vaults.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romanesque-development_dops8p?_a=BAMAMikS0",
-    "color": "#2e2815",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -3992,19 +3661,6 @@
     "image_height": 440
   },
   {
-    "name": "hoysala-temples",
-    "friendly_name": "Hoysala Temple Construction Peak",
-    "year": 1150,
-    "category": "architecture",
-    "description": "Hoysala dynasty temples in Karnataka featured intricate star-shaped plans and elaborate stone carvings.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hoysala-temples_sjeyy1?_a=BAMAMikS0",
-    "color": "#212120",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "song-maritime-commerce",
     "friendly_name": "Song Dynasty Maritime Commerce Peak",
     "year": 1100,
@@ -4013,19 +3669,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-maritime-commerce_bqtscw?_a=BAMAMikS0",
     "color": "#27251c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "cahokia-metropolis",
-    "friendly_name": "Cahokia Reaches Peak",
-    "year": 1100,
-    "category": "architecture",
-    "description": "Cahokia reached a population of up to 20,000, rivaling contemporary European cities in size.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cahokia-metropolis_gvbrep?_a=BAMAMikS0",
-    "color": "#525043",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -4057,19 +3700,6 @@
     "image_height": 440
   },
   {
-    "name": "hoysala-temple-architecture",
-    "friendly_name": "Hoysala Dynasty Temple Architecture",
-    "year": 1150,
-    "category": "architecture",
-    "description": "Hoysala temples like Chennakeshava at Belur showcased extraordinary sculptural detail in soapstone.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hoysala-temple-architecture_z2p9cq?_a=BAMAMikS0",
-    "color": "#222121",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "angkor-wat-temple",
     "friendly_name": "Angkor Wat Construction",
     "year": 1113,
@@ -4078,19 +3708,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-temple_blu2gs?_a=BAMAMikS0",
     "color": "#41393e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "angkor-wat-construction",
-    "friendly_name": "Angkor Wat Built",
-    "year": 1150,
-    "category": "architecture",
-    "description": "Angkor Wat was completed as the spiritual center of the Khmer Empire in present-day Cambodia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/angkor-wat-construction_yylaz7?_a=BAMAMikS0",
-    "color": "#22211d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -4473,19 +4090,6 @@
     "image_height": 440
   },
   {
-    "name": "marco-polo-yuan-court",
-    "friendly_name": "Marco Polo at Yuan Court",
-    "year": 1275,
-    "category": "empires",
-    "description": "Venetian merchant Marco Polo arrived at Kublai Khan's court, later documenting East Asian culture and trade.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marco-polo-yuan-court_pv1xns?_a=BAMAMikS0",
-    "color": "#23211d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "yuan-grand-canal",
     "friendly_name": "Yuan Grand Canal Extended",
     "year": 1289,
@@ -4668,19 +4272,6 @@
     "image_height": 440
   },
   {
-    "name": "hanse-trades-monopoly",
-    "friendly_name": "Hanseatic League Baltic Trade",
-    "year": 1370,
-    "category": "trade",
-    "description": "The Hanseatic League dominated Baltic and North Sea trade with a network of allied merchant cities.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hanse-trades-monopoly_tfizry?_a=BAMAMikS0",
-    "color": "#232020",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "genovese-banking-families",
     "friendly_name": "Genoese Banking Families Rise",
     "year": 1350,
@@ -4689,19 +4280,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genovese-banking-families_qckk5b?_a=BAMAMikS0",
     "color": "#403527",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "insurance-maritime-contracts",
-    "friendly_name": "Maritime Insurance Contracts Begin",
-    "year": 1347,
-    "category": "commerce",
-    "description": "The earliest known maritime insurance contract was written in Genoa, spreading risk across sea voyages.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/insurance-maritime-contracts_cmumzu?_a=BAMAMikS0",
-    "color": "#261f20",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -4728,19 +4306,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wool-staple-monopoly_u94qbj?_a=BAMAMikS0",
     "color": "#76664a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "timur-architectural-patronage",
-    "friendly_name": "Timur Architectural Patronage",
-    "year": 1390,
-    "category": "architecture",
-    "description": "Timur began transforming Samarkand into a magnificent capital with mosques, gardens, and monuments after his conquests.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/timur-architectural-patronage_xf1tv5?_a=BAMAMikS0",
-    "color": "#23293b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -5032,19 +4597,6 @@
     "image_height": 440
   },
   {
-    "name": "printing-bible",
-    "friendly_name": "Gutenberg Bible",
-    "year": 1455,
-    "category": "writing",
-    "description": "Johannes Gutenberg printed the first major book using movable type in Mainz, Germany, revolutionizing information spread.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-bible_gui93c?_a=BAMAMikS0",
-    "color": "#232023",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "printing-color",
     "friendly_name": "Printing with Color",
     "year": 1457,
@@ -5214,19 +4766,6 @@
     "image_height": 440
   },
   {
-    "name": "fur-trade-russian",
-    "friendly_name": "Russian Fur Trade Expansion",
-    "year": 1582,
-    "category": "trade",
-    "description": "Russia expanded eastward into Siberia driven by demand for sable and other luxury furs in European markets.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fur-trade-russian_ixomuw?_a=BAMAMikS0",
-    "color": "#9bb1be",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "cod-fishery-expansion",
     "friendly_name": "Atlantic Cod Fishery Expansion",
     "year": 1500,
@@ -5292,19 +4831,6 @@
     "image_height": 440
   },
   {
-    "name": "printing-music",
-    "friendly_name": "Musical Notation Printing",
-    "year": 1501,
-    "category": "writing",
-    "description": "Ottaviano Petrucci published Harmonice Musices Odhecaton in Venice, the first major collection of printed polyphonic music.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/printing-music_j7zlix?_a=BAMAMikS0",
-    "color": "#261f22",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "first-map-printing",
     "friendly_name": "Waldsemuller Map",
     "year": 1507,
@@ -5339,19 +4865,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sher-shah-architecture_qi6vss?_a=BAMAMikS0",
     "color": "#24201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "cocoa-trade-beans",
-    "friendly_name": "Cocoa Beans Trade with Europe",
-    "year": 1544,
-    "category": "trade",
-    "description": "Cocoa beans were first shipped from the Americas to Spain, beginning the European chocolate trade.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cocoa-trade-beans_vrht1h?_a=BAMAMikS0",
-    "color": "#261f20",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -5617,58 +5130,6 @@
     "image_height": 440
   },
   {
-    "name": "mughal-taj-mahal",
-    "friendly_name": "Taj Mahal Construction",
-    "year": 1632,
-    "category": "architecture",
-    "description": "Shah Jahan commissioned the Taj Mahal in Agra as a mausoleum for his wife Mumtaz Mahal.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mughal-taj-mahal_a6gnfj?_a=BAMAMikS0",
-    "color": "#242020",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "taj-mahal-construction",
-    "friendly_name": "Taj Mahal Construction Begins",
-    "year": 1632,
-    "category": "architecture",
-    "description": "Construction of the Taj Mahal began in Agra, employing over 20,000 workers for more than 20 years.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/taj-mahal-construction_hnxqfy?_a=BAMAMikS0",
-    "color": "#9cb1bb",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "taj-mahal-begun",
-    "friendly_name": "Taj Mahal Construction Begun",
-    "year": 1632,
-    "category": "architecture",
-    "description": "The Taj Mahal's construction commenced under Shah Jahan, blending Mughal, Persian, and Indian architectural styles.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/taj-mahal-begun_ci8ypt?_a=BAMAMikS0",
-    "color": "#312928",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "gondar-city-planning",
-    "friendly_name": "Gondar Founded as Capital",
-    "year": 1636,
-    "category": "architecture",
-    "description": "Emperor Fasilides established Gondar as Ethiopia's capital, building castles blending Ethiopian and Portuguese styles.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gondar-city-planning_ysov16?_a=BAMAMikS0",
-    "color": "#25201d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "edo-castle-completion",
     "friendly_name": "Edo Castle Completed",
     "year": 1638,
@@ -5786,19 +5247,6 @@
     "image_height": 440
   },
   {
-    "name": "versailles-palace",
-    "friendly_name": "Palace of Versailles Construction",
-    "year": 1661,
-    "category": "architecture",
-    "description": "Louis XIV commissioned the massive expansion of Versailles, which became the seat of French government.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/versailles-palace_ihhlph?_a=BAMAMikS0",
-    "color": "#503724",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "bus-service",
     "friendly_name": "Public Bus Service",
     "year": 1662,
@@ -5903,19 +5351,6 @@
     "image_height": 440
   },
   {
-    "name": "spinning-mule-details",
-    "friendly_name": "Spinning Mule Mechanical Refinement",
-    "year": 1779,
-    "category": "invention",
-    "description": "Samuel Crompton invented the spinning mule, combining features of the spinning jenny and water frame.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spinning-mule-details_iooozx?_a=BAMAMikS0",
-    "color": "#23211e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "wrought-iron-puddling",
     "friendly_name": "Wrought Iron Puddling Process",
     "year": 1784,
@@ -5942,32 +5377,6 @@
     "image_height": 440
   },
   {
-    "name": "optical-telegraph-system",
-    "friendly_name": "Optical Telegraph System",
-    "year": 1794,
-    "category": "invention",
-    "description": "Claude Chappe built the first optical telegraph line in France, transmitting messages via semaphore towers.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/optical-telegraph-system_dr0glv?_a=BAMAMikS0",
-    "color": "#1e2223",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "lithography-development",
-    "friendly_name": "Lithography Invention",
-    "year": 1796,
-    "category": "invention",
-    "description": "Alois Senefelder invented lithography in Bavaria, enabling high-quality image printing from flat stone surfaces.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lithography-development_vfjmdx?_a=BAMAMikS0",
-    "color": "#4c4134",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "dobby-mechanism",
     "friendly_name": "Dobby Loom Control Mechanism",
     "year": 1843,
@@ -5981,19 +5390,6 @@
     "image_height": 440
   },
   {
-    "name": "first-steamship",
-    "friendly_name": "SS Savannah",
-    "year": 1819,
-    "category": "migration",
-    "description": "The SS Savannah became the first steamship to cross the Atlantic Ocean, sailing from Georgia to Liverpool.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-steamship_etsyge?_a=BAMAMikS0",
-    "color": "#7a8186",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "power-loom-mechanical",
     "friendly_name": "Power Loom Mechanical Improvements",
     "year": 1820,
@@ -6002,45 +5398,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/power-loom-mechanical_ymplsi?_a=BAMAMikS0",
     "color": "#504740",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "portland-cement-development",
-    "friendly_name": "Portland Cement Development",
-    "year": 1824,
-    "category": "invention",
-    "description": "Joseph Aspdin patented Portland cement in Britain, creating the foundation for modern concrete construction.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/portland-cement-development_ucialj?_a=BAMAMikS0",
-    "color": "#7b7b76",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "first-locomotive",
-    "friendly_name": "Stephenson Locomotive",
-    "year": 1825,
-    "category": "media",
-    "description": "George Stephenson's Locomotion No. 1 hauled the first public steam railway between Stockton and Darlington.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-locomotive_o7qe7n?_a=BAMAMikS0",
-    "color": "#4e4943",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "first-railroad",
-    "friendly_name": "Liverpool-Manchester Railway",
-    "year": 1830,
-    "category": "media",
-    "description": "The Liverpool and Manchester Railway opened as the first inter-city passenger railway powered entirely by steam.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-railroad_xgbrdr?_a=BAMAMikS0",
-    "color": "#494139",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6059,19 +5416,6 @@
     "image_height": 440
   },
   {
-    "name": "penny-post-britain",
-    "friendly_name": "Penny Black Mail",
-    "year": 1840,
-    "category": "media",
-    "description": "Britain introduced the Penny Black, the world's first adhesive postage stamp, revolutionizing affordable mail delivery.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/penny-post-britain_gbgxou?_a=BAMAMikS0",
-    "color": "#372f27",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "electrotyping-process",
     "friendly_name": "Electrotyping Printing Plates",
     "year": 1839,
@@ -6080,32 +5424,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/electrotyping-process_bu2xyh?_a=BAMAMikS0",
     "color": "#23211e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "morse-telegraph-refinement",
-    "friendly_name": "Morse Telegraph Improvements",
-    "year": 1844,
-    "category": "media",
-    "description": "Samuel Morse sent the first telegraph message (\"What hath God wrought\") on a line between Washington and Baltimore.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/morse-telegraph-refinement_povkei?_a=BAMAMikS0",
-    "color": "#25201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "rotary-press-development",
-    "friendly_name": "Rotary Printing Press Development",
-    "year": 1843,
-    "category": "invention",
-    "description": "Richard Hoe developed the rotary printing press, dramatically increasing newspaper printing speed.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rotary-press-development_yu1r1f?_a=BAMAMikS0",
-    "color": "#22211f",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6124,32 +5442,6 @@
     "image_height": 440
   },
   {
-    "name": "telegraph-cable-insulation",
-    "friendly_name": "Telegraph Cable Insulation",
-    "year": 1858,
-    "category": "craft",
-    "description": "Gutta-percha insulation enabled the first transatlantic telegraph cable, briefly connecting Europe and North America.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telegraph-cable-insulation_cksucz?_a=BAMAMikS0",
-    "color": "#636461",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "subway-system",
-    "friendly_name": "London Underground",
-    "year": 1863,
-    "category": "media",
-    "description": "The Metropolitan Railway opened in London as the world's first underground passenger railway system.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/subway-system_dmkegp?_a=BAMAMikS0",
-    "color": "#393028",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "geunjeongjeon-completion",
     "friendly_name": "Geunjeongjeon Throne Hall Rebuilt",
     "year": 1867,
@@ -6158,19 +5450,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/geunjeongjeon-completion_mercqp?_a=BAMAMikS0",
     "color": "#25201a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "telephone-diaphragm",
-    "friendly_name": "Telephone Diaphragm Development",
-    "year": 1876,
-    "category": "invention",
-    "description": "Alexander Graham Bell patented the telephone, using a vibrating diaphragm to convert sound to electrical signals.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/telephone-diaphragm_mh7uvi?_a=BAMAMikS0",
-    "color": "#252117",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6228,19 +5507,6 @@
     "image_height": 440
   },
   {
-    "name": "steel-frame-building",
-    "friendly_name": "Steel Frame Building Construction",
-    "year": 1885,
-    "category": "architecture",
-    "description": "The Home Insurance Building in Chicago used a steel frame structure, pioneering modern skyscraper construction.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steel-frame-building_nzkek6?_a=BAMAMikS0",
-    "color": "#7b7b77",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "time-zone-development",
     "friendly_name": "Time Zone System Development",
     "year": 1884,
@@ -6288,32 +5554,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reed-shuttle-developed_hbbykw?_a=BAMAMikS0",
     "color": "#211f2b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "iron-smelting-bloomery",
-    "friendly_name": "Iron Smelting in Bloomery Furnace",
-    "year": -1200,
-    "category": "agriculture",
-    "description": "Anatolian metalworkers developed bloomery furnaces to smelt iron ore, beginning the transition from the Bronze Age.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/iron-smelting-bloomery_ckq8o1?_a=BAMAMikS0",
-    "color": "#1d212a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "water-clock-clepsydra",
-    "friendly_name": "Water Clock (Clepsydra) Development",
-    "year": -1500,
-    "category": "writing",
-    "description": "Ancient Egyptians developed water clocks (clepsydrae) to measure time, especially during nighttime hours.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/water-clock-clepsydra_yx0qyo?_a=BAMAMikS0",
-    "color": "#1e202c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
