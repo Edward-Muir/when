@@ -26,19 +26,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wild-grain-harvesting_pranb4?_a=BAMAMikS0"
   },
   {
-    "name": "first-bread-baked",
-    "friendly_name": "First Bread Baked",
-    "year": -12000,
-    "category": "agriculture",
-    "description": "Hunter-gatherers in the Near East baked flatbread from wild grains thousands of years before farming began.",
-    "difficulty": "medium",
-    "color": "#271f1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-bread-baked_kal7bh?_a=BAMAMikS0"
-  },
-  {
     "name": "barley-domesticated",
     "friendly_name": "Barley Domesticated",
     "year": -9000,
@@ -167,32 +154,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bananas-cultivated_bviweg?_a=BAMAMikS0"
-  },
-  {
-    "name": "first-cheese-making",
-    "friendly_name": "Cheese Making Begins",
-    "year": -5500,
-    "category": "agriculture",
-    "description": "Neolithic dairy farmers curdled milk into early cheese, preserving nutrition long after milking.",
-    "difficulty": "medium",
-    "color": "#291e1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cheese-making_juhdoq?_a=BAMAMikS0"
-  },
-  {
-    "name": "beekeeping-in-egypt",
-    "friendly_name": "Egyptians Keep Bees",
-    "year": -2400,
-    "category": "agriculture",
-    "description": "Ancient Egyptians kept bees in clay hives, harvesting honey as a sweetener, medicine, and offering.",
-    "difficulty": "medium",
-    "color": "#4c372f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beekeeping-in-egypt_s6wnav?_a=BAMAMikS0"
   },
   {
     "name": "egyptian-leavened-bread",
@@ -429,19 +390,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/champagne-region-wine_t1xphx?_a=BAMAMikS0"
   },
   {
-    "name": "windmills-grind-grain",
-    "friendly_name": "Windmills Grind Grain",
-    "year": 1180,
-    "category": "agriculture",
-    "description": "European communities built windmills to grind grain into flour, mechanizing a vital food task.",
-    "difficulty": "medium",
-    "color": "#3b3a33",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmills-grind-grain_wv49ya?_a=BAMAMikS0"
-  },
-  {
     "name": "medieval-guild-bakers",
     "friendly_name": "Bakers' Guilds Regulate Bread",
     "year": 1266,
@@ -479,19 +427,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aztec-chinampa-farming_xwteel?_a=BAMAMikS0"
-  },
-  {
-    "name": "columbian-exchange-food",
-    "friendly_name": "Columbian Food Exchange",
-    "year": 1492,
-    "category": "trade",
-    "description": "Columbus's voyages began a global swap of crops and animals, moving potatoes, maize, and more worldwide.",
-    "difficulty": "easy",
-    "color": "#222023",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/columbian-exchange-food_xtin6s?_a=BAMAMikS0"
   },
   {
     "name": "tomato-reaches-europe",
@@ -533,19 +468,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/turkey-reaches-europe_jfv2sw?_a=BAMAMikS0"
   },
   {
-    "name": "potato-reaches-spain",
-    "friendly_name": "Potato Arrives in Spain",
-    "year": 1570,
-    "category": "agriculture",
-    "description": "Spanish ships carried the Andean potato to Europe, where it became a staple crop centuries later.",
-    "difficulty": "easy",
-    "color": "#261f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/potato-reaches-spain_uq3upa?_a=BAMAMikS0"
-  },
-  {
     "name": "first-european-coffeehouse",
     "friendly_name": "First European Coffeehouse",
     "year": 1645,
@@ -570,19 +492,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/london-coffeehouse-opens_wkqe4v?_a=BAMAMikS0"
-  },
-  {
-    "name": "champagne-sparkling-wine",
-    "friendly_name": "Sparkling Champagne Perfected",
-    "year": 1700,
-    "category": "art",
-    "description": "French winemakers in Champagne refined methods to trap bubbles, creating celebrated sparkling wine.",
-    "difficulty": "medium",
-    "color": "#331c12",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/champagne-sparkling-wine_ahsje8?_a=BAMAMikS0"
   },
   {
     "name": "tea-craze-britain",
@@ -739,19 +648,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-breakfast-cereal_h6srg1?_a=BAMAMikS0"
-  },
-  {
-    "name": "coca-cola-first-sold",
-    "friendly_name": "Coca-Cola First Sold",
-    "year": 1886,
-    "category": "commerce",
-    "description": "Pharmacist John Pemberton mixed the first Coca-Cola syrup in Atlanta, creating an iconic soft drink.",
-    "difficulty": "easy",
-    "color": "#413830",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/coca-cola-first-sold_yxmw9b?_a=BAMAMikS0"
   },
   {
     "name": "phylloxera-wine-blight",
@@ -973,19 +869,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genetically-modified-crop_zni78r?_a=BAMAMikS0"
-  },
-  {
-    "name": "lab-grown-meat-tasted",
-    "friendly_name": "First Lab-Grown Burger",
-    "year": 2013,
-    "category": "medicine",
-    "description": "Scientists unveiled a hamburger grown from cultured cattle cells, a step toward meat without slaughter.",
-    "difficulty": "medium",
-    "color": "#172136",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lab-grown-meat-tasted_ikmajw?_a=BAMAMikS0"
   },
   {
     "name": "plant-based-meat-mainstream",

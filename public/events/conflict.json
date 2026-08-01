@@ -480,21 +480,6 @@
     "text_color": "light"
   },
   {
-    "name": "norman-conquest",
-    "friendly_name": "Norman Conquest of England",
-    "year": 1066,
-    "category": "warfare",
-    "description": "William the Conqueror defeated King Harold at the Battle of Hastings.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/norman-conquest_abi4c9?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 672379,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Norman_Conquest",
-    "color": "#3b312c",
-    "text_color": "light"
-  },
-  {
     "name": "battle-manzikert",
     "friendly_name": "Battle of Manzikert",
     "year": 1071,
@@ -690,21 +675,6 @@
     "text_color": "light"
   },
   {
-    "name": "hundred-years-war-end",
-    "friendly_name": "Hundred Years' War Ends",
-    "year": 1453,
-    "category": "revolution",
-    "description": "France expelled the English, ending over a century of intermittent warfare.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hundred-years-war-end_uxbp6e?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1401250,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
-    "color": "#494c47",
-    "text_color": "light"
-  },
-  {
     "name": "constantinople-fall",
     "friendly_name": "Fall of Constantinople",
     "year": 1453,
@@ -732,21 +702,6 @@
     "wikipedia_views": 1183324,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_the_Roses",
     "color": "#2f251a",
-    "text_color": "light"
-  },
-  {
-    "name": "fall-granada",
-    "friendly_name": "Fall of Granada",
-    "year": 1492,
-    "category": "empires",
-    "description": "The last Moorish stronghold in Spain fell, completing the Reconquista.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-granada_ynuzbq?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 161812,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Granada_War",
-    "color": "#4e2d2c",
     "text_color": "light"
   },
   {
@@ -1110,21 +1065,6 @@
     "text_color": "light"
   },
   {
-    "name": "american-independence",
-    "friendly_name": "Declaration of Independence Signed",
-    "year": 1776,
-    "category": "diplomacy",
-    "description": "The thirteen American colonies declared independence from British rule.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/american-independence_rokb7l?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 198561,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Signing_of_the_United_States_Declaration_of_Independence",
-    "color": "#291e1c",
-    "text_color": "light"
-  },
-  {
     "name": "battle-princeton-1777",
     "friendly_name": "Battle of Princeton",
     "year": 1777,
@@ -1167,21 +1107,6 @@
     "wikipedia_views": 267106,
     "wikipedia_url": "https://en.wikipedia.org/wiki/French_Revolution_of_1848",
     "color": "#271f1c",
-    "text_color": "light"
-  },
-  {
-    "name": "bastille-day",
-    "friendly_name": "Storming of the Bastille",
-    "year": 1789,
-    "category": "revolution",
-    "description": "Parisian revolutionaries stormed the royal fortress, symbolizing the revolution.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bastille-day_wcpteb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 393755,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
-    "color": "#281f1b",
     "text_color": "light"
   },
   {
@@ -1260,21 +1185,6 @@
     "text_color": "light"
   },
   {
-    "name": "napoleon-emperor",
-    "friendly_name": "Napoleon Crowned Emperor",
-    "year": 1804,
-    "category": "empires",
-    "description": "Napoleon Bonaparte crowned himself Emperor of the French.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napoleon-emperor_owadjr?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 29600,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Crown_of_Napoleon",
-    "color": "#292823",
-    "text_color": "light"
-  },
-  {
     "name": "battle-austerlitz",
     "friendly_name": "Battle of Austerlitz",
     "year": 1805,
@@ -1332,21 +1242,6 @@
     "wikipedia_views": 328114,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
     "color": "#323434",
-    "text_color": "light"
-  },
-  {
-    "name": "napoleon-waterloo",
-    "friendly_name": "Battle of Waterloo",
-    "year": 1815,
-    "category": "warfare",
-    "description": "Napoleon Bonaparte was decisively defeated, ending his rule over France.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napoleon-waterloo_tkjc6x?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1575660,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
-    "color": "#353533",
     "text_color": "light"
   },
   {
@@ -1512,36 +1407,6 @@
     "wikipedia_views": 372638,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charge_of_the_Light_Brigade",
     "color": "#4f443b",
-    "text_color": "light"
-  },
-  {
-    "name": "us-civil-war-start",
-    "friendly_name": "American Civil War Begins",
-    "year": 1861,
-    "category": "revolution",
-    "description": "Confederate forces attacked Fort Sumter, starting the bloodiest American conflict.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/us-civil-war-start_y0wxju?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 3636716,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War",
-    "color": "#212120",
-    "text_color": "light"
-  },
-  {
-    "name": "civil-war-start",
-    "friendly_name": "US Civil War Begins",
-    "year": 1861,
-    "category": "revolution",
-    "description": "The Confederate attack on Fort Sumter started the American Civil War.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/civil-war-start_wycsil?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 3636716,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War",
-    "color": "#212122",
     "text_color": "light"
   },
   {
@@ -2025,21 +1890,6 @@
     "text_color": "light"
   },
   {
-    "name": "october-revolution",
-    "friendly_name": "October Revolution",
-    "year": 1917,
-    "category": "revolution",
-    "description": "The Bolsheviks seized power in Petrograd, establishing the Soviet state.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/october-revolution_vlbzvt?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 676843,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/October_Revolution",
-    "color": "#2f2118",
-    "text_color": "light"
-  },
-  {
     "name": "wwi-end",
     "friendly_name": "World War I Ends",
     "year": 1918,
@@ -2280,21 +2130,6 @@
     "text_color": "light"
   },
   {
-    "name": "anschluss",
-    "friendly_name": "Anschluss",
-    "year": 1938,
-    "category": "warfare",
-    "description": "Nazi Germany annexed Austria without military resistance.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anschluss_qxlqym?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 711538,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Anschluss",
-    "color": "#2f2921",
-    "text_color": "light"
-  },
-  {
     "name": "wwii-start",
     "friendly_name": "World War II Begins",
     "year": 1939,
@@ -2520,21 +2355,6 @@
     "text_color": "light"
   },
   {
-    "name": "wwii-end-pacific",
-    "friendly_name": "V-J Day",
-    "year": 1945,
-    "category": "warfare",
-    "description": "Japan surrendered after atomic bombs were dropped on Hiroshima and Nagasaki.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wwii-end-pacific_jy1qab?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 203559,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/V-J_Day_in_Times_Square",
-    "color": "#25201c",
-    "text_color": "light"
-  },
-  {
     "name": "nuremberg-trials",
     "friendly_name": "Nuremberg Trials Begin",
     "year": 1945,
@@ -2592,21 +2412,6 @@
     "wikipedia_views": 2359,
     "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_World_War_II",
     "color": "#403625",
-    "text_color": "light"
-  },
-  {
-    "name": "partition-india",
-    "friendly_name": "Partition of India",
-    "year": 1947,
-    "category": "revolution",
-    "description": "British India was divided into India and Pakistan, causing massive displacement and violence.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/partition-india_igf1oj?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 963529,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Partition_of_India",
-    "color": "#282016",
     "text_color": "light"
   },
   {
@@ -2727,21 +2532,6 @@
     "wikipedia_views": 585403,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cuban_Revolution",
     "color": "#39474d",
-    "text_color": "light"
-  },
-  {
-    "name": "cuban-revolution-victory",
-    "friendly_name": "Cuban Revolution Victory",
-    "year": 1959,
-    "category": "revolution",
-    "description": "Fidel Castro overthrows Batistas dictatorship.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuban-revolution-victory_sl7c85?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 585403,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Cuban_Revolution",
-    "color": "#1c212b",
     "text_color": "light"
   },
   {
@@ -3075,21 +2865,6 @@
     "text_color": "light"
   },
   {
-    "name": "vietnam-end",
-    "friendly_name": "Vietnam War Ends",
-    "year": 1975,
-    "category": "revolution",
-    "description": "The Fall of Saigon marked the end of the Vietnam War.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vietnam-end_dagj55?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 4798307,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Vietnam_War",
-    "color": "#778c96",
-    "text_color": "dark"
-  },
-  {
     "name": "angolan-civil-war",
     "friendly_name": "Angolan Civil War Begins",
     "year": 1975,
@@ -3285,21 +3060,6 @@
     "text_color": "light"
   },
   {
-    "name": "soviet-collapse",
-    "friendly_name": "Soviet Union Collapses",
-    "year": 1991,
-    "category": "diplomacy",
-    "description": "The dissolution of the USSR ended the Cold War era.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/soviet-collapse_hfjhm6?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1184580,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
-    "color": "#383e47",
-    "text_color": "light"
-  },
-  {
     "name": "apartheid-ends",
     "friendly_name": "Apartheid Ends in South Africa",
     "year": 1994,
@@ -3327,21 +3087,6 @@
     "wikipedia_views": 1817664,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Rwandan_genocide",
     "color": "#1e2127",
-    "text_color": "light"
-  },
-  {
-    "name": "apartheid-end",
-    "friendly_name": "Apartheid Ends",
-    "year": 1994,
-    "category": "revolution",
-    "description": "Nelson Mandela became South Africa's first Black president.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/apartheid-end_sqhgrd?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1486885,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Apartheid",
-    "color": "#2f1b14",
     "text_color": "light"
   },
   {
@@ -4185,21 +3930,6 @@
     "text_color": "light"
   },
   {
-    "name": "battle-of-karbala",
-    "friendly_name": "Battle of Karbala",
-    "year": 680,
-    "category": "warfare",
-    "description": "Husayn ibn Ali was killed fighting the Umayyads, becoming a martyr central to Shia Islam.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battle-of-karbala_l3koai?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 476310,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Karbala",
-    "color": "#202220",
-    "text_color": "light"
-  },
-  {
     "name": "battle-of-guadalete",
     "friendly_name": "Battle of Guadalete",
     "year": 711,
@@ -4377,21 +4107,6 @@
     "wikipedia_views": 302570,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Albigensian_Crusade",
     "color": "#222120",
-    "text_color": "light"
-  },
-  {
-    "name": "mongol-invasion-jin",
-    "friendly_name": "Mongol Invasion of Jin Dynasty",
-    "year": 1211,
-    "category": "empires",
-    "description": "Genghis Khan invaded northern China, beginning the Mongol conquest of the Jin Dynasty.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-jin_dss5kx?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 81545,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Jin_dynasty",
-    "color": "#4f4941",
     "text_color": "light"
   },
   {
@@ -4695,21 +4410,6 @@
     "text_color": "light"
   },
   {
-    "name": "clovis-defeats-visigoths-at-vouille",
-    "friendly_name": "Clovis Defeats Visigoths at Vouillé",
-    "year": 507,
-    "category": "warfare",
-    "description": "Frankish King Clovis I defeated the Visigoths, killing King Alaric II and driving the Visigoths from most of Gaul into Hispania.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/clovis-defeats-visigoths-at-vouille_qyhudh?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 31304,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Vouillé",
-    "color": "#2a1f1f",
-    "text_color": "light"
-  },
-  {
     "name": "battle-of-badr",
     "friendly_name": "Battle of Badr",
     "year": 624,
@@ -4767,21 +4467,6 @@
     "wikipedia_views": 79288,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_conquest_of_Egypt",
     "color": "#352419",
-    "text_color": "light"
-  },
-  {
-    "name": "umayyad-conquest-of-spain",
-    "friendly_name": "Umayyad Conquest of Spain",
-    "year": 711,
-    "category": "empires",
-    "description": "Tariq ibn Ziyad led Umayyad forces across Gibraltar and defeated the Visigoths, beginning nearly 800 years of Islamic presence in Iberia.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/umayyad-conquest-of-spain_cdtgk7?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 207209,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula",
-    "color": "#2c2b2f",
     "text_color": "light"
   },
   {
@@ -5083,21 +4768,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Austrian_Succession",
     "color": "#2c1d17",
     "text_color": "light"
-  },
-  {
-    "name": "battles-of-lexington-and-concord",
-    "friendly_name": "Battles of Lexington and Concord",
-    "year": 1775,
-    "category": "warfare",
-    "description": "The first military engagements of the American Revolution, where colonial militiamen fired the 'shot heard round the world' against British troops.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/battles-of-lexington-and-concord_q3y1lg?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 580230,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord",
-    "color": "#90908e",
-    "text_color": "dark"
   },
   {
     "name": "shays-rebellion",
@@ -5595,21 +5265,6 @@
     "text_color": "light"
   },
   {
-    "name": "invasion-of-poland",
-    "friendly_name": "Invasion of Poland",
-    "year": 1939,
-    "category": "revolution",
-    "description": "Nazi Germany invaded Poland on September 1st, prompting Britain and France to declare war and beginning World War II in Europe.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/invasion-of-poland_kzaaev?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 708944,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
-    "color": "#4f3f2f",
-    "text_color": "light"
-  },
-  {
     "name": "katyn-massacre",
     "friendly_name": "Katyn Massacre",
     "year": 1940,
@@ -5862,21 +5517,6 @@
     "wikipedia_views": 227252,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tlatelolco_massacre",
     "color": "#202027",
-    "text_color": "light"
-  },
-  {
-    "name": "indo-pakistani-war-1971",
-    "friendly_name": "Indo-Pakistani War",
-    "year": 1971,
-    "category": "warfare",
-    "description": "India intervened in East Pakistan's independence struggle, defeating Pakistan in two weeks and enabling the creation of Bangladesh.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indo-pakistani-war-1971_q4xvfg?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 82074,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/India–Pakistan_war_of_1971",
-    "color": "#202028",
     "text_color": "light"
   },
   {
@@ -6285,19 +5925,6 @@
     "text_color": "light"
   },
   {
-    "name": "romanization-britain",
-    "friendly_name": "Roman Conquest of Britain",
-    "year": 43,
-    "category": "empires",
-    "description": "Emperor Claudius launched the Roman invasion of Britain, establishing a province that lasted nearly four centuries.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/romanization-britain_aq4gtk?_a=BAMAMikS0",
-    "color": "#534e46",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "vercingetorix-gallic-revolt",
     "friendly_name": "Vercingetorix Leads Gallic Revolt",
     "year": -52,
@@ -6332,19 +5959,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-of-jerusalem-70ce_civdju?_a=BAMAMikS0",
     "color": "#2b1d1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "masada-siege-defense",
-    "friendly_name": "Siege of Masada",
-    "year": 73,
-    "category": "warfare",
-    "description": "Jewish rebels held out against a Roman siege atop a desert fortress before choosing mass suicide over capture.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/masada-siege-defense_cwqxjn?_a=BAMAMikS0",
-    "color": "#5e342f",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6467,19 +6081,6 @@
     "image_height": 440
   },
   {
-    "name": "great-migration-barbarians",
-    "friendly_name": "Great Migration of Barbarians",
-    "year": 375,
-    "category": "empires",
-    "description": "Hun pressure drove Germanic tribes westward across Roman borders, destabilizing the Western Roman Empire.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-migration-barbarians_xfpclc?_a=BAMAMikS0",
-    "color": "#402e37",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "stilicho-roman-general",
     "friendly_name": "Stilicho's Military Campaigns",
     "year": 395,
@@ -6488,19 +6089,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stilicho-roman-general_he1qkj?_a=BAMAMikS0",
     "color": "#2b2b28",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "stirrup-east-asia",
-    "friendly_name": "Stirrup Adoption in East Asia",
-    "year": 300,
-    "category": "agriculture",
-    "description": "The stirrup emerged in China, revolutionizing mounted cavalry warfare across Asia.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stirrup-east-asia_czakfs?_a=BAMAMikS0",
-    "color": "#341a0b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6766,32 +6354,6 @@
     "image_height": 440
   },
   {
-    "name": "siege-constantinople-arab",
-    "friendly_name": "Arab Siege of Constantinople",
-    "year": 717,
-    "category": "empires",
-    "description": "A massive Arab naval and land assault on Constantinople was repelled, preserving the Byzantine Empire.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/siege-constantinople-arab_ji5bfl?_a=BAMAMikS0",
-    "color": "#271e22",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "charles-martel-frankish-victory",
-    "friendly_name": "Charles Martel Wins at Tours",
-    "year": 732,
-    "category": "warfare",
-    "description": "Frankish leader Charles Martel halted the Umayyad advance into Western Europe near Poitiers.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/charles-martel-frankish-victory_gb4byg?_a=BAMAMikS0",
-    "color": "#45311f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "charlemagne-saxon-wars",
     "friendly_name": "Charlemagne Conquers Saxony",
     "year": 772,
@@ -6909,19 +6471,6 @@
     "image_height": 440
   },
   {
-    "name": "rajendra-chola-conquest",
-    "friendly_name": "Rajendra Chola's Conquests",
-    "year": 1025,
-    "category": "empires",
-    "description": "Rajendra Chola I raided Southeast Asian ports and marched north to the Ganges, extending Chola power.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rajendra-chola-conquest_bzoqin?_a=BAMAMikS0",
-    "color": "#8a6e3e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "basil-ii-bulgar-victories",
     "friendly_name": "Battle of Serres Basil II Victory",
     "year": 1014,
@@ -6948,32 +6497,6 @@
     "image_height": 440
   },
   {
-    "name": "manzikert-consequences-byzant",
-    "friendly_name": "Battle of Manzikert Consequences",
-    "year": 1071,
-    "category": "empires",
-    "description": "The Seljuk Turks defeated and captured the Byzantine emperor, opening Anatolia to Turkish settlement.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/manzikert-consequences-byzant_decymi?_a=BAMAMikS0",
-    "color": "#483a2c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "song-gunpowder-weapons",
-    "friendly_name": "Song Gunpowder Manual",
-    "year": 1044,
-    "category": "writing",
-    "description": "The Song Dynasty published the first known gunpowder weapon formulas in the Wujing Zongyao military manual.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-gunpowder-weapons_b51o7f?_a=BAMAMikS0",
-    "color": "#281f1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "antioch-crusader-conflicts",
     "friendly_name": "Crusaders Capture Antioch",
     "year": 1098,
@@ -6982,19 +6505,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/antioch-crusader-conflicts_pdtlaa?_a=BAMAMikS0",
     "color": "#271f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "khwarezmian-shah-conquest",
-    "friendly_name": "Khwarezmian Shah Conquers Khorasan",
-    "year": 1200,
-    "category": "empires",
-    "description": "The Khwarezmian Empire expanded across Central Asia and Persia before provoking the Mongol invasion.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/khwarezmian-shah-conquest_picyyb?_a=BAMAMikS0",
-    "color": "#353435",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7047,19 +6557,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/montgisard-crusaders-saladin_qzvcap?_a=BAMAMikS0",
     "color": "#5b452f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "second-crusade-battle-hattin",
-    "friendly_name": "Battle of Hattin Crusaders Defeated",
-    "year": 1187,
-    "category": "warfare",
-    "description": "Saladin annihilated the Crusader army at Hattin, leading to the recapture of Jerusalem.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/second-crusade-battle-hattin_jl00rh?_a=BAMAMikS0",
-    "color": "#563822",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7247,19 +6744,6 @@
     "image_height": 440
   },
   {
-    "name": "mongol-conquest-bagdad",
-    "friendly_name": "Mongol Siege of Baghdad",
-    "year": 1258,
-    "category": "warfare",
-    "description": "Hulagu Khan sacked Baghdad and killed the Abbasid Caliph, ending the Islamic Golden Age.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-conquest-bagdad_tsv7ur?_a=BAMAMikS0",
-    "color": "#271f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "mongol-naval-expeditions",
     "friendly_name": "First Mongol Invasion of Japan",
     "year": 1274,
@@ -7273,19 +6757,6 @@
     "image_height": 440
   },
   {
-    "name": "mongol-invasion-japan-first",
-    "friendly_name": "Mongol Invasion Japan First",
-    "year": 1274,
-    "category": "warfare",
-    "description": "Mongol and Korean forces landed at Hakata Bay but withdrew after fierce samurai resistance and a typhoon.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-japan-first_br4dbq?_a=BAMAMikS0",
-    "color": "#52493f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "mongol-khubilai-conquest",
     "friendly_name": "Kublai Khan Conquers the Song",
     "year": 1279,
@@ -7294,19 +6765,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-khubilai-conquest_fmfivd?_a=BAMAMikS0",
     "color": "#332d28",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "mongol-invasion-japan-second",
-    "friendly_name": "Kamikaze Stops Mongol Invasion",
-    "year": 1281,
-    "category": "warfare",
-    "description": "A massive Mongol fleet was destroyed by a typhoon, called kamikaze ('divine wind') by the Japanese.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mongol-invasion-japan-second_ycaz9b?_a=BAMAMikS0",
-    "color": "#24211c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7494,19 +6952,6 @@
     "image_height": 440
   },
   {
-    "name": "inca-expansion",
-    "friendly_name": "Inca Empire Massive Expansion",
-    "year": 1438,
-    "category": "empires",
-    "description": "Pachacuti transformed the Inca from a small kingdom into the largest empire in the pre-Columbian Americas.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/inca-expansion_b1wlgx?_a=BAMAMikS0",
-    "color": "#433f3c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "gunpowder-military-adoption-europe",
     "friendly_name": "Gunpowder Reshapes Europe",
     "year": 1450,
@@ -7515,32 +6960,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gunpowder-military-adoption-europe_kmupy8?_a=BAMAMikS0",
     "color": "#271f1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "fall-constantinople-1453",
-    "friendly_name": "Mehmed II Takes Constantinople",
-    "year": 1453,
-    "category": "empires",
-    "description": "Ottoman Sultan Mehmed II conquered Constantinople using massive cannons, ending the Byzantine Empire.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-constantinople-1453_dg6alg?_a=BAMAMikS0",
-    "color": "#271f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "ottoman-final-siege-1453",
-    "friendly_name": "Siege of Constantinople Final",
-    "year": 1453,
-    "category": "empires",
-    "description": "Mehmed II's 53-day siege breached the Theodosian Walls, ending over a millennium of Roman imperial continuity.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-final-siege-1453_vuhwe8?_a=BAMAMikS0",
-    "color": "#5a3a27",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7715,19 +7134,6 @@
     "image_height": 440
   },
   {
-    "name": "aztec-expansion-reign",
-    "friendly_name": "Aztec Empire Under Montezuma",
-    "year": 1502,
-    "category": "empires",
-    "description": "Montezuma II expanded the Aztec Empire to its greatest extent through campaigns in Oaxaca and beyond.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aztec-expansion-reign_sylzsd?_a=BAMAMikS0",
-    "color": "#826e56",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "mombasa-portuguese-control",
     "friendly_name": "Portugal Seizes Mombasa",
     "year": 1505,
@@ -7788,19 +7194,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/safavid-battled-ottomans_tecgks?_a=BAMAMikS0",
     "color": "#68412a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "spanish-conquest-aztec",
-    "friendly_name": "Fall of Aztec Empire",
-    "year": 1521,
-    "category": "empires",
-    "description": "Hernan Cortes and indigenous allies besieged and captured Tenochtitlan, destroying the Aztec Empire.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/spanish-conquest-aztec_pxpnsb?_a=BAMAMikS0",
-    "color": "#5c3a2e",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7936,32 +7329,6 @@
     "image_height": 440
   },
   {
-    "name": "toyotomi-hideo-invasions",
-    "friendly_name": "Toyotomi Hideyoshi Invades Korea",
-    "year": 1592,
-    "category": "revolution",
-    "description": "Hideyoshi launched a massive invasion of Korea with 160,000 troops, aiming to conquer Ming China.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/toyotomi-hideo-invasions_nortkn?_a=BAMAMikS0",
-    "color": "#483a3c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "korean-imjin-war",
-    "friendly_name": "Imjin War in Korea",
-    "year": 1592,
-    "category": "warfare",
-    "description": "Japan invaded Korea, but Admiral Yi Sun-sin's naval victories and Ming reinforcements repelled the attack.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/korean-imjin-war_koyutp?_a=BAMAMikS0",
-    "color": "#2c2728",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "imjin-war-turtle-ship",
     "friendly_name": "First Turtle Ship Combat Victory",
     "year": 1592,
@@ -7970,19 +7337,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/imjin-war-turtle-ship_g4dvic?_a=BAMAMikS0",
     "color": "#291f1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "mombasa-fort",
-    "friendly_name": "Fort Jesus Built in Mombasa",
-    "year": 1593,
-    "category": "architecture",
-    "description": "The Portuguese built Fort Jesus to secure Mombasa, a key stronghold on the East African coast.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mombasa-fort_xj9fxu?_a=BAMAMikS0",
-    "color": "#242020",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8092,19 +7446,6 @@
     "image_height": 440
   },
   {
-    "name": "qing-expansion",
-    "friendly_name": "Qing Dynasty Expansion",
-    "year": 1644,
-    "category": "empires",
-    "description": "Manchu forces captured Beijing and established the Qing Dynasty, conquering all of China over decades.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/qing-expansion_i9nevr?_a=BAMAMikS0",
-    "color": "#271f1c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "louis-xiv-expansion",
     "friendly_name": "Louis XIV's Expansion Begins",
     "year": 1667,
@@ -8165,19 +7506,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/danish-swedish-wars_urfqjj?_a=BAMAMikS0",
     "color": "#22211e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "maratha-resistance-begins",
-    "friendly_name": "Shivaji Founds Maratha Empire",
-    "year": 1674,
-    "category": "empires",
-    "description": "Shivaji was crowned Chhatrapati, founding the Maratha Empire and challenging Mughal dominance in India.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maratha-resistance-begins_we1gtp?_a=BAMAMikS0",
-    "color": "#271f1d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8404,19 +7732,6 @@
     "image_height": 440
   },
   {
-    "name": "yorktown-surrender",
-    "friendly_name": "Yorktown Surrender",
-    "year": 1781,
-    "category": "warfare",
-    "description": "British General Cornwallis surrendered at Yorktown, effectively ending the American Revolutionary War.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yorktown-surrender_wufomd?_a=BAMAMikS0",
-    "color": "#301e17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "war-declared-austria",
     "friendly_name": "War Declared Against Austria",
     "year": 1792,
@@ -8469,19 +7784,6 @@
     "image_height": 440
   },
   {
-    "name": "napoleon-retreat-russia",
-    "friendly_name": "Napoleon's Russian Campaign",
-    "year": 1812,
-    "category": "warfare",
-    "description": "Napoleon invaded Russia with 600,000 troops but retreated in devastating winter conditions, losing most of his army.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/napoleon-retreat-russia_pqeyyt?_a=BAMAMikS0",
-    "color": "#b3ad9d",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "battle-waterloo-napoleon",
     "friendly_name": "Battle of Waterloo",
     "year": 1815,
@@ -8516,19 +7818,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mfecane-wars_n7fivp?_a=BAMAMikS0",
     "color": "#6f6049",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "zulu-impis-regiment",
-    "friendly_name": "Zulu Impis Organized",
-    "year": 1818,
-    "category": "empires",
-    "description": "Shaka organized Zulu warriors into age-based impis using the 'horns of the buffalo' encirclement tactic.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zulu-impis-regiment_bncm0z?_a=BAMAMikS0",
-    "color": "#4b483e",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8586,19 +7875,6 @@
     "image_height": 440
   },
   {
-    "name": "blitzkrieg-tactics-deployed",
-    "friendly_name": "Blitzkrieg Tactics Deployed",
-    "year": 1939,
-    "category": "warfare",
-    "description": "Germany's invasion of Poland showcased blitzkrieg warfare, combining tanks, planes, and infantry for rapid victory.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blitzkrieg-tactics-deployed_igse4f?_a=BAMAMikS0",
-    "color": "#503e2d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "atomic-bomb-nagasaki-ww2",
     "friendly_name": "Atomic Bomb on Nagasaki",
     "year": 1945,
@@ -8607,45 +7883,6 @@
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/atomic-bomb-nagasaki-ww2_bbgyvo?_a=BAMAMikS0",
     "color": "#26201a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "korean-war-begins-1950",
-    "friendly_name": "Korean War Begins",
-    "year": 1950,
-    "category": "revolution",
-    "description": "North Korea invaded the South, drawing in UN and Chinese forces in a Cold War proxy conflict.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/korean-war-begins-1950_wkhkga?_a=BAMAMikS0",
-    "color": "#55646c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "hungarian-uprising-1956",
-    "friendly_name": "Hungarian Uprising",
-    "year": 1956,
-    "category": "revolution",
-    "description": "Hungarians revolted against Soviet control, but Soviet tanks crushed the uprising within weeks.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hungarian-uprising-1956_dl4fho?_a=BAMAMikS0",
-    "color": "#3f3b3d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "vietnam-war-escalates-1964",
-    "friendly_name": "Vietnam War Escalates",
-    "year": 1964,
-    "category": "revolution",
-    "description": "The Gulf of Tonkin incident led to massive US military escalation in Vietnam.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vietnam-war-escalates-1964_fdz2fk?_a=BAMAMikS0",
-    "color": "#293138",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
