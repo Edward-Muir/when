@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.0](https://github.com/Edward-Muir/when/compare/v1.5.0...v1.6.0) (2026-08-02)
+
+
+### Features
+
+* report card issues from the card detail view ([#27](https://github.com/Edward-Muir/when/issues/27)) ([813b6bb](https://github.com/Edward-Muir/when/commit/813b6bb68a1ab3b9a58a24df541e778f0678bca3))
+
 ## [1.5.0](https://github.com/Edward-Muir/when/compare/v1.4.0...v1.5.0) (2026-07-11)
 
 
