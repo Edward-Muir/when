@@ -70,12 +70,12 @@ Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePha
 
 Located in `api/`. Requires `vercel dev` to run locally.
 
-| Endpoint                   | Method | Purpose                                              |
-| -------------------------- | ------ | ---------------------------------------------------- |
-| `/api/leaderboard/[date]`  | GET    | Fetch daily leaderboard (with bot generation)        |
-| `/api/leaderboard/submit`  | POST   | Submit daily score                                   |
-| `/api/card-reports/submit` | POST   | Report a problem with a card's data                  |
-| `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) |
+| Endpoint                   | Method | Purpose                                                              |
+| -------------------------- | ------ | -------------------------------------------------------------------- |
+| `/api/leaderboard/[date]`  | GET    | Fetch daily leaderboard (with bot generation)                        |
+| `/api/leaderboard/submit`  | POST   | Submit daily score                                                   |
+| `/api/card-reports/submit` | POST   | Report a problem with a card's data                                  |
+| `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) — **key-gated** |
 
 Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-generated per date via `botGeneration.ts`.
 
@@ -84,8 +84,11 @@ Card reports store only an event id + reason id + timestamp under `cardreport:*`
 Environment variables in `.env`:
 
 - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` - Redis connection
+- `REPORTS_ADMIN_KEY` - Shared secret for reading card reports (see below)
 - `CLOUDINARY_*` - Image hosting
 - `WIKI_*` - Wikipedia API access
+
+`/api/card-reports/submit` is public — it is the player-facing write path. `/api/card-reports/list` requires `REPORTS_ADMIN_KEY`, checked before any Redis call so a rejected request costs no Upstash commands (the reason for the gate: Upstash bills per command, and an open GET runs a `ZRANGE` + `LRANGE` for anyone who loops it). Generate a key with `openssl rand -hex 24` and set it in the Vercel project for **both Production and Preview** — previews are a separate environment. With the variable unset the endpoint returns 503 in production (fails closed) but allows through elsewhere, so `vercel dev` needs no setup. The `/card-reports` page takes the key from `?key=…` once (then strips it from the URL) or from a paste-in field, and stores it in localStorage under `when-reports-key`.
 
 ## Z-Index Hierarchy (Game.tsx & Timeline.tsx)
 

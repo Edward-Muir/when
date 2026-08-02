@@ -16,8 +16,8 @@ import {
 
 const redis = Redis.fromEnv();
 
-function header(req: VercelRequest, name: string): string | undefined {
-  const value = req.headers[name];
+/** Node lower-cases header names, and repeated headers arrive as an array. */
+function first(value: string | string[] | undefined): string | undefined {
   return Array.isArray(value) ? value[0] : value;
 }
 
@@ -35,9 +35,9 @@ function header(req: VercelRequest, name: string): string | undefined {
  */
 function rateLimitSubject(req: VercelRequest, deviceId: string): string {
   const raw =
-    header(req, 'x-vercel-forwarded-for') ||
-    header(req, 'x-real-ip') ||
-    header(req, 'x-forwarded-for');
+    first(req.headers['x-vercel-forwarded-for']) ||
+    first(req.headers['x-real-ip']) ||
+    first(req.headers['x-forwarded-for']);
   const ip = raw?.split(',').pop()?.trim();
   return createHash('sha256')
     .update(ip || `device:${deviceId}`)
