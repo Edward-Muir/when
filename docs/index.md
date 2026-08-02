@@ -12,6 +12,7 @@ Session summaries and reference docs for the "When" timeline game. Session files
 - [gameplay-feel/](gameplay-feel/index.md) — Game feel: streak feedback, game-over popup, transitions, and the color system
 - [mobile-ios/](mobile-ios/index.md) — Capacitor iOS app setup and iOS-specific fixes
 - [dev-tooling/](dev-tooling/index.md) — Local dev troubleshooting (`vercel dev`), category clustering/refactor tooling
+- [card-reports/](card-reports/index.md) — Player-reported card problems and the hidden maintainer view
 
 ## Root docs
 
