@@ -54,6 +54,7 @@
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
     "format:check": "prettier --check \"src/**/*.{ts,tsx,json,css}\"",
     "typecheck": "tsc --noEmit",
+    "typecheck:api": "tsc -p api/tsconfig.json --noEmit",
     "prepare": "husky",
     "release": "commit-and-tag-version --no-verify --commit-all",
     "release:patch": "commit-and-tag-version --release-as patch --no-verify --commit-all",

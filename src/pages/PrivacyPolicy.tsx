@@ -32,12 +32,18 @@ const PrivacyPolicy: React.FC = () => (
         <strong className="text-text">Game Scores:</strong> Your game results (scores and streaks)
         are stored locally and submitted to the leaderboard for daily challenge rankings.
       </li>
+      <li className={listItem}>
+        <strong className="text-text">Card Issue Reports:</strong> If you report a problem with a
+        card, we record which card it was, the reason you chose, and the time. There is no free-text
+        field, and the report is not linked to your name or your leaderboard entries.
+      </li>
     </ul>
 
     <h2 className={sectionTitle}>How We Use Your Information</h2>
     <ul className="list-disc space-y-2 mb-4">
       <li className={listItem}>Display your scores on the daily challenge leaderboard</li>
       <li className={listItem}>Prevent duplicate leaderboard submissions from the same device</li>
+      <li className={listItem}>Fix mistakes in the historical event cards you report</li>
     </ul>
     <p className={paragraph}>
       We do not use your information for analytics, advertising, tracking, profiling, or any purpose
@@ -49,7 +55,8 @@ const PrivacyPolicy: React.FC = () => (
       Game preferences and scores are stored locally on your device using your browser&apos;s local
       storage. Leaderboard data (device identifier, player name, and scores) is stored on our server
       using Upstash Redis, a cloud database service. Leaderboard entries are retained indefinitely
-      to maintain historical rankings.
+      to maintain historical rankings. Card issue reports are stored in the same database for around
+      three months and contain no device identifier.
     </p>
 
     <h2 className={sectionTitle}>Third-Party Sharing</h2>

@@ -14,6 +14,7 @@ import Stats from './pages/Stats';
 import Timeline from './pages/Timeline';
 import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
+import CardReports from './pages/CardReports';
 import AnimJig from './pages/AnimJig';
 import ReminderPreview from './pages/ReminderPreview';
 import reportWebVitals from './reportWebVitals';
@@ -36,6 +37,7 @@ root.render(
         <Route path="/timeline" element={<Timeline />} />
         <Route path="/unlock-preview" element={<UnlockPreview />} />
         <Route path="/image-qc" element={<ImageQc />} />
+        <Route path="/card-reports" element={<CardReports />} />
         <Route path="/anim-jig" element={<AnimJig />} />
         <Route path="/reminder-preview" element={<ReminderPreview />} />
         <Route path="*" element={<Navigate to="/" replace />} />

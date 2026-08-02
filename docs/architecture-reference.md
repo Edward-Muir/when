@@ -68,14 +68,20 @@ Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePha
 
 ## API Routes (Vercel Serverless)
 
-Located in `api/leaderboard/`. Requires `vercel dev` to run locally.
+Located in `api/`. Requires `vercel dev` to run locally.
 
-| Endpoint                  | Method | Purpose                                       |
-| ------------------------- | ------ | --------------------------------------------- |
-| `/api/leaderboard/[date]` | GET    | Fetch daily leaderboard (with bot generation) |
-| `/api/leaderboard/submit` | POST   | Submit daily score                            |
+| Endpoint                   | Method | Purpose                                              |
+| -------------------------- | ------ | ---------------------------------------------------- |
+| `/api/leaderboard/[date]`  | GET    | Fetch daily leaderboard (with bot generation)        |
+| `/api/leaderboard/submit`  | POST   | Submit daily score                                   |
+| `/api/card-reports/submit` | POST   | Report a problem with a card's data                  |
+| `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) |
 
-Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-generated per date via `botGeneration.ts`. Environment variables in `.env`:
+Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-generated per date via `botGeneration.ts`.
+
+Card reports store only an event id + reason id + timestamp under `cardreport:*` keys — no device id, no IP, no free text. Every key is TTL'd or capped. Abuse controls are a per-device-per-card dedup (30d) and a per-IP rate limit (20/hour); the IP is SHA-256 hashed and used only as an expiring rate-limit key. `npm run typecheck:api` type-checks `api/` (it is not covered by `npm run lint` or `npm run typecheck`).
+
+Environment variables in `.env`:
 
 - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` - Redis connection
 - `CLOUDINARY_*` - Image hosting

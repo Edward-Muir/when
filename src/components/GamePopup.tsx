@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Check, X, Trophy, Share2, Flag } from 'lucide-react';
+import { Check, X, Trophy, Share2 } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import { generateEmojiGrid, shareResults } from '../utils/share';
@@ -12,7 +12,7 @@ import LeaderboardSubmit from './LeaderboardSubmit';
 import NextDailyCountdown from './NextDailyCountdown';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
-import { buildBugReportMailto } from '../utils/bugReport';
+import ReportIssueButton from './ReportIssueButton';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -103,27 +103,6 @@ function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: 
           <CategoryIcon category={event.category} className="text-text-muted w-16 h-16" />
         </div>
       )}
-    </div>
-  );
-}
-
-// Sub-component for reporting a problem with the card's data (wrong year, bad
-// image, typo). Opens the user's mail app with the card details pre-filled.
-function ReportIssueButton({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
-  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
-  return (
-    <div className="px-4 border-t border-border">
-      <a
-        href={buildBugReportMailto(event)}
-        // The description popup lets clicks bubble to the backdrop to dismiss —
-        // stop that here so the mail app opens without the popup vanishing.
-        onClick={(e) => e.stopPropagation()}
-        aria-label="Report an issue with this card"
-        className={`w-full min-h-[44px] flex items-center justify-center gap-1.5 font-body text-xs opacity-60 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
-      >
-        <Flag className="w-3.5 h-3.5" />
-        Report an issue
-      </a>
     </div>
   );
 }
