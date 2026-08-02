@@ -12,6 +12,7 @@ import LeaderboardSubmit from './LeaderboardSubmit';
 import NextDailyCountdown from './NextDailyCountdown';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
+import ReportIssueButton from './ReportIssueButton';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -346,6 +347,7 @@ function EventPopupContent({
           </p>
         </div>
       )}
+      {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
       {nextPlayer && (
         <div className="px-4 py-4 border-t border-border">
           <p className={`${getEventTextClass(event)} text-xl text-center font-display`}>

@@ -14,7 +14,8 @@ npm start                    # Frontend-only dev server (no API)
 npm run build                # Production build
 npm test                     # Tests (watch mode)
 npm run lint                 # ESLint check
-npm run typecheck            # TypeScript check
+npm run typecheck            # TypeScript check (src only)
+npm run typecheck:api        # TypeScript check for api/ (not covered by lint/typecheck)
 npm run format               # Prettier format
 npm run release              # Bump version (auto-detect from commits)
 ```
@@ -33,8 +34,8 @@ npm run release              # Bump version (auto-detect from commits)
 - **Game phases**: `loading` -> `modeSelect` -> `transitioning` -> `playing` -> `gameOver` -> `viewTimeline`
 - **Game modes**: Daily (seeded, one play/day), Sudden Death, Freeplay
 - **State**: All in `src/hooks/useWhenGame.ts` — `WhenGameState` tracks phase, timeline, players, deck, streaks
-- **Routes**: `/` (main), `/daily` (auto-start daily mode) — defined in `src/index.tsx`
-- **API**: Leaderboard endpoints in `api/leaderboard/` (Upstash Redis). Needs `vercel dev` to run locally.
+- **Routes**: `/` (main), `/daily` (auto-start daily mode) — defined in `src/index.tsx`. Hidden maintainer tools (unlinked): `/image-qc`, `/card-reports`. A new client route also needs a rewrite in `vercel.json` or it 404s on direct load in production.
+- **API**: `api/leaderboard/` (daily scores) and `api/card-reports/` (player-reported card problems), both on Upstash Redis. Needs `vercel dev` to run locally.
 
 ## Styling
 
