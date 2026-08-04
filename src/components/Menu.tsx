@@ -13,12 +13,15 @@ import {
   Apple,
   Bell,
   BellOff,
+  Volume2,
+  VolumeX,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
 import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
+import { useSound } from '../hooks/useSound';
 import { shareApp } from '../utils/share';
 import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
@@ -258,6 +261,7 @@ const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> 
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
+  const { isMuted, toggleMuted } = useSound();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
 
@@ -340,6 +344,12 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                 <button onClick={toggleTheme} className={menuItemClass}>
                   {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
                   <span className="font-body">{isDark ? 'Light Mode' : 'Dark Mode'}</span>
+                </button>
+
+                {/* Sound toggle — kept open so the user sees the switch and can toggle back. */}
+                <button onClick={toggleMuted} className={menuItemClass}>
+                  {isMuted ? <VolumeX className={iconClass} /> : <Volume2 className={iconClass} />}
+                  <span className="font-body">{isMuted ? 'Sound Off' : 'Sound On'}</span>
                 </button>
 
                 <DailyReminderMenuItem itemClass={menuItemClass} iconClass={iconClass} />
