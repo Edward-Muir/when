@@ -70,14 +70,16 @@ Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePha
 
 Located in `api/`. Requires `vercel dev` to run locally.
 
-| Endpoint                   | Method | Purpose                                                              |
-| -------------------------- | ------ | -------------------------------------------------------------------- |
-| `/api/leaderboard/[date]`  | GET    | Fetch daily leaderboard (with bot generation)                        |
-| `/api/leaderboard/submit`  | POST   | Submit daily score                                                   |
-| `/api/card-reports/submit` | POST   | Report a problem with a card's data                                  |
-| `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) — **key-gated** |
+| Endpoint                   | Method | Purpose                                                               |
+| -------------------------- | ------ | --------------------------------------------------------------------- |
+| `/api/leaderboard/[date]`  | GET    | Fetch daily leaderboard (with bot generation, names filtered on read) |
+| `/api/leaderboard/submit`  | POST   | Submit daily score                                                    |
+| `/api/card-reports/submit` | POST   | Report a problem with a card's data                                   |
+| `/api/card-reports/list`   | GET    | Read reports (feeds the hidden `/card-reports` page) — **key-gated**  |
 
 Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-generated per date via `botGeneration.ts`.
+
+Display names go through `nameFilter.ts` (built on `obscenity`) on **both** write and read — a blocked name is silently swapped for a deterministic generated one rather than rejected. Filtering on read is deliberate: the sorted set's member is the JSON entry itself, so masking on the way out cleans entries stored before the filter existed and makes any later word-list addition apply retroactively. See [Display Name Filter](leaderboard-daily/session-2026-08-10-display-name-filter.md).
 
 Card reports store only an event id + reason id + timestamp under `cardreport:*` keys — no device id, no IP, no free text. Every key is TTL'd or capped. Abuse controls are a per-device-per-card dedup (30d) and a per-IP rate limit (20/hour); the IP is SHA-256 hashed and used only as an expiring rate-limit key. `npm run typecheck:api` type-checks `api/` (it is not covered by `npm run lint` or `npm run typecheck`).
 
@@ -120,7 +122,7 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 
 **Frontend**: `react`, `react-dom`, `react-router-dom`, `@dnd-kit/core`, `@dnd-kit/utilities`, `framer-motion`, `lucide-react`, `react-confetti-explosion`, `tailwindcss`
 
-**Backend**: `@vercel/node`, `@upstash/redis`
+**Backend**: `@vercel/node`, `@upstash/redis`, `obscenity` (display-name filtering; server-only, never bundled into the client)
 
 **Mobile**: `@capacitor/core`, `@capacitor/haptics`, `@capacitor/ios`, `@capacitor/splash-screen`, `@capacitor/status-bar`
 

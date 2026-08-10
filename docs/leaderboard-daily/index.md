@@ -2,6 +2,7 @@
 
 Daily mode and leaderboard features, live refresh, and bot population.
 
+- [2026-08-10 — Display Name Filter](session-2026-08-10-display-name-filter.md) — filter abusive leaderboard names on write _and_ on read, silently swapping them for generated ones
 - [2026-06-01 — Daily Rollover Refresh](session-2026-06-01-daily-rollover-refresh.md) — refresh daily leaderboard & theme on day rollover / app resume
 - [2026-02-28 — Leaderboard Skeleton Loading](session-2026-02-28-leaderboard-skeleton-loading.md) — skeleton loading states + mobile web spacing
 - [Daily Leaderboard Feature](daily-leaderboard-feature.md) — legacy: global leaderboard for daily challenges
