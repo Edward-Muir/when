@@ -106,9 +106,10 @@ const AchievementCard: React.FC<AchievementCardProps> = ({
 }) => {
   const event = eventsByName?.get(achievement.eventName);
   const large = size === 'lg';
-  // The small grid badge (112px circle) uses the width-capped thumbnail — the uncapped
-  // detail variant is reserved for the large popup/celebration render, which layers the
-  // (already-cached) thumbnail underneath so the popup shows art instantly.
+  // The small grid badge (112px circle) uses the smaller thumbnail rung; the larger detail
+  // rung is reserved for the popup/celebration render, which layers the (already-cached)
+  // thumbnail underneath so the popup shows art instantly. Both rungs are square, so the
+  // circular crop lands identically either way.
   const imageSrc = getImageUrl(event?.image_url, large ? 'detail' : 'thumbnail');
   const placeholderSrc = large ? getImageUrl(event?.image_url, 'thumbnail') : undefined;
 

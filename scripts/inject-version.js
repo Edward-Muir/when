@@ -29,7 +29,11 @@ console.log(`Version ${version} written to public/version.json`);
 const swPath = path.join(__dirname, '..', 'public', 'service-worker.js');
 let swContent = fs.readFileSync(swPath, 'utf8');
 
-// Replace cache version strings
+// Replace cache version strings.
+// Only the three caches below are versioned. Do NOT add IMAGE_CACHE here: versioning it
+// would delete every cached card image on each release (activate() drops any cache whose
+// name it doesn't recognise), so players would re-download their art several times a week
+// — exactly the Cloudinary bandwidth this cache exists to avoid.
 swContent = swContent.replace(
   /const CACHE_NAME = 'when-v[^']+';/,
   `const CACHE_NAME = 'when-v${version}';`

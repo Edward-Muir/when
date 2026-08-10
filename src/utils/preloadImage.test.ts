@@ -52,7 +52,7 @@ describe('preloadEventImages', () => {
 
     const srcs = instances.map((i) => i.src);
     expect(srcs).toHaveLength(2);
-    expect(srcs.some((s) => s.includes('w_360'))).toBe(true); // thumbnail variant
+    expect(srcs.some((s) => s.includes('w_400'))).toBe(true); // thumbnail variant
     expect(srcs.some((s) => s.includes('w_512'))).toBe(true); // detail variant
     expect(new Set(srcs).size).toBe(2); // distinct URLs, so each variant dedupes separately
   });

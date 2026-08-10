@@ -10,19 +10,25 @@ const UPLOAD_MARKER = '/image/upload/';
  * asset is *created*, so per-DPR fan-out is what drives the transformation count.
  * Fixed widths collapse that to one derived asset per variant per format.
  *
- * Source assets are square (1024x1024, some 2048x2048), so `c_fill` with only `w_`
- * scales without cropping and the framing matches what `dpr_auto` produced before.
- *  - thumbnail: ~2x the largest render slot (~180px deck card; timeline rows ~112px)
- *  - detail:    ~1.5x the 340x384 popup box in GamePopup. Capping this is the single
+ * Both variants stay **square**, matching the (square) source assets, so each is a
+ * faithful downscale and every consumer's CSS crops it exactly as it does today.
+ * Do not box-crop these server-side: the same `detail` URL is also rendered
+ * `object-contain` by the image-QC tool and inside a circle by AchievementCard, so a
+ * popup-shaped crop would silently change what those surfaces show.
+ *  - thumbnail: ~1.65x the largest card slot (180x243), more on 112px timeline rows
+ *  - detail:    ~1.33x the 340x384 popup box in GamePopup. Capping this is the single
  *               biggest saving — it previously had no width at all, so `c_fill` was a
  *               no-op and Cloudinary shipped the full original (191KB-818KB per card).
  *
  * `f_auto` and `g_auto` must stay in the delivery URL: both are resolved per-request
- * at the CDN edge and are inert inside named transformations.
+ * at the CDN edge and are inert inside named transformations. Parameters are ordered
+ * alphabetically to match Cloudinary's canonical form, so the string shown in the
+ * console's transformation list is exactly the string to allow-list under Strict
+ * Transformations.
  */
 const VARIANT_TRANSFORM: Record<ImageVariant, string> = {
-  thumbnail: 'c_fill,f_auto,g_auto,q_auto:eco,w_360',
-  detail: 'c_fill,f_auto,g_auto,q_auto:eco,w_512,h_578',
+  thumbnail: 'c_fill,f_auto,g_auto,h_400,q_auto:eco,w_400',
+  detail: 'c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512',
 };
 
 /** Tokens that mark a URL path segment as a Cloudinary transformation. */

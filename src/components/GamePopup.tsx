@@ -76,7 +76,8 @@ function EventHeader({
 // Image box, in CSS px. Fixed rather than derived from `image_width`/`image_height`:
 // those fields are stale Wikipedia thumbnail dimensions (330x440 on every playable event)
 // while the real Cloudinary sources are square, so the old aspect-ratio maths always
-// clamped to the max anyway. The `detail` transform is sized to match this box.
+// clamped to this maximum anyway — keeping it a constant is pixel-identical to what
+// shipped before. The square `detail` image is cropped to fit by `object-cover`.
 const IMAGE_CONTAINER_HEIGHT = 384;
 
 // Sub-component for image section (clean, no overlay)
