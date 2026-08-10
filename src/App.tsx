@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
@@ -8,13 +8,17 @@ import { isDailyReminderSupported, resyncDailyReminders } from './utils/dailyRem
 import { useWhenGame } from './hooks/useWhenGame';
 import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { pickIntroEvents } from './utils/introEvents';
-import { GameConfig, HistoricalEvent } from './types';
-import { buildDailyConfig } from './utils/dailyConfig';
+import { GameConfig } from './types';
+import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
 import { hasPlayedToday } from './utils/playerStorage';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
+
+// How deep into today's daily deck a single game can reach: the starting timeline card,
+// a 5-card hand, and one draw per turn over 7 turns — 13, rounded up for headroom.
+const DAILY_SPOILER_DEPTH = 15;
 
 interface AppProps {
   autoStartDaily?: boolean;
@@ -120,15 +124,50 @@ function App({
     gameMilestones,
   } = useWhenGame();
 
-  // Intro-animation cards: re-rolled whenever we (re)enter modeSelect so each game
-  // gets a fresh intro, but held in state so the set warmed during the home-screen
-  // dwell is exactly the set the transition renders. Warmed by useImagePrefetch.
-  const [introEvents, setIntroEvents] = useState<HistoricalEvent[]>([]);
+  // Intro-animation cards. Selection is pure and bounded: a week-seeded pool of
+  // INTRO_POOL_SIZE images that every player shares, with `introRotation` walking disjoint
+  // windows of it so back-to-back games still get a fresh intro without touching any new
+  // image. See introEvents.ts for why the pool is capped at all.
+  //
+  // `introDate` is frozen for the App's lifetime on purpose — do NOT wire it to the
+  // visibilitychange/appResume/midnight-timer rollover that ModeSelect uses for the Daily
+  // tab. A rollover firing during `transitioning` would swap cards mid-scroll and fire a
+  // screenful of cold requests; one firing on an idle home screen would eagerly fetch a new
+  // set for a game that may never start. On iOS the WKWebView keeps this state alive for
+  // days, so that would recur. Carrying yesterday's intro into a session that crossed
+  // midnight is the cheaper, invisible outcome — nothing labels the intro with a date.
+  const [introDate] = useState(() => new Date().toISOString().split('T')[0]);
+  const [introRotation, setIntroRotation] = useState(0);
+
+  // The intro shows names and years, i.e. answers. Keep today's daily deck out of it: a
+  // collision used to be a ~1-in-20 fluke for one player, but a deterministic intro would
+  // spoil the same leaderboard-scored puzzle for everyone, on every replay. Excluding after
+  // the pool is drawn means replacements come from the same pool, so the budget is untouched.
+  const dailyDeckNames = useMemo(
+    () =>
+      new Set(
+        buildDailyDeck(allEvents, introDate)
+          .slice(0, DAILY_SPOILER_DEPTH)
+          .map((e) => e.name)
+      ),
+    [allEvents, introDate]
+  );
+
+  const introEvents = useMemo(
+    () =>
+      pickIntroEvents(allEvents, {
+        dateString: introDate,
+        rotation: introRotation,
+        exclude: dailyDeckNames,
+      }),
+    [allEvents, introDate, introRotation, dailyDeckNames]
+  );
+
+  // Advance once the intro has finished playing, so the *next* game start differs. Bumping
+  // any earlier would swap cards mid-animation (GameStartTransition keys on event.name).
   useEffect(() => {
-    if (state.phase === 'modeSelect' && allEvents.length > 0) {
-      setIntroEvents(pickIntroEvents(allEvents));
-    }
-  }, [state.phase, allEvents]);
+    if (state.phase === 'playing') setIntroRotation((r) => r + 1);
+  }, [state.phase]);
 
   useImagePrefetch(state, introEvents);
 

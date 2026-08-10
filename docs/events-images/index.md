@@ -2,6 +2,7 @@
 
 Event data pipeline: imports, difficulty grading, image processing, colors, and preloading.
 
+- [2026-08-10 — Intro Animation Image Pool](session-2026-08-10-intro-animation-image-pool.md) — bounded the intro's uniform-random catalogue sampling to a weekly 60-image pool, cutting transformations ~97%
 - [2026-08-10 — Cloudinary Bandwidth Audit](session-2026-08-10-cloudinary-bandwidth-audit.md) — capped the uncapped `detail` rung (93% of bandwidth), cut redundant fetches, added real image caching
 - [2026-06-28 — Image Preload Unification](session-2026-06-28-image-preload-unification.md) — unified image preloading architecture
 - [2026-06-21 — Image Pipeline Dedup](session-2026-06-21-image-pipeline-dedup.md) — duplicate resolution, new-image sorting, missing-prompt backfill
