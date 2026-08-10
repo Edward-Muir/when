@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.1](https://github.com/Edward-Muir/when/compare/v1.6.0...v1.6.1) (2026-08-10)
+
+
+### Performance
+
+* cut Cloudinary bandwidth ~7x and close the abuse paths ([#28](https://github.com/Edward-Muir/when/issues/28)) ([57aea61](https://github.com/Edward-Muir/when/commit/57aea61942153ce288572ee94134f62a70b96fec))
+
 ## [1.6.0](https://github.com/Edward-Muir/when/compare/v1.5.0...v1.6.0) (2026-08-02)
 
 
