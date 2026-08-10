@@ -2,6 +2,7 @@
 
 Event data pipeline: imports, difficulty grading, image processing, colors, and preloading.
 
+- [2026-08-10 — Cloudinary Bandwidth Audit](session-2026-08-10-cloudinary-bandwidth-audit.md) — capped the uncapped `detail` rung (93% of bandwidth), cut redundant fetches, added real image caching
 - [2026-06-28 — Image Preload Unification](session-2026-06-28-image-preload-unification.md) — unified image preloading architecture
 - [2026-06-21 — Image Pipeline Dedup](session-2026-06-21-image-pipeline-dedup.md) — duplicate resolution, new-image sorting, missing-prompt backfill
 - [2026-05-24 — Friendly Name Length Limit](session-2026-05-24-friendly-name-length-limit.md) — cap `friendly_name` at 35 chars so it fits cards without ellipsis
