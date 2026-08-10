@@ -115,6 +115,18 @@ function generateBotName(random: () => number): string {
   return `${ADJECTIVES[adjIndex]} ${ANIMALS[animalIndex]}`;
 }
 
+/**
+ * Deterministic "Golden Otter"-style name for an arbitrary seed string.
+ *
+ * Used by the name filter to replace a blocked display name. It must be stable for
+ * a given seed: the leaderboard polls every 15s, so a name that re-rolled per
+ * request would visibly flicker, and the write path (submit) and the read path
+ * ([date]) have to agree on what a given player is called.
+ */
+export function generateNameFromSeed(seed: string): string {
+  return generateBotName(seededRandom(stringToSeed(seed)));
+}
+
 function generateBotDeviceId(date: string, botIndex: number): string {
   const seed = stringToSeed(`bot-${date}-${botIndex}`);
   const random = seededRandom(seed);

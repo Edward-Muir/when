@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
 import { ensureBotsExist } from './botGeneration';
+import { safeDisplayName } from './nameFilter';
 
 const redis = Redis.fromEnv();
 
@@ -49,10 +50,16 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Create public response (without deviceId)
     // Note: @upstash/redis automatically deserializes JSON, so entries are already objects
+    //
+    // Names are filtered again here, not just on submit. The sorted set's member IS the
+    // JSON entry, so renaming a stored entry would mean ZREM of the exact old blob plus
+    // a re-ZADD. Masking on read cleans entries submitted before the filter existed, and
+    // makes any later addition to nameFilter's lists apply to history on the next fetch.
+    // Ranking is untouched — it comes from the sorted-set index, not from the name.
     const leaderboard: PublicLeaderboardEntry[] = entries.map((entryData, index) => {
       const entry = entryData as LeaderboardEntry;
       return {
-        displayName: entry.displayName,
+        displayName: safeDisplayName(entry.displayName, entry.deviceId),
         correctCount: entry.correctCount,
         totalAttempts: entry.totalAttempts,
         emojiGrid: entry.emojiGrid,
@@ -81,7 +88,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const entry = allEntries.at(foundIndex) as LeaderboardEntry;
         playerRank = foundIndex + 1;
         playerEntry = {
-          displayName: entry.displayName,
+          displayName: safeDisplayName(entry.displayName, entry.deviceId),
           correctCount: entry.correctCount,
           totalAttempts: entry.totalAttempts,
           emojiGrid: entry.emojiGrid,

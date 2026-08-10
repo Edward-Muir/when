@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
+import { safeDisplayName } from './nameFilter';
 
 const redis = Redis.fromEnv();
 
@@ -181,10 +182,6 @@ function validateSubmission(body: SubmissionPayload): ValidationResult {
   return { valid: true, greenCount: emojiResult.greenCount, redCount: emojiResult.redCount };
 }
 
-function sanitizeDisplayName(name: string | undefined): string {
-  return (name || '').trim().slice(0, 20).replace(/[<>]/g, '') || 'Anonymous';
-}
-
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -209,9 +206,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(409).json({ error: 'Already submitted today' });
     }
 
-    // Create leaderboard entry
+    // Create leaderboard entry. A name that fails the filter is silently swapped for
+    // a generated one rather than rejected, so the raw text never reaches Redis and
+    // the submitter gets no signal to iterate against the filter with.
     const entry: LeaderboardEntry = {
-      displayName: sanitizeDisplayName(body.displayName),
+      displayName: safeDisplayName(body.displayName, body.deviceId),
       correctCount: body.correctCount,
       totalAttempts: body.totalAttempts,
       emojiGrid: body.emojiGrid,
