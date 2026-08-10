@@ -3,7 +3,6 @@ import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
-import { useImagePreload } from '../hooks/useImagePreload';
 
 export type CardSize = 'normal' | 'large' | 'landscape';
 
@@ -28,8 +27,9 @@ const Card: React.FC<CardProps> = ({
 }) => {
   const [imageError, setImageError] = useState(false);
 
-  // Warm the full-size detail image so the description/result popup opens instantly.
-  useImagePreload(getImageUrl(event.image_url, 'detail'));
+  // No detail-image warm here: warming every rendered card cost ~12 full-size fetches a
+  // game for popups that mostly never opened. GamePopup instead paints this card's
+  // already-cached thumbnail underneath while the detail image loads over it.
 
   const rotationStyle = {
     transform: `rotate(${rotation}deg)`,

@@ -128,7 +128,6 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
             isOverTimeline={false}
             lastPlacementResult={null}
             animationPhase={null}
-            preloadDetailImages={false}
             startAtMiddle
           />
         ) : (

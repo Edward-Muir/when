@@ -113,7 +113,6 @@ const AnimJig: React.FC = () => {
                 lastPlacementResult={driver.state.lastPlacementResult}
                 animationPhase={driver.state.animationPhase}
                 currentStreak={driver.state.currentStreak}
-                preloadDetailImages={false}
                 startAtMiddle
               />
             </MotionConfig>

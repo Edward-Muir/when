@@ -6,19 +6,15 @@ const WIKIMEDIA =
   'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Example.jpg/330px-Example.jpg';
 
 describe('getImageUrl', () => {
-  it('keeps the detail variant at full size (no width cap), preserving the query', () => {
+  it('caps the detail variant to the popup box, preserving the query', () => {
     expect(getImageUrl(CLOUDINARY, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cave-paintings_cd9oda?_a=BAMAMiiu0'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,q_auto:eco,w_512,h_578/cave-paintings_cd9oda?_a=BAMAMiiu0'
     );
   });
 
-  it('does not add a width to the detail variant', () => {
-    expect(getImageUrl(CLOUDINARY, 'detail')).not.toContain('w_');
-  });
-
-  it('rewrites the thumbnail variant to eco quality + w_220 and preserves the query', () => {
+  it('rewrites the thumbnail variant to eco quality + w_360 and preserves the query', () => {
     const result = getImageUrl(CLOUDINARY, 'thumbnail');
-    expect(result).toContain('/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:eco,w_220/');
+    expect(result).toContain('/image/upload/c_fill,f_auto,g_auto,q_auto:eco,w_360/');
     expect(result).toContain('cave-paintings_cd9oda?_a=BAMAMiiu0');
   });
 
@@ -33,7 +29,7 @@ describe('getImageUrl', () => {
   it('injects a transform when the URL has no existing transform segment', () => {
     const noTransform = 'https://res.cloudinary.com/dscb8inz1/image/upload/cave-paintings_cd9oda';
     expect(getImageUrl(noTransform, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cave-paintings_cd9oda'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,q_auto:eco,w_512,h_578/cave-paintings_cd9oda'
     );
   });
 
@@ -41,23 +37,42 @@ describe('getImageUrl', () => {
     const noQuery =
       'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,q_auto:good/cave-paintings_cd9oda';
     expect(getImageUrl(noQuery, 'thumbnail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:eco,w_220/cave-paintings_cd9oda'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,q_auto:eco,w_360/cave-paintings_cd9oda'
     );
   });
 
   it('replaces (not appends) when re-rewriting an already-optimized URL', () => {
     const alreadyThumb = getImageUrl(CLOUDINARY, 'thumbnail')!;
     expect(getImageUrl(alreadyThumb, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cave-paintings_cd9oda?_a=BAMAMiiu0'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,q_auto:eco,w_512,h_578/cave-paintings_cd9oda?_a=BAMAMiiu0'
     );
   });
 
-  it('keeps g_auto, dpr_auto and f_auto in both variants', () => {
+  it('strips a baked dpr_auto transform rather than inheriting it', () => {
+    const bakedWithDpr =
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cave-paintings_cd9oda';
+    expect(getImageUrl(bakedWithDpr, 'thumbnail')).not.toContain('dpr_');
+  });
+
+  it('keeps g_auto and f_auto in both variants (edge-resolved, must stay in the URL)', () => {
     for (const variant of ['thumbnail', 'detail'] as const) {
       const result = getImageUrl(CLOUDINARY, variant)!;
       expect(result).toContain('g_auto');
-      expect(result).toContain('dpr_auto');
       expect(result).toContain('f_auto');
+    }
+  });
+
+  // Regression guards for the bandwidth blowout: an uncapped variant made Cloudinary
+  // ship the full 1024/2048px original, and dpr_auto minted a derived asset per DPR.
+  it('bounds every variant with an explicit width', () => {
+    for (const variant of ['thumbnail', 'detail'] as const) {
+      expect(getImageUrl(CLOUDINARY, variant)).toMatch(/[,/]w_\d+/);
+    }
+  });
+
+  it('never emits dpr_auto in any variant', () => {
+    for (const variant of ['thumbnail', 'detail'] as const) {
+      expect(getImageUrl(CLOUDINARY, variant)).not.toContain('dpr_');
     }
   });
 });

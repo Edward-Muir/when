@@ -3,16 +3,26 @@ export type ImageVariant = 'thumbnail' | 'detail';
 const UPLOAD_MARKER = '/image/upload/';
 
 /**
- * Transform segment per variant. Widths are CSS pixels — `dpr_auto` multiplies
- * by device DPR, so do not pre-multiply for retina.
- *  - thumbnail: small + eco quality, covers timeline (~112px) and deck (~180px) cards
- *  - detail:    full-size source + good quality for the popout view (no width cap,
- *               matching the original baked transform — width-capping it visibly
- *               pixelates the larger image)
+ * Transform segment per variant. Widths are *device* pixels and deliberately fixed:
+ * `dpr_auto` used to multiply these by the device DPR, which both ballooned payloads
+ * (a w_220 thumbnail cost 75KB on a DPR-3 phone vs 9.5KB at DPR 1) and minted a
+ * separate derived asset per DPR — Cloudinary bills transformations when a derived
+ * asset is *created*, so per-DPR fan-out is what drives the transformation count.
+ * Fixed widths collapse that to one derived asset per variant per format.
+ *
+ * Source assets are square (1024x1024, some 2048x2048), so `c_fill` with only `w_`
+ * scales without cropping and the framing matches what `dpr_auto` produced before.
+ *  - thumbnail: ~2x the largest render slot (~180px deck card; timeline rows ~112px)
+ *  - detail:    ~1.5x the 340x384 popup box in GamePopup. Capping this is the single
+ *               biggest saving — it previously had no width at all, so `c_fill` was a
+ *               no-op and Cloudinary shipped the full original (191KB-818KB per card).
+ *
+ * `f_auto` and `g_auto` must stay in the delivery URL: both are resolved per-request
+ * at the CDN edge and are inert inside named transformations.
  */
 const VARIANT_TRANSFORM: Record<ImageVariant, string> = {
-  thumbnail: 'c_fill,dpr_auto,f_auto,g_auto,q_auto:eco,w_220',
-  detail: 'c_fill,dpr_auto,f_auto,g_auto,q_auto:good',
+  thumbnail: 'c_fill,f_auto,g_auto,q_auto:eco,w_360',
+  detail: 'c_fill,f_auto,g_auto,q_auto:eco,w_512,h_578',
 };
 
 /** Tokens that mark a URL path segment as a Cloudinary transformation. */

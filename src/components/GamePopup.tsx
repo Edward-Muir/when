@@ -73,30 +73,33 @@ function EventHeader({
   );
 }
 
-// Image dimension constants
-const IMAGE_CONTAINER_WIDTH = 340;
-const IMAGE_MIN_HEIGHT = 128;
-const IMAGE_MAX_HEIGHT = 384;
-const IMAGE_DEFAULT_HEIGHT = 192;
+// Image box, in CSS px. Fixed rather than derived from `image_width`/`image_height`:
+// those fields are stale Wikipedia thumbnail dimensions (330x440 on every playable event)
+// while the real Cloudinary sources are square, so the old aspect-ratio maths always
+// clamped to the max anyway. The `detail` transform is sized to match this box.
+const IMAGE_CONTAINER_HEIGHT = 384;
 
 // Sub-component for image section (clean, no overlay)
 function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
-  const getImageHeight = () => {
-    if (!event.image_width || !event.image_height) return IMAGE_DEFAULT_HEIGHT;
-    const aspectRatio = event.image_width / event.image_height;
-    const calculatedHeight = IMAGE_CONTAINER_WIDTH / aspectRatio;
-    return Math.min(Math.max(calculatedHeight, IMAGE_MIN_HEIGHT), IMAGE_MAX_HEIGHT);
-  };
-
-  const imageHeight = getImageHeight();
+  // The card the user just tapped already has its thumbnail cached, so painting it as the
+  // backdrop makes the popup feel instant while the larger detail image decodes over it.
+  // Replaces a per-card eager detail preload that fetched full-size art for every card
+  // rendered, opened or not. Same placeholder trick as AchievementCard.
+  const placeholderSrc = getImageUrl(event.image_url, 'thumbnail');
 
   return (
-    <div className="relative overflow-hidden" style={{ height: `${imageHeight}px` }}>
+    <div className="relative overflow-hidden" style={{ height: `${IMAGE_CONTAINER_HEIGHT}px` }}>
       {event.image_url ? (
         <img
           src={getImageUrl(event.image_url, 'detail')}
           alt=""
+          decoding="async"
           className={`w-full h-full object-cover ${tombstone ? 'grayscale opacity-70' : ''}`}
+          style={
+            placeholderSrc
+              ? { backgroundImage: `url(${placeholderSrc})`, backgroundSize: 'cover' }
+              : undefined
+          }
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-border/30">

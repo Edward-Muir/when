@@ -6,7 +6,6 @@ import CategoryIcon from '../CategoryIcon';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 import { getImageUrl } from '../../utils/cloudinaryImage';
-import { useImagePreload } from '../../hooks/useImagePreload';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
 
 // One scheduled wave bump for this row: Timeline computes when (delay) and how hard
@@ -30,8 +29,6 @@ interface TimelineEventProps {
   ripple?: RippleSpec | null;
   // Streak-aware glow intensity
   glowIntensity?: GlowIntensity;
-  // Whether to preload the full-size detail image (disabled on the View Timeline page)
-  preloadDetailImages?: boolean;
   // Above-the-fold cards: load eagerly + high priority so they don't drag LCP down.
   // Defaults to lazy so off-screen events keep deferring their image download.
   priority?: boolean;
@@ -228,7 +225,6 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   animationPhase,
   ripple = null,
   glowIntensity,
-  preloadDetailImages = true,
   priority = false,
   layoutId,
   layoutShiftDelay = null,
@@ -242,10 +238,6 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   const springBounce = useMemo(() => makeSpringBounce(tuning), [tuning]);
   const rejectionExit = useMemo(() => makeRejectionExit(tuning), [tuning]);
   const yearPopVariants = useMemo(() => makeYearPopVariants(tuning), [tuning]);
-
-  // Warm the full-size detail image so tapping this event opens its popup instantly.
-  // Disabled on the View Timeline page, where every event renders at once.
-  useImagePreload(preloadDetailImages ? getImageUrl(event.image_url, 'detail') : undefined);
 
   const { cardAnimationClass, isSuccessAnimation, isErrorAnimation, shouldPopYear, isMovingPhase } =
     useEventAnimations(

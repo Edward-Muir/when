@@ -31,8 +31,6 @@ interface TimelineProps {
   animationPhase: AnimationPhase;
   // Streak
   currentStreak?: number;
-  // Whether placed events should preload their full-size detail image (off in view mode)
-  preloadDetailImages?: boolean;
   // Center the first card in the viewport on game start (default false; on in gameplay, off in view mode)
   enableCentering?: boolean;
   // Open scrolled to the middle (median) event instead of the top (default false; on in view mode)
@@ -81,9 +79,8 @@ function followRevealScroll(
     container.scrollTop = target;
     return null;
   }
-  const pathLen = result && !result.success
-    ? Math.abs(result.attemptedPosition - result.correctPosition)
-    : 0;
+  const pathLen =
+    result && !result.success ? Math.abs(result.attemptedPosition - result.correctPosition) : 0;
   return animate(container.scrollTop, target, {
     duration: getMissTravelMs(pathLen, miss) / 1000,
     ease: TRAVEL_EASE,
@@ -105,7 +102,6 @@ const Timeline: React.FC<TimelineProps> = ({
   lastPlacementResult,
   animationPhase,
   currentStreak = 0,
-  preloadDetailImages = true,
   enableCentering = false,
   startAtMiddle = false,
 }) => {
@@ -453,7 +449,6 @@ const Timeline: React.FC<TimelineProps> = ({
                     ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
                     glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
                     layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
-                    preloadDetailImages={preloadDetailImages}
                     // Eagerly load the first couple of cards — they're the LCP element.
                     priority={idx < 2}
                   />
