@@ -98,7 +98,15 @@ function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: 
           className={`w-full h-full object-cover ${tombstone ? 'grayscale opacity-70' : ''}`}
           style={
             placeholderSrc
-              ? { backgroundImage: `url(${placeholderSrc})`, backgroundSize: 'cover' }
+              ? {
+                  backgroundImage: `url(${placeholderSrc})`,
+                  backgroundSize: 'cover',
+                  // Must match the <img>'s object-position, which defaults to 50% 50%.
+                  // background-position defaults to 0% 0% instead, so without this the
+                  // placeholder sits left/top-anchored and the picture visibly jumps
+                  // when the detail image loads over it.
+                  backgroundPosition: 'center',
+                }
               : undefined
           }
         />

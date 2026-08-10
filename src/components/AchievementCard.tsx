@@ -80,7 +80,14 @@ function Badge({
             }`}
             style={
               placeholderSrc
-                ? { backgroundImage: `url(${placeholderSrc})`, backgroundSize: 'cover' }
+                ? {
+                    backgroundImage: `url(${placeholderSrc})`,
+                    backgroundSize: 'cover',
+                    // Inert while this container is square, but kept in step with the
+                    // <img>'s object-position so the placeholder can't drift out of
+                    // alignment if the badge ever stops being a circle.
+                    backgroundPosition: 'center',
+                  }
                 : undefined
             }
           />
