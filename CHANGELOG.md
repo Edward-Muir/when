@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.2](https://github.com/Edward-Muir/when/compare/v1.6.1...v1.6.2) (2026-08-10)
+
+
+### Bug Fixes
+
+* filter abusive leaderboard display names ([#29](https://github.com/Edward-Muir/when/issues/29)) ([c4ca7b1](https://github.com/Edward-Muir/when/commit/c4ca7b1a053440f30cfd6c524b4db5e7dfa1f654))
+
 ## [1.6.1](https://github.com/Edward-Muir/when/compare/v1.6.0...v1.6.1) (2026-08-10)
 
 
