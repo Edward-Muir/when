@@ -54,6 +54,17 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
     if (active && !hasSeenTimelineIntro()) setShowIntro(true);
   }, [active]);
 
+  // Hold the timeline itself back until the tab has been shown at least once. Timeline
+  // is not virtualised, so a returning player's whole collection becomes <img> tags; the
+  // pager pre-mounts this panel only ~1-3 panel-widths off-screen, which sits inside
+  // Chrome's distance-based `loading="lazy"` threshold, so those images can start
+  // downloading on the home screen before the tab is ever opened. Latched, so swiping
+  // away doesn't unmount and force a refetch on return.
+  const [hasBeenActive, setHasBeenActive] = useState(active);
+  useEffect(() => {
+    if (active) setHasBeenActive(true);
+  }, [active]);
+
   // The player's personal collection: only events they've correctly placed across all games.
   const collectedEvents = useMemo(() => {
     const owned = new Set(getCollectionState().placedEventIds);
@@ -118,6 +129,8 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
               </p>
             </div>
           </div>
+        ) : !hasBeenActive ? (
+          <div className="h-full" />
         ) : filteredEvents.length > 0 ? (
           <Timeline
             events={filteredEvents}
@@ -128,7 +141,6 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
             isOverTimeline={false}
             lastPlacementResult={null}
             animationPhase={null}
-            preloadDetailImages={false}
             startAtMiddle
           />
         ) : (

@@ -13,8 +13,13 @@ import type { HistoricalEvent } from '../../types';
  * home-screen pager. Card art is resolved from the linked event, so the catalogue is loaded
  * once and the name->event map passed down (undefined until loaded → cards render without art).
  * Tapping a badge opens the large-format inspection popup.
+ *
+ * `active` gates the badge-art warm only — the pager pre-mounts this panel at idle (to keep
+ * mid-swipe DOM mutation from stalling iOS scroll-snap), and warming 60 thumbnails on that
+ * mount cost every home-screen visitor a multi-MB image burst for a tab most never open.
+ * Defaults to true so the standalone `/achievements` route warms on mount as before.
  */
-const AchievementsPanel: React.FC = () => {
+const AchievementsPanel: React.FC<{ active?: boolean }> = ({ active = true }) => {
   // Seed synchronously from the module-level catalogue cache (populated during the app's
   // loading phase) so remounts render art immediately instead of flashing art-less cards.
   const [eventsByName, setEventsByName] = useState<Map<string, HistoricalEvent> | undefined>(() => {
@@ -27,16 +32,17 @@ const AchievementsPanel: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- fallback fetch, run once on mount
   }, []);
 
-  // Warm every badge thumbnail at low priority so the grid renders from cache on first
-  // view (the panel is pre-mounted at idle by the pager). Deduplicated by preloadImage.
+  // Warm every badge thumbnail at low priority once the panel is actually on screen, so
+  // the grid fills in from cache without charging visitors who never open the tab.
+  // Deduplicated by preloadImage, so re-firing on page revisits is free.
   useEffect(() => {
-    if (!eventsByName) return;
+    if (!eventsByName || !active) return;
     preloadEventImages(
       ACHIEVEMENTS.map((a) => eventsByName.get(a.eventName)),
       ['thumbnail'],
       'low'
     );
-  }, [eventsByName]);
+  }, [eventsByName, active]);
 
   // The tapped badge shown in the inspection popup (null = closed).
   const [selected, setSelected] = useState<AchievementDef | null>(null);

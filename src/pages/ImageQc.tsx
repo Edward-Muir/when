@@ -81,10 +81,12 @@ const ImageQc: React.FC = () => {
     setImgError(false);
   }, [current?.name]);
 
-  // Prefetch the next few images so they're warm in the browser cache by the
-  // time we navigate to them — no waiting on each step forward.
+  // Prefetch the next couple of images so they're warm in the browser cache by the
+  // time we navigate to them — no waiting on each step forward. Kept short and at low
+  // priority: the queue is the entire catalogue, so a deep look-ahead here bills real
+  // Cloudinary bandwidth for images the reviewer may never reach.
   useEffect(() => {
-    preloadEventImages(queue.slice(pos + 1, pos + 6), ['detail']);
+    preloadEventImages(queue.slice(pos + 1, pos + 3), ['detail'], 'low');
   }, [pos, queue]);
 
   // The verdict already recorded for the event on screen (so revisiting via Back

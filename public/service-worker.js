@@ -2,6 +2,17 @@ const CACHE_NAME = 'when-v1.6.0';
 const STATIC_CACHE = 'when-static-v1.6.0';
 const DYNAMIC_CACHE = 'when-dynamic-v1.6.0';
 
+// Deliberately UNVERSIONED, and must stay that way: `activate` deletes every cache not
+// named here, and scripts/inject-version.js rewrites the versioned names above on each
+// release. Versioning this one would throw away every cached card image on every deploy —
+// which, with auto-release-on-merge, could be several times a week.
+const IMAGE_CACHE = 'when-images';
+
+// Card art is the dominant bandwidth cost, so it gets its own bounded cache. Entries are
+// trimmed in insertion order; a re-fetch is only ~30KB, so exact LRU isn't worth the
+// IndexedDB bookkeeping it would need.
+const MAX_IMAGE_ENTRIES = 400;
+
 // Static assets to cache on install
 const STATIC_ASSETS = [
   '/',
@@ -29,7 +40,9 @@ self.addEventListener('activate', (event) => {
     caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames
-          .filter((name) => name !== STATIC_CACHE && name !== DYNAMIC_CACHE)
+          .filter(
+            (name) => name !== STATIC_CACHE && name !== DYNAMIC_CACHE && name !== IMAGE_CACHE
+          )
           .map((name) => caches.delete(name))
       );
     })
@@ -79,9 +92,56 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Cache-first for card art, into its own bounded, release-surviving cache
+  if (url.hostname === 'res.cloudinary.com') {
+    event.respondWith(imageCacheFirst(request));
+    return;
+  }
+
   // Cache-first for static assets
   event.respondWith(cacheFirst(request));
 });
+
+// Trim the image cache back to MAX_IMAGE_ENTRIES, oldest first (cache.keys() yields
+// insertion order). Serialized behind a single in-flight promise so a burst of image
+// fetches doesn't run the (relatively expensive) keys() walk once per request.
+let trimInFlight = null;
+function trimImageCache() {
+  if (trimInFlight) return trimInFlight;
+  trimInFlight = (async () => {
+    const cache = await caches.open(IMAGE_CACHE);
+    const keys = await cache.keys();
+    for (let i = 0; i < keys.length - MAX_IMAGE_ENTRIES; i++) {
+      await cache.delete(keys[i]);
+    }
+  })()
+    .catch(() => {})
+    .finally(() => {
+      trimInFlight = null;
+    });
+  return trimInFlight;
+}
+
+// Cache-first for Cloudinary card art.
+//
+// The request is re-issued in CORS mode rather than passed through: images are requested
+// by <img>/new Image() as no-cors, which yields an opaque response that (a) reports
+// ok === false so the old cacheFirst never actually stored it, and (b) is padded to
+// several MB each in storage-quota accounting, which would blow the origin quota and get
+// the whole cache evicted. Cloudinary sends Access-Control-Allow-Origin: *, so a CORS
+// request gives a real status and true-size accounting instead.
+async function imageCacheFirst(request) {
+  const cache = await caches.open(IMAGE_CACHE);
+  const cached = await cache.match(request);
+  if (cached) return cached;
+
+  const response = await fetch(new Request(request.url, { mode: 'cors', credentials: 'omit' }));
+  if (response.ok) {
+    await cache.put(request, response.clone());
+    trimImageCache();
+  }
+  return response;
+}
 
 // Cache-first strategy
 async function cacheFirst(request) {
@@ -99,10 +159,15 @@ async function cacheFirst(request) {
     }
     return networkResponse;
   } catch (error) {
-    // Return offline fallback if available
-    const fallback = await caches.match('/index.html');
-    if (fallback) {
-      return fallback;
+    // Only documents may fall back to the app shell. Returning /index.html for a failed
+    // image or script meant an HTML body was handed to an <img>, which fails to decode,
+    // fires onError and permanently swaps in the category-icon fallback for that card.
+    // (Navigations are already handled earlier; this is belt-and-braces.)
+    if (request.destination === 'document') {
+      const fallback = await caches.match('/index.html');
+      if (fallback) {
+        return fallback;
+      }
     }
     throw error;
   }

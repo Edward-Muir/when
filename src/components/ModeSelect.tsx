@@ -480,7 +480,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           {visited.has(2) ? <StatsPanel /> : <div />}
 
           {/* Achievements page (lazy) */}
-          {visited.has(3) ? <AchievementsPanel /> : <div />}
+          {visited.has(3) ? <AchievementsPanel active={activePage === 3} /> : <div />}
 
           {/* Timeline page (lazy) */}
           {visited.has(4) ? (

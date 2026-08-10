@@ -3,16 +3,35 @@ export type ImageVariant = 'thumbnail' | 'detail';
 const UPLOAD_MARKER = '/image/upload/';
 
 /**
- * Transform segment per variant. Widths are CSS pixels — `dpr_auto` multiplies
- * by device DPR, so do not pre-multiply for retina.
- *  - thumbnail: small + eco quality, covers timeline (~112px) and deck (~180px) cards
- *  - detail:    full-size source + good quality for the popout view (no width cap,
- *               matching the original baked transform — width-capping it visibly
- *               pixelates the larger image)
+ * Transform segment per variant. Widths are *device* pixels and deliberately fixed:
+ * `dpr_auto` used to multiply these by the device DPR, which both ballooned payloads
+ * (a w_220 thumbnail cost 75KB on a DPR-3 phone vs 9.5KB at DPR 1) and minted a
+ * separate derived asset per DPR — Cloudinary bills transformations when a derived
+ * asset is *created*, so per-DPR fan-out is what drives the transformation count.
+ * Fixed widths collapse that to one derived asset per variant per format.
+ *
+ * Sized generously on purpose. Detail is fetched only when a card is tapped (the eager
+ * per-card warm is gone), so the whole catalogue's popup art costs ~200MB/month against
+ * a 25GB allowance — there is no reason to be frugal at the expense of how the art looks.
+ * Both variants stay **square**, matching the (square) source assets, so each is a
+ * faithful downscale and every consumer's CSS crops it exactly as it does today.
+ * Do not box-crop these server-side: the same `detail` URL is also rendered
+ * `object-contain` by the image-QC tool and inside a circle by AchievementCard, so a
+ * popup-shaped crop would silently change what those surfaces show.
+ *  - thumbnail: ~2.2x the largest card slot (180x243), more on 112px timeline rows
+ *  - detail:    ~2.26x the 340x384 popup box in GamePopup. Capping this is the single
+ *               biggest saving — it previously had no width at all, so `c_fill` was a
+ *               no-op and Cloudinary shipped the full original (191KB-818KB per card).
+ *
+ * `f_auto` and `g_auto` must stay in the delivery URL: both are resolved per-request
+ * at the CDN edge and are inert inside named transformations. Parameters are ordered
+ * alphabetically to match Cloudinary's canonical form, so the string shown in the
+ * console's transformation list is exactly the string to allow-list under Strict
+ * Transformations.
  */
 const VARIANT_TRANSFORM: Record<ImageVariant, string> = {
-  thumbnail: 'c_fill,dpr_auto,f_auto,g_auto,q_auto:eco,w_220',
-  detail: 'c_fill,dpr_auto,f_auto,g_auto,q_auto:good',
+  thumbnail: 'c_fill,f_auto,g_auto,h_400,q_auto:good,w_400',
+  detail: 'c_fill,f_auto,g_auto,h_768,q_auto:good,w_768',
 };
 
 /** Tokens that mark a URL path segment as a Cloudinary transformation. */

@@ -17,5 +17,6 @@ Session summaries and reference docs for the "When" timeline game. Session files
 ## Root docs
 
 - [Architecture Reference](architecture-reference.md) — detailed codebase reference (components, hooks, utils, API routes, z-index); linked from CLAUDE.md
+- [Cloudinary Cost Controls](cloudinary-cost-controls.md) — how card images are delivered, the transform rung rules, and the console settings that cap bandwidth/transformation spend
 - [Stats & Achievement Badges — Plan](stats-achievements-plan.md) — full original spec for the stats screen and badge system
 - [Elastic Draggable Cards — Research](elastic-draggable-cards-research.md) — options document for elastic, centered draggable timeline cards (no implementation yet)

@@ -2,4 +2,9 @@
 User-agent: *
 Disallow:
 
+# Unlinked maintainer tools: crawling these walks the whole image catalogue,
+# which costs real Cloudinary bandwidth and transformation credits.
+Disallow: /image-qc
+Disallow: /card-reports
+
 Sitemap: https://play-when.com/sitemap.xml
