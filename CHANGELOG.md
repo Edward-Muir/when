@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.3](https://github.com/Edward-Muir/when/compare/v1.6.2...v1.6.3) (2026-08-10)
+
+
+### Performance
+
+* bound the intro animation to a weekly image pool ([#30](https://github.com/Edward-Muir/when/issues/30)) ([7f0a911](https://github.com/Edward-Muir/when/commit/7f0a9112895dc6c706885fae78e1921bdbf3af49))
+
 ## [1.6.2](https://github.com/Edward-Muir/when/compare/v1.6.1...v1.6.2) (2026-08-10)
 
 
