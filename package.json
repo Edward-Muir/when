@@ -49,6 +49,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "find-duplicates": "node scripts/find-duplicate-events.js",
+    "cloudinary:usage": "node scripts/cloudinary-usage.js",
     "lint": "eslint src api --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,css}\"",
