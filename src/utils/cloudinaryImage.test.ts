@@ -8,13 +8,13 @@ const WIKIMEDIA =
 describe('getImageUrl', () => {
   it('caps the detail variant to the popup box, preserving the query', () => {
     expect(getImageUrl(CLOUDINARY, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512/cave-paintings_cd9oda?_a=BAMAMiiu0'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_768,q_auto:good,w_768/cave-paintings_cd9oda?_a=BAMAMiiu0'
     );
   });
 
-  it('rewrites the thumbnail variant to eco quality + w_400 and preserves the query', () => {
+  it('rewrites the thumbnail variant to good quality + w_400 and preserves the query', () => {
     const result = getImageUrl(CLOUDINARY, 'thumbnail');
-    expect(result).toContain('/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:eco,w_400/');
+    expect(result).toContain('/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/');
     expect(result).toContain('cave-paintings_cd9oda?_a=BAMAMiiu0');
   });
 
@@ -29,7 +29,7 @@ describe('getImageUrl', () => {
   it('injects a transform when the URL has no existing transform segment', () => {
     const noTransform = 'https://res.cloudinary.com/dscb8inz1/image/upload/cave-paintings_cd9oda';
     expect(getImageUrl(noTransform, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512/cave-paintings_cd9oda'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_768,q_auto:good,w_768/cave-paintings_cd9oda'
     );
   });
 
@@ -37,14 +37,14 @@ describe('getImageUrl', () => {
     const noQuery =
       'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,q_auto:good/cave-paintings_cd9oda';
     expect(getImageUrl(noQuery, 'thumbnail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:eco,w_400/cave-paintings_cd9oda'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_400,q_auto:good,w_400/cave-paintings_cd9oda'
     );
   });
 
   it('replaces (not appends) when re-rewriting an already-optimized URL', () => {
     const alreadyThumb = getImageUrl(CLOUDINARY, 'thumbnail')!;
     expect(getImageUrl(alreadyThumb, 'detail')).toBe(
-      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512/cave-paintings_cd9oda?_a=BAMAMiiu0'
+      'https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,f_auto,g_auto,h_768,q_auto:good,w_768/cave-paintings_cd9oda?_a=BAMAMiiu0'
     );
   });
 

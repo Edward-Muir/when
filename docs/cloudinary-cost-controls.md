@@ -11,10 +11,10 @@ the `dscb8inz1` Cloudinary account. The baked transform segment is **always stri
 replaced at runtime** by `getImageUrl()` in `src/utils/cloudinaryImage.ts`, which is the
 single source of truth for delivery URLs. Two rungs:
 
-| Variant     | Transform                                     | Typical bytes |
-| ----------- | --------------------------------------------- | ------------- |
-| `thumbnail` | `c_fill,f_auto,g_auto,h_400,q_auto:eco,w_400` | 19–32 KB      |
-| `detail`    | `c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512` | 28–48 KB      |
+| Variant     | Transform                                      | Typical bytes |
+| ----------- | ---------------------------------------------- | ------------- |
+| `thumbnail` | `c_fill,f_auto,g_auto,h_400,q_auto:good,w_400` | ~24 KB        |
+| `detail`    | `c_fill,f_auto,g_auto,h_768,q_auto:good,w_768` | ~79 KB        |
 
 Both are **square**, matching the source assets (1024×1024, some 2048×2048). Keep them
 square: `detail` is rendered `object-contain` by `/image-qc` and inside a circle by
@@ -87,8 +87,12 @@ working. **Enabling it before allow-listing takes the site down**, so:
 1. Ship the current rung ladder and wait ~48h for real traffic to generate both strings.
 2. Console → **Transformations** → find each string below → kebab menu → **Allowed for
    strict transformations**:
-   - `c_fill,f_auto,g_auto,h_400,q_auto:eco,w_400`
-   - `c_fill,f_auto,g_auto,h_512,q_auto:eco,w_512`
+   - `c_fill,f_auto,g_auto,h_400,q_auto:good,w_400`
+   - `c_fill,f_auto,g_auto,h_768,q_auto:good,w_768`
+
+   Each is minted per format, so expect three console entries per rung (jxl / webp / jpg).
+   All six need allow-listing.
+
 3. Only then enable **Strict transformations**. Test on a preview deploy first.
 
 Named transformations buy nothing here: `f_auto` cannot live inside one, so you would
