@@ -40,6 +40,7 @@ function useWarm(events: HistoricalEvent[], enabled: boolean): void {
  * survives AnimatePresence phase swaps) it warms, by phase, exactly the images the
  * next view will render:
  *  - modeSelect:    the intro-animation cards (shown next, during transitioning)
+ *  - gameOver:      the same, for the Restart path that skips modeSelect entirely
  *  - transitioning: the first game render's cards (seed timeline + dealt hands)
  *  - playing:       the next deck cards, before they're drawn into a hand
  */
@@ -58,7 +59,12 @@ export function useImagePrefetch(state: WhenGameState, introEvents: HistoricalEv
     [phase, deck]
   );
 
-  useWarm(introEvents, phase === 'modeSelect');
+  // gameOver as well as modeSelect: `restartGame` starts the next game straight from the
+  // game-over screen without passing through modeSelect, and the intro set rotates between
+  // games, so that path would otherwise render a screenful of unwarmed images. The
+  // game-over popup dwell is the lead time. Cheap: the whole intro pool is a fixed weekly
+  // set, so after a player's first game or two these are cache hits.
+  useWarm(introEvents, phase === 'modeSelect' || phase === 'gameOver');
   useWarm(startCards, phase === 'transitioning');
   useWarm(upcoming, phase === 'playing');
 }

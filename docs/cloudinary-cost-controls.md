@@ -34,6 +34,14 @@ string shown in the console's transformation list is exactly the string to allow
 - **Don't add a third rung casually.** Cost scales as
   `images touched × rungs × formats (~2–3)`. Across the full 5,291-image catalogue, each
   rung is roughly 13,000 transformations — about half a month's free-plan allowance.
+- **Never sample the catalogue uniformly at random for a decorative surface.** Any screen
+  that shows arbitrary events — the game-start intro animation, and any future "random card"
+  surface — must draw from a **date-seeded bounded pool**, so its ceiling is the pool rather
+  than all 5,291 images. Distinct images touched is then
+  `POOL_SIZE × rungs × formats`, which is flat and **independent of traffic**. At
+  `INTRO_POOL_SIZE = 60` per week that's ~783 transformations/month against a 25,000/month
+  allowance; unbounded, the same screen projects to ~35,000/month. See
+  `src/utils/introEvents.ts`, guarded by `src/utils/introEvents.test.ts`.
 
 ## 2. What went wrong in August 2026
 
@@ -49,6 +57,12 @@ on roughly 4× the usual traffic. Per-session cost was the multiplier, not traff
 3. **The achievements panel** warmed all 60 badge thumbnails on a panel the pager
    pre-mounts at idle, so every home-screen visitor paid ~4.4 MB for a tab most never open.
 4. **Every rendered card** eagerly warmed its full-size `detail` image, opened or not.
+5. **The game-start intro animation** drew 20 events uniformly at random from all 5,291 on
+   every entry to `modeSelect` — so once per game, and again on every Play Again — and
+   eagerly warmed all 20 thumbnails. That is the mechanism behind §6's "organic reach into a
+   5,291-image catalogue": a purely decorative screen whose transformation ceiling was the
+   whole catalogue, growing linearly with traffic. Fixed by bounding it to a weekly pool
+   (`INTRO_POOL_SIZE`); see the rule in §1.
 
 Measured cost fell from ~10 MB to ~1 MB per session.
 
@@ -135,8 +149,12 @@ permutations — the classic abuse signature.
 
 Console → **Home → Delivery Reports**:
 
-- **Top Assets** — a few assets dominating means scripted hammering or a hotlink; a flat
-  spread across hundreds means organic play.
+- **Top Assets** — a few assets dominating means scripted hammering or a hotlink.
+  ⚠️ **The converse no longer holds.** A flat spread across hundreds of thumbnails used to
+  read as organic play; since the intro animation was bounded to a weekly pool (§1), the
+  handful of surfaces that touch arbitrary events are all bounded or seeded, so a broad flat
+  spread is now a **regression signal** — something has reintroduced uniform random sampling
+  over the catalogue. Check `INTRO_POOL_SIZE` and its test first.
 - **Top Transformations** — entries with no transformation name are raw originals; many
   near-identical widths (`w_300`, `w_301`, …) means URL fuzzing.
 - **Top Browsers / Countries** — a single UA or country carrying a spike is the tell.
