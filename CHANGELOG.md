@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.6.4](https://github.com/Edward-Muir/when/compare/v1.6.3...v1.6.4) (2026-08-12)
+
+
+### Bug Fixes
+
+* key the puzzle day on the player's local date ([#31](https://github.com/Edward-Muir/when/issues/31)) ([34a78ad](https://github.com/Edward-Muir/when/commit/34a78add4893188ea46725a1416e27f8b95e8cc5))
+
 ## [1.6.3](https://github.com/Edward-Muir/when/compare/v1.6.2...v1.6.3) (2026-08-10)
 
 

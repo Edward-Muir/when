@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2026 22:48:24 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2026 21:22:53 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.6.4</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.6.4</guid>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>key the puzzle day on the player's local date (<a href="https://github.com/Edward-Muir/when/issues/31">#31</a>) (<a href="https://github.com/Edward-Muir/when/commit/34a78add4893188ea46725a1416e27f8b95e8cc5">34a78ad</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.6.3</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.2.2</guid>
       <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix the flashing buttons whennaving (<a href="https://github.com/Edward-Muir/when/commit/3af98e68ac9b18bc1ca03bd1b398a715948ee916">3af98e6</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.2.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.2.1</guid>
-      <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix margin widths (<a href="https://github.com/Edward-Muir/when/commit/1517d2ed620a9ba0456eee6c161c5062eb396164">1517d2e</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
