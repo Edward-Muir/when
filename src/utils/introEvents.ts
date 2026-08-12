@@ -28,7 +28,7 @@ const MS_PER_DAY = 86_400_000;
 const MONDAY_OFFSET_DAYS = 3;
 
 export interface IntroPickOptions {
-  /** UTC YYYY-MM-DD. The weekly pool key is derived from this, never computed separately. */
+  /** Local YYYY-MM-DD. The weekly pool key is derived from this, never computed separately. */
   dateString: string;
   /** Monotonic counter; rotates to the next disjoint subset of the same day's ordering. */
   rotation?: number;
@@ -39,7 +39,9 @@ export interface IntroPickOptions {
 }
 
 /**
- * Monday-aligned week index for a UTC YYYY-MM-DD date. Deliberately not an ISO week number:
+ * Monday-aligned week index for a YYYY-MM-DD date. Parsing the string as UTC midnight is just
+ * a stable string→integer mapping, not a timezone claim — it works identically on the local
+ * date strings the daily seed now uses. Deliberately not an ISO week number:
  * this is just a monotonic integer, so it has no year-boundary or week-numbering edge cases,
  * and it is derived from the same date string the daily subset uses so the two can never
  * disagree about which week a given day belongs to.

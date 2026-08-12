@@ -47,7 +47,7 @@
     "start": "react-scripts start",
     "prebuild": "node scripts/inject-version.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "TZ=America/Los_Angeles react-scripts test",
     "eject": "react-scripts eject",
     "find-duplicates": "node scripts/find-duplicate-events.js",
     "cloudinary:usage": "node scripts/cloudinary-usage.js",

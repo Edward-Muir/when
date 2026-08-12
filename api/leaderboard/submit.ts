@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
 import { safeDisplayName } from './nameFilter';
+import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
 
 const redis = Redis.fromEnv();
 
@@ -160,8 +161,9 @@ function validateSubmission(body: SubmissionPayload): ValidationResult {
     return { valid: false, error: 'Missing required fields' };
   }
 
-  const today = new Date().toISOString().split('T')[0];
-  if (body.date !== today) {
+  // A window, not an exact UTC match: the puzzle is keyed on the player's local date, so
+  // one date string is in play for ~50 hours across all timezones. See dateWindow.ts.
+  if (!isDateWithinSubmissionWindow(body.date)) {
     return { valid: false, error: 'Invalid date - must be today' };
   }
 
@@ -228,8 +230,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       member: JSON.stringify(entry),
     });
 
-    // Mark device as submitted (TTL: 25 hours for timezone edge cases)
-    await redis.set(submissionKey, '1', { ex: 25 * 60 * 60 });
+    // Mark device as submitted, for longer than the date stays submittable
+    await redis.set(submissionKey, '1', { ex: SUBMISSION_DEDUPE_TTL_SECONDS });
 
     // Set TTL on leaderboard (7 days)
     await redis.expire(leaderboardKey, 7 * 24 * 60 * 60);

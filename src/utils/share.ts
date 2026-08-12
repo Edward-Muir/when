@@ -1,5 +1,6 @@
 import { WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
+import { getLocalDateString } from './puzzleDate';
 
 const GAME_URL = 'https://www.play-when.com/';
 const DAILY_URL = 'https://www.play-when.com/daily';
@@ -46,7 +47,7 @@ export function generateShareText(state: WhenGameState): string {
 
   switch (gameMode) {
     case 'daily': {
-      const dateStr = lastConfig?.dailySeed || new Date().toISOString().split('T')[0];
+      const dateStr = lastConfig?.dailySeed || getLocalDateString();
       const theme = getDailyTheme(dateStr);
       const themeName = getThemeDisplayName(theme);
       text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events${streakSuffix}\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;

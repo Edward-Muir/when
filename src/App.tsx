@@ -10,6 +10,7 @@ import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { pickIntroEvents } from './utils/introEvents';
 import { GameConfig } from './types';
 import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
+import { getLocalDateString } from './utils/puzzleDate';
 import { hasPlayedToday } from './utils/playerStorage';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
@@ -136,7 +137,7 @@ function App({
   // set for a game that may never start. On iOS the WKWebView keeps this state alive for
   // days, so that would recur. Carrying yesterday's intro into a session that crossed
   // midnight is the cheaper, invisible outcome — nothing labels the intro with a date.
-  const [introDate] = useState(() => new Date().toISOString().split('T')[0]);
+  const [introDate] = useState(() => getLocalDateString());
   const [introRotation, setIntroRotation] = useState(0);
 
   // The intro shows names and years, i.e. answers. Keep today's daily deck out of it: a

@@ -2,13 +2,14 @@ import { GameConfig, HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
 import { getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
 import { filterByDifficulty, filterByCategory, filterByEra } from './eventLoader';
 import { shuffleArraySeeded } from './gameLogic';
+import { getLocalDateString } from './puzzleDate';
 
 /**
  * Build the GameConfig for today's daily challenge.
  * Shared between ModeSelect (manual start) and /daily route (auto-start).
  */
 export function buildDailyConfig(): GameConfig {
-  const dailySeed = new Date().toISOString().split('T')[0];
+  const dailySeed = getLocalDateString();
   const dailyTheme = getDailyTheme(dailySeed);
 
   return {
@@ -29,12 +30,12 @@ export function buildDailyConfig(): GameConfig {
  * (`useWhenGame`: same filters, same seeded shuffle), so index 0 is the starting timeline
  * card and the cards after it are what the hand is dealt from.
  *
- * `dateString` (UTC YYYY-MM-DD) defaults to today; callers can pass an explicit date so
+ * `dateString` (local YYYY-MM-DD) defaults to today; callers can pass an explicit date so
  * memoization deps stay visible to the linter and results refresh on day rollover.
  */
 export function buildDailyDeck(
   allEvents: HistoricalEvent[],
-  dateString: string = new Date().toISOString().split('T')[0]
+  dateString: string = getLocalDateString()
 ): HistoricalEvent[] {
   const dailySeed = dateString;
   const dailyTheme = getDailyTheme(dailySeed);
@@ -56,7 +57,7 @@ export function buildDailyDeck(
  */
 export function getDailyPreviewEvent(
   allEvents: HistoricalEvent[],
-  dateString: string = new Date().toISOString().split('T')[0]
+  dateString: string = getLocalDateString()
 ): HistoricalEvent | null {
   return buildDailyDeck(allEvents, dateString)[0] ?? null;
 }

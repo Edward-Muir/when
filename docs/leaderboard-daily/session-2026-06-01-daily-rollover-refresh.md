@@ -80,6 +80,10 @@ timer, then make the leaderboard fetch and daily theme/preview memos depend on i
   (`new Date().toISOString().split('T')[0]` is used everywhere — `dailyConfig.ts`,
   `playerStorage.ts`'s `getTodayDateString`, leaderboard URL). Local-time rollover would
   desync players across timezones.
+  > **SUPERSEDED (2026-08-12).** This decision was reversed — UTC boundaries were breaking
+  > daily streaks for anyone not near Greenwich. Dates are now the player's local calendar
+  > date via `src/utils/puzzleDate.ts`, and the desync concern above was accepted rather
+  > than avoided. See `session-2026-08-12-local-puzzle-day.md` before changing this back.
 - **Make the lint-warning fix improve the API, not silence it.** Adding an explicit
   `dateString` parameter to `getDailyPreviewEvent` is genuinely better than an
   `eslint-disable` comment: it makes the dependency visible and is a backwards-compatible
@@ -139,6 +143,9 @@ The investigation traced every place that touches "today" to confirm the fix is 
   to react to date rollovers, lift this into `src/hooks/useToday.ts` — the three triggers
   (`appResume`, `visibilitychange`, midnight `setTimeout`) and the functional-setter
   dedupe are the patterns to preserve.
+  > **DONE (2026-08-12).** `src/hooks/useToday.ts` now exists, extracted exactly as
+  > described once `NextDailyCountdown` became the second consumer. The midnight timer also
+  > re-arms after firing, which the original one-shot version did not.
 - **`getDailyPreviewEvent(events, dateString?)` is now date-parameterizable.** Prefer
   passing an explicit date when calling from a memoized context — it keeps the lint
   rule honest and the dependency visible.

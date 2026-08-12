@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-const DAY_MS = 86_400_000;
+import { msUntilNextLocalMidnight } from '../utils/puzzleDate';
 
 export function formatCountdown(ms: number): string {
   const totalSeconds = Math.max(0, Math.floor(ms / 1000));
@@ -11,20 +10,17 @@ export function formatCountdown(ms: number): string {
   return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
 }
 
-// Time until the next daily puzzle (UTC midnight, matching the daily seed rollover)
-function msUntilNextDaily(): number {
-  return DAY_MS - (Date.now() % DAY_MS);
-}
-
 interface NextDailyCountdownProps {
   className?: string;
 }
 
+// Counts to the player's local midnight, matching the daily seed rollover. On the two DST
+// days a year this legitimately shows up to 25 hours (or as few as 23).
 const NextDailyCountdown: React.FC<NextDailyCountdownProps> = ({ className = '' }) => {
-  const [remaining, setRemaining] = useState(msUntilNextDaily);
+  const [remaining, setRemaining] = useState(() => msUntilNextLocalMidnight());
 
   useEffect(() => {
-    const interval = setInterval(() => setRemaining(msUntilNextDaily()), 1000);
+    const interval = setInterval(() => setRemaining(msUntilNextLocalMidnight()), 1000);
     return () => clearInterval(interval);
   }, []);
 

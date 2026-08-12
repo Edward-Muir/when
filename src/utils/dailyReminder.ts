@@ -16,6 +16,7 @@ import { Capacitor } from '@capacitor/core';
 import { LocalNotifications } from '@capacitor/local-notifications';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { hasPlayedToday, isDailyReminderEnabled, setDailyReminderEnabled } from './playerStorage';
+import { getLocalDateString } from './puzzleDate';
 
 export const REMINDER_HOUR = 8; // 8:00 AM local time
 
@@ -71,12 +72,12 @@ export function getNext8amDates(count: number, now: Date = new Date()): Date[] {
 
 /**
  * Notification copy for a reminder firing at `fireAt`. The puzzle date is the
- * UTC date AT THE FIRE INSTANT — at 8am local this can differ from the local
- * calendar date (e.g. UTC+10 mornings are already "tomorrow" in UTC), and the
- * puzzle/theme are seeded by the UTC date.
+ * local calendar date at the fire instant — the same date the deck is seeded
+ * from, so an 8am reminder always names the theme of the puzzle the player is
+ * about to be handed.
  */
 export function getReminderCopy(fireAt: Date): { title: string; body: string } {
-  const puzzleDate = fireAt.toISOString().split('T')[0];
+  const puzzleDate = getLocalDateString(fireAt);
   const themeName = getThemeDisplayName(getDailyTheme(puzzleDate));
   return {
     title: 'Today’s daily puzzle is ready',
@@ -138,9 +139,9 @@ export async function resyncDailyReminders(): Promise<void> {
 
     await cancelOurPending();
 
-    const todayPuzzleDate = new Date().toISOString().split('T')[0];
+    const todayPuzzleDate = getLocalDateString();
     const slots = getNext8amDates(REMINDER_WINDOW_DAYS).filter(
-      (fireAt) => !(hasPlayedToday() && fireAt.toISOString().split('T')[0] === todayPuzzleDate)
+      (fireAt) => !(hasPlayedToday() && getLocalDateString(fireAt) === todayPuzzleDate)
     );
 
     await LocalNotifications.schedule({

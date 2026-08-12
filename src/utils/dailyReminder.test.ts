@@ -1,6 +1,7 @@
 import { getNext8amDates, getReminderCopy, REMINDER_HOUR } from './dailyReminder';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { shouldShowReminderPriming, recordPrimingDismissed } from './playerStorage';
+import { getLocalDateString } from './puzzleDate';
 
 describe('getNext8amDates', () => {
   it('starts with today when called before 8am', () => {
@@ -42,13 +43,27 @@ describe('getNext8amDates', () => {
 });
 
 describe('getReminderCopy', () => {
-  it('themes the body from the UTC date at the fire instant', () => {
+  it('themes the body from the local date at the fire instant', () => {
     const fireAt = new Date(2026, 6, 9, 8, 0);
-    const puzzleDate = fireAt.toISOString().split('T')[0];
-    const expectedTheme = getThemeDisplayName(getDailyTheme(puzzleDate));
+    const expectedTheme = getThemeDisplayName(getDailyTheme(getLocalDateString(fireAt)));
     const { title, body } = getReminderCopy(fireAt);
     expect(title.length).toBeGreaterThan(0);
     expect(body).toContain(expectedTheme);
+  });
+
+  it('names the puzzle the player will actually be handed, not the UTC one', () => {
+    // An 8am reminder east of UTC fires when UTC is already on the next date (and west of
+    // UTC, an evening instant is too). The copy must follow the local date the deck is
+    // seeded from — this used to deliberately announce the UTC date's theme, so a UTC+10
+    // player was told tomorrow's theme every morning.
+    const fireAt = new Date(2026, 6, 9, 20, 0); // 8pm local == Jul 10 in UTC
+    expect(fireAt.toISOString().split('T')[0]).toBe('2026-07-10');
+    expect(getLocalDateString(fireAt)).toBe('2026-07-09');
+
+    const localTheme = getThemeDisplayName(getDailyTheme('2026-07-09'));
+    const utcTheme = getThemeDisplayName(getDailyTheme('2026-07-10'));
+    expect(localTheme).not.toBe(utcTheme); // guards the assertion below from being vacuous
+    expect(getReminderCopy(fireAt).body).toContain(localTheme);
   });
 
   it('is deterministic for a given fire time', () => {

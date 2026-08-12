@@ -1,4 +1,5 @@
 import { Redis } from '@upstash/redis';
+import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
 
 // Bot configuration
 const BOT_COUNT_BASE = 10;
@@ -180,7 +181,12 @@ interface BotEntry {
   timestamp: number;
 }
 
-function generateBotsForDate(date: string): BotEntry[] {
+/**
+ * The bot field for one puzzle date. Derived purely from the date string, so every player
+ * worldwide sees the identical set for a given date regardless of when they first fetch it.
+ * Exported for tests.
+ */
+export function generateBotsForDate(date: string): BotEntry[] {
   // Create date-seeded random generator
   const baseSeed = stringToSeed(`bots-${date}`);
   const random = seededRandom(baseSeed);
@@ -217,8 +223,11 @@ function generateBotsForDate(date: string): BotEntry[] {
     const displayName = generateBotName(botRandom);
     const deviceId = generateBotDeviceId(date, i);
 
-    // Timestamp: spread throughout "early morning" hours
-    // Start of day + 0-6 hours in milliseconds
+    // Timestamp: spread throughout "early morning" hours.
+    // Note: 00:00Z on the puzzle date is nobody's local morning now that dates are keyed
+    // locally — it lands before an LA player's day opens and well into a Sydney player's.
+    // Harmless: [date].ts strips `timestamp` from the public entry and ranks by score, so
+    // this value is never shown or ordered on. Don't read meaning into it.
     const dateObj = new Date(date + 'T00:00:00Z');
     const timestamp = dateObj.getTime() + Math.floor(botRandom() * 6 * 60 * 60 * 1000);
 
@@ -238,7 +247,22 @@ function generateBotsForDate(date: string): BotEntry[] {
   return bots;
 }
 
+/**
+ * Lazily seed a date's leaderboard with bots. Idempotent per date, and identical for every
+ * player: the count and each bot's stats derive purely from the date string, so whoever
+ * fetches a given date first mints the set and everyone else — in any timezone — reads the
+ * same entries back out of the sorted set.
+ *
+ * Creation is restricted to dates currently in play. `[date].ts` will serve any well-formed
+ * date so historical boards stay readable for their 7-day TTL, but without this guard any
+ * client could mint bot sets and lock keys for arbitrary dates (`9999-12-31`) just by asking
+ * for them.
+ */
 export async function ensureBotsExist(redis: Redis, date: string): Promise<boolean> {
+  if (!isDateWithinSubmissionWindow(date)) {
+    return false;
+  }
+
   const lockKey = `bots-initialized:${date}`;
   const leaderboardKey = `leaderboard:${date}`;
 
@@ -269,7 +293,7 @@ export async function ensureBotsExist(redis: Redis, date: string): Promise<boole
 
       // Mark bot's "device" as submitted (prevents accidental collision)
       const submissionKey = `submission:${date}:${bot.deviceId}`;
-      await redis.set(submissionKey, 'bot', { ex: 25 * 60 * 60 });
+      await redis.set(submissionKey, 'bot', { ex: SUBMISSION_DEDUPE_TTL_SECONDS });
     }
 
     // Set TTL on leaderboard (7 days)

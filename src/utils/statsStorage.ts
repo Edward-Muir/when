@@ -15,6 +15,7 @@
 
 import { HistoricalEvent, WhenGameState } from '../types';
 import { getTimelineHighScore } from './playerStorage';
+import { dayDiff, getLocalDateString } from './puzzleDate';
 import { ACHIEVEMENT_TESTS, StatsSnapshot } from '../data/achievementLogic';
 
 // --- Lifetime Stats (daily / suddenDeath / freeplay, excludes custom games) ---
@@ -251,16 +252,6 @@ export function buildEventsByName(events: HistoricalEvent[]): Map<string, Histor
 
 // --- Recording + achievement evaluation ---
 
-/** Today in YYYY-MM-DD (local), matching playerStorage's convention. */
-function getTodayDateString(): string {
-  return new Date().toISOString().split('T')[0];
-}
-
-/** Whole-day difference between two YYYY-MM-DD strings (b - a). */
-function dayDiff(a: string, b: string): number {
-  return Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
-}
-
 /**
  * Record a finished game into the stats primitives and unlock any newly-earned achievements.
  *
@@ -288,7 +279,7 @@ export function recordGameResult(
   const correct = state.placementHistory.filter((p) => p).length;
   const wrong = state.placementHistory.filter((p) => !p).length;
   const len = state.timeline.length;
-  const today = getTodayDateString();
+  const today = getLocalDateString();
 
   // Collection — union this game's correctly-placed events (all modes).
   const placedNames = state.timeline
@@ -358,7 +349,7 @@ export function reevaluateAchievements(eventsByName: Map<string, HistoricalEvent
   };
 
   const achievements = getAchievements();
-  const today = getTodayDateString();
+  const today = getLocalDateString();
   const newlyUnlocked: string[] = [];
 
   for (const [id, test] of Object.entries(ACHIEVEMENT_TESTS)) {

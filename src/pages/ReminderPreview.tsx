@@ -14,6 +14,7 @@ import {
   ReminderPermissionState,
 } from '../utils/dailyReminder';
 import { resetReminderPriming } from '../utils/playerStorage';
+import { getLocalDateString } from '../utils/puzzleDate';
 
 /**
  * Dev-only harness (route: /reminder-preview, unlinked) for the daily 8am
@@ -149,7 +150,7 @@ const ReminderPreview: React.FC = () => {
                   className="px-3 py-2 border-b border-border last:border-b-0 bg-surface"
                 >
                   <p className="text-xs text-text-muted font-mono">
-                    fires {fireAt.toLocaleString()} · puzzle {fireAt.toISOString().split('T')[0]}
+                    fires {fireAt.toLocaleString()} · puzzle {getLocalDateString(fireAt)}
                   </p>
                   <p className="text-sm font-semibold">{copy.title}</p>
                   <p className="text-sm text-text-muted">{copy.body}</p>
