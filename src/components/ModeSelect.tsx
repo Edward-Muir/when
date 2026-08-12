@@ -34,6 +34,7 @@ import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useLeaderboard } from '../hooks/useLeaderboard';
+import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
 
@@ -182,35 +183,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     fetchLeaderboard,
   } = useLeaderboard();
 
-  // Source of truth for "today" (UTC date string). Refreshed on app resume, tab
-  // visibility change, and at UTC midnight so the Daily tab rolls over to the new day
-  // without a manual reload — important for the iOS Capacitor app, whose WKWebView keeps
-  // its React state alive across background/foreground.
-  const [today, setToday] = useState(() => new Date().toISOString().split('T')[0]);
-
-  useEffect(() => {
-    const refresh = () => {
-      const next = new Date().toISOString().split('T')[0];
-      setToday((curr) => (curr === next ? curr : next));
-      // Always refetch the leaderboard on resume/visibility, even when the date hasn't
-      // rolled over — other players' submissions need to land without a full reload.
-      fetchLeaderboard(next);
-    };
-    const onVisibility = () => {
-      if (!document.hidden) refresh();
-    };
-    // `appResume` is dispatched by App.tsx via @capacitor/app's native `resume` event.
-    window.addEventListener('appResume', refresh);
-    document.addEventListener('visibilitychange', onVisibility);
-    // Fire once at the next UTC midnight even if the app stays foregrounded across it.
-    const msUntilMidnight = 86_400_000 - (Date.now() % 86_400_000) + 1_000;
-    const t = window.setTimeout(refresh, msUntilMidnight);
-    return () => {
-      window.removeEventListener('appResume', refresh);
-      document.removeEventListener('visibilitychange', onVisibility);
-      window.clearTimeout(t);
-    };
-  }, [fetchLeaderboard]);
+  // Source of truth for "today" (the player's local date). The hook handles rollover via
+  // app resume, tab visibility and a re-arming local-midnight timer. Always refetch the
+  // leaderboard on each trigger, even when the date hasn't rolled over — other players'
+  // submissions need to land without a full reload.
+  const today = useToday(fetchLeaderboard);
 
   // Prefetch leaderboard data in background; refetch when the day rolls over.
   useEffect(() => {

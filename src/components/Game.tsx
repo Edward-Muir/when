@@ -19,6 +19,7 @@ import { useHaptics } from '../hooks/useHaptics';
 import { useLeaderboard } from '../hooks/useLeaderboard';
 import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
@@ -283,8 +284,7 @@ const Game: React.FC<GameProps> = ({
   // Prefetch leaderboard data for daily mode so it's ready at game over
   useEffect(() => {
     if (state.gameMode === 'daily') {
-      const today = new Date().toISOString().split('T')[0];
-      fetchLeaderboard(today);
+      fetchLeaderboard(getLocalDateString());
     }
   }, [state.gameMode, fetchLeaderboard]);
 

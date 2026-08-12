@@ -5,6 +5,7 @@
  */
 
 import { GameMode, Difficulty, Category, Era } from '../types';
+import { getLocalDateString } from './puzzleDate';
 
 // --- Daily Result Storage ---
 
@@ -22,13 +23,6 @@ export interface DailyResult {
 }
 
 const DAILY_RESULT_KEY = 'when-daily-result';
-
-/**
- * Get today's date in YYYY-MM-DD format
- */
-function getTodayDateString(): string {
-  return new Date().toISOString().split('T')[0];
-}
 
 /**
  * Save the daily game result to localStorage
@@ -54,7 +48,7 @@ export function getTodayResult(): DailyResult | null {
     const result: DailyResult = JSON.parse(stored);
 
     // Only return if the stored result is for today
-    if (result.date === getTodayDateString()) {
+    if (result.date === getLocalDateString()) {
       return result;
     }
 
@@ -320,7 +314,7 @@ export function hasSubmittedToLeaderboard(): boolean {
     const stored = localStorage.getItem(LEADERBOARD_SUBMITTED_KEY);
     if (!stored) return false;
     // Only return true if it was submitted for today
-    return stored === getTodayDateString();
+    return stored === getLocalDateString();
   } catch {
     return false;
   }
@@ -331,7 +325,7 @@ export function hasSubmittedToLeaderboard(): boolean {
  */
 export function markLeaderboardSubmitted(): void {
   try {
-    localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getTodayDateString());
+    localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getLocalDateString());
   } catch {
     console.warn('Failed to save leaderboard submission status');
   }

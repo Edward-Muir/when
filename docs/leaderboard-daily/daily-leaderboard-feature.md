@@ -44,7 +44,7 @@ POST endpoint for submitting daily results.
 
 ```typescript
 {
-  date: string; // YYYY-MM-DD, must match today
+  date: string; // YYYY-MM-DD, the player's LOCAL date; must be within utcToday +/- 1
   displayName: string; // Optional, max 20 chars
   correctCount: number; // Number of correct placements
   totalAttempts: number; // correctCount + mistakes
@@ -56,7 +56,10 @@ POST endpoint for submitting daily results.
 
 **Validation logic:**
 
-1. Date must match today (UTC): `new Date().toISOString().split('T')[0]`
+1. Date must be within `utcToday ± 1` (`isDateWithinSubmissionWindow` in
+   `api/leaderboard/dateWindow.ts`). Not an exact match: the puzzle is seeded from the
+   player's **local** date, so one date string is in play for ~50 wall-clock hours —
+   it opens at `D 00:00` in UTC+14 and closes at `D 23:59` in UTC-12.
 2. `correctCount >= 0` (no upper limit - sudden death can go indefinitely)
 3. Emoji grid: count 🟩 must equal `correctCount`, count 🟥 must be 1-5
 4. `totalAttempts` must equal `correctCount + mistakeCount`
@@ -77,8 +80,8 @@ Higher `correctCount` wins. Tiebreaker: fewer mistakes.
 // Store in sorted set
 await kv.zadd(`leaderboard:${date}`, { score, member: JSON.stringify(entry) });
 
-// Mark device as submitted (25hr TTL for timezone edge cases)
-await kv.set(`submission:${date}:${deviceId}`, '1', { ex: 25 * 60 * 60 });
+// Mark device as submitted, for longer than the date stays submittable (~50h window)
+await kv.set(`submission:${date}:${deviceId}`, '1', { ex: SUBMISSION_DEDUPE_TTL_SECONDS });
 
 // Set leaderboard TTL (7 days)
 await kv.expire(`leaderboard:${date}`, 7 * 24 * 60 * 60);
@@ -345,11 +348,11 @@ const LEADERBOARD_SUBMITTED_KEY = 'when-leaderboard-submitted';
 
 export function hasSubmittedToLeaderboard(): boolean {
   const stored = localStorage.getItem(LEADERBOARD_SUBMITTED_KEY);
-  return stored === getTodayDateString(); // Only true if submitted TODAY
+  return stored === getLocalDateString(); // Only true if submitted TODAY (player's local date)
 }
 
 export function markLeaderboardSubmitted(): void {
-  localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getTodayDateString());
+  localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getLocalDateString());
 }
 ```
 
@@ -378,8 +381,7 @@ const { isLoading, loadError, leaderboard, totalPlayers, rank, fetchLeaderboard 
 ```typescript
 useEffect(() => {
   if (isLeaderboardOpen) {
-    const today = new Date().toISOString().split('T')[0];
-    fetchLeaderboard(today);
+    fetchLeaderboard(getLocalDateString());
   }
 }, [isLeaderboardOpen, fetchLeaderboard]);
 ```
