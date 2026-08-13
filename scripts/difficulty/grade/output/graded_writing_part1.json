@@ -1,0 +1,1287 @@
+{
+  "batch": "writing_part1",
+  "category": "writing",
+  "graded": [
+    {
+      "name": "first-symbolic-engravings",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Blombos ochre engravings are unknown to a general audience, but 'early humans' scratching ochre in a cave places it firmly in deep prehistory."
+    },
+    {
+      "name": "clay-token-accounting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Accounting tokens are obscure, but 'Mesopotamians' plus 'precursor to written records' anchors it to before writing exists."
+    },
+    {
+      "name": "cuneiform-cylinder-seals",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Cylinder seals are specialist knowledge; 'Mesopotamians' and clay documents anchor the era clearly."
+    },
+    {
+      "name": "proto-cuneiform-tablets",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Proto-cuneiform is a specialist term, but 'Uruk' and 'the earliest known writing system' are a very strong era anchor."
+    },
+    {
+      "name": "writing-invention",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The invention of writing by the Sumerians is universal schoolbook knowledge with an unmistakable anchor."
+    },
+    {
+      "name": "receipt",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The card name gives nothing; only the description's 'clay tablets in Sumer' places it, and the first receipt is not a recognised event."
+    },
+    {
+      "name": "indus-script-appears",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Indus script itself is specialist, but the Indus Valley civilization is taught in schools and anchors the Bronze Age."
+    },
+    {
+      "name": "first-promissory-clay-tablets",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Sumerian loan tablets are specialist, but 'Sumerian scribes' plus clay tablets is a strong ancient anchor."
+    },
+    {
+      "name": "epic-gilgamesh",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Gilgamesh is widely known and 'the oldest surviving great work of literature' pins it to the dawn of literature."
+    },
+    {
+      "name": "proto-sinaitic-alphabet",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'First alphabet' is a recognised milestone and 'adapted hieroglyphs in Egypt' anchors it hard to antiquity."
+    },
+    {
+      "name": "phaistos-disc-stamped",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The disc is an archaeological curiosity, but 'Cretan clay disc' points to the ancient Aegean."
+    },
+    {
+      "name": "egyptian-grain-banking",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "State grain banking is expert-level, though 'Ancient Egypt' is an explicit era anchor."
+    },
+    {
+      "name": "vedic-civilization-vedas",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Composition of the Vedas as an event is specialist, but Rigveda/Indo-Aryan/Hinduism's foundational texts anchor it to ancient India."
+    },
+    {
+      "name": "linear-b-script",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Linear B is enthusiast knowledge; 'Mycenaean Greeks' anchors the Bronze Age Aegean firmly."
+    },
+    {
+      "name": "epic-gilgamesh-written",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Standard Babylonian recension specifically is specialist knowledge, though Babylon and clay tablets anchor the era."
+    },
+    {
+      "name": "chinese-bronze-inscriptions",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ritual bronze inscriptions are specialist and 'Zhou-era' only helps a player who knows Chinese dynasties."
+    },
+    {
+      "name": "i-ching-compiled",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The I Ching is a widely recognised text and the card says 'ancient Chinese' and 'Zhou Dynasty', which narrows the era for most players."
+    },
+    {
+      "name": "greek-alphabet-vowels",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The vowel innovation is specialist, but Greeks adapting the Phoenician alphabet anchors archaic Greece."
+    },
+    {
+      "name": "homer-iliad",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Homer and the Iliad are universally known and unmistakably archaic Greek."
+    },
+    {
+      "name": "latin-alphabet-develops",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Etruscan-to-Latin transition is specialist, but Rome and Etruria anchor the era clearly."
+    },
+    {
+      "name": "homeric-epics-written-down",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The writing-down event is enthusiast knowledge, though Homer and the spreading Greek alphabet anchor archaic Greece."
+    },
+    {
+      "name": "first-coins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'The first coins' is a standard schoolbook milestone and Lydia/electrum anchors pre-classical antiquity."
+    },
+    {
+      "name": "pythagoras-school",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Pythagoras is a household name and 'mathematician founds a school' anchors classical Greece."
+    },
+    {
+      "name": "persian-daric-gold-coin",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The daric is specialist, but 'Darius I' and 'Persian Empire' are strong named anchors."
+    },
+    {
+      "name": "aramaic-becomes-lingua-franca",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Aramaic's administrative spread is expert knowledge; 'Persian Empire' is the only, though solid, anchor."
+    },
+    {
+      "name": "go-game-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Go is a widely recognised game, but 'established in ancient China' is a broad clue."
+    },
+    {
+      "name": "postal-system-persia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Angareion relay system is expert knowledge; Darius I and the Royal Road anchor the era."
+    },
+    {
+      "name": "herodotus-histories",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Herodotus is a name most general readers have not retained, but 'Greek historian' anchors classical Greece firmly."
+    },
+    {
+      "name": "sophocles-oedipus",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Oedipus Rex is widely known as the archetypal Greek tragedy, an unmistakable classical anchor."
+    },
+    {
+      "name": "panini-sanskrit-grammar",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Panini is unknown outside linguistics and 'Sanskrit grammar' spans a very wide swathe of Indian history."
+    },
+    {
+      "name": "aristotle-tutors-alexander",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Aristotle tutoring Alexander is a standard school fact with two of the strongest possible name anchors."
+    },
+    {
+      "name": "roman-roads",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Roman roads and the Appian Way are broadly familiar and 'Rome to Capua' under a censor anchors the Republic."
+    },
+    {
+      "name": "euclid-elements",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Euclid's geometry is taught everywhere and 'Greek mathematician' anchors the classical world."
+    },
+    {
+      "name": "formal-systems-panini",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only framing, and calling it 'the first formal system in linguistics' reads as modern, actively misleading the player."
+    },
+    {
+      "name": "septuagint-translated",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Septuagint is specialist, but 'Hebrew Bible translated into Greek in Alexandria' is a strong Hellenistic anchor."
+    },
+    {
+      "name": "qin-standardization",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The standardization decree is specialist, but Qin Shi Huang unifying China is a firm anchor."
+    },
+    {
+      "name": "hanzi-script-standardization",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Script standardization is specialist and 'Han Dynasty' only helps players who know Chinese dynastic order."
+    },
+    {
+      "name": "parchment-developed-pergamum",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pergamum is specialist, but parchment rivalling papyrus places it firmly in the ancient Mediterranean."
+    },
+    {
+      "name": "dead-sea-scrolls-written",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Dead Sea Scrolls are a famous find, though 'ancient Jewish religious manuscripts' leaves the era loosely defined."
+    },
+    {
+      "name": "roman-acta-diurna",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Acta Diurna is expert trivia, but 'Julius Caesar ordered' is about as strong a name anchor as exists."
+    },
+    {
+      "name": "virgil-aeneid",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Virgil is a half-remembered name for most readers, but 'Roman poet' and 'Aeneas founding Rome' anchor antiquity."
+    },
+    {
+      "name": "augustan-age-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Augustan literary golden age is enthusiast knowledge; 'Augustus's reign' anchors it precisely enough."
+    },
+    {
+      "name": "vending-machine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The card name points a player straight at the 20th century; only 'Hero of Alexandria' and 'Egyptian temples' rescue the era."
+    },
+    {
+      "name": "lucan-pharsalia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lucan is unknown to a general audience, but 'civil war between Caesar and Pompey' is a very strong anchor."
+    },
+    {
+      "name": "pliny-natural-history",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pliny the Elder is dimly familiar and a Roman encyclopedia anchors imperial Rome."
+    },
+    {
+      "name": "roman-cursive-handwriting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Roman cursive is expert-level detail, though 'Romans' and 'papyrus' anchor the era."
+    },
+    {
+      "name": "paper-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The invention of paper in China is universal schoolbook knowledge with a named dynasty."
+    },
+    {
+      "name": "tacitus-histories-written",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Tacitus is a name enthusiasts know; 'Roman historian' and the Year of the Four Emperors anchor imperial Rome."
+    },
+    {
+      "name": "ptolemy-almagest",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Ptolemy is broadly familiar from the geocentric model, but 'compiled ancient astronomical knowledge' gives only a loose era."
+    },
+    {
+      "name": "apuleius-golden-ass",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Apuleius is unknown outside classics, but 'the only complete surviving Latin novel' anchors Roman antiquity."
+    },
+    {
+      "name": "ramayana-classic-version",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Ramayana is widely recognised, but 'reached its classical form' is a vague temporal claim."
+    },
+    {
+      "name": "aksumite-coinage",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Aksum is expert knowledge and 'first African coinage' gives only a weak, wide anchor."
+    },
+    {
+      "name": "first-cookbook-apicius",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Apicius is unknown to a general audience, though 'Roman text' anchors the era."
+    },
+    {
+      "name": "hypatia-mathematics-astronomy",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Hypatia is reasonably well known and the description literally states 'until her murder in 415 CE'."
+    },
+    {
+      "name": "zoroastrian-avesta",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Avesta's codification is specialist and 'Sassanid Empire' only helps players who know Persian dynasties."
+    },
+    {
+      "name": "bible-latin-vulgate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Vulgate is specialist, but 'Saint Jerome' translating the Bible into Latin anchors the late Roman church."
+    },
+    {
+      "name": "cassian-monasticism",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "John Cassian is expert-only and 'founded monasteries' could sit anywhere across a thousand years of monastic history."
+    },
+    {
+      "name": "bhartrihari-poetry",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An unknown poet and 'verses on love, ethics, and renunciation' give no temporal anchor at all."
+    },
+    {
+      "name": "boethius-logic-translation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Boethius is expert-level, but 'preserving Greek philosophy for medieval Europe' explicitly places him before the Middle Ages."
+    },
+    {
+      "name": "digest-of-justinian",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Digest is specialist, but Justinian and Roman law anchor it firmly."
+    },
+    {
+      "name": "arabic-numerals-india",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Arabic numerals are broadly familiar, but 'Indian mathematicians later spread by Arab scholars' leaves a wide window."
+    },
+    {
+      "name": "monastery-school",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Monastic school systems are expert-level, though 'Benedictine' and 'early medieval period' are explicit era markers."
+    },
+    {
+      "name": "printing-invented-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Chinese woodblock printing is a familiar milestone, but no dynasty or era word is given."
+    },
+    {
+      "name": "durrow-gospel-manuscript",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Book of Durrow is expert knowledge and 'insular illuminated manuscript' means nothing to a general player."
+    },
+    {
+      "name": "anglo-saxon-manuscript-art",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Manuscript illumination style is expert detail, but 'Anglo-Saxon' is an explicit and well-bounded era word."
+    },
+    {
+      "name": "domesday-style-record-keeping",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Word spacing is expert-level, but 'Irish monks' writing Latin anchors early medieval monasticism."
+    },
+    {
+      "name": "manuscript-culture-monks",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Scriptorium practice is expert detail; 'monastic scriptoria' and 'Insular script' anchor the early medieval period."
+    },
+    {
+      "name": "printing-woodblock-china",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Early woodblock printing is specialist and the description's 'Han Dynasty' points a knowledgeable player to the wrong era."
+    },
+    {
+      "name": "beowulf-composition",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Beowulf is widely known and 'the oldest surviving English epic poem' anchors the Anglo-Saxon period."
+    },
+    {
+      "name": "first-illustrated-paper-book",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Paper's westward spread is expert detail, though Samarkand and Baghdad's paper mills anchor the Abbasid era."
+    },
+    {
+      "name": "abbassid-science-translation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The translation movement is enthusiast knowledge, but the Abbasid House of Wisdom in Baghdad anchors it clearly."
+    },
+    {
+      "name": "book-of-kells",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Book of Kells has real public fame and 'Irish monks' illuminating the Gospels suggests the early medieval church."
+    },
+    {
+      "name": "woodblock-printing-refinement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A refinement step is specialist, and 'Tang Dynasty' requires knowledge of Chinese dynastic order."
+    },
+    {
+      "name": "flying-money-system-tang",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Feiqian credit certificates are expert knowledge and 'Tang China' is the only clue."
+    },
+    {
+      "name": "khwarizmi-algorithms",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Al-Khwarizmi is a name most readers half-know, but 'Baghdad's House of Wisdom' anchors the Islamic golden age."
+    },
+    {
+      "name": "cyrillic-alphabet-created",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cyril and Methodius are specialist figures and 'Slavic languages' gives only a loose medieval window."
+    },
+    {
+      "name": "diamond-sutra-printed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Diamond Sutra is specialist and 'Chinese Buddhist scroll printed from woodblocks' spans centuries with no dynasty given."
+    },
+    {
+      "name": "japanese-kana-developed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Kana's development is specialist and the card names no Japanese era or dynasty."
+    },
+    {
+      "name": "organum-medieval-polyphony",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Organum is expert musicology, but the description says 'medieval' outright."
+    },
+    {
+      "name": "goryeo-printing-woodblocks",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Goryeo woodblock printing is expert knowledge and the dynasty name helps only those who know Korean history."
+    },
+    {
+      "name": "drum-signal-codes",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Talking drums as a dated event are unknown, and nothing in the card suggests any century."
+    },
+    {
+      "name": "sei-shonagon-pillow-book",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sei Shonagon is literature-course knowledge and 'Heian court' anchors only for players who know Japanese periods."
+    },
+    {
+      "name": "tale-of-genji",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'World's first novel' is a familiar factoid but the card gives no era word for Japan."
+    },
+    {
+      "name": "song-paper-money-system",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "First paper money is a known factoid, but 'Southern Song' requires Chinese dynastic knowledge to date."
+    },
+    {
+      "name": "printing-movable-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Movable type in China before Gutenberg is a well-circulated fact and 'Song Dynasty' narrows it for many players."
+    },
+    {
+      "name": "song-gunpowder-weapons",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Wujing Zongyao is specialist and the Song dynasty anchor requires prior knowledge."
+    },
+    {
+      "name": "compass-navigation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Chinese magnetic compass is a familiar milestone and 'Song Dynasty' narrows it for many players."
+    },
+    {
+      "name": "mixtec-codices",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Mixtec codices are expert knowledge; 'Mesoamerica' only says pre-Columbian, a span of many centuries."
+    },
+    {
+      "name": "trotula-women-medicine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Trotula is expert-level, but the card says 'medieval Europe' explicitly."
+    },
+    {
+      "name": "song-magnetic-compass",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A second compass-adoption card with only a dynasty name to date it."
+    },
+    {
+      "name": "bhaskara-mathematics-india",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Bhaskara II is expert knowledge and 'calculus concepts' actively pulls the player toward the 17th century."
+    },
+    {
+      "name": "toledo-translation-movement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Toledo school is specialist; Arabic-to-Latin transmission suggests the high medieval period only to informed players."
+    },
+    {
+      "name": "translation-movement-sicily",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist subject, though 'the Norman court in Sicily' is a usable if narrow anchor."
+    },
+    {
+      "name": "waldensian-movement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Peter Waldo is specialist, but 'predating the Protestant Reformation' bounds it from above."
+    },
+    {
+      "name": "arabic-numerals-adoption",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Fibonacci's Liber Abaci is enthusiast knowledge, but Fibonacci is a named anchor to medieval Italy."
+    },
+    {
+      "name": "al-jazari-mechanical-art",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Al-Jazari is specialist; automata and water clocks suggest the medieval Islamic world only to informed players."
+    },
+    {
+      "name": "printing-press-korea",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Korean metal type is a niche fact and the card gives no era beyond 'Korea'."
+    },
+    {
+      "name": "florin-gold-standard",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The florin is expert knowledge, though 'medieval Europe' is stated outright."
+    },
+    {
+      "name": "aquinas-summa",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Aquinas is a name many have heard, and synthesising Christian theology anchors scholastic medieval Europe."
+    },
+    {
+      "name": "portolan-chart-development",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Portolan charts are expert knowledge and 'Mediterranean sailors with compass lines' spans centuries."
+    },
+    {
+      "name": "spectacles-aid-reading",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The first eyeglasses is a recognisable milestone; Italian craftsmen and scribes suggest the pre-print era."
+    },
+    {
+      "name": "bimetallic-standard-attempts",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A diffuse monetary phenomenon with no figure, place, or era to fix it in time."
+    },
+    {
+      "name": "letter-of-credit-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Letters of credit are specialist; 'Italian merchants' loosely suggests medieval-Renaissance banking."
+    },
+    {
+      "name": "divine-comedy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Dante and the Divine Comedy are universally known and anchor medieval Italy."
+    },
+    {
+      "name": "petrarch-sonnets",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Petrarch is literature-course knowledge and 'Italian poet writing sonnets' spans several centuries."
+    },
+    {
+      "name": "petrarch-humanist-movement",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Petrarch is specialist, but 'humanist movement' and 'classical learning' name the Renaissance directly."
+    },
+    {
+      "name": "jikji-korea-printing",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Jikji is niche, though 'oldest surviving metal-type book' implies it precedes Gutenberg."
+    },
+    {
+      "name": "lollards-wycliffe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Wycliffe is specialist, but Bible translation against papal authority in England anchors the late medieval church."
+    },
+    {
+      "name": "chaucer-canterbury",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Chaucer's Canterbury Tales is a school text and pilgrims anchor medieval England."
+    },
+    {
+      "name": "yap-stone-money-currency",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Rai stones are expert knowledge and nothing in the card indicates any century."
+    },
+    {
+      "name": "oil-based-printing-ink",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The ink itself is expert detail, but 'essential for Gutenberg's press' is an explicit anchor."
+    },
+    {
+      "name": "tarot-cards-italy",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tarot is widely recognised and 'Italian courts' with trick-taking games suggests the Renaissance."
+    },
+    {
+      "name": "hangul-creation-edict",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hangul and King Sejong are specialist outside Korea and the card gives no wider era marker."
+    },
+    {
+      "name": "gutenberg-movable-type-europe",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Gutenberg's press is universal knowledge with an unmistakable era."
+    },
+    {
+      "name": "incunabula-books",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Incunabula' is expert vocabulary, but 'after Gutenberg's press' anchors it precisely."
+    },
+    {
+      "name": "printing-color",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Mainz Psalter is expert knowledge, though Mainz and early printing anchor the Gutenberg moment."
+    },
+    {
+      "name": "printing-press-diffusion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The spread of printing across Europe is broadly familiar and Gutenberg is named."
+    },
+    {
+      "name": "double-entry-pacioli-treatise",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pacioli is specialist, but 'first printed description' places it just after the press reached Europe."
+    },
+    {
+      "name": "spanish-pieces-of-eight",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The piece of eight is a familiar name from pirate lore, and Spanish silver as a global currency anchors the colonial era."
+    },
+    {
+      "name": "end-medieval-period-1500",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The aggregate milestone is not a known event, but '20 million printed volumes' places it a few decades after Gutenberg."
+    },
+    {
+      "name": "printing-impact-literacy",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A diffuse effect, but 'within two generations' of printed books anchors it just after the press."
+    },
+    {
+      "name": "first-printed-music-notation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Petrucci is expert knowledge, though printing music with movable type anchors it after Gutenberg."
+    },
+    {
+      "name": "machiavelli-prince",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Machiavelli's The Prince is universally known and anchors Renaissance Italy."
+    },
+    {
+      "name": "luther-theses",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Luther's 95 Theses and the start of the Reformation are universal knowledge."
+    },
+    {
+      "name": "rabelais-gargantua",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Rabelais is literature-course knowledge; 'humanism' in France gives a loose Renaissance window."
+    },
+    {
+      "name": "printing-press-standardization",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A vague consolidation event, but uniform typefaces across Europe anchors it after the press spread."
+    },
+    {
+      "name": "mercator-projection-map",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Mercator projection is broadly familiar and a new world map for navigation suggests the age of exploration."
+    },
+    {
+      "name": "first-atlas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Ortelius is expert knowledge, but 'first modern world atlas' published in Antwerp anchors the age of exploration."
+    },
+    {
+      "name": "christopher-marlowe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Marlowe is a half-known name, but 'before Shakespeare' is an explicit and precise anchor."
+    },
+    {
+      "name": "spenser-faerie-queene",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Spenser is unknown to most readers, though 'celebrating Queen Elizabeth' anchors the Elizabethan age."
+    },
+    {
+      "name": "shakespeare-romeo-juliet",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Shakespeare and Romeo and Juliet are as universally known as an event gets."
+    },
+    {
+      "name": "kuba-kingdom-raffia-currency",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Kuba Kingdom is expert knowledge and woven raffia currency carries no temporal signal."
+    },
+    {
+      "name": "shakespeare-hamlet",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Shakespeare's Hamlet is universal knowledge with a firm Elizabethan-Jacobean anchor."
+    },
+    {
+      "name": "cervantes-don-quixote",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Don Quixote is universally known and 'first modern European novel' anchors it."
+    },
+    {
+      "name": "monteverdi-orfeo",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Monteverdi is known to classical listeners only; 'earliest opera still performed' suggests the birth of opera but needs prior knowledge."
+    },
+    {
+      "name": "king-james-bible",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The King James Bible is a household name and anchors early modern England."
+    },
+    {
+      "name": "corneille-le-cid",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Corneille is unknown to most readers; 'French classical theatre' is a real but specialist anchor."
+    },
+    {
+      "name": "descartes-cogito-philosophy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "'I think, therefore I am' is universally known and anchors the birth of modern philosophy."
+    },
+    {
+      "name": "jansenism-controversy",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Jansenism is expert theology and a Catholic dispute over grace could sit anywhere from the Reformation onward."
+    },
+    {
+      "name": "hobbes-publishes-leviathan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Hobbes and Leviathan are taught in schools, but 'social contract' spans a century of political philosophy."
+    },
+    {
+      "name": "milton-paradise-lost",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Paradise Lost is widely known, though the description gives no era marker beyond the poem's subject."
+    },
+    {
+      "name": "racine-theatre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Racine is unknown to most readers; 'French neoclassical tragedy' anchors only for the informed."
+    },
+    {
+      "name": "wren-st-pauls-cathedral",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Wren and St Paul's are broadly familiar, and 'after the Great Fire' of London is a precise, famous anchor."
+    },
+    {
+      "name": "enlightenment-age-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Enlightenment is a named era taught everywhere."
+    },
+    {
+      "name": "locke-treatise-government",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Locke's natural rights are widely taught, but consent-of-the-governed spans the whole Enlightenment."
+    },
+    {
+      "name": "first-paper-money-americas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Massachusetts issue is expert knowledge, though 'the colony of Massachusetts' anchors colonial America."
+    },
+    {
+      "name": "rongorongo-easter-island",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Easter Island is famous but rongorongo is not, and undeciphered wooden tablets carry no date signal."
+    },
+    {
+      "name": "bach-well-tempered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bach is a household name and 'keyboard collection' points to the Baroque, though the work itself is enthusiast territory."
+    },
+    {
+      "name": "stereotyping-process",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "William Ged and stereotyping are expert printing history with only a faint industrial-era hint."
+    },
+    {
+      "name": "french-enlightenment-peak",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A 'flourishing' is not a recognised event, but Voltaire and Montesquieu name the era outright."
+    },
+    {
+      "name": "handel-messiah",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Hallelujah Chorus is widely known and Handel anchors the Baroque for many players."
+    },
+    {
+      "name": "separation-of-powers-concept",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Montesquieu's separation of powers is standard civics teaching with an Enlightenment frame."
+    },
+    {
+      "name": "encyclopedia-published",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Diderot is a specialist name, but 'Enlightenment encyclopedia' names the era directly."
+    },
+    {
+      "name": "johnson-dictionary-published",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Johnson's Dictionary is a familiar landmark, though the card gives no explicit era."
+    },
+    {
+      "name": "haydn-symphonies",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Haydn is known mainly to classical listeners, but 'defined the Classical style' names the musical era outright."
+    },
+    {
+      "name": "rousseaus-social-contract",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rousseau is widely taught, but popular consent spans the Enlightenment century."
+    },
+    {
+      "name": "blackstone-commentaries",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Blackstone is known to lawyers only; English common law gives a weak era signal."
+    },
+    {
+      "name": "wealth-of-nations",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Adam Smith's Wealth of Nations is universally known and anchors the dawn of industrial economics."
+    },
+    {
+      "name": "schiller-major-plays",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Schiller is known chiefly in Germany, and 'Sturm und Drang' anchors only for the informed."
+    },
+    {
+      "name": "mozart-operas",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mozart is a household name and Don Giovanni anchors the Classical era."
+    },
+    {
+      "name": "lithography",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Lithography is a familiar word but Senefelder is not, and the description offers no era marker at all."
+    },
+    {
+      "name": "beethoven-first-symphony",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The First Symphony specifically is not a known event, though Beethoven in Vienna is a strong figure anchor."
+    },
+    {
+      "name": "beethoven-fifth",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The four-note opening is one of the most recognisable things in music, and Beethoven anchors the era."
+    },
+    {
+      "name": "goethe-faust-publication",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Goethe's Faust is broadly known, but the card gives no era marker beyond German literature."
+    },
+    {
+      "name": "pride-prejudice",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Jane Austen's Pride and Prejudice is universally known and anchors Regency England."
+    },
+    {
+      "name": "cherokee-syllabary-sequoyah",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sequoyah is known mainly in US curricula and the card offers no era word beyond the Cherokee context."
+    },
+    {
+      "name": "schubert-unfinished",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Schubert is known to classical listeners and the card offers no anchor beyond his name."
+    },
+    {
+      "name": "beethoven-symphony-nine",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Ninth and 'Ode to Joy' are universally known, with Beethoven in Vienna as the anchor."
+    },
+    {
+      "name": "book-of-mormon-published",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Book of Mormon is widely recognised and 'Palmyra, New York' points to the young United States."
+    },
+    {
+      "name": "christmas-carol-published",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Dickens's A Christmas Carol is universally known and anchors Victorian Britain."
+    },
+    {
+      "name": "uncle-toms-cabin-published",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely taught, and 'galvanized abolitionist sentiment in the North' anchors it just before the Civil War."
+    },
+    {
+      "name": "les-miserables",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Victor Hugo's Les Misérables is universally known and anchors 19th-century France."
+    },
+    {
+      "name": "dostoevsky-karamazov",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Dostoevsky is widely known, though 'his final novel' places it only within his lifetime."
+    },
+    {
+      "name": "freud-interpretation-dreams",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Freud and the founding of psychoanalysis are universal knowledge anchored to the turn of the 20th century."
+    },
+    {
+      "name": "surrealist-manifesto",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Breton is specialist, but Surrealism is a named movement that anchors the interwar avant-garde."
+    },
+    {
+      "name": "mein-kampf-published",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Hitler's manifesto is universally known and anchors the interwar years."
+    },
+    {
+      "name": "transportation-map",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The London Underground map is iconic even if Beck is not, and schematic transit design signals the modern era."
+    },
+    {
+      "name": "nineteen-eighty-four",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Orwell's Nineteen Eighty-Four is universal knowledge from the postwar years."
+    },
+    {
+      "name": "catch-22-published",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Catch-22 is widely known and a satirical war novel points to the mid-20th century."
+    },
+    {
+      "name": "ascii-character-standard",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "ASCII is familiar to anyone around computers and signals the early computing era."
+    },
+    {
+      "name": "fax-machine-widespread",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Fax machines are familiar and 'document images over phone lines' anchors the late 20th century."
+    },
+    {
+      "name": "unicode-standard-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Unicode is known to the tech-aware and belongs to the computing era."
+    },
+    {
+      "name": "gpt-language-model",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "GPT and OpenAI are household names now and a transformer language model can only be very recent."
+    }
+  ]
+}
