@@ -1,0 +1,1413 @@
+{
+  "batch": "architecture_part2",
+  "category": "architecture",
+  "graded": [
+    {
+      "name": "jericho-walls",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Jericho is a familiar name and 'one of the earliest permanent settlements' plants it at the dawn of settled life."
+    },
+    {
+      "name": "city-of-uruk",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Uruk itself is obscure, but 'world's first true city' plus Mesopotamia is a strong dawn-of-civilisation anchor."
+    },
+    {
+      "name": "skara-brae",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition outside Britain, but 'Neolithic village' is an explicit era label."
+    },
+    {
+      "name": "stonehenge-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and the description calls it a prehistoric monument."
+    },
+    {
+      "name": "indus-valley-civilization",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely taught, and Mohenjo-daro and Harappa anchor firmly to the early Bronze Age."
+    },
+    {
+      "name": "planned-city",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Generic name, but the description names Indus Valley cities and Mohenjo-daro."
+    },
+    {
+      "name": "docks",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Bare name and an obscure site, rescued only by 'earliest known maritime docking structure'."
+    },
+    {
+      "name": "sphinx-built",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Iconic monument with an unmistakable ancient-Egypt anchor."
+    },
+    {
+      "name": "ziggurat-ur",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Sumerians and 'ancient Mesopotamia' are explicit anchors."
+    },
+    {
+      "name": "minoan-civilization-peak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Minoan Crete is enthusiast-level knowledge and the 'peak' of a long-lived civilisation is a softer anchor."
+    },
+    {
+      "name": "mycenaean-civilization",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mycenaean Greece is specialised knowledge; Linear B and fortified palaces only loosely place it."
+    },
+    {
+      "name": "poverty-point-earthworks",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Very obscure, with only 'ancient peoples' and mound-building as clues."
+    },
+    {
+      "name": "mycenaean-citadels",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mycenae and Tiryns anchor to Bronze Age Greece only if you already know them."
+    },
+    {
+      "name": "lion-gate-mycenae",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure monument, but the citadel of Mycenae in Greece is a usable anchor."
+    },
+    {
+      "name": "olmec-stone-heads",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The colossal heads are widely pictured and Olmec reads as earliest Mesoamerica."
+    },
+    {
+      "name": "solomons-temple",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Solomon and the First Temple in Jerusalem anchor firmly to biblical antiquity."
+    },
+    {
+      "name": "adena-culture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure culture; 'early crops' and mound-building hint at an early pre-Columbian date."
+    },
+    {
+      "name": "samarkand-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Samarkand is a familiar name but its founding is not; 'ancient Maracanda' is the only anchor."
+    },
+    {
+      "name": "first-sewer-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Roman Kingdom' is an explicit and very early Roman anchor."
+    },
+    {
+      "name": "ishtar-gate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Nebuchadnezzar II and Babylon are strong anchors."
+    },
+    {
+      "name": "tunnel-engineering",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Eupalinos is expert knowledge, but Samos and a Greek engineer place it in classical Greece."
+    },
+    {
+      "name": "nok-civilization-nigeria",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Very obscure, but terracotta figurines and 'early iron smelting' anchor to the African Iron Age."
+    },
+    {
+      "name": "takshashila-university-scholars",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Little recognised, though 'ancient India' and Buddhist scholars bound the era."
+    },
+    {
+      "name": "zapotec-monte-alban",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, but 'one of Mesoamerica's earliest major urban centers' is a clear early anchor."
+    },
+    {
+      "name": "olmec-civilization-decline",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Mesoamerica's first major civilization' preceding Maya and Aztec places it early and clearly."
+    },
+    {
+      "name": "appian-way",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Rome's 'first major highway' anchors to the early Republic."
+    },
+    {
+      "name": "adena-mound-burials",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure culture and burial mounds with no era marker at all."
+    },
+    {
+      "name": "lighthouse-alexandria",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A Seven Wonder in Hellenistic Alexandria - famous and firmly ancient."
+    },
+    {
+      "name": "great-wall-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and Qin Shi Huang is named."
+    },
+    {
+      "name": "nabataean-petra-city",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Petra is widely recognised; the Nabataeans give a loose classical-era anchor."
+    },
+    {
+      "name": "aqueduct-pont-garros",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Roman colony' plus aqueduct is a strong anchor despite the obscure name."
+    },
+    {
+      "name": "first-aqueduct",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Emperor Claudius is a named, datable figure."
+    },
+    {
+      "name": "colosseum-completed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known imperial Roman landmark."
+    },
+    {
+      "name": "hopewell-mound-group",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Very obscure culture with no temporal marker beyond 'burial mounds'."
+    },
+    {
+      "name": "teotihuacan-pyramid-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Teotihuacan is easily confused with Aztec-era Mexico; 'ancient Americas' is a wide window."
+    },
+    {
+      "name": "pantheon-rebuilt",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Pantheon is famous and Hadrian is named."
+    },
+    {
+      "name": "hadrians-wall",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Well known and explicitly Roman Britain."
+    },
+    {
+      "name": "moche-irrigation-system",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Moche is expert knowledge and canals in Peru give no era clue."
+    },
+    {
+      "name": "nasca-settlement-cahuachi",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure ceremonial site with no temporal anchor."
+    },
+    {
+      "name": "baths-caracalla",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Rome plus the emperor Caracalla places it firmly in the imperial period."
+    },
+    {
+      "name": "iron-pillar-of-delhi",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Gupta-era' is an explicit anchor only to those who already know the Gupta period."
+    },
+    {
+      "name": "moche-coastal-empire",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure, but adobe pyramids on Peru's coast read as pre-Inca Andean."
+    },
+    {
+      "name": "nazca-pottery-style",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A pottery style with no era marker whatsoever."
+    },
+    {
+      "name": "nazca-puquios-aqueducts",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-level subject; underground aqueducts in Peru give no date signal."
+    },
+    {
+      "name": "tiwanaku-monumental-center",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure, but monumental stonework by Lake Titicaca reads as pre-Inca Andean."
+    },
+    {
+      "name": "hagia-sophia-completed",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Byzantine Constantinople is a strong, well-known anchor."
+    },
+    {
+      "name": "dunhuang-mogao-caves",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Silk Road Buddhist grottoes anchor to the first millennium but the site is little known."
+    },
+    {
+      "name": "chichen-itza-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Chichen Itza is a famous site; 'Maya, Yucatan' gives a broad but real era."
+    },
+    {
+      "name": "maya-classical-period",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Classical period' plus Tikal and Palenque is a recognisable Maya anchor."
+    },
+    {
+      "name": "sutton-hoo-burial",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Anglo-Saxon king' is an explicit early-medieval English anchor."
+    },
+    {
+      "name": "anglo-saxon-stone-churches",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure buildings, but 'Anglo-Saxon' names the era outright."
+    },
+    {
+      "name": "dome-rock-completed",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Famous Jerusalem landmark, and an Islamic shrine places it after the 7th century."
+    },
+    {
+      "name": "tikal-great-plaza",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tikal is known to some; the Maya lowlands is a wide window."
+    },
+    {
+      "name": "copan-ruler-18-rabbit",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A named Maya ruler at Copan anchors to the Classic Maya period despite very low recognition."
+    },
+    {
+      "name": "tang-cosmopolitan-cities",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Tang dynasty' is an explicit dynastic anchor."
+    },
+    {
+      "name": "nara-todaiji",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A giant Buddha in Japan gives no era beyond 'pre-modern'."
+    },
+    {
+      "name": "rustamid-tahert-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-level, but an Ibadi Muslim imamate places it after the Arab conquests."
+    },
+    {
+      "name": "mayan-classic-period",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Classic period' Maya is a recognisable era label."
+    },
+    {
+      "name": "borobudur-temple",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A famous monument regionally, but Java and Buddhism span a millennium."
+    },
+    {
+      "name": "chimor-empire-founded",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Chimu is expert knowledge; an adobe city on Peru's coast reads only as pre-Columbian."
+    },
+    {
+      "name": "khwarezm-center-learning",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure region, but Islamic scholarship in maths and astronomy anchors to the Islamic Golden Age."
+    },
+    {
+      "name": "toltec-civilization",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Later revered by the Aztecs' places it before the Aztecs but not tightly."
+    },
+    {
+      "name": "great-mosque-cordoba",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Moorish Cordoba is a strong al-Andalus anchor."
+    },
+    {
+      "name": "cathedral-construction-boom",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Following the millennium' and 'Romanesque' are explicit anchors."
+    },
+    {
+      "name": "khwarezm-al-biruni",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Al-Biruni is little known outside specialists; Islamic-Golden-Age scholarship is the only clue."
+    },
+    {
+      "name": "pueblo-bonito",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "An Ancestral Puebloan great house with no era marker."
+    },
+    {
+      "name": "tanjore-temple",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Chola king Rajaraja I anchors medieval south India only for those who know the dynasty."
+    },
+    {
+      "name": "mississippian-cahokia-settlement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Pre-Columbian' bounds it but leaves a very wide window."
+    },
+    {
+      "name": "chaco-canyon-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Masonry great houses with no temporal marker."
+    },
+    {
+      "name": "anasazi-pueblo-bonito-peak",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Same site as the other Chaco cards; Ancestral Puebloan gives a pre-Columbian bound only."
+    },
+    {
+      "name": "cahokia-metropolis",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Rivaling contemporary European cities' hints at the medieval period but weakly."
+    },
+    {
+      "name": "great-zimbabwe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The description says 'medieval African city' outright."
+    },
+    {
+      "name": "mississippian-culture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Mound-builders at Cahokia with no era marker in the text."
+    },
+    {
+      "name": "tepeyac-sanctuary",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure site, but Tenochtitlan, Aztec and 'before Spanish contact' bound it to the late pre-conquest era."
+    },
+    {
+      "name": "angkor-wat-temple",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Angkor Wat is famous; Suryavarman II and the Khmer give a loose medieval anchor."
+    },
+    {
+      "name": "hoysala-dynasty",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure dynasty and no era marker beyond 'southern India'."
+    },
+    {
+      "name": "angkor-wat-construction",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Famous monument, and the Khmer Empire gives a loose medieval anchor."
+    },
+    {
+      "name": "hoysala-temple-architecture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Named temples in Karnataka with nothing to place the era."
+    },
+    {
+      "name": "khmer-temple-architecture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Angkor Wat and Bayon anchor loosely; the 'architecture peak' framing is vague."
+    },
+    {
+      "name": "leaning-tower-pisa",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally recognised, and a bell tower in Pisa implies medieval Italy."
+    },
+    {
+      "name": "cliff-palace",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Mesa Verde kivas give no temporal clue."
+    },
+    {
+      "name": "bagobo-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Weaving and metalwork traditions in Mindanao with no era marker at all."
+    },
+    {
+      "name": "chimú-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Largest pre-Columbian city in South America' bounds it, but the Chimu are expert knowledge."
+    },
+    {
+      "name": "ethiopian-lalibela-churches",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Rock-hewn Ethiopian churches are little known and the text gives no era."
+    },
+    {
+      "name": "khwarezm-development-canal",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Canal irrigation on the Amu Darya with no temporal anchor."
+    },
+    {
+      "name": "mixtec-monte-alban",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Reoccupying 'the ancient Zapotec city' places it after Monte Alban's fall."
+    },
+    {
+      "name": "muisca-confederation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Highland Colombian chiefdoms; the El Dorado legend hints at contact but very weakly."
+    },
+    {
+      "name": "samarkand-conquerors-city",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Madrasas on the Silk Road anchor to the Islamic period only."
+    },
+    {
+      "name": "toraja-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Funeral rites and boat-shaped houses in Sulawesi with no era signal."
+    },
+    {
+      "name": "zagwe-rock-churches",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Zagwe dynasty is obscure and the churches themselves give no date."
+    },
+    {
+      "name": "notre-dame-reims-built",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'High Gothic' and the coronation church of French kings are strong anchors."
+    },
+    {
+      "name": "chartres-cathedral-construction",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Gothic design and stained glass anchor firmly to the high Middle Ages."
+    },
+    {
+      "name": "cologne-cathedral-begun",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Gothic style' names the era outright."
+    },
+    {
+      "name": "rapa-nui-moai",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The moai are instantly recognisable but the card offers no era clue."
+    },
+    {
+      "name": "lanna-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Chiang Mai's founding is obscure and the text gives no era."
+    },
+    {
+      "name": "benin-kingdom-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Benin Bronzes give some recognition; the founding itself has no anchor."
+    },
+    {
+      "name": "mississippian-decline",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Drought and warfare in the Southeast with no era marker."
+    },
+    {
+      "name": "swahili-stone-architecture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Kilwa and Mombasa coral-stone towns read as the Indian Ocean trade era but loosely."
+    },
+    {
+      "name": "venetian-arsenal",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Venice at its commercial height is a soft anchor; the Arsenal itself is little known."
+    },
+    {
+      "name": "aztec-tenochtitlan-founding",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The Aztec capital is widely known and clearly pre-conquest."
+    },
+    {
+      "name": "timbuktu-university-development",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Mali Empire and Timbuktu are a strong medieval West African anchor."
+    },
+    {
+      "name": "golden-horde-sarai-al-jadid",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Golden Horde' anchors to the post-Mongol centuries, but the city is expert knowledge."
+    },
+    {
+      "name": "alhambra-palace-built",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Alhambra is well known; Nasrid Granada is a real but broad anchor."
+    },
+    {
+      "name": "casa-grande-pueblo",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An adobe great house in Arizona with no temporal marker."
+    },
+    {
+      "name": "chimú-chan-chan-peak",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Chan Chan as the Chimu capital reads pre-Inca Andean at best."
+    },
+    {
+      "name": "timur-architectural-patronage",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Timur is a named conqueror, dating the card for anyone who knows him."
+    },
+    {
+      "name": "muisca-gold-culture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "El Dorado hints at the contact era; the Muisca themselves are obscure."
+    },
+    {
+      "name": "samarkand-library-school",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Under Timur's patronage' is a firm anchor despite very low recognition."
+    },
+    {
+      "name": "wolof-teranga-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A hospitality tradition with no datable content."
+    },
+    {
+      "name": "florence-cathedral-dome",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Brunelleschi's dome is enthusiast knowledge and reads as Renaissance Florence."
+    },
+    {
+      "name": "ming-forbidden-city",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Forbidden City is famous, but the Yongle Emperor anchors it only for those who know him."
+    },
+    {
+      "name": "astronomical-observatory",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Timurid' places it after Timur, but Ulugh Beg is expert knowledge."
+    },
+    {
+      "name": "ulugh-beg-observatory",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Samarkand and a star catalogue give little beyond the Islamic scholarly era."
+    },
+    {
+      "name": "florence-dome",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Brunelleschi's dome reads as Renaissance Florence to those who know the name."
+    },
+    {
+      "name": "machu-picchu-built",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Instantly recognisable and clearly Inca, i.e. shortly before Spanish contact."
+    },
+    {
+      "name": "mamluk-cairo-libraries",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Mamluk-era Cairo' is an explicit dynastic anchor, though the Mamluks are little known."
+    },
+    {
+      "name": "ottoman-topkapi-palace",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Mehmed II in Constantinople anchors it to just after the 1453 conquest."
+    },
+    {
+      "name": "kremlin-walls",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Kremlin is famous but the card gives no era for its walls."
+    },
+    {
+      "name": "sistine-chapel",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Michelangelo is a universally known Renaissance anchor."
+    },
+    {
+      "name": "sher-shah-architecture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Grand Trunk Road and Bihar tombs read as Mughal-era India only loosely."
+    },
+    {
+      "name": "ottoman-architecture-peak",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Sinan and the Suleymaniye in Istanbul anchor to the Ottoman imperial peak."
+    },
+    {
+      "name": "escorial-palace",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Philip II of Spain is a named, well-known 16th-century figure."
+    },
+    {
+      "name": "rialto-bridge",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Venice's Grand Canal is recognisable; 'oldest stone bridge' is a weak date clue."
+    },
+    {
+      "name": "mombasa-fort-jesus-construction",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Portuguese forts guarding East African trade anchor to the age of exploration."
+    },
+    {
+      "name": "palmares-republic-zumbi",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Escaped enslaved Africans resisting Portuguese rule anchors firmly to the Atlantic slavery era."
+    },
+    {
+      "name": "st-peters-basilica-completion",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Vatican basilica is universally known and reads as Renaissance Rome."
+    },
+    {
+      "name": "taj-mahal-begun",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and Shah Jahan is named."
+    },
+    {
+      "name": "taj-mahal-construction",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known Mughal monument."
+    },
+    {
+      "name": "edo-castle-completion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Tokugawa shogunate' and Edo becoming Tokyo are explicit anchors."
+    },
+    {
+      "name": "potala-palace",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The Potala is somewhat known but 'the Dalai Lama's residence' gives no era."
+    },
+    {
+      "name": "versailles-construction",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Louis XIV is a named, universally recognised anchor."
+    },
+    {
+      "name": "versailles-expanded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Louis XIV moving his court is a well-known, firmly placed moment."
+    },
+    {
+      "name": "buckingham-palace",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The palace is famous, but 'the townhouse that would become' gives no era."
+    },
+    {
+      "name": "ladoga-canal",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A canal in Russia with no anchor of any kind."
+    },
+    {
+      "name": "catherine-palace",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Rococo' and St Petersburg both point at the 18th century."
+    },
+    {
+      "name": "iron-bridge",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'World's first major cast iron bridge' is a strong industrial-revolution marker."
+    },
+    {
+      "name": "haida-totem-poles",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Totem pole carving is recognisable but the card gives no era."
+    },
+    {
+      "name": "white-house-completed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and clearly post-independence Washington."
+    },
+    {
+      "name": "erie-canal",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A canal linking the Great Lakes to the Atlantic anchors to the early industrial US."
+    },
+    {
+      "name": "liverpool-manchester-railway",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'World's first intercity passenger railway' is a strong technology marker."
+    },
+    {
+      "name": "crystal-palace",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Glass-and-iron and the Great Exhibition anchor to high Victorian Britain."
+    },
+    {
+      "name": "great-exhibition-opens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'First international exhibition of manufactured products' in the Crystal Palace is a firm Victorian anchor."
+    },
+    {
+      "name": "london-underground",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Everyone knows the Tube, and 'world's first underground railway' is a strong Victorian marker."
+    },
+    {
+      "name": "brooklyn-bridge-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Famous bridge, and 'first steel-wire suspension bridge' anchors to the industrial 19th century."
+    },
+    {
+      "name": "troy-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Schliemann and Troy are widely known, and the excavation reads as 19th-century archaeology."
+    },
+    {
+      "name": "canadian-pacific-railway",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A transcontinental railway is a clear 19th-century marker."
+    },
+    {
+      "name": "steel-frame-building",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Pioneering modern skyscraper construction' in Chicago anchors to the late 19th century."
+    },
+    {
+      "name": "statue-liberty",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known gift from France to the United States."
+    },
+    {
+      "name": "tower-bridge-london",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Iconic London landmark that reads unmistakably Victorian."
+    },
+    {
+      "name": "trans-siberian-railway",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A Moscow-to-Vladivostok railway anchors to the imperial railway age."
+    },
+    {
+      "name": "la-city-hall",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside LA; 'tallest building for decades' only says early 20th century."
+    },
+    {
+      "name": "empire-state-building",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and clearly interwar New York."
+    },
+    {
+      "name": "sydney-harbour-bridge",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well-known landmark, but the card gives no date signal beyond 'steel arch'."
+    },
+    {
+      "name": "hoover-dam",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known Depression-era engineering landmark."
+    },
+    {
+      "name": "fallingwater",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Frank Lloyd Wright is a recognisable name anchoring the early-to-mid 20th century."
+    },
+    {
+      "name": "mount-rushmore",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally recognised American monument."
+    },
+    {
+      "name": "jefferson-memorial",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognisable Washington landmark, but the description gives no era."
+    },
+    {
+      "name": "siege-leningrad-lifted",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A named WWII siege against German forces - unmistakable era."
+    },
+    {
+      "name": "farnsworth-house",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Mies van der Rohe is specialist knowledge and a glass pavilion could sit anywhere in the modern century."
+    },
+    {
+      "name": "united-nations-hq",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The UN itself anchors the card to just after WWII."
+    },
+    {
+      "name": "notre-dame-du-haut",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Le Corbusier is little known to a general audience and Ronchamp gives no date."
+    },
+    {
+      "name": "west-side-story-opens",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A famous Broadway musical that reads as mid-20th century."
+    },
+    {
+      "name": "olduvai-tools-found",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The friendly name suggests deep prehistory while the card is actually about a modern excavation."
+    },
+    {
+      "name": "brasilia-built",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A purpose-built modernist capital reads as mid-20th century."
+    },
+    {
+      "name": "twa-terminal",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Saarinen and JFK anchor to the jet age, but the terminal is little known."
+    },
+    {
+      "name": "shinkansen-opens",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The bullet train is widely known and 'first high-speed rail' reads post-war."
+    },
+    {
+      "name": "astrodome-opens",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside the US; 'first domed stadium' only says mid-20th century."
+    },
+    {
+      "name": "vehicle-assembly-building",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "NASA at Kennedy Space Center anchors firmly to the Apollo era."
+    },
+    {
+      "name": "john-hancock-center",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "An X-braced Chicago tower with no date signal beyond 'modern skyscraper'."
+    },
+    {
+      "name": "aswan-high-dam",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-publicised Nile dam that reads as post-war Egypt."
+    },
+    {
+      "name": "sears-tower",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known as the world's tallest building of its day."
+    },
+    {
+      "name": "terracotta-warriors-discovered",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The warriors are famous but the card gives no clue to the decade of the discovery."
+    },
+    {
+      "name": "pompidou-center",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The inside-out Paris building is recognisable to some; the era is only loosely late-modern."
+    },
+    {
+      "name": "humber-bridge",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An English suspension bridge with no era clue at all."
+    },
+    {
+      "name": "itaipu-dam",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A large hydroelectric dam with no temporal marker."
+    },
+    {
+      "name": "sunshine-skyway-bridge",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Local US infrastructure with no era signal."
+    },
+    {
+      "name": "seikan-tunnel",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'World's longest undersea tunnel' in Japan reads as late 20th century but weakly."
+    },
+    {
+      "name": "bank-of-china-tower",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "I.M. Pei and Hong Kong give a loose late-modern anchor."
+    },
+    {
+      "name": "chunnel-completed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The Channel Tunnel was a major, widely known event."
+    },
+    {
+      "name": "denver-airport",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A US airport opening with only 'America's largest' as a clue."
+    },
+    {
+      "name": "guggenheim-bilbao",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Gehry's museum and the 'Bilbao effect' read as the late 1990s to many."
+    },
+    {
+      "name": "great-belt-bridge",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A Danish bridge with no era anchor."
+    },
+    {
+      "name": "international-space-station",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The ISS is universally known and its assembly clearly belongs to the late space age."
+    },
+    {
+      "name": "burj-al-arab",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The sail-shaped Dubai hotel reads as the recent Gulf building boom."
+    },
+    {
+      "name": "london-eye",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Millennium Wheel on the South Bank is famous and clearly turn-of-millennium."
+    },
+    {
+      "name": "tate-modern",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-known London museum in a converted power station, recent but undated."
+    },
+    {
+      "name": "delhi-metro",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'India's second metro system' is a weak, unfamiliar anchor."
+    },
+    {
+      "name": "swiss-re-building",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Gherkin and Norman Foster read as recent London."
+    },
+    {
+      "name": "taipei-101",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A world's-tallest supertall that reads as the 2000s."
+    },
+    {
+      "name": "three-gorges-dam",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely reported Chinese megaproject of the recent era."
+    },
+    {
+      "name": "cern-lhc",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The LHC is widely known and clearly a recent big-science project."
+    },
+    {
+      "name": "singapore-flyer",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Very low recognition and no era clue beyond 'observation wheel'."
+    },
+    {
+      "name": "burj-khalifa",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The world's tallest building is universally known and clearly recent."
+    },
+    {
+      "name": "marina-bay-sands",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Iconic Singapore hotel that reads as the recent era."
+    },
+    {
+      "name": "belt-road-initiative",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A recognisable news item, but the card gives no year signal."
+    },
+    {
+      "name": "one-world-trade",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Building on the WTC site anchors it firmly after 9/11."
+    },
+    {
+      "name": "panama-canal-expanded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A billion-dollar canal expansion is clearly a recent project."
+    },
+    {
+      "name": "crimean-bridge",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Russia bridging to Crimea anchors after the 2014 annexation for any news reader."
+    },
+    {
+      "name": "statue-unity",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside India; 'world's tallest statue' says recent but no more."
+    },
+    {
+      "name": "crossrail-elizabeth-line",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Named for Elizabeth II and described as newly opened - a firm recent anchor."
+    },
+    {
+      "name": "god-emperor-golden-throne",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A fictional far-future easter egg, recognisable only to Warhammer readers."
+    }
+  ]
+}
