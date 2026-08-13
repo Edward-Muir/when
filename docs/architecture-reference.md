@@ -7,9 +7,8 @@ Detailed reference for the "When" codebase. See [../CLAUDE.md](../CLAUDE.md) for
 ```
 index.tsx                      # BrowserRouter + routes
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Mode selection + filter config
-│   ├── GameStartTransition.tsx # Animated transition between modes
-│   ├── ViewTimeline.tsx       # Read-only timeline of all events
+│   ├── ModeSelect.tsx         # Tab pager (Daily/Custom/Stats/Achievements/Timeline) + filter config
+│   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay with DndContext
 │       ├── TopBar.tsx         # Home button, title
 │       ├── PlayerInfo.tsx     # Turn/round/score/streak display
@@ -24,13 +23,14 @@ index.tsx                      # BrowserRouter + routes
 │       ├── GameOverControls.tsx   # Restart/share buttons
 │       ├── Leaderboard.tsx    # Daily leaderboard display
 │       ├── LeaderboardSubmit.tsx  # Name entry for leaderboard
-│       ├── SettingsPopup.tsx  # Theme and settings
 │       ├── FilterPopup.tsx    # Category/era/difficulty filters
 │       ├── Menu.tsx           # Game rules
 │       ├── Toast.tsx          # Toast notifications
 │       ├── UpdatePopup.tsx    # Version update notification
 │       └── CategoryIcon.tsx   # Category badge icons
-└── DailyRoute.tsx             # /daily route wrapper (auto-starts daily)
+├── DailyRoute.tsx             # /daily route wrapper (auto-starts daily)
+├── ChallengeRoute.tsx         # /challenge/:code — decodes a share link into a GameConfig
+└── pages/Timeline.tsx         # /timeline route; renders ViewTimeline.tsx (not an App child)
 ```
 
 ## Hooks
@@ -50,11 +50,18 @@ index.tsx                      # BrowserRouter + routes
 
 | Util                | Purpose                                                 |
 | ------------------- | ------------------------------------------------------- |
-| `gameLogic`         | Shuffling, deck building, game rules                    |
+| `gameLogic`         | Shuffling primitives, seeded RNG, hand/turn rules       |
+| `deckBuilder`       | Composes the ramped deck (difficulty curve + spacing)   |
+| `difficultyScore`   | Composite difficulty: recognition label + placeability  |
+| `dailyPool`         | The themed, filtered pool a given day draws from        |
+| `dailyRecency`      | Seven-day no-repeat chain for the daily                 |
 | `placementLogic`    | Card placement validation and results                   |
 | `eventLoader`       | Load event JSON files, deduplication                    |
 | `playerStorage`     | localStorage for scores, daily results, streaks         |
-| `dailyConfig`       | Daily mode game configuration builder                   |
+| `statsStorage`      | Persisted lifetime stats and achievement progress       |
+| `challengeCode`     | Encode/decode share links (mode, filters, player count) |
+| `puzzleDate`        | Local-calendar puzzle day and rollover timing           |
+| `dailyConfig`       | Daily mode game configuration + deck                    |
 | `dailyTheme`        | Seeded daily theme selection (category or "Everything") |
 | `share`             | Share text/emoji grid generation                        |
 | `streakFeedback`    | Streak tier config (visual feedback tiers)              |

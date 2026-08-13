@@ -19,13 +19,13 @@ import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import {
-  shuffleArray,
-  shuffleArraySeeded,
   sortByYear,
   initializePlayers,
   insertIntoTimeline,
   getNextActivePlayerIndex,
 } from '../utils/gameLogic';
+import { buildRampedDeck } from '../utils/deckBuilder';
+import { getRecentDailyCardNames } from '../utils/dailyRecency';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -177,13 +177,14 @@ export function useWhenGame(): UseWhenGameReturn {
         return;
       }
 
-      // Use seeded shuffle for daily/challenge mode, regular shuffle otherwise
-      const shuffled =
-        mode === 'daily' && dailySeed
-          ? shuffleArraySeeded(filteredEvents, dailySeed)
-          : config.challengeSeed
-            ? shuffleArraySeeded(filteredEvents, config.challengeSeed)
-            : shuffleArray(filteredEvents);
+      // Compose the deck so it opens with a foothold and ramps. Daily also enforces
+      // the seven-day no-repeat guarantee; other modes have no date chain to walk.
+      const isDaily = mode === 'daily' && Boolean(dailySeed);
+      const deckSeed = isDaily ? dailySeed : config.challengeSeed;
+      const shuffled = buildRampedDeck(filteredEvents, deckSeed, {
+        allEvents,
+        exclude: isDaily && dailySeed ? getRecentDailyCardNames(allEvents, dailySeed) : undefined,
+      });
 
       // Pick 1 event for the starting timeline
       const timelineEvents = sortByYear([shuffled[0]]);

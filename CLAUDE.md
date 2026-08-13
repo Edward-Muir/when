@@ -33,10 +33,11 @@ npm run release              # Bump version (auto-detect from commits)
 
 ## Key Architecture
 
-- **Game phases**: `loading` -> `modeSelect` -> `transitioning` -> `playing` -> `gameOver` -> `viewTimeline`
-- **Game modes**: Daily (seeded, one play/day), Sudden Death, Freeplay
-- **State**: All in `src/hooks/useWhenGame.ts` — `WhenGameState` tracks phase, timeline, players, deck, streaks
-- **Routes**: `/` (main), `/daily` (auto-start daily mode) — defined in `src/index.tsx`. Hidden maintainer tools (unlinked): `/image-qc`, `/card-reports`. A new client route also needs a rewrite in `vercel.json` or it 404s on direct load in production.
+- **Game phases**: `loading` -> `modeSelect` -> `transitioning` -> `playing` -> `gameOver` (`GamePhase` in `src/types/index.ts`). The timeline view is a route/tab, not a phase.
+- **Game modes**: Daily (seeded, one play/day) and Sudden Death. Both share the same mechanics — hand of N, correct placement draws a replacement, a wrong one shrinks the hand, and the game ends when the hand empties.
+- **Deck composition**: decks are not a plain shuffle. `src/utils/deckBuilder.ts` composes the first 24 cards so the game opens with an easy, well-spread placement and ramps from there; the rest of the pool follows as a seeded shuffle. Difficulty is scored in `src/utils/difficultyScore.ts` by blending the `difficulty` label with how crowded the timeline is around each event — the label alone grades fame, which anti-correlates with how hard a card is to place. The daily additionally guarantees no card repeats within 7 days (`src/utils/dailyRecency.ts`). Read the header comments in those three files before retuning any of it.
+- **State**: Game state lives in `src/hooks/useWhenGame.ts` — `WhenGameState` tracks phase, timeline, players, deck, streaks. Persisted state (stats, streaks, settings) lives in `src/utils/statsStorage.ts` and `src/utils/playerStorage.ts`.
+- **Routes**: 15 routes in `src/index.tsx`, plus a catch-all redirect to `/`. Player-facing: `/`, `/daily`, `/challenge/:code`, `/stats`, `/achievements`, `/timeline`, `/privacy`, `/terms`, `/support`. Unlinked maintainer tools: `/image-qc`, `/card-reports`, `/cards-preview`, `/unlock-preview`, `/anim-jig`, `/reminder-preview`. A new client route also needs a rewrite in `vercel.json` or it 404s on direct load in production — **`/stats`, `/achievements`, `/timeline`, `/cards-preview`, `/unlock-preview`, `/anim-jig` and `/reminder-preview` currently have no rewrite**, so they only work via in-app navigation.
 - **API**: `api/leaderboard/` (daily scores) and `api/card-reports/` (player-reported card problems), both on Upstash Redis. Needs `vercel dev` to run locally.
 
 ## Styling

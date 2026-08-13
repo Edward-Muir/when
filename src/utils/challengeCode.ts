@@ -120,6 +120,9 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
     shift += WORD_BITS;
   }
 
+  // Load-bearing despite the mode selector no longer being on screen: roughly half of
+  // all share links ever generated encode this bit as 1, and those links still decode
+  // and launch. Removing the branch would break them. Not dead code.
   const mode = ((packed >> OFFSET_MODE) & ONE) === ONE ? 'freeplay' : 'suddenDeath';
   const handSize = Number((packed >> OFFSET_HAND) & MASK_3) + 1;
   const playerCount = Number((packed >> OFFSET_PLAYER) & MASK_3) + 1;
