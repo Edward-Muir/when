@@ -1,0 +1,1322 @@
+{
+  "batch": "warfare",
+  "category": "warfare",
+  "graded": [
+    {
+      "name": "battle-megiddo",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows Megiddo, but 'Pharaoh Thutmose III' and 'Canaanite' pin it to Bronze Age Egypt."
+    },
+    {
+      "name": "battle-kadesh",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Hittite Empire plus chariot warfare is an unambiguous Bronze Age anchor."
+    },
+    {
+      "name": "trojan-war",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known myth-history; 'Greek tradition' and Troy anchor it to deep antiquity."
+    },
+    {
+      "name": "battle-marathon",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous through the marathon race; Athens vs Persia is a firm classical Greek anchor."
+    },
+    {
+      "name": "battle-salamis",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Standard school-curriculum Greco-Persian naval battle with a clear classical anchor."
+    },
+    {
+      "name": "battle-thermopylae",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leonidas and the 300 are famous; Sparta vs Persia anchors firmly."
+    },
+    {
+      "name": "peloponnesian-war-ends-athens",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Named war plus Sparta/Athens places it squarely in classical Greece."
+    },
+    {
+      "name": "battle-leuctra",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure battle, but Thebes vs Sparta is an unmistakable classical Greek anchor."
+    },
+    {
+      "name": "battle-chaeronea",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle name unknown to general players; Philip II of Macedon anchors it tightly to Alexander's era."
+    },
+    {
+      "name": "battle-ipsus",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Diadochi is expert vocabulary, but 'divided Alexander's empire among his successors' is a precise anchor."
+    },
+    {
+      "name": "punic-treaty",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Punic Wars are widely taught and Rome vs Carthage over Sicily anchors the era clearly."
+    },
+    {
+      "name": "punic-wars-second",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Hannibal's elephants over the Alps is one of the best-known stories in ancient history."
+    },
+    {
+      "name": "battle-cannae",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Battle name known mainly to enthusiasts; Hannibal anchors it precisely."
+    },
+    {
+      "name": "siege-syracuse",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Siege itself obscure, but Rome plus Archimedes' war machines is a strong ancient anchor."
+    },
+    {
+      "name": "battle-zama",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Scipio and Hannibal name the Second Punic War outright."
+    },
+    {
+      "name": "battle-pydna",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Antigonid dynasty is expert vocabulary, but Rome crushing Macedon places it in the Hellenistic/Roman expansion window."
+    },
+    {
+      "name": "battle-of-wei-qiao",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Han Wu and the Xiongnu mean nothing to a general audience beyond 'ancient China'."
+    },
+    {
+      "name": "battle-carrhae",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Crassus and Roman legions place it in Roman antiquity, but nothing narrows further for a general player."
+    },
+    {
+      "name": "battle-pharsalus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Caesar vs Pompey is one of the tightest anchors in Roman history."
+    },
+    {
+      "name": "battle-teutoburg-forest",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Roman legions anchor to antiquity only; the 500-year Roman window is all the card gives."
+    },
+    {
+      "name": "masada-siege-defense",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Moderately known story with only a generic 'Roman siege' era anchor."
+    },
+    {
+      "name": "siege-masada",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event and same generic Roman anchor as the companion card."
+    },
+    {
+      "name": "agricola-britain-conquest",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Agricola is unknown, but 'Roman governor' pushing into Scotland places it in Roman Britain."
+    },
+    {
+      "name": "battle-milvian-bridge",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Constantine and the Christian vision anchor it to the Christianisation of Rome."
+    },
+    {
+      "name": "battle-adrianople",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle unknown to most, but Visigoths killing an emperor and 'Rome's decline' fixes late antiquity."
+    },
+    {
+      "name": "battle-of-catalaunian-plains",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Name is opaque; Attila is a precise anchor."
+    },
+    {
+      "name": "battle-of-vouille",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Clovis and the Visigoths in Gaul anchor to the post-Roman Frankish founding."
+    },
+    {
+      "name": "clovis-defeats-visigoths-at-vouille",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Same event, same post-Roman Frankish anchor; graded identically to its duplicate."
+    },
+    {
+      "name": "battle-of-badr",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Prophet Muhammad's forces' and 'early Islamic history' are about as tight an anchor as a card can give."
+    },
+    {
+      "name": "heraclius-campaigns-persia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Heraclius is unknown and Byzantine-vs-Persia spans centuries."
+    },
+    {
+      "name": "battle-of-mu-ta",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle is obscure, but 'Islam's first major military engagements' anchors it to the 7th century."
+    },
+    {
+      "name": "conquest-of-mecca",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Globally significant event and Muhammad is a precise temporal anchor."
+    },
+    {
+      "name": "siege-of-damascus-636",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Rashidun Caliphate and 'early conquest' anchor the era; the siege itself is unknown."
+    },
+    {
+      "name": "battle-of-yarmouk",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Decisive but unrecognised battle; 'opening the path for Islamic expansion' fixes the era."
+    },
+    {
+      "name": "goguryeo-namgnang-battle",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Tang and Goguryeo give little era signal to a non-specialist."
+    },
+    {
+      "name": "battle-karbala-husayn",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Umayyads and the founding martyrdom of Shia Islam anchor to the first Islamic century."
+    },
+    {
+      "name": "battle-of-karbala",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same event and anchors as its duplicate; graded consistently."
+    },
+    {
+      "name": "tikal-calakmul-war",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Maya city rivalry with no anchor tighter than 'Maya', which spans two millennia."
+    },
+    {
+      "name": "battle-of-guadalete",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Name is unknown, but 'beginning the Muslim conquest of Iberia' is a strong, well-taught anchor."
+    },
+    {
+      "name": "siege-of-constantinople-717",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Arab forces failing against Byzantium anchors to the early caliphates, though the bare title invites confusion with 1453."
+    },
+    {
+      "name": "battle-tours",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Charles Martel and the Umayyad advance are a tight anchor even though the name is only moderately known."
+    },
+    {
+      "name": "charles-martel-frankish-victory",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same event and anchors as the companion Tours card."
+    },
+    {
+      "name": "battle-of-talas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Abbasid and Tang overlap narrows it somewhat, and papermaking's westward spread adds a technology marker."
+    },
+    {
+      "name": "viking-lindisfarne",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Beginning the Viking Age' is an explicit era anchor on a widely known raid."
+    },
+    {
+      "name": "dai-viet-independence",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Ngo Quyen and the Southern Han give a general player no era signal at all."
+    },
+    {
+      "name": "battle-lechfeld",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Otto I and the Magyars are unknown names with only a vague early-medieval feel."
+    },
+    {
+      "name": "basil-ii-bulgar-victories",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The card never says Byzantine; 'Emperor Basil II' and 'Bulgarian army' place nothing."
+    },
+    {
+      "name": "battle-of-hastings",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "William the Conqueror and Norman England are known to nearly everyone."
+    },
+    {
+      "name": "battle-of-stamford-bridge",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The description explicitly dates it against Hastings, which nearly gives the answer away."
+    },
+    {
+      "name": "norman-conquest",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same universally taught event as Hastings."
+    },
+    {
+      "name": "battle-manzikert",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Seljuks vs Byzantium narrows to a few medieval centuries but no further."
+    },
+    {
+      "name": "battle-of-legnano",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Barbarossa and the Lombard League give a medieval-imperial anchor and little else."
+    },
+    {
+      "name": "montgisard-crusaders-saladin",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle is obscure but Crusaders vs Saladin is a tight late-12th-century anchor."
+    },
+    {
+      "name": "battle-of-hattin",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Saladin plus the Crusader loss of Jerusalem is a strong, well-known anchor."
+    },
+    {
+      "name": "second-crusade-battle-hattin",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same event and anchors as its duplicate."
+    },
+    {
+      "name": "battle-of-arsuf",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Richard the Lionheart and the named Third Crusade anchor it precisely."
+    },
+    {
+      "name": "jaffa-crusades",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Jaffa itself is unknown, though Richard, Saladin and the Third Crusade anchor the era."
+    },
+    {
+      "name": "battle-of-bouvines",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Philip II of France and the Holy Roman Empire only signal 'high medieval'."
+    },
+    {
+      "name": "damietta-crusade-fifth",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Damietta is obscure but 'Fifth Crusade' places it late in the crusading sequence."
+    },
+    {
+      "name": "battle-of-legnica",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle unknown, but the Mongol onslaught into Europe is a tight 13th-century anchor."
+    },
+    {
+      "name": "mongol-invasion-hungary",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Batu Khan and the Mongol invasions anchor firmly to the 1200s."
+    },
+    {
+      "name": "mongol-invasions-europe",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Mongol sweep into Europe is widely taught and firmly fixed to the Mongol conquests."
+    },
+    {
+      "name": "siege-of-montsegur",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Cathars are specialist knowledge; 'crusaders' and burning at the stake only signal medieval."
+    },
+    {
+      "name": "mongol-conquest-bagdad",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Hulagu, the Abbasid Caliph and the end of the Islamic Golden Age anchor it well."
+    },
+    {
+      "name": "battle-of-ain-jalut",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Mamluks are obscure, but halting the Mongols anchors to the mid-1200s."
+    },
+    {
+      "name": "mongol-invasion-japan-first",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mongols plus samurai is a precise 13th-century anchor."
+    },
+    {
+      "name": "kamikaze-mongol-fleet",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The 'divine wind' story is reasonably known and the Mongol reference anchors it."
+    },
+    {
+      "name": "mongol-invasion-japan-second",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same event and anchors as the companion kamikaze card."
+    },
+    {
+      "name": "acre-final-siege",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The siege is unknown, but 'last major Crusader stronghold' fixes the end of the crusading era."
+    },
+    {
+      "name": "battle-of-golden-spurs",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Flemish militia vs French knights gives only a broad 'age of knights' signal."
+    },
+    {
+      "name": "battle-of-bannockburn",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Robert the Bruce and Scottish independence are a tight, familiar anchor."
+    },
+    {
+      "name": "battle-of-sluys",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Naval battle nobody knows, but the Hundred Years' War is named outright."
+    },
+    {
+      "name": "battle-crecy",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Longbowmen and the named Hundred Years' War anchor it clearly."
+    },
+    {
+      "name": "mongol-black-death-spread",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Siege of Caffa' means nothing, but spreading the Black Death to Europe is a precise anchor."
+    },
+    {
+      "name": "battle-poitiers",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The war is never named and the title collides with Tours/Poitiers 732, so the anchors are weak."
+    },
+    {
+      "name": "battle-kulikovo",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Dmitry Donskoy is unknown, but 'decline of Mongol rule' narrows it to the later Mongol period."
+    },
+    {
+      "name": "battle-of-kosovo",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ottomans vs Serbs spans six centuries of possible dates on the card's text alone."
+    },
+    {
+      "name": "battle-of-grunwald",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Regionally known; the Teutonic Knights anchor only to the broad medieval Baltic."
+    },
+    {
+      "name": "battle-agincourt",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known battle and Henry V is a firm late-medieval anchor."
+    },
+    {
+      "name": "hussite-wars",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Jan Hus signals pre-Reformation religious conflict but the card fixes no century."
+    },
+    {
+      "name": "ottoman-siege-galata",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown siege, but 'delaying Ottoman conquest by decades' dates it relative to 1453."
+    },
+    {
+      "name": "battle-of-varna",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A crusade against the Ottomans could sit anywhere across three centuries on this text."
+    },
+    {
+      "name": "gunpowder-military-adoption-europe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not an event people 'know', but the end of castles and armoured knights is a strong technology anchor."
+    },
+    {
+      "name": "hundred-years-war-conclusion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The war is widely taught and the card names its length and its end explicitly."
+    },
+    {
+      "name": "battle-of-nancy",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Charles the Bold and independent Burgundy give only a vague late-medieval feel."
+    },
+    {
+      "name": "battle-of-bosworth-field",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Richard III and the founding of the Tudor dynasty are both widely known and tightly dated."
+    },
+    {
+      "name": "battle-of-flodden",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "James IV places it loosely in the Renaissance for anyone who knows the Scottish kings; otherwise generic."
+    },
+    {
+      "name": "safavid-battled-ottomans",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Safavid dynasty is a moderately tight anchor, but only for players who know it."
+    },
+    {
+      "name": "battle-of-marignano",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Francis I and Milan give little era signal to a general audience."
+    },
+    {
+      "name": "field-of-cloth-of-gold",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The summit itself is obscure, but Henry VIII is one of the tightest anchors available."
+    },
+    {
+      "name": "inca-civil-war-dispute",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Atahualpa is known chiefly through Pizarro, which loosely anchors it to the conquest era."
+    },
+    {
+      "name": "siege-vienna-first",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ottoman vs Habsburg spans centuries, though 'First' distinguishes it from the 1683 siege."
+    },
+    {
+      "name": "inca-conflict-spanish",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pizarro and the start of Spain's conquest of Peru anchor it to the early conquistador era."
+    },
+    {
+      "name": "spanish-conquest-peru",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The toppling of the Inca Empire by Spain is widely taught and firmly fixed to the conquest era."
+    },
+    {
+      "name": "battle-lepanto",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Last major galley battle' helps a little, but Ottoman naval conflict spans centuries."
+    },
+    {
+      "name": "spanish-armada",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and 'securing Protestant rule' anchors it to the Reformation century."
+    },
+    {
+      "name": "russo-swedish-wars",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Russia and Sweden fought over the Baltic repeatedly for 300 years; the card fixes nothing."
+    },
+    {
+      "name": "korean-imjin-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ming reinforcements are the only anchor, and the Ming span nearly 300 years."
+    },
+    {
+      "name": "spanish-armada-aftermath",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Not a recognised event, but 'after the Armada defeat' explicitly dates it relative to 1588."
+    },
+    {
+      "name": "imjin-war-second-invasion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Hideyoshi is unknown to most players and nothing else anchors the century."
+    },
+    {
+      "name": "battle-breitenfeld",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Gustavus Adolphus is enthusiast knowledge; the Thirty Years' War is never named."
+    },
+    {
+      "name": "battle-marston-moor",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The English Civil War and Cromwell are both named, a very tight anchor."
+    },
+    {
+      "name": "llanquihue-battle",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Mapuche resistance in colonial Chile spans nearly three centuries with no marker here."
+    },
+    {
+      "name": "danish-swedish-wars",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Danish-Swedish Baltic rivalry is described with no era marker whatsoever."
+    },
+    {
+      "name": "king-philips-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'New England colonists' brackets the colonial period but leaves 150 years open."
+    },
+    {
+      "name": "battle-vienna",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-known turning point, though Ottoman-vs-Christian Europe is a wide window on the text alone."
+    },
+    {
+      "name": "deccan-campaigns-mughal",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Aurangzeb and Sambhaji are unfamiliar names; 'Mughal' spans three centuries."
+    },
+    {
+      "name": "siege-of-derry",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Locally significant only, but 'deposed Catholic King James II' pins the Glorious Revolution."
+    },
+    {
+      "name": "battle-of-the-boyne",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "William of Orange and the deposed James II are an exact anchor."
+    },
+    {
+      "name": "battle-blenheim",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Marlborough is unknown to most; the named War of Spanish Succession helps only enthusiasts."
+    },
+    {
+      "name": "sikh-mughal-conflicts",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Guru Tegh Bahadur and Punjab give no century to a general audience."
+    },
+    {
+      "name": "battle-poltava",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Peter the Great is a tight and widely recognised anchor."
+    },
+    {
+      "name": "war-of-jenkins-ear",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Memorable name, but Britain-vs-Spain and Parliament only bracket the early modern period."
+    },
+    {
+      "name": "battle-plassey",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Began British colonial rule in India' is a strong, well-taught temporal anchor."
+    },
+    {
+      "name": "battle-quebec",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "British-French colonial North America spans 150 years on this description."
+    },
+    {
+      "name": "burmese-siamese-wars",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Ayutthaya and Burma-Siam warfare carry no era marker for a general player."
+    },
+    {
+      "name": "battle-bunker-hill",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in the US, but the description never names the Revolution outright."
+    },
+    {
+      "name": "battles-of-lexington-and-concord",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Explicitly the first engagements of the American Revolution."
+    },
+    {
+      "name": "battle-princeton-1777",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A one-line card about a minor battle; only 'Washington' anchors it, and the battle itself is unknown."
+    },
+    {
+      "name": "valley-forge-winter",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Famous American Revolution episode with Washington as the anchor."
+    },
+    {
+      "name": "battle-yorktown",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Effectively ending the Revolutionary War' is an explicit anchor on a widely known surrender."
+    },
+    {
+      "name": "yorktown-surrender",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same event and anchors as its duplicate."
+    },
+    {
+      "name": "napoleons-egyptian-campaign",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Napoleon and the Rosetta Stone discovery anchor it tightly."
+    },
+    {
+      "name": "battle-marengo",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Marengo is unknown to nearly everyone, though 'Napoleon's army' anchors the era."
+    },
+    {
+      "name": "battle-austerlitz",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Napoleon's most celebrated victory, with Napoleon himself as the anchor."
+    },
+    {
+      "name": "battle-trafalgar",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known naval victory; Nelson anchors it firmly to the Napoleonic wars."
+    },
+    {
+      "name": "death-horatio-nelson",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Napoleon and Trafalgar are both named in the description."
+    },
+    {
+      "name": "napoleon-retreat-russia",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most famous campaigns in history, with Napoleon as anchor."
+    },
+    {
+      "name": "napoleon-russia",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same universally known campaign as its duplicate; graded consistently."
+    },
+    {
+      "name": "battle-leipzig",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Despite its scale, Leipzig is barely recognised; only 'Napoleon' anchors it."
+    },
+    {
+      "name": "battle-new-orleans",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Andrew Jackson is a reasonably tight early-19th-century anchor."
+    },
+    {
+      "name": "battle-waterloo-napoleon",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Waterloo is universally known and the card names the end of Napoleon's rule."
+    },
+    {
+      "name": "napoleon-waterloo",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same universally known event as its duplicate."
+    },
+    {
+      "name": "battle-of-ayacucho",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Battle unknown outside Latin America, but 'ending Spanish colonial rule on the continent' is a strong anchor."
+    },
+    {
+      "name": "battle-of-navarino",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Last major naval battle fought entirely with sailing ships' is an explicit technology anchor."
+    },
+    {
+      "name": "texas-revolution-alamo",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Famous in the US; 'Texan independence' brackets the era only loosely."
+    },
+    {
+      "name": "charge-light-brigade",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Known through the poem, and the Crimean War is named but not widely dated."
+    },
+    {
+      "name": "battle-antietam",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in the US; 'Lee's invasion of the North' implies but never names the Civil War."
+    },
+    {
+      "name": "battle-hampton-roads",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'First battle between ironclad warships' is a strong industrial-era technology anchor."
+    },
+    {
+      "name": "battle-gettysburg",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and the Civil War is named outright."
+    },
+    {
+      "name": "shermans-march",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in the US; 'Southern morale' implies the Civil War without naming it."
+    },
+    {
+      "name": "austro-prussian-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Prussia brackets the 18th-19th centuries and nothing narrows it further."
+    },
+    {
+      "name": "battle-sedan",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Sedan is unrecognised, but Napoleon III and the Second French Empire are a tight anchor."
+    },
+    {
+      "name": "battle-little-bighorn",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Custer's Last Stand is broadly familiar and anchors clearly to the American Indian Wars."
+    },
+    {
+      "name": "nez-perce-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Chief Joseph is known to some Americans; the anchor is only 'American West'."
+    },
+    {
+      "name": "war-of-the-pacific",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Independent Chile/Bolivia/Peru and the nitrate trade bracket the post-independence industrial era, but the name misleads toward WWII."
+    },
+    {
+      "name": "zulu-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "British colonial Africa is the only anchor the card offers."
+    },
+    {
+      "name": "first-boer-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'First' implies a better-known sequel, but the century is not fixed by the text."
+    },
+    {
+      "name": "ethiopian-victory-adwa",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Italian colonial ambitions in Africa imply the Scramble but no tighter."
+    },
+    {
+      "name": "fashoda-incident",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Anglo-French rivalry in Sudan signals the colonial partition of Africa and little else."
+    },
+    {
+      "name": "spanish-american-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known; the Cuba/Philippines acquisitions bracket the age of US expansion."
+    },
+    {
+      "name": "russo-japanese-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Known as the first Asian victory over a European power, but the card gives no sharp era marker."
+    },
+    {
+      "name": "battle-tsushima",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The battle name is obscure and only the modern-navy context anchors it."
+    },
+    {
+      "name": "first-battle-of-the-marne",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Beginning four years of trench warfare' pins the opening of WWI exactly."
+    },
+    {
+      "name": "second-battle-of-ypres-first-gas-attack",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "First large-scale chemical weapons use is an explicit technology and war anchor."
+    },
+    {
+      "name": "battle-jutland",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "WWI is named outright, which fixes the era despite the low battle recognition."
+    },
+    {
+      "name": "battle-somme",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely recognised name, though the description never names the war."
+    },
+    {
+      "name": "battle-verdun",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "WWI is named and Verdun is a familiar symbol of it."
+    },
+    {
+      "name": "gallipoli-ends",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in Commonwealth countries; 'Ottoman' and 'Allied' place it broadly."
+    },
+    {
+      "name": "battle-passchendaele",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The war is never named; only 'Ypres' and trench conditions hint at WWI."
+    },
+    {
+      "name": "polish-soviet-war",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Soviet Red Army' brackets several decades and the war itself is little known."
+    },
+    {
+      "name": "anschluss",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Nazi Germany annexing Austria is a tight pre-war anchor."
+    },
+    {
+      "name": "blitzkrieg-tactics-deployed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The invasion of Poland is the canonical start of WWII."
+    },
+    {
+      "name": "battle-britain",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known RAF defence against German bombing."
+    },
+    {
+      "name": "dunkirk-evacuation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar story, but the description never names WWII."
+    },
+    {
+      "name": "fall-of-france",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Germany conquering France by blitzkrieg anchors to the WWII opening."
+    },
+    {
+      "name": "operation-barbarossa",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Nazi Germany invading the Soviet Union is a firm WWII anchor."
+    },
+    {
+      "name": "battle-el-alamein",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Montgomery and Rommel place it precisely in the WWII North African campaign."
+    },
+    {
+      "name": "battle-midway",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "US carriers against Japan in the Pacific is a clear WWII anchor."
+    },
+    {
+      "name": "battle-kursk",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Largest tank battle and the German Eastern Front anchor it to WWII."
+    },
+    {
+      "name": "stalingrad",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most famous battles in history, and WWII is named outright."
+    },
+    {
+      "name": "battle-bulge",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Germany's last western offensive against the Allies is a clear WWII anchor."
+    },
+    {
+      "name": "battle-monte-cassino-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Allied forces' is the only anchor; the war and theatre are never named."
+    },
+    {
+      "name": "battle-of-the-philippine-sea",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Barely recognised battle, though 'Pacific War' names the era."
+    },
+    {
+      "name": "d-day",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known Normandy landings."
+    },
+    {
+      "name": "fall-of-berlin",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Soviet capture of the Nazi capital anchors it to the end of WWII."
+    },
+    {
+      "name": "wwii-end-pacific",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Japan's surrender after Hiroshima and Nagasaki is universal knowledge."
+    },
+    {
+      "name": "inchon-landing",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "MacArthur and the named Korean War anchor it tightly."
+    },
+    {
+      "name": "battle-dien-bien-phu",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ending French colonial rule in Indochina' is a precise anchor."
+    },
+    {
+      "name": "ali-defeats-liston",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The specific fight is less known than Ali himself, but the Clay-to-Ali transition dates it well."
+    },
+    {
+      "name": "battle-khe-sanh-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Vietnam War is named outright, which fixes the era."
+    },
+    {
+      "name": "indo-pakistani-war-1971",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The creation of Bangladesh is an exact anchor."
+    },
+    {
+      "name": "fischer-spassky-world-chess",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Cold War framing plus Fischer's fame anchors it to the postwar decades."
+    },
+    {
+      "name": "billie-jean-king-battle-sexes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Televised match and the sexes framing suggest the feminist era without fixing it."
+    },
+    {
+      "name": "miracle-on-ice",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Lake Placid and the Cold War shock give a strong anchor despite mainly US recognition."
+    },
+    {
+      "name": "falklands-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably well known, but the description contains no era marker at all."
+    },
+    {
+      "name": "operation-desert-storm",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Gulf War liberation of Kuwait is widely known and firmly recent."
+    },
+    {
+      "name": "nagorno-karabakh-war-2020",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Extensive drone warfare is an unmistakable contemporary technology anchor."
+    }
+  ]
+}
