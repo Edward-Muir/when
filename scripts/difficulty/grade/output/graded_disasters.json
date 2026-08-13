@@ -1,0 +1,1735 @@
+{
+  "batch": "disasters",
+  "category": "disasters",
+  "graded": [
+    {
+      "name": "great-oxidation-event",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure name, but 'free oxygen from photosynthesis first accumulated' is an unmistakable deep-time anchor."
+    },
+    {
+      "name": "great-dying-extinction",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Worst-ever mass extinction of complex life anchors firmly to deep geological time, but the name itself is not widely known."
+    },
+    {
+      "name": "dinosaur-extinction",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known asteroid impact with an unambiguous deep-time anchor."
+    },
+    {
+      "name": "yellowstone-supervolcano",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Yellowstone supervolcano has pop-science recognition, but 'most recent supereruption' gives no era anchor."
+    },
+    {
+      "name": "toba-supereruption",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Toba itself is obscure, but 'nearly caused human extinction' places it inside the human prehistoric window."
+    },
+    {
+      "name": "storegga-tsunami",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown event and an underwater landslide description that carries no temporal signal at all."
+    },
+    {
+      "name": "black-sea-deluge",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Rising sea levels flooded the basin' points to post-glacial prehistory, which rescues it from unplaceable."
+    },
+    {
+      "name": "thera-eruption",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Minoan civilization in the Aegean' is a strong Bronze Age anchor even for players who never heard of Thera."
+    },
+    {
+      "name": "bronze-age-collapse",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The card names its own era; recognition is decent and 'Bronze Age' cannot be misplaced."
+    },
+    {
+      "name": "late-bronze-age-drought",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure, but both name and description spell out the Bronze Age Collapse."
+    },
+    {
+      "name": "plague-of-athens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Classical Athens is an unmistakable era anchor; the plague itself is enthusiast knowledge."
+    },
+    {
+      "name": "pompeii",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous worldwide and explicitly Roman."
+    },
+    {
+      "name": "vesuvius-eruption",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event as Pompeii; famous and explicitly Roman."
+    },
+    {
+      "name": "antioch-earthquake-ad-115",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Nobody knows this quake, but 'Emperor Trajan' pins it to the Roman Empire."
+    },
+    {
+      "name": "antonine-plague",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Across the Roman Empire' is a strong era anchor for a modestly known pandemic."
+    },
+    {
+      "name": "hatepe-eruption",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown eruption, and 'New Zealand' actively misleads toward a much later date."
+    },
+    {
+      "name": "plague-of-cyprian",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Very obscure, but 'swept through the Roman Empire' places the era clearly."
+    },
+    {
+      "name": "365-crete-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A geographic region and nothing else; no era signal whatsoever."
+    },
+    {
+      "name": "antioch-earthquake-526",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Byzantine city of Antioch' names the empire, which is the era win even though the quake is unknown."
+    },
+    {
+      "name": "volcanic-winter-536",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A 'mysterious fog over Europe' gives the player no era to reason from; the Nika Riots case."
+    },
+    {
+      "name": "plague-of-justinian",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Justinian plus 'Byzantine Empire' is a firm anchor."
+    },
+    {
+      "name": "justinian-plague-recurrence",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Sasanian Persian Empire' names a specific empire, pulling this out of unplaceable territory."
+    },
+    {
+      "name": "maya-collapse-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Maya collapse is a broadly known story and 'southern lowlands abandoned' anchors to pre-Columbian Mesoamerica."
+    },
+    {
+      "name": "damghan-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'An earthquake in Iran' with a casualty count and no era clue."
+    },
+    {
+      "name": "mayan-hiatus",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The technical 'hiatus' framing lowers recognition versus the plain collapse card; Maya context still narrows the era loosely."
+    },
+    {
+      "name": "aleppo-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Syria plus a death toll; no temporal handle at all."
+    },
+    {
+      "name": "syria-earthquake-medieval",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The word 'medieval' is in the slug, not on the card; the player sees only 'Middle East' and a death toll."
+    },
+    {
+      "name": "samalas-eruption",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown eruption, Indonesian location, no era signal."
+    },
+    {
+      "name": "ancestral-puebloan-drought",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cliff dwellings anchor to pre-Columbian North America, but the event is specialist knowledge."
+    },
+    {
+      "name": "great-european-famine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Recognition is specialist and the text offers no era marker beyond a pre-modern feel; medium overstated it."
+    },
+    {
+      "name": "black-death-arrives",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and firmly medieval."
+    },
+    {
+      "name": "black-death-demographic",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Names the Black Death outright."
+    },
+    {
+      "name": "black-death-peak",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Names the Black Death; the only difficulty is the exact year, which v3 says not to grade."
+    },
+    {
+      "name": "khmer-decline",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Angkor and the Khmer Empire narrow the era for some players, but recognition is specialist."
+    },
+    {
+      "name": "sweating-sickness",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A mysterious English epidemic with only a pre-modern-medicine feel to date it."
+    },
+    {
+      "name": "dancing-plague",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A widely circulated oddity, but Strasbourg alone gives no era."
+    },
+    {
+      "name": "population-collapse-americas",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Old World diseases among Indigenous Americans' is an explicit post-contact anchor and the story is broadly taught."
+    },
+    {
+      "name": "shaanxi-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Deadliest earthquake in history' carries some trivia fame, but nothing in the card dates it."
+    },
+    {
+      "name": "huaynaputina-eruption",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown volcano, no era marker."
+    },
+    {
+      "name": "russian-famine-troubles",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Time of Troubles' is a named era that a player can at least bracket to Tsarist Russia."
+    },
+    {
+      "name": "italian-plague",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Bubonic plague in Italy risks being placed at 1348; only a vague pre-industrial window."
+    },
+    {
+      "name": "tulip-mania-crashes",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A famous cautionary tale, and 'Dutch' plus 'history's first recorded bubble' anchors it before every other crash on the board."
+    },
+    {
+      "name": "great-plague-london",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely taught alongside the Great Fire; plague context brackets the era."
+    },
+    {
+      "name": "great-fire-london",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Very famous and the card says 'medieval City of London'."
+    },
+    {
+      "name": "dodo-driven-extinct",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The dodo is universally recognised and 'within decades of sailors reaching the island' anchors to the age of sail."
+    },
+    {
+      "name": "cascadia-earthquake-1700",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Estimated magnitude' and 'recorded in Japan' hint at a pre-instrumental but literate era."
+    },
+    {
+      "name": "mississippi-bubble",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "John Law and French royal finances anchor to the ancien regime, but recognition is specialist."
+    },
+    {
+      "name": "south-sea-bubble",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Britain's first financial crisis' brackets the era loosely; the event is enthusiast knowledge."
+    },
+    {
+      "name": "chile-earthquake-1730",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown quake, coastline damage figures, no era."
+    },
+    {
+      "name": "gin-craze-london",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Not remotely easy for a general audience; the Gin Craze is specialist social history, though 'cheap gin and new laws' suggests pre-Victorian London."
+    },
+    {
+      "name": "irish-famine-forgotten",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The card advertises itself as forgotten and will pull players straight to 1845."
+    },
+    {
+      "name": "lisbon-earthquake",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Reasonably known, but nothing in the text dates it — Portugal's capital could be any century."
+    },
+    {
+      "name": "great-boston-fire-1760",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Colonial Boston' rules out everything after 1776, which is a real window."
+    },
+    {
+      "name": "great-hurricane-caribbean",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A death toll and an ocean basin; no era clue."
+    },
+    {
+      "name": "calabria-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Southern Italy plus casualties, nothing temporal."
+    },
+    {
+      "name": "chalisa-famine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown famine in India with no colonial or era marker on the card."
+    },
+    {
+      "name": "laki-eruption",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Some pop-science fame; the description gives famine and climate effects but no era."
+    },
+    {
+      "name": "doji-bara-famine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure regional famine, no temporal anchor."
+    },
+    {
+      "name": "unzen-eruption",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A Japanese volcanic collapse with no era signal."
+    },
+    {
+      "name": "yellow-fever-philadelphia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'The American capital' being Philadelphia is a genuine anchor for anyone who knows early US history."
+    },
+    {
+      "name": "new-madrid-earthquakes",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Central United States' implies a post-independence, pre-instrumental America; recognition is low."
+    },
+    {
+      "name": "london-beer-flood",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A circulated oddity, but a brewery vat gives only a vague pre-modern-industry window."
+    },
+    {
+      "name": "tambora-eruption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The standard answer to 'largest eruption in recorded history', and 'recorded history' brackets it."
+    },
+    {
+      "name": "year-without-summer",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well-known phrase, and it names Tambora."
+    },
+    {
+      "name": "great-fire-new-york",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Lower Manhattan burning could be almost any century of the city's existence."
+    },
+    {
+      "name": "panic-of-1837",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Jacksonian-Era' is an explicit era reference on the card face."
+    },
+    {
+      "name": "trail-of-tears",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Taught throughout US schooling and 'forced relocation of Native American nations' anchors to 19th-century expansion."
+    },
+    {
+      "name": "cholera-london",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The John Snow water-pump story is a science-class staple and anchors to Victorian London."
+    },
+    {
+      "name": "ansei-earthquake",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Edo (Tokyo)' signals the pre-Meiji period, a usable window."
+    },
+    {
+      "name": "third-plague-pandemic",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Third' implies it follows Justinian and the Black Death, and worldwide spread implies the steamship age."
+    },
+    {
+      "name": "carrington-event",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Worldwide telegraph failures' is a precise technology anchor to the mid-19th century."
+    },
+    {
+      "name": "finnish-famine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'Last major famine in Europe' is too weak to date, and the event is unknown outside Finland."
+    },
+    {
+      "name": "indian-rebellion-famine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A famine in India with a death toll and no era marker on the card."
+    },
+    {
+      "name": "great-chicago-fire",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Famous, and a Chicago of 100,000 homeless implies the industrial city era."
+    },
+    {
+      "name": "peshtigo-fire",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Overshadowed by Chicago; the card gives only a state and a death toll."
+    },
+    {
+      "name": "princess-alice-disaster",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Pleasure steamer on the Thames' is a solid Victorian technology anchor."
+    },
+    {
+      "name": "krakatoa-eruption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Krakatoa is a household volcano name with a broadly known 19th-century association."
+    },
+    {
+      "name": "mount-tarawera-eruption",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Pink and White Terraces mean nothing to most players and date nothing."
+    },
+    {
+      "name": "johnstown-flood",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Regional US fame only, and a dam failure in Pennsylvania carries no era signal."
+    },
+    {
+      "name": "russian-flu",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Easily confused with 1918; nothing on the card separates them."
+    },
+    {
+      "name": "russian-famine-imperial",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Imperial Russian' brackets it to before 1917, which is a usable window."
+    },
+    {
+      "name": "panic-of-1893",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Railroad overbuilding' anchors to the late-19th-century railway boom."
+    },
+    {
+      "name": "galveston-hurricane",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Deadliest natural disaster in US history' is a familiar fact with a turn-of-the-century association."
+    },
+    {
+      "name": "general-slocum",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Steamship' plus New York's East River is a real technology-era anchor."
+    },
+    {
+      "name": "courrieres-mine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Deep coal mining at that death toll brackets to the industrial era."
+    },
+    {
+      "name": "san-francisco-earthquake",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the most famous quakes in history; fires destroying a wooden American city implies the era."
+    },
+    {
+      "name": "valparaiso-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A Chilean city and a death toll, nothing more."
+    },
+    {
+      "name": "messina-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Enormous death toll but almost no recognition outside Italy, and no era clue."
+    },
+    {
+      "name": "tunguska-event",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "A famous mystery, but a Siberian forest blast is undatable from the card."
+    },
+    {
+      "name": "triangle-shirtwaist-fire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A labour-history staple, and garment sweatshops anchor to the industrial city era."
+    },
+    {
+      "name": "titanic-disaster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "About as universally placed as any event in the game."
+    },
+    {
+      "name": "empress-ireland",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Ocean liner' anchors to the transatlantic liner age even though the ship is unknown."
+    },
+    {
+      "name": "eastland-disaster",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'Passenger ship in the Chicago River' spans a century of possibilities."
+    },
+    {
+      "name": "ottawa-parliament-fire",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Canada's Parliament existing at all brackets it to after Confederation."
+    },
+    {
+      "name": "halifax-explosion",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in North America and 'munitions ship' implies a world war."
+    },
+    {
+      "name": "persian-famine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The card names World War I outright, which is a top-tier anchor."
+    },
+    {
+      "name": "spanish-flu-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and named."
+    },
+    {
+      "name": "spanish-flu-peak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Names the Spanish flu, so the era is free; only the sub-event framing costs it recognition."
+    },
+    {
+      "name": "boston-molasses-flood",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A circulated oddity rather than a known event, and a molasses tank dates nothing."
+    },
+    {
+      "name": "haiyuan-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Northwestern China and a death toll; no era signal."
+    },
+    {
+      "name": "russian-famine-civil-war",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Soviet Russia' plus 'civil war aftermath' pins it tightly to the early Bolshevik years."
+    },
+    {
+      "name": "knickerbocker-storm",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A DC snowstorm and a theatre roof; no era clue at all."
+    },
+    {
+      "name": "great-kanto-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known, and Tokyo-Yokohama at that scale implies the modern era."
+    },
+    {
+      "name": "weimar-hyperinflation",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Weimar' is an explicit named era, and burning banknotes is one of the most reproduced images in modern history."
+    },
+    {
+      "name": "tri-state-tornado",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Weather-history knowledge with no dating clue on the card."
+    },
+    {
+      "name": "st-francis-dam-failure",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A California dam failure could sit anywhere across a century."
+    },
+    {
+      "name": "black-thursday",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The card says it began the Great Depression, which is as strong an anchor as the category offers."
+    },
+    {
+      "name": "wall-street-crash-1929",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous and explicitly tied to the Great Depression."
+    },
+    {
+      "name": "china-great-floods",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Sometimes cited as the deadliest flood ever, but nothing on the card dates it."
+    },
+    {
+      "name": "holodomor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly recognised now, and 'Soviet policies' plus Ukraine is a firm Stalin-era anchor."
+    },
+    {
+      "name": "dust-bowl",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "A schoolroom staple strongly bound to the Depression decade."
+    },
+    {
+      "name": "nepal-bihar-earthquake-1934",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A magnitude figure and two place names; easily confused with 2015 Nepal."
+    },
+    {
+      "name": "quetta-earthquake",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'British India' brackets it before 1947, a usable window."
+    },
+    {
+      "name": "hindenburg-disaster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Iconic newsreel footage, and 'airship era' is a tight technology anchor."
+    },
+    {
+      "name": "ohio-river-flood",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A river flood displacing a million people, with no era marker."
+    },
+    {
+      "name": "twa-flight-3-crash",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Carole Lombard means nothing to most players and the crash is unknown."
+    },
+    {
+      "name": "bengal-famine-wwii",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Wartime' plus 'British India' is a strong double anchor."
+    },
+    {
+      "name": "dutch-hunger-winter",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Nazi blockade of the occupied Netherlands' places it inside WWII."
+    },
+    {
+      "name": "tokyo-firebombing",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "US bombers over Tokyo is an unambiguous WWII anchor and the raid is broadly known."
+    },
+    {
+      "name": "texas-city-disaster",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A ship explosion at a US port with no era marker."
+    },
+    {
+      "name": "ashgabat-earthquake",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Soviet Turkmenistan' brackets it to 1922-1991."
+    },
+    {
+      "name": "great-smog-london",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known in Britain and coal-smog London anchors the era."
+    },
+    {
+      "name": "north-sea-flood",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Huge in the Netherlands, near-invisible elsewhere, with no dating clue."
+    },
+    {
+      "name": "andrea-doria",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Ocean liner' anchors loosely to the pre-jet crossing era."
+    },
+    {
+      "name": "asian-flu",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "One of several unnamed flu pandemics on the board with nothing to separate them."
+    },
+    {
+      "name": "valdivia-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Most powerful ever recorded' is a familiar fact and implies the instrumental seismology era."
+    },
+    {
+      "name": "thalidomide-scandal",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known, and mass pharmaceutical prescribing anchors to the mid-20th century."
+    },
+    {
+      "name": "vajont-dam",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Large hydro reservoirs anchor to the 20th century, but the disaster is unknown outside Italy."
+    },
+    {
+      "name": "alaska-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Recognition is regional and 'most powerful in North American history' does not date it."
+    },
+    {
+      "name": "aberfan-disaster",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Deep in British memory only; coal tips anchor loosely to the industrial 20th century."
+    },
+    {
+      "name": "biafra-famine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Nigerian Civil War implies post-independence Africa, but recognition has faded."
+    },
+    {
+      "name": "hong-kong-flu",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Interchangeable with the other unnamed flu pandemic cards."
+    },
+    {
+      "name": "thule-b52-crash",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A B-52 carrying nuclear weapons is a precise Cold War anchor."
+    },
+    {
+      "name": "cuyahoga-river-fire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Galvanised the modern environmental movement' pins it to the late 1960s-70s."
+    },
+    {
+      "name": "bhola-cyclone",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Bangladesh' implies the modern state era, but the storm itself is little known."
+    },
+    {
+      "name": "peru-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A country and a death toll, with no era clue."
+    },
+    {
+      "name": "tonghai-earthquake",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown quake; a magnitude figure alone barely narrows the century."
+    },
+    {
+      "name": "club-of-rome-report",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Limits to Growth is specialist, but resource-depletion alarm anchors to the environmental awakening."
+    },
+    {
+      "name": "bangladesh-famine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Bangladesh' brackets it after 1971; the famine itself is unknown to most."
+    },
+    {
+      "name": "joelma-building-fire",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A 25-storey tower in Sao Paulo anchors to the post-war high-rise era."
+    },
+    {
+      "name": "super-tornado-outbreak",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Weather-history knowledge; the card offers no date signal."
+    },
+    {
+      "name": "banqiao-dam",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The deadliest dam collapse ever, and almost nobody knows when."
+    },
+    {
+      "name": "guatemala-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A Central American quake with a death toll and no era marker."
+    },
+    {
+      "name": "tangshan-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Enormous but poorly known in the West, and undatable from the card."
+    },
+    {
+      "name": "tenerife-airport",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Two Boeing 747s' is a tight technology anchor that rescues an event most players cannot name."
+    },
+    {
+      "name": "three-mile-island",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known, and civilian nuclear power anchors the era."
+    },
+    {
+      "name": "lake-peigneur-sinkhole",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A viral oddity rather than a known event, with no era clue."
+    },
+    {
+      "name": "mount-st-helens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The defining modern US eruption, strongly associated with its decade."
+    },
+    {
+      "name": "beirut-barracks-bombing",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Lebanon peacekeeping context anchors loosely; the attack itself is specialist knowledge now."
+    },
+    {
+      "name": "ethiopian-famine",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Culturally fixed to the Live Aid moment for most people."
+    },
+    {
+      "name": "bhopal-disaster",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The archetypal industrial catastrophe; petrochemical plants anchor the era."
+    },
+    {
+      "name": "bhopal-gas-disaster",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event, same reasoning as the other Bhopal card."
+    },
+    {
+      "name": "japan-airlines-123",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Jet airliner anchor only; the crash is aviation-enthusiast knowledge."
+    },
+    {
+      "name": "live-aid",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the most famous events in pop culture, and stadium rock plus famine relief anchors the decade."
+    },
+    {
+      "name": "mexico-city-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly remembered; a mega-city quake implies the late 20th century."
+    },
+    {
+      "name": "nevado-del-ruiz",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Armero is remembered chiefly through one photograph; the card gives no era."
+    },
+    {
+      "name": "challenger-disaster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and the Shuttle programme is a tight anchor."
+    },
+    {
+      "name": "chernobyl-disaster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous, and 'Soviet power plant in Ukraine' anchors before 1991."
+    },
+    {
+      "name": "lake-nyos",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A striking but obscure event with nothing to date it."
+    },
+    {
+      "name": "black-monday-1987",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in finance culture; a same-day 22% Dow drop implies electronic-era trading."
+    },
+    {
+      "name": "dona-paz-disaster",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The deadliest peacetime shipwreck and almost nobody can date it."
+    },
+    {
+      "name": "armenian-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Soviet Armenia' brackets it before 1991; recognition has faded."
+    },
+    {
+      "name": "lockerbie-bombing",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known, and Pan Am dates it to before the airline folded."
+    },
+    {
+      "name": "pan-am-flight-103",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event and same anchors as the Lockerbie card."
+    },
+    {
+      "name": "piper-alpha",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "North Sea offshore platforms anchor to the post-1970s oil era, but recognition is British-industry-specific."
+    },
+    {
+      "name": "exxon-valdez",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The reference oil-spill disaster before Deepwater Horizon."
+    },
+    {
+      "name": "hillsborough-disaster",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Enormously known in Britain; terraced-stadium crushes anchor to the pre-all-seater era."
+    },
+    {
+      "name": "iran-earthquake-manjil",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "One of several undated Iranian quake cards with no distinguishing clue."
+    },
+    {
+      "name": "japanese-asset-bubble-bursts",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Beginning a long economic stagnation' points at Japan's lost decades."
+    },
+    {
+      "name": "bangladesh-cyclone-chittagong",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Bangladesh' brackets it after 1971; the cyclone is easily confused with Bhola."
+    },
+    {
+      "name": "pinatubo-eruption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Second-largest eruption of the century' both signals fame and brackets the era."
+    },
+    {
+      "name": "black-wednesday-pound",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Barely known outside Britain; the ERM reference anchors to European monetary integration but only for the informed."
+    },
+    {
+      "name": "hurricane-andrew",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The benchmark Florida hurricane before Katrina."
+    },
+    {
+      "name": "la-riots",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rodney King is a recognisable name that places it in the video-camera era of American policing."
+    },
+    {
+      "name": "somali-famine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Civil war and drought in Somalia could describe several decades."
+    },
+    {
+      "name": "waco-siege",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A fixture of American memory; a televised federal siege implies the late 20th century."
+    },
+    {
+      "name": "estonia-ferry",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Major in the Nordic countries only, and a Baltic ferry sinking gives no era."
+    },
+    {
+      "name": "northridge-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "One of several undated Los Angeles quake cards."
+    },
+    {
+      "name": "kobe-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known internationally; modern Japanese city implies the late 20th century."
+    },
+    {
+      "name": "north-korea-famine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Economic collapse' hints at the post-Soviet 1990s, but the famine itself is only vaguely known."
+    },
+    {
+      "name": "oklahoma-city-bombing",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Very famous in the US, but the card gives no era anchor whatsoever."
+    },
+    {
+      "name": "tokyo-subway-attack",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The sarin attack is broadly known and a named modern cult anchors the era."
+    },
+    {
+      "name": "asian-financial-crisis",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Currency crises across the Asian tiger economies anchor to the globalisation decade."
+    },
+    {
+      "name": "el-nino-super",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "El Nino is familiar but this specific event is not, and the card gives only a damage figure."
+    },
+    {
+      "name": "hurricane-mitch",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Faded from general memory, and '200 years' does not locate it."
+    },
+    {
+      "name": "us-embassy-bombings",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Naming Al-Qaeda and 'escalation in jihadist attacks on America' places it firmly in the pre-9/11 run-up."
+    },
+    {
+      "name": "columbine-shooting",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The reference point for every later school shooting; near-universal recognition."
+    },
+    {
+      "name": "concorde-crash",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Concorde only flew 1976-2003, which is a tight anchor."
+    },
+    {
+      "name": "dot-com-bubble-bursts",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Internet-company stock prices' pins it to the arrival of the consumer web, and the crash is broadly remembered."
+    },
+    {
+      "name": "y2k",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The card literally names the millennium rollover."
+    },
+    {
+      "name": "enron-scandal",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The byword for accounting fraud, loosely fixed to the early 2000s."
+    },
+    {
+      "name": "september-11",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The date is in the name."
+    },
+    {
+      "name": "bali-bombings",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Very well known in Australia and the jihadist context places it after 2001."
+    },
+    {
+      "name": "european-heat-wave",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A landmark climate event in European memory, implying the warming era."
+    },
+    {
+      "name": "sars-outbreak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely remembered as the pre-COVID coronavirus scare."
+    },
+    {
+      "name": "space-shuttle-columbia-disaster",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Shuttle programme is a tight 1981-2011 anchor and the loss is broadly remembered."
+    },
+    {
+      "name": "beslan-school-siege",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Chechen conflict anchors to post-Soviet Russia, but recognition outside Europe is low."
+    },
+    {
+      "name": "indian-ocean-tsunami",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the most globally covered disasters ever; the scale of reporting fixes it to the modern media era."
+    },
+    {
+      "name": "madrid-bombings",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well remembered in Europe as part of the post-9/11 attack wave."
+    },
+    {
+      "name": "hurricane-katrina",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The defining modern American natural disaster."
+    },
+    {
+      "name": "kashmir-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Huge death toll, little Western recognition, no era clue."
+    },
+    {
+      "name": "london-bombings",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "7/7 is well known in Britain and sits clearly in the post-9/11 wave."
+    },
+    {
+      "name": "subprime-mortgage-crisis",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Names the global financial crisis, but is easily conflated with the 2008 cards."
+    },
+    {
+      "name": "virginia-tech-shooting",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known in the US within the modern mass-shooting era."
+    },
+    {
+      "name": "cyclone-nargis",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Myanmar' rather than Burma weakly implies the post-1989 period; recognition is low."
+    },
+    {
+      "name": "global-financial-crisis",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lehman Brothers named and lived through by most players."
+    },
+    {
+      "name": "lehman-brothers-collapse",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same anchor as the GFC card and equally recognised."
+    },
+    {
+      "name": "sichuan-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Heavily covered internationally, in the modern-China era."
+    },
+    {
+      "name": "swine-flu-pandemic",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lived through by most adult players, though the card itself gives no date."
+    },
+    {
+      "name": "chilean-mine-rescue",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A globally televised rescue, which implies the live-broadcast modern era."
+    },
+    {
+      "name": "deepwater-horizon",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The largest marine oil spill in history and heavily covered; deep-water drilling anchors it modern."
+    },
+    {
+      "name": "haiti-earthquake",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "One of the most covered disasters of the century — very-hard badly understated its recognition — though the card gives no era anchor."
+    },
+    {
+      "name": "iceland-eyjafjallajokull-eruption",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Personally experienced by millions of stranded travellers, and mass air travel anchors it."
+    },
+    {
+      "name": "christchurch-earthquake",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Dominant in New Zealand only, and the card offers no era anchor."
+    },
+    {
+      "name": "fukushima-disaster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The second-most famous nuclear accident in history and lived through by most players."
+    },
+    {
+      "name": "tohoku-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely remembered, though the card does not name Fukushima to date it."
+    },
+    {
+      "name": "costa-concordia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Heavily covered, and mass-market cruise ships anchor to the recent past."
+    },
+    {
+      "name": "hurricane-sandy",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Very widely covered in North America; a $70bn storm implies the recent decade."
+    },
+    {
+      "name": "mers-outbreak",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Coronavirus' terminology anchors it modern, but MERS itself is barely remembered."
+    },
+    {
+      "name": "sandy-hook-shooting",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Deeply embedded in recent American memory."
+    },
+    {
+      "name": "boston-marathon-bombing",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Saturation coverage including a named manhunt; unmistakably recent."
+    },
+    {
+      "name": "rana-plaza-collapse",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The reference point for fast-fashion labour coverage, clearly modern."
+    },
+    {
+      "name": "typhoon-haiyan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely covered as a record-strength storm in the satellite era."
+    },
+    {
+      "name": "ebola-outbreak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A global news story lived through by most adult players."
+    },
+    {
+      "name": "mh370-disappearance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "One of the biggest news mysteries of the decade; a vanished airliner nobody could find implies the satellite era."
+    },
+    {
+      "name": "sewol-ferry",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Enormous in Korea and widely covered abroad, clearly recent."
+    },
+    {
+      "name": "nepal-earthquake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly remembered, though nothing separates it from the 1934 card except recency of coverage."
+    },
+    {
+      "name": "paris-attacks",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "One of the most covered terror attacks in Europe; the ISIS-era context is broadly understood."
+    },
+    {
+      "name": "refugee-crisis-peak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Fleeing Syria' is a tight anchor to the Syrian civil war years."
+    },
+    {
+      "name": "san-bernardino-attack",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'ISIS-inspired' and 'since 9/11' bound it loosely; recognition outside the US is low."
+    },
+    {
+      "name": "tianjin-explosions",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Warehouse explosions in a Chinese port are little remembered and the card gives no era anchor."
+    },
+    {
+      "name": "zika-outbreak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A major global health story of the last decade."
+    },
+    {
+      "name": "nice-truck-attack",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'ISIS-claimed' anchors it to the mid-2010s attack wave."
+    },
+    {
+      "name": "pulse-nightclub-shooting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Deadliest US attack since 9/11' bounds it only loosely, and recognition outside the US is limited."
+    },
+    {
+      "name": "charlottesville-rally",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Strongly US-specific and the card gives no era marker."
+    },
+    {
+      "name": "grenfell-tower-fire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Dominant in Britain and widely covered abroad, clearly recent."
+    },
+    {
+      "name": "las-vegas-shooting",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Known in the US as the deadliest mass shooting, but nothing on the card dates it."
+    },
+    {
+      "name": "camp-fire-paradise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "One of several interchangeable modern wildfire cards with no era anchor."
+    },
+    {
+      "name": "australia-bushfires",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Black Summer fires were a global story with a strong climate-era association."
+    },
+    {
+      "name": "notre-dame-fire",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Watched live worldwide; recent and unmistakable."
+    },
+    {
+      "name": "beirut-explosion",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The footage was seen globally; clearly a recent event."
+    },
+    {
+      "name": "covid-19-pandemic",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lived through by every player."
+    },
+    {
+      "name": "texas-winter-storm",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A major recent US story; power-grid failure anchors it modern."
+    },
+    {
+      "name": "ftx-crypto-collapse",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Cryptocurrency exchange' is a tight anchor to the last decade."
+    },
+    {
+      "name": "lahaina-fire",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Recent but quickly faded outside the US, with no era anchor on the card."
+    },
+    {
+      "name": "svb-collapse",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Silicon Valley Bank' anchors to the tech-finance era."
+    },
+    {
+      "name": "turkey-syria-earthquake",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Widely covered, but nothing on the card distinguishes it from the other undated Middle East quakes."
+    }
+  ]
+}
