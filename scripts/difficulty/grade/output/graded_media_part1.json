@@ -1,0 +1,1007 @@
+{
+  "batch": "media_part1",
+  "category": "media",
+  "graded": [
+    {
+      "name": "first-olympics",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and 'Ancient Greeks at Olympia' anchors it firmly to antiquity."
+    },
+    {
+      "name": "first-roman-gladiator-games",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The first staging is not general knowledge, but 'Romans'/'funeral tribute' anchors it to the ancient Roman world."
+    },
+    {
+      "name": "astrolabe-navigation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'Islamic world' and astrolabe technology give only a loose pre-modern anchor."
+    },
+    {
+      "name": "magellan-circumnavigation",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "School-level knowledge and Magellan anchors squarely to the Age of Exploration."
+    },
+    {
+      "name": "first-korean-turtle-ships",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little Western recognition; Yi Sun-sin and Hideyoshi anchor the era only for those who already know the period."
+    },
+    {
+      "name": "first-printed-newspaper-relation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure first; 'regularly printed newspaper' implies the post-printing-press early modern era but nothing tighter."
+    },
+    {
+      "name": "first-stock-dividend-voc",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; the Dutch East India Company is a medium colonial-era anchor."
+    },
+    {
+      "name": "stock-speculation-dutch",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tulip mania is a familiar financial parable and 'Dutch' plus 'first speculative bubble' places it in the early modern era."
+    },
+    {
+      "name": "bus-service",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure event; Pascal and horse-drawn carriages in Paris give a pre-industrial anchor only."
+    },
+    {
+      "name": "first-daily-english-newspaper",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'daily newspaper in English' spans a wide early-modern-to-Victorian window."
+    },
+    {
+      "name": "first-epsom-derby",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition outside Britain and the text carries no temporal cue at all - horse racing could be almost any modern century."
+    },
+    {
+      "name": "semaphore-telegraph",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; tower-and-arm visual signalling implies the pre-electric era, a medium anchor."
+    },
+    {
+      "name": "first-railway",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Stockton and Darlington itself is not widely known, but 'first public railway' anchors hard to the early industrial age."
+    },
+    {
+      "name": "first-railroad",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition for the specific line; 'first inter-city passenger railway powered entirely by steam' is a strong industrial-era anchor."
+    },
+    {
+      "name": "penny-post-britain",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known; 'first adhesive postage stamp' in Britain anchors to the Victorian period."
+    },
+    {
+      "name": "postage-stamp",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderate recognition of the milestone; Penny Black and Britain give a Victorian-era anchor but no tighter."
+    },
+    {
+      "name": "morse-telegraph-refinement",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Morse and the first telegraph message are widely taught and anchor firmly to the 19th century."
+    },
+    {
+      "name": "first-transatlantic-cable",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The event is not widely known, but a telegraph cable across the Atlantic is a strong 19th-century industrial anchor."
+    },
+    {
+      "name": "gettysburg",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous speech with the Civil War named outright."
+    },
+    {
+      "name": "submarine-first-practical",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure vessel; 'mechanical rather than human energy' gives an industrial-era anchor only."
+    },
+    {
+      "name": "first-kentucky-derby",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Derby is known in the US, but Churchill Downs and Louisville carry no temporal information."
+    },
+    {
+      "name": "first-test-cricket-match",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Test cricket is widely known where it is played, but nothing in the text dates the first match."
+    },
+    {
+      "name": "tchaikovsky-swan-lake",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Swan Lake is famous; Tchaikovsky and a Moscow ballet premiere anchor to the Romantic 19th century."
+    },
+    {
+      "name": "orient-express-first-run",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably famous train; 'Paris toward Constantinople' plus luxury rail anchors to the late imperial era."
+    },
+    {
+      "name": "ferris-wheel-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The object is universal but the first build is medium recognition; the Chicago World's Fair is a medium anchor."
+    },
+    {
+      "name": "urban-planning",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition of the City Beautiful movement; the Chicago World's Fair anchors loosely."
+    },
+    {
+      "name": "comic-strip-debuts",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Yellow Kid is obscure; newspaper comic strips imply the mass-press era but no decade."
+    },
+    {
+      "name": "lumiere-cinematograph",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderately known and 'the birth of cinema' is a strong, well-placed technology anchor."
+    },
+    {
+      "name": "first-boston-marathon",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The marathon is famous but the text offers no era cue beyond 'oldest annual'."
+    },
+    {
+      "name": "zeppelin-airship",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Airships are recognisable and lighter-than-air travel anchors to the pre-aeroplane-dominance era."
+    },
+    {
+      "name": "first-world-series",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "US-centric recognition and nothing in the text dates the leagues' first meeting."
+    },
+    {
+      "name": "wright-brothers-flight",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Taught everywhere; 'first powered, controlled airplane flight' is an unmistakable technology anchor."
+    },
+    {
+      "name": "instant-coffee-introduced",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Nobody knows when instant coffee arrived and the description gives no temporal cue whatsoever."
+    },
+    {
+      "name": "first-indianapolis-500",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The race is famous; motor racing anchors it to the automobile era."
+    },
+    {
+      "name": "household-refrigerator-sold",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The milestone is not general knowledge; 'electric household' appliance gives only a broad early-20th-century anchor."
+    },
+    {
+      "name": "first-scheduled-airline",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure airline; 'first scheduled airline using winged aircraft' anchors to the earliest aviation years but weakly."
+    },
+    {
+      "name": "tank-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Widely taught and World War I plus the Somme are named explicitly."
+    },
+    {
+      "name": "jazz-age-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Well known and the description literally says 'Roaring Twenties'."
+    },
+    {
+      "name": "first-winter-olympics",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The first Winter Games are not general knowledge and Chamonix in the French Alps supplies no temporal cue."
+    },
+    {
+      "name": "goddard-liquid-rocket",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Goddard is a specialist name; pre-space-age rocketry is a medium anchor."
+    },
+    {
+      "name": "first-talking-film",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderate recognition, and the silent-to-sound transition is a strong, well-placed era marker."
+    },
+    {
+      "name": "mickey-mouse-debut",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Mickey Mouse is universal; Steamboat Willie and early Disney anchor to the early animation era."
+    },
+    {
+      "name": "first-fifa-world-cup",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The World Cup is globally famous, but Uruguay hosting gives no date cue on its own."
+    },
+    {
+      "name": "frozen-food",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the text carries no era marker - quick-frozen food could be any point in the last century."
+    },
+    {
+      "name": "fm-radio",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Armstrong is a specialist name; radio broadcasting anchors only to a broad mid-century window."
+    },
+    {
+      "name": "parking-meter",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Obscure first and 'paid on-street parking in Oklahoma City' gives no temporal information at all."
+    },
+    {
+      "name": "war-of-worlds-broadcast",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A familiar anecdote; an Orson Welles radio drama anchors to radio's golden age."
+    },
+    {
+      "name": "wizard-of-oz",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known film and 'Technicolor musical' is a solid studio-era anchor."
+    },
+    {
+      "name": "pinocchio-premieres",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known; 'Disney's second full-length animated film' anchors to the earliest feature-animation years."
+    },
+    {
+      "name": "casablanca-released",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Iconic film and 'war film' with Bogart anchors squarely to WWII."
+    },
+    {
+      "name": "rosie-riveter-poster",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Instantly recognisable image and World War II is named outright."
+    },
+    {
+      "name": "bikini-introduced",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderate recognition, but 'named after a nuclear test site' is a strong post-1945 anchor."
+    },
+    {
+      "name": "first-eniac-computer",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "ENIAC is a familiar name in computing history and 'first general-purpose electronic computer' anchors to the early computing era."
+    },
+    {
+      "name": "polaroid-camera",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Polaroid is a household name but the instant camera is popularly associated with a much later decade, so the cue misleads."
+    },
+    {
+      "name": "credit-card-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Diners Club is a recognisable first and consumer credit anchors to the post-war era."
+    },
+    {
+      "name": "first-hydrogen-bomb-test",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known; thermonuclear testing anchors to the Cold War but across a wide span."
+    },
+    {
+      "name": "everest",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Hillary and Tenzing are famous, but nothing in the text dates the ascent."
+    },
+    {
+      "name": "bannister-four-minute-mile",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Known to sports followers only, and the description offers no era cue."
+    },
+    {
+      "name": "georgetown-ibm-machine-translation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only event; IBM and machine translation place it in the computing era but nowhere near a decade."
+    },
+    {
+      "name": "uss-nautilus-launched",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist recognition; 'nuclear-powered' anchors it to the post-war Cold War era."
+    },
+    {
+      "name": "tv-remote-control",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Flash-Matic is obscure; television anchors only to a broad mid-century window."
+    },
+    {
+      "name": "first-ai-program",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the AI framing pulls players toward a far later decade, so the text actively misleads."
+    },
+    {
+      "name": "laika-in-space",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Laika is moderately well known and Sputnik 2 anchors to the Space Race."
+    },
+    {
+      "name": "sputnik-launch-space",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Taught everywhere and explicitly named as the start of the Space Race."
+    },
+    {
+      "name": "first-credit-card-bankamericard",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Obscure banking first and the description contains no temporal marker beyond 'later becoming Visa'."
+    },
+    {
+      "name": "van-allen-belt-detected",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'first successful American satellite' anchors to the early Space Race for those who know it."
+    },
+    {
+      "name": "beatles-form",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Beatles are universally known and the band name itself is a firm 1960s anchor."
+    },
+    {
+      "name": "satellite-navigation-transit",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Transit is obscure; 'precursor to GPS' anchors to the early satellite era only loosely."
+    },
+    {
+      "name": "communications-satellite",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Telstar is not widely known, but the first live television relay by satellite is a strong early-space-age anchor."
+    },
+    {
+      "name": "operation-chopper-vietnam",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Essentially unknown operation, but 'first American combat mission in the Vietnam War' is a strong era anchor."
+    },
+    {
+      "name": "i-have-a-dream-speech",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Iconic speech with the March on Washington named."
+    },
+    {
+      "name": "beatles-usa",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Very well known and 'British Invasion' anchors firmly to the mid-1960s."
+    },
+    {
+      "name": "first-debit-card",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the text gives no era cue - most players would place debit cards decades later."
+    },
+    {
+      "name": "first-super-bowl-game",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognition is largely US-only and the AFL-NFL framing supplies no date for a general audience."
+    },
+    {
+      "name": "apollo-5-lunar-module",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The mission is obscure, but Apollo and 'first Lunar Module' anchor it tightly to the run-up to the landings."
+    },
+    {
+      "name": "arpanet-created",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known as the internet's precursor, which anchors it to the early computing-network era."
+    },
+    {
+      "name": "moon-landing",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most universally known events in history."
+    },
+    {
+      "name": "woodstock",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Woodstock is famous, but the description ('defined a generation') supplies no era text of its own."
+    },
+    {
+      "name": "first-earth-day",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known and the environmental movement anchors it to the era of modern activism."
+    },
+    {
+      "name": "first-arcade-video-game",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Computer Space is obscure; arcade video gaming anchors to a broad pre-console window."
+    },
+    {
+      "name": "intel-microprocessor",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The 4004 is specialist knowledge; 'first commercial microprocessor' is a medium computing-era anchor."
+    },
+    {
+      "name": "apollo-17-last-moon-mission",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Apollo 17 itself is little known, but 'final crewed lunar mission' places it right after the landings."
+    },
+    {
+      "name": "barcode-scanned",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure first; supermarket barcode scanning anchors to the era of computerised retail only loosely."
+    },
+    {
+      "name": "dungeons-and-dragons-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "D&D is broadly familiar and 'first tabletop role-playing game' anchors to the pre-video-game hobby era."
+    },
+    {
+      "name": "personal-computer",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The PC revolution is widely known and the Apple I reference is a strong technology anchor."
+    },
+    {
+      "name": "vhs-videotape",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "VHS is familiar and the Betamax format war anchors to the dawn of home video."
+    },
+    {
+      "name": "atari-2600",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Atari is recognisable and cartridge-based home consoles anchor to the first console generation."
+    },
+    {
+      "name": "star-wars",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cultural touchstone whose release is widely known."
+    },
+    {
+      "name": "first-spam-email",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure event; ARPANET anchors to the pre-internet networking era."
+    },
+    {
+      "name": "handheld-game-console",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Microvision is known to almost nobody and 'first portable gaming system' only says pre-Game Boy."
+    },
+    {
+      "name": "walkman-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely remembered by older players; the portable cassette player anchors to the pre-digital audio era."
+    },
+    {
+      "name": "first-space-shuttle-launch",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The shuttle programme is familiar and 'flew for three decades' anchors it, but only via inference."
+    },
+    {
+      "name": "trivial-pursuit-launched",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The game is well known but the description carries no temporal cue."
+    },
+    {
+      "name": "michael-jackson-thriller",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Best-selling album ever, and Michael Jackson anchors firmly to the 1980s."
+    },
+    {
+      "name": "tcp-ip-adopted",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist milestone; ARPANET anchors it to the pre-web networking era."
+    },
+    {
+      "name": "apple-macintosh-1984",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Macintosh is recognisable and popularising the GUI anchors it to the early personal-computing years."
+    },
+    {
+      "name": "air-jordan-sneakers",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Air Jordans are famous as a brand; Nike and Jordan anchor to his playing era."
+    },
+    {
+      "name": "mir-space-station",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known and 'Soviet Union' plus a 15-year operating life anchors it to the late Cold War."
+    },
+    {
+      "name": "game-boy-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Game Boy is broadly familiar and handheld cartridge gaming anchors to its own console generation."
+    },
+    {
+      "name": "eurotunnel-boring",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Channel Tunnel is widely known and the tunnelling breakthrough sits just before its well-publicised opening."
+    },
+    {
+      "name": "lithium-ion-battery",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The commercialisation milestone is specialist; 'enabling laptops to smartphones' places it before those devices."
+    },
+    {
+      "name": "solid-state-drive",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Obscure first and flash storage reads as far more recent than it is, so the text misleads rather than anchors."
+    },
+    {
+      "name": "first-sms-text-message",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-circulated story, and early mobile phones anchor it to the first digital-handset era."
+    },
+    {
+      "name": "mp3-audio-format",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "MP3 is a familiar format and 'enabling digital music distribution' anchors it before online music."
+    },
+    {
+      "name": "first-mobile-game",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Hagenuk MT-2000 is unknown to essentially everyone; Tetris on a phone gives only a vague pre-smartphone cue."
+    },
+    {
+      "name": "genetically-modified-crop",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The GMO debate is familiar but the Flavr Savr approval is not; 'first GM food sold' anchors weakly."
+    },
+    {
+      "name": "sony-playstation-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The PlayStation brand is huge but this first Japanese launch is a medium-recognition milestone anchored to the early 3D console era."
+    },
+    {
+      "name": "settlers-of-catan-released",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Known to board gamers, but nothing in the text dates the launch."
+    },
+    {
+      "name": "mobile-web",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Nokia Communicator is obscure; browsing on a handheld anchors to the early mobile-data era."
+    },
+    {
+      "name": "usb-standard",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Everyone knows USB, but the standard's release date has no cue in the text."
+    },
+    {
+      "name": "tiger-woods-first-masters",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely reported at the time; Tiger Woods anchors to his own competitive era."
+    },
+    {
+      "name": "paypal-online-payments",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "PayPal is familiar and 'the rise of online commerce' anchors it to the dot-com years."
+    },
+    {
+      "name": "first-3g-mobile-network",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The specific launch is specialist knowledge; 3G anchors to the early mobile-internet era."
+    },
+    {
+      "name": "ipod-released",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The iPod is universally recognised and anchors to Apple's pre-smartphone era."
+    },
+    {
+      "name": "wikipedia-launched",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Wikipedia is universally known and its launch anchors to the early web."
+    },
+    {
+      "name": "roomba-released",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably familiar product; consumer home robotics anchors it to the modern era."
+    },
+    {
+      "name": "android-operating-system",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Android is a household name but this is its founding, which players will place years later alongside the first phones."
+    },
+    {
+      "name": "first-podcast",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The specific first is obscure; RSS-distributed audio anchors it to the early-2000s web."
+    },
+    {
+      "name": "youtube-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known platform whose founding anchors to the Web 2.0 era."
+    },
+    {
+      "name": "cloud-computing-amazon",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "AWS is broadly known and 'pioneering on-demand cloud' anchors it to the start of the cloud era."
+    },
+    {
+      "name": "wii-motion-gaming",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Wii is familiar and motion controls anchor it to its own console generation."
+    },
+    {
+      "name": "iphone-released",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the best-known product launches ever, and the smartphone revolution is a firm anchor."
+    },
+    {
+      "name": "m-pesa-mobile-money",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little Western recognition; 'basic mobile phones' anchors it to the pre-smartphone era."
+    },
+    {
+      "name": "beijing-olympics-2008",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Globally watched event and 'China's rise as a superpower' anchors the era."
+    },
+    {
+      "name": "spotify-launched",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Spotify is universally known and the shift to on-demand streaming anchors the era."
+    },
+    {
+      "name": "obama-inaugurated",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Landmark, universally known event."
+    },
+    {
+      "name": "instagram-launched",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Instagram is universally known and a photo-sharing app anchors to the smartphone era."
+    },
+    {
+      "name": "felix-baumgartner-space-jump",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The jump was watched worldwide, but the description carries no temporal cue."
+    },
+    {
+      "name": "tesla-model-s",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tesla is well known and 'first mainstream long-range luxury EV' anchors it to the start of the EV era."
+    },
+    {
+      "name": "dji-phantom-drone",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Phantom 1 specifically is low recognition; consumer drones anchor to the modern decade only broadly."
+    },
+    {
+      "name": "oculus-rift-vr",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Oculus is reasonably known and the VR revival anchors it to the modern era."
+    },
+    {
+      "name": "india-mars-mission",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Limited recognition outside India; modern interplanetary missions give only a broad recent anchor."
+    },
+    {
+      "name": "new-horizons-pluto",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely covered at the time and a Pluto flyby anchors to the recent era of deep-space probes."
+    },
+    {
+      "name": "alphago-beats-lee-sedol",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-reported AI milestone that anchors to the deep-learning era before large language models."
+    },
+    {
+      "name": "trump-inauguration",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Very recent and universally known."
+    },
+    {
+      "name": "waymo-self-driving",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The specific launch is low recognition; commercial robotaxis anchor to the recent decade only."
+    },
+    {
+      "name": "black-hole-image",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A one-news-cycle event of moderate recognition; the imaging technology anchors it to the recent era."
+    },
+    {
+      "name": "quantum-computing-supremacy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist claim; quantum computing anchors only to the very recent era."
+    },
+    {
+      "name": "china-moon-samples",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; China's lunar programme anchors to the modern era but not a year."
+    },
+    {
+      "name": "ingenuity-mars-flight",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reported widely and 'first aircraft to fly on another planet' anchors to the recent Mars missions."
+    },
+    {
+      "name": "perseverance-mars-landing",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known and paired with Ingenuity, anchoring to the current Mars rover era."
+    },
+    {
+      "name": "dart-asteroid-impact",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition; asteroid deflection anchors only to the very recent era."
+    },
+    {
+      "name": "ai-rapid-advancement-gpt4",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "GPT-4 is universally known and unmistakably places itself in the current AI moment."
+    }
+  ]
+}
