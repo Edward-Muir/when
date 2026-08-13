@@ -1,0 +1,1595 @@
+{
+  "batch": "revolution_part2",
+  "category": "revolution",
+  "graded": [
+    {
+      "name": "exodus-biblical",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Moses and the Exodus are universally known and the Bible/Egypt framing puts it unambiguously in deep antiquity."
+    },
+    {
+      "name": "persian-wars-begin",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Greek city-states vs Persia is school-taught ancient history; the anchor is strong but the war itself is enthusiast-level."
+    },
+    {
+      "name": "death-xerxes-i",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The assassination is specialist knowledge, but Thermopylae and the invasion of Greece pin the era firmly."
+    },
+    {
+      "name": "death-pericles",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pericles is enthusiast-level, but Athens, the Golden Age and the Peloponnesian War anchor it squarely to classical Greece."
+    },
+    {
+      "name": "socrates-execution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Socrates and the hemlock are common knowledge, and Athens plus philosopher anchors classical Greece."
+    },
+    {
+      "name": "death-qin-shi-huang",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The terracotta army is widely recognised and 'China's first emperor' is an explicit ancient anchor, but the death itself is enthusiast knowledge."
+    },
+    {
+      "name": "julius-caesar",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most famous events in history with an unambiguous Roman anchor."
+    },
+    {
+      "name": "death-cleopatra",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cleopatra is universally known and 'last pharaoh of Ptolemaic Egypt' anchors the end of antiquity."
+    },
+    {
+      "name": "yellow-turban-rebellion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A peasant uprising few outside China know; 'Han Dynasty' names an era most players cannot date confidently."
+    },
+    {
+      "name": "death-of-muhammad",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Muhammad's death and the succession dispute are globally taught and anchor the birth of Islam."
+    },
+    {
+      "name": "caliph-ali-assassination",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ali is specialist knowledge for most, but the Sunni-Shia split places it at the very start of Islamic history."
+    },
+    {
+      "name": "death-el-cid",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "El Cid is a name many have heard without knowing him; 'Spanish knight' and 'epic poetry' only say medieval."
+    },
+    {
+      "name": "matilda-england",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Empress Matilda and the Anarchy are expert territory, and 'civil war for the English throne' could be almost any medieval century."
+    },
+    {
+      "name": "childrens-crusade",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is modest, but 'Crusade' and 'Holy Land' are a strong medieval anchor."
+    },
+    {
+      "name": "death-william-wallace",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Braveheart made Wallace famous and the Wars of Independence against England anchor medieval Britain."
+    },
+    {
+      "name": "philip-vi-france",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows Philip VI, but the description names the Hundred Years' War outright."
+    },
+    {
+      "name": "jewish-scapegoating-plague",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The pogroms themselves are little known, but 'Black Death' is one of the strongest possible medieval anchors."
+    },
+    {
+      "name": "jacquerie-peasant-revolt",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Jacquerie is specialist knowledge and 'Hundred Years' War' is an era name most players cannot place within a century."
+    },
+    {
+      "name": "peasants-revolt-1381",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly to British school audiences; poll taxes and serfdom only signal 'medieval England'."
+    },
+    {
+      "name": "jan-hus-burned",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hus is little known outside Central Europe; 'inspiring later Protestants' only says sometime before the Reformation."
+    },
+    {
+      "name": "joan-of-arc",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Joan of Arc is universally famous and the French/English war plus her burning anchor late medieval France."
+    },
+    {
+      "name": "hundred-years-war-end",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A named war most people have heard of, with a France-expels-England description that signals medieval but not much more."
+    },
+    {
+      "name": "shimazu-sengoku",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sengoku Japan is enthusiast knowledge and 'feudal warlords' spans centuries."
+    },
+    {
+      "name": "protestant-reformation",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Luther and the 95 Theses are school-taught and anchor the Reformation."
+    },
+    {
+      "name": "death-leonardo-da-vinci",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leonardo is universally known and the description says 'Renaissance' explicitly."
+    },
+    {
+      "name": "fall-inca-empire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Pizarro and Atahualpa are enthusiast-level names, but Spanish conquest of the Americas is a firm colonial anchor."
+    },
+    {
+      "name": "death-thomas-more",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "More is moderately known, and Henry VIII's break with Rome is an unusually precise anchor."
+    },
+    {
+      "name": "mapuche-arauco-war",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Arauco War is unknown to a general audience and 'Spanish colonizers in Chile' spans three centuries."
+    },
+    {
+      "name": "servetus-burned-at-stake",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Servetus is expert-level, but 'Calvin's Geneva' anchors the Reformation tightly."
+    },
+    {
+      "name": "death-suleiman",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Suleiman is a name enthusiasts know; 'Ottoman sultan at the empire's peak' does not tell a general player which century."
+    },
+    {
+      "name": "dutch-revolt",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Eighty Years' War is little known outside the Netherlands; 'independence from Spain' only signals the early modern colonial era."
+    },
+    {
+      "name": "heresy-trials-witch-hunts",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Witch hunts are broadly familiar but the card gives only a vague 'peak persecution era'."
+    },
+    {
+      "name": "imjin-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hideyoshi's Korean invasions are enthusiast knowledge and the card offers only 'feudal Japan'."
+    },
+    {
+      "name": "araucanians",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Curalaba and the Mapuche are expert territory; 'conquistadors' is the only, loose, anchor."
+    },
+    {
+      "name": "death-elizabeth-i",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Elizabeth I is universally known and the Armada plus 'ending the Tudor dynasty' anchor it precisely."
+    },
+    {
+      "name": "pendle-witch-trials",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A regionally famous case unknown to most players, with only 'English witchcraft trial' as a clue spanning two centuries."
+    },
+    {
+      "name": "death-shakespeare",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Shakespeare is universally known and his lifetime is one of the best-known windows in English history."
+    },
+    {
+      "name": "thirty-years-war-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Enthusiast-level recognition; religious conflict in Europe places it post-Reformation but no more precisely."
+    },
+    {
+      "name": "vasa-sinking",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A museum-famous ship most players have never heard of, and 'warship maiden voyage' gives no era beyond the age of sail."
+    },
+    {
+      "name": "shimabara-rebellion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-level Japanese history; 'Christian peasants' and 'isolation policy' only help players who already know the Edo timeline."
+    },
+    {
+      "name": "irish-rebellion-of-1641",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside Ireland; Cromwell is the only anchor and is itself a specialist date."
+    },
+    {
+      "name": "fronde-rebellions",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Fronde is obscure, but 'the young Louis XIV's minority' is an unusually precise anchor."
+    },
+    {
+      "name": "trial-of-charles-i",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Regional recognition at best, and the description names neither the era, the country's period, nor any datable figure beyond the king."
+    },
+    {
+      "name": "franco-dutch-war-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "An obscure war, but Louis XIV is named outright and pins the late 17th century."
+    },
+    {
+      "name": "glorious-revolution",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly to British audiences; William of Orange and James II require prior knowledge to date."
+    },
+    {
+      "name": "great-northern-war",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown to a general audience and 'Sweden loses great-power status' gives no era clue at all."
+    },
+    {
+      "name": "death-louis-xiv",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Louis XIV and Versailles are broadly familiar and 'the Sun King' with a 72-year reign is a strong anchor."
+    },
+    {
+      "name": "maroon-wars-jamaica",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-level colonial history; British Jamaica spans centuries of slavery-era conflict."
+    },
+    {
+      "name": "frederick-great-militarism",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Frederick the Great is enthusiast knowledge and 'Prussia' only narrows to the 18th-19th centuries."
+    },
+    {
+      "name": "jacobite-rising",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bonnie Prince Charlie is regionally known; 'the Stuarts' spans the 17th and 18th centuries."
+    },
+    {
+      "name": "black-hole-of-calcutta",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A phrase more familiar than the event; 'British conquest of Bengal' anchors only loosely to the colonial era."
+    },
+    {
+      "name": "tacky-rebellion-jamaica",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown outside specialist study, with the Atlantic slavery era as the only clue."
+    },
+    {
+      "name": "marie-antoinette-wedding",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The wedding itself is trivia, but Marie Antoinette and Louis XVI place it immediately before the French Revolution."
+    },
+    {
+      "name": "boston-tea-party",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and anchored to the American Revolution."
+    },
+    {
+      "name": "france-enters-american-revolution",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A textbook detail rather than a household event, but the American Revolution is named outright."
+    },
+    {
+      "name": "continental-dollar-collapse",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows the Continental's collapse, though the American Revolution is named as the anchor."
+    },
+    {
+      "name": "shays-rebellion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-curriculum knowledge at best, and the Articles of Confederation are a specialist anchor."
+    },
+    {
+      "name": "bounty-mutiny",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The mutiny is famous from film, but breadfruit and a sailing voyage give no era clue whatsoever."
+    },
+    {
+      "name": "french-revolution-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The storming of the Bastille is one of the most universally taught dates in history."
+    },
+    {
+      "name": "womens-march-versailles",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The march is specialist knowledge even though Versailles and the royal family point at the Revolution."
+    },
+    {
+      "name": "mozart-dies",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Mozart is universally known, but the card supplies no anchor beyond his name and Vienna."
+    },
+    {
+      "name": "storming-tuileries",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Overshadowed entirely by the Bastille; the revolutionary framing is the only thing carrying it."
+    },
+    {
+      "name": "execution-of-louis-xvi",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The guillotining of the French king is a school-taught centrepiece of the Revolution."
+    },
+    {
+      "name": "reign-of-terror-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly familiar as a phrase and explicitly tied to the Revolution."
+    },
+    {
+      "name": "death-antoine-lavoisier",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lavoisier is known mainly to chemistry students, though the Reign of Terror is named outright."
+    },
+    {
+      "name": "thermidorian-reaction",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The term is obscure even where Robespierre is not; the Revolution anchor keeps it out of very-hard."
+    },
+    {
+      "name": "irish-rebellion-of-1798",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The United Irishmen are specialist knowledge; 'inspired by the French Revolution' is the saving anchor."
+    },
+    {
+      "name": "napoleonic-wars-begin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Napoleon is universally known and named in the description."
+    },
+    {
+      "name": "haitian-independence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The first nation born of a slave revolt is reasonably well known, and the slavery/colonial framing narrows it to the long 18th-19th century."
+    },
+    {
+      "name": "peninsular-war",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The war itself is enthusiast knowledge, but Napoleon invading Spain is an unmistakable anchor."
+    },
+    {
+      "name": "war-of-1812-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "US-regional recognition, with the Star-Spangled Banner and burning of Washington as moderate anchors."
+    },
+    {
+      "name": "napoleon-escapes-elba",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Elba and the Hundred Days are part of the popular Napoleon story that most people can place."
+    },
+    {
+      "name": "mfecane-populations-displaced",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Mfecane is unknown to a general audience and 'Zulu expansion' gives almost no temporal purchase."
+    },
+    {
+      "name": "greek-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognised mainly in Greece and by enthusiasts; 'Ottoman rule' spans six centuries."
+    },
+    {
+      "name": "nat-turners-rebellion",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar from US curricula, and Virginia slavery places it in the antebellum period."
+    },
+    {
+      "name": "first-opium-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably well known, and Britain forcing opium on China signals the colonial 19th century."
+    },
+    {
+      "name": "irish-famine-emigration",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Great Famine is regionally well known and the transformation of American cities places it in the 19th century."
+    },
+    {
+      "name": "california-gold-rush",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and Sutter's Mill plus the American West anchor it firmly."
+    },
+    {
+      "name": "spring-of-nations",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The name is opaque to most; 'liberal reforms and national unity' only signals the 19th century."
+    },
+    {
+      "name": "crimean-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A named war with moderate recognition; Britain, France, Ottomans and Russia give a broad 19th-century frame."
+    },
+    {
+      "name": "sepoy-mutiny",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in Britain and India; the East India Company anchors the colonial 18th-19th century."
+    },
+    {
+      "name": "john-browns-raid",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Strong US recognition and abolitionism plus a hoped-for slave rebellion put it right before the Civil War."
+    },
+    {
+      "name": "civil-war-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Fort Sumter and the American Civil War are universally taught."
+    },
+    {
+      "name": "us-civil-war-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Fort Sumter and the American Civil War are universally taught."
+    },
+    {
+      "name": "lincoln-assassination",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the best-known assassinations in history, anchored by Lincoln himself."
+    },
+    {
+      "name": "impeachment-andrew-johnson",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognised mainly by US-history readers, and Andrew Johnson is not a name a general player can date."
+    },
+    {
+      "name": "paris-commune",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Enthusiast knowledge; 'radical socialists governed Paris' spans the whole 19th-20th century left."
+    },
+    {
+      "name": "assassination-of-alexander-ii",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist knowledge, and 'Tsar who freed the serfs' requires the very date the player is asked for."
+    },
+    {
+      "name": "british-occupation-egypt",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known to general players; the Suez Canal anchors only to the broad colonial era."
+    },
+    {
+      "name": "jack-the-ripper-murders",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the most famous criminal cases in history, and Whitechapel London reads instantly as Victorian."
+    },
+    {
+      "name": "death-sitting-bull",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Sitting Bull is a familiar name and the Sioux wars against US expansion place it in the late-19th-century West."
+    },
+    {
+      "name": "dreyfus-affair",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mostly in France and to history readers; the description gives no era marker beyond the French army."
+    },
+    {
+      "name": "boer-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Regional recognition, with 'British colonial South Africa' as a loose anchor."
+    },
+    {
+      "name": "philippine-american-war",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Barely known outside the Philippines and US specialists; the Spanish handover helps only those who already date it."
+    },
+    {
+      "name": "assassination-of-mckinley",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "McKinley is the least remembered of the assassinated presidents; Roosevelt's succession is a modest anchor."
+    },
+    {
+      "name": "end-of-philippine-american-war",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "An obscure war's obscure endpoint, with no anchor beyond the war's own name."
+    },
+    {
+      "name": "herero-genocide",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known to a general audience; German South-West Africa narrows only to the 1884-1915 colonial window."
+    },
+    {
+      "name": "potemkin-mutiny",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition rests on the film more than the event, and 'the Russian Revolution' plus a silent-film reference is ambiguous between 1905 and the 1920s."
+    },
+    {
+      "name": "mexican-revolution",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly familiar, with the Diaz dictatorship placing it around the turn of the 20th century."
+    },
+    {
+      "name": "chinese-revolution",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably well known, and the Qing collapse into the Republic of China anchors the early 20th century."
+    },
+    {
+      "name": "rite-of-spring",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The riot is a music-history anecdote; Stravinsky and Paris modernism only vaguely signal the early 20th century."
+    },
+    {
+      "name": "archduke-franz-ferdinand-assassinated",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The trigger of World War I, named as such in the description."
+    },
+    {
+      "name": "wwi-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Among the most universally taught dates in modern history."
+    },
+    {
+      "name": "lusitania-sinking",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderately well known, and a German U-boat killing Americans places it squarely in WWI."
+    },
+    {
+      "name": "easter-rising",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Strong recognition only in Ireland and Britain; Dublin republicans give little era signal to others."
+    },
+    {
+      "name": "bolshevik-revolution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lenin, the October Revolution and the first communist state are school-taught worldwide."
+    },
+    {
+      "name": "october-revolution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same universally taught event as the Bolshevik Revolution, with Petrograd and the Soviet state as anchors."
+    },
+    {
+      "name": "german-revolution-1918",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Little known in itself, but the fall of the Kaiser and the birth of Weimar pin it to the end of WWI."
+    },
+    {
+      "name": "jallianwala-bagh-massacre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Widely known in India, much less elsewhere, and the card only signals the British Raj."
+    },
+    {
+      "name": "third-afghan-war",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown to a general audience, with 'British India' as the only, very wide, clue."
+    },
+    {
+      "name": "roaring-twenties-era",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A named decade whose description says 'post-WWI' outright."
+    },
+    {
+      "name": "russian-civil-war-ends",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The war's end is specialist detail, but Bolsheviks versus the White Army places it immediately after 1917."
+    },
+    {
+      "name": "death-lenin",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Lenin is a household name and Stalin's ensuing rise anchors the 1920s."
+    },
+    {
+      "name": "scopes-trial",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A US-specific episode; teaching evolution in Tennessee gives only a loose early-20th-century feel."
+    },
+    {
+      "name": "general-strike-in-britain",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Almost unknown outside British labour history, and coal-miner wage disputes could be any decade from 1890 to 1970."
+    },
+    {
+      "name": "great-depression-economy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Wall Street crash is universally taught."
+    },
+    {
+      "name": "smoot-hawley-tariff",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Known only to economics readers, though the Great Depression is named as the anchor."
+    },
+    {
+      "name": "first-nazi-concentration-camps",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Dachau is broadly familiar and 'shortly after Hitler took power' is a strong anchor."
+    },
+    {
+      "name": "reichstag-fire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderate recognition, and Hitler consolidating power pins the Nazi seizure of power."
+    },
+    {
+      "name": "alcatraz-federal-prison",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Alcatraz is famous, but the description contains no temporal information at all."
+    },
+    {
+      "name": "night-of-long-knives",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The purge is enthusiast knowledge, but Hitler and the SA anchor the early Nazi years."
+    },
+    {
+      "name": "lindbergh-kidnapping-trial",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Once a sensation, now barely known; 'the aviator' is the only clue and requires knowing Lindbergh's dates."
+    },
+    {
+      "name": "jesse-owens-four-golds",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A famous Olympic story anchored explicitly to the Berlin Games and Nazi Germany."
+    },
+    {
+      "name": "spanish-civil-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known by name; Franco and the Republic place it in the 20th century without narrowing much further."
+    },
+    {
+      "name": "rape-of-nanking",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known, with Japanese forces in China signalling the WWII era."
+    },
+    {
+      "name": "kristallnacht",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely taught in Holocaust education and anchored firmly to Nazi Germany."
+    },
+    {
+      "name": "wwii-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The invasion of Poland is among the most universally taught dates in history."
+    },
+    {
+      "name": "katyn-massacre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly in Poland and to WWII readers; the card names no war and relies on Soviet secret police as its only clue."
+    },
+    {
+      "name": "final-solution-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Holocaust is universally taught, and the death-camp framing anchors it to WWII."
+    },
+    {
+      "name": "siege-leningrad",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A well-known siege explicitly attributed to Nazi Germany."
+    },
+    {
+      "name": "wannsee-conference",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The conference itself is specialist knowledge, saved from very-hard by the explicit Nazi-genocide anchor."
+    },
+    {
+      "name": "atomic-bomb-nagasaki-ww2",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught, and explicitly placed three days after Hiroshima."
+    },
+    {
+      "name": "death-fdr",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "FDR is a household name and 'weeks before Germany's surrender' is an unusually precise anchor."
+    },
+    {
+      "name": "dresden-bombing",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Moderately well known and explicitly framed as an Allied WWII attack."
+    },
+    {
+      "name": "hiroshima-bombing",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The first atomic bombing is universally taught."
+    },
+    {
+      "name": "nagasaki-bombing",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught, and explicitly tied to Hiroshima three days earlier."
+    },
+    {
+      "name": "post-war-german-expulsions",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost unknown to a general audience, though 'close of the Second World War' is stated outright."
+    },
+    {
+      "name": "french-indochina-war-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Little known in itself, but Ho Chi Minh, French colonial rule and Dien Bien Phu anchor the post-war decade."
+    },
+    {
+      "name": "tokyo-war-crimes-trials",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Far less known than Nuremberg, which is the only anchor and itself needs prior knowledge to date."
+    },
+    {
+      "name": "partition-of-india-migration",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Partition is globally taught and the India-Pakistan border names the moment."
+    },
+    {
+      "name": "berlin-airlift",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known as an early Cold War episode, anchored by the Soviet blockade of West Berlin."
+    },
+    {
+      "name": "gandhi-assassination",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Gandhi is a globally recognised figure and his assassination is part of the standard independence story."
+    },
+    {
+      "name": "chinese-communist-victory",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mao founding the People's Republic is taught worldwide."
+    },
+    {
+      "name": "korean-war-start",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A well-known war, but 'a major Cold War conflict' spans four decades."
+    },
+    {
+      "name": "tibet-invasion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition is low for a general audience; 'the People's Republic of China' places it after 1949 but no more tightly."
+    },
+    {
+      "name": "egyptian-revolution-1952",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The 'Free Officers' Revolution' name is opaque, and Nasser and King Farouk are specialist anchors."
+    },
+    {
+      "name": "east-german-uprising",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside Germany, with 'communist East Germany' covering 1949-1990."
+    },
+    {
+      "name": "algerian-war-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Enthusiast knowledge; the FLN and French rule signal decolonisation but not a decade."
+    },
+    {
+      "name": "mccarthy-hearings",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Strong US recognition, and televised anti-communist hearings signal the early Cold War."
+    },
+    {
+      "name": "de-stalinization-speech",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The secret speech is specialist knowledge; dating it requires knowing when Stalin died."
+    },
+    {
+      "name": "hungarian-uprising-1956",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in Europe, with Soviet tanks placing it in the Cold War."
+    },
+    {
+      "name": "great-leap-forward",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly known and anchored explicitly to Mao's China."
+    },
+    {
+      "name": "cuban-revolution-victory",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Castro is a household name and overthrowing Batista is the standard Cuban story."
+    },
+    {
+      "name": "great-leap-forward-famine",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Explicitly tied to Mao's Great Leap Forward, which most players can place within a decade or two."
+    },
+    {
+      "name": "cuban-exile-to-miami",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A diffuse migration few players know as an event, though 'after Castro's revolution' anchors it."
+    },
+    {
+      "name": "u2-incident",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Gary Powers is a Cold War specialist's name and 'Cold War tensions' spans four decades."
+    },
+    {
+      "name": "eichmann-trial",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition is modest, and 'Israel tried a Nazi' only says sometime after 1948."
+    },
+    {
+      "name": "lumumba-assassination",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside African history; Congolese independence and the CIA are loose decolonisation clues."
+    },
+    {
+      "name": "cuban-missile-crisis-standoff",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the best-known Cold War moments, taught worldwide."
+    },
+    {
+      "name": "jfk-assassination",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, with Dallas and Kennedy as unmistakable anchors."
+    },
+    {
+      "name": "south-vietnam-coup",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Diem coup is specialist knowledge even though the Vietnam War is named."
+    },
+    {
+      "name": "khrushchev-ousted",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Soviet leadership churn is expert territory, and Khrushchev-to-Brezhnev needs the very knowledge being tested."
+    },
+    {
+      "name": "vietnam-war-escalates-1964",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Gulf of Tonkin and US escalation are standard Vietnam War teaching."
+    },
+    {
+      "name": "dylan-goes-electric",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A music-history moment rather than a general one; Dylan and folk festivals only suggest the 1960s."
+    },
+    {
+      "name": "selma-to-montgomery-march",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Strong US recognition and the Voting Rights Act is a precise anchor."
+    },
+    {
+      "name": "che-guevara-killed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Che is globally iconic; Bolivia and the CIA place it in the Cold War without narrowing further."
+    },
+    {
+      "name": "johnny-cash-folsom-prison",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A music milestone with no temporal anchor at all - Cash's career spans nearly fifty years."
+    },
+    {
+      "name": "paris-may-events",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Better known in France than elsewhere; student protests and general strikes are a broad post-war signal."
+    },
+    {
+      "name": "prague-spring-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A familiar name, with Czechoslovak reform under Soviet shadow placing it in the Cold War."
+    },
+    {
+      "name": "tet-offensive",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known in the US and explicitly tied to the Vietnam War."
+    },
+    {
+      "name": "uss-pueblo-seized",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Almost unknown today, and 'North Korean Navy' covers everything after 1948."
+    },
+    {
+      "name": "jan-palach-death",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Palach is known mainly in Czechia, but 'protesting the Soviet invasion' anchors 1968 for many players."
+    },
+    {
+      "name": "biafra-capitulates",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Once headline news, now largely forgotten, with post-colonial Nigeria as the only clue."
+    },
+    {
+      "name": "kent-state-shootings",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Strong US recognition and explicitly tied to anti-Vietnam War protest."
+    },
+    {
+      "name": "pentagon-papers",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly known and anchored to the Vietnam War."
+    },
+    {
+      "name": "munich-massacre",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A famous Olympic tragedy; Palestinian militancy and the Games place it in the post-war era."
+    },
+    {
+      "name": "chilean-coup",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pinochet and Allende are widely known names from the Cold War in Latin America."
+    },
+    {
+      "name": "yom-kippur-war",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A named Arab-Israeli war with recognition well beyond specialists."
+    },
+    {
+      "name": "ethiopian-revolution",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Haile Selassie is a semi-familiar name, which lifts this above the truly anchorless cards."
+    },
+    {
+      "name": "watergate",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Nixon's resignation is universally taught and anchored by his presidency."
+    },
+    {
+      "name": "cambodian-genocide",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Khmer Rouge is broadly known, placing it in the later Cold War."
+    },
+    {
+      "name": "vietnam-end",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Fall of Saigon is the standard closing image of the Vietnam War."
+    },
+    {
+      "name": "death-mao-zedong",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Mao is a household name, and the end of the Cultural Revolution plus the reform era anchors the mid-1970s."
+    },
+    {
+      "name": "soweto-uprising",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known chiefly in South Africa; apartheid spans nearly half a century."
+    },
+    {
+      "name": "vietnam-invades-cambodia",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist knowledge on its own, but 'ending the Khmer Rouge genocide' fixes it to the late 1970s."
+    },
+    {
+      "name": "iranian-revolution",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known; the fall of the Shah and the theocracy signal the modern Middle East."
+    },
+    {
+      "name": "soviet-afghanistan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly familiar, and the Soviet Union bounds it before 1991."
+    },
+    {
+      "name": "gwangju-uprising",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Central to Korean memory but unknown elsewhere, with military dictatorship as the only clue."
+    },
+    {
+      "name": "john-lennon-killed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the most famous killings of the 20th century, with the Beatles anchoring the era."
+    },
+    {
+      "name": "assassination-attempt-on-reagan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well remembered in the US, and Reagan's two terms bound it tightly."
+    },
+    {
+      "name": "sabra-and-shatila-massacre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist knowledge; Beirut and Israeli forces cover several decades of Lebanese conflict."
+    },
+    {
+      "name": "korean-air-lines-007-shot-down",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Largely forgotten by anyone under middle age, with 'Cold War tensions' as its only anchor."
+    },
+    {
+      "name": "gorbachev-becomes-leader",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Gorbachev is widely known and 'reforms that ended the Cold War' anchors the mid-1980s."
+    },
+    {
+      "name": "us-bombs-libya",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The raid is specialist knowledge even though Reagan and Gaddafi bound the 1980s."
+    },
+    {
+      "name": "iran-iraq-war-ends",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A war better known by name than by date; the card offers no marker beyond the two countries."
+    },
+    {
+      "name": "ayatollah-khomeini-dies",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Khomeini is a widely recognised figure and the Islamic Revolution anchors him after 1979."
+    },
+    {
+      "name": "romanian-revolution",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ceausescu's execution is part of the widely known collapse of European communism."
+    },
+    {
+      "name": "velvet-revolution",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Havel and the end of Czechoslovak communism sit inside the well-known 1989 story."
+    },
+    {
+      "name": "iraq-invades-kuwait",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Saddam's invasion and the Gulf War are widely taught recent history."
+    },
+    {
+      "name": "gulf-war",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Operation Desert Storm is one of the best-known modern conflicts."
+    },
+    {
+      "name": "siege-of-sarajevo-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Bosnian war is broadly familiar and places this in the post-Yugoslav 1990s."
+    },
+    {
+      "name": "mandela-elected-president",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "South Africa's first democratic election is globally taught."
+    },
+    {
+      "name": "million-man-march",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Little known outside the US and the description supplies no era marker, making it easy to confuse with the 1963 March on Washington."
+    },
+    {
+      "name": "srebrenica-massacre",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely reported and anchored to the Bosnian war by 'Europe's worst post-WWII atrocity'."
+    },
+    {
+      "name": "princess-diana-death",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A globally remembered event with a clear modern setting."
+    },
+    {
+      "name": "east-timor-independence-vote",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside the region; Indonesia and UN intervention only suggest the late 20th century."
+    },
+    {
+      "name": "putin-becomes-president",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Putin's rise is common knowledge and the description marks the start of his rule."
+    },
+    {
+      "name": "afghanistan-war-start",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Explicitly tied to the September 11 attacks."
+    },
+    {
+      "name": "guantanamo-bay-opens",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly familiar, and holding terrorism suspects anchors it just after 9/11."
+    },
+    {
+      "name": "darfur-genocide-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known to news readers of the time but faded since; Sudan and the Janjaweed offer only a loose modern frame."
+    },
+    {
+      "name": "saddam-hussein-captured",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely remembered and anchored to the US invasion of Iraq."
+    },
+    {
+      "name": "death-saddam-hussein",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well remembered and explicitly placed after the US-led invasion."
+    },
+    {
+      "name": "burma-saffron-revolution",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition; Myanmar's junta persisted for decades, so the anchor is weak."
+    },
+    {
+      "name": "iran-green-movement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Faded from general memory; 'since the Islamic Revolution' only bounds it after 1979."
+    },
+    {
+      "name": "wikileaks-cables",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "WikiLeaks is broadly familiar and belongs to a narrow, recent window."
+    },
+    {
+      "name": "bin-laden-killed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A globally reported event with a clear post-9/11 anchor."
+    },
+    {
+      "name": "egyptian-revolution-2011",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Tahrir Square and Mubarak's fall are well remembered Arab Spring landmarks."
+    },
+    {
+      "name": "norway-attacks",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition has faded outside Scandinavia; far-right terrorism gives only a broad modern frame."
+    },
+    {
+      "name": "death-nelson-mandela",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mandela's death was a global event, and his presidency anchors it to the modern era."
+    },
+    {
+      "name": "charlie-hebdo-attack",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely reported with a clearly recent setting."
+    },
+    {
+      "name": "panama-papers-leak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly familiar as a modern leak, though nothing pins the year."
+    },
+    {
+      "name": "khashoggi-murder",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Heavily reported, with MBS anchoring the late 2010s."
+    },
+    {
+      "name": "extinction-rebellion-protests",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A movement more familiar in the UK than globally; climate activism spans the whole recent period."
+    },
+    {
+      "name": "george-floyd-protests",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A global event within recent memory."
+    },
+    {
+      "name": "myanmar-coup-2021",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reported worldwide, with Aung San Suu Kyi anchoring the modern era."
+    },
+    {
+      "name": "us-withdrawal-afghanistan",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Recent and explicitly dated by 'after 20 years of war'."
+    },
+    {
+      "name": "russia-ukraine-invasion",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A defining recent event known to everyone who reads the news."
+    }
+  ]
+}
