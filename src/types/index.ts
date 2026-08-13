@@ -47,8 +47,11 @@ export type Difficulty = 'easy' | 'medium' | 'hard' | 'very-hard';
 
 export const ALL_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard', 'very-hard'];
 
-// Default difficulties exclude 'hard' and 'very-hard' (specialized/niche events)
-export const DEFAULT_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard'];
+// All four difficulties are in play. 'very-hard' used to be excluded as a blunt way
+// to stop decks being punishing, but the deck builder now places those events where
+// they belong — ~1% of opening cards and ~22% by the end of the ramp — and including
+// them measurably *increases* the variety a player sees over a year.
+export const DEFAULT_DIFFICULTIES: Difficulty[] = ['easy', 'medium', 'hard', 'very-hard'];
 
 export type Era =
   | 'prehistory'

@@ -1,7 +1,8 @@
 import { GameConfig, HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
 import { getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
-import { filterByDifficulty, filterByCategory, filterByEra } from './eventLoader';
-import { shuffleArraySeeded } from './gameLogic';
+import { buildRampedDeck } from './deckBuilder';
+import { buildDailyPool } from './dailyPool';
+import { getRecentDailyCardNames } from './dailyRecency';
 import { getLocalDateString } from './puzzleDate';
 
 /**
@@ -27,7 +28,7 @@ export function buildDailyConfig(): GameConfig {
 
 /**
  * Today's daily deck, in dealing order. Mirrors the seeding pipeline gameplay uses
- * (`useWhenGame`: same filters, same seeded shuffle), so index 0 is the starting timeline
+ * (`useWhenGame`: same filters, same composed deck), so index 0 is the starting timeline
  * card and the cards after it are what the hand is dealt from.
  *
  * `dateString` (local YYYY-MM-DD) defaults to today; callers can pass an explicit date so
@@ -37,18 +38,10 @@ export function buildDailyDeck(
   allEvents: HistoricalEvent[],
   dateString: string = getLocalDateString()
 ): HistoricalEvent[] {
-  const dailySeed = dateString;
-  const dailyTheme = getDailyTheme(dailySeed);
-
-  const filtered = filterByEra(
-    filterByCategory(
-      filterByDifficulty(allEvents, [...DEFAULT_DIFFICULTIES]),
-      getThemedCategories(dailyTheme)
-    ),
-    getThemedEras(dailyTheme)
-  );
-
-  return shuffleArraySeeded(filtered, dailySeed);
+  return buildRampedDeck(buildDailyPool(allEvents, dateString), dateString, {
+    allEvents,
+    exclude: getRecentDailyCardNames(allEvents, dateString),
+  });
 }
 
 /**
