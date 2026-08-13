@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.0](https://github.com/Edward-Muir/when/compare/v1.6.4...v1.7.0) (2026-08-13)
+
+
+### Features
+
+* compose decks with a difficulty ramp instead of a plain shuffle ([#32](https://github.com/Edward-Muir/when/issues/32)) ([6dc07b0](https://github.com/Edward-Muir/when/commit/6dc07b072119b847b872d95483ca716b69a47995))
+
 ## [1.6.4](https://github.com/Edward-Muir/when/compare/v1.6.3...v1.6.4) (2026-08-12)
 
 
