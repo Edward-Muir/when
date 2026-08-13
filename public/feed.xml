@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 17:26:53 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 20:38:25 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.7.2</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.7.2</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>correct six player-reported event cards (<a href="https://github.com/Edward-Muir/when/issues/34">#34</a>) (<a href="https://github.com/Edward-Muir/when/commit/ef4c37a53ce98dfb297f47babf31210a7146966d">ef4c37a</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.7.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.4.0</guid>
       <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add push notifactions to ios app (<a href="https://github.com/Edward-Muir/when/commit/bc9422d77c0eaf3984db51012d12916345b3ada3">bc9422d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.3.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.3.0</guid>
-      <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add tombstone cards to timeline (<a href="https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f">57366d9</a>)</li> <li>Polish failure mode (<a href="https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71">cb909f0</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
