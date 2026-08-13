@@ -1,0 +1,1021 @@
+{
+  "batch": "figures_part1",
+  "category": "figures",
+  "graded": [
+    {
+      "name": "birth-hatshepsut",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition; 'Egypt's pharaohs' anchors a civilisation spanning three millennia, not an era."
+    },
+    {
+      "name": "birth-nefertiti",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The bust is iconic but the name carries little recognition, and ancient Egypt is far too broad an anchor to place a birth."
+    },
+    {
+      "name": "birth-homer",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught; Iliad/Odyssey anchor firmly to archaic Greece."
+    },
+    {
+      "name": "birth-solon",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'Athenian lawmaker' plus the foundations of democracy anchor squarely to ancient Athens."
+    },
+    {
+      "name": "birth-cyrus-the-great",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Achaemenid/Persian Empire is a strong ancient anchor, but Cyrus himself is enthusiast knowledge, not general."
+    },
+    {
+      "name": "birth-buddha",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universal recognition and 'founder of a world religion' reads as deep antiquity to any player."
+    },
+    {
+      "name": "birth-darius-the-great",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Persepolis and the Achaemenid Empire anchor the ancient Persian era; the name is only moderately known."
+    },
+    {
+      "name": "birth-aeschylus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure name, but 'Greek playwright, father of tragedy' points unmistakably at classical Athens."
+    },
+    {
+      "name": "birth-herodotus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition, but the Greco-Persian Wars are an explicit ancient-Greek anchor."
+    },
+    {
+      "name": "birth-socrates",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household-name philosopher and 'Athenian' anchors the era directly."
+    },
+    {
+      "name": "birth-aristophanes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Athens and Old Comedy anchor the era well, but recognition of the name is close to nil outside classics readers."
+    },
+    {
+      "name": "birth-diogenes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The barrel story gives the name some purchase, and 'Greek founder of Cynic philosophy' anchors classical Greece."
+    },
+    {
+      "name": "birth-mencius",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost no Western recognition, but 'second most important Confucian philosopher' places him just after Confucius in ancient China."
+    },
+    {
+      "name": "birth-epicurus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Epicurean' is a familiar word and 'Greek philosopher' anchors the classical era."
+    },
+    {
+      "name": "birth-ashoka",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside India; 'Mauryan' is specialist and 'spread Buddhism' only loosely dates the card."
+    },
+    {
+      "name": "birth-hannibal",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Elephants over the Alps is school-level knowledge and the Punic Wars anchor to Rome."
+    },
+    {
+      "name": "birth-ovid",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'Roman poet' is exactly the kind of strong empire anchor the rubric rewards."
+    },
+    {
+      "name": "jesus-birth",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Maximal recognition and the card defines the era boundary itself."
+    },
+    {
+      "name": "birth-trajan",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name is enthusiast-level, but 'Roman emperor at the empire's greatest extent' anchors the imperial era."
+    },
+    {
+      "name": "birth-ptolemy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition and 'Greek astronomer' with a geocentric model reads ancient but gives no usable era within it."
+    },
+    {
+      "name": "birth-constantine",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is moderate at best, but legalising Christianity and founding Constantinople anchor the late Roman era firmly."
+    },
+    {
+      "name": "birth-justinian",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name is not general knowledge, but 'Byzantine emperor' and the Roman law code are a strong era anchor."
+    },
+    {
+      "name": "birth-william-conqueror",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Hastings and the Norman conquest are school-level and unmistakably medieval."
+    },
+    {
+      "name": "birth-richard-lionheart",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely recognised name, and the Third Crusade against Saladin anchors the high medieval period explicitly."
+    },
+    {
+      "name": "birth-kublai-khan",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mongol Yuan China and Marco Polo anchor the era well, but placing Kublai Khan is enthusiast rather than general knowledge."
+    },
+    {
+      "name": "birth-marco-polo",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name, and 'Venetian merchant at Kublai Khan's court' anchors the medieval era."
+    },
+    {
+      "name": "birth-robert-bruce",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bannockburn and Scottish independence give no era word, and recognition drops off sharply outside Britain."
+    },
+    {
+      "name": "birth-boccaccio",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure name, but 'tales told during the plague' is a strong Black Death anchor contemporaneous with his life."
+    },
+    {
+      "name": "birth-chaucer",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Known through The Canterbury Tales, but the card never states an era and 'father of English literature' is elastic."
+    },
+    {
+      "name": "birth-gutenberg",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The printing press is a canonical technology marker with high recognition."
+    },
+    {
+      "name": "birth-columbus",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Maximal recognition; the Atlantic voyage to the Americas is a fixed anchor."
+    },
+    {
+      "name": "birth-vasco-da-gama",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The sea route to India anchors the Age of Exploration, but the name is markedly less known than Columbus or Magellan."
+    },
+    {
+      "name": "birth-machiavelli",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Prince is widely known by name, but the card gives no era word at all - 'modern political philosophy' could read as any century after 1500."
+    },
+    {
+      "name": "birth-michelangelo",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name with 'Renaissance' stated outright."
+    },
+    {
+      "name": "birth-magellan",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "First circumnavigation is school-level and anchors the Age of Exploration."
+    },
+    {
+      "name": "birth-raphael",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'High Renaissance' is an explicit era anchor, but recognition of Raphael as a person is well below Michelangelo's."
+    },
+    {
+      "name": "birth-titian",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the card names no era whatsoever - 'Venetian master painter' fits anything from 1450 to 1750."
+    },
+    {
+      "name": "birth-ivan-terrible",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The nickname is familiar, but 'first crowned Tsar of Russia' only helps a player who already knows when the Tsardom began."
+    },
+    {
+      "name": "birth-tycho-brahe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name is specialist, but 'underpinned Kepler's laws' anchors him to the Scientific Revolution."
+    },
+    {
+      "name": "birth-francis-bacon",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition and 'championed the scientific method' names no era, leaving a two-century window."
+    },
+    {
+      "name": "shakespeare-born",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Maximal recognition; the name is itself the era anchor."
+    },
+    {
+      "name": "birth-rubens",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Baroque' is an era word but a specialist one, and Rubens carries little general recognition."
+    },
+    {
+      "name": "birth-descartes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'I think therefore I am' is familiar, but the card offers no era term - only a philosophical claim that could sit anywhere in early modernity."
+    },
+    {
+      "name": "birth-rembrandt",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Recognised name, but 'Dutch Golden Age' is a period label most players cannot date."
+    },
+    {
+      "name": "birth-john-locke",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderately known, and the Enlightenment anchor points to the eighteenth century while the card is a seventeenth-century birth."
+    },
+    {
+      "name": "birth-antonio-vivaldi",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Four Seasons is ubiquitous but the composer is less placeable, and 'Baroque' is a term most players cannot date."
+    },
+    {
+      "name": "birth-voltaire",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known, and 'French Enlightenment writer' is an explicit era label that matches the card's century."
+    },
+    {
+      "name": "birth-linnaeus",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition and the card gives no era - biological classification could read as anywhere from 1600 to 1900."
+    },
+    {
+      "name": "birth-rousseau",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Moderate recognition; 'influenced the French Revolution' anchors his legacy rather than his lifetime."
+    },
+    {
+      "name": "birth-immanuel-kant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The name is known but the card carries no temporal anchor at all - the Critique places him only for readers who already know the date."
+    },
+    {
+      "name": "birth-george-washington",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal recognition with the Continental Army and first presidency as hard anchors."
+    },
+    {
+      "name": "birth-john-adams",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Founding Father anchor is strong, but recognition falls off sharply outside the United States."
+    },
+    {
+      "name": "birth-james-watt",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The steam engine and an explicit Industrial Revolution reference anchor the era precisely."
+    },
+    {
+      "name": "birth-mozart",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name with the Classical era stated outright."
+    },
+    {
+      "name": "birth-mary-wollstonecraft",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition and 'foundations for modern feminism' spreads across two centuries without an era word."
+    },
+    {
+      "name": "birth-eli-whitney",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-curriculum recognition only, and the cotton gin is a single dated invention roughly thirty years after the birth on the card."
+    },
+    {
+      "name": "birth-georges-cuvier",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Effectively unknown to a general audience; founding paleontology hints at the nineteenth century but nothing on the card confirms it."
+    },
+    {
+      "name": "birth-beethoven",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal recognition and the Classical-to-Romantic transition anchors the era."
+    },
+    {
+      "name": "birth-william-wordsworth",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition, but 'English Romantic poet' is an explicit movement label covering his lifetime."
+    },
+    {
+      "name": "birth-simon-bolivar",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known, but 'freed South America from Spanish rule' covers a colonial span of three centuries without naming one."
+    },
+    {
+      "name": "birth-schopenhauer",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the card contains no temporal anchor of any kind - just a title and a temperament."
+    },
+    {
+      "name": "birth-michael-faraday",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name is specialist, but electromagnetic induction and the foundations of electric power anchor the nineteenth century."
+    },
+    {
+      "name": "birth-franz-schubert",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and no era anchor - 'Austrian composer of songs and symphonies' fits any point between 1700 and 1900."
+    },
+    {
+      "name": "birth-sojourner-truth",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition outside the US, but 'American abolitionist' anchors squarely to the pre-emancipation era of her lifetime."
+    },
+    {
+      "name": "birth-victor-hugo",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Les Miserables carries the name, and 'Romantic literature' is an explicit era label."
+    },
+    {
+      "name": "birth-andersen",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The tales are universally known but the card gives no temporal anchor at all - fairy tales read as timeless."
+    },
+    {
+      "name": "birth-edgar-allan-poe",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognised name, but nothing on the card dates him; 'pioneered the detective story' only helps a player who already knows when that was."
+    },
+    {
+      "name": "birth-charles-dickens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name with 'Victorian' stated outright."
+    },
+    {
+      "name": "birth-henry-david-thoreau",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition and the card names no era - Walden and Civil Disobedience are dateless to most players."
+    },
+    {
+      "name": "birth-frederick-douglass",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known, and 'escaped slavery' anchors the birth itself to the pre-emancipation era."
+    },
+    {
+      "name": "birth-walt-whitman",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The name is familiar but the card offers no era anchor whatsoever - only a poet and a book title."
+    },
+    {
+      "name": "birth-susan-b-anthony",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Recognised in the US, but the suffrage campaign anchor spans 1850-1920 and sits decades after this birth."
+    },
+    {
+      "name": "birth-gustave-flaubert",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition and 'literary realism' is a term only readers of literary history can date."
+    },
+    {
+      "name": "birth-harriet-tubman",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known, and slavery plus the Underground Railroad anchor the mid-nineteenth-century US precisely."
+    },
+    {
+      "name": "birth-jules-verne",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Known as a name, but 'imagined submarines and spaceflight' is only an anchor for a player who already knows when those arrived."
+    },
+    {
+      "name": "birth-emily-dickinson",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moderately recognised, but the card gives no era anchor at all - a reclusive poet with no dated reference."
+    },
+    {
+      "name": "birth-alfred-nobel",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The prizes carry the name, but they began decades after this birth and dynamite alone dates the card only loosely."
+    },
+    {
+      "name": "birth-edgar-degas",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition of the name, but 'French Impressionist' is an explicit movement anchor."
+    },
+    {
+      "name": "birth-mark-twain",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition; Tom Sawyer and Huckleberry Finn sit firmly in nineteenth-century America in popular imagination."
+    },
+    {
+      "name": "birth-paul-cezanne",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist recognition, but bridging Impressionism and Cubism pins the turn of the twentieth century."
+    },
+    {
+      "name": "birth-claude-monet",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known, and the card says Impressionism was named after his painting - an explicit movement anchor."
+    },
+    {
+      "name": "birth-thomas-hardy",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the card names no era; 'rural Wessex' is a place, not a date."
+    },
+    {
+      "name": "birth-renoir",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition of the name, but 'French Impressionist' anchors the late nineteenth century."
+    },
+    {
+      "name": "birth-wilhelm-roentgen",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition, and the X-ray discovery is a single dated event roughly fifty years after this birth."
+    },
+    {
+      "name": "birth-thomas-edison",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name; the phonograph and electric light are canonical technology markers."
+    },
+    {
+      "name": "birth-vincent-van-gogh",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Maximal recognition with an explicit Post-Impressionist anchor."
+    },
+    {
+      "name": "birth-booker-t-washington",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is US-specific and modest, but 'born into slavery' anchors the birth itself to before 1865."
+    },
+    {
+      "name": "birth-sigmund-freud",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Household name; psychoanalysis places him around the turn of the twentieth century for most players."
+    },
+    {
+      "name": "birth-max-planck",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition, and originating quantum theory is a single dated achievement decades after this birth."
+    },
+    {
+      "name": "birth-arthur-conan-doyle",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Sherlock Holmes carries the name and reads Victorian to most players, though the card never says so."
+    },
+    {
+      "name": "birth-anton-chekhov",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and two play titles that carry no era information at all."
+    },
+    {
+      "name": "birth-rabindranath-tagore",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low Western recognition; the Nobel reference dates an award given half a century after this birth."
+    },
+    {
+      "name": "birth-edvard-munch",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Scream is famous but the painter's name is not, and Expressionism is a specialist label sitting decades after the birth."
+    },
+    {
+      "name": "birth-richard-strauss",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and no era anchor - tone poems and opera titles date nothing for a general player."
+    },
+    {
+      "name": "birth-wb-yeats",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Literary modernism and the Nobel do anchor the early twentieth century, but recognition of the name is very low."
+    },
+    {
+      "name": "birth-frank-lloyd-wright",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition, and 'organic architecture' and 'Prairie style' are specialist terms most players cannot date."
+    },
+    {
+      "name": "birth-wilbur-wright",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The brothers are a household pair, but the card's only anchor is the 1903 flight - some thirty-six years after this birth."
+    },
+    {
+      "name": "birth-ernest-rutherford",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition, and discovering the nucleus is a single dated achievement well after the birth."
+    },
+    {
+      "name": "birth-orville-wright",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Same as his brother: recognisable name, but the only anchor is the first flight, decades after the birth on the card."
+    },
+    {
+      "name": "birth-sergei-rachmaninoff",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition; 'late-Romantic' narrows the era only for listeners who already know the period."
+    },
+    {
+      "name": "birth-harry-houdini",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The name is familiar but the card gives no era anchor - stage illusion could be any decade from 1850 onward."
+    },
+    {
+      "name": "birth-albert-schweitzer",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Almost no recognition today; the Nobel and missionary work suggest the twentieth century but nothing narrows it."
+    },
+    {
+      "name": "birth-thomas-mann",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Very low general recognition, and two novel titles plus a Nobel do little to place a birth."
+    },
+    {
+      "name": "birth-albert-einstein",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Maximal recognition and relativity anchors the early twentieth century."
+    },
+    {
+      "name": "birth-alexander-fleming",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Penicillin is well known but it is a single 1928 discovery, and the card gives no other anchor for a birth in 1881."
+    },
+    {
+      "name": "birth-igor-stravinsky",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition; 'revolutionized modern music' places him vaguely in the twentieth century at best."
+    },
+    {
+      "name": "birth-virginia-woolf",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition is literary rather than general, and 'modernist' is a period term most players cannot date."
+    },
+    {
+      "name": "birth-john-maynard-keynes",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the card contains no era anchor - 'reshaped modern economics' fits any point in the last two centuries."
+    },
+    {
+      "name": "birth-dh-lawrence",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and no temporal anchor; the censorship context that would date him is never mentioned."
+    },
+    {
+      "name": "birth-diego-rivera",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside Mexico, and muralism only implies the twentieth century to those who know the movement."
+    },
+    {
+      "name": "birth-georgia-okeeffe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition; 'American modernist' gives a twentieth-century band but nothing tighter."
+    },
+    {
+      "name": "birth-charlie-chaplin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household name, and 'silent comedy cinema' is an explicit era anchor at the dawn of film."
+    },
+    {
+      "name": "birth-agatha-christie",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognised name, but the card carries no era anchor at all - Poirot and Marple date nothing for a general player."
+    },
+    {
+      "name": "birth-dwight-eisenhower",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Well known, but both anchors - D-Day and the presidency - sit fifty-odd years after this birth."
+    },
+    {
+      "name": "birth-jrr-tolkien",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "High recognition, but the card offers no temporal anchor whatever - Middle-earth reads as timeless."
+    },
+    {
+      "name": "birth-nikita-khrushchev",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moderately known, but the Cuban Missile Crisis anchor lands nearly seventy years after the birth on the card."
+    },
+    {
+      "name": "birth-amelia-earhart",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognised name; the Atlantic flight and disappearance are single dated events decades after this birth."
+    },
+    {
+      "name": "birth-jorge-luis-borges",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low general recognition and a description with no temporal content at all."
+    },
+    {
+      "name": "birth-louis-armstrong",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Well known, but 'a defining voice of jazz' gives a career-long band rather than anything that places a birth."
+    },
+    {
+      "name": "birth-werner-heisenberg",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition is largely secondhand; the uncertainty principle points at the 1920s, well after this birth."
+    },
+    {
+      "name": "birth-john-steinbeck",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Widely taught, but the Depression anchor sits three decades after the birth and the Nobel five."
+    },
+    {
+      "name": "birth-john-von-neumann",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Very low general recognition; 'modern computers' gives only a mid-century hint with no way to place a birth."
+    },
+    {
+      "name": "birth-robert-oppenheimer",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognisable now, but the card's sole anchor is the 1945 Manhattan Project, forty years after this birth."
+    },
+    {
+      "name": "birth-jean-paul-sartre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Modest recognition; existentialism and the Nobel place his career mid-century but not his birth."
+    },
+    {
+      "name": "birth-frida-kahlo",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Very high modern recognition, but the card gives no temporal anchor at all - self-portraits and identity date nothing."
+    },
+    {
+      "name": "birth-lyndon-johnson",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Known to Americans, but civil rights laws and Vietnam anchor the 1960s, some sixty years after this birth."
+    },
+    {
+      "name": "birth-jacques-cousteau",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Modest recognition, and the aqua-lung and television films anchor mid-century rather than the birth year."
+    },
+    {
+      "name": "birth-alan-turing",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognition has risen, but Enigma anchors the 1940s while the card marks a birth three decades earlier."
+    },
+    {
+      "name": "birth-albert-camus",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low general recognition; the Nobel and the absurd place his career mid-century at best."
+    },
+    {
+      "name": "birth-rosa-parks",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Household name, but the card's only anchor is the 1955 bus boycott - forty-two years after this birth."
+    },
+    {
+      "name": "birth-orson-welles",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Citizen Kane is famous but is a single 1941 film, and the card offers nothing else to place a birth."
+    },
+    {
+      "name": "birth-jackie-robinson",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "US-specific recognition, and breaking the colour barrier is a single dated event well after this birth."
+    },
+    {
+      "name": "birth-john-paul-ii",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Widely recognised, but the papacy and the fall of communism anchor the 1980s, sixty years after this birth."
+    },
+    {
+      "name": "birth-maria-callas",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Low recognition and the card gives no era anchor - bel canto revival dates nothing for a general player."
+    },
+    {
+      "name": "birth-margaret-thatcher",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Household name, but the card's only anchor is the 1980s, six decades after the birth it marks."
+    },
+    {
+      "name": "birth-marilyn-monroe",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Maximal recognition, but Hollywood stardom anchors the 1950s rather than the birth year on the card."
+    },
+    {
+      "name": "birth-maya-angelou",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moderate recognition, and 'a civil rights voice' anchors the 1960s, four decades after this birth."
+    },
+    {
+      "name": "birth-audrey-hepburn",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Household name, but the films named are 1950s and 60s while the card marks a birth in the 1920s."
+    },
+    {
+      "name": "birth-mikhail-gorbachev",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "High recognition, but glasnost and the end of the Cold War anchor the late 1980s, not a 1930s birth."
+    },
+    {
+      "name": "birth-carl-sagan",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moderate recognition, and Cosmos anchors 1980 while the card marks a birth nearly fifty years earlier."
+    },
+    {
+      "name": "birth-dalai-lama",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition as a living figure, and the Nobel plus his long tenure give a usable twentieth-century band."
+    },
+    {
+      "name": "birth-jimi-hendrix",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition and an explicit 1960s reference, though the card marks a birth some twenty years earlier."
+    },
+    {
+      "name": "birth-stephen-hawking",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition as a recent figure; black hole theory and the bestseller give a usable late-century band."
+    },
+    {
+      "name": "birth-freddie-mercury",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Household name, and Queen anchors the 1970s and 80s well enough to work back to a post-war birth."
+    },
+    {
+      "name": "birth-kobe-bryant",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition and a twenty-year NBA career ending recently gives a workable window on the birth."
+    }
+  ]
+}
