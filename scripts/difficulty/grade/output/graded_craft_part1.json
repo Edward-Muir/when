@@ -1,0 +1,958 @@
+{
+  "batch": "craft_part1",
+  "category": "craft",
+  "graded": [
+    {
+      "name": "homo-habilis",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Named early human species taught in schools; 'early human species... making tools' places it firmly in deep prehistory."
+    },
+    {
+      "name": "bone-tools",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not a recognised event, but 'early hominins' is an explicit deep-prehistory anchor."
+    },
+    {
+      "name": "woodworking-construction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Earliest evidence' hints early, but nothing names a period; wood construction spans all of prehistory."
+    },
+    {
+      "name": "hide-and-leather-clothing-shelter",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hides imply pre-agricultural life but the card gives no period marker beyond that."
+    },
+    {
+      "name": "beds",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Early human shelters' is an explicit prehistoric anchor even though the milestone itself is unknown."
+    },
+    {
+      "name": "clothing",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Invention of clothing is a familiar milestone; hides, bone awls and cold climates anchor it to the Ice Age."
+    },
+    {
+      "name": "beads-string-thread",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Shell ornaments suggest early symbolic behaviour but no era is stated."
+    },
+    {
+      "name": "funerals-burial",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "First deliberate burials is a widely taught milestone and 'early symbolic thought' anchors it to deep prehistory."
+    },
+    {
+      "name": "compound-adhesives",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Specialist archaeology; ochre and hafting hint Stone Age but nothing narrows it."
+    },
+    {
+      "name": "ground-stone-tools",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Stone tools' is an unambiguous Stone Age anchor even if the grinding-vs-chipping distinction is specialist."
+    },
+    {
+      "name": "shoes",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Universally familiar item and 'crafted from animal hide' anchors the invention to prehistory."
+    },
+    {
+      "name": "flute",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Oldest known musical instrument' from carved bone is a well-circulated fact and a strong prehistoric anchor."
+    },
+    {
+      "name": "mortar-and-pestle",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar object, but stone grinding tools were used from prehistory to today so the era clue is weak."
+    },
+    {
+      "name": "rope-and-cords",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Plant-fibre cordage suggests pre-industrial life but the card names no period."
+    },
+    {
+      "name": "ceramics-and-weaving",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pottery and weaving are famous craft milestones; the card points at early prehistory without naming it."
+    },
+    {
+      "name": "fish-hook",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Description says 'prehistoric' outright — an explicit era anchor on a familiar object."
+    },
+    {
+      "name": "spindle-whorl",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure object, but 'one of the earliest wheel-like tools' places it around the dawn of technology rather than nowhere."
+    },
+    {
+      "name": "water-well",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Wells are universally understood and 'settlements' hints at the start of settled life, though wells span every era."
+    },
+    {
+      "name": "proto-city-large-settlements",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "First permanent settlements and Jericho are standard secondary-school Neolithic material."
+    },
+    {
+      "name": "lead-smelting",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'One of the earliest examples of metallurgy' anchors it to the dawn of metalworking."
+    },
+    {
+      "name": "salt-production",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Salt evaporation was practised from prehistory to the present; the card gives no era signal."
+    },
+    {
+      "name": "cotton-thread",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "South Asian origin is geographic, not temporal; spinning cotton could read anywhere from Neolithic to Mughal."
+    },
+    {
+      "name": "rowing-oars",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Oars evoke antiquity generally but the card names no civilisation or period."
+    },
+    {
+      "name": "lost-wax-casting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Metal casting hints at the Bronze Age, but the technique is still used today and no era is stated."
+    },
+    {
+      "name": "paved-roads",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "First paved roads is not a recognised event and the text offers no era — the obvious guess (Rome) is misleading."
+    },
+    {
+      "name": "seal-emblem",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Stamps pressed into clay hints at Mesopotamia without naming it."
+    },
+    {
+      "name": "otzi-clothing",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Otzi is a famous find and 'Copper Age' is an explicit era statement."
+    },
+    {
+      "name": "hat-earliest-documented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Earliest hat' is not a known event, but the description names Otzi the Iceman, a strong prehistoric anchor."
+    },
+    {
+      "name": "clay-brick-kiln",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Mesopotamian builders... temples and city walls' is a firm ancient Near East anchor."
+    },
+    {
+      "name": "gnomon-shadow-clock",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure device, but 'Ancient Egyptians' is stated outright."
+    },
+    {
+      "name": "prosthesis-eye",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-only find, but 'oldest known prosthetic' plus bitumen and ancient Iran places it at the early end of antiquity."
+    },
+    {
+      "name": "rhinoplasty",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ancient Indian texts' and 'earliest known plastic surgery' are both explicit ancient anchors."
+    },
+    {
+      "name": "measuring-rod-ruler",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Egyptian construction' anchors it to pyramid-era Egypt."
+    },
+    {
+      "name": "egyptian-linen-pleating",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist costume detail, but Egyptian elites and the Nile place it unmistakably in pharaonic Egypt."
+    },
+    {
+      "name": "public-bath",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mohenjo-daro anchors the era only for players who already know the Indus Valley; otherwise a bath house reads as Roman."
+    },
+    {
+      "name": "bronze-casting-techniques",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mesopotamian smiths working bronze is an explicit Bronze Age anchor."
+    },
+    {
+      "name": "copper-pipes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Egyptian temples' places it firmly in ancient Egypt despite the modern-sounding subject."
+    },
+    {
+      "name": "touchstone",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown object with zero era markers — assaying gold with a streak stone could be any millennium."
+    },
+    {
+      "name": "aboriginal-boomerang-hunting",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Boomerangs are familiar but Aboriginal Australia spans tens of millennia with no era clue given."
+    },
+    {
+      "name": "reed-shuttle-developed",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-level weaving detail, but 'Egyptian weavers' anchors the era clearly."
+    },
+    {
+      "name": "minoan-bull-leaping",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Minoan frescoes are widely reproduced and 'Bronze Age Crete' states the era outright."
+    },
+    {
+      "name": "mesoamerican-ballgame-rise",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Mesoamerican ballgame is reasonably known; Olmec signals the earliest Mesoamerican layer."
+    },
+    {
+      "name": "lathe",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Familiar machine with no era marker at all; 'precision craftsmanship' pulls a player toward the industrial age."
+    },
+    {
+      "name": "knucklebones-astragaloi",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure game, but 'Greeks and Romans' is a firm classical anchor."
+    },
+    {
+      "name": "waterproof-concrete",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Very obscure, but 'Assyrian aqueduct' names an ancient Near Eastern empire."
+    },
+    {
+      "name": "pankration-added-olympics",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pankration itself is obscure, but the ancient Greek Olympics is a strong and famous era anchor."
+    },
+    {
+      "name": "high-carbon-steel-wootz",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Damascus steel' pulls players toward the medieval Islamic world rather than the actual era."
+    },
+    {
+      "name": "cast-iron",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Familiar material and 'first achieved in ancient China' states the era explicitly."
+    },
+    {
+      "name": "lighthouse",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known, and 'elevated fires on towers' signals a pre-modern origin."
+    },
+    {
+      "name": "roman-toga-adopted",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The toga is a stock image of Rome and the card names Roman citizens."
+    },
+    {
+      "name": "scythed-chariot",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Persian war chariots are an unambiguous classical-antiquity anchor."
+    },
+    {
+      "name": "beacon-fire-chains",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Essentially unknown as an event, though 'Ancient Mediterranean' does state the era."
+    },
+    {
+      "name": "crossbow-tension-mechanism",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bronze mechanisms and the Warring States period place it in ancient China."
+    },
+    {
+      "name": "reed-pens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ancient Egypt and Mesopotamia' is stated outright."
+    },
+    {
+      "name": "animal-driven-rotary-mill",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Animal-powered mills read as anything from antiquity to the 19th century."
+    },
+    {
+      "name": "cam",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "A pure mechanism definition with no era, place or person — the natural guess is the Industrial Revolution."
+    },
+    {
+      "name": "crucible-steel-wootz",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Prized across the ancient world' is an explicit antiquity anchor."
+    },
+    {
+      "name": "gimbal",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows this invention, though the named Greek inventor does anchor the era."
+    },
+    {
+      "name": "dry-dock",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ptolemaic Egypt' names a specific ancient state."
+    },
+    {
+      "name": "roman-fibula-brooch",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure object, but 'Romans' anchors it completely."
+    },
+    {
+      "name": "arch-dam",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "Reads as modern civil engineering; nothing in the card suggests antiquity."
+    },
+    {
+      "name": "segmental-arch-bridge",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Technical bridge geometry with no era, place or builder named."
+    },
+    {
+      "name": "trip-hammer",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Water power and forging suggest pre-industrial, but the card points toward the medieval mill era rather than antiquity."
+    },
+    {
+      "name": "reverse-overshot-water-wheel",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Engineering minutiae with no era marker whatsoever."
+    },
+    {
+      "name": "noodles",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally familiar and the Han Dynasty is named."
+    },
+    {
+      "name": "carding",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Textile-process vocabulary with no era, place or person to reason from."
+    },
+    {
+      "name": "chaturanga-proto-chess",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Chess's Indian origin is a commonly cited fact, and elephants/chariots signal antiquity."
+    },
+    {
+      "name": "roman-dichroic-glass",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure artefact, but 'Roman' is right in the title — a complete era anchor."
+    },
+    {
+      "name": "water-turbine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The name reads as modern hydropower; only the stated Roman Empire rescues it, and the event itself is unknown."
+    },
+    {
+      "name": "paddle-wheel-boat",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'China and the Roman Empire' places it in antiquity despite paddle wheels evoking steamboats."
+    },
+    {
+      "name": "horse-collar",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "No era, place or person given; horse harness could be any pre-mechanised century."
+    },
+    {
+      "name": "pointed-arch-bridge",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Pointed arches evoke Gothic architecture, which is centuries off from the card's actual placement."
+    },
+    {
+      "name": "sulfur-matches",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Matches read as a 19th-century invention; 'first documented in China' only weakly signals pre-modern."
+    },
+    {
+      "name": "greek-fire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Reasonably well known and 'Byzantine' anchors the era for anyone who places Byzantium."
+    },
+    {
+      "name": "porcelain",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Porcelain is universally familiar and the Tang Dynasty is named explicitly."
+    },
+    {
+      "name": "horse-collar-technology",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "China-to-Europe transmission hints at the medieval period but nothing states it."
+    },
+    {
+      "name": "playing-cards",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Familiar object with the Tang Dynasty named outright."
+    },
+    {
+      "name": "fire-lance",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Earliest known firearm' plus gunpowder anchors it to the first gunpowder era."
+    },
+    {
+      "name": "overshot-wheel-improvements",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Very obscure incremental improvement, but 'medieval industries' names the era."
+    },
+    {
+      "name": "medieval-jousting-tournaments",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Knights jousting is universal shorthand for the Middle Ages."
+    },
+    {
+      "name": "longbow-developed",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Welsh/English longbow is widely known and armour-piercing archery anchors it to the Middle Ages."
+    },
+    {
+      "name": "brick-mortar-improvements",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A mortar-formulation card nobody recognises, though 'medieval'/'Gothic' does state the era."
+    },
+    {
+      "name": "buttress-flying-buttress",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Flying buttresses are school-taught and 'Gothic architecture' is an explicit era anchor."
+    },
+    {
+      "name": "explosive-bomb",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Chinese and Mongol warfare' pins it to the Mongol era."
+    },
+    {
+      "name": "lance-pike-improvements",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A vague refinement card; pikes against cavalry span 1200 to 1700 with no narrowing."
+    },
+    {
+      "name": "rocket",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Chinese gunpowder rocket is a widely repeated fact and gunpowder warfare anchors the era."
+    },
+    {
+      "name": "vault-construction-techniques",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unrecognised as an event, though 'Gothic cathedrals' names the era."
+    },
+    {
+      "name": "land-mine",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Song Dynasty versus Mongol invaders is a strong, specific anchor."
+    },
+    {
+      "name": "magnifying-glass-single-lens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Medieval Europe' is stated outright."
+    },
+    {
+      "name": "multistage-rocket",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name suggests spaceflight, but the description says 'medieval China' explicitly."
+    },
+    {
+      "name": "painting-canvas",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Panel-to-canvas shift is specialist, but 'medieval Europe' names the era."
+    },
+    {
+      "name": "medieval-pointed-shoes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Poulaines are obscure but 'medieval Europeans' anchors the era completely."
+    },
+    {
+      "name": "houppelande-court-gown",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Costume-history vocabulary nobody knows, rescued only by 'late medieval'."
+    },
+    {
+      "name": "ottoman-military-innovation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Janissaries plus 'one of the first gunpowder armies' anchors the Ottoman gunpowder era."
+    },
+    {
+      "name": "brace-drill",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A hand tool with no era, place or person — could plausibly be Roman or Victorian."
+    },
+    {
+      "name": "portuguese-caravels",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Caravels are tied to the Age of Exploration in most curricula, and Portuguese coastal exploration says so."
+    },
+    {
+      "name": "eyeglass-improvements",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "An incremental lens-improvement card; Venetian glassmaking spans several centuries."
+    },
+    {
+      "name": "rifling-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Gunsmithing places it after firearms but could read anywhere from 1500 to 1850."
+    },
+    {
+      "name": "chintz-printed-clothing",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Indian cotton popular in Europe implies the colonial trade era but nothing narrows it."
+    },
+    {
+      "name": "quenching-tempering-steel",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Smithing refinement with no era marker; quenching has been done since antiquity."
+    },
+    {
+      "name": "spanish-tercio-formation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The tercio is unknown to a general audience, though pike-and-shot does mark the early modern period."
+    },
+    {
+      "name": "farthingale-hoop-skirt",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hooped skirts could read as Tudor or Victorian; the card names no reign or century."
+    },
+    {
+      "name": "elizabethan-ruff-collar",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The ruff is an instantly recognisable image and 'Elizabethan' states the era."
+    },
+    {
+      "name": "stocking-frame",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'Early textile innovation' plus a knitting machine points players at the Industrial Revolution, two centuries late."
+    },
+    {
+      "name": "compound-lens-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "An unrecognised optics card, though Dutch opticians and the first telescopes do fix the era."
+    },
+    {
+      "name": "flintlock",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Flintlock muskets are familiar and 'standard for two centuries' anchors the age of muskets."
+    },
+    {
+      "name": "mechanical-calculator-pascaline",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Blaise Pascal is a famous named figure, a strong 17th-century anchor."
+    },
+    {
+      "name": "optical-lens-advancement",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Vague improvement card, but telescopes and microscopes mark the scientific revolution."
+    },
+    {
+      "name": "pressure-cooker",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar household object; 'steam pressure' suggests the early modern/steam era."
+    },
+    {
+      "name": "panniers-wide-skirts",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The description says '18th-century European courts' outright."
+    },
+    {
+      "name": "lead-chamber-process-sulfuric-acid",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Industrial chemistry nobody recognises; 'industrial process' spans 1750 to 1900."
+    },
+    {
+      "name": "boring-machine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown inventor and tool, but boring engine cylinders is a firm early-Industrial-Revolution marker."
+    },
+    {
+      "name": "wrought-iron-puddling",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Specialist metallurgy; the coal-for-charcoal switch and a patent do mark the Industrial Revolution."
+    },
+    {
+      "name": "safety-lamp",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Flame lamps in coal mines is a clear early-industrial anchor."
+    },
+    {
+      "name": "power-loom-mechanical",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Iron-framed power looms for factory use is a textbook Industrial Revolution image."
+    },
+    {
+      "name": "reaping-machine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mechanised harvesting narrows only to the long 19th century, and the inventor is unknown to most."
+    },
+    {
+      "name": "corrugated-galvanised-iron",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The material is familiar but reads as anywhere from the 1830s to the 20th century."
+    },
+    {
+      "name": "dobby-mechanism",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Loom-trade jargon; only the Jacquard reference gives any temporal hint."
+    },
+    {
+      "name": "pin-tumbler-lock",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Yale name is familiar as a brand but does not date itself; 'still standard today' is a weak anchor."
+    },
+    {
+      "name": "francis-turbine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown inventor, and 'hydroelectric dams' pulls players toward the 20th century."
+    },
+    {
+      "name": "crinoline-cage-skirt",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The crinoline silhouette is widely recognised and 'Victorian' is stated."
+    },
+    {
+      "name": "phonautograph",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown device, but 'predating the phonograph' pins it just before Edison."
+    },
+    {
+      "name": "metal-detector",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar object; 'electromagnetic device' places it after the electrical age began."
+    },
+    {
+      "name": "rebreather",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Diving apparatus reads anywhere from the 1870s to the mid 20th century."
+    },
+    {
+      "name": "smokeless-powder",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Replaced black powder' marks the late industrial era only for players who know firearms history."
+    },
+    {
+      "name": "bayer-process",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Industrial chemistry with only 'aluminum production' as a loose late-19th/20th-century hint."
+    },
+    {
+      "name": "cinematograph",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The birth of motion pictures is a well-placed moment even if Bouly himself is unknown."
+    },
+    {
+      "name": "surgical-masks",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Masks are universally familiar and 'bacterial contamination' anchors it to the germ-theory era."
+    },
+    {
+      "name": "safety-razor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Gillette is a household name and mass-market disposable blades anchor the turn of the 20th century."
+    },
+    {
+      "name": "kaplan-turbine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Engineering specialism; 'hydropower stations' spans most of the 20th century."
+    },
+    {
+      "name": "crystal-oscillator",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Piezoelectric timekeeping signals the electronic era but could be anywhere from 1917 to the quartz-watch boom."
+    },
+    {
+      "name": "float-glass-process",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Industrial process with no recognisable name and only a vague modern-manufacturing hint."
+    },
+    {
+      "name": "robotic-exoskeleton",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'First wearable robotic device' places it in the robotics era but reads far more recent than it is."
+    },
+    {
+      "name": "search-engine-archie",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Archie is obscure, but 'first tool for searching internet file archives' anchors it to the pre-web internet."
+    },
+    {
+      "name": "capsule-endoscopy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Miniature camera medicine signals recent decades without narrowing further."
+    },
+    {
+      "name": "consumer-3d-printing",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "MakerBot and the consumer 3D printing boom are firmly remembered as a 2010s phenomenon."
+    }
+  ]
+}
