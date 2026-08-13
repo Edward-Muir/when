@@ -1,5 +1,11 @@
 # Daily Mode: Sudden Death Rules Update
 
+> **Historical.** The move to sudden-death mechanics stuck, but the details here have
+> drifted: the daily now starts with a **5-card hand, not 3** (`src/utils/dailyConfig.ts`),
+> and `usesSuddenDeathMechanics()` no longer exists — with `freeplay` removed, both modes
+> run these mechanics unconditionally and the helper was deleted. The `freeplay` key in the
+> `when-modes-played` example below is also gone.
+
 ## Overview
 
 The daily challenge mode has been updated to use **sudden death mechanics** instead of the standard freeplay rules. This makes the daily challenge more exciting and skill-based, where players must build the longest possible timeline streak.

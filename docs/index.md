@@ -2,6 +2,21 @@
 
 Session summaries and reference docs for the "When" timeline game. Session files live in topic subfolders, each with its own `index.md`.
 
+> **Read this before citing anything below.**
+>
+> Everything in the topic folders is a **dated snapshot of one day's change** — a record of
+> what was done and why, written at the time. They are **not** current-state reference and
+> are not updated when later work supersedes them. Several describe components and UI that
+> no longer exist (a `SettingsPopup`, a Marathon/Casual mode picker, a 7-category event
+> taxonomy).
+>
+> **When a session doc conflicts with the code, the code wins.** Verify before acting.
+>
+> Only two documents are maintained as current: **[CLAUDE.md](../CLAUDE.md)** and
+> **[architecture-reference.md](architecture-reference.md)**. If you find something stale
+> in either, fix it. If you find something stale in a session doc, leave the body alone —
+> it is history — and add a one-line `> **Historical (date).** …` note at the top instead.
+
 ## Topic folders
 
 - [stats-achievements/](stats-achievements/index.md) — Stats foundation, achievement badges, milestone popups, and the My Timeline collection view

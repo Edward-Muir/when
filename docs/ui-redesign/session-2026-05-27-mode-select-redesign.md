@@ -1,5 +1,10 @@
 # Session Summary — Mode-Select Screen Redesign (Swipeable Daily / Custom Pager)
 
+> **Historical (2026-05-27).** The pager itself is still how the screen works, but the
+> Marathon/Casual pills and the "More Options" expander described here were later removed.
+> The `freeplay` mode behind "Casual" has since been deleted, so the selector will not
+> return: Custom always starts a sudden-death game.
+
 **Date:** 2026-05-27
 **Area:** `src/components/` mode-select / start screen
 

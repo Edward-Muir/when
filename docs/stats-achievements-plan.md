@@ -1,5 +1,11 @@
 # Stats & Achievement Badges — Plan
 
+> **Historical.** This is the original spec, kept for the reasoning behind the design. Parts
+> were superseded during implementation — most notably `flawlessFreeplayGames`, which was
+> built but never read by any badge and has since been removed along with the `freeplay`
+> mode. Check `src/utils/statsStorage.ts` and `src/data/achievementLogic.ts` for what
+> actually ships.
+
 > A plan for an in-game **stats screen** and **achievement badges** for "When". The design principle:
 > store a small set of **generic primitives** in the browser, then **derive** every displayed stat and
 > badge from them — so new stats/badges can be added later with **zero new instrumentation**.
@@ -29,6 +35,11 @@
   `dailySeed` truthy → **daily**; else `challengeCode` truthy → **custom**; else → **default**
   (a plain Sudden Death / Freeplay game started from the menu). `gameMode` alone can't tell custom
   from default — both reuse `'suddenDeath'`/`'freeplay'`.
+  > **Correction (superseded).** There is no "plain game started from the menu" path: the UX
+  > is a Daily/Custom pager and every non-daily start carries a `challengeCode`, so the
+  > `default` branch is unreachable. `freeplay` has also been removed — see
+  > [../CLAUDE.md](../CLAUDE.md) for the current two-mode model. As shipped, `recordGameResult`
+  > splits on daily vs non-daily only.
 - **No backend.** Everything below is `localStorage`, mirroring the existing typed-accessor +
   fail-silent pattern in `playerStorage.ts`. (Push notifications, cross-player rarity %, and
   cross-device sync are the _only_ backend-needing features and are explicitly out of scope here.)

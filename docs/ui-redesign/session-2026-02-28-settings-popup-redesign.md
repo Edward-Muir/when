@@ -1,5 +1,11 @@
 # Session Summary: Settings Popup Redesign
 
+> **Historical (2026-02-28).** The Marathon/Casual segmented control described here was
+> later removed from the UI, and the `freeplay` mode behind "Casual" has since been
+> deleted. What survives is the naming: `suddenDeath` is still shown as **"Marathon"** in
+> share text, and the internal `isSuddenDeath`-style naming was deliberately left alone.
+> `SettingsPopup` itself no longer exists.
+
 **Date**: 2026-02-28
 
 ## Overview

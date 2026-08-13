@@ -6,12 +6,12 @@ Added a cinematic transition animation between the main menu (ModeSelect) and th
 
 ## Files Modified
 
-| File                                                                                | Changes                                                                                                               |
-| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [src/types/index.ts](../src/types/index.ts)                                         | Added `'transitioning'` to `GamePhase` type                                                                           |
-| [src/hooks/useWhenGame.ts](../src/hooks/useWhenGame.ts)                             | Added `completeTransition()` function; changed `startGame()` to set phase to `'transitioning'` instead of `'playing'` |
-| [src/App.tsx](../src/App.tsx)                                                       | Added conditional rendering for `GameStartTransition` when phase is `'transitioning'`                                 |
-| [src/components/GameStartTransition.tsx](../src/components/GameStartTransition.tsx) | New component - the main transition animation                                                                         |
+| File                                                                                   | Changes                                                                                                               |
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [src/types/index.ts](../../src/types/index.ts)                                         | Added `'transitioning'` to `GamePhase` type                                                                           |
+| [src/hooks/useWhenGame.ts](../../src/hooks/useWhenGame.ts)                             | Added `completeTransition()` function; changed `startGame()` to set phase to `'transitioning'` instead of `'playing'` |
+| [src/App.tsx](../../src/App.tsx)                                                       | Added conditional rendering for `GameStartTransition` when phase is `'transitioning'`                                 |
+| [src/components/GameStartTransition.tsx](../../src/components/GameStartTransition.tsx) | New component - the main transition animation                                                                         |
 
 ## How It Works
 

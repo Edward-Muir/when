@@ -1,5 +1,9 @@
 # Game Over Popup Implementation
 
+> **Historical.** The Freeplay rows in the copy table below describe a mode that has since
+> been removed, so only the Sudden Death rows still apply. The multiplayer rows are live
+> code but unreachable from the UI (see CLAUDE.md on multiplayer).
+
 Added a game over popup that displays when the game ends, showing winner(s) and per-player stats.
 
 ## Features

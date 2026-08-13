@@ -1,5 +1,12 @@
 # Session Summary: Shareable Challenge Codes
 
+> **Historical (2026-03-01).** The bit layout below is still accurate with one exception:
+> bit 0, documented here as `0=suddenDeath, 1=freeplay`, is now **reserved and ignored**.
+> `freeplay` was removed; encoding always writes 0 and decoding maps either value to
+> `suddenDeath`, so old links still launch. The bit cannot be reclaimed — the format is
+> positional, so shifting it would misdecode every link ever issued. `src/utils/challengeCode.ts`
+> is the source of truth for the wire format.
+
 **Date**: 2026-03-01
 
 ## Overview

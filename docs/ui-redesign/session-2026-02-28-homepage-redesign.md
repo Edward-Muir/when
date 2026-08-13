@@ -1,5 +1,12 @@
 # Homepage Redesign: Daily-First Layout with Inline Leaderboard
 
+> **Historical (2026-02-28).** The `SettingsPopup` this describes no longer exists in
+> `src/` — the mode-select screen became a tab pager (`ModeSelect.tsx` + `ModePager.tsx`)
+> and Custom settings moved inline into `CustomGameSettings.tsx`. The "Classic Mode"
+> toggle, Starting Cards slider and 1-6 Players selector are all gone from the UI; the
+> `freeplay` mode behind "Classic"/"Casual" was removed outright. Kept for the design
+> rationale, not as a description of the current screen.
+
 **Date:** 2026-02-28
 
 ## Overview

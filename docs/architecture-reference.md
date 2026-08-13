@@ -4,74 +4,70 @@ Detailed reference for the "When" codebase. See [../CLAUDE.md](../CLAUDE.md) for
 
 ## Component Hierarchy
 
+`ls src/components/`, `src/hooks/` and `src/utils/` for the full inventory — an exhaustive
+list here only goes stale. What follows is the spine plus the relationships you would
+guess wrong.
+
 ```
-index.tsx                      # BrowserRouter + routes
+index.tsx                      # BrowserRouter + 15 routes
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Tab pager (Daily/Custom/Stats/Achievements/Timeline) + filter config
+│   ├── ModeSelect.tsx         # Tab pager (Daily/Custom/Stats/Achievements/Timeline)
+│   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
+│   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
+│   │   └── panels/                 # StatsPanel, AchievementsPanel, TimelinePanel
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
-│   └── Game.tsx               # Main gameplay with DndContext
-│       ├── TopBar.tsx         # Home button, title
-│       ├── PlayerInfo.tsx     # Turn/round/score/streak display
-│       ├── ActiveCardDisplay.tsx  # Card stack + cycle button
-│       │   ├── DraggableCard.tsx  # Draggable wrapper
-│       │   └── Card.tsx          # Card rendering
-│       ├── Timeline/
-│       │   ├── Timeline.tsx       # Vertical scrollable drop zone
-│       │   └── TimelineEvent.tsx  # Placed cards with year
-│       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver popups
-│       ├── StatsPopup.tsx     # Streak and stats display
-│       ├── GameOverControls.tsx   # Restart/share buttons
-│       ├── Leaderboard.tsx    # Daily leaderboard display
-│       ├── LeaderboardSubmit.tsx  # Name entry for leaderboard
-│       ├── FilterPopup.tsx    # Category/era/difficulty filters
-│       ├── Menu.tsx           # Game rules
-│       ├── Toast.tsx          # Toast notifications
-│       ├── UpdatePopup.tsx    # Version update notification
-│       └── CategoryIcon.tsx   # Category badge icons
-├── DailyRoute.tsx             # /daily route wrapper (auto-starts daily)
-├── ChallengeRoute.tsx         # /challenge/:code — decodes a share link into a GameConfig
-└── pages/Timeline.tsx         # /timeline route; renders ViewTimeline.tsx (not an App child)
+│   └── Game.tsx               # Main gameplay, owns the DndContext
+│       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
+│       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
+│       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
+│       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
+│       ├── TopBar.tsx         # Home + nav; routes to /stats, /achievements, /timeline
+│       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
+│       └── PlayerInfo.tsx, GameOverControls.tsx, Menu.tsx, Toast.tsx
+├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
+├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
+└── pages/                     # Standalone routes, not App children (Timeline, Stats,
+                               # Achievements, Support, ImageQc, CardReports, …)
 ```
+
+Easy to get wrong: `FilterPopup` is mounted by `panels/TimelinePanel`, not `Game`.
+`CategoryIcon` has five importers across the tree. `pages/Timeline.tsx` renders
+`ViewTimeline.tsx`, which passes `gameMode={null}` to `TopBar` — that is why the rules
+item is hidden outside a game.
 
 ## Hooks
 
-| Hook              | Purpose                                              |
-| ----------------- | ---------------------------------------------------- |
-| `useWhenGame`     | Main game state machine (phases, placement, scoring) |
-| `useDragAndDrop`  | Drag state, insertion index calculation              |
-| `useLeaderboard`  | Fetch/submit daily leaderboard via API               |
-| `useHaptics`      | iOS haptic feedback via Capacitor                    |
-| `useTheme`        | Dark/light theme toggle                              |
-| `useScreenShake`  | Screen shake animation effect                        |
-| `useVersionCheck` | App version update detection                         |
-| `usePWAInstall`   | PWA install prompt handling                          |
+`src/hooks/` — `useWhenGame` (the state machine: phases, placement, scoring) is the one to
+read first; `useGameStatsRecorder` is where a finished game reaches `statsStorage`. The
+rest are single-purpose and named for what they do (`useDragAndDrop`, `useLeaderboard`,
+`useHaptics`, `useTheme`, `useScreenShake`, `useVersionCheck`, `usePWAInstall`, `useToday`,
+`useImagePrefetch`, `useDailyReminder`).
 
 ## Utils
 
-| Util                | Purpose                                                 |
-| ------------------- | ------------------------------------------------------- |
-| `gameLogic`         | Shuffling primitives, seeded RNG, hand/turn rules       |
-| `deckBuilder`       | Composes the ramped deck (difficulty curve + spacing)   |
-| `difficultyScore`   | Composite difficulty: recognition label + placeability  |
-| `dailyPool`         | The themed, filtered pool a given day draws from        |
-| `dailyRecency`      | Seven-day no-repeat chain for the daily                 |
-| `placementLogic`    | Card placement validation and results                   |
-| `eventLoader`       | Load event JSON files, deduplication                    |
-| `playerStorage`     | localStorage for scores, daily results, streaks         |
-| `statsStorage`      | Persisted lifetime stats and achievement progress       |
-| `challengeCode`     | Encode/decode share links (mode, filters, player count) |
-| `puzzleDate`        | Local-calendar puzzle day and rollover timing           |
-| `dailyConfig`       | Daily mode game configuration + deck                    |
-| `dailyTheme`        | Seeded daily theme selection (category or "Everything") |
-| `share`             | Share text/emoji grid generation                        |
-| `streakFeedback`    | Streak tier config (visual feedback tiers)              |
-| `deviceFingerprint` | Unique device ID for leaderboard                        |
-| `dndSensors`        | Custom drag/drop sensor config                          |
-| `eras`              | Era definitions and filtering                           |
+`src/utils/` — the ones with non-obvious contracts, each carrying a load-bearing header
+comment worth reading before you change it:
+
+| Util              | Why it needs care                                                            |
+| ----------------- | ---------------------------------------------------------------------------- |
+| `deckBuilder`     | Decks are composed, not shuffled — opening ramp + spacing                    |
+| `difficultyScore` | Composite: recognition label blended with timeline crowding                  |
+| `dailyRecency`    | Seven-day no-repeat chain for the daily                                      |
+| `puzzleDate`      | **Local** calendar day, never `toISOString()` — see the header comment       |
+| `challengeCode`   | Positional bit-packed share links; bit 0 is a reserved legacy mode bit       |
+| `cloudinaryImage` | Transform rung ladder with hard cost rules — see cloudinary-cost-controls.md |
+| `statsStorage`    | Persisted lifetime stats, achievements, and a legacy-shape fold on read      |
+
+Everything else (`gameLogic`, `placementLogic`, `eventLoader`, `playerStorage`,
+`dailyPool`, `dailyConfig`, `dailyTheme`, `share`, `streakFeedback`, `deviceFingerprint`,
+`dndSensors`, `eras`, `eventNameLength`, `introEvents`, `timelineRows`, `eventColor`, …)
+does what its name says.
 
 ## Type Definitions (types/index.ts)
 
-Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePhase`, `GamePopupType`, `AnimationPhase`, `PlacementResult`, `Category`, `Difficulty`, `Era`, `GameMode`
+Core types: `HistoricalEvent`, `Player`, `WhenGameState`, `GameConfig`, `GamePhase`, `GamePopupType`, `AnimationPhase`, `PlacementResult`, `Category` (20 values), `Difficulty` (4, incl. `very-hard`), `Era` (8), `GameMode` (2 — `daily` and `suddenDeath`, same mechanics, different deck source).
+
+`GameConfig.totalTurns` is written by three callers and read by none — it is a leftover, not a turn limit. There is no turn cap in either mode.
 
 ## API Routes (Vercel Serverless)
 
@@ -88,7 +84,7 @@ Backend uses **Upstash Redis** for leaderboard storage. Bot players are auto-gen
 
 Display names go through `nameFilter.ts` (built on `obscenity`) on **both** write and read — a blocked name is silently swapped for a deterministic generated one rather than rejected. Filtering on read is deliberate: the sorted set's member is the JSON entry itself, so masking on the way out cleans entries stored before the filter existed and makes any later word-list addition apply retroactively. See [Display Name Filter](leaderboard-daily/session-2026-08-10-display-name-filter.md).
 
-Card reports store only an event id + reason id + timestamp under `cardreport:*` keys — no device id, no IP, no free text. Every key is TTL'd or capped. Abuse controls are a per-device-per-card dedup (30d) and a per-IP rate limit (20/hour); the IP is SHA-256 hashed and used only as an expiring rate-limit key. `npm run typecheck:api` type-checks `api/` (it is not covered by `npm run lint` or `npm run typecheck`).
+Card reports store only an event id + reason id + timestamp under `cardreport:*` keys — no device id, no IP, no free text. Every key is TTL'd or capped. Abuse controls are a per-device-per-card dedup (30d) and a per-IP rate limit (20/hour); the IP is SHA-256 hashed and used only as an expiring rate-limit key. `npm run typecheck:api` type-checks `api/`, which `npm run typecheck` does not cover (root `tsconfig.json` has `"include": ["src"]`). `npm run lint` **does** cover it — it runs `eslint src api`.
 
 Environment variables in `.env`:
 
@@ -99,16 +95,22 @@ Environment variables in `.env`:
 
 `/api/card-reports/submit` is public — it is the player-facing write path. `/api/card-reports/list` requires `REPORTS_ADMIN_KEY`, checked before any Redis call so a rejected request costs no Upstash commands (the reason for the gate: Upstash bills per command, and an open GET runs a `ZRANGE` + `LRANGE` for anyone who loops it). Generate a key with `openssl rand -hex 24` and set it in the Vercel project for **both Production and Preview** — previews are a separate environment. With the variable unset the endpoint returns 503 in production (fails closed) but allows through elsewhere, so `vercel dev` needs no setup. The `/card-reports` page takes the key from `?key=…` once (then strips it from the URL) or from a paste-in field, and stores it in localStorage under `when-reports-key`.
 
-## Z-Index Hierarchy (Game.tsx & Timeline.tsx)
+## Z-Index Hierarchy
 
-| Layer                   | Z-Index | Component    |
-| ----------------------- | ------- | ------------ |
-| Timeline scroll content | z-10    | Timeline.tsx |
-| Timeline fade overlays  | z-30    | Timeline.tsx |
-| Left panel (hand zone)  | z-40    | Game.tsx     |
-| Card stack container    | z-40    | Game.tsx     |
-| Placement vignette      | z-45    | Game.tsx     |
-| Cycle button            | z-50    | Game.tsx     |
+Low to high. Verify against source before relying on it — grep `z-` in the three files.
+
+| Layer                       | Z-Index | File                  |
+| --------------------------- | ------- | --------------------- |
+| Timeline spine              | z-0     | Timeline.tsx:400      |
+| Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx |
+| Timeline scroll content     | z-10    | Timeline.tsx:409      |
+| Timeline fade overlays      | z-30    | Timeline.tsx:392, 471 |
+| Bottom bar (hand zone)      | z-40    | Game.tsx:364          |
+| Placement vignette          | z-[45]  | Game.tsx:480          |
+| Cycle button                | z-50    | ActiveCardDisplay:33  |
+| Restart-confirm modal       | z-50    | Game.tsx:46           |
+| Confetti burst              | z-50    | Game.tsx:333          |
+| First-time rules modal      | z-[60]  | Game.tsx:72           |
 
 ## Drag and Drop
 
@@ -133,7 +135,7 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 
 **Mobile**: `@capacitor/core`, `@capacitor/haptics`, `@capacitor/ios`, `@capacitor/splash-screen`, `@capacitor/status-bar`
 
-**Dev**: `typescript`, `husky`, `lint-staged`, `prettier`, `eslint`, `commit-and-tag-version`
+**Dev**: `husky`, `lint-staged`, `prettier`, `commit-and-tag-version`, `eslint-plugin-security`, `puppeteer`, `sharp`. Note `typescript` sits in `dependencies`, not `devDependencies`, and `eslint` itself is not a declared dependency at all — it arrives transitively via `react-scripts`.
 
 ## Versioning & Releases
 
@@ -153,4 +155,4 @@ npm install
 npm run dev
 ```
 
-See [event-editor-tool.md](event-editor-tool.md) for full documentation.
+See [events-images/event-editor-tool.md](events-images/event-editor-tool.md) for full documentation.
