@@ -319,10 +319,10 @@
     },
     {
       "name": "aksumite-christianity",
-      "difficulty": "hard",
-      "recognition": "very-low",
+      "difficulty": "medium",
+      "recognition": "low",
       "inferability": "high",
-      "reasoning": "Aksum is unrecognised, but 'one of the first Christian states' is a genuine early-Christian anchor."
+      "reasoning": "Aksum is curriculum-level rather than expert-only, and 'one of the first Christian states' is a near-explicit era anchor."
     },
     {
       "name": "council-of-antioch",
@@ -690,10 +690,10 @@
     },
     {
       "name": "toledo-reconquered",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "Toledo is specialised, and the Reconquista anchor spans nearly eight centuries."
+      "inferability": "high",
+      "reasoning": "Toledo itself is specialised, but Reconquista, Castile and recovering the Visigothic capital from Muslim rule are layered medieval-Iberia anchors."
     },
     {
       "name": "antioch-crusader-conflicts",
@@ -781,17 +781,17 @@
     },
     {
       "name": "delhi-sultanate",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "The Delhi Sultanate is specialised, and 'Sultanate in northern India' gives a broad Islamic-India window."
+      "inferability": "high",
+      "reasoning": "The Delhi Sultanate appears in world-history teaching and a sultanate ruling northern India anchors the Islamic-India era."
     },
     {
       "name": "albigensian-crusade-begins",
-      "difficulty": "hard",
-      "recognition": "very-low",
+      "difficulty": "medium",
+      "recognition": "low",
       "inferability": "high",
-      "reasoning": "The Albigensian Crusade is obscure, but a pope launching a crusade anchors the high Middle Ages."
+      "reasoning": "The Cathars turn up in popular history, and a pope launching a crusade against heretics anchors the high Middle Ages."
     },
     {
       "name": "kamakura-internal-conflicts",
@@ -816,17 +816,17 @@
     },
     {
       "name": "mali-empire-founded",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "Mali is taught in the West African empires unit, but Sundiata and trans-Saharan trade give only a loose medieval anchor."
+      "inferability": "high",
+      "reasoning": "Mali and Sundiata are curriculum-level, and a wealthy trans-Saharan gold empire anchors medieval West Africa."
     },
     {
       "name": "sukhothai-kingdom",
-      "difficulty": "very-hard",
+      "difficulty": "hard",
       "recognition": "very-low",
-      "inferability": "low",
-      "reasoning": "Sukhothai is unrecognised and 'origin of the Thai nation' carries no era marker."
+      "inferability": "medium",
+      "reasoning": "Sukhothai is unrecognised, but 'first major Thai state' is the same kind of national-origin anchor as Nara."
     },
     {
       "name": "mamluks-take-power-egypt",
@@ -907,10 +907,10 @@
     },
     {
       "name": "avignon-papacy-begins",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "The Avignon papacy is specialised; papal court plus French influence gives a medieval window."
+      "inferability": "high",
+      "reasoning": "The Avignon papacy is specialised, but the papal court relocating to France is a distinctly late-medieval anchor."
     },
     {
       "name": "muhammad-bin-tughlaq-reforms",
@@ -956,10 +956,10 @@
     },
     {
       "name": "western-schism-begins",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "The Schism is specialised, but rival popes in Rome and Avignon give a late-medieval window."
+      "inferability": "high",
+      "reasoning": "Rival popes in Rome and Avignon is a strong late-medieval anchor, and the Schism is specialised rather than expert-only."
     },
     {
       "name": "joseon-dynasty",
@@ -1376,10 +1376,10 @@
     },
     {
       "name": "zulu-impis-regiment",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "recognition": "low",
-      "inferability": "medium",
-      "reasoning": "Shaka is a familiar name, but impi tactics give only a loose 19th-century anchor."
+      "inferability": "high",
+      "reasoning": "Shaka is a widely known name and Zulu regimental warfare reads clearly as the 19th century."
     },
     {
       "name": "second-french-empire",

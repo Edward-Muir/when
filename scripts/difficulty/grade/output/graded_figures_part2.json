@@ -1,0 +1,1014 @@
+{
+  "batch": "figures_part2",
+  "category": "figures",
+  "graded": [
+    {
+      "name": "birth-akhenaten",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Akhenaten is specialist knowledge; 'Egyptian pharaoh' bounds it to ancient Egypt but that window spans three millennia."
+    },
+    {
+      "name": "birth-ramesses-ii",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Ramesses the Great' is a familiar pharaoh name, but the card gives only 'Egyptian pharaoh' as an anchor - name-fame alone does not earn easy."
+    },
+    {
+      "name": "birth-sappho",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Sappho is specialist knowledge; 'Greek', 'Lesbos' and 'celebrated in antiquity' do anchor the ancient Greek world."
+    },
+    {
+      "name": "birth-lao-tzu",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Lao Tzu is a name more than a person to most, and 'Chinese sage' plus 'Taoism' places him nowhere in particular within millennia of Chinese history."
+    },
+    {
+      "name": "birth-pythagoras",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Everyone meets the Pythagorean theorem at school and 'Greek mathematician and philosopher' anchors to classical antiquity."
+    },
+    {
+      "name": "birth-confucius",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Confucius is universally recognised, but 'the state of Lu' is the card's only temporal cue and it tells a player nothing."
+    },
+    {
+      "name": "birth-sun-tzu",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Art of War is culturally famous, yet the card offers no era marker beyond 'Chinese military strategist'."
+    },
+    {
+      "name": "birth-sophocles",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Sophocles is a specialist name for a general audience, though 'Greek tragedian' and Oedipus Rex firmly place classical Athens."
+    },
+    {
+      "name": "birth-euripides",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Euripides is recognised only by the literarily inclined; 'Greek tragedian' anchors the classical Greek era."
+    },
+    {
+      "name": "birth-thucydides",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Thucydides is specialist knowledge, but 'the Peloponnesian War' is a strong classical Greek anchor."
+    },
+    {
+      "name": "birth-plato",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Plato is universally known and 'the Academy in Athens' anchors classical Greece."
+    },
+    {
+      "name": "birth-aristotle",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Aristotle is universally known and 'tutored Alexander' is a precise anchor."
+    },
+    {
+      "name": "birth-alexander-great",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Alexander the Great is school-curriculum knowledge and 'Macedonian prince', 'Pella' and the ancient-world empire anchor tightly."
+    },
+    {
+      "name": "birth-euclid",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Euclid himself is a dim name for most, but 'Greek mathematician' and the Elements anchor the classical era."
+    },
+    {
+      "name": "birth-archimedes",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Archimedes is widely known through the Eureka story and 'Greek mathematician and inventor' places him in antiquity."
+    },
+    {
+      "name": "birth-virgil",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Virgil is specialist knowledge for a general audience; 'Roman poet' and the Aeneid anchor the Roman world."
+    },
+    {
+      "name": "birth-seneca",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Seneca is a specialist name, but 'adviser to Nero' is a tight first-century anchor."
+    },
+    {
+      "name": "birth-nero",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Nero is one of the most infamous Romans and 'Roman emperor' plus the Great Fire anchors imperial Rome."
+    },
+    {
+      "name": "birth-hadrian",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Hadrian is known mainly through his wall; 'Roman emperor' and 'northern Britain' anchor the empire firmly."
+    },
+    {
+      "name": "birth-marcus-aurelius",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Marcus Aurelius is broadly familiar through Meditations and 'Roman emperor' is a strong era anchor."
+    },
+    {
+      "name": "birth-attila",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Attila is a household name and 'Eastern and Western Roman Empires' pins the late imperial period."
+    },
+    {
+      "name": "birth-muhammad",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Muhammad is universally recognised and 'founded Islam' anchors the card unambiguously."
+    },
+    {
+      "name": "birth-saladin",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Saladin is widely known and 'retook Jerusalem from the Crusaders' is a strong medieval anchor."
+    },
+    {
+      "name": "birth-francis-assisi",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Saint Francis is broadly recognised, but 'Italian friar' and 'Franciscan order' only imply a broad medieval span."
+    },
+    {
+      "name": "birth-thomas-aquinas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Aquinas is a specialist name outside theology, though 'fused Aristotle with Christian doctrine' signals medieval scholasticism."
+    },
+    {
+      "name": "birth-dante",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Dante is widely recognised and the Divine Comedy plus the founding of literary Italian anchors the late medieval period."
+    },
+    {
+      "name": "birth-petrarch",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Petrarch is specialist knowledge; 'father of humanism' and 'Renaissance literature' are explicit era anchors."
+    },
+    {
+      "name": "birth-tamerlane",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tamerlane is not a general-audience name and 'Turco-Mongol' plus Samarkand only loosely implies the post-Mongol centuries."
+    },
+    {
+      "name": "birth-cosimo-medici",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Cosimo specifically is expert knowledge, but 'Florentine banker' and 'Renaissance art' anchor the era well."
+    },
+    {
+      "name": "birth-lorenzo-medici",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lorenzo the Magnificent is specialist knowledge; 'Italian Renaissance' is stated outright."
+    },
+    {
+      "name": "birth-amerigo-vespucci",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Vespucci is a dim name behind a famous continent, but 'the Americas were named' after recognising 'a new continent' pins the Age of Discovery."
+    },
+    {
+      "name": "birth-erasmus",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Erasmus is a specialist name; 'Dutch humanist' and 'Renaissance learning' anchor the period."
+    },
+    {
+      "name": "birth-copernicus",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Copernicus is school knowledge and 'sparking a scientific revolution' anchors the early modern era."
+    },
+    {
+      "name": "birth-francisco-pizarro",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pizarro is less familiar than Cortes, but 'Spanish conquistador', 'Inca Empire' and 'founded Lima' anchor the 16th century."
+    },
+    {
+      "name": "birth-martin-luther",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Luther is universally taught and 'Protestant reformer' who 'split Western Christianity' is an unmistakable Reformation anchor."
+    },
+    {
+      "name": "birth-hernan-cortes",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Cortes is a familiar name and 'toppled the Aztec Empire' anchors the conquest era."
+    },
+    {
+      "name": "birth-john-calvin",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Calvin is a specialist name outside religious history, though 'Protestant Reformed Christianity' anchors the Reformation."
+    },
+    {
+      "name": "birth-francis-drake",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Drake is not a global household name, but 'circumnavigated the globe' and 'the Spanish Armada' are strong Elizabethan anchors."
+    },
+    {
+      "name": "birth-walter-raleigh",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Raleigh is specialist knowledge internationally; 'under Elizabeth I' is a tight anchor."
+    },
+    {
+      "name": "birth-galileo",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Galileo is universally taught and the telescope plus heliocentrism anchors the scientific revolution."
+    },
+    {
+      "name": "birth-caravaggio",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Caravaggio is an art-world name and the card offers no era word at all - 'Italian painter' with dramatic light could be any of six centuries."
+    },
+    {
+      "name": "birth-thomas-hobbes",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hobbes is known to few outside philosophy and 'modern political theory' and 'social contract' only loosely imply early modernity."
+    },
+    {
+      "name": "birth-velazquez",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Velazquez is expert knowledge for a general audience and 'Baroque' is the only, fairly weak, era word."
+    },
+    {
+      "name": "birth-pascal",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pascal is moderately familiar and 'probability theory' plus 'an early calculator' loosely implies the early modern period."
+    },
+    {
+      "name": "birth-newton",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Newton is universal school knowledge and 'founding classical mechanics' anchors the scientific revolution."
+    },
+    {
+      "name": "birth-handel",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Handel is known mostly through Messiah, but the card states 'Baroque' outright."
+    },
+    {
+      "name": "birth-benjamin-franklin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Franklin is universally known and 'Founding Father' anchors the American Revolution."
+    },
+    {
+      "name": "birth-david-hume",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Hume is a specialist name, but 'Enlightenment thought' is an explicit era anchor."
+    },
+    {
+      "name": "birth-adam-smith",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Adam Smith is a familiar name in the news, yet 'founded modern economics' and 'free markets' give only a loose era - fame alone is not placeability."
+    },
+    {
+      "name": "birth-edmund-burke",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Burke is expert knowledge outside political theory and 'writings on tradition' founding conservatism could sit anywhere from 1700 to 1900."
+    },
+    {
+      "name": "birth-joseph-haydn",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Haydn is a specialist name for most, but 'mentor to Mozart and Beethoven' is a strong anchor."
+    },
+    {
+      "name": "birth-paul-revere",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Revere is a US-specific figure with low international recognition; 'midnight ride warning of the British advance' anchors the Revolution tightly."
+    },
+    {
+      "name": "birth-thomas-jefferson",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Jefferson is globally known and 'the Declaration of Independence' anchors 1776."
+    },
+    {
+      "name": "birth-lafayette",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lafayette is a specialist name for most, though serving in both the American and French Revolutions is a strong anchor."
+    },
+    {
+      "name": "birth-robert-burns",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Burns is barely known outside Scotland and 'pioneer of the Romantic movement' is the only, broad, era cue."
+    },
+    {
+      "name": "birth-andrew-jackson",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Jackson has little international recognition, but 'seventh US president' places him in the early republic."
+    },
+    {
+      "name": "birth-napoleon",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Napoleon is one of the most recognised figures in history and the name itself anchors the era."
+    },
+    {
+      "name": "birth-georg-hegel",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Hegel is known only to those who read philosophy, and 'shaped modern thought from Marxism to existentialism' points forward rather than placing him."
+    },
+    {
+      "name": "birth-jane-austen",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Austen is well known through Pride and Prejudice, but the card names no era - 'comedy of manners' is the only, weak, cue."
+    },
+    {
+      "name": "birth-lord-byron",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Byron is a fading name for general audiences, but 'English Romantic poet' is an explicit era anchor."
+    },
+    {
+      "name": "birth-charles-babbage",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Babbage is known mainly to computing enthusiasts and 'first programmable computer' is an anchor that can mislead toward the 20th century."
+    },
+    {
+      "name": "birth-samuel-morse",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Morse the man is less known than his code, but the telegraph anchors the 19th century."
+    },
+    {
+      "name": "birth-mary-shelley",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mary Shelley is recognised through Frankenstein, but the card gives no era word at all."
+    },
+    {
+      "name": "birth-balzac",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Balzac is specialist knowledge, though 'post-Napoleonic France' is an explicit and tight anchor."
+    },
+    {
+      "name": "birth-ralph-waldo-emerson",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Emerson is barely recognised outside the US and 'Transcendentalism' plus 'self-reliance and nature' gives no datable anchor."
+    },
+    {
+      "name": "birth-charles-darwin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Darwin is universal school knowledge and 'the theory of evolution' anchors the 19th century."
+    },
+    {
+      "name": "birth-frederic-chopin",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Chopin is moderately recognised and 'the Romantic piano repertoire' is an explicit era anchor."
+    },
+    {
+      "name": "birth-richard-wagner",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Wagner is a familiar name, but the card names no era - 'epic operas' and 'leitmotifs' only loosely imply the 19th century."
+    },
+    {
+      "name": "birth-emily-bronte",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Emily Bronte specifically (as against her novel) is a dim name, and 'Gothic masterpiece' spans well over a century."
+    },
+    {
+      "name": "birth-karl-marx",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Marx is universally recognised and Das Kapital plus communism anchors the 19th century."
+    },
+    {
+      "name": "birth-nightingale",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Nightingale is broadly recognised and 'the Crimean War' is a strong, named anchor."
+    },
+    {
+      "name": "birth-fyodor-dostoevsky",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Dostoevsky is a familiar literary name, but the card gives no era beyond 'Russian novelist'."
+    },
+    {
+      "name": "birth-gregor-mendel",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mendel is met in school biology and 'founding genetics' loosely implies the 19th century."
+    },
+    {
+      "name": "birth-louis-pasteur",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Pasteur is widely known and pasteurisation, vaccines and germ theory anchor the 19th century firmly."
+    },
+    {
+      "name": "birth-leo-tolstoy",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tolstoy is a familiar name, but 'realist fiction' is the only era cue and War and Peace can mislead toward the Napoleonic period."
+    },
+    {
+      "name": "birth-maxwell",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Maxwell is essentially a physics-course name for general audiences and his equations carry no explicit era marker."
+    },
+    {
+      "name": "birth-johannes-brahms",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Brahms is a specialist name for most listeners, but 'German Romantic composer' states the era."
+    },
+    {
+      "name": "birth-andrew-carnegie",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Carnegie is moderately recognised and 'steel magnate' plus philanthropy implies the industrial age broadly."
+    },
+    {
+      "name": "birth-john-d-rockefeller",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rockefeller is a familiar name and 'Standard Oil' plus 'industrialist' implies the industrial age - but the card gives no tighter era."
+    },
+    {
+      "name": "birth-auguste-rodin",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Rodin is an art-world name and 'father of modern sculpture' is a loose late-19th/early-20th cue."
+    },
+    {
+      "name": "birth-tchaikovsky",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tchaikovsky is widely recognised through The Nutcracker, but 'Romantic melody' is the only, broad, era cue."
+    },
+    {
+      "name": "birth-dvorak",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Dvorak is specialist knowledge for a general audience and 'the Romantic tradition' is a wide and weak anchor."
+    },
+    {
+      "name": "birth-nietzsche",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Nietzsche is a familiar name and 'death of God' plus 'the overman' loosely implies 19th-century philosophy."
+    },
+    {
+      "name": "birth-alexander-graham-bell",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bell is moderately recognised and the telephone implies the industrial 19th century without pinning it."
+    },
+    {
+      "name": "birth-wyatt-earp",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Wyatt Earp is a US-frontier figure with little international recognition, though the O.K. Corral and Tombstone anchor the Old West."
+    },
+    {
+      "name": "birth-oscar-wilde",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Wilde is a moderately familiar name, but the card names no era."
+    },
+    {
+      "name": "birth-nikola-tesla",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Tesla is now a household name and 'alternating current' plus 'electrical power systems' anchors the electrification era."
+    },
+    {
+      "name": "birth-joseph-conrad",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Conrad is a specialist literary name and Heart of Darkness only loosely signals the colonial era."
+    },
+    {
+      "name": "birth-theodore-roosevelt",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Roosevelt is moderately recognised internationally and 'trust-busting' and 'the Square Deal' are US-specific cues that imply only a broad era."
+    },
+    {
+      "name": "birth-pierre-curie",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pierre Curie is overshadowed by his wife, but 'sharing a Nobel Prize with Marie Curie' is a strong, tight anchor."
+    },
+    {
+      "name": "birth-gustav-mahler",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mahler is a concert-hall name and 'bridged Romantic and modern music' is a soft turn-of-century cue."
+    },
+    {
+      "name": "birth-gustav-klimt",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Klimt's painting is far better known than his name, and 'Symbolist' and 'Vienna Secession' mean little to a general audience."
+    },
+    {
+      "name": "birth-henry-ford",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Ford is a household name and 'the assembly line and Model T' anchors the early automobile age."
+    },
+    {
+      "name": "birth-rudyard-kipling",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kipling is a fading name and 'first English-language Nobel laureate' loosely places him around 1900."
+    },
+    {
+      "name": "birth-wassily-kandinsky",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kandinsky is an art-history name and 'first purely abstract works' is a cue only the art-literate can date."
+    },
+    {
+      "name": "birth-marie-curie",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Marie Curie is universally taught and radioactivity plus two Nobel Prizes anchors the turn of the 20th century."
+    },
+    {
+      "name": "birth-henri-matisse",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Matisse is a specialist name for many, though 'Fauvist movement' and 'modern art' anchor the early 20th century."
+    },
+    {
+      "name": "birth-marcel-proust",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Proust is a name people cite rather than know, and 'memory and time' gives no era whatsoever."
+    },
+    {
+      "name": "birth-bertrand-russell",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Russell is known mainly to philosophy readers and 'Principia Mathematica' plus 'pacifist' is a soft early-20th-century cue."
+    },
+    {
+      "name": "birth-guglielmo-marconi",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Marconi is specialist knowledge, but long-distance radio and a Nobel Prize anchor the turn of the 20th century."
+    },
+    {
+      "name": "birth-winston-churchill",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Churchill is universally recognised and 'led the nation to victory in World War II' is a decisive anchor."
+    },
+    {
+      "name": "birth-carl-jung",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Jung is moderately familiar and 'analytical psychology' and 'the collective unconscious' imply the psychoanalytic era broadly."
+    },
+    {
+      "name": "birth-jack-london",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Jack London is a US-school-reading name with limited international reach, though 'his Klondike adventures' anchors the gold-rush years."
+    },
+    {
+      "name": "birth-helen-keller",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Keller is broadly recognised, but the card contains no temporal marker at all - 'author and activist' could be any modern decade."
+    },
+    {
+      "name": "birth-pablo-picasso",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Picasso is universally known and 'co-founded Cubism' plus Guernica anchors the early 20th century."
+    },
+    {
+      "name": "birth-james-joyce",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Joyce is a specialist literary name, but 'literary modernism' anchors the early 20th century."
+    },
+    {
+      "name": "birth-franz-kafka",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kafka is a familiar adjective more than a person, and the card gives no era word."
+    },
+    {
+      "name": "birth-harry-truman",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Truman has moderate international recognition and 'the end of World War II' and 'atomic bombings' anchor 1945."
+    },
+    {
+      "name": "birth-niels-bohr",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bohr is known mainly from science classes, but 'quantum theory' and the atomic model anchor the early 20th century."
+    },
+    {
+      "name": "birth-erwin-schrodinger",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Schrodinger's cat gives him unusual name recognition and 'quantum mechanics' anchors the early 20th century."
+    },
+    {
+      "name": "birth-ts-eliot",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Eliot is a specialist literary name, though 'literary modernism' anchors the era."
+    },
+    {
+      "name": "birth-ludwig-wittgenstein",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Wittgenstein is expert knowledge for most, but the card says 'twentieth-century' outright."
+    },
+    {
+      "name": "birth-charles-de-gaulle",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "De Gaulle has limited recognition outside France and Europe, but 'the Free French in WWII' is a decisive anchor."
+    },
+    {
+      "name": "birth-sergei-prokofiev",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Prokofiev is a concert-hall name and 'modern orchestral music' is a very loose cue."
+    },
+    {
+      "name": "birth-aldous-huxley",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Huxley is recognised through Brave New World, but the card names no era."
+    },
+    {
+      "name": "birth-f-scott-fitzgerald",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Fitzgerald is moderately known and 'the Jazz Age' is an explicit, tight anchor."
+    },
+    {
+      "name": "birth-ernest-hemingway",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Hemingway is a familiar name, but 'spare prose' and a Nobel Prize only loosely place the 20th century."
+    },
+    {
+      "name": "birth-enrico-fermi",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Fermi is essentially a physics name, though 'the first nuclear reactor' and 'the atomic age' anchor the 1940s."
+    },
+    {
+      "name": "birth-walt-disney",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Disney the man is less placeable than the brand, and 'films and theme parks' spans four decades."
+    },
+    {
+      "name": "birth-charles-lindbergh",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Lindbergh's name has faded, but 'the first solo nonstop flight across the Atlantic' is a tight anchor."
+    },
+    {
+      "name": "birth-george-orwell",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Orwell is widely read and 'warned against totalitarianism' implies the mid-20th century without stating it."
+    },
+    {
+      "name": "birth-pablo-neruda",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Neruda is a specialist name for most, and 'passionate love poems and political verse' places him nowhere."
+    },
+    {
+      "name": "birth-salvador-dali",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Dali is a familiar name and 'surrealist' loosely implies the 20th century."
+    },
+    {
+      "name": "birth-dmitri-shostakovich",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Shostakovich is a concert-hall name, but 'the Soviet state' is a strong anchor."
+    },
+    {
+      "name": "birth-katharine-hepburn",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hepburn's fame is receding and 'four-time Oscar winner' only places her somewhere in the studio era."
+    },
+    {
+      "name": "birth-simone-de-beauvoir",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "De Beauvoir is known mainly to those who read feminist theory and 'foundational text of feminism' is a broad cue."
+    },
+    {
+      "name": "birth-mother-teresa",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mother Teresa is widely recognised, but the card gives no era - 'Kolkata's poor' and canonisation span most of a century."
+    },
+    {
+      "name": "birth-jackson-pollock",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Pollock is an art-history name, though 'Abstract Expressionist movement' anchors the mid-20th century."
+    },
+    {
+      "name": "birth-richard-nixon",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Nixon is broadly recognised and Watergate plus opening China anchors the era, though the card leaves the decade implicit."
+    },
+    {
+      "name": "birth-frank-sinatra",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Sinatra is a familiar name but the card carries no era marker beyond 'singer and actor'."
+    },
+    {
+      "name": "birth-richard-feynman",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Feynman is known to science enthusiasts and 'quantum electrodynamics' is a loose 20th-century cue."
+    },
+    {
+      "name": "birth-isaac-asimov",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Asimov is moderately recognised and 'modern science fiction' loosely implies the mid-20th century."
+    },
+    {
+      "name": "birth-betty-friedan",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Friedan is a US-specific figure with low international recognition, though the card states 'the 1960s' outright."
+    },
+    {
+      "name": "birth-george-hw-bush",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bush senior has moderate recognition and 'the Cold War's end' and 'the Gulf War' anchor around 1990."
+    },
+    {
+      "name": "birth-fidel-castro",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Castro is widely recognised and the Cuban revolution anchors the Cold War era."
+    },
+    {
+      "name": "birth-andy-warhol",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Warhol is a familiar name and 'Pop Art' plus the Soup Cans implies the mid-century without stating it."
+    },
+    {
+      "name": "birth-anne-frank",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Anne Frank is universally known and 'the Holocaust' is a decisive anchor."
+    },
+    {
+      "name": "birth-neil-armstrong",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Armstrong is universally known and 'Apollo 11' anchors the card precisely."
+    },
+    {
+      "name": "birth-elizabeth-taylor",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Taylor's star has faded and 'Cleopatra star' plus AIDS activism gives a broad mid-to-late-century span."
+    },
+    {
+      "name": "birth-yuri-gagarin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Gagarin is globally known and 'the first human to journey into outer space' is a decisive space-age anchor."
+    },
+    {
+      "name": "birth-elvis-presley",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Elvis is universally recognised and 'King of Rock and Roll' anchors the mid-20th century."
+    },
+    {
+      "name": "birth-muhammad-ali",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Ali is universally recognised and heavyweight boxing plus his activism anchors the mid-20th century."
+    },
+    {
+      "name": "birth-bob-marley",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Marley is widely recognised and reggae implies the later 20th century without pinning it."
+    },
+    {
+      "name": "birth-david-bowie",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bowie is widely recognised and 'Ziggy Stardust' plus 'decades of pop reinvention' spans a long, loosely-placed career."
+    }
+  ]
+}
