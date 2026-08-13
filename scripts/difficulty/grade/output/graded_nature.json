@@ -1,0 +1,818 @@
+{
+  "batch": "nature",
+  "category": "nature",
+  "graded": [
+    {
+      "name": "earth-formation",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and it is the literal beginning of the planet — nothing can precede it."
+    },
+    {
+      "name": "moon-forming-impact",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The giant-impact origin of the Moon is popular-science common ground, and 'young Earth' pins it to the very start."
+    },
+    {
+      "name": "earth-oceans-form",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Few hold this as a discrete event, but 'molten surface cooled' anchors it unmistakably to the earliest Earth."
+    },
+    {
+      "name": "archean-eon-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Archean' means nothing to a general audience, but 'first stable continents' plus 'earliest microbial life' place it firmly at life's dawn."
+    },
+    {
+      "name": "late-heavy-bombardment",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist term, but 'battered the inner planets, scarring the young Earth and Moon' is a strong opening-of-the-timeline anchor."
+    },
+    {
+      "name": "first-life",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The origin of life is taught everywhere and 'primordial oceans' fixes it near the start."
+    },
+    {
+      "name": "first-cyanobacteria",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Cyanobacteria' is a specialist term and 'transforming the atmosphere' only loosely brackets the era."
+    },
+    {
+      "name": "oldest-stromatolites",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Stromatolites are unknown outside geology, though 'oldest visible records of life on Earth' is a genuine anchor."
+    },
+    {
+      "name": "first-photosynthetic-bacteria",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same specialist framing as the cyanobacteria card; photosynthesis/oxygen only broadly dates it."
+    },
+    {
+      "name": "proterozoic-eon-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Eon name is opaque and 'single-celled organisms and rising oxygen' spans an enormous stretch."
+    },
+    {
+      "name": "first-complex-cells",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Eukaryotes are school biology as a concept but not as a datable event; the card gives only a relative stage."
+    },
+    {
+      "name": "first-eukaryotic-cells",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event as first-complex-cells and graded identically — specialist term, relative-only anchor."
+    },
+    {
+      "name": "first-multicellular-life",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Multicellularity is a broadly familiar milestone, but the card gives only 'an early step toward complex organisms'."
+    },
+    {
+      "name": "first-animals-sponges",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sponges-as-first-animals is a specialist fact and the description supplies only relative sequence."
+    },
+    {
+      "name": "snowball-earth-cryogenian",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Cryogenian' is opaque and 'global glaciation' actively misleads — a player will read it as the Ice Age."
+    },
+    {
+      "name": "ediacaran-period-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Ediacaran' is unknown to a general audience and 'first large complex multicellular organisms' blurs into both the multicellular-life and Cambrian cards."
+    },
+    {
+      "name": "ediacaran-biota",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Same unrecognised period name; 'soft-bodied creatures on the ancient seafloor' gives no marker a general player can use."
+    },
+    {
+      "name": "cambrian-period-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The description names the Cambrian Explosion outright — a term with real popular currency."
+    },
+    {
+      "name": "cambrian-explosion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well-known popular-science term with a clear stage ('most major animal groups appeared'); matches the Cambrian-period card."
+    },
+    {
+      "name": "first-fish",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar milestone, but 'first vertebrates' only tells a player it is early animal life."
+    },
+    {
+      "name": "first-trilobites",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Trilobites are the archetypal 'old fossil' for most people; 'early animals' narrows the era loosely."
+    },
+    {
+      "name": "first-vertebrates",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Vertebrates' is a more technical framing than the parallel 'First Fish' card and the text offers no era marker."
+    },
+    {
+      "name": "ordovician-period-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Period name is unknown and 'diversification of marine vertebrates and invertebrates' is indistinguishable from the Cambrian card."
+    },
+    {
+      "name": "first-coral-reefs",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "No one dates the first reefs, and 'reef-building organisms' carries no temporal marker."
+    },
+    {
+      "name": "first-land-plants",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Greening of the continents' is a recognisable major transition, though it fixes only a broad window."
+    },
+    {
+      "name": "ordovician-mass-extinction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Enthusiast-level extinction; 'marine life' implies pre-land-dominance but the period name gives nothing."
+    },
+    {
+      "name": "silurian-period-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Silurian' is unrecognised and 'life expanded from the oceans onto land' overlaps three other cards without distinguishing itself."
+    },
+    {
+      "name": "first-jawed-fish",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist milestone; the card only says it came after fish existed."
+    },
+    {
+      "name": "arthropods-colonize-land",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'First animals to live on land' is a graspable, widely taught transition."
+    },
+    {
+      "name": "devonian-period-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Age of Fishes' is a real textbook hook, which keeps this above the other unrecognised period cards."
+    },
+    {
+      "name": "age-of-fishes",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The phrase is schoolbook-adjacent but not general knowledge, and 'during the Devonian' only helps someone who already knows."
+    },
+    {
+      "name": "first-insects",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely familiar milestone with a loose 'on land, very successful' anchor."
+    },
+    {
+      "name": "first-forests",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A general audience has no sense of when forests first appeared, and 'drawing down carbon' gives no era."
+    },
+    {
+      "name": "first-amphibians-tiktaalik",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tiktaalik is known to science-followers only; 'crawled from water onto land' places it relatively but not absolutely."
+    },
+    {
+      "name": "fish-walk-onto-land",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The fish-to-land story is one of the most retold episodes in evolution."
+    },
+    {
+      "name": "late-devonian-extinction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Enthusiast-level extinction whose description names only marine victims."
+    },
+    {
+      "name": "carboniferous-period-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Coal-forming forests and giant insects are a good hook, but 'Carboniferous' itself is not general knowledge."
+    },
+    {
+      "name": "first-amniote-egg",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A specialist milestone; 'freed from water, spread across dry land' gives only a relative position."
+    },
+    {
+      "name": "pangaea-forms",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pangaea is widely taught, but its formation (as opposed to its break-up) is the less familiar half."
+    },
+    {
+      "name": "first-reptiles",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar milestone, positioned only as 'first fully land-adapted vertebrates'."
+    },
+    {
+      "name": "giant-insects-of-carboniferous",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Hawk-sized dragonflies is a popular factoid and 'Carboniferous swamps' ties it to the coal forests."
+    },
+    {
+      "name": "permian-period-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The period name is obscure but the description hands the player Pangaea, a widely taught marker."
+    },
+    {
+      "name": "triassic-period-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Triassic is one of the three familiar Mesozoic names and the text says 'first dinosaurs and mammals' outright."
+    },
+    {
+      "name": "end-permian-mass-extinction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'The Great Dying' is enthusiast knowledge and the description risks being read as the dinosaur extinction."
+    },
+    {
+      "name": "first-dinosaurs-appear",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Dinosaurs are the single strongest anchor in deep time and this is explicitly their beginning."
+    },
+    {
+      "name": "first-mammals",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Living alongside the early dinosaurs' hands the player the dinosaur anchor directly."
+    },
+    {
+      "name": "first-mammals-evolve",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Duplicate of first-mammals with the same 'shadow of the early dinosaurs' anchor; graded identically."
+    },
+    {
+      "name": "plateosaurus",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost no one knows Plateosaurus, but 'one of the earliest large dinosaurs, Late Triassic' places it precisely."
+    },
+    {
+      "name": "jurassic-period-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Jurassic is a household word and the card says 'dominated by enormous dinosaurs'."
+    },
+    {
+      "name": "pangaea-breaks-apart",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Continental drift is widely taught, but the break-up spans a long, vaguely bounded interval in the text."
+    },
+    {
+      "name": "age-of-dinosaurs",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and the description names the Jurassic explicitly."
+    },
+    {
+      "name": "brachiosaurus",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Less iconic than T. rex or Stegosaurus by name, though 'Jurassic Period' is stated."
+    },
+    {
+      "name": "first-birds-archaeopteryx",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Archaeopteryx is a name most people have not retained, but 'feathered dinosaur... Jurassic Period' is explicit."
+    },
+    {
+      "name": "stegosaurus",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the handful of dinosaurs everyone can name, with the Jurassic stated in the text."
+    },
+    {
+      "name": "cretaceous-period-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The name is familiar but the description leads on flowering plants rather than dinosaurs, weakening the anchor."
+    },
+    {
+      "name": "first-flowering-plants",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Flowers are relatively recent' is common knowledge, but the card supplies no era marker beyond pollinators."
+    },
+    {
+      "name": "first-bees",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Not an event anyone holds; the only anchor is a cross-reference to another card ('alongside flowers')."
+    },
+    {
+      "name": "velociraptor",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Made famous by film, and the description states 'Late Cretaceous Period'."
+    },
+    {
+      "name": "triceratops",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally recognised dinosaur with the era stated."
+    },
+    {
+      "name": "tyrannosaurus-rex",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The most famous dinosaur, era named in the text."
+    },
+    {
+      "name": "tyrannosaurus-roams",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Duplicate framing of T. rex with 'the final age of the dinosaurs' spelled out."
+    },
+    {
+      "name": "paleocene-epoch-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Paleocene' is unknown, but 'niches left by the extinct dinosaurs' is a bullseye anchor."
+    },
+    {
+      "name": "eocene-epoch-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Epoch name is opaque and 'first modern mammal groups' could be anywhere in the post-dinosaur span."
+    },
+    {
+      "name": "first-grasses",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure as an event, but 'after the dinosaurs' is an unmistakable marker."
+    },
+    {
+      "name": "first-primates",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Ancestors of monkeys, apes, and humans' places it in the mammal age without narrowing further."
+    },
+    {
+      "name": "whales-return-to-sea",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Whale evolution is a popular story, but the card contains no temporal marker of any kind."
+    },
+    {
+      "name": "oligocene-epoch-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unrecognised epoch name; 'open grasslands spread' duplicates the grasses card without dating it."
+    },
+    {
+      "name": "first-apes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Lineage leading toward gorillas and humans' puts it shortly before the human story."
+    },
+    {
+      "name": "miocene-epoch-begins",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Epoch name means nothing and 'apes diversified' overlaps the first-apes card with no distinguishing marker."
+    },
+    {
+      "name": "human-chimp-split",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely reported fact; the card places it before hominins but gives no sharper anchor."
+    },
+    {
+      "name": "pliocene-epoch-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Pliocene' is unknown, but 'earliest human ancestors known as hominins appeared' is a strong anchor."
+    },
+    {
+      "name": "first-hominins-australopithecus",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Australopithecus is taught in schools and 'walked upright, key human ancestor' brackets the era."
+    },
+    {
+      "name": "first-upright-walkers",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bipedalism in Africa is a familiar milestone with a broad but real window."
+    },
+    {
+      "name": "lucy-australopithecus-lived",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lucy is a famous fossil and the card identifies her as an Australopithecus human ancestor."
+    },
+    {
+      "name": "pleistocene-epoch-ice-age-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The epoch name is unfamiliar, but '(Ice Age)' and 'appearance of the genus Homo' are both strong markers."
+    },
+    {
+      "name": "giant-ground-sloths-roam",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not widely known as an event, but 'during the Ice Age' anchors it firmly."
+    },
+    {
+      "name": "homo-erectus-emerges",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Homo erectus is school curriculum; 'first to spread beyond Africa, using fire' brackets it before modern humans."
+    },
+    {
+      "name": "neanderthals-appear",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Everyone knows Neanderthals, but nothing in the text distinguishes their appearance from their extinction."
+    },
+    {
+      "name": "woolly-mammoths-appear",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mammoths are universally known and the card names Ice Age Europe and Asia."
+    },
+    {
+      "name": "first-humans",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The origin of Homo sapiens is about as universally known as an event gets, even though the one-line description adds little."
+    },
+    {
+      "name": "saber-toothed-cats",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Iconic Ice Age animal with 'large Ice Age mammals' stated outright."
+    },
+    {
+      "name": "anatomically-modern-humans",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The 'anatomically modern' framing is more technical than the plain Homo sapiens card and only loosely separable from it."
+    },
+    {
+      "name": "neanderthal-extinction",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "High recognition, but 'competition with modern humans or climate change' spans the entire modern-human era."
+    },
+    {
+      "name": "extinction-neanderthals",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Duplicate of neanderthal-extinction; same recognition and same weak temporal anchor."
+    },
+    {
+      "name": "last-glacial-maximum",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The term is technical but the description translates it — 'peak of the most recent Ice Age' is a strong anchor."
+    },
+    {
+      "name": "dog-becomes-companion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Dog domestication is a well-covered story and 'the first animals tamed by people' places it at the dawn of domestication."
+    },
+    {
+      "name": "younger-dryas-climate-event",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The name is unknown, but 'disrupted early human societies and may have triggered agriculture' anchors it to the farming threshold."
+    },
+    {
+      "name": "holocene-epoch-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Epoch name is unfamiliar, but 'the last Ice Age ended, ushering in the warm modern climate' is an unambiguous marker."
+    },
+    {
+      "name": "ice-age-megafauna-extinction",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mammoths and giant sloths are familiar, and 'as the last Ice Age ended' brackets it, though not against the neighbouring Ice Age cards."
+    },
+    {
+      "name": "woolly-mammoth-extinction",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "A trap card: mammoths are famous but 'surviving on isolated islands' is the only hint that this is far later than the Ice Age."
+    },
+    {
+      "name": "archaic-period-greece",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The period label is specialist, but city-states, colonisation and the Greek alphabet anchor it hard to ancient Greece."
+    },
+    {
+      "name": "aristotle-studies-animals",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Aristotle is a textbook-strength anchor and the card names him as a Greek philosopher."
+    },
+    {
+      "name": "shen-kuo-explains-fossils",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Shen Kuo is unknown to a general audience and 'Chinese scholar' supplies no era whatsoever."
+    },
+    {
+      "name": "last-aurochs-dies",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Aurochs' is obscure and 'died in Poland' carries no temporal marker at all — unlike the zoo-era extinction cards."
+    },
+    {
+      "name": "linnaeus-systema-naturae",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Binomial naming is school biology and the Latin-classification framing reads as Enlightenment science."
+    },
+    {
+      "name": "cuvier-proves-extinction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cuvier is not a general-audience name; 'fossil animals like mastodons' only hints at early paleontology."
+    },
+    {
+      "name": "anning-finds-ichthyosaur",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Mary Anning's profile is rising but still specialist, and 'Dorset coast' gives no era at all."
+    },
+    {
+      "name": "dinosaur-fossils",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Buckland and Megalosaurus are specialist names; 'first dinosaur scientifically named' implies early science but no century."
+    },
+    {
+      "name": "dinosaur-word-coined",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The coining of 'dinosaur' is a mildly familiar story, but the card gives no clue when Richard Owen did it."
+    },
+    {
+      "name": "gorillas-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'Western scientists... specimens found in Africa' reads as colonial-era science and nothing tighter."
+    },
+    {
+      "name": "neanderthal-discovery",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The find is a known story, but 'workers in the Neander Valley found bones' supplies no era."
+    },
+    {
+      "name": "neanderthal-fossil-found",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Duplicate of neanderthal-discovery; same absence of any temporal marker, so graded the same."
+    },
+    {
+      "name": "wallace-line-described",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Wallace is far less known than Darwin and the boundary itself is specialist; only 'charted' hints at the naturalist era."
+    },
+    {
+      "name": "archaeopteryx-discovered",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'supporting evolution' anchors it tightly to the years just after Darwin."
+    },
+    {
+      "name": "last-quagga-dies",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The quagga is obscure, but 'in an Amsterdam zoo' brackets it to the era of public zoos."
+    },
+    {
+      "name": "java-man-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist find; 'Homo erectus fossils in Indonesia' reads as colonial-era paleoanthropology without a sharper date."
+    },
+    {
+      "name": "wegener-continental-drift",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Continental drift is taught widely and 'proposed' (not proven) signals the early twentieth century."
+    },
+    {
+      "name": "passenger-pigeon-extinct",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A famous cautionary extinction; 'once numbering billions... died in a zoo' places it in the industrial-conservation era."
+    },
+    {
+      "name": "last-thylacine-dies",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Tasmanian tiger is widely known and 'died in a zoo' brackets the era."
+    },
+    {
+      "name": "tutankhamun-fossil-coelacanth",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The coelacanth story is specialist, and 'caught off South Africa' gives only a vague modern-science window."
+    },
+    {
+      "name": "asteroid-killed-dinosaurs",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The asteroid theory is universally known; 'proposed' by named scientists puts it plainly in the modern scientific era."
+    },
+    {
+      "name": "chicxulub-crater-confirmed",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The crater is familiar but the card says nothing about when it was identified, and it is easily confused with the 1980 theory card."
+    },
+    {
+      "name": "otzi-iceman-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Otzi is a well-covered find and 'hikers discovered' signals the late twentieth century."
+    },
+    {
+      "name": "ardi-fossil-described",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ardi is far less famous than Lucy; 'scientists unveiled' only says modern, and the 4.4-million-year figure invites misplacement."
+    },
+    {
+      "name": "denisovans-identified",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Denisovans are specialist knowledge, but 'DNA from a finger bone' anchors it firmly to the genomics era."
+    },
+    {
+      "name": "northern-white-rhino-decline",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A heavily covered recent news story; anyone who reads the news places Sudan's death in the last decade."
+    }
+  ]
+}

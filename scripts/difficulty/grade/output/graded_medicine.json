@@ -1,0 +1,1105 @@
+{
+  "batch": "medicine",
+  "category": "medicine",
+  "graded": [
+    {
+      "name": "amputation-and-surgery",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Prehistoric archaeological find with no public profile; 'earliest evidence' only says 'very old' and players will guess far too late."
+    },
+    {
+      "name": "wine-as-anaesthesia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unrecognised practice and the card gives no era at all beyond 'before modern anaesthesia'."
+    },
+    {
+      "name": "edwin-smith-surgical-papyrus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure text, but 'Egyptian scroll' + 'oldest known surgical text' anchors ancient Egypt firmly."
+    },
+    {
+      "name": "surgical-treatise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Generic name; description leans on 'papyrus' alone to imply Egypt, a weaker anchor than the sibling card."
+    },
+    {
+      "name": "ebers-papyrus-written",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition offset by explicit 'Egyptian medical scroll' anchor."
+    },
+    {
+      "name": "cataract-surgery-ancient",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Name and description both say 'ancient' and name India and Egypt - strong era anchor despite low recognition."
+    },
+    {
+      "name": "susruta-samhita",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Sanskrit title unknown to a general audience and nothing in the text dates it."
+    },
+    {
+      "name": "systematization-of-medicine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Wholly generic title; 'in India' is a place, not an era."
+    },
+    {
+      "name": "birth-hippocrates",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Hippocrates is a household name and 'Greek physician' pins the classical era."
+    },
+    {
+      "name": "asclepius-healing-cult",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure cult, but 'Greek healing temples' anchors ancient Greece unambiguously."
+    },
+    {
+      "name": "hippocrates-corpus",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Hippocrates named outright; medicine-separating-from-religion reads as classical Greece."
+    },
+    {
+      "name": "hippocrates-medicine",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous figure plus explicit 'Greek physician' anchor."
+    },
+    {
+      "name": "hippocratic-oath-composed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known oath with an explicit Greek-physician anchor."
+    },
+    {
+      "name": "herophilus-dissects-human-body",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Herophilus is expert-only, but 'in Alexandria' anchors the Hellenistic world."
+    },
+    {
+      "name": "huangdi-neijing-compiled",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Opaque title for Western players and 'China's foundational medical text' spans a millennium."
+    },
+    {
+      "name": "acupuncture-systematized",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Acupuncture itself is widely known; 'Chinese physicians formalized' places it loosely in imperial China."
+    },
+    {
+      "name": "celsus-de-medicina-encyclopedia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Celsus is unknown to a general audience, but 'the Roman writer' is a strong era anchor."
+    },
+    {
+      "name": "first-pharmacopoeia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Dioscorides is expert-only; players must reason backwards from '1,500 years authoritative' to reach antiquity."
+    },
+    {
+      "name": "galen-medical-advances",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Galen is a dimly familiar name; 'Pergamon' and 'dominated for centuries' only loosely suggest the classical world."
+    },
+    {
+      "name": "galen-medical-dominance",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same figure, and the reference to Islamic medicine can pull players centuries too late."
+    },
+    {
+      "name": "hua-tuo-surgical-anesthesia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Hua Tuo is unknown outside China and 'Chinese surgeon' carries no date."
+    },
+    {
+      "name": "first-hospital-baghdad",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little recognition; 'Islamic world' plus Baghdad suggests the Islamic Golden Age but across a wide window."
+    },
+    {
+      "name": "al-razi-physician",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Al-Razi is barely known generally; 'Persian physician' points to the Islamic Golden Age only broadly."
+    },
+    {
+      "name": "medical-school",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Salerno itself is unknown, but 'Europe's first major medical school' drawing on Arab texts reads clearly medieval."
+    },
+    {
+      "name": "al-razi-distinguishes-smallpox",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure figure with only a 'Persian physician' era hint - not a medium-tier card."
+    },
+    {
+      "name": "al-razi-medical-treatise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event and same weak Islamic-Golden-Age anchor."
+    },
+    {
+      "name": "al-zahrawi-surgical-encyclopedia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Al-Zahrawi is expert-only and 'Andalusian' reads as a place more than a period for most players."
+    },
+    {
+      "name": "avicenna-medical-education",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Avicenna is a faintly familiar name; the Islamic-world-and-Europe framing gives only a broad medieval hint."
+    },
+    {
+      "name": "ibn-sina-medicine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same figure and clue strength as the Avicenna card; low recognition keeps it above medium."
+    },
+    {
+      "name": "constantine-african-translations",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Translator is unknown, but Arabic-into-Latin transmission is a clear medieval marker."
+    },
+    {
+      "name": "leprosy-hospitals-spread",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Leper hospitals across Europe is a familiar medieval image even if the event is not known."
+    },
+    {
+      "name": "pharmacy-school",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown institutional milestone with only a vague 'medical school' era cue."
+    },
+    {
+      "name": "mondino-anatomy-dissection",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Mondino is expert-only; 'first European anatomy manual' in Bologna anchors the late medieval university."
+    },
+    {
+      "name": "guy-de-chauliac-surgery-text",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown surgeon and nothing but 'French' - the text never places the century."
+    },
+    {
+      "name": "quarantine-origins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ragusa is obscure, but ship isolation against plague reads clearly as the medieval Mediterranean."
+    },
+    {
+      "name": "anatomical-drawing",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leonardo da Vinci is universally known and anchors the Renaissance by himself."
+    },
+    {
+      "name": "first-autopsy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same famous figure and same Renaissance anchor."
+    },
+    {
+      "name": "paracelsus-chemical-medicine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Paracelsus is a half-familiar name; 'minerals and chemicals against old dogma' places it only loosely in the early modern period."
+    },
+    {
+      "name": "pare-improves-wound-care",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Pare is little known and cauterisation-to-ligature gives only a vague pre-modern surgical era."
+    },
+    {
+      "name": "first-anatomy-theatre",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but Padua university dissection theatres are a recognisably Renaissance image."
+    },
+    {
+      "name": "joseon-korean-medicine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Dongeuibogam is unknown outside Korea and the card carries no era marker."
+    },
+    {
+      "name": "santorio-metabolism-experiments",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure figure and a balance-chair experiment that could plausibly be any century from 1500 to 1800."
+    },
+    {
+      "name": "cinchona-bark-malaria",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little recognition; 'Jesuits' and 'Peruvian' narrow it to the colonial era but no further."
+    },
+    {
+      "name": "first-recorded-vital-statistics",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Graunt is obscure; London death records suggest early modern but give no tighter cue."
+    },
+    {
+      "name": "blood-transfusion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Named physician is unknown; lamb-to-human experimentation implies early, pre-scientific transfusion attempts."
+    },
+    {
+      "name": "first-human-blood-transfusion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event, same weak anchor - low recognition keeps it hard."
+    },
+    {
+      "name": "leeuwenhoek-microbes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Leeuwenhoek and the first microscope observations are school-science familiar and imply the early scientific revolution."
+    },
+    {
+      "name": "wiseman-english-surgery",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Wiseman is unknown and 'father of English surgery' supplies no century whatsoever."
+    },
+    {
+      "name": "smallpox-variolation-europe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Lady Montagu is little known; Istanbul inoculation before Jenner is a subtle anchor most players will miss."
+    },
+    {
+      "name": "first-blood-pressure-measurement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hales is obscure and the crude horse-artery experiment only suggests 'early science'."
+    },
+    {
+      "name": "first-clinical-trial-scurvy",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The citrus-cures-scurvy story is fairly well known and age-of-sail naval context narrows the era."
+    },
+    {
+      "name": "morgagni-founds-pathology",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown figure and an autopsy-and-symptoms description that would fit anywhere from 1550 to 1850."
+    },
+    {
+      "name": "priestley-oxygen-isolation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Discovery of oxygen is school chemistry and 'dephlogisticated air' is a period-marking phrase."
+    },
+    {
+      "name": "withering-digitalis",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Withering is unknown; the archaic word 'dropsy' hints pre-modern but not a century."
+    },
+    {
+      "name": "lavoisier-chemical-nomenclature",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lavoisier is a familiar name and replacing alchemical terms marks the chemical revolution."
+    },
+    {
+      "name": "guillotine-first-used",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Guillotine plus France is an instant French Revolution anchor."
+    },
+    {
+      "name": "pinel-reforms-asylums",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Pinel is little known; humane asylum reform in Paris gives only a broad Enlightenment cue."
+    },
+    {
+      "name": "first-cesarean-mother-survives",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure frontier surgeon; 'in America' hints at the early republic but the century is open."
+    },
+    {
+      "name": "homeopathy-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Homeopathy is widely known as a practice and its dilution doctrine reads as pre-modern medicine."
+    },
+    {
+      "name": "jenner-vaccination-smallpox",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Jenner and cowpox are school-curriculum staples; 'pioneering vaccination' marks the first vaccine of all."
+    },
+    {
+      "name": "vaccination-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Same universally taught event; recognition is high enough that medium understates it."
+    },
+    {
+      "name": "general-anesthetic",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Hanaoka is unknown in the West, and 'first general anesthesia' actively misleads players toward the 1846 ether story."
+    },
+    {
+      "name": "morphine-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Morphine is a familiar drug and 'first alkaloid extracted' points to early chemical medicine."
+    },
+    {
+      "name": "anaesthesia-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The arrival of painless surgery is a well-known milestone and ether marks the 19th century."
+    },
+    {
+      "name": "first-anesthesia-surgery",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same milestone; recognition of ether anaesthesia is broad enough that hard overstates it."
+    },
+    {
+      "name": "anesthesia-ether",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Morton's demonstration is a familiar milestone with a clear 19th-century hospital setting."
+    },
+    {
+      "name": "anesthesia-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same public demonstration, same mid-19th-century framing."
+    },
+    {
+      "name": "nitroglycerin",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The substance is famous even if the chemist is not; explosives chemistry reads as the industrial 19th century."
+    },
+    {
+      "name": "semmelweis-childbed-fever",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The handwashing story is widely retold and pre-germ-theory hospital wards place it in the 1800s."
+    },
+    {
+      "name": "chloroform-eases-childbirth",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The event is little known, but Queen Victoria is an explicit and strong era anchor."
+    },
+    {
+      "name": "florence-nightingale-crimea",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Nightingale is school curriculum and the Crimean War names the era outright."
+    },
+    {
+      "name": "virchow-cellular-pathology",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Virchow is barely known generally; cell-based disease theory only loosely implies the mid-1800s."
+    },
+    {
+      "name": "pasteur-disproves-spontaneous",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The specific experiment is less famous than Pasteur himself, and only his name dates the card."
+    },
+    {
+      "name": "first-nursing-textbook",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Notes on Nursing is moderately known and the Nightingale name carries the era."
+    },
+    {
+      "name": "pasteurization",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Pasteurization is universally recognised and Pasteur's name places it in the 19th century."
+    },
+    {
+      "name": "pasteurization-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Same universally recognised process and same anchor."
+    },
+    {
+      "name": "antiseptic-surgery",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lister and carbolic acid are commonly taught; pre-sterile surgery implies the later 1800s."
+    },
+    {
+      "name": "lister-spray-operating-theatre",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same figure and method with the same broad Victorian-surgery cue."
+    },
+    {
+      "name": "surgery-antiseptic-system",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Listerine brand is universally familiar and the description explicitly ties it to Lister's era."
+    },
+    {
+      "name": "germ-theory",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Germ theory is taught worldwide and both Pasteur and Koch anchor it to the 19th century."
+    },
+    {
+      "name": "koch-tuberculosis",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Koch is not a general-audience name and bacteriology gives only a loose late-1800s cue."
+    },
+    {
+      "name": "koch-tuberculosis-bacterium",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same low recognition; the germ-theory mention is the only era hint."
+    },
+    {
+      "name": "surgery-local-anesthesia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Koller is unknown; cocaine-as-medicine in Vienna hints at the late 19th century but only for those who catch it."
+    },
+    {
+      "name": "first-rabies-vaccine",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The boy-and-rabid-dog story is moderately well known and Pasteur dates it loosely."
+    },
+    {
+      "name": "fingerprinting-adopted",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Fingerprinting is universally familiar; modern police forensics implies the turn of the 20th century."
+    },
+    {
+      "name": "rubber-surgical-gloves",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Halsted is unknown and rubber gloves could plausibly be dated anywhere across fifty years."
+    },
+    {
+      "name": "diphtheria-antitoxin-developed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Behring is obscure, and the Nobel reference can push players later than the actual date."
+    },
+    {
+      "name": "first-typhoid-vaccine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Wright is unknown; 'wartime soldiers' hints at WWI but the vaccine itself predates it."
+    },
+    {
+      "name": "aspirin-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Aspirin is universally known even if its Bayer origin is not, and industrial pharmacy implies the turn of the century."
+    },
+    {
+      "name": "blood-types-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Blood groups are common knowledge; the ABO discovery reads as early laboratory medicine."
+    },
+    {
+      "name": "blood-groups-transfusion-safe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A follow-on milestone few recognise, anchored only by reference to Landsteiner's groups."
+    },
+    {
+      "name": "ehrlich-magic-bullet",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ehrlich and Salvarsan are specialist knowledge; pre-antibiotic syphilis therapy is a weak era cue."
+    },
+    {
+      "name": "vitamins-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Vitamins are universally familiar and beriberi-era nutrition science implies the early 20th century."
+    },
+    {
+      "name": "bcg-tuberculosis-vaccine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "BCG is recognised mainly where it is still given; the card gives only a generic vaccine-era cue."
+    },
+    {
+      "name": "insulin-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Banting and Best discovering insulin is a widely taught milestone of early 20th-century medicine."
+    },
+    {
+      "name": "first-insulin-injection",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The patient is unknown; the card is a footnote to the discovery rather than the famous event."
+    },
+    {
+      "name": "antibiotics",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Fleming's mould dish is one of the most widely known stories in medicine."
+    },
+    {
+      "name": "iron-lung-developed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The iron lung is an iconic image and polio wards place it in the pre-vaccine mid-century."
+    },
+    {
+      "name": "penicillin-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known accidental discovery."
+    },
+    {
+      "name": "first-antibiotic-prontosil",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Domagk and Prontosil are specialist knowledge, anchored only as 'before penicillin took over'."
+    },
+    {
+      "name": "defibrillator",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The device is familiar from television, but the card gives no era cue at all - electric heart restart could be dated across half a century."
+    },
+    {
+      "name": "penicillin-mass-produced",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The scale-up is a moderately known part of the penicillin story and implies the wartime years."
+    },
+    {
+      "name": "pap-smear-introduced",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The test is widely known but nothing in the card dates it; cancer screening spans the whole 20th century."
+    },
+    {
+      "name": "streptomycin-cures-tb",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Waksman is unknown to general players; only 'first antibiotic against TB' hints at the post-penicillin years."
+    },
+    {
+      "name": "first-kidney-transplant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The identical-twin transplant is a moderately known first and reads as mid-century surgery."
+    },
+    {
+      "name": "first-organ-transplant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event and same mid-century surgical framing."
+    },
+    {
+      "name": "polio-vaccine",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Salk and polio are universally known and culturally tied to the post-war years."
+    },
+    {
+      "name": "minamata-disease",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognised mainly in Japan and in environmental circles; industrial mercury poisoning implies the post-war decades only broadly."
+    },
+    {
+      "name": "birth-control-pill-developed",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The Pill is universally known and culturally tied to the mid-century."
+    },
+    {
+      "name": "first-ultrasound-imaging",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pregnancy scans are universally familiar and 'sonar-like' implies the post-war era."
+    },
+    {
+      "name": "pacemaker-implanted",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pacemakers are commonly known and implantable electronics implies mid-century miniaturisation."
+    },
+    {
+      "name": "birth-control-pill",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Same universally known approval milestone as its sibling card, which is already easy."
+    },
+    {
+      "name": "oral-contraceptive-pill",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally known milestone with a clear modern-regulator framing."
+    },
+    {
+      "name": "first-hip-replacement",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The operation is familiar but the card offers no era cue; Charnley's date is unguessable from the text."
+    },
+    {
+      "name": "first-liver-transplant",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A little-known first, placed only by sitting somewhere in the transplant era."
+    },
+    {
+      "name": "first-lung-transplant",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same: recognised by few, and only the generic transplant era locates it."
+    },
+    {
+      "name": "first-heart-transplant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Barnard's transplant was a global sensation and still carries moderate recognition."
+    },
+    {
+      "name": "genetic-modification",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Boyer and Cohen are specialist names; 'recombinant DNA' points to early biotech but not a decade."
+    },
+    {
+      "name": "monoclonal-antibodies-created",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Kohler and Milstein are unknown generally and the card offers no era marker beyond lab biology."
+    },
+    {
+      "name": "first-statin-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Statins are familiar as drugs but the discovery and its date are not, and the card gives no era cue."
+    },
+    {
+      "name": "dna-sequencing-method",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sanger is a specialist name; molecular biology only places it somewhere after the double helix."
+    },
+    {
+      "name": "first-dna-sequencing",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event, same limited anchoring."
+    },
+    {
+      "name": "last-natural-smallpox-case",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Smallpox eradication is well known and 'the last natural case' sits just before it."
+    },
+    {
+      "name": "ivf-first-baby",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Louise Brown and the first IVF birth are moderately well known and read as the late 20th century."
+    },
+    {
+      "name": "test-tube-baby",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event under its popular name, same era cue."
+    },
+    {
+      "name": "smallpox-eradicated",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "One of the best-known public health achievements in history, explicitly framed as a WHO declaration."
+    },
+    {
+      "name": "aids-epidemic-recognized",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The beginning of the AIDS epidemic is culturally anchored to the early 1980s for a general audience."
+    },
+    {
+      "name": "aids-identified",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same widely known moment with the same strong early-80s cultural anchor."
+    },
+    {
+      "name": "first-hepatitis-b-vaccine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The vaccine is routine but its introduction is not a known event, and only 'modern vaccine' dates it."
+    },
+    {
+      "name": "artificial-heart-implanted",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Jarvik-7 was a major news story and reads as the electronics-and-implants era."
+    },
+    {
+      "name": "first-artificial-heart",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event as the Jarvik-7 card; recognition of the Barney Clark story is moderate, not low."
+    },
+    {
+      "name": "hiv-identified",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Identifying the virus is less distinctly remembered than the epidemic itself, and the card gives only the AIDS-era cue."
+    },
+    {
+      "name": "aids-quilt",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Quilt is remembered by few outside the US; the AIDS crisis is the only era anchor."
+    },
+    {
+      "name": "azt-approved-aids",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "AZT is specialist-adjacent knowledge; the card is anchored only by the AIDS crisis at large."
+    },
+    {
+      "name": "azt-hiv-treatment",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same drug and same limited anchor."
+    },
+    {
+      "name": "first-laser-eye-surgery",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Laser vision correction is familiar, but nothing in the card dates it - lasers span decades."
+    },
+    {
+      "name": "keyhole-laparoscopic-surgery",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The first laparoscopic gallbladder removal is not a known event; 'minimally invasive' only implies late-modern surgery."
+    },
+    {
+      "name": "human-genome-project",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The project is a familiar name to a general audience and genomics places it in the late 20th century."
+    },
+    {
+      "name": "commercial-genetic-test",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "BRACAnalysis is an industry milestone almost nobody recognises, and commercial genetic testing spans decades in public memory."
+    },
+    {
+      "name": "dolly-sheep-cloned",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Dolly the sheep is one of the most famous science stories of the era, named in the card."
+    },
+    {
+      "name": "human-genome-completed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well-known project, but the card gives no cue separating start from completion beyond 'modern genomics'."
+    },
+    {
+      "name": "first-face-transplant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A widely covered news story that reads as recent transplant surgery."
+    },
+    {
+      "name": "first-organ-grown-lab",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Lab-grown bladders are not a remembered event; tissue engineering places it only vaguely in recent decades."
+    },
+    {
+      "name": "hpv-vaccine-approved",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The HPV vaccine is widely known and its rollout reads as recent public health."
+    },
+    {
+      "name": "induced-stem-cells-created",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Yamanaka is a specialist name; the stem-cell era is a broad, undated cue."
+    },
+    {
+      "name": "synthetic-organism",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Venter's synthetic cell was a niche story; 'synthetic genome' places it only in the post-genomic era."
+    },
+    {
+      "name": "rinderpest-eradicated",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Rinderpest is unknown to almost everyone; 'second after smallpox' says only 'sometime after 1980'."
+    },
+    {
+      "name": "crispr-gene-editing",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "CRISPR is a familiar news word and gene editing reads unmistakably as the very recent past."
+    },
+    {
+      "name": "lab-grown-burger",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The $300,000 burger tasting was a widely covered story and lab-grown meat is clearly a recent-decade topic."
+    },
+    {
+      "name": "lab-grown-meat-tasted",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same widely covered tasting with the same recent-era cue."
+    },
+    {
+      "name": "artificial-pancreas",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A device milestone few would recognise; closed-loop insulin only implies recent medical technology."
+    },
+    {
+      "name": "first-gene-therapy-approved-west",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "CAR-T approval is specialist knowledge; the card describes the mechanism without dating it."
+    },
+    {
+      "name": "alphafold-protein",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "AlphaFold is not a general-audience name, but 'AI solved' places it firmly in the last few years."
+    },
+    {
+      "name": "crispr-human-therapy",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The specific sickle-cell trial is little known, but CRISPR itself signals the very recent past."
+    },
+    {
+      "name": "mrna-vaccines",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "COVID-19 is named outright - maximal recognition and an exact era anchor."
+    },
+    {
+      "name": "first-malaria-vaccine-rollout",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The approval was lightly covered; 'WHO endorsed' places it only in the modern public-health era."
+    },
+    {
+      "name": "first-pig-heart-transplant",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A headline story for many, and gene-edited xenotransplantation reads as recent, though the card names no date."
+    }
+  ]
+}

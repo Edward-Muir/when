@@ -1,0 +1,1133 @@
+{
+  "batch": "art",
+  "category": "art",
+  "graded": [
+    {
+      "name": "cave-paintings",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cave painting is universal school knowledge and 'early humans' anchors firmly to prehistory."
+    },
+    {
+      "name": "venus-of-willendorf-attire",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The textile detail is specialist, but 'Paleolithic' and 'ice age Europe' are explicit era anchors."
+    },
+    {
+      "name": "ceramic-sculpture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Dolni Vestonice is expert knowledge, but 'oldest known ceramic artwork' pins it to deep prehistory."
+    },
+    {
+      "name": "lascaux-cave-paintings",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lascaux is a household name and the description says 'prehistoric' outright."
+    },
+    {
+      "name": "honey-collecting-depicted",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure scene, but 'rock art' and 'humanity's earliest sweetener' place it in prehistory."
+    },
+    {
+      "name": "egyptian-kohl-eyeliner",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Egyptian eye makeup is a familiar image and 'Ancient Egyptians' is a strong anchor."
+    },
+    {
+      "name": "senet-board-game-egypt",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Senet itself is unknown to most, but the Egyptian afterlife framing anchors the era."
+    },
+    {
+      "name": "aboriginal-rock-art",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Aboriginal rock art is recognised as a concept but the card gives no era marker at all."
+    },
+    {
+      "name": "egyptian-wrestling-beni-hasan",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Beni Hasan is specialist, but Egyptian tomb walls anchor the era clearly."
+    },
+    {
+      "name": "minoan-frescoes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Minoan/Knossos/bull-leaping anchor firmly to Bronze Age Crete even if the art event is not widely known."
+    },
+    {
+      "name": "tyrian-purple-dye",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Phoenicians are a clear ancient-world anchor."
+    },
+    {
+      "name": "egyptian-wig-fashion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ancient Egypt anchors the era; the specific wig custom is not general knowledge."
+    },
+    {
+      "name": "mycenaean-warrior-art",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mycenaean Greeks and the Mask of Agamemnon anchor to Bronze Age Greece."
+    },
+    {
+      "name": "egyptian-sculpture-tradition",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Nefertiti and Ramesses II are well-known anchors, but the 'mastery' framing is a diffuse event."
+    },
+    {
+      "name": "egyptian-wall-painting-tradition",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Valley of the Kings tomb murals are a familiar image with a firm Egyptian anchor."
+    },
+    {
+      "name": "greek-vase-painting-golden-age",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Greek pottery and black/red-figure are taught art history, and Athens/Corinth anchor to classical Greece; over-graded as hard."
+    },
+    {
+      "name": "greek-mosaic-tradition",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but Greek artisans at Pella in Macedonia anchor squarely to the ancient Greek world."
+    },
+    {
+      "name": "roman-fresco-paintings",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Pompeii and Herculaneum are household names that anchor precisely to imperial Rome; badly over-graded as hard."
+    },
+    {
+      "name": "moche-portrait-pottery",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Moche is specialist; 'Peru' gives only a loose pre-Columbian window."
+    },
+    {
+      "name": "wang-xifeng-calligraphy",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Revered in China but unknown to a general Western audience, and Chinese calligraphy carries no era marker here."
+    },
+    {
+      "name": "moche-ceramics-art",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same profile as the other Moche card: obscure culture, loose Andean anchor."
+    },
+    {
+      "name": "ajanta-caves",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Buddhist rock-cut India narrows the era only loosely across a millennium of possibility."
+    },
+    {
+      "name": "byzantine-mosaic-tradition",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Byzantine gold-ground mosaics at Ravenna are a strong era anchor even at low recognition."
+    },
+    {
+      "name": "goguryeo-murals-tombs",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Goguryeo means nothing to a general audience and tomb murals give no era clue."
+    },
+    {
+      "name": "irish-monastery-art",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Monastic manuscript illumination implies medieval, but nothing narrows it further."
+    },
+    {
+      "name": "irish-monasticism-height",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Dark Ages' is an explicit era reference that does most of the placement work."
+    },
+    {
+      "name": "umayyad-mosaics-art",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Caliphate and Dome of the Rock imply early Islam, but 'Umayyad' is not general knowledge."
+    },
+    {
+      "name": "tang-poetry-golden-age",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tang dynasty is a school-taught named dynasty that places the card in medieval China."
+    },
+    {
+      "name": "heian-period-begins",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Heian' is opaque to a general audience and 'golden age in Kyoto' gives no datable anchor."
+    },
+    {
+      "name": "japanese-kimono-emerges",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The kimono is universally known and reads as pre-modern traditional Japan."
+    },
+    {
+      "name": "distillation-techniques",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Islamic alchemy implies the Islamic Golden Age but only loosely."
+    },
+    {
+      "name": "japanese-calligraphy-art",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Early Heian' is an era word the audience cannot decode; only 'adapting Chinese styles' hints at an early stage."
+    },
+    {
+      "name": "java-temple-sculpture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Borobudur is semi-known and Hindu-Buddhist Java implies a broad medieval window."
+    },
+    {
+      "name": "byzantine-icon-painting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Byzantine anchors the era band; iconoclasm is specialist knowledge."
+    },
+    {
+      "name": "gregorian-chant-codified",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Gregorian chant is a household term and Carolingian monks plus Pope Gregory anchor to the early medieval church."
+    },
+    {
+      "name": "igbo-ukwu-bronzes",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only site with no usable era anchor beyond a vague 'among Africa's earliest'."
+    },
+    {
+      "name": "macedonian-renaissance-byzant",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Recognition is near zero, but the description states the 9th-11th centuries outright."
+    },
+    {
+      "name": "chinese-landscape-painting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The genre is visually familiar but Northern Song is the only anchor and it is a specialist one."
+    },
+    {
+      "name": "goryeo-gwangjong-celadon",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A Korean king and a ceramic ware with no era signal of any kind."
+    },
+    {
+      "name": "heian-aesthetic-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'Mono no aware' and 'Heian court' are opaque; nothing on the card places the era."
+    },
+    {
+      "name": "heian-period-cultural-peak",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Only 'Kyoto' and 'Buddhist art' hint at classical Japan; the Heian label carries no meaning for most players."
+    },
+    {
+      "name": "heian-women-literature",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Court women writers and kana are distinctive but give no era the audience can read."
+    },
+    {
+      "name": "islamic-bookbinding",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A craft tradition with no figure, dynasty, or era marker — only 'Islamic'."
+    },
+    {
+      "name": "shogi-japan",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Shogi is barely known outside Japan and 'chess-like game' only weakly implies the medieval spread of chess."
+    },
+    {
+      "name": "romanesque-architecture-style",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Romanesque is an art-history term but 'massive stone churches in Western Europe' anchors to the medieval period."
+    },
+    {
+      "name": "su-shi-literati-painting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Su Shi is unknown to a general audience, but 'Song dynasty' is an explicit dynastic anchor to medieval China."
+    },
+    {
+      "name": "mi-fu-landscape-art",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure painter, but the named Song dynasty places the card in medieval China."
+    },
+    {
+      "name": "troubadour-tradition",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Troubadours and courtly love are strongly associated with the High Middle Ages."
+    },
+    {
+      "name": "yoruba-ife-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Ife brasswork is expert knowledge and the card offers no era anchor whatsoever."
+    },
+    {
+      "name": "yoruba-ife-terra-cotta",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Same obscurity, but 'medieval Africa' is stated explicitly and does the placement work."
+    },
+    {
+      "name": "gothic-architecture-emergence",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Gothic cathedrals are universally recognised and 'Gothic' is itself an era label; over-graded as medium."
+    },
+    {
+      "name": "goryeo-celadon-pottery",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Celadon is faintly familiar and 'Goryeo dynasty' at least signals pre-modern Korea."
+    },
+    {
+      "name": "seljuk-tilework",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Seljuk is specialist, but mosques across Anatolia and Persia imply the medieval Islamic world."
+    },
+    {
+      "name": "al-idrisi-geography-map",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "An Arab geographer working for a Sicilian king reads as medieval, though the figures are unknown."
+    },
+    {
+      "name": "minnesinger-tradition",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown tradition, but 'adapted troubadour traditions at noble courts' anchors it to the Middle Ages."
+    },
+    {
+      "name": "zen-buddhism-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Zen is a household word and the transmission from China to Japan reads as medieval."
+    },
+    {
+      "name": "arabic-manuscript-illumination",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Islamic manuscript art is loosely placeable but the card names no dynasty or figure."
+    },
+    {
+      "name": "ma-yuan-painting-style",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Ma Yuan is expert knowledge, but 'Southern Song' explicitly anchors the era."
+    },
+    {
+      "name": "real-tennis-medieval",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Monks and nobles' plus 'ancestor of modern tennis' anchors clearly to the medieval period."
+    },
+    {
+      "name": "sepik-river-art",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Unknown tradition with a description that could describe any century."
+    },
+    {
+      "name": "goryeo-tripitaka",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Woodblock carving of the Buddhist canon signals pre-print East Asia, but nothing narrows further."
+    },
+    {
+      "name": "enamel-development-techniques",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A generic craft-refinement card with no era, figure, or civilisation anchor."
+    },
+    {
+      "name": "persian-miniature-tradition",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Persian miniatures are semi-familiar; 'Ilkhanid' is opaque but implies a Persian dynastic era."
+    },
+    {
+      "name": "sukhothai-pottery",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A Thai kingdom unknown to general players with no era clue in the description."
+    },
+    {
+      "name": "womens-guilds",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Craft guilds' in Paris and Cologne is a firm medieval anchor."
+    },
+    {
+      "name": "giotto-fresco-revolution",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Giotto is a canonical name and 'breaking from Byzantine flatness' places him at the dawn of the Renaissance."
+    },
+    {
+      "name": "giotto-scrovegni",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The thinner duplicate: 'revolutionized Western art' gives a much weaker anchor than the sibling card."
+    },
+    {
+      "name": "duccio-painting-innovation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Duccio is unknown to most, but the card says 'late medieval Italian painting' outright."
+    },
+    {
+      "name": "song-blue-white-porcelain",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Blue and white china is instantly recognisable even though the card gives no era marker."
+    },
+    {
+      "name": "simone-martini-painting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Recognition is near zero, but 'International Gothic' is an explicit era style label."
+    },
+    {
+      "name": "italian-renaissance-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal school knowledge with the era named on the card."
+    },
+    {
+      "name": "ashikaga-cultural-patronage",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Ashikaga is opaque, but 'shoguns' places it in feudal Japan."
+    },
+    {
+      "name": "noh-theater-emergence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Noh is a known word; shogunal patronage implies feudal Japan without narrowing it."
+    },
+    {
+      "name": "muromachi-noh-theater",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same profile as the sibling Noh card, with 'Muromachi' adding nothing for a general player."
+    },
+    {
+      "name": "benin-edo-kingdom",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Benin Bronzes have news salience, but 'Edo Kingdom' misleads toward Japan and no era is given."
+    },
+    {
+      "name": "javanese-court-dance",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Majapahit is opaque; Hindu-Buddhist court dance implies a broad pre-colonial window."
+    },
+    {
+      "name": "porcelain-development",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Porcelain is universally known as 'china' and a prized trade good, though the card names no era."
+    },
+    {
+      "name": "florence-baptistery-competition",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The contest itself is specialist, but Brunelleschi, Ghiberti and 'sparking the Renaissance' anchor it hard."
+    },
+    {
+      "name": "brunelleschi-perspective",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Renaissance painting' and Florence are explicit era anchors."
+    },
+    {
+      "name": "zeami-noh-dramatist",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Zeami's treatises are expert knowledge and this card, unlike the other Noh cards, names no patron or period."
+    },
+    {
+      "name": "dome-construction-mastery",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Generic title, but 'Renaissance architects' and Brunelleschi's Florence dome anchor the era."
+    },
+    {
+      "name": "muromachi-zen-ink-painting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Josetsu and Shubun are unknown; Zen ink painting reads as pre-modern Japan and no more."
+    },
+    {
+      "name": "masaccio-fresco-innovation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Masaccio is specialist but 'Renaissance art' in Florence is an explicit anchor."
+    },
+    {
+      "name": "donatello-bronze-sculpture",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Donatello is a canonical Renaissance name and 'first freestanding nude since antiquity' locates the era."
+    },
+    {
+      "name": "benin-bronze-casting-peak",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Benin bronzes are somewhat known from restitution coverage, but the card gives no era anchor."
+    },
+    {
+      "name": "benin-bronzes-royal-plaques",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Same as the other Benin plaque cards: recognisable objects, no temporal clue."
+    },
+    {
+      "name": "burgundian-court-fashion",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The hennin headdress is a recognisable late-medieval image but Burgundy's court is specialist."
+    },
+    {
+      "name": "filippo-lippi-painting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lippi is unknown to most, but 'influencing Botticelli and later Renaissance masters' anchors him to the early Renaissance."
+    },
+    {
+      "name": "bihzad-persian-painting",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An expert-only painter in Herat with no era marker on the card."
+    },
+    {
+      "name": "perugino-christ-keys",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Perugino is obscure, but the Sistine Chapel and 'influenced Raphael' anchor firmly to the Renaissance."
+    },
+    {
+      "name": "botticelli-venus",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most reproduced paintings in existence, and the card says 'Renaissance' outright."
+    },
+    {
+      "name": "court-ballet-origins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ballet's origins are specialist, but 'Italian Renaissance courts' is an explicit era anchor."
+    },
+    {
+      "name": "leonardo-da-vinci-art",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leonardo is an era-defining name and the Last Supper is universally known."
+    },
+    {
+      "name": "leonardo-last-supper",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event as its sibling card: universal recognition and Leonardo anchors the Renaissance."
+    },
+    {
+      "name": "benin-art-renaissance",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Benin royal art is semi-familiar but nothing on the card dates it."
+    },
+    {
+      "name": "benin-kingdom-art-tradition",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Lost-wax bronzes of the Benin Kingdom with no temporal anchor."
+    },
+    {
+      "name": "joseon-hahoetal-masks",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A Korean folk mask drama with no era clue; village festivals could be any century."
+    },
+    {
+      "name": "varnish-composition-formulas",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Generic craft chemistry with no figure, place, or era anchor."
+    },
+    {
+      "name": "leonardo-mona-lisa",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The single most famous painting, with Leonardo anchoring the Renaissance."
+    },
+    {
+      "name": "davids-sculpture-michelangelo",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Michelangelo's David plus the explicit 'Renaissance sculpture' anchor."
+    },
+    {
+      "name": "michelangelo-david",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Duplicate of the David card; Michelangelo is an era-defining name in general knowledge."
+    },
+    {
+      "name": "raphael-school-athens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Raphael is one of the three canonical Renaissance masters and the Vatican fresco is widely reproduced."
+    },
+    {
+      "name": "michelangelo-sistine-chapel",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Creation of Adam is universal knowledge with a firm Renaissance anchor."
+    },
+    {
+      "name": "mannerism-art-style",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mannerism is an art-history term; Pontormo and Parmigianino give little to a general player."
+    },
+    {
+      "name": "titian-venetian-color",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Titian is a known name to some, but the card supplies no era beyond 'the Venetian school'."
+    },
+    {
+      "name": "persian-carpet-tradition",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Persian carpets are familiar objects but Safavid and Shah Tahmasp are specialist anchors."
+    },
+    {
+      "name": "commedia-dell-arte-emerges",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Harlequin is recognisable but the tradition's period is not signalled on the card."
+    },
+    {
+      "name": "ottoman-miniature-art",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Suleiman the Magnificent is a well-known named figure and a strong anchor for the era."
+    },
+    {
+      "name": "violin-developed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The violin is universally known and Cremonese craftsmen read as early modern Italy."
+    },
+    {
+      "name": "el-greco-arrives-spain",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "El Greco is a familiar painter's name, and Toledo/Spain gives a weak early-modern read."
+    },
+    {
+      "name": "tea-ceremony-codification",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The tea ceremony is widely known but Sen no Rikyu and wabi-sabi give no datable era."
+    },
+    {
+      "name": "opera-emerges-florence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'The first opera' is an art-form origin marker, and opera reads as early modern Europe."
+    },
+    {
+      "name": "glass-composition-improvements",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Venetian cristallo is expert knowledge and Venetian glass spans many centuries with no anchor given."
+    },
+    {
+      "name": "kathak-classical-dance",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kathak is little known outside India, but 'Mughal courts' is a real if broad anchor."
+    },
+    {
+      "name": "kuba-royal-masks",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Kuba Kingdom is expert knowledge and the card carries no era signal."
+    },
+    {
+      "name": "safavid-carpet-arts",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Safavid is specialist, but courts across Europe and Asia hints at the early modern trade world."
+    },
+    {
+      "name": "safavid-textile-arts",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Same profile as the Safavid carpet card: obscure dynasty, loose early modern read."
+    },
+    {
+      "name": "kabuki-theater-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kabuki is a household word and reads as Japan's early modern urban culture."
+    },
+    {
+      "name": "edo-castle-architecture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Daimyo castles imply feudal Japan but 'Edo period' is not decodable for most players."
+    },
+    {
+      "name": "safavid-miniature-painting",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Near-zero recognition, but 'blending Persian and European styles' implies post-contact early modernity."
+    },
+    {
+      "name": "rembrandt-night-watch",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Rembrandt and The Night Watch are famous, but the card text gives no era beyond 'group portrait'; over-graded as hard."
+    },
+    {
+      "name": "baroque-period-peak",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Baroque' is an explicit era style label, reinforced by Bernini, Rubens and Rembrandt."
+    },
+    {
+      "name": "kuba-raffia-textiles",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Obscure textile tradition with nothing on the card to place it in time."
+    },
+    {
+      "name": "tokugawa-kabuki-theatre",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Kabuki is known but 'Tokugawa rule' only broadly signals early modern Japan."
+    },
+    {
+      "name": "kabuki-women-actors",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The ban on women in kabuki is specialist and the card offers no era marker."
+    },
+    {
+      "name": "powdered-wig-fashion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Powdered wigs are an iconic image and Louis XIV is a strong named-figure anchor."
+    },
+    {
+      "name": "ukiyo-e-art-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Japanese woodblock prints are visually familiar and 'Edo' plus the floating world reads early modern."
+    },
+    {
+      "name": "moronobu-woodblock-pioneer",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Moronobu is obscure, but ukiyo-e and the Edo pleasure quarter place it in early modern Japan."
+    },
+    {
+      "name": "baroque-music-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Baroque music is a familiar era label and Purcell/Corelli reinforce it."
+    },
+    {
+      "name": "genroku-era-culture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Genroku is opaque, though Tokugawa peace and kabuki/haiku suggest early modern Japan."
+    },
+    {
+      "name": "haiku-poetry-tradition",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Haiku is universally known as a form and Basho reads as pre-modern Japan."
+    },
+    {
+      "name": "champagne-region-bubbly",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Dom Perignon is a familiar brand name but the card gives no era beyond 'monk'."
+    },
+    {
+      "name": "champagne-sparkling-wine",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Sparkling wine is familiar but 'French winemakers refined methods' is era-free; matched to the sibling Champagne card."
+    },
+    {
+      "name": "tokugawa-edo-period-culture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Edo/Tokugawa is not decodable for a general audience; the card names no work or figure."
+    },
+    {
+      "name": "asante-golden-stool",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Told as a founding myth, which gives a misleadingly timeless feel and no era anchor at all."
+    },
+    {
+      "name": "paris-salon-culture",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Enlightenment' is an explicit era reference that carries the placement."
+    },
+    {
+      "name": "tulip-era-ottoman",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Tulip Era is specialist, but Ottoman openness to European influence hints at the 18th century."
+    },
+    {
+      "name": "rococo-architecture-style",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'A reaction against heavy Baroque style' explicitly sequences it after the Baroque."
+    },
+    {
+      "name": "ukiyo-woodblock-prints",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Harunobu and nishiki-e are specialist; ukiyo-e itself only broadly signals early modern Japan."
+    },
+    {
+      "name": "marie-antoinette-pouf",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Marie Antoinette is a household name and one of the rubric's strong named-figure anchors."
+    },
+    {
+      "name": "top-hat-introduced",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The top hat is an iconic object and the description names the 19th century outright."
+    },
+    {
+      "name": "museum-prado-opened",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Prado is a famous museum and Velazquez/Goya plus 'royal collection opened' reads as the museum age."
+    },
+    {
+      "name": "bharatanatyam-tradition",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Little known outside India and 'ancient temple dance tradition' actively misleads toward a far earlier era."
+    },
+    {
+      "name": "hokusai-great-wave",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The Great Wave is one of the world's most recognised images, but the card gives no era marker."
+    },
+    {
+      "name": "hiroshige-landscape-prints",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Hiroshige and the Tokaido stations are specialist, with no temporal anchor supplied."
+    },
+    {
+      "name": "daguerreotype-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The invention of photography is a classic technology marker and a strong era anchor; over-graded as hard."
+    },
+    {
+      "name": "miracles-at-lourdes",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Lourdes is a known pilgrimage site but Marian visions read as plausibly medieval."
+    },
+    {
+      "name": "monets-impression-sunrise",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Monet is a household name and 'gave Impressionism its name' anchors the era firmly; over-graded as hard."
+    },
+    {
+      "name": "first-impressionist-exhibition",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Impressionism anchors the era, though the exhibition itself is less recognised than the paintings."
+    },
+    {
+      "name": "rodin-thinker",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The Thinker is instantly recognised but the card offers no era clue whatsoever."
+    },
+    {
+      "name": "van-gogh-starry-night",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Among the most famous paintings anywhere, and Van Gogh is popularly fixed to the late 1800s."
+    },
+    {
+      "name": "picasso-blue-period",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Picasso is a household name whose career is popularly placed in the 20th century."
+    },
+    {
+      "name": "picasso-demoiselles",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Proto-Cubist' is an explicit movement anchor to the early 20th century."
+    },
+    {
+      "name": "harlem-renaissance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely taught in the US and associated with the Jazz Age, though the card names no decade."
+    },
+    {
+      "name": "flapper-dress-1920s",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Flappers are an iconic image and 'Jazz Age' plus 'broke with Victorian dress' anchors it precisely."
+    },
+    {
+      "name": "chanel-little-black-dress",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Coco Chanel and the LBD are universally known, and Vogue anchors it to the modern fashion era."
+    },
+    {
+      "name": "guernica-painted",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Guernica is a canonical work and the aerial bombing of a Spanish town anchors it to the 1930s."
+    },
+    {
+      "name": "abstract-expressionism",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'First major American art movement' in New York places it in the modern era."
+    },
+    {
+      "name": "diors-new-look",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Dior is a household brand and 'postwar women's fashion' is an explicit era anchor."
+    },
+    {
+      "name": "warhol-soup-cans",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Warhol's soup cans are universally known and pop art anchors to the consumer 20th century."
+    },
+    {
+      "name": "miniskirt-popularized",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "'Swinging London' pins it to the 1960s and the miniskirt is a familiar cultural landmark."
+    }
+  ]
+}

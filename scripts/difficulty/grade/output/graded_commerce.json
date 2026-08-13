@@ -1,0 +1,1532 @@
+{
+  "batch": "commerce",
+  "category": "commerce",
+  "graded": [
+    {
+      "name": "zoroaster-teaches",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Zoroaster himself is barely known to a general audience, but 'Persian prophet' plus 'one of the world's oldest monotheistic religions' anchors firmly to deep antiquity."
+    },
+    {
+      "name": "carthage-founded",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Carthage is widely recognised as Rome's rival, and 'Phoenician colonists' pins it to the ancient Mediterranean."
+    },
+    {
+      "name": "first-ancient-olympics",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and 'Ancient... Olympia... Zeus' is an explicit ancient-Greek anchor."
+    },
+    {
+      "name": "first-olympic-games",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Household knowledge plus Olympia/Zeus anchoring to classical Greece."
+    },
+    {
+      "name": "rome-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Romulus and the founding of Rome are school-standard and unmistakably ancient."
+    },
+    {
+      "name": "coins-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'First coins' is a recognisable technology milestone but Lydia gives only a loose ancient-Near-East window."
+    },
+    {
+      "name": "pythian-games-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Pythian Games are obscure, but Delphi, Apollo and the comparison to the Olympics anchor hard to ancient Greece."
+    },
+    {
+      "name": "buddha-enlightenment",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Buddha is universally recognised and the founding of Buddhism reads as clearly ancient."
+    },
+    {
+      "name": "plato-academy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Plato is household-level recognition and anchors squarely to classical Greece."
+    },
+    {
+      "name": "plato-founds-academy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same anchors: famous figure, explicit Athens/classical setting."
+    },
+    {
+      "name": "aristotle-lyceum",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Lyceum itself is low-recognition, but Aristotle and Plato's Academy anchor it to classical Greece."
+    },
+    {
+      "name": "corporations",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "An abstract legal milestone few would know as an event, but 'ancient Rome' is stated outright."
+    },
+    {
+      "name": "first-public-library",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Library of Alexandria is famous and Ptolemy I places it in the Hellenistic world."
+    },
+    {
+      "name": "museum-alexandria-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Mouseion is obscure, but Ptolemy I and the Library of Alexandria are strong ancient anchors."
+    },
+    {
+      "name": "library-alexandria",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous institution and 'the ancient world's greatest library' states the era explicitly."
+    },
+    {
+      "name": "roman-argentarii-banking",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Argentarii are expert-only knowledge; 'Roman... forum' still pins the era to antiquity."
+    },
+    {
+      "name": "ministry-jesus-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal recognition and the single strongest date anchor in the Western calendar."
+    },
+    {
+      "name": "council-nicaea",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Known to the religiously or historically literate; 'first ecumenical council' implies early Christianity without pinning it."
+    },
+    {
+      "name": "first-orphanage",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Nobody knows this founding, and 'Constantinople' spans over a millennium even with the early-Christian hint."
+    },
+    {
+      "name": "first-hospital-byzantine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Basil of Caesarea is specialist knowledge; 'first Christian hospitals' narrows only loosely to late antiquity."
+    },
+    {
+      "name": "nalanda-university",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside India, and 'one of the world's first residential universities' gives only a vague early anchor."
+    },
+    {
+      "name": "monte-cassino-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Saint Benedict and 'birthplace of Western monasticism' point to the early medieval church, which lifts it above very-hard."
+    },
+    {
+      "name": "islam-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and the Hijra is explicitly the start of the Islamic calendar."
+    },
+    {
+      "name": "umayyad-caliphate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The dynasty is not general knowledge, but 'first hereditary Islamic dynasty' places it immediately after Muhammad."
+    },
+    {
+      "name": "baghdad-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition of the founding, but 'Abbasid capital' anchors it to the early Islamic golden age."
+    },
+    {
+      "name": "house-of-wisdom",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist recognition, but 'Abbasid Caliphate' and Baghdad give a firm early-Islamic era."
+    },
+    {
+      "name": "al-qarawiyyin-university",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Very low recognition; 'world's oldest existing university' in Islamic Morocco suggests early-medieval but does not pin it."
+    },
+    {
+      "name": "kyivan-rus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition, but 'Varangian prince' anchors it to the Viking age."
+    },
+    {
+      "name": "cluny-abbey-founded",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only, and 'monastic reform across Europe' spans the whole medieval millennium."
+    },
+    {
+      "name": "althing-iceland",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; Norse settlers and 'one of the world's oldest parliaments' give only a broad early-medieval hint."
+    },
+    {
+      "name": "fatimid-al-azhar-mosque",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Al-Azhar is little known in the West and 'Fatimid' anchors the era only for those who already know the dynasty."
+    },
+    {
+      "name": "dom-university-bologna",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Europe's oldest university' plus Roman law is a recognisable trivia item pointing loosely at the medieval period."
+    },
+    {
+      "name": "law-school",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event and same medieval-university anchor."
+    },
+    {
+      "name": "dom-university-oxford",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Oxford is household-level and 'one of the oldest universities' places it in the medieval era."
+    },
+    {
+      "name": "oxford-university-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Oxford's fame carries it; 'one of the oldest universities' still frames the medieval era."
+    },
+    {
+      "name": "cathedral-school-emergence",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows this as an event, but the description says 'medieval' outright."
+    },
+    {
+      "name": "english-exchequer-tally",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure institution; tally sticks and 'crown revenues' suggest medieval England without pinning it."
+    },
+    {
+      "name": "banking-origins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition as an event, but 'Medieval Italy' is an explicit era reference."
+    },
+    {
+      "name": "dom-university-paris",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition; 'medieval Europe' is stated explicitly."
+    },
+    {
+      "name": "templars-banking-network",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The banking network specifically is little known, but the Knights Templar anchor firmly to the Crusades."
+    },
+    {
+      "name": "oxford-founded",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Oxford is famous, but 'began formal instruction' with 'centuries ago' framing supplies no era marker at all."
+    },
+    {
+      "name": "banking-italian-emergence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; double-entry bookkeeping and merchant families imply late medieval commerce only loosely."
+    },
+    {
+      "name": "oxford-university-influence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Oxford is recognisable but 'expanded its faculties' is an unremarkable event with only a medieval-rivalry hint."
+    },
+    {
+      "name": "university-expansion-europe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A diffuse trend rather than a known event; the monastic-to-academic shift narrows the era only broadly."
+    },
+    {
+      "name": "university-paris-founding",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition of the papal charter; 'papal recognition' is a medium medieval anchor at best."
+    },
+    {
+      "name": "hospital-of-st-lawrence",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only institution, and Pope Innocent III means little to a general audience beyond 'medieval'."
+    },
+    {
+      "name": "cambridge-university-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Cambridge is household-level, and the flight from Oxford places it in the medieval university era."
+    },
+    {
+      "name": "franciscan-order",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Saint Francis of Assisi is widely recognised, and mendicant friars read as medieval."
+    },
+    {
+      "name": "salamanca-university-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Little known outside Spain; King Alfonso IX of Leon anchors the era only for those who know him."
+    },
+    {
+      "name": "university-salamanca",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but the description says 'medieval Iberia' explicitly."
+    },
+    {
+      "name": "padua-university-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition, and the anatomy/science framing pulls toward the Renaissance while the Bologna link pulls medieval."
+    },
+    {
+      "name": "hanse-league-formation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Hanseatic League is known to the historically literate and reads as late-medieval trade."
+    },
+    {
+      "name": "university-paris-sorbonne",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Sorbonne name is widely recognised; a theological college implies the medieval church."
+    },
+    {
+      "name": "republic-florence-banking",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bardi and Peruzzi are specialist knowledge; Florence plus papal banking suggests late medieval without pinning it."
+    },
+    {
+      "name": "venetian-state-bond-prestiti",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only finance history, and 'Venice' alone covers roughly a thousand years."
+    },
+    {
+      "name": "first-trade-union",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown as an event, and the guild framing spans several centuries of the medieval and early modern crafts."
+    },
+    {
+      "name": "first-marine-insurance-policy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; Genoese maritime trade gives a broad medieval/Renaissance window."
+    },
+    {
+      "name": "insurance-contract",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event: obscure origin story with only a Genoese-merchant era hint."
+    },
+    {
+      "name": "insurance-maritime-contracts",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event and same loose Italian maritime anchor."
+    },
+    {
+      "name": "insurance-origins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event, same low recognition and medium anchor."
+    },
+    {
+      "name": "ottoman-standing-army",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Janissaries are semi-known but the Ottoman span is enormous; 'Europe's first standing army' narrows it only a little."
+    },
+    {
+      "name": "heidelberg-university",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; an Elector of the Palatinate implies the Holy Roman Empire across many centuries."
+    },
+    {
+      "name": "banking-medici",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Medici name is broadly recognised and evokes Renaissance Florence without pinning the century."
+    },
+    {
+      "name": "medici-banking",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event and same Renaissance-Florence anchor."
+    },
+    {
+      "name": "medici-banking-innovations",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Medici recognition is decent; double-entry banking implies Renaissance commerce."
+    },
+    {
+      "name": "medici-patronage",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Medici recognition plus an explicit 'Renaissance art patronage' era reference."
+    },
+    {
+      "name": "malacca-sultanate-founded",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Almost unknown to a Western general audience, and a Malay sultanate controlling a strait gives no usable era anchor."
+    },
+    {
+      "name": "prince-henry-navigator",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Henry the Navigator is taught in exploration units, and Portuguese voyages down the African coast pin the Age of Discovery."
+    },
+    {
+      "name": "medici-florentine-bank",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Cosimo de' Medici and the Florentine bank read as Renaissance Italy."
+    },
+    {
+      "name": "fugger-banking-empire",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Jakob Fugger is specialist knowledge; an Augsburg banking house suggests early modern Germany only loosely."
+    },
+    {
+      "name": "postal-system-expansion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Thurn und Taxis is expert-only, and 'Holy Roman Emperor' covers a thousand-year span."
+    },
+    {
+      "name": "sikh-movement-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Sikhism is widely recognised as a major religion, but the card gives no era marker beyond Punjab and Guru Nanak."
+    },
+    {
+      "name": "reformation-anabaptists",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Anabaptists are little known, but 'radical reformers in Zurich' anchors squarely to the Reformation."
+    },
+    {
+      "name": "antwerp-stock-exchange",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'first purpose-built stock exchange' hints at early modern commerce without fixing it."
+    },
+    {
+      "name": "jesuits-founded",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Jesuits are widely recognised and 'Counter-Reformation' is an explicit era anchor."
+    },
+    {
+      "name": "botanical-garden",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only institution, and a university garden for medicinal plants could plausibly be anywhere from 1300 to 1700."
+    },
+    {
+      "name": "coffee-house-emergence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; coffee in Ottoman Constantinople implies early modern but the window is wide."
+    },
+    {
+      "name": "muscovy-company-founding",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure company; an English royal charter for joint-stock trade suggests the early modern era only broadly."
+    },
+    {
+      "name": "ottoman-coffee-culture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event as the other coffeehouse card: low recognition, loose early-modern anchor."
+    },
+    {
+      "name": "scots-reformation-movement",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "John Knox is not general knowledge, but 'Protestant Reformation' is an explicit sixteenth-century anchor."
+    },
+    {
+      "name": "royal-exchange-london-opens",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Gresham and the Royal Exchange are specialist knowledge with only a vague mercantile-London era hint."
+    },
+    {
+      "name": "ballet-de-cour-france",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only, and 'the French court' spans centuries with no narrowing detail."
+    },
+    {
+      "name": "levant-company-charter",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The company is obscure, but Queen Elizabeth I is a strong, widely-dated figure anchor."
+    },
+    {
+      "name": "globe-theatre-built",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Shakespeare's Globe is household knowledge and Shakespeare anchors the era precisely."
+    },
+    {
+      "name": "corporation-charter",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The abstract 'joint-stock charter' framing is low recognition, but the East India Company anchors the colonial era."
+    },
+    {
+      "name": "east-india-company",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The British East India Company is broadly recognised and reads unmistakably as the colonial trading era."
+    },
+    {
+      "name": "joint-stock-company-formation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Framed as a corporate-structure milestone rather than a famous event; the EIC still anchors the era."
+    },
+    {
+      "name": "joint-stock-company-development",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The VOC's status as the first traded company is a trivia item, but Dutch East India anchors the colonial era."
+    },
+    {
+      "name": "old-age-care",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown as an event, and 'purpose-built old age homes' could equally read as nineteenth or twentieth century."
+    },
+    {
+      "name": "stock-exchange-amsterdam",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Modest recognition, but the VOC share-trading detail anchors it to the Dutch golden age."
+    },
+    {
+      "name": "voc-dutch-east-india",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Dutch East India Company and the Asian spice trade are widely recognised colonial-era markers."
+    },
+    {
+      "name": "jamestown-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "School-standard, with 'first permanent English settlement in America' as an explicit era anchor."
+    },
+    {
+      "name": "virginia-colony-established",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same strong early-colonial anchor."
+    },
+    {
+      "name": "bank-of-amsterdam-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; a public deposit bank in Amsterdam implies early modern finance only loosely."
+    },
+    {
+      "name": "port-royal-convent",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Jansenism and Port-Royal are expert-only; Pascal helps only a reader who can date him."
+    },
+    {
+      "name": "first-european-coffeehouse",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition, and the arrival of coffee in Europe is a broad early-modern window."
+    },
+    {
+      "name": "london-coffeehouse-opens",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; coffeehouse London reads early modern but spans well over a century."
+    },
+    {
+      "name": "quaker-founding",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Quakers are widely recognised and George Fox's England reads as the early modern Protestant world."
+    },
+    {
+      "name": "first-cheques-england",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure milestone; goldsmith-bankers imply pre-industrial London without pinning the century."
+    },
+    {
+      "name": "royal-society-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Royal Society is reasonably recognised and 'oldest national scientific institution' evokes the scientific revolution."
+    },
+    {
+      "name": "louis-xiv-ballet",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The dance academy is obscure, but Louis XIV is a strong, well-dated figure anchor."
+    },
+    {
+      "name": "stiletto-three-piece-suit",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Nobody knows this as an event, but Charles II of England is a named monarch anchor."
+    },
+    {
+      "name": "central-bank",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Riksbank is little known; 'world's first central bank' suggests early modern finance without fixing it."
+    },
+    {
+      "name": "hudsons-bay-company-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognised mainly in Canada; a royal charter for the fur trade gives a broad colonial window."
+    },
+    {
+      "name": "pennsylvania-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "William Penn is standard US school material, and a proprietary Quaker colony reads as English colonial America."
+    },
+    {
+      "name": "lloyds-coffeehouse-insurance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lloyd's of London is a recognisable name and the coffeehouse setting places it in early modern London."
+    },
+    {
+      "name": "bank-of-england",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Bank of England is well known, but 'the world's second oldest central bank' supplies no era clue whatsoever."
+    },
+    {
+      "name": "dojima-rice-exchange",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only, and Osaka rice futures give a general audience no era handle at all."
+    },
+    {
+      "name": "sikh-khalsa-panth",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly within the Sikh community; the martial reordering of an existing community implies only 'after Sikhism began'."
+    },
+    {
+      "name": "ascot-racecourse-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Royal Ascot is known but its founding is not, and Queen Anne is a monarch few can date."
+    },
+    {
+      "name": "prussian-discipline-training",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'Prussia' is a useful but wide eighteenth-to-nineteenth-century anchor."
+    },
+    {
+      "name": "first-freemason-grand-lodge",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Freemasonry is recognisable but its stonemason imagery misleads toward the medieval; the London lodge framing only partly corrects it."
+    },
+    {
+      "name": "first-synagogue-nyc",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only, and 'New York City' spans everything from Dutch colony to the present."
+    },
+    {
+      "name": "military-academy-russia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown as an event; imperial Russia and St Petersburg leave a century-wide window."
+    },
+    {
+      "name": "muhendishane-school",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only, and 'modern engineering school' in the Ottoman Empire could be eighteenth or nineteenth century."
+    },
+    {
+      "name": "first-maternity-hospital",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown as an event, but 'lying-in hospitals' for the London poor anchors to the Georgian/Victorian charity era."
+    },
+    {
+      "name": "first-saudi-state-established",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition, and modern Saudi Arabia's fame risks pulling the guess toward the twentieth century."
+    },
+    {
+      "name": "jockey-club-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; the codification of a British sport implies the eighteenth-nineteenth century only broadly."
+    },
+    {
+      "name": "british-museum-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The British Museum is widely recognised and a parliamentary public museum reads as the Enlightenment era."
+    },
+    {
+      "name": "veterinary-school",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Nobody knows Bourgelat or Lyon's school, and 'establishing a profession' spans the whole 1700-1900 range."
+    },
+    {
+      "name": "hermitage-museum",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The founding is little known, but Catherine the Great is a strong, datable figure anchor."
+    },
+    {
+      "name": "first-restaurant-paris",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The origin of the restaurant is a curiosity rather than known history, and the card gives no era marker beyond Paris."
+    },
+    {
+      "name": "britannica-first",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Britannica is a recognisable name and an encyclopedia project in Scotland evokes the Enlightenment."
+    },
+    {
+      "name": "first-encyclopedia-britannica-pub",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event; Edinburgh publishing reads as the Enlightenment."
+    },
+    {
+      "name": "first-travelers-cheque",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown as an event, and traveller's cheques sound distinctly twentieth-century, actively misleading the player."
+    },
+    {
+      "name": "first-continental-congress",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "School-standard, and the response to British policies anchors it to the eve of the American Revolution."
+    },
+    {
+      "name": "first-building-society",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Ketley's is expert-only, but a Birmingham savings society for homebuilding anchors to industrial Britain."
+    },
+    {
+      "name": "washington-appointed-commander",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Washington and the Continental Army are universally known Revolutionary anchors."
+    },
+    {
+      "name": "paris-catacombs-created",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Catacombs are a famous site, but nothing in the card dates the transfer of remains - most would guess medieval plague."
+    },
+    {
+      "name": "marylebone-cricket-club",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside cricket, with only a general 'codified British sport' era hint."
+    },
+    {
+      "name": "dc-established",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Residence Act itself is not widely known, but a new US capital anchors firmly to the early republic."
+    },
+    {
+      "name": "us-supreme-court-first-session",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The first session is not a famous event, but 'newly created' US Supreme Court pins the founding era."
+    },
+    {
+      "name": "first-bank-united-states",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The bank is little known, but Alexander Hamilton anchors it to the founding decade."
+    },
+    {
+      "name": "new-york-stock-exchange-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The NYSE is household-level and the Buttonwood/Wall Street origin reads as the early American republic."
+    },
+    {
+      "name": "louvre-opened",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Louvre is world famous and 'during the French Revolution' is an explicit era anchor."
+    },
+    {
+      "name": "library-congress-established",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The founding is not widely known, but President John Adams pins it to the earliest US republic."
+    },
+    {
+      "name": "commercial-steamboat",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Fulton's steamboat is standard school material and steam power is a strong technology anchor."
+    },
+    {
+      "name": "first-savings-bank",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown as an event, but a savings bank for ordinary workers anchors to the industrial era."
+    },
+    {
+      "name": "rothschild-banking-empire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Rothschild name is broadly recognised; 'financed governments across Europe' implies the nineteenth century loosely."
+    },
+    {
+      "name": "singapore-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Raffles is little known outside the region, but a British trading post anchors the colonial nineteenth century."
+    },
+    {
+      "name": "first-modern-penitentiary",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; prison reform through solitary confinement suggests the nineteenth century only broadly."
+    },
+    {
+      "name": "metropolitan-police-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Robert Peel and the first modern police force are reasonably recognised and read as nineteenth-century London."
+    },
+    {
+      "name": "police-force-modern",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event, same Peel anchor."
+    },
+    {
+      "name": "female-university",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mount Holyoke is low recognition; women's higher education implies the nineteenth century only loosely."
+    },
+    {
+      "name": "first-kindergarten",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Froebel is obscure though the concept is familiar, and mass schooling gives a broad nineteenth-century window."
+    },
+    {
+      "name": "dental-school",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-only, but professionalised dentistry in Baltimore anchors to nineteenth-century America."
+    },
+    {
+      "name": "first-detective-bureau",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; Scotland Yard detectives evoke the Victorian era without fixing a decade band."
+    },
+    {
+      "name": "ymca-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The YMCA is a familiar name but 'founded in London' supplies no temporal information at all."
+    },
+    {
+      "name": "first-baseball-knickerbocker",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Baseball's origin story is fairly known in the US and reads as nineteenth-century New York."
+    },
+    {
+      "name": "first-modern-rugby",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Rugby School origin story is a familiar sporting legend set in Victorian England."
+    },
+    {
+      "name": "library-system",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Boston Public Library's founding is low recognition with only a general civic-nineteenth-century hint."
+    },
+    {
+      "name": "detective-agency",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Pinkertons are familiar from Westerns and Civil War history, placing them in nineteenth-century America."
+    },
+    {
+      "name": "pinkerton-detective-agency",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event and same nineteenth-century American anchor."
+    },
+    {
+      "name": "republican-party-founded",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Reasonably recognised, and anti-slavery activism anchors it firmly to the years before the Civil War."
+    },
+    {
+      "name": "nightingale-nursing-reform",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Florence Nightingale is a household name and anchors squarely to the Victorian/Crimean era."
+    },
+    {
+      "name": "nursing-school",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event and same strong Nightingale anchor."
+    },
+    {
+      "name": "fa-football-rules-1863",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The FA's founding is a familiar origin story, but the card places it only within Victorian sport codification."
+    },
+    {
+      "name": "red-cross-founded",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The Red Cross is universally known, yet Dunant and Geneva give no era clue and the organisation evokes the world wars."
+    },
+    {
+      "name": "salvation-army-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "A familiar organisation, but 'founded in London' gives the player nothing temporal to work with."
+    },
+    {
+      "name": "standard-oil-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Rockefeller and the oil monopoly are widely known and anchor firmly to the industrial Gilded Age."
+    },
+    {
+      "name": "yellowstone-national-park",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Yellowstone is household-level and 'world's first national park' places it in the era of American westward settlement."
+    },
+    {
+      "name": "information-bureau",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown as an event, and an Austrian tourist bureau gives no usable era anchor."
+    },
+    {
+      "name": "telephone-exchange-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The first exchange is not a famous event, but the telephone is a strong, well-dated technology marker."
+    },
+    {
+      "name": "natural-history-museum",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The museum is recognisable, but the card gives no temporal cue beyond South Kensington."
+    },
+    {
+      "name": "tuskegee-institute-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is US-specific, but Booker T. Washington and vocational education for African Americans anchor to the post-emancipation decades."
+    },
+    {
+      "name": "time-zone-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Greenwich and standard time are familiar and evoke the railway age without pinning it."
+    },
+    {
+      "name": "coca-cola-first-sold",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Coca-Cola is universally known and the pharmacist-in-Atlanta origin reads as the late nineteenth century."
+    },
+    {
+      "name": "hull-house-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Jane Addams is US-curriculum knowledge at best; a Chicago settlement house implies the Progressive Era loosely."
+    },
+    {
+      "name": "ioc-founded-coubertin",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Olympic revival is moderately known, but the card leaves the decade of the revival open."
+    },
+    {
+      "name": "school-lunch-program",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown as an event, and Swedish school meals give a general audience no era handle."
+    },
+    {
+      "name": "first-zionist-congress",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Zionism is broadly recognised, but 'movement for a Jewish homeland' could read anywhere from the 1890s to the 1940s."
+    },
+    {
+      "name": "commonwealth-australia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Federation is well known in Australia and 'colonies federated' implies the turn of the twentieth century."
+    },
+    {
+      "name": "nobel-prizes-first",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The Nobel Prizes are universally known and generally understood to be an early-twentieth-century institution."
+    },
+    {
+      "name": "fifa-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "FIFA is a familiar name and international sports governance reads as the early twentieth century."
+    },
+    {
+      "name": "panic-of-1907",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The panic itself is low recognition, but J.P. Morgan plus 'need for a central bank' brackets it before the Federal Reserve."
+    },
+    {
+      "name": "fbi-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The FBI is universally recognised and 'later renamed' signals an early-twentieth-century origin."
+    },
+    {
+      "name": "naacp-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The NAACP is a familiar name, but 'civil rights organization' actively misleads most players toward the 1950s-60s."
+    },
+    {
+      "name": "boy-scouts-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Scouts are widely recognised and Baden-Powell places it in the early twentieth century."
+    },
+    {
+      "name": "anc-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The ANC is known through Mandela, which pulls the guess toward the apartheid decades rather than 1912."
+    },
+    {
+      "name": "girl-scouts-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar in the US, and the parallel with the Boy Scouts implies the early twentieth century."
+    },
+    {
+      "name": "federal-reserve-created",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Fed is a familiar institution and 'Congress established the nation's central bank' reads as early twentieth century."
+    },
+    {
+      "name": "supermarket-self-service",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The self-service origin story is semi-known and reads as early-twentieth-century American retail."
+    },
+    {
+      "name": "red-army-formed",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Red Army's founding is not itself famous, but Trotsky and 'the Revolution' anchor it tightly to 1917-18."
+    },
+    {
+      "name": "bauhaus-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bauhaus is known mainly to design-literate audiences and reads only vaguely as interwar modernism."
+    },
+    {
+      "name": "ilo-founded",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Low recognition, and 'promote workers' rights worldwide' gives no way to choose between 1919 and 1945."
+    },
+    {
+      "name": "communist-party-china-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The founding is not widely known, but Mao and Shanghai anchor it to pre-revolutionary twentieth-century China."
+    },
+    {
+      "name": "first-miss-america",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The pageant is familiar but Atlantic City alone gives no era cue; most would guess mid-century."
+    },
+    {
+      "name": "interpol-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Interpol is a familiar name, but nothing in the card dates the Vienna founding."
+    },
+    {
+      "name": "ibm-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "IBM is widely known and 'Computing-Tabulating-Recording' hints at the early twentieth century."
+    },
+    {
+      "name": "alcoholics-anonymous",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "AA is a familiar organisation, but Akron and two founders' names give no temporal anchor."
+    },
+    {
+      "name": "blood-bank-established",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; transfusion medicine implies the earlier twentieth century without narrowing much."
+    },
+    {
+      "name": "imf-world-bank",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bretton Woods is moderately recognised and reads as the postwar settlement."
+    },
+    {
+      "name": "first-un-general-assembly",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The UN is universally known and its first assembly anchors directly to the end of WWII."
+    },
+    {
+      "name": "cia-created",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The CIA is globally famous and the National Security Act anchors it to the dawn of the Cold War."
+    },
+    {
+      "name": "british-railways-nationalized",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition outside Britain; nationalisation implies the mid-twentieth century only loosely."
+    },
+    {
+      "name": "israel-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal recognition and an unmistakable post-WWII anchor."
+    },
+    {
+      "name": "nascar-incorporated",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "NASCAR is familiar in the US, but the card gives no temporal information at all."
+    },
+    {
+      "name": "who-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The WHO is widely known and 'a UN agency' implies the postwar period without narrowing it."
+    },
+    {
+      "name": "prc-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mao proclaiming communist China is school-standard and firmly post-WWII."
+    },
+    {
+      "name": "nasa-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "NASA is universally known and Sputnik/the space race is an exact anchor."
+    },
+    {
+      "name": "opec-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "OPEC is widely recognised, though the oil-crisis association nudges guesses later than the founding."
+    },
+    {
+      "name": "amnesty-international-founded",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Amnesty is a familiar name, but 'prisoners of conscience' offers no way to date the founding."
+    },
+    {
+      "name": "peace-corps-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "US-specific recognition, but Kennedy is a precise and widely-dated figure anchor."
+    },
+    {
+      "name": "blue-ribbon-sports-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The pre-Nike name is obscure; Nike's rise implies the 1960s-70s only loosely."
+    },
+    {
+      "name": "atm-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The first ATM is a familiar trivia item and reads as later-twentieth-century banking technology."
+    },
+    {
+      "name": "epa-created",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The agency's creation is not widely known outside the US, but Nixon anchors it precisely."
+    },
+    {
+      "name": "starbucks-coffee-chain",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Starbucks is globally recognised and its Seattle origin reads as the late twentieth century."
+    },
+    {
+      "name": "microsoft-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, with the personal-computer era as an exact anchor."
+    },
+    {
+      "name": "apple-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known founding story with a strong early-personal-computing anchor."
+    },
+    {
+      "name": "grameen-microcredit",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Yunus and microfinance are moderately recognised and read as late-twentieth-century development work."
+    },
+    {
+      "name": "solidarity-poland",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Solidarity is reasonably known and 'Soviet bloc' anchors it within the Cold War."
+    },
+    {
+      "name": "amazon-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known, and 'online bookstore' anchors it to the early commercial internet."
+    },
+    {
+      "name": "wto-founded",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The WTO is a familiar institution associated with 1990s globalisation, though the card itself gives no era marker."
+    },
+    {
+      "name": "google-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with a clear dot-com-era anchor."
+    },
+    {
+      "name": "african-union",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moderately recognised, but continental integration reads as the decolonisation era and misleads toward the 1960s."
+    },
+    {
+      "name": "airbnb-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Globally recognised and unmistakably part of the smartphone-era sharing economy."
+    },
+    {
+      "name": "uber-rideshare-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Globally recognised with an explicit gig-economy anchor."
+    },
+    {
+      "name": "black-lives-matter-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Recent, universally reported, and tied to a specific well-known case."
+    }
+  ]
+}
