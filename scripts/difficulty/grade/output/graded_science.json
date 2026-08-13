@@ -1,0 +1,1301 @@
+{
+  "batch": "science",
+  "category": "science",
+  "graded": [
+    {
+      "name": "thales-eclipse",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Thales is a low-recognition name, but 'Thales of Miletus' plus 'early science' pins archaic Greece firmly."
+    },
+    {
+      "name": "thales-measurement-pyramid",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The pyramid-shadow anecdote is near-unknown; Miletus/Great Pyramid/deductive geometry still anchor to ancient Greece."
+    },
+    {
+      "name": "anaximander-world-map",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Anaximander is expert-only, but 'The Greek philosopher' plus 'first maps' places the era squarely."
+    },
+    {
+      "name": "pythagoras-theorem",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal school knowledge and Pythagoras anchors to ancient Greece."
+    },
+    {
+      "name": "pythagoras-theorem-geometry",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same theorem; 'his school in Croton' adds a further Greek-colonial anchor."
+    },
+    {
+      "name": "democritus-atomism",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Democritus is a name most players half-recall; 'Greek philosopher' makes the era unambiguous."
+    },
+    {
+      "name": "antikythera-mechanism",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely popularised object and the description literally says 'Ancient Greek'."
+    },
+    {
+      "name": "aristarchus-heliocentric",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'Greek astronomer... of Samos' and 'anticipating Copernicus' fix it as ancient and pre-1543."
+    },
+    {
+      "name": "archimedes-buoyancy",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The eureka/bath story is broadly known and Archimedes of Syracuse anchors to the Hellenistic world."
+    },
+    {
+      "name": "archimedes-principle",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same famous anecdote; Archimedes is a strong figure anchor even without era words."
+    },
+    {
+      "name": "eratosthenes-earth",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bare description gives only the name Eratosthenes and 'shadows' — no explicit era word, unlike the fuller twin card."
+    },
+    {
+      "name": "eratosthenes-earth-circumference",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Greek scholar', Syene and Alexandria give an explicit Hellenistic anchor."
+    },
+    {
+      "name": "hipparcus-astronomy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Hipparchus is unknown outside astronomy history; 'Greek astronomer' still fixes the era."
+    },
+    {
+      "name": "mayan-astronomical-calculations",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Maya astronomy is a specialist topic and 'Classic Maya' only narrows to a broad pre-Columbian window."
+    },
+    {
+      "name": "aryabhata-astronomy",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Aryabhata is unknown to a general audience and 'Indian mathematician wrote the Aryabhatiya' supplies geography but no temporal anchor at all."
+    },
+    {
+      "name": "aryabhata-pi-calculation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Same obscure figure, but 'one of the most accurate early calculations' at least signals a pre-modern era."
+    },
+    {
+      "name": "nalanda-university-science",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Nalanda's curriculum change is expert-only and Buddhist India spans a millennium with no clue given."
+    },
+    {
+      "name": "zero-concept-india",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "'Zero came from India' is a widely repeated factoid, but nothing in the text hints at when it happened."
+    },
+    {
+      "name": "dionysius-exiguus-creates-ad-system",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only monk; 'Anno Domini' and Rome hint post-classical but leave centuries open."
+    },
+    {
+      "name": "varahamihira-bhatasiddhanla",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown scholar, unknown treatise, and the Greek/Egyptian synthesis gives no usable date."
+    },
+    {
+      "name": "mayan-astronomy",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Maya calendar has genuine popular recognition; 'Maya' narrows the era loosely."
+    },
+    {
+      "name": "brahmagupta-algebra-india",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Brahmagupta is unknown, but 'rules for zero and negative numbers' links to the familiar Indian-mathematics era."
+    },
+    {
+      "name": "maya-astronomical-calendar",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Long Count and Venus tables are specialist; Maya anchors only to a wide pre-Columbian span."
+    },
+    {
+      "name": "al-haytham-optics",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ibn al-Haytham is known mainly to enthusiasts; the name anchors to the Islamic Golden Age generally."
+    },
+    {
+      "name": "optical-science",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same Book of Optics; 'pioneered the scientific method' could mislead toward the 1600s."
+    },
+    {
+      "name": "al-biruni-geography-astronomy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Al-Biruni is expert-only, but the Persian-Islamic scholar writing on India places it in the Islamic Golden Age."
+    },
+    {
+      "name": "omar-khayyam-algebra",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The name is known as a poet, not for cubic equations; 'Persian mathematician' gives only a loose medieval window."
+    },
+    {
+      "name": "roger-bacon-experimental-method",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'English friar' plus a Latin Opus Majus is a firm medieval marker, offsetting low recognition."
+    },
+    {
+      "name": "roger-bacon-scientific-method",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Stripped of 'friar' and the Latin title, 'The English philosopher advocated empirical observation' could be any century from 1200 to 1700."
+    },
+    {
+      "name": "kerala-school-mathematics",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown school, but 'anticipating European calculus by centuries' is a derivable anchor off Newton/Leibniz."
+    },
+    {
+      "name": "linear-perspective",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Brunelleschi and Florence anchor hard to the Renaissance; recognition of the specific demonstration is moderate."
+    },
+    {
+      "name": "armillary-sphere-korean",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "King Sejong means nothing to most players and armillary spheres span two millennia."
+    },
+    {
+      "name": "nautical-table-creation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, but 'Portuguese navigators... latitude at sea' is a strong Age of Discovery anchor."
+    },
+    {
+      "name": "copernican-astronomy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Copernicus and De Revolutionibus are school-standard and anchor to the Renaissance."
+    },
+    {
+      "name": "copernican-revolution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Heliocentrism versus the geocentric worldview is universally taught."
+    },
+    {
+      "name": "copernicus-heliocentric",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Named figure with high recognition and a clear Renaissance anchor."
+    },
+    {
+      "name": "scientific-revolution-dawn",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Copernicus and Vesalius are named outright, and 'Scientific Revolution' is itself an era label."
+    },
+    {
+      "name": "fracastoro-contagion-theory",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Fracastoro is unknown and 'invisible seeds spread disease' only says pre-germ-theory, leaving 400 years open."
+    },
+    {
+      "name": "birth-kepler",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The description describes Kepler's laws, which points players at 1609 rather than his birth — the text works against placement."
+    },
+    {
+      "name": "tycho-brahe-astronomical-observations",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Most precise pre-telescope measurements' is an unusually sharp anchor (before 1600)."
+    },
+    {
+      "name": "tycho-brahe-observatory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Uraniborg alone, with no telescope reference, leaves the era loose."
+    },
+    {
+      "name": "first-thermometer",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The thermoscope itself is obscure, but Galileo is a very strong figure anchor."
+    },
+    {
+      "name": "first-telescope",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Galileo turning a telescope on Jupiter is universal school content."
+    },
+    {
+      "name": "galileo-telescope",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition, but the bare description ('groundbreaking observations') adds nothing beyond the name."
+    },
+    {
+      "name": "kepler-laws",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kepler is moderately known, but 'planets move in elliptical orbits' carries no era detail of its own."
+    },
+    {
+      "name": "kepler-laws-motion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Naming Tycho Brahe's data ties the card to the immediate post-Tycho moment."
+    },
+    {
+      "name": "kepler-planetary-laws",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Ellipses-not-circles is a good clue about the content but not about the date; medium on both axes."
+    },
+    {
+      "name": "kepler-second-law",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The second law specifically is low-recognition and Astronomia Nova is not a household title."
+    },
+    {
+      "name": "keplers-laws",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kepler is recognisable; Astronomia Nova and 'celestial mechanics' only loosely date it."
+    },
+    {
+      "name": "galileo-jupiter-moons",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Galileo anchors the era, but this near-duplicate is the thinnest of the telescope cards."
+    },
+    {
+      "name": "galileo-telescope-discoveries",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Galileo plus the Copernican model is core school science."
+    },
+    {
+      "name": "galileo-telescopic-observations",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Sidereus Nuncius and Jupiter's moons put this squarely in the Galileo moment."
+    },
+    {
+      "name": "harvey-blood-circulation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Harvey discovered circulation' is a school factoid; the Latin De Motu Cordis signals early-modern."
+    },
+    {
+      "name": "harvey-circulation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Stripped description offers no title and no era marker beyond 'published his discovery'."
+    },
+    {
+      "name": "pascal-vacuum-experiments",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Pascal is a familiar name but the Puy-de-Dome experiment is specialist and only loosely dated."
+    },
+    {
+      "name": "vacuum-pump",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Von Guericke is obscure; 'proving the existence of vacuum' suggests early experimental science."
+    },
+    {
+      "name": "pascal-probability-theory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Pascal-Fermat correspondence is enthusiast knowledge and the 'problem of points' gives no date."
+    },
+    {
+      "name": "boyle-gas-laws",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Boyle's law is school chemistry, but nothing on the card places it in any century."
+    },
+    {
+      "name": "boyle-law",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognisable law, zero temporal anchors in the one-line description."
+    },
+    {
+      "name": "boyle-law-gases",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Phrased as a bare physical relationship; the text supplies no era cue at all."
+    },
+    {
+      "name": "hooke-discovers-cells",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Hooke discovered cells' is standard biology and 'under a microscope' implies post-1600."
+    },
+    {
+      "name": "hooke-microscopy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Framed around Micrographia rather than the famous cell discovery, so recognition drops."
+    },
+    {
+      "name": "philosophical-transactions",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows the journal's founding, but the Royal Society and 'world's first scientific journal' anchor the era."
+    },
+    {
+      "name": "newton-calculus",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Newton anchors strongly, but 'annus mirabilis at Woolsthorpe' is jargon and this is the least-known of the Newton cards."
+    },
+    {
+      "name": "newton-gravity",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Newton and gravity are as universal as science cards get."
+    },
+    {
+      "name": "spectroscopy-prism",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Odd card name lowers recognition, but Newton splitting light with a prism is a firm anchor."
+    },
+    {
+      "name": "steno-fossils-rock-layers",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Steno is unknown and 'founding the study of geology' actively misleads toward Hutton/Lyell a century later."
+    },
+    {
+      "name": "first-microscope",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Leeuwenhoek is moderately obscure, but 'animalcules' and the Royal Society anchor to the late 1600s."
+    },
+    {
+      "name": "leeuwenhoek-bacteria",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Observed bacteria through his microscope' could read as 19th-century to a player who doesn't know the name."
+    },
+    {
+      "name": "huygens-light-theory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Huygens is enthusiast-level and wave optics also suggests the 1800s (Young/Fresnel)."
+    },
+    {
+      "name": "great-comet-1680",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kirch and his comet are expert-only; 'first comet discovered by telescope' bounds one side only."
+    },
+    {
+      "name": "newton-leibniz-calculus",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The description states outright that Newton's version dates to the 1660s — an explicit decade anchor."
+    },
+    {
+      "name": "newton-gravitation-law",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Newton's Principia and universal gravitation are school-standard with a clear era."
+    },
+    {
+      "name": "newton-gravity-motion",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Newton's three laws are among the most universally taught items in the catalogue."
+    },
+    {
+      "name": "newton-principia",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "High recognition but the barest of the Principia duplicates, with no supporting detail."
+    },
+    {
+      "name": "newton-principia-published",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Principia Mathematica named explicitly alongside classical mechanics."
+    },
+    {
+      "name": "leibniz-binary-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The binary paper is obscure, but Leibniz places it beside the calculus dispute."
+    },
+    {
+      "name": "halley-comet-orbital",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Halley's Comet is famous and 'using Newton's laws' dates the prediction to just after Newton."
+    },
+    {
+      "name": "linnaeus-taxonomy",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Linnaean classification is taught, but 'system for classifying living organisms' carries no temporal marker."
+    },
+    {
+      "name": "euler-graph-theory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Konigsberg bridges puzzle is known as a puzzle, not as a dated event; Konigsberg implies Prussia."
+    },
+    {
+      "name": "celsius-temperature-scale",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Everyone knows the Celsius scale; the description gives no direct era clue beyond its Enlightenment flavour."
+    },
+    {
+      "name": "euler-mathematics",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A generic 'Euler advanced mathematics' card whose only clue is a Latin title that could be 1650 or 1800."
+    },
+    {
+      "name": "pompeii-excavation-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Pompeii is famous and 'Spanish engineer led excavations' signals early modern archaeology, though 'Roman city' can mislead."
+    },
+    {
+      "name": "franklin-kite-experiment",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The kite-and-key story is a school staple and Franklin anchors it to 18th-century America."
+    },
+    {
+      "name": "black-phlogiston-heat",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Joseph Black is unknown, but 'phlogiston theory' is a precise marker for pre-Lavoisier chemistry."
+    },
+    {
+      "name": "detent-escapement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Horological minutiae; 'marine chronometer' hints at the age of sail but nothing narrower."
+    },
+    {
+      "name": "hydrogen-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Few could name Cavendish; 'inflammable air' signals early chemistry only vaguely."
+    },
+    {
+      "name": "lagrange-number-theory",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A pure-mathematics result with no era cue whatsoever — the archetypal very-hard card."
+    },
+    {
+      "name": "nitrogen-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Rutherford of Edinburgh is unknown; 'noxious air' places it loosely in pneumatic chemistry."
+    },
+    {
+      "name": "oxygen-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Priestley discovering oxygen is a common school fact and sits in the recognisable chemical-revolution period."
+    },
+    {
+      "name": "lavoisier-oxygen",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bare phrasing about combustion and respiration; Lavoisier alone is a weak anchor for most players."
+    },
+    {
+      "name": "lavoisier-oxygen-combustion",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Overthrowing phlogiston theory' gives a real chemical-revolution anchor the twin card lacks."
+    },
+    {
+      "name": "herschel-discovers-uranus",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'First planet found by telescope and first since antiquity' is a strong bracketing clue."
+    },
+    {
+      "name": "uranus-discovered",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Reduced to 'discovered the seventh planet', with the telescope-era clue of its twin removed."
+    },
+    {
+      "name": "coulomb-electrostatics",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Coulomb's law is remembered as a formula, not an event; 'torsion balance' hints at early electrical science."
+    },
+    {
+      "name": "hutton-deep-time",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hutton is geologist-level knowledge and 'deep time' overlaps confusingly with Lyell decades later."
+    },
+    {
+      "name": "lagrange-mechanics",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Mecanique Analytique and calculus of variations are expert-only with no dating cue."
+    },
+    {
+      "name": "chemistry-lavoisier",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Modern chemistry' plus conservation of mass and a French treatise is recognisable Enlightenment science."
+    },
+    {
+      "name": "malthus-essay-population",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Malthusian' is a live term and 'influencing Darwin's evolution theory' brackets it before 1859."
+    },
+    {
+      "name": "rosetta-stone",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Famous object; 'French soldiers' in Egypt anchors to the Napoleonic expedition."
+    },
+    {
+      "name": "young-double-slit-experiment",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The double slit is famous through quantum physics, which misleads toward the 20th century."
+    },
+    {
+      "name": "dalton-atomic-theory",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "'All matter is composed of atoms' reads equally as Democritus, so the text gives no era."
+    },
+    {
+      "name": "atom-dalton",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Elements' with 'specific weights' points to 19th-century chemistry rather than ancient atomism."
+    },
+    {
+      "name": "avogadro-molecular-hypothesis",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Avogadro's number is known, the hypothesis is not; gas laws only loosely date it."
+    },
+    {
+      "name": "cuvier-paleontology",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Cuvier is obscure, but founding paleontology and establishing extinction is a recognisable pre-Darwin moment."
+    },
+    {
+      "name": "smith-geological-map",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "William Smith is unknown outside geology and 'first geological map' gives no century."
+    },
+    {
+      "name": "smith-stratigraphy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Same event framed with the technical term stratigraphy; England anchors place but not time."
+    },
+    {
+      "name": "fresnel-wave-optics",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Fresnel is unknown to most, but mathematical wave optics sits recognisably in classical 19th-century physics."
+    },
+    {
+      "name": "ampere-electromagnetism",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The amp is familiar, Ampere's theory is not; electromagnetism spans a long 19th century."
+    },
+    {
+      "name": "electromagnetism-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Orsted is a specialist name and the description gives no dating detail."
+    },
+    {
+      "name": "magnetism-electromagnetism",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The clearest-worded of the Orsted trio, linking current and magnetic field in familiar textbook terms."
+    },
+    {
+      "name": "carnot-thermodynamics",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Carnot is expert-level, but 'motive power of fire' and heat engines anchor to the industrial era."
+    },
+    {
+      "name": "ohm-law",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Ohm's law is school physics, but voltage/current/resistance carries no temporal information."
+    },
+    {
+      "name": "lyell-principles-geology",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'A book arguing gradual forces shaped Earth' is undated and duplicates Hutton's card decades earlier."
+    },
+    {
+      "name": "lyell-uniformitarianism",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Uniformitarianism is a geology-course term with only a loose 19th-century flavour."
+    },
+    {
+      "name": "darwin-beagle",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Beagle voyage is taught everywhere and Darwin is one of the strongest anchors available."
+    },
+    {
+      "name": "faraday-electromagnetic-induction",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Faraday and induction are standard physics content in a recognisable 19th-century setting."
+    },
+    {
+      "name": "ice-age-theory-proposed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ice ages are famous but their discovery is not, and Agassiz supplies no date to a general player."
+    },
+    {
+      "name": "cell-structure",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Cell theory is core school biology; Schleiden and Schwann place it in classical microscopy."
+    },
+    {
+      "name": "cell-theory",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Thinner phrasing that invites confusion with Hooke's 1665 cell discovery."
+    },
+    {
+      "name": "joule-heat-energy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The joule is familiar, the mechanical equivalent of heat is not; industrial-era flavour only."
+    },
+    {
+      "name": "joule-thermodynamics",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Established the first law of thermodynamics' is a bare statement of physics with no era content."
+    },
+    {
+      "name": "morse-code-telegraph-message",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "'What hath God wrought' and the electric telegraph are widely known and firmly mid-19th century."
+    },
+    {
+      "name": "faraday-electromagnetic-field",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Field theory and the Faraday effect are specialist, though Faraday anchors the era well."
+    },
+    {
+      "name": "joule-mechanical-equivalent-heat",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The paddle-wheel apparatus is obscure but unmistakably 19th-century experimental physics."
+    },
+    {
+      "name": "neptune-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The mathematically predicted planet is a known story and slots after Uranus in the planetary sequence."
+    },
+    {
+      "name": "hooker-plant-distribution",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Hooker and plant biogeography are expert-only, with only a faint exploration-era hint."
+    },
+    {
+      "name": "clausius-entropy",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Entropy is a familiar word, Clausius is not, and thermodynamics spans most of the 1800s."
+    },
+    {
+      "name": "foucault-pendulum",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Museum pendulums are widely seen, but nothing on the card says when the demonstration happened."
+    },
+    {
+      "name": "huxley-vertebrate-anatomy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Huxley is obscure, but 'leading defender of Darwin's evolution theory' is a tight anchor around 1860."
+    },
+    {
+      "name": "wallace-evolution-theory",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Wallace is a minor name, but 'joint Darwin-Wallace presentation' pins it to the Origin of Species moment."
+    },
+    {
+      "name": "origin-of-species",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Darwin's Origin is among the most universally known books in the catalogue."
+    },
+    {
+      "name": "maxwell-kinetic-theory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Maxwell is known for his equations, not kinetic theory; statistical gas behaviour gives only a loose era."
+    },
+    {
+      "name": "pasteur-germ-theory",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Pasteur and germ theory are school-universal and clearly belong to the 19th-century medical revolution."
+    },
+    {
+      "name": "maxwell-electromagnetic-equations",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Unifying four equations is enthusiast knowledge and the text gives no date."
+    },
+    {
+      "name": "maxwell-equations",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same unification stated even more tersely; recognition of the event is limited."
+    },
+    {
+      "name": "haeckel-embryology",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Haeckel and recapitulation are expert-only; 'evolutionary history' only says post-Darwin at best."
+    },
+    {
+      "name": "inheritance-mendel",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mendel's pea plants are standard biology with a recognisable 19th-century setting."
+    },
+    {
+      "name": "mendel-genetics",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same well-taught experiments, no explicit era marker."
+    },
+    {
+      "name": "mendeleev-periodic-table",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The periodic table is universal knowledge and clearly belongs to mature 19th-century chemistry."
+    },
+    {
+      "name": "periodic-table",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Mendeleev and the periodic table are as widely known as any science card here."
+    },
+    {
+      "name": "hertz-radio-waves",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The hertz unit is familiar but the proof of radio waves is not; radio suggests only late-19th/early-20th century."
+    },
+    {
+      "name": "x-ray-discovery",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "X-rays are universally known and 'first Nobel Prize in Physics' anchors to around 1900."
+    },
+    {
+      "name": "x-rays-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Rontgen and medical imaging are broadly recognised turn-of-the-century science."
+    },
+    {
+      "name": "radioactivity-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Becquerel and uranium are moderately known and sit in the familiar Curie-era cluster."
+    },
+    {
+      "name": "electron-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'First subatomic particle' is school physics and marks the start of modern atomic science."
+    },
+    {
+      "name": "radium-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Marie Curie is one of the most recognised scientists anywhere, and radium is her signature discovery."
+    },
+    {
+      "name": "max-plancks-quantum-theory",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Planck and quanta are widely taught and 'launching the quantum revolution' marks the century's opening."
+    },
+    {
+      "name": "blood-clotting",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Morawitz and coagulation-factor theory are specialist medicine with no dating clue."
+    },
+    {
+      "name": "special-relativity",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Einstein and special relativity are universal knowledge with a clear early-20th-century placement."
+    },
+    {
+      "name": "birth-kurt-godel",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Godel is known only to logicians and the card describes work decades after the birth it dates."
+    },
+    {
+      "name": "atomic-nucleus",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rutherford's nucleus is standard school physics in the recognisable early-atomic era."
+    },
+    {
+      "name": "cloud-chamber",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The device is only vaguely familiar and 'subatomic particle paths' spans decades of 20th-century physics."
+    },
+    {
+      "name": "machu-picchu-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Machu Picchu is world-famous and Bingham's expedition reads as modern exploration."
+    },
+    {
+      "name": "continental-drift",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Wegener's drift hypothesis is taught in school geography as the precursor to plate tectonics."
+    },
+    {
+      "name": "bohr-atomic-model",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Bohr model is drawn in every chemistry classroom and belongs to the early quantum era."
+    },
+    {
+      "name": "general-relativity",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Einstein's general relativity is universally known and clearly early 20th century."
+    },
+    {
+      "name": "tutankhamun-tomb",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Carter's discovery of Tutankhamun's tomb is one of the most famous finds in history."
+    },
+    {
+      "name": "hubble-galaxies",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Hubble's name is familiar from the telescope and 'galaxies beyond the Milky Way' is a known turning point."
+    },
+    {
+      "name": "heisenbergs-uncertainty-principle",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The uncertainty principle is a pop-science staple sitting in the interwar quantum period."
+    },
+    {
+      "name": "expanding-universe",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The expanding universe is widely known and attached to Hubble, a recognisable 20th-century figure."
+    },
+    {
+      "name": "pluto-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Pluto's discovery is broadly known and its 20th-century observatory setting is clear."
+    },
+    {
+      "name": "electron-microscope",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Electron microscopes are familiar instruments and clearly a 20th-century advance beyond optical limits."
+    },
+    {
+      "name": "neutron-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Chadwick's neutron is standard school physics in the well-known run-up to nuclear science."
+    },
+    {
+      "name": "nuclear-fission",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Fission is famous through the atomic bomb, though the card names only Hahn and Strassmann and no war context."
+    },
+    {
+      "name": "carbon-14-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The isotope's discovery is far less known than dating itself, and it invites confusion with Libby's method."
+    },
+    {
+      "name": "radiocarbon-dating",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Carbon dating is broadly familiar and reads as mid-20th-century science."
+    },
+    {
+      "name": "dna-structure",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Watson, Crick and the double helix are universally taught and firmly post-war."
+    },
+    {
+      "name": "miller-urey-experiment",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The origin-of-life spark experiment is enthusiast knowledge and the description names no one and no era."
+    },
+    {
+      "name": "mariana-trench",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The deepest-point dive is a known feat and manned bathyscaphe descent reads as mid-20th century."
+    },
+    {
+      "name": "quasars-discovered",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Quasars are a word people know without any sense of when they were found; no anchors in the text."
+    },
+    {
+      "name": "seafloor-spreading-confirmed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Magnetic striping is specialist detail and easily conflated with the plate-tectonics confirmation card."
+    },
+    {
+      "name": "cosmic-microwave-background",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The accidental Big Bang confirmation is a well-told story of the space-age era."
+    },
+    {
+      "name": "plate-tectonics-confirmed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Plate tectonics is core school geography and its acceptance is understood as recent-modern science."
+    },
+    {
+      "name": "lucy-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Lucy is the best-known hominin fossil and reads as later-20th-century paleoanthropology."
+    },
+    {
+      "name": "first-ozone-hole-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Antarctic ozone hole and the CFC response are strongly associated with the late 20th century."
+    },
+    {
+      "name": "ozone-hole-discovered",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same event; the CFC ban is a firm anchor to the environmental politics of the 1980s."
+    },
+    {
+      "name": "titanic-wreck-found",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Ballard's discovery of the Titanic wreck was a global news event within living memory."
+    },
+    {
+      "name": "first-exoplanet",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Exoplanets are constant news and players understand the field as a recent one, though the card names no date."
+    },
+    {
+      "name": "eris-discovery",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Eris is obscure, but 'demoting Pluto' points straight at the widely remembered IAU decision."
+    },
+    {
+      "name": "higgs-boson",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A major global news story, and CERN anchors it to the contemporary LHC era."
+    },
+    {
+      "name": "gravitational-waves",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "LIGO's detection was headline news and 'confirming Einstein's prediction' marks it as very recent."
+    },
+    {
+      "name": "change-4-landing",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The mission name is unfamiliar, but China's lunar programme places it unmistakably in the last decade."
+    },
+    {
+      "name": "parker-solar-probe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but flying through the Sun's corona is obviously cutting-edge contemporary spaceflight."
+    },
+    {
+      "name": "superconductor-claims",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A brief viral moment most players missed; room-temperature superconductor hype also occurred in the 1980s, so the era is not pinned."
+    }
+  ]
+}

@@ -1,0 +1,1210 @@
+{
+  "batch": "migration",
+  "category": "migration",
+  "graded": [
+    {
+      "name": "boats",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not a taught event, but 'first watercraft / early humans' anchors firmly to deep prehistory."
+    },
+    {
+      "name": "migration-out-africa",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught prehistoric milestone; name itself pins the deepest era."
+    },
+    {
+      "name": "out-of-africa-dispersal",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same widely-taught dispersal; 'from Africa across Eurasia, most non-Africans descend' is an unmistakable prehistoric anchor."
+    },
+    {
+      "name": "aboriginal-australian",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Aboriginal Australia is broadly recognised, but 'oldest continuous culture' only loosely dates the establishment."
+    },
+    {
+      "name": "humans-reach-australia",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Peopling of Sahul is broadly known and 'seafaring humans settle a continent, founding Aboriginal Australia' points squarely at the Palaeolithic."
+    },
+    {
+      "name": "humans-enter-europe",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Alongside Neanderthals' is a hard prehistoric anchor and the coexistence is popular knowledge."
+    },
+    {
+      "name": "humans-settle-near-oceania",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Near Oceania' and the Bismarck Archipelago are specialist terms; only 'first peopling' hints at prehistory."
+    },
+    {
+      "name": "humans-settle-japan",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Not a recognised event and the description offers only generic 'early peoples' framing."
+    },
+    {
+      "name": "humans-reach-siberia",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure as an event, but Arctic adaptation plus 'gateway to the Americas' places it in the Ice Age."
+    },
+    {
+      "name": "peopling-beringia",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Bering land bridge is standard school material and 'land bridge' anchors it to the last Ice Age."
+    },
+    {
+      "name": "humans-reach-the-americas",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known milestone, and 'continents previously without humans' places it before all recorded history."
+    },
+    {
+      "name": "settlement-south-america",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Monte Verde is specialist knowledge; 'early Americans' narrows only vaguely."
+    },
+    {
+      "name": "sedentary-hunter-gatherer",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'before the advent of agriculture' is a sharp pre-Neolithic anchor."
+    },
+    {
+      "name": "settlement-caribbean-islands",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure and the text gives no era marker at all - 'migrants from the mainland by sea' could be any millennium."
+    },
+    {
+      "name": "invention-sail",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Nobody learns a date for the sail, but 'Ancient Egyptians' is a strong era anchor."
+    },
+    {
+      "name": "austronesian-expansion-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Austronesian expansion is specialist and 'seafarers from Taiwan' gives no temporal footing."
+    },
+    {
+      "name": "yamnaya-migration-europe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Yamnaya has some popular-science profile; 'steppe herders / Indo-European' implies pre-classical but no more."
+    },
+    {
+      "name": "aboriginal-songlines-mapping",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "Oral-tradition practice with no temporal marker whatsoever."
+    },
+    {
+      "name": "abrahams-journey-traditional",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Abraham is universally recognised and 'Ur to Canaan' anchors firmly in the ancient Near East."
+    },
+    {
+      "name": "indo-aryan-migration",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist topic; 'Indo-European speakers into India' implies antiquity but nothing tighter."
+    },
+    {
+      "name": "lapita-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Lapita is expert-only and pottery in the Pacific carries no era clue."
+    },
+    {
+      "name": "lapita-culture-expansion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Same expert-only culture with no temporal anchor."
+    },
+    {
+      "name": "sea-peoples-migrations",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'the Bronze Age collapse' is an explicit era anchor."
+    },
+    {
+      "name": "dorian-invasion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure, but 'Bronze Age collapse' plus Greece pins the era outright."
+    },
+    {
+      "name": "polynesian-expansion",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Polynesian voyaging is broadly known, yet the card supplies no era clue at all."
+    },
+    {
+      "name": "samoa-settlement-polynesia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Lapita settlement of Samoa is specialist and only loosely tied to the Pacific migration sequence."
+    },
+    {
+      "name": "samoan-settlement-culture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Same obscure settlement; 'foundational Polynesian culture' is only a sequence hint."
+    },
+    {
+      "name": "settlement-of-fiji",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Lapita Fiji is specialist; 'staging point for the wider Pacific migration' is a weak sequence anchor."
+    },
+    {
+      "name": "phoenician-colonization",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not a taught event, but Phoenicians and Carthage place it confidently in pre-Roman antiquity."
+    },
+    {
+      "name": "greek-colonization-mediterranean",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Colonisation itself is enthusiast knowledge; 'Greek city-states' anchors the classical era."
+    },
+    {
+      "name": "phoenician-circumnavigation",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure voyage, but 'Phoenician' is a firm antiquity anchor - same logic as the rubric's Social War example."
+    },
+    {
+      "name": "hanno-africa",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Hanno is expert-only, yet 'the Carthaginian navigator' places it unambiguously in pre-Roman antiquity."
+    },
+    {
+      "name": "alexander-india",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Alexander the Great is universal knowledge and dates the card by himself."
+    },
+    {
+      "name": "pytheas-arctic",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Pytheas is expert-only, but 'the Greek explorer' anchors the classical era."
+    },
+    {
+      "name": "paul-apostle-missions",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Paul is universally recognised and 'spreading Christianity to Gentiles' pins the first century."
+    },
+    {
+      "name": "thomas-apostle-india",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Malabar tradition is niche, but 'the Apostle Thomas' fixes it to the first century."
+    },
+    {
+      "name": "buddhism-spreads-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known in world history; 'Silk Road' anchors broadly but not tightly."
+    },
+    {
+      "name": "bantu-expansion-africa",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Bantu expansion is standard world-history material; 'iron-working and farming' gives an Iron Age anchor."
+    },
+    {
+      "name": "bantu-reach-southern-africa",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "This particular stage of the migration is specialist; only the Iron Age framing helps."
+    },
+    {
+      "name": "marquesas-settlement-east-polynesia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Obscure island settlement with no temporal marker."
+    },
+    {
+      "name": "huns-migrate-into-europe",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Huns are broadly recognised and 'Germanic tribes toward the Roman frontier' pins late antiquity."
+    },
+    {
+      "name": "crossing-of-the-rhine",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'migration into the Roman Empire' is a strong late-Roman anchor."
+    },
+    {
+      "name": "vandals-migrate-to-africa",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The event is enthusiast-level, but 'Roman North Africa' anchors late antiquity."
+    },
+    {
+      "name": "saint-patrick-ireland",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Universally recognised figure; conversion of Ireland reads as early medieval."
+    },
+    {
+      "name": "anglo-saxon-migration",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well-known migration and 'post-Roman Britain' is an explicit era anchor."
+    },
+    {
+      "name": "anglo-saxons-settle-britain",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same migration without the 'post-Roman' marker; 'early England' narrows less firmly."
+    },
+    {
+      "name": "nestorian-missionaries-asia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Nestorian missions are expert-only and Persia plus trade routes spans a millennium."
+    },
+    {
+      "name": "micronesian-navigation-development",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Specialist navigational practice with no era clue."
+    },
+    {
+      "name": "polynesian-wayfinding-techniques",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "very-low",
+      "reasoning": "Wayfinding is popularly known, but nothing on the card dates it."
+    },
+    {
+      "name": "settlement-of-madagascar",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The Borneo-to-Madagascar crossing is a striking but specialist fact, and no era marker is given."
+    },
+    {
+      "name": "slavic-migrations",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Slavic settlement of Eastern Europe is broadly familiar, but the card supplies no era anchor."
+    },
+    {
+      "name": "buddhism-officially-introduced-to-japan",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Niche event; the Japanese court plus Buddhism implies the first millennium only loosely."
+    },
+    {
+      "name": "columba-scotland-monasticism",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Columba is regional/specialist; Christianisation of Scotland implies early medieval."
+    },
+    {
+      "name": "polynesian-double-canoe-design",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Specialist maritime technology with essentially no temporal anchor."
+    },
+    {
+      "name": "lucayan-archipelago",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Lucayans are expert-only and only the pre-Columbian Taino link hints at era."
+    },
+    {
+      "name": "taino-island-settlement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Taino are known from the Columbus story, giving a vague pre-Columbian anchor and no more."
+    },
+    {
+      "name": "viking-dublin-settlement",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Viking Dublin is enthusiast knowledge, but 'Norse Vikings' is a firm Viking Age anchor."
+    },
+    {
+      "name": "norse-settlement-iceland",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specific settlement is niche; the Viking Age framing anchors the era well."
+    },
+    {
+      "name": "vikings-iceland",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same Viking Age anchor carrying a low-recognition event."
+    },
+    {
+      "name": "magyars-settle-hungary",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Magyars are regional knowledge and 'nomadic migration into the Carpathian Basin' only loosely dates it."
+    },
+    {
+      "name": "vikings-greenland",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Erik the Red is a familiar name and the Viking Age anchors the era."
+    },
+    {
+      "name": "norse-colonization-atlantic",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Erik the Red and Norse expansion anchor the Viking Age despite low event recognition."
+    },
+    {
+      "name": "norse-settle-greenland",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same Viking Age anchor with modest event recognition."
+    },
+    {
+      "name": "norse-settlement-greenland",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same Viking Age anchor; the 500-year note adds no further dating help."
+    },
+    {
+      "name": "athabaskan-migration",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only migration; Navajo/Apache ancestry gives only 'pre-contact America'."
+    },
+    {
+      "name": "bantu-expansion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The completion stage of the expansion is specialist; only Iron Age farming anchors it."
+    },
+    {
+      "name": "bantu-migration",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same specialist late stage with only an Iron Age anchor."
+    },
+    {
+      "name": "chatham-islands-settlement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Remote and expert-only; the Moriori link gives almost no era footing."
+    },
+    {
+      "name": "hawaiian-settlement",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Polynesian settlement of Hawaii is broadly known but the card gives no era clue."
+    },
+    {
+      "name": "inuit-thule-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Thule and Dorset are archaeological terms with no temporal anchor for a general player."
+    },
+    {
+      "name": "micronesian-navigation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Specialist navigation practice with no era marker."
+    },
+    {
+      "name": "polynesian-navigation-technology",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "very-low",
+      "reasoning": "Canoe voyaging is familiar, but the card offers no way to date it."
+    },
+    {
+      "name": "polynesian-settlement",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Recognisable subject; 'completed the Pacific triangle' is only a faint sequence hint."
+    },
+    {
+      "name": "settlement-of-hawaii",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Known subject with no temporal anchor on the card."
+    },
+    {
+      "name": "settlement-of-polynesia-east",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Society and Cook Islands settlement is specialist and undated by the text."
+    },
+    {
+      "name": "viking-america",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leif Erikson reaching America before Columbus is standard school material and self-dating."
+    },
+    {
+      "name": "vinland-norse-discovery",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Leif Erikson and L'Anse aux Meadows; famous and firmly Viking Age."
+    },
+    {
+      "name": "compass-adoption-navigation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The compass is familiar and its adoption reads as pre-Age-of-Discovery medieval."
+    },
+    {
+      "name": "easter-island-settlement",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Easter Island is famous, but nothing on the card dates its settlement."
+    },
+    {
+      "name": "hawaiian-settlement-societies",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Specialist social history; kapu and chiefdoms give no era anchor."
+    },
+    {
+      "name": "polynesian-easter-island-settlement",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Moai make the place famous; the settlement date is unanchored by the text."
+    },
+    {
+      "name": "thule-reach-greenland",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Thule migration is expert-only; 'ancestors of today's Inuit' only implies pre-modern."
+    },
+    {
+      "name": "marco-polo-china",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Marco Polo is universally known and 'the court of Kublai Khan' dates it to the Mongol era."
+    },
+    {
+      "name": "maori-settlement-new-zealand",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known, and 'one of the last major landmasses settled' places it late in the settlement sequence."
+    },
+    {
+      "name": "ancestral-puebloan-migration",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Regional/specialist; Mesa Verde and Chaco imply pre-Columbian North America only."
+    },
+    {
+      "name": "maori-reach-new-zealand",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Recognisable, and 'last major landmass reached by humans' is a real but coarse sequence anchor - not the near-universal recognition an easy card needs."
+    },
+    {
+      "name": "mali-maritime-expansion",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Abu Bakr II is expert-only, but 'before Mansa Musa took power' is a precise anchor for anyone who knows Mali."
+    },
+    {
+      "name": "ibn-battuta-travels",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Ibn Battuta features in world-history curricula and 'across the Islamic world' implies the medieval period."
+    },
+    {
+      "name": "maori-iwi-tribal-identity",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Specialist social history; sits vaguely between Maori settlement and European contact."
+    },
+    {
+      "name": "polynesian-settlement-expansion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Continued settling remote islands' is a process, not an event, with no era anchor."
+    },
+    {
+      "name": "ming-treasure-fleets",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Zheng He is taught in world history and the treasure fleets read as late-medieval imperial China."
+    },
+    {
+      "name": "zheng-he-voyages",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same reasonably taught admiral and the same Ming-era framing."
+    },
+    {
+      "name": "chinese-discover-america-theory",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Fringe claim with low recognition, but 'before Columbus' bounds it usefully."
+    },
+    {
+      "name": "portuguese-cape-verde",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The specific discovery is expert-only, yet 'Portuguese explorers discovered' is a firm Age of Discovery anchor."
+    },
+    {
+      "name": "kongo-portuguese-contact",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Diogo Cao is obscure, but Portuguese contact with an African kingdom pins the late 15th century."
+    },
+    {
+      "name": "dias-cape-good-hope",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Rounding the Cape is well known and unmistakably Age of Discovery."
+    },
+    {
+      "name": "dias-cape-rounding",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same famous first with the same Age of Discovery anchor."
+    },
+    {
+      "name": "columbian-exchange",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Columbus is named; universal recognition and a self-dating anchor."
+    },
+    {
+      "name": "columbus-americas",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The most universally known voyage in the category."
+    },
+    {
+      "name": "columbian-exchange-disease",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Widely taught consequence, explicitly tied to Columbus's voyages."
+    },
+    {
+      "name": "cabot-north-america",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Cabot is a minor name, but exploring North America for England places it firmly in the Age of Discovery."
+    },
+    {
+      "name": "vasco-da-gama-india",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely taught, and 'sea route from Europe to India' is a textbook Age of Discovery anchor."
+    },
+    {
+      "name": "cabral-brazil",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Cabral is a lesser name; claiming Brazil for Portugal anchors the era firmly."
+    },
+    {
+      "name": "melanesian-settlement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A described pattern rather than an event, with no temporal marker at all."
+    },
+    {
+      "name": "moriori-settle-chathams",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only, though the Polynesian settlement framing gives a faint sequence hint."
+    },
+    {
+      "name": "first-map-printing",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Waldseemuller is obscure, but 'first used the name America' dates it to just after 1492."
+    },
+    {
+      "name": "balboa-pacific",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Balboa is regionally taught and the conquistador framing anchors the early 16th century."
+    },
+    {
+      "name": "ponce-de-leon-florida",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Regionally familiar Spanish explorer with a clear conquistador-era anchor."
+    },
+    {
+      "name": "cortes-meets-aztecs",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Spanish conquest of the Aztecs is universally taught and self-dating."
+    },
+    {
+      "name": "oromo-expansion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Expert-only migration with no temporal anchor for a general player."
+    },
+    {
+      "name": "turkey-reaches-europe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Trivial-sounding event, but 'from the Americas to Europe' places it in the post-Columbian exchange."
+    },
+    {
+      "name": "transatlantic-slave-trade-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and the Atlantic slave trade's start is firmly the colonial 16th century."
+    },
+    {
+      "name": "pizarro-meets-incas",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The conquest of the Inca is taught as widely as Cortes and Aztecs, with the same conquistador anchor."
+    },
+    {
+      "name": "cartier-st-lawrence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Regional Canadian knowledge; 'claimed Canada for France' spans a broad colonial window."
+    },
+    {
+      "name": "de-soto-mississippi",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Minor explorer; early European exploration of North America is only a coarse anchor."
+    },
+    {
+      "name": "drake-circumnavigation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Drake is a familiar Elizabethan name and 'second circumnavigation' places it right after Magellan."
+    },
+    {
+      "name": "jesuit-missions-asia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Matteo Ricci is specialist and the Jesuit era spans more than two centuries."
+    },
+    {
+      "name": "barents-arctic",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Barents is expert-only and 'northeast passage' only hints at early modern exploration."
+    },
+    {
+      "name": "dutch-reach-australia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Janszoon is obscure; 'first European to reach Australia' places it before Cook but no tighter."
+    },
+    {
+      "name": "hudson-explorations",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Hudson is familiar from the river and bay; the northern-passage search reads as early colonial."
+    },
+    {
+      "name": "jamestown",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught first permanent English settlement in North America."
+    },
+    {
+      "name": "hudson-river",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar name, and the northwest-passage search anchors the early colonial era."
+    },
+    {
+      "name": "mayflower",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Mayflower and the Pilgrims are among the most universally taught migrations there are."
+    },
+    {
+      "name": "plymouth-colony-pilgrims",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same universally taught Pilgrim landing."
+    },
+    {
+      "name": "great-migration-massachusetts",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "This specific wave is less known, but Puritans and Massachusetts Bay Colony anchor the early 17th century sharply."
+    },
+    {
+      "name": "puritan-great-migration",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same strong Puritan/New England anchor on a moderately known event."
+    },
+    {
+      "name": "tasman-australia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tasman is a minor name; Dutch Pacific exploration implies a broad pre-Cook window."
+    },
+    {
+      "name": "la-salle-mississippi",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist explorer; French colonial North America is a wide window."
+    },
+    {
+      "name": "dampier-circumnavigation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Dampier is expert-only and circumnavigation alone gives no era anchor."
+    },
+    {
+      "name": "dampier-new-britain",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Same expert-only navigator with no temporal marker."
+    },
+    {
+      "name": "long-distance-travel-improvement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A gradual trend, not an event, and the description could describe almost any century."
+    },
+    {
+      "name": "scotch-irish-migration",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ulster Scots are a niche subject, but 'the American colonies' bounds it to the colonial period."
+    },
+    {
+      "name": "bering-strait",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Vitus Bering has low recognition; proving the continents separate implies the era of scientific exploration only."
+    },
+    {
+      "name": "expulsion-of-the-acadians",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Regional Canadian history; the British-French colonial struggle and the Cajun outcome are only coarse anchors."
+    },
+    {
+      "name": "bougainville-circumnavigation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bougainville is specialist; Tahiti and French Pacific exploration imply the Cook era loosely."
+    },
+    {
+      "name": "cook-pacific-voyages",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Cook is widely known, though this framing overlaps his other cards; Pacific mapping anchors the 18th century."
+    },
+    {
+      "name": "first-voyage-of-james-cook",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "HMS Endeavour and the Transit of Venus anchor firmly, on a moderately recognised specific voyage."
+    },
+    {
+      "name": "maori-european-encounters",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The contact process is niche, but naming Cook dates it precisely."
+    },
+    {
+      "name": "cook-australia",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cook charting and claiming Australia is the single most taught fact about him."
+    },
+    {
+      "name": "convict-transport-australia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known, especially regionally; 'Britain shipping convicts' reads as late colonial without pinning a decade."
+    },
+    {
+      "name": "first-fleet-australia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Regionally famous; a penal colony at Sydney Cove anchors the late colonial era."
+    },
+    {
+      "name": "humboldt-south-america",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Humboldt is a specialist name; 'scientific exploration' implies the Enlightenment/19th century loosely."
+    },
+    {
+      "name": "lewis-clark-expedition",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and firmly tied to the opening of the American West."
+    },
+    {
+      "name": "mungo-park-niger",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Mungo Park is expert-only and European exploration of Africa spans a long stretch."
+    },
+    {
+      "name": "first-atlantic-steamship-crossing",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The SS Savannah is obscure, but 'first steamship to cross the Atlantic' is a sharp early-industrial anchor."
+    },
+    {
+      "name": "first-steamship",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same strong steam-era technology anchor on a low-recognition ship."
+    },
+    {
+      "name": "antarctica-sighted",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The first sighting is not widely known and polar exploration spans a broad window."
+    },
+    {
+      "name": "freed-slaves-settle-liberia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Liberia's founding is moderately known and the abolition-era context narrows it to the 19th century."
+    },
+    {
+      "name": "great-trek-south-africa",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Regional knowledge, but Boers leaving the British Cape Colony is a firm 19th-century anchor."
+    },
+    {
+      "name": "indentured-labor-diaspora",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Indenture is specialist; 'colonies worldwide' spans a wide colonial window."
+    },
+    {
+      "name": "oregon-trail-migration",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and wagon trains anchor the mid-19th-century American West."
+    },
+    {
+      "name": "mormon-trek-to-utah",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Well known regionally and westward migration to Salt Lake anchors the mid-19th century."
+    },
+    {
+      "name": "chinese-emigration-gold-rush",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The California Gold Rush is a sharp, universally recognised anchor carrying the migration with it."
+    },
+    {
+      "name": "gold-rush-to-australia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Gold rush framing anchors the mid-19th century; the Australian rush itself is regionally known."
+    },
+    {
+      "name": "first-transatlantic-telegraph",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Undersea telegraph cable is a strong Victorian technology anchor on a moderately known event."
+    },
+    {
+      "name": "burke-wills-australia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Famous only in Australia and the description supplies no temporal marker at all."
+    },
+    {
+      "name": "livingstone-stanley",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Dr Livingstone, I presume' is broadly familiar and Victorian African exploration narrows the era."
+    },
+    {
+      "name": "european-emigration-peak",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Mass European emigration is widely known and the text literally says 'peaked at the turn of the century'."
+    },
+    {
+      "name": "oklahoma-land-rush",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Regionally famous, and 'former Indian Territory' anchors the closing American frontier."
+    },
+    {
+      "name": "ellis-island-opens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally recognised and firmly tied to the great immigration wave."
+    },
+    {
+      "name": "nansen-arctic",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Nansen is expert-only and polar attempts span decades with no marker here."
+    },
+    {
+      "name": "klondike-gold-rush",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Reasonably known and the gold-rush framing anchors the late 19th century."
+    },
+    {
+      "name": "north-pole-reached",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Peary is moderately known and the heroic age of polar exploration narrows it broadly."
+    },
+    {
+      "name": "south-pole-reached",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Amundsen beating Scott to the South Pole is a staple of school history and firmly early 20th century."
+    },
+    {
+      "name": "shackleton-endurance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known survival story anchored loosely to the heroic age of Antarctic exploration."
+    },
+    {
+      "name": "alcock-brown-transatlantic",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Alcock and Brown are less famous than Lindbergh, but 'first nonstop transatlantic flight' anchors early aviation."
+    },
+    {
+      "name": "spirit-of-st-louis",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lindbergh's solo flight is universally known and pins the interwar aviation era."
+    },
+    {
+      "name": "amelia-earhart-atlantic",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Earhart is universally recognised and the flight is firmly interwar."
+    },
+    {
+      "name": "heyerdahl-kon-tiki",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Kon-Tiki is moderately famous, but a balsa raft voyage carries no era clue and reads as far older than it is."
+    },
+    {
+      "name": "windrush-arrival",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is largely British, but 'postwar Commonwealth settlement' is an explicit anchor."
+    },
+    {
+      "name": "vietnamese-boat-people",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely covered refugee crisis and 'fled Vietnam by sea after the war' dates it precisely."
+    },
+    {
+      "name": "soviet-jewish-emigration",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The emigration wave is niche, but 'as the USSR collapsed' is an explicit and precise anchor."
+    }
+  ]
+}

@@ -54,3 +54,9 @@ venv/
 # experiments
 experiments/category-clustering/.venv/
 experiments/category-clustering/output/
+# Regenerable grading batches (scripts/difficulty/grade/extract_batches.py)
+/scripts/difficulty/grade/batches
+
+# Python bytecode
+__pycache__/
+*.pyc

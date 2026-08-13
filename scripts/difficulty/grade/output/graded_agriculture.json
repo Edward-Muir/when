@@ -1,0 +1,1364 @@
+{
+  "batch": "agriculture",
+  "category": "agriculture",
+  "graded": [
+    {
+      "name": "plants-colonize-land",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Familiar evolutionary milestone, and 'spread from water onto barren continents' plants it unmistakably in deep prehistory."
+    },
+    {
+      "name": "first-stone-tools",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Stone Age toolmaking is school-taught worldwide and 'early hominins in Africa' is a deep-prehistory anchor."
+    },
+    {
+      "name": "first-cooking-with-fire",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Early hominins... fueling brain growth' explicitly places this before modern humans."
+    },
+    {
+      "name": "fire-mastery",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Control of fire is universal schoolbook material and 'early humans' anchors it to the Paleolithic."
+    },
+    {
+      "name": "neanderthals-thrive-europe",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Neanderthals are widely known and 'before modern humans arrived' is an explicit ordering anchor."
+    },
+    {
+      "name": "wild-grain-harvesting",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pre-agricultural grain gathering is specialist, but 'hunter-gatherers... long before farming' anchors the era strongly."
+    },
+    {
+      "name": "domestication-dogs",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Wolves-to-dogs is common knowledge and 'humanity's first animal companions' places it before all other domestication."
+    },
+    {
+      "name": "bread",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bread as a datable invention is not common knowledge, but 'predating agriculture by thousands of years' is a strong anchor."
+    },
+    {
+      "name": "first-bread-baked",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same anchor as its twin card: 'thousands of years before farming began' fixes the era for a low-recognition event."
+    },
+    {
+      "name": "agriculture",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Agricultural Revolution is universal schoolbook material."
+    },
+    {
+      "name": "agriculture-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Names the Fertile Crescent and the Neolithic Revolution outright."
+    },
+    {
+      "name": "domestication-wheat",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Fertile Crescent plus 'enabling agriculture' is the textbook Neolithic anchor; the subject is broadly familiar."
+    },
+    {
+      "name": "first-crops-cultivated",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "'Fertile Crescent... dawning farming' is the birth of agriculture, known to everyone."
+    },
+    {
+      "name": "barley-domesticated",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Barley specifically is specialist knowledge; the Fertile Crescent farming context fixes the era."
+    },
+    {
+      "name": "domestication-of-rice",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rice's Chinese origin is broadly known but the card offers geography without any era marker."
+    },
+    {
+      "name": "domestication-wheat-middle-east",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The description names the Neolithic agricultural revolution explicitly."
+    },
+    {
+      "name": "cattle-domesticated",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Wild aurochs tamed... giving early farmers meat, milk and muscle' is an explicit Neolithic anchor on a familiar subject."
+    },
+    {
+      "name": "domestication-cattle",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same familiar subject, anchored to the Near East at the dawn of farming."
+    },
+    {
+      "name": "domestication-of-potatoes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Andean origin of potatoes is widely known, but the card gives no temporal marker."
+    },
+    {
+      "name": "domestication-of-sheep-and-goats",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'The first livestock animals domesticated in the Fertile Crescent' is an explicit early-Neolithic anchor."
+    },
+    {
+      "name": "first-sugarcane-cultivation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "New Guinea sugarcane is specialist knowledge and the text offers geography without an era."
+    },
+    {
+      "name": "potato-domestication-america",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Technical framing (wild potato species near Lake Titicaca) with geography but no era clue."
+    },
+    {
+      "name": "cats-domesticated",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The cats-and-grain-stores story is widely told and 'early farming villages' anchors the Neolithic outright."
+    },
+    {
+      "name": "alcohol-fermentation-mead",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mead as the first alcohol is a niche fact and 'first alcoholic beverage' only loosely dates it."
+    },
+    {
+      "name": "copper-smelting-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Beginning the age of metallurgy' places it before the Bronze Age, and metal ages are school-taught."
+    },
+    {
+      "name": "domestication-maize-americas",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Maize from teosinte in Mexico is moderately known; geography only, no era marker."
+    },
+    {
+      "name": "domestication-of-pigs",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar livestock subject, but 'China and Anatolia' gives no temporal anchor."
+    },
+    {
+      "name": "first-beer-brewed",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Early farmers in the Near East' plus 'one of humanity's oldest drinks' is a strong Neolithic anchor on a familiar topic."
+    },
+    {
+      "name": "goat-milk-dairying",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The description says 'Neolithic farmers in the Near East' outright."
+    },
+    {
+      "name": "native-copper-working",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cold-hammering native copper is specialist; it implies pre-Bronze but no era is named."
+    },
+    {
+      "name": "neolithic-farmers-europe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Anatolian farmers spread agriculture, replacing hunter-gatherers' is an unmistakable Neolithic anchor."
+    },
+    {
+      "name": "chickens-domesticated",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar subject, but jungle fowl in Southeast Asia carries no era marker at all, so this is not an opening-foothold card."
+    },
+    {
+      "name": "first-wine-making",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Caucasus grape fermentation gives no temporal anchor; the card could read as Neolithic or classical."
+    },
+    {
+      "name": "first-woven-linen",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure subject, but 'Neolithic weavers in the Near East' is stated outright."
+    },
+    {
+      "name": "irrigation",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Universally understood concept, but 'channels and ditches for crops' carries no temporal marker whatsoever."
+    },
+    {
+      "name": "millet-adoption-china",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Foxtail and broomcorn millet are specialist; the Yellow River valley is geography without a date."
+    },
+    {
+      "name": "salt-evaporation-ponds",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Salt harvesting has no era anchor in the text and is not a recognisable event."
+    },
+    {
+      "name": "first-cheese-making",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Neolithic dairy farmers' is an explicit era anchor on an otherwise obscure card."
+    },
+    {
+      "name": "aboriginal-firestick-farming",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "Aboriginal fire management spans tens of millennia and the card gives no era clue at all."
+    },
+    {
+      "name": "bananas-cultivated",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'One of the earliest domesticated fruit crops' anchors it to the Neolithic despite low recognition."
+    },
+    {
+      "name": "domestication-potato-americas",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Andean potato domestication described with geography only; no era anchor."
+    },
+    {
+      "name": "domestication-rice-southeast-asia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Rice's Asian origin is broadly familiar but the era is not signalled."
+    },
+    {
+      "name": "first-irrigation-systems",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Ancient Mesopotamians... enabling the rise of civilization' is a school-taught anchor, well above the previous hard grade."
+    },
+    {
+      "name": "olive-cultivation-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mediterranean olive farming spans millennia and the card names no era, so it reads as anywhere from Neolithic to Roman."
+    },
+    {
+      "name": "copper-smelting-developed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Technical metallurgy framing; 'beyond native copper working' only helps if you already know that sequence."
+    },
+    {
+      "name": "domestication-of-donkeys",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "African wild asses in Northeast Africa is specialist and the text gives no era."
+    },
+    {
+      "name": "diamond-mines",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Diamonds first mined in India' gives no temporal anchor whatsoever and could read as any era from antiquity to the Mughals."
+    },
+    {
+      "name": "domestication-horses",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Horse domestication on the Eurasian steppes is widely known and reads unambiguously as prehistoric."
+    },
+    {
+      "name": "domestication-llama-alpaca",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Andean camelid domestication is specialist; the Andes anchor place, not time."
+    },
+    {
+      "name": "rice-paddy-cultivation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Paddy engineering is a specialist topic and the card gives no era, so it could read anywhere from Neolithic to the Song."
+    },
+    {
+      "name": "scratch-plow-design",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The ard is unknown to general players, but 'Fertile Crescent... one of the first tools to break soil' anchors the Neolithic."
+    },
+    {
+      "name": "wool-textile-production",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Woolly-sheep breeding is specialist and 'early peoples' is too vague to fix an era."
+    },
+    {
+      "name": "fiber-preparation-flax",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Retting and hackling are expert terms and 'Egyptians' spans three millennia."
+    },
+    {
+      "name": "pottery-wheel",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The potter's wheel is a recognisable invention and Mesopotamia anchors it firmly to early antiquity."
+    },
+    {
+      "name": "silk-production-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Silk's Chinese origin and its guarded secrecy are broadly known, and 'ancient Chinese' narrows the era."
+    },
+    {
+      "name": "silkworm-domesticated",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar subject, mulberry-and-silkworm detail, but no explicit era."
+    },
+    {
+      "name": "tin-smelting-mines",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Anatolian tin mining is obscure, but 'essential alloy component for bronze' anchors the Bronze Age."
+    },
+    {
+      "name": "bronze-discovered",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Bronze Age is school-taught everywhere and the description spells out the copper-tin alloy."
+    },
+    {
+      "name": "african-agricultural-innovation-millet",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "West African pearl millet and sorghum is specialist; the Sahel anchors place, not era."
+    },
+    {
+      "name": "sickle-blade-improvements",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure tool detail, but 'bronze blades replaced flint' is an explicit Bronze Age anchor, so not truly very-hard."
+    },
+    {
+      "name": "tin-extraction",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Launching the Bronze Age' is an explicit, universally recognised era anchor."
+    },
+    {
+      "name": "tea-discovered-china",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Tea's origin in ancient China is common knowledge and the card says 'ancient' outright."
+    },
+    {
+      "name": "indus-cotton-cultivation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Indus Valley civilisation is a firmly placed era for anyone who studied it."
+    },
+    {
+      "name": "beekeeping-in-egypt",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ancient Egyptians' with clay hives is a strong era anchor on a low-recognition event."
+    },
+    {
+      "name": "honeybee-keeping-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same Egyptian anchor as its twin card."
+    },
+    {
+      "name": "bronze-adoption-mediterranean",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Bronze spreading after copper is a clear sequence anchor within a school-taught age."
+    },
+    {
+      "name": "egyptian-leavened-bread",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ancient Egyptians used yeast' anchors the era firmly."
+    },
+    {
+      "name": "grain-storage-silos",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Dry topic, but 'Ancient Egyptians built granaries' is an explicit era anchor that lifts it above hard."
+    },
+    {
+      "name": "handloom-frame-loom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Frame looms are an expert topic and 'Anatolia and the Near East' gives place without era."
+    },
+    {
+      "name": "noodles-in-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The oldest-noodles find is a familiar story and 'ancient Chinese' narrows the era loosely."
+    },
+    {
+      "name": "watermelon-cultivated-egypt",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Ancient Egyptians... depicted in tombs' is an explicit era anchor, so hard overstates it."
+    },
+    {
+      "name": "winnowing-tray-fan",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An unknown implement with no era clue beyond 'Asian farmers'."
+    },
+    {
+      "name": "chocolate-in-mesoamerica",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Cacao in Mesoamerican ritual is broadly known and anchors to the pre-Columbian era."
+    },
+    {
+      "name": "iron-smelting",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Iron Age is school-taught everywhere and the card describes it directly."
+    },
+    {
+      "name": "iron-smelting-bloomery",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Beginning the transition from the Bronze Age' is an explicit anchor that lifts a technical card."
+    },
+    {
+      "name": "iron-adoption-greece",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'After the Bronze Age collapse... Greek Iron Age' names two era markers outright."
+    },
+    {
+      "name": "soybean-domesticated",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Soybean domestication is specialist and 'ancient China' is a very wide window with no narrowing detail."
+    },
+    {
+      "name": "aboriginal-didgeridoo-ceremonial",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "Aboriginal ceremonial life spans millennia and the card supplies no temporal context of any kind."
+    },
+    {
+      "name": "first-cabbage-cultivation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Wild cabbage breeding is obscure and 'Europeans' anchors neither era nor sequence."
+    },
+    {
+      "name": "irrigation-qanat-persia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Qanats are specialist; 'Persians' is a medium anchor spanning many centuries."
+    },
+    {
+      "name": "ancestral-dorset",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Dorset culture is unknown outside archaeology and the Arctic gives no era clue."
+    },
+    {
+      "name": "iron-adoption-sub-saharan-africa",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Iron smelting implies an iron age, but African chronology is not signalled."
+    },
+    {
+      "name": "warring-states-innovations",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Warring States' names a period most players cannot date, though iron and crossbows hint at antiquity."
+    },
+    {
+      "name": "zinc-production",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Zinc smelting in India is expert knowledge with no era marker on the card."
+    },
+    {
+      "name": "tofu-invented-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Tofu is familiar and reads as old Chinese cuisine, but the card names no era at all."
+    },
+    {
+      "name": "ancestral-puebloan-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ancestral Puebloan culture is regionally known; 'American Southwest' anchors place, and only loosely pre-Columbian time."
+    },
+    {
+      "name": "roman-horse-breeding",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Nobody recognises this event, but 'Romans... across the empire' is a strong era anchor, so very-hard overstates it."
+    },
+    {
+      "name": "vineyards-spread-rome",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'The Roman Empire... from Spain to Britain' anchors firmly to the imperial period."
+    },
+    {
+      "name": "mogollon-culture-agriculture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Mogollon are unknown to general players and the card offers no era."
+    },
+    {
+      "name": "stirrup-east-asia",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The stirrup's Chinese origin is buff-level and the card gives no era beyond 'cavalry warfare'."
+    },
+    {
+      "name": "heavy-plow",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Northern European clay soils hint at the medieval period without naming it."
+    },
+    {
+      "name": "iron-smelting-bantu-expansion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Bantu expansion is enthusiast knowledge and its centuries-long span resists dating."
+    },
+    {
+      "name": "stirrup-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Central Asian origin of the paired stirrup with no era marker."
+    },
+    {
+      "name": "water-mill-development",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Refinement of mill mechanics is an unrecognisable event; the Mediterranean and Middle East give no date."
+    },
+    {
+      "name": "moldboard-plow-adoption",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Plough technology is obscure; northern European soils only loosely imply the medieval period."
+    },
+    {
+      "name": "stirrup-adoption-europe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Transforming medieval warfare and feudalism' is an explicit era anchor that pulls this above its stirrup siblings."
+    },
+    {
+      "name": "african-yam-cultivation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "West African yam farming has no recognition and no era clue at all."
+    },
+    {
+      "name": "animal-plowing-efficiency",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Harness and collar design is unrecognisable, but 'medieval Europe' is stated outright."
+    },
+    {
+      "name": "arabic-horse-evolution",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Arabian horses are familiar but Bedouin breeding practice carries no era marker."
+    },
+    {
+      "name": "horizontal-water-wheel",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An expert-level distinction in mill design with no temporal context."
+    },
+    {
+      "name": "horse-plough-agriculture",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Northern European expansion implies the medieval period without saying so."
+    },
+    {
+      "name": "monastery-lands-expansion",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Not a recognisable event, but 'medieval Europe's largest landholders' anchors the era explicitly."
+    },
+    {
+      "name": "three-field-rotation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Three-field rotation is standard medieval-history teaching and the fallow-field detail confirms the era."
+    },
+    {
+      "name": "water-mill",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Medieval Europe' is explicit but the diffuse spread of watermills is not a recognisable event."
+    },
+    {
+      "name": "coffee-origins-ethiopia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Coffee's Ethiopian origin story is widely told; 'spread across the Arab world' loosely implies the medieval Islamic era."
+    },
+    {
+      "name": "famine-cycles-establish",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A diffuse condition rather than an event, though 'medieval European life' anchors the era."
+    },
+    {
+      "name": "manorial-system-agricultural",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Lords, serfs and manors are core school material on medieval Europe."
+    },
+    {
+      "name": "water-power-industrial",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Sawmills and fulling mills give an industrial-ish flavour but no stated era, and the event is unrecognisable."
+    },
+    {
+      "name": "castle-fortification-shift",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Stone castles replacing wooden forts is a familiar medieval image with an explicit feudal anchor."
+    },
+    {
+      "name": "chinese-foot-binding-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Foot binding is widely known and 'lasting nearly a millennium' is a usable anchor."
+    },
+    {
+      "name": "crop-rotation-system",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Standard in medieval Europe' names the era directly on a school-taught topic."
+    },
+    {
+      "name": "gunpowder-china-adoption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Gunpowder's Chinese invention is common knowledge; fire arrows and rockets place it before European firearms."
+    },
+    {
+      "name": "heavy-plow-adoption",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Explicit 'medieval Europe' anchor, but one of four near-identical plough cards with no recognition."
+    },
+    {
+      "name": "horse-collar-adoption",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The padded collar is unknown to general players; horses replacing oxen implies medieval Europe."
+    },
+    {
+      "name": "slash-burn-agriculture-americas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Mesoamerican forest clearance anchors only to the broad pre-Columbian span."
+    },
+    {
+      "name": "water-mill-europe",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "European grain milling anchors medieval, but the card describes a trend, not an event."
+    },
+    {
+      "name": "song-triple-harvest",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Champa rice is expert knowledge and 'Song Dynasty' names a period most players cannot date."
+    },
+    {
+      "name": "horseshoe-adoption",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Explicit 'medieval Europe' anchor on an otherwise unrecognisable event."
+    },
+    {
+      "name": "romanesque-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Romanesque is a named architectural era, and round arches and barrel vaults mark it as pre-Gothic."
+    },
+    {
+      "name": "champagne-region-wine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Monastic vineyards imply the medieval period, but 'centuries before sparkling wine' is a slippery anchor."
+    },
+    {
+      "name": "crossbow-adoption-medieval",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Crossbows piercing armour is a familiar medieval image with an explicit European-warfare anchor."
+    },
+    {
+      "name": "cistercian-order",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bernard of Clairvaux and monastic expansion anchor the high middle ages, but recognition is enthusiast-only."
+    },
+    {
+      "name": "song-agricultural-treatise",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Chen Fu's treatise is expert knowledge and the Song Dynasty is undatable for most players."
+    },
+    {
+      "name": "pasta-dried-sicily",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Arab-Sicilian pasta story is a fun fact; 'Arab-influenced Sicily' points at the medieval Mediterranean."
+    },
+    {
+      "name": "wind-mill-adoption",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "One of five windmill cards; the Low Countries and England anchor place, not date."
+    },
+    {
+      "name": "windmill-european",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Post mills in northern Europe are specialist detail with no era named, so medium overstated it."
+    },
+    {
+      "name": "windmill-vertical-axis",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A technical axis distinction; the Dutch landscape reference misleadingly suggests a much later era."
+    },
+    {
+      "name": "windmills-grind-grain",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The most generic of the windmill cards, with no era, place detail, or named event."
+    },
+    {
+      "name": "windmill-introduction",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Northwestern European post mills, geography only."
+    },
+    {
+      "name": "african-textile-production",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "West African weaving and indigo dyeing has no recognition and no era marker."
+    },
+    {
+      "name": "andean-llama-domestication",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "'Andean civilizations' points at pre-Columbian South America but nothing narrower."
+    },
+    {
+      "name": "beguine-movement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Beguines are unknown to general players and the Low Countries give no date."
+    },
+    {
+      "name": "first-greenhouse",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Italian monks' implies a medieval or Renaissance setting on an otherwise obscure card."
+    },
+    {
+      "name": "harrow-development",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The harrow is unrecognisable, but the card says 'Medieval European farmers' outright, so very-hard was too harsh."
+    },
+    {
+      "name": "iron-stirrups-africa",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Sahel cavalry equipment is expert knowledge with no era anchor."
+    },
+    {
+      "name": "maize-cultivation-expansion",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A diffuse spread across the Americas with only a pre-Columbian implication."
+    },
+    {
+      "name": "maori-land-use-customary",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Iwi land tenure is specialist; 'Maori settlers in New Zealand' loosely anchors the Polynesian settlement era."
+    },
+    {
+      "name": "medieval-university-expansion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Medieval universities are broadly known and the card names 'the medieval era' outright."
+    },
+    {
+      "name": "mob-football-england",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Medieval English villages' is an explicit era anchor on a colourful, if obscure, card."
+    },
+    {
+      "name": "population-doubling-medieval",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'High Middle Ages' anchors well, but a demographic trend is not a recognisable event."
+    },
+    {
+      "name": "potash-production-wood",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Potash chemistry is expert knowledge and glassmaking and soap span many centuries."
+    },
+    {
+      "name": "potato-cultivation-spread",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A pre-Columbian diffusion with an enormously wide implied window."
+    },
+    {
+      "name": "slash-and-burn-intensive",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "An intensification of an existing practice, with only a pre-Columbian Mesoamerican hint."
+    },
+    {
+      "name": "terracing-agriculture-andes",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Andean terraces are visually familiar but 'Andean civilizations' spans a millennium without naming the Inca."
+    },
+    {
+      "name": "water-mill-expansion",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Explicit 'medieval Europe', but the fifth watermill card and no recognition of its own."
+    },
+    {
+      "name": "first-european-paper-mill",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Fabriano is specialist, though 'medieval Europe' and cheaper books anchor it before printing."
+    },
+    {
+      "name": "long-bow-english-development",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The English longbow is famous from Crecy and Agincourt, and massed medieval archery anchors the era."
+    },
+    {
+      "name": "mechanical-clock-adoption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Church and monastery clocks are a familiar medieval milestone."
+    },
+    {
+      "name": "glass-lens-grinding",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Lens grinding as an event is unrecognisable, though Venice, Florence and eyeglasses point at late-medieval Italy."
+    },
+    {
+      "name": "scythe-development",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The scythe is unrecognisable as an event, but 'medieval Europe' is stated, so very-hard overstated it."
+    },
+    {
+      "name": "gunpowder-europe",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Gunpowder transforming European warfare is common knowledge; only the missing era wording keeps it off easy, and very-hard was badly wrong."
+    },
+    {
+      "name": "gunpowder-weapons-adoption",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Cannons and early firearms in siege warfare read clearly as late-medieval or early-modern."
+    },
+    {
+      "name": "cast-iron-production",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Blast furnaces are specialist and the card gives no era for European foundries."
+    },
+    {
+      "name": "madder-dye-monopoly",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Madder root markets are expert knowledge with no era anchor."
+    },
+    {
+      "name": "manioc-cultivation-caribbean",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cassava as an indigenous staple implies pre-contact America but nothing narrower."
+    },
+    {
+      "name": "moldboard-plow-improvements",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "An incremental improvement to a plough already covered by three other cards, with no era stated."
+    },
+    {
+      "name": "open-field-system-abandonment",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The open field and enclosure story is regional school material; 'England's medieval open field system' anchors the era."
+    },
+    {
+      "name": "soap-making-improvements",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Olive-oil soap refinement is expert knowledge with no temporal marker."
+    },
+    {
+      "name": "terrace-farming-andes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'The Inca' is a strong, widely dated anchor and the terraces are iconic."
+    },
+    {
+      "name": "yemen-coffee-cultivation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Sufi coffee story is niche but Yemen and Arabia point to the Islamic pre-modern era."
+    },
+    {
+      "name": "inca-terrace-agriculture",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Inca Empire at its peak is a firm anchor for most players."
+    },
+    {
+      "name": "enclosure-movement-begins",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Enclosure is regional school material at best and the card names no era."
+    },
+    {
+      "name": "chili-peppers-spread",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "American peppers reaching Asia is a clear Columbian Exchange anchor."
+    },
+    {
+      "name": "coffee-cultivation-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Throughout the Ottoman Empire' with coffeehouses is a solid era anchor."
+    },
+    {
+      "name": "enclosure-movement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Duplicate framing of enclosure with no era stated and limited global recognition."
+    },
+    {
+      "name": "sugar-plantation-establishment",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Caribbean sugar and enslaved labour are school-taught, and 'Spanish colonists' anchors the early colonial era firmly."
+    },
+    {
+      "name": "chocolate-introduced-europe",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Spanish explorers brought cacao from the Americas' anchors unambiguously to the decades after Columbus."
+    },
+    {
+      "name": "tomato-reaches-europe",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The tomato's American origin is common knowledge and Spanish explorers date it clearly."
+    },
+    {
+      "name": "chocolate-europe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Third chocolate card; 'Spanish Prince Philip' and Maya nobles anchor the 16th century for those who catch it."
+    },
+    {
+      "name": "maize-introduction-africa-asia",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Portuguese traders' plus 'American maize' is a strong Columbian Exchange anchor."
+    },
+    {
+      "name": "mary-queen-scots-billiards",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Early billiards is an obscure card and 'fashionable pastime of the nobility' only vaguely suggests the early modern era."
+    },
+    {
+      "name": "potato-introduction-europe",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The potato arriving from South America with Spanish explorers is universally known."
+    },
+    {
+      "name": "potato-reaches-spain",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same widely known story with the same explicit Spanish-ships anchor."
+    },
+    {
+      "name": "cocoa-chocolate-commodity",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Spanish colonizers exported it to European courts' is a firm post-Columbian anchor despite the vague card name."
+    },
+    {
+      "name": "agricultural-commercialization",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A gradual economic shift with no era named and no recognisable event."
+    },
+    {
+      "name": "new-world-crops-adoption",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Columbian Exchange is school-taught and the card names American crops entering Old World diets."
+    },
+    {
+      "name": "bleaching-techniques-development",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Buttermilk-and-sunlight bleaching is expert knowledge with no era marker."
+    },
+    {
+      "name": "joseon-silhak-agricultural",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Silhak is unknown outside Korean history and the Joseon Dynasty spans five centuries."
+    },
+    {
+      "name": "coal-mining-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'British coal... early industrial processes' anchors clearly to the dawn of industrialisation."
+    },
+    {
+      "name": "famine-cycles-break",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A negative trend rather than an event; New World crops only place it loosely after 1500."
+    },
+    {
+      "name": "selective-breeding-animals",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "British livestock breeding is specialist and no era is named on the card."
+    },
+    {
+      "name": "agricultural-revolution",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Jethro Tull's seed drill and 'Britain's Agricultural Revolution' are named schoolbook anchors just before industrialisation."
+    },
+    {
+      "name": "futures-market",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Dojima Rice Exchange is specialist; 'world's first futures market' in Osaka only loosely implies early modern Japan."
+    },
+    {
+      "name": "industrial-revolution-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and named directly on the card."
+    },
+    {
+      "name": "potato-embraced-europe",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The story is familiar, but 'championed by reformers to fight famine' could read as anywhere from 1600 to 1850, so easy overstated it."
+    },
+    {
+      "name": "manchester-cotton-boom",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Lancashire's mechanised cotton mills anchor squarely to the Industrial Revolution, a school-taught era."
+    },
+    {
+      "name": "maori-musket-wars",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognised mainly in New Zealand, but 'European muskets' anchors the colonial 19th century."
+    },
+    {
+      "name": "phylloxera-wine-blight",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known to wine enthusiasts only; an American insect and grafted rootstock hint at the industrial era without naming it."
+    },
+    {
+      "name": "rubber-cultivation-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Henry Wickham is unknown, but Kew Gardens and Southeast Asian plantations anchor the Victorian empire."
+    },
+    {
+      "name": "first-hamburger-served",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The hamburger is universally known and reads unmistakably as modern America."
+    },
+    {
+      "name": "dust-bowl-migration",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Dust Bowl exodus to California is school-taught and reads clearly as the Depression years."
+    },
+    {
+      "name": "green-revolution-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A named, taught event; high-yield varieties and fertilisers anchor it to the mid-20th century."
+    },
+    {
+      "name": "microwave-meals-spread",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Countertop microwaves reaching homes is a familiar postwar consumer milestone."
+    },
+    {
+      "name": "plant-based-meat-mainstream",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Impossible and Beyond Meat are named current brands, placing this within the last few years."
+    }
+  ]
+}

@@ -1,0 +1,1427 @@
+{
+  "batch": "empires_part2",
+  "category": "empires",
+  "graded": [
+    {
+      "name": "unification-egypt",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Narmer is obscure but 'First Dynasty' and 'world's first nation-states' anchor firmly to the dawn of recorded civilisation."
+    },
+    {
+      "name": "female-ruler-sargon",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-only ruler, but 'Sumerian King List' and 'earliest named sovereigns' place it in the earliest Mesopotamia."
+    },
+    {
+      "name": "shang-dynasty-established",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Shang is a familiar named dynasty and 'first verified dynasty' plus bronze and oracle bones anchor to the Bronze Age."
+    },
+    {
+      "name": "vedic-period",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Enthusiast-level period, but the Rigveda and the origins of Hinduism anchor to deep antiquity."
+    },
+    {
+      "name": "zhou-dynasty-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Named major Chinese dynasty overthrowing the Shang - a strong ancient-China anchor despite low recognition."
+    },
+    {
+      "name": "king-david-rules",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "King David is near-universal biblical knowledge with an unmistakable ancient-Israel setting."
+    },
+    {
+      "name": "nubian-kush-kingdoms",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Kush is obscure, but rivalling Egypt and ruling as the 25th Dynasty is a strong ancient-Egypt anchor."
+    },
+    {
+      "name": "fall-of-nineveh",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Assyria, Babylonians and Medes place this squarely in the ancient Near East."
+    },
+    {
+      "name": "achaemenid-empire-persia",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Cyrus the Great and the Persian Empire are school-level with a firm classical anchor."
+    },
+    {
+      "name": "darius-great-king",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Darius and Persepolis are recognisable and the Persian Empire is a strong classical anchor."
+    },
+    {
+      "name": "roman-republic",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Rome overthrowing its monarchy: high recognition and an unambiguous ancient anchor."
+    },
+    {
+      "name": "warring-states-period-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Warring States', seven Chinese states and philosophical flourishing anchor to pre-imperial China."
+    },
+    {
+      "name": "qin-legalism-shang-yang",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Shang Yang is expert knowledge; 'state of Qin' and legalism give only a moderate ancient-China anchor."
+    },
+    {
+      "name": "alexander-spreading-hellenism",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Alexander is universally known and Hellenism anchors the era outright."
+    },
+    {
+      "name": "maurya-chandragupta",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Chandragupta is little known outside India, but 'unifying the subcontinent for the first time' is a strong ancient anchor."
+    },
+    {
+      "name": "seleucid-empire-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Seleucus is enthusiast knowledge and the description gives geography rather than a clear Hellenistic marker."
+    },
+    {
+      "name": "great-wall-china",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Great Wall and Qin Shi Huang are universally recognised with a firm ancient-China anchor."
+    },
+    {
+      "name": "han-dynasty",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Han is one of the best-known Chinese dynasties and 'golden age of Chinese civilization' anchors to antiquity."
+    },
+    {
+      "name": "xiongnu-conflicts-han",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Xiongnu are obscure, but the Han frontier is a strong ancient-China anchor."
+    },
+    {
+      "name": "bactrian-kingdom-prosperity",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Greco-Bactria is expert-only, but 'after Alexander's conquests' is a strong Hellenistic anchor."
+    },
+    {
+      "name": "han-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Emperor Wu and Han expansion anchor firmly to the Han period."
+    },
+    {
+      "name": "salt-monopoly-china",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A salt monopoly is obscure, but 'Emperor Wu of Han' pins it to the Han."
+    },
+    {
+      "name": "social-war-rome",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Rubric's own worked example: low recognition, but Rome and citizenship give an ancient anchor."
+    },
+    {
+      "name": "pompey-conquers-jerusalem",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pompey and the Hasmoneans are enthusiast-level, but 'Roman general Pompey' anchors the late Republic."
+    },
+    {
+      "name": "julius-caesar-conquest-gaul",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Caesar conquering Gaul is school-level with the strongest possible Roman anchor."
+    },
+    {
+      "name": "cleopatra-vii-queen",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cleopatra is universally known and Ptolemaic Egypt anchors clearly."
+    },
+    {
+      "name": "cleopatra-caesar-alliance",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cleopatra and Julius Caesar together - two of the most recognisable figures in ancient history."
+    },
+    {
+      "name": "pax-romana",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Augustus and the Roman Empire are school-level anchors."
+    },
+    {
+      "name": "pontius-pilate-judea",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Pontius Pilate and the trial of Jesus is about as strong a temporal anchor as a card can carry."
+    },
+    {
+      "name": "roman-conquest-of-britain",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Claudius, the invasion and the province of Britannia give a familiar topic a firm Roman anchor."
+    },
+    {
+      "name": "great-fire-rome",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Nero and the burning of Rome are widely known with a firm Roman anchor."
+    },
+    {
+      "name": "year-four-emperors",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The civil war itself is obscure, but 'after Nero's death' pins it exactly."
+    },
+    {
+      "name": "vespasian-colosseum-begun",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Colosseum is universally famous and Nero is named - a strong Roman anchor."
+    },
+    {
+      "name": "aksumite-empire-rise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Aksum is specialised knowledge and Red Sea trading power gives no clear era marker."
+    },
+    {
+      "name": "hadrian-becomes-emperor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Hadrian's Wall makes him recognisable and 'succeeded Trajan' is an unambiguous Roman anchor."
+    },
+    {
+      "name": "jewish-diaspora-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bar Kokhba is obscure, but Hadrian and Roman Jerusalem anchor it firmly."
+    },
+    {
+      "name": "marcus-aurelius-emperor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Marcus Aurelius is one of the best-known Roman emperors and 'Five Good Emperors' anchors the era."
+    },
+    {
+      "name": "funan-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Funan is unrecognised and India-China maritime trade gives no temporal marker."
+    },
+    {
+      "name": "three-kingdoms-period",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Three Kingdoms is enthusiast knowledge, but 'the Han dynasty collapsed' anchors it precisely."
+    },
+    {
+      "name": "cyprian-bishop-carthage",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Cyprian is expert-only, but Carthage and 'early Christian theology' give a late-Roman window."
+    },
+    {
+      "name": "aurelian-reunites-empire",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Aurelian is obscure, but the description names the Crisis of the Third Century outright."
+    },
+    {
+      "name": "split-roman-empire",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Diocletian's division of the empire is a standard school topic with a firm Roman anchor."
+    },
+    {
+      "name": "diocletian-persecution-christians",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The persecution is enthusiast knowledge, but 'Emperor Diocletian' anchors late Rome."
+    },
+    {
+      "name": "constantine-conversion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Constantine's conversion is school-level with a strong Roman and Christian anchor."
+    },
+    {
+      "name": "eastern-jin-period",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Eastern Jin is unrecognised and 'Chinese dynasty moved south' narrows nothing for a general player."
+    },
+    {
+      "name": "aksumite-christianity",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Aksum is curriculum-level rather than expert-only, and 'one of the first Christian states' is a near-explicit era anchor."
+    },
+    {
+      "name": "council-of-antioch",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only council, but the Arian controversy places it among the early-Christian centuries."
+    },
+    {
+      "name": "samudragupta-deccan-campaigns",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Samudragupta is unknown to general players, but the named Gupta Empire anchors classical India."
+    },
+    {
+      "name": "germanic-migration-period",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The term is enthusiast-level, but 'moved into the Roman Empire' anchors the fall of Rome."
+    },
+    {
+      "name": "council-of-constantinople",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The council itself is expert knowledge, but Constantinople and the Nicene Creed anchor the early church."
+    },
+    {
+      "name": "baekje-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Baekje is unrecognised and maritime ties to Japan and China give no era marker."
+    },
+    {
+      "name": "kalidasa-drama",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kalidasa is expert knowledge, but Sanskrit drama and the Gupta period give a classical-India window."
+    },
+    {
+      "name": "kumaragupta-i-reign",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kumaragupta is unknown, but the named Gupta Empire and Nalanda anchor classical India."
+    },
+    {
+      "name": "visigoths-settle-aquitaine",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure settlement, but Rome granting Visigoths land as foederati is a very strong late-Roman anchor."
+    },
+    {
+      "name": "council-of-ephesus",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Obscure council, but the Nestorian dispute places it among the early christological controversies."
+    },
+    {
+      "name": "anglo-saxon-kingdoms-establish",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Anglo-Saxon settlement is a familiar topic and 'after Roman withdrawal' anchors it exactly."
+    },
+    {
+      "name": "council-chalcedon",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only council whose description names no place, figure or controversy that dates it - councils span 325 to 1545."
+    },
+    {
+      "name": "sack-rome-vandals",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Vandal sack of Rome is widely known through 'vandalism' and anchors to Rome's fall."
+    },
+    {
+      "name": "hephthalite-invasions",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Near-zero recognition, but the Sasanian Empire and 'White Huns' give a late-antique window."
+    },
+    {
+      "name": "theodoric-ostrogoth-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Theodoric is expert-level, but conquering Italy and blending Roman and Gothic rule anchors post-Roman Italy."
+    },
+    {
+      "name": "ghassanid-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Ghassanids are unknown, but 'Byzantine client state' is exactly the rubric's strong-anchor case."
+    },
+    {
+      "name": "justinian-gothic-war",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Justinian and the Ostrogoths anchor firmly to the Byzantine reconquest of Italy."
+    },
+    {
+      "name": "byzantine-church-architecture",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Architecture 'peaks' are not events players know, but Justinian I is named and anchors it."
+    },
+    {
+      "name": "gokturk-empire-expansion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Gokturks and the Rouran Khaganate are unknown and steppe geography gives no era marker."
+    },
+    {
+      "name": "gregory-great-becomes-pope",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Gregory I is little known, but papal reform plus missionaries to England places it in the early medieval church."
+    },
+    {
+      "name": "chess-emerges-india",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The Indian origin of chess is widely known folk knowledge, even though the text gives no explicit era."
+    },
+    {
+      "name": "pandya-dynasty",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Pandyas are unrecognised and pearl fisheries and Indian Ocean trade give no era marker."
+    },
+    {
+      "name": "palenque-pacal-accession",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Pakal is expert knowledge, but 'Maya golden age' points to the Classic period."
+    },
+    {
+      "name": "early-tang-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Taizong is obscure, but Tang China is a named, well-known dynasty anchor."
+    },
+    {
+      "name": "arab-conquest-of-egypt",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Arab conquest of Byzantine Egypt is a strong early-Islamic anchor."
+    },
+    {
+      "name": "arab-conquest-persia",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Muslim forces conquered the Sasanian Empire' is a strong early-Islamic anchor."
+    },
+    {
+      "name": "srivijaya-empire",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Srivijaya is unknown and the description gives trade geography with no temporal marker."
+    },
+    {
+      "name": "arabs-capture-carthage",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The event is obscure, but Carthage plus 'Islamic conquest of North Africa' anchors the 7th-8th century."
+    },
+    {
+      "name": "mon-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Mon kingdoms are unrecognised and Theravada Buddhism spans two millennia - no era narrowing."
+    },
+    {
+      "name": "nara-period-begins",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Nara is obscure, but 'Japan's first permanent capital' anchors the founding of the Japanese state."
+    },
+    {
+      "name": "siege-constantinople-arab",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Arabs besieging Byzantine Constantinople is a strong early-Islamic anchor."
+    },
+    {
+      "name": "abbasid-caliphate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Abbasids overthrowing the Umayyads and founding Baghdad is a strong caliphate-era anchor."
+    },
+    {
+      "name": "charlemagne-king-franks",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Charlemagne is a household name with a firm early-medieval anchor."
+    },
+    {
+      "name": "viking-raids-begin",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Lindisfarne and the start of the Viking Age are widely known with a clear era."
+    },
+    {
+      "name": "charlemagne",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Charlemagne crowned emperor by the Pope is school-level with a very strong anchor."
+    },
+    {
+      "name": "huari-road-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Wari are unknown, but 'prefiguring the later Inca road system' places it before the Inca in the Andes."
+    },
+    {
+      "name": "treaty-of-aachen",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The treaty is obscure, but Charlemagne and Byzantium are both strong named anchors."
+    },
+    {
+      "name": "treaty-verdun",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "An obscure treaty carried by a very strong anchor: the division of Charlemagne's empire."
+    },
+    {
+      "name": "alfred-great-king",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Alfred the Great is widely recognised and the Viking threat anchors the era."
+    },
+    {
+      "name": "alfred-the-great-recaptures-london",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The specific recapture is obscure, but Alfred and the Vikings anchor it tightly."
+    },
+    {
+      "name": "fall-tang-dynasty",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A named major Chinese dynasty collapsing is a solid imperial-China anchor."
+    },
+    {
+      "name": "bukhara-samanid-scholars",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Bukhara and the Samanids are expert-level; Ibn Sina anchors the Islamic Golden Age for those who know him."
+    },
+    {
+      "name": "song-dynasty-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Song is a named major Chinese dynasty, a solid era anchor despite the thin description."
+    },
+    {
+      "name": "chola-naval-supremacy",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Cholas are unknown to general players and the card gives only Indian Ocean geography."
+    },
+    {
+      "name": "karakhanid-dynasty",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Karakhanids are expert-only, but 'first Turkic dynasty to convert to Islam' places them in the early Islamic centuries."
+    },
+    {
+      "name": "chola-dynasty-expansion",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A named empire nobody recognises with trade geography but no temporal marker."
+    },
+    {
+      "name": "karakhanid-administration",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Administrative detail of an unrecognised khanate with no temporal clue whatsoever."
+    },
+    {
+      "name": "basil-ii-bulgar-slayer",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Basil II is expert knowledge, but Byzantium and the conquest of Bulgaria anchor the era."
+    },
+    {
+      "name": "rajendra-chola-conquest",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Rajendra Chola is unrecognised and the description gives only Indian and Southeast Asian geography."
+    },
+    {
+      "name": "seljuk-empire-founded",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Seljuks are specialised knowledge and 'Turks dominating the Middle East' gives only a loose medieval window."
+    },
+    {
+      "name": "song-neo-confucianism",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Neo-Confucianism is expert knowledge, but the Song dynasty is named and anchors it."
+    },
+    {
+      "name": "madrasa-education-flourishes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Madrasas are obscure, but the Islamic-world framing gives a post-Islamic era window."
+    },
+    {
+      "name": "ghana-decline",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ghana is taught in the West African empires unit but the Almoravids and gold trade give only a loose medieval anchor."
+    },
+    {
+      "name": "toledo-reconquered",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Toledo itself is specialised, but Reconquista, Castile and recovering the Visigothic capital from Muslim rule are layered medieval-Iberia anchors."
+    },
+    {
+      "name": "antioch-crusader-conflicts",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Crusaders' and 'Crusader states' are a strong high-medieval anchor."
+    },
+    {
+      "name": "xiangqi-chinese-chess",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Xiangqi is obscure, but 'during the Song dynasty' is an explicit dynastic anchor."
+    },
+    {
+      "name": "concordat-worms",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Concordat is expert knowledge, but Pope and Holy Roman Emperor anchor medieval Europe."
+    },
+    {
+      "name": "fall-of-edessa",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Edessa is unknown, but Crusader states and the Second Crusade anchor it tightly."
+    },
+    {
+      "name": "song-maritime-technology",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The fleet is not a known event, but the Song dynasty is named and anchors it."
+    },
+    {
+      "name": "kamakura-shogunate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Kamakura is obscure, but 'Japan's first military government' and samurai dominance anchor medieval Japan."
+    },
+    {
+      "name": "third-crusade",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Richard the Lionheart and Saladin are famous, and the Crusades anchor the era firmly."
+    },
+    {
+      "name": "minamoto-yoritomo-power",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Yoritomo is expert knowledge, but the first shogun and the bakufu anchor medieval Japan."
+    },
+    {
+      "name": "fiji-kingdoms",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Fijian chiefdom consolidation is unrecognised and the description contains no temporal marker."
+    },
+    {
+      "name": "khorezm-state",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Khwarezm is unknown, but 'destruction by the Mongols' is a strong 13th-century anchor."
+    },
+    {
+      "name": "maya-postclassic-conflicts",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Postclassic Maya is specialised, but the Maya and the Classic collapse give a workable anchor."
+    },
+    {
+      "name": "hojo-regency-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Hojo regency is expert-only, but the named Kamakura shogunate anchors medieval Japan."
+    },
+    {
+      "name": "delhi-sultanate",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Delhi Sultanate appears in world-history teaching and a sultanate ruling northern India anchors the Islamic-India era."
+    },
+    {
+      "name": "albigensian-crusade-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Cathars turn up in popular history, and a pope launching a crusade against heretics anchors the high Middle Ages."
+    },
+    {
+      "name": "kamakura-internal-conflicts",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The assassination is obscure, but 'shogun' and the Minamoto-to-Hojo transition anchor medieval Japan."
+    },
+    {
+      "name": "tran-dynasty-rule",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Tran are unknown, but repelling three Mongol invasions is a strong 13th-century anchor."
+    },
+    {
+      "name": "death-genghis-khan",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Genghis Khan is universally recognised and anchors the Mongol era outright."
+    },
+    {
+      "name": "mali-empire-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mali and Sundiata are curriculum-level, and a wealthy trans-Saharan gold empire anchors medieval West Africa."
+    },
+    {
+      "name": "sukhothai-kingdom",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Sukhothai is unrecognised, but 'first major Thai state' is the same kind of national-origin anchor as Nara."
+    },
+    {
+      "name": "mamluks-take-power-egypt",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Mamluks are obscure, but halting the Mongols at Ain Jalut is a strong 13th-century anchor."
+    },
+    {
+      "name": "ilkhanate-establishment",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Ilkhanate is expert knowledge, but Hulagu, Baghdad and Mongol succession anchor it tightly."
+    },
+    {
+      "name": "palaiologan-revival",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Palaiologoi are expert-only, but Byzantine Constantinople is the rubric's strong-anchor case."
+    },
+    {
+      "name": "mongol-administrative-reforms",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Kublai Khan and the Yuan dynasty are strong Mongol-era anchors."
+    },
+    {
+      "name": "mongol-naval-expeditions",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Mongol invasion of Japan wrecked by storms is a familiar story, with Kublai Khan named."
+    },
+    {
+      "name": "mongol-empire-greatest-extent",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Mongol Empire at its greatest extent is school-level, with Kublai Khan named."
+    },
+    {
+      "name": "sicilian-vespers",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Vespers are obscure; Angevin and Aragonese rule give a medieval-European window only."
+    },
+    {
+      "name": "mapungubwe-empire-decline",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Mapungubwe is unrecognised and the Great Zimbabwe reference only dates it relative to another unknown."
+    },
+    {
+      "name": "lannathai-unification",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Lanna is unrecognised and the description carries no temporal marker."
+    },
+    {
+      "name": "fiji-matamatamatamatamata-structure",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Fijian chiefdoms again, with no temporal marker of any kind."
+    },
+    {
+      "name": "swahili-kilwa-sultanate",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kilwa is unknown, but 'Sultanate' and Swahili Indian Ocean trade give an Islamic-era window."
+    },
+    {
+      "name": "avignon-papacy-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Avignon papacy is specialised, but the papal court relocating to France is a distinctly late-medieval anchor."
+    },
+    {
+      "name": "muhammad-bin-tughlaq-reforms",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Tughlaq is expert-only, but a Delhi sultan anchors Islamic India."
+    },
+    {
+      "name": "vijayanagara-hindu-restoration",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Vijayanagara is unknown to general players, but a Hindu restoration in southern India implies the post-Sultanate era."
+    },
+    {
+      "name": "kilwa-sultanate",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Same Islamic trading-sultanate anchor as the other Kilwa card."
+    },
+    {
+      "name": "wolof-empire-formation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Jolof Empire is unrecognised and Senegambia carries no era marker."
+    },
+    {
+      "name": "majapahit-empire",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Majapahit and Gajah Mada are unknown and maritime Southeast Asia gives no temporal marker."
+    },
+    {
+      "name": "timur-tamerlane-conqueror",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Tamerlane is a name most people have heard, and 'Turco-Mongol' anchors him after Genghis."
+    },
+    {
+      "name": "western-schism-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Rival popes in Rome and Avignon is a strong late-medieval anchor, and the Schism is specialised rather than expert-only."
+    },
+    {
+      "name": "joseon-dynasty",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Joseon has grown familiar and 'ruled Korea for over 500 years' hints at the last pre-modern dynasty."
+    },
+    {
+      "name": "fijian-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A third Fijian chiefdom card with no temporal marker."
+    },
+    {
+      "name": "malacca-sultanate",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Malacca is obscure, but 'Sultanate' and Southeast Asian maritime dominance give an Islamic-era window."
+    },
+    {
+      "name": "oyo-empire-military-innovation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Oyo is unrecognised and Yoruba cavalry carries no temporal marker."
+    },
+    {
+      "name": "sulu-sultanate",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Sulu is unknown, but a Philippine Islamic sultanate implies the later Indian Ocean Islamic world."
+    },
+    {
+      "name": "hussite-movement",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Jan Hus and demands for church reform read clearly as the pre-Reformation late Middle Ages."
+    },
+    {
+      "name": "aztec-empire",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Aztec Empire is widely recognised and anchors firmly to the late pre-Columbian period."
+    },
+    {
+      "name": "council-of-florence",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The council is expert knowledge, but a still-surviving Byzantium dates it before 1453."
+    },
+    {
+      "name": "aztec-expansion-conquests",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Montezuma I is obscure, but the Aztec Triple Alliance anchors the era firmly."
+    },
+    {
+      "name": "mutapa-empire",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Mutapa is unrecognised and the Great Zimbabwe reference only dates it relative to another unknown."
+    },
+    {
+      "name": "rwanda-kingdom-formation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Kingdom of Rwanda is unrecognised and the description carries no temporal marker."
+    },
+    {
+      "name": "fall-constantinople-1453",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Ottoman conquest of Constantinople is famous and both names anchor the era firmly."
+    },
+    {
+      "name": "edward-iv-crowned",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Edward IV is little known, but 'Wars of the Roses' is an explicit late-medieval English anchor."
+    },
+    {
+      "name": "songhai-university-timbuktu",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Timbuktu is a familiar name but Songhai scholarship gives only a loose medieval-Islamic window."
+    },
+    {
+      "name": "isabella-aragon",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Isabella and Ferdinand are widely recognised and the unification of Spain anchors the Columbus era."
+    },
+    {
+      "name": "adil-shahi-dynasty",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Adil Shahi is expert-only, but a Deccan sultanate implies Islamic India after the Delhi Sultanate."
+    },
+    {
+      "name": "kongo-christianity-adoption",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kongo is unknown, but Christianity reaching central Africa implies the era of European contact."
+    },
+    {
+      "name": "fall-granada",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The fall of Granada completing the Reconquista is a familiar, firmly anchored event."
+    },
+    {
+      "name": "songhai-askia-muhammad",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Songhai appears in the West African empires unit but Askia gives only a loose late-medieval anchor."
+    },
+    {
+      "name": "songhai-military-organization",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Military reorganisation is not a known event, but Songhai and Askia Muhammad recur enough to anchor the era."
+    },
+    {
+      "name": "buganda-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Buganda is unrecognised and Lake Victoria expansion carries no temporal marker."
+    },
+    {
+      "name": "joseon-confucian-renaissance",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Neo-Confucian scholarship is expert-level, but the named Joseon dynasty gives a Korean early-modern window."
+    },
+    {
+      "name": "oneida-nation-iroquois",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Haudenosaunee founding is obscure and the card offers no temporal marker at all."
+    },
+    {
+      "name": "safavid-dynasty-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Safavids are specialised, but founding Shia Persia is a strong named-empire anchor."
+    },
+    {
+      "name": "aztec-expansion-reign",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Montezuma II and the Aztec Empire at its peak anchor to just before the Spanish conquest."
+    },
+    {
+      "name": "henry-viii-becomes-king",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Henry VIII is universally known and 'Tudor' anchors the era."
+    },
+    {
+      "name": "portuguese-goa-conquest",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Albuquerque is obscure, but Portuguese conquest in Asia is a strong Age-of-Exploration anchor."
+    },
+    {
+      "name": "qutb-shahi-dynasty",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Qutb Shahi is expert-only, but a Golconda sultanate implies early-modern Islamic India."
+    },
+    {
+      "name": "fall-of-tenochtitlan",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Cortes and the fall of the Aztec capital is school-level with a firm anchor."
+    },
+    {
+      "name": "mughal-babur-founds",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Mughal Empire is a well-known named empire and Babur's founding victory anchors it clearly."
+    },
+    {
+      "name": "english-reformation-henry",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Henry VIII breaking with Rome is universal school history with a firm Reformation anchor."
+    },
+    {
+      "name": "counter-reformation-jesuit",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Counter-Reformation and the Council of Trent anchor firmly to the Reformation century."
+    },
+    {
+      "name": "lunda-empire-formation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Lunda are unrecognised and the Congo basin description carries no temporal marker."
+    },
+    {
+      "name": "safavid-mughal-relations",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The diplomacy is obscure, but two named empires - Safavid and Mughal - bracket the era tightly."
+    },
+    {
+      "name": "ottoman-janissary-corps",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Janissaries are obscure, but 'Ottoman' plus the shift to firearms is a strong gunpowder-era anchor."
+    },
+    {
+      "name": "mataram-empire",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Mataram is unknown, but a Javanese sultanate implies the Islamic era in Southeast Asia."
+    },
+    {
+      "name": "isfahan-capital-development",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Isfahan is not a known event, but Shah Abbas and the Safavids anchor it firmly."
+    },
+    {
+      "name": "lunda-empire",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "A second Lunda card with no temporal marker at all."
+    },
+    {
+      "name": "yoruba-oyo-confederation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Oyo confederation is unrecognised and the description carries no temporal marker."
+    },
+    {
+      "name": "aceh-sultanate",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Aceh is unknown, but a Sumatran sultanate implies the Islamic era in maritime Southeast Asia."
+    },
+    {
+      "name": "shogun-tokugawa-succession",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Tokugawa Ieyasu founding the hereditary shogunate is a recognisable early-modern Japan anchor."
+    },
+    {
+      "name": "kuba-kingdom",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Kuba Kingdom is unrecognised and the Congo description carries no temporal marker."
+    },
+    {
+      "name": "ethiopian-gondar-cultural-center",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Gondar and Fasilides are unrecognised and 'castles and churches' misleads more than it anchors."
+    },
+    {
+      "name": "qing-expansion",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Manchu conquest founding the Qing - China's last dynasty - is familiar and well anchored."
+    },
+    {
+      "name": "koprululer-reforms",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Koprulu is expert-only, but 'Ottoman' is the rubric's strong-anchor case and fixes the empire's era."
+    },
+    {
+      "name": "louis-xiv-personal-rule",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Louis XIV the absolute monarch is widely recognised and anchors the age of absolutism."
+    },
+    {
+      "name": "louis-xiv-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The War of Devolution is obscure, but Louis XIV named anchors it precisely."
+    },
+    {
+      "name": "maratha-shivaji",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Shivaji is little known outside India, but opposition to the Mughals is a strong named-empire anchor."
+    },
+    {
+      "name": "kangxi-military-campaigns",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Kangxi is expert knowledge, but the Qing-era campaigns and Taiwan anchor the period."
+    },
+    {
+      "name": "rozwi-empire-rise",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The Rozwi are unrecognised and the Great Zimbabwe reference only dates them relative to another unknown."
+    },
+    {
+      "name": "qing-conquers-mongolia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The campaign is obscure, but Qing emperor versus Dzungar Mongols anchors the era."
+    },
+    {
+      "name": "tonga-empire",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "The Tongan maritime empire is unrecognised and the Pacific description carries no temporal marker."
+    },
+    {
+      "name": "mughal-administrative-decline",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Aurangzeb and Mughal fragmentation are strong named-empire anchors."
+    },
+    {
+      "name": "maratha-confederacy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Peshwas are expert knowledge and 'dominant power in India' gives only a loose early-modern window."
+    },
+    {
+      "name": "nadir-shah-sacks-delhi",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Nadir Shah is obscure, but Mughal Delhi and the Koh-i-Noor anchor it firmly."
+    },
+    {
+      "name": "qing-expansion-central-asia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The conquest is obscure, but the Qing dynasty is named and anchors the era."
+    },
+    {
+      "name": "sotho-kingdom-mohlomi",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Mohlomi and the Sotho kingdom are unrecognised with no temporal marker in the text."
+    },
+    {
+      "name": "napoleon-coronation",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Napoleon crowning himself emperor is universal school history."
+    },
+    {
+      "name": "napoleon-hundred-days",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Hundred Days is a famous episode with the strongest possible named-figure anchor."
+    },
+    {
+      "name": "zulu-impis-regiment",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Shaka is a widely known name and Zulu regimental warfare reads clearly as the 19th century."
+    },
+    {
+      "name": "second-french-empire",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Napoleon III and the Second Empire anchor clearly to the 19th century."
+    },
+    {
+      "name": "rome-becomes-italian-capital",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The capture of Rome completing Italian unification is a well-anchored 19th-century event."
+    },
+    {
+      "name": "mussolini-power",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Mussolini and the March on Rome are universally recognised interwar history."
+    },
+    {
+      "name": "kingdom-saudi-arabia-founded",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ibn Saud is obscure, but founding the Kingdom of Saudi Arabia reads clearly as 20th-century state formation."
+    },
+    {
+      "name": "elizabeth-ii-becomes-queen",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Elizabeth II's accession is recent, universally known history."
+    },
+    {
+      "name": "iran-revolution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Iranian Revolution is recent, universally known history."
+    }
+  ]
+}

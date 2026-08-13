@@ -1,0 +1,1161 @@
+{
+  "batch": "invention_part1",
+  "category": "invention",
+  "graded": [
+    {
+      "name": "pottery-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Earliest known ceramic vessels' reads as prehistoric; pottery is a universally understood technology marker."
+    },
+    {
+      "name": "plow-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Mesopotamia anchors firmly to the ancient Near East and the plow is a familiar agricultural milestone."
+    },
+    {
+      "name": "wheel-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known invention with an explicit ancient Mesopotamian anchor."
+    },
+    {
+      "name": "drop-spindle-invented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure tool, but 'invented in Mesopotamia' is a strong ancient anchor."
+    },
+    {
+      "name": "abacus-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Abacus is widely recognised and 'the Sumerians' anchors it to the ancient world."
+    },
+    {
+      "name": "scissors-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Ancient Egyptians' plus bronze shears is a strong ancient anchor for a familiar object."
+    },
+    {
+      "name": "crossbow-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Crossbow imagery pulls toward medieval Europe; Warring States China is not general knowledge."
+    },
+    {
+      "name": "water-wheel-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'Ancient engineers' places the era only loosely, but does place it."
+    },
+    {
+      "name": "roman-concrete",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Romans' plus arches and domes is a textbook strong era anchor."
+    },
+    {
+      "name": "compound-pulley-archimedes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The compound pulley itself is obscure, but Archimedes anchors ancient Greece firmly."
+    },
+    {
+      "name": "arch-mechanics-understanding",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Not an event most people know, but Roman engineers and aqueducts fix the era."
+    },
+    {
+      "name": "blast-furnace-invented",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "'Cast iron on an industrial scale' actively misdirects toward the Industrial Revolution; no dynasty or era is given."
+    },
+    {
+      "name": "wheelbarrow-invented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Han dynasty names a recognisable ancient Chinese era."
+    },
+    {
+      "name": "stirrup-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cavalry and mounted warriors give only a broad pre-modern window, and the stirrup itself is not a known milestone."
+    },
+    {
+      "name": "maya-mathematical-innovation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Maya span a very wide window and the zero claim carries no era cue of its own."
+    },
+    {
+      "name": "gunpowder-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Gunpowder is universally known and 'Chinese alchemists' reads as pre-modern China."
+    },
+    {
+      "name": "spinning-wheel-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar object, but the card gives no era words beyond India."
+    },
+    {
+      "name": "movable-type-china",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Printing is a strong technology marker, though Gutenberg competes for the date."
+    },
+    {
+      "name": "windmill-invented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Windmills in Europe grinding grain read as pre-industrial but nothing narrows it further."
+    },
+    {
+      "name": "gunpowder-cannons-develop",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'First true firearms' points to the late medieval transition."
+    },
+    {
+      "name": "blast-furnace-innovation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "European cast iron and metallurgy misdirect toward the Industrial Revolution."
+    },
+    {
+      "name": "mechanical-clock",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'First mechanical clocks appeared in Europe' is a clear pre-industrial European technology marker."
+    },
+    {
+      "name": "joseon-sejong-water-clock",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Korean court figures are unknown outside Korea and a water clock carries no era signal."
+    },
+    {
+      "name": "first-globe",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Just before Columbus's voyage' is an explicit, unmissable date anchor."
+    },
+    {
+      "name": "knitting-machine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Stocking frame and knitting machine suggest mechanisation but could be any point across two centuries."
+    },
+    {
+      "name": "compound-microscope",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Janssens are obscure and 'Dutch spectacle makers' anchors the era only loosely."
+    },
+    {
+      "name": "scientific-instruments-development",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Not an event at all, but telescopes, microscopes and barometers together fix the Scientific Revolution."
+    },
+    {
+      "name": "telescope-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The invention of the telescope is a well-known technology marker tied to the Galileo era."
+    },
+    {
+      "name": "barometer-invention",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Torricelli, mercury and vacuum anchor the scientific revolution without pinning it tighter."
+    },
+    {
+      "name": "torricelli-barometer",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same event as the other barometer card; Torricelli and air pressure anchor the scientific revolution."
+    },
+    {
+      "name": "pendulum-clock",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Huygens is unknown to most and the pendulum clock only loosely reads early modern."
+    },
+    {
+      "name": "leeuwenhoek-microscope",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "First observation of microorganisms is school-biology familiar and reads early modern."
+    },
+    {
+      "name": "steam-powered-water-pump",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Savery is obscure but 'early application of steam power' is a strong technology anchor."
+    },
+    {
+      "name": "piano-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The piano is familiar and reads as an 18th-century instrument, but nothing dates it precisely."
+    },
+    {
+      "name": "newcomen-steam-engine",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'First practical steam-powered engine' anchors the dawn of steam power."
+    },
+    {
+      "name": "fahrenheit-temperature-scale",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Fahrenheit is a familiar name and the mercury thermometer reads as early modern science."
+    },
+    {
+      "name": "achromatic-lens",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An optical correction technique with no recognisable figure and no era cue whatsoever."
+    },
+    {
+      "name": "harrison-chronometer-series",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Solve the longitude problem for ocean navigation' anchors the age of sail."
+    },
+    {
+      "name": "mechanized-cotton-spinning",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Paul and Wyatt are unknown, but 'key precursor to the Industrial Revolution' is an explicit era anchor."
+    },
+    {
+      "name": "umbrella-popularized",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A London anecdote about umbrellas with no era cue at all."
+    },
+    {
+      "name": "artificial-refrigeration",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Cullen is unknown; 'first artificial refrigeration' misdirects toward the 19th century."
+    },
+    {
+      "name": "canal-network-britain",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Explicitly names the Industrial Revolution and Britain's canal era."
+    },
+    {
+      "name": "cotton-spinning-jenny",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "School-taught Industrial Revolution icon with a clear textile-mechanisation anchor."
+    },
+    {
+      "name": "first-jigsaw-puzzle",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "A mapmaker's puzzle anecdote gives no temporal signal."
+    },
+    {
+      "name": "steam-engine",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Watt and the Industrial Revolution are both named — the strongest possible pairing."
+    },
+    {
+      "name": "watt-separate-condenser",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The condenser detail is obscure, but Watt plus steam engines anchors it firmly."
+    },
+    {
+      "name": "first-cotton-mill",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Arkwright is not widely known, but a water-powered cotton mill in England is a clear Industrial Revolution anchor."
+    },
+    {
+      "name": "flush-toilet",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Sanitation advance with no era cue; most players will place flush toilets far later."
+    },
+    {
+      "name": "spinning-mule-details",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Names the spinning jenny and water frame, placing it inside the Industrial Revolution."
+    },
+    {
+      "name": "parachute-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Parachute' pulls strongly toward the aviation age; the tower jump is the only counter-cue."
+    },
+    {
+      "name": "bifocal-glasses-franklin",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Benjamin Franklin is a strong figure anchor for the late 18th century."
+    },
+    {
+      "name": "power-loom-invented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Cartwright is obscure but 'mechanising weaving, transforming the textile industry' is an Industrial Revolution anchor."
+    },
+    {
+      "name": "first-dental-drill-foot",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An unknown dentist and a pedal mechanism; nothing places this in a century."
+    },
+    {
+      "name": "gas-lighting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Coal gas implies the industrial era but spans a century of plausible dates."
+    },
+    {
+      "name": "optical-telegraph-system",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Semaphore towers read as pre-electric, but Chappe and the system are unfamiliar."
+    },
+    {
+      "name": "hydraulic-press",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Pascal's principle misdirects toward the 1600s and nothing else dates the press."
+    },
+    {
+      "name": "lithography-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Lithography is a familiar word; the stone-printing description implies pre-photographic printing only loosely."
+    },
+    {
+      "name": "volta-electric-battery",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Volta is school-taught and 'the first true electric battery' marks the dawn of electricity."
+    },
+    {
+      "name": "jacquard-loom",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Jacquard is obscure, but a loom plus punched cards anchors the industrial era."
+    },
+    {
+      "name": "steam-locomotive",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Steam plus rails is a textbook early-19th-century technology marker."
+    },
+    {
+      "name": "hydrogen-powered-automobile",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "'Hydrogen-powered automobile' reads as 21st-century technology; the card is a pure trap."
+    },
+    {
+      "name": "arc-lamp",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'First practical electric light' misdirects toward Edison in the 1880s."
+    },
+    {
+      "name": "canning-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Canning is familiar and food preservation in tins reads as industrial-era."
+    },
+    {
+      "name": "powered-printing-press",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A steam-powered press is an explicit industrial-era technology anchor."
+    },
+    {
+      "name": "electric-telegraph",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Ronalds is unknown and this predates Morse, but 'electric telegraph' anchors the 19th century."
+    },
+    {
+      "name": "stirling-engine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An engine type with no recognisable figure and no era cue; the name sounds modern."
+    },
+    {
+      "name": "electric-motor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Faraday is a strong figure anchor and the first electric motor marks early-19th-century electricity."
+    },
+    {
+      "name": "lighter",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "'Lighter' reads as a 20th-century object and Döbereiner's lamp is unknown to anyone."
+    },
+    {
+      "name": "macintosh-raincoat",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Rubberised fabric implies the industrial era but nothing narrows it."
+    },
+    {
+      "name": "portland-cement-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Portland cement and Britain imply industrial-era construction with no tighter cue."
+    },
+    {
+      "name": "gas-stove",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A domestic gas appliance could plausibly sit anywhere across the 19th and early 20th centuries."
+    },
+    {
+      "name": "railway-locomotive-stephenson",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Stephenson's Rocket and the Rainhill Trials are school-taught early railway history."
+    },
+    {
+      "name": "lawn-mower-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The textile-mill reference implies post-1750 but nothing tighter, and the event is unknown."
+    },
+    {
+      "name": "mechanical-reaper",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "McCormick's reaper is taught in American history and mechanised agriculture reads 19th-century."
+    },
+    {
+      "name": "refrigerator-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Most players place practical refrigeration in the 20th century; the card gives nothing to correct that."
+    },
+    {
+      "name": "electromechanical-relay",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "'Telegraph and early computing' straddles a century and Joseph Henry is unknown to most."
+    },
+    {
+      "name": "telegraph",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Morse and the telegraph are universally known 19th-century markers."
+    },
+    {
+      "name": "stereoscope-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'3D depth from two flat images' reads modern; the stereoscope is not widely known as Victorian."
+    },
+    {
+      "name": "solar-cell",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "very-low",
+      "reasoning": "'Solar cell' reads as modern technology, making the actual 1839 discovery a trap."
+    },
+    {
+      "name": "vulcanization-goodyear",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Goodyear is a familiar name and the rubber industry reads 19th-century."
+    },
+    {
+      "name": "calotype-photography",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Fox Talbot is semi-known and 'first photographic method producing negatives' anchors the birth of photography."
+    },
+    {
+      "name": "superphosphate-fertilizer",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "An unknown chemist and an agricultural process with no era cue."
+    },
+    {
+      "name": "rotary-printing-press-hoe",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Faster newspaper printing implies industrialisation but nothing narrows the date."
+    },
+    {
+      "name": "wood-pulp-papermaking",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Replacing cotton rags implies the industrial era; the inventor and event are unknown."
+    },
+    {
+      "name": "first-modern-prosthetic-limb",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A patented articulated leg implies a 19th-century mechanical device, but the event is unknown."
+    },
+    {
+      "name": "first-chocolate-bar",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The chocolate bar is a familiar object and 'turning the drink into a candy' reads Victorian-industrial."
+    },
+    {
+      "name": "safety-pin-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The safety pin is timeless in appearance; the card offers no era anchor beyond 'patented'."
+    },
+    {
+      "name": "public-flush-toilets",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "London's Great Exhibition is a firm Victorian anchor."
+    },
+    {
+      "name": "elevator-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Otis and 'making tall buildings practical' place it in the era of the first skyscrapers."
+    },
+    {
+      "name": "bunsen-burner",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "The Bunsen burner is universally recognised from school labs, but the card gives no temporal information at all."
+    },
+    {
+      "name": "bessemer-process",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Cheap mass-produced steel 'enabling the industrial age' is an explicit era anchor."
+    },
+    {
+      "name": "celluloid-first-plastic",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'First man-made plastic' misdirects toward the early 20th century."
+    },
+    {
+      "name": "telegraph-sounder-design",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A telegraph accessory nobody has heard of; Morse code anchors only the broad 19th century."
+    },
+    {
+      "name": "carbon-fibers",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The title reads as modern composites, but 'early incandescent light bulbs' anchors the late 19th century."
+    },
+    {
+      "name": "first-color-photograph",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Colour photography reads as a 20th-century development, making this a trap card."
+    },
+    {
+      "name": "dynamite-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Nobel and dynamite are universally known and anchor the 19th century."
+    },
+    {
+      "name": "stock-ticker",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The telegraph reference implies the 19th century, but ticker tape imagery pulls toward the 1920s."
+    },
+    {
+      "name": "polyvinyl-chloride-pvc",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "PVC reads as a mid-20th-century plastic; a chemist's first observation in 1872 is unguessable."
+    },
+    {
+      "name": "levis-blue-jeans-patent",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Levi's is a household brand and riveted denim work trousers anchor the American frontier era."
+    },
+    {
+      "name": "barbed-wire-invented",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "'Transforming the American West' is a firm late-19th-century frontier anchor."
+    },
+    {
+      "name": "milk-chocolate-invented",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Milk chocolate is familiar, but 'Swiss makers combined chocolate with condensed milk' gives no era cue at all."
+    },
+    {
+      "name": "four-stroke-engine",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Anyone with a car knows the four-stroke engine and internal combustion reads late-19th-century."
+    },
+    {
+      "name": "phonograph-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Edison and the invention of recorded sound anchor the late 19th century."
+    },
+    {
+      "name": "cash-register",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A mechanical cash register implies the late 19th or early 20th century but the event is unknown."
+    },
+    {
+      "name": "stapler-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The stapler is a timeless-looking office object with no era cue."
+    },
+    {
+      "name": "electric-streetcar",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Electrified transit implies the 1880s-1900s, but the event and Lichterfelde are unknown."
+    },
+    {
+      "name": "ac-power-distribution",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "No figures named — just transformer technology and AC grids, which implies electrification broadly."
+    },
+    {
+      "name": "fountain-pen",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Pre-ballpoint writing implies the 19th or early 20th century with nothing tighter."
+    },
+    {
+      "name": "linotype-machine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hot-metal typesetting implies late-19th-century newspapers, but Mergenthaler is unknown."
+    },
+    {
+      "name": "steam-turbine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Large-scale electricity generation implies the electrification era; Parsons is not widely known."
+    },
+    {
+      "name": "coca-cola-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Coca-Cola is one of the most recognised brands on earth and a pharmacist's tonic reads late-19th-century."
+    },
+    {
+      "name": "zinc-carbon-battery",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A dry cell battery for portable devices implies the electrification era; Gassner is unknown."
+    },
+    {
+      "name": "first-touch-typing-method",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "A typing contest gives almost no era signal and the event is entirely unknown."
+    },
+    {
+      "name": "pneumatic-tire",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Dunlop is a familiar tyre brand and the bicycle boom reads late-19th-century."
+    },
+    {
+      "name": "jukebox-invented",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Jukebox' pulls strongly toward the 1950s; the saloon and listening tubes are easily missed."
+    },
+    {
+      "name": "motion-picture-camera",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Edison plus the first motion picture camera anchors the birth of cinema in the 1890s."
+    },
+    {
+      "name": "escalator-invented",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Coney Island as a novelty ride implies the turn of the century."
+    },
+    {
+      "name": "gas-powered-tractor",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The first gasoline tractor implies the early automotive era, but Froelich is unknown."
+    },
+    {
+      "name": "first-breakfast-cereal",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Kellogg's is a household brand and the sanitarium health-food story reads turn-of-the-century."
+    },
+    {
+      "name": "player-piano",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Perforated paper rolls imply a pre-electronic music machine, but the event is obscure."
+    },
+    {
+      "name": "volleyball-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Volleyball is universally played and the YMCA-style origin story reads late-19th-century."
+    },
+    {
+      "name": "electric-hearing-aid",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A carbon transmitter implies the telephone era; the Akouphone is unknown to anyone."
+    },
+    {
+      "name": "air-conditioner-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Willis Carrier and modern air conditioning are a well-known early-20th-century milestone."
+    },
+    {
+      "name": "gas-turbine",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Gas turbines read as the jet age and Elling is unknown; nothing on the card corrects that."
+    },
+    {
+      "name": "ice-cream-cone-debut",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The St. Louis World's Fair is a firm turn-of-the-century anchor."
+    },
+    {
+      "name": "bakelite-plastic",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bakelite is culturally tied to 1920s-30s objects, which misdates its 1907 invention."
+    },
+    {
+      "name": "cellophane",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Transparent packaging film reads as mid-20th century."
+    },
+    {
+      "name": "washing-machine-electric",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The arrival of electric appliances in the home reads as the early 20th century."
+    },
+    {
+      "name": "neon-lighting",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Neon signs are iconic but culturally tied to the 1950s, misdirecting from the 1910 debut."
+    },
+    {
+      "name": "stainless-steel",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Sheffield steel implies industrial Britain across a very wide window."
+    },
+    {
+      "name": "color-film-technicolor",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Technicolor is a familiar name tied to the early era of colour cinema."
+    },
+    {
+      "name": "pop-up-toaster",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "An electric kitchen appliance implies the early-to-mid 20th century with nothing tighter."
+    },
+    {
+      "name": "television-first-demonstration",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The first public television demonstration is a strong, well-placed 20th-century technology marker."
+    },
+    {
+      "name": "television",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Farnsworth's electronic television is a familiar milestone of early broadcasting."
+    },
+    {
+      "name": "scotch-tape",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Scotch Tape is a universal brand and cellophane tape reads early-to-mid 20th century."
+    },
+    {
+      "name": "folding-wheelchair",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Unknown inventors and a wheelchair design with no era cue at all."
+    },
+    {
+      "name": "radar-developed",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Explicit World War II anchor plus a well-known technology."
+    },
+    {
+      "name": "ballpoint-pen",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The biro is universally familiar and 'replacing the fountain pen' reads early-to-mid 20th century."
+    },
+    {
+      "name": "chocolate-chip-cookie",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The cookie is famous, but an inn in Massachusetts supplies no era cue whatsoever."
+    },
+    {
+      "name": "scrabble-invented",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Scrabble is universally known, but the card gives no temporal anchor."
+    },
+    {
+      "name": "electronic-digital-computer",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Atanasoff is obscure, but 'first electronic digital computing device' anchors the computer age."
+    },
+    {
+      "name": "first-nuclear-reactor",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Fermi and the first controlled chain reaction anchor the wartime atomic project."
+    },
+    {
+      "name": "microwave-oven-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "A famous accidental invention explicitly tied to radar work."
+    },
+    {
+      "name": "holography",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Holograms read as later laser-era technology; Gabor is unknown to most."
+    },
+    {
+      "name": "transistor-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "School-taught Bell Labs milestone marking the dawn of modern electronics."
+    },
+    {
+      "name": "velcro-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The burr story is well known but the card carries no era words."
+    },
+    {
+      "name": "tokamak-fusion-reactor",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Soviet fusion research implies the Cold War, but the tokamak itself is specialist knowledge."
+    },
+    {
+      "name": "first-solar-cell",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Bell Labs and silicon place it in the post-war semiconductor era."
+    },
+    {
+      "name": "velcro-patented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same invention as the other Velcro card; the description gives no era words, so it grades on recognition alone."
+    },
+    {
+      "name": "cochlear-implant",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Medical electrical stimulation implies the later 20th century, but the event and Djourno are unknown."
+    },
+    {
+      "name": "lego-brick-patent",
+      "difficulty": "medium",
+      "recognition": "high",
+      "inferability": "low",
+      "reasoning": "Lego is universally known, but the card gives no era cue beyond the brand itself."
+    },
+    {
+      "name": "mosfet-transistor",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Atalla and Kahng are unknown, but 'powering modern electronics' anchors the semiconductor era."
+    },
+    {
+      "name": "laser-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The laser is a familiar mid-20th-century technology."
+    },
+    {
+      "name": "compact-cassette",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Cassette tapes are familiar and sit clearly between vinyl and CDs."
+    },
+    {
+      "name": "computer-mouse",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A wooden mouse with two wheels reads as the early era of computing."
+    },
+    {
+      "name": "fiber-optics",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Optical telecoms imply the later 20th century, but Kao's proposal is specialist knowledge."
+    },
+    {
+      "name": "ct-scanner-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "CT scanning is a familiar modern medical technology."
+    },
+    {
+      "name": "floppy-disk-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "IBM and the first portable digital storage read as the early computer era."
+    },
+    {
+      "name": "mri-invented",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "MRI is a familiar modern scanner, which places it in the later 20th century."
+    },
+    {
+      "name": "first-mobile-phone-call",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The first handheld mobile call is a well-known milestone that reads clearly as the 1970s-80s."
+    },
+    {
+      "name": "rubiks-cube",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known toy explicitly tied to its inventor and its craze era."
+    },
+    {
+      "name": "insulin-pump-developed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A wearable medical device implies the later 20th century, but the event is unknown."
+    },
+    {
+      "name": "compact-disc-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The CD launch is a universally known milestone of the digital audio era."
+    },
+    {
+      "name": "stereolithography-3d-printing",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "3D printing is widely known but reads as a 2010s technology, misdating the 1984 invention."
+    },
+    {
+      "name": "bluetooth-invented",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Bluetooth is universally familiar and unmistakably late-1990s wireless technology."
+    }
+  ]
+}

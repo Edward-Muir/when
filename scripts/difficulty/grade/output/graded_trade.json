@@ -1,0 +1,1245 @@
+{
+  "batch": "trade",
+  "category": "trade",
+  "graded": [
+    {
+      "name": "jomon-maritime-culture",
+      "difficulty": "medium",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Jomon itself is obscure, but 'some of the world's earliest ceramics' plants it at the very start of the timeline."
+    },
+    {
+      "name": "lapis-lazuli-trade",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure commodity trade; Mesopotamia and Egypt anchor it to deep antiquity."
+    },
+    {
+      "name": "punt-trade-egypt",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Land of Punt is expert knowledge, but 'Old Kingdom' Egypt is an explicit, narrow anchor."
+    },
+    {
+      "name": "amber-trade-routes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown as an event, but the description states 'Bronze Age' outright."
+    },
+    {
+      "name": "incense-trade-frankincense",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure trade, though Egypt and Mesopotamia place it firmly in antiquity."
+    },
+    {
+      "name": "lapita-pottery-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only culture and no temporal marker anywhere on the card."
+    },
+    {
+      "name": "phoenician-trade-network",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Phoenicians are school-taught and the name alone anchors to the pre-classical Mediterranean."
+    },
+    {
+      "name": "spice-trade-incense-route",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The event is diffuse, but 'Ancient' in the name hands the player the era."
+    },
+    {
+      "name": "caravan-routes-central-asia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Nobody knows this as an event; 'precursors to the Silk Road' is a strong relative anchor."
+    },
+    {
+      "name": "athenian-laurion-silver-mines",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Laurion is obscure, but 'funded Athens' navy' pins it to classical Greece."
+    },
+    {
+      "name": "bactria-silk-road",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Greco-Bactrian signals the post-Alexander Hellenistic world; recognition is expert-only, so hard rather than very-hard."
+    },
+    {
+      "name": "silk-road-established",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Silk Road plus Zhang Qian and Han China: maximum recognition with a tight anchor."
+    },
+    {
+      "name": "silk-road-opens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The canonical Silk Road opening card; China-to-Mediterranean is era signal enough."
+    },
+    {
+      "name": "silk-trade-begins",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Han China and Zhang Qian named; belongs in the same tier as the other Silk Road opening cards."
+    },
+    {
+      "name": "fergana-valley",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The heavenly-horses expedition is specialist, but Emperor Wu of Han anchors the dynasty."
+    },
+    {
+      "name": "nabataean-trade-routes",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Nabataean kingdom is specialist knowledge with only a loose Arabia-to-Mediterranean anchor."
+    },
+    {
+      "name": "petra-nabataean-trade",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Petra is a famous site and the incense-route context narrows it to antiquity."
+    },
+    {
+      "name": "baltic-amber-routes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure route, but 'Roman markets and workshops' is an explicit imperial anchor - not very-hard."
+    },
+    {
+      "name": "ephesus-roman-commerce",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ephesus is semi-familiar and 'one of the Roman Empire's largest cities' anchors firmly."
+    },
+    {
+      "name": "hopewell-trade-networks",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only culture with no era marker at all."
+    },
+    {
+      "name": "red-sea-trade-network",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Red Sea trade is a graspable concept and Roman merchants anchor the era."
+    },
+    {
+      "name": "silk-road-major-routes",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A diffuse 'peak' claim; Rome helps but the network itself spans centuries."
+    },
+    {
+      "name": "spice-trade-indian-ocean",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Linking Rome to Southeast Asia' is a strong imperial anchor on an otherwise obscure card."
+    },
+    {
+      "name": "buddhism-spreads-central-asia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Buddhism travelling the Silk Road is a commonly taught idea with a moderate anchor."
+    },
+    {
+      "name": "hopewell-culture",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Same expert-only culture as the other Hopewell card, and no era clue."
+    },
+    {
+      "name": "roman-roads-network",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Roman roads are universally known and 'greatest extent' of the empire is an explicit anchor."
+    },
+    {
+      "name": "silk-road-textile-exchange",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Diffuse textile-trade card, but China-Central Asia-Rome anchors the era."
+    },
+    {
+      "name": "aksumite-red-sea-trade",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Aksum is expert-level recognition despite the Roman and Indian anchors."
+    },
+    {
+      "name": "camel-adoption-sahara",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Trans-Saharan camel caravans are a familiar image, but the card states no era."
+    },
+    {
+      "name": "east-african-swahili-ports",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Swahili coast appears in world-history teaching; 'early' settlements is only a relative anchor."
+    },
+    {
+      "name": "sogdian-merchant-dominance",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The rubric's own worked example: Silk Road anchors loosely, Sogdians do not."
+    },
+    {
+      "name": "sogdian-traders",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Duplicate of the other Sogdian card; graded to match the rubric's worked example."
+    },
+    {
+      "name": "trans-saharan-trade-gold",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Began' gives a start-of-era signal, but nothing sharper for a low-recognition event."
+    },
+    {
+      "name": "byzantine-silk-monopoly",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The silkworm-smuggling anecdote is specialist, but Constantinople and China's monopoly anchor it."
+    },
+    {
+      "name": "sogdian-merchants",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same Sogdian family; Silk Road is a loose anchor."
+    },
+    {
+      "name": "turfan-oasis-city",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure oasis; Silk Road plus Turkic contact narrows the era only loosely."
+    },
+    {
+      "name": "xuanzang-silk-road",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Famous in Asia, low recognition for a general audience; the pilgrimage gives only a soft era."
+    },
+    {
+      "name": "bukhara-city",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Islamic scholarship' anchors to post-conquest Central Asia, but the city is unknown to most."
+    },
+    {
+      "name": "tang-luoyang-capital",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tang is among the more recognized Chinese dynasties and is named outright."
+    },
+    {
+      "name": "zhouyuan-sogdian-outpost",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only outpost with only the very loosest Silk Road anchor."
+    },
+    {
+      "name": "ferghana-valley-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Grain supply in an obscure valley; nothing on the card dates it."
+    },
+    {
+      "name": "tang-trade-networks",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tang Dynasty is named, but the event is a diffuse network of trading posts."
+    },
+    {
+      "name": "bukhara-trading-city",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Samanid dynasty is an anchor only for specialists."
+    },
+    {
+      "name": "ghana-gold-trade",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Ghana Empire is taught in world history and gold-salt trade implies the medieval Sahel."
+    },
+    {
+      "name": "hawala-money-transfer",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The system is obscure, but 'medieval Islamic merchants' states the era."
+    },
+    {
+      "name": "kashgar-bazaar-founded",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unknown market with only 'western Silk Road' to go on."
+    },
+    {
+      "name": "longship-technology",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Viking longships are universally recognized and 'Viking' is a tight era anchor."
+    },
+    {
+      "name": "monsoon-sailing-mastery",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Arab and Indian sailors implies post-Islamic, but monsoon mastery has no sharp date."
+    },
+    {
+      "name": "jenne-city-foundation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Djenne is expert knowledge and trans-Saharan trade spans a millennium."
+    },
+    {
+      "name": "tian-shan-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure route with no temporal marker."
+    },
+    {
+      "name": "barter-money-transition",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Trade revived' hints at the medieval European recovery but nothing firmer."
+    },
+    {
+      "name": "canal-system",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Venice is famous and the canal build-out tracks its rise as a maritime power."
+    },
+    {
+      "name": "silk-trade-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Song China and the Islamic world anchor this otherwise diffuse peak."
+    },
+    {
+      "name": "xicalanco-trade-port",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only Mesoamerican port; the Maya-Aztec span gives little."
+    },
+    {
+      "name": "mapungubwe-gold-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert knowledge with no era anchor."
+    },
+    {
+      "name": "camel-trade-adaptation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Familiar image of Saharan caravans, but no stated era."
+    },
+    {
+      "name": "khwarezm-caravanserai-network",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The Khwarezmian Empire is expert-only and caravanserais give no date."
+    },
+    {
+      "name": "silk-road-trade",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The plain Silk Road card: maximum recognition, and the name itself reads as a period."
+    },
+    {
+      "name": "song-maritime-commerce",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Song dynasty and the compass narrow it only for those who already know Chinese dynasties."
+    },
+    {
+      "name": "urbanization-medieval-growth",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The name states 'Medieval European' outright, so the era is handed over."
+    },
+    {
+      "name": "champagne-fairs",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The fairs are specialist knowledge, but 'medieval Europe' is explicit."
+    },
+    {
+      "name": "damascene-silk-weaving",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Damascus brocade is expert knowledge despite the explicit medieval framing."
+    },
+    {
+      "name": "flanders-cloth-trade",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bruges and Ghent imply medieval Flanders, but only to those already taught it."
+    },
+    {
+      "name": "indian-ocean-monsoon-trade",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Indian Ocean trade is a familiar concept, yet the card gives no era at all."
+    },
+    {
+      "name": "mississippian-trade-network",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Pre-Columbian North America with no temporal marker."
+    },
+    {
+      "name": "monsoon-calendar-refinement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Near-duplicate of the monsoon-mastery card; graded to match it."
+    },
+    {
+      "name": "perfume-trade-arabia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Crusader contact is a strong anchor, but the perfume trade itself is unknown."
+    },
+    {
+      "name": "slave-trade-arab",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Broadly known networks, but they span twelve centuries and the card gives no marker."
+    },
+    {
+      "name": "somali-zeila-trading-port",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only Somali port with no era clue."
+    },
+    {
+      "name": "swahili-city-states",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Kilwa and Mombasa appear in world-history courses; Indian Ocean trade implies the medieval era."
+    },
+    {
+      "name": "tin-trade-cornwall",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Medieval Europe' is stated, but Cornish tin as an event is unknown to a general audience."
+    },
+    {
+      "name": "tonga-maritime-network",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only Pacific network with no anchor."
+    },
+    {
+      "name": "trans-saharan-trade-networks",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The classic taught picture of trans-Saharan trade."
+    },
+    {
+      "name": "zimbabwe-trading-network",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Great Zimbabwe is semi-known; the gold-to-coast link implies but never states an era."
+    },
+    {
+      "name": "chagatai-trade-routes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Khanate' signals the Mongol successor states, a reasonably tight window, so hard rather than very-hard."
+    },
+    {
+      "name": "cloth-merchants-guild",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Guilds plus Flemish cloth read as clearly medieval, but the event is unknown."
+    },
+    {
+      "name": "trade-route-risk-reduction",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pax Mongolica and the Mongol Empire are a strong, narrow anchor."
+    },
+    {
+      "name": "pax-mongolica-trade",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Marco Polo and the Mongol Empire are two of the strongest anchors available."
+    },
+    {
+      "name": "genoese-trade-network",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Genoa-Venice rivalry is specialist; Mediterranean colonies only imply medieval."
+    },
+    {
+      "name": "venice-gold-coin-standard",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The ducat is a half-familiar word and Venice's mint gives only a broad medieval window."
+    },
+    {
+      "name": "yuan-grand-canal",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Grand Canal is known, but dating the Yuan dynasty is specialist."
+    },
+    {
+      "name": "marco-polo-asian-foods",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Marco Polo is a household name and anchors the card tightly."
+    },
+    {
+      "name": "bruges-economic-hub",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Bruges as a commercial capital is specialist; 'early stock trading' hints late medieval."
+    },
+    {
+      "name": "coral-trade-mediterranean",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Luxury coral trade is expert-only and 'medieval' is a thousand-year band."
+    },
+    {
+      "name": "herring-trade-northern",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Hanseatic League is named and anchors northern Europe's late medieval commerce."
+    },
+    {
+      "name": "kerala-spice-trade",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Malabar pepper is a familiar idea, but the card names no era."
+    },
+    {
+      "name": "kilwa-gold-monopoly",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Kilwa is expert knowledge and Great Zimbabwe is barely more datable."
+    },
+    {
+      "name": "swahili-ivory-trade",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Swahili coast trade is taught, but nothing here dates it."
+    },
+    {
+      "name": "swahili-mombasa-rise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mombasa and Kilwa are the standard Swahili-coast pairing, but no era is stated."
+    },
+    {
+      "name": "venetian-trade-monopoly",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Venice's spice dominance is broadly known and implies the late medieval Mediterranean."
+    },
+    {
+      "name": "wool-trade-england",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "English wool and Flemish weavers imply medieval only to those already taught it."
+    },
+    {
+      "name": "bruges-bourse-trading",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The origin of the bourse is specialist, but Bruges plus a formal exchange reads as late medieval."
+    },
+    {
+      "name": "mansa-musa-pilgrimage",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Mansa Musa is widely known and the Mali-to-Mecca hajj anchors the medieval Islamic world."
+    },
+    {
+      "name": "genovese-banking-families",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Rivalry with Florence signals Renaissance Italy, but the families are unknown."
+    },
+    {
+      "name": "majapahit-maritime-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only Javanese empire with no era marker."
+    },
+    {
+      "name": "monopoly-privileges-medieval",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Medieval European monarchs' is explicit, but the event is a generic policy."
+    },
+    {
+      "name": "hanse-trades-monopoly",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Hanseatic League is known to many, though the era it evokes spans several centuries."
+    },
+    {
+      "name": "hanseatic-league-dominance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same judgement as its sibling Hanse card."
+    },
+    {
+      "name": "saffron-trade-persia",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure commodity trade with no dating clue."
+    },
+    {
+      "name": "grain-trade-monopoly",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Hanseatic and Prussian references anchor loosely; the event is unknown."
+    },
+    {
+      "name": "banking-credit-innovation",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Italian banking houses imply Renaissance, but the card is generic."
+    },
+    {
+      "name": "bill-of-exchange-development",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A financial instrument known to specialists; 'Italian merchants' is a soft anchor."
+    },
+    {
+      "name": "caravanserai-samarkand",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Timur is a datable figure, but Samarkand caravanserais are expert knowledge."
+    },
+    {
+      "name": "cashmere-wool-trade",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The material is universally known; the trade event has no era marker whatsoever."
+    },
+    {
+      "name": "import-tariffs-protection",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Generic policy card; 'European states' protecting domestic industry hints early modern."
+    },
+    {
+      "name": "insurance-maritime",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist commercial history with only a soft Mediterranean-ports anchor."
+    },
+    {
+      "name": "mombasa-coastal-power",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Duplicate of the other Mombasa card; graded to match rather than left at very-hard."
+    },
+    {
+      "name": "salt-gold-trade-caravan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Salt-for-gold is the classic textbook image of trans-Saharan trade."
+    },
+    {
+      "name": "slave-trade-ottomans",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Ottoman Empire is a strong named anchor on a low-recognition event."
+    },
+    {
+      "name": "somali-mogadishu-sultanate",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only sultanate with no era clue."
+    },
+    {
+      "name": "spice-trade-dominance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Spice trade reaching European consumers implies the age of expansion."
+    },
+    {
+      "name": "malacca-entrepot",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Malacca is specialist; the merchant mix implies but never states an era."
+    },
+    {
+      "name": "silk-road-decline",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Anchored to the Ottoman conquest of Constantinople, one of the most famous dates on offer."
+    },
+    {
+      "name": "songhai-timbuktu",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Timbuktu is a famous name and Songhai is taught in world history."
+    },
+    {
+      "name": "columbian-exchange-food",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Columbus's voyages are universal knowledge and self-dating."
+    },
+    {
+      "name": "antwerp-bourse-replacement",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Antwerp's rise over Bruges is specialist commercial history."
+    },
+    {
+      "name": "canal-building-netherlands",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Dutch canals are familiar, but the card supplies no era."
+    },
+    {
+      "name": "cod-fishery-expansion",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Grand Banks off Newfoundland place it after European contact with North America."
+    },
+    {
+      "name": "cotton-trade-begins",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Portuguese trade routes anchor it to the age of exploration."
+    },
+    {
+      "name": "embargo-trade-warfare",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Generic policy card; 'Mediterranean powers' hints pre-Atlantic but only weakly."
+    },
+    {
+      "name": "indigo-dye-trade",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Portuguese trade and the displacement of woad anchor the early modern era."
+    },
+    {
+      "name": "silk-debasement-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure commercial dispute with no era marker."
+    },
+    {
+      "name": "mombasa-portuguese-control",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Portuguese seizure places it around 1500; the event itself is unknown, so hard not very-hard."
+    },
+    {
+      "name": "portuguese-calicut-control",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A Portuguese spice monopoly at Calicut anchors the da Gama era despite low recognition."
+    },
+    {
+      "name": "cocoa-trade-beans",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'First shipped from the Americas to Spain' places it just after the conquest."
+    },
+    {
+      "name": "potosi-silver-floods-spain",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Potosi silver and Spanish price inflation are a solid colonial anchor."
+    },
+    {
+      "name": "silver-discovered-at-potosi",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Spanish colonizers in present-day Bolivia anchor the era clearly."
+    },
+    {
+      "name": "atlantic-slave-trade-forced",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The transatlantic slave trade is universally taught and the Iberian plantation context anchors it."
+    },
+    {
+      "name": "molucca-spice-island-trade",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "European competition for cloves and nutmeg is the classic age-of-exploration setup."
+    },
+    {
+      "name": "silver-wealth-redistribution",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Potosi and Mexican silver anchor the Spanish colonial century."
+    },
+    {
+      "name": "venetian-lace-tradition",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only craft history."
+    },
+    {
+      "name": "galleon-trade-route",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Manila-Acapulco route under Spain anchors the colonial period."
+    },
+    {
+      "name": "mining-mercury-potosí",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Amalgamation is technical detail; Potosi anchors the colonial era but recognition is expert-only."
+    },
+    {
+      "name": "fur-trade-russian",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Russian expansion into Siberia is a reasonably datable early-modern process."
+    },
+    {
+      "name": "chocolate-trade-establishment",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Veracruz to Seville is an explicit Spanish colonial anchor."
+    },
+    {
+      "name": "beaver-pelt-european-demand",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The North American fur trade is broadly taught and felt hats imply early modern."
+    },
+    {
+      "name": "coffee-houses-cairo",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "'Ottoman Egypt' is a genuine anchor, but Cairo coffeehouses are unknown to most - hard, not very-hard."
+    },
+    {
+      "name": "cotton-production-india",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Indian cotton is a familiar idea, but the card gives no era."
+    },
+    {
+      "name": "hanseatic-league-decline",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The decline is far less known than the League; Dutch rivals hint early modern."
+    },
+    {
+      "name": "indigo-trade-expands",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Near-duplicate of the earlier indigo card but without the Portuguese anchor."
+    },
+    {
+      "name": "lunda-expansion-network",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only Central African empire."
+    },
+    {
+      "name": "teak-timber-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Commodity trade with no era marker."
+    },
+    {
+      "name": "tobacco-addiction-global",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Tobacco spreading from the Americas is universal knowledge and self-dating."
+    },
+    {
+      "name": "venetian-trade-decline",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Atlantic routes bypassing the Mediterranean plus Ottoman power is a clear early-modern anchor."
+    },
+    {
+      "name": "dutch-golden-age-trade",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Dutch Golden Age and the VOC are both well known and tightly dated."
+    },
+    {
+      "name": "spice-monopoly-dutch",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The VOC anchors it firmly to the 17th century."
+    },
+    {
+      "name": "tea-introduction",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Tea arriving in Europe via Dutch traders reads as early modern."
+    },
+    {
+      "name": "tea-trade-begins",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Duplicate of the other tea card."
+    },
+    {
+      "name": "coffee-introduction",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Coffee via Venetian merchants from Ottoman markets implies early modern."
+    },
+    {
+      "name": "benguela-slave-market",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Portuguese Angola and the transatlantic slave trade anchor it; only the port is unknown."
+    },
+    {
+      "name": "beaver-trade-north-america",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Fur trade with Indigenous peoples is broadly taught colonial history."
+    },
+    {
+      "name": "isfahan-bazaar-construction",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Shah Abbas I is datable only for those who know Safavid Persia."
+    },
+    {
+      "name": "spice-monopoly-nutmeg",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The VOC seizing the Banda Islands is a well-anchored 17th-century story."
+    },
+    {
+      "name": "sugar-monoculture-caribbean",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Caribbean sugar and the slave trade are core school history with a clear colonial anchor."
+    },
+    {
+      "name": "dutch-naval-dominance",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Dutch Republic as the leading maritime power anchors the 17th century."
+    },
+    {
+      "name": "mercantilism-doctrine-rise",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The doctrine is specialist; colonial extraction implies early modern only broadly."
+    },
+    {
+      "name": "whale-oil-trade",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Whale oil for lighting implies pre-electric, but that covers two centuries."
+    },
+    {
+      "name": "mercantilism-peak",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Colbert in France is a named, datable anchor."
+    },
+    {
+      "name": "zanzibar-spice-trade",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Omani Zanzibar is specialist knowledge."
+    },
+    {
+      "name": "tea-craze-britain",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "British tea drinking is universally familiar and reads as Georgian-Victorian."
+    },
+    {
+      "name": "tlingit-shellmoney-trade",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-only and undatable from the card."
+    },
+    {
+      "name": "zanzibar-sultanate-influence",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Omani expansion on the Swahili coast is specialist."
+    },
+    {
+      "name": "dahomey-slave-trade-dominance",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Ouidah and European slave traders anchor the height of the Atlantic trade."
+    },
+    {
+      "name": "middle-passage-peak",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The Middle Passage is universally taught and the card states it is the trade's peak."
+    },
+    {
+      "name": "triangular-trade-system",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Triangular trade is a school staple with an explicit colonial anchor."
+    },
+    {
+      "name": "zanzibar-clove-cultivation",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure plantation history with no era marker."
+    },
+    {
+      "name": "gold-rush-currency-clipper",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Nevada silver and US coinage place it in the 19th-century American West."
+    },
+    {
+      "name": "suez-canal",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known canal with an unmistakable industrial-era anchor."
+    },
+    {
+      "name": "western-union-money-transfer",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Wiring money by telegraph is a strong 19th-century technology anchor."
+    },
+    {
+      "name": "mechanical-refrigeration-meat",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "First refrigerated ships is a clear late-industrial marker."
+    },
+    {
+      "name": "panama-canal",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known canal."
+    },
+    {
+      "name": "oil-discovery-saudi",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Saudi oil is common knowledge and unmistakably 20th century."
+    },
+    {
+      "name": "intermodal-container",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Container shipping is a famous modern transformation with a named inventor."
+    },
+    {
+      "name": "first-eurodollar-market",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Offshore dollar markets are expert finance; 'European banks' implies only postwar."
+    },
+    {
+      "name": "gastarbeiter-migration",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "West Germany rebuilding its postwar economy is a tight anchor."
+    },
+    {
+      "name": "reform-opening-china",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Deng Xiaoping's reforms are common knowledge and clearly late 20th century."
+    },
+    {
+      "name": "fast-fashion-rise",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Zara and H&M are household names, unmistakably contemporary."
+    }
+  ]
+}

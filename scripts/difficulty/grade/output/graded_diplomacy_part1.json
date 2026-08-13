@@ -1,0 +1,895 @@
+{
+  "batch": "diplomacy_part1",
+  "category": "diplomacy",
+  "graded": [
+    {
+      "name": "first-peace-treaty",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Treaty itself is obscure, but 'earliest known peace treaty' plus Egypt and the Hittites is an unmistakable ancient anchor."
+    },
+    {
+      "name": "treaty-saint-clair-sur-epte",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Name gives nothing, but Vikings receiving Normandy and founding the Norman line anchors firmly to the Viking age; strong anchor lifts it out of very-hard."
+    },
+    {
+      "name": "swiss-confederation",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Founding of Switzerland is broadly known, but 'three cantons formed an alliance' carries no era marker at all."
+    },
+    {
+      "name": "treaty-of-bretigny",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure treaty name; 'renouncing claims to the French throne' hints at the Hundred Years' War only for those who already know it."
+    },
+    {
+      "name": "union-kalmar",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Outside Scandinavia this is unknown, and 'three kingdoms under a single monarch' could be almost any pre-modern century."
+    },
+    {
+      "name": "iroquois-confederacy",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Iroquois Confederacy is recognisable in North America but the description gives no era cue — pre-contact founding could be placed anywhere over five centuries."
+    },
+    {
+      "name": "treaty-alcacovas",
+      "difficulty": "medium",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Treaty name is expert-only, but 'before Columbus's voyage' is about the strongest possible temporal anchor a card can carry."
+    },
+    {
+      "name": "treaty-madrid",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Generic treaty name, but Francis I and Emperor Charles V place it in the Renaissance for anyone with school-level European history."
+    },
+    {
+      "name": "peace-cateau-cambresis",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Unrecognisable name; 'Italian Wars' is itself specialist knowledge, so France-vs-Spain gives only a vague early-modern hint."
+    },
+    {
+      "name": "union-utrecht",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Dutch provinces uniting against Spain points at the age of Habsburg Spain, but the event itself is specialist knowledge."
+    },
+    {
+      "name": "polish-lithuanian-golden-age",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Commonwealth is a recognisable early-modern entity, but a 'golden age' has no sharp boundary to reason from."
+    },
+    {
+      "name": "sakoku-edicts-isolation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Japan's closure is widely known via Perry, and Portuguese expulsion plus a Dutch post at Nagasaki anchors to the age of exploration."
+    },
+    {
+      "name": "peace-westphalia-extended",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Westphalia is enthusiast-level but genuinely taught; Dutch independence and Swedish gains anchor the era, matching the rubric's own Westphalia example."
+    },
+    {
+      "name": "treaty-of-pereyaslav",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Cossacks and Muscovy hint at early modern Russia, but the event is expert-only and the hint spans centuries."
+    },
+    {
+      "name": "english-civil-war-aftermath",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Charles II and the republican Commonwealth are known to anyone with English history, anchoring to the 17th-century civil war period."
+    },
+    {
+      "name": "treaty-breda",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Treaty name is obscure, but 'New Amsterdam becomes New York' is a famous fact that pins the card to the colonial 17th century."
+    },
+    {
+      "name": "treaty-ryswick",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Neither 'Nine Years' War' nor 'Grand Alliance' means anything to a general audience; no usable era marker."
+    },
+    {
+      "name": "act-of-union-britain",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The creation of Great Britain is broadly known and the England/Scotland union implies the early modern period."
+    },
+    {
+      "name": "treaty-of-rastatt",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "War of Spanish Succession is specialist knowledge; the treaty name adds nothing a general player can use."
+    },
+    {
+      "name": "treaty-aix-la-chapelle",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "One-line description names only another obscure war; nothing places it in an era for a general audience."
+    },
+    {
+      "name": "partition-poland",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Prussia plus a Russia-Austria carve-up implies the 18th-19th century, but the partitions themselves are enthusiast knowledge."
+    },
+    {
+      "name": "treaty-paris-1783",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The card explicitly names American independence and the Revolutionary War — universally taught with a hard anchor."
+    },
+    {
+      "name": "third-partition-poland",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same Prussia/Russia/Austria anchor; '123 years' only helps players who know Poland reappeared in 1918."
+    },
+    {
+      "name": "peace-of-amiens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure treaty, but 'French Revolutionary Wars' is a well-known-war anchor that fixes the era tightly."
+    },
+    {
+      "name": "venezuela-declares-independence",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'First South American nation to declare independence from Spain, beginning the continent's liberation' anchors squarely to the Bolívar era."
+    },
+    {
+      "name": "concert-europe",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Description is entirely generic — 'great powers agreed to maintain stability' names no war, figure or era; nothing to reason from."
+    },
+    {
+      "name": "chile-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Independence from Spain implies the Latin American wave, but Maipú and Chile specifically are low-recognition."
+    },
+    {
+      "name": "latin-american-independence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Mexican and Spanish-colonial independence is a school topic and the colonial framing anchors the era."
+    },
+    {
+      "name": "brazil-independence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Portuguese colonial break plus a new emperor anchors to the same 19th-century independence wave."
+    },
+    {
+      "name": "bolivia-independence",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The description restates the title and does not even name the colonial power — no anchor of any kind."
+    },
+    {
+      "name": "belgian-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Belgium splitting from the Netherlands is low-recognition and the description supplies no era marker beyond 'revolution'."
+    },
+    {
+      "name": "zollverein-formed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Obscure to general players, but 'German states' before unification places it in the 19th century."
+    },
+    {
+      "name": "treaty-nanking",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Opium War and Britain taking Hong Kong are broadly taught and anchor firmly to 19th-century imperialism."
+    },
+    {
+      "name": "oregon-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-British border settlement implies westward expansion, but the treaty itself is specialist American history."
+    },
+    {
+      "name": "perry-expedition-japan",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Perry opening Japan is a recognised turning point and 'ending 200 years of isolation' anchors it to the industrial era."
+    },
+    {
+      "name": "british-raj-established",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Raj is widely known; the Sepoy Mutiny clue narrows it, though British India spans a long window."
+    },
+    {
+      "name": "bismarck-becomes-minister-president",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Bismarck is a household name in European history and Prussia plus 'blood and iron' anchors the unification era."
+    },
+    {
+      "name": "dominion-canada",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Confederation is widely known in the Anglosphere and 'dominion within the British Empire' anchors to the imperial era."
+    },
+    {
+      "name": "german-empire-proclaimed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "German unification under Prussia at Versailles is a standard school topic with a strong anchor."
+    },
+    {
+      "name": "italian-unification",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Unification of Italy is broadly known; the description gives no figure or war, so the era is only loosely implied."
+    },
+    {
+      "name": "serbia-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ottoman Empire is a strong-sounding anchor but spans six centuries; Congress of Berlin only helps enthusiasts."
+    },
+    {
+      "name": "congress-of-berlin",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Balkan redrawing after the Russo-Turkish War implies the late imperial era but the conference itself is specialist knowledge."
+    },
+    {
+      "name": "triple-alliance",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The pre-WWI alliance system is taught in most WWI units, and Austria-Hungary caps it before 1918."
+    },
+    {
+      "name": "scramble-africa-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Berlin Conference and colonial partition of Africa are widely taught with a clear high-imperialism anchor."
+    },
+    {
+      "name": "treaty-of-shimonoseki",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Treaty name is obscure; the First Sino-Japanese War and Taiwan cession imply the late 19th century only to those who know it."
+    },
+    {
+      "name": "hague-conventions",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Rules of warfare and dispute resolution' is era-neutral — it would fit anywhere from the 1860s to the 1950s."
+    },
+    {
+      "name": "entente-cordiale",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'Ending centuries of rivalry' between Britain and France gives no century; recognition is limited to WWI-buildup students."
+    },
+    {
+      "name": "algeciras-conference",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "The First Moroccan Crisis is expert territory and nothing in the card marks an era."
+    },
+    {
+      "name": "austria-annexes-bosnia",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Austria-Hungary plus Serbian nationalism and Balkan tension reads immediately as the run-up to WWI."
+    },
+    {
+      "name": "union-of-south-africa",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'British colonies' and 'self-governing dominion' anchor loosely to the imperial-to-decolonial span."
+    },
+    {
+      "name": "sykes-picot-agreement",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Regularly invoked in Middle East news coverage, and dividing Ottoman territories anchors it to WWI."
+    },
+    {
+      "name": "zimmermann-telegram",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The description names World War I outright and the telegram is a standard schoolbook episode."
+    },
+    {
+      "name": "fourteen-points",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Wilson plus the League of Nations pins this to the end of WWI with no ambiguity."
+    },
+    {
+      "name": "treaty-versailles",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught and the description names WWI explicitly."
+    },
+    {
+      "name": "treaty-versailles-effect",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same anchor — the treaty that ended WWI."
+    },
+    {
+      "name": "irish-free-state",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Irish independence is well known; 'as a dominion' places it in the early 20th-century British imperial period."
+    },
+    {
+      "name": "washington-naval-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Naval arms limitation is specialist knowledge and the description names no war or decade."
+    },
+    {
+      "name": "locarno-treaties",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "'European nations agreed on borders and peaceful relations' could describe almost any century; nothing to place it."
+    },
+    {
+      "name": "japan-invades-manchuria",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Puppet state Manchukuo and defiance of the League of Nations anchor squarely to the interwar years."
+    },
+    {
+      "name": "anti-comintern-pact",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A German-Japanese anti-communist pact implies the Axis era but only for players who already know the alignment."
+    },
+    {
+      "name": "rhineland-remilitarized",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Explicit reference to violating Versailles fixes it between the wars, and it is a standard appeasement lesson."
+    },
+    {
+      "name": "munich-agreement",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Appeasement of Hitler over Czechoslovakia is taught everywhere and Hitler is a maximal figure anchor."
+    },
+    {
+      "name": "atlantic-charter",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The charter itself is little known, but Churchill and Roosevelt setting Allied war aims anchors it firmly inside WWII."
+    },
+    {
+      "name": "declaration-united-nations",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure document, but the description states 'during World War II' outright."
+    },
+    {
+      "name": "italy-surrenders-ww2",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Exiting the Axis is an explicit WWII anchor and Italy's switch of sides is broadly known."
+    },
+    {
+      "name": "bretton-woods-conference",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "IMF and World Bank founding plus 'Allied' and 'postwar' anchors it to the end of WWII."
+    },
+    {
+      "name": "potsdam-conference",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Allied leaders settling postwar Germany is a recognisable WWII-endgame conference."
+    },
+    {
+      "name": "united-nations-founded",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "The UN's founding is universal knowledge and 'international organization for peace' reads as postwar."
+    },
+    {
+      "name": "wwii-end-europe",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "V-E Day and the German surrender are as universally known as events get."
+    },
+    {
+      "name": "churchill-iron-curtain-speech",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Churchill plus the phrase that named the Cold War divide anchors it to the immediate postwar moment."
+    },
+    {
+      "name": "indian-independence",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Independence and Partition are globally taught and the British-rule framing anchors the decolonisation era."
+    },
+    {
+      "name": "truman-doctrine",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Truman plus containment of Soviet pressure anchors it to the start of the Cold War."
+    },
+    {
+      "name": "burma-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; independence from the UK implies the decolonisation wave but nothing narrows it further."
+    },
+    {
+      "name": "geneva-conventions-modern",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'Updated' humanitarian law with no war, figure or decade named leaves the player with almost nothing."
+    },
+    {
+      "name": "indonesia-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Dutch colonial withdrawal implies mid-century decolonisation, but the event has limited general recognition."
+    },
+    {
+      "name": "anzus-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A US-Australia-New Zealand pact must be modern, but nothing narrows it inside the Cold War."
+    },
+    {
+      "name": "treaty-of-paris-ecsc",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The treaty is obscure, but 'precursor to the European Union' anchors it tightly to the postwar integration era."
+    },
+    {
+      "name": "seato-formed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Collective defence with Western powers reads as Cold War containment, but SEATO itself is specialist knowledge."
+    },
+    {
+      "name": "bandung-conference",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Anti-colonial Afro-Asian cooperation implies mid-century decolonisation but the conference is little known."
+    },
+    {
+      "name": "warsaw-pact",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "A Cold War staple taught alongside NATO; 'Soviet Union and Eastern Bloc' is an unmistakable era anchor."
+    },
+    {
+      "name": "sudan-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; British/Egyptian withdrawal points at the decolonisation era with no finer clue."
+    },
+    {
+      "name": "ghana-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'First sub-Saharan nation to gain independence' anchors the start of African decolonisation, but recognition is limited."
+    },
+    {
+      "name": "fifth-french-republic",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "De Gaulle is a strong figure anchor and 'France's current government' places it inside the modern postwar period."
+    },
+    {
+      "name": "antarctic-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Scientific preservation of Antarctica implies the modern era but gives no decade or associated event."
+    },
+    {
+      "name": "efta-formed",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "EFTA is unknown to general players and the only clue, the EEC, is itself specialist knowledge."
+    },
+    {
+      "name": "us-japan-mutual-security-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Description merely restates the title; only the fact that the two are allies implies a postwar date."
+    },
+    {
+      "name": "berlin-wall-built",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known Cold War landmark with an explicit divided-Germany anchor."
+    },
+    {
+      "name": "algeria-independence",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Algerian War is widely known and '132 years of colonial rule' plus France anchors the decolonisation era."
+    },
+    {
+      "name": "test-ban-treaty",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "US/UK/USSR nuclear testing is a recognisable Cold War arms-control moment."
+    },
+    {
+      "name": "apollo-11-treaty",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The treaty is obscure, but a treaty about claiming space can only belong to the space age — a strong technology anchor."
+    },
+    {
+      "name": "nuclear-non-proliferation",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The NPT is regularly in the news and nuclear weapons anchor it to the atomic age."
+    },
+    {
+      "name": "china-un-seat",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "PRC-vs-Taiwan at the UN anchors after 1949 but the seat transfer itself is specialist knowledge."
+    },
+    {
+      "name": "smithsonian-agreement",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-only monetary history; the Bretton Woods clue helps only players who already know when that system collapsed."
+    },
+    {
+      "name": "salt-i",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-USSR arms limitation anchors to the Cold War, but SALT is enthusiast knowledge and easily confused with SALT II and START."
+    },
+    {
+      "name": "uk-joins-eec",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known through the Brexit debate, and EEC membership anchors it to the later 20th century."
+    },
+    {
+      "name": "helsinki-accords",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "'East and West' signals the Cold War, but the accords themselves have low general recognition."
+    },
+    {
+      "name": "camp-david-accords",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Egypt-Israel peace is a recognisable diplomatic landmark anchored after the founding of modern Israel."
+    },
+    {
+      "name": "salt-ii",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Same Cold War anchor as SALT I with even less recognition, and nothing distinguishes it in time from its predecessor."
+    },
+    {
+      "name": "constitution-canada-patriation",
+      "difficulty": "very-hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Outside Canada this is unknown, and 'gained full sovereignty over its constitution' fits 1867, 1931 or 1982 equally well."
+    },
+    {
+      "name": "plaza-accord-signed",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Financial-history specialism; 'yen and mark' places it before the euro but that is a thin clue for most players."
+    },
+    {
+      "name": "inf-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-USSR missile elimination anchors to the Cold War, but the treaty is easily confused with the other arms-control cards."
+    },
+    {
+      "name": "berlin-wall-fall",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "One of the most recognised events of the 20th century with an explicit end-of-Cold-War anchor."
+    },
+    {
+      "name": "german-reunification",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The description ties it directly to the fall of the Berlin Wall — high recognition, hard anchor."
+    },
+    {
+      "name": "collapse-soviet-union-1991",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and explicitly tied to the end of the Cold War."
+    },
+    {
+      "name": "soviet-collapse",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same universal recognition and anchor."
+    },
+    {
+      "name": "start-i",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Cold War arms control with low recognition and nothing to separate it from SALT I and II on the card."
+    },
+    {
+      "name": "nafta-signed",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "NAFTA is a familiar political reference for news readers and anchors to the late 20th century."
+    },
+    {
+      "name": "eritrea-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; '30 years of armed struggle' against Ethiopia implies the late 20th century only loosely."
+    },
+    {
+      "name": "oslo-accords",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well covered in news of the Israeli-Palestinian process, anchored to the modern peace-process era."
+    },
+    {
+      "name": "apartheid-ends",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "South Africa's first democratic elections are globally known and unmistakably late-20th-century."
+    },
+    {
+      "name": "schengen-area",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Passport-free European travel is familiar to anyone who has travelled in Europe and anchors to the EU era."
+    },
+    {
+      "name": "blair-becomes-pm",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Blair is a recognisable modern figure and '18 years of Conservative government' anchors it after the Thatcher era."
+    },
+    {
+      "name": "kyoto-protocol",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The best-known climate treaty before Paris, anchored to the modern climate-policy era."
+    },
+    {
+      "name": "india-nuclear-tests",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Recognition is limited outside South Asia and the description gives only 'nuclear weapons state' as an era clue."
+    },
+    {
+      "name": "euro-introduced",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "The euro's introduction is common knowledge with a clear contemporary anchor."
+    },
+    {
+      "name": "macau-handover",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Reads as the twin of the Hong Kong handover, anchoring it to the end of European colonialism in Asia."
+    },
+    {
+      "name": "icc-established",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "'First permanent international war crimes court' names no decade and is easily confused with Nuremberg-era institutions."
+    },
+    {
+      "name": "eu-eastern-expansion",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Eastern European states joining the EU anchors clearly to the post-Soviet period."
+    },
+    {
+      "name": "angela-merkel-elected",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Merkel is a contemporary household name and 'led for 16 years' lets a player work back from her recent departure."
+    },
+    {
+      "name": "montenegro-independence",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Low recognition; 'completing Yugoslavia's dissolution' anchors after the Balkan wars but not much more."
+    },
+    {
+      "name": "lisbon-treaty",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "EU institutional reform is low-recognition and indistinguishable on the card from Maastricht or Nice."
+    },
+    {
+      "name": "copenhagen-climate-summit",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "A failed climate conference has faded from general memory and reads much like Kyoto or Paris on the card."
+    },
+    {
+      "name": "isis-caliphate",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Dominated world news and is unmistakably contemporary."
+    },
+    {
+      "name": "iran-nuclear-deal",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar to news readers and clearly recent, though 'world powers limit Iran's nuclear program' spans a decade of coverage."
+    },
+    {
+      "name": "brexit-vote",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Recent, globally covered, and unmistakably contemporary."
+    },
+    {
+      "name": "us-north-korea-summit",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Trump and Kim Jong Un are named directly — a maximal contemporary anchor."
+    },
+    {
+      "name": "abraham-accords",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely covered normalisation deal, unmistakably within the last few years."
+    }
+  ]
+}

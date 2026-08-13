@@ -1,0 +1,1518 @@
+{
+  "batch": "law",
+  "category": "law",
+  "graded": [
+    {
+      "name": "code-ur-nammu",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Obscure code, but 'oldest surviving legal code', 'ancient Sumer' and 'predating Hammurabi' pin it to the dawn of the timeline."
+    },
+    {
+      "name": "laws-of-eshnunna",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Almost nobody knows Eshnunna, but 'Babylonian-era' and 'Mesopotamian' anchor the era firmly."
+    },
+    {
+      "name": "code-of-lipit-ishtar",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Very obscure king, but 'Sumerian', 'Akkadian' and 'predating Hammurabi' give a strong ancient anchor."
+    },
+    {
+      "name": "code-hammurabi",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Hammurabi's Code is standard school curriculum and 'Babylonian king' + 'oldest written legal codes' anchor it."
+    },
+    {
+      "name": "code-hammurabi-interest-rules",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The interest provision itself is not widely known, but Babylon/Hammurabi anchor the era completely."
+    },
+    {
+      "name": "building-code",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The builder-liability clause is a specialist detail; Hammurabi and Babylon are a full era anchor."
+    },
+    {
+      "name": "hittite-law-code",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hittites are a name most people know only vaguely, and the card gives no anchor beyond the empire itself."
+    },
+    {
+      "name": "mosaic-law-given",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universal recognition; Moses and Mount Sinai place it in biblical antiquity."
+    },
+    {
+      "name": "draco-law-code",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Draconian' gives the name some purchase, and 'Athens' first written laws' anchors archaic Greece."
+    },
+    {
+      "name": "solon-reforms-athens",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Solon is enthusiast knowledge, but Athens before democracy is a clear ancient Greek anchor."
+    },
+    {
+      "name": "roman-census",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Servian census is specialist knowledge; 'Rome' anchors the era but nothing more."
+    },
+    {
+      "name": "cyrus-cylinder",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Cyrus the Great and the conquest of Babylon are a strong, well-known ancient anchor."
+    },
+    {
+      "name": "athenian-democracy",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Athenian democracy is taught everywhere and 'ancient Athens' is stated outright."
+    },
+    {
+      "name": "gortyn-law-code",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown outside classics, but 'ancient Greek legal code' and Crete anchor the era explicitly."
+    },
+    {
+      "name": "twelve-tables",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely taught as the foundation of Roman law; 'Rome codified its first written laws' anchors the early Republic."
+    },
+    {
+      "name": "lex-canuleia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure statute, but patricians/plebeians/republic anchor it to Roman antiquity."
+    },
+    {
+      "name": "lex-hortensia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, yet 'Plebeian Council' and 'Roman social classes' are a solid ancient anchor, not a no-clue card."
+    },
+    {
+      "name": "lex-aquilia",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Specialist Roman statute; 'Roman statute' gives the era and nothing else."
+    },
+    {
+      "name": "ashoka-edicts",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ashoka is known to enthusiasts and in India; 'Indian emperor' only loosely fixes the era."
+    },
+    {
+      "name": "praetor-peregrinus-created",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-level Roman institution with a clean Roman era anchor."
+    },
+    {
+      "name": "qin-legalist-code",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Qin unification is broadly taught, and 'unified empire' + Qin dynasty anchor ancient China."
+    },
+    {
+      "name": "roman-sumptuary-laws",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure sumptuary statute; Rome is the only anchor."
+    },
+    {
+      "name": "qin-book-burning",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The burning of books and burying of scholars is a well-circulated episode and Qin Shi Huang names the era."
+    },
+    {
+      "name": "lex-villia-annalis",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Expert-level Roman office regulation with a Roman era anchor."
+    },
+    {
+      "name": "court-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Quaestiones perpetuae are specialist knowledge; 'Rome' anchors the era."
+    },
+    {
+      "name": "han-civil-service",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Chinese examination system is vaguely familiar, but 'Han'/'Confucian' place it only loosely."
+    },
+    {
+      "name": "grain-price-controls",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Gracchan grain law is specialist; 'Roman citizens' anchors the era."
+    },
+    {
+      "name": "contract-law",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A generic process card; 'Roman jurists' supplies the only anchor."
+    },
+    {
+      "name": "news-bulletin",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The name is misleadingly modern, but the description names the Roman Acta Diurna."
+    },
+    {
+      "name": "roman-tax-census-augustus",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Augustus is a famous named emperor, a strong anchor even though the tax census itself is obscure."
+    },
+    {
+      "name": "council-of-jerusalem",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition, but 'early Christian leaders' and Gentile converts anchor the first century tightly."
+    },
+    {
+      "name": "theodosian-code",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure code, but 'Eastern Roman Empire' and 'since Constantine' are a real late-antique anchor, not a no-clue card."
+    },
+    {
+      "name": "lex-salica-issued",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Salic law is enthusiast knowledge; 'Frankish kingdom' anchors the early medieval era."
+    },
+    {
+      "name": "silla-bone-rank-system",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Korean Silla ranks are expert knowledge and nothing in the card tells a general player when Silla existed."
+    },
+    {
+      "name": "justinian-compilation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Justinian and the Corpus Juris Civilis are enthusiast knowledge, but 'Emperor Justinian' codifying Roman law anchors late antiquity."
+    },
+    {
+      "name": "justinian-code",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Same event and same strong 'Byzantine Emperor Justinian' anchor; graded with its duplicate."
+    },
+    {
+      "name": "first-civil-service-exam",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Chinese imperial exam is broadly familiar as a concept; 'Sui dynasty' places it only roughly."
+    },
+    {
+      "name": "inheritance-law",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Generic name, but 'Frankish and Germanic kingdoms' anchors the early medieval West."
+    },
+    {
+      "name": "law-of-aethelberht",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown to general players; 'Kent' and 'Anglo-Saxon' anchor early medieval England."
+    },
+    {
+      "name": "marine-law",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The name says nothing and 'Rhodian Sea Law' reads as classical Greek, actively misleading a player about the era."
+    },
+    {
+      "name": "constitution-medina",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The document is obscure, but the Prophet Muhammad is one of the strongest era anchors available."
+    },
+    {
+      "name": "tang-code-promulgated",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Tang China is a name many recognise without being able to situate it; the card offers no other anchor."
+    },
+    {
+      "name": "visigothic-code",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, but Visigoths ruling over Goths and Romans anchors the post-Roman era."
+    },
+    {
+      "name": "synod-of-whitby",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Expert-level church council; 'Celtic Christianity' is the only faint hint of era."
+    },
+    {
+      "name": "trial-by-ordeal-spreads",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Trial by ordeal is a widely known practice and the card says 'Medieval Europe' outright."
+    },
+    {
+      "name": "serfs-bound-land",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Serfdom is familiar but this diffuse process card is not; 'medieval Europe' is stated explicitly."
+    },
+    {
+      "name": "song-scholar-official-system",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Wang Anshi's reforms are expert knowledge and 'Song China' does not place the era for a general player."
+    },
+    {
+      "name": "domesday-book",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Domesday Book is broadly known and 'William the Conqueror' is an unusually precise anchor."
+    },
+    {
+      "name": "domesday-tax-survey",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same event, same William the Conqueror anchor; graded with its duplicate."
+    },
+    {
+      "name": "gratian-decretum",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Gratian is unknown outside canon law and 'church laws' could plausibly be read anywhere from late antiquity to early modern."
+    },
+    {
+      "name": "assize-of-clarendon",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The assize itself is unknown to general players, though Henry II and English common law anchor the medieval era."
+    },
+    {
+      "name": "great-yassa-code",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Genghis Khan is the anchor and the headline of the card; the Mongol Empire places it immediately."
+    },
+    {
+      "name": "magna-carta",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "High recognition plus a firm medieval England anchor in King John and the barons."
+    },
+    {
+      "name": "magna-carta-issuance",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same anchor."
+    },
+    {
+      "name": "medieval-marriage-reform",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Fourth Lateran marriage rules are specialist, but the card says 'Medieval' in the name."
+    },
+    {
+      "name": "jury-trial-replaces-ordeal",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The shift from ordeal to jury is enthusiast knowledge; church ordeals plus English courts anchor the medieval era."
+    },
+    {
+      "name": "first-medical-licensing-law",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Frederick II's Sicilian licensing law is expert knowledge; 'Emperor Frederick II' supplies the era but nothing carries recognition."
+    },
+    {
+      "name": "sachsenspiegel-compiled",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A German law book unknown to general players, with only 'vernacular customary law' hinting at an era."
+    },
+    {
+      "name": "inquisition-established",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "The Inquisition is widely known as an institution; 'Papal' and heresy narrow the era loosely."
+    },
+    {
+      "name": "english-parliament",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The idea of the first English parliament is familiar and Simon de Montfort plus England anchor the medieval era."
+    },
+    {
+      "name": "magna-carta-consequences",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Low recognition on its own, but the card names Magna Carta, placing it just after 1215."
+    },
+    {
+      "name": "siete-partidas",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown outside Iberian legal history; Castile and Alfonso X anchor medieval Spain."
+    },
+    {
+      "name": "medieval-guild-bakers",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Assize of Bread is specialist, but 'guilds' and medieval England are a clear era anchor."
+    },
+    {
+      "name": "model-parliament-statutes",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure statute; Edward I and 'medieval common law' anchor the era."
+    },
+    {
+      "name": "wool-merchant-regulations",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure trade regulation, but Edward I and 'key medieval commodity' anchor the era well enough to be hard rather than very hard."
+    },
+    {
+      "name": "model-parliament",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The name means nothing to general players; Edward I and England anchor the medieval era."
+    },
+    {
+      "name": "magdeburg-rights-spread",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A German town-law charter unknown to general players, and self-governing towns could read as anything from 1100 to 1600."
+    },
+    {
+      "name": "salt-gabelle-france",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The gabelle is obscure, but 'persisted until the French Revolution' anchors it to the ancien regime."
+    },
+    {
+      "name": "labor-shortage-drives-wages",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Post-plague labor scarcity' is an unmistakable Black Death anchor even though the wage event is obscure."
+    },
+    {
+      "name": "statute-of-laborers",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The statute is enthusiast knowledge; 'After the Black Death' is a very strong anchor."
+    },
+    {
+      "name": "wool-staple-monopoly",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Expert-level English trade administration with no era marker beyond 'the English Staple'."
+    },
+    {
+      "name": "golden-bull",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The name gives nothing and the Holy Roman Empire spans a millennium with no narrowing clue."
+    },
+    {
+      "name": "sumptuary-laws-fashion",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Sumptuary law is specialist, but 'Medieval' and 'after the Black Death' anchor it firmly."
+    },
+    {
+      "name": "ragusa-quarantine",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Quarantine's origin is a known factoid to some; Ragusa and 'first known quarantine law' only loosely fix the era."
+    },
+    {
+      "name": "ming-code-issued",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Ming China is a familiar name that most players cannot situate; the card offers no further anchor."
+    },
+    {
+      "name": "bankruptcy-legal-framework",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A diffuse commercial-law process card; 'Italian city-states' spans several centuries with nothing sharper."
+    },
+    {
+      "name": "scotland-bans-golf-1457",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "A circulated curiosity, and 'practice archery for national defense' anchors it to the late medieval era."
+    },
+    {
+      "name": "venice-patent-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "First patent law is specialist knowledge; Venice at its commercial height anchors the era."
+    },
+    {
+      "name": "modern-chess-queen-rules",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Chess is universal but this rules change is not, and the card gives no era marker beyond 'European players'."
+    },
+    {
+      "name": "spanish-inquisition-begins",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Spanish Inquisition is widely known and Ferdinand and Isabella are a sharp anchor."
+    },
+    {
+      "name": "encomienda-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The term is specialist, but Spanish colonists and Indigenous labour in the Americas anchor the conquest era."
+    },
+    {
+      "name": "diet-of-worms",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Martin Luther before Charles V is a Reformation set piece with high inferability."
+    },
+    {
+      "name": "augsburg-confession",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The confession itself is obscure; Lutheran princes and Charles V anchor the Reformation."
+    },
+    {
+      "name": "carolina-criminal-code",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Unknown outside legal history; Charles V and the Holy Roman Empire anchor the sixteenth century loosely."
+    },
+    {
+      "name": "suleiman-kanuni-legal",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Suleiman the Magnificent is a well-known Ottoman ruler, a strong anchor per the rubric."
+    },
+    {
+      "name": "bankruptcy-law",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The statute is unknown, but Henry VIII is a precise anchor."
+    },
+    {
+      "name": "spanish-inquisition-intensified",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "An 'intensification' event has low recognition on its own, but the Spanish Inquisition anchors the era."
+    },
+    {
+      "name": "greshams-law-coinage",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Gresham's law is a familiar phrase but the card gives no era marker at all for 'financier Thomas Gresham'."
+    },
+    {
+      "name": "goa-inquisition",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, but the Portuguese in India plus 'Inquisition' anchor the early modern colonial era."
+    },
+    {
+      "name": "statute-of-artificers",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure English labour statute whose apprenticeship-and-wages description could sit anywhere between 1350 and 1750."
+    },
+    {
+      "name": "edict-nantes",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Enthusiast knowledge, but Henry IV and French Protestants anchor the wars of religion."
+    },
+    {
+      "name": "tokugawa-rice-standardization",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A specialist fiscal reform; 'Tokugawa shogunate' anchors early modern Japan."
+    },
+    {
+      "name": "buke-shohatto-code",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure to general players, but the Tokugawa shogunate and daimyo are a genuine era anchor rather than no clue."
+    },
+    {
+      "name": "court-of-star-chamber-peak",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "The Star Chamber is a half-familiar phrase, and 'at its height' gives no era marker within English royal history."
+    },
+    {
+      "name": "mayflower-compact",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Widely taught, and the Pilgrims anchor it precisely."
+    },
+    {
+      "name": "grotius-publishes-on-the-law-of-war-and-peace",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Grotius is known only to lawyers, and 'Dutch jurist' gives a general player no era at all."
+    },
+    {
+      "name": "petition-of-right",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The petition is enthusiast knowledge; King Charles I anchors the era sharply."
+    },
+    {
+      "name": "tokugawa-sakoku-isolation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Japan's closed country is a broadly familiar idea and the Tokugawa shogunate anchors the era."
+    },
+    {
+      "name": "putney-debates",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure debates, but the New Model Army anchors the English Civil War firmly, so hard rather than very hard."
+    },
+    {
+      "name": "navigation-acts-england",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Mercantilism and colonial shipping only loosely bracket the era, and the acts themselves are specialist knowledge."
+    },
+    {
+      "name": "aurangzeb-orthodox-policies",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Aurangzeb is known in South Asia and to enthusiasts; 'Mughal' brackets a wide era."
+    },
+    {
+      "name": "habeas-corpus",
+      "difficulty": "hard",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "Habeas corpus is a familiar term but the card offers no era marker whatsoever beyond 'England'."
+    },
+    {
+      "name": "bill-of-rights-england",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known; 'Parliament limits the monarchy' places it in the early modern constitutional struggle."
+    },
+    {
+      "name": "english-rights-act",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event; the Glorious Revolution anchors it, but recognition of the act is only moderate."
+    },
+    {
+      "name": "copyright-britain",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Copyright's origin is specialist and the Statute of Anne gives a general player no era cue."
+    },
+    {
+      "name": "statute-of-anne",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Same event, same absence of era markers on the card."
+    },
+    {
+      "name": "gold-standard-newton",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Isaac Newton as Master of the Mint is a strong and memorable anchor."
+    },
+    {
+      "name": "first-boxing-rules-broughton",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Broughton is unknown to general players and nothing in the card indicates the century."
+    },
+    {
+      "name": "checkers-draughts-standardized",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Obscure and entirely era-free: 'English writers codified the rules of draughts' could be any century."
+    },
+    {
+      "name": "proclamation-1763",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The proclamation is US-curriculum knowledge, but the French and Indian War and angry colonists anchor it tightly."
+    },
+    {
+      "name": "public-education-prussia",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Frederick the Great and Prussia are a strong named-figure anchor even though the school law is obscure."
+    },
+    {
+      "name": "stamp-act",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Widely known through 'no taxation without representation', with a firm pre-revolutionary anchor."
+    },
+    {
+      "name": "somerset-slavery-case",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The case is unknown to general players; English common law and rising abolitionism anchor the era."
+    },
+    {
+      "name": "intolerable-acts",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is mostly US-curriculum, but the Boston Tea Party reference anchors the era exactly."
+    },
+    {
+      "name": "declaration-of-independence-drafted",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with an unmistakable anchor."
+    },
+    {
+      "name": "articles-confederation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Less famous than the Constitution, but 'first constitution of the United States' anchors the founding era."
+    },
+    {
+      "name": "constitutional-convention",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally taught; Philadelphia and the Constitution anchor it."
+    },
+    {
+      "name": "us-constitution-written",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with a clear founding-era anchor."
+    },
+    {
+      "name": "american-constitution-adoption",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with a clear founding-era anchor."
+    },
+    {
+      "name": "us-constitution",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with a clear founding-era anchor."
+    },
+    {
+      "name": "abolition-of-feudalism",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The August 4 decrees are specialist, but 'The National Assembly' anchors the French Revolution."
+    },
+    {
+      "name": "declaration-rights-man-citizen",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The document is moderately known and the National Assembly anchors the Revolution."
+    },
+    {
+      "name": "french-declaration-rights",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Revolutionary France' is an explicit anchor; recognition of the declaration itself is moderate."
+    },
+    {
+      "name": "tennis-court-oath",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Enthusiast knowledge, but the National Assembly defying the king anchors 1789 clearly."
+    },
+    {
+      "name": "civil-constitution-clergy",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure measure with an explicit 'French Revolution' anchor."
+    },
+    {
+      "name": "first-us-census",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Unremarkable as an event, but 'first United States census' places it right after independence."
+    },
+    {
+      "name": "prison-reform",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Walnut Street Jail is specialist; Philadelphia and the penitentiary idea anchor the early US reform era."
+    },
+    {
+      "name": "bill-of-rights-us",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known; the first ten amendments anchor it to the founding."
+    },
+    {
+      "name": "divorce-law",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The law is obscure, but 'Revolutionary France' is an exact anchor."
+    },
+    {
+      "name": "us-dollar-established",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The Coinage Act is specialist knowledge; 'the new nation' anchors the 1790s."
+    },
+    {
+      "name": "directory-period",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The Directory is enthusiast-only, though 'until Napoleon's coup' anchors it precisely."
+    },
+    {
+      "name": "metric-system-france",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Widely known that the metric system is French, but the card gives no era marker beyond France."
+    },
+    {
+      "name": "first-british-income-tax",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Wars against Napoleonic France' is a strong, explicit anchor."
+    },
+    {
+      "name": "income-tax",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Pitt the Younger and the Napoleonic Wars anchor the era firmly despite low recognition of the tax itself."
+    },
+    {
+      "name": "abolition-slavery-denmark",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Denmark's ban is unknown to general players; the transatlantic slave trade's abolition anchors the era."
+    },
+    {
+      "name": "code-napoleon",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "The Napoleonic Code is broadly known and Napoleon is an exact anchor."
+    },
+    {
+      "name": "criminal-law-code",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Same event; Napoleon anchors it precisely and the code is broadly known."
+    },
+    {
+      "name": "continental-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The blockade is enthusiast knowledge, but Napoleon anchors it exactly."
+    },
+    {
+      "name": "british-slave-trade-abolished",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably known; abolitionist campaigning brackets the era without pinning it."
+    },
+    {
+      "name": "ohio-canals-authorized",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "A state legislature's canal authorisation is expert trivia; 'canals' only brackets the industrial era."
+    },
+    {
+      "name": "catholic-emancipation-act",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Little known outside Britain and Ireland, but 'for the first time since the 1600s' anchors the era."
+    },
+    {
+      "name": "indian-removal-act",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is largely US-curriculum, but Andrew Jackson is a sharp anchor."
+    },
+    {
+      "name": "anatomy-act-passed",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The act is obscure; the trade in stolen bodies anchors it to the nineteenth-century medical era."
+    },
+    {
+      "name": "reform-act-1832",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known in Britain only; 'rotten boroughs' hints at the reform era without fixing it."
+    },
+    {
+      "name": "child-labor-law",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Factory-era child labour reform is broadly taught; the industrial anchor brackets the era."
+    },
+    {
+      "name": "factory-act-uk",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'Textile factories' and 'factory inspectors' anchor the Industrial Revolution clearly."
+    },
+    {
+      "name": "slavery-abolished-uk",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Britain's abolition of slavery is broadly known and the imperial-abolition anchor is strong."
+    },
+    {
+      "name": "public-health",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The act is obscure; 'cholera epidemics' and local boards of health anchor the Victorian era."
+    },
+    {
+      "name": "sanitation-system",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure institution; urban sewage and disease outbreaks anchor the nineteenth century."
+    },
+    {
+      "name": "seneca-falls-convention",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in the US; the suffrage movement brackets the era without pinning it."
+    },
+    {
+      "name": "universal-suffrage",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The specific French franchise law is obscure; 'the European revolutions' anchors the era."
+    },
+    {
+      "name": "womens-rights-convention",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event as its duplicate, with the same moderate recognition and bracketing anchor."
+    },
+    {
+      "name": "compromise-slavery",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The generic name hurts recognition, but US territorial expansion and slavery anchor the antebellum era."
+    },
+    {
+      "name": "fugitive-slave-act",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Mostly US-curriculum recognition, with an explicit 'before the Civil War' anchor."
+    },
+    {
+      "name": "dred-scott-decision",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "A famous case in the US; slavery in the territories brackets the antebellum era."
+    },
+    {
+      "name": "homestead-act",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Specialist outside the US, but 'western expansion' and public land grants anchor the era."
+    },
+    {
+      "name": "emancipation-proclamation",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known; Lincoln and the Confederacy anchor it exactly."
+    },
+    {
+      "name": "geneva-convention-first",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "low",
+      "reasoning": "The Geneva Conventions are widely known but the card gives no era cue, and many will guess the postwar treaties."
+    },
+    {
+      "name": "13th-amendment",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known abolition amendment with a clear anchor."
+    },
+    {
+      "name": "slavery-abolished-us",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same universal recognition."
+    },
+    {
+      "name": "british-north-america-act",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly in Canada; 'British colonies' to 'Dominion' brackets a wide imperial era."
+    },
+    {
+      "name": "queensberry-boxing-rules",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The Queensberry rules are a half-familiar phrase; 'modern boxing' only loosely fixes the era."
+    },
+    {
+      "name": "womens-property-rights",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Specialist statute; married women's property reform brackets the Victorian era loosely."
+    },
+    {
+      "name": "free-education",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Jules Ferry is unknown outside France and mass compulsory schooling could read anywhere from 1800 to 1900."
+    },
+    {
+      "name": "chinese-exclusion-act",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Reasonably well known; Chinese labour immigration to the US brackets the era."
+    },
+    {
+      "name": "public-healthcare-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Bismarck is a strong named anchor even though the health insurance act itself is specialist."
+    },
+    {
+      "name": "disability-rights",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The accident insurance law is unknown, but Bismarck anchors the era precisely."
+    },
+    {
+      "name": "dawes-act",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "US-curriculum knowledge at best; allotment policy brackets the late nineteenth century loosely."
+    },
+    {
+      "name": "orphan-support",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure welfare legislation with no temporal marker at all beyond 'France'."
+    },
+    {
+      "name": "pension-system",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "'World's first state pension' is a circulated factoid and Bismarck anchors the era."
+    },
+    {
+      "name": "anti-trust-law",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Sherman Antitrust is broadly familiar; monopolies bracket the Gilded Age."
+    },
+    {
+      "name": "sherman-antitrust-act",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Same event, same recognition and bracketing anchor."
+    },
+    {
+      "name": "womens-suffrage-nz",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "'First country to let women vote' is a widely circulated fact; the suffrage era brackets it."
+    },
+    {
+      "name": "plessy-v-ferguson",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known as the case Brown overturned; segregation brackets the era."
+    },
+    {
+      "name": "traffic-control",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "A generic regulatory card, but 'as motor vehicles became common' anchors the turn of the century."
+    },
+    {
+      "name": "corporate-tax",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "low",
+      "reasoning": "Obscure tax provision with no era marker beyond dollar figures."
+    },
+    {
+      "name": "maternity-leave",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The benefit is obscure; Britain's National Insurance Act anchors the early welfare state."
+    },
+    {
+      "name": "unemployment-benefits",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "Obscure, with the same National Insurance Act anchor to Britain's early welfare state."
+    },
+    {
+      "name": "us-federal-income-tax",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known in the US; a constitutional amendment on income tax brackets the modern era."
+    },
+    {
+      "name": "balfour-declaration",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar from Middle East coverage; the British role in Palestine brackets the era."
+    },
+    {
+      "name": "women-suffrage-uk",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Suffrage for women over 30 is broadly known; the suffragette era brackets it."
+    },
+    {
+      "name": "prohibition-begins-us",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known and firmly tied to the 1920s in popular culture."
+    },
+    {
+      "name": "womens-suffrage-us",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known amendment with a clear era anchor."
+    },
+    {
+      "name": "child-allowance",
+      "difficulty": "very-hard",
+      "recognition": "very-low",
+      "inferability": "very-low",
+      "reasoning": "Belgian family allowances are expert trivia and the card carries no temporal marker whatsoever."
+    },
+    {
+      "name": "sales-tax",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "high",
+      "reasoning": "The specific adoption is obscure, but 'during the Depression' is an exact anchor."
+    },
+    {
+      "name": "statute-westminster",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "Little known outside Commonwealth history; 'British dominions' brackets the early twentieth century."
+    },
+    {
+      "name": "fdr-gold-confiscation",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The order is specialist, but Roosevelt and leaving the gold standard anchor the 1930s."
+    },
+    {
+      "name": "glass-steagall-act",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Familiar from later financial coverage; 'after mass bank failures' brackets the Depression."
+    },
+    {
+      "name": "swiss-bank-secrecy-law",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "low",
+      "reasoning": "Swiss banking secrecy is a familiar idea, but the card gives no clue which decade or even which century-half."
+    },
+    {
+      "name": "nuremberg-laws",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Widely taught Holocaust-era legislation; 'Nazi' is an exact anchor."
+    },
+    {
+      "name": "social-security-act",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Well known in the US; social insurance for the elderly brackets the modern era."
+    },
+    {
+      "name": "internment-japanese-americans",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly known and the card says 'during World War II' outright."
+    },
+    {
+      "name": "genocide-convention-adopted",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The convention itself is specialist, but the United Nations anchors the immediate postwar era."
+    },
+    {
+      "name": "universal-declaration-human-rights",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Widely known and the UN anchors it to the postwar moment."
+    },
+    {
+      "name": "universal-declaration-rights",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Same event, same recognition and postwar UN anchor."
+    },
+    {
+      "name": "indian-constitution-enacted",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "Recognition is largely regional, but a republic with its first President anchors the post-independence moment."
+    },
+    {
+      "name": "brown-v-board",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known desegregation ruling with a clear mid-century anchor."
+    },
+    {
+      "name": "european-court-human-rights",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The court is specialist, but postwar European institution-building anchors the era."
+    },
+    {
+      "name": "second-vatican-council",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known among Catholics and in general culture; 'modernized the Church' brackets the modern era."
+    },
+    {
+      "name": "gideon-v-wainwright",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The case is known mainly to Americans who studied it; rights-expansion rulings bracket a wide mid-century window."
+    },
+    {
+      "name": "24th-amendment-ratified",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "The poll-tax amendment is overshadowed by the better-known civil rights laws and only loosely bracketed."
+    },
+    {
+      "name": "civil-rights-act",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known with a firm civil rights era anchor."
+    },
+    {
+      "name": "death-penalty-abolished-uk",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Known mainly in Britain, and the card gives no clue whether this is the 1950s or the 1990s."
+    },
+    {
+      "name": "immigration-act-1965",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Hart-Celler is specialist knowledge; the shift in immigration patterns brackets the era loosely."
+    },
+    {
+      "name": "voting-rights-act",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known civil rights legislation with a clear anchor."
+    },
+    {
+      "name": "miranda-v-arizona",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Miranda rights are globally famous through popular culture; the policing context brackets the modern era."
+    },
+    {
+      "name": "fair-housing-act",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Less famous than the other civil rights acts and only loosely bracketed by the era."
+    },
+    {
+      "name": "decimal-currency-uk",
+      "difficulty": "hard",
+      "recognition": "low",
+      "inferability": "medium",
+      "reasoning": "Decimal Day is remembered mainly in Britain, and the card gives no decade cue."
+    },
+    {
+      "name": "pentagon-papers-ruling",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The ruling is specialist, but 'secret Vietnam War documents' is a strong, explicit anchor."
+    },
+    {
+      "name": "roe-v-wade",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "medium",
+      "reasoning": "Globally famous ruling, kept prominent by later news; clearly modern."
+    },
+    {
+      "name": "fair-trade-coffee-movement",
+      "difficulty": "hard",
+      "recognition": "very-low",
+      "inferability": "medium",
+      "reasoning": "The first fair trade label is obscure; ethical consumer labelling brackets the late twentieth century."
+    },
+    {
+      "name": "rwanda-tribunal-established",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The tribunal is specialist, but the Rwandan genocide is a strong and well-known anchor."
+    },
+    {
+      "name": "truth-reconciliation-commission",
+      "difficulty": "medium",
+      "recognition": "medium",
+      "inferability": "medium",
+      "reasoning": "Broadly known from the Mandela era; 'apartheid-era crimes' brackets the era."
+    },
+    {
+      "name": "welfare-reform-act",
+      "difficulty": "medium",
+      "recognition": "low",
+      "inferability": "high",
+      "reasoning": "The act is specialist, but Clinton anchors the 1990s precisely."
+    },
+    {
+      "name": "marriage-equality-us",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Recent, universally covered ruling with an unmistakable modern anchor."
+    },
+    {
+      "name": "gdpr-takes-effect",
+      "difficulty": "easy",
+      "recognition": "medium",
+      "inferability": "high",
+      "reasoning": "Broadly familiar to anyone who used the internet, and clearly a contemporary data-privacy law."
+    }
+  ]
+}
