@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 10:07:44 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 17:26:53 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.7.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.7.1</guid>
+      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>regrade every event difficulty label against rubric v3 (<a href="https://github.com/Edward-Muir/when/issues/33">#33</a>) (<a href="https://github.com/Edward-Muir/when/commit/9f9196c17017244edc368c0ff11cb5dfe7357cf5">9f9196c</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.7.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.3.0</guid>
       <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add tombstone cards to timeline (<a href="https://github.com/Edward-Muir/when/commit/57366d90333a0505ad0106a5c0fca3c0d17c3a0f">57366d9</a>)</li> <li>Polish failure mode (<a href="https://github.com/Edward-Muir/when/commit/cb909f0e78fbb7d234555617048d2d29de8c1e71">cb909f0</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.2.3</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.2.3</guid>
-      <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>Fix achievment scrolling bug, add achievment modals (<a href="https://github.com/Edward-Muir/when/commit/28ba1aaa89d005182b2191e6fb66170c716894e8">28ba1aa</a>)</li> <li>Remove give away dates in events (<a href="https://github.com/Edward-Muir/when/commit/08816cbef9d504d38eb8aea7d8e4a02aedcbaa58">08816cb</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

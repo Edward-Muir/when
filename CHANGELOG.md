@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.1](https://github.com/Edward-Muir/when/compare/v1.7.0...v1.7.1) (2026-08-13)
+
+
+### Bug Fixes
+
+* regrade every event difficulty label against rubric v3 ([#33](https://github.com/Edward-Muir/when/issues/33)) ([9f9196c](https://github.com/Edward-Muir/when/commit/9f9196c17017244edc368c0ff11cb5dfe7357cf5))
+
 ## [1.7.0](https://github.com/Edward-Muir/when/compare/v1.6.4...v1.7.0) (2026-08-13)
 
 
