@@ -86,5 +86,21 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Paper",
     "_originalCategory": "exploration",
     "_deprecatedAt": "2026-02-22T12:13:39.081Z"
+  },
+  {
+    "name": "windmills-grind-grain",
+    "friendly_name": "Windmills Grind Grain",
+    "year": 1180,
+    "category": "agriculture",
+    "description": "European communities built windmills to grind grain into flour, mechanizing a vital food task.",
+    "difficulty": "hard",
+    "color": "#3b3a33",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/windmills-grind-grain_wv49ya?_a=BAMAMikS0",
+    "_originalCategory": "food",
+    "_deprecatedAt": "2026-08-13T20:25:48.000Z",
+    "_deprecatedReason": "Near-duplicate of windmill-introduction (1185), five years apart with the same subject. Players reported both as wrong-year seconds apart."
   }
 ]
