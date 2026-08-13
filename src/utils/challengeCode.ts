@@ -11,7 +11,8 @@ import { WORDLIST, wordMap } from './wordlists';
  * old space-constrained 3-word code.
  *
  * Bit layout (72 bits total = 6 × 12-bit WORDLIST indices):
- *   offset  0, width  1:  Game mode (0=suddenDeath, 1=freeplay)
+ *   offset  0, width  1:  Reserved — legacy game-mode bit, always written as 0 and
+ *                         ignored on read (see `decodeChallengeCode`)
  *   offset  1, width  3:  Hand size (value - 1, range 0-7)
  *   offset  4, width  3:  Player count (value - 1, range 0-7)
  *   offset  7, width  4:  Difficulties bitmask (easy, medium, hard, very-hard)
@@ -30,7 +31,8 @@ const ONE = BigInt(1);
 const WORD_BITS = BigInt(12);
 const WORD_MASK = BigInt(0xfff);
 
-const OFFSET_MODE = BigInt(0);
+// Bit 0 has no constant because nothing reads or writes it: it is the retired game-mode
+// bit, reserved forever. OFFSET_HAND starting at 1 rather than 0 is what holds it open.
 const OFFSET_HAND = BigInt(1);
 const OFFSET_PLAYER = BigInt(4);
 const OFFSET_DIFF = BigInt(7);
@@ -47,7 +49,6 @@ const MASK_SEED = BigInt(0x1fffff); // 21 bits
 const SEED_RANGE = 2_097_152; // 2^21
 
 export interface ChallengeConfig {
-  mode: 'suddenDeath' | 'freeplay';
   handSize: number; // 1-8
   playerCount: number; // 1-6
   difficulties: Difficulty[];
@@ -73,7 +74,6 @@ function bitmaskToArray<T>(mask: bigint, all: readonly T[]): T[] {
  * Encode a challenge config into a hyphenated word-string token.
  */
 export function encodeChallengeCode(config: ChallengeConfig): string {
-  const modeBit = config.mode === 'freeplay' ? ONE : ZERO;
   const handBits = BigInt((config.handSize - 1) & 0x7);
   const playerBits = BigInt((config.playerCount - 1) & 0x7);
   const diffBits = arrayToBitmask(config.difficulties, ALL_DIFFICULTIES) & MASK_DIFF;
@@ -81,8 +81,8 @@ export function encodeChallengeCode(config: ChallengeConfig): string {
   const catBits = arrayToBitmask(config.categories, ALL_CATEGORIES) & MASK_CATEGORIES;
   const seedBits = BigInt(config.seed & (SEED_RANGE - 1));
 
+  // Bit 0 is left 0 — see the layout note above.
   let packed = ZERO;
-  packed |= modeBit << OFFSET_MODE;
   packed |= handBits << OFFSET_HAND;
   packed |= playerBits << OFFSET_PLAYER;
   packed |= diffBits << OFFSET_DIFF;
@@ -120,10 +120,11 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
     shift += WORD_BITS;
   }
 
-  // Load-bearing despite the mode selector no longer being on screen: roughly half of
-  // all share links ever generated encode this bit as 1, and those links still decode
-  // and launch. Removing the branch would break them. Not dead code.
-  const mode = ((packed >> OFFSET_MODE) & ONE) === ONE ? 'freeplay' : 'suddenDeath';
+  // Bit 0 is deliberately not read. It used to select the removed `freeplay` mode,
+  // and roughly half of all share links ever generated set it to 1 — those links now
+  // launch a normal sudden-death game rather than failing. The bit itself must stay in
+  // the layout: this is a positional format, so reclaiming it would shift every field
+  // after it and misdecode every link ever issued, not just the freeplay ones.
   const handSize = Number((packed >> OFFSET_HAND) & MASK_3) + 1;
   const playerCount = Number((packed >> OFFSET_PLAYER) & MASK_3) + 1;
   const difficulties = bitmaskToArray((packed >> OFFSET_DIFF) & MASK_DIFF, ALL_DIFFICULTIES);
@@ -141,7 +142,7 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
   if (categories.length === 0) return null;
   if (eras.length === 0) return null;
 
-  return { mode, handSize, playerCount, difficulties, categories, eras, seed };
+  return { handSize, playerCount, difficulties, categories, eras, seed };
 }
 
 /**
@@ -155,16 +156,15 @@ export function generateChallengeSeed(): number {
  * Convert a decoded ChallengeConfig into a GameConfig ready for startGame().
  */
 export function challengeConfigToGameConfig(config: ChallengeConfig): GameConfig {
-  const isSuddenDeath = config.mode === 'suddenDeath';
   return {
-    mode: config.mode,
-    totalTurns: isSuddenDeath ? config.handSize : config.handSize,
+    mode: 'suddenDeath',
+    totalTurns: config.handSize,
     selectedDifficulties: config.difficulties,
     selectedCategories: config.categories,
     selectedEras: config.eras,
     playerCount: config.playerCount,
     playerNames: Array.from({ length: config.playerCount }, (_, i) => `Player ${i + 1}`),
-    cardsPerHand: isSuddenDeath ? 5 : config.handSize,
-    suddenDeathHandSize: isSuddenDeath ? config.handSize : 5,
+    cardsPerHand: 5,
+    suddenDeathHandSize: config.handSize,
   };
 }

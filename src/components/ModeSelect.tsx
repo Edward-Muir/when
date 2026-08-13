@@ -206,10 +206,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // but still yields a different game.
   const [savedSettings] = useState(() => getCustomSettings());
 
-  // Play mode settings. The Marathon/Casual, players and hand-size controls are hidden for
-  // now (Marathon is the default), but their setters are still wired so the Share Game
-  // Settings code input can apply a decoded code to all settings.
-  const [isSuddenDeath, setIsSuddenDeath] = useState(savedSettings?.isSuddenDeath ?? true);
+  // Play settings. The players and hand-size controls are hidden for now, but their setters
+  // are still wired so the Share Game Settings code input can apply a decoded code to all
+  // settings.
   const [selectedDifficulties, setSelectedDifficulties] = useState<Difficulty[]>(
     savedSettings?.selectedDifficulties ?? [...DEFAULT_DIFFICULTIES]
   );
@@ -238,7 +237,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // Persist Custom-game settings on every change so they survive a refresh.
   useEffect(() => {
     saveCustomSettings({
-      isSuddenDeath,
       selectedDifficulties,
       selectedCategories,
       selectedEras,
@@ -247,7 +245,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       suddenDeathHandSize,
     });
   }, [
-    isSuddenDeath,
     selectedDifficulties,
     selectedCategories,
     selectedEras,
@@ -275,8 +272,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       selectedEras
     ).length;
     // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
-    const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
-    const minRequired = playerCount * effectiveHandSize + 1 + playerCount * 2;
+    const minRequired = playerCount * suddenDeathHandSize + 1 + playerCount * 2;
     return count >= minRequired;
   }, [
     allEvents,
@@ -284,8 +280,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     selectedCategories,
     selectedEras,
     playerCount,
-    cardsPerHand,
-    isSuddenDeath,
     suddenDeathHandSize,
   ]);
 
@@ -330,10 +324,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       .map((name, i) => name.trim() || `Player ${i + 1}`);
 
     // Generate a shareable challenge code encoding settings + random seed
-    const effectiveHandSize = isSuddenDeath ? suddenDeathHandSize : cardsPerHand;
     const challengeCode = encodeChallengeCode({
-      mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
-      handSize: effectiveHandSize,
+      handSize: suddenDeathHandSize,
       playerCount,
       difficulties: selectedDifficulties,
       categories: selectedCategories,
@@ -342,7 +334,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     });
 
     onStart({
-      mode: isSuddenDeath ? 'suddenDeath' : 'freeplay',
+      mode: 'suddenDeath',
       totalTurns: cardsPerHand,
       selectedDifficulties,
       selectedCategories,
@@ -433,8 +425,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
             </div>
 
             <CustomGameSettings
-              isSuddenDeath={isSuddenDeath}
-              setIsSuddenDeath={setIsSuddenDeath}
               selectedDifficulties={selectedDifficulties}
               setSelectedDifficulties={setSelectedDifficulties}
               selectedCategories={selectedCategories}
@@ -443,8 +433,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               setSelectedEras={setSelectedEras}
               playerCount={playerCount}
               onPlayerCountChange={handlePlayerCountChange}
-              cardsPerHand={cardsPerHand}
-              setCardsPerHand={setCardsPerHand}
               suddenDeathHandSize={suddenDeathHandSize}
               setSuddenDeathHandSize={setSuddenDeathHandSize}
               onPlay={handlePlayStart}

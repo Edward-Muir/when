@@ -63,7 +63,16 @@ export type Era =
   | 'coldWar'
   | 'modern';
 
-export type GameMode = 'daily' | 'suddenDeath' | 'freeplay';
+/**
+ * Both modes run the same sudden-death mechanics (draw on correct, hand shrinks on a
+ * miss, game over when the hand empties); they differ only in how the deck is built.
+ * `daily` is seeded from the calendar date, `suddenDeath` from the Custom page's filters.
+ *
+ * There is no mode picker in the UI, and no third rule-set: a `freeplay` mode (empty
+ * your hand to win, draw a replacement on a miss) existed until it was removed, having
+ * become unreachable. Legacy share links still carry its bit — see `challengeCode.ts`.
+ */
+export type GameMode = 'daily' | 'suddenDeath';
 
 export interface EraDefinition {
   id: Era;

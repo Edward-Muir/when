@@ -12,7 +12,7 @@ import {
   MeasuringStrategy,
 } from '@dnd-kit/core';
 import { JsonCvPointerSensor, JsonCvTouchSensor } from '../utils/dndSensors';
-import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData, GameMode } from '../types';
+import { WhenGameState, PlacementResult, HistoricalEvent, GamePopupData } from '../types';
 import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
@@ -67,9 +67,8 @@ const HomeConfirmModal: React.FC<{
 );
 
 const FirstTimeRulesModal: React.FC<{
-  gameMode: GameMode;
   onDismiss: () => void;
-}> = ({ gameMode, onDismiss }) => (
+}> = ({ onDismiss }) => (
   <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" onClick={onDismiss}>
     <div className="absolute inset-0 bg-black/25" />
     <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm">
@@ -77,7 +76,7 @@ const FirstTimeRulesModal: React.FC<{
         <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
       </div>
       <div className="p-4">
-        <GameRules gameMode={gameMode} />
+        <GameRules />
         <button
           onClick={onDismiss}
           className="w-full mt-4 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
@@ -446,7 +445,6 @@ const Game: React.FC<GameProps> = ({
 
           {showFirstTimeRules && state.gameMode && (
             <FirstTimeRulesModal
-              gameMode={state.gameMode}
               onDismiss={() => {
                 markModePlayed(state.gameMode!);
                 setShowFirstTimeRules(false);

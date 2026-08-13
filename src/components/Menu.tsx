@@ -184,32 +184,19 @@ const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario
   }
 };
 
-// Game rules component (moved from TopBar)
-export const GameRules: React.FC<{ gameMode: GameMode }> = ({ gameMode }) => {
+// Game rules component (moved from TopBar). Both game modes share one rule-set, so
+// these are not mode-specific.
+export const GameRules: React.FC = () => {
   const textClass = 'text-sm text-text font-body leading-relaxed';
-
-  const dragRule = (
-    <p className={textClass}>
-      Drag each card onto the timeline where you think it happened — dates are hidden until you
-      place it.
-    </p>
-  );
-
-  if (gameMode === 'suddenDeath' || gameMode === 'daily') {
-    return (
-      <div className="text-left space-y-3">
-        {dragRule}
-        <p className={textClass}>Build the longest timeline!</p>
-        <p className={textClass}>Draw a new card if you place correctly.</p>
-      </div>
-    );
-  }
 
   return (
     <div className="text-left space-y-3">
-      {dragRule}
-      <p className={textClass}>Place all your cards in the timeline to win.</p>
-      <p className={textClass}>Draw a card if you place incorrectly.</p>
+      <p className={textClass}>
+        Drag each card onto the timeline where you think it happened — dates are hidden until you
+        place it.
+      </p>
+      <p className={textClass}>Build the longest timeline!</p>
+      <p className={textClass}>Draw a new card if you place correctly.</p>
     </div>
   );
 };
@@ -454,7 +441,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                 <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
               </div>
               <div className="p-4">
-                <GameRules gameMode={gameMode} />
+                <GameRules />
               </div>
             </motion.div>
           </div>

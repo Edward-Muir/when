@@ -256,22 +256,6 @@ input,
   animation: vignettePulse var(--anim-vignette-dur, 0.9s) ease-out;
 }
 
-/* Feedback banner animation - snappy slide + fade */
-@keyframes bannerSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-12px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.animate-banner-in {
-  animation: bannerSlideIn 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
-}
-
 /* Drag and drop styles */
 .dragging-card {
   box-shadow:

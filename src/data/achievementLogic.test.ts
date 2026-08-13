@@ -19,15 +19,14 @@ function makeSnapshot(
 ): StatsSnapshot {
   return {
     lifetime: {
-      gamesPlayed: { daily: 0, suddenDeath: 0, freeplay: 0 },
+      gamesPlayed: { daily: 0, suddenDeath: 0 },
       eventsPlacedCorrect: 0,
       eventsPlacedWrong: 0,
-      timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
-      longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
+      timelineLengthSum: { daily: 0, suddenDeath: 0 },
+      longestTimeline: { daily: 0, suddenDeath: 0 },
       bestInGameStreakEver: 0,
       bestCustomStreakEver: 0,
       bestGameCorrectEver: 0,
-      flawlessFreeplayGames: 0,
       firstPlayedDate: '',
       lastPlayedDate: '',
       ...parts.lifetime,
@@ -71,7 +70,7 @@ const EMPTY = new Map<string, HistoricalEvent>();
 describe('milestone / volume / streak / cadence / single-game thresholds', () => {
   it('milestone reads total games across modes', () => {
     const s = makeSnapshot({
-      lifetime: { gamesPlayed: { daily: 5, suddenDeath: 3, freeplay: 2 } },
+      lifetime: { gamesPlayed: { daily: 5, suddenDeath: 5 } },
     });
     expect(ACHIEVEMENT_TESTS['01'](s, EMPTY)).toBe(true); // >= 1
     expect(ACHIEVEMENT_TESTS['02'](s, EMPTY)).toBe(true); // >= 10

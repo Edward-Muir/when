@@ -17,8 +17,8 @@ import { HistoricalEvent } from '../types';
  */
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
-// A game reaches at most 13 cards (seed + 5-card hand + one draw per turn over 7 turns);
-// mirrors DAILY_SPOILER_DEPTH in App.tsx.
+// Mirrors DAILY_SPOILER_DEPTH in App.tsx — a heuristic sampling budget for the intro
+// animation, not a bound on game length (sudden-death draws have no turn cap).
 const SPOILER_DEPTH = 15;
 const DAYS = 120;
 const ROTATIONS = 3;

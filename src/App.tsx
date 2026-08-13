@@ -17,8 +17,12 @@ import ModeSelect from './components/ModeSelect';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
 
-// How deep into today's daily deck a single game can reach: the starting timeline card,
-// a 5-card hand, and one draw per turn over 7 turns — 13, rounded up for headroom.
+// How deep into today's daily deck the intro animation may sample without spoiling cards
+// the player is about to see. This is a heuristic budget, NOT a hard bound on game length:
+// the daily runs sudden-death mechanics, so a correct placement draws a replacement and
+// there is no turn cap — a strong run can consume far more than 15 cards. 15 covers the
+// opening (seed + 5-card hand) plus a typical run's early draws, which is the window where
+// a spoiler would actually be noticed.
 const DAILY_SPOILER_DEPTH = 15;
 
 interface AppProps {

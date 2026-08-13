@@ -83,9 +83,7 @@ function epochBands(events: HistoricalEvent[]): [number, number, number, number,
 }
 
 const totalGames = (s: StatsSnapshot): number =>
-  s.lifetime.gamesPlayed.daily +
-  s.lifetime.gamesPlayed.suddenDeath +
-  s.lifetime.gamesPlayed.freeplay;
+  s.lifetime.gamesPlayed.daily + s.lifetime.gamesPlayed.suddenDeath;
 
 // --- The test table ---
 

@@ -71,7 +71,6 @@ export function hasPlayedToday(): boolean {
 interface ModesPlayed {
   daily?: boolean;
   suddenDeath?: boolean;
-  freeplay?: boolean;
 }
 
 const MODES_PLAYED_KEY = 'when-modes-played';
@@ -82,8 +81,6 @@ function getModePlayed(data: ModesPlayed, mode: GameMode): boolean {
       return data.daily === true;
     case 'suddenDeath':
       return data.suddenDeath === true;
-    case 'freeplay':
-      return data.freeplay === true;
   }
 }
 
@@ -107,8 +104,6 @@ function setModePlayed(data: ModesPlayed, mode: GameMode): ModesPlayed {
       return { ...data, daily: true };
     case 'suddenDeath':
       return { ...data, suddenDeath: true };
-    case 'freeplay':
-      return { ...data, freeplay: true };
   }
 }
 
@@ -444,7 +439,6 @@ export function resetReminderPriming(): void {
  * fresh per play, so reloading keeps the settings but still produces a different game.
  */
 export interface CustomSettings {
-  isSuddenDeath: boolean;
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];
@@ -480,9 +474,10 @@ export function getCustomSettings(): CustomSettings | null {
 
     const parsed = JSON.parse(stored) as Partial<CustomSettings>;
 
-    // Validate: filters must be non-empty arrays, numbers must be finite, mode a boolean.
+    // Validate: filters must be non-empty arrays and numbers finite. A retired
+    // `isSuddenDeath` key may still be present in older records; it is simply ignored,
+    // deliberately not validated, so an old record still restores rather than resetting.
     if (
-      typeof parsed.isSuddenDeath !== 'boolean' ||
       !isNonEmptyArray(parsed.selectedDifficulties) ||
       !isNonEmptyArray(parsed.selectedCategories) ||
       !isNonEmptyArray(parsed.selectedEras) ||
