@@ -1,174 +1,130 @@
-# Difficulty Grading Process
+# Difficulty Grading Process v3
 
-This document describes how to use parallel sub-agents to grade the difficulty of historical events in the "When" timeline game.
+How to regrade the `difficulty` label across the catalogue with parallel agents.
 
-## Overview
+Read [difficulty-grading-rubric.md](difficulty-grading-rubric.md) first — it defines what is being graded and, just as importantly, what is _not_ (timeline crowding is computed, not graded).
 
-We have ~2000 events across 6 categories. To grade them efficiently, we spin up 6 parallel agents (one per category) that each grade their subset of events using the rubric defined in [difficulty-grading-rubric.md](./difficulty-grading-rubric.md).
+## Why the label matters
 
-## Prerequisites
+`src/utils/difficultyScore.ts` scores every event as `C = 0.6 · recognition(label) + 0.4 · crowding`, sorts the catalogue into four bands by the global quartiles of `C`, and `src/utils/deckBuilder.ts` composes the opening 24 cards of every deck from those bands. A mis-graded label does not just mislabel one card; it moves that card into the wrong band, and a whole mis-graded category distorts the quartiles for everyone.
 
-1. **Wikipedia pageviews CSV** (optional but helpful): Located at `scripts/difficulty/output/wikipedia_pageviews.csv`
-   - Contains event names and their Wikipedia pageview counts
-   - Used as a secondary signal for recognition/familiarity
+See [../gameplay-feel/session-2026-08-13-deck-difficulty-ramp.md](../gameplay-feel/session-2026-08-13-deck-difficulty-ramp.md) for how the deck is built.
 
-2. **Event JSON files**: Located at `public/events/*.json`
-   - One file per category: conflict.json, cultural.json, diplomatic.json, disasters.json, exploration.json, infrastructure.json
+## Tooling
 
-3. **Output directory**: `scripts/difficulty/output/`
-   - Agents write their graded results here as `graded_<category>.json`
+Everything lives in `scripts/difficulty/grade/`. It has no dependencies beyond the standard library.
 
-## Step 1: Prepare the Grading Prompt
+| Script               | Role                                                                                                                                   |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `catalogue.py`       | Shared catalogue loading and a line-by-line port of `difficultyScore.ts`. If you change the scoring in TypeScript, change it here too. |
+| `extract_batches.py` | Splits the catalogue into per-category batch files under `batches/`, one per agent.                                                    |
+| `apply.py`           | Validates graded output and writes it back into `public/events/*.json`.                                                                |
+| `band_report.py`     | Prints the bands the game will compute. This is the acceptance gate.                                                                   |
 
-Each agent receives:
+> The pre-v3 `scripts/difficulty/apply_grades.py` was retired. It hardcoded six categories and silently ignored every other graded file, which is how a tranche of events ended up graded by nobody; and it wrote the `difficulty` string through with no enum check.
 
-- The full rubric from difficulty-grading-rubric.md
-- The category-specific events from the JSON file
-- Wikipedia pageviews data for reference
-- Target distribution: ~15-20% easy, ~35% medium, ~35% hard, ~10% very-hard
+## Workflow
 
-## Step 2: Launch Parallel Agents
-
-Use Claude Code's Task tool to launch 6 agents simultaneously. Each agent:
-
-1. Reads its category's event JSON file
-2. Reads the Wikipedia pageviews CSV
-3. Grades each event using the rubric:
-   - Check recognition (would people know this?)
-   - **Read the description** for temporal anchors
-   - Assess placeability (can you reason out the era?)
-   - Use pageviews as tiebreaker
-4. Outputs a JSON file with the grades
-
-### Example Agent Prompt
-
-```
-You are grading historical events for difficulty in a timeline game.
-
-**Category**: conflict
-**Input file**: public/events/conflict.json
-**Output file**: scripts/difficulty/output/graded_conflict.json
-**Pageviews reference**: scripts/difficulty/output/wikipedia_pageviews.csv
-
-## Rubric Summary
-[Include key points from difficulty-grading-rubric.md]
-
-## Your Task
-1. Read all events from the input file
-2. For each event, determine difficulty (easy/medium/hard/very-hard):
-   - Consider name recognition
-   - **READ THE DESCRIPTION** - look for temporal anchors
-   - Assess if a player could reason out the approximate era
-   - Check pageviews as secondary signal
-3. Write output JSON with format:
-   [
-     {"name": "event-name", "difficulty": "medium", "reasoning": "brief explanation"},
-     ...
-   ]
-
-## Target Distribution
-- easy: ~15-20%
-- medium: ~35%
-- hard: ~35%
-- very-hard: ~10%
-```
-
-### Launching All 6 Agents
-
-In Claude Code, use multiple Task tool calls in a single message to run them in parallel:
-
-```
-Task 1: subagent_type=general-purpose, prompt="Grade conflict events..."
-Task 2: subagent_type=general-purpose, prompt="Grade cultural events..."
-Task 3: subagent_type=general-purpose, prompt="Grade diplomatic events..."
-Task 4: subagent_type=general-purpose, prompt="Grade disasters events..."
-Task 5: subagent_type=general-purpose, prompt="Grade exploration events..."
-Task 6: subagent_type=general-purpose, prompt="Grade infrastructure events..."
-```
-
-All 6 agents will run concurrently and write their output files.
-
-## Step 3: Apply Grades to Event Files
-
-Once all agents complete, run the apply script:
+### 1. Record the baseline
 
 ```bash
-# Preview changes first
-python3 scripts/difficulty/apply_grades.py --dry-run
-
-# Apply changes
-python3 scripts/difficulty/apply_grades.py
+npm test -- --watchAll=false   # must be fully green before you start
+python3 scripts/difficulty/grade/band_report.py --save /tmp/before.json
 ```
 
-The script:
+Note the **min band-0 pool** it prints. That is the smallest warm-up pool any themed day draws its opening cards from, and it must not go down.
 
-1. Reads all `graded_*.json` files from `scripts/difficulty/output/`
-2. Updates the corresponding event JSON files in `public/events/`
-3. Prints a report showing distribution changes
-
-## Step 4: Verify
+### 2. Build the batches
 
 ```bash
-npm run typecheck      # Ensure no type errors
-npm run find-duplicates # Check JSON integrity
+python3 scripts/difficulty/grade/extract_batches.py
 ```
 
-## File Structure
+Batching is **by category, not by file** — the category is what the game filters a themed day on, and it is independent of which JSON file an event lives in. Measured, calibrating per file collapses `trade`'s band-0 pool from 30 to 17; per category it rises to 33.
 
-```
-scripts/difficulty/
-├── output/
-│   ├── wikipedia_pageviews.csv    # Pageview data (input)
-│   ├── graded_conflict.json       # Agent output
-│   ├── graded_cultural.json       # Agent output
-│   ├── graded_diplomatic.json     # Agent output
-│   ├── graded_disasters.json      # Agent output
-│   ├── graded_exploration.json    # Agent output
-│   └── graded_infrastructure.json # Agent output
-└── apply_grades.py                # Script to apply grades
+Categories over 250 events are split round-robin by year rank, so each part carries the same spread of eras and the same target applies to all of them.
 
-public/events/
-├── conflict.json      # Updated with new difficulties
-├── cultural.json
-├── diplomatic.json
-├── disasters.json
-├── exploration.json
-└── infrastructure.json
-```
+Batch files carry only `name`, `friendly_name`, `year`, `category`, `description` and `current_difficulty`. Crowding and `wikipedia_views` are deliberately withheld — see the rubric for why.
 
-## Output JSON Format
+### 3. Launch the agents
 
-Each agent outputs a JSON array:
+One agent per batch, in waves of five or six. Each agent gets the rubric, its batch file path, and the target distribution. Each writes:
+
+`scripts/difficulty/grade/output/graded_<batch>.json`
 
 ```json
-[
-  {
-    "name": "wwi-start",
-    "difficulty": "easy",
-    "reasoning": "Universally taught, everyone knows 1914"
-  },
-  {
-    "name": "social-war-rome",
-    "difficulty": "hard",
-    "reasoning": "Low recognition but description mentions Rome = ancient anchor"
-  }
-]
+{
+  "batch": "trade",
+  "category": "trade",
+  "graded": [
+    {
+      "name": "silk-road-opens",
+      "difficulty": "easy",
+      "recognition": "high",
+      "inferability": "high",
+      "reasoning": "Universally known; 'Silk Road' anchors to antiquity."
+    }
+  ]
+}
 ```
 
-## Tips for Better Results
+Every event in the batch needs an entry. Every entry whose label _differs_ from `current_difficulty` needs a non-empty `reasoning`; unchanged labels do not.
 
-1. **Emphasize description reading**: The most common error is grading based on name recognition alone without considering description clues.
+**Target distribution: 20% easy / 35% medium / 35% hard / 10% very-hard**, per category, as a calibration anchor rather than a quota. Agents report what they actually produced and flag any category that could not honestly reach it.
 
-2. **Provide concrete examples**: Include 3-5 examples of each difficulty level in the prompt.
+### 4. Apply
 
-3. **Set clear targets**: Tell agents the target distribution percentages.
+```bash
+python3 scripts/difficulty/grade/apply.py --dry-run   # validate + report, writes nothing
+python3 scripts/difficulty/grade/apply.py
+```
 
-4. **Review edge cases**: After grading, spot-check events that seem mis-graded and adjust manually or re-run specific categories.
+Validation fails the whole run rather than warning:
 
-## Re-running Specific Categories
+- `difficulty` must be exactly one of `easy` / `medium` / `hard` / `very-hard`
+- every graded `name` must exist in the catalogue
+- no `name` may be graded twice across batch files
+- every event in every batch file must appear in the output
+- every changed label must carry a non-empty `reasoning`
+- re-serialising each event file must be byte-identical before the change, so the diff can only contain `difficulty` lines
 
-If a category needs re-grading:
+### 5. Verify
 
-1. Delete or rename the old output: `mv graded_conflict.json graded_conflict_v1.json`
-2. Launch a single agent for that category with updated instructions
-3. Re-run `apply_grades.py`
+```bash
+python3 scripts/difficulty/grade/band_report.py --compare /tmp/before.json
+npm test -- --watchAll=false
+npm run typecheck && npm run lint
+git diff --stat public/events/
+```
+
+**Run tests with `npm test`, never `npx react-scripts test`** — the npm script sets `TZ=America/Los_Angeles`, and without it five date tests fail spuriously and look like real breakage.
+
+Acceptance gates, all enforced by `band_report.py`:
+
+| Gate                       | Why                                                                                                                                                                                                       |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| min band-0 pool ≥ 27       | The warm-up pool for the thinnest themed day. `deckBuilder.test.ts` leans on it via the thin-pool cap.                                                                                                    |
+| every band ≥ 150 cards     | `deckBuilder.test.ts` asserts `floor(bandSize / SPREAD) > RAMP_WINDOW`.                                                                                                                                   |
+| every band share in 15–35% | `difficultyScore.test.ts` asserts it. Structurally safe — bands are index quartiles and the `log1p` density term breaks ties — so a failure here means the data is wrong, not the bound. Do not widen it. |
+
+`deckBuilder.test.ts`'s ramp and foothold assertions are the real signal for whether the regrade improved the game rather than just moving labels around. If those degrade, the grading is wrong.
+
+### 6. Reconcile
+
+If a category's band-0 pool is under the floor, re-run that category alone and ask whether genuinely recognisable cards were over-graded. The categories at risk are the intrinsically modern and dense ones, where crowding saturates and the label does all the work: `trade`, `art`, `medicine`, `warfare`, `science`.
+
+Never invent easy labels to clear the gate. If a category honestly cannot reach the floor, record that in the PR body.
+
+## Re-running a single category
+
+```bash
+mv scripts/difficulty/grade/output/graded_trade.json /tmp/graded_trade_v1.json
+# launch one agent for batches/trade.json
+python3 scripts/difficulty/grade/apply.py --dry-run
+```
+
+`apply.py` globs `output/graded_*.json`, so moving a file out of that directory de-registers it.
+
+## Shipping
+
+A regrade is a `fix:` — it changes what players feel in the ramp. That title auto-triggers the Release Action on merge to `main` and deploys to production immediately, so merge deliberately.
