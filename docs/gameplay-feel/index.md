@@ -2,18 +2,38 @@
 
 Deck composition, tombstones, streak feedback, transitions, and the colour system.
 
-## Repo-wide trap: Tailwind opacity modifiers are silent no-ops on our colour tokens
+## Repo-wide trap: Tailwind opacity modifiers on our colour tokens compile to nothing
 
 `text-text-muted/60`, `bg-accent/20`, `border-accent-secondary/50` — **none of these do
 anything.** The tokens in `tailwind.config.js` are plain `var(--color-x)` values with no
-`<alpha-value>` channel, so Tailwind cannot apply the alpha modifier and emits the flat
-colour. There is no error; the design just silently doesn't happen.
+`<alpha-value>` channel, so Tailwind's `parseColor` returns `null` and it **drops the whole
+declaration**. The utility class is _absent from the built CSS_ — it does not fall back to the
+flat colour, as this doc previously claimed. There is no error, no warning.
 
-Use `opacity-60` on the element, or `color-mix(in srgb, var(--color-accent) 60%, transparent)`
-in CSS. Standard Tailwind colours (`bg-black/50`, `text-white/70`) are unaffected and do work.
+That distinction matters, because the failure is louder than "wrong colour": an element whose
+only background is `bg-surface/60` renders **fully transparent**. That is exactly how the
+game-start loading card ended up with its heading sitting on unobscured card artwork
+(fixed 2026-08 — see below).
 
-**There are ~46 of these in `src/` today** — they are latent, not urgent, but don't add more,
-and don't be surprised when an existing one has no visual effect.
+```
+.bg-bg{background-color:var(--color-bg)}   ← emitted
+.bg-bg\/85                                 ← ABSENT from the stylesheet
+.bg-black\/50{background-color:#00000080}  ← emitted (hex parses fine)
+```
+
+Use `opacity-60` on the element, or a `color-mix(in srgb, var(--color-accent) 60%, transparent)`
+utility in `index.css` — `.bg-player-row` and `.scrim-band` are the two live precedents.
+Standard Tailwind colours (`bg-black/50`, `text-white/70`) are unaffected and do work.
+
+**There are ~66 of these in `src/` today** — they are latent, not urgent, but don't add more,
+and don't be surprised when an existing one has no visual effect. To recount:
+
+```bash
+grep -rEoh '\b(bg|text|border|from|via|to|ring|fill|stroke)-(bg|surface|text|text-muted|border|accent|accent-secondary|success|error)/[0-9]+' src/ --include='*.tsx' | wc -l
+```
+
+To check a specific one really landed, grep the build output rather than trusting the source:
+`npm run build && grep -o '\.scrim-band{[^}]*}' build/static/css/*.css`.
 
 ## Deck composition (2026-08-13)
 
@@ -144,10 +164,37 @@ palette, edit the two blocks in `index.css` and nothing else.
 
 ## Game start transition
 
-3 s before handing off to `playing`, over a 6 s linear scroll of 20 random events through 66%
+3 s before handing off to `playing`, over a 7.5 s linear scroll of 20 random events through 66%
 of their height, reusing the real `TimelineEvent` component. Reduced-motion users get a static
 screen that auto-completes in 500 ms. Constants live at the top of `GameStartTransition.tsx`.
 Noted in an old design review as an unskippable fake load — still true.
+
+**`SCROLL_DURATION` sets the scroll _speed_, not how long the transition lasts.** The component
+unmounts at `TOTAL_DURATION` (3 s), so only the first ~40% of the 7.5 s animation is ever seen —
+raising it slows the drift, it does not make the transition longer. `SCROLL_PERCENTAGE` (0.66)
+is likewise a distance, not a duration. To change how long players wait, edit `TOTAL_DURATION`.
+
+The "Loading events from across time…" overlay is **not a card** — it deliberately has no
+panel, border or shadow. It is a full-width band of `backdrop-blur-xl` plus a 95% `--color-bg`
+wash (`.scrim-band` in `index.css`), **masked with a vertical linear-gradient** so it fades to
+nothing above and below. The scrolling timeline therefore stays sharp at the top and bottom of
+the screen and dissolves only behind the title, leaving no edge anywhere to read as a box.
+
+Three things are load-bearing, and a "simplification" will break one of them:
+
+- **The mask is what makes it pretty.** An unmasked full-screen frost flattens the whole
+  timeline into grey mush and throws away the artwork the transition exists to show off.
+- **The wash must be `--color-bg`, not black.** A dark scrim reads as a grey smudge over the
+  light page background outside the cards. A bg-coloured one vanishes against the page and
+  only bites where the artwork is.
+- **`backdrop-blur-xl` is not decoration.** The 5% of artwork coming through the wash is only
+  an unreadable colour cast once blurred; drop the blur and card text becomes legible again
+  right behind the serif.
+
+Earlier iterations that were tried and rejected: a bordered frosted card (reads as a modal
+dialog interrupting the scene), a full-bleed band with hard gold rules, a minimal pill with a
+spinner (loses the serif entirely), an unmasked full-screen frost, and a radial/elliptical
+mask (the rectangular band was preferred).
 
 ## Elastic draggable cards — research only, nothing built
 

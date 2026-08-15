@@ -11,7 +11,7 @@ interface GameStartTransitionProps {
 
 // Animation timing constants
 const TOTAL_DURATION = 3000; // ms before auto-complete
-const SCROLL_DURATION = 6.0; // seconds for scroll animation (slower)
+const SCROLL_DURATION = 7.5; // seconds for scroll animation (slower)
 const SCROLL_PERCENTAGE = 0.66; // Scroll through 66% of cards (leaving ~8 visible at end)
 
 // Approximate height per timeline event (matches TimelineEvent padding/sizing)
@@ -68,13 +68,11 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        className="min-h-dvh min-h-screen-safe flex items-center justify-center bg-bg transition-colors"
+        className="min-h-dvh min-h-screen-safe flex items-center justify-center bg-bg transition-colors px-10"
       >
-        <div className="bg-bg/90 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border">
-          <h1 className="text-text font-display text-xl text-center">
-            Loading events from across time...
-          </h1>
-        </div>
+        <h1 className="text-text font-display text-[1.5rem] text-center leading-[1.4] max-w-[280px]">
+          Loading events from across time...
+        </h1>
       </motion.div>
     );
   }
@@ -113,14 +111,21 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
         </motion.div>
       </div>
 
-      {/* Fade overlays */}
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
+      {/* Fade overlays. No `via-` stop: an alpha modifier on a theme token compiles to nothing
+          at all (see the note on .scrim-band in index.css), so the old `via-bg/90` was
+          already dead weight and these have always rendered as a two-stop gradient. */}
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg to-transparent z-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg to-transparent z-20 pointer-events-none" />
 
-      {/* Semi-transparent overlay with text + animated ellipsis */}
-      <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-        <div className="bg-bg/85 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border/50">
-          <h1 className="text-text font-display text-xl text-center">
+      {/* Loading scrim. A band of blur + wash masked to fade out above and below, so the
+          scrolling timeline stays sharp at the edges of the screen and dissolves only
+          behind the title — no card, no border, no edge to catch the eye. The blur is
+          load-bearing: without it the 5% of artwork showing through the wash stays
+          legible and fights the serif. */}
+      <div className="absolute inset-0 z-30 pointer-events-none">
+        <div className="absolute inset-0 backdrop-blur-xl scrim-band" />
+        <div className="absolute inset-0 flex items-center justify-center px-10">
+          <h1 className="text-text font-display text-[1.5rem] text-center leading-[1.4] max-w-[280px]">
             Loading events from across time
             <LoadingEllipsis />
           </h1>

@@ -82,14 +82,48 @@ body {
 }
 
 /* Player-row highlight.
-   Deliberately NOT `bg-accent/20` — opacity modifiers on the theme tokens are silent
-   no-ops in this project (the tokens are plain `var(--color-x)` with no <alpha-value>
-   channel), so that expression renders SOLID accent. It also has to be fully opaque
-   rather than translucent: the leaderboard pins the player's own row with
+   Deliberately NOT `bg-accent/20` — opacity modifiers on the theme tokens don't work in this
+   project. The tokens are plain `var(--color-x)` values with no <alpha-value> channel, so
+   Tailwind can't parse them as colours and DROPS THE WHOLE DECLARATION: `.bg-accent\/20` is
+   absent from the compiled CSS, leaving the element with no background at all. It also has to
+   be fully opaque rather than translucent: the leaderboard pins the player's own row with
    `position: sticky`, and a see-through sticky row shows the list scrolling underneath. */
 @layer utilities {
   .bg-player-row {
     background-color: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface));
+  }
+}
+
+/* Game-start loading scrim (GameStartTransition.tsx). A full-width band of background
+   wash that is masked so it fades to nothing above and below: the intro timeline stays
+   sharp at the top and bottom of the screen and dissolves only where the title sits, so
+   the overlay has no edge, border or box to look wrong.
+
+   NOT `bg-bg/95` — see the note above: an alpha modifier on a theme token compiles to
+   nothing at all, which is how this overlay came to be fully transparent in the first
+   place. color-mix is the only way to get real translucency on a theme token.
+
+   Pairs with `backdrop-blur-xl`, and needs it: the 5% of artwork that shows through the
+   wash is only an unreadable colour cast once it has been blurred.
+
+   The two mask stops are the whole design, and they trade off against each other. 106px is
+   where the band reaches zero — pull it in and the neighbouring cards start ghosting through
+   the fade. 43px is where it reaches full opacity, sitting just outside the two-line title's
+   measured ~34px half-height, so the whole title sits in the fully-opaque core with a little
+   margin. Widening the 43→106 ramp makes the band softer and less slab-like; a 30/100 pass
+   was tried and reverted for being too thin. */
+@layer utilities {
+  .scrim-band {
+    --scrim-band-mask: linear-gradient(
+      to bottom,
+      transparent calc(50% - 106px),
+      #000 calc(50% - 43px),
+      #000 calc(50% + 43px),
+      transparent calc(50% + 106px)
+    );
+    background-color: color-mix(in srgb, var(--color-bg) 95%, transparent);
+    -webkit-mask-image: var(--scrim-band-mask);
+    mask-image: var(--scrim-band-mask);
   }
 }
 
