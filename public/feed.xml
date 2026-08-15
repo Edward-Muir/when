@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 21:35:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 21:46:29 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.11.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.11.0</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>make the share the finale of the end-of-game sequence (<a href="https://github.com/Edward-Muir/when/issues/41">#41</a>) (<a href="https://github.com/Edward-Muir/when/commit/b40a37fec6fc1bfef5b634ebdd41eb41ef6990f0">b40a37f</a>), closes <a href="https://github.com/Edward-Muir/when/issues/49">#49</a></li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.10.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.6.4</guid>
       <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>key the puzzle day on the player's local date (<a href="https://github.com/Edward-Muir/when/issues/31">#31</a>) (<a href="https://github.com/Edward-Muir/when/commit/34a78add4893188ea46725a1416e27f8b95e8cc5">34a78ad</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.6.3</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.6.3</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Performance</h3><br/><br/><ul><li>bound the intro animation to a weekly image pool (<a href="https://github.com/Edward-Muir/when/issues/30">#30</a>) (<a href="https://github.com/Edward-Muir/when/commit/7f0a9112895dc6c706885fae78e1921bdbf3af49">7f0a911</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

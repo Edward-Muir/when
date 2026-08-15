@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.11.0](https://github.com/Edward-Muir/when/compare/v1.10.0...v1.11.0) (2026-08-15)
+
+
+### Features
+
+* make the share the finale of the end-of-game sequence ([#41](https://github.com/Edward-Muir/when/issues/41)) ([b40a37f](https://github.com/Edward-Muir/when/commit/b40a37fec6fc1bfef5b634ebdd41eb41ef6990f0)), closes [#49](https://github.com/Edward-Muir/when/issues/49)
+
 ## [1.10.0](https://github.com/Edward-Muir/when/compare/v1.9.0...v1.10.0) (2026-08-15)
 
 
