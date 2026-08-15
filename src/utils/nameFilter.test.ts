@@ -107,6 +107,60 @@ describe('isNameAllowed', () => {
     expect(isNameAllowed('Pakistan')).toBe(true);
     expect(isNameAllowed('Spice Trader')).toBe(true);
   });
+
+  // "Numb Digger" reached #1 on the live board. It is a spoonerism — swap the leading
+  // consonants and it reads as a slur — so every character is innocent and no transformer
+  // can see it. First row is the name itself and the spellings it folds onto; second row is
+  // the carrier family, which is why a blocklist of one name was not enough.
+  it.each([
+    'Numb Digger',
+    'numb digger',
+    'NumbDigger',
+    'Numb-Digger',
+    'Numb  Digger',
+    'Numb D1gger',
+    'Numb Diqqer',
+    'Numb Diggerrr',
+  ])('blocks the known troll name %p', (name) => {
+    expect(isNameAllowed(normalizeDisplayName(name))).toBe(false);
+  });
+
+  it.each([
+    'Nice Digger',
+    'New Digger',
+    'Noble Digger',
+    'Numb Diggers',
+    'Numb Bigger',
+    'Nasty Trigger',
+    'Nice Jigger',
+    'N Digger',
+  ])('blocks the onset-swap variant %p', (name) => {
+    expect(isNameAllowed(normalizeDisplayName(name))).toBe(false);
+  });
+
+  // The guard rail, and the more important half. `tiger` is the only innocent word in the
+  // app's vocabulary carrying the -iger rime; `Noble Tiger` is a bot name, so flagging it
+  // would mean safeDisplayName could hand out a replacement that is itself blocked. `Numb`
+  // and `Digger` alone must pass — whole-name matching is the safety property.
+  it.each([
+    'Noble Tiger',
+    'Nice Tiger',
+    'Numb Tiger',
+    'Tiny Tiger',
+    'Numb',
+    'Digger',
+    'Nigeria',
+    'Niger Delta',
+    'Clever Leopard',
+    'Silver Badger',
+    'Fancy Duck',
+    'Golden Fox',
+    'Clever Condor',
+    'Calm Loon',
+    'Casual Pike',
+  ])('does not flag the fold-adjacent name %p', (name) => {
+    expect(isNameAllowed(normalizeDisplayName(name))).toBe(true);
+  });
 });
 
 describe('safeDisplayName', () => {

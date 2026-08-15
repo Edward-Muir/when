@@ -40,7 +40,7 @@ function samplePoisson(lambda: number, random: () => number): number {
 }
 
 // Name dictionaries for bot names
-const ADJECTIVES = [
+export const ADJECTIVES = [
   'Brave',
   'Swift',
   'Clever',
@@ -78,7 +78,7 @@ const ADJECTIVES = [
   'Jade',
 ];
 
-const ANIMALS = [
+export const ANIMALS = [
   'Penguin',
   'Tiger',
   'Fox',
