@@ -94,15 +94,29 @@ body {
   }
 }
 
-/* Frosted panel for the game-start loading card (GameStartTransition.tsx), which floats over
-   the scrolling intro timeline. NOT `bg-surface/88` — see the note above: that emits nothing
-   at all, which is precisely how this card ended up transparent, with the heading sitting
-   directly on top of blurred card artwork. color-mix is the only way to get real translucency
-   on a theme token. Pairs with `backdrop-blur-xl`; the 12% that shows through reads as a
-   colour wash rather than legible detail. */
+/* Game-start loading scrim (GameStartTransition.tsx). A full-width band of background
+   wash that is masked so it fades to nothing above and below: the intro timeline stays
+   sharp at the top and bottom of the screen and dissolves only where the title sits, so
+   the overlay has no edge, border or box to look wrong.
+
+   NOT `bg-bg/95` — see the note above: an alpha modifier on a theme token compiles to
+   nothing at all, which is how this overlay came to be fully transparent in the first
+   place. color-mix is the only way to get real translucency on a theme token.
+
+   Pairs with `backdrop-blur-xl`, and needs it: the 5% of artwork that shows through the
+   wash is only an unreadable colour cast once it has been blurred. */
 @layer utilities {
-  .bg-frosted-panel {
-    background-color: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  .scrim-band {
+    --scrim-band-mask: linear-gradient(
+      to bottom,
+      transparent calc(50% - 108px),
+      #000 calc(50% - 46px),
+      #000 calc(50% + 46px),
+      transparent calc(50% + 108px)
+    );
+    background-color: color-mix(in srgb, var(--color-bg) 95%, transparent);
+    -webkit-mask-image: var(--scrim-band-mask);
+    mask-image: var(--scrim-band-mask);
   }
 }
 

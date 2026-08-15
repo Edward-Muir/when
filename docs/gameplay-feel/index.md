@@ -22,7 +22,7 @@ game-start loading card ended up with its heading sitting on unobscured card art
 ```
 
 Use `opacity-60` on the element, or a `color-mix(in srgb, var(--color-accent) 60%, transparent)`
-utility in `index.css` — `.bg-player-row` and `.bg-frosted-panel` are the two live precedents.
+utility in `index.css` — `.bg-player-row` and `.scrim-band` are the two live precedents.
 Standard Tailwind colours (`bg-black/50`, `text-white/70`) are unaffected and do work.
 
 **There are ~66 of these in `src/` today** — they are latent, not urgent, but don't add more,
@@ -33,7 +33,7 @@ grep -rEoh '\b(bg|text|border|from|via|to|ring|fill|stroke)-(bg|surface|text|tex
 ```
 
 To check a specific one really landed, grep the build output rather than trusting the source:
-`npm run build && grep -o '\.bg-frosted-panel{[^}]*}' build/static/css/*.css`.
+`npm run build && grep -o '\.scrim-band{[^}]*}' build/static/css/*.css`.
 
 ## Deck composition (2026-08-13)
 
@@ -169,13 +169,27 @@ of their height, reusing the real `TimelineEvent` component. Reduced-motion user
 screen that auto-completes in 500 ms. Constants live at the top of `GameStartTransition.tsx`.
 Noted in an old design review as an unskippable fake load — still true.
 
-The centred "Loading events from across time…" card uses `.bg-frosted-panel` (a `color-mix`
-utility in `index.css`) plus `backdrop-blur-xl`. **Do not "simplify" it back to `bg-bg/85`** —
-that was the original code, and it compiled to no background at all (see the trap above), so the
-heading sat on unobscured, full-contrast card artwork. Both parts are load-bearing: the 88%
-scrim gives the text a surface, and the blur has to stay heavy (24px, not the old `sm`/4px) or
-shapes from the artwork stay legible through the remaining 12% and fight the thin Playfair
-serif. The heading also carries `font-semibold` for stroke weight against a busy backdrop.
+The "Loading events from across time…" overlay is **not a card** — it deliberately has no
+panel, border or shadow. It is a full-width band of `backdrop-blur-xl` plus a 95% `--color-bg`
+wash (`.scrim-band` in `index.css`), **masked with a vertical linear-gradient** so it fades to
+nothing above and below. The scrolling timeline therefore stays sharp at the top and bottom of
+the screen and dissolves only behind the title, leaving no edge anywhere to read as a box.
+
+Three things are load-bearing, and a "simplification" will break one of them:
+
+- **The mask is what makes it pretty.** An unmasked full-screen frost flattens the whole
+  timeline into grey mush and throws away the artwork the transition exists to show off.
+- **The wash must be `--color-bg`, not black.** A dark scrim reads as a grey smudge over the
+  light page background outside the cards. A bg-coloured one vanishes against the page and
+  only bites where the artwork is.
+- **`backdrop-blur-xl` is not decoration.** The 5% of artwork coming through the wash is only
+  an unreadable colour cast once blurred; drop the blur and card text becomes legible again
+  right behind the serif.
+
+Earlier iterations that were tried and rejected: a bordered frosted card (reads as a modal
+dialog interrupting the scene), a full-bleed band with hard gold rules, a minimal pill with a
+spinner (loses the serif entirely), an unmasked full-screen frost, and a radial/elliptical
+mask (the rectangular band was preferred).
 
 ## Elastic draggable cards — research only, nothing built
 
