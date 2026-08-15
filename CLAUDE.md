@@ -4,6 +4,8 @@
 
 For detailed architecture (component hierarchy, hooks, utils, API routes, z-index, dependencies): see [docs/architecture-reference.md](docs/architecture-reference.md)
 
+[docs/index.md](docs/index.md) indexes the rest — one digest per area, each holding the decisions and constraints behind that area rather than a change log. Worth a look before any non-trivial change; several encode traps that cost a previous session real time.
+
 Before changing anything about how card images are fetched or sized (`src/utils/cloudinaryImage.ts`, preloading, the service-worker image cache): see [docs/cloudinary-cost-controls.md](docs/cloudinary-cost-controls.md) — the rung ladder has hard rules (no `dpr_auto`, never an uncapped width, keep both rungs square) that exist because breaking them ran the account toward a shutdown.
 
 To drive/play the app end-to-end with Playwright (smoke tests, or playing the live daily) — including the drag-and-drop recipe, the proxy/TLS workaround, and a copy-pasteable script: see [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md)
@@ -14,13 +16,18 @@ To drive/play the app end-to-end with Playwright (smoke tests, or playing the li
 vercel dev                   # Full-stack dev (frontend + API routes)
 npm start                    # Frontend-only dev server (no API)
 npm run build                # Production build
-npm test                     # Tests (watch mode)
+npm test                     # Tests (watch mode). CI=true npm test -- --watchAll=false for one pass
 npm run lint                 # ESLint check (covers src AND api)
 npm run typecheck            # TypeScript check (src only — tsconfig `include` is ["src"])
 npm run typecheck:api        # TypeScript check for api/ (not covered by `typecheck`)
 npm run format               # Prettier format
 npm run release              # Bump version (auto-detect from commits)
 ```
+
+**Always run tests through npm, never `npx react-scripts test` / `npx jest` directly.** The
+`test` script pins `TZ=America/Los_Angeles`, and the `puzzleDate` / `dailyConfig` /
+`dailyReminder` suites assert real US DST transitions. Bypassing npm drops the pin and fails
+5 tests across 3 suites that are not actually broken.
 
 ## Release & Deployment
 
@@ -46,6 +53,7 @@ npm run release              # Bump version (auto-detect from commits)
 ## Styling
 
 - Colors: CSS custom properties in `src/index.css`, referenced by Tailwind. Use `bg-bg`, `text-text`, `bg-accent` etc. No `dark:` prefixes needed.
+- **Opacity modifiers are silent no-ops on those tokens.** `bg-accent/20`, `text-text-muted/60` and friends emit the flat color — the tokens are plain `var(--color-x)` with no `<alpha-value>` channel. Use `opacity-60` on the element, or `color-mix()` in CSS. Standard Tailwind colors (`bg-black/50`) are fine. ~46 no-op instances already exist in `src/`; don't add more.
 - Fonts: `font-display` (Playfair Display), `font-body` (Inter), `font-mono` (DM Mono)
 - Animations come from two places, and the split matters:
   - **Tailwind keyframes** (`tailwind.config.js`): `animate-entrance` is used; `animate-shake` and `animate-screen-shake` are defined but have **zero usages** — don't reach for them.

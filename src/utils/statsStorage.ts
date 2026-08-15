@@ -1,7 +1,7 @@
 /**
  * localStorage utilities for the stats / achievements foundation.
  *
- * Design principle (see docs/session-2026-06-27-stats-achievements-master-plan.md):
+ * Design principle (see docs/stats-achievements/index.md):
  * store generic primitives, derive every per-category stat at read time. The key
  * primitive is `CollectionState.placedEventIds` — the UNIQUE set of correctly-placed
  * event names, unioned across all modes. Per-category counts are derived later by

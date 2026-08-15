@@ -1,37 +1,55 @@
 # Docs Index
 
-Session summaries and reference docs for the "When" timeline game. Session files live in topic subfolders, each with its own `index.md`.
+Reference docs for the "When" timeline game. Thirteen files, all maintained as **current** —
+if one contradicts the code, the doc is wrong and should be fixed.
 
-> **Read this before citing anything below.**
->
-> Everything in the topic folders is a **dated snapshot of one day's change** — a record of
-> what was done and why, written at the time. They are **not** current-state reference and
-> are not updated when later work supersedes them. Several describe components and UI that
-> no longer exist (a `SettingsPopup`, a Marathon/Casual mode picker, a 7-category event
-> taxonomy).
->
-> **When a session doc conflicts with the code, the code wins.** Verify before acting.
->
-> Only two documents are maintained as current: **[CLAUDE.md](../CLAUDE.md)** and
-> **[architecture-reference.md](architecture-reference.md)**. If you find something stale
-> in either, fix it. If you find something stale in a session doc, leave the body alone —
-> it is history — and add a one-line `> **Historical (date).** …` note at the top instead.
+These are digests, not a change log. They hold decisions and their rationale, rejected
+approaches and why, and the constraints that are expensive to rediscover. They deliberately do
+not restate what the code says: for "how does X work", read the source. Git history holds the
+original per-session write-ups if you need the blow-by-blow.
 
-## Topic folders
+## Start here
 
-- [stats-achievements/](stats-achievements/index.md) — Stats foundation, achievement badges, milestone popups, and the My Timeline collection view
-- [events-images/](events-images/index.md) — Event data pipeline: imports, difficulty grading, image processing, colors, and preloading
-- [ui-redesign/](ui-redesign/index.md) — Homepage, mode-select pager, settings/custom-game UI, and general layout redesigns
-- [leaderboard-daily/](leaderboard-daily/index.md) — Daily mode and leaderboard features, live refresh, and bot population
-- [sharing-challenges/](sharing-challenges/index.md) — Shareable challenge codes and share-settings UI
-- [gameplay-feel/](gameplay-feel/index.md) — Game feel: streak feedback, game-over popup, transitions, and the color system
-- [mobile-ios/](mobile-ios/index.md) — Capacitor iOS app setup and iOS-specific fixes
-- [dev-tooling/](dev-tooling/index.md) — Local dev troubleshooting (`vercel dev`), category clustering/refactor tooling
-- [card-reports/](card-reports/index.md) — Player-reported card problems and the hidden maintainer view
+- [../CLAUDE.md](../CLAUDE.md) — the essentials, loaded every session
+- [architecture-reference.md](architecture-reference.md) — components, hooks, utils, API
+  routes, z-index
 
-## Root docs
+## Before you change certain things
 
-- [Architecture Reference](architecture-reference.md) — detailed codebase reference (components, hooks, utils, API routes, z-index); linked from CLAUDE.md
-- [Cloudinary Cost Controls](cloudinary-cost-controls.md) — how card images are delivered, the transform rung rules, and the console settings that cap bandwidth/transformation spend
-- [Stats & Achievement Badges — Plan](stats-achievements-plan.md) — full original spec for the stats screen and badge system
-- [Elastic Draggable Cards — Research](elastic-draggable-cards-research.md) — options document for elastic, centered draggable timeline cards (no implementation yet)
+- [cloudinary-cost-controls.md](cloudinary-cost-controls.md) — **read before touching image
+  delivery, preloading or the service-worker image cache.** The rung ladder has hard rules that
+  exist because breaking them ran the account toward shutdown.
+- [gameplay-feel/](gameplay-feel/index.md) — **read before retuning deck composition.** Also
+  covers tombstones, streak feedback, and the repo-wide Tailwind opacity-modifier trap.
+- [events-images/difficulty-grading-rubric.md](events-images/difficulty-grading-rubric.md) —
+  the grading criteria. Grade recognition and inferability; never grade crowding.
+- [sharing-challenges/](sharing-challenges/index.md) — **read before touching the challenge-code
+  encoding.** It is positional; a careless change misdecodes every link ever issued.
+
+## By area
+
+- [leaderboard-daily/](leaderboard-daily/index.md) — the local-calendar puzzle day (and why it
+  is not UTC), submission validation, bots, display-name filtering
+- [stats-achievements/](stats-achievements/index.md) — the store-primitives-derive-everything
+  rule, storage keys, milestones, badge design
+- [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
+  name cap, image preloading
+- [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, Custom
+  settings, and the service-worker dev-loop trap
+- [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
+  ship instantly), safe-area utilities, daily reminders
+- [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
+  where the 20-category taxonomy came from
+- [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
+  maintainer page
+- [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
+  end-to-end from a script, including the drag-and-drop recipe
+- [events-images/event-editor-tool.md](events-images/event-editor-tool.md) — the standalone
+  local event editor
+
+## Keeping these useful
+
+When you finish a piece of work, fold what you learned into the relevant digest rather than
+adding a new dated file. The test for inclusion is **"would a future session make a worse
+decision without this?"** — a rejected approach and the reason it failed passes; a list of the
+files you touched does not, because the diff already says that.

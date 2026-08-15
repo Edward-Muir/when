@@ -1,6 +1,10 @@
-# Large non-build dirs that overwhelm `vercel dev`'s file watcher (chokidar 4 on macOS)
-# → `spawn EBADF` → NO_RESPONSE_FROM_FUNCTION 502. None are part of the web build or
-# the serverless functions, so excluding them is safe for dev and deploy.
+# Large non-build dirs kept out of the deploy upload. None are part of the web build or
+# the serverless functions, so excluding them is safe.
+#
+# NOTE: this file does NOT affect `vercel dev`'s file watcher. The watcher's filter is
+# hardcoded to accept everything; .vercelignore is only read on the deploy-upload path.
+# It therefore does not fix the chokidar `spawn EBADF` failure — that needs the large
+# directories physically moved out of the project root. See docs/dev-tooling/index.md.
 venv/
 experiments/
 

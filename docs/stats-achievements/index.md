@@ -1,16 +1,110 @@
 # Stats & Achievements
 
-Stats foundation, achievement badges, milestone popups, and the My Timeline collection view. Original spec: [../stats-achievements-plan.md](../stats-achievements-plan.md).
+Lifetime stats, achievement badges, personal-best milestones, and the My Timeline collection
+view. Built over 2026-06-21 → 06-28 as a phased effort; this is the resulting design, not the
+phase-by-phase narrative.
 
-- [2026-06-27 — Master Plan](session-2026-06-27-stats-achievements-master-plan.md) — the phased (6-phase) master plan for stats + per-category achievements; supersedes the 06-21 plan
-- [2026-06-27 — Phases 1 & 2](session-2026-06-27-stats-phases-1-2.md) — stats storage foundation and event tracking
-- [2026-06-27 — Phases 3 & 4](session-2026-06-27-stats-phases-3-4.md) — achievement definitions and unlock detection
-- [2026-06-27 — Phase 5](session-2026-06-27-stats-phase-5.md) — unlock-moment presentation
-- [2026-06-27 — Phase 6](session-2026-06-27-stats-phase-6.md) — Stats/Achievements UI surfaces + top-bar buttons
-- [2026-06-28 — Phase 6 Polish](session-2026-06-28-stats-phase-6-polish.md) — UI consistency, reveal jig, prefetch
-- [2026-06-28 — Achievement Review + Collection Badges](session-2026-06-28-achievement-review-collection-badges.md) — review pass plus 10 new collection badges
-- [2026-06-28 — Milestone Popups](session-2026-06-28-milestone-popups.md) — end-of-game "personal best" milestone popups
-- [2026-06-28 — My Timeline Collection](session-2026-06-28-my-timeline-collection.md) — collection view + top-bar nav refactor
-- [2026-06-21 — Achievement Cards](session-2026-06-21-achievement-cards.md) — achievement card visual design (session 1)
-- [2026-06-21 — Stats + Category Achievements Plan](session-2026-06-21-stats-category-achievements-plan.md) — earlier plan handoff (superseded by the 06-27 master plan)
-- [Timeline Stats Feature](timeline-stats-feature.md) — legacy: timeline stats in the Sudden Death bottom bar with tappable popup
+## The one architectural rule
+
+**Store generic primitives; derive every per-category stat at read time.**
+
+The key primitive is `CollectionState.placedEventIds` — the unique event names a player has
+correctly placed, across all modes. Per-category, per-era, per-century and per-difficulty
+counts are all computed by resolving those ids against the loaded event catalogue.
+
+**No `Record<Category, number>` counter is ever stored.** That is what let the taxonomy go from
+7 categories to 20 with zero stored-data migration, and it is why per-category achievements are
+generated (`cat-<category>`) rather than hand-written. Anything new that "just needs a counter"
+should almost certainly be a derivation instead.
+
+## Storage
+
+Five localStorage keys, one per object. Every accessor is `try`/`catch` fail-silent and returns
+a fully-populated zero-default object, never null, merging partial or older stored shapes over
+the defaults.
+
+| Key                   | Holds                                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------------------- |
+| `when-lifetime-stats` | per-mode games/timeline sums/longest, events placed correct+wrong, best streaks, first/last played |
+| `when-collection`     | `placedEventIds`, de-duped on read and write                                                       |
+| `when-daily-cadence`  | daily streaks, `playedDates`, best/sum/histogram of daily correct counts                           |
+| `when-achievements`   | `unlocked: { [id]: ISODate }`                                                                      |
+| `when-custom-stats`   | **effectively unused** — accessors exist, the recorder never writes it                             |
+
+`recordGameResult` splits on **daily vs non-daily only**, via `lastConfig.dailySeed`. Older plan
+documents describe a third "default" bucket for a plain game started from a menu; that path has
+never existed — the UX is a Daily/Custom pager and every non-daily start carries a challenge code.
+
+`getLifetimeStats()` also runs a one-time idempotent fold of retired keys (a legacy high score,
+and the removed `freeplay` buckets). Copy that pattern for future shape changes rather than
+migrating in place.
+
+## Milestones ("Personal Best" popups)
+
+Text-and-icon popups shown after the game-over popup and **before** the achievement-unlock
+modal, revealed one at a time.
+
+- **Ephemeral — never persisted.** They celebrate a moment; they are not achievements.
+- **Only fire when the previous record was `> 0`**, so a first-ever game and trivial "1 day"
+  cases never celebrate.
+- Daily and custom records are tracked separately, and a game can only fire its own side's kinds.
+
+**The detection trick matters:** `recordGameResult` overwrites records in place via `Math.max`,
+so after it runs you cannot tell what the game beat. The recorder **snapshots the records
+first**, records, then calls the pure `detectMilestones(state, prev)`. This kept
+`recordGameResult`'s signature and tests untouched. Don't try to detect inside the recorder.
+
+`useGameStatsRecorder` exists because this pushed `useWhenGame` past the 310-line
+`max-lines-per-function` budget — it owns the events-by-name memo, the once-per-game ref guard,
+and the snapshot→record→detect flow.
+
+## Badges
+
+- **Art is real event art, not generated medals.** An `AchievementDef` carries an `eventName`,
+  resolved to that event's `image_url` at runtime — `AchievementDef` deliberately has **no
+  `imageUrl` field**, so there is one source of truth for every image. The CSV's `gemini_prompt`
+  column is ignored; no AI medal art was ever generated.
+- Tiers are conveyed by a pure-CSS metallic `conic-gradient` ring (bronze → silver → gold →
+  platinum → shimmering diamond, plus steel/copper/obsidian/verdigris), not by new art.
+- **Locked badges still show their criterion** and a greyscale, veiled glimpse of the art behind
+  a frosted lock chip — the tease is deliberate.
+- Unlock reveal uses the "Staggered Shine" animation, chosen from four candidates compared in a
+  dev-only jig (`/anim-jig`). Badge art is prefetched at game over, the moment unlocks are known,
+  so the modal shows art instantly.
+- Unlock sequencing is driven by **popup-dismissal transitions, not timers** — an effect watches
+  `pendingPopup?.type`.
+
+## Known issue: the difficulty badge family has an inverted gradient
+
+Flagged during the 2026-06-28 review and **deliberately left unfixed**. The thresholds ignore
+pool size:
+
+- `easy` is the **rarest** label (609 events), `hard` the most common (2,115).
+- So **Warm-Up** (80 easy, _bronze_) takes ~60–70 games, while **Uphill Battle** (20 hard,
+  _gold_) takes ~5–6. The bronze badge is an order of magnitude harder than the gold.
+
+Suggested fix if anyone picks it up: lower Warm-Up to ~30 easy and raise Uphill Battle to ~60
+hard. Related, lesser: category badges are all `steel` but vary ~5× in grind, and
+`Across the Ages` is gated by the rarest century so it is effectively harder than its gold tier
+implies.
+
+## Catalogue facts the badge set relies on
+
+Measured against the real catalogue, so thresholds are known reachable:
+
+- **No badge is mathematically impossible.** Every category has ≥20 events (smallest is `nature`
+  at 116); every century from the 1st to the 21st CE is represented (rarest is C03 at 31).
+- **The deck is effectively the whole catalogue**, minus the dealt hand. A correct placement
+  draws a replacement, so a game ends only when mistakes empty the hand — the typical "10–15
+  placements" is an outcome with errors, not a cap. Streak-25 and 30-correct badges are
+  therefore reachable; they just demand near-flawless play.
+
+Re-verify these if the catalogue or the difficulty labels are regraded.
+
+## My Timeline
+
+The `/timeline` view (and Timeline pager tab) is the **collection** view: it renders
+`placedEventIds`, i.e. the catch-'em-all set, not the current game's board. It shares the
+`Timeline` component with gameplay, which is why `Timeline` takes `failedPlacements` and
+`currentStreak` as optional props defaulting to empty/0 — the collection view passes neither.
+It also passes `gameMode={null}` to `TopBar`, which is what hides the in-game rules item.

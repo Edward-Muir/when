@@ -43,6 +43,30 @@ string shown in the console's transformation list is exactly the string to allow
   allowance; unbounded, the same screen projects to ~35,000/month. See
   `src/utils/introEvents.ts`, guarded by `src/utils/introEvents.test.ts`.
 
+### The service-worker image cache
+
+Cloudinary requests route to a dedicated `imageCacheFirst` handler in
+`public/service-worker.js`, separate from the generic `cacheFirst`. Three things about it are
+load-bearing and easy to undo:
+
+- **It re-issues the request in CORS mode inside the worker.** `<img>` requests are `no-cors`,
+  so their responses are opaque — `response.ok` is `false`, which is why an earlier version
+  silently never cached a single card image. Opaque responses are also **padded to several MB
+  each** in storage-quota accounting, so caching them as-is would blow the origin quota and
+  evict everything. Cloudinary sends `Access-Control-Allow-Origin: *`, so the re-issued request
+  is charged at true size and carries a real status code. No `crossOrigin` attribute is needed
+  on the `<img>` tags, which avoids a cache-key change and a one-time double-fetch.
+- **`IMAGE_CACHE` is deliberately unversioned.** `activate` deletes every cache it does not
+  recognise, and `scripts/inject-version.js` rewrites the versioned names on each release.
+  Versioning this one would wipe every cached card image on every deploy — several times a week
+  under auto-release-on-merge. A comment in `inject-version.js` records this.
+- It is bounded to **400 entries**, trimmed in insertion order behind a single in-flight promise.
+
+Related bug worth not reintroducing: `cacheFirst`'s catch used to return `/index.html` as the
+body of _any_ failed request. For an image that means an HTML document handed to an `<img>`,
+which fails to decode, fires `onError`, and permanently swaps in the category-icon fallback. It
+is now scoped to `request.destination === 'document'`.
+
 ## 2. What went wrong in August 2026
 
 Bandwidth went from ~50 MB/day to 1.2 GB/day and transformations from ~30/day to 930/day,
