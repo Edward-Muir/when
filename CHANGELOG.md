@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.11.1](https://github.com/Edward-Muir/when/compare/v1.11.0...v1.11.1) (2026-08-15)
+
+
+### Bug Fixes
+
+* make the game-start loading overlay readable and redesign it as a scrim band ([#42](https://github.com/Edward-Muir/when/issues/42)) ([9f72d6d](https://github.com/Edward-Muir/when/commit/9f72d6d8006ac2eaa21a76f287538a6c7aa871e0))
+
 ## [1.11.0](https://github.com/Edward-Muir/when/compare/v1.10.0...v1.11.0) (2026-08-15)
 
 
