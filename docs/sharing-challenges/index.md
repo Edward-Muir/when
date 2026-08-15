@@ -67,7 +67,7 @@ composition of that day's puzzle to everyone who sees the post.
 ### Cost
 
 Art is fetched through the existing **`detail`** rung (`getImageUrl(url, 'detail')`), not a
-new transform string. `detail` rather than `thumbnail` because the hero is drawn at 560px on
+new transform string. `detail` rather than `thumbnail` because the hero is drawn at 640px on
 a 1080px canvas: the 400px thumbnail gets upscaled and looks visibly soft, while 768
 downscales cleanly.
 
