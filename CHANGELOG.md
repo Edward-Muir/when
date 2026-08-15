@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.8.1](https://github.com/Edward-Muir/when/compare/v1.8.0...v1.8.1) (2026-08-15)
+
+
+### Bug Fixes
+
+* stop the leaderboard modal running under the iOS status bar ([#38](https://github.com/Edward-Muir/when/issues/38)) ([4021286](https://github.com/Edward-Muir/when/commit/40212863994275ff21d7d668bda60e90cde0a979))
+
 ## [1.8.0](https://github.com/Edward-Muir/when/compare/v1.7.3...v1.8.0) (2026-08-15)
 
 

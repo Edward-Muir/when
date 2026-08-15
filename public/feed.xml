@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 14:04:32 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 14:13:43 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.8.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.8.1</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>stop the leaderboard modal running under the iOS status bar (<a href="https://github.com/Edward-Muir/when/issues/38">#38</a>) (<a href="https://github.com/Edward-Muir/when/commit/40212863994275ff21d7d668bda60e90cde0a979">4021286</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.8.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.6.1</guid>
       <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Performance</h3><br/><br/><ul><li>cut Cloudinary bandwidth ~7x and close the abuse paths (<a href="https://github.com/Edward-Muir/when/issues/28">#28</a>) (<a href="https://github.com/Edward-Muir/when/commit/57aea61942153ce288572ee94134f62a70b96fec">57aea61</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.6.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.6.0</guid>
-      <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>report card issues from the card detail view (<a href="https://github.com/Edward-Muir/when/issues/27">#27</a>) (<a href="https://github.com/Edward-Muir/when/commit/813b6bb68a1ab3b9a58a24df541e778f0678bca3">813b6bb</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
