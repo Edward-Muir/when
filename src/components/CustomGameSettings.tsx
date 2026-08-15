@@ -107,8 +107,8 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   };
 
   const handleShareChallenge = async () => {
-    const text = `When · Challenge\nSame cards, same order — beat my timeline.\n\n${shareUrl}`;
-    const copied = await shareContent(text, 'When - Timeline Game');
+    const text = `When?\nSame cards, same order — beat my timeline.\n\n${shareUrl}`;
+    const copied = await shareContent(text, 'When? - The Timeline Game');
     setShowShareToast(copied);
     setTimeout(() => setShowShareToast(false), 2000);
   };

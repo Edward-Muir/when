@@ -37,19 +37,37 @@ composition of that day's puzzle to everyone who sees the post.
 
 ### Cost
 
-Art is fetched through the existing `thumbnail` rung (`getImageUrl(url, 'thumbnail')`), an
-image the player has already been served, so a share costs zero Cloudinary transformations.
-A bespoke size for this surface would mint a third rung — see
-[cloudinary-cost-controls.md](../cloudinary-cost-controls.md). The one deviation is
-`crossOrigin = 'anonymous'`, which is mandatory (an untagged image taints the canvas and
-`toBlob()` throws) and costs at most one extra fetch of an already-derived asset.
+Art is fetched through the existing **`detail`** rung (`getImageUrl(url, 'detail')`), not a
+new transform string. `detail` rather than `thumbnail` because the hero is drawn at 560px on
+a 1080px canvas: the 400px thumbnail gets upscaled and looks visibly soft, while 768
+downscales cleanly.
+
+Reusing an existing rung is the load-bearing part. A bespoke size for this surface would
+mint a third rung — roughly 13,000 transformations across the catalogue, about half a
+month's free-plan allowance — see
+[cloudinary-cost-controls.md](../cloudinary-cost-controls.md). As it stands the marginal
+cost is at worst one derived asset per day, since the daily seed card is the same for
+every player and is often already minted from someone tapping it in-game.
+
+The one deviation is `crossOrigin = 'anonymous'`, which is mandatory (an untagged image
+taints the canvas and `toBlob()` throws) and costs at most one extra fetch of an
+already-derived asset.
 
 ### Decisions in force on the message
 
+- **The brand keeps its question mark.** "When?", matching the home-screen H1, the
+  manifest, the page title and the OG tags. The share text was the one place that dropped
+  it. `BRAND` in `share.ts` is the single source; the story card's wordmark matches.
 - **No emoji grid.** Removed 2026-08. Unlike Wordle's 2D narrative, ours was a 1D run of
   greens with at most `handSize` reds, restating the number on the line below it and
   growing _longer_ the better you played. `generateEmojiGrid()` still exists — the daily
   result stores it and the leaderboard renders it.
+- **No mode label on a non-daily game.** Naming a mode implies a choice of rule-sets the
+  UI does not offer; everything that is not the Daily is a Custom game. The old "Marathon"
+  label is gone from both the text and the card (the card simply omits its eyebrow).
+  Guarded by a test. See the CLAUDE.md naming note.
+- **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
+  `bestStreak` is still tracked in game state and on the stored daily result.
 - **One emoji, reserved for `#1 globally`.** Everything else is plain text.
 - **Exactly one URL, always last.** WhatsApp and iMessage preview the _first_ URL they
   find, so a second one upstream would silently change which page gets the preview card.

@@ -3,6 +3,12 @@ import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { getLocalDateString } from './puzzleDate';
 import { renderShareFile, ShareCardSpec } from './shareImage';
 
+/**
+ * The game's name carries its question mark — the home-screen H1, the manifest, the page
+ * title and the OG tags all say "When?". The share text and the story card must match.
+ */
+const BRAND = 'When?';
+
 /** Used as an href by the Custom page's challenge-code box, so it keeps its scheme. */
 export const CHALLENGE_URL = 'https://www.play-when.com/challenge';
 
@@ -66,32 +72,32 @@ export interface DailyShareFacts {
   date: string;
   theme: string;
   correctCount: number;
-  bestStreak?: number;
   leaderboardRank?: number;
 }
 
 /** The daily message, shared by the game-over screen and the home screen's result card. */
 export function generateDailyShareText(facts: DailyShareFacts): string {
-  const { date, theme, correctCount, bestStreak, leaderboardRank } = facts;
+  const { date, theme, correctCount, leaderboardRank } = facts;
   // +1 for the seed card the timeline starts with, matching the on-screen count.
   const timelineLength = correctCount + 1;
   return composeShareText(
-    `When · ${formatShareDate(date)} · ${theme}`,
-    [
-      `Timeline of ${timelineLength}`,
-      bestStreak && bestStreak >= 2 ? `best run ${bestStreak}` : '',
-      leaderboardRank ? formatRank(leaderboardRank) : '',
-    ],
+    `${BRAND} · ${formatShareDate(date)} · ${theme}`,
+    [`Timeline of ${timelineLength}`, leaderboardRank ? formatRank(leaderboardRank) : ''],
     DISPLAY_DAILY_URL
   );
 }
 
 /**
- * Generate the share text based on game mode and results
+ * Generate the share text based on game mode and results.
+ *
+ * Only the daily is named, because it is the only thing a recipient can go and play a
+ * shared instance of. A non-daily game carries no mode label at all: the internal
+ * `suddenDeath` name never surfaced, and its old "Marathon" label implied a choice of
+ * rule-sets that the UI does not offer — everything that is not the daily is a Custom
+ * game. Do not reintroduce a mode word here.
  */
 export function generateShareText(state: WhenGameState): string {
-  const { gameMode, placementHistory, lastConfig, players, winners, roundNumber, bestStreak } =
-    state;
+  const { gameMode, placementHistory, lastConfig, players, winners, roundNumber } = state;
   const playerCount = players.length;
   const correctCount = placementHistory.filter((p) => p).length;
 
@@ -101,28 +107,22 @@ export function generateShareText(state: WhenGameState): string {
       date,
       theme: getThemeDisplayName(getDailyTheme(date)),
       correctCount,
-      bestStreak,
     });
   }
 
-  // "Marathon" is the user-facing name for `suddenDeath` — a deliberate UI-only rename.
   const challengeCode = lastConfig?.challengeCode;
   const url = challengeCode ? `${DISPLAY_URL}/challenge/${challengeCode}` : DISPLAY_URL;
 
   if (playerCount > 1) {
     const winnerNames = winners.map((w) => w.name).join(', ');
     return composeShareText(
-      `When · Marathon · ${playerCount} players`,
+      `${BRAND} · ${playerCount} players`,
       [winnerNames ? `${winnerNames} wins` : 'No winner', `${roundNumber} rounds`],
       url
     );
   }
 
-  return composeShareText(
-    'When · Marathon',
-    [`Timeline of ${correctCount}`, bestStreak >= 2 ? `best run ${bestStreak}` : ''],
-    url
-  );
+  return composeShareText(BRAND, [`Timeline of ${correctCount}`], url);
 }
 
 /**
@@ -203,7 +203,7 @@ async function buildShareFile(spec: ShareCardSpec, slug: string): Promise<File |
  */
 export async function shareResults(state: WhenGameState): Promise<boolean> {
   const shareText = generateShareText(state);
-  const { gameMode, placementHistory, lastConfig, timeline, seedEventName, bestStreak } = state;
+  const { gameMode, placementHistory, lastConfig, timeline, seedEventName } = state;
   const correctCount = placementHistory.filter((p) => p).length;
 
   // The seed card is the one event safe to show: it is on the board before the first
@@ -219,22 +219,20 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
         eyebrow: `Daily · ${formatShareDate(date)} · ${getThemeDisplayName(getDailyTheme(date))}`,
         score: String(correctCount + 1),
         scoreLabel: 'events in my timeline',
-        detail: bestStreak >= 2 ? `best run of ${bestStreak}` : undefined,
         url: DISPLAY_DAILY_URL,
       }
     : {
+        // No eyebrow: a non-daily game has no mode to name (see `generateShareText`).
         event: seedEvent,
-        eyebrow: 'Marathon',
         score: String(correctCount),
         scoreLabel: correctCount === 1 ? 'event placed' : 'events placed',
-        detail: bestStreak >= 2 ? `best run of ${bestStreak}` : undefined,
         url: lastConfig?.challengeCode
           ? `${DISPLAY_URL}/challenge/${lastConfig.challengeCode}`
           : DISPLAY_URL,
       };
 
-  const file = await buildShareFile(spec, isDaily ? date : 'marathon');
-  return shareContent(shareText, 'When - Timeline Game', file);
+  const file = await buildShareFile(spec, isDaily ? date : 'custom');
+  return shareContent(shareText, 'When? - The Timeline Game', file);
 }
 
 /**
@@ -242,8 +240,8 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
  * Returns true if copied to clipboard (toast should be shown)
  */
 export async function shareApp(): Promise<boolean> {
-  const text = `When — put history in order.\n\n${DISPLAY_URL}`;
-  return shareContent(text, 'When - Timeline Game');
+  const text = `${BRAND} — put history in order.\n\n${DISPLAY_URL}`;
+  return shareContent(text, 'When? - The Timeline Game');
 }
 
 /**
@@ -257,26 +255,12 @@ export async function shareDailyResult(
   theme: string,
   correctCount: number,
   options: {
-    bestStreak?: number;
     leaderboardRank?: number;
     seedEvent?: HistoricalEvent | null;
   } = {}
 ): Promise<boolean> {
-  const { bestStreak, leaderboardRank, seedEvent } = options;
-  const text = generateDailyShareText({
-    date,
-    theme,
-    correctCount,
-    bestStreak,
-    leaderboardRank,
-  });
-
-  const detail = [
-    bestStreak && bestStreak >= 2 ? `best run of ${bestStreak}` : '',
-    leaderboardRank ? formatRank(leaderboardRank) : '',
-  ]
-    .filter(Boolean)
-    .join(' · ');
+  const { leaderboardRank, seedEvent } = options;
+  const text = generateDailyShareText({ date, theme, correctCount, leaderboardRank });
 
   const file = await buildShareFile(
     {
@@ -284,11 +268,11 @@ export async function shareDailyResult(
       eyebrow: `Daily · ${formatShareDate(date)} · ${theme}`,
       score: String(correctCount + 1),
       scoreLabel: 'events in my timeline',
-      detail: detail || undefined,
+      detail: leaderboardRank ? formatRank(leaderboardRank) : undefined,
       url: DISPLAY_DAILY_URL,
     },
     date
   );
 
-  return shareContent(text, 'When - Timeline Game', file);
+  return shareContent(text, 'When? - The Timeline Game', file);
 }

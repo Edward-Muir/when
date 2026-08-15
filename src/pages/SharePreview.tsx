@@ -25,11 +25,11 @@ import { WhenGameState } from '../types';
  * payload) can be checked on a device.
  */
 
-type Preset = 'daily' | 'marathon' | 'challenge';
+type Preset = 'daily' | 'custom' | 'challenge';
 
 const PRESETS: { id: Preset; label: string }[] = [
   { id: 'daily', label: 'Daily' },
-  { id: 'marathon', label: 'Marathon' },
+  { id: 'custom', label: 'Custom' },
   { id: 'challenge', label: 'Challenge' },
 ];
 
@@ -60,24 +60,20 @@ const SharePreview: React.FC = () => {
           eyebrow: `Daily · ${formatShareDate(today)} · ${theme}`,
           score: '11',
           scoreLabel: 'events in my timeline',
-          detail: 'best run of 4 · #47 globally',
+          detail: '#47 globally',
           url: 'play-when.com/daily',
         }
-      : preset === 'marathon'
+      : preset === 'custom'
         ? {
             event: seedEvent,
-            eyebrow: 'Marathon',
             score: '23',
             scoreLabel: 'events placed',
-            detail: 'best run of 9',
             url: 'play-when.com',
           }
         : {
             event: seedEvent,
-            eyebrow: 'Marathon',
             score: '12',
             scoreLabel: 'events placed',
-            detail: 'best run of 5',
             url: 'play-when.com/challenge/able-baker-cane',
           };
 
@@ -87,16 +83,14 @@ const SharePreview: React.FC = () => {
           date: today,
           theme,
           correctCount: 10,
-          bestStreak: 4,
           leaderboardRank: 47,
         })
       : generateShareText({
           gameMode: 'suddenDeath',
-          placementHistory: Array(preset === 'marathon' ? 23 : 12).fill(true),
+          placementHistory: Array(preset === 'custom' ? 23 : 12).fill(true),
           players: [{ id: 0, name: 'Player 1', hand: [], hasWon: false, placementHistory: [] }],
           winners: [],
           roundNumber: 1,
-          bestStreak: preset === 'marathon' ? 9 : 5,
           lastConfig:
             preset === 'challenge'
               ? ({ challengeCode: 'able-baker-cane' } as WhenGameState['lastConfig'])
@@ -125,7 +119,7 @@ const SharePreview: React.FC = () => {
 
   const share = async () => {
     const file = await renderShareFile(spec, 'when-preview.jpg');
-    const copied = await shareContent(text, 'When - Timeline Game', file);
+    const copied = await shareContent(text, 'When? - The Timeline Game', file);
     setStatus(copied ? 'copied to clipboard (no share sheet)' : 'handed to the share sheet');
   };
 

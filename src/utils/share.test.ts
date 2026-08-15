@@ -60,7 +60,12 @@ describe('generateDailyShareText', () => {
       theme: 'Everything',
       correctCount: 10,
     });
-    expect(text).toBe('When · Aug 15 · Everything\nTimeline of 11\n\nplay-when.com/daily');
+    expect(text).toBe('When? · Aug 15 · Everything\nTimeline of 11\n\nplay-when.com/daily');
+  });
+
+  it('keeps the question mark the rest of the app brands with', () => {
+    const text = generateDailyShareText({ date: '2026-08-15', theme: 'Art', correctCount: 4 });
+    expect(text.startsWith('When?')).toBe(true);
   });
 
   it('counts the seed card in the timeline length', () => {
@@ -69,25 +74,14 @@ describe('generateDailyShareText', () => {
     ).toContain('Timeline of 1');
   });
 
-  it('appends best run and rank when they exist', () => {
+  it('appends the rank when there is one', () => {
     const text = generateDailyShareText({
       date: '2026-08-15',
       theme: 'Everything',
       correctCount: 10,
-      bestStreak: 4,
       leaderboardRank: 47,
     });
-    expect(text).toContain('Timeline of 11 — best run 4 — #47 globally');
-  });
-
-  it('hides a best run of one, which is not a run', () => {
-    const text = generateDailyShareText({
-      date: '2026-08-15',
-      theme: 'Everything',
-      correctCount: 3,
-      bestStreak: 1,
-    });
-    expect(text).not.toContain('best run');
+    expect(text).toContain('Timeline of 11 — #47 globally');
   });
 
   it('spends its one emoji on the top spot and nowhere else', () => {
@@ -95,7 +89,6 @@ describe('generateDailyShareText', () => {
       date: '2026-08-15',
       theme: 'Everything',
       correctCount: 20,
-      bestStreak: 9,
       leaderboardRank: 1,
     });
     expect(top).toContain('#1 globally 👑');
@@ -105,7 +98,6 @@ describe('generateDailyShareText', () => {
       date: '2026-08-15',
       theme: 'Everything',
       correctCount: 20,
-      bestStreak: 9,
       leaderboardRank: 2,
     });
     expect(runnerUp).not.toMatch(EMOJI);
@@ -116,7 +108,6 @@ describe('generateDailyShareText', () => {
       date: '2026-08-15',
       theme: 'Everything',
       correctCount: 10,
-      bestStreak: 4,
     });
     expect(text).not.toMatch(/🟩|🟥/);
   });
@@ -150,16 +141,32 @@ describe('generateShareText', () => {
         },
       })
     );
-    expect(text).toContain('When · Aug 15 · ');
-    expect(text).toContain('Timeline of 4 — best run 2');
+    expect(text).toContain('When? · Aug 15 · ');
+    expect(text).toContain('Timeline of 4');
     expect(text.split('\n').pop()).toBe('play-when.com/daily');
   });
 
-  it('reports marathon placements without the seed bonus', () => {
+  it('names no mode for a custom game, and drops the seed bonus', () => {
     const text = generateShareText(
       makeState({ placementHistory: [true, true, true, false], bestStreak: 3 })
     );
-    expect(text).toBe('When · Marathon\nTimeline of 3 — best run 3\n\nplay-when.com');
+    expect(text).toBe('When?\nTimeline of 3\n\nplay-when.com');
+  });
+
+  it('never labels a game "Marathon" or "Sudden Death"', () => {
+    const custom = generateShareText(makeState({ placementHistory: [true, true] }));
+    const daily = generateShareText(makeState({ gameMode: 'daily', placementHistory: [true] }));
+    for (const text of [custom, daily]) {
+      expect(text).not.toMatch(/marathon|sudden death/i);
+    }
+  });
+
+  it('never mentions a best run', () => {
+    const text = generateShareText(
+      makeState({ placementHistory: [true, true, true], bestStreak: 7 })
+    );
+    expect(text).not.toMatch(/best run/i);
+    expect(text).not.toContain('7');
   });
 
   it('swaps in the challenge link when the game came from a code', () => {
@@ -191,7 +198,7 @@ describe('generateShareText', () => {
         roundNumber: 12,
       })
     );
-    expect(text).toBe('When · Marathon · 2 players\nAda wins — 12 rounds\n\nplay-when.com');
+    expect(text).toBe('When? · 2 players\nAda wins — 12 rounds\n\nplay-when.com');
   });
 
   it('never emits the emoji grid', () => {

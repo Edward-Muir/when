@@ -20,11 +20,17 @@ import { getImageUrl } from './cloudinaryImage';
  *
  * ## Cloudinary cost
  *
- * The art is fetched through `getImageUrl(url, 'thumbnail')` — the existing 400x400
- * rung, no new transform string. For the daily that image was already minted and is
- * already in the service-worker image cache, so a share costs zero transformations and
- * ~zero bandwidth. Do not introduce a bespoke size for this surface: a third rung is
- * roughly 13,000 transformations across the catalogue. See docs/cloudinary-cost-controls.md.
+ * The art is fetched through `getImageUrl(url, 'detail')` — the existing 768x768 rung,
+ * **not** a new transform string. `detail` rather than `thumbnail` because the hero is
+ * drawn at 560px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
+ * soft, while 768 downscales cleanly.
+ *
+ * Do not introduce a bespoke size for this surface. Cost scales as
+ * `images touched x rungs x formats`, so a third rung is roughly 13,000 transformations
+ * across the catalogue — about half a month's free-plan allowance. Reusing an existing
+ * rung keeps the marginal cost at, worst case, one derived asset per day (the daily seed
+ * card is the same for every player, and is often already minted from someone tapping
+ * it in-game). See docs/cloudinary-cost-controls.md.
  *
  * One wrinkle: `crossOrigin = 'anonymous'` is required here (an untagged image taints
  * the canvas and `toBlob()` throws), and that is a different HTTP cache key from the
@@ -48,13 +54,14 @@ const BODY_FONT = 'Inter, system-ui, sans-serif';
 export interface ShareCardSpec {
   /** The pre-placed seed card, used as hero art. Omit to render a typographic card. */
   event?: HistoricalEvent | null;
-  /** Small line above the wordmark, e.g. "Daily · Aug 15 · Everything". */
-  eyebrow: string;
+  /** Small line under the wordmark, e.g. "Daily · Aug 15 · Everything". Omitted for a
+   *  non-daily game, which has no mode to name. */
+  eyebrow?: string;
   /** The number that is the whole point, e.g. "11". */
   score: string;
   /** What the number counts, e.g. "events in my timeline". */
   scoreLabel: string;
-  /** Optional secondary stats, e.g. "best run 4 · #47 globally". */
+  /** Optional secondary stat, e.g. "#47 globally". */
   detail?: string;
   /** Shown at the foot of the card. The file may travel without any text, so this is
    *  the only thing telling a viewer where to play — it is not optional in practice. */
@@ -215,7 +222,7 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     const ctx = canvas.getContext('2d');
     if (!ctx) return null;
 
-    const artUrl = getImageUrl(spec.event?.image_url, 'thumbnail');
+    const artUrl = getImageUrl(spec.event?.image_url, 'detail');
     const art = artUrl ? await loadImage(artUrl) : null;
     await ensureFonts();
 
@@ -241,11 +248,13 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     ctx.textAlign = 'center';
     ctx.textBaseline = 'alphabetic';
 
-    // --- Header ---
-    fittedCenteredText(ctx, 'When', 300, 900, '600', 132, DISPLAY_FONT, INK);
-    ctx.font = `500 34px ${BODY_FONT}`;
-    ctx.fillStyle = INK_MUTED;
-    ctx.fillText(spec.eyebrow.toUpperCase(), WIDTH / 2, 372);
+    // --- Header. The game is "When?" everywhere else; the mark keeps its question mark. ---
+    fittedCenteredText(ctx, 'When?', 300, 900, '600', 132, DISPLAY_FONT, INK);
+    if (spec.eyebrow) {
+      ctx.font = `500 34px ${BODY_FONT}`;
+      ctx.fillStyle = INK_MUTED;
+      ctx.fillText(spec.eyebrow.toUpperCase(), WIDTH / 2, 372);
+    }
 
     // --- Hero card: the seed event, face up ---
     const cardSize = 560;

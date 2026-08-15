@@ -310,7 +310,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       todayResult.theme,
       todayResult.correctCount,
       {
-        bestStreak: todayResult.bestStreak,
         leaderboardRank: todayResult.leaderboardRank,
         // Today's seed card — already face-up on this screen, so no spoiler.
         seedEvent: previewEvent,
