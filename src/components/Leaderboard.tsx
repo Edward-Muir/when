@@ -224,7 +224,15 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             role="dialog"
             aria-modal="true"
             aria-labelledby="leaderboard-title"
-            className="w-[90vw] max-w-[400px] max-h-[min(75vh,520px)] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
+            // On a phone the card fills the backdrop's padded box, so the gap to the screen
+            // edge is identical on all four sides — the `p-4` above is the only thing setting
+            // it. Don't reintroduce a `vh`/pixel height cap here or the top and bottom gaps
+            // stop matching the sides.
+            //
+            // Above `sm:` the 400px width cap makes equal margins impossible anyway (the side
+            // gaps are hundreds of pixels), and filling the height there leaves a very tall,
+            // narrow column — so it takes a cap, still bounded by the viewport for landscape.
+            className="w-full max-w-[400px] max-h-full sm:max-h-[min(100%,640px)] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
             {...CARD_MOTION}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
             // The backdrop closes the board; clicks that land on the card itself must not.

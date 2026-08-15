@@ -119,13 +119,18 @@ beside it were both redundant with that read. One `ZRANGE` now serves rows, tota
 - **The card carried `onClick={onClose}` alongside the backdrop's**, so tapping any row
   dismissed the board — harmless at five rows, fatal once it scrolls. `Leaderboard.test.tsx`
   pins it, and is the repo's first React Testing Library test.
-- **The card is capped at `max-h-[min(75vh,520px)]`, and that cap has to bind.** A `max-h` was
-  always on it, but at five rows the card was content-sized (~350–440px) and never reached it;
-  rendering the whole board made it hit the cap for the first time and read as full height.
-  Sizes and floors here need checking against a full list, not the old five.
+- **On phones the card is `max-h-full`, deliberately.** It fills the backdrop's padded box, so
+  the gap to the screen edge is identical on all four sides and the `p-4` is the single thing
+  that sets it. A `vh` or pixel height cap was tried and reverted: any cap shorter than the
+  viewport makes the top and bottom gaps larger than the sides. Above `sm:` the 400px width cap
+  puts the side gaps in the hundreds, so equal margins are unreachable and the height _is_
+  capped — otherwise the card is a very tall, narrow column.
+- Beware sizing this against the old five-row modal. A `max-h` was always present, but at five
+  rows the card was content-sized (~350–440px) and never reached it. Check heights against a
+  full board.
 - The list's `min-h` is capped against the viewport (`min(320px,30vh)`) rather than a flat pixel
   floor, so it can never demand more than the card has — on a landscape phone the card is only
-  ~292px and `overflow-hidden` would silently eat the bottom of the list.
+  ~358px and `overflow-hidden` would silently eat the bottom of the list.
 - Truncation is disclosed in the **player-count bar** ("Showing 100 of 900 players today"), not
   a footer. There was briefly a footer line about ranks drifting through the day; it was cut as
   noise. If the ~50-hour fill window ever needs explaining again, it belongs somewhere a player
