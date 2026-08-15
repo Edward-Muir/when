@@ -42,3 +42,38 @@ export function msUntilNextLocalMidnight(now: Date = new Date()): number {
 export function dayDiff(a: string, b: string): number {
   return Math.round((Date.parse(b) - Date.parse(a)) / 86400000);
 }
+
+/**
+ * The first daily puzzle, and therefore puzzle #1. v1.0.0 shipped on this date.
+ *
+ * Moving it renumbers every puzzle retroactively, which breaks the one thing the number is
+ * for — two people comparing "did you do #49?". Treat it as immutable.
+ */
+const DAILY_EPOCH = '2026-06-28';
+
+const ISO_DATE = /^(\d{4})-(\d{2})-(\d{2})$/;
+
+/**
+ * "2026-08-15" -> 49. The share's puzzle identifier, replacing the date it used to print.
+ *
+ * A number rather than a date because a shared image is a forwardable object: "Aug 15" is
+ * stale by the next morning and duplicates the timestamp the chat app already stamps on
+ * the bubble, while "#49" is a reference point two players can compare with no shelf life.
+ * Same reasoning as `Connections #768`.
+ *
+ * Returns null for anything unparseable or before the epoch, so callers can fall back to a
+ * numberless label rather than printing "#NaN" or "#-3". `formatShareDate` takes the same
+ * pass-through stance on junk input.
+ *
+ * `dayDiff` is the whole implementation: `Date.parse` reads a bare `YYYY-MM-DD` as UTC
+ * midnight, so both operands land in the same frame and the delta is exact — including
+ * across the two DST days a year, which is exactly what hand-rolled local-date arithmetic
+ * gets wrong here (see the header note, and `formatShareDate` in `share.ts` for the same
+ * trap in its display form).
+ */
+export function getDailyPuzzleNumber(isoDate: string): number | null {
+  if (!ISO_DATE.test(isoDate)) return null;
+  const days = dayDiff(DAILY_EPOCH, isoDate);
+  if (!Number.isFinite(days) || days < 0) return null;
+  return days + 1;
+}

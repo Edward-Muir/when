@@ -34,7 +34,8 @@ exactly this reason — judge it there.
 
 The same arithmetic governs the art: its apparent size is purely `CARD_SIZE / WIDTH`
 times the bubble width, so shortening the canvas does nothing for it. The only lever is
-making the card wider relative to 1080, and the vertical budget caps that around 640.
+making the card wider relative to 1080, and the vertical budget caps that — currently 680,
+raised from 640 in 2026-08 by the space the seed card's year line used to occupy.
 Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
 rect (~83% of width, but discards ~30% of each square source), or move to a full-bleed
 poster layout with the text over a scrim.
@@ -67,9 +68,10 @@ composition of that day's puzzle to everyone who sees the post.
 ### Cost
 
 Art is fetched through the existing **`detail`** rung (`getImageUrl(url, 'detail')`), not a
-new transform string. `detail` rather than `thumbnail` because the hero is drawn at 640px on
+new transform string. `detail` rather than `thumbnail` because the hero is drawn at 680px on
 a 1080px canvas: the 400px thumbnail gets upscaled and looks visibly soft, while 768
-downscales cleanly.
+downscales cleanly. 768 is also the ceiling on `CARD_SIZE` — past it the art upscales and
+the temptation to mint a bespoke rung returns.
 
 Reusing an existing rung is the load-bearing part. A bespoke size for this surface would
 mint a third rung — roughly 13,000 transformations across the catalogue, about half a
@@ -82,11 +84,75 @@ The one deviation is `crossOrigin = 'anonymous'`, which is mandatory (an untagge
 taints the canvas and `toBlob()` throws) and costs at most one extra fetch of an
 already-derived asset.
 
+### The image is the receipt; the caption is not a second copy of it
+
+Until 2026-08 the message repeated the card almost token for token — date, score, rank and
+URL were all burned into the image _and_ restated in the caption, so the text did no work
+at all. They now split the job:
+
+- **The card** carries the puzzle identity, the score, the rank and the URL.
+- **The caption** carries identity, one descriptive line, and the link. No stats.
+
+`generateDailyShareText` and `generateShareText` therefore return a `ShareMessage` with two
+forms rather than a single string. `withCard` is the stats-free caption; `textOnly` keeps
+the stat line, because `shareContent`'s tier-3 and clipboard paths ship no image and a
+stats-free caption there would send a bare invite with the player's result missing. The
+choice is made **per tier inside `shareContent`**, not once up front — tier 3 is reached
+both when there was never a file and when both file payloads failed.
+
+### The caption asks a question — and why the Wordle argument does not apply
+
+This briefly went the other way, and the reversal is worth recording so the argument is not
+had a third time.
+
+**Wordle's share has no call to action at all** — `Wordle 1,234 4/6` plus the grid, no URL,
+no verb, nothing aimed at the recipient. It reads as a _receipt_ rather than a _claim_, and
+it spreads because a recipient who cannot decode it has to ask what it is. That is genuinely
+why it works, and for a fortnight it was the reason this message carried a flat descriptive
+line instead of asking anything.
+
+**It does not transfer.** Wordle can afford to withhold because a recipient who cannot decode
+the grid still recognises the brand. "When?" has no such recognition — a message that neither
+explains itself nor asks for anything just gets scrolled past. So:
+
+- Where a result exists, the caption asks: **`Can you make a longer timeline?`** (`SCORE_CTA`).
+- Where none does — the app invite, the pre-game challenge link, and multiplayer, where the
+  result belongs to whoever won — it describes: **`Make the longest timeline.`**
+  (`DESCRIPTOR`). Tests pin which surfaces get which.
+
+Both name the mechanic rather than an abstract "score", so the whole message shares one
+vocabulary with the `Timeline of N` stat line and with the in-game "How to Play" modal, which
+already says _Build the longest timeline!_
+
+The genuinely transferable piece of Wordle remains **withholding** — see the seed-year note
+below — not the absence of a CTA.
+
+### No em dashes
+
+A standing instruction. Every separator in a share string is the middle dot `·` the app and
+the card already use (`DAILY #49 · EVERYTHING`, `When? · 2 players`) — `SEP` in `share.ts`.
+A test asserts no share string contains `—`, because "applied once" and "enforced" are
+different things.
+
 ### Decisions in force on the message
 
 - **The brand keeps its question mark.** "When?", matching the home-screen H1, the
   manifest, the page title and the OG tags. The share text was the one place that dropped
   it. `BRAND` in `share.ts` is the single source; the story card's wordmark matches.
+- **The puzzle is identified by number, not date.** `Daily #49`, from
+  `getDailyPuzzleNumber` in `puzzleDate.ts` (epoch `2026-06-28` = #1, immutable — moving it
+  renumbers every puzzle retroactively). A shared image is a forwardable object, so "Aug 15"
+  went stale overnight and duplicated the timestamp the chat app already stamps on the
+  bubble. Same reasoning as `Connections #768`. It delegates to `dayDiff`, which reads both
+  operands as UTC midnight — hand-rolled local-date arithmetic breaks on the two DST days a
+  year. Pre-epoch and junk dates return `null` and fall back to a numberless label rather
+  than printing `#NaN`. `formatShareDate` survives for other callers.
+- **The shared card omits the seed card's year.** Printing it made the whole share legible
+  — score, rank, event, year, link — so a recipient could read it all and had no reason to
+  ask about any of it. Withholding one fact is the only lever this card has on Wordle's
+  actual mechanism. **The in-game seed card still shows its year**; only this render omits
+  it. (`shareImage.ts` no longer has a local `formatYear` — the one in `gameLogic.ts` was
+  always the real one.)
 - **No emoji grid.** Removed 2026-08. Unlike Wordle's 2D narrative, ours was a 1D run of
   greens with at most `handSize` reds, restating the number on the line below it and
   growing _longer_ the better you played. `generateEmojiGrid()` still exists — the daily
@@ -97,6 +163,14 @@ already-derived asset.
   Guarded by a test. See the CLAUDE.md naming note.
 - **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
   `bestStreak` is still tracked in game state and on the stored daily result.
+- **A challenge link states what it does.** `Same cards, same order.` is a fact about the
+  link, and it rides on both message forms. It lived as a fifth inline literal in
+  `CustomGameSettings.tsx` and is now `generateChallengeInviteText` in `share.ts`.
+- **A game-over share carries the rank.** `shareResults` takes it as an option. It used to
+  omit it entirely, so the game-over share was rankless even while the popup on screen showed
+  "#22 globally" — only the home screen's share had it. Both routes now agree: the popup
+  passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom bar reads
+  it from the stored daily result.
 - **The card is single-line everywhere.** Layout is fixed baselines, so a second line
   anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
   instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
@@ -125,13 +199,65 @@ already-derived asset.
   in local time, which prints the previous day west of Greenwich. `formatShareDate()`
   regex-splits the string the puzzle day already got right.
 
+### The share is the last step of the end-of-game sequence
+
+`src/hooks/useEndOfGameSequence.ts` owns the screens shown after the game-over popup:
+
+```
+gameOver      score · submit · rank        (GamePopup — not in the queue, see below)
+   ↓
+milestones    if any
+   ↓
+achievements  if any
+   ↓
+share         ShareStepPopup — result, Share, reminder + next-daily countdown
+```
+
+**The share step is unconditional**, which is the point: milestones and achievements only
+appear when there are any, so an "append to the last screen" scheme would make the finale
+different game to game. It ends the run every time.
+
+Two earlier arrangements, both wrong, worth not repeating:
+
+- **Share only in `GameOverControls`** (the bottom bar) while the result was in `GamePopup` —
+  two layers, so the reading order dead-ended on "Come back tomorrow" beside a detached button
+  competing with the leaderboard submit, labelled "Challenge", and unable to carry the rank.
+- **Share inside the game-over popup** — better, but that popup is the _first_ screen, so the
+  share went out before the player saw what they had unlocked.
+
+Constraints holding the current shape together:
+
+- **`GamePopup` stays out of the queue.** Its dismissal is gated by `useBackdropDismiss` so the
+  daily cannot pass it without submitting; folding it in would mean re-implementing that gate.
+  The flow is unified from that popup _onward_.
+- **The rank is lifted to `Game`.** `LeaderboardSubmit` → `onRankResolved` → `GamePopup` →
+  `Game` → `ShareStepPopup`, because the share is no longer a sibling of the leaderboard.
+- **The bottom-bar Share hides for the whole sequence**, not just while the popup is open —
+  `isBottomBarShareVisible(pendingPopup, endStep)`. It is the post-sequence fallback only.
+- **No story-card preview on the share step.** It would mean a `renderShareCard` canvas pass
+  on every game over instead of only when someone taps Share.
+
+**Trap, and the reason the sequence exists rather than more hand-wiring:** `MilestonePopup` and
+`AchievementUnlock` both called `onDismiss()` from inside a `setIndex` updater. Updaters must
+be pure — StrictMode double-invokes them — so `onDismiss` fired twice. That was invisible while
+dismissing meant `setShowUnlock(false)` twice, and became a real bug the moment dismissal
+advanced a queue: the share step was popped without ever rendering. Both now call `onDismiss`
+outside the updater. Any future step must not reintroduce a side effect in there.
+
 ### Not done yet
 
 The OG tags in `public/index.html` are static, so a `/daily` result and a
-`/challenge/<code>` invite both preview identically in WhatsApp. A per-route OG image
-(Vercel edge + Satori) is the obvious next win. Constraints if picked up: ~1200x630,
-**under 600 KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh
-mechanism, so iterating needs a cache-busting query param.
+`/challenge/<code>` invite both preview identically. A per-route OG image (Vercel edge +
+Satori) is still the obvious next win. Constraints if picked up: ~1200x630, **under 600
+KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh mechanism,
+so iterating needs a cache-busting query param.
+
+**Be clear about what it buys, though.** WhatsApp renders **no link preview at all** for a
+URL sitting in an image caption — which is the shape of every share that carries the card,
+i.e. the common case. The URL stays tappable, but `og-image.png` never appears there. A
+per-route OG image only helps the text-only tier, pasted links, and non-chat surfaces. It
+is not a fix for how a shared result looks in WhatsApp, and was ruled out of the 2026-08
+message work for that reason.
 
 A one-tap "Add to Story" needs the native `instagram-stories://share` scheme plus the
 `com.instagram.sharedSticker.backgroundImage` pasteboard key and a Meta App ID. That is

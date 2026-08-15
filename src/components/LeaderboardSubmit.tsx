@@ -1,52 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Trophy } from 'lucide-react';
-import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
-import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
+import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { getMedalEmoji, resolvePlayerRow } from '../utils/leaderboardUtils';
-import {
-  DailyResult,
-  getDisplayName,
-  saveDisplayName,
-  hasSubmittedToLeaderboard,
-  markLeaderboardSubmitted,
-  updateDailyResultWithLeaderboard,
-} from '../utils/playerStorage';
+import LeaderboardSkeleton from './LeaderboardSkeleton';
 
-function generateRandomName(): string {
-  return uniqueNamesGenerator({
-    dictionaries: [adjectives, animals],
-    separator: ' ',
-    style: 'capital',
-    length: 2,
-  });
-}
+const PREVIEW_ROWS = 3;
 
-interface LeaderboardSubmitProps {
-  dailyResult: DailyResult;
-  onSubmitted?: () => void;
+function PreviewHeader() {
+  return (
+    <div className="flex items-center gap-1 text-xs text-text-muted mb-2">
+      <Trophy className="w-3 h-3" />
+      <span>Today&apos;s Leaderboard</span>
+    </div>
+  );
 }
 
 // Leaderboard preview showing top 3 + player's entry if outside top 3
 function LeaderboardPreview({
   entries,
-  isLoading,
   playerRank,
   playerEntry,
 }: {
   entries: LeaderboardEntry[];
-  isLoading: boolean;
   playerRank: number | null;
   playerEntry: LeaderboardEntry | null;
 }) {
-  if (isLoading) {
-    return <div className="text-sm text-text-muted text-center py-2">Loading leaderboard...</div>;
-  }
-
   if (entries.length === 0) {
     return null;
   }
 
-  const top3 = entries.slice(0, 3);
+  const top3 = entries.slice(0, PREVIEW_ROWS);
   // The server's own row for the caller, not a lookup in `entries` — the list is a capped
   // slice, so searching it silently finds nothing once the player ranks below the cap.
   const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
@@ -54,10 +38,7 @@ function LeaderboardPreview({
 
   return (
     <div className="space-y-1">
-      <div className="flex items-center gap-1 text-xs text-text-muted mb-2">
-        <Trophy className="w-3 h-3" />
-        <span>Today's Leaderboard</span>
-      </div>
+      <PreviewHeader />
       {top3.map((entry) => (
         <div
           key={entry.rank}
@@ -84,115 +65,47 @@ function LeaderboardPreview({
   );
 }
 
-const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSubmitted }) => {
-  const [name, setName] = useState(() => getDisplayName() || generateRandomName());
-  const [alreadySubmitted, setAlreadySubmitted] = useState(hasSubmittedToLeaderboard());
+/**
+ * The leaderboard block inside the daily game-over popup: the top of today's board, and either
+ * the player's placing or the form to claim it.
+ *
+ * Presentational — all leaderboard state lives in `useDailyLeaderboard`, owned by `Game`. It used
+ * to hold its own `useLeaderboard` instance and report upward through `onSubmitted` /
+ * `onRankResolved` callbacks, which is how the popup's submit gate could get permanently stuck.
+ */
+const LeaderboardSubmit: React.FC<{ leaderboard: DailyLeaderboard }> = ({ leaderboard }) => {
+  const { entries, isLoading, rank, totalPlayers, playerEntry, submitted } = leaderboard;
+  const [name, setName] = useState(leaderboard.suggestedName);
 
-  const {
-    isSubmitting,
-    hasSubmitted,
-    submitError,
-    rank,
-    totalPlayers,
-    isLoading,
-    leaderboard,
-    playerEntry,
-    submitResult,
-    fetchLeaderboard,
-  } = useLeaderboard();
-
-  // Fetch leaderboard on mount
-  useEffect(() => {
-    fetchLeaderboard(dailyResult.date);
-  }, [dailyResult.date, fetchLeaderboard]);
-
-  // Keep the post-game leaderboard preview live: refetch on app resume / tab refocus,
-  // and poll every 15s while visible. Polling pauses when the tab is hidden.
-  useEffect(() => {
-    const date = dailyResult.date;
-    const refresh = () => {
-      void fetchLeaderboard(date);
-    };
-    let intervalId: number | null = null;
-    const start = () => {
-      if (intervalId !== null) return;
-      intervalId = window.setInterval(refresh, 15_000);
-    };
-    const stop = () => {
-      if (intervalId !== null) {
-        window.clearInterval(intervalId);
-        intervalId = null;
-      }
-    };
-    const onVisibility = () => {
-      if (document.hidden) {
-        stop();
-      } else {
-        refresh();
-        start();
-      }
-    };
-    window.addEventListener('appResume', refresh);
-    document.addEventListener('visibilitychange', onVisibility);
-    if (!document.hidden) start();
-    return () => {
-      window.removeEventListener('appResume', refresh);
-      document.removeEventListener('visibilitychange', onVisibility);
-      stop();
-    };
-  }, [dailyResult.date, fetchLeaderboard]);
-
-  // Check if already submitted on mount
-  useEffect(() => {
-    setAlreadySubmitted(hasSubmittedToLeaderboard());
-  }, []);
-
-  // Save leaderboard data to localStorage when rank is available
-  useEffect(() => {
-    if (rank && totalPlayers) {
-      updateDailyResultWithLeaderboard(rank, totalPlayers);
-    }
-  }, [rank, totalPlayers]);
-
-  const handleSubmit = async () => {
-    // Save name for future use
-    saveDisplayName(name);
-
-    const success = await submitResult(dailyResult, name || 'Anonymous');
-    if (success) {
-      markLeaderboardSubmitted();
-      setAlreadySubmitted(true);
-      onSubmitted?.();
-      // Refresh leaderboard to show updated entries
-      fetchLeaderboard(dailyResult.date);
-    }
-  };
-
-  // Already submitted - show leaderboard with player's position
-  if (alreadySubmitted || hasSubmitted) {
+  // Hold the skeleton until the board answers. Rendering the form first and swapping it for the
+  // player's placing a moment later is the flicker this replaces — and for anyone already on the
+  // board, the form was never the right screen to show.
+  if (isLoading && !submitted) {
     return (
       <div className="border-t border-border pt-4 mt-4">
-        <LeaderboardPreview
-          entries={leaderboard}
-          isLoading={isLoading}
-          playerRank={rank}
-          playerEntry={playerEntry}
-        />
+        <PreviewHeader />
+        <LeaderboardSkeleton rows={PREVIEW_ROWS} variant="compact" />
+      </div>
+    );
+  }
 
-        {rank &&
-          totalPlayers &&
-          totalPlayers > 1 &&
-          (() => {
-            const percentile = Math.round(((totalPlayers - rank) / (totalPlayers - 1)) * 100);
-            if (percentile <= 0) return null;
-            return (
-              <div className="mt-3 text-center">
-                <div className="text-sm text-accent font-medium font-body">
-                  You did better than {percentile}% of players
-                </div>
-              </div>
-            );
-          })()}
+  if (submitted) {
+    const percentile =
+      rank && totalPlayers && totalPlayers > 1
+        ? Math.round(((totalPlayers - rank) / (totalPlayers - 1)) * 100)
+        : null;
+
+    return (
+      <div className="border-t border-border pt-4 mt-4">
+        <LeaderboardPreview entries={entries} playerRank={rank} playerEntry={playerEntry} />
+
+        {percentile !== null && percentile > 0 && (
+          <div className="mt-3 text-center">
+            <div className="text-sm text-accent font-medium font-body">
+              You did better than {percentile}% of players
+            </div>
+          </div>
+        )}
 
         {totalPlayers && (
           <div className="mt-3 text-center">
@@ -205,15 +118,9 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
     );
   }
 
-  // Not submitted yet - show form
   return (
     <div className="border-t border-border pt-4 mt-4">
-      <LeaderboardPreview
-        entries={leaderboard}
-        isLoading={isLoading}
-        playerRank={null}
-        playerEntry={null}
-      />
+      <LeaderboardPreview entries={entries} playerRank={null} playerEntry={null} />
 
       <div className="mt-3 space-y-2">
         <input
@@ -225,15 +132,15 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
           className="w-full px-3 py-2 rounded-lg border border-border bg-bg text-text font-body text-sm focus:outline-none focus:ring-2 focus:ring-accent"
         />
         <button
-          onClick={handleSubmit}
-          disabled={isSubmitting}
+          onClick={() => void leaderboard.submit(name)}
+          disabled={leaderboard.isSubmitting}
           className="w-full py-2 bg-accent hover:bg-accent/90 text-white rounded-lg font-medium font-body text-sm transition-colors disabled:opacity-50"
         >
-          {isSubmitting ? 'Submitting...' : 'Submit to Leaderboard'}
+          {leaderboard.isSubmitting ? 'Submitting...' : 'Submit to Leaderboard'}
         </button>
-        {submitError && (
+        {leaderboard.submitError && (
           <div className="text-xs text-error text-center font-body">
-            {submitError === 'Already submitted today'
+            {leaderboard.submitError === 'Already submitted today'
               ? "You've already submitted today"
               : 'Failed to submit. Try again later.'}
           </div>

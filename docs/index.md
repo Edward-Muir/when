@@ -24,7 +24,9 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/difficulty-grading-rubric.md](events-images/difficulty-grading-rubric.md) —
   the grading criteria. Grade recognition and inferability; never grade crowding.
 - [sharing-challenges/](sharing-challenges/index.md) — **read before touching the challenge-code
-  encoding.** It is positional; a careless change misdecodes every link ever issued.
+  encoding.** It is positional; a careless change misdecodes every link ever issued. Also
+  **read before rewording any share**: the message deliberately carries no call to action, and
+  the caption deliberately repeats nothing the card already shows.
 
 ## By area
 
@@ -40,6 +42,8 @@ original per-session write-ups if you need the blow-by-blow.
   ship instantly), safe-area utilities, daily reminders
 - [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
   where the 20-category taxonomy came from
+- [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +
+  dedup) and the game-wide duplicate audit
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app

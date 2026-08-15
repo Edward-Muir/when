@@ -1,4 +1,9 @@
-import { dayDiff, getLocalDateString, msUntilNextLocalMidnight } from './puzzleDate';
+import {
+  dayDiff,
+  getDailyPuzzleNumber,
+  getLocalDateString,
+  msUntilNextLocalMidnight,
+} from './puzzleDate';
 
 // These tests assume TZ=America/Los_Angeles, pinned in package.json's `test` script. LA is
 // deliberately a zone where the local and UTC dates disagree for a large part of the day —
@@ -114,5 +119,47 @@ describe('dayDiff', () => {
     const before = getLocalDateString(new Date(2026, 10, 1, 20, 0));
     const after = getLocalDateString(new Date(2026, 10, 2, 20, 0));
     expect(dayDiff(before, after)).toBe(1);
+  });
+});
+
+describe('getDailyPuzzleNumber', () => {
+  it('numbers the epoch day #1 and counts up from there', () => {
+    expect(getDailyPuzzleNumber('2026-06-28')).toBe(1);
+    expect(getDailyPuzzleNumber('2026-06-29')).toBe(2);
+    expect(getDailyPuzzleNumber('2026-08-15')).toBe(49);
+  });
+
+  it('advances by exactly one per day across both DST transitions', () => {
+    // The whole point of going through `dayDiff`: a 23- or 25-hour local day must not skip
+    // or repeat a puzzle number, which is what local-date arithmetic would do here.
+    // Both runs have to sit *after* the epoch or the function correctly returns null —
+    // so the spring-forward case is the 2027 transition, not 2026's.
+    const springForward = ['2027-03-13', '2027-03-14', '2027-03-15'];
+    const fallBack = ['2026-10-31', '2026-11-01', '2026-11-02'];
+    for (const run of [springForward, fallBack]) {
+      const numbers = run.map((date) => getDailyPuzzleNumber(date));
+      expect(numbers[1]).toBe((numbers[0] as number) + 1);
+      expect(numbers[2]).toBe((numbers[1] as number) + 1);
+    }
+  });
+
+  it('never repeats a number across a full year of consecutive days', () => {
+    const seen = new Set<number>();
+    const cursor = new Date(2026, 6, 1);
+    for (let i = 0; i < 365; i += 1) {
+      const number = getDailyPuzzleNumber(getLocalDateString(cursor));
+      expect(number).not.toBeNull();
+      expect(seen.has(number as number)).toBe(false);
+      seen.add(number as number);
+      cursor.setDate(cursor.getDate() + 1);
+    }
+  });
+
+  it('returns null rather than a nonsense number for junk or pre-epoch dates', () => {
+    expect(getDailyPuzzleNumber('2026-06-27')).toBeNull(); // the day before #1
+    expect(getDailyPuzzleNumber('2020-01-01')).toBeNull();
+    expect(getDailyPuzzleNumber('tomorrow')).toBeNull();
+    expect(getDailyPuzzleNumber('2026-13-01')).toBeNull();
+    expect(getDailyPuzzleNumber('')).toBeNull();
   });
 });
