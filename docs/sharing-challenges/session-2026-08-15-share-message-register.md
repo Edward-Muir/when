@@ -3,9 +3,10 @@
 Started from a real WhatsApp screenshot of that morning's daily and the note that the share
 "doesn't give any kind of call to action", that the date was unwanted in both the image and
 the text, and that the whole thing "feels a bit disjointed". Ended with the caption and the
-card carrying different information, the date replaced by a puzzle number, and a firm
-recorded position on why there is no call to action. Durable decisions are in
-[index.md](index.md); this is what the reasoning actually was.
+card carrying different information, the date replaced by a puzzle number, a question in the
+caption after one false start in the opposite direction, and the share moved into the
+game-over popup where the result is. Durable decisions are in [index.md](index.md); this is
+what the reasoning actually was, including the part that got reversed.
 
 ## The screenshot diagnosed itself
 
