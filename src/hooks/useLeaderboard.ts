@@ -2,12 +2,11 @@ import { useState, useCallback } from 'react';
 import { DailyResult } from '../utils/playerStorage';
 import { getDeviceFingerprint } from '../utils/deviceFingerprint';
 
-// No `emojiGrid`: the board has never rendered another player's grid, and the share sheet
-// builds its own from local placement history. See the note in api/leaderboard/[date].ts.
+// Exactly what a row renders. The server also stores `emojiGrid` and `totalAttempts` but
+// sends neither — see the note in api/leaderboard/[date].ts.
 export interface LeaderboardEntry {
   displayName: string;
   correctCount: number;
-  totalAttempts: number;
   rank: number;
 }
 

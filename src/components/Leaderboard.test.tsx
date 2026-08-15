@@ -33,7 +33,6 @@ const makeEntries = (count: number): LeaderboardEntry[] =>
   Array.from({ length: count }, (_, i) => ({
     displayName: `Player ${i + 1}`,
     correctCount: Math.max(0, 25 - i),
-    totalAttempts: Math.max(0, 25 - i) + ((i % 5) + 1),
     rank: i + 1,
   }));
 
@@ -122,7 +121,6 @@ describe('Leaderboard', () => {
       const playerBelowCut: LeaderboardEntry = {
         displayName: 'Late Finisher',
         correctCount: 3,
-        totalAttempts: 7,
         rank: 312,
       };
       renderBoard({

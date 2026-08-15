@@ -1,13 +1,12 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji, getMistakeCount } from '../utils/leaderboardUtils';
+import { getMedalEmoji } from '../utils/leaderboardUtils';
 
 /** Shared geometry, so the sticky player row lines up exactly with the rows it floats over. */
 const ROW_LAYOUT = 'w-full px-4 py-3 flex items-center gap-3 text-left';
 
 const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
   const medal = getMedalEmoji(entry.rank);
-  const mistakes = getMistakeCount(entry);
 
   return (
     <>
@@ -23,13 +22,8 @@ const RowCells: React.FC<{ entry: LeaderboardEntry }> = ({ entry }) => {
         <div className="font-medium text-text truncate font-body">{entry.displayName}</div>
       </div>
 
-      <div className="shrink-0 flex items-baseline gap-1">
+      <div className="text-right shrink-0">
         <span className="text-lg font-bold font-mono text-accent">{entry.correctCount}</span>
-        {mistakes > 0 && (
-          <span className="text-sm font-mono text-text-muted" aria-label={`${mistakes} mistakes`}>
-            {mistakes}✗
-          </span>
-        )}
       </div>
     </>
   );

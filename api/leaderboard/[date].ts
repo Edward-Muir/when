@@ -15,14 +15,14 @@ interface LeaderboardEntry {
   timestamp: number;
 }
 
-// `emojiGrid` is deliberately absent. It is stored on the entry and validated on submit,
-// but nothing on the client has ever rendered another player's grid — the share sheet
-// builds its own from local placement history. It was the largest field per row and shipped
-// on every 15s poll to every open client.
+// Only what the board renders. `emojiGrid` and `totalAttempts` are stored on the entry and
+// used by submit-side validation, but neither reaches the client: no surface has ever shown
+// another player's grid (the share sheet builds its own from local placement history), and
+// `totalAttempts` was only ever used to derive a mistake count, which is the same number for
+// every player — see the scoring note in submit.ts. Both shipped on every 15s poll.
 interface PublicLeaderboardEntry {
   displayName: string;
   correctCount: number;
-  totalAttempts: number;
   rank: number;
 }
 
@@ -85,7 +85,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const toPublicEntry = (entry: LeaderboardEntry, rank: number): PublicLeaderboardEntry => ({
       displayName: displayNameFor(entry),
       correctCount: entry.correctCount,
-      totalAttempts: entry.totalAttempts,
       rank,
     });
 

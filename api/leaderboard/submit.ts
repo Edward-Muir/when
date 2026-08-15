@@ -2,6 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
 import { safeDisplayName } from './nameFilter';
 import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
+import { DAILY_HAND_SIZE } from './handSize';
 
 const redis = Redis.fromEnv();
 
@@ -147,8 +148,13 @@ function validateEmojiGrid(
   const greenCount = (body.emojiGrid.match(/🟩/g) || []).length;
   const redCount = (body.emojiGrid.match(/🟥/g) || []).length;
 
-  // Mistakes must be 0-5 (game ends when hand empties, starting with 5 cards)
-  if (redCount < 0 || redCount > 5) return null;
+  // A finished daily has exactly DAILY_HAND_SIZE mistakes — the hand empties one card per
+  // wrong placement. This stays a range rather than an equality check because a correct
+  // placement only redraws if the deck still has a card (src/utils/placementLogic.ts), so
+  // exhausting the day's themed pool would shrink the hand without a mistake and end the game
+  // early. That needs ~100 correct placements against a realistic best of ~30, but rejecting a
+  // legitimate run is worse than accepting a short one.
+  if (redCount < 0 || redCount > DAILY_HAND_SIZE) return null;
   if (body.totalAttempts !== body.correctCount + redCount) return null;
   if (greenCount + redCount !== body.totalAttempts) return null;
   if (greenCount !== body.correctCount) return null;
@@ -198,8 +204,6 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: validation.error });
     }
 
-    const mistakeCount = validation.redCount ?? 0;
-
     // Check if device already submitted today
     const submissionKey = `submission:${body.date}:${body.deviceId}`;
     const existingSubmission = await redis.get(submissionKey);
@@ -220,8 +224,18 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       timestamp: Date.now(),
     };
 
-    // Calculate score: correctCount * 100 - mistakeCount
-    const score = body.correctCount * 100 - mistakeCount;
+    // Rank on correct count alone.
+    //
+    // The score used to subtract the mistake count, described as a tie-break. It never was
+    // one: the daily deals a hand of DAILY_HAND_SIZE and a wrong placement discards without
+    // drawing a replacement, so the game ends precisely when the hand empties and **every
+    // finished daily has the same number of mistakes**. Subtracting it shifted every score
+    // by the same constant and ordered nothing. Don't reintroduce it — mistakes carry no
+    // information about how well someone did here.
+    //
+    // Equal correct counts therefore genuinely tie, and Redis orders them by the JSON member
+    // string. Any real tie-break has to be a new term (time of submission, say), not this one.
+    const score = body.correctCount * 100;
 
     // Store in sorted set
     const leaderboardKey = `leaderboard:${body.date}`;

@@ -1,10 +1,9 @@
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji, getMistakeCount, resolvePlayerRow } from './leaderboardUtils';
+import { getMedalEmoji, resolvePlayerRow } from './leaderboardUtils';
 
 const entry = (rank: number, overrides: Partial<LeaderboardEntry> = {}): LeaderboardEntry => ({
   displayName: `Player ${rank}`,
   correctCount: 20 - rank,
-  totalAttempts: 20 - rank + 2,
   rank,
   ...overrides,
 });
@@ -19,16 +18,6 @@ describe('getMedalEmoji', () => {
   it('returns an empty string past the podium, so the caller falls back to #N', () => {
     expect(getMedalEmoji(4)).toBe('');
     expect(getMedalEmoji(50)).toBe('');
-  });
-});
-
-describe('getMistakeCount', () => {
-  it('derives mistakes from the two counts the server sends', () => {
-    expect(getMistakeCount(entry(1, { correctCount: 12, totalAttempts: 15 }))).toBe(3);
-  });
-
-  it('never reports a negative count if the two counts disagree', () => {
-    expect(getMistakeCount(entry(1, { correctCount: 12, totalAttempts: 9 }))).toBe(0);
   });
 });
 

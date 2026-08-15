@@ -44,12 +44,3 @@ export function resolvePlayerRow(
 
   return { row: playerEntry, inList };
 }
-
-/**
- * Mistakes made, derived from the two counts the server sends. This is the leaderboard's
- * tie-break — score is `correctCount * 100 - mistakeCount` — so on a full board, where equal
- * scores sit next to each other everywhere, it is the only thing that explains the ordering.
- */
-export function getMistakeCount(entry: LeaderboardEntry): number {
-  return Math.max(0, entry.totalAttempts - entry.correctCount);
-}
