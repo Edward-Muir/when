@@ -1,6 +1,6 @@
 import { HistoricalEvent, WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
-import { getLocalDateString } from './puzzleDate';
+import { getDailyPuzzleNumber, getLocalDateString } from './puzzleDate';
 import { renderShareFile, ShareCardSpec } from './shareImage';
 
 /**
@@ -8,6 +8,31 @@ import { renderShareFile, ShareCardSpec } from './shareImage';
  * title and the OG tags all say "When?". The share text and the story card must match.
  */
 const BRAND = 'When?';
+
+/**
+ * The one line that tells a recipient what the thing is.
+ *
+ * It was already `shareApp()`'s invite copy; it is now on every share, because the message
+ * used to name a score and a rank and never once said what the game *does* — a non-player
+ * learned only where the link went.
+ *
+ * It is deliberately a description, not an exhortation. Nothing in a share addresses the
+ * reader or asks them for anything: no "your turn", no "can you beat it". Wordle's share
+ * has no call to action at all — `Wordle 1,234 4/6` and a grid, no URL, no verb — and it
+ * spread precisely because it reads as a receipt rather than a claim, and because a
+ * recipient who cannot decode it has to ask. Copy that performs enthusiasm at the reader is
+ * the opposite of that register. Do not reintroduce it.
+ */
+const DESCRIPTOR = 'put history in order.';
+
+/**
+ * What a challenge link actually does, stated flatly.
+ *
+ * This was `Same cards, same order — beat my timeline.` in `CustomGameSettings`. The first
+ * half is a fact about the link and earns its place; "beat my timeline" is the exhortative
+ * register `DESCRIPTOR` explains we do not use, so it is gone.
+ */
+const CHALLENGE_PROMISE = 'Same cards, same order.';
 
 /** Used as an href by the Custom page's challenge-code box, so it keeps its scheme. */
 export const CHALLENGE_URL = 'https://www.play-when.com/challenge';
@@ -57,34 +82,79 @@ function formatRank(rank: number): string {
 }
 
 /**
- * Assemble the three-part message: an identity line, a stat line, then the link alone.
+ * Assemble the message: an identity line, any body lines, then the link alone.
  *
  * The link is last and is the *only* URL in the message — WhatsApp and iMessage preview
  * the first URL they find, so a second one upstream would silently change which page
  * gets the preview card.
  */
-function composeShareText(headline: string, stats: string[], url: string): string {
-  const statLine = stats.filter(Boolean).join(' — ');
-  return `${headline}\n${statLine}\n\n${url}`;
+function composeShareText(headline: string, lines: string[], url: string): string {
+  const body = lines.filter(Boolean).join('\n');
+  return body ? `${headline}\n${body}\n\n${url}` : `${headline}\n\n${url}`;
+}
+
+/**
+ * The two forms every share needs.
+ *
+ * The card and the caption used to say the same thing twice — the message repeated the
+ * date, the score, the rank and the URL that were all already burned into the image, so
+ * it did no work at all. They now split the job: the image is the receipt, the caption is
+ * identity plus the link.
+ *
+ * That split only holds while the image actually travels. `shareContent`'s lower tiers
+ * fall back to text alone and then to the clipboard, and on those paths a stats-free
+ * caption would send a bare invite with the player's result missing entirely — so
+ * `textOnly` keeps the stat line. Callers hand both to `shareContent`, which picks.
+ */
+export interface ShareMessage {
+  /** Caption for when the story card travels alongside it. Carries no stats. */
+  withCard: string;
+  /** Used when there is no card, so the stat line has to survive in the text. */
+  textOnly: string;
+}
+
+/**
+ * `Daily #49 · Everything` — the card's line under the wordmark.
+ *
+ * This printed the date until 2026-08. A shared image is a forwardable object, so "Aug 15"
+ * went stale overnight and duplicated the timestamp the chat app already stamps on the
+ * bubble. `getDailyPuzzleNumber` explains why a number is the better identifier; the
+ * numberless form is the fallback if the date is unparseable.
+ */
+function dailyEyebrow(date: string, theme: string): string {
+  const puzzleNumber = getDailyPuzzleNumber(date);
+  return puzzleNumber ? `Daily #${puzzleNumber} · ${theme}` : `Daily · ${theme}`;
+}
+
+/** `When? #49 — put history in order.`, or the numberless form for a junk date. */
+function dailyHeadline(date: string): string {
+  const puzzleNumber = getDailyPuzzleNumber(date);
+  return puzzleNumber ? `${BRAND} #${puzzleNumber} — ${DESCRIPTOR}` : `${BRAND} — ${DESCRIPTOR}`;
 }
 
 export interface DailyShareFacts {
   date: string;
-  theme: string;
   correctCount: number;
   leaderboardRank?: number;
 }
 
 /** The daily message, shared by the game-over screen and the home screen's result card. */
-export function generateDailyShareText(facts: DailyShareFacts): string {
-  const { date, theme, correctCount, leaderboardRank } = facts;
+export function generateDailyShareText(facts: DailyShareFacts): ShareMessage {
+  const { date, correctCount, leaderboardRank } = facts;
   // +1 for the seed card the timeline starts with, matching the on-screen count.
   const timelineLength = correctCount + 1;
-  return composeShareText(
-    `${BRAND} · ${formatShareDate(date)} · ${theme}`,
-    [`Timeline of ${timelineLength}`, leaderboardRank ? formatRank(leaderboardRank) : ''],
-    DISPLAY_DAILY_URL
-  );
+  const headline = dailyHeadline(date);
+  const stats = [
+    `Timeline of ${timelineLength}`,
+    leaderboardRank ? formatRank(leaderboardRank) : '',
+  ]
+    .filter(Boolean)
+    .join(' — ');
+
+  return {
+    withCard: composeShareText(headline, [], DISPLAY_DAILY_URL),
+    textOnly: composeShareText(headline, [stats], DISPLAY_DAILY_URL),
+  };
 }
 
 /**
@@ -96,33 +166,39 @@ export function generateDailyShareText(facts: DailyShareFacts): string {
  * rule-sets that the UI does not offer — everything that is not the daily is a Custom
  * game. Do not reintroduce a mode word here.
  */
-export function generateShareText(state: WhenGameState): string {
+export function generateShareText(state: WhenGameState): ShareMessage {
   const { gameMode, placementHistory, lastConfig, players, winners, roundNumber } = state;
   const playerCount = players.length;
   const correctCount = placementHistory.filter((p) => p).length;
 
   if (gameMode === 'daily') {
     const date = lastConfig?.dailySeed || getLocalDateString();
-    return generateDailyShareText({
-      date,
-      theme: getThemeDisplayName(getDailyTheme(date)),
-      correctCount,
-    });
+    return generateDailyShareText({ date, correctCount });
   }
 
   const challengeCode = lastConfig?.challengeCode;
   const url = challengeCode ? `${DISPLAY_URL}/challenge/${challengeCode}` : DISPLAY_URL;
+  // A challenge link replays the identical deck, which is the whole reason to follow it —
+  // a plain fact about the link, so it rides along even on the stats-free caption.
+  const promise = challengeCode ? CHALLENGE_PROMISE : '';
 
   if (playerCount > 1) {
     const winnerNames = winners.map((w) => w.name).join(', ');
-    return composeShareText(
-      `${BRAND} · ${playerCount} players`,
-      [winnerNames ? `${winnerNames} wins` : 'No winner', `${roundNumber} rounds`],
-      url
+    const headline = `${BRAND} · ${playerCount} players — ${DESCRIPTOR}`;
+    const stats = [winnerNames ? `${winnerNames} wins` : 'No winner', `${roundNumber} rounds`].join(
+      ' — '
     );
+    return {
+      withCard: composeShareText(headline, [promise], url),
+      textOnly: composeShareText(headline, [stats, promise], url),
+    };
   }
 
-  return composeShareText(BRAND, [`Timeline of ${correctCount}`], url);
+  const headline = `${BRAND} — ${DESCRIPTOR}`;
+  return {
+    withCard: composeShareText(headline, [promise], url),
+    textOnly: composeShareText(headline, [`Timeline of ${correctCount}`, promise], url),
+  };
 }
 
 /**
@@ -142,15 +218,26 @@ export function generateShareText(state: WhenGameState): string {
  * Returns true if the caller should show the "copied to clipboard" toast.
  */
 export async function shareContent(
-  text: string,
+  message: string | ShareMessage,
   title: string,
   file?: File | null
 ): Promise<boolean> {
   const canShareFiles =
     !!file && typeof navigator.canShare === 'function' && navigator.canShare({ files: [file] });
 
+  // The caption drops the stats only because the card is carrying them, so the form is
+  // chosen per tier rather than once: tiers 1-2 ship the card, tier 3 and the clipboard do
+  // not, and on those a stats-free caption would send a bare invite with the player's
+  // result missing. Tier 3 is reached both when there was never a file and when both file
+  // payloads failed, which is why this is not a single up-front decision.
+  const { withCard, textOnly } =
+    typeof message === 'string' ? { withCard: message, textOnly: message } : message;
+
   if (canShareFiles && navigator.share) {
-    const payloads: ShareData[] = [{ text, files: [file as File] }, { files: [file as File] }];
+    const payloads: ShareData[] = [
+      { text: withCard, files: [file as File] },
+      { files: [file as File] },
+    ];
     for (const payload of payloads) {
       try {
         await navigator.share(payload);
@@ -164,7 +251,7 @@ export async function shareContent(
 
   if (navigator.share) {
     try {
-      await navigator.share({ title, text });
+      await navigator.share({ title, text: textOnly });
       return false; // Native share handled it, no toast needed
     } catch (err) {
       // User cancelled or share failed, fall through to clipboard
@@ -176,12 +263,12 @@ export async function shareContent(
 
   // Fallback: copy to clipboard
   try {
-    await navigator.clipboard.writeText(text);
+    await navigator.clipboard.writeText(textOnly);
     return true; // Show toast
   } catch (err) {
     // Final fallback for older browsers
     const textArea = document.createElement('textarea');
-    textArea.value = text;
+    textArea.value = textOnly;
     textArea.style.position = 'fixed';
     textArea.style.left = '-9999px';
     document.body.appendChild(textArea);
@@ -229,7 +316,7 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
   const spec: ShareCardSpec = isDaily
     ? {
         event: seedEvent,
-        eyebrow: `Daily · ${formatShareDate(date)} · ${getThemeDisplayName(getDailyTheme(date))}`,
+        eyebrow: dailyEyebrow(date, getThemeDisplayName(getDailyTheme(date))),
         score: String(correctCount + 1),
         scoreLabel: scoreUnit(correctCount + 1),
         url: DISPLAY_DAILY_URL,
@@ -249,11 +336,21 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
 }
 
 /**
+ * The Custom page's challenge invite, sent *before* a game is played.
+ *
+ * There is no result to report, so this has no stats form — unlike the post-game shares it
+ * is the same string on every tier.
+ */
+export function generateChallengeInviteText(url: string): string {
+  return composeShareText(`${BRAND} — ${DESCRIPTOR}`, [CHALLENGE_PROMISE], url);
+}
+
+/**
  * Share the app (invite link) using Web Share API or fallback to clipboard
  * Returns true if copied to clipboard (toast should be shown)
  */
 export async function shareApp(): Promise<boolean> {
-  const text = `${BRAND} — put history in order.\n\n${DISPLAY_URL}`;
+  const text = `${BRAND} — ${DESCRIPTOR}\n\n${DISPLAY_URL}`;
   return shareContent(text, 'When? - The Timeline Game');
 }
 
@@ -273,12 +370,12 @@ export async function shareDailyResult(
   } = {}
 ): Promise<boolean> {
   const { leaderboardRank, seedEvent } = options;
-  const text = generateDailyShareText({ date, theme, correctCount, leaderboardRank });
+  const text = generateDailyShareText({ date, correctCount, leaderboardRank });
 
   const file = await buildShareFile(
     {
       event: seedEvent,
-      eyebrow: `Daily · ${formatShareDate(date)} · ${theme}`,
+      eyebrow: dailyEyebrow(date, theme),
       score: String(correctCount + 1),
       scoreLabel: scoreUnit(correctCount + 1),
       detail: leaderboardRank ? formatRank(leaderboardRank) : undefined,

@@ -42,7 +42,7 @@ import { getImageUrl } from './cloudinaryImage';
  *
  * The art is fetched through `getImageUrl(url, 'detail')` — the existing 768x768 rung,
  * **not** a new transform string. `detail` rather than `thumbnail` because the hero is
- * drawn at 660px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
+ * drawn at 680px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
  * soft, while 768 downscales cleanly.
  *
  * Do not introduce a bespoke size for this surface. Cost scales as
@@ -65,14 +65,20 @@ import { getImageUrl } from './cloudinaryImage';
 export const WIDTH = 1080;
 export const HEIGHT = 1350;
 
-/** Hero art. As a fraction of WIDTH this is what governs how big the art looks in chat. */
-const CARD_SIZE = 640;
+/**
+ * Hero art. As a fraction of WIDTH this is what governs how big the art looks in chat.
+ *
+ * 640 -> 680 in 2026-08, paid for by dropping the seed card's year line: the vertical
+ * budget is the only thing capping this, and that line was the slack. Still inside the
+ * `detail` rung's 768px, so the art continues to downscale rather than upscale — going
+ * past 768 would mint a new Cloudinary rung, which the header forbids.
+ */
+const CARD_SIZE = 680;
 
 /** Palette lifted from `src/index.css` (.dark) — the card is always dark. */
 const INK = '#f4f1ec';
 /** 0.78, not the 0.62 this started at: at ~16px on screen the dimmer value vanished. */
 const INK_MUTED = 'rgba(244, 241, 236, 0.78)';
-const ACCENT = '#d4a84b';
 const FALLBACK_BASE = '#0d1b2a';
 
 const DISPLAY_FONT = '"Playfair Display", Georgia, serif';
@@ -81,7 +87,7 @@ const BODY_FONT = 'Inter, system-ui, sans-serif';
 export interface ShareCardSpec {
   /** The pre-placed seed card, used as hero art. Omit to render a typographic card. */
   event?: HistoricalEvent | null;
-  /** Small line under the wordmark, e.g. "Daily · Aug 15 · Everything". Omitted for a
+  /** Small line under the wordmark, e.g. "Daily #49 · Everything". Omitted for a
    *  non-daily game, which has no mode to name. */
   eyebrow?: string;
   /** The number that is the whole point, e.g. "11". */
@@ -336,9 +342,15 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     // Seed card caption — safe to name, it is on the board before the first move.
     // 42px floor: the longest names in the catalogue (35 chars) settle around 46px, so
     // the floor is headroom rather than something reached in practice.
+    //
+    // The year is deliberately absent. It used to sit on a line below this one, and
+    // printing it made the share completely legible: score, rank, event, year, link — a
+    // recipient could read the whole thing and had no reason to ask about any of it.
+    // Withholding it is the one lever this card has on Wordle's actual mechanism, where a
+    // grid you cannot decode is what makes someone ask what the game is. The in-game seed
+    // card still shows its year; only this render omits it.
     if (spec.event) {
-      fittedCenteredText(ctx, spec.event.friendly_name, 946, 900, '600', 58, DISPLAY_FONT, INK, 42);
-      fittedCenteredText(ctx, formatYear(spec.event.year), 1000, 900, '500', 42, BODY_FONT, ACCENT);
+      fittedCenteredText(ctx, spec.event.friendly_name, 986, 900, '600', 58, DISPLAY_FONT, INK, 42);
     }
 
     // --- Score: numeral and unit as one group, rank on its own line beneath ---
@@ -365,11 +377,6 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
   } catch {
     return null;
   }
-}
-
-/** "1969" / "44 BC" — matches how years read on the cards. */
-function formatYear(year: number): string {
-  return year < 0 ? `${Math.abs(year)} BC` : `${year}`;
 }
 
 /** Render the card and wrap it as a `File` ready for `navigator.share`. */

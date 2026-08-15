@@ -24,7 +24,9 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/difficulty-grading-rubric.md](events-images/difficulty-grading-rubric.md) —
   the grading criteria. Grade recognition and inferability; never grade crowding.
 - [sharing-challenges/](sharing-challenges/index.md) — **read before touching the challenge-code
-  encoding.** It is positional; a careless change misdecodes every link ever issued.
+  encoding.** It is positional; a careless change misdecodes every link ever issued. Also
+  **read before rewording any share**: the message deliberately carries no call to action, and
+  the caption deliberately repeats nothing the card already shows.
 
 ## By area
 

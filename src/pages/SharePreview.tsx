@@ -4,13 +4,8 @@ import type { HistoricalEvent } from '../types';
 import { loadAllEvents } from '../utils/eventLoader';
 import { getDailyPreviewEvent } from '../utils/dailyConfig';
 import { getDailyTheme, getThemeDisplayName } from './../utils/dailyTheme';
-import { getLocalDateString } from '../utils/puzzleDate';
-import {
-  formatShareDate,
-  generateDailyShareText,
-  generateShareText,
-  shareContent,
-} from '../utils/share';
+import { getDailyPuzzleNumber, getLocalDateString } from '../utils/puzzleDate';
+import { generateDailyShareText, generateShareText, shareContent } from '../utils/share';
 import { renderShareCard, renderShareFile, ShareCardSpec } from '../utils/shareImage';
 import { WhenGameState } from '../types';
 
@@ -60,11 +55,13 @@ const SharePreview: React.FC = () => {
   const dailySeed = getDailyPreviewEvent(events, today);
   const seedEvent = seedIndex === 0 ? dailySeed : (withArt[seedIndex % withArt.length] ?? null);
 
+  const puzzleNumber = getDailyPuzzleNumber(today);
+
   const spec: ShareCardSpec =
     preset === 'daily'
       ? {
           event: seedEvent,
-          eyebrow: `Daily · ${formatShareDate(today)} · ${theme}`,
+          eyebrow: puzzleNumber ? `Daily #${puzzleNumber} · ${theme}` : `Daily · ${theme}`,
           score: '11',
           scoreLabel: 'events',
           detail: '#47 globally',
@@ -84,11 +81,10 @@ const SharePreview: React.FC = () => {
             url: 'play-when.com/challenge/able-baker-cane',
           };
 
-  const text =
+  const message =
     preset === 'daily'
       ? generateDailyShareText({
           date: today,
-          theme,
           correctCount: 10,
           leaderboardRank: 47,
         })
@@ -126,7 +122,7 @@ const SharePreview: React.FC = () => {
 
   const share = async () => {
     const file = await renderShareFile(spec, 'when-preview.jpg');
-    const copied = await shareContent(text, 'When? - The Timeline Game', file);
+    const copied = await shareContent(message, 'When? - The Timeline Game', file);
     setStatus(copied ? 'copied to clipboard (no share sheet)' : 'handed to the share sheet');
   };
 
@@ -196,9 +192,24 @@ const SharePreview: React.FC = () => {
               className="w-[270px] rounded-xl border border-border shadow-sm"
             />
           )}
-          <pre className="font-mono text-sm whitespace-pre-wrap bg-surface border border-border rounded-xl p-4 max-w-md mt-3">
-            {text}
-          </pre>
+          {/* Both forms, because they are chosen per share tier and only one is ever
+              visible on a device. `withCard` is what WhatsApp/Messages get; `textOnly`
+              is the tier-3 and clipboard fallback, and is the only one carrying stats. */}
+          <div className="mt-3 space-y-3 max-w-md">
+            {(
+              [
+                ['with card (tiers 1–2)', message.withCard],
+                ['text only (tier 3 + clipboard)', message.textOnly],
+              ] as const
+            ).map(([label, body]) => (
+              <div key={label}>
+                <p className="font-body text-xs text-text-muted mb-1">{label}</p>
+                <pre className="font-mono text-sm whitespace-pre-wrap bg-surface border border-border rounded-xl p-4">
+                  {body}
+                </pre>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

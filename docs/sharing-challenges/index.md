@@ -82,11 +82,59 @@ The one deviation is `crossOrigin = 'anonymous'`, which is mandatory (an untagge
 taints the canvas and `toBlob()` throws) and costs at most one extra fetch of an
 already-derived asset.
 
+### The image is the receipt; the caption is not a second copy of it
+
+Until 2026-08 the message repeated the card almost token for token — date, score, rank and
+URL were all burned into the image _and_ restated in the caption, so the text did no work
+at all. They now split the job:
+
+- **The card** carries the puzzle identity, the score, the rank and the URL.
+- **The caption** carries identity, one descriptive line, and the link. No stats.
+
+`generateDailyShareText` and `generateShareText` therefore return a `ShareMessage` with two
+forms rather than a single string. `withCard` is the stats-free caption; `textOnly` keeps
+the stat line, because `shareContent`'s tier-3 and clipboard paths ship no image and a
+stats-free caption there would send a bare invite with the player's result missing. The
+choice is made **per tier inside `shareContent`**, not once up front — tier 3 is reached
+both when there was never a file and when both file payloads failed.
+
+### No copy that addresses the reader
+
+Recorded because "add a call to action" is a recurring and reasonable-sounding suggestion.
+
+**Wordle's share has no call to action at all** — `Wordle 1,234 4/6` plus the grid, no URL,
+no verb, nothing aimed at the recipient. It avoids reading as advertising because it is a
+_receipt_ rather than a _claim_, and it spread because a recipient who cannot decode it has
+to ask what it is. "Your turn", "can you beat it", "challenge a friend" are the opposite
+register and were explicitly rejected.
+
+What replaces them is `DESCRIPTOR` — `put history in order.` — which was already the
+app-invite line. It states what the game is, which is the thing the old message never did:
+a non-player learned only where the link went. A test pins both halves (no exhortation
+anywhere; the descriptor present on every share).
+
+The one thing we can borrow from the grid is **withholding**, not the squares themselves —
+see the seed-year note below.
+
 ### Decisions in force on the message
 
 - **The brand keeps its question mark.** "When?", matching the home-screen H1, the
   manifest, the page title and the OG tags. The share text was the one place that dropped
   it. `BRAND` in `share.ts` is the single source; the story card's wordmark matches.
+- **The puzzle is identified by number, not date.** `Daily #49`, from
+  `getDailyPuzzleNumber` in `puzzleDate.ts` (epoch `2026-06-28` = #1, immutable — moving it
+  renumbers every puzzle retroactively). A shared image is a forwardable object, so "Aug 15"
+  went stale overnight and duplicated the timestamp the chat app already stamps on the
+  bubble. Same reasoning as `Connections #768`. It delegates to `dayDiff`, which reads both
+  operands as UTC midnight — hand-rolled local-date arithmetic breaks on the two DST days a
+  year. Pre-epoch and junk dates return `null` and fall back to a numberless label rather
+  than printing `#NaN`. `formatShareDate` survives for other callers.
+- **The shared card omits the seed card's year.** Printing it made the whole share legible
+  — score, rank, event, year, link — so a recipient could read it all and had no reason to
+  ask about any of it. Withholding one fact is the only lever this card has on Wordle's
+  actual mechanism. **The in-game seed card still shows its year**; only this render omits
+  it. (`shareImage.ts` no longer has a local `formatYear` — the one in `gameLogic.ts` was
+  always the real one.)
 - **No emoji grid.** Removed 2026-08. Unlike Wordle's 2D narrative, ours was a 1D run of
   greens with at most `handSize` reds, restating the number on the line below it and
   growing _longer_ the better you played. `generateEmojiGrid()` still exists — the daily
@@ -97,6 +145,10 @@ already-derived asset.
   Guarded by a test. See the CLAUDE.md naming note.
 - **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
   `bestStreak` is still tracked in game state and on the stored daily result.
+- **A challenge link says what it does, and nothing more.** `Same cards, same order.` is a
+  fact about the link and earns its place; the `— beat my timeline.` that used to follow it
+  is the exhortative register above. It lived as a fifth inline literal in
+  `CustomGameSettings.tsx` and is now `generateChallengeInviteText` in `share.ts`.
 - **The card is single-line everywhere.** Layout is fixed baselines, so a second line
   anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
   instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
@@ -128,10 +180,17 @@ already-derived asset.
 ### Not done yet
 
 The OG tags in `public/index.html` are static, so a `/daily` result and a
-`/challenge/<code>` invite both preview identically in WhatsApp. A per-route OG image
-(Vercel edge + Satori) is the obvious next win. Constraints if picked up: ~1200x630,
-**under 600 KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh
-mechanism, so iterating needs a cache-busting query param.
+`/challenge/<code>` invite both preview identically. A per-route OG image (Vercel edge +
+Satori) is still the obvious next win. Constraints if picked up: ~1200x630, **under 600
+KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh mechanism,
+so iterating needs a cache-busting query param.
+
+**Be clear about what it buys, though.** WhatsApp renders **no link preview at all** for a
+URL sitting in an image caption — which is the shape of every share that carries the card,
+i.e. the common case. The URL stays tappable, but `og-image.png` never appears there. A
+per-route OG image only helps the text-only tier, pasted links, and non-chat surfaces. It
+is not a fix for how a shared result looks in WhatsApp, and was ruled out of the 2026-08
+message work for that reason.
 
 A one-tap "Add to Story" needs the native `instagram-stories://share` scheme plus the
 `com.instagram.sharedSticker.backgroundImage` pasteboard key and a Meta App ID. That is
