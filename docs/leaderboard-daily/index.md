@@ -119,18 +119,23 @@ beside it were both redundant with that read. One `ZRANGE` now serves rows, tota
 - **The card carried `onClick={onClose}` alongside the backdrop's**, so tapping any row
   dismissed the board — harmless at five rows, fatal once it scrolls. `Leaderboard.test.tsx`
   pins it, and is the repo's first React Testing Library test.
-- **On phones the card is `max-h-full`, deliberately.** It fills the backdrop's padded box, so
-  the gap to the screen edge is identical on all four sides and the `p-4` is the single thing
-  that sets it. A `vh` or pixel height cap was tried and reverted: any cap shorter than the
-  viewport makes the top and bottom gaps larger than the sides. Above `sm:` the 400px width cap
-  puts the side gaps in the hundreds, so equal margins are unreachable and the height _is_
-  capped — otherwise the card is a very tall, narrow column.
+- **The card keeps a real height cap (`max-h-[min(75vh,520px)]`). Don't remove it.** Making it
+  fill the backdrop's padded box — to get an even gap on all four sides — shipped broken and had
+  to be hot-fixed. `p-4` is 16px, but on iOS the webview runs under the status bar
+  (`overlaysWebView: true`, see [../mobile-ios/index.md](../mobile-ios/index.md)), so the card's
+  top edge sat under the clock and camera and the list ran off the bottom of the screen. A short
+  centred card clears the inset by virtue of being centred, without having to know the inset.
+- **A headless browser cannot catch that.** `env(safe-area-inset-*)` is 0 in Chromium, so the
+  overlap was invisible in a Playwright pass at 390×844 that otherwise measured a perfect
+  16/16/16/16 frame. Height and full-bleed changes here need a real device or the installed PWA.
+  Related: an even margin on all four sides and a card shorter than the viewport are mutually
+  exclusive on a phone — if both are asked for, say so rather than picking one.
 - Beware sizing this against the old five-row modal. A `max-h` was always present, but at five
   rows the card was content-sized (~350–440px) and never reached it. Check heights against a
   full board.
 - The list's `min-h` is capped against the viewport (`min(320px,30vh)`) rather than a flat pixel
   floor, so it can never demand more than the card has — on a landscape phone the card is only
-  ~358px and `overflow-hidden` would silently eat the bottom of the list.
+  ~292px and `overflow-hidden` would silently eat the bottom of the list.
 - Truncation is disclosed in the **player-count bar** ("Showing 100 of 900 players today"), not
   a footer. There was briefly a footer line about ranks drifting through the day; it was cut as
   noise. If the ~50-hour fill window ever needs explaining again, it belongs somewhere a player
