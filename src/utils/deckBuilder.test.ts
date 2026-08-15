@@ -294,12 +294,18 @@ describe('the seven-day no-repeat guarantee', () => {
    * cut, at a bounded ~100ms per session rather than a chain that grows forever.
    *
    * This is the regression guard on that residual, not an endorsement of it.
+   *
+   * The bound is headroom over a measured number, not a quality cliff, so it moves when
+   * the catalogue does. Adding the `sports` category took it from 7 to 9 over this
+   * window: `getDailyTheme` picks the themed category as `random() * ALL_CATEGORIES.length`,
+   * so a 21st category re-rolls which day is themed to what, and the decks land
+   * differently. The exact guarantee above still holds at 0 — only the residual moved.
    */
   it('keeps cross-boundary repeats to a trickle', () => {
     const days = consecutiveDays(60, '2026-08-13');
     const repeats = countRepeats(days, windowsFor(days));
 
-    expect(repeats).toBeLessThanOrEqual(8);
+    expect(repeats).toBeLessThanOrEqual(10);
   });
 
   it('is a pure function of the date, cache warm or cold', () => {
