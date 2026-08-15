@@ -42,7 +42,9 @@ migrating in place.
 ## Milestones ("Personal Best" popups)
 
 Text-and-icon popups shown after the game-over popup and **before** the achievement-unlock
-modal, revealed one at a time.
+modal, revealed one at a time. Both are steps in the end-of-game sequence, which always ends
+on a share step — see `src/hooks/useEndOfGameSequence.ts` and
+[sharing-challenges](../sharing-challenges/index.md#the-share-is-the-last-step-of-the-end-of-game-sequence).
 
 - **Ephemeral — never persisted.** They celebrate a moment; they are not achievements.
 - **Only fire when the previous record was `> 0`**, so a first-ever game and trivial "1 day"
@@ -71,8 +73,12 @@ and the snapshot→record→detect flow.
 - Unlock reveal uses the "Staggered Shine" animation, chosen from four candidates compared in a
   dev-only jig (`/anim-jig`). Badge art is prefetched at game over, the moment unlocks are known,
   so the modal shows art instantly.
-- Unlock sequencing is driven by **popup-dismissal transitions, not timers** — an effect watches
-  `pendingPopup?.type`.
+- Unlock sequencing is driven by **popup-dismissal transitions, not timers**. The queue lives in
+  `useEndOfGameSequence`, which starts when `pendingPopup?.type` goes from `'gameOver'` to
+  undefined and advances as each step dismisses.
+- **Do not call `onDismiss` from inside a `setIndex` updater** in either reveal modal. Updaters
+  must be pure and StrictMode double-invokes them, so the dismissal fired twice and silently
+  skipped the next step of the sequence.
 
 ## Known issue: the difficulty badge family has an inverted gradient
 

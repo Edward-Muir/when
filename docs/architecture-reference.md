@@ -41,7 +41,8 @@ item is hidden outside a game.
 read first; `useGameStatsRecorder` is where a finished game reaches `statsStorage`. The
 rest are single-purpose and named for what they do (`useDragAndDrop`, `useLeaderboard`,
 `useHaptics`, `useTheme`, `useScreenShake`, `useVersionCheck`, `usePWAInstall`, `useToday`,
-`useImagePrefetch`, `useDailyReminder`).
+`useImagePrefetch`, `useDailyReminder`, `useEndOfGameSequence` — the post-game screen queue:
+milestones, achievements, then always the share).
 
 ## Utils
 

@@ -39,15 +39,13 @@ const MilestonePopup: React.FC<MilestonePopupProps> = ({ open, milestones, onDis
     if (open) setIndex(0);
   }, [open]);
 
+  // `onDismiss` is called here rather than inside a `setIndex` updater — updaters must be
+  // pure, and StrictMode double-invokes them, so a side effect in there fires twice. See the
+  // matching note in `AchievementUnlock`.
   const advance = useCallback(() => {
-    setIndex((i) => {
-      if (i >= milestones.length - 1) {
-        onDismiss();
-        return i;
-      }
-      return i + 1;
-    });
-  }, [milestones.length, onDismiss]);
+    if (index >= milestones.length - 1) onDismiss();
+    else setIndex((i) => i + 1);
+  }, [index, milestones.length, onDismiss]);
 
   useEffect(() => {
     if (!isVisible) return;

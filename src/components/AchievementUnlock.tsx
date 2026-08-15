@@ -35,15 +35,14 @@ const AchievementUnlock: React.FC<AchievementUnlockProps> = ({
     if (open) setIndex(0);
   }, [open]);
 
+  // `onDismiss` is called here rather than inside a `setIndex` updater. Updaters must be
+  // pure: StrictMode invokes them twice to surface exactly this, so a side effect in there
+  // fires twice. That was invisible while dismissing was idempotent, and became a real bug
+  // the moment `onDismiss` advanced a queue — the end-of-game sequence skipped a step.
   const advance = useCallback(() => {
-    setIndex((i) => {
-      if (i >= achievements.length - 1) {
-        onDismiss();
-        return i;
-      }
-      return i + 1;
-    });
-  }, [achievements.length, onDismiss]);
+    if (index >= achievements.length - 1) onDismiss();
+    else setIndex((i) => i + 1);
+  }, [index, achievements.length, onDismiss]);
 
   useEffect(() => {
     if (!isVisible) return;

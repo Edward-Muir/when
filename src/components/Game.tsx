@@ -31,7 +31,9 @@ import { GameRules } from './Menu';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 import AchievementUnlock from './AchievementUnlock';
+import ShareStepPopup from './ShareStepPopup';
 import MilestonePopup from './MilestonePopup';
+import { useEndOfGameSequence, EndOfGameStep } from '../hooks/useEndOfGameSequence';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { getVignetteColor } from '../utils/vignettePulse';
 import { ACHIEVEMENTS } from '../data/achievements';
@@ -101,6 +103,21 @@ function shouldShowYearInPopup(pendingPopup: GamePopupData | null, state: WhenGa
   return pendingPopup?.type !== 'gameOver'; // Show year for correct/incorrect, not for gameOver
 }
 
+/**
+ * The bottom bar's Share button is the fallback route, for once every end-of-game screen is
+ * gone. While the game-over popup or any sequence step is up, one of those owns the share and
+ * showing this too would be a second, redundant button.
+ *
+ * Extracted rather than inlined because `Game` sits on ESLint's complexity ceiling of 15 —
+ * same reason `shouldShowYearInPopup` above is a function.
+ */
+function isBottomBarShareVisible(
+  pendingPopup: GamePopupData | null,
+  endStep: EndOfGameStep | null
+): boolean {
+  return !pendingPopup && endStep === null;
+}
+
 interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
@@ -137,8 +154,9 @@ const Game: React.FC<GameProps> = ({
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
   const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
-  const [showUnlock, setShowUnlock] = useState(false);
-  const [showMilestones, setShowMilestones] = useState(false);
+  // The daily rank, lifted out of the game-over popup because the share that uses it is now
+  // the last step of the sequence rather than a sibling inside that popup.
+  const [leaderboardRank, setLeaderboardRank] = useState<number | undefined>();
   // Full-screen edge-in colour pulse shown on each placement. `key` remounts
   // the overlay so the animation retriggers on rapid back-to-back placements.
   const [vignette, setVignette] = useState<{ color: string; key: number } | null>(null);
@@ -165,9 +183,15 @@ const Game: React.FC<GameProps> = ({
     );
   }, [unlockedDefs, eventsByName]);
 
-  // Detect the game-over popup → null transition to reveal the unlock modal once per game.
-  const prevPopupTypeRef = useRef(pendingPopup?.type);
-  const unlockConsumedRef = useRef(false);
+  // The end-of-game screens after the game-over popup, in order: milestones (if any),
+  // achievements (if any), then always the share. See the hook for why the game-over popup
+  // itself stays outside the queue.
+  const { step: endStep, advance: advanceEndStep } = useEndOfGameSequence({
+    popupType: pendingPopup?.type,
+    phase: state.phase,
+    hasMilestones: gameMilestones.length > 0,
+    hasAchievements: unlockedDefs.length > 0,
+  });
 
   // Game feel hooks
   const { shakeClassName, triggerShake } = useScreenShake();
@@ -249,28 +273,13 @@ const Game: React.FC<GameProps> = ({
       setGameOverPopupShown(true);
       showGameOverPopup();
     }
-    // Reset when starting a new game
+    // Reset when starting a new game. The end-of-game sequence resets itself on the same
+    // phase change.
     if (state.phase === 'playing') {
       setGameOverPopupShown(false);
-      setShowUnlock(false);
-      setShowMilestones(false);
-      unlockConsumedRef.current = false;
+      setLeaderboardRank(undefined);
     }
   }, [state.phase, gameOverPopupShown, showGameOverPopup]);
-
-  // Reveal the achievement-unlock modal once the game-over popup is dismissed (popup → null),
-  // if this game crossed any threshold. Gating on the dismissal means daily mode naturally waits
-  // for the leaderboard step (the game-over popup can't be dismissed until then).
-  useEffect(() => {
-    const wasGameOverPopup = prevPopupTypeRef.current === 'gameOver';
-    prevPopupTypeRef.current = pendingPopup?.type;
-    if (wasGameOverPopup && !pendingPopup && !unlockConsumedRef.current) {
-      unlockConsumedRef.current = true;
-      // Reveal personal-best milestones first; achievements follow when milestones are dismissed.
-      if (gameMilestones.length > 0) setShowMilestones(true);
-      else if (unlockedDefs.length > 0) setShowUnlock(true);
-    }
-  }, [pendingPopup, unlockedDefs.length, gameMilestones.length]);
 
   // Show first-time rules popup when starting a new game mode for the first time
   useEffect(() => {
@@ -382,7 +391,7 @@ const Game: React.FC<GameProps> = ({
                 // leaderboard so the sequence reads score -> submit -> rank -> share. Showing
                 // this one too puts two identical Share buttons on screen at once. It returns
                 // when the popup is dismissed, which is the case it exists for.
-                showShare={!pendingPopup}
+                showShare={isBottomBarShareVisible(pendingPopup, endStep)}
               />
             ) : (
               <>
@@ -433,6 +442,7 @@ const Game: React.FC<GameProps> = ({
               showYear={showYearInPopup}
               gameState={pendingPopup.gameState}
               tombstone={isTombstonePopup}
+              onRankResolved={setLeaderboardRank}
             />
           )}
 
@@ -463,20 +473,27 @@ const Game: React.FC<GameProps> = ({
             />
           )}
 
+          {/* The end-of-game sequence. Each step dismisses to the next; the share always
+              ends it, so the finale is the same screen whether or not this game unlocked
+              anything. No step chains into another by hand — the queue owns the order. */}
           <MilestonePopup
-            open={showMilestones}
+            open={endStep === 'milestones'}
             milestones={gameMilestones}
-            onDismiss={() => {
-              setShowMilestones(false);
-              if (unlockedDefs.length > 0) setShowUnlock(true);
-            }}
+            onDismiss={advanceEndStep}
           />
 
           <AchievementUnlock
-            open={showUnlock}
+            open={endStep === 'achievements'}
             achievements={unlockedDefs}
             eventsByName={eventsByName}
-            onDismiss={() => setShowUnlock(false)}
+            onDismiss={advanceEndStep}
+          />
+
+          <ShareStepPopup
+            open={endStep === 'share'}
+            gameState={state}
+            leaderboardRank={leaderboardRank}
+            onDismiss={advanceEndStep}
           />
         </div>
       </DndContext>

@@ -199,35 +199,50 @@ different things.
   in local time, which prints the previous day west of Greenwich. `formatShareDate()`
   regex-splits the string the puzzle day already got right.
 
-### Where the share sits at game over
+### The share is the last step of the end-of-game sequence
 
-The share used to live only in `GameOverControls`, which renders into the **bottom bar**
-(`Game.tsx`), while the result lives in `GamePopup` — two different layers. The reading order
-dead-ended on "Come back tomorrow" and you had to notice a detached button below the modal,
-next to a gold "Submit to Leaderboard" it was competing with. It was also labelled
-"Challenge", a different verb from every other share surface.
+`src/hooks/useEndOfGameSequence.ts` owns the screens shown after the game-over popup:
 
-It now reads as one column: **score → submit → rank → share**, with the share block inside
-the popup after `LeaderboardSubmit`. Three things hold that together:
+```
+gameOver      score · submit · rank        (GamePopup — not in the queue, see below)
+   ↓
+milestones    if any
+   ↓
+achievements  if any
+   ↓
+share         ShareStepPopup — result, Share, reminder + next-daily countdown
+```
 
-- **The share waits for the submit** on the daily, so the two are sequential rather than two
-  primary buttons stacked — and by then a rank exists for it to carry. It appears on either
-  signal, `hasSubmitted` or a resolved rank, because the rank stays null when the leaderboard
-  API is unreachable and the share must still show.
-- **Nobody is stranded by that wait.** The game-over popup has no close control, the backdrop
-  is deliberately inert for the daily until you submit (`useBackdropDismiss`), and the bottom
-  bar sits under a `z-50` backdrop that intercepts its clicks. Verified with Playwright: at
-  game over the backdrop click does nothing and the Home button cannot be clicked at all.
-  Submitting is already the only way out of that screen, so gating the share on it costs
-  nothing. **If a close button is ever added to this popup, revisit the gate** — it is what
-  makes it safe.
-- **The bottom-bar button hides while the popup is open** (`showShare={!pendingPopup}`) and
-  returns on dismissal, which is the case it exists for. Two identical teal "Share" buttons on
-  screen at once was the first attempt and looked exactly as redundant as it sounds.
+**The share step is unconditional**, which is the point: milestones and achievements only
+appear when there are any, so an "append to the last screen" scheme would make the finale
+different game to game. It ends the run every time.
 
-The popup's share block skips its own top rule on the daily (`divided={!isDaily}`) because
-`LeaderboardSubmit` already draws one; two stacked rules with an empty leaderboard between
-them is a visible gap whenever the API is down.
+Two earlier arrangements, both wrong, worth not repeating:
+
+- **Share only in `GameOverControls`** (the bottom bar) while the result was in `GamePopup` —
+  two layers, so the reading order dead-ended on "Come back tomorrow" beside a detached button
+  competing with the leaderboard submit, labelled "Challenge", and unable to carry the rank.
+- **Share inside the game-over popup** — better, but that popup is the _first_ screen, so the
+  share went out before the player saw what they had unlocked.
+
+Constraints holding the current shape together:
+
+- **`GamePopup` stays out of the queue.** Its dismissal is gated by `useBackdropDismiss` so the
+  daily cannot pass it without submitting; folding it in would mean re-implementing that gate.
+  The flow is unified from that popup _onward_.
+- **The rank is lifted to `Game`.** `LeaderboardSubmit` → `onRankResolved` → `GamePopup` →
+  `Game` → `ShareStepPopup`, because the share is no longer a sibling of the leaderboard.
+- **The bottom-bar Share hides for the whole sequence**, not just while the popup is open —
+  `isBottomBarShareVisible(pendingPopup, endStep)`. It is the post-sequence fallback only.
+- **No story-card preview on the share step.** It would mean a `renderShareCard` canvas pass
+  on every game over instead of only when someone taps Share.
+
+**Trap, and the reason the sequence exists rather than more hand-wiring:** `MilestonePopup` and
+`AchievementUnlock` both called `onDismiss()` from inside a `setIndex` updater. Updaters must
+be pure — StrictMode double-invokes them — so `onDismiss` fired twice. That was invisible while
+dismissing meant `setShowUnlock(false)` twice, and became a real bug the moment dismissal
+advanced a queue: the share step was popped without ever rendering. Both now call `onDismiss`
+outside the updater. Any future step must not reintroduce a side effect in there.
 
 ### Not done yet
 
