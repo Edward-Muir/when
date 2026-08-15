@@ -147,32 +147,57 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
   );
 }
 
-// Sub-component for challenge share section in game over popup
-function ChallengeShareSection({ gameState }: { gameState: WhenGameState }) {
+/**
+ * The share step of the game-over popup.
+ *
+ * It used to be gated on `lastConfig.challengeCode`, so the daily — the mode most people
+ * play — never saw it, and its only route to sharing was the button in the bottom bar
+ * *outside* this popup. That put the share in a different layer from the result it shares:
+ * the reading order dead-ended on "Come back tomorrow" and you had to notice a detached
+ * button below the modal.
+ *
+ * Now it renders for the daily too, positioned after the leaderboard block so the sequence
+ * reads as one column: score, submit, rank, share. `leaderboardRank` arrives once
+ * `LeaderboardSubmit` has resolved it, which is what lets this share carry the rank the
+ * popup is already displaying.
+ */
+function ShareResultSection({
+  gameState,
+  leaderboardRank,
+  divided = true,
+}: {
+  gameState: WhenGameState;
+  leaderboardRank?: number;
+  /** False when the block above already drew a rule — `LeaderboardSubmit` does, and two
+   *  stacked rules with an empty leaderboard between them is a visible gap. */
+  divided?: boolean;
+}) {
   const [showToast, setShowToast] = useState(false);
-  const challengeCode = gameState.lastConfig?.challengeCode;
+  const isChallenge = !!gameState.lastConfig?.challengeCode;
 
   const handleShare = async () => {
-    const copied = await shareResults(gameState);
+    const copied = await shareResults(gameState, { leaderboardRank });
     if (copied) {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 2000);
     }
   };
 
-  if (!challengeCode) return null;
-
   return (
-    <div className="relative mt-3 pt-3 border-t border-border">
-      <p className="text-xs text-text-muted font-body text-center">
-        Challenge a friend — they&apos;ll play with the same cards in the same order.
-      </p>
+    <div className={`relative mt-3 ${divided ? 'pt-3 border-t border-border' : ''}`}>
+      {isChallenge && (
+        <p className="text-xs text-text-muted font-body text-center">
+          They&apos;ll play with the same cards in the same order.
+        </p>
+      )}
       <button
         onClick={handleShare}
-        className="w-full mt-3 py-2.5 px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white"
+        className={`w-full py-2.5 px-4 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body bg-accent-secondary hover:bg-accent-secondary/90 text-white ${
+          isChallenge ? 'mt-3' : ''
+        }`}
       >
         <Share2 className="w-4 h-4" />
-        Challenge a Friend
+        Share
       </button>
       {showToast && (
         <div className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 bg-text text-bg px-4 py-2 rounded-full text-sm font-medium shadow-sm flex items-center gap-2 z-50 font-body whitespace-nowrap">
@@ -196,6 +221,13 @@ function GameOverContent({
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
   const isDaily = gameMode === 'daily';
+
+  // Filled in once `LeaderboardSubmit` resolves a rank, so the share can carry it.
+  const [leaderboardRank, setLeaderboardRank] = useState<number | undefined>();
+  const [hasSubmitted, setHasSubmitted] = useState(hasSubmittedToLeaderboard);
+  // Either signal is enough: a resolved rank proves a submission, but the rank stays null if
+  // the leaderboard API is unreachable, and the share must still appear then.
+  const showShare = isDaily && (hasSubmitted || leaderboardRank !== undefined);
 
   const getPlayerStats = (player: Player) => {
     const correct = player.placementHistory.filter((p) => p).length;
@@ -279,12 +311,31 @@ function GameOverContent({
         )}
       </div>
 
-      {/* Challenge a Friend section for shareable custom games */}
-      {lastConfig?.challengeCode && <ChallengeShareSection gameState={gameState} />}
-
       {/* Leaderboard submit section for daily mode */}
       {dailyResult && (
-        <LeaderboardSubmit dailyResult={dailyResult} onSubmitted={onLeaderboardSubmit} />
+        <LeaderboardSubmit
+          dailyResult={dailyResult}
+          onSubmitted={() => {
+            setHasSubmitted(true);
+            onLeaderboardSubmit?.();
+          }}
+          onRankResolved={setLeaderboardRank}
+        />
+      )}
+
+      {/* Share sits *after* the leaderboard so the popup reads as one sequence: score,
+          submit, rank, share. On the daily it waits for the submit rather than competing
+          with it, and by then there is a rank for it to carry.
+          Nobody is stranded by that wait: this popup has no close control, the backdrop is
+          inert for the daily until you submit, and the bottom bar sits under a z-50 backdrop
+          that intercepts its clicks — verified with Playwright, where the Home button could
+          not be clicked at all. Submitting is already the only way out of this screen. */}
+      {(showShare || (!isDaily && lastConfig?.challengeCode)) && (
+        <ShareResultSection
+          gameState={gameState}
+          leaderboardRank={leaderboardRank}
+          divided={!isDaily}
+        />
       )}
 
       {/* Return hooks: reminder opt-in (native only) + countdown to the next daily */}
@@ -292,7 +343,7 @@ function GameOverContent({
         <>
           <DailyReminderPrompt />
           <p className="text-center text-text-muted text-sm mt-4 font-body">
-            Come back tomorrow — <NextDailyCountdown />
+            Come back tomorrow · <NextDailyCountdown />
           </p>
         </>
       )}

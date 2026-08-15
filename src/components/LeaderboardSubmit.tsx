@@ -24,6 +24,13 @@ function generateRandomName(): string {
 interface LeaderboardSubmitProps {
   dailyResult: DailyResult;
   onSubmitted?: () => void;
+  /**
+   * Fired when this component's `useLeaderboard` resolves a rank, so the game-over popup can
+   * put it on the share. This component owns the only `useLeaderboard` instance on the
+   * screen; lifting the value out is cheaper than mounting a second one and cannot drift
+   * from what is rendered here.
+   */
+  onRankResolved?: (rank: number) => void;
 }
 
 // Leaderboard preview showing top 3 + player's entry if outside top 3
@@ -84,7 +91,11 @@ function LeaderboardPreview({
   );
 }
 
-const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSubmitted }) => {
+const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({
+  dailyResult,
+  onSubmitted,
+  onRankResolved,
+}) => {
   const [name, setName] = useState(() => getDisplayName() || generateRandomName());
   const [alreadySubmitted, setAlreadySubmitted] = useState(hasSubmittedToLeaderboard());
 
@@ -147,12 +158,14 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
     setAlreadySubmitted(hasSubmittedToLeaderboard());
   }, []);
 
-  // Save leaderboard data to localStorage when rank is available
+  // Save leaderboard data to localStorage when rank is available, and hand it up so the
+  // share rendered alongside this component can carry it.
   useEffect(() => {
     if (rank && totalPlayers) {
       updateDailyResultWithLeaderboard(rank, totalPlayers);
+      onRankResolved?.(rank);
     }
-  }, [rank, totalPlayers]);
+  }, [rank, totalPlayers, onRankResolved]);
 
   const handleSubmit = async () => {
     // Save name for future use

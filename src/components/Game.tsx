@@ -378,6 +378,11 @@ const Game: React.FC<GameProps> = ({
                 onRestart={onRestart}
                 onNewGame={onNewGame}
                 onShowToast={() => setShowToast(true)}
+                // While the game-over popup is up it owns the share, positioned after the
+                // leaderboard so the sequence reads score -> submit -> rank -> share. Showing
+                // this one too puts two identical Share buttons on screen at once. It returns
+                // when the popup is dismissed, which is the case it exists for.
+                showShare={!pendingPopup}
               />
             ) : (
               <>

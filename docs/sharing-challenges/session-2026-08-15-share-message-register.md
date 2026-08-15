@@ -23,6 +23,15 @@ Two voices saying the same thing, and neither addressed to the person reading it
 caption had no job. Giving it one (identity + what the game is + the link) and letting the
 card keep the numbers was most of the fix.
 
+> **Reversed the same day — read [index.md](index.md) for what is actually in force.** The
+> section below concluded the share should carry no call to action. A screenshot of the
+> shipped result overturned it: the caption now asks `Can you make a longer timeline?`, with
+> `Make the longest timeline.` on the surfaces where nothing has been played yet. The
+> reasoning below is not wrong about _Wordle_ — it is wrong that Wordle transfers. Wordle can
+> withhold because a recipient who cannot decode the grid still recognises the brand, and
+> "When?" has no such recognition to spend. Left in place because the argument is a tempting
+> one and worth seeing refuted rather than absent.
+
 ## "Add a CTA" was the wrong instinct, including mine
 
 The first round of suggestions offered was `your turn` / `can you beat 5?` /
@@ -111,3 +120,23 @@ shrinks their descenders — so long names are the easy case here, not the risky
   boilerplate blocks it, which silently renders the no-art fallback — a plausible-looking
   card that is not the real one. The tell is file size: ~200 KB with art, far smaller
   without. Keep `--ssl-version-max=tls1.2` and `proxy.bypass: 'localhost,127.0.0.1'`.
+- **The "How to Play" modal renders a beat _after_ the daily starts.** Checking for it once
+  immediately after navigation finds nothing, and it then silently blocks every drag — the
+  driver looks like it is playing and places no cards. Poll for the "Got it" button instead.
+- **The daily game-over popup cannot be escaped without submitting.** Verified rather than
+  assumed, and it decided a design question: no close control, an inert backdrop until
+  submission, and a `z-50` backdrop that intercepts the bottom bar, so Playwright cannot click
+  Home at all. That is what makes it safe to gate the in-popup share on having submitted.
+
+## The share at game over
+
+Playing the daily through to game over — which is the only way this was going to be noticed —
+showed the share was an afterthought in the wrong layer, competing with the leaderboard
+submit, labelled with a different verb, and structurally unable to carry the rank the popup
+was displaying two lines above it. The fix and the constraints are in
+[index.md](index.md#where-the-share-sits-at-game-over).
+
+One thing worth recording about the process: the first attempt at "move it into the popup"
+kept the bottom-bar button too, which put two identical teal Share buttons on screen at once.
+The screenshot made that obvious in a way the diff did not — same lesson as the previous
+session, which is that this surface has to be looked at, not reasoned about.

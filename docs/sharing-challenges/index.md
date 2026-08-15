@@ -100,23 +100,39 @@ stats-free caption there would send a bare invite with the player's result missi
 choice is made **per tier inside `shareContent`**, not once up front — tier 3 is reached
 both when there was never a file and when both file payloads failed.
 
-### No copy that addresses the reader
+### The caption asks a question — and why the Wordle argument does not apply
 
-Recorded because "add a call to action" is a recurring and reasonable-sounding suggestion.
+This briefly went the other way, and the reversal is worth recording so the argument is not
+had a third time.
 
 **Wordle's share has no call to action at all** — `Wordle 1,234 4/6` plus the grid, no URL,
-no verb, nothing aimed at the recipient. It avoids reading as advertising because it is a
-_receipt_ rather than a _claim_, and it spread because a recipient who cannot decode it has
-to ask what it is. "Your turn", "can you beat it", "challenge a friend" are the opposite
-register and were explicitly rejected.
+no verb, nothing aimed at the recipient. It reads as a _receipt_ rather than a _claim_, and
+it spreads because a recipient who cannot decode it has to ask what it is. That is genuinely
+why it works, and for a fortnight it was the reason this message carried a flat descriptive
+line instead of asking anything.
 
-What replaces them is `DESCRIPTOR` — `put history in order.` — which was already the
-app-invite line. It states what the game is, which is the thing the old message never did:
-a non-player learned only where the link went. A test pins both halves (no exhortation
-anywhere; the descriptor present on every share).
+**It does not transfer.** Wordle can afford to withhold because a recipient who cannot decode
+the grid still recognises the brand. "When?" has no such recognition — a message that neither
+explains itself nor asks for anything just gets scrolled past. So:
 
-The one thing we can borrow from the grid is **withholding**, not the squares themselves —
-see the seed-year note below.
+- Where a result exists, the caption asks: **`Can you make a longer timeline?`** (`SCORE_CTA`).
+- Where none does — the app invite, the pre-game challenge link, and multiplayer, where the
+  result belongs to whoever won — it describes: **`Make the longest timeline.`**
+  (`DESCRIPTOR`). Tests pin which surfaces get which.
+
+Both name the mechanic rather than an abstract "score", so the whole message shares one
+vocabulary with the `Timeline of N` stat line and with the in-game "How to Play" modal, which
+already says _Build the longest timeline!_
+
+The genuinely transferable piece of Wordle remains **withholding** — see the seed-year note
+below — not the absence of a CTA.
+
+### No em dashes
+
+A standing instruction. Every separator in a share string is the middle dot `·` the app and
+the card already use (`DAILY #49 · EVERYTHING`, `When? · 2 players`) — `SEP` in `share.ts`.
+A test asserts no share string contains `—`, because "applied once" and "enforced" are
+different things.
 
 ### Decisions in force on the message
 
@@ -147,10 +163,14 @@ see the seed-year note below.
   Guarded by a test. See the CLAUDE.md naming note.
 - **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
   `bestStreak` is still tracked in game state and on the stored daily result.
-- **A challenge link says what it does, and nothing more.** `Same cards, same order.` is a
-  fact about the link and earns its place; the `— beat my timeline.` that used to follow it
-  is the exhortative register above. It lived as a fifth inline literal in
+- **A challenge link states what it does.** `Same cards, same order.` is a fact about the
+  link, and it rides on both message forms. It lived as a fifth inline literal in
   `CustomGameSettings.tsx` and is now `generateChallengeInviteText` in `share.ts`.
+- **A game-over share carries the rank.** `shareResults` takes it as an option. It used to
+  omit it entirely, so the game-over share was rankless even while the popup on screen showed
+  "#22 globally" — only the home screen's share had it. Both routes now agree: the popup
+  passes the rank up from `LeaderboardSubmit` via `onRankResolved`, and the bottom bar reads
+  it from the stored daily result.
 - **The card is single-line everywhere.** Layout is fixed baselines, so a second line
   anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
   instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
@@ -178,6 +198,36 @@ see the seed-year note below.
 - **Dates are split, never re-parsed.** `new Date('2026-08-15')` is UTC midnight rendered
   in local time, which prints the previous day west of Greenwich. `formatShareDate()`
   regex-splits the string the puzzle day already got right.
+
+### Where the share sits at game over
+
+The share used to live only in `GameOverControls`, which renders into the **bottom bar**
+(`Game.tsx`), while the result lives in `GamePopup` — two different layers. The reading order
+dead-ended on "Come back tomorrow" and you had to notice a detached button below the modal,
+next to a gold "Submit to Leaderboard" it was competing with. It was also labelled
+"Challenge", a different verb from every other share surface.
+
+It now reads as one column: **score → submit → rank → share**, with the share block inside
+the popup after `LeaderboardSubmit`. Three things hold that together:
+
+- **The share waits for the submit** on the daily, so the two are sequential rather than two
+  primary buttons stacked — and by then a rank exists for it to carry. It appears on either
+  signal, `hasSubmitted` or a resolved rank, because the rank stays null when the leaderboard
+  API is unreachable and the share must still show.
+- **Nobody is stranded by that wait.** The game-over popup has no close control, the backdrop
+  is deliberately inert for the daily until you submit (`useBackdropDismiss`), and the bottom
+  bar sits under a `z-50` backdrop that intercepts its clicks. Verified with Playwright: at
+  game over the backdrop click does nothing and the Home button cannot be clicked at all.
+  Submitting is already the only way out of that screen, so gating the share on it costs
+  nothing. **If a close button is ever added to this popup, revisit the gate** — it is what
+  makes it safe.
+- **The bottom-bar button hides while the popup is open** (`showShare={!pendingPopup}`) and
+  returns on dismissal, which is the case it exists for. Two identical teal "Share" buttons on
+  screen at once was the first attempt and looked exactly as redundant as it sounds.
+
+The popup's share block skips its own top rule on the daily (`divided={!isDaily}`) because
+`LeaderboardSubmit` already draws one; two stacked rules with an empty leaderboard between
+them is a visible gap whenever the API is down.
 
 ### Not done yet
 

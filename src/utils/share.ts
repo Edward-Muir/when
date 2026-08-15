@@ -10,29 +10,39 @@ import { renderShareFile, ShareCardSpec } from './shareImage';
 const BRAND = 'When?';
 
 /**
- * The one line that tells a recipient what the thing is.
+ * What a recipient is being asked, on any share that reports a result.
  *
- * It was already `shareApp()`'s invite copy; it is now on every share, because the message
- * used to name a score and a rank and never once said what the game *does* — a non-player
- * learned only where the link went.
+ * The message briefly carried no call to action at all, on the reasoning that Wordle's does
+ * not either. That was wrong for this game: Wordle can omit one because a recipient who
+ * cannot decode the grid still recognises the brand, and "When?" has no such recognition to
+ * lean on. A share that neither explains itself nor asks for anything just gets scrolled
+ * past.
  *
- * It is deliberately a description, not an exhortation. Nothing in a share addresses the
- * reader or asks them for anything: no "your turn", no "can you beat it". Wordle's share
- * has no call to action at all — `Wordle 1,234 4/6` and a grid, no URL, no verb — and it
- * spread precisely because it reads as a receipt rather than a claim, and because a
- * recipient who cannot decode it has to ask. Copy that performs enthusiasm at the reader is
- * the opposite of that register. Do not reintroduce it.
+ * It names the mechanic rather than an abstract "score" so the whole message shares one
+ * vocabulary — this line, `DESCRIPTOR` and the `Timeline of N` stat line all say "timeline",
+ * and the in-game "How to Play" modal already says "Build the longest timeline!".
  */
-const DESCRIPTOR = 'put history in order.';
+const SCORE_CTA = 'Can you make a longer timeline?';
 
 /**
- * What a challenge link actually does, stated flatly.
- *
- * This was `Same cards, same order — beat my timeline.` in `CustomGameSettings`. The first
- * half is a fact about the link and earns its place; "beat my timeline" is the exhortative
- * register `DESCRIPTOR` explains we do not use, so it is gone.
+ * The same idea for surfaces where no game has been played, so there is no result to beat:
+ * the app invite and the pre-game challenge link. Also multiplayer, where a score exists but
+ * belongs to whoever won rather than to the sender, so "a longer timeline" than *whose* is
+ * ambiguous.
  */
+const DESCRIPTOR = 'Make the longest timeline.';
+
+/** What a challenge link actually does, stated flatly. */
 const CHALLENGE_PROMISE = 'Same cards, same order.';
+
+/**
+ * Every separator in a share string.
+ *
+ * Explicitly not an em dash — that is a standing instruction, and a test enforces it rather
+ * than trusting this to stay applied. The middle dot is what the app and the card already
+ * use ("DAILY #49 · EVERYTHING", "When? · 2 players").
+ */
+const SEP = ' · ';
 
 /** Used as an href by the Custom page's challenge-code box, so it keeps its scheme. */
 export const CHALLENGE_URL = 'https://www.play-when.com/challenge';
@@ -126,10 +136,10 @@ function dailyEyebrow(date: string, theme: string): string {
   return puzzleNumber ? `Daily #${puzzleNumber} · ${theme}` : `Daily · ${theme}`;
 }
 
-/** `When? #49 — put history in order.`, or the numberless form for a junk date. */
+/** `When? #49 · Can you make a longer timeline?`, or the numberless form for a junk date. */
 function dailyHeadline(date: string): string {
   const puzzleNumber = getDailyPuzzleNumber(date);
-  return puzzleNumber ? `${BRAND} #${puzzleNumber} — ${DESCRIPTOR}` : `${BRAND} — ${DESCRIPTOR}`;
+  return [BRAND + (puzzleNumber ? ` #${puzzleNumber}` : ''), SCORE_CTA].join(SEP);
 }
 
 export interface DailyShareFacts {
@@ -149,7 +159,7 @@ export function generateDailyShareText(facts: DailyShareFacts): ShareMessage {
     leaderboardRank ? formatRank(leaderboardRank) : '',
   ]
     .filter(Boolean)
-    .join(' — ');
+    .join(SEP);
 
   return {
     withCard: composeShareText(headline, [], DISPLAY_DAILY_URL),
@@ -184,9 +194,11 @@ export function generateShareText(state: WhenGameState): ShareMessage {
 
   if (playerCount > 1) {
     const winnerNames = winners.map((w) => w.name).join(', ');
-    const headline = `${BRAND} · ${playerCount} players — ${DESCRIPTOR}`;
+    // `DESCRIPTOR`, not `SCORE_CTA`: the result belongs to whoever won, so "a longer
+    // timeline" than whose is ambiguous.
+    const headline = [BRAND, `${playerCount} players`, DESCRIPTOR].join(SEP);
     const stats = [winnerNames ? `${winnerNames} wins` : 'No winner', `${roundNumber} rounds`].join(
-      ' — '
+      SEP
     );
     return {
       withCard: composeShareText(headline, [promise], url),
@@ -194,7 +206,7 @@ export function generateShareText(state: WhenGameState): ShareMessage {
     };
   }
 
-  const headline = `${BRAND} — ${DESCRIPTOR}`;
+  const headline = [BRAND, SCORE_CTA].join(SEP);
   return {
     withCard: composeShareText(headline, [promise], url),
     textOnly: composeShareText(headline, [`Timeline of ${correctCount}`, promise], url),
@@ -301,8 +313,11 @@ async function buildShareFile(spec: ShareCardSpec, slug: string): Promise<File |
  * Share game results using Web Share API or fallback to clipboard
  * Returns true if copied to clipboard (toast should be shown)
  */
-export async function shareResults(state: WhenGameState): Promise<boolean> {
-  const shareText = generateShareText(state);
+export async function shareResults(
+  state: WhenGameState,
+  options: { leaderboardRank?: number } = {}
+): Promise<boolean> {
+  const { leaderboardRank } = options;
   const { gameMode, placementHistory, lastConfig, timeline, seedEventName } = state;
   const correctCount = placementHistory.filter((p) => p).length;
 
@@ -313,12 +328,22 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
 
   const isDaily = gameMode === 'daily';
   const date = lastConfig?.dailySeed || getLocalDateString();
+
+  // The rank only exists once the player has submitted, and only the daily has one. Passing
+  // it here is what stops a game-over share being weaker than the home screen's: this path
+  // used to omit it entirely, so it produced a rankless card even while the popup on screen
+  // was showing "#22 globally".
+  const shareText = isDaily
+    ? generateDailyShareText({ date, correctCount, leaderboardRank })
+    : generateShareText(state);
+
   const spec: ShareCardSpec = isDaily
     ? {
         event: seedEvent,
         eyebrow: dailyEyebrow(date, getThemeDisplayName(getDailyTheme(date))),
         score: String(correctCount + 1),
         scoreLabel: scoreUnit(correctCount + 1),
+        detail: leaderboardRank ? formatRank(leaderboardRank) : undefined,
         url: DISPLAY_DAILY_URL,
       }
     : {
@@ -342,7 +367,7 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
  * is the same string on every tier.
  */
 export function generateChallengeInviteText(url: string): string {
-  return composeShareText(`${BRAND} — ${DESCRIPTOR}`, [CHALLENGE_PROMISE], url);
+  return composeShareText([BRAND, DESCRIPTOR].join(SEP), [CHALLENGE_PROMISE], url);
 }
 
 /**
@@ -350,7 +375,7 @@ export function generateChallengeInviteText(url: string): string {
  * Returns true if copied to clipboard (toast should be shown)
  */
 export async function shareApp(): Promise<boolean> {
-  const text = `${BRAND} — ${DESCRIPTOR}\n\n${DISPLAY_URL}`;
+  const text = composeShareText([BRAND, DESCRIPTOR].join(SEP), [], DISPLAY_URL);
   return shareContent(text, 'When? - The Timeline Game');
 }
 

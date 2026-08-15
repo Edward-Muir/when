@@ -45,9 +45,6 @@ function makeState(overrides: Partial<WhenGameState> = {}): WhenGameState {
 
 const EMOJI = /\p{Extended_Pictographic}/u;
 
-/** Every phrasing that addresses the reader or asks them for something. See `DESCRIPTOR`. */
-const EXHORTATION = /your turn|beat (my|it|me)|can you|challenge (a friend|me)|try to|think you/i;
-
 describe('formatShareDate', () => {
   it('formats an ISO puzzle date without re-parsing it as a Date', () => {
     expect(formatShareDate('2026-08-15')).toBe('Aug 15');
@@ -62,9 +59,9 @@ describe('formatShareDate', () => {
 });
 
 describe('generateDailyShareText', () => {
-  it('is identity, descriptor and link — no stats — when the card travels with it', () => {
+  it('is identity, question and link, with no stats, when the card travels with it', () => {
     const { withCard } = generateDailyShareText({ date: '2026-08-15', correctCount: 10 });
-    expect(withCard).toBe('When? #49 — put history in order.\n\nplay-when.com/daily');
+    expect(withCard).toBe('When? #49 · Can you make a longer timeline?\n\nplay-when.com/daily');
   });
 
   it('keeps the stat line on the form that ships without the card', () => {
@@ -74,7 +71,7 @@ describe('generateDailyShareText', () => {
       leaderboardRank: 47,
     });
     expect(textOnly).toBe(
-      'When? #49 — put history in order.\nTimeline of 11 — #47 globally\n\nplay-when.com/daily'
+      'When? #49 · Can you make a longer timeline?\nTimeline of 11 · #47 globally\n\nplay-when.com/daily'
     );
   });
 
@@ -104,7 +101,7 @@ describe('generateDailyShareText', () => {
 
   it('falls back to a numberless headline for a pre-epoch or junk date', () => {
     expect(generateDailyShareText({ date: 'tomorrow', correctCount: 3 }).withCard).toBe(
-      'When? — put history in order.\n\nplay-when.com/daily'
+      'When? · Can you make a longer timeline?\n\nplay-when.com/daily'
     );
     expect(generateDailyShareText({ date: '2020-01-01', correctCount: 3 }).withCard).not.toContain(
       '#'
@@ -178,7 +175,7 @@ describe('generateShareText', () => {
         },
       })
     );
-    expect(withCard).toBe('When? #49 — put history in order.\n\nplay-when.com/daily');
+    expect(withCard).toBe('When? #49 · Can you make a longer timeline?\n\nplay-when.com/daily');
     expect(textOnly).toContain('Timeline of 4');
   });
 
@@ -186,8 +183,10 @@ describe('generateShareText', () => {
     const { withCard, textOnly } = generateShareText(
       makeState({ placementHistory: [true, true, true, false], bestStreak: 3 })
     );
-    expect(withCard).toBe('When? — put history in order.\n\nplay-when.com');
-    expect(textOnly).toBe('When? — put history in order.\nTimeline of 3\n\nplay-when.com');
+    expect(withCard).toBe('When? · Can you make a longer timeline?\n\nplay-when.com');
+    expect(textOnly).toBe(
+      'When? · Can you make a longer timeline?\nTimeline of 3\n\nplay-when.com'
+    );
   });
 
   it('never labels a game "Marathon" or "Sudden Death"', () => {
@@ -239,9 +238,9 @@ describe('generateShareText', () => {
         roundNumber: 12,
       })
     );
-    expect(withCard).toBe('When? · 2 players — put history in order.\n\nplay-when.com');
+    expect(withCard).toBe('When? · 2 players · Make the longest timeline.\n\nplay-when.com');
     expect(textOnly).toBe(
-      'When? · 2 players — put history in order.\nAda wins — 12 rounds\n\nplay-when.com'
+      'When? · 2 players · Make the longest timeline.\nAda wins · 12 rounds\n\nplay-when.com'
     );
   });
 
@@ -257,23 +256,57 @@ describe('generateShareText', () => {
 });
 
 describe('generateChallengeInviteText', () => {
-  it('states what the link does, with no result to report', () => {
+  it('describes rather than challenges, because nothing has been played yet', () => {
     expect(generateChallengeInviteText('play-when.com/challenge/able-baker-cane')).toBe(
-      'When? — put history in order.\nSame cards, same order.\n\nplay-when.com/challenge/able-baker-cane'
+      'When? · Make the longest timeline.\nSame cards, same order.\n\nplay-when.com/challenge/able-baker-cane'
     );
   });
 });
 
-describe('the register every share is written in', () => {
-  /**
-   * Wordle's share has no call to action at all and spread anyway, because it reads as a
-   * receipt rather than a claim. Copy that addresses the reader ("your turn", "can you beat
-   * it") is the thing this format was rewritten to remove — see `DESCRIPTOR` in `share.ts`.
-   */
-  it('never addresses the reader or asks them for anything', () => {
-    const messages = [
+describe('the line every share carries', () => {
+  const CTA = 'Can you make a longer timeline?';
+  const DESCRIPTOR = 'Make the longest timeline.';
+
+  const multiplayer = () =>
+    generateShareText(
+      makeState({
+        players: [
+          { id: 0, name: 'Ada', hand: [], hasWon: true, placementHistory: [] },
+          { id: 1, name: 'Alan', hand: [], hasWon: false, placementHistory: [] },
+        ],
+        winners: [],
+        roundNumber: 3,
+      })
+    );
+
+  it('asks the question wherever a result exists', () => {
+    const withResult = [
       generateDailyShareText({ date: '2026-08-15', correctCount: 10, leaderboardRank: 47 }),
       generateShareText(makeState({ placementHistory: [true, true] })),
+    ];
+    for (const { withCard, textOnly } of withResult) {
+      expect(withCard).toContain(CTA);
+      expect(textOnly).toContain(CTA);
+    }
+  });
+
+  it('describes instead wherever there is no result to beat', () => {
+    // Nothing has been played on the challenge invite; multiplayer has a result, but it
+    // belongs to whoever won, so "a longer timeline" than whose is ambiguous.
+    expect(generateChallengeInviteText('play-when.com/challenge/x')).toContain(DESCRIPTOR);
+    expect(generateChallengeInviteText('play-when.com/challenge/x')).not.toContain(CTA);
+    expect(multiplayer().withCard).toContain(DESCRIPTOR);
+    expect(multiplayer().withCard).not.toContain(CTA);
+  });
+
+  it('never uses an em dash', () => {
+    // A standing instruction, enforced rather than trusted to stay applied. The separator
+    // is the middle dot the app and the card already use.
+    const strings = [
+      generateDailyShareText({ date: '2026-08-15', correctCount: 10, leaderboardRank: 47 }),
+      generateDailyShareText({ date: 'tomorrow', correctCount: 1 }),
+      generateShareText(makeState({ placementHistory: [true, true] })),
+      multiplayer(),
       generateShareText(
         makeState({
           placementHistory: [true],
@@ -287,33 +320,11 @@ describe('the register every share is written in', () => {
           },
         })
       ),
-    ];
+    ].flatMap(({ withCard, textOnly }) => [withCard, textOnly]);
+    strings.push(generateChallengeInviteText('play-when.com/challenge/x'));
 
-    for (const { withCard, textOnly } of messages) {
-      expect(withCard).not.toMatch(EXHORTATION);
-      expect(textOnly).not.toMatch(EXHORTATION);
-    }
-    expect(generateChallengeInviteText('play-when.com/challenge/x')).not.toMatch(EXHORTATION);
-  });
-
-  it('always tells a recipient what the game is', () => {
-    const messages = [
-      generateDailyShareText({ date: '2026-08-15', correctCount: 10 }),
-      generateShareText(makeState({ placementHistory: [true] })),
-      generateShareText(
-        makeState({
-          players: [
-            { id: 0, name: 'Ada', hand: [], hasWon: true, placementHistory: [] },
-            { id: 1, name: 'Alan', hand: [], hasWon: false, placementHistory: [] },
-          ],
-          winners: [],
-          roundNumber: 3,
-        })
-      ),
-    ];
-    for (const { withCard, textOnly } of messages) {
-      expect(withCard).toContain('put history in order.');
-      expect(textOnly).toContain('put history in order.');
+    for (const text of strings) {
+      expect(text).not.toContain('—');
     }
   });
 });
