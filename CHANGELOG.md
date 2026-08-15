@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.10.0](https://github.com/Edward-Muir/when/compare/v1.9.0...v1.10.0) (2026-08-15)
+
+
+### Features
+
+* add a sports category with 374 events ([#40](https://github.com/Edward-Muir/when/issues/40)) ([cfaafa0](https://github.com/Edward-Muir/when/commit/cfaafa00180005c582ee9a260e1dad759d39a08a))
+
 ## [1.9.0](https://github.com/Edward-Muir/when/compare/v1.8.1...v1.9.0) (2026-08-15)
 
 

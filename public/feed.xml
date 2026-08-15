@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 14:43:45 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 21:35:49 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.10.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.10.0</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>add a sports category with 374 events (<a href="https://github.com/Edward-Muir/when/issues/40">#40</a>) (<a href="https://github.com/Edward-Muir/when/commit/cfaafa00180005c582ee9a260e1dad759d39a08a">cfaafa0</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.9.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.6.3</guid>
       <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Performance</h3><br/><br/><ul><li>bound the intro animation to a weekly image pool (<a href="https://github.com/Edward-Muir/when/issues/30">#30</a>) (<a href="https://github.com/Edward-Muir/when/commit/7f0a9112895dc6c706885fae78e1921bdbf3af49">7f0a911</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.6.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.6.2</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>filter abusive leaderboard display names (<a href="https://github.com/Edward-Muir/when/issues/29">#29</a>) (<a href="https://github.com/Edward-Muir/when/commit/c4ca7b1a053440f30cfd6c524b4db5e7dfa1f654">c4ca7b1</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

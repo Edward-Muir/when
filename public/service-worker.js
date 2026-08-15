@@ -1,6 +1,6 @@
-const CACHE_NAME = 'when-v1.9.0';
-const STATIC_CACHE = 'when-static-v1.9.0';
-const DYNAMIC_CACHE = 'when-dynamic-v1.9.0';
+const CACHE_NAME = 'when-v1.10.0';
+const STATIC_CACHE = 'when-static-v1.10.0';
+const DYNAMIC_CACHE = 'when-dynamic-v1.10.0';
 
 // Deliberately UNVERSIONED, and must stay that way: `activate` deletes every cache not
 // named here, and scripts/inject-version.js rewrites the versioned names above on each
