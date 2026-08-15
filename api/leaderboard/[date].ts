@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
 import { ensureBotsExist } from './botGeneration';
-import { safeDisplayName } from './nameFilter';
+import { normalizeDisplayName, safeDisplayName } from './nameFilter';
 
 const redis = Redis.fromEnv();
 
@@ -56,10 +56,23 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // a re-ZADD. Masking on read cleans entries submitted before the filter existed, and
     // makes any later addition to nameFilter's lists apply to history on the next fetch.
     // Ranking is untouched — it comes from the sorted-set index, not from the name.
+    //
+    // A player always sees the name they typed, even once it has been swapped for everyone
+    // else. Being shown the replacement tells you that you have been filtered, which is a
+    // feedback loop for probing the filter — the same reason submit.ts still returns 200 on
+    // a blocked name. deviceId is an attacker-controlled query param, but it is compared
+    // against the entry's own deviceId, so the only name it can unmask is the caller's own.
+    // Safe to vary the body per device because Cache-Control below is no-store.
+    const displayNameFor = (entry: LeaderboardEntry) =>
+      entry.deviceId === deviceId
+        ? normalizeDisplayName(entry.displayName) ||
+          safeDisplayName(entry.displayName, entry.deviceId)
+        : safeDisplayName(entry.displayName, entry.deviceId);
+
     const leaderboard: PublicLeaderboardEntry[] = entries.map((entryData, index) => {
       const entry = entryData as LeaderboardEntry;
       return {
-        displayName: safeDisplayName(entry.displayName, entry.deviceId),
+        displayName: displayNameFor(entry),
         correctCount: entry.correctCount,
         totalAttempts: entry.totalAttempts,
         emojiGrid: entry.emojiGrid,
@@ -88,7 +101,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         const entry = allEntries.at(foundIndex) as LeaderboardEntry;
         playerRank = foundIndex + 1;
         playerEntry = {
-          displayName: safeDisplayName(entry.displayName, entry.deviceId),
+          displayName: displayNameFor(entry),
           correctCount: entry.correctCount,
           totalAttempts: entry.totalAttempts,
           emojiGrid: entry.emojiGrid,
