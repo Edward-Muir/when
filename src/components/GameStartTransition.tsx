@@ -11,7 +11,7 @@ interface GameStartTransitionProps {
 
 // Animation timing constants
 const TOTAL_DURATION = 3000; // ms before auto-complete
-const SCROLL_DURATION = 6.0; // seconds for scroll animation (slower)
+const SCROLL_DURATION = 7.5; // seconds for scroll animation (slower)
 const SCROLL_PERCENTAGE = 0.66; // Scroll through 66% of cards (leaving ~8 visible at end)
 
 // Approximate height per timeline event (matches TimelineEvent padding/sizing)

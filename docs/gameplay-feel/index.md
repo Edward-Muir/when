@@ -164,10 +164,15 @@ palette, edit the two blocks in `index.css` and nothing else.
 
 ## Game start transition
 
-3 s before handing off to `playing`, over a 6 s linear scroll of 20 random events through 66%
+3 s before handing off to `playing`, over a 7.5 s linear scroll of 20 random events through 66%
 of their height, reusing the real `TimelineEvent` component. Reduced-motion users get a static
 screen that auto-completes in 500 ms. Constants live at the top of `GameStartTransition.tsx`.
 Noted in an old design review as an unskippable fake load — still true.
+
+**`SCROLL_DURATION` sets the scroll _speed_, not how long the transition lasts.** The component
+unmounts at `TOTAL_DURATION` (3 s), so only the first ~40% of the 7.5 s animation is ever seen —
+raising it slows the drift, it does not make the transition longer. `SCROLL_PERCENTAGE` (0.66)
+is likewise a distance, not a duration. To change how long players wait, edit `TOTAL_DURATION`.
 
 The "Loading events from across time…" overlay is **not a card** — it deliberately has no
 panel, border or shadow. It is a full-width band of `backdrop-blur-xl` plus a 95% `--color-bg`
