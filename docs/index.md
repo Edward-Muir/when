@@ -40,6 +40,8 @@ original per-session write-ups if you need the blow-by-blow.
   ship instantly), safe-area utilities, daily reminders
 - [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
   where the 20-category taxonomy came from
+- [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +
+  dedup) and the game-wide duplicate audit
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app

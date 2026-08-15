@@ -21,6 +21,7 @@ import {
   Stethoscope,
   Leaf,
   Landmark,
+  Trophy,
   type LucideIcon,
 } from 'lucide-react';
 import { Category } from '../types';
@@ -47,6 +48,7 @@ const CATEGORY_ICONS: Record<Category, LucideIcon> = {
   art: Palette,
   medicine: Stethoscope,
   nature: Leaf,
+  sports: Trophy,
 };
 
 interface CategoryIconProps {
