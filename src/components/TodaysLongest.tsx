@@ -1,5 +1,6 @@
 import React from 'react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { resolvePlayerRow } from '../utils/leaderboardUtils';
 
 interface TodaysLongestProps {
   entries: LeaderboardEntry[];
@@ -46,7 +47,8 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
   onOpenFull,
 }) => {
   const top3 = entries.slice(0, 3);
-  const showYouRow = !!playerEntry && (playerEntry.rank ?? playerRank ?? 0) > 3;
+  const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
+  const showYouRow = playerRow !== null && !inList;
 
   return (
     <button
@@ -86,13 +88,13 @@ const TodaysLongest: React.FC<TodaysLongestProps> = ({
             );
           })}
 
-          {showYouRow && playerEntry && (
+          {showYouRow && playerRow && (
             <>
               <div className="border-t border-border my-1" />
               <Row
-                rank={playerEntry.rank ?? playerRank ?? '—'}
+                rank={playerRow.rank ?? playerRank ?? '—'}
                 name="You"
-                score={playerEntry.correctCount}
+                score={playerRow.correctCount}
                 highlight
               />
             </>

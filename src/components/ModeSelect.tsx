@@ -180,6 +180,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     totalPlayers,
     rank,
     playerEntry,
+    truncated: leaderboardTruncated,
     fetchLeaderboard,
   } = useLeaderboard();
 
@@ -472,6 +473,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         totalPlayers={totalPlayers ?? 0}
         playerRank={rank}
         playerEntry={playerEntry}
+        truncated={leaderboardTruncated}
         isLoading={isLeaderboardLoading}
         error={leaderboardError}
         onRefresh={() => {

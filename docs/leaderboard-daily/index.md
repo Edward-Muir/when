@@ -79,6 +79,78 @@ Device identity is a SHA-256 of browser signals plus a random UUID persisted in 
 (`when-device-id`). Clearing localStorage mints a new one — accepted, since there are no prizes
 and it only needs to stop casual double-submits.
 
+## The whole board is browsable (2026-08-15)
+
+The modal used to render `entries.slice(0, 5)` plus a `•••` separator and a duplicated row for
+the player when they placed outside the top 5. It now renders every entry the server returns.
+
+**Showing ~45 rows instead of 5 made the endpoint cheaper, not dearer**, which is the part
+worth remembering. `[date].ts` already read the _entire_ sorted set on every request — the
+client always sends a `deviceId`, and locating that device meant a `ZRANGE 0 -1` — and then
+threw the result away after a `findIndex`. The limited `ZRANGE` and the `ZCARD` beside it were
+both redundant with that read. One `ZRANGE` now serves the rows, the total and the player's
+rank: **three Upstash commands down to one**, on a public endpoint each open client polls
+every 15s.
+
+- `DEFAULT_LIMIT` (100) and `MAX_LIMIT` (500) live in `api/leaderboard/limits.ts` as named
+  constants with a `resolveLimit` clamp, replacing an inline `Math.min(… || 50, 100)`.
+- The response carries **`truncated`**. `totalPlayers` is a true count including bots while
+  `leaderboard` is capped, so the two have always been able to disagree; before this the UI
+  silently implied it was showing everyone. Nothing may reintroduce that gap quietly.
+- **Returning everything stays right to roughly 250–300 entries.** Past that, degrade in this
+  order: lean on `truncated` to say "showing the top N of M" honestly, and only then window the
+  list. Don't reach for react-window at 60 players, and **don't** add `s-maxage`/ISR/prerender
+  to make a bigger payload cheaper — see the shadowban note below.
+- **`emojiGrid` was dropped from the read payload.** It had been fetched on every poll since
+  the feature shipped and rendered nowhere; the share sheet builds its own grid from local
+  placement history. It remains stored on the entry and validated on submit. It was the largest
+  field per row, so this roughly halves the per-poll body.
+- `Game.tsx` prefetches via `warmLeaderboard()`, which sends no `deviceId` and `limit=1`. Its
+  old full fetch went into a `useLeaderboard` instance nothing read — `LeaderboardSubmit` holds
+  its own. What the prefetch actually buys is a warm function and pre-generated bots, and that
+  needs a touch, not a download.
+
+**The sticky self-row replaced the ellipsis duplicate.** The player's _real_ row is the pinned
+element — `position: sticky` with **both** `top-0` and `bottom-0`, so a short box stays clamped
+inside the scrollport: riding the bottom edge while its natural position is below the fold,
+settling into place as you reach it, riding the top edge afterwards. One node, no duplicate to
+keep in sync, no IntersectionObserver. Tapping it scrolls to the player's real position.
+
+- **The background must be fully opaque**, or the list shows through as it scrolls under. This
+  is why `bg-accent/20` had to be _fixed_ rather than tolerated as a cosmetic no-op: it renders
+  solid accent. `.bg-player-row` in `index.css` mixes accent into `--color-surface` with
+  `color-mix`, deliberately against the surface colour rather than `transparent`.
+- `z-10` is load-bearing: the list's `divide-y` borders otherwise draw over the pinned row.
+- The whole row is the `<button>`, because `index.css` forces `min-height: 44px` on every
+  button — right for a full row, distorting for a small control inside one.
+- **A prerequisite, not polish:** the card carried `onClick={onClose}` alongside the backdrop's,
+  so tapping any row — or releasing a scrollbar drag — dismissed the board. Harmless at five
+  rows, fatal once the list scrolls. `Leaderboard.test.tsx` pins it, and that is the reason the
+  repo now has its first React Testing Library test at all.
+
+**A footer states that ranks move.** The ~50-hour fill window above is deliberate, but a top-5
+hid the drift and a full board does not; "my rank dropped overnight" is the bug report this one
+line pre-empts. Anyone minded to delete it should read that section first.
+
+**On phones the board is a full-screen sheet, not a centred card.** Every other modal in the
+app is `inset-0 flex items-center justify-center p-4`, so this is the first sheet in the repo;
+it is plain responsive Tailwind (`items-end sm:items-center`, full-bleed `h-dvh` +
+`min-h-screen-safe` with `pt-safe-top`/`pb-safe-bottom`, reverting to the old
+`max-w-[400px] max-h-[80vh]` card at `sm:`). The one thing Tailwind could not express is the
+animation — framer-motion writes inline styles, so a breakpoint cannot swap the sheet's
+slide-up for the card's scale-in. Hence `src/hooks/useMediaQuery.ts`, which exists for that
+reason alone; prefer a breakpoint class over reaching for it. The scroll region also picked up
+`.timeline-scroll-vertical`, whose `overscroll-behavior-y: contain` is what stops a flick past
+the end of a 45-row list from scrolling the page behind the sheet on iOS.
+
+Bots were left structurally indistinguishable, as before — nothing marks them, and 7–13
+plausible "Adjective Animal" names read as less anomalous in a 45-row list than in a 5-row one.
+
+`resolvePlayerRow` in `src/utils/leaderboardUtils.ts` is shared by all three surfaces. The
+game-over preview used to do `entries.find(e => e.rank === playerRank)` against the capped
+slice, which silently found nothing once a player ranked below the cap; the server's
+`playerEntry` is the answer and always has been.
+
 ## Bots
 
 The board is seeded with 7–13 bots so it doesn't look empty. Generated **lazily on the first
@@ -238,4 +310,13 @@ list shifts when data arrives.
 The original skeleton bars were invisible because they used `bg-border/50` — the
 opacity-modifier no-op described in [../gameplay-feel/index.md](../gameplay-feel/index.md) and
 CLAUDE.md. This folder is where that trap was first hit, in February; it was rediscovered
-independently in July.
+independently in July, and a **third** instance was found in August at the player-row highlight
+(`bg-accent/20`, rendering solid accent), where being opaque turned out to be a requirement
+rather than an accident — see the sticky-row note above.
+
+**The skeleton's row count is the layout-shift control.** The card is sized by its content up
+to `max-h`, so a 5-row skeleton gave a short card that snapped taller the moment a full board
+arrived. It renders 8 rows now, and the scroll region carries `min-h-[320px]` so the skeleton,
+error, empty and short-board states all settle at the same height. The width taper
+(`70 - i * 8`) only reads as a list for the first five rows; past that it flattens rather than
+running off the end of its range.

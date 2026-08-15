@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Trophy } from 'lucide-react';
 import { uniqueNamesGenerator, adjectives, animals } from 'unique-names-generator';
 import { useLeaderboard, LeaderboardEntry } from '../hooks/useLeaderboard';
-import { getMedalEmoji } from '../utils/leaderboardUtils';
+import { getMedalEmoji, resolvePlayerRow } from '../utils/leaderboardUtils';
 import {
   DailyResult,
   getDisplayName,
@@ -31,10 +31,12 @@ function LeaderboardPreview({
   entries,
   isLoading,
   playerRank,
+  playerEntry,
 }: {
   entries: LeaderboardEntry[];
   isLoading: boolean;
   playerRank: number | null;
+  playerEntry: LeaderboardEntry | null;
 }) {
   if (isLoading) {
     return <div className="text-sm text-text-muted text-center py-2">Loading leaderboard...</div>;
@@ -45,8 +47,10 @@ function LeaderboardPreview({
   }
 
   const top3 = entries.slice(0, 3);
-  const playerEntry =
-    playerRank && playerRank > 3 ? entries.find((e) => e.rank === playerRank) : null;
+  // The server's own row for the caller, not a lookup in `entries` — the list is a capped
+  // slice, so searching it silently finds nothing once the player ranks below the cap.
+  const { row: playerRow, inList } = resolvePlayerRow(top3, playerRank, playerEntry);
+  const outsideTop3 = playerRow !== null && !inList;
 
   return (
     <div className="space-y-1">
@@ -57,22 +61,22 @@ function LeaderboardPreview({
       {top3.map((entry) => (
         <div
           key={entry.rank}
-          className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-accent/10' : ''}`}
+          className={`flex items-center gap-2 text-sm px-2 py-1 rounded ${playerRank === entry.rank ? 'bg-player-row' : ''}`}
         >
           <span className="w-5 text-center">{getMedalEmoji(entry.rank)}</span>
           <span className="flex-1 truncate font-body text-text">{entry.displayName}</span>
           <span className="font-mono text-accent font-medium">{entry.correctCount}</span>
         </div>
       ))}
-      {playerEntry && (
+      {outsideTop3 && playerRow && (
         <>
           <div className="text-xs text-text-muted text-center py-1">...</div>
-          <div className="flex items-center gap-2 text-sm px-2 py-1 rounded bg-accent/10">
+          <div className="flex items-center gap-2 text-sm px-2 py-1 rounded bg-player-row">
             <span className="w-5 text-center text-xs text-text-muted font-mono">
-              #{playerEntry.rank}
+              #{playerRow.rank}
             </span>
-            <span className="flex-1 truncate font-body text-text">{playerEntry.displayName}</span>
-            <span className="font-mono text-accent font-medium">{playerEntry.correctCount}</span>
+            <span className="flex-1 truncate font-body text-text">{playerRow.displayName}</span>
+            <span className="font-mono text-accent font-medium">{playerRow.correctCount}</span>
           </div>
         </>
       )}
@@ -92,6 +96,7 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
     totalPlayers,
     isLoading,
     leaderboard,
+    playerEntry,
     submitResult,
     fetchLeaderboard,
   } = useLeaderboard();
@@ -167,7 +172,12 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
   if (alreadySubmitted || hasSubmitted) {
     return (
       <div className="border-t border-border pt-4 mt-4">
-        <LeaderboardPreview entries={leaderboard} isLoading={isLoading} playerRank={rank} />
+        <LeaderboardPreview
+          entries={leaderboard}
+          isLoading={isLoading}
+          playerRank={rank}
+          playerEntry={playerEntry}
+        />
 
         {rank &&
           totalPlayers &&
@@ -198,7 +208,12 @@ const LeaderboardSubmit: React.FC<LeaderboardSubmitProps> = ({ dailyResult, onSu
   // Not submitted yet - show form
   return (
     <div className="border-t border-border pt-4 mt-4">
-      <LeaderboardPreview entries={leaderboard} isLoading={isLoading} playerRank={null} />
+      <LeaderboardPreview
+        entries={leaderboard}
+        isLoading={isLoading}
+        playerRank={null}
+        playerEntry={null}
+      />
 
       <div className="mt-3 space-y-2">
         <input

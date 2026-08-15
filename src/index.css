@@ -81,6 +81,18 @@ body {
   }
 }
 
+/* Player-row highlight.
+   Deliberately NOT `bg-accent/20` — opacity modifiers on the theme tokens are silent
+   no-ops in this project (the tokens are plain `var(--color-x)` with no <alpha-value>
+   channel), so that expression renders SOLID accent. It also has to be fully opaque
+   rather than translucent: the leaderboard pins the player's own row with
+   `position: sticky`, and a see-through sticky row shows the list scrolling underneath. */
+@layer utilities {
+  .bg-player-row {
+    background-color: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface));
+  }
+}
+
 /* Font utilities */
 @layer utilities {
   .font-display {
