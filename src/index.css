@@ -82,14 +82,27 @@ body {
 }
 
 /* Player-row highlight.
-   Deliberately NOT `bg-accent/20` — opacity modifiers on the theme tokens are silent
-   no-ops in this project (the tokens are plain `var(--color-x)` with no <alpha-value>
-   channel), so that expression renders SOLID accent. It also has to be fully opaque
-   rather than translucent: the leaderboard pins the player's own row with
+   Deliberately NOT `bg-accent/20` — opacity modifiers on the theme tokens don't work in this
+   project. The tokens are plain `var(--color-x)` values with no <alpha-value> channel, so
+   Tailwind can't parse them as colours and DROPS THE WHOLE DECLARATION: `.bg-accent\/20` is
+   absent from the compiled CSS, leaving the element with no background at all. It also has to
+   be fully opaque rather than translucent: the leaderboard pins the player's own row with
    `position: sticky`, and a see-through sticky row shows the list scrolling underneath. */
 @layer utilities {
   .bg-player-row {
     background-color: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface));
+  }
+}
+
+/* Frosted panel for the game-start loading card (GameStartTransition.tsx), which floats over
+   the scrolling intro timeline. NOT `bg-surface/88` — see the note above: that emits nothing
+   at all, which is precisely how this card ended up transparent, with the heading sitting
+   directly on top of blurred card artwork. color-mix is the only way to get real translucency
+   on a theme token. Pairs with `backdrop-blur-xl`; the 12% that shows through reads as a
+   colour wash rather than legible detail. */
+@layer utilities {
+  .bg-frosted-panel {
+    background-color: color-mix(in srgb, var(--color-surface) 88%, transparent);
   }
 }
 

@@ -70,8 +70,8 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
         exit={{ opacity: 0 }}
         className="min-h-dvh min-h-screen-safe flex items-center justify-center bg-bg transition-colors"
       >
-        <div className="bg-bg/90 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border">
-          <h1 className="text-text font-display text-xl text-center">
+        <div className="bg-frosted-panel rounded-2xl px-8 py-6 shadow-xl border border-border">
+          <h1 className="text-text font-display font-semibold text-xl text-center">
             Loading events from across time...
           </h1>
         </div>
@@ -113,14 +113,17 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
         </motion.div>
       </div>
 
-      {/* Fade overlays */}
-      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg via-bg/90 to-transparent z-20 pointer-events-none" />
+      {/* Fade overlays. No `via-` stop: an alpha modifier on a theme token compiles to nothing
+          at all (see the note on .bg-frosted-panel in index.css), so the old `via-bg/90` was
+          already dead weight and these have always rendered as a two-stop gradient. */}
+      <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-bg to-transparent z-20 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-bg to-transparent z-20 pointer-events-none" />
 
-      {/* Semi-transparent overlay with text + animated ellipsis */}
+      {/* Frosted panel with text + animated ellipsis. The blur has to be heavy: the backdrop is
+          full-contrast card artwork, and a light blur leaves shapes legible behind the serif. */}
       <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-        <div className="bg-bg/85 backdrop-blur-sm rounded-2xl px-8 py-6 shadow-xl border border-border/50">
-          <h1 className="text-text font-display text-xl text-center">
+        <div className="bg-frosted-panel backdrop-blur-xl rounded-2xl px-8 py-6 shadow-xl border border-border">
+          <h1 className="text-text font-display font-semibold text-xl text-center">
             Loading events from across time
             <LoadingEllipsis />
           </h1>

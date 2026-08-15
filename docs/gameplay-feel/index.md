@@ -2,18 +2,38 @@
 
 Deck composition, tombstones, streak feedback, transitions, and the colour system.
 
-## Repo-wide trap: Tailwind opacity modifiers are silent no-ops on our colour tokens
+## Repo-wide trap: Tailwind opacity modifiers on our colour tokens compile to nothing
 
 `text-text-muted/60`, `bg-accent/20`, `border-accent-secondary/50` — **none of these do
 anything.** The tokens in `tailwind.config.js` are plain `var(--color-x)` values with no
-`<alpha-value>` channel, so Tailwind cannot apply the alpha modifier and emits the flat
-colour. There is no error; the design just silently doesn't happen.
+`<alpha-value>` channel, so Tailwind's `parseColor` returns `null` and it **drops the whole
+declaration**. The utility class is _absent from the built CSS_ — it does not fall back to the
+flat colour, as this doc previously claimed. There is no error, no warning.
 
-Use `opacity-60` on the element, or `color-mix(in srgb, var(--color-accent) 60%, transparent)`
-in CSS. Standard Tailwind colours (`bg-black/50`, `text-white/70`) are unaffected and do work.
+That distinction matters, because the failure is louder than "wrong colour": an element whose
+only background is `bg-surface/60` renders **fully transparent**. That is exactly how the
+game-start loading card ended up with its heading sitting on unobscured card artwork
+(fixed 2026-08 — see below).
 
-**There are ~46 of these in `src/` today** — they are latent, not urgent, but don't add more,
-and don't be surprised when an existing one has no visual effect.
+```
+.bg-bg{background-color:var(--color-bg)}   ← emitted
+.bg-bg\/85                                 ← ABSENT from the stylesheet
+.bg-black\/50{background-color:#00000080}  ← emitted (hex parses fine)
+```
+
+Use `opacity-60` on the element, or a `color-mix(in srgb, var(--color-accent) 60%, transparent)`
+utility in `index.css` — `.bg-player-row` and `.bg-frosted-panel` are the two live precedents.
+Standard Tailwind colours (`bg-black/50`, `text-white/70`) are unaffected and do work.
+
+**There are ~66 of these in `src/` today** — they are latent, not urgent, but don't add more,
+and don't be surprised when an existing one has no visual effect. To recount:
+
+```bash
+grep -rEoh '\b(bg|text|border|from|via|to|ring|fill|stroke)-(bg|surface|text|text-muted|border|accent|accent-secondary|success|error)/[0-9]+' src/ --include='*.tsx' | wc -l
+```
+
+To check a specific one really landed, grep the build output rather than trusting the source:
+`npm run build && grep -o '\.bg-frosted-panel{[^}]*}' build/static/css/*.css`.
 
 ## Deck composition (2026-08-13)
 
@@ -148,6 +168,14 @@ palette, edit the two blocks in `index.css` and nothing else.
 of their height, reusing the real `TimelineEvent` component. Reduced-motion users get a static
 screen that auto-completes in 500 ms. Constants live at the top of `GameStartTransition.tsx`.
 Noted in an old design review as an unskippable fake load — still true.
+
+The centred "Loading events from across time…" card uses `.bg-frosted-panel` (a `color-mix`
+utility in `index.css`) plus `backdrop-blur-xl`. **Do not "simplify" it back to `bg-bg/85`** —
+that was the original code, and it compiled to no background at all (see the trap above), so the
+heading sat on unobscured, full-contrast card artwork. Both parts are load-bearing: the 88%
+scrim gives the text a surface, and the blur has to stay heavy (24px, not the old `sm`/4px) or
+shapes from the artwork stay legible through the remaining 12% and fight the thin Playfair
+serif. The heading also carries `font-semibold` for stroke weight against a busy backdrop.
 
 ## Elastic draggable cards — research only, nothing built
 
