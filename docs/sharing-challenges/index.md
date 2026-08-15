@@ -76,7 +76,7 @@ reachable from the Capacitor shell only — the web cannot do it.
 **`src/utils/challengeCode.ts` is the source of truth for the wire format.** Its header
 comment carries the current bit layout. Read it before touching the encoding.
 
-## The format was rewritten — old numbers are wrong
+### The format was rewritten — old numbers are wrong
 
 The 2026-03-01 design was **33 bits → 3 words**, using three separate 2048-word lists
 (11 bits each), with a 6-bit category mask and an 8-bit seed. None of that is current.
@@ -95,7 +95,7 @@ Two properties of the current layout are load-bearing:
   to `suddenDeath`. It cannot be reclaimed: the format is positional, so shifting it would
   misdecode _every_ link ever issued, not just freeplay ones.
 
-## Decisions still in force
+### Decisions still in force
 
 - **`WORDLIST` order is immutable.** Reordering or removing a word changes what every
   existing token decodes to. Append only, and only in multiples that keep the length a power
@@ -110,7 +110,7 @@ Two properties of the current layout are load-bearing:
 - **Event-set drift is accepted.** Adding or removing events can make an old token produce a
   different game — same tradeoff the daily makes.
 
-## Superseded UI work
+### Superseded UI work
 
 Two 2026-03-01 sessions built the share-code UI inside a `SettingsPopup`: a "Challenge a
 Friend" section, then an editable two-way code input that decodes a pasted code back into
