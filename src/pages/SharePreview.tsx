@@ -33,6 +33,13 @@ const PRESETS: { id: Preset; label: string }[] = [
   { id: 'challenge', label: 'Challenge' },
 ];
 
+/**
+ * Roughly how wide a share lands in a WhatsApp/iMessage bubble on a phone. The card's
+ * type is sized for this, not for the full-resolution render — judging 46px type against
+ * a 1080px canvas is how it shipped too small the first time.
+ */
+const BUBBLE_WIDTH = 400;
+
 const SharePreview: React.FC = () => {
   const [events, setEvents] = useState<HistoricalEvent[]>([]);
   const [preset, setPreset] = useState<Preset>('daily');
@@ -167,16 +174,32 @@ const SharePreview: React.FC = () => {
 
       <div className="flex flex-wrap gap-6 items-start">
         {imageUrl && (
-          /* eslint-disable-next-line jsx-a11y/img-redundant-alt */
-          <img
-            src={imageUrl}
-            alt="Rendered share card"
-            className="w-[270px] rounded-xl border border-border shadow-sm"
-          />
+          <div>
+            {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+            <img
+              src={imageUrl}
+              alt="Rendered share card"
+              style={{ width: BUBBLE_WIDTH }}
+              className="rounded-xl border border-border shadow-sm"
+            />
+            <p className="font-body text-xs text-text-muted mt-1.5">
+              {BUBBLE_WIDTH}px — chat-bubble size. Judge the type here.
+            </p>
+          </div>
         )}
-        <pre className="font-mono text-sm whitespace-pre-wrap bg-surface border border-border rounded-xl p-4 max-w-md">
-          {text}
-        </pre>
+        <div>
+          {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+          {imageUrl && (
+            <img
+              src={imageUrl}
+              alt="Rendered share card, detail"
+              className="w-[270px] rounded-xl border border-border shadow-sm"
+            />
+          )}
+          <pre className="font-mono text-sm whitespace-pre-wrap bg-surface border border-border rounded-xl p-4 max-w-md mt-3">
+            {text}
+          </pre>
+        </div>
       </div>
 
       <p className="font-body text-xs text-text-muted max-w-md">

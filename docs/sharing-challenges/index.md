@@ -6,9 +6,38 @@ the identical game). Challenge-code work is original to 2026-03-01, format since
 
 ## The share payload
 
-`src/utils/share.ts` builds the message; `src/utils/shareImage.ts` renders a 1080x1920
-story card that travels with it as a `File`. `/share-preview` (unlinked, local dev only)
-renders both side by side and can fire a real share sheet.
+`src/utils/share.ts` builds the message; `src/utils/shareImage.ts` renders a 1080x1350
+card that travels with it as a `File`. `/share-preview` (unlinked, local dev only) renders
+both side by side and can fire a real share sheet.
+
+### The frame is 4:5 because WhatsApp crops
+
+This shipped at 1080x1920 and WhatsApp **center-cropped it in chat**, showing roughly a
+1:1.41 slice — about 200px gone from the top and the bottom, which is exactly where the
+wordmark and the URL sat. Losing the URL is the serious half: the files-only share tier
+(below) drops the message text entirely, so the burned-in URL is the only thing telling a
+viewer where to play. Instagram DMs showed the full 9:16 fine; WhatsApp was the one that
+mangled it.
+
+1080x1350 sits inside that threshold and is also the native max-portrait size for an
+Instagram feed post. The cost is that a Story shows it centred with bars rather than
+full-bleed — accepted, because chat is where most sharing happens.
+`shareImage.test.ts` pins the ratio at <= 1.41.
+
+### Type is sized for a chat bubble, not a phone screen
+
+The binding constraint is **width**, not height: a bubble is ~400 CSS px wide, so the
+1080px canvas renders at ~0.37x and a 34px label lands at ~12px. Every size in the
+renderer is the intended on-screen size divided by 0.37, which is why they look
+oversized in a full-resolution render. `/share-preview` shows the card at 400px for
+exactly this reason — judge it there.
+
+The same arithmetic governs the art: its apparent size is purely `CARD_SIZE / WIDTH`
+times the bubble width, so shortening the canvas does nothing for it. The only lever is
+making the card wider relative to 1080, and the vertical budget caps that around 640.
+Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
+rect (~83% of width, but discards ~30% of each square source), or move to a full-bleed
+poster layout with the text over a scrim.
 
 ### Why there is an image at all
 
@@ -68,6 +97,17 @@ already-derived asset.
   Guarded by a test. See the CLAUDE.md naming note.
 - **No best-streak line.** Dropped 2026-08 as noise — the timeline length is the score.
   `bestStreak` is still tracked in game state and on the stored daily result.
+- **The card is single-line everywhere.** Layout is fixed baselines, so a second line
+  anywhere would push into whatever sits below. `fittedCenteredText` shrinks to fit
+  instead; the 35-char `MAX_FRIENDLY_NAME_LENGTH` cap is what makes that safe (the
+  longest real names settle at ~50px against a 42px floor). The old two-line
+  `wrappedCenteredText` is gone — do not reintroduce wrapping without moving to a flow
+  layout.
+- **The score label and the rank share one line.** The ~55px that saves is what pays for
+  the art card being 640px rather than ~580px.
+- **The URL is full-strength ink; the stat line above it is muted.** At equal weight the
+  two read as a single block. The URL is the line that has to survive being read off a
+  phone screen.
 - **One emoji, reserved for `#1 globally`.** Everything else is plain text.
 - **Exactly one URL, always last.** WhatsApp and iMessage preview the _first_ URL they
   find, so a second one upstream would silently change which page gets the preview card.

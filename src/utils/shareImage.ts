@@ -2,12 +2,32 @@ import { HistoricalEvent } from '../types';
 import { getImageUrl } from './cloudinaryImage';
 
 /**
- * Renders the 9:16 "story card" that gets attached to a share.
+ * Renders the 4:5 card that gets attached to a share.
  *
  * Why an image at all: Instagram does not accept text or URL payloads from a share
  * sheet, so a text-only `navigator.share()` never lists it as a target. Attaching a
  * file is the only route to Instagram from the web, and it makes the WhatsApp/Messages
  * share considerably more eye-catching too.
+ *
+ * ## Why 4:5 and not 9:16
+ *
+ * This was 1080x1920 and **WhatsApp center-cropped it**, showing roughly a 1:1.41 slice
+ * and eating ~200px from the top and bottom — which is exactly where the wordmark and
+ * the URL sat. Losing the URL is the serious half: the files-only share tier drops the
+ * message text entirely, so the burned-in URL is the only thing telling a viewer where
+ * to play. 1080x1350 sits inside that threshold and is also the native max-portrait size
+ * for an Instagram feed post. The cost is that a Story shows it centred with bars rather
+ * than full-bleed; that is the accepted trade for never being cropped in chat, where most
+ * sharing happens. A test pins the ratio.
+ *
+ * ## Sizing type for a chat bubble, not a phone screen
+ *
+ * The binding constraint is *width*, not height: a chat bubble is ~400 CSS px wide, so a
+ * 1080px canvas renders at ~0.37x and a 34px label lands at ~12px on screen. Every size
+ * below is chosen by dividing the intended on-screen size by 0.37. Do not judge them
+ * against the full-size render — `/share-preview` has a 400px view for exactly this.
+ * For the same reason the art's apparent size depends only on `CARD_SIZE / WIDTH`; making
+ * the canvas shorter does nothing for it.
  *
  * ## The one card we are allowed to show
  *
@@ -22,7 +42,7 @@ import { getImageUrl } from './cloudinaryImage';
  *
  * The art is fetched through `getImageUrl(url, 'detail')` — the existing 768x768 rung,
  * **not** a new transform string. `detail` rather than `thumbnail` because the hero is
- * drawn at 560px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
+ * drawn at 660px on a 1080px canvas: the 400px thumbnail would be upscaled and visibly
  * soft, while 768 downscales cleanly.
  *
  * Do not introduce a bespoke size for this surface. Cost scales as
@@ -38,13 +58,20 @@ import { getImageUrl } from './cloudinaryImage';
  * already-derived asset — bandwidth, never a transformation.
  */
 
-/** Instagram/TikTok story canvas. */
-const WIDTH = 1080;
-const HEIGHT = 1920;
+/**
+ * 4:5. Exported so `shareImage.test.ts` can pin the ratio — see the header for why
+ * anything taller gets cropped in WhatsApp.
+ */
+export const WIDTH = 1080;
+export const HEIGHT = 1350;
+
+/** Hero art. As a fraction of WIDTH this is what governs how big the art looks in chat. */
+const CARD_SIZE = 640;
 
 /** Palette lifted from `src/index.css` (.dark) — the card is always dark. */
 const INK = '#f4f1ec';
-const INK_MUTED = 'rgba(244, 241, 236, 0.62)';
+/** 0.78, not the 0.62 this started at: at ~16px on screen the dimmer value vanished. */
+const INK_MUTED = 'rgba(244, 241, 236, 0.78)';
 const ACCENT = '#d4a84b';
 const FALLBACK_BASE = '#0d1b2a';
 
@@ -156,7 +183,15 @@ function drawBlurredBackdrop(ctx: CanvasRenderingContext2D, img: HTMLImageElemen
   ctx.drawImage(tiny, 0, 0, WIDTH, HEIGHT);
 }
 
-/** Shrink the font until the text fits, then draw it centred. */
+/**
+ * Shrink the font until the text fits on one line, then draw it centred.
+ *
+ * Everything on this card is single-line by design. The layout below uses fixed
+ * baselines, so a second line anywhere would push into whatever sits underneath —
+ * shrinking to fit keeps that impossible. Event names make it safe: they are capped at
+ * 35 characters (`MAX_FRIENDLY_NAME_LENGTH`, enforced by `eventNameLength.test.ts`), and
+ * even the longest still clears the `minSize` floor.
+ */
 function fittedCenteredText(
   ctx: CanvasRenderingContext2D,
   text: string,
@@ -165,49 +200,18 @@ function fittedCenteredText(
   weight: string,
   size: number,
   family: string,
-  color: string
+  color: string,
+  minSize = 16
 ): void {
   let fontSize = size;
   do {
     ctx.font = `${weight} ${fontSize}px ${family}`;
     if (ctx.measureText(text).width <= maxWidth) break;
     fontSize -= 2;
-  } while (fontSize > 16);
+  } while (fontSize > minSize);
   ctx.fillStyle = color;
   ctx.textAlign = 'center';
   ctx.fillText(text, WIDTH / 2, y);
-}
-
-/** Centred word wrap. Returns the y baseline after the last line. */
-function wrappedCenteredText(
-  ctx: CanvasRenderingContext2D,
-  text: string,
-  y: number,
-  maxWidth: number,
-  lineHeight: number,
-  maxLines: number
-): number {
-  const words = text.split(' ');
-  const lines: string[] = [];
-  let line = '';
-  for (const word of words) {
-    const candidate = line ? `${line} ${word}` : word;
-    if (ctx.measureText(candidate).width > maxWidth && line) {
-      lines.push(line);
-      line = word;
-      if (lines.length === maxLines) break;
-    } else {
-      line = candidate;
-    }
-  }
-  if (lines.length < maxLines && line) lines.push(line);
-
-  let baseline = y;
-  for (const entry of lines) {
-    ctx.fillText(entry, WIDTH / 2, baseline);
-    baseline += lineHeight;
-  }
-  return baseline;
 }
 
 /**
@@ -249,17 +253,24 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     ctx.textBaseline = 'alphabetic';
 
     // --- Header. The game is "When?" everywhere else; the mark keeps its question mark. ---
-    fittedCenteredText(ctx, 'When?', 300, 900, '600', 132, DISPLAY_FONT, INK);
+    fittedCenteredText(ctx, 'When?', 150, 900, '600', 134, DISPLAY_FONT, INK);
     if (spec.eyebrow) {
-      ctx.font = `500 34px ${BODY_FONT}`;
-      ctx.fillStyle = INK_MUTED;
-      ctx.fillText(spec.eyebrow.toUpperCase(), WIDTH / 2, 372);
+      fittedCenteredText(
+        ctx,
+        spec.eyebrow.toUpperCase(),
+        204,
+        940,
+        '500',
+        40,
+        BODY_FONT,
+        INK_MUTED
+      );
     }
 
     // --- Hero card: the seed event, face up ---
-    const cardSize = 560;
+    const cardSize = CARD_SIZE;
     const cardX = (WIDTH - cardSize) / 2;
-    const cardY = 470;
+    const cardY = 238;
     ctx.save();
     ctx.shadowColor = 'rgba(0, 0, 0, 0.55)';
     ctx.shadowBlur = 60;
@@ -284,36 +295,30 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
     ctx.restore();
 
     // Seed card caption — safe to name, it is on the board before the first move.
+    // 42px floor: the longest names in the catalogue (35 chars) settle around 46px, so
+    // the floor is headroom rather than something reached in practice.
     if (spec.event) {
-      ctx.font = `600 46px ${DISPLAY_FONT}`;
-      ctx.fillStyle = INK;
-      const afterName = wrappedCenteredText(
-        ctx,
-        spec.event.friendly_name,
-        cardY + cardSize + 84,
-        820,
-        58,
-        2
-      );
-      ctx.font = `500 34px ${BODY_FONT}`;
-      ctx.fillStyle = ACCENT;
-      ctx.fillText(formatYear(spec.event.year), WIDTH / 2, afterName + 4);
+      fittedCenteredText(ctx, spec.event.friendly_name, 946, 900, '600', 58, DISPLAY_FONT, INK, 42);
+      fittedCenteredText(ctx, formatYear(spec.event.year), 1000, 900, '500', 42, BODY_FONT, ACCENT);
     }
 
     // --- Score ---
     // Playfair Display sets old-style figures: 3, 4, 5, 7 and 9 drop well below the
-    // baseline. At 210px that overshoot is ~45px, so the label needs far more clearance
-    // than the cap height suggests — "11" looks fine at a tight gap and "23" collides.
-    fittedCenteredText(ctx, spec.score, 1470, 900, '600', 210, DISPLAY_FONT, INK);
-    fittedCenteredText(ctx, spec.scoreLabel, 1584, 900, '500', 38, BODY_FONT, INK);
-    if (spec.detail) {
-      fittedCenteredText(ctx, spec.detail, 1644, 900, '500', 32, BODY_FONT, INK_MUTED);
-    }
+    // baseline. At 175px that overshoot is ~37px, so the line beneath needs far more
+    // clearance than the cap height suggests — "11" looks fine at a tight gap and "23"
+    // collides. Do not close this gap up when retuning.
+    fittedCenteredText(ctx, spec.score, 1158, 900, '600', 175, DISPLAY_FONT, INK);
 
-    // --- Footer ---
-    ctx.fillStyle = ACCENT;
-    ctx.fillRect(WIDTH / 2 - 44, 1712, 88, 3);
-    fittedCenteredText(ctx, spec.url, 1790, 900, '500', 36, BODY_FONT, INK);
+    // The label and the rank share a line. Two stacked lines is what this card cannot
+    // afford: the ~55px it saves is what lets the art be 640px rather than ~580px.
+    const statLine = spec.detail ? `${spec.scoreLabel} · ${spec.detail}` : spec.scoreLabel;
+    fittedCenteredText(ctx, statLine, 1246, 940, '500', 44, BODY_FONT, INK_MUTED);
+
+    // --- Footer. No divider rule above it: decorative, and it cost 40px of a tight budget.
+    // Full-strength ink and a clear gap above, against a muted stat line: at equal weight
+    // the two ran together as one block, and this is the line that has to survive being
+    // read off a phone screen.
+    fittedCenteredText(ctx, spec.url, 1310, 900, '500', 48, BODY_FONT, INK);
 
     // JPEG, not PNG: the backdrop is photographic, so PNG runs to several MB and some
     // share targets choke on large payloads.
