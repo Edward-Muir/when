@@ -2,6 +2,7 @@ import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
 import { ensureBotsExist } from './botGeneration';
 import { normalizeDisplayName, safeDisplayName } from './nameFilter';
+import { resolveLimit } from './limits';
 
 const redis = Redis.fromEnv();
 
@@ -14,11 +15,14 @@ interface LeaderboardEntry {
   timestamp: number;
 }
 
+// Only what the board renders. `emojiGrid` and `totalAttempts` are stored on the entry and
+// used by submit-side validation, but neither reaches the client: no surface has ever shown
+// another player's grid (the share sheet builds its own from local placement history), and
+// `totalAttempts` was only ever used to derive a mistake count, which is the same number for
+// every player — see the scoring note in submit.ts. Both shipped on every 15s poll.
 interface PublicLeaderboardEntry {
   displayName: string;
   correctCount: number;
-  totalAttempts: number;
-  emojiGrid: string;
   rank: number;
 }
 
@@ -31,7 +35,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const { date } = req.query;
     const deviceId = req.query.deviceId as string | undefined;
-    const limit = Math.min(parseInt(req.query.limit as string) || 50, 100);
+    const limit = resolveLimit(req.query.limit);
 
     // Validate date format (YYYY-MM-DD)
     if (typeof date !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(date)) {
@@ -43,10 +47,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     const leaderboardKey = `leaderboard:${date}`;
 
-    // Get top entries (highest score first)
-    const entries = await redis.zrange(leaderboardKey, 0, limit - 1, {
+    // Locating the caller means scanning the whole board, so when a deviceId is supplied
+    // (always, from the app) one full ZRANGE serves everything: the rows, the total, and
+    // the player's position. Reading the entire set used to be an extra command on top of
+    // a limited ZRANGE and a ZCARD; folding them together makes serving the *whole* board
+    // cheaper than serving the old top-50 was. Upstash bills per command and this endpoint
+    // is public and polled every 15s per open client, so the count matters.
+    const needsAll = Boolean(deviceId);
+    const rows = await redis.zrange(leaderboardKey, 0, needsAll ? -1 : limit - 1, {
       rev: true,
     });
+
+    const totalPlayers = needsAll ? rows.length : await redis.zcard(leaderboardKey);
+    const entries = rows.slice(0, limit);
 
     // Create public response (without deviceId)
     // Note: @upstash/redis automatically deserializes JSON, so entries are already objects
@@ -69,44 +82,28 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           safeDisplayName(entry.displayName, entry.deviceId)
         : safeDisplayName(entry.displayName, entry.deviceId);
 
-    const leaderboard: PublicLeaderboardEntry[] = entries.map((entryData, index) => {
-      const entry = entryData as LeaderboardEntry;
-      return {
-        displayName: displayNameFor(entry),
-        correctCount: entry.correctCount,
-        totalAttempts: entry.totalAttempts,
-        emojiGrid: entry.emojiGrid,
-        rank: index + 1,
-      };
+    const toPublicEntry = (entry: LeaderboardEntry, rank: number): PublicLeaderboardEntry => ({
+      displayName: displayNameFor(entry),
+      correctCount: entry.correctCount,
+      rank,
     });
 
-    // Get total player count
-    const totalPlayers = await redis.zcard(leaderboardKey);
+    const leaderboard: PublicLeaderboardEntry[] = entries.map((entryData, index) =>
+      toPublicEntry(entryData as LeaderboardEntry, index + 1)
+    );
 
-    // If deviceId provided, find player's rank and entry
+    // Find the caller's rank in the rows already in hand — no second round trip.
     let playerRank: number | null = null;
     let playerEntry: PublicLeaderboardEntry | null = null;
 
-    if (deviceId) {
-      // Get all entries to find the player
-      const allEntries = await redis.zrange(leaderboardKey, 0, -1, {
-        rev: true,
-      });
-
-      const foundIndex = allEntries.findIndex(
+    if (needsAll) {
+      const foundIndex = rows.findIndex(
         (entryData) => (entryData as LeaderboardEntry).deviceId === deviceId
       );
 
       if (foundIndex !== -1) {
-        const entry = allEntries.at(foundIndex) as LeaderboardEntry;
         playerRank = foundIndex + 1;
-        playerEntry = {
-          displayName: displayNameFor(entry),
-          correctCount: entry.correctCount,
-          totalAttempts: entry.totalAttempts,
-          emojiGrid: entry.emojiGrid,
-          rank: playerRank,
-        };
+        playerEntry = toPublicEntry(rows.at(foundIndex) as LeaderboardEntry, playerRank);
       }
     }
 
@@ -120,6 +117,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       totalPlayers,
       playerRank,
       playerEntry,
+      // `totalPlayers` is the true count (bots included) while `leaderboard` is capped at
+      // `limit`, so the two can disagree. Say so explicitly rather than letting the UI
+      // imply it is showing everyone.
+      truncated: leaderboard.length < totalPlayers,
     });
   } catch (error) {
     console.error('Leaderboard fetch error:', error);

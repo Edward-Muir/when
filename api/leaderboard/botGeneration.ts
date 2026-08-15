@@ -206,8 +206,12 @@ export function generateBotsForDate(date: string): BotEntry[] {
     // Clamp to 0-20 range (reasonable for game)
     const correctCount = Math.min(20, Math.max(0, samplePoisson(POISSON_MEAN, botRandom)));
 
-    // Mistakes: 1-5 (game ends at 5 mistakes)
-    // Weight toward higher mistake counts (more realistic)
+    // Mistakes. INERT: nothing ranks or renders these any more. The score below is correct
+    // count alone, `[date].ts` sends neither `totalAttempts` nor `emojiGrid` to the client,
+    // and a real daily always ends on exactly DAILY_HAND_SIZE mistakes anyway — so the spread
+    // here is not "realistic", it is just the shape of the stored blob. Left as-is because
+    // changing it would reshuffle nothing and invalidate the seeded fixtures for no gain.
+    // Don't infer from this that mistakes vary between players. They don't.
     const mistakeRoll = botRandom();
     let mistakeCount: number;
     if (mistakeRoll < 0.05)
@@ -285,7 +289,10 @@ export async function ensureBotsExist(redis: Redis, date: string): Promise<boole
 
     // Add all bots to the sorted set
     for (const bot of bots) {
-      const score = bot.correctCount * 100 - (bot.totalAttempts - bot.correctCount);
+      // Must match submit.ts exactly, or bots and humans are ranked on different scales.
+      // It previously subtracted the bot's mistake count, which humans could never vary — so
+      // a bot that rolled few mistakes beat a human on the same correct count. See submit.ts.
+      const score = bot.correctCount * 100;
       await redis.zadd(leaderboardKey, {
         score,
         member: JSON.stringify(bot),

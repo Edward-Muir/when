@@ -2,11 +2,11 @@ import { useState, useCallback } from 'react';
 import { DailyResult } from '../utils/playerStorage';
 import { getDeviceFingerprint } from '../utils/deviceFingerprint';
 
+// Exactly what a row renders. The server also stores `emojiGrid` and `totalAttempts` but
+// sends neither — see the note in api/leaderboard/[date].ts.
 export interface LeaderboardEntry {
   displayName: string;
   correctCount: number;
-  totalAttempts: number;
-  emojiGrid: string;
   rank: number;
 }
 
@@ -16,6 +16,8 @@ export interface LeaderboardData {
   totalPlayers: number;
   playerRank: number | null;
   playerEntry: LeaderboardEntry | null;
+  /** True when `leaderboard` is a capped slice of `totalPlayers` rather than the whole board. */
+  truncated: boolean;
 }
 
 interface LeaderboardState {
@@ -27,6 +29,18 @@ interface LeaderboardState {
   isLoading: boolean;
   loadError: string | null;
   data: LeaderboardData | null;
+}
+
+/**
+ * Touch the daily board without downloading it.
+ *
+ * Fire-and-forget: it warms the serverless function and triggers the date's lazy bot
+ * generation, so whoever asks for the board next gets a fast answer. Deliberately sends no
+ * deviceId — that is what lets the endpoint skip reading the whole sorted set — and `limit=1`
+ * so the response body stays trivial. Failures are ignored; this is an optimisation.
+ */
+export function warmLeaderboard(date: string): void {
+  void fetch(`/api/leaderboard/${date}?limit=1`, { cache: 'no-store' }).catch(() => {});
 }
 
 export function useLeaderboard() {
@@ -177,6 +191,7 @@ export function useLeaderboard() {
     loadError: state.loadError,
     leaderboard: state.data?.leaderboard ?? [],
     playerEntry: state.data?.playerEntry ?? null,
+    truncated: state.data?.truncated ?? false,
 
     // Actions
     submitResult,

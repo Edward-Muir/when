@@ -65,26 +65,88 @@ keeps state alive for days.
 
 ## Scoring and validation
 
-Score is `correctCount * 100 - mistakeCount`, so higher correct count wins and fewer mistakes
-breaks the tie. Server-side validation on submit: date inside the window; `correctCount >= 0`
-with no upper bound (a sudden-death run can go indefinitely); 🟩 count equals `correctCount`
-and 🟥 count is 1–5; `totalAttempts == correctCount + mistakeCount`; theme matches the
-server-computed `getThemeDisplayName(getDailyTheme(date))`; and the `submission:{date}:{deviceId}`
-key doesn't already exist.
+Score is `correctCount * 100`. **Mistakes are not part of it and must not be added back.**
 
-The mistake bound of 1–5 comes from the mechanics: the hand is 5 cards, a miss shrinks it, and
-the game ends when it empties.
+The daily deals a hand of 5 and a wrong placement discards the card without drawing a
+replacement, so the game ends exactly when the hand empties — which means **every completed
+daily has the same mistake count**. The score used to subtract it, documented here as a
+tie-break; it never was one, it just shifted every score by the same constant. A session
+believed that line, put a mistakes column on the leaderboard, and shipped a number that reads
+`5✗` on every row. Mistakes say nothing about how a player did in this game.
+
+Equal correct counts therefore genuinely tie, and Redis orders them by the JSON member string.
+A real tie-break would have to be a new term, such as submission time.
+
+Server-side validation on submit: date inside the window; `correctCount >= 0` with no upper
+bound; 🟩 count equals `correctCount`; 🟥 count is 0–`DAILY_HAND_SIZE`;
+`totalAttempts == correctCount + mistakeCount`; theme matches the server-computed
+`getThemeDisplayName(getDailyTheme(date))`; and the `submission:{date}:{deviceId}` key doesn't
+already exist.
+
+The 🟥 bound is a range rather than an equality only because a correct placement redraws just
+`if (newCard)` — exhausting the day's themed pool would shrink the hand with no mistake and end
+the game early. That takes ~100 correct placements against a realistic best of ~30, so it is
+theoretical; the range exists because wrongly rejecting a legitimate run is worse than
+accepting a short one.
 
 Device identity is a SHA-256 of browser signals plus a random UUID persisted in localStorage
 (`when-device-id`). Clearing localStorage mints a new one — accepted, since there are no prizes
 and it only needs to stop casual double-submits.
 
+## The whole board is browsable (2026-08-15)
+
+The modal rendered `entries.slice(0, 5)`; it now renders everything the server returns. It stays
+the centred pop-out card at every width — a full-screen sheet on phones was tried and reverted.
+
+**Serving ~45 rows is cheaper than serving 5 was.** `[date].ts` already read the entire sorted
+set on every request — the client always sends a `deviceId`, and locating it meant a
+`ZRANGE 0 -1` — then discarded it after a `findIndex`. The limited `ZRANGE` and the `ZCARD`
+beside it were both redundant with that read. One `ZRANGE` now serves rows, total and rank:
+**three Upstash commands down to one**, on an endpoint every open client polls at 15s.
+
+- Limits are `DEFAULT_LIMIT`/`MAX_LIMIT` in `limits.ts`, and the response carries `truncated`
+  so `totalPlayers` (a true count, bots included) can never silently disagree with the rendered
+  count again. Returning everything stays right to roughly 250–300 entries; past that say so
+  via `truncated` before reaching for windowing, and **never** add `s-maxage`/ISR to make a
+  bigger payload cheaper — the body varies per device, see the filtering section below.
+- **`emojiGrid` and `totalAttempts` are stored but not sent.** Neither was ever rendered; both
+  shipped on every poll. Check for a consumer before restoring either.
+- The sticky player row **must have an opaque background** or the list shows through as it
+  scrolls under, which is why `bg-accent/20` had to be fixed rather than tolerated as a
+  cosmetic no-op — it renders solid accent. `.bg-player-row` mixes accent into
+  `--color-surface`. Its `z-10` is equally load-bearing: `divide-y` borders draw over it
+  otherwise.
+- **The card carried `onClick={onClose}` alongside the backdrop's**, so tapping any row
+  dismissed the board — harmless at five rows, fatal once it scrolls. `Leaderboard.test.tsx`
+  pins it, and is the repo's first React Testing Library test.
+- **On phones the card is `max-h-full`, deliberately.** It fills the backdrop's padded box, so
+  the gap to the screen edge is identical on all four sides and the `p-4` is the single thing
+  that sets it. A `vh` or pixel height cap was tried and reverted: any cap shorter than the
+  viewport makes the top and bottom gaps larger than the sides. Above `sm:` the 400px width cap
+  puts the side gaps in the hundreds, so equal margins are unreachable and the height _is_
+  capped — otherwise the card is a very tall, narrow column.
+- Beware sizing this against the old five-row modal. A `max-h` was always present, but at five
+  rows the card was content-sized (~350–440px) and never reached it. Check heights against a
+  full board.
+- The list's `min-h` is capped against the viewport (`min(320px,30vh)`) rather than a flat pixel
+  floor, so it can never demand more than the card has — on a landscape phone the card is only
+  ~358px and `overflow-hidden` would silently eat the bottom of the list.
+- Truncation is disclosed in the **player-count bar** ("Showing 100 of 900 players today"), not
+  a footer. There was briefly a footer line about ranks drifting through the day; it was cut as
+  noise. If the ~50-hour fill window ever needs explaining again, it belongs somewhere a player
+  isn't reading on every single open.
+
 ## Bots
 
 The board is seeded with 7–13 bots so it doesn't look empty. Generated **lazily on the first
 fetch for a date**, deterministically from the date string (mulberry32), behind a Redis `SETNX`
-lock so concurrent requests can't double-generate. Scores are Poisson(6) clamped 0–20, mistakes
-weighted toward 4–5. Names are "Adjective Animal" from the same lists the name filter reuses.
+lock so concurrent requests can't double-generate. Correct counts are Poisson(6) clamped 0–20.
+Names are "Adjective Animal" from the same lists the name filter reuses.
+
+Bots also roll a mistake count, which is **inert** — nothing ranks or renders it. While the
+score still subtracted mistakes, this was a live unfairness: a bot rolling few mistakes beat a
+human on the same correct count, because a human's is always the full hand. Bots are scored by
+the same expression as `submit.ts` now; keep it that way.
 
 **Bot _creation_ is gated to the submission window.** `[date].ts` still serves any well-formed
 date so historical boards stay readable, but previously any client could mint bot sets and lock
@@ -238,4 +300,9 @@ list shifts when data arrives.
 The original skeleton bars were invisible because they used `bg-border/50` — the
 opacity-modifier no-op described in [../gameplay-feel/index.md](../gameplay-feel/index.md) and
 CLAUDE.md. This folder is where that trap was first hit, in February; it was rediscovered
-independently in July.
+independently in July, and a **third** time in August at the player-row highlight.
+
+**The skeleton's row count is the layout-shift control.** The card is sized by its content up
+to `max-h`, so a 5-row skeleton gave a short card that snapped taller the moment a full board
+arrived. It renders 8 now, and the scroll region carries a `min-h` so skeleton, error, empty
+and short-board states settle at the same height.

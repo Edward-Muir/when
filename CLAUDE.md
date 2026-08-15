@@ -53,7 +53,7 @@ npm run release              # Bump version (auto-detect from commits)
 ## Styling
 
 - Colors: CSS custom properties in `src/index.css`, referenced by Tailwind. Use `bg-bg`, `text-text`, `bg-accent` etc. No `dark:` prefixes needed.
-- **Opacity modifiers are silent no-ops on those tokens.** `bg-accent/20`, `text-text-muted/60` and friends emit the flat color — the tokens are plain `var(--color-x)` with no `<alpha-value>` channel. Use `opacity-60` on the element, or `color-mix()` in CSS. Standard Tailwind colors (`bg-black/50`) are fine. ~46 no-op instances already exist in `src/`; don't add more.
+- **Opacity modifiers are silent no-ops on those tokens.** `bg-accent/20`, `text-text-muted/60` and friends emit the flat color — the tokens are plain `var(--color-x)` with no `<alpha-value>` channel. Use `opacity-60` on the element, or `color-mix()` in CSS. Standard Tailwind colors (`bg-black/50`, and `white`/`black`, which are plain hex here) are fine. ~69 no-op instances exist in `src/` and the count keeps drifting upward; don't add more. When the colour has to be opaque — anything `position: sticky` scrolls over — a `color-mix()` utility is the fix, as `.bg-player-row` does for the leaderboard.
 - Fonts: `font-display` (Playfair Display), `font-body` (Inter), `font-mono` (DM Mono)
 - Animations come from two places, and the split matters:
   - **Tailwind keyframes** (`tailwind.config.js`): `animate-entrance` is used; `animate-shake` and `animate-screen-shake` are defined but have **zero usages** — don't reach for them.
