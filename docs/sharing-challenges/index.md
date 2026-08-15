@@ -34,7 +34,8 @@ exactly this reason — judge it there.
 
 The same arithmetic governs the art: its apparent size is purely `CARD_SIZE / WIDTH`
 times the bubble width, so shortening the canvas does nothing for it. The only lever is
-making the card wider relative to 1080, and the vertical budget caps that around 640.
+making the card wider relative to 1080, and the vertical budget caps that — currently 680,
+raised from 640 in 2026-08 by the space the seed card's year line used to occupy.
 Two remaining levers if it ever needs to be bigger: crop the art to a landscape rounded
 rect (~83% of width, but discards ~30% of each square source), or move to a full-bleed
 poster layout with the text over a scrim.
@@ -67,9 +68,10 @@ composition of that day's puzzle to everyone who sees the post.
 ### Cost
 
 Art is fetched through the existing **`detail`** rung (`getImageUrl(url, 'detail')`), not a
-new transform string. `detail` rather than `thumbnail` because the hero is drawn at 640px on
+new transform string. `detail` rather than `thumbnail` because the hero is drawn at 680px on
 a 1080px canvas: the 400px thumbnail gets upscaled and looks visibly soft, while 768
-downscales cleanly.
+downscales cleanly. 768 is also the ceiling on `CARD_SIZE` — past it the art upscales and
+the temptation to mint a bespoke rung returns.
 
 Reusing an existing rung is the load-bearing part. A bespoke size for this surface would
 mint a third rung — roughly 13,000 transformations across the catalogue, about half a
