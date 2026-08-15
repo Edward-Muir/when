@@ -25,11 +25,11 @@ const POLL_INTERVAL_MS = 15_000;
 // `max-h`, so the skeleton's row count is what stops it snapping taller when data lands.
 const SKELETON_ROWS = 8;
 
-// ~7 rows, so the skeleton, error, empty and short-board states settle at the same height.
-// Capped against the viewport as well: the card is `max-h-[80vh]` and its header, count bar and
-// footer come to ~139px, so a flat 320px floor would outgrow the card on a landscape phone and
-// `overflow-hidden` would clip the footer away.
-const LIST_MIN_HEIGHT = 'min-h-[min(320px,40vh)]';
+// ~6 rows, so the skeleton, error, empty and short-board states settle at the same height.
+// Capped against the viewport too: the card is `max-h-[min(75vh,520px)]` and the header and
+// count bar take ~90px of it, so a flat pixel floor would outgrow the card on a landscape phone
+// and `overflow-hidden` would silently eat the bottom of the list.
+const LIST_MIN_HEIGHT = 'min-h-[min(320px,30vh)]';
 
 const CARD_MOTION = {
   initial: { scale: 0.9, opacity: 0 },
@@ -224,7 +224,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             role="dialog"
             aria-modal="true"
             aria-labelledby="leaderboard-title"
-            className="w-[90vw] max-w-[400px] max-h-[80vh] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
+            className="w-[90vw] max-w-[400px] max-h-[min(75vh,520px)] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
             {...CARD_MOTION}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
             // The backdrop closes the board; clicks that land on the card itself must not.
@@ -248,11 +248,15 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
               </button>
             </div>
 
-            {/* Player count */}
+            {/* Player count. Also where truncation is disclosed: `totalPlayers` is the true
+                count while the list is capped, so without this the board would imply it is
+                showing everyone. */}
             <div className="px-4 py-2 border-b border-border bg-bg flex items-center gap-2 shrink-0">
               <Users className="w-4 h-4 text-text-muted" />
               <span className="text-sm text-text-muted font-body">
-                {totalPlayers} player{totalPlayers !== 1 ? 's' : ''} today
+                {truncated
+                  ? `Showing ${entries.length} of ${totalPlayers} players today`
+                  : `${totalPlayers} player${totalPlayers !== 1 ? 's' : ''} today`}
               </span>
             </div>
 
@@ -275,15 +279,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             {!isLoading && !error && player.row && !player.inList && (
               <div className="shrink-0 border-t border-border">
                 <LeaderboardRow entry={player.row} highlight />
-              </div>
-            )}
-
-            {/* A board fills over ~50 hours, because the puzzle day is each player's own local
-                date. Ranks really do drift overnight; say so rather than let it read as a bug. */}
-            {!isLoading && !error && entries.length > 0 && (
-              <div className="shrink-0 border-t border-border px-4 py-2 text-xs text-text-muted font-body">
-                {truncated && `Showing the top ${entries.length} of ${totalPlayers}. `}
-                Ranks update through the day as players in other time zones finish.
               </div>
             )}
           </motion.div>

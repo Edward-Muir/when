@@ -119,11 +119,17 @@ beside it were both redundant with that read. One `ZRANGE` now serves rows, tota
 - **The card carried `onClick={onClose}` alongside the backdrop's**, so tapping any row
   dismissed the board — harmless at five rows, fatal once it scrolls. `Leaderboard.test.tsx`
   pins it, and is the repo's first React Testing Library test.
-- A footer says ranks move through the day. The ~50-hour fill window above is deliberate, but a
-  top-5 hid the drift and a full board doesn't; read that section before deleting the line.
-- The list's `min-h` is capped against the viewport (`min(320px,40vh)`), not a flat pixel floor.
-  Inside a `max-h-[80vh]` card the chrome takes ~139px, so a fixed 320px floor outgrows the card
-  on a landscape phone and `overflow-hidden` eats the footer.
+- **The card is capped at `max-h-[min(75vh,520px)]`, and that cap has to bind.** A `max-h` was
+  always on it, but at five rows the card was content-sized (~350–440px) and never reached it;
+  rendering the whole board made it hit the cap for the first time and read as full height.
+  Sizes and floors here need checking against a full list, not the old five.
+- The list's `min-h` is capped against the viewport (`min(320px,30vh)`) rather than a flat pixel
+  floor, so it can never demand more than the card has — on a landscape phone the card is only
+  ~292px and `overflow-hidden` would silently eat the bottom of the list.
+- Truncation is disclosed in the **player-count bar** ("Showing 100 of 900 players today"), not
+  a footer. There was briefly a footer line about ranks drifting through the day; it was cut as
+  noise. If the ~50-hour fill window ever needs explaining again, it belongs somewhere a player
+  isn't reading on every single open.
 
 ## Bots
 

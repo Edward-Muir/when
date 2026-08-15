@@ -171,16 +171,18 @@ describe('Leaderboard', () => {
       expect(screen.getByText('Failed to load leaderboard')).toBeInTheDocument();
     });
 
-    it('tells the player ranks are still moving', () => {
+    it('reports the day’s player count', () => {
       renderBoard();
 
-      expect(screen.getByText(/ranks update through the day/i)).toBeInTheDocument();
+      expect(screen.getByText(/45 players today/i)).toBeInTheDocument();
     });
 
+    // `totalPlayers` is a true count while the list is capped, so the board must not imply it
+    // is showing everyone.
     it('says so when the board is only a slice of the day', () => {
       renderBoard({ totalPlayers: 900, truncated: true });
 
-      expect(screen.getByText(/showing the top 45 of 900/i)).toBeInTheDocument();
+      expect(screen.getByText(/showing 45 of 900 players today/i)).toBeInTheDocument();
     });
 
     it('renders nothing when closed', () => {
