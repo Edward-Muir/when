@@ -95,8 +95,8 @@ and it only needs to stop casual double-submits.
 
 ## The whole board is browsable (2026-08-15)
 
-The modal rendered `entries.slice(0, 5)`; it now renders everything the server returns, in a
-full-screen sheet on phones and the old centred card at `sm:`.
+The modal rendered `entries.slice(0, 5)`; it now renders everything the server returns. It stays
+the centred pop-out card at every width — a full-screen sheet on phones was tried and reverted.
 
 **Serving ~45 rows is cheaper than serving 5 was.** `[date].ts` already read the entire sorted
 set on every request — the client always sends a `deviceId`, and locating it meant a
@@ -121,8 +121,9 @@ beside it were both redundant with that read. One `ZRANGE` now serves rows, tota
   pins it, and is the repo's first React Testing Library test.
 - A footer says ranks move through the day. The ~50-hour fill window above is deliberate, but a
   top-5 hid the drift and a full board doesn't; read that section before deleting the line.
-- `useMediaQuery` exists only because framer-motion writes inline styles, so a breakpoint can't
-  swap the sheet's slide-up for the card's scale-in. Prefer a breakpoint class.
+- The list's `min-h` is capped against the viewport (`min(320px,40vh)`), not a flat pixel floor.
+  Inside a `max-h-[80vh]` card the chrome takes ~139px, so a fixed 320px floor outgrows the card
+  on a landscape phone and `overflow-hidden` eats the footer.
 
 ## Bots
 

@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
-import { useMediaQuery } from '../hooks/useMediaQuery';
 import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
 
@@ -26,21 +25,16 @@ const POLL_INTERVAL_MS = 15_000;
 // `max-h`, so the skeleton's row count is what stops it snapping taller when data lands.
 const SKELETON_ROWS = 8;
 
-// Matches ~7 rows. Keeps the skeleton, error, empty and short-board states the same height.
-const LIST_MIN_HEIGHT = 'min-h-[320px]';
+// ~7 rows, so the skeleton, error, empty and short-board states settle at the same height.
+// Capped against the viewport as well: the card is `max-h-[80vh]` and its header, count bar and
+// footer come to ~139px, so a flat 320px floor would outgrow the card on a landscape phone and
+// `overflow-hidden` would clip the footer away.
+const LIST_MIN_HEIGHT = 'min-h-[min(320px,40vh)]';
 
-// The desktop card scales in; the mobile sheet slides up from the bottom edge. framer-motion
-// writes inline styles, so a Tailwind breakpoint can't express this — hence the media query.
-const DESKTOP_MOTION = {
+const CARD_MOTION = {
   initial: { scale: 0.9, opacity: 0 },
   animate: { scale: 1, opacity: 1 },
   exit: { scale: 0.9, opacity: 0 },
-} as const;
-
-const SHEET_MOTION = {
-  initial: { y: '100%' },
-  animate: { y: 0 },
-  exit: { y: '100%' },
 } as const;
 
 // Poll `onRefresh` every `intervalMs` while `active` and the tab is visible.
@@ -179,7 +173,6 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   onRefresh,
   truncated = false,
 }) => {
-  const isDesktop = useMediaQuery('(min-width: 640px)');
   const playerRowRef = useRef<HTMLButtonElement | null>(null);
 
   // Handle escape key
@@ -207,7 +200,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   const jumpToSelf = useCallback(() => {
     playerRowRef.current?.scrollIntoView({
       block: 'center',
-      behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches
+        ? 'auto'
+        : 'smooth',
     });
   }, []);
 
@@ -218,7 +213,7 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
       {isOpen && (
         <motion.div
           data-testid="leaderboard-backdrop"
-          className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:p-4 bg-black/25"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -229,10 +224,10 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
             role="dialog"
             aria-modal="true"
             aria-labelledby="leaderboard-title"
-            className="flex flex-col overflow-hidden bg-surface shadow-sm w-full h-dvh min-h-screen-safe pt-safe-top pb-safe-bottom sm:w-[90vw] sm:max-w-[400px] sm:h-auto sm:min-h-0 sm:max-h-[80vh] sm:rounded-lg sm:border sm:border-border sm:pt-0 sm:pb-0"
-            {...(isDesktop ? DESKTOP_MOTION : SHEET_MOTION)}
+            className="w-[90vw] max-w-[400px] max-h-[80vh] rounded-lg overflow-hidden border border-border bg-surface shadow-sm flex flex-col"
+            {...CARD_MOTION}
             transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-            // The backdrop closes the sheet; clicks that land on the sheet itself must not.
+            // The backdrop closes the board; clicks that land on the card itself must not.
             // Without this, tapping a row — or releasing a scrollbar drag — closes it.
             onClick={(e) => e.stopPropagation()}
           >
