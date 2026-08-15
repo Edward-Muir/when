@@ -14,4 +14,13 @@ export const ERA_DEFINITIONS: EraDefinition[] = [
   { id: 'modern', name: 'Modern', startYear: 1992, endYear: 2100 },
 ];
 
-export const ALL_ERAS: Era[] = ['prehistory', 'ancient', 'medieval', 'earlyModern', 'industrial', 'worldWars', 'coldWar', 'modern'];
+export const ALL_ERAS: Era[] = [
+  'prehistory',
+  'ancient',
+  'medieval',
+  'earlyModern',
+  'industrial',
+  'worldWars',
+  'coldWar',
+  'modern',
+];
