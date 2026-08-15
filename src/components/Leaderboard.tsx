@@ -4,6 +4,7 @@ import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
 import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
+import LeaderboardSkeleton from './LeaderboardSkeleton';
 
 interface LeaderboardProps {
   isOpen: boolean;
@@ -111,26 +112,7 @@ const LeaderboardList: React.FC<LeaderboardListProps> = ({
   playerRowRef,
 }) => {
   if (isLoading) {
-    return (
-      <div className="divide-y divide-border">
-        {Array.from({ length: SKELETON_ROWS }, (_, i) => (
-          <div
-            key={i}
-            data-testid="leaderboard-skeleton-row"
-            className="px-4 py-3 flex items-center gap-3"
-          >
-            <div className="w-8 h-6 bg-border rounded animate-pulse shrink-0" />
-            <div
-              className="h-5 bg-border rounded animate-pulse"
-              // The taper only reads as a list for the first few rows; past that a flat width
-              // looks less like a pattern than a formula run off the end of its range.
-              style={{ width: i < 5 ? `${70 - i * 8}%` : '34%' }}
-            />
-            <div className="w-8 h-6 bg-border rounded animate-pulse shrink-0" />
-          </div>
-        ))}
-      </div>
-    );
+    return <LeaderboardSkeleton rows={SKELETON_ROWS} />;
   }
 
   if (error) {

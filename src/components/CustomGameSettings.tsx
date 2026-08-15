@@ -6,7 +6,7 @@ import {
   decodeChallengeCode,
   generateChallengeSeed,
 } from '../utils/challengeCode';
-import { shareContent, CHALLENGE_URL } from '../utils/share';
+import { generateChallengeInviteText, shareContent, CHALLENGE_URL } from '../utils/share';
 import FilterControls from './FilterControls';
 
 interface CustomGameSettingsProps {
@@ -107,8 +107,10 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   };
 
   const handleShareChallenge = async () => {
-    const text = `When?\nSame cards, same order — beat my timeline.\n\n${shareUrl}`;
-    const copied = await shareContent(text, 'When? - The Timeline Game');
+    const copied = await shareContent(
+      generateChallengeInviteText(shareUrl),
+      'When? - The Timeline Game'
+    );
     setShowShareToast(copied);
     setTimeout(() => setShowShareToast(false), 2000);
   };
