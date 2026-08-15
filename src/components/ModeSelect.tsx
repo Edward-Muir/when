@@ -308,10 +308,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     const showToast = await shareDailyResult(
       todayResult.date,
       todayResult.theme,
-      todayResult.emojiGrid,
       todayResult.correctCount,
-      todayResult.leaderboardRank,
-      todayResult.leaderboardTotalPlayers
+      {
+        bestStreak: todayResult.bestStreak,
+        leaderboardRank: todayResult.leaderboardRank,
+        // Today's seed card — already face-up on this screen, so no spoiler.
+        seedEvent: previewEvent,
+      }
     );
     if (showToast) {
       setShowShareToast(true);

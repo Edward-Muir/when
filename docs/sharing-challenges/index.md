@@ -1,8 +1,77 @@
 # Sharing & Challenges
 
-Shareable seeded games: settings + a seed are packed into a hyphenated word token embedded
-in `/challenge/<token>`, so a recipient plays the exact same cards in the same order.
-Original work 2026-03-01, format since rewritten.
+Two things live here: the **share payload** (what a result looks like when a player posts
+it) and the **challenge code** (settings + seed packed into a token so a recipient plays
+the identical game). Challenge-code work is original to 2026-03-01, format since rewritten.
+
+## The share payload
+
+`src/utils/share.ts` builds the message; `src/utils/shareImage.ts` renders a 1080x1920
+story card that travels with it as a `File`. `/share-preview` (unlinked, local dev only)
+renders both side by side and can fire a real share sheet.
+
+### Why there is an image at all
+
+**Instagram never appears in a share sheet for a text-only payload** — it accepts image
+and video only. Attaching a file is the sole route to Instagram from the web, and it makes
+WhatsApp and Messages shares far more eye-catching too. `shareContent()` therefore tries
+three payloads in order:
+
+1. `{ text, files }` — keeps the tappable link.
+2. `{ files }` alone — Instagram, Snapchat and Pinterest are reported to drop out of the
+   sheet when `text`/`url` travel alongside `files`. Files-only is the known workaround.
+3. `{ title, text }`, then the clipboard.
+
+An `AbortError` is a user cancelling, not a failure — it must **not** fall through to the
+next payload, or cancelling once re-opens the sheet.
+
+Because tier 2 can drop the text entirely, **the URL is burned into the image**. It is not
+decoration; it is the only thing telling a viewer where to play.
+
+### Only the seed card may be shown
+
+The hero art is the pre-placed seed event — the card already on the timeline at kickoff,
+and the same one the home screen shows as the daily preview. It gives nothing away.
+**Do not extend this to placed cards**: rendering what a player actually placed leaks the
+composition of that day's puzzle to everyone who sees the post.
+
+### Cost
+
+Art is fetched through the existing `thumbnail` rung (`getImageUrl(url, 'thumbnail')`), an
+image the player has already been served, so a share costs zero Cloudinary transformations.
+A bespoke size for this surface would mint a third rung — see
+[cloudinary-cost-controls.md](../cloudinary-cost-controls.md). The one deviation is
+`crossOrigin = 'anonymous'`, which is mandatory (an untagged image taints the canvas and
+`toBlob()` throws) and costs at most one extra fetch of an already-derived asset.
+
+### Decisions in force on the message
+
+- **No emoji grid.** Removed 2026-08. Unlike Wordle's 2D narrative, ours was a 1D run of
+  greens with at most `handSize` reds, restating the number on the line below it and
+  growing _longer_ the better you played. `generateEmojiGrid()` still exists — the daily
+  result stores it and the leaderboard renders it.
+- **One emoji, reserved for `#1 globally`.** Everything else is plain text.
+- **Exactly one URL, always last.** WhatsApp and iMessage preview the _first_ URL they
+  find, so a second one upstream would silently change which page gets the preview card.
+- **Bare domains** (`play-when.com/daily`, no scheme) in the text. Every major target
+  linkifies them and they read better in a three-line message.
+- **Dates are split, never re-parsed.** `new Date('2026-08-15')` is UTC midnight rendered
+  in local time, which prints the previous day west of Greenwich. `formatShareDate()`
+  regex-splits the string the puzzle day already got right.
+
+### Not done yet
+
+The OG tags in `public/index.html` are static, so a `/daily` result and a
+`/challenge/<code>` invite both preview identically in WhatsApp. A per-route OG image
+(Vercel edge + Satori) is the obvious next win. Constraints if picked up: ~1200x630,
+**under 600 KB**, JPG/PNG/WebP only, and WhatsApp caches previews for days with no refresh
+mechanism, so iterating needs a cache-busting query param.
+
+A one-tap "Add to Story" needs the native `instagram-stories://share` scheme plus the
+`com.instagram.sharedSticker.backgroundImage` pasteboard key and a Meta App ID. That is
+reachable from the Capacitor shell only — the web cannot do it.
+
+## The challenge code
 
 **`src/utils/challengeCode.ts` is the source of truth for the wire format.** Its header
 comment carries the current bit layout. Read it before touching the encoding.

@@ -1,26 +1,89 @@
-import { WhenGameState } from '../types';
+import { HistoricalEvent, WhenGameState } from '../types';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { getLocalDateString } from './puzzleDate';
+import { renderShareFile, ShareCardSpec } from './shareImage';
 
-const GAME_URL = 'https://www.play-when.com/';
-const DAILY_URL = 'https://www.play-when.com/daily';
+/** Used as an href by the Custom page's challenge-code box, so it keeps its scheme. */
 export const CHALLENGE_URL = 'https://www.play-when.com/challenge';
 
 /**
- * Format the leaderboard ranking line for share message
+ * Bare domains for the share *text*. Every major target (WhatsApp, iMessage, Signal,
+ * Instagram, Slack, X) linkifies these, and they read far better than a full origin in
+ * a three-line message. The `https://` forms above are still used where the string is a
+ * link rather than prose.
  */
-function formatLeaderboardLine(rank: number): string {
-  if (rank === 1) {
-    return '🏆 #1 globally 👑';
-  }
-  return `🏆 #${rank} globally`;
+const DISPLAY_URL = 'play-when.com';
+const DISPLAY_DAILY_URL = 'play-when.com/daily';
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/**
+ * "2026-08-15" -> "Aug 15", parsed by hand.
+ *
+ * `new Date('2026-08-15')` is parsed as UTC midnight and then rendered in local time,
+ * which prints the previous day for everyone west of Greenwich. The puzzle day is a
+ * local calendar day (see docs/leaderboard-daily), so the string is already correct —
+ * it just needs splitting, never re-parsing.
+ */
+export function formatShareDate(isoDate: string): string {
+  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(isoDate);
+  if (!match) return isoDate;
+  const month = MONTHS[Number(match[2]) - 1];
+  if (!month) return isoDate;
+  return `${month} ${Number(match[3])}`;
 }
 
 /**
- * Generate emoji grid from placement history
+ * Emoji grid from placement history.
+ *
+ * No longer part of the share text — it was a flat run of greens with at most `handSize`
+ * reds, restating the number on the line below it and growing longer the better you
+ * played. It is still stored on the daily result and submitted to the leaderboard, which
+ * renders it, so this stays.
  */
 export function generateEmojiGrid(placementHistory: boolean[]): string {
   return placementHistory.map((correct) => (correct ? '🟩' : '🟥')).join('');
+}
+
+/** "#47 globally", or "#1 globally 👑" — the only emoji left in the share text. */
+function formatRank(rank: number): string {
+  return rank === 1 ? '#1 globally 👑' : `#${rank} globally`;
+}
+
+/**
+ * Assemble the three-part message: an identity line, a stat line, then the link alone.
+ *
+ * The link is last and is the *only* URL in the message — WhatsApp and iMessage preview
+ * the first URL they find, so a second one upstream would silently change which page
+ * gets the preview card.
+ */
+function composeShareText(headline: string, stats: string[], url: string): string {
+  const statLine = stats.filter(Boolean).join(' — ');
+  return `${headline}\n${statLine}\n\n${url}`;
+}
+
+export interface DailyShareFacts {
+  date: string;
+  theme: string;
+  correctCount: number;
+  bestStreak?: number;
+  leaderboardRank?: number;
+}
+
+/** The daily message, shared by the game-over screen and the home screen's result card. */
+export function generateDailyShareText(facts: DailyShareFacts): string {
+  const { date, theme, correctCount, bestStreak, leaderboardRank } = facts;
+  // +1 for the seed card the timeline starts with, matching the on-screen count.
+  const timelineLength = correctCount + 1;
+  return composeShareText(
+    `When · ${formatShareDate(date)} · ${theme}`,
+    [
+      `Timeline of ${timelineLength}`,
+      bestStreak && bestStreak >= 2 ? `best run ${bestStreak}` : '',
+      leaderboardRank ? formatRank(leaderboardRank) : '',
+    ],
+    DISPLAY_DAILY_URL
+  );
 }
 
 /**
@@ -29,48 +92,76 @@ export function generateEmojiGrid(placementHistory: boolean[]): string {
 export function generateShareText(state: WhenGameState): string {
   const { gameMode, placementHistory, lastConfig, players, winners, roundNumber, bestStreak } =
     state;
-  const emojiGrid = generateEmojiGrid(placementHistory);
   const playerCount = players.length;
   const correctCount = placementHistory.filter((p) => p).length;
-  const streakSuffix = bestStreak >= 2 ? ` | Best streak: ${bestStreak}x` : '';
 
-  let text = '';
-
-  switch (gameMode) {
-    case 'daily': {
-      const dateStr = lastConfig?.dailySeed || getLocalDateString();
-      const theme = getDailyTheme(dateStr);
-      const themeName = getThemeDisplayName(theme);
-      text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events${streakSuffix}\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;
-      return text;
-    }
-    // "Marathon" is the user-facing name for `suddenDeath` — a deliberate UI-only rename.
-    case 'suddenDeath':
-    default: {
-      if (playerCount > 1) {
-        const winnerNames = winners.map((w) => w.name).join(', ');
-        text = `When 🏃 ${playerCount}P Marathon\n${winnerNames ? `🏆 Winner: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber}`;
-      } else {
-        text = `When 🏃 Marathon\n📏 ${correctCount} events placed${streakSuffix}\n${emojiGrid}`;
-      }
-      break;
-    }
+  if (gameMode === 'daily') {
+    const date = lastConfig?.dailySeed || getLocalDateString();
+    return generateDailyShareText({
+      date,
+      theme: getThemeDisplayName(getDailyTheme(date)),
+      correctCount,
+      bestStreak,
+    });
   }
 
+  // "Marathon" is the user-facing name for `suddenDeath` — a deliberate UI-only rename.
   const challengeCode = lastConfig?.challengeCode;
-  if (challengeCode) {
-    return `${text}\n\nCan you beat my timeline? 👇\n${CHALLENGE_URL}/${challengeCode}`;
+  const url = challengeCode ? `${DISPLAY_URL}/challenge/${challengeCode}` : DISPLAY_URL;
+
+  if (playerCount > 1) {
+    const winnerNames = winners.map((w) => w.name).join(', ');
+    return composeShareText(
+      `When · Marathon · ${playerCount} players`,
+      [winnerNames ? `${winnerNames} wins` : 'No winner', `${roundNumber} rounds`],
+      url
+    );
   }
 
-  return `${text}\n\n${GAME_URL}`;
+  return composeShareText(
+    'When · Marathon',
+    [`Timeline of ${correctCount}`, bestStreak >= 2 ? `best run ${bestStreak}` : ''],
+    url
+  );
 }
 
 /**
- * Share content using Web Share API or fallback to clipboard
- * Returns true if copied to clipboard (toast should be shown)
+ * Share content using the Web Share API, falling back to the clipboard.
+ *
+ * When a `file` is supplied it is offered first, because **Instagram only accepts image
+ * and video payloads** — a text-only share never lists it as a target at all. Three tiers,
+ * in order:
+ *
+ *  1. file + text — the full experience. Keeps the tappable link for WhatsApp/Messages.
+ *  2. file alone — some image-first targets (Instagram, Snapchat, Pinterest are the
+ *     reported ones) drop out of the sheet when `text`/`url` travel alongside `files`.
+ *     Trying files-only next is the known workaround. The URL is burned into the image
+ *     itself, so nothing is lost when the text is dropped.
+ *  3. text alone, then the clipboard.
+ *
+ * Returns true if the caller should show the "copied to clipboard" toast.
  */
-export async function shareContent(text: string, title: string): Promise<boolean> {
-  // Try native share first (mobile)
+export async function shareContent(
+  text: string,
+  title: string,
+  file?: File | null
+): Promise<boolean> {
+  const canShareFiles =
+    !!file && typeof navigator.canShare === 'function' && navigator.canShare({ files: [file] });
+
+  if (canShareFiles && navigator.share) {
+    const payloads: ShareData[] = [{ text, files: [file as File] }, { files: [file as File] }];
+    for (const payload of payloads) {
+      try {
+        await navigator.share(payload);
+        return false;
+      } catch (err) {
+        // A cancel is a decision, not a failure — do not retry it as a different payload.
+        if ((err as Error).name === 'AbortError') return false;
+      }
+    }
+  }
+
   if (navigator.share) {
     try {
       await navigator.share({ title, text });
@@ -101,13 +192,49 @@ export async function shareContent(text: string, title: string): Promise<boolean
   }
 }
 
+/** Build the story card, or null if the browser cannot produce one. */
+async function buildShareFile(spec: ShareCardSpec, slug: string): Promise<File | null> {
+  return renderShareFile(spec, `when-${slug}.jpg`);
+}
+
 /**
  * Share game results using Web Share API or fallback to clipboard
  * Returns true if copied to clipboard (toast should be shown)
  */
 export async function shareResults(state: WhenGameState): Promise<boolean> {
   const shareText = generateShareText(state);
-  return shareContent(shareText, 'When - Timeline Game');
+  const { gameMode, placementHistory, lastConfig, timeline, seedEventName, bestStreak } = state;
+  const correctCount = placementHistory.filter((p) => p).length;
+
+  // The seed card is the one event safe to show: it is on the board before the first
+  // move, so it reveals nothing about the puzzle. `timeline` is kept in year order, so
+  // the seed is not necessarily its first entry.
+  const seedEvent = timeline.find((event) => event.name === seedEventName) ?? null;
+
+  const isDaily = gameMode === 'daily';
+  const date = lastConfig?.dailySeed || getLocalDateString();
+  const spec: ShareCardSpec = isDaily
+    ? {
+        event: seedEvent,
+        eyebrow: `Daily · ${formatShareDate(date)} · ${getThemeDisplayName(getDailyTheme(date))}`,
+        score: String(correctCount + 1),
+        scoreLabel: 'events in my timeline',
+        detail: bestStreak >= 2 ? `best run of ${bestStreak}` : undefined,
+        url: DISPLAY_DAILY_URL,
+      }
+    : {
+        event: seedEvent,
+        eyebrow: 'Marathon',
+        score: String(correctCount),
+        scoreLabel: correctCount === 1 ? 'event placed' : 'events placed',
+        detail: bestStreak >= 2 ? `best run of ${bestStreak}` : undefined,
+        url: lastConfig?.challengeCode
+          ? `${DISPLAY_URL}/challenge/${lastConfig.challengeCode}`
+          : DISPLAY_URL,
+      };
+
+  const file = await buildShareFile(spec, isDaily ? date : 'marathon');
+  return shareContent(shareText, 'When - Timeline Game', file);
 }
 
 /**
@@ -115,36 +242,53 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
  * Returns true if copied to clipboard (toast should be shown)
  */
 export async function shareApp(): Promise<boolean> {
-  const text = `Try When - The Timeline Game!\n\n${GAME_URL}`;
+  const text = `When — put history in order.\n\n${DISPLAY_URL}`;
   return shareContent(text, 'When - Timeline Game');
 }
 
 /**
- * Share daily result from stored data (for completed daily on mode select screen)
- * Returns true if copied to clipboard (toast should be shown)
+ * Share daily result from stored data (for completed daily on mode select screen).
+ *
+ * `seedEvent` is today's pre-placed card — the same one the home screen previews — and is
+ * used as the story-card art. Returns true if copied to clipboard (toast should be shown).
  */
 export async function shareDailyResult(
   date: string,
   theme: string,
-  emojiGrid: string,
   correctCount: number,
-  leaderboardRank?: number,
-  leaderboardTotalPlayers?: number
+  options: {
+    bestStreak?: number;
+    leaderboardRank?: number;
+    seedEvent?: HistoricalEvent | null;
+  } = {}
 ): Promise<boolean> {
-  let text = `When #${date} 📅\nTheme: ${theme}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events`;
+  const { bestStreak, leaderboardRank, seedEvent } = options;
+  const text = generateDailyShareText({
+    date,
+    theme,
+    correctCount,
+    bestStreak,
+    leaderboardRank,
+  });
 
-  // Add leaderboard ranking if available
-  if (leaderboardRank) {
-    let rankLine = formatLeaderboardLine(leaderboardRank);
-    if (leaderboardTotalPlayers && leaderboardTotalPlayers > 1) {
-      const topPercent = Math.round((leaderboardRank / leaderboardTotalPlayers) * 100);
-      if (topPercent > 0 && topPercent < 100) {
-        rankLine += ` (top ${topPercent}%)`;
-      }
-    }
-    text += `\n${rankLine}`;
-  }
+  const detail = [
+    bestStreak && bestStreak >= 2 ? `best run of ${bestStreak}` : '',
+    leaderboardRank ? formatRank(leaderboardRank) : '',
+  ]
+    .filter(Boolean)
+    .join(' · ');
 
-  text += `\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;
-  return shareContent(text, 'When - Timeline Game');
+  const file = await buildShareFile(
+    {
+      event: seedEvent,
+      eyebrow: `Daily · ${formatShareDate(date)} · ${theme}`,
+      score: String(correctCount + 1),
+      scoreLabel: 'events in my timeline',
+      detail: detail || undefined,
+      url: DISPLAY_DAILY_URL,
+    },
+    date
+  );
+
+  return shareContent(text, 'When - Timeline Game', file);
 }
