@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 Aug 2026 14:13:43 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 14:43:45 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.9.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.9.0</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>attach a story card to shares and slim the share message (<a href="https://github.com/Edward-Muir/when/issues/39">#39</a>) (<a href="https://github.com/Edward-Muir/when/commit/638c8bdb770a8fb3be9c2820ccff9ab0c5ecdafe">638c8bd</a>), closes <a href="https://github.com/Edward-Muir/when/issues/1">#1</a> <a href="https://github.com/Edward-Muir/when/issues/21">#21</a></li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.8.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.6.2</guid>
       <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>filter abusive leaderboard display names (<a href="https://github.com/Edward-Muir/when/issues/29">#29</a>) (<a href="https://github.com/Edward-Muir/when/commit/c4ca7b1a053440f30cfd6c524b4db5e7dfa1f654">c4ca7b1</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.6.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.6.1</guid>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Performance</h3><br/><br/><ul><li>cut Cloudinary bandwidth ~7x and close the abuse paths (<a href="https://github.com/Edward-Muir/when/issues/28">#28</a>) (<a href="https://github.com/Edward-Muir/when/commit/57aea61942153ce288572ee94134f62a70b96fec">57aea61</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

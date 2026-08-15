@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.9.0](https://github.com/Edward-Muir/when/compare/v1.8.1...v1.9.0) (2026-08-15)
+
+
+### Features
+
+* attach a story card to shares and slim the share message ([#39](https://github.com/Edward-Muir/when/issues/39)) ([638c8bd](https://github.com/Edward-Muir/when/commit/638c8bdb770a8fb3be9c2820ccff9ab0c5ecdafe)), closes [#1](https://github.com/Edward-Muir/when/issues/1) [#21](https://github.com/Edward-Muir/when/issues/21)
+
 ## [1.8.1](https://github.com/Edward-Muir/when/compare/v1.8.0...v1.8.1) (2026-08-15)
 
 
