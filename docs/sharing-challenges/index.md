@@ -103,8 +103,16 @@ already-derived asset.
   longest real names settle at ~50px against a 42px floor). The old two-line
   `wrappedCenteredText` is gone — do not reintroduce wrapping without moving to a flow
   layout.
-- **The score label and the rank share one line.** The ~55px that saves is what pays for
-  the art card being 640px rather than ~580px.
+- **The unit sits beside the number, not under it.** `drawScoreWithUnit` measures the
+  numeral and the word, sums them and centres the pair — centring the numeral alone and
+  hanging the label off it puts the group visibly off-centre. They share a baseline, which
+  also means the old-style descender on `3 4 5 7 9` lands _beside_ the word rather than
+  on top of it. The rank gets its own muted line below.
+- **The unit is "events" on both card types.** Not "events placed": the daily's number
+  counts the whole timeline _including_ the pre-placed seed card, so a placement count
+  would be one too many there, while a custom game's number really is one. One word is
+  true of both and matches the share text's "Timeline of N". See `scoreUnit` in
+  `share.ts`.
 - **The URL is full-strength ink; the stat line above it is muted.** At equal weight the
   two read as a single block. The URL is the line that has to survive being read off a
   phone screen.
@@ -128,6 +136,25 @@ mechanism, so iterating needs a cache-busting query param.
 A one-tap "Add to Story" needs the native `instagram-stories://share` scheme plus the
 `com.instagram.sharedSticker.backgroundImage` pasteboard key and a Meta App ID. That is
 reachable from the Capacitor shell only — the web cannot do it.
+
+### Instagram: a tappable link is not available (2026-08)
+
+Investigated and closed, so it does not get re-opened. The ask was "tap the shared image,
+land on the site":
+
+- **There is no mechanism for it in an Instagram DM.** A photo in a DM is a photo; nothing
+  in the format attaches a destination URL to it. Nothing we can send changes that. The
+  same is true of a WhatsApp image, which is why the link rides in the message text there.
+- **Instagram discards developer-supplied text by policy** — an explicit stance that users
+  should post their own words, not an app's. So the message never arrives alongside an
+  Instagram share regardless of payload. This is also why our tier-2 files-only fallback
+  exists at all.
+- The only place the tap-to-open effect exists is an **Instagram Story link sticker**, and
+  only the sticker itself is tappable, not the image. Pre-filling one needs the native
+  scheme above and would cover iOS-app users only.
+
+Decision: leave the printed URL on the card. It is short, set in full-strength ink, and
+nothing on offer justified its cost.
 
 ## The challenge code
 

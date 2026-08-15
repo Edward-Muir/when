@@ -215,6 +215,45 @@ function fittedCenteredText(
 }
 
 /**
+ * Draw the score and its unit as one centred group — a big numeral with a small word
+ * beside it, the way a score is normally set. Measuring both and centring the pair is the
+ * point: centring the numeral alone and hanging the label off it puts the group visibly
+ * off-centre.
+ *
+ * They share a baseline. Playfair's old-style figures drop 3, 4, 5, 7 and 9 below it, so
+ * the label ends up *beside* that descender rather than under it — which is why this reads
+ * more comfortably than the stacked arrangement it replaces.
+ */
+function drawScoreWithUnit(
+  ctx: CanvasRenderingContext2D,
+  score: string,
+  unit: string,
+  y: number
+): void {
+  const GAP = 18;
+  const scoreFont = `600 175px ${DISPLAY_FONT}`;
+  const unitFont = `500 46px ${BODY_FONT}`;
+
+  ctx.font = scoreFont;
+  const scoreWidth = ctx.measureText(score).width;
+  ctx.font = unitFont;
+  const unitWidth = ctx.measureText(unit).width;
+
+  const startX = (WIDTH - (scoreWidth + GAP + unitWidth)) / 2;
+
+  ctx.textAlign = 'left';
+  ctx.font = scoreFont;
+  ctx.fillStyle = INK;
+  ctx.fillText(score, startX, y);
+  ctx.font = unitFont;
+  ctx.fillStyle = INK_MUTED;
+  ctx.fillText(unit, startX + scoreWidth + GAP, y);
+
+  // Everything else on the card is centred; leaving 'left' set would silently shift it.
+  ctx.textAlign = 'center';
+}
+
+/**
  * Render the share card. Returns null if anything goes wrong — every caller must be able
  * to fall back to a plain text share rather than leaving the player with a dead button.
  */
@@ -302,17 +341,15 @@ export async function renderShareCard(spec: ShareCardSpec): Promise<Blob | null>
       fittedCenteredText(ctx, formatYear(spec.event.year), 1000, 900, '500', 42, BODY_FONT, ACCENT);
     }
 
-    // --- Score ---
+    // --- Score: numeral and unit as one group, rank on its own line beneath ---
     // Playfair Display sets old-style figures: 3, 4, 5, 7 and 9 drop well below the
-    // baseline. At 175px that overshoot is ~37px, so the line beneath needs far more
-    // clearance than the cap height suggests — "11" looks fine at a tight gap and "23"
-    // collides. Do not close this gap up when retuning.
-    fittedCenteredText(ctx, spec.score, 1158, 900, '600', 175, DISPLAY_FONT, INK);
-
-    // The label and the rank share a line. Two stacked lines is what this card cannot
-    // afford: the ~55px it saves is what lets the art be 640px rather than ~580px.
-    const statLine = spec.detail ? `${spec.scoreLabel} · ${spec.detail}` : spec.scoreLabel;
-    fittedCenteredText(ctx, statLine, 1246, 940, '500', 44, BODY_FONT, INK_MUTED);
+    // baseline. At 175px that overshoot is ~37px, so anything sitting *under* the numeral
+    // needs far more clearance than the cap height suggests — "11" looked fine at a tight
+    // gap and "23" collided. Do not close this gap up when retuning.
+    drawScoreWithUnit(ctx, spec.score, spec.scoreLabel, 1158);
+    if (spec.detail) {
+      fittedCenteredText(ctx, spec.detail, 1246, 940, '500', 44, BODY_FONT, INK_MUTED);
+    }
 
     // --- Footer. No divider rule above it: decorative, and it cost 40px of a tight budget.
     // Full-strength ink and a clear gap above, against a muted stat line: at equal weight

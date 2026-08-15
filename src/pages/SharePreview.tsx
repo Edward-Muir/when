@@ -66,7 +66,7 @@ const SharePreview: React.FC = () => {
           event: seedEvent,
           eyebrow: `Daily · ${formatShareDate(today)} · ${theme}`,
           score: '11',
-          scoreLabel: 'events in my timeline',
+          scoreLabel: 'events',
           detail: '#47 globally',
           url: 'play-when.com/daily',
         }
@@ -74,13 +74,13 @@ const SharePreview: React.FC = () => {
         ? {
             event: seedEvent,
             score: '23',
-            scoreLabel: 'events placed',
+            scoreLabel: 'events',
             url: 'play-when.com',
           }
         : {
             event: seedEvent,
             score: '12',
-            scoreLabel: 'events placed',
+            scoreLabel: 'events',
             url: 'play-when.com/challenge/able-baker-cane',
           };
 

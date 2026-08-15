@@ -192,6 +192,19 @@ export async function shareContent(
   }
 }
 
+/**
+ * The unit that sits beside the big number on the card.
+ *
+ * Deliberately just "events" on both card types. It is the only wording true of each:
+ * the daily's number counts the whole timeline *including* the pre-placed seed card, so
+ * "events placed" would be one too many there, while a custom game's number really is a
+ * placement count. One word sidesteps the difference and matches the share text's
+ * "Timeline of N".
+ */
+function scoreUnit(count: number): string {
+  return count === 1 ? 'event' : 'events';
+}
+
 /** Build the story card, or null if the browser cannot produce one. */
 async function buildShareFile(spec: ShareCardSpec, slug: string): Promise<File | null> {
   return renderShareFile(spec, `when-${slug}.jpg`);
@@ -218,14 +231,14 @@ export async function shareResults(state: WhenGameState): Promise<boolean> {
         event: seedEvent,
         eyebrow: `Daily · ${formatShareDate(date)} · ${getThemeDisplayName(getDailyTheme(date))}`,
         score: String(correctCount + 1),
-        scoreLabel: 'events in my timeline',
+        scoreLabel: scoreUnit(correctCount + 1),
         url: DISPLAY_DAILY_URL,
       }
     : {
         // No eyebrow: a non-daily game has no mode to name (see `generateShareText`).
         event: seedEvent,
         score: String(correctCount),
-        scoreLabel: correctCount === 1 ? 'event placed' : 'events placed',
+        scoreLabel: scoreUnit(correctCount),
         url: lastConfig?.challengeCode
           ? `${DISPLAY_URL}/challenge/${lastConfig.challengeCode}`
           : DISPLAY_URL,
@@ -267,7 +280,7 @@ export async function shareDailyResult(
       event: seedEvent,
       eyebrow: `Daily · ${formatShareDate(date)} · ${theme}`,
       score: String(correctCount + 1),
-      scoreLabel: 'events in my timeline',
+      scoreLabel: scoreUnit(correctCount + 1),
       detail: leaderboardRank ? formatRank(leaderboardRank) : undefined,
       url: DISPLAY_DAILY_URL,
     },
