@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
 import { Check, X, Trophy } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
-import { generateEmojiGrid } from '../utils/share';
-import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { DailyResult, hasSubmittedToLeaderboard } from '../utils/playerStorage';
+import { DailyResult } from '../utils/playerStorage';
+import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
+import Modal, { ModalDismissMode } from './ui/Modal';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
@@ -22,9 +21,10 @@ interface GamePopupProps {
   // Tombstoned (failed) event: greyscale image, muted text, surface background —
   // matches the tombstone card treatment on the timeline
   tombstone?: boolean;
-  /** The daily rank, once the leaderboard resolves it. Consumed by the sequence's share
-   *  step, which is no longer inside this popup. */
-  onRankResolved?: (rank: number) => void;
+  /** The completed daily, or null when this game has no leaderboard. Built by `Game`. */
+  dailyResult?: DailyResult | null;
+  /** Owned by `Game` so the rank it resolves is read directly by the share step. */
+  leaderboard?: DailyLeaderboard;
 }
 
 // Sub-component for result banner (full-width colored banner at top)
@@ -151,17 +151,16 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
 // Sub-component for game over content (stats only, header moved out)
 function GameOverContent({
   gameState,
-  onLeaderboardSubmit,
-  onRankResolved,
+  dailyResult,
+  leaderboard,
 }: {
   gameState: WhenGameState;
-  onLeaderboardSubmit?: () => void;
-  onRankResolved?: (rank: number) => void;
+  dailyResult?: DailyResult | null;
+  leaderboard?: DailyLeaderboard;
 }) {
-  const { winners, players, gameMode, placementHistory, lastConfig, bestStreak } = gameState;
+  const { winners, players, bestStreak } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
-  const isDaily = gameMode === 'daily';
 
   const getPlayerStats = (player: Player) => {
     const correct = player.placementHistory.filter((p) => p).length;
@@ -176,19 +175,6 @@ function GameOverContent({
     if (eventsPlaced >= 3) return 'Good start!';
     return null;
   };
-
-  // Build daily result for leaderboard submission
-  const dailyResult: DailyResult | null =
-    isDaily && lastConfig?.dailySeed
-      ? {
-          date: lastConfig.dailySeed,
-          theme: getThemeDisplayName(getDailyTheme(lastConfig.dailySeed)),
-          won: hasWinner,
-          correctCount: placementHistory.filter((p) => p).length,
-          totalAttempts: placementHistory.length,
-          emojiGrid: generateEmojiGrid(placementHistory),
-        }
-      : null;
 
   return (
     <div className="px-4 py-4">
@@ -246,15 +232,7 @@ function GameOverContent({
       </div>
 
       {/* Leaderboard submit section for daily mode */}
-      {dailyResult && (
-        <LeaderboardSubmit
-          dailyResult={dailyResult}
-          onSubmitted={onLeaderboardSubmit}
-          // Lifted all the way to `Game`, because the share that uses it is no longer a
-          // sibling in this popup — it is the last step of the sequence.
-          onRankResolved={onRankResolved}
-        />
-      )}
+      {dailyResult && leaderboard && <LeaderboardSubmit leaderboard={leaderboard} />}
 
       {/* No share here, and no "come back tomorrow" either. This popup is the *first* screen
           of the end-of-game sequence (see `useEndOfGameSequence`); both belong on the last
@@ -264,11 +242,21 @@ function GameOverContent({
   );
 }
 
-// Hook to gate backdrop dismissal for daily leaderboard submission
-function useBackdropDismiss(isDaily: boolean) {
-  const [submitted, setSubmitted] = useState(hasSubmittedToLeaderboard);
-  const canBackdropDismiss = !isDaily || submitted;
-  return { canBackdropDismiss, onLeaderboardSubmit: () => setSubmitted(true) };
+/**
+ * How the game-over popup may be left. Derived, never tracked — the flag this replaces was kept
+ * in sync by a callback, and when it disagreed with the leaderboard the popup became impossible
+ * to dismiss.
+ *
+ * Extracted rather than inlined because `GamePopup` sits on ESLint's complexity ceiling of 15.
+ */
+function gameOverDismiss(showsSubmitForm: boolean, canSubmit: boolean): ModalDismissMode {
+  // Submit is still pending and still possible: hold the player here.
+  if (showsSubmitForm && canSubmit) return 'locked';
+  // The form is up but the board is unreachable. Card taps stay inert so Submit can be retried,
+  // while the backdrop and ESC let the player leave rather than losing the rest of the sequence.
+  if (showsSubmitForm) return 'backdrop';
+  // Nothing to submit, so tap anywhere — like the reveal popups that follow.
+  return 'tap-advance';
 }
 
 // Sub-component for event popup content (description, correct, incorrect)
@@ -329,70 +317,50 @@ const GamePopup: React.FC<GamePopupProps> = ({
   showYear = true,
   gameState,
   tombstone = false,
-  onRankResolved,
+  dailyResult,
+  leaderboard,
 }) => {
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
-  const { canBackdropDismiss, onLeaderboardSubmit } = useBackdropDismiss(
-    isGameOver && gameState?.gameMode === 'daily'
-  );
 
-  useEffect(() => {
-    const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onDismiss();
-    };
-    if (isVisible) {
-      document.addEventListener('keydown', handleEscape);
-      return () => document.removeEventListener('keydown', handleEscape);
-    }
-  }, [isVisible, onDismiss]);
-
-  if (!isVisible) return null;
+  // The submit form is on screen exactly when there is a daily to claim and the player has not
+  // claimed it.
+  const showsSubmitForm = isGameOver && !!dailyResult && leaderboard?.submitted === false;
+  const dismiss = gameOverDismiss(showsSubmitForm, leaderboard?.unavailable === false);
 
   return (
-    <AnimatePresence>
-      {isVisible && (
-        <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/25"
-          onClick={canBackdropDismiss ? onDismiss : undefined}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.15 }}
-        >
-          <motion.div
-            className="w-[85vw] max-w-[340px] sm:max-w-[400px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm transition-colors"
-            style={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
-            onClick={isGameOver ? (e) => e.stopPropagation() : undefined}
-            initial={{ scale: 0.9, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.9, opacity: 0 }}
-            transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-          >
-            {isGameOver && gameState ? (
-              <>
-                <GameOverHeader gameState={gameState} />
-                <GameOverContent
-                  gameState={gameState}
-                  onLeaderboardSubmit={onLeaderboardSubmit}
-                  onRankResolved={onRankResolved}
-                />
-              </>
-            ) : (
-              event && (
-                <EventPopupContent
-                  type={type}
-                  event={event}
-                  showYear={showYear}
-                  nextPlayer={nextPlayer}
-                  tombstone={tombstone}
-                />
-              )
-            )}
-          </motion.div>
-        </motion.div>
+    <Modal
+      open={isVisible}
+      onDismiss={onDismiss}
+      dismiss={dismiss}
+      cardStyle={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
+    >
+      {isGameOver && gameState ? (
+        <>
+          <GameOverHeader gameState={gameState} />
+          <GameOverContent
+            gameState={gameState}
+            dailyResult={dailyResult}
+            leaderboard={leaderboard}
+          />
+          {dismiss !== 'locked' && (
+            <p className="px-4 pb-4 text-center font-body text-sm text-text-muted">
+              {dismiss === 'backdrop' ? 'Tap outside to continue' : 'Tap to continue'}
+            </p>
+          )}
+        </>
+      ) : (
+        event && (
+          <EventPopupContent
+            type={type}
+            event={event}
+            showYear={showYear}
+            nextPlayer={nextPlayer}
+            tombstone={tombstone}
+          />
+        )
       )}
-    </AnimatePresence>
+    </Modal>
   );
 };
 
