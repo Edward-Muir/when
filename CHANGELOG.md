@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.7.3](https://github.com/Edward-Muir/when/compare/v1.7.2...v1.7.3) (2026-08-15)
+
+
+### Bug Fixes
+
+* block spoonerised slurs in leaderboard display names ([#35](https://github.com/Edward-Muir/when/issues/35)) ([fd87641](https://github.com/Edward-Muir/when/commit/fd876415683450667cb421183607a21fc2f32e34)), closes [#1](https://github.com/Edward-Muir/when/issues/1)
+
 ## [1.7.2](https://github.com/Edward-Muir/when/compare/v1.7.1...v1.7.2) (2026-08-13)
 
 
