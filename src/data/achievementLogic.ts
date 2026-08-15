@@ -3,7 +3,7 @@
  * in `achievements.ts`. Kept SEPARATE from that file (which is nominally CSV-generated)
  * so these tests are never clobbered by a regenerate.
  *
- * Design (see docs/session-2026-06-27-stats-achievements-master-plan.md): every test is a
+ * Design (see docs/stats-achievements/index.md): every test is a
  * pure predicate over a read-time `StatsSnapshot` plus a name->event map. Per-category and
  * per-difficulty / per-era badges DERIVE their counts from `placedEventIds` resolved against
  * current event data — nothing category-specific is stored, so new/renamed categories need
@@ -83,9 +83,7 @@ function epochBands(events: HistoricalEvent[]): [number, number, number, number,
 }
 
 const totalGames = (s: StatsSnapshot): number =>
-  s.lifetime.gamesPlayed.daily +
-  s.lifetime.gamesPlayed.suddenDeath +
-  s.lifetime.gamesPlayed.freeplay;
+  s.lifetime.gamesPlayed.daily + s.lifetime.gamesPlayed.suddenDeath;
 
 // --- The test table ---
 

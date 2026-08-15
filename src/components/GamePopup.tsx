@@ -195,7 +195,6 @@ function GameOverContent({
   const { winners, players, gameMode, placementHistory, lastConfig, bestStreak } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
-  const isSuddenDeath = gameMode === 'suddenDeath' || gameMode === 'daily';
   const isDaily = gameMode === 'daily';
 
   const getPlayerStats = (player: Player) => {
@@ -237,32 +236,18 @@ function GameOverContent({
         {isSinglePlayer ? (
           <div className="text-center">
             <p className="text-text font-body">
-              {isSuddenDeath ? (
-                <>
-                  <span className="text-2xl font-bold font-mono">
-                    {getPlayerStats(players[0]).correct}
-                  </span>
-                  <span className="text-text-muted">
-                    {' '}
-                    {getPlayerStats(players[0]).correct === 1 ? 'event' : 'events'} placed
-                  </span>
-                </>
-              ) : (
-                <>
-                  <span className="text-2xl font-bold font-mono">
-                    {getPlayerStats(players[0]).correct}
-                  </span>
-                  <span className="text-text-muted">
-                    {' '}
-                    / {getPlayerStats(players[0]).total} correct
-                  </span>
-                </>
-              )}
+              <span className="text-2xl font-bold font-mono">
+                {getPlayerStats(players[0]).correct}
+              </span>
+              <span className="text-text-muted">
+                {' '}
+                {getPlayerStats(players[0]).correct === 1 ? 'event' : 'events'} placed
+              </span>
             </p>
             {bestStreak >= 2 && (
               <p className="text-text-muted text-sm mt-1 font-body">Best streak: {bestStreak}x</p>
             )}
-            {isSuddenDeath && getEncouragingMessage(getPlayerStats(players[0]).correct) && (
+            {getEncouragingMessage(getPlayerStats(players[0]).correct) && (
               <p className="text-accent font-medium mt-2">
                 {getEncouragingMessage(getPlayerStats(players[0]).correct)}
               </p>

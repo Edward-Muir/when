@@ -202,4 +202,4 @@ When running the grading agents:
 4. Require a one-line justification for every changed label
 5. Treat the band-0 pool floor in `scripts/difficulty/grade/band_report.py` as the acceptance gate, not the label percentages
 
-See [difficulty-grading-process.md](difficulty-grading-process.md) for the workflow and tooling.
+See [Events & Images](index.md) for the workflow and tooling.

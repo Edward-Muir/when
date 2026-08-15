@@ -1,11 +1,4 @@
-import {
-  HistoricalEvent,
-  Player,
-  WhenGameState,
-  PlacementResult,
-  GamePopupData,
-  GameMode,
-} from '../types';
+import { HistoricalEvent, Player, WhenGameState, PlacementResult, GamePopupData } from '../types';
 import {
   isPlacementCorrect,
   findCorrectPosition,
@@ -13,16 +6,8 @@ import {
   addToHand,
   drawCard,
   getNextActivePlayerIndex,
-  shouldGameEnd,
   processEndOfRound,
 } from './gameLogic';
-
-/**
- * Check if a game mode uses sudden death mechanics
- * (no replacement card on incorrect, draw on correct)
- */
-export const usesSuddenDeathMechanics = (mode: GameMode | null): boolean =>
-  mode === 'suddenDeath' || mode === 'daily';
 
 /**
  * Validation result for a placement attempt
@@ -98,7 +83,6 @@ export function processCorrectPlacement(
 ): PlacementStateUpdate {
   const newPlayers = [...state.players];
   const player = { ...newPlayers[state.currentPlayerIndex] };
-  const isSuddenDeath = usesSuddenDeathMechanics(state.gameMode);
   const isSinglePlayer = newPlayers.length === 1;
   let newDeck = state.deck;
 
@@ -108,20 +92,12 @@ export function processCorrectPlacement(
   // Remove card from hand
   player.hand = removeFromHand(player.hand, event.name);
 
-  if (isSuddenDeath) {
-    // In sudden death, draw a new card and add to hand
-    const { card: newCard, newDeck: updatedDeck } = drawCard(state.deck);
-    if (newCard) {
-      player.hand = addToHand(player.hand, newCard);
-    }
-    newDeck = updatedDeck;
-  } else {
-    // Check if player won (hand empty) - for non-sudden-death modes
-    if (player.hand.length === 0) {
-      player.hasWon = true;
-      player.winTurn = state.turnNumber;
-    }
+  // Correct placement draws a replacement, so the hand stays the same size
+  const { card: newCard, newDeck: updatedDeck } = drawCard(state.deck);
+  if (newCard) {
+    player.hand = addToHand(player.hand, newCard);
   }
+  newDeck = updatedDeck;
 
   newPlayers[state.currentPlayerIndex] = player;
 
@@ -135,9 +111,8 @@ export function processCorrectPlacement(
   let finalPlayers = newPlayers;
   let newActivePlayersAtRoundStart = state.activePlayersAtRoundStart;
 
-  if (isSuddenDeath && isRoundEnding) {
-    // Use simplified end-of-round logic for sudden death
-    const result = processEndOfRound(newPlayers, 'suddenDeath', state.activePlayersAtRoundStart);
+  if (isRoundEnding) {
+    const result = processEndOfRound(newPlayers, state.activePlayersAtRoundStart);
     finalPlayers = result.updatedPlayers;
     isGameOver = result.gameOver;
     if (result.winners.length > 0) {
@@ -147,13 +122,6 @@ export function processCorrectPlacement(
     if (!isGameOver) {
       newActivePlayersAtRoundStart = finalPlayers.filter((p) => !p.isEliminated).length;
     }
-  } else if (!isSuddenDeath) {
-    // Non-sudden-death mode: use existing logic
-    // Update winners list if player won by emptying hand
-    if (player.hasWon && !state.winners.some((w) => w.id === player.id)) {
-      finalWinners = [...state.winners, player];
-    }
-    isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, state.gameMode!);
   }
 
   return {
@@ -177,25 +145,15 @@ export function processIncorrectPlacement(
 ): PlacementStateUpdate {
   const newPlayers = [...state.players];
   const player = { ...newPlayers[state.currentPlayerIndex] };
-  const isSuddenDeath = usesSuddenDeathMechanics(state.gameMode);
   const isSinglePlayer = newPlayers.length === 1;
   let newDeck = state.deck;
 
   // Track per-player placement
   player.placementHistory = [...player.placementHistory, false];
 
-  // Remove card from hand (discarded)
+  // Remove card from hand (discarded). No replacement is drawn — the hand shrinks,
+  // and the game ends once it empties.
   player.hand = removeFromHand(player.hand, event.name);
-
-  if (!isSuddenDeath) {
-    // Non-sudden death: draw replacement card
-    const { card: newCard, newDeck: updatedDeck } = drawCard(state.deck);
-    if (newCard) {
-      player.hand = addToHand(player.hand, newCard);
-    }
-    newDeck = updatedDeck;
-  }
-  // Sudden death: no replacement card drawn (hand shrinks)
 
   newPlayers[state.currentPlayerIndex] = player;
 
@@ -209,9 +167,8 @@ export function processIncorrectPlacement(
   let finalPlayers = newPlayers;
   let newActivePlayersAtRoundStart = state.activePlayersAtRoundStart;
 
-  if (isSuddenDeath && isRoundEnding) {
-    // Use simplified end-of-round logic for sudden death
-    const result = processEndOfRound(newPlayers, 'suddenDeath', state.activePlayersAtRoundStart);
+  if (isRoundEnding) {
+    const result = processEndOfRound(newPlayers, state.activePlayersAtRoundStart);
     finalPlayers = result.updatedPlayers;
     isGameOver = result.gameOver;
     if (result.winners.length > 0) {
@@ -235,9 +192,6 @@ export function processIncorrectPlacement(
     if (!isGameOver) {
       newActivePlayersAtRoundStart = finalPlayers.filter((p) => !p.isEliminated).length;
     }
-  } else if (!isSuddenDeath) {
-    // Non-sudden-death mode: use existing logic
-    isGameOver = shouldGameEnd(newPlayers, newRoundNumber, nextPlayerIndex, state.gameMode!);
   }
 
   return {

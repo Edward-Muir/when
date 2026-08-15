@@ -53,17 +53,13 @@ const StatsPanel: React.FC = () => {
   const cadence = getDailyCadence();
   const collection = getCollectionState();
 
-  const gamesPlayed =
-    lifetime.gamesPlayed.daily + lifetime.gamesPlayed.suddenDeath + lifetime.gamesPlayed.freeplay;
+  const gamesPlayed = lifetime.gamesPlayed.daily + lifetime.gamesPlayed.suddenDeath;
   const longestTimeline = Math.max(
     lifetime.longestTimeline.daily,
-    lifetime.longestTimeline.suddenDeath,
-    lifetime.longestTimeline.freeplay
+    lifetime.longestTimeline.suddenDeath
   );
   const totalTimelineLength =
-    lifetime.timelineLengthSum.daily +
-    lifetime.timelineLengthSum.suddenDeath +
-    lifetime.timelineLengthSum.freeplay;
+    lifetime.timelineLengthSum.daily + lifetime.timelineLengthSum.suddenDeath;
   const avgTimeline = gamesPlayed > 0 ? (totalTimelineLength / gamesPlayed).toFixed(1) : '—';
 
   // Best run of correct placements across either daily or custom (non-daily) play.

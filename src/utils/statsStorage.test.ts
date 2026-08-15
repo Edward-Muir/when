@@ -35,7 +35,7 @@ function makeGameState(opts: {
   bestStreak?: number;
 }): WhenGameState {
   const {
-    gameMode = 'freeplay',
+    gameMode = 'suddenDeath',
     dailySeed,
     placedNames = [],
     seedEventName = 'seed-event',
@@ -76,15 +76,14 @@ beforeEach(() => {
 describe('zero-default getters (empty storage)', () => {
   it('getLifetimeStats returns fully-populated zero defaults', () => {
     expect(getLifetimeStats()).toEqual({
-      gamesPlayed: { daily: 0, suddenDeath: 0, freeplay: 0 },
+      gamesPlayed: { daily: 0, suddenDeath: 0 },
       eventsPlacedCorrect: 0,
       eventsPlacedWrong: 0,
-      timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
-      longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
+      timelineLengthSum: { daily: 0, suddenDeath: 0 },
+      longestTimeline: { daily: 0, suddenDeath: 0 },
       bestInGameStreakEver: 0,
       bestCustomStreakEver: 0,
       bestGameCorrectEver: 0,
-      flawlessFreeplayGames: 0,
       firstPlayedDate: '',
       lastPlayedDate: '',
     });
@@ -121,15 +120,14 @@ describe('zero-default getters (empty storage)', () => {
 describe('save/get round-trips', () => {
   it('LifetimeStats round-trips every field', () => {
     const stats: LifetimeStats = {
-      gamesPlayed: { daily: 3, suddenDeath: 5, freeplay: 7 },
+      gamesPlayed: { daily: 3, suddenDeath: 5 },
       eventsPlacedCorrect: 42,
       eventsPlacedWrong: 9,
-      timelineLengthSum: { daily: 30, suddenDeath: 55, freeplay: 70 },
-      longestTimeline: { daily: 10, suddenDeath: 12, freeplay: 14 },
+      timelineLengthSum: { daily: 30, suddenDeath: 55 },
+      longestTimeline: { daily: 10, suddenDeath: 12 },
       bestInGameStreakEver: 8,
       bestCustomStreakEver: 6,
       bestGameCorrectEver: 13,
-      flawlessFreeplayGames: 2,
       firstPlayedDate: '2026-01-01',
       lastPlayedDate: '2026-06-27',
     };
@@ -158,16 +156,54 @@ describe('save/get round-trips', () => {
   });
 
   it('merges partial/older stored shapes over defaults', () => {
-    // Older shape missing freeplay sub-key and several top-level fields.
+    // Older shape missing several top-level fields.
     localStorage.setItem(
       'when-lifetime-stats',
       JSON.stringify({ gamesPlayed: { daily: 2, suddenDeath: 1 }, eventsPlacedCorrect: 5 })
     );
     const stats = getLifetimeStats();
-    expect(stats.gamesPlayed).toEqual({ daily: 2, suddenDeath: 1, freeplay: 0 });
+    expect(stats.gamesPlayed).toEqual({ daily: 2, suddenDeath: 1 });
     expect(stats.eventsPlacedCorrect).toBe(5);
-    expect(stats.flawlessFreeplayGames).toBe(0);
-    expect(stats.longestTimeline).toEqual({ daily: 0, suddenDeath: 0, freeplay: 0 });
+    expect(stats.longestTimeline).toEqual({ daily: 0, suddenDeath: 0 });
+  });
+
+  describe('legacy freeplay migration', () => {
+    // Anyone who launched a pre-removal freeplay challenge link has counts under a
+    // `freeplay` key. They fold into `suddenDeath` so no lifetime total goes backwards.
+    const legacy = {
+      gamesPlayed: { daily: 2, suddenDeath: 3, freeplay: 4 },
+      timelineLengthSum: { daily: 20, suddenDeath: 30, freeplay: 40 },
+      longestTimeline: { daily: 10, suddenDeath: 6, freeplay: 9 },
+      eventsPlacedCorrect: 7,
+      flawlessFreeplayGames: 5,
+    };
+
+    it('sums counters and takes the max for longest-ever', () => {
+      localStorage.setItem('when-lifetime-stats', JSON.stringify(legacy));
+      const stats = getLifetimeStats();
+      expect(stats.gamesPlayed).toEqual({ daily: 2, suddenDeath: 7 });
+      expect(stats.timelineLengthSum).toEqual({ daily: 20, suddenDeath: 70 });
+      // A longest-ever is a max, not a total: 9 beat the suddenDeath 6.
+      expect(stats.longestTimeline).toEqual({ daily: 10, suddenDeath: 9 });
+      expect(stats.eventsPlacedCorrect).toBe(7);
+    });
+
+    it('is idempotent — a re-save then re-read does not double-count', () => {
+      localStorage.setItem('when-lifetime-stats', JSON.stringify(legacy));
+      saveLifetimeStats(getLifetimeStats());
+      const stats = getLifetimeStats();
+      expect(stats.gamesPlayed).toEqual({ daily: 2, suddenDeath: 7 });
+      expect(stats.timelineLengthSum).toEqual({ daily: 20, suddenDeath: 70 });
+      expect(stats.longestTimeline).toEqual({ daily: 10, suddenDeath: 9 });
+    });
+
+    it('drops retired keys on save rather than writing them back', () => {
+      localStorage.setItem('when-lifetime-stats', JSON.stringify(legacy));
+      saveLifetimeStats(getLifetimeStats());
+      const raw = JSON.parse(localStorage.getItem('when-lifetime-stats') as string);
+      expect(raw.gamesPlayed).not.toHaveProperty('freeplay');
+      expect(raw).not.toHaveProperty('flawlessFreeplayGames');
+    });
   });
 });
 
@@ -258,40 +294,35 @@ describe('buildEventsByName', () => {
 describe('recordGameResult', () => {
   it('excludes the seed event from the collection and counts placements', () => {
     recordGameResult(
-      makeGameState({ gameMode: 'freeplay', placedNames: ['a', 'b', 'c'] }),
+      makeGameState({ gameMode: 'suddenDeath', placedNames: ['a', 'b', 'c'] }),
       NO_EVENTS
     );
     expect(getCollectionState().placedEventIds.sort()).toEqual(['a', 'b', 'c']);
     const lifetime = getLifetimeStats();
     expect(lifetime.eventsPlacedCorrect).toBe(3);
-    expect(lifetime.gamesPlayed.freeplay).toBe(1);
-    expect(lifetime.timelineLengthSum.freeplay).toBe(4); // seed + 3 placements
-    expect(lifetime.longestTimeline.freeplay).toBe(4);
+    expect(lifetime.gamesPlayed.suddenDeath).toBe(1);
+    expect(lifetime.timelineLengthSum.suddenDeath).toBe(4); // seed + 3 placements
+    expect(lifetime.longestTimeline.suddenDeath).toBe(4);
     expect(lifetime.bestGameCorrectEver).toBe(3);
   });
 
   it('increments the correct per-mode bucket for each mode', () => {
     recordGameResult(makeGameState({ gameMode: 'daily', dailySeed: '2026-06-01', placedNames: ['a'] }), NO_EVENTS); // prettier-ignore
     recordGameResult(makeGameState({ gameMode: 'suddenDeath', placedNames: ['b'] }), NO_EVENTS);
-    recordGameResult(makeGameState({ gameMode: 'freeplay', placedNames: ['c'] }), NO_EVENTS);
     const { gamesPlayed } = getLifetimeStats();
-    expect(gamesPlayed).toEqual({ daily: 1, suddenDeath: 1, freeplay: 1 });
+    expect(gamesPlayed).toEqual({ daily: 1, suddenDeath: 1 });
   });
 
-  it('counts wrong placements and flawless freeplay games', () => {
+  it('counts wrong placements', () => {
     recordGameResult(
       makeGameState({
-        gameMode: 'freeplay',
+        gameMode: 'suddenDeath',
         placedNames: ['a', 'b'],
         placementHistory: [true, false, true],
       }),
       NO_EVENTS
     );
     expect(getLifetimeStats().eventsPlacedWrong).toBe(1);
-    expect(getLifetimeStats().flawlessFreeplayGames).toBe(0); // had a wrong placement
-
-    recordGameResult(makeGameState({ gameMode: 'freeplay', placedNames: ['c', 'd'] }), NO_EVENTS);
-    expect(getLifetimeStats().flawlessFreeplayGames).toBe(1); // all correct
   });
 
   it('custom (non-daily) games count for everything EXCEPT in-game streak', () => {
@@ -366,12 +397,12 @@ describe('recordGameResult', () => {
 
   it('unlocks First Steps (id 01) on the first recorded game and is idempotent', () => {
     const first = recordGameResult(
-      makeGameState({ gameMode: 'freeplay', placedNames: ['a'] }),
+      makeGameState({ gameMode: 'suddenDeath', placedNames: ['a'] }),
       NO_EVENTS
     );
     expect(first).toContain('01');
     const second = recordGameResult(
-      makeGameState({ gameMode: 'freeplay', placedNames: ['b'] }),
+      makeGameState({ gameMode: 'suddenDeath', placedNames: ['b'] }),
       NO_EVENTS
     );
     expect(second).not.toContain('01'); // already unlocked, not re-returned
@@ -405,7 +436,7 @@ describe('detectMilestones', () => {
   });
 
   it('fires longest daily timeline when it beats the daily record', () => {
-    seedLifetime({ longestTimeline: { daily: 5, suddenDeath: 0, freeplay: 0 } });
+    seedLifetime({ longestTimeline: { daily: 5, suddenDeath: 0 } });
     const milestones = play(
       // seed + 6 placements = timeline length 7
       makeGameState({
@@ -417,11 +448,11 @@ describe('detectMilestones', () => {
     expect(milestones).toContainEqual({ kind: 'longestTimelineDaily', value: 7, previous: 5 });
   });
 
-  it('fires longest custom timeline against the max of the non-daily buckets', () => {
-    seedLifetime({ longestTimeline: { daily: 99, suddenDeath: 4, freeplay: 3 } });
+  it('fires longest custom timeline against the non-daily bucket', () => {
+    seedLifetime({ longestTimeline: { daily: 99, suddenDeath: 4 } });
     const milestones = play(
-      // length 6, beats max(suddenDeath 4, freeplay 3) = 4
-      makeGameState({ gameMode: 'freeplay', placedNames: ['a', 'b', 'c', 'd', 'e'] })
+      // length 6, beats the suddenDeath record of 4
+      makeGameState({ gameMode: 'suddenDeath', placedNames: ['a', 'b', 'c', 'd', 'e'] })
     );
     expect(milestones).toContainEqual({ kind: 'longestTimelineCustom', value: 6, previous: 4 });
     // The daily record (99) is untouched, so no daily timeline milestone.

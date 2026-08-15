@@ -180,17 +180,22 @@ A tall viewport (height ≥ 1200) also helps by fitting more markers at once.
 ## 7. Modes, scoring & the daily
 
 - **Game phases:** `loading → modeSelect → transitioning → playing → gameOver`.
-- **Sudden Death** (Custom default, and what Daily uses): the 5-card hand is 5
-  **lives**. Correct placement → draw a replacement (streak++). Wrong placement
-  → tombstone, lose a card, streak resets. **Game over at 5 misses.** Score =
-  timeline length. The deck is huge ("Everything" theme), so the game only ends
-  by running out of lives — expect a long game if you play well.
-- **Freeplay:** bounded by hand size; a wrong card just draws a replacement.
-- **Daily** (`/daily`, auto-starts): seeded per UTC date — **same cards, same
-  order for everyone that day**. One-play-per-day is gated client-side, so a
-  **fresh browser context replays the same seed** (useful if a tool bug forces a
-  restart _before_ you submit). Single-player suppresses per-placement popups, so
-  it flows fast.
+- **Sudden-death mechanics — the only rule-set, used by both modes:** the 5-card
+  hand is 5 **lives**. Correct placement → draw a replacement (streak++). Wrong
+  placement → tombstone, lose a card, streak resets. **Game over at 5 misses.**
+  Score = timeline length. The deck is huge ("Everything" theme), so the game
+  only ends by running out of lives — expect a long game if you play well.
+  There is **no mode picker to click**: `GameMode` is just `daily | suddenDeath`,
+  and they differ only in how the deck is seeded.
+- **Daily** (`/daily`, auto-starts): seeded per **local calendar date** — same
+  cards, same order for everyone in the same timezone that day. Not UTC: see the
+  header comment in `src/utils/puzzleDate.ts`, and note the test suite pins
+  `TZ=America/Los_Angeles`. One-play-per-day is gated client-side, so a **fresh
+  browser context replays the same seed** (useful if a tool bug forces a restart
+  _before_ you submit). Single-player suppresses per-placement popups, so it
+  flows fast.
+- **Custom:** same mechanics, deck built from the category/era/difficulty filters
+  on the Custom tab.
 - **Submitting:** at game over a "Submit to Leaderboard" panel appears. Fill the
   name input, click submit. The API dedups by a per-context deviceId, so a fresh
   context can submit once.

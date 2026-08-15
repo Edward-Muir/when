@@ -27,20 +27,11 @@ export function generateEmojiGrid(placementHistory: boolean[]): string {
  * Generate the share text based on game mode and results
  */
 export function generateShareText(state: WhenGameState): string {
-  const {
-    gameMode,
-    placementHistory,
-    lastConfig,
-    players,
-    winners,
-    turnNumber,
-    roundNumber,
-    bestStreak,
-  } = state;
+  const { gameMode, placementHistory, lastConfig, players, winners, roundNumber, bestStreak } =
+    state;
   const emojiGrid = generateEmojiGrid(placementHistory);
   const playerCount = players.length;
   const correctCount = placementHistory.filter((p) => p).length;
-  const totalAttempts = placementHistory.length;
   const streakSuffix = bestStreak >= 2 ? ` | Best streak: ${bestStreak}x` : '';
 
   let text = '';
@@ -53,23 +44,14 @@ export function generateShareText(state: WhenGameState): string {
       text = `When #${dateStr} 📅\nTheme: ${themeName}\n${emojiGrid}\n📏 Timeline: ${correctCount + 1} events${streakSuffix}\n\nCan you beat my timeline? 👇\n${DAILY_URL}`;
       return text;
     }
-    case 'suddenDeath': {
+    // "Marathon" is the user-facing name for `suddenDeath` — a deliberate UI-only rename.
+    case 'suddenDeath':
+    default: {
       if (playerCount > 1) {
         const winnerNames = winners.map((w) => w.name).join(', ');
         text = `When 🏃 ${playerCount}P Marathon\n${winnerNames ? `🏆 Winner: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber}`;
       } else {
         text = `When 🏃 Marathon\n📏 ${correctCount} events placed${streakSuffix}\n${emojiGrid}`;
-      }
-      break;
-    }
-    case 'freeplay':
-    default: {
-      if (playerCount > 1) {
-        const winnerNames = winners.map((w) => w.name).join(', ');
-        text = `When 🎯 ${playerCount} Players\n${winnerNames ? `🏆 Winners: ${winnerNames}` : 'No winner'}\nRounds: ${roundNumber} | Turns: ${turnNumber}`;
-      } else {
-        const won = winners.length > 0;
-        text = `When 🎯 Freeplay\n${won ? '🏆 Won!' : `${correctCount}/${totalAttempts} correct`}${streakSuffix}\n${emojiGrid}`;
       }
       break;
     }

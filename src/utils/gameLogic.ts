@@ -1,4 +1,4 @@
-import { HistoricalEvent, Category, Player, GameMode } from '../types';
+import { HistoricalEvent, Category, Player } from '../types';
 
 // Helper to swap array elements without triggering object injection lint rule
 function swapElements<T>(arr: T[], i: number, j: number): void {
@@ -213,41 +213,6 @@ export function initializePlayers(
   };
 }
 
-// Check if game should end (used for non-sudden-death modes)
-export function shouldGameEnd(
-  players: Player[],
-  roundNumber: number,
-  currentPlayerIndex: number,
-  gameMode: GameMode
-): boolean {
-  const activePlayers = players.filter((p) => !p.isEliminated);
-
-  // Sudden death mode (and daily which uses sudden death mechanics) - handled by processEndOfRound
-  if (gameMode === 'suddenDeath' || gameMode === 'daily') {
-    // Single player: end immediately when eliminated (no rounds concept)
-    if (players.length === 1) {
-      return activePlayers.length === 0;
-    }
-    // Multiplayer: only check at round boundary (when we return to player 0)
-    if (currentPlayerIndex !== 0) {
-      return false;
-    }
-    // At round boundary: end if 1 or 0 players remain
-    return activePlayers.length <= 1;
-  }
-
-  // Regular multiplayer: must complete at least 1 full round
-  if (roundNumber < 2) {
-    return false;
-  }
-
-  // Check if we have any winners
-  const hasWinners = players.some((p) => p.hasWon);
-
-  // Game ends when we return to player 0 after someone has won
-  return hasWinners && currentPlayerIndex === 0;
-}
-
 // Result of end-of-round processing
 export interface EndOfRoundResult {
   gameOver: boolean;
@@ -256,18 +221,13 @@ export interface EndOfRoundResult {
   grantReprieve?: boolean;
 }
 
-// Process end of round for sudden death mode
-// Simplified logic: check hand sizes at round end, grant reprieve if all failed together
+// Process end of round. Both game modes run sudden-death mechanics, so this is the only
+// game-over check: inspect hand sizes at round end, granting a reprieve if a multiplayer
+// field all emptied their hands on the same round.
 export function processEndOfRound(
   players: Player[],
-  gameMode: GameMode,
   activePlayersAtRoundStart: number
 ): EndOfRoundResult {
-  // Only process for sudden death mechanics (includes daily mode)
-  if (gameMode !== 'suddenDeath' && gameMode !== 'daily') {
-    return { gameOver: false, updatedPlayers: players, winners: [] };
-  }
-
   const updatedPlayers = players.map((p) => ({ ...p }));
   const activePlayers = updatedPlayers.filter((p) => !p.isEliminated);
   const playersWithEmptyHands = activePlayers.filter((p) => p.hand.length === 0);

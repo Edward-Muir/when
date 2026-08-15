@@ -1,7 +1,7 @@
 /**
  * localStorage utilities for the stats / achievements foundation.
  *
- * Design principle (see docs/session-2026-06-27-stats-achievements-master-plan.md):
+ * Design principle (see docs/stats-achievements/index.md):
  * store generic primitives, derive every per-category stat at read time. The key
  * primitive is `CollectionState.placedEventIds` — the UNIQUE set of correctly-placed
  * event names, unioned across all modes. Per-category counts are derived later by
@@ -18,44 +18,67 @@ import { getTimelineHighScore } from './playerStorage';
 import { dayDiff, getLocalDateString } from './puzzleDate';
 import { ACHIEVEMENT_TESTS, StatsSnapshot } from '../data/achievementLogic';
 
-// --- Lifetime Stats (daily / suddenDeath / freeplay, excludes custom games) ---
+// --- Lifetime Stats (bucketed by game mode; custom games count under `suddenDeath`) ---
+
+/** Per-mode counters. Custom games run as `suddenDeath`, so they land in that bucket. */
+export interface PerMode {
+  daily: number;
+  suddenDeath: number;
+}
 
 export interface LifetimeStats {
-  gamesPlayed: { daily: number; suddenDeath: number; freeplay: number };
+  gamesPlayed: PerMode;
   eventsPlacedCorrect: number;
   eventsPlacedWrong: number;
-  timelineLengthSum: { daily: number; suddenDeath: number; freeplay: number };
-  longestTimeline: { daily: number; suddenDeath: number; freeplay: number };
+  timelineLengthSum: PerMode;
+  longestTimeline: PerMode;
   bestInGameStreakEver: number;
   /** Best in-game streak across non-daily (custom) games. Companion to the daily-only field above. */
   bestCustomStreakEver: number;
   bestGameCorrectEver: number;
-  flawlessFreeplayGames: number;
   firstPlayedDate: string;
   lastPlayedDate: string;
 }
+
+/**
+ * The pre-`freeplay`-removal stored shape. Anyone who ever launched a legacy freeplay
+ * challenge link has counts under these keys; `readLifetimeStats` folds them into
+ * `suddenDeath` so their totals don't drop when the mode went away.
+ */
+type LegacyPerMode = Partial<PerMode> & { freeplay?: number };
 
 const LIFETIME_STATS_KEY = 'when-lifetime-stats';
 
 function defaultLifetimeStats(): LifetimeStats {
   return {
-    gamesPlayed: { daily: 0, suddenDeath: 0, freeplay: 0 },
+    gamesPlayed: { daily: 0, suddenDeath: 0 },
     eventsPlacedCorrect: 0,
     eventsPlacedWrong: 0,
-    timelineLengthSum: { daily: 0, suddenDeath: 0, freeplay: 0 },
-    longestTimeline: { daily: 0, suddenDeath: 0, freeplay: 0 },
+    timelineLengthSum: { daily: 0, suddenDeath: 0 },
+    longestTimeline: { daily: 0, suddenDeath: 0 },
     bestInGameStreakEver: 0,
     bestCustomStreakEver: 0,
     bestGameCorrectEver: 0,
-    flawlessFreeplayGames: 0,
     firstPlayedDate: '',
     lastPlayedDate: '',
   };
 }
 
+/** Fold a stored per-mode record onto zero-defaults, summing away any legacy freeplay count. */
+function foldPerMode(stored: LegacyPerMode | undefined, combine: (a: number, b: number) => number) {
+  const daily = stored?.daily ?? 0;
+  const suddenDeath = stored?.suddenDeath ?? 0;
+  const freeplay = stored?.freeplay ?? 0;
+  return { daily, suddenDeath: combine(suddenDeath, freeplay) };
+}
+
+const sum = (a: number, b: number) => a + b;
+
 /**
  * Get lifetime stats, merged over zero-defaults so older/partial stored shapes
- * still yield every field.
+ * still yield every field. `readLifetimeStats` also folds any legacy `freeplay`
+ * bucket into `suddenDeath`, which is idempotent: once a save rewrites the record
+ * in the current shape there is no `freeplay` key left to fold.
  *
  * Also performs a one-time, idempotent high-score migration: if the Sudden Death
  * longest-timeline is unset and the legacy `when-timeline-high-score` has a value,
@@ -80,14 +103,28 @@ function readLifetimeStats(): LifetimeStats {
     const stored = localStorage.getItem(LIFETIME_STATS_KEY);
     if (!stored) return defaultLifetimeStats();
 
-    const parsed = JSON.parse(stored) as Partial<LifetimeStats>;
+    const parsed = JSON.parse(stored) as Partial<
+      Omit<LifetimeStats, 'gamesPlayed' | 'timelineLengthSum' | 'longestTimeline'>
+    > & {
+      gamesPlayed?: LegacyPerMode;
+      timelineLengthSum?: LegacyPerMode;
+      longestTimeline?: LegacyPerMode;
+    };
     const base = defaultLifetimeStats();
+    // Fields are listed explicitly rather than spread so retired keys (`freeplay`,
+    // `flawlessFreeplayGames`) are dropped rather than written back on the next save.
     return {
-      ...base,
-      ...parsed,
-      gamesPlayed: { ...base.gamesPlayed, ...parsed.gamesPlayed },
-      timelineLengthSum: { ...base.timelineLengthSum, ...parsed.timelineLengthSum },
-      longestTimeline: { ...base.longestTimeline, ...parsed.longestTimeline },
+      gamesPlayed: foldPerMode(parsed.gamesPlayed, sum),
+      eventsPlacedCorrect: parsed.eventsPlacedCorrect ?? base.eventsPlacedCorrect,
+      eventsPlacedWrong: parsed.eventsPlacedWrong ?? base.eventsPlacedWrong,
+      timelineLengthSum: foldPerMode(parsed.timelineLengthSum, sum),
+      // A longest-ever is a max, not a total, so the legacy bucket folds by max().
+      longestTimeline: foldPerMode(parsed.longestTimeline, Math.max),
+      bestInGameStreakEver: parsed.bestInGameStreakEver ?? base.bestInGameStreakEver,
+      bestCustomStreakEver: parsed.bestCustomStreakEver ?? base.bestCustomStreakEver,
+      bestGameCorrectEver: parsed.bestGameCorrectEver ?? base.bestGameCorrectEver,
+      firstPlayedDate: parsed.firstPlayedDate ?? base.firstPlayedDate,
+      lastPlayedDate: parsed.lastPlayedDate ?? base.lastPlayedDate,
     };
   } catch {
     return defaultLifetimeStats();
@@ -256,7 +293,8 @@ export function buildEventsByName(events: HistoricalEvent[]): Map<string, Histor
  * Record a finished game into the stats primitives and unlock any newly-earned achievements.
  *
  * Daily vs non-daily (via `lastConfig.dailySeed`) is the only split. Non-daily play —
- * Sudden Death, Freeplay, and shared challenge games alike — feeds the per-mode LifetimeStats
+ * Custom-page and shared challenge games alike, both of which run as `suddenDeath` — feeds
+ * the per-mode LifetimeStats
  * buckets and the collection, but NOT the daily-only families: `bestInGameStreakEver` and the
  * daily-cadence streak advance on daily games only (so the in-game-streak and daily badges are
  * daily-only).
@@ -297,9 +335,6 @@ export function recordGameResult(
   lifetime.longestTimeline[modeKey] = Math.max(lifetime.longestTimeline[modeKey], len);
   /* eslint-enable security/detect-object-injection */
   lifetime.bestGameCorrectEver = Math.max(lifetime.bestGameCorrectEver, correct);
-  if (modeKey === 'freeplay' && wrong === 0 && correct > 0) {
-    lifetime.flawlessFreeplayGames += 1;
-  }
   if (!lifetime.firstPlayedDate) lifetime.firstPlayedDate = today;
   lifetime.lastPlayedDate = today;
   // In-game streak is split: the daily-only field feeds the streak achievements (19–23); the
@@ -410,11 +445,7 @@ export function detectMilestones(
     // Daily run: max consecutive days, read after recording (cadence already advanced).
     beat('longestDailyRun', getDailyCadence().maxDailyStreak, prev.cadence.maxDailyStreak);
   } else {
-    const prevCustomTimeline = Math.max(
-      prev.lifetime.longestTimeline.suddenDeath,
-      prev.lifetime.longestTimeline.freeplay
-    );
-    beat('longestTimelineCustom', len, prevCustomTimeline);
+    beat('longestTimelineCustom', len, prev.lifetime.longestTimeline.suddenDeath);
     beat('longestStreakCustom', streak, prev.lifetime.bestCustomStreakEver);
   }
 
