@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.8.0](https://github.com/Edward-Muir/when/compare/v1.7.3...v1.8.0) (2026-08-15)
+
+
+### Features
+
+* show the entire daily leaderboard ([#37](https://github.com/Edward-Muir/when/issues/37)) ([b026353](https://github.com/Edward-Muir/when/commit/b026353e7717a9ef34e1fda62a39ae49b3738575))
+
 ## [1.7.3](https://github.com/Edward-Muir/when/compare/v1.7.2...v1.7.3) (2026-08-15)
 
 
