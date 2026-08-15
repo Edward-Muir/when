@@ -106,20 +106,20 @@ body {
    Pairs with `backdrop-blur-xl`, and needs it: the 5% of artwork that shows through the
    wash is only an unreadable colour cast once it has been blurred.
 
-   The two mask stops are the whole design. 100px is where the band reaches zero — shrink
-   it and the neighbouring cards start ghosting at the edges. 30px is where it reaches full
-   opacity, and it is deliberately *inside* the two-line title's ~34px half-height: the ramp
-   is still at ~94% where the ascenders sit, so the type stays clean while the band reads as
-   a soft gradient rather than a hard bar. Widening the 30→100 ramp softens it further;
-   raising 30 towards 100 makes it look like a slab again. */
+   The two mask stops are the whole design, and they trade off against each other. 106px is
+   where the band reaches zero — pull it in and the neighbouring cards start ghosting through
+   the fade. 43px is where it reaches full opacity, sitting just outside the two-line title's
+   measured ~34px half-height, so the whole title sits in the fully-opaque core with a little
+   margin. Widening the 43→106 ramp makes the band softer and less slab-like; a 30/100 pass
+   was tried and reverted for being too thin. */
 @layer utilities {
   .scrim-band {
     --scrim-band-mask: linear-gradient(
       to bottom,
-      transparent calc(50% - 100px),
-      #000 calc(50% - 30px),
-      #000 calc(50% + 30px),
-      transparent calc(50% + 100px)
+      transparent calc(50% - 106px),
+      #000 calc(50% - 43px),
+      #000 calc(50% + 43px),
+      transparent calc(50% + 106px)
     );
     background-color: color-mix(in srgb, var(--color-bg) 95%, transparent);
     -webkit-mask-image: var(--scrim-band-mask);
