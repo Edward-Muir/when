@@ -2,9 +2,11 @@ import React, { useCallback, useEffect, useMemo, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Users, X } from 'lucide-react';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { resolvePlayerRow, ResolvedPlayerRow } from '../utils/leaderboardUtils';
 import LeaderboardRow, { StickyPlayerRow } from './LeaderboardRow';
 import LeaderboardSkeleton from './LeaderboardSkeleton';
+import { LeaderboardSubmitForm } from './LeaderboardSubmit';
 
 interface LeaderboardProps {
   isOpen: boolean;
@@ -18,6 +20,12 @@ interface LeaderboardProps {
   onRefresh?: () => void | Promise<void>;
   /** True when `entries` is a capped slice of `totalPlayers` rather than the whole board. */
   truncated?: boolean;
+  /**
+   * Today's leaderboard, when the player has a score that is not on it yet. The board then
+   * carries the form to claim it — the game-over popup is unreachable once dismissed, so without
+   * this a submission that failed at game over could never be retried. Omit it everywhere else.
+   */
+  submit?: DailyLeaderboard | null;
 }
 
 const POLL_INTERVAL_MS = 15_000;
@@ -31,6 +39,11 @@ const SKELETON_ROWS = 8;
 // count bar take ~90px of it, so a flat pixel floor would outgrow the card on a landscape phone
 // and `overflow-hidden` would silently eat the bottom of the list.
 const LIST_MIN_HEIGHT = 'min-h-[min(320px,30vh)]';
+
+// The same floor, lowered to make room for the submit form. 90px of header and count bar, plus
+// ~320px of list, plus ~120px of form is over the card's 520px cap — and what falls off the
+// bottom is the submit button, i.e. the whole point of the form being there.
+const LIST_MIN_HEIGHT_WITH_FORM = 'min-h-[min(180px,20vh)]';
 
 const CARD_MOTION = {
   initial: { scale: 0.9, opacity: 0 },
@@ -154,8 +167,13 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
   error,
   onRefresh,
   truncated = false,
+  submit = null,
 }) => {
   const playerRowRef = useRef<HTMLButtonElement | null>(null);
+
+  // The score is claimable exactly when there is one and it is not on the board yet. Mutually
+  // exclusive with the pinned-player-row footer below: an unclaimed score has no row to pin.
+  const showsSubmitForm = !!submit && !submit.submitted;
 
   // Handle escape key
   useEffect(() => {
@@ -252,7 +270,9 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
 
             {/* Entries */}
             <div
-              className={`overflow-y-auto flex-1 ${LIST_MIN_HEIGHT} timeline-scroll-vertical`}
+              className={`overflow-y-auto flex-1 ${
+                showsSubmitForm ? LIST_MIN_HEIGHT_WITH_FORM : LIST_MIN_HEIGHT
+              } timeline-scroll-vertical`}
               data-testid="leaderboard-list"
             >
               <LeaderboardList
@@ -264,6 +284,17 @@ const Leaderboard: React.FC<LeaderboardProps> = ({
                 playerRowRef={playerRowRef}
               />
             </div>
+
+            {/* Claim today's score. Sits under the live board, which keeps polling underneath it,
+                so the form is replaced by the player's own row the moment the score lands. */}
+            {showsSubmitForm && submit && (
+              <div className="shrink-0 border-t border-border p-3" data-testid="leaderboard-submit">
+                <p className="mb-2 text-xs text-text-muted font-body">
+                  Your score isn&apos;t on the board yet.
+                </p>
+                <LeaderboardSubmitForm leaderboard={submit} />
+              </div>
+            )}
 
             {/* The player ranks below the served slice, so there is no row in the list to pin. */}
             {!isLoading && !error && player.row && !player.inList && (

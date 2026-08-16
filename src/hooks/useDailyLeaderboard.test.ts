@@ -1,4 +1,4 @@
-import { renderHook, waitFor } from '@testing-library/react';
+import { act, renderHook, waitFor } from '@testing-library/react';
 import { useDailyLeaderboard } from './useDailyLeaderboard';
 import { DailyResult } from '../utils/playerStorage';
 
@@ -92,5 +92,87 @@ describe('useDailyLeaderboard', () => {
 
     expect(global.fetch).not.toHaveBeenCalled();
     expect(result.current.submitted).toBe(false);
+  });
+
+  it('reads the board from boardDate when there is no result to submit', async () => {
+    // The home screen shows the board to everyone, including players who have not played today.
+    // Keying the fetch off the result alone left them looking at a permanently empty board.
+    mockBoard({ playerRank: null, playerEntry: null });
+
+    const { result } = renderHook(() =>
+      useDailyLeaderboard(null, { boardDate: '2026-08-15', poll: false })
+    );
+
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+    expect(result.current.totalPlayers).toBe(29);
+  });
+
+  it('does not poll when polling is switched off', async () => {
+    // The mount fetch resolves the device fingerprint first, so the request only goes out on a
+    // microtask — hence the flush before counting. Without it both counts read 0 and the
+    // assertion passes whatever the hook does.
+    jest.useFakeTimers();
+    try {
+      mockBoard({ playerRank: null, playerEntry: null });
+
+      renderHook(() => useDailyLeaderboard(RESULT, { poll: false }));
+      await act(async () => {
+        await Promise.resolve();
+      });
+      expect(global.fetch).toHaveBeenCalledTimes(1);
+
+      // Well past several 15s ticks. An idle home screen holding a request loop open all day is
+      // the reason this switch exists.
+      await act(async () => {
+        jest.advanceTimersByTime(120_000);
+      });
+
+      expect(global.fetch).toHaveBeenCalledTimes(1);
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('polls by default', async () => {
+    jest.useFakeTimers();
+    try {
+      mockBoard({ playerRank: null, playerEntry: null });
+
+      renderHook(() => useDailyLeaderboard(RESULT));
+      await act(async () => {
+        await Promise.resolve();
+      });
+      expect(global.fetch).toHaveBeenCalledTimes(1);
+
+      await act(async () => {
+        jest.advanceTimersByTime(60_000);
+      });
+
+      expect((global.fetch as jest.Mock).mock.calls.length).toBeGreaterThan(1);
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('refreshes a date it was not tracking', async () => {
+    // What day rollover needs: `useToday` hands the new date to the callback, and the board has
+    // to follow it rather than refetching yesterday.
+    mockBoard({ playerRank: null, playerEntry: null });
+
+    const { result } = renderHook(() =>
+      useDailyLeaderboard(null, { boardDate: '2026-08-15', poll: false })
+    );
+    await waitFor(() => expect(result.current.isLoading).toBe(false));
+
+    await act(async () => {
+      result.current.refresh('2026-08-16');
+    });
+
+    await waitFor(() =>
+      expect(global.fetch).toHaveBeenCalledWith(
+        expect.stringContaining('2026-08-16'),
+        expect.anything()
+      )
+    );
   });
 });
