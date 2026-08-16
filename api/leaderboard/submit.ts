@@ -6,106 +6,25 @@ import { DAILY_HAND_SIZE } from './handSize';
 
 const redis = Redis.fromEnv();
 
-// Category type matching the frontend (keep in sync with src/types/index.ts)
-type Category =
-  | 'empires'
-  | 'revolution'
-  | 'architecture'
-  | 'writing'
-  | 'invention'
-  | 'figures'
-  | 'media'
-  | 'craft'
-  | 'diplomacy'
-  | 'disasters'
-  | 'commerce'
-  | 'law'
-  | 'agriculture'
-  | 'warfare'
-  | 'science'
-  | 'trade'
-  | 'migration'
-  | 'art'
-  | 'medicine'
-  | 'nature';
-
-// Order must match src/types/index.ts — getDailyTheme indexes into this array.
-const ALL_CATEGORIES: Category[] = [
-  'empires',
-  'revolution',
-  'architecture',
-  'writing',
-  'invention',
-  'figures',
-  'media',
-  'craft',
-  'diplomacy',
-  'disasters',
-  'commerce',
-  'law',
-  'agriculture',
-  'warfare',
-  'science',
-  'trade',
-  'migration',
-  'art',
-  'medicine',
-  'nature',
-];
-
-interface DailyTheme {
-  type: 'category' | 'all';
-  value: Category | null;
-}
-
-// Seeded random number generator (mulberry32) - must match frontend
-function seededRandom(seed: number): () => number {
-  return function () {
-    let t = (seed += 0x6d2b79f5);
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-// Convert string to numeric seed - must match frontend
-function stringToSeed(str: string): number {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    const char = str.charCodeAt(i);
-    hash = (hash << 5) - hash + char;
-    hash = hash & hash;
-  }
-  return Math.abs(hash);
-}
-
-// Get daily theme from seed - must match src/utils/dailyTheme.ts exactly, including the
-// number and order of random() calls (~50% "Everything", else a random single category).
-function getDailyTheme(seed: string): DailyTheme {
-  const random = seededRandom(stringToSeed(seed));
-
-  if (random() < 0.5) {
-    return { type: 'all', value: null };
-  }
-
-  const idx = Math.floor(random() * ALL_CATEGORIES.length);
-  const category = ALL_CATEGORIES.at(idx) ?? ALL_CATEGORIES[0];
-  return { type: 'category', value: category };
-}
-
-// Get display name for category - must match src/utils/gameLogic.ts (capitalize-first).
-function getCategoryDisplayName(category: Category): string {
-  return category.charAt(0).toUpperCase() + category.slice(1);
-}
-
-// Get theme display name - must match frontend
-function getThemeDisplayName(theme: DailyTheme): string {
-  if (theme.type === 'all') {
-    return 'Everything';
-  }
-  return getCategoryDisplayName(theme.value as Category);
-}
-
+/**
+ * The daily theme is deliberately NOT validated here, and must not start being validated again.
+ *
+ * This file used to carry its own copy of the category list, the seeded RNG and `getDailyTheme`,
+ * under comments saying each "must match the frontend", so it could compare the submitted theme
+ * against a locally computed one. Adding `sports` to `src/types/index.ts` left that copy one entry
+ * short; since the theme is `ALL_CATEGORIES[floor(random() * ALL_CATEGORIES.length)]`, a different
+ * length picks a different category from the same seed, and roughly a quarter of all dates started
+ * rejecting every submission with 'Invalid theme'. It shipped silently, because the ~half of days
+ * themed "Everything" agree regardless of list length.
+ *
+ * The check could never have caught cheating in the first place — the theme is a value the client
+ * supplies about a puzzle the client generated, so all it compared was whether the caller's code
+ * agreed with this file's. Its only real effect was to break honest players whenever the two
+ * drifted. What actually guards the board is below: the date window, the internal consistency of
+ * the emoji grid against the counts, and the per-device dedupe key.
+ *
+ * Categories now live in exactly one place, `src/types/index.ts`. Nothing here needs to know them.
+ */
 interface SubmissionPayload {
   date: string;
   displayName: string;
@@ -113,7 +32,6 @@ interface SubmissionPayload {
   totalAttempts: number;
   emojiGrid: string;
   deviceId: string;
-  theme: string;
 }
 
 interface LeaderboardEntry {
@@ -180,11 +98,6 @@ function validateSubmission(body: SubmissionPayload): ValidationResult {
   const emojiResult = validateEmojiGrid(body);
   if (!emojiResult) {
     return { valid: false, error: 'Invalid emoji grid or counts' };
-  }
-
-  const expectedTheme = getThemeDisplayName(getDailyTheme(body.date));
-  if (body.theme && body.theme !== expectedTheme) {
-    return { valid: false, error: 'Invalid theme' };
   }
 
   return { valid: true, greenCount: emojiResult.greenCount, redCount: emojiResult.redCount };

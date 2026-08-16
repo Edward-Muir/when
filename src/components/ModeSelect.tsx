@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Play, Share2, Check } from 'lucide-react';
+import { Play, Share2, Check, Trophy } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -26,14 +26,14 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import {
   getTodayResult,
-  updateDailyResultWithLeaderboard,
+  DailyResult,
   getCustomSettings,
   saveCustomSettings,
 } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
-import { useLeaderboard } from '../hooks/useLeaderboard';
+import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
@@ -105,22 +105,36 @@ function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<num
   }, [setVisited]);
 }
 
-// Daily CTA: play when unplayed, share + next-daily countdown when already completed today.
-const DailyCta: React.FC<{ played: boolean; onShare: () => void; onPlay: () => void }> = ({
-  played,
-  onShare,
-  onPlay,
-}) => {
+// Daily CTA: play when unplayed, share + next-daily countdown when already completed today —
+// or, when today's score is not on the board, the way to put it there.
+const DailyCta: React.FC<{
+  played: boolean;
+  /** Today's score exists and is not on the board (see `canSubmitScore` in ModeSelect). */
+  unclaimed: boolean;
+  onShare: () => void;
+  onPlay: () => void;
+  onSubmit: () => void;
+}> = ({ played, unclaimed, onShare, onPlay, onSubmit }) => {
   const buttonClass =
     'w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body';
 
   if (played) {
     return (
       <div className="w-full flex flex-col items-center gap-2">
-        <button onClick={onShare} className={buttonClass}>
-          <Share2 className="w-4 h-4" />
-          Challenge a Friend
-        </button>
+        {/* An unclaimed score takes the share slot for as long as it is unclaimed. Sharing a
+            score is the lesser thing to offer someone whose score did not make the board, and
+            this is the only route back to submitting once the game-over popup is gone. */}
+        {unclaimed ? (
+          <button onClick={onSubmit} className={buttonClass}>
+            <Trophy className="w-4 h-4" />
+            Submit Your Score
+          </button>
+        ) : (
+          <button onClick={onShare} className={buttonClass}>
+            <Share2 className="w-4 h-4" />
+            Challenge a Friend
+          </button>
+        )}
         <NextDailyCountdown />
       </div>
     );
@@ -133,6 +147,20 @@ const DailyCta: React.FC<{ played: boolean; onShare: () => void; onPlay: () => v
     </button>
   );
 };
+
+/**
+ * Today's score exists and the board came back without it — so it can still be claimed.
+ *
+ * Both halves matter. `submitted` is also false while the first fetch is in flight and after a
+ * failed one, and treating either as "not on the board" would flash a submit button at players
+ * who are already on it. The guard is `loadError` rather than `unavailable` because the latter
+ * folds in `submitError` too, which would retract the offer the moment a submission failed —
+ * precisely when the player needs it.
+ */
+function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard): boolean {
+  if (!result || board.isLoading || board.loadError) return false;
+  return !board.submitted;
+}
 
 // Helper function to get default hand size based on player count
 const getDefaultHandSize = (count: number): number => {
@@ -155,7 +183,9 @@ const getDefaultHandSize = (count: number): number => {
 
 const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
   const navigate = useNavigate();
-  // Check if daily has been played today
+  // Check if daily has been played today. Deliberately re-read every render rather than memoized:
+  // `updateDailyResultWithLeaderboard` writes the placing into this record after the board
+  // resolves, and the share below reads `leaderboardRank` straight off it.
   const todayResult = getTodayResult();
 
   // Toast state for share button
@@ -173,34 +203,37 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
-  const {
-    isLoading: isLeaderboardLoading,
-    loadError: leaderboardError,
-    leaderboard,
-    totalPlayers,
-    rank,
-    playerEntry,
-    truncated: leaderboardTruncated,
-    fetchLeaderboard,
-  } = useLeaderboard();
+
+  // Held in a ref because the two hooks below need each other: `useToday` refetches the board on
+  // every resume, and the board hook needs `today` to know which board to read. `useToday` only
+  // ever calls this from an event listener, long after the assignment below has run.
+  const refreshBoardRef = useRef<(date?: string) => void>(() => {});
 
   // Source of truth for "today" (the player's local date). The hook handles rollover via
   // app resume, tab visibility and a re-arming local-midnight timer. Always refetch the
   // leaderboard on each trigger, even when the date hasn't rolled over — other players'
   // submissions need to land without a full reload.
-  const today = useToday(fetchLeaderboard);
+  const today = useToday((date) => refreshBoardRef.current(date));
 
-  // Prefetch leaderboard data in background; refetch when the day rolls over.
-  useEffect(() => {
-    fetchLeaderboard(today);
-  }, [fetchLeaderboard, today]);
+  // `todayResult` is what makes the score claimable here: the game-over popup is the only other
+  // place to submit, and it is gone for good once dismissed, so a submission that failed there
+  // could otherwise never be retried. `boardDate` keeps the board loading for players who have
+  // not played today (no result, but still a board to read), and `poll: false` leaves polling to
+  // the modal — the home screen would otherwise hold a 15s request loop open all day.
+  const leaderboardState = useDailyLeaderboard(todayResult, { boardDate: today, poll: false });
+  refreshBoardRef.current = leaderboardState.refresh;
 
-  // Sync leaderboard data to localStorage when fetched (for returning users)
-  useEffect(() => {
-    if (rank && totalPlayers && todayResult) {
-      updateDailyResultWithLeaderboard(rank, totalPlayers);
-    }
-  }, [rank, totalPlayers, todayResult]);
+  const {
+    entries: leaderboard,
+    isLoading: isLeaderboardLoading,
+    loadError: leaderboardError,
+    totalPlayers,
+    rank,
+    playerEntry,
+    truncated: leaderboardTruncated,
+  } = leaderboardState;
+
+  const canSubmitScore = hasUnclaimedScore(todayResult, leaderboardState);
 
   // Restore the player's last Custom-game configuration (read localStorage once on mount).
   // The deck seed is NOT restored — it stays random per play, so a refresh keeps the settings
@@ -356,7 +389,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   }
 
   const dailyCta = (
-    <DailyCta played={!!todayResult} onShare={handleShareDaily} onPlay={handleDailyStart} />
+    <DailyCta
+      played={!!todayResult}
+      unclaimed={canSubmitScore}
+      onShare={handleShareDaily}
+      onPlay={handleDailyStart}
+      onSubmit={() => setIsLeaderboardOpen(true)}
+    />
   );
 
   return (
@@ -478,8 +517,9 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
         truncated={leaderboardTruncated}
         isLoading={isLeaderboardLoading}
         error={leaderboardError}
+        submit={canSubmitScore ? leaderboardState : null}
         onRefresh={() => {
-          void fetchLeaderboard(today);
+          leaderboardState.refresh(today);
         }}
       />
     </motion.div>

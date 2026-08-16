@@ -72,6 +72,9 @@ export function useLeaderboard() {
         const response = await fetch('/api/leaderboard/submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
+          // No `theme`: the server does not validate it (see the note at the top of
+          // api/leaderboard/submit.ts) and never stored it. `DailyResult.theme` stays in
+          // localStorage for the share text and the home screen.
           body: JSON.stringify({
             date: result.date,
             displayName,
@@ -79,7 +82,6 @@ export function useLeaderboard() {
             totalAttempts: result.totalAttempts,
             emojiGrid: result.emojiGrid,
             deviceId,
-            theme: result.theme,
           }),
         });
 

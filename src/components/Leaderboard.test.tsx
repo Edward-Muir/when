@@ -3,6 +3,7 @@ import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Leaderboard from './Leaderboard';
 import { LeaderboardEntry } from '../hooks/useLeaderboard';
+import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 
 // jsdom implements neither of these. Stubbed here rather than in setupTests.ts so the rest of
 // the suite keeps running against the real (absent) environment.
@@ -198,6 +199,65 @@ describe('Leaderboard', () => {
       );
 
       expect(container).toBeEmptyDOMElement();
+    });
+  });
+
+  // The board is the only route back to submitting once the game-over popup is dismissed, so a
+  // score that failed to submit there is stranded without this.
+  describe('claiming a score', () => {
+    const makeSubmit = (over: Partial<DailyLeaderboard> = {}): DailyLeaderboard =>
+      ({
+        submitted: false,
+        isSubmitting: false,
+        submitError: null,
+        suggestedName: 'Jade Dragon',
+        submit: jest.fn(),
+        ...over,
+      }) as unknown as DailyLeaderboard;
+
+    it('offers the form when the score is not on the board', () => {
+      renderBoard({ submit: makeSubmit() });
+
+      expect(screen.getByPlaceholderText(/your name/i)).toHaveValue('Jade Dragon');
+      expect(screen.getByRole('button', { name: /submit to leaderboard/i })).toBeInTheDocument();
+    });
+
+    it('submits the typed name', async () => {
+      const submit = jest.fn();
+      renderBoard({ submit: makeSubmit({ submit }) });
+
+      const input = screen.getByPlaceholderText(/your name/i);
+      await userEvent.clear(input);
+      await userEvent.type(input, 'Ed');
+      await userEvent.click(screen.getByRole('button', { name: /submit to leaderboard/i }));
+
+      expect(submit).toHaveBeenCalledWith('Ed');
+    });
+
+    it('drops the form once the score is on the board', () => {
+      renderBoard({ submit: makeSubmit({ submitted: true }) });
+
+      expect(screen.queryByPlaceholderText(/your name/i)).not.toBeInTheDocument();
+    });
+
+    it('shows no form when the board is not carrying a score to claim', () => {
+      renderBoard();
+
+      expect(screen.queryByPlaceholderText(/your name/i)).not.toBeInTheDocument();
+    });
+
+    // "Try again later" sent players back to a button that could never work for this score.
+    it('says a rejected score cannot be verified, rather than inviting a retry', () => {
+      renderBoard({ submit: makeSubmit({ submitError: 'Invalid emoji grid or counts' }) });
+
+      expect(screen.getByText(/couldn’t be verified|couldn't be verified/i)).toBeInTheDocument();
+      expect(screen.queryByText(/try again later/i)).not.toBeInTheDocument();
+    });
+
+    it('still invites a retry after a network failure', () => {
+      renderBoard({ submit: makeSubmit({ submitError: 'Failed to fetch' }) });
+
+      expect(screen.getByText(/try again later/i)).toBeInTheDocument();
     });
   });
 });

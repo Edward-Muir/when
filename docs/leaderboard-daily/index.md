@@ -79,9 +79,23 @@ A real tie-break would have to be a new term, such as submission time.
 
 Server-side validation on submit: date inside the window; `correctCount >= 0` with no upper
 bound; 🟩 count equals `correctCount`; 🟥 count is 0–`DAILY_HAND_SIZE`;
-`totalAttempts == correctCount + mistakeCount`; theme matches the server-computed
-`getThemeDisplayName(getDailyTheme(date))`; and the `submission:{date}:{deviceId}` key doesn't
+`totalAttempts == correctCount + mistakeCount`; and the `submission:{date}:{deviceId}` key doesn't
 already exist.
+
+**The theme is not validated, and must not be again (2026-08-16).** `submit.ts` used to hold its
+own copy of `ALL_CATEGORIES`, the seeded RNG and `getDailyTheme` — each under a comment saying it
+"must match the frontend" — so it could compare the submitted theme against a locally computed one.
+Adding `sports` to `src/types/index.ts` left that copy one entry short, and since the theme is
+`ALL_CATEGORIES[floor(random() * ALL_CATEGORIES.length)]`, a different length picks a different
+category from the same seed: 2026-08-16 was **Medicine** in the app and **Art** on the server, and
+85 of the next 365 dates rejected every submission with `Invalid theme`. It shipped silently
+because the ~half of days themed "Everything" agree whatever the list length.
+
+The check was never load-bearing anyway: the theme is a value the client supplies about a puzzle
+the client generated, so it only ever compared the caller's code against this file's. A comment
+cannot hold two copies of a list in sync; deleting the second copy can. Categories now live in
+exactly one place, `src/types/index.ts`, and the API does not know them. The client also stopped
+sending `theme` — old cached clients still do, and the field is ignored.
 
 The 🟥 bound is a range rather than an equality only because a correct placement redraws just
 `if (newCard)` — exhausting the day's themed pool would shrink the hand with no mistake and end
