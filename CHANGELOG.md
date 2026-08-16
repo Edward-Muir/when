@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.11.2](https://github.com/Edward-Muir/when/compare/v1.11.1...v1.11.2) (2026-08-16)
+
+
+### Bug Fixes
+
+* stop rejecting daily leaderboard submissions, and let a failed one be retried ([#43](https://github.com/Edward-Muir/when/issues/43)) ([8592f92](https://github.com/Edward-Muir/when/commit/8592f920d55cae5211f6c7d5c9ae96d4fee6ad70))
+
 ## [1.11.1](https://github.com/Edward-Muir/when/compare/v1.11.0...v1.11.1) (2026-08-15)
 
 
