@@ -18,6 +18,9 @@ interface PublishPayload {
   baseVersion?: number;
   /** Publish a date that has already opened. Splits the day; see schema.ts. */
   force?: boolean;
+  /** Validate and report, but do not write. Lets the publish script check structure against
+   *  this function rather than keeping its own copy of the rules. */
+  dryRun?: boolean;
 }
 
 /**
@@ -69,6 +72,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       previousDates: scheduledDates(stored),
     });
     if (!ok) return res.status(400).json({ error: 'Validation failed', errors });
+
+    if (body.dryRun === true) {
+      return res
+        .status(200)
+        .json({ dryRun: true, version: stored.version, themes: incoming.themes.length });
+    }
 
     const next: ThemeCalendar = { version: stored.version + 1, themes: incoming.themes };
     await redis.set(CALENDAR_KEY, next);
