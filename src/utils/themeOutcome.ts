@@ -30,11 +30,14 @@ export function getThemeOutcome(state: WhenGameState): ThemeOutcome {
 
   // Multiplayer has round reprieves and eliminations, so "the hand emptied" no longer implies
   // a fixed mistake count. No UI reaches it, but the arithmetic below would be wrong there.
-  if (gameMode !== 'daily' || !lastConfig?.dailySeed || players.length !== 1) {
+  //
+  // Optional chaining because callers legitimately hand this partial state — buildDailyResult
+  // is reached from tests and from a game that ended before players were seated.
+  if (gameMode !== 'daily' || !lastConfig?.dailySeed || players?.length !== 1) {
     return { survived: false, perfect: false };
   }
 
-  const mistakes = placementHistory.filter((correct) => !correct).length;
+  const mistakes = (placementHistory ?? []).filter((correct) => !correct).length;
   const survived = mistakes < DAILY_HAND_SIZE;
 
   return { survived, perfect: survived && mistakes === 0 };
