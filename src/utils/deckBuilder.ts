@@ -110,7 +110,8 @@ interface BandQueue {
  */
 function applyExclusion(
   pool: HistoricalEvent[],
-  exclude: ReadonlySet<string> | undefined
+  exclude: ReadonlySet<string> | undefined,
+  minAfterExclusion: number
 ): {
   dropRecent: boolean;
   keep: (event: HistoricalEvent) => boolean;
@@ -120,7 +121,7 @@ function applyExclusion(
     return { dropRecent: false, keep: () => true, eligible: pool };
   }
   const filtered = pool.filter((e) => !exclude.has(e.name));
-  if (filtered.length < MIN_POOL_AFTER_EXCLUSION) {
+  if (filtered.length < minAfterExclusion) {
     return { dropRecent: false, keep: () => true, eligible: pool };
   }
   return { dropRecent: true, keep: (e) => !exclude.has(e.name), eligible: filtered };
@@ -210,6 +211,38 @@ export interface BuildRampedDeckOptions {
   /** Card names to keep out of the deck entirely (the 7-day no-repeat guarantee). */
   exclude?: ReadonlySet<string>;
   /**
+   * Divisor behind each band's per-deck budget: `max(1, floor(bandSize / bandSpread))`.
+   *
+   * Curated-day escape hatch. The default is the measured tuning and must not move — see
+   * SPREAD above for why the cap exists at all.
+   *
+   * It exists because the cap misbehaves badly on a small pool. Every band's budget lands
+   * on 1, and since `availableBands` prefers bands still inside their budget, positions 0-3
+   * become a forced round-robin of one card per band — so the *hardest* quartile is dealt
+   * into the opening hand almost every time (measured: 99.7% on a 30-card pool, against
+   * 11.7% on the full catalogue). The trigger is a band-0 population under ~12, not pool
+   * size, so no size floor protects against it.
+   *
+   * Passing `1` — a band may supply all of its cards — disables the cap and restores the
+   * full-catalogue opening profile exactly. (Not `Infinity`: that floors the budget to 0 and
+   * `max(1, 0)` lands straight back on the pathological value.)
+   *
+   * That is right for a curated theme: the cap guards against a *recurring* thin
+   * category theme burning the same few band-0 cards day after day, and a curated theme
+   * fires on a handful of explicit dates. A band that does run dry already cascades into
+   * its neighbours via `availableBands`.
+   */
+  bandSpread?: number;
+  /**
+   * Below this many cards after exclusion, the recency filter is backed out entirely.
+   *
+   * Curated-day escape hatch; the default is the measured tuning. A curated pool is far
+   * smaller than MIN_POOL_AFTER_EXCLUSION, so without lowering this the seven-day filter
+   * would always back out and the day would get no protection at all. Lowering it keeps the
+   * guarantee on curated days too.
+   */
+  minAfterExclusion?: number;
+  /**
    * Return only the composed window, skipping the tail shuffle.
    *
    * Nobody plays past the window, but a real deck still needs the tail so the game
@@ -232,10 +265,16 @@ export function buildRampedDeck(
   seed?: string,
   options: BuildRampedDeckOptions = {}
 ): HistoricalEvent[] {
-  const { allEvents = pool, exclude, windowOnly = false } = options;
+  const {
+    allEvents = pool,
+    exclude,
+    windowOnly = false,
+    bandSpread = SPREAD,
+    minAfterExclusion = MIN_POOL_AFTER_EXCLUSION,
+  } = options;
   if (pool.length === 0) return [];
 
-  const { dropRecent, keep, eligible } = applyExclusion(pool, exclude);
+  const { dropRecent, keep, eligible } = applyExclusion(pool, exclude, minAfterExclusion);
 
   // Without a seed there is nothing to be deterministic about, so keep it simple.
   if (!seed) return shuffleArray(eligible);
@@ -257,7 +296,7 @@ export function buildRampedDeck(
     queues.set(band, {
       cards,
       taken: 0,
-      budget: Math.max(1, Math.floor(cards.length / SPREAD)),
+      budget: Math.max(1, Math.floor(cards.length / bandSpread)),
     });
   }
 

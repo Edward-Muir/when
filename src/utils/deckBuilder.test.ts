@@ -199,6 +199,57 @@ describe('buildRampedDeck', () => {
         expect(Math.floor(bandSize / SPREAD)).toBeGreaterThan(RAMP_WINDOW);
       }
     });
+
+    /**
+     * The reason `bandSpread` exists.
+     *
+     * On a pool small enough that every band's budget floors to 1, `availableBands` prefers
+     * bands still inside their budget — so the first four positions become a round-robin of
+     * one card per band, and the hardest quartile lands in the opening hand almost every
+     * time. Deck indices 1-5 are the hand (index 0 is the starting timeline card), so this
+     * is exactly the foothold the ramp is supposed to guarantee.
+     *
+     * `deck[0]`'s band is not the property that matters, which is why the existing opening
+     * test cannot see this.
+     */
+    it('front-loads the hardest band into the opening hand on a small pool', () => {
+      const pool = shuffleArraySeeded(catalogue, 'small-pool').slice(0, 30);
+      let hardestInHand = 0;
+
+      for (let seed = 0; seed < 60; seed++) {
+        const deck = buildRampedDeck(pool, `small-${seed}`, { allEvents: catalogue });
+        if (deck.slice(1, 6).some((card) => index.bandOf(card) === 3)) hardestInHand++;
+      }
+
+      // Measured at ~100% of seeds. The bound is deliberately loose; the point is that this
+      // is nothing like the full-catalogue rate asserted below.
+      expect(hardestInHand).toBeGreaterThan(60 * 0.75);
+    });
+
+    it('bandSpread: 1 restores the full-catalogue opening profile on a small pool', () => {
+      const pool = shuffleArraySeeded(catalogue, 'small-pool').slice(0, 30);
+      let hardestInHand = 0;
+      let hardestInHandFull = 0;
+
+      for (let seed = 0; seed < 60; seed++) {
+        const uncapped = buildRampedDeck(pool, `small-${seed}`, {
+          allEvents: catalogue,
+          bandSpread: 1,
+        });
+        if (deckHasBand3InHand(uncapped)) hardestInHand++;
+
+        const full = buildRampedDeck(catalogue, `small-${seed}`, { allEvents: catalogue });
+        if (deckHasBand3InHand(full)) hardestInHandFull++;
+      }
+
+      // Both sit near the ~12% baseline; the capped run above is at ~100%.
+      expect(hardestInHand).toBeLessThan(60 * 0.35);
+      expect(hardestInHandFull).toBeLessThan(60 * 0.35);
+    });
+
+    function deckHasBand3InHand(deck: HistoricalEvent[]): boolean {
+      return deck.slice(1, 6).some((card) => index.bandOf(card) === 3);
+    }
   });
 
   describe('degenerate inputs', () => {
