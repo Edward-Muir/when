@@ -1,6 +1,6 @@
 import { HistoricalEvent } from '../types';
 import { buildRampedDeck } from './deckBuilder';
-import { buildDailyPool } from './dailyPool';
+import { buildDailyPool, getDailyBuildOptions } from './dailyPool';
 import { dayDiff } from './puzzleDate';
 
 /**
@@ -98,10 +98,13 @@ export function getRecentDailyCardNames(
     for (let back = 1; back <= RECENCY_DAYS && offset - back >= 0; back++) {
       for (const name of windowsByDay.at(offset - back) ?? []) exclude.add(name);
     }
+    // The options must match what buildDailyDeck uses for the same day, or the chain
+    // replays a deck nobody was dealt -- see getDailyBuildOptions.
     const deck = buildRampedDeck(buildDailyPool(allEvents, day), day, {
       allEvents,
       exclude,
       windowOnly: true,
+      ...getDailyBuildOptions(day),
     });
     windowsByDay.push(deck.map((e) => e.name));
   }

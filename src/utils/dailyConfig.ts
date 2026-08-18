@@ -1,7 +1,7 @@
 import { GameConfig, HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
 import { getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
 import { buildRampedDeck } from './deckBuilder';
-import { buildDailyPool } from './dailyPool';
+import { buildDailyPool, getDailyBuildOptions } from './dailyPool';
 import { getRecentDailyCardNames } from './dailyRecency';
 import { getLocalDateString } from './puzzleDate';
 
@@ -41,6 +41,7 @@ export function buildDailyDeck(
   return buildRampedDeck(buildDailyPool(allEvents, dateString), dateString, {
     allEvents,
     exclude: getRecentDailyCardNames(allEvents, dateString),
+    ...getDailyBuildOptions(dateString),
   });
 }
 
