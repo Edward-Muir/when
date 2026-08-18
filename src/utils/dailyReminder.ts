@@ -14,7 +14,6 @@
 
 import { Capacitor } from '@capacitor/core';
 import { LocalNotifications } from '@capacitor/local-notifications';
-import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { hasPlayedToday, isDailyReminderEnabled, setDailyReminderEnabled } from './playerStorage';
 import { getLocalDateString } from './puzzleDate';
 
@@ -71,17 +70,24 @@ export function getNext8amDates(count: number, now: Date = new Date()): Date[] {
 }
 
 /**
- * Notification copy for a reminder firing at `fireAt`. The puzzle date is the
- * local calendar date at the fire instant — the same date the deck is seeded
- * from, so an 8am reminder always names the theme of the puzzle the player is
- * about to be handed.
+ * Notification copy for a reminder firing at `fireAt`.
+ *
+ * Deliberately says nothing about the theme, though it used to. These notifications are
+ * scheduled up to REMINDER_WINDOW_DAYS ahead and the OS holds the text as written, so a
+ * curated theme published for a date already inside someone's queue would push a stale name
+ * — the app would say "Crowns & Coronations" while the notification said "Medicine". Resync
+ * runs on launch, resume and game-over, so an active player self-heals, but someone who has
+ * not opened the app for a week does not.
+ *
+ * Naming the theme was worth less than being able to schedule a theme for tomorrow, so the
+ * copy is generic and the calendar is free.
+ *
+ * `fireAt` is still taken so callers keep a per-slot shape and this can vary again later.
  */
-export function getReminderCopy(fireAt: Date): { title: string; body: string } {
-  const puzzleDate = getLocalDateString(fireAt);
-  const themeName = getThemeDisplayName(getDailyTheme(puzzleDate));
+export function getReminderCopy(_fireAt: Date): { title: string; body: string } {
   return {
     title: 'Today’s daily puzzle is ready',
-    body: `Today’s theme is ${themeName} — build your timeline!`,
+    body: 'A fresh timeline is waiting — can you place them all?',
   };
 }
 

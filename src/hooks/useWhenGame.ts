@@ -18,6 +18,7 @@ import { GameMilestone } from '../utils/statsStorage';
 import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { getThemeOutcome } from '../utils/themeOutcome';
 import {
   sortByYear,
   initializePlayers,
@@ -105,6 +106,7 @@ function useSaveDailyResult(state: WhenGameState) {
         date: dailySeed,
         theme: getThemeDisplayName(theme),
         won: state.winners.length > 0,
+        cleared: getThemeOutcome(state).survived,
         correctCount: state.placementHistory.filter((p) => p).length,
         totalAttempts: state.placementHistory.length,
         emojiGrid: generateEmojiGrid(state.placementHistory),
