@@ -97,6 +97,11 @@ interface PendingPopupState {
 }
 
 function useSaveDailyResult(state: WhenGameState) {
+  // Derived out here rather than inside the effect so the dependency list can stay a list of
+  // the state fields the effect actually reads. Passing `state` wholesale would make the
+  // effect depend on every field of it.
+  const cleared = getThemeOutcome(state).survived;
+
   useEffect(() => {
     if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
       const dailySeed = state.lastConfig.dailySeed;
@@ -106,7 +111,7 @@ function useSaveDailyResult(state: WhenGameState) {
         date: dailySeed,
         theme: getThemeDisplayName(theme),
         won: state.winners.length > 0,
-        cleared: getThemeOutcome(state).survived,
+        cleared,
         correctCount: state.placementHistory.filter((p) => p).length,
         totalAttempts: state.placementHistory.length,
         emojiGrid: generateEmojiGrid(state.placementHistory),
@@ -114,6 +119,7 @@ function useSaveDailyResult(state: WhenGameState) {
       });
     }
   }, [
+    cleared,
     state.phase,
     state.gameMode,
     state.lastConfig,
