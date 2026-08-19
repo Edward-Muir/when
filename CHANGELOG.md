@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.12.0](https://github.com/Edward-Muir/when/compare/v1.11.2...v1.12.0) (2026-08-19)
+
+
+### Features
+
+* hand-authored daily themes ([#44](https://github.com/Edward-Muir/when/issues/44)) ([5e1a605](https://github.com/Edward-Muir/when/commit/5e1a6056e6cc506026122f323fdae14f73d26aad))
+
 ## [1.11.2](https://github.com/Edward-Muir/when/compare/v1.11.1...v1.11.2) (2026-08-16)
 
 
