@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { CALENDAR_KEY, EMPTY_CALENDAR, ThemeCalendar } from './schema';
+import { CALENDAR_KEY, EMPTY_CALENDAR, ThemeCalendar } from '../../lib/themes/schema';
 
 const redis = Redis.fromEnv();
 

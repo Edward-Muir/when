@@ -23,6 +23,13 @@ it would leak one player's view to another. This one is byte-identical for every
 CDN absorbs essentially all reads and Upstash command volume stays flat. Don't "fix" either to
 match the other.
 
+## Where the code lives
+
+The two routes are `api/themes/index.ts` (GET) and `api/themes/publish.ts` (POST). Everything
+else — the schema, its validation and the admin gate — sits in `lib/`, because Vercel deploys
+every file under `api/` as a Serverless Function and the Hobby plan allows 12. See
+[dev-tooling/](../dev-tooling/index.md); `src/utils/apiRoutes.test.ts` enforces it.
+
 ## Publishing
 
 Through **`.github/workflows/publish-theme.yml`** (`workflow_dispatch`), so the admin secret
@@ -47,7 +54,7 @@ an event or an image regression silently shrinks a stored theme.
 ## The date rule: you can schedule tomorrow, but not this afternoon
 
 A puzzle date `D` opens at midnight in UTC+14, i.e. **`D-1 10:00Z`** — the same fact
-`api/leaderboard/dateWindow.ts` derives its ~50-hour submission window from. Once `D` has
+`lib/leaderboard/dateWindow.ts` derives its ~50-hour submission window from. Once `D` has
 opened somewhere, changing its theme splits the day: two populations play different decks and
 submit to the same board, and nothing downstream can tell them apart.
 

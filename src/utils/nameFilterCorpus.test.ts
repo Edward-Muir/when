@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import { adjectives, animals } from 'unique-names-generator';
-import { ADJECTIVES, ANIMALS } from '../../api/leaderboard/botGeneration';
+import { ADJECTIVES, ANIMALS } from '../../lib/leaderboard/botGeneration';
 import {
   isKnownTrollName,
   isNameAllowed,
   normalizeDisplayName,
-} from '../../api/leaderboard/nameFilter';
+} from '../../lib/leaderboard/nameFilter';
 
 /**
  * The false-positive budget for the display-name filter, enforced rather than documented.

@@ -1,7 +1,7 @@
 import {
   isDateWithinSubmissionWindow,
   SUBMISSION_DEDUPE_TTL_SECONDS,
-} from '../../api/leaderboard/dateWindow';
+} from '../../lib/leaderboard/dateWindow';
 
 // Tested from src/ because CRA's Jest only roots there — same arrangement as
 // nameFilter.test.ts, which imports api/leaderboard/nameFilter.

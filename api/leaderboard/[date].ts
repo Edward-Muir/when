@@ -1,8 +1,8 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { ensureBotsExist } from './botGeneration';
-import { normalizeDisplayName, safeDisplayName } from './nameFilter';
-import { resolveLimit } from './limits';
+import { ensureBotsExist } from '../../lib/leaderboard/botGeneration';
+import { normalizeDisplayName, safeDisplayName } from '../../lib/leaderboard/nameFilter';
+import { resolveLimit } from '../../lib/leaderboard/limits';
 
 const redis = Redis.fromEnv();
 

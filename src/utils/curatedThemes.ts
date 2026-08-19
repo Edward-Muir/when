@@ -1,4 +1,4 @@
-import type { CuratedTheme, ThemeCalendar } from '../../api/themes/schema';
+import type { CuratedTheme, ThemeCalendar } from '../../lib/themes/schema';
 
 export type { CuratedTheme };
 

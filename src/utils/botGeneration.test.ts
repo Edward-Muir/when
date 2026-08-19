@@ -1,5 +1,5 @@
 import type { Redis } from '@upstash/redis';
-import { ensureBotsExist, generateBotsForDate } from '../../api/leaderboard/botGeneration';
+import { ensureBotsExist, generateBotsForDate } from '../../lib/leaderboard/botGeneration';
 
 // Tested from src/ because CRA's Jest only roots there — same arrangement as
 // nameFilter.test.ts and dateWindow.test.ts.

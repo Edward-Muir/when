@@ -1,8 +1,11 @@
 /**
  * Shared constants and validation for the card bug-report endpoints.
  *
- * Not a route (no default export) — same arrangement as
- * api/leaderboard/botGeneration.ts, which is likewise a shared lib living under api/.
+ * Not a route (no default export). Lives in lib/ rather than api/ because Vercel turns every
+ * .ts file under api/ into its own Serverless Function and the Hobby plan caps a deployment at
+ * 12 — helper files there burn the budget for nothing, while the bundler still follows imports
+ * into lib/ perfectly well. src/utils/apiRoutes.test.ts fails if a non-route lands back under
+ * api/.
  *
  * The reason ids are duplicated in src/utils/cardReport.ts rather than imported
  * across the src/api boundary (separate tsconfigs; importing src would drag

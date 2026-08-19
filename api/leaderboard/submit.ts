@@ -1,8 +1,11 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { safeDisplayName } from './nameFilter';
-import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
-import { DAILY_HAND_SIZE } from './handSize';
+import { safeDisplayName } from '../../lib/leaderboard/nameFilter';
+import {
+  isDateWithinSubmissionWindow,
+  SUBMISSION_DEDUPE_TTL_SECONDS,
+} from '../../lib/leaderboard/dateWindow';
+import { DAILY_HAND_SIZE } from '../../lib/leaderboard/handSize';
 
 const redis = Redis.fromEnv();
 

@@ -1,4 +1,4 @@
-import { authorizeAdminRead } from '../../api/card-reports/reportSchema';
+import { authorizeAdminRead } from '../../lib/card-reports/reportSchema';
 
 const KEY = 'a-long-enough-secret-value';
 

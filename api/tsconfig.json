@@ -9,6 +9,6 @@
     "resolveJsonModule": true,
     "outDir": "../.vercel/output/functions"
   },
-  "include": ["./**/*.ts"],
+  "include": ["./**/*.ts", "../lib/**/*.ts"],
   "exclude": ["node_modules"]
 }

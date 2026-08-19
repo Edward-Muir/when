@@ -2,7 +2,7 @@
  * Display-name filtering for the daily leaderboard.
  *
  * No default export, so Vercel treats this as a shared lib rather than a route —
- * same arrangement as api/card-reports/reportSchema.ts and ./botGeneration.ts.
+ * same arrangement as ../card-reports/reportSchema.ts and ./botGeneration.ts.
  * Tests live in src/utils/nameFilter.test.ts (CRA's Jest only roots at src/).
  *
  * A blocked name is never rejected: the submission succeeds and the name is quietly

@@ -12,7 +12,7 @@ import {
   rateLimitKey,
   seenKey,
   validateReport,
-} from './reportSchema';
+} from '../../lib/card-reports/reportSchema';
 
 const redis = Redis.fromEnv();
 

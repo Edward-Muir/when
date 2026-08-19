@@ -9,7 +9,7 @@ import { getLocalDateString } from './puzzleDate';
  * Cards dealt at the start of a daily game.
  *
  * Also the number of mistakes that ends one, since a wrong placement discards without
- * drawing a replacement. api/leaderboard/handSize.ts holds a deliberate copy — api/ is a
+ * drawing a replacement. lib/leaderboard/handSize.ts holds a deliberate copy — api/ is a
  * separate tsconfig project and cannot import this. Change both together.
  */
 export const DAILY_HAND_SIZE = 5;

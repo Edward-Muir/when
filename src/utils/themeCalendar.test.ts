@@ -5,8 +5,8 @@ import {
   opensAtMs,
   scheduledDates,
   validateCalendar,
-} from '../../api/themes/schema';
-import type { CuratedTheme, ThemeCalendar } from '../../api/themes/schema';
+} from '../../lib/themes/schema';
+import type { CuratedTheme, ThemeCalendar } from '../../lib/themes/schema';
 
 /**
  * Lives in src/ because CRA's Jest only roots there — same arrangement as
@@ -91,7 +91,7 @@ describe('validateCalendar', () => {
 describe('the date-has-opened guard', () => {
   /**
    * A puzzle date opens at midnight in UTC+14, i.e. 10:00Z the day before — the same fact
-   * api/leaderboard/dateWindow.ts derives its ~50-hour submission window from.
+   * lib/leaderboard/dateWindow.ts derives its ~50-hour submission window from.
    */
   it('opens a date at 10:00Z on the previous day', () => {
     expect(new Date(opensAtMs('2030-03-10')).toISOString()).toBe('2030-03-09T10:00:00.000Z');

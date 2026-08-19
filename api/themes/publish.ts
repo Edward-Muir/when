@@ -1,13 +1,13 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { authorizeAdmin } from '../adminAuth';
+import { authorizeAdmin } from '../../lib/adminAuth';
 import {
   CALENDAR_KEY,
   EMPTY_CALENDAR,
   ThemeCalendar,
   scheduledDates,
   validateCalendar,
-} from './schema';
+} from '../../lib/themes/schema';
 
 const redis = Redis.fromEnv();
 

@@ -3,7 +3,7 @@ import {
   isNameAllowed,
   normalizeDisplayName,
   safeDisplayName,
-} from '../../api/leaderboard/nameFilter';
+} from '../../lib/leaderboard/nameFilter';
 
 // Tested from src/ because CRA's Jest only roots there — same arrangement as
 // adminAuth.test.ts, which imports api/card-reports/reportSchema.

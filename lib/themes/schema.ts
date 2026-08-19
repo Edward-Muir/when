@@ -1,7 +1,11 @@
 /**
  * Shape and structural validation for the curated-theme calendar.
  *
- * Not a route (no default export) — same arrangement as api/leaderboard/botGeneration.ts.
+ * Not a route (no default export). Lives in lib/ rather than api/ because Vercel turns every
+ * .ts file under api/ into its own Serverless Function and the Hobby plan caps a deployment at
+ * 12 — helper files there burn the budget for nothing, while the bundler still follows imports
+ * into lib/ perfectly well. src/utils/apiRoutes.test.ts fails if a non-route lands back under
+ * api/.
  *
  * A curated theme is a hand-authored *pool* of event slugs pinned to explicit dates. The
  * deck builder still composes the deal order from it, so nothing here knows about decks.
@@ -23,7 +27,7 @@ export const CALENDAR_KEY = 'themes:calendar';
  * The engine floor is lower (playerCount * handSize + 1 + playerCount * 2 = 8), but a theme
  * that thin caps everyone's score so low that the leaderboard's bots — which sample a
  * Poisson(6) correct-count — can beat every human. At 16 the human ceiling is 15 and the
- * chance of any bot exceeding it is well under 1%; api/leaderboard/botGeneration.ts clamps
+ * chance of any bot exceeding it is well under 1%; lib/leaderboard/botGeneration.ts clamps
  * to the day's ceiling as well, so this is belt and braces.
  */
 export const MIN_THEME_EVENTS = 16;
@@ -75,7 +79,7 @@ const MS_PER_HOUR = 3_600_000;
  * The moment puzzle date `D` becomes playable anywhere on earth.
  *
  * The client seeds its puzzle from the player's LOCAL calendar date, so `D` opens at
- * `D 00:00` in UTC+14 — that is, `D-1 10:00Z`. See api/leaderboard/dateWindow.ts, which
+ * `D 00:00` in UTC+14 — that is, `D-1 10:00Z`. See lib/leaderboard/dateWindow.ts, which
  * derives the ~50-hour submission window from the same fact.
  */
 export function opensAtMs(date: string): number {

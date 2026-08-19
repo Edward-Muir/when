@@ -34,7 +34,7 @@ Consequences worth knowing:
   `DAY_MS - (now % DAY_MS)`.** DST days are 23 and 25 hours, so the modulo is wrong twice a year
   even after correcting for the offset.
 - **Tests pin `TZ=America/Los_Angeles`** in the `test` script. Don't remove it.
-- **The submission window is `utcToday ± 1`, not an exact match** (`api/leaderboard/dateWindow.ts`),
+- **The submission window is `utcToday ± 1`, not an exact match** (`lib/leaderboard/dateWindow.ts`),
   because one date string is in play for ~50 hours.
 - **`SUBMISSION_DEDUPE_TTL_SECONDS` is 72h and shared** by `submit.ts` and `botGeneration.ts`.
   Both were previously on a 25-hour TTL commented "for timezone edge cases" — which no longer

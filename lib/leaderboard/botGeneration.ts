@@ -1,3 +1,13 @@
+/**
+ * Bot leaderboard entries.
+ *
+ * Not a route (no default export). Lives in lib/ rather than api/ because Vercel turns every
+ * .ts file under api/ into its own Serverless Function and the Hobby plan caps a deployment at
+ * 12 — helper files there burn the budget for nothing, while the bundler still follows imports
+ * into lib/ perfectly well. src/utils/apiRoutes.test.ts fails if a non-route lands back under
+ * api/.
+ */
+
 import { Redis } from '@upstash/redis';
 import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
 import { CALENDAR_KEY, ThemeCalendar } from '../themes/schema';

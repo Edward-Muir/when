@@ -23,7 +23,7 @@ const {
   spreadReport,
 } = require('./themes/catalogue');
 
-/** Mirrors MIN_THEME_EVENTS in api/themes/schema.ts. */
+/** Mirrors MIN_THEME_EVENTS in lib/themes/schema.ts. */
 const MIN_THEME_EVENTS = 16;
 const MIN_OCCUPIED_BINS = 6;
 const MIN_BAND_ZERO = 5;

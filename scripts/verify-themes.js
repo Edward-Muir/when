@@ -17,7 +17,7 @@
 
 const { buildIndex, loadEligibleEvents, spreadReport } = require('./themes/catalogue');
 
-/** Mirrors MIN_THEME_EVENTS in api/themes/schema.ts. */
+/** Mirrors MIN_THEME_EVENTS in lib/themes/schema.ts. */
 const MIN_THEME_EVENTS = 16;
 
 async function main() {

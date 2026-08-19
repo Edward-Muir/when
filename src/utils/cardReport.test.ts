@@ -1,5 +1,5 @@
 import { REPORT_REASONS, hasReportedCard, markCardReported, submitCardReport } from './cardReport';
-import { REPORT_REASON_IDS, validateReport } from '../../api/card-reports/reportSchema';
+import { REPORT_REASON_IDS, validateReport } from '../../lib/card-reports/reportSchema';
 import { getDeviceFingerprint } from './deviceFingerprint';
 
 jest.mock('./deviceFingerprint', () => ({ getDeviceFingerprint: jest.fn() }));
