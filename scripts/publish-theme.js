@@ -129,18 +129,6 @@ function mergeCalendar(calendar, theme, removeId) {
 async function main() {
   const mode = (process.env.THEME_MODE || 'validate').trim();
 
-  // Checked up front because the alternative is a doomed request and a bare "Unauthorized",
-  // which cannot be told apart from a wrong key. An empty value here almost always means the
-  // GitHub secret is missing or misnamed rather than incorrect.
-  if (!process.env.THEMES_ADMIN_KEY) {
-    fail(
-      'THEMES_ADMIN_KEY is empty.\n' +
-        '   In CI: check the repository secret of that exact name exists at repository scope\n' +
-        '   (Settings > Secrets and variables > Actions). Environment-scoped secrets are not\n' +
-        '   injected unless the job declares that environment.\n' +
-        '   Locally: export it before running.'
-    );
-  }
   const force = String(process.env.THEME_FORCE).trim() === 'true';
   const removeId = (process.env.THEME_REMOVE || '').trim();
 
@@ -160,6 +148,19 @@ async function main() {
     console.log('\n✓ Catalogue checks passed.');
   } else {
     console.log(`\nRemoving theme "${removeId}".`);
+  }
+
+  // Checked here rather than at the top so the catalogue checks above still run locally
+  // without a key. A bare "Unauthorized" from the API cannot be told apart from a wrong key,
+  // and an empty value almost always means the secret is missing or misnamed.
+  if (!process.env.THEMES_ADMIN_KEY) {
+    fail(
+      'THEMES_ADMIN_KEY is empty, so the calendar cannot be read or written.\n' +
+        '   In CI: the repository secret of that exact name must exist at REPOSITORY scope\n' +
+        '   (Settings > Secrets and variables > Actions). Environment-scoped secrets are not\n' +
+        '   injected unless the job declares that environment.\n' +
+        '   Locally: export it before running. Catalogue checks above ran fine without it.'
+    );
   }
 
   const current = await callApi('/api/themes', {});
