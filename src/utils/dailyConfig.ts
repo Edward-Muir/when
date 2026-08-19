@@ -1,9 +1,18 @@
 import { GameConfig, HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
 import { getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
 import { buildRampedDeck } from './deckBuilder';
-import { buildDailyPool } from './dailyPool';
+import { buildDailyPool, getDailyBuildOptions } from './dailyPool';
 import { getRecentDailyCardNames } from './dailyRecency';
 import { getLocalDateString } from './puzzleDate';
+
+/**
+ * Cards dealt at the start of a daily game.
+ *
+ * Also the number of mistakes that ends one, since a wrong placement discards without
+ * drawing a replacement. lib/leaderboard/handSize.ts holds a deliberate copy — api/ is a
+ * separate tsconfig project and cannot import this. Change both together.
+ */
+export const DAILY_HAND_SIZE = 5;
 
 /**
  * Build the GameConfig for today's daily challenge.
@@ -22,7 +31,7 @@ export function buildDailyConfig(): GameConfig {
     dailySeed,
     playerCount: 1,
     playerNames: ['Player 1'],
-    cardsPerHand: 5,
+    cardsPerHand: DAILY_HAND_SIZE,
   };
 }
 
@@ -41,6 +50,7 @@ export function buildDailyDeck(
   return buildRampedDeck(buildDailyPool(allEvents, dateString), dateString, {
     allEvents,
     exclude: getRecentDailyCardNames(allEvents, dateString),
+    ...getDailyBuildOptions(dateString),
   });
 }
 

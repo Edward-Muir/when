@@ -1,4 +1,4 @@
-import { authorizeAdminRead } from '../../api/card-reports/reportSchema';
+import { authorizeAdminRead } from '../../lib/card-reports/reportSchema';
 
 const KEY = 'a-long-enough-secret-value';
 
@@ -47,7 +47,7 @@ describe('authorizeAdminRead', () => {
   it('refuses in production when no key is configured', () => {
     expect(
       authorizeAdminRead({ supplied: KEY, configured: undefined, isProduction: true })
-    ).toEqual({ ok: false, status: 503, error: 'Reports admin key not configured' });
+    ).toEqual({ ok: false, status: 503, error: 'Admin key not configured' });
   });
 
   it('refuses in production when the configured key is empty', () => {

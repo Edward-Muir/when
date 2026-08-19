@@ -8,6 +8,7 @@ import CategoryIcon from './CategoryIcon';
 import LeaderboardSubmit from './LeaderboardSubmit';
 import Modal, { ModalDismissMode } from './ui/Modal';
 import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
+import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
 
@@ -125,9 +126,14 @@ function GameOverHeader({ gameState }: { gameState: WhenGameState }) {
   const { winners, players } = gameState;
   const hasWinner = winners.length > 0;
   const isSinglePlayer = players.length === 1;
+  const { survived, perfect } = getThemeOutcome(gameState);
 
   const getWinnerText = () => {
     if (isSinglePlayer) {
+      // Reaching the end of the deck is its own outcome, and on a curated theme it is the
+      // good one — "Game Over" reads as failure for a player who just got through the lot.
+      if (perfect) return 'Perfect Clear!';
+      if (survived) return 'Theme Cleared!';
       return hasWinner ? 'You Won!' : 'Game Over';
     }
     if (!hasWinner) {

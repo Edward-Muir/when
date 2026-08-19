@@ -34,7 +34,7 @@ Consequences worth knowing:
   `DAY_MS - (now % DAY_MS)`.** DST days are 23 and 25 hours, so the modulo is wrong twice a year
   even after correcting for the offset.
 - **Tests pin `TZ=America/Los_Angeles`** in the `test` script. Don't remove it.
-- **The submission window is `utcToday ± 1`, not an exact match** (`api/leaderboard/dateWindow.ts`),
+- **The submission window is `utcToday ± 1`, not an exact match** (`lib/leaderboard/dateWindow.ts`),
   because one date string is in play for ~50 hours.
 - **`SUBMISSION_DEDUPE_TTL_SECONDS` is 72h and shared** by `submit.ts` and `botGeneration.ts`.
   Both were previously on a 25-hour TTL commented "for timezone edge cases" — which no longer
@@ -62,6 +62,25 @@ no-op transitions: `appResume` (dispatched by `App.tsx` via `@capacitor/app`),
 **The midnight timer re-arms after firing.** It was originally one-shot, so an app left
 foregrounded across two nights stopped rolling over — a live bug on iOS, where the WebView
 keeps state alive for days.
+
+## Curated themes changed two assumptions here (2026-08-18)
+
+**Short emoji grids are now routine.** `submit.ts` accepts `redCount <= DAILY_HAND_SIZE` rather
+than an equality, on the grounds that exhausting the pool early was theoretical (~100
+placements against a realistic best of ~30). A curated theme is a couple of dozen cards, so
+every player who gets through one submits a short grid. **Do not tighten that check to an
+equality** — it would reject every cleared run.
+
+**Bots are clamped to the day's ceiling.** They sample Poisson(6) with no idea how many cards
+exist, so on a curated theme they could out-score every human. `botGeneration.ts` reads the
+theme's size from `themes:calendar`. That is NOT a return to the theme-validation mistake
+below: what broke there was a _duplicate_ of `ALL_CATEGORIES` plus the RNG, re-deriving the
+theme and drifting out of step. Reading a count from the one authoritative record has nothing
+to drift against, and it fails open.
+
+Scores also bunch at the ceiling on a clearable theme, since equal correct counts genuinely tie
+and Redis orders them by member string. Nothing breaks, but "#1 globally" means less on those
+days. See [curated-themes/](../curated-themes/index.md).
 
 ## Scoring and validation
 

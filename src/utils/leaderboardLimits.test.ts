@@ -1,4 +1,4 @@
-import { DEFAULT_LIMIT, MAX_LIMIT, resolveLimit } from '../../api/leaderboard/limits';
+import { DEFAULT_LIMIT, MAX_LIMIT, resolveLimit } from '../../lib/leaderboard/limits';
 
 // Tested from src/ because CRA's Jest only roots there — same arrangement as
 // botGeneration.test.ts, nameFilter.test.ts and dateWindow.test.ts.

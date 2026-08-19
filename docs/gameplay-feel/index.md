@@ -35,6 +35,23 @@ grep -rEoh '\b(bg|text|border|from|via|to|ring|fill|stroke)-(bg|surface|text|tex
 To check a specific one really landed, grep the build output rather than trusting the source:
 `npm run build && grep -o '\.scrim-band{[^}]*}' build/static/css/*.css`.
 
+## Curated themes and thin pools (2026-08-18)
+
+`BuildRampedDeckOptions` has two escape hatches, `bandSpread` and `minAfterExclusion`, both
+defaulting to the measured tuning below so nothing outside a curated day changes.
+
+They are not cosmetic. With the default `SPREAD`, a pool whose band-0 population is under ~12
+gives every band a budget of 1, and since `availableBands` prefers bands inside their budget,
+deck positions 0-3 become a round-robin of one card per band. Positions 1-5 are the opening
+hand, so the hardest quartile lands in it on **99.7%** of seeds against **11.7%** on the full
+catalogue — a direct inversion of the foothold this whole section exists to guarantee. Curated
+days pass `bandSpread: 1` to lift the cap; `Infinity` does NOT work (it floors the budget to 0
+and `max(1, 0)` is the pathological value again).
+
+Both options must be derived from the date in one place — `getDailyBuildOptions` in
+`dailyPool.ts` — and used by every builder call site on the daily path, including
+`dailyRecency`'s chain walk. See [curated-themes/](../curated-themes/index.md).
+
 ## Deck composition (2026-08-13)
 
 Decks are **composed, not shuffled**: the first `RAMP_WINDOW` (24) cards are chosen so a game

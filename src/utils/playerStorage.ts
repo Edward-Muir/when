@@ -13,6 +13,12 @@ export interface DailyResult {
   date: string; // YYYY-MM-DD
   theme: string; // Theme display name
   won: boolean;
+  /**
+   * The deck ran dry rather than the hand emptying on mistakes — the player got through the
+   * whole theme. Separate from `won`, which single-player never sets, rather than a reuse of
+   * it: repurposing would make every previously stored result read as cleared.
+   */
+  cleared?: boolean;
   correctCount: number;
   totalAttempts: number;
   emojiGrid: string; // For display

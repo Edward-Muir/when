@@ -4,6 +4,7 @@ import { buildDailyDeck } from './dailyConfig';
 import { pickIntroEvents } from './introEvents';
 import { isCloudinaryImage } from './cloudinaryImage';
 import { HistoricalEvent } from '../types';
+import { DAILY_SPOILER_DEPTH } from '../App';
 
 /**
  * The intro animation renders each card's name *and* year — the answer. It draws from a
@@ -17,9 +18,10 @@ import { HistoricalEvent } from '../types';
  */
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
-// Mirrors DAILY_SPOILER_DEPTH in App.tsx — a heuristic sampling budget for the intro
-// animation, not a bound on game length (sudden-death draws have no turn cap).
-const SPOILER_DEPTH = 15;
+// Imported rather than mirrored, so this measures the depth the app actually uses. A
+// heuristic sampling budget for the intro animation, not a bound on game length
+// (sudden-death draws have no turn cap).
+const SPOILER_DEPTH = DAILY_SPOILER_DEPTH;
 const DAYS = 120;
 const ROTATIONS = 3;
 

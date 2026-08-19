@@ -176,7 +176,12 @@ const TopBar: React.FC<TopBarProps> = ({
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     transition={{ type: 'spring', stiffness: 500, damping: 30 }}
-                    className="mt-1 px-2 py-0.5 text-xs font-body font-medium bg-accent text-white rounded-full"
+                    // max-w + truncate because curated theme names run to 20 characters
+                    // ("Crowns & Coronations") against a longest category name of 12
+                    // ("Architecture"). Unconstrained, the pill pushes into the nav row on a
+                    // 320px screen. The full name is on the Daily hero card either way.
+                    className="mt-1 max-w-[9.5rem] truncate px-2 py-0.5 text-xs font-body font-medium bg-accent text-white rounded-full whitespace-nowrap"
+                    title={dailyTheme}
                   >
                     {dailyTheme}
                   </motion.span>

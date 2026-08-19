@@ -8,6 +8,8 @@ For detailed architecture (component hierarchy, hooks, utils, API routes, z-inde
 
 Before changing anything about how card images are fetched or sized (`src/utils/cloudinaryImage.ts`, preloading, the service-worker image cache): see [docs/cloudinary-cost-controls.md](docs/cloudinary-cost-controls.md) — the rung ladder has hard rules (no `dpr_auto`, never an uncapped width, keep both rungs square) that exist because breaking them ran the account toward a shutdown.
 
+Daily themes can be hand-authored: a named list of event slugs pinned to explicit dates, stored in Redis and published via a GitHub Action (no code change). Before touching `src/utils/dailyTheme.ts`, `dailyPool.ts` or the daily's deck options: see [docs/curated-themes/index.md](docs/curated-themes/index.md) — the curated lookup must stay ahead of the seeded RNG, and both builder call sites must share `getDailyBuildOptions`.
+
 To drive/play the app end-to-end with Playwright (smoke tests, or playing the live daily) — including the drag-and-drop recipe, the proxy/TLS workaround, and a copy-pasteable script: see [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md)
 
 ## Commands

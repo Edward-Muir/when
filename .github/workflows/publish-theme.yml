@@ -1,0 +1,62 @@
+name: Publish Theme
+
+# Writes the curated daily-theme calendar.
+#
+# The point of running this in CI rather than from a laptop or an agent session is twofold:
+# the admin secret stays in GitHub Secrets and never reaches whoever is composing the theme,
+# and because the repo is checked out here, the publish script can validate slugs and
+# timeline spread against the REAL event catalogue before anything is stored. The API itself
+# cannot do that — api/ is a separate tsconfig project and public/events/ is served
+# statically rather than bundled into the function.
+#
+# Dispatch defaults to `validate`, so a mis-click cannot write anything.
+
+on:
+  workflow_dispatch:
+    inputs:
+      theme:
+        description: 'Theme JSON: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"]}'
+        required: true
+        type: string
+      mode:
+        description: 'validate = report only; publish = validate then write'
+        type: choice
+        default: validate
+        options:
+          - validate
+          - publish
+      force:
+        description: 'Publish a date that has already opened (splits the day for UTC+13/+14)'
+        type: boolean
+        default: false
+      remove:
+        description: 'Theme id to delete instead of adding. Leave blank to add or update.'
+        type: string
+        default: ''
+
+# The calendar write is read-modify-write, so two runs must not interleave. The API also
+# rejects a stale baseVersion; this just stops the race from happening in the first place.
+concurrency: publish-theme
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # No `npm ci`: scripts/publish-theme.js is dependency-free so the job stays fast.
+      - name: Validate and publish
+        run: node scripts/publish-theme.js
+        env:
+          # Passed through the environment, never interpolated into the shell. `${{ }}` inside
+          # a run: block splices attacker-controlled text straight into bash.
+          THEME_JSON: ${{ inputs.theme }}
+          THEME_MODE: ${{ inputs.mode }}
+          THEME_FORCE: ${{ inputs.force }}
+          THEME_REMOVE: ${{ inputs.remove }}
+          THEMES_ADMIN_KEY: ${{ secrets.THEMES_ADMIN_KEY }}
+          THEMES_API_URL: https://www.play-when.com

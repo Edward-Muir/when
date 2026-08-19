@@ -1,8 +1,11 @@
 /**
  * Shared constants and validation for the card bug-report endpoints.
  *
- * Not a route (no default export) — same arrangement as
- * api/leaderboard/botGeneration.ts, which is likewise a shared lib living under api/.
+ * Not a route (no default export). Lives in lib/ rather than api/ because Vercel turns every
+ * .ts file under api/ into its own Serverless Function and the Hobby plan caps a deployment at
+ * 12 — helper files there burn the budget for nothing, while the bundler still follows imports
+ * into lib/ perfectly well. src/utils/apiRoutes.test.ts fails if a non-route lands back under
+ * api/.
  *
  * The reason ids are duplicated in src/utils/cardReport.ts rather than imported
  * across the src/api boundary (separate tsconfigs; importing src would drag
@@ -10,8 +13,6 @@
  * lists stay in sync. Same precedent as the mulberry32 PRNG duplicated in
  * api/leaderboard/submit.ts.
  */
-
-import { createHash, timingSafeEqual } from 'crypto';
 
 export const REPORT_REASON_IDS = ['wrong-year', 'wrong-image', 'bad-description', 'other'];
 
@@ -43,42 +44,12 @@ export function rateLimitKey(ipHash: string): string {
   return `cardreport:rl:${ipHash}`;
 }
 
-export type AdminAuthResult = { ok: true } | { ok: false; status: number; error: string };
-
 /**
- * Compares two secrets without leaking their contents through timing. Digesting
- * first means a wrong-length guess is a clean `false` rather than the throw
- * timingSafeEqual raises on mismatched buffer lengths.
+ * Re-exported so the existing call site and its unit test keep their import path. The
+ * implementation moved to api/adminAuth.ts when the themes endpoints needed the same gate.
  */
-function secretsMatch(a: string, b: string): boolean {
-  const digest = (value: string) => createHash('sha256').update(value).digest();
-  return timingSafeEqual(digest(a), digest(b));
-}
-
-/**
- * Decides whether a request may read the stored reports.
- *
- * Fails closed in production: with no key configured the endpoint refuses rather
- * than serving reports to anyone. Outside production it allows through, so
- * `vercel dev` works with no setup.
- */
-export function authorizeAdminRead(options: {
-  supplied: string | undefined;
-  configured: string | undefined;
-  isProduction: boolean;
-}): AdminAuthResult {
-  const { supplied, configured, isProduction } = options;
-
-  if (!configured) {
-    return isProduction
-      ? { ok: false, status: 503, error: 'Reports admin key not configured' }
-      : { ok: true };
-  }
-  if (!supplied || !secretsMatch(supplied, configured)) {
-    return { ok: false, status: 401, error: 'Unauthorized' };
-  }
-  return { ok: true };
-}
+export { authorizeAdmin as authorizeAdminRead } from '../adminAuth';
+export type { AdminAuthResult } from '../adminAuth';
 
 /**
  * Event ids in public/events/ are kebab-case, e.g. "wwi-end". Mostly ASCII, but a

@@ -18,6 +18,7 @@ import { GameMilestone } from '../utils/statsStorage';
 import { useGameStatsRecorder } from './useGameStatsRecorder';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { getThemeOutcome } from '../utils/themeOutcome';
 import {
   sortByYear,
   initializePlayers,
@@ -25,7 +26,8 @@ import {
   getNextActivePlayerIndex,
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
-import { getRecentDailyCardNames } from '../utils/dailyRecency';
+import { buildDailyDeck } from '../utils/dailyConfig';
+import { areCuratedThemesLoaded, loadCuratedThemes } from '../utils/curatedThemes';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -95,6 +97,11 @@ interface PendingPopupState {
 }
 
 function useSaveDailyResult(state: WhenGameState) {
+  // Derived out here rather than inside the effect so the dependency list can stay a list of
+  // the state fields the effect actually reads. Passing `state` wholesale would make the
+  // effect depend on every field of it.
+  const cleared = getThemeOutcome(state).survived;
+
   useEffect(() => {
     if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
       const dailySeed = state.lastConfig.dailySeed;
@@ -104,6 +111,7 @@ function useSaveDailyResult(state: WhenGameState) {
         date: dailySeed,
         theme: getThemeDisplayName(theme),
         won: state.winners.length > 0,
+        cleared,
         correctCount: state.placementHistory.filter((p) => p).length,
         totalAttempts: state.placementHistory.length,
         emojiGrid: generateEmojiGrid(state.placementHistory),
@@ -111,6 +119,7 @@ function useSaveDailyResult(state: WhenGameState) {
       });
     }
   }, [
+    cleared,
     state.phase,
     state.gameMode,
     state.lastConfig,
@@ -120,12 +129,44 @@ function useSaveDailyResult(state: WhenGameState) {
   ]);
 }
 
+/**
+ * The deck a config should be dealt from, in dealing order (index 0 is the starting timeline
+ * card).
+ *
+ * The daily goes through `buildDailyDeck` rather than re-deriving a pool from the config's
+ * filters. Those were parallel implementations of the same thing, which
+ * docs/gameplay-feel warns against: when they drift, the /daily preview card silently stops
+ * matching the deck actually dealt. For a curated theme it is not drift but a straight
+ * break — the theme's pool is an explicit event list no category filter can express, so the
+ * filter chain would hand back the whole catalogue.
+ *
+ * Custom and challenge games keep the filter chain; they have no date to key a pool on.
+ */
+function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
+  const { mode, dailySeed, selectedDifficulties, selectedCategories, selectedEras } = config;
+
+  if (mode === 'daily' && dailySeed) return buildDailyDeck(allEvents, dailySeed);
+
+  const filtered = filterByEra(
+    filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
+    selectedEras
+  );
+  return buildRampedDeck(filtered, config.challengeSeed, { allEvents });
+}
+
 export function useWhenGame(): UseWhenGameReturn {
-  // On a warm events cache (e.g. remount after visiting /stats or /achievements), start
-  // straight in modeSelect with the catalogue already in hand — no loading-screen flash.
-  // Cold first load still falls through to 'loading' and the effect below.
+  // On a warm cache (e.g. remount after visiting /stats or /achievements), start straight in
+  // modeSelect with the catalogue already in hand — no loading-screen flash. Cold first load
+  // still falls through to 'loading' and the effect below.
+  //
+  // The theme calendar has to be warm too, not just the events. Mode select computes today's
+  // theme name and preview card synchronously on its first render, so shortcutting past a
+  // cold calendar would show a category theme on a curated day and then swap it underneath
+  // the player.
   const [state, setState] = useState<WhenGameState>(() =>
-    (getCachedEvents()?.length ?? 0) > 0 ? { ...initialState, phase: 'modeSelect' } : initialState
+    (getCachedEvents()?.length ?? 0) > 0 && areCuratedThemesLoaded()
+      ? { ...initialState, phase: 'modeSelect' }
+      : initialState
   );
   const [allEvents, setAllEvents] = useState<HistoricalEvent[]>(() => getCachedEvents() ?? []);
   const [modalEvent, setModalEvent] = useState<HistoricalEvent | null>(null);
@@ -134,9 +175,11 @@ export function useWhenGame(): UseWhenGameReturn {
     pendingStateUpdate: null,
   });
 
-  // Load events on mount and go to mode select
+  // Load events and the theme calendar on mount, then go to mode select. Both are needed
+  // before any puzzle can be decided; loadCuratedThemes never rejects, so a calendar outage
+  // just means no curated day rather than a stuck loading screen.
   useEffect(() => {
-    loadAllEvents().then((events) => {
+    Promise.all([loadAllEvents(), loadCuratedThemes()]).then(([events]) => {
       setAllEvents(events);
       setState((prev) => ({ ...prev, phase: 'modeSelect' }));
     });
@@ -151,9 +194,6 @@ export function useWhenGame(): UseWhenGameReturn {
     (config: GameConfig) => {
       const {
         mode,
-        selectedDifficulties,
-        selectedCategories,
-        selectedEras,
         dailySeed,
         playerCount = 1,
         playerNames = [],
@@ -161,30 +201,25 @@ export function useWhenGame(): UseWhenGameReturn {
         suddenDeathHandSize = 5,
       } = config;
 
-      // Apply filters to get available events
-      let filteredEvents = filterByDifficulty(allEvents, selectedDifficulties);
-      filteredEvents = filterByCategory(filteredEvents, selectedCategories);
-      filteredEvents = filterByEra(filteredEvents, selectedEras);
-
       // Use suddenDeathHandSize for sudden death mode, cardsPerHand otherwise
       const effectiveHandSize = mode === 'suddenDeath' ? suddenDeathHandSize : cardsPerHand;
 
-      // Calculate minimum required cards
-      const minRequired = playerCount * effectiveHandSize + 1 + playerCount * 2;
+      const isDaily = mode === 'daily' && Boolean(dailySeed);
+      const shuffled = composeDeck(config, allEvents);
 
-      if (filteredEvents.length < minRequired) {
-        console.error('Not enough events to start the game');
+      // Checked against the composed deck, not the pre-filter pool: a curated theme's pool is
+      // a couple of dozen cards while the unfiltered catalogue is thousands, so testing the
+      // wrong one would wave through a deck too short to deal.
+      const minRequired = playerCount * effectiveHandSize + 1 + playerCount * 2;
+      if (shuffled.length < minRequired) {
+        // Loud, because the old quiet return left the player tapping Play on a screen that
+        // never changed, with nothing to explain it.
+        console.error(
+          `Not enough events to start the game: deck has ${shuffled.length}, need ${minRequired}` +
+            (isDaily ? ` (daily ${dailySeed})` : '')
+        );
         return;
       }
-
-      // Compose the deck so it opens with a foothold and ramps. Daily also enforces
-      // the seven-day no-repeat guarantee; other modes have no date chain to walk.
-      const isDaily = mode === 'daily' && Boolean(dailySeed);
-      const deckSeed = isDaily ? dailySeed : config.challengeSeed;
-      const shuffled = buildRampedDeck(filteredEvents, deckSeed, {
-        allEvents,
-        exclude: isDaily && dailySeed ? getRecentDailyCardNames(allEvents, dailySeed) : undefined,
-      });
 
       // Pick 1 event for the starting timeline
       const timelineEvents = sortByYear([shuffled[0]]);

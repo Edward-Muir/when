@@ -56,11 +56,15 @@ const DailyDeckPreview: React.FC<DailyDeckPreviewProps> = ({
         )}
       </div>
 
-      {/* Challenge / theme band */}
-      <div className="bg-surface px-4 py-2.5 border-t border-border text-xs font-body font-semibold uppercase tracking-[0.15em]">
-        <span className="text-text-muted">· Today&apos;s Challenge · </span>
-        <span className="text-accent">{themeName}</span>
-        <span className="text-text-muted"> ·</span>
+      {/* Challenge / theme band.
+
+          The label and the name are separate lines rather than one run of text. Together
+          they exceed the card's width once the name is long — a curated theme can be 20
+          characters against "Architecture"'s 12 — and wrapping mid-phrase stole height from
+          the image above. Splitting them means a long name has the full width to itself. */}
+      <div className="bg-surface px-4 py-2.5 border-t border-border text-xs font-body font-semibold uppercase tracking-[0.15em] text-center">
+        <span className="text-text-muted">· Today&apos;s Challenge ·</span>
+        <span className="block text-accent">{themeName}</span>
       </div>
 
       {/* Primary CTA */}

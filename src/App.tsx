@@ -10,6 +10,7 @@ import { useImagePrefetch } from './hooks/useImagePrefetch';
 import { pickIntroEvents } from './utils/introEvents';
 import { GameConfig } from './types';
 import { buildDailyConfig, buildDailyDeck } from './utils/dailyConfig';
+import { getDailyTheme } from './utils/dailyTheme';
 import { getLocalDateString } from './utils/puzzleDate';
 import { hasPlayedToday } from './utils/playerStorage';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
@@ -23,7 +24,10 @@ import GameStartTransition from './components/GameStartTransition';
 // there is no turn cap — a strong run can consume far more than 15 cards. 15 covers the
 // opening (seed + 5-card hand) plus a typical run's early draws, which is the window where
 // a spoiler would actually be noticed.
-const DAILY_SPOILER_DEPTH = 15;
+//
+// Exported so src/utils/introSpoilerGuard.test.ts measures the real guard instead of a
+// hand-copied mirror of this number.
+export const DAILY_SPOILER_DEPTH = 15;
 
 interface AppProps {
   autoStartDaily?: boolean;
@@ -148,15 +152,18 @@ function App({
   // collision used to be a ~1-in-20 fluke for one player, but a deterministic intro would
   // spoil the same leaderboard-scored puzzle for everyone, on every replay. Excluding after
   // the pool is drawn means replacements come from the same pool, so the budget is untouched.
-  const dailyDeckNames = useMemo(
-    () =>
-      new Set(
-        buildDailyDeck(allEvents, introDate)
-          .slice(0, DAILY_SPOILER_DEPTH)
-          .map((e) => e.name)
-      ),
-    [allEvents, introDate]
-  );
+  //
+  // A curated day is excluded in full rather than to the usual depth. The budget assumes a
+  // deck thousands deep, where 15 cards is the slice a player could plausibly reach; a
+  // curated theme is a couple of dozen cards total, so a fixed depth would leave most of the
+  // day's deck showing in the intro. Excluding all of it is safe — the intro pool is drawn
+  // from the whole catalogue, so a theme this size barely dents it.
+  const dailyDeckNames = useMemo(() => {
+    const deck = buildDailyDeck(allEvents, introDate);
+    const theme = getDailyTheme(introDate);
+    const depth = theme.type === 'curated' ? deck.length : DAILY_SPOILER_DEPTH;
+    return new Set(deck.slice(0, depth).map((e) => e.name));
+  }, [allEvents, introDate]);
 
   const introEvents = useMemo(
     () =>

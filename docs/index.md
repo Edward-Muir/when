@@ -46,6 +46,9 @@ original per-session write-ups if you need the blow-by-blow.
   dedup) and the game-wide duplicate audit
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
+- [curated-themes/](curated-themes/index.md) — hand-authored daily themes: where the calendar
+  lives, how to publish one, the date rule that lets you schedule tomorrow, and the two
+  deck-builder escape hatches thin pools need
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
   end-to-end from a script, including the drag-and-drop recipe
 - [events-images/event-editor-tool.md](events-images/event-editor-tool.md) — the standalone

@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { COUNTS_KEY, LOG_KEY, authorizeAdminRead } from './reportSchema';
+import { COUNTS_KEY, LOG_KEY, authorizeAdminRead } from '../../lib/card-reports/reportSchema';
 
 const redis = Redis.fromEnv();
 

@@ -1,5 +1,16 @@
+/**
+ * Bot leaderboard entries.
+ *
+ * Not a route (no default export). Lives in lib/ rather than api/ because Vercel turns every
+ * .ts file under api/ into its own Serverless Function and the Hobby plan caps a deployment at
+ * 12 — helper files there burn the budget for nothing, while the bundler still follows imports
+ * into lib/ perfectly well. src/utils/apiRoutes.test.ts fails if a non-route lands back under
+ * api/.
+ */
+
 import { Redis } from '@upstash/redis';
 import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
+import { CALENDAR_KEY, ThemeCalendar } from '../themes/schema';
 
 // Bot configuration
 const BOT_COUNT_BASE = 10;
@@ -124,6 +135,34 @@ function generateBotName(random: () => number): string {
  * request would visibly flicker, and the write path (submit) and the read path
  * ([date]) have to agree on what a given player is called.
  */
+/** Flat ceiling on a bot's correct count on an ordinary (thousands-of-cards) day. */
+const BOT_MAX_CORRECT = 20;
+
+/**
+ * The most correct placements a human could manage on `date`.
+ *
+ * A curated day's deck is the theme's event list, so the ceiling is one below its size (the
+ * first card seeds the timeline rather than being placed). Everything else is effectively
+ * unbounded.
+ *
+ * Reading the stored calendar is NOT the pattern submit.ts forbids. What broke there was the
+ * API keeping its own copy of ALL_CATEGORIES and the RNG so it could re-derive the theme and
+ * reject clients that disagreed; the copy drifted and started rejecting a quarter of all
+ * dates. This reads a count out of the one authoritative record, so there is nothing to
+ * drift against. It also fails open — an unreadable calendar just restores the flat ceiling.
+ */
+async function maxCorrectForDate(redis: Redis, date: string): Promise<number> {
+  try {
+    const calendar = await redis.get<ThemeCalendar>(CALENDAR_KEY);
+    const theme = calendar?.themes?.find((t) => t.dates?.includes(date));
+    if (!theme) return BOT_MAX_CORRECT;
+    return Math.max(0, Math.min(BOT_MAX_CORRECT, theme.eventNames.length - 1));
+  } catch (error) {
+    console.error('Failed to read theme calendar for bot ceiling', error);
+    return BOT_MAX_CORRECT;
+  }
+}
+
 export function generateNameFromSeed(seed: string): string {
   return generateBotName(seededRandom(stringToSeed(seed)));
 }
@@ -186,7 +225,10 @@ interface BotEntry {
  * worldwide sees the identical set for a given date regardless of when they first fetch it.
  * Exported for tests.
  */
-export function generateBotsForDate(date: string): BotEntry[] {
+export function generateBotsForDate(
+  date: string,
+  maxCorrect: number = BOT_MAX_CORRECT
+): BotEntry[] {
   // Create date-seeded random generator
   const baseSeed = stringToSeed(`bots-${date}`);
   const random = seededRandom(baseSeed);
@@ -202,9 +244,12 @@ export function generateBotsForDate(date: string): BotEntry[] {
     const botSeed = stringToSeed(`bot-${date}-${i}`);
     const botRandom = seededRandom(botSeed);
 
-    // Generate correctCount using Poisson distribution (mean 6)
-    // Clamp to 0-20 range (reasonable for game)
-    const correctCount = Math.min(20, Math.max(0, samplePoisson(POISSON_MEAN, botRandom)));
+    // Generate correctCount using Poisson distribution (mean 6), clamped to a plausible
+    // range. `maxCorrect` is the day's real ceiling: on a curated theme the deck is only a
+    // couple of dozen cards, so a human cannot place more than pool-1 and an unclamped bot
+    // could out-score every player on the board. On an ordinary day the deck is thousands
+    // deep and this is just the flat BOT_MAX_CORRECT.
+    const correctCount = Math.min(maxCorrect, Math.max(0, samplePoisson(POISSON_MEAN, botRandom)));
 
     // Mistakes. INERT: nothing ranks or renders these any more. The score below is correct
     // count alone, `[date].ts` sends neither `totalAttempts` nor `emojiGrid` to the client,
@@ -285,7 +330,7 @@ export async function ensureBotsExist(redis: Redis, date: string): Promise<boole
 
   try {
     // Generate and insert bots
-    const bots = generateBotsForDate(date);
+    const bots = generateBotsForDate(date, await maxCorrectForDate(redis, date));
 
     // Add all bots to the sorted set
     for (const bot of bots) {

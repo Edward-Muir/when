@@ -23,6 +23,7 @@ import DailyDeckPreview from './DailyDeckPreview';
 import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { loadCuratedThemes } from '../utils/curatedThemes';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import {
   getTodayResult,
@@ -213,7 +214,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // app resume, tab visibility and a re-arming local-midnight timer. Always refetch the
   // leaderboard on each trigger, even when the date hasn't rolled over — other players'
   // submissions need to land without a full reload.
-  const today = useToday((date) => refreshBoardRef.current(date));
+  //
+  // The theme calendar is refetched on the same triggers, and for the same reason a session
+  // left open across midnight needs it: a client that booted yesterday holds yesterday's
+  // calendar, so without this it would miss a theme scheduled for the day it just rolled into.
+  const today = useToday((date) => {
+    refreshBoardRef.current(date);
+    void loadCuratedThemes({ force: true });
+  });
 
   // `todayResult` is what makes the score claimable here: the game-over popup is the only other
   // place to submit, and it is gone for good once dismissed, so a submission that failed there

@@ -3,6 +3,25 @@
 Local `vercel dev` troubleshooting, and the clustering work that produced the 20-category
 event taxonomy.
 
+## Vercel counts every file under `api/` as a Serverless Function (2026-08-19)
+
+There is no opt-out, and an underscore prefix does not exempt a file — Vercel's docs are
+explicit: _"every API maps directly to one Vercel Function… For Hobby, this approach is limited
+to 12."_
+
+Six shared helpers had accumulated under `api/` (`reportSchema`, `botGeneration`, `dateWindow`,
+`handSize`, `limits`, `nameFilter`), each deploying as a pointless function and quietly
+consuming half the budget. Adding two routes plus two helpers for curated themes took it to 14
+and the deployment died.
+
+**Shared helpers live in `lib/` now.** The bundler still follows imports into it; it just is not
+scanned for routes. `api/` holds only files with an `export default`.
+
+The nasty part is that this failure is invisible locally: `npm run build` passes, `CI=true npm
+run build` passes, `npm run typecheck:api` passes, and only the Vercel deploy fails. So the rule
+gets a test rather than a comment — `src/utils/apiRoutes.test.ts` asserts every file under
+`api/` has a default export and that the count stays under a constant set below the limit.
+
 ## `vercel dev` → `spawn EBADF` → every `/api/*` returns a 502 (RESOLVED 2026-06-22)
 
 Symptom: `vercel dev` prints `Error: spawn EBADF` once **per API request**, every `/api/*`

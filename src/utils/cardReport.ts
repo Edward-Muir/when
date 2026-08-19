@@ -7,7 +7,7 @@ import { APP_VERSION } from '../version';
  * so the same card can't be reported twice.
  *
  * The reason ids must stay in sync with REPORT_REASON_IDS in
- * api/card-reports/reportSchema.ts; cardReport.test.ts guards that.
+ * lib/card-reports/reportSchema.ts; cardReport.test.ts guards that.
  */
 
 export type ReportReasonId = 'wrong-year' | 'wrong-image' | 'bad-description' | 'other';

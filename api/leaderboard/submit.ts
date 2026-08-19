@@ -1,8 +1,11 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { safeDisplayName } from './nameFilter';
-import { isDateWithinSubmissionWindow, SUBMISSION_DEDUPE_TTL_SECONDS } from './dateWindow';
-import { DAILY_HAND_SIZE } from './handSize';
+import { safeDisplayName } from '../../lib/leaderboard/nameFilter';
+import {
+  isDateWithinSubmissionWindow,
+  SUBMISSION_DEDUPE_TTL_SECONDS,
+} from '../../lib/leaderboard/dateWindow';
+import { DAILY_HAND_SIZE } from '../../lib/leaderboard/handSize';
 
 const redis = Redis.fromEnv();
 
@@ -66,12 +69,15 @@ function validateEmojiGrid(
   const greenCount = (body.emojiGrid.match(/🟩/g) || []).length;
   const redCount = (body.emojiGrid.match(/🟥/g) || []).length;
 
-  // A finished daily has exactly DAILY_HAND_SIZE mistakes — the hand empties one card per
-  // wrong placement. This stays a range rather than an equality check because a correct
+  // A daily usually ends on exactly DAILY_HAND_SIZE mistakes — the hand empties one card per
+  // wrong placement. It stays a range rather than an equality check because a correct
   // placement only redraws if the deck still has a card (src/utils/placementLogic.ts), so
-  // exhausting the day's themed pool would shrink the hand without a mistake and end the game
-  // early. That needs ~100 correct placements against a realistic best of ~30, but rejecting a
-  // legitimate run is worse than accepting a short one.
+  // exhausting the day's pool shrinks the hand without a mistake and ends the game early.
+  //
+  // That used to be theoretical (it needed ~100 correct placements against a realistic best
+  // of ~30). It is now routine: a curated theme is a couple of dozen cards, so every player
+  // who gets through one submits a short grid. DO NOT tighten this to an equality — it would
+  // reject every cleared run.
   if (redCount < 0 || redCount > DAILY_HAND_SIZE) return null;
   if (body.totalAttempts !== body.correctCount + redCount) return null;
   if (greenCount + redCount !== body.totalAttempts) return null;

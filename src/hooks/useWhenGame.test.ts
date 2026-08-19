@@ -15,6 +15,18 @@ jest.mock('../utils/eventLoader', () => {
   };
 });
 
+// Same reasoning as above: the theme calendar is a network call, and these tests are about
+// sudden death, which never consults it. Left real, the unresolvable fetch would keep the hook
+// in `loading` past the single microtask flush setupGame does.
+jest.mock('../utils/curatedThemes', () => {
+  const actual = jest.requireActual('../utils/curatedThemes');
+  return {
+    ...actual,
+    loadCuratedThemes: jest.fn().mockResolvedValue(undefined),
+    areCuratedThemesLoaded: jest.fn().mockReturnValue(true),
+  };
+});
+
 // Mock playerStorage to prevent auto-starting daily mode in tests
 jest.mock('../utils/playerStorage', () => ({
   saveDailyResult: jest.fn(),

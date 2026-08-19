@@ -2,6 +2,7 @@ import { WhenGameState } from '../types';
 import { DailyResult } from './playerStorage';
 import { getDailyTheme, getThemeDisplayName } from './dailyTheme';
 import { generateEmojiGrid } from './share';
+import { getThemeOutcome } from './themeOutcome';
 
 /**
  * The finished daily, in the shape the leaderboard API and the share both want.
@@ -22,6 +23,7 @@ export function buildDailyResult(state: WhenGameState): DailyResult | null {
     date: lastConfig.dailySeed,
     theme: getThemeDisplayName(getDailyTheme(lastConfig.dailySeed)),
     won: winners.length > 0,
+    cleared: getThemeOutcome(state).survived,
     correctCount: placementHistory.filter(Boolean).length,
     totalAttempts: placementHistory.length,
     emojiGrid: generateEmojiGrid(placementHistory),

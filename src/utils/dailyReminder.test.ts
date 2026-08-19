@@ -43,27 +43,26 @@ describe('getNext8amDates', () => {
 });
 
 describe('getReminderCopy', () => {
-  it('themes the body from the local date at the fire instant', () => {
-    const fireAt = new Date(2026, 6, 9, 8, 0);
-    const expectedTheme = getThemeDisplayName(getDailyTheme(getLocalDateString(fireAt)));
-    const { title, body } = getReminderCopy(fireAt);
+  it('says something', () => {
+    const { title, body } = getReminderCopy(new Date(2026, 6, 9, 8, 0));
     expect(title.length).toBeGreaterThan(0);
-    expect(body).toContain(expectedTheme);
+    expect(body.length).toBeGreaterThan(0);
   });
 
-  it('names the puzzle the player will actually be handed, not the UTC one', () => {
-    // An 8am reminder east of UTC fires when UTC is already on the next date (and west of
-    // UTC, an evening instant is too). The copy must follow the local date the deck is
-    // seeded from — this used to deliberately announce the UTC date's theme, so a UTC+10
-    // player was told tomorrow's theme every morning.
-    const fireAt = new Date(2026, 6, 9, 20, 0); // 8pm local == Jul 10 in UTC
-    expect(fireAt.toISOString().split('T')[0]).toBe('2026-07-10');
-    expect(getLocalDateString(fireAt)).toBe('2026-07-09');
-
-    const localTheme = getThemeDisplayName(getDailyTheme('2026-07-09'));
-    const utcTheme = getThemeDisplayName(getDailyTheme('2026-07-10'));
-    expect(localTheme).not.toBe(utcTheme); // guards the assertion below from being vacuous
-    expect(getReminderCopy(fireAt).body).toContain(localTheme);
+  /**
+   * The copy used to name the day's theme, and two tests here checked it named the LOCAL
+   * date's theme rather than the UTC one. It no longer names a theme at all.
+   *
+   * These notifications are scheduled up to REMINDER_WINDOW_DAYS ahead and the OS keeps the
+   * text as written, so any theme name in the body is a promise about a date that may not
+   * have been decided yet. Curated themes can be published as late as the day before, which
+   * would leave a queued notification announcing the theme the date used to have. Generic
+   * copy is what buys that scheduling freedom, so this asserts the coupling stays gone.
+   */
+  it('does not name a theme, so a late-published theme cannot contradict it', () => {
+    const fireAt = new Date(2026, 6, 9, 8, 0);
+    const themeName = getThemeDisplayName(getDailyTheme(getLocalDateString(fireAt)));
+    expect(getReminderCopy(fireAt).body).not.toContain(themeName);
   });
 
   it('is deterministic for a given fire time', () => {
