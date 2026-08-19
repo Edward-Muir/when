@@ -1,12 +1,19 @@
 import { act, renderHook, waitFor } from '@testing-library/react';
 import { useDailyLeaderboard } from './useDailyLeaderboard';
 import { DailyResult } from '../utils/playerStorage';
+import { getLocalDateString } from '../utils/puzzleDate';
 
 jest.mock('../utils/deviceFingerprint', () => ({
   getDeviceFingerprint: () => Promise.resolve('test-device'),
 }));
 
 const SUBMITTED_KEY = 'when-leaderboard-submitted';
+
+// playerStorage stamps the submitted-marker with today's *local* date, so the two expectations
+// that read it have to move with the clock. RESULT.date below is only ever a board key, which is
+// why it can stay a literal. The literal that used to be here passed for one evening: the suite
+// landed at 23:46 Pacific on 2026-08-15 and failed every run after midnight.
+const TODAY = getLocalDateString();
 
 const RESULT: DailyResult = {
   date: '2026-08-15',
@@ -48,7 +55,7 @@ describe('useDailyLeaderboard', () => {
     renderHook(() => useDailyLeaderboard(RESULT));
 
     // Writing it back is what stops the submit form flashing on the next game-over popup.
-    await waitFor(() => expect(localStorage.getItem(SUBMITTED_KEY)).toBe('2026-08-15'));
+    await waitFor(() => expect(localStorage.getItem(SUBMITTED_KEY)).toBe(TODAY));
   });
 
   it('is not submitted when the player has no rank on the board', async () => {
@@ -63,7 +70,7 @@ describe('useDailyLeaderboard', () => {
 
   it('trusts the local record before the board answers', async () => {
     // Seeded synchronously so a returning player never sees the form flash.
-    localStorage.setItem(SUBMITTED_KEY, '2026-08-15');
+    localStorage.setItem(SUBMITTED_KEY, TODAY);
     mockBoard({ playerRank: null, playerEntry: null });
 
     const { result } = renderHook(() => useDailyLeaderboard(RESULT));
