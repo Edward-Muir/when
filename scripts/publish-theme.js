@@ -128,6 +128,19 @@ function mergeCalendar(calendar, theme, removeId) {
 
 async function main() {
   const mode = (process.env.THEME_MODE || 'validate').trim();
+
+  // Checked up front because the alternative is a doomed request and a bare "Unauthorized",
+  // which cannot be told apart from a wrong key. An empty value here almost always means the
+  // GitHub secret is missing or misnamed rather than incorrect.
+  if (!process.env.THEMES_ADMIN_KEY) {
+    fail(
+      'THEMES_ADMIN_KEY is empty.\n' +
+        '   In CI: check the repository secret of that exact name exists at repository scope\n' +
+        '   (Settings > Secrets and variables > Actions). Environment-scoped secrets are not\n' +
+        '   injected unless the job declares that environment.\n' +
+        '   Locally: export it before running.'
+    );
+  }
   const force = String(process.env.THEME_FORCE).trim() === 'true';
   const removeId = (process.env.THEME_REMOVE || '').trim();
 
