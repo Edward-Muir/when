@@ -23,6 +23,40 @@ let byDate = new Map<string, CuratedTheme>();
 let loaded = false;
 let inflight: Promise<void> | null = null;
 
+/**
+ * The calendar is also a tiny store, because every read of it is synchronous while the fetch
+ * that fills it is not. Populating the Map on its own tells React nothing, so a component
+ * that computed a theme name before the fetch landed would hold the seeded fallback for the
+ * lifetime of the session. `revision` is the change signal; see `useCuratedThemes`.
+ *
+ * It is a plain counter and not the data on purpose: `useSyncExternalStore` compares
+ * snapshots with `Object.is`, and `getDailyTheme` allocates a fresh object per call, so
+ * returning one would re-render forever.
+ */
+let revision = 0;
+/** The document `version` currently indexed. -1 until the first successful load. */
+let appliedVersion = -1;
+const listeners = new Set<() => void>();
+
+function bumpRevision(): void {
+  revision += 1;
+  // Iterate a copy: React unsubscribes from inside its own listener on unmount.
+  for (const listener of [...listeners]) listener();
+}
+
+/** Subscribe to calendar changes. Returns the unsubscribe. */
+export function subscribeCuratedThemes(listener: () => void): () => void {
+  listeners.add(listener);
+  return () => {
+    listeners.delete(listener);
+  };
+}
+
+/** The current change signal. Bumped once per calendar change, never per read. */
+export function getCuratedThemesRevision(): number {
+  return revision;
+}
+
 function indexCalendar(calendar: ThemeCalendar): Map<string, CuratedTheme> {
   const index = new Map<string, CuratedTheme>();
   for (const theme of calendar.themes ?? []) {
@@ -49,8 +83,17 @@ export async function loadCuratedThemes(options: { force?: boolean } = {}): Prom
     try {
       const response = await fetch(CALENDAR_URL);
       if (!response.ok) throw new Error(`themes ${response.status}`);
-      byDate = indexCalendar((await response.json()) as ThemeCalendar);
+      const calendar = (await response.json()) as ThemeCalendar;
+      // `{ force: true }` runs on every resume and every visibility change, not just at
+      // midnight — see ModeSelect's `useToday` callback. Publishing a revision each time
+      // would re-render mode select and re-walk the recency chain for an identical answer,
+      // so gate it on the document's own version, which `api/themes/publish.ts` increments
+      // on every write. An unchanged refetch then costs nothing.
+      const changed = !loaded || calendar.version !== appliedVersion;
+      byDate = indexCalendar(calendar);
+      appliedVersion = calendar.version;
       loaded = true;
+      if (changed) bumpRevision();
     } catch (error) {
       console.warn('Failed to load curated themes; today falls back to a category theme', error);
     } finally {
@@ -81,4 +124,9 @@ export function areCuratedThemesLoaded(): boolean {
 export function __setCuratedThemesForTest(themes: CuratedTheme[] | null): void {
   byDate = themes ? indexCalendar({ version: 0, themes }) : new Map();
   loaded = themes !== null;
+  // Unconditional, unlike the fetch path: tests set and clear the same fixture repeatedly and
+  // every one of those is a real change to what the synchronous readers see. Resetting
+  // `appliedVersion` keeps the next real load publishing whatever version it carries.
+  appliedVersion = -1;
+  bumpRevision();
 }
