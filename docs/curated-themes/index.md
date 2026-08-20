@@ -101,6 +101,33 @@ excludes cards nobody saw and fails to exclude cards everybody saw, which `daily
 header calls measurably worse than having no recency at all. `curatedThemes.test.ts` deals a
 curated day and asserts every card it dealt is in the next day's exclusion set.
 
+## The calendar is a store, not just a cache
+
+The read stays synchronous — that is non-negotiable, and the reason the module exists. But
+filling the Map tells React nothing, so anything that _derived_ a value from it before the fetch
+landed keeps that value forever. That shipped: mode select computed the "Today's Challenge" name
+on its first render, which `App` performs during the `loading` phase (constant key, so the flip
+to `modeSelect` is a re-render, not a remount), and its `[today]` dependency does not change
+again until midnight. A curated day showed the seeded fallback category all day. It hid for a
+while because the label reads the **stored result** once the player has played, so it looked
+right to anyone who had already played and wrong to everyone who had not.
+
+So the module also publishes a `revision`, consumed through `useSyncExternalStore` by the hooks
+in `src/hooks/useCuratedThemes.ts`. Three rules:
+
+- **The snapshot must stay a cached primitive.** `getDailyTheme` allocates a fresh object per
+  call, so returning one would never be `Object.is`-equal and React would re-render forever.
+- **The bump is gated on the calendar's own `version` field.** `loadCuratedThemes({ force: true })`
+  runs on every resume and visibility change, not just at midnight, so an unchanged document has
+  to cost nothing. `api/themes/publish.ts` increments `version` on every write.
+- **Derived values need the revision in their deps**, not `allEvents`. Leaning on the events
+  array changing identity works only on the cold-boot path — `loadAllEvents` returns the cached
+  array by reference, so a warm catalogue with a cold calendar never re-runs.
+
+`ModeSelect.test.tsx` pins this by rendering while the calendar fetch is still pending and
+resolving it afterwards. Mounting with the calendar already resolved passes against the broken
+code and proves nothing.
+
 ## The curated lookup must come before the RNG
 
 `getDailyTheme` checks the calendar and returns early _before_ touching `seededRandom`. Every
