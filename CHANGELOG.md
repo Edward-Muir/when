@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.13.0](https://github.com/Edward-Muir/when/compare/v1.12.2...v1.13.0) (2026-08-20)
+
+
+### Features
+
+* add 14 Indonesian history events for a 36-card curated theme ([#49](https://github.com/Edward-Muir/when/issues/49)) ([7ef32be](https://github.com/Edward-Muir/when/commit/7ef32be84d1a842ed694919c05941fdb9636ea6f))
+
 ## [1.12.2](https://github.com/Edward-Muir/when/compare/v1.12.1...v1.12.2) (2026-08-20)
 
 
