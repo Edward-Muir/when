@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.12.1](https://github.com/Edward-Muir/when/compare/v1.12.0...v1.12.1) (2026-08-20)
+
+
+### Bug Fixes
+
+* show the curated theme name on the day it runs ([#46](https://github.com/Edward-Muir/when/issues/46)) ([6a29a8a](https://github.com/Edward-Muir/when/commit/6a29a8a878b4552f39cfa310113038e532a88502))
+
 ## [1.12.0](https://github.com/Edward-Muir/when/compare/v1.11.2...v1.12.0) (2026-08-19)
 
 

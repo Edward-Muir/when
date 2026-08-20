@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Aug 2026 20:54:51 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 05:36:37 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.12.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.12.1</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>show the curated theme name on the day it runs (<a href="https://github.com/Edward-Muir/when/issues/46">#46</a>) (<a href="https://github.com/Edward-Muir/when/commit/6a29a8a878b4552f39cfa310113038e532a88502">6a29a8a</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.12.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.7.3</guid>
       <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>block spoonerised slurs in leaderboard display names (<a href="https://github.com/Edward-Muir/when/issues/35">#35</a>) (<a href="https://github.com/Edward-Muir/when/commit/fd876415683450667cb421183607a21fc2f32e34">fd87641</a>), closes <a href="https://github.com/Edward-Muir/when/issues/1">#1</a></li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.7.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.7.2</guid>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>correct six player-reported event cards (<a href="https://github.com/Edward-Muir/when/issues/34">#34</a>) (<a href="https://github.com/Edward-Muir/when/commit/ef4c37a53ce98dfb297f47babf31210a7146966d">ef4c37a</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
