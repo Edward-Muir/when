@@ -43,7 +43,7 @@ original per-session write-ups if you need the blow-by-blow.
 - [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
   where the 20-category taxonomy came from
 - [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +
-  dedup) and the game-wide duplicate audit
+  dedup), its image pipeline, and the game-wide duplicate audit
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
 - [curated-themes/](curated-themes/index.md) — hand-authored daily themes: where the calendar
