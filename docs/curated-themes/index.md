@@ -148,6 +148,13 @@ Pick the theme on its merits, then find out what is missing:
 3. Author whatever is missing per the `add-events` skill.
 4. Dispatch the Action in `validate`, read the report, then `publish`.
 
+A worked example, including the two traps that only show up on a real theme:
+[indonesia-theme.md](indonesia-theme.md). `theme:gap` filters to _playable_ events, so it cannot
+see slugs you just authored — project the band/spread over `playable + pending` or the numbers
+will describe a theme half its size. And `MIN_BAND_ZERO` is the constraint that actually bites: a
+regional theme rarely holds five globally-easy cards, and no `medium` label reaches band 0, so the
+footholds have to be found rather than graded into existence.
+
 **The real gate is images, not events.** `loadAllEvents` hides any event without Cloudinary
 art, so an unillustrated event can never be dealt. 325 events currently sit in that state and
 **324 of them are `sports`** — the curation in `sports-events/` was done and the images never

@@ -8649,5 +8649,77 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
+  },
+  {
+    "name": "airlangga-unites-java",
+    "friendly_name": "Airlangga Reunites East Java",
+    "year": 1019,
+    "category": "empires",
+    "description": "Prince Airlangga rebuilt the Javanese kingdom of Kahuripan after the Medang court was destroyed.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "demak-sultanate-founded",
+    "friendly_name": "Demak Sultanate Founded",
+    "year": 1478,
+    "category": "empires",
+    "description": "Java's first Islamic state rose as Majapahit collapsed, spreading Islam along the north coast.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "java-war-diponegoro",
+    "friendly_name": "Java War Begins",
+    "year": 1825,
+    "category": "warfare",
+    "description": "Prince Diponegoro led a five-year revolt against Dutch rule that killed some 200,000 Javanese.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "budi-utomo-founded",
+    "friendly_name": "Budi Utomo Founded",
+    "year": 1908,
+    "category": "revolution",
+    "description": "Javanese students formed the first modern nationalist society, marking Indonesia's awakening.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "sumpah-pemuda-youth-pledge",
+    "friendly_name": "The Youth Pledge",
+    "year": 1928,
+    "category": "revolution",
+    "description": "Indonesian delegates in Batavia declared one homeland, one nation and one language.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "japanese-occupation-indies",
+    "friendly_name": "Japan Occupies the Indies",
+    "year": 1942,
+    "category": "warfare",
+    "description": "Japanese forces seized the Dutch East Indies, ending three centuries of Dutch colonial rule.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "suharto-new-order",
+    "friendly_name": "Suharto's New Order Begins",
+    "year": 1967,
+    "category": "empires",
+    "description": "Suharto replaced Sukarno as president, beginning three decades of authoritarian rule.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "indonesia-invades-east-timor",
+    "friendly_name": "Indonesia Invades East Timor",
+    "year": 1975,
+    "category": "warfare",
+    "description": "Indonesian troops seized the former Portuguese colony days after it declared independence.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "fall-of-suharto",
+    "friendly_name": "Fall of Suharto",
+    "year": 1998,
+    "category": "revolution",
+    "description": "Economic collapse and mass protests forced Suharto to resign after 31 years, starting Reformasi.",
+    "difficulty": "medium"
   }
 ]
