@@ -22,10 +22,9 @@ import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
 import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
-import { getThemeDisplayName } from '../utils/dailyTheme';
+import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { loadCuratedThemes } from '../utils/curatedThemes';
-import { useDailyPreviewEvent, useDailyTheme } from '../hooks/useCuratedThemes';
-import { buildDailyConfig } from '../utils/dailyConfig';
+import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import {
   getTodayResult,
   DailyResult,
@@ -336,12 +335,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     [allEvents, selectedDifficulties, selectedCategories, selectedEras]
   );
 
-  // Daily theme + preview - recomputed when the day rolls over AND when the theme calendar
-  // lands. The calendar half matters because App keeps this component mounted through the
-  // `loading` phase, so the first render happens before the fetch resolves.
-  const dailyTheme = useDailyTheme(today);
+  // Daily theme + preview - keyed on `today` so they recompute when the day rolls over.
+  const dailyTheme = useMemo(() => getDailyTheme(today), [today]);
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
-  const previewEvent = useDailyPreviewEvent(allEvents, today);
+  const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents, today), [allEvents, today]);
 
   const handleDailyStart = () => {
     onStart(buildDailyConfig());
