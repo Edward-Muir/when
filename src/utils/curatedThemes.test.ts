@@ -5,7 +5,13 @@ import { buildDailyPool, clearDailyPoolCache, getDailyBuildOptions } from './dai
 import { buildDailyDeck } from './dailyConfig';
 import { getRecentDailyCardNames, clearRecencyCache } from './dailyRecency';
 import { RAMP_WINDOW } from './deckBuilder';
-import { __setCuratedThemesForTest, CuratedTheme } from './curatedThemes';
+import {
+  __setCuratedThemesForTest,
+  CuratedTheme,
+  getCuratedThemesRevision,
+  loadCuratedThemes,
+  subscribeCuratedThemes,
+} from './curatedThemes';
 import { isCloudinaryImage } from './cloudinaryImage';
 import { ALL_CATEGORIES, HistoricalEvent } from '../types';
 
@@ -139,5 +145,91 @@ describe('the recency chain and the dealt deck agree on a curated day', () => {
         expect(recentAfterwards.has(name)).toBe(true);
       }
     });
+  });
+});
+
+/**
+ * The calendar is read synchronously but filled asynchronously, so it publishes a revision
+ * when its contents change. Without that signal a component that derived a value before the
+ * fetch landed keeps it forever — which is how a curated day showed the seeded fallback
+ * category on the home screen all day.
+ */
+describe('the calendar publishes changes', () => {
+  const okResponse = (calendar: unknown) =>
+    ({ ok: true, json: () => Promise.resolve(calendar) }) as unknown as Response;
+
+  afterEach(() => {
+    __setCuratedThemesForTest(null);
+  });
+
+  it('notifies on a first successful load', async () => {
+    const listener = jest.fn();
+    const unsubscribe = subscribeCuratedThemes(listener);
+    const before = getCuratedThemesRevision();
+
+    global.fetch = jest.fn().mockResolvedValue(okResponse({ version: 1, themes: [theme] }));
+    await loadCuratedThemes({ force: true });
+
+    expect(listener).toHaveBeenCalledTimes(1);
+    expect(getCuratedThemesRevision()).toBeGreaterThan(before);
+    unsubscribe();
+  });
+
+  /**
+   * The forced refetch fires on every resume and visibility change, not just at midnight, so
+   * an unchanged document has to be free — otherwise every tab focus re-renders mode select
+   * and re-walks the 28-day recency chain to reach an identical answer.
+   */
+  it('stays silent when a forced refetch carries the same version', async () => {
+    global.fetch = jest.fn().mockResolvedValue(okResponse({ version: 7, themes: [theme] }));
+    await loadCuratedThemes({ force: true });
+
+    const listener = jest.fn();
+    const unsubscribe = subscribeCuratedThemes(listener);
+    const settled = getCuratedThemesRevision();
+
+    await loadCuratedThemes({ force: true });
+
+    expect(listener).not.toHaveBeenCalled();
+    expect(getCuratedThemesRevision()).toBe(settled);
+    unsubscribe();
+  });
+
+  it('notifies when a forced refetch carries a new version', async () => {
+    global.fetch = jest.fn().mockResolvedValue(okResponse({ version: 7, themes: [] }));
+    await loadCuratedThemes({ force: true });
+
+    const listener = jest.fn();
+    const unsubscribe = subscribeCuratedThemes(listener);
+
+    global.fetch = jest.fn().mockResolvedValue(okResponse({ version: 8, themes: [theme] }));
+    await loadCuratedThemes({ force: true });
+
+    expect(listener).toHaveBeenCalledTimes(1);
+    expect(getDailyTheme(CURATED_DATE).type).toBe('curated');
+    unsubscribe();
+  });
+
+  it('says nothing when the fetch fails', async () => {
+    const listener = jest.fn();
+    const unsubscribe = subscribeCuratedThemes(listener);
+    const before = getCuratedThemesRevision();
+
+    global.fetch = jest.fn().mockRejectedValue(new Error('offline'));
+    await loadCuratedThemes({ force: true });
+
+    expect(listener).not.toHaveBeenCalled();
+    expect(getCuratedThemesRevision()).toBe(before);
+    unsubscribe();
+  });
+
+  it('stops delivering once unsubscribed', async () => {
+    const listener = jest.fn();
+    subscribeCuratedThemes(listener)();
+
+    global.fetch = jest.fn().mockResolvedValue(okResponse({ version: 3, themes: [theme] }));
+    await loadCuratedThemes({ force: true });
+
+    expect(listener).not.toHaveBeenCalled();
   });
 });
