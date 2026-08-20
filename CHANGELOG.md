@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.15.0](https://github.com/Edward-Muir/when/compare/v1.14.0...v1.15.0) (2026-08-20)
+
+
+### Features
+
+* Add sporting events ([fd15168](https://github.com/Edward-Muir/when/commit/fd15168088e0d6da0af884d0d20a7181d18db151))
+
 ## [1.14.0](https://github.com/Edward-Muir/when/compare/v1.13.0...v1.14.0) (2026-08-20)
 
 
