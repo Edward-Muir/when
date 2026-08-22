@@ -9945,6 +9945,19 @@
     "image_height": 440
   },
   {
+    "name": "pliny-natural-history",
+    "friendly_name": "Pliny's Natural History Published",
+    "year": 77,
+    "category": "writing",
+    "description": "Pliny the Elder published his encyclopedic Natural History, covering topics from astronomy to zoology in 37 books.",
+    "difficulty": "medium",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pliny-natural-history_ilcwym?_a=BAMAMikS0",
+    "color": "#2b1d1c",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
+  },
+  {
     "name": "roman-horse-breeding",
     "friendly_name": "Roman Horse Breeding",
     "year": 100,
@@ -13531,19 +13544,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ediacaran-period-begins_yvznrk?_a=BAMAMikS0"
-  },
-  {
-    "name": "cambrian-period-begins",
-    "friendly_name": "Cambrian Period Begins",
-    "year": -538800000,
-    "category": "nature",
-    "description": "The Cambrian Explosion saw a rapid diversification of animal life, producing most major modern groups.",
-    "difficulty": "easy",
-    "color": "#89baa8",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambrian-period-begins_schknb?_a=BAMAMikS0"
   },
   {
     "name": "first-fish",

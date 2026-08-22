@@ -36,6 +36,9 @@ brought to `main` — they are on the `dev` branch. To review the events added s
 
 ## Traps
 
+- **The clustering compares names, not meaning.** Two cards for one event under unrelated names
+  (`museum-alexandria-founded` vs `first-public-library`) never land in a cluster, so they were
+  never reviewed. The 492 clusters are a floor on the duplicates, not a ceiling.
 - **The delete-list is data with a shelf life.** Keepers are chosen on year, title and
   description; if someone rewrites a doomed event's text afterwards, the decision may no longer
   hold. Two keepers had to be reversed on re-land for exactly this reason. Re-check any doomed

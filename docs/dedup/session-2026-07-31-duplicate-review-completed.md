@@ -193,7 +193,9 @@ current copy, by the same criteria as above:
 | windmills | `windmill-european` (1180) | **`windmill-introduction`** (1185) | Year accuracy. `main` rewrote the loser to cite the earliest _certain_ European windmill, the Weedley post mill of 1185; 1180 was the vaguer claim.               |
 | Galen     | `galen-medical-advances`   | **`galen-medical-dominance`**      | Title clarity. "Galen Systematizes Anatomy" beats "Galen Medical Advances Compiled"; the description also gained the specifics (emperors' physician, dissection). |
 
-The other four stand. `noh-theater-emergence` keeps it on title clarity — "Noh Theater Emerges"
+Three more were reversed on a spot-check of the wider review (below).
+
+The other four of the six stand. `noh-theater-emergence` keeps it on title clarity — "Noh Theater Emerges"
 reads faster for a general player than "Noh Wins the Shogun's Favor", and the descriptions carry
 the same facts. `ulugh-beg-observatory` keeps the more specific description (40-metre sextant,
 1,000+ stars). `hypatia-alexandria` and `first-ancient-olympics` were unaffected — the edits there
@@ -232,3 +234,43 @@ stay on `dev`. Only the applier, the decision record and the deletion came to `m
 Indonesian set, the sports re-land, and assorted additions. A fresh `/admin/dedup` pass on `dev`
 against the current corpus is the next thing this needs. The five near-duplicate pairs listed above
 (compass, Benin art, paper money, Leeuwenhoek, anaesthesia) are still unmerged.
+
+### Spot-check of the wider review
+
+Sampled the 456 resolved clusters three ways: a structural sweep, targeted red-flag queries, and
+an unbiased random read of 14 clusters. **Structurally it is sound** — no cluster had all its
+members deleted, 449 collapsed to one keeper and 7 keep more than one, and no keeper was left
+without card art where a dropped member had it. The random 14 were all genuine duplicates with
+defensible keepers.
+
+One concern that turned out not to be one: keepers with bare one-word titles (`Bread`, `Cheese`,
+`Papyrus`) chosen over more descriptive siblings. **75 served events have one-word names**
+(`Arquebus`, `Banknote`, `Blueprint`) — it is house style, not an inversion. Likewise, the 54
+clusters where the dropped card had the longer description are mostly correct: the review ranks
+title clarity above description specificity on purpose, and "Vikings Reach Greenland" really does
+beat "Norse Atlantic Colonization Begins".
+
+Three keeper choices were wrong and are reversed:
+
+| cluster   | was kept                  | now kept                    | why                                                                                                                                                                                                                                                                   |
+| --------- | ------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cambrian  | `cambrian-period-begins`  | **`cambrian-explosion`**    | The keeper's title and its own description disagreed — it was titled "Cambrian Period Begins" but described the Cambrian Explosion. The dropped card had the recognisable title, a matching description, and sat in `earth-life.json` rather than `exploration.json`. |
+| Chalcedon | `monophysite-controversy` | **`council-chalcedon`**     | Obscurity inversion. The keeper's description opens "The Council of Chalcedon rejected Monophysitism" — the dropped card carried the name a player would recognise.                                                                                                   |
+| Pliny     | `first-encyclopedia`      | **`pliny-natural-history`** | The keeper's `friendly_name` was `Pliny-Natural-History`, a slug where a title should be, and it was filed under `infrastructure.json`. The dropped card had a real title, an equal description, and the right file.                                                  |
+
+One keeper was renamed rather than swapped. `first-public-library` had the same slug-as-title
+defect (`Alexandria-Library`) but the better year (-295, Ptolemy I) and description of the pair, so
+it keeps the card and takes the title **"Library of Alexandria"**. This matters twice over: it is
+also the art for the `coll-500` Archivist badge.
+
+### Two things the spot-check found that are not fixed here
+
+- **The clustering only ever compared names, so semantically identical events with different names
+  were never clustered at all.** `museum-alexandria-founded` (-290) and `first-public-library`
+  (-295) are the same institution — the Library was part of the Mouseion — and never appeared in a
+  cluster together. Whatever `build-dedup-clusters.js` does, it does not catch this class, and no
+  amount of reviewing the existing 492 clusters will surface them.
+- **`tally-sticks` (-44000) and `tally-bone-counting` (-20000) may not be one event.** The keeper
+  is the Lebombo-bone horizon, the dropped card names the Ishango bone 24,000 years later. Left
+  collapsed — at that timescale the placement is trivial either way — but it is an example of the
+  collapse-to-one bias that the reopening pass only partly corrected.

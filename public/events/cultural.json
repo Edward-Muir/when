@@ -270,6 +270,21 @@
     "text_color": "light"
   },
   {
+    "name": "council-chalcedon",
+    "friendly_name": "Council of Chalcedon",
+    "year": 451,
+    "category": "empires",
+    "description": "Church leaders defined the orthodox doctrine of Christ's divine and human natures.",
+    "difficulty": "very-hard",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-chalcedon_gkymwv?_a=BAMAMikS0",
+    "image_width": 330,
+    "image_height": 440,
+    "wikipedia_views": 212227,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
+    "color": "#adadad",
+    "text_color": "dark"
+  },
+  {
     "name": "monte-cassino-founded",
     "friendly_name": "Monte Cassino Founded",
     "year": 529,
@@ -5149,19 +5164,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nasca-settlement-cahuachi_jotsi1?_a=BAMAMikS0",
     "color": "#7f482e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "monophysite-controversy",
-    "friendly_name": "Monophysite Controversy",
-    "year": 451,
-    "category": "empires",
-    "description": "The Council of Chalcedon rejected Monophysitism, splitting churches in Egypt, Syria, and Armenia.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/monophysite-controversy_ibloj4?_a=BAMAMikS0",
-    "color": "#252020",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440

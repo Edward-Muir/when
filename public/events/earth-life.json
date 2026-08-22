@@ -91,6 +91,19 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ediacaran-biota_vspdrm?_a=BAMAMikS0"
   },
   {
+    "name": "cambrian-explosion",
+    "friendly_name": "Cambrian Explosion",
+    "year": -538000000,
+    "category": "nature",
+    "description": "Most major animal groups appeared in a relatively short burst, filling the seas with diverse life.",
+    "difficulty": "easy",
+    "color": "#4d2a11",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cambrian-explosion_vj3xcl?_a=BAMAMikS0"
+  },
+  {
     "name": "first-trilobites",
     "friendly_name": "Trilobites Appear",
     "year": -521000000,
