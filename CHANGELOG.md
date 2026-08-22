@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.15.1](https://github.com/Edward-Muir/when/compare/v1.15.0...v1.15.1) (2026-08-22)
+
+
+### Bug Fixes
+
+* take the date out of player-visible card text ([#50](https://github.com/Edward-Muir/when/issues/50)) ([489de75](https://github.com/Edward-Muir/when/commit/489de75222377182e25d6b5ef49f4263287ca7e1))
+
 ## [1.15.0](https://github.com/Edward-Muir/when/compare/v1.14.0...v1.15.0) (2026-08-20)
 
 
