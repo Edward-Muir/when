@@ -53,6 +53,30 @@ is the reasoning behind the design and the traps.
 - **Capacitor iOS needs no release for API changes.** `capacitor.config.ts` points
   `server.url` at the live site, so relative `/api/*` resolves the same as on web.
 
+## Open reports we could not close
+
+A 2026-08-22 pass read the live reports and fixed every `bad-description`, `wrong-year` and
+`other` one. **Six `wrong-image` reports remain open and are blocked on Cloudinary
+credentials** — replacing a card's art means uploading a new asset, and no `CLOUDINARY_*`
+values are available to a sandboxed session. Triage, from fetching each image at the
+delivery rung the game actually uses:
+
+| card                                           | verdict                                                                |
+| ---------------------------------------------- | ---------------------------------------------------------------------- |
+| `qhapaq-nan-expansion` (Inca roads)            | **wrong** — a Florence Nightingale hospital ward. Reported twice.      |
+| `jackie-robinson-mlb-debut`                    | **wrong** — a honey-hunter on ropes at a cliff hive.                   |
+| `medieval-jousting-tournaments`                | **wrong** — a 20th-century American courtroom with press cameras.      |
+| `sulfuric-acid-production` (German alchemists) | **wrong** — an Islamic courtyard majlis with musicians.                |
+| `telescope-invention`                          | fine — a period Dutch spyglass scene. No action.                       |
+| `birth-napoleon`                               | borderline — on-topic, but an adult's bicorne hangs in the birth room. |
+
+Each wrong image depicts a subject belonging to some _other_ card, and the asset is stored
+under the correct `public_id`, so the mis-assignment happened when the art was generated,
+not when the URL was built. Two of the four (`jackie-robinson-mlb-debut`,
+`medieval-jousting-tournaments`) already have correct prompts queued in `all_prompts.csv`
+and sit in its 654-row not-yet-generated backlog, so regenerating that backlog fixes them;
+the other two are not in that file at all and need prompts written.
+
 ## Known gaps
 
 - **The endpoints have never been run against real Redis.** No Upstash credentials were

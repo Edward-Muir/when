@@ -48,6 +48,60 @@ and got ellipsised. 639 were renamed and the cap became permanent
 uses `line-clamp-3` (~60 chars) and is _not_ the binding constraint — don't re-derive the limit
 from it. 40 and 30 were the alternatives considered.
 
+## Player-visible text must not state the date
+
+`description` and `friendly_name` may not contain a year, decade, century or `NNN CE/BCE`
+reference. Enforced by `src/utils/eventDateClues.test.ts` over every file in the manifest.
+
+**This is not redundant with the UI.** `shouldShowYearInPopup` (`src/components/Game.tsx`)
+already hides `event.year` while a card is still in the player's hand — _"that's the puzzle"_.
+But `GamePopup.tsx` renders `description` directly underneath it and `handleActiveCardTap`
+opens that same popup for the hand card, so prose defeats the guard completely.
+`friendly_name` is worse again: `Card.tsx` shows it on the card face at all times, so a title
+like _"1955 Le Mans Disaster"_ never even needs a tap.
+
+The 2026-08 sports import shipped 100 such events (84 descriptions, 9 titles, plus 11 older
+non-sport strays) because nothing checked. That is what the test is for — there is no CI on
+tests here, so it only fires when someone runs `npm test`; the `add-events` skill's verify
+block is the other half of the enforcement.
+
+- **Relative durations are fine and deliberately not flagged** — _"a 27-year war"_, _"27 years
+  in prison"_, _"800 years of Muslim rule"_. About 86 events carry them. They are historical
+  content, not a statement of the answer. Don't "fix" them.
+- **When the text and the `year` field disagree, the text loses.** Seven sports cards named a
+  year that contradicted their own `year` (rowing said 1896 against a `year` of 1900). `year`
+  is the graded answer and feeds the difficulty percentile in `difficultyScore.ts`, so editing
+  it perturbs deterministic daily decks catalogue-wide; editing prose is inert. Change `year`
+  only if the text's year is the date of the card's _headline_ event, the slug doesn't
+  contradict it, and a source confirms — then in its own commit.
+- **Slugs keep their years.** `le-mans-disaster-1955` is fine; slugs are never rendered, and
+  curated themes pin them.
+- The detection rule lives in `scripts/events/date-clues.js` (plain CommonJS, so `node` runs
+  the report/apply scripts with no build step and the Jest test can `require` it — the same
+  arrangement as `scripts/themes/catalogue.js`). `node scripts/events/date-clues-report.js`
+  lists offenders and exits non-zero.
+
+### Bulk edits go through a map, never by hand
+
+`public/events/sports.json` is a single 186KB array; parallel hand-edits corrupt it and a
+dropped comma only surfaces at build. `scripts/events/date-clues-apply.js` follows the
+`shorten-names-apply.js` pattern: rewrites are authored as `slug -> {description?,
+friendly_name?}` maps in `untracked_data/`, and one deterministic pass validates _everything_
+before writing _anything_ — slug resolves, the rewrite re-passes the date-clue guard, names
+fit 35 chars and collide with nothing. Every file round-trips byte-identically under
+`JSON.stringify(arr, null, 2) + '\n'`, and `.prettierignore` covers `public/events/`, so
+diffs are exactly the edited lines.
+
+Two traps found doing this:
+
+- **`npm run find-duplicates` shifts when you edit descriptions.** It scores same-year +
+  similar-description, so deleting `"in 1966"` from two sibling cards _raises_ their
+  similarity and manufactures new near-duplicate pairs. Capture a baseline before editing and
+  diff against it; don't read the after-state cold.
+- **Two slugs are not unique** (`human-genome-completed`, `first-pharmacopoeia` — the latter
+  spanning years 65 and 1546). Pre-existing, but any slug-keyed tool has to decide what to do
+  about them.
+
 Only `friendly_name` was ever touched. Never rewrite the `name` slug: it is the identity used
 for dedup, collection tracking and recency.
 
