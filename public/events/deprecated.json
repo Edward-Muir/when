@@ -102,5 +102,18 @@
     "_originalCategory": "food",
     "_deprecatedAt": "2026-08-13T20:25:48.000Z",
     "_deprecatedReason": "Near-duplicate of windmill-introduction (1185), five years apart with the same subject. Players reported both as wrong-year seconds apart."
+  },
+  {
+    "name": "trade-route-risk-reduction",
+    "friendly_name": "Trade Route Security Establishes",
+    "year": 1250,
+    "category": "trade",
+    "description": "The Mongol Empire's Pax Mongolica secured Eurasian trade routes, reducing banditry and enabling safer commerce.",
+    "difficulty": "medium",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trade-route-risk-reduction_djr7uf?_a=BAMAMikS0",
+    "color": "#1d2222",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440
   }
 ]
