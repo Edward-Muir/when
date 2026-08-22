@@ -182,19 +182,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/islamic-gold-dinar-minted_czkdkg?_a=BAMAMikS0"
   },
   {
-    "name": "song-dynasty-jiaozi-paper",
-    "friendly_name": "World's First Paper Money",
-    "year": 1024,
-    "category": "writing",
-    "description": "China's Song dynasty issued jiaozi, the first government-backed paper banknotes in world history.",
-    "difficulty": "medium",
-    "color": "#2d1c1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-dynasty-jiaozi-paper_ggdvnl?_a=BAMAMikS0"
-  },
-  {
     "name": "hawala-money-transfer",
     "friendly_name": "Hawala Money Transfer System",
     "year": 800,
@@ -206,19 +193,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hawala-money-transfer_dvmldv?_a=BAMAMikS0"
-  },
-  {
-    "name": "domesday-tax-survey",
-    "friendly_name": "Domesday Tax Survey",
-    "year": 1086,
-    "category": "law",
-    "description": "William the Conqueror surveyed England's lands and wealth to assess taxes, producing the Domesday Book.",
-    "difficulty": "easy",
-    "color": "#624b36",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/domesday-tax-survey_vbmbaw?_a=BAMAMikS0"
   },
   {
     "name": "english-exchequer-tally",
@@ -637,19 +611,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/weimar-hyperinflation_ylcd0s?_a=BAMAMikS0"
   },
   {
-    "name": "wall-street-crash-1929",
-    "friendly_name": "Great Wall Street Crash",
-    "year": 1929,
-    "category": "disasters",
-    "description": "The US stock market collapsed in October, wiping out fortunes and ushering in the Great Depression.",
-    "difficulty": "easy",
-    "color": "#433b2a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wall-street-crash-1929_bhwap8?_a=BAMAMikS0"
-  },
-  {
     "name": "glass-steagall-act",
     "friendly_name": "Glass-Steagall Banking Act",
     "year": 1933,
@@ -674,19 +635,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fdr-gold-confiscation_jls9of?_a=BAMAMikS0"
-  },
-  {
-    "name": "diners-club-charge-card",
-    "friendly_name": "First Charge Card",
-    "year": 1950,
-    "category": "media",
-    "description": "The Diners Club card let members charge restaurant meals, launching the modern payment-card industry.",
-    "difficulty": "hard",
-    "color": "#202027",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diners-club-charge-card_miw8j4?_a=BAMAMikS0"
   },
   {
     "name": "first-credit-card-bankamericard",

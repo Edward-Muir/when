@@ -60,21 +60,6 @@
     "text_color": "light"
   },
   {
-    "name": "code-hammurabi",
-    "friendly_name": "Code of Hammurabi Created",
-    "year": -1754,
-    "category": "law",
-    "description": "The Babylonian king established one of the oldest written legal codes.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/code-hammurabi_yeovh4?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 499318,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi",
-    "color": "#281e1f",
-    "text_color": "light"
-  },
-  {
     "name": "book-of-dead",
     "friendly_name": "Egyptian Book of the Dead",
     "year": -1550,
@@ -165,21 +150,6 @@
     "text_color": "light"
   },
   {
-    "name": "homer-iliad",
-    "friendly_name": "Homer Composes the Iliad",
-    "year": -750,
-    "category": "writing",
-    "description": "The Greek poet composed the epic tale of the Trojan War.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/homer-iliad_mawglr?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1286883,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Iliad",
-    "color": "#232022",
-    "text_color": "light"
-  },
-  {
     "name": "aesops-fables",
     "friendly_name": "Aesop's Fables Composed",
     "year": -600,
@@ -240,96 +210,6 @@
     "text_color": "light"
   },
   {
-    "name": "socrates-death",
-    "friendly_name": "Death of Socrates",
-    "year": -399,
-    "category": "revolution",
-    "description": "The Athenian philosopher was executed by drinking hemlock.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/socrates-death_wp0b70?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 170848,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Death_of_Socrates",
-    "color": "#281f1c",
-    "text_color": "light"
-  },
-  {
-    "name": "plato-academy",
-    "friendly_name": "Plato Founds the Academy",
-    "year": -387,
-    "category": "commerce",
-    "description": "Plato established the first institution of higher learning in the Western world.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plato-academy_wqrhmz?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 122426,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Platonic_Academy",
-    "color": "#242020",
-    "text_color": "light"
-  },
-  {
-    "name": "aristotle-lyceum",
-    "friendly_name": "Aristotle Founds the Lyceum",
-    "year": -335,
-    "category": "commerce",
-    "description": "Aristotle established his own school after leaving Plato's Academy.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aristotle-lyceum_npd2sp?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 55437,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Lyceum_(classical)",
-    "color": "#25201e",
-    "text_color": "light"
-  },
-  {
-    "name": "euclid-elements",
-    "friendly_name": "Euclid Writes Elements",
-    "year": -300,
-    "category": "writing",
-    "description": "The Greek mathematician wrote the foundational textbook of geometry.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/euclid-elements_gkekzj?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 383867,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Euclid",
-    "color": "#2a1e1c",
-    "text_color": "light"
-  },
-  {
-    "name": "library-alexandria",
-    "friendly_name": "Library of Alexandria Founded",
-    "year": -283,
-    "category": "commerce",
-    "description": "The ancient world's greatest library was established in Egypt.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/library-alexandria_ui2cxb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 929515,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Library_of_Alexandria",
-    "color": "#34251d",
-    "text_color": "light"
-  },
-  {
-    "name": "septuagint-translated",
-    "friendly_name": "Septuagint Translated",
-    "year": -250,
-    "category": "writing",
-    "description": "The Hebrew Bible was translated into Greek in Alexandria.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/septuagint-translated_zljono?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 628108,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Septuagint",
-    "color": "#251f22",
-    "text_color": "light"
-  },
-  {
     "name": "dead-sea-scrolls-written",
     "friendly_name": "Dead Sea Scrolls Written",
     "year": -150,
@@ -343,21 +223,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dead_Sea_Scrolls",
     "color": "#271f1b",
     "text_color": "light"
-  },
-  {
-    "name": "virgil-aeneid",
-    "friendly_name": "Virgil Writes the Aeneid",
-    "year": -29,
-    "category": "writing",
-    "description": "The Roman poet composed the epic tale of Aeneas founding Rome.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/virgil-aeneid_ihtorg?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 489983,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Aeneid",
-    "color": "#adadac",
-    "text_color": "dark"
   },
   {
     "name": "jesus-birth",
@@ -403,21 +268,6 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vulgate",
     "color": "#25201c",
     "text_color": "light"
-  },
-  {
-    "name": "council-chalcedon",
-    "friendly_name": "Council of Chalcedon",
-    "year": 451,
-    "category": "empires",
-    "description": "Church leaders defined the orthodox doctrine of Christ's divine and human natures.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/council-chalcedon_gkymwv?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 212227,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Council_of_Chalcedon",
-    "color": "#adadad",
-    "text_color": "dark"
   },
   {
     "name": "monte-cassino-founded",
@@ -525,36 +375,6 @@
     "text_color": "light"
   },
   {
-    "name": "song-dynasty-founded",
-    "friendly_name": "Song Dynasty Founded",
-    "year": 960,
-    "category": "empires",
-    "description": "A Chinese dynasty known for technological and cultural advancements began.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-dynasty-founded_blttgm?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 646333,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Song_dynasty",
-    "color": "#25201b",
-    "text_color": "light"
-  },
-  {
-    "name": "tale-of-genji",
-    "friendly_name": "Tale of Genji Written",
-    "year": 1010,
-    "category": "writing",
-    "description": "Murasaki Shikibu wrote what is often called the world's first novel.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tale-of-genji_uc0tfw?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 334904,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Tale_of_Genji",
-    "color": "#1f221f",
-    "text_color": "light"
-  },
-  {
     "name": "great-schism",
     "friendly_name": "Great Schism",
     "year": 1054,
@@ -600,21 +420,6 @@
     "text_color": "light"
   },
   {
-    "name": "kamakura-shogunate",
-    "friendly_name": "Kamakura Shogunate Established",
-    "year": 1185,
-    "category": "empires",
-    "description": "Japan's first military government began, establishing samurai dominance.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kamakura-shogunate_xodrhj?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 159100,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kamakura_shogunate",
-    "color": "#23201f",
-    "text_color": "light"
-  },
-  {
     "name": "franciscan-order",
     "friendly_name": "Franciscan Order Founded",
     "year": 1209,
@@ -645,21 +450,6 @@
     "text_color": "light"
   },
   {
-    "name": "yuan-dynasty-founded",
-    "friendly_name": "Yuan Dynasty Established",
-    "year": 1271,
-    "category": "empires",
-    "description": "Kublai Khan established Mongol rule over China, the first foreign dynasty.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yuan-dynasty-founded_ay7m9i?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 136102,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Northern_Yuan",
-    "color": "#20221f",
-    "text_color": "light"
-  },
-  {
     "name": "marco-polo-china",
     "friendly_name": "Marco Polo Reaches China",
     "year": 1275,
@@ -672,21 +462,6 @@
     "wikipedia_views": 966600,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Marco_Polo",
     "color": "#26201c",
-    "text_color": "light"
-  },
-  {
-    "name": "giotto-scrovegni",
-    "friendly_name": "Giotto Paints Scrovegni Chapel",
-    "year": 1305,
-    "category": "art",
-    "description": "Giotto's frescoes revolutionized Western art with naturalistic human emotion.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/giotto-scrovegni_zsapxr?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 77840,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Scrovegni_Chapel",
-    "color": "#3f362c",
     "text_color": "light"
   },
   {
@@ -780,21 +555,6 @@
     "text_color": "light"
   },
   {
-    "name": "leonardo-last-supper",
-    "friendly_name": "Last Supper Painted",
-    "year": 1498,
-    "category": "art",
-    "description": "Leonardo da Vinci completed his mural depicting Jesus's final meal.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leonardo-last-supper_aegqlx?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1056816,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Last_Supper_(Leonardo)",
-    "color": "#281e1c",
-    "text_color": "light"
-  },
-  {
     "name": "leonardo-mona-lisa",
     "friendly_name": "Mona Lisa Painted",
     "year": 1503,
@@ -825,21 +585,6 @@
     "text_color": "light"
   },
   {
-    "name": "sistine-chapel",
-    "friendly_name": "Sistine Chapel Ceiling Painted",
-    "year": 1512,
-    "category": "architecture",
-    "description": "Michelangelo completed his masterpiece ceiling fresco.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sistine-chapel_eyawtg?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 31143,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Gallery_of_the_Sistine_Chapel_ceiling",
-    "color": "#271f1b",
-    "text_color": "light"
-  },
-  {
     "name": "machiavelli-prince",
     "friendly_name": "The Prince Written",
     "year": 1513,
@@ -867,21 +612,6 @@
     "wikipedia_views": 57229,
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_Protestantism",
     "color": "#212024",
-    "text_color": "light"
-  },
-  {
-    "name": "luther-theses",
-    "friendly_name": "Luther's 95 Theses",
-    "year": 1517,
-    "category": "writing",
-    "description": "Martin Luther posted his theses, sparking the Protestant Reformation.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/luther-theses_s0nvn4?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 494234,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Ninety-five_Theses",
-    "color": "#2d211f",
     "text_color": "light"
   },
   {
@@ -930,21 +660,6 @@
     "text_color": "light"
   },
   {
-    "name": "don-quixote-published",
-    "friendly_name": "Don Quixote Published",
-    "year": 1605,
-    "category": "writing",
-    "description": "Cervantes published the novel often called the first modern novel.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/don-quixote-published_ybj2v4?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1350341,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Don_Quixote",
-    "color": "#261f1f",
-    "text_color": "light"
-  },
-  {
     "name": "king-james-bible",
     "friendly_name": "King James Bible Published",
     "year": 1611,
@@ -975,21 +690,6 @@
     "text_color": "light"
   },
   {
-    "name": "paradise-lost",
-    "friendly_name": "Paradise Lost Published",
-    "year": 1667,
-    "category": "writing",
-    "description": "John Milton published his epic poem about the fall of man.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/paradise-lost_jqgujg?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 1002683,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Paradise_Lost",
-    "color": "#251f20",
-    "text_color": "light"
-  },
-  {
     "name": "russia-anno-domini",
     "friendly_name": "Russia Adopts Modern Calendar",
     "year": 1700,
@@ -1002,21 +702,6 @@
     "wikipedia_views": 1133253,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Gregorian_calendar",
     "color": "#261f21",
-    "text_color": "light"
-  },
-  {
-    "name": "bach-well-tempered",
-    "friendly_name": "Bach's Well-Tempered Clavier",
-    "year": 1722,
-    "category": "writing",
-    "description": "Bach completed his influential collection of keyboard music.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bach-well-tempered_ryy8x2?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 112209,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Well-Tempered_Clavier",
-    "color": "#232021",
     "text_color": "light"
   },
   {
@@ -1047,21 +732,6 @@
     "wikipedia_views": 1040907,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Sebastian_Bach",
     "color": "#251f1f",
-    "text_color": "light"
-  },
-  {
-    "name": "encyclopedia-published",
-    "friendly_name": "Encyclopédie Published",
-    "year": 1751,
-    "category": "writing",
-    "description": "Diderot and d'Alembert began publishing their Enlightenment encyclopedia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/encyclopedia-published_asj3in?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 68727,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Encyclopédie",
-    "color": "#25201b",
     "text_color": "light"
   },
   {
@@ -1182,21 +852,6 @@
     "wikipedia_views": 349893,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Symphony_No._9_(Beethoven)",
     "color": "#202122",
-    "text_color": "light"
-  },
-  {
-    "name": "goethe-faust",
-    "friendly_name": "Goethe Writes Faust Part 1",
-    "year": 1808,
-    "category": "writing",
-    "description": "Goethe published the first part of his masterpiece about a scholar's bargain with the devil.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goethe-faust_mr7zdb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 736506,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Johann_Wolfgang_von_Goethe",
-    "color": "#2a261f",
     "text_color": "light"
   },
   {
@@ -1830,21 +1485,6 @@
     "text_color": "light"
   },
   {
-    "name": "jazz-age-begins",
-    "friendly_name": "Jazz Age Begins",
-    "year": 1920,
-    "category": "media",
-    "description": "Jazz music exploded in popularity, defining the Roaring Twenties.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jazz-age-begins_h92gbv?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 652300,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jazz",
-    "color": "#4e402c",
-    "text_color": "light"
-  },
-  {
     "name": "harlem-renaissance",
     "friendly_name": "Harlem Renaissance Begins",
     "year": 1920,
@@ -2310,21 +1950,6 @@
     "text_color": "light"
   },
   {
-    "name": "birth-control-pill",
-    "friendly_name": "Birth Control Pill Approved",
-    "year": 1960,
-    "category": "medicine",
-    "description": "The FDA approved the first oral contraceptive pill for women.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/birth-control-pill_zohvke?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 128859,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Combined_oral_contraceptive_pill",
-    "color": "#1f2126",
-    "text_color": "light"
-  },
-  {
     "name": "beatles-form",
     "friendly_name": "Beatles Form",
     "year": 1960,
@@ -2382,21 +2007,6 @@
     "wikipedia_views": 149344,
     "wikipedia_url": "https://en.wikipedia.org/wiki/March_on_Washington",
     "color": "#2d3139",
-    "text_color": "light"
-  },
-  {
-    "name": "beatles-usa",
-    "friendly_name": "Beatles Arrive in USA",
-    "year": 1964,
-    "category": "media",
-    "description": "The British Invasion began with the Beatles' American tour.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beatles-usa_nezw8c?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 4030119,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Beatles",
-    "color": "#202128",
     "text_color": "light"
   },
   {
@@ -2697,21 +2307,6 @@
     "wikipedia_views": 1058621,
     "wikipedia_url": "https://en.wikipedia.org/wiki/MTV",
     "color": "#212123",
-    "text_color": "light"
-  },
-  {
-    "name": "aids-identified",
-    "friendly_name": "AIDS Identified",
-    "year": 1981,
-    "category": "medicine",
-    "description": "Scientists first recognized and named the AIDS epidemic.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aids-identified_vnb833?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 158748,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Epidemiology_of_HIV/AIDS",
-    "color": "#1f1e34",
     "text_color": "light"
   },
   {
@@ -3135,21 +2730,6 @@
     "text_color": "light"
   },
   {
-    "name": "i-have-a-dream-speech",
-    "friendly_name": "I Have a Dream Speech",
-    "year": 1963,
-    "category": "media",
-    "description": "Martin Luther King Jr. delivered his iconic speech at the March on Washington.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/i-have-a-dream-speech_mazqbu?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 638308,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/I_Have_a_Dream",
-    "color": "#202029",
-    "text_color": "light"
-  },
-  {
     "name": "code-ur-nammu",
     "friendly_name": "Code of Ur-Nammu",
     "year": -2100,
@@ -3225,51 +2805,6 @@
     "text_color": "light"
   },
   {
-    "name": "darius-great-king",
-    "friendly_name": "Darius the Great Becomes King",
-    "year": -522,
-    "category": "empires",
-    "description": "Darius I expanded the Persian Empire to its greatest extent and built Persepolis.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/darius-great-king_vbps1h?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 552762,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Darius_the_Great",
-    "color": "#26201c",
-    "text_color": "light"
-  },
-  {
-    "name": "axumite-empire",
-    "friendly_name": "Axumite Empire Established",
-    "year": 100,
-    "category": "empires",
-    "description": "The Ethiopian kingdom of Axum became a major trading power and later embraced Christianity.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/axumite-empire_u2m1ln?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 424012,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Kingdom_of_Aksum",
-    "color": "#2c1d1b",
-    "text_color": "light"
-  },
-  {
-    "name": "house-of-wisdom",
-    "friendly_name": "House of Wisdom Founded",
-    "year": 800,
-    "category": "commerce",
-    "description": "The Abbasid Caliphate established Baghdad's great center of learning and translation.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/house-of-wisdom_rog6xs?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 247169,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/House_of_Wisdom",
-    "color": "#232022",
-    "text_color": "light"
-  },
-  {
     "name": "chola-dynasty-expansion",
     "friendly_name": "Chola Dynasty Naval Expansion",
     "year": 1000,
@@ -3282,21 +2817,6 @@
     "wikipedia_views": 14639,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chola_Navy",
     "color": "#2e3633",
-    "text_color": "light"
-  },
-  {
-    "name": "mali-empire-founded",
-    "friendly_name": "Mali Empire Founded",
-    "year": 1230,
-    "category": "empires",
-    "description": "Sundiata Keita established the wealthy West African empire that controlled trans-Saharan trade.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mali-empire-founded_pypcqo?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 436142,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Mali_Empire",
-    "color": "#2d281e",
     "text_color": "light"
   },
   {
@@ -3405,21 +2925,6 @@
     "text_color": "light"
   },
   {
-    "name": "mandela-elected-president",
-    "friendly_name": "Nelson Mandela Elected President",
-    "year": 1994,
-    "category": "revolution",
-    "description": "South Africa held its first democratic elections, making Mandela president.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mandela-elected-president_gpls7y?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 27254,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Nelson_Mandela_Bay_Metropolitan_Municipality",
-    "color": "#1f2127",
-    "text_color": "light"
-  },
-  {
     "name": "akhenaten-religious-revolution",
     "friendly_name": "Akhenaten's Religious Revolution",
     "year": -1353,
@@ -3492,21 +2997,6 @@
     "wikipedia_views": 36019,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Draco_(legislator)",
     "color": "#291f18",
-    "text_color": "light"
-  },
-  {
-    "name": "solon-reforms",
-    "friendly_name": "Solon's Reforms in Athens",
-    "year": -594,
-    "category": "empires",
-    "description": "Solon restructured Athenian society, cancelling debts and laying groundwork for democracy.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/solon-reforms_uytghy?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 161322,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Solon",
-    "color": "#252021",
     "text_color": "light"
   },
   {
@@ -3657,36 +3147,6 @@
     "wikipedia_views": 32392,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Synod_of_Whitby",
     "color": "#26201b",
-    "text_color": "light"
-  },
-  {
-    "name": "wu-zetian-emperor",
-    "friendly_name": "Wu Zetian Becomes Emperor",
-    "year": 690,
-    "category": "empires",
-    "description": "Wu Zetian became the only woman to rule China as emperor in her own right.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wu-zetian-emperor_bazjdb?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 48136,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Wu_Zhou",
-    "color": "#312017",
-    "text_color": "light"
-  },
-  {
-    "name": "byzantine-iconoclasm-begins",
-    "friendly_name": "Byzantine Iconoclasm Begins",
-    "year": 726,
-    "category": "empires",
-    "description": "Emperor Leo III banned religious images, sparking decades of controversy and destruction.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/byzantine-iconoclasm-begins_rvocqz?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 54480,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Leo_V_the_Armenian",
-    "color": "#23201f",
     "text_color": "light"
   },
   {
@@ -3870,21 +3330,6 @@
     "text_color": "light"
   },
   {
-    "name": "jan-hus-burned",
-    "friendly_name": "Jan Hus Burned at the Stake",
-    "year": 1415,
-    "category": "revolution",
-    "description": "The Czech reformer was executed for heresy despite a promise of safe conduct, inspiring later Protestants.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jan-hus-burned_tv6ec1?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 405405,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jan_Hus",
-    "color": "#291e21",
-    "text_color": "light"
-  },
-  {
     "name": "spanish-inquisition-begins",
     "friendly_name": "Spanish Inquisition Established",
     "year": 1478,
@@ -4047,21 +3492,6 @@
     "wikipedia_views": 116547,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Ministry_of_Jesus",
     "color": "#291f1a",
-    "text_color": "light"
-  },
-  {
-    "name": "destruction-second-temple",
-    "friendly_name": "Destruction of the Second Temple",
-    "year": 70,
-    "category": "empires",
-    "description": "Roman forces destroyed Jerusalem's Temple, ending Jewish temple worship and transforming Judaism forever.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/destruction-second-temple_rz5utd?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 445106,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
-    "color": "#4a3128",
     "text_color": "light"
   },
   {
@@ -4365,21 +3795,6 @@
     "text_color": "light"
   },
   {
-    "name": "hobbes-publishes-leviathan",
-    "friendly_name": "Hobbes Publishes Leviathan",
-    "year": 1651,
-    "category": "writing",
-    "description": "Thomas Hobbes published his influential work on political philosophy and the social contract.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/hobbes-publishes-leviathan_xffv5b?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 332669,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Leviathan_(Hobbes_book)",
-    "color": "#291e1a",
-    "text_color": "light"
-  },
-  {
     "name": "death-oliver-cromwell",
     "friendly_name": "Death of Oliver Cromwell",
     "year": 1658,
@@ -4662,21 +4077,6 @@
     "wikipedia_views": 1045965,
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mein_Kampf",
     "color": "#2f2217",
-    "text_color": "light"
-  },
-  {
-    "name": "jesse-owens-berlin-olympics",
-    "friendly_name": "Jesse Owens at Berlin Olympics",
-    "year": 1936,
-    "category": "revolution",
-    "description": "African American athlete Jesse Owens won four gold medals, defying Nazi racial ideology.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jesse-owens-berlin-olympics_uj48rn?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 753774,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Jesse_Owens",
-    "color": "#51544d",
     "text_color": "light"
   },
   {
@@ -5143,19 +4543,6 @@
     "image_height": 440
   },
   {
-    "name": "nazca-culture",
-    "friendly_name": "Nazca Culture Desert Lines Created",
-    "year": 100,
-    "category": "architecture",
-    "description": "The Nazca people created enormous geoglyphs in Peru's desert, visible only from above.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nazca-culture_t20yj8?_a=BAMAMikS0",
-    "color": "#541f15",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "ancestral-puebloan-development",
     "friendly_name": "Ancestral Puebloan Culture Develops",
     "year": 100,
@@ -5377,32 +4764,6 @@
     "image_height": 440
   },
   {
-    "name": "ashoka-rock-edicts",
-    "friendly_name": "Ashoka Rock Edicts Spread Buddhism",
-    "year": -260,
-    "category": "empires",
-    "description": "Emperor Ashoka inscribed Buddhist principles on pillars and rocks across the Indian subcontinent.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ashoka-rock-edicts_yiy4hq?_a=BAMAMikS0",
-    "color": "#563628",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "nazca-settlement-lines",
-    "friendly_name": "Nazca Culture Creates Geoglyphs",
-    "year": 300,
-    "category": "architecture",
-    "description": "The Nazca people etched enormous figures into Peru's arid plains for ritual and astronomical purposes.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nazca-settlement-lines_lollj3?_a=BAMAMikS0",
-    "color": "#aa714a",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "greek-mosaic-tradition",
     "friendly_name": "Greek Mosaic Art",
     "year": -300,
@@ -5411,19 +4772,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-mosaic-tradition_amzt4j?_a=BAMAMikS0",
     "color": "#2f1c12",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "diocletian-persecution-christians",
-    "friendly_name": "Diocletian Persecution",
-    "year": 303,
-    "category": "empires",
-    "description": "Emperor Diocletian launched the most severe Roman persecution of Christians, destroying churches and scriptures.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/diocletian-persecution-christians_estrry?_a=BAMAMikS0",
-    "color": "#2c1d18",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -5832,32 +5180,6 @@
     "image_height": 440
   },
   {
-    "name": "nok-civilization",
-    "friendly_name": "Nok Civilization in West Africa",
-    "year": -500,
-    "category": "architecture",
-    "description": "The Nok culture in Nigeria produced some of sub-Saharan Africa's earliest terracotta sculptures.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nok-civilization_pehqvr?_a=BAMAMikS0",
-    "color": "#202123",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "zapotec-monte-alban",
-    "friendly_name": "Zapotec Culture at Monte Alban",
-    "year": -500,
-    "category": "architecture",
-    "description": "The Zapotec founded Monte Alban in Oaxaca, one of Mesoamerica's earliest major urban centers.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zapotec-monte-alban_gktn1b?_a=BAMAMikS0",
-    "color": "#2d2b29",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "ancestral-dorset",
     "friendly_name": "Dorset Arctic Culture",
     "year": -500,
@@ -5949,19 +5271,6 @@
     "image_height": 440
   },
   {
-    "name": "baekje-five-temple-mission",
-    "friendly_name": "Baekje Buddhist Mission to Japan",
-    "year": 538,
-    "category": "empires",
-    "description": "The Korean kingdom of Baekje formally introduced Buddhism to Japan, transforming Japanese culture.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/baekje-five-temple-mission_dvjugu?_a=BAMAMikS0",
-    "color": "#352d29",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "greek-vase-painting-golden-age",
     "friendly_name": "Greek Vase Painting Golden Age",
     "year": -530,
@@ -5996,19 +5305,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/columba-scotland-monasticism_cooily?_a=BAMAMikS0",
     "color": "#4b3e3a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "augustine-mission-britain",
-    "friendly_name": "Augustine's Mission to Britain",
-    "year": 597,
-    "category": "empires",
-    "description": "Pope Gregory sent Augustine to convert the Anglo-Saxons, establishing the English church at Canterbury.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/augustine-mission-britain_cic3jl?_a=BAMAMikS0",
-    "color": "#232021",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6191,19 +5487,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sappho-poetry_jstlku?_a=BAMAMikS0",
     "color": "#23201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "moche-ceramics-art",
-    "friendly_name": "Moche Ceramic Art and Portraiture",
-    "year": 400,
-    "category": "art",
-    "description": "Moche potters in Peru produced highly realistic ceramic portraits and narrative scene vessels.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moche-ceramics-art_vyvqem?_a=BAMAMikS0",
-    "color": "#281f1c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6399,19 +5682,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/seokguram-grotto_lubo2w?_a=BAMAMikS0",
     "color": "#25201d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "first-olympic-games",
-    "friendly_name": "First Olympic Games",
-    "year": -776,
-    "category": "commerce",
-    "description": "The first Olympic Games were held at Olympia in Greece, honoring Zeus with athletic competitions.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-olympic-games_tc7rmn?_a=BAMAMikS0",
-    "color": "#544141",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6742,19 +6012,6 @@
     "image_height": 440
   },
   {
-    "name": "samoan-settlement-culture",
-    "friendly_name": "Samoan Settlement",
-    "year": -1000,
-    "category": "migration",
-    "description": "Lapita peoples settled Samoa, developing the foundational Polynesian culture including navigation, oral traditions, and social hierarchy.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samoan-settlement-culture_ub9vsa?_a=BAMAMikS0",
-    "color": "#5c544e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "vedic-brahmanism",
     "friendly_name": "Vedic Brahmanism Foundation",
     "year": -1000,
@@ -6763,19 +6020,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vedic-brahmanism_vcyvov?_a=BAMAMikS0",
     "color": "#271f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "yoruba-ife-terra-cotta",
-    "friendly_name": "Yoruba Ife Terracotta Art",
-    "year": 1100,
-    "category": "art",
-    "description": "Artists in the Yoruba city of Ife created lifelike terracotta portrait heads with a naturalism unmatched in medieval Africa.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/yoruba-ife-terra-cotta_y64tju?_a=BAMAMikS0",
-    "color": "#272019",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -6893,19 +6137,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dom-university-bologna_so2jt3?_a=BAMAMikS0",
     "color": "#271f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "urban-ii",
-    "friendly_name": "Pope Urban II Launches Crusade",
-    "year": 1095,
-    "category": "empires",
-    "description": "Pope Urban II called for a holy crusade at the Council of Clermont, launching centuries of religious warfare in the Holy Land.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/urban-ii_naboia?_a=BAMAMikS0",
-    "color": "#26201d",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7054,32 +6285,6 @@
     "image_height": 440
   },
   {
-    "name": "troubadour-courtly-love",
-    "friendly_name": "Troubadour Poetry of Courtly Love",
-    "year": 1130,
-    "category": "writing",
-    "description": "Troubadours like Jaufre Rudel popularized the concept of courtly love through lyric poetry in medieval southern France.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/troubadour-courtly-love_kivlr8?_a=BAMAMikS0",
-    "color": "#1a2322",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "university-salamanca",
-    "friendly_name": "University of Salamanca Founded",
-    "year": 1218,
-    "category": "commerce",
-    "description": "Spain's oldest university was established in Salamanca, becoming a leading center of learning in medieval Iberia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/university-salamanca_xf8rmz?_a=BAMAMikS0",
-    "color": "#271f1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "cathars-heresy",
     "friendly_name": "Cathar Heresy Languedoc",
     "year": 1140,
@@ -7218,19 +6423,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dogon-settlement_u3p9ui?_a=BAMAMikS0",
     "color": "#262113",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "olmec-civilization",
-    "friendly_name": "Olmec Civilization Development",
-    "year": -1200,
-    "category": "architecture",
-    "description": "Mesoamerica's earliest major civilization arose along Mexico's Gulf Coast, creating monumental architecture and complex society.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/olmec-civilization_b1ubwt?_a=BAMAMikS0",
-    "color": "#583116",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7426,19 +6618,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/damascene-silk-weaving_knsi0o?_a=BAMAMikS0",
     "color": "#25201e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "medieval-university-expansion",
-    "friendly_name": "Medieval Universities Spread",
-    "year": 1200,
-    "category": "agriculture",
-    "description": "Universities proliferated across Europe in the medieval era, establishing structured curricula in theology, law, and medicine.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medieval-university-expansion_ikgxxc?_a=BAMAMikS0",
-    "color": "#42403e",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7717,32 +6896,6 @@
     "image_height": 440
   },
   {
-    "name": "dante-divine-comedy",
-    "friendly_name": "Dante Writes Divine Comedy",
-    "year": 1308,
-    "category": "writing",
-    "description": "Dante Alighieri completed his epic poem journeying through Hell, Purgatory, and Paradise in vernacular Italian.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dante-divine-comedy_zerrv6?_a=BAMAMikS0",
-    "color": "#202125",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "petrarch-humanist-movement",
-    "friendly_name": "Petrarch Develops Humanist Movement",
-    "year": 1341,
-    "category": "writing",
-    "description": "Italian scholar Petrarch was crowned poet laureate in Rome, championing classical learning and the humanist movement.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/petrarch-humanist-movement_lsgid7?_a=BAMAMikS0",
-    "color": "#291e1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "simone-martini-painting",
     "friendly_name": "Simone Martini's Sienese Style",
     "year": 1333,
@@ -7777,19 +6930,6 @@
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/italian-renaissance-begins_hgnkbg?_a=BAMAMikS0",
     "color": "#2c1d16",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "vijayanagara-hindu-restoration",
-    "friendly_name": "Vijayanagara Hindu Restoration",
-    "year": 1336,
-    "category": "empires",
-    "description": "The Vijayanagara Empire was founded in southern India, becoming a powerful patron of Hindu culture, temples, and learning.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vijayanagara-hindu-restoration_jen7rq?_a=BAMAMikS0",
-    "color": "#573e2b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -7855,19 +6995,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-library-school_uhfffw?_a=BAMAMikS0",
     "color": "#271f1f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "muromachi-noh-theater",
-    "friendly_name": "Noh Wins the Shogun's Favor",
-    "year": 1375,
-    "category": "art",
-    "description": "Kan'ami and his son Zeami performed sarugaku for shogun Ashikaga Yoshimitsu at Imakumano, winning the patronage that shaped Noh.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/muromachi-noh-theater_fp5ajl?_a=BAMAMikS0",
-    "color": "#291e19",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8042,19 +7169,6 @@
     "image_height": 440
   },
   {
-    "name": "linear-perspective",
-    "friendly_name": "Invention of Linear Perspective",
-    "year": 1413,
-    "category": "science",
-    "description": "Filippo Brunelleschi demonstrated mathematical linear perspective in Florence, transforming Western visual art.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/linear-perspective_v8akps?_a=BAMAMikS0",
-    "color": "#25201d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "brunelleschi-perspective",
     "friendly_name": "Brunelleschi's Perspective",
     "year": 1413,
@@ -8193,19 +7307,6 @@
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mamluk-cairo-libraries_evtwjx?_a=BAMAMikS0",
     "color": "#321a0c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "benin-bronzes-royal-plaques",
-    "friendly_name": "Benin Royal Bronze Plaques",
-    "year": 1450,
-    "category": "art",
-    "description": "Artisans of the Benin Kingdom created elaborate brass plaques depicting court life and royal history.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/benin-bronzes-royal-plaques_lmv8hk?_a=BAMAMikS0",
-    "color": "#261e25",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8406,19 +7507,6 @@
     "image_height": 440
   },
   {
-    "name": "benin-kingdom-art-tradition",
-    "friendly_name": "Benin Bronze Sculpture",
-    "year": 1500,
-    "category": "art",
-    "description": "Royal guild artisans in the Benin Kingdom created intricate lost-wax bronze sculptures of remarkable sophistication.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/benin-kingdom-art-tradition_ixyynr?_a=BAMAMikS0",
-    "color": "#251e26",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "joseon-hahoetal-masks",
     "friendly_name": "Hahoe Mask Dance",
     "year": 1500,
@@ -8427,32 +7515,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/joseon-hahoetal-masks_kfgad2?_a=BAMAMikS0",
     "color": "#291e1c",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "davids-sculpture-michelangelo",
-    "friendly_name": "Michelangelo Sculpts David",
-    "year": 1504,
-    "category": "art",
-    "description": "Michelangelo completed his iconic marble David in Florence, a masterpiece of Renaissance sculpture.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/davids-sculpture-michelangelo_jubefh?_a=BAMAMikS0",
-    "color": "#2a1e15",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "safavid-shiite-islam",
-    "friendly_name": "Safavids Make Shia State Faith",
-    "year": 1501,
-    "category": "empires",
-    "description": "Shah Ismail I founded the Safavid dynasty and declared Twelver Shia Islam the state religion of Persia.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/safavid-shiite-islam_qgbopq?_a=BAMAMikS0",
-    "color": "#523a32",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8492,19 +7554,6 @@
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/michelangelo-sistine-chapel_dowymc?_a=BAMAMikS0",
     "color": "#583213",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "reformation-luther-begins",
-    "friendly_name": "Protestant Reformation Begins",
-    "year": 1517,
-    "category": "revolution",
-    "description": "Martin Luther posted his 95 Theses in Wittenberg, challenging Catholic Church practices and sparking the Reformation.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/reformation-luther-begins_vbyzfe?_a=BAMAMikS0",
-    "color": "#2b201b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8622,19 +7671,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ottoman-miniature-art_kkhccu?_a=BAMAMikS0",
     "color": "#271f20",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "counter-reformation-jesuit",
-    "friendly_name": "Counter-Reformation Begins",
-    "year": 1545,
-    "category": "empires",
-    "description": "The Council of Trent launched the Catholic Counter-Reformation while Jesuits expanded globally.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/counter-reformation-jesuit_jrwpco?_a=BAMAMikS0",
-    "color": "#57311c",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -8913,19 +7949,6 @@
     "image_height": 440
   },
   {
-    "name": "safavid-carpet-arts",
-    "friendly_name": "Safavid Carpet Arts Peak Production",
-    "year": 1600,
-    "category": "art",
-    "description": "Safavid-era carpet workshops reached peak production, creating masterworks prized in courts across Europe and Asia.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/safavid-carpet-arts_fbqkpg?_a=BAMAMikS0",
-    "color": "#4c2a17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "minoan-frescoes",
     "friendly_name": "Minoan Frescoes and Palace Art",
     "year": -1600,
@@ -9082,19 +8105,6 @@
     "image_height": 440
   },
   {
-    "name": "descartes-cogito-philosophy",
-    "friendly_name": "Descartes Cogito Ergo Sum",
-    "year": 1637,
-    "category": "writing",
-    "description": "René Descartes published Discourse on the Method, declaring \"I think, therefore I am\" as the foundation of modern philosophy.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/descartes-cogito-philosophy_k4snqu?_a=BAMAMikS0",
-    "color": "#301c10",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "corneille-le-cid",
     "friendly_name": "Corneille Writes Le Cid Drama",
     "year": 1637,
@@ -9129,19 +8139,6 @@
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/enlightenment-age-begins_pp49kn?_a=BAMAMikS0",
     "color": "#291e1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "tokugawa-kabuki-theatre",
-    "friendly_name": "Tokugawa Kabuki Theatre Development",
-    "year": 1650,
-    "category": "art",
-    "description": "Under Tokugawa rule, kabuki evolved from women's dance into an elaborate all-male theatrical art form.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tokugawa-kabuki-theatre_a0jwrt?_a=BAMAMikS0",
-    "color": "#2a1d1b",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
@@ -9355,19 +8352,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genroku-era-culture_hcw926?_a=BAMAMikS0"
   },
   {
-    "name": "locke-second-treatise",
-    "friendly_name": "Locke Second Treatise on Government",
-    "year": 1689,
-    "category": "writing",
-    "description": "John Locke published his Second Treatise, arguing for natural rights and government by consent of the governed.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/locke-second-treatise_m8a6dm?_a=BAMAMikS0",
-    "color": "#271f1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "tokugawa-edo-period-culture",
     "friendly_name": "Edo Period Cultural Flourishing",
     "year": 1700,
@@ -9537,19 +8521,6 @@
     "image_height": 440
   },
   {
-    "name": "rousseau-publications",
-    "friendly_name": "Rousseaus Emile and Contract",
-    "year": 1762,
-    "category": "writing",
-    "description": "Jean-Jacques Rousseau published Emile and The Social Contract, reshaping ideas on education and political legitimacy.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rousseau-publications_soh0ro?_a=BAMAMikS0",
-    "color": "#281f1a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "ukiyo-woodblock-prints",
     "friendly_name": "Ukiyo-e Color Prints Peak",
     "year": 1765,
@@ -9628,19 +8599,6 @@
     "image_height": 440
   },
   {
-    "name": "mozart-operas",
-    "friendly_name": "Mozart Composes Don Giovanni",
-    "year": 1787,
-    "category": "writing",
-    "description": "Mozart premiered Don Giovanni in Prague, one of his greatest operas blending comedy, drama, and musical genius.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mozart-operas_s98tex?_a=BAMAMikS0",
-    "color": "#291e17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "civil-constitution-clergy",
     "friendly_name": "Civil Constitution of the Clergy",
     "year": 1790,
@@ -9667,19 +8625,6 @@
     "image_height": 440
   },
   {
-    "name": "jacquard-loom-invented",
-    "friendly_name": "Jacquard Loom Textile Innovation",
-    "year": 1804,
-    "category": "invention",
-    "description": "Joseph Marie Jacquard invented a programmable loom using punch cards, revolutionizing textile weaving in France.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jacquard-loom-invented_jpdmyr?_a=BAMAMikS0",
-    "color": "#212123",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
     "name": "goethe-faust-publication",
     "friendly_name": "Goethe Publishes Faust",
     "year": 1808,
@@ -9688,19 +8633,6 @@
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goethe-faust-publication_vh3sqy?_a=BAMAMikS0",
     "color": "#24201d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440
-  },
-  {
-    "name": "beethoven-symphony-nine",
-    "friendly_name": "Beethoven Composes Symphony No. 9",
-    "year": 1824,
-    "category": "writing",
-    "description": "Beethoven premiered his Ninth Symphony in Vienna, featuring the choral finale \"Ode to Joy.\"",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/beethoven-symphony-nine_bwwb5j?_a=BAMAMikS0",
-    "color": "#202125",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
