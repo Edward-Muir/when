@@ -115,5 +115,20 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440
+  },
+  {
+    "name": "human-genome-completed-duplicate",
+    "friendly_name": "Human Genome Sequenced",
+    "year": 2003,
+    "category": "medicine",
+    "description": "Scientists completed mapping the entire human genetic code.",
+    "difficulty": "medium",
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/human-genome-completed_wugkwh?_a=BAMAMikS0",
+    "image_width": 330,
+    "image_height": 440,
+    "wikipedia_views": 162306,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Human_genome",
+    "color": "#1b2130",
+    "text_color": "light"
   }
 ]

@@ -56,9 +56,9 @@ for (const file of files) {
   const events = JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, file), 'utf8'));
   loaded[file] = events;
   for (const event of events) {
-    // Slugs are meant to be globally unique but two pre-existing pairs are not
-    // (human-genome-completed, first-pharmacopoeia). That is someone else's bug, so it
-    // is only fatal when a rewrite actually targets an ambiguous slug.
+    // Slugs are globally unique and pinned by src/utils/eventSlugUniqueness.test.ts,
+    // but don't assume it here: a collision is only fatal when a rewrite actually
+    // targets an ambiguous slug, and warning is more useful than crashing.
     const entries = catalogue.get(event.name) || [];
     entries.push({ file, event });
     catalogue.set(event.name, entries);

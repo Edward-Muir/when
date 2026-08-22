@@ -98,9 +98,20 @@ Two traps found doing this:
   similar-description, so deleting `"in 1966"` from two sibling cards _raises_ their
   similarity and manufactures new near-duplicate pairs. Capture a baseline before editing and
   diff against it; don't read the after-state cold.
-- **Two slugs are not unique** (`human-genome-completed`, `first-pharmacopoeia` — the latter
-  spanning years 65 and 1546). Pre-existing, but any slug-keyed tool has to decide what to do
-  about them.
+- **Slug uniqueness is now pinned** by `src/utils/eventSlugUniqueness.test.ts`, across
+  `deprecated.json` as well as the manifest. It has to be: `buildEventsByName`
+  (`statsStorage.ts`) is a last-write-wins `Map`, so a duplicate slug doesn't error — it
+  silently makes one of the two events unreachable, and the collection then renders the
+  _other_ card for it. Two pairs had drifted that way and are fixed:
+  `human-genome-completed` was one event filed twice (merged; the twin is retired), and
+  `first-pharmacopoeia` was two unrelated events 1,481 years apart — the year-65 Dioscorides
+  card is now `dioscorides-de-materia-medica`, and 1546 Nuremberg keeps the original slug
+  because that is where lookups already resolved, so existing collections are unaffected.
+  Its borrowed artwork was dropped: both cards pointed at the one asset, which depicts a
+  Roman herbalist, so the 1546 card now renders the category-icon fallback and needs art.
+  Note the surviving asset's `public_id` still reads `first-pharmacopoeia_egs3i1` while
+  belonging to the Dioscorides card — `image_url` is explicit per event, so the mismatch is
+  cosmetic, but don't infer a slug from a `public_id`.
 
 Only `friendly_name` was ever touched. Never rewrite the `name` slug: it is the identity used
 for dedup, collection tracking and recency.
