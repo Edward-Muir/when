@@ -161,6 +161,7 @@ valid JSON array format. The file does not determine the category; the `category
 npm run find-duplicates  # Check for duplicate names
 npm run typecheck        # Category/difficulty values are typed
 npm test -- --watchAll=false eventNameLength   # 35-char friendly_name limit
+npm test -- --watchAll=false eventDateClues    # No dates in player-visible text
 npm run build            # Verify JSON is valid
 ```
 
@@ -187,6 +188,12 @@ npm run build            # Verify JSON is valid
 - 1-2 sentences
 - Include key figures, locations, or significance
 - No speculation or editorializing
+- **Never state the date.** No year, decade, century or `NNN CE/BCE` reference — not in
+  `description` and not in `friendly_name`. Placing the card _is_ the game, and both fields
+  are shown to a player who has not placed it yet (`friendly_name` sits on the card face at
+  all times). Write "Lottery won the first official Grand National at Aintree", not "…at
+  Aintree in 1839". Relative durations are fine — "a 27-year war" describes the event, it
+  doesn't answer the question. Enforced by `src/utils/eventDateClues.test.ts`.
 
 ## Examples by Category
 
@@ -278,5 +285,7 @@ npm run build            # Verify JSON is valid
 4. **Category mismatch** - A battle is `warfare`, not `diplomacy`
 5. **Too long descriptions** - Keep under 150 characters
 6. **`friendly_name` over 35 characters** - fails `eventNameLength.test.ts`
-7. **Invalid JSON** - Missing commas, unclosed brackets
-8. **Non-unique names** - `name` field must be globally unique
+7. **A date in the description or title** - "in 1839", "the 1960s", "18th-century",
+   "410 CE" all give away the answer. Fails `eventDateClues.test.ts`
+8. **Invalid JSON** - Missing commas, unclosed brackets
+9. **Non-unique names** - `name` field must be globally unique

@@ -2025,7 +2025,7 @@ const SEARCH_OVERRIDES = {
   'caral-civilization': 'Caral',
   'aboriginal-boomerang-hunting': 'Boomerang',
   'samoa-settlement-polynesia': 'Samoa',
-  'first-pharmacopoeia': 'De Materia Medica',
+  'dioscorides-de-materia-medica': 'De Materia Medica',
   'pliny-natural-history': 'Natural History (Pliny)',
   'roman-horse-breeding': 'Horses in the Roman Empire',
   'hipparcus-astronomy': 'Hipparchus',
