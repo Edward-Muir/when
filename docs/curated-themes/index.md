@@ -151,17 +151,16 @@ Pick the theme on its merits, then find out what is missing:
 A worked example, including the two traps that only show up on a real theme:
 [indonesia-theme.md](indonesia-theme.md). `theme:gap` filters to _playable_ events, so it cannot
 see slugs you just authored — project the band/spread over `playable + pending` or the numbers
-will describe a theme half its size. And `MIN_BAND_ZERO` is the constraint that actually bites: a
-regional theme rarely holds five globally-easy cards, and no `medium` label reaches band 0, so the
-footholds have to be found rather than graded into existence.
+will describe a theme half its size. And `MIN_BAND_ZERO` is the constraint that actually bites: band 0
+blends the `difficulty` label with how sparse the timeline is around the event, so a regional
+theme rarely holds enough of them and the footholds have to be found rather than graded into
+existence.
 
 **The real gate is images, not events.** `loadAllEvents` hides any event without Cloudinary
-art, so an unillustrated event can never be dealt. 325 events currently sit in that state and
-**324 of them are `sports`** — the curation in `sports-events/` was done and the images never
-followed, which is why the category has ~50 playable of 374. Getting those images would be the
-single highest-leverage catalogue action available, and needs no new research. The image
-pipeline lives outside this repo, so confirm it still runs before committing to a theme that
-needs new art.
+art, so an unillustrated event can never be dealt — which means `theme:gap` and the publish
+validator only ever see playable events, and a slug authored but not yet illustrated reads as
+unresolved. The image pipeline lives outside this repo, so confirm it still runs before
+committing to a theme that needs new art.
 
 ## The scripts duplicate src/, on purpose
 
