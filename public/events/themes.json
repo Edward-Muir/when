@@ -16,6 +16,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "turin-papyrus-map",
+    "friendly_name": "Turin Papyrus Mine Map",
+    "year": -1150,
+    "category": "writing",
+    "description": "Egyptian scribes drew the quarry roads and rock types of Wadi Hammamat, the oldest surviving geological map.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aegean-sponge-divers",
+    "friendly_name": "Aegean Sponge Divers",
+    "year": -1000,
+    "category": "trade",
+    "description": "Greek islanders dived on a single breath, weighted by a flat stone, to cut sponges free of the seabed.",
+    "difficulty": "medium"
+  },
+  {
     "name": "yan-shi-mechanical-man",
     "friendly_name": "Yan Shi's Mechanical Man",
     "year": -950,
@@ -29,6 +45,14 @@
     "year": -700,
     "category": "science",
     "description": "Babylonian astronomers applied their base-sixty numbering to time, splitting the hour into sixty minutes and each minute again.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gulf-pearl-diving",
+    "friendly_name": "Persian Gulf Pearl Diving",
+    "year": -700,
+    "category": "trade",
+    "description": "Divers worked the oyster beds off Bahrain on held breath, feeding a pearl trade that reached Assyria and India.",
     "difficulty": "medium"
   },
   {
@@ -48,12 +72,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "babylonian-world-map",
+    "friendly_name": "Babylonian Map of the World",
+    "year": -600,
+    "category": "writing",
+    "description": "A clay tablet showed Babylon at the centre of a disc-shaped earth ringed by a bitter river and distant islands.",
+    "difficulty": "medium"
+  },
+  {
     "name": "greek-symposium-wine",
     "friendly_name": "Wine at the Greek Symposium",
     "year": -600,
     "category": "art",
     "description": "Greek men drank wine mixed with water from a shared krater, pairing poetry and music with measured drinking.",
     "difficulty": "medium"
+  },
+  {
+    "name": "anaximander-earth-in-space",
+    "friendly_name": "Anaximander's Floating Earth",
+    "year": -560,
+    "category": "science",
+    "description": "The Milesian philosopher argued Earth hangs unsupported in space, resting on nothing at all.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "scyllis-combat-diver",
+    "friendly_name": "Scyllis the Combat Diver",
+    "year": -480,
+    "category": "warfare",
+    "description": "Herodotus recorded a Greek diver slipping among the Persian fleet at Artemisium to cut its ships adrift in a gale.",
+    "difficulty": "hard"
   },
   {
     "name": "xerxes-hellespont-bridge",
@@ -72,12 +120,28 @@
     "difficulty": "hard"
   },
   {
+    "name": "irrational-numbers-discovered",
+    "friendly_name": "Irrational Numbers Discovered",
+    "year": -450,
+    "category": "science",
+    "description": "Pythagoreans found that the square root of two cannot be written as a ratio of two whole numbers.",
+    "difficulty": "medium"
+  },
+  {
     "name": "metonic-cycle",
     "friendly_name": "Metonic Cycle Discovered",
     "year": -432,
     "category": "science",
     "description": "Athenian astronomer Meton showed that nineteen solar years almost exactly equal two hundred and thirty-five lunar months.",
     "difficulty": "hard"
+  },
+  {
+    "name": "syracuse-underwater-palisade",
+    "friendly_name": "Divers Cut Syracuse's Stakes",
+    "year": -414,
+    "category": "warfare",
+    "description": "Athenian divers sawed through the piles Syracuse had sunk across its harbour mouth to trap the besieging fleet.",
+    "difficulty": "very-hard"
   },
   {
     "name": "punch-marked-coins-india",
@@ -104,6 +168,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "aristotle-celestial-spheres",
+    "friendly_name": "Aristotle's Celestial Spheres",
+    "year": -350,
+    "category": "science",
+    "description": "Aristotle placed a motionless Earth inside nested crystalline spheres carrying the planets and stars.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "aristotle-diving-kettle",
+    "friendly_name": "Aristotle's Diving Kettle",
+    "year": -350,
+    "category": "science",
+    "description": "Aristotle described divers drawing breath from an upturned cauldron lowered with them, the first account of a diving bell.",
+    "difficulty": "hard"
+  },
+  {
     "name": "philip-ii-macedon-assassinated",
     "friendly_name": "Philip II of Macedon Killed",
     "year": -336,
@@ -112,11 +192,27 @@
     "difficulty": "medium"
   },
   {
+    "name": "alexander-diving-bell",
+    "friendly_name": "Alexander's Descent in a Bell",
+    "year": -332,
+    "category": "invention",
+    "description": "Legend held that Alexander the Great was lowered beneath the sea at Tyre in a glass barrel to watch the fish.",
+    "difficulty": "medium"
+  },
+  {
     "name": "alexander-coinage-empire",
     "friendly_name": "Alexander's Imperial Coinage",
     "year": -330,
     "category": "commerce",
     "description": "Alexander the Great's silver tetradrachms carried one coin standard from Greece to the Indus, outlasting him.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "archimedes-measures-circle",
+    "friendly_name": "Archimedes Bounds Pi",
+    "year": -250,
+    "category": "science",
+    "description": "Archimedes squeezed the circle between inscribed and circumscribed polygons to pin down pi.",
     "difficulty": "medium"
   },
   {
@@ -134,6 +230,30 @@
     "category": "disasters",
     "description": "A quake shattered the Colossus of Rhodes at the knees, and the fallen bronze wonder was left lying where it broke.",
     "difficulty": "medium"
+  },
+  {
+    "name": "mawangdui-silk-maps",
+    "friendly_name": "Mawangdui Silk Maps",
+    "year": -168,
+    "category": "writing",
+    "description": "Maps painted on silk and buried in a Han noble's tomb showed rivers, garrisons and roads drawn close to scale.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "nine-chapters-mathematical-art",
+    "friendly_name": "Nine Chapters on Mathematical Art",
+    "year": -100,
+    "category": "writing",
+    "description": "The Chinese classic set out problems using negative numbers and elimination on systems of equations.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "roman-urinatores",
+    "friendly_name": "Rome's Salvage Divers",
+    "year": -100,
+    "category": "trade",
+    "description": "The urinatores, a guild of Roman divers, recovered sunken cargo and dropped goods from the Tiber and the port of Ostia.",
+    "difficulty": "hard"
   },
   {
     "name": "caesar-rhine-bridge",
@@ -168,6 +288,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "ptolemy-geographia",
+    "friendly_name": "Ptolemy's Geographia",
+    "year": 150,
+    "category": "writing",
+    "description": "Ptolemy set out coordinates for thousands of places and rules for projecting a round earth onto a flat sheet.",
+    "difficulty": "medium"
+  },
+  {
     "name": "commodus-assassinated",
     "friendly_name": "Commodus Assassinated",
     "year": 192,
@@ -176,12 +304,44 @@
     "difficulty": "hard"
   },
   {
+    "name": "ama-divers-japan",
+    "friendly_name": "Ama Divers of Japan",
+    "year": 250,
+    "category": "craft",
+    "description": "Chinese chronicles described Japanese women diving for shellfish and pearls, a breath-hold trade still practised today.",
+    "difficulty": "medium"
+  },
+  {
     "name": "ma-jun-south-pointing-chariot",
     "friendly_name": "South-Pointing Chariot",
     "year": 255,
     "category": "invention",
     "description": "Ma Jun built a geared cart whose figure kept pointing south however the vehicle turned, using no magnet at all.",
     "difficulty": "medium"
+  },
+  {
+    "name": "pei-xiu-map-principles",
+    "friendly_name": "Pei Xiu's Mapping Principles",
+    "year": 267,
+    "category": "science",
+    "description": "The Chinese minister Pei Xiu set out six rules for mapmaking, among them scale, grid and measured distance.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "san-marino-founded",
+    "friendly_name": "San Marino Founded",
+    "year": 301,
+    "category": "empires",
+    "description": "A stonemason fleeing persecution settled Monte Titano, founding what became Europe's oldest surviving republic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "peutinger-road-map",
+    "friendly_name": "Peutinger Table Road Map",
+    "year": 350,
+    "category": "writing",
+    "description": "A scroll map squeezed the Roman road network into a long strip, listing way stations and the distances between them.",
+    "difficulty": "hard"
   },
   {
     "name": "hypatia-of-alexandria-killed",
@@ -197,6 +357,14 @@
     "year": 525,
     "category": "writing",
     "description": "The monk Dionysius Exiguus built an Easter table numbering years from the presumed birth of Christ, creating the AD era.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "madaba-mosaic-map",
+    "friendly_name": "Madaba Mosaic Map",
+    "year": 560,
+    "category": "art",
+    "description": "A church floor mosaic in Jordan laid out the Holy Land and its towns, with the oldest surviving plan of Jerusalem.",
     "difficulty": "hard"
   },
   {
@@ -224,6 +392,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "first-bulgarian-empire-founded",
+    "friendly_name": "First Bulgarian Empire Founded",
+    "year": 681,
+    "category": "empires",
+    "description": "Khan Asparuh's Bulgars beat the Byzantines and won a treaty recognising their state south of the Danube.",
+    "difficulty": "hard"
+  },
+  {
     "name": "japan-smallpox-epidemic",
     "friendly_name": "Japanese Smallpox Epidemic",
     "year": 735,
@@ -248,12 +424,76 @@
     "difficulty": "medium"
   },
   {
+    "name": "al-battani-solar-year",
+    "friendly_name": "Al-Battani Refines the Solar Year",
+    "year": 900,
+    "category": "science",
+    "description": "The Syrian astronomer remeasured the length of the year and showed that the Sun's apogee slowly shifts.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "tomislav-crowned-croatia",
+    "friendly_name": "Tomislav Crowned in Croatia",
+    "year": 925,
+    "category": "empires",
+    "description": "Tomislav drew the Croatian duchies together and is remembered as the first king of a Croatian kingdom.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gorm-the-old-unites-denmark",
+    "friendly_name": "Gorm the Old Unites Denmark",
+    "year": 936,
+    "category": "empires",
+    "description": "Gorm ruled a single Danish realm from Jelling, and Europe's oldest monarchy still traces its line to him.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baptism-of-poland-mieszko",
+    "friendly_name": "Baptism of Poland",
+    "year": 966,
+    "category": "empires",
+    "description": "Mieszko I accepted Christianity, binding the Piast realm to Latin Europe and founding the Polish state.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nikephoros-phokas-assassinated",
     "friendly_name": "Nikephoros Phokas Killed",
     "year": 969,
     "category": "empires",
     "description": "The Byzantine emperor was killed in the palace by his nephew John Tzimiskes, who then took the throne.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "stephen-first-king-hungary",
+    "friendly_name": "Stephen Crowned King of Hungary",
+    "year": 1000,
+    "category": "empires",
+    "description": "Stephen took a crown sent by the pope, turning the Magyar tribal confederation into a Christian kingdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ibn-al-haytham-doubts-ptolemy",
+    "friendly_name": "Doubts About Ptolemy Written",
+    "year": 1028,
+    "category": "science",
+    "description": "Ibn al-Haytham catalogued the physical impossibilities in Ptolemy's cosmos, opening a long era of reform.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "luoyang-bridge-quanzhou",
+    "friendly_name": "Luoyang Bridge Completed",
+    "year": 1059,
+    "category": "architecture",
+    "description": "Cai Xiang's long stone beam bridge crossed a Fujian estuary on foundations that farmed oysters cemented together.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kingdom-of-bohemia-established",
+    "friendly_name": "Kingdom of Bohemia Established",
+    "year": 1085,
+    "category": "empires",
+    "description": "Vratislav II was crowned the first king of Bohemia, the state at the root of the modern Czech lands.",
+    "difficulty": "hard"
   },
   {
     "name": "nizam-al-mulk-assassinated",
@@ -272,12 +512,84 @@
     "difficulty": "hard"
   },
   {
+    "name": "yu-ji-tu-grid-map",
+    "friendly_name": "Yu Ji Tu Map Carved in Stone",
+    "year": 1136,
+    "category": "writing",
+    "description": "Song engravers cut a map of China into stone over a square grid, its coastline and rivers strikingly accurate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "portugal-becomes-a-kingdom",
+    "friendly_name": "Portugal Becomes a Kingdom",
+    "year": 1143,
+    "category": "empires",
+    "description": "Afonso Henriques won recognition from Leon as king, setting Portugal apart as a kingdom of its own.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "privilegium-minus-austria",
+    "friendly_name": "Charter That Created Austria",
+    "year": 1156,
+    "category": "law",
+    "description": "The Privilegium Minus raised the Babenberg march to a duchy of Austria with its own law and succession.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "serbian-kingdom-stefan-crowned",
+    "friendly_name": "Serbia Becomes a Kingdom",
+    "year": 1217,
+    "category": "empires",
+    "description": "Stefan Nemanjic was crowned the first king of Serbia, uniting the Serbian lands under a single crown.",
+    "difficulty": "hard"
+  },
+  {
     "name": "aqua-vitae-distilled",
     "friendly_name": "Aqua Vitae Distilled from Wine",
     "year": 1250,
     "category": "craft",
     "description": "Italian physicians distilled wine into aqua vitae, the first spirit drunk in Europe as medicine and then for pleasure.",
     "difficulty": "hard"
+  },
+  {
+    "name": "bacon-undersea-instruments",
+    "friendly_name": "Bacon Imagines Undersea Walking",
+    "year": 1250,
+    "category": "writing",
+    "description": "Roger Bacon wrote of instruments by which men might walk on the bed of the sea without danger to the body.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "mindaugas-crowned-lithuania",
+    "friendly_name": "Mindaugas Crowned in Lithuania",
+    "year": 1253,
+    "category": "empires",
+    "description": "Mindaugas bound the Lithuanian tribes into one realm and became the only crowned king Lithuania has had.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "tusi-couple-planetary-model",
+    "friendly_name": "Al-Tusi Devises the Tusi Couple",
+    "year": 1261,
+    "category": "science",
+    "description": "The Maragha astronomer built straight-line motion out of two rotating circles, repairing Ptolemy's cosmos.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "andorra-pareatges-signed",
+    "friendly_name": "Charters That Created Andorra",
+    "year": 1278,
+    "category": "diplomacy",
+    "description": "A bishop and a count settled their quarrel by sharing the valleys, creating the co-principality of Andorra.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "hereford-mappa-mundi",
+    "friendly_name": "Hereford Mappa Mundi",
+    "year": 1300,
+    "category": "art",
+    "description": "The largest surviving medieval world map put Jerusalem at its centre and east at the top, mixing scripture with geography.",
+    "difficulty": "medium"
   },
   {
     "name": "sandglass-at-sea",
@@ -294,6 +606,14 @@
     "category": "architecture",
     "description": "Florence rebuilt its shop-lined stone bridge over the Arno after a flood swept the previous crossing away.",
     "difficulty": "medium"
+  },
+  {
+    "name": "ibn-al-shatir-lunar-model",
+    "friendly_name": "Ibn Al-Shatir's Lunar Model",
+    "year": 1350,
+    "category": "science",
+    "description": "The Damascus timekeeper modelled the Moon and planets without Ptolemy's equant, geometry Copernicus later echoed.",
+    "difficulty": "very-hard"
   },
   {
     "name": "strasbourg-clock-rooster",
@@ -320,6 +640,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "principality-of-moldavia-founded",
+    "friendly_name": "Principality of Moldavia Founded",
+    "year": 1359,
+    "category": "empires",
+    "description": "Bogdan I threw off Hungarian overlordship to found Moldavia, the state modern Moldova traces itself to.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "catalan-atlas",
+    "friendly_name": "The Catalan Atlas",
+    "year": 1375,
+    "category": "writing",
+    "description": "A Majorcan workshop produced a lavish sea atlas showing Mansa Musa, the roads to Asia and a drawn compass rose.",
+    "difficulty": "hard"
+  },
+  {
     "name": "wat-tyler-killed",
     "friendly_name": "Wat Tyler Killed at Smithfield",
     "year": 1381,
@@ -333,6 +669,14 @@
     "year": 1386,
     "category": "invention",
     "description": "The faceless wrought-iron clock at Salisbury began striking the hours, and still runs as one of the oldest of its kind.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kangnido-world-map",
+    "friendly_name": "Kangnido World Map",
+    "year": 1402,
+    "category": "writing",
+    "description": "Korean scholars merged Chinese, Islamic and Japanese sources into a world map reaching as far as Africa and Europe.",
     "difficulty": "hard"
   },
   {
@@ -350,6 +694,22 @@
     "category": "architecture",
     "description": "The Orloj was mounted on Prague's Old Town Hall, showing the hour, the zodiac and the positions of sun and moon.",
     "difficulty": "medium"
+  },
+  {
+    "name": "cusa-infinite-universe",
+    "friendly_name": "Cusa Denies the Cosmic Centre",
+    "year": 1440,
+    "category": "science",
+    "description": "Nicholas of Cusa argued the universe has no centre and no outer edge, and that stars are other suns.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "printed-ptolemy-maps",
+    "friendly_name": "Ptolemy's Maps Printed",
+    "year": 1477,
+    "category": "writing",
+    "description": "A Bologna press issued the Geographia with engraved maps, putting identical copies of one world picture into many hands.",
+    "difficulty": "hard"
   },
   {
     "name": "pazzi-conspiracy",
@@ -384,6 +744,14 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "leonardo-diving-apparatus",
+    "friendly_name": "Leonardo's Diving Apparatus",
+    "year": 1500,
+    "category": "invention",
+    "description": "Leonardo da Vinci sketched a leather diving suit, webbed gloves and a breathing tube, withholding it for fear of use in war.",
+    "difficulty": "medium"
+  },
+  {
     "name": "henlein-portable-watch",
     "friendly_name": "Henlein's Portable Watch",
     "year": 1510,
@@ -408,11 +776,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "gustav-vasa-elected-king",
+    "friendly_name": "Gustav Vasa Crowned in Sweden",
+    "year": 1523,
+    "category": "empires",
+    "description": "Gustav Vasa's election as king broke the Kalmar Union and set Sweden on its own course as a nation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nemi-diving-bell",
+    "friendly_name": "Diving Bell at Lake Nemi",
+    "year": 1535,
+    "category": "invention",
+    "description": "Guglielmo de Lorena descended in a bell resting on his shoulders to survey Caligula's sunken pleasure barges.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "great-debasement-henry-viii",
     "friendly_name": "Henry VIII's Great Debasement",
     "year": 1544,
     "category": "commerce",
     "description": "Henry VIII cut the silver out of English coins to fund his wars, and the crown's money lost most of its value.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cardano-ars-magna",
+    "friendly_name": "Cardano Publishes Ars Magna",
+    "year": 1545,
+    "category": "writing",
+    "description": "Cardano printed general solutions to the cubic and quartic, and met square roots of negative numbers.",
     "difficulty": "hard"
   },
   {
@@ -448,6 +840,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "tycho-new-star",
+    "friendly_name": "Tycho's New Star",
+    "year": 1572,
+    "category": "science",
+    "description": "A brilliant new star appeared among the fixed stars, proving the heavens beyond the Moon do change.",
+    "difficulty": "hard"
+  },
+  {
     "name": "gregorian-calendar-reform",
     "friendly_name": "Gregorian Calendar Adopted",
     "year": 1582,
@@ -472,6 +872,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "ricci-chinese-world-map",
+    "friendly_name": "Ricci's Chinese World Map",
+    "year": 1602,
+    "category": "writing",
+    "description": "Matteo Ricci and Chinese scholars printed a world map showing the Americas, with China set near the centre of the sheet.",
+    "difficulty": "hard"
+  },
+  {
     "name": "pont-neuf-paris",
     "friendly_name": "Pont Neuf Completed",
     "year": 1607,
@@ -488,6 +896,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "napier-logarithms",
+    "friendly_name": "Napier Invents Logarithms",
+    "year": 1614,
+    "category": "science",
+    "description": "John Napier published tables turning multiplication into addition, transforming astronomical calculation.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "drebbel-submarine-thames",
+    "friendly_name": "Drebbel's Submarine Voyage",
+    "year": 1620,
+    "category": "invention",
+    "description": "Cornelis Drebbel rowed a greased leather boat beneath the Thames, the first navigable submarine ever demonstrated.",
+    "difficulty": "hard"
+  },
+  {
     "name": "wallenstein-assassinated",
     "friendly_name": "Wallenstein Assassinated",
     "year": 1634,
@@ -496,12 +920,28 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "blaeu-atlas-maior",
+    "friendly_name": "Blaeu's Atlas Maior",
+    "year": 1662,
+    "category": "writing",
+    "description": "Joan Blaeu published a multi-volume Amsterdam atlas of hundreds of hand-coloured maps, the costliest book of its age.",
+    "difficulty": "hard"
+  },
+  {
     "name": "first-colonial-rum-distillery",
     "friendly_name": "First Colonial Rum Distillery",
     "year": 1664,
     "category": "craft",
     "description": "A Staten Island distillery began turning Caribbean molasses into rum, seeding a trade that fuelled Atlantic commerce.",
     "difficulty": "hard"
+  },
+  {
+    "name": "vasa-cannon-salvaged",
+    "friendly_name": "Vasa's Cannon Salvaged",
+    "year": 1664,
+    "category": "craft",
+    "description": "Divers working from a lead bell hauled dozens of bronze guns off a Swedish warship lying deep in Stockholm harbour.",
+    "difficulty": "very-hard"
   },
   {
     "name": "etna-catania-eruption",
@@ -528,12 +968,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "halley-diving-bell",
+    "friendly_name": "Halley's Diving Bell",
+    "year": 1690,
+    "category": "invention",
+    "description": "Edmond Halley kept divers down for hours by sending weighted barrels of fresh air to a bell sunk in the Thames.",
+    "difficulty": "hard"
+  },
+  {
     "name": "longitude-act",
     "friendly_name": "Longitude Act Passed",
     "year": 1714,
     "category": "law",
     "description": "Parliament offered a fortune to anyone who could fix a ship's longitude at sea, a problem that came down to keeping time.",
     "difficulty": "medium"
+  },
+  {
+    "name": "lethbridge-diving-engine",
+    "friendly_name": "Lethbridge's Diving Engine",
+    "year": 1715,
+    "category": "invention",
+    "description": "John Lethbridge sealed himself into an oak barrel with leather armholes and stripped wrecks for the East India Company.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "liechtenstein-principality-created",
+    "friendly_name": "Liechtenstein Principality Made",
+    "year": 1719,
+    "category": "law",
+    "description": "The emperor merged Schellenberg and Vaduz into one imperial principality named for the family that bought them.",
+    "difficulty": "very-hard"
   },
   {
     "name": "marseille-plague",
@@ -552,6 +1016,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "cassini-map-of-france",
+    "friendly_name": "Cassini Survey of France",
+    "year": 1744,
+    "category": "science",
+    "description": "The Cassini family triangulated France, yielding the first national map built from measured angles rather than report.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kant-island-universes",
+    "friendly_name": "Kant Proposes Island Universes",
+    "year": 1755,
+    "category": "science",
+    "description": "Kant argued the faint nebulae are whole systems of stars like the Milky Way, each an island universe.",
+    "difficulty": "hard"
+  },
+  {
     "name": "guinness-brewery-lease",
     "friendly_name": "Guinness Leases St James's Gate",
     "year": 1759,
@@ -566,6 +1046,14 @@
     "category": "revolution",
     "description": "The Russian emperor was deposed by guards loyal to his wife Catherine and died in custody days afterwards.",
     "difficulty": "hard"
+  },
+  {
+    "name": "bayes-theorem",
+    "friendly_name": "Bayes' Theorem Published",
+    "year": 1763,
+    "category": "science",
+    "description": "Thomas Bayes' posthumous essay showed how evidence should update the probability of a hypothesis.",
+    "difficulty": "medium"
   },
   {
     "name": "moscow-plague-riot",
@@ -584,6 +1072,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "turtle-submarine-attack",
+    "friendly_name": "The Turtle Attacks a Warship",
+    "year": 1776,
+    "category": "warfare",
+    "description": "David Bushnell's one-man submarine tried to screw a powder charge into a British flagship's hull in New York harbour.",
+    "difficulty": "hard"
+  },
+  {
     "name": "schweppes-bottled-soda-water",
     "friendly_name": "Schweppes Bottles Soda Water",
     "year": 1783,
@@ -592,11 +1088,35 @@
     "difficulty": "medium"
   },
   {
+    "name": "herschel-milky-way-shape",
+    "friendly_name": "Herschel Maps the Milky Way",
+    "year": 1785,
+    "category": "science",
+    "description": "By counting stars in every direction, William Herschel drew the first map of our galaxy's shape.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "smeaton-diving-bell-pump",
+    "friendly_name": "Smeaton's Air-Pumped Bell",
+    "year": 1788,
+    "category": "invention",
+    "description": "John Smeaton fed a cast-iron diving bell from a force pump on the surface, freeing divers from a fixed supply of air.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "watt-centrifugal-governor",
     "friendly_name": "Centrifugal Governor",
     "year": 1788,
     "category": "invention",
     "description": "James Watt fitted spinning weights that throttled a steam engine to hold its speed steady with no attendant.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ordnance-survey-founded",
+    "friendly_name": "Ordnance Survey Founded",
+    "year": 1791,
+    "category": "science",
+    "description": "Britain began mapping the whole country at one inch to the mile, working out from a measured baseline on Hounslow Heath.",
     "difficulty": "medium"
   },
   {
@@ -614,6 +1134,22 @@
     "category": "revolution",
     "description": "The radical journalist was killed at home by Charlotte Corday, who held him responsible for the Terror.",
     "difficulty": "medium"
+  },
+  {
+    "name": "gauss-disquisitiones",
+    "friendly_name": "Gauss Publishes Disquisitiones",
+    "year": 1801,
+    "category": "writing",
+    "description": "Carl Friedrich Gauss systematised number theory, introducing modular arithmetic and congruences.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-trigonometrical-survey",
+    "friendly_name": "Great Trigonometrical Survey",
+    "year": 1802,
+    "category": "science",
+    "description": "Surveyors began chaining a meridian arc across India, the measurement that later gave Himalayan peaks their heights.",
+    "difficulty": "hard"
   },
   {
     "name": "pontcysyllte-aqueduct",
@@ -648,6 +1184,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "deane-diving-helmet",
+    "friendly_name": "The Deane Diving Helmet",
+    "year": 1823,
+    "category": "invention",
+    "description": "Brothers John and Charles Deane turned a firefighting smoke helmet into an open diving helmet fed by an air hose.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "olbers-dark-night-sky",
+    "friendly_name": "Olbers' Dark Night Sky Paradox",
+    "year": 1823,
+    "category": "science",
+    "description": "Olbers asked why the night is dark, when an endless and ageless universe of stars should blaze everywhere.",
+    "difficulty": "hard"
+  },
+  {
     "name": "american-temperance-society",
     "friendly_name": "American Temperance Society",
     "year": 1826,
@@ -656,11 +1208,43 @@
     "difficulty": "hard"
   },
   {
+    "name": "non-euclidean-geometry",
+    "friendly_name": "Non-Euclidean Geometry Published",
+    "year": 1829,
+    "category": "science",
+    "description": "Lobachevsky described a consistent geometry in which parallel lines through a point are not unique.",
+    "difficulty": "medium"
+  },
+  {
     "name": "jackson-assassination-attempt",
     "friendly_name": "Attempt on Andrew Jackson",
     "year": 1835,
     "category": "revolution",
     "description": "Both pistols misfired when a house painter confronted the president at the Capitol, the first attempt on one in office.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "siebe-closed-diving-dress",
+    "friendly_name": "Siebe's Closed Diving Dress",
+    "year": 1837,
+    "category": "invention",
+    "description": "Augustus Siebe sealed a helmet to a watertight suit with an outlet valve, creating the standard diving dress.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "bessel-stellar-parallax",
+    "friendly_name": "First Stellar Parallax Measured",
+    "year": 1838,
+    "category": "science",
+    "description": "Bessel caught the tiny yearly wobble of the star 61 Cygni, yielding the first true distance to a star.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "luxembourg-independence-london",
+    "friendly_name": "Luxembourg Becomes Independent",
+    "year": 1839,
+    "category": "diplomacy",
+    "description": "A treaty in London partitioned the grand duchy, leaving a smaller Luxembourg as a sovereign state.",
     "difficulty": "hard"
   },
   {
@@ -688,6 +1272,38 @@
     "difficulty": "medium"
   },
   {
+    "name": "galois-group-theory",
+    "friendly_name": "Galois' Group Theory Published",
+    "year": 1846,
+    "category": "science",
+    "description": "Liouville printed Evariste Galois' papers, whose groups explained why the general quintic has no formula.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "dover-calais-submarine-cable",
+    "friendly_name": "First Undersea Telegraph Cable",
+    "year": 1851,
+    "category": "media",
+    "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "boole-laws-of-thought",
+    "friendly_name": "Boole's Laws of Thought",
+    "year": 1854,
+    "category": "science",
+    "description": "George Boole recast logic as algebra on true and false, the calculus digital circuits would later use.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "snow-cholera-map",
+    "friendly_name": "Snow's Cholera Map of Soho",
+    "year": 1854,
+    "category": "medicine",
+    "description": "John Snow plotted cholera deaths as bars on a street plan, showing them clustered around a single water pump.",
+    "difficulty": "medium"
+  },
+  {
     "name": "great-clock-westminster",
     "friendly_name": "Great Clock of Westminster",
     "year": 1859,
@@ -696,11 +1312,35 @@
     "difficulty": "easy"
   },
   {
+    "name": "kirchhoff-stellar-composition",
+    "friendly_name": "Starlight Reveals Its Elements",
+    "year": 1859,
+    "category": "science",
+    "description": "Kirchhoff and Bunsen showed that dark lines in a spectrum name the elements, so the Sun could be read.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kingdom-of-italy-proclaimed",
+    "friendly_name": "Kingdom of Italy Proclaimed",
+    "year": 1861,
+    "category": "empires",
+    "description": "The first national parliament meeting in Turin proclaimed Victor Emmanuel II king of a united Italy.",
+    "difficulty": "easy"
+  },
+  {
     "name": "us-greenbacks-issued",
     "friendly_name": "US Greenbacks Issued",
     "year": 1862,
     "category": "law",
     "description": "To fund the Civil War, Congress issued unbacked paper dollars nicknamed greenbacks and made them legal tender.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hunley-sinks-housatonic",
+    "friendly_name": "Hunley Sinks the Housatonic",
+    "year": 1864,
+    "category": "warfare",
+    "description": "A hand-cranked Confederate submarine drove a spar torpedo into a Union sloop, then vanished with all hands aboard.",
     "difficulty": "medium"
   },
   {
@@ -720,11 +1360,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "challenger-expedition",
+    "friendly_name": "HMS Challenger Expedition",
+    "year": 1872,
+    "category": "science",
+    "description": "A converted Royal Navy corvette set out to sound and dredge the world's oceans, founding the science of oceanography.",
+    "difficulty": "medium"
+  },
+  {
     "name": "german-gold-mark-adopted",
     "friendly_name": "Germany Adopts The Gold Mark",
     "year": 1873,
     "category": "law",
     "description": "Paid a French war indemnity in gold, the new German Empire dropped silver for a gold mark and pulled Europe onto the gold standard.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cantor-uncountable-infinity",
+    "friendly_name": "Cantor Proves Infinities Differ",
+    "year": 1874,
+    "category": "science",
+    "description": "Georg Cantor showed the real numbers cannot be counted off, so some infinities are larger than others.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "romania-independence-recognized",
+    "friendly_name": "Romania Wins Independence",
+    "year": 1878,
+    "category": "diplomacy",
+    "description": "The great powers recognised Romania as a sovereign state after it fought the Ottomans alongside Russia.",
     "difficulty": "hard"
   },
   {
@@ -741,6 +1405,22 @@
     "year": 1894,
     "category": "medicine",
     "description": "Alexandre Yersin isolated the bacterium behind bubonic plague during the Hong Kong epidemic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "antikythera-wreck-found",
+    "friendly_name": "Antikythera Wreck Found",
+    "year": 1900,
+    "category": "science",
+    "description": "Greek sponge divers sheltering from a gale found a Roman wreck holding bronzes, marbles and a geared bronze computer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hilbert-problems",
+    "friendly_name": "Hilbert's Twenty-Three Problems",
+    "year": 1900,
+    "category": "science",
+    "description": "David Hilbert set out unsolved problems at the Paris congress, framing an agenda for mathematics.",
     "difficulty": "hard"
   },
   {
@@ -768,6 +1448,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "aerial-survey-photography",
+    "friendly_name": "Aerial Photos Map the Trenches",
+    "year": 1915,
+    "category": "invention",
+    "description": "Cameras flown over the Western Front let armies redraw trench maps within hours, founding modern photographic survey.",
+    "difficulty": "hard"
+  },
+  {
     "name": "daylight-saving-time",
     "friendly_name": "Daylight Saving Time Adopted",
     "year": 1916,
@@ -776,11 +1464,27 @@
     "difficulty": "easy"
   },
   {
+    "name": "finland-declares-independence",
+    "friendly_name": "Finland Declares Independence",
+    "year": 1917,
+    "category": "revolution",
+    "description": "The Finnish parliament declared the country independent of Russia as the Russian empire fell apart.",
+    "difficulty": "medium"
+  },
+  {
     "name": "pancho-villa-assassinated",
     "friendly_name": "Pancho Villa Assassinated",
     "year": 1923,
     "category": "revolution",
     "description": "The retired Mexican revolutionary general was ambushed by gunmen at Parral, three years after laying down arms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "godel-incompleteness-theorems",
+    "friendly_name": "Godel's Incompleteness Theorems",
+    "year": 1931,
+    "category": "science",
+    "description": "Kurt Godel proved that any consistent system rich enough for arithmetic holds truths it cannot prove.",
     "difficulty": "medium"
   },
   {
@@ -792,12 +1496,60 @@
     "difficulty": "easy"
   },
   {
+    "name": "bathysphere-descent",
+    "friendly_name": "The Bathysphere Descent",
+    "year": 1934,
+    "category": "science",
+    "description": "William Beebe and Otis Barton were winched half a mile down off Bermuda in a steel sphere, describing the life outside.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "turing-computable-numbers",
+    "friendly_name": "Turing Defines Computability",
+    "year": 1936,
+    "category": "science",
+    "description": "Alan Turing's paper on computable numbers described an abstract machine and problems no machine can settle.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zwicky-dark-matter",
+    "friendly_name": "Zwicky Infers Dark Matter",
+    "year": 1937,
+    "category": "science",
+    "description": "Galaxies in the Coma cluster moved far too fast for their visible mass, implying unseen matter holds them.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aqua-lung-invented",
+    "friendly_name": "The Aqua-Lung Invented",
+    "year": 1943,
+    "category": "invention",
+    "description": "Jacques Cousteau and Emile Gagnan's demand valve let a diver breathe compressed air at will, creating modern scuba.",
+    "difficulty": "easy"
+  },
+  {
     "name": "paricutin-volcano-born",
     "friendly_name": "Parícutin Erupts in a Cornfield",
     "year": 1943,
     "category": "nature",
     "description": "A Mexican farmer watched a fissure split his field and grow into a cinder cone hundreds of feet tall, burying two villages.",
     "difficulty": "medium"
+  },
+  {
+    "name": "iceland-becomes-republic",
+    "friendly_name": "Iceland Becomes a Republic",
+    "year": 1944,
+    "category": "revolution",
+    "description": "Icelanders voted to end the union with the Danish crown and founded their republic at Thingvellir.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "gamow-hot-big-bang",
+    "friendly_name": "Gamow's Hot Early Universe",
+    "year": 1946,
+    "category": "science",
+    "description": "Gamow argued the expanding universe began hot and dense enough to forge the lightest chemical elements.",
+    "difficulty": "hard"
   },
   {
     "name": "espresso-machine-crema",
@@ -824,6 +1576,22 @@
     "difficulty": "hard"
   },
   {
+    "name": "stellar-nucleosynthesis-b2fh",
+    "friendly_name": "Elements Forged Inside Stars",
+    "year": 1957,
+    "category": "science",
+    "description": "Burbidge, Fowler and Hoyle showed stars build nearly every heavy element and scatter them as they die.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "tharp-ocean-floor-map",
+    "friendly_name": "Tharp Maps the Ocean Floor",
+    "year": 1957,
+    "category": "science",
+    "description": "Marie Tharp and Bruce Heezen turned sounding data into a picture of the Atlantic seabed, revealing a rift along its ridge.",
+    "difficulty": "hard"
+  },
+  {
     "name": "mark-i-perceptron",
     "friendly_name": "Mark I Perceptron",
     "year": 1958,
@@ -838,6 +1606,22 @@
     "category": "craft",
     "description": "The first industrial robot arm went to work unloading a die-casting machine at a General Motors plant.",
     "difficulty": "medium"
+  },
+  {
+    "name": "cohen-continuum-hypothesis",
+    "friendly_name": "Continuum Hypothesis Independent",
+    "year": 1963,
+    "category": "science",
+    "description": "Paul Cohen's forcing method showed the continuum hypothesis can be neither proved nor disproved from set theory.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "malta-independence",
+    "friendly_name": "Malta Wins Independence",
+    "year": 1964,
+    "category": "revolution",
+    "description": "Malta became independent from Britain, ending a long run of rule by outside powers over the islands.",
+    "difficulty": "hard"
   },
   {
     "name": "si-second-caesium",
@@ -856,6 +1640,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "landsat-earth-imaging",
+    "friendly_name": "First Landsat Satellite",
+    "year": 1972,
+    "category": "science",
+    "description": "A NASA satellite began imaging the land surface in repeating swaths, giving mapmakers a continuous view from orbit.",
+    "difficulty": "medium"
+  },
+  {
     "name": "utc-leap-second",
     "friendly_name": "First Leap Second Added",
     "year": 1972,
@@ -872,6 +1664,38 @@
     "difficulty": "medium"
   },
   {
+    "name": "hawking-radiation",
+    "friendly_name": "Hawking Radiation Predicted",
+    "year": 1974,
+    "category": "science",
+    "description": "Hawking showed black holes are not entirely black: quantum effects make them glow and slowly evaporate.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "four-colour-theorem-proved",
+    "friendly_name": "Four Colour Theorem Proved",
+    "year": 1976,
+    "category": "science",
+    "description": "Appel and Haken showed four colours suffice for any map, the first major proof to lean on a computer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hydrothermal-vents-discovered",
+    "friendly_name": "Hydrothermal Vents Discovered",
+    "year": 1977,
+    "category": "science",
+    "description": "The submersible Alvin found hot vents on the Galapagos Rift crowded with life fed by chemistry rather than sunlight.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cosmic-inflation-theory",
+    "friendly_name": "Cosmic Inflation Proposed",
+    "year": 1980,
+    "category": "science",
+    "description": "Guth proposed the infant universe ballooned enormously in an instant, leaving it smooth and flat.",
+    "difficulty": "medium"
+  },
+  {
     "name": "sadat-assassinated",
     "friendly_name": "Anwar Sadat Assassinated",
     "year": 1981,
@@ -880,12 +1704,52 @@
     "difficulty": "medium"
   },
   {
+    "name": "classification-finite-simple-groups",
+    "friendly_name": "Finite Simple Groups Classified",
+    "year": 1983,
+    "category": "science",
+    "description": "Gorenstein announced that the building blocks of finite symmetry had been listed, across thousands of pages.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "new-coke-launched",
     "friendly_name": "New Coke Launched",
     "year": 1985,
     "category": "commerce",
     "description": "Coca-Cola replaced its original formula with a sweeter recipe, then restored the old one after a public backlash.",
     "difficulty": "medium"
+  },
+  {
+    "name": "ukraine-declares-independence",
+    "friendly_name": "Ukraine Declares Independence",
+    "year": 1991,
+    "category": "revolution",
+    "description": "Ukraine's parliament declared independence from the Soviet Union, confirmed by an overwhelming referendum.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "slovakia-becomes-independent",
+    "friendly_name": "Slovakia Becomes Independent",
+    "year": 1993,
+    "category": "diplomacy",
+    "description": "Czechoslovakia split peacefully in the Velvet Divorce, and Slovakia took its place as a sovereign state.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "fermat-last-theorem-proved",
+    "friendly_name": "Fermat's Last Theorem Proved",
+    "year": 1994,
+    "category": "science",
+    "description": "Andrew Wiles closed the gap in his proof of the margin note Fermat left unproven for three and a half centuries.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kaiko-challenger-deep",
+    "friendly_name": "Kaiko Reaches Challenger Deep",
+    "year": 1995,
+    "category": "invention",
+    "description": "A Japanese remotely operated vehicle reached the deepest point of the ocean and brought back mud and amphipods.",
+    "difficulty": "hard"
   },
   {
     "name": "rabin-assassinated",
@@ -904,12 +1768,36 @@
     "difficulty": "medium"
   },
   {
+    "name": "dark-energy-discovered",
+    "friendly_name": "Dark Energy Discovered",
+    "year": 1998,
+    "category": "science",
+    "description": "Distant supernovae revealed that cosmic expansion is speeding up, pushed by an unknown energy in space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "poincare-conjecture-proved",
+    "friendly_name": "Poincare Conjecture Proved",
+    "year": 2003,
+    "category": "science",
+    "description": "Grigori Perelman posted a proof that every simply connected closed three-dimensional space is a sphere.",
+    "difficulty": "medium"
+  },
+  {
     "name": "darpa-grand-challenge-won",
     "friendly_name": "DARPA Grand Challenge Won",
     "year": 2005,
     "category": "invention",
     "description": "Stanford's driverless car Stanley crossed a desert course alone, showing autonomous driving could work.",
     "difficulty": "medium"
+  },
+  {
+    "name": "google-earth-launch",
+    "friendly_name": "Google Earth Launches",
+    "year": 2005,
+    "category": "invention",
+    "description": "A free virtual globe stitched satellite imagery into a zoomable model of the planet, putting survey data on home computers.",
+    "difficulty": "easy"
   },
   {
     "name": "bhutto-assassinated",
@@ -920,11 +1808,27 @@
     "difficulty": "medium"
   },
   {
+    "name": "cameron-challenger-deep",
+    "friendly_name": "Solo Dive to Challenger Deep",
+    "year": 2012,
+    "category": "science",
+    "description": "James Cameron piloted a vertical torpedo-shaped submersible alone to the floor of the Mariana Trench.",
+    "difficulty": "medium"
+  },
+  {
     "name": "leap-second-retired",
     "friendly_name": "Leap Second Voted Out",
     "year": 2022,
     "category": "diplomacy",
     "description": "The General Conference on Weights and Measures agreed to stop adding leap seconds to civil time worldwide.",
     "difficulty": "hard"
+  },
+  {
+    "name": "titan-submersible-implosion",
+    "friendly_name": "Titan Submersible Implosion",
+    "year": 2023,
+    "category": "disasters",
+    "description": "A carbon-fibre tourist submersible imploded on its way down to the Titanic wreck, killing all five people aboard.",
+    "difficulty": "easy"
   }
 ]
