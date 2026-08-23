@@ -1,6 +1,6 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Thirteen files, all maintained as **current** —
+Reference docs for the "When" timeline game. Fifteen files, all maintained as **current** —
 if one contradicts the code, the doc is wrong and should be fixed.
 
 These are digests, not a change log. They hold decisions and their rationale, rejected
@@ -44,6 +44,9 @@ original per-session write-ups if you need the blow-by-blow.
   where the 20-category taxonomy came from
 - [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +
   dedup), its image pipeline, and the game-wide duplicate audit
+- [dedup/](dedup/index.md) — the game-wide duplicate deletion: how keepers were chosen, why
+  removals go to `deprecated.json` rather than being deleted, and the two places outside the
+  event files that name an event id and break silently when it disappears
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
 - [curated-themes/](curated-themes/index.md) — hand-authored daily themes: where the calendar

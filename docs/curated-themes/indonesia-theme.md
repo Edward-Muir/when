@@ -42,7 +42,7 @@ Paste as `eventNames` into the workflow's `theme` input. **New** = authored here
 |   -300 | `dong-son-drums-nusantara`      | **new**  |
 |    400 | `kutai-yupa-inscriptions`       | **new**  |
 |    683 | `srivijaya-empire`              |          |
-|    825 | `borobudur-temple`              |          |
+|    800 | `borobudur-construction`        |          |
 |    850 | `prambanan-temple`              |          |
 |   1019 | `airlangga-unites-java`         | **new**  |
 |   1267 | `pasai-sultanate`               |          |
@@ -72,6 +72,12 @@ Paste as `eventNames` into the workflow's `theme` input. **New** = authored here
 |   1998 | `fall-of-suharto`               | **new**  |
 |   2004 | `indian-ocean-tsunami`          | foothold |
 
+> **2026-08 — `borobudur-temple` → `borobudur-construction`.** The duplicate-event deletion
+> removed `borobudur-temple` (825) in favour of `borobudur-construction` (800); the two were one
+> cluster. A curated slug that no longer resolves is dropped silently by `curatedPool()`, so the
+> published calendar must be re-published with the corrected list or the theme quietly runs as 35
+> cards. Only for dates that have not yet opened — never rewrite a date that is today or past.
+
 ## The five footholds are the whole difficulty problem
 
 `MIN_BAND_ZERO = 5` wants five cards in the catalogue's easiest global quartile, and Indonesian
@@ -99,8 +105,8 @@ lever is a new _globally easy_ card in a sparse year, not a relabelled existing 
 These surface in a keyword sweep and were left out on purpose; re-adding them makes the deck
 worse, not more complete.
 
-- **Same-year collisions.** `borobudur-construction` (800) and `java-temple-sculpture` (800)
-  against `borobudur-temple` (825); `javanese-court-dance` shares 1400 with `srivijaya-decline`;
+- **Same-year collisions.** `java-temple-sculpture` (800) against `borobudur-construction` (800);
+  `javanese-court-dance` shares 1400 with `srivijaya-decline`;
   `majapahit-expansion`, `majapahit-administrative-system` and `majapahit-maritime-trade` are all
   dated 1350. A player cannot order cards that share a year — it is a coin flip, not a placement.
 - **Near-year crowding.** `aceh-sultanate` (1607) is 5 years from the VOC card;

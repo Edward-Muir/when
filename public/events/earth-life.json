@@ -65,19 +65,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oldest-stromatolites_gqemfi?_a=BAMAMikS0"
   },
   {
-    "name": "first-eukaryotic-cells",
-    "friendly_name": "First Complex Cells Evolve",
-    "year": -1800000000,
-    "category": "nature",
-    "description": "Cells with a nucleus arose, likely when one microbe engulfed another, paving the way for complex life.",
-    "difficulty": "hard",
-    "color": "#2b1e14",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-eukaryotic-cells_vfuajd?_a=BAMAMikS0"
-  },
-  {
     "name": "first-multicellular-life",
     "friendly_name": "First Multicellular Life",
     "year": -1000000000,
@@ -299,19 +286,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/pangaea-forms_zn5ita?_a=BAMAMikS0"
   },
   {
-    "name": "great-dying-extinction",
-    "friendly_name": "The Great Dying",
-    "year": -252000000,
-    "category": "disasters",
-    "description": "Earth's worst extinction killed most marine and land species, nearly ending complex life entirely.",
-    "difficulty": "medium",
-    "color": "#462613",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-dying-extinction_nofuxe?_a=BAMAMikS0"
-  },
-  {
     "name": "first-dinosaurs-appear",
     "friendly_name": "First Dinosaurs Appear",
     "year": -233000000,
@@ -323,19 +297,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dinosaurs-appear_yfd2kn?_a=BAMAMikS0"
-  },
-  {
-    "name": "first-mammals-evolve",
-    "friendly_name": "First Mammals Evolve",
-    "year": -225000000,
-    "category": "nature",
-    "description": "Tiny, shrew-like creatures became the first mammals, living in the shadow of the early dinosaurs.",
-    "difficulty": "easy",
-    "color": "#261f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mammals-evolve_tz0oaw?_a=BAMAMikS0"
   },
   {
     "name": "pangaea-breaks-apart",
@@ -388,19 +349,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-bees_atiudu?_a=BAMAMikS0"
-  },
-  {
-    "name": "tyrannosaurus-roams",
-    "friendly_name": "T. rex Roams North America",
-    "year": -68000000,
-    "category": "nature",
-    "description": "The huge predator Tyrannosaurus rex hunted across North America in the final age of the dinosaurs.",
-    "difficulty": "easy",
-    "color": "#2c1d17",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tyrannosaurus-roams_reoi5x?_a=BAMAMikS0"
   },
   {
     "name": "first-grasses",
@@ -559,32 +507,6 @@
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dog-becomes-companion_jh4xqd?_a=BAMAMikS0"
   },
   {
-    "name": "first-crops-cultivated",
-    "friendly_name": "First Crops Are Cultivated",
-    "year": -9500,
-    "category": "agriculture",
-    "description": "Peoples of the Fertile Crescent began planting and harvesting wild grains, dawning farming.",
-    "difficulty": "easy",
-    "color": "#2c1d16",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-crops-cultivated_mtlzum?_a=BAMAMikS0"
-  },
-  {
-    "name": "cattle-domesticated",
-    "friendly_name": "Cattle Are Tamed",
-    "year": -8500,
-    "category": "agriculture",
-    "description": "Wild aurochs were tamed into cattle, giving early farmers meat, milk, and muscle power.",
-    "difficulty": "easy",
-    "color": "#2b2221",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cattle-domesticated_bjzvlb?_a=BAMAMikS0"
-  },
-  {
     "name": "cats-domesticated",
     "friendly_name": "Cats Join Human Settlements",
     "year": -7500,
@@ -674,32 +596,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/steno-fossils-rock-layers_i0bfq5?_a=BAMAMikS0"
-  },
-  {
-    "name": "leeuwenhoek-microbes",
-    "friendly_name": "Leeuwenhoek Sees Microbes",
-    "year": 1676,
-    "category": "medicine",
-    "description": "Antonie van Leeuwenhoek used his microscope to observe tiny living organisms for the first time.",
-    "difficulty": "medium",
-    "color": "#261f1d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/leeuwenhoek-microbes_lmacpf?_a=BAMAMikS0"
-  },
-  {
-    "name": "linnaeus-systema-naturae",
-    "friendly_name": "Linnaeus Names the Species",
-    "year": 1735,
-    "category": "nature",
-    "description": "Carl Linnaeus introduced a system of two-part Latin names to classify all living things.",
-    "difficulty": "medium",
-    "color": "#291e1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/linnaeus-systema-naturae_aye6zp?_a=BAMAMikS0"
   },
   {
     "name": "hutton-deep-time",
@@ -895,19 +791,6 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/passenger-pigeon-extinct_zovrmg?_a=BAMAMikS0"
-  },
-  {
-    "name": "wegener-continental-drift",
-    "friendly_name": "Continents Are Found to Drift",
-    "year": 1912,
-    "category": "nature",
-    "description": "Alfred Wegener proposed that continents slowly move across the globe over millions of years.",
-    "difficulty": "medium",
-    "color": "#606e6f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wegener-continental-drift_cktwzr?_a=BAMAMikS0"
   },
   {
     "name": "java-man-discovered",

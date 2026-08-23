@@ -66,7 +66,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Milestone',
     tier: 'gold',
     unlockCriteria: 'Play 100 games',
-    eventName: 'colosseum-completed',
+    eventName: 'colosseum-rome',
   },
   {
     id: '05',
@@ -74,7 +74,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Volume',
     tier: 'bronze',
     unlockCriteria: 'Place 100 events correctly',
-    eventName: 'great-wall-begins',
+    eventName: 'fired-bricks',
   },
   {
     id: '06',
@@ -221,7 +221,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Collection',
     tier: 'steel',
     unlockCriteria: 'Place 20 Science events',
-    eventName: 'periodic-table',
+    eventName: 'mendeleev-periodic-table',
   },
   {
     id: 'cat-trade',
@@ -269,7 +269,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Collection',
     tier: 'steel',
     unlockCriteria: 'Place 20 Sports events',
-    eventName: 'first-ancient-olympics',
+    eventName: 'first-world-cup-1930',
   },
   {
     id: '16',
@@ -301,7 +301,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Streak',
     tier: 'bronze',
     unlockCriteria: 'Get 5 events right in a row',
-    eventName: 'blitzkrieg-tactics-deployed',
+    eventName: 'wwii-start',
   },
   {
     id: '20',
@@ -325,7 +325,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Streak',
     tier: 'gold',
     unlockCriteria: 'Get 20 events right in a row',
-    eventName: 'napoleon-emperor',
+    eventName: 'napoleon-coronation',
   },
   {
     id: '23',
@@ -454,7 +454,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Collection',
     tier: 'silver',
     unlockCriteria: 'Collect 500 unique events',
-    eventName: 'library-alexandria',
+    eventName: 'first-public-library',
   },
   {
     id: 'coll-1500',
@@ -479,7 +479,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     family: 'Collection',
     tier: 'silver',
     unlockCriteria: 'Place 25 events from BCE',
-    eventName: 'code-hammurabi',
+    eventName: 'code-hammurabi-interest-rules',
   },
   {
     id: 'era-modern',
