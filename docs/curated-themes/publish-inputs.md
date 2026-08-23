@@ -32,6 +32,7 @@ or validated — until every slug in it is illustrated.
 | `clockwork`         |    36 |           21 | no              |
 | `cosmic-ideas`      |    36 |           19 | no              |
 | `crossings`         |    36 |           15 | no              |
+| `eureka`            |    36 |           10 | no              |
 | `games`             |    36 |           15 | no              |
 | `kings-of-england`  |    36 |           19 | no              |
 | `light`             |    35 |           22 | no              |
@@ -329,6 +330,54 @@ or validated — until every slug in it is illustrated.
     "chunnel-completed",
     "millau-viaduct",
     "gotthard-base-tunnel"
+  ],
+  "dates": ["2099-01-01"]
+}
+```
+
+### Eureka Moments — `eureka`
+
+```json
+{
+  "id": "eureka",
+  "name": "Eureka Moments",
+  "eventNames": [
+    "pythagoras-theorem",
+    "archimedes-principle",
+    "eratosthenes-earth-circumference",
+    "hipparchus-precession",
+    "zhang-heng-lunar-eclipse",
+    "gunpowder-invented",
+    "ibn-sahl-refraction",
+    "al-haytham-optics",
+    "al-biruni-geography-astronomy",
+    "shen-kuo-explains-fossils",
+    "peregrinus-magnetic-poles",
+    "copernican-revolution",
+    "tycho-new-star",
+    "galileo-jupiter-moons",
+    "harvey-blood-circulation",
+    "newton-gravity",
+    "leeuwenhoek-bacteria",
+    "franklin-kite-experiment",
+    "hutton-deep-time",
+    "jenner-vaccination-smallpox",
+    "electromagnetism-discovered",
+    "electric-generator",
+    "hamilton-quaternions",
+    "cholera-london",
+    "kekule-benzene-ring",
+    "michelson-morley-experiment",
+    "x-rays-discovered",
+    "atomic-nucleus",
+    "penicillin-discovered",
+    "nuclear-fission",
+    "dna-structure",
+    "cosmic-microwave-background",
+    "asteroid-killed-dinosaurs",
+    "fermat-last-theorem-proved",
+    "graphene-isolated",
+    "gravitational-waves"
   ],
   "dates": ["2099-01-01"]
 }
