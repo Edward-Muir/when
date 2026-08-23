@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.15.2](https://github.com/Edward-Muir/when/compare/v1.15.1...v1.15.2) (2026-08-23)
+
+
+### Bug Fixes
+
+* remove 522 duplicate events from the timeline deck ([#51](https://github.com/Edward-Muir/when/issues/51)) ([9233ffc](https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92)), closes [#26](https://github.com/Edward-Muir/when/issues/26)
+
 ## [1.15.1](https://github.com/Edward-Muir/when/compare/v1.15.0...v1.15.1) (2026-08-22)
 
 

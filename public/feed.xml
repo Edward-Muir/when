@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Aug 2026 10:56:08 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 09:42:03 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.15.2</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.15.2</guid>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>remove 522 duplicate events from the timeline deck (<a href="https://github.com/Edward-Muir/when/issues/51">#51</a>) (<a href="https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92">9233ffc</a>), closes <a href="https://github.com/Edward-Muir/when/issues/26">#26</a></li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.15.1</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.11.1</guid>
       <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>make the game-start loading overlay readable and redesign it as a scrim band (<a href="https://github.com/Edward-Muir/when/issues/42">#42</a>) (<a href="https://github.com/Edward-Muir/when/commit/9f72d6d8006ac2eaa21a76f287538a6c7aa871e0">9f72d6d</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.11.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.11.0</guid>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>make the share the finale of the end-of-game sequence (<a href="https://github.com/Edward-Muir/when/issues/41">#41</a>) (<a href="https://github.com/Edward-Muir/when/commit/b40a37fec6fc1bfef5b634ebdd41eb41ef6990f0">b40a37f</a>), closes <a href="https://github.com/Edward-Muir/when/issues/49">#49</a></li></ul>]]></description>
     </item>
   </channel>
 </rss>
