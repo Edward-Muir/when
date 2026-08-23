@@ -147,7 +147,8 @@ crowd the Trieste dive.
 
 **Keyword false positives the sweep dragged in.** `burberry-trench-coat` and
 `first-battle-of-the-marne` (trench), `pearl-harbor` (pearl), `birth-john-calvin` and
-`servetus-burned-at-stake` (they mention diving into scripture and the like), `chunnel-completed`
+`servetus-burned-at-stake` — both dragged in by an `alvin\b` alternative that was anchored on
+the right but not the left, so it matched **C**_alvin_; anchor both ends. `chunnel-completed`
 and `seikan-tunnel` (under water, but a tunnel is not diving), `louganis-head-injury-1988` and
 `fina-founded-1908` (springboard diving is a sport, not the deep), `imjin-war-turtle-ship`
 (Korean turtle ships were armoured, not submersible), `whale-oil-trade` (surface whaling),

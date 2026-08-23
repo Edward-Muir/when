@@ -110,7 +110,12 @@ check that consumed one would silently re-theme the whole year — the failure m
 
 ## Sizing
 
-Minimum **16** events, enforced by the API. No hard maximum, but two soft notes:
+Minimum **16** events, enforced by the API — but that is a backstop, not a target. The
+authoring floor is **30**, and the working band is **30-36**; every theme in the bank above
+sits in it. `scripts/theme-gap.js --slugs` reports the 30-36 band as a gate, alongside the
+bins and band-zero checks the publish script enforces.
+
+No hard maximum, but two soft notes:
 
 - The **cleared** end state fires when the deck runs dry, which needs `n - 6` correct
   placements against a realistic best of ~30. So it is reachable up to ~36 cards and
@@ -137,6 +142,48 @@ implying completeness; "Perfect Clear!" (zero mistakes) is exact.
 
 This also fixes thin category days — `sports` has ~50 playable events and has always been able
 to run the deck dry and call it Game Over.
+
+## The theme bank
+
+Nineteen themes authored in one parallel pass, one note each. Every deck is 34-36 cards and
+clears all four gates: size 30-36, 6+ of 8 spread bins, 5+ band-zero footholds, no two cards
+sharing a year. Ready-to-paste workflow inputs are in
+[publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
+[art/all_prompts.csv](art/all_prompts.csv).
+
+| Theme                | Note                                         | Scope rule — a card is in only if…                               |
+| -------------------- | -------------------------------------------- | ---------------------------------------------------------------- |
+| Assassinations       | [assassinations.md](assassinations.md)       | a named person was killed for political reasons                  |
+| Automata             | [automata.md](automata.md)                   | it is a machine built to act on its own                          |
+| Clockwork            | [clockwork.md](clockwork.md)                 | it is a device or convention for measuring time                  |
+| Codes & Ciphers      | [ciphers.md](ciphers.md)                     | it makes or breaks secret writing                                |
+| Cosmic Ideas         | [cosmic-ideas.md](cosmic-ideas.md)           | it is an idea about what the universe _is_                       |
+| Bridges & Tunnels    | [crossings.md](crossings.md)                 | it is a built crossing of water, valley or rock                  |
+| Eureka Moments       | [eureka.md](eureka.md)                       | it is the specific moment a discovery landed                     |
+| The Games Board      | [games.md](games.md)                         | it is a game played at a table, or a machine that beat us at one |
+| Kings of England     | [kings-of-england.md](kings-of-england.md)   | it is a monarch's accession, death or defining act               |
+| Let There Be Light   | [light.md](light.md)                         | it is a way of making artificial light                           |
+| Lost & Found         | [lost-and-found.md](lost-and-found.md)       | something buried was found, or a dead script read                |
+| Mapmakers            | [mapmakers.md](mapmakers.md)                 | it changed what people thought the world looked like             |
+| Hard Currency        | [money.md](money.md)                         | it is a form of money, or the institution issuing one            |
+| Nations of Europe    | [nations-of-europe.md](nations-of-europe.md) | it is _the_ founding moment of a European country                |
+| Numbers & Proofs     | [numbers.md](numbers.md)                     | it is a mathematical idea entering human thought                 |
+| Plague Years         | [plagues.md](plagues.md)                     | it is a named outbreak, or a decisive step in ending one         |
+| The Deep             | [the-deep.md](the-deep.md)                   | it is going deliberately under water, or finding what sank       |
+| When the Earth Moved | [upheaval.md](upheaval.md)                   | it is an eruption, earthquake or tsunami                         |
+| What We Drink        | [what-we-drink.md](what-we-drink.md)         | it is a drink made on purpose, or a rule about drinking it       |
+| Indonesia            | [indonesia-theme.md](indonesia-theme.md)     | the first theme, and the model the rest follow                   |
+
+**The scope rule is the theme.** Four of these started as concepts that a keyword net returned
+100-350 hits for — "scientific discoveries", "astrophysics", "European country foundings",
+"games" — which is the signature of a category rather than a deck. Each was narrowed to a rule
+answerable yes/no about any candidate, and each then netted 11-43. If a new theme's anchored
+probe returns more than ~100, narrow the rule before picking anything.
+
+**Anchor short alternatives with `\b`.** `theme-gap` matches `friendly_name description`, so
+bare `tea` matches "steam" and "instead", bare `led ` matches "called ", and `illuminat`
+matches manuscript illumination. Unanchored nets reported 714, 460 and 102 hits for themes
+whose real coverage was 34, 87 and 22.
 
 ## Authoring: themes lead, the catalogue follows
 
