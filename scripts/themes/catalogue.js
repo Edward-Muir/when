@@ -30,20 +30,40 @@ function isPlayable(event) {
  * but ERA_DEFINITIONS stops at year 2100 and the catalogue holds one event beyond it — so
  * validating a theme against the raw catalogue would let a slug through that the daily can
  * never deal.
+ *
+ * Options exist only for *authoring* a theme, and both default off so the shipped path —
+ * publish validation — is byte-identical to what it was:
+ *
+ *   includePending  keep events that have no Cloudinary art yet. The daily hides those
+ *                   (src/utils/eventLoader.ts), so a slug written but not yet illustrated
+ *                   reads as unresolved and the theme measures half its real size. Projecting
+ *                   over playable + pending is the only way to size a theme mid-authoring.
+ *   extraFiles      merge event records from staging files that are not in the manifest yet,
+ *                   so an author can measure a deck before anything is committed.
+ *
+ * Never pass either from publish-theme.js: a theme is only publishable on events the daily
+ * can actually deal.
  */
-function loadEligibleEvents() {
+function loadEligibleEvents(options = {}) {
+  const { includePending = false, extraFiles = [] } = options;
   const manifest = JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, 'manifest.json'), 'utf8'));
 
   const all = [];
   for (const file of manifest.files) {
     all.push(...JSON.parse(fs.readFileSync(path.join(EVENTS_DIR, file), 'utf8')));
   }
+  for (const file of extraFiles) {
+    all.push(...JSON.parse(fs.readFileSync(file, 'utf8')));
+  }
 
+  // The dedup runs over every record, playable or not, exactly as it always has: `seen` is
+  // populated before the art check so a duplicate slug is dropped on first sight either way.
   const seen = new Set();
   return all.filter((event) => {
     if (seen.has(event.name)) return false;
     seen.add(event.name);
-    return isPlayable(event) && event.year >= -4_500_000_000 && event.year <= 2100;
+    if (!includePending && !isPlayable(event)) return false;
+    return event.year >= -4_500_000_000 && event.year <= 2100;
   });
 }
 
