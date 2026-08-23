@@ -1,5 +1,21 @@
 [
   {
+    "name": "hammurabi-alehouse-laws",
+    "friendly_name": "Hammurabi's Alehouse Laws",
+    "year": -1750,
+    "category": "law",
+    "description": "Babylonian statutes fixed what alehouse keepers could charge for beer and set penalties for short measures.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "cowrie-shell-money-china",
+    "friendly_name": "Cowrie Shells Become Money",
+    "year": -1200,
+    "category": "commerce",
+    "description": "Shang dynasty China used cowrie shells as a standard medium of exchange, among the earliest currencies known.",
+    "difficulty": "medium"
+  },
+  {
     "name": "yan-shi-mechanical-man",
     "friendly_name": "Yan Shi's Mechanical Man",
     "year": -950,
@@ -13,6 +29,38 @@
     "year": -700,
     "category": "science",
     "description": "Babylonian astronomers applied their base-sixty numbering to time, splitting the hour into sixty minutes and each minute again.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "hezekiah-tunnel-jerusalem",
+    "friendly_name": "Hezekiah's Tunnel Completed",
+    "year": -700,
+    "category": "architecture",
+    "description": "Judean workers cut a winding water tunnel through bedrock beneath Jerusalem, digging from both ends until they met.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sennacherib-assassinated",
+    "friendly_name": "Sennacherib Assassinated",
+    "year": -681,
+    "category": "empires",
+    "description": "The Assyrian king who besieged Jerusalem was killed by his own sons in a dispute over the succession.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "greek-symposium-wine",
+    "friendly_name": "Wine at the Greek Symposium",
+    "year": -600,
+    "category": "art",
+    "description": "Greek men drank wine mixed with water from a shared krater, pairing poetry and music with measured drinking.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "xerxes-hellespont-bridge",
+    "friendly_name": "Xerxes Bridges the Hellespont",
+    "year": -480,
+    "category": "architecture",
+    "description": "Persian engineers lashed hundreds of ships into twin pontoon bridges so an invading army could march into Europe.",
     "difficulty": "medium"
   },
   {
@@ -32,6 +80,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "punch-marked-coins-india",
+    "friendly_name": "India's Punch-Marked Coins",
+    "year": -400,
+    "category": "commerce",
+    "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
+    "difficulty": "hard"
+  },
+  {
     "name": "helike-earthquake",
     "friendly_name": "Helike Swallowed by the Sea",
     "year": -373,
@@ -45,6 +101,22 @@
     "year": -350,
     "category": "invention",
     "description": "The Greek mathematician Archytas of Tarentum built a wooden bird said to fly on its own using compressed air.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "philip-ii-macedon-assassinated",
+    "friendly_name": "Philip II of Macedon Killed",
+    "year": -336,
+    "category": "empires",
+    "description": "The Macedonian king was struck down by one of his bodyguards at a royal wedding, bringing Alexander to the throne.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "alexander-coinage-empire",
+    "friendly_name": "Alexander's Imperial Coinage",
+    "year": -330,
+    "category": "commerce",
+    "description": "Alexander the Great's silver tetradrachms carried one coin standard from Greece to the Indus, outlasting him.",
     "difficulty": "medium"
   },
   {
@@ -64,12 +136,44 @@
     "difficulty": "medium"
   },
   {
+    "name": "caesar-rhine-bridge",
+    "friendly_name": "Caesar's Rhine Bridge Built",
+    "year": -55,
+    "category": "architecture",
+    "description": "Roman legions drove piles into the riverbed and spanned the Rhine with a timber trestle bridge in ten days.",
+    "difficulty": "medium"
+  },
+  {
     "name": "julian-calendar-reform",
     "friendly_name": "Julian Calendar Reform",
     "year": -46,
     "category": "law",
     "description": "Julius Caesar scrapped Rome's drifting lunar calendar for a solar year of three hundred sixty-five days plus a leap day.",
     "difficulty": "medium"
+  },
+  {
+    "name": "caligula-assassinated",
+    "friendly_name": "Caligula Assassinated",
+    "year": 41,
+    "category": "revolution",
+    "description": "Officers of the Praetorian Guard killed the Roman emperor in his palace and raised Claudius in his place.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "trajans-bridge-danube",
+    "friendly_name": "Trajan's Bridge Over the Danube",
+    "year": 105,
+    "category": "architecture",
+    "description": "Apollodorus of Damascus spanned the Danube on stone piers with timber arches, the longest arch bridge for a millennium.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "commodus-assassinated",
+    "friendly_name": "Commodus Assassinated",
+    "year": 192,
+    "category": "revolution",
+    "description": "Members of his own household killed the Roman emperor, ending the Antonine line and opening a scramble for power.",
+    "difficulty": "hard"
   },
   {
     "name": "ma-jun-south-pointing-chariot",
@@ -80,12 +184,36 @@
     "difficulty": "medium"
   },
   {
+    "name": "hypatia-of-alexandria-killed",
+    "friendly_name": "Hypatia Killed in Alexandria",
+    "year": 415,
+    "category": "figures",
+    "description": "The mathematician and philosopher was killed by a mob during a struggle for control of the city.",
+    "difficulty": "hard"
+  },
+  {
     "name": "dionysius-anno-domini",
     "friendly_name": "Anno Domini Dating Devised",
     "year": 525,
     "category": "writing",
     "description": "The monk Dionysius Exiguus built an Easter table numbering years from the presumed birth of Christ, creating the AD era.",
     "difficulty": "hard"
+  },
+  {
+    "name": "anji-bridge-china",
+    "friendly_name": "Anji Bridge Completed",
+    "year": 605,
+    "category": "architecture",
+    "description": "Li Chun built the oldest surviving open-spandrel segmental arch bridge, carrying a road over the Xiao River.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "quran-forbids-wine",
+    "friendly_name": "Quran Forbids Wine",
+    "year": 625,
+    "category": "law",
+    "description": "Revelation recorded in the Quran barred intoxicants for Muslims, reshaping what was drunk across the Islamic world.",
+    "difficulty": "medium"
   },
   {
     "name": "hijri-calendar-adopted",
@@ -104,12 +232,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "lu-yu-classic-of-tea",
+    "friendly_name": "Lu Yu Writes the Classic of Tea",
+    "year": 760,
+    "category": "writing",
+    "description": "Tang scholar Lu Yu compiled the first treatise on growing, brewing and drinking tea, codifying Chinese tea culture.",
+    "difficulty": "hard"
+  },
+  {
     "name": "banu-musa-ingenious-devices",
     "friendly_name": "Book of Ingenious Devices",
     "year": 850,
     "category": "invention",
     "description": "The Banu Musa brothers of Baghdad catalogued a hundred self-acting devices, among them a flute player driven by a pinned cylinder.",
     "difficulty": "medium"
+  },
+  {
+    "name": "nikephoros-phokas-assassinated",
+    "friendly_name": "Nikephoros Phokas Killed",
+    "year": 969,
+    "category": "empires",
+    "description": "The Byzantine emperor was killed in the palace by his nephew John Tzimiskes, who then took the throne.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "nizam-al-mulk-assassinated",
+    "friendly_name": "Nizam al-Mulk Assassinated",
+    "year": 1092,
+    "category": "revolution",
+    "description": "The Seljuk vizier was killed by an agent of the Nizari Ismailis, the sect that gave English the word assassin.",
+    "difficulty": "hard"
   },
   {
     "name": "su-song-clock-tower",
@@ -120,12 +272,28 @@
     "difficulty": "hard"
   },
   {
+    "name": "aqua-vitae-distilled",
+    "friendly_name": "Aqua Vitae Distilled from Wine",
+    "year": 1250,
+    "category": "craft",
+    "description": "Italian physicians distilled wine into aqua vitae, the first spirit drunk in Europe as medicine and then for pleasure.",
+    "difficulty": "hard"
+  },
+  {
     "name": "sandglass-at-sea",
     "friendly_name": "Sandglass Goes to Sea",
     "year": 1338,
     "category": "invention",
     "description": "European ships adopted the sandglass to time the crew's watches and, paired with a knotted line, to log a vessel's speed.",
     "difficulty": "hard"
+  },
+  {
+    "name": "ponte-vecchio-florence",
+    "friendly_name": "Ponte Vecchio Rebuilt",
+    "year": 1345,
+    "category": "architecture",
+    "description": "Florence rebuilt its shop-lined stone bridge over the Arno after a flood swept the previous crossing away.",
+    "difficulty": "medium"
   },
   {
     "name": "strasbourg-clock-rooster",
@@ -144,6 +312,22 @@
     "difficulty": "hard"
   },
   {
+    "name": "charles-bridge-prague",
+    "friendly_name": "Charles Bridge Begun",
+    "year": 1357,
+    "category": "architecture",
+    "description": "Charles IV laid the first stone of a fortified bridge across the Vltava in Prague, replacing a flood-wrecked span.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wat-tyler-killed",
+    "friendly_name": "Wat Tyler Killed at Smithfield",
+    "year": 1381,
+    "category": "revolution",
+    "description": "The leader of the English peasants' rising was struck down at a parley with the king, breaking the revolt.",
+    "difficulty": "medium"
+  },
+  {
     "name": "salisbury-cathedral-clock",
     "friendly_name": "Salisbury Cathedral Clock",
     "year": 1386,
@@ -152,11 +336,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "louis-of-orleans-assassinated",
+    "friendly_name": "Louis of Orleans Assassinated",
+    "year": 1407,
+    "category": "revolution",
+    "description": "The French king's brother was killed in Paris on the orders of the Duke of Burgundy, starting a long civil war.",
+    "difficulty": "hard"
+  },
+  {
     "name": "prague-astronomical-clock",
     "friendly_name": "Prague Astronomical Clock",
     "year": 1410,
     "category": "architecture",
     "description": "The Orloj was mounted on Prague's Old Town Hall, showing the hour, the zodiac and the positions of sun and moon.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pazzi-conspiracy",
+    "friendly_name": "The Pazzi Conspiracy",
+    "year": 1478,
+    "category": "revolution",
+    "description": "Rival bankers attacked the Medici brothers during Mass in Florence. Giuliano was killed and Lorenzo escaped.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-scotch-whisky-record",
+    "friendly_name": "First Record of Scotch Whisky",
+    "year": 1494,
+    "category": "craft",
+    "description": "Scotland's exchequer rolls logged malt granted to Friar John Cor to make aqua vitae, the earliest whisky record.",
     "difficulty": "medium"
   },
   {
@@ -184,6 +392,30 @@
     "difficulty": "hard"
   },
   {
+    "name": "reinheitsgebot-beer-purity",
+    "friendly_name": "Bavarian Beer Purity Law",
+    "year": 1516,
+    "category": "law",
+    "description": "Bavaria decreed that beer be brewed from barley, hops and water alone, a purity rule German brewers still cite.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "joachimsthaler-first-struck",
+    "friendly_name": "The First Thaler Is Struck",
+    "year": 1520,
+    "category": "commerce",
+    "description": "Silver from the Bohemian valley of Joachimsthal was struck into big coins whose name became the word dollar.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-debasement-henry-viii",
+    "friendly_name": "Henry VIII's Great Debasement",
+    "year": 1544,
+    "category": "commerce",
+    "description": "Henry VIII cut the silver out of English coins to fund his wars, and the crown's money lost most of its value.",
+    "difficulty": "hard"
+  },
+  {
     "name": "variolation-china",
     "friendly_name": "Variolation Practised In China",
     "year": 1549,
@@ -200,11 +432,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "stari-most-mostar",
+    "friendly_name": "Stari Most Completed",
+    "year": 1566,
+    "category": "architecture",
+    "description": "Ottoman architect Mimar Hayruddin threw a single soaring stone arch across the Neretva gorge at Mostar.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "murder-of-lord-darnley",
+    "friendly_name": "Murder of Lord Darnley",
+    "year": 1567,
+    "category": "revolution",
+    "description": "The consort of Mary, Queen of Scots died when his Edinburgh lodging was destroyed, wrecking her hold on the throne.",
+    "difficulty": "hard"
+  },
+  {
     "name": "gregorian-calendar-reform",
     "friendly_name": "Gregorian Calendar Adopted",
     "year": 1582,
     "category": "law",
     "description": "Pope Gregory XIII struck ten days from the year and changed the leap rule to stop Easter drifting away from the equinox.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "william-of-orange-assassinated",
+    "friendly_name": "William of Orange Assassinated",
+    "year": 1584,
+    "category": "revolution",
+    "description": "The leader of the Dutch revolt was shot at his house in Delft by a Catholic seeking a bounty offered by Spain.",
     "difficulty": "medium"
   },
   {
@@ -214,6 +470,38 @@
     "category": "science",
     "description": "Galileo argued that a pendulum takes the same time to swing whatever the width of its arc, the principle behind exact clocks.",
     "difficulty": "medium"
+  },
+  {
+    "name": "pont-neuf-paris",
+    "friendly_name": "Pont Neuf Completed",
+    "year": 1607,
+    "category": "architecture",
+    "description": "Paris opened its first bridge built with no houses on it, giving the city clear views along the Seine.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "henry-iv-france-assassinated",
+    "friendly_name": "Henry IV of France Assassinated",
+    "year": 1610,
+    "category": "revolution",
+    "description": "The king who ended the French wars of religion was stabbed by Francois Ravaillac in a Paris street.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "wallenstein-assassinated",
+    "friendly_name": "Wallenstein Assassinated",
+    "year": 1634,
+    "category": "warfare",
+    "description": "The Habsburg emperor's leading general was killed by his own officers once he was suspected of treating with the enemy.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "first-colonial-rum-distillery",
+    "friendly_name": "First Colonial Rum Distillery",
+    "year": 1664,
+    "category": "craft",
+    "description": "A Staten Island distillery began turning Caribbean molasses into rum, seeding a trade that fuelled Atlantic commerce.",
+    "difficulty": "hard"
   },
   {
     "name": "etna-catania-eruption",
@@ -229,6 +517,14 @@
     "year": 1675,
     "category": "invention",
     "description": "Christiaan Huygens fitted a spiral spring to a watch balance wheel, making portable timepieces vastly more accurate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "canal-du-midi-opens",
+    "friendly_name": "Canal du Midi Opens",
+    "year": 1681,
+    "category": "architecture",
+    "description": "Pierre-Paul Riquet's canal joined the Atlantic to the Mediterranean and bored the first tunnel cut for shipping.",
     "difficulty": "hard"
   },
   {
@@ -256,6 +552,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "guinness-brewery-lease",
+    "friendly_name": "Guinness Leases St James's Gate",
+    "year": 1759,
+    "category": "commerce",
+    "description": "Arthur Guinness signed a nine-thousand-year lease on a disused Dublin brewery and began brewing porter there.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "peter-iii-of-russia-killed",
+    "friendly_name": "Peter III of Russia Killed",
+    "year": 1762,
+    "category": "revolution",
+    "description": "The Russian emperor was deposed by guards loyal to his wife Catherine and died in custody days afterwards.",
+    "difficulty": "hard"
+  },
+  {
     "name": "moscow-plague-riot",
     "friendly_name": "Moscow Plague Riot",
     "year": 1771,
@@ -272,6 +584,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "schweppes-bottled-soda-water",
+    "friendly_name": "Schweppes Bottles Soda Water",
+    "year": 1783,
+    "category": "invention",
+    "description": "Johann Jacob Schweppe sold bottled carbonated water made by his own process in Geneva, launching the soft-drink trade.",
+    "difficulty": "medium"
+  },
+  {
     "name": "watt-centrifugal-governor",
     "friendly_name": "Centrifugal Governor",
     "year": 1788,
@@ -285,6 +605,30 @@
     "year": 1793,
     "category": "law",
     "description": "Revolutionary France replaced the week with ten-day decades and briefly ran a decimal clock of ten hours to the day.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "marat-killed-by-corday",
+    "friendly_name": "Marat Killed by Corday",
+    "year": 1793,
+    "category": "revolution",
+    "description": "The radical journalist was killed at home by Charlotte Corday, who held him responsible for the Terror.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pontcysyllte-aqueduct",
+    "friendly_name": "Pontcysyllte Aqueduct Opens",
+    "year": 1805,
+    "category": "architecture",
+    "description": "Thomas Telford carried a canal high across the Dee valley in a cast iron trough resting on slender stone piers.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "spencer-perceval-assassinated",
+    "friendly_name": "Spencer Perceval Assassinated",
+    "year": 1812,
+    "category": "revolution",
+    "description": "A merchant with a grievance shot the prime minister in the lobby of the Commons, the only such killing in Britain.",
     "difficulty": "hard"
   },
   {
@@ -304,6 +648,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "american-temperance-society",
+    "friendly_name": "American Temperance Society",
+    "year": 1826,
+    "category": "medicine",
+    "description": "Reformers in Boston founded a national society urging Americans to give up spirits, seeding the drive for prohibition.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jackson-assassination-attempt",
+    "friendly_name": "Attempt on Andrew Jackson",
+    "year": 1835,
+    "category": "revolution",
+    "description": "Both pistols misfired when a house painter confronted the president at the Capitol, the first attempt on one in office.",
+    "difficulty": "hard"
+  },
+  {
     "name": "railway-time-britain",
     "friendly_name": "Railway Time Adopted",
     "year": 1840,
@@ -312,12 +672,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "pilsner-first-brewed",
+    "friendly_name": "First Pilsner Brewed in Bohemia",
+    "year": 1842,
+    "category": "craft",
+    "description": "Brewers in Plzen used pale malt and bottom-fermenting yeast to make a clear golden lager that reshaped world beer.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "thames-tunnel-opens",
+    "friendly_name": "Thames Tunnel Opens",
+    "year": 1843,
+    "category": "architecture",
+    "description": "Marc and Isambard Brunel finished the first tunnel driven under a navigable river, using a protective shield.",
+    "difficulty": "medium"
+  },
+  {
     "name": "great-clock-westminster",
     "friendly_name": "Great Clock of Westminster",
     "year": 1859,
     "category": "architecture",
     "description": "The tower clock and its great bell, Big Ben, began keeping time above the Palace of Westminster in London.",
     "difficulty": "easy"
+  },
+  {
+    "name": "us-greenbacks-issued",
+    "friendly_name": "US Greenbacks Issued",
+    "year": 1862,
+    "category": "law",
+    "description": "To fund the Civil War, Congress issued unbacked paper dollars nicknamed greenbacks and made them legal tender.",
+    "difficulty": "medium"
   },
   {
     "name": "london-main-drainage",
@@ -333,6 +717,14 @@
     "year": 1866,
     "category": "warfare",
     "description": "Robert Whitehead's torpedo ran under its own power, held at a set depth by a concealed pendulum and valve.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "german-gold-mark-adopted",
+    "friendly_name": "Germany Adopts The Gold Mark",
+    "year": 1873,
+    "category": "law",
+    "description": "Paid a French war indemnity in gold, the new German Empire dropped silver for a gold mark and pulled Europe onto the gold standard.",
     "difficulty": "hard"
   },
   {
@@ -384,6 +776,22 @@
     "difficulty": "easy"
   },
   {
+    "name": "pancho-villa-assassinated",
+    "friendly_name": "Pancho Villa Assassinated",
+    "year": 1923,
+    "category": "revolution",
+    "description": "The retired Mexican revolutionary general was ambushed by gunmen at Parral, three years after laying down arms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "prohibition-repealed-us",
+    "friendly_name": "Prohibition Repealed in the US",
+    "year": 1933,
+    "category": "law",
+    "description": "The Twenty-first Amendment ended national prohibition, returning the regulation of alcohol to the American states.",
+    "difficulty": "easy"
+  },
+  {
     "name": "paricutin-volcano-born",
     "friendly_name": "Parícutin Erupts in a Cornfield",
     "year": 1943,
@@ -392,11 +800,27 @@
     "difficulty": "medium"
   },
   {
+    "name": "espresso-machine-crema",
+    "friendly_name": "Espresso Machine Makes Crema",
+    "year": 1948,
+    "category": "invention",
+    "description": "Achille Gaggia's lever machine forced hot water through ground coffee under pressure, giving espresso its crema.",
+    "difficulty": "medium"
+  },
+  {
     "name": "grey-walter-tortoises",
     "friendly_name": "Grey Walter's Robot Tortoises",
     "year": 1948,
     "category": "science",
     "description": "Neurologist William Grey Walter built Elmer and Elsie, shelled robots that hunted light and recharged themselves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mackinac-bridge",
+    "friendly_name": "Mackinac Bridge Opens",
+    "year": 1957,
+    "category": "architecture",
+    "description": "A five-mile suspension bridge joined Michigan's upper and lower peninsulas across the storm-swept Straits.",
     "difficulty": "hard"
   },
   {
@@ -440,6 +864,38 @@
     "difficulty": "hard"
   },
   {
+    "name": "bosphorus-bridge",
+    "friendly_name": "Bosphorus Bridge Opens",
+    "year": 1973,
+    "category": "architecture",
+    "description": "Istanbul's first suspension bridge over the Bosphorus strait carried road traffic between Europe and Asia.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sadat-assassinated",
+    "friendly_name": "Anwar Sadat Assassinated",
+    "year": 1981,
+    "category": "revolution",
+    "description": "The Egyptian president was killed by soldiers during a military parade after making peace with Israel.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "new-coke-launched",
+    "friendly_name": "New Coke Launched",
+    "year": 1985,
+    "category": "commerce",
+    "description": "Coca-Cola replaced its original formula with a sweeter recipe, then restored the old one after a public backlash.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rabin-assassinated",
+    "friendly_name": "Yitzhak Rabin Assassinated",
+    "year": 1995,
+    "category": "revolution",
+    "description": "The Israeli prime minister was shot by an opponent of the Oslo Accords after a peace rally in Tel Aviv.",
+    "difficulty": "medium"
+  },
+  {
     "name": "haart-aids-treatment",
     "friendly_name": "Combination Therapy Tames AIDS",
     "year": 1996,
@@ -453,6 +909,14 @@
     "year": 2005,
     "category": "invention",
     "description": "Stanford's driverless car Stanley crossed a desert course alone, showing autonomous driving could work.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "bhutto-assassinated",
+    "friendly_name": "Benazir Bhutto Assassinated",
+    "year": 2007,
+    "category": "revolution",
+    "description": "The former Pakistani prime minister was killed at an election rally in Rawalpindi after returning from exile.",
     "difficulty": "medium"
   },
   {
