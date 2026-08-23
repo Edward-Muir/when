@@ -149,7 +149,13 @@ Nineteen themes authored in one parallel pass, one note each. Every deck is 34-3
 clears all four gates: size 30-36, 6+ of 8 spread bins, 5+ band-zero footholds, no two cards
 sharing a year. Ready-to-paste workflow inputs are in
 [publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
-[art/all_prompts.csv](art/all_prompts.csv).
+[art/all_prompts.csv](art/all_prompts.csv), built by
+`scripts/events/theme-art-prompts.py` from the hand-authored scenes in `art/scenes/`.
+
+**That CSV is five columns**, `event_name,research_prompt,image_prompt,image_generated,saved_filename`,
+because the consumer sends the research prompt and the image prompt as two messages in one
+Gemini chat. Both in-repo generators used to write four and drop the research step; see
+[events-images/](../events-images/index.md) for the skeleton and why it is as short as it is.
 
 | Theme                | Note                                         | Scope rule — a card is in only if…                               |
 | -------------------- | -------------------------------------------- | ---------------------------------------------------------------- |

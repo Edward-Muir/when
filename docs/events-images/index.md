@@ -26,6 +26,54 @@ One deferred item, if that tree is ever recovered: a `cloudinary_delete_list.jso
 superseded `public_id`s, **queued and never executed**. The `dpr_auto`-era derived assets from
 the August rung change are similarly still orphaned (noted in the Cloudinary doc's §4).
 
+## The prompt CSV contract, and the skeleton itself
+
+Recorded here because the last version of it was lost. The Indonesia batch was built by
+`when-images/scripts/build_prompt_batch.py` with its scenes in `when-images/scenes/`; both were
+untracked, so when the prompts were next needed the skeleton had to be reconstructed from a
+prose description of it in [../sports-events/](../sports-events/session-2026-08-20-sports-image-pipeline.md).
+Anything that shapes a prompt belongs in git.
+
+**Five columns**, and this is the part that silently breaks a run:
+
+```
+event_name,research_prompt,image_prompt,image_generated,saved_filename
+```
+
+The consumer is a scheduled browser task driving gemini.google.com, and it sends **two messages
+in the same chat** — the research prompt, then the image prompt. Both in-repo generators
+(`regenerate_mobile_prompts.py`, and `scripts/events/theme-art-prompts.py` before it was
+rewritten) emitted four columns with no `research_prompt`, which drops the priming step the
+image prompt is written to rely on.
+
+The skeleton, as used for the 353 theme events:
+
+```
+A dramatic chiaroscuro oil painting. 1:1 square composition optimized for small screen
+viewing. One dominant focal subject filling most of the frame. Strong silhouettes, high
+contrast. {friendly_name} — {description} {scene} No text, no dates, no numbers, no labels,
+no borders, no watermarks.
+
+Search the web for reference artworks and historical records of "{friendly_name}"
+({year_string}). Study the {research_focus} of this period.
+```
+
+**No era palette.** Three generations of prompt each dropped weight — the four-colour palette
+became three, then went entirely — because shorter, less prescriptive prompts render better
+once the model has already researched the period, and the palette clause was fighting the
+scene. `get_era_palette` survives in `regenerate_mobile_prompts.py`, which is otherwise dead:
+it writes to `images/claude_prompts/`, which does not exist.
+
+`scene` and `research_focus` are hand-authored per event and live in
+`docs/curated-themes/art/scenes/<theme>.json`. Scene rules, learned on the sports batch and
+still binding: never describe text (the renderer garbles it and the suffix bans it, so paint
+the cause or the object instead — a shot-clock rule became a fast break); no colour adjectives,
+though material nouns like "bronze" or "silver" are fine and often necessary; figurative rather
+than establishing; likenesses by posture, not face; deaths and epidemics non-graphic.
+
+One measured effect of the rewrite: median prompt length fell from 732 characters to 496, and
+the share that is byte-identical boilerplate fell with it.
+
 ## Card colours
 
 Each event carries a `color` / `text_color` pair baked into its JSON, extracted **at build
