@@ -185,6 +185,34 @@ bare `tea` matches "steam" and "instead", bare `led ` matches "called ", and `il
 matches manuscript illumination. Unanchored nets reported 714, 460 and 102 hits for themes
 whose real coverage was 34, 87 and 22.
 
+## Traps found authoring the bank
+
+Four things cost real time across nineteen parallel themes. All four are cheap to avoid once
+named.
+
+**A slug can be named for the cause while its title names the event.** `english-civil-war-aftermath`
+_is_ the Restoration of Charles II card, with that exact `friendly_name`. An agent greps for
+"charles" or "restoration", finds nothing, and writes a duplicate. `theme-gap` will not save
+you either — it matches `friendly_name description`, never the slug. **Before authoring any
+card, check what already sits on its year**, not just what matches its name.
+
+**`candidates.json` is live.** The `add-events` skill calls it "events staged for review" and
+says not to hand-add to it, which reads as "not in the game". It is in `manifest.json`, so its
+events are dealt, validated and part of the slug namespace like any other file.
+
+**Anchor short regex alternatives with `\b`.** Unanchored `tea` matches "s**tea**m" and
+"ins**tea**d"; `led ` matches "cal**led** "; `illuminat` matches manuscript illumination.
+These inflated three themes' nets to 714, 460 and 102 hits against real coverage of 34, 87
+and 22 — and an inflated net reads as "this theme is rich", which is the wrong conclusion.
+
+**A net above ~100 after anchoring means the concept is too loose.** "Scientific discoveries"
+and "European country foundings" are categories, not decks. Narrow the scope rule to something
+answerable yes/no about a single candidate, then re-probe.
+
+One tooling note: `npm run find-duplicates` is O(n²) in _pairs_, and at ~5,985 events it
+crashed on V8's maximum Set size until the redundant seen-sets were removed. If it ever dies
+with `RangeError` rather than reporting, that is the shape of the problem.
+
 ## Authoring: themes lead, the catalogue follows
 
 Pick the theme on its merits, then find out what is missing:
