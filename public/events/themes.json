@@ -8,6 +8,30 @@
     "difficulty": "hard"
   },
   {
+    "name": "mesopotamian-glaze-cipher",
+    "friendly_name": "Enciphered Glaze Recipe",
+    "year": -1500,
+    "category": "craft",
+    "description": "A Mesopotamian scribe disguised the cuneiform spellings in a pottery glaze formula, the earliest known cipher.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "nine-mens-morris-game",
+    "friendly_name": "Nine Men's Morris Boards Cut",
+    "year": -1400,
+    "category": "craft",
+    "description": "Players scratched Nine Men's Morris grids into temple stone in Egypt, moving pieces to form rows of three.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sphinx-cleared-from-sand",
+    "friendly_name": "Sphinx Freed From the Sand",
+    "year": -1400,
+    "category": "architecture",
+    "description": "A young Egyptian prince dug the Great Sphinx of Giza out of the drifted desert sand and recorded the deed on a stele.",
+    "difficulty": "medium"
+  },
+  {
     "name": "cowrie-shell-money-china",
     "friendly_name": "Cowrie Shells Become Money",
     "year": -1200,
@@ -29,6 +53,14 @@
     "year": -1000,
     "category": "trade",
     "description": "Greek islanders dived on a single breath, weighted by a flat stone, to cut sponges free of the seabed.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "mancala-sowing-game",
+    "friendly_name": "Mancala Sowing Boards Appear",
+    "year": -1000,
+    "category": "craft",
+    "description": "Rows of shallow pits cut into stone across Africa and the Near East mark the sowing game family called mancala.",
     "difficulty": "medium"
   },
   {
@@ -64,12 +96,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "terracotta-oil-lamp",
+    "friendly_name": "Terracotta Oil Lamps Spread",
+    "year": -700,
+    "category": "craft",
+    "description": "Cheap wheel-thrown clay lamps burning olive oil became the common household light around the Mediterranean.",
+    "difficulty": "hard"
+  },
+  {
     "name": "sennacherib-assassinated",
     "friendly_name": "Sennacherib Assassinated",
     "year": -681,
     "category": "empires",
     "description": "The Assyrian king who besieged Jerusalem was killed by his own sons in a dispute over the succession.",
     "difficulty": "hard"
+  },
+  {
+    "name": "temple-scroll-found-josiah",
+    "friendly_name": "Lost Law Scroll Found",
+    "year": -622,
+    "category": "writing",
+    "description": "Workmen repairing the Temple in Jerusalem turned up a forgotten scroll of law, and King Josiah tore his robes and reformed the kingdom.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "atbash-cipher-scribes",
+    "friendly_name": "Atbash Cipher Hides Names",
+    "year": -600,
+    "category": "writing",
+    "description": "Hebrew scribes swapped each letter for its opposite in the alphabet, veiling Babylon's name inside prophecy.",
+    "difficulty": "medium"
   },
   {
     "name": "babylonian-world-map",
@@ -94,6 +150,22 @@
     "category": "science",
     "description": "The Milesian philosopher argued Earth hangs unsupported in space, resting on nothing at all.",
     "difficulty": "hard"
+  },
+  {
+    "name": "nabonidus-excavates-ur",
+    "friendly_name": "Nabonidus Excavates Ur",
+    "year": -550,
+    "category": "science",
+    "description": "The last king of Babylon dug beneath a ruined temple to recover its founder's buried inscription, an early act of archaeology.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "histiaeus-tattooed-message",
+    "friendly_name": "Message Tattooed On A Scalp",
+    "year": -499,
+    "category": "writing",
+    "description": "Histiaeus tattooed a call to revolt on a slave's shaved head and let the hair regrow, hiding it from Persian eyes.",
+    "difficulty": "medium"
   },
   {
     "name": "scyllis-combat-diver",
@@ -144,6 +216,14 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "spartan-scytale-cipher",
+    "friendly_name": "The Spartan Scytale",
+    "year": -404,
+    "category": "warfare",
+    "description": "Spartan commanders wound a leather strip around a rod, so a dispatch could be read only on a rod of equal thickness.",
+    "difficulty": "medium"
+  },
+  {
     "name": "punch-marked-coins-india",
     "friendly_name": "India's Punch-Marked Coins",
     "year": -400,
@@ -157,6 +237,14 @@
     "year": -373,
     "category": "disasters",
     "description": "An earthquake and tsunami sank the Greek city of Helike into the Gulf of Corinth overnight, leaving nothing above water.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aeneas-tacticus-secret-messages",
+    "friendly_name": "Aeneas Tacticus Hides Messages",
+    "year": -350,
+    "category": "writing",
+    "description": "A Greek general's siege manual catalogued ways to smuggle word past a blockade, from pricked books to hollow soles.",
     "difficulty": "hard"
   },
   {
@@ -240,6 +328,22 @@
     "difficulty": "hard"
   },
   {
+    "name": "confucian-classics-found-in-wall",
+    "friendly_name": "Classics Found in a Wall",
+    "year": -150,
+    "category": "writing",
+    "description": "Texts hidden from the Qin book burnings were recovered from a wall of Confucius' old house at Qufu, in a script scholars could barely read.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "polybius-square-cipher",
+    "friendly_name": "The Polybius Square",
+    "year": -150,
+    "category": "invention",
+    "description": "The Greek historian Polybius set the alphabet in a five-by-five grid so any letter became a pair of torch signals.",
+    "difficulty": "medium"
+  },
+  {
     "name": "nine-chapters-mathematical-art",
     "friendly_name": "Nine Chapters on Mathematical Art",
     "year": -100,
@@ -264,6 +368,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "caesar-shift-cipher",
+    "friendly_name": "Caesar's Shift Cipher",
+    "year": -50,
+    "category": "warfare",
+    "description": "Julius Caesar shifted every letter three places down the alphabet to keep his military dispatches from enemy hands.",
+    "difficulty": "easy"
+  },
+  {
     "name": "julian-calendar-reform",
     "friendly_name": "Julian Calendar Reform",
     "year": -46,
@@ -278,6 +390,14 @@
     "category": "revolution",
     "description": "Officers of the Praetorian Guard killed the Roman emperor in his palace and raised Claudius in his place.",
     "difficulty": "medium"
+  },
+  {
+    "name": "roman-factory-lamps",
+    "friendly_name": "Roman Workshops Stamp Out Lamps",
+    "year": 50,
+    "category": "craft",
+    "description": "Italian potteries mass-produced mould-made oil lamps signed with maker's marks and shipped them across the empire.",
+    "difficulty": "hard"
   },
   {
     "name": "trajans-bridge-danube",
@@ -328,12 +448,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "bamboo-annals-recovered",
+    "friendly_name": "Bamboo Annals Recovered",
+    "year": 279,
+    "category": "writing",
+    "description": "Robbers broke into a Warring States tomb at Ji and scattered a lost court chronicle written on bamboo strips, which scholars reassembled.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "kamasutra-secret-writing",
+    "friendly_name": "Secret Writing Among The Arts",
+    "year": 300,
+    "category": "writing",
+    "description": "The Kama Sutra listed mlecchita vikalpa, the art of secret writing, among the sixty-four skills a cultured person learned.",
+    "difficulty": "medium"
+  },
+  {
     "name": "san-marino-founded",
     "friendly_name": "San Marino Founded",
     "year": 301,
     "category": "empires",
     "description": "A stonemason fleeing persecution settled Monte Titano, founding what became Europe's oldest surviving republic.",
     "difficulty": "hard"
+  },
+  {
+    "name": "golgotha-excavated",
+    "friendly_name": "Golgotha Excavated",
+    "year": 326,
+    "category": "architecture",
+    "description": "Constantine's builders tore down a Roman temple in Jerusalem and dug out the rock-cut tomb venerated as the burial place of Christ.",
+    "difficulty": "medium"
   },
   {
     "name": "peutinger-road-map",
@@ -376,6 +520,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "lantern-festival-sui",
+    "friendly_name": "Lantern Festival Lights Luoyang",
+    "year": 610,
+    "category": "art",
+    "description": "Emperor Yang staged vast lantern displays in the Sui capital, fixing the festival of lights in Chinese custom.",
+    "difficulty": "hard"
+  },
+  {
     "name": "quran-forbids-wine",
     "friendly_name": "Quran Forbids Wine",
     "year": 625,
@@ -390,6 +542,14 @@
     "category": "law",
     "description": "Caliph Umar fixed the Muslim lunar calendar to count from Muhammad's migration from Mecca to Medina.",
     "difficulty": "medium"
+  },
+  {
+    "name": "shatranj-persia",
+    "friendly_name": "Shatranj Spreads Through Persia",
+    "year": 650,
+    "category": "craft",
+    "description": "Persia reworked the Indian army game as shatranj, added written problem studies, and passed chess to the Arab world.",
+    "difficulty": "hard"
   },
   {
     "name": "first-bulgarian-empire-founded",
@@ -416,12 +576,44 @@
     "difficulty": "hard"
   },
   {
+    "name": "offas-dyke-built",
+    "friendly_name": "Offa's Dyke Built",
+    "year": 785,
+    "category": "architecture",
+    "description": "Offa of Mercia, the most powerful ruler in England, raised a great earthwork rampart along the Welsh border.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mamun-opens-great-pyramid",
+    "friendly_name": "Caliph Opens the Great Pyramid",
+    "year": 832,
+    "category": "architecture",
+    "description": "Caliph al-Ma'mun's workmen hammered a tunnel through solid masonry into the sealed pyramid of Khufu, hunting for treasure.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "al-kindi-frequency-analysis",
+    "friendly_name": "Frequency Analysis Invented",
+    "year": 850,
+    "category": "science",
+    "description": "The Baghdad scholar al-Kindi showed that counting how often each letter appears will break any simple substitution cipher.",
+    "difficulty": "medium"
+  },
+  {
     "name": "banu-musa-ingenious-devices",
     "friendly_name": "Book of Ingenious Devices",
     "year": 850,
     "category": "invention",
     "description": "The Banu Musa brothers of Baghdad catalogued a hundred self-acting devices, among them a flute player driven by a pinned cylinder.",
     "difficulty": "medium"
+  },
+  {
+    "name": "candle-clock-alfred",
+    "friendly_name": "Alfred's Candle Clock",
+    "year": 890,
+    "category": "invention",
+    "description": "King Alfred burned graduated wax candles inside horn lanterns to keep the hours and shield the flame from draughts.",
+    "difficulty": "hard"
   },
   {
     "name": "al-battani-solar-year",
@@ -438,6 +630,14 @@
     "category": "empires",
     "description": "Tomislav drew the Croatian duchies together and is remembered as the first king of a Croatian kingdom.",
     "difficulty": "hard"
+  },
+  {
+    "name": "athelstan-first-king-of-england",
+    "friendly_name": "Athelstan, First King of England",
+    "year": 927,
+    "category": "empires",
+    "description": "Athelstan took York from the Vikings and received the submission of the other British rulers, uniting England under one crown.",
+    "difficulty": "medium"
   },
   {
     "name": "gorm-the-old-unites-denmark",
@@ -464,6 +664,14 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "aethelred-unready-becomes-king",
+    "friendly_name": "Aethelred the Unready Becomes King",
+    "year": 978,
+    "category": "empires",
+    "description": "Aethelred took the English throne as a boy after his half-brother's murder; renewed Viking raids defined his long reign.",
+    "difficulty": "medium"
+  },
+  {
     "name": "stephen-first-king-hungary",
     "friendly_name": "Stephen Crowned King of Hungary",
     "year": 1000,
@@ -480,11 +688,27 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "edward-confessor-becomes-king",
+    "friendly_name": "Edward the Confessor Becomes King",
+    "year": 1042,
+    "category": "empires",
+    "description": "The pious son of Aethelred returned from Norman exile to take the English throne, and went on to found Westminster Abbey.",
+    "difficulty": "medium"
+  },
+  {
     "name": "luoyang-bridge-quanzhou",
     "friendly_name": "Luoyang Bridge Completed",
     "year": 1059,
     "category": "architecture",
     "description": "Cai Xiang's long stone beam bridge crossed a Fujian estuary on foundations that farmed oysters cemented together.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "justinian-digest-rediscovered",
+    "friendly_name": "Justinian's Digest Rediscovered",
+    "year": 1070,
+    "category": "law",
+    "description": "A forgotten manuscript of Roman law resurfaced in Italy and became the founding text of European legal scholarship at Bologna.",
     "difficulty": "hard"
   },
   {
@@ -512,6 +736,22 @@
     "difficulty": "hard"
   },
   {
+    "name": "henry-i-charter-of-liberties",
+    "friendly_name": "Henry I's Charter of Liberties",
+    "year": 1100,
+    "category": "law",
+    "description": "Henry I seized the throne on his brother's death and issued a coronation charter curbing royal abuses, a model for Magna Carta.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "kaifeng-night-markets",
+    "friendly_name": "Kaifeng's Night Markets Glow",
+    "year": 1120,
+    "category": "commerce",
+    "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "yu-ji-tu-grid-map",
     "friendly_name": "Yu Ji Tu Map Carved in Stone",
     "year": 1136,
@@ -528,12 +768,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "henry-ii-becomes-king",
+    "friendly_name": "Henry II Becomes King",
+    "year": 1154,
+    "category": "empires",
+    "description": "Henry II ended the Anarchy and took the English throne, founding the Plantagenet line and an empire reaching to the Pyrenees.",
+    "difficulty": "medium"
+  },
+  {
     "name": "privilegium-minus-austria",
     "friendly_name": "Charter That Created Austria",
     "year": 1156,
     "category": "law",
     "description": "The Privilegium Minus raised the Babenberg march to a duchy of Austria with its own law and succession.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "richard-lionheart-crowned",
+    "friendly_name": "Richard the Lionheart Crowned",
+    "year": 1189,
+    "category": "empires",
+    "description": "Richard I was crowned at Westminster and left within months for the Third Crusade, spending almost none of his reign in England.",
+    "difficulty": "medium"
   },
   {
     "name": "serbian-kingdom-stefan-crowned",
@@ -576,12 +832,36 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "paris-candlemakers-guild",
+    "friendly_name": "Paris Candlemakers Guild",
+    "year": 1268,
+    "category": "craft",
+    "description": "The provost's book of trades set statutes for the tallow and wax chandlers who supplied the city with light.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "andorra-pareatges-signed",
     "friendly_name": "Charters That Created Andorra",
     "year": 1278,
     "category": "diplomacy",
     "description": "A bishop and a count settled their quarrel by sharing the valleys, creating the co-principality of Andorra.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "alfonso-book-of-games",
+    "friendly_name": "Alfonso's Book of Games",
+    "year": 1283,
+    "category": "writing",
+    "description": "Alfonso the Wise of Castile had scribes compile an illustrated manuscript of chess, dice and tables games.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "edward-i-annexes-wales",
+    "friendly_name": "Edward I Annexes Wales",
+    "year": 1284,
+    "category": "empires",
+    "description": "The Statute of Rhuddlan bound the Welsh principality to the English crown after Edward I crushed Llywelyn's rising.",
+    "difficulty": "hard"
   },
   {
     "name": "hereford-mappa-mundi",
@@ -592,12 +872,44 @@
     "difficulty": "medium"
   },
   {
+    "name": "edward-ii-deposed",
+    "friendly_name": "Edward II Deposed",
+    "year": 1327,
+    "category": "revolution",
+    "description": "Parliament forced Edward II to give up the crown to his young son after years of misrule; he died in captivity soon after.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mamluk-mosque-lamps",
+    "friendly_name": "Enamelled Mosque Lamps",
+    "year": 1330,
+    "category": "craft",
+    "description": "Cairo glassmakers gilded and enamelled oil lamps that hung by the dozen in Mamluk mosques, prized far beyond Egypt.",
+    "difficulty": "hard"
+  },
+  {
     "name": "sandglass-at-sea",
     "friendly_name": "Sandglass Goes to Sea",
     "year": 1338,
     "category": "invention",
     "description": "European ships adopted the sandglass to time the crew's watches and, paired with a knotted line, to log a vessel's speed.",
     "difficulty": "hard"
+  },
+  {
+    "name": "edward-iii-claims-french-crown",
+    "friendly_name": "Edward III Claims the French Crown",
+    "year": 1340,
+    "category": "empires",
+    "description": "Edward III formally styled himself King of France and quartered the French lilies with the English lions on his arms.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "petrarch-finds-cicero-letters",
+    "friendly_name": "Petrarch Finds Cicero's Letters",
+    "year": 1345,
+    "category": "writing",
+    "description": "In a cathedral library at Verona, Petrarch turned up Cicero's private correspondence and lit the fuse of Renaissance humanism.",
+    "difficulty": "medium"
   },
   {
     "name": "ponte-vecchio-florence",
@@ -656,6 +968,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "playing-cards-reach-europe",
+    "friendly_name": "Playing Cards Reach Europe",
+    "year": 1377,
+    "category": "trade",
+    "description": "A Swiss monk recorded the sudden arrival of playing cards, carried from Mamluk Egypt through Mediterranean ports.",
+    "difficulty": "medium"
+  },
+  {
     "name": "wat-tyler-killed",
     "friendly_name": "Wat Tyler Killed at Smithfield",
     "year": 1381,
@@ -696,12 +1016,52 @@
     "difficulty": "medium"
   },
   {
+    "name": "london-lantern-order",
+    "friendly_name": "London Orders Winter Lanterns",
+    "year": 1417,
+    "category": "law",
+    "description": "The mayor required householders to hang lanterns outside on dark evenings, an early rule for lighting city streets.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "poggio-recovers-lucretius",
+    "friendly_name": "Poggio Recovers Lucretius",
+    "year": 1417,
+    "category": "writing",
+    "description": "The book hunter Poggio Bracciolini found the last surviving copy of the Roman poem On the Nature of Things in a German abbey.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "voynich-manuscript-created",
+    "friendly_name": "The Voynich Manuscript",
+    "year": 1420,
+    "category": "writing",
+    "description": "An illustrated codex was written in an unknown script that has since defeated every professional codebreaker who tried it.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "henry-vi-crowned-in-paris",
+    "friendly_name": "Henry VI Crowned in Paris",
+    "year": 1431,
+    "category": "empires",
+    "description": "The boy king of England was crowned King of France at Notre-Dame, the only monarch ever crowned in both kingdoms.",
+    "difficulty": "hard"
+  },
+  {
     "name": "cusa-infinite-universe",
     "friendly_name": "Cusa Denies the Cosmic Centre",
     "year": 1440,
     "category": "science",
     "description": "Nicholas of Cusa argued the universe has no centre and no outer edge, and that stars are other suns.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "alberti-cipher-disk",
+    "friendly_name": "Alberti's Cipher Disk",
+    "year": 1467,
+    "category": "invention",
+    "description": "Leon Battista Alberti mounted two lettered discs that turned mid-message, the first cipher to switch alphabets as it ran.",
+    "difficulty": "hard"
   },
   {
     "name": "printed-ptolemy-maps",
@@ -717,6 +1077,14 @@
     "year": 1478,
     "category": "revolution",
     "description": "Rival bankers attacked the Medici brothers during Mass in Florence. Giuliano was killed and Lorenzo escaped.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "domus-aurea-rediscovered",
+    "friendly_name": "Nero's Golden House Found",
+    "year": 1480,
+    "category": "art",
+    "description": "Romans lowered themselves on ropes into buried painted halls under a hillside, and copied the decoration as the grotesque style.",
     "difficulty": "hard"
   },
   {
@@ -752,6 +1120,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "laocoon-unearthed",
+    "friendly_name": "Laocoon Statue Unearthed",
+    "year": 1506,
+    "category": "art",
+    "description": "Diggers in a Roman vineyard struck an ancient marble group of a priest and his sons in the coils of serpents; Michelangelo came to look.",
+    "difficulty": "medium"
+  },
+  {
     "name": "henlein-portable-watch",
     "friendly_name": "Henlein's Portable Watch",
     "year": 1510,
@@ -766,6 +1142,14 @@
     "category": "law",
     "description": "Bavaria decreed that beer be brewed from barley, hops and water alone, a purity rule German brewers still cite.",
     "difficulty": "medium"
+  },
+  {
+    "name": "trithemius-polygraphia",
+    "friendly_name": "First Printed Book On Ciphers",
+    "year": 1518,
+    "category": "writing",
+    "description": "The abbot Trithemius left a printed manual whose square table enciphered each letter of a message with a fresh alphabet.",
+    "difficulty": "hard"
   },
   {
     "name": "joachimsthaler-first-struck",
@@ -816,6 +1200,22 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "japanese-andon-lantern",
+    "friendly_name": "Andon Paper Lamps In Japan",
+    "year": 1550,
+    "category": "craft",
+    "description": "Wooden frames screened with paper sheltered a rapeseed-oil wick, becoming the standard household lamp in Japan.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mary-i-becomes-queen",
+    "friendly_name": "Mary I Becomes Queen",
+    "year": 1553,
+    "category": "empires",
+    "description": "Mary Tudor took the throne as England's first ruling queen and set about restoring the Catholic faith by force.",
+    "difficulty": "medium"
+  },
+  {
     "name": "turriano-mechanical-friar",
     "friendly_name": "Turriano's Mechanical Friar",
     "year": 1560,
@@ -848,6 +1248,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "roman-catacombs-rediscovered",
+    "friendly_name": "Roman Catacombs Rediscovered",
+    "year": 1578,
+    "category": "architecture",
+    "description": "A collapse on the Via Salaria opened miles of forgotten Christian burial galleries beneath the Roman countryside.",
+    "difficulty": "hard"
+  },
+  {
     "name": "gregorian-calendar-reform",
     "friendly_name": "Gregorian Calendar Adopted",
     "year": 1582,
@@ -861,6 +1269,14 @@
     "year": 1584,
     "category": "revolution",
     "description": "The leader of the Dutch revolt was shot at his house in Delft by a Catholic seeking a bounty offered by Spain.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "babington-plot-cipher-broken",
+    "friendly_name": "Mary Stuart's Cipher Broken",
+    "year": 1586,
+    "category": "law",
+    "description": "Elizabeth I's codebreaker deciphered letters in which Mary, Queen of Scots blessed a plot to assassinate the queen.",
     "difficulty": "medium"
   },
   {
@@ -896,6 +1312,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "cordouan-lighthouse",
+    "friendly_name": "Cordouan Lighthouse Completed",
+    "year": 1611,
+    "category": "architecture",
+    "description": "A royal tower crowned by an open fire rose at the mouth of the Gironde to guide ships past its shoals.",
+    "difficulty": "hard"
+  },
+  {
     "name": "napier-logarithms",
     "friendly_name": "Napier Invents Logarithms",
     "year": 1614,
@@ -912,12 +1336,44 @@
     "difficulty": "hard"
   },
   {
+    "name": "bacon-bilateral-cipher",
+    "friendly_name": "Bacon's Bilateral Cipher",
+    "year": 1623,
+    "category": "writing",
+    "description": "Francis Bacon encoded each letter as a five-symbol group of two typefaces, concealing a message inside innocent text.",
+    "difficulty": "hard"
+  },
+  {
     "name": "wallenstein-assassinated",
     "friendly_name": "Wallenstein Assassinated",
     "year": 1634,
     "category": "warfare",
     "description": "The Habsburg emperor's leading general was killed by his own officers once he was suspected of treating with the enemy.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "ridotto-venice-casino",
+    "friendly_name": "Venice Opens the Ridotto",
+    "year": 1638,
+    "category": "commerce",
+    "description": "Venice licensed the Ridotto, a public gaming house where masked patrons played card games under state supervision.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-cipher-of-france",
+    "friendly_name": "The Great Cipher Of France",
+    "year": 1650,
+    "category": "diplomacy",
+    "description": "The Rossignols enciphered the correspondence of Louis XIV with hundreds of numbered syllables, resisting attack for centuries.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "restoration-of-charles-ii",
+    "friendly_name": "Restoration of Charles II",
+    "year": 1660,
+    "category": "revolution",
+    "description": "Charles II returned from exile to a cheering London, restoring the monarchy and ending Puritan rule in England.",
+    "difficulty": "medium"
   },
   {
     "name": "blaeu-atlas-maior",
@@ -942,6 +1398,14 @@
     "category": "craft",
     "description": "Divers working from a lead bell hauled dozens of bronze guns off a Swedish warship lying deep in Stockholm harbour.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "paris-street-lanterns",
+    "friendly_name": "Paris Hangs Street Lanterns",
+    "year": 1667,
+    "category": "law",
+    "description": "Police chief La Reynie strung candle lanterns above the streets, and the capital earned its name as the city of light.",
+    "difficulty": "hard"
   },
   {
     "name": "etna-catania-eruption",
@@ -976,6 +1440,38 @@
     "difficulty": "hard"
   },
   {
+    "name": "dominoes-reach-europe",
+    "friendly_name": "Dominoes Reach Europe",
+    "year": 1700,
+    "category": "craft",
+    "description": "Chinese tile games arrived in Italy and France as dominoes, sets of pip-marked bones matched end to end.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "queen-anne-accession",
+    "friendly_name": "Anne Becomes Queen",
+    "year": 1702,
+    "category": "empires",
+    "description": "The last Stuart monarch took the throne; England and Scotland were joined into a single kingdom during her reign.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "herculaneum-well-discovery",
+    "friendly_name": "Herculaneum Struck by Diggers",
+    "year": 1709,
+    "category": "architecture",
+    "description": "Workmen sinking a well near Naples hit the marble seats of a Roman theatre buried under volcanic rock.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "george-i-hanoverian-succession",
+    "friendly_name": "Hanoverian Succession",
+    "year": 1714,
+    "category": "empires",
+    "description": "The German-speaking Elector of Hanover became George I of Great Britain, passing over dozens of nearer Catholic claimants.",
+    "difficulty": "medium"
+  },
+  {
     "name": "longitude-act",
     "friendly_name": "Longitude Act Passed",
     "year": 1714,
@@ -990,6 +1486,14 @@
     "category": "invention",
     "description": "John Lethbridge sealed himself into an oak barrel with leather armholes and stripped wrecks for the East India Company.",
     "difficulty": "very-hard"
+  },
+  {
+    "name": "vienna-black-chamber",
+    "friendly_name": "Vienna's Black Chamber",
+    "year": 1716,
+    "category": "diplomacy",
+    "description": "Habsburg clerks opened, copied and resealed foreign diplomatic mail each morning, sending the decrypts on to the emperor.",
+    "difficulty": "hard"
   },
   {
     "name": "liechtenstein-principality-created",
@@ -1024,6 +1528,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "spermaceti-candle-works",
+    "friendly_name": "Spermaceti Candle Works",
+    "year": 1750,
+    "category": "craft",
+    "description": "Rhode Island refiners pressed whale head oil into hard candles that burned bright and smokeless, setting the standard.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "kant-island-universes",
     "friendly_name": "Kant Proposes Island Universes",
     "year": 1755,
@@ -1037,6 +1549,14 @@
     "year": 1759,
     "category": "commerce",
     "description": "Arthur Guinness signed a nine-thousand-year lease on a disused Dublin brewery and began brewing porter there.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "george-iii-becomes-king",
+    "friendly_name": "George III Becomes King",
+    "year": 1760,
+    "category": "empires",
+    "description": "George III took the throne as the first Hanoverian born in Britain; his long reign saw America lost and Napoleon beaten.",
     "difficulty": "medium"
   },
   {
@@ -1054,6 +1574,14 @@
     "category": "science",
     "description": "Thomas Bayes' posthumous essay showed how evidence should update the probability of a hypothesis.",
     "difficulty": "medium"
+  },
+  {
+    "name": "mechanical-turk-chess-automaton",
+    "friendly_name": "The Mechanical Turk Debuts",
+    "year": 1770,
+    "category": "invention",
+    "description": "Wolfgang von Kempelen unveiled a chess-playing automaton at the Habsburg court, secretly steered by a hidden operator.",
+    "difficulty": "hard"
   },
   {
     "name": "moscow-plague-riot",
@@ -1077,6 +1605,14 @@
     "year": 1776,
     "category": "warfare",
     "description": "David Bushnell's one-man submarine tried to screw a powder charge into a British flagship's hull in New York harbour.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "argand-lamp",
+    "friendly_name": "Argand Lamp Burns Brighter",
+    "year": 1780,
+    "category": "invention",
+    "description": "A tubular wick and a glass chimney fed air to the flame, giving Aime Argand's lamp the light of ten candles.",
     "difficulty": "hard"
   },
   {
@@ -1136,6 +1672,14 @@
     "difficulty": "medium"
   },
   {
+    "name": "jefferson-wheel-cipher",
+    "friendly_name": "Jefferson's Wheel Cipher",
+    "year": 1795,
+    "category": "invention",
+    "description": "Thomas Jefferson stacked twenty-six lettered discs on a spindle, devising one of the strongest ciphers of his day.",
+    "difficulty": "medium"
+  },
+  {
     "name": "gauss-disquisitiones",
     "friendly_name": "Gauss Publishes Disquisitiones",
     "year": 1801,
@@ -1160,11 +1704,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "great-paris-cipher-broken",
+    "friendly_name": "The Great Paris Cipher Broken",
+    "year": 1812,
+    "category": "warfare",
+    "description": "Wellington's officer George Scovell cracked the number cipher carrying Napoleon's orders across Spain, laying French plans bare.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "petra-rediscovered",
+    "friendly_name": "Petra Rediscovered",
+    "year": 1812,
+    "category": "architecture",
+    "description": "Disguised as a pilgrim, Johann Ludwig Burckhardt talked his way through a Jordanian gorge into the abandoned rock-cut city.",
+    "difficulty": "medium"
+  },
+  {
     "name": "spencer-perceval-assassinated",
     "friendly_name": "Spencer Perceval Assassinated",
     "year": 1812,
     "category": "revolution",
     "description": "A merchant with a grievance shot the prime minister in the lobby of the Commons, the only such killing in Britain.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "baltimore-gas-streetlights",
+    "friendly_name": "Baltimore Lit By Gas Lamps",
+    "year": 1817,
+    "category": "architecture",
+    "description": "Baltimore laid coal-gas mains and became the first American city to light its streets with gas.",
     "difficulty": "hard"
   },
   {
@@ -1200,6 +1768,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "kriegsspiel-prussian-army",
+    "friendly_name": "Prussia Adopts Kriegsspiel",
+    "year": 1824,
+    "category": "warfare",
+    "description": "The Prussian army took up Kriegsspiel, a map-and-dice war game used to drill officers in tactical decisions.",
+    "difficulty": "very-hard"
+  },
+  {
     "name": "american-temperance-society",
     "friendly_name": "American Temperance Society",
     "year": 1826,
@@ -1224,12 +1800,28 @@
     "difficulty": "hard"
   },
   {
+    "name": "brahmi-script-deciphered",
+    "friendly_name": "Brahmi Script Deciphered",
+    "year": 1837,
+    "category": "writing",
+    "description": "James Prinsep cracked the script of Ashoka's pillar edicts, making India's oldest inscriptions readable and restoring a lost emperor.",
+    "difficulty": "hard"
+  },
+  {
     "name": "siebe-closed-diving-dress",
     "friendly_name": "Siebe's Closed Diving Dress",
     "year": 1837,
     "category": "invention",
     "description": "Augustus Siebe sealed a helmet to a watertight suit with an outlet valve, creating the standard diving dress.",
     "difficulty": "hard"
+  },
+  {
+    "name": "victoria-becomes-queen",
+    "friendly_name": "Victoria Becomes Queen",
+    "year": 1837,
+    "category": "empires",
+    "description": "A teenage princess succeeded her uncle William IV, beginning a reign that would give its name to an age.",
+    "difficulty": "easy"
   },
   {
     "name": "bessel-stellar-parallax",
@@ -1280,11 +1872,27 @@
     "difficulty": "hard"
   },
   {
+    "name": "nineveh-palace-excavated",
+    "friendly_name": "Nineveh's Palace Excavated",
+    "year": 1847,
+    "category": "architecture",
+    "description": "Austen Henry Layard hauled winged bulls and carved battle reliefs out of the mounds of the buried Assyrian capital.",
+    "difficulty": "hard"
+  },
+  {
     "name": "dover-calais-submarine-cable",
     "friendly_name": "First Undersea Telegraph Cable",
     "year": 1851,
     "category": "media",
     "description": "An armoured cable laid across the Channel from Dover to Calais carried the first lasting telegraph traffic under the sea.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "kerosene-lamp",
+    "friendly_name": "Kerosene Lamp Invented",
+    "year": 1853,
+    "category": "invention",
+    "description": "Ignacy Lukasiewicz built a lamp burning distilled rock oil, a cheap bright fuel that soon displaced whale oil.",
     "difficulty": "medium"
   },
   {
@@ -1296,11 +1904,27 @@
     "difficulty": "medium"
   },
   {
+    "name": "playfair-cipher-invented",
+    "friendly_name": "The Playfair Cipher",
+    "year": 1854,
+    "category": "invention",
+    "description": "Charles Wheatstone devised a cipher that scrambled letters in pairs on a small grid, and Britain took it to war.",
+    "difficulty": "hard"
+  },
+  {
     "name": "snow-cholera-map",
     "friendly_name": "Snow's Cholera Map of Soho",
     "year": 1854,
     "category": "medicine",
     "description": "John Snow plotted cholera deaths as bars on a street plan, showing them clustered around a single water pump.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "cuneiform-deciphered",
+    "friendly_name": "Cuneiform Deciphered",
+    "year": 1857,
+    "category": "writing",
+    "description": "Four scholars sealed their independent translations of the same Assyrian text; the versions matched, proving the wedge script could be read.",
     "difficulty": "medium"
   },
   {
@@ -1334,6 +1958,14 @@
     "category": "law",
     "description": "To fund the Civil War, Congress issued unbacked paper dollars nicknamed greenbacks and made them legal tender.",
     "difficulty": "medium"
+  },
+  {
+    "name": "kasiski-vigenere-attack",
+    "friendly_name": "Vigenère Cipher Broken",
+    "year": 1863,
+    "category": "science",
+    "description": "The Prussian officer Friedrich Kasiski published a way to find a repeating key's length, ending faith in the Vigenère cipher.",
+    "difficulty": "hard"
   },
   {
     "name": "hunley-sinks-housatonic",
@@ -1384,12 +2016,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "mahjong-emerges-china",
+    "friendly_name": "Mahjong Emerges in China",
+    "year": 1875,
+    "category": "craft",
+    "description": "Card games around Shanghai and Ningbo were remade in tile form as mahjong, drawing and discarding to build sets.",
+    "difficulty": "medium"
+  },
+  {
     "name": "romania-independence-recognized",
     "friendly_name": "Romania Wins Independence",
     "year": 1878,
     "category": "diplomacy",
     "description": "The great powers recognised Romania as a sovereign state after it fought the Ottomans alongside Russia.",
     "difficulty": "hard"
+  },
+  {
+    "name": "altamira-paintings-found",
+    "friendly_name": "Altamira Paintings Found",
+    "year": 1879,
+    "category": "art",
+    "description": "A child looked up in a Spanish cave and saw a ceiling crowded with painted bison that her excavating father had walked beneath.",
+    "difficulty": "medium"
   },
   {
     "name": "johnson-thermostat",
@@ -1400,11 +2048,35 @@
     "difficulty": "hard"
   },
   {
+    "name": "kerckhoffs-principle",
+    "friendly_name": "Kerckhoffs's Principle",
+    "year": 1883,
+    "category": "science",
+    "description": "Auguste Kerckhoffs argued a military cipher must stay safe even when the enemy knows the system, so only the key is secret.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-world-chess-championship",
+    "friendly_name": "First World Chess Championship",
+    "year": 1886,
+    "category": "sports",
+    "description": "Wilhelm Steinitz beat Johannes Zukertort in a match across three American cities to become world chess champion.",
+    "difficulty": "medium"
+  },
+  {
     "name": "yersin-plague-bacillus",
     "friendly_name": "Plague Bacillus Identified",
     "year": 1894,
     "category": "medicine",
     "description": "Alexandre Yersin isolated the bacterium behind bubonic plague during the Hong Kong epidemic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "niagara-falls-power",
+    "friendly_name": "Niagara Powers Distant Cities",
+    "year": 1895,
+    "category": "invention",
+    "description": "Generators at the falls sent alternating current to Buffalo, proving light could be made far from where it burns.",
     "difficulty": "hard"
   },
   {
@@ -1424,12 +2096,36 @@
     "difficulty": "hard"
   },
   {
+    "name": "knossos-palace-excavated",
+    "friendly_name": "Knossos Palace Excavated",
+    "year": 1900,
+    "category": "architecture",
+    "description": "Arthur Evans uncovered a labyrinth of halls and frescoes on Crete and named their builders the Minoans.",
+    "difficulty": "medium"
+  },
+  {
     "name": "mount-pelee-eruption",
     "friendly_name": "Mount Pelée Destroys St. Pierre",
     "year": 1902,
     "category": "disasters",
     "description": "A pyroclastic flow from Mount Pelée obliterated Saint-Pierre on Martinique in minutes, killing almost every resident.",
     "difficulty": "medium"
+  },
+  {
+    "name": "tungsten-filament-lamp",
+    "friendly_name": "Tungsten Filament Lamp",
+    "year": 1904,
+    "category": "invention",
+    "description": "Hungarian chemists patented a bulb with a tungsten filament, brighter and far longer-lived than carbon threads.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "haldane-decompression-tables",
+    "friendly_name": "Staged Decompression Tables",
+    "year": 1908,
+    "category": "medicine",
+    "description": "John Scott Haldane's tables of staged ascents let divers surface from depth without crippling nitrogen bubbles.",
+    "difficulty": "hard"
   },
   {
     "name": "manchurian-plague",
@@ -1472,6 +2168,30 @@
     "difficulty": "medium"
   },
   {
+    "name": "house-of-windsor-founded",
+    "friendly_name": "House of Windsor Founded",
+    "year": 1917,
+    "category": "empires",
+    "description": "George V renounced his family's German titles and renamed the royal house Windsor amid wartime anti-German feeling.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vernam-one-time-pad",
+    "friendly_name": "The One-Time Pad Patented",
+    "year": 1919,
+    "category": "invention",
+    "description": "Gilbert Vernam combined each teleprinter character with a key tape; with a random key used once, the result is unbreakable.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "enigma-machine-sold",
+    "friendly_name": "Enigma Machine Goes On Sale",
+    "year": 1923,
+    "category": "invention",
+    "description": "Arthur Scherbius marketed his rotor cipher machine to banks and firms before the German military adopted it wholesale.",
+    "difficulty": "medium"
+  },
+  {
     "name": "pancho-villa-assassinated",
     "friendly_name": "Pancho Villa Assassinated",
     "year": 1923,
@@ -1480,11 +2200,27 @@
     "difficulty": "medium"
   },
   {
+    "name": "contract-bridge-devised",
+    "friendly_name": "Contract Bridge Devised",
+    "year": 1925,
+    "category": "media",
+    "description": "Harold Vanderbilt reworked auction bridge on a Caribbean cruise, creating the bidding and scoring game played today.",
+    "difficulty": "medium"
+  },
+  {
     "name": "godel-incompleteness-theorems",
     "friendly_name": "Godel's Incompleteness Theorems",
     "year": 1931,
     "category": "science",
     "description": "Kurt Godel proved that any consistent system rich enough for arithmetic holds truths it cannot prove.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rejewski-breaks-enigma",
+    "friendly_name": "Poles Break The Enigma",
+    "year": 1932,
+    "category": "science",
+    "description": "Marian Rejewski used permutation theory to reconstruct the wiring of the German army's Enigma without ever seeing one.",
     "difficulty": "medium"
   },
   {
@@ -1504,6 +2240,14 @@
     "difficulty": "hard"
   },
   {
+    "name": "edward-viii-abdicates",
+    "friendly_name": "Edward VIII Abdicates",
+    "year": 1936,
+    "category": "revolution",
+    "description": "Edward VIII gave up the throne to marry the divorcee Wallis Simpson, and his shy younger brother became George VI.",
+    "difficulty": "easy"
+  },
+  {
     "name": "turing-computable-numbers",
     "friendly_name": "Turing Defines Computability",
     "year": 1936,
@@ -1520,12 +2264,44 @@
     "difficulty": "hard"
   },
   {
+    "name": "fluorescent-lamp",
+    "friendly_name": "Fluorescent Tube Goes On Sale",
+    "year": 1938,
+    "category": "invention",
+    "description": "General Electric marketed phosphor-coated tubes that gave several times more light per watt than filament bulbs.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sutton-hoo-excavated",
+    "friendly_name": "Sutton Hoo Treasure Unearthed",
+    "year": 1939,
+    "category": "art",
+    "description": "Basil Brown traced the vanished timbers of a ship in a Suffolk mound and found the gold and garnet regalia of an Anglo-Saxon king.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "turing-bombe-bletchley",
+    "friendly_name": "Turing's Bombe At Bletchley",
+    "year": 1940,
+    "category": "invention",
+    "description": "Alan Turing's electromechanical bombe began running at Bletchley Park, stripping out the German Enigma's daily settings.",
+    "difficulty": "easy"
+  },
+  {
     "name": "aqua-lung-invented",
     "friendly_name": "The Aqua-Lung Invented",
     "year": 1943,
     "category": "invention",
     "description": "Jacques Cousteau and Emile Gagnan's demand valve let a diver breathe compressed air at will, creating modern scuba.",
     "difficulty": "easy"
+  },
+  {
+    "name": "colossus-lorenz-codebreaker",
+    "friendly_name": "Colossus Attacks Lorenz Cipher",
+    "year": 1943,
+    "category": "invention",
+    "description": "Bletchley Park's Colossus, the first programmable electronic computer, hunted the settings of Hitler's teleprinter cipher.",
+    "difficulty": "medium"
   },
   {
     "name": "paricutin-volcano-born",
@@ -1568,6 +2344,22 @@
     "difficulty": "hard"
   },
   {
+    "name": "shannon-perfect-secrecy",
+    "friendly_name": "Perfect Secrecy Proved",
+    "year": 1949,
+    "category": "science",
+    "description": "Claude Shannon put cryptography on a mathematical footing and proved the one-time pad the only theoretically unbreakable cipher.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "linear-b-deciphered",
+    "friendly_name": "Linear B Deciphered",
+    "year": 1952,
+    "category": "writing",
+    "description": "Michael Ventris, an architect working in his spare time, showed that the Mycenaean tablet script recorded an early form of Greek.",
+    "difficulty": "medium"
+  },
+  {
     "name": "mackinac-bridge",
     "friendly_name": "Mackinac Bridge Opens",
     "year": 1957,
@@ -1597,6 +2389,22 @@
     "year": 1958,
     "category": "science",
     "description": "Frank Rosenblatt's machine learned to tell shapes apart by adjusting its own weights, an early neural network.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "samuel-checkers-program",
+    "friendly_name": "Checkers Program Teaches Itself",
+    "year": 1959,
+    "category": "invention",
+    "description": "Arthur Samuel's checkers program improved by playing against itself, an early demonstration of machine learning.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "maya-glyphs-deciphered",
+    "friendly_name": "Maya Glyphs Read as History",
+    "year": 1960,
+    "category": "writing",
+    "description": "Tatiana Proskouriakoff showed that Maya inscriptions record the births, accessions and wars of real kings, not only astronomy.",
     "difficulty": "hard"
   },
   {
@@ -1640,6 +2448,30 @@
     "difficulty": "hard"
   },
   {
+    "name": "crypto-ag-rigged-machines",
+    "friendly_name": "Rigged Cipher Machines Sold",
+    "year": 1970,
+    "category": "warfare",
+    "description": "American and West German spy agencies secretly bought a Swiss cipher firm and sold weakened machines to scores of governments.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "low-loss-optical-fibre",
+    "friendly_name": "Low-Loss Optical Fibre",
+    "year": 1970,
+    "category": "invention",
+    "description": "Corning drew glass fibre pure enough to carry light for kilometres, turning optical communication into engineering.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "world-series-of-poker-first",
+    "friendly_name": "First World Series of Poker",
+    "year": 1970,
+    "category": "sports",
+    "description": "Benny Binion gathered leading gamblers at his Las Vegas casino for a poker tournament that crowned a world champion.",
+    "difficulty": "medium"
+  },
+  {
     "name": "landsat-earth-imaging",
     "friendly_name": "First Landsat Satellite",
     "year": 1972,
@@ -1672,6 +2504,22 @@
     "difficulty": "medium"
   },
   {
+    "name": "terracotta-army-discovered",
+    "friendly_name": "Terracotta Army Discovered",
+    "year": 1974,
+    "category": "art",
+    "description": "Farmers digging a well in Shaanxi struck the head of a clay soldier, one of thousands guarding a Chinese emperor's tomb.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "diffie-hellman-key-exchange",
+    "friendly_name": "Public-Key Cryptography",
+    "year": 1976,
+    "category": "science",
+    "description": "Whitfield Diffie and Martin Hellman showed two strangers could agree on a secret key in the open, having never met.",
+    "difficulty": "medium"
+  },
+  {
     "name": "four-colour-theorem-proved",
     "friendly_name": "Four Colour Theorem Proved",
     "year": 1976,
@@ -1685,6 +2533,22 @@
     "year": 1977,
     "category": "science",
     "description": "The submersible Alvin found hot vents on the Galapagos Rift crowded with life fed by chemistry rather than sunlight.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "rsa-algorithm-published",
+    "friendly_name": "The RSA Algorithm",
+    "year": 1978,
+    "category": "invention",
+    "description": "Three MIT researchers turned public-key cryptography into a working system resting on the difficulty of factoring huge numbers.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "compact-fluorescent-lamp",
+    "friendly_name": "Compact Fluorescent Bulb",
+    "year": 1980,
+    "category": "invention",
+    "description": "Philips folded a fluorescent tube into a screw-in bulb, the first energy-saving lamp sold for ordinary sockets.",
     "difficulty": "medium"
   },
   {
@@ -1712,11 +2576,27 @@
     "difficulty": "very-hard"
   },
   {
+    "name": "quantum-key-distribution",
+    "friendly_name": "Quantum Key Distribution",
+    "year": 1984,
+    "category": "science",
+    "description": "Bennett and Brassard described sharing a key as single photons, where any eavesdropper disturbs them and is detected.",
+    "difficulty": "hard"
+  },
+  {
     "name": "new-coke-launched",
     "friendly_name": "New Coke Launched",
     "year": 1985,
     "category": "commerce",
     "description": "Coca-Cola replaced its original formula with a sweeter recipe, then restored the old one after a public backlash.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "pgp-encryption-released",
+    "friendly_name": "PGP Encryption Released",
+    "year": 1991,
+    "category": "invention",
+    "description": "Phil Zimmermann gave away Pretty Good Privacy, putting strong encryption in ordinary hands and drawing a federal investigation.",
     "difficulty": "medium"
   },
   {
@@ -1736,12 +2616,28 @@
     "difficulty": "medium"
   },
   {
+    "name": "blue-led",
+    "friendly_name": "Bright Blue LED Perfected",
+    "year": 1994,
+    "category": "invention",
+    "description": "Shuji Nakamura's gallium nitride diodes completed the colour set, making white LED lighting possible.",
+    "difficulty": "medium"
+  },
+  {
     "name": "fermat-last-theorem-proved",
     "friendly_name": "Fermat's Last Theorem Proved",
     "year": 1994,
     "category": "science",
     "description": "Andrew Wiles closed the gap in his proof of the margin note Fermat left unproven for three and a half centuries.",
     "difficulty": "medium"
+  },
+  {
+    "name": "gps-full-coverage",
+    "friendly_name": "GPS Reaches Full Coverage",
+    "year": 1995,
+    "category": "invention",
+    "description": "The satellite constellation was declared complete, so a receiver anywhere on Earth could fix its own position.",
+    "difficulty": "easy"
   },
   {
     "name": "kaiko-challenger-deep",
@@ -1773,6 +2669,22 @@
     "year": 1998,
     "category": "science",
     "description": "Distant supernovae revealed that cosmic expansion is speeding up, pushed by an unknown energy in space.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "thonis-heracleion-found",
+    "friendly_name": "Sunken City of Thonis Found",
+    "year": 2000,
+    "category": "trade",
+    "description": "Divers mapped the drowned Egyptian port of Thonis-Heracleion, its temples, statues and cargo ships lying under Abu Qir Bay.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "aes-encryption-standard",
+    "friendly_name": "AES Becomes The Standard",
+    "year": 2001,
+    "category": "invention",
+    "description": "Rijndael, a Belgian design, won an open international contest and became the cipher guarding government files and web traffic.",
     "difficulty": "medium"
   },
   {
@@ -1808,11 +2720,43 @@
     "difficulty": "medium"
   },
   {
+    "name": "chinook-solves-checkers",
+    "friendly_name": "Checkers Solved by Chinook",
+    "year": 2007,
+    "category": "science",
+    "description": "Researchers proved that perfect play at checkers ends in a draw, the largest game solved by computer to that point.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "incandescent-bulb-phase-out",
+    "friendly_name": "Incandescent Bulbs Phased Out",
+    "year": 2007,
+    "category": "law",
+    "description": "Australia announced a national ban on filament bulbs, and Europe and America soon legislated their own switch-off.",
+    "difficulty": "medium"
+  },
+  {
     "name": "cameron-challenger-deep",
     "friendly_name": "Solo Dive to Challenger Deep",
     "year": 2012,
     "category": "science",
     "description": "James Cameron piloted a vertical torpedo-shaped submersible alone to the floor of the Mariana Trench.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "richard-iii-grave-found",
+    "friendly_name": "Richard III Found Under Car Park",
+    "year": 2012,
+    "category": "figures",
+    "description": "Archaeologists dug up a council car park in Leicester and found the lost grave of the last Plantagenet king of England.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "zodiac-cipher-solved",
+    "friendly_name": "Zodiac Killer's Cipher Solved",
+    "year": 2020,
+    "category": "science",
+    "description": "Three amateurs running custom software cracked the Zodiac Killer's longest cryptogram after half a century of failed attempts.",
     "difficulty": "medium"
   },
   {
