@@ -117,17 +117,20 @@ function findDuplicates(events) {
     }
   }
 
-  // Find similar friendly names
-  const checked = new Set();
-  const nearYearChecked = new Set();
+  // Find similar friendly names.
+  //
+  // The inner loop starts at i+1, so every unordered pair is visited exactly once and no
+  // seen-set is needed to deduplicate them. There used to be two, holding one string key per
+  // pair — which is O(n^2) memory for a guarantee the loop structure already gives, and at
+  // ~5,985 events that is ~17.9M entries, past V8's maximum Set size. The scan crashed with
+  // "Set maximum size exceeded" rather than reporting anything.
+  //
+  // The only keys those sets could ever have collided on were pairs sharing a name, and those
+  // are skipped on the next line regardless, so dropping them changes no output.
   for (let i = 0; i < events.length; i++) {
     for (let j = i + 1; j < events.length; j++) {
       const e1 = events[i];
       const e2 = events[j];
-      const key = `${e1.name}|${e2.name}`;
-
-      if (checked.has(key)) continue;
-      checked.add(key);
 
       // Skip if already found as exact match
       if (e1.name === e2.name) continue;
@@ -154,8 +157,7 @@ function findDuplicates(events) {
       }
 
       // Check for near-year (within 5 years) with similar names (fuzzy match > 0.6)
-      if (!nearYearChecked.has(key)) {
-        nearYearChecked.add(key);
+      {
         const yearDiff = Math.abs((e1.year || 0) - (e2.year || 0));
         if (yearDiff > 0 && yearDiff <= 5 && sim > 0.6 && sim <= 0.7) {
           duplicates.nearYearSimilarNames.push({
