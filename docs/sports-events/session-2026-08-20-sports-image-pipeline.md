@@ -10,6 +10,10 @@ generation pipeline, and got as far as colour extraction.
 
 ## Where this left off
 
+**Since resolved:** the remaining command below was run and shipped in `fd15168` —
+all 324 `sports.json` events now carry `image_url`. The rest of this section is kept as the
+record of how it got there.
+
 **Done:** prompts written → images generated → downsampled → colours and dimensions extracted →
 uploaded to Cloudinary by hand.
 
@@ -70,6 +74,21 @@ web-verified period equipment.
 a batch that returns 26 items instead of 27 silently shifts every subsequent row onto the wrong
 event. The new assembler keys on `idx` with an `event_name` cross-check and reports mismatches
 instead. Prefer this when writing the next one.
+
+### Superseded by `build_prompt_batch.py` (2026-08-20, later)
+
+The build/assemble pair is now generalised into a single `when-images/scripts/build_prompt_batch.py`.
+It scans **every** `public/events/*.json` for events lacking `image_url` (skipping `manifest`,
+`candidates` and `deprecated`) and joins them **by slug** against a hand-authored scenes file —
+`when-images/scenes/<batch>.json`, `{slug: {research_focus, scene}}` — so there is no work-file,
+no subagent round-trip and no positional matching left to get wrong. A scene naming an event that
+does not exist or already has art is a hard error, not a skipped row.
+
+It also carries a **different prompt skeleton**: `A dramatic chiaroscuro oil painting…` with the
+scene cut to one short clause and the **era palette dropped entirely**. Shorter, less prescriptive
+prompts render better, and the palette clause was fighting the scene. `ERA_PALETTES` survives only
+in the two older sports scripts. First used for the 15 art-less Indonesia-theme events
+(`scenes/indonesia.json` → `indonesia_prompts.csv`).
 
 ## The trap: Gemini returned `.jpeg`, and the downsampler only globbed `.png`
 

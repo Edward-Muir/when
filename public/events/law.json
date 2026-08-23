@@ -525,7 +525,12 @@
     "year": 1803,
     "category": "law",
     "description": "The US Supreme Court established judicial review, its power to strike down unconstitutional laws.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#281e1e",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marbury-v-madison_x2ksw4?_a=BAMAMikS0"
   },
   {
     "name": "first-modern-penitentiary",

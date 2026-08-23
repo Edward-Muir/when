@@ -7893,7 +7893,12 @@
     "year": 1019,
     "category": "empires",
     "description": "Prince Airlangga rebuilt the Javanese kingdom of Kahuripan after the Medang court was destroyed.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "color": "#22211f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/airlangga-unites-java_gme5wu?_a=BAMAMikS0"
   },
   {
     "name": "demak-sultanate-founded",
@@ -7901,7 +7906,12 @@
     "year": 1478,
     "category": "empires",
     "description": "Java's first Islamic state rose as Majapahit collapsed, spreading Islam along the north coast.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#212026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/demak-sultanate-founded_fcur0s?_a=BAMAMikS0"
   },
   {
     "name": "java-war-diponegoro",
@@ -7909,7 +7919,12 @@
     "year": 1825,
     "category": "warfare",
     "description": "Prince Diponegoro led a five-year revolt against Dutch rule that killed some 200,000 Javanese.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#332a21",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/java-war-diponegoro_x5sp8c?_a=BAMAMikS0"
   },
   {
     "name": "budi-utomo-founded",
@@ -7917,7 +7932,12 @@
     "year": 1908,
     "category": "revolution",
     "description": "Javanese students formed the first modern nationalist society, marking Indonesia's awakening.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "color": "#241f22",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/budi-utomo-founded_fvclcc?_a=BAMAMikS0"
   },
   {
     "name": "sumpah-pemuda-youth-pledge",
@@ -7925,7 +7945,12 @@
     "year": 1928,
     "category": "revolution",
     "description": "Indonesian delegates in Batavia declared one homeland, one nation and one language.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#271f1d",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sumpah-pemuda-youth-pledge_mzbfyx?_a=BAMAMikS0"
   },
   {
     "name": "japanese-occupation-indies",
@@ -7933,7 +7958,12 @@
     "year": 1942,
     "category": "warfare",
     "description": "Japanese forces seized the Dutch East Indies, ending three centuries of Dutch colonial rule.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#2c1d17",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japanese-occupation-indies_l7qjmh?_a=BAMAMikS0"
   },
   {
     "name": "suharto-new-order",
@@ -7941,7 +7971,12 @@
     "year": 1967,
     "category": "empires",
     "description": "Suharto replaced Sukarno as president, beginning three decades of authoritarian rule.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#261f1f",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/suharto-new-order_rrvz2m?_a=BAMAMikS0"
   },
   {
     "name": "indonesia-invades-east-timor",
@@ -7949,7 +7984,12 @@
     "year": 1975,
     "category": "warfare",
     "description": "Indonesian troops seized the former Portuguese colony days after it declared independence.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "color": "#212026",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indonesia-invades-east-timor_gfjpis?_a=BAMAMikS0"
   },
   {
     "name": "fall-of-suharto",
@@ -7957,6 +7997,11 @@
     "year": 1998,
     "category": "revolution",
     "description": "Economic collapse and mass protests forced Suharto to resign after 31 years, starting Reformasi.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "color": "#242020",
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fall-of-suharto_rsfjnj?_a=BAMAMikS0"
   }
 ]

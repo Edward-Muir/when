@@ -133,18 +133,38 @@ Helsinki accord that ended the Aceh insurgency (2005). Most collide with a card 
 
 ## Finishing it
 
-**1. Images for the 14 new slugs.** The pipeline needs `GEMINI_API_KEY` and `CLOUDINARY_*`, and
-its working tree (`../when-images`) is not in this repo — confirm it still runs before starting.
+**1. Images for the 14 new slugs.** `scripts/generate_images.py` is the old direct-API path and is
+superseded — generation runs through the hourly Gemini browser task. The working tree
+(`../when-images`) is not in this repo and nothing in it is version-controlled.
+
+**Prompts already exist.** `../when-images/indonesia_prompts.csv` holds all 14 (plus the unrelated
+art-less `marbury-v-madison`), and a copy is staged at `~/Downloads/all_prompts.csv`, which is the
+path the scheduled task reads. They were written with a deliberately simplified skeleton — a
+short one-clause scene and **no era palette**, only the chiaroscuro / high-contrast direction,
+because terser prompts render better. To rebuild them:
 
 ```bash
-python scripts/generate_images.py --dry-run     # prompts only, no API calls
-python scripts/generate_images.py
-node scripts/update-cloudinary-urls.js          # writes image_url/color/text_color back
+cd ../when-images
+python3 scripts/build_prompt_batch.py --scenes scenes/indonesia.json --out indonesia_prompts.csv
+```
+
+Then, once the scheduled task has generated and saved the images:
+
+```bash
+cd ../when-images
+python3 scripts/downsample.py                   # source -> JPEG q80
+python3 scripts/extract_colors.py               # writes color/text_color/dimensions into the JSON
+node scripts/find_images_to_upload.js           # stages to_upload/; upload via Cloudinary dashboard
+cd ../when
+node scripts/update-cloudinary-urls.js          # writes image_url back
 npm run theme:gap -- --slugs <the 36>           # now sees all 36; confirm 5/x/x/x and 8/8
 ```
 
-Until `update-cloudinary-urls.js` has run, the 14 are inert: they sit in the JSON, `loadAllEvents`
-drops them, and the publish validator reports them as unresolved slugs.
+Check `update-cloudinary-urls.js`'s diff touches only the files holding the 14 — it matches by
+event name across every event file, so a wider diff means it is rewriting existing URLs too.
+
+Until it has run, the 14 are inert: they sit in the JSON, `loadAllEvents` drops them, and the
+publish validator reports them as unresolved slugs.
 
 **2. Publish.** GitHub → Actions → **Publish theme** → `workflow_dispatch`, `mode: validate`
 first, read the report, then `mode: publish`.

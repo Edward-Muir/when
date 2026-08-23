@@ -293,7 +293,10 @@
     "description": "Nuremberg published a standardized list of medicines and recipes for apothecaries to follow.",
     "difficulty": "very-hard",
     "color": "#543a28",
-    "text_color": "light"
+    "text_color": "light",
+    "image_width": 330,
+    "image_height": 440,
+    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-pharmacopoeia_egs3i1?_a=BAMAMikS0"
   },
   {
     "name": "santorio-metabolism-experiments",
