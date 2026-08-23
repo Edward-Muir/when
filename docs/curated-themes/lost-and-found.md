@@ -17,8 +17,9 @@ Two exclusions do most of the work:
   drags them in — `dead-sea-scrolls-written` (150 BCE), `terracotta-army` (210 BCE),
   `sutton-hoo-burial` (625), `behistun-inscription-carved` (520 BCE), `antikythera-mechanism`
   (300 BCE) are all the moment of burial or manufacture, and all are out. Where the find was
-  the better card and did not exist, it was written: `terracotta-army-discovered` and
-  `sutton-hoo-excavated` are new cards standing alongside, not replacing, the burial cards.
+  the better card and did not exist, it was written: `sutton-hoo-excavated` is a new card
+  standing alongside, not replacing, the burial card. The Terracotta Army's find card already
+  existed as `terracotta-warriors-discovered` — see the correction at the end of this note.
 - **First contact and exploration are not rediscovery.** Reaching a place nobody in your
   culture had reached is a different theme; returning to a place that had been abandoned and
   forgotten is this one. `machu-picchu-discovered` and `petra-rediscovered` sit on the right
@@ -65,7 +66,7 @@ Paste as `eventNames` into the workflow's `theme` input.
 |  1947 | `dead-sea-scrolls`                 |                |
 |  1952 | `linear-b-deciphered`              | NEW            |
 |  1960 | `maya-glyphs-deciphered`           | NEW            |
-|  1974 | `terracotta-army-discovered`       | foothold · NEW |
+|  1974 | `terracotta-warriors-discovered`   | foothold       |
 |  1985 | `titanic-wreck-found`              | foothold       |
 |  1991 | `otzi-iceman-discovered`           |                |
 |  2000 | `thonis-heracleion-found`          | NEW            |
@@ -84,7 +85,7 @@ pairs **0**.
 ## The footholds, and why the ancient half exists
 
 Eight cards land in band 0. Five are the obvious ones — `rosetta-stone`,
-`machu-picchu-discovered`, `tutankhamun-tomb`, `terracotta-army-discovered`,
+`machu-picchu-discovered`, `tutankhamun-tomb`, `terracotta-warriors-discovered`,
 `titanic-wreck-found` — globally famous finds that carry an `easy` label and sit in stretches
 the catalogue does not crowd.
 
@@ -130,9 +131,9 @@ find-year deck would otherwise leave empty.
 - **Burial cards rejected in favour of a new find card.** `sutton-hoo-burial` (625),
   `terracotta-army` (210 BCE), `dead-sea-scrolls-written` (150 BCE),
   `behistun-inscription-carved` (520 BCE) and `antikythera-mechanism` (300 BCE) are all the
-  making or the losing, not the finding. `sutton-hoo-excavated` and
-  `terracotta-army-discovered` were written to replace the first two; the others have no
-  finding-card in this deck.
+  making or the losing, not the finding. `sutton-hoo-excavated` was written to pair with the
+  first; the Terracotta Army's find card already existed as `terracotta-warriors-discovered`.
+  The others have no finding-card in this deck.
 - **Keyword false positives** the sweep dragged in: `steam-shovel`, `tunnelling-shield`,
   `carbon-14-discovered` (a dating method, not a find), `california-gold-rush` and
   `klondike-gold-rush`, `eris-discovery`, `library-congress-established`, `first-public-library`,
@@ -162,3 +163,14 @@ Real gaps, not filler, each blocked by a collision rather than by not being wort
   Zimbabwe, Ubar and the Benin bronzes are all entangled with colonial "discovery" narratives
   that the scope rule's first-contact exclusion is there to keep out; a card that works would
   need to be about the site, not the visitor.
+
+## A correction made at merge
+
+`terracotta-army-discovered` was authored on the finding that the catalogue held only the
+burial (`terracotta-army`, 210 BCE) and not the discovery. That was wrong: the discovery
+already existed as **`terracotta-warriors-discovered`** (1974, illustrated) — in
+`candidates.json`, which is easy to overlook because the `add-events` skill describes it as a
+staging file. It is in `manifest.json`, so its events are live and playable like any other.
+
+The deck now points at the existing card. `sutton-hoo-excavated` was re-checked the same way
+and is genuinely new — the catalogue holds only `sutton-hoo-burial` (625).

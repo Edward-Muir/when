@@ -34,9 +34,9 @@ or validated — until every slug in it is illustrated.
 | `crossings`         |    36 |           15 | no              |
 | `eureka`            |    36 |           10 | no              |
 | `games`             |    36 |           15 | no              |
-| `kings-of-england`  |    36 |           19 | no              |
+| `kings-of-england`  |    36 |           18 | no              |
 | `light`             |    35 |           22 | no              |
-| `lost-and-found`    |    35 |           26 | no              |
+| `lost-and-found`    |    35 |           25 | no              |
 | `mapmakers`         |    36 |           23 | no              |
 | `money`             |    36 |            7 | no              |
 | `nations-of-europe` |    35 |           23 | no              |
@@ -464,7 +464,7 @@ or validated — until every slug in it is illustrated.
     "death-elizabeth-i",
     "king-james-bible",
     "charles-i-execution",
-    "restoration-of-charles-ii",
+    "english-civil-war-aftermath",
     "glorious-revolution",
     "queen-anne-accession",
     "george-i-hanoverian-succession",
@@ -563,7 +563,7 @@ or validated — until every slug in it is illustrated.
     "dead-sea-scrolls",
     "linear-b-deciphered",
     "maya-glyphs-deciphered",
-    "terracotta-army-discovered",
+    "terracotta-warriors-discovered",
     "titanic-wreck-found",
     "otzi-iceman-discovered",
     "thonis-heracleion-found",

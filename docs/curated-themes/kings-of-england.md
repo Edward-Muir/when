@@ -62,7 +62,7 @@ Paste as `eventNames` into the workflow's `theme` input.
 | 1603 | `death-elizabeth-i`               | foothold |     |
 | 1611 | `king-james-bible`                | foothold |     |
 | 1649 | `charles-i-execution`             |          |     |
-| 1660 | `restoration-of-charles-ii`       |          | NEW |
+| 1660 | `english-civil-war-aftermath`     |          |     |
 | 1688 | `glorious-revolution`             |          |     |
 | 1702 | `queen-anne-accession`            |          | NEW |
 | 1714 | `george-i-hanoverian-succession`  |          | NEW |
@@ -204,3 +204,15 @@ in the 36, which is the only reason they were left:
   not already been the most crowded part of the deck.
 - **Elizabeth II's coronation** (1953) and **Charles III's coronation** (2023) — both one year
   from a card in the deck.
+
+## A correction made at merge
+
+`restoration-of-charles-ii` was authored for the 1660 slot and then withdrawn: the catalogue
+already held that exact card as **`english-civil-war-aftermath`** — same year, same
+`friendly_name`, and already illustrated. The slug is why it was missed: a grep for Charles II
+or "restoration" never reaches a slug named after the civil war, and the theme-gap net keys on
+`friendly_name description` rather than the slug.
+
+The deck now points at the existing card. Worth remembering when authoring: **a slug can be
+named after the cause while its title is named after the event**, so absence from a slug search
+is not evidence the card is missing. Check same-year titles before writing.
