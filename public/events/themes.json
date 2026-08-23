@@ -1,0 +1,466 @@
+[
+  {
+    "name": "yan-shi-mechanical-man",
+    "friendly_name": "Yan Shi's Mechanical Man",
+    "year": -950,
+    "category": "invention",
+    "description": "Chinese texts credit the artificer Yan Shi with presenting King Mu of Zhou a life-size singing automaton.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "babylonian-hour-division",
+    "friendly_name": "Sexagesimal Hour Division",
+    "year": -700,
+    "category": "science",
+    "description": "Babylonian astronomers applied their base-sixty numbering to time, splitting the hour into sixty minutes and each minute again.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "sparta-earthquake",
+    "friendly_name": "Sparta Earthquake",
+    "year": -464,
+    "category": "disasters",
+    "description": "A violent quake levelled Sparta and killed thousands, touching off a helot revolt that nearly broke the city-state.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "metonic-cycle",
+    "friendly_name": "Metonic Cycle Discovered",
+    "year": -432,
+    "category": "science",
+    "description": "Athenian astronomer Meton showed that nineteen solar years almost exactly equal two hundred and thirty-five lunar months.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "helike-earthquake",
+    "friendly_name": "Helike Swallowed by the Sea",
+    "year": -373,
+    "category": "disasters",
+    "description": "An earthquake and tsunami sank the Greek city of Helike into the Gulf of Corinth overnight, leaving nothing above water.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "archytas-flying-dove",
+    "friendly_name": "Archytas' Flying Dove",
+    "year": -350,
+    "category": "invention",
+    "description": "The Greek mathematician Archytas of Tarentum built a wooden bird said to fly on its own using compressed air.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ctesibius-float-regulator",
+    "friendly_name": "Ctesibius' Self-Feeding Clock",
+    "year": -250,
+    "category": "invention",
+    "description": "Ctesibius of Alexandria gave his water clock a float valve that held the supply level steady, an early feedback control.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "rhodes-earthquake-colossus",
+    "friendly_name": "Earthquake Topples the Colossus",
+    "year": -226,
+    "category": "disasters",
+    "description": "A quake shattered the Colossus of Rhodes at the knees, and the fallen bronze wonder was left lying where it broke.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "julian-calendar-reform",
+    "friendly_name": "Julian Calendar Reform",
+    "year": -46,
+    "category": "law",
+    "description": "Julius Caesar scrapped Rome's drifting lunar calendar for a solar year of three hundred sixty-five days plus a leap day.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "ma-jun-south-pointing-chariot",
+    "friendly_name": "South-Pointing Chariot",
+    "year": 255,
+    "category": "invention",
+    "description": "Ma Jun built a geared cart whose figure kept pointing south however the vehicle turned, using no magnet at all.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "dionysius-anno-domini",
+    "friendly_name": "Anno Domini Dating Devised",
+    "year": 525,
+    "category": "writing",
+    "description": "The monk Dionysius Exiguus built an Easter table numbering years from the presumed birth of Christ, creating the AD era.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "hijri-calendar-adopted",
+    "friendly_name": "Hijri Calendar Established",
+    "year": 638,
+    "category": "law",
+    "description": "Caliph Umar fixed the Muslim lunar calendar to count from Muhammad's migration from Mecca to Medina.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "japan-smallpox-epidemic",
+    "friendly_name": "Japanese Smallpox Epidemic",
+    "year": 735,
+    "category": "disasters",
+    "description": "A smallpox epidemic carried in through Kyushu killed roughly a third of Japan's population.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "banu-musa-ingenious-devices",
+    "friendly_name": "Book of Ingenious Devices",
+    "year": 850,
+    "category": "invention",
+    "description": "The Banu Musa brothers of Baghdad catalogued a hundred self-acting devices, among them a flute player driven by a pinned cylinder.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "su-song-clock-tower",
+    "friendly_name": "Su Song's Astronomical Clock",
+    "year": 1092,
+    "category": "architecture",
+    "description": "The Chinese official Su Song raised a water-driven clock tower whose puppet figures struck bells and drums each hour.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sandglass-at-sea",
+    "friendly_name": "Sandglass Goes to Sea",
+    "year": 1338,
+    "category": "invention",
+    "description": "European ships adopted the sandglass to time the crew's watches and, paired with a knotted line, to log a vessel's speed.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "strasbourg-clock-rooster",
+    "friendly_name": "Strasbourg Clock Rooster",
+    "year": 1354,
+    "category": "craft",
+    "description": "The cathedral clock carried a gilded cock that flapped its wings, opened its beak and crowed at midday.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "basel-earthquake",
+    "friendly_name": "Basel Earthquake",
+    "year": 1356,
+    "category": "disasters",
+    "description": "The strongest quake known in central Europe destroyed Basel and threw down castles for miles along the Rhine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "salisbury-cathedral-clock",
+    "friendly_name": "Salisbury Cathedral Clock",
+    "year": 1386,
+    "category": "invention",
+    "description": "The faceless wrought-iron clock at Salisbury began striking the hours, and still runs as one of the oldest of its kind.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "prague-astronomical-clock",
+    "friendly_name": "Prague Astronomical Clock",
+    "year": 1410,
+    "category": "architecture",
+    "description": "The Orloj was mounted on Prague's Old Town Hall, showing the hour, the zodiac and the positions of sun and moon.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "leonardo-mechanical-knight",
+    "friendly_name": "Leonardo's Mechanical Knight",
+    "year": 1495,
+    "category": "invention",
+    "description": "Leonardo da Vinci designed an armoured figure worked by cables and pulleys that could sit, stand and move its arms.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "meio-nankai-earthquake",
+    "friendly_name": "Meio Nankai Earthquake",
+    "year": 1498,
+    "category": "disasters",
+    "description": "A megathrust quake on Japan's Nankai Trough drove a tsunami that swept away the hall sheltering the Great Buddha of Kamakura.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "henlein-portable-watch",
+    "friendly_name": "Henlein's Portable Watch",
+    "year": 1510,
+    "category": "invention",
+    "description": "Nuremberg locksmith Peter Henlein built spring-driven clocks small enough to carry, ancestors of the pocket watch.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "variolation-china",
+    "friendly_name": "Variolation Practised In China",
+    "year": 1549,
+    "category": "medicine",
+    "description": "Ming physicians recorded blowing powdered smallpox scabs into the nose to induce mild, protective infection.",
+    "difficulty": "very-hard"
+  },
+  {
+    "name": "turriano-mechanical-friar",
+    "friendly_name": "Turriano's Mechanical Friar",
+    "year": 1560,
+    "category": "craft",
+    "description": "Clockmaker Juanelo Turriano built a wind-up friar that walked a table top, beat its breast and kissed a rosary.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "gregorian-calendar-reform",
+    "friendly_name": "Gregorian Calendar Adopted",
+    "year": 1582,
+    "category": "law",
+    "description": "Pope Gregory XIII struck ten days from the year and changed the leap rule to stop Easter drifting away from the equinox.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "galileo-pendulum-isochronism",
+    "friendly_name": "Galileo Times the Pendulum",
+    "year": 1602,
+    "category": "science",
+    "description": "Galileo argued that a pendulum takes the same time to swing whatever the width of its arc, the principle behind exact clocks.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "etna-catania-eruption",
+    "friendly_name": "Etna's Lava Reaches Catania",
+    "year": 1669,
+    "category": "disasters",
+    "description": "Mount Etna's largest recorded eruption pushed lava through the walls of Catania and on into the sea, reshaping Sicily's coast.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "balance-spring-watch",
+    "friendly_name": "Balance Spring Watch",
+    "year": 1675,
+    "category": "invention",
+    "description": "Christiaan Huygens fitted a spiral spring to a watch balance wheel, making portable timepieces vastly more accurate.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "longitude-act",
+    "friendly_name": "Longitude Act Passed",
+    "year": 1714,
+    "category": "law",
+    "description": "Parliament offered a fortune to anyone who could fix a ship's longitude at sea, a problem that came down to keeping time.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "marseille-plague",
+    "friendly_name": "Great Plague Of Marseille",
+    "year": 1720,
+    "category": "disasters",
+    "description": "A plague ship from the Levant loosed the last major bubonic plague epidemic in western Europe.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "vaucanson-digesting-duck",
+    "friendly_name": "Vaucanson's Digesting Duck",
+    "year": 1739,
+    "category": "invention",
+    "description": "Jacques de Vaucanson exhibited a gilded copper duck that flapped, swallowed grain and appeared to digest it.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "moscow-plague-riot",
+    "friendly_name": "Moscow Plague Riot",
+    "year": 1771,
+    "category": "disasters",
+    "description": "Plague deaths and harsh quarantines drove Muscovites to riot, killing the archbishop who sealed a shrine.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "jaquet-droz-writer-automaton",
+    "friendly_name": "The Writer Automaton",
+    "year": 1774,
+    "category": "invention",
+    "description": "Pierre Jaquet-Droz built a clockwork boy that dipped a quill and wrote any short text set on its cam wheel.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "watt-centrifugal-governor",
+    "friendly_name": "Centrifugal Governor",
+    "year": 1788,
+    "category": "invention",
+    "description": "James Watt fitted spinning weights that throttled a steam engine to hold its speed steady with no attendant.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "french-republican-calendar",
+    "friendly_name": "French Republican Calendar",
+    "year": 1793,
+    "category": "law",
+    "description": "Revolutionary France replaced the week with ten-day decades and briefly ran a decimal clock of ten hours to the day.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "first-cholera-pandemic",
+    "friendly_name": "First Cholera Pandemic",
+    "year": 1817,
+    "category": "disasters",
+    "description": "Cholera spread out of the Ganges delta along trade and troop routes, beginning a century of global waves.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "babbage-difference-engine",
+    "friendly_name": "Babbage's Difference Engine",
+    "year": 1822,
+    "category": "invention",
+    "description": "Charles Babbage began a geared machine meant to compute and print mathematical tables free of human error.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "railway-time-britain",
+    "friendly_name": "Railway Time Adopted",
+    "year": 1840,
+    "category": "commerce",
+    "description": "The Great Western Railway set every station clock to London time, overriding the patchwork of local solar times.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "great-clock-westminster",
+    "friendly_name": "Great Clock of Westminster",
+    "year": 1859,
+    "category": "architecture",
+    "description": "The tower clock and its great bell, Big Ben, began keeping time above the Palace of Westminster in London.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "london-main-drainage",
+    "friendly_name": "London's Main Drainage Opens",
+    "year": 1865,
+    "category": "architecture",
+    "description": "Bazalgette's intercepting sewers carried waste below the tideway, ending London's great cholera outbreaks.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "whitehead-torpedo",
+    "friendly_name": "Self-Propelled Torpedo",
+    "year": 1866,
+    "category": "warfare",
+    "description": "Robert Whitehead's torpedo ran under its own power, held at a set depth by a concealed pendulum and valve.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "johnson-thermostat",
+    "friendly_name": "Electric Room Thermostat",
+    "year": 1883,
+    "category": "invention",
+    "description": "Warren Johnson patented a thermostat that sensed room temperature and signalled a damper to open or close.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "yersin-plague-bacillus",
+    "friendly_name": "Plague Bacillus Identified",
+    "year": 1894,
+    "category": "medicine",
+    "description": "Alexandre Yersin isolated the bacterium behind bubonic plague during the Hong Kong epidemic.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mount-pelee-eruption",
+    "friendly_name": "Mount Pelée Destroys St. Pierre",
+    "year": 1902,
+    "category": "disasters",
+    "description": "A pyroclastic flow from Mount Pelée obliterated Saint-Pierre on Martinique in minutes, killing almost every resident.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "manchurian-plague",
+    "friendly_name": "Manchurian Plague Epidemic",
+    "year": 1911,
+    "category": "disasters",
+    "description": "Pneumonic plague swept Manchuria until Wu Lien-teh's gauze masks and rail cordons broke the chain.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "sperry-gyroscopic-autopilot",
+    "friendly_name": "Gyroscopic Autopilot",
+    "year": 1912,
+    "category": "invention",
+    "description": "Lawrence Sperry linked gyroscopes to an aircraft's controls so the plane could hold its course unattended.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "daylight-saving-time",
+    "friendly_name": "Daylight Saving Time Adopted",
+    "year": 1916,
+    "category": "law",
+    "description": "Germany pushed its clocks forward an hour to save coal, and rival and neutral nations copied the measure within weeks.",
+    "difficulty": "easy"
+  },
+  {
+    "name": "paricutin-volcano-born",
+    "friendly_name": "Parícutin Erupts in a Cornfield",
+    "year": 1943,
+    "category": "nature",
+    "description": "A Mexican farmer watched a fissure split his field and grow into a cinder cone hundreds of feet tall, burying two villages.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "grey-walter-tortoises",
+    "friendly_name": "Grey Walter's Robot Tortoises",
+    "year": 1948,
+    "category": "science",
+    "description": "Neurologist William Grey Walter built Elmer and Elsie, shelled robots that hunted light and recharged themselves.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "mark-i-perceptron",
+    "friendly_name": "Mark I Perceptron",
+    "year": 1958,
+    "category": "science",
+    "description": "Frank Rosenblatt's machine learned to tell shapes apart by adjusting its own weights, an early neural network.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "unimate-industrial-robot",
+    "friendly_name": "Unimate Industrial Robot",
+    "year": 1961,
+    "category": "craft",
+    "description": "The first industrial robot arm went to work unloading a die-casting machine at a General Motors plant.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "si-second-caesium",
+    "friendly_name": "The Second Redefined",
+    "year": 1967,
+    "category": "science",
+    "description": "Weights and measures delegates defined the second by caesium atom vibrations, untying it from the spin of the Earth.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "shakey-the-robot",
+    "friendly_name": "Shakey the Robot",
+    "year": 1969,
+    "category": "science",
+    "description": "Stanford researchers built the first mobile robot able to plan its own route and reason about its actions.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "utc-leap-second",
+    "friendly_name": "First Leap Second Added",
+    "year": 1972,
+    "category": "science",
+    "description": "Coordinated Universal Time began inserting a spare second whenever atomic clocks ran ahead of the slowing Earth.",
+    "difficulty": "hard"
+  },
+  {
+    "name": "haart-aids-treatment",
+    "friendly_name": "Combination Therapy Tames AIDS",
+    "year": 1996,
+    "category": "medicine",
+    "description": "Triple-drug antiretroviral therapy turned HIV infection from a near-certain death sentence into a managed illness.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "darpa-grand-challenge-won",
+    "friendly_name": "DARPA Grand Challenge Won",
+    "year": 2005,
+    "category": "invention",
+    "description": "Stanford's driverless car Stanley crossed a desert course alone, showing autonomous driving could work.",
+    "difficulty": "medium"
+  },
+  {
+    "name": "leap-second-retired",
+    "friendly_name": "Leap Second Voted Out",
+    "year": 2022,
+    "category": "diplomacy",
+    "description": "The General Conference on Weights and Measures agreed to stop adding leap seconds to civil time worldwide.",
+    "difficulty": "hard"
+  }
+]
