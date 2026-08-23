@@ -8,23 +8,31 @@ preloading.
   live reference, kept as its own file.
 - **Delivering images:** [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)
   owns the rung ladder, its hard rules, and the service-worker cache.
+- **Full coverage reached 2026-08-23:** every playable event has art —
+  [session-2026-08-23-catalogue-image-completion.md](session-2026-08-23-catalogue-image-completion.md)
+  covers the last 16, the Unicode-churn diff trap, and how to verify the right image landed.
 
 ## The image-generation pipeline is not in this repo
 
-Image work ran out of an `images/` tree at the project root: generated PNGs, a downsampler, a
-colour extractor, a dedup sorter, a throwaway old-vs-new picker webapp, and a queued Cloudinary
-deletion list. **All of it was gitignored, and the directory was later moved out of the repo
-entirely** (to `../when-images`) to fix a `vercel dev` bug — see
-[../dev-tooling/index.md](../dev-tooling/index.md).
+Image work runs out of a `when-images/` tree **beside** this repo (`../when-images`), moved out
+of the project root to fix a `vercel dev` bug — see [../dev-tooling/index.md](../dev-tooling/index.md).
+It holds generated images, a downsampler, a colour extractor, a dedup sorter, an old-vs-new
+picker webapp, and a queued Cloudinary deletion list.
 
-So the scripts described in older write-ups (`sort_new_images.py`, `apply_decisions.py`,
-`delete_old_cloudinary.js`, `build_missing_prompts.py`, the `compare-app`) **cannot be assumed
-to exist**. What remains tracked is `scripts/` at the repo root and the baked results in
-`public/events/*.json`. Check before promising to re-run anything.
+**None of it is under version control**, so it exists only on the machine that made it. As of
+2026-08 the tree is intact and in active use: `sort_new_images.py`, `apply_decisions.py`,
+`delete_old_cloudinary.js`, `build_missing_prompts.py`, `downsample.py`, `extract_colors.py`,
+`find_images_to_upload.js` and the `compare-app` are all present, alongside a
+`build_sports_prompts.py` / `assemble_sports_prompts.py` pair added for the sports batch. What
+is tracked _here_ is `scripts/` at the repo root and the baked results in `public/events/*.json`.
 
-One deferred item, if that tree is ever recovered: a `cloudinary_delete_list.json` held ~295
-superseded `public_id`s, **queued and never executed**. The `dpr_auto`-era derived assets from
-the August rung change are similarly still orphaned (noted in the Cloudinary doc's §4).
+The pipeline is: prompts CSV → browser-driven Gemini job (**saves to `~/Downloads`, as `.jpeg`**)
+→ `downsample.py` → `extract_colors.py` → `find_images_to_upload.js` → manual Cloudinary upload
+→ `scripts/update-cloudinary-urls.js` in this repo.
+
+One deferred item: `cloudinary_delete_list.json` holds ~295 superseded `public_id`s, **queued and
+never executed**. The `dpr_auto`-era derived assets from the August rung change are similarly
+still orphaned (noted in the Cloudinary doc's §4).
 
 ## Card colours
 
@@ -32,10 +40,10 @@ Each event carries a `color` / `text_color` pair baked into its JSON, extracted 
 time from the image, never computed in the browser**. Extraction works in **Oklab**, which is
 perceptually uniform — averaging in sRGB produces muddy browns.
 
-Canonical image dimensions are **330×440**; the colour extractor writes `image_width` /
-`image_height` alongside the colours. Some events (notably the `figures` set added with the
-20-category re-clustering) may still be missing `image_url` entirely — they simply render the
-category-icon fallback.
+Canonical image dimensions are **330×440** — the _card_ aspect, not the source size (renders are
+square). The colour extractor writes `image_width` / `image_height` alongside the colours. The
+only events with other dimensions live in `deprecated.json`, which is absent from `manifest.json`
+and therefore never iterated — which is what makes an unfiltered `extract_colors.py` run safe.
 
 ## `friendly_name` is capped at 35 characters
 

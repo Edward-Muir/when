@@ -156,11 +156,14 @@ blends the `difficulty` label with how sparse the timeline is around the event, 
 theme rarely holds enough of them and the footholds have to be found rather than graded into
 existence.
 
-**The real gate is images, not events.** `loadAllEvents` hides any event without Cloudinary
-art, so an unillustrated event can never be dealt — which means `theme:gap` and the publish
-validator only ever see playable events, and a slug authored but not yet illustrated reads as
-unresolved. The image pipeline lives outside this repo, so confirm it still runs before
-committing to a theme that needs new art.
+**Images are a gate, but as of 2026-08-23 it is open.** `loadAllEvents` hides any event without
+Cloudinary art, so an unillustrated event can never be dealt. That gap is now **zero**: all 5,107
+playable events have art, including the 324 `sports` events that had long been curated but
+unillustrated (see
+[../events-images/session-2026-08-23-catalogue-image-completion.md](../events-images/session-2026-08-23-catalogue-image-completion.md)).
+Any event you author from here still needs art before it can be themed, and the image pipeline
+lives outside this repo — so confirm it still runs before committing to a theme that needs new
+art.
 
 ## The scripts duplicate src/, on purpose
 
