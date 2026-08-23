@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.16.0](https://github.com/Edward-Muir/when/compare/v1.15.2...v1.16.0) (2026-08-23)
+
+
+### Features
+
+* Add indonesian events ([b4d373f](https://github.com/Edward-Muir/when/commit/b4d373fa2e0309e8e4e2b4a85c86619304b4031d))
+
 ## [1.15.2](https://github.com/Edward-Muir/when/compare/v1.15.1...v1.15.2) (2026-08-23)
 
 

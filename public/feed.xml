@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2026 09:42:03 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2026 16:23:23 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.16.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.16.0</guid>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add indonesian events (<a href="https://github.com/Edward-Muir/when/commit/b4d373fa2e0309e8e4e2b4a85c86619304b4031d">b4d373f</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.15.2</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.11.2</guid>
       <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>stop rejecting daily leaderboard submissions, and let a failed one be retried (<a href="https://github.com/Edward-Muir/when/issues/43">#43</a>) (<a href="https://github.com/Edward-Muir/when/commit/8592f920d55cae5211f6c7d5c9ae96d4fee6ad70">8592f92</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.11.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.11.1</guid>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>make the game-start loading overlay readable and redesign it as a scrim band (<a href="https://github.com/Edward-Muir/when/issues/42">#42</a>) (<a href="https://github.com/Edward-Muir/when/commit/9f72d6d8006ac2eaa21a76f287538a6c7aa871e0">9f72d6d</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
