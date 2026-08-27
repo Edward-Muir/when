@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2026 16:23:23 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 15:45:19 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.17.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.17.0</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>add images to the curated theme events (<a href="https://github.com/Edward-Muir/when/commit/0f52954f7d85588ea744af2151e7a26c57346092">0f52954</a>)</li> <li>add the curated theme bank with illustrated events (<a href="https://github.com/Edward-Muir/when/commit/761ede564f6eda66fe57ff1f9d036600c17fcb73">761ede5</a>)</li> <li>**events:** add themes.json for curated-theme events (<a href="https://github.com/Edward-Muir/when/commit/6a1d4c3405af3c4b939e8dfcdab15e29fdb2a5eb">6a1d4c3</a>)</li> <li>**themes:** add ciphers, games, cosmic-ideas and the remaining decks (<a href="https://github.com/Edward-Muir/when/commit/f50b0a5a6d0ff0902d8043dd79f382eff1ad34fb">f50b0a5</a>)</li> <li>**themes:** add money and what-we-drink decks (<a href="https://github.com/Edward-Muir/when/commit/2379e7ee61fffbecc55a62c774feb3f0255741b3">2379e7e</a>)</li> <li>**themes:** add plagues, clockwork, automata and assassinations decks (<a href="https://github.com/Edward-Muir/when/commit/f1218b02a540fad53cc2e852b48c4f02dc5bc037">f1218b0</a>)</li> <li>**themes:** add the eureka deck, completing nineteen themes (<a href="https://github.com/Edward-Muir/when/commit/cd7acf55a7817dbff7fb3e5af38a0e7037f2b59b">cd7acf5</a>)</li> <li>**themes:** project theme gates over un-illustrated events (<a href="https://github.com/Edward-Muir/when/commit/50c6e4db67eff5f1d6c016d43335d9134aed1329">50c6e4d</a>)</li></ul><br/><br/><h3>Bug Fixes</h3><br/><br/><ul><li>**art:** emit the five-column prompt CSV the pipeline actually reads (<a href="https://github.com/Edward-Muir/when/commit/c1a88739923a061d3026edb3b48291e968598ece">c1a8873</a>)</li> <li>**scripts:** stop find-duplicates crashing on a larger catalogue (<a href="https://github.com/Edward-Muir/when/commit/450eccbe75e8124ea21b85201752546d1751d04f">450eccb</a>)</li> <li>**themes:** drop two events that duplicated existing cards (<a href="https://github.com/Edward-Muir/when/commit/3924ef26d08d6cef40a37828132e81a06e16ccbb">3924ef2</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.16.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.12.0</guid>
       <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>hand-authored daily themes (<a href="https://github.com/Edward-Muir/when/issues/44">#44</a>) (<a href="https://github.com/Edward-Muir/when/commit/5e1a6056e6cc506026122f323fdae14f73d26aad">5e1a605</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.11.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.11.2</guid>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>stop rejecting daily leaderboard submissions, and let a failed one be retried (<a href="https://github.com/Edward-Muir/when/issues/43">#43</a>) (<a href="https://github.com/Edward-Muir/when/commit/8592f920d55cae5211f6c7d5c9ae96d4fee6ad70">8592f92</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

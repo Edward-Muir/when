@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.17.0](https://github.com/Edward-Muir/when/compare/v1.16.0...v1.17.0) (2026-08-27)
+
+
+### Features
+
+* add images to the curated theme events ([0f52954](https://github.com/Edward-Muir/when/commit/0f52954f7d85588ea744af2151e7a26c57346092))
+* add the curated theme bank with illustrated events ([761ede5](https://github.com/Edward-Muir/when/commit/761ede564f6eda66fe57ff1f9d036600c17fcb73))
+* **events:** add themes.json for curated-theme events ([6a1d4c3](https://github.com/Edward-Muir/when/commit/6a1d4c3405af3c4b939e8dfcdab15e29fdb2a5eb))
+* **themes:** add ciphers, games, cosmic-ideas and the remaining decks ([f50b0a5](https://github.com/Edward-Muir/when/commit/f50b0a5a6d0ff0902d8043dd79f382eff1ad34fb))
+* **themes:** add money and what-we-drink decks ([2379e7e](https://github.com/Edward-Muir/when/commit/2379e7ee61fffbecc55a62c774feb3f0255741b3))
+* **themes:** add plagues, clockwork, automata and assassinations decks ([f1218b0](https://github.com/Edward-Muir/when/commit/f1218b02a540fad53cc2e852b48c4f02dc5bc037))
+* **themes:** add the eureka deck, completing nineteen themes ([cd7acf5](https://github.com/Edward-Muir/when/commit/cd7acf55a7817dbff7fb3e5af38a0e7037f2b59b))
+* **themes:** project theme gates over un-illustrated events ([50c6e4d](https://github.com/Edward-Muir/when/commit/50c6e4db67eff5f1d6c016d43335d9134aed1329))
+
+
+### Bug Fixes
+
+* **art:** emit the five-column prompt CSV the pipeline actually reads ([c1a8873](https://github.com/Edward-Muir/when/commit/c1a88739923a061d3026edb3b48291e968598ece))
+* **scripts:** stop find-duplicates crashing on a larger catalogue ([450eccb](https://github.com/Edward-Muir/when/commit/450eccbe75e8124ea21b85201752546d1751d04f))
+* **themes:** drop two events that duplicated existing cards ([3924ef2](https://github.com/Edward-Muir/when/commit/3924ef26d08d6cef40a37828132e81a06e16ccbb))
+
 ## [1.16.0](https://github.com/Edward-Muir/when/compare/v1.15.2...v1.16.0) (2026-08-23)
 
 
