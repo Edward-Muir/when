@@ -110,7 +110,12 @@ check that consumed one would silently re-theme the whole year — the failure m
 
 ## Sizing
 
-Minimum **16** events, enforced by the API. No hard maximum, but two soft notes:
+Minimum **16** events, enforced by the API — but that is a backstop, not a target. The
+authoring floor is **30**, and the working band is **30-36**; every theme in the bank above
+sits in it. `scripts/theme-gap.js --slugs` reports the 30-36 band as a gate, alongside the
+bins and band-zero checks the publish script enforces.
+
+No hard maximum, but two soft notes:
 
 - The **cleared** end state fires when the deck runs dry, which needs `n - 6` correct
   placements against a realistic best of ~30. So it is reachable up to ~36 cards and
@@ -137,6 +142,82 @@ implying completeness; "Perfect Clear!" (zero mistakes) is exact.
 
 This also fixes thin category days — `sports` has ~50 playable events and has always been able
 to run the deck dry and call it Game Over.
+
+## The theme bank
+
+Nineteen themes authored in one parallel pass, one note each. Every deck is 34-36 cards and
+clears all four gates: size 30-36, 6+ of 8 spread bins, 5+ band-zero footholds, no two cards
+sharing a year. Ready-to-paste workflow inputs are in
+[publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
+[art/all_prompts.csv](art/all_prompts.csv), built by
+`scripts/events/theme-art-prompts.py` from the hand-authored scenes in `art/scenes/`.
+
+**That CSV is five columns**, `event_name,research_prompt,image_prompt,image_generated,saved_filename`,
+because the consumer sends the research prompt and the image prompt as two messages in one
+Gemini chat. Both in-repo generators used to write four and drop the research step; see
+[events-images/](../events-images/index.md) for the skeleton and why it is as short as it is.
+
+| Theme                | Note                                         | Scope rule — a card is in only if…                               |
+| -------------------- | -------------------------------------------- | ---------------------------------------------------------------- |
+| Assassinations       | [assassinations.md](assassinations.md)       | a named person was killed for political reasons                  |
+| Automata             | [automata.md](automata.md)                   | it is a machine built to act on its own                          |
+| Clockwork            | [clockwork.md](clockwork.md)                 | it is a device or convention for measuring time                  |
+| Codes & Ciphers      | [ciphers.md](ciphers.md)                     | it makes or breaks secret writing                                |
+| Cosmic Ideas         | [cosmic-ideas.md](cosmic-ideas.md)           | it is an idea about what the universe _is_                       |
+| Bridges & Tunnels    | [crossings.md](crossings.md)                 | it is a built crossing of water, valley or rock                  |
+| Eureka Moments       | [eureka.md](eureka.md)                       | it is the specific moment a discovery landed                     |
+| The Games Board      | [games.md](games.md)                         | it is a game played at a table, or a machine that beat us at one |
+| Kings of England     | [kings-of-england.md](kings-of-england.md)   | it is a monarch's accession, death or defining act               |
+| Let There Be Light   | [light.md](light.md)                         | it is a way of making artificial light                           |
+| Lost & Found         | [lost-and-found.md](lost-and-found.md)       | something buried was found, or a dead script read                |
+| Mapmakers            | [mapmakers.md](mapmakers.md)                 | it changed what people thought the world looked like             |
+| Hard Currency        | [money.md](money.md)                         | it is a form of money, or the institution issuing one            |
+| Nations of Europe    | [nations-of-europe.md](nations-of-europe.md) | it is _the_ founding moment of a European country                |
+| Numbers & Proofs     | [numbers.md](numbers.md)                     | it is a mathematical idea entering human thought                 |
+| Plague Years         | [plagues.md](plagues.md)                     | it is a named outbreak, or a decisive step in ending one         |
+| The Deep             | [the-deep.md](the-deep.md)                   | it is going deliberately under water, or finding what sank       |
+| When the Earth Moved | [upheaval.md](upheaval.md)                   | it is an eruption, earthquake or tsunami                         |
+| What We Drink        | [what-we-drink.md](what-we-drink.md)         | it is a drink made on purpose, or a rule about drinking it       |
+| Indonesia            | [indonesia-theme.md](indonesia-theme.md)     | the first theme, and the model the rest follow                   |
+
+**The scope rule is the theme.** Four of these started as concepts that a keyword net returned
+100-350 hits for — "scientific discoveries", "astrophysics", "European country foundings",
+"games" — which is the signature of a category rather than a deck. Each was narrowed to a rule
+answerable yes/no about any candidate, and each then netted 11-43. If a new theme's anchored
+probe returns more than ~100, narrow the rule before picking anything.
+
+**Anchor short alternatives with `\b`.** `theme-gap` matches `friendly_name description`, so
+bare `tea` matches "steam" and "instead", bare `led ` matches "called ", and `illuminat`
+matches manuscript illumination. Unanchored nets reported 714, 460 and 102 hits for themes
+whose real coverage was 34, 87 and 22.
+
+## Traps found authoring the bank
+
+Four things cost real time across nineteen parallel themes. All four are cheap to avoid once
+named.
+
+**A slug can be named for the cause while its title names the event.** `english-civil-war-aftermath`
+_is_ the Restoration of Charles II card, with that exact `friendly_name`. An agent greps for
+"charles" or "restoration", finds nothing, and writes a duplicate. `theme-gap` will not save
+you either — it matches `friendly_name description`, never the slug. **Before authoring any
+card, check what already sits on its year**, not just what matches its name.
+
+**`candidates.json` is live.** The `add-events` skill calls it "events staged for review" and
+says not to hand-add to it, which reads as "not in the game". It is in `manifest.json`, so its
+events are dealt, validated and part of the slug namespace like any other file.
+
+**Anchor short regex alternatives with `\b`.** Unanchored `tea` matches "s**tea**m" and
+"ins**tea**d"; `led ` matches "cal**led** "; `illuminat` matches manuscript illumination.
+These inflated three themes' nets to 714, 460 and 102 hits against real coverage of 34, 87
+and 22 — and an inflated net reads as "this theme is rich", which is the wrong conclusion.
+
+**A net above ~100 after anchoring means the concept is too loose.** "Scientific discoveries"
+and "European country foundings" are categories, not decks. Narrow the scope rule to something
+answerable yes/no about a single candidate, then re-probe.
+
+One tooling note: `npm run find-duplicates` is O(n²) in _pairs_, and at ~5,985 events it
+crashed on V8's maximum Set size until the redundant seen-sets were removed. If it ever dies
+with `RangeError` rather than reporting, that is the shape of the problem.
 
 ## Authoring: themes lead, the catalogue follows
 
