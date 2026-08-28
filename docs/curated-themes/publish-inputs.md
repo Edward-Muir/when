@@ -68,19 +68,21 @@ enforces: size 30–36, 6+ of 8 spread bins, 5+ band-zero footholds, no two card
 year. All slugs resolve against the current catalogue — the art backlog that once blocked the
 whole bank is closed.
 
-Scheduled weekly from 2026-08-30 in this order:
+Scheduled weekly from 2026-08-30. `kings-of-england` leads deliberately — the opening Sunday
+is the one most people will meet the format on. Everything after it is alphabetical, which
+happens to satisfy the adjacency rule above on its own:
 
 | #   | Date       | Deck                | Name                 | Cards |
 | --- | ---------- | ------------------- | -------------------- | ----: |
-| 1   | 2026-08-30 | `assassinations`    | Assassinations       |    36 |
-| 2   | 2026-09-06 | `automata`          | Automata             |    35 |
-| 3   | 2026-09-13 | `ciphers`           | Codes & Ciphers      |    36 |
-| 4   | 2026-09-20 | `clockwork`         | Clockwork            |    36 |
-| 5   | 2026-09-27 | `cosmic-ideas`      | Cosmic Ideas         |    36 |
-| 6   | 2026-10-04 | `crossings`         | Bridges & Tunnels    |    36 |
-| 7   | 2026-10-11 | `eureka`            | Eureka Moments       |    36 |
-| 8   | 2026-10-18 | `games`             | The Games Board      |    36 |
-| 9   | 2026-10-25 | `kings-of-england`  | Kings of England     |    36 |
+| 1   | 2026-08-30 | `kings-of-england`  | Kings of England     |    36 |
+| 2   | 2026-09-06 | `assassinations`    | Assassinations       |    36 |
+| 3   | 2026-09-13 | `automata`          | Automata             |    35 |
+| 4   | 2026-09-20 | `ciphers`           | Codes & Ciphers      |    36 |
+| 5   | 2026-09-27 | `clockwork`         | Clockwork            |    36 |
+| 6   | 2026-10-04 | `cosmic-ideas`      | Cosmic Ideas         |    36 |
+| 7   | 2026-10-11 | `crossings`         | Bridges & Tunnels    |    36 |
+| 8   | 2026-10-18 | `eureka`            | Eureka Moments       |    36 |
+| 9   | 2026-10-25 | `games`             | The Games Board      |    36 |
 | 10  | 2026-11-01 | `light`             | Let There Be Light   |    35 |
 | 11  | 2026-11-08 | `lost-and-found`    | Lost & Found         |    35 |
 | 12  | 2026-11-15 | `mapmakers`         | Mapmakers            |    36 |
