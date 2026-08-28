@@ -36,6 +36,20 @@ Through **`.github/workflows/publish-theme.yml`** (`workflow_dispatch`), so the 
 stays in GitHub Secrets and never reaches whoever composed the theme. `mode` defaults to
 `validate`, so a mis-click writes nothing.
 
+The decks live in **`themes/bank.json`** and the dispatch schedules them: `themes: all`,
+`start`, `every_days: 7` puts the whole bank on consecutive Sundays in one run. Dates stay out
+of that file on purpose — a deck is fixed, a schedule is not — and the bank is publish input
+only, never something the client reads, so the calendar is still the one home. Bank **order is
+the schedule** and has to stay adjacent-disjoint, because a weekly cadence lands each deck
+exactly `RECENCY_DAYS` after the one before it; `src/utils/themeBank.test.ts` enforces that,
+along with every slug still resolving. Re-publishing a deck keeps the dates it has already run
+on and replaces only its future ones, for the reason in "Never rewrite a date" below. Full
+dispatch instructions: [publish-inputs.md](publish-inputs.md).
+
+`.github/workflows/verify-themes.yml` runs `scripts/verify-themes.js` daily and on catalogue
+pushes to `main`. That matters far more once a quarter is booked ahead: a deck can go stale
+months before the day it breaks.
+
 The split of validation is the part worth remembering:
 
 - **The Action / `scripts/publish-theme.js`** owns everything needing the event catalogue — do
@@ -147,7 +161,7 @@ to run the deck dry and call it Game Over.
 
 Nineteen themes authored in one parallel pass, one note each. Every deck is 34-36 cards and
 clears all four gates: size 30-36, 6+ of 8 spread bins, 5+ band-zero footholds, no two cards
-sharing a year. Ready-to-paste workflow inputs are in
+sharing a year. The decks themselves are `themes/bank.json`; how to schedule them is in
 [publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
 [art/all_prompts.csv](art/all_prompts.csv), built by
 `scripts/events/theme-art-prompts.py` from the hand-authored scenes in `art/scenes/`.

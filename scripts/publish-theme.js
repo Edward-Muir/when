@@ -1,12 +1,25 @@
 #!/usr/bin/env node
 /**
- * Validate a curated daily theme against the real catalogue, then publish it.
+ * Validate curated daily themes against the real catalogue, then publish them.
  *
  * Normally run by .github/workflows/publish-theme.yml so the admin secret stays in GitHub
  * Secrets. Everything is read from the environment rather than argv, because the workflow
  * passes the theme JSON through env to keep it out of the shell.
  *
+ * There are two ways in. The bank path schedules decks that already live in the repo, which
+ * is what a run of consecutive Sundays wants — a whole quarter is three short inputs rather
+ * than nineteen pasted payloads:
+ *
+ *   THEME_IDS         bank ids to schedule, comma-separated, or "all"
+ *   THEME_START       date of the first one, YYYY-MM-DD
+ *   THEME_EVERY_DAYS  days between them, default 7
+ *
+ * The ad-hoc path takes one theme inline, for a deck that is not in the bank yet:
+ *
  *   THEME_JSON        the theme: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"]}
+ *
+ * And either way:
+ *
  *   THEME_MODE        "validate" (default, writes nothing) or "publish"
  *   THEME_FORCE       "true" to publish a date that has already opened somewhere
  *   THEME_REMOVE      a theme id to delete instead of adding
@@ -27,6 +40,14 @@ const {
   loadEligibleEvents,
   spreadReport,
 } = require('./themes/catalogue');
+const {
+  assignDates,
+  loadBank,
+  mergeThemes,
+  removeTheme,
+  selectThemes,
+  weekdayOf,
+} = require('./themes/bank');
 
 const MIN_OCCUPIED_BINS = 6;
 const MIN_BAND_ZERO = 5;
@@ -119,11 +140,31 @@ async function callApi(path, options) {
   return { ok: response.ok, status: response.status, body };
 }
 
-/** Replace a theme with the same id, or append it. Removal drops it by id. */
-function mergeCalendar(calendar, theme, removeId) {
-  const themes = (calendar.themes ?? []).filter((t) => t.id !== (removeId || theme.id));
-  if (removeId) return { ...calendar, themes };
-  return { ...calendar, themes: [...themes, theme] };
+/**
+ * The themes this run is scheduling, dates included.
+ *
+ * Exactly one source: a bank selection or an inline theme. Accepting both would leave the
+ * run's meaning to a precedence rule nobody dispatching it can see.
+ */
+function themesToSchedule() {
+  const ids = (process.env.THEME_IDS || '').trim();
+  const hasInline = Boolean((process.env.THEME_JSON || '').trim());
+
+  if (ids && hasInline) {
+    fail('Set either THEME_IDS (bank) or THEME_JSON (inline), not both.');
+  }
+  if (!ids)
+    return hasInline ? [parseTheme()] : fail('Nothing to publish: set THEME_IDS or THEME_JSON.');
+
+  const start = (process.env.THEME_START || '').trim();
+  if (!start) fail('THEME_IDS needs THEME_START — the date the first theme runs.');
+
+  try {
+    const selected = selectThemes(loadBank(), ids);
+    return assignDates(selected, start, (process.env.THEME_EVERY_DAYS || '7').trim());
+  } catch (error) {
+    return fail(error.message);
+  }
 }
 
 async function main() {
@@ -135,16 +176,22 @@ async function main() {
   const index = buildIndex(events);
   console.log(`Catalogue: ${events.length} playable events.`);
 
-  const theme = removeId ? null : parseTheme();
+  const themes = removeId ? [] : themesToSchedule();
 
-  if (theme) {
-    const problems = inspectTheme(theme, events, index);
+  if (themes.length > 0) {
+    const problems = themes.flatMap((theme) =>
+      inspectTheme(theme, events, index).map((problem) => `${theme.id}: ${problem}`)
+    );
     if (problems.length > 0) {
       console.error('\nProblems:');
       for (const problem of problems) console.error(` • ${problem}`);
-      fail('Theme is not ready. Nothing was written.');
+      fail('Nothing was written.');
     }
-    console.log('\n✓ Catalogue checks passed.');
+    console.log('\nSchedule:');
+    for (const theme of themes) {
+      for (const date of theme.dates) console.log(`  ${date}  ${weekdayOf(date)}  ${theme.id}`);
+    }
+    console.log(`\n✓ Catalogue checks passed for ${themes.length} theme(s).`);
   } else {
     console.log(`\nRemoving theme "${removeId}".`);
   }
@@ -152,7 +199,9 @@ async function main() {
   const current = await callApi('/api/themes', {});
   if (!current.ok) fail(`Could not read the current calendar (HTTP ${current.status}).`);
 
-  const merged = mergeCalendar(current.body, theme, removeId);
+  const merged = removeId
+    ? removeTheme(current.body, removeId)
+    : mergeThemes(current.body, themes, Date.now());
   const dryRun = mode !== 'publish';
 
   const result = await callApi('/api/themes/publish', {

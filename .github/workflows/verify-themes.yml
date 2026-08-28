@@ -1,0 +1,42 @@
+name: Verify Themes
+
+# Re-checks the LIVE theme calendar against the catalogue in this repo.
+#
+# publish-theme.yml proves a deck was sound the day it was written. This catches it going
+# stale afterwards, which matters more the further ahead the calendar is scheduled: with a
+# quarter of Sundays booked, a deprecated event or an image regression can land months before
+# the day it breaks, and nothing else would notice. loadAllEvents hides an event without
+# Cloudinary art, so a card silently leaving the playable set shrinks a stored deck.
+#
+# Runs on push to main because a deploy is exactly when the catalogue changes, and daily
+# because the calendar can move without a push. Exit code 1 fails the run, which is the
+# notification.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/events/**'
+      - 'scripts/themes/**'
+      - 'scripts/verify-themes.js'
+  schedule:
+    # 07:00Z daily — after the UTC+14 rollover at 10:00Z the previous day, so a problem with
+    # tomorrow's deck is reported while tomorrow can still be changed.
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # No `npm ci`: scripts/verify-themes.js is dependency-free, like the publish script.
+      - name: Verify the live calendar
+        run: node scripts/verify-themes.js
+        env:
+          THEMES_API_URL: https://www.play-when.com

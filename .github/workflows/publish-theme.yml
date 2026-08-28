@@ -9,15 +9,33 @@ name: Publish Theme
 # cannot do that — api/ is a separate tsconfig project and public/events/ is served
 # statically rather than bundled into the function.
 #
+# Two ways in. `themes` + `start` schedules decks already committed to themes/bank.json, which
+# is how a run of consecutive Sundays goes up: one dispatch, three short inputs, dates derived
+# rather than pasted. `theme` takes a single deck inline, for one not in the bank yet. Set one
+# or the other — the script refuses both, because a precedence rule is invisible to whoever
+# is filling in this form.
+#
 # Dispatch defaults to `validate`, so a mis-click cannot write anything.
 
 on:
   workflow_dispatch:
     inputs:
-      theme:
-        description: 'Theme JSON: {"id","name","eventNames":[...],"dates":["YYYY-MM-DD"]}'
-        required: true
+      themes:
+        description: 'Bank ids to schedule (comma-separated) or "all". Dates come from start/every_days below.'
         type: string
+        default: ''
+      start:
+        description: 'Date the first bank theme runs, YYYY-MM-DD. Required with themes.'
+        type: string
+        default: ''
+      every_days:
+        description: 'Days between bank themes. 7 = weekly.'
+        type: string
+        default: '7'
+      theme:
+        description: 'Ad-hoc theme JSON, for a deck not in the bank: {"id","name","eventNames":[...],"dates":[...]}'
+        type: string
+        default: ''
       mode:
         description: 'validate = report only; publish = validate then write'
         type: choice
@@ -54,6 +72,9 @@ jobs:
         env:
           # Passed through the environment, never interpolated into the shell. `${{ }}` inside
           # a run: block splices attacker-controlled text straight into bash.
+          THEME_IDS: ${{ inputs.themes }}
+          THEME_START: ${{ inputs.start }}
+          THEME_EVERY_DAYS: ${{ inputs.every_days }}
           THEME_JSON: ${{ inputs.theme }}
           THEME_MODE: ${{ inputs.mode }}
           THEME_FORCE: ${{ inputs.force }}
