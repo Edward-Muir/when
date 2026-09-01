@@ -149,7 +149,11 @@ async function main() {
     console.log(`\nRemoving theme "${removeId}".`);
   }
 
-  const current = await callApi('/api/themes', {});
+  // Cache-busted on purpose. GET /api/themes is shared-cached for players (s-maxage=300,
+  // stale-while-revalidate 24h), so an ordinary read here can return a calendar older than
+  // the last publish — and the stale `version` it carries is then rejected by the API's
+  // optimistic-concurrency guard. A unique query string is a distinct CDN cache key.
+  const current = await callApi(`/api/themes?fresh=${Date.now()}`, {});
   if (!current.ok) fail(`Could not read the current calendar (HTTP ${current.status}).`);
 
   const merged = mergeCalendar(current.body, theme, removeId);
