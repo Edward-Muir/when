@@ -22,7 +22,9 @@ const MIN_THEME_EVENTS = 16;
 
 async function main() {
   const base = process.env.THEMES_API_URL || 'https://www.play-when.com';
-  const response = await fetch(`${base}/api/themes`);
+  // Cache-busted for the same reason as publish-theme.js: the shared cache can serve a
+  // calendar older than the publish being verified.
+  const response = await fetch(`${base}/api/themes?fresh=${Date.now()}`);
   if (!response.ok) {
     console.error(`✗ Could not read the calendar: HTTP ${response.status}`);
     process.exit(1);
