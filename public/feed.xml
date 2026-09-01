@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2026 15:45:19 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 06:30:43 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.17.1</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.17.1</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>**themes:** bypass the shared cache when reading baseVersion (<a href="https://github.com/Edward-Muir/when/issues/53">#53</a>) (<a href="https://github.com/Edward-Muir/when/commit/4ac31bd1f295125656ecb43e275c5da8fb7115bd">4ac31bd</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.17.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.12.1</guid>
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>show the curated theme name on the day it runs (<a href="https://github.com/Edward-Muir/when/issues/46">#46</a>) (<a href="https://github.com/Edward-Muir/when/commit/6a29a8a878b4552f39cfa310113038e532a88502">6a29a8a</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.12.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.12.0</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>hand-authored daily themes (<a href="https://github.com/Edward-Muir/when/issues/44">#44</a>) (<a href="https://github.com/Edward-Muir/when/commit/5e1a6056e6cc506026122f323fdae14f73d26aad">5e1a605</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

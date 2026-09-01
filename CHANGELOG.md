@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.17.1](https://github.com/Edward-Muir/when/compare/v1.17.0...v1.17.1) (2026-09-01)
+
+
+### Bug Fixes
+
+* **themes:** bypass the shared cache when reading baseVersion ([#53](https://github.com/Edward-Muir/when/issues/53)) ([4ac31bd](https://github.com/Edward-Muir/when/commit/4ac31bd1f295125656ecb43e275c5da8fb7115bd))
+
 ## [1.17.0](https://github.com/Edward-Muir/when/compare/v1.16.0...v1.17.0) (2026-08-27)
 
 
