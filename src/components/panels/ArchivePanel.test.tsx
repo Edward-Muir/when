@@ -83,7 +83,7 @@ describe('ArchivePanel', () => {
     recordThemeResult('kings', { correctCount: 23, cleared: true, perfect: false });
     renderPanel();
     const kings = screen.getByRole('button', { name: 'Play Kings of England' });
-    expect(within(kings).getByText('Best 23 placed')).toBeInTheDocument();
+    expect(within(kings).getByText('High score: 23')).toBeInTheDocument();
     expect(within(kings).getByLabelText('Cleared')).toBeInTheDocument();
     const plagues = screen.getByRole('button', { name: 'Play Plague Years' });
     expect(within(plagues).getByText('Not played yet')).toBeInTheDocument();

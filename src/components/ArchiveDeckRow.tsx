@@ -118,7 +118,7 @@ const BestLine: React.FC<{ best: ThemeBest | undefined; locked: boolean; playabl
       ) : best.cleared ? (
         <Check className="w-3 h-3 shrink-0" aria-label="Cleared" />
       ) : null}
-      Best {best.correctCount} placed
+      High score: {best.correctCount}
     </span>
   );
 };

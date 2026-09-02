@@ -175,7 +175,7 @@ const TopBar: React.FC<TopBarProps> = ({
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
         {/* Tighter horizontal padding and gaps below `sm`: the home screen's seven nav buttons
-            (Home · Custom · Archive · Stats · Achievements · Timeline · Menu, 38px each) only
+            (Home · Archive · Custom · Stats · Achievements · Timeline · Menu, 38px each) only
             fit a 320px phone at 6px gaps. */}
         <div className="flex items-center justify-between gap-2 px-1.5 py-2 sm:px-2">
           {/* Game Title */}
@@ -219,7 +219,7 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Navigation only: Home · Custom · Archive · Stats · Achievements · Timeline · Menu.
+          {/* Navigation only: Home · Archive · Custom · Stats · Achievements · Timeline · Menu.
               The current destination is rendered in the active (accent-filled) style. */}
           <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Home Button - a permanent nav destination; active when on the home page */}
@@ -234,18 +234,6 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
-            {showPagerOnlyButtons && (
-              <button
-                onClick={() => handleNav('custom')}
-                className={navBtn('custom')}
-                aria-label="Custom game"
-                aria-current={ariaCurrent('custom')}
-              >
-                <Settings className={navIcon('custom')} />
-              </button>
-            )}
-
             {/* Archive — pager mode only; jumps to the past-decks tab (no standalone route) */}
             {showPagerOnlyButtons && (
               <button
@@ -256,6 +244,18 @@ const TopBar: React.FC<TopBarProps> = ({
               >
                 <Archive className={navIcon('archive')} />
                 {newDotFor('archive')}
+              </button>
+            )}
+
+            {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
+            {showPagerOnlyButtons && (
+              <button
+                onClick={() => handleNav('custom')}
+                className={navBtn('custom')}
+                aria-label="Custom game"
+                aria-current={ariaCurrent('custom')}
+              >
+                <Settings className={navIcon('custom')} />
               </button>
             )}
 
