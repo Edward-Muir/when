@@ -204,7 +204,7 @@ as a `backgroundImage` behind the detail `<img>`; the thumbnail is always warm b
 player just tapped that card, so it still feels instant. Don't reintroduce the eager warm.
 
 Two panels gate their image warming behind an `active` / `hasBeenActive` prop
-(`StatsPanel`, whose Badges section warms only the unlocked badges' art until expanded, and
+(`StatsPanel`, whose Achievements section warms only the unlocked badges' art until expanded, and
 `TimelinePanel`) because `ModeSelect` idle-pre-mounts all five pager panels — that pre-mount
 is a real fix for an iOS scroll-snap stall and should stay; only the warming is gated.
 

@@ -77,11 +77,15 @@ describe('StatsPanel', () => {
     expect(screen.getByText(/of.*unlocked/)).toHaveTextContent(
       `0 of ${ACHIEVEMENTS.length} unlocked`
     );
-    expect(screen.getByText('Finish a game to earn your first badge.')).toBeInTheDocument();
+    expect(screen.getByText('Finish a game to earn your first achievement.')).toBeInTheDocument();
     expect(screen.queryAllByRole('button', { name: /achievement$/ })).toHaveLength(0);
     expect(
       screen.getByRole('button', { name: `Show all ${ACHIEVEMENTS.length}` })
     ).toBeInTheDocument();
+    // Achievements are the last card on the page, after the collection meter.
+    const heading = screen.getByRole('heading', { name: 'Achievements' });
+    const meter = screen.getByText('Events collected');
+    expect(meter.compareDocumentPosition(heading) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     expect(screen.queryByText(/Playing since/)).toBeNull();
     // No day is lit, and no cell is drawn for the future.
     expect(screen.queryAllByLabelText(/, played/)).toHaveLength(0);

@@ -15,7 +15,7 @@ index.tsx                      # BrowserRouter + 13 routes
 │   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
 │   │   ├── panels/                 # ArchivePanel, StatsPanel, TimelinePanel — one per tab
-│   │   │   └── stats/BadgesSection.tsx # The badge case, inside StatsPanel (was /achievements)
+│   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel (was /achievements)
 │   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext

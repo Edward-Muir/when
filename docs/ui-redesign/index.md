@@ -37,10 +37,10 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
   Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
 - **Achievements are a section of the Stats tab, not a page** (2026-09). They were a pager
   tab from 2026-06, then briefly a burger-menu link when the home screen got cluttered — and
-  nothing in the burger menu gets found, so the badge case now sits inline on Stats
-  (`stats/BadgesSection.tsx`, directly below the Daily scores card): a "Badges" header with the
-  live count, the unlocked badges newest first, and a "Show all 60" expander for the locked
-  ones. **The locked grid mounts only while expanded, and badge art is prefetched only for
+  nothing in the burger menu gets found, so they now sit inline at the very bottom of Stats
+  (`stats/AchievementsSection.tsx`, after the collection meter): an "Achievements" header with
+  the live count, the unlocked badges newest first, and a "Show all 60" expander for the
+  locked ones. **The locked grid mounts only while expanded, and badge art is prefetched only for
   the unlocked badges until then** — the always-mounted 60-card grid is what used to stall
   the swipe on iOS (below), and it must not come back. `/achievements` redirects to `/stats`
   (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links still land.

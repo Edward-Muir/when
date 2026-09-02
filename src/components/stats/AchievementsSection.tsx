@@ -16,9 +16,9 @@ interface Props {
 }
 
 /**
- * The badge case, inline on the Stats page: the unlocked badges (most recent first) and a
- * "Show all" expander that reveals the locked ones. Replaces the standalone Achievements
- * page, which nobody found in the burger menu.
+ * Achievements, inline at the bottom of the Stats page: the unlocked badges (most recent
+ * first) and a "Show all" expander that reveals the locked ones. Replaces the standalone
+ * Achievements page, which nobody found in the burger menu.
  *
  * Two rules keep this from stalling the home pager, learned when the full grid was a tab of
  * its own (60 cards of real event art plus an image burst, mounted mid-swipe on iOS):
@@ -27,7 +27,7 @@ interface Props {
  *   (the pager pre-mounts this panel at idle for every home-screen visitor). Expanding warms
  *   the rest.
  */
-const BadgesSection: React.FC<Props> = ({ unlockedMap, eventsByName, active }) => {
+const AchievementsSection: React.FC<Props> = ({ unlockedMap, eventsByName, active }) => {
   const [expanded, setExpanded] = useState(false);
   // The tapped badge shown in the inspection popup (null = closed).
   const [selected, setSelected] = useState<AchievementDef | null>(null);
@@ -78,7 +78,7 @@ const BadgesSection: React.FC<Props> = ({ unlockedMap, eventsByName, active }) =
     <StatCard>
       <div className="mb-3 flex items-baseline justify-between gap-3">
         <h2 className="font-body text-[11px] font-semibold uppercase tracking-wider text-text-muted">
-          Badges
+          Achievements
         </h2>
         <p className="font-body text-sm text-text-muted">
           <span className="font-mono">{unlocked.length}</span> of{' '}
@@ -89,7 +89,9 @@ const BadgesSection: React.FC<Props> = ({ unlockedMap, eventsByName, active }) =
       {unlocked.length > 0 ? (
         grid(unlocked)
       ) : (
-        <p className="font-body text-sm text-text-muted">Finish a game to earn your first badge.</p>
+        <p className="font-body text-sm text-text-muted">
+          Finish a game to earn your first achievement.
+        </p>
       )}
 
       {expanded && locked.length > 0 && (
@@ -119,4 +121,4 @@ const BadgesSection: React.FC<Props> = ({ unlockedMap, eventsByName, active }) =
   );
 };
 
-export default BadgesSection;
+export default AchievementsSection;

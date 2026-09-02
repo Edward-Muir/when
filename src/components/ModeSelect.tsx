@@ -97,7 +97,7 @@ const ALL_TAB_INDICES = TABS.map((_, i) => i);
 // Pre-mount the remaining pager panels (Stats and Timeline) at idle rather than on first
 // visit: mounting a panel mid-swipe mutates the DOM during scroll-snap momentum, which stalls
 // the gesture on iOS. (Learned when the full badge grid was a tab — 59 cards + an image
-// burst; it now mounts only on demand inside Stats, see `stats/BadgesSection.tsx`.)
+// burst; it now mounts only on demand inside Stats, see `stats/AchievementsSection.tsx`.)
 function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<number>>>) {
   useEffect(() => {
     const mountAll = () => setVisited(new Set(ALL_TAB_INDICES));

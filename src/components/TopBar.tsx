@@ -12,7 +12,7 @@ import { GameMode } from '../types';
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
  * key type, so the two cannot drift apart. Achievements is not one: the badges live on the
- * Stats tab (`stats/BadgesSection.tsx`).
+ * Stats tab (`stats/AchievementsSection.tsx`).
  */
 export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'timeline';
 

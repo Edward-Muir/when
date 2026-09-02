@@ -81,7 +81,8 @@ Rebuilt 2026-09 (`StatsPanel.tsx` + `src/components/stats/`, derivations in
 `statsDerived.ts`). Mounted only by the home pager's Stats tab, which `/stats` opens
 directly; the pager page owns the scroll container, the panel never does. Layout, top to bottom: records card
 (longest timeline, best streak, longest daily run, best daily score), "Your year" calendar,
-"Daily scores" bars, the **Badges** section, lifetime totals, the collection meter.
+"Daily scores" bars, lifetime totals, the collection meter, and last the **Achievements**
+section.
 
 Decisions, so they are not re-litigated:
 
@@ -100,11 +101,12 @@ Decisions, so they are not re-litigated:
 - The header uses the Daily/Custom/Archive recipe (`text-5xl` display h1 + one muted
   line). My Timeline uses it too; its line is the live count ("486 of 4,120 events placed")
   rather than a slogan.
-- **Badges are a section, not a page** (`stats/BadgesSection.tsx`, 2026-09). The standalone
-  `/achievements` page, and its brief life as a burger-menu link, went unfound; the section
-  header carries the count ("14 of 60 unlocked"), the body shows the unlocked badges newest
-  first (sorted by the stored unlock date), and a "Show all 60" expander reveals the locked
-  ones. Two rules, both learned the hard way when the full grid was a pager tab: **the locked
+- **Achievements are a section at the bottom of the page, not a page of their own**
+  (`stats/AchievementsSection.tsx`, 2026-09). The standalone `/achievements` page, and its
+  brief life as a burger-menu link, went unfound; the section header carries the count ("14 of
+  60 unlocked"), the body shows the unlocked badges newest first (sorted by the stored unlock
+  date), and a "Show all 60" expander reveals the locked ones. Last on the page so the
+  expanded 60-card grid pushes nothing else down. Two rules, both learned the hard way when the full grid was a pager tab: **the locked
   grid is mounted only while expanded** (60 cards of real art mounted mid-swipe stalled the
   iOS gesture), and **art is prefetched only for the unlocked badges, and only once the Stats
   tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it at idle for every

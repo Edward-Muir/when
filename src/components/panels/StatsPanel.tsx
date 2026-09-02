@@ -32,7 +32,7 @@ import { useToday } from '../../hooks/useToday';
 import { StatCard, StatRow, SectionHeading, iconClass } from '../stats/primitives';
 import CalendarHeatmap from '../stats/CalendarHeatmap';
 import ScoreDistribution from '../stats/ScoreDistribution';
-import BadgesSection from '../stats/BadgesSection';
+import AchievementsSection from '../stats/AchievementsSection';
 import type { HistoricalEvent } from '../../types';
 
 const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
@@ -40,14 +40,14 @@ const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ??
 interface StatsPanelProps {
   /**
    * Whether this panel is the visible pager tab. The pager pre-mounts it at idle, so the
-   * badge-art warm waits for the tab to actually be shown (see `BadgesSection`).
+   * badge-art warm waits for the tab to actually be shown (see `AchievementsSection`).
    */
   active?: boolean;
 }
 
 /**
- * Stats content panel: records, the year calendar, daily score bars, the badge case,
- * lifetime totals and the collection meter — all derived from the localStorage primitives.
+ * Stats content panel: records, the year calendar, daily score bars, lifetime totals, the
+ * collection meter and, last, the achievements — all derived from the localStorage primitives.
  * Mounted by the home-screen pager's Stats tab (which `/stats` opens directly); the pager
  * page owns the scroll container. Everything reads zero-defaults on empty storage, so a
  * fresh player sees clean zeros with no crash.
@@ -140,12 +140,6 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
           />
         </StatCard>
 
-        <BadgesSection
-          unlockedMap={achievements.unlocked}
-          eventsByName={eventsByName}
-          active={active}
-        />
-
         <StatCard>
           <SectionHeading>Lifetime</SectionHeading>
           <div className="grid grid-cols-2 gap-x-3 gap-y-4">
@@ -200,6 +194,13 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
             />
           </div>
         </StatCard>
+
+        {/* Achievements — last on the page, the expander's 60-card grid below everything else */}
+        <AchievementsSection
+          unlockedMap={achievements.unlocked}
+          eventsByName={eventsByName}
+          active={active}
+        />
       </div>
     </div>
   );
