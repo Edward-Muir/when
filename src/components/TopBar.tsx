@@ -115,11 +115,11 @@ const TopBar: React.FC<TopBarProps> = ({
   const ariaCurrent = (key: NavDest): 'page' | undefined =>
     activeNav === key ? 'page' : undefined;
 
-  // One-time "new" dots until first visited, on the Archive, Stats and Timeline buttons.
+  // One-time "new" dots until first visited, on the Archive, Stats and Timeline buttons. The
+  // Stats dot is also re-armed whenever a badge unlocks (`useGameStatsRecorder`).
   const [seenNav, setSeenNav] = useState(() => ({
     archive: hasSeenNav('archive'),
     stats: hasSeenNav('stats'),
-    achievements: hasSeenNav('achievements'),
     timeline: hasSeenNav('timeline'),
   }));
 
@@ -132,8 +132,6 @@ const TopBar: React.FC<TopBarProps> = ({
           return { ...prev, archive: true };
         case 'stats':
           return { ...prev, stats: true };
-        case 'achievements':
-          return { ...prev, achievements: true };
         case 'timeline':
           return { ...prev, timeline: true };
       }
@@ -145,8 +143,6 @@ const TopBar: React.FC<TopBarProps> = ({
         return seenNav.archive;
       case 'stats':
         return seenNav.stats;
-      case 'achievements':
-        return seenNav.achievements;
       case 'timeline':
         return seenNav.timeline;
     }
@@ -176,7 +172,11 @@ const TopBar: React.FC<TopBarProps> = ({
 
   // Gold "new" dot; the bg ring separates it from the button edge.
   const newDot = (
-    <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
+    <span
+      role="img"
+      aria-label="New"
+      className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg"
+    />
   );
   const newDotFor = (key: NavKey) => (isSeen(key) ? null : newDot);
 

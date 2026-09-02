@@ -129,13 +129,16 @@ export function markModePlayed(mode: GameMode): void {
 
 // --- Nav "new" Dot Storage ---
 
-/** Top-bar nav destinations that get a one-time "new" dot until first clicked. */
-export type NavKey = 'archive' | 'stats' | 'achievements' | 'timeline';
+/**
+ * Top-bar nav destinations that get a one-time "new" dot until first clicked. (A retired
+ * `achievements` key may linger in stored JSON from before the badges moved onto Stats; it
+ * is simply never read.)
+ */
+export type NavKey = 'archive' | 'stats' | 'timeline';
 
 interface NavSeen {
   archive?: boolean;
   stats?: boolean;
-  achievements?: boolean;
   timeline?: boolean;
 }
 
@@ -148,8 +151,6 @@ function getNavSeen(data: NavSeen, key: NavKey): boolean {
       return data.archive === true;
     case 'stats':
       return data.stats === true;
-    case 'achievements':
-      return data.achievements === true;
     case 'timeline':
       return data.timeline === true;
   }
@@ -161,8 +162,6 @@ function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
       return { ...data, archive: true };
     case 'stats':
       return { ...data, stats: true };
-    case 'achievements':
-      return { ...data, achievements: true };
     case 'timeline':
       return { ...data, timeline: true };
   }
@@ -174,8 +173,6 @@ function clearNavSeen(data: NavSeen, key: NavKey): NavSeen {
       return { ...data, archive: false };
     case 'stats':
       return { ...data, stats: false };
-    case 'achievements':
-      return { ...data, achievements: false };
     case 'timeline':
       return { ...data, timeline: false };
   }
