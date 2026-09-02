@@ -13,13 +13,17 @@ import {
   Apple,
   Bell,
   BellOff,
+  Trophy,
+  Hourglass,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
-import { usePWAInstall, InstallScenario } from '../hooks/usePWAInstall';
+import { usePWAInstall } from '../hooks/usePWAInstall';
+import InstallInstructions from './InstallInstructions';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
+import { NavKey } from '../utils/playerStorage';
 import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
 
@@ -28,161 +32,13 @@ interface MenuProps {
   onClose: () => void;
   onShowToast: () => void;
   gameMode?: GameMode | null;
+  /**
+   * Which of the two page links still carry their one-time "new" dot. Owned by TopBar, which
+   * mirrors it as a dot on the menu button; `onNavItemClick` is how a tap clears both.
+   */
+  navDots?: { achievements: boolean; timeline: boolean };
+  onNavItemClick?: (key: NavKey) => void;
 }
-
-// Install instructions component (moved from TopBar)
-const InstallInstructions: React.FC<{ scenario: InstallScenario }> = ({ scenario }) => {
-  const baseClass = 'space-y-3 text-sm text-text-muted font-body';
-  const noteClass = 'text-sm mt-4 text-text-muted/70';
-
-  switch (scenario) {
-    case 'ios-safari':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap the <strong>Share</strong> button (□↑) in Safari
-            </li>
-            <li>
-              Tap <strong>"Add to Home Screen"</strong>
-            </li>
-            <li>
-              Tap <strong>"Add"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'ios-chrome':
-    case 'ios-firefox':
-    case 'ios-other':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap the <strong>Share</strong> button in your browser
-            </li>
-            <li>
-              Tap <strong>"Add to Home Screen"</strong>
-            </li>
-            <li>
-              Tap <strong>"Add"</strong>
-            </li>
-          </ol>
-          <p className={noteClass}>Requires iOS 16.4 or later.</p>
-        </div>
-      );
-    case 'android-chrome':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap the <strong>menu button</strong> (⋮)
-            </li>
-            <li>
-              Tap <strong>"Add to Home Screen"</strong> or <strong>"Install app"</strong>
-            </li>
-            <li>
-              Tap <strong>"Install"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'android-firefox':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap the <strong>menu button</strong> (⋮)
-            </li>
-            <li>
-              Tap <strong>"Install"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'android-samsung':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap the <strong>menu button</strong> (☰)
-            </li>
-            <li>
-              Tap <strong>"Add page to"</strong>
-            </li>
-            <li>
-              Tap <strong>"Home screen"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'android-other':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Tap your browser's <strong>menu button</strong>
-            </li>
-            <li>
-              Look for <strong>"Add to Home Screen"</strong> or <strong>"Install"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'desktop-chrome':
-    case 'desktop-edge':
-      return (
-        <div className={baseClass}>
-          <p>
-            Look for the <strong>install icon</strong> (⊕) in the address bar, or:
-          </p>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Open the browser <strong>menu</strong>
-            </li>
-            <li>
-              Click <strong>"Install app"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'desktop-safari':
-      return (
-        <div className={baseClass}>
-          <ol className="list-decimal list-inside space-y-2">
-            <li>
-              Click <strong>File</strong> in the menu bar
-            </li>
-            <li>
-              Click <strong>"Add to Dock"</strong>
-            </li>
-          </ol>
-        </div>
-      );
-    case 'desktop-firefox':
-      return (
-        <div className={baseClass}>
-          <p>Firefox doesn't support installing web apps.</p>
-          <p className="text-sm mt-2 text-text-muted/70">
-            Try Chrome, Edge, or Safari, or bookmark this page.
-          </p>
-        </div>
-      );
-    case 'desktop-other':
-    default:
-      return (
-        <div className={baseClass}>
-          <p>
-            Check your browser's menu for an <strong>"Install"</strong> or{' '}
-            <strong>"Add to Home Screen"</strong> option.
-          </p>
-          <p className="text-sm mt-2 text-text-muted/70">
-            Chrome and Edge have the best support for web apps.
-          </p>
-        </div>
-      );
-  }
-};
 
 // Game rules component (moved from TopBar). Both game modes share one rule-set, so
 // these are not mode-specific.
@@ -242,7 +98,23 @@ const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> 
   );
 };
 
-const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
+// Gold "new" dot at the end of a menu row (see `navDots`).
+const NewDot: React.FC = () => (
+  <span
+    aria-label="New"
+    role="img"
+    className="ml-auto h-2 w-2 flex-shrink-0 rounded-full bg-accent"
+  />
+);
+
+const Menu: React.FC<MenuProps> = ({
+  isOpen,
+  onClose,
+  onShowToast,
+  gameMode,
+  navDots,
+  onNavItemClick,
+}) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
@@ -323,6 +195,34 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
 
               {/* Menu Items */}
               <div className="py-2 flex-1">
+                {/* Achievements and My Timeline are routes, not home-pager tabs — they were
+                    moved here to declutter the home screen. Each keeps its one-time "new" dot. */}
+                <Link
+                  to="/achievements"
+                  className={menuItemClass}
+                  onClick={() => {
+                    onNavItemClick?.('achievements');
+                    onClose();
+                  }}
+                >
+                  <Trophy className={iconClass} />
+                  <span className="font-body">Achievements</span>
+                  {navDots?.achievements && <NewDot />}
+                </Link>
+
+                <Link
+                  to="/timeline"
+                  className={menuItemClass}
+                  onClick={() => {
+                    onNavItemClick?.('timeline');
+                    onClose();
+                  }}
+                >
+                  <Hourglass className={iconClass} />
+                  <span className="font-body">My Timeline</span>
+                  {navDots?.timeline && <NewDot />}
+                </Link>
+
                 {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
                 <button onClick={toggleTheme} className={menuItemClass}>
                   {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}

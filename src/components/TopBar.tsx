@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import {
-  Home,
-  Menu as MenuIcon,
-  BarChart3,
-  Trophy,
-  Hourglass,
-  Settings,
-  Archive,
-} from 'lucide-react';
+import { Home, Menu as MenuIcon, BarChart3, Settings, Archive } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
@@ -19,9 +11,10 @@ import { GameMode } from '../types';
 
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
- * key type, so the two cannot drift apart.
+ * key type, so the two cannot drift apart. Achievements and My Timeline are not nav
+ * destinations: they live in the burger menu (`Menu.tsx`) as links to their routes.
  */
-export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'achievements' | 'timeline';
+export type NavDest = 'home' | 'archive' | 'custom' | 'stats';
 
 interface TopBarProps {
   showHome?: boolean;
@@ -29,7 +22,7 @@ interface TopBarProps {
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
   dailyTheme?: string;
-  /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
+  /** Show the Stats button (plus Archive and Custom in pager mode). */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
   activeNav?: NavDest;
@@ -100,7 +93,8 @@ const TopBar: React.FC<TopBarProps> = ({
   const ariaCurrent = (key: NavDest): 'page' | undefined =>
     activeNav === key ? 'page' : undefined;
 
-  // One-time "new" dots on the Archive/Stats/Achievements/Timeline buttons until first visited.
+  // One-time "new" dots until first visited: on the Archive/Stats buttons, and — for the two
+  // burger-menu destinations — on the menu button and the menu items themselves.
   const [seenNav, setSeenNav] = useState(() => ({
     archive: hasSeenNav('archive'),
     stats: hasSeenNav('stats'),
@@ -147,26 +141,29 @@ const TopBar: React.FC<TopBarProps> = ({
   }, [activeNav]);
 
   // Unified nav handler. In pager mode (onNavClick set) it scrolls the home pager; otherwise
-  // it routes. Stats/Achievements/Timeline clear their one-time "new" dot on first visit.
+  // it routes. Archive/Stats clear their one-time "new" dot on first visit.
   const handleNav = (key: NavDest) => {
     if (key !== 'home' && key !== 'custom' && !isSeen(key)) markSeen(key);
     if (onNavClick) {
       onNavClick(key);
     } else if (key === 'home') {
       onHomeClick?.();
-    } else if (key !== 'custom' && key !== 'archive') {
+    } else if (key === 'stats') {
       // Custom and Archive have no standalone route — their buttons only render in pager mode.
-      navigate(`/${key}`);
+      navigate('/stats');
     }
   };
 
-  // Gold "new" dot; the bg ring separates it from the button edge. Rendered through a helper
-  // rather than inline `&&`s: with seven nav buttons the component sits at ESLint's
-  // complexity ceiling of 15.
-  const newDotFor = (key: NavKey) =>
-    isSeen(key) ? null : (
-      <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
-    );
+  // Gold "new" dot; the bg ring separates it from the button edge.
+  const newDot = (
+    <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
+  );
+  const newDotFor = (key: NavKey) => (isSeen(key) ? null : newDot);
+
+  // The menu button carries a dot while either of its destinations is unseen; the item dots
+  // inside the menu say which. `markSeen` is passed down so a tap clears both in lockstep.
+  const menuDots = { achievements: !isSeen('achievements'), timeline: !isSeen('timeline') };
+  const menuHasNew = menuDots.achievements || menuDots.timeline;
 
   // Custom and Archive have no standalone route, so their buttons exist only in pager mode.
   const showPagerOnlyButtons = showStatsAchievements && !!onNavClick;
@@ -174,10 +171,7 @@ const TopBar: React.FC<TopBarProps> = ({
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
-        {/* Tighter horizontal padding and gaps below `sm`: the home screen's seven nav buttons
-            (Home · Archive · Custom · Stats · Achievements · Timeline · Menu, 38px each) only
-            fit a 320px phone at 6px gaps. */}
-        <div className="flex items-center justify-between gap-2 px-1.5 py-2 sm:px-2">
+        <div className="flex items-center justify-between gap-2 p-2">
           {/* Game Title */}
           {showTitle ? (
             <div className="flex items-start gap-2 pl-2">
@@ -219,9 +213,9 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Navigation only: Home · Archive · Custom · Stats · Achievements · Timeline · Menu.
-              The current destination is rendered in the active (accent-filled) style. */}
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          {/* Navigation only: Home · Archive · Custom · Stats · Menu. The current destination
+              is rendered in the active (accent-filled) style. */}
+          <div className="flex items-center gap-2">
             {/* Home Button - a permanent nav destination; active when on the home page */}
             {showHome && onHomeClick && (
               <button
@@ -259,46 +253,27 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Stats + Achievements + Timeline (sibling tabs/routes; active one is highlighted) */}
+            {/* Stats (a pager tab and a route; highlighted when current) */}
             {showStatsAchievements && (
-              <>
-                <button
-                  onClick={() => handleNav('stats')}
-                  className={navBtn('stats')}
-                  aria-label="View stats"
-                  aria-current={ariaCurrent('stats')}
-                >
-                  <BarChart3 className={navIcon('stats')} />
-                  {newDotFor('stats')}
-                </button>
-                <button
-                  onClick={() => handleNav('achievements')}
-                  className={navBtn('achievements')}
-                  aria-label="View achievements"
-                  aria-current={ariaCurrent('achievements')}
-                >
-                  <Trophy className={navIcon('achievements')} />
-                  {newDotFor('achievements')}
-                </button>
-                <button
-                  onClick={() => handleNav('timeline')}
-                  className={navBtn('timeline')}
-                  aria-label="View my timeline"
-                  aria-current={ariaCurrent('timeline')}
-                >
-                  <Hourglass className={navIcon('timeline')} />
-                  {newDotFor('timeline')}
-                </button>
-              </>
+              <button
+                onClick={() => handleNav('stats')}
+                className={navBtn('stats')}
+                aria-label="View stats"
+                aria-current={ariaCurrent('stats')}
+              >
+                <BarChart3 className={navIcon('stats')} />
+                {newDotFor('stats')}
+              </button>
             )}
 
-            {/* Menu Button */}
+            {/* Menu Button — dotted while Achievements or My Timeline inside is unseen */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className={buttonClass}
               aria-label="Open menu"
             >
               <MenuIcon className={iconClass} />
+              {menuHasNew ? newDot : null}
             </button>
           </div>
         </div>
@@ -317,6 +292,8 @@ const TopBar: React.FC<TopBarProps> = ({
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
+        navDots={menuDots}
+        onNavItemClick={markSeen}
       />
 
       {/* Update Available Popup */}

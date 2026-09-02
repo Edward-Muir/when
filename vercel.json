@@ -5,6 +5,9 @@
     { "source": "/privacy", "destination": "/index.html" },
     { "source": "/terms", "destination": "/index.html" },
     { "source": "/support", "destination": "/index.html" },
+    { "source": "/stats", "destination": "/index.html" },
+    { "source": "/achievements", "destination": "/index.html" },
+    { "source": "/timeline", "destination": "/index.html" },
     { "source": "/image-qc", "destination": "/index.html" },
     { "source": "/card-reports", "destination": "/index.html" }
   ]

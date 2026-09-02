@@ -18,8 +18,6 @@ import TopBar, { NavDest } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
-import AchievementsPanel from './panels/AchievementsPanel';
-import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
 import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
@@ -83,8 +81,6 @@ const TABS: { key: TabKey; label: string; color: { dot: string; text: string } }
     color: { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
   },
   { key: 'stats', label: 'Stats', color: GOLD },
-  { key: 'achievements', label: 'Achievements', color: GOLD },
-  { key: 'timeline', label: 'Timeline', color: GOLD },
 ];
 const tabKeyForIndex = (i: number): TabKey => TABS.at(i)?.key ?? 'home';
 const indexForTabKey = (key: TabKey): number =>
@@ -94,9 +90,9 @@ const indexForTabKey = (key: TabKey): number =>
   );
 const ALL_TAB_INDICES = TABS.map((_, i) => i);
 
-// Pre-mount the remaining pager panels at idle: mounting AchievementsPanel mid-swipe
-// (59 cards + an image burst) mutates the DOM during scroll-snap momentum, which stalls
-// the gesture on iOS. Mounting early also lets the badge art warm before the first swipe.
+// Pre-mount the remaining pager panels (currently just Stats) at idle rather than on first
+// visit: mounting a panel mid-swipe mutates the DOM during scroll-snap momentum, which stalls
+// the gesture on iOS. (Learned when AchievementsPanel lived here — 59 cards + an image burst.)
 function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<number>>>) {
   useEffect(() => {
     const mountAll = () => setVisited(new Set(ALL_TAB_INDICES));
@@ -199,7 +195,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
   const pagerRef = useRef<ModePagerHandle>(null);
   const [activePage, setActivePage] = useState(0);
-  // Daily, Archive and Custom mount immediately; the heavier tabs wait for a visit or idle.
+  // Daily, Archive and Custom mount immediately; Stats waits for a visit or idle.
   const [visited, setVisited] = useState<Set<number>>(
     () => new Set([indexForTabKey('home'), indexForTabKey('archive'), indexForTabKey('custom')])
   );
@@ -440,8 +436,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       />
 
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
-          Stats/Achievements/Timeline panels use their own wider max-widths so the timeline
-          isn't squashed. */}
+          Archive and Stats panels use their own wider max-widths. */}
       <div className="flex flex-col flex-1 min-h-0">
         <ModePager
           ref={pagerRef}
@@ -516,23 +511,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
 
           {/* Stats page (lazy: mounted once first visited) */}
           {visited.has(indexForTabKey('stats')) ? <StatsPanel /> : <div />}
-
-          {/* Achievements page (lazy) */}
-          {visited.has(indexForTabKey('achievements')) ? (
-            <AchievementsPanel active={activePage === indexForTabKey('achievements')} />
-          ) : (
-            <div />
-          )}
-
-          {/* Timeline page (lazy) */}
-          {visited.has(indexForTabKey('timeline')) ? (
-            <TimelinePanel
-              allEvents={allEvents}
-              active={activePage === indexForTabKey('timeline')}
-            />
-          ) : (
-            <div />
-          )}
         </ModePager>
       </div>
 

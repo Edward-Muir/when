@@ -11,10 +11,11 @@ guess wrong.
 ```
 index.tsx                      # BrowserRouter + 15 routes
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Achievements/Timeline)
+│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats)
 │   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   ├── panels/                 # ArchivePanel, StatsPanel, AchievementsPanel, TimelinePanel
+│   │   ├── panels/                 # ArchivePanel, StatsPanel (AchievementsPanel and
+│   │   │                           # TimelinePanel live here too, but only the routes use them)
 │   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
@@ -22,9 +23,10 @@ index.tsx                      # BrowserRouter + 15 routes
 │       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── TopBar.tsx         # Home + nav; routes to /stats, /achievements, /timeline
+│       ├── TopBar.tsx         # Home + nav; routes to /stats
+│       │   ├── Menu.tsx                # Burger menu; links to /achievements, /timeline
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
-│       └── PlayerInfo.tsx, GameOverControls.tsx, Menu.tsx, Toast.tsx
+│       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
 └── pages/                     # Standalone routes, not App children (Timeline, Stats,

@@ -4,21 +4,15 @@ import TopBar from '../components/TopBar';
 import AchievementsPanel from '../components/panels/AchievementsPanel';
 
 /**
- * Achievements page (route: /achievements). Renders the shared TopBar plus the
- * AchievementsPanel content; the same panel is embedded as a tab in the home-screen pager.
+ * Achievements page (route: /achievements). Renders the shared TopBar (Home + Menu) plus the
+ * AchievementsPanel content. Reached from the burger menu; it is not a home-pager tab.
  */
 const Achievements: React.FC = () => {
   const navigate = useNavigate();
 
   return (
     <div className="h-screen-safe overflow-y-auto bg-bg">
-      <TopBar
-        showHome
-        showStatsAchievements
-        showTitle={false}
-        activeNav="achievements"
-        onHomeClick={() => navigate('/')}
-      />
+      <TopBar showHome showTitle={false} onHomeClick={() => navigate('/')} />
 
       <div className="pt-topbar-fixed pb-safe">
         <AchievementsPanel />

@@ -22,11 +22,11 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   Playwright/puppeteer selectors depend on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
 
-## Home is a six-tab pager (2026-06-28, Archive added 2026-09)
+## Home is a four-tab pager (2026-06-28; Archive added, Achievements/Timeline demoted 2026-09)
 
-`Daily · Archive · Custom · Stats · Achievements · Timeline`, driven by **both** swipe and the
-TopBar buttons. It replaced two competing navigation models (a two-page pager plus TopBar
-buttons that `navigate()`d to separate full-page routes).
+`Daily · Archive · Custom · Stats`, driven by **both** swipe and the TopBar buttons. It
+replaced two competing navigation models (a two-page pager plus TopBar buttons that
+`navigate()`d to separate full-page routes).
 
 - **The order lives in one place**: the `TABS` array in `ModeSelect.tsx`. Labels, indicator
   colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
@@ -35,10 +35,14 @@ buttons that `navigate()`d to separate full-page routes).
 - **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
   timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
   Like Custom it has no standalone route, so its TopBar button only renders in pager mode.
-- **Seven TopBar buttons fit a 320px phone only at 6px gaps**: the nav row is `gap-1.5 sm:gap-2`
-  and the bar `px-1.5 sm:px-2` (7 × 38px + 6 × 6px + 12px = 302px). The in-game bar has fewer
-  buttons and is unaffected. `TopBar` sits at ESLint's complexity ceiling; the "new" dots go
-  through a helper rather than inline `&&`s for that reason.
+- **Achievements and My Timeline are burger-menu items, not tabs** (2026-09). They were pager
+  tabs from 2026-06 until the home screen got cluttered; now `Menu.tsx` links to their routes
+  (`/achievements`, `/timeline`, both with `vercel.json` rewrites so a hard refresh works).
+  Their one-time "new" dot moved with them: the menu button in `TopBar` carries a dot while
+  either is unseen, each menu item carries its own, and a tap clears both (`hasSeenNav` /
+  `markNavSeen` in `playerStorage.ts`, unchanged; `useGameStatsRecorder` still re-arms the
+  achievements dot on unlock). Dropping two tabs is also what took the TopBar back to five
+  buttons at `gap-2` / `p-2` — seven only fit a 320px phone at 6px gaps.
 
 - **The standalone routes were kept** for deep-linking. Page bodies were extracted into
   content-only panel components (`src/components/panels/`) shared by both the routes and the
@@ -46,8 +50,9 @@ buttons that `navigate()`d to separate full-page routes).
 - **`TopBar` stays backward-compatible** via an optional `onNavClick`: when provided the
   buttons scroll the pager, when absent they route as before. That is why Game and the route
   pages were unaffected.
-- **Heavy tabs lazy-mount** on first visit, so the home load doesn't eagerly build the
-  achievements grid and the full collection timeline.
+- **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first). Only Stats is
+  gated today, but the mechanism stays: it was what kept the achievements grid and the full
+  collection timeline off the home load while they were tabs.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict** —
   this was an upfront concern that turned out to be unfounded. Don't re-litigate it.
 - Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
