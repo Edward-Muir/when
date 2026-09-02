@@ -9,6 +9,9 @@ import {
   GameMilestone,
 } from '../utils/statsStorage';
 import { markNavUnseen } from '../utils/playerStorage';
+import { getCuratedThemeIdForConfig } from '../utils/themeReplay';
+import { getThemeBest, recordThemeResult } from '../utils/themeBests';
+import { getThemeOutcome } from '../utils/themeOutcome';
 
 interface GameStatsRecording {
   /** Achievement ids unlocked by the most recently recorded game. */
@@ -40,8 +43,22 @@ export function useGameStatsRecorder(
     if (recordedRef.current || eventsByName.size === 0) return;
     recordedRef.current = true;
     // Snapshot records BEFORE recording so we can tell which the game just beat.
-    const prev = { lifetime: getLifetimeStats(), cadence: getDailyCadence() };
+    const themeId = getCuratedThemeIdForConfig(state.lastConfig);
+    const prev = {
+      lifetime: getLifetimeStats(),
+      cadence: getDailyCadence(),
+      themeBest: themeId ? (getThemeBest(themeId)?.correctCount ?? 0) : undefined,
+    };
     const unlocked = recordGameResult(state, eventsByName);
+    // A curated theme's record — the daily on its day and every Archive replay alike.
+    if (themeId) {
+      const { survived, perfect } = getThemeOutcome(state);
+      recordThemeResult(themeId, {
+        correctCount: state.placementHistory.filter(Boolean).length,
+        cleared: survived,
+        perfect,
+      });
+    }
     // Re-arm the Achievements nav dot so the player is nudged to go see what they earned.
     if (unlocked.length > 0) markNavUnseen('achievements');
     setNewlyUnlockedAchievements(unlocked);

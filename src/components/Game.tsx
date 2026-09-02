@@ -19,6 +19,7 @@ import { useHaptics } from '../hooks/useHaptics';
 import { warmLeaderboard } from '../hooks/useLeaderboard';
 import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
+import { getCuratedThemeById } from '../utils/curatedThemes';
 import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
@@ -214,14 +215,16 @@ const Game: React.FC<GameProps> = ({
   const currentPlayer = state.players[state.currentPlayerIndex];
   const activeCard = currentPlayer?.hand[0] || null;
 
-  // Compute daily theme display name for TopBar
+  // Theme name for the TopBar pill: the daily's theme, or the deck an Archive replay is of.
   const dailyThemeDisplay = useMemo(() => {
+    const replayId = state.lastConfig?.curatedThemeId;
+    if (replayId) return getCuratedThemeById(replayId)?.name;
     if (state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
       const theme = getDailyTheme(state.lastConfig.dailySeed);
       return getThemeDisplayName(theme);
     }
     return undefined;
-  }, [state.gameMode, state.lastConfig?.dailySeed]);
+  }, [state.gameMode, state.lastConfig?.dailySeed, state.lastConfig?.curatedThemeId]);
 
   const { setNodeRef: setBottomBarRef } = useDroppable({ id: 'bottom-bar-zone' });
 

@@ -11,10 +11,11 @@ guess wrong.
 ```
 index.tsx                      # BrowserRouter + 15 routes
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Tab pager (Daily/Custom/Stats/Achievements/Timeline)
+│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Achievements/Timeline)
 │   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   └── panels/                 # StatsPanel, AchievementsPanel, TimelinePanel
+│   │   ├── panels/                 # ArchivePanel, StatsPanel, AchievementsPanel, TimelinePanel
+│   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
 │       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
@@ -58,6 +59,8 @@ comment worth reading before you change it:
 | `challengeCode`   | Positional bit-packed share links; bit 0 is a reserved legacy mode bit       |
 | `cloudinaryImage` | Transform rung ladder with hard cost rules — see cloudinary-cost-controls.md |
 | `statsStorage`    | Persisted lifetime stats, achievements, and a legacy-shape fold on read      |
+| `themeReplay`     | Archive replays: why they are `suddenDeath`, reshuffled, and never dated     |
+| `themeBests`      | Per-curated-theme personal bests (`when-theme-bests`)                        |
 
 Everything else (`gameLogic`, `placementLogic`, `eventLoader`, `playerStorage`,
 `dailyPool`, `dailyConfig`, `dailyTheme`, `share`, `streakFeedback`, `deviceFingerprint`,

@@ -27,7 +27,12 @@ import {
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
 import { buildDailyDeck } from '../utils/dailyConfig';
-import { areCuratedThemesLoaded, loadCuratedThemes } from '../utils/curatedThemes';
+import {
+  areCuratedThemesLoaded,
+  getCuratedThemeById,
+  loadCuratedThemes,
+} from '../utils/curatedThemes';
+import { buildThemeReplayDeck, withFreshReplaySeed } from '../utils/themeReplay';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -140,12 +145,28 @@ function useSaveDailyResult(state: WhenGameState) {
  * break — the theme's pool is an explicit event list no category filter can express, so the
  * filter chain would hand back the whole catalogue.
  *
+ * An Archive replay names its theme on the config and is dealt from that theme's pool with
+ * a fresh seed (`themeReplay.ts`). A theme the calendar no longer carries yields an empty
+ * deck, so `startGame`'s size guard refuses it loudly rather than dealing the catalogue.
+ *
  * Custom and challenge games keep the filter chain; they have no date to key a pool on.
  */
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
-  const { mode, dailySeed, selectedDifficulties, selectedCategories, selectedEras } = config;
+  const {
+    mode,
+    dailySeed,
+    curatedThemeId,
+    selectedDifficulties,
+    selectedCategories,
+    selectedEras,
+  } = config;
 
   if (mode === 'daily' && dailySeed) return buildDailyDeck(allEvents, dailySeed);
+
+  if (curatedThemeId) {
+    const theme = getCuratedThemeById(curatedThemeId);
+    return theme ? buildThemeReplayDeck(allEvents, theme, config.challengeSeed) : [];
+  }
 
   const filtered = filterByEra(
     filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
@@ -216,7 +237,8 @@ export function useWhenGame(): UseWhenGameReturn {
         // never changed, with nothing to explain it.
         console.error(
           `Not enough events to start the game: deck has ${shuffled.length}, need ${minRequired}` +
-            (isDaily ? ` (daily ${dailySeed})` : '')
+            (isDaily ? ` (daily ${dailySeed})` : '') +
+            (config.curatedThemeId ? ` (theme ${config.curatedThemeId})` : '')
         );
         return;
       }
@@ -463,10 +485,11 @@ export function useWhenGame(): UseWhenGameReturn {
     setState({ ...initialState, phase: 'modeSelect' });
   }, []);
 
+  // A replay restarts with a new seed so Restart reshuffles like a fresh play; every other
+  // config restarts as-is (a challenge game is *meant* to repeat its order).
   const restartGame = useCallback(() => {
-    if (state.lastConfig) {
-      startGame(state.lastConfig);
-    }
+    const config = state.lastConfig;
+    if (config) startGame(config.curatedThemeId ? withFreshReplaySeed(config) : config);
   }, [state.lastConfig, startGame]);
 
   const openModal = useCallback((event: HistoricalEvent) => {

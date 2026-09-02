@@ -1,13 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, BarChart3, Trophy, Hourglass, Settings } from 'lucide-react';
+import {
+  Home,
+  Menu as MenuIcon,
+  BarChart3,
+  Trophy,
+  Hourglass,
+  Settings,
+  Archive,
+} from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
 import { GameMode } from '../types';
+
+/**
+ * Every nav destination, in the order the home pager shows them. Also the home pager's tab
+ * key type, so the two cannot drift apart.
+ */
+export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'achievements' | 'timeline';
 
 interface TopBarProps {
   showHome?: boolean;
@@ -18,13 +32,13 @@ interface TopBarProps {
   /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
-  activeNav?: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
+  activeNav?: NavDest;
   /**
    * When provided, nav buttons call this with the destination key instead of routing — the
-   * home screen uses it to scroll its unified pager. A Custom (cog) button is shown only in
-   * this mode (Custom has no standalone route). When absent, buttons navigate to routes.
+   * home screen uses it to scroll its unified pager. The Archive and Custom buttons are shown
+   * only in this mode (neither has a standalone route). When absent, buttons navigate to routes.
    */
-  onNavClick?: (key: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline') => void;
+  onNavClick?: (key: NavDest) => void;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -78,7 +92,6 @@ const TopBar: React.FC<TopBarProps> = ({
     active:scale-95
   `;
 
-  type NavDest = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
   const navBtn = (key: NavDest) => {
     if (activeNav !== key) return buttonClass;
     return key === 'custom' ? activeButtonClassCustom : activeButtonClass;
@@ -87,8 +100,9 @@ const TopBar: React.FC<TopBarProps> = ({
   const ariaCurrent = (key: NavDest): 'page' | undefined =>
     activeNav === key ? 'page' : undefined;
 
-  // One-time "new" dots on the Stats/Achievements/Timeline buttons until first visited.
+  // One-time "new" dots on the Archive/Stats/Achievements/Timeline buttons until first visited.
   const [seenNav, setSeenNav] = useState(() => ({
+    archive: hasSeenNav('archive'),
     stats: hasSeenNav('stats'),
     achievements: hasSeenNav('achievements'),
     timeline: hasSeenNav('timeline'),
@@ -99,6 +113,8 @@ const TopBar: React.FC<TopBarProps> = ({
     markNavSeen(key);
     setSeenNav((prev) => {
       switch (key) {
+        case 'archive':
+          return { ...prev, archive: true };
         case 'stats':
           return { ...prev, stats: true };
         case 'achievements':
@@ -110,6 +126,8 @@ const TopBar: React.FC<TopBarProps> = ({
   };
   const isSeen = (key: NavKey) => {
     switch (key) {
+      case 'archive':
+        return seenNav.archive;
       case 'stats':
         return seenNav.stats;
       case 'achievements':
@@ -136,21 +154,30 @@ const TopBar: React.FC<TopBarProps> = ({
       onNavClick(key);
     } else if (key === 'home') {
       onHomeClick?.();
-    } else if (key !== 'custom') {
-      // Custom has no standalone route — its button only renders in pager mode.
+    } else if (key !== 'custom' && key !== 'archive') {
+      // Custom and Archive have no standalone route — their buttons only render in pager mode.
       navigate(`/${key}`);
     }
   };
 
-  // Gold "new" dot; the bg ring separates it from the button edge.
-  const newDot = (
-    <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
-  );
+  // Gold "new" dot; the bg ring separates it from the button edge. Rendered through a helper
+  // rather than inline `&&`s: with seven nav buttons the component sits at ESLint's
+  // complexity ceiling of 15.
+  const newDotFor = (key: NavKey) =>
+    isSeen(key) ? null : (
+      <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
+    );
+
+  // Custom and Archive have no standalone route, so their buttons exist only in pager mode.
+  const showPagerOnlyButtons = showStatsAchievements && !!onNavClick;
 
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
-        <div className="flex items-center justify-between gap-2 p-2">
+        {/* Tighter horizontal padding and gaps below `sm`: the home screen's seven nav buttons
+            (Home · Custom · Archive · Stats · Achievements · Timeline · Menu, 38px each) only
+            fit a 320px phone at 6px gaps. */}
+        <div className="flex items-center justify-between gap-2 px-1.5 py-2 sm:px-2">
           {/* Game Title */}
           {showTitle ? (
             <div className="flex items-start gap-2 pl-2">
@@ -192,9 +219,9 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Navigation only: Home · Stats · Achievements · Timeline · Menu.
+          {/* Navigation only: Home · Custom · Archive · Stats · Achievements · Timeline · Menu.
               The current destination is rendered in the active (accent-filled) style. */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2">
             {/* Home Button - a permanent nav destination; active when on the home page */}
             {showHome && onHomeClick && (
               <button
@@ -208,7 +235,7 @@ const TopBar: React.FC<TopBarProps> = ({
             )}
 
             {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
-            {showStatsAchievements && onNavClick && (
+            {showPagerOnlyButtons && (
               <button
                 onClick={() => handleNav('custom')}
                 className={navBtn('custom')}
@@ -216,6 +243,19 @@ const TopBar: React.FC<TopBarProps> = ({
                 aria-current={ariaCurrent('custom')}
               >
                 <Settings className={navIcon('custom')} />
+              </button>
+            )}
+
+            {/* Archive — pager mode only; jumps to the past-decks tab (no standalone route) */}
+            {showPagerOnlyButtons && (
+              <button
+                onClick={() => handleNav('archive')}
+                className={navBtn('archive')}
+                aria-label="Past decks"
+                aria-current={ariaCurrent('archive')}
+              >
+                <Archive className={navIcon('archive')} />
+                {newDotFor('archive')}
               </button>
             )}
 
@@ -229,7 +269,7 @@ const TopBar: React.FC<TopBarProps> = ({
                   aria-current={ariaCurrent('stats')}
                 >
                   <BarChart3 className={navIcon('stats')} />
-                  {!seenNav.stats && newDot}
+                  {newDotFor('stats')}
                 </button>
                 <button
                   onClick={() => handleNav('achievements')}
@@ -238,7 +278,7 @@ const TopBar: React.FC<TopBarProps> = ({
                   aria-current={ariaCurrent('achievements')}
                 >
                   <Trophy className={navIcon('achievements')} />
-                  {!seenNav.achievements && newDot}
+                  {newDotFor('achievements')}
                 </button>
                 <button
                   onClick={() => handleNav('timeline')}
@@ -247,7 +287,7 @@ const TopBar: React.FC<TopBarProps> = ({
                   aria-current={ariaCurrent('timeline')}
                 >
                   <Hourglass className={navIcon('timeline')} />
-                  {!seenNav.timeline && newDot}
+                  {newDotFor('timeline')}
                 </button>
               </>
             )}

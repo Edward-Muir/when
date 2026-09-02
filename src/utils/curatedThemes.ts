@@ -20,6 +20,7 @@ export type { CuratedTheme };
 const CALENDAR_URL = '/api/themes';
 
 let byDate = new Map<string, CuratedTheme>();
+let themes: CuratedTheme[] = [];
 let loaded = false;
 let inflight: Promise<void> | null = null;
 
@@ -49,7 +50,9 @@ export async function loadCuratedThemes(options: { force?: boolean } = {}): Prom
     try {
       const response = await fetch(CALENDAR_URL);
       if (!response.ok) throw new Error(`themes ${response.status}`);
-      byDate = indexCalendar((await response.json()) as ThemeCalendar);
+      const calendar = (await response.json()) as ThemeCalendar;
+      byDate = indexCalendar(calendar);
+      themes = calendar.themes ?? [];
       loaded = true;
     } catch (error) {
       console.warn('Failed to load curated themes; today falls back to a category theme', error);
@@ -72,13 +75,28 @@ export function getCuratedThemeForDate(dateString: string): CuratedTheme | undef
   return byDate.get(dateString);
 }
 
+/**
+ * Every theme in the calendar, past and future, in stored order. The Archive tab lists the
+ * ones whose date has passed; `themeReplay.ts` does that filtering so this stays a plain
+ * accessor over the one fetched document.
+ */
+export function listCuratedThemes(): CuratedTheme[] {
+  return themes;
+}
+
+/** A theme by its id, for replaying one outside its scheduled date. */
+export function getCuratedThemeById(id: string): CuratedTheme | undefined {
+  return themes.find((theme) => theme.id === id);
+}
+
 /** Whether the calendar has been fetched. Gates the game's warm-start path. */
 export function areCuratedThemesLoaded(): boolean {
   return loaded;
 }
 
 /** Test seam. */
-export function __setCuratedThemesForTest(themes: CuratedTheme[] | null): void {
-  byDate = themes ? indexCalendar({ version: 0, themes }) : new Map();
-  loaded = themes !== null;
+export function __setCuratedThemesForTest(next: CuratedTheme[] | null): void {
+  byDate = next ? indexCalendar({ version: 0, themes: next }) : new Map();
+  themes = next ?? [];
+  loaded = next !== null;
 }

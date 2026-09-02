@@ -2,6 +2,7 @@ import { HistoricalEvent, DEFAULT_DIFFICULTIES } from '../types';
 import { DailyTheme, getDailyTheme, getThemedCategories, getThemedEras } from './dailyTheme';
 import { filterByDifficulty, filterByCategory, filterByEra } from './eventLoader';
 import type { BuildRampedDeckOptions } from './deckBuilder';
+import type { CuratedTheme } from './curatedThemes';
 
 /**
  * The events today's daily is allowed to draw from.
@@ -31,43 +32,59 @@ export function buildDailyPool(
   allEvents: HistoricalEvent[],
   dateString: string
 ): HistoricalEvent[] {
-  if (cachedFor !== allEvents) {
-    poolCache.clear();
-    cachedFor = allEvents;
-  }
-
   const theme = getDailyTheme(dateString);
+  if (theme.type === 'curated') return buildCuratedPool(allEvents, theme.curated);
+
   const key = poolCacheKey(theme);
-  const cached = poolCache.get(key);
+  const cached = readPoolCache(allEvents, key);
   if (cached) return cached;
 
-  // A curated theme names its events outright, so there is nothing to filter by. Slugs that
-  // do not resolve just drop out: `allEvents` is already deduped and restricted to events
-  // with custom art, so an unillustrated card is invisible here exactly as it is everywhere
-  // else. scripts/publish-theme.js is what stops an unresolvable slug being stored at all.
-  const pool =
-    theme.type === 'curated'
-      ? curatedPool(allEvents, theme.curated.eventNames)
-      : filterByEra(
-          filterByCategory(
-            filterByDifficulty(allEvents, [...DEFAULT_DIFFICULTIES]),
-            getThemedCategories(theme)
-          ),
-          getThemedEras(theme)
-        );
+  const pool = filterByEra(
+    filterByCategory(
+      filterByDifficulty(allEvents, [...DEFAULT_DIFFICULTIES]),
+      getThemedCategories(theme)
+    ),
+    getThemedEras(theme)
+  );
 
   poolCache.set(key, pool);
   return pool;
 }
 
-function poolCacheKey(theme: DailyTheme): string {
-  if (theme.type === 'curated') return `curated:${theme.curated.id}`;
-  return theme.type === 'all' ? 'all' : `category:${theme.value}`;
+/**
+ * The events a curated theme resolves to, memoised under the same `curated:<id>` key the
+ * daily uses, so the day it ran and an Archive replay of it share one array identity (which
+ * is also what the deck builder's partition cache keys on).
+ *
+ * A curated theme names its events outright, so there is nothing to filter by. Slugs that do
+ * not resolve just drop out: `allEvents` is already deduped and restricted to events with
+ * custom art, so an unillustrated card is invisible here exactly as it is everywhere else.
+ * scripts/publish-theme.js is what stops an unresolvable slug being stored at all.
+ */
+export function buildCuratedPool(
+  allEvents: HistoricalEvent[],
+  theme: CuratedTheme
+): HistoricalEvent[] {
+  const key = `curated:${theme.id}`;
+  const cached = readPoolCache(allEvents, key);
+  if (cached) return cached;
+
+  const wanted = new Set(theme.eventNames);
+  const pool = allEvents.filter((event) => wanted.has(event.name));
+  poolCache.set(key, pool);
+  return pool;
 }
 
-function curatedPool(allEvents: HistoricalEvent[], eventNames: string[]): HistoricalEvent[] {
-  const wanted = new Set(eventNames);
-  return allEvents.filter((event) => wanted.has(event.name));
+function readPoolCache(allEvents: HistoricalEvent[], key: string): HistoricalEvent[] | undefined {
+  if (cachedFor !== allEvents) {
+    poolCache.clear();
+    cachedFor = allEvents;
+  }
+  return poolCache.get(key);
+}
+
+function poolCacheKey(theme: DailyTheme): string {
+  return theme.type === 'all' ? 'all' : `category:${theme.value}`;
 }
 
 /**

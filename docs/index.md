@@ -37,7 +37,7 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
   push to full image coverage
-- [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, Custom
+- [ui-redesign/](ui-redesign/index.md) — gameplay layout, the six-tab home pager, Custom
   settings, and the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
   ship instantly), safe-area utilities, daily reminders
@@ -51,8 +51,8 @@ original per-session write-ups if you need the blow-by-blow.
 - [card-reports/](card-reports/index.md) — player-reported card problems and the key-gated
   maintainer page
 - [curated-themes/](curated-themes/index.md) — hand-authored daily themes: where the calendar
-  lives, how to publish one, the date rule that lets you schedule tomorrow, and the two
-  deck-builder escape hatches thin pools need
+  lives, how to publish one, the date rule that lets you schedule tomorrow, the two
+  deck-builder escape hatches thin pools need, and the Archive tab that replays them
 - [driving-the-app-with-playwright.md](driving-the-app-with-playwright.md) — playing the app
   end-to-end from a script, including the drag-and-drop recipe
 - [events-images/event-editor-tool.md](events-images/event-editor-tool.md) — the standalone

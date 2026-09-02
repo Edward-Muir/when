@@ -29,11 +29,21 @@ the defaults.
 | `when-collection`     | `placedEventIds`, de-duped on read and write                                                       |
 | `when-daily-cadence`  | daily streaks, `playedDates`, best/sum/histogram of daily correct counts                           |
 | `when-achievements`   | `unlocked: { [id]: ISODate }`                                                                      |
-| `when-custom-stats`   | **effectively unused** — accessors exist, the recorder never writes it                             |
+| `when-theme-bests`    | per-curated-theme best `correctCount`, cleared/perfect flags, play count (`themeBests.ts`)         |
 
 `recordGameResult` splits on **daily vs non-daily only**, via `lastConfig.dailySeed`. Older plan
 documents describe a third "default" bucket for a plain game started from a menu; that path has
-never existed — the UX is a Daily/Custom pager and every non-daily start carries a challenge code.
+never existed — every non-daily start is a Custom game, either from the Custom page or a
+challenge code (both carry a code) or an Archive replay of a curated theme (which carries
+`curatedThemeId` instead, since a code cannot encode a hand-picked pool). Replays land in the
+`suddenDeath` buckets like any Custom game.
+
+**`when-theme-bests` is the one per-thing record**, and it is keyed by theme id rather than
+derived because nothing else stores a per-game score: the daily keeps a single result record,
+overwritten daily, and the cadence keeps dates. It is written by `useGameStatsRecorder` for any
+game `getCuratedThemeIdForConfig` resolves — the daily on a curated day and every Archive
+replay — so the day's score is the first "best" a replay tries to beat. Curated days played
+before it existed are not recoverable; accepted.
 
 `getLifetimeStats()` also runs a one-time idempotent fold of retired keys (a legacy high score,
 and the removed `freeplay` buckets). Copy that pattern for future shape changes rather than
@@ -50,6 +60,9 @@ on a share step — see `src/hooks/useEndOfGameSequence.ts` and
 - **Only fire when the previous record was `> 0`**, so a first-ever game and trivial "1 day"
   cases never celebrate.
 - Daily and custom records are tracked separately, and a game can only fire its own side's kinds.
+  The exception is `bestThemeScore`, which sits outside the split: a curated theme's record is
+  beaten by the daily on its day or by an Archive replay, so `detectMilestones` takes the prior
+  record (`prev.themeBest`) only for games that belong to a theme.
 
 **The detection trick matters:** `recordGameResult` overwrites records in place via `Math.max`,
 so after it runs you cannot tell what the game beat. The recorder **snapshots the records

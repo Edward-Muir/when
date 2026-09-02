@@ -177,6 +177,13 @@ export interface GameConfig {
   selectedEras: Era[];
   dailySeed?: string;
 
+  /**
+   * An Archive replay of a curated theme: the deck is dealt from that theme's pool only. The
+   * mode stays `suddenDeath` — a replay is a custom game with a hand-picked pool, and it must
+   * not touch the daily's result, streak or leaderboard. See src/utils/themeReplay.ts.
+   */
+  curatedThemeId?: string;
+
   // Challenge mode (shareable seeded games)
   challengeSeed?: string; // Seed string for deterministic shuffle (the challenge code itself)
   challengeCode?: string; // The 3-word challenge code for display/sharing

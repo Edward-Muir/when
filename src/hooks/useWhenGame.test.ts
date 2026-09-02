@@ -5,6 +5,9 @@ import { HistoricalEvent } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 
 import * as gameLogic from '../utils/gameLogic';
+import { __setCuratedThemesForTest } from '../utils/curatedThemes';
+import { clearDailyPoolCache } from '../utils/dailyPool';
+import { buildThemeReplayConfig } from '../utils/themeReplay';
 
 // Mock only loadAllEvents (the network call), keep filter functions real
 jest.mock('../utils/eventLoader', () => {
@@ -441,5 +444,84 @@ describe('useWhenGame - Sudden Death Mode', () => {
       expect(result.current.state.players[0].hand.length).toBe(2);
       expect(result.current.state.players[1].hand.length).toBe(2);
     });
+  });
+});
+
+describe('useWhenGame - Archive replay', () => {
+  const catalogue = createTestEventDeck(40);
+  const theme = {
+    id: 'test-theme',
+    name: 'Test Theme',
+    // Every other card, so a deck drawn from the whole catalogue is easy to tell apart.
+    eventNames: catalogue.filter((_, i) => i % 2 === 0).map((e) => e.name),
+    dates: ['2030-01-01'],
+  };
+
+  beforeEach(() => {
+    jest.useFakeTimers();
+    mockedLoadAllEvents.mockResolvedValue(catalogue);
+    __setCuratedThemesForTest([theme]);
+    clearDailyPoolCache();
+  });
+
+  afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
+    jest.clearAllMocks();
+    __setCuratedThemesForTest(null);
+    clearDailyPoolCache();
+  });
+
+  async function setup() {
+    const { result } = renderHook(() => useWhenGame());
+    await act(async () => {
+      await Promise.resolve();
+    });
+    return result;
+  }
+
+  it('deals a five-card hand from the theme only, as a sudden-death game', async () => {
+    const result = await setup();
+    act(() => {
+      result.current.startGame(buildThemeReplayConfig(theme));
+    });
+
+    const { state } = result.current;
+    expect(state.phase).toBe('transitioning');
+    expect(state.gameMode).toBe('suddenDeath');
+    expect(state.players[0].hand).toHaveLength(5);
+
+    const dealt = [...state.timeline, ...state.players[0].hand, ...state.deck].map((e) => e.name);
+    expect(dealt).toHaveLength(theme.eventNames.length);
+    for (const name of dealt) expect(theme.eventNames).toContain(name);
+  });
+
+  it('refuses a theme the calendar no longer carries', async () => {
+    const result = await setup();
+    const error = jest.spyOn(console, 'error').mockImplementation(() => {});
+    act(() => {
+      result.current.startGame({ ...buildThemeReplayConfig(theme), curatedThemeId: 'gone' });
+    });
+    expect(result.current.state.phase).toBe('modeSelect');
+    expect(error).toHaveBeenCalledWith(expect.stringContaining('theme gone'));
+  });
+
+  it('restarts a replay on a fresh seed', async () => {
+    const result = await setup();
+    act(() => {
+      result.current.startGame(buildThemeReplayConfig(theme));
+    });
+    const firstSeed = result.current.state.lastConfig?.challengeSeed;
+    act(() => {
+      result.current.restartGame();
+    });
+    expect(result.current.state.lastConfig?.curatedThemeId).toBe('test-theme');
+    // Seeds are random ints, so allow a coincidental repeat by restarting again.
+    if (result.current.state.lastConfig?.challengeSeed === firstSeed) {
+      act(() => {
+        result.current.restartGame();
+      });
+    }
+    expect(result.current.state.lastConfig?.challengeSeed).not.toBe(firstSeed);
   });
 });

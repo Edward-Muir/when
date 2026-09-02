@@ -130,9 +130,10 @@ export function markModePlayed(mode: GameMode): void {
 // --- Nav "new" Dot Storage ---
 
 /** Top-bar nav destinations that get a one-time "new" dot until first clicked. */
-export type NavKey = 'stats' | 'achievements' | 'timeline';
+export type NavKey = 'archive' | 'stats' | 'achievements' | 'timeline';
 
 interface NavSeen {
+  archive?: boolean;
   stats?: boolean;
   achievements?: boolean;
   timeline?: boolean;
@@ -143,6 +144,8 @@ const NAV_SEEN_KEY = 'when-nav-seen';
 // Switch-based access (mirrors getModePlayed/setModePlayed) to avoid dynamic key indexing.
 function getNavSeen(data: NavSeen, key: NavKey): boolean {
   switch (key) {
+    case 'archive':
+      return data.archive === true;
     case 'stats':
       return data.stats === true;
     case 'achievements':
@@ -154,6 +157,8 @@ function getNavSeen(data: NavSeen, key: NavKey): boolean {
 
 function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
   switch (key) {
+    case 'archive':
+      return { ...data, archive: true };
     case 'stats':
       return { ...data, stats: true };
     case 'achievements':
@@ -165,6 +170,8 @@ function setNavSeen(data: NavSeen, key: NavKey): NavSeen {
 
 function clearNavSeen(data: NavSeen, key: NavKey): NavSeen {
   switch (key) {
+    case 'archive':
+      return { ...data, archive: false };
     case 'stats':
       return { ...data, stats: false };
     case 'achievements':

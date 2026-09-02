@@ -448,6 +448,27 @@ describe('detectMilestones', () => {
     expect(milestones).toContainEqual({ kind: 'longestTimelineDaily', value: 7, previous: 5 });
   });
 
+  it('fires the theme best when a curated run beats the record it was handed', () => {
+    const game = makeGameState({ gameMode: 'suddenDeath', placedNames: ['a', 'b', 'c'] });
+    const prev = { lifetime: getLifetimeStats(), cadence: getDailyCadence(), themeBest: 2 };
+    recordGameResult(game, NO_EVENTS);
+    expect(detectMilestones(game, prev)).toContainEqual({
+      kind: 'bestThemeScore',
+      value: 3,
+      previous: 2,
+    });
+  });
+
+  it('never fires the theme best on a first run or a game with no theme', () => {
+    const game = makeGameState({ gameMode: 'suddenDeath', placedNames: ['a', 'b', 'c'] });
+    const first = { lifetime: getLifetimeStats(), cadence: getDailyCadence(), themeBest: 0 };
+    expect(detectMilestones(game, first).find((m) => m.kind === 'bestThemeScore')).toBeUndefined();
+    const noTheme = { lifetime: getLifetimeStats(), cadence: getDailyCadence() };
+    expect(
+      detectMilestones(game, noTheme).find((m) => m.kind === 'bestThemeScore')
+    ).toBeUndefined();
+  });
+
   it('fires longest custom timeline against the non-daily bucket', () => {
     seedLifetime({ longestTimeline: { daily: 99, suddenDeath: 4 } });
     const milestones = play(

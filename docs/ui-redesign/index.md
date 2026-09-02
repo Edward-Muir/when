@@ -22,11 +22,23 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   Playwright/puppeteer selectors depend on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
 
-## Home is a five-tab pager (2026-06-28)
+## Home is a six-tab pager (2026-06-28, Archive added 2026-09)
 
-`Daily · Custom · Stats · Achievements · Timeline`, driven by **both** swipe and the TopBar
-buttons. It replaced two competing navigation models (a two-page pager plus TopBar buttons
-that `navigate()`d to separate full-page routes).
+`Daily · Archive · Custom · Stats · Achievements · Timeline`, driven by **both** swipe and the
+TopBar buttons. It replaced two competing navigation models (a two-page pager plus TopBar
+buttons that `navigate()`d to separate full-page routes).
+
+- **The order lives in one place**: the `TABS` array in `ModeSelect.tsx`. Labels, indicator
+  colours, the index↔key maps and the idle pre-mount set are all derived from it, and the
+  `ModePager` children must be rendered in that order. It used to be four hand-maintained
+  mirrors of the same list; inserting Archive at index 1 is what collapsed them.
+- **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
+  timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
+  Like Custom it has no standalone route, so its TopBar button only renders in pager mode.
+- **Seven TopBar buttons fit a 320px phone only at 6px gaps**: the nav row is `gap-1.5 sm:gap-2`
+  and the bar `px-1.5 sm:px-2` (7 × 38px + 6 × 6px + 12px = 302px). The in-game bar has fewer
+  buttons and is unaffected. `TopBar` sits at ESLint's complexity ceiling; the "new" dots go
+  through a helper rather than inline `&&`s for that reason.
 
 - **The standalone routes were kept** for deep-linking. Page bodies were extracted into
   content-only panel components (`src/components/panels/`) shared by both the routes and the
@@ -39,7 +51,7 @@ that `navigate()`d to separate full-page routes).
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict** —
   this was an upfront concern that turned out to be unfounded. Don't re-litigate it.
 - Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
-  tab is `accent` (gold).
+  tab, Archive included, is `accent` (gold).
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 

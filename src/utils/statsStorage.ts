@@ -408,7 +408,8 @@ export type MilestoneKind =
   | 'longestTimelineCustom'
   | 'longestStreakDaily'
   | 'longestStreakCustom'
-  | 'longestDailyRun';
+  | 'longestDailyRun'
+  | 'bestThemeScore';
 
 /** A new personal best set by the just-finished game. `previous` is the record it beat. */
 export interface GameMilestone {
@@ -425,10 +426,14 @@ export interface GameMilestone {
  * Daily vs custom are tracked separately: daily games can only fire the *Daily / DailyRun kinds,
  * custom (non-daily) games only the *Custom kinds. The daily-run value is read post-record from
  * the cadence (it depends on date gaps, so it isn't derivable from `state` alone).
+ *
+ * `bestThemeScore` sits outside that split: a curated theme's record (`themeBests.ts`) is
+ * written by the daily on the theme's day and by every Archive replay, so either side can
+ * beat it. `prev.themeBest` is the record before this game, supplied only for such games.
  */
 export function detectMilestones(
   state: WhenGameState,
-  prev: { lifetime: LifetimeStats; cadence: DailyCadence }
+  prev: { lifetime: LifetimeStats; cadence: DailyCadence; themeBest?: number }
 ): GameMilestone[] {
   const isDaily = !!state.lastConfig?.dailySeed;
   const len = state.timeline.length;
@@ -447,6 +452,10 @@ export function detectMilestones(
   } else {
     beat('longestTimelineCustom', len, prev.lifetime.longestTimeline.suddenDeath);
     beat('longestStreakCustom', streak, prev.lifetime.bestCustomStreakEver);
+  }
+
+  if (prev.themeBest !== undefined) {
+    beat('bestThemeScore', state.placementHistory.filter(Boolean).length, prev.themeBest);
   }
 
   return milestones;

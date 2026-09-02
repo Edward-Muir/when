@@ -5,7 +5,12 @@ import { buildDailyPool, clearDailyPoolCache, getDailyBuildOptions } from './dai
 import { buildDailyDeck } from './dailyConfig';
 import { getRecentDailyCardNames, clearRecencyCache } from './dailyRecency';
 import { RAMP_WINDOW } from './deckBuilder';
-import { __setCuratedThemesForTest, CuratedTheme } from './curatedThemes';
+import {
+  __setCuratedThemesForTest,
+  CuratedTheme,
+  getCuratedThemeById,
+  listCuratedThemes,
+} from './curatedThemes';
 import { isCloudinaryImage } from './cloudinaryImage';
 import { ALL_CATEGORIES, HistoricalEvent } from '../types';
 
@@ -64,6 +69,15 @@ beforeEach(() => {
 describe('curated themes', () => {
   it('has a pool big enough to be worth testing', () => {
     expect(theme.eventNames.length).toBeGreaterThanOrEqual(16);
+  });
+
+  it('lists every stored theme and finds one by id, for the Archive', () => {
+    withCuratedTheme(() => {
+      expect(listCuratedThemes()).toEqual([theme]);
+      expect(getCuratedThemeById('test-theme')).toBe(theme);
+      expect(getCuratedThemeById('nope')).toBeUndefined();
+    });
+    expect(listCuratedThemes()).toEqual([]);
   });
 
   it('names the curated theme on its scheduled date', () => {
