@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.18.0](https://github.com/Edward-Muir/when/compare/v1.17.1...v1.18.0) (2026-09-02)
+
+
+### Features
+
+* Archive tab, rebuilt Stats page, discoverable Achievements and My Timeline ([#54](https://github.com/Edward-Muir/when/issues/54)) ([2b51ea3](https://github.com/Edward-Muir/when/commit/2b51ea36de071c8d53d8a0c88c2866ab561177c7))
+
 ## [1.17.1](https://github.com/Edward-Muir/when/compare/v1.17.0...v1.17.1) (2026-09-01)
 
 
