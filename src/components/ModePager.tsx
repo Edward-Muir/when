@@ -1,4 +1,11 @@
-import React, { useCallback, useEffect, useImperativeHandle, useRef, useState } from 'react';
+import React, {
+  useCallback,
+  useEffect,
+  useImperativeHandle,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from 'react';
 
 interface ModePagerProps {
   /** Short labels for each page, shown in the indicator (e.g. ['Daily', 'Custom']). */
@@ -14,6 +21,8 @@ interface ModePagerProps {
   activeColors?: { dot: string; text: string }[];
   /** Reports the active page index back to the parent as the scroll position changes. */
   onIndexChange?: (index: number) => void;
+  /** Page to open on, instantly, before first paint. Defaults to the first. */
+  initialIndex?: number;
 }
 
 /** Imperative handle: lets a parent (the top-nav buttons) scroll the pager to a page. */
@@ -31,11 +40,11 @@ export interface ModePagerHandle {
  * directly, so the highlight only ever tracks the scroll — no instant-then-walk flashing.
  */
 const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function ModePager(
-  { labels, children, hintKey, activeColors, onIndexChange },
+  { labels, children, hintKey, activeColors, onIndexChange, initialIndex = 0 },
   ref
 ) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(initialIndex);
   const pages = React.Children.toArray(children);
   const colors = activeColors ?? labels.map(() => ({ dot: 'bg-accent', text: 'text-accent' }));
   // activeIndex is clamped to a valid page index in handleScroll.
@@ -71,9 +80,25 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
   // highlight, so the active tab only changes as the scroll position crosses each page.
   useImperativeHandle(ref, () => ({ scrollToPage: goToPage }), [goToPage]);
 
-  // One-time first-launch hint: nudge slightly right, then snap back.
+  // Open on the requested page before first paint: a direct scrollLeft write with smooth
+  // scrolling switched off for the moment, so a deep link lands on its tab without a slide.
+  useLayoutEffect(() => {
+    const track = trackRef.current;
+    if (!track || initialIndex <= 0) return;
+    const panelWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
+    if (!panelWidth) return;
+    const smooth = track.style.scrollBehavior;
+    track.style.scrollBehavior = 'auto';
+    track.scrollLeft = Math.min(pages.length - 1, initialIndex) * panelWidth;
+    track.style.scrollBehavior = smooth;
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount only; later scrolls are the user's
+  }, []);
+
+  // One-time first-launch hint: nudge slightly right, then snap back. Not when the page
+  // opened on another tab — the nudge would drag it back toward Daily.
+  const openedOnFirstPage = initialIndex <= 0;
   useEffect(() => {
-    if (!hintKey) return;
+    if (!hintKey || !openedOnFirstPage) return;
     if (pages.length < 2) return;
     try {
       if (localStorage.getItem(hintKey)) return;
@@ -94,7 +119,7 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
       window.clearTimeout(nudge);
       window.clearTimeout(back);
     };
-  }, [hintKey, pages.length]);
+  }, [hintKey, pages.length, openedOnFirstPage]);
 
   return (
     <div className="flex flex-col flex-1 min-h-0">

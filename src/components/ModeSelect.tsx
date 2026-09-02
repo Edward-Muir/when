@@ -14,7 +14,7 @@ import {
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import CustomGameSettings from './CustomGameSettings';
-import TopBar, { NavDest } from './TopBar';
+import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
@@ -43,6 +43,8 @@ interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
+  /** The tab to open on: the one the URL names (`src/pages/Home.tsx`). */
+  initialTab?: NavDest;
 }
 
 const LoadingState: React.FC = () => (
@@ -181,7 +183,12 @@ const getDefaultHandSize = (count: number): number => {
   }
 };
 
-const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
+const ModeSelect: React.FC<ModeSelectProps> = ({
+  onStart,
+  isLoading = false,
+  allEvents,
+  initialTab = 'home',
+}) => {
   const navigate = useNavigate();
   // Check if daily has been played today. Deliberately re-read every render rather than memoized:
   // `updateDailyResultWithLeaderboard` writes the placing into this record after the board
@@ -194,15 +201,31 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
   const pagerRef = useRef<ModePagerHandle>(null);
-  const [activePage, setActivePage] = useState(0);
-  // Daily, Archive and Custom mount immediately; Stats waits for a visit or idle.
+  const [activePage, setActivePage] = useState(() => indexForTabKey(initialTab));
+  // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
+  // Stats otherwise waits for a visit or idle.
   const [visited, setVisited] = useState<Set<number>>(
-    () => new Set([indexForTabKey('home'), indexForTabKey('archive'), indexForTabKey('custom')])
+    () =>
+      new Set([
+        indexForTabKey('home'),
+        indexForTabKey('archive'),
+        indexForTabKey('custom'),
+        indexForTabKey(initialTab),
+      ])
   );
   useEffect(() => {
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
+  // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
+  // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
+  // the daily and challenge routes also mount this screen while they load, and must keep
+  // their own path.
+  useEffect(() => {
+    const path = pathForNav(tabKeyForIndex(activePage));
+    const current = window.location.pathname;
+    if (navForPath(current) !== null && current !== path) navigate(path, { replace: true });
+  }, [activePage, navigate]);
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
@@ -443,6 +466,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           labels={TABS.map((tab) => tab.label)}
           hintKey="when:modeSwipeHintSeen"
           onIndexChange={setActivePage}
+          initialIndex={indexForTabKey(initialTab)}
           activeColors={TABS.map((tab) => tab.color)}
         >
           {/* Daily page */}

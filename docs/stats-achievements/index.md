@@ -78,8 +78,8 @@ era and difficulty views are derived against the catalogue at read time, never s
 ## Stats page
 
 Rebuilt 2026-09 (`StatsPanel.tsx` + `src/components/stats/`, derivations in
-`statsDerived.ts`). Rendered by the `/stats` route and as the pager's Stats tab; both mounts
-own the scroll container, the panel never does. Layout, top to bottom: records card
+`statsDerived.ts`). Mounted only by the home pager's Stats tab, which `/stats` opens
+directly; the pager page owns the scroll container, the panel never does. Layout, top to bottom: records card
 (longest timeline, best streak, longest daily run, best daily score), "Your year" calendar,
 "Daily scores" bars, the achievements link tile, lifetime totals, the collection meter.
 

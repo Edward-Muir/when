@@ -15,6 +15,7 @@ import { getLocalDateString } from './utils/puzzleDate';
 import { hasPlayedToday } from './utils/playerStorage';
 import { ChallengeConfig, challengeConfigToGameConfig } from './utils/challengeCode';
 import ModeSelect from './components/ModeSelect';
+import { NavDest } from './components/TopBar';
 import Game from './components/Game';
 import GameStartTransition from './components/GameStartTransition';
 
@@ -30,6 +31,8 @@ import GameStartTransition from './components/GameStartTransition';
 export const DAILY_SPOILER_DEPTH = 15;
 
 interface AppProps {
+  /** Home-pager tab to open on; the URL names it (`src/pages/Home.tsx`). */
+  initialTab?: NavDest;
   autoStartDaily?: boolean;
   autoStartChallenge?: ChallengeConfig;
   challengeCode?: string;
@@ -37,6 +40,7 @@ interface AppProps {
 }
 
 function App({
+  initialTab,
   autoStartDaily = false,
   autoStartChallenge,
   challengeCode,
@@ -235,6 +239,7 @@ function App({
           onStart={handleStart}
           isLoading={state.phase === 'loading'}
           allEvents={allEvents}
+          initialTab={initialTab}
         />
       )}
       {state.phase === 'transitioning' && (

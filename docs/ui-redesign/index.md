@@ -34,7 +34,7 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
   mirrors of the same list; inserting Archive at index 1 is what collapsed them.
 - **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
   timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
-  Like Custom it has no standalone route, so its TopBar button only renders in pager mode.
+  Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
 - **Achievements and My Timeline are burger-menu items, not tabs** (2026-09). They were pager
   tabs from 2026-06 until the home screen got cluttered; now `Menu.tsx` links to their routes
   (`/achievements`, `/timeline`, both with `vercel.json` rewrites so a hard refresh works).
@@ -44,12 +44,19 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
   achievements dot on unlock). Dropping two tabs is also what took the TopBar back to five
   buttons at `gap-2` / `p-2` — seven only fit a 320px phone at 6px gaps.
 
-- **The standalone routes were kept** for deep-linking. Page bodies were extracted into
-  content-only panel components (`src/components/panels/`) shared by both the routes and the
-  pager, so there is no duplicated content.
+- **Every tab has a path, and the path opens the home screen on that tab** (2026-09):
+  `/`, `/archive`, `/custom`, `/stats` are one route (`/:tab?` → `pages/Home.tsx` →
+  `App initialTab` → `ModeSelect` → `ModePager initialIndex`), and `ModeSelect` replaces the
+  path as the player swipes so a refresh or a shared link comes back to the same tab. The
+  tab↔path map is `pathForNav` / `navForPath` in `TopBar.tsx`. There is no standalone Stats
+  page any more; the panel components in `src/components/panels/` are mounted by the pager.
+  Before this, Archive and Custom had no path, so their buttons rendered only in pager mode,
+  and once Achievements and My Timeline moved to the menu the route pages were left with a
+  lone Stats button — the regression this rule exists to prevent: **the top bar shows the
+  same four nav buttons on every non-game page.**
 - **`TopBar` stays backward-compatible** via an optional `onNavClick`: when provided the
-  buttons scroll the pager, when absent they route as before. That is why Game and the route
-  pages were unaffected.
+  buttons scroll the pager, when absent they navigate to the tab's path. The in-game bar
+  (`Game.tsx`) deliberately shows Home and Menu only.
 - **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first). Only Stats is
   gated today, but the mechanism stays: it was what kept the achievements grid and the full
   collection timeline off the home load while they were tabs.

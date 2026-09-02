@@ -23,7 +23,7 @@ index.tsx                      # BrowserRouter + 15 routes
 │       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
-│       ├── TopBar.tsx         # Home + nav; routes to /stats
+│       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
 │       │   ├── Menu.tsx                # Burger menu; links to /achievements, /timeline
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx

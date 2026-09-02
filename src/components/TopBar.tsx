@@ -16,20 +16,41 @@ import { GameMode } from '../types';
  */
 export type NavDest = 'home' | 'archive' | 'custom' | 'stats';
 
+/**
+ * The path that opens the home screen on each tab. Every tab is addressable, so the top bar
+ * can show the same four buttons on every page: in the pager they scroll, elsewhere they
+ * navigate here and the home screen opens on that tab (`src/pages/Home.tsx`).
+ */
+const NAV_PATHS: Record<NavDest, string> = {
+  home: '/',
+  archive: '/archive',
+  custom: '/custom',
+  stats: '/stats',
+};
+
+// eslint-disable-next-line security/detect-object-injection -- key is the NavDest union
+export const pathForNav = (key: NavDest): string => NAV_PATHS[key];
+
+/** The tab a path names, or null for any other path. */
+export function navForPath(pathname: string): NavDest | null {
+  const entry = Object.entries(NAV_PATHS).find(([, path]) => path === pathname);
+  return entry ? (entry[0] as NavDest) : null;
+}
+
 interface TopBarProps {
   showHome?: boolean;
   showTitle?: boolean;
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
   dailyTheme?: string;
-  /** Show the Stats button (plus Archive and Custom in pager mode). */
+  /** Show the Archive, Custom and Stats buttons. */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
   activeNav?: NavDest;
   /**
    * When provided, nav buttons call this with the destination key instead of routing — the
-   * home screen uses it to scroll its unified pager. The Archive and Custom buttons are shown
-   * only in this mode (neither has a standalone route). When absent, buttons navigate to routes.
+   * home screen uses it to scroll its unified pager. When absent, buttons navigate to the
+   * tab's path, which opens the home screen on that tab.
    */
   onNavClick?: (key: NavDest) => void;
 }
@@ -148,9 +169,8 @@ const TopBar: React.FC<TopBarProps> = ({
       onNavClick(key);
     } else if (key === 'home') {
       onHomeClick?.();
-    } else if (key === 'stats') {
-      // Custom and Archive have no standalone route — their buttons only render in pager mode.
-      navigate('/stats');
+    } else {
+      navigate(pathForNav(key));
     }
   };
 
@@ -164,9 +184,6 @@ const TopBar: React.FC<TopBarProps> = ({
   // inside the menu say which. `markSeen` is passed down so a tap clears both in lockstep.
   const menuDots = { achievements: !isSeen('achievements'), timeline: !isSeen('timeline') };
   const menuHasNew = menuDots.achievements || menuDots.timeline;
-
-  // Custom and Archive have no standalone route, so their buttons exist only in pager mode.
-  const showPagerOnlyButtons = showStatsAchievements && !!onNavClick;
 
   return (
     <>
@@ -228,8 +245,8 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Archive — pager mode only; jumps to the past-decks tab (no standalone route) */}
-            {showPagerOnlyButtons && (
+            {/* Archive — the past-decks tab */}
+            {showStatsAchievements && (
               <button
                 onClick={() => handleNav('archive')}
                 className={navBtn('archive')}
@@ -241,8 +258,8 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
-            {showPagerOnlyButtons && (
+            {/* Custom (cog) */}
+            {showStatsAchievements && (
               <button
                 onClick={() => handleNav('custom')}
                 className={navBtn('custom')}
@@ -253,7 +270,7 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Stats (a pager tab and a route; highlighted when current) */}
+            {/* Stats */}
             {showStatsAchievements && (
               <button
                 onClick={() => handleNav('stats')}
