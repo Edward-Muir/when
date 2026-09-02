@@ -24,7 +24,6 @@ beforeEach(() => {
 
 const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
   const onClose = jest.fn();
-  const onNavItemClick = jest.fn();
   render(
     <MemoryRouter
       initialEntries={['/']}
@@ -33,47 +32,31 @@ const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
       <Routes>
         <Route
           path="/"
-          element={
-            <Menu
-              isOpen
-              onClose={onClose}
-              onShowToast={jest.fn()}
-              onNavItemClick={onNavItemClick}
-              {...props}
-            />
-          }
+          element={<Menu isOpen onClose={onClose} onShowToast={jest.fn()} {...props} />}
         />
-        <Route path="/timeline" element={<h1>My Timeline page</h1>} />
+        <Route path="/privacy" element={<h1>Privacy page</h1>} />
       </Routes>
     </MemoryRouter>
   );
-  return { onClose, onNavItemClick };
+  return { onClose };
 };
 
 describe('Menu', () => {
-  it('navigates to /timeline, closes, and clears the timeline dot', async () => {
-    const { onClose, onNavItemClick } = renderMenu();
-    await userEvent.click(screen.getByRole('link', { name: /my timeline/i }));
+  it('navigates to a page link and closes', async () => {
+    const { onClose } = renderMenu();
+    await userEvent.click(screen.getByRole('link', { name: /privacy policy/i }));
 
-    expect(screen.getByText('My Timeline page')).toBeInTheDocument();
+    expect(screen.getByText('Privacy page')).toBeInTheDocument();
     expect(onClose).toHaveBeenCalled();
-    expect(onNavItemClick).toHaveBeenCalledWith('timeline');
   });
 
-  it('no longer lists Achievements — they live on the Stats tab', () => {
+  it('no longer lists Achievements or My Timeline — both are home tabs now', () => {
     renderMenu();
     expect(screen.queryByRole('link', { name: /achievements/i })).toBeNull();
+    expect(screen.queryByRole('link', { name: /my timeline/i })).toBeNull();
   });
 
-  it('shows a "new" dot on My Timeline while TopBar says it is unseen', () => {
-    renderMenu({ navDots: { timeline: true } });
-
-    const dots = screen.getAllByRole('img', { name: 'New' });
-    expect(dots).toHaveLength(1);
-    expect(screen.getByRole('link', { name: /my timeline/i })).toContainElement(dots[0]);
-  });
-
-  it('shows no dots when none are passed', () => {
+  it('carries no "new" dots', () => {
     renderMenu();
     expect(screen.queryByRole('img', { name: 'New' })).not.toBeInTheDocument();
   });

@@ -18,6 +18,7 @@ import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
+import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
 import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
@@ -83,6 +84,7 @@ const TABS: { key: TabKey; label: string; color: { dot: string; text: string } }
     color: { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
   },
   { key: 'stats', label: 'Stats', color: GOLD },
+  { key: 'timeline', label: 'Timeline', color: GOLD },
 ];
 const tabKeyForIndex = (i: number): TabKey => TABS.at(i)?.key ?? 'home';
 const indexForTabKey = (key: TabKey): number =>
@@ -92,9 +94,10 @@ const indexForTabKey = (key: TabKey): number =>
   );
 const ALL_TAB_INDICES = TABS.map((_, i) => i);
 
-// Pre-mount the remaining pager panels (currently just Stats) at idle rather than on first
+// Pre-mount the remaining pager panels (Stats and Timeline) at idle rather than on first
 // visit: mounting a panel mid-swipe mutates the DOM during scroll-snap momentum, which stalls
-// the gesture on iOS. (Learned when AchievementsPanel lived here — 59 cards + an image burst.)
+// the gesture on iOS. (Learned when the full badge grid was a tab — 59 cards + an image
+// burst; it now mounts only on demand inside Stats, see `stats/BadgesSection.tsx`.)
 function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<number>>>) {
   useEffect(() => {
     const mountAll = () => setVisited(new Set(ALL_TAB_INDICES));
@@ -164,24 +167,10 @@ function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard):
   return !board.submitted;
 }
 
-// Helper function to get default hand size based on player count
-const getDefaultHandSize = (count: number): number => {
-  switch (count) {
-    case 1:
-      return 7;
-    case 2:
-      return 6;
-    case 3:
-      return 5;
-    case 4:
-      return 4;
-    case 5:
-    case 6:
-      return 3;
-    default:
-      return 5;
-  }
-};
+// Default hand size by player count (1–6 players); anything else falls back to 5.
+const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
+const getDefaultHandSize = (count: number): number =>
+  (count >= 1 ? DEFAULT_HAND_SIZES.at(count - 1) : undefined) ?? 5;
 
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
@@ -203,7 +192,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const pagerRef = useRef<ModePagerHandle>(null);
   const [activePage, setActivePage] = useState(() => indexForTabKey(initialTab));
   // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
-  // Stats otherwise waits for a visit or idle.
+  // Stats and Timeline otherwise wait for a visit or idle.
   const [visited, setVisited] = useState<Set<number>>(
     () => new Set((['home', 'archive', 'custom', initialTab] as TabKey[]).map(indexForTabKey))
   );
@@ -453,7 +442,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       />
 
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
-          Archive and Stats panels use their own wider max-widths. */}
+          Archive, Stats and Timeline panels use their own widths. */}
       <div className="flex flex-col flex-1 min-h-0">
         <ModePager
           ref={pagerRef}
@@ -530,6 +519,16 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           {/* Stats page (lazy: mounted once first visited) */}
           {visited.has(indexForTabKey('stats')) ? (
             <StatsPanel active={activePage === indexForTabKey('stats')} />
+          ) : (
+            <div />
+          )}
+
+          {/* My Timeline page (lazy): the collection, laid out on the game's own timeline */}
+          {visited.has(indexForTabKey('timeline')) ? (
+            <TimelinePanel
+              allEvents={allEvents}
+              active={activePage === indexForTabKey('timeline')}
+            />
           ) : (
             <div />
           )}

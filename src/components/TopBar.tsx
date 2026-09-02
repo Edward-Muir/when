@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, BarChart3, Settings, Archive } from 'lucide-react';
+import { Home, Menu as MenuIcon, BarChart3, Settings, Archive, Hourglass } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
@@ -11,14 +11,14 @@ import { GameMode } from '../types';
 
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
- * key type, so the two cannot drift apart. Achievements and My Timeline are not nav
- * destinations: they live in the burger menu (`Menu.tsx`) as links to their routes.
+ * key type, so the two cannot drift apart. Achievements is not one: the badges live on the
+ * Stats tab (`stats/BadgesSection.tsx`).
  */
-export type NavDest = 'home' | 'archive' | 'custom' | 'stats';
+export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'timeline';
 
 /**
  * The path that opens the home screen on each tab. Every tab is addressable, so the top bar
- * can show the same four buttons on every page: in the pager they scroll, elsewhere they
+ * can show the same five buttons on every page: in the pager they scroll, elsewhere they
  * navigate here and the home screen opens on that tab (`src/pages/Home.tsx`).
  */
 const NAV_PATHS: Record<NavDest, string> = {
@@ -26,6 +26,7 @@ const NAV_PATHS: Record<NavDest, string> = {
   archive: '/archive',
   custom: '/custom',
   stats: '/stats',
+  timeline: '/timeline',
 };
 
 // eslint-disable-next-line security/detect-object-injection -- key is the NavDest union
@@ -43,7 +44,7 @@ interface TopBarProps {
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
   dailyTheme?: string;
-  /** Show the Archive, Custom and Stats buttons. */
+  /** Show the Archive, Custom, Stats and Timeline buttons. */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
   activeNav?: NavDest;
@@ -114,8 +115,7 @@ const TopBar: React.FC<TopBarProps> = ({
   const ariaCurrent = (key: NavDest): 'page' | undefined =>
     activeNav === key ? 'page' : undefined;
 
-  // One-time "new" dots until first visited: on the Archive/Stats buttons, and — for the two
-  // burger-menu destinations — on the menu button and the menu items themselves.
+  // One-time "new" dots until first visited, on the Archive, Stats and Timeline buttons.
   const [seenNav, setSeenNav] = useState(() => ({
     archive: hasSeenNav('archive'),
     stats: hasSeenNav('stats'),
@@ -180,11 +180,6 @@ const TopBar: React.FC<TopBarProps> = ({
   );
   const newDotFor = (key: NavKey) => (isSeen(key) ? null : newDot);
 
-  // The menu button carries a dot while either of its destinations is unseen; the item dots
-  // inside the menu say which. `markSeen` is passed down so a tap clears both in lockstep.
-  const menuDots = { timeline: !isSeen('timeline') };
-  const menuHasNew = menuDots.timeline;
-
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50 bg-bg pt-safe border-b border-border transition-colors">
@@ -230,8 +225,9 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Navigation only: Home · Archive · Custom · Stats · Menu. The current destination
-              is rendered in the active (accent-filled) style. */}
+          {/* Navigation only: Home · Archive · Custom · Stats · Timeline · Menu. The current
+              destination is rendered in the active (accent-filled) style. Six buttons fit a
+              320px phone at gap-2 / p-2 (6 × 38px + 5 × 8px + 16px = 284px); seven did not. */}
           <div className="flex items-center gap-2">
             {/* Home Button - a permanent nav destination; active when on the home page */}
             {showHome && onHomeClick && (
@@ -283,14 +279,26 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Menu Button — dotted while Achievements or My Timeline inside is unseen */}
+            {/* My Timeline — the collection tab */}
+            {showStatsAchievements && (
+              <button
+                onClick={() => handleNav('timeline')}
+                className={navBtn('timeline')}
+                aria-label="View my timeline"
+                aria-current={ariaCurrent('timeline')}
+              >
+                <Hourglass className={navIcon('timeline')} />
+                {newDotFor('timeline')}
+              </button>
+            )}
+
+            {/* Menu Button — never dotted: every "new" destination is a nav button now */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className={buttonClass}
               aria-label="Open menu"
             >
               <MenuIcon className={iconClass} />
-              {menuHasNew ? newDot : null}
             </button>
           </div>
         </div>
@@ -309,8 +317,6 @@ const TopBar: React.FC<TopBarProps> = ({
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
         gameMode={gameMode}
-        navDots={menuDots}
-        onNavItemClick={markSeen}
       />
 
       {/* Update Available Popup */}

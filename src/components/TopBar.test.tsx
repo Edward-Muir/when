@@ -23,15 +23,15 @@ beforeEach(() => {
   global.fetch = jest.fn().mockResolvedValue({ ok: false }) as unknown as typeof fetch;
 });
 
-const NAV_LABELS = ['Go home', 'Past decks', 'Custom game', 'View stats'];
+const NAV_LABELS = ['Go home', 'Past decks', 'Custom game', 'View stats', 'View my timeline'];
 
 const renderBar = (props: Partial<React.ComponentProps<typeof TopBar>> = {}) => {
   const onHomeClick = jest.fn();
   render(
-    <MemoryRouter initialEntries={['/achievements']}>
+    <MemoryRouter initialEntries={['/privacy']}>
       <Routes>
         <Route
-          path="/achievements"
+          path="/privacy"
           element={
             <TopBar
               showHome
@@ -45,6 +45,7 @@ const renderBar = (props: Partial<React.ComponentProps<typeof TopBar>> = {}) => 
         <Route path="/archive" element={<h1>Archive tab</h1>} />
         <Route path="/custom" element={<h1>Custom tab</h1>} />
         <Route path="/stats" element={<h1>Stats tab</h1>} />
+        <Route path="/timeline" element={<h1>Timeline tab</h1>} />
       </Routes>
     </MemoryRouter>
   );
@@ -52,7 +53,7 @@ const renderBar = (props: Partial<React.ComponentProps<typeof TopBar>> = {}) => 
 };
 
 describe('TopBar navigation', () => {
-  it('shows the same four nav buttons on a route page as in the pager', () => {
+  it('shows the same five nav buttons on a route page as in the pager', () => {
     renderBar();
     NAV_LABELS.forEach((label) => expect(screen.getByLabelText(label)).toBeInTheDocument());
   });
@@ -81,7 +82,7 @@ describe('TopBar navigation', () => {
 
 describe('tab paths', () => {
   it('round-trip every tab and reject anything else', () => {
-    (['home', 'archive', 'custom', 'stats'] as const).forEach((key) => {
+    (['home', 'archive', 'custom', 'stats', 'timeline'] as const).forEach((key) => {
       expect(navForPath(pathForNav(key))).toBe(key);
     });
     expect(pathForNav('home')).toBe('/');

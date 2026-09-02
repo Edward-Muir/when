@@ -22,18 +22,16 @@ interface TimelinePanelProps {
   allEvents: HistoricalEvent[];
   /**
    * Whether this panel is the visible pager tab. The home-screen pager pre-mounts panels
-   * at idle, so the first-view intro must wait until the tab is actually shown. Defaults
-   * to true for the standalone `/timeline` route.
+   * at idle, so the first-view intro must wait until the tab is actually shown.
    */
   active?: boolean;
 }
 
 /**
  * My Timeline content panel: the player's personal collection (events they've correctly
- * placed), with a filter control and a vertically-scrolling timeline. Rendered both by the
- * `/timeline` route (via ViewTimeline, wrapped in a TopBar) and as a tab inside the
- * home-screen pager. The Filter button lives in the panel header — it's a content control,
- * not navigation.
+ * placed), with a filter control and a vertically-scrolling timeline. Mounted by the
+ * home-screen pager's Timeline tab (which `/timeline` opens directly). The Filter button
+ * lives in the panel header — it's a content control, not navigation.
  */
 const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true }) => {
   // Filter state - default to all selected

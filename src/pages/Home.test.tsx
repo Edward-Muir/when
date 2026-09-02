@@ -24,6 +24,11 @@ describe('HomeRoute', () => {
     expect(screen.getByText('App on stats')).toBeInTheDocument();
   });
 
+  it('opens on My Timeline at its path', () => {
+    renderAt('/timeline');
+    expect(screen.getByText('App on timeline')).toBeInTheDocument();
+  });
+
   it('opens on Daily at the root', () => {
     renderAt('/');
     expect(screen.getByText('App on home')).toBeInTheDocument();

@@ -9,7 +9,6 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Support from './pages/Support';
 import CardsPreview from './pages/CardsPreview';
-import Timeline from './pages/Timeline';
 import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
 import CardReports from './pages/CardReports';
@@ -32,7 +31,6 @@ root.render(
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/support" element={<Support />} />
         <Route path="/cards-preview" element={<CardsPreview />} />
-        <Route path="/timeline" element={<Timeline />} />
         <Route path="/unlock-preview" element={<UnlockPreview />} />
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="/card-reports" element={<CardReports />} />

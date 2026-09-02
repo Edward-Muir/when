@@ -13,7 +13,6 @@ import {
   Apple,
   Bell,
   BellOff,
-  Hourglass,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -22,7 +21,6 @@ import InstallInstructions from './InstallInstructions';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
-import { NavKey } from '../utils/playerStorage';
 import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
 
@@ -31,12 +29,6 @@ interface MenuProps {
   onClose: () => void;
   onShowToast: () => void;
   gameMode?: GameMode | null;
-  /**
-   * Whether the My Timeline link still carries its one-time "new" dot. Owned by TopBar, which
-   * mirrors it as a dot on the menu button; `onNavItemClick` is how a tap clears both.
-   */
-  navDots?: { timeline: boolean };
-  onNavItemClick?: (key: NavKey) => void;
 }
 
 // Game rules component (moved from TopBar). Both game modes share one rule-set, so
@@ -97,23 +89,7 @@ const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> 
   );
 };
 
-// Gold "new" dot at the end of a menu row (see `navDots`).
-const NewDot: React.FC = () => (
-  <span
-    aria-label="New"
-    role="img"
-    className="ml-auto h-2 w-2 flex-shrink-0 rounded-full bg-accent"
-  />
-);
-
-const Menu: React.FC<MenuProps> = ({
-  isOpen,
-  onClose,
-  onShowToast,
-  gameMode,
-  navDots,
-  onNavItemClick,
-}) => {
+const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
@@ -194,21 +170,6 @@ const Menu: React.FC<MenuProps> = ({
 
               {/* Menu Items */}
               <div className="py-2 flex-1">
-                {/* My Timeline is a route, not a home-pager tab — moved here to declutter the
-                    home screen. It keeps its one-time "new" dot. */}
-                <Link
-                  to="/timeline"
-                  className={menuItemClass}
-                  onClick={() => {
-                    onNavItemClick?.('timeline');
-                    onClose();
-                  }}
-                >
-                  <Hourglass className={iconClass} />
-                  <span className="font-body">My Timeline</span>
-                  {navDots?.timeline && <NewDot />}
-                </Link>
-
                 {/* Theme toggle — kept open so the user sees the switch and can toggle back. */}
                 <button onClick={toggleTheme} className={menuItemClass}>
                   {isDark ? <Sun className={iconClass} /> : <Moon className={iconClass} />}
