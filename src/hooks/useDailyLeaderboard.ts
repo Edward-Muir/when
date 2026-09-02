@@ -9,6 +9,7 @@ import {
   markLeaderboardSubmitted,
   updateDailyResultWithLeaderboard,
 } from '../utils/playerStorage';
+import { patchDailyRank } from '../utils/gameHistory';
 
 export interface DailyLeaderboard {
   entries: LeaderboardEntry[];
@@ -161,8 +162,10 @@ export function useDailyLeaderboard(
   // Persist the placing onto today's stored result, so the stats page and a later share can
   // show it without refetching.
   useEffect(() => {
-    if (rank && totalPlayers) updateDailyResultWithLeaderboard(rank, totalPlayers);
-  }, [rank, totalPlayers]);
+    if (!rank || !totalPlayers) return;
+    updateDailyResultWithLeaderboard(rank, totalPlayers);
+    if (dailyResult?.date) patchDailyRank(dailyResult.date, rank, totalPlayers);
+  }, [rank, totalPlayers, dailyResult?.date]);
 
   const submit = useCallback(
     async (displayName: string) => {

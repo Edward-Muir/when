@@ -12,6 +12,7 @@ import { markNavUnseen } from '../utils/playerStorage';
 import { getCuratedThemeIdForConfig } from '../utils/themeReplay';
 import { getThemeBest, recordThemeResult } from '../utils/themeBests';
 import { getThemeOutcome } from '../utils/themeOutcome';
+import { appendGameRecord, buildGameRecord } from '../utils/gameHistory';
 
 interface GameStatsRecording {
   /** Achievement ids unlocked by the most recently recorded game. */
@@ -50,15 +51,18 @@ export function useGameStatsRecorder(
       themeBest: themeId ? (getThemeBest(themeId)?.correctCount ?? 0) : undefined,
     };
     const unlocked = recordGameResult(state, eventsByName);
+    const { survived, perfect } = getThemeOutcome(state);
     // A curated theme's record — the daily on its day and every Archive replay alike.
     if (themeId) {
-      const { survived, perfect } = getThemeOutcome(state);
       recordThemeResult(themeId, {
         correctCount: state.placementHistory.filter(Boolean).length,
         cleared: survived,
         perfect,
       });
     }
+    // The per-game history behind the stats page's calendar and, later, its trend views.
+    const record = buildGameRecord(state, { themeId, cleared: survived, perfect });
+    if (record) appendGameRecord(record);
     // Re-arm the Achievements nav dot so the player is nudged to go see what they earned.
     if (unlocked.length > 0) markNavUnseen('achievements');
     setNewlyUnlockedAchievements(unlocked);

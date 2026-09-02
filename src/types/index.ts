@@ -124,6 +124,12 @@ export interface FailedPlacement {
   event: HistoricalEvent;
   /** Timeline index the player attempted at the time of the miss (animation origin). */
   attemptedPosition: number;
+  /**
+   * Slot the card belonged in, and the timeline length before the attempt, so the game
+   * history can record how far off the miss was. Optional: older states lack them.
+   */
+  correctPosition?: number;
+  timelineLength?: number;
   /** Turn number of the miss; stable ordering for equal-year tombstones. */
   seq: number;
 }

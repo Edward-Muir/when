@@ -388,7 +388,13 @@ export function useWhenGame(): UseWhenGameReturn {
             timeline: prev.timeline.filter((e) => e.name !== activeCard.name),
             failedPlacements: [
               ...prev.failedPlacements,
-              { event: activeCard, attemptedPosition: insertionIndex, seq: prev.turnNumber },
+              {
+                event: activeCard,
+                attemptedPosition: insertionIndex,
+                correctPosition: result.correctPosition,
+                timelineLength: state.timeline.length,
+                seq: prev.turnNumber,
+              },
             ],
             animationPhase: 'moving',
           }));
