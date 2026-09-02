@@ -9,13 +9,13 @@ list here only goes stale. What follows is the spine plus the relationships you 
 guess wrong.
 
 ```
-index.tsx                      # BrowserRouter + 15 routes
+index.tsx                      # BrowserRouter + 13 routes
 ├── App.tsx                    # Phase router, viewport height fix
-│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats)
+│   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Timeline)
 │   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   ├── panels/                 # ArchivePanel, StatsPanel (AchievementsPanel and
-│   │   │                           # TimelinePanel live here too, but only the routes use them)
+│   │   ├── panels/                 # ArchivePanel, StatsPanel, TimelinePanel — one per tab
+│   │   │   └── stats/BadgesSection.tsx # The badge case, inside StatsPanel (was /achievements)
 │   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
@@ -24,19 +24,19 @@ index.tsx                      # BrowserRouter + 15 routes
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
-│       │   ├── Menu.tsx                # Burger menu; links to /achievements, /timeline
+│       │   ├── Menu.tsx                # Burger menu: theme, share, install, legal — no nav
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
-└── pages/                     # Standalone routes, not App children (Timeline, Stats,
-                               # Achievements, Support, ImageQc, CardReports, …)
+└── pages/                     # Standalone routes, not App children (Home = the pager,
+                               # Support, ImageQc, CardReports, …)
 ```
 
 Easy to get wrong: `FilterPopup` is mounted by `panels/TimelinePanel`, not `Game`.
-`CategoryIcon` has five importers across the tree. `pages/Timeline.tsx` renders
-`ViewTimeline.tsx`, which passes `gameMode={null}` to `TopBar` — that is why the rules
-item is hidden outside a game.
+`CategoryIcon` has five importers across the tree. The menu's "How to Play" item shows only
+when `TopBar` gets a `gameMode`, which only `Game.tsx` passes — that is why it is hidden
+outside a game.
 
 ## Hooks
 

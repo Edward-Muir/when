@@ -37,7 +37,7 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
   push to full image coverage
-- [ui-redesign/](ui-redesign/index.md) — gameplay layout, the four-tab home pager, Custom
+- [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, Custom
   settings, and the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
   ship instantly), safe-area utilities, daily reminders

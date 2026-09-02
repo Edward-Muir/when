@@ -81,7 +81,7 @@ Rebuilt 2026-09 (`StatsPanel.tsx` + `src/components/stats/`, derivations in
 `statsDerived.ts`). Mounted only by the home pager's Stats tab, which `/stats` opens
 directly; the pager page owns the scroll container, the panel never does. Layout, top to bottom: records card
 (longest timeline, best streak, longest daily run, best daily score), "Your year" calendar,
-"Daily scores" bars, the achievements link tile, lifetime totals, the collection meter.
+"Daily scores" bars, the **Badges** section, lifetime totals, the collection meter.
 
 Decisions, so they are not re-litigated:
 
@@ -98,8 +98,20 @@ Decisions, so they are not re-litigated:
 - Colour fills are `color-mix()` utilities (`.heat-played`, `.heat-skipped`, `.bar-muted`
   in `index.css`) because opacity modifiers on the theme tokens compile to nothing.
 - The header uses the Daily/Custom/Archive recipe (`text-5xl` display h1 + one muted
-  line). Achievements and My Timeline use it too; their line is the live count ("14 of 60
-  badges unlocked", "486 of 4,120 events placed") rather than a slogan.
+  line). My Timeline uses it too; its line is the live count ("486 of 4,120 events placed")
+  rather than a slogan.
+- **Badges are a section, not a page** (`stats/BadgesSection.tsx`, 2026-09). The standalone
+  `/achievements` page, and its brief life as a burger-menu link, went unfound; the section
+  header carries the count ("14 of 60 unlocked"), the body shows the unlocked badges newest
+  first (sorted by the stored unlock date), and a "Show all 60" expander reveals the locked
+  ones. Two rules, both learned the hard way when the full grid was a pager tab: **the locked
+  grid is mounted only while expanded** (60 cards of real art mounted mid-swipe stalled the
+  iOS gesture), and **art is prefetched only for the unlocked badges, and only once the Stats
+  tab is on screen** (`StatsPanel`'s `active` prop; the pager pre-mounts it at idle for every
+  home-screen visitor). Expanding warms the rest. Tapping a badge opens
+  `AchievementDetailPopup`. `/achievements` redirects to `/stats` from `pages/Home.tsx`.
+- The Stats nav button's "new" dot is re-armed by `useGameStatsRecorder` on every unlock, so
+  the badge you just earned is one tap away.
 
 ## Milestones ("Personal Best" popups)
 
@@ -174,8 +186,11 @@ Re-verify these if the catalogue or the difficulty labels are regraded.
 
 ## My Timeline
 
-The `/timeline` view (and Timeline pager tab) is the **collection** view: it renders
-`placedEventIds`, i.e. the catch-'em-all set, not the current game's board. It shares the
-`Timeline` component with gameplay, which is why `Timeline` takes `failedPlacements` and
-`currentStreak` as optional props defaulting to empty/0 — the collection view passes neither.
-It also passes `gameMode={null}` to `TopBar`, which is what hides the in-game rules item.
+The Timeline pager tab (`panels/TimelinePanel.tsx`, opened directly by `/timeline`) is the
+**collection** view: it renders `placedEventIds`, i.e. the catch-'em-all set, not the current
+game's board. It shares the `Timeline` component with gameplay, which is why `Timeline` takes
+`failedPlacements` and `currentStreak` as optional props defaulting to empty/0 — the
+collection view passes neither. The panel holds the timeline itself back until the tab has
+been shown once (`active`): it is not virtualised, and the pager pre-mounts the panel within
+Chrome's lazy-image distance, so without the latch a returning player's whole collection
+started downloading on the home screen.

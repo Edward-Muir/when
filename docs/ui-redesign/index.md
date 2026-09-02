@@ -22,9 +22,9 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
   Playwright/puppeteer selectors depend on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
 
-## Home is a four-tab pager (2026-06-28; Archive added, Achievements/Timeline demoted 2026-09)
+## Home is a five-tab pager (2026-06-28; Archive added 2026-09, Achievements folded into Stats 2026-09)
 
-`Daily · Archive · Custom · Stats`, driven by **both** swipe and the TopBar buttons. It
+`Daily · Archive · Custom · Stats · Timeline`, driven by **both** swipe and the TopBar buttons. It
 replaced two competing navigation models (a two-page pager plus TopBar buttons that
 `navigate()`d to separate full-page routes).
 
@@ -35,31 +35,44 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - **Archive** (`panels/ArchivePanel.tsx`) is the past curated decks, laid out on the game's own
   timeline by the date each ran — see [../curated-themes/](../curated-themes/index.md#replaying-past-decks-the-archive-tab).
   Like every tab it has a path (`/archive`) that opens the home screen on it (see below).
-- **Achievements and My Timeline are burger-menu items, not tabs** (2026-09). They were pager
-  tabs from 2026-06 until the home screen got cluttered; now `Menu.tsx` links to their routes
-  (`/achievements`, `/timeline`, both with `vercel.json` rewrites so a hard refresh works).
-  Their one-time "new" dot moved with them: the menu button in `TopBar` carries a dot while
-  either is unseen, each menu item carries its own, and a tap clears both (`hasSeenNav` /
-  `markNavSeen` in `playerStorage.ts`, unchanged; `useGameStatsRecorder` still re-arms the
-  achievements dot on unlock). Dropping two tabs is also what took the TopBar back to five
-  buttons at `gap-2` / `p-2` — seven only fit a 320px phone at 6px gaps.
+- **Achievements are a section of the Stats tab, not a page** (2026-09). They were a pager
+  tab from 2026-06, then briefly a burger-menu link when the home screen got cluttered — and
+  nothing in the burger menu gets found, so the badge case now sits inline on Stats
+  (`stats/BadgesSection.tsx`, directly below the Daily scores card): a "Badges" header with the
+  live count, the unlocked badges newest first, and a "Show all 60" expander for the locked
+  ones. **The locked grid mounts only while expanded, and badge art is prefetched only for
+  the unlocked badges until then** — the always-mounted 60-card grid is what used to stall
+  the swipe on iOS (below), and it must not come back. `/achievements` redirects to `/stats`
+  (`pages/Home.tsx`) and keeps its `vercel.json` rewrite so old links still land.
+- **My Timeline is a tab again** (2026-09), the fifth, with its own path (`/timeline`) and
+  top-bar button (Hourglass, "View my timeline"). Its burger-menu spell lasted a day, for the
+  same reason.
+- **The one-time "new" dots sit on the buttons they belong to**: Stats (re-armed on every
+  badge unlock by `useGameStatsRecorder`, cleared on visiting the tab) and Timeline. The menu
+  button carries none. `hasSeenNav` / `markNavSeen` / `markNavUnseen` in `playerStorage.ts`
+  are unchanged apart from the retired `achievements` key.
+- **Six buttons fit a 320px phone at `gap-2` / `p-2`**: 6 × 38px (20px icon + 16px padding +
+  2px border) + 5 × 8px gaps + 16px container padding = 284px. Seven did not (the
+  Achievements-and-Timeline-as-tabs era needed 6px gaps), so don't add a seventh without
+  re-measuring.
 
 - **Every tab has a path, and the path opens the home screen on that tab** (2026-09):
-  `/`, `/archive`, `/custom`, `/stats` are one route (`/:tab?` → `pages/Home.tsx` →
+  `/`, `/archive`, `/custom`, `/stats`, `/timeline` are one route (`/:tab?` → `pages/Home.tsx` →
   `App initialTab` → `ModeSelect` → `ModePager initialIndex`), and `ModeSelect` replaces the
   path as the player swipes so a refresh or a shared link comes back to the same tab. The
   tab↔path map is `pathForNav` / `navForPath` in `TopBar.tsx`. There is no standalone Stats
   page any more; the panel components in `src/components/panels/` are mounted by the pager.
   Before this, Archive and Custom had no path, so their buttons rendered only in pager mode,
-  and once Achievements and My Timeline moved to the menu the route pages were left with a
-  lone Stats button — the regression this rule exists to prevent: **the top bar shows the
-  same four nav buttons on every non-game page.**
+  and once Achievements and My Timeline briefly moved to the menu the route pages were left
+  with a lone Stats button — the regression this rule exists to prevent: **the top bar shows
+  the same five nav buttons on every non-game page.**
 - **`TopBar` stays backward-compatible** via an optional `onNavClick`: when provided the
   buttons scroll the pager, when absent they navigate to the tab's path. The in-game bar
   (`Game.tsx`) deliberately shows Home and Menu only.
-- **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first). Only Stats is
-  gated today, but the mechanism stays: it was what kept the achievements grid and the full
-  collection timeline off the home load while they were tabs.
+- **Heavy tabs lazy-mount** (on first visit or at idle, whichever is first): Stats and
+  Timeline. Idle pre-mount rather than mount-on-swipe because mounting mid-swipe stalled the
+  iOS scroll-snap gesture. `TimelinePanel` additionally holds its (unvirtualised) timeline back
+  until the tab has been shown once, and `StatsPanel`'s badge art waits for `active` too.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict** —
   this was an upfront concern that turned out to be unfounded. Don't re-litigate it.
 - Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
