@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Check, Trophy } from 'lucide-react';
 import { HistoricalEvent } from '../types';
-import { ArchiveEntry } from '../utils/themeReplay';
+import { ArchiveEntry, ArchiveStatus } from '../utils/themeReplay';
 import { ThemeBest } from '../utils/themeBests';
 import { formatShareDate } from '../utils/share';
 import { getImageUrl } from '../utils/cloudinaryImage';
@@ -35,7 +35,8 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   onPlay,
 }) => {
   const [imageError, setImageError] = useState(false);
-  const { theme, releaseDate, locked, cardCount } = entry;
+  const { theme, releaseDate, status, cardCount } = entry;
+  const locked = status !== 'replayable';
   const hasImage = !!seedEvent?.image_url && !imageError;
   const year = releaseDate.slice(0, 4);
 
@@ -55,7 +56,13 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
         <button
           onClick={onPlay}
           disabled={!playable}
-          aria-label={locked ? `${theme.name}: replay tomorrow` : `Play ${theme.name}`}
+          aria-label={
+            status === 'upcoming'
+              ? `${theme.name}: coming ${formatShareDate(releaseDate)}`
+              : status === 'today'
+                ? `${theme.name}: replay tomorrow`
+                : `Play ${theme.name}`
+          }
           className={`w-[240px] h-[80px] sm:w-[280px] sm:h-[96px] rounded-lg overflow-hidden border border-border bg-surface flex flex-row shadow-sm text-left touch-manipulation transition-colors duration-200 ${
             playable ? 'active:scale-95' : 'opacity-70'
           }`}
@@ -90,7 +97,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
             <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
               {theme.name}
             </span>
-            <BestLine best={best} locked={locked} playable={playable} cardCount={cardCount} />
+            <BestLine best={best} status={status} playable={playable} cardCount={cardCount} />
           </div>
         </button>
       </div>
@@ -101,16 +108,20 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
 /**
  * The record line: what to beat, or why there is nothing to beat yet. The score is shown
  * over the cards a run can place — the resolved pool minus the seed card that opens the
- * timeline — so a perfect clear reads as a full fraction.
+ * timeline — so a perfect clear reads as a full fraction. The upcoming teaser carries no
+ * line at all: its date column is already in the future, which says everything.
  */
 const BestLine: React.FC<{
   best: ThemeBest | undefined;
-  locked: boolean;
+  status: ArchiveStatus;
   playable: boolean;
   cardCount: number;
-}> = ({ best, locked, playable, cardCount }) => {
+}> = ({ best, status, playable, cardCount }) => {
   const lineClass = 'flex items-center gap-1 text-xs leading-tight font-body';
-  if (locked) return <span className={`${lineClass} text-text-muted`}>Replay tomorrow</span>;
+  if (status === 'upcoming') return null;
+  if (status === 'today') {
+    return <span className={`${lineClass} text-text-muted`}>Replay tomorrow</span>;
+  }
   if (!playable) return <span className={`${lineClass} text-text-muted`}>Unavailable</span>;
   if (!best) return <span className={`${lineClass} text-text-muted`}>Not played yet</span>;
   const placeable = Math.max(1, cardCount - 1);

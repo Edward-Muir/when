@@ -30,6 +30,7 @@ beforeEach(() => {
   localStorage.clear();
   clearDailyPoolCache();
   __setCuratedThemesForTest([
+    theme('later', 'Much Later', ['2030-06-01']),
     theme('future', 'Not Yet', ['2030-05-01']),
     theme('today', 'Running Today', [TODAY], 20),
     theme('kings', 'Kings of England', ['2030-03-01'], 40),
@@ -57,19 +58,30 @@ const renderPanel = (props: Partial<React.ComponentProps<typeof ArchivePanel>> =
 };
 
 describe('ArchivePanel', () => {
-  it('lists past decks oldest first, with today locked and the future absent', () => {
+  it('lists past decks oldest first, then today locked, then the next deck teased', () => {
     renderPanel();
     const cards = screen.getAllByRole('button');
     expect(cards.map((c) => c.getAttribute('aria-label'))).toEqual([
       'Play Plague Years',
       'Play Kings of England',
       'Running Today: replay tomorrow',
+      'Not Yet: coming May 1',
     ]);
-    expect(screen.queryByText('Not Yet')).toBeNull();
+    expect(screen.queryByText('Much Later')).toBeNull();
     expect(cards[2]).toBeDisabled();
     expect(within(cards[2]).getByText('Replay tomorrow')).toBeInTheDocument();
-    // Only replayable decks are counted in the header.
-    expect(screen.getByText('2 decks')).toBeInTheDocument();
+    // The teaser is locked with no record line: its future date says what it is.
+    expect(cards[3]).toBeDisabled();
+    expect(within(cards[3]).getByText('Not Yet')).toBeInTheDocument();
+    expect(screen.getByText('May 1')).toBeInTheDocument();
+    expect(within(cards[3]).queryByText(/Replay tomorrow|Not played yet|High score/)).toBeNull();
+  });
+
+  it('reads like the Daily and Custom pages, with no deck count', () => {
+    renderPanel();
+    expect(screen.getByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
+    expect(screen.getByText(/Replay curated decks/)).toBeInTheDocument();
+    expect(screen.queryByText(/\d+ decks?$/)).toBeNull();
   });
 
   it('shows the date each deck ran', () => {
@@ -96,8 +108,8 @@ describe('ArchivePanel', () => {
     expect(onPlay.mock.calls[0][0].id).toBe('kings');
   });
 
-  it('explains itself before any deck has run', () => {
-    __setCuratedThemesForTest([theme('future', 'Not Yet', ['2030-05-01'])]);
+  it('explains itself when nothing is scheduled at all', () => {
+    __setCuratedThemesForTest([]);
     renderPanel();
     expect(screen.getByText('No past decks yet')).toBeInTheDocument();
     expect(screen.queryByRole('button')).toBeNull();

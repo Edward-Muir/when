@@ -178,8 +178,10 @@ always the same card.
 
 **Listing rule.** A theme is shown once its earliest date is today or earlier: strictly past
 dates are replayable, today's is a locked "Replay tomorrow" card (so the list is never empty
-on the first curated day and the rule is visible), and themes scheduled only for the future are
-absent — naming them would spoil upcoming dailies. The count and the card count come from the
+on the first curated day and the rule is visible), and of the themes still to come exactly one —
+the next scheduled — closes the list as a locked teaser (name, date and opening art; the seed
+card is the one card shown face-up on the day anyway). Anything beyond it stays hidden so the
+calendar is not laid bare. The card count comes from the
 **resolved** pool, because slugs whose events lost their art drop out of `allEvents`; a deck
 under `REPLAY_MIN_POOL` (8, `startGame`'s own floor) renders disabled rather than failing
 with a console error. "Today" is `useToday`'s date passed down as a prop, and the panel also

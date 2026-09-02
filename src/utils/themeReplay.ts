@@ -37,12 +37,19 @@ export const REPLAY_HAND_SIZE = DAILY_HAND_SIZE;
 export const REPLAY_MIN_POOL = 1 * REPLAY_HAND_SIZE + 1 + 1 * 2;
 
 /** One row of the Archive list. */
+export type ArchiveStatus =
+  /** Ran on a past day; can be replayed. */
+  | 'replayable'
+  /** Running today — replayable from tomorrow. */
+  | 'today'
+  /** The next scheduled deck, teased but not yet playable. */
+  | 'upcoming';
+
 export interface ArchiveEntry {
   theme: CuratedTheme;
-  /** The day the theme ran: its earliest date on or before today. */
+  /** The day the theme ran (earliest date on or before today), or will run for `upcoming`. */
   releaseDate: string;
-  /** Running today — replayable from tomorrow. */
-  locked: boolean;
+  status: ArchiveStatus;
   /** Events the theme resolves to in the current catalogue. */
   cardCount: number;
 }
@@ -66,9 +73,9 @@ export function getCuratedThemeIdForConfig(config: GameConfig | null): string | 
  *
  * A theme is listed once its earliest date is today or earlier: strictly past dates are
  * replayable, today's is shown locked so the list never looks empty on the first curated day
- * and the "day after" rule is visible. Themes scheduled only for the future are not shown at
- * all — naming them would spoil upcoming dailies. `YYYY-MM-DD` strings compare correctly as
- * strings, so no date parsing is involved.
+ * and the "day after" rule is visible. Of the themes still to come, exactly one — the next
+ * scheduled — closes the list as a locked teaser; the rest stay hidden so the calendar is not
+ * laid bare. `YYYY-MM-DD` strings compare correctly as strings, so no date parsing is involved.
  */
 export function getArchiveEntries(
   themes: CuratedTheme[],
@@ -76,17 +83,40 @@ export function getArchiveEntries(
   today: string
 ): ArchiveEntry[] {
   const entries: ArchiveEntry[] = [];
+  const cardCount = (theme: CuratedTheme) => buildCuratedPool(allEvents, theme).length;
+  const listed = new Set<string>();
   for (const theme of themes) {
     const dates = [...(theme.dates ?? [])].filter((date) => date <= today).sort();
     const releaseDate = dates.at(0);
     if (!releaseDate) continue;
+    listed.add(theme.id);
     entries.push({
       theme,
       releaseDate,
-      locked: releaseDate === today,
-      cardCount: buildCuratedPool(allEvents, theme).length,
+      status: releaseDate === today ? 'today' : 'replayable',
+      cardCount: cardCount(theme),
     });
   }
+
+  // The teaser: the nearest future date among themes not already on the list.
+  let upcoming: { theme: CuratedTheme; date: string } | undefined;
+  for (const theme of themes) {
+    if (listed.has(theme.id)) continue;
+    const date = [...(theme.dates ?? [])]
+      .filter((d) => d > today)
+      .sort()
+      .at(0);
+    if (date && (!upcoming || date < upcoming.date)) upcoming = { theme, date };
+  }
+  if (upcoming) {
+    entries.push({
+      theme: upcoming.theme,
+      releaseDate: upcoming.date,
+      status: 'upcoming',
+      cardCount: cardCount(upcoming.theme),
+    });
+  }
+
   return entries.sort((a, b) =>
     a.releaseDate === b.releaseDate
       ? a.theme.id.localeCompare(b.theme.id)

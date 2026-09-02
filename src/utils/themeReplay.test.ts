@@ -43,10 +43,11 @@ beforeEach(() => {
 });
 
 describe('getArchiveEntries', () => {
-  it('lists past themes oldest first, today locked, future omitted', () => {
+  it('lists past themes oldest first, today locked, then only the next future deck', () => {
     const entries = getArchiveEntries(
       [
-        theme('future', ['2030-05-01']),
+        theme('later', ['2030-06-01']),
+        theme('next', ['2030-05-01']),
         theme('today', [TODAY]),
         theme('newer', ['2030-04-01']),
         theme('older', ['2030-03-01']),
@@ -54,18 +55,37 @@ describe('getArchiveEntries', () => {
       catalogue,
       TODAY
     );
-    expect(entries.map((e) => e.theme.id)).toEqual(['older', 'newer', 'today']);
-    expect(entries.map((e) => e.locked)).toEqual([false, false, true]);
+    expect(entries.map((e) => e.theme.id)).toEqual(['older', 'newer', 'today', 'next']);
+    expect(entries.map((e) => e.status)).toEqual(['replayable', 'replayable', 'today', 'upcoming']);
+    expect(entries.at(-1)?.releaseDate).toBe('2030-05-01');
   });
 
   it('dates a multi-date theme by its earliest past date and ignores its future ones', () => {
-    const [entry] = getArchiveEntries(
+    const entries = getArchiveEntries(
       [theme('repeat', ['2030-06-01', '2030-02-01', '2030-03-15'])],
       catalogue,
       TODAY
     );
-    expect(entry.releaseDate).toBe('2030-02-01');
-    expect(entry.locked).toBe(false);
+    expect(entries).toHaveLength(1);
+    expect(entries[0].releaseDate).toBe('2030-02-01');
+    expect(entries[0].status).toBe('replayable');
+  });
+
+  it('teases the next deck not already listed, even if a listed theme repeats sooner', () => {
+    const entries = getArchiveEntries(
+      [theme('repeat', ['2030-03-01', '2030-04-20']), theme('fresh', ['2030-05-01'])],
+      catalogue,
+      TODAY
+    );
+    expect(entries.map((e) => [e.theme.id, e.status])).toEqual([
+      ['repeat', 'replayable'],
+      ['fresh', 'upcoming'],
+    ]);
+  });
+
+  it('shows the teaser alone before any deck has run', () => {
+    const entries = getArchiveEntries([theme('first', ['2030-05-01'])], catalogue, TODAY);
+    expect(entries.map((e) => e.status)).toEqual(['upcoming']);
   });
 
   it('counts the cards the theme resolves to, not the slugs it names', () => {
@@ -80,8 +100,8 @@ describe('getArchiveEntries', () => {
     expect(entry.cardCount).toBeLessThan(REPLAY_MIN_POOL);
   });
 
-  it('is empty when nothing has run yet', () => {
-    expect(getArchiveEntries([theme('future', ['2031-01-01'])], catalogue, TODAY)).toEqual([]);
+  it('is empty when nothing is scheduled at all', () => {
+    expect(getArchiveEntries([], catalogue, TODAY)).toEqual([]);
   });
 });
 
