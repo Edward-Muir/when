@@ -91,17 +91,23 @@ describe('buildHeatmapWeeks', () => {
     expect(wed).toMatchObject({ played: false, badgeIds: [] });
   });
 
-  it('labels each month at the first column that touches it', () => {
+  it('labels each month at the first column that touches it, never two labels close together', () => {
     const { monthLabels } = buildHeatmapWeeks({
       playedDates: [],
       unlocked: {},
       today,
       minWeeks: 8,
     });
+    // Jul would sit on column 0, two columns before Aug, so Aug takes its place.
     expect(monthLabels).toEqual([
-      { col: 0, label: 'Jul' },
       { col: 2, label: 'Aug' },
       { col: 7, label: 'Sep' },
+    ]);
+    const wide = buildHeatmapWeeks({ playedDates: [], unlocked: {}, today, minWeeks: 10 });
+    expect(wide.monthLabels).toEqual([
+      { col: 0, label: 'Jul' },
+      { col: 4, label: 'Aug' },
+      { col: 9, label: 'Sep' },
     ]);
   });
 

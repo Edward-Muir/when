@@ -19,17 +19,18 @@ should almost certainly be a derivation instead.
 
 ## Storage
 
-Five localStorage keys, one per object. Every accessor is `try`/`catch` fail-silent and returns
+Six localStorage keys, one per object. Every accessor is `try`/`catch` fail-silent and returns
 a fully-populated zero-default object, never null, merging partial or older stored shapes over
 the defaults.
 
-| Key                   | Holds                                                                                              |
-| --------------------- | -------------------------------------------------------------------------------------------------- |
-| `when-lifetime-stats` | per-mode games/timeline sums/longest, events placed correct+wrong, best streaks, first/last played |
-| `when-collection`     | `placedEventIds`, de-duped on read and write                                                       |
-| `when-daily-cadence`  | daily streaks, `playedDates`, best/sum/histogram of daily correct counts                           |
-| `when-achievements`   | `unlocked: { [id]: ISODate }`                                                                      |
-| `when-theme-bests`    | per-curated-theme best `correctCount`, cleared/perfect flags, play count (`themeBests.ts`)         |
+| Key                   | Holds                                                                                                                                                            |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `when-lifetime-stats` | per-mode games/timeline sums/longest, events placed correct+wrong, best streaks, first/last played                                                               |
+| `when-collection`     | `placedEventIds`, de-duped on read and write                                                                                                                     |
+| `when-daily-cadence`  | daily streaks, `playedDates`, best/sum/histogram of daily correct counts                                                                                         |
+| `when-achievements`   | `unlocked: { [id]: ISODate }`                                                                                                                                    |
+| `when-theme-bests`    | per-curated-theme best `correctCount`, cleared/perfect flags, play count (`themeBests.ts`)                                                                       |
+| `when-game-history`   | one compact record per finished game: date, mode, placement string, correct event ids, misses with slots-off, theme outcome, leaderboard rank (`gameHistory.ts`) |
 
 `recordGameResult` splits on **daily vs non-daily only**, via `lastConfig.dailySeed`. Older plan
 documents describe a third "default" bucket for a plain game started from a menu; that path has
@@ -48,6 +49,56 @@ before it existed are not recoverable; accepted.
 `getLifetimeStats()` also runs a one-time idempotent fold of retired keys (a legacy high score,
 and the removed `freeplay` buckets). Copy that pattern for future shape changes rather than
 migrating in place.
+
+## Per-game history (`when-game-history`)
+
+Added 2026-09 so the stats page can, in time, tie a score to a day and a miss to how far off
+it was — nothing else kept per-game detail (the cadence stores dates without scores, the
+daily result is overwritten every day, the lifetime numbers are sums). It fits the
+architectural rule because a record holds **event ids and booleans only**: correct ids,
+misses as `{ id, off, len }`, the placement string, best streak, theme outcome. Category,
+era and difficulty views are derived against the catalogue at read time, never stored.
+
+- Written once per finished game from `useGameStatsRecorder`, right after
+  `recordGameResult`, under the same ref guard. A daily is additionally skipped when its
+  date is already recorded (the cadence's `playedDates` guard, mirrored), so a re-fired
+  effect cannot double-count a day; custom games always append.
+- `FailedPlacement` carries `correctPosition` and `timelineLength` from the one push site
+  in `useWhenGame` so `off` is captured at miss time; older misses without them are left out
+  of the record rather than guessed.
+- The leaderboard placing arrives asynchronously, after the recorder has run, so
+  `useDailyLeaderboard` patches `rank`/`totalPlayers` onto the day's record when the board
+  answers (beside its existing write onto `DailyResult`).
+- Capped at 400 records (~300 KB), pruning the **oldest custom game first** so a year of
+  dailies survives any amount of custom play. Reads rebuild each record field by field and
+  drop malformed entries.
+- Deliberately not seeded from the old `DailyResult`: it has no event ids, and a
+  half-record would skew the derivations it exists to feed.
+
+## Stats page
+
+Rebuilt 2026-09 (`StatsPanel.tsx` + `src/components/stats/`, derivations in
+`statsDerived.ts`). Rendered by the `/stats` route and as the pager's Stats tab; both mounts
+own the scroll container, the panel never does. Layout, top to bottom: records card
+(longest timeline, best streak, longest daily run, best daily score), "Your year" calendar,
+"Daily scores" bars, the achievements link tile, lifetime totals, the collection meter.
+
+Decisions, so they are not re-litigated:
+
+- **The calendar is weeks-as-columns with horizontal scroll** (the GitHub look), opened on
+  the latest weeks. `overscroll-x-contain` keeps the swipe from chaining into the pager's
+  own horizontal track. It shows played / skipped only, with a star on badge-unlock days and
+  today outlined; shading by score waits on the game history above. **No summary text under
+  the grid** — the legend is the only copy.
+- **Score bars use the game-over tiers** (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
+  so the page speaks the game's language; today's tier is the full accent.
+- **No "placement accuracy"**: a daily's mistakes are always the hand size, so accuracy is
+  the score restated. **No era coverage strip, no per-category coverage list** — both
+  proposed and vetoed as clutter.
+- Colour fills are `color-mix()` utilities (`.heat-played`, `.heat-skipped`, `.bar-muted`
+  in `index.css`) because opacity modifiers on the theme tokens compile to nothing.
+- The header uses the Daily/Custom/Archive recipe (`text-5xl` display h1 + one muted
+  tagline). `AchievementsPanel` and `TimelinePanel` still carry the older small heading.
 
 ## Milestones ("Personal Best" popups)
 

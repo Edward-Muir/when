@@ -66,7 +66,10 @@ export interface HeatCell {
 export interface HeatmapModel {
   /** Columns, oldest first; each is Monday to Sunday. */
   weeks: HeatCell[][];
-  /** Month name over the first column that touches a new month. */
+  /**
+   * Month name over the first column that touches a new month. A label that would sit
+   * within two columns of the previous one replaces it rather than colliding with it.
+   */
   monthLabels: { col: number; label: string }[];
   todayCol: number;
 }
@@ -120,6 +123,8 @@ export function buildHeatmapWeeks(input: HeatmapInput): HeatmapModel {
     const col = weeks.length;
     const month = utcDate(addDays(monday, 6)).getUTCMonth();
     if (month !== lastMonth) {
+      const previous = monthLabels.at(-1);
+      if (previous && col - previous.col < 3) monthLabels.pop();
       monthLabels.push({ col, label: MONTHS.at(month) ?? '' });
       lastMonth = month;
     }

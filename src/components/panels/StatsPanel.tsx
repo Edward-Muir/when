@@ -1,49 +1,53 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Gamepad2,
-  Ruler,
-  Flame,
   CalendarDays,
-  Zap,
+  Flame,
+  Gamepad2,
   Layers,
-  Target,
+  Library,
+  Medal,
+  Ruler,
   TrendingUp,
-  Trophy,
+  Zap,
 } from 'lucide-react';
 import { loadAllEvents } from '../../utils/eventLoader';
-import { getLifetimeStats, getDailyCadence, getCollectionState } from '../../utils/statsStorage';
+import {
+  getAchievements,
+  getCollectionState,
+  getDailyCadence,
+  getLifetimeStats,
+} from '../../utils/statsStorage';
+import { getTodayResult } from '../../utils/playerStorage';
+import {
+  buildHeatmapWeeks,
+  dailyAverage,
+  formatShortDate,
+  lifetimeFrom,
+  recordsFrom,
+  scoreBuckets,
+} from '../../utils/statsDerived';
+import { ACHIEVEMENTS } from '../../data/achievements';
+import { useToday } from '../../hooks/useToday';
+import { StatCard, StatRow, SectionHeading, iconClass } from '../stats/primitives';
+import CalendarHeatmap from '../stats/CalendarHeatmap';
+import ScoreDistribution from '../stats/ScoreDistribution';
+import AchievementsTile from '../stats/AchievementsTile';
 
-/** One stat: icon tile + big mono value + muted label (mirrors StatsPopup's rows). */
-const StatRow: React.FC<{ icon: React.ReactNode; value: React.ReactNode; label: string }> = ({
-  icon,
-  value,
-  label,
-}) => (
-  <div className="flex items-center gap-3">
-    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg">{icon}</div>
-    <div className="min-w-0 flex-1">
-      <div className="font-mono text-2xl font-bold text-text">{value}</div>
-      <div className="font-body text-sm text-text-muted">{label}</div>
-    </div>
-  </div>
-);
-
-const Card: React.FC<{ children: React.ReactNode; className?: string }> = ({
-  children,
-  className = '',
-}) => (
-  <div className={`rounded-lg border border-border bg-surface p-4 ${className}`}>{children}</div>
-);
-
-const iconClass = 'h-5 w-5 text-text-muted';
+const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
 
 /**
- * Stats content panel. Read-only lifetime / daily / collection stats derived from the
- * localStorage primitives. Rendered both by the `/stats` route (wrapped in a TopBar) and
- * as a tab inside the home-screen pager. Everything reads zero-defaults on empty storage,
- * so a fresh player sees clean zeros with no crash.
+ * Stats content panel: records, the year calendar, daily score bars, the achievements
+ * link, lifetime totals and the collection meter — all derived from the localStorage
+ * primitives. Rendered both by the `/stats` route (under a TopBar) and as a tab inside the
+ * home-screen pager, each of which owns the scroll container. Everything reads zero-defaults
+ * on empty storage, so a fresh player sees clean zeros with no crash.
+ *
+ * Storage is re-read every render, like the Archive tab: a game just finished writes here
+ * and the pager re-renders on return without any of this panel's deps changing. The
+ * derivations are a few hundred cells and renders are rare, so nothing is memoised.
  */
 const StatsPanel: React.FC = () => {
+  const today = useToday();
   const [totalEvents, setTotalEvents] = useState(0);
   useEffect(() => {
     loadAllEvents().then((events) => setTotalEvents(events.length));
@@ -52,121 +56,130 @@ const StatsPanel: React.FC = () => {
   const lifetime = getLifetimeStats();
   const cadence = getDailyCadence();
   const collection = getCollectionState();
+  const achievements = getAchievements();
+  const todayResult = getTodayResult();
 
-  const gamesPlayed = lifetime.gamesPlayed.daily + lifetime.gamesPlayed.suddenDeath;
-  const longestTimeline = Math.max(
-    lifetime.longestTimeline.daily,
-    lifetime.longestTimeline.suddenDeath
-  );
-  const totalTimelineLength =
-    lifetime.timelineLengthSum.daily + lifetime.timelineLengthSum.suddenDeath;
-  const avgTimeline = gamesPlayed > 0 ? (totalTimelineLength / gamesPlayed).toFixed(1) : '—';
-
-  // Best run of correct placements across either daily or custom (non-daily) play.
-  const bestInGameStreak = Math.max(lifetime.bestInGameStreakEver, lifetime.bestCustomStreakEver);
-
-  const totalPlacements = lifetime.eventsPlacedCorrect + lifetime.eventsPlacedWrong;
-  const accuracy =
-    totalPlacements > 0
-      ? `${Math.round((lifetime.eventsPlacedCorrect / totalPlacements) * 100)}%`
-      : '—';
+  const records = recordsFrom(lifetime, cadence);
+  const totals = lifetimeFrom(lifetime, cadence);
+  const heatmap = buildHeatmapWeeks({
+    playedDates: cadence.playedDates,
+    unlocked: achievements.unlocked,
+    firstPlayedDate: lifetime.firstPlayedDate || undefined,
+    today,
+  });
+  const buckets = scoreBuckets(cadence.dailyCorrectHistogram, todayResult?.correctCount);
+  const unlockedCount = ACHIEVEMENTS.filter((a) => !!achievements.unlocked[a.id]).length;
 
   const collected = collection.placedEventIds.length;
   const collectionPct = totalEvents > 0 ? Math.round((collected / totalEvents) * 100) : 0;
 
   return (
     <div className="mx-auto w-full max-w-sm px-3">
-      <h1 className="py-5 font-display text-2xl font-bold text-text">Stats</h1>
-
-      {/* Headline stats */}
-      <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-        <Card>
-          <StatRow
-            icon={<Gamepad2 className={iconClass} />}
-            value={gamesPlayed}
-            label="Games played"
-          />
-        </Card>
-        <Card>
-          <StatRow
-            icon={<Ruler className={iconClass} />}
-            value={longestTimeline}
-            label="Longest timeline"
-          />
-        </Card>
-        <Card>
-          <StatRow
-            icon={<Zap className={iconClass} />}
-            value={bestInGameStreak}
-            label="Best in-game streak"
-          />
-        </Card>
-        <Card>
-          <StatRow
-            icon={<Flame className={iconClass} />}
-            value={cadence.maxDailyStreak}
-            label="Max days in a row"
-          />
-        </Card>
+      {/* Header — the Daily, Custom and Archive pages' heading, so the tabs read alike */}
+      <div className="text-left mb-3">
+        <h1 className="text-5xl font-bold text-text font-display leading-none">Stats</h1>
+        <p className="text-text-muted text-sm mt-1 font-body">
+          Your records, daily calendar and collection
+        </p>
       </div>
 
-      {/* Collection meter */}
-      <Card className="mb-4">
-        <div className="mb-2 flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-bg">
-            <Trophy className={iconClass} />
+      <div className="flex flex-col gap-3 pb-4">
+        <StatCard>
+          <div className="grid grid-cols-2 gap-x-3 gap-y-4">
+            <StatRow
+              icon={<Ruler className={iconClass} />}
+              value={records.longestTimeline}
+              label="Longest timeline"
+            />
+            <StatRow
+              icon={<Zap className={iconClass} />}
+              value={records.bestStreak}
+              label="Best streak"
+            />
+            <StatRow
+              icon={<Flame className={iconClass} />}
+              value={records.longestDailyRun}
+              label="Longest daily run"
+            />
+            <StatRow
+              icon={<Medal className={iconClass} />}
+              value={records.bestDailyScore}
+              label="Best daily score"
+            />
           </div>
-          <div className="flex-1">
-            <div className="font-mono text-2xl font-bold text-text">
-              {collected}
-              <span className="text-base text-text-muted"> / {totalEvents || '…'}</span>
-            </div>
-            <div className="font-body text-sm text-text-muted">Events collected</div>
-          </div>
-        </div>
-        <div className="h-2 w-full overflow-hidden rounded-full bg-bg">
-          <div
-            className="h-full rounded-full bg-accent transition-all"
-            style={{ width: `${collectionPct}%` }}
-          />
-        </div>
-      </Card>
+        </StatCard>
 
-      {/* Secondary stats */}
-      <Card>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <StatRow
-            icon={<CalendarDays className={iconClass} />}
-            value={cadence.currentDailyStreak}
-            label="Days played in a row"
+        <StatCard>
+          <SectionHeading>Your year</SectionHeading>
+          <CalendarHeatmap model={heatmap} badgeName={badgeName} />
+        </StatCard>
+
+        <StatCard>
+          <SectionHeading>Daily scores</SectionHeading>
+          <ScoreDistribution
+            buckets={buckets}
+            todayCorrect={todayResult?.correctCount}
+            average={dailyAverage(cadence)}
           />
-          <StatRow
-            icon={<CalendarDays className={iconClass} />}
-            value={cadence.playedDates.length}
-            label="Daily games played"
-          />
-          <StatRow
-            icon={<Zap className={iconClass} />}
-            value={bestInGameStreak}
-            label="Best in-game streak"
-          />
-          <StatRow
-            icon={<Layers className={iconClass} />}
-            value={lifetime.eventsPlacedCorrect}
-            label="Events placed correctly"
-          />
-          <StatRow
-            icon={<Target className={iconClass} />}
-            value={accuracy}
-            label="Placement accuracy"
-          />
-          <StatRow
-            icon={<TrendingUp className={iconClass} />}
-            value={avgTimeline}
-            label="Average timeline length"
-          />
-        </div>
-      </Card>
+        </StatCard>
+
+        <AchievementsTile unlocked={unlockedCount} total={ACHIEVEMENTS.length} />
+
+        <StatCard>
+          <SectionHeading>Lifetime</SectionHeading>
+          <div className="grid grid-cols-2 gap-x-3 gap-y-4">
+            <StatRow
+              icon={<Gamepad2 className={iconClass} />}
+              value={totals.gamesPlayed}
+              label="Games played"
+            />
+            <StatRow
+              icon={<CalendarDays className={iconClass} />}
+              value={totals.dailyGames}
+              label="Daily games"
+            />
+            <StatRow
+              icon={<Layers className={iconClass} />}
+              value={totals.eventsPlaced.toLocaleString()}
+              label="Events placed"
+            />
+            <StatRow
+              icon={<TrendingUp className={iconClass} />}
+              value={totals.averageTimeline ?? '—'}
+              label="Average timeline"
+            />
+          </div>
+          {lifetime.firstPlayedDate && (
+            <p className="mt-3 font-body text-xs text-text-muted">
+              Playing since {formatShortDate(lifetime.firstPlayedDate)}
+            </p>
+          )}
+        </StatCard>
+
+        <StatCard>
+          <div className="mb-2 flex items-center gap-3">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-bg">
+              <Library className={iconClass} />
+            </div>
+            <div className="flex-1">
+              <div className="font-mono text-2xl font-bold text-text">
+                {collected.toLocaleString()}
+                <span className="text-base text-text-muted">
+                  {' '}
+                  / {totalEvents ? totalEvents.toLocaleString() : '…'}
+                </span>
+              </div>
+              <div className="font-body text-sm text-text-muted">Events collected</div>
+            </div>
+          </div>
+          <div className="h-2 w-full overflow-hidden rounded-full bg-bg">
+            <div
+              className="h-full rounded-full bg-accent transition-all"
+              style={{ width: `${collectionPct}%` }}
+            />
+          </div>
+        </StatCard>
+      </div>
     </div>
   );
 };
