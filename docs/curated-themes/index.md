@@ -190,7 +190,7 @@ stayed invisible until the next unrelated render.
 **Personal bests** live in `when-theme-bests` (`themeBests.ts`), written by the stats recorder
 for the daily on a curated day and for every replay, so the day's score is the first record.
 `correctCount` is stored — the leaderboard's number, not the timeline length — and the card
-says "High score: N". A `bestThemeScore` milestone fires when a run beats a previous non-zero
+says "High score: N/M", M being the resolved pool minus the seed card so a perfect clear is a full fraction. A `bestThemeScore` milestone fires when a run beats a previous non-zero
 record. See [../stats-achievements/](../stats-achievements/index.md).
 
 **Tests seam.** `__setCuratedThemesForTest` populates the list as well as the date index;

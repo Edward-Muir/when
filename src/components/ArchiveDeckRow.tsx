@@ -90,10 +90,7 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
             <span className="font-display font-semibold text-sm leading-tight line-clamp-2 text-text">
               {theme.name}
             </span>
-            <span className="text-xs leading-tight text-text-muted font-body">
-              {cardCount} cards
-            </span>
-            <BestLine best={best} locked={locked} playable={playable} />
+            <BestLine best={best} locked={locked} playable={playable} cardCount={cardCount} />
           </div>
         </button>
       </div>
@@ -101,16 +98,22 @@ const ArchiveDeckRow: React.FC<ArchiveDeckRowProps> = ({
   );
 };
 
-/** The record line: what to beat, or why there is nothing to beat yet. */
-const BestLine: React.FC<{ best: ThemeBest | undefined; locked: boolean; playable: boolean }> = ({
-  best,
-  locked,
-  playable,
-}) => {
+/**
+ * The record line: what to beat, or why there is nothing to beat yet. The score is shown
+ * over the cards a run can place — the resolved pool minus the seed card that opens the
+ * timeline — so a perfect clear reads as a full fraction.
+ */
+const BestLine: React.FC<{
+  best: ThemeBest | undefined;
+  locked: boolean;
+  playable: boolean;
+  cardCount: number;
+}> = ({ best, locked, playable, cardCount }) => {
   const lineClass = 'flex items-center gap-1 text-xs leading-tight font-body';
   if (locked) return <span className={`${lineClass} text-text-muted`}>Replay tomorrow</span>;
   if (!playable) return <span className={`${lineClass} text-text-muted`}>Unavailable</span>;
   if (!best) return <span className={`${lineClass} text-text-muted`}>Not played yet</span>;
+  const placeable = Math.max(1, cardCount - 1);
   return (
     <span className={`${lineClass} text-accent font-semibold`}>
       {best.perfect ? (
@@ -118,7 +121,7 @@ const BestLine: React.FC<{ best: ThemeBest | undefined; locked: boolean; playabl
       ) : best.cleared ? (
         <Check className="w-3 h-3 shrink-0" aria-label="Cleared" />
       ) : null}
-      High score: {best.correctCount}
+      High score: {best.correctCount}/{placeable}
     </span>
   );
 };

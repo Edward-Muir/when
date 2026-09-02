@@ -72,18 +72,18 @@ describe('ArchivePanel', () => {
     expect(screen.getByText('2 decks')).toBeInTheDocument();
   });
 
-  it('shows the date each deck ran and how many cards it resolves to', () => {
+  it('shows the date each deck ran', () => {
     renderPanel();
     expect(screen.getByText('Mar 1')).toBeInTheDocument();
     expect(screen.getByText('Jan 15')).toBeInTheDocument();
-    expect(screen.getAllByText('20 cards')).toHaveLength(3);
   });
 
   it('shows the stored best beside a deck, and nothing to beat otherwise', () => {
-    recordThemeResult('kings', { correctCount: 23, cleared: true, perfect: false });
+    recordThemeResult('kings', { correctCount: 12, cleared: true, perfect: false });
     renderPanel();
     const kings = screen.getByRole('button', { name: 'Play Kings of England' });
-    expect(within(kings).getByText('High score: 23')).toBeInTheDocument();
+    // Over the 19 placeable cards: the 20-card pool minus the seed card.
+    expect(within(kings).getByText('High score: 12/19')).toBeInTheDocument();
     expect(within(kings).getByLabelText('Cleared')).toBeInTheDocument();
     const plagues = screen.getByRole('button', { name: 'Play Plague Years' });
     expect(within(plagues).getByText('Not played yet')).toBeInTheDocument();
