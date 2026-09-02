@@ -131,7 +131,7 @@ one authoritative record has nothing to drift against, and it fails open.
 
 ## The cleared end state
 
-A daily deals five cards and ends when the hand empties. The hand shrinks on a wrong placement,
+A daily (and an Archive replay, below) deals five cards and ends when the hand empties. The hand shrinks on a wrong placement,
 and also on a _correct_ one when the deck has nothing left to draw. So a game ending with
 fewer than five mistakes can only have got there by emptying the deck — exact, with no new
 state to track.
@@ -142,6 +142,62 @@ implying completeness; "Perfect Clear!" (zero mistakes) is exact.
 
 This also fixes thin category days — `sports` has ~50 playable events and has always been able
 to run the deck dry and call it Game Over.
+
+The outcome is gated to games that belong to a curated theme (`getCuratedThemeIdForConfig` in
+`themeReplay.ts`), **not** to any single-player game that ran dry. A Custom filter thin enough
+to exhaust is not a theme, and "Theme Cleared!" on it would be a lie.
+
+## Replaying past decks: the Archive tab
+
+The home pager's second tab lists every theme whose date has passed, on the game's own
+timeline by the date it ran, each carrying the player's best on it. Tapping one replays it.
+The pieces, and the decisions behind them:
+
+**A replay is a `suddenDeath` game with `curatedThemeId` on the config, never a `daily` with
+an old seed.** Everything keyed on `gameMode === 'daily'` / `dailySeed` — the single stored
+daily result, the cadence streak, the leaderboard warm and submit, the reminder — would
+otherwise fire for a date that is not today, and the first of those would overwrite today's
+result with yesterday's. `composeDeck` in `useWhenGame` routes a `curatedThemeId` to the
+theme's pool; everything else about the game is a Custom game, including which stats buckets
+it lands in. It carries no challenge code because a code cannot encode a hand-picked pool.
+
+**Reshuffled every play, from the whole theme.** `buildThemeReplayDeck` seeds
+`buildRampedDeck` with `archive:<id>:<random>` and applies no seven-day exclusion (that is a
+date-keyed daily concern; a replay has no date). Restart reseeds too. Rebuilding the day's
+exact deck was considered and rejected: it makes beating your best a memory test, and the
+exclusion chain would drop cards from the theme. `bandSpread: 1` still applies — the cap's
+rationale above assumed a curated theme fires on a handful of dates, and replays break that
+assumption, so the same ~5 band-0 footholds will open most replays of a theme. Accepted: the
+alternative is the measured 99.7%-hardest-quartile opening.
+
+**The card that fronts a deck is `getThemeSeedEvent`, not `buildDailyDeck(date)[0]`.** The
+latter is the card the player actually saw, but it walks the 28-56-day recency chain per
+date, a few hundred milliseconds on the main thread for a list this size. The cheap version
+seeds the theme's own pool on the release date with `windowOnly`, and is usually but not
+always the same card.
+
+**Listing rule.** A theme is shown once its earliest date is today or earlier: strictly past
+dates are replayable, today's is a locked "Replay tomorrow" card (so the list is never empty
+on the first curated day and the rule is visible), and of the themes still to come exactly one —
+the next scheduled — closes the list as a locked teaser (name, date and opening art; the seed
+card is the one card shown face-up on the day anyway). Anything beyond it stays hidden so the
+calendar is not laid bare. The card count comes from the
+**resolved** pool, because slugs whose events lost their art drop out of `allEvents`; a deck
+under `REPLAY_MIN_POOL` (8, `startGame`'s own floor) renders disabled rather than failing
+with a console error. "Today" is `useToday`'s date passed down as a prop, and the panel also
+takes a `calendarVersion` that `ModeSelect` bumps after each calendar refetch — the refetch
+mutates module state that nothing re-renders on, so without it a theme fetched after boot
+stayed invisible until the next unrelated render.
+
+**Personal bests** live in `when-theme-bests` (`themeBests.ts`), written by the stats recorder
+for the daily on a curated day and for every replay, so the day's score is the first record.
+`correctCount` is stored — the leaderboard's number, not the timeline length — and the card
+says "High score: N/M", M being the resolved pool minus the seed card so a perfect clear is a full fraction. A `bestThemeScore` milestone fires when a run beats a previous non-zero
+record. See [../stats-achievements/](../stats-achievements/index.md).
+
+**Tests seam.** `__setCuratedThemesForTest` populates the list as well as the date index;
+`themeReplay.test.ts` and `ArchivePanel.test.tsx` build synthetic catalogues rather than
+loading the real one.
 
 ## The theme bank
 

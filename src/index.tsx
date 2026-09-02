@@ -2,16 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
-import App from './App';
+import HomeRoute from './pages/Home';
 import DailyRoute from './routes/DailyRoute';
 import ChallengeRoute from './routes/ChallengeRoute';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Support from './pages/Support';
 import CardsPreview from './pages/CardsPreview';
-import Achievements from './pages/Achievements';
-import Stats from './pages/Stats';
-import Timeline from './pages/Timeline';
 import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
 import CardReports from './pages/CardReports';
@@ -26,16 +23,14 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        {/* The home pager; the segment names the tab it opens on (see pages/Home.tsx). */}
+        <Route path="/:tab?" element={<HomeRoute />} />
         <Route path="/daily" element={<DailyRoute />} />
         <Route path="/challenge/:code" element={<ChallengeRoute />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/support" element={<Support />} />
         <Route path="/cards-preview" element={<CardsPreview />} />
-        <Route path="/stats" element={<Stats />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/timeline" element={<Timeline />} />
         <Route path="/unlock-preview" element={<UnlockPreview />} />
         <Route path="/image-qc" element={<ImageQc />} />
         <Route path="/card-reports" element={<CardReports />} />

@@ -14,16 +14,17 @@ import {
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import CustomGameSettings from './CustomGameSettings';
-import TopBar from './TopBar';
+import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
+import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
-import AchievementsPanel from './panels/AchievementsPanel';
 import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
 import NextDailyCountdown from './NextDailyCountdown';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { loadCuratedThemes } from '../utils/curatedThemes';
+import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
+import { buildThemeReplayConfig } from '../utils/themeReplay';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import {
   getTodayResult,
@@ -43,6 +44,8 @@ interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
+  /** The tab to open on: the one the URL names (`src/pages/Home.tsx`). */
+  initialTab?: NavDest;
 }
 
 const LoadingState: React.FC = () => (
@@ -66,37 +69,38 @@ const LoadingState: React.FC = () => (
   </motion.div>
 );
 
-// Unified pager tabs, in order. The TopBar nav buttons and the swipe pager both address
-// these by key; keep the index<->key maps below in sync with the children in render order.
-type TabKey = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
-const tabKeyForIndex = (i: number): TabKey =>
-  i === 1 ? 'custom' : i === 2 ? 'stats' : i === 3 ? 'achievements' : i === 4 ? 'timeline' : 'home';
-// Indicator accent per tab: Custom is blue (accent-secondary), the rest gold.
-const PAGER_ACTIVE_COLORS = [
-  { dot: 'bg-accent', text: 'text-accent' },
-  { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
-  { dot: 'bg-accent', text: 'text-accent' },
-  { dot: 'bg-accent', text: 'text-accent' },
-  { dot: 'bg-accent', text: 'text-accent' },
+// Unified pager tabs, in render order — the single source of the page order. The TopBar nav
+// buttons and the swipe pager both address pages by key; the ModePager children below must
+// be rendered in this same order. Indicator accent per tab: Custom is blue
+// (accent-secondary), the rest gold.
+type TabKey = NavDest;
+const GOLD = { dot: 'bg-accent', text: 'text-accent' };
+const TABS: { key: TabKey; label: string; color: { dot: string; text: string } }[] = [
+  { key: 'home', label: 'Daily', color: GOLD },
+  { key: 'archive', label: 'Archive', color: GOLD },
+  {
+    key: 'custom',
+    label: 'Custom',
+    color: { dot: 'bg-accent-secondary', text: 'text-accent-secondary' },
+  },
+  { key: 'stats', label: 'Stats', color: GOLD },
+  { key: 'timeline', label: 'Timeline', color: GOLD },
 ];
-
+const tabKeyForIndex = (i: number): TabKey => TABS.at(i)?.key ?? 'home';
 const indexForTabKey = (key: TabKey): number =>
-  key === 'custom'
-    ? 1
-    : key === 'stats'
-      ? 2
-      : key === 'achievements'
-        ? 3
-        : key === 'timeline'
-          ? 4
-          : 0;
+  Math.max(
+    0,
+    TABS.findIndex((tab) => tab.key === key)
+  );
+const ALL_TAB_INDICES = TABS.map((_, i) => i);
 
-// Pre-mount the remaining pager panels at idle: mounting AchievementsPanel mid-swipe
-// (59 cards + an image burst) mutates the DOM during scroll-snap momentum, which stalls
-// the gesture on iOS. Mounting early also lets the badge art warm before the first swipe.
+// Pre-mount the remaining pager panels (Stats and Timeline) at idle rather than on first
+// visit: mounting a panel mid-swipe mutates the DOM during scroll-snap momentum, which stalls
+// the gesture on iOS. (Learned when the full badge grid was a tab — 59 cards + an image
+// burst; it now mounts only on demand inside Stats, see `stats/AchievementsSection.tsx`.)
 function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<number>>>) {
   useEffect(() => {
-    const mountAll = () => setVisited(new Set([0, 1, 2, 3, 4]));
+    const mountAll = () => setVisited(new Set(ALL_TAB_INDICES));
     if (typeof window.requestIdleCallback === 'function') {
       const handle = window.requestIdleCallback(mountAll, { timeout: 2000 });
       return () => window.cancelIdleCallback(handle);
@@ -163,26 +167,17 @@ function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard):
   return !board.submitted;
 }
 
-// Helper function to get default hand size based on player count
-const getDefaultHandSize = (count: number): number => {
-  switch (count) {
-    case 1:
-      return 7;
-    case 2:
-      return 6;
-    case 3:
-      return 5;
-    case 4:
-      return 4;
-    case 5:
-    case 6:
-      return 3;
-    default:
-      return 5;
-  }
-};
+// Default hand size by player count (1–6 players); anything else falls back to 5.
+const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
+const getDefaultHandSize = (count: number): number =>
+  (count >= 1 ? DEFAULT_HAND_SIZES.at(count - 1) : undefined) ?? 5;
 
-const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, allEvents }) => {
+const ModeSelect: React.FC<ModeSelectProps> = ({
+  onStart,
+  isLoading = false,
+  allEvents,
+  initialTab = 'home',
+}) => {
   const navigate = useNavigate();
   // Check if daily has been played today. Deliberately re-read every render rather than memoized:
   // `updateDailyResultWithLeaderboard` writes the placing into this record after the board
@@ -195,12 +190,25 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
   const pagerRef = useRef<ModePagerHandle>(null);
-  const [activePage, setActivePage] = useState(0);
-  const [visited, setVisited] = useState<Set<number>>(() => new Set([0, 1]));
+  const [activePage, setActivePage] = useState(() => indexForTabKey(initialTab));
+  // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
+  // Stats and Timeline otherwise wait for a visit or idle.
+  const [visited, setVisited] = useState<Set<number>>(
+    () => new Set((['home', 'archive', 'custom', initialTab] as TabKey[]).map(indexForTabKey))
+  );
   useEffect(() => {
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
+  // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
+  // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
+  // the daily and challenge routes also mount this screen while they load, and must keep
+  // their own path.
+  useEffect(() => {
+    const path = pathForNav(tabKeyForIndex(activePage));
+    const current = window.location.pathname;
+    if (navForPath(current) !== null && current !== path) navigate(path, { replace: true });
+  }, [activePage, navigate]);
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
@@ -218,9 +226,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
   // The theme calendar is refetched on the same triggers, and for the same reason a session
   // left open across midnight needs it: a client that booted yesterday holds yesterday's
   // calendar, so without this it would miss a theme scheduled for the day it just rolled into.
+  //
+  // The refetch mutates module state, which nothing re-renders on; `calendarVersion` is the
+  // signal the Archive tab recomputes its list on, so a theme fetched after boot appears.
+  const [calendarVersion, setCalendarVersion] = useState(0);
   const today = useToday((date) => {
     refreshBoardRef.current(date);
-    void loadCuratedThemes({ force: true });
+    void loadCuratedThemes({ force: true }).then(() => setCalendarVersion((v) => v + 1));
   });
 
   // `todayResult` is what makes the score claimable here: the game-over popup is the only other
@@ -344,6 +356,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
     onStart(buildDailyConfig());
   };
 
+  const handleArchivePlay = (theme: CuratedTheme) => {
+    onStart(buildThemeReplayConfig(theme));
+  };
+
   const handleShareDaily = async () => {
     if (!todayResult) return;
     const showToast = await shareDailyResult(
@@ -426,15 +442,15 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
       />
 
       {/* Full-width track: Daily/Custom keep the narrow centered column (below); the
-          Stats/Achievements/Timeline panels use their own wider max-widths so the timeline
-          isn't squashed. */}
+          Archive, Stats and Timeline panels use their own widths. */}
       <div className="flex flex-col flex-1 min-h-0">
         <ModePager
           ref={pagerRef}
-          labels={['Daily', 'Custom', 'Stats', 'Achievements', 'Timeline']}
+          labels={TABS.map((tab) => tab.label)}
           hintKey="when:modeSwipeHintSeen"
           onIndexChange={setActivePage}
-          activeColors={PAGER_ACTIVE_COLORS}
+          initialIndex={indexForTabKey(initialTab)}
+          activeColors={TABS.map((tab) => tab.color)}
         >
           {/* Daily page */}
           <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
@@ -443,7 +459,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 When<span className="text-accent">?</span>
               </h1>
               <p className="text-text-muted text-sm mt-1 font-body">
-                Drag events into place — build the longest timeline
+                Drag events into place, build the longest timeline
               </p>
             </div>
 
@@ -464,6 +480,15 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
               />
             </div>
           </div>
+
+          {/* Archive page: past curated decks, replayable from the day after they ran */}
+          <ArchivePanel
+            allEvents={allEvents}
+            today={today}
+            calendarVersion={calendarVersion}
+            onPlay={handleArchivePlay}
+            active={activePage === indexForTabKey('archive')}
+          />
 
           {/* Custom page */}
           <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
@@ -492,14 +517,18 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
           </div>
 
           {/* Stats page (lazy: mounted once first visited) */}
-          {visited.has(2) ? <StatsPanel /> : <div />}
+          {visited.has(indexForTabKey('stats')) ? (
+            <StatsPanel active={activePage === indexForTabKey('stats')} />
+          ) : (
+            <div />
+          )}
 
-          {/* Achievements page (lazy) */}
-          {visited.has(3) ? <AchievementsPanel active={activePage === 3} /> : <div />}
-
-          {/* Timeline page (lazy) */}
-          {visited.has(4) ? (
-            <TimelinePanel allEvents={allEvents} active={activePage === 4} />
+          {/* My Timeline page (lazy): the collection, laid out on the game's own timeline */}
+          {visited.has(indexForTabKey('timeline')) ? (
+            <TimelinePanel
+              allEvents={allEvents}
+              active={activePage === indexForTabKey('timeline')}
+            />
           ) : (
             <div />
           )}

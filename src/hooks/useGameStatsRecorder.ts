@@ -9,6 +9,10 @@ import {
   GameMilestone,
 } from '../utils/statsStorage';
 import { markNavUnseen } from '../utils/playerStorage';
+import { getCuratedThemeIdForConfig } from '../utils/themeReplay';
+import { getThemeBest, recordThemeResult } from '../utils/themeBests';
+import { getThemeOutcome } from '../utils/themeOutcome';
+import { appendGameRecord, buildGameRecord } from '../utils/gameHistory';
 
 interface GameStatsRecording {
   /** Achievement ids unlocked by the most recently recorded game. */
@@ -40,10 +44,28 @@ export function useGameStatsRecorder(
     if (recordedRef.current || eventsByName.size === 0) return;
     recordedRef.current = true;
     // Snapshot records BEFORE recording so we can tell which the game just beat.
-    const prev = { lifetime: getLifetimeStats(), cadence: getDailyCadence() };
+    const themeId = getCuratedThemeIdForConfig(state.lastConfig);
+    const prev = {
+      lifetime: getLifetimeStats(),
+      cadence: getDailyCadence(),
+      themeBest: themeId ? (getThemeBest(themeId)?.correctCount ?? 0) : undefined,
+    };
     const unlocked = recordGameResult(state, eventsByName);
-    // Re-arm the Achievements nav dot so the player is nudged to go see what they earned.
-    if (unlocked.length > 0) markNavUnseen('achievements');
+    const { survived, perfect } = getThemeOutcome(state);
+    // A curated theme's record — the daily on its day and every Archive replay alike.
+    if (themeId) {
+      recordThemeResult(themeId, {
+        correctCount: state.placementHistory.filter(Boolean).length,
+        cleared: survived,
+        perfect,
+      });
+    }
+    // The per-game history behind the stats page's calendar and, later, its trend views.
+    const record = buildGameRecord(state, { themeId, cleared: survived, perfect });
+    if (record) appendGameRecord(record);
+    // Re-arm the Stats nav dot — the badges live on that tab — so the player is nudged to go
+    // see what they earned.
+    if (unlocked.length > 0) markNavUnseen('stats');
     setNewlyUnlockedAchievements(unlocked);
     setGameMilestones(detectMilestones(state, prev));
     // eslint-disable-next-line react-hooks/exhaustive-deps -- `state` read once per game, ref-guarded

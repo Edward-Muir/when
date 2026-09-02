@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, BarChart3, Trophy, Hourglass, Settings } from 'lucide-react';
+import { Home, Menu as MenuIcon, BarChart3, Settings, Archive, Hourglass } from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
@@ -9,22 +9,51 @@ import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
 import { GameMode } from '../types';
 
+/**
+ * Every nav destination, in the order the home pager shows them. Also the home pager's tab
+ * key type, so the two cannot drift apart. Achievements is not one: the badges live on the
+ * Stats tab (`stats/AchievementsSection.tsx`).
+ */
+export type NavDest = 'home' | 'archive' | 'custom' | 'stats' | 'timeline';
+
+/**
+ * The path that opens the home screen on each tab. Every tab is addressable, so the top bar
+ * can show the same five buttons on every page: in the pager they scroll, elsewhere they
+ * navigate here and the home screen opens on that tab (`src/pages/Home.tsx`).
+ */
+const NAV_PATHS: Record<NavDest, string> = {
+  home: '/',
+  archive: '/archive',
+  custom: '/custom',
+  stats: '/stats',
+  timeline: '/timeline',
+};
+
+// eslint-disable-next-line security/detect-object-injection -- key is the NavDest union
+export const pathForNav = (key: NavDest): string => NAV_PATHS[key];
+
+/** The tab a path names, or null for any other path. */
+export function navForPath(pathname: string): NavDest | null {
+  const entry = Object.entries(NAV_PATHS).find(([, path]) => path === pathname);
+  return entry ? (entry[0] as NavDest) : null;
+}
+
 interface TopBarProps {
   showHome?: boolean;
   showTitle?: boolean;
   onHomeClick?: () => void;
   gameMode?: GameMode | null;
   dailyTheme?: string;
-  /** Show the Stats + Achievements + Timeline buttons (navigate to their pages). */
+  /** Show the Archive, Custom, Stats and Timeline buttons. */
   showStatsAchievements?: boolean;
   /** Which nav destination is the current page — that button renders in the active style. */
-  activeNav?: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
+  activeNav?: NavDest;
   /**
    * When provided, nav buttons call this with the destination key instead of routing — the
-   * home screen uses it to scroll its unified pager. A Custom (cog) button is shown only in
-   * this mode (Custom has no standalone route). When absent, buttons navigate to routes.
+   * home screen uses it to scroll its unified pager. When absent, buttons navigate to the
+   * tab's path, which opens the home screen on that tab.
    */
-  onNavClick?: (key: 'home' | 'custom' | 'stats' | 'achievements' | 'timeline') => void;
+  onNavClick?: (key: NavDest) => void;
 }
 
 const TopBar: React.FC<TopBarProps> = ({
@@ -78,7 +107,6 @@ const TopBar: React.FC<TopBarProps> = ({
     active:scale-95
   `;
 
-  type NavDest = 'home' | 'custom' | 'stats' | 'achievements' | 'timeline';
   const navBtn = (key: NavDest) => {
     if (activeNav !== key) return buttonClass;
     return key === 'custom' ? activeButtonClassCustom : activeButtonClass;
@@ -87,10 +115,11 @@ const TopBar: React.FC<TopBarProps> = ({
   const ariaCurrent = (key: NavDest): 'page' | undefined =>
     activeNav === key ? 'page' : undefined;
 
-  // One-time "new" dots on the Stats/Achievements/Timeline buttons until first visited.
+  // One-time "new" dots until first visited, on the Archive, Stats and Timeline buttons. The
+  // Stats dot is also re-armed whenever a badge unlocks (`useGameStatsRecorder`).
   const [seenNav, setSeenNav] = useState(() => ({
+    archive: hasSeenNav('archive'),
     stats: hasSeenNav('stats'),
-    achievements: hasSeenNav('achievements'),
     timeline: hasSeenNav('timeline'),
   }));
 
@@ -99,10 +128,10 @@ const TopBar: React.FC<TopBarProps> = ({
     markNavSeen(key);
     setSeenNav((prev) => {
       switch (key) {
+        case 'archive':
+          return { ...prev, archive: true };
         case 'stats':
           return { ...prev, stats: true };
-        case 'achievements':
-          return { ...prev, achievements: true };
         case 'timeline':
           return { ...prev, timeline: true };
       }
@@ -110,10 +139,10 @@ const TopBar: React.FC<TopBarProps> = ({
   };
   const isSeen = (key: NavKey) => {
     switch (key) {
+      case 'archive':
+        return seenNav.archive;
       case 'stats':
         return seenNav.stats;
-      case 'achievements':
-        return seenNav.achievements;
       case 'timeline':
         return seenNav.timeline;
     }
@@ -129,23 +158,27 @@ const TopBar: React.FC<TopBarProps> = ({
   }, [activeNav]);
 
   // Unified nav handler. In pager mode (onNavClick set) it scrolls the home pager; otherwise
-  // it routes. Stats/Achievements/Timeline clear their one-time "new" dot on first visit.
+  // it routes. Archive/Stats clear their one-time "new" dot on first visit.
   const handleNav = (key: NavDest) => {
     if (key !== 'home' && key !== 'custom' && !isSeen(key)) markSeen(key);
     if (onNavClick) {
       onNavClick(key);
     } else if (key === 'home') {
       onHomeClick?.();
-    } else if (key !== 'custom') {
-      // Custom has no standalone route — its button only renders in pager mode.
-      navigate(`/${key}`);
+    } else {
+      navigate(pathForNav(key));
     }
   };
 
   // Gold "new" dot; the bg ring separates it from the button edge.
   const newDot = (
-    <span className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg" />
+    <span
+      role="img"
+      aria-label="New"
+      className="absolute -top-0.5 -right-0.5 h-2 w-2 rounded-full bg-accent ring-2 ring-bg"
+    />
   );
+  const newDotFor = (key: NavKey) => (isSeen(key) ? null : newDot);
 
   return (
     <>
@@ -192,8 +225,9 @@ const TopBar: React.FC<TopBarProps> = ({
             <div />
           )}
 
-          {/* Navigation only: Home · Stats · Achievements · Timeline · Menu.
-              The current destination is rendered in the active (accent-filled) style. */}
+          {/* Navigation only: Home · Archive · Custom · Stats · Timeline · Menu. The current
+              destination is rendered in the active (accent-filled) style. Six buttons fit a
+              320px phone at gap-2 / p-2 (6 × 38px + 5 × 8px + 16px = 284px); seven did not. */}
           <div className="flex items-center gap-2">
             {/* Home Button - a permanent nav destination; active when on the home page */}
             {showHome && onHomeClick && (
@@ -207,8 +241,21 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Custom (cog) — pager mode only; jumps to the Custom tab (no standalone route) */}
-            {showStatsAchievements && onNavClick && (
+            {/* Archive — the past-decks tab */}
+            {showStatsAchievements && (
+              <button
+                onClick={() => handleNav('archive')}
+                className={navBtn('archive')}
+                aria-label="Past decks"
+                aria-current={ariaCurrent('archive')}
+              >
+                <Archive className={navIcon('archive')} />
+                {newDotFor('archive')}
+              </button>
+            )}
+
+            {/* Custom (cog) */}
+            {showStatsAchievements && (
               <button
                 onClick={() => handleNav('custom')}
                 className={navBtn('custom')}
@@ -219,40 +266,33 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Stats + Achievements + Timeline (sibling tabs/routes; active one is highlighted) */}
+            {/* Stats */}
             {showStatsAchievements && (
-              <>
-                <button
-                  onClick={() => handleNav('stats')}
-                  className={navBtn('stats')}
-                  aria-label="View stats"
-                  aria-current={ariaCurrent('stats')}
-                >
-                  <BarChart3 className={navIcon('stats')} />
-                  {!seenNav.stats && newDot}
-                </button>
-                <button
-                  onClick={() => handleNav('achievements')}
-                  className={navBtn('achievements')}
-                  aria-label="View achievements"
-                  aria-current={ariaCurrent('achievements')}
-                >
-                  <Trophy className={navIcon('achievements')} />
-                  {!seenNav.achievements && newDot}
-                </button>
-                <button
-                  onClick={() => handleNav('timeline')}
-                  className={navBtn('timeline')}
-                  aria-label="View my timeline"
-                  aria-current={ariaCurrent('timeline')}
-                >
-                  <Hourglass className={navIcon('timeline')} />
-                  {!seenNav.timeline && newDot}
-                </button>
-              </>
+              <button
+                onClick={() => handleNav('stats')}
+                className={navBtn('stats')}
+                aria-label="View stats"
+                aria-current={ariaCurrent('stats')}
+              >
+                <BarChart3 className={navIcon('stats')} />
+                {newDotFor('stats')}
+              </button>
             )}
 
-            {/* Menu Button */}
+            {/* My Timeline — the collection tab */}
+            {showStatsAchievements && (
+              <button
+                onClick={() => handleNav('timeline')}
+                className={navBtn('timeline')}
+                aria-label="View my timeline"
+                aria-current={ariaCurrent('timeline')}
+              >
+                <Hourglass className={navIcon('timeline')} />
+                {newDotFor('timeline')}
+              </button>
+            )}
+
+            {/* Menu Button — never dotted: every "new" destination is a nav button now */}
             <button
               onClick={() => setIsMenuOpen(true)}
               className={buttonClass}

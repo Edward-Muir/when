@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Ruler, Zap, Flame } from 'lucide-react';
+import { Ruler, Zap, Flame, Archive } from 'lucide-react';
 import type { GameMilestone, MilestoneKind } from '../utils/statsStorage';
 import Modal from './ui/Modal';
 
@@ -23,6 +23,7 @@ const MILESTONE_META: Record<
   longestStreakDaily: { Icon: Zap, label: 'Longest daily streak', unit: '' },
   longestStreakCustom: { Icon: Zap, label: 'Longest custom streak', unit: '' },
   longestDailyRun: { Icon: Flame, label: 'Longest daily run', unit: 'days' },
+  bestThemeScore: { Icon: Archive, label: 'Best on this deck', unit: 'events' },
 };
 
 /**

@@ -22,18 +22,16 @@ interface TimelinePanelProps {
   allEvents: HistoricalEvent[];
   /**
    * Whether this panel is the visible pager tab. The home-screen pager pre-mounts panels
-   * at idle, so the first-view intro must wait until the tab is actually shown. Defaults
-   * to true for the standalone `/timeline` route.
+   * at idle, so the first-view intro must wait until the tab is actually shown.
    */
   active?: boolean;
 }
 
 /**
  * My Timeline content panel: the player's personal collection (events they've correctly
- * placed), with a filter control and a vertically-scrolling timeline. Rendered both by the
- * `/timeline` route (via ViewTimeline, wrapped in a TopBar) and as a tab inside the
- * home-screen pager. The Filter button lives in the panel header — it's a content control,
- * not navigation.
+ * placed), with a filter control and a vertically-scrolling timeline. Mounted by the
+ * home-screen pager's Timeline tab (which `/timeline` opens directly). The Filter button
+ * lives in the panel header — it's a content control, not navigation.
  */
 const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true }) => {
   // Filter state - default to all selected
@@ -98,24 +96,23 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
 
   return (
     <div className="flex flex-1 min-h-0 flex-col">
-      {/* Header — styled like the Achievements page heading.
-          Filter sits here (a content control), not in the nav bar. */}
-      <div className="px-3">
-        <div className="mx-auto flex w-full max-w-sm flex-wrap items-center justify-between gap-2 py-5">
-          <h1 className="font-display text-2xl font-bold text-text">My Timeline</h1>
-          <div className="flex items-center gap-2">
-            <span className="font-mono text-sm text-text-muted">
-              {collected} / {total || '…'} collected
-            </span>
-            <button
-              onClick={() => setShowFilterPopup(true)}
-              className="p-2 rounded-xl bg-surface border border-border hover:bg-border transition-colors active:scale-95"
-              aria-label="Filter timeline"
-            >
-              <SlidersHorizontal className="w-5 h-5 text-text" />
-            </button>
-          </div>
+      {/* Header — the Daily, Custom, Archive and Stats pages' heading, so every page reads
+          alike. Filter sits here (a content control), not in the nav bar. */}
+      <div className="mx-auto w-full max-w-sm px-3 text-left mb-3">
+        <div className="flex items-start justify-between gap-2">
+          <h1 className="text-5xl font-bold text-text font-display leading-none">My Timeline</h1>
+          <button
+            onClick={() => setShowFilterPopup(true)}
+            className="p-2 rounded-xl bg-surface border border-border hover:bg-border transition-colors active:scale-95"
+            aria-label="Filter timeline"
+          >
+            <SlidersHorizontal className="w-5 h-5 text-text" />
+          </button>
         </div>
+        <p className="text-text-muted text-sm mt-1 font-body">
+          <span className="font-mono">{collected.toLocaleString()}</span> of{' '}
+          <span className="font-mono">{total ? total.toLocaleString() : '…'}</span> events placed
+        </p>
       </div>
 
       {/* Timeline takes the remaining space below the header */}
