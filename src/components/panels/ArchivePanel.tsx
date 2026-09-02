@@ -74,7 +74,7 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
       <div className="mx-auto w-full max-w-sm px-3 text-left mb-3">
         <h1 className="text-5xl font-bold text-text font-display leading-none">Archive</h1>
         <p className="text-text-muted text-sm mt-1 font-body">
-          Replay curated decks — beat your high score
+          Replay curated decks. Beat your high score
         </p>
       </div>
 
