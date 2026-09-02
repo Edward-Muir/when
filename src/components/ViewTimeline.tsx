@@ -22,7 +22,7 @@ const ViewTimeline: React.FC<ViewTimelineProps> = ({ allEvents, onHomeClick }) =
         onHomeClick={onHomeClick}
         gameMode={null}
       />
-      <div className="pt-topbar-fixed flex flex-1 min-h-0 flex-col">
+      <div className="pt-topbar-wide flex flex-1 min-h-0 flex-col">
         <TimelinePanel allEvents={allEvents} />
       </div>
     </div>

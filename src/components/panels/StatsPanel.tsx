@@ -78,9 +78,7 @@ const StatsPanel: React.FC = () => {
       {/* Header — the Daily, Custom and Archive pages' heading, so the tabs read alike */}
       <div className="text-left mb-3">
         <h1 className="text-5xl font-bold text-text font-display leading-none">Stats</h1>
-        <p className="text-text-muted text-sm mt-1 font-body">
-          Your records, daily calendar and collection
-        </p>
+        <p className="text-text-muted text-sm mt-1 font-body">How you've played, day by day</p>
       </div>
 
       <div className="flex flex-col gap-3 pb-4">

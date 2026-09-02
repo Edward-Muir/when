@@ -92,11 +92,13 @@ const AchievementsPanel: React.FC<{ active?: boolean }> = ({ active = true }) =>
         }}
       />
 
-      <div className="flex flex-wrap items-baseline justify-between gap-2 py-5">
-        <h1 className="font-display text-2xl font-bold text-text">Achievements</h1>
-        <span className="font-mono text-sm text-text-muted">
-          {unlocked.length} / {ACHIEVEMENTS.length} unlocked
-        </span>
+      {/* Header — the Daily, Custom, Archive and Stats pages' heading, so every page reads alike */}
+      <div className="text-left mb-3">
+        <h1 className="text-5xl font-bold text-text font-display leading-none">Achievements</h1>
+        <p className="text-text-muted text-sm mt-1 font-body">
+          <span className="font-mono">{unlocked.length}</span> of{' '}
+          <span className="font-mono">{ACHIEVEMENTS.length}</span> badges unlocked
+        </p>
       </div>
 
       <Section title="Unlocked" items={unlocked} />

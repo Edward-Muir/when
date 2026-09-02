@@ -14,7 +14,7 @@ const Achievements: React.FC = () => {
     <div className="h-screen-safe overflow-y-auto bg-bg">
       <TopBar showHome showTitle={false} showStatsAchievements onHomeClick={() => navigate('/')} />
 
-      <div className="pt-topbar-fixed pb-safe">
+      <div className="pt-topbar-wide pb-safe">
         <AchievementsPanel />
       </div>
     </div>

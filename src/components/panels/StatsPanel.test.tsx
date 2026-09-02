@@ -56,7 +56,7 @@ describe('StatsPanel', () => {
   it('renders the page header in the shared recipe and zeros for a fresh player', () => {
     renderPanel();
     expect(screen.getByRole('heading', { level: 1, name: 'Stats' })).toBeInTheDocument();
-    expect(screen.getByText('Your records, daily calendar and collection')).toBeInTheDocument();
+    expect(screen.getByText("How you've played, day by day")).toBeInTheDocument();
     expect(screen.getByText('Longest timeline')).toBeInTheDocument();
     expect(screen.getByText('Games played')).toBeInTheDocument();
     expect(

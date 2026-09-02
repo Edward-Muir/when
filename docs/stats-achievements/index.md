@@ -98,7 +98,8 @@ Decisions, so they are not re-litigated:
 - Colour fills are `color-mix()` utilities (`.heat-played`, `.heat-skipped`, `.bar-muted`
   in `index.css`) because opacity modifiers on the theme tokens compile to nothing.
 - The header uses the Daily/Custom/Archive recipe (`text-5xl` display h1 + one muted
-  tagline). `AchievementsPanel` and `TimelinePanel` still carry the older small heading.
+  line). Achievements and My Timeline use it too; their line is the live count ("14 of 60
+  badges unlocked", "486 of 4,120 events placed") rather than a slogan.
 
 ## Milestones ("Personal Best" popups)
 
