@@ -43,7 +43,6 @@ const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
             />
           }
         />
-        <Route path="/achievements" element={<h1>Achievements page</h1>} />
         <Route path="/timeline" element={<h1>My Timeline page</h1>} />
       </Routes>
     </MemoryRouter>
@@ -52,15 +51,6 @@ const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
 };
 
 describe('Menu', () => {
-  it('navigates to /achievements, closes, and clears the achievements dot', async () => {
-    const { onClose, onNavItemClick } = renderMenu();
-    await userEvent.click(screen.getByRole('link', { name: /achievements/i }));
-
-    expect(screen.getByText('Achievements page')).toBeInTheDocument();
-    expect(onClose).toHaveBeenCalled();
-    expect(onNavItemClick).toHaveBeenCalledWith('achievements');
-  });
-
   it('navigates to /timeline, closes, and clears the timeline dot', async () => {
     const { onClose, onNavItemClick } = renderMenu();
     await userEvent.click(screen.getByRole('link', { name: /my timeline/i }));
@@ -70,12 +60,17 @@ describe('Menu', () => {
     expect(onNavItemClick).toHaveBeenCalledWith('timeline');
   });
 
-  it('shows a "new" dot only on the items TopBar says are unseen', () => {
-    renderMenu({ navDots: { achievements: true, timeline: false } });
+  it('no longer lists Achievements — they live on the Stats tab', () => {
+    renderMenu();
+    expect(screen.queryByRole('link', { name: /achievements/i })).toBeNull();
+  });
+
+  it('shows a "new" dot on My Timeline while TopBar says it is unseen', () => {
+    renderMenu({ navDots: { timeline: true } });
 
     const dots = screen.getAllByRole('img', { name: 'New' });
     expect(dots).toHaveLength(1);
-    expect(screen.getByRole('link', { name: /achievements/i })).toContainElement(dots[0]);
+    expect(screen.getByRole('link', { name: /my timeline/i })).toContainElement(dots[0]);
   });
 
   it('shows no dots when none are passed', () => {

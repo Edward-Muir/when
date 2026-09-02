@@ -182,8 +182,8 @@ const TopBar: React.FC<TopBarProps> = ({
 
   // The menu button carries a dot while either of its destinations is unseen; the item dots
   // inside the menu say which. `markSeen` is passed down so a tap clears both in lockstep.
-  const menuDots = { achievements: !isSeen('achievements'), timeline: !isSeen('timeline') };
-  const menuHasNew = menuDots.achievements || menuDots.timeline;
+  const menuDots = { timeline: !isSeen('timeline') };
+  const menuHasNew = menuDots.timeline;
 
   return (
     <>

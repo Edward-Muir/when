@@ -13,7 +13,6 @@ import {
   Apple,
   Bell,
   BellOff,
-  Trophy,
   Hourglass,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
@@ -33,10 +32,10 @@ interface MenuProps {
   onShowToast: () => void;
   gameMode?: GameMode | null;
   /**
-   * Which of the two page links still carry their one-time "new" dot. Owned by TopBar, which
+   * Whether the My Timeline link still carries its one-time "new" dot. Owned by TopBar, which
    * mirrors it as a dot on the menu button; `onNavItemClick` is how a tap clears both.
    */
-  navDots?: { achievements: boolean; timeline: boolean };
+  navDots?: { timeline: boolean };
   onNavItemClick?: (key: NavKey) => void;
 }
 
@@ -195,21 +194,8 @@ const Menu: React.FC<MenuProps> = ({
 
               {/* Menu Items */}
               <div className="py-2 flex-1">
-                {/* Achievements and My Timeline are routes, not home-pager tabs — they were
-                    moved here to declutter the home screen. Each keeps its one-time "new" dot. */}
-                <Link
-                  to="/achievements"
-                  className={menuItemClass}
-                  onClick={() => {
-                    onNavItemClick?.('achievements');
-                    onClose();
-                  }}
-                >
-                  <Trophy className={iconClass} />
-                  <span className="font-body">Achievements</span>
-                  {navDots?.achievements && <NewDot />}
-                </Link>
-
+                {/* My Timeline is a route, not a home-pager tab — moved here to declutter the
+                    home screen. It keeps its one-time "new" dot. */}
                 <Link
                   to="/timeline"
                   className={menuItemClass}

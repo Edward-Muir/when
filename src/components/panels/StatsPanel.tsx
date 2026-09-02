@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   CalendarDays,
   Flame,
@@ -10,8 +10,9 @@ import {
   TrendingUp,
   Zap,
 } from 'lucide-react';
-import { loadAllEvents } from '../../utils/eventLoader';
+import { loadAllEvents, getCachedEvents } from '../../utils/eventLoader';
 import {
+  buildEventsByName,
   getAchievements,
   getCollectionState,
   getDailyCadence,
@@ -31,27 +32,46 @@ import { useToday } from '../../hooks/useToday';
 import { StatCard, StatRow, SectionHeading, iconClass } from '../stats/primitives';
 import CalendarHeatmap from '../stats/CalendarHeatmap';
 import ScoreDistribution from '../stats/ScoreDistribution';
-import AchievementsTile from '../stats/AchievementsTile';
+import BadgesSection from '../stats/BadgesSection';
+import type { HistoricalEvent } from '../../types';
 
 const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
 
+interface StatsPanelProps {
+  /**
+   * Whether this panel is the visible pager tab. The pager pre-mounts it at idle, so the
+   * badge-art warm waits for the tab to actually be shown (see `BadgesSection`).
+   */
+  active?: boolean;
+}
+
 /**
- * Stats content panel: records, the year calendar, daily score bars, the achievements
- * link, lifetime totals and the collection meter — all derived from the localStorage
- * primitives. Rendered both by the `/stats` route (under a TopBar) and as a tab inside the
- * home-screen pager, each of which owns the scroll container. Everything reads zero-defaults
- * on empty storage, so a fresh player sees clean zeros with no crash.
+ * Stats content panel: records, the year calendar, daily score bars, the badge case,
+ * lifetime totals and the collection meter — all derived from the localStorage primitives.
+ * Mounted by the home-screen pager's Stats tab (which `/stats` opens directly); the pager
+ * page owns the scroll container. Everything reads zero-defaults on empty storage, so a
+ * fresh player sees clean zeros with no crash.
  *
  * Storage is re-read every render, like the Archive tab: a game just finished writes here
  * and the pager re-renders on return without any of this panel's deps changing. The
  * derivations are a few hundred cells and renders are rare, so nothing is memoised.
  */
-const StatsPanel: React.FC = () => {
+const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
   const today = useToday();
-  const [totalEvents, setTotalEvents] = useState(0);
+  // The catalogue, for the collection total and the badges' art. Seeded synchronously from
+  // the module-level cache (populated during the app's loading phase) so remounts render
+  // badge art immediately instead of flashing art-less cards.
+  const [events, setEvents] = useState<HistoricalEvent[]>(() => getCachedEvents() ?? []);
   useEffect(() => {
-    loadAllEvents().then((events) => setTotalEvents(events.length));
+    if (events.length > 0) return;
+    loadAllEvents().then(setEvents);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- fallback fetch, run once on mount
   }, []);
+  const totalEvents = events.length;
+  const eventsByName = useMemo(
+    () => (events.length > 0 ? buildEventsByName(events) : undefined),
+    [events]
+  );
 
   const lifetime = getLifetimeStats();
   const cadence = getDailyCadence();
@@ -68,7 +88,6 @@ const StatsPanel: React.FC = () => {
     today,
   });
   const buckets = scoreBuckets(cadence.dailyCorrectHistogram, todayResult?.correctCount);
-  const unlockedCount = ACHIEVEMENTS.filter((a) => !!achievements.unlocked[a.id]).length;
 
   const collected = collection.placedEventIds.length;
   const collectionPct = totalEvents > 0 ? Math.round((collected / totalEvents) * 100) : 0;
@@ -121,7 +140,11 @@ const StatsPanel: React.FC = () => {
           />
         </StatCard>
 
-        <AchievementsTile unlocked={unlockedCount} total={ACHIEVEMENTS.length} />
+        <BadgesSection
+          unlockedMap={achievements.unlocked}
+          eventsByName={eventsByName}
+          active={active}
+        />
 
         <StatCard>
           <SectionHeading>Lifetime</SectionHeading>

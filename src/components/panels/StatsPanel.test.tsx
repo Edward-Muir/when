@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
 import StatsPanel from './StatsPanel';
@@ -10,20 +10,31 @@ import {
   saveDailyCadence,
   saveLifetimeStats,
 } from '../../utils/statsStorage';
-import { saveDailyResult, hasSeenNav, markNavUnseen } from '../../utils/playerStorage';
+import { saveDailyResult } from '../../utils/playerStorage';
 import { getLocalDateString } from '../../utils/puzzleDate';
 import { addDays, formatWeekdayDate } from '../../utils/statsDerived';
 import { ACHIEVEMENTS } from '../../data/achievements';
-import { loadAllEvents } from '../../utils/eventLoader';
+import { loadAllEvents, getCachedEvents } from '../../utils/eventLoader';
+import { preloadEventImages } from '../../utils/preloadImage';
 
-jest.mock('../../utils/eventLoader', () => ({ loadAllEvents: jest.fn() }));
+jest.mock('../../utils/eventLoader', () => ({
+  loadAllEvents: jest.fn(),
+  getCachedEvents: jest.fn(),
+}));
+jest.mock('../../utils/preloadImage', () => ({ preloadEventImages: jest.fn() }));
+
+// The badges' art resolves through the catalogue by event name, so the fake catalogue
+// carries every badge's event with a distinct image_url the prefetch assertions can read.
+const catalogue = [
+  ...Array.from({ length: 40 }, (_, i) => ({ name: `e${i}` })),
+  ...ACHIEVEMENTS.map((a) => ({ name: a.eventName, image_url: `img-${a.id}` })),
+];
 
 // jsdom implements neither; `beforeEach` because CRA's `resetMocks` strips them between tests.
 beforeEach(() => {
   localStorage.clear();
-  (loadAllEvents as jest.Mock).mockResolvedValue(
-    Array.from({ length: 40 }, (_, i) => ({ name: `e${i}` }))
-  );
+  (loadAllEvents as jest.Mock).mockResolvedValue(catalogue);
+  (getCachedEvents as jest.Mock).mockReturnValue(null);
   Element.prototype.scrollIntoView = jest.fn();
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
@@ -40,15 +51,19 @@ beforeEach(() => {
   });
 });
 
-const renderPanel = () =>
+const renderPanel = (props: Partial<React.ComponentProps<typeof StatsPanel>> = {}) =>
   render(
     <MemoryRouter initialEntries={['/stats']}>
       <Routes>
-        <Route path="/stats" element={<StatsPanel />} />
-        <Route path="/achievements" element={<h1>Achievements page</h1>} />
+        <Route path="/stats" element={<StatsPanel {...props} />} />
       </Routes>
     </MemoryRouter>
   );
+
+const badgeButton = (id: string) => {
+  const name = ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
+  return screen.queryByRole('button', { name: `View ${name} achievement` });
+};
 
 const today = getLocalDateString();
 
@@ -59,8 +74,13 @@ describe('StatsPanel', () => {
     expect(screen.getByText("How you've played, day by day")).toBeInTheDocument();
     expect(screen.getByText('Longest timeline')).toBeInTheDocument();
     expect(screen.getByText('Games played')).toBeInTheDocument();
+    expect(screen.getByText(/of.*unlocked/)).toHaveTextContent(
+      `0 of ${ACHIEVEMENTS.length} unlocked`
+    );
+    expect(screen.getByText('Finish a game to earn your first badge.')).toBeInTheDocument();
+    expect(screen.queryAllByRole('button', { name: /achievement$/ })).toHaveLength(0);
     expect(
-      screen.getByLabelText(`Achievements, 0 of ${ACHIEVEMENTS.length} unlocked`)
+      screen.getByRole('button', { name: `Show all ${ACHIEVEMENTS.length}` })
     ).toBeInTheDocument();
     expect(screen.queryByText(/Playing since/)).toBeNull();
     // No day is lit, and no cell is drawn for the future.
@@ -122,15 +142,62 @@ describe('StatsPanel', () => {
     expect(screen.getByText(/average/)).toHaveTextContent('Today: 9 events · average 7.0');
   });
 
-  it('links the achievements tile to the route and clears its new dot', async () => {
-    saveAchievements({ unlocked: { '01': today, '02': today } });
-    markNavUnseen('achievements');
+  it('shows the unlocked badges newest first and the locked ones only on demand', async () => {
+    saveAchievements({ unlocked: { '01': '2026-08-01', '02': '2026-08-09' } });
     renderPanel();
 
-    const tile = screen.getByLabelText(`Achievements, 2 of ${ACHIEVEMENTS.length} unlocked`);
-    expect(tile).toHaveAttribute('href', '/achievements');
-    await userEvent.click(tile);
-    expect(screen.getByRole('heading', { name: 'Achievements page' })).toBeInTheDocument();
-    expect(hasSeenNav('achievements')).toBe(true);
+    expect(screen.getByText(/of.*unlocked/)).toHaveTextContent(
+      `2 of ${ACHIEVEMENTS.length} unlocked`
+    );
+    const shown = screen.getAllByRole('button', { name: /achievement$/ });
+    expect(shown).toHaveLength(2);
+    expect(shown[0]).toBe(badgeButton('02'));
+    expect(shown[1]).toBe(badgeButton('01'));
+    expect(screen.queryByRole('heading', { name: 'Locked' })).toBeNull();
+
+    await userEvent.click(screen.getByRole('button', { name: `Show all ${ACHIEVEMENTS.length}` }));
+    expect(screen.getByRole('heading', { name: 'Locked' })).toBeInTheDocument();
+    expect(screen.getAllByRole('button', { name: /achievement$/ })).toHaveLength(
+      ACHIEVEMENTS.length
+    );
+
+    await userEvent.click(screen.getByRole('button', { name: 'Show fewer' }));
+    expect(screen.queryByRole('heading', { name: 'Locked' })).toBeNull();
+    expect(screen.getAllByRole('button', { name: /achievement$/ })).toHaveLength(2);
+  });
+
+  it('warms art for the unlocked badges only, and the rest once expanded', async () => {
+    saveAchievements({ unlocked: { '01': today } });
+    renderPanel();
+    // The catalogue arrives asynchronously; the warm waits for it.
+    await waitFor(() => expect(preloadEventImages).toHaveBeenCalled());
+    const urls = (calls: unknown[][]) =>
+      calls.flatMap((c) => (c[0] as { image_url?: string }[]).map((e) => e?.image_url));
+    expect(urls((preloadEventImages as jest.Mock).mock.calls)).toEqual(['img-01']);
+
+    await userEvent.click(screen.getByRole('button', { name: `Show all ${ACHIEVEMENTS.length}` }));
+    await waitFor(() =>
+      expect(urls((preloadEventImages as jest.Mock).mock.calls)).toHaveLength(
+        1 + ACHIEVEMENTS.length
+      )
+    );
+  });
+
+  it('does not warm any badge art while the tab is off screen', async () => {
+    saveAchievements({ unlocked: { '01': today } });
+    renderPanel({ active: false });
+    await waitFor(() => expect(loadAllEvents).toHaveBeenCalled());
+    await new Promise((r) => setTimeout(r, 0));
+    expect(preloadEventImages).not.toHaveBeenCalled();
+  });
+
+  it('opens the detail popup for a tapped badge', async () => {
+    saveAchievements({ unlocked: { '01': today } });
+    renderPanel();
+    const name = ACHIEVEMENTS[0].name;
+    expect(screen.getAllByText(name)).toHaveLength(1);
+    await userEvent.click(badgeButton('01') as HTMLElement);
+    // The large-format card in the popup repeats the badge name.
+    expect(screen.getAllByText(name)).toHaveLength(2);
   });
 });

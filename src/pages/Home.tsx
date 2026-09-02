@@ -12,6 +12,8 @@ import { navForPath } from '../components/TopBar';
  */
 const HomeRoute: React.FC = () => {
   const { tab } = useParams();
+  // Achievements folded into the Stats tab (2026-09); old links and bookmarks land there.
+  if (tab === 'achievements') return <Navigate to="/stats" replace />;
   const key = navForPath(`/${tab ?? ''}`);
   if (!key) return <Navigate to="/" replace />;
   return <App initialTab={key} />;

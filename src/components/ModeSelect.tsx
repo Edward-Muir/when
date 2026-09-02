@@ -205,13 +205,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
   // Stats otherwise waits for a visit or idle.
   const [visited, setVisited] = useState<Set<number>>(
-    () =>
-      new Set([
-        indexForTabKey('home'),
-        indexForTabKey('archive'),
-        indexForTabKey('custom'),
-        indexForTabKey(initialTab),
-      ])
+    () => new Set((['home', 'archive', 'custom', initialTab] as TabKey[]).map(indexForTabKey))
   );
   useEffect(() => {
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
@@ -534,7 +528,11 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           </div>
 
           {/* Stats page (lazy: mounted once first visited) */}
-          {visited.has(indexForTabKey('stats')) ? <StatsPanel /> : <div />}
+          {visited.has(indexForTabKey('stats')) ? (
+            <StatsPanel active={activePage === indexForTabKey('stats')} />
+          ) : (
+            <div />
+          )}
         </ModePager>
       </div>
 
