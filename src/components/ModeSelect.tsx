@@ -452,7 +452,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({ onStart, isLoading = false, all
                 When<span className="text-accent">?</span>
               </h1>
               <p className="text-text-muted text-sm mt-1 font-body">
-                Drag events into place — build the longest timeline
+                Drag events into place, build the longest timeline
               </p>
             </div>
 
