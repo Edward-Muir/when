@@ -13,6 +13,7 @@ import {
   Apple,
   Bell,
   BellOff,
+  LifeBuoy,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -21,32 +22,14 @@ import InstallInstructions from './InstallInstructions';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
-import { GameMode } from '../types';
 import { APP_VERSION } from '../version';
+import HowToPlayModal from './HowToPlayModal';
 
 interface MenuProps {
   isOpen: boolean;
   onClose: () => void;
   onShowToast: () => void;
-  gameMode?: GameMode | null;
 }
-
-// Game rules component (moved from TopBar). Both game modes share one rule-set, so
-// these are not mode-specific.
-export const GameRules: React.FC = () => {
-  const textClass = 'text-sm text-text font-body leading-relaxed';
-
-  return (
-    <div className="text-left space-y-3">
-      <p className={textClass}>
-        Drag each card onto the timeline where you think it happened — dates are hidden until you
-        place it.
-      </p>
-      <p className={textClass}>Build the longest timeline!</p>
-      <p className={textClass}>Draw a new card if you place correctly.</p>
-    </div>
-  );
-};
 
 // Daily-reminder toggle row (native app only) — kept open like the theme row
 // so the user sees the state change. "On" means it will actually fire: user
@@ -89,7 +72,7 @@ const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> 
   );
 };
 
-const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) => {
+const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
@@ -203,12 +186,17 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
                   </button>
                 )}
 
-                {gameMode && (
-                  <button onClick={handleRules} className={menuItemClass}>
-                    <HelpCircle className={iconClass} />
-                    <span className="font-body">How to Play</span>
-                  </button>
-                )}
+                {/* Always here, not only in a game: the rules used to be unreachable from
+                    the home screen, which is where a new player looks for them. */}
+                <button onClick={handleRules} className={menuItemClass}>
+                  <HelpCircle className={iconClass} />
+                  <span className="font-body">How to Play</span>
+                </button>
+
+                <Link to="/support" className={menuItemClass} onClick={onClose}>
+                  <LifeBuoy className={iconClass} />
+                  <span className="font-body">Help & FAQ</span>
+                </Link>
 
                 <a
                   href="mailto:feedback@play-when.com?subject=When%20Feedback"
@@ -267,33 +255,8 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast, gameMode }) =
         )}
       </AnimatePresence>
 
-      {/* Game Rules Modal */}
-      <AnimatePresence>
-        {showRulesModal && gameMode && (
-          <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
-            <motion.div
-              className="absolute inset-0 bg-black/25"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setShowRulesModal(false)}
-            />
-            <motion.div
-              className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-            >
-              <div className="px-4 py-3 border-b border-border">
-                <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
-              </div>
-              <div className="p-4">
-                <GameRules />
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+      {/* How to Play. Above the drawer (reveal layer) so it opens over the open menu. */}
+      <HowToPlayModal open={showRulesModal} onDismiss={() => setShowRulesModal(false)} />
     </>
   );
 };

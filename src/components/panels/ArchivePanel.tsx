@@ -9,6 +9,9 @@ import {
 } from '../../utils/themeReplay';
 import { getThemeBests } from '../../utils/themeBests';
 import ArchiveDeckRow from '../ArchiveDeckRow';
+import HintStrip from '../HintStrip';
+import { tabHintText } from '../../utils/hintCopy';
+import { useTabHint } from '../../hooks/useTabHint';
 
 interface ArchivePanelProps {
   allEvents: HistoricalEvent[];
@@ -47,6 +50,8 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
     if (active) setHasBeenActive(true);
   }, [active]);
 
+  const hint = useTabHint('archiveTab', active);
+
   const entries = useMemo(
     () => getArchiveEntries(listCuratedThemes(), allEvents, today),
     // calendarVersion is the "the calendar changed" signal; the list itself is module state.
@@ -74,8 +79,9 @@ const ArchivePanel: React.FC<ArchivePanelProps> = ({
       <div className="mx-auto w-full max-w-sm px-3 text-left mb-3">
         <h1 className="text-5xl font-bold text-text font-display leading-none">Archive</h1>
         <p className="text-text-muted text-sm mt-1 font-body">
-          Replay curated decks. Beat your high score
+          Replay past daily decks. Beat your best
         </p>
+        <HintStrip text={hint.show ? tabHintText('archiveTab') : null} onDismiss={hint.dismiss} />
       </div>
 
       <div className="flex-1 overflow-hidden">

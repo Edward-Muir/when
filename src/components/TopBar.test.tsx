@@ -74,6 +74,14 @@ describe('TopBar navigation', () => {
     expect(screen.queryByRole('heading', { name: 'Custom tab' })).toBeNull();
   });
 
+  it('draws Custom as sliders, not a settings cog', () => {
+    renderBar();
+    // Lucide stamps the icon's name on the svg; there is no accessible query for a glyph.
+    // eslint-disable-next-line testing-library/no-node-access
+    const icon = screen.getByLabelText('Custom game').querySelector('svg');
+    expect(icon).toHaveClass('lucide-sliders-horizontal');
+  });
+
   it('hides the nav buttons without showStatsAchievements (the in-game bar)', () => {
     renderBar({ showStatsAchievements: false });
     expect(screen.getByLabelText('Go home')).toBeInTheDocument();

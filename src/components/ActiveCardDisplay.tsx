@@ -1,5 +1,6 @@
 import { RefreshCw } from 'lucide-react';
 import { HistoricalEvent, Player } from '../types';
+import { GameHintKey } from '../utils/playerStorage';
 import DraggableCard from './DraggableCard';
 import Card from './Card';
 
@@ -10,6 +11,8 @@ interface ActiveCardDisplayProps {
   isOverTimeline: boolean;
   onCycleHand: () => void;
   onCardTap: () => void;
+  /** The onboarding hint on screen: `drag` bobs the top card, `swap` pulses the button. */
+  nudge?: GameHintKey | null;
 }
 
 const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
@@ -19,8 +22,11 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   isOverTimeline,
   onCycleHand,
   onCardTap,
+  nudge = null,
 }) => {
   const canCycle = !isAnimating && currentPlayer.hand.length > 1;
+  const cycleNudgeClass = nudge === 'swap' ? 'animate-hint-pulse ring-2 ring-accent' : '';
+  const cardNudgeClass = nudge === 'drag' ? 'animate-hint-lift' : '';
 
   return (
     <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">
@@ -30,12 +36,12 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
         <button
           onClick={() => canCycle && onCycleHand()}
           disabled={!canCycle}
-          className="absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
+          className={`absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
             bg-surface border border-border
             shadow-sm flex items-center justify-center
             hover:bg-border
             disabled:opacity-40 disabled:cursor-not-allowed
-            active:scale-95 transition-all"
+            active:scale-95 transition-all ${cycleNudgeClass}`}
           aria-label="Cycle to next card"
         >
           <RefreshCw className="w-4 h-4 text-text" />
@@ -63,8 +69,9 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
             </div>
           )}
 
-          {/* Top card (active, draggable) */}
-          <div className="relative z-[2]">
+          {/* Top card (active, draggable). The bob goes on this wrapper, not the drag
+              handle: dnd-kit measures the activator node. */}
+          <div className={`relative z-[2] ${cardNudgeClass}`}>
             <DraggableCard
               event={activeCard}
               onTap={onCardTap}

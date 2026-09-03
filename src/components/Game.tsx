@@ -17,7 +17,6 @@ import { useDragAndDrop } from '../hooks/useDragAndDrop';
 import { useScreenShake } from '../hooks/useScreenShake';
 import { useHaptics } from '../hooks/useHaptics';
 import { warmLeaderboard } from '../hooks/useLeaderboard';
-import { hasPlayedMode, markModePlayed } from '../utils/playerStorage';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { getCuratedThemeById } from '../utils/curatedThemes';
 import { getLocalDateString } from '../utils/puzzleDate';
@@ -28,7 +27,10 @@ import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
 import TopBar from './TopBar';
-import { GameRules } from './Menu';
+import HowToPlayModal from './HowToPlayModal';
+import HintStrip from './HintStrip';
+import { hintText } from '../utils/hintCopy';
+import { useOnboardingHints } from '../hooks/useOnboardingHints';
 import GameOverControls from './GameOverControls';
 import ActiveCardDisplay from './ActiveCardDisplay';
 import AchievementUnlock from './AchievementUnlock';
@@ -65,28 +67,6 @@ const HomeConfirmModal: React.FC<{
           className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
         >
           Leave
-        </button>
-      </div>
-    </div>
-  </div>
-);
-
-const FirstTimeRulesModal: React.FC<{
-  onDismiss: () => void;
-}> = ({ onDismiss }) => (
-  <div className="fixed inset-0 z-[60] flex items-center justify-center p-4" onClick={onDismiss}>
-    <div className="absolute inset-0 bg-black/25" />
-    <div className="relative w-[85vw] max-w-[320px] rounded-lg overflow-hidden border border-border bg-surface shadow-sm">
-      <div className="px-4 py-3 border-b border-border">
-        <h2 className="text-lg font-display font-semibold text-text">How to Play</h2>
-      </div>
-      <div className="p-4">
-        <GameRules />
-        <button
-          onClick={onDismiss}
-          className="w-full mt-4 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
-        >
-          Got it
         </button>
       </div>
     </div>
@@ -155,7 +135,6 @@ const Game: React.FC<GameProps> = ({
   const [showToast, setShowToast] = useState(false);
   const [showHomeConfirm, setShowHomeConfirm] = useState(false);
   const [gameOverPopupShown, setGameOverPopupShown] = useState(false);
-  const [showFirstTimeRules, setShowFirstTimeRules] = useState(false);
   const [showStatsPopup, setShowStatsPopup] = useState(false);
   // Full-screen edge-in colour pulse shown on each placement. `key` remounts
   // the overlay so the animation retriggers on rapid back-to-back placements.
@@ -250,6 +229,21 @@ const Game: React.FC<GameProps> = ({
     haptics,
   });
 
+  // The one-shot hints: the How-to-Play modal on a first game, then the drag nudge, the
+  // first-wrong / first-correct strips and the swap-button hint. All the conditions live
+  // in the hook; this component only mounts the strip and the modal.
+  const hints = useOnboardingHints({
+    phase: state.phase,
+    isAnimating: state.isAnimating,
+    isDragging: dragState.isDragging,
+    lastPlacementResult: state.lastPlacementResult,
+    handLength: currentPlayer?.hand.length ?? 0,
+    deckLength: state.deck.length,
+    timelineLength: state.timeline.length,
+    activeCardName: activeCard?.name,
+    isMultiplayer: state.players.length > 1,
+  });
+
   useEffect(() => {
     if (state.lastPlacementResult && state.lastPlacementResult !== prevPlacementRef.current) {
       // Whole-screen edge-in pulse: red on a miss, streak colour on a hit.
@@ -288,13 +282,6 @@ const Game: React.FC<GameProps> = ({
       setGameOverPopupShown(false);
     }
   }, [state.phase, gameOverPopupShown, showGameOverPopup]);
-
-  // Show first-time rules popup when starting a new game mode for the first time
-  useEffect(() => {
-    if (state.phase === 'playing' && state.gameMode && !hasPlayedMode(state.gameMode)) {
-      setShowFirstTimeRules(true);
-    }
-  }, [state.phase, state.gameMode]);
 
   // Warm the daily board while the player is still playing. `useDailyLeaderboard` above only
   // starts fetching once the game is over and there is a result to submit; this makes sure the
@@ -348,7 +335,6 @@ const Game: React.FC<GameProps> = ({
           <TopBar
             showHome={true}
             onHomeClick={() => setShowHomeConfirm(true)}
-            gameMode={state.gameMode}
             dailyTheme={dailyThemeDisplay}
           />
 
@@ -378,6 +364,11 @@ const Game: React.FC<GameProps> = ({
               animationPhase={state.animationPhase}
               currentStreak={state.currentStreak}
               enableCentering={true}
+            />
+            <HintStrip
+              placement="floating"
+              text={hintText(hints.active)}
+              onDismiss={hints.dismiss}
             />
           </div>
 
@@ -424,6 +415,7 @@ const Game: React.FC<GameProps> = ({
                     isOverTimeline={dragState.isOverTimeline}
                     onCycleHand={onCycleHand}
                     onCardTap={handleActiveCardTap}
+                    nudge={hints.active}
                   />
                 )}
               </>
@@ -473,14 +465,7 @@ const Game: React.FC<GameProps> = ({
             <HomeConfirmModal onClose={() => setShowHomeConfirm(false)} onConfirm={onNewGame} />
           )}
 
-          {showFirstTimeRules && state.gameMode && (
-            <FirstTimeRulesModal
-              onDismiss={() => {
-                markModePlayed(state.gameMode!);
-                setShowFirstTimeRules(false);
-              }}
-            />
-          )}
+          <HowToPlayModal open={hints.rulesOpen} onDismiss={hints.dismissRules} />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always
               ends it, so the finale is the same screen whether or not this game unlocked

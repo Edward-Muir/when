@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Play, Share2, Check, Trophy } from 'lucide-react';
+import { Check } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -13,14 +13,14 @@ import {
 } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-import CustomGameSettings from './CustomGameSettings';
+import CustomPanel from './panels/CustomPanel';
 import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
 import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
-import NextDailyCountdown from './NextDailyCountdown';
+import DailyCta from './DailyCta';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
@@ -39,6 +39,7 @@ import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderbo
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
+import HowToPlayModal from './HowToPlayModal';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -110,49 +111,6 @@ function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<num
   }, [setVisited]);
 }
 
-// Daily CTA: play when unplayed, share + next-daily countdown when already completed today —
-// or, when today's score is not on the board, the way to put it there.
-const DailyCta: React.FC<{
-  played: boolean;
-  /** Today's score exists and is not on the board (see `canSubmitScore` in ModeSelect). */
-  unclaimed: boolean;
-  onShare: () => void;
-  onPlay: () => void;
-  onSubmit: () => void;
-}> = ({ played, unclaimed, onShare, onPlay, onSubmit }) => {
-  const buttonClass =
-    'w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body';
-
-  if (played) {
-    return (
-      <div className="w-full flex flex-col items-center gap-2">
-        {/* An unclaimed score takes the share slot for as long as it is unclaimed. Sharing a
-            score is the lesser thing to offer someone whose score did not make the board, and
-            this is the only route back to submitting once the game-over popup is gone. */}
-        {unclaimed ? (
-          <button onClick={onSubmit} className={buttonClass}>
-            <Trophy className="w-4 h-4" />
-            Submit Your Score
-          </button>
-        ) : (
-          <button onClick={onShare} className={buttonClass}>
-            <Share2 className="w-4 h-4" />
-            Challenge a Friend
-          </button>
-        )}
-        <NextDailyCountdown />
-      </div>
-    );
-  }
-
-  return (
-    <button onClick={onPlay} className={buttonClass}>
-      <Play className="w-4 h-4" />
-      Play Daily Challenge
-    </button>
-  );
-};
-
 /**
  * Today's score exists and the board came back without it — so it can still be claimed.
  *
@@ -186,6 +144,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
+
+  // The rules, one tap from the Daily tab. The first game opens them unasked (Game.tsx);
+  // this is the always-visible way back to them.
+  const [showHowToPlay, setShowHowToPlay] = useState(false);
 
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
@@ -419,6 +381,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
+      onHowToPlay={() => setShowHowToPlay(true)}
     />
   );
 
@@ -491,30 +454,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           />
 
           {/* Custom page */}
-          <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
-            <div className="text-left mb-3">
-              <h1 className="text-5xl font-bold text-text font-display leading-none">Custom</h1>
-              <p className="text-text-muted text-sm mt-1 font-body">
-                Choose your eras, categories & difficulty
-              </p>
-            </div>
-
-            <CustomGameSettings
-              selectedDifficulties={selectedDifficulties}
-              setSelectedDifficulties={setSelectedDifficulties}
-              selectedCategories={selectedCategories}
-              setSelectedCategories={setSelectedCategories}
-              selectedEras={selectedEras}
-              setSelectedEras={setSelectedEras}
-              playerCount={playerCount}
-              onPlayerCountChange={handlePlayerCountChange}
-              suddenDeathHandSize={suddenDeathHandSize}
-              setSuddenDeathHandSize={setSuddenDeathHandSize}
-              onPlay={handlePlayStart}
-              deckCount={deckCount}
-              isPlayValid={isPlayValid}
-            />
-          </div>
+          <CustomPanel
+            active={activePage === indexForTabKey('custom')}
+            selectedDifficulties={selectedDifficulties}
+            setSelectedDifficulties={setSelectedDifficulties}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
+            selectedEras={selectedEras}
+            setSelectedEras={setSelectedEras}
+            playerCount={playerCount}
+            onPlayerCountChange={handlePlayerCountChange}
+            suddenDeathHandSize={suddenDeathHandSize}
+            setSuddenDeathHandSize={setSuddenDeathHandSize}
+            onPlay={handlePlayStart}
+            deckCount={deckCount}
+            isPlayValid={isPlayValid}
+          />
 
           {/* Stats page (lazy: mounted once first visited) */}
           {visited.has(indexForTabKey('stats')) ? (
@@ -542,6 +497,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           Copied to clipboard!
         </div>
       )}
+
+      <HowToPlayModal open={showHowToPlay} onDismiss={() => setShowHowToPlay(false)} />
 
       {/* Leaderboard Modal */}
       <Leaderboard

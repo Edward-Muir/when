@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Home, Menu as MenuIcon, BarChart3, Settings, Archive, Hourglass } from 'lucide-react';
+import {
+  Home,
+  Menu as MenuIcon,
+  BarChart3,
+  SlidersHorizontal,
+  Archive,
+  Hourglass,
+} from 'lucide-react';
 import { useVersionCheck } from '../hooks/useVersionCheck';
 import { hasSeenNav, markNavSeen, NavKey } from '../utils/playerStorage';
 import { Toast } from './Toast';
 import { UpdatePopup } from './UpdatePopup';
 import Menu from './Menu';
-import { GameMode } from '../types';
 
 /**
  * Every nav destination, in the order the home pager shows them. Also the home pager's tab
@@ -42,7 +48,6 @@ interface TopBarProps {
   showHome?: boolean;
   showTitle?: boolean;
   onHomeClick?: () => void;
-  gameMode?: GameMode | null;
   dailyTheme?: string;
   /** Show the Archive, Custom, Stats and Timeline buttons. */
   showStatsAchievements?: boolean;
@@ -60,7 +65,6 @@ const TopBar: React.FC<TopBarProps> = ({
   showHome = false,
   showTitle = true,
   onHomeClick,
-  gameMode,
   dailyTheme,
   showStatsAchievements = false,
   activeNav,
@@ -254,7 +258,7 @@ const TopBar: React.FC<TopBarProps> = ({
               </button>
             )}
 
-            {/* Custom (cog) */}
+            {/* Custom (sliders: "build your own", not a settings cog) */}
             {showStatsAchievements && (
               <button
                 onClick={() => handleNav('custom')}
@@ -262,7 +266,7 @@ const TopBar: React.FC<TopBarProps> = ({
                 aria-label="Custom game"
                 aria-current={ariaCurrent('custom')}
               >
-                <Settings className={navIcon('custom')} />
+                <SlidersHorizontal className={navIcon('custom')} />
               </button>
             )}
 
@@ -316,7 +320,6 @@ const TopBar: React.FC<TopBarProps> = ({
         isOpen={isMenuOpen}
         onClose={() => setIsMenuOpen(false)}
         onShowToast={() => setShowToast(true)}
-        gameMode={gameMode}
       />
 
       {/* Update Available Popup */}

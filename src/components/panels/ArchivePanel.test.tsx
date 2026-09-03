@@ -1,11 +1,14 @@
 import React from 'react';
-import { render, screen, within } from '@testing-library/react';
+import { act, render, screen, waitFor, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ArchivePanel from './ArchivePanel';
 import { HistoricalEvent, ALL_CATEGORIES } from '../../types';
 import { CuratedTheme, __setCuratedThemesForTest } from '../../utils/curatedThemes';
 import { clearDailyPoolCache } from '../../utils/dailyPool';
 import { recordThemeResult } from '../../utils/themeBests';
+import { hasSeenHint, markHintSeen } from '../../utils/playerStorage';
+import { TAB_HINT_TEXT } from '../../utils/hintCopy';
+import { TAB_HINT_MOUNT_DELAY_MS } from '../../hooks/useTabHint';
 
 const catalogue: HistoricalEvent[] = Array.from({ length: 80 }, (_, i) => ({
   name: `event-${i}`,
@@ -29,6 +32,20 @@ const TODAY = '2030-04-10';
 beforeEach(() => {
   localStorage.clear();
   clearDailyPoolCache();
+  // jsdom has no matchMedia; the hint strip's useReducedMotion reads it.
+  Object.defineProperty(window, 'matchMedia', {
+    writable: true,
+    value: jest.fn().mockImplementation((query: string) => ({
+      matches: false,
+      media: query,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn(),
+      addListener: jest.fn(),
+      removeListener: jest.fn(),
+      dispatchEvent: jest.fn(),
+      onchange: null,
+    })),
+  });
   __setCuratedThemesForTest([
     theme('later', 'Much Later', ['2030-06-01']),
     theme('future', 'Not Yet', ['2030-05-01']),
@@ -80,7 +97,7 @@ describe('ArchivePanel', () => {
   it('reads like the Daily and Custom pages, with no deck count', () => {
     renderPanel();
     expect(screen.getByRole('heading', { level: 1, name: 'Archive' })).toBeInTheDocument();
-    expect(screen.getByText(/Replay curated decks/)).toBeInTheDocument();
+    expect(screen.getByText(/Replay past daily decks/)).toBeInTheDocument();
     expect(screen.queryByText(/\d+ decks?$/)).toBeNull();
   });
 
@@ -118,5 +135,42 @@ describe('ArchivePanel', () => {
   it('holds the rows back until the tab has been shown', () => {
     renderPanel({ active: false });
     expect(screen.queryByRole('button')).toBeNull();
+  });
+});
+
+describe('ArchivePanel first-visit hint', () => {
+  beforeEach(() => jest.useFakeTimers());
+  afterEach(() => jest.useRealTimers());
+  const settle = () => act(() => jest.advanceTimersByTime(TAB_HINT_MOUNT_DELAY_MS));
+
+  it('shows once the tab is on screen, and not before', () => {
+    renderPanel();
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    settle();
+    expect(screen.getByRole('status')).toHaveTextContent(TAB_HINT_TEXT.archiveTab);
+    expect(hasSeenHint('archiveTab')).toBe(true);
+  });
+
+  it('stays quiet while pre-mounted off screen', () => {
+    renderPanel({ active: false });
+    settle();
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+    expect(hasSeenHint('archiveTab')).toBe(false);
+  });
+
+  it('does not return once seen', () => {
+    markHintSeen('archiveTab');
+    renderPanel();
+    settle();
+    expect(screen.getByRole('status')).toBeEmptyDOMElement();
+  });
+
+  it('dismisses on tap', async () => {
+    renderPanel();
+    settle();
+    await userEvent.click(screen.getByRole('button', { name: TAB_HINT_TEXT.archiveTab }));
+    // The strip fades out; drive the exit animation to its end.
+    act(() => jest.advanceTimersByTime(1000));
+    await waitFor(() => expect(screen.getByRole('status')).toBeEmptyDOMElement());
   });
 });

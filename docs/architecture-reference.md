@@ -12,19 +12,22 @@ guess wrong.
 index.tsx                      # BrowserRouter + 13 routes
 ├── App.tsx                    # Phase router, viewport height fix
 │   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Timeline)
-│   │   ├── CustomGameSettings.tsx  # Custom tab: filters + share code + Play
+│   │   ├── DailyCta.tsx            # Daily hero's Play/Share button + the "How to play" link
+│   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
-│   │   ├── panels/                 # ArchivePanel, StatsPanel, TimelinePanel — one per tab
+│   │   ├── panels/                 # Archive, Custom, Stats, Timeline panels — one per tab
 │   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel (was /achievements)
-│   │   └── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
+│   │   ├── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
+│   │   └── HowToPlayModal.tsx      # The rules; also mounted by Game and Menu
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
 │       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
+│       ├── HintStrip.tsx      # The one-line hint pill (also inline on each home tab)
 │       ├── Timeline/          # Timeline.tsx, TimelineEvent.tsx, TombstoneRow.tsx
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
-│       │   ├── Menu.tsx                # Burger menu: theme, share, install, legal — no nav
+│       │   ├── Menu.tsx                # Burger menu: theme, share, install, How to Play, Help & FAQ, legal
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
@@ -34,9 +37,9 @@ index.tsx                      # BrowserRouter + 13 routes
 ```
 
 Easy to get wrong: `FilterPopup` is mounted by `panels/TimelinePanel`, not `Game`.
-`CategoryIcon` has five importers across the tree. The menu's "How to Play" item shows only
-when `TopBar` gets a `gameMode`, which only `Game.tsx` passes — that is why it is hidden
-outside a game.
+`CategoryIcon` has five importers across the tree. "How to Play" is one component,
+`HowToPlayModal`, mounted three times (Game for the first-run showing, Menu, and ModeSelect
+for the Daily tab's link); the rules copy `GameRules` lives in that file, not in `Menu.tsx`.
 
 ## Hooks
 
@@ -45,7 +48,9 @@ read first; `useGameStatsRecorder` is where a finished game reaches `statsStorag
 rest are single-purpose and named for what they do (`useDragAndDrop`, `useLeaderboard`,
 `useHaptics`, `useTheme`, `useScreenShake`, `useVersionCheck`, `usePWAInstall`, `useToday`,
 `useImagePrefetch`, `useDailyReminder`, `useEndOfGameSequence` — the post-game screen queue:
-milestones, achievements, then always the share).
+milestones, achievements, then always the share; `useOnboardingHints` — the in-game one-shot
+hint machine, kept out of `Game.tsx` because Game sits on the ESLint complexity ceiling;
+`useTabHint` — a home tab's first-visit strip, gated on `active`).
 
 ## Utils
 
@@ -105,18 +110,19 @@ Environment variables in `.env`:
 
 Low to high. Verify against source before relying on it — grep `z-` in the three files.
 
-| Layer                       | Z-Index | File                  |
-| --------------------------- | ------- | --------------------- |
-| Timeline spine              | z-0     | Timeline.tsx:400      |
-| Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx |
-| Timeline scroll content     | z-10    | Timeline.tsx:409      |
-| Timeline fade overlays      | z-30    | Timeline.tsx:392, 471 |
-| Bottom bar (hand zone)      | z-40    | Game.tsx:364          |
-| Placement vignette          | z-[45]  | Game.tsx:480          |
-| Cycle button                | z-50    | ActiveCardDisplay:33  |
-| Restart-confirm modal       | z-50    | Game.tsx:46           |
-| Confetti burst              | z-50    | Game.tsx:333          |
-| First-time rules modal      | z-[60]  | Game.tsx:72           |
+| Layer                       | Z-Index | File                                           |
+| --------------------------- | ------- | ---------------------------------------------- |
+| Timeline spine              | z-0     | Timeline.tsx:400                               |
+| Card stack (back/mid/front) | z-0/1/2 | ActiveCardDisplay.tsx                          |
+| Timeline scroll content     | z-10    | Timeline.tsx:409                               |
+| Timeline fade overlays      | z-30    | Timeline.tsx:392, 471                          |
+| Onboarding hint strip       | z-[35]  | HintStrip.tsx (in Game's timeline area)        |
+| Bottom bar (hand zone)      | z-40    | Game.tsx                                       |
+| Placement vignette          | z-[45]  | Game.tsx                                       |
+| Cycle button                | z-50    | ActiveCardDisplay:33                           |
+| Leave-game confirm modal    | z-50    | Game.tsx (`HomeConfirmModal`)                  |
+| Confetti burst              | z-50    | Game.tsx                                       |
+| How-to-play modal           | z-[60]  | HowToPlayModal.tsx (`ui/Modal` `reveal` layer) |
 
 ## Drag and Drop
 

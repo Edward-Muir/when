@@ -80,6 +80,59 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## Onboarding hints (2026-09)
+
+Players said the app did not explain itself: the rules were three lines that omitted the
+hand mechanic and the losing condition, shown once per mode _after_ the game had started,
+and afterwards reachable only from the in-game menu. Research (Nielsen Norman on onboarding
+tutorials and mobile coach marks; game FTUE guidance) says up-front walkthroughs get skipped
+and do not improve performance, while single-line contextual hints tied to the moment of
+need, dismissible and re-findable, do. The fix is that shape; there is no guided tutorial.
+
+- **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
+  `markHintSeen` / `resetHintsSeen`, keys `rules`, `drag`, `wrong`, `correct`, `swap`,
+  `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based accessors, because the
+  `security/detect-object-injection` rule forbids indexing by a variable key. **Two keys read
+  the storage they replaced** so an upgrade re-shows nothing: `rules` counts as seen if the
+  old per-mode `when-modes-played` has any `true`; `timelineTab` if
+  `when-timeline-intro-seen === '1'`. Those legacy keys are read-only now; the fallbacks are
+  load-bearing and tested.
+- **The How-to-Play modal shows once ever, not once per mode** (both modes share one rule-set),
+  on the first game. It is `HowToPlayModal` on `ui/Modal` (`reveal` layer so it clears the
+  menu drawer), and the same modal opens from the Daily tab's "How to play" link and from the
+  menu's "How to Play", which is now always present. Every hint's copy is repeated inside it
+  ("The tabs" section, the swap button), so a dismissed hint is always one tap from being
+  read again. `GameRules` lives there, not in `Menu.tsx`.
+- **Copy lives in one const map** (`utils/hintCopy.ts`), consumed by the strips and the modal,
+  so the two cannot drift. One line each, no em dashes.
+- **In-game hints are a state machine in `useOnboardingHints`**, not in `Game.tsx`, which sits
+  on ESLint's `complexity` ceiling (an error rule). Game mounts `HintStrip` and the modal
+  unconditionally and drives them with props. At most one strip is on screen; the order is
+  rules modal → idle drag nudge (`DRAG_NUDGE_MS` after play starts, and never while the modal
+  is open, because `rulesOpen` is a dependency of the timer effect) → first-wrong /
+  first-correct strips once the placement animation settles → the swap-button hint, which is
+  the advanced one and waits until `drag` and `correct` are seen and either `wrong` is seen or
+  four cards are placed (so a perfect run still gets it), plus a quiet gap. `drag` is marked
+  on the first drag whether or not the strip ever showed, so a player who never idles skips it
+  and the swap gate still opens. An outcome that lands on the game-ending placement is
+  discarded unmarked and returns next game.
+- **The floating strip lives inside the timeline area at z-[35]**, above the z-30 "Later"
+  fade and below the z-40 bottom bar, so it never covers the hand card and tracks the bar's
+  height. Not a `fixed bottom-20` toast: that lands on the card. The positioned wrapper is a
+  plain div because framer writes `transform` inline, which would override a Tailwind
+  translate.
+- **Tab hints gate on `active`, never on mount** (`useTabHint`): the pager pre-mounts every
+  panel at idle, so a mount-time check would fire for tabs never opened. They also wait
+  `TAB_HINT_MOUNT_DELAY_MS` (350 ms) for the scroll-snap to settle, since mounting mid-gesture
+  is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`
+  and had no `active` prop; it is now `panels/CustomPanel.tsx` like the other three tabs.
+  The old `TimelineIntroModal` is gone; its copy is the Timeline tab's strip.
+- **The card bob and the swap-button pulse** are `animate-hint-lift` / `animate-hint-pulse`
+  in `index.css`, in the reduced-motion block, with `color-mix()` for the ring because
+  `ring-accent/60` emits nothing (the opacity-modifier trap).
+- **The Custom nav icon is sliders, not a cog.** A cog read as app Settings. It now matches
+  the My Timeline filter button's icon; the aria-labels differ.
+
 ## Custom settings screen
 
 **Double-tap to isolate a filter pill** (Categories, Difficulty and Eras alike). With 20

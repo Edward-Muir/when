@@ -35,6 +35,7 @@ const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
           element={<Menu isOpen onClose={onClose} onShowToast={jest.fn()} {...props} />}
         />
         <Route path="/privacy" element={<h1>Privacy page</h1>} />
+        <Route path="/support" element={<h1>Support page</h1>} />
       </Routes>
     </MemoryRouter>
   );
@@ -54,6 +55,20 @@ describe('Menu', () => {
     renderMenu();
     expect(screen.queryByRole('link', { name: /achievements/i })).toBeNull();
     expect(screen.queryByRole('link', { name: /my timeline/i })).toBeNull();
+  });
+
+  it('offers How to Play everywhere, not only in a game, and opens the rules', async () => {
+    renderMenu();
+    await userEvent.click(screen.getByRole('button', { name: /how to play/i }));
+    expect(screen.getByRole('heading', { name: 'How to Play' })).toBeInTheDocument();
+    expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
+  });
+
+  it('links Help & FAQ to the support page and closes', async () => {
+    const { onClose } = renderMenu();
+    await userEvent.click(screen.getByRole('link', { name: /help & faq/i }));
+    expect(screen.getByText('Support page')).toBeInTheDocument();
+    expect(onClose).toHaveBeenCalled();
   });
 
   it('carries no "new" dots', () => {

@@ -12,17 +12,18 @@ import {
 import { filterByDifficulty, filterByCategory, filterByEra } from '../../utils/eventLoader';
 import { getCollectionState } from '../../utils/statsStorage';
 import { ERA_DEFINITIONS } from '../../utils/eras';
-import { hasSeenTimelineIntro, markTimelineIntroSeen } from '../../utils/playerStorage';
 import Timeline from '../Timeline/Timeline';
 import FilterPopup from '../FilterPopup';
 import GamePopup from '../GamePopup';
-import TimelineIntroModal from '../TimelineIntroModal';
+import HintStrip from '../HintStrip';
+import { tabHintText } from '../../utils/hintCopy';
+import { useTabHint } from '../../hooks/useTabHint';
 
 interface TimelinePanelProps {
   allEvents: HistoricalEvent[];
   /**
    * Whether this panel is the visible pager tab. The home-screen pager pre-mounts panels
-   * at idle, so the first-view intro must wait until the tab is actually shown.
+   * at idle, so the first-visit hint must wait until the tab is actually shown.
    */
   active?: boolean;
 }
@@ -44,13 +45,9 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
   // UI state
   const [showFilterPopup, setShowFilterPopup] = useState(false);
   const [pendingPopup, setPendingPopup] = useState<GamePopupData | null>(null);
-  const [showIntro, setShowIntro] = useState(false);
 
-  // First-view explainer: show once the tab is actually visible, then remember it's been
-  // seen. Gated on `active` because the pager pre-mounts this panel in the background.
-  useEffect(() => {
-    if (active && !hasSeenTimelineIntro()) setShowIntro(true);
-  }, [active]);
+  // First-visit strip, gated on `active` because the pager pre-mounts this panel.
+  const hint = useTabHint('timelineTab', active);
 
   // Hold the timeline itself back until the tab has been shown at least once. Timeline
   // is not virtualised, so a returning player's whole collection becomes <img> tags; the
@@ -113,6 +110,7 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
           <span className="font-mono">{collected.toLocaleString()}</span> of{' '}
           <span className="font-mono">{total ? total.toLocaleString() : '…'}</span> events placed
         </p>
+        <HintStrip text={hint.show ? tabHintText('timelineTab') : null} onDismiss={hint.dismiss} />
       </div>
 
       {/* Timeline takes the remaining space below the header */}
@@ -164,15 +162,6 @@ const TimelinePanel: React.FC<TimelinePanelProps> = ({ allEvents, active = true 
         setSelectedCategories={setSelectedCategories}
         selectedEras={selectedEras}
         setSelectedEras={setSelectedEras}
-      />
-
-      {/* First-view explainer */}
-      <TimelineIntroModal
-        isOpen={showIntro}
-        onDismiss={() => {
-          markTimelineIntroSeen();
-          setShowIntro(false);
-        }}
       />
 
       {/* Event Description Popup */}

@@ -34,6 +34,9 @@ import CalendarHeatmap from '../stats/CalendarHeatmap';
 import ScoreDistribution from '../stats/ScoreDistribution';
 import AchievementsSection from '../stats/AchievementsSection';
 import type { HistoricalEvent } from '../../types';
+import HintStrip from '../HintStrip';
+import { tabHintText } from '../../utils/hintCopy';
+import { useTabHint } from '../../hooks/useTabHint';
 
 const badgeName = (id: string) => ACHIEVEMENTS.find((a) => a.id === id)?.name ?? id;
 
@@ -58,6 +61,7 @@ interface StatsPanelProps {
  */
 const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
   const today = useToday();
+  const hint = useTabHint('statsTab', active);
   // The catalogue, for the collection total and the badges' art. Seeded synchronously from
   // the module-level cache (populated during the app's loading phase) so remounts render
   // badge art immediately instead of flashing art-less cards.
@@ -98,6 +102,7 @@ const StatsPanel: React.FC<StatsPanelProps> = ({ active = true }) => {
       <div className="text-left mb-3">
         <h1 className="text-5xl font-bold text-text font-display leading-none">Stats</h1>
         <p className="text-text-muted text-sm mt-1 font-body">How you've played, day by day</p>
+        <HintStrip text={hint.show ? tabHintText('statsTab') : null} onDismiss={hint.dismiss} />
       </div>
 
       <div className="flex flex-col gap-3 pb-4">

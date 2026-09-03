@@ -476,6 +476,36 @@ input,
   animation: haloPulse 0.8s ease-out;
 }
 
+/* Onboarding nudges (useOnboardingHints → ActiveCardDisplay): the top hand card bobs
+   while the drag hint is up; the swap button pulses a ring while its hint is up.
+   color-mix() rather than a Tailwind opacity modifier: `ring-accent/60` emits nothing. */
+@keyframes hintLift {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-hint-lift {
+  animation: hintLift 1.4s ease-in-out infinite;
+}
+
+@keyframes hintPulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 60%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 10px color-mix(in srgb, var(--color-accent) 0%, transparent);
+  }
+}
+
+.animate-hint-pulse {
+  animation: hintPulse 1.2s ease-out infinite;
+}
+
 /* Respect reduced motion preference */
 @media (prefers-reduced-motion: reduce) {
   .animate-shake-light,
@@ -487,6 +517,8 @@ input,
   .animate-streak-glow,
   .animate-shine-sweep,
   .animate-halo-pulse,
+  .animate-hint-lift,
+  .animate-hint-pulse,
   .animate-vignette {
     animation: none;
   }
