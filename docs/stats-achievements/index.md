@@ -91,8 +91,9 @@ Decisions, so they are not re-litigated:
   own horizontal track. It shows played / skipped only, with a star on badge-unlock days and
   today outlined; shading by score waits on the game history above. **No summary text under
   the grid** — the legend is the only copy.
-- **Score bars use the game-over tiers** (0–2 · 3–4 · 5–7 · 8–11 · 12+, from `GamePopup`)
-  so the page speaks the game's language; today's tier is the full accent.
+- **Score bars use the game-over tiers spread a little wider** (0–3 · 4–7 · 8–12 · 13–17 ·
+  18+; `GamePopup`'s own cut-offs are 3 / 5 / 8 / 12) because a regular player landed most
+  days in 12+ and saw one fat bar; today's tier is the full accent.
 - **No "placement accuracy"**: a daily's mistakes are always the hand size, so accuracy is
   the score restated. **No era coverage strip, no per-category coverage list** — both
   proposed and vetoed as clutter.

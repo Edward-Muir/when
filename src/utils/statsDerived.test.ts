@@ -123,7 +123,7 @@ describe('buildHeatmapWeeks', () => {
 });
 
 describe('scoreBuckets', () => {
-  it('sums the histogram into the game-over tiers and flags today', () => {
+  it('sums the histogram into the score tiers and flags today', () => {
     const histogram: number[] = [];
     histogram[0] = 1;
     histogram[2] = 2;
@@ -134,11 +134,11 @@ describe('scoreBuckets', () => {
     histogram[12] = 3;
     histogram[20] = 1;
     expect(scoreBuckets(histogram, 9)).toEqual([
-      { label: '0–2', count: 3, isToday: false },
-      { label: '3–4', count: 4, isToday: false },
-      { label: '5–7', count: 5, isToday: false },
-      { label: '8–11', count: 7, isToday: true },
-      { label: '12+', count: 4, isToday: false },
+      { label: '0–3', count: 7, isToday: false },
+      { label: '4–7', count: 5, isToday: false },
+      { label: '8–12', count: 10, isToday: true },
+      { label: '13–17', count: 0, isToday: false },
+      { label: '18+', count: 1, isToday: false },
     ]);
   });
 

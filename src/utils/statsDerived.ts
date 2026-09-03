@@ -145,13 +145,13 @@ export function buildHeatmapWeeks(input: HeatmapInput): HeatmapModel {
   return { weeks, monthLabels, todayCol };
 }
 
-/** The game-over feedback tiers (`GamePopup`): 3 / 5 / 8 / 12 events placed. */
+/** The game-over tiers (`GamePopup`) spread a little wider, so a regular player's days are not all in the top bar. */
 export const SCORE_BUCKETS = [
-  { label: '0–2', min: 0, max: 2 },
-  { label: '3–4', min: 3, max: 4 },
-  { label: '5–7', min: 5, max: 7 },
-  { label: '8–11', min: 8, max: 11 },
-  { label: '12+', min: 12, max: Infinity },
+  { label: '0–3', min: 0, max: 3 },
+  { label: '4–7', min: 4, max: 7 },
+  { label: '8–12', min: 8, max: 12 },
+  { label: '13–17', min: 13, max: 17 },
+  { label: '18+', min: 18, max: Infinity },
 ] as const;
 
 export interface ScoreBucket {

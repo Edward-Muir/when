@@ -140,9 +140,9 @@ describe('StatsPanel', () => {
     });
     renderPanel();
 
-    expect(screen.getByLabelText('5–7: 4')).toBeInTheDocument();
-    expect(screen.getByLabelText('8–11: 2, today')).toBeInTheDocument();
-    expect(screen.queryByLabelText('0–2: 1, today')).toBeNull();
+    expect(screen.getByLabelText('4–7: 4')).toBeInTheDocument();
+    expect(screen.getByLabelText('8–12: 2, today')).toBeInTheDocument();
+    expect(screen.queryByLabelText('0–3: 1, today')).toBeNull();
     expect(screen.getByText(/average/)).toHaveTextContent('Today: 9 events · average 7.0');
   });
 

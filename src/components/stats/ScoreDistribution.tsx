@@ -27,7 +27,7 @@ const ScoreDistribution: React.FC<Props> = ({ buckets, todayCorrect, average }) 
       <div className="grid grid-cols-[auto_1fr_auto] items-center gap-x-2 gap-y-1.5 font-body text-xs text-text-muted">
         {buckets.map((bucket) => (
           <Fragment key={bucket.label}>
-            <span className="w-8">{bucket.label}</span>
+            <span className="min-w-[2rem] whitespace-nowrap">{bucket.label}</span>
             <div
               className="h-3.5"
               role="img"
