@@ -91,12 +91,16 @@ export type HintKey =
   | 'wrong'
   | 'correct'
   | 'swap'
+  | 'dailyTab'
   | 'archiveTab'
   | 'customTab'
   | 'statsTab'
   | 'timelineTab';
 export type GameHintKey = Extract<HintKey, 'drag' | 'wrong' | 'correct' | 'swap'>;
-export type TabHintKey = Extract<HintKey, 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab'>;
+export type TabHintKey = Extract<
+  HintKey,
+  'dailyTab' | 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab'
+>;
 
 interface HintsSeen {
   rules?: boolean;
@@ -104,6 +108,7 @@ interface HintsSeen {
   wrong?: boolean;
   correct?: boolean;
   swap?: boolean;
+  dailyTab?: boolean;
   archiveTab?: boolean;
   customTab?: boolean;
   statsTab?: boolean;
@@ -126,6 +131,8 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
       return data.correct === true;
     case 'swap':
       return data.swap === true;
+    case 'dailyTab':
+      return data.dailyTab === true;
     case 'archiveTab':
       return data.archiveTab === true;
     case 'customTab':
@@ -149,6 +156,8 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
       return { ...data, correct: true };
     case 'swap':
       return { ...data, swap: true };
+    case 'dailyTab':
+      return { ...data, dailyTab: true };
     case 'archiveTab':
       return { ...data, archiveTab: true };
     case 'customTab':

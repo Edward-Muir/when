@@ -99,8 +99,9 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   load-bearing and tested.
 - **The How-to-Play modal shows once ever, not once per mode** (both modes share one rule-set),
   on the first game. It is `HowToPlayModal` on `ui/Modal` (`reveal` layer so it clears the
-  menu drawer), and the same modal opens from the Daily tab's "How to play" link and from the
-  menu's "How to Play", which is now always present. It is the rules only: the in-game
+  menu drawer), and the same modal opens from the Daily tab's once-only strip and from the
+  menu's "How to Play", which is now always present. A permanent "How to play" link under
+  the Play button was tried and cut: it cost the hero image 48px for every player forever. It is the rules only: the in-game
   hints (the loop, the swap button) are re-findable inside it, and a tab's first-visit strip
   is re-findable on the tab, whose subtitle says the same thing in fewer words. A "The tabs"
   section was tried and cut: not how to play, and said elsewhere anyway. `GameRules` lives
@@ -124,7 +125,11 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   plain div because framer writes `transform` inline, which would override a Tailwind
   translate.
 - **Tab hints gate on `active`, never on mount** (`useTabHint`): the pager pre-mounts every
-  panel at idle, so a mount-time check would fire for tabs never opened. They also wait
+  panel at idle, so a mount-time check would fire for tabs never opened. All five tabs have
+  one. The Daily strip is an invitation (tap opens How to Play, the X dismisses; `HintStrip`
+  `onSelect`) and **takes the leaderboard's slot while it shows** rather than sitting under
+  the heading: the hero card is the page's `flex-1` element, so anything added under the
+  heading shrinks the image, and the leaderboard is the least relevant thing to a new player. They also wait
   `TAB_HINT_MOUNT_DELAY_MS` (350 ms) for the scroll-snap to settle, since mounting mid-gesture
   is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`
   and had no `active` prop; it is now `panels/CustomPanel.tsx` like the other three tabs.

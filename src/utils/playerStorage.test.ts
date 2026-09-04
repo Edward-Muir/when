@@ -6,6 +6,7 @@ const ALL_KEYS: HintKey[] = [
   'wrong',
   'correct',
   'swap',
+  'dailyTab',
   'archiveTab',
   'customTab',
   'statsTab',

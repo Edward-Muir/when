@@ -12,7 +12,7 @@ guess wrong.
 index.tsx                      # BrowserRouter + 13 routes
 ├── App.tsx                    # Phase router, viewport height fix
 │   ├── ModeSelect.tsx         # Tab pager (Daily/Archive/Custom/Stats/Timeline)
-│   │   ├── DailyCta.tsx            # Daily hero's Play/Share button + the "How to play" link
+│   │   ├── DailyCta.tsx            # Daily hero's Play / Share / Submit button
 │   │   ├── panels/CustomPanel.tsx → CustomGameSettings.tsx  # Custom tab: filters + Play
 │   │   ├── Leaderboard.tsx         # (mounted here, NOT under Game)
 │   │   ├── panels/                 # Archive, Custom, Stats, Timeline panels — one per tab

@@ -40,6 +40,9 @@ import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
 import HowToPlayModal from './HowToPlayModal';
+import HintStrip from './HintStrip';
+import { tabHintText } from '../utils/hintCopy';
+import { useTabHint } from '../hooks/useTabHint';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -145,8 +148,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
 
-  // The rules, one tap from the Daily tab. The first game opens them unasked (Game.tsx);
-  // this is the always-visible way back to them.
+  // The rules. The first game opens them unasked (Game.tsx); here they open from the Daily
+  // tab's once-only strip, and after that from the menu.
   const [showHowToPlay, setShowHowToPlay] = useState(false);
 
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
@@ -162,6 +165,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
+  // The Daily tab's first-visit strip. It takes the leaderboard's slot while it shows, so
+  // the hero image keeps its height; the leaderboard is the least relevant thing to a new
+  // player. Tapping it opens How to Play; either way it is gone for good.
+  const dailyHint = useTabHint('dailyTab', activePage === indexForTabKey('home'));
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
   // the daily and challenge routes also mount this screen while they load, and must keep
@@ -381,7 +388,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
-      onHowToPlay={() => setShowHowToPlay(true)}
     />
   );
 
@@ -434,13 +440,24 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             />
 
             <div className="mt-3 flex-shrink-0">
-              <TodaysLongest
-                entries={leaderboard}
-                isLoading={isLeaderboardLoading}
-                playerEntry={playerEntry}
-                playerRank={rank}
-                onOpenFull={() => setIsLeaderboardOpen(true)}
-              />
+              {dailyHint.show ? (
+                <HintStrip
+                  text={tabHintText('dailyTab')}
+                  onSelect={() => {
+                    dailyHint.dismiss();
+                    setShowHowToPlay(true);
+                  }}
+                  onDismiss={dailyHint.dismiss}
+                />
+              ) : (
+                <TodaysLongest
+                  entries={leaderboard}
+                  isLoading={isLeaderboardLoading}
+                  playerEntry={playerEntry}
+                  playerRank={rank}
+                  onOpenFull={() => setIsLeaderboardOpen(true)}
+                />
+              )}
             </div>
           </div>
 
