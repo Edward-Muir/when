@@ -3,12 +3,16 @@ import { GameHintKey, TabHintKey } from './playerStorage';
 /**
  * The player-facing copy for every one-shot hint, in one place. The in-game hints are
  * re-findable in the How-to-Play modal; each tab's line is re-findable on the tab itself
- * (its subtitle says the same thing in fewer words). One line each, no em dashes (the same
- * register the share copy holds itself to).
+ * (its subtitle says the same thing in fewer words). No em dashes (the same register the
+ * share copy holds itself to).
+ *
+ * The in-game strip is a single line that never grows: on a 375px phone it holds about 36
+ * characters of 14px text before clipping, so every `HINT_TEXT` entry stays under that.
+ * Say less rather than let the pill wrap or scroll; the modal has the long version.
  */
 export const HINT_TEXT: Record<GameHintKey, string> = {
-  drag: 'Drag the card onto the timeline where it happened',
-  wrong: 'Wrong spot. It moved to where it really belongs, and your hand is one card smaller.',
+  drag: 'Drag the card onto the timeline',
+  wrong: 'Wrong. Grey shows where it belongs.',
   correct: 'Correct. You drew a new card.',
   swap: 'Swap to a different card',
 };
