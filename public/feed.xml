@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2026 15:09:50 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 11:29:31 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.19.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.19.0</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>contextual onboarding hints, one per placement, plus Reset Hints (<a href="https://github.com/Edward-Muir/when/issues/55">#55</a>) (<a href="https://github.com/Edward-Muir/when/commit/ad46fc6c321daddbb4754a7823b527ddf5725c2e">ad46fc6</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.18.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.13.0</guid>
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>add 14 Indonesian history events for a 36-card curated theme (<a href="https://github.com/Edward-Muir/when/issues/49">#49</a>) (<a href="https://github.com/Edward-Muir/when/commit/7ef32be84d1a842ed694919c05941fdb9636ea6f">7ef32be</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.12.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.12.2</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>revert the curated theme label change (<a href="https://github.com/Edward-Muir/when/issues/47">#47</a>) (<a href="https://github.com/Edward-Muir/when/commit/22c236be844e47b848ad44b120cf8e84a1e3891d">22c236b</a>), closes <a href="https://github.com/Edward-Muir/when/issues/46">#46</a></li></ul>]]></description>
     </item>
   </channel>
 </rss>

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.19.0](https://github.com/Edward-Muir/when/compare/v1.18.0...v1.19.0) (2026-09-04)
+
+
+### Features
+
+* contextual onboarding hints, one per placement, plus Reset Hints ([#55](https://github.com/Edward-Muir/when/issues/55)) ([ad46fc6](https://github.com/Edward-Muir/when/commit/ad46fc6c321daddbb4754a7823b527ddf5725c2e))
+
 ## [1.18.0](https://github.com/Edward-Muir/when/compare/v1.17.1...v1.18.0) (2026-09-02)
 
 
