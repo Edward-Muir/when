@@ -1,10 +1,10 @@
 /**
  * localStorage utilities for tracking player data:
  * - Daily game completion (Wordle-style play-once-per-day)
- * - First-time mode plays (for showing rules popup)
+ * - One-shot onboarding hints
  */
 
-import { GameMode, Difficulty, Category, Era } from '../types';
+import { Difficulty, Category, Era } from '../types';
 import { getLocalDateString } from './puzzleDate';
 
 // --- Daily Result Storage ---
@@ -72,59 +72,179 @@ export function hasPlayedToday(): boolean {
   return getTodayResult() !== null;
 }
 
-// --- Modes Played Storage ---
+// --- Onboarding Hints Storage ---
 
-interface ModesPlayed {
-  daily?: boolean;
-  suddenDeath?: boolean;
+/**
+ * Every one-shot hint in the app, in one object under `when-hints-seen`: the six game
+ * hints are the in-game strips (`useOnboardingHints`); the five tab hints are the
+ * first-visit strips on the home pager (`useTabHint`). Switch-based accessors, like
+ * `NavSeen` below, because the `security/detect-object-injection` rule forbids indexing by
+ * a variable key.
+ *
+ * `timelineTab` falls back to the key it replaced, `when-timeline-intro-seen`, so an
+ * upgrade does not re-show it. That key is read, never written. (`when-modes-played`, which
+ * gated the old per-mode rules popup, is no longer read at all: the popup is gone.)
+ */
+export type HintKey =
+  | 'drag'
+  | 'wrong'
+  | 'correct'
+  | 'tapCard'
+  | 'stats'
+  | 'swap'
+  | 'dailyTab'
+  | 'archiveTab'
+  | 'customTab'
+  | 'statsTab'
+  | 'timelineTab';
+export type GameHintKey = Extract<
+  HintKey,
+  'drag' | 'wrong' | 'correct' | 'tapCard' | 'stats' | 'swap'
+>;
+export type TabHintKey = Extract<
+  HintKey,
+  'dailyTab' | 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab'
+>;
+
+interface HintsSeen {
+  drag?: boolean;
+  wrong?: boolean;
+  correct?: boolean;
+  tapCard?: boolean;
+  stats?: boolean;
+  swap?: boolean;
+  dailyTab?: boolean;
+  archiveTab?: boolean;
+  customTab?: boolean;
+  statsTab?: boolean;
+  timelineTab?: boolean;
 }
 
-const MODES_PLAYED_KEY = 'when-modes-played';
+const HINTS_SEEN_KEY = 'when-hints-seen';
+const HINTS_RESET_EVENT = 'when-hints-reset';
+const LEGACY_MODES_PLAYED_KEY = 'when-modes-played';
+const LEGACY_TIMELINE_INTRO_KEY = 'when-timeline-intro-seen';
 
-function getModePlayed(data: ModesPlayed, mode: GameMode): boolean {
-  switch (mode) {
-    case 'daily':
-      return data.daily === true;
-    case 'suddenDeath':
-      return data.suddenDeath === true;
+function getHintSeen(data: HintsSeen, key: HintKey): boolean {
+  switch (key) {
+    case 'drag':
+      return data.drag === true;
+    case 'wrong':
+      return data.wrong === true;
+    case 'correct':
+      return data.correct === true;
+    case 'tapCard':
+      return data.tapCard === true;
+    // The in-game counter hint. Not `statsTab` (the home tab's strip) and not `NavKey`'s
+    // `stats` (the nav dot) — three different unions that happen to share a word.
+    case 'stats':
+      return data.stats === true;
+    case 'swap':
+      return data.swap === true;
+    case 'dailyTab':
+      return data.dailyTab === true;
+    case 'archiveTab':
+      return data.archiveTab === true;
+    case 'customTab':
+      return data.customTab === true;
+    case 'statsTab':
+      return data.statsTab === true;
+    case 'timelineTab':
+      return data.timelineTab === true;
+  }
+}
+
+function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
+  switch (key) {
+    case 'drag':
+      return { ...data, drag: true };
+    case 'wrong':
+      return { ...data, wrong: true };
+    case 'correct':
+      return { ...data, correct: true };
+    case 'tapCard':
+      return { ...data, tapCard: true };
+    case 'stats':
+      return { ...data, stats: true };
+    case 'swap':
+      return { ...data, swap: true };
+    case 'dailyTab':
+      return { ...data, dailyTab: true };
+    case 'archiveTab':
+      return { ...data, archiveTab: true };
+    case 'customTab':
+      return { ...data, customTab: true };
+    case 'statsTab':
+      return { ...data, statsTab: true };
+    case 'timelineTab':
+      return { ...data, timelineTab: true };
+  }
+}
+
+// The pre-2026-09 storage each key replaced. Read-only: nothing writes these any more.
+function legacyHintSeen(key: HintKey): boolean {
+  switch (key) {
+    case 'timelineTab':
+      return localStorage.getItem(LEGACY_TIMELINE_INTRO_KEY) === '1';
+    default:
+      return false;
   }
 }
 
 /**
- * Check if a game mode has been played before (for first-time rules popup)
+ * Whether a one-shot hint has already been shown (or its pre-2026-09 equivalent had).
  */
-export function hasPlayedMode(mode: GameMode): boolean {
+export function hasSeenHint(key: HintKey): boolean {
   try {
-    const stored = localStorage.getItem(MODES_PLAYED_KEY);
-    if (!stored) return false;
-    const data: ModesPlayed = JSON.parse(stored);
-    return getModePlayed(data, mode);
+    const stored = localStorage.getItem(HINTS_SEEN_KEY);
+    const data: HintsSeen = stored ? JSON.parse(stored) : {};
+    return getHintSeen(data, key) || legacyHintSeen(key);
   } catch {
     return false;
   }
 }
 
-function setModePlayed(data: ModesPlayed, mode: GameMode): ModesPlayed {
-  switch (mode) {
-    case 'daily':
-      return { ...data, daily: true };
-    case 'suddenDeath':
-      return { ...data, suddenDeath: true };
+/**
+ * Mark a one-shot hint as shown so it never auto-shows again.
+ */
+export function markHintSeen(key: HintKey): void {
+  try {
+    const stored = localStorage.getItem(HINTS_SEEN_KEY);
+    const data: HintsSeen = stored ? JSON.parse(stored) : {};
+    localStorage.setItem(HINTS_SEEN_KEY, JSON.stringify(setHintSeen(data, key)));
+  } catch {
+    console.warn('Failed to save hints seen state to localStorage');
   }
 }
 
 /**
- * Mark a game mode as having been played
+ * Forget every hint, legacy keys included, so the first-run experience can be replayed. The
+ * menu's "Reset Hints" row calls this; so do QA and the Playwright walkthrough.
+ *
+ * The event is the point: the burger menu is reachable mid-game (`TopBar` renders on the game
+ * screen too), but `useOnboardingHints` reads storage once per mount, so without a broadcast a
+ * reset during a game would silently do nothing until the next one. Fired even when the
+ * removals threw — in private mode there was nothing stored to forget, and the listeners
+ * re-reading an empty store is exactly the right outcome.
  */
-export function markModePlayed(mode: GameMode): void {
+export function resetHintsSeen(): void {
   try {
-    const stored = localStorage.getItem(MODES_PLAYED_KEY);
-    const data: ModesPlayed = stored ? JSON.parse(stored) : {};
-    const updated = setModePlayed(data, mode);
-    localStorage.setItem(MODES_PLAYED_KEY, JSON.stringify(updated));
+    localStorage.removeItem(HINTS_SEEN_KEY);
+    localStorage.removeItem(LEGACY_MODES_PLAYED_KEY);
+    localStorage.removeItem(LEGACY_TIMELINE_INTRO_KEY);
   } catch {
-    console.warn('Failed to save modes played to localStorage');
+    console.warn('Failed to reset hints seen state in localStorage');
   }
+  window.dispatchEvent(new Event(HINTS_RESET_EVENT));
+}
+
+/**
+ * Listen for `resetHintsSeen`. Returns the unsubscribe, so a hook can `useEffect(() =>
+ * subscribeHintsReset(handler), [handler])` and re-read its cached seen-state on the spot.
+ */
+export function subscribeHintsReset(handler: () => void): () => void {
+  window.addEventListener(HINTS_RESET_EVENT, handler);
+  return () => window.removeEventListener(HINTS_RESET_EVENT, handler);
 }
 
 // --- Nav "new" Dot Storage ---
@@ -217,32 +337,6 @@ export function markNavUnseen(key: NavKey): void {
     localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(clearNavSeen(data, key)));
   } catch {
     console.warn('Failed to save nav seen state to localStorage');
-  }
-}
-
-// --- Timeline Intro Storage ---
-
-const TIMELINE_INTRO_SEEN_KEY = 'when-timeline-intro-seen';
-
-/**
- * Check if the first-view My Timeline explainer has been shown before.
- */
-export function hasSeenTimelineIntro(): boolean {
-  try {
-    return localStorage.getItem(TIMELINE_INTRO_SEEN_KEY) === '1';
-  } catch {
-    return false;
-  }
-}
-
-/**
- * Mark the My Timeline explainer as seen so it won't auto-show again.
- */
-export function markTimelineIntroSeen(): void {
-  try {
-    localStorage.setItem(TIMELINE_INTRO_SEEN_KEY, '1');
-  } catch {
-    console.warn('Failed to save timeline intro seen state to localStorage');
   }
 }
 

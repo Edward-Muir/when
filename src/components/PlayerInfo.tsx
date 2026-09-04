@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Player, GameMode } from '../types';
 import { Users, Ruler, Zap } from 'lucide-react';
 import { getStreakFeedback } from '../utils/streakFeedback';
+import { GameHintKey } from '../utils/playerStorage';
 
 // Custom hand of cards icon with count overlay
 const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({
@@ -165,6 +166,8 @@ interface GameInfoCompactProps {
   gameMode: GameMode | null;
   onStatsClick?: () => void;
   currentStreak?: number;
+  /** The onboarding hint on screen: `stats` glows this counter. */
+  nudge?: GameHintKey | null;
 }
 
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
@@ -174,8 +177,12 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   gameMode: _gameMode,
   onStatsClick,
   currentStreak = 0,
+  nudge = null,
 }) => {
   const showTimelineStats = !isMultiplayer;
+  // `bg-border` is not decoration: the button is transparent, and `animate-hint-glow` is
+  // transform and filter only, so without a surface to swell there is nothing to see.
+  const nudgeClass = nudge === 'stats' ? 'animate-hint-glow bg-border' : '';
 
   const content = (
     <>
@@ -206,7 +213,7 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
     return (
       <button
         onClick={onStatsClick}
-        className="flex flex-col items-center gap-0.5 px-2 py-1 -mx-2 rounded-md hover:bg-border/50 active:bg-border transition-colors cursor-pointer"
+        className={`flex flex-col items-center gap-0.5 px-2 py-1 -mx-2 rounded-md hover:bg-border/50 active:bg-border transition-colors cursor-pointer ${nudgeClass}`}
       >
         {content}
       </button>

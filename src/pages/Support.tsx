@@ -32,33 +32,34 @@ const Support: React.FC = () => (
     <div className={faqCardClass}>
       <h3 className={questionClass}>How do I play?</h3>
       <p className={answerClass}>
-        You&apos;re shown a historical event and must place it in the correct position on a
-        timeline. Drag the card to where you think it belongs chronologically. The closer your
-        placement, the better!
+        You hold a hand of cards, each a historical event with its date hidden. Drag a card onto the
+        timeline where you think it happened. Get it right and it stays, and you draw a replacement.
+        Get it wrong and it moves to its true spot as a grey marker, and your hand is one card
+        smaller. The game ends when your hand is empty. Build the longest timeline!
       </p>
     </div>
 
     <div className={faqCardClass}>
       <h3 className={questionClass}>What are the game modes?</h3>
       <p className={answerClass}>
-        <strong className="text-text">Daily Challenge:</strong> A new puzzle every day, same for all
-        players. Compete on the leaderboard for the longest timeline.
+        <strong className="text-text">Daily Challenge:</strong> One deck a day, the same for
+        everyone. Your score goes on that day&apos;s leaderboard.
         <br />
-        <strong className="text-text">Sudden Death:</strong> Keep placing events correctly to build
-        your streak. One wrong placement and it&apos;s game over.
+        <strong className="text-text">Archive:</strong> Every past daily deck, replayable from the
+        day after it ran. Beat your best on each.
         <br />
-        <strong className="text-text">Custom Game:</strong> Choose your own categories, eras, and
-        difficulty for a personalised experience.
+        <strong className="text-text">Custom Game:</strong> Pick eras, categories, difficulty and
+        how many cards you start with. Sometimes called Sudden Death: every wrong placement costs a
+        card, and the game ends when they are gone.
       </p>
     </div>
 
     <div className={faqCardClass}>
       <h3 className={questionClass}>How does scoring work?</h3>
       <p className={answerClass}>
-        In Daily Challenge and Sudden Death, your score is the number of events you correctly place
-        in a row. Place an event correctly and you draw another card. Place it wrong and the game
-        ends. In Custom Game mode, you start with a hand of cards and try to place them all
-        correctly.
+        Your score is the length of your timeline: every event you place correctly adds one. A wrong
+        placement adds nothing and costs you a card. Daily scores are ranked on that day&apos;s
+        leaderboard, and Stats keeps your records across every game.
       </p>
     </div>
 

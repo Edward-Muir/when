@@ -37,8 +37,8 @@ jest.mock('../utils/playerStorage', () => ({
   getTimelineHighScore: jest.fn().mockReturnValue(0),
   getTodayResult: jest.fn().mockReturnValue(null),
   hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
-  hasPlayedMode: jest.fn().mockReturnValue(true),
-  markModePlayed: jest.fn(),
+  hasSeenHint: jest.fn().mockReturnValue(true),
+  markHintSeen: jest.fn(),
   markNavUnseen: jest.fn(), // Re-armed by the stats recorder when achievements unlock
 }));
 

@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Play, Share2, Check, Trophy } from 'lucide-react';
+import { Check } from 'lucide-react';
 import {
   GameConfig,
   Difficulty,
@@ -13,14 +13,14 @@ import {
 } from '../types';
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
-import CustomGameSettings from './CustomGameSettings';
+import CustomPanel from './panels/CustomPanel';
 import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
 import TimelinePanel from './panels/TimelinePanel';
 import DailyDeckPreview from './DailyDeckPreview';
-import NextDailyCountdown from './NextDailyCountdown';
+import DailyCta from './DailyCta';
 import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
@@ -36,9 +36,14 @@ import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
+import { getLifetimeStats } from '../utils/statsStorage';
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
+import HintStrip from './HintStrip';
+import { tabHintText } from '../utils/hintCopy';
+import { useTabHint } from '../hooks/useTabHint';
+import { DRAG_NUDGE_MS } from '../hooks/useOnboardingHints';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -110,49 +115,6 @@ function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<num
   }, [setVisited]);
 }
 
-// Daily CTA: play when unplayed, share + next-daily countdown when already completed today —
-// or, when today's score is not on the board, the way to put it there.
-const DailyCta: React.FC<{
-  played: boolean;
-  /** Today's score exists and is not on the board (see `canSubmitScore` in ModeSelect). */
-  unclaimed: boolean;
-  onShare: () => void;
-  onPlay: () => void;
-  onSubmit: () => void;
-}> = ({ played, unclaimed, onShare, onPlay, onSubmit }) => {
-  const buttonClass =
-    'w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body';
-
-  if (played) {
-    return (
-      <div className="w-full flex flex-col items-center gap-2">
-        {/* An unclaimed score takes the share slot for as long as it is unclaimed. Sharing a
-            score is the lesser thing to offer someone whose score did not make the board, and
-            this is the only route back to submitting once the game-over popup is gone. */}
-        {unclaimed ? (
-          <button onClick={onSubmit} className={buttonClass}>
-            <Trophy className="w-4 h-4" />
-            Submit Your Score
-          </button>
-        ) : (
-          <button onClick={onShare} className={buttonClass}>
-            <Share2 className="w-4 h-4" />
-            Challenge a Friend
-          </button>
-        )}
-        <NextDailyCountdown />
-      </div>
-    );
-  }
-
-  return (
-    <button onClick={onPlay} className={buttonClass}>
-      <Play className="w-4 h-4" />
-      Play Daily Challenge
-    </button>
-  );
-};
-
 /**
  * Today's score exists and the board came back without it — so it can still be claimed.
  *
@@ -165,6 +127,12 @@ const DailyCta: React.FC<{
 function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard): boolean {
   if (!result || board.isLoading || board.loadError) return false;
   return !board.submitted;
+}
+
+// Whether the Daily tab's "play your first daily game" strip applies: on the Daily tab, with
+// no daily game behind the player (an upgrade must not tell a regular "your first").
+function wantsFirstDailyNudge(onDailyTab: boolean, todayResult: DailyResult | null): boolean {
+  return onDailyTab && !todayResult && getLifetimeStats().gamesPlayed.daily === 0;
 }
 
 // Default hand size by player count (1–6 players); anything else falls back to 5.
@@ -200,6 +168,15 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
+  // The Daily tab's first-visit strip: "tap the button above to play your first daily game".
+  // Like the in-game drag hint it waits `DRAG_NUDGE_MS` of inactivity, so a player who taps
+  // Play straight away never sees it. It takes the leaderboard's slot while it shows, so the
+  // hero image keeps its height; the leaderboard is the least relevant thing to a new player.
+  const dailyHint = useTabHint(
+    'dailyTab',
+    wantsFirstDailyNudge(activePage === indexForTabKey('home'), todayResult),
+    DRAG_NUDGE_MS
+  );
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
   // the daily and challenge routes also mount this screen while they load, and must keep
@@ -419,6 +396,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
+      nudge={dailyHint.show}
     />
   );
 
@@ -447,7 +425,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         <ModePager
           ref={pagerRef}
           labels={TABS.map((tab) => tab.label)}
-          hintKey="when:modeSwipeHintSeen"
           onIndexChange={setActivePage}
           initialIndex={indexForTabKey(initialTab)}
           activeColors={TABS.map((tab) => tab.color)}
@@ -471,13 +448,17 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             />
 
             <div className="mt-3 flex-shrink-0">
-              <TodaysLongest
-                entries={leaderboard}
-                isLoading={isLeaderboardLoading}
-                playerEntry={playerEntry}
-                playerRank={rank}
-                onOpenFull={() => setIsLeaderboardOpen(true)}
-              />
+              {dailyHint.show ? (
+                <HintStrip text={tabHintText('dailyTab')} onDismiss={dailyHint.dismiss} />
+              ) : (
+                <TodaysLongest
+                  entries={leaderboard}
+                  isLoading={isLeaderboardLoading}
+                  playerEntry={playerEntry}
+                  playerRank={rank}
+                  onOpenFull={() => setIsLeaderboardOpen(true)}
+                />
+              )}
             </div>
           </div>
 
@@ -491,30 +472,22 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           />
 
           {/* Custom page */}
-          <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
-            <div className="text-left mb-3">
-              <h1 className="text-5xl font-bold text-text font-display leading-none">Custom</h1>
-              <p className="text-text-muted text-sm mt-1 font-body">
-                Choose your eras, categories & difficulty
-              </p>
-            </div>
-
-            <CustomGameSettings
-              selectedDifficulties={selectedDifficulties}
-              setSelectedDifficulties={setSelectedDifficulties}
-              selectedCategories={selectedCategories}
-              setSelectedCategories={setSelectedCategories}
-              selectedEras={selectedEras}
-              setSelectedEras={setSelectedEras}
-              playerCount={playerCount}
-              onPlayerCountChange={handlePlayerCountChange}
-              suddenDeathHandSize={suddenDeathHandSize}
-              setSuddenDeathHandSize={setSuddenDeathHandSize}
-              onPlay={handlePlayStart}
-              deckCount={deckCount}
-              isPlayValid={isPlayValid}
-            />
-          </div>
+          <CustomPanel
+            active={activePage === indexForTabKey('custom')}
+            selectedDifficulties={selectedDifficulties}
+            setSelectedDifficulties={setSelectedDifficulties}
+            selectedCategories={selectedCategories}
+            setSelectedCategories={setSelectedCategories}
+            selectedEras={selectedEras}
+            setSelectedEras={setSelectedEras}
+            playerCount={playerCount}
+            onPlayerCountChange={handlePlayerCountChange}
+            suddenDeathHandSize={suddenDeathHandSize}
+            setSuddenDeathHandSize={setSuddenDeathHandSize}
+            onPlay={handlePlayStart}
+            deckCount={deckCount}
+            isPlayValid={isPlayValid}
+          />
 
           {/* Stats page (lazy: mounted once first visited) */}
           {visited.has(indexForTabKey('stats')) ? (
