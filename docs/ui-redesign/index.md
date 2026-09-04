@@ -130,12 +130,16 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`
   and had no `active` prop; it is now `panels/CustomPanel.tsx` like the other three tabs.
   The old `TimelineIntroModal` is gone; its copy is the Timeline tab's strip.
-- **The nudge animations** are `animate-hint-lift` (card bob), `animate-hint-pulse` (swap
-  button: filled gold, swells and fades) and `animate-hint-glow` (Daily Play button while the
-  start-screen strip is up) in `index.css`. They are transform/opacity/filter only: a
-  box-shadow ring was tried first and was invisible on a phone. Under Reduce Motion the bob
-  is off and the two flashes fall back to a motion-free blink, so the strip still points at
-  something.
+- **The nudge animations** are `animate-hint-lift` (card bob) and one shared
+  `animate-hint-glow` (a gentle swell plus brightness) on both the swap button, which is also
+  filled gold, and the Daily Play button while the start-screen strip is up, in `index.css`.
+  Transform and filter only, never opacity (a fading button reads as disabled): a box-shadow
+  ring was tried first and was invisible on a phone, and a bigger swell-and-fade was tried
+  next and read as garish. Under Reduce Motion the bob is off and the glow falls back to a
+  motion-free brightness blink, so the strip still points at something.
+- **The Daily strip waits `DRAG_NUDGE_MS` of inactivity**, like the in-game drag hint, via
+  `useTabHint`'s `delayMs`: a player who taps Play straight away never sees it. The other
+  tabs keep the short swipe-settle delay.
 - **The Custom nav icon is sliders, not a cog.** A cog read as app Settings. It now matches
   the My Timeline filter button's icon; the aria-labels differ.
 

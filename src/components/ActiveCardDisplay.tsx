@@ -25,11 +25,11 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   nudge = null,
 }) => {
   const canCycle = !isAnimating && currentPlayer.hand.length > 1;
-  // Filled gold as well as flashing (swell + fade; a fade-only blink under Reduce Motion), so
-  // the strip's "swap" has something to point at.
+  // Filled gold and glowing with the same animation as the Daily Play button (swell +
+  // brightness, never opacity), so the strip's "swap" has something to point at.
   const cycleNudge = nudge === 'swap';
   const cycleNudgeClass = cycleNudge
-    ? 'animate-hint-pulse bg-accent border-accent hover:bg-accent'
+    ? 'animate-hint-glow bg-accent border-accent hover:bg-accent'
     : 'bg-surface border-border hover:bg-border';
   const cardNudgeClass = nudge === 'drag' ? 'animate-hint-lift' : '';
 

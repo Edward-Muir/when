@@ -43,6 +43,7 @@ import Leaderboard from './Leaderboard';
 import HintStrip from './HintStrip';
 import { tabHintText } from '../utils/hintCopy';
 import { useTabHint } from '../hooks/useTabHint';
+import { DRAG_NUDGE_MS } from '../hooks/useOnboardingHints';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -168,11 +169,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   }, [activePage]);
   useIdlePremount(setVisited);
   // The Daily tab's first-visit strip: "tap the button above to play your first daily game".
-  // It takes the leaderboard's slot while it shows, so the hero image keeps its height; the
-  // leaderboard is the least relevant thing to a new player.
+  // Like the in-game drag hint it waits `DRAG_NUDGE_MS` of inactivity, so a player who taps
+  // Play straight away never sees it. It takes the leaderboard's slot while it shows, so the
+  // hero image keeps its height; the leaderboard is the least relevant thing to a new player.
   const dailyHint = useTabHint(
     'dailyTab',
-    wantsFirstDailyNudge(activePage === indexForTabKey('home'), todayResult)
+    wantsFirstDailyNudge(activePage === indexForTabKey('home'), todayResult),
+    DRAG_NUDGE_MS
   );
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
