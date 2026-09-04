@@ -100,11 +100,13 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
 - **The How-to-Play modal shows once ever, not once per mode** (both modes share one rule-set),
   on the first game. It is `HowToPlayModal` on `ui/Modal` (`reveal` layer so it clears the
   menu drawer), and the same modal opens from the Daily tab's "How to play" link and from the
-  menu's "How to Play", which is now always present. Every hint's copy is repeated inside it
-  ("The tabs" section, the swap button), so a dismissed hint is always one tap from being
-  read again. `GameRules` lives there, not in `Menu.tsx`.
-- **Copy lives in one const map** (`utils/hintCopy.ts`), consumed by the strips and the modal,
-  so the two cannot drift. One line each, no em dashes.
+  menu's "How to Play", which is now always present. It is the rules only: the in-game
+  hints (the loop, the swap button) are re-findable inside it, and a tab's first-visit strip
+  is re-findable on the tab, whose subtitle says the same thing in fewer words. A "The tabs"
+  section was tried and cut: not how to play, and said elsewhere anyway. `GameRules` lives
+  there, not in `Menu.tsx`.
+- **Copy lives in one const map** (`utils/hintCopy.ts`), consumed by the strips. One line
+  each, no em dashes.
 - **In-game hints are a state machine in `useOnboardingHints`**, not in `Game.tsx`, which sits
   on ESLint's `complexity` ceiling (an error rule). Game mounts `HintStrip` and the modal
   unconditionally and drives them with props. At most one strip is on screen; the order is

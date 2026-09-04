@@ -1,9 +1,9 @@
 import { GameHintKey, TabHintKey } from './playerStorage';
 
 /**
- * The player-facing copy for every one-shot hint, in one place. The How-to-Play modal
- * repeats the tab lines under "The tabs", so every hint stays re-findable after it has
- * been dismissed and the two can never drift apart. One line each, no em dashes (the same
+ * The player-facing copy for every one-shot hint, in one place. The in-game hints are
+ * re-findable in the How-to-Play modal; each tab's line is re-findable on the tab itself
+ * (its subtitle says the same thing in fewer words). One line each, no em dashes (the same
  * register the share copy holds itself to).
  */
 export const HINT_TEXT: Record<GameHintKey, string> = {

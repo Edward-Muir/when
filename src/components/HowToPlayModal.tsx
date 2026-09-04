@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowDown, Check, RefreshCw, X } from 'lucide-react';
 import Modal from './ui/Modal';
-import { TAB_HINT_TEXT } from '../utils/hintCopy';
 import { markHintSeen } from '../utils/playerStorage';
 
 const textClass = 'text-sm text-text font-body leading-relaxed';
@@ -82,17 +81,6 @@ export const HowToPlaySteps: React.FC = () => (
   </div>
 );
 
-const TAB_ROWS: { name: string; text: string }[] = [
-  {
-    name: 'Daily',
-    text: 'One shared deck a day, with a leaderboard. Everyone plays the same cards.',
-  },
-  { name: 'Archive', text: TAB_HINT_TEXT.archiveTab },
-  { name: 'Custom', text: TAB_HINT_TEXT.customTab },
-  { name: 'Stats', text: TAB_HINT_TEXT.statsTab },
-  { name: 'My Timeline', text: TAB_HINT_TEXT.timelineTab },
-];
-
 interface HowToPlayModalProps {
   open: boolean;
   onDismiss: () => void;
@@ -100,9 +88,9 @@ interface HowToPlayModalProps {
 
 /**
  * The one How-to-Play screen: opened by the first game, the Daily tab's "How to play" link
- * and the menu. Every one-shot hint's copy is repeated here (rules, the tabs, the swap
- * button), so a dismissed hint is always one tap from being read again. On `ui/Modal`:
- * keep it mounted and drive `open`. `reveal` layer so it clears the menu drawer.
+ * and the menu. It is the rules only: the in-game hints are re-findable here, and each home
+ * tab explains itself with its own subtitle and first-visit strip. On `ui/Modal`: keep it
+ * mounted and drive `open`. `reveal` layer so it clears the menu drawer.
  *
  * Closing it from anywhere marks the `rules` hint seen: a player who reads the rules from
  * the home tab should not be handed the same screen again the moment their first game starts.
@@ -125,16 +113,6 @@ const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
       <div className="p-4">
         <HowToPlaySteps />
         <GameRules />
-
-        <h3 className="mt-4 mb-2 font-display text-sm font-semibold text-text">The tabs</h3>
-        <dl className="space-y-2">
-          {TAB_ROWS.map((row) => (
-            <div key={row.name} className="text-left">
-              <dt className="text-sm font-body font-semibold text-text">{row.name}</dt>
-              <dd className="text-xs text-text-muted font-body leading-relaxed">{row.text}</dd>
-            </div>
-          ))}
-        </dl>
 
         <div className="mt-4 space-y-2 text-left">
           <p className="text-xs text-text-muted font-body leading-relaxed">
