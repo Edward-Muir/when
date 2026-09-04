@@ -393,6 +393,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
+      nudge={dailyHint.show}
     />
   );
 

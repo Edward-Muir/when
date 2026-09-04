@@ -25,8 +25,8 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   nudge = null,
 }) => {
   const canCycle = !isAnimating && currentPlayer.hand.length > 1;
-  // Filled gold as well as pulsing: the pulse is a soft ring that Reduce Motion turns off,
-  // and a colour change reads either way.
+  // Filled gold as well as flashing (swell + fade; a fade-only blink under Reduce Motion), so
+  // the strip's "swap" has something to point at.
   const cycleNudge = nudge === 'swap';
   const cycleNudgeClass = cycleNudge
     ? 'animate-hint-pulse bg-accent border-accent hover:bg-accent'

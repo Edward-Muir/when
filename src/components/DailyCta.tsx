@@ -9,6 +9,8 @@ interface DailyCtaProps {
   onShare: () => void;
   onPlay: () => void;
   onSubmit: () => void;
+  /** The "tap the button above" strip is up: make the Play button the obvious thing. */
+  nudge?: boolean;
 }
 
 /**
@@ -17,7 +19,14 @@ interface DailyCtaProps {
  * way to put it there. No "How to play" link here: it cost the hero image 48px for every
  * player forever. The Daily tab's once-only strip (`ModeSelect`) and the menu carry it.
  */
-const DailyCta: React.FC<DailyCtaProps> = ({ played, unclaimed, onShare, onPlay, onSubmit }) => {
+const DailyCta: React.FC<DailyCtaProps> = ({
+  played,
+  unclaimed,
+  onShare,
+  onPlay,
+  onSubmit,
+  nudge = false,
+}) => {
   const buttonClass =
     'w-full py-3.5 px-4 bg-accent hover:bg-accent/90 text-white text-base font-semibold rounded-xl transition-all flex items-center justify-center gap-2 active:scale-95 font-body';
 
@@ -44,7 +53,7 @@ const DailyCta: React.FC<DailyCtaProps> = ({ played, unclaimed, onShare, onPlay,
   }
 
   return (
-    <button onClick={onPlay} className={buttonClass}>
+    <button onClick={onPlay} className={`${buttonClass} ${nudge ? 'animate-hint-glow' : ''}`}>
       <Play className="w-4 h-4" />
       Play Daily Challenge
     </button>

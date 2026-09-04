@@ -476,9 +476,13 @@ input,
   animation: haloPulse 0.8s ease-out;
 }
 
-/* Onboarding nudges (useOnboardingHints → ActiveCardDisplay): the top hand card bobs
-   while the drag hint is up; the swap button pulses a ring while its hint is up.
-   color-mix() rather than a Tailwind opacity modifier: `ring-accent/60` emits nothing. */
+/* Onboarding nudges. The top hand card bobs while the drag hint is up (hintLift); the
+   swap button flashes while its hint is up (hintPulse: it swells and fades, on top of being
+   filled gold); the Daily Play button glows while the "tap the button above" strip is up
+   (hintGlow: a gentle swell plus brightness). All transform/opacity/filter: a box-shadow
+   ring was tried first and was invisible on a phone. Under Reduce Motion the swell and the
+   bob are dropped but the fade and brightness blink stay, so the hint still points at
+   something (a colour change is not vestibular motion). */
 @keyframes hintLift {
   0%,
   100% {
@@ -494,16 +498,55 @@ input,
 }
 
 @keyframes hintPulse {
-  0% {
-    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 60%, transparent);
-  }
+  0%,
   100% {
-    box-shadow: 0 0 0 10px color-mix(in srgb, var(--color-accent) 0%, transparent);
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.18);
+    opacity: 0.55;
   }
 }
 
 .animate-hint-pulse {
-  animation: hintPulse 1.2s ease-out infinite;
+  animation: hintPulse 0.9s ease-in-out infinite;
+}
+
+@keyframes hintBlink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+@keyframes hintGlow {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.03);
+    filter: brightness(1.25);
+  }
+}
+
+.animate-hint-glow {
+  animation: hintGlow 1.2s ease-in-out infinite;
+}
+
+@keyframes hintBrighten {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.25);
+  }
 }
 
 /* Respect reduced motion preference */
@@ -518,8 +561,16 @@ input,
   .animate-shine-sweep,
   .animate-halo-pulse,
   .animate-hint-lift,
-  .animate-hint-pulse,
   .animate-vignette {
     animation: none;
+  }
+
+  /* The hint flashes keep a motion-free blink so the strip still points at something. */
+  .animate-hint-pulse {
+    animation: hintBlink 1s ease-in-out infinite;
+  }
+
+  .animate-hint-glow {
+    animation: hintBrighten 1.2s ease-in-out infinite;
   }
 }

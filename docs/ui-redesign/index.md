@@ -130,9 +130,12 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`
   and had no `active` prop; it is now `panels/CustomPanel.tsx` like the other three tabs.
   The old `TimelineIntroModal` is gone; its copy is the Timeline tab's strip.
-- **The card bob and the swap-button pulse** are `animate-hint-lift` / `animate-hint-pulse`
-  in `index.css`, in the reduced-motion block, with `color-mix()` for the ring because
-  `ring-accent/60` emits nothing (the opacity-modifier trap).
+- **The nudge animations** are `animate-hint-lift` (card bob), `animate-hint-pulse` (swap
+  button: filled gold, swells and fades) and `animate-hint-glow` (Daily Play button while the
+  start-screen strip is up) in `index.css`. They are transform/opacity/filter only: a
+  box-shadow ring was tried first and was invisible on a phone. Under Reduce Motion the bob
+  is off and the two flashes fall back to a motion-free blink, so the strip still points at
+  something.
 - **The Custom nav icon is sliders, not a cog.** A cog read as app Settings. It now matches
   the My Timeline filter button's icon; the aria-labels differ.
 
