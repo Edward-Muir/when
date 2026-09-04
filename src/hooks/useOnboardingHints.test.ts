@@ -39,9 +39,6 @@ const base: UseOnboardingHintsArgs = {
   isMultiplayer: false,
 };
 
-// A returning player who has seen the rules but none of the in-game hints.
-const rulesSeen = () => markHintSeen('rules');
-
 const setup = (overrides: Partial<UseOnboardingHintsArgs> = {}) =>
   renderHook((props: UseOnboardingHintsArgs) => useOnboardingHints(props), {
     initialProps: { ...base, ...overrides },
@@ -76,34 +73,16 @@ describe('pickHint', () => {
   });
 });
 
-describe('the rules modal and the drag nudge', () => {
-  it('opens the rules on the first game and holds the drag nudge until they are dismissed', () => {
+describe('the drag nudge', () => {
+  it('appears after the idle time, with no rules modal first', () => {
     const view = setup();
-    expect(view.result.current.rulesOpen).toBe(true);
-
-    act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS + 100));
-    expect(view.result.current.active).toBeNull();
-
-    act(() => view.result.current.dismissRules());
-    expect(view.result.current.rulesOpen).toBe(false);
-    expect(hasSeenHint('rules')).toBe(true);
-
     act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS - 1));
     expect(view.result.current.active).toBeNull();
     act(() => jest.advanceTimersByTime(1));
     expect(view.result.current.active).toBe('drag');
   });
 
-  it('does not reopen the rules for a returning player', () => {
-    rulesSeen();
-    const view = setup();
-    expect(view.result.current.rulesOpen).toBe(false);
-    act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS));
-    expect(view.result.current.active).toBe('drag');
-  });
-
   it('a drag clears the nudge and settles it for good, even if it never showed', () => {
-    rulesSeen();
     const view = setup();
     act(() => jest.advanceTimersByTime(1000));
     view.rerender({ ...base, isDragging: true });
@@ -116,7 +95,6 @@ describe('the rules modal and the drag nudge', () => {
   });
 
   it('tapping the nudge marks it, so it does not come straight back', () => {
-    rulesSeen();
     const view = setup();
     act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS));
     expect(view.result.current.active).toBe('drag');
@@ -128,7 +106,6 @@ describe('the rules modal and the drag nudge', () => {
   });
 
   it('stays quiet before play starts and in multiplayer', () => {
-    rulesSeen();
     const { result: loadingResult } = setup({ phase: 'modeSelect' });
     act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS * 2));
     expect(loadingResult.current.active).toBeNull();
@@ -141,7 +118,6 @@ describe('the rules modal and the drag nudge', () => {
 
 describe('the placement outcome hints', () => {
   beforeEach(() => {
-    rulesSeen();
     markHintSeen('drag');
   });
 
@@ -195,7 +171,6 @@ describe('the placement outcome hints', () => {
 
 describe('the swap hint', () => {
   beforeEach(() => {
-    rulesSeen();
     markHintSeen('drag');
   });
 
@@ -262,7 +237,6 @@ describe('the swap hint', () => {
 
 describe('leaving play', () => {
   it('clears whatever is showing when the game ends', () => {
-    markHintSeen('rules');
     const view = setup();
     act(() => jest.advanceTimersByTime(DRAG_NUDGE_MS));
     expect(view.result.current.active).toBe('drag');

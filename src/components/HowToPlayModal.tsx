@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowDown, Check, RefreshCw, X } from 'lucide-react';
 import Modal from './ui/Modal';
-import { markHintSeen } from '../utils/playerStorage';
 
 const textClass = 'text-sm text-text font-body leading-relaxed';
 
@@ -87,24 +86,16 @@ interface HowToPlayModalProps {
 }
 
 /**
- * The one How-to-Play screen: opened by the first game, the Daily tab's "How to play" link
- * and the menu. It is the rules only: the in-game hints are re-findable here, and each home
- * tab explains itself with its own subtitle and first-visit strip. On `ui/Modal`: keep it
- * mounted and drive `open`. `reveal` layer so it clears the menu drawer.
- *
- * Closing it from anywhere marks the `rules` hint seen: a player who reads the rules from
- * the home tab should not be handed the same screen again the moment their first game starts.
+ * The rules in text, opened from the menu only. It is never shown unasked: an auto-opened
+ * version on the first game was an essay nobody read, and the in-game hint strips
+ * (`useOnboardingHints`) teach the same loop at the moment each part matters. On
+ * `ui/Modal`: keep it mounted and drive `open`. `reveal` layer so it clears the menu drawer.
  */
 const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
-  const handleDismiss = () => {
-    markHintSeen('rules');
-    onDismiss();
-  };
-
   return (
     <Modal
       open={open}
-      onDismiss={handleDismiss}
+      onDismiss={onDismiss}
       header="How to Play"
       size="standard"
       layer="reveal"
@@ -128,7 +119,7 @@ const HowToPlayModal: React.FC<HowToPlayModalProps> = ({ open, onDismiss }) => {
         </div>
 
         <button
-          onClick={handleDismiss}
+          onClick={onDismiss}
           className="w-full mt-4 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
         >
           Got it

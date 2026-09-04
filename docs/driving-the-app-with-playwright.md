@@ -94,11 +94,9 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
 - **Bottom-left counters:** big number = lives/"cards left"; 📏 = events placed;
   ⚡ = current streak.
-- **First-run modal:** "How to Play" — dismiss by clicking the **"Got it"** button
-  (wait for it to render first; it appears a beat after the game starts). It shows
-  **once per install, not once per mode**, gated by `when-hints-seen.rules`; to replay
-  the first run, `localStorage.removeItem('when-hints-seen')` (and, on an old profile,
-  `when-modes-played`). A fresh context never has it seen.
+- **There is no first-run modal** (2026-09; the old "How to Play" / "Got it" popup is
+  gone). Nothing blocks the first drag. To replay a fresh install's hints,
+  `localStorage.removeItem('when-hints-seen')`.
 - **Onboarding hint strips:** one-line pills in `[role="status"]` (the in-game one sits
   just above the hand; each home tab has one under its heading). They appear once per
   install, never block a drag (the in-game ones are dismissed by a drag start), and

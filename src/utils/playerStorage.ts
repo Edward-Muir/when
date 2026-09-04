@@ -1,7 +1,7 @@
 /**
  * localStorage utilities for tracking player data:
  * - Daily game completion (Wordle-style play-once-per-day)
- * - First-time mode plays (for showing rules popup)
+ * - One-shot onboarding hints
  */
 
 import { Difficulty, Category, Era } from '../types';
@@ -75,18 +75,17 @@ export function hasPlayedToday(): boolean {
 // --- Onboarding Hints Storage ---
 
 /**
- * Every one-shot hint in the app, in one object under `when-hints-seen`. `rules` is the
- * How-to-Play modal that opens on the first game; the four game hints are the in-game
- * strips (`useOnboardingHints`); the four tab hints are the first-visit strips on the home
- * pager (`useTabHint`). Switch-based accessors, like `NavSeen` below, because the
- * `security/detect-object-injection` rule forbids indexing by a variable key.
+ * Every one-shot hint in the app, in one object under `when-hints-seen`: the four game
+ * hints are the in-game strips (`useOnboardingHints`); the five tab hints are the
+ * first-visit strips on the home pager (`useTabHint`). Switch-based accessors, like
+ * `NavSeen` below, because the `security/detect-object-injection` rule forbids indexing by
+ * a variable key.
  *
- * Two keys fall back to the storage they replaced, so an upgrade does not re-show
- * anything: `rules` used to be `when-modes-played` (per mode; any played mode counts) and
- * `timelineTab` used to be `when-timeline-intro-seen`. Those keys are read, never written.
+ * `timelineTab` falls back to the key it replaced, `when-timeline-intro-seen`, so an
+ * upgrade does not re-show it. That key is read, never written. (`when-modes-played`, which
+ * gated the old per-mode rules popup, is no longer read at all: the popup is gone.)
  */
 export type HintKey =
-  | 'rules'
   | 'drag'
   | 'wrong'
   | 'correct'
@@ -103,7 +102,6 @@ export type TabHintKey = Extract<
 >;
 
 interface HintsSeen {
-  rules?: boolean;
   drag?: boolean;
   wrong?: boolean;
   correct?: boolean;
@@ -121,8 +119,6 @@ const LEGACY_TIMELINE_INTRO_KEY = 'when-timeline-intro-seen';
 
 function getHintSeen(data: HintsSeen, key: HintKey): boolean {
   switch (key) {
-    case 'rules':
-      return data.rules === true;
     case 'drag':
       return data.drag === true;
     case 'wrong':
@@ -146,8 +142,6 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
 
 function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
   switch (key) {
-    case 'rules':
-      return { ...data, rules: true };
     case 'drag':
       return { ...data, drag: true };
     case 'wrong':
@@ -172,12 +166,6 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
 // The pre-2026-09 storage each key replaced. Read-only: nothing writes these any more.
 function legacyHintSeen(key: HintKey): boolean {
   switch (key) {
-    case 'rules': {
-      const stored = localStorage.getItem(LEGACY_MODES_PLAYED_KEY);
-      if (!stored) return false;
-      const modes: { daily?: boolean; suddenDeath?: boolean } = JSON.parse(stored);
-      return modes.daily === true || modes.suddenDeath === true;
-    }
     case 'timelineTab':
       return localStorage.getItem(LEGACY_TIMELINE_INTRO_KEY) === '1';
     default:

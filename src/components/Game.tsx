@@ -27,7 +27,6 @@ import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
 import TopBar from './TopBar';
-import HowToPlayModal from './HowToPlayModal';
 import HintStrip from './HintStrip';
 import { hintText } from '../utils/hintCopy';
 import { useOnboardingHints } from '../hooks/useOnboardingHints';
@@ -229,9 +228,9 @@ const Game: React.FC<GameProps> = ({
     haptics,
   });
 
-  // The one-shot hints: the How-to-Play modal on a first game, then the drag nudge, the
-  // first-wrong / first-correct strips and the swap-button hint. All the conditions live
-  // in the hook; this component only mounts the strip and the modal.
+  // The one-shot hints: the drag nudge, the first-wrong / first-correct strips and the
+  // swap-button hint. All the conditions live in the hook; this component only mounts the
+  // strip.
   const hints = useOnboardingHints({
     phase: state.phase,
     isAnimating: state.isAnimating,
@@ -464,8 +463,6 @@ const Game: React.FC<GameProps> = ({
           {showHomeConfirm && (
             <HomeConfirmModal onClose={() => setShowHomeConfirm(false)} onConfirm={onNewGame} />
           )}
-
-          <HowToPlayModal open={hints.rulesOpen} onDismiss={hints.dismissRules} />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always
               ends it, so the finale is the same screen whether or not this game unlocked

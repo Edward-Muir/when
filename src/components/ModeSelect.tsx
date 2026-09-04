@@ -36,10 +36,10 @@ import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
+import { getLifetimeStats } from '../utils/statsStorage';
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
-import HowToPlayModal from './HowToPlayModal';
 import HintStrip from './HintStrip';
 import { tabHintText } from '../utils/hintCopy';
 import { useTabHint } from '../hooks/useTabHint';
@@ -128,6 +128,12 @@ function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard):
   return !board.submitted;
 }
 
+// Whether the Daily tab's "play your first daily game" strip applies: on the Daily tab, with
+// no daily game behind the player (an upgrade must not tell a regular "your first").
+function wantsFirstDailyNudge(onDailyTab: boolean, todayResult: DailyResult | null): boolean {
+  return onDailyTab && !todayResult && getLifetimeStats().gamesPlayed.daily === 0;
+}
+
 // Default hand size by player count (1–6 players); anything else falls back to 5.
 const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
 const getDefaultHandSize = (count: number): number =>
@@ -148,10 +154,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Toast state for share button
   const [showShareToast, setShowShareToast] = useState(false);
 
-  // The rules. The first game opens them unasked (Game.tsx); here they open from the Daily
-  // tab's once-only strip, and after that from the menu.
-  const [showHowToPlay, setShowHowToPlay] = useState(false);
-
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
   const pagerRef = useRef<ModePagerHandle>(null);
@@ -165,10 +167,13 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
-  // The Daily tab's first-visit strip. It takes the leaderboard's slot while it shows, so
-  // the hero image keeps its height; the leaderboard is the least relevant thing to a new
-  // player. Tapping it opens How to Play; either way it is gone for good.
-  const dailyHint = useTabHint('dailyTab', activePage === indexForTabKey('home'));
+  // The Daily tab's first-visit strip: "tap the button above to play your first daily game".
+  // It takes the leaderboard's slot while it shows, so the hero image keeps its height; the
+  // leaderboard is the least relevant thing to a new player.
+  const dailyHint = useTabHint(
+    'dailyTab',
+    wantsFirstDailyNudge(activePage === indexForTabKey('home'), todayResult)
+  );
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
   // the daily and challenge routes also mount this screen while they load, and must keep
@@ -441,14 +446,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
             <div className="mt-3 flex-shrink-0">
               {dailyHint.show ? (
-                <HintStrip
-                  text={tabHintText('dailyTab')}
-                  onSelect={() => {
-                    dailyHint.dismiss();
-                    setShowHowToPlay(true);
-                  }}
-                  onDismiss={dailyHint.dismiss}
-                />
+                <HintStrip text={tabHintText('dailyTab')} onDismiss={dailyHint.dismiss} />
               ) : (
                 <TodaysLongest
                   entries={leaderboard}
@@ -514,8 +512,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           Copied to clipboard!
         </div>
       )}
-
-      <HowToPlayModal open={showHowToPlay} onDismiss={() => setShowHowToPlay(false)} />
 
       {/* Leaderboard Modal */}
       <Leaderboard

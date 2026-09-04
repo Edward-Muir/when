@@ -18,7 +18,7 @@ index.tsx                      # BrowserRouter + 13 routes
 │   │   ├── panels/                 # Archive, Custom, Stats, Timeline panels — one per tab
 │   │   │   └── stats/AchievementsSection.tsx # Last card of StatsPanel (was /achievements)
 │   │   ├── ArchiveDeckRow.tsx      # One past deck on the Archive timeline (not an event Card)
-│   │   └── HowToPlayModal.tsx      # The rules; also mounted by Game and Menu
+│   │   └── HowToPlayModal.tsx      # The rules in text; mounted by Menu only, never auto-shown
 │   ├── GameStartTransition.tsx # Animated transition into gameplay
 │   └── Game.tsx               # Main gameplay, owns the DndContext
 │       ├── ActiveCardDisplay.tsx → DraggableCard.tsx → Card.tsx
@@ -37,9 +37,9 @@ index.tsx                      # BrowserRouter + 13 routes
 ```
 
 Easy to get wrong: `FilterPopup` is mounted by `panels/TimelinePanel`, not `Game`.
-`CategoryIcon` has five importers across the tree. "How to Play" is one component,
-`HowToPlayModal`, mounted three times (Game for the first-run showing, Menu, and ModeSelect
-for the Daily tab's link); the rules copy `GameRules` lives in that file, not in `Menu.tsx`.
+`CategoryIcon` has five importers across the tree. "How to Play" (`HowToPlayModal`) is
+mounted by `Menu.tsx` only and never opens unasked; the rules copy `GameRules` lives in that
+file, not in `Menu.tsx`. Teaching happens through the in-game hint strips.
 
 ## Hooks
 

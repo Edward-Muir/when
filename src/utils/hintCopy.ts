@@ -18,7 +18,7 @@ export const HINT_TEXT: Record<GameHintKey, string> = {
 };
 
 export const TAB_HINT_TEXT: Record<TabHintKey, string> = {
-  dailyTab: 'One deck a day, the same for everyone. Tap for how to play.',
+  dailyTab: 'Tap the button above to play your first daily game.',
   archiveTab: 'Past daily decks, replayable from the day after they run. Beat your best on each.',
   customTab:
     'Build a deck from any eras, categories and difficulty. Wrong placements cost a card; the game ends when your hand is empty.',

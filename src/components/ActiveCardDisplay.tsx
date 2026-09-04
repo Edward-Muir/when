@@ -25,7 +25,12 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   nudge = null,
 }) => {
   const canCycle = !isAnimating && currentPlayer.hand.length > 1;
-  const cycleNudgeClass = nudge === 'swap' ? 'animate-hint-pulse ring-2 ring-accent' : '';
+  // Filled gold as well as pulsing: the pulse is a soft ring that Reduce Motion turns off,
+  // and a colour change reads either way.
+  const cycleNudge = nudge === 'swap';
+  const cycleNudgeClass = cycleNudge
+    ? 'animate-hint-pulse bg-accent border-accent hover:bg-accent'
+    : 'bg-surface border-border hover:bg-border';
   const cardNudgeClass = nudge === 'drag' ? 'animate-hint-lift' : '';
 
   return (
@@ -37,14 +42,12 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
           onClick={() => canCycle && onCycleHand()}
           disabled={!canCycle}
           className={`absolute -top-2 -right-2 z-50 w-10 h-10 min-w-10 min-h-10 shrink-0 rounded-full
-            bg-surface border border-border
-            shadow-sm flex items-center justify-center
-            hover:bg-border
+            border shadow-sm flex items-center justify-center
             disabled:opacity-40 disabled:cursor-not-allowed
             active:scale-95 transition-all ${cycleNudgeClass}`}
           aria-label="Cycle to next card"
         >
-          <RefreshCw className="w-4 h-4 text-text" />
+          <RefreshCw className={`w-4 h-4 ${cycleNudge ? 'text-white' : 'text-text'}`} />
         </button>
 
         {/* Horizontal card stack */}

@@ -90,30 +90,26 @@ and do not improve performance, while single-line contextual hints tied to the m
 need, dismissible and re-findable, do. The fix is that shape; there is no guided tutorial.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
-  `markHintSeen` / `resetHintsSeen`, keys `rules`, `drag`, `wrong`, `correct`, `swap`,
+  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `swap`, `dailyTab`,
   `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based accessors, because the
-  `security/detect-object-injection` rule forbids indexing by a variable key. **Two keys read
-  the storage they replaced** so an upgrade re-shows nothing: `rules` counts as seen if the
-  old per-mode `when-modes-played` has any `true`; `timelineTab` if
-  `when-timeline-intro-seen === '1'`. Those legacy keys are read-only now; the fallbacks are
-  load-bearing and tested.
-- **The How-to-Play modal shows once ever, not once per mode** (both modes share one rule-set),
-  on the first game. It is `HowToPlayModal` on `ui/Modal` (`reveal` layer so it clears the
-  menu drawer), and the same modal opens from the Daily tab's once-only strip and from the
-  menu's "How to Play", which is now always present. A permanent "How to play" link under
-  the Play button was tried and cut: it cost the hero image 48px for every player forever. It is the rules only: the in-game
-  hints (the loop, the swap button) are re-findable inside it, and a tab's first-visit strip
-  is re-findable on the tab, whose subtitle says the same thing in fewer words. A "The tabs"
-  section was tried and cut: not how to play, and said elsewhere anyway. `GameRules` lives
-  there, not in `Menu.tsx`.
+  `security/detect-object-injection` rule forbids indexing by a variable key. **`timelineTab`
+  reads the key it replaced** (`when-timeline-intro-seen === '1'`) so an upgrade does not
+  re-show it; that legacy key is read-only now and the fallback is tested. (`when-modes-played`
+  gated the old per-mode rules popup and is no longer read: the popup is gone.)
+- **The How-to-Play modal is never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
+  (`reveal` layer so it clears the menu drawer), opened from the menu's "How to Play", which
+  is now always present, and from nowhere else. Three things were tried and cut: opening it
+  automatically on the first game (an essay nobody read; the in-game strips that follow teach
+  the same loop at the moment each part matters); a permanent "How to play" link under the
+  Daily Play button (cost the hero image 48px for every player forever); and a "The tabs"
+  section inside it (not how to play, and said elsewhere). It is the rules only, and
+  `GameRules` lives there, not in `Menu.tsx`.
 - **Copy lives in one const map** (`utils/hintCopy.ts`), consumed by the strips. One line
   each, no em dashes.
 - **In-game hints are a state machine in `useOnboardingHints`**, not in `Game.tsx`, which sits
-  on ESLint's `complexity` ceiling (an error rule). Game mounts `HintStrip` and the modal
-  unconditionally and drives them with props. At most one strip is on screen; the order is
-  rules modal → idle drag nudge (`DRAG_NUDGE_MS` after play starts, and never while the modal
-  is open, because `rulesOpen` is a dependency of the timer effect) → first-wrong /
-  first-correct strips once the placement animation settles → the swap-button hint, which is
+  on ESLint's `complexity` ceiling (an error rule). Game mounts `HintStrip` unconditionally
+  and drives it with props. At most one strip is on screen; the order is idle drag nudge
+  (`DRAG_NUDGE_MS` after play starts) → first-wrong / first-correct strips once the placement animation settles → the swap-button hint, which is
   the advanced one and waits until `drag` and `correct` are seen and either `wrong` is seen or
   four cards are placed (so a perfect run still gets it), plus a quiet gap. `drag` is marked
   on the first drag whether or not the strip ever showed, so a player who never idles skips it
@@ -126,9 +122,9 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   translate.
 - **Tab hints gate on `active`, never on mount** (`useTabHint`): the pager pre-mounts every
   panel at idle, so a mount-time check would fire for tabs never opened. All five tabs have
-  one. The Daily strip is an invitation (tap opens How to Play, the X dismisses; `HintStrip`
-  `onSelect`) and **takes the leaderboard's slot while it shows** rather than sitting under
-  the heading: the hero card is the page's `flex-1` element, so anything added under the
+  one. The Daily strip is a nudge to press Play ("your first daily game"), shown only to a
+  player with no daily behind them, and **takes the leaderboard's slot while it shows** rather
+  than sitting under the heading: the hero card is the page's `flex-1` element, so anything added under the
   heading shrinks the image, and the leaderboard is the least relevant thing to a new player. They also wait
   `TAB_HINT_MOUNT_DELAY_MS` (350 ms) for the scroll-snap to settle, since mounting mid-gesture
   is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`

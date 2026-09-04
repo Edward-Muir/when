@@ -1,7 +1,6 @@
 import { hasSeenHint, markHintSeen, resetHintsSeen, HintKey } from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
-  'rules',
   'drag',
   'wrong',
   'correct',
@@ -38,13 +37,6 @@ describe('one-shot hints storage', () => {
     expect(hasSeenHint('drag')).toBe(false);
   });
 
-  it('treats a player who played under the old per-mode flag as having seen the rules', () => {
-    localStorage.setItem('when-modes-played', JSON.stringify({ daily: true }));
-    expect(hasSeenHint('rules')).toBe(true);
-    // Only the rules inherit from it: the in-game hints are new to everyone.
-    expect(hasSeenHint('drag')).toBe(false);
-  });
-
   it('treats the old timeline-intro flag as the Timeline tab hint', () => {
     localStorage.setItem('when-timeline-intro-seen', '1');
     expect(hasSeenHint('timelineTab')).toBe(true);
@@ -53,13 +45,12 @@ describe('one-shot hints storage', () => {
 
   it('survives corrupt storage', () => {
     localStorage.setItem('when-hints-seen', '{not json');
-    expect(hasSeenHint('rules')).toBe(false);
-    expect(() => markHintSeen('rules')).not.toThrow();
+    expect(hasSeenHint('drag')).toBe(false);
+    expect(() => markHintSeen('drag')).not.toThrow();
   });
 
   it('resets everything, legacy keys included', () => {
     markHintSeen('swap');
-    localStorage.setItem('when-modes-played', JSON.stringify({ daily: true }));
     localStorage.setItem('when-timeline-intro-seen', '1');
     resetHintsSeen();
     ALL_KEYS.forEach((key) => expect(hasSeenHint(key)).toBe(false));

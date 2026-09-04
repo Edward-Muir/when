@@ -2,10 +2,6 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import HowToPlayModal from './HowToPlayModal';
-import { hasSeenHint } from '../utils/playerStorage';
-
-beforeEach(() => localStorage.clear());
-
 describe('HowToPlayModal', () => {
   it('renders nothing while closed', () => {
     render(<HowToPlayModal open={false} onDismiss={jest.fn()} />);
@@ -24,12 +20,10 @@ describe('HowToPlayModal', () => {
     expect(screen.queryByText('My Timeline')).toBeNull();
   });
 
-  it('dismisses from the Got it button and counts as having read the rules', async () => {
+  it('dismisses from the Got it button', async () => {
     const onDismiss = jest.fn();
     render(<HowToPlayModal open onDismiss={onDismiss} />);
-    expect(hasSeenHint('rules')).toBe(false);
     await userEvent.click(screen.getByRole('button', { name: 'Got it' }));
     expect(onDismiss).toHaveBeenCalledTimes(1);
-    expect(hasSeenHint('rules')).toBe(true);
   });
 });
