@@ -425,7 +425,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
         <ModePager
           ref={pagerRef}
           labels={TABS.map((tab) => tab.label)}
-          hintKey="when:modeSwipeHintSeen"
           onIndexChange={setActivePage}
           initialIndex={indexForTabKey(initialTab)}
           activeColors={TABS.map((tab) => tab.color)}

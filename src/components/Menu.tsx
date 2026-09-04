@@ -14,6 +14,7 @@ import {
   Bell,
   BellOff,
   LifeBuoy,
+  RotateCcw,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -22,6 +23,7 @@ import InstallInstructions from './InstallInstructions';
 import { useDailyReminder } from '../hooks/useDailyReminder';
 import { useTheme } from '../hooks/useTheme';
 import { shareApp } from '../utils/share';
+import { resetHintsSeen } from '../utils/playerStorage';
 import { APP_VERSION } from '../version';
 import HowToPlayModal from './HowToPlayModal';
 
@@ -77,6 +79,7 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
+  const [hintsReset, setHintsReset] = React.useState(false);
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native Capacitor app (redundant) and not on Android/desktop (iOS-only app).
@@ -99,6 +102,14 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
 
   const handleRules = () => {
     setShowRulesModal(true);
+  };
+
+  // Kept open, like the theme and reminder rows, so the confirmation is actually seen. Not a
+  // toast: TopBar's single Toast is hardwired to "Copied to clipboard!". Not a confirm
+  // either — nothing is lost, the hints just come back.
+  const handleResetHints = () => {
+    resetHintsSeen();
+    setHintsReset(true);
   };
 
   const menuItemClass = `
@@ -192,6 +203,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                   <HelpCircle className={iconClass} />
                   <span className="font-body">How to Play</span>
                 </button>
+
+                <button onClick={handleResetHints} className={menuItemClass}>
+                  <RotateCcw className={iconClass} />
+                  <span className="font-body">Reset Hints</span>
+                </button>
+                {hintsReset && (
+                  <p className="px-4 pb-2 -mt-1 text-sm text-text-muted font-body">
+                    Hints will show again as you play.
+                  </p>
+                )}
 
                 <Link to="/support" className={menuItemClass} onClick={onClose}>
                   <LifeBuoy className={iconClass} />

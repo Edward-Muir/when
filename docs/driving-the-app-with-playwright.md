@@ -96,12 +96,21 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   ⚡ = current streak.
 - **There is no first-run modal** (2026-09; the old "How to Play" / "Got it" popup is
   gone). Nothing blocks the first drag. To replay a fresh install's hints,
-  `localStorage.removeItem('when-hints-seen')`.
+  `localStorage.removeItem('when-hints-seen')` — or click **Reset Hints** in the burger
+  menu, which also works mid-game (it broadcasts, so the hook re-reads on the spot).
 - **Onboarding hint strips:** one-line pills in `[role="status"]` (the in-game one sits
   just above the hand; each home tab has one under its heading). They appear once per
   install, never block a drag (the in-game ones are dismissed by a drag start), and
   tapping one dismisses it. The copy is in `src/utils/hintCopy.ts` if you need to match
-  on it. The in-game idle nudge appears 4 s after play starts with no drag.
+  on it. The in-game idle nudge appears 4 s after play starts with no drag — note "play
+  starts" is when the transition finishes, a second or two after the Play click, so budget
+  from the first hand card appearing, not from the click.
+- **The in-game ladder is one pill per placement**, shown when the placement animation
+  settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap`.
+  Do **not** pause between drags to "let a hint appear" — that is what hid a real bug until
+  2026-09. Each pill lands ~500-700 ms after `mouse.up`, and three of them glow a control at
+  the same time (`[class*="animate-hint-"]`): the top hand card's wrapper for `tapCard`, the
+  bottom-left counter button for `stats`, the cycle button for `swap`.
 - **Mode select → start a game:** nav button `[aria-label="Custom game"]`, then
   the button matching `/Play\s+·/` ("Play · N events"). Custom is the only mode there.
 - **Leaderboard submit (at game over):** `input[placeholder*="name" i]` (maxlength

@@ -90,12 +90,22 @@ and do not improve performance, while single-line contextual hints tied to the m
 need, dismissible and re-findable, do. The fix is that shape; there is no guided tutorial.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
-  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `swap`, `dailyTab`,
-  `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based accessors, because the
-  `security/detect-object-injection` rule forbids indexing by a variable key. **`timelineTab`
-  reads the key it replaced** (`when-timeline-intro-seen === '1'`) so an upgrade does not
-  re-show it; that legacy key is read-only now and the fallback is tested. (`when-modes-played`
-  gated the old per-mode rules popup and is no longer read: the popup is gone.)
+  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `tapCard`, `stats`,
+  `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based
+  accessors, because the `security/detect-object-injection` rule forbids indexing by a
+  variable key. Note `stats` (the in-game counter hint), `statsTab` (the home tab's strip) and
+  `NavKey`'s `stats` (the nav dot) are three different things that share a word; don't
+  de-duplicate them. **`timelineTab` reads the key it replaced**
+  (`when-timeline-intro-seen === '1'`) so an upgrade does not re-show it; that legacy key is
+  read-only now and the fallback is tested. (`when-modes-played` gated the old per-mode rules
+  popup and is no longer read: the popup is gone.)
+- **"Reset Hints" in the burger menu** calls `resetHintsSeen()`, for QA and for a player who
+  wants the explanations back. The drawer stays open and confirms inline, like the theme and
+  reminder rows — not a toast, because `TopBar`'s single `Toast` is hardwired to "Copied to
+  clipboard!", and not a confirm, because nothing is lost. `resetHintsSeen` also **dispatches
+  a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
+  `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
+  reset during a game would silently do nothing until the next one.
 - **The How-to-Play modal is never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
   (`reveal` layer so it clears the menu drawer), opened from the menu's "How to Play", which
   is now always present, and from nowhere else. Three things were tried and cut: opening it
@@ -108,13 +118,28 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   each, no em dashes.
 - **In-game hints are a state machine in `useOnboardingHints`**, not in `Game.tsx`, which sits
   on ESLint's `complexity` ceiling (an error rule). Game mounts `HintStrip` unconditionally
-  and drives it with props. At most one strip is on screen; the order is idle drag nudge
-  (`DRAG_NUDGE_MS` after play starts) → first-wrong / first-correct strips once the placement animation settles → the swap-button hint, which is
-  the advanced one and waits until `drag` and `correct` are seen and either `wrong` is seen or
-  four cards are placed (so a perfect run still gets it), plus a quiet gap. `drag` is marked
-  on the first drag whether or not the strip ever showed, so a player who never idles skips it
-  and the swap gate still opens. An outcome that lands on the game-ending placement is
-  discarded unmarked and returns next game.
+  and drives it with props. At most one strip is on screen.
+- **The ladder is settle-driven: one hint per placement.** Every time a placement settles
+  (`isAnimating` goes false with an outcome pending) the highest-priority unseen, eligible
+  rung of `SETTLE_PRIORITY` is shown, **replacing** whatever is up: `wrong` → `correct` →
+  `tapCard` → `stats` → `swap`. So each hint gets a player action of its own and nothing
+  stacks, and a first game teaches the whole loop in four or five moves. The idle drag nudge
+  (`DRAG_NUDGE_MS` after play starts) is the only timer-driven hint left; `drag` is marked on
+  the first drag whether or not the strip ever showed. `swap` still needs a hand worth cycling
+  and either a miss or four placements, so a perfect run reaches it. An outcome that lands on
+  the game-ending placement is discarded unmarked and returns next game.
+- **The 2026-09 shape this replaced never fired.** `swap` hung off a `swapEligible` boolean
+  feeding a 1.5 s `SWAP_COOLDOWN_MS` timer, and the effect's cleanup cancelled and restarted
+  that timer every time the boolean flipped — which it did on every drag frame and animation
+  transition, so the quiet gap essentially never arrived; the 4 s outcome strip then blocked
+  it as well. Playwright passed only because the script paused between moves. **Do not gate a
+  hint on a timer fed by a churning boolean.** Only two `setTimeout`s remain: the idle nudge's
+  and the hide timer inside `show()`. Three hazards are load-bearing and commented in the
+  hook: the pending outcome is consumed _before_ any state write and decisions read `seenRef`,
+  or the re-entrant re-render would walk the whole ladder on one placement; and the swap
+  hint's "they swapped it" check compares against a baseline taken when the hint was shown,
+  because `useWhenGame` swaps in the newly drawn card in the very same commit that ends the
+  animation.
 - **The floating strip lives inside the timeline area at z-[35]**, above the z-30 "Later"
   fade and below the z-40 bottom bar, so it never covers the hand card and tracks the bar's
   height. Not a `fixed bottom-20` toast: that lands on the card. The positioned wrapper is a
@@ -130,9 +155,14 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   is the class of change that used to stall the iOS swipe. Custom was inline in `ModeSelect`
   and had no `active` prop; it is now `panels/CustomPanel.tsx` like the other three tabs.
   The old `TimelineIntroModal` is gone; its copy is the Timeline tab's strip.
-- **The nudge animations** are `animate-hint-lift` (card bob) and one shared
-  `animate-hint-glow` (a gentle swell plus brightness) on both the swap button, which is also
-  filled gold, and the Daily Play button while the start-screen strip is up, in `index.css`.
+- **The nudge animations** are `animate-hint-lift` (card bob, for `drag`) and one shared
+  `animate-hint-glow` (a gentle swell plus brightness) with four homes, in `index.css`: the
+  swap button, which is also filled gold; the Daily Play button while the start-screen strip
+  is up; the top hand card's wrapper for `tapCard`; and the bottom-left counter for `stats`.
+  The counter also takes `bg-border` while it glows — it is transparent otherwise, and the
+  animation is transform and filter only, so without a surface to swell there is nothing to
+  see. The pager's one-time swipe nudge (`when:modeSwipeHintSeen`) was deleted in 2026-09:
+  it never showed, and it was the only hint stored outside `when-hints-seen`.
   Transform and filter only, never opacity (a fading button reads as disabled): a box-shadow
   ring was tried first and was invisible on a phone, and a bigger swell-and-fade was tried
   next and read as garish. Under Reduce Motion the bob is off and the glow falls back to a

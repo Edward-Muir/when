@@ -4,6 +4,13 @@ import { GameHintKey } from '../utils/playerStorage';
 import DraggableCard from './DraggableCard';
 import Card from './Card';
 
+/** `drag` bobs the top card; `tapCard` glows it. Same wrapper either way. */
+function topCardNudgeClass(nudge: GameHintKey | null): string {
+  if (nudge === 'drag') return 'animate-hint-lift';
+  if (nudge === 'tapCard') return 'animate-hint-glow';
+  return '';
+}
+
 interface ActiveCardDisplayProps {
   activeCard: HistoricalEvent;
   currentPlayer: Player;
@@ -11,7 +18,10 @@ interface ActiveCardDisplayProps {
   isOverTimeline: boolean;
   onCycleHand: () => void;
   onCardTap: () => void;
-  /** The onboarding hint on screen: `drag` bobs the top card, `swap` pulses the button. */
+  /**
+   * The onboarding hint on screen: `drag` bobs the top card, `tapCard` glows it, `swap`
+   * pulses the cycle button.
+   */
   nudge?: GameHintKey | null;
 }
 
@@ -31,7 +41,7 @@ const ActiveCardDisplay: React.FC<ActiveCardDisplayProps> = ({
   const cycleNudgeClass = cycleNudge
     ? 'animate-hint-glow bg-accent border-accent hover:bg-accent'
     : 'bg-surface border-border hover:bg-border';
-  const cardNudgeClass = nudge === 'drag' ? 'animate-hint-lift' : '';
+  const cardNudgeClass = topCardNudgeClass(nudge);
 
   return (
     <div className="flex-1 flex items-center justify-start pl-3 pointer-events-auto">

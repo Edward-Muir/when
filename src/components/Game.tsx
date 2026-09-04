@@ -100,6 +100,17 @@ function isBottomBarShareVisible(
   return !pendingPopup && endStep === null;
 }
 
+/**
+ * A card-description popup is open. The tap-a-card hint has been answered by definition, so
+ * the hook stops offering it.
+ *
+ * Extracted rather than inlined at the `useOnboardingHints` call for the same reason as the
+ * two helpers above — `Game` sits on ESLint's complexity ceiling of 15.
+ */
+function isCardPopupOpen(pendingPopup: GamePopupData | null): boolean {
+  return pendingPopup?.type === 'description';
+}
+
 interface GameProps {
   state: WhenGameState;
   onPlacement: (index: number) => PlacementResult | null;
@@ -228,9 +239,9 @@ const Game: React.FC<GameProps> = ({
     haptics,
   });
 
-  // The one-shot hints: the drag nudge, the first-wrong / first-correct strips and the
-  // swap-button hint. All the conditions live in the hook; this component only mounts the
-  // strip.
+  // The one-shot hints: the idle drag nudge, then one strip per placement walking the ladder
+  // wrong / correct -> tap a card -> the counter -> swap. All the conditions live in the
+  // hook; this component only mounts the strip and passes the glow target its key.
   const hints = useOnboardingHints({
     phase: state.phase,
     isAnimating: state.isAnimating,
@@ -241,6 +252,8 @@ const Game: React.FC<GameProps> = ({
     timelineLength: state.timeline.length,
     activeCardName: activeCard?.name,
     isMultiplayer: state.players.length > 1,
+    statsOpen: showStatsPopup,
+    cardOpen: isCardPopupOpen(pendingPopup),
   });
 
   useEffect(() => {
@@ -402,6 +415,7 @@ const Game: React.FC<GameProps> = ({
                     gameMode={state.gameMode}
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
+                    nudge={hints.active}
                   />
                 </div>
 

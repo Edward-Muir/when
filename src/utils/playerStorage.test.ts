@@ -1,9 +1,17 @@
-import { hasSeenHint, markHintSeen, resetHintsSeen, HintKey } from './playerStorage';
+import {
+  hasSeenHint,
+  markHintSeen,
+  resetHintsSeen,
+  subscribeHintsReset,
+  HintKey,
+} from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
   'drag',
   'wrong',
   'correct',
+  'tapCard',
+  'stats',
   'swap',
   'dailyTab',
   'archiveTab',
@@ -47,6 +55,16 @@ describe('one-shot hints storage', () => {
     localStorage.setItem('when-hints-seen', '{not json');
     expect(hasSeenHint('drag')).toBe(false);
     expect(() => markHintSeen('drag')).not.toThrow();
+  });
+
+  it('broadcasts the reset, so a mounted hook can re-read on the spot', () => {
+    const handler = jest.fn();
+    const unsubscribe = subscribeHintsReset(handler);
+    resetHintsSeen();
+    expect(handler).toHaveBeenCalledTimes(1);
+    unsubscribe();
+    resetHintsSeen();
+    expect(handler).toHaveBeenCalledTimes(1);
   });
 
   it('resets everything, legacy keys included', () => {

@@ -50,6 +50,8 @@ rest are single-purpose and named for what they do (`useDragAndDrop`, `useLeader
 `useImagePrefetch`, `useDailyReminder`, `useEndOfGameSequence` — the post-game screen queue:
 milestones, achievements, then always the share; `useOnboardingHints` — the in-game one-shot
 hint machine, kept out of `Game.tsx` because Game sits on the ESLint complexity ceiling;
+settle-driven, one hint per placement, walking `wrong` -> `correct` -> `tapCard` -> `stats`
+-> `swap` with only the idle drag nudge on a timer;
 `useTabHint` — a home tab's first-visit strip, gated on `active`).
 
 ## Utils

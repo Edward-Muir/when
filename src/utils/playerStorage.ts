@@ -75,7 +75,7 @@ export function hasPlayedToday(): boolean {
 // --- Onboarding Hints Storage ---
 
 /**
- * Every one-shot hint in the app, in one object under `when-hints-seen`: the four game
+ * Every one-shot hint in the app, in one object under `when-hints-seen`: the six game
  * hints are the in-game strips (`useOnboardingHints`); the five tab hints are the
  * first-visit strips on the home pager (`useTabHint`). Switch-based accessors, like
  * `NavSeen` below, because the `security/detect-object-injection` rule forbids indexing by
@@ -89,13 +89,18 @@ export type HintKey =
   | 'drag'
   | 'wrong'
   | 'correct'
+  | 'tapCard'
+  | 'stats'
   | 'swap'
   | 'dailyTab'
   | 'archiveTab'
   | 'customTab'
   | 'statsTab'
   | 'timelineTab';
-export type GameHintKey = Extract<HintKey, 'drag' | 'wrong' | 'correct' | 'swap'>;
+export type GameHintKey = Extract<
+  HintKey,
+  'drag' | 'wrong' | 'correct' | 'tapCard' | 'stats' | 'swap'
+>;
 export type TabHintKey = Extract<
   HintKey,
   'dailyTab' | 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab'
@@ -105,6 +110,8 @@ interface HintsSeen {
   drag?: boolean;
   wrong?: boolean;
   correct?: boolean;
+  tapCard?: boolean;
+  stats?: boolean;
   swap?: boolean;
   dailyTab?: boolean;
   archiveTab?: boolean;
@@ -114,6 +121,7 @@ interface HintsSeen {
 }
 
 const HINTS_SEEN_KEY = 'when-hints-seen';
+const HINTS_RESET_EVENT = 'when-hints-reset';
 const LEGACY_MODES_PLAYED_KEY = 'when-modes-played';
 const LEGACY_TIMELINE_INTRO_KEY = 'when-timeline-intro-seen';
 
@@ -125,6 +133,12 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
       return data.wrong === true;
     case 'correct':
       return data.correct === true;
+    case 'tapCard':
+      return data.tapCard === true;
+    // The in-game counter hint. Not `statsTab` (the home tab's strip) and not `NavKey`'s
+    // `stats` (the nav dot) — three different unions that happen to share a word.
+    case 'stats':
+      return data.stats === true;
     case 'swap':
       return data.swap === true;
     case 'dailyTab':
@@ -148,6 +162,10 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
       return { ...data, wrong: true };
     case 'correct':
       return { ...data, correct: true };
+    case 'tapCard':
+      return { ...data, tapCard: true };
+    case 'stats':
+      return { ...data, stats: true };
     case 'swap':
       return { ...data, swap: true };
     case 'dailyTab':
@@ -200,8 +218,14 @@ export function markHintSeen(key: HintKey): void {
 }
 
 /**
- * Forget every hint, legacy keys included, so the first-run experience can be replayed
- * (QA and the Playwright walkthrough; nothing in the app calls this).
+ * Forget every hint, legacy keys included, so the first-run experience can be replayed. The
+ * menu's "Reset Hints" row calls this; so do QA and the Playwright walkthrough.
+ *
+ * The event is the point: the burger menu is reachable mid-game (`TopBar` renders on the game
+ * screen too), but `useOnboardingHints` reads storage once per mount, so without a broadcast a
+ * reset during a game would silently do nothing until the next one. Fired even when the
+ * removals threw — in private mode there was nothing stored to forget, and the listeners
+ * re-reading an empty store is exactly the right outcome.
  */
 export function resetHintsSeen(): void {
   try {
@@ -211,6 +235,16 @@ export function resetHintsSeen(): void {
   } catch {
     console.warn('Failed to reset hints seen state in localStorage');
   }
+  window.dispatchEvent(new Event(HINTS_RESET_EVENT));
+}
+
+/**
+ * Listen for `resetHintsSeen`. Returns the unsubscribe, so a hook can `useEffect(() =>
+ * subscribeHintsReset(handler), [handler])` and re-read its cached seen-state on the spot.
+ */
+export function subscribeHintsReset(handler: () => void): () => void {
+  window.addEventListener(HINTS_RESET_EVENT, handler);
+  return () => window.removeEventListener(HINTS_RESET_EVENT, handler);
 }
 
 // --- Nav "new" Dot Storage ---

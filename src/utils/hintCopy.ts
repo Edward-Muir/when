@@ -14,6 +14,8 @@ export const HINT_TEXT: Record<GameHintKey, string> = {
   drag: 'Drag the card onto the timeline',
   wrong: 'Wrong. Grey shows where it belongs.',
   correct: 'Correct. You drew a new card.',
+  tapCard: 'Tap any card to read about it',
+  stats: 'Tap for game stats',
   swap: 'Swap to a different card',
 };
 

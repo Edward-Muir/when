@@ -3,10 +3,12 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Menu from './Menu';
+import { hasSeenHint, markHintSeen } from '../utils/playerStorage';
 
 // jsdom has no matchMedia; `useTheme` and `usePWAInstall` both call it on mount. Stubbed per
 // test because CRA's Jest config sets `resetMocks: true` (see Leaderboard.test.tsx).
 beforeEach(() => {
+  localStorage.clear();
   Object.defineProperty(window, 'matchMedia', {
     writable: true,
     value: jest.fn().mockImplementation((query: string) => ({
@@ -69,6 +71,16 @@ describe('Menu', () => {
     await userEvent.click(screen.getByRole('link', { name: /help & faq/i }));
     expect(screen.getByText('Support page')).toBeInTheDocument();
     expect(onClose).toHaveBeenCalled();
+  });
+
+  it('resets the hints, keeping the drawer open so the confirmation is seen', async () => {
+    markHintSeen('swap');
+    const { onClose } = renderMenu();
+    await userEvent.click(screen.getByRole('button', { name: /reset hints/i }));
+
+    expect(hasSeenHint('swap')).toBe(false);
+    expect(screen.getByText(/hints will show again/i)).toBeInTheDocument();
+    expect(onClose).not.toHaveBeenCalled();
   });
 
   it('carries no "new" dots', () => {

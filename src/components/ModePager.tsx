@@ -1,19 +1,10 @@
-import React, {
-  useCallback,
-  useEffect,
-  useImperativeHandle,
-  useLayoutEffect,
-  useRef,
-  useState,
-} from 'react';
+import React, { useCallback, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
 
 interface ModePagerProps {
   /** Short labels for each page, shown in the indicator (e.g. ['Daily', 'Custom']). */
   labels: string[];
   /** One child element per page, in order. */
   children: React.ReactNode;
-  /** localStorage key guarding the one-time first-launch swipe hint. */
-  hintKey?: string;
   /**
    * Tailwind classes for the active indicator (pill + label), one entry per page, so each
    * page's indicator can match its own accent. Defaults to gold (`accent`) for every page.
@@ -33,14 +24,14 @@ export interface ModePagerHandle {
 /**
  * Horizontal scroll-snap pager for the mode-select screen. Each page is ~90% wide so a
  * sliver of the neighbour peeks (swipe affordance). Below the pages sits a tappable
- * page indicator, and on first visit a subtle nudge animation hints that you can swipe.
+ * page indicator.
  *
  * The active page is a pure function of the scroll position (reported via `onIndexChange`).
  * Buttons scroll via the imperative `scrollToPage` handle rather than setting the highlight
  * directly, so the highlight only ever tracks the scroll — no instant-then-walk flashing.
  */
 const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function ModePager(
-  { labels, children, hintKey, activeColors, onIndexChange, initialIndex = 0 },
+  { labels, children, activeColors, onIndexChange, initialIndex = 0 },
   ref
 ) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -93,33 +84,6 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
     track.style.scrollBehavior = smooth;
     // eslint-disable-next-line react-hooks/exhaustive-deps -- mount only; later scrolls are the user's
   }, []);
-
-  // One-time first-launch hint: nudge slightly right, then snap back. Not when the page
-  // opened on another tab — the nudge would drag it back toward Daily.
-  const openedOnFirstPage = initialIndex <= 0;
-  useEffect(() => {
-    if (!hintKey || !openedOnFirstPage) return;
-    if (pages.length < 2) return;
-    try {
-      if (localStorage.getItem(hintKey)) return;
-      localStorage.setItem(hintKey, '1');
-    } catch {
-      // localStorage unavailable (private mode) — skip the hint, no harm.
-      return;
-    }
-    const track = trackRef.current;
-    if (!track) return;
-    const nudge = window.setTimeout(() => {
-      track.scrollTo({ left: 56, behavior: 'smooth' });
-    }, 700);
-    const back = window.setTimeout(() => {
-      track.scrollTo({ left: 0, behavior: 'smooth' });
-    }, 1250);
-    return () => {
-      window.clearTimeout(nudge);
-      window.clearTimeout(back);
-    };
-  }, [hintKey, pages.length, openedOnFirstPage]);
 
   return (
     <div className="flex flex-col flex-1 min-h-0">
