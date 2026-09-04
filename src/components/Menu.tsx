@@ -79,7 +79,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
-  const [hintsReset, setHintsReset] = React.useState(false);
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native Capacitor app (redundant) and not on Android/desktop (iOS-only app).
@@ -104,12 +103,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
     setShowRulesModal(true);
   };
 
-  // Kept open, like the theme and reminder rows, so the confirmation is actually seen. Not a
-  // toast: TopBar's single Toast is hardwired to "Copied to clipboard!". Not a confirm
-  // either — nothing is lost, the hints just come back.
+  // No confirm and no confirmation text: nothing is lost, the hints just come back. Closing
+  // the drawer is the acknowledgement, the same as every other action row here.
   const handleResetHints = () => {
     resetHintsSeen();
-    setHintsReset(true);
+    onClose();
   };
 
   const menuItemClass = `
@@ -208,12 +206,6 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                   <RotateCcw className={iconClass} />
                   <span className="font-body">Reset Hints</span>
                 </button>
-                {hintsReset && (
-                  <p className="px-4 pb-2 -mt-1 text-sm text-text-muted font-body">
-                    Hints will show again as you play.
-                  </p>
-                )}
-
                 <Link to="/support" className={menuItemClass} onClick={onClose}>
                   <LifeBuoy className={iconClass} />
                   <span className="font-body">Help & FAQ</span>

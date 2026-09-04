@@ -73,14 +73,13 @@ describe('Menu', () => {
     expect(onClose).toHaveBeenCalled();
   });
 
-  it('resets the hints, keeping the drawer open so the confirmation is seen', async () => {
+  it('resets the hints and closes, like every other action row', async () => {
     markHintSeen('swap');
     const { onClose } = renderMenu();
     await userEvent.click(screen.getByRole('button', { name: /reset hints/i }));
 
     expect(hasSeenHint('swap')).toBe(false);
-    expect(screen.getByText(/hints will show again/i)).toBeInTheDocument();
-    expect(onClose).not.toHaveBeenCalled();
+    expect(onClose).toHaveBeenCalled();
   });
 
   it('carries no "new" dots', () => {

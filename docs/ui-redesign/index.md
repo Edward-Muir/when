@@ -100,9 +100,9 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   read-only now and the fallback is tested. (`when-modes-played` gated the old per-mode rules
   popup and is no longer read: the popup is gone.)
 - **"Reset Hints" in the burger menu** calls `resetHintsSeen()`, for QA and for a player who
-  wants the explanations back. The drawer stays open and confirms inline, like the theme and
-  reminder rows — not a toast, because `TopBar`'s single `Toast` is hardwired to "Copied to
-  clipboard!", and not a confirm, because nothing is lost. `resetHintsSeen` also **dispatches
+  wants the explanations back. A plain row like every other action: it closes the drawer and
+  says nothing else — no confirm and no confirmation text, because nothing is lost.
+  `resetHintsSeen` also **dispatches
   a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
   `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
   reset during a game would silently do nothing until the next one.
