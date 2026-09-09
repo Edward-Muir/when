@@ -1,6 +1,6 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Fifteen files, all maintained as **current** —
+Reference docs for the "When" timeline game. Sixteen files, all maintained as **current** —
 if one contradicts the code, the doc is wrong and should be fixed.
 
 These are digests, not a change log. They hold decisions and their rationale, rejected
@@ -37,6 +37,9 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
   push to full image coverage
+- [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
+  the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
+  measured symptoms, and a sequenced fix list
 - [ui-redesign/](ui-redesign/index.md) — gameplay layout, the five-tab home pager, the
   one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), Custom settings, and
   the service-worker dev-loop trap

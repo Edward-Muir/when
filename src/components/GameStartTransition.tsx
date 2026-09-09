@@ -87,12 +87,12 @@ const GameStartTransition: React.FC<GameStartTransitionProps> = ({ onComplete, e
     >
       {/* Timeline content - full height, scrolls upward */}
       <div className="h-dvh h-screen-safe relative">
-        {/* Vertical timeline line - positioned at 96px like Timeline.tsx */}
-        <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
+        {/* Vertical timeline line — `board-rail`, exactly as in Timeline.tsx */}
+        <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
         {/* Scrolling events container - scrolls upward through the events */}
         <motion.div
-          className="relative z-10 pt-16 pb-12"
+          className="board-center relative z-10 pt-16 pb-12"
           initial={{ y: 0 }}
           animate={{ y: -scrollDistance }}
           transition={{

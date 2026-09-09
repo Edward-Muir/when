@@ -147,6 +147,96 @@ body {
   }
 }
 
+/* ===========================================================================
+   BOARD COLUMN — the alignment invariant
+   ===========================================================================
+   Every timeline surface draws the same three-part row:
+
+       [ 96px year gutter ][ 12px gap ][ 280px landscape card ]  =  388px
+
+   96px   `w-24` on the gutter — TimelineEvent.tsx, TombstoneRow.tsx,
+          Timeline.tsx (GhostCard), ArchiveDeckRow.tsx, and the counters box
+          in Game.tsx. (GhostCard omits the others' `pl-2`; that is a no-op —
+          `w-24` + border-box + `justify-end` flush content to the same 96px
+          right edge, and the gutter content never reaches 88px.)
+   12px   `pl-3` on the card slot — the same four files, plus
+          ActiveCardDisplay.tsx.
+   280px  the `landscape` size in Card.tsx (the `sm:` value; below 640px the
+          card is 240px and the column 348px, which is fine because nothing
+          is centred below 1024px).
+
+   The accent rail sits at board-left + 96px so it butts exactly against the
+   tick that terminates every gutter. CHANGE THE GUTTER, THE GAP OR THE CARD
+   WIDTH AND YOU MUST CHANGE THE VARS BELOW, or the rail detaches from the
+   ticks on every desktop row. The checkable form of the invariant is
+   `rail.getBoundingClientRect().left === tick.getBoundingClientRect().right`,
+   at every width.
+
+   Below 1024px all of this is inert: `.board-rail` resolves to plain
+   `left: 6rem` — byte-identical to the `left-24` it replaced — and the board
+   stays pinned to the left edge exactly as it always has.
+
+   `.board-center` is deliberately PADDING on the scroller, not `max-width` +
+   `margin-inline: auto` on the rows:
+     - It goes on the node carrying useDroppable('timeline-zone'), and padding
+       does not change a border-box rect, so the drop zone and the wheel
+       target stay full-width. A max-width there would shrink the drop zone —
+       a behaviour change.
+     - Percentage padding resolves against the CONTAINING BLOCK, not against
+       the scroller's own content box, so it is immune both to the 8px
+       scrollbar (`.timeline-scroll-vertical` below opts out of overlay
+       scrollbars) and to the overflow-hidden toggle that runs on every drag.
+       Centring inside the scroller would sit the board 4px left of the rail
+       and jump 4px at each drag start.
+   This relies on the outer `relative` box having no horizontal padding, so
+   the in-flow percentage basis and the absolute `left` basis are the same
+   width. Keep it that way.
+
+   `--board-inset` is deliberately NOT wrapped in `max(0px, ...)`, and nothing
+   here may use `max()`/`min()`/`clamp()` in a var that is later used inside a
+   `calc()`. postcss-preset-env inlines these vars into a static fallback, so
+   `.board-rail`'s `calc(var(--board-inset) + var(--board-gutter))` becomes
+   `calc(max(...) + 6rem)` — and cssnano's postcss-calc cannot parse `max()`
+   nested inside `calc()`. That FAILS THE PRODUCTION BUILD: it is only a
+   warning locally, but Vercel sets CI=true, which promotes CRA warnings to
+   errors. (It cost one red deploy. Verify with `CI=true npm run build`, not
+   a plain `npm run build`, which happily writes a build folder anyway.)
+
+   The clamp it replaced was doing nothing regardless: it guarded a container
+   narrower than the 388px board, and the narrowest one that reaches these
+   rules is the anim-jig's `md:w-[390px]` column — 1px of inset, still
+   positive. If a narrower desktop container is ever introduced, give it its
+   own rule rather than putting the clamp back.
+   =========================================================================== */
+:root {
+  --board-gutter: 6rem; /* w-24 */
+  --board-gap: 0.75rem; /* pl-3 */
+  --board-card: 280px; /* Card.tsx, size="landscape", sm: */
+  --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
+  --board-inset: calc(50% - var(--board-col) / 2);
+}
+
+@layer utilities {
+  .board-rail {
+    left: var(--board-gutter);
+  }
+
+  @media (min-width: 1024px) {
+    /* Centres the board inside a full-width parent without narrowing it. */
+    .board-center {
+      padding-left: var(--board-inset);
+    }
+    /* The same offset as a flex-item margin, for the one parent that also
+       hosts a viewport-centred sibling (Game.tsx's bottom bar). */
+    .board-center-item {
+      margin-left: var(--board-inset);
+    }
+    .board-rail {
+      left: calc(var(--board-inset) + var(--board-gutter));
+    }
+  }
+}
+
 /* Font utilities */
 @layer utilities {
   .font-display {

@@ -17,7 +17,7 @@ To drive/play the app end-to-end with Playwright (smoke tests, or playing the li
 ```bash
 vercel dev                   # Full-stack dev (frontend + API routes)
 npm start                    # Frontend-only dev server (no API)
-npm run build                # Production build
+npm run build                # Production build (see CI=true note below)
 npm test                     # Tests (watch mode). CI=true npm test -- --watchAll=false for one pass
 npm run lint                 # ESLint check (covers src AND api)
 npm run typecheck            # TypeScript check (src only — tsconfig `include` is ["src"])
@@ -25,6 +25,13 @@ npm run typecheck:api        # TypeScript check for api/ (not covered by `typech
 npm run format               # Prettier format
 npm run release              # Bump version (auto-detect from commits)
 ```
+
+**Verify a production build with `CI=true npm run build`, not a plain `npm run build`.** Vercel
+sets `CI=true`, which makes CRA treat every warning as a hard error; without it the same warning
+is printed above a cheerful "build folder is ready" line and the build still succeeds locally.
+This has already cost one red deploy — a `max()` nested inside a `calc()` that cssnano's
+postcss-calc could not parse, invisible to `tsc`, ESLint, the test suite and a plain build. If
+you pipe the output, don't `tail` it: the warnings block sits _above_ the success banner.
 
 **Always run tests through npm, never `npx react-scripts test` / `npx jest` directly.** The
 `test` script pins `TZ=America/Los_Angeles`, and the `puzzleDate` / `dailyConfig` /
