@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.20.0](https://github.com/Edward-Muir/when/compare/v1.19.0...v1.20.0) (2026-09-09)
+
+
+### Features
+
+* centre the game board at desktop widths ([#56](https://github.com/Edward-Muir/when/issues/56)) ([6a2fc5c](https://github.com/Edward-Muir/when/commit/6a2fc5ccce889fc8e19d548ff719a843c4fcc5e0))
+
 ## [1.19.0](https://github.com/Edward-Muir/when/compare/v1.18.0...v1.19.0) (2026-09-04)
 
 
