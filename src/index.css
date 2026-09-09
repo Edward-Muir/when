@@ -191,13 +191,29 @@ body {
    This relies on the outer `relative` box having no horizontal padding, so
    the in-flow percentage basis and the absolute `left` basis are the same
    width. Keep it that way.
+
+   `--board-inset` is deliberately NOT wrapped in `max(0px, ...)`, and nothing
+   here may use `max()`/`min()`/`clamp()` in a var that is later used inside a
+   `calc()`. postcss-preset-env inlines these vars into a static fallback, so
+   `.board-rail`'s `calc(var(--board-inset) + var(--board-gutter))` becomes
+   `calc(max(...) + 6rem)` — and cssnano's postcss-calc cannot parse `max()`
+   nested inside `calc()`. That FAILS THE PRODUCTION BUILD: it is only a
+   warning locally, but Vercel sets CI=true, which promotes CRA warnings to
+   errors. (It cost one red deploy. Verify with `CI=true npm run build`, not
+   a plain `npm run build`, which happily writes a build folder anyway.)
+
+   The clamp it replaced was doing nothing regardless: it guarded a container
+   narrower than the 388px board, and the narrowest one that reaches these
+   rules is the anim-jig's `md:w-[390px]` column — 1px of inset, still
+   positive. If a narrower desktop container is ever introduced, give it its
+   own rule rather than putting the clamp back.
    =========================================================================== */
 :root {
   --board-gutter: 6rem; /* w-24 */
   --board-gap: 0.75rem; /* pl-3 */
   --board-card: 280px; /* Card.tsx, size="landscape", sm: */
   --board-col: calc(var(--board-gutter) + var(--board-gap) + var(--board-card)); /* 388px */
-  --board-inset: max(0px, calc(50% - var(--board-col) / 2));
+  --board-inset: calc(50% - var(--board-col) / 2);
 }
 
 @layer utilities {

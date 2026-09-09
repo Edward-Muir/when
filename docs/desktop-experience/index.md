@@ -71,6 +71,13 @@ alignment invariant. Two things that comment explains and that are easy to get w
   (`timeline-zone`), and a `max-width` there shrinks the drop zone — dropping in the empty space
   beside the board would stop working. Padding is inside the border box, so the measured rect
   stays full-width.
+- **No `max()`/`min()`/`clamp()` in a var that is later used inside `calc()`.** postcss-preset-env
+  inlines the vars into a static fallback, so `calc(var(--board-inset) + var(--board-gutter))`
+  became `calc(max(...) + 6rem)`, which cssnano's postcss-calc cannot parse. It fails the
+  production build — and only there: `tsc`, ESLint, 642 tests, the dev server and the whole
+  geometry sweep were green, and a plain `npm run build` printed it as a warning and still
+  wrote a build folder. **Verify with `CI=true npm run build`** (Vercel sets `CI=true`), and read
+  the whole output — the warnings block sits above the success banner. This cost one red deploy.
 - **Percentage padding, so the basis is the containing block, not the scroller's content box.**
   `.timeline-scroll-vertical` styles `::-webkit-scrollbar`, which opts Chromium out of overlay
   scrollbars, so the scrollbar eats 8px. Centring _inside_ the scroller would sit the board 4px
