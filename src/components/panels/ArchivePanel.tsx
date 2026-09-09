@@ -155,12 +155,12 @@ const ArchiveTimeline: React.FC<{
         </div>
       </div>
 
-      {/* Vertical timeline line - positioned at 96px (matches date column width) */}
-      <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
+      {/* Vertical timeline line — `board-rail`, exactly as in Timeline.tsx */}
+      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
       <div
         ref={scrollRef}
-        className="h-full relative z-10 overflow-y-auto timeline-scroll-vertical"
+        className="board-center h-full relative z-10 overflow-y-auto timeline-scroll-vertical"
       >
         <div className="relative flex flex-col items-start w-full pt-12 pb-16">{children}</div>
       </div>

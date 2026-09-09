@@ -12,7 +12,7 @@ Full-width vertical stack, not the original 40/60 horizontal split:
 
 ```
 TopBar  (fixed, safe-area aware — see ../mobile-ios/index.md for pt-topbar*)
-Timeline (flex-1) — spine at 20% from the left, landscape cards aligned to it
+Timeline (flex-1) — spine 96px from the board column's left edge, cards aligned to it
 Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card stack
 ```
 
@@ -21,6 +21,14 @@ Bottom bar (120px mobile / 140px desktop, pb-safe) — hand count + active card 
 - The bottom bar's drop zone id is **`bottom-bar-zone`** (renamed from `hand-zone`) — the
   Playwright/puppeteer selectors depend on it.
 - Cards are fixed-width and aligned to the spine, not stretched.
+- **The board column is `96px gutter + 12px gap + 280px card = 388px`, and at ≥1024px it is
+  centred rather than pinned left** (2026-09). The arithmetic, the alignment invariant and the
+  reason it is done with percentage padding rather than `max-width`/`mx-auto` all live in one
+  place: the `BOARD COLUMN` comment in `src/index.css`. Read it before changing the gutter, the
+  gap or the card width — all three feed the same `--board-*` vars, and getting it wrong
+  detaches the accent rail from every row's tick. The same three classes (`board-center`,
+  `board-center-item`, `board-rail`) do the job in `Timeline`, `Game`'s bottom bar,
+  `GameStartTransition` and `ArchivePanel`.
 
 ## Home is a five-tab pager (2026-06-28; Archive added 2026-09, Achievements folded into Stats 2026-09)
 

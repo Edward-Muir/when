@@ -406,8 +406,8 @@ const Game: React.FC<GameProps> = ({
               />
             ) : (
               <>
-                {/* Left: Game Info - matches year column width (96px) */}
-                <div className="w-24 shrink-0 flex items-center justify-center">
+                {/* Left: Game Info - matches year column width (96px); board-center-item offsets the bar */}
+                <div className="board-center-item w-24 shrink-0 flex items-center justify-center">
                   <GameInfoCompact
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}

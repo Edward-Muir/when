@@ -1,7 +1,8 @@
 # Desktop / laptop experience — audit and fix list
 
-**Status: findings only. Nothing in this document has been fixed.** It exists so a future
-session can pick the work up cold.
+**Status: A1, A2 and A3 are FIXED (2026-09, "centre the game board at desktop widths").
+Everything else in this document is still findings only**, kept so a future session can pick
+the work up cold. Fixed items are marked ✅ in place, with what actually shipped.
 
 The game is excellent on a phone and a mess on a laptop. This is an audit of _why_, done by
 driving the real app in a 1440×900 Chromium window (plus 900×700 and 1920×1080), playing the
@@ -19,6 +20,8 @@ the DOM. Every claim below was measured in the running app, not inferred from so
 - Across all of `src/`, `lg:` appears **once** and `md:` **twice** — and all three are in
   unlinked maintainer pages (`CardsPreview`, `AnimJig`). There is **not a single `md:`/`lg:`
   utility in any player-facing component**, and no `min-width` media query in `index.css`.
+  _(As of the A1 fix there is now exactly one: the `@media (min-width: 1024px)` block that
+  centres the board. Everything else below still holds.)_
 
 So a 1440px laptop, a 1920px monitor and a 640px tablet all get **byte-identical layout**. The
 design's natural width is roughly 600–900px (at 900×700 the game actually looks fine); above
@@ -43,7 +46,7 @@ regression on phones ships instantly to the App Store build. Therefore:
 
 ## A. Gameplay — the worst of it
 
-### A1. The board is pinned to the left edge and uses a quarter of the window ★ highest impact
+### A1. ✅ FIXED — the board was pinned to the left edge and used a quarter of the window
 
 The timeline column, the year gutter, the hand and the counters all sit in `0–388px`. On a
 1920 monitor it's 20%. It doesn't read as "a mobile game on a big screen", it reads as broken.
@@ -58,21 +61,29 @@ Where:
 - `src/components/Timeline/TimelineEvent.tsx:295` and `src/components/Card.tsx:47` — the
   landscape card is hard-capped at `sm:w-[280px] sm:h-[96px]`, with nothing above `sm:`.
 
-Two candidate fixes, in increasing order of ambition:
+**(a) Centre the existing column — shipped.** The board is centred at ≥1024px; card size is
+unchanged. See the `BOARD COLUMN` comment in `src/index.css` for the mechanism and the
+alignment invariant. Two things that comment explains and that are easy to get wrong:
 
-- **(a) Centre the existing column — cheap, one evening.** Wrap the timeline + bottom-bar
-  contents in a shared `lg:mx-auto lg:max-w-[560px]` shell so the board sits in the middle of
-  the window. Fixes A2 and A3 for free, because the floating labels are already centred on the
-  viewport. Risk: low. Payoff: the screen stops looking broken, but the space is still unused.
-- **(b) A real desktop layout — the right answer.** Timeline centred and wider (`lg:w-[420px]`
-  cards, a wider year gutter), hand promoted from a bottom strip to a side rail so the drag is
-  short and horizontal, counters and streak given their own panel. This is the version that
-  makes the space earn its keep, and it's the one that also fixes A4.
+- **It is `padding-left` on the scroller, NOT `max-width` + `mx-auto` on the rows.** An earlier
+  draft of this doc prescribed `lg:mx-auto lg:max-w-[560px]` on a shell around the timeline;
+  **that would have been a bug.** The scroller is the node carrying `useDroppable`
+  (`timeline-zone`), and a `max-width` there shrinks the drop zone — dropping in the empty space
+  beside the board would stop working. Padding is inside the border box, so the measured rect
+  stays full-width.
+- **Percentage padding, so the basis is the containing block, not the scroller's content box.**
+  `.timeline-scroll-vertical` styles `::-webkit-scrollbar`, which opts Chromium out of overlay
+  scrollbars, so the scrollbar eats 8px. Centring _inside_ the scroller would sit the board 4px
+  off the rail — and because `Timeline.tsx` swaps to `overflow-hidden` while dragging, the board
+  would jump 4px at every drag start.
 
-Recommendation: do (a) first as a standalone, low-risk PR — it removes most of the "mess" — and
-treat (b) as a separate design pass.
+**(b) A real desktop layout — still open, the ambitious version.** Wider cards (`lg:w-[420px]`
+and a wider gutter), hand promoted from a bottom strip to a side rail so the drag is short and
+horizontal, counters and streak given their own panel. This is the version that makes the space
+earn its keep, and the one that also fixes A4. Card widening was deliberately excluded from (a):
+text-clamping, image crop and the 35-char name cap were all tuned at 280px.
 
-### A2. Fixed labels and controls are centred on the viewport, not on the board
+### A2. ✅ FIXED (by A1) — fixed labels and controls were centred on the viewport, not the board
 
 Because the board is left and the chrome is centre, several elements float in dead space
 350–560px away from the thing they describe:
@@ -85,10 +96,13 @@ Because the board is left and the chrome is centre, several elements float in de
 | Game-over Restart / Home / Share                             | `GameOverControls.tsx:40` (`justify-center`)        | centred under an empty half-screen |
 | Every popup (`GamePopup`, `StatsPopup`, `Menu`, card detail) | `w-[85vw] max-w-[340px]` centred                    | opens 400px right of the board     |
 
-Fix: falls out of A1(a). If A1 is deferred, these each need to be constrained to the board
-column instead — but that's the same work done piecemeal, so don't.
+Fixed by A1 with **zero edits to any of these elements**, and that is the point: because the
+board's centre is now the viewport's centre by construction, everything already centred at
+`W/2` became board-centred for free. Do not "fix" these individually — pinning a label to the
+board column would break the relationship mobile has, where the label sits at the centre of the
+(clipped) column rather than over the card.
 
-### A3. The game-start scrim reads as a rendering glitch
+### A3. ✅ FIXED (by A1) — the game-start scrim read as a rendering glitch
 
 `GameStartTransition.tsx:120-133` paints `.scrim-band` — a full-width horizontal band of
 `backdrop-blur-xl` + wash, masked to fade above and below, with the "Loading events from across
@@ -97,9 +111,12 @@ band's blur lands on the **cards at the left**, while the title sits over **empt
 the centre**. What you see is a blurred stripe across a sharp deck of cards, with unrelated text
 floating beside it.
 
-This is not a bug in `.scrim-band` — the band is doing exactly what
-`src/index.css:120-148` documents. It's A1 again. Fixed by centring the transition's card
-column the same way as the game's.
+This was not a bug in `.scrim-band` — the band was doing exactly what its comment in
+`src/index.css` documents. It was A1 again, and it was fixed by centring the transition's card
+column (`GameStartTransition.tsx`, same two classes as `Timeline.tsx`). **The band itself was
+correctly left alone**: it is masked on the vertical axis only, so it is a full-width horizontal
+band by design; giving it the board's width would hand it the visible left/right edge the design
+exists to avoid.
 
 ### A4. The drag is long, held, and hugs the left edge
 
@@ -293,7 +310,9 @@ none` is set, `user-select` is not; `.touch-manipulation`, which does set it, is
   _timeline_ cards). A double-click-then-drag on a laptop can start a text selection over the
   card title. Not reproduced in a single-click drag; hardening, not a live bug.
 - **D5. The card-detail popup overlaps the "Later ↓" label** at 1440×900 — the popup bottom
-  lands at y≈743, the label at y≈741. Cosmetic, and A1(a) moves both.
+  lands at y≈743, the label at y≈741. Cosmetic, and **still open**: an earlier draft of this doc
+  claimed A1(a) would move both, but it doesn't. The overlap is _vertical_, and both elements
+  were already horizontally centred — centring the board changed neither's `y`.
 
 ---
 
@@ -321,14 +340,14 @@ Worth knowing so the fix session doesn't go looking:
 Four PRs, roughly in value-per-risk order. The first is a day's work and removes most of the
 "mess" impression; the last two are design work.
 
+0. ~~**Centre the board** — A1(a), carrying A2 and A3.~~ ✅ **Done.** 5 files, 9 lines, the
+   first desktop breakpoint in the app proper. Not D5, which survives (above).
 1. **Cheap correctness, no layout risk** — B1 (dead hovers), B3 (focus ring), C1 (`inert`
    panels), C2 (wheel guard), D1 (aria), D2 (copy). Nothing here is width-conditional, so
    mobile is untouched by construction. This alone makes the site feel like it responds to a
    mouse.
-2. **Centre the board** — A1(a), which carries A2, A3 and D5 with it. One `lg:` shell around
-   the game's column plus the same around `GameStartTransition`.
-3. **Home pager at width** — C3, C4, C5. Per-panel `lg:` grids and a desktop tab bar.
-4. **Play properly on a laptop** — A1(b) side-rail hand, A4 click-to-place, A5 `KeyboardSensor`,
+2. **Home pager at width** — C3, C4, C5. Per-panel `lg:` grids and a desktop tab bar.
+3. **Play properly on a laptop** — A1(b) side-rail hand, A4 click-to-place, A5 `KeyboardSensor`,
    A6 tab order, D3, D4. This is the design pass; treat click-to-place and the keyboard sensor
    as one feature, since they share the "arm a card, choose a gap" model.
 

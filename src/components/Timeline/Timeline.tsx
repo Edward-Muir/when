@@ -396,8 +396,10 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
 
-      {/* Vertical timeline line - positioned at 96px (matches year column width) */}
-      <div className="absolute left-24 top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
+      {/* Vertical timeline line — sits at board-left + 96px, butting against every row's
+          tick. `board-rail` carries both the offset and the desktop centring; see the
+          "BOARD COLUMN" comment in index.css. */}
+      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
       {/* Native scroll container (compositor-driven = snappy; native elastic overscroll). */}
       {/* Scroll is disabled while dragging a card so year labels stay fixed reference points. */}
@@ -406,7 +408,10 @@ const Timeline: React.FC<TimelineProps> = ({
           scrollRef.current = node;
           setTimelineDropRef(node);
         }}
-        className={`h-full relative z-10 ${
+        // `board-center` is padding, not max-width: this node is the `timeline-zone`
+        // droppable and its rect must stay full-width, so a drop (or a wheel) in the empty
+        // space beside the centred board still lands here. See index.css.
+        className={`board-center h-full relative z-10 ${
           isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
         }`}
       >
