@@ -32,6 +32,17 @@ metaphor without constraining the height. Under Reduce Motion it degrades to a p
 **The reading face has no image.** The header still carries the title and year, and the front
 face's image box is most of a phone screen. The point of this face is reading room.
 
+**The card does not change size when it is turned over.** The reading face is pinned to the
+height the card face measured (`usePinnedFaceHeight`), and the prose scrolls inside it — so the
+card holds its exact position and dimensions across turn, scroll and turn back. Measuring rather
+than pinning to a constant matters because the card face's height is content-driven: a fixed
+384px image plus a description of anywhere from 32 to 169 characters, so any constant would leave
+dead space under the short ones. Measuring is safe because the card face is always shown first —
+the face resets whenever the event changes — so a height is always recorded before the info
+button can be tapped, and the image box is a fixed height so a late-decoding image cannot move it.
+A consequence worth knowing: `Modal` is given no `scroll` prop on either face, because the shell
+is now identical on both and the scroll region lives inside the reading face.
+
 **The button is unreachable before placement, and that is load-bearing.** The gate is
 `type === 'description' && showYear && has_detail`, and `showYear` is already false exactly when
 the card is still in the player's hand (`shouldShowYearInPopup`, `Game.tsx`). This is _why_ the
@@ -163,7 +174,9 @@ The design itself has to be looked at, and that needs the placeholder:
 2. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game.
 3. **Check the gate**: tap a card still in your hand — there must be no info button.
 4. Widths 320 / 402 / 1440, light and dark, Reduce Motion on. Two- and three-paragraph entries
-   both occur, and the reading face scrolls at 320px.
+   both occur. The card must not move or resize between the two faces — measure
+   `[data-testid="modal-card"]`'s bounding box on each face if in doubt; it was 340x606 at 402px
+   wide on both when this shipped.
 5. `node scripts/events/detail-placeholder.js --revert`, then confirm `git status public/events/`
    is clean.
 

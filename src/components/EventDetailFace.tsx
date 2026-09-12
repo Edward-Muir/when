@@ -55,7 +55,7 @@ function EventDetailFace({
 
   if (detail.status === 'loading' || detail.status === 'idle') {
     return (
-      <div className="px-4 py-3 space-y-2" aria-busy="true" aria-live="polite">
+      <div className="flex-1 min-h-0 px-4 py-3 space-y-2" aria-busy="true" aria-live="polite">
         <span className="sr-only">Loading more about this event</span>
         {/* Ragged widths so it reads as text rather than as a progress bar. */}
         {['w-full', 'w-11/12', 'w-4/5'].map((width, i) => (
@@ -71,7 +71,7 @@ function EventDetailFace({
 
   if (detail.status === 'error' || !detail.paragraphs) {
     return (
-      <div className="px-4 py-3">
+      <div className="flex-1 min-h-0 px-4 py-3">
         <button
           type="button"
           onClick={(e) => {
@@ -89,8 +89,10 @@ function EventDetailFace({
   }
 
   return (
+    // flex-1/min-h-0 makes this the scroll region inside the height the card face pinned, so
+    // turning the card over never resizes it — the prose scrolls instead.
     // overscroll-contain so flicking past the end of the prose doesn't scroll the board behind.
-    <div className="px-4 py-3 overflow-y-auto overscroll-contain space-y-3">
+    <div className="flex-1 min-h-0 px-4 py-3 overflow-y-auto overscroll-contain space-y-3">
       {detail.paragraphs.map((paragraph, i) => (
         <p key={i} className={`${textClass} text-sm leading-relaxed font-body break-words`}>
           {paragraph}
