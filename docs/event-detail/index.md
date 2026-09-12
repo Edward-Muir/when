@@ -4,6 +4,10 @@
 and have not started.** Nothing is enabled in production yet: no event carries `has_detail`, so
 no info button renders anywhere. That is deliberate — see Guardrail 1.
 
+- [2026-09-12 — Designing the read-more view](session-2026-09-12-detail-view-design.md) — where the
+  branch stands, the open questions Phase 2 has to settle, the corpus and payload measurements
+  worth not re-deriving, and the environment traps that cost this session a cycle each
+
 ## Why this exists
 
 Card `description` is capped at 1-2 sentences and may not state a date, because it is shown
@@ -108,6 +112,7 @@ reach.
 | `slug -> source file`, in memory                              | `getSourceFile` in `src/utils/eventLoader.ts` |
 | Fetch-on-tap state, seeded from cache so re-flips don't flash | `src/hooks/useEventDetail.ts`                 |
 | The reading face and the two header controls                  | `src/components/EventDetailFace.tsx`          |
+| Pins the reading face to the card face's height               | `src/hooks/usePinnedFaceHeight.ts`            |
 | Header row, face state, the gate                              | `src/components/GamePopup.tsx`                |
 | Shape rules, shared by scripts and Jest                       | `scripts/events/detail-spec.js`               |
 | Disk access, shard read/write, slug→file                      | `scripts/events/detail-catalogue.js`          |
@@ -154,9 +159,13 @@ Phase 1 fixed the shape; Phase 2 fixes the voice. Deliverables:
   `CI=true npm run build`.
 - **Read a random 5 per batch cold against the spec** before committing. Drift is the failure
   mode here, not corruption — the scripts already make corruption hard.
-- **Ships progressively.** `has_detail` is per-event, so each merged batch lights up its own
-  info buttons and nothing else. There is no big-bang launch and no half-written state visible
-  to players.
+- **A half-written state is impossible, but it is not being shipped either.** `has_detail` is
+  per-event and written in the same pass as the prose, so a partly-written corpus renders exactly
+  the buttons it has prose for and no others — merging mid-run would be safe. The decision
+  (2026-09-12) is nonetheless to **hold everything back until the corpus is complete**: no PR, and
+  nothing reaches production until every event is written. Phase 2 and every Phase 3 batch
+  therefore land on the one long-lived branch, which needs `origin/main` merged into it
+  periodically rather than rebased.
 - `npm run find-duplicates` scores on `description`, which this never touches, so no baseline
   dance is needed (unlike the 2026-08 date-clue pass).
 

@@ -90,6 +90,10 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
 - **Placed timeline markers:** `[data-timeline-year]`. The attribute value is
   the event's `year` (negative = BCE). **Tombstones (wrong placements) are
   excluded** from this selector, so `[data-timeline-year]` count == your score.
+  **It is the year label beside the card, not the card**, so clicking it opens
+  nothing — which looks like a broken feature rather than a bad selector. To open
+  a placed card's detail popup, click the card itself:
+  `page.getByRole('button', { name: /<friendly_name>/i })`.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
 - **Bottom-left counters:** big number = lives/"cards left"; 📏 = events placed;
