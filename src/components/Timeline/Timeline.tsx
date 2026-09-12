@@ -14,7 +14,6 @@ import {
   TRAVEL_EASE,
   useAnimationTuning,
 } from './animationTuning';
-import { baseRailClass, buildRowDecor, useTimelineDecor } from './timelineDecor';
 import { useWakeDelays } from './useWakeDelays';
 
 interface TimelineProps {
@@ -117,7 +116,6 @@ const Timeline: React.FC<TimelineProps> = ({
   const shouldReduceMotion = useReducedMotion();
   // DEFAULT_TUNING unless the anim-jig's provider is mounted — stable identity in the game
   const tuning = useAnimationTuning();
-  const decor = useTimelineDecor();
 
   // Make the entire timeline a single drop zone
   const { setNodeRef: setTimelineDropRef } = useDroppable({
@@ -318,7 +316,6 @@ const Timeline: React.FC<TimelineProps> = ({
   }, [failedPlacements, lastPlacementResult, shouldReduceMotion, tuning]);
 
   const rows = buildTimelineRows(events, failedPlacements);
-  const rowDecor = buildRowDecor(rows);
   // The insertion gap the ghost currently previews (null when not dragging over the timeline)
   const ghostGap = isDragging && isOverTimeline && draggedCard !== null ? insertionIndex : null;
   // If that gap holds tombstone(s), the first one hosts the ghost in its own row —
@@ -348,7 +345,6 @@ const Timeline: React.FC<TimelineProps> = ({
       <TombstoneRow
         key={`tombstone-${failed.event.name}`}
         failed={failed}
-        decor={rowDecor.at(rowIndex)}
         onTap={() => onEventTap(failed.event)}
         displaced={ghostGap !== null && row.gap === ghostGap}
         ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
@@ -378,9 +374,7 @@ const Timeline: React.FC<TimelineProps> = ({
       {/* Vertical timeline line — sits at board-left + 96px, butting against every row's
           tick. `board-rail` carries both the offset and the desktop centring; see the
           "BOARD COLUMN" comment in index.css. */}
-      <div
-        className={`board-rail absolute top-0 bottom-0 w-1 rounded-full z-0 ${baseRailClass(decor)}`}
-      />
+      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
       {/* Native scroll container (compositor-driven = snappy; native elastic overscroll). */}
       {/* Scroll is disabled while dragging a card so year labels stay fixed reference points. */}
@@ -423,7 +417,6 @@ const Timeline: React.FC<TimelineProps> = ({
                   )}
                   <TimelineEvent
                     event={event}
-                    decor={rowDecor.at(rowIndex)}
                     onTap={() => onEventTap(event)}
                     isNew={event.name === newEventName}
                     index={idx}

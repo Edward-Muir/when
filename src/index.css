@@ -35,19 +35,6 @@ html {
   /* Status */
   --color-success: #6aaa64;
   --color-error: #e57373;
-
-  /* Era tints for the timeline spine (timelineDecor.ts). Named by `Era` id verbatim so
-     `--era-${era}` needs no map. Gold and teal are the existing accents; the rest are
-     deliberately low-saturation steps between them: earth -> bronze -> gold -> olive ->
-     soot -> steel -> teal. */
-  --era-prehistory: #8c6a52;
-  --era-ancient: #a5793a;
-  --era-medieval: var(--color-accent);
-  --era-earlyModern: #8f8f3e;
-  --era-industrial: #6f7f6a;
-  --era-worldWars: #5f6f7a;
-  --era-coldWar: #3f7a86;
-  --era-modern: var(--color-accent-secondary);
 }
 
 .dark {
@@ -60,13 +47,6 @@ html {
   --color-accent-secondary: #22a0b0;
   --color-success: #7abf70;
   --color-error: #f87171;
-
-  --era-prehistory: #a98468;
-  --era-ancient: #c2924f;
-  --era-earlyModern: #a9ac5a;
-  --era-industrial: #89998a;
-  --era-worldWars: #7d8f9c;
-  --era-coldWar: #4f97a3;
 }
 
 body {
@@ -134,54 +114,168 @@ body {
   }
 }
 
-/* Timeline spine decorations (Timeline/TimelineDecor.tsx). Each row draws its own slice
-   of the rail so the spine scrolls with the cards. Colour is the background (a short
-   blend from the row above's era into this row's), texture is a mask keyed on
-   `data-era`, so the two compose. `--row-era` / `--row-era-prev` are set per row by
-   rowDecorStyle(). Same opacity-modifier trap as `.bg-player-row`: mix, don't `/NN`.
-   No calc() here — see the BOARD COLUMN note on postcss-calc below. */
+/* ===========================================================================
+   Timeline concepts (preview) — src/pages/timelineConcepts/*. Presentation only;
+   nothing in the game reads these until a concept is chosen and ported.
+
+   Era palette: a WASH (page tint) and an INK (spine/node/accent) per era, named by
+   `Era` id. The washes are the strongest any concept uses; each concept mixes them
+   toward --color-bg by its own `--wash-pct`. Per-row vars (--wash, --wash-prev, --ink)
+   are set inline by eraVars(). Same trap as `.bg-player-row`: mix, never `/NN`.
+   No calc() around max()/min()/clamp() anywhere here (postcss-calc, see BOARD COLUMN).
+   =========================================================================== */
+:root {
+  --era-wash-prehistory: #e7d8c4;
+  --era-wash-ancient: #ebdec0;
+  --era-wash-medieval: #ece2c8;
+  --era-wash-earlyModern: #e9e6d8;
+  --era-wash-industrial: #dfe2e2;
+  --era-wash-worldWars: #d8dfe6;
+  --era-wash-coldWar: #d0e2ea;
+  --era-wash-modern: #c8e7ea;
+  --era-ink-prehistory: #8a5a3c;
+  --era-ink-ancient: #b07b2a;
+  --era-ink-medieval: #b8860b;
+  --era-ink-earlyModern: #948a46;
+  --era-ink-industrial: #6b7772;
+  --era-ink-worldWars: #566b7c;
+  --era-ink-coldWar: #2f7f8f;
+  --era-ink-modern: #15616d;
+}
+.dark {
+  --era-wash-prehistory: #2a1a12;
+  --era-wash-ancient: #281d10;
+  --era-wash-medieval: #23200f;
+  --era-wash-earlyModern: #1d2016;
+  --era-wash-industrial: #171f24;
+  --era-wash-worldWars: #13222e;
+  --era-wash-coldWar: #0f2733;
+  --era-wash-modern: #0b2b33;
+  --era-ink-prehistory: #c48a66;
+  --era-ink-ancient: #d9a24e;
+  --era-ink-medieval: #d4a84b;
+  --era-ink-earlyModern: #bfb56a;
+  --era-ink-industrial: #9aa8a2;
+  --era-ink-worldWars: #8aa3b6;
+  --era-ink-coldWar: #5fb3c2;
+  --era-ink-modern: #3fc0cf;
+}
+
 @layer utilities {
-  .rail-seg {
-    background: linear-gradient(to bottom, var(--row-era-prev, var(--row-era)), var(--row-era) 45%);
+  /* A row's slice of the atmosphere: the row above's wash blending into this row's. */
+  .cx-wash {
+    background: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--wash-prev) var(--wash-pct, 100%), var(--color-bg)),
+      color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg)) 70%
+    );
   }
-  /* Prehistory: beads — a soft dot every 7px. */
-  .rail-seg[data-era='prehistory'] {
-    -webkit-mask-image: radial-gradient(circle at 2px 3px, #000 1.5px, transparent 2.1px);
-    mask-image: radial-gradient(circle at 2px 3px, #000 1.5px, transparent 2.1px);
-    -webkit-mask-size: 4px 7px;
-    mask-size: 4px 7px;
+  .cx-wash-flat {
+    background-color: color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
   }
-  /* Ancient: chiselled dashes. */
-  .rail-seg[data-era='ancient'] {
-    -webkit-mask-image: repeating-linear-gradient(to bottom, #000 0 9px, transparent 9px 14px);
-    mask-image: repeating-linear-gradient(to bottom, #000 0 9px, transparent 9px 14px);
+  /* The scroller's edges dissolve whatever wash is under them (no bg-coloured fade, which
+     would no longer match a tinted page). */
+  .cx-edge-mask {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 76px,
+      #000 calc(100% - 76px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 76px,
+      #000 calc(100% - 76px),
+      transparent
+    );
   }
-  /* Medieval, Renaissance, Industrial: the solid rail as today. */
-  /* World Wars, Cold War: two hairlines — wire, rail, cable. */
-  .rail-seg[data-era='worldWars'],
-  .rail-seg[data-era='coldWar'] {
-    -webkit-mask-image: linear-gradient(to right, #000 1px, transparent 1px 3px, #000 3px);
-    mask-image: linear-gradient(to right, #000 1px, transparent 1px 3px, #000 3px);
+  .cx-ink {
+    color: var(--ink);
   }
-  /* Modern: a fine line with a faint glow. */
-  .rail-seg[data-era='modern'] {
-    width: 2px;
-    margin-left: 1px;
-    box-shadow: 0 0 6px color-mix(in srgb, var(--row-era) 70%, transparent);
+  .cx-bg-ink {
+    background-color: var(--ink);
   }
-  .tick-era {
-    background-color: var(--row-era);
+  .cx-border-ink {
+    border-color: var(--ink);
   }
-  .gap-hatch {
-    background-color: var(--row-era);
-    opacity: 0.6;
+  /* Atlas: hairline + node */
+  .cx-hairline {
+    background-color: color-mix(in srgb, var(--color-text-muted) 36%, transparent);
   }
-  .gap-label {
-    opacity: 0.75;
+  .cx-hairline-ink {
+    background-color: color-mix(in srgb, var(--ink) 45%, transparent);
   }
-  /* The static outer rail, demoted to a faint continuation under the row segments. */
-  .rail-base-muted {
-    background-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-bg));
+  .cx-node {
+    background-color: var(--ink);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
+  }
+  .cx-node-hollow {
+    border: 2px solid var(--ink);
+    background-color: color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
+  }
+  .cx-card-atlas {
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.05),
+      0 8px 20px -10px rgba(0, 0, 0, 0.28);
+  }
+  /* Dusk: luminous line, lamp nodes, era-tinted card shadow */
+  .cx-glowline {
+    background: linear-gradient(to bottom, var(--ink-prev), var(--ink) 60%);
+    box-shadow: 0 0 8px 1px color-mix(in srgb, var(--ink) 55%, transparent);
+  }
+  .cx-glowline-thin {
+    background: linear-gradient(to bottom, var(--ink-prev), var(--ink) 60%);
+    box-shadow: 0 0 6px color-mix(in srgb, var(--ink) 40%, transparent);
+    opacity: 0.7;
+  }
+  .cx-lamp {
+    background-color: var(--ink);
+    box-shadow:
+      0 0 0 4px color-mix(in srgb, var(--ink) 18%, transparent),
+      0 0 14px 2px color-mix(in srgb, var(--ink) 55%, transparent);
+  }
+  .cx-lamp-off {
+    border: 2px solid color-mix(in srgb, var(--ink) 60%, transparent);
+    background-color: color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
+  }
+  .cx-card-dusk {
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.1),
+      0 10px 28px -14px color-mix(in srgb, var(--ink) 55%, rgba(0, 0, 0, 0.35));
+  }
+  .cx-dot {
+    background-color: var(--ink);
+  }
+  /* Ledger: rail with continuous graduations, major ticks, vertical era labels */
+  .cx-rail {
+    background-color: color-mix(in srgb, var(--color-text-muted) 40%, transparent);
+  }
+  .cx-graduations {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-text-muted) 26%, transparent) 0 1px,
+      transparent 1px 10px
+    );
+  }
+  .cx-vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  .cx-card-ledger {
+    border-left: 3px solid var(--ink);
+  }
+  .cx-break {
+    background: linear-gradient(
+      165deg,
+      transparent 44%,
+      var(--color-text-muted) 44% 48%,
+      transparent 48% 52%,
+      var(--color-text-muted) 52% 56%,
+      transparent 56%
+    );
   }
 }
 
