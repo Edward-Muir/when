@@ -12,11 +12,30 @@ async function loadEventFile(file: string): Promise<HistoricalEvent[]> {
       console.warn(`Failed to load ${file}`);
       return [];
     }
-    return await response.json();
+    const events: HistoricalEvent[] = await response.json();
+    // Remember which file each slug came from. `loadAllEvents` flattens the 19 files into one
+    // array and the source filename is lost, but the long-form detail sidecar is sharded to
+    // mirror those same filenames — so this is how `eventDetail.ts` knows which shard to fetch.
+    // In-memory only: it costs nothing in the payload and saves shipping an index file.
+    for (const event of events) {
+      if (event?.name) sourceFileByName.set(event.name, file);
+    }
+    return events;
   } catch (error) {
     console.warn(`Error loading ${file}:`, error);
     return [];
   }
+}
+
+/** slug -> the manifest file it was loaded from. Populated by `loadEventFile`. */
+const sourceFileByName = new Map<string, string>();
+
+/**
+ * The manifest file an event was loaded from, or null before the catalogue has loaded.
+ * The detail sidecar mirrors the manifest filenames exactly, so this doubles as the shard name.
+ */
+export function getSourceFile(name: string): string | null {
+  return sourceFileByName.get(name) ?? null;
 }
 
 // Module-level cache. Events are static for a session, so the first successful load is

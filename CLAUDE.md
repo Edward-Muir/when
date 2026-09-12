@@ -10,6 +10,8 @@ Before changing anything about how card images are fetched or sized (`src/utils/
 
 Daily themes can be hand-authored: a named list of event slugs pinned to explicit dates, stored in Redis and published via a GitHub Action (no code change) — scheduling a theme is a dispatch, never a commit, and the maintainer scripts cache-bust their `/api/themes` read because that endpoint is shared-cached and a stale read fails the publish. Before touching `src/utils/dailyTheme.ts`, `dailyPool.ts` or the daily's deck options: see [docs/curated-themes/index.md](docs/curated-themes/index.md) — the curated lookup must stay ahead of the seeded RNG, and both builder call sites must share `getDailyBuildOptions`.
 
+Placed cards (and everything in My Timeline) can be turned over onto 2-3 paragraphs of long-form prose via an info button in the detail popup. The prose is a lazily-fetched sidecar under `public/events/detail/`, never inlined into the event JSON, and the button is gated so it is unreachable before a card is placed — which is what lets that prose state dates when the short `description` may not. Before touching `src/utils/eventDetail.ts`, `GamePopup`'s header, or `scripts/events/detail-*.js`: see [docs/event-detail/index.md](docs/event-detail/index.md). The corpus itself is unwritten — Phases 2 and 3 of that plan.
+
 To drive/play the app end-to-end with Playwright (smoke tests, or playing the live daily) — including the drag-and-drop recipe, the proxy/TLS workaround, and a copy-pasteable script: see [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md)
 
 ## Commands
