@@ -24,3 +24,14 @@ export const ALL_ERAS: Era[] = [
   'coldWar',
   'modern',
 ];
+
+/**
+ * The era a year falls in. Years outside the table clamp to the nearest end — the
+ * catalogue has an event at year 30000, beyond `modern`'s 2100 ceiling.
+ */
+export function eraForYear(year: number): Era {
+  const first = ERA_DEFINITIONS[0];
+  if (first && year < first.startYear) return first.id;
+  const match = ERA_DEFINITIONS.find((d) => year >= d.startYear && year <= d.endYear);
+  return match?.id ?? 'modern';
+}

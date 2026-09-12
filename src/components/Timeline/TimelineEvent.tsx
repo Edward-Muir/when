@@ -7,6 +7,8 @@ import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 import { getImageUrl } from '../../utils/cloudinaryImage';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
+import { RowDecor, rowDecorStyle, tickClass, useTimelineDecor } from './timelineDecor';
+import { GapRuler, RailSegment } from './TimelineDecor';
 
 // One scheduled wave bump for this row: Timeline computes when (delay) and how hard
 // (amplitudePx); trigger is a timestamp identifying the wave instance.
@@ -38,6 +40,8 @@ interface TimelineEventProps {
   // the tombstone inserting) is layout-animated with this delay (s) so cards ripple out of
   // the mover's way in passage order. Null/undefined = no layout animation (rows snap).
   layoutShiftDelay?: number | null;
+  // Spine decoration facts for this row (era, gap since the row above); see timelineDecor.ts
+  decor?: RowDecor;
 }
 
 // Extracted image section to reduce component complexity
@@ -228,9 +232,11 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   priority = false,
   layoutId,
   layoutShiftDelay = null,
+  decor,
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
+  const spine = useTimelineDecor();
   const hasLayoutShift = layoutShiftDelay !== null && !shouldReduceMotion;
 
   // Tuning is the stable DEFAULT_TUNING in the game (module constant context default),
@@ -266,8 +272,13 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             }
           : undefined
       }
-      className={`w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
+      className={`relative w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
+      style={rowDecorStyle(spine, decor)}
     >
+      {/* Spine decorations sit on the outer row, not the ripple wrapper, so the rail
+          never bobs with the success wave */}
+      <RailSegment decor={spine} row={decor} />
+      <GapRuler decor={spine} row={decor} />
       {/* Ripple bump lives on an inner wrapper: animating `y` on the outer row would
           overwrite the layout projection's transform and snap an in-flight wake shift */}
       <motion.div ref={rippleScope} className="flex items-center w-full">
@@ -281,7 +292,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           >
             {formatYear(event.year)}
           </motion.span>
-          <div className="w-3 h-1 bg-accent shrink-0" />
+          <div className={tickClass(spine)} />
         </div>
 
         {/* Card area - landscape card */}

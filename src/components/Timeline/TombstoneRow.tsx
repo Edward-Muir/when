@@ -6,6 +6,8 @@ import { getImageUrl } from '../../utils/cloudinaryImage';
 import CategoryIcon from '../CategoryIcon';
 import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
+import { RowDecor, rowDecorStyle, tickClass, useTimelineDecor } from './timelineDecor';
+import { RailSegment } from './TimelineDecor';
 
 export { TRAVEL_EASE };
 
@@ -22,6 +24,8 @@ interface TombstoneRowProps {
   travelMs?: number;
   /** Miss-reveal wake: layout-animate this row's displacement with this delay (s). */
   layoutShiftDelay?: number | null;
+  /** Spine decoration facts for this row (era, gap); see timelineDecor.ts. */
+  decor?: RowDecor;
 }
 
 // While revealing, the whole transition is the distance-scaled travel tween — the shared
@@ -64,9 +68,11 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
   revealing = false,
   travelMs,
   layoutShiftDelay = null,
+  decor,
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
+  const spine = useTimelineDecor();
   const [imageError, setImageError] = useState(false);
   const { event } = failed;
   const hasImage = event.image_url && !imageError;
@@ -82,8 +88,10 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
           ? rowShiftTransition(layoutShiftDelay, tuning.wake.layoutShiftSpring)
           : undefined
       }
-      className="flex items-center w-full py-1"
+      className="relative flex items-center w-full py-1"
+      style={rowDecorStyle(spine, decor)}
     >
+      <RailSegment decor={spine} row={decor} />
       {/* Year column (fixed 96px width): faint year at rest, ghost's "?" while hosting */}
       <div className="w-24 pl-2 flex items-center justify-end shrink-0">
         {ghostEvent ? (
@@ -98,7 +106,7 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             <span className="text-text-muted opacity-70 font-bold text-sm font-mono pr-2 text-right leading-tight">
               {formatYear(event.year)}
             </span>
-            <div className="w-3 h-1 bg-accent opacity-40 shrink-0" />
+            <div className={tickClass(spine, 'opacity-40')} />
           </>
         )}
       </div>

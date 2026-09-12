@@ -35,6 +35,19 @@ html {
   /* Status */
   --color-success: #6aaa64;
   --color-error: #e57373;
+
+  /* Era tints for the timeline spine (timelineDecor.ts). Named by `Era` id verbatim so
+     `--era-${era}` needs no map. Gold and teal are the existing accents; the rest are
+     deliberately low-saturation steps between them: earth -> bronze -> gold -> olive ->
+     soot -> steel -> teal. */
+  --era-prehistory: #8c6a52;
+  --era-ancient: #a5793a;
+  --era-medieval: var(--color-accent);
+  --era-earlyModern: #8f8f3e;
+  --era-industrial: #6f7f6a;
+  --era-worldWars: #5f6f7a;
+  --era-coldWar: #3f7a86;
+  --era-modern: var(--color-accent-secondary);
 }
 
 .dark {
@@ -47,6 +60,13 @@ html {
   --color-accent-secondary: #22a0b0;
   --color-success: #7abf70;
   --color-error: #f87171;
+
+  --era-prehistory: #a98468;
+  --era-ancient: #c2924f;
+  --era-earlyModern: #a9ac5a;
+  --era-industrial: #89998a;
+  --era-worldWars: #7d8f9c;
+  --era-coldWar: #4f97a3;
 }
 
 body {
@@ -111,6 +131,57 @@ body {
   .fade-left {
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 24px);
     mask-image: linear-gradient(90deg, transparent, #000 24px);
+  }
+}
+
+/* Timeline spine decorations (Timeline/TimelineDecor.tsx). Each row draws its own slice
+   of the rail so the spine scrolls with the cards. Colour is the background (a short
+   blend from the row above's era into this row's), texture is a mask keyed on
+   `data-era`, so the two compose. `--row-era` / `--row-era-prev` are set per row by
+   rowDecorStyle(). Same opacity-modifier trap as `.bg-player-row`: mix, don't `/NN`.
+   No calc() here — see the BOARD COLUMN note on postcss-calc below. */
+@layer utilities {
+  .rail-seg {
+    background: linear-gradient(to bottom, var(--row-era-prev, var(--row-era)), var(--row-era) 45%);
+  }
+  /* Prehistory: beads — a soft dot every 7px. */
+  .rail-seg[data-era='prehistory'] {
+    -webkit-mask-image: radial-gradient(circle at 2px 3px, #000 1.5px, transparent 2.1px);
+    mask-image: radial-gradient(circle at 2px 3px, #000 1.5px, transparent 2.1px);
+    -webkit-mask-size: 4px 7px;
+    mask-size: 4px 7px;
+  }
+  /* Ancient: chiselled dashes. */
+  .rail-seg[data-era='ancient'] {
+    -webkit-mask-image: repeating-linear-gradient(to bottom, #000 0 9px, transparent 9px 14px);
+    mask-image: repeating-linear-gradient(to bottom, #000 0 9px, transparent 9px 14px);
+  }
+  /* Medieval, Renaissance, Industrial: the solid rail as today. */
+  /* World Wars, Cold War: two hairlines — wire, rail, cable. */
+  .rail-seg[data-era='worldWars'],
+  .rail-seg[data-era='coldWar'] {
+    -webkit-mask-image: linear-gradient(to right, #000 1px, transparent 1px 3px, #000 3px);
+    mask-image: linear-gradient(to right, #000 1px, transparent 1px 3px, #000 3px);
+  }
+  /* Modern: a fine line with a faint glow. */
+  .rail-seg[data-era='modern'] {
+    width: 2px;
+    margin-left: 1px;
+    box-shadow: 0 0 6px color-mix(in srgb, var(--row-era) 70%, transparent);
+  }
+  .tick-era {
+    background-color: var(--row-era);
+  }
+  .gap-hatch {
+    background-color: var(--row-era);
+    opacity: 0.6;
+  }
+  .gap-label {
+    opacity: 0.75;
+  }
+  /* The static outer rail, demoted to a faint continuation under the row segments. */
+  .rail-base-muted {
+    background-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-bg));
   }
 }
 

@@ -14,6 +14,8 @@ import {
   TRAVEL_EASE,
   useAnimationTuning,
 } from './animationTuning';
+import { baseRailClass, buildRowDecor, useTimelineDecor } from './timelineDecor';
+import { useWakeDelays } from './useWakeDelays';
 
 interface TimelineProps {
   events: HistoricalEvent[];
@@ -115,6 +117,7 @@ const Timeline: React.FC<TimelineProps> = ({
   const shouldReduceMotion = useReducedMotion();
   // DEFAULT_TUNING unless the anim-jig's provider is mounted — stable identity in the game
   const tuning = useAnimationTuning();
+  const decor = useTimelineDecor();
 
   // Make the entire timeline a single drop zone
   const { setNodeRef: setTimelineDropRef } = useDroppable({
@@ -315,6 +318,7 @@ const Timeline: React.FC<TimelineProps> = ({
   }, [failedPlacements, lastPlacementResult, shouldReduceMotion, tuning]);
 
   const rows = buildTimelineRows(events, failedPlacements);
+  const rowDecor = buildRowDecor(rows);
   // The insertion gap the ghost currently previews (null when not dragging over the timeline)
   const ghostGap = isDragging && isOverTimeline && draggedCard !== null ? insertionIndex : null;
   // If that gap holds tombstone(s), the first one hosts the ghost in its own row —
@@ -324,33 +328,7 @@ const Timeline: React.FC<TimelineProps> = ({
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
 
-  // Miss-reveal wake shifts: only cards between the attempted spot (a) and the correct
-  // gap (g) shift (by one row-height, in one render) — layout-animate exactly those rows,
-  // each starting just before the mover reaches it (passage time from the inverted travel
-  // ease). Keyed by name because indices differ between the flash render (mover still in
-  // `events`) and the moving render; a parallel index map covers tombstone rows.
-  const wakeDelays = useMemo(() => {
-    const byName = new Map<string, number>();
-    const byIndex = new Map<number, number>();
-    if (!missReveal) return { byName, byIndex };
-    const { attemptedPosition: a, correctPosition: g } = missReveal;
-    const preInsert = events.filter((e) => e.name !== missReveal.event.name);
-    const lo = Math.min(a, g);
-    const hi = Math.max(a, g);
-    const pathLen = hi - lo;
-    if (pathLen === 0) return { byName, byIndex };
-    const travelS = getMissTravelMs(pathLen, tuning.miss) / 1000;
-    for (let i = lo; i < hi; i++) {
-      const passageOrder = a > g ? a - 1 - i : i - a; // 0 = first card the mover passes
-      const passageS = invTravelEase((passageOrder + 0.5) / pathLen) * travelS;
-      // part just before the card arrives
-      const delay = Math.max(0, passageS - tuning.wake.layoutShiftLeadS);
-      byIndex.set(i, delay);
-      const evt = preInsert.at(i);
-      if (evt) byName.set(evt.name, delay);
-    }
-    return { byName, byIndex };
-  }, [missReveal, events, tuning]);
+  const wakeDelays = useWakeDelays(missReveal, events, tuning);
 
   // Distance-scaled travel duration for the reveal target's FLIP
   const missTravelMs = missReveal
@@ -370,6 +348,7 @@ const Timeline: React.FC<TimelineProps> = ({
       <TombstoneRow
         key={`tombstone-${failed.event.name}`}
         failed={failed}
+        decor={rowDecor.at(rowIndex)}
         onTap={() => onEventTap(failed.event)}
         displaced={ghostGap !== null && row.gap === ghostGap}
         ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
@@ -399,7 +378,9 @@ const Timeline: React.FC<TimelineProps> = ({
       {/* Vertical timeline line — sits at board-left + 96px, butting against every row's
           tick. `board-rail` carries both the offset and the desktop centring; see the
           "BOARD COLUMN" comment in index.css. */}
-      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
+      <div
+        className={`board-rail absolute top-0 bottom-0 w-1 rounded-full z-0 ${baseRailClass(decor)}`}
+      />
 
       {/* Native scroll container (compositor-driven = snappy; native elastic overscroll). */}
       {/* Scroll is disabled while dragging a card so year labels stay fixed reference points. */}
@@ -442,6 +423,7 @@ const Timeline: React.FC<TimelineProps> = ({
                   )}
                   <TimelineEvent
                     event={event}
+                    decor={rowDecor.at(rowIndex)}
                     onTap={() => onEventTap(event)}
                     isNew={event.name === newEventName}
                     index={idx}
