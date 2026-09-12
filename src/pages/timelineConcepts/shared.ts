@@ -10,13 +10,6 @@ import { formatYear } from '../../utils/gameLogic';
  * `Era` id). Presentation-only — nothing here is imported by the game.
  */
 
-export type ConceptId = 'atlas' | 'dusk' | 'ledger';
-export const CONCEPTS: { id: ConceptId; name: string; blurb: string }[] = [
-  { id: 'atlas', name: 'Atlas', blurb: 'Editorial. Light and type carry the theme.' },
-  { id: 'dusk', name: 'Dusk to Dawn', blurb: 'Cinematic. History as light; time takes space.' },
-  { id: 'ledger', name: 'Ledger', blurb: 'Instrument. The gutter becomes a scale.' },
-];
-
 export interface ConceptRow {
   kind: 'event' | 'tombstone';
   event: HistoricalEvent;

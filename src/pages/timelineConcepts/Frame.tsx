@@ -1,8 +1,8 @@
 import React from 'react';
 import { RefreshCw, SlidersHorizontal } from 'lucide-react';
 import TopBar from '../../components/TopBar';
-import { ConceptCard } from './ConceptCard';
-import type { ConceptId, GameSample } from './shared';
+import { Plate, PlateVariant } from './Plate';
+import type { GameSample } from './shared';
 
 /*
  * The phone chrome around a concept, so a screenshot reads as the real app: the real
@@ -50,9 +50,9 @@ export const TabFrame: React.FC<{ placed: number; total: number; children: React
 
 export const GameFrame: React.FC<{
   game: GameSample;
-  concept: ConceptId;
+  variant: PlateVariant;
   children: React.ReactNode;
-}> = ({ game, concept, children }) => (
+}> = ({ game, variant, children }) => (
   <div
     className="relative flex h-full w-full flex-col bg-bg pt-topbar"
     style={{ transform: 'translateZ(0)' }}
@@ -67,9 +67,9 @@ export const GameFrame: React.FC<{
         <span className="mt-1 text-sm">cards left</span>
       </div>
       <div className="relative flex-1 pl-4 pr-4">
-        <div className="absolute inset-x-6 inset-y-0 translate-y-2 scale-x-95 rounded-xl bg-surface opacity-70 ring-1 ring-border" />
+        <div className="absolute inset-x-6 inset-y-0 translate-y-2 scale-x-95 rounded-2xl bg-surface opacity-70 ring-1 ring-border" />
         <div className="relative">
-          <ConceptCard event={game.hand} concept={concept} />
+          <Plate event={game.hand} variant={variant} size="hand" />
           <button
             className="absolute -right-2 -top-2 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface shadow-sm"
             aria-label="Swap card"

@@ -115,7 +115,7 @@ body {
 }
 
 /* ===========================================================================
-   Timeline concepts (preview) — src/pages/timelineConcepts/*. Presentation only;
+   Timeline concept (preview) — src/pages/timelineConcepts/*. Presentation only;
    nothing in the game reads these until a concept is chosen and ported.
 
    Era palette: a WASH (page tint) and an INK (spine/node/accent) per era, named by
@@ -191,90 +191,31 @@ body {
       transparent
     );
   }
-  .cx-ink {
-    color: var(--ink);
+  /* Bottom edge only: the sticky readout owns the top. */
+  .cx-bottom-mask {
+    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 72px), transparent);
+    mask-image: linear-gradient(to bottom, #000 calc(100% - 72px), transparent);
   }
-  .cx-bg-ink {
-    background-color: var(--ink);
-  }
-  .cx-border-ink {
-    border-color: var(--ink);
-  }
-  /* Atlas: hairline + node */
-  .cx-hairline {
-    background-color: color-mix(in srgb, var(--color-text-muted) 36%, transparent);
-  }
-  .cx-hairline-ink {
-    background-color: color-mix(in srgb, var(--ink) 45%, transparent);
-  }
-  .cx-node {
-    background-color: var(--ink);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
-  }
-  .cx-node-hollow {
-    border: 2px solid var(--ink);
-    background-color: color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
-  }
-  .cx-card-atlas {
+  /* Plates */
+  .cx-plate {
     box-shadow:
-      0 1px 2px rgba(0, 0, 0, 0.05),
-      0 8px 20px -10px rgba(0, 0, 0, 0.28);
+      0 1px 2px rgba(0, 0, 0, 0.04),
+      0 10px 24px -12px rgba(0, 0, 0, 0.28);
   }
-  /* Dusk: luminous line, lamp nodes, era-tinted card shadow */
-  .cx-glowline {
-    background: linear-gradient(to bottom, var(--ink-prev), var(--ink) 60%);
-    box-shadow: 0 0 8px 1px color-mix(in srgb, var(--ink) 55%, transparent);
+  .cx-plate-photo {
+    box-shadow: 0 12px 28px -14px rgba(0, 0, 0, 0.55);
   }
-  .cx-glowline-thin {
-    background: linear-gradient(to bottom, var(--ink-prev), var(--ink) 60%);
-    box-shadow: 0 0 6px color-mix(in srgb, var(--ink) 40%, transparent);
-    opacity: 0.7;
+  /* The photographic field: the plate's own thumbnail, blurred and dimmed, behind it. */
+  .cx-photo-field {
+    filter: blur(20px) saturate(1.3) brightness(0.62);
+    transform: scale(1.35);
   }
-  .cx-lamp {
-    background-color: var(--ink);
-    box-shadow:
-      0 0 0 4px color-mix(in srgb, var(--ink) 18%, transparent),
-      0 0 14px 2px color-mix(in srgb, var(--ink) 55%, transparent);
-  }
-  .cx-lamp-off {
-    border: 2px solid color-mix(in srgb, var(--ink) 60%, transparent);
-    background-color: color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg));
-  }
-  .cx-card-dusk {
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.1),
-      0 10px 28px -14px color-mix(in srgb, var(--ink) 55%, rgba(0, 0, 0, 0.35));
-  }
-  .cx-dot {
-    background-color: var(--ink);
-  }
-  /* Ledger: rail with continuous graduations, major ticks, vertical era labels */
-  .cx-rail {
-    background-color: color-mix(in srgb, var(--color-text-muted) 40%, transparent);
-  }
-  .cx-graduations {
-    background-image: repeating-linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--color-text-muted) 26%, transparent) 0 1px,
-      transparent 1px 10px
-    );
-  }
-  .cx-vertical {
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-  }
-  .cx-card-ledger {
-    border-left: 3px solid var(--ink);
-  }
-  .cx-break {
+  /* The sticky readout's scrim: the active row's tint dissolving into the plates. */
+  .cx-readout-scrim {
     background: linear-gradient(
-      165deg,
-      transparent 44%,
-      var(--color-text-muted) 44% 48%,
-      transparent 48% 52%,
-      var(--color-text-muted) 52% 56%,
-      transparent 56%
+      to bottom,
+      color-mix(in srgb, var(--wash) var(--wash-pct, 100%), var(--color-bg)) 64%,
+      transparent
     );
   }
 }

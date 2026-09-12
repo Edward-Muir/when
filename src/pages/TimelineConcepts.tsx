@@ -4,17 +4,18 @@ import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../hooks/useTheme';
 import { loadAllEvents } from '../utils/eventLoader';
 import { HistoricalEvent } from '../types';
-import Atlas from './timelineConcepts/Atlas';
-import Dusk from './timelineConcepts/Dusk';
-import Ledger from './timelineConcepts/Ledger';
+import Plates from './timelineConcepts/Plates';
+import type { PlateVariant } from './timelineConcepts/Plate';
 import { GameFrame, TabFrame } from './timelineConcepts/Frame';
-import { buildRows, CONCEPTS, ConceptId, pickGame, pickSample } from './timelineConcepts/shared';
+import { buildRows, pickGame, pickSample } from './timelineConcepts/shared';
 
 /**
- * Dev-only harness (route: /timeline-concepts) showing three complete redesigns of the
- * timeline surface as mockups on real data, before one is ported into Timeline.tsx.
+ * Dev-only harness (route: /timeline-concepts): the "plates" redesign of the timeline
+ * surface — no spine or gutter, photographic plates with the year set large, a sticky
+ * year readout that rolls as you scroll — as a mockup on real data, before it is ported
+ * into Timeline.tsx.
  *
- *   ?concept=atlas|dusk|ledger  ?view=tab|game  ?theme=light|dark  ?bare=1 (no controls)
+ *   ?plate=light|photo  ?view=tab|game  ?theme=light|dark  ?bare=1 (no controls)
  *
  * Not linked from the game UI and has no vercel.json rewrite: local dev only.
  */
@@ -27,16 +28,6 @@ const chip = (active: boolean) =>
       ? 'border-accent bg-accent text-white'
       : 'border-border bg-surface text-text hover:bg-border'
   }`;
-
-const Concept: React.FC<{
-  id: ConceptId;
-  rows: ReturnType<typeof buildRows>;
-  startRow: number;
-}> = ({ id, rows, startRow }) => {
-  if (id === 'dusk') return <Dusk rows={rows} startRow={startRow} />;
-  if (id === 'ledger') return <Ledger rows={rows} startRow={startRow} />;
-  return <Atlas rows={rows} startRow={startRow} />;
-};
 
 const TimelineConcepts: React.FC = () => {
   const { isDark, toggleTheme } = useTheme();
@@ -51,9 +42,7 @@ const TimelineConcepts: React.FC = () => {
   const game = useMemo(() => pickGame(sample), [sample]);
   const gameRows = useMemo(() => (game ? buildRows(game.board, game.tombstones) : []), [game]);
 
-  const conceptParam = params.get('concept');
-  const concept: ConceptId =
-    conceptParam === 'dusk' || conceptParam === 'ledger' ? conceptParam : 'atlas';
+  const variant: PlateVariant = params.get('plate') === 'photo' ? 'photo' : 'light';
   const view: View = params.get('view') === 'game' ? 'game' : 'tab';
   const bare = params.get('bare') === '1';
 
@@ -75,26 +64,28 @@ const TimelineConcepts: React.FC = () => {
       Loading events…
     </div>
   ) : view === 'game' && game ? (
-    <GameFrame game={game} concept={concept}>
-      <Concept id={concept} rows={gameRows} startRow={Math.floor(gameRows.length / 2)} />
+    <GameFrame game={game} variant={variant}>
+      <Plates rows={gameRows} variant={variant} startRow={Math.floor(gameRows.length / 2)} />
     </GameFrame>
   ) : (
     <TabFrame placed={sample.length} total={all.length}>
-      <Concept id={concept} rows={tabRows} startRow={Math.floor(tabRows.length / 2)} />
+      <Plates rows={tabRows} variant={variant} startRow={Math.floor(tabRows.length / 2)} />
     </TabFrame>
   );
 
   return (
     <div className="flex h-screen-safe flex-col overflow-hidden bg-bg md:flex-row">
       <div
-        className={`h-full min-h-0 w-full shrink-0 overflow-hidden md:w-[402px] ${bare ? '' : 'md:border-r md:border-border'}`}
+        className={`h-full min-h-0 w-full shrink-0 overflow-hidden md:w-[402px] ${
+          bare ? '' : 'md:border-r md:border-border'
+        }`}
       >
         {phone}
       </div>
       {!bare && (
         <aside className="flex-1 space-y-5 overflow-y-auto border-t border-border p-4 font-body text-text md:border-t-0">
           <div className="flex items-center justify-between gap-3">
-            <h1 className="font-display text-2xl font-bold">Timeline — Concepts</h1>
+            <h1 className="font-display text-2xl font-bold">Timeline — Plates</h1>
             <button
               onClick={() => update({ theme: isDark ? 'light' : 'dark' })}
               className="rounded-xl border border-border bg-surface p-2 hover:bg-border active:scale-95"
@@ -104,21 +95,21 @@ const TimelineConcepts: React.FC = () => {
             </button>
           </div>
           <section className="space-y-2">
-            <h2 className="text-sm font-semibold text-text-muted">Concept</h2>
-            <div className="flex flex-wrap gap-2">
-              {CONCEPTS.map((c) => (
-                <button
-                  key={c.id}
-                  className={chip(concept === c.id)}
-                  onClick={() => update({ concept: c.id })}
-                >
-                  {c.name}
-                </button>
-              ))}
+            <h2 className="text-sm font-semibold text-text-muted">Plate</h2>
+            <div className="flex gap-2">
+              <button
+                className={chip(variant === 'light')}
+                onClick={() => update({ plate: 'light' })}
+              >
+                Light
+              </button>
+              <button
+                className={chip(variant === 'photo')}
+                onClick={() => update({ plate: 'photo' })}
+              >
+                Photographic
+              </button>
             </div>
-            <p className="text-sm text-text-muted">
-              {CONCEPTS.find((c) => c.id === concept)?.blurb}
-            </p>
           </section>
           <section className="space-y-2">
             <h2 className="text-sm font-semibold text-text-muted">View</h2>
