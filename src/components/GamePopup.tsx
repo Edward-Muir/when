@@ -13,6 +13,7 @@ import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
 import { useEventDetail } from '../hooks/useEventDetail';
+import { usePinnedFaceHeight } from '../hooks/usePinnedFaceHeight';
 import EventDetailFace, { HeaderIconButton } from './EventDetailFace';
 
 interface GamePopupProps {
@@ -324,6 +325,10 @@ function EventPopupContent({
   const reduceMotion = useReducedMotion();
   const isBack = face === 'back';
 
+  // Turning the card over must not resize it: the reading face is pinned to the height the card
+  // face measured, and the prose scrolls inside it.
+  const pinnedFace = usePinnedFaceHeight(isBack, [event.name, event.description, showYear]);
+
   // A true 3D rotateY flip was tried and rejected: both faces have to share a height for the
   // rotation to read, and these two differ by the whole 384px image box, so the card visibly
   // jumped mid-turn. An 8px slide + crossfade keeps the "turning it over" metaphor without
@@ -364,34 +369,36 @@ function EventPopupContent({
         }
       />
 
-      <AnimatePresence mode="wait" initial={false}>
-        <motion.div
-          key={face}
-          // min-h-0 lets the back face's scroll region shrink inside Modal's flex column.
-          className="flex min-h-0 flex-col"
-          initial={{ opacity: 0, x: isBack ? slide : -slide }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: isBack ? -slide : slide }}
-          transition={{ duration: 0.18, ease: 'easeOut' }}
-        >
-          {isBack ? (
-            <EventDetailFace event={event} tombstone={tombstone} detail={detail} />
-          ) : (
-            <>
-              <EventImage event={event} tombstone={tombstone} />
-              {(isDescription || isIncorrect) && (
-                <div className="px-4 py-3">
-                  <p
-                    className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
-                  >
-                    {event.description}
-                  </p>
-                </div>
-              )}
-            </>
-          )}
-        </motion.div>
-      </AnimatePresence>
+      <div ref={pinnedFace.ref} className="flex min-h-0 flex-col" style={pinnedFace.style}>
+        <AnimatePresence mode="wait" initial={false}>
+          <motion.div
+            key={face}
+            // min-h-0 lets the reading face's scroll region shrink inside the pinned height.
+            className="flex flex-1 min-h-0 flex-col"
+            initial={{ opacity: 0, x: isBack ? slide : -slide }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: isBack ? -slide : slide }}
+            transition={{ duration: 0.18, ease: 'easeOut' }}
+          >
+            {isBack ? (
+              <EventDetailFace event={event} tombstone={tombstone} detail={detail} />
+            ) : (
+              <>
+                <EventImage event={event} tombstone={tombstone} />
+                {(isDescription || isIncorrect) && (
+                  <div className="px-4 py-3">
+                    <p
+                      className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
+                    >
+                      {event.description}
+                    </p>
+                  </div>
+                )}
+              </>
+            )}
+          </motion.div>
+        </AnimatePresence>
+      </div>
 
       {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
       {nextPlayer && (
@@ -441,9 +448,6 @@ const GamePopup: React.FC<GamePopupProps> = ({
       open={isVisible}
       onDismiss={onDismiss}
       dismiss={dismiss}
-      // The reading face can run past the viewport, so it becomes a flex column that manages
-      // its own scroll region. The card face keeps the shell's default sizing.
-      scroll={face === 'back' ? 'body' : undefined}
       cardStyle={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
     >
       {isGameOver && gameState ? (
