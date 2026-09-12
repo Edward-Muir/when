@@ -95,6 +95,17 @@ export interface HistoricalEvent {
   image_height?: number; // Image height in pixels
   color?: string; // Dominant color extracted from image, e.g. "#8B4513"
   text_color?: 'light' | 'dark'; // Whether to use light or dark text on this color
+  /**
+   * True when `public/events/detail/<source file>` holds written long-form prose for this
+   * slug. It is what decides whether the detail popup offers its info button, so it must
+   * never be set for an event without prose — an info button that opens nothing is worse
+   * than no button.
+   *
+   * Written by `scripts/events/detail-apply.js` alongside the prose itself; never hand-edited,
+   * and deliberately not part of the sidecar (the sidecar is lazy, this has to be known
+   * synchronously, and a separate index file would be a third thing to keep in sync).
+   */
+  has_detail?: boolean;
 }
 
 export interface Player {

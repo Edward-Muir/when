@@ -1,5 +1,6 @@
-import React from 'react';
-import { Check, X, Trophy } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { ArrowLeft, Check, Info, Trophy, X } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import { DailyResult } from '../utils/playerStorage';
@@ -11,6 +12,8 @@ import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
+import { useEventDetail } from '../hooks/useEventDetail';
+import EventDetailFace, { HeaderIconButton } from './EventDetailFace';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -26,6 +29,22 @@ interface GamePopupProps {
   dailyResult?: DailyResult | null;
   /** Owned by `Game` so the rank it resolves is read directly by the share step. */
   leaderboard?: DailyLeaderboard;
+}
+
+/** Which side of the card is showing. 'back' is the long-form read. */
+type PopupFace = 'front' | 'back';
+
+/**
+ * Whether this popup may offer the "read more" info button. All three conditions matter:
+ *
+ * - `description`: correct/incorrect reveals are a beat in the game loop, not a reading surface.
+ * - `showYear`: false exactly when the card is still in the player's hand. The long-form prose
+ *   is written post-placement and names dates freely, so showing it there would hand over the
+ *   answer. This is the spoiler gate — see docs/event-detail/index.md.
+ * - `has_detail`: set only where prose actually exists, so the button never opens nothing.
+ */
+function canReadMoreAbout(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
+  return type === 'description' && showYear && !!event?.has_detail;
 }
 
 // Sub-component for result banner (full-width colored banner at top)
@@ -52,25 +71,37 @@ function EventHeader({
   showYear,
   isIncorrect,
   tombstone,
+  leading,
+  trailing,
 }: {
   event: HistoricalEvent;
   showYear: boolean;
   isIncorrect?: boolean;
   tombstone?: boolean;
+  /** Back control on the detail face, rendered left of the title. */
+  leading?: React.ReactNode;
+  /** Info control on the card face, rendered right of the title. */
+  trailing?: React.ReactNode;
 }) {
   const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
   return (
-    <div className="px-4 py-3">
-      <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
-        {event.friendly_name}
-      </h2>
-      {showYear && (
-        <span
-          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
-        >
-          {formatYear(event.year)}
-        </span>
-      )}
+    // Negative vertical margins on the controls keep the 44px touch targets from inflating the
+    // header past its px-4 py-3 box, so the front and back faces stay optically identical.
+    <div className="px-4 py-3 flex items-start gap-2">
+      {leading}
+      <div className="min-w-0 flex-1">
+        <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
+          {event.friendly_name}
+        </h2>
+        {showYear && (
+          <span
+            className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
+          >
+            {formatYear(event.year)}
+          </span>
+        )}
+      </div>
+      {trailing}
     </div>
   );
 }
@@ -272,16 +303,32 @@ function EventPopupContent({
   showYear,
   nextPlayer,
   tombstone,
+  face,
+  setFace,
+  canReadMore,
+  detail,
 }: {
   type: GamePopupType;
   event: HistoricalEvent;
   showYear: boolean;
   nextPlayer?: Player;
   tombstone?: boolean;
+  face: PopupFace;
+  setFace: (face: PopupFace) => void;
+  canReadMore: boolean;
+  detail: ReturnType<typeof useEventDetail>;
 }) {
   const isCorrect = type === 'correct';
   const isIncorrect = type === 'incorrect';
   const isDescription = type === 'description';
+  const reduceMotion = useReducedMotion();
+  const isBack = face === 'back';
+
+  // A true 3D rotateY flip was tried and rejected: both faces have to share a height for the
+  // rotation to read, and these two differ by the whole 384px image box, so the card visibly
+  // jumped mid-turn. An 8px slide + crossfade keeps the "turning it over" metaphor without
+  // constraining the height. Under Reduce Motion it degrades to a plain crossfade.
+  const slide = reduceMotion ? 0 : 8;
 
   return (
     <>
@@ -291,17 +338,61 @@ function EventPopupContent({
         showYear={showYear}
         isIncorrect={isIncorrect}
         tombstone={tombstone}
+        leading={
+          isBack ? (
+            <HeaderIconButton
+              event={event}
+              tombstone={tombstone}
+              label="Back to the card"
+              onClick={() => setFace('front')}
+            >
+              <ArrowLeft className="w-5 h-5" />
+            </HeaderIconButton>
+          ) : undefined
+        }
+        trailing={
+          !isBack && canReadMore ? (
+            <HeaderIconButton
+              event={event}
+              tombstone={tombstone}
+              label="Read more about this event"
+              onClick={() => setFace('back')}
+            >
+              <Info className="w-5 h-5" />
+            </HeaderIconButton>
+          ) : undefined
+        }
       />
-      <EventImage event={event} tombstone={tombstone} />
-      {(isDescription || isIncorrect) && (
-        <div className="px-4 py-3">
-          <p
-            className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
-          >
-            {event.description}
-          </p>
-        </div>
-      )}
+
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={face}
+          // min-h-0 lets the back face's scroll region shrink inside Modal's flex column.
+          className="flex min-h-0 flex-col"
+          initial={{ opacity: 0, x: isBack ? slide : -slide }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: isBack ? -slide : slide }}
+          transition={{ duration: 0.18, ease: 'easeOut' }}
+        >
+          {isBack ? (
+            <EventDetailFace event={event} tombstone={tombstone} detail={detail} />
+          ) : (
+            <>
+              <EventImage event={event} tombstone={tombstone} />
+              {(isDescription || isIncorrect) && (
+                <div className="px-4 py-3">
+                  <p
+                    className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
+                  >
+                    {event.description}
+                  </p>
+                </div>
+              )}
+            </>
+          )}
+        </motion.div>
+      </AnimatePresence>
+
       {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
       {nextPlayer && (
         <div className="px-4 py-4 border-t border-border">
@@ -329,6 +420,17 @@ const GamePopup: React.FC<GamePopupProps> = ({
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
 
+  const [face, setFace] = useState<PopupFace>('front');
+  const canReadMore = canReadMoreAbout(type, showYear, event);
+  const detail = useEventDetail(event?.name ?? null, face === 'back');
+
+  // The popup instance is reused across cards and across openings, so the card has to be turned
+  // back over when the event changes or the popup closes — otherwise the next card opens on the
+  // previous one's reading face. Same reason ReportIssueButton resets on `event.name`.
+  useEffect(() => {
+    setFace('front');
+  }, [event?.name, isVisible]);
+
   // The submit form is on screen exactly when there is a daily to claim and the player has not
   // claimed it.
   const showsSubmitForm = isGameOver && !!dailyResult && leaderboard?.submitted === false;
@@ -339,6 +441,9 @@ const GamePopup: React.FC<GamePopupProps> = ({
       open={isVisible}
       onDismiss={onDismiss}
       dismiss={dismiss}
+      // The reading face can run past the viewport, so it becomes a flex column that manages
+      // its own scroll region. The card face keeps the shell's default sizing.
+      scroll={face === 'back' ? 'body' : undefined}
       cardStyle={!isGameOver && event && !tombstone ? getEventColorStyle(event) : undefined}
     >
       {isGameOver && gameState ? (
@@ -363,6 +468,10 @@ const GamePopup: React.FC<GamePopupProps> = ({
             showYear={showYear}
             nextPlayer={nextPlayer}
             tombstone={tombstone}
+            face={face}
+            setFace={setFace}
+            canReadMore={canReadMore}
+            detail={detail}
           />
         )
       )}

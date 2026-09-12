@@ -37,6 +37,10 @@ original per-session write-ups if you need the blow-by-blow.
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
   push to full image coverage
+- [event-detail/](event-detail/index.md) — the "read more" info button and the long-form prose
+  behind it: why the card turns over instead of opening a second overlay, why the button is
+  unreachable before placement (and why that lets the prose state dates), the lazy sidecar
+  instead of inlining ~2.4 MiB gzipped, and the phased plan for writing all 5,460 entries
 - [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
   the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
   measured symptoms, and a sequenced fix list
