@@ -48,6 +48,14 @@ button can be tapped, and the image box is a fixed height so a late-decoding ima
 A consequence worth knowing: `Modal` is given no `scroll` prop on either face, because the shell
 is now identical on both and the scroll region lives inside the reading face.
 
+> **The measuring ref goes on the faces, never on the wrapper that holds both.** It was on the
+> wrapper first, and the card grew every time it was turned over and back: dismissing the reading
+> face released the pin while `AnimatePresence mode="wait"` still had that face mounted and
+> animating out, so the height recorded was the prose at full unclipped height and the next open
+> pinned the card to it (606px → 724px at phone width, worse with longer prose, eventually off
+> the screen). `usePinnedFaceHeight` now refuses to measure anything handed to it while pinned,
+> and `usePinnedFaceHeight.test.ts` fails if that guard is removed.
+
 **The button is unreachable before placement, and that is load-bearing.** The gate is
 `type === 'description' && showYear && has_detail`, and `showYear` is already false exactly when
 the card is still in the player's hand (`shouldShowYearInPopup`, `Game.tsx`). This is _why_ the

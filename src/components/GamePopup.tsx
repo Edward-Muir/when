@@ -369,10 +369,14 @@ function EventPopupContent({
         }
       />
 
-      <div ref={pinnedFace.ref} className="flex min-h-0 flex-col" style={pinnedFace.style}>
+      <div className="flex min-h-0 flex-col" style={pinnedFace.style}>
         <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={face}
+            // On the face, never the wrapper: the wrapper holds both, and measuring it while the
+            // reading face animates out is the bug documented in usePinnedFaceHeight. The hook
+            // ignores the reading face itself, so this can be unconditional.
+            ref={pinnedFace.ref}
             // min-h-0 lets the reading face's scroll region shrink inside the pinned height.
             className="flex flex-1 min-h-0 flex-col"
             initial={{ opacity: 0, x: isBack ? slide : -slide }}
