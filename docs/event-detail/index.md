@@ -1,8 +1,9 @@
 # Event detail — the long-form "read more"
 
 **Status: Phase 1 is DONE (the mechanism and the design). Phases 2 and 3 are the plan below
-and have not started.** Nothing is enabled in production yet: no event carries `has_detail`, so
-no info button renders anywhere. That is deliberate — see Guardrail 1.
+and have not started.** Nothing is in production: the branch does not merge until the corpus is
+written. On the branch itself every event carries placeholder prose so the preview deploy is
+testable — see Guardrail 1 for what keeps that from shipping.
 
 - [2026-09-12 — Designing the read-more view](session-2026-09-12-detail-view-design.md) — where the
   branch stands, the open questions Phase 2 has to settle, the corpus and payload measurements
@@ -89,11 +90,23 @@ reach.
 
 ## Guardrails
 
-1. **No lorem reaches production.** `scripts/events/detail-placeholder.js` fills all 5,460 events
-   so the design can be judged on real layout, but it is a **local tool**: because it sets
-   `has_detail`, a committed run would ship placeholder text to players. Run it, look, then
-   `--revert` and confirm `git status public/events/` is clean before committing. Phase 1's
-   committed diff changes nothing a player sees.
+1. **No lorem reaches production — but it does live on the branch.**
+   `scripts/events/detail-placeholder.js` fills all 5,460 events, and **its output is committed**.
+   It has to be: `has_detail` is what makes the info button render, so without it the branch's own
+   preview deploy shows nothing at all and is useless for looking at the thing it exists to show.
+   An earlier revert-before-commit rule traded that away for a protection the branch does not
+   need. Three things keep it safe instead:
+   - the branch never merges until the corpus is written, so it cannot reach players;
+   - every placeholder entry carries `placeholder: true`, and
+     `node scripts/events/detail-report.js` counts those as still to do and **exits non-zero**
+     while any remain. **Do not merge while that script exits non-zero.** It is deliberately not
+     part of `npm test`, which would otherwise be red for the whole of Phase 3;
+   - every placeholder entry's first paragraph literally begins `PLACEHOLDER —`, so it cannot be
+     mistaken for real prose in a review.
+
+   `detail-apply.js` replaces an entry wholesale, so real prose drops the flag and starts counting
+   automatically — the corpus converges on written as Phase 3 lands, with no cleanup step.
+
 2. **Cold start must not regress.** Detail is never fetched at start-up. If you find yourself
    wanting it in `loadAllEvents`, re-read the numbers above.
 3. **Never rewrite the `name` slug** — it is the sidecar key as well as the identity used for
@@ -177,17 +190,17 @@ CI=true npm test -- --watchAll=false
 CI=true npm run build
 ```
 
-The design itself has to be looked at, and that needs the placeholder:
+The placeholder corpus is already committed, so the design can be looked at on the branch's
+preview deploy or locally with no setup. Regenerate with
+`node scripts/events/detail-placeholder.js` if you have reverted it:
 
-1. `node scripts/events/detail-placeholder.js`
-2. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game.
-3. **Check the gate**: tap a card still in your hand — there must be no info button.
-4. Widths 320 / 402 / 1440, light and dark, Reduce Motion on. Two- and three-paragraph entries
+1. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game.
+2. **Check the gate**: tap a card still in your hand — there must be no info button.
+3. Widths 320 / 402 / 1440, light and dark, Reduce Motion on. Two- and three-paragraph entries
    both occur. The card must not move or resize between the two faces — measure
    `[data-testid="modal-card"]`'s bounding box on each face if in doubt; it was 340x606 at 402px
    wide on both when this shipped.
-5. `node scripts/events/detail-placeholder.js --revert`, then confirm `git status public/events/`
-   is clean.
+4. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
 
 Driving it with Playwright: `docs/driving-the-app-with-playwright.md`. Note the timeline card is
 reached by its **title** — `[data-timeline-year]` is the year label beside it, and clicking that

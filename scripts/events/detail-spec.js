@@ -38,6 +38,9 @@ function entryProblems(slug, entry) {
     return [`${slug}: entry must be an object like { "paragraphs": [...] }`];
   }
 
+  // `placeholder: true` is the only other key an entry may carry — written by
+  // detail-placeholder.js, read by detail-report.js, ignored by the runtime. Tolerated here so a
+  // stricter key check later cannot reject the placeholder corpus the branch is testing against.
   const { paragraphs } = entry;
   if (!Array.isArray(paragraphs)) {
     return [`${slug}: "paragraphs" must be an array of strings`];

@@ -8,10 +8,15 @@
  *   node scripts/events/detail-placeholder.js            # fill every event
  *   node scripts/events/detail-placeholder.js --revert   # undo: delete shards, strip has_detail
  *
- * LOCAL ONLY. Its output must never be committed: `has_detail` is what makes the info button
- * appear, so a committed placeholder run ships lorem to players. Run it, look at the design,
- * then `--revert` and check `git status` is clean before committing. See Guardrail 1 in
+ * Its output IS committed on the feature branch, so the branch's preview deploy is testable —
+ * without `has_detail` no info button renders anywhere, which makes the preview useless for
+ * looking at the thing it exists to show. What keeps that safe is not leaving it uncommitted but
+ * that the branch never merges until the corpus is written, and that every entry is flagged
+ * `placeholder: true` so `detail-report.js` refuses to call the job done. See Guardrail 1 in
  * docs/event-detail/index.md.
+ *
+ * `--revert` deletes the shards and strips the flags again — use it before merging `origin/main`
+ * into the branch if main has touched any event JSON, then regenerate.
  *
  * Text is seeded off the slug, so a re-run produces byte-identical output and reviewing a diff
  * stays meaningful.
@@ -89,7 +94,11 @@ function placeholderFor(event) {
     const suffix = ` (${event.category})`;
     paragraphs.push(`${paragraph(next, 2 + Math.floor(next() * 3), suffix.length)}${suffix}`);
   }
-  return { paragraphs };
+  // Flagged so the tooling can tell placeholder from written prose. `detail-report.js` counts a
+  // flagged entry as still to do, which keeps the Phase 3 progress meter and worklist honest even
+  // though the whole corpus is committed; `detail-apply.js` replaces the entry wholesale, so a
+  // real entry drops the flag with no extra code. The runtime ignores it and reads `paragraphs`.
+  return { placeholder: true, paragraphs };
 }
 
 function main() {

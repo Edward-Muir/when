@@ -20,14 +20,19 @@ session real time to find out.
 **merge `origin/main` into it periodically** rather than letting it drift, and never rebase it
 (the merge commit keeps any other checkout valid).
 
-**Nothing is enabled.** Zero events carry `has_detail`, so no info button renders anywhere, and
-`public/events/detail/` does not exist. That is the intended Phase 1 state, not an oversight.
+**The whole corpus is committed as placeholder**, so the branch's preview deploy is testable:
+every event carries `has_detail` and a flagged `placeholder: true` entry in
+`public/events/detail/`. This reverses the call Phase 1 shipped with — the placeholder was
+generated locally and reverted before committing, which left the preview showing no info buttons
+at all and therefore useless for looking at the one thing it exists to show. Since the branch
+never merges until the corpus is written, keeping lorem out of the commit bought nothing.
 
-**The working tree must stay clean of `public/events/`.** `scripts/events/detail-placeholder.js`
-fills all 5,460 events so the design can be looked at, but it sets `has_detail` — so a committed
-run would ship placeholder prose the moment the branch ever merged. Run it, look, then
-`--revert`, and check `git status --short public/events/` is empty before every commit. This is
-Guardrail 1 in the digest and it gets more important the longer the branch lives.
+What keeps it safe is Guardrail 1 in the digest, and the piece to remember day to day is:
+**`node scripts/events/detail-report.js` exits non-zero while any placeholder remains, and that
+is the merge gate.** It is not part of `npm test`, so the suite stays green.
+
+**When merging `origin/main` into this branch**, if main has touched any event JSON, do
+`--revert` → merge → regenerate rather than resolving 5,460 `has_detail` lines by hand.
 
 **Next session starts at Phase 2**, the writing spec.
 

@@ -7,8 +7,10 @@
  *   node scripts/events/detail-report.js --chunks        # also write worklist chunks
  *   node scripts/events/detail-report.js --file people.json
  *
- * Exits non-zero while any event is unwritten, so it doubles as the progress meter: the run is
- * finished when this is quiet. Chunks land in `untracked_data/event-detail/worklist/` (gitignored)
+ * Exits non-zero while any event is unwritten, so it doubles as the progress meter and the merge
+ * gate: **do not merge this branch while this script exits non-zero.** It is deliberately not part
+ * of `npm test` — the suite would then be red for the whole of Phase 3, which just teaches
+ * everyone to ignore it. Chunks land in `untracked_data/event-detail/worklist/` (gitignored)
  * as `<shard>-NNN.json`, each holding the slugs, titles, years and existing short descriptions
  * for one sub-agent batch.
  */
@@ -40,7 +42,14 @@ function main() {
 
   for (const { file, events } of ordered) {
     const shard = readDetailShard(file);
-    const missing = events.filter((event) => !shard[event.name]);
+    // A placeholder entry is not written prose: the whole corpus is committed as placeholder so
+    // the branch's preview deploy is testable, and counting those as done would report 5,460/5,460
+    // and emit no worklist at all. `detail-apply.js` replaces an entry wholesale, so real prose
+    // drops the flag and is counted from then on.
+    const missing = events.filter((event) => {
+      const entry = shard[event.name];
+      return !entry || entry.placeholder;
+    });
     totalEvents += events.length;
     totalMissing += missing.length;
 
