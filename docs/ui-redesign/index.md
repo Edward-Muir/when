@@ -88,6 +88,61 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## Timeline surface: three directions ruled out (2026-09)
+
+A session tried to give the game's timeline a stronger sense of prehistory → future and of
+motion while scrolling ("the line and style look very plain; only the events give you a sense of
+motion"). Three rounds were built as dev-only preview routes on real data and screenshotted with
+Playwright; **all three were rejected by the maintainer**, and the conclusion was that restyling
+the surface was the wrong problem. The next attempt should start from the placement
+interaction, not the look — see [timeline-rethink-brief.md](timeline-rethink-brief.md). The
+work lives, unmerged and not to be merged, on `claude/timeline-visual-design-5ool87`
+(`173c43d`, `a6a9e0c`, `a88ff06`, `a15b77d`).
+
+- **Round 1 — decorations on the existing rail.** Per-row rail segments tinted by era, an
+  era-keyed stroke texture (beads → dashes → solid → double hairline → glowing line), and log-
+  scaled "ruler" hatches between rows with "+1,200 yrs" labels, each toggleable. Verdict:
+  "incredibly ugly … jank patched on top of the current system." Lesson: layering ornament on
+  the current anatomy reads as clutter no matter how quiet each layer is.
+- **Round 2 — the same anatomy, restyled three ways.** Year gutter left, line, cards right,
+  kept; "Atlas" (1px hairline, era-ink nodes, Playfair years, small-caps chapter rules where the
+  era turns), "Dusk to Dawn" (luminous line, lamp nodes, umber → teal page wash, elapsed time as
+  vertical space), "Ledger" (graduated rail, axis-break glyphs, era names set vertically), each
+  with its own card restyle. Verdict: "all awful." Lesson: changing every visual property while
+  keeping the layout is still the same design.
+- **Round 3 — research-led, no spine at all.** The devices that recur in acclaimed timelines
+  (Shorthand's and Awwwards' collections, _The Deep Sea_): a large typographic year that is
+  sticky and rolls as you scroll, photography-led entries with the year set on them, elapsed
+  time as space, no decoration competing with content. Built as "plates" (a square of the art
+  with the year in Playfair beside the title; light and photographic variants) with a sticky
+  year/era readout and log-scaled gaps. Verdict: "I don't like any of these either." Lesson:
+  even a defensible, research-backed surface did not move the maintainer; the dissatisfaction
+  is with the game screen as a whole, not its paint.
+
+What the rounds established that is still true and worth not rediscovering:
+
+- **`Timeline`'s component body sits ~12 lines under `max-lines-per-function` (310).** CRA under
+  `CI=true` promotes the warning to a build error. Lifting the `wakeDelays` memo into a
+  `useWakeDelays` hook is a pure refactor that buys ~20 lines (done on the design branch, not
+  on `main`); `successWave` and `missWaveBumps` can go the same way.
+- **Only three attributes are measured.** Drag insertion snapshots `[data-timeline-year]`
+  midpoints at drag start (`src/hooks/useDragAndDrop.ts`); first-card centring and the
+  open-at-median scroll query `[data-timeline-index]`; the miss camera `[data-tombstone-name]`.
+  Anything else in a row, of any height, only widens the y-band that maps to its gap. Keep new
+  chrome free of those attributes; keep the year element inside whatever the row becomes.
+- **The `thumbnail` Cloudinary rung is square** (see [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)),
+  so any full-bleed or letterboxed art treatment either crops the subject or blur-fills; a
+  blurred `<img>` per row needs `content-visibility: auto` for the unvirtualised My Timeline.
+- **Opacity modifiers on the theme tokens compile to nothing** (this document's oldest trap);
+  every wash, glow and hairline in the rounds was a `color-mix()` utility.
+- **Screenshots from a cloud session work if Chromium uses the proxy.** Serve `build/` with a
+  tiny static server with SPA fallback (a dev server's HMR socket hangs `networkidle`); launch
+  with `proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' }` and
+  `--ssl-version-max=tls1.2 --disable-quic`; then Google Fonts and Cloudinary load and the
+  "abort fonts" advice in [../driving-the-app-with-playwright.md](../driving-the-app-with-playwright.md)
+  is unnecessary. Make preview routes URL-driven (`?variant=…&theme=…&bare=1`) so a script
+  needs no clicks, and compose contact sheets with a second Playwright page.
+
 ## Onboarding hints (2026-09)
 
 Players said the app did not explain itself: the rules were three lines that omitted the
