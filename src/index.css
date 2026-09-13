@@ -634,3 +634,181 @@ input,
     animation: hintBrighten 1.6s ease-in-out infinite;
   }
 }
+
+/* ===========================================
+   PHYSICAL BOARD (dev route /board-lab; see src/components/board/)
+   Every wash, slot and hairline below is a color-mix() against the theme tokens: an
+   opacity modifier on a token (`bg-accent/20`) compiles to nothing in this repo.
+   =========================================== */
+
+/* The era wash: two tints per theme, mixed into the page background by era. */
+:root {
+  --wash-warm: #b8782a;
+  --wash-cool: #2a7fa8;
+}
+.dark {
+  --wash-warm: #9a6224;
+  --wash-cool: #1e88a8;
+}
+
+/* `era-N` is set on the board root by useEraWash (N = index into ERA_DEFINITIONS). The
+   tone runs warm (prehistory) to cool (modern) through eight fixed mixes: fixed, so that
+   no calc() feeds a colour (postcss-calc mangles those) and the cross-fade is a plain
+   background-color transition. */
+.era-wash {
+  --board-wash: var(--color-bg);
+  background-color: var(--board-wash);
+}
+.era-wash.era-0 {
+  --board-wash: color-mix(in srgb, var(--color-bg) 88%, var(--wash-warm));
+}
+.era-wash.era-1 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 86%, var(--wash-cool))
+  );
+}
+.era-wash.era-2 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 71%, var(--wash-cool))
+  );
+}
+.era-wash.era-3 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 57%, var(--wash-cool))
+  );
+}
+.era-wash.era-4 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 43%, var(--wash-cool))
+  );
+}
+.era-wash.era-5 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 29%, var(--wash-cool))
+  );
+}
+.era-wash.era-6 {
+  --board-wash: color-mix(
+    in srgb,
+    var(--color-bg) 88%,
+    color-mix(in srgb, var(--wash-warm) 14%, var(--wash-cool))
+  );
+}
+.era-wash.era-7 {
+  --board-wash: color-mix(in srgb, var(--color-bg) 88%, var(--wash-cool));
+}
+
+/* The fixed Earlier/Later captions fade over whatever the wash currently is */
+.board-edge-fade-top {
+  background: linear-gradient(to bottom, var(--board-wash), transparent);
+}
+.board-edge-fade-bottom {
+  background: linear-gradient(to top, var(--board-wash), transparent);
+}
+.board-edge-caption {
+  transition: opacity 300ms ease;
+}
+[data-edge='past'] .board-edge-caption-past,
+[data-edge='future'] .board-edge-caption-future {
+  opacity: 0;
+}
+
+/* Cards with depth: a resting shadow, a lift on press. The row's button is the card. */
+.board-physics [data-timeline-index] button {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.1),
+    0 6px 14px -4px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 120ms ease,
+    box-shadow 120ms ease;
+}
+.dark .board-physics [data-timeline-index] button {
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.45),
+    0 8px 18px -4px rgba(0, 0, 0, 0.6);
+}
+.board-physics [data-timeline-index] button:active {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 12px 22px -6px rgba(0, 0, 0, 0.28);
+}
+
+/* The recessed slot a card is about to land in */
+.board-slot {
+  background-color: color-mix(in srgb, var(--color-bg) 65%, var(--color-border));
+  box-shadow:
+    inset 0 2px 6px rgba(0, 0, 0, 0.18),
+    inset 0 0 0 1px color-mix(in srgb, var(--color-border) 80%, transparent);
+}
+.dark .board-slot {
+  background-color: color-mix(in srgb, var(--color-bg) 70%, black);
+  box-shadow:
+    inset 0 2px 8px rgba(0, 0, 0, 0.6),
+    inset 0 0 0 1px color-mix(in srgb, var(--color-border) 80%, transparent);
+}
+
+/* The hand as card backs (lives) */
+.hand-back {
+  background-color: color-mix(in srgb, var(--color-surface) 55%, var(--color-border));
+}
+
+/* The ends of time. Past: strata hairlines thinning upward. Future: dots trailing off
+   downward, and a dashed outline where the next card would go. `--end-pull` (px, unitless)
+   is how far past the end the player has pulled; the watermark stretches a little with it. */
+.end-of-time {
+  color: var(--color-text-muted);
+  opacity: 0.55;
+  will-change: transform;
+}
+.end-of-time-past {
+  transform: translateY(calc(var(--end-pull, 0) * 0.4px));
+}
+.end-of-time-future {
+  transform: translateY(calc(var(--end-pull, 0) * -0.4px));
+}
+.end-of-time::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.end-of-time-past::before {
+  background: repeating-linear-gradient(to top, transparent 0 23px, var(--color-border) 23px 24px);
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+.end-of-time-future::before {
+  background: radial-gradient(circle, var(--color-border) 1px, transparent 1.6px) 0 0 / 18px 18px;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent);
+}
+.end-of-time-next {
+  border: 1px dashed var(--color-border);
+  position: relative;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .era-wash {
+    transition: background-color 700ms ease;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .end-of-time-past,
+  .end-of-time-future {
+    transform: none;
+  }
+  .board-physics [data-timeline-index] button {
+    transition: none;
+  }
+}

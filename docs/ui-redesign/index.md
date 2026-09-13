@@ -88,6 +88,48 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## The physical board: a preview of a livelier game screen (2026-09)
+
+Three restyles of the timeline surface were rejected earlier in 2026-09 (recorded on
+`claude/timeline-redesign-notes`, unmerged: rail decorations, the same layout in three coats
+of paint, photo "plates" with a sticky year). The maintainer's steer after that was that the
+drag mechanic is fine and the board should simply be more interesting, in two ways they
+picked: **cards that feel physical** and **a board that shows the passage of time**, plus
+their own addition, **watermarks at the two ends of time**. It ships as a dev-only preview,
+`/board-lab` (`src/pages/BoardLab.tsx`, no `vercel.json` rewrite, no in-app link), on the
+real engine and the real drag hook, with `?seed=` fixing the deck and `?physics=0`,
+`?time=0`, `?ends=0` switching each behaviour off for comparison.
+
+- **Built beside, not inside.** `src/components/board/PhysicalBoard.tsx` is a second list
+  around the same rows (`TimelineEvent`, `TombstoneRow`) with the same drag contract.
+  `Game.tsx` (at the `complexity` ceiling) is untouched; `Timeline.tsx` got _shorter_, because
+  the placement choreography (`useBoardWaves`) and the two viewport moves
+  (`useCenterFirstCard`, `useRevealFollow` in `useBoardScroll.ts`) moved out verbatim into
+  `components/board/` so both boards share one copy. `animationTuning.ts` is still the only
+  tuning surface.
+- **Physics** = the rows part on a spring and a recessed slot opens where the card will land
+  (`BoardSlot`, one per gap, closed at zero height) instead of the see-through ghost card;
+  cards get a resting shadow and a lift on press (`.board-physics` in `index.css`). The
+  tombstone-hosts-the-ghost rule is unchanged: when the gap holds a tombstone no slot opens.
+- **Time** = `markTimeGaps` (`src/utils/boardTime.ts`) flags a gap as a big jump when it is at
+  least ten times the board's _median_ gap (log space) and at least 50 years; flagged gaps
+  draw taller with one caption ("7,520 years"). Relative, not absolute, so a modern board and
+  a prehistoric one both get a few. The background tone follows the era of the row nearest
+  the middle of the screen (`useEraWash`, an IntersectionObserver over the year labels,
+  eight fixed `color-mix()` rules `era-0`..`era-7`, no `calc()` feeding a colour).
+- **Ends** = the two 50vh runways carry a "Before" (strata hairlines) and an "After" (dots
+  and a dashed next-card outline) watermark in type and CSS only; a pull past the end
+  stretches it via `--end-pull`, set by a passive scroll listener (`useBoardEdges`), and the
+  fixed Earlier/Later captions fade while an end is on screen (`data-edge` on the root).
+- **Invariants kept**: slots, time gaps and runways carry none of the three measured
+  attributes, so they only widen the drop band of the gap they sit in; tombstones still never
+  subdivide a gap. A finished lab game is recorded like any custom game.
+- **How this differs from the rejected rounds**: round 1 put a ruler mark between every row;
+  here most rows stay evenly spaced and only a real jump gets a caption. Round 2 painted a
+  fixed gradient down the page; here the tone changes only as you cross an era, as a
+  cross-fade. Whether that distinction survives on a phone is the open question the preview
+  exists to answer; do not iterate its look without a steer.
+
 ## Onboarding hints (2026-09)
 
 Players said the app did not explain itself: the rules were three lines that omitted the

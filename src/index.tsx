@@ -15,6 +15,7 @@ import CardReports from './pages/CardReports';
 import AnimJig from './pages/AnimJig';
 import ReminderPreview from './pages/ReminderPreview';
 import SharePreview from './pages/SharePreview';
+import BoardLab from './pages/BoardLab';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -37,6 +38,7 @@ root.render(
         <Route path="/anim-jig" element={<AnimJig />} />
         <Route path="/reminder-preview" element={<ReminderPreview />} />
         <Route path="/share-preview" element={<SharePreview />} />
+        <Route path="/board-lab" element={<BoardLab />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
