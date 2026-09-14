@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.21.0](https://github.com/Edward-Muir/when/compare/v1.20.0...v1.21.0) (2026-09-14)
+
+
+### Features
+
+* draw the real number of cards in the hand counter ([#57](https://github.com/Edward-Muir/when/issues/57)) ([315bfc7](https://github.com/Edward-Muir/when/commit/315bfc702b95af55d348f67ee73ca69e6ffd7cbb))
+
 ## [1.20.0](https://github.com/Edward-Muir/when/compare/v1.19.0...v1.20.0) (2026-09-09)
 
 

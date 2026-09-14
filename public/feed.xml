@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2026 20:53:10 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 14 Sep 2026 20:13:52 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.21.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.21.0</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>draw the real number of cards in the hand counter (<a href="https://github.com/Edward-Muir/when/issues/57">#57</a>) (<a href="https://github.com/Edward-Muir/when/commit/315bfc702b95af55d348f67ee73ca69e6ffd7cbb">315bfc7</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.20.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.15.0</guid>
       <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add sporting events (<a href="https://github.com/Edward-Muir/when/commit/fd15168088e0d6da0af884d0d20a7181d18db151">fd15168</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.14.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.14.0</guid>
-      <pubDate>Thu, 20 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add sporting events (<a href="https://github.com/Edward-Muir/when/commit/81fdd91935343ac62dabb41528cdd50514e194d0">81fdd91</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>
