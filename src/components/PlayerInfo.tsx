@@ -5,6 +5,56 @@ import { Users, Ruler, Zap } from 'lucide-react';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { GameHintKey } from '../utils/playerStorage';
 
+// Widest hand the picture distinguishes. A bigger hand reuses the five-card fan; the
+// number overlaid on top still shows the true count.
+const MAX_FANNED_CARDS = 5;
+
+// Step per card away from the centre of the fan. The 24x24 viewBox is the constraint: at
+// five cards the outer card sits two steps out and two steps of rotation over, so its
+// half-extent is 2 * 1.5 + 6 * cos(16deg) + 8 * sin(16deg) + 0.75 (half the stroke) =
+// 11.7, inside the 12 available. Widening either step means redoing that sum, or the
+// outer card is silently clipped by the viewBox edge.
+const FAN_X_STEP = 1.5;
+const FAN_ANGLE_STEP = 8;
+
+/**
+ * The fanned card rects, one per card in hand, so the picture agrees with the number it
+ * sits behind. Renders into a caller-supplied 24x24 <svg>.
+ */
+const HandCardFan: React.FC<{ count: number }> = ({ count }) => {
+  // Floor of 1: the hand reads 0 for the frame between the losing placement and game
+  // over, and the count drawn over the fan is light-on-card — with no card behind it
+  // there is nothing to read it against.
+  const cards = Math.min(Math.max(count, 1), MAX_FANNED_CARDS);
+
+  return (
+    <>
+      {Array.from({ length: cards }, (_, i) => {
+        const offset = i - (cards - 1) / 2;
+        const x = 6 + FAN_X_STEP * offset;
+
+        return (
+          <rect
+            key={i}
+            data-testid="hand-card"
+            x={x}
+            y="4"
+            width="12"
+            height="16"
+            rx="1.5"
+            transform={`rotate(${FAN_ANGLE_STEP * offset} ${x + 6} 12)`}
+            className="fill-current"
+            // Back to front, 0.4 -> 0.8. An attribute rather than Tailwind's `opacity-NN`
+            // because the value is computed, and Tailwind cannot generate a class from an
+            // interpolated string — it would emit no rule at all.
+            opacity={cards === 1 ? 0.8 : 0.4 + (0.4 * i) / (cards - 1)}
+          />
+        );
+      })}
+    </>
+  );
+};
+
 // Custom hand of cards icon with count overlay
 const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: boolean }> = ({
   count,
@@ -19,28 +69,7 @@ const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: b
       strokeWidth="1.5"
       className="w-5 h-5"
     >
-      {/* Back card (rotated left) */}
-      <rect
-        x="3"
-        y="4"
-        width="12"
-        height="16"
-        rx="1.5"
-        transform="rotate(-12 9 12)"
-        className="fill-current opacity-40"
-      />
-      {/* Middle card */}
-      <rect x="6" y="4" width="12" height="16" rx="1.5" className="fill-current opacity-60" />
-      {/* Front card (rotated right) */}
-      <rect
-        x="9"
-        y="4"
-        width="12"
-        height="16"
-        rx="1.5"
-        transform="rotate(12 15 12)"
-        className="fill-current opacity-80"
-      />
+      <HandCardFan count={count} />
     </svg>
     {/* Count overlay - contrasting color */}
     <span
@@ -109,28 +138,7 @@ const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
       strokeWidth="1.5"
       className="w-10 h-10 text-accent"
     >
-      {/* Back card (rotated left) */}
-      <rect
-        x="3"
-        y="4"
-        width="12"
-        height="16"
-        rx="1.5"
-        transform="rotate(-12 9 12)"
-        className="fill-current opacity-40"
-      />
-      {/* Middle card */}
-      <rect x="6" y="4" width="12" height="16" rx="1.5" className="fill-current opacity-60" />
-      {/* Front card (rotated right) */}
-      <rect
-        x="9"
-        y="4"
-        width="12"
-        height="16"
-        rx="1.5"
-        transform="rotate(12 15 12)"
-        className="fill-current opacity-80"
-      />
+      <HandCardFan count={count} />
     </svg>
     <span className="absolute inset-0 flex items-center justify-center text-sm font-bold text-white drop-shadow-md">
       {count}
