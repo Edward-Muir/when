@@ -22,10 +22,9 @@ const FAN_ANGLE_STEP = 8;
  * sits behind. Renders into a caller-supplied 24x24 <svg>.
  */
 const HandCardFan: React.FC<{ count: number }> = ({ count }) => {
-  // Floor of 1: the hand reads 0 for the frame between the losing placement and game
-  // over, and the count drawn over the fan is light-on-card — with no card behind it
-  // there is nothing to read it against.
-  const cards = Math.min(Math.max(count, 1), MAX_FANNED_CARDS);
+  // An empty hand draws nothing — a card here would claim the player still holds one.
+  // Both callers switch the number to a colour that reads without a card behind it.
+  const cards = Math.min(Math.max(count, 0), MAX_FANNED_CARDS);
 
   return (
     <>
@@ -71,10 +70,11 @@ const HandCardsIcon: React.FC<{ count: number; className?: string; isCurrent?: b
     >
       <HandCardFan count={count} />
     </svg>
-    {/* Count overlay - contrasting color */}
+    {/* Count overlay - contrasting color. Both overrides are picked to read against a
+        card, so with an empty fan the number inherits the row's own colour instead. */}
     <span
       className={`absolute inset-0 flex items-center justify-center text-xs font-bold ${
-        isCurrent ? 'text-accent-secondary' : 'text-bg'
+        count === 0 ? '' : isCurrent ? 'text-accent-secondary' : 'text-bg'
       }`}
     >
       {count}
@@ -140,7 +140,13 @@ const HandCardsIconLarge: React.FC<{ count: number }> = ({ count }) => (
     >
       <HandCardFan count={count} />
     </svg>
-    <span className="absolute inset-0 flex items-center justify-center text-sm font-bold text-white drop-shadow-md">
+    <span
+      className={`absolute inset-0 flex items-center justify-center text-sm font-bold ${
+        // No card behind it at zero, so match the counters alongside; the shadow only
+        // exists to lift the number off a card.
+        count === 0 ? 'text-text-muted' : 'text-white drop-shadow-md'
+      }`}
+    >
       {count}
     </span>
   </div>

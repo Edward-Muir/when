@@ -42,8 +42,10 @@ const renderWithHand = (size: number) =>
     <GameInfoCompact
       currentPlayer={playerWithHand(size)}
       isMultiplayer={false}
-      // Distinct from any hand size under test: both render as bare text in this widget.
+      // Distinct from any hand size under test, and from each other: the hand count, the
+      // timeline length and the streak all render as bare text in this widget.
       timelineLength={99}
+      currentStreak={42}
       gameMode="daily"
     />
   );
@@ -63,9 +65,24 @@ describe('GameInfoCompact hand counter', () => {
     expect(screen.getByText('7')).toBeInTheDocument();
   });
 
-  it('keeps a card behind the number when the hand empties', () => {
+  it('draws no cards when the hand empties', () => {
     renderWithHand(0);
-    expect(fannedCards()).toHaveLength(1);
+    // queryAllByTestId, not the getAllByTestId helper: that one throws on zero matches.
+    expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
+  });
+
+  it('mutes the number when there is no card behind it', () => {
+    renderWithHand(0);
+    const zero = screen.getByText('0');
+    expect(zero).toHaveClass('text-text-muted');
+    expect(zero).not.toHaveClass('text-white');
+  });
+
+  it('keeps the number light while it sits on a card', () => {
+    renderWithHand(3);
+    const three = screen.getByText('3');
+    expect(three).toHaveClass('text-white');
+    expect(three).not.toHaveClass('text-text-muted');
   });
 
   it('keeps the whole fan inside the 24x24 viewBox', () => {
