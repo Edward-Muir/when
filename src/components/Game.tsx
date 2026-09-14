@@ -412,10 +412,10 @@ const Game: React.FC<GameProps> = ({
                     currentPlayer={currentPlayer}
                     isMultiplayer={state.players.length > 1}
                     timelineLength={state.timeline.length}
-                    gameMode={state.gameMode}
                     onStatsClick={() => setShowStatsPopup(true)}
                     currentStreak={state.currentStreak}
                     nudge={hints.active}
+                    placementInFlight={state.isAnimating ? state.lastPlacementResult : null}
                   />
                 </div>
 

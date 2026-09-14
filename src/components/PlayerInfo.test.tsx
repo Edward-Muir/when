@@ -1,7 +1,9 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { GameInfoCompact } from './PlayerInfo';
-import { HistoricalEvent, Player } from '../types';
+import { HistoricalEvent, PlacementResult, Player } from '../types';
+
+type InFlight = { placementInFlight: PlacementResult | null };
 
 // jsdom has no matchMedia; framer's useReducedMotion reads it.
 beforeEach(() => {
@@ -37,7 +39,14 @@ const playerWithHand = (size: number): Player => ({
   placementHistory: [],
 });
 
-const renderWithHand = (size: number) =>
+const placement = (success: boolean): PlacementResult => ({
+  success,
+  event: card(0),
+  correctPosition: 0,
+  attemptedPosition: 1,
+});
+
+const renderWithHand = (size: number, animation: Partial<InFlight> = {}) =>
   render(
     <GameInfoCompact
       currentPlayer={playerWithHand(size)}
@@ -46,7 +55,7 @@ const renderWithHand = (size: number) =>
       // timeline length and the streak all render as bare text in this widget.
       timelineLength={99}
       currentStreak={42}
-      gameMode="daily"
+      {...animation}
     />
   );
 
@@ -104,5 +113,31 @@ describe('GameInfoCompact hand counter', () => {
       expect(12 - halfHeight).toBeGreaterThanOrEqual(0);
       expect(12 + halfHeight).toBeLessThanOrEqual(24);
     });
+  });
+});
+
+describe('GameInfoCompact leads a miss', () => {
+  it('drops a card as soon as the miss animation starts', () => {
+    renderWithHand(5, { placementInFlight: placement(false) });
+    expect(fannedCards()).toHaveLength(4);
+    expect(screen.getByText('4')).toBeInTheDocument();
+  });
+
+  it('does not lead a correct placement', () => {
+    renderWithHand(5, { placementInFlight: placement(true) });
+    expect(fannedCards()).toHaveLength(5);
+    expect(screen.getByText('5')).toBeInTheDocument();
+  });
+
+  it('stops leading once the animation settles and the hand has really shrunk', () => {
+    renderWithHand(4, { placementInFlight: null });
+    expect(fannedCards()).toHaveLength(4);
+    expect(screen.getByText('4')).toBeInTheDocument();
+  });
+
+  it('shows the empty-hand state while the last card is still travelling', () => {
+    renderWithHand(1, { placementInFlight: placement(false) });
+    expect(screen.queryAllByTestId('hand-card')).toHaveLength(0);
+    expect(screen.getByText('0')).toHaveClass('text-text-muted');
   });
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Player, GameMode } from '../types';
+import { Player, PlacementResult } from '../types';
 import { Users, Ruler, Zap } from 'lucide-react';
 import { getStreakFeedback } from '../utils/streakFeedback';
 import { GameHintKey } from '../utils/playerStorage';
@@ -177,23 +177,33 @@ interface GameInfoCompactProps {
   currentPlayer: Player;
   isMultiplayer: boolean;
   timelineLength: number;
-  gameMode: GameMode | null;
   onStatsClick?: () => void;
   currentStreak?: number;
   /** The onboarding hint on screen: `stats` glows this counter. */
   nudge?: GameHintKey | null;
+  /** The placement currently animating, or null once it has settled. Lets a miss lead. */
+  placementInFlight?: PlacementResult | null;
 }
 
 export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
   currentPlayer,
   isMultiplayer,
   timelineLength,
-  gameMode: _gameMode,
   onStatsClick,
   currentStreak = 0,
   nudge = null,
+  placementInFlight = null,
 }) => {
   const showTimelineStats = !isMultiplayer;
+
+  // A miss is decided at the red flash, but the hand does not actually shrink until the
+  // tombstone has finished travelling to its true slot, 1.3-2.1s later (the stage-3
+  // timeout in useWhenGame's placeCard). Lead the state so the card leaves this counter
+  // with the flash, like the streak bolt beside it already does. The caller nulls this
+  // prop in the same setState that commits the shrunken hand, so the lead is withdrawn on
+  // the exact tick it stops being one — the number never double-counts or flickers.
+  const missInFlight = placementInFlight !== null && !placementInFlight.success;
+  const cardsLeft = Math.max(0, currentPlayer.hand.length - (missInFlight ? 1 : 0));
   // `bg-border` is not decoration: the button is transparent, and `animate-hint-glow` is
   // transform and filter only, so without a surface to swell there is nothing to see.
   const nudgeClass = nudge === 'stats' ? 'animate-hint-glow bg-border' : '';
@@ -206,7 +216,7 @@ export const GameInfoCompact: React.FC<GameInfoCompactProps> = ({
       )}
 
       {/* Hand count with enlarged icon */}
-      <HandCardsIconLarge count={currentPlayer.hand.length} />
+      <HandCardsIconLarge count={cardsLeft} />
       <span className="text-sm text-text font-body">cards left</span>
 
       {/* Timeline stats + streak for single-player */}
