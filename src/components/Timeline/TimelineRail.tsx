@@ -23,7 +23,8 @@ import { motion, useReducedMotion } from 'framer-motion';
  * `extending` says which way. That segment springs out of the existing rail — scaleY from the
  * anchored end, never a fade — which is the one moment where making the timeline longer is
  * something you feel. On a correct drop the ghost row becomes a real row, so the segment is
- * already at full length: no second animation, no snap.
+ * already at full length: no second animation, no snap. Each end grows once per drag; crossing
+ * off an end and back does not replay it (`grow`).
  *
  * The glowing node at the growing end is NOT drawn here. It is `TimelineMarker`, one persistent
  * element that travels the whole board for the length of a drag and happens to be parked here
@@ -38,6 +39,11 @@ interface TimelineRailProps {
   last?: boolean;
   /** Set on a drag ghost sitting past an end: which way the rail is reaching. */
   extending?: RailExtension | null;
+  /**
+   * Whether this extension still owes its growth animation, or should simply be at full length
+   * already. False once this end has grown earlier in the same drag — see `useRailGrowth`.
+   */
+  grow?: boolean;
   /**
    * Stretch the extension in time without changing its shape — 1 in the game, and larger only
    * for the screenshot rig, where a 320ms spring is quicker than a screenshot round-trip.
@@ -66,6 +72,7 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
   first = false,
   last = false,
   extending = null,
+  grow = true,
   timeScale = 1,
 }) => {
   const shouldReduceMotion = useReducedMotion();
@@ -95,7 +102,12 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
         data-rail-extending={extending}
         className={`tl-rail h-full w-full ${ends}`}
         style={{ transformOrigin: origin } as CSSProperties}
-        initial={shouldReduceMotion ? false : { scaleY: 0 }}
+        // `grow` is read here and NOWHERE else on purpose. It flips to false on the render
+        // straight after this one, while the spring is still in flight, and `initial` is only
+        // consulted at mount — so flipping it later is a no-op. Gating the `transition` on the
+        // same flag would swap the spring for `duration: 0` mid-flight and snap the rail to
+        // full length halfway through the growth this is meant to preserve.
+        initial={shouldReduceMotion || !grow ? false : { scaleY: 0 }}
         animate={{ scaleY: 1 }}
         exit={shouldReduceMotion ? undefined : { scaleY: 0 }}
         transition={shouldReduceMotion ? { duration: 0 } : growSpring(timeScale)}

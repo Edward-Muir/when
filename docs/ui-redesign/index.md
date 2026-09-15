@@ -132,7 +132,27 @@ target is measured off the ghost row (`data-ghost-row`, `useInsertionMarker`) ra
 from the gap index — the gap index is not a display-row index (tombstones interleave), a gap that
 already holds a tombstone hosts the ghost inside that row instead of inserting one, and the two
 ends extend the rail instead of sitting between neighbours. Measuring covers all of it with no
-special cases, and scroll is frozen during a drag so the offsets are stable.
+special cases.
+
+**The marker is portalled to `body`, above dnd-kit's drag overlay.** Drawn inside the board it
+was invisible almost exactly where it mattered: the dragged card is centred on the pointer, and
+the pointer sits on the insertion boundary, which is where the marker is — so the overlay
+(`z-index: 999`) covered it for most of a drag, and the scroller's `.tl-edge-mask` faded it out
+near the board's top and bottom as well. It only ever read at the _ends_, where the rail's growth
+extends a whole row beyond the card. Rendering it to `body` at `z-index: 1001` in viewport
+coordinates fixes both without changing how it looks. Two consequences worth knowing: viewport
+coordinates go stale if anything moves under them, so the hook re-measures on scroll and on a
+ResizeObserver (a real drag freezes scrolling, but a ghost can be mounted before the board has
+settled — the harness holds one from first paint); and the node is keyed per drag so it is
+re-created between drags rather than flying in from wherever the last one left it.
+
+**Each end grows once per drag** (`useRailGrowth`). The ghost row is rendered in flow, so moving
+off an end unmounts it and moving back mounts a fresh one — and framer applies `initial` on every
+mount, which replayed the growth every time the pointer crossed the boundary. Per _end_ rather
+than per drag: the other end's first visit is an extension the player has not seen yet. The flag
+is read by `initial` and nothing else, on purpose — it flips to false on the render after the
+first one, while the spring is still in flight, and gating the `transition` on it too would swap
+the spring for `duration: 0` mid-flight and snap the rail to full length halfway through.
 
 The moment that carries the idea is the **extension preview**: while a drag hovers past either
 end, the ghost row gets a rail segment that springs out of the existing line — `scaleY` from

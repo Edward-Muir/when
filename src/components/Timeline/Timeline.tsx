@@ -7,6 +7,7 @@ import TombstoneRow from './TombstoneRow';
 import TimelineRail, { RailExtension } from './TimelineRail';
 import TimelineMarker from './TimelineMarker';
 import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
+import { useRailGrowth } from './useRailGrowth';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { paperTone } from '../../utils/paperTone';
@@ -59,17 +60,24 @@ const BoardRow: React.FC<{
   first: boolean;
   last: boolean;
   extending?: RailExtension | null;
+  grow?: boolean;
   timeScale: number;
   /** This row is where the ghost card currently sits — the insertion marker homes in on it. */
   ghost?: boolean;
   children: React.ReactNode;
-}> = ({ first, last, extending = null, timeScale, ghost = false, children }) => (
+}> = ({ first, last, extending = null, grow = true, timeScale, ghost = false, children }) => (
   <div
     {...{ [PAPER_ROW_ATTR]: '' }}
     {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})}
     className="relative w-full"
   >
-    <TimelineRail first={first} last={last} extending={extending} timeScale={timeScale} />
+    <TimelineRail
+      first={first}
+      last={last}
+      extending={extending}
+      grow={grow}
+      timeScale={timeScale}
+    />
     {children}
   </div>
 );
@@ -326,7 +334,8 @@ const Timeline: React.FC<TimelineProps> = ({
     return tones;
   }, [rows, railExtension]);
   const paperField = usePaperField(scrollRef, contentRef, rowTones);
-  const marker = useInsertionMarker(contentRef, ghostGap);
+  const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
+  const railGrow = useRailGrowth(isDragging, railExtension);
 
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
@@ -399,6 +408,7 @@ const Timeline: React.FC<TimelineProps> = ({
             first={earlierExt !== null}
             last={false}
             extending={earlierExt}
+            grow={railGrow}
             timeScale={railTimeScale}
             ghost
           >
@@ -477,6 +487,7 @@ const Timeline: React.FC<TimelineProps> = ({
                 first={events.length === 0}
                 last={laterExt !== null}
                 extending={laterExt}
+                grow={railGrow}
                 timeScale={railTimeScale}
                 ghost
               >
@@ -484,10 +495,6 @@ const Timeline: React.FC<TimelineProps> = ({
               </BoardRow>
             )}
           </LayoutGroup>
-
-          {/* Outside the LayoutGroup on purpose: it drives its own transform, and layout
-              projection would fight it. */}
-          <TimelineMarker y={marker.y} visible={marker.visible} timeScale={railTimeScale} />
 
           {/* Bottom spacer: room to drop "later"; bounce runway below the last card */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
@@ -497,6 +504,15 @@ const Timeline: React.FC<TimelineProps> = ({
       <div className="tl-edge-label absolute bottom-2 left-0 right-0 z-30 pointer-events-none text-center text-text-muted text-sm font-medium font-body">
         Later ↓
       </div>
+
+      {/* Portals to `body` above the drag overlay — see TimelineMarker. Rendered here rather
+          than inside the scroller so it is nowhere near `.tl-edge-mask`. */}
+      <TimelineMarker
+        x={marker.x}
+        y={marker.y}
+        visible={marker.visible}
+        timeScale={railTimeScale}
+      />
     </div>
   );
 };

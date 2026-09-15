@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, useReducedMotion } from 'framer-motion';
 
 /**
@@ -6,10 +7,18 @@ import { motion, useReducedMotion } from 'framer-motion';
  * settles into the gap the card will land in.
  *
  * It is deliberately ONE persistent element rather than something drawn per row. That is the
- * entire trick: a node born and destroyed with each ghost row can only ever pop between slots,
- * whereas a single node whose `y` is animated glides between them. It also means the same node
- * is what you see at the ends of the board, where the rail grows out to meet it — the rail used
- * to draw its own tip, and now there is one glowing thing and one code path.
+ * trick that lets it glide: a node born and destroyed with each ghost row can only ever pop
+ * between slots. The same node is what you see at the ends of the board, where the rail grows
+ * out to meet it — the rail draws no tip of its own, so there is one glowing thing.
+ *
+ * ## Why it is portalled
+ *
+ * Drawn inside the board it was almost never visible where it mattered. The card being dragged
+ * is centred on the pointer, and the pointer sits on the insertion boundary — which is exactly
+ * where the marker is — so dnd-kit's drag overlay (`z-index: 999`, portalled to `body`) covered
+ * it for most of a drag. The board's own top and bottom bands fade it out too, because the
+ * scroller carries `.tl-edge-mask`. Both go away by rendering it to `body` in viewport
+ * coordinates, above the overlay. Nothing about how it looks changes.
  */
 
 /**
@@ -17,12 +26,15 @@ import { motion, useReducedMotion } from 'framer-motion';
  * little and overshoot into each gap. Stiffening this turns the glide back into the flicking it
  * exists to replace.
  */
-const TRAVEL_SPRING = { type: 'spring' as const, stiffness: 260, damping: 22, mass: 1 };
-/** Height of the node in px — `h-2` below. Kept here so the centring maths stays honest. */
+const TRAVEL_SPRING = { stiffness: 260, damping: 22, mass: 1 };
+/** Size of the node in px — `h-2 w-1.5` below. Kept here so the centring maths stays honest. */
 const MARKER_H = 8;
+const MARKER_W = 6;
+/** Clears dnd-kit's drag overlay, which defaults to 999. */
+const ABOVE_DRAG_OVERLAY = 1001;
 
 interface TimelineMarkerProps {
-  /** Centre of the target gap, in content-wrapper coordinates. */
+  x: number;
   y: number;
   visible: boolean;
   /** Stretches the travel in time for the screenshot rig, exactly as TimelineRail's does. */
@@ -38,23 +50,34 @@ function travelSpring(timeScale: number) {
   };
 }
 
-const TimelineMarker: React.FC<TimelineMarkerProps> = ({ y, visible, timeScale = 1 }) => {
+const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, visible, timeScale = 1 }) => {
   const shouldReduceMotion = useReducedMotion();
-  return (
+
+  // One key per drag, so the node persists and glides WITHIN a drag but is re-created between
+  // them. Without this it would fly across the board from wherever the last drag left it.
+  const session = useRef(0);
+  const wasVisible = useRef(false);
+  if (visible && !wasVisible.current) session.current += 1;
+  wasVisible.current = visible;
+
+  if (typeof document === 'undefined') return null;
+
+  return createPortal(
     <motion.div
+      key={session.current}
       aria-hidden
       data-insertion-marker={visible ? 'on' : 'off'}
-      // `left-24` is the rail's own offset; the -1px nudge centres a 6px node on the 4px rail.
-      // framer owns the whole transform, so the offset is a motion value rather than a class.
-      className="tl-rail-tip pointer-events-none absolute left-24 top-0 z-20 h-2 w-1.5 rounded-full"
-      style={{ x: -1 }}
+      className="tl-rail-tip pointer-events-none fixed left-0 top-0 h-2 w-1.5 rounded-full"
+      style={{ zIndex: ABOVE_DRAG_OVERLAY }}
       initial={false}
-      animate={{ y: y - MARKER_H / 2, opacity: visible ? 1 : 0 }}
+      animate={{ x: x - MARKER_W / 2, y: y - MARKER_H / 2, opacity: visible ? 1 : 0 }}
       transition={{
+        x: { duration: 0 },
         y: shouldReduceMotion ? { duration: 0 } : travelSpring(timeScale),
         opacity: { duration: shouldReduceMotion ? 0 : 0.18 * timeScale },
       }}
-    />
+    />,
+    document.body
   );
 };
 
