@@ -417,10 +417,13 @@ const Timeline: React.FC<TimelineProps> = ({
   };
 
   return (
-    <div className="h-full relative">
+    // The paper backdrop lives here, behind the scroller and outside its edge mask, so the
+    // elastic overscroll past either end and the masked top/bottom bands show paper rather
+    // than the untinted page colour.
+    <div className="h-full relative" style={paperField?.edge}>
       {/* "Earlier" wayfinding. No gradient behind it any more: the paper is tinted, so a fade
-          to --color-bg would no longer match what is under it, and the scroller masks its own
-          top and bottom edges instead (`.tl-edge-mask`). */}
+          to --color-bg would no longer match what is under it. The scroller masks its own top
+          and bottom edges instead (`.tl-edge-mask`), dissolving into the backdrop above. */}
       <div className="tl-edge-label absolute top-2 left-0 right-0 z-30 pointer-events-none text-center text-text-muted text-sm font-medium font-body">
         ↑ Earlier
       </div>

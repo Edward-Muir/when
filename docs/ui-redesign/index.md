@@ -132,6 +132,14 @@ arrived in ~150ms and nothing registered as having happened.
 
 Traps this round cost time on:
 
+- **The field alone is not enough: the board needs a backdrop too.** The field covers the
+  content, but two things sit outside it — the elastic overscroll region a rubber-band drag
+  opens past either end, and the top/bottom bands where `.tl-edge-mask` fades the scroller out.
+  Both exposed the untinted page colour, which reads as a hard grey edge (it is what a bounce
+  showed on an iPhone). `usePaperField` now also returns an `edge` style: a plain first-tone →
+  last-tone gradient on the unmasked container behind the scroller. That is exact where it
+  matters — a bounce can only happen at scrollTop 0 or the maximum, where the board is showing
+  its first or last runway, which are precisely the two ends of that gradient.
 - **The paper has to be ONE element, not a tint per row.** A per-row background stops at the
   row's content box, which above 1024px is inset by `.board-center`'s padding — a tinted column
   on an untinted page. The field is an absolutely positioned child of the _scroller_, so

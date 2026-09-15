@@ -14,13 +14,28 @@ import { paperToneColor } from '../../utils/paperTone';
  *
  * Absolutely positioned children of a scroll container scroll with the content, so the field
  * tracks the board without any scroll listener.
+ *
+ * It comes with a second, simpler style for the board's own backdrop (`edge`), because the
+ * field only covers the content and two things sit outside it: the elastic overscroll region a
+ * rubber-band drag opens up past either end, and the top and bottom bands where
+ * `.tl-edge-mask` fades the scroller out. Both used to expose the untinted page colour behind
+ * the paper, which reads as a hard grey edge.
+ *
+ * The backdrop is a plain first-tone → last-tone gradient on the unmasked container behind the
+ * scroller, and that is exact where it matters: a bounce can only happen at scrollTop 0 or at
+ * the maximum, where the board is showing its first or last runway, and those are precisely
+ * the two ends of this gradient. In the masked bands mid-scroll it is off by however far the
+ * visible rows are from the ends — a couple of RGB units in a palette this quiet.
  */
 
 /** Marks the rows whose offsets become gradient stops. */
 export const PAPER_ROW_ATTR = 'data-paper-row';
 
 export interface PaperField {
+  /** The field itself: an absolutely positioned child of the scroller. */
   style: CSSProperties;
+  /** The backdrop behind the scroller, for the overscroll region and the masked bands. */
+  edge: CSSProperties;
 }
 
 /** The gradient is rebuilt on every measure; only commit it when it actually differs. */
@@ -28,7 +43,8 @@ function same(a: PaperField | null, b: PaperField): boolean {
   return (
     a !== null &&
     a.style.height === b.style.height &&
-    a.style.backgroundImage === b.style.backgroundImage
+    a.style.backgroundImage === b.style.backgroundImage &&
+    a.edge.backgroundImage === b.edge.backgroundImage
   );
 }
 
@@ -62,6 +78,9 @@ export function usePaperField(
     stops.push(`${paperToneColor(last)} 100%`);
     const next: PaperField = {
       style: { height, backgroundImage: `linear-gradient(to bottom, ${stops.join(', ')})` },
+      edge: {
+        backgroundImage: `linear-gradient(to bottom, ${paperToneColor(first)}, ${paperToneColor(last)})`,
+      },
     };
     // Without this the ResizeObserver's own commit re-renders, re-measures and commits again.
     setField((prev) => (same(prev, next) ? prev : next));
