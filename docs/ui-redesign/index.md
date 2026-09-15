@@ -140,7 +140,12 @@ the pointer sits on the insertion boundary, which is where the marker is — so 
 (`z-index: 999`) covered it for most of a drag, and the scroller's `.tl-edge-mask` faded it out
 near the board's top and bottom as well. It only ever read at the _ends_, where the rail's growth
 extends a whole row beyond the card. Rendering it to `body` at `z-index: 1001` in viewport
-coordinates fixes both without changing how it looks. Two consequences worth knowing: viewport
+coordinates fixes both without changing how it looks — **inside a fixed clip box the size of the
+board**, because it must clear the overlay without ever reaching the hand bar or the top bar, and
+z-index alone cannot express that: `#root` is its own stacking context at `z-index: 1`, so the
+overlay on `body` is above every piece of app chrome and anything clearing the overlay clears the
+chrome too. At the board's edges the marker and its glow are simply cut off, which against the
+opaque hand bar is indistinguishable from passing behind it. Two consequences worth knowing: viewport
 coordinates go stale if anything moves under them, so the hook re-measures on scroll and on a
 ResizeObserver (a real drag freezes scrolling, but a ghost can be mounted before the board has
 settled — the harness holds one from first paint); and the node is keyed per drag so it is

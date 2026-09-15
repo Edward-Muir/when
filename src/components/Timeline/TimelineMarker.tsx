@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, useReducedMotion } from 'framer-motion';
+import type { Rect } from './useInsertionMarker';
 
 /**
  * The insertion marker: one lit node that runs along the rail for the whole of a drag and
@@ -19,6 +20,15 @@ import { motion, useReducedMotion } from 'framer-motion';
  * it for most of a drag. The board's own top and bottom bands fade it out too, because the
  * scroller carries `.tl-edge-mask`. Both go away by rendering it to `body` in viewport
  * coordinates, above the overlay. Nothing about how it looks changes.
+ *
+ * ## Why it is also clipped
+ *
+ * It has to be above the drag overlay but never over the hand bar or the top bar, and z-index
+ * alone cannot say that: `#root` is its own stacking context at `z-index: 1`, so the overlay on
+ * `body` is above every piece of app chrome, and anything that clears the overlay clears the
+ * chrome too. So the marker lives inside a fixed clip box the size of the board. Within it the
+ * marker is free; at the board's edges it — and its glow — are simply cut off, which against the
+ * opaque hand bar is indistinguishable from passing behind it.
  */
 
 /**
@@ -36,6 +46,8 @@ const ABOVE_DRAG_OVERLAY = 1001;
 interface TimelineMarkerProps {
   x: number;
   y: number;
+  /** The board's bounds; the marker is clipped to these. */
+  clip: Rect;
   visible: boolean;
   /** Stretches the travel in time for the screenshot rig, exactly as TimelineRail's does. */
   timeScale?: number;
@@ -50,7 +62,7 @@ function travelSpring(timeScale: number) {
   };
 }
 
-const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, visible, timeScale = 1 }) => {
+const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, clip, visible, timeScale = 1 }) => {
   const shouldReduceMotion = useReducedMotion();
 
   // One key per drag, so the node persists and glides WITHIN a drag but is re-created between
@@ -63,20 +75,35 @@ const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, visible, timeScal
   if (typeof document === 'undefined') return null;
 
   return createPortal(
-    <motion.div
-      key={session.current}
+    <div
       aria-hidden
-      data-insertion-marker={visible ? 'on' : 'off'}
-      className="tl-rail-tip pointer-events-none fixed left-0 top-0 h-2 w-1.5 rounded-full"
-      style={{ zIndex: ABOVE_DRAG_OVERLAY }}
-      initial={false}
-      animate={{ x: x - MARKER_W / 2, y: y - MARKER_H / 2, opacity: visible ? 1 : 0 }}
-      transition={{
-        x: { duration: 0 },
-        y: shouldReduceMotion ? { duration: 0 } : travelSpring(timeScale),
-        opacity: { duration: shouldReduceMotion ? 0 : 0.18 * timeScale },
+      className="pointer-events-none fixed overflow-hidden"
+      style={{
+        left: clip.left,
+        top: clip.top,
+        width: clip.width,
+        height: clip.height,
+        zIndex: ABOVE_DRAG_OVERLAY,
       }}
-    />,
+    >
+      <motion.div
+        key={session.current}
+        data-insertion-marker={visible ? 'on' : 'off'}
+        className="tl-rail-tip pointer-events-none absolute left-0 top-0 h-2 w-1.5 rounded-full"
+        initial={false}
+        // Positions are measured in viewport space; the clip box's origin brings them local.
+        animate={{
+          x: x - clip.left - MARKER_W / 2,
+          y: y - clip.top - MARKER_H / 2,
+          opacity: visible ? 1 : 0,
+        }}
+        transition={{
+          x: { duration: 0 },
+          y: shouldReduceMotion ? { duration: 0 } : travelSpring(timeScale),
+          opacity: { duration: shouldReduceMotion ? 0 : 0.18 * timeScale },
+        }}
+      />
+    </div>,
     document.body
   );
 };

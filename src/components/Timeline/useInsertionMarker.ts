@@ -19,20 +19,39 @@ import { RefObject, useLayoutEffect, useState } from 'react';
 /** Marks the row the ghost card currently occupies. */
 export const GHOST_ROW_ATTR = 'data-ghost-row';
 
+export interface Rect {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
 export interface InsertionMarker {
   /** Centre of the rail, horizontally. */
   x: number;
   /** Centre of the ghost row, vertically. */
   y: number;
+  /**
+   * The board's own bounds. The marker is drawn inside a clip box of exactly this size so it
+   * can sit above the drag overlay without ever reaching the hand bar or the top bar — see
+   * TimelineMarker for why z-index alone cannot express that.
+   */
+  clip: Rect;
   visible: boolean;
 }
+
+const NO_CLIP: Rect = { left: 0, top: 0, width: 0, height: 0 };
 
 export function useInsertionMarker(
   scrollRef: RefObject<HTMLDivElement | null>,
   contentRef: RefObject<HTMLDivElement | null>,
   gap: number | null
 ): InsertionMarker {
-  const [pos, setPos] = useState({ x: 0, y: 0 });
+  const [pos, setPos] = useState<{ x: number; y: number; clip: Rect }>({
+    x: 0,
+    y: 0,
+    clip: NO_CLIP,
+  });
 
   useLayoutEffect(() => {
     // Hold the last position when the drag ends so the marker fades out where it was rather
@@ -46,11 +65,24 @@ export function useInsertionMarker(
       // Take x off the rail itself rather than re-deriving the 96px board gutter here, so this
       // stays correct on its own if the board column invariant ever moves (see index.css).
       const rail = row.querySelector<HTMLElement>('.tl-rail')?.getBoundingClientRect();
+      const board = scrollRef.current?.getBoundingClientRect();
       const next = {
         x: rail ? rail.left + rail.width / 2 : rowRect.left,
         y: rowRect.top + rowRect.height / 2,
+        clip: board
+          ? { left: board.left, top: board.top, width: board.width, height: board.height }
+          : NO_CLIP,
       };
-      setPos((prev) => (prev.x === next.x && prev.y === next.y ? prev : next));
+      setPos((prev) =>
+        prev.x === next.x &&
+        prev.y === next.y &&
+        prev.clip.top === next.clip.top &&
+        prev.clip.height === next.clip.height &&
+        prev.clip.left === next.clip.left &&
+        prev.clip.width === next.clip.width
+          ? prev
+          : next
+      );
     };
 
     measure();

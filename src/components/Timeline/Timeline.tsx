@@ -510,6 +510,7 @@ const Timeline: React.FC<TimelineProps> = ({
       <TimelineMarker
         x={marker.x}
         y={marker.y}
+        clip={marker.clip}
         visible={marker.visible}
         timeScale={railTimeScale}
       />
