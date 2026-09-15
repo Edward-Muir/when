@@ -140,6 +140,16 @@ Traps this round cost time on:
   last-tone gradient on the unmasked container behind the scroller. That is exact where it
   matters — a bounce can only happen at scrollTop 0 or the maximum, where the board is showing
   its first or last runway, which are precisely the two ends of that gradient.
+- **An animation whose element rests in the loud state is a landmine.** The placement vignette
+  (`.vignette-overlay` + `animate-vignette` in Game.tsx) had no `animation-fill-mode` and no
+  resting `opacity`, so the moment `vignettePulse` completed the element reverted to the default
+  opacity of 1 — a full-strength flash of the whole vignette, brighter than the pulse that had
+  just finished. Game.tsx unmounts it on a timeout matched to the animation's duration, so
+  whether anyone saw it came down to winning a race by a few milliseconds. It held for a long
+  time, then the paper field's per-placement re-measure added just enough work to lose the race
+  on a phone, and it showed up as a second flash a beat after every placement. `.vignette-overlay`
+  now rests at `opacity: 0`. Worth checking for the same shape anywhere else: an animation that
+  ends somewhere other than its element's base style, on an element that outlives it.
 - **The paper has to be ONE element, not a tint per row.** A per-row background stops at the
   row's content box, which above 1024px is inset by `.board-center`'s padding — a tinted column
   on an untinted page. The field is an absolutely positioned child of the _scroller_, so
