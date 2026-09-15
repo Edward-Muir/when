@@ -21,8 +21,20 @@ export const TICK_H = 4;
 /** The marker: `h-2 w-1.5 rounded-full`. Must match TimelineMarker's MARKER_W / MARKER_H. */
 export const DOT_W = 6;
 export const DOT_H = 8;
-/** Big enough to round a 6px-wide box into a pill; framer needs a number, not `9999px`. */
-export const DOT_RADIUS = 9999;
+/**
+ * The dot's corner radius. Half the short side is exactly what makes a 6×8 box a capsule, and it
+ * is also what the marker's own `rounded-full` resolves to — CSS scales an over-large radius down
+ * to fit the box, so 6px and 9999px paint the same pill.
+ *
+ * They do not *animate* the same, which is the whole reason this is written in the geometry's own
+ * units. A spring carrying a value 9999 units is still ~117 units from home at the moment the
+ * size has arrived, and on a 12×4 dash anything above 2 is a full capsule: the tick reached its
+ * resting shape at ~200ms, stayed a pill until ~345ms, went square for a single frame and then
+ * sprang back into a pill. A rounded end against the rail's flat edge is a notch of daylight at
+ * the join, so that read as a gap opening and filling itself, twice. At this scale the radius
+ * lands with the shape instead, and an overshoot just clamps at 0 where it cannot be seen.
+ */
+export const DOT_RADIUS = DOT_W / 2;
 /** The rail: `w-1` in TimelineRail. Only needed for the offset below. */
 const RAIL_W = 4;
 

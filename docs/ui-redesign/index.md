@@ -254,6 +254,29 @@ ends by pointing at where the card belonged.
 
 Traps this round cost time on:
 
+- **A spring does not know which of its units you can see.** The morph animated `borderRadius`
+  from `9999` to `0` — a big round number, on the reasoning that it paints the same capsule as
+  any sufficient radius, which is true at rest. It is not true in flight. A spring carrying a
+  value 9999 units is still ~117 units from home at the moment the size has arrived, and on a
+  12×4 dash anything above 2 is a _full_ capsule: the tick reached its resting shape at ~200ms,
+  stayed a pill until ~345ms, went square for one frame, then rang back into a pill and
+  oscillated. A rounded end against the rail's flat edge is a notch of daylight at the join, so
+  what it looked like was a small gap opening and filling itself, twice, a beat after the
+  landing. `DOT_RADIUS` is `DOT_W / 2` now — the geometry's own units, so the rounding lands with
+  the shape and an overshoot clamps at 0 where nothing can see it. Any value animated on a shared
+  spring wants a range whose units are the ones on screen.
+- **The morph may not overshoot.** The dash's right edge _is_ the board column's seam, so an
+  under-damped morph lifts the tick off the rail and puts it back — measured at 0.18px, which is
+  half a device pixel on a 3× phone and reads as the join flickering. `tick.morphSpring` is at
+  critical damping (`damping >= 2·√(stiffness · mass)`), pinned by a test, and `/anim-jig` can
+  still be dragged past it to look. This is the opposite of the rail's growth spring, which is
+  deliberately under-damped — that one overshoots into empty paper, where a bounce costs nothing.
+- **Measure the morph's tail, not just its handoff.** `scripts/tick-landing-probe.js` finds the
+  landing dash by "inline size ≠ 12×4", so it stops watching at the exact moment both of these
+  bugs happen. Neither showed up in it. What found them was a CDP screencast of a real drop
+  (`Page.startScreencast`, ~60fps — note its frames come back at CSS resolution, not the
+  context's `deviceScaleFactor`) cropped to the gutter, plus a per-frame read of the landing
+  row's own dash including its computed `border-radius`.
 - **The field alone is not enough: the board needs a backdrop too.** The field covers the
   content, but two things sit outside it — the elastic overscroll region a rubber-band drag
   opens past either end, and the top/bottom bands where `.tl-edge-mask` fades the scroller out.

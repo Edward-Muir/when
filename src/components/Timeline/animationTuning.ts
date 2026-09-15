@@ -56,7 +56,13 @@ export interface AnimationTuning {
     errorPulseDurS: number;
   };
   tick: {
-    /** Dot → dash morph: the marker's shape becoming the tick's. */
+    /**
+     * Dot → dash morph: the marker's shape becoming the tick's. Keep it at or past critical
+     * damping — `damping >= 2 * sqrt(stiffness * mass)`. The dash's right edge _is_ the board
+     * column's seam (`tick.right === rail.left`, see index.css), so an under-damped morph
+     * overshoots the tick off the rail and drops it back: a hairline of daylight that opens and
+     * closes at the join. The growth is the juice here; the arrival is not meant to bounce.
+     */
     morphSpring: SpringParams;
     /** How long the landed tick takes to give up the marker's glow (s). */
     glowDecayS: number;
@@ -108,7 +114,8 @@ export const DEFAULT_TUNING: AnimationTuning = {
     errorPulseDurS: 0.6,
   },
   tick: {
-    morphSpring: { stiffness: 420, damping: 26, mass: 0.8 },
+    // damping 38 ≥ 2·√(420 · 0.8) = 36.7 — critically damped, so the dash cannot lift off the rail.
+    morphSpring: { stiffness: 420, damping: 38, mass: 0.8 },
     glowDecayS: 0.4,
     snuffS: 0.35,
   },

@@ -62,6 +62,27 @@ describe('landingKeyframes', () => {
     expect(k.height).toEqual([DOT_H, TICK_H]);
     expect(k.borderRadius[1]).toBe(0);
   });
+
+  // The radius rounds the dot and nothing more. A big round number paints the same pill (CSS
+  // scales it down to fit) but animates for far longer than the shape does, which left the tick
+  // a capsule for ~150ms after it was a 12x4 dash — a notch of daylight where its rounded end
+  // met the rail, then a flick back into a pill as the spring rang out. Anything much over half
+  // the dash's short side is a full capsule, so that is the ceiling this has to stay under.
+  it('rounds the dot in the geometry own units, not with a big number', () => {
+    const radius = landingKeyframes({ x: 11, y: -2 }).borderRadius[0];
+    expect(radius).toBe(DOT_W / 2);
+    expect(radius).toBeLessThanOrEqual(Math.min(TICK_W, TICK_H) / 2 + 1);
+  });
+});
+
+describe('the morph spring', () => {
+  // The dash's right edge IS the board column's seam, so an overshoot lifts the tick off the
+  // rail and puts it back — daylight at the join, which is the one thing this animation must
+  // never produce. /anim-jig can drag it under-damped to look at; the default may not be.
+  it('is damped at least critically, so the dash cannot overshoot off the rail', () => {
+    const { stiffness, damping, mass = 1 } = DEFAULT_TUNING.tick.morphSpring;
+    expect(damping).toBeGreaterThanOrEqual(2 * Math.sqrt(stiffness * mass));
+  });
 });
 
 describe('landingTransition', () => {

@@ -39,7 +39,7 @@ describe('DEFAULT_TUNING', () => {
         errorPulseDurS: 0.6,
       },
       tick: {
-        morphSpring: { stiffness: 420, damping: 26, mass: 0.8 },
+        morphSpring: { stiffness: 420, damping: 38, mass: 0.8 },
         glowDecayS: 0.4,
         snuffS: 0.35,
       },
