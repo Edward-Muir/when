@@ -4,26 +4,25 @@ import { Moon, Sun } from 'lucide-react';
 import TopBar from '../components/TopBar';
 import ActiveCardDisplay from '../components/ActiveCardDisplay';
 import { GameInfoCompact } from '../components/PlayerInfo';
+import Timeline from '../components/Timeline/Timeline';
 import type { RailExtension } from '../components/Timeline/TimelineRail';
 import { useTheme } from '../hooks/useTheme';
 import { loadAllEvents } from '../utils/eventLoader';
 import type { HistoricalEvent, Player } from '../types';
 import { buildBoard, drawOrder, MAX_BOARD } from './timelineLab/board';
-import LabBoard from './timelineLab/LabBoard';
-import { VARIANTS, variantById } from './timelineLab/variants';
 
 /**
- * Dev-only harness (route: /timeline-lab): does the board get more rewarding the longer it
- * gets? Two materials already on screen — the paper and the rail — on the real row anatomy
- * with real data, at whatever board length you ask for.
+ * Dev-only harness (route: /timeline-lab) for the board's paper ramp and its rail.
  *
- *   ?v=<variant id>     one of VARIANTS (default `none`)
+ * It mounts the REAL Timeline with a seeded set of placed cards — there is no second
+ * implementation to drift out of step. The only thing it fakes is the drag: `isDragging` +
+ * `insertionIndex` are set straight onto Timeline's props, which is exactly what a real drag
+ * past an end of the board does, so the rail extension shown here is the shipping one.
+ *
  *   ?n=<1..30>          cards placed — the same draw order cut short, so n=5 is n=30's opening
- *   ?fit=1              scale the whole board into the frame instead of scrolling it
- *   ?paper=<0..100>     ramp strength (default 100 — the tones are already only a few percent)
- *   ?ghost=earlier|later  force the drag-preview state at one end (the lab has no real drag)
- *   ?slowmo=<1..12>     stretch the rail extension in time, for capturing it in stills
- *   ?row=<index>        centre this row instead of the median
+ *   ?ghost=earlier|later  hold the drag preview at one end
+ *   ?slowmo=<1..12>     stretch the rail's growth in time, for catching it in a still
+ *   ?row=<index>        scroll this row to the middle
  *   ?theme=light|dark
  *   ?bare=1             phone only, no control panel (what the screenshot script uses)
  *
@@ -49,34 +48,8 @@ function readGhost(value: string | null): RailExtension | null {
   return value === 'earlier' || value === 'later' ? value : null;
 }
 
-interface LabOptions {
-  variant: ReturnType<typeof variantById>;
-  count: number;
-  fit: boolean;
-  bare: boolean;
-  paperPct: number;
-  ghost: RailExtension | null;
-  timeScale: number;
-  focusRow: number | undefined;
-}
-
 function clampNum(raw: string | null, fallback: number, lo: number, hi: number): number {
   return Math.max(lo, Math.min(hi, Number(raw ?? fallback) || fallback));
-}
-
-/** Everything the harness is driven by, read off the query string in one place. */
-function readOptions(params: URLSearchParams): LabOptions {
-  const rowParam = params.get('row');
-  return {
-    variant: variantById(params.get('v')),
-    count: clampNum(params.get('n'), 14, 1, MAX_BOARD),
-    fit: params.get('fit') === '1',
-    bare: params.get('bare') === '1',
-    paperPct: clampNum(params.get('paper'), 100, 0, 100),
-    ghost: readGhost(params.get('ghost')),
-    timeScale: clampNum(params.get('slowmo'), 1, 1, 12),
-    focusRow: rowParam === null ? undefined : Number(rowParam),
-  };
 }
 
 const TimelineLab: React.FC = () => {
@@ -88,7 +61,11 @@ const TimelineLab: React.FC = () => {
     loadAllEvents().then(setAll);
   }, []);
 
-  const { variant, count, fit, bare, paperPct, ghost, timeScale, focusRow } = readOptions(params);
+  const count = clampNum(params.get('n'), 14, 1, MAX_BOARD);
+  const bare = params.get('bare') === '1';
+  const ghost = readGhost(params.get('ghost'));
+  const timeScale = clampNum(params.get('slowmo'), 1, 1, 12);
+  const rowParam = params.get('row');
 
   const draw = useMemo(() => (all ? drawOrder(all) : []), [all]);
   const board = useMemo(() => buildBoard(draw, count), [draw, count]);
@@ -103,14 +80,30 @@ const TimelineLab: React.FC = () => {
     }
   }, [themeParam, isDark, toggleTheme]);
 
+  // Timeline owns its own scrolling, so the harness steers it from outside by the same
+  // attribute the drag code measures. Runs before a ghost is shown, so the frame never moves
+  // mid-animation.
+  useEffect(() => {
+    if (rowParam === null || board.events.length === 0) return;
+    const t = window.setTimeout(() => {
+      document
+        .querySelector(`[data-timeline-index="${Number(rowParam)}"]`)
+        ?.scrollIntoView({ block: 'center', behavior: 'instant' as ScrollBehavior });
+    }, 350);
+    return () => window.clearTimeout(t);
+  }, [rowParam, board.events.length]);
+
   const update = (patch: Record<string, string>) => {
     const next = new URLSearchParams(params);
     Object.entries(patch).forEach(([k, v]) => next.set(k, v));
     setParams(next, { replace: true });
   };
 
+  const dragged = ghost ? (hand[0] ?? null) : null;
+  const insertionIndex = ghost === 'earlier' ? 0 : ghost === 'later' ? board.events.length : null;
+
   const phone =
-    !all || board.rows.length === 0 ? (
+    !all || board.events.length === 0 ? (
       <div className="flex h-full items-center justify-center font-body text-text-muted">
         Loading events…
       </div>
@@ -118,15 +111,18 @@ const TimelineLab: React.FC = () => {
       <div className="pt-topbar flex h-full w-full flex-col overflow-hidden bg-bg">
         <TopBar showHome showTitle onHomeClick={noop} />
         <div className="relative min-h-0 flex-1">
-          <LabBoard
-            board={board}
-            layers={variant}
-            paperPct={paperPct}
-            fit={fit}
-            focusRow={focusRow}
-            ghost={ghost}
-            ghostEvent={hand[0] ?? null}
-            timeScale={timeScale}
+          <Timeline
+            events={board.events}
+            onEventTap={noop}
+            isDragging={ghost !== null}
+            insertionIndex={insertionIndex}
+            draggedCard={dragged}
+            isOverTimeline={ghost !== null}
+            lastPlacementResult={null}
+            animationPhase={null}
+            currentStreak={3}
+            startAtMiddle={rowParam === null}
+            railTimeScale={timeScale}
           />
         </div>
         <div className="z-40 flex h-[120px] shrink-0 items-center border-t border-border bg-bg sm:h-[140px]">
@@ -134,7 +130,7 @@ const TimelineLab: React.FC = () => {
             <GameInfoCompact
               currentPlayer={player}
               isMultiplayer={false}
-              timelineLength={board.rows.length}
+              timelineLength={board.events.length}
               currentStreak={3}
             />
           </div>
@@ -173,22 +169,11 @@ const TimelineLab: React.FC = () => {
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </button>
           </div>
-
-          <section className="space-y-2">
-            <h2 className="text-sm font-semibold text-text-muted">Direction</h2>
-            <div className="flex flex-wrap gap-2">
-              {VARIANTS.map((v) => (
-                <button
-                  key={v.id}
-                  className={chip(v.id === variant.id)}
-                  onClick={() => update({ v: v.id })}
-                >
-                  {v.name}
-                </button>
-              ))}
-            </div>
-            <p className="max-w-prose text-sm leading-relaxed text-text-muted">{variant.blurb}</p>
-          </section>
+          <p className="max-w-prose text-sm leading-relaxed text-text-muted">
+            The real board, with a seeded set of cards already placed. The paper runs one continuous
+            ramp keyed to each card’s year, and the rail exists only between the first and last card
+            — drag the slider and watch both ends move.
+          </p>
 
           <section className="space-y-2">
             <h2 className="text-sm font-semibold text-text-muted">
@@ -227,38 +212,10 @@ const TimelineLab: React.FC = () => {
               </button>
             </div>
             <p className="max-w-prose text-sm leading-relaxed text-text-muted">
-              Stands in for a real drag past either end: the rail springs out to meet the ghost card
-              and the growing tip settles. Click the same chip twice to replay it.
+              Holds the state a real drag past either end puts the board in. Click the same chip
+              twice to replay it.
             </p>
           </section>
-
-          <section className="space-y-2">
-            <h2 className="text-sm font-semibold text-text-muted">View</h2>
-            <div className="flex gap-2">
-              <button className={chip(!fit)} onClick={() => update({ fit: '0' })}>
-                Scrolled
-              </button>
-              <button className={chip(fit)} onClick={() => update({ fit: '1' })}>
-                Whole board
-              </button>
-            </div>
-          </section>
-
-          {variant.paper && (
-            <section className="space-y-2">
-              <h2 className="text-sm font-semibold text-text-muted">
-                Paper strength — <span className="font-mono">{paperPct}%</span>
-              </h2>
-              <input
-                type="range"
-                min={0}
-                max={100}
-                value={paperPct}
-                onChange={(e) => update({ paper: e.target.value })}
-                className="w-full max-w-sm accent-accent"
-              />
-            </section>
-          )}
         </aside>
       )}
     </div>

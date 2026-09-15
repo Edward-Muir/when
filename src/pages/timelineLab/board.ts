@@ -58,21 +58,12 @@ export function drawOrder(all: HistoricalEvent[], seed = 20260914): HistoricalEv
   return picked;
 }
 
-export interface LabRow {
-  event: HistoricalEvent;
-  /** Index into the sorted board — what `data-timeline-index` would be. */
-  index: number;
-  /** 0 (warm/early) .. 1 (cool/late) for this row's paper. */
-  tone: number;
-  /** The row above's tone, so a row can render its slice of one continuous ramp. */
-  prevTone: number;
-}
-
 export interface LabBoard {
-  rows: LabRow[];
+  /** The placed cards, sorted by year — Timeline's `events` prop. */
+  events: HistoricalEvent[];
   firstYear: number;
   lastYear: number;
-  /** Years between the earliest and latest card — the optional span figure. */
+  /** Years between the earliest and latest card. */
   spanYears: number;
 }
 
@@ -88,24 +79,12 @@ export function compactYears(years: number): string {
   return Math.round(years).toLocaleString();
 }
 
-/** The first `count` cards of the draw, sorted by year, with each row's paper tone attached. */
+/** The first `count` cards of the draw, sorted by year — a real mid-game board. */
 export function buildBoard(draw: HistoricalEvent[], count: number): LabBoard {
-  const sorted = draw
+  const events = draw
     .slice(0, Math.max(0, count))
     .sort((a, b) => a.year - b.year || a.name.localeCompare(b.name));
-
-  const rows: LabRow[] = sorted.map((event, index) => {
-    const prev = sorted.at(index - 1);
-    const tone = paperTone(event.year);
-    return {
-      event,
-      index,
-      tone,
-      prevTone: index === 0 || !prev ? tone : paperTone(prev.year),
-    };
-  });
-
-  const firstYear = sorted.at(0)?.year ?? 0;
-  const lastYear = sorted.at(-1)?.year ?? 0;
-  return { rows, firstYear, lastYear, spanYears: lastYear - firstYear };
+  const firstYear = events.at(0)?.year ?? 0;
+  const lastYear = events.at(-1)?.year ?? 0;
+  return { events, firstYear, lastYear, spanYears: lastYear - firstYear };
 }

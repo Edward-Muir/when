@@ -77,7 +77,16 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
     return () => window.clearTimeout(t);
   }, [extending, timeScale]);
 
-  const caps = `${first ? 'tl-rail-cap-top' : ''} ${last ? 'tl-rail-cap-bottom' : ''}`;
+  // Two mask-image declarations cannot both apply, so a board of one card takes a combined
+  // cap that leaves a single node at the tick rather than a full-height bar.
+  const caps =
+    first && last
+      ? 'tl-rail-cap-both'
+      : first
+        ? 'tl-rail-cap-top'
+        : last
+          ? 'tl-rail-cap-bottom'
+          : '';
 
   if (!extending) {
     return (

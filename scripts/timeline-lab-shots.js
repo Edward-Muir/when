@@ -27,7 +27,7 @@ const PORT = 4173;
 const W = 402;
 const H = 844;
 const LENGTHS = [5, 14, 30];
-const VARIANTS = ['none', 'paper', 'rail', 'both', 'span'];
+
 const THEMES = ['light', 'dark'];
 /** `node scripts/timeline-lab-shots.js out --strips` re-shoots only the extension strips. */
 const STRIPS_ONLY = process.argv.includes('--strips');
@@ -114,10 +114,7 @@ async function boardShots(ctx) {
     process.stdout.write(`${file}\n`);
   };
   for (const theme of THEMES) {
-    for (const v of VARIANTS) {
-      for (const n of LENGTHS) await shot(`${theme}-${v}-n${n}.png`, `v=${v}&n=${n}&theme=${theme}`);
-      await shot(`${theme}-${v}-whole.png`, `v=${v}&n=30&fit=1&theme=${theme}`);
-    }
+    for (const n of LENGTHS) await shot(`${theme}-n${n}.png`, `n=${n}&theme=${theme}`);
   }
   await page.close();
 }
@@ -161,7 +158,7 @@ async function extensionStrip(browser) {
         dir === 'earlier'
           ? { x: 0, y: 150, width: W, height: 300 }
           : { x: 0, y: 380, width: W, height: 300 };
-      await page.goto(url(`v=both&n=14&row=${row}&bare=1&slowmo=${SLOWMO}&theme=${theme}`), {
+      await page.goto(url(`n=14&row=${row}&bare=1&slowmo=${SLOWMO}&theme=${theme}`), {
         waitUntil: 'domcontentloaded',
       });
       await settleBoard(page);
@@ -209,19 +206,22 @@ async function extensionVideo(browser, theme) {
     recordVideo: { dir: OUT, size: { width: W, height: 880 } },
   });
   const page = await ctx.newPage();
-  await page.goto(url(`v=both&n=14&row=6&bare=1&theme=${theme}`), {
+  await page.goto(url(`n=14&row=6&bare=1&theme=${theme}`), {
     waitUntil: 'domcontentloaded',
   });
   await settleBoard(page);
   for (const dir of ['later', 'earlier', 'later']) {
     await page.waitForTimeout(700);
     // The board has to be looking at the end that grows, so re-pin the focus row first.
-    await page.evaluate((r) => {
-      const u = new URL(window.location.href);
-      u.searchParams.set('row', String(r));
-      window.history.pushState({}, '', u.toString());
-      window.dispatchEvent(new PopStateEvent('popstate'));
-    }, dir === 'earlier' ? 1 : 12);
+    await page.evaluate(
+      (r) => {
+        const u = new URL(window.location.href);
+        u.searchParams.set('row', String(r));
+        window.history.pushState({}, '', u.toString());
+        window.dispatchEvent(new PopStateEvent('popstate'));
+      },
+      dir === 'earlier' ? 1 : 12
+    );
     await page.waitForTimeout(700);
     await setGhost(page, dir);
     await page.waitForTimeout(1400);
@@ -265,18 +265,13 @@ async function main() {
   };
 
   for (const theme of STRIPS_ONLY ? [] : THEMES) {
-    for (const v of VARIANTS) {
-      await compose(
-        `sheet-${theme}-${v}`,
-        theme,
-        `${v} — ${theme}`,
-        [
-          ...LENGTHS.map((n) => [`${n} cards`, `${theme}-${v}-n${n}.png`]),
-          ['whole board (30)', `${theme}-${v}-whole.png`],
-        ],
-        W
-      );
-    }
+    await compose(
+      `sheet-${theme}`,
+      theme,
+      `the board — ${theme}`,
+      LENGTHS.map((n) => [`${n} cards`, `${theme}-n${n}.png`]),
+      W
+    );
   }
   for (const [theme, dir, frames] of strips) {
     await compose(

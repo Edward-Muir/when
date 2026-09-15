@@ -27,3 +27,13 @@ export function paperTone(year: number): number {
   const t = (Math.log10(yearsAgo) - LOG_NEAR) / (LOG_FAR - LOG_NEAR);
   return 1 - Math.min(1, Math.max(0, t));
 }
+
+/**
+ * The CSS colour for a tone, mixed between the two paper tones in index.css. Kept here rather
+ * than in a stylesheet because the board builds one gradient with a stop per row, which has to
+ * be assembled in JS.
+ */
+export function paperToneColor(tone: number): string {
+  const pct = Math.round(Math.min(1, Math.max(0, tone)) * 1000) / 10;
+  return `color-mix(in oklab, var(--paper-late) ${pct}%, var(--paper-early))`;
+}

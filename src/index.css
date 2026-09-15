@@ -115,17 +115,20 @@ body {
 }
 
 /* ===========================================================================
-   TIMELINE PROGRESSION — the paper and the rail.
+   THE BOARD'S PAPER AND RAIL
 
    PAPER. Two tones, each only a few percent off --color-bg: --paper-early (warm) and
-   --paper-late (cool). A row's tint is an interpolation between them keyed to the row's
-   YEAR (paperTone() in src/utils/paperTone.ts), not to an era bucket — deliberately no
-   bands, no named chapters, no palette. Because the scale is absolute, a board sitting
-   inside one century stays flat and only a board that reaches back earns the warm end;
-   that is what makes it grow with the timeline instead of with the viewport.
+   --paper-late (cool). The board paints ONE gradient behind all of its content with a
+   stop per row, mixed between these two by the row's year — see src/utils/paperTone.ts
+   for why the scale is absolute rather than normalised to the current board, and
+   logarithmic in time-before-now rather than linear in years. Deliberately no era
+   bands, no named chapters, no palette.
 
-   Same trap as `.bg-player-row`: color-mix, never `/NN` on a theme token. No calc()
-   wrapped around max()/min()/clamp() anywhere here (postcss-calc; see BOARD COLUMN below).
+   The gradient itself is assembled in JS (usePaperField.ts) because it needs a stop at
+   each row's measured offset; these rules only carry the two endpoints and the edge
+   mask. Same trap as `.bg-player-row`: color-mix, never `/NN` on a theme token. No
+   calc() wrapped around max()/min()/clamp() anywhere here (postcss-calc, see BOARD
+   COLUMN below).
    =========================================================================== */
 :root {
   --paper-early: #f3ece0;
@@ -137,21 +140,8 @@ body {
 }
 
 @layer utilities {
-  /* One row's slice of the ramp: the row above's tone blending into this row's, so the
-     board is a single continuous gradient however the rows are spaced. --tone / --tone-prev
-     are set inline per row; --paper-pct mixes the whole thing toward the page. */
-  .tl-paper {
-    background-image: linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--tone-prev) var(--paper-pct, 100%), var(--color-bg)),
-      color-mix(in srgb, var(--tone) var(--paper-pct, 100%), var(--color-bg)) 72%
-    );
-  }
-  .tl-paper-flat {
-    background-color: color-mix(in srgb, var(--tone) var(--paper-pct, 100%), var(--color-bg));
-  }
-  /* Tinted paper has no flat colour to fade into, so the board's edges dissolve whatever
-     tone is under them rather than fading to --color-bg. */
+  /* Tinted paper has no flat page colour to fade into, so the board dissolves its own top
+     and bottom edges rather than fading to --color-bg under the top bar and the hand. */
   .tl-edge-mask {
     -webkit-mask-image: linear-gradient(
       to bottom,
@@ -168,7 +158,16 @@ body {
       transparent
     );
   }
-  /* The rail, drawn per row so it spans exactly the rows that exist. Nothing on it. */
+  /* The "Earlier"/"Later" labels sit over whatever the board's edge happens to be. They used
+     to have a --color-bg gradient behind them, which a tinted page no longer matches, so they
+     carry their own halo instead of a scrim — no box, nothing new on the page. */
+  .tl-edge-label {
+    text-shadow:
+      0 0 5px var(--color-bg),
+      0 0 10px var(--color-bg),
+      0 0 18px var(--color-bg);
+  }
+  /* The rail, drawn per row (TimelineRail.tsx) so it spans exactly the rows that exist. */
   .tl-rail {
     background-color: var(--color-accent);
   }
@@ -179,6 +178,18 @@ body {
   .tl-rail-cap-bottom {
     -webkit-mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
     mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
+  }
+  /* A one-card board: the rail is a single node at that card's tick, not a full-height bar.
+     Needs its own rule because two mask-image declarations cannot both apply. */
+  .tl-rail-cap-both {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 42%,
+      #000 47%,
+      #000 53%,
+      transparent 58%
+    );
+    mask-image: linear-gradient(to bottom, transparent 42%, #000 47%, #000 53%, transparent 58%);
   }
   /* The growing tip: the leading end of a rail extension while a drag previews it. */
   .tl-rail-tip {

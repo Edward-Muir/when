@@ -1,16 +1,20 @@
-import React, { useRef, useEffect, useLayoutEffect, useMemo, useState } from 'react';
+import React, { useRef, useEffect, useLayoutEffect, useMemo } from 'react';
 import { animate, LayoutGroup, useReducedMotion } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
-import TimelineEvent, { RippleSpec } from './TimelineEvent';
+import TimelineEvent from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
+import TimelineRail, { RailExtension } from './TimelineRail';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
+import { paperTone } from '../../utils/paperTone';
 import { buildTimelineRows } from '../../utils/timelineRows';
+import { PAPER_ROW_ATTR, usePaperField } from './usePaperField';
+import { useTimelineWaves } from './useTimelineWaves';
+import { useWakeDelays } from './useWakeDelays';
 import {
   AnimationTuning,
   getMissTravelMs,
-  invTravelEase,
   TRAVEL_EASE,
   useAnimationTuning,
 } from './animationTuning';
@@ -35,7 +39,32 @@ interface TimelineProps {
   enableCentering?: boolean;
   // Open scrolled to the middle (median) event instead of the top (default false; on in view mode)
   startAtMiddle?: boolean;
+  /**
+   * Stretches the rail's growth animation in time. 1 everywhere in the app; only the
+   * screenshot harness raises it, because the spring is quicker than a screenshot.
+   */
+  railTimeScale?: number;
 }
+
+/**
+ * One board row: the rail segment for this row, plus whatever the row is. The rail is drawn per
+ * row rather than as one full-height bar so it spans exactly the rows that exist — the runway
+ * above the first card and below the last is bare paper, and the line is the thing the player
+ * has built. Per row also keeps it aligned to the ticks by construction at any row height (see
+ * the BOARD COLUMN invariant in index.css).
+ */
+const BoardRow: React.FC<{
+  first: boolean;
+  last: boolean;
+  extending?: RailExtension | null;
+  timeScale: number;
+  children: React.ReactNode;
+}> = ({ first, last, extending = null, timeScale, children }) => (
+  <div {...{ [PAPER_ROW_ATTR]: '' }} className="relative w-full">
+    <TimelineRail first={first} last={last} extending={extending} timeScale={timeScale} />
+    {children}
+  </div>
+);
 
 // Ghost card that shows where the dragged card will land
 const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
@@ -90,6 +119,52 @@ function followRevealScroll(
   });
 }
 
+/**
+ * Which way the rail is reaching, if the drag ghost is sitting past an end of the board. Only
+ * when the ghost adds a row of its own: a gap that already holds a tombstone hosts the ghost
+ * inside that row, so nothing is being extended.
+ */
+function getRailExtension(
+  ghostGap: number | null,
+  ghostHostRowIndex: number,
+  eventCount: number
+): RailExtension | null {
+  if (ghostGap === null || ghostHostRowIndex !== -1 || eventCount === 0) return null;
+  if (ghostGap === 0) return 'earlier';
+  if (ghostGap === eventCount) return 'later';
+  return null;
+}
+
+/** The insertion gap the ghost currently previews; null when not dragging over the timeline. */
+function getGhostGap(
+  isDragging: boolean,
+  isOverTimeline: boolean,
+  draggedCard: HistoricalEvent | null,
+  insertionIndex: number | null
+): number | null {
+  return isDragging && isOverTimeline && draggedCard !== null ? insertionIndex : null;
+}
+
+/** The failed placement whose reveal is currently running (flash or moving phase). */
+function getMissReveal(
+  lastPlacementResult: PlacementResult | null,
+  animationPhase: AnimationPhase
+): PlacementResult | null {
+  if (lastPlacementResult === null || lastPlacementResult.success) return null;
+  return animationPhase !== null ? lastPlacementResult : null;
+}
+
+/** What this row's card is doing in the current placement animation, if anything. */
+function eventAnimationState(
+  name: string,
+  lastPlacementResult: PlacementResult | null,
+  animationPhase: AnimationPhase
+) {
+  const isAnimating = lastPlacementResult?.event.name === name && animationPhase !== null;
+  const success = isAnimating ? lastPlacementResult?.success : undefined;
+  return { isAnimating, success, failedReveal: isAnimating && success === false };
+}
+
 const Timeline: React.FC<TimelineProps> = ({
   events,
   onEventTap,
@@ -104,8 +179,10 @@ const Timeline: React.FC<TimelineProps> = ({
   currentStreak = 0,
   enableCentering = false,
   startAtMiddle = false,
+  railTimeScale = 1,
 }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
   // In-flight camera-follow scroll animation for a miss reveal (cancel on re-trigger/unmount)
   const followScrollRef = useRef<{ stop: () => void } | null>(null);
   const hasCenteredRef = useRef(false);
@@ -121,116 +198,19 @@ const Timeline: React.FC<TimelineProps> = ({
     id: 'timeline-zone',
   });
 
-  // Store ripple data independently from animation phase so it can complete fully
-  const [rippleData, setRippleData] = useState<{
-    placedEventName: string;
-    timestamp: number;
-  } | null>(null);
+  const missReveal = getMissReveal(lastPlacementResult, animationPhase);
 
-  // Miss wake trigger: stamped once when a failure reveal begins (flash render). All wake
-  // delays are offset by the flash duration so they line up with the travel that starts
-  // MISS_FLASH_MS later. Deliberately NOT set at travel start — a re-render while framer
-  // holds delayed layout springs re-measures the rows and cancels the pending shifts.
-  const [wakeTrigger, setWakeTrigger] = useState<number | null>(null);
-
-  // Trigger ripple when a successful placement happens
-  useEffect(() => {
-    if (lastPlacementResult?.success && animationPhase === 'flash') {
-      setRippleData({
-        placedEventName: lastPlacementResult.event.name,
-        timestamp: Date.now(),
-      });
-    }
-  }, [lastPlacementResult, animationPhase]);
-
-  // Clear ripples after the animation completes (~2 seconds for 3 oscillations)
-  useEffect(() => {
-    if (rippleData) {
-      const timer = setTimeout(() => setRippleData(null), tuning.success.rippleCleanupMs);
-      return () => clearTimeout(timer);
-    }
-  }, [rippleData, tuning]);
-
-  // Get streak-based glow and ripple config
+  // Streak-aware glow for the card being placed.
   const streakConfig = useMemo(() => getStreakFeedback(currentStreak), [currentStreak]);
 
-  // Success wave: bumps radiate outward from the placed card (unchanged behavior,
-  // expressed as explicit per-row delay/amplitude)
-  const successWave = useMemo(() => {
-    const bumps = new Map<number, RippleSpec>();
-    if (!rippleData) return bumps;
-    const placedIndex = events.findIndex((e) => e.name === rippleData.placedEventName);
-    if (placedIndex === -1) return bumps;
-    const { rippleStaggerS, rippleBaseYOffsetPx, rippleHalfLifeCards } = tuning.success;
-    events.forEach((_, idx) => {
-      if (idx === placedIndex) return; // Skip the placed card itself
-      const d = Math.abs(idx - placedIndex);
-      bumps.set(idx, {
-        delay: d * rippleStaggerS,
-        amplitudePx:
-          rippleBaseYOffsetPx *
-          Math.pow(0.5, (d - 1) / rippleHalfLifeCards) *
-          streakConfig.rippleMultiplier,
-        trigger: rippleData.timestamp,
-      });
-    });
-    return bumps;
-  }, [rippleData, events, streakConfig, tuning]);
-
-  // Name of the failed card whose reveal is currently running (flash or moving phase)
-  const missReveal =
-    lastPlacementResult !== null && !lastPlacementResult.success && animationPhase !== null
-      ? lastPlacementResult
-      : null;
-
-  // Stamp the wake trigger once per reveal, at flash time (see comment on wakeTrigger)
-  useEffect(() => {
-    if (missReveal) setWakeTrigger(Date.now());
-  }, [missReveal]);
-
-  // Miss wake wave: each passed row bumps just behind the traveling card (passage times
-  // from the inverted travel ease, offset by the flash), then the wave runs out past the
-  // landing gap, decaying. Keyed by event name — stable across the flash render (mover
-  // still in `events`) and the moving render, so each row's bump schedules exactly once.
-  const missWaveBumps = useMemo(() => {
-    const bumps = new Map<string, RippleSpec>();
-    if (!missReveal || wakeTrigger === null) return bumps;
-    const { attemptedPosition: a, correctPosition: g } = missReveal;
-    const pathLen = Math.abs(a - g);
-    if (pathLen === 0) return bumps;
-    const preInsert = events.filter((e) => e.name !== missReveal.event.name);
-    const travelS = getMissTravelMs(pathLen, tuning.miss) / 1000;
-    const flashS = tuning.miss.flashMs / 1000;
-    const { amplitudePx, bumpOffsetS, runOutBumps, runOutBaseDelayS, runOutStepS, runOutDecay } =
-      tuning.wake;
-    const down = g > a; // travel direction in index space
-    const lo = Math.min(a, g);
-    const hi = Math.max(a, g);
-    for (let i = lo; i < hi; i++) {
-      const passageOrder = down ? i - a : a - 1 - i; // 0 = first row the mover passes
-      const passageS = invTravelEase((passageOrder + 0.5) / pathLen) * travelS;
-      const evt = preInsert.at(i);
-      if (evt) {
-        bumps.set(evt.name, {
-          delay: flashS + passageS + bumpOffsetS,
-          amplitudePx,
-          trigger: wakeTrigger,
-        });
-      }
-    }
-    // Run-out: the wave continues through the landing spot and dies off
-    for (let extra = 0; extra < runOutBumps; extra++) {
-      const idx = down ? g + extra : g - 1 - extra;
-      const evt = idx >= 0 ? preInsert.at(idx) : undefined;
-      if (!evt || bumps.has(evt.name)) continue;
-      bumps.set(evt.name, {
-        delay: flashS + travelS + runOutBaseDelayS + extra * runOutStepS,
-        amplitudePx: amplitudePx * Math.pow(runOutDecay, extra),
-        trigger: wakeTrigger,
-      });
-    }
-    return bumps;
-  }, [missReveal, wakeTrigger, events, tuning]);
+  const { successWave, missWaveBumps } = useTimelineWaves(
+    events,
+    lastPlacementResult,
+    animationPhase,
+    currentStreak,
+    tuning
+  );
+  const wakeDelays = useWakeDelays(events, missReveal, tuning);
 
   // Re-arm the one-time centering whenever a new game starts (timeline goes empty -> populated)
   useEffect(() => {
@@ -314,43 +294,33 @@ const Timeline: React.FC<TimelineProps> = ({
     return () => followScrollRef.current?.stop();
   }, [failedPlacements, lastPlacementResult, shouldReduceMotion, tuning]);
 
-  const rows = buildTimelineRows(events, failedPlacements);
-  // The insertion gap the ghost currently previews (null when not dragging over the timeline)
-  const ghostGap = isDragging && isOverTimeline && draggedCard !== null ? insertionIndex : null;
+  // Memoised: the paper field measures off these rows, and a fresh array identity on every
+  // render would make its ResizeObserver commit, re-render and re-measure without end.
+  const rows = useMemo(
+    () => buildTimelineRows(events, failedPlacements),
+    [events, failedPlacements]
+  );
+  const ghostGap = getGhostGap(isDragging, isOverTimeline, draggedCard, insertionIndex);
   // If that gap holds tombstone(s), the first one hosts the ghost in its own row —
   // the ghost takes the tombstone's place instead of inserting an extra row.
   const ghostHostRowIndex =
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
+  const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
+  // One paper tone per rendered row, in render order, for the gradient behind the board. The
+  // ghost's card is face-down, so its row takes the tone of the card it is sitting beside —
+  // tinting it by the hidden card's year would put the answer on the page.
+  const rowTones = useMemo(() => {
+    const tones = rows.map((r) =>
+      paperTone(r.kind === 'event' ? r.event.year : r.failed.event.year)
+    );
+    if (railExtension === 'earlier') return [tones.at(0) ?? 1, ...tones];
+    if (railExtension === 'later') return [...tones, tones.at(-1) ?? 1];
+    return tones;
+  }, [rows, railExtension]);
+  const paperField = usePaperField(scrollRef, contentRef, rowTones);
+
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
-
-  // Miss-reveal wake shifts: only cards between the attempted spot (a) and the correct
-  // gap (g) shift (by one row-height, in one render) — layout-animate exactly those rows,
-  // each starting just before the mover reaches it (passage time from the inverted travel
-  // ease). Keyed by name because indices differ between the flash render (mover still in
-  // `events`) and the moving render; a parallel index map covers tombstone rows.
-  const wakeDelays = useMemo(() => {
-    const byName = new Map<string, number>();
-    const byIndex = new Map<number, number>();
-    if (!missReveal) return { byName, byIndex };
-    const { attemptedPosition: a, correctPosition: g } = missReveal;
-    const preInsert = events.filter((e) => e.name !== missReveal.event.name);
-    const lo = Math.min(a, g);
-    const hi = Math.max(a, g);
-    const pathLen = hi - lo;
-    if (pathLen === 0) return { byName, byIndex };
-    const travelS = getMissTravelMs(pathLen, tuning.miss) / 1000;
-    for (let i = lo; i < hi; i++) {
-      const passageOrder = a > g ? a - 1 - i : i - a; // 0 = first card the mover passes
-      const passageS = invTravelEase((passageOrder + 0.5) / pathLen) * travelS;
-      // part just before the card arrives
-      const delay = Math.max(0, passageS - tuning.wake.layoutShiftLeadS);
-      byIndex.set(i, delay);
-      const evt = preInsert.at(i);
-      if (evt) byName.set(evt.name, delay);
-    }
-    return { byName, byIndex };
-  }, [missReveal, events, tuning]);
 
   // Distance-scaled travel duration for the reveal target's FLIP
   const missTravelMs = missReveal
@@ -360,6 +330,15 @@ const Timeline: React.FC<TimelineProps> = ({
       )
     : undefined;
 
+  const lastRowIndex = rows.length - 1;
+  const earlierExt = railExtension === 'earlier' ? railExtension : null;
+  const laterExt = railExtension === 'later' ? railExtension : null;
+  const railFirst = (i: number) => i === 0 && railExtension !== 'earlier';
+  const railLast = (i: number) => i === lastRowIndex && railExtension !== 'later';
+  /** The dragged card, when its ghost belongs in the gap before display index `idx`. */
+  const ghostBefore = (idx: number) =>
+    ghostGap === idx && ghostHostRowIndex === -1 ? draggedCard : null;
+
   const renderTombstoneRow = (
     row: Extract<ReturnType<typeof buildTimelineRows>[number], { kind: 'tombstone' }>,
     rowIndex: number
@@ -367,39 +346,84 @@ const Timeline: React.FC<TimelineProps> = ({
     const { failed } = row;
     const isRevealTarget = revealingFailedName === failed.event.name;
     return (
-      <TombstoneRow
+      <BoardRow
         key={`tombstone-${failed.event.name}`}
-        failed={failed}
-        onTap={() => onEventTap(failed.event)}
-        displaced={ghostGap !== null && row.gap === ghostGap}
-        ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
-        // layoutId only during the reveal FLIP — permanent layoutId would
-        // smoothly layout-animate vertical moves while real cards snap
-        revealing={isRevealTarget}
-        travelMs={isRevealTarget ? missTravelMs : undefined}
-        layoutShiftDelay={
-          isRevealTarget
-            ? null
-            : (wakeDelays.byIndex.get(row.gap) ?? wakeDelays.byIndex.get(row.gap - 1) ?? null)
-        }
-      />
+        first={railFirst(rowIndex)}
+        last={railLast(rowIndex)}
+        timeScale={railTimeScale}
+      >
+        <TombstoneRow
+          failed={failed}
+          onTap={() => onEventTap(failed.event)}
+          displaced={ghostGap !== null && row.gap === ghostGap}
+          ghostEvent={rowIndex === ghostHostRowIndex ? draggedCard : null}
+          // layoutId only during the reveal FLIP — permanent layoutId would
+          // smoothly layout-animate vertical moves while real cards snap
+          revealing={isRevealTarget}
+          travelMs={isRevealTarget ? missTravelMs : undefined}
+          layoutShiftDelay={
+            isRevealTarget
+              ? null
+              : (wakeDelays.byIndex.get(row.gap) ?? wakeDelays.byIndex.get(row.gap - 1) ?? null)
+          }
+        />
+      </BoardRow>
+    );
+  };
+
+  const trailingGhost = ghostBefore(events.length);
+
+  const renderEventRow = (
+    row: Extract<ReturnType<typeof buildTimelineRows>[number], { kind: 'event' }>,
+    rowIndex: number
+  ) => {
+    const { event, realIndex: idx } = row;
+    const anim = eventAnimationState(event.name, lastPlacementResult, animationPhase);
+    const ghost = ghostBefore(idx);
+    return (
+      <React.Fragment key={event.name}>
+        {/* Ghost card before this event when its gap is here and no tombstone hosts it. At the
+            top of the board it is also where the rail grows to. */}
+        {ghost && (
+          <BoardRow
+            first={earlierExt !== null}
+            last={false}
+            extending={earlierExt}
+            timeScale={railTimeScale}
+          >
+            <GhostCard event={ghost} />
+          </BoardRow>
+        )}
+        <BoardRow first={railFirst(rowIndex)} last={railLast(rowIndex)} timeScale={railTimeScale}>
+          <TimelineEvent
+            event={event}
+            onTap={() => onEventTap(event)}
+            isNew={event.name === newEventName}
+            index={idx}
+            isAnimating={anim.isAnimating}
+            animationSuccess={anim.success}
+            animationPhase={anim.isAnimating ? animationPhase : null}
+            // The rejected card morphs into its tombstone via a shared layoutId
+            layoutId={anim.failedReveal && !shouldReduceMotion ? `placed-${event.name}` : undefined}
+            ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
+            glowIntensity={anim.isAnimating ? streakConfig.glowIntensity : undefined}
+            layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
+            // Eagerly load the first couple of cards — they're the LCP element.
+            priority={idx < 2}
+          />
+        </BoardRow>
+      </React.Fragment>
     );
   };
 
   return (
     <div className="h-full relative">
-      {/* Fixed "Earlier" indicator at top with fade */}
-      <div className="absolute top-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-b from-bg via-bg/90 to-transparent" />
-        <div className="absolute top-2 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
-          ↑ Earlier
-        </div>
+      {/* "Earlier" wayfinding. No gradient behind it any more: the paper is tinted, so a fade
+          to --color-bg would no longer match what is under it, and the scroller masks its own
+          top and bottom edges instead (`.tl-edge-mask`). */}
+      <div className="tl-edge-label absolute top-2 left-0 right-0 z-30 pointer-events-none text-center text-text-muted text-sm font-medium font-body">
+        ↑ Earlier
       </div>
-
-      {/* Vertical timeline line — sits at board-left + 96px, butting against every row's
-          tick. `board-rail` carries both the offset and the desktop centring; see the
-          "BOARD COLUMN" comment in index.css. */}
-      <div className="board-rail absolute top-0 bottom-0 w-1 bg-accent rounded-full z-0" />
 
       {/* Native scroll container (compositor-driven = snappy; native elastic overscroll). */}
       {/* Scroll is disabled while dragging a card so year labels stay fixed reference points. */}
@@ -411,59 +435,38 @@ const Timeline: React.FC<TimelineProps> = ({
         // `board-center` is padding, not max-width: this node is the `timeline-zone`
         // droppable and its rect must stay full-width, so a drop (or a wheel) in the empty
         // space beside the centred board still lands here. See index.css.
-        className={`board-center h-full relative z-10 ${
+        className={`board-center tl-edge-mask h-full relative z-10 ${
           isDragging ? 'overflow-hidden' : 'overflow-y-auto timeline-scroll-vertical'
         }`}
       >
-        <div className="relative flex flex-col items-start w-full">
+        {/* The paper. A child of the SCROLLER, not of the content wrapper, so `left/right: 0`
+            resolve against the scroller's padding box and the tint reaches the screen edges
+            even when `.board-center` insets the board on a desktop width. */}
+        {paperField && (
+          <div aria-hidden className="absolute left-0 right-0 top-0 z-0" style={paperField.style} />
+        )}
+        <div ref={contentRef} className="relative z-10 flex flex-col items-start w-full">
           {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
 
           {/* Events (with inline ghost cards at insertion points) and tombstones */}
           <LayoutGroup>
-            {rows.map((row, rowIndex) => {
-              if (row.kind === 'tombstone') {
-                return renderTombstoneRow(row, rowIndex);
-              }
-
-              const { event, realIndex: idx } = row;
-              // Check if this event is the one being animated
-              const isAnimatingEvent =
-                lastPlacementResult?.event.name === event.name && animationPhase !== null;
-              const animationSuccess = isAnimatingEvent ? lastPlacementResult?.success : undefined;
-              // The rejected card morphs into its tombstone via a shared layoutId
-              const isFailedReveal = isAnimatingEvent && animationSuccess === false;
-
-              return (
-                <React.Fragment key={event.name}>
-                  {/* Ghost card before this event when its gap is here and no tombstone hosts it */}
-                  {ghostGap === idx && ghostHostRowIndex === -1 && draggedCard && (
-                    <GhostCard event={draggedCard} />
-                  )}
-                  <TimelineEvent
-                    event={event}
-                    onTap={() => onEventTap(event)}
-                    isNew={event.name === newEventName}
-                    index={idx}
-                    isAnimating={isAnimatingEvent}
-                    animationSuccess={animationSuccess}
-                    animationPhase={isAnimatingEvent ? animationPhase : null}
-                    layoutId={
-                      isFailedReveal && !shouldReduceMotion ? `placed-${event.name}` : undefined
-                    }
-                    ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
-                    glowIntensity={isAnimatingEvent ? streakConfig.glowIntensity : undefined}
-                    layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
-                    // Eagerly load the first couple of cards — they're the LCP element.
-                    priority={idx < 2}
-                  />
-                </React.Fragment>
-              );
-            })}
+            {rows.map((row, rowIndex) =>
+              row.kind === 'tombstone'
+                ? renderTombstoneRow(row, rowIndex)
+                : renderEventRow(row, rowIndex)
+            )}
 
             {/* Ghost card after the last event (or on an empty timeline) */}
-            {ghostGap === events.length && ghostHostRowIndex === -1 && draggedCard && (
-              <GhostCard event={draggedCard} />
+            {trailingGhost && (
+              <BoardRow
+                first={events.length === 0}
+                last={laterExt !== null}
+                extending={laterExt}
+                timeScale={railTimeScale}
+              >
+                <GhostCard event={trailingGhost} />
+              </BoardRow>
             )}
           </LayoutGroup>
 
@@ -472,12 +475,8 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
 
-      {/* Fixed "Later" indicator at bottom with fade */}
-      <div className="absolute bottom-0 left-0 right-0 z-30 pointer-events-none">
-        <div className="h-12 bg-gradient-to-t from-bg via-bg/90 to-transparent" />
-        <div className="absolute bottom-2 left-0 right-0 text-center text-text-muted/70 text-sm font-medium font-body">
-          Later ↓
-        </div>
+      <div className="tl-edge-label absolute bottom-2 left-0 right-0 z-30 pointer-events-none text-center text-text-muted text-sm font-medium font-body">
+        Later ↓
       </div>
     </div>
   );
