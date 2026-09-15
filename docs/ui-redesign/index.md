@@ -124,11 +124,23 @@ What shipped is two materials that were already on screen:
   Only the two open ends are rounded — rounding every segment notches the rail at each row
   boundary, because the segments butt together. Nothing else is drawn on it.
 
+The drag indicator is **one persistent lit node** (`TimelineMarker`) that runs along the rail for
+the whole of a drag and settles into the gap the card will land in, on a soft under-damped spring
+so it trails the pointer and overshoots rather than flicking between slots. That it is a _single_
+element is the whole trick: a node born and destroyed with each ghost row can only ever pop. Its
+target is measured off the ghost row (`data-ghost-row`, `useInsertionMarker`) rather than computed
+from the gap index — the gap index is not a display-row index (tombstones interleave), a gap that
+already holds a tombstone hosts the ghost inside that row instead of inserting one, and the two
+ends extend the rail instead of sitting between neighbours. Measuring covers all of it with no
+special cases, and scroll is frozen during a drag so the offsets are stable.
+
 The moment that carries the idea is the **extension preview**: while a drag hovers past either
 end, the ghost row gets a rail segment that springs out of the existing line — `scaleY` from
 the anchored edge, never a fade — with a glowing tip that settles. The spring is deliberately
 under-damped (ζ ≈ 0.6, peak ×1.10 at ~225ms, settled ~450ms); a critically damped version
-arrived in ~150ms and nothing registered as having happened.
+arrived in ~150ms and nothing registered as having happened. The rail does **not** draw its own
+tip any more — the travelling marker is parked there when the gap is an end, so there is one
+glowing thing and one code path.
 
 Traps this round cost time on:
 

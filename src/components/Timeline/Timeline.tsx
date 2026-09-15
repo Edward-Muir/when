@@ -5,6 +5,8 @@ import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } fro
 import TimelineEvent from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
 import TimelineRail, { RailExtension } from './TimelineRail';
+import TimelineMarker from './TimelineMarker';
+import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { paperTone } from '../../utils/paperTone';
@@ -58,9 +60,15 @@ const BoardRow: React.FC<{
   last: boolean;
   extending?: RailExtension | null;
   timeScale: number;
+  /** This row is where the ghost card currently sits — the insertion marker homes in on it. */
+  ghost?: boolean;
   children: React.ReactNode;
-}> = ({ first, last, extending = null, timeScale, children }) => (
-  <div {...{ [PAPER_ROW_ATTR]: '' }} className="relative w-full">
+}> = ({ first, last, extending = null, timeScale, ghost = false, children }) => (
+  <div
+    {...{ [PAPER_ROW_ATTR]: '' }}
+    {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})}
+    className="relative w-full"
+  >
     <TimelineRail first={first} last={last} extending={extending} timeScale={timeScale} />
     {children}
   </div>
@@ -318,6 +326,7 @@ const Timeline: React.FC<TimelineProps> = ({
     return tones;
   }, [rows, railExtension]);
   const paperField = usePaperField(scrollRef, contentRef, rowTones);
+  const marker = useInsertionMarker(contentRef, ghostGap);
 
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
@@ -351,6 +360,7 @@ const Timeline: React.FC<TimelineProps> = ({
         first={railFirst(rowIndex)}
         last={railLast(rowIndex)}
         timeScale={railTimeScale}
+        ghost={rowIndex === ghostHostRowIndex}
       >
         <TombstoneRow
           failed={failed}
@@ -390,6 +400,7 @@ const Timeline: React.FC<TimelineProps> = ({
             last={false}
             extending={earlierExt}
             timeScale={railTimeScale}
+            ghost
           >
             <GhostCard event={ghost} />
           </BoardRow>
@@ -467,11 +478,16 @@ const Timeline: React.FC<TimelineProps> = ({
                 last={laterExt !== null}
                 extending={laterExt}
                 timeScale={railTimeScale}
+                ghost
               >
                 <GhostCard event={trailingGhost} />
               </BoardRow>
             )}
           </LayoutGroup>
+
+          {/* Outside the LayoutGroup on purpose: it drives its own transform, and layout
+              projection would fight it. */}
+          <TimelineMarker y={marker.y} visible={marker.visible} timeScale={railTimeScale} />
 
           {/* Bottom spacer: room to drop "later"; bounce runway below the last card */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />

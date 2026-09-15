@@ -5,7 +5,6 @@ import TopBar from '../components/TopBar';
 import ActiveCardDisplay from '../components/ActiveCardDisplay';
 import { GameInfoCompact } from '../components/PlayerInfo';
 import Timeline from '../components/Timeline/Timeline';
-import type { RailExtension } from '../components/Timeline/TimelineRail';
 import { useTheme } from '../hooks/useTheme';
 import { loadAllEvents } from '../utils/eventLoader';
 import type { HistoricalEvent, Player } from '../types';
@@ -20,7 +19,7 @@ import { buildBoard, drawOrder, MAX_BOARD } from './timelineLab/board';
  * past an end of the board does, so the rail extension shown here is the shipping one.
  *
  *   ?n=<1..30>          cards placed — the same draw order cut short, so n=5 is n=30's opening
- *   ?ghost=earlier|later  hold the drag preview at one end
+ *   ?ghost=earlier|later|<gap>  hold a fake drag at one end, or in any gap on the board
  *   ?slowmo=<1..12>     stretch the rail's growth in time, for catching it in a still
  *   ?row=<index>        scroll this row to the middle
  *   ?theme=light|dark
@@ -44,8 +43,16 @@ function mockPlayer(hand: HistoricalEvent[]): Player {
   return { id: 0, name: 'You', hand, hasWon: false, placementHistory: [] };
 }
 
-function readGhost(value: string | null): RailExtension | null {
-  return value === 'earlier' || value === 'later' ? value : null;
+/**
+ * The gap a held drag is previewing: `earlier` and `later` are the two ends, and a bare number
+ * is a gap index, so the harness can park the insertion marker anywhere on the board rather
+ * than only where the rail extends.
+ */
+function readGhostGap(value: string | null, boardLength: number): number | null {
+  if (value === 'earlier') return 0;
+  if (value === 'later') return boardLength;
+  const n = Number(value);
+  return Number.isInteger(n) && n >= 0 && n <= boardLength ? n : null;
 }
 
 function clampNum(raw: string | null, fallback: number, lo: number, hi: number): number {
@@ -63,7 +70,7 @@ const TimelineLab: React.FC = () => {
 
   const count = clampNum(params.get('n'), 14, 1, MAX_BOARD);
   const bare = params.get('bare') === '1';
-  const ghost = readGhost(params.get('ghost'));
+
   const timeScale = clampNum(params.get('slowmo'), 1, 1, 12);
   const rowParam = params.get('row');
 
@@ -99,8 +106,10 @@ const TimelineLab: React.FC = () => {
     setParams(next, { replace: true });
   };
 
-  const dragged = ghost ? (hand[0] ?? null) : null;
-  const insertionIndex = ghost === 'earlier' ? 0 : ghost === 'later' ? board.events.length : null;
+  const ghostGap = readGhostGap(params.get('ghost'), board.events.length);
+  const dragging = ghostGap !== null;
+  const dragged = dragging ? (hand[0] ?? null) : null;
+  const midGap = Math.max(1, Math.floor(board.events.length / 2));
 
   const phone =
     !all || board.events.length === 0 ? (
@@ -114,10 +123,10 @@ const TimelineLab: React.FC = () => {
           <Timeline
             events={board.events}
             onEventTap={noop}
-            isDragging={ghost !== null}
-            insertionIndex={insertionIndex}
+            isDragging={dragging}
+            insertionIndex={ghostGap}
             draggedCard={dragged}
-            isOverTimeline={ghost !== null}
+            isOverTimeline={dragging}
             lastPlacementResult={null}
             animationPhase={null}
             currentStreak={3}
@@ -139,7 +148,7 @@ const TimelineLab: React.FC = () => {
               activeCard={hand[0]}
               currentPlayer={player}
               isAnimating={false}
-              isOverTimeline={ghost !== null}
+              isOverTimeline={dragging}
               onCycleHand={noop}
               onCardTap={noop}
             />
@@ -193,27 +202,31 @@ const TimelineLab: React.FC = () => {
           </section>
 
           <section className="space-y-2">
-            <h2 className="text-sm font-semibold text-text-muted">Rail extension preview</h2>
-            <div className="flex gap-2">
-              <button className={chip(ghost === null)} onClick={() => update({ ghost: 'off' })}>
+            <h2 className="text-sm font-semibold text-text-muted">Insertion marker</h2>
+            <div className="flex flex-wrap gap-2">
+              <button className={chip(ghostGap === null)} onClick={() => update({ ghost: 'off' })}>
                 At rest
               </button>
-              <button
-                className={chip(ghost === 'earlier')}
-                onClick={() => update({ ghost: 'earlier' })}
-              >
+              <button className={chip(ghostGap === 0)} onClick={() => update({ ghost: 'earlier' })}>
                 Reaching earlier
               </button>
               <button
-                className={chip(ghost === 'later')}
+                className={chip(ghostGap === midGap)}
+                onClick={() => update({ ghost: String(midGap) })}
+              >
+                Mid-board
+              </button>
+              <button
+                className={chip(ghostGap === board.events.length)}
                 onClick={() => update({ ghost: 'later' })}
               >
                 Reaching later
               </button>
             </div>
             <p className="max-w-prose text-sm leading-relaxed text-text-muted">
-              Holds the state a real drag past either end puts the board in. Click the same chip
-              twice to replay it.
+              Holds the state a real drag puts the board in. The marker travels between these, so
+              click from one chip to another to watch it move; the same chip twice replays the
+              arrival.
             </p>
           </section>
         </aside>
