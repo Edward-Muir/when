@@ -3,15 +3,18 @@ import { CSSProperties, RefObject, useCallback, useLayoutEffect, useState } from
 /**
  * The board's paper: one continuous gradient behind the whole scroll content.
  *
- * The crossfade has a FIXED length. It starts at the first card and runs warm → cool over
- * `RAMP_PX`, then holds cool for as long as the board goes on. A short board therefore shows
- * only the opening of the ramp and a long one reveals more of it — the progression is in how
- * much of the sweep you have uncovered, not in the sweep itself.
+ * The crossfade has a FIXED length and is CENTRED on the middle of the board. It runs warm →
+ * cool over `RAMP_PX` either side of that midpoint, and holds flat beyond it in both
+ * directions. A short board therefore sits inside the ramp and shows only its middle — muted at
+ * both ends — while a longer board reaches past it on both sides, saturating to full warm at
+ * the top and full cool at the bottom. The progression is in how much of the sweep you have
+ * uncovered, not in the sweep itself changing shape.
  *
- * That is the point: the ramp never rescales. It used to be stretched to fit the content with a
- * stop per row, so every placement moved the gradient under every existing card. Now the only
- * thing a new card changes is how far the flat tail runs, and `rampStart` is the top runway's
- * height, which never changes either. Nothing moves.
+ * The ramp never rescales. It used to be stretched to fit the content with a stop per row, so
+ * every placement redrew the gradient under every existing card. Now a placement only re-centres
+ * it: the board grows by one row, so the midpoint moves half a row and the ramp follows. Against
+ * a crossfade this long that is a fraction of a percent of the tone range — the paper under a
+ * card you already placed does not visibly move.
  *
  * Because the stops are plain `var(--paper-*)` rather than colours mixed in JS, a theme switch
  * repaints on its own with nothing to recompute.
@@ -32,19 +35,16 @@ import { CSSProperties, RefObject, useCallback, useLayoutEffect, useState } from
  * `.tl-edge-mask` fades the scroller out. Both would otherwise expose the untinted page colour
  * behind the paper, which reads as a hard grey edge. A bounce can only happen at scrollTop 0 or
  * at the maximum, where the board is showing its first or last runway — so the backdrop runs
- * from the ramp's start colour to whatever colour the board has actually reached.
+ * between the colours the ramp actually reaches at the very top and very bottom of the content.
  */
-
-/** Marks a board row. Only the first one is read, to anchor the ramp below the top runway. */
-export const PAPER_ROW_ATTR = 'data-paper-row';
 
 /**
  * How long the warm → cool crossfade is, in px. Fixed on purpose — this is the one number that
- * decides how much of the sweep a board of a given length reveals. At ~88px a row: five cards
- * show about a fifth of it, fourteen a little over half, and a good game of thirty or so
- * uncovers the whole thing and then runs on flat.
+ * decides how much of the sweep a board of a given length reveals. At ~88px a row, a board of
+ * about twelve cards spans it exactly; anything shorter sits inside it, anything longer runs
+ * past it into flat warm above and flat cool below.
  */
-const RAMP_PX = 2200;
+const RAMP_PX = 1100;
 
 export interface PaperField {
   /** The field itself: an absolutely positioned child of the scroller. */
@@ -63,9 +63,9 @@ function same(a: PaperField | null, b: PaperField): boolean {
   );
 }
 
-/** The ramp colour a given distance past its start, as a mix of the two paper tones. */
-function toneAt(px: number): string {
-  const t = Math.min(1, Math.max(0, px / RAMP_PX));
+/** The ramp's colour at a given content offset, as a mix of the two paper tones. */
+function toneAt(y: number, rampStart: number): string {
+  const t = Math.min(1, Math.max(0, (y - rampStart) / RAMP_PX));
   return `color-mix(in oklab, var(--paper-late) ${(t * 100).toFixed(1)}%, var(--paper-early))`;
 }
 
@@ -81,21 +81,24 @@ export function usePaperField(
     const height = content.scrollHeight;
     if (height <= 0) return;
 
-    // Anchor at the first card, so the runway above it stays flat and the sweep begins where
-    // the board does. This is the top runway's height, which does not change as cards land.
-    const firstRow = content.querySelector<HTMLElement>(`[${PAPER_ROW_ATTR}]`);
-    const rampStart = firstRow ? firstRow.offsetTop : 0;
+    // The board's midpoint. The two 50vh runways are equal, so the centre of the content is
+    // also the centre of the card stack — no need to measure any rows to find it.
+    const rampStart = height / 2 - RAMP_PX / 2;
+    const rampEnd = rampStart + RAMP_PX;
 
     const next: PaperField = {
       style: {
         height,
-        // A gradient's last stop carries on to the end, so the flat cool tail needs no stop.
+        // Two stops is the whole gradient: a first stop's colour extends back to the top of the
+        // box and a last stop's carries on to the bottom, which is exactly the flat warm head
+        // and flat cool tail. `rampStart` goes negative on a board shorter than the ramp, which
+        // is well-formed CSS and renders the middle slice of the sweep — the case this is for.
         backgroundImage:
-          'linear-gradient(to bottom, var(--paper-early) 0px, ' +
-          `var(--paper-early) ${rampStart}px, var(--paper-late) ${rampStart + RAMP_PX}px)`,
+          `linear-gradient(to bottom, var(--paper-early) ${rampStart.toFixed(1)}px, ` +
+          `var(--paper-late) ${rampEnd.toFixed(1)}px)`,
       },
       edge: {
-        backgroundImage: `linear-gradient(to bottom, var(--paper-early), ${toneAt(height - rampStart)})`,
+        backgroundImage: `linear-gradient(to bottom, ${toneAt(0, rampStart)}, ${toneAt(height, rampStart)})`,
       },
     };
     // Without this the ResizeObserver's own commit re-renders, re-measures and commits again.

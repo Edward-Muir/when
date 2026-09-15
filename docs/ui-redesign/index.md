@@ -107,13 +107,24 @@ figure set in Playfair. Never colour coding, never a badge or a bar.**
 What shipped is two materials that were already on screen:
 
 - **The paper** (`usePaperField.ts`, `--paper-early/-late` in index.css). Two tones a few
-  percent either side of `--color-bg`, with a **fixed-length crossfade**: the ramp starts at the
-  first card and runs warm → cool over a constant `RAMP_PX`, then holds cool however long the
-  board gets. A short board shows only the opening of the sweep and a long one reveals more of
-  it — the progression is in how much you have uncovered, not in the sweep itself. Nothing
-  moves: the ramp's stops are byte-identical at 3, 5, 14 and 30 cards, and across a whole played
-  game there is exactly one ramp definition; only the flat tail lengthens. `rampStart` is the top
-  runway's height, which does not change as cards land.
+  percent either side of `--color-bg`, with a **fixed-length crossfade centred on the board**:
+  `RAMP_PX` (1100px) of warm → cool straddling the content's midpoint, flat warm above it and
+  flat cool below. A short board sits _inside_ the ramp and shows only its muted middle; a longer
+  board reaches past it on both sides and saturates at both ends. The progression is in how much
+  of the sweep you have uncovered, not in the sweep changing shape — the ramp never rescales.
+  - Two details that look like bugs and are not. `rampStart` goes **negative** on a board shorter
+    than the ramp (at one card it is about −22px); negative colour stops are well-formed CSS and
+    render exactly the middle slice we want. And the whole gradient is **two stops**: a first
+    stop's colour extends back to the top of the box and a last stop's carries on to the bottom,
+    which is the flat head and tail for free.
+  - The midpoint is `scrollHeight / 2`, not a measured row. The two 50vh runways are equal, so the
+    centre of the content _is_ the centre of the card stack — no row needs a marker. (The
+    `data-paper-row` attribute this used to need is gone.)
+  - Honest trade-off: centring means the ramp is no longer strictly static. A placement grows the
+    board by a row, so the midpoint moves half a row (~44px) and the ramp follows. Against an
+    1100px crossfade that is a fraction of a percent of the tone range and is not visible, but it
+    is a real shift — the earlier revision anchored at the first card precisely to avoid it, and
+    lost the symmetry in exchange.
   - This replaced a ramp that was **stretched to the content with a stop per row**, keyed to each
     card's year on a log-of-time-before-now scale. That was defensible but wrong in practice: it
     rescaled on every placement, so the paper under every existing card shifted, and a board
@@ -122,7 +133,8 @@ What shipped is two materials that were already on screen:
     longer tints anything. Because the stops are now plain `var(--paper-*)` rather than colours
     mixed in JS, a theme switch repaints with nothing to recompute.
   - Consequence worth knowing: on a very long board (My Timeline, hundreds of rows) the sweep
-    completes in the first `RAMP_PX` and everything past it is flat cool.
+    completes within `RAMP_PX` of the middle, and everything beyond is flat warm above / flat
+    cool below.
 - **The rail** (`src/components/Timeline/TimelineRail.tsx`). Drawn one segment per row rather
   than as one absolute bar, for two reasons: it then spans exactly the rows that exist, so the
   runway above the first card and below the last is bare paper; and it is aligned to the ticks

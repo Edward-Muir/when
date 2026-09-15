@@ -11,7 +11,7 @@ import { useRailGrowth } from './useRailGrowth';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
-import { PAPER_ROW_ATTR, usePaperField } from './usePaperField';
+import { usePaperField } from './usePaperField';
 import { useTimelineWaves } from './useTimelineWaves';
 import { useWakeDelays } from './useWakeDelays';
 import {
@@ -65,11 +65,7 @@ const BoardRow: React.FC<{
   ghost?: boolean;
   children: React.ReactNode;
 }> = ({ first, last, extending = null, grow = true, timeScale, ghost = false, children }) => (
-  <div
-    {...{ [PAPER_ROW_ATTR]: '' }}
-    {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})}
-    className="relative w-full"
-  >
+  <div {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})} className="relative w-full">
     <TimelineRail
       first={first}
       last={last}
