@@ -88,6 +88,61 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## Timeline progression: the paper and the rail (2026-09)
+
+The board looks identical at 5 cards and at 30, so a long timeline is a bigger number rather
+than a better-looking thing. This round asked what could make it _accumulate_. It lives on
+`claude/timeline-visual-interest-oz659a` behind a dev-only route, `/timeline-lab` (no
+`vercel.json` rewrite, no in-app link), driven entirely by query string so a script needs no
+clicks: `?v= &n= &fit=1 &paper= &ghost=earlier|later &slowmo= &row= &theme= &bare=1`.
+
+**The era-palette family is now rejected twice.** An eight-colour era wash, era chapter
+headings, an era spine, a history coverage bar, a colour-coded rail and rail beads were all
+built on real data and shot at 5 / 14 / 30 cards; the verdict was that the earlier rounds'
+work (see § "Timeline surface: three directions ruled out") is _an example of what not to do_
+and must not be the basis of anything. Do not rebuild it. The standing rule from that steer:
+**a new mark on the board is allowed only if it is typographic and monochrome — a hairline, a
+figure set in Playfair. Never colour coding, never a badge or a bar.**
+
+What survived is two materials that are already on screen:
+
+- **The paper** (`src/utils/paperTone.ts`, `.tl-paper*` in index.css). Two tones a few percent
+  either side of `--color-bg`, interpolated per row. Two decisions worth not relitigating:
+  the scale is **absolute, not normalised to the current board** (normalising shows a full
+  sweep at two cards and never changes again — the opposite of progression), and it is **log of
+  time-before-now, not linear years** (perceived age is logarithmic, and the catalogue is
+  roughly half pre-1500, so a linear ramp squashes every modern board into one sliver). The
+  consequence to be honest about: the tint keys off _what is in the viewport_, so it is most
+  visible at 5 cards and in the whole-board view, and flat in a 7-row window of a 30-card
+  board. It tells you where in history you are; it is not by itself the progression.
+- **The rail** (`src/components/Timeline/TimelineRail.tsx`). Drawn one segment per row rather
+  than as one absolute bar, for two reasons: it then spans exactly the rows that exist, so the
+  runway above and below is bare paper; and it is aligned to the ticks by construction at any
+  row height (see the BOARD COLUMN invariant in index.css). Nothing is drawn on it.
+
+The moment that carries the idea is the **extension preview**: while a drag hovers past either
+end, the ghost row gets a rail segment that springs out of the existing line — `scaleY` from
+the anchored edge, never a fade — with a glowing tip that settles. The spring is deliberately
+under-damped (ζ ≈ 0.6, peak ×1.10 at ~225ms, settled ~450ms); a critically damped version
+arrived in ~150ms and nothing registered as having happened.
+
+Traps this round cost time on:
+
+- **A 320ms spring is quicker than a Playwright screenshot round-trip.** Every frame came back
+  already settled. `Animation.setPlaybackRate` over CDP did _not_ reach framer-motion's
+  animation even though the WebAnimation is visible to `Animation.enable`. What works is
+  `TimelineRail`'s `timeScale` prop (the lab's `?slowmo=`): scaling a spring's time by k is
+  exactly `stiffness/k²` and `damping/k`, so a slowed capture shows the real curve. The
+  screenshot script also reads the segment's live `scaleY` at each capture, so the strip's
+  captions are measured rather than inferred from the wall clock.
+- **Changing a lab URL param with `page.goto` remounts the tree, so nothing animates.** Use
+  `history.pushState` + a synthetic `popstate`; React Router picks it up and the component
+  updates in place.
+- **The ghost row must inherit its neighbour's paper tone.** Its card is face-down — tinting
+  that row by the hidden card's year would put the answer on the page.
+- Row-level decoration keyed off `event.color` is a dead end: those values are image-derived
+  and almost all dark brown, so anything painted with them reads as dirt.
+
 ## Onboarding hints (2026-09)
 
 Players said the app did not explain itself: the rules were three lines that omitted the

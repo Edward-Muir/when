@@ -114,6 +114,81 @@ body {
   }
 }
 
+/* ===========================================================================
+   TIMELINE PROGRESSION — the paper and the rail.
+
+   PAPER. Two tones, each only a few percent off --color-bg: --paper-early (warm) and
+   --paper-late (cool). A row's tint is an interpolation between them keyed to the row's
+   YEAR (paperTone() in src/utils/paperTone.ts), not to an era bucket — deliberately no
+   bands, no named chapters, no palette. Because the scale is absolute, a board sitting
+   inside one century stays flat and only a board that reaches back earns the warm end;
+   that is what makes it grow with the timeline instead of with the viewport.
+
+   Same trap as `.bg-player-row`: color-mix, never `/NN` on a theme token. No calc()
+   wrapped around max()/min()/clamp() anywhere here (postcss-calc; see BOARD COLUMN below).
+   =========================================================================== */
+:root {
+  --paper-early: #f3ece0;
+  --paper-late: #eaeef1;
+}
+.dark {
+  --paper-early: #181510;
+  --paper-late: #0b1c29;
+}
+
+@layer utilities {
+  /* One row's slice of the ramp: the row above's tone blending into this row's, so the
+     board is a single continuous gradient however the rows are spaced. --tone / --tone-prev
+     are set inline per row; --paper-pct mixes the whole thing toward the page. */
+  .tl-paper {
+    background-image: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--tone-prev) var(--paper-pct, 100%), var(--color-bg)),
+      color-mix(in srgb, var(--tone) var(--paper-pct, 100%), var(--color-bg)) 72%
+    );
+  }
+  .tl-paper-flat {
+    background-color: color-mix(in srgb, var(--tone) var(--paper-pct, 100%), var(--color-bg));
+  }
+  /* Tinted paper has no flat colour to fade into, so the board's edges dissolve whatever
+     tone is under them rather than fading to --color-bg. */
+  .tl-edge-mask {
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 56px,
+      #000 calc(100% - 56px),
+      transparent
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent,
+      #000 56px,
+      #000 calc(100% - 56px),
+      transparent
+    );
+  }
+  /* The rail, drawn per row so it spans exactly the rows that exist. Nothing on it. */
+  .tl-rail {
+    background-color: var(--color-accent);
+  }
+  .tl-rail-cap-top {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 46%, #000 54%);
+    mask-image: linear-gradient(to bottom, transparent 46%, #000 54%);
+  }
+  .tl-rail-cap-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
+    mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
+  }
+  /* The growing tip: the leading end of a rail extension while a drag previews it. */
+  .tl-rail-tip {
+    background-color: var(--color-accent);
+    box-shadow:
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 55%, transparent),
+      0 0 22px 6px color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+}
+
 /* Game-start loading scrim (GameStartTransition.tsx). A full-width band of background
    wash that is masked so it fades to nothing above and below: the intro timeline stays
    sharp at the top and bottom of the screen and dissolves only where the title sits, so
