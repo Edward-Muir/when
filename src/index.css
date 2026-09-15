@@ -173,12 +173,39 @@ body {
   .tl-rail {
     background-color: var(--color-accent);
   }
-  /* The growing tip: the leading end of a rail extension while a drag previews it. */
+  /* The growing tip: the leading end of a rail extension while a drag previews it, and the
+     travelling marker that becomes a tick when the card lands (TimelineMarker.tsx). */
   .tl-rail-tip {
     background-color: var(--color-accent);
     box-shadow:
       0 0 10px 2px color-mix(in srgb, var(--color-accent) 55%, transparent),
       0 0 22px 6px color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+  /* A wrong drop snuffs the marker where it stands: the glow goes out over the red flash, and
+     what travels to the card's true slot is a dead grey dot. Declared after .tl-rail-tip so it
+     wins on equal specificity; the transition is what makes it a fade rather than a cut. */
+  .tl-rail-tip-snuffed {
+    box-shadow: none;
+    transition: box-shadow var(--anim-tip-snuff-dur, 0.35s) ease-out;
+  }
+  /* The dash a correct placement lands as: it arrives still carrying the marker's glow and
+     gives it up. The resting value is `none` and the fill is `forwards`, so there is nothing
+     for the end of the animation to snap back to — the bug that made the placement vignette
+     flash twice (see .vignette-overlay). */
+  .tl-tick-glow {
+    box-shadow: none;
+    animation: tickGlowDecay var(--anim-tick-glow-dur, 0.4s) ease-out forwards;
+  }
+}
+
+@keyframes tickGlowDecay {
+  from {
+    box-shadow:
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 55%, transparent),
+      0 0 22px 6px color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+  to {
+    box-shadow: none;
   }
 }
 
@@ -700,7 +727,8 @@ input,
   .animate-shine-sweep,
   .animate-halo-pulse,
   .animate-hint-lift,
-  .animate-vignette {
+  .animate-vignette,
+  .tl-tick-glow {
     animation: none;
   }
 

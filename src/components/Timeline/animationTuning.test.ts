@@ -38,6 +38,11 @@ describe('DEFAULT_TUNING', () => {
         rejectionSpring: { stiffness: 300, damping: 20 },
         errorPulseDurS: 0.6,
       },
+      tick: {
+        morphSpring: { stiffness: 420, damping: 26, mass: 0.8 },
+        glowDecayS: 0.4,
+        snuffS: 0.35,
+      },
       wake: {
         amplitudePx: 5,
         bumpOffsetS: 0.05,

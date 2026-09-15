@@ -187,6 +187,56 @@ arrived in ~150ms and nothing registered as having happened. The rail does **not
 tip any more — the travelling marker is parked there when the gap is an end, so there is one
 glowing thing and one code path.
 
+### The landing: the dot becomes the tick (2026-09)
+
+The marker does not fade out at the end of a drag any more — it **turns into the tick** on the
+row the card lands as. The two were always neighbours: the board column invariant puts the dash
+at board-left 84→96 and the rail at 96→100, with the marker riding the rail's centre at 98. So a
+correct placement is an ~8px slide left plus a change of shape, 6×8 and round becoming 12×4 and
+square, with the glow decaying over ~400ms to an ordinary tick. Nothing new appears on the board.
+
+That 8px is **never written down as the distance between the two**. `dotStart` measures both ends
+and subtracts, so the landing follows the board column if it ever moves rather than quietly
+pointing at the wrong place. (`RAIL_TO_TICK` in `tickLanding.ts` does state 8, derived from the
+dash and rail widths — it is needed for the snuff step below, before either end exists, and a test
+pins it against the measured path.)
+
+A **wrong** drop is the same two halves with the middle filled in: the marker snuffs where it
+stands during the red flash (glow out, down to the tombstone dash's opacity) and steps off the
+rail into the gutter; then, at 400ms, the tombstone's own dash takes over as a dead grey dot,
+rides to the card's true slot on the reveal FLIP's own tween and ease, and grows there. The guess
+ends by pointing at where the card belonged.
+
+- **The step off the rail is not decoration.** An unlit dot at 40% on top of a full-strength
+  accent rail is invisible — measured, not guessed. The travel only reads because the dot is on
+  bare paper in the tick column by the time it starts moving.
+- **The origin is where the marker was _painted_, not where it was going.** `useInsertionMarker`
+  reports the spring's target and the marker deliberately trails it; on a quick drop the two are
+  tens of pixels apart. `TimelineMarker` therefore reports its live position through `onPosition`
+  every frame, into a ref the dash reads once.
+- **Both ends are measured in one layout effect**, which is what makes plain viewport coordinates
+  safe: nothing can scroll between two reads in the same effect. Neither end is ever stored.
+- **The animation starts from a layout effect, not framer's `initial`.** The offset is only
+  knowable once the element is in the DOM, and a render → measure → re-render would paint one
+  frame of the dash at rest before the marker had handed over — the exact seam this removes. The
+  props are snapshotted at mount, because the "this row just landed" flags clear a few hundred ms
+  later while the animation is still running.
+- **The dash is two boxes.** A fixed 12×4 placeholder keeps the gutter's layout still — animating
+  the real thing would shove the year label on every placement, and the board's content is under
+  two ResizeObservers. The inner box is absolutely positioned and animates `width`/`height`
+  rather than `scale`, because scaling 12×4 to 6×8 is anisotropic and would render the glow as an
+  ellipse at exactly the moment the shape is meant to match the marker's.
+- **`animate-entrance` moved off the row onto the card slot.** A row-level opacity fade
+  composites onto the gutter, so it faded the landing dash up from zero. The row no longer
+  arrives as a block: the card slides up, the year pops, the tick grows out of the marker.
+- **Two invisible ticks were fixed on the way past.** The ghost row's and the ghost-hosting
+  tombstone's used `bg-accent/50`, which compiles to nothing here. Note the ghost _row_ already
+  carries `opacity-ghost`, so its dash must be plain, not dimmed again.
+- The dev rigs drive the board with `isDragging={false}`, so no marker ever exists and the landing
+  sits out — by design, since a null origin is the safe failure. `scripts/tick-landing-probe.js`
+  plays a real game instead and samples the geometry per frame; stills are useless here, because
+  the screenshot pipeline lags a CPU-throttled page badly enough to miss a 350ms morph.
+
 Traps this round cost time on:
 
 - **The field alone is not enough: the board needs a backdrop too.** The field covers the

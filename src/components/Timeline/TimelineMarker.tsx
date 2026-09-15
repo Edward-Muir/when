@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { motion, useReducedMotion } from 'framer-motion';
+import { useAnimationTuning } from './animationTuning';
+import { RAIL_TO_TICK, type Point } from './tickLanding';
 import type { Rect } from './useInsertionMarker';
 
 /**
@@ -20,6 +22,17 @@ import type { Rect } from './useInsertionMarker';
  * it for most of a drag. The board's own top and bottom bands fade it out too, because the
  * scroller carries `.tl-edge-mask`. Both go away by rendering it to `body` in viewport
  * coordinates, above the overlay. Nothing about how it looks changes.
+ *
+ * ## How it ends
+ *
+ * It does not fade out any more; it hands over. On a correct drop the tick on the new row takes
+ * its place in the very same commit, so the marker has to be gone on that frame — a fade would
+ * leave a second glowing thing sitting behind the first. On a wrong one it stays put and
+ * SNUFFS: the glow goes out, it drops to the tombstone dash's opacity, and it steps off the rail
+ * into the gutter, all over the red flash — so what sets off for the card's true slot 400ms later
+ * is a dead grey dot travelling down bare paper. That step is not decoration: an unlit dot on top
+ * of a full-strength accent rail is invisible, and the whole point of the trip is to watch it.
+ * Only a drag that ends without a placement still simply fades.
  *
  * ## Why it is also clipped
  *
@@ -43,14 +56,49 @@ const MARKER_W = 6;
 /** Clears dnd-kit's drag overlay, which defaults to 999. */
 const ABOVE_DRAG_OVERLAY = 1001;
 
+/**
+ * `drag` — following the pointer. `snuff` — a wrong drop: hold position, go out. `gone` — a
+ * correct drop: the tick has it now, leave the frame immediately. `idle` — no drag, fade away.
+ */
+export type MarkerPhase = 'drag' | 'snuff' | 'gone' | 'idle';
+
+/** What the marker dims to when it snuffs — the tombstone dash's `opacity-40`. */
+const SNUFFED_OPACITY = 0.4;
+
 interface TimelineMarkerProps {
   x: number;
   y: number;
   /** The board's bounds; the marker is clipped to these. */
   clip: Rect;
-  visible: boolean;
+  phase: MarkerPhase;
+  /**
+   * Called every frame with the dot's PAINTED viewport centre. The tick a placement lands as
+   * grows out of that point, and it has to be where the dot actually is: `x`/`y` above are the
+   * spring's target, and on a quick drop the dot is still tens of pixels behind it.
+   */
+  onPosition?: (p: Point) => void;
   /** Stretches the travel in time for the screenshot rig, exactly as TimelineRail's does. */
   timeScale?: number;
+}
+
+function opacityFor(phase: MarkerPhase): number {
+  if (phase === 'drag') return 1;
+  if (phase === 'snuff') return SNUFFED_OPACITY;
+  return 0;
+}
+
+/**
+ * A handover has to be instant: the replacement tick is already on screen this frame, and any
+ * fade at all would show the two of them overlapping. The dim on a snuff rides the red flash.
+ */
+function fadeDuration(
+  phase: MarkerPhase,
+  shouldReduceMotion: boolean | null,
+  snuffS: number
+): number {
+  if (shouldReduceMotion || phase === 'gone') return 0;
+  if (phase === 'snuff') return snuffS;
+  return 0.18;
 }
 
 function travelSpring(timeScale: number) {
@@ -62,8 +110,18 @@ function travelSpring(timeScale: number) {
   };
 }
 
-const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, clip, visible, timeScale = 1 }) => {
+const TimelineMarker: React.FC<TimelineMarkerProps> = ({
+  x,
+  y,
+  clip,
+  phase,
+  onPosition,
+  timeScale = 1,
+}) => {
   const shouldReduceMotion = useReducedMotion();
+  const tuning = useAnimationTuning();
+  const visible = phase === 'drag' || phase === 'snuff';
+  const snuffS = shouldReduceMotion ? 0 : tuning.tick.snuffS * timeScale;
 
   // One key per drag, so the node persists and glides WITHIN a drag but is re-created between
   // them. Without this it would fly across the board from wherever the last drag left it.
@@ -88,19 +146,30 @@ const TimelineMarker: React.FC<TimelineMarkerProps> = ({ x, y, clip, visible, ti
     >
       <motion.div
         key={session.current}
-        data-insertion-marker={visible ? 'on' : 'off'}
-        className="tl-rail-tip pointer-events-none absolute left-0 top-0 h-2 w-1.5 rounded-full"
+        data-insertion-marker={phase}
+        className={`tl-rail-tip pointer-events-none absolute left-0 top-0 h-2 w-1.5 rounded-full ${
+          phase === 'snuff' ? 'tl-rail-tip-snuffed' : ''
+        }`}
         initial={false}
+        // The clip box's origin put these in local space; undo it on the way back out.
+        onUpdate={(latest) =>
+          onPosition?.({
+            x: clip.left + Number(latest.x) + MARKER_W / 2,
+            y: clip.top + Number(latest.y) + MARKER_H / 2,
+          })
+        }
         // Positions are measured in viewport space; the clip box's origin brings them local.
         animate={{
-          x: x - clip.left - MARKER_W / 2,
+          x: x - clip.left - MARKER_W / 2 - (phase === 'snuff' ? RAIL_TO_TICK : 0),
           y: y - clip.top - MARKER_H / 2,
-          opacity: visible ? 1 : 0,
+          opacity: opacityFor(phase),
         }}
         transition={{
-          x: { duration: 0 },
+          // Instant while dragging — x only changes on a resize — but the step off the rail is
+          // part of the snuff and has to be seen happening.
+          x: phase === 'snuff' ? { duration: snuffS } : { duration: 0 },
           y: shouldReduceMotion ? { duration: 0 } : travelSpring(timeScale),
-          opacity: { duration: shouldReduceMotion ? 0 : 0.18 * timeScale },
+          opacity: { duration: fadeDuration(phase, shouldReduceMotion, snuffS) },
         }}
       />
     </div>,
