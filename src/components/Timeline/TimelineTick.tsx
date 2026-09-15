@@ -31,6 +31,12 @@ import { dotStart, landingKeyframes, landingTransition, Point } from './tickLand
  * would render the glow as an ellipse and the corner radius as a lozenge at exactly the moment
  * the shape is meant to match the marker's.
  *
+ * `variant="none"` keeps the outer box and drops the inner one: the footprint with nothing in it.
+ * That is what the drag's insertion gap draws, so the only mark there is the travelling dot and
+ * the dash's first appearance is the landing itself. It cannot be an omitted element — the gutter
+ * is a fixed 96px column ending in this box, so removing it would shove the row's label 12px
+ * right, against the rail, on every gap the drag previews.
+ *
  * ## Why the origin is a ref, and why it is read imperatively
  *
  * `originRef` carries where the marker was last *painted*. Not where it was heading:
@@ -46,7 +52,7 @@ import { dotStart, landingKeyframes, landingTransition, Point } from './tickLand
  * safe here, and why neither end is ever stored.
  */
 
-export type TickVariant = 'normal' | 'ghost' | 'muted';
+export type TickVariant = 'normal' | 'muted' | 'none';
 
 interface TimelineTickProps {
   variant?: TickVariant;
@@ -60,16 +66,9 @@ interface TimelineTickProps {
   travelMs?: number;
 }
 
-/** Ghost rows and tombstones draw a fainter dash. NOT `bg-accent/50` — see index.css. */
+/** Tombstones draw a fainter dash. NOT `bg-accent/40` — see index.css. */
 function variantClass(variant: TickVariant): string {
-  switch (variant) {
-    case 'ghost':
-      return 'opacity-50';
-    case 'muted':
-      return 'opacity-40';
-    default:
-      return '';
-  }
+  return variant === 'muted' ? 'opacity-40' : '';
 }
 
 const TimelineTick: React.FC<TimelineTickProps> = ({
@@ -89,13 +88,15 @@ const TimelineTick: React.FC<TimelineTickProps> = ({
   const [arriving] = useState(travelMs);
   const [lit] = useState(glow && landing);
   const played = useRef(false);
+  // An empty footprint: no dash to grow, and nothing for the marker to hand over to.
+  const blank = variant === 'none';
 
   useLayoutEffect(() => {
     const el = scope.current;
     const origin = originRef?.current ?? null;
     // No origin means no drag produced this placement — a replay, or one of the dev harnesses
     // driving the board directly. The dash is already right at rest, so that is the failure.
-    if (!arming || !el || !box.current || origin === null || shouldReduceMotion) return;
+    if (blank || !arming || !el || !box.current || origin === null || shouldReduceMotion) return;
     // StrictMode double-invokes mount effects; restarting the morph would show its first frame
     // twice.
     if (played.current) return;
@@ -115,11 +116,13 @@ const TimelineTick: React.FC<TimelineTickProps> = ({
       data-tick={variant}
       className={`relative w-3 h-1 shrink-0 ${variantClass(variant)}`}
     >
-      <div
-        ref={scope}
-        data-tick-body
-        className={`absolute left-0 top-0 h-full w-full bg-accent ${lit ? 'tl-tick-glow' : ''}`}
-      />
+      {!blank && (
+        <div
+          ref={scope}
+          data-tick-body
+          className={`absolute left-0 top-0 h-full w-full bg-accent ${lit ? 'tl-tick-glow' : ''}`}
+        />
+      )}
     </div>
   );
 };

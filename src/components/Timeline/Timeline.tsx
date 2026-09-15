@@ -85,9 +85,10 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     {/* Year column (fixed 96px width) */}
     <div className="w-24 flex items-center justify-end shrink-0">
       <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">?</span>
-      {/* Plain, not `ghost`: the whole row is already at `opacity-ghost` (0.5), so dimming the
-          dash again would put it at a quarter strength and break the board column's one look. */}
-      <TimelineTick />
+      {/* No dash at all, only its footprint. The gap the drag is previewing is where the lit
+          marker is sitting, and the marker's whole point is that it BECOMES the dash when the
+          card lands — a dash already drawn here leaves the landing with nothing to reveal. */}
+      <TimelineTick variant="none" />
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">

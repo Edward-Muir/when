@@ -102,7 +102,9 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">
               ?
             </span>
-            <TimelineTick variant="ghost" />
+            {/* The second place the drag's gap is drawn: no dash, same as the inserted ghost
+                row — the marker is the only mark at the gap. See TimelineTick. */}
+            <TimelineTick variant="none" />
           </>
         ) : (
           <>

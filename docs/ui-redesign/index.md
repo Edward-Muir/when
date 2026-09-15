@@ -229,13 +229,28 @@ ends by pointing at where the card belonged.
 - **`animate-entrance` moved off the row onto the card slot.** A row-level opacity fade
   composites onto the gutter, so it faded the landing dash up from zero. The row no longer
   arrives as a block: the card slides up, the year pops, the tick grows out of the marker.
-- **Two invisible ticks were fixed on the way past.** The ghost row's and the ghost-hosting
-  tombstone's used `bg-accent/50`, which compiles to nothing here. Note the ghost _row_ already
-  carries `opacity-ghost`, so its dash must be plain, not dimmed again.
-- The dev rigs drive the board with `isDragging={false}`, so no marker ever exists and the landing
-  sits out — by design, since a null origin is the safe failure. `scripts/tick-landing-probe.js`
-  plays a real game instead and samples the geometry per frame; stills are useless here, because
-  the screenshot pipeline lags a CPU-throttled page badly enough to miss a 350ms morph.
+- **The gap a drag is previewing draws no dash at all** (`TimelineTick`'s `variant="none"`, 2026-09).
+  It used to draw a faint one, which gave the landing nothing to reveal: the dot flattened into a
+  tick that had been sitting there the whole drag, and the board showed the answer's position
+  before the card was dropped. Now the only mark at the gap is the travelling marker, and the
+  dash's first appearance _is_ the landing. Two things this depends on:
+  - **The footprint stays.** `variant="none"` keeps the outer 12×4 box and drops only the painted
+    inner one. The gutter is a fixed 96px column that _ends_ in that box, so omitting the element
+    would shove the ghost row's `?` 12px right, against the rail, on every gap the drag previews.
+    `TimelineTick.test.tsx` pins both halves of that.
+  - **There are two ghost render sites**, and a change to one that misses the other is invisible
+    until a drag happens to hover a gap that already holds a tombstone: `GhostCard` in
+    `Timeline.tsx` (the inserted row) and `TombstoneRow`'s `ghostEvent` branch (the ghost takes
+    the tombstone's row instead of inserting one). Both draw `none`. The earlier
+    `bg-accent/50`-compiles-to-nothing bug lived in exactly this pair.
+- The dev rigs cover the drag but not the drop. `/anim-jig` drives the board with
+  `isDragging={false}`, so no marker exists there at all. `/timeline-lab?ghost=…` _does_ fake a
+  real drag — `isDragging` + `insertionIndex` straight onto `Timeline`'s props — so the ghost row
+  and the marker are both live and it is the right place to check what the gap looks like. Neither
+  can commit a placement, so the landing itself still sits out; a null origin is the safe failure.
+  `scripts/tick-landing-probe.js` plays a real game instead and samples the geometry per frame;
+  stills are useless for the morph, because the screenshot pipeline lags a CPU-throttled page
+  badly enough to miss 350ms. They are fine for the drag, which holds still.
 
 Traps this round cost time on:
 

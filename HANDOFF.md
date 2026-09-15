@@ -36,6 +36,11 @@ Four things landed, in order:
   the tombstone dash's opacity) and steps off the rail; then the tombstone's own dash takes over
   as a dead grey dot, rides to the card's true slot on the reveal FLIP's own tween and ease, and
   grows there.
+- **The gap itself draws no dash** (`TimelineTick` `variant="none"`). It used to draw a faint one,
+  which meant the landing morphed into a tick that had been sitting there for the whole drag. Two
+  places render that gap — `GhostCard` and `TombstoneRow`'s `ghostEvent` branch — and the 12×4
+  footprint box stays in both; only the painted dash goes. Drop the box and the `?` jumps 12px
+  right into the rail.
 
 Files: `TimelineTick.tsx` (one component for all four board ticks), `tickLanding.ts` (pure
 geometry + clocks, with `tickLanding.test.ts`), plus a `tick` block in `animationTuning.ts` wired
@@ -67,8 +72,11 @@ to `/anim-jig` sliders.
 - **`useInsertionMarker` reports the marker's TARGET, not where it is painted.** The marker
   deliberately trails on a spring. Anything needing the dot's real position reads
   `TimelineMarker`'s per-frame `onPosition`.
-- **The dev rigs drive the board with `isDragging={false}`**, so no marker exists and the landing
-  animation sits out there by design. Verify the landing in a real game, not in a rig.
+- **The rigs cover the drag but not the drop.** `/anim-jig` drives the board with
+  `isDragging={false}`, so no marker exists there at all — but `/timeline-lab?ghost=…` fakes a
+  real drag onto `Timeline`'s props, so the ghost row and the marker are both live and it is the
+  right place to look at the gap. Neither can commit a placement, so the landing animation still
+  sits out by design. Verify the landing in a real game.
 
 ## How to verify a change
 
@@ -112,10 +120,12 @@ has a `vercel.json` rewrite, so both are local-dev only.
 - The landing dash is not portalled, so a drop within 56px of the board's top or bottom hands over
   from an unmasked marker to a dash under `.tl-edge-mask` — a possible brightness step at the
   seam. Known, unmeasured, probably rare since drops cluster mid-board.
-- `/anim-jig` and `/timeline-lab` cannot exercise the landing (no marker). Giving the jig a short
-  fake pre-drag before its placement commit would make it the authoring surface for this too.
+- Neither rig can exercise the landing: `/timeline-lab` has a marker but cannot commit a
+  placement, `/anim-jig` commits one but has no marker. Giving the jig a short fake pre-drag
+  before its placement commit would make it the authoring surface for this too.
 
 ## Read before touching anything
 
 `docs/ui-redesign/index.md` § "Timeline progression: the paper and the rail" — it holds the
-decisions, the rejected directions and every trap above, and it is up to date as of `e4ac46b`.
+decisions, the rejected directions and every trap above, and it is up to date as of the gap-dash
+fix.
