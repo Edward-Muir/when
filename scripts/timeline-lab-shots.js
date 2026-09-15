@@ -169,7 +169,7 @@ async function extensionStrip(browser) {
       const grab = async (tag) => {
         const f = `${theme}-ext-${dir}-${tag}.png`;
         const scaleY = await page.evaluate(() => {
-          const el = document.querySelector('.tl-rail');
+          const el = document.querySelector('[data-rail-extending]');
           const m = el ? new DOMMatrixReadOnly(getComputedStyle(el).transform) : null;
           return m ? Math.round(m.d * 100) / 100 : null;
         });

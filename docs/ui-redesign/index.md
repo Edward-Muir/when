@@ -118,8 +118,11 @@ What shipped is two materials that were already on screen:
 - **The rail** (`src/components/Timeline/TimelineRail.tsx`). Drawn one segment per row rather
   than as one absolute bar, for two reasons: it then spans exactly the rows that exist, so the
   runway above the first card and below the last is bare paper; and it is aligned to the ticks
-  by construction at any row height (see the BOARD COLUMN invariant in index.css). A one-card
-  board is a single node, not a bar. Nothing else is drawn on it.
+  by construction at any row height (see the BOARD COLUMN invariant in index.css). Each segment
+  fills its **whole row**, so the line runs half a card-to-card gap past the first and last tick
+  rather than stopping dead on them, and a one-card board is a stroke about as tall as the card.
+  Only the two open ends are rounded — rounding every segment notches the rail at each row
+  boundary, because the segments butt together. Nothing else is drawn on it.
 
 The moment that carries the idea is the **extension preview**: while a drag hovers past either
 end, the ghost row gets a rail segment that springs out of the existing line — `scaleY` from
@@ -140,8 +143,11 @@ Traps this round cost time on:
   every render, so the tones array had a new identity each time → new measure callback → effect
   → `setState` → render. It is memoised now, and `usePaperField` also refuses to commit an
   identical gradient. The symptom is React error #185 and a blank board.
-- **Two `mask-image` declarations cannot both apply.** A one-card board is `first && last`, and
-  the top and bottom cap classes silently fought; it needs its own `.tl-rail-cap-both`.
+- **Masking the end segments back to the tick was wrong twice over**: it made the line stop dead
+  on the first and last card, and it reduced a one-card board to a dot. It also hit a CSS trap
+  worth knowing — a one-card board is `first && last`, and two `mask-image` declarations cannot
+  both apply, so the top and bottom caps silently fought. Letting each segment fill its row
+  removes the masks and answers both.
 - **The "Earlier"/"Later" labels lost their scrim.** Their `from-bg` gradient no longer matches
   tinted paper. They carry a `text-shadow` halo (`.tl-edge-label`) and the scroller masks its
   own edges — no box, nothing new on the page.
@@ -151,7 +157,9 @@ Traps this round cost time on:
   `timeScale` prop (`Timeline`'s `railTimeScale`, the lab's `?slowmo=`): scaling a spring's time
   by k is exactly `stiffness/k²` and `damping/k`, so a slowed capture shows the real curve.
   `scripts/timeline-lab-shots.js` also reads the segment's live `scaleY` at each capture, so the
-  strip's captions are measured rather than inferred from the wall clock.
+  strip's captions are measured rather than inferred from the wall clock — off the
+  `data-rail-extending` marker, not the first `.tl-rail` in the DOM, which is a static row
+  whenever the board is growing at its later end and reported a flat ×1.00 for a while.
 - **Changing a lab URL param with `page.goto` remounts the tree, so nothing animates.** Use
   `history.pushState` + a synthetic `popstate`; React Router picks it up in place.
 - **The ghost row must inherit its neighbour's paper tone.** Its card is face-down — tinting

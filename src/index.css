@@ -167,29 +167,11 @@ body {
       0 0 10px var(--color-bg),
       0 0 18px var(--color-bg);
   }
-  /* The rail, drawn per row (TimelineRail.tsx) so it spans exactly the rows that exist. */
+  /* The rail, drawn per row (TimelineRail.tsx) so it spans exactly the rows that exist. Each
+     segment fills its whole row, so the line runs half a card-to-card gap past the first and
+     last tick rather than stopping dead on them. */
   .tl-rail {
     background-color: var(--color-accent);
-  }
-  .tl-rail-cap-top {
-    -webkit-mask-image: linear-gradient(to bottom, transparent 46%, #000 54%);
-    mask-image: linear-gradient(to bottom, transparent 46%, #000 54%);
-  }
-  .tl-rail-cap-bottom {
-    -webkit-mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
-    mask-image: linear-gradient(to bottom, #000 46%, transparent 54%);
-  }
-  /* A one-card board: the rail is a single node at that card's tick, not a full-height bar.
-     Needs its own rule because two mask-image declarations cannot both apply. */
-  .tl-rail-cap-both {
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent 42%,
-      #000 47%,
-      #000 53%,
-      transparent 58%
-    );
-    mask-image: linear-gradient(to bottom, transparent 42%, #000 47%, #000 53%, transparent 58%);
   }
   /* The growing tip: the leading end of a rail extension while a drag previews it. */
   .tl-rail-tip {

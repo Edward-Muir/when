@@ -6,9 +6,11 @@ import { motion, useReducedMotion } from 'framer-motion';
  *
  * Two reasons it is per row rather than absolute:
  *
- * - **It grows.** The rail then exists only between the first and last card on the board,
- *   so the empty runway above and below is bare paper and the line is the thing you have
- *   built rather than page furniture.
+ * - **It grows.** The rail then exists only over the rows that exist, so the empty runway
+ *   above and below is bare paper and the line is the thing you have built rather than page
+ *   furniture. Each segment fills its whole row, which means the rail runs half a card-to-card
+ *   gap past the first and last tick — it reads as a line with ends rather than one that stops
+ *   dead on a card — and a one-card board is a stroke about as tall as the card itself.
  * - **It cannot detach.** The board column invariant (see index.css) puts the rail at
  *   board-left + 96px, butted against the tick that terminates every gutter. A segment that
  *   lives inside the row is aligned by construction, whatever height the row takes.
@@ -28,7 +30,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 export type RailExtension = 'earlier' | 'later';
 
 interface TimelineRailProps {
-  /** Cap the top / bottom so the rail begins and ends on a tick, not mid-row. */
+  /** Round off the open end of the rail. */
   first?: boolean;
   last?: boolean;
   /** Set on a drag ghost sitting past an end: which way the rail is reaching. */
@@ -77,21 +79,14 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
     return () => window.clearTimeout(t);
   }, [extending, timeScale]);
 
-  // Two mask-image declarations cannot both apply, so a board of one card takes a combined
-  // cap that leaves a single node at the tick rather than a full-height bar.
-  const caps =
-    first && last
-      ? 'tl-rail-cap-both'
-      : first
-        ? 'tl-rail-cap-top'
-        : last
-          ? 'tl-rail-cap-bottom'
-          : '';
+  // Only the open ends are rounded. Rounding every segment would notch the rail at each row
+  // boundary, since the segments butt together.
+  const ends = `${first ? 'rounded-t-full' : ''} ${last ? 'rounded-b-full' : ''}`;
 
   if (!extending) {
     return (
       <div aria-hidden className="pointer-events-none absolute inset-y-0 left-24 z-0 w-1">
-        <div className={`tl-rail h-full w-full ${caps}`} />
+        <div className={`tl-rail h-full w-full ${ends}`} />
       </div>
     );
   }
@@ -104,7 +99,10 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
   return (
     <div aria-hidden className="pointer-events-none absolute inset-y-0 left-24 z-0 w-1">
       <motion.div
-        className="tl-rail h-full w-full origin-bottom"
+        // Marks the one segment that is animating, so the screenshot rig can read its scale
+        // rather than guessing which `.tl-rail` in the DOM is the growing one.
+        data-rail-extending={extending}
+        className={`tl-rail h-full w-full ${ends}`}
         style={{ transformOrigin: origin } as CSSProperties}
         initial={shouldReduceMotion ? false : { scaleY: 0 }}
         animate={{ scaleY: 1 }}
