@@ -1,4 +1,9 @@
 /**
+ * NOTE: this no longer tints the board. The paper ramp is positional now — a fixed-length
+ * crossfade anchored at the first card, which a longer board reveals more of (see
+ * `usePaperField`). What is left here is the year → 0..1 scale itself, which /timeline-lab
+ * still uses to spread its sample draw evenly across history.
+ *
  * Where a year sits on the board's paper ramp: 0 = the warm (early) tone, 1 = the cool
  * (late) one. Feeds `--tone` on each timeline row; the two tones themselves live in
  * index.css and are each only a few percent off the page colour.
@@ -26,14 +31,4 @@ export function paperTone(year: number): number {
   const yearsAgo = Math.max(1, REFERENCE_YEAR - year);
   const t = (Math.log10(yearsAgo) - LOG_NEAR) / (LOG_FAR - LOG_NEAR);
   return 1 - Math.min(1, Math.max(0, t));
-}
-
-/**
- * The CSS colour for a tone, mixed between the two paper tones in index.css. Kept here rather
- * than in a stylesheet because the board builds one gradient with a stop per row, which has to
- * be assembled in JS.
- */
-export function paperToneColor(tone: number): string {
-  const pct = Math.round(Math.min(1, Math.max(0, tone)) * 1000) / 10;
-  return `color-mix(in oklab, var(--paper-late) ${pct}%, var(--paper-early))`;
 }

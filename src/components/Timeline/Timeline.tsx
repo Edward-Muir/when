@@ -10,7 +10,6 @@ import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
 import { useRailGrowth } from './useRailGrowth';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
-import { paperTone } from '../../utils/paperTone';
 import { buildTimelineRows } from '../../utils/timelineRows';
 import { PAPER_ROW_ATTR, usePaperField } from './usePaperField';
 import { useTimelineWaves } from './useTimelineWaves';
@@ -322,18 +321,7 @@ const Timeline: React.FC<TimelineProps> = ({
   const ghostHostRowIndex =
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
-  // One paper tone per rendered row, in render order, for the gradient behind the board. The
-  // ghost's card is face-down, so its row takes the tone of the card it is sitting beside —
-  // tinting it by the hidden card's year would put the answer on the page.
-  const rowTones = useMemo(() => {
-    const tones = rows.map((r) =>
-      paperTone(r.kind === 'event' ? r.event.year : r.failed.event.year)
-    );
-    if (railExtension === 'earlier') return [tones.at(0) ?? 1, ...tones];
-    if (railExtension === 'later') return [...tones, tones.at(-1) ?? 1];
-    return tones;
-  }, [rows, railExtension]);
-  const paperField = usePaperField(scrollRef, contentRef, rowTones);
+  const paperField = usePaperField(scrollRef, contentRef);
   const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
   const railGrow = useRailGrowth(isDragging, railExtension);
 

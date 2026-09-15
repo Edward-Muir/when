@@ -106,15 +106,23 @@ figure set in Playfair. Never colour coding, never a badge or a bar.**
 
 What shipped is two materials that were already on screen:
 
-- **The paper** (`src/utils/paperTone.ts`, `usePaperField.ts`, `--paper-early/-late` in
-  index.css). Two tones a few percent either side of `--color-bg`. Two decisions worth not
-  relitigating: the scale is **absolute, not normalised to the current board** (normalising
-  shows a full sweep at two cards and never changes again — the opposite of progression), and
-  it is **log of time-before-now, not linear years** (perceived age is logarithmic, and the
-  catalogue is roughly half pre-1500, so a linear ramp squashes every modern board into one
-  sliver). Consequence to be honest about: the tint keys off _what is in the viewport_, so a
-  board confined to one stretch of history reads flat. Dark mode carries it much more visibly
-  than light.
+- **The paper** (`usePaperField.ts`, `--paper-early/-late` in index.css). Two tones a few
+  percent either side of `--color-bg`, with a **fixed-length crossfade**: the ramp starts at the
+  first card and runs warm → cool over a constant `RAMP_PX`, then holds cool however long the
+  board gets. A short board shows only the opening of the sweep and a long one reveals more of
+  it — the progression is in how much you have uncovered, not in the sweep itself. Nothing
+  moves: the ramp's stops are byte-identical at 3, 5, 14 and 30 cards, and across a whole played
+  game there is exactly one ramp definition; only the flat tail lengthens. `rampStart` is the top
+  runway's height, which does not change as cards land.
+  - This replaced a ramp that was **stretched to the content with a stop per row**, keyed to each
+    card's year on a log-of-time-before-now scale. That was defensible but wrong in practice: it
+    rescaled on every placement, so the paper under every existing card shifted, and a board
+    confined to one stretch of history came out flat. The year-based scale survives in
+    `src/utils/paperTone.ts` only because /timeline-lab uses it to spread its sample draw; it no
+    longer tints anything. Because the stops are now plain `var(--paper-*)` rather than colours
+    mixed in JS, a theme switch repaints with nothing to recompute.
+  - Consequence worth knowing: on a very long board (My Timeline, hundreds of rows) the sweep
+    completes in the first `RAMP_PX` and everything past it is flat cool.
 - **The rail** (`src/components/Timeline/TimelineRail.tsx`). Drawn one segment per row rather
   than as one absolute bar, for two reasons: it then spans exactly the rows that exist, so the
   runway above the first card and below the last is bare paper; and it is aligned to the ticks
