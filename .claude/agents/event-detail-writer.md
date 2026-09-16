@@ -24,8 +24,18 @@ spec to be repeated.
 3. If the first few results do not support a specific claim, **cut it**. Do not hunt for a source,
    and do not soften it into vagueness. Use something the results do support instead.
 4. Do not over-research. Stop once the claims you are making are supported.
-5. Write the batch to `untracked_data/event-detail/batch-NNN.json` as `slug -> { paragraphs }`.
+5. Write the batch where the prompt tells you to, as `slug -> { paragraphs }`.
    **Never edit a shard in `public/events/detail/` directly.**
+
+## Check the band before you write
+
+Exactly 2 paragraphs, each 220-450 characters, 480-830 total. **Overrunning the ceiling is the
+commonest failure by a wide margin** — a measured 21% of one 298-entry shard came back over, against
+0% once writers were told this explicitly. Count as you go rather than at the end, and no raw
+newlines inside a paragraph string.
+
+The second commonest is `served as`, which the spec bans as copula avoidance. It reads as natural
+English in a biography and fires constantly there. Use `was`.
 
 ## Report back
 
