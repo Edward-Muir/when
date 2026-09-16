@@ -51,8 +51,11 @@ function readShard(file: string): Record<string, { paragraphs?: unknown }> {
 describe('event detail sidecar', () => {
   it.each(EVENT_FILES)('%s: every entry meets the shape spec', (file) => {
     const shard = readShard(file);
+    // The event record is passed so the restatement check against `description` runs too; it is
+    // optional in the spec only so a one-off check can skip loading the catalogue.
+    const bySlug = new Map(readEvents(file).map((e) => [e.name, e]));
     const problems = Object.entries(shard).flatMap(([slug, entry]) =>
-      spec.entryProblems(slug, entry)
+      spec.entryProblems(slug, entry, bySlug.get(slug))
     );
     expect(problems).toEqual([]);
   });
@@ -83,17 +86,91 @@ describe('event detail sidecar', () => {
   });
 
   it('rejects the shapes Phase 3 is most likely to produce by accident', () => {
-    const long = 'x'.repeat(spec.MAX_PARAGRAPH_CHARS + 1);
-    const ok = 'y'.repeat(spec.MIN_PARAGRAPH_CHARS);
+    // Fixtures have to be valid prose in every respect but the one under test, now that the spec
+    // checks voice as well as shape — a bare run of one letter fails terminal punctuation alone.
+    const ok = `${'y'.repeat(spec.MIN_PARAGRAPH_CHARS - 1)}.`;
+    const long = `${'x'.repeat(spec.MAX_PARAGRAPH_CHARS)}.`;
+
+    // Two minimum-length paragraphs fall under MIN_TOTAL_CHARS by design, so the valid case is
+    // three of them: the floor deliberately binds on a two-paragraph entry.
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ok] })).toEqual([]);
 
     expect(spec.entryProblems('s', { paragraphs: [ok] })).not.toEqual([]); // too few
     expect(spec.entryProblems('s', { paragraphs: [ok, ok, ok, ok] })).not.toEqual([]); // too many
-    expect(spec.entryProblems('s', { paragraphs: [ok, long] })).not.toEqual([]); // overlong
-    expect(spec.entryProblems('s', { paragraphs: [ok, ' padded '] })).not.toEqual([]); // whitespace
-    expect(spec.entryProblems('s', { paragraphs: [ok, `${ok}\n${ok}`] })).not.toEqual([]); // newline
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok, long] })).not.toEqual([]); // overlong
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ` ${ok} `] })).not.toEqual([]); // whitespace
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok, `${ok}\n${ok}`] })).not.toEqual([]); // newline
     expect(spec.entryProblems('s', { paragraphs: 'not an array' })).not.toEqual([]);
     expect(spec.entryProblems('s', undefined)).not.toEqual([]);
 
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok] })).toEqual([]);
+    // Totals, which the per-paragraph band does not imply in either direction.
+    const floor = `${'z'.repeat(spec.MIN_PARAGRAPH_CHARS - 1)}.`;
+    expect(spec.MIN_PARAGRAPH_CHARS * 2).toBeLessThan(spec.MIN_TOTAL_CHARS);
+    expect(spec.entryProblems('s', { paragraphs: [floor, floor] })).not.toEqual([]); // under total
+    const wide = `${'w'.repeat(spec.MAX_PARAGRAPH_CHARS - 1)}.`;
+    expect(spec.entryProblems('s', { paragraphs: [wide, wide, wide] })).not.toEqual([]); // over total
+  });
+
+  // A paragraph of exactly the minimum length, opening with `lead`. Fixtures have to be valid in
+  // every respect but the one under test, now that the spec checks voice as well as shape.
+  const para = (lead: string) =>
+    `${lead}. ${'y'.repeat(Math.max(1, spec.MIN_PARAGRAPH_CHARS - lead.length - 3))}.`;
+  // Three of those clear MIN_TOTAL_CHARS without approaching MAX_TOTAL_CHARS.
+  const entryWith = (lead: string) => ({
+    paragraphs: [para(lead), para('The second paragraph'), para('The third paragraph')],
+  });
+
+  it('rejects the voice Phase 3 is most likely to produce by accident', () => {
+    // Every one of these is a real machine tell catalogued in docs/event-detail/writing-spec.md.
+    // The rules they enforce are the thing a sub-agent cannot be trusted to remember 137 times.
+    expect(spec.entryProblems('s', entryWith('The fleet sailed at dawn'))).toEqual([]);
+
+    const banned = [
+      'It was not just a battle, but a statement of intent',
+      'The fort served as the northern anchor of the frontier',
+      'The charter was a testament to the stubbornness of the barons',
+      'The voyage paved the way for a century of Atlantic crossing',
+      'The design was meticulous and the result groundbreaking',
+      'Experts say the count was higher than the official record',
+      'The city fell in autumn, cementing his hold on the north',
+      'Notably, the siege lasted through a second winter',
+      'The reforms were arguably the most sweeping of the reign',
+      'The rules are load-bearing for everything that followed',
+      'The fleet sailed \u2014 and was lost',
+      'The fleet sailed \u2013 and was lost',
+      'The king\u2019s fleet sailed at dawn',
+      'What did the fleet find?',
+      'If you had stood on the quay',
+      'The ship is pictured under full sail',
+      'PLACEHOLDER: the fleet sailed',
+    ];
+    for (const lead of banned) {
+      expect(spec.entryProblems(lead, entryWith(lead))).not.toEqual([]);
+    }
+
+    // The placeholder corpus is exempt from voice rules: it is lorem, and detail-report.js
+    // already refuses to call it done.
+    expect(
+      spec.entryProblems('s', { ...entryWith('PLACEHOLDER: the fleet sailed'), placeholder: true })
+    ).toEqual([]);
+  });
+
+  it('rejects prose that restates the description it replaced', () => {
+    const event = {
+      name: 's',
+      friendly_name: 'S',
+      description:
+        'Athenian forces defeated the Persian invasion, inspiring the marathon race legend.',
+    };
+
+    const restates = entryWith('Athenian forces defeated the Persian invasion, inspiring a legend');
+    expect(spec.entryProblems('s', restates, event)).not.toEqual([]);
+    // Without the event record the check cannot run, and must not crash or false-positive.
+    expect(spec.entryProblems('s', restates)).toEqual([]);
+
+    const extendsIt = entryWith(
+      'The runner who carried the news is a later invention, absent from Herodotus'
+    );
+    expect(spec.entryProblems('s', extendsIt, event)).toEqual([]);
   });
 });

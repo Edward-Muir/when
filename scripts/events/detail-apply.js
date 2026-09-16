@@ -85,13 +85,21 @@ function main() {
 
   const bySlug = sourceFileBySlug();
 
+  // The spec's restatement check needs the event's own `description`, so the records are read up
+  // front rather than per-shard below. One pass over the catalogue, reused by the write loop.
+  const eventsByFile = new Map(manifestFiles().map((file) => [file, readEvents(file)]));
+  const eventBySlug = new Map();
+  for (const events of eventsByFile.values()) {
+    for (const event of events) eventBySlug.set(event.name, event);
+  }
+
   // Validate everything up front.
   for (const [slug, entry] of merged) {
     if (!bySlug.has(slug)) {
       problems.push(`${slug}: not an event in the manifest catalogue (renamed or misspelled?)`);
       continue;
     }
-    problems.push(...entryProblems(slug, entry));
+    problems.push(...entryProblems(slug, entry, eventBySlug.get(slug)));
   }
 
   if (problems.length) {
@@ -118,7 +126,7 @@ function main() {
       shard[slug] = { paragraphs: entry.paragraphs };
     }
 
-    const events = readEvents(file);
+    const events = eventsByFile.get(file);
     const slugs = new Set(entries.map(([slug]) => slug));
     for (const event of events) {
       if (slugs.has(event.name)) event.has_detail = true;
