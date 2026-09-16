@@ -239,24 +239,47 @@ should start) are in the session notes, not here.
 
 ## Kick-off prompt for the next session
 
-> Start **Phase 3** of the event-detail work on the `when` repo: writing the remaining 5,450
-> entries.
+> Continue **Phase 3** of the event-detail work on the `when` repo. 2,092 of 5,460 entries are
+> written; carry on through the remaining 3,368.
 >
-> Branch off `claude/event-detail-writing-spec-sq448j` — **not** main, the feature only exists on
-> that branch.
+> You are on `claude/event-detail-writing-spec-sq448j` — **not** main, the feature only exists on
+> that branch. Commit and push each shard as it completes. Do not open a PR.
 >
-> Read `HANDOFF.md` at the repo root first, then `docs/event-detail/writing-spec.md` and the ten
-> calibration entries it lists at the end — the gold set transmits tone better than the rules do.
-> Run `npm ci` before trusting any check — without it `npm run typecheck` resolves a global `tsc`
-> and prints something that looks exactly like a pass.
+> Run `npm ci` first: without it `npm run typecheck` resolves a global `tsc` and prints something
+> that looks exactly like a pass. Then read `HANDOFF.md`, especially **Where Phase 3 got to**,
+> which carries the operational lessons from fourteen shards and is worth more than any plan.
 >
-> **The spec and the UI are both done and out of scope.** Do not loosen a ban in
-> `scripts/events/detail-spec.js` to get a batch through; fix the prose instead.
+> **The spec and the UI are done and out of scope.** Never loosen a ban in
+> `scripts/events/detail-spec.js` to get an entry through; fix the prose. Five known collisions to
+> work around rather than relax: `served as` in biography, `stood as` for records, `load-bearing`
+> in architecture, `robust` in _Paranthropus robustus_, `Fosters` for Norman Foster's firm.
 >
-> Work one shard per batch, smallest first, via
-> `node scripts/events/detail-report.js --chunks`. Sub-agents write map files into
-> `untracked_data/event-detail/`; `detail-apply.js` writes the catalogue. Gate every batch on
-> `npm run typecheck`, `CI=true npm test -- --watchAll=false` and `CI=true npm run build`, and read
-> a random 5 per batch cold against the spec before committing. Drift is the failure mode, not
-> corruption — sample specifically for every entry being pressed against the 830-character ceiling
-> and every hook being the same kind.
+> Resume with `node scripts/events/detail-report.js --chunks` (delete the worklist directory
+> first, it does not clear itself). Finish `infrastructure` at 253/408, then `conflict` 555,
+> `cultural` 625, `diplomatic` 998, `exploration` 1,040. Split each shard into units of ~20 and run
+> 5 or 6 `event-detail-writer` sub-agents at a time.
+>
+> The batch prompt is what determines quality. Every prompt must carry:
+>
+> 1. **The length band**, stated explicitly: exactly 2 paragraphs, 220-450 chars each, 480-830
+>    total, aim for ~700 not the ceiling. Measured: 21% failures with no instruction, 54% with it
+>    only in the agent definition, 0-9% with it in the prompt. The agent definition does not reach
+>    the writers.
+> 2. **One file per event** at `/home/user/when/untracked_data/event-detail/e-<slug>.json`, written
+>    the moment each entry is finished, as a **single line** of JSON with no line breaks and no
+>    internal double quotes. A worker restart once destroyed six agents' unwritten work.
+> 3. **That shard's own trap**, in one line. This is the anti-drift mechanism and it works: telling
+>    `sports` writers not to open every entry with "X won Y in YEAR" took the hook monoculture from
+>    80% to 3%. Read a few slugs first and name the trap yourself.
+>
+> Per shard: verify every worklist slug landed (agent self-reported counts have been wrong in both
+> directions), check parseability separately from the spec (an unparseable file is silently absent
+> from the merge, not rejected), repair failures with sub-agents in one round, then
+> `detail-apply.js`, `npm run typecheck`, `CI=true npm test -- --watchAll=false`,
+> `CI=true npm run build`, commit, push.
+>
+> Writers will flag `year` and `description` errors in the catalogue. **Check every flag before
+> acting on it** — roughly three in four do not survive verification. Changing a `year` re-scores
+> its neighbours through `difficultyScore` and can move a `deckBuilder` test bound. Leave
+> `description` errors alone and record them in the commit; they are player-visible and the
+> maintainer's call.
