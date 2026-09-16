@@ -40,7 +40,10 @@ original per-session write-ups if you need the blow-by-blow.
 - [event-detail/](event-detail/index.md) — the "read more" info button and the long-form prose
   behind it: why the prose replaces the description in place, why the button is
   unreachable before placement (and why that lets the prose state dates), the lazy sidecar
-  instead of inlining ~2.4 MiB gzipped, and the phased plan for writing all 5,460 entries
+  instead of inlining ~2.4 MiB gzipped, and the phased plan for writing all 5,460 entries.
+  Its [writing-spec.md](event-detail/writing-spec.md) holds the voice rules — the length band
+  as numbers, the register carve-out for atrocities, the `wikipedia_url` accuracy trap, and the
+  banned machine tells (no em dashes) that `scripts/events/detail-spec.js` enforces
 - [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
   the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
   measured symptoms, and a sequenced fix list

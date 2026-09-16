@@ -94,6 +94,10 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   nothing — which looks like a broken feature rather than a bad selector. To open
   a placed card's detail popup, click the card itself:
   `page.getByRole('button', { name: /<friendly_name>/i })`.
+- **The detail popup:** `[data-testid="modal-card"]` is the card, and
+  `[data-testid="detail-scroll"]` is the region holding the image and prose
+  together. The card is a constant 606px tall (628 if its title wraps to two
+  lines) and must stay so after the shard loads and after scrolling to the end.
 - **Drop zones (dnd-kit droppables, ids not in the DOM):** `timeline-zone`
   (the timeline) and `bottom-bar-zone` (the hand — a drop here returns the card).
 - **Bottom-left counters:** big number = lives/"cards left"; 📏 = events placed;

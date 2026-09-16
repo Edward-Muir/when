@@ -37,6 +37,8 @@ is the merge gate.** It is not part of `npm test`, so the suite stays green.
 (`git diff --name-only <fork>..origin/main | grep public/events/`). If it has, do
 `--revert` → sync → regenerate rather than resolving 5,460 `has_detail` lines by hand. This
 applies to a rebase at least as much as a merge, since a rebase replays the placeholder commit.
+Since Phase 2 both `--revert` and a plain run leave written prose and its `has_detail` alone, so
+this is safe once the corpus has real entries in it; before Phase 2 it would have deleted them.
 It did not bite on the 2026-09-16 rebase because main had changed no event data at all.
 
 **Next session starts at Phase 2**, the writing spec.

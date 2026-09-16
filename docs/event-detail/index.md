@@ -1,10 +1,14 @@
 # Event detail — the long-form "read more"
 
-**Status: Phase 1 is DONE (the mechanism and the design). Phases 2 and 3 are the plan below
-and have not started.** Nothing is in production: the branch does not merge until the corpus is
+**Status: Phases 1 and 2 are DONE (the mechanism and the design; the writing spec and the first
+ten written entries). Phase 3, the remaining 5,450, has not started.** Nothing is in production: the branch does not merge until the corpus is
 written. On the branch itself every event carries placeholder prose so the preview deploy is
 testable — see Guardrail 1 for what keeps that from shipping.
 
+- **The voice rules: [writing-spec.md](writing-spec.md)** — the hook, the band as numbers, the
+  register carve-out, what may be asserted, and the banned machine tells. The working version of
+  the same rules, for someone about to write a batch, is
+  [.claude/skills/write-event-detail/SKILL.md](../../.claude/skills/write-event-detail/SKILL.md)
 - **Current branch state and the next session's worklist: [/HANDOFF.md](../../HANDOFF.md)** —
   branch-scoped, deleted before merge
 - [2026-09-12 — Designing the read-more view](session-2026-09-12-detail-view-design.md) — where the
@@ -126,8 +130,10 @@ reach.
      `node scripts/events/detail-report.js` counts those as still to do and **exits non-zero**
      while any remain. **Do not merge while that script exits non-zero.** It is deliberately not
      part of `npm test`, which would otherwise be red for the whole of Phase 3;
-   - every placeholder entry's first paragraph literally begins `PLACEHOLDER —`, so it cannot be
-     mistaken for real prose in a review.
+   - every placeholder entry's first paragraph literally begins `PLACEHOLDER: `, so it cannot be
+     mistaken for real prose in a review. (It used to be `PLACEHOLDER —`; the em dash became a
+     banned character in Phase 2 and a marker that fails the spec it sits inside is a confusing
+     signal.)
 
    `detail-apply.js` replaces an entry wholesale, so real prose drops the flag and starts counting
    automatically — the corpus converges on written as Phase 3 lands, with no cleanup step.
@@ -152,10 +158,10 @@ reach.
 | The prose, and its fallback to the description                | `src/components/EventDetailText.tsx`          |
 | The (i) on the Daily hero's image                             | `src/components/ImageInfoWatermark.tsx`       |
 | Header, ✕, image, scroll region, dismissal, the gate          | `src/components/GamePopup.tsx`                |
-| Shape rules, shared by scripts and Jest                       | `scripts/events/detail-spec.js`               |
+| Shape **and voice** rules, shared by scripts and Jest         | `scripts/events/detail-spec.js`               |
 | Disk access, shard read/write, slug→file                      | `scripts/events/detail-catalogue.js`          |
 | Map-then-apply, writes prose **and** `has_detail`             | `scripts/events/detail-apply.js`              |
-| Local placeholder filler, `--revert`                          | `scripts/events/detail-placeholder.js`        |
+| Placeholder filler, `--revert`; both preserve written prose   | `scripts/events/detail-placeholder.js`        |
 | Worklist generator and progress meter                         | `scripts/events/detail-report.js`             |
 
 All three player-facing surfaces route through `GamePopup` with `type: 'description'` — the game
@@ -163,27 +169,38 @@ board (`Game.tsx`, `showDescriptionPopup`), My Timeline (`panels/TimelinePanel.t
 hero (`panels/DailyPanel.tsx` → `ModeSelect.tsx`) — so there is one insertion point, not three, and
 none of them passes an argument about which text to show. The gate decides.
 
-## Phase 2 — the writing spec (next)
+## Phase 2 — the writing spec (done)
 
-Phase 1 fixed the shape; Phase 2 fixes the voice. Deliverables:
+Phase 1 fixed the shape; Phase 2 fixed the voice. It produced
+[writing-spec.md](writing-spec.md), `.claude/skills/write-event-detail/SKILL.md`, a tightened
+`detail-spec.js`, and the corpus's first ten written entries. What it settled, and would otherwise
+be re-argued:
 
-- **`docs/event-detail/writing-spec.md`**, settling:
-  - **The hook.** Every entry opens with something the player did not know and would not guess.
-    This is the thing most likely to come out bland at 5,460 scale, so it needs worked
-    right-vs-wrong examples, not an adjective.
-  - Length band per paragraph and overall, as numbers, then tightened in `detail-spec.js` so the
-    corpus test enforces them.
-  - Register: how far from encyclopaedic toward conversational, and where that breaks down —
-    atrocities, deaths, contested history.
-  - Its relationship to the existing `description`: paragraph one must not restate it.
-  - What a writer may assert and what must be hedged or omitted.
-  - Hard bans (second person, "Did you know", rhetorical questions).
-  - An explicit note that **dates are allowed and wanted here**, with the reason, or every writer
-    will assume the `description` rule applies.
-- **`.claude/skills/write-event-detail/SKILL.md`**, modelled on `add-events/SKILL.md`: for each
-  rule give the rule, _why_ it exists in game terms, the file that enforces it, and a
-  right-vs-wrong example — closing with a scannable "Common mistakes" list tied to the failing test.
-- Calibrate by hand-writing ~10 entries across difficulty and era, then reading them cold.
+**The band is 2-3 paragraphs, 240-520 characters each, 620-1,250 total, target ~900.** Derived from
+the 476px scroll region (about 20 lines at 402px, so ~900 characters is ~1.3 screens past the
+image) and checked against the ten hand-written entries, which run 900-1,039. The old 200-900/2,200
+placeholders are gone. Both caps do real work: the floor caught a stub, and the ceiling forced a
+paragraph out of the atrocity entry rather than out of its attribution.
+
+**Difficulty is not depth, and there is no skip list.** `difficulty` grades how hard a card is to
+_place_, not how much record exists, so a `very-hard` card is written at the same length as an
+`easy` one. An event whose specific record is thin gets the lens widened onto what is attested, not
+an exemption. `detail-report.js` still demands 5,460 of 5,460 and is still the merge gate.
+
+**`detail-spec.js` now enforces voice, not just shape.** Second person, question marks, card-art
+references, missing terminal punctuation, em and en dashes, curly quotes, the "not just X but Y"
+parallelism, copula avoidance, legacy closers, vague attribution and a puffery lexicon all fail an
+entry, as does a 7-word run shared with the event's own `description`. Every pattern was measured
+against all 5,460 existing descriptions before adoption and carries its count in a comment; 20 of
+37 have zero precedent in the catalogue. An unenforced rule across 137 batches is a suggestion.
+
+**`entryProblems(slug, entry)` takes an optional third argument, `event`**, because the restatement
+check needs the event's own `description`. Both callers already had the records to hand.
+
+**The placeholder filler no longer eats written prose.** It used to overwrite every entry
+unconditionally, and `--revert` deleted whole shards and stripped every `has_detail` — which this
+document recommends doing before syncing with `origin/main`. Until Phase 2 there was no written
+prose to lose. Both paths now preserve anything not flagged `placeholder: true`.
 
 ## Phase 3 — writing 5,460 entries
 
@@ -191,13 +208,17 @@ Phase 1 fixed the shape; Phase 2 fixes the voice. Deliverables:
   `exploration` 1,040), so the pipeline is proven on cheap files before the expensive ones.
   `node scripts/events/detail-report.js --chunks` emits 40-event worklist chunks and exits
   non-zero until nothing is left, so it is both the worklist and the progress meter.
+- **Read [writing-spec.md](writing-spec.md) and the ten calibration entries first.** The gold set
+  transmits tone better than the rules do; the rules are what catch it when it slips.
 - **Sonnet sub-agents write map files, never the catalogue.** Each emits
   `untracked_data/event-detail/batch-NNN.json`; `detail-apply.js` validates the merged map and
   refuses the whole run on one bad entry, so a half-applied batch is unreachable.
 - **Per-batch gate:** `npm run typecheck`, `CI=true npm test -- --watchAll=false`, and
   `CI=true npm run build`.
 - **Read a random 5 per batch cold against the spec** before committing. Drift is the failure
-  mode here, not corruption — the scripts already make corruption hard.
+  mode here, not corruption — the scripts already make corruption hard. Sample specifically for
+  the two things calibration showed converge: every entry at three paragraphs, and every hook the
+  same kind.
 - **A half-written state is impossible, but it is not being shipped either.** `has_detail` is
   per-event and written in the same pass as the prose, so a partly-written corpus renders exactly
   the buttons it has prose for and no others — merging mid-run would be safe. The decision
