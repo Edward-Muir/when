@@ -85,6 +85,8 @@ const AnimJig: React.FC = () => {
           {
             '--anim-glow-dur': `${liveTuning.success.glowDurS}s`,
             '--anim-error-pulse-dur': `${liveTuning.miss.errorPulseDurS}s`,
+            '--anim-tick-glow-dur': `${liveTuning.tick.glowDecayS}s`,
+            '--anim-tip-snuff-dur': `${liveTuning.tick.snuffS}s`,
           } as React.CSSProperties
         }
       >

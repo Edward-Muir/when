@@ -188,6 +188,14 @@ export const TUNING_SCHEMA: TuningGroup[] = [
       ...spring('wake.layoutShiftSpring', 'Row-shift spring'),
     ],
   },
+  {
+    title: 'Landing — dot into tick',
+    fields: [
+      ...spring('tick.morphSpring', 'Morph', true),
+      { path: 'tick.glowDecayS', label: 'Glow decay', min: 0, max: 1.5, step: 0.05, unit: 's' },
+      { path: 'tick.snuffS', label: 'Snuff (miss)', min: 0, max: 1.5, step: 0.05, unit: 's' },
+    ],
+  },
 ];
 
 type AnyRecord = Record<string, unknown>;

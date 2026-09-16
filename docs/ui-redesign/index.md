@@ -88,6 +88,260 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## Timeline progression: the rail (2026-09)
+
+The board looked identical at 5 cards and at 30, so a long timeline was a bigger number rather
+than a better-looking thing. **This now ships in the game** — `Timeline.tsx`, so it is on the
+Daily, Archive, Custom and My Timeline alike. `/timeline-lab` is a dev-only harness (no
+`vercel.json` rewrite, no in-app link) that mounts the _real_ `Timeline` with a seeded board:
+`?n= &ghost=earlier|later &over=0 &slowmo= &row= &theme= &bare=1`. There is no second
+implementation.
+
+**The era-palette family is now rejected twice.** An eight-colour era wash, era chapter
+headings, an era spine, a history coverage bar, a colour-coded rail and rail beads were all
+built on real data and shot at 5 / 14 / 30 cards; the verdict was that the earlier rounds'
+work (see § "Timeline surface: three directions ruled out") is _an example of what not to do_
+and must not be the basis of anything. Do not rebuild it. The standing rule from that steer:
+**a new mark on the board is allowed only if it is typographic and monochrome — a hairline, a
+figure set in Playfair. Never colour coding, never a badge or a bar.**
+
+**A tinted background was tried and rejected too** (2026-09). "The paper" was one continuous
+warm → cool gradient behind the board's scroll content, two tones a few percent either side of
+`--color-bg`, with a fixed-length crossfade centred on the board: a short board sat inside the
+ramp and showed its muted middle, a long one reached past and saturated at both ends, so the
+progression was in how much of the sweep you had uncovered. It worked as designed and the verdict
+was still that the old clean board looked better. **Do not rebuild it.** It is gone in full —
+`usePaperField.ts`, the `--paper-early/-late` tokens, and the edge treatment it forced (see
+below). Anything that survives it is listed here because it earns its place on its own:
+
+- `src/utils/yearScale.ts` (was `paperTone.ts`) — the year → 0..1 log-of-time-before-now scale.
+  It tinted nothing by the end; /timeline-lab uses it to spread its sample draw across history.
+- The board's edge fade went **back** to what it was at 1.21.0: a 48px `from-bg` gradient scrim
+  top and bottom with the "↑ Earlier" / "Later ↓" labels on it. The paper had replaced that with
+  a mask over the board's own content plus a `text-shadow` halo on the labels, because a flat
+  `--color-bg` scrim no longer matched a tinted page. With the tint gone the original works
+  again, and `.tl-edge-mask` / `.tl-edge-label` are deleted. If you ever reintroduce a tint you
+  will hit the same problem and be tempted by the same fix.
+- One thing the mask quietly did: it was `scripts/tick-landing-probe.js`'s handle on the
+  scrolling element. The scroller now carries `data-board-scroller` for that, since
+  `board-center` is also on the hand bar and on ArchivePanel.
+
+What shipped is the rail, and the two lit things that ride it:
+
+- **The rail** (`src/components/Timeline/TimelineRail.tsx`). Drawn one segment per row rather
+  than as one absolute bar, for two reasons: it then spans exactly the rows that exist, so the
+  runway above the first card and below the last is empty; and it is aligned to the ticks
+  by construction at any row height (see the BOARD COLUMN invariant in index.css). Each segment
+  fills its **whole row**, so the line runs half a card-to-card gap past the first and last tick
+  rather than stopping dead on them, and a one-card board is a stroke about as tall as the card.
+  Only the two open ends are rounded — rounding every segment notches the rail at each row
+  boundary, because the segments butt together. Nothing else is drawn on it.
+
+The drag indicator is **one persistent lit node** (`TimelineMarker`) that runs along the rail for
+the whole of a drag and settles into the gap the card will land in, on a soft under-damped spring
+so it trails the pointer and overshoots rather than flicking between slots. That it is a _single_
+element is the whole trick: a node born and destroyed with each ghost row can only ever pop. Its
+target is measured off the ghost row (`data-ghost-row`, `useInsertionMarker`) rather than computed
+from the gap index — the gap index is not a display-row index (tombstones interleave), a gap that
+already holds a tombstone hosts the ghost inside that row instead of inserting one, and the two
+ends extend the rail instead of sitting between neighbours. Measuring covers all of it with no
+special cases.
+
+**The marker is portalled to `body`, above dnd-kit's drag overlay.** Drawn inside the board it
+was invisible almost exactly where it mattered: the dragged card is centred on the pointer, and
+the pointer sits on the insertion boundary, which is where the marker is — so the overlay
+(`z-index: 999`) covered it for most of a drag, and the "Earlier"/"Later" scrims covered it
+near the board's top and bottom as well. It only ever read at the _ends_, where the rail's growth
+extends a whole row beyond the card. Rendering it to `body` at `z-index: 1001` in viewport
+coordinates fixes both without changing how it looks — **inside a fixed clip box the size of the
+board**, because it must clear the overlay without ever reaching the hand bar or the top bar, and
+z-index alone cannot express that: `#root` is its own stacking context at `z-index: 1`, so the
+overlay on `body` is above every piece of app chrome and anything clearing the overlay clears the
+chrome too. At the board's edges the marker and its glow are simply cut off, which against the
+opaque hand bar is indistinguishable from passing behind it. Two consequences worth knowing: viewport
+coordinates go stale if anything moves under them, so the hook re-measures on scroll and on a
+ResizeObserver (a real drag freezes scrolling, but a ghost can be mounted before the board has
+settled — the harness holds one from first paint); and the node is keyed per drag so it is
+re-created between drags rather than flying in from wherever the last one left it.
+
+**Each end grows once per drag** (`useRailGrowth`). The ghost row is rendered in flow, so moving
+off an end unmounts it and moving back mounts a fresh one — and framer applies `initial` on every
+mount, which replayed the growth every time the pointer crossed the boundary. Per _end_ rather
+than per drag: the other end's first visit is an extension the player has not seen yet. The flag
+is read by `initial` and nothing else, on purpose — it flips to false on the render after the
+first one, while the spring is still in flight, and gating the `transition` on it too would swap
+the spring for `duration: 0` mid-flight and snap the rail to full length halfway through.
+
+The moment that carries the idea is the **extension preview**: while a drag hovers past either
+end, the ghost row gets a rail segment that springs out of the existing line — `scaleY` from
+the anchored edge, never a fade — with a glowing tip that settles. The spring is deliberately
+under-damped (ζ ≈ 0.6, peak ×1.10 at ~225ms, settled ~450ms); a critically damped version
+arrived in ~150ms and nothing registered as having happened. The rail does **not** draw its own
+tip any more — the travelling marker is parked there when the gap is an end, so there is one
+glowing thing and one code path.
+
+### The landing: the dot becomes the tick (2026-09)
+
+The marker does not fade out at the end of a drag any more — it **turns into the tick** on the
+row the card lands as. The two were always neighbours: the board column invariant puts the dash
+at board-left 84→96 and the rail at 96→100, with the marker riding the rail's centre at 98. So a
+correct placement is an ~8px slide left plus a change of shape, 6×8 and round becoming 12×4 and
+square, with the glow decaying over ~400ms to an ordinary tick. Nothing new appears on the board.
+
+That 8px is **never written down as the distance between the two**. `dotStart` measures both ends
+and subtracts, so the landing follows the board column if it ever moves rather than quietly
+pointing at the wrong place. (`RAIL_TO_TICK` in `tickLanding.ts` does state 8, derived from the
+dash and rail widths — it is needed for the snuff step below, before either end exists, and a test
+pins it against the measured path.)
+
+A **wrong** drop is the same two halves with the middle filled in: the marker snuffs where it
+stands during the red flash (glow out, down to the tombstone dash's opacity) and steps off the
+rail into the gutter; then, at 400ms, the tombstone's own dash takes over as a dead grey dot,
+rides to the card's true slot on the reveal FLIP's own tween and ease, and grows there. The guess
+ends by pointing at where the card belonged.
+
+- **The step off the rail is not decoration.** An unlit dot at 40% on top of a full-strength
+  accent rail is invisible — measured, not guessed. The travel only reads because the dot is on
+  the bare gutter by the time it starts moving.
+- **The origin is where the marker was _painted_, not where it was going.** `useInsertionMarker`
+  reports the spring's target and the marker deliberately trails it; on a quick drop the two are
+  tens of pixels apart. `TimelineMarker` therefore reports its live position through `onPosition`
+  every frame, into a ref the dash reads once.
+- **Both ends are measured in one layout effect**, which is what makes plain viewport coordinates
+  safe: nothing can scroll between two reads in the same effect. Neither end is ever stored.
+- **The animation starts from a layout effect, not framer's `initial`.** The offset is only
+  knowable once the element is in the DOM, and a render → measure → re-render would paint one
+  frame of the dash at rest before the marker had handed over — the exact seam this removes. The
+  props are snapshotted at mount, because the "this row just landed" flags clear a few hundred ms
+  later while the animation is still running.
+- **The dash is two boxes.** A fixed 12×4 placeholder keeps the gutter's layout still — animating
+  the real thing would shove the year label on every placement, and the board's content is under
+  two ResizeObservers. The inner box is absolutely positioned and animates `width`/`height`
+  rather than `scale`, because scaling 12×4 to 6×8 is anisotropic and would render the glow as an
+  ellipse at exactly the moment the shape is meant to match the marker's.
+- **`animate-entrance` moved off the row onto the card slot.** A row-level opacity fade
+  composites onto the gutter, so it faded the landing dash up from zero. The row no longer
+  arrives as a block: the card slides up, the year pops, the tick grows out of the marker.
+- **The rail's reach is a number, not a flag** (2026-09). Each end's extension is a MotionValue
+  owned by `useRailExtension`, and the ghost row and the retract stub both just paint it. It
+  replaced a per-end "does this still owe its growth" boolean, which could not express the two
+  things a drag actually does: leave the board halfway through a growth (the retract had to
+  invent a length to start from) or turn back halfway through a retract (the growth restarted
+  from nothing, so the rail snapped shut before re-opening). As one number, every rule falls out
+  instead of being written: the growth plays on first reach; crossing off an end into a middle
+  gap and back drives nothing, so the remounted segment paints at full length and there is no
+  replay; the far end still grows on its first visit, because there are two numbers; leaving the
+  board springs the showing end to zero — that IS the retract — and silently zeroes any other
+  end, re-arming the board; turning back catches the value on its way down. Measured on a real
+  drag: 1.00 → 0.40, caught at 0.397, back to 1.00, with no frame at zero.
+  - The guard that matters: a retract must never be drawn over a card that has just landed. A
+    drop at an end is the board genuinely getting longer, so the hook needs `dragging` as well as
+    "over the board" — it retracts only for a drag that is still running. `handleDragEnd` clears
+    both in one commit, so a drop arrives as a silent reset.
+  - The stub is `h-0` with the segment absolutely positioned out of it, so the board's rows
+    reflow on the same frame they always did and only the rail animates. Holding a real row open
+    would defer the board's settle to the end of the animation, where it lands on its own and
+    reads as a lurch, and would change the content height twice per crossing under the two
+    ResizeObservers watching it. Its height comes from `useInsertionMarker`, which already
+    measures the ghost row and already holds the value after the gap goes null.
+  - `/timeline-lab` could not reach this state at all: it tied `isOverTimeline` to `isDragging`.
+    `?over=0` (the "Off the board" chip) unties them, and `?slowmo=` composes with it.
+- **The gap a drag is previewing draws no dash at all** (`TimelineTick`'s `variant="none"`, 2026-09).
+  It used to draw a faint one, which gave the landing nothing to reveal: the dot flattened into a
+  tick that had been sitting there the whole drag, and the board showed the answer's position
+  before the card was dropped. Now the only mark at the gap is the travelling marker, and the
+  dash's first appearance _is_ the landing. Two things this depends on:
+  - **The footprint stays.** `variant="none"` keeps the outer 12×4 box and drops only the painted
+    inner one. The gutter is a fixed 96px column that _ends_ in that box, so omitting the element
+    would shove the ghost row's `?` 12px right, against the rail, on every gap the drag previews.
+    `TimelineTick.test.tsx` pins both halves of that.
+  - **There are two ghost render sites**, and a change to one that misses the other is invisible
+    until a drag happens to hover a gap that already holds a tombstone: `GhostCard` in
+    `Timeline.tsx` (the inserted row) and `TombstoneRow`'s `ghostEvent` branch (the ghost takes
+    the tombstone's row instead of inserting one). Both draw `none`. The earlier
+    `bg-accent/50`-compiles-to-nothing bug lived in exactly this pair.
+- The dev rigs cover the drag but not the drop. `/anim-jig` drives the board with
+  `isDragging={false}`, so no marker exists there at all. `/timeline-lab?ghost=…` _does_ fake a
+  real drag — `isDragging` + `insertionIndex` straight onto `Timeline`'s props — so the ghost row
+  and the marker are both live and it is the right place to check what the gap looks like. Neither
+  can commit a placement, so the landing itself still sits out; a null origin is the safe failure.
+  `scripts/tick-landing-probe.js` plays a real game instead and samples the geometry per frame;
+  stills are useless for the morph, because the screenshot pipeline lags a CPU-throttled page
+  badly enough to miss 350ms. They are fine for the drag, which holds still.
+
+Traps this round cost time on:
+
+- **An animation started in the commit that swaps the element drawing it is silently killed.**
+  The rail's extension is a length that outlives the elements painting it (`useRailExtension`),
+  because taking the card off the board unmounts the ghost row's segment and mounts a card-less
+  stub in its place, and the retract has to carry on through that swap. Animating the shared
+  MotionValue from the effect that observes the swap does not work: framer creates the controls,
+  the value never ticks, and nothing errors — `animation` is never attached and the controls sit
+  at `state: "idle"`. Proved by re-issuing the identical call 500ms later and watching it run.
+  Every spring there is therefore armed on the next frame, which costs one frame at a length the
+  element is already painted at. If an animation ever "starts" and nothing moves, check whether
+  the element bound to it mounted or unmounted in that same commit.
+- **A spring does not know which of its units you can see.** The morph animated `borderRadius`
+  from `9999` to `0` — a big round number, on the reasoning that it paints the same capsule as
+  any sufficient radius, which is true at rest. It is not true in flight. A spring carrying a
+  value 9999 units is still ~117 units from home at the moment the size has arrived, and on a
+  12×4 dash anything above 2 is a _full_ capsule: the tick reached its resting shape at ~200ms,
+  stayed a pill until ~345ms, went square for one frame, then rang back into a pill and
+  oscillated. A rounded end against the rail's flat edge is a notch of daylight at the join, so
+  what it looked like was a small gap opening and filling itself, twice, a beat after the
+  landing. `DOT_RADIUS` is `DOT_W / 2` now — the geometry's own units, so the rounding lands with
+  the shape and an overshoot clamps at 0 where nothing can see it. Any value animated on a shared
+  spring wants a range whose units are the ones on screen.
+- **The morph may not overshoot.** The dash's right edge _is_ the board column's seam, so an
+  under-damped morph lifts the tick off the rail and puts it back — measured at 0.18px, which is
+  half a device pixel on a 3× phone and reads as the join flickering. `tick.morphSpring` is at
+  critical damping (`damping >= 2·√(stiffness · mass)`), pinned by a test, and `/anim-jig` can
+  still be dragged past it to look. This is the opposite of the rail's growth spring, which is
+  deliberately under-damped — that one overshoots into empty space, where a bounce costs nothing.
+- **Measure the morph's tail, not just its handoff.** `scripts/tick-landing-probe.js` finds the
+  landing dash by "inline size ≠ 12×4", so it stops watching at the exact moment both of these
+  bugs happen. Neither showed up in it. What found them was a CDP screencast of a real drop
+  (`Page.startScreencast`, ~60fps — note its frames come back at CSS resolution, not the
+  context's `deviceScaleFactor`) cropped to the gutter, plus a per-frame read of the landing
+  row's own dash including its computed `border-radius`.
+- **An animation whose element rests in the loud state is a landmine.** The placement vignette
+  (`.vignette-overlay` + `animate-vignette` in Game.tsx) had no `animation-fill-mode` and no
+  resting `opacity`, so the moment `vignettePulse` completed the element reverted to the default
+  opacity of 1 — a full-strength flash of the whole vignette, brighter than the pulse that had
+  just finished. Game.tsx unmounts it on a timeout matched to the animation's duration, so
+  whether anyone saw it came down to winning a race by a few milliseconds. It held for a long
+  time, then one more per-placement measurement on the board added just enough work to lose the
+  race on a phone, and it showed up as a second flash after every placement. `.vignette-overlay`
+  now rests at `opacity: 0`. Worth checking for the same shape anywhere else: an animation that
+  ends somewhere other than its element's base style, on an element that outlives it.
+- **Anything that measures the board will loop forever if you let it.** `buildTimelineRows` was
+  called inline on every render, so the rows array had a new identity each time → new measure
+  callback → effect → `setState` → render. It is memoised now, which is what keeps
+  `useInsertionMarker`'s ResizeObserver from driving that loop. The symptom is React error #185
+  and a blank board.
+- **Masking the end segments back to the tick was wrong twice over**: it made the line stop dead
+  on the first and last card, and it reduced a one-card board to a dot. It also hit a CSS trap
+  worth knowing — a one-card board is `first && last`, and two `mask-image` declarations cannot
+  both apply, so the top and bottom caps silently fought. Letting each segment fill its row
+  removes the masks and answers both.
+- **A 320ms spring is quicker than a Playwright screenshot round-trip**, so every frame came
+  back settled. `Animation.setPlaybackRate` over CDP did _not_ reach framer-motion's animation
+  even though the WebAnimation is visible to `Animation.enable`. What works is `TimelineRail`'s
+  `timeScale` prop (`Timeline`'s `railTimeScale`, the lab's `?slowmo=`): scaling a spring's time
+  by k is exactly `stiffness/k²` and `damping/k`, so a slowed capture shows the real curve.
+  `scripts/timeline-lab-shots.js` also reads the segment's live `scaleY` at each capture, so the
+  strip's captions are measured rather than inferred from the wall clock — off the
+  `data-rail-extending` marker, not the first `.tl-rail` in the DOM, which is a static row
+  whenever the board is growing at its later end and reported a flat ×1.00 for a while.
+- **Changing a lab URL param with `page.goto` remounts the tree, so nothing animates.** Use
+  `history.pushState` + a synthetic `popstate`; React Router picks it up in place.
+- Row decoration keyed off `event.color` is a dead end: those values are image-derived and
+  almost all dark brown, so anything painted with them reads as dirt.
+
+Also in this round: `Timeline`'s body was at the `max-lines-per-function` ceiling, so the two
+wave memos and the wake-delay memo moved into `useTimelineWaves.ts` and `useWakeDelays.ts`, and
+the row renderers were split out. Pure refactors — no behaviour change.
+
 ## Onboarding hints (2026-09)
 
 Players said the app did not explain itself: the rules were three lines that omitted the

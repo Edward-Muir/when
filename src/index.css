@@ -114,6 +114,64 @@ body {
   }
 }
 
+/* ===========================================================================
+   THE BOARD'S RAIL
+
+   The accent line down the board, and the two lit things that ride it: the marker that
+   travels to the gap a drag is previewing, and the dash it becomes when the card lands.
+   The board itself has no background of its own — it sits on --color-bg, and the
+   "Earlier"/"Later" wayfinding fades to that colour with a plain Tailwind gradient in
+   Timeline.tsx. A tinted paper field was tried here and rejected; see
+   docs/ui-redesign/index.md before adding one back.
+
+   Same trap as `.bg-player-row`: color-mix, never `/NN` on a theme token. No calc()
+   wrapped around max()/min()/clamp() anywhere here (postcss-calc, see BOARD COLUMN
+   below).
+   =========================================================================== */
+
+@layer utilities {
+  /* The rail, drawn per row (TimelineRail.tsx) so it spans exactly the rows that exist. Each
+     segment fills its whole row, so the line runs half a card-to-card gap past the first and
+     last tick rather than stopping dead on them. */
+  .tl-rail {
+    background-color: var(--color-accent);
+  }
+  /* The growing tip: the leading end of a rail extension while a drag previews it, and the
+     travelling marker that becomes a tick when the card lands (TimelineMarker.tsx). */
+  .tl-rail-tip {
+    background-color: var(--color-accent);
+    box-shadow:
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 55%, transparent),
+      0 0 22px 6px color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+  /* A wrong drop snuffs the marker where it stands: the glow goes out over the red flash, and
+     what travels to the card's true slot is a dead grey dot. Declared after .tl-rail-tip so it
+     wins on equal specificity; the transition is what makes it a fade rather than a cut. */
+  .tl-rail-tip-snuffed {
+    box-shadow: none;
+    transition: box-shadow var(--anim-tip-snuff-dur, 0.35s) ease-out;
+  }
+  /* The dash a correct placement lands as: it arrives still carrying the marker's glow and
+     gives it up. The resting value is `none` and the fill is `forwards`, so there is nothing
+     for the end of the animation to snap back to — the bug that made the placement vignette
+     flash twice (see .vignette-overlay). */
+  .tl-tick-glow {
+    box-shadow: none;
+    animation: tickGlowDecay var(--anim-tick-glow-dur, 0.4s) ease-out forwards;
+  }
+}
+
+@keyframes tickGlowDecay {
+  from {
+    box-shadow:
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 55%, transparent),
+      0 0 22px 6px color-mix(in srgb, var(--color-accent) 22%, transparent);
+  }
+  to {
+    box-shadow: none;
+  }
+}
+
 /* Game-start loading scrim (GameStartTransition.tsx). A full-width band of background
    wash that is masked so it fades to nothing above and below: the intro timeline stays
    sharp at the top and bottom of the screen and dissolves only where the title sits, so
@@ -389,6 +447,14 @@ input,
    which stays clear so the timeline remains visible. --vignette-color is
    set inline per placement (error red / streak green or gold). */
 .vignette-overlay {
+  /* The element's RESTING state must be invisible. `vignettePulse` has no fill-mode, so the
+     instant it completes the element reverts to this rule — and with the default opacity of 1
+     that reversion is a full-strength flash of the whole vignette, brighter than the pulse it
+     just finished. Game.tsx unmounts it on a timeout matched to the animation's duration, so
+     whether you ever see that depends on winning a race by a few milliseconds: it survived for
+     a long time because the timeout usually landed first, and became visible on a phone as soon
+     as the board got a little more work to do per placement. Keep this at 0. */
+  opacity: 0;
   background: radial-gradient(
     ellipse at center,
     transparent 42%,
@@ -624,7 +690,8 @@ input,
   .animate-shine-sweep,
   .animate-halo-pulse,
   .animate-hint-lift,
-  .animate-vignette {
+  .animate-vignette,
+  .tl-tick-glow {
     animation: none;
   }
 
