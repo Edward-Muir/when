@@ -164,37 +164,53 @@ catalogue. Use hook kind **F**, the plain lead.
 Both open with the same fact. The first one performs it. A gallery about an atrocity has a plaque
 too, and it is exact, unshowy and unironic.
 
-## Rule 6: what may be asserted
+## Rule 6: draft, then check, then cut
 
 **Why:** confident fabrication is the failure that scales worst, and nothing in the pipeline
-catches it.
+catches it. A spot-check of the first ten entries, all written from memory, found a definite
+factual error in one and untraceable claims in most. Every one read convincingly.
 
-- Write only what you would stake **without a link**.
-- **Specifics are the point; inventing them is the sin.** A well-attested figure or distance is
-  what the player tapped for. One you have to reach for gets **cut**, not softened into vagueness.
-- Never invent a casualty figure, a quotation, a named individual, or a subsidiary date.
-- Attribute contested claims. Vague attribution is banned and is not the same thing:
+**The method: draft from what you know, then check it, then cut what does not survive.**
+
+Light research, not a research project:
+
+- **One or two searches per event.** Skim the first few results, open a page or two.
+- **If the results do not support a claim, cut it.** Do not hunt for a source. Do not soften it
+  into vagueness. Drop it and use something they do support.
+- **Stop once the claims are supported.** This is a card blurb, not a paper.
+
+```
+Drafted from memory:  Broughton's amphitheatre in Tottenham Court Road
+One search later:     it was Oxford Road, now Oxford Street
+```
+
+- **Specifics are the point; inventing them is the sin.** A figure that checks out is what the
+  player tapped for. One that does not gets cut, not hedged.
+- **Never invent** a casualty figure, a quotation, a named individual, or a subsidiary date. If the
+  check does not turn up a quotation's wording, do not use quotation marks.
+- **Attribute contested claims.** Vague attribution is banned and is not the same thing:
 
 ```
 ❌ Experts say the Mongols catapulted plague corpses into Caffa.
-✅ A single contemporary account, by a notary who was not present, says the Mongols catapulted
+✅ A single contemporary account, by a notary who was not there, says the Mongols catapulted
    plague corpses over the walls.
 ```
 
-- **Attribution beats the band.** When hedging a contested figure pushes the entry over the
-  ceiling, **drop a paragraph, never the attribution.**
+- **Attribution beats the band.** If hedging a contested figure pushes the entry over the ceiling,
+  **drop a paragraph, never the attribution.**
 
-### The `wikipedia_url` trap
+Nothing is stored. No sources sidecar, no citation trail, no two-source rule. The shard holds
+`{ paragraphs }` and nothing else. This is a check, not a bibliography.
 
-1,830 events carry an undeclared `wikipedia_url`. It is a **lead, not a source**, and at least one
-is wrong:
+### Do not add `wikipedia_url` to the worklist
 
-```
-battle-megiddo   year -1457   .../wiki/Battle_of_Megiddo_(1918)
-```
+A worklist chunk holds `name`, `friendly_name`, `year`, `category`, `difficulty` and `description`.
+That is the whole of it, deliberately. 1,830 events carry a `wikipedia_url`, but it is a byproduct
+of `scripts/difficulty/wikipedia_pageviews.py` grading difficulty by pageviews, and it is not
+reliable: `battle-megiddo` is the 1457 BCE battle and links `Battle_of_Megiddo_(1918)`.
 
-That card is the 1457 BCE battle. The link is the 1918 one. **Confirm a linked article's year,
-place and actors match the card before using it.** Never cite it in the prose.
+A search finds the right article. The field hands over a wrong one with the authority of being in
+the data. Do not add it to the chunk.
 
 ## Rule 7 and 8: the hard bans
 
@@ -237,14 +253,20 @@ slugs, titles, years, categories, difficulties and existing descriptions. Smalle
 The ten calibration entries listed at the end of the spec are the corpus's first real prose. Read
 them before writing. They transmit tone better than any amount of rule text.
 
-### 3. Write a map file, never a shard
+### 3. Check before committing to a claim
+
+Draft each entry, then run one or two quick searches per event and skim the first few results. Cut
+anything they do not support. Note what you changed: that list is the useful part of the review,
+because reading finished prose cold cannot catch a confident invention.
+
+### 4. Write a map file, never a shard
 
 Write `untracked_data/event-detail/batch-NNN.json` as `slug -> { paragraphs }`.
 
 **Never edit `public/events/detail/*.json` directly.** Parallel agents editing a shared 600 KB JSON
 array corrupt it; this repo has already paid for that lesson once.
 
-### 4. Apply
+### 5. Apply
 
 ```bash
 node scripts/events/detail-apply.js --dry-run     # validate without writing
@@ -254,7 +276,7 @@ node scripts/events/detail-apply.js batch-001.json
 Validates the whole merged map first and **refuses the entire run on one bad entry**, so a
 half-applied batch is unreachable. Writes the prose and `has_detail` together.
 
-### 5. Verify
+### 6. Verify
 
 ```bash
 npm run typecheck && npm run lint
@@ -263,7 +285,7 @@ CI=true npm run build
 node scripts/events/detail-report.js             # progress meter; non-zero until 5,460/5,460
 ```
 
-### 6. Read five at random, cold, against the spec
+### 7. Read five at random, cold, against the spec
 
 **Drift is the failure mode here, not corruption** — the scripts already make corruption hard. Check
 specifically: are the hooks all the same kind, and is every entry pressed against the 830 ceiling.
@@ -279,7 +301,8 @@ specifically: are the hooks all the same kind, and is every entry pressed agains
 6. **A hook on an atrocity** — the carve-out requires the plain lead
 7. **Padding a thin event to reach the floor** instead of widening the lens, or inventing to fill it
 8. **Treating a `very-hard` card as having less to say** — difficulty is placement, not record
-9. **Trusting `wikipedia_url`** without checking the year and actors match the card
+9. **Writing from memory without checking** — the one that put a wrong street in Broughton's
+   entry and a wrong explosion count in Krakatoa's
 10. **Writing to the 830 ceiling** because the room is there
 11. **Drafting three paragraphs and submitting them** — the third fails the entry outright; fold
     what it was carrying into the second, or drop it

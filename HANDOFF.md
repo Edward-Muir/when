@@ -88,6 +88,14 @@ Three things worth knowing here:
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** It is
   deliberately not part of `npm test`, which would otherwise be red for the whole writing phase.
   It now reads 10/5460.
+- **The prose is researched, not recalled.** Draft, then check with one or two searches, then cut
+  what the results do not support. This replaced a rule that said "write only what you would stake
+  without a link", which produced a factual error in one of the first ten entries and untraceable
+  claims in most. Nothing is stored: no sources, no citations, no enforcement. It is a check, not a
+  bibliography.
+- **Never pass `wikipedia_url` to a writer, and do not add it to the worklist chunk.** It is a
+  byproduct of the difficulty pageview scripts and it is unreliable: `battle-megiddo` is the 1457
+  BCE battle and links the 1918 one.
 - **The length band is settled and enforced**: exactly 2 paragraphs, 220-450 chars each, 480-830
   total.
   `detail-spec.js` also enforces voice now — no em dashes, no second person, no question marks, no
@@ -117,8 +125,10 @@ Write the other 5,450, per the plan in
    better than the rules do; the rules are what catch it when it slips.
 2. `node scripts/events/detail-report.js --chunks` for the worklist, smallest shard first
    (`candidates` 53 → `migration` 54 → … → `exploration` 1,040).
-3. Sonnet sub-agents write map files into `untracked_data/event-detail/`; one `detail-apply.js`
-   pass writes the catalogue.
+3. Use the **`event-detail-writer`** sub-agent (`.claude/agents/event-detail-writer.md`):
+   `model: sonnet`, `effort: low`, with the `write-event-detail` skill preloaded so the batch
+   prompt does not restate the spec. It writes map files into `untracked_data/event-detail/`; one
+   `detail-apply.js` pass writes the catalogue.
 4. Per-batch gate: `npm run typecheck`, `CI=true npm test -- --watchAll=false`,
    `CI=true npm run build`.
 5. **Read a random 5 per batch cold.** Drift is the failure mode, not corruption. Sample

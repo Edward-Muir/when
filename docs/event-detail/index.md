@@ -200,6 +200,32 @@ entry, as does a 7-word run shared with the event's own `description`. Every pat
 against all 5,460 existing descriptions before adoption and carries its count in a comment; 20 of
 37 have zero precedent in the catalogue. An unenforced rule across 137 batches is a suggestion.
 
+**The prose is researched, not recalled, and that was a correction.** The first pass of the spec
+told writers to "write only what you would stake without a link", which is a rule against
+fabricating rather than a rule for verifying: it tells a model to trust its own confidence. A
+spot-check of the first ten entries, all written that way, found a definite factual error in one
+(Krakatoa: four explosions where there were eleven, two thirds of the island where it was over 70%)
+and untraceable claims in most (Broughton's amphitheatre placed on the wrong street). All of them
+read convincingly, which is the point.
+
+Rule 6 now reads draft, then check, then cut: one or two searches per event, and a claim the first
+few results do not support is dropped rather than hunted down or softened. **Nothing is stored** -
+no sources sidecar, no citation trail, no two-source rule, no enforcement in `detail-apply.js`. The
+shard holds `{ paragraphs }` and nothing else. It is a check, not a bibliography, and the machinery
+that would make it auditable costs more than it is worth for a card blurb.
+
+**`wikipedia_url` is never passed to a writer, and must not be added.** `detail-report.js` emits
+only name, friendly*name, year, category, difficulty and description into a worklist chunk. The
+field is a byproduct of `scripts/difficulty/wikipedia_pageviews.py` grading difficulty by pageview
+counts, and it is unreliable: `battle-megiddo` is the 1457 BCE battle and links
+`Battle_of_Megiddo*(1918)`. A search finds the right article; the field hands over a wrong one with
+the authority of being in the data.
+
+**Phase 3 batches run on a dedicated sub-agent**, `.claude/agents/event-detail-writer.md`:
+`model: sonnet`, `effort: low`, `skills: [write-event-detail]` so the spec is preloaded rather than
+restated in every batch prompt, and a `tools` list narrow enough that it can reach the web and the
+map file and nothing else.
+
 **`entryProblems(slug, entry)` takes an optional third argument, `event`**, because the restatement
 check needs the event's own `description`. Both callers already had the records to hand.
 

@@ -215,41 +215,59 @@ still died. Correct the record about the trial; do not be clever about the shoot
 
 Both open with the same underlying fact. The first one performs it.
 
-## Rule 6: what may be asserted
+## Rule 6: draft, then check, then cut
 
 The failure that scales worst is confident fabrication, and nothing in the pipeline catches it.
+This corpus is written by language models, which are fluent about history they have half-absorbed,
+and a wrong date in a museum plaque is worse than no plaque.
 
-- **Write only what you would stake without a link.** A shorter honest entry beats a
-  specific-sounding invented one.
-- **Specifics are the point; inventing them is the sin.** A figure, distance, sum or name that is
-  well attested is exactly what the player tapped for, so write it. One that has to be reached for
-  is not to be softened into vagueness, it is to be **cut**. The test is provenance, not precision.
+**So the method is: draft from what you know, then check it, then cut what does not survive.**
+
+This rule used to read "write only what you would stake without a link", which is a rule against
+fabricating and not a rule for verifying. It told a writer to trust its own confidence, and that is
+exactly the failure mode. It was replaced after a spot-check of the first ten entries, all written
+that way, found a definite factual error in one and untraceable claims in most.
+
+**Light research, not a research project.** One or two searches per event. Skim the first few
+results, open a page or two. The purpose is to catch what a model states confidently and wrongly:
+dates, numbers, names, places, who did what.
+
+- **If the first few results do not support a claim, cut it.** Do not go hunting for a source, and
+  do not soften it into vagueness. Drop it and use something the results do support.
+- **Do not over-research.** Stop once the claims being made are supported. This is a card blurb.
+- **Specifics are the point; inventing them is the sin.** A figure, distance, sum or name that
+  checks out is exactly what the player tapped for, so write it. One that does not gets **cut**,
+  not hedged. The test is whether it survived the check, not how precise it sounds.
 - **Never invent** a casualty figure, a quotation, a named individual, or the date of a subsidiary
-  event.
+  event. Quotations are the single easiest thing to hallucinate convincingly; if the check does not
+  turn up the wording, do not use quotation marks.
 - **Attribute contested claims rather than asserting them.** `mongol-black-death-spread`: the story
-  that the Mongols catapulted plague corpses into Caffa comes from a single account by Gabriele de'
-  Mussi, who was not there, and historians disagree about whether it spread anything. Write "a
-  single contemporary account, by a notary who was not present, says", not "the Mongols catapulted".
-  Vague attribution is not the same thing and is banned: "experts say" and "widely regarded as"
-  launder a claim instead of sourcing it.
+  that the Mongols catapulted plague corpses into Caffa comes from a single account by Gabriele de
+  Mussis, who was not present, and historians now favour resumed grain shipments as the route.
+  Write "a single contemporary account, by a notary who was not there, says", not "the Mongols
+  catapulted". Vague attribution is not the same thing and is banned under Rule 8: "experts say"
+  and "widely regarded as" launder a claim instead of sourcing it.
 - **Attribution beats the band.** Hedging a contested figure costs characters a bare number does
   not, and the entry pays that cost. When Rule 6 and the length band collide, **a paragraph goes**,
   never the attribution.
 
-### The `wikipedia_url` trap
+What this rule does **not** ask for: stored sources, a citation trail, two independent sources per
+claim, or a quality ranking of the web. None of that is kept and none of it is enforced. The shard
+stores `{ paragraphs }` and nothing else. This is a check, not a bibliography.
 
-1,830 of the 5,460 events carry an undeclared `wikipedia_url` alongside `wikipedia_views`. It is a
-**lead, not a source**, and at least one is simply wrong:
+### Do not add `wikipedia_url` to the worklist
 
-```
-battle-megiddo   year -1457   https://en.wikipedia.org/wiki/Battle_of_Megiddo_(1918)
-```
+1,830 events carry a `wikipedia_url` field. **It is deliberately not passed to writers.**
+`detail-report.js` emits only `name`, `friendly_name`, `year`, `category`, `difficulty` and
+`description` into a worklist chunk, and that is the whole of what a writing agent sees.
 
-That card is the 1457 BCE battle where Thutmose III took the Aruna pass. The link is the 1918 one.
-A spec that said "check the linked article" would launder that error into the corpus.
+The field exists as a byproduct of `scripts/difficulty/wikipedia_pageviews.py`, which attaches it
+while grading difficulty by pageview counts. It was never a research anchor and it is not reliable:
+`battle-megiddo` is the 1457 BCE battle and its link points at `Battle_of_Megiddo_(1918)`.
 
-So: before using a linked article, **confirm its year, place and actors match the card**. Never cite
-it in the prose.
+A future session will otherwise "improve" the chunk by adding it, on the reasonable-sounding
+grounds that a writer could use a starting link. Do not. A search finds the right article; the
+field hands over a wrong one with the authority of being in the data.
 
 ## Rule 7: the game's own bans
 
