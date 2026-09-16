@@ -1,5 +1,5 @@
 /**
- * The shape rules for an event's long-form "read more" prose.
+ * The shape rules for an event's long-form detail prose.
  *
  * Plain CommonJS with no dependencies, for the same reason as `date-clues.js`: the maintainer
  * scripts run under a bare `node` with no build step, and `src/utils/eventDetailCorpus.test.ts`
@@ -67,10 +67,14 @@ function entryProblems(slug, entry) {
       problems.push(`${slug}: paragraph ${i + 1} contains a newline — split it into its own entry`);
     }
     if (text.length < MIN_PARAGRAPH_CHARS) {
-      problems.push(`${slug}: paragraph ${i + 1} is ${text.length} chars, minimum ${MIN_PARAGRAPH_CHARS}`);
+      problems.push(
+        `${slug}: paragraph ${i + 1} is ${text.length} chars, minimum ${MIN_PARAGRAPH_CHARS}`
+      );
     }
     if (text.length > MAX_PARAGRAPH_CHARS) {
-      problems.push(`${slug}: paragraph ${i + 1} is ${text.length} chars, maximum ${MAX_PARAGRAPH_CHARS}`);
+      problems.push(
+        `${slug}: paragraph ${i + 1} is ${text.length} chars, maximum ${MAX_PARAGRAPH_CHARS}`
+      );
     }
   });
 

@@ -1,7 +1,7 @@
 import { getSourceFile } from './eventLoader';
 
 /**
- * Loads the long-form "read more" prose for a single event.
+ * Loads the long-form detail prose for a single event.
  *
  * The prose lives in a sidecar under `public/events/detail/`, sharded to mirror the 19
  * manifest filenames exactly and keyed by slug. It is deliberately NOT part of the event
@@ -76,7 +76,7 @@ export async function loadEventDetail(name: string): Promise<string[] | null> {
 /**
  * The paragraphs for an event if its shard is already cached, else `undefined` for "don't know
  * yet". Lets the detail view re-open instantly once a shard is warm, instead of flashing a
- * skeleton for one tick every time the card is turned back over.
+ * skeleton for one tick every time a card from that shard is opened.
  */
 export function peekEventDetail(name: string): string[] | null | undefined {
   const file = getSourceFile(name);

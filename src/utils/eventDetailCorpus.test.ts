@@ -12,10 +12,10 @@ const spec = require('../../scripts/events/detail-spec.js');
  * Same arrangement as `eventDateClues.test.ts` and `scripts/events/date-clues.js`.
  *
  * The invariant worth the most here is the two-way pairing between `has_detail` and the sidecar.
- * `has_detail` alone decides whether the info button renders, and the sidecar alone holds what
- * the button opens, so either one without the other is a live defect a player would meet:
- * a flag with no prose is a button that opens nothing, and prose with no flag is writing
- * nobody can reach.
+ * `has_detail` alone decides whether a card reads its prose or its description, and the sidecar
+ * alone holds that prose, so either one without the other is a live defect a player would meet:
+ * a flag with no prose is a card that falls back to its description after a failed fetch, and
+ * prose with no flag is writing nobody can reach.
  *
  * Everything here passes trivially while the sidecar is empty — that is the Phase 1 state.
  */

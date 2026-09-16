@@ -23,11 +23,11 @@ function readCache(name: string | null): {
 
 /**
  * Fetches an event's long-form prose, but only once `enabled` goes true — i.e. only after the
- * player has actually tapped the info button. Fetching on popup-open instead would spend a
+ * card is one whose prose is going to be rendered. Fetching for every card opened would spend a
  * shard-sized download on everyone who merely glances at a card.
  *
- * State is seeded synchronously from the shard cache so that turning a card back and forth
- * re-reads instantly rather than flashing the skeleton on every flip.
+ * State is seeded synchronously from the shard cache, so the second and later cards from a warm
+ * shard render their prose immediately rather than flashing the skeleton for a tick.
  *
  * Extracted from `GamePopup` rather than inlined because that component sits near ESLint's
  * `complexity` ceiling of 15, the same reason `Game.tsx` keeps its hint logic in

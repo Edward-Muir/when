@@ -18,8 +18,9 @@
  * Two things are written together, and that pairing is the point:
  *   - the prose, into `public/events/detail/<source file>`
  *   - `has_detail: true`, onto the event record in `public/events/<source file>`
- * The flag is what the info button keys off. Writing prose without it shows no button; writing it
- * without prose shows a button that opens nothing. Never set it by hand.
+ * The flag is what the card keys off. Writing prose without it leaves the card on the short
+ * description; writing the flag without prose leaves it on the description with a failed fetch
+ * behind it. Never set it by hand.
  */
 
 const fs = require('fs');
@@ -45,7 +46,10 @@ function loadMaps(argv) {
   const named = argv.filter((a) => !a.startsWith('--'));
   const files = named.length
     ? named
-    : fs.readdirSync(MAPS_DIR).filter((f) => f.endsWith('.json')).sort();
+    : fs
+        .readdirSync(MAPS_DIR)
+        .filter((f) => f.endsWith('.json'))
+        .sort();
 
   if (!files.length) {
     console.error(`No .json map files found in ${MAPS_DIR}`);

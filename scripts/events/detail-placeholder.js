@@ -9,7 +9,8 @@
  *   node scripts/events/detail-placeholder.js --revert   # undo: delete shards, strip has_detail
  *
  * Its output IS committed on the feature branch, so the branch's preview deploy is testable —
- * without `has_detail` no info button renders anywhere, which makes the preview useless for
+ * without `has_detail` every card falls back to its short description, which makes the preview
+ * useless for
  * looking at the thing it exists to show. What keeps that safe is not leaving it uncommitted but
  * that the branch never merges until the corpus is written, and that every entry is flagged
  * `placeholder: true` so `detail-report.js` refuses to call the job done. See Guardrail 1 in
