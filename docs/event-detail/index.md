@@ -5,6 +5,8 @@ and have not started.** Nothing is in production: the branch does not merge unti
 written. On the branch itself every event carries placeholder prose so the preview deploy is
 testable — see Guardrail 1 for what keeps that from shipping.
 
+- **Current branch state and the next session's worklist: [/HANDOFF.md](../../HANDOFF.md)** —
+  branch-scoped, deleted before merge
 - [2026-09-12 — Designing the read-more view](session-2026-09-12-detail-view-design.md) — where the
   branch stands, the open questions Phase 2 has to settle, the corpus and payload measurements
   worth not re-deriving, and the environment traps that cost this session a cycle each
