@@ -14,7 +14,9 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 `docs/event-detail/writing-spec.md`, `.claude/skills/write-event-detail/SKILL.md`, a real length
 band enforced in `scripts/events/detail-spec.js`, and the corpus's **first ten written entries**.
 
-**Phase 3 is the remaining 5,450**, and is what the next session picks up.
+**Phase 3 is under way: 2,092 of 5,460 are written**, 38% of the corpus. See
+[Where Phase 3 got to](#where-phase-3-got-to) before picking it up — the operational lessons there
+are worth more than the plan they replaced.
 
 **Branch off _this_ branch, never off main** — the feature does not exist on main.
 
@@ -30,9 +32,9 @@ same popup; its event is the deck's starting card, placed face-up with its year 
 read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`,
 sharded to mirror the 19 manifest files; it is never inlined into the event JSON.
 
-**10 of 5,460 events carry real prose, and the placeholder corpus is gone.** `has_detail` stands at
-exactly 10, so ten cards show prose and the rest fall back to their short description, which is the
-designed behaviour and not a bug. The branch's preview therefore shows no lorem to anyone.
+**2,092 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
+to their short description, which is the designed behaviour and not a bug. The branch's preview
+therefore shows no lorem to anyone.
 `detail-placeholder.js` can refill it if a future session wants the layout exercised at scale
 again; both it and `--revert` preserve written prose.
 
@@ -89,7 +91,7 @@ Three things worth knowing here:
   600 KB array corrupt it — this repo has already paid for that lesson once.
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** It is
   deliberately not part of `npm test`, which would otherwise be red for the whole writing phase.
-  It now reads 10/5460.
+  It now reads 2092/5460.
 - **The prose is researched, not recalled.** Draft, then check with one or two searches, then cut
   what the results do not support. This replaced a rule that said "write only what you would stake
   without a link", which produced a factual error in one of the first ten entries and untraceable
@@ -118,7 +120,55 @@ Three things worth knowing here:
   rule and the element gets no colour at all. Use `opacity-60`. (`CLAUDE.md` → Styling.)
 - **`CI=true npm run build`**, not a plain build, and run tests through `npm` only (the `TZ` pin).
 
-## Phase 3 — what the next session does
+## Where Phase 3 got to
+
+Complete shards: `people` 298, `candidates` 53, `clothing` 54, `migration` 54, `communication` 56,
+`law` 67, `food` 69, `money` 71, `earth-life` 72, `medicine` 75, `games-sport` 79, `disasters` 209,
+`sports` 324, `themes` 353. Partial: `infrastructure` 253/408. Untouched: `conflict` 555,
+`cultural` 625, `diplomatic` 998, `exploration` 1,040.
+
+A partial shard is fine. `--chunks` regenerates worklists containing only unwritten events, so
+resuming needs no special handling.
+
+**What actually drives quality, measured across fourteen shards:**
+
+- **State the length band in the batch prompt, every time.** Not in the agent definition, which
+  does not reach the writers: 21% failures with no instruction, 54% with it only in the definition,
+  0-9% with it in the prompt. This is the single highest-leverage line.
+- **Name the shard's own trap in the prompt.** One line, and it works. Telling `sports` writers not
+  to open every entry with "X won Y in YEAR" took the hook monoculture from 80% on `people` to 3%.
+  Traps found so far: myth-prone origin stories (`sports`, `games-sport`), the register carve-out
+  for mass casualties (`disasters`), thin-record events where a plausible mechanism is pure
+  invention (`themes`), superlatives that need an end date and a successor (`infrastructure`),
+  contested deep-time dates (`earth-life`), priority disputes (`medicine`).
+- **Hedging costs characters.** When a shard needs it, say "keep the hedge and cut a fact to pay
+  for it", or the band pushes the hedge out. `earth-life` cost a repair round learning this.
+- **Write one file per event**, `e-<slug>.json`, and demand single-line JSON. A worker restart
+  destroyed six agents' unwritten work early on; per-event writes cap the loss at one entry. Raw
+  newlines inside paragraph strings recur in most shards and make files silently absent from the
+  merge rather than rejected, so check parseability separately from the spec.
+- **Verify against the worklist, not the agent's report.** Self-reported counts have been wrong in
+  both directions.
+- **Spec collisions to expect** (work around them, do not loosen the ban): `served as` in
+  biography, `stood as` for records, `load-bearing` in architecture, `robust` in _Paranthropus
+  robustus_, `Fosters` for Norman Foster's firm.
+
+**Catalogue errors found while writing, none fixed except the first two.** `year` was corrected for
+`crispr-human-therapy` (2020 to 2019) and `chickens-domesticated` (-6000 to -1500, the 2022 PNAS
+re-dating). Note that changing one year re-scores its neighbours through `difficultyScore` and
+moved a `deckBuilder` test bound; that test documents its own re-baselining convention.
+
+Writers flagged roughly three false positives per real error, so **verify every flag before
+touching a year**. Left for the maintainer, all player-visible: eight `medicine` descriptions
+(Behring credited alone for work with Kitasato, Simpson for chloroform John Snow gave, Landsteiner
+dated 1907 not 1901, liver and lung transplants framed as successes when both patients died within
+weeks), `first-thomas-cup-1949` says Malaysia when Malaysia did not exist until 1963,
+`owens-six-records-ann-arbor-1935` says five records where the record supports four,
+`lahaina-fire` says 97 dead against the DNA-corrected 102, `australia-bushfires` says one billion
+animals against a later estimate near three billion, `code-of-lipit-ishtar` calls a Sumerian code
+Akkadian, and `gold-rush-currency-clipper` is a slug that has nothing to do with its own content.
+
+## Phase 3 — the original plan
 
 Write the other 5,450, per the plan in
 [docs/event-detail/index.md](docs/event-detail/index.md#phase-3--writing-5460-entries). In short:
@@ -182,7 +232,7 @@ at 320px. The image is _inside_ the scroll region, so even a 480-character entry
 comes to about 665px against a 476px region — it always overflows, which is what lets the region be
 a constant height without leaving dead space.
 
-5,460 events, 10 written, 5,450 to go. Full suite is **759 tests across 64 suites**.
+5,460 events, 2,092 written, 3,368 to go. Full suite is **759 tests across 64 suites**.
 
 Corpus numbers worth not re-deriving (catalogue size, gzip ratios, shard sizes, where Phase 3
 should start) are in the session notes, not here.
