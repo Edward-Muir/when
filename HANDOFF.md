@@ -30,9 +30,11 @@ same popup; its event is the deck's starting card, placed face-up with its year 
 read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`,
 sharded to mirror the 19 manifest files; it is never inlined into the event JSON.
 
-**10 of 5,460 events carry real prose.** The other 5,450 carry **committed placeholder**, flagged
-`placeholder: true` and opening `PLACEHOLDER: ` (that marker used to use an em dash; em dashes are
-banned in written prose from Phase 2 on).
+**10 of 5,460 events carry real prose, and the placeholder corpus is gone.** `has_detail` stands at
+exactly 10, so ten cards show prose and the rest fall back to their short description, which is the
+designed behaviour and not a bug. The branch's preview therefore shows no lorem to anyone.
+`detail-placeholder.js` can refill it if a future session wants the layout exercised at scale
+again; both it and `--revert` preserve written prose.
 
 The design decisions are in **[docs/event-detail/index.md](docs/event-detail/index.md)**. The voice
 rules are in **[docs/event-detail/writing-spec.md](docs/event-detail/writing-spec.md)** and, in
@@ -180,7 +182,7 @@ at 320px. The image is _inside_ the scroll region, so even a 480-character entry
 comes to about 665px against a 476px region — it always overflows, which is what lets the region be
 a constant height without leaving dead space.
 
-5,460 events, 10 written. Full suite is **759 tests across 64 suites**.
+5,460 events, 10 written, 5,450 to go. Full suite is **759 tests across 64 suites**.
 
 Corpus numbers worth not re-deriving (catalogue size, gzip ratios, shard sizes, where Phase 3
 should start) are in the session notes, not here.
