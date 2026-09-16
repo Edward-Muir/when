@@ -14,10 +14,10 @@ const mockedLoad = loadEventDetail as jest.MockedFunction<typeof loadEventDetail
 const mockedPeek = peekEventDetail as jest.MockedFunction<typeof peekEventDetail>;
 
 /**
- * The gate is the point of this suite. The long-form prose is written post-placement and names
- * dates freely, so an info button reachable from a card still in the player's hand would hand
- * over the answer the game is asking for. All three conditions are pinned separately, because
- * each one is a different way to leak it.
+ * Which of an event's two texts this popup shows is the point of this suite. The long-form prose
+ * is written post-placement and names dates freely, so a card still in the player's hand must get
+ * the short description and nothing else — that is the answer to the puzzle otherwise. Each
+ * condition is pinned separately, because each one is a different way to leak it.
  */
 
 const event: HistoricalEvent = {
@@ -30,7 +30,8 @@ const event: HistoricalEvent = {
   has_detail: true,
 };
 
-const readMore = () => screen.queryByRole('button', { name: /read more about this event/i });
+const prose = () => screen.queryByText('First paragraph.');
+const description = () => screen.queryByText(event.description);
 const card = () => screen.getByTestId('modal-card');
 const backdrop = () => screen.getByTestId('modal-backdrop');
 
@@ -47,128 +48,95 @@ beforeEach(() => {
   mockedLoad.mockResolvedValue(['First paragraph.', 'Second paragraph.']);
 });
 
-describe('the read-more gate', () => {
-  it('offers the button on a placed card that has prose', () => {
-    renderPopup();
-    expect(readMore()).toBeInTheDocument();
-  });
-
-  it('hides the button while the year is hidden — a card still in hand', () => {
-    renderPopup({ showYear: false });
-    expect(readMore()).not.toBeInTheDocument();
-  });
-
-  it('hides the button for an event with no prose written yet', () => {
-    renderPopup({ event: { ...event, has_detail: undefined } });
-    expect(readMore()).not.toBeInTheDocument();
-  });
-
-  it('hides the button on a correct/incorrect reveal, which is a game beat not a reading surface', () => {
-    renderPopup({ type: 'incorrect' });
-    expect(readMore()).not.toBeInTheDocument();
-  });
-});
-
-describe('reading more', () => {
-  it('swaps the short description for the prose, and back again', async () => {
+describe('which text a card shows', () => {
+  it('reads the prose on a placed card that has it', async () => {
     renderPopup();
 
-    userEvent.click(readMore()!);
     expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
     expect(screen.getByText('Second paragraph.')).toBeInTheDocument();
-    // One box, one text: the description is what the prose replaced.
-    expect(screen.queryByText(event.description)).not.toBeInTheDocument();
+    expect(description()).not.toBeInTheDocument();
+  });
 
-    userEvent.click(readMore()!);
+  it('keeps the prose off a card still in hand — the year is hidden there', async () => {
+    renderPopup({ showYear: false });
+
     expect(await screen.findByText(event.description)).toBeInTheDocument();
-    expect(screen.queryByText('First paragraph.')).not.toBeInTheDocument();
+    await waitFor(() => expect(prose()).not.toBeInTheDocument());
+    // Not merely hidden: never asked for.
+    expect(mockedLoad).not.toHaveBeenCalled();
   });
 
-  it('announces which of the two texts it is showing', async () => {
-    renderPopup();
-    expect(readMore()).toHaveAttribute('aria-expanded', 'false');
+  it('falls back to the description for an event with no prose written', async () => {
+    renderPopup({ event: { ...event, has_detail: undefined } });
 
-    userEvent.click(readMore()!);
-    await screen.findByText('First paragraph.');
-    expect(readMore()).toHaveAttribute('aria-expanded', 'true');
+    expect(await screen.findByText(event.description)).toBeInTheDocument();
+    expect(mockedLoad).not.toHaveBeenCalled();
   });
 
-  it('keeps the title and year visible while the prose is showing', async () => {
-    renderPopup();
-    userEvent.click(readMore()!);
+  it('keeps the prose off a correct/wrong reveal, which is a game beat not a reading surface', async () => {
+    renderPopup({ type: 'incorrect' });
 
-    expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
-    expect(screen.getByText(event.friendly_name)).toBeInTheDocument();
-    expect(screen.getByText('1743')).toBeInTheDocument();
+    expect(await screen.findByText(event.description)).toBeInTheDocument();
+    expect(prose()).not.toBeInTheDocument();
   });
 
-  it('offers a retry rather than a blank box when the shard will not load', async () => {
+  it('falls back to the description, and offers a retry, when the shard will not load', async () => {
     mockedLoad.mockResolvedValue(null);
     renderPopup();
 
-    userEvent.click(readMore()!);
-    expect(await screen.findByRole('button', { name: /tap to retry/i })).toBeInTheDocument();
+    expect(await screen.findByText(event.description)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /tap to retry/i })).toBeInTheDocument();
   });
 
-  it('returns to the description when the popup moves to another event', async () => {
+  it('never shows one event’s prose under another event’s title', async () => {
     const { rerender } = render(
       <GamePopup type="description" event={event} onDismiss={jest.fn()} />
     );
-
-    userEvent.click(readMore()!);
     expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
 
+    mockedLoad.mockResolvedValue(['Golf paragraph.']);
     const other: HistoricalEvent = {
       ...event,
       name: 'first-rules-of-golf',
       friendly_name: 'First Rules of Golf',
-      description: 'Thirteen articles agreed by a golfing society.',
     };
     rerender(<GamePopup type="description" event={other} onDismiss={jest.fn()} />);
 
-    // Never one event's prose under another event's title.
-    await waitFor(() => expect(screen.queryByText('First paragraph.')).not.toBeInTheDocument());
+    await waitFor(() => expect(prose()).not.toBeInTheDocument());
     expect(screen.getByText('First Rules of Golf')).toBeInTheDocument();
-    expect(screen.getByText(other.description)).toBeInTheDocument();
   });
 
   it('mutes the prose on a tombstoned event, as the rest of that card is muted', async () => {
     renderPopup({ tombstone: true });
-
-    userEvent.click(readMore()!);
     expect(await screen.findByText('First paragraph.')).toHaveClass('text-text-muted');
   });
 });
 
-describe('opening straight onto the prose', () => {
-  it('shows the prose without a tap, and offers no control to leave it', async () => {
-    renderPopup({ openExpanded: true });
-
-    expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
-    expect(screen.queryByText(event.description)).not.toBeInTheDocument();
-    // The surface was asked for the read; there is nothing to toggle to.
-    expect(readMore()).not.toBeInTheDocument();
-  });
-});
-
 describe('dismissal', () => {
-  it('advances on a tap anywhere while the description is showing', () => {
+  it('closes on the ✕', async () => {
     const { onDismiss } = renderPopup();
-    userEvent.click(card());
+    await screen.findByText('First paragraph.');
+
+    userEvent.click(screen.getByRole('button', { name: /close/i }));
     expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 
-  it('ignores taps on the card while the prose is showing, so a scroll drag is not a dismissal', async () => {
+  it('ignores taps on the card while the prose is up, so a scroll drag is not a dismissal', async () => {
     const { onDismiss } = renderPopup();
-
-    userEvent.click(readMore()!);
     await screen.findByText('First paragraph.');
 
     userEvent.click(card());
     expect(onDismiss).not.toHaveBeenCalled();
 
-    // The way out is still there.
     userEvent.click(backdrop());
+    expect(onDismiss).toHaveBeenCalledTimes(1);
+  });
+
+  it('advances on a tap anywhere where there is no prose to scroll', async () => {
+    const { onDismiss } = renderPopup({ showYear: false });
+    await screen.findByText(event.description);
+
+    userEvent.click(card());
     expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 });

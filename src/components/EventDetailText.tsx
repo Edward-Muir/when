@@ -5,11 +5,13 @@ import { getEventTextClass } from '../utils/eventColor';
 import { useEventDetail } from '../hooks/useEventDetail';
 
 /**
- * The long-form read, in the box the short description was occupying: three shimmer lines while
- * the shard loads, then the prose.
+ * The long-form read: three shimmer lines while the shard loads, then the prose — or the card's
+ * short description and a retry, if the shard will not load. Falling back to the description
+ * rather than to an empty box is the same rule that governs an event with no prose written: the
+ * card always says something about the event.
  *
- * Not a scroll region: it is the tall half of one, below the image, and the popup owns the box
- * they scroll in together. Its bottom padding is what lets the last line clear that box's fade.
+ * Not a scroll region itself. It is the tall half of one, below the image, and the popup owns the
+ * box they scroll in together.
  */
 function EventDetailText({
   event,
@@ -41,6 +43,7 @@ function EventDetailText({
   if (detail.status === 'error' || !detail.paragraphs) {
     return (
       <div className="px-4 py-3">
+        <p className={`${textClass} text-sm leading-relaxed font-body`}>{event.description}</p>
         <button
           type="button"
           onClick={(e) => {
@@ -48,10 +51,10 @@ function EventDetailText({
             detail.retry();
           }}
           aria-live="polite"
-          className={`w-full min-h-[44px] flex items-center justify-center gap-1.5 font-body text-xs opacity-80 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
+          className={`mt-2 w-full min-h-[44px] flex items-center justify-center gap-1.5 font-body text-xs opacity-80 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
         >
           <AlertCircle className="w-3.5 h-3.5" />
-          Couldn&apos;t load — tap to retry
+          Couldn&apos;t load more — tap to retry
         </button>
       </div>
     );

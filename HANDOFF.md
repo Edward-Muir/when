@@ -14,13 +14,14 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 ## What exists
 
-An info button beside a card's title in its detail popup swaps the short description for 2-3
-paragraphs about the event; the same button swaps back. Everything between the title and the
-"Report an issue" row then scrolls as one region, image included, inside the height it already
-occupied — so the card never changes size. It is on a placed card in a game and on anything in My
-Timeline. The Daily hero carries the same control watermarked into its image and opens straight
-onto the prose with no button in the header; its event is the deck's starting card, placed face-up
-with its year on turn 1, so the read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to
+A placed card's detail popup shows 2-3 paragraphs about the event in place of its short
+description — no control, no toggle. Everything between the title and the "Report an issue" row is
+one scroll region, image included, at a constant height, so every detail card is the same size.
+A ✕ in the header closes it. The description is what shows wherever the prose is unavailable: a
+card still in hand (the spoiler gate), an event with no prose written, a shard that would not load,
+and the correct/wrong reveals. The Daily hero carries a watermarked (i) on its image that opens the
+same popup; its event is the deck's starting card, placed face-up with its year on turn 1, so the
+read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to
 mirror the 19 manifest files; it is never inlined into the event JSON.
 
 All 5,460 events currently carry **committed placeholder prose**, so the branch's preview deploy
@@ -42,7 +43,7 @@ BROWSER=none npm start
 
 Fastest: tap the **(i)** watermarked into the Daily hero image on `/`. Otherwise open `/timeline`
 and tap a placed card, or play a game from the Custom tab and tap a card once it is on the
-timeline; the (i) is beside the card's title.
+timeline — the prose is what the card opens on.
 
 Driving it with Playwright: [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md).
 Two gotchas that cost a cycle each — reach a timeline card by its **title**
@@ -53,20 +54,14 @@ behind the backdrop.
 
 ## Don't break these
 
-- **The info button must stay unreachable before a card is placed.** The gate is
+- **The prose must stay unreachable before a card is placed.** The gate is `showsProseFor`:
   `type === 'description' && showYear && has_detail`. `showYear` is already false exactly when the
-  card is still in hand, and this is the reason the long-form prose may state years freely where
+  card is still in hand, and this is the reason the prose may state years freely where
   `description` may not. Pinned by `src/components/GamePopup.test.tsx`. This is the one that
   actually matters.
-- **The card must not change size or position when the text swaps**, nor after the prose is
-  scrolled to the end. The scroll region is pinned to the image box plus the height the
-  description measured. The measuring ref goes on the **description**, never on the scroll region
-  — the description unmounts while the prose is up, which is what keeps a height from ever being
-  taken off the prose; the region survives the swap and would be measured while pinned. A height
-  taken off the prose grows the card on every open until it runs off the screen. Pinned by
-  `src/hooks/usePinnedFaceHeight.test.ts`. A surface opening straight on the prose
-  (`openExpanded`) still renders the description for one commit so there is a height to pin to;
-  that is why `GamePopup` resets in a **layout** effect.
+- **Wherever the prose is unavailable, the description shows** — no prose written, or a shard that
+  would not load. A card is never contentless, and that is what lets this ship against a partly
+  written corpus.
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** That is
   the merge gate. It is deliberately not part of `npm test`, which would otherwise be red for the
   whole of the writing phase.
@@ -75,7 +70,8 @@ behind the backdrop.
 - **The detail scroll region (`[data-testid="detail-scroll"]`) carries `overflow` and nothing
   else.** No mask, no filter, no `backdrop-*`, no `transform` — anything that promotes it to its
   own compositing layer has already broken it on iOS while looking perfect on every browser
-  available here. Decoration goes on a sibling drawn over it.
+  available here. Decoration goes on a sibling drawn over it. **Scroll it on a device before
+  believing it.**
 - **No `bg-*/NN` opacity modifiers on the CSS-variable colour tokens** — Tailwind drops the whole
   rule and the element gets no colour at all. Use `opacity-60`. (`CLAUDE.md` → Styling.)
 - **`CI=true npm run build`**, not a plain build, and run tests through `npm` only (the `TZ` pin).
@@ -89,24 +85,12 @@ behind the backdrop.
    pale `bg-border/30` panel, and a white watermark on it is faint. Over real art it reads cleanly
    in both themes. Only worth chasing if the fallback turns out to be common.
 
-Closed: the tombstone read (looked at, correct, covered by a test); the scroll affordance (a
-gradient overlay); dark mode; the desktop D5 overlap (unchanged from before the feature, since the
-card no longer grows); and the reading window, which the whole-region scroll took from 70-115px to
-454-499px.
-
-**The one that got through:** a `mask-image` on the scroll region shipped and broke on iOS Safari
-— the image painted at its unscrolled position while the text moved over it. A headless Chromium
-capture had shown white bands above and below that same image days earlier and was written off as
-a capture artifact; it was the same fault. The mask is gone (see the digest), and the lesson is
-that this region's compositing cannot be checked locally: desktop Chromium and Linux WebKit both
-render every version of it correctly. **Scroll it on a real device before believing it.**
-
 ## Numbers to check against
 
-The card measured **340x606** at 402px, **272x651** at 320px and **400x606** at 1440px, identical
-across the swap, the scroll to the end, and the swap back. The scroll region inside it is
-**454-499px** holding 761-1183px of placeholder prose. 5,460 events, all carrying placeholder.
-Full suite is **765 tests across 65 suites**.
+Every detail card is **340x606** at 402px, **272x628** at 320px (the title wraps to two lines) and
+**400x606** at 1440px — identical before and after the shard loads and after scrolling to the end.
+The scroll region is **476px** holding 739-1183px of placeholder prose. 5,460 events, all carrying
+placeholder. Full suite is **757 tests across 64 suites**.
 
 ## Kick-off prompt for the next session
 

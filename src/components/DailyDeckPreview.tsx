@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
-import { ImageInfoWatermark } from './EventInfoButton';
+import ImageInfoWatermark from './ImageInfoWatermark';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
 interface DailyDeckPreviewProps {

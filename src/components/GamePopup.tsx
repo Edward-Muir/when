@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React from 'react';
 import { Check, Trophy, X } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
@@ -12,9 +12,7 @@ import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
 import { useEventDetail } from '../hooks/useEventDetail';
-import { usePinnedFaceHeight } from '../hooks/usePinnedFaceHeight';
 import EventDetailText from './EventDetailText';
-import { EventInfoButton } from './EventInfoButton';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -30,21 +28,20 @@ interface GamePopupProps {
   dailyResult?: DailyResult | null;
   /** Owned by `Game` so the rank it resolves is read directly by the share step. */
   leaderboard?: DailyLeaderboard;
-  /** Open showing the long-form prose rather than the short description. The Daily hero's info
-      button is a request to read, so it would be a wasted tap to land on the description. */
-  openExpanded?: boolean;
 }
 
 /**
- * Whether this popup may offer the "read more" info button. All three conditions matter:
+ * Whether this popup shows the long-form prose instead of the card's short description. All three
+ * conditions matter, and the middle one is the spoiler gate:
  *
  * - `description`: correct/incorrect reveals are a beat in the game loop, not a reading surface.
- * - `showYear`: false exactly when the card is still in the player's hand. The long-form prose
- *   is written post-placement and names dates freely, so showing it there would hand over the
- *   answer. This is the spoiler gate — see docs/event-detail/index.md.
- * - `has_detail`: set only where prose actually exists, so the button never opens nothing.
+ * - `showYear`: false exactly when the card is still in the player's hand. The prose is written
+ *   post-placement and names dates freely, so showing it there would hand over the answer.
+ *   See docs/event-detail/index.md.
+ * - `has_detail`: set only where prose actually exists. Where it is not, the description is what
+ *   renders — which is what lets the feature ship against a partly written corpus.
  */
-function canReadMoreAbout(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
+function showsProseFor(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
   return type === 'description' && showYear && !!event?.has_detail;
 }
 
@@ -63,6 +60,34 @@ function ResultBanner({ isCorrect }: { isCorrect: boolean }) {
         {isCorrect ? 'Correct!' : 'Wrong!'}
       </span>
     </div>
+  );
+}
+
+/** Header ✕. Flat and tinted like the card's own text, so it reads as part of the card. */
+function CloseButton({
+  event,
+  tombstone,
+  onClick,
+}: {
+  event: HistoricalEvent;
+  tombstone?: boolean;
+  onClick: () => void;
+}) {
+  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
+  return (
+    <button
+      type="button"
+      aria-label="Close"
+      // Card taps advance past a description popup, so this has to stop there or the dismissal
+      // happens twice over.
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick();
+      }}
+      className={`shrink-0 -my-1 w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
+    >
+      <X className="w-5 h-5" />
+    </button>
   );
 }
 
@@ -107,6 +132,11 @@ function EventHeader({
 // clamped to this maximum anyway — keeping it a constant is pixel-identical to what
 // shipped before. The square `detail` image is cropped to fit by `object-cover`.
 const IMAGE_CONTAINER_HEIGHT = 384;
+
+// How much of the prose sits below the image before the reader scrolls, in CSS px. A constant
+// rather than a measurement: the region only ever holds the long-form read, which always overflows
+// it, so there is no text for a measured height to fit. Three lines plus the box's padding.
+const DETAIL_TEXT_HEIGHT = 92;
 
 // Sub-component for image section (clean, no overlay)
 function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
@@ -298,35 +328,22 @@ function EventPopupContent({
   showYear,
   nextPlayer,
   tombstone,
-  expanded,
-  setExpanded,
-  canReadMore,
+  showsProse,
   detail,
+  onDismiss,
 }: {
   type: GamePopupType;
   event: HistoricalEvent;
   showYear: boolean;
   nextPlayer?: Player;
   tombstone?: boolean;
-  expanded: boolean;
-  setExpanded: (expanded: boolean) => void;
-  canReadMore: boolean;
+  showsProse: boolean;
   detail: ReturnType<typeof useEventDetail>;
+  onDismiss: () => void;
 }) {
   const isCorrect = type === 'correct';
   const isIncorrect = type === 'incorrect';
   const isDescription = type === 'description';
-
-  // Swapping the prose in for the description must not resize the card, so everything between the
-  // header and the report row is pinned to what it occupied with the description in it, and the
-  // image scrolls away with the prose inside that. The ref goes on the description, never on the
-  // region that survives the swap: a height taken from the prose is the full unclipped text, and
-  // pinning to that grows the card on every open.
-  const pinnedText = usePinnedFaceHeight(expanded, [event.name, event.description, showYear]);
-  const measured = pinnedText.style?.height;
-  // The region holds the image too, so what it pins to is the image box plus that measurement.
-  const bodyStyle =
-    typeof measured === 'number' ? { height: measured + IMAGE_CONTAINER_HEIGHT } : undefined;
 
   return (
     <>
@@ -337,47 +354,42 @@ function EventPopupContent({
         isIncorrect={isIncorrect}
         tombstone={tombstone}
         trailing={
-          canReadMore ? (
-            <EventInfoButton
-              event={event}
-              tombstone={tombstone}
-              expanded={expanded}
-              onClick={() => setExpanded(!expanded)}
-            />
+          isDescription ? (
+            <CloseButton event={event} tombstone={tombstone} onClick={onDismiss} />
           ) : undefined
         }
       />
 
-      {/* Collapsed the scroller has no height and no overflow, so it is exactly as tall as the
-          image plus the description and nothing scrolls. Expanded it is the same box around
-          several hundred more pixels of prose, so the image scrolls up out of it and the reader
-          gets the lot.
+      {/* Showing the prose, this is a fixed box the image sits at the top of: scroll and the image
+          leaves, and the rest of the region is the read. Showing the description it is the plain
+          run of content it has always been, tall enough for its own text and not scrollable.
 
-          The scroller itself carries nothing but `overflow` — no mask, no filter, nothing that
-          would promote it to its own compositing layer. The fade is a sibling drawn over its
-          bottom edge instead, because a `mask-image` on the scroller left the image painting at
-          its unscrolled position on iOS Safari while the text moved over it. */}
+          The scroller carries `overflow` and nothing else — no mask, no filter, nothing that
+          promotes it to its own compositing layer. A `mask-image` here left the image painting at
+          its unscrolled position on iOS Safari, on neither Chromium nor Linux WebKit, so anything
+          decorative goes on the sibling below instead. */}
       <div className="relative">
         <div
           data-testid="detail-scroll"
-          className={expanded ? 'overflow-y-auto overscroll-contain' : undefined}
-          style={bodyStyle}
+          className={showsProse ? 'overflow-y-auto overscroll-contain' : undefined}
+          style={showsProse ? { height: IMAGE_CONTAINER_HEIGHT + DETAIL_TEXT_HEIGHT } : undefined}
         >
           <EventImage event={event} tombstone={tombstone} />
-          {(isDescription || isIncorrect) &&
-            (expanded ? (
-              <EventDetailText event={event} tombstone={tombstone} detail={detail} />
-            ) : (
-              <div ref={pinnedText.ref} className="px-4 py-3">
+          {showsProse ? (
+            <EventDetailText event={event} tombstone={tombstone} detail={detail} />
+          ) : (
+            (isDescription || isIncorrect) && (
+              <div className="px-4 py-3">
                 <p
                   className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
                 >
                   {event.description}
                 </p>
               </div>
-            ))}
+            )
+          )}
         </div>
-        {expanded && (
+        {showsProse && (
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-0 bottom-0 h-3"
@@ -412,38 +424,21 @@ const GamePopup: React.FC<GamePopupProps> = ({
   tombstone = false,
   dailyResult,
   leaderboard,
-  openExpanded = false,
 }) => {
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
 
-  const [expanded, setExpanded] = useState(false);
-  // A surface that opened on the prose has nothing to offer a toggle to, so it shows no control.
-  const canReadMore = canReadMoreAbout(type, showYear, event) && !openExpanded;
-  const detail = useEventDetail(event?.name ?? null, expanded);
-
-  // The popup instance is reused across cards, so the text goes back to the description whenever
-  // the event changes — otherwise the next card opens on the previous one's prose. Same reason
-  // ReportIssueButton resets on `event.name`.
-  //
-  // `openExpanded` is expressed through the same reset rather than as a starting state, and in a
-  // layout effect, because the box is pinned to the height the *description* measures: the
-  // description has to be committed once before anything can be pinned to it. Opening straight on
-  // the prose instead leaves nothing measured, and the prose renders at its full unclipped height
-  // — a card twice the height of the phone. Rendering it and swapping before paint costs a commit
-  // and is invisible.
-  useLayoutEffect(() => {
-    setExpanded(false);
-    if (isVisible && openExpanded) setExpanded(true);
-  }, [event?.name, isVisible, openExpanded]);
+  const showsProse = showsProseFor(type, showYear, event);
+  // The shard is fetched only where the prose is going to be rendered — never for a card in hand.
+  const detail = useEventDetail(event?.name ?? null, showsProse);
 
   // The submit form is on screen exactly when there is a daily to claim and the player has not
   // claimed it.
   const showsSubmitForm = isGameOver && !!dailyResult && leaderboard?.submitted === false;
   // Tapping the card advances past a popup, which would eat every scroll drag through the prose.
-  // The backdrop and ESC still get the player out. `expanded` is only ever true on a description
-  // popup, so this never reaches the game-over sequence.
-  const dismiss: ModalDismissMode = expanded
+  // The backdrop, ESC and the card's own ✕ still get the player out. `showsProse` is only ever
+  // true on a description popup, so this never reaches the game-over sequence.
+  const dismiss: ModalDismissMode = showsProse
     ? 'backdrop'
     : gameOverDismiss(showsSubmitForm, leaderboard?.unavailable === false);
 
@@ -476,10 +471,9 @@ const GamePopup: React.FC<GamePopupProps> = ({
             showYear={showYear}
             nextPlayer={nextPlayer}
             tombstone={tombstone}
-            expanded={expanded}
-            setExpanded={setExpanded}
-            canReadMore={canReadMore}
+            showsProse={showsProse}
             detail={detail}
+            onDismiss={onDismiss}
           />
         )
       )}
