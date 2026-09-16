@@ -72,6 +72,10 @@ behind the backdrop.
   whole of the writing phase.
 - **Do not add the detail text to `CLUE_FIELDS`** in `scripts/events/date-clues.js`. That rule
   guards text shown _before_ placement; this text is not.
+- **The detail scroll region (`[data-testid="detail-scroll"]`) carries `overflow` and nothing
+  else.** No mask, no filter, no `backdrop-*`, no `transform` — anything that promotes it to its
+  own compositing layer has already broken it on iOS while looking perfect on every browser
+  available here. Decoration goes on a sibling drawn over it.
 - **No `bg-*/NN` opacity modifiers on the CSS-variable colour tokens** — Tailwind drops the whole
   rule and the element gets no colour at all. Use `opacity-60`. (`CLAUDE.md` → Styling.)
 - **`CI=true npm run build`**, not a plain build, and run tests through `npm` only (the `TZ` pin).
@@ -86,14 +90,16 @@ behind the backdrop.
    in both themes. Only worth chasing if the fallback turns out to be common.
 
 Closed: the tombstone read (looked at, correct, covered by a test); the scroll affordance (a
-`mask-image` fade, `.fade-scroll-y`); dark mode; the desktop D5 overlap (unchanged from before the
-feature, since the card no longer grows); and the reading window, which the whole-region scroll
-took from 70-115px to 454-499px.
+gradient overlay); dark mode; the desktop D5 overlap (unchanged from before the feature, since the
+card no longer grows); and the reading window, which the whole-region scroll took from 70-115px to
+454-499px.
 
-One thing seen once and not reproduced: a full-page Playwright screenshot in dark mode caught
-white bands above and below the card image. Two controlled re-runs are clean and a DOM probe puts
-the `<img>` at exactly 384px, `top: 0`, `object-cover`, so it is a capture artifact rather than a
-layout fault. Worth a second look if it is ever seen on a real device.
+**The one that got through:** a `mask-image` on the scroll region shipped and broke on iOS Safari
+— the image painted at its unscrolled position while the text moved over it. A headless Chromium
+capture had shown white bands above and below that same image days earlier and was written off as
+a capture artifact; it was the same fault. The mask is gone (see the digest), and the lesson is
+that this region's compositing cannot be checked locally: desktop Chromium and Linux WebKit both
+render every version of it correctly. **Scroll it on a real device before believing it.**
 
 ## Numbers to check against
 

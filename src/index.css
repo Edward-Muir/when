@@ -112,13 +112,6 @@ body {
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 24px);
     mask-image: linear-gradient(90deg, transparent, #000 24px);
   }
-  /* Fades the bottom of a vertical scroll region so the clipped line reads as "more below"
-     rather than as a rendering fault. A mask rather than a gradient overlay because the event
-     detail box sits on a per-event inline background colour that no CSS here can know. */
-  .fade-scroll-y {
-    -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 12px), transparent);
-    mask-image: linear-gradient(to bottom, #000 calc(100% - 12px), transparent);
-  }
 }
 
 /* ===========================================================================

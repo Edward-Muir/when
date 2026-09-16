@@ -78,10 +78,19 @@ mode would turn every scroll drag into a dismissal, so `GamePopup` switches to `
 long as the prose is showing; the backdrop and ESC still work, and it switches back on collapse.
 This is the same failure the leaderboard had to work around when a row tap closed the board.
 
-**The clipped line fades rather than cutting.** `.fade-scroll-y` is a `mask-image`, not a gradient
-overlay, because the region sits on a per-event inline background colour that no stylesheet can
-know. It is applied only while the prose is up — collapsed there is nothing below to signal and
-the mask would just dim the last line of the description.
+**The clipped line fades rather than cutting, and the fade is a sibling of the scroller, never a
+property on it.** A `mask-image` on the scrolling element was tried and is the one thing in this
+feature that has actually shipped broken: on iOS Safari the image painted at its unscrolled
+position while the text moved over it, and a headless Chromium capture had shown white bands above
+and below the same image days earlier. Neither reproduces on desktop Chromium or Linux WebKit, so
+treat that scroller as a place where a compositing fault will not show up in local testing:
+**it carries `overflow` and nothing else — no mask, no filter, no `backdrop-*`, no `transform`.**
+
+The fade is therefore a `pointer-events-none` gradient div positioned over the scroller's bottom
+edge, coloured inline from `event.color` (or `var(--color-surface)` for a tombstone, which has no
+per-event colour). A stylesheet cannot know that colour, which is why a mask looked like the right
+answer; the call site does know it. It is rendered only while the prose is up — collapsed there is
+nothing below to signal.
 
 **The button is unreachable before placement, and that is load-bearing.** The gate is
 `type === 'description' && showYear && has_detail`, and `showYear` is already false exactly when
@@ -245,6 +254,9 @@ preview deploy or locally with no setup. Regenerate with
 3. Widths 320 / 402 / 1440, light and dark. Two- and three-paragraph entries both occur. The card
    must not move or resize between the two states, **or after scrolling the prose to the end** —
    measure `[data-testid="modal-card"]`'s bounding box in each if in doubt; see the numbers above.
+   The scroll region is `[data-testid="detail-scroll"]`.
+   **Scroll it on a real iOS device**, not only in a desktop browser: the compositing fault this
+   region has already hit once appears on neither Chromium nor Linux WebKit.
 4. While the prose is up, a tap on the card must not dismiss the popup, and the backdrop must.
 5. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
 

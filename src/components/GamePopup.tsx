@@ -348,26 +348,45 @@ function EventPopupContent({
         }
       />
 
-      {/* Collapsed this has no height and no overflow, so it is exactly as tall as the image plus
-          the description and nothing scrolls. Expanded it is the same box around several hundred
-          more pixels of prose, so the image scrolls up out of it and the reader gets the lot. */}
-      <div
-        className={expanded ? 'overflow-y-auto overscroll-contain fade-scroll-y' : undefined}
-        style={bodyStyle}
-      >
-        <EventImage event={event} tombstone={tombstone} />
-        {(isDescription || isIncorrect) &&
-          (expanded ? (
-            <EventDetailText event={event} tombstone={tombstone} detail={detail} />
-          ) : (
-            <div ref={pinnedText.ref} className="px-4 py-3">
-              <p
-                className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
-              >
-                {event.description}
-              </p>
-            </div>
-          ))}
+      {/* Collapsed the scroller has no height and no overflow, so it is exactly as tall as the
+          image plus the description and nothing scrolls. Expanded it is the same box around
+          several hundred more pixels of prose, so the image scrolls up out of it and the reader
+          gets the lot.
+
+          The scroller itself carries nothing but `overflow` — no mask, no filter, nothing that
+          would promote it to its own compositing layer. The fade is a sibling drawn over its
+          bottom edge instead, because a `mask-image` on the scroller left the image painting at
+          its unscrolled position on iOS Safari while the text moved over it. */}
+      <div className="relative">
+        <div
+          data-testid="detail-scroll"
+          className={expanded ? 'overflow-y-auto overscroll-contain' : undefined}
+          style={bodyStyle}
+        >
+          <EventImage event={event} tombstone={tombstone} />
+          {(isDescription || isIncorrect) &&
+            (expanded ? (
+              <EventDetailText event={event} tombstone={tombstone} detail={detail} />
+            ) : (
+              <div ref={pinnedText.ref} className="px-4 py-3">
+                <p
+                  className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
+                >
+                  {event.description}
+                </p>
+              </div>
+            ))}
+        </div>
+        {expanded && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-3"
+            // The card's own colour, which only this call site knows: it is per-event and inline.
+            style={{
+              backgroundImage: `linear-gradient(to top, ${(!tombstone && event.color) || 'var(--color-surface)'}, transparent)`,
+            }}
+          />
+        )}
       </div>
 
       {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
