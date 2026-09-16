@@ -20,22 +20,23 @@
 const DETAIL_DIR = 'detail';
 
 const MIN_PARAGRAPHS = 2;
-const MAX_PARAGRAPHS = 3;
+const MAX_PARAGRAPHS = 2;
 
-// Settled in Phase 2 against ten hand-written entries and a sub-agent calibration run, replacing
-// the deliberately wide 200-900/2,200 placeholders Phase 1 shipped so it could not reject good
-// writing sight-unseen.
+// Settled in Phase 2 against ten hand-written entries and a sub-agent calibration run, then
+// tightened again to two paragraphs at two thirds of the length. The first pass allowed 2-3
+// paragraphs and up to 1,250 characters; every calibration entry and every sub-agent entry came
+// back at three paragraphs near the top of that band, which is what a three-paragraph allowance
+// reliably produces. Two is now the whole allowance, not a floor to rise off.
 //
-// The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone, so the
-// ~900-char target is about 1.3 screens once the image has scrolled away. The total ceiling binds
-// on three paragraphs and the total floor binds on two, so neither a padded wall nor a two-stub
-// entry passes. Both caps did real work in calibration: an atrocity entry that tried to carry a
-// contested death toll, its attribution and a consequence paragraph hit 1,428 and had to lose the
-// paragraph rather than the attribution.
-const MIN_PARAGRAPH_CHARS = 240;
-const MAX_PARAGRAPH_CHARS = 520;
-const MIN_TOTAL_CHARS = 620;
-const MAX_TOTAL_CHARS = 1250;
+// The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone. The ten
+// calibration entries land at 647-746 characters, about half a screen of prose behind a 384px
+// image, so the card still overflows its region comfortably at every width and the constant
+// height never leaves dead space. Both totals bind: two paragraphs at the per-paragraph floor
+// fall under MIN_TOTAL_CHARS, and two at the per-paragraph ceiling overrun MAX_TOTAL_CHARS.
+const MIN_PARAGRAPH_CHARS = 220;
+const MAX_PARAGRAPH_CHARS = 450;
+const MIN_TOTAL_CHARS = 480;
+const MAX_TOTAL_CHARS = 830;
 
 /**
  * Patterns a written entry may not contain.

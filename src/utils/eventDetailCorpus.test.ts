@@ -88,36 +88,39 @@ describe('event detail sidecar', () => {
   it('rejects the shapes Phase 3 is most likely to produce by accident', () => {
     // Fixtures have to be valid prose in every respect but the one under test, now that the spec
     // checks voice as well as shape — a bare run of one letter fails terminal punctuation alone.
-    const ok = `${'y'.repeat(spec.MIN_PARAGRAPH_CHARS - 1)}.`;
+    // Half the total floor, so a pair of them is exactly the shortest legal entry.
+    const half = Math.ceil(spec.MIN_TOTAL_CHARS / spec.MIN_PARAGRAPHS);
+    const ok = `${'y'.repeat(half - 1)}.`;
     const long = `${'x'.repeat(spec.MAX_PARAGRAPH_CHARS)}.`;
 
-    // Two minimum-length paragraphs fall under MIN_TOTAL_CHARS by design, so the valid case is
-    // three of them: the floor deliberately binds on a two-paragraph entry.
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ok] })).toEqual([]);
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok] })).toEqual([]);
 
     expect(spec.entryProblems('s', { paragraphs: [ok] })).not.toEqual([]); // too few
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ok, ok] })).not.toEqual([]); // too many
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok, long] })).not.toEqual([]); // overlong
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ` ${ok} `] })).not.toEqual([]); // whitespace
-    expect(spec.entryProblems('s', { paragraphs: [ok, ok, `${ok}\n${ok}`] })).not.toEqual([]); // newline
+    expect(spec.entryProblems('s', { paragraphs: [ok, ok, ok] })).not.toEqual([]); // too many
+    expect(spec.entryProblems('s', { paragraphs: [ok, long] })).not.toEqual([]); // overlong
+    expect(spec.entryProblems('s', { paragraphs: [ok, ` ${ok} `] })).not.toEqual([]); // whitespace
+    expect(spec.entryProblems('s', { paragraphs: [ok, `${ok}\n${ok}`] })).not.toEqual([]); // newline
     expect(spec.entryProblems('s', { paragraphs: 'not an array' })).not.toEqual([]);
     expect(spec.entryProblems('s', undefined)).not.toEqual([]);
 
-    // Totals, which the per-paragraph band does not imply in either direction.
-    const floor = `${'z'.repeat(spec.MIN_PARAGRAPH_CHARS - 1)}.`;
-    expect(spec.MIN_PARAGRAPH_CHARS * 2).toBeLessThan(spec.MIN_TOTAL_CHARS);
-    expect(spec.entryProblems('s', { paragraphs: [floor, floor] })).not.toEqual([]); // under total
+    // Both totals bind: the per-paragraph band alone implies neither, which is the point of
+    // having them. A pair at the per-paragraph floor is under MIN_TOTAL, a pair at the ceiling is
+    // over MAX_TOTAL, so neither a two-stub entry nor two walls of text can pass.
+    expect(spec.MIN_PARAGRAPH_CHARS * spec.MAX_PARAGRAPHS).toBeLessThan(spec.MIN_TOTAL_CHARS);
+    expect(spec.MAX_PARAGRAPH_CHARS * spec.MAX_PARAGRAPHS).toBeGreaterThan(spec.MAX_TOTAL_CHARS);
+    const stub = `${'z'.repeat(spec.MIN_PARAGRAPH_CHARS - 1)}.`;
+    expect(spec.entryProblems('s', { paragraphs: [stub, stub] })).not.toEqual([]); // under total
     const wide = `${'w'.repeat(spec.MAX_PARAGRAPH_CHARS - 1)}.`;
-    expect(spec.entryProblems('s', { paragraphs: [wide, wide, wide] })).not.toEqual([]); // over total
+    expect(spec.entryProblems('s', { paragraphs: [wide, wide] })).not.toEqual([]); // over total
   });
 
   // A paragraph of exactly the minimum length, opening with `lead`. Fixtures have to be valid in
   // every respect but the one under test, now that the spec checks voice as well as shape.
   const para = (lead: string) =>
-    `${lead}. ${'y'.repeat(Math.max(1, spec.MIN_PARAGRAPH_CHARS - lead.length - 3))}.`;
-  // Three of those clear MIN_TOTAL_CHARS without approaching MAX_TOTAL_CHARS.
+    `${lead}. ${'y'.repeat(Math.max(1, Math.ceil(spec.MIN_TOTAL_CHARS / spec.MIN_PARAGRAPHS) - lead.length - 3))}.`;
+  // A pair of those is exactly the shortest legal entry, so only the rule under test can fail it.
   const entryWith = (lead: string) => ({
-    paragraphs: [para(lead), para('The second paragraph'), para('The third paragraph')],
+    paragraphs: [para(lead), para('The second paragraph')],
   });
 
   it('rejects the voice Phase 3 is most likely to produce by accident', () => {

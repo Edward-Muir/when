@@ -5,7 +5,7 @@ description: Write the long-form detail prose shown when a placed card is turned
 
 # Writing Event Detail
 
-The 2-3 paragraphs behind a **placed** card. Full rules and the reasoning:
+The two paragraphs behind a **placed** card. Full rules and the reasoning:
 [docs/event-detail/writing-spec.md](../../../docs/event-detail/writing-spec.md). Design and
 mechanism: [docs/event-detail/index.md](../../../docs/event-detail/index.md).
 
@@ -32,18 +32,14 @@ One entry per event, keyed by slug, in a map file:
 ```json
 {
   "battle-megiddo": {
-    "paragraphs": [
-      "First paragraph, 240-520 characters.",
-      "Second paragraph, 240-520 characters.",
-      "Optional third."
-    ]
+    "paragraphs": ["First paragraph, 220-450 characters.", "Second paragraph, 220-450 characters."]
   }
 }
 ```
 
-| Field        | Rule                                                                 |
-| ------------ | -------------------------------------------------------------------- |
-| `paragraphs` | 2-3 strings. No newlines inside one. No leading/trailing whitespace. |
+| Field        | Rule                                                                       |
+| ------------ | -------------------------------------------------------------------------- |
+| `paragraphs` | Exactly 2 strings. No newlines inside one. No leading/trailing whitespace. |
 
 `has_detail` on the event record is written by `detail-apply.js` in the same pass. **Never set it
 by hand** — a flag without prose is a card that falls back to its description after a failed fetch,
@@ -53,15 +49,17 @@ and prose without a flag is writing nobody can reach.
 
 |               |                                                    |
 | ------------- | -------------------------------------------------- |
-| Paragraphs    | 2-3                                                |
-| Per paragraph | 240-520 characters                                 |
-| Total         | 620-1,250 characters                               |
-| Target        | ~900 characters, about 200 words, a 45-second read |
+| Paragraphs    | 2, exactly                                         |
+| Per paragraph | 220-450 characters                                 |
+| Total         | 480-830 characters                                 |
+| Target        | ~700 characters, about 120 words, a 30-second read |
 
 The reading surface is a 476px scroll region, about 20 lines on a 402px phone. Enforced by
 `scripts/events/detail-spec.js`; `src/utils/eventDetailCorpus.test.ts` runs it over the corpus.
 
-**Do not write to the ceiling.** 700 characters that have said the thing beats 1,200 padded.
+**Do not write to the ceiling.** 600 characters that have said the thing beats 830 padded. The
+band used to allow three paragraphs and 1,250 characters; every entry written under it came back
+at three, near the top, which is why it is two now. Expect to draft three and cut one.
 
 ## Rule 1: the first sentence carries the entry
 
@@ -268,7 +266,7 @@ node scripts/events/detail-report.js             # progress meter; non-zero unti
 ### 6. Read five at random, cold, against the spec
 
 **Drift is the failure mode here, not corruption** — the scripts already make corruption hard. Check
-specifically: are the hooks all the same kind, and did every entry come back at three paragraphs.
+specifically: are the hooks all the same kind, and is every entry pressed against the 830 ceiling.
 
 ## Common Mistakes to Avoid
 
@@ -282,7 +280,8 @@ specifically: are the hooks all the same kind, and did every entry come back at 
 7. **Padding a thin event to reach the floor** instead of widening the lens, or inventing to fill it
 8. **Treating a `very-hard` card as having less to say** — difficulty is placement, not record
 9. **Trusting `wikipedia_url`** without checking the year and actors match the card
-10. **Writing to the 1,250 ceiling** because the room is there
-11. **Three paragraphs every time** — it is the attractor; two is legal and often right
+10. **Writing to the 830 ceiling** because the room is there
+11. **Drafting three paragraphs and submitting them** — the third fails the entry outright; fold
+    what it was carrying into the second, or drop it
 12. **Editing a shard directly** instead of a map file, or setting `has_detail` by hand
 13. **Cutting the attribution to fit the band** — drop a paragraph instead

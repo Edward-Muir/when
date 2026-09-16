@@ -30,6 +30,8 @@
  */
 
 const {
+  MIN_PARAGRAPHS,
+  MAX_PARAGRAPHS,
   MIN_PARAGRAPH_CHARS,
   MAX_PARAGRAPH_CHARS,
   MIN_TOTAL_CHARS,
@@ -97,8 +99,9 @@ function paragraph(next, sentences, prefixLength = 0, cap = MAX_PARAGRAPH_CHARS)
 
 function placeholderFor(event) {
   const next = rng(seedFrom(event.name));
-  // 2 or 3 paragraphs, so both cases get exercised in review.
-  const count = next() < 0.4 ? 2 : 3;
+  // Derived from the spec rather than hardcoded, so a future change to the paragraph allowance
+  // does not silently produce a placeholder corpus its own validator rejects.
+  const count = MIN_PARAGRAPHS + Math.floor(next() * (MAX_PARAGRAPHS - MIN_PARAGRAPHS + 1));
 
   // `PLACEHOLDER:` rather than `PLACEHOLDER —`: the em dash is banned in written prose from
   // Phase 2 on, and a marker that fails the spec it is meant to sit inside is a confusing signal.
@@ -112,7 +115,9 @@ function placeholderFor(event) {
     const suffix = ` (${event.category})`;
     const used = paragraphs.reduce((sum, p) => sum + p.length, 0);
     const remaining = count - i;
-    const budget = Math.floor((MAX_TOTAL_CHARS - used) / remaining);
+    // Clamped to the per-paragraph ceiling as well as the remaining total: with only two
+    // paragraphs the whole leftover budget lands on the second one, which overran 450 by itself.
+    const budget = Math.min(MAX_PARAGRAPH_CHARS, Math.floor((MAX_TOTAL_CHARS - used) / remaining));
     paragraphs.push(
       `${paragraph(next, 2 + Math.floor(next() * 3), suffix.length, budget)}${suffix}`
     );

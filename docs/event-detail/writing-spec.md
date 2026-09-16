@@ -11,7 +11,7 @@ it writes anything. Everything that file cannot check is below and nowhere else.
 
 ## What this text is
 
-Two or three paragraphs shown when a player turns over a card they have **already placed**. It
+**Exactly two paragraphs**, shown when a player turns over a card they have **already placed**. It
 replaces the card's one-sentence `description`, which the player read one tap ago.
 
 It is not an encyclopaedia entry and not a summary. The card has already said what the event was.
@@ -36,17 +36,27 @@ add it.
 
 |               |                                                    |
 | ------------- | -------------------------------------------------- |
-| Paragraphs    | **2-3**                                            |
-| Per paragraph | **240-520 characters**                             |
-| Total         | **620-1,250 characters**                           |
-| Target        | ~900 characters, about 200 words, a 45-second read |
+| Paragraphs    | **2, exactly**                                     |
+| Per paragraph | **220-450 characters**                             |
+| Total         | **480-830 characters**                             |
+| Target        | ~700 characters, about 120 words, a 30-second read |
 
-The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone, so ~900
-characters is about 1.3 screens once the image has scrolled away. The total ceiling binds on three
-paragraphs and the total floor binds on two, so neither a padded wall nor a two-stub entry passes.
+The reading surface is a 476px scroll region, roughly 20 lines at a 402px-wide phone, so ~700
+characters is about half a screen once the image has scrolled away.
 
-**Do not write to the ceiling.** An entry that stops at 700 characters because it has said what it
-has to say is better than one padded to 1,200.
+Both totals bind, which is the point of having them alongside the per-paragraph band: two
+paragraphs at the per-paragraph floor fall under `MIN_TOTAL_CHARS`, and two at the ceiling overrun
+`MAX_TOTAL_CHARS`. Neither a two-stub entry nor two walls of text can pass.
+
+**This band replaced a looser one, and the reason matters.** The first pass allowed 2-3 paragraphs
+and up to 1,250 characters, on the principle that three should be available when the third earned
+itself. Every one of the ten calibration entries came back at three paragraphs near the top of the
+band, and so did four of four sub-agent entries. A three-paragraph allowance does not produce
+occasional three-paragraph entries; it produces three-paragraph entries. Two is now the whole
+allowance rather than a floor to rise off, at roughly two thirds of the old length.
+
+**Do not write to the ceiling.** An entry that stops at 600 characters because it has said what it
+has to say is better than one padded to 830.
 
 ## Rule 1: the first sentence carries the entry
 
@@ -317,21 +327,20 @@ and [Museums Galleries Scotland](https://www.museumsgalleriesscotland.org.uk/adv
 Roughly, and not a template to fill:
 
 1. **The hook and the thing itself.** Open per Rule 1, then land what actually happened, with dates.
-2. **The texture.** The detail, the contest, the people, the mechanism. Where hedging lives.
-3. **What it left behind** (optional, and the reason two paragraphs is legal). The consequence, the
-   argument still running, the thing that can still be gone and looked at.
+2. **The texture, and the landing.** The detail, the contest, the people, the mechanism. Where
+   hedging lives. If the event left something behind worth a sentence, it goes at the end of this
+   paragraph rather than in one of its own.
 
-Three paragraphs when the third earns itself, two when it does not.
+Two paragraphs, and the second one has to do double duty: the texture and whatever the event left
+behind, if anything did. Most events do not need a legacy sentence at all.
 
-**Be warned that three is the attractor.** Four out of four sub-agent entries came back at three
-paragraphs without being asked, and so did **all ten** of the hand-written calibration entries,
-written by someone who had just written this rule. Two is legal and right for a genuinely thin
-event, but do not expect to produce many, and do not pad to three to look consistent.
+**The pressure runs towards more, always.** Every calibration entry and every sub-agent entry was
+written at three paragraphs first and cut back. Expect the same, and expect the cut to improve the
+entry rather than damage it. The ten now run 647 to 746 characters against a 830 ceiling, so the
+working range sits comfortably inside the band rather than pressed against the top of it.
 
-The same goes for the floor. The ten calibration entries run 900 to 1,039 characters, median 963,
-so in practice the band's working range is the top half of it. The 620 floor exists to reject
-stubs rather than to describe a target, and it earned its place: it caught a 223-character
-paragraph in the calibration set that wanted one more concrete fact.
+The floor earns its place too: at the earlier, looser band it caught a 223-character paragraph in
+the calibration set that wanted one more concrete fact rather than padding.
 
 ## The calibration set
 
@@ -352,7 +361,8 @@ first real prose, and they are the gold set: read them before writing a batch.
 | `jallianwala-bagh-massacre`    | 1919   | The atrocity carve-out                                |
 
 `jallianwala-bagh-massacre` is in the set because of what it cost. A first draft ran to 1,428
-characters, over both the per-paragraph and the total cap, because attributing a contested death
+characters, over the caps even at the earlier looser band, because attributing a contested death
 toll (379 by the official inquiry, above a thousand by the Congress inquiry) costs characters that
-a bare number does not. The fix was to drop a paragraph, the one following the story forward to
-1940, and keep the attribution. That is now Rule 6's last line.
+a bare number does not. It lost a paragraph following the story forward to 1940, then a second one
+when the band tightened, and kept the attribution both times. That is now Rule 6's last line, and
+at two paragraphs it binds harder than it did.

@@ -176,11 +176,17 @@ Phase 1 fixed the shape; Phase 2 fixed the voice. It produced
 `detail-spec.js`, and the corpus's first ten written entries. What it settled, and would otherwise
 be re-argued:
 
-**The band is 2-3 paragraphs, 240-520 characters each, 620-1,250 total, target ~900.** Derived from
-the 476px scroll region (about 20 lines at 402px, so ~900 characters is ~1.3 screens past the
-image) and checked against the ten hand-written entries, which run 900-1,039. The old 200-900/2,200
-placeholders are gone. Both caps do real work: the floor caught a stub, and the ceiling forced a
-paragraph out of the atrocity entry rather than out of its attribution.
+**The band is exactly two paragraphs, 220-450 characters each, 480-830 total, target ~700.**
+Derived from the 476px scroll region (about 20 lines at 402px, so ~700 characters is about half a
+screen past the image) and checked against the ten hand-written entries, which run 647-746. The old
+200-900/2,200 placeholders are gone.
+
+It was set once at 2-3 paragraphs and up to 1,250 before being cut to this. The reason is the
+finding that a three-paragraph allowance does not produce occasional three-paragraph entries, it
+produces three-paragraph entries: all ten calibration entries and all four sub-agent entries came
+back at three, near the top of the band. Both totals bind, so neither a two-stub entry nor two
+walls of text passes, and the atrocity entry lost a paragraph rather than its attribution twice
+over.
 
 **Difficulty is not depth, and there is no skip list.** `difficulty` grades how hard a card is to
 _place_, not how much record exists, so a `very-hard` card is written at the same length as an
@@ -217,8 +223,8 @@ prose to lose. Both paths now preserve anything not flagged `placeholder: true`.
   `CI=true npm run build`.
 - **Read a random 5 per batch cold against the spec** before committing. Drift is the failure
   mode here, not corruption — the scripts already make corruption hard. Sample specifically for
-  the two things calibration showed converge: every entry at three paragraphs, and every hook the
-  same kind.
+  the two things calibration showed converge: every entry pressed against the ceiling, and every
+  hook the same kind.
 - **A half-written state is impossible, but it is not being shipped either.** `has_detail` is
   per-event and written in the same pass as the prose, so a partly-written corpus renders exactly
   the buttons it has prose for and no others — merging mid-run would be safe. The decision

@@ -20,7 +20,7 @@ band enforced in `scripts/events/detail-spec.js`, and the corpus's **first ten w
 
 ## What exists
 
-A placed card's detail popup shows 2-3 paragraphs about the event in place of its short
+A placed card's detail popup shows two paragraphs about the event in place of its short
 description — no control, no toggle. Everything between the title and the "Report an issue" row is
 one scroll region, image included, at a constant height, so every detail card is the same size.
 A ✕ in the header closes it. The description is what shows wherever the prose is unavailable: a
@@ -88,7 +88,8 @@ Three things worth knowing here:
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** It is
   deliberately not part of `npm test`, which would otherwise be red for the whole writing phase.
   It now reads 10/5460.
-- **The length band is settled and enforced**: 2-3 paragraphs, 240-520 chars each, 620-1,250 total.
+- **The length band is settled and enforced**: exactly 2 paragraphs, 220-450 chars each, 480-830
+  total.
   `detail-spec.js` also enforces voice now — no em dashes, no second person, no question marks, no
   puffery lexicon, and no 7-word run shared with the event's own `description`. Do not loosen a ban
   to get a batch through; fix the prose. Each pattern carries its measured precedent count in a
@@ -126,10 +127,10 @@ Write the other 5,450, per the plan in
 
 Two findings from Phase 2's calibration worth carrying in:
 
-- **Three paragraphs is a strong attractor.** Four of four sub-agent entries and ten of ten
-  hand-written entries came back at three, the last written by someone who had just written the
-  rule saying two was fine. Two-paragraph entries will be rare; do not manufacture them, but do not
-  let three become a template either.
+- **A three-paragraph allowance produces three-paragraph entries.** The band was first set at 2-3
+  paragraphs and 1,250 characters; all ten calibration entries and all four sub-agent entries came
+  back at three, near the top. It is now exactly two at roughly two thirds the length. Expect to
+  draft three and cut one, and expect that cut to improve the entry.
 - **Attribution beats the band.** Hedging a contested figure costs characters a bare number does
   not. When they collide, a paragraph goes and the attribution stays.
 
@@ -154,19 +155,20 @@ which is close to the state that made a previous session commit the placeholder 
 
 Measured in Chromium on this branch, with the detail popup open on the Daily hero:
 
-| Width  | Card    | Scroll region | A 955-char entry renders |
-| ------ | ------- | ------------- | ------------------------ |
-| 320px  | 272x606 | 476px         | 728px of prose           |
-| 402px  | 340x606 | 476px         | 569px of prose           |
-| 1440px | 400x606 | 476px         | 478px of prose           |
+| Width  | Card    | Scroll region | A 579-char entry renders | Region scrollHeight |
+| ------ | ------- | ------------- | ------------------------ | ------------------- |
+| 320px  | 272x606 | 476px         | 455px of prose           | 875px               |
+| 402px  | 340x606 | 476px         | 341px of prose           | 761px               |
+| 1440px | 400x606 | 476px         | 296px of prose           | 716px               |
 
 The card is **identical before and after the shard loads and after scrolling to the end** — all
 three widths re-measured at the same box after scrolling the region to its bottom. (A card whose
 title wraps to two lines is 628 rather than 606 at 320px; that is the title, not the prose.)
 
-The regenerated placeholder runs **620-1,229 characters**, so its prose block is roughly 370-730px
-at 402px wide and 470-940px at 320px. The image is _inside_ the scroll region, so even the shortest
-entry overflows 476px comfortably and the constant height never leaves dead space.
+Scaling those: the 480-830 character band is roughly 283-489px of prose at 402px wide and 377-652px
+at 320px. The image is _inside_ the scroll region, so even a 480-character entry at 1440px still
+comes to about 665px against a 476px region — it always overflows, which is what lets the region be
+a constant height without leaving dead space.
 
 5,460 events, 10 written. Full suite is **759 tests across 64 suites**.
 
@@ -194,5 +196,5 @@ should start) are in the session notes, not here.
 > `untracked_data/event-detail/`; `detail-apply.js` writes the catalogue. Gate every batch on
 > `npm run typecheck`, `CI=true npm test -- --watchAll=false` and `CI=true npm run build`, and read
 > a random 5 per batch cold against the spec before committing. Drift is the failure mode, not
-> corruption — sample specifically for every entry landing at three paragraphs and every hook being
-> the same kind.
+> corruption — sample specifically for every entry being pressed against the 830-character ceiling
+> and every hook being the same kind.
