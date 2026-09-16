@@ -31,9 +31,9 @@ const PER_SLICE_CAP = Math.ceil(MAX_BOARD / 3);
 const SLICES = 6;
 
 /**
- * A plausible draw order: a seeded shuffle of the pool, capped per slice of the paper ramp so
+ * A plausible draw order: a seeded shuffle of the pool, capped per slice of recorded history so
  * no single stretch of history dominates — eight consecutive medieval cards would say nothing
- * about whether a tint that keys off year is working.
+ * about whether the board reads well across history.
  */
 export function drawOrder(all: HistoricalEvent[], seed = 20260914): HistoricalEvent[] {
   const r = rng(seed);

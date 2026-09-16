@@ -152,6 +152,12 @@ export function useDragAndDrop({
 
   const handleDragCancel = useCallback(() => {
     setIsDragging(false);
+    // Same clean-up as handleDragEnd, and for the same reason: these are only ever written by
+    // handleDragOver, so a cancel over the board used to leave `isOverTimeline` true into the
+    // NEXT drag — long enough for the ghost row and its rail extension to appear before the
+    // pointer had been over the board at all.
+    setIsOverHand(false);
+    setIsOverTimeline(false);
     setInsertionIndex(null);
     draggedCardRef.current = null;
     prevInsertionIndexRef.current = null;

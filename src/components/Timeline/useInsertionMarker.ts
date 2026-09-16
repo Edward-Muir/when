@@ -41,6 +41,12 @@ export interface InsertionMarker {
    * TimelineMarker for why z-index alone cannot express that.
    */
   clip: Rect;
+  /**
+   * The ghost row's own height. Held, like the position above, after the gap goes null — which
+   * is exactly what the rail's retract stub needs, since by then the row it stands in for is
+   * gone. See `RailRetractRow`.
+   */
+  rowHeight: number;
   visible: boolean;
 }
 
@@ -51,10 +57,11 @@ export function useInsertionMarker(
   contentRef: RefObject<HTMLDivElement | null>,
   gap: number | null
 ): InsertionMarker {
-  const [pos, setPos] = useState<{ x: number; y: number; clip: Rect }>({
+  const [pos, setPos] = useState<{ x: number; y: number; clip: Rect; rowHeight: number }>({
     x: 0,
     y: 0,
     clip: NO_CLIP,
+    rowHeight: 0,
   });
 
   useLayoutEffect(() => {
@@ -75,6 +82,7 @@ export function useInsertionMarker(
       const next = {
         x,
         y,
+        rowHeight: rowRect.height,
         clip: board
           ? { left: board.left, top: board.top, width: board.width, height: board.height }
           : NO_CLIP,
@@ -82,6 +90,7 @@ export function useInsertionMarker(
       setPos((prev) =>
         prev.x === next.x &&
         prev.y === next.y &&
+        prev.rowHeight === next.rowHeight &&
         prev.clip.top === next.clip.top &&
         prev.clip.height === next.clip.height &&
         prev.clip.left === next.clip.left &&

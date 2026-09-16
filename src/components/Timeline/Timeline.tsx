@@ -1,13 +1,13 @@
 import React, { useRef, useEffect, useLayoutEffect, useMemo } from 'react';
-import { animate, LayoutGroup, useReducedMotion } from 'framer-motion';
+import { animate, LayoutGroup, useReducedMotion, type MotionValue } from 'framer-motion';
 import { useDroppable } from '@dnd-kit/core';
 import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } from '../../types';
 import TimelineEvent from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
-import TimelineRail, { RailExtension } from './TimelineRail';
+import TimelineRail, { RailExtension, RailRetractRow } from './TimelineRail';
 import TimelineMarker, { MarkerPhase } from './TimelineMarker';
 import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
-import { useRailGrowth } from './useRailGrowth';
+import { useRailExtension } from './useRailExtension';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
@@ -60,20 +60,14 @@ const BoardRow: React.FC<{
   first: boolean;
   last: boolean;
   extending?: RailExtension | null;
-  grow?: boolean;
-  timeScale: number;
+  /** How far this end is reaching, when the row is one of the two that can extend. */
+  scale?: MotionValue<number>;
   /** This row is where the ghost card currently sits — the insertion marker homes in on it. */
   ghost?: boolean;
   children: React.ReactNode;
-}> = ({ first, last, extending = null, grow = true, timeScale, ghost = false, children }) => (
+}> = ({ first, last, extending = null, scale, ghost = false, children }) => (
   <div {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})} className="relative w-full">
-    <TimelineRail
-      first={first}
-      last={last}
-      extending={extending}
-      grow={grow}
-      timeScale={timeScale}
-    />
+    <TimelineRail first={first} last={last} extending={extending} scale={scale} />
     {children}
   </div>
 );
@@ -326,8 +320,8 @@ const Timeline: React.FC<TimelineProps> = ({
     return () => followScrollRef.current?.stop();
   }, [failedPlacements, lastPlacementResult, shouldReduceMotion, tuning]);
 
-  // Memoised: the insertion marker measures off these rows, and a fresh array identity on every
-  // render would make its ResizeObserver commit, re-render and re-measure without end.
+  // Memoised: the insertion marker measures off these rows, and a fresh array identity on
+  // every render would make its ResizeObserver commit, re-render and re-measure without end.
   const rows = useMemo(
     () => buildTimelineRows(events, failedPlacements),
     [events, failedPlacements]
@@ -339,7 +333,9 @@ const Timeline: React.FC<TimelineProps> = ({
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
   const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
-  const railGrow = useRailGrowth(isDragging, railExtension);
+  // Keyed to being over the BOARD, not to the drag: taking the card off the board retracts the
+  // extension and re-arms it, so coming back reaches out again.
+  const rail = useRailExtension(isDragging, ghostGap !== null, railExtension, railTimeScale);
   const markerPhase = getMarkerPhase(marker.visible, lastPlacementResult, animationPhase);
   // Where the marker was last painted, written per frame and read once, by the dash a placement
   // lands as. A ref rather than state: it changes every frame and must not re-render the board.
@@ -359,8 +355,12 @@ const Timeline: React.FC<TimelineProps> = ({
   const lastRowIndex = rows.length - 1;
   const earlierExt = railExtension === 'earlier' ? railExtension : null;
   const laterExt = railExtension === 'later' ? railExtension : null;
-  const railFirst = (i: number) => i === 0 && railExtension !== 'earlier';
-  const railLast = (i: number) => i === lastRowIndex && railExtension !== 'later';
+  // A retracting segment is still on screen above/below the board, so the row it sits against
+  // must stay unrounded for as long as the extension it is standing in for would have.
+  const railFirst = (i: number) =>
+    i === 0 && railExtension !== 'earlier' && rail.retracting !== 'earlier';
+  const railLast = (i: number) =>
+    i === lastRowIndex && railExtension !== 'later' && rail.retracting !== 'later';
   /** The dragged card, when its ghost belongs in the gap before display index `idx`. */
   const ghostBefore = (idx: number) =>
     ghostGap === idx && ghostHostRowIndex === -1 ? draggedCard : null;
@@ -376,7 +376,6 @@ const Timeline: React.FC<TimelineProps> = ({
         key={`tombstone-${failed.event.name}`}
         first={railFirst(rowIndex)}
         last={railLast(rowIndex)}
-        timeScale={railTimeScale}
         ghost={rowIndex === ghostHostRowIndex}
       >
         <TombstoneRow
@@ -418,14 +417,13 @@ const Timeline: React.FC<TimelineProps> = ({
             first={earlierExt !== null}
             last={false}
             extending={earlierExt}
-            grow={railGrow}
-            timeScale={railTimeScale}
+            scale={rail.scale.earlier}
             ghost
           >
             <GhostCard event={ghost} />
           </BoardRow>
         )}
-        <BoardRow first={railFirst(rowIndex)} last={railLast(rowIndex)} timeScale={railTimeScale}>
+        <BoardRow first={railFirst(rowIndex)} last={railLast(rowIndex)}>
           <TimelineEvent
             event={event}
             onTap={() => onEventTap(event)}
@@ -453,9 +451,6 @@ const Timeline: React.FC<TimelineProps> = ({
   };
 
   return (
-    // The paper backdrop lives here, behind the scroller and outside its edge mask, so the
-    // elastic overscroll past either end and the masked top/bottom bands show paper rather
-    // than the untinted page colour.
     <div className="h-full relative">
       {/* Fixed "Earlier" indicator at top with fade */}
       <div className="absolute top-0 left-0 right-0 z-30 pointer-events-none">
@@ -487,6 +482,14 @@ const Timeline: React.FC<TimelineProps> = ({
           {/* Top spacer: room to drop "earlier" and center the first card; bounce runway */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
 
+          {/* An extension the drag has just walked away from, shrinking back into the rail. It
+              is its own empty row rather than the ghost row animating out: the ghost row holds
+              the dragged card, which is back in the player's hand by now. Outside LayoutGroup,
+              so it cannot perturb the miss-reveal wake's layout animations. */}
+          {rail.retracting === 'earlier' && (
+            <RailRetractRow end="earlier" height={marker.rowHeight} scale={rail.scale.earlier} />
+          )}
+
           {/* Events (with inline ghost cards at insertion points) and tombstones */}
           <LayoutGroup>
             {rows.map((row, rowIndex) =>
@@ -501,14 +504,17 @@ const Timeline: React.FC<TimelineProps> = ({
                 first={events.length === 0}
                 last={laterExt !== null}
                 extending={laterExt}
-                grow={railGrow}
-                timeScale={railTimeScale}
+                scale={rail.scale.later}
                 ghost
               >
                 <GhostCard event={trailingGhost} />
               </BoardRow>
             )}
           </LayoutGroup>
+
+          {rail.retracting === 'later' && (
+            <RailRetractRow end="later" height={marker.rowHeight} scale={rail.scale.later} />
+          )}
 
           {/* Bottom spacer: room to drop "later"; bounce runway below the last card */}
           <div aria-hidden className="shrink-0" style={{ height: '50vh' }} />
@@ -523,8 +529,7 @@ const Timeline: React.FC<TimelineProps> = ({
         </div>
       </div>
 
-      {/* Portals to `body` above the drag overlay — see TimelineMarker. Rendered here rather
-          than inside the scroller so it is clear of the board's own stacking. */}
+      {/* Portals to `body` above the drag overlay — see TimelineMarker. */}
       <TimelineMarker
         x={marker.x}
         y={marker.y}

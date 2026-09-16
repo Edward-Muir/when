@@ -11,15 +11,19 @@ import type { HistoricalEvent, Player } from '../types';
 import { buildBoard, drawOrder, MAX_BOARD } from './timelineLab/board';
 
 /**
- * Dev-only harness (route: /timeline-lab) for the board's paper ramp and its rail.
+ * Dev-only harness (route: /timeline-lab) for the board's rail.
  *
  * It mounts the REAL Timeline with a seeded set of placed cards — there is no second
- * implementation to drift out of step. The only thing it fakes is the drag: `isDragging` +
- * `insertionIndex` are set straight onto Timeline's props, which is exactly what a real drag
- * past an end of the board does, so the rail extension shown here is the shipping one.
+ * implementation to drift out of step. The only thing it fakes is the drag: `isDragging`,
+ * `insertionIndex` and `isOverTimeline` are set straight onto Timeline's props, which is exactly
+ * what a real drag does, so the rail extension shown here is the shipping one.
  *
  *   ?n=<1..30>          cards placed — the same draw order cut short, so n=5 is n=30's opening
  *   ?ghost=earlier|later|<gap>  hold a fake drag at one end, or in any gap on the board
+ *   ?over=0             card lifted OFF the board mid-drag (still dragging, no longer over it).
+ *                       The one state the harness used to be unable to reach, because it tied
+ *                       `isOverTimeline` to `isDragging` — and the only one the rail's retract
+ *                       and its re-armed growth happen in. Pair with ?ghost=earlier|later.
  *   ?slowmo=<1..12>     stretch the rail's growth in time, for catching it in a still
  *   ?row=<index>        scroll this row to the middle
  *   ?theme=light|dark
@@ -49,6 +53,9 @@ function mockPlayer(hand: HistoricalEvent[]): Player {
  * than only where the rail extends.
  */
 function readGhostGap(value: string | null, boardLength: number): number | null {
+  // No param at all is at rest, not gap 0: `Number(null)` is 0, so without this the harness
+  // opened holding a drag at the earlier end and the "At rest" chip could never be active.
+  if (value === null) return null;
   if (value === 'earlier') return 0;
   if (value === 'later') return boardLength;
   const n = Number(value);
@@ -108,6 +115,8 @@ const TimelineLab: React.FC = () => {
 
   const ghostGap = readGhostGap(params.get('ghost'), board.events.length);
   const dragging = ghostGap !== null;
+  // Still dragging, no longer over the board — what the hand bar's droppable does in the game.
+  const overBoard = params.get('over') !== '0';
   const dragged = dragging ? (hand[0] ?? null) : null;
   const midGap = Math.max(1, Math.floor(board.events.length / 2));
 
@@ -126,7 +135,7 @@ const TimelineLab: React.FC = () => {
             isDragging={dragging}
             insertionIndex={ghostGap}
             draggedCard={dragged}
-            isOverTimeline={dragging}
+            isOverTimeline={dragging && overBoard}
             lastPlacementResult={null}
             animationPhase={null}
             currentStreak={3}
@@ -148,7 +157,7 @@ const TimelineLab: React.FC = () => {
               activeCard={hand[0]}
               currentPlayer={player}
               isAnimating={false}
-              isOverTimeline={dragging}
+              isOverTimeline={dragging && overBoard}
               onCycleHand={noop}
               onCardTap={noop}
             />
@@ -179,9 +188,9 @@ const TimelineLab: React.FC = () => {
             </button>
           </div>
           <p className="max-w-prose text-sm leading-relaxed text-text-muted">
-            The real board, with a seeded set of cards already placed. The paper runs one continuous
-            ramp keyed to each card’s year, and the rail exists only between the first and last card
-            — drag the slider and watch both ends move.
+            The real board, with a seeded set of cards already placed. The rail exists only over the
+            rows that exist, so it runs from the first card to the last and no further — drag the
+            slider and watch both ends move.
           </p>
 
           <section className="space-y-2">
@@ -221,6 +230,12 @@ const TimelineLab: React.FC = () => {
                 onClick={() => update({ ghost: 'later' })}
               >
                 Reaching later
+              </button>
+              <button
+                className={chip(!overBoard)}
+                onClick={() => update({ over: overBoard ? '0' : '1' })}
+              >
+                Off the board
               </button>
             </div>
             <p className="max-w-prose text-sm leading-relaxed text-text-muted">
