@@ -31,10 +31,14 @@ const event: HistoricalEvent = {
 };
 
 const readMore = () => screen.queryByRole('button', { name: /read more about this event/i });
-const goBack = () => screen.queryByRole('button', { name: /back to the card/i });
+const card = () => screen.getByTestId('modal-card');
+const backdrop = () => screen.getByTestId('modal-backdrop');
 
-const renderPopup = (props: Partial<React.ComponentProps<typeof GamePopup>> = {}) =>
-  render(<GamePopup type="description" event={event} onDismiss={jest.fn()} {...props} />);
+const renderPopup = (props: Partial<React.ComponentProps<typeof GamePopup>> = {}) => {
+  const onDismiss = jest.fn();
+  render(<GamePopup type="description" event={event} onDismiss={onDismiss} {...props} />);
+  return { onDismiss };
+};
 
 beforeEach(() => {
   mockedLoad.mockReset();
@@ -65,22 +69,22 @@ describe('the read-more gate', () => {
   });
 });
 
-describe('turning the card over', () => {
-  it('shows the prose, and the back control returns to the card face', async () => {
+describe('reading more', () => {
+  it('swaps the short description for the prose, and back again', async () => {
     renderPopup();
 
     userEvent.click(readMore()!);
     expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
     expect(screen.getByText('Second paragraph.')).toBeInTheDocument();
-    // The short description belongs to the card face and must not be on the reading face.
+    // One box, one text: the description is what the prose replaced.
     expect(screen.queryByText(event.description)).not.toBeInTheDocument();
 
-    userEvent.click(goBack()!);
+    userEvent.click(readMore()!);
     expect(await screen.findByText(event.description)).toBeInTheDocument();
-    expect(readMore()).toBeInTheDocument();
+    expect(screen.queryByText('First paragraph.')).not.toBeInTheDocument();
   });
 
-  it('keeps the title and year visible on both faces', async () => {
+  it('keeps the title and year visible while the prose is showing', async () => {
     renderPopup();
     userEvent.click(readMore()!);
 
@@ -89,7 +93,7 @@ describe('turning the card over', () => {
     expect(screen.getByText('1743')).toBeInTheDocument();
   });
 
-  it('offers a retry rather than a blank face when the shard will not load', async () => {
+  it('offers a retry rather than a blank box when the shard will not load', async () => {
     mockedLoad.mockResolvedValue(null);
     renderPopup();
 
@@ -97,8 +101,10 @@ describe('turning the card over', () => {
     expect(await screen.findByRole('button', { name: /tap to retry/i })).toBeInTheDocument();
   });
 
-  it('turns back to the card face when the popup moves to another event', async () => {
-    const { rerender } = renderPopup();
+  it('returns to the description when the popup moves to another event', async () => {
+    const { rerender } = render(
+      <GamePopup type="description" event={event} onDismiss={jest.fn()} />
+    );
 
     userEvent.click(readMore()!);
     expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
@@ -107,12 +113,54 @@ describe('turning the card over', () => {
       ...event,
       name: 'first-rules-of-golf',
       friendly_name: 'First Rules of Golf',
+      description: 'Thirteen articles agreed by a golfing society.',
     };
     rerender(<GamePopup type="description" event={other} onDismiss={jest.fn()} />);
 
     // Never one event's prose under another event's title.
     await waitFor(() => expect(screen.queryByText('First paragraph.')).not.toBeInTheDocument());
     expect(screen.getByText('First Rules of Golf')).toBeInTheDocument();
-    expect(readMore()).toBeInTheDocument();
+    expect(screen.getByText(other.description)).toBeInTheDocument();
+  });
+
+  it('mutes the prose on a tombstoned event, as the rest of that card is muted', async () => {
+    renderPopup({ tombstone: true });
+
+    userEvent.click(readMore()!);
+    expect(await screen.findByText('First paragraph.')).toHaveClass('text-text-muted');
+  });
+});
+
+describe('opening straight onto the prose', () => {
+  it('shows the prose without a tap, and its button goes to the description', async () => {
+    renderPopup({ openExpanded: true });
+
+    expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
+    expect(screen.queryByText(event.description)).not.toBeInTheDocument();
+
+    userEvent.click(readMore()!);
+    expect(await screen.findByText(event.description)).toBeInTheDocument();
+  });
+});
+
+describe('dismissal', () => {
+  it('advances on a tap anywhere while the description is showing', () => {
+    const { onDismiss } = renderPopup();
+    userEvent.click(card());
+    expect(onDismiss).toHaveBeenCalledTimes(1);
+  });
+
+  it('ignores taps on the card while the prose is showing, so a scroll drag is not a dismissal', async () => {
+    const { onDismiss } = renderPopup();
+
+    userEvent.click(readMore()!);
+    await screen.findByText('First paragraph.');
+
+    userEvent.click(card());
+    expect(onDismiss).not.toHaveBeenCalled();
+
+    // The way out is still there.
+    userEvent.click(backdrop());
+    expect(onDismiss).toHaveBeenCalledTimes(1);
   });
 });

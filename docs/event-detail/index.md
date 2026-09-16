@@ -24,45 +24,61 @@ built everything except the words, so Phases 2 and 3 are a pure content exercise
 
 ## The decisions, and why
 
-**The button lives in the detail popup only, top-right.** Not on the timeline cards: they are
-240x80px, already tappable as a single `<button>`, and a nested control would have been invalid
-HTML as well as visual noise on every row.
+**The button sits on the image, top-right** (`EventInfoButton`), not in the header and not on the
+timeline cards. Those are 240x80px and already tappable as a single `<button>`, so a nested
+control would have been invalid HTML as well as visual noise on every row. On the image it is one
+control with one position, which is what lets the Daily hero carry the same button over its own
+image and open the same popup.
 
-**The card turns over; it does not open a second overlay.** One modal, a back face, a back arrow
-home. A second overlay would be a second thing to dismiss for what is still one card.
+It is a frosted disc rather than the card's own text colour, because it sits over arbitrary card
+art where a per-event tint has nothing to guarantee contrast against. Same chip treatment as the
+lock on a locked achievement, which solves the same problem.
 
-**The turn is a crossfade plus an 8px slide, not a 3D flip.** A real `rotateY` was tried first
-and rejected: both faces have to share a height for the rotation to read, and these two differ
-by the whole 384px image box, so the card visibly jumped mid-rotation. The slide keeps the
-metaphor without constraining the height. Under Reduce Motion it degrades to a plain crossfade.
+**The prose replaces the description in place; there is no second face and no second overlay.**
+One box, one text, and the same button toggles back. A back arrow, a face swap and a transition
+are three pieces of interface for what is still one card.
 
-**The reading face has no image.** The header still carries the title and year, and the front
-face's image box is most of a phone screen. The point of this face is reading room.
+**The card does not change size when the text swaps.** The box is pinned to the height the
+_description_ measured (`usePinnedFaceHeight`) and the prose scrolls inside it, so the card holds
+its exact position and dimensions across the swap, the scroll and the swap back — measured at
+340x606 (402px wide), 272x651 (320px) and 400x583 (1440px), identical in both states. Measuring
+rather than pinning to a constant matters because that height is content-driven: descriptions run
+from 32 to 169 characters, so any constant would leave dead space under the short ones.
 
-**The card does not change size when it is turned over.** The reading face is pinned to the
-height the card face measured (`usePinnedFaceHeight`), and the prose scrolls inside it — so the
-card holds its exact position and dimensions across turn, scroll and turn back. Measuring rather
-than pinning to a constant matters because the card face's height is content-driven: a fixed
-384px image plus a description of anywhere from 32 to 169 characters, so any constant would leave
-dead space under the short ones. Measuring is safe because the card face is always shown first —
-the face resets whenever the event changes — so a height is always recorded before the info
-button can be tapped, and the image box is a fixed height so a late-decoding image cannot move it.
-A consequence worth knowing: `Modal` is given no `scroll` prop on either face, because the shell
-is now identical on both and the scroll region lives inside the reading face.
+> **The measuring ref goes on the description, never on a wrapper that holds both texts.** A
+> height taken from the prose is the whole text at full unclipped height, and pinning to that
+> grows the card on every open — 606px → 724px at phone width on the first cycle, further on each
+> one, eventually off the screen. `usePinnedFaceHeight` refuses to measure anything handed to it
+> while pinned, and `usePinnedFaceHeight.test.ts` fails if that guard is removed.
 
-> **The measuring ref goes on the faces, never on the wrapper that holds both.** It was on the
-> wrapper first, and the card grew every time it was turned over and back: dismissing the reading
-> face released the pin while `AnimatePresence mode="wait"` still had that face mounted and
-> animating out, so the height recorded was the prose at full unclipped height and the next open
-> pinned the card to it (606px → 724px at phone width, worse with longer prose, eventually off
-> the screen). `usePinnedFaceHeight` now refuses to measure anything handed to it while pinned,
-> and `usePinnedFaceHeight.test.ts` fails if that guard is removed.
+**A surface that opens on the prose still renders the description first, for one commit.** The
+pin has nothing to pin to otherwise, and the prose renders at full height — a card twice the
+height of the phone. `GamePopup` therefore resets to the description in a _layout_ effect and
+applies `openExpanded` from the same effect, so the swap lands before paint and is invisible.
+
+**Tapping the card stops dismissing the popup while the prose is up.** `Modal`'s `tap-advance`
+mode would turn every scroll drag into a dismissal, so `GamePopup` switches to `backdrop` for as
+long as the prose is showing; the backdrop and ESC still work, and it switches back on collapse.
+This is the same failure the leaderboard had to work around when a row tap closed the board.
+
+**The clipped line fades rather than cutting.** `.fade-scroll-y` is a `mask-image`, not a gradient
+overlay, because the box sits on a per-event inline background colour that no stylesheet can know.
+
+**The box is as tall as the description, which is 1-4 lines.** Measured against placeholder prose
+it holds 70-115px of a 317-648px read. That is a deliberate choice — the alternative was shrinking
+the image box on expand to buy reading room inside the same card height, which remains the change
+to make if the scrolling proves too tight once real prose is written.
 
 **The button is unreachable before placement, and that is load-bearing.** The gate is
 `type === 'description' && showYear && has_detail`, and `showYear` is already false exactly when
 the card is still in the player's hand (`shouldShowYearInPopup`, `Game.tsx`). This is _why_ the
 long-form prose may name years, decades and centuries freely — which is most of the point of
 having it.
+
+The Daily hero passes that gate deliberately. `getDailyPreviewEvent` is `buildDailyDeck(...)[0]`,
+which `useWhenGame` places on the timeline as the starting card with its year showing on turn 1,
+so the read gives away nothing that tapping Play would not. No other pre-game surface may carry
+the button on that reasoning — it holds for the seed card only.
 
 > **Do not add the detail text to `CLUE_FIELDS` in `scripts/events/date-clues.js`.** That rule
 > guards `description` and `friendly_name` because both are shown to a player who has not placed
@@ -134,18 +150,20 @@ reach.
 | Sidecar loader, per-shard cache + in-flight dedupe            | `src/utils/eventDetail.ts`                    |
 | `slug -> source file`, in memory                              | `getSourceFile` in `src/utils/eventLoader.ts` |
 | Fetch-on-tap state, seeded from cache so re-flips don't flash | `src/hooks/useEventDetail.ts`                 |
-| The reading face and the two header controls                  | `src/components/EventDetailFace.tsx`          |
-| Pins the reading face to the card face's height               | `src/hooks/usePinnedFaceHeight.ts`            |
-| Header row, face state, the gate                              | `src/components/GamePopup.tsx`                |
+| The prose, and the box it scrolls in                          | `src/components/EventDetailText.tsx`          |
+| The info button, over any event image                         | `src/components/EventInfoButton.tsx`          |
+| Pins the box to the description's height                      | `src/hooks/usePinnedFaceHeight.ts`            |
+| Header, image, expand state, dismissal, the gate              | `src/components/GamePopup.tsx`                |
 | Shape rules, shared by scripts and Jest                       | `scripts/events/detail-spec.js`               |
 | Disk access, shard read/write, slug→file                      | `scripts/events/detail-catalogue.js`          |
 | Map-then-apply, writes prose **and** `has_detail`             | `scripts/events/detail-apply.js`              |
 | Local placeholder filler, `--revert`                          | `scripts/events/detail-placeholder.js`        |
 | Worklist generator and progress meter                         | `scripts/events/detail-report.js`             |
 
-Both player-facing surfaces route through `GamePopup` with `type: 'description'` — the game board
-(`Game.tsx`, `showDescriptionPopup`) and My Timeline (`panels/TimelinePanel.tsx`) — so there was
-one insertion point, not two.
+All three player-facing surfaces route through `GamePopup` with `type: 'description'` — the game
+board (`Game.tsx`, `showDescriptionPopup`), My Timeline (`panels/TimelinePanel.tsx`) and the Daily
+hero (`panels/DailyPanel.tsx` → `ModeSelect.tsx`, which passes `openExpanded`) — so there is one
+insertion point, not three.
 
 ## Phase 2 — the writing spec (next)
 
@@ -207,13 +225,14 @@ The placeholder corpus is already committed, so the design can be looked at on t
 preview deploy or locally with no setup. Regenerate with
 `node scripts/events/detail-placeholder.js` if you have reverted it:
 
-1. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game.
+1. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game, or tap the (i)
+   on the Daily hero image.
 2. **Check the gate**: tap a card still in your hand — there must be no info button.
-3. Widths 320 / 402 / 1440, light and dark, Reduce Motion on. Two- and three-paragraph entries
-   both occur. The card must not move or resize between the two faces — measure
-   `[data-testid="modal-card"]`'s bounding box on each face if in doubt; it was 340x606 at 402px
-   wide on both when this shipped.
-4. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
+3. Widths 320 / 402 / 1440, light and dark. Two- and three-paragraph entries both occur. The card
+   must not move or resize between the two states — measure `[data-testid="modal-card"]`'s
+   bounding box in each if in doubt; see the numbers above.
+4. While the prose is up, a tap on the card must not dismiss the popup, and the backdrop must.
+5. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
 
 Driving it with Playwright: `docs/driving-the-app-with-playwright.md`. Note the timeline card is
 reached by its **title** — `[data-timeline-year]` is the year label beside it, and clicking that
@@ -222,4 +241,5 @@ opens nothing.
 ## Known, not chased
 
 `docs/desktop-experience/index.md` D5 (the card popup overlapping the "Later ↓" label at
-1440x900) is marginally worse with a tall reading face. Still cosmetic, still open.
+1440x900). The card is now the same height in both states, so this is exactly as it was before
+the feature. Still cosmetic, still open.

@@ -19,9 +19,9 @@ import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
 import TimelinePanel from './panels/TimelinePanel';
-import DailyDeckPreview from './DailyDeckPreview';
+import DailyPanel from './panels/DailyPanel';
+import GamePopup from './GamePopup';
 import DailyCta from './DailyCta';
-import TodaysLongest from './TodaysLongest';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
@@ -40,8 +40,6 @@ import { getLifetimeStats } from '../utils/statsStorage';
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
-import HintStrip from './HintStrip';
-import { tabHintText } from '../utils/hintCopy';
 import { useTabHint } from '../hooks/useTabHint';
 import { DRAG_NUDGE_MS } from '../hooks/useOnboardingHints';
 
@@ -189,6 +187,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
   // Leaderboard state
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
+
+  // The event whose long-form read is open from the Daily hero, or null. Held here rather than in
+  // DailyDeckPreview so that card stays presentational.
+  const [infoEvent, setInfoEvent] = useState<HistoricalEvent | null>(null);
 
   // Held in a ref because the two hooks below need each other: `useToday` refetches the board on
   // every resume, and the board hook needs `today` to know which board to read. `useToday` only
@@ -430,37 +432,18 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           activeColors={TABS.map((tab) => tab.color)}
         >
           {/* Daily page */}
-          <div className="mx-auto flex w-full max-w-sm flex-col flex-1 min-h-0 px-3">
-            <div className="text-left mb-3">
-              <h1 className="text-5xl font-bold text-text font-display leading-none">
-                When<span className="text-accent">?</span>
-              </h1>
-              <p className="text-text-muted text-sm mt-1 font-body">
-                Drag events into place, build the longest timeline
-              </p>
-            </div>
-
-            <DailyDeckPreview
-              event={previewEvent}
-              themeName={todayResult ? todayResult.theme : dailyThemeDisplayName}
-              cta={dailyCta}
-              className="flex-1 min-h-0"
-            />
-
-            <div className="mt-3 flex-shrink-0">
-              {dailyHint.show ? (
-                <HintStrip text={tabHintText('dailyTab')} onDismiss={dailyHint.dismiss} />
-              ) : (
-                <TodaysLongest
-                  entries={leaderboard}
-                  isLoading={isLeaderboardLoading}
-                  playerEntry={playerEntry}
-                  playerRank={rank}
-                  onOpenFull={() => setIsLeaderboardOpen(true)}
-                />
-              )}
-            </div>
-          </div>
+          <DailyPanel
+            previewEvent={previewEvent}
+            themeName={todayResult ? todayResult.theme : dailyThemeDisplayName}
+            cta={dailyCta}
+            hint={dailyHint}
+            leaderboard={leaderboard}
+            isLeaderboardLoading={isLeaderboardLoading}
+            playerEntry={playerEntry}
+            playerRank={rank}
+            onOpenLeaderboard={() => setIsLeaderboardOpen(true)}
+            onReadMore={() => setInfoEvent(previewEvent)}
+          />
 
           {/* Archive page: past curated decks, replayable from the day after they ran */}
           <ArchivePanel
@@ -514,6 +497,18 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           <Check className="w-4 h-4" />
           Copied to clipboard!
         </div>
+      )}
+
+      {/* The Daily hero's read-more, opened straight onto the prose — the info button is already
+          the request to read. */}
+      {infoEvent && (
+        <GamePopup
+          type="description"
+          event={infoEvent}
+          onDismiss={() => setInfoEvent(null)}
+          showYear
+          openExpanded
+        />
       )}
 
       {/* Leaderboard Modal */}

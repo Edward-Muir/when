@@ -4,45 +4,17 @@ import { HistoricalEvent } from '../types';
 import { getEventTextClass } from '../utils/eventColor';
 import { useEventDetail } from '../hooks/useEventDetail';
 
-/** Shared shell for the two header controls, so they match in size, colour and feedback. */
-export function HeaderIconButton({
-  event,
-  tombstone,
-  label,
-  onClick,
-  children,
-}: {
-  event: HistoricalEvent;
-  tombstone?: boolean;
-  label: string;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
-  return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={(e) => {
-        // The popup dismisses on backdrop clicks; Modal stops propagation at the card, but
-        // these controls stop it too so they keep working if that ever changes.
-        e.stopPropagation();
-        onClick();
-      }}
-      className={`shrink-0 -my-1 w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
-    >
-      {children}
-    </button>
-  );
-}
-
 /**
- * The reading face: three shimmer lines while the shard loads, then the prose.
+ * The long-form read, in the box the short description was occupying: three shimmer lines while
+ * the shard loads, then the prose.
  *
- * No image here. The header already identifies the card, and the front face's 384px image box
- * is most of a phone screen — the point of this face is reading room.
+ * This is the scroll region itself. `flex-1 min-h-0` lets it shrink inside the height its parent
+ * pinned, so showing it never resizes the card — the prose scrolls instead. `overscroll-contain`
+ * keeps a flick past the end of it off the board behind. The bottom mask fades the clipped line
+ * so it reads as "more below" rather than as a rendering fault, and `py-3` gives the last line
+ * room to scroll clear of that fade.
  */
-function EventDetailFace({
+function EventDetailText({
   event,
   tombstone,
   detail,
@@ -89,10 +61,7 @@ function EventDetailFace({
   }
 
   return (
-    // flex-1/min-h-0 makes this the scroll region inside the height the card face pinned, so
-    // turning the card over never resizes it — the prose scrolls instead.
-    // overscroll-contain so flicking past the end of the prose doesn't scroll the board behind.
-    <div className="flex-1 min-h-0 px-4 py-3 overflow-y-auto overscroll-contain space-y-3">
+    <div className="flex-1 min-h-0 px-4 py-3 overflow-y-auto overscroll-contain space-y-3 fade-scroll-y">
       {detail.paragraphs.map((paragraph, i) => (
         <p key={i} className={`${textClass} text-sm leading-relaxed font-body break-words`}>
           {paragraph}
@@ -102,4 +71,4 @@ function EventDetailFace({
   );
 }
 
-export default EventDetailFace;
+export default EventDetailText;

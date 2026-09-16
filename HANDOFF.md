@@ -4,21 +4,22 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 ## Where things stand
 
-|            |                                                                             |
-| ---------- | --------------------------------------------------------------------------- |
-| Branch     | `claude/event-details-info-button-hu8mpk`                                   |
-| HEAD       | `9b99e6e`, six commits, rebased onto main v1.22.0 (`946d4aa`) on 2026-09-16 |
-| PR         | none, deliberately                                                          |
-| Production | nothing. The branch does not merge until the prose corpus is written        |
+|            |                                                                      |
+| ---------- | -------------------------------------------------------------------- |
+| Branch     | `claude/event-detail-read-more-polish-1i4ai5`, on top of `e2669f1`   |
+| PR         | none, deliberately                                                   |
+| Production | nothing. The branch does not merge until the prose corpus is written |
 
 **Branch off _this_ branch, never off main** — the feature does not exist on main.
 
 ## What exists
 
-An info button in the top-right of a card's detail popup turns the card over onto 2-3 paragraphs
-about the event. It is reachable from a placed card in a game and from anything in My Timeline.
-The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to mirror the 19
-manifest files; it is never inlined into the event JSON.
+An info button in the top-right of a card's image swaps its short description for 2-3 paragraphs
+about the event, scrolling in the same box so the card never changes size; the same button swaps
+back. It is on a placed card in a game, on anything in My Timeline, and on the Daily hero image —
+whose event is the deck's starting card, placed face-up with its year on turn 1, so the read gives
+nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to
+mirror the 19 manifest files; it is never inlined into the event JSON.
 
 All 5,460 events currently carry **committed placeholder prose**, so the branch's preview deploy
 is testable. Every placeholder entry is flagged `placeholder: true` and opens `PLACEHOLDER —`.
@@ -37,14 +38,16 @@ npm ci                 # deps are not pre-populated; without this `npm run typec
 BROWSER=none npm start
 ```
 
-Open `/timeline`, tap a placed card, tap the **(i)** in the top right. Or play a game from the
-Custom tab and tap a card once it is on the timeline.
+Fastest: tap the **(i)** on the Daily hero image on `/`. Otherwise open `/timeline` and tap a
+placed card, or play a game from the Custom tab and tap a card once it is on the timeline; the
+(i) is in the top right of the card's image.
 
 Driving it with Playwright: [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md).
-One gotcha that costs a cycle every time — reach a timeline card by its **title**
-(`getByRole('button', { name: /<friendly_name>/i })`). `[data-timeline-year]` is the year label
-_beside_ the card; clicking it opens nothing, which reads as a broken feature rather than a bad
-selector.
+Two gotchas that cost a cycle each — reach a timeline card by its **title**
+(`getByRole('button', { name: /<friendly_name>/i })`, since `[data-timeline-year]` is the year
+label _beside_ the card and clicking it opens nothing), and scope the info button to
+`[data-testid="modal-card"]` once a popup is open, or the query also matches the hero's button
+behind the backdrop.
 
 ## Don't break these
 
@@ -53,10 +56,13 @@ selector.
   card is still in hand, and this is the reason the long-form prose may state years freely where
   `description` may not. Pinned by `src/components/GamePopup.test.tsx`. This is the one that
   actually matters.
-- **The card must not change size or position between its two faces.** The reading face is pinned
-  to the height the card face measured, and the prose scrolls inside it. The measuring ref goes on
-  the **faces**, never on the wrapper that holds both — that was a real bug (the card grew on
-  every turn until it ran off the screen). Pinned by `src/hooks/usePinnedFaceHeight.test.ts`.
+- **The card must not change size or position when the text swaps.** The box is pinned to the
+  height the description measured, and the prose scrolls inside it. The measuring ref goes on the
+  **description**, never on a wrapper holding both texts — a height taken from the prose grows the
+  card on every open until it runs off the screen. Pinned by
+  `src/hooks/usePinnedFaceHeight.test.ts`. A surface opening straight on the prose
+  (`openExpanded`) still renders the description for one commit so there is a height to pin to;
+  that is why `GamePopup` resets in a **layout** effect.
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** That is
   the merge gate. It is deliberately not part of `npm test`, which would otherwise be red for the
   whole of the writing phase.
@@ -68,46 +74,43 @@ selector.
 
 ## Open UI items — the worklist
 
-1. **The tombstone reading face has never been looked at, and has no test.** A failed placement
-   _does_ reach the info button (`shouldShowYearInPopup` returns true for revealed tombstones,
-   `src/components/Game.tsx:77`), and `EventDetailFace` does take the `tombstone` prop and mute the
-   text — but `GamePopup.test.tsx` has zero tombstone cases and no screenshot was ever taken. Check
-   this first; it is the most likely place something is quietly wrong.
-2. **The scroll affordance.** Where the prose overflows it clips against the hairline above
-   "Report an issue". Conventional, but a fade would read better. `mask-image` is the candidate
-   rather than a gradient, because it needs no knowledge of the card's per-event inline background
-   colour. Deliberately deferred until there was prose to judge it against.
-3. **Dark mode was last seen before the card-size fix.** Re-check rather than assume.
-4. **Reading measure.** The card is `max-w-[340px] sm:max-w-[400px]`. `Modal` has a `wide` size
-   this has never used — worth seeing whether the line length wants it.
-5. **The header-to-prose gap** on the reading face, and the desktop overlap with the "Later ↓"
-   label at 1440x900 (`docs/desktop-experience/index.md` D5 — pre-existing, marginally worse with
-   a tall card).
+1. **Reading room.** The box is as tall as the short description, so the prose scrolls through a
+   1-4 line window: measured 70-115px of viewport against a 317-648px read, at 320/402/1440. This
+   is the shape that was asked for, judged against placeholder prose. If it proves too tight once
+   real prose exists, the fix is to shrink the image box on expand (384px → ~120px) and give the
+   freed height to the text — the card's total height, and therefore the invariant above, is
+   unaffected, and it is a change to `EventPopupContent` alone.
+2. **Reading measure.** The card is `max-w-[340px] sm:max-w-[400px]`. `Modal` has a `wide` size
+   this has never used. It buys ~60px at desktop width and nothing on a phone, so it is only worth
+   revisiting alongside item 1.
+3. **The Daily hero's image fallback.** When Cloudinary fails, `DailyDeckPreview` falls back to a
+   pale `bg-border/30` panel, and the frosted disc is washed out on it. Over real art it reads
+   cleanly, in both themes. Only worth chasing if the fallback turns out to be common.
+
+Closed this session: the tombstone read (looked at, correct, now covered by a test); the
+scroll affordance (a `mask-image` fade, `.fade-scroll-y`); dark mode (re-checked at 402px); the
+desktop D5 overlap (unchanged from before the feature, since the card no longer grows).
 
 ## Numbers to check against
 
-The card measured **340x606** at 402px wide and **651** tall at 320px, holding that across turn,
-scroll to the end, and turn back. 5,460 events, all carrying placeholder. Full suite was **757
-tests across 64 suites** after the rebase.
+The card measured **340x606** at 402px, **272x651** at 320px and **400x583** at 1440px, identical
+in both states across swap, scroll to the end, and swap back. The scroll window inside it was
+70-115px. 5,460 events, all carrying placeholder. Full suite is **764 tests across 65 suites**.
 
 ## Kick-off prompt for the next session
 
-> Continue the "read more" event-detail work on the `when` repo.
+> Continue the event-detail work on the `when` repo.
 >
-> Branch off `claude/event-details-info-button-hu8mpk` — **not** main, the feature only exists on
-> that branch.
+> Branch off `claude/event-detail-read-more-polish-1i4ai5` — **not** main, the feature only exists
+> on that branch.
 >
 > Read `HANDOFF.md` at the repo root first. It points at `docs/event-detail/index.md` for the
 > decisions behind the design and why they were made.
 >
-> This session is **UI polish of the detail view only** — not the prose writing spec, which is a
-> later phase. Every entry you will see is committed placeholder text: judge layout, spacing and
-> feel against it, don't rewrite it.
+> The UI is done. **This session is Phase 2, the writing spec** — `docs/event-detail/writing-spec.md`
+> and `.claude/skills/write-event-detail/SKILL.md`, described in `docs/event-detail/index.md`, with
+> the open questions it has to settle in
+> `docs/event-detail/session-2026-09-12-detail-view-design.md`.
 >
-> Start by running it and actually looking: `npm ci`, then `BROWSER=none npm start`, open
-> `/timeline`, tap a placed card, tap the (i) in the top right. Then work the "Open UI items" list
-> in `HANDOFF.md`, starting with the tombstone reading face, which has never been seen.
->
-> Two things must not change: the info button stays unreachable before a card is placed, and the
-> card must not resize or move between its two faces. Both are pinned by tests — if you find
-> yourself editing those tests, stop and ask.
+> Every entry in the corpus today is committed placeholder text. Judge the spec by hand-writing
+> ~10 entries across difficulty and era and reading them cold — do not start Phase 3.

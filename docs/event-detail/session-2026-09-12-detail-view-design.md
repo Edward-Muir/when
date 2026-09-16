@@ -76,8 +76,8 @@ with rather than a blank page.
    everywhere else. It does not: detail is unreachable until the year is already revealed. Say it
    early and give the reason, or the whole corpus will be written awkwardly around dates.
 
-7. **Do not restate the `description`** in the first paragraph — it is on the card face the reader
-   just turned over. And do not describe the card art.
+7. **Do not restate the `description`** in the first paragraph — it is the text the prose
+   replaced, one tap ago. And do not describe the card art.
 
 8. **A gold set of ~15 exemplars**, spread across era, difficulty and category, is the practical
    way to transmit tone to a sub-agent. It will do more than any amount of adjective in the spec,
