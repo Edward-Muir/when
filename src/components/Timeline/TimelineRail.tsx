@@ -1,4 +1,4 @@
-import React, { CSSProperties, useEffect, useState } from 'react';
+import React, { CSSProperties } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 
 /**
@@ -20,11 +20,15 @@ import { motion, useReducedMotion } from 'framer-motion';
  * ## The extension preview
  *
  * When a drag hovers past either end of the board, the ghost row gets a segment too and
- * `extending` says which way. That segment springs out of the existing rail (scaleY from
- * the anchored end, never a fade) and carries a glowing tip that settles once the spring
- * lands — the one moment where making the timeline longer is something you feel. On a
- * correct drop the ghost row becomes a real row, so the segment is already at full length
- * and only the tip fades: no second animation, no snap.
+ * `extending` says which way. That segment springs out of the existing rail — scaleY from the
+ * anchored end, never a fade — which is the one moment where making the timeline longer is
+ * something you feel. On a correct drop the ghost row becomes a real row, so the segment is
+ * already at full length: no second animation, no snap. Each end grows once per drag; crossing
+ * off an end and back does not replay it (`grow`).
+ *
+ * The glowing node at the growing end is NOT drawn here. It is `TimelineMarker`, one persistent
+ * element that travels the whole board for the length of a drag and happens to be parked here
+ * when the gap is an end. Drawing a tip locally would mean two glowing things fighting.
  */
 
 export type RailExtension = 'earlier' | 'later';
@@ -35,6 +39,11 @@ interface TimelineRailProps {
   last?: boolean;
   /** Set on a drag ghost sitting past an end: which way the rail is reaching. */
   extending?: RailExtension | null;
+  /**
+   * Whether this extension still owes its growth animation, or should simply be at full length
+   * already. False once this end has grown earlier in the same drag — see `useRailGrowth`.
+   */
+  grow?: boolean;
   /**
    * Stretch the extension in time without changing its shape — 1 in the game, and larger only
    * for the screenshot rig, where a 320ms spring is quicker than a screenshot round-trip.
@@ -59,25 +68,14 @@ function growSpring(timeScale: number) {
     mass: GROW_SPRING.mass,
   };
 }
-/** How long the tip stays lit — long enough to ride the overshoot, not long enough to linger. */
-const TIP_SETTLE_MS = 560;
-
 const TimelineRail: React.FC<TimelineRailProps> = ({
   first = false,
   last = false,
   extending = null,
+  grow = true,
   timeScale = 1,
 }) => {
   const shouldReduceMotion = useReducedMotion();
-  const [tipLit, setTipLit] = useState(true);
-
-  // Relight on every new extension, then let it settle.
-  useEffect(() => {
-    if (!extending) return;
-    setTipLit(true);
-    const t = window.setTimeout(() => setTipLit(false), TIP_SETTLE_MS * timeScale);
-    return () => window.clearTimeout(t);
-  }, [extending, timeScale]);
 
   // Only the open ends are rounded. Rounding every segment would notch the rail at each row
   // boundary, since the segments butt together.
@@ -104,20 +102,16 @@ const TimelineRail: React.FC<TimelineRailProps> = ({
         data-rail-extending={extending}
         className={`tl-rail h-full w-full ${ends}`}
         style={{ transformOrigin: origin } as CSSProperties}
-        initial={shouldReduceMotion ? false : { scaleY: 0 }}
+        // `grow` is read here and NOWHERE else on purpose. It flips to false on the render
+        // straight after this one, while the spring is still in flight, and `initial` is only
+        // consulted at mount — so flipping it later is a no-op. Gating the `transition` on the
+        // same flag would swap the spring for `duration: 0` mid-flight and snap the rail to
+        // full length halfway through the growth this is meant to preserve.
+        initial={shouldReduceMotion || !grow ? false : { scaleY: 0 }}
         animate={{ scaleY: 1 }}
         exit={shouldReduceMotion ? undefined : { scaleY: 0 }}
         transition={shouldReduceMotion ? { duration: 0 } : growSpring(timeScale)}
       />
-      {!shouldReduceMotion && (
-        <motion.div
-          className="tl-rail-tip absolute left-1/2 h-2 w-1.5 -translate-x-1/2 rounded-full"
-          style={earlier ? { top: -2 } : { bottom: -2 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: tipLit ? 1 : 0 }}
-          transition={{ duration: (tipLit ? 0.12 : 0.32) * timeScale }}
-        />
-      )}
     </div>
   );
 };

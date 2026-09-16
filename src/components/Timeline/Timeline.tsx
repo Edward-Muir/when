@@ -5,6 +5,9 @@ import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } fro
 import TimelineEvent from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
 import TimelineRail, { RailExtension } from './TimelineRail';
+import TimelineMarker from './TimelineMarker';
+import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
+import { useRailGrowth } from './useRailGrowth';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
@@ -55,11 +58,20 @@ const BoardRow: React.FC<{
   first: boolean;
   last: boolean;
   extending?: RailExtension | null;
+  grow?: boolean;
   timeScale: number;
+  /** This row is where the ghost card currently sits — the insertion marker homes in on it. */
+  ghost?: boolean;
   children: React.ReactNode;
-}> = ({ first, last, extending = null, timeScale, children }) => (
-  <div className="relative w-full">
-    <TimelineRail first={first} last={last} extending={extending} timeScale={timeScale} />
+}> = ({ first, last, extending = null, grow = true, timeScale, ghost = false, children }) => (
+  <div {...(ghost ? { [GHOST_ROW_ATTR]: '' } : {})} className="relative w-full">
+    <TimelineRail
+      first={first}
+      last={last}
+      extending={extending}
+      grow={grow}
+      timeScale={timeScale}
+    />
     {children}
   </div>
 );
@@ -305,6 +317,8 @@ const Timeline: React.FC<TimelineProps> = ({
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
   // One paper tone per rendered row, in render order, for the gradient behind the board. The
+  const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
+  const railGrow = useRailGrowth(isDragging, railExtension);
 
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
@@ -338,6 +352,7 @@ const Timeline: React.FC<TimelineProps> = ({
         first={railFirst(rowIndex)}
         last={railLast(rowIndex)}
         timeScale={railTimeScale}
+        ghost={rowIndex === ghostHostRowIndex}
       >
         <TombstoneRow
           failed={failed}
@@ -376,7 +391,9 @@ const Timeline: React.FC<TimelineProps> = ({
             first={earlierExt !== null}
             last={false}
             extending={earlierExt}
+            grow={railGrow}
             timeScale={railTimeScale}
+            ghost
           >
             <GhostCard event={ghost} />
           </BoardRow>
@@ -452,7 +469,9 @@ const Timeline: React.FC<TimelineProps> = ({
                 first={events.length === 0}
                 last={laterExt !== null}
                 extending={laterExt}
+                grow={railGrow}
                 timeScale={railTimeScale}
+                ghost
               >
                 <GhostCard event={trailingGhost} />
               </BoardRow>
@@ -471,6 +490,16 @@ const Timeline: React.FC<TimelineProps> = ({
           Later ↓
         </div>
       </div>
+
+      {/* Portals to `body` above the drag overlay — see TimelineMarker. Rendered here rather
+          than inside the scroller so it is clear of the board's own stacking. */}
+      <TimelineMarker
+        x={marker.x}
+        y={marker.y}
+        clip={marker.clip}
+        visible={marker.visible}
+        timeScale={railTimeScale}
+      />
     </div>
   );
 };
