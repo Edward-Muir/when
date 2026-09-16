@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.22.0](https://github.com/Edward-Muir/when/compare/v1.21.0...v1.22.0) (2026-09-16)
+
+
+### Features
+
+* **timeline:** a rail that grows with the board, and a marker that lands as its tick ([#58](https://github.com/Edward-Muir/when/issues/58)) ([1b0e202](https://github.com/Edward-Muir/when/commit/1b0e202a269cf15e2c5501375a56b8dd950dca66))
+
 ## [1.21.0](https://github.com/Edward-Muir/when/compare/v1.20.0...v1.21.0) (2026-09-14)
 
 
