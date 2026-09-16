@@ -8,11 +8,8 @@ import { useEventDetail } from '../hooks/useEventDetail';
  * The long-form read, in the box the short description was occupying: three shimmer lines while
  * the shard loads, then the prose.
  *
- * This is the scroll region itself. `flex-1 min-h-0` lets it shrink inside the height its parent
- * pinned, so showing it never resizes the card — the prose scrolls instead. `overscroll-contain`
- * keeps a flick past the end of it off the board behind. The bottom mask fades the clipped line
- * so it reads as "more below" rather than as a rendering fault, and `py-3` gives the last line
- * room to scroll clear of that fade.
+ * Not a scroll region: it is the tall half of one, below the image, and the popup owns the box
+ * they scroll in together. Its bottom padding is what lets the last line clear that box's fade.
  */
 function EventDetailText({
   event,
@@ -27,7 +24,7 @@ function EventDetailText({
 
   if (detail.status === 'loading' || detail.status === 'idle') {
     return (
-      <div className="flex-1 min-h-0 px-4 py-3 space-y-2" aria-busy="true" aria-live="polite">
+      <div className="px-4 py-3 space-y-2" aria-busy="true" aria-live="polite">
         <span className="sr-only">Loading more about this event</span>
         {/* Ragged widths so it reads as text rather than as a progress bar. */}
         {['w-full', 'w-11/12', 'w-4/5'].map((width, i) => (
@@ -43,7 +40,7 @@ function EventDetailText({
 
   if (detail.status === 'error' || !detail.paragraphs) {
     return (
-      <div className="flex-1 min-h-0 px-4 py-3">
+      <div className="px-4 py-3">
         <button
           type="button"
           onClick={(e) => {
@@ -61,7 +58,7 @@ function EventDetailText({
   }
 
   return (
-    <div className="flex-1 min-h-0 px-4 py-3 overflow-y-auto overscroll-contain space-y-3 fade-scroll-y">
+    <div className="px-4 py-3 space-y-3">
       {detail.paragraphs.map((paragraph, i) => (
         <p key={i} className={`${textClass} text-sm leading-relaxed font-body break-words`}>
           {paragraph}

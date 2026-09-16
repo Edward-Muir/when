@@ -84,6 +84,15 @@ describe('reading more', () => {
     expect(screen.queryByText('First paragraph.')).not.toBeInTheDocument();
   });
 
+  it('announces which of the two texts it is showing', async () => {
+    renderPopup();
+    expect(readMore()).toHaveAttribute('aria-expanded', 'false');
+
+    userEvent.click(readMore()!);
+    await screen.findByText('First paragraph.');
+    expect(readMore()).toHaveAttribute('aria-expanded', 'true');
+  });
+
   it('keeps the title and year visible while the prose is showing', async () => {
     renderPopup();
     userEvent.click(readMore()!);
@@ -132,14 +141,13 @@ describe('reading more', () => {
 });
 
 describe('opening straight onto the prose', () => {
-  it('shows the prose without a tap, and its button goes to the description', async () => {
+  it('shows the prose without a tap, and offers no control to leave it', async () => {
     renderPopup({ openExpanded: true });
 
     expect(await screen.findByText('First paragraph.')).toBeInTheDocument();
     expect(screen.queryByText(event.description)).not.toBeInTheDocument();
-
-    userEvent.click(readMore()!);
-    expect(await screen.findByText(event.description)).toBeInTheDocument();
+    // The surface was asked for the read; there is nothing to toggle to.
+    expect(readMore()).not.toBeInTheDocument();
   });
 });
 

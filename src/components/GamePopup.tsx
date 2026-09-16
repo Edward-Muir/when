@@ -14,7 +14,7 @@ import ReportIssueButton from './ReportIssueButton';
 import { useEventDetail } from '../hooks/useEventDetail';
 import { usePinnedFaceHeight } from '../hooks/usePinnedFaceHeight';
 import EventDetailText from './EventDetailText';
-import EventInfoButton from './EventInfoButton';
+import { EventInfoButton } from './EventInfoButton';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -72,25 +72,31 @@ function EventHeader({
   showYear,
   isIncorrect,
   tombstone,
+  trailing,
 }: {
   event: HistoricalEvent;
   showYear: boolean;
   isIncorrect?: boolean;
   tombstone?: boolean;
+  /** The read-more control, rendered right of the title. */
+  trailing?: React.ReactNode;
 }) {
   const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
   return (
-    <div className="px-4 py-3">
-      <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
-        {event.friendly_name}
-      </h2>
-      {showYear && (
-        <span
-          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
-        >
-          {formatYear(event.year)}
-        </span>
-      )}
+    <div className="px-4 py-3 flex items-start gap-2">
+      <div className="min-w-0 flex-1">
+        <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
+          {event.friendly_name}
+        </h2>
+        {showYear && (
+          <span
+            className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
+          >
+            {formatYear(event.year)}
+          </span>
+        )}
+      </div>
+      {trailing}
     </div>
   );
 }
@@ -102,17 +108,8 @@ function EventHeader({
 // shipped before. The square `detail` image is cropped to fit by `object-cover`.
 const IMAGE_CONTAINER_HEIGHT = 384;
 
-// Sub-component for image section. The only thing over the art is the read-more control.
-function EventImage({
-  event,
-  tombstone,
-  onReadMore,
-}: {
-  event: HistoricalEvent;
-  tombstone?: boolean;
-  /** Renders the info button top-right when given; omitted where there is nothing to read. */
-  onReadMore?: () => void;
-}) {
+// Sub-component for image section (clean, no overlay)
+function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
   // The card the user just tapped already has its thumbnail cached, so painting it as the
   // backdrop makes the popup feel instant while the larger detail image decodes over it.
   // Replaces a per-card eager detail preload that fetched full-size art for every card
@@ -146,7 +143,6 @@ function EventImage({
           <CategoryIcon category={event.category} className="text-text-muted w-16 h-16" />
         </div>
       )}
-      {onReadMore && <EventInfoButton onClick={onReadMore} className="absolute top-2 right-2" />}
     </div>
   );
 }
@@ -321,11 +317,16 @@ function EventPopupContent({
   const isIncorrect = type === 'incorrect';
   const isDescription = type === 'description';
 
-  // Swapping the prose in for the description must not resize the card, so the box is pinned to
-  // the height the description measured and the prose scrolls inside it. The ref goes on the
-  // description, never on the wrapper that holds both: a height taken from the prose is the full
-  // unclipped text, and pinning to that grows the card on every open.
+  // Swapping the prose in for the description must not resize the card, so everything between the
+  // header and the report row is pinned to what it occupied with the description in it, and the
+  // image scrolls away with the prose inside that. The ref goes on the description, never on the
+  // region that survives the swap: a height taken from the prose is the full unclipped text, and
+  // pinning to that grows the card on every open.
   const pinnedText = usePinnedFaceHeight(expanded, [event.name, event.description, showYear]);
+  const measured = pinnedText.style?.height;
+  // The region holds the image too, so what it pins to is the image box plus that measurement.
+  const bodyStyle =
+    typeof measured === 'number' ? { height: measured + IMAGE_CONTAINER_HEIGHT } : undefined;
 
   return (
     <>
@@ -335,16 +336,28 @@ function EventPopupContent({
         showYear={showYear}
         isIncorrect={isIncorrect}
         tombstone={tombstone}
-      />
-      <EventImage
-        event={event}
-        tombstone={tombstone}
-        onReadMore={canReadMore ? () => setExpanded(!expanded) : undefined}
+        trailing={
+          canReadMore ? (
+            <EventInfoButton
+              event={event}
+              tombstone={tombstone}
+              expanded={expanded}
+              onClick={() => setExpanded(!expanded)}
+            />
+          ) : undefined
+        }
       />
 
-      {(isDescription || isIncorrect) && (
-        <div className={expanded ? 'flex min-h-0 flex-col' : undefined} style={pinnedText.style}>
-          {expanded ? (
+      {/* Collapsed this has no height and no overflow, so it is exactly as tall as the image plus
+          the description and nothing scrolls. Expanded it is the same box around several hundred
+          more pixels of prose, so the image scrolls up out of it and the reader gets the lot. */}
+      <div
+        className={expanded ? 'overflow-y-auto overscroll-contain fade-scroll-y' : undefined}
+        style={bodyStyle}
+      >
+        <EventImage event={event} tombstone={tombstone} />
+        {(isDescription || isIncorrect) &&
+          (expanded ? (
             <EventDetailText event={event} tombstone={tombstone} detail={detail} />
           ) : (
             <div ref={pinnedText.ref} className="px-4 py-3">
@@ -354,9 +367,8 @@ function EventPopupContent({
                 {event.description}
               </p>
             </div>
-          )}
-        </div>
-      )}
+          ))}
+      </div>
 
       {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
       {nextPlayer && (
@@ -387,7 +399,8 @@ const GamePopup: React.FC<GamePopupProps> = ({
   const isVisible = isGameOver ? !!gameState : !!event;
 
   const [expanded, setExpanded] = useState(false);
-  const canReadMore = canReadMoreAbout(type, showYear, event);
+  // A surface that opened on the prose has nothing to offer a toggle to, so it shows no control.
+  const canReadMore = canReadMoreAbout(type, showYear, event) && !openExpanded;
   const detail = useEventDetail(event?.name ?? null, expanded);
 
   // The popup instance is reused across cards, so the text goes back to the description whenever

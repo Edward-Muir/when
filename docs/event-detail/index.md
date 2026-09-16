@@ -24,37 +24,54 @@ built everything except the words, so Phases 2 and 3 are a pure content exercise
 
 ## The decisions, and why
 
-**The button sits on the image, top-right** (`EventInfoButton`), not in the header and not on the
-timeline cards. Those are 240x80px and already tappable as a single `<button>`, so a nested
-control would have been invalid HTML as well as visual noise on every row. On the image it is one
-control with one position, which is what lets the Daily hero carry the same button over its own
-image and open the same popup.
+**The button sits in the popup's header, right of the title**, and not on the timeline cards.
+Those are 240x80px and already tappable as a single `<button>`, so a nested control would have been
+invalid HTML as well as visual noise on every row.
 
-It is a frosted disc rather than the card's own text colour, because it sits over arbitrary card
-art where a per-event tint has nothing to guarantee contrast against. Same chip treatment as the
-lock on a locked achievement, which solves the same problem.
+It is flat and tinted with the card's own text colour — a watermark on the card rather than a
+control stuck to it. Over the image it was a frosted disc, for contrast against arbitrary art, and
+that is exactly what made it read as a button bolted on to the picture.
+
+The Daily hero has no header to put it in, so there it is watermarked into the image's corner:
+flat white with a drop shadow, no disc and no ring (`ImageInfoWatermark`, beside
+`EventInfoButton` in the same file so the two share a name and their `stopPropagation`).
 
 **The prose replaces the description in place; there is no second face and no second overlay.**
 One box, one text, and the same button toggles back. A back arrow, a face swap and a transition
-are three pieces of interface for what is still one card.
+are three pieces of interface for what is still one card. The button's label cannot change with
+its direction without breaking every query that finds it, so it carries `aria-expanded` instead.
 
-**The card does not change size when the text swaps.** The box is pinned to the height the
-_description_ measured (`usePinnedFaceHeight`) and the prose scrolls inside it, so the card holds
-its exact position and dimensions across the swap, the scroll and the swap back — measured at
-340x606 (402px wide), 272x651 (320px) and 400x583 (1440px), identical in both states. Measuring
-rather than pinning to a constant matters because that height is content-driven: descriptions run
-from 32 to 169 characters, so any constant would leave dead space under the short ones.
+**Everything between the header and the "Report an issue" row is one scroll region, image
+included.** The header and the report row stay put; the image scrolls up and out of the way and
+the prose takes the whole region — **476px at 402px wide, around 24 lines**. Scrolling the prose
+alone was tried first and is the reason this exists: the text box is only as tall as the short
+description, which is 1 to 4 lines, so ~600px of prose crawled through a 70-115px window under a
+fixed 384px image that was doing nothing.
 
-> **The measuring ref goes on the description, never on a wrapper that holds both texts.** A
-> height taken from the prose is the whole text at full unclipped height, and pinning to that
-> grows the card on every open — 606px → 724px at phone width on the first cycle, further on each
-> one, eventually off the screen. `usePinnedFaceHeight` refuses to measure anything handed to it
-> while pinned, and `usePinnedFaceHeight.test.ts` fails if that guard is removed.
+**The card does not change size when the text swaps.** The region is pinned to what it occupied
+with the description in it — the image box plus the height that description measured
+(`usePinnedFaceHeight` plus `IMAGE_CONTAINER_HEIGHT`) — so the card holds its exact position and
+dimensions across the swap, the scroll to the end, and the swap back: 340x606 at 402px, 272x651 at
+320px, 400x606 at 1440px, identical in both states. Measuring rather than pinning to a constant
+matters because that height is content-driven: descriptions run from 32 to 169 characters, so any
+constant would leave dead space under the short ones. Collapsed, the region carries no height and
+no overflow at all, so it is naturally that same size and cannot scroll.
+
+> **The measuring ref goes on the description, never on the scroll region.** A height taken from
+> the prose is the whole text at full unclipped height, and pinning to that grows the card on
+> every open — 606px → 724px at phone width on the first cycle, further on each one, eventually
+> off the screen. The description unmounts while the prose is up, so the hook's layout effect
+> finds no node and a fresh measurement is taken when it comes back; the region survives the swap
+> and would be measured while pinned and while the event changes underneath it.
+> `usePinnedFaceHeight` refuses to measure anything handed to it while pinned, and
+> `usePinnedFaceHeight.test.ts` fails if that guard is removed.
 
 **A surface that opens on the prose still renders the description first, for one commit.** The
 pin has nothing to pin to otherwise, and the prose renders at full height — a card twice the
 height of the phone. `GamePopup` therefore resets to the description in a _layout_ effect and
 applies `openExpanded` from the same effect, so the swap lands before paint and is invisible.
+That surface also shows no info button: it was asked for the read, so there is nothing to toggle
+to.
 
 **Tapping the card stops dismissing the popup while the prose is up.** `Modal`'s `tap-advance`
 mode would turn every scroll drag into a dismissal, so `GamePopup` switches to `backdrop` for as
@@ -62,12 +79,9 @@ long as the prose is showing; the backdrop and ESC still work, and it switches b
 This is the same failure the leaderboard had to work around when a row tap closed the board.
 
 **The clipped line fades rather than cutting.** `.fade-scroll-y` is a `mask-image`, not a gradient
-overlay, because the box sits on a per-event inline background colour that no stylesheet can know.
-
-**The box is as tall as the description, which is 1-4 lines.** Measured against placeholder prose
-it holds 70-115px of a 317-648px read. That is a deliberate choice — the alternative was shrinking
-the image box on expand to buy reading room inside the same card height, which remains the change
-to make if the scrolling proves too tight once real prose is written.
+overlay, because the region sits on a per-event inline background colour that no stylesheet can
+know. It is applied only while the prose is up — collapsed there is nothing below to signal and
+the mask would just dim the last line of the description.
 
 **The button is unreachable before placement, and that is load-bearing.** The gate is
 `type === 'description' && showYear && has_detail`, and `showYear` is already false exactly when
@@ -150,10 +164,10 @@ reach.
 | Sidecar loader, per-shard cache + in-flight dedupe            | `src/utils/eventDetail.ts`                    |
 | `slug -> source file`, in memory                              | `getSourceFile` in `src/utils/eventLoader.ts` |
 | Fetch-on-tap state, seeded from cache so re-flips don't flash | `src/hooks/useEventDetail.ts`                 |
-| The prose, and the box it scrolls in                          | `src/components/EventDetailText.tsx`          |
-| The info button, over any event image                         | `src/components/EventInfoButton.tsx`          |
-| Pins the box to the description's height                      | `src/hooks/usePinnedFaceHeight.ts`            |
-| Header, image, expand state, dismissal, the gate              | `src/components/GamePopup.tsx`                |
+| The prose itself                                              | `src/components/EventDetailText.tsx`          |
+| The header control and the image watermark                    | `src/components/EventInfoButton.tsx`          |
+| Pins the scroll region to the description's height            | `src/hooks/usePinnedFaceHeight.ts`            |
+| Header, image, scroll region, expand state, dismissal, gate   | `src/components/GamePopup.tsx`                |
 | Shape rules, shared by scripts and Jest                       | `scripts/events/detail-spec.js`               |
 | Disk access, shard read/write, slug→file                      | `scripts/events/detail-catalogue.js`          |
 | Map-then-apply, writes prose **and** `has_detail`             | `scripts/events/detail-apply.js`              |
@@ -229,8 +243,8 @@ preview deploy or locally with no setup. Regenerate with
    on the Daily hero image.
 2. **Check the gate**: tap a card still in your hand — there must be no info button.
 3. Widths 320 / 402 / 1440, light and dark. Two- and three-paragraph entries both occur. The card
-   must not move or resize between the two states — measure `[data-testid="modal-card"]`'s
-   bounding box in each if in doubt; see the numbers above.
+   must not move or resize between the two states, **or after scrolling the prose to the end** —
+   measure `[data-testid="modal-card"]`'s bounding box in each if in doubt; see the numbers above.
 4. While the prose is up, a tap on the card must not dismiss the popup, and the backdrop must.
 5. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
 

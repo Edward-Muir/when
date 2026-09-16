@@ -14,11 +14,13 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 ## What exists
 
-An info button in the top-right of a card's image swaps its short description for 2-3 paragraphs
-about the event, scrolling in the same box so the card never changes size; the same button swaps
-back. It is on a placed card in a game, on anything in My Timeline, and on the Daily hero image —
-whose event is the deck's starting card, placed face-up with its year on turn 1, so the read gives
-nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to
+An info button beside a card's title in its detail popup swaps the short description for 2-3
+paragraphs about the event; the same button swaps back. Everything between the title and the
+"Report an issue" row then scrolls as one region, image included, inside the height it already
+occupied — so the card never changes size. It is on a placed card in a game and on anything in My
+Timeline. The Daily hero carries the same control watermarked into its image and opens straight
+onto the prose with no button in the header; its event is the deck's starting card, placed face-up
+with its year on turn 1, so the read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`, sharded to
 mirror the 19 manifest files; it is never inlined into the event JSON.
 
 All 5,460 events currently carry **committed placeholder prose**, so the branch's preview deploy
@@ -38,9 +40,9 @@ npm ci                 # deps are not pre-populated; without this `npm run typec
 BROWSER=none npm start
 ```
 
-Fastest: tap the **(i)** on the Daily hero image on `/`. Otherwise open `/timeline` and tap a
-placed card, or play a game from the Custom tab and tap a card once it is on the timeline; the
-(i) is in the top right of the card's image.
+Fastest: tap the **(i)** watermarked into the Daily hero image on `/`. Otherwise open `/timeline`
+and tap a placed card, or play a game from the Custom tab and tap a card once it is on the
+timeline; the (i) is beside the card's title.
 
 Driving it with Playwright: [docs/driving-the-app-with-playwright.md](docs/driving-the-app-with-playwright.md).
 Two gotchas that cost a cycle each — reach a timeline card by its **title**
@@ -56,10 +58,12 @@ behind the backdrop.
   card is still in hand, and this is the reason the long-form prose may state years freely where
   `description` may not. Pinned by `src/components/GamePopup.test.tsx`. This is the one that
   actually matters.
-- **The card must not change size or position when the text swaps.** The box is pinned to the
-  height the description measured, and the prose scrolls inside it. The measuring ref goes on the
-  **description**, never on a wrapper holding both texts — a height taken from the prose grows the
-  card on every open until it runs off the screen. Pinned by
+- **The card must not change size or position when the text swaps**, nor after the prose is
+  scrolled to the end. The scroll region is pinned to the image box plus the height the
+  description measured. The measuring ref goes on the **description**, never on the scroll region
+  — the description unmounts while the prose is up, which is what keeps a height from ever being
+  taken off the prose; the region survives the swap and would be measured while pinned. A height
+  taken off the prose grows the card on every open until it runs off the screen. Pinned by
   `src/hooks/usePinnedFaceHeight.test.ts`. A surface opening straight on the prose
   (`openExpanded`) still renders the description for one commit so there is a height to pin to;
   that is why `GamePopup` resets in a **layout** effect.
@@ -74,28 +78,29 @@ behind the backdrop.
 
 ## Open UI items — the worklist
 
-1. **Reading room.** The box is as tall as the short description, so the prose scrolls through a
-   1-4 line window: measured 70-115px of viewport against a 317-648px read, at 320/402/1440. This
-   is the shape that was asked for, judged against placeholder prose. If it proves too tight once
-   real prose exists, the fix is to shrink the image box on expand (384px → ~120px) and give the
-   freed height to the text — the card's total height, and therefore the invariant above, is
-   unaffected, and it is a change to `EventPopupContent` alone.
-2. **Reading measure.** The card is `max-w-[340px] sm:max-w-[400px]`. `Modal` has a `wide` size
-   this has never used. It buys ~60px at desktop width and nothing on a phone, so it is only worth
-   revisiting alongside item 1.
-3. **The Daily hero's image fallback.** When Cloudinary fails, `DailyDeckPreview` falls back to a
-   pale `bg-border/30` panel, and the frosted disc is washed out on it. Over real art it reads
-   cleanly, in both themes. Only worth chasing if the fallback turns out to be common.
+1. **Reading measure.** The card is `max-w-[340px] sm:max-w-[400px]`. `Modal` has a `wide` size
+   this has never used. It buys ~60px at desktop width and nothing on a phone. Worth a look once
+   there is real prose to judge line length against, not before.
+2. **The Daily hero's image fallback.** When Cloudinary fails, `DailyDeckPreview` falls back to a
+   pale `bg-border/30` panel, and a white watermark on it is faint. Over real art it reads cleanly
+   in both themes. Only worth chasing if the fallback turns out to be common.
 
-Closed this session: the tombstone read (looked at, correct, now covered by a test); the
-scroll affordance (a `mask-image` fade, `.fade-scroll-y`); dark mode (re-checked at 402px); the
-desktop D5 overlap (unchanged from before the feature, since the card no longer grows).
+Closed: the tombstone read (looked at, correct, covered by a test); the scroll affordance (a
+`mask-image` fade, `.fade-scroll-y`); dark mode; the desktop D5 overlap (unchanged from before the
+feature, since the card no longer grows); and the reading window, which the whole-region scroll
+took from 70-115px to 454-499px.
+
+One thing seen once and not reproduced: a full-page Playwright screenshot in dark mode caught
+white bands above and below the card image. Two controlled re-runs are clean and a DOM probe puts
+the `<img>` at exactly 384px, `top: 0`, `object-cover`, so it is a capture artifact rather than a
+layout fault. Worth a second look if it is ever seen on a real device.
 
 ## Numbers to check against
 
-The card measured **340x606** at 402px, **272x651** at 320px and **400x583** at 1440px, identical
-in both states across swap, scroll to the end, and swap back. The scroll window inside it was
-70-115px. 5,460 events, all carrying placeholder. Full suite is **764 tests across 65 suites**.
+The card measured **340x606** at 402px, **272x651** at 320px and **400x606** at 1440px, identical
+across the swap, the scroll to the end, and the swap back. The scroll region inside it is
+**454-499px** holding 761-1183px of placeholder prose. 5,460 events, all carrying placeholder.
+Full suite is **765 tests across 65 suites**.
 
 ## Kick-off prompt for the next session
 

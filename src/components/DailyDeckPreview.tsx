@@ -1,7 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
-import EventInfoButton from './EventInfoButton';
+import { ImageInfoWatermark } from './EventInfoButton';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
 interface DailyDeckPreviewProps {
@@ -63,7 +63,7 @@ const DailyDeckPreview: React.FC<DailyDeckPreviewProps> = ({
         {/* This card is the deck's starting event, which the game places face-up with its year
             on turn 1 — so the long-form read gives nothing away that Play would not. */}
         {event?.has_detail && onInfoClick && (
-          <EventInfoButton onClick={onInfoClick} className="absolute top-2 right-2 z-10" />
+          <ImageInfoWatermark onClick={onInfoClick} className="absolute top-1 right-1 z-10" />
         )}
       </div>
 
