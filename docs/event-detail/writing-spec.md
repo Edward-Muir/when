@@ -269,15 +269,23 @@ A future session will otherwise "improve" the chunk by adding it, on the reasona
 grounds that a writer could use a starting link. Do not. A search finds the right article; the
 field hands over a wrong one with the authority of being in the data.
 
-### American spelling
+### British spelling
 
-The catalogue is American English and not by a little: across the 5,460 existing descriptions,
-`-ize` beats `-ise` 429 to 167, `-or` beats `-our` 96 to 15, `meter` beats `metre` 32 to 4, `center`
-beats `centre` 71 to 7, and `defense` beats `defence` 19 to nil. Write `meters`, `color`, `armor`,
-`organized`, `center`, `defense`.
+Write British English: `metres`, `colour`, `armour`, `organised`, `centre`, `defence`,
+`recognise`, `travelled`.
 
-This is recorded because it was got wrong: the first ten entries were written in British spelling
-and had to be redone. Nothing enforces it, so it is the easiest thing in this document to drift on.
+**This differs from the rest of the catalogue on purpose.** The 5,460 existing `description`
+strings are decisively American: `-ize` beats `-ise` 429 to 167, `-or` beats `-our` 96 to 15,
+`meter` beats `metre` 32 to 4, and `defense` beats `defence` 19 to nil. Those are not being
+rewritten, so the two bodies of text will not match.
+
+That is a maintainer decision, not an oversight, and it costs little: the prose _replaces_ the
+description rather than sitting beside it, so a player never sees both conventions at once. Do not
+"fix" the detail prose to match the descriptions, and do not start converting the descriptions
+either.
+
+Nothing enforces this, which makes it the easiest rule in this document to drift on, and the pull
+is towards American because that is what the surrounding data looks like.
 
 ## Rule 7: the game's own bans
 
