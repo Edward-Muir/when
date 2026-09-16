@@ -212,6 +212,13 @@ reliable: `battle-megiddo` is the 1457 BCE battle and links `Battle_of_Megiddo_(
 A search finds the right article. The field hands over a wrong one with the authority of being in
 the data. Do not add it to the chunk.
 
+### American spelling
+
+The catalogue is American English: `-ize` over `-ise`, `-or` over `-our`, `meter`, `center`,
+`defense`, `armor`, `color`. Measured across the 5,460 existing descriptions, where `-ize` leads
+429 to 167 and `defense` leads 19 to nil. Nothing enforces this, and the first ten entries were
+written in British spelling and had to be redone.
+
 ## Rule 7 and 8: the hard bans
 
 All enforced in `scripts/events/detail-spec.js`, so a batch cannot land carrying them.
@@ -308,3 +315,4 @@ specifically: are the hooks all the same kind, and is every entry pressed agains
     what it was carrying into the second, or drop it
 12. **Editing a shard directly** instead of a map file, or setting `has_detail` by hand
 13. **Cutting the attribution to fit the band** — drop a paragraph instead
+14. **British spelling** — the catalogue is American English (`meters`, `color`, `organized`)

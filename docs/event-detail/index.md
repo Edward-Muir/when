@@ -203,10 +203,20 @@ against all 5,460 existing descriptions before adoption and carries its count in
 **The prose is researched, not recalled, and that was a correction.** The first pass of the spec
 told writers to "write only what you would stake without a link", which is a rule against
 fabricating rather than a rule for verifying: it tells a model to trust its own confidence. A
-spot-check of the first ten entries, all written that way, found a definite factual error in one
-(Krakatoa: four explosions where there were eleven, two thirds of the island where it was over 70%)
-and untraceable claims in most (Broughton's amphitheatre placed on the wrong street). All of them
-read convincingly, which is the point.
+spot-check of the first ten entries, all written that way, found a real factual error:
+`first-boxing-rules-broughton` put Broughton's amphitheatre on Tottenham Court Road, where it was
+on Oxford Road. Tottenham Court was his separate teaching academy, so the entry had confidently
+merged two venues, and it read perfectly.
+
+The spot-check is also worth recording as a warning about spot-checks. Two other "errors" it turned
+up were not errors. Krakatoa's four explosions on 27 August is the standard count, and the single
+article consulted was the outlier. The transistor entry's Chicago hotel and royalty-free
+hearing-aid licence are both attested, and a later research pass found sources for both after an
+earlier one had cut them for finding none. **Checking against one source that happens to be open
+is itself a way to be confidently wrong**, in both directions: it invents errors as well as
+catching them. Only Broughton's street survived scrutiny as a genuine mistake, alongside a milder
+imprecision in Krakatoa ("hardly any" of the dead killed by the eruption, where pyroclastic flows
+killed about a tenth of them).
 
 Rule 6 now reads draft, then check, then cut: one or two searches per event, and a claim the first
 few results do not support is dropped rather than hunted down or softened. **Nothing is stored** -

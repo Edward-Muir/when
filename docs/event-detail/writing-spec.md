@@ -269,6 +269,16 @@ A future session will otherwise "improve" the chunk by adding it, on the reasona
 grounds that a writer could use a starting link. Do not. A search finds the right article; the
 field hands over a wrong one with the authority of being in the data.
 
+### American spelling
+
+The catalogue is American English and not by a little: across the 5,460 existing descriptions,
+`-ize` beats `-ise` 429 to 167, `-or` beats `-our` 96 to 15, `meter` beats `metre` 32 to 4, `center`
+beats `centre` 71 to 7, and `defense` beats `defence` 19 to nil. Write `meters`, `color`, `armor`,
+`organized`, `center`, `defense`.
+
+This is recorded because it was got wrong: the first ten entries were written in British spelling
+and had to be redone. Nothing enforces it, so it is the easiest thing in this document to drift on.
+
 ## Rule 7: the game's own bans
 
 | Banned                                    | Why                                         |
