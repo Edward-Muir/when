@@ -185,8 +185,11 @@ Phase 1 fixed the shape; Phase 2 fixes the voice. Deliverables:
   the buttons it has prose for and no others — merging mid-run would be safe. The decision
   (2026-09-12) is nonetheless to **hold everything back until the corpus is complete**: no PR, and
   nothing reaches production until every event is written. Phase 2 and every Phase 3 batch
-  therefore land on the one long-lived branch, which needs `origin/main` merged into it
-  periodically rather than rebased.
+  therefore land on the one long-lived branch, which needs syncing with `origin/main`
+  periodically rather than being left to drift. Rebase or merge both work — it is a solo,
+  unmerged branch with no PR against it, so rewriting its history costs nothing (rebased onto
+  v1.22.0 on 2026-09-16, five commits, no conflicts). The caveat that does the real work is
+  about the data, not the strategy: see Guardrail 1.
 - `npm run find-duplicates` scores on `description`, which this never touches, so no baseline
   dance is needed (unlike the 2026-08 date-clue pass).
 

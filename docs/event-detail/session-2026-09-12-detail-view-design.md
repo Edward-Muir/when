@@ -17,8 +17,10 @@ session real time to find out.
 
 **No PR, and nothing merges to production until the whole corpus is written** — decided
 2026-09-12. Phase 2 and every Phase 3 batch continue on this same branch, so it is long-lived:
-**merge `origin/main` into it periodically** rather than letting it drift, and never rebase it
-(the merge commit keeps any other checkout valid).
+**sync it with `origin/main` periodically** rather than letting it drift. Rebase or merge both
+work here: it is solo and unmerged with no PR against it, so nobody's checkout is invalidated by
+rewriting its history — force-push with `--force-with-lease`. Rebased onto v1.22.0 on 2026-09-16:
+five commits, zero conflicts, because main had touched none of the branch's files.
 
 **The whole corpus is committed as placeholder**, so the branch's preview deploy is testable:
 every event carries `has_detail` and a flagged `placeholder: true` entry in
@@ -31,8 +33,11 @@ What keeps it safe is Guardrail 1 in the digest, and the piece to remember day t
 **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains, and that
 is the merge gate.** It is not part of `npm test`, so the suite stays green.
 
-**When merging `origin/main` into this branch**, if main has touched any event JSON, do
-`--revert` → merge → regenerate rather than resolving 5,460 `has_detail` lines by hand.
+**Before syncing with `origin/main`, check whether it has touched any event JSON**
+(`git diff --name-only <fork>..origin/main | grep public/events/`). If it has, do
+`--revert` → sync → regenerate rather than resolving 5,460 `has_detail` lines by hand. This
+applies to a rebase at least as much as a merge, since a rebase replays the placeholder commit.
+It did not bite on the 2026-09-16 rebase because main had changed no event data at all.
 
 **Next session starts at Phase 2**, the writing spec.
 
