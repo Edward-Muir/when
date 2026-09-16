@@ -55,6 +55,20 @@ export interface AnimationTuning {
     /** Error pulse CSS animation duration (s) — via --anim-error-pulse-dur. */
     errorPulseDurS: number;
   };
+  tick: {
+    /**
+     * Dot → dash morph: the marker's shape becoming the tick's. Keep it at or past critical
+     * damping — `damping >= 2 * sqrt(stiffness * mass)`. The dash's right edge _is_ the board
+     * column's seam (`tick.right === rail.left`, see index.css), so an under-damped morph
+     * overshoots the tick off the rail and drops it back: a hairline of daylight that opens and
+     * closes at the join. The growth is the juice here; the arrival is not meant to bounce.
+     */
+    morphSpring: SpringParams;
+    /** How long the landed tick takes to give up the marker's glow (s). */
+    glowDecayS: number;
+    /** A wrong drop snuffs the marker where it stands over this long (s). */
+    snuffS: number;
+  };
   wake: {
     /** Bump amplitude as the traveling card passes each row (px). */
     amplitudePx: number;
@@ -98,6 +112,12 @@ export const DEFAULT_TUNING: AnimationTuning = {
     restSpring: { stiffness: 400, damping: 30 },
     rejectionSpring: { stiffness: 300, damping: 20 },
     errorPulseDurS: 0.6,
+  },
+  tick: {
+    // damping 38 ≥ 2·√(420 · 0.8) = 36.7 — critically damped, so the dash cannot lift off the rail.
+    morphSpring: { stiffness: 420, damping: 38, mass: 0.8 },
+    glowDecayS: 0.4,
+    snuffS: 0.35,
   },
   wake: {
     amplitudePx: 5,
@@ -181,6 +201,12 @@ export function scaleTuning(t: AnimationTuning, speed: number): AnimationTuning 
       restSpring: scaleSpring(t.miss.restSpring, speed),
       rejectionSpring: scaleSpring(t.miss.rejectionSpring, speed),
       errorPulseDurS: t.miss.errorPulseDurS / speed,
+    },
+    tick: {
+      ...t.tick,
+      morphSpring: scaleSpring(t.tick.morphSpring, speed),
+      glowDecayS: t.tick.glowDecayS / speed,
+      snuffS: t.tick.snuffS / speed,
     },
     wake: {
       ...t.wake,

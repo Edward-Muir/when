@@ -7,6 +7,8 @@ import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
 import { getImageUrl } from '../../utils/cloudinaryImage';
 import { AnimationTuning, useAnimationTuning } from './animationTuning';
+import TimelineTick from './TimelineTick';
+import type { Point } from './tickLanding';
 
 // One scheduled wave bump for this row: Timeline computes when (delay) and how hard
 // (amplitudePx); trigger is a timestamp identifying the wave instance.
@@ -38,6 +40,14 @@ interface TimelineEventProps {
   // the tombstone inserting) is layout-animated with this delay (s) so cards ripple out of
   // the mover's way in passage order. Null/undefined = no layout animation (rows snap).
   layoutShiftDelay?: number | null;
+  // Where the drag marker is painted, live. Threaded through to the tick.
+  originRef?: React.RefObject<Point | null>;
+  // Set only on the row a correct placement just created: the tick grows out of the marker
+  // instead of simply being there.
+  landing?: boolean;
+  // Draw no tick at all. Set on the attempted slot while a wrong drop flashes there — the
+  // marker is snuffing two pixels to the right and is standing in for it.
+  hideTick?: boolean;
 }
 
 // Extracted image section to reduce component complexity
@@ -228,6 +238,9 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
   priority = false,
   layoutId,
   layoutShiftDelay = null,
+  originRef,
+  landing = false,
+  hideTick = false,
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
@@ -266,7 +279,7 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             }
           : undefined
       }
-      className={`w-full py-1 ${isNew ? 'animate-entrance' : ''} ${isMovingPhase ? 'transition-all duration-400' : ''}`}
+      className={`w-full py-1 ${isMovingPhase ? 'transition-all duration-400' : ''}`}
     >
       {/* Ripple bump lives on an inner wrapper: animating `y` on the outer row would
           overwrite the layout projection's transform and snap an in-flight wake shift */}
@@ -281,11 +294,15 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
           >
             {formatYear(event.year)}
           </motion.span>
-          <div className="w-3 h-1 bg-accent shrink-0" />
+          {!hideTick && <TimelineTick originRef={originRef} landing={landing} glow={landing} />}
         </div>
 
-        {/* Card area - landscape card */}
-        <div className="flex-1 pl-3">
+        {/* Card area - landscape card. The entrance lives on the CARD, not on the row: a
+            row-level opacity fade composites onto the gutter, and the tick has to be at full
+            strength from its first frame to take the drag marker's place (see TimelineTick).
+            Each part of the row now arrives in its own way — the card slides up, the year pops,
+            the tick grows out of the marker. */}
+        <div className={`flex-1 pl-3 ${isNew ? 'animate-entrance' : ''}`}>
           <motion.button
             onClick={onTap}
             layoutId={layoutId}

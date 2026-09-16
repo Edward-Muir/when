@@ -5,12 +5,14 @@ import { HistoricalEvent, PlacementResult, AnimationPhase, FailedPlacement } fro
 import TimelineEvent from './TimelineEvent';
 import TombstoneRow from './TombstoneRow';
 import TimelineRail, { RailExtension } from './TimelineRail';
-import TimelineMarker from './TimelineMarker';
+import TimelineMarker, { MarkerPhase } from './TimelineMarker';
 import { GHOST_ROW_ATTR, useInsertionMarker } from './useInsertionMarker';
 import { useRailGrowth } from './useRailGrowth';
 import Card from '../Card';
 import { getStreakFeedback } from '../../utils/streakFeedback';
 import { buildTimelineRows } from '../../utils/timelineRows';
+import TimelineTick from './TimelineTick';
+import type { Point } from './tickLanding';
 import { useTimelineWaves } from './useTimelineWaves';
 import { useWakeDelays } from './useWakeDelays';
 import {
@@ -82,7 +84,10 @@ const GhostCard: React.FC<{ event: HistoricalEvent }> = ({ event }) => (
     {/* Year column (fixed 96px width) */}
     <div className="w-24 flex items-center justify-end shrink-0">
       <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">?</span>
-      <div className="w-3 h-1 bg-accent/50 shrink-0" />
+      {/* No dash at all, only its footprint. The gap the drag is previewing is where the lit
+          marker is sitting, and the marker's whole point is that it BECOMES the dash when the
+          card lands — a dash already drawn here leaves the landing with nothing to reveal. */}
+      <TimelineTick variant="none" />
     </div>
     {/* Card area */}
     <div className="flex-1 pl-3">
@@ -162,6 +167,23 @@ function getMissReveal(
 ): PlacementResult | null {
   if (lastPlacementResult === null || lastPlacementResult.success) return null;
   return animationPhase !== null ? lastPlacementResult : null;
+}
+
+/**
+ * What the drag marker should be doing. A drag keeps it following the pointer; a wrong drop
+ * makes it snuff where it stands for the length of the red flash, then hand its travel over to
+ * the tombstone's dash; a correct drop retires it on the spot, because the new row's dash has
+ * already taken its place this frame. Anything else — a drag abandoned off the board — fades.
+ */
+function getMarkerPhase(
+  dragging: boolean,
+  lastPlacementResult: PlacementResult | null,
+  animationPhase: AnimationPhase
+): MarkerPhase {
+  if (dragging) return 'drag';
+  if (lastPlacementResult === null || animationPhase === null) return 'idle';
+  if (lastPlacementResult.success) return 'gone';
+  return animationPhase === 'flash' ? 'snuff' : 'gone';
 }
 
 /** What this row's card is doing in the current placement animation, if anything. */
@@ -316,9 +338,12 @@ const Timeline: React.FC<TimelineProps> = ({
   const ghostHostRowIndex =
     ghostGap === null ? -1 : rows.findIndex((r) => r.kind === 'tombstone' && r.gap === ghostGap);
   const railExtension = getRailExtension(ghostGap, ghostHostRowIndex, events.length);
-  // One paper tone per rendered row, in render order, for the gradient behind the board. The
   const marker = useInsertionMarker(scrollRef, contentRef, ghostGap);
   const railGrow = useRailGrowth(isDragging, railExtension);
+  const markerPhase = getMarkerPhase(marker.visible, lastPlacementResult, animationPhase);
+  // Where the marker was last painted, written per frame and read once, by the dash a placement
+  // lands as. A ref rather than state: it changes every frame and must not re-render the board.
+  const markerOrigin = useRef<Point | null>(null);
 
   // Name of the failed card whose reveal FLIP is currently running (shared layoutId window)
   const revealingFailedName = missReveal?.event.name ?? null;
@@ -363,6 +388,8 @@ const Timeline: React.FC<TimelineProps> = ({
           // smoothly layout-animate vertical moves while real cards snap
           revealing={isRevealTarget}
           travelMs={isRevealTarget ? missTravelMs : undefined}
+          originRef={markerOrigin}
+          landing={isRevealTarget}
           layoutShiftDelay={
             isRevealTarget
               ? null
@@ -409,6 +436,11 @@ const Timeline: React.FC<TimelineProps> = ({
             animationPhase={anim.isAnimating ? animationPhase : null}
             // The rejected card morphs into its tombstone via a shared layoutId
             layoutId={anim.failedReveal && !shouldReduceMotion ? `placed-${event.name}` : undefined}
+            // The dash grows out of the marker on a correct placement; on a wrong one this row
+            // is the attempted slot, where the marker is still snuffing, so it draws none.
+            originRef={markerOrigin}
+            landing={anim.isAnimating && anim.success === true}
+            hideTick={anim.failedReveal}
             ripple={successWave.get(idx) ?? missWaveBumps.get(event.name) ?? null}
             glowIntensity={anim.isAnimating ? streakConfig.glowIntensity : undefined}
             layoutShiftDelay={wakeDelays.byName.get(event.name) ?? null}
@@ -497,7 +529,10 @@ const Timeline: React.FC<TimelineProps> = ({
         x={marker.x}
         y={marker.y}
         clip={marker.clip}
-        visible={marker.visible}
+        phase={markerPhase}
+        onPosition={(p) => {
+          markerOrigin.current = p;
+        }}
         timeScale={railTimeScale}
       />
     </div>

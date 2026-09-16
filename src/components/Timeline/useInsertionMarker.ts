@@ -14,6 +14,10 @@ import { RefObject, useLayoutEffect, useState } from 'react';
  * to clear the drag overlay (see TimelineMarker). That is safe precisely because it only exists
  * during a drag, and the board freezes its own scrolling for the duration — so the viewport and
  * the content cannot drift apart while the marker is on screen.
+ *
+ * This is the marker's TARGET, not where it is painted — it trails on a soft spring and is
+ * routinely still in flight. Anything that needs the dot's actual position (the tick it turns
+ * into when a card lands) reads it off the marker itself; see TimelineMarker's `onPosition`.
  */
 
 /** Marks the row the ghost card currently occupies. */
@@ -66,9 +70,11 @@ export function useInsertionMarker(
       // stays correct on its own if the board column invariant ever moves (see index.css).
       const rail = row.querySelector<HTMLElement>('.tl-rail')?.getBoundingClientRect();
       const board = scrollRef.current?.getBoundingClientRect();
+      const x = rail ? rail.left + rail.width / 2 : rowRect.left;
+      const y = rowRect.top + rowRect.height / 2;
       const next = {
-        x: rail ? rail.left + rail.width / 2 : rowRect.left,
-        y: rowRect.top + rowRect.height / 2,
+        x,
+        y,
         clip: board
           ? { left: board.left, top: board.top, width: board.width, height: board.height }
           : NO_CLIP,

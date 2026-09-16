@@ -6,6 +6,8 @@ import { getImageUrl } from '../../utils/cloudinaryImage';
 import CategoryIcon from '../CategoryIcon';
 import Card from '../Card';
 import { AnimationTuning, SpringParams, TRAVEL_EASE, useAnimationTuning } from './animationTuning';
+import TimelineTick from './TimelineTick';
+import type { Point } from './tickLanding';
 
 export { TRAVEL_EASE };
 
@@ -22,6 +24,13 @@ interface TombstoneRowProps {
   travelMs?: number;
   /** Miss-reveal wake: layout-animate this row's displacement with this delay (s). */
   layoutShiftDelay?: number | null;
+  /** Where the drag marker is painted, live. Threaded through to the tick. */
+  originRef?: React.RefObject<Point | null>;
+  /**
+   * Set only on the reveal target: the snuffed dot rides the card's travel tween over here and
+   * grows into this row's dash, so the wrong guess ends by pointing at where the card belonged.
+   */
+  landing?: boolean;
 }
 
 // While revealing, the whole transition is the distance-scaled travel tween — the shared
@@ -64,6 +73,8 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
   revealing = false,
   travelMs,
   layoutShiftDelay = null,
+  originRef,
+  landing = false,
 }) => {
   const shouldReduceMotion = useReducedMotion();
   const tuning = useAnimationTuning();
@@ -91,14 +102,21 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
             <span className="text-text-muted/50 font-bold text-xs sm:text-sm font-mono pr-2">
               ?
             </span>
-            <div className="w-3 h-1 bg-accent/50 shrink-0" />
+            {/* The second place the drag's gap is drawn: no dash, same as the inserted ghost
+                row — the marker is the only mark at the gap. See TimelineTick. */}
+            <TimelineTick variant="none" />
           </>
         ) : (
           <>
             <span className="text-text-muted opacity-70 font-bold text-sm font-mono pr-2 text-right leading-tight">
               {formatYear(event.year)}
             </span>
-            <div className="w-3 h-1 bg-accent opacity-40 shrink-0" />
+            <TimelineTick
+              variant="muted"
+              originRef={originRef}
+              landing={landing}
+              travelMs={travelMs}
+            />
           </>
         )}
       </div>
