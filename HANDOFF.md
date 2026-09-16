@@ -6,7 +6,7 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 |            |                                                                      |
 | ---------- | -------------------------------------------------------------------- |
-| Branch     | `claude/event-detail-writing-spec-sq448j`                            |
+| Branch     | `claude/event-detail-phase-3-l2wq2w`                                 |
 | PR         | none, deliberately                                                   |
 | Production | nothing — see **The release option** below, which is a live decision |
 
@@ -14,7 +14,7 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 `docs/event-detail/writing-spec.md`, `.claude/skills/write-event-detail/SKILL.md`, a real length
 band enforced in `scripts/events/detail-spec.js`, and the corpus's **first ten written entries**.
 
-**Phase 3 is under way: 2,092 of 5,460 are written**, 38% of the corpus. See
+**Phase 3 is under way: 3,423 of 5,460 are written**, 63% of the corpus. See
 [Where Phase 3 got to](#where-phase-3-got-to) before picking it up — the operational lessons there
 are worth more than the plan they replaced.
 
@@ -32,7 +32,7 @@ same popup; its event is the deck's starting card, placed face-up with its year 
 read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`,
 sharded to mirror the 19 manifest files; it is never inlined into the event JSON.
 
-**2,092 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
+**3,423 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
 to their short description, which is the designed behaviour and not a bug. The branch's preview
 therefore shows no lorem to anyone.
 `detail-placeholder.js` can refill it if a future session wants the layout exercised at scale
@@ -91,7 +91,7 @@ Three things worth knowing here:
   600 KB array corrupt it — this repo has already paid for that lesson once.
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** It is
   deliberately not part of `npm test`, which would otherwise be red for the whole writing phase.
-  It now reads 2092/5460.
+  It now reads 3423/5460.
 - **The prose is researched, not recalled.** Draft, then check with one or two searches, then cut
   what the results do not support. This replaced a rule that said "write only what you would stake
   without a link", which produced a factual error in one of the first ten entries and untraceable
@@ -124,23 +124,78 @@ Three things worth knowing here:
 
 Complete shards: `people` 298, `candidates` 53, `clothing` 54, `migration` 54, `communication` 56,
 `law` 67, `food` 69, `money` 71, `earth-life` 72, `medicine` 75, `games-sport` 79, `disasters` 209,
-`sports` 324, `themes` 353. Partial: `infrastructure` 253/408. Untouched: `conflict` 555,
-`cultural` 625, `diplomatic` 998, `exploration` 1,040.
+`sports` 324, `themes` 353, **`infrastructure` 408, `conflict` 555, `cultural` 625**.
+Untouched: **`diplomatic` 998, `exploration` 1,040** — 2,037 to go.
 
 A partial shard is fine. `--chunks` regenerates worklists containing only unwritten events, so
 resuming needs no special handling.
+
+## The search budget is the binding constraint — read this first
+
+`WebSearch` is capped per session at 200 calls
+(`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`). It is **not** a rolling window: a new session
+starts fresh at 200. A 20-event unit costs 20 to 40 searches, so **one session runs about six to
+eight units before every writer silently loses its ability to check anything.**
+
+This is the highest-stakes operational fact on the branch, because the failure is invisible from
+the output. Writers that cannot search keep producing confident, well-formed, spec-passing prose.
+Measured this session:
+
+| Entries | Checked as written | Error rate found on re-check |
+| ------- | ------------------ | ---------------------------- |
+| ~540    | yes                | near zero                    |
+| ~82     | no                 | **16%**                      |
+
+The 82 unchecked entries produced 13 corrections, including two clean fabrications (Ulugh Beg
+teaching classes at the Registan madrasa; elephants hauling stone for Bibi Khanym, attributed to
+Clavijo, whose account describes no such thing), one inverted causal claim (Gondar's architecture
+credited to Jesuit influence, when Fasilides expelled the Jesuits and burned their books), and
+opening words asserted for MTV that it never broadcast.
+
+**What to do about it:**
+
+- **Budget the session.** At 20 events per unit, plan for roughly 120 to 160 events of
+  search-checked writing per session, then stop. Or split units smaller (14 or so) and get more
+  units from the same budget.
+- **Make writers report it.** Every prompt should ask which entries they could not check. The good
+  ones volunteer this; that report is what makes recovery possible.
+- **`WebFetch` is not capped** and is the fallback. Writers can verify by fetching
+  `https://en.wikipedia.org/wiki/<Article_Title>` directly and asking a specific question in the
+  prompt. It is slower and needs the article title guessed, but it works, and all four recovery
+  passes this session ran on it after the search budget was gone.
+- **Re-check, do not rewrite.** A verification pass over unchecked entries is much cheaper than
+  writing them again, and it is what found all 13 errors.
 
 **What actually drives quality, measured across fourteen shards:**
 
 - **State the length band in the batch prompt, every time.** Not in the agent definition, which
   does not reach the writers: 21% failures with no instruction, 54% with it only in the definition,
   0-9% with it in the prompt. This is the single highest-leverage line.
+- **Say that the two length bounds interact, and give a target well under the ceiling.** "Each
+  paragraph 220-450, total 480-830" reads to a writer as two independent rules, and 450 plus 450 is 900. One `conflict` writer produced 26 failures in a single 120-entry round on exactly that
+  reading, having judged "roughly 350 to 450 each" to be safe. Telling writers to **aim at about
+  700 total, roughly 350 a paragraph** rather than at the ceiling dropped the rate back to 5-8%,
+  because an entry at 700 survives a miscount and one at 820 does not.
+- **Warn that a raw newline makes the file silently absent from the merge**, not rejected. Writers
+  told this catch their own; `cultural` had four self-caught newlines and one that reached the
+  verify step.
 - **Name the shard's own trap in the prompt.** One line, and it works. Telling `sports` writers not
   to open every entry with "X won Y in YEAR" took the hook monoculture from 80% on `people` to 3%.
   Traps found so far: myth-prone origin stories (`sports`, `games-sport`), the register carve-out
   for mass casualties (`disasters`), thin-record events where a plausible mechanism is pure
   invention (`themes`), superlatives that need an end date and a successor (`infrastructure`),
-  contested deep-time dates (`earth-life`), priority disputes (`medicine`).
+  contested deep-time dates (`earth-life`), priority disputes (`medicine`), the atrocity carve-out
+  plus attributed casualty figures (`conflict`), appraising the work instead of reporting it
+  (`cultural`).
+- **Name the trap without inviting prose about the data.** Telling `infrastructure` writers to treat
+  a round year as approximate produced an entry explaining that "the catalogue's year is better read
+  as a placeholder" — true, and a fourth-wall break at a reader who only ever sees a card. Every
+  prompt since carries: never refer to the game, the card, the catalogue, the data or the year field.
+- **Repair agents have no shell and count characters by hand, badly.** One returned 833 as though it
+  were inside 830; another replaced a restatement with a 936-character entry. Give them a target of
+  ~750 rather than "under 830" so a miscount still lands inside, and state the exact overage per
+  entry. For a handful of small trims it is faster and more reliable to do them directly with an
+  exact count than to spend a whole round.
 - **Hedging costs characters.** When a shard needs it, say "keep the hedge and cut a fact to pay
   for it", or the band pushes the hedge out. `earth-life` cost a repair round learning this.
 - **Write one file per event**, `e-<slug>.json`, and demand single-line JSON. A worker restart
@@ -150,13 +205,22 @@ resuming needs no special handling.
 - **Verify against the worklist, not the agent's report.** Self-reported counts have been wrong in
   both directions.
 - **Spec collisions to expect** (work around them, do not loosen the ban): `served as` in
-  biography, `stood as` for records, `load-bearing` in architecture, `robust` in _Paranthropus
-  robustus_, `Fosters` for Norman Foster's firm.
+  biography, `stood as` for records, **`functioned as`, which fails the same copula pattern**,
+  `load-bearing` in architecture, `robust` in _Paranthropus robustus_, `Fosters` for Norman
+  Foster's firm, **the second-person ban catching song and film titles that contain the word "you"**
+  (When You Wish Upon a Star, Love to Love You Baby, MTV's on-air line), and **the card-art ban
+  catching `depicted`** used about a painting rather than about the card.
+- **A work whose full title sits in the event's own `description` will trip the restatement check
+  if the prose names it verbatim.** Shorten or rephrase the title (`al-jazari-mechanical-art`,
+  `lucan-pharsalia`, `rio-earth-summit` all failed this way, and the run is often not in the
+  opening sentence, so read the whole paragraph against the description).
 
-**Catalogue errors found while writing, none fixed except the first two.** `year` was corrected for
-`crispr-human-therapy` (2020 to 2019) and `chickens-domesticated` (-6000 to -1500, the 2022 PNAS
-re-dating). Note that changing one year re-scores its neighbours through `difficultyScore` and
-moved a `deckBuilder` test bound; that test documents its own re-baselining convention.
+**Catalogue errors found while writing, none fixed except the first three.** `year` was corrected
+for `crispr-human-therapy` (2020 to 2019), `chickens-domesticated` (-6000 to -1500, the 2022 PNAS
+re-dating) and `battle-of-mu-ta` (628 to 629; the battle is 1 Jumada al-Awwal 8 AH, September 629,
+and 628 has no support). Note that changing one year re-scores its neighbours through
+`difficultyScore` and moved a `deckBuilder` test bound on the first two; that test documents its own
+re-baselining convention. The Mu'ta change moved nothing — the full suite stayed at 759 passing.
 
 Writers flagged roughly three false positives per real error, so **verify every flag before
 touching a year**. Left for the maintainer, all player-visible: eight `medicine` descriptions
@@ -167,6 +231,32 @@ weeks), `first-thomas-cup-1949` says Malaysia when Malaysia did not exist until 
 `lahaina-fire` says 97 dead against the DNA-corrected 102, `australia-bushfires` says one billion
 animals against a later estimate near three billion, `code-of-lipit-ishtar` calls a Sumerian code
 Akkadian, and `gold-rush-currency-clipper` is a slug that has nothing to do with its own content.
+
+**Added by the infrastructure, conflict and cultural shards**, all player-visible and all left
+alone:
+
+- `ottoman-siege-galata` contradicts itself on one card: `friendly_name` reads "Ottoman Siege of
+  Galata" while its own `description` correctly describes Murad II besieging **Constantinople** in 1422. The description is right; the name is wrong.
+- `battle-of-wei-qiao` names and describes as a battle what the record has as the **Mayi ambush** of
+  133 BCE, a deception called off before any fighting.
+- `university-paris-founding` says the university "received formal papal recognition" in 1200. The
+  1200 event was **Philip II Augustus's royal charter**; papal recognition came in 1215 with Robert
+  de Courcon's statutes.
+- `songhai-scholars` (dated 1510) names **Ahmad Baba**, who lived 1556 to 1627.
+
+Slug-only mislabels, not player-visible, the `gold-rush-currency-clipper` class:
+`tuvalu-mausoleum-built` is the Gur-e-Amir in Samarkand; `songhai-djinguereber-mosque` is a
+Mali-empire event under Mansa Musa; `siege-of-damascus-636` is correctly stored at 634;
+`wang-xifeng-calligraphy` is Wang Xizhi. All four have correct `friendly_name` and `description`.
+
+**`god-emperor-golden-throne` is Warhammer 40,000 lore dated to year 30000**, `very-hard`, sitting
+in an otherwise historical catalogue. Almost certainly a deliberate easter egg, so the record was
+left alone; its prose reports the fiction plainly rather than carrying a disclaimer about the data.
+
+Category oddities noticed and not re-tagged, since the taxonomy came out of the June 2026
+re-clustering: `gunpowder-europe` in `agriculture`; `dresden-bombing` and `east-german-uprising` in
+`revolution`; `zoroaster-teaches`, `buddha-enlightenment` and `black-lives-matter-founded` in
+`commerce`.
 
 ## Phase 3 — the original plan
 
@@ -232,51 +322,74 @@ at 320px. The image is _inside_ the scroll region, so even a 480-character entry
 comes to about 665px against a 476px region — it always overflows, which is what lets the region be
 a constant height without leaving dead space.
 
-5,460 events, 2,092 written, 3,368 to go. Full suite is **759 tests across 64 suites**.
+5,460 events, 3,423 written, 2,037 to go. Full suite is **759 tests across 64 suites**.
 
 Corpus numbers worth not re-deriving (catalogue size, gzip ratios, shard sizes, where Phase 3
 should start) are in the session notes, not here.
 
 ## Kick-off prompt for the next session
 
-> Continue **Phase 3** of the event-detail work on the `when` repo. 2,092 of 5,460 entries are
-> written; carry on through the remaining 3,368.
+> Continue **Phase 3** of the event-detail work on the `when` repo. 3,423 of 5,460 entries are
+> written; carry on through the remaining 2,037.
 >
-> You are on `claude/event-detail-writing-spec-sq448j` — **not** main, the feature only exists on
-> that branch. Commit and push each shard as it completes. Do not open a PR.
+> You are on `claude/event-detail-phase-3-l2wq2w` — **not** main, the feature only exists on this
+> branch line. Commit and push each shard as it completes. Do not open a PR.
 >
 > Run `npm ci` first: without it `npm run typecheck` resolves a global `tsc` and prints something
-> that looks exactly like a pass. Then read `HANDOFF.md`, especially **Where Phase 3 got to**,
-> which carries the operational lessons from fourteen shards and is worth more than any plan.
+> that looks exactly like a pass. Then read `HANDOFF.md`, especially **The search budget is the
+> binding constraint** and **Where Phase 3 got to**, which carry the operational lessons from
+> seventeen shards and are worth more than any plan.
 >
 > **The spec and the UI are done and out of scope.** Never loosen a ban in
-> `scripts/events/detail-spec.js` to get an entry through; fix the prose. Five known collisions to
-> work around rather than relax: `served as` in biography, `stood as` for records, `load-bearing`
-> in architecture, `robust` in _Paranthropus robustus_, `Fosters` for Norman Foster's firm.
+> `scripts/events/detail-spec.js` to get an entry through; fix the prose. Known collisions to work
+> around rather than relax: `served as`, `stood as` and `functioned as` in biography and
+> institution writing, `load-bearing` in architecture, `robust` in _Paranthropus robustus_,
+> `Fosters` for Norman Foster's firm, the second-person ban catching song and film titles that
+> contain "you", and the card-art ban catching `depicted` used about a painting.
 >
-> Resume with `node scripts/events/detail-report.js --chunks` (delete the worklist directory
-> first, it does not clear itself). Finish `infrastructure` at 253/408, then `conflict` 555,
-> `cultural` 625, `diplomatic` 998, `exploration` 1,040. Split each shard into units of ~20 and run
-> 5 or 6 `event-detail-writer` sub-agents at a time.
+> Resume with `node scripts/events/detail-report.js --chunks` (delete the worklist directory first,
+> it does not clear itself). `infrastructure`, `conflict` and `cultural` are complete. What is left
+> is **`diplomatic` 998** and **`exploration` 1,040**. Split each shard into units of ~20 and run 5
+> or 6 `event-detail-writer` sub-agents at a time.
+>
+> **Budget the session around the search cap.** `WebSearch` is capped at 200 calls per session
+> (`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`), not a rolling window, and a 20-event unit costs 20
+> to 40. That is roughly six to eight units before every writer silently loses the ability to check
+> anything and starts producing confident, spec-passing, unverified prose. Measured last session:
+> entries checked as written came back near-zero on re-check; the ~82 written after the budget ran
+> out came back at **16%**, including two clean fabrications and one inverted causal claim. So:
+> plan for about 120 to 160 search-checked entries per session and stop, or use smaller units;
+> require every writer to report which entries it could not check; and recover with a verification
+> pass over those entries using **`WebFetch`, which is not capped** (fetch
+> `https://en.wikipedia.org/wiki/<Article_Title>` and ask a specific question). Re-checking is much
+> cheaper than rewriting.
 >
 > The batch prompt is what determines quality. Every prompt must carry:
 >
-> 1. **The length band**, stated explicitly: exactly 2 paragraphs, 220-450 chars each, 480-830
->    total, aim for ~700 not the ceiling. Measured: 21% failures with no instruction, 54% with it
->    only in the agent definition, 0-9% with it in the prompt. The agent definition does not reach
->    the writers.
+> 1. **The length band, and that its two bounds interact**: exactly 2 paragraphs, 220-450 chars
+>    each, 480-830 total — and say explicitly that 450 plus 450 is 900, so two legal paragraphs can
+>    still break the total. **Tell writers to aim at ~700, not the ceiling.** One writer produced 26
+>    failures in a single 120-entry round by reading "roughly 350-450 each" as safe. The agent
+>    definition does not reach the writers.
 > 2. **One file per event** at `/home/user/when/untracked_data/event-detail/e-<slug>.json`, written
 >    the moment each entry is finished, as a **single line** of JSON with no line breaks and no
->    internal double quotes. A worker restart once destroyed six agents' unwritten work.
-> 3. **That shard's own trap**, in one line. This is the anti-drift mechanism and it works: telling
->    `sports` writers not to open every entry with "X won Y in YEAR" took the hook monoculture from
->    80% to 3%. Read a few slugs first and name the trap yourself.
+>    internal double quotes. Say that a raw newline makes the file **silently absent from the merge
+>    rather than rejected**, so they should check what they wrote — writers told this catch their own.
+> 3. **That research is not optional**, with the precedent: a writer that skipped it asserted
+>    opening words for MTV that it never broadcast. Draft, then check, then cut what the results do
+>    not support.
+> 4. **That shard's own trap**, in one line, plus a bar on referring to the game, the card, the
+>    catalogue or the year field. Read a few slugs first and name the trap yourself. For
+>    `diplomatic`, expect treaty entries collapsing into "signed at X, did Y" and round-year dynasty
+>    and reign cards that invite an invented founding moment; for `exploration`, expect contested
+>    priority and inventor claims ("the first to…"), which is the shard's defining risk.
 >
 > Per shard: verify every worklist slug landed (agent self-reported counts have been wrong in both
 > directions), check parseability separately from the spec (an unparseable file is silently absent
-> from the merge, not rejected), repair failures with sub-agents in one round, then
-> `detail-apply.js`, `npm run typecheck`, `CI=true npm test -- --watchAll=false`,
-> `CI=true npm run build`, commit, push.
+> from the merge, not rejected), repair failures with sub-agents in one round — giving them the
+> exact overage per entry and a target of ~750 rather than "under 830", because they count by hand
+> and have got it wrong in both directions — then `detail-apply.js`, `npm run typecheck`,
+> `CI=true npm test -- --watchAll=false`, `CI=true npm run build`, commit, push.
 >
 > Writers will flag `year` and `description` errors in the catalogue. **Check every flag before
 > acting on it** — roughly three in four do not survive verification. Changing a `year` re-scores
