@@ -420,6 +420,14 @@ input,
    which stays clear so the timeline remains visible. --vignette-color is
    set inline per placement (error red / streak green or gold). */
 .vignette-overlay {
+  /* The element's RESTING state must be invisible. `vignettePulse` has no fill-mode, so the
+     instant it completes the element reverts to this rule — and with the default opacity of 1
+     that reversion is a full-strength flash of the whole vignette, brighter than the pulse it
+     just finished. Game.tsx unmounts it on a timeout matched to the animation's duration, so
+     whether you ever see that depends on winning a race by a few milliseconds: it survived for
+     a long time because the timeout usually landed first, and became visible on a phone as soon
+     as the board got a little more work to do per placement. Keep this at 0. */
+  opacity: 0;
   background: radial-gradient(
     ellipse at center,
     transparent 42%,
