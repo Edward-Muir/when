@@ -6,7 +6,7 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 |            |                                                                      |
 | ---------- | -------------------------------------------------------------------- |
-| Branch     | `claude/event-detail-phase-3-l2wq2w`                                 |
+| Branch     | `claude/event-detail-phase-3-cont-r2jjui`                            |
 | PR         | none, deliberately                                                   |
 | Production | nothing — see **The release option** below, which is a live decision |
 
@@ -14,7 +14,7 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 `docs/event-detail/writing-spec.md`, `.claude/skills/write-event-detail/SKILL.md`, a real length
 band enforced in `scripts/events/detail-spec.js`, and the corpus's **first ten written entries**.
 
-**Phase 3 is under way: 3,423 of 5,460 are written**, 63% of the corpus. See
+**Phase 3 is under way: 3,675 of 5,460 are written**, 67% of the corpus. See
 [Where Phase 3 got to](#where-phase-3-got-to) before picking it up — the operational lessons there
 are worth more than the plan they replaced.
 
@@ -32,7 +32,7 @@ same popup; its event is the deck's starting card, placed face-up with its year 
 read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`,
 sharded to mirror the 19 manifest files; it is never inlined into the event JSON.
 
-**3,423 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
+**3,675 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
 to their short description, which is the designed behaviour and not a bug. The branch's preview
 therefore shows no lorem to anyone.
 `detail-placeholder.js` can refill it if a future session wants the layout exercised at scale
@@ -91,7 +91,7 @@ Three things worth knowing here:
   600 KB array corrupt it — this repo has already paid for that lesson once.
 - **`node scripts/events/detail-report.js` exits non-zero while any placeholder remains.** It is
   deliberately not part of `npm test`, which would otherwise be red for the whole writing phase.
-  It now reads 3423/5460.
+  It now reads 3675/5460.
 - **The prose is researched, not recalled.** Draft, then check with one or two searches, then cut
   what the results do not support. This replaced a rule that said "write only what you would stake
   without a link", which produced a factual error in one of the first ten entries and untraceable
@@ -124,13 +124,13 @@ Three things worth knowing here:
 
 Complete shards: `people` 298, `candidates` 53, `clothing` 54, `migration` 54, `communication` 56,
 `law` 67, `food` 69, `money` 71, `earth-life` 72, `medicine` 75, `games-sport` 79, `disasters` 209,
-`sports` 324, `themes` 353, **`infrastructure` 408, `conflict` 555, `cultural` 625**.
-Untouched: **`diplomatic` 998, `exploration` 1,040** — 2,037 to go.
+`sports` 324, `themes` 353, `infrastructure` 408, `conflict` 555, `cultural` 625.
+Partial: **`diplomatic` 252/998**. Untouched: **`exploration` 1,039** — 1,785 to go.
 
 A partial shard is fine. `--chunks` regenerates worklists containing only unwritten events, so
 resuming needs no special handling.
 
-## The search budget is the binding constraint — read this first
+## The search budget was the binding constraint, and WebFetch removed it
 
 `WebSearch` is capped per session at 200 calls
 (`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`). It is **not** a rolling window: a new session
@@ -151,6 +151,18 @@ teaching classes at the Registan madrasa; elephants hauling stone for Bibi Khany
 Clavijo, whose account describes no such thing), one inverted causal claim (Gondar's architecture
 credited to Jesuit influence, when Fasilides expelled the Jesuits and burned their books), and
 opening words asserted for MTV that it never broadcast.
+
+**This is solved. Tell writers to verify with `WebFetch` instead.** Measured over 24 writer
+units and 336 entries on the diplomatic shard: **one** WebSearch call total, against the 200
+budget, with every entry still checked against a fetched source. Nearly every event in this
+catalogue has a guessable Wikipedia article, so a writer told to fetch
+`https://en.wikipedia.org/wiki/<Article_Title>` and ask its question in the fetch prompt does not
+need search at all. Writers fall back to WebSearch only when an article cannot be guessed or the
+fetch comes back truncated; the recovery agent spent its 2 calls exactly that way.
+
+So the budget no longer sizes the session. Plan the session around wall-clock and the account's
+rate limit instead, and keep the rest of this section for the failure it describes, which is still
+real if a writer is left to use search.
 
 **What to do about it:**
 
@@ -204,6 +216,22 @@ opening words asserted for MTV that it never broadcast.
   merge rather than rejected, so check parseability separately from the spec.
 - **Verify against the worklist, not the agent's report.** Self-reported counts have been wrong in
   both directions.
+- **Ask every writer which entries it could not check, and run a recovery pass over the answer.**
+  Three writers on the diplomatic shard volunteered that some entries were written from recall: one
+  named eight Roman entries it had not fetched a source for, two named a single recalled detail
+  each. A re-check of those thirteen found one real error (euro-introduced claimed vending machines
+  were recalibrated overnight; conversion was gradual, roughly two thirds inside the first
+  fortnight) and confirmed the other twelve. None of the eight looked any different from checked
+  work on the page, which is the whole problem. **Re-check, do not rewrite**: brief the recovery
+  agent to change only what the source contradicts, or it will restyle good prose and you lose the
+  ability to tell a correction from a rewrite.
+- **Paste the complete ban list into the prompt, not a summary of it.** The first wave's prompt
+  named the bans it remembered and took 4 failures in 84 on patterns it had not named (`meticulous`
+  as puffery, `not only X but Y`). The full list, copied from `detail-spec.js`, is about 2.5 KB and
+  it is worth the space.
+- **Repair the tail by hand.** Spec failures ran 5-11% per wave and were almost all overruns of a
+  few characters. Fixing them directly with a measured count took one pass over ten entries;
+  a repair round costs an agent each and the handoff already records that repair agents miscount.
 - **Spec collisions to expect** (work around them, do not loosen the ban): `served as` in
   biography, `stood as` for records, **`functioned as`, which fails the same copula pattern**,
   `load-bearing` in architecture, `robust` in _Paranthropus robustus_, `Fosters` for Norman
@@ -329,70 +357,57 @@ should start) are in the session notes, not here.
 
 ## Kick-off prompt for the next session
 
-> Continue **Phase 3** of the event-detail work on the `when` repo. 3,423 of 5,460 entries are
-> written; carry on through the remaining 2,037.
+> Continue **Phase 3** of the event-detail work on the `when` repo. 3,675 of 5,460 entries are
+> written; carry on through the remaining 1,785 — `diplomatic` is at 252/998, and `exploration`
+> 1,039 is untouched after it.
 >
-> You are on `claude/event-detail-phase-3-l2wq2w` — **not** main, the feature only exists on this
-> branch line. Commit and push each shard as it completes. Do not open a PR.
+> You are on `claude/event-detail-phase-3-cont-r2jjui` — **not** main, the feature only exists on
+> this branch line. Commit and push each batch as it completes. Do not open a PR.
 >
 > Run `npm ci` first: without it `npm run typecheck` resolves a global `tsc` and prints something
-> that looks exactly like a pass. Then read `HANDOFF.md`, especially **The search budget is the
-> binding constraint** and **Where Phase 3 got to**, which carry the operational lessons from
-> seventeen shards and are worth more than any plan.
+> that looks exactly like a pass. Then read `HANDOFF.md`, especially **The search budget was the
+> binding constraint, and WebFetch removed it** and **Where Phase 3 got to**.
 >
 > **The spec and the UI are done and out of scope.** Never loosen a ban in
-> `scripts/events/detail-spec.js` to get an entry through; fix the prose. Known collisions to work
-> around rather than relax: `served as`, `stood as` and `functioned as` in biography and
-> institution writing, `load-bearing` in architecture, `robust` in _Paranthropus robustus_,
-> `Fosters` for Norman Foster's firm, the second-person ban catching song and film titles that
-> contain "you", and the card-art ban catching `depicted` used about a painting.
+> `scripts/events/detail-spec.js` to get an entry through; fix the prose.
 >
-> Resume with `node scripts/events/detail-report.js --chunks` (delete the worklist directory first,
-> it does not clear itself). `infrastructure`, `conflict` and `cultural` are complete. What is left
-> is **`diplomatic` 998** and **`exploration` 1,040**. Split each shard into units of ~20 and run 5
-> or 6 `event-detail-writer` sub-agents at a time.
+> Resume with `node scripts/events/detail-report.js --chunks` (delete
+> `untracked_data/event-detail/worklist/` first, it does not clear itself). Those chunks are 40
+> events; split them into units of **14** and run six `event-detail-writer` sub-agents at a time,
+> one unit each. Write each unit's prompt to a file and point the agent at it rather than inlining
+> it; the reusable parts are the band, the research method, the full ban list and the report shape,
+> and only the unit filename and the shard's trap change between them.
 >
-> **Budget the session around the search cap.** `WebSearch` is capped at 200 calls per session
-> (`CLAUDE_CODE_MAX_WEB_SEARCHES_PER_SESSION`), not a rolling window, and a 20-event unit costs 20
-> to 40. That is roughly six to eight units before every writer silently loses the ability to check
-> anything and starts producing confident, spec-passing, unverified prose. Measured last session:
-> entries checked as written came back near-zero on re-check; the ~82 written after the budget ran
-> out came back at **16%**, including two clean fabrications and one inverted causal claim. So:
-> plan for about 120 to 160 search-checked entries per session and stop, or use smaller units;
-> require every writer to report which entries it could not check; and recover with a verification
-> pass over those entries using **`WebFetch`, which is not capped** (fetch
-> `https://en.wikipedia.org/wiki/<Article_Title>` and ask a specific question). Re-checking is much
-> cheaper than rewriting.
+> Every prompt must carry, in the prompt itself and not the agent definition:
 >
-> The batch prompt is what determines quality. Every prompt must carry:
+> 1. **The length band**: exactly 2 paragraphs, 220-450 chars each, 480-830 total, **aim at about
+>    700, roughly 350 a paragraph**. Say the bounds interact, because 450 plus 450 is 900.
+> 2. **`WebFetch`, not `WebSearch`.** Tell them to guess
+>    `https://en.wikipedia.org/wiki/<Article_Title>` and ask the question in the fetch prompt, and
+>    that 24 units before them checked every entry this way on one search call between them. This
+>    is what makes a fully checked shard affordable.
+> 3. **One single-line file per event** at `untracked_data/event-detail/e-<slug>.json`, written the
+>    moment each entry is done. A raw newline makes a file silently absent from the merge.
+> 4. **The complete ban list**, copied from `detail-spec.js`, not a summary.
+> 5. **"Check every event, and if you do not, say which."** The unverified list is what makes a
+>    recovery pass possible, and it has already caught a real error.
+> 6. **That shard's own trap.** `diplomatic`: invented treaty clauses, the "In YEAR, X and Y
+>    signed..." monoculture, legacy verdicts, neutral register on contested modern politics.
+>    `exploration` is next and is mostly inventions and crafts, so read a few slugs and name its
+>    trap yourself — the obvious candidates are manufactured origin stories and named inventors for
+>    diffuse technologies, priority disputes, and contested deep-time dates.
 >
-> 1. **The length band, and that its two bounds interact**: exactly 2 paragraphs, 220-450 chars
->    each, 480-830 total — and say explicitly that 450 plus 450 is 900, so two legal paragraphs can
->    still break the total. **Tell writers to aim at ~700, not the ceiling.** One writer produced 26
->    failures in a single 120-entry round by reading "roughly 350-450 each" as safe. The agent
->    definition does not reach the writers.
-> 2. **One file per event** at `/home/user/when/untracked_data/event-detail/e-<slug>.json`, written
->    the moment each entry is finished, as a **single line** of JSON with no line breaks and no
->    internal double quotes. Say that a raw newline makes the file **silently absent from the merge
->    rather than rejected**, so they should check what they wrote — writers told this catch their own.
-> 3. **That research is not optional**, with the precedent: a writer that skipped it asserted
->    opening words for MTV that it never broadcast. Draft, then check, then cut what the results do
->    not support.
-> 4. **That shard's own trap**, in one line, plus a bar on referring to the game, the card, the
->    catalogue or the year field. Read a few slugs first and name the trap yourself. For
->    `diplomatic`, expect treaty entries collapsing into "signed at X, did Y" and round-year dynasty
->    and reign cards that invite an invented founding moment; for `exploration`, expect contested
->    priority and inventor claims ("the first to…"), which is the shard's defining risk.
->
-> Per shard: verify every worklist slug landed (agent self-reported counts have been wrong in both
-> directions), check parseability separately from the spec (an unparseable file is silently absent
-> from the merge, not rejected), repair failures with sub-agents in one round — giving them the
-> exact overage per entry and a target of ~750 rather than "under 830", because they count by hand
-> and have got it wrong in both directions — then `detail-apply.js`, `npm run typecheck`,
+> Per batch: run the checker at `untracked_data/check-batch.js` (rebuild it if the container is
+> fresh; it checks parseability and multi-line separately from worklist coverage and the real
+> `detail-spec` run, and prints a length distribution), repair the handful of overruns yourself with
+> exact counts, run a recovery agent over whatever writers reported unverified, then
+> `detail-apply.js` with the batch's explicit file list, `npm run typecheck`,
 > `CI=true npm test -- --watchAll=false`, `CI=true npm run build`, commit, push.
 >
-> Writers will flag `year` and `description` errors in the catalogue. **Check every flag before
-> acting on it** — roughly three in four do not survive verification. Changing a `year` re-scores
-> its neighbours through `difficultyScore` and can move a `deckBuilder` test bound. Leave
-> `description` errors alone and record them in the commit; they are player-visible and the
-> maintainer's call.
+> Read five entries cold per batch. Drift is the failure mode, and `untracked_data/hooks.js`
+> (also rebuild if missing) counts distinct two-word openings as a cheap monoculture check; this
+> session ran 106 distinct in 110.
+>
+> Writers will flag `year` and `description` errors. **Check every flag before acting on it** —
+> most do not survive verification. Leave `description` errors alone and record them in the commit;
+> they are player-visible and the maintainer's call.
