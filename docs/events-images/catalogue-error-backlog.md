@@ -33,22 +33,30 @@ the card does not.
 
 ## Already applied
 
-Eleven years have been corrected. Three during Phase 3 as the prose was written; eight more in the
-2026-09-17 verification pass, each one checked against a source before it was touched.
+Thirteen years have been corrected. Three during Phase 3 as the prose was written; eight more in
+the 2026-09-17 verification pass; and two more when date ranges were added, where the record's
+window plainly began after the stored year. Each one was checked against a source before it was
+touched.
 
-| Slug                         | Change            | Evidence                                                                                                                                                                                                                                                                       |
-| ---------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `crispr-human-therapy`       | 2020 → **2019**   | Victoria Gray's exa-cel infusion, 2 July 2019 (`746fb01`)                                                                                                                                                                                                                      |
-| `chickens-domesticated`      | -6000 → **-1500** | Peters et al. 2022 (PNAS) re-dated the proposed earliest finds; earliest unambiguous domestic remains at Ban Non Wat, c. 1650-1250 BCE (`a7d4628`)                                                                                                                             |
-| `battle-of-mu-ta`            | 628 → **629**     | 1 Jumada al-Awwal 8 AH = September 629; 628 has no support (`e092492`)                                                                                                                                                                                                         |
-| `blueprint`                  | 1840 → **1842**   | The card names Herschel's cyanotype process; Herschel announced it in 1842. (Commercial use for technical drawings is 1872, but the card describes the process, not its adoption)                                                                                              |
-| `ramjet-engine`              | 1907 → **1913**   | The card names René Lorin proposing the design. Lorin designed it in 1913 and was granted FR290356 the same year; 1907 has no support                                                                                                                                          |
-| `social-media`               | 1996 → **1997**   | The card says SixDegrees.com _launched_. The site started in 1997; May 1996 is the founding of MacroView, the company that built it                                                                                                                                            |
-| `double-entry-bookkeeping`   | 1200 → **1300**   | The earliest extant full double-entry records are Amatino Manucci's Farolfi ledger of 1299-1300. 1200 predates any evidence by a century                                                                                                                                       |
-| `clausius-entropy`           | 1850 → **1865**   | The `friendly_name` is "Clausius Defines Entropy". Clausius named and gave the first mathematical form of entropy in 1865; 1850 is his first second-law paper, which is the other half of the description                                                                      |
-| `university-paris-founding`  | 1200 → **1215**   | The card says "received formal papal recognition". 1200 is Philip II Augustus's **royal** diploma; the first formal papal act is Robert de Courçon's 1215 statutes as Apostolic legate                                                                                         |
-| `xicalanco-trade-port`       | 1000 → **1500**   | The description has the port linking Maya and **Aztec** networks, which Wikipedia confirms was its role. The Aztec Empire dates from 1428, so 1000 is impossible for the thing described; 1500 sits inside the documented Late Postclassic period, before the Spanish conquest |
-| `zanzibar-clove-cultivation` | 1818 → **1840**   | The description credits **the Sultan**. Cloves reached Zanzibar c. 1818 via the merchant Saleh bin Haramil; Seyyid Said moved his capital to Stone Town in 1840 and developed the clove plantation economy from there                                                          |
+Measured after the last two: cross-boundary daily repeats came out at **7** against the bound of
+12 in `deckBuilder.test.ts`, down from the 11 that bound was set for, so nothing needed
+re-baselining.
+
+| Slug                                  | Change                              | Evidence                                                                                                                                                                                                                                                                       |
+| ------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `crispr-human-therapy`                | 2020 → **2019**                     | Victoria Gray's exa-cel infusion, 2 July 2019 (`746fb01`)                                                                                                                                                                                                                      |
+| `chickens-domesticated`               | -6000 → **-1500**                   | Peters et al. 2022 (PNAS) re-dated the proposed earliest finds; earliest unambiguous domestic remains at Ban Non Wat, c. 1650-1250 BCE (`a7d4628`)                                                                                                                             |
+| `battle-of-mu-ta`                     | 628 → **629**                       | 1 Jumada al-Awwal 8 AH = September 629; 628 has no support (`e092492`)                                                                                                                                                                                                         |
+| `blueprint`                           | 1840 → **1842**                     | The card names Herschel's cyanotype process; Herschel announced it in 1842. (Commercial use for technical drawings is 1872, but the card describes the process, not its adoption)                                                                                              |
+| `ramjet-engine`                       | 1907 → **1913**                     | The card names René Lorin proposing the design. Lorin designed it in 1913 and was granted FR290356 the same year; 1907 has no support                                                                                                                                          |
+| `social-media`                        | 1996 → **1997**                     | The card says SixDegrees.com _launched_. The site started in 1997; May 1996 is the founding of MacroView, the company that built it                                                                                                                                            |
+| `double-entry-bookkeeping`            | 1200 → **1300**                     | The earliest extant full double-entry records are Amatino Manucci's Farolfi ledger of 1299-1300. 1200 predates any evidence by a century                                                                                                                                       |
+| `clausius-entropy`                    | 1850 → **1865**                     | The `friendly_name` is "Clausius Defines Entropy". Clausius named and gave the first mathematical form of entropy in 1865; 1850 is his first second-law paper, which is the other half of the description                                                                      |
+| `university-paris-founding`           | 1200 → **1215**                     | The card says "received formal papal recognition". 1200 is Philip II Augustus's **royal** diploma; the first formal papal act is Robert de Courçon's 1215 statutes as Apostolic legate                                                                                         |
+| `xicalanco-trade-port`                | 1000 → **1500**                     | The description has the port linking Maya and **Aztec** networks, which Wikipedia confirms was its role. The Aztec Empire dates from 1428, so 1000 is impossible for the thing described; 1500 sits inside the documented Late Postclassic period, before the Spanish conquest |
+| `zanzibar-clove-cultivation`          | 1818 → **1840**                     | The description credits **the Sultan**. Cloves reached Zanzibar c. 1818 via the merchant Saleh bin Haramil; Seyyid Said moved his capital to Stone Town in 1840 and developed the clove plantation economy from there                                                          |
+| `marquesas-settlement-east-polynesia` | 300 → **800** (+ `year_end` 1300)   | Sinoto's Ha'atuatua dates are rejected as old-wood and marine-shell samples, so nothing supports 300. Allen (2004) argues an 8th-10th century arrival, the earliest position still defended; Wilmshurst et al. (2011) put the remaining East Polynesian islands at 1190-1290   |
+| `chatham-islands-settlement`          | 1000 → **1400** (+ `year_end` 1500) | The voyage came from mainland New Zealand, itself not settled until c. 1280, so 1000 is impossible for it. A waka excavated on the north coast dates to 1440-1470; the earliest radiocarbon-dated cultural remains are c. 1500                                                 |
 
 ## Wrong year: the card's own text describes an event the record dates elsewhere
 
@@ -94,6 +102,25 @@ in four writer flags land here, which is why every one is checked before anythin
 **Judgement calls, not errors.** Each is a round year standing in for a process, a reign or a
 floruit the record places elsewhere. Changing them is optional and in several cases there is no
 better single year to move to. Listed so nobody re-derives them.
+
+**Many of these now carry a `year_end` instead** (2026-09-17). The optional upper bound added for
+fuzzy placement is the right home for a row whose problem is that no single year is right: the
+card keeps its year as a lower bound and any placement inside the window counts. 41 events were
+given one, seeded largely from this section. See
+[index.md](index.md#year_end-events-that-name-a-period-not-a-moment).
+
+Three kinds of row here are **not** fixable that way, and stay:
+
+- **The window starts before the stored year.** `blast-furnace-invented` (furnaces from the 1st
+  century BC against a stored 100), `benin-kingdom-founded`, `tonga-empire` (a peak the record
+  puts at 1200-1500 against a stored 1700) and `brunei-sultanate-expansion` (peak 1485-1524
+  against a stored 1580) all point backwards. `year_end` only extends forwards, so these are
+  year errors, not ranges.
+- **The window is too wide to be honest.** `boats` spans roughly 850,000 years of genuine
+  uncertainty and `spear-thrower-atlatl` about 24,000; any window narrow enough to pass the span
+  ceiling would be an arbitrary cut with nothing attesting its upper end.
+- **It is a point with an error bar, not a process.** `star-chart` is a single dated panel whose
+  astronomical reading is itself contested; a range would encode confidence the record lacks.
 
 **Deep time** (`2b5c48c`, `2e9f546`): `boats` -900000 (earliest datable seafaring is the Sahul
 crossing, c. 50,000 BP) · `hide-and-leather-clothing-shelter` -400000 · `pigments` -400000 (ochre

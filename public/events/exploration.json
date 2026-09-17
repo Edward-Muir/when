@@ -10739,7 +10739,7 @@
   {
     "name": "marquesas-settlement-east-polynesia",
     "friendly_name": "Marquesas Islands Settled",
-    "year": 300,
+    "year": 800,
     "category": "migration",
     "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
     "difficulty": "very-hard",
@@ -10748,7 +10748,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "moche-irrigation-system",
@@ -11555,7 +11556,7 @@
   {
     "name": "chatham-islands-settlement",
     "friendly_name": "Chatham Islands Settled",
-    "year": 1000,
+    "year": 1400,
     "category": "migration",
     "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
     "difficulty": "very-hard",
@@ -11564,7 +11565,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "manorial-system-agricultural",
