@@ -21,7 +21,14 @@ export type SettleHintKey = Exclude<GameHintKey, 'drag'>;
  * The ladder, in the order it is walked. One rung per placement: the outcome of what they
  * just did, then the three things nothing else in the UI explains.
  */
-export const SETTLE_PRIORITY: SettleHintKey[] = ['wrong', 'correct', 'tapCard', 'stats', 'swap'];
+export const SETTLE_PRIORITY: SettleHintKey[] = [
+  'wrong',
+  'closeEnough',
+  'correct',
+  'tapCard',
+  'stats',
+  'swap',
+];
 
 /** When several hints are eligible at once, this is the order that wins. */
 export const HINT_PRIORITY: GameHintKey[] = ['drag', ...SETTLE_PRIORITY];
@@ -34,6 +41,7 @@ interface SeenState {
   drag: boolean;
   wrong: boolean;
   correct: boolean;
+  closeEnough: boolean;
   tapCard: boolean;
   stats: boolean;
   swap: boolean;
@@ -41,6 +49,8 @@ interface SeenState {
 
 interface PendingOutcome {
   success: boolean;
+  /** The placement only passed because a window was involved. */
+  closeEnough: boolean;
   /** Whether a replacement will be drawn: read before the draw, so "deck not empty". */
   drewCard: boolean;
 }
@@ -84,6 +94,7 @@ function readSeen(): SeenState {
     drag: hasSeenHint('drag'),
     wrong: hasSeenHint('wrong'),
     correct: hasSeenHint('correct'),
+    closeEnough: hasSeenHint('closeEnough'),
     tapCard: hasSeenHint('tapCard'),
     stats: hasSeenHint('stats'),
     swap: hasSeenHint('swap'),
@@ -99,6 +110,8 @@ function withSeen(prev: SeenState, key: GameHintKey): SeenState {
       return { ...prev, wrong: true };
     case 'correct':
       return { ...prev, correct: true };
+    case 'closeEnough':
+      return { ...prev, closeEnough: true };
     case 'tapCard':
       return { ...prev, tapCard: true };
     case 'stats':
@@ -120,6 +133,13 @@ function isWrongEligible(pending: PendingOutcome, seen: SeenState): boolean {
 
 function isCorrectEligible(pending: PendingOutcome, seen: SeenState): boolean {
   return pending.success && pending.drewCard && !seen.correct;
+}
+
+// Above `correct` in the ladder, because a first placement that happens to be close-enough
+// should explain the surprising part rather than the ordinary one. It does not require
+// `correct` to have been seen: the two are alternative readings of the same hit.
+function isCloseEnoughEligible(pending: PendingOutcome, seen: SeenState): boolean {
+  return pending.success && pending.closeEnough && !seen.closeEnough;
 }
 
 function isTapCardEligible(seen: SeenState, ctx: SettleContext): boolean {
@@ -147,6 +167,8 @@ function isSettleEligible(
       return isWrongEligible(pending, seen);
     case 'correct':
       return isCorrectEligible(pending, seen);
+    case 'closeEnough':
+      return isCloseEnoughEligible(pending, seen);
     case 'tapCard':
       return isTapCardEligible(seen, ctx);
     case 'stats':
@@ -170,6 +192,7 @@ function hintDurationMs(key: SettleHintKey): number {
   switch (key) {
     case 'wrong':
     case 'correct':
+    case 'closeEnough':
       return OUTCOME_HINT_MS;
     case 'tapCard':
     case 'stats':
@@ -307,7 +330,11 @@ export function useOnboardingHints(args: UseOnboardingHintsArgs): OnboardingHint
   //    settle effect so a result and a settle arriving in one commit are ordered correctly.
   useEffect(() => {
     if (lastPlacementResult && lastPlacementResult !== lastResultRef.current) {
-      pendingRef.current = { success: lastPlacementResult.success, drewCard: deckLength > 0 };
+      pendingRef.current = {
+        success: lastPlacementResult.success,
+        closeEnough: lastPlacementResult.closeEnough === true,
+        drewCard: deckLength > 0,
+      };
     }
     lastResultRef.current = lastPlacementResult;
   }, [lastPlacementResult, deckLength]);

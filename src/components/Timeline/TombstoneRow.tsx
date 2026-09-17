@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { FailedPlacement, HistoricalEvent } from '../../types';
-import { formatYear } from '../../utils/gameLogic';
+import { YearLabel, yearSizeClass } from './YearLabel';
 import { getImageUrl } from '../../utils/cloudinaryImage';
 import CategoryIcon from '../CategoryIcon';
 import Card from '../Card';
@@ -108,8 +108,10 @@ const TombstoneRow: React.FC<TombstoneRowProps> = ({
           </>
         ) : (
           <>
-            <span className="text-text-muted opacity-70 font-bold text-sm font-mono pr-2 text-right leading-tight">
-              {formatYear(event.year)}
+            <span
+              className={`text-text-muted opacity-70 font-bold font-mono pr-2 text-right leading-tight ${yearSizeClass(event)}`}
+            >
+              <YearLabel event={event} />
             </span>
             <TimelineTick
               variant="muted"

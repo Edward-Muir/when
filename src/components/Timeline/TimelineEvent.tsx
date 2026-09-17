@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { motion, useReducedMotion, useAnimate } from 'framer-motion';
 import { HistoricalEvent, AnimationPhase, Category } from '../../types';
-import { formatYear } from '../../utils/gameLogic';
+import { YearLabel, yearSizeClass } from './YearLabel';
 import CategoryIcon from '../CategoryIcon';
 import { type GlowIntensity } from '../../utils/streakFeedback';
 import { getEventColorStyle, getEventTextClass } from '../../utils/eventColor';
@@ -290,9 +290,9 @@ const TimelineEvent: React.FC<TimelineEventProps> = ({
             data-timeline-year={event.year}
             variants={yearPopVariants}
             animate={shouldPopYear ? 'pop' : 'idle'}
-            className="text-text font-bold text-sm font-mono pr-2 text-right leading-tight"
+            className={`text-text font-bold font-mono pr-2 text-right leading-tight ${yearSizeClass(event)}`}
           >
-            {formatYear(event.year)}
+            <YearLabel event={event} />
           </motion.span>
           {!hideTick && <TimelineTick originRef={originRef} landing={landing} glow={landing} />}
         </div>

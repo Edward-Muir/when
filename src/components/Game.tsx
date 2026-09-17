@@ -74,6 +74,12 @@ const HomeConfirmModal: React.FC<{
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
 // revealed tombstones do; a hand card being previewed doesn't (that's the puzzle).
+/**
+ * A close-enough hit's haptic: one short tick, against the streak tier's escalating pattern.
+ * Distinct enough to feel, quiet enough not to read as a miss.
+ */
+const CLOSE_ENOUGH_HAPTIC = [10];
+
 function shouldShowYearInPopup(pendingPopup: GamePopupData | null, state: WhenGameState): boolean {
   if (pendingPopup?.type === 'description' && pendingPopup.event) {
     const name = pendingPopup.event.name;
@@ -257,26 +263,29 @@ const Game: React.FC<GameProps> = ({
   });
 
   useEffect(() => {
-    if (state.lastPlacementResult && state.lastPlacementResult !== prevPlacementRef.current) {
-      // Whole-screen edge-in pulse: red on a miss, streak colour on a hit.
-      const vignetteColor = getVignetteColor(
-        state.lastPlacementResult.success,
-        state.currentStreak
-      );
-      setVignette({ color: vignetteColor, key: Date.now() });
+    const placement = state.lastPlacementResult;
+    if (placement && placement !== prevPlacementRef.current) {
+      // Whole-screen edge-in pulse: red on a miss, streak colour on a hit, the secondary
+      // accent when a window is what carried it.
+      const closeEnough = placement.closeEnough === true;
+      const color = getVignetteColor(placement.success, state.currentStreak, closeEnough);
+      setVignette({ color, key: Date.now() });
       setTimeout(() => setVignette(null), 900); // matches --anim-vignette-dur
-      if (state.lastPlacementResult.success) {
+      if (placement.success) {
         // Capture streak feedback for this placement
         streakFeedbackRef.current = getStreakFeedback(state.currentStreak);
-        setShowConfetti(true);
+        // The one-shot hint teaches close-enough once; this is what keeps it legible every
+        // time after that. Confetti is withheld rather than reduced — a smaller burst reads
+        // as a rendering glitch, its absence reads as a different outcome. The haptic drops
+        // to a single tick for the same reason.
+        setShowConfetti(!closeEnough);
         setTimeout(() => setShowConfetti(false), 2000);
-        // Use streak-based haptic pattern
-        vibrate(streakFeedbackRef.current.hapticPattern);
+        vibrate(closeEnough ? CLOSE_ENOUGH_HAPTIC : streakFeedbackRef.current.hapticPattern);
       } else {
         triggerShake('medium');
         haptics.error();
       }
-      setNewEventName(state.lastPlacementResult.event.name);
+      setNewEventName(placement.event.name);
       setTimeout(() => setNewEventName(undefined), 1000);
     }
     prevPlacementRef.current = state.lastPlacementResult;
@@ -454,6 +463,7 @@ const Game: React.FC<GameProps> = ({
               nextPlayer={pendingPopup.nextPlayer}
               showYear={showYearInPopup}
               gameState={pendingPopup.gameState}
+              closeEnough={pendingPopup.closeEnough}
               tombstone={isTombstonePopup}
               dailyResult={dailyResult}
               leaderboard={leaderboard}

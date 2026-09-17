@@ -89,6 +89,7 @@ export type HintKey =
   | 'drag'
   | 'wrong'
   | 'correct'
+  | 'closeEnough'
   | 'tapCard'
   | 'stats'
   | 'swap'
@@ -99,7 +100,7 @@ export type HintKey =
   | 'timelineTab';
 export type GameHintKey = Extract<
   HintKey,
-  'drag' | 'wrong' | 'correct' | 'tapCard' | 'stats' | 'swap'
+  'drag' | 'wrong' | 'correct' | 'closeEnough' | 'tapCard' | 'stats' | 'swap'
 >;
 export type TabHintKey = Extract<
   HintKey,
@@ -110,6 +111,7 @@ interface HintsSeen {
   drag?: boolean;
   wrong?: boolean;
   correct?: boolean;
+  closeEnough?: boolean;
   tapCard?: boolean;
   stats?: boolean;
   swap?: boolean;
@@ -133,6 +135,8 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
       return data.wrong === true;
     case 'correct':
       return data.correct === true;
+    case 'closeEnough':
+      return data.closeEnough === true;
     case 'tapCard':
       return data.tapCard === true;
     // The in-game counter hint. Not `statsTab` (the home tab's strip) and not `NavKey`'s
@@ -162,6 +166,8 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
       return { ...data, wrong: true };
     case 'correct':
       return { ...data, correct: true };
+    case 'closeEnough':
+      return { ...data, closeEnough: true };
     case 'tapCard':
       return { ...data, tapCard: true };
     case 'stats':

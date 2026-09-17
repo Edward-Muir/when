@@ -1,7 +1,7 @@
 import React from 'react';
 import { Check, Trophy, X } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
-import { formatYear } from '../utils/gameLogic';
+import { formatEventYear } from '../utils/gameLogic';
 import { DailyResult } from '../utils/playerStorage';
 import { DailyLeaderboard } from '../hooks/useDailyLeaderboard';
 import CategoryIcon from './CategoryIcon';
@@ -21,6 +21,8 @@ interface GamePopupProps {
   nextPlayer?: Player;
   showYear?: boolean;
   gameState?: WhenGameState;
+  /** A `correct` popup that was carried by an event's date range, so the banner softens. */
+  closeEnough?: boolean;
   // Tombstoned (failed) event: greyscale image, muted text, surface background —
   // matches the tombstone card treatment on the timeline
   tombstone?: boolean;
@@ -45,10 +47,21 @@ function showsProseFor(type: GamePopupType, showYear: boolean, event: Historical
   return type === 'description' && showYear && !!event?.has_detail;
 }
 
-// Sub-component for result banner (full-width colored banner at top)
-function ResultBanner({ isCorrect }: { isCorrect: boolean }) {
+// Sub-component for result banner (full-width colored banner at top).
+//
+// Three states, not two: a placement carried by an event's date range is still a hit, so it
+// keeps the tick, but takes the secondary accent and its own word. Multiplayer only — single
+// player gets the tombstone reveal and the hint strip instead of a blocking popup.
+function bannerTone(isCorrect: boolean, closeEnough: boolean): { bg: string; label: string } {
+  if (!isCorrect) return { bg: 'bg-error', label: 'Wrong!' };
+  if (closeEnough) return { bg: 'bg-accent-secondary', label: 'Close enough!' };
+  return { bg: 'bg-success', label: 'Correct!' };
+}
+
+function ResultBanner({ isCorrect, closeEnough }: { isCorrect: boolean; closeEnough?: boolean }) {
+  const { bg, label } = bannerTone(isCorrect, closeEnough === true);
   return (
-    <div className={`px-4 py-2 flex items-center gap-2 ${isCorrect ? 'bg-success' : 'bg-error'}`}>
+    <div className={`px-4 py-2 flex items-center gap-2 ${bg}`}>
       <div className="w-5 h-5 flex items-center justify-center">
         {isCorrect ? (
           <Check className="w-5 h-5 text-white" strokeWidth={3} />
@@ -56,9 +69,7 @@ function ResultBanner({ isCorrect }: { isCorrect: boolean }) {
           <X className="w-5 h-5 text-white" strokeWidth={3} />
         )}
       </div>
-      <span className="font-semibold text-lg text-white leading-none">
-        {isCorrect ? 'Correct!' : 'Wrong!'}
-      </span>
+      <span className="font-semibold text-lg text-white leading-none">{label}</span>
     </div>
   );
 }
@@ -117,7 +128,7 @@ function EventHeader({
           <span
             className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
           >
-            {formatYear(event.year)}
+            {formatEventYear(event)}
           </span>
         )}
       </div>
@@ -331,11 +342,13 @@ function EventPopupContent({
   showsProse,
   detail,
   onDismiss,
+  closeEnough,
 }: {
   type: GamePopupType;
   event: HistoricalEvent;
   showYear: boolean;
   nextPlayer?: Player;
+  closeEnough?: boolean;
   tombstone?: boolean;
   showsProse: boolean;
   detail: ReturnType<typeof useEventDetail>;
@@ -347,7 +360,9 @@ function EventPopupContent({
 
   return (
     <>
-      {(isCorrect || isIncorrect) && <ResultBanner isCorrect={isCorrect} />}
+      {(isCorrect || isIncorrect) && (
+        <ResultBanner isCorrect={isCorrect} closeEnough={closeEnough} />
+      )}
       <EventHeader
         event={event}
         showYear={showYear}
@@ -421,6 +436,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
   nextPlayer,
   showYear = true,
   gameState,
+  closeEnough,
   tombstone = false,
   dailyResult,
   leaderboard,
@@ -474,6 +490,7 @@ const GamePopup: React.FC<GamePopupProps> = ({
             showsProse={showsProse}
             detail={detail}
             onDismiss={onDismiss}
+            closeEnough={closeEnough}
           />
         )
       )}
