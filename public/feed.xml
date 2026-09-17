@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 Sep 2026 06:16:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 17 Sep 2026 18:35:18 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.23.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.23.0</guid>
+      <pubDate>Thu, 17 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>**event-detail:** long-form prose for all 5,460 events (<a href="https://github.com/Edward-Muir/when/issues/59">#59</a>) (<a href="https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266">1481f03</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.22.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.15.2</guid>
       <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>remove 522 duplicate events from the timeline deck (<a href="https://github.com/Edward-Muir/when/issues/51">#51</a>) (<a href="https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92">9233ffc</a>), closes <a href="https://github.com/Edward-Muir/when/issues/26">#26</a></li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.15.1</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.15.1</guid>
-      <pubDate>Sat, 22 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>take the date out of player-visible card text (<a href="https://github.com/Edward-Muir/when/issues/50">#50</a>) (<a href="https://github.com/Edward-Muir/when/commit/489de75222377182e25d6b5ef49f4263287ca7e1">489de75</a>)</li></ul>]]></description>
     </item>
   </channel>
 </rss>

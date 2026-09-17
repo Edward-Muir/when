@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.23.0](https://github.com/Edward-Muir/when/compare/v1.22.0...v1.23.0) (2026-09-17)
+
+
+### Features
+
+* **event-detail:** long-form prose for all 5,460 events ([#59](https://github.com/Edward-Muir/when/issues/59)) ([1481f03](https://github.com/Edward-Muir/when/commit/1481f035f8cf1dc9c5ba149b55b6420e5bc48266))
+
 ## [1.22.0](https://github.com/Edward-Muir/when/compare/v1.21.0...v1.22.0) (2026-09-16)
 
 
