@@ -5,9 +5,13 @@ found while writing the long-form detail prose for all 5,460 events (Phase 3, 20
 
 **Why this file exists.** The writers read a source for every entry, so they read 5,460 event
 records against the record more closely than anything else ever has. What they found was reported
-in ~35 commit messages and in a branch-scoped `HANDOFF.md` that is deleted when the event-detail
-branch merges. This file is where that survives. It is a backlog, not a change log: almost nothing
+in ~35 commit messages and in a branch-scoped `HANDOFF.md` that was deleted when the event-detail
+branch merged. This file is where that survives. It is a backlog, not a change log: almost nothing
 here has been acted on.
+
+**The `commit` citations below** point at the unsquashed history on
+`claude/event-detail-phase-3-cont-r2jjui`, which is kept for exactly that reason — this work was
+squash-merged, so those short shas are not reachable from `main`.
 
 **Read this before acting on any row.** Three things, in order of how much time they save:
 

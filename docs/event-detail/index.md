@@ -1,16 +1,18 @@
 # Event detail — the long-form "read more"
 
-**Status: Phases 1 and 2 are DONE (the mechanism and the design; the writing spec and the first
-ten written entries). Phase 3, the remaining 5,450, has not started.** Nothing is in production: the branch does not merge until the corpus is
-written. On the branch itself every event carries placeholder prose so the preview deploy is
-testable — see Guardrail 1 for what keeps that from shipping.
+**Status: SHIPPED (2026-09-17). All three phases are done** — the mechanism, the voice, and all
+5,460 written entries. `node scripts/events/detail-report.js` exits 0, which was the merge gate.
+Every placed card in production has two paragraphs behind it.
 
 - **The voice rules: [writing-spec.md](writing-spec.md)** — the hook, the band as numbers, the
   register carve-out, what may be asserted, and the banned machine tells. The working version of
   the same rules, for someone about to write a batch, is
   [.claude/skills/write-event-detail/SKILL.md](../../.claude/skills/write-event-detail/SKILL.md)
-- **Current branch state and the next session's worklist: [/HANDOFF.md](../../HANDOFF.md)** —
-  branch-scoped, deleted before merge
+- **The catalogue errors this work surfaced:
+  [../events-images/catalogue-error-backlog.md](../events-images/catalogue-error-backlog.md)** —
+  wrong years, wrong names, duplicate cards, found by reading all 5,460 records against a source.
+  This replaces the branch-scoped `HANDOFF.md`, which was deleted at merge as its own first line
+  instructed
 - [2026-09-12 — Designing the read-more view](session-2026-09-12-detail-view-design.md) — where the
   branch stands, the open questions Phase 2 has to settle, the corpus and payload measurements
   worth not re-deriving, and the environment traps that cost this session a cycle each
@@ -119,24 +121,19 @@ reach.
 
 ## Guardrails
 
-1. **No lorem reaches production — but it does live on the branch.**
-   `scripts/events/detail-placeholder.js` fills all 5,460 events, and **its output is committed**.
-   It has to be: `has_detail` is what makes the info button render, so without it the branch's own
-   preview deploy shows nothing at all and is useless for looking at the thing it exists to show.
-   An earlier revert-before-commit rule traded that away for a protection the branch does not
-   need. Three things keep it safe instead:
-   - the branch never merges until the corpus is written, so it cannot reach players;
-   - every placeholder entry carries `placeholder: true`, and
-     `node scripts/events/detail-report.js` counts those as still to do and **exits non-zero**
-     while any remain. **Do not merge while that script exits non-zero.** It is deliberately not
-     part of `npm test`, which would otherwise be red for the whole of Phase 3;
-   - every placeholder entry's first paragraph literally begins `PLACEHOLDER: `, so it cannot be
-     mistaken for real prose in a review. (It used to be `PLACEHOLDER —`; the em dash became a
-     banned character in Phase 2 and a marker that fails the spec it sits inside is a confusing
-     signal.)
+1. **Never run `scripts/events/detail-placeholder.js` against the complete corpus.** There is
+   nothing left to fill and nothing to revert; a run now only risks the real prose. The script
+   stays because it can exercise the layout at scale if a future session needs that, and because
+   both it and `--revert` preserve anything not flagged `placeholder: true`.
 
-   `detail-apply.js` replaces an entry wholesale, so real prose drops the flag and starts counting
-   automatically — the corpus converges on written as Phase 3 lands, with no cleanup step.
+   The history behind that, because it explains the tooling: through Phases 1 and 2 every event
+   carried committed lorem, so the branch's own preview deploy had something to render —
+   `has_detail` is what makes the info button appear at all. What kept it from shipping was
+   `node scripts/events/detail-report.js`, which counts a `placeholder: true` entry as still to do
+   and **exits non-zero while any remain**, making it the merge gate. `detail-apply.js` replaces an
+   entry wholesale, so real prose dropped the flag as it landed and the corpus converged on written
+   with no cleanup step. It now reads 5,460/5,460 and exits 0 — and it is still the gate, so **a
+   non-zero exit means something regressed**. It is deliberately not part of `npm test`.
 
 2. **Cold start must not regress.** Detail is never fetched at start-up. If you find yourself
    wanting it in `loadAllEvents`, re-read the numbers above.
@@ -261,16 +258,14 @@ prose to lose. Both paths now preserve anything not flagged `placeholder: true`.
   mode here, not corruption — the scripts already make corruption hard. Sample specifically for
   the two things calibration showed converge: every entry pressed against the ceiling, and every
   hook the same kind.
-- **A half-written state is impossible, but it is not being shipped either.** `has_detail` is
-  per-event and written in the same pass as the prose, so a partly-written corpus renders exactly
-  the buttons it has prose for and no others — merging mid-run would be safe. The decision
-  (2026-09-12) is nonetheless to **hold everything back until the corpus is complete**: no PR, and
-  nothing reaches production until every event is written. Phase 2 and every Phase 3 batch
-  therefore land on the one long-lived branch, which needs syncing with `origin/main`
-  periodically rather than being left to drift. Rebase or merge both work — it is a solo,
-  unmerged branch with no PR against it, so rewriting its history costs nothing (rebased onto
-  v1.22.0 on 2026-09-16, five commits, no conflicts). The caveat that does the real work is
-  about the data, not the strategy: see Guardrail 1.
+- **A half-written state was always safe to ship; it was held back anyway, and that cost nothing
+  in the end.** `has_detail` is per-event and written in the same pass as the prose, so a
+  partly-written corpus renders exactly the buttons it has prose for and no others. The 2026-09-12
+  decision was nonetheless to hold everything until the corpus was complete — no PR, nothing in
+  production — so Phase 2 and every Phase 3 batch landed on one long-lived branch, synced with
+  `origin/main` periodically rather than left to drift (rebased onto v1.22.0 on 2026-09-16, five
+  commits, no conflicts). It merged on 2026-09-17 with the corpus whole, 72 commits ahead of a
+  `main` it was never behind.
 - `npm run find-duplicates` scores on `description`, which this never touches, so no baseline
   dance is needed (unlike the 2026-08 date-clue pass).
 
@@ -282,9 +277,7 @@ CI=true npm test -- --watchAll=false
 CI=true npm run build
 ```
 
-The placeholder corpus is already committed, so the design can be looked at on the branch's
-preview deploy or locally with no setup. Regenerate with
-`node scripts/events/detail-placeholder.js` if you have reverted it:
+Every event has prose, so any card will do and there is no setup:
 
 1. `BROWSER=none npm start`, then open a placed card in My Timeline or mid-game, or tap the (i)
    on the Daily hero image.
@@ -297,7 +290,9 @@ preview deploy or locally with no setup. Regenerate with
    **Scroll it on a real iOS device**, not only in a desktop browser: the compositing fault this
    region has already hit once appears on neither Chromium nor Linux WebKit.
 4. While the prose is up, a tap on the card must not dismiss the popup, and the backdrop must.
-5. `node scripts/events/detail-report.js` must still exit non-zero — that is the merge gate.
+5. `node scripts/events/detail-report.js` must read 5,460/5,460 and **exit 0**. It was the merge
+   gate while the corpus was being written; now a non-zero exit means prose or a `has_detail` flag
+   has gone missing.
 
 Driving it with Playwright: `docs/driving-the-app-with-playwright.md`. Note the timeline card is
 reached by its **title** — `[data-timeline-year]` is the year label beside it, and clicking that
