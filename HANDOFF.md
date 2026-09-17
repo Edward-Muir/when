@@ -4,19 +4,25 @@ Branch-scoped scaffolding, not a doc. **Delete this file before the branch ever 
 
 ## Where things stand
 
-|            |                                                                      |
-| ---------- | -------------------------------------------------------------------- |
-| Branch     | `claude/event-detail-phase-3-cont-r2jjui`                            |
-| PR         | none, deliberately                                                   |
-| Production | nothing — see **The release option** below, which is a live decision |
+|            |                                                                   |
+| ---------- | ----------------------------------------------------------------- |
+| Branch     | `claude/event-detail-phase-3-cont-r2jjui`                         |
+| PR         | none, deliberately                                                |
+| Production | nothing yet, but nothing blocks it any more — see **Shipping it** |
 
-**Phases 1 and 2 are done.** Phase 1 built the mechanism and the UI. Phase 2 settled the voice:
-`docs/event-detail/writing-spec.md`, `.claude/skills/write-event-detail/SKILL.md`, a real length
-band enforced in `scripts/events/detail-spec.js`, and the corpus's **first ten written entries**.
+**All three phases are done. The corpus is complete: 5,460 of 5,460 entries written.**
+Phase 1 built the mechanism and the UI. Phase 2 settled the voice
+(`docs/event-detail/writing-spec.md`, `.claude/skills/write-event-detail/SKILL.md`, the length
+band in `scripts/events/detail-spec.js`) and wrote the first ten entries. Phase 3 wrote the other
+5,450, finishing 2026-09-17.
 
-**Phase 3 is under way: 4,551 of 5,460 are written**, 83% of the corpus. See
-[Where Phase 3 got to](#where-phase-3-got-to) before picking it up — the operational lessons there
-are worth more than the plan they replaced.
+`node scripts/events/detail-report.js` **now exits 0.** It was written to exit non-zero while any
+event was unwritten, so that zero is the merge gate opening rather than a progress figure. Every
+shard reports ✓, every event carries `has_detail`, and no `placeholder` entry survives anywhere.
+
+**What is left is not writing.** It is the maintainer's decisions: shipping (see **Shipping it**),
+and the catalogue errors this work surfaced, listed under **Catalogue errors found while writing**.
+Those are player-visible and were deliberately not touched.
 
 **Branch off _this_ branch, never off main** — the feature does not exist on main.
 
@@ -32,11 +38,14 @@ same popup; its event is the deck's starting card, placed face-up with its year 
 read gives nothing away. The prose is a lazily-fetched sidecar under `public/events/detail/`,
 sharded to mirror the 19 manifest files; it is never inlined into the event JSON.
 
-**4,551 of 5,460 events carry real prose, and the placeholder corpus is gone.** The rest fall back
-to their short description, which is the designed behaviour and not a bug. The branch's preview
-therefore shows no lorem to anyone.
-`detail-placeholder.js` can refill it if a future session wants the layout exercised at scale
-again; both it and `--revert` preserve written prose.
+**All 5,460 events carry real prose, and the placeholder corpus is gone.** Nothing falls back any
+more: every card in the catalogue has a written entry, `detail-report.js` exits 0, and no shard
+contains the string `PLACEHOLDER`. The fallback path described above still exists and is still the
+designed behaviour — it covers a shard that fails to load and any event added to the catalogue
+from here on, which will have no prose until someone writes it.
+`detail-placeholder.js` can refill placeholders if a future session wants the layout exercised at
+scale again, and it preserves written prose; **do not run `--revert`** on a complete corpus, and
+see "Shipping it" below.
 
 The design decisions are in **[docs/event-detail/index.md](docs/event-detail/index.md)**. The voice
 rules are in **[docs/event-detail/writing-spec.md](docs/event-detail/writing-spec.md)** and, in
@@ -82,8 +91,8 @@ Three things worth knowing here:
   `description` may not. Pinned by `src/components/GamePopup.test.tsx`. This is the one that
   actually matters.
 - **Wherever the prose is unavailable, the description shows** — no prose written, or a shard that
-  would not load. A card is never contentless, and that is what lets this ship against a partly
-  written corpus.
+  would not load. A card is never contentless. That is what let the feature ship against a partly
+  written corpus, and it is what will absorb any event added to the catalogue after this.
 - **Bulk edits go through `scripts/events/detail-apply.js` from a map file, never by editing a
   shard directly.** Sub-agents write `slug -> {paragraphs}` maps into
   `untracked_data/event-detail/`; one deterministic apply pass validates the whole merged map
@@ -122,14 +131,15 @@ Three things worth knowing here:
 
 ## Where Phase 3 got to
 
-Complete shards: `people` 298, `candidates` 53, `clothing` 54, `migration` 54, `communication` 56,
-`law` 67, `food` 69, `money` 71, `earth-life` 72, `medicine` 75, `games-sport` 79, `disasters` 209,
-`sports` 324, `themes` 353, `infrastructure` 408, `conflict` 555, `cultural` 625,
-**`diplomatic` 998**.
-Partial: **`exploration` 131/1040** — 909 to go, and it is the only shard left.
+Every shard is complete: `candidates` 53, `clothing` 54, `migration` 54, `communication` 56,
+`law` 67, `food` 69, `money` 71, `earth-life` 72, `medicine` 75, `games-sport` 79,
+`disasters` 209, `people` 298, `sports` 324, `themes` 353, `infrastructure` 408, `conflict` 555,
+`cultural` 625, `diplomatic` 998, `exploration` 1,040. Total 5,460.
 
-A partial shard is fine. `--chunks` regenerates worklists containing only unwritten events, so
-resuming needs no special handling.
+`exploration` was the last and much the hardest: 909 of its 1,040 entries were written in the
+2026-09-17 session, in eleven batches of roughly 84. It holds the deep-time and
+first-appearance material, which is where the error rate is highest and where the traps below
+were learned.
 
 ## The per-batch toolchain lives in `untracked_data/` and dies with the container
 
@@ -416,22 +426,28 @@ Two findings from Phase 2's calibration worth carrying in:
 - **Attribution beats the band.** Hedging a contested figure costs characters a bare number does
   not. When they collide, a paragraph goes and the attribution stays.
 
-## The release option
+## Shipping it
 
-The description fallback changed what is possible here, and this is the only place it is written
-down. **A partly written corpus is now safe to ship**: events with prose show it, events without
-read exactly as they did before this feature existed. The "hold everything until all 5,460 are
-written" decision from 2026-09-12 is therefore a choice now, not a constraint.
+**Nothing blocks a release any more, and the placeholder problem is gone.** Every one of the
+5,460 events carries real prose and a `has_detail` flag; no `placeholder` entry and no
+`PLACEHOLDER` string survives in any shard. `detail-placeholder.js --revert` is not needed and
+must not be run: there is nothing left to revert, and running it now would only risk the real
+prose.
 
-What blocks doing it today is the committed placeholder — 5,450 events still carry `PLACEHOLDER: `
-text, so shipping as-is puts lorem in front of most players. Releasing early means first running
-`node scripts/events/detail-placeholder.js --revert`, after which only the ten written events carry
-`has_detail` and `detail-report.js` stops being a merge gate and becomes a progress meter. Since
-Phase 2 that revert is safe for written prose: it drops placeholder entries and their flags only.
+That removes the live decision this section used to describe. The earlier plan was to revert the
+lorem so a partly written corpus could ship, accepting that most cards would show no prose. That
+trade-off no longer exists, because there is no partly written corpus. Every placed card has two
+paragraphs behind it.
 
-The cost, and the reason this is the maintainer's call rather than a step in a plan: reverting the
-placeholder makes the branch's preview deploy show prose on ten cards and nothing on the rest,
-which is close to the state that made a previous session commit the placeholder in the first place.
+So the remaining questions are ordinary release questions, not feature ones:
+
+- `detail-report.js` exits 0, which was the stated merge gate, so the branch is no longer held
+  open by the corpus.
+- The shards add roughly 4 MB across 19 files, fetched lazily per shard rather than up front, so
+  no card waits on prose it does not need. See **Don't break these** before touching the fetch.
+- `HANDOFF.md` is branch-scoped scaffolding and should be deleted before the branch merges. Its
+  one piece of content worth keeping elsewhere is the catalogue-error list, which is a real
+  backlog for the maintainer rather than notes about this work.
 
 ## Numbers to check against
 
@@ -452,68 +468,77 @@ at 320px. The image is _inside_ the scroll region, so even a 480-character entry
 comes to about 665px against a 476px region — it always overflows, which is what lets the region be
 a constant height without leaving dead space.
 
-5,460 events, 4,551 written, 909 to go. Full suite is **759 tests across 64 suites**.
+5,460 events, **5,460 written, none to go**. Full suite is **759 tests across 64 suites**, green
+throughout this session; the corpus additions moved no test.
 
 Corpus numbers worth not re-deriving (catalogue size, gzip ratios, shard sizes, where Phase 3
 should start) are in the session notes, not here.
 
-## Kick-off prompt for the next session
+## What the final session added to the lessons above
 
-> Continue **Phase 3** of the event-detail work on the `when` repo. 4,551 of 5,460 entries are
-> written; carry on through the remaining 909, which are all in **`exploration`**, now at
-> 131/1040. Every other shard is finished.
->
-> You are on `claude/event-detail-phase-3-cont-r2jjui` — **not** main, and note that a fresh
-> container may clone an _ancestor_ branch instead; check `git branch -r` and check out the
-> r2jjui branch itself if so. Commit and push each batch as it completes. Do not open a PR.
->
-> Run `npm ci` first: without it `npm run typecheck` resolves a global `tsc` and prints something
-> that looks exactly like a pass. Then read `HANDOFF.md`, especially **The per-batch toolchain
-> lives in `untracked_data/` and dies with the container** and **What this session learned**.
->
-> **The spec and the UI are done and out of scope.** Never loosen a ban in
-> `scripts/events/detail-spec.js` to get an entry through; fix the prose.
->
-> **Rebuild the four scripts in `untracked_data/` first** — they are gitignored and will be gone.
-> The handoff section above says what each does. Then
-> `node scripts/events/detail-report.js --chunks` (delete
-> `untracked_data/event-detail/worklist/` first, it does not clear itself), `make-units.js` to
-> split the 40-event chunks into units of **14**, `make-prompts.js` to write one prompt file per
-> unit, and run **six `event-detail-writer` sub-agents at a time**, one unit each, pointed at
-> their prompt file.
->
-> The generated prompt must carry, in the prompt itself and not the agent definition:
->
-> 1. **The length band**: exactly 2 paragraphs, 220-450 chars each, 480-830 total, **aim at about
->    700**. Say the bounds interact, because 450 plus 450 is 900. Add: cut anything over 780 back
->    toward 700 before filing it. **Repeat the aim-at-700 line in the agent launch too**, not just
->    the prompt file; length drift came back twice this session and that is what fixed it.
-> 2. **`WebFetch`, not `WebSearch`.** Guess `https://en.wikipedia.org/wiki/<Article_Title>` and ask
->    the question in the fetch prompt. On a 404, try a related article that carries the fact — a
->    person, a law, a place — before falling back to one search. A writer hit the WebSearch cap
->    this session and the fetch-first ordering is why it cost nothing.
-> 3. **One single-line file per event** at `untracked_data/event-detail/e-<slug>.json`, shaped
->    `{"<slug>": {"paragraphs": [...]}}` — keyed by slug, or `detail-apply.js` rejects it. Written
->    the moment each entry is done. This is what capped the loss at 46 of 84 when six agents died
->    on a rate limit.
-> 4. **The complete ban list**, copied from `detail-spec.js`, not a summary.
-> 5. **"Check every event, and if you do not, say which."** This is the highest-value line in the
->    prompt and it has now caught four real errors across four recovery passes.
-> 6. **The `exploration` trap**, which is already written at `untracked_data/traps/exploration.md`
->    in this session's history — reconstruct it from the five failure modes it names: manufactured
->    origin stories, a named inventor for a diffuse technology, priority disputes, deep-time dates
->    as estimates that move, and never narrating evolution as having intent. Plus the explicit ban
->    on opening with "The oldest" or "The earliest".
->
-> Per batch: `check-batch.js`, repair the handful of failures yourself with exact counts, run a
-> recovery agent over whatever writers reported unverified (brief it to change **only** what a
-> source contradicts and leave confirmed prose byte-for-byte), then `detail-apply.js` with the
-> batch's explicit file list, `npm run typecheck`, `CI=true npm test -- --watchAll=false`,
-> `CI=true npm run build`, commit, push.
->
-> Read five entries cold per batch, and **run `hooks.js` every batch** — it is the only check that
-> sees an opening monoculture, and on this shard the hedging rule itself created one.
->
-> Writers will flag `year` and `description` errors. **Check every flag before acting on it.** Most
-> do not survive. Leave `description` errors alone and record them in the commit; they are
-> player-visible and the maintainer's call.
+Eleven batches of 84 finished `exploration`. Five things are worth carrying to any future
+large-batch writing job in this repo, and the first is the most useful.
+
+**The length problem was arithmetic, not discipline.** Writers cannot count and do not know it.
+Audited across two batches, every one of 28 self-reported character estimates was LOW, by 47 to
+134 characters, median about 68, which is ten to thirteen per cent. That is exactly why telling
+writers to aim at 700 produced a median near 780 and why restating the band more forcefully kept
+failing. Two fixes worked:
+
+- **Ask for a per-entry count in the report.** The numbers are unreliable, but having to state one
+  pulls the median down. The evidence is accidental and clean: two units killed by a rate limit
+  before they reached their report came back at median 787 with an entry at 900, while units that
+  had to report landed near 700.
+- **Then aim below the target to absorb the bias.** Told to aim at 620, the last batch landed at
+  median 621 with two entries over 780, against 772 and 34 two batches earlier. One writer did
+  better still by hand-counting a single draft (401 characters) and calibrating the rest against
+  it. Measure one, scale the others.
+
+Never treat an estimate as a gate. `check-batch.js` on every entry, every batch.
+
+**Recovery yield tracks the kind of claim, not whether the entry was fetched.** The 16% figure
+above is not a constant. Measured this session over entries writers admitted writing from recall:
+
+| Material                                      | Errors found |
+| --------------------------------------------- | ------------ |
+| Diffuse ancient technology origins            | ~4 in 6      |
+| Deep-time palaeontology and period boundaries | 4 in 10      |
+| Canonical, dated history of science           | 1 in 11      |
+
+One writer's geology recall matched every fetched date, GSSP location and discoverer name. Spend
+recovery on contested, diffuse or nationally loaded claims; a well-documented dated European event
+usually survives. This is the single best lever on cost.
+
+**An invented hedge is as much a fabrication as an invented fact.** Told to avoid false single
+origins, one entry wrote that the horizontal water wheel's origin was "genuinely unsettled, with
+early examples claimed for Roman Anatolia, Norse Scandinavia and Sasanian Iran". No source frames
+those three as rivals; the dispute was manufactured to dodge an attribution the sources do make
+(M.J.T. Lewis, Greek Byzantium, third century BC). Report a dispute the literature has, naming who
+holds which position. Where something genuinely is one person's or one place's work, say so.
+
+**Two more silent-corruption modes, both caught only by parseability.** A raw newline was already
+known. An **unescaped double quote** does the same thing: a write killed mid-file left `"mule
+shoes"` unescaped and the JSON was invalid from that character on, with the prose otherwise
+complete. Tell writers to avoid quotation marks entirely and use reported speech. `check-batch.js`
+tests parseability separately from the spec for exactly this reason, and it is the only thing
+standing between a truncated write and an entry that vanishes from the merge without a word.
+
+**Spec collisions found on top of the list above**, all fixed in the prose, never by loosening a
+ban: `/PLACEHOLDER/i` fires on the ordinary English word and caught seven entries across three
+batches, almost all about zero as a position marker, so **the word "placeholder" is unusable**;
+the card-art ban catches `pictured` used about a mental image or an old reconstruction, which
+happened five times; the question-mark ban catches a puzzle posed as a question; and hedging an
+overstatement into "often cited as" trips the vague-attribution ban, so fixing one failure can
+create another.
+
+## What is left, and it is not writing
+
+1. **Ship it, or decide not to.** See **Shipping it** above. The corpus no longer holds the branch
+   open.
+2. **The catalogue errors.** Everything under **Catalogue errors found while writing** is
+   player-visible and was deliberately left alone: wrong years, wrong names, descriptions that
+   contradict their own cards, duplicate cards, and one card naming a ruler who never existed
+   (`mali-maritime-expansion` credits "Abu Bakr II", a nineteenth-century mistranslation of Ibn
+   Khaldun). That list is the real backlog and is worth moving somewhere permanent before this
+   file is deleted.
+3. **Delete this file** when the branch merges, per the note at the top.
