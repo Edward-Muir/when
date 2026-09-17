@@ -149,6 +149,18 @@
       "That accidental first message, lo instead of login, is usually remembered as fitting: a small, unglamorous glitch behind a network built by Leonard Kleinrock's team that eventually linked four host computers and grew into the modern internet. Nobody involved that night thought they were founding anything."
     ]
   },
+  "arquebus": {
+    "paragraphs": [
+      "An arquebusier carried a length of cord kept smouldering, the slow match, and lowered it into the priming pan by squeezing a lever called a serpentine. The weapon was heavy enough that some versions rested on a forked stick, and a practised soldier might manage only one or two shots a minute in the open.",
+      "What it offered was not skill but numbers: a peasant conscript could be trained to load and fire within weeks, unlike the years a longbowman needed to build the strength to draw a war bow. At Pavia in 1525, Spanish arquebusiers helped break a French cavalry charge and capture King Francis I, a result contemporaries read as the armoured knight's charge losing its old advantage."
+    ]
+  },
+  "artificial-refrigeration": {
+    "paragraphs": [
+      "William Cullen used an air pump at Edinburgh to lower the pressure over a container of diethyl ether, making the liquid boil at room temperature. Boiling draws in heat, and Cullen's rig pulled it from the surrounding air fast enough to leave a skin of ice on the outside of the vessel, a public demonstration usually dated to 1756.",
+      "Cullen had no way to make the effect useful. The vacuum pump was hand cranked, the ether had to be replaced constantly, and no container yet existed to keep cold air in rather than let it escape, so the demonstration stayed a lecture piece. Mechanical refrigeration built on the same principle only appeared decades later."
+    ]
+  },
   "aspirin-invented": {
     "paragraphs": [
       "Bayer credited Felix Hoffmann alone for decades, but the chemist working beside him, Arthur Eichengrun, later said he had directed the project and that Hoffmann only carried out the bench work. Company records from the period are incomplete, and historians still weigh the two claims against each other.",
@@ -179,6 +191,12 @@
       "Almost all the particles passed straight through, but a small fraction bounced back at sharp angles, some almost reversed. Rutherford later said it was about as incredible as firing a heavy shell at tissue paper and having it bounce back at him. The only explanation was that an atom's positive charge and most of its mass sit concentrated in a tiny core, which he named the nucleus."
     ]
   },
+  "babbage-analytical-engine": {
+    "paragraphs": [
+      "Charles Babbage began designing the Analytical Engine around 1833, moving beyond the fixed calculations of his earlier Difference Engine toward a machine that could be programmed. It was to read instructions from punched cards, an idea borrowed directly from the Jacquard loom, and hold numbers in a mechanical store separate from the unit that processed them.",
+      "That split between memory and processing is the same division every modern computer still uses. Babbage never secured the funding or engineering to finish it, and no complete Analytical Engine was ever built in his lifetime; only fragments of a later mill were assembled by his son decades afterward, and it took the Science Museum until 1991 to prove one of his designs actually worked."
+    ]
+  },
   "bakelite-plastic": {
     "paragraphs": [
       "Leo Baekeland was not trying to invent plastic. He was chasing a synthetic substitute for shellac, a resin secreted by lac beetles and used to coat everything from phonograph records to electrical wiring. Working in Yonkers, New York, he found that phenol and formaldehyde, heated together under pressure, set into a hard resin that would not melt or dissolve again.",
@@ -207,6 +225,12 @@
     "paragraphs": [
       "Earle Dickson worked as a cotton buyer for Johnson & Johnson in 1920 when he started sticking small pads of gauze onto strips of surgical tape so his wife Josephine, who cut and burned herself often while cooking, could bandage her own wounds without asking for help. He kept the strips loosely covered with crinoline so they would not stick together on the roll.",
       "Dickson showed the idea to his employer, and Johnson & Johnson began selling it as the Band-Aid. Early sales were slow, since the strips were cut and assembled by hand, but the company later mechanised production and gave away free Band-Aids to Boy Scout troops, a marketing push that helped turn a homemade fix into a household staple."
+    ]
+  },
+  "banknote": {
+    "paragraphs": [
+      "Tang dynasty merchants around 700 to 800 used a system called flying cash, a certificate that let a trader deposit copper coin in one city and collect the equivalent elsewhere, sparing him the weight of carrying strings of coin across the country. It was a bill of exchange rather than money in its own right, redeemable at a government office rather than spent hand to hand.",
+      "True paper currency, the kind that circulated as payment itself, arrived later: merchants in Chengdu issued jiaozi notes in the early eleventh century, and the Song government took over their printing in 1023. Millions of notes eventually circulated against a much smaller reserve of coin, and by 1204 a note once worth a thousand coins traded for as few as a hundred."
     ]
   },
   "barbed-wire-invented": {
@@ -281,6 +305,12 @@
       "Sorting the reactions gave him three groups, A, B and O, later joined by a fourth, AB. The pattern explained why some transfusions had been killing patients since the practice began and why others worked, turning transfusion from a gamble into a procedure that could be checked in advance."
     ]
   },
+  "blueprint": {
+    "paragraphs": [
+      "John Herschel described the cyanotype in 1842: paper coated with iron salts turns a deep Prussian blue where light strikes it and washes clean where it does not, leaving white lines wherever a drawing had blocked the sun. He devised it to copy his own notes, not engineering plans.",
+      "Draughtsmen only adopted it for reproducing technical drawings decades later, once a Paris firm began marketing the paper under the name Ferro-prussiate in the 1870s. Its appeal was cost: a copy needed nothing but water and sunlight, and the white-on-blue print stayed the standard way to duplicate plans into the twentieth century."
+    ]
+  },
   "bluetooth-invented": {
     "paragraphs": [
       "Ericsson engineers in Lund, Sweden began working on a short range radio link in 1989 to free phones and accessories from cables, with the design taking practical shape through the mid 1990s. By 1998 Ericsson, Nokia, Intel, IBM and Toshiba had formed a group to turn the technology into a shared industry standard rather than a proprietary Ericsson feature.",
@@ -305,10 +335,22 @@
       "Light was emitted or absorbed, in Bohr's model, only when an electron jumped between one allowed orbit and another, and the size of that jump matched the exact colours already measured in hydrogen's spectrum. It was a strange picture, borrowed rules with no deeper justification yet, but it was the first model to explain a real, previously mysterious pattern of data."
     ]
   },
+  "bolt-action-rifle": {
+    "paragraphs": [
+      "Johann Nikolaus von Dreyse began experimenting with breech-loading firearms in 1824, work that led over the following decade to the needle gun, patented in 1836. A firing pin, the needle, pierced the base of a paper cartridge to strike a primer set ahead of the powder, letting a soldier reload from the breech rather than ram a charge down the muzzle.",
+      "Prussia adopted it in 1841 and kept the design secret for years, giving its infantry a rate of fire no muzzle-loading army could match. It was instrumental in Prussia's 1866 victory at Koniggratz, alongside training and tactics, and its needle-pierced cartridge became the template that later bolt-action designs across Europe refined and replaced."
+    ]
+  },
   "bone-tools": {
     "paragraphs": [
       "Bone tools excavated from African sites date to around 1.5 million years ago, made by knapping or grinding animal bone the same way toolmakers already worked stone. Bone holds an edge less well than flint but can be worked into shapes stone cannot, particularly thin points, which is why it became the material of choice for piercing and scraping tasks stone tools handled poorly.",
       "Far later evidence shows how the craft matured: at Blombos Cave in South Africa, around 70,000 years ago, people were producing bone awls and projectile points through consistent, repeatable production steps rather than one-off shaping. That gap of well over a million years between the earliest bone tools and Blombos's finished kit traces a slow, continuous refinement of the same basic idea."
+    ]
+  },
+  "boring-machine": {
+    "paragraphs": [
+      "John Wilkinson patented his boring technique in 1774 to true up cannon: instead of holding the cutting bar rigid and rotating the gun around it, he rotated the barrel itself and let a bar supported at both ends cut a straight, uniform bore. Off-centre cannon bores had wasted powder and sometimes burst; Wilkinson's machine removed most of that error.",
+      "James Watt had spent years failing to get cylinders accurate enough to stop his steam engine's piston leaking past its seal. Wilkinson's rig, adapted from the cannon boring method, cut cylinders true enough to close that gap, and Boulton and Watt gave him an exclusive supply contract for their engines as a result."
     ]
   },
   "bounty-mutiny": {
@@ -327,6 +369,12 @@
     "paragraphs": [
       "The apparatus behind Boyle's 1662 law was a simple bent glass tube, closed at one end and open at the other, into which mercury was poured. As the mercury rose on the open side, it squeezed the trapped air in the closed end into a smaller space, and Boyle could read off both the pressure and the resulting volume from marks on the glass.",
       "Several historians credit the tube itself to Boyle's assistant, Robert Hooke, who built and refined the apparatus in Boyle's laboratory. The result, that a gas's pressure rises exactly as its volume falls when temperature stays fixed, held for the modest pressures Boyle could test and became one of the earliest laws of physical science expressed as a precise ratio."
+    ]
+  },
+  "brace-drill": {
+    "paragraphs": [
+      "A 1425 painting by the Flemish artist Robert Campin shows a workman gripping the U-shaped crank that gave the brace its swinging motion, the earliest known depiction of the tool. The oldest surviving example was recovered from the Mary Rose, Henry VIII's warship, which sank in 1545 and stayed on the seabed until 1982.",
+      "Earlier drills worked with a bow and cord, or spun between the palms, and needed a free hand just to keep the string taut, delivering torque in fits and starts. The brace let a carpenter lean a shoulder against the head and crank continuously with the other arm, boring a hole far faster and changing little in basic form for the next four centuries."
     ]
   },
   "braille-invented": {
@@ -377,6 +425,12 @@
       "They struck out for a station further south rather than following the party that had just departed, and did not reset the tree's mark to show they had come and gone. When the departed men returned briefly in May, the unchanged mark told them nothing had happened, and they left again. Only one of the four men who had reached the Gulf, John King, survived to return to Melbourne."
     ]
   },
+  "buttons-with-buttonholes": {
+    "paragraphs": [
+      "Before the thirteenth century, garments in Europe were closed with toggles, lacing or a belt because the two edges of cloth were butted together rather than overlapped, leaving nothing for a simple button to catch on. German tailors solved this by cutting a slit through overlapping fabric so a button could pass through and hold, a small change that let clothing fit closer to the body than pinned or draped cloth ever could.",
+      "The button trade grew quickly enough to need its own guilds within the century: in Paris, button makers were folded into the rosary makers' guild before regulations split them into horn and bone, base metal, and precious metal and glass specialists. Fitted, buttoned clothing spread from Germany outward and reshaped what medieval tailoring could attempt, particularly in close-cut sleeves and bodices."
+    ]
+  },
   "cabot-north-america": {
     "paragraphs": [
       "John Cabot made landfall on 24 June 1497, sailing for Henry VII of England, but where he actually stepped ashore is unresolved. Historians have argued for sites across Newfoundland, Cape Breton, Labrador and Maine; Cape Bonavista was chosen only as an official marker for the 500th anniversary in 1997.",
@@ -387,6 +441,12 @@
     "paragraphs": [
       "Cabral left Lisbon on 9 March 1500 with thirteen ships bound for India by the sea route da Gama had just opened, and reached the coast of what is now Brazil on 22 April, at a hill he named Monte Pascoal. Whether that landfall was a planned detour or a genuine accident of currents is still argued; no surviving document settles it either way.",
       "He judged the coastline too large to be an island, claimed it for Portugal under the Treaty of Tordesillas, exchanged gifts with the people he met there, and had a wooden cross raised before sending a ship home to report the find and continuing on to India."
+    ]
+  },
+  "calico": {
+    "paragraphs": [
+      "Weavers in and around Calicut, on India's Malabar coast, were producing the plain cotton cloth that would later carry the city's name by at least the eleventh century, calling it chaliyan after the local weaving caste. By the twelfth century it was well known enough that the Indian scholar Hemachandra described printed calico patterned with lotus flowers.",
+      "Gujarati cotton spun the same cloth for a wider export trade, reaching Cairo by the fifteenth century and Europe from the seventeenth. Its cheapness and bright printed patterns threatened England's wool trade so badly that Parliament passed the Calico Acts around 1700 to restrict imports, pushing English manufacturers toward importing plain grey cloth and printing it themselves."
     ]
   },
   "calotype-photography": {
@@ -515,6 +575,12 @@
       "Historians reviewed the case and rejected it outright. Robert Finlay called its reasoning circular and its evidence spurious, and a group of international scholars issued a joint statement describing the book as fiction presented as revisionist history, noting that no document or artefact has ever supported it."
     ]
   },
+  "chintz-printed-clothing": {
+    "paragraphs": [
+      "Block-printers and dye-painters in Gujarat and along the Coromandel Coast fixed colour into cotton with mordants, chemical agents that bonded dye to fibre so patterns held through repeated washing, a technique European workshops could not yet match.",
+      "English and Dutch traders carried the cloth home as chintz, and demand grew large enough that domestic wool and silk weavers lobbied against the competition. Britain banned the import and wearing of most printed Indian cotton in 1721, a ban that lasted decades and pushed English manufacturers to copy the Indian dyeing methods for themselves."
+    ]
+  },
   "city-of-uruk": {
     "paragraphs": [
       "A wall twelve to fifteen metres high ran nine kilometres around Uruk, enclosing temple districts dedicated to the goddess Inanna and the sky god Anu and a canal network dense enough that the city has been likened to Venice set down in the desert. Around 3100 BCE this was the largest built-up area anywhere on earth.",
@@ -537,6 +603,12 @@
     "paragraphs": [
       "Andre Djourno and Charles Eyries carried out the operation in Paris in 1957 on a man who had been left completely deaf after surgery to treat a facial condition. They wound a wire directly onto the stump of his auditory nerve and connected it to an external induction coil, letting an electrical current stand in for the sound his cochlea could no longer pick up.",
       "The device used a single channel, delivering one crude pulse of electricity rather than a spread of frequencies, so the patient heard clicks and buzzes rather than intelligible speech. It was still a genuine first: proof that the nerve itself could be stimulated electrically to produce a sensation of sound. Usable speech had to wait for multichannel implants developed by Graeme Clark and others in the late 1970s."
+    ]
+  },
+  "coil-spring": {
+    "paragraphs": [
+      "Wind a length of metal wire into a tight helix and it will store the force used to twist it, releasing that energy steadily as it unwinds, a property locksmiths in the early fifteenth century put to use in spring-loaded door locks. The same coil, wound tighter, could hold enough force to drive a mechanism for hours rather than seconds.",
+      "Clockmakers borrowed the idea soon after, replacing the weights that had driven earlier clocks with a coiled mainspring, which meant a clock no longer needed to hang from a wall to work. That freedom from gravity, packing enough stored force into a small coil, is what let clocks shrink into the first portable watches by the following century."
     ]
   },
   "coins-invented": {
@@ -591,6 +663,12 @@
     "paragraphs": [
       "A single ingredient will not haft a spear point reliably. At Sibudu Cave in South Africa, researchers identified glue no later than 71,000 years old that mixed plant gum with red ochre, and sometimes beeswax, fat or coarse particles, to bind stone points into wooden shafts for hunting weapons.",
       "Making it required real judgement: the mixture had to be warmed gently, since boiling or over-drying it weakened the finished bond, and its acidity had to be controlled for the glue to set properly. That balance of heat, moisture and chemistry is why researchers treat the recipe as evidence of planning, not trial and error repeated until something stuck."
+    ]
+  },
+  "compound-air-compressor": {
+    "paragraphs": [
+      "A compound air compressor splits the work of compression across two or more cylinders in sequence, each stage squeezing the gas further and cooling it between stages before it reaches the next. A single cylinder pushed to high pressure wastes much of its work as heat; dividing the job keeps the gas closer to its starting temperature and needs less power overall.",
+      "The idea entered mining and tunnelling practice in the late 1820s, where compressed air was piped underground to drive rock drills and ventilate workings without carrying flame or exhaust fumes into confined spaces. Multi-stage compression remained the standard solution wherever engineers needed pressures a single cylinder could not reach efficiently, from pneumatic tools to early refrigeration."
     ]
   },
   "compound-paints": {
@@ -663,6 +741,12 @@
     "paragraphs": [
       "Roman law recognised bodies distinct from the individuals in them: a universitas, corpus or collegium could own property, sign contracts, inherit legacies and sue or be sued through its own representatives. After Julius Caesar's Lex Julia, in the 40s BC, forming one required approval from the Senate or the emperor.",
       "Most were not businesses in a modern sense but religious associations, burial clubs, political groups and craft guilds. By Justinian's reign in the 6th century AD this framework of a legal person separate from its members was settled Roman law, and medieval Europe inherited the template rather than reinventing it."
+    ]
+  },
+  "corrugated-galvanised-iron": {
+    "paragraphs": [
+      "Henry Robinson Palmer, an engineer for the London Dock Company, patented indented or corrugated metal sheeting in 1829. Pressing iron into ridges stiffened it enough to span a roof without a heavy timber frame beneath, while keeping the sheet thin and light to transport.",
+      "Galvanising, coating the iron in zinc, followed soon after and let the sheets shrug off rust in ways bare iron could not. Together the two innovations produced a roofing material cheap enough for farm sheds and light enough to ship flat-packed to distant colonies, where it became a fixture of rural Australian and New Zealand building long before it caught on in Britain's own towns."
     ]
   },
   "cortes-meets-aztecs": {
@@ -869,6 +953,12 @@
       "Deliberate breeding for a woolly coat only shows up around 6000 BCE, and the earliest surviving woven wool cloth dates to about 4000 BCE, some two thousand years after the animals themselves were first kept. Fleece, in other words, was a slow-arriving bonus on top of an animal already valued for its meat and its milk."
     ]
   },
+  "double-entry-bookkeeping": {
+    "paragraphs": [
+      "A Florentine merchant's ledger from the Farolfi firm, kept by Amatino Manucci in 1299 and 1300, is the oldest surviving account book to record every transaction twice, once as a debit and once as a matching credit, so the books could be checked against themselves. Italian trading cities took up the method through the fourteenth century as their businesses grew too complex for a simple running list of payments.",
+      "It took two more centuries for anyone to write the system down as a teachable method: the friar Luca Pacioli, a collaborator of Leonardo da Vinci, printed a full description of double-entry accounting inside a mathematics textbook in Venice in 1494. Pacioli did not invent the practice, but his book let merchants elsewhere learn it without an apprenticeship in a Florentine counting house."
+    ]
+  },
   "drake-circumnavigation": {
     "paragraphs": [
       "Drake set out from Plymouth in December 1577 with five ships and 164 men, ostensibly bound for Alexandria to disguise a raid on Spanish territory in the Pacific. Two vessels were scuttled crossing the Atlantic, another turned back, and a captured prize was later abandoned, so only his flagship, renamed the Golden Hind, went on through the Strait of Magellan.",
@@ -947,6 +1037,12 @@
       "That arrangement worked well enough for a short suburban run but proved dangerous once the line grew busier, since a person or animal touching both rails completed the circuit. Siemens switched the route to overhead power in 1883, the configuration that became standard for the electric tramways later built across Europe and America."
     ]
   },
+  "electric-telegraph": {
+    "paragraphs": [
+      "Francis Ronalds strung eight miles of iron wire on wooden frames around his mother's garden in Hammersmith and, using static electricity and a pair of synchronised clock dials, sent signals along it in 1816. It worked over a distance that made a genuine telegraph line look plausible for the first time.",
+      "He offered the system to the Admiralty, whose secretary Sir John Barrow dismissed it in writing on 5 August 1816 as wholly unnecessary, since Britain already used semaphore towers. The rejection set back electric telegraphy in Britain by roughly two decades, until William Fothergill Cooke and Charles Wheatstone built a commercial version in the 1830s."
+    ]
+  },
   "electric-traffic-light": {
     "paragraphs": [
       "In August 1914 the American Traffic Signal Company installed a red and green electric signal at the corner of East 105th Street and Euclid Avenue in Cleveland, Ohio. It was based on a design patented two years earlier by Lester Wire, a Salt Lake City policeman who had built an earlier version from a wooden box and coloured lights to save officers from directing traffic by hand.",
@@ -971,6 +1067,12 @@
       "The needle did not point toward or away from the wire but curved to sit at a right angle to it, showing that a current sets up a circular magnetic field around itself. Ampere and others turned that single observation into a mathematical theory within months, and it underlies every electric motor built since."
     ]
   },
+  "electromechanical-relay": {
+    "paragraphs": [
+      "Joseph Henry, working at what became Princeton, built an electromagnet strong enough in 1835 to strike a lever and close a second circuit, using a weak signal to switch a much stronger one. That switch, the relay, meant a telegraph signal weakened by miles of wire no longer had to reach its destination unaided.",
+      "A relay at intervals along a line could sense the faint incoming pulse and use fresh, local power to send it on at full strength. Henry published his findings freely rather than patenting them, and Samuel Morse's commercial telegraph, along with Charles Wheatstone's competing system, both depended on relays built on Henry's principle to carry signals over long distances at all."
+    ]
+  },
   "electron-discovered": {
     "paragraphs": [
       "Thomson did not call it an electron. Bending cathode rays with electric and magnetic fields in his Cambridge laboratory, he measured a charge-to-mass ratio far too large for any known atom and concluded the rays were made of something smaller, which he named a corpuscle.",
@@ -981,6 +1083,12 @@
     "paragraphs": [
       "Elisha Otis designed his safety brake in 1852 while installing a freight hoist at a bedstead factory in Yonkers, New York. A toothed guide rail ran alongside the hoist car, and a spring released a catch into the teeth the instant tension on the lifting rope dropped, whether from a snapped cable or a slack line.",
       "He proved it worked in public at the 1854 New York Crystal Palace exhibition, standing on a platform and having an assistant cut the rope holding it up. The platform fell only inches before the brake caught. Buildings taller than a few storeys, impractical while stairs were the only alternative, became sellable soon after."
+    ]
+  },
+  "endless-chain-drive": {
+    "paragraphs": [
+      "Su Song's water-powered clock tower in Kaifeng, finished in 1094, stood roughly twelve metres tall and carried a bronze armillary sphere weighing several tonnes at its summit. Linking that sphere to the driving shaft below needed a mechanism that could carry motion up the tower without slipping, which Su Song solved with what he called the celestial ladder.",
+      "That chain, an endless loop running over toothed wheels with six hundred teeth each, is the oldest illustrated example of a power-transmitting chain drive anywhere, dividing each day into intervals of two minutes twenty-four seconds. Mechanical mannequins driven off the same works stepped out through little doors to strike bells, beat drums and hold up plaques announcing the hour."
     ]
   },
   "eris-discovery": {
@@ -1013,6 +1121,12 @@
       "In 1929 he combined those distances with redshift measurements gathered by Vesto Slipher and others, and found that the farther away a galaxy sat, the faster it appeared to be receding. The relationship, now called Hubble's law, gave the first observational evidence that the universe itself is expanding rather than static."
     ]
   },
+  "explosive-bomb": {
+    "paragraphs": [
+      "A Song commander who saw one of the Jin dynasty's iron-cased bombs described it as shaped like a gourd, cast from pig iron roughly two inches thick, and loud enough to shake a city wall from within. At the 1221 siege of Qizhou, defenders recorded injuries from the blasts in grim detail, describing faces torn away by fragments where earlier soft-cased gunpowder weapons had only scorched.",
+      "The hard iron shell, rather than the powder itself, was the real advance: shrapnel from a shattered casing did far more damage than a burst of flame and smoke. Mongol armies picked up the design as they absorbed Jin territory and gunsmiths, and stoneware bombs of the same family, called thunder-crash bombs, have turned up in a shipwreck dated to the 1270s or 1280s, evidence the technology was already standard naval equipment."
+    ]
+  },
   "eyeglasses-invented": {
     "paragraphs": [
       "No inventor's name survives with certainty. A Dominican friar, Giordano da Pisa, told a congregation in 1306 that spectacles were less than twenty years old and that he had met the man who first made them, without recording who that was.",
@@ -1031,6 +1145,12 @@
       "Manufacturers took the claim seriously, and within a few years fibre purity improved enough to prove him right. Kao shared the 2009 Nobel Prize in Physics for the work, more than four decades after a paper that most of his contemporaries had treated as an interesting but implausible bet."
     ]
   },
+  "fire-lance": {
+    "paragraphs": [
+      "A painted banner from Dunhuang, dated to around 950, shows a figure holding a tube that spits flame, the earliest surviving image of the weapon. It paired a bamboo tube packed with gunpowder to a spear shaft, so a soldier could jab with the blade and, before or after, ignite a jet of fire from the tube lashed alongside it.",
+      "Documented combat use follows at the siege of De'an in 1132, where defenders used fire lances against a Jin army. Later versions packed pellets and scrap metal into the gunpowder charge to fire projectiles along with the flame, and by the mid-thirteenth century metal barrels replaced the bamboo, turning the weapon into an ancestor of the hand cannon rather than a mere flame-thrower on a stick."
+    ]
+  },
   "fire-mastery": {
     "paragraphs": [
       "Using fire and making it are two different skills with two different timelines. Charred bones deep inside Wonderwerk Cave in South Africa, out of reach of any wildfire, put fire use back around 1.79 million years, well before Homo sapiens existed. The oldest strong evidence for actually starting a fire on demand is far younger: baked earth with flint and pyrite at Barnham in England, roughly 400,000 years old.",
@@ -1041,6 +1161,12 @@
     "paragraphs": [
       "Mudbrick came first, dried in the sun in the upper Tigris valley well before 7500 BCE, and it stayed the default building material for millennia because it was free and quick. Somewhere in Mesopotamia between roughly 5000 and 4500 BCE, someone found that passing a brick through a kiln instead changed it permanently.",
       "Firing drives the water out of the clay and fuses its minerals, so the brick no longer softens in rain or wicks up groundwater the way a sun-dried one does. That made it worth the fuel cost for drains, foundations and anything meant to outlast a single flood season, and it is why fired brick from this period still survives to be excavated."
+    ]
+  },
+  "fireworks": {
+    "paragraphs": [
+      "Long before gunpowder existed, people in the Han dynasty threw whole bamboo stems onto a fire and let the trapped air explode with a loud crack, a noisemaker meant to frighten off evil spirits rather than to delight anyone. Song dynasty craftsmen replaced the bamboo's own air pocket with gunpowder rolled inside paper tubes, giving a sharper, more reliable bang that did not depend on finding the right stalk.",
+      "By the twelfth century these firecrackers, called baozhang, were common enough that ordinary market stalls sold them to the public rather than restricting them to court or temple use. The same gunpowder-in-paper-tube principle, scaled up and aimed skyward, became the basis for the aerial fireworks displays that later spread along trade routes to the Islamic world and Europe."
     ]
   },
   "first-arcade-video-game": {
@@ -1193,6 +1319,18 @@
       "The device would not appear in a dated Chinese painting until Ma Yuan's Angler on a Wintry Lake in 1195, eight centuries later, which is why so much of the reel's early history rests on brief textual mentions rather than pictures. It reached Europe far later still, arriving in English angling manuals only in the sixteenth century."
     ]
   },
+  "flintlock": {
+    "paragraphs": [
+      "French gunsmith Marin le Bourgeoys is credited around 1610 with combining the steel and the pan cover into a single part, so the same jaw that struck a spark also knocked the cover open in one motion, dropping sparks straight into the priming powder.",
+      "It replaced slower, less reliable ignitions: the smouldering cord of the matchlock, and the spring-driven wheellock, which fired reliably but cost far more to build. Simpler and cheaper than either, the flintlock became the standard European military firearm for roughly two centuries, until percussion caps replaced it in the early 1800s."
+    ]
+  },
+  "floating-dry-dock": {
+    "paragraphs": [
+      "An anonymous Venetian pamphlet from 1560, Descrittione dell'artifitiosa machina, gives the earliest known description of a floating dock: two large timber trestles flanking a grounded ship to form a kind of roof over the hull for repair. Its author was seeking a licence for the method, not credit as an inventor.",
+      "The idea solved something a fixed dry dock could not: a stone basin had to be dug and sluiced with the tide, tying repairs to one harbour, while a floating dock could be towed wherever a hull needed work. Portsmouth had built England's first fixed dry dock in 1496, decades before floating designs like the Venetian one were described."
+    ]
+  },
   "floppy-disk-invented": {
     "paragraphs": [
       "IBM did not build the floppy disk to move files between machines, which is what it later became famous for. Engineers Warren Dalziel, Jay Brent Nilson and Ralph Flores designed the 8 inch disk, shipped as the 23FD in 1971, to solve a narrower problem: loading microprogram code into a mainframe's control store at startup, a job that needed something cheap, replaceable and read only.",
@@ -1247,6 +1385,12 @@
       "What he actually solved, in a patent granted in 1884, was the air problem rather than the ink problem. Earlier pens let air back into the reservoir in one uncontrolled gulp, forcing ink out in a flood; Waterman's three-channel feed let air in and ink out at the same steady rate, so the pen wrote without flooding or starving."
     ]
   },
+  "francis-turbine": {
+    "paragraphs": [
+      "James Francis was chief engineer for the Locks and Canals company in Lowell, Massachusetts, when he redesigned the mill town's water turbines in 1848. Rather than relying on trial and error, he measured how water actually moved through a runner and used the figures to calculate blade shapes mathematically.",
+      "That approach let engineers scale the design up or down for a given flow and head of water instead of copying one working example. Francis published his methods openly, and the mixed-flow layout he worked out at Lowell became the most common turbine design in hydroelectric dams built worldwide over the following century."
+    ]
+  },
   "franklin-kite-experiment": {
     "paragraphs": [
       "No bolt struck the kite. What the popular version leaves out is that Benjamin Franklin's kite drew a charge simply by flying near a storm cloud in June 1752, with his son William holding the line beside him. Franklin noticed loose threads on the string standing apart from each other, the sign that it had become charged.",
@@ -1263,6 +1407,12 @@
     "paragraphs": [
       "Clarence Birdseye got the idea in Labrador between 1912 and 1915, watching Inuit fishermen pull fish from the ice that had frozen almost instantly in the brutal cold and still tasted fresh when thawed months later. Slow commercial freezing, by contrast, formed large ice crystals that ruptured cells and left food mushy.",
       "In 1930 his company tested the resulting quick-frozen method commercially, stocking eighteen retail stores around Springfield, Massachusetts with 26 frozen items, from peas to fish fillets. The trial is generally treated as the start of retail frozen food, though home freezers common enough to store it widely were still years away."
+    ]
+  },
+  "fuel-cell": {
+    "paragraphs": [
+      "William Grove built his gas voltaic battery in 1842 from platinum electrodes standing in separate tubes of hydrogen and oxygen, dipped into dilute sulphuric acid. Combining the two gases across the electrodes produced a steady current, the reverse of using electricity to split water into its gases.",
+      "Grove stacked several of these cells in series to raise the voltage, proving the reaction could do useful electrical work rather than just release heat. Nobody built a practical version for another century: the cell needed platinum catalysts and pure gases that nineteenth century industry had no cheap way to supply."
     ]
   },
   "funerals-burial": {
@@ -1295,6 +1445,12 @@
       "The demonstration stayed a curiosity for years before Murdoch scaled it up: by 1798 he was lighting the main building of the Soho Foundry, and in 1802 he lit its exterior in a public display bright enough to draw crowds. Within a couple of decades gas lighting was ordinary in British streets and factories."
     ]
   },
+  "gas-stove": {
+    "paragraphs": [
+      "James Sharp, an engineer in Northampton, patented a stove burning piped coal gas in 1826, using a network of jets and dampers to give a cook control over heat that an open coal fire never allowed. He did not put it into production straight away.",
+      "Sharp began manufacturing gas stoves commercially in 1834 and opened a dedicated factory in 1836, marketing them through the firm Smith & Phillips. Uptake depended entirely on a house already having a gas supply, which limited early sales to towns with gasworks, but the stove eventually displaced the coal range as urban gas mains spread through the century."
+    ]
+  },
   "gatling-gun": {
     "paragraphs": [
       "Richard Gatling built his gun in 1861 not to kill more efficiently but, he said later, to reduce the size of armies. Most Civil War deaths came from disease spread through crowded camps, and Gatling reasoned that a single crew turning a hand crank could do the work of a hundred riflemen and let fewer men be exposed to it.",
@@ -1305,6 +1461,12 @@
     "paragraphs": [
       "The oldest surviving gears anywhere come from Warring States China, dated to the 4th century BC and now held at the Luoyang Museum. In Greece, Aristotle described gears around 330 BC turning windlasses and noted that a driven wheel reverses the direction of the one driving it.",
       "The Antikythera mechanism, built between roughly 150 and 100 BC and recovered from a shipwreck, shows how far Greek gearing had advanced: dozens of interlocking bronze wheels tracking astronomical cycles and predicting eclipses. Nothing of comparable mechanical complexity is known to survive from the next thousand years."
+    ]
+  },
+  "general-anesthetic": {
+    "paragraphs": [
+      "On 13 October 1804, the Japanese surgeon Hanaoka Seishu removed a breast tumour from a sixty-year-old patient named Kan Aiya after giving her tsusensan, an oral compound of thorn apple and aconite that he had spent years testing on animals and, by some accounts, on his own mother and wife.",
+      "Hanaoka worked without knowledge of contemporaneous surgery in Europe, where general anesthesia would not be reported for another four decades. Word of his method spread among Japanese physicians through his private school in Kii Province, but the compound's toxicity and Japan's isolation kept it from reaching surgeons elsewhere."
     ]
   },
   "general-relativity": {
@@ -1385,6 +1547,12 @@
       "Isaac Newton used tracking data on the comet's path to test Kepler's laws and to argue that comets, like planets, obey gravity rather than moving unpredictably, work that fed directly into the Principia seven years later. In Mexico, the Jesuit astronomer Eusebio Kino published his own account of its course, one of the earliest scientific treatises printed anywhere in the Americas."
     ]
   },
+  "greek-fire": {
+    "paragraphs": [
+      "The chronicler Theophanes credits its invention to Kallinikos, a refugee architect from Heliopolis in Syria, around 672. Byzantine crews first used it in battle during the siege of Constantinople from 674 to 678, pumping it from bronze tubes mounted on ships to set Arab vessels alight on the water itself, which ordinary burning oil could not do.",
+      "The formula was guarded as a state secret so closely that even enemies who captured the pumps and stored liquid could not reproduce it, and the recipe is genuinely lost rather than merely undocumented. Modern chemists think it was petroleum thickened with pine resin, closer to napalm than to a simple oil fire, drawn from natural seepage sites around the Black Sea, though this remains an informed guess rather than a recovered formula."
+    ]
+  },
   "ground-stone-tools": {
     "paragraphs": [
       "Flaking a stone chips off sharp fragments by striking it; grinding does the opposite, wearing a coarse-grained rock like basalt or granite down slowly against another stone, often with sand and water as an abrasive, until it takes on a smooth, durable working surface rather than a cutting edge.",
@@ -1413,6 +1581,18 @@
     "paragraphs": [
       "At Kathu Pan in South Africa, stone points around 500,000 years old show damage patterns matching a spear tip rather than a hand-held blade, the earliest solid evidence that toolmakers were binding stone to wood. Hafting turns a single sharp edge into a compound tool: the same point thrown or thrust with a shaft's leverage does far more damage than the stone alone ever could.",
       "Making a hafted spear demands planning several steps ahead: shaping the point, preparing a shaft, and finding a binding, whether sinew, plant fibre or an early adhesive, that will hold under impact. That sequence of foresight is why some researchers treat hafting as evidence for a real jump in working memory among the common ancestors of humans and Neanderthals, not just a better weapon."
+    ]
+  },
+  "hand-cannon": {
+    "paragraphs": [
+      "A fire lance was a spear with a tube of gunpowder lashed near the blade, spitting flame at close range rather than throwing a projectile. Chinese gunsmiths thickened and hardened that tube until it could survive a real explosive charge and throw a pellet or dart, a shift usually placed in the thirteenth century. A bronze hand cannon from Heilongjiang dates to 1288, and the Xanadu Gun of 1298 is the oldest surviving example bearing its own date.",
+      "Yuan forces used hand cannons in campaigns through the 1280s, and the weapon travelled west along Mongol-era routes, reaching Europe by the 1320s. Barrels moving from bamboo to bronze to iron made it durable enough for repeated firing, and by the fifteenth century a trigger and lock had turned the hand cannon into the arquebus."
+    ]
+  },
+  "handgun-first-use": {
+    "paragraphs": [
+      "Handheld guns were in European hands well before 1364. A Florence municipal register records cannon in 1326, two German knights attacked Cividale del Friuli with gunpowder weapons in 1331, and hand cannons were in common French use by 1338. What 1364 supplies is a word rather than a first: Bernabo Visconti, lord of Milan, recruited seventy archibuxoli that year, the earliest certain use of the term that became arquebus.",
+      "The weapons behind that term were simple iron tubes set into a wooden stock or a socketed pole, fired by touching a match to a powder hole, so one soldier could brace and aim without a separate crew. Handheld firearms had already been in Chinese use for a century, and the Italian records show how fast the city-states armed themselves once the technology arrived."
     ]
   },
   "hanno-africa": {
@@ -1511,10 +1691,22 @@
       "Fire is harder to pin on it than the old textbook image suggests. Burnt material at Wonderwerk Cave in South Africa is 1.7 million years old, but controlled, everyday fire use does not become common in the archaeological record until 300,000 to 400,000 years ago, long after Homo erectus had spread across three continents. Its Acheulean handaxes, by contrast, are unmistakably its own invention."
     ]
   },
+  "hookah": {
+    "paragraphs": [
+      "One account credits Hakim Abul-Fath Gilani, a Persian physician at the Mughal court of Akbar, with the idea of drawing tobacco smoke through a bowl of water to cool and, he believed, purify it. Safavid Persia took up a similar device around the same period, and no surviving record settles which reached the idea first.",
+      "Early bowls were carved coconut shells before craftsmen moved to clay, wood, brass and eventually glass. The design spread from Mughal India and Safavid Persia into the Ottoman Empire and North Africa, each region reshaping the vessel, the tobacco blend, and the etiquette of passing the pipe around a gathering."
+    ]
+  },
   "hooke-discovers-cells": {
     "paragraphs": [
       "Hooke was not looking at anything alive. He sliced a thin sheet of cork and put it under his microscope for a 1665 book called Micrographia, and found the dead tissue was built from tiny walled compartments, packed together with no gaps between them.",
       "The shape reminded him of a monk's dormitory or a honeycomb, so he called the compartments cells, a name that stuck long after biologists worked out what was actually inside living ones. Micrographia's engravings, some folding out larger than the book itself, made his tiny discovery visible to readers who had never looked through a lens."
+    ]
+  },
+  "horse-collar": {
+    "paragraphs": [
+      "A mural in cave 257 at Dunhuang, painted between 477 and 499, shows a horse pulling with a rigid padded collar sitting on its shoulders rather than a strap across its throat. Under the older throat-and-girth harness, a pulling horse choked itself the harder it strained, capping how much weight it could move without cutting off its own breathing.",
+      "The collar transferred the load onto the shoulder bones instead of the windpipe, letting a horse pull several times more than before. It spread slowly west along trade routes, reaching Europe by around the twelfth century, where it let horses replace oxen on ploughed fields and cut journey times for carts on the growing road network."
     ]
   },
   "horseshoe-invented": {
@@ -1553,16 +1745,40 @@
       "In 1802 they climbed Chimborazo in Ecuador, reaching roughly 5,878 metres before ice and altitude turned them back, then the highest a European had gone. Humboldt's real haul was data: barometric readings, plant collections and notes on colonial economies that took decades to publish and reshaped how geography itself was studied."
     ]
   },
+  "hydraulic-press": {
+    "paragraphs": [
+      "Joseph Bramah patented his press in 1795, applying Pascal's principle that pressure applied anywhere in an enclosed fluid transmits equally throughout it. A small force on a narrow piston could then be multiplied into a huge force on a wide one, so a worker turning a hand pump could generate crushing pressure without any gearing at all.",
+      "Bramah ran a London lock and engineering shop, and the press became one of several inventions to come out of it alongside his pick-proof lock and an early flushing toilet valve. Hydraulic presses built on his principle went on to forge ships' plates, bale cotton and stamp coins, work no hand-cranked screw press could match."
+    ]
+  },
   "hydrogen-discovered": {
     "paragraphs": [
       "Other chemists had produced hydrogen gas before Henry Cavendish, including Robert Boyle a century earlier, but nobody had shown it was a distinct substance rather than a variant of ordinary air. Cavendish generated it by dripping acid onto metals and weighed it, measured its density, and named it inflammable air.",
       "His results appeared in 1766 in the Royal Society's Philosophical Transactions under the plain title Three Papers Containing Experiments on Factitious Air. The name hydrogen came later, coined by Antoine Lavoisier after he repeated Cavendish's experiments and identified the gas as an element in its own right."
     ]
   },
+  "hydrogen-powered-automobile": {
+    "paragraphs": [
+      "Francois Isaac de Rivaz built an engine in 1807 that burned a mixture of hydrogen and oxygen, igniting it with an electric spark rather than a flame. It had no crank, no connecting rod and no in-cylinder compression, so the piston's single stroke could only be transmitted crudely into motion, nothing like the compact combustion engines that followed a century later.",
+      "The following year de Rivaz mounted the engine on a heavy cart, producing what is generally reckoned the first vehicle driven by an internal combustion engine. It moved barely at all and interested almost nobody at the time; hydrogen and internal combustion would not be paired again with any seriousness for well over a century."
+    ]
+  },
+  "hypodermic-needle": {
+    "paragraphs": [
+      "Francis Rynd, a surgeon at Dublin's Meath Hospital, is generally credited with the first successful hypodermic injection in 1844, using a hollow needle to deliver morphine solution under a patient's skin to relieve nerve pain. Earlier attempts at injection had relied on cutting the skin first and rubbing medicine into the wound.",
+      "Priority is disputed: the Scottish physician Alexander Wood built on the idea in the 1850s with a graduated glass syringe that let a doctor measure the dose being given, and some later writers gave him rather than Rynd credit for the modern hypodermic. The two approaches, needle and calibrated syringe, only merged into one instrument afterward."
+    ]
+  },
   "ibn-battuta-travels": {
     "paragraphs": [
       "Ibn Battuta left Tangier on 14 June 1325, aged twenty one, meaning only to complete the hajj, a pilgrimage to Mecca that usually took sixteen months there and back. He later wrote that an unexplained impulse kept him from turning home once he arrived.",
       "That impulse became three decades on the road through Africa, Asia and the Iberian Peninsula, working along the way as a judge and diplomat. His dictated account, the Rihla, is the reason his roughly 117,000 kilometres of travel are documented at all rather than merely claimed."
+    ]
+  },
+  "incense-clock": {
+    "paragraphs": [
+      "A stick of incense burned at a measured rate marked the hours as it went, and weights hung from threads across it dropped one by one into a bowl below, so the device could ring itself without anyone watching. Surviving examples from the sixth to eighth centuries carry inscriptions in Devanagari script rather than Chinese, which has left historians arguing over whether the design came from India.",
+      "Physicians used a variant with partial breaks cut along the stick to mark medicine doses, timing treatment by scent rather than sound. The devices spread to Japan, where one survives in the Shosoin imperial repository, and in Japanese entertainment districts geishas were once paid by the number of sticks that burned through, a practice lasting into 1924."
     ]
   },
   "india-mars-mission": {
@@ -1617,6 +1833,12 @@
     "paragraphs": [
       "Iron working did not begin with a single people or a single breakthrough. Small quantities turn up in Central Anatolia by around 1800 BCE, and separately in the Ganges Valley at about the same date, long before iron replaced bronze anywhere at scale. The idea that the Hittites held a guarded monopoly on the technique has not held up under closer study.",
       "Large-scale iron production only became the norm around 1200 BCE, near the end of the Bronze Age, once smiths learned to forge it into tools stronger and cheaper than cast bronze. The shift mattered most when tin, bronze's scarce ingredient, grew hard to get: iron needed no long-distance trade network, only ore that most regions already had."
+    ]
+  },
+  "jacobs-staff": {
+    "paragraphs": [
+      "Levi ben Gerson, a Jewish scholar in Provence, described a graduated pole with a sliding crosspiece in his fourteenth-century Book of the Wars of the Lord: sight along the pole to a star and slide the crosspiece until its ends line up with horizon and target, then read the angle off the markings. A similar principle may be far older, and one theory credits the Chinese polymath Shen Kuo with a related instrument three centuries earlier.",
+      "Sailors adopted the cross-staff for taking a sun or star's altitude at sea from around 1514, using it to work out latitude on the open ocean without landmarks. It demanded staring near the sun with the instrument against a cheek, an awkward method that gave way to the backstaff, then the quadrant, octant and sextant."
     ]
   },
   "jacquard-loom": {
@@ -1715,6 +1937,12 @@
       "The true cause stayed hidden for decades. Only in October 2002 did Dimitri Malashenkov, one of the mission's scientists, admit publicly that Laika had overheated by the fourth orbit, and that building a reliable temperature control system in the time available had proved impossible. The Soviet press had instead let the world believe she lived on painlessly for a week before a planned euthanasia."
     ]
   },
+  "land-mine": {
+    "paragraphs": [
+      "A Song brigadier remembered as Lou Qianxia buried a cast-iron bomb, called an enormous bomb, in the path of Mongol troops invading Guangxi in 1277, timed to explode when the enemy disturbed it rather than when a soldier lit a fuse by hand. Later Chinese accounts describe trigger mechanisms as simple as a cord that toppled a weight, spinning a flint wheel to strike sparks into the powder.",
+      "Nothing about the 1277 device survives except the written record of the campaign, so the technical detail comes mostly from a fuller description compiled decades afterward in the military text Huolongjing, written under the early Ming. The core idea, an explosive charge set off by an unsuspecting enemy's own movement rather than a soldier's hand, needed no gunpowder refinement beyond what existing Chinese bombs already used."
+    ]
+  },
   "laser-invented": {
     "paragraphs": [
       "Theodore Maiman built his laser at Hughes Research Laboratories in Malibu on 16 May 1960, using a small rod of synthetic ruby wrapped in a coiled flash lamp rather than the gas systems most physicists assumed would come first. Pumped with a burst of light, the ruby emitted a narrow beam in which every wave matched every other, the property Maiman called coherent light.",
@@ -1737,6 +1965,12 @@
     "paragraphs": [
       "Edwin Beard Budding worked at a textile mill and adapted a rotary blade designed for trimming the nap off woollen cloth into a machine that could cut grass to an even height. He patented it on 31 August 1830, insisting on a witness clause in the agreement because he thought the device might look ridiculous enough for people to laugh at him pushing it.",
       "Regent's Park Zoological Gardens and several Oxford colleges bought early machines, and Ransomes began building licensed copies by 1832. The mower made close-cropped turf affordable at scale, and level, evenly cut ground became the standard surface for the football pitches, bowling greens and tennis courts codified later in the century."
+    ]
+  },
+  "lead-chamber-process-sulfuric-acid": {
+    "paragraphs": [
+      "John Roebuck began producing sulfuric acid in Birmingham in 1746 by burning sulfur and saltpetre inside chambers lined with lead rather than the small glass vessels chemists had used before. Lead resisted the acid, cost less than glass, and could be built up to room size, so a batch that once yielded ounces could now yield hundreds of kilograms.",
+      "The jump in scale mattered because sulfuric acid was becoming the workhorse of an industrialising chemical trade, used in bleaching textiles, refining metals and later making fertiliser. Roebuck's chambers, refined over the following century, remained the standard method of manufacture for close to two hundred years."
     ]
   },
   "lead-smelting": {
@@ -1769,10 +2003,22 @@
       "Sacagawea, a young Shoshone woman travelling with her infant son and her husband Toussaint Charbonneau, was not the party's guide, but her presence signalled peaceful intent to tribes along the route and her interpreting proved essential. The party reached the Pacific in November 1805 and returned to St Louis in September 1806, having mapped territory no American expedition had crossed before."
     ]
   },
+  "leyden-jar-capacitor": {
+    "paragraphs": [
+      "A glass jar half filled with water, wrapped in foil and stoppered with a wire running down into the liquid, could hold a shock strong enough to knock a grown man off his feet. Ewald von Kleist built one in 1745; Pieter van Musschenbroek at Leiden found the same effect independently soon after, and it is his university's name that stuck.",
+      "Musschenbroek reportedly described the jolt as one he would not take again for the whole kingdom of France. The jar let experimenters store and release charge on demand instead of generating it fresh each time, turning static electricity from a parlour trick into something that could be measured, compared and eventually put to use."
+    ]
+  },
   "library-catalog": {
     "paragraphs": [
       "Assyrian palace libraries, including the collection later assembled by Ashurbanipal at Nineveh, kept tablets separated by subject into different rooms: government records in one, astronomy in another, law and history elsewhere. Clay labels or coloured marks identified a tablet's contents, and colophons, notes scribes added at the end of a text, recorded its title, owner or place in a series.",
       "Round tablets typically held agricultural records while four-sided ones recorded financial transactions, a shape-based sorting layered on top of the subject divisions. None of this amounted to a single master index the way a modern library catalogue works, but it let a scribe hunting for a particular omen text or royal inscription go straight to the right room and shelf."
+    ]
+  },
+  "lighter": {
+    "paragraphs": [
+      "Johann Wolfgang Dobereiner built his lamp in 1823 around a simple reaction: zinc dropped into dilute sulfuric acid produced hydrogen gas, which a valve directed onto a sponge of platinum. The platinum catalysed the hydrogen's combination with air so vigorously that the heat alone ignited the gas, no spark or flint required.",
+      "It was the first commercial device to exploit catalysis, and it sold well beyond the chemistry: over a million were made during the 1820s, with a single Thuringian workshop becoming the world's largest producer. Reloading meant replacing cheap zinc and acid, and the design stayed in use as a fire-lighting tool into the 1880s."
     ]
   },
   "lighthouse": {
@@ -1853,6 +2099,12 @@
       "Command passed to Juan Sebastian Elcano, who brought the last surviving ship, the Victoria, home to Spain in September 1522. Of about 270 men who set out, only 18 or 19 returned on board her, the sole ship of the original five to complete the full circuit."
     ]
   },
+  "mainspring": {
+    "paragraphs": [
+      "Flemish and south German clockmakers of the early 1400s coiled a flat strip of tempered steel that pushed back as it was wound tight with a key, storing the energy a hanging weight had always supplied. Nuremberg locksmith Peter Henlein is later credited with refining the mechanism enough to build a clock small enough to carry in the hand.",
+      "A weight-driven clock had to hang plumb and needed somewhere for the cord to fall, which ruled out ships, pockets and any wall without floor space beneath it. The spring's drawback was uneven pull as it unwound, strongest fully wound and weakest nearly spent, which clockmakers offset with a tapered pulley called a fusee so timekeeping stayed roughly steady throughout."
+    ]
+  },
   "mariana-trench": {
     "paragraphs": [
       "Jacques Piccard and Don Walsh spent nearly five hours sinking through the Challenger Deep inside the bathyscaphe Trieste on 23 January 1960, descending at less than a metre a second in total darkness. Around 9,000 metres down, one of the vessel's outer plexiglass windows cracked with a shudder that shook the whole craft, and the two men chose to keep descending rather than turn back.",
@@ -1863,6 +2115,12 @@
     "paragraphs": [
       "John Harrison was a carpenter by trade with no formal training in horology when he began building clocks accurate enough to survive a rolling ship. His fourth attempt, H4, crossed the Atlantic in 1761 and lost only about five seconds a day, a sailor's watch rather than a cabinet clock.",
       "Parliament had offered a reward under the Longitude Act of 1714 for a method precise enough to fix a ship's position at sea, but the board overseeing it kept demanding further trials. Harrison collected the bulk of the money only in 1773, at eighty, after King George III intervened on his behalf."
+    ]
+  },
+  "mariners-astrolabe": {
+    "paragraphs": [
+      "Full astronomical astrolabes carried too many engraved rings and moving parts to survive a rolling deck, so Portuguese navigators stripped the instrument down to a single heavy ring, weighted at the bottom to hang steady, with a rotating sighting bar called an alidade.",
+      "A sailor held it up by a thumb ring and sighted the sun or a known star through the alidade, then read the angle above the horizon off the scale to work out latitude. Longitude stayed unsolved for another two centuries. The earliest known surviving example, recovered from a Portuguese shipwreck off Al Hallaniyah, Oman, is dated to between 1496 and 1501."
     ]
   },
   "mars-curiosity-landing": {
@@ -1901,6 +2159,12 @@
       "One such rod belonged to Maya, treasurer to Tutankhamun, and was buried with him at Saqqara; another turned up in the tomb of the architect Kha at Thebes. Builders used these rods to lay out structures as early as Djoser's Step Pyramid, keeping walls and chambers consistent across a project that took years to complete."
     ]
   },
+  "mechanical-calculator-pascaline": {
+    "paragraphs": [
+      "Blaise Pascal built the machine at eighteen to ease his father's work as a tax official in Rouen, linking a row of dials with gears so that carrying a ten from one column into the next happened automatically as a wheel completed a turn.",
+      "Pascal produced roughly twenty of the machines over the following decade, of which nine survive today. The Pascaline could add and subtract directly; multiplication and division required repeated addition, a limitation later calculators, including Leibniz's stepped-drum machine, tried to overcome."
+    ]
+  },
   "mechanical-clock": {
     "paragraphs": [
       "No first clock survives. The earliest picture of a weight-driven one is an illustration in the Bible of St Louis, made between 1226 and 1234, showing the fall of the weight slowed by water turning a wheel. No working example from that period survives.",
@@ -1913,6 +2177,12 @@
       "Sales only picked up in the 1840s, once the design had been reworked for varied terrain and crops. By 1856 McCormick's factory was turning out more than four thousand reapers a year, mostly bound for the flat, expanding wheat farms of the American Midwest, and the machine cut the number of hands a farm needed to bring in a harvest."
     ]
   },
+  "mechanized-cotton-spinning": {
+    "paragraphs": [
+      "Lewis Paul held the 1738 patent alone; John Wyatt built the machine to Paul's idea rather than co-owning the rights. Rollers turning at different speeds drew cotton fibre out to a controlled thickness before a spindle twisted it, replacing the human hand's stretch-and-twist with a mechanical one for the first time.",
+      "The idea worked better than the business behind it. Paul licensed mills, including Edward Cave's at Northampton, but profits stayed thin and most had closed or changed use by the 1760s. Roller spinning itself survived: Richard Arkwright built his far more successful water frame around the same rollers three decades later."
+    ]
+  },
   "mendel-genetics": {
     "paragraphs": [
       "Gregor Mendel's 1866 paper on pea plants laid out ratios of inherited traits that would become the foundation of genetics, and almost nobody noticed. It was cited perhaps three times in the following thirty five years, filed away in a provincial natural history journal most biologists never opened.",
@@ -1923,6 +2193,12 @@
     "paragraphs": [
       "Alcohol thermometers of the early 1700s drifted and disagreed with each other, since no two instrument makers used the same fixed points. Daniel Gabriel Fahrenheit, who had been building spirit thermometers since around 1706, began working with mercury around 1713 and found it expanded more evenly with heat.",
       "He anchored his scale with three points: a salt and ice mixture at zero, the temperature at which still water starts to freeze at thirty two, and roughly the temperature of the human body near the top. By 1721 his manufacturing was consistent enough that two of his thermometers, made years apart, would finally agree."
+    ]
+  },
+  "metal-cylinder-rockets": {
+    "paragraphs": [
+      "Mysore's rockets replaced the bamboo tube of earlier gunpowder rockets with an iron cylinder, letting Hyder Ali's forces pack in more propellant and fire it under higher pressure. At the Battle of Pollilur in 1780 the rockets skimmed along the ground into East India Company ranks, breaking formations that muskets and cannon had not managed to break first.",
+      "When Mysore's capital fell in 1799, British forces captured thousands of rockets and launchers and shipped examples home for study. William Congreve used them to design his own iron rockets for the Royal Artillery in 1805, the weapons Britain later fired at Baltimore in 1814, the attack remembered in the American national anthem."
     ]
   },
   "metronome-patented": {
@@ -1967,6 +2243,12 @@
       "Buzz Aldrin joined him nineteen minutes later, and together they spent two and a half hours outside the module, collecting rock samples and planting a flag stiffened with wire because there was no air to make it hang. Michael Collins circled overhead alone in the command module, never setting foot on the surface."
     ]
   },
+  "morphine-discovered": {
+    "paragraphs": [
+      "Friedrich Serturner was a young pharmacist's assistant in Paderborn when he isolated a crystalline compound from opium resin around 1804, first testing it on a mouse and three dogs, one of which died. Years later he dosed himself and three boys, none older than seventeen, and all of them fell dangerously ill. He named the substance morphium after Morpheus, the god of dreams.",
+      "Chemists before Serturner had treated plant extracts as mixtures too complex to purify. His isolation showed that a single active compound inside a crude drug could be extracted, weighed and dosed precisely, a method chemists then applied to strychnine, quinine and caffeine within the following two decades."
+    ]
+  },
   "mortar-and-pestle": {
     "paragraphs": [
       "A hollowed stone and a hand-sized grinding stone let people crush what their teeth and hands could not: hard seeds, tough roots, and mineral pigments like ochre. Wear patterns and pigment residue on stones from this period across Europe and Africa show the tools doing double duty, food preparation in one context and paint-grinding in another.",
@@ -2009,6 +2291,12 @@
       "A mudbrick wall needs constant upkeep, since rain erodes it and each collapsed building is usually rebuilt on top of its own rubble, which is why so many ancient settlement mounds in the Middle East rise in slow layers over centuries. Cheap as the material was, it let people build permanent, multi-room houses in places with no timber and no easy stone to quarry."
     ]
   },
+  "multistage-rocket": {
+    "paragraphs": [
+      "The Huolongjing, a Chinese military manual whose oldest sections date to roughly 1300 to 1350, illustrates a weapon called the fire dragon issuing from the water: a dragon-shaped tube carrying booster rockets that burned out mid-flight and, in the instant before doing so, ignited a cluster of smaller rocket arrows launched from the dragon's open mouth toward the target.",
+      "That handoff between a spent booster stage and a second burst of propulsion is the same principle behind every later multistage rocket, though nothing links the Huolongjing design directly to modern staging beyond shared logic centuries apart. The weapon was built for the Chinese navy, meant to be fired from a ship's deck at an enemy vessel rather than launched skyward."
+    ]
+  },
   "mungo-park-niger": {
     "paragraphs": [
       "Park set out from Sansanding in November 1805 aboard a converted canoe he named Joliba, the local name for the Niger, determined to follow the river to its mouth. Disease had already killed most of his party before the boat even left, and he pressed on regardless with the handful of soldiers still alive.",
@@ -2025,6 +2313,12 @@
     "paragraphs": [
       "Shawn Fanning was an eighteen year old student at Northeastern University when he wrote the software, launched in June 1999 with uncle John Fanning and fellow hacker Sean Parker, that let people search each other's hard drives for music files directly rather than downloading from a central server. It made finding a specific song trivially easy for the first time.",
       "The Recording Industry Association of America sued within a year, and Metallica separately identified and had removed more than 300,000 users who had shared the band's songs. A court ordered Napster to block copyrighted material in 2001, and the company shut the service down that July, then filed for bankruptcy the following year, though the file sharing habit it created outlived it."
+    ]
+  },
+  "naval-mine": {
+    "paragraphs": [
+      "The Ming artillery officer Jiao Yu described a floating explosive charge in detail in his fourteenth-century treatise Huolongjing, complete with an illustration of the device tethered in a waterway to wait for a passing ship. Chinese forces used naval explosives of this kind against Japanese pirate raids in the sixteenth century, and a 1637 text, the Tiangong Kaiwu, describes versions triggered by a ripcord pulled by the target ship itself.",
+      "European navies were far behind: the first known Western design for a naval mine was presented to Elizabeth I of England only in 1574, more than two centuries after Jiao Yu's description. The basic problem, keeping a charge dry and buoyant until the moment of contact, was the same one every later mine design had to solve again."
     ]
   },
   "neon-lighting": {
@@ -2079,6 +2373,12 @@
     "paragraphs": [
       "Joseph Black had noticed that a candle would not burn inside a jar of carbon dioxide, and he handed the puzzle of what else the air might contain to his student. Rutherford sealed a mouse inside a confined volume of air until it died, then burned a candle and phosphorus in what remained until neither would combust.",
       "What was left would not sustain a flame or an animal, and Rutherford, still working within phlogiston theory, called it noxious air. He took his degree at Edinburgh on the strength of that 1772 thesis, having isolated nitrogen without yet understanding it as a distinct element rather than exhausted, used-up air."
+    ]
+  },
+  "nitroglycerin": {
+    "paragraphs": [
+      "Ascanio Sobrero synthesised nitroglycerin in his Turin laboratory in 1847 by slowly dripping glycerol into a chilled mixture of nitric and sulphuric acid. A tiny sample exploded when he heated it in a test tube, and the shock and heat sensitivity of the oily liquid frightened him enough that he kept the discovery quiet for over a year.",
+      "Sobrero warned other chemists against working with it at all, and later watched Alfred Nobel build an industry on stabilising it into dynamite. He reportedly called his own invention a disgrace and regretted the deaths it caused once it was handling in mines and warfare without the caution he had urged."
     ]
   },
   "noodles": {
@@ -2159,10 +2459,22 @@
       "These ships could cover distance with no wind at all, which is why commanders kept building them: the Liang admiral Xu Shipu still deployed them in battle in 552. An ox-powered paddlewheel warship appears in the fourth-century Roman treatise De Rebus Bellicis, but it was never built and survives only as text and later illustrations."
     ]
   },
+  "painting-canvas": {
+    "paragraphs": [
+      "A French Madonna painted on canvas around 1410, now in Berlin, is among the earliest oil paintings on cloth to survive, but for most of the fifteenth century canvas stayed a rarity. Paolo Uccello's Saint George and the Dragon, from around 1470, and Botticelli's Birth of Venus, from the 1480s, were still exceptional in choosing cloth over a wooden panel.",
+      "Venice normalised the switch in the sixteenth century, helped by a ready local supply of sail canvas that painters like Mantegna judged as good as any panel and considerably cheaper for the large works country houses wanted. Northern European workshops held on to wood far longer, keeping panel painting common there into the seventeenth century."
+    ]
+  },
   "paper-invented": {
     "paragraphs": [
       "Paper already existed before Cai Lun. Fragments bearing legible Chinese writing have been dated to 8 BC, more than a century earlier, and hemp paper had been made for wrapping and padding for centuries before that. What Cai Lun did, as a court official under the Han around 105 AD, was standardise a process that made paper cheap and consistent.",
       "His recipe used mulberry bark and other bast fibres beaten together with old rags, hemp waste and even discarded fishnets, pulped and pressed into thin, even sheets. That combination of cheap, recycled raw material made paper practical to produce at the scale an empire's bureaucracy needed, which is why his name attached to the invention rather than an earlier maker's."
+    ]
+  },
+  "paper-machine": {
+    "paragraphs": [
+      "Nicolas-Louis Robert worked as a clerk at a French paper mill when he built a machine in 1799 that poured pulp onto a moving mesh belt, letting water drain through while rollers pressed the fibres into a single continuous sheet. Papermakers before him worked one sheet at a time, dipping a frame into a vat and drying each piece by hand.",
+      "Robert's employer, Leger Didot, financed the patent but the two fell out over money, and it was Didot's brother-in-law who took the design to England, where the Fourdrinier brothers funded its development into a workable industrial machine. Continuous papermaking on that same basic principle still runs paper mills today."
     ]
   },
   "papyrus": {
@@ -2205,6 +2517,12 @@
     "paragraphs": [
       "A cart loaded with grain or stone sinks into a dirt track the moment rain turns it to mud, and a laden ox team can only pull so much weight before the wheels dig their own ruts. Laying a hard stone surface solved a problem that unpaved trade routes across the ancient world kept running into. The earliest known paved road survives in Egypt, laid sometime between 2600 and 2200 BCE.",
       "These early roads were not built for speed but for load: a flat, compacted stone bed let heavier and more frequent cargo move between settlements without the route degrading season after season. The idea would not be engineered to its more famous standard, with cambered surfaces and drainage ditches, until the Romans took it up thousands of years later."
+    ]
+  },
+  "pendentive-dome-hagia-sophia": {
+    "paragraphs": [
+      "Anthemius of Tralles and Isidore of Miletus, geometers rather than career builders, raised the first dome over Hagia Sophia in 537 for Emperor Justinian, using curved triangular pendentives to carry a circle onto a square base. It was too flat for its own weight: earthquakes in 553 and 557 cracked it, and in 558 the eastern half of the dome came down, wrecking the altar and its canopy beneath.",
+      "Isidore's nephew rebuilt it, raising the whole vault by about 6.25 metres and adding ribs to spread the load more evenly, finishing in 562. The steeper, ribbed dome that resulted has stood since, and pendentives became the standard way to put a round dome over a rectangular room across the Byzantine and later Ottoman world."
     ]
   },
   "pendulum-clock": {
@@ -2267,6 +2585,12 @@
       "At Blombos Cave in South Africa, deposits some 100,000 years old include ochre pieces engraved with deliberate crosshatched lines and a processing kit for mixing ochre with fat or marrow into a paint-like paste. Beyond decoration, ground ochre has also been found working as an adhesive in composite tools and, later, as a component of tanning hides."
     ]
   },
+  "pin-tumbler-lock": {
+    "paragraphs": [
+      "Linus Yale Sr. patented his pin tumbler lock in 1848, reviving a principle that Egyptian carpenters had used in wood thousands of years earlier: pins of different lengths must all be pushed to exactly the same height before a bolt will slide. The ancient version could still be defeated by lifting every pin as far as it would go at once.",
+      "Yale built the mechanism in metal and sized it for everyday doors and safes rather than large timber gates. His son later refined it further with a small flat key and finer pin variation, but the core idea in Yale's 1848 lock, pins set to a hidden pattern, is still what sits inside most modern cylinder locks."
+    ]
+  },
   "pizarro-meets-incas": {
     "paragraphs": [
       "Atahualpa brought perhaps 6,000 men to the plaza at Cajamarca in November 1532, unarmed for a ceremonial reception. Pizarro's force numbered under 200, with only a few dozen horses and a handful of primitive guns, and the emperor saw no reason to fear them.",
@@ -2309,10 +2633,22 @@
       "On 18 February 1930, examining plates taken that January, he spotted such a jump. The object was confirmed as a new planet and named Pluto after the Roman god of the underworld, a suggestion from an eleven-year-old English schoolgirl. It was reclassified as a dwarf planet by astronomers in 2006."
     ]
   },
+  "pneumatic-drill": {
+    "paragraphs": [
+      "Jonathan Couch built a percussion rock drill in Massachusetts in 1848, patenting it the following year, but his design still ran on steam piped down to the drill head rather than on compressed air. His assistant Joseph Fowle pushed the idea further around 1850, powering the same hammering action with air compressed at the surface and fed through hose.",
+      "Compressed air let the drill work at a distance from its power source without losing pressure to condensation in a long steam line, which mattered underground and in tunnels. Germain Sommeiller refined the design for the Mont Cenis tunnel through the Alps in the 1860s, and that project made pneumatic drilling standard practice."
+    ]
+  },
   "pneumatic-tire": {
     "paragraphs": [
       "John Boyd Dunlop was a veterinary surgeon in Belfast, not an engineer, and he built his tyre in 1887 to smooth out his son's tricycle rather than to launch an industry. Familiar with rubber from treating animals, he wrapped an inflated tube in canvas and fitted it to the wheels, then tried the idea on a bicycle with even better results.",
       "Dunlop patented the design in 1888, but the patent did not hold. Officials later discovered that a Scottish engineer, Robert William Thomson, had patented a pneumatic tyre decades earlier, in 1846, for carriage wheels, an idea that had gone nowhere for lack of good rubber and demand. Dunlop's version arrived at the right moment, as bicycles were booming, and the name stuck to him instead."
+    ]
+  },
+  "pointed-arch-bridge": {
+    "paragraphs": [
+      "Two pointed arches survive in the Chytroi aqueduct on Cyprus, built in the seventh century, well before any Islamic or Gothic building used the form. Cruder pointed shapes turn up even earlier, in Bronze Age brickwork at Nippur in Mesopotamia and in scattered Sassanian and late Roman churches across Syria, so no single culture can claim the shape first.",
+      "What made the pointed arch useful for bridges and later cathedrals was structural rather than decorative: it pushes its load more steeply downward than a round arch, so a builder can raise it higher and thinner without the walls beneath spreading apart. Twelfth-century European masons combined it with rib vaulting for their own reasons, arriving at taller, more open spans independently of earlier Near Eastern uses."
     ]
   },
   "polaroid-camera": {
@@ -2351,6 +2687,12 @@
       "His original version was aimed at restaurants, not homes, and it took until 1925 for the Waters Genter Company to sell a redesigned model to the public as the Toastmaster. That was the first automatic pop up toaster households could buy, and it set the basic mechanism, spring, timer, twin heating elements, that toasters still use."
     ]
   },
+  "porcelain": {
+    "paragraphs": [
+      "Chinese potters had been firing high-temperature stonewares for centuries before true porcelain came together under the Tang dynasty, using fine kaolin clay fired above 1,300 degrees Celsius until it turned hard, white and thin enough to let light pass through the walls of a cup. No other tradition anywhere reached that combination of ingredients and kiln temperature so early.",
+      "Tang wares travelled the trade routes to the Islamic world and beyond, and the material stayed a closely watched trade secret for a thousand years afterward. European potters could not match true hard-paste porcelain until Saxon chemists worked out the formula at Meissen in 1708, and until then Chinese porcelain simply had no rival."
+    ]
+  },
   "portland-cement": {
     "paragraphs": [
       "Joseph Aspdin, a Leeds bricklayer, patented his cement in 1824 and named it after Portland stone, the pale limestone quarried on Dorset's Isle of Portland and used on buildings such as St Paul's Cathedral. He wanted builders to associate his grey powder with that admired, expensive stone before they had even used it.",
@@ -2385,6 +2727,18 @@
     "paragraphs": [
       "Edmund Cartwright patented a mechanised loom in 1785, aiming to do to weaving what the spinning jenny had already done to yarn. His early machines could drive the shuttle and beat the cloth automatically, replacing much of the weaver's manual rhythm.",
       "The design was still crude: the loom had to be stopped every so often just to dress the warp threads by hand, so it ran in fits rather than continuously. It took other engineers several more decades of refinement before power looms could compete seriously with handloom weavers on cost and speed."
+    ]
+  },
+  "powered-printing-press": {
+    "paragraphs": [
+      "Friedrich Koenig, a German printer working in London, coupled a steam engine to a cylinder press and by 1811 had a working machine that no longer relied on a hand-pulled screw. The Times of London installed two of his presses in secret in 1814, running them overnight so the paper's own compositors would not walk out over the change.",
+      "The new press printed around 1,100 sheets an hour, several times the output of the fastest hand press. Koenig struggled to get backing in Germany and built his business instead with the London stationer Thomas Bensley, before returning home in 1817 to found the firm that became Koenig & Bauer, still making presses today."
+    ]
+  },
+  "pressure-cooker": {
+    "paragraphs": [
+      "French physicist Denis Papin sealed a pot with a tight lid so that trapped steam raised the pressure inside and let water boil above its normal hundred degrees Celsius, cooking food, and reportedly softening bone, far faster than an open pot could manage.",
+      "He demonstrated the device, which he called a Digester, to the Royal Society in 1679. The safety valve he fitted to stop it exploding, a weighted plug that lifted once pressure climbed too high, became the standard feature that let pressurised cooking survive safely into the modern kitchen."
     ]
   },
   "printing-invented-china": {
@@ -2489,6 +2843,12 @@
       "They announced radium to the French Academy of Sciences on 26 December 1898. A tonne of the ore yields roughly a seventh of a gram of the element, so isolating enough to weigh and study took years of processing tonnes of the same grey rock by hand."
     ]
   },
+  "reaping-machine": {
+    "paragraphs": [
+      "Patrick Bell, a Church of Scotland minister's son studying at St Andrews, built a horse-pushed reaper in 1828. A revolving reel of twelve vanes pulled standing grain onto triangular blades that sheared past fixed ones like a giant pair of scissors, while a canvas belt swept the cut stalks aside into a windrow.",
+      "Bell refused to patent it, holding that an invention meant to feed people should not be sold for profit, and he never made money from a machine that worked. Others were less restrained: William Manning, Obed Hussey and Cyrus McCormick each patented broadly similar reapers within the following decade and built the businesses that made mechanical harvesting standard."
+    ]
+  },
   "receipt": {
     "paragraphs": [
       "A Uruk-period scribe pressing a reed stylus into wet clay left more than a mark. Sumerian proto-cuneiform tablets from around 3000 BCE list quantities of grain, livestock or beer against the name of an office or an official, tracking what left a central store and who took it.",
@@ -2501,6 +2861,12 @@
       "Making one meant soaking an undamaged length about 20 centimetres long so the cutting end would not split, then shaping a flat, pointed nib with a channel for ink. The pen wore down fast and needed constant resharpening, so a working scribe's real skill was as much in the knife as in the hand that wrote."
     ]
   },
+  "reflecting-telescope": {
+    "paragraphs": [
+      "Isaac Newton ground a curved metal mirror rather than a lens to gather light, sidestepping the coloured fringes glass lenses scattered around bright objects, a distortion called chromatic aberration that had frustrated telescope makers for decades.",
+      "His model, presented to the Royal Society in 1668, was barely six inches long yet magnified roughly forty times, rivalling refracting telescopes several feet long. The design carries his name, though later astronomers reworked the mirror's shape and mount to build far larger instruments on the same principle."
+    ]
+  },
   "refrigerator-invented": {
     "paragraphs": [
       "Jacob Perkins patented his vapour compression cycle in 1834, calling it apparatus for producing ice and cooling fluids. The idea itself was not his: an American engineer, Oliver Evans, had described the same compression cycle almost thirty years earlier but never built anything from it.",
@@ -2511,6 +2877,12 @@
     "paragraphs": [
       "Joseph Monier was not an engineer but a Paris gardener frustrated with clay pots that cracked in frost. He began casting plant tubs from concrete strengthened by a mesh of iron wire, and on 16 July 1867 he patented the method for garden troughs.",
       "Monier had no theory of why the combination worked, only that it did, and he spent the following decade patenting the same iron-mesh technique for pipes, bridges and railway sleepers. Engineers later worked out that concrete resists crushing while iron resists stretching, the principle behind almost every modern building frame."
+    ]
+  },
+  "repeating-rifle": {
+    "paragraphs": [
+      "Walter Hunt patented his Volitional Repeater around 1848 and 1849, feeding self-contained rounds from a tubular magazine slung under the barrel into the chamber one after another. It was awkward and underpowered, using a rocket ball cartridge that carried its own propellant in a hollow base rather than a separate metallic case.",
+      "Hunt sold the patent rather than developing it himself, and other gunsmiths reworked the mechanism over the following decade into the lever-action rifles that made the tubular magazine standard. The basic layout he introduced, cartridges stored nose to tail beneath the barrel and cycled by a working action, outlasted his own crude version of it."
     ]
   },
   "reservoir": {
@@ -2541,6 +2913,18 @@
     "paragraphs": [
       "The surgeon Sushruta set down a method for building a new nose from a flap of skin cut from the patient's cheek or forehead, then folded and stitched over the wound. His writings, gathered in the Sushruta Samhita, record the procedure as routine enough to treat a specific, recurring injury.",
       "In ancient India, judicial punishment sometimes included amputating a criminal's nose, and Sushruta's technique gave those men a way to disguise the sentence. British surgeons documented Indian practitioners still using the forehead-flap method as late as 1794, largely unchanged from the ancient description."
+    ]
+  },
+  "rifling-in-firearms": {
+    "paragraphs": [
+      "German gunsmiths cutting spiral grooves inside barrels appear in the record from the early 1500s, though no single inventor is credited. The grooves gripped a slightly oversized lead ball and spun it as it left the muzzle, the same principle that keeps a thrown football flying straight rather than tumbling.",
+      "Rifled barrels cost more to bore and loaded more slowly, since the ball had to be forced or hammered down against the grooves, so armies kept issuing smooth-bore muskets to the mass of infantry and reserved rifles for hunters and specialist marksmen. Rifling only became standard issue in the mid-1800s, once the expanding Minie ball let a loose ball be rammed down quickly and then grip the grooves on firing."
+    ]
+  },
+  "rocket": {
+    "paragraphs": [
+      "A tube of paper or bamboo packed with gunpowder and lashed to an arrow shaft was a Song battlefield weapon by the twelfth century, following earlier fire arrows that burned rather than flew under their own thrust. The sinologist Joseph Needham argued that the mixtures recorded in earlier Chinese manuals were too weak to serve as propellant, pushing the true rocket later than some Chinese sources claim.",
+      "Mongol campaigns across Asia in the thirteenth century carried the weapon west: the Arab writer al-Hasan al-Rammah described fire arrows of Chinese type before 1300. Korea was building its own rocket-arrow launchers, the hwacha's ancestors, by the 1370s, and the technology reached European armies within a few decades of that, arriving as a curiosity long before it became reliable."
     ]
   },
   "roman-aqueducts": {
@@ -2601,6 +2985,12 @@
     "paragraphs": [
       "Before the padded saddle, riders sat on blankets or bare horsehide, which limited how long and how hard a horse could be ridden. Central Asian and Near Eastern horsemen developed padded seats, cloth pads stuffed and strapped with a girth, by around the eighth century BCE, giving a stable base without the rigid wooden tree that came centuries later.",
       "A secure seat let riders fight from horseback rather than dismounting first, freeing both hands for a bow or spear, and let armies and traders cover far greater distances without exhausting horse or rider. The stirrup, often assumed to belong to the same package, would not appear for roughly another thousand years, so early mounted archers rode and fired without one."
+    ]
+  },
+  "safety-lamp": {
+    "paragraphs": [
+      "William Reid Clanny, a doctor in Sunderland, built his lamp around a candle enclosed in glass, with air forced in through a water trough by bellows and the burnt gases bubbled out through a second water chamber. The water acted as a barrier that flame could not cross, keeping the light isolated from any methane in the surrounding air.",
+      "Clanny's design predates the lamps Humphry Davy and George Stephenson each produced independently in 1815, and Stephenson later credited Clanny's research as a debt owed. Early versions were heavy and awkward underground; Clanny reduced his to 34 ounces and was given medals by the Royal Society of Arts in 1816 and 1817 for the improvement."
     ]
   },
   "safety-pin-invented": {
@@ -2717,6 +3107,12 @@
       "Sled dogs made year-round life across the Arctic and sub-Arctic practical, letting communities follow seasonal hunting grounds that would otherwise have been too far to reach on foot. The arrangement changed remarkably little for thousands of years, still recognisable today wherever working sled teams are still run."
     ]
   },
+  "slide-rule": {
+    "paragraphs": [
+      "English clergyman William Oughtred combined two of Edmund Gunter's logarithmic rulers around 1622, sliding them against each other so that adding two lengths multiplied the numbers they represented and turned multiplication into simple addition. His student Richard Delamain published a similar design first, in 1630, and the two argued bitterly over priority.",
+      "Engineers, gunners and navigators adopted it because it multiplied, divided and found roots faster than pen and paper, at the cost of a few digits of precision. It remained standard equipment in classrooms and drawing offices, including at NASA during the Apollo programme, until pocket electronic calculators made it obsolete during the 1970s."
+    ]
+  },
   "smallpox-eradicated": {
     "paragraphs": [
       "As recently as 1967 the World Health Organization estimated ten to fifteen million people caught smallpox that year and two million died of it. A decade of coordinated vaccination and case tracing followed, aimed not at treating the disease but at surrounding every outbreak and starving it of new hosts.",
@@ -2727,6 +3123,12 @@
     "paragraphs": [
       "A Sumerian clay tablet of roughly 2500 BCE gives a recipe for a soap-like paste made by heating oil with wood ash, one of the oldest chemical reactions ever written down. It was not made for bathing. The record ties it to washing wool, cleaning cloth rather than skin.",
       "Similar oil-and-alkali mixtures turn up in Babylonian and Egyptian texts over the following centuries, but a soap with the properties recognisable today did not settle into use until much later, around the first century CE. The Babylonian formula is the earliest fixed point, not the finished product."
+    ]
+  },
+  "solar-cell": {
+    "paragraphs": [
+      "Edmond Becquerel was nineteen and working in his father's Paris laboratory in 1839 when he dipped silver chloride electrodes into an acidic solution and shone light on them. A small voltage appeared between the electrodes the moment the light hit, current that vanished again in the dark.",
+      "He had no use for the effect and no way to build a practical device from it; batteries of the day already produced far more current more reliably. The phenomenon carried his name, the Becquerel effect, and sat as a laboratory curiosity for decades before selenium and silicon cells turned it into a way to generate power."
     ]
   },
   "source-of-nile": {
@@ -2843,16 +3245,46 @@
       "The reading is contested, since cave art rarely comes with an explanation attached and a cluster of dots can just as easily be decoration. If the identification holds, it would mean Ice Age painters were already tracking a fixed pattern in the night sky and tying it to a specific animal figure, long before any written record of astronomy."
     ]
   },
+  "steam-hammer": {
+    "paragraphs": [
+      "James Nasmyth sketched his steam hammer on 24 November 1839 after the Great Western Steamship Company admitted it had no forge in Britain powerful enough to shape the paddle-shaft for the SS Great Britain. Existing tilt hammers struck with the same fixed force every time and could not clear a workpiece that size.",
+      "Nasmyth's design let a piston-driven ram be raised by steam and dropped from any height the smith chose, from a tap to a full blow. A French engineer, Francois Bourdon, built a working version at Le Creusot in 1840, ahead of Nasmyth, who patented his own in June 1842."
+    ]
+  },
   "steam-locomotive": {
     "paragraphs": [
       "On 21 February 1804 a locomotive built by Richard Trevithick hauled five wagons along the tramway of the Penydarren ironworks in Merthyr Tydfil, Wales, carrying ten tons of iron and about seventy men who had wagered it could not be done. It covered roughly sixteen kilometres in just over four hours, at a walking pace.",
       "The run proved the principle but broke the tramway: the cast iron plates had been laid for horse traffic and cracked under the engine's weight. Rather than rebuild the line, the ironworks put the locomotive back to its old job driving a hammer, and railways stayed horse drawn for another two decades before the idea returned in a stronger form."
     ]
   },
+  "steam-powered-vehicle": {
+    "paragraphs": [
+      "Nicolas-Joseph Cugnot built his fardier a vapeur for the French army in 1769 to haul artillery pieces too heavy for horse teams over rough ground. A single boiler-driven cylinder swung the front wheel through a ratchet, giving the three-wheeled machine a top speed of around four kilometres an hour and a range of perhaps twenty minutes before it needed to stop and rebuild steam.",
+      "It was heavy at the front and hard to steer, and one unconfirmed report has it knocking down a stone wall in 1771, though the story is not well documented. The army lost interest and the project was shelved, but a surviving Cugnot vehicle is preserved in Paris as the oldest self-propelled road vehicle still in existence."
+    ]
+  },
+  "steam-powered-water-pump": {
+    "paragraphs": [
+      "Thomas Savery patented his design in 1698 as a machine for raising water by the impellent force of fire. It had no piston: steam filled a chamber, cold water poured over the outside condensed it, and the vacuum that resulted sucked water upward through a valve. He pitched it for draining mines, supplying towns and driving mill wheels.",
+      "The pump only worked where the water sat within about nine metres below it, so a deep mine shaft needed several units stacked in series, and the boiler had to be forced to dangerous pressure to push water any higher than that. Few mines adopted it; within a generation Newcomen's piston engine replaced the principle entirely."
+    ]
+  },
+  "steam-shovel": {
+    "paragraphs": [
+      "William Otis patented his excavator on 24 February 1839, mounting a crane on a railroad flatcar so a boiler-driven engine swung the arm instead of a gang of men with picks. Pulleys turned the jib through a half circle, lifting roughly a cubic metre of earth at a time and tipping it straight into waiting wagons.",
+      "Otis built the machine to speed the grading of railway cuttings, work that otherwise ate whole seasons of manual digging. He never saw it spread: he died of typhoid later that same year, aged twenty six, and it was decades before steam shovels became common on American construction sites."
+    ]
+  },
   "steam-turbine": {
     "paragraphs": [
       "Existing steam engines pushed a piston back and forth, wasting energy converting that motion into the spin a generator actually needed. Charles Parsons instead let steam expand directly against rows of angled blades on a shaft, and in 1884 his design ran at eighteen thousand revolutions a minute, fast enough to drive an electrical generator with no conversion step at all.",
       "He proved the design's speed advantage in public in 1897, when his turbine-powered yacht Turbinia gatecrashed a naval fleet review for Queen Victoria's Diamond Jubilee. It outran every Royal Navy ship sent to intercept it, reaching roughly 34 knots against their top speed of about 27, and turbines were fitted to warships within a decade."
+    ]
+  },
+  "steamboat": {
+    "paragraphs": [
+      "Claude de Jouffroy d'Abbans had already failed once, wrecking a paddle steamer on the Doubs River in 1778. Five years later, on the Saone at Lyon, his 45-metre Pyroscaphe used a double-acting ratchet to keep its paddle wheels turning continuously, and on 15 July 1783 it drove upstream against the current for about fifteen minutes in front of a large crowd.",
+      "A second run a month later carried passengers who signed a statement confirming the voyage. Jouffroy could not get official backing to build on the success, and the French Revolution soon overtook his plans; credit for a commercially viable steamboat went instead to men working decades later in America and Scotland."
     ]
   },
   "steel-frame-skyscraper": {
@@ -2873,6 +3305,12 @@
       "He later split the wood into three detachable sections for a doctor's pocket and spent years cataloguing the sounds it revealed, matching particular murmurs and crackles to specific lung and heart diseases found afterward at autopsy. The wooden tube looked nothing like a modern stethoscope but did the same job: it let a physician listen without touching."
     ]
   },
+  "stirling-engine": {
+    "paragraphs": [
+      "Robert Stirling, a minister in Ayrshire, patented a heat economiser in 1816 that stored and returned heat as air moved through it, the basis of what became known as the Stirling engine. Contemporary steam boilers occasionally exploded, sometimes fatally, and Stirling designed his closed-cycle air engine explicitly so that failure would not be catastrophic.",
+      "The engine trades raw power for reliability, running on the expansion and compression of a sealed gas rather than pressurised steam. It saw only modest industrial use in the nineteenth century, overtaken by steam and later internal combustion, but its quiet, low-vibration operation has kept it in use since for niche jobs such as powering submarines and remote generators."
+    ]
+  },
   "stirrup-invented": {
     "paragraphs": [
       "A Western Jin tomb near Changsha held a small clay figurine of a rider whose foot rests in a mounting stirrup, dated to around 302. It shows a single stirrup, used only for climbing into the saddle, not yet the paired kind that supports both feet while riding.",
@@ -2891,16 +3329,34 @@
       "The engine solved propulsion but not balance: the boat tended to dive nose first and strike the seabed, which kept its working depth to about ten metres. Repeated trials never fixed the problem, and within a decade the navy struck it from service and converted the hull into a water tanker."
     ]
   },
+  "sulfur-matches": {
+    "paragraphs": [
+      "Tao Gu, writing around 950, described splinters of pinewood tipped with sulfur that caught flame when touched to a spark, calling them fire inch-sticks. A later account claims impoverished court women under the Northern Qi resorted to sulfur-tipped tapers in 577, during the chaos of the dynasty's collapse to Northern Zhou forces, though that detail comes secondhand from a fourteenth-century writer rather than a contemporary source.",
+      "Whichever date is right, the sticks worked because sulfur ignites at a lower temperature than bare wood, catching a stray ember that would otherwise die out. By the thirteenth century, vendors in the Song capital of Lin'an were selling them as a distinct commercial product, centuries before phosphorus matches appeared in Europe."
+    ]
+  },
   "sundial-invented": {
     "paragraphs": [
       "Egypt supplies the oldest sundial recovered from the ground, a shadow clock from the Valley of the Kings dated to around 1500 BCE, roughly matching the earliest Babylonian devices of the same kind. It worked by casting a shadow across a marked bar rather than a dial, so the shape looked nothing like the round clock face people now picture.",
       "Both Egyptian and Babylonian astronomers were using the sun's shadow to break the day into set intervals at roughly the same period, and neither tradition can be shown to have borrowed the idea from the other. The devices improved over the following centuries, but the underlying principle, a fixed object casting a moving shadow, never changed."
     ]
   },
+  "sunglasses-snow-goggles": {
+    "paragraphs": [
+      "A strip of driftwood, antler or walrus ivory carved to the curve of a face and cut with one or two narrow horizontal slits does the same job as a modern lens: it blocks nearly all incoming light and lets only a thin band through, cutting the glare that bounces off snow and open ice. Some makers blackened the inside with soot for extra contrast, and the strap was sinew, leather or rawhide tied around the head.",
+      "The slit works like a pinhole, sharpening what little light gets past it at the cost of peripheral vision, a trade Arctic travellers accepted because snow blindness could put a hunter out of action for days. Surviving examples in museum collections range from carved antler pairs to later wooden versions made into the nineteenth century, showing a design that changed little once it worked."
+    ]
+  },
   "superconductor-claims": {
     "paragraphs": [
       "In July 2023, a team from Korea University led by Lee Sukbae and Kim Ji-Hoon posted preprints describing LK-99, a copper-doped lead compound they said carried electricity with zero resistance at room temperature and ordinary pressure. If true it would have overturned a century of superconductor research, which had only ever managed the effect under extreme cold or pressure, and the papers spread through physics forums within days.",
       "Laboratories worldwide raced to replicate it, and by mid-August more than fifteen had failed. Researchers traced the material's odd resistance drops and magnetic wobble to ordinary copper sulphide impurities left over from synthesis, which happened to mimic superconductivity without producing it. Pure LK-99 crystals turned out to be plain insulators."
+    ]
+  },
+  "superphosphate-fertilizer": {
+    "paragraphs": [
+      "John Bennet Lawes patented his process in 1842 at Rothamsted, his family estate in Hertfordshire, treating ground bones and mineral phosphate with sulphuric acid to release phosphorus that plants could actually absorb. Untreated bone meal broke down too slowly in the soil to help a single growing season.",
+      "Lawes opened a factory to manufacture the fertiliser and ploughed the profits back into Rothamsted, where he and the chemist Joseph Henry Gilbert ran continuous field trials on the same plots for decades. Some of those experiments are still running today, among the longest-running in the history of agricultural science."
     ]
   },
   "swords": {
@@ -2993,6 +3449,18 @@
       "The toe loop could not serve a shod rider, and it offered only a mounting aid rather than stability once moving. Full stirrups, paired and closed around the foot, arrived only after saddles gained a rigid tree to anchor them, a separate invention the toe loop had no need of."
     ]
   },
+  "toilet-paper": {
+    "paragraphs": [
+      "Yan Zhitui, a scholar-official who lived through the fall of three dynasties, wrote around 589 that he would not use paper carrying quotations from the Five Classics or the names of sages for toilet purposes. The remark only makes sense if using paper that way was already an unremarkable habit by then, which makes it the earliest surviving reference to the practice rather than its beginning.",
+      "Paper itself was already centuries old in China by Yan's time, cheap enough that discarding a sheet after one use was not extravagant the way it would have been almost everywhere else in the world. Europe would not adopt paper for the same purpose for well over a thousand years, relying instead on rags, leaves, moss, or bare hands."
+    ]
+  },
+  "toothbrush": {
+    "paragraphs": [
+      "Frayed twigs called chew sticks cleaned teeth long before any brush existed, with examples found in Sumerian sites from around 3500 BC and in Chinese records reaching back to 1600 BC. What changed under the Tang dynasty was the shape: stiff hog bristles, sourced from the colder regions of Siberia and northern China where pigs grow coarser hair, were set into handles carved from bamboo or bone.",
+      "That bristle-and-handle design is close enough to a modern toothbrush that later European accounts describe it directly, brought back by travellers who had seen it in use in China. Europe did not adopt it widely until the seventeenth century, and mass production in bone and bristle continued there until nylon replaced both in the twentieth."
+    ]
+  },
   "torricelli-barometer": {
     "paragraphs": [
       "Well engineers had a puzzle: no suction pump could lift water higher than about ten metres, whatever the design. Galileo blamed a limited force of vacuum pulling the water up. Torricelli suspected something pressing down from outside instead, and tested the idea with a liquid dense enough to fit the whole apparatus on a bench.",
@@ -3041,6 +3509,18 @@
       "In 1873 he uncovered a hoard of gold he called Priam's Treasure, though he later admitted inventing details of its discovery, including a story of his wife smuggling it out in a shawl. The layer holding the hoard turned out to date from roughly a thousand years before any plausible Trojan War, a mistake his own trenching made harder to correct."
     ]
   },
+  "tunnel-boring-machine": {
+    "paragraphs": [
+      "The King of Sardinia commissioned an engineer named Henri Maus in 1845 to mechanise the Fréjus rail tunnel through the Alps, and Maus had a machine built the following year in an arms factory near Turin. It carried more than a hundred percussion drills bolted to a locomotive-sized frame, all driven from the tunnel entrance.",
+      "Funding collapsed in the political upheaval of 1848 and the machine was never finished as designed, so the tunnel was eventually bored with simpler pneumatic drills instead. The idea of a single mechanised head chewing through rock, rather than dozens of men with hand drills, still took decades to become routine practice."
+    ]
+  },
+  "tunnelling-shield": {
+    "paragraphs": [
+      "Marc Brunel patented a cast-iron tunnelling shield in 1818: a rectangular frame of twelve independent cells, three miners to a cell, that let each worker dig a small patch of tunnel face while the frame held back the surrounding soft ground. When enough earth had been cleared, jacks pushed the whole shield forward and bricklayers lined the new section behind it.",
+      "Brunel used the design to drive the Thames Tunnel between Rotherhithe and Wapping, a project that had already defeated earlier attempts through unstable, waterlogged clay. The tunnel took eighteen years and cost lives to floods and gas, but the shield itself proved the idea, and its descendants later dug the London Underground and countless tunnels since."
+    ]
+  },
   "tupperware-introduced": {
     "paragraphs": [
       "Earl Tupper started with waste. DuPont sold him black, brittle scraps of polyethylene slag left over from oil refining, and he worked out how to purify and mould it into flexible, translucent containers, then fitted them with an airtight lid copied from the seal on a paint can. The result launched in shops in 1946 but barely sold.",
@@ -3081,6 +3561,12 @@
     "paragraphs": [
       "James Spangler was a department store janitor in Canton, Ohio, with asthma aggravated by the carpet sweeper he used at work. In 1907 he built a portable machine from a fan motor, a soap box and one of his wife's pillowcases, using the fan's suction to draw dust into the makeshift bag while a rotating brush loosened it from the carpet.",
       "Spangler patented the design in 1908 but had no money to manufacture it, so he sold the rights to a local leather goods maker, William Hoover. Hoover redesigned the machine, put his own name on it, and turned a janitor's fix for his own lungs into the company that gave the vacuum cleaner its generic name in much of the English-speaking world."
+    ]
+  },
+  "vacuum-pump": {
+    "paragraphs": [
+      "Otto von Guericke, mayor of Magdeburg, built an air pump around 1650 by adapting the piston and valves of a water pump to draw air out of a sealed vessel instead of water, a modification nobody had managed to make work before.",
+      "He demonstrated the result in 1654 before Emperor Ferdinand III: two copper hemispheres held together only by air pressure once the space inside them was pumped empty, which teams of horses harnessed to each side could not pull apart. The Magdeburg hemispheres made visible a force nobody had previously been able to show directly."
     ]
   },
   "van-allen-belt-detected": {
@@ -3251,6 +3737,12 @@
       "It was crude and unreliable next to what followed it. Sumerian texts from the same tradition also record the opium poppy in cultivation by around 3400 BCE, giving physicians a second, stronger sedative within a few centuries. Neither drug controlled dosage or pain with any precision, but both mark the first recorded attempts to manage it deliberately rather than not at all."
     ]
   },
+  "wood-pulp-papermaking": {
+    "paragraphs": [
+      "Charles Fenerty, a Nova Scotian in his early twenties, mailed a sheet of paper made from ground spruce to a Halifax newspaper on 26 October 1844 to prove wood pulp could replace cotton and linen rags. He had been testing the idea since his teens, unaware that a German inventor was chasing the same solution at the same time.",
+      "Friedrich Gottlob Keller patented a wood-pulp process in Germany the following year and sold rights to a papermaker who commercialised it, while Fenerty never patented his own. Cotton rag supply could not keep pace with rising demand for paper, and Keller is now the name most histories credit, despite Fenerty's earlier letter."
+    ]
+  },
   "woodworking-construction": {
     "paragraphs": [
       "At Kalambo Falls in Zambia, two logs excavated beneath a waterfall bear notches cut to lock them together, deliberately shaped rather than simply broken or worn. Luminescence dating put the joint at around 476,000 years old, making it the oldest known wooden structure, built long before Homo sapiens existed, most likely by Homo heidelbergensis.",
@@ -3261,6 +3753,18 @@
     "paragraphs": [
       "Tim Berners-Lee's problem at CERN in March 1989 was mundane: thousands of researchers came and went, and nobody could reliably find or share each other's documents across incompatible systems. His proposal called it a way of linking information without a central index, letting any file point to any other regardless of what computer held it.",
       "By the end of 1990 he had built the pieces himself: a browser and editor called WorldWideWeb, the first web server, and the address and markup formats still in use. CERN released the technology to the wider internet in August 1991 and gave up all rights to it royalty-free in 1993, a decision that let it spread without licence fees."
+    ]
+  },
+  "worm-gear-cotton-gin": {
+    "paragraphs": [
+      "A pair of rollers turning against each other can pull cotton fibre through while the seed, too large to pass, is stripped away behind it, and adding a worm gear let one crank handle drive both rollers at matched, opposing speeds instead of relying on two people working a simple hand crank each. The design belongs to the Delhi Sultanate, appearing somewhere in the thirteenth or fourteenth century on the Indian subcontinent.",
+      "Mughal workshops adopted the geared gin from around the sixteenth century, and the combination of worm gear and crank handle pushed Indian cotton textile output well beyond what earlier single-roller gins could manage. Versions of the same roller principle are still used in parts of the Indian subcontinent, largely unchanged from the medieval mechanism."
+    ]
+  },
+  "wristwatch": {
+    "paragraphs": [
+      "Caroline Murat, Napoleon's sister and Queen of Naples, ordered an oblong repeating watch from Abraham-Louis Breguet in 1810. It was paid for in 1811 and delivered in 1812, ultra-thin, fitted with a thermometer and mounted on a wristlet of hair braided with gold thread rather than a metal band.",
+      "Breguet catalogued it as N degrees 2639, describing it plainly as a repeater for the wrist. The piece itself has not survived, but the order books have, which is how its specifications are known at all. Pocket watches remained the norm for another century; the wristwatch caught on widely only once soldiers found fumbling for a chain watch impractical in the trenches."
     ]
   },
   "www-goes-public": {
