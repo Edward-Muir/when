@@ -299,14 +299,15 @@ export function useWhenGame(): UseWhenGameReturn {
         const nextPlayerIdx = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
         const nextPlayer = state.players.at(nextPlayerIdx);
         setPendingPopupState({
-          popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
+          popup: buildPopupData(result, nextPlayer),
           pendingStateUpdate: null,
         });
       }
 
       if (result.success) {
-        // 4a. Correct placement: insert into timeline and start animation
-        const newTimeline = insertIntoTimeline(state.timeline, activeCard, result.correctPosition);
+        // 4a. Correct placement. The card lands where the player dropped it rather than at the
+        // canonical slot, so one won on a range never teleports; see gameLogic's bound rule.
+        const newTimeline = insertIntoTimeline(state.timeline, activeCard, insertionIndex);
 
         setState((prev) => ({
           ...prev,

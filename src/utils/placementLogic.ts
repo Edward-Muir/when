@@ -1,6 +1,8 @@
 import { HistoricalEvent, Player, WhenGameState, PlacementResult, GamePopupData } from '../types';
 import {
   isPlacementCorrect,
+  isPointPlacementCorrect,
+  isRangedEvent,
   findCorrectPosition,
   removeFromHand,
   addToHand,
@@ -43,6 +45,14 @@ export function validatePlacement(
 
 /**
  * Calculate the result of a placement attempt
+ *
+ * `closeEnough` marks a success that was won on a window: it passed, but would not have with
+ * every interval collapsed to its `year`. The second clause — that the card or one of the two
+ * it landed between actually spans a range — is load-bearing rather than decorative. Once a
+ * board carries ranges it is no longer sorted by `year`, so the collapsed predicate can go
+ * degenerate (a left bound above the right bound) and start reporting every placement as
+ * close-enough. It is also the version that can be explained: you get the banner when the card
+ * you placed, or one of the two it landed between, spans a range.
  */
 export function calculatePlacementResult(
   timeline: HistoricalEvent[],
@@ -52,11 +62,21 @@ export function calculatePlacementResult(
   const isCorrect = isPlacementCorrect(timeline, event, insertionIndex);
   const correctPosition = findCorrectPosition(timeline, event);
 
+  // `.at(-1)` wraps to the last element, so gap 0 must be guarded explicitly.
+  const left = insertionIndex > 0 ? timeline.at(insertionIndex - 1) : undefined;
+  const right = insertionIndex < timeline.length ? timeline.at(insertionIndex) : undefined;
+  const neighbours = [event, left, right];
+  const closeEnough =
+    isCorrect &&
+    !isPointPlacementCorrect(timeline, event, insertionIndex) &&
+    neighbours.some((e) => e != null && isRangedEvent(e));
+
   return {
     success: isCorrect,
     event,
     correctPosition,
     attemptedPosition: insertionIndex,
+    closeEnough,
   };
 }
 
@@ -207,16 +227,17 @@ export function processIncorrectPlacement(
 }
 
 /**
- * Build popup data for placement result
+ * Build popup data for a placement result. Multiplayer only — single player gets the
+ * tombstone reveal and the hint strip instead of a blocking popup.
  */
 export function buildPopupData(
-  type: 'correct' | 'incorrect',
-  event: HistoricalEvent,
+  result: PlacementResult,
   nextPlayer: Player | undefined
 ): GamePopupData {
   return {
-    type,
-    event,
+    type: result.success ? 'correct' : 'incorrect',
+    event: result.event,
     nextPlayer,
+    closeEnough: result.closeEnough,
   };
 }
