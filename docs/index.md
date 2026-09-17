@@ -36,7 +36,17 @@ original per-session write-ups if you need the blow-by-blow.
   rule, storage keys, milestones, badge design
 - [events-images/](events-images/index.md) — event data pipeline, card colours, the 35-char
   name cap, the no-date-clues rule for player-visible text, image preloading, and the 2026-08
-  push to full image coverage
+  push to full image coverage. Its
+  [catalogue-error-backlog.md](events-images/catalogue-error-backlog.md) is the standing list of
+  event records the sources do not support — wrong years, wrong names, duplicate cards — found by
+  reading all 5,460 against a source while writing the detail prose
+- [event-detail/](event-detail/index.md) — the "read more" info button and the long-form prose
+  behind it: why the prose replaces the description in place, why the button is
+  unreachable before placement (and why that lets the prose state dates), the lazy sidecar
+  instead of inlining ~2.4 MiB gzipped, and how all 5,460 entries got written.
+  Its [writing-spec.md](event-detail/writing-spec.md) holds the voice rules — the length band
+  as numbers, the register carve-out for atrocities, the `wikipedia_url` accuracy trap, and the
+  banned machine tells (no em dashes) that `scripts/events/detail-spec.js` enforces
 - [desktop-experience/](desktop-experience/index.md) — **findings only, nothing fixed yet.** Why
   the game falls apart on a laptop (no breakpoint above `sm:` anywhere player-facing), the
   measured symptoms, and a sequenced fix list

@@ -1,6 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { HistoricalEvent } from '../types';
 import CategoryIcon from './CategoryIcon';
+import ImageInfoWatermark from './ImageInfoWatermark';
 import { getImageUrl } from '../utils/cloudinaryImage';
 
 interface DailyDeckPreviewProps {
@@ -9,6 +10,9 @@ interface DailyDeckPreviewProps {
   /** Primary call-to-action rendered at the bottom of the card (Play / Share). */
   cta: ReactNode;
   className?: string;
+  /** Opens the read-more view for today's starting event. The button only renders when this is
+      given and the event has prose. */
+  onInfoClick?: () => void;
 }
 
 /**
@@ -21,6 +25,7 @@ const DailyDeckPreview: React.FC<DailyDeckPreviewProps> = ({
   themeName,
   cta,
   className = '',
+  onInfoClick,
 }) => {
   const [imageError, setImageError] = useState(false);
   const hasImage = event?.image_url && !imageError;
@@ -53,6 +58,12 @@ const DailyDeckPreview: React.FC<DailyDeckPreviewProps> = ({
               {event.friendly_name}
             </span>
           </div>
+        )}
+
+        {/* This card is the deck's starting event, which the game places face-up with its year
+            on turn 1 — so the long-form read gives nothing away that Play would not. */}
+        {event?.has_detail && onInfoClick && (
+          <ImageInfoWatermark onClick={onInfoClick} className="absolute top-1 right-1 z-10" />
         )}
       </div>
 

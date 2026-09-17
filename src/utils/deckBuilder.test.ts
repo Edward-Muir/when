@@ -351,12 +351,19 @@ describe('the seven-day no-repeat guarantee', () => {
    * window: `getDailyTheme` picks the themed category as `random() * ALL_CATEGORIES.length`,
    * so a 21st category re-rolls which day is themed to what, and the decks land
    * differently. The exact guarantee above still holds at 0 — only the residual moved.
+   *
+   * Correcting one event's `year` moves it too, for the same reason: `difficultyScore`
+   * blends the label with how crowded the timeline is around the event, so re-dating a
+   * card re-scores its neighbours and the ramp lands differently. Fixing
+   * `chickens-domesticated` from -6000 to -1500 (the 2022 PNAS re-dating) took this
+   * from 9 to 11, with the exact guarantee still at 0. Raised to 12 to keep the same
+   * headroom rather than sit on the bound.
    */
   it('keeps cross-boundary repeats to a trickle', () => {
     const days = consecutiveDays(60, '2026-08-13');
     const repeats = countRepeats(days, windowsFor(days));
 
-    expect(repeats).toBeLessThanOrEqual(10);
+    expect(repeats).toBeLessThanOrEqual(12);
   });
 
   it('is a pure function of the date, cache warm or cold', () => {

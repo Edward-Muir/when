@@ -6,6 +6,9 @@ preloading.
 - **Adding events by hand:** use the `add-events` skill — it carries the current taxonomy.
 - **Grading difficulty:** [difficulty-grading-rubric.md](difficulty-grading-rubric.md) is a
   live reference, kept as its own file.
+- **Known bad records:** [catalogue-error-backlog.md](catalogue-error-backlog.md) — years, names
+  and descriptions the sources do not support, plus the flags already checked and dismissed.
+  Check it before "fixing" an event, and add to it rather than to a commit message.
 - **Delivering images:** [../cloudinary-cost-controls.md](../cloudinary-cost-controls.md)
   owns the rung ladder, its hard rules, and the service-worker cache.
 - **Full coverage reached 2026-08-23:** every playable event has art —

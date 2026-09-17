@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, X, Trophy } from 'lucide-react';
+import { Check, Trophy, X } from 'lucide-react';
 import { HistoricalEvent, Player, GamePopupType, WhenGameState } from '../types';
 import { formatYear } from '../utils/gameLogic';
 import { DailyResult } from '../utils/playerStorage';
@@ -11,6 +11,8 @@ import { getEventColorStyle, getEventTextClass } from '../utils/eventColor';
 import { getThemeOutcome } from '../utils/themeOutcome';
 import { getImageUrl } from '../utils/cloudinaryImage';
 import ReportIssueButton from './ReportIssueButton';
+import { useEventDetail } from '../hooks/useEventDetail';
+import EventDetailText from './EventDetailText';
 
 interface GamePopupProps {
   type: GamePopupType;
@@ -26,6 +28,21 @@ interface GamePopupProps {
   dailyResult?: DailyResult | null;
   /** Owned by `Game` so the rank it resolves is read directly by the share step. */
   leaderboard?: DailyLeaderboard;
+}
+
+/**
+ * Whether this popup shows the long-form prose instead of the card's short description. All three
+ * conditions matter, and the middle one is the spoiler gate:
+ *
+ * - `description`: correct/incorrect reveals are a beat in the game loop, not a reading surface.
+ * - `showYear`: false exactly when the card is still in the player's hand. The prose is written
+ *   post-placement and names dates freely, so showing it there would hand over the answer.
+ *   See docs/event-detail/index.md.
+ * - `has_detail`: set only where prose actually exists. Where it is not, the description is what
+ *   renders — which is what lets the feature ship against a partly written corpus.
+ */
+function showsProseFor(type: GamePopupType, showYear: boolean, event: HistoricalEvent | null) {
+  return type === 'description' && showYear && !!event?.has_detail;
 }
 
 // Sub-component for result banner (full-width colored banner at top)
@@ -46,31 +63,65 @@ function ResultBanner({ isCorrect }: { isCorrect: boolean }) {
   );
 }
 
+/** Header ✕. Flat and tinted like the card's own text, so it reads as part of the card. */
+function CloseButton({
+  event,
+  tombstone,
+  onClick,
+}: {
+  event: HistoricalEvent;
+  tombstone?: boolean;
+  onClick: () => void;
+}) {
+  const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
+  return (
+    <button
+      type="button"
+      aria-label="Close"
+      // Card taps advance past a description popup, so this has to stop there or the dismissal
+      // happens twice over.
+      onClick={(e) => {
+        e.stopPropagation();
+        onClick();
+      }}
+      className={`shrink-0 -my-1 w-11 h-11 flex items-center justify-center rounded-xl opacity-60 hover:opacity-100 active:scale-95 transition-all ${textClass}`}
+    >
+      <X className="w-5 h-5" />
+    </button>
+  );
+}
+
 // Sub-component for event header (title + year)
 function EventHeader({
   event,
   showYear,
   isIncorrect,
   tombstone,
+  trailing,
 }: {
   event: HistoricalEvent;
   showYear: boolean;
   isIncorrect?: boolean;
   tombstone?: boolean;
+  /** The read-more control, rendered right of the title. */
+  trailing?: React.ReactNode;
 }) {
   const textClass = tombstone ? 'text-text-muted' : getEventTextClass(event);
   return (
-    <div className="px-4 py-3">
-      <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
-        {event.friendly_name}
-      </h2>
-      {showYear && (
-        <span
-          className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
-        >
-          {formatYear(event.year)}
-        </span>
-      )}
+    <div className="px-4 py-3 flex items-start gap-2">
+      <div className="min-w-0 flex-1">
+        <h2 className={`text-lg font-display font-semibold leading-tight ${textClass}`}>
+          {event.friendly_name}
+        </h2>
+        {showYear && (
+          <span
+            className={`text-2xl font-bold font-mono mt-1 block ${isIncorrect ? 'text-error' : `${textClass} opacity-100`}`}
+          >
+            {formatYear(event.year)}
+          </span>
+        )}
+      </div>
+      {trailing}
     </div>
   );
 }
@@ -81,6 +132,11 @@ function EventHeader({
 // clamped to this maximum anyway — keeping it a constant is pixel-identical to what
 // shipped before. The square `detail` image is cropped to fit by `object-cover`.
 const IMAGE_CONTAINER_HEIGHT = 384;
+
+// How much of the prose sits below the image before the reader scrolls, in CSS px. A constant
+// rather than a measurement: the region only ever holds the long-form read, which always overflows
+// it, so there is no text for a measured height to fit. Three lines plus the box's padding.
+const DETAIL_TEXT_HEIGHT = 92;
 
 // Sub-component for image section (clean, no overlay)
 function EventImage({ event, tombstone }: { event: HistoricalEvent; tombstone?: boolean }) {
@@ -272,12 +328,18 @@ function EventPopupContent({
   showYear,
   nextPlayer,
   tombstone,
+  showsProse,
+  detail,
+  onDismiss,
 }: {
   type: GamePopupType;
   event: HistoricalEvent;
   showYear: boolean;
   nextPlayer?: Player;
   tombstone?: boolean;
+  showsProse: boolean;
+  detail: ReturnType<typeof useEventDetail>;
+  onDismiss: () => void;
 }) {
   const isCorrect = type === 'correct';
   const isIncorrect = type === 'incorrect';
@@ -291,17 +353,54 @@ function EventPopupContent({
         showYear={showYear}
         isIncorrect={isIncorrect}
         tombstone={tombstone}
+        trailing={
+          isDescription ? (
+            <CloseButton event={event} tombstone={tombstone} onClick={onDismiss} />
+          ) : undefined
+        }
       />
-      <EventImage event={event} tombstone={tombstone} />
-      {(isDescription || isIncorrect) && (
-        <div className="px-4 py-3">
-          <p
-            className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
-          >
-            {event.description}
-          </p>
+
+      {/* Showing the prose, this is a fixed box the image sits at the top of: scroll and the image
+          leaves, and the rest of the region is the read. Showing the description it is the plain
+          run of content it has always been, tall enough for its own text and not scrollable.
+
+          The scroller carries `overflow` and nothing else — no mask, no filter, nothing that
+          promotes it to its own compositing layer. A `mask-image` here left the image painting at
+          its unscrolled position on iOS Safari, on neither Chromium nor Linux WebKit, so anything
+          decorative goes on the sibling below instead. */}
+      <div className="relative">
+        <div
+          data-testid="detail-scroll"
+          className={showsProse ? 'overflow-y-auto overscroll-contain' : undefined}
+          style={showsProse ? { height: IMAGE_CONTAINER_HEIGHT + DETAIL_TEXT_HEIGHT } : undefined}
+        >
+          <EventImage event={event} tombstone={tombstone} />
+          {showsProse ? (
+            <EventDetailText event={event} tombstone={tombstone} detail={detail} />
+          ) : (
+            (isDescription || isIncorrect) && (
+              <div className="px-4 py-3">
+                <p
+                  className={`${tombstone ? 'text-text-muted' : getEventTextClass(event)} text-sm leading-relaxed font-body`}
+                >
+                  {event.description}
+                </p>
+              </div>
+            )
+          )}
         </div>
-      )}
+        {showsProse && (
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-3"
+            // The card's own colour, which only this call site knows: it is per-event and inline.
+            style={{
+              backgroundImage: `linear-gradient(to top, ${(!tombstone && event.color) || 'var(--color-surface)'}, transparent)`,
+            }}
+          />
+        )}
+      </div>
+
       {isDescription && <ReportIssueButton event={event} tombstone={tombstone} />}
       {nextPlayer && (
         <div className="px-4 py-4 border-t border-border">
@@ -329,10 +428,19 @@ const GamePopup: React.FC<GamePopupProps> = ({
   const isGameOver = type === 'gameOver';
   const isVisible = isGameOver ? !!gameState : !!event;
 
+  const showsProse = showsProseFor(type, showYear, event);
+  // The shard is fetched only where the prose is going to be rendered — never for a card in hand.
+  const detail = useEventDetail(event?.name ?? null, showsProse);
+
   // The submit form is on screen exactly when there is a daily to claim and the player has not
   // claimed it.
   const showsSubmitForm = isGameOver && !!dailyResult && leaderboard?.submitted === false;
-  const dismiss = gameOverDismiss(showsSubmitForm, leaderboard?.unavailable === false);
+  // Tapping the card advances past a popup, which would eat every scroll drag through the prose.
+  // The backdrop, ESC and the card's own ✕ still get the player out. `showsProse` is only ever
+  // true on a description popup, so this never reaches the game-over sequence.
+  const dismiss: ModalDismissMode = showsProse
+    ? 'backdrop'
+    : gameOverDismiss(showsSubmitForm, leaderboard?.unavailable === false);
 
   return (
     <Modal
@@ -363,6 +471,9 @@ const GamePopup: React.FC<GamePopupProps> = ({
             showYear={showYear}
             nextPlayer={nextPlayer}
             tombstone={tombstone}
+            showsProse={showsProse}
+            detail={detail}
+            onDismiss={onDismiss}
           />
         )
       )}

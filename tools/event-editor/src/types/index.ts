@@ -16,6 +16,8 @@ export interface HistoricalEvent {
   image_height?: number;
   wikipedia_views?: number;
   wikipedia_url?: string;
+  /** Set by scripts/events/detail-apply.js. Read-only here — do not edit by hand. */
+  has_detail?: boolean;
 }
 
 export interface DeprecatedEvent extends HistoricalEvent {
