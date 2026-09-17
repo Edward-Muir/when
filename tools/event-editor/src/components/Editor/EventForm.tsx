@@ -53,6 +53,27 @@ export function EventForm({ event, onUpdate, isDeprecated, categories }: EventFo
         </p>
       </div>
 
+      {/* End year (optional upper bound) */}
+      <div>
+        <label className="mb-1 block text-sm font-medium text-text">End Year</label>
+        <input
+          type="number"
+          value={event.year_end ?? ''}
+          onChange={(e) =>
+            onUpdate({
+              year_end: e.target.value === '' ? undefined : parseInt(e.target.value, 10),
+            })
+          }
+          disabled={isDeprecated}
+          className="w-full rounded border border-border bg-white px-3 py-2 text-sm text-text focus:border-accent focus:outline-none disabled:cursor-not-allowed disabled:bg-bg-secondary"
+        />
+        <p className="mt-1 text-xs text-text-secondary">
+          Leave blank for a single-year event. Set it only where the record gives a window (a
+          process, a reign, a floruit); the year above is then the lower bound and anything inside
+          the window counts as a correct placement. Must be greater than Year.
+        </p>
+      </div>
+
       {/* Category */}
       <div>
         <label className="mb-1 block text-sm font-medium text-text">

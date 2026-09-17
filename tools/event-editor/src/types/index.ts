@@ -18,6 +18,12 @@ export interface HistoricalEvent {
   wikipedia_url?: string;
   /** Set by scripts/events/detail-apply.js. Read-only here — do not edit by hand. */
   has_detail?: boolean;
+  /**
+   * Optional upper bound for an event the record places in a window. `year` is the lower
+   * bound. Written by scripts/events/year-range-apply.js, which validates a per-era span
+   * ceiling; prefer that over editing this by hand.
+   */
+  year_end?: number;
 }
 
 export interface DeprecatedEvent extends HistoricalEvent {

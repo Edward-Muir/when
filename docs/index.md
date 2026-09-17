@@ -19,8 +19,11 @@ original per-session write-ups if you need the blow-by-blow.
 - [cloudinary-cost-controls.md](cloudinary-cost-controls.md) — **read before touching image
   delivery, preloading or the service-worker image cache.** The rung ladder has hard rules that
   exist because breaking them ran the account toward shutdown.
-- [gameplay-feel/](gameplay-feel/index.md) — **read before retuning deck composition.** Also
-  covers tombstones, streak feedback, and the repo-wide Tailwind opacity-modifier trap.
+- [gameplay-feel/](gameplay-feel/index.md) — **read before retuning deck composition, or
+  before touching how a placement is judged.** The neighbour-comparison rule for date ranges
+  is unsound and the counterexample is written down, along with the property test that is the
+  only thing catching it. Also covers tombstones, streak feedback, and the repo-wide Tailwind
+  opacity-modifier trap.
 - [events-images/difficulty-grading-rubric.md](events-images/difficulty-grading-rubric.md) —
   the grading criteria. Grade recognition and inferability; never grade crowding.
 - [sharing-challenges/](sharing-challenges/index.md) — **read before touching the challenge-code

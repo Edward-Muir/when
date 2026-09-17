@@ -107,6 +107,36 @@ and got ellipsised. 639 were renamed and the cap became permanent
 uses `line-clamp-3` (~60 chars) and is _not_ the binding constraint — don't re-derive the limit
 from it. 40 and 30 were the alternatives considered.
 
+## `year_end`: events that name a period, not a moment
+
+Some cards describe a process, a floruit or a reign the record does not pin to a year, and
+grading those against a single date grades a guess. Those carry an optional `year_end` upper
+bound and a placement anywhere the window fits counts as a success.
+
+`year` stays the lower bound and the sole anchor for difficulty scoring, deck composition, era
+filtering and recency, so **adding a range cannot move a daily deck**. Correcting a `year`
+very much can — see the `--allow-year-change` note below.
+
+- Written by `scripts/events/year-range-report.js` / `-apply.js`, never by hand in bulk: the
+  same "agents write maps, one pass writes the catalogue" arrangement as the detail prose.
+- `scripts/events/year-range.js` holds both the candidate heuristics and the validator, and
+  `src/utils/eventYearRange.test.ts` requires it, so the corpus and the tool that writes it
+  cannot disagree about what is valid.
+- **The apply script cannot write `year`** without `--allow-year-change`, which also demands a
+  `reason` per entry and prints every move. That is what keeps a range batch provably unable to
+  perturb `deckBuilder.test.ts`. Land year corrections in their own commit, re-run that test,
+  and re-measure its bound rather than widening it.
+- **Candidate detection reuses an existing exemption.** The duration phrases `date-clues.js`
+  deliberately does _not_ flag as spoilers ("a 27-year war", "800 years of Muslim rule") are
+  exactly the cards that name a period, so that carve-out doubles as a pre-built worklist.
+- The per-era span ceiling is game balance, not accuracy: a window wide enough to cover the
+  board makes its card unloseable.
+- **Omitting is usually right.** A precise, well-attested event must not get a range, and
+  roughly three in four flags in this project's history did not survive checking.
+
+The rule that consumes this field, and why the obvious version of it is unsound, is in
+[../gameplay-feel/index.md](../gameplay-feel/index.md).
+
 ## Player-visible text must not state the date
 
 `description` and `friendly_name` may not contain a year, decade, century or `NNN CE/BCE`

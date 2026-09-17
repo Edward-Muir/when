@@ -1,6 +1,7 @@
 # Gameplay & Feel
 
-Deck composition, tombstones, streak feedback, transitions, and the colour system.
+Deck composition, fuzzy placement, tombstones, streak feedback, transitions, and the colour
+system.
 
 ## Repo-wide trap: Tailwind opacity modifiers on our colour tokens compile to nothing
 
@@ -51,6 +52,73 @@ and `max(1, 0)` is the pathological value again).
 Both options must be derived from the date in one place — `getDailyBuildOptions` in
 `dailyPool.ts` — and used by every builder call site on the daily path, including
 `dailyRecency`'s chain walk. See [curated-themes/](../curated-themes/index.md).
+
+## Fuzzy placement: events that name a period (2026-09-17)
+
+An optional `year_end` upper bound on an event whose date the record gives as a window. `year`
+stays the lower bound **and the sole anchor for everything else** — difficulty scoring, deck
+composition, era filtering, recency. Only placement judging and the year label read `year_end`,
+which is what makes adding one provably unable to move a daily deck.
+
+### The neighbour rule is unsound — do not re-propose it
+
+The obvious generalisation is to compare the card's interval against its two immediate
+neighbours. It is wrong, and the failure is not an edge case:
+
+> Seed `P = 2000-3000`. Drop `Q = 1000-2500` after it: passes, `2500 >= 2000`. Now drop
+> `C = 1100-1200` after `Q`: passes, `1200 >= 1000`. The board reads
+> `2000-3000 | 1000-2500 | 1100-1200` and no left-to-right reading of it is non-decreasing.
+> The game said "correct" for putting an 1100-1200 event after a 2000-3000 one.
+
+Correctness of a board of intervals is a **global** property; adjacency is local. So judge
+against the accumulated bounds instead — the latest start committed to by everything on the
+left, the earliest end committed to by everything on the right. That buys four things:
+
+1. The board stays readable after any accepted insertion.
+2. A valid gap always exists, so `findCorrectPosition` can never fall through wrongly.
+3. The valid gaps form one **contiguous** band. Adjacency produces non-contiguous bands
+   (gaps 0 and 2 valid, gap 1 not), which cannot be explained to a player.
+4. On a point-only timeline it is byte-identical to the old rule, which is what licensed
+   shipping the code ahead of any data.
+
+Both (1) and (2) rest on `start <= end` for every event, which is why `eventEnd` **clamps
+rather than trusts**: the JSON is hand-editable and fetched at runtime, so a malformed
+`year_end` degrades the card to a point card instead of producing an unjudgeable board.
+
+**The property test in `gameLogic.test.ts` is the guard.** It inserts random intervals at
+randomly chosen valid gaps and asserts the board stays readable. It was verified to go red
+against the adjacency rule and green against this one, and **no other test catches the
+difference** — the hand-written cases all pass under both. If you touch the predicate, run it
+against your change before trusting a green suite.
+
+### Other decisions worth not re-deriving
+
+- **A correct card lands where the player dropped it**, not at the canonical slot
+  (`useWhenGame` passes `insertionIndex`, not `result.correctPosition`). Being told "close
+  enough" and then watching the card teleport is the exact feedback the feature removes. Safe
+  only because of (1) above. Side effect: equal-year ties now stay on the chosen side instead
+  of silently snapping left.
+- **A close-enough is a full success** — streak, replacement draw, green square. Only the
+  feedback differs, so nothing in stats, sharing or the leaderboard needed to change.
+- **Confetti is withheld, not reduced.** A smaller burst reads as a rendering glitch; its
+  absence reads as a different outcome. The vignette takes `accent-secondary` and the haptic
+  drops to a single tick.
+- **The explanation rides the one-shot hint machinery**, sitting above `correct` in
+  `SETTLE_PRIORITY` so a first placement that happens to be close-enough explains the
+  surprising part rather than the ordinary one. Seen once per install; the vignette and
+  confetti carry it after that.
+- **`closeEnough` requires something adjacent to be ranged**, not just that the collapsed
+  predicate disagreed. Once a board carries ranges it is no longer sorted by `year`, so the
+  collapsed predicate can go degenerate and report _every_ placement as close-enough.
+- **The span ceiling is balance, not accuracy** (`scripts/events/year-range.js`). A window wide
+  enough to cover the board makes its card unloseable _and_ slackens the bounds for every
+  placement around it for the rest of the game.
+- **Known cosmetic tension, deliberately not fixed:** a ranged card dropped above its band
+  tombstones back to the band's first gap, so the miss-travel animation runs longer than the
+  error deserves. Clamping to the nearest valid gap instead makes tombstone position depend on
+  a stale attempted index and lets tombstones drift as the board grows.
+- `TimelinePanel` re-sorts the collection by `.year`, so the collection tab's order can differ
+  from the in-game row order once ranges are in play. Expected, not a bug.
 
 ## Deck composition (2026-08-13)
 
