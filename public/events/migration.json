@@ -17,7 +17,7 @@
   {
     "name": "humans-reach-australia",
     "friendly_name": "Humans Reach Australia",
-    "year": -50000,
+    "year": -65000,
     "category": "migration",
     "description": "Seafaring humans crossed open water to settle the continent of Sahul, founding Aboriginal Australia.",
     "difficulty": "easy",
@@ -26,12 +26,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-australia_ok34l8?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -45000
   },
   {
     "name": "humans-settle-near-oceania",
     "friendly_name": "Humans Settle Near Oceania",
-    "year": -40000,
+    "year": -42000,
     "category": "migration",
     "description": "Early voyagers reached New Guinea and the Bismarck Archipelago, the first peopling of the Pacific.",
     "difficulty": "hard",
@@ -40,7 +41,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-settle-near-oceania_m818ag?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -20000
   },
   {
     "name": "humans-enter-europe",
@@ -75,7 +77,7 @@
   {
     "name": "humans-reach-siberia",
     "friendly_name": "Humans Reach Siberia",
-    "year": -30000,
+    "year": -45000,
     "category": "migration",
     "description": "Humans adapted to the frozen Arctic, settling Siberia and reaching the gateway to the Americas.",
     "difficulty": "medium",
@@ -84,7 +86,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-siberia_n9pqet?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -32000
   },
   {
     "name": "settlement-south-america",

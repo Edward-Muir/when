@@ -358,6 +358,18 @@ describe('the seven-day no-repeat guarantee', () => {
    * `chickens-domesticated` from -6000 to -1500 (the 2022 PNAS re-dating) took this
    * from 9 to 11, with the exact guarantee still at 0. Raised to 12 to keep the same
    * headroom rather than sit on the bound.
+   *
+   * **Measured history of this number: 7, 9, 11, then 7, now 6.** The last two came from
+   * date-range work — two settlement dates corrected, then 130 more years moved to their
+   * evidence windows' starts. Both times it went *down*, which is worth knowing because the
+   * intuition runs the other way: re-dating cards feels like it should scatter the decks, and
+   * instead correcting years that were round-number guesses slightly de-clusters the
+   * catalogue and makes the ramp's spacing kernel work better.
+   *
+   * **The bound stays at 12 deliberately, even though 6 is half of it.** The number has swung
+   * across 6-11 on ordinary catalogue work, so a bound set tight to the latest measurement
+   * would fail on the next change without indicating a real regression. Re-measure before
+   * moving it in either direction; do not tighten it just because the current reading is low.
    */
   it('keeps cross-boundary repeats to a trickle', () => {
     const days = consecutiveDays(60, '2026-08-13');

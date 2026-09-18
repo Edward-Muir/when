@@ -19,7 +19,7 @@
   {
     "name": "jericho-walls",
     "friendly_name": "Walls of Jericho Built",
-    "year": -8000,
+    "year": -8300,
     "category": "architecture",
     "description": "One of the earliest known permanent settlements constructed defensive walls.",
     "difficulty": "easy",
@@ -30,7 +30,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tell_es-Sultan",
     "color": "#302013",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7800
   },
   {
     "name": "catalhoyuk-settlement",
@@ -6034,7 +6035,7 @@
   {
     "name": "fiber-preparation-flax",
     "friendly_name": "Flax and Hemp Fiber Preparation",
-    "year": -3500,
+    "year": -5000,
     "category": "agriculture",
     "description": "Egyptians developed retting and hackling techniques to prepare flax fibers for linen textile production.",
     "difficulty": "very-hard",
@@ -6043,12 +6044,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "copper-smelting-developed",
     "friendly_name": "Copper Smelting Process Developed",
-    "year": -4500,
+    "year": -5500,
     "category": "agriculture",
     "description": "Mesopotamian metalworkers learned to smelt copper ore at high temperatures, advancing beyond native copper working.",
     "difficulty": "hard",
@@ -6057,12 +6059,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -4500
   },
   {
     "name": "native-copper-working",
     "friendly_name": "Native Copper Working Begins",
-    "year": -7000,
+    "year": -7800,
     "category": "agriculture",
     "description": "People in the Middle East began cold-hammering native copper nuggets into tools and ornaments.",
     "difficulty": "hard",
@@ -6071,7 +6074,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "batavia-founded",
