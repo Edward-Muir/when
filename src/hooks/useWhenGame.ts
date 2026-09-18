@@ -23,6 +23,7 @@ import {
   sortByYear,
   initializePlayers,
   insertIntoTimeline,
+  settledPosition,
   getNextActivePlayerIndex,
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
@@ -305,9 +306,10 @@ export function useWhenGame(): UseWhenGameReturn {
       }
 
       if (result.success) {
-        // 4a. Correct placement. The card lands where the player dropped it rather than at the
-        // canonical slot, so one won on a range never teleports; see gameLogic's bound rule.
-        const newTimeline = insertIntoTimeline(state.timeline, activeCard, insertionIndex);
+        // 4a. Correct placement. The card settles at its `year`, so the board stays sorted;
+        // a card won on a window slides there from wherever it was dropped. See gameLogic.
+        const settled = settledPosition(state.timeline, activeCard, insertionIndex);
+        const newTimeline = insertIntoTimeline(state.timeline, activeCard, settled);
 
         setState((prev) => ({
           ...prev,

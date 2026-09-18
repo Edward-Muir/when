@@ -170,6 +170,35 @@ export function isPointPlacementCorrect(
 }
 
 /**
+ * Where a card comes to rest once it has been accepted.
+ *
+ * A card always settles at its **`year`** — the start of its window — so the board stays
+ * sorted by `year` no matter which valid gap the player dropped it in. A windowed card
+ * accepted a few slots away therefore slides back after landing, and that is deliberate: the
+ * alternative leaves the board reading 1400 then 1350-1450, which looks like a bug, and makes
+ * the in-game order disagree with the collection tab, which sorts by `year` independently.
+ *
+ * **The sorted slot is always a legal placement**, so this can never move a card somewhere the
+ * rules would have rejected. Every card left of it has `year <= this year <= this end`, so the
+ * left clause holds; every card at or right of it has `end >= year >= this year`, so the right
+ * clause holds. That is what makes settling unconditional rather than a special case.
+ *
+ * The player's own index is preserved when it already sits in the sorted band, which is what
+ * keeps equal-year ties on the side they chose instead of snapping them left.
+ */
+export function settledPosition(
+  timeline: HistoricalEvent[],
+  event: HistoricalEvent,
+  attemptedIndex: number
+): number {
+  let lo = 0;
+  while (lo < timeline.length && (timeline.at(lo)?.year ?? 0) < event.year) lo += 1;
+  let hi = lo;
+  while (hi < timeline.length && (timeline.at(hi)?.year ?? 0) === event.year) hi += 1;
+  return Math.min(Math.max(attemptedIndex, lo), hi);
+}
+
+/**
  * The first gap the event can legally occupy — the left edge of its valid band.
  *
  * The trailing `return timeline.length` is unreachable while every event satisfies

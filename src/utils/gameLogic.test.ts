@@ -1,4 +1,5 @@
 import {
+  settledPosition,
   isPlacementCorrect,
   isPointPlacementCorrect,
   findCorrectPosition,
@@ -166,6 +167,75 @@ describe('ranged cards', () => {
  * assert the board stays readable. Against a neighbour-only predicate this goes red within a
  * few hundred iterations; see the header comment in gameLogic.ts for the worked counterexample.
  */
+describe('settledPosition', () => {
+  it('settles a windowed card at its year, wherever it was dropped', () => {
+    const board = [ev('a', 1100), ev('b', 1366), ev('c', 1500)];
+    const card = ev('x', 1200, 1400);
+    // Accepted at gap 2 (after 1366) as close-enough, but it belongs at gap 1.
+    expect(isPlacementCorrect(board, card, 2)).toBe(true);
+    expect(settledPosition(board, card, 2)).toBe(1);
+  });
+
+  it('leaves an exact card exactly where it was dropped', () => {
+    const board = [ev('a', 1100), ev('b', 1366), ev('c', 1500)];
+    expect(settledPosition(board, ev('x', 1200), 1)).toBe(1);
+    expect(settledPosition(board, ev('x', 1400), 2)).toBe(2);
+    expect(settledPosition(board, ev('x', 900), 0)).toBe(0);
+    expect(settledPosition(board, ev('x', 1600), 3)).toBe(3);
+  });
+
+  it('keeps an equal-year tie on the side the player chose', () => {
+    const board = [ev('a', 1100), ev('b', 1366), ev('c', 1366), ev('d', 1500)];
+    expect(settledPosition(board, ev('x', 1366), 1)).toBe(1);
+    expect(settledPosition(board, ev('x', 1366), 2)).toBe(2);
+    expect(settledPosition(board, ev('x', 1366), 3)).toBe(3);
+    // Outside the tie band it is pulled back in.
+    expect(settledPosition(board, ev('x', 1366), 0)).toBe(1);
+    expect(settledPosition(board, ev('x', 1366), 4)).toBe(3);
+  });
+
+  it('settles against a windowed card already on the board', () => {
+    const board = [ev('a', 1100), ev('ranged', 1200, 1400), ev('c', 1500)];
+    const exact = ev('x', 1366);
+    // Accepted on both sides of the windowed card; settles after it, since 1366 > 1200.
+    expect(isPlacementCorrect(board, exact, 1)).toBe(true);
+    expect(isPlacementCorrect(board, exact, 2)).toBe(true);
+    expect(settledPosition(board, exact, 1)).toBe(2);
+    expect(settledPosition(board, exact, 2)).toBe(2);
+  });
+});
+
+/**
+ * The guarantee that lets a card settle unconditionally: the sorted slot is never a placement
+ * the rules would have rejected, so sliding can never move a card somewhere illegal.
+ */
+describe('property: the settled slot is always a legal placement', () => {
+  it('holds over 500 random interval boards', () => {
+    const random = seededRandom(20260918);
+    for (let trial = 0; trial < 500; trial++) {
+      const seedYear = Math.floor(random() * 4000) - 2000;
+      let timeline: HistoricalEvent[] = [
+        ev('seed', seedYear, seedYear + Math.floor(random() * 400)),
+      ];
+      for (let n = 0; n < 12; n++) {
+        const year = Math.floor(random() * 4000) - 2000;
+        const span = random() < 0.4 ? Math.floor(random() * 600) : 0;
+        const card = ev(`c${n}`, year, span ? year + span : undefined);
+
+        const gaps = validGaps(timeline, card);
+        const chosen = gaps[Math.floor(random() * gaps.length)];
+        const settled = settledPosition(timeline, card, chosen);
+
+        expect(isPlacementCorrect(timeline, card, settled)).toBe(true);
+        timeline = [...timeline.slice(0, settled), card, ...timeline.slice(settled)];
+        // Settling keeps the board sorted by `year`, which is the point of it.
+        const years = timeline.map((e) => e.year);
+        expect([...years].sort((a, b) => a - b)).toEqual(years);
+      }
+    }
+  });
+});
+
 describe('property: the board stays readable under random valid insertions', () => {
   it('holds over 500 random interval insertions', () => {
     const random = seededRandom(20260917);

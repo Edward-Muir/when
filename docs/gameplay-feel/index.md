@@ -93,11 +93,18 @@ against your change before trusting a green suite.
 
 ### Other decisions worth not re-deriving
 
-- **A correct card lands where the player dropped it**, not at the canonical slot
-  (`useWhenGame` passes `insertionIndex`, not `result.correctPosition`). Being told "close
-  enough" and then watching the card teleport is the exact feedback the feature removes. Safe
-  only because of (1) above. Side effect: equal-year ties now stay on the chosen side instead
-  of silently snapping left.
+- **A correct card settles at its `year`**, the start of its window, via `settledPosition` —
+  so the board is always sorted by `year` and a card won on a window slides there from
+  wherever it was dropped. An earlier version inserted at the player's own index to avoid the
+  card teleporting, and that was the wrong trade: it let the board read `1400 | 1350-1450`,
+  which looks like a bug, and made the in-game order disagree with the collection tab, which
+  sorts by `year` independently. The slide is legible because the card shows its span.
+  - **The sorted slot is always a legal placement**, which is what makes settling
+    unconditional rather than a special case: every card left of it has
+    `year <= this year <= this end`, and every card at or right of it has
+    `end >= year >= this year`. A property test pins it.
+  - The player's index is preserved when it already sits in the sorted band, so equal-year
+    ties stay on the side they chose instead of snapping left.
 - **A close-enough is a full success** — streak, replacement draw, green square. Only the
   feedback differs, so nothing in stats, sharing or the leaderboard needed to change.
 - **Confetti is withheld, not reduced.** A smaller burst reads as a rendering glitch; its
@@ -123,8 +130,8 @@ against your change before trusting a green suite.
   tombstones back to the band's first gap, so the miss-travel animation runs longer than the
   error deserves. Clamping to the nearest valid gap instead makes tombstone position depend on
   a stale attempted index and lets tombstones drift as the board grows.
-- `TimelinePanel` re-sorts the collection by `.year`, so the collection tab's order can differ
-  from the in-game row order once ranges are in play. Expected, not a bug.
+- `TimelinePanel` re-sorts the collection by `.year`. That used to diverge from the in-game row
+  order once ranges were in play; settling at `year` removed the divergence.
 
 ## Deck composition (2026-08-13)
 
