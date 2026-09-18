@@ -2,9 +2,21 @@
  * Shared rules for the optional `year_end` upper bound: what makes an event a candidate for
  * one, and what makes a proposed value valid.
  *
- * `year` is the lower bound and stays the sole anchor for difficulty scoring, deck
- * composition, era filtering and recency. Only placement judging and the year label read
- * `year_end`, which is what makes adding one safe: it cannot move a daily deck.
+ * **`year` and `year_end` together are the event's evidence window.** `year` is simply the
+ * window's start, not an anchor to hang a forward-only range off: where the record puts the
+ * window somewhere else, `year` moves too (see `entryProblems` and the `reason` requirement).
+ *
+ * `year` remains the sole anchor for difficulty scoring, deck composition, era filtering and
+ * recency, so adding or widening a `year_end` alone cannot move a daily deck. Changing `year`
+ * very much can, which is why that needs a stated reason and a re-measured deck bound.
+ *
+ * **There is deliberately no cap on how wide a window may be.** An earlier version capped the
+ * span per era as a game-balance measure; it was wrong. A prehistoric event's window really is
+ * millions of years, `boats` really does carry ~850,000 years of uncertainty, and the flat
+ * 1,000-year rule for -10000..0 bound hardest on the agriculture and domestication cards,
+ * which are the clearest processes in the catalogue. Honesty about uncertainty beat the
+ * balance concern. The apply script still prints the widest ranges and any fully nested pairs
+ * so a mis-keyed digit is visible, but nothing is rejected for width.
  *
  * Plain CommonJS with no dependencies, so `node` runs the report/apply scripts with no build
  * step and the Jest corpus test can `require` it across the tsconfig boundary. Same
@@ -22,21 +34,6 @@ function rangeOf(event) {
 function isRanged(event) {
   const { start, end } = rangeOf(event);
   return end > start;
-}
-
-/**
- * The widest span allowed for an event starting at `year`, in years.
- *
- * This is game balance, not accuracy. A window wide enough to cover most of the board makes
- * its card unloseable, and worse, it slackens the running bounds for every placement around
- * it for the rest of the game. Deep time gets a proportional cap instead of a flat one
- * because a 500-year window on a 40,000-year-old event is meaninglessly precise.
- */
-function maxSpanFor(year) {
-  if (year < -10000) return Math.round(Math.abs(year) * 0.25);
-  if (year < 0) return 1000;
-  if (year < 1500) return 500;
-  return 250;
 }
 
 /** Span nouns in a title are the strongest signal that a card names a period, not a moment. */
@@ -90,15 +87,21 @@ function eventRangeSignals(event) {
 }
 
 /**
- * Everything wrong with a proposed `{ year_end, year?, reason? }` entry, as a list of
+ * Everything wrong with a proposed `{ year_end, year?, reason?, note? }` entry, as a list of
  * sentences. Empty means it is applicable.
  *
- * `allowYearChange` is off by default and is the only route by which `year` may be touched at
- * all: correcting a year re-scores its neighbours through difficultyScore and moves every
- * daily deck, so it must never ride along on a range batch by accident.
+ * **`year` is writable, but only with a `reason`.** The stored year is not a constant to be
+ * preserved: where the record puts the window somewhere else, the window start moves. The
+ * requirement is a stated reason rather than a command-line flag, because fixing years is now
+ * the common case and a flag makes the common case awkward while doing nothing a mandatory
+ * reason does not already do — it is what stops a year change riding along unnoticed.
+ *
+ * What the reason does not buy is silence: `year-range-apply.js` prints every move, and a
+ * batch that changes years needs `deckBuilder.test.ts`'s bound re-measured afterwards.
+ *
+ * Note what is *not* here: any limit on how wide a window may be. See the header.
  */
-function entryProblems(slug, entry, event, opts) {
-  const options = opts || {};
+function entryProblems(slug, entry, event) {
   const problems = [];
 
   if (!event) {
@@ -108,25 +111,22 @@ function entryProblems(slug, entry, event, opts) {
     return [`${slug}: entry must be an object with a year_end`];
   }
 
-  const permitted = new Set([
-    'year_end',
-    'note',
-    ...(options.allowYearChange ? ['year', 'reason'] : []),
-  ]);
+  const permitted = new Set(['year_end', 'year', 'reason', 'note']);
   for (const key of Object.keys(entry)) {
-    if (!permitted.has(key)) {
-      problems.push(
-        `${slug}: may not set "${key}"` +
-          (key === 'year' ? ' without --allow-year-change (it moves every daily deck)' : '')
-      );
-    }
+    if (!permitted.has(key)) problems.push(`${slug}: may not set "${key}"`);
   }
 
-  const year = Object.prototype.hasOwnProperty.call(entry, 'year') ? entry.year : event.year;
-  if (Object.prototype.hasOwnProperty.call(entry, 'year')) {
-    if (!Number.isInteger(year)) problems.push(`${slug}: year must be an integer`);
+  const movesYear = Object.prototype.hasOwnProperty.call(entry, 'year');
+  const year = movesYear ? entry.year : event.year;
+  if (movesYear) {
+    if (!Number.isInteger(year)) {
+      problems.push(`${slug}: year must be an integer, got ${JSON.stringify(entry.year)}`);
+    }
     if (!entry.reason || typeof entry.reason !== 'string') {
-      problems.push(`${slug}: a year change needs a "reason" naming the evidence`);
+      problems.push(
+        `${slug}: moving year needs a "reason" naming the evidence (it re-scores neighbours` +
+          ' through difficultyScore and moves daily decks)'
+      );
     }
   }
 
@@ -146,22 +146,12 @@ function entryProblems(slug, entry, event, opts) {
     problems.push(`${slug}: year_end ${end} is in the future`);
   }
 
-  const span = end - year;
-  const maxSpan = maxSpanFor(year);
-  if (span > maxSpan && !options.allowWide) {
-    problems.push(
-      `${slug}: span of ${span} years exceeds the ${maxSpan}-year ceiling for year ${year}` +
-        ' (pass --allow-wide only with a reason it is really this uncertain)'
-    );
-  }
-
   return problems;
 }
 
 module.exports = {
   rangeOf,
   isRanged,
-  maxSpanFor,
   eventRangeSignals,
   entryProblems,
 };

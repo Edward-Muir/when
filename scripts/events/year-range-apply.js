@@ -1,37 +1,43 @@
 #!/usr/bin/env node
 /**
- * Applies `year_end` upper bounds to the catalogue.
+ * Applies evidence windows (`year` + `year_end`) to the catalogue.
  *
  * Usage:
  *   node scripts/events/year-range-apply.js                      # all maps in untracked_data/event-ranges
  *   node scripts/events/year-range-apply.js batch-001.json ...   # only these maps
  *   node scripts/events/year-range-apply.js --dry-run
- *   node scripts/events/year-range-apply.js --allow-year-change  # see below
- *   node scripts/events/year-range-apply.js --allow-wide         # waive the span ceiling
  *
- * Input is one or more `slug -> { year_end, note? }` maps in `untracked_data/event-ranges/`
- * (gitignored). This is the house pattern from `detail-apply.js` and `date-clues-apply.js`,
- * and it exists because parallel agents editing a shared 600 KB JSON array corrupt it:
- * sub-agents write maps, one deterministic pass writes the catalogue.
+ * Input is one or more `slug -> { year_end, year?, reason?, note? }` maps in
+ * `untracked_data/event-ranges/` (gitignored). This is the house pattern from
+ * `detail-apply.js` and `date-clues-apply.js`, and it exists because parallel agents editing a
+ * shared 600 KB JSON array corrupt it: sub-agents write maps, one deterministic pass writes
+ * the catalogue.
  *
  * Everything is validated before anything is written. A single bad entry aborts the whole run,
  * so a half-applied batch is not a state you can reach.
  *
- * **`year` is not writable by default, and that is the most important thing here.** Changing a
- * year re-scores its neighbours through `difficultyScore.ts`, which feeds `deckBuilder.ts` —
- * correcting one event (`chickens-domesticated`) previously moved a bound in
- * `deckBuilder.test.ts` from 9 to 11. Keeping `year` unwritable makes "this batch cannot have
- * moved a daily deck" a checked property rather than a promise. Where the record's window
- * genuinely starts after the stored year, pass `--allow-year-change` and give each such entry
- * a `reason`; the run then prints every moved year so it can go in the commit message and in
- * docs/events-images/catalogue-error-backlog.md. Land those in their own commit and re-run
- * deckBuilder.test.ts afterwards, re-measuring its bound rather than just widening it.
+ * **Moving `year` is allowed and needs a `reason`.** It is also the one thing here with
+ * consequences beyond the record it touches: a year re-scores its neighbours through
+ * `difficultyScore.ts`, which feeds `deckBuilder.ts` — re-dating a single event
+ * (`chickens-domesticated`) once moved a bound in `deckBuilder.test.ts` from 9 to 11. So the
+ * run prints every move as a table for the commit message and for
+ * docs/events-images/catalogue-error-backlog.md.
+ *
+ * The working discipline that replaces the old hard block: **apply range-only entries first**
+ * and confirm the deck tests are untouched, then land the year moves in their own commit and
+ * re-measure that bound rather than widening it. If the deck tests move on what was supposed
+ * to be a range-only batch, a year change leaked in.
+ *
+ * There is no cap on how wide a window may be — see the header of `year-range.js`. The widest
+ * ranges and any fully nested pairs are printed after every run, because with nothing
+ * rejecting a mis-keyed digit that printout is the only thing between a typo and a card
+ * placeable anywhere.
  */
 
 const fs = require('fs');
 const path = require('path');
 const { manifestFiles, readEvents, writeEvents } = require('./detail-catalogue');
-const { entryProblems, rangeOf, maxSpanFor } = require('./year-range');
+const { entryProblems, rangeOf } = require('./year-range');
 
 const MAPS_DIR = path.join(__dirname, '..', '..', 'untracked_data', 'event-ranges');
 
@@ -75,8 +81,6 @@ function loadMaps(argv) {
 function main() {
   const argv = process.argv.slice(2);
   const dryRun = argv.includes('--dry-run');
-  const allowYearChange = argv.includes('--allow-year-change');
-  const allowWide = argv.includes('--allow-wide');
 
   const { merged, files } = loadMaps(argv);
 
@@ -99,9 +103,7 @@ function main() {
   const problems = [];
   for (const [slug, entry] of Object.entries(merged)) {
     const found = locate.get(slug);
-    problems.push(
-      ...entryProblems(slug, entry, found && found.event, { allowYearChange, allowWide })
-    );
+    problems.push(...entryProblems(slug, entry, found && found.event));
   }
   if (problems.length) {
     die(
@@ -184,7 +186,7 @@ function main() {
     console.log('\nWidest ranges in the catalogue, for eyeballing:');
     for (const e of widest) {
       console.log(
-        `  ${String(e.year_end - e.year).padStart(6)}y  ${e.name} (${e.year} to ${e.year_end}, ceiling ${maxSpanFor(e.year)})`
+        `  ${String(e.year_end - e.year).padStart(11)}y  ${e.name} (${e.year} to ${e.year_end})`
       );
     }
   }

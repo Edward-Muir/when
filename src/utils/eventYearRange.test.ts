@@ -2,14 +2,16 @@ import fs from 'fs';
 import path from 'path';
 
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { entryProblems, maxSpanFor } = require('../../scripts/events/year-range.js');
+const { entryProblems } = require('../../scripts/events/year-range.js');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 /**
- * `year_end` is the optional upper bound on an event whose date the record gives as a window.
- * A malformed one is not cosmetic: the placement rule in `gameLogic.ts` rests on
- * `start <= end` for every event, and a window far wider than its evidence slackens the
- * running bounds for every placement around it for the rest of the game.
+ * `year` and `year_end` together are an event's evidence window. A malformed one is not
+ * cosmetic: the placement rule in `gameLogic.ts` rests on `start <= end` for every event.
+ *
+ * Width is deliberately not checked. A prehistoric window really is millions of years wide,
+ * and capping it was the wrong call — see the header of `scripts/events/year-range.js`. What
+ * is checked is that the value is well formed and points forwards.
  *
  * `gameLogic.eventEnd` clamps a bad value back to a point card at runtime so the board stays
  * judgeable, which means a broken record fails silently in play. This is what makes it loud.
@@ -60,16 +62,6 @@ describe('event year ranges', () => {
       .filter(({ event }) => !Number.isInteger(event.year_end) || event.year_end! <= event.year)
       .map(({ event }) => `${event.name}: year ${event.year}, year_end ${event.year_end}`);
     expect(bad).toEqual([]);
-  });
-
-  it('no range is wider than the ceiling for its era', () => {
-    const tooWide = ranged
-      .filter(({ event }) => event.year_end! - event.year > maxSpanFor(event.year))
-      .map(
-        ({ event }) =>
-          `${event.name}: ${event.year_end! - event.year}y exceeds ${maxSpanFor(event.year)}y`
-      );
-    expect(tooWide).toEqual([]);
   });
 
   it('no range runs into the future', () => {

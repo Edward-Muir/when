@@ -22,7 +22,7 @@
 const fs = require('fs');
 const path = require('path');
 const { manifestFiles, readEvents, writeJson } = require('./detail-catalogue');
-const { eventRangeSignals, isRanged, maxSpanFor } = require('./year-range');
+const { eventRangeSignals, isRanged } = require('./year-range');
 
 const CHUNK_SIZE = 40;
 const WORKLIST_DIR = path.join(__dirname, '..', '..', 'untracked_data', 'event-ranges', 'worklist');
@@ -77,7 +77,7 @@ function main() {
           difficulty: event.difficulty,
           description: event.description,
           signals,
-          max_span: maxSpanFor(event.year),
+          year: event.year,
           year_end: null,
         };
       }
