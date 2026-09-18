@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 17 Sep 2026 18:35:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2026 14:24:31 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.24.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.24.0</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>evidence windows for events, and release notes players can read (<a href="https://github.com/Edward-Muir/when/issues/60">#60</a>) (<a href="https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84">6b4d317</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.23.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.16.0</guid>
       <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>Add indonesian events (<a href="https://github.com/Edward-Muir/when/commit/b4d373fa2e0309e8e4e2b4a85c86619304b4031d">b4d373f</a>)</li></ul>]]></description>
-    </item>
-    <item>
-      <title>When? v1.15.2</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.15.2</guid>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Bug Fixes</h3><br/><br/><ul><li>remove 522 duplicate events from the timeline deck (<a href="https://github.com/Edward-Muir/when/issues/51">#51</a>) (<a href="https://github.com/Edward-Muir/when/commit/9233ffc38bda9ce40e5f95790da8d07be7bc5e92">9233ffc</a>), closes <a href="https://github.com/Edward-Muir/when/issues/26">#26</a></li></ul>]]></description>
     </item>
   </channel>
 </rss>

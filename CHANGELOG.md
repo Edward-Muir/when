@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.24.0](https://github.com/Edward-Muir/when/compare/v1.23.0...v1.24.0) (2026-09-18)
+
+
+### Features
+
+* evidence windows for events, and release notes players can read ([#60](https://github.com/Edward-Muir/when/issues/60)) ([6b4d317](https://github.com/Edward-Muir/when/commit/6b4d317fa4ce974c577f3721f5f3e01a4435ce84))
+
 ## [1.23.0](https://github.com/Edward-Muir/when/compare/v1.22.0...v1.23.0) (2026-09-17)
 
 
