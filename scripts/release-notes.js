@@ -9,7 +9,13 @@
 // whole sync guarantee: the two files can never disagree about when a version shipped,
 // including when a release straddles UTC midnight.
 
-const { changelogVersions, currentVersion, readNotes, writeNotes } = require('./release-notes-lib');
+const {
+  changelogVersions,
+  currentVersion,
+  readNotes,
+  skipRequested,
+  writeNotes,
+} = require('./release-notes-lib');
 
 const version = currentVersion();
 const notes = readNotes();
@@ -30,22 +36,31 @@ if (!changelogEntry) {
   process.exit(1);
 }
 
-if (notes.unreleased.length === 0) {
+const isMaintenance = notes.unreleased.length === 0;
+
+if (isMaintenance && !skipRequested()) {
   // check-release-notes.js should have caught this at `prerelease`; if the hook was
   // bypassed, stop here rather than recording a release with nothing to say.
   console.error(`❌ Nothing staged in "unreleased" to record against ${version}.`);
   process.exit(1);
 }
 
+// A deliberately note-free release is still RECORDED, marked rather than omitted. Leaving
+// it out would make the floor assertion in releaseNotes.test.ts fail on every run from
+// then on — and because the Release workflow runs the suite before it bumps, a red suite
+// is a blocked release. The marker also keeps an *accidental* empty entry a test failure.
 notes.releases.unshift({
   version,
   date: changelogEntry.date,
   notes: notes.unreleased,
+  ...(isMaintenance ? { maintenance: true } : {}),
 });
 notes.unreleased = [];
 
 writeNotes(notes);
 console.log(
-  `Release notes for ${version} (${changelogEntry.date}) recorded: ` +
-    `${notes.releases[0].notes.length} note(s)`
+  isMaintenance
+    ? `${version} (${changelogEntry.date}) recorded as a maintenance release, with no notes`
+    : `Release notes for ${version} (${changelogEntry.date}) recorded: ` +
+        `${notes.releases[0].notes.length} note(s)`
 );

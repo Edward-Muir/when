@@ -19,11 +19,22 @@ on:
           - patch
           - minor
           - major
+      skip-note:
+        description: 'Release with no player-facing note (maintenance only)'
+        type: boolean
+        default: false
   push:
     branches: [main]
 
 permissions:
   contents: write
+
+env:
+  # The `skip-note` escape hatch for a maintenance release, honoured by
+  # scripts/check-release-notes.js and scripts/release-notes.js. Gated on the event so an
+  # auto-release on push to main can never reach it: there, inputs is empty and this is
+  # the literal string 'false'. See docs/release-notes.md.
+  SKIP_RELEASE_NOTE: ${{ github.event_name == 'workflow_dispatch' && inputs.skip-note || false }}
 
 concurrency:
   group: release
@@ -96,6 +107,9 @@ jobs:
         env:
           CI: true
 
+      # commit-and-tag-version runs check-release-notes.js itself, as the `prerelease`
+      # lifecycle script, and release-notes.js at `postchangelog`; both read
+      # SKIP_RELEASE_NOTE from the workflow env above.
       - name: Bump version, changelog and tag
         if: steps.gate.outputs.go == 'true'
         run: |

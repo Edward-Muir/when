@@ -17,6 +17,13 @@ export interface ReleaseEntry {
   date: string;
   /** One short sentence per notable change. */
   notes: string[];
+  /**
+   * A release shipped deliberately without a player-facing note, via the Release
+   * workflow's `skip-note` dispatch input. Recorded rather than omitted so the floor
+   * assertion in releaseNotes.test.ts still has an entry to find. It has no notes, so
+   * fetchReleaseNotes drops it and it never reaches /changelog.
+   */
+  maintenance?: boolean;
 }
 
 export interface ReleaseNotes {

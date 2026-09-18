@@ -13,6 +13,7 @@ interface Entry {
   version: string;
   date: string;
   notes: string[];
+  maintenance?: boolean;
 }
 
 const notes: { documentedFrom: string; unreleased: string[]; releases: Entry[] } = JSON.parse(
@@ -51,10 +52,15 @@ describe('public/release-notes.json', () => {
   });
 
   // Releases older than the floor are optional backfill, and can be added or revised at
-  // any time. From the floor on, shipping without a note is a release failure.
+  // any time. From the floor on, shipping without a note is a release failure — unless it
+  // was recorded as a maintenance release, which is what the workflow's `skip-note`
+  // dispatch input produces. Accepting the marker is what stops one bypassed release
+  // leaving the suite (and therefore the Release action) red forever.
   it('has a note for every release at or after documentedFrom', () => {
     const documented = new Set(
-      notes.releases.filter((entry) => entry.notes.length > 0).map((entry) => entry.version)
+      notes.releases
+        .filter((entry) => entry.notes.length > 0 || entry.maintenance === true)
+        .map((entry) => entry.version)
     );
 
     const offenders = changelog

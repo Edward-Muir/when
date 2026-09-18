@@ -28,6 +28,17 @@ const PACKAGE_PATH = path.join(ROOT, 'package.json');
 const MIN_NOTE_LENGTH = 20;
 const MAX_NOTE_LENGTH = 120;
 
+// Set by the Release workflow's `skip-note` dispatch input, and only ever on a manual
+// dispatch — an auto-release on push to main must not be able to reach it. It lets a
+// maintenance release (a docs/chore/ci merge forced out by hand) through without a
+// player-facing note, recorded as such rather than recorded as nothing. See
+// docs/release-notes.md.
+const SKIP_ENV_VAR = 'SKIP_RELEASE_NOTE';
+
+function skipRequested() {
+  return process.env[SKIP_ENV_VAR] === 'true';
+}
+
 // Same shape generate-rss.js parses, so both agree on what counts as a released version.
 const CHANGELOG_VERSION_REGEX =
   /^## \[?(\d+\.\d+\.\d+)\]?(?:\([^)]+\))?\s*\((\d{4}-\d{2}-\d{2})\)/gm;
@@ -73,9 +84,20 @@ function validateNote(note) {
 }
 
 function readNotes() {
-  const raw = JSON.parse(fs.readFileSync(NOTES_PATH, 'utf8'));
+  let raw;
+  try {
+    raw = JSON.parse(fs.readFileSync(NOTES_PATH, 'utf8'));
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+    // inject-version.js runs at `prebuild`, so a missing file would otherwise take down
+    // every Vercel build, previews included. Returning an empty history instead costs
+    // nothing: check-release-notes.js then sees nothing staged and blocks the release, and
+    // the corpus test fails on the null floor. Both are the right outcomes; neither needs
+    // to be delivered by way of a broken build.
+    raw = {};
+  }
   return {
-    documentedFrom: raw.documentedFrom,
+    documentedFrom: raw.documentedFrom ?? null,
     unreleased: Array.isArray(raw.unreleased) ? raw.unreleased : [],
     releases: Array.isArray(raw.releases) ? raw.releases : [],
   };
@@ -114,6 +136,8 @@ function compareVersions(a, b) {
 
 module.exports = {
   CHANGELOG_PATH,
+  SKIP_ENV_VAR,
+  skipRequested,
   MAX_NOTE_LENGTH,
   MIN_NOTE_LENGTH,
   NOTES_PATH,

@@ -10,7 +10,7 @@
 // It deliberately cannot be satisfied by machinery: the note has to be a sentence someone
 // wrote, staged in `unreleased` in public/release-notes.json.
 
-const { readNotes, validateNote } = require('./release-notes-lib');
+const { SKIP_ENV_VAR, readNotes, skipRequested, validateNote } = require('./release-notes-lib');
 
 function fail(lines) {
   console.error('\n❌ Release blocked: no usable release note.\n');
@@ -25,10 +25,8 @@ function fail(lines) {
 
 const notes = readNotes();
 
-if (notes.unreleased.length === 0) {
-  fail(['Nothing is staged in "unreleased".']);
-}
-
+// Whatever IS staged must still be well-formed, bypass or not: the flag exists to excuse
+// having nothing to say, never to wave through a note that breaks the format.
 const problems = [];
 for (const note of notes.unreleased) {
   for (const problem of validateNote(note)) {
@@ -36,6 +34,17 @@ for (const note of notes.unreleased) {
   }
 }
 if (problems.length > 0) fail(problems);
+
+if (notes.unreleased.length === 0) {
+  if (skipRequested()) {
+    console.warn(
+      `⚠️  ${SKIP_ENV_VAR} is set: releasing with no player-facing note.\n` +
+        '   It will be recorded as a maintenance release and will not appear on /changelog.'
+    );
+    process.exit(0);
+  }
+  fail(['Nothing is staged in "unreleased".']);
+}
 
 console.log(
   `✅ ${notes.unreleased.length} release note${notes.unreleased.length === 1 ? '' : 's'} staged.`

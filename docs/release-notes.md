@@ -48,6 +48,32 @@ Both fail when `unreleased` is empty, or when a staged note breaks format. Note 
 release scripts pass `--no-verify`, so a git hook is **not** a usable enforcement point
 here; the lifecycle script is.
 
+## The one way past it, and why it records something
+
+`CLAUDE.md` documents Actions → Release → Run workflow as the way to force out a merge
+that auto-skipped, which is by definition docs/chore/ci-only and has no player-facing note.
+That case gets the workflow's **`skip-note`** boolean dispatch input, which sets
+`SKIP_RELEASE_NOTE` for the run. It is gated on `github.event_name == 'workflow_dispatch'`,
+so an auto-release on a push to main can never reach it. It excuses having nothing to say
+and nothing else: a _malformed_ staged note still fails the check either way.
+
+The bypass could not simply skip. Following it through: a bypassed release would ship a
+version at or above `documentedFrom` with no entry, and the floor assertion in
+`releaseNotes.test.ts` would then fail on **every subsequent run** — and since the Release
+workflow runs the suite before it bumps, a permanently red suite is a permanently blocked
+release. So `release-notes.js` records the version with an explicit marker instead:
+
+```json
+{ "version": "1.24.1", "date": "2026-09-19", "notes": [], "maintenance": true }
+```
+
+The floor assertion accepts an entry with at least one note **or** `maintenance: true`. A
+marker rather than a bare empty array, so the file says which releases shipped with nothing
+to tell a player, and an _accidental_ empty entry stays a test failure. Nothing else needs
+to know about it: `fetchReleaseNotes` already drops entries with no notes, so a maintenance
+release never appears on `/changelog`, and `inject-version.js` writes `notes: []` for it, so
+the update popup falls back to its generic copy.
+
 ## The pipeline, in order
 
 `prerelease` → bump → `CHANGELOG.md` rewritten → `postchangelog`:
@@ -98,3 +124,9 @@ fit two buttons. A paragraph there is as useless as the generic copy it replaced
 Append one sentence per notable change to `unreleased` in `public/release-notes.json`,
 in the same commit as the change. `node scripts/check-release-notes.js` says whether it
 will pass. Nothing else to run — the release moves it.
+
+One deliberate robustness note: `readNotes()` returns an empty history when the file is
+missing rather than throwing, because `inject-version.js` runs at `prebuild` and a throw
+there would take down every Vercel build, previews included. That weakens nothing — the
+check then sees nothing staged and blocks the release, and the corpus test fails on the
+null floor — it just stops those being delivered by way of a broken build.
