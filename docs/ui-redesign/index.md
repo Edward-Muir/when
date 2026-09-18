@@ -410,6 +410,13 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
   `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
   reset during a game would silently do nothing until the next one.
+  **`useTabHint` has to listen to that broadcast too, and for a year it did not** (fixed
+  2026-09). Its effect reads storage only when its deps change, so a reset from the home
+  screen — where the menu also lives — cleared the keys while every tab strip stayed away
+  until a reload, which looked exactly like "Reset Hints is broken". It now bumps a nonce in
+  the dep list. `useTabHint.test.ts` pins it. Note the Daily tab's first-play nudge still will
+  not return for a player with a daily behind them: `wantsFirstDailyNudge` gates on
+  `gamesPlayed.daily === 0`, which is deliberate and not this bug.
 - **The How-to-Play modal is never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
   (`reveal` layer so it clears the menu drawer), opened from the menu's "How to Play", which
   is now always present, and from nowhere else. Three things were tried and cut: opening it
