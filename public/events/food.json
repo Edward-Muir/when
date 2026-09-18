@@ -11,7 +11,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cooking-with-fire_cgc2n0?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -780000
   },
   {
     "name": "wild-grain-harvesting",
@@ -25,12 +26,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wild-grain-harvesting_pranb4?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -11700
   },
   {
     "name": "barley-domesticated",
     "friendly_name": "Barley Domesticated",
-    "year": -9000,
+    "year": -9500,
     "category": "agriculture",
     "description": "Farmers in the Fertile Crescent domesticated barley, a staple grain used for food and early brewing.",
     "difficulty": "medium",
@@ -39,12 +41,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/barley-domesticated_sj5krt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7500
   },
   {
     "name": "first-beer-brewed",
     "friendly_name": "Beer First Brewed",
-    "year": -7000,
+    "year": -11000,
     "category": "agriculture",
     "description": "Early farmers in the Near East and China fermented grains into beer, one of humanity's oldest drinks.",
     "difficulty": "easy",
@@ -53,7 +56,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-beer-brewed_vm7r7s?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7000
   },
   {
     "name": "goat-milk-dairying",
@@ -67,7 +71,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goat-milk-dairying_yyzo2z?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "chickens-domesticated",
@@ -95,7 +100,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-wine-making_vdbstu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5800
   },
   {
     "name": "olive-cultivation-begins",
@@ -109,12 +115,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/olive-cultivation-begins_zbsllg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "honey-collecting-depicted",
     "friendly_name": "Honey Gathering Depicted",
-    "year": -6000,
+    "year": -8000,
     "category": "art",
     "description": "Rock art in Spain shows people climbing to gather wild honey, humanity's earliest sweetener.",
     "difficulty": "medium",
@@ -123,7 +130,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/honey-collecting-depicted_sgjjez?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "first-sugarcane-cultivation",
@@ -137,7 +145,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-sugarcane-cultivation_paeed9?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5000
   },
   {
     "name": "salt-evaporation-ponds",
@@ -151,7 +160,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/salt-evaporation-ponds_fwrxyb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5500
   },
   {
     "name": "bananas-cultivated",
@@ -165,7 +175,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bananas-cultivated_bviweg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -4450
   },
   {
     "name": "egyptian-leavened-bread",
@@ -296,7 +307,7 @@
   {
     "name": "rice-paddy-cultivation",
     "friendly_name": "Wet Rice Paddies Developed",
-    "year": -4000,
+    "year": -5000,
     "category": "agriculture",
     "description": "Farmers in China developed flooded paddy fields for rice, boosting yields and supporting dense populations.",
     "difficulty": "hard",
@@ -305,7 +316,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rice-paddy-cultivation_zsh7uf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2350
   },
   {
     "name": "spice-trade-incense-route",

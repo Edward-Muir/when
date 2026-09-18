@@ -15,6 +15,7 @@ import {
   BellOff,
   LifeBuoy,
   RotateCcw,
+  Sparkles,
 } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
 import { Link } from 'react-router-dom';
@@ -206,6 +207,11 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
                   <RotateCcw className={iconClass} />
                   <span className="font-body">Reset Hints</span>
                 </button>
+                <Link to="/changelog" className={menuItemClass} onClick={onClose}>
+                  <Sparkles className={iconClass} />
+                  <span className="font-body">What&apos;s New</span>
+                </Link>
+
                 <Link to="/support" className={menuItemClass} onClick={onClose}>
                   <LifeBuoy className={iconClass} />
                   <span className="font-body">Help & FAQ</span>
@@ -232,8 +238,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
               </div>
 
               {/* Version */}
+              {/* The version line is where someone looks to ask what they are on and what
+                  is in it, so it is the second way into the same page. */}
               <div className="border-t border-border px-4 py-1 mb-1 pb-safe">
-                <p className="text-center font-body text-text-muted">v{APP_VERSION}</p>
+                <Link
+                  to="/changelog"
+                  onClick={onClose}
+                  className="block text-center font-body text-text-muted"
+                >
+                  v{APP_VERSION}
+                </Link>
               </div>
             </motion.div>
           </>

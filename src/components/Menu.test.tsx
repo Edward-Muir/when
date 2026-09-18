@@ -38,6 +38,7 @@ const renderMenu = (props: Partial<React.ComponentProps<typeof Menu>> = {}) => {
         />
         <Route path="/privacy" element={<h1>Privacy page</h1>} />
         <Route path="/support" element={<h1>Support page</h1>} />
+        <Route path="/changelog" element={<h1>Changelog page</h1>} />
       </Routes>
     </MemoryRouter>
   );
@@ -64,6 +65,14 @@ describe('Menu', () => {
     await userEvent.click(screen.getByRole('button', { name: /how to play/i }));
     expect(screen.getByRole('heading', { name: 'How to Play' })).toBeInTheDocument();
     expect(screen.getByText('Build the longest timeline!')).toBeInTheDocument();
+  });
+
+  it("links What's New to the changelog and closes", async () => {
+    const { onClose } = renderMenu();
+    await userEvent.click(screen.getByRole('link', { name: /what's new/i }));
+
+    expect(screen.getByText('Changelog page')).toBeInTheDocument();
+    expect(onClose).toHaveBeenCalled();
   });
 
   it('links Help & FAQ to the support page and closes', async () => {

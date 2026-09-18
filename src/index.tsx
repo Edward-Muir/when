@@ -8,6 +8,7 @@ import ChallengeRoute from './routes/ChallengeRoute';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import Support from './pages/Support';
+import Changelog from './pages/Changelog';
 import CardsPreview from './pages/CardsPreview';
 import UnlockPreview from './pages/UnlockPreview';
 import ImageQc from './pages/ImageQc';
@@ -31,6 +32,7 @@ root.render(
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<TermsOfService />} />
         <Route path="/support" element={<Support />} />
+        <Route path="/changelog" element={<Changelog />} />
         <Route path="/cards-preview" element={<CardsPreview />} />
         <Route path="/unlock-preview" element={<UnlockPreview />} />
         <Route path="/image-qc" element={<ImageQc />} />

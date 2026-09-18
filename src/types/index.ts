@@ -106,6 +106,18 @@ export interface HistoricalEvent {
    * synchronously, and a separate index file would be a third thing to keep in sync).
    */
   has_detail?: boolean;
+  /**
+   * Optional upper bound, for an event the record places in a window rather than at a year.
+   *
+   * `year` is the **lower** bound and stays the sole anchor for everything else — difficulty
+   * scoring, deck composition, era filtering, recency, sorting. Only placement judging and the
+   * year label read this field, so adding one can never move a daily deck.
+   *
+   * Must be strictly greater than `year`; `eventEnd` in `utils/gameLogic.ts` clamps anything
+   * else back to a point card rather than trusting hand-editable JSON. Written by
+   * `scripts/events/year-range-apply.js`, which is mechanically incapable of touching `year`.
+   */
+  year_end?: number;
 }
 
 export interface Player {
@@ -126,6 +138,13 @@ export interface PlacementResult {
   event: HistoricalEvent;
   correctPosition: number;
   attemptedPosition: number;
+  /**
+   * The placement passed only because a range was involved — it would have been wrong with
+   * every interval collapsed to its `year`. Still a full success (streak, replacement draw,
+   * green square); it only changes the feedback. Optional so persisted `gameHistory` shapes
+   * and `pages/animJig` keep typechecking.
+   */
+  closeEnough?: boolean;
 }
 
 export type AnimationPhase = 'flash' | 'moving' | null;
@@ -152,6 +171,8 @@ export interface GamePopupData {
   event: HistoricalEvent | null;
   nextPlayer?: Player;
   gameState?: WhenGameState;
+  /** Multiplayer only: a `correct` popup that was won on a range, so the banner softens. */
+  closeEnough?: boolean;
 }
 
 export interface WhenGameState {

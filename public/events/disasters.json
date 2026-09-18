@@ -66,7 +66,7 @@
   {
     "name": "black-sea-deluge",
     "friendly_name": "Black Sea Deluge Theory",
-    "year": -5600,
+    "year": -6800,
     "category": "disasters",
     "description": "Rising sea levels may have catastrophically flooded the Black Sea basin.",
     "difficulty": "hard",
@@ -77,7 +77,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Black_Sea_deluge_hypothesis",
     "color": "#291f17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5600
   },
   {
     "name": "thera-eruption",
@@ -3138,7 +3139,7 @@
   {
     "name": "neanderthal-extinction",
     "friendly_name": "Neanderthal Extinction",
-    "year": -40000,
+    "year": -41000,
     "category": "nature",
     "description": "Neanderthals went extinct, possibly due to competition with modern humans or climate change.",
     "difficulty": "medium",
@@ -3149,7 +3150,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
     "color": "#272622",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -39000
   },
   {
     "name": "babylonian-destruction-jerusalem",
@@ -3186,7 +3188,7 @@
   {
     "name": "younger-dryas-climate-event",
     "friendly_name": "Younger Dryas Climate Event",
-    "year": -12000,
+    "year": -10900,
     "category": "nature",
     "description": "A sudden return to glacial conditions lasting over 1,000 years disrupted early human societies and may have triggered agricultural development.",
     "difficulty": "hard",
@@ -3197,7 +3199,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Younger_Dryas",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -9700
   },
   {
     "name": "white-ship-sinks",

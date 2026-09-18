@@ -19,11 +19,22 @@ on:
           - patch
           - minor
           - major
+      skip-note:
+        description: 'Release with no player-facing note (maintenance only)'
+        type: boolean
+        default: false
   push:
     branches: [main]
 
 permissions:
   contents: write
+
+env:
+  # The `skip-note` escape hatch for a maintenance release, honoured by
+  # scripts/check-release-notes.js and scripts/release-notes.js. Gated on the event so an
+  # auto-release on push to main can never reach it: there, inputs is empty and this is
+  # the literal string 'false'. See docs/release-notes.md.
+  SKIP_RELEASE_NOTE: ${{ github.event_name == 'workflow_dispatch' && inputs.skip-note || false }}
 
 concurrency:
   group: release
@@ -80,6 +91,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      # Redundant with the `prerelease` hook in .versionrc.json by design: that hook is the
+      # real backstop (it also covers a local ./scripts/release.sh), but failing here gives
+      # a legible job log instead of an abort buried in commit-and-tag-version's output.
+      - name: Require a human release note
+        if: steps.gate.outputs.go == 'true'
+        run: node scripts/check-release-notes.js
+
       # Never tag a broken main.
       - name: Sanity checks
         if: steps.gate.outputs.go == 'true'
@@ -89,6 +107,9 @@ jobs:
         env:
           CI: true
 
+      # commit-and-tag-version runs check-release-notes.js itself, as the `prerelease`
+      # lifecycle script, and release-notes.js at `postchangelog`; both read
+      # SKIP_RELEASE_NOTE from the workflow env above.
       - name: Bump version, changelog and tag
         if: steps.gate.outputs.go == 'true'
         run: |

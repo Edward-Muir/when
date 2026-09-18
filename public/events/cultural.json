@@ -2,7 +2,7 @@
   {
     "name": "cave-paintings",
     "friendly_name": "First Cave Paintings",
-    "year": -40000,
+    "year": -51200,
     "category": "art",
     "description": "Early humans created paintings in Lascaux and other caves.",
     "difficulty": "easy",
@@ -13,12 +13,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cave_painting",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -40800
   },
   {
     "name": "lascaux-cave-paintings",
     "friendly_name": "Lascaux Cave Paintings Created",
-    "year": -15000,
+    "year": -17000,
     "category": "art",
     "description": "Prehistoric humans painted elaborate animal scenes in caves in modern-day France.",
     "difficulty": "easy",
@@ -29,7 +30,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lascaux",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -15000
   },
   {
     "name": "first-writing",
@@ -45,7 +47,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_writing",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2600
   },
   {
     "name": "epic-gilgamesh",
@@ -4642,7 +4645,7 @@
   {
     "name": "aboriginal-australian",
     "friendly_name": "Aboriginal Culture Established",
-    "year": -50000,
+    "year": -65000,
     "category": "migration",
     "description": "Aboriginal Australians developed one of the world's oldest continuous cultures across the continent.",
     "difficulty": "medium",
@@ -4651,7 +4654,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -45000
   },
   {
     "name": "indus-valley-civilization",
@@ -8058,7 +8062,7 @@
   {
     "name": "songhai-scholars",
     "friendly_name": "Songhai Islamic Scholars",
-    "year": 1510,
+    "year": 1493,
     "category": "empires",
     "description": "The Songhai Empire supported scholars like Ahmad Baba, making Timbuktu a beacon of Islamic learning.",
     "difficulty": "hard",
@@ -8067,7 +8071,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1591
   },
   {
     "name": "raphael-school-athens",

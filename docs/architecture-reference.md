@@ -27,13 +27,13 @@ index.tsx                      # BrowserRouter + 13 routes
 │       ├── GamePopup.tsx      # Correct/incorrect/description/gameOver
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
-│       │   ├── Menu.tsx                # Burger menu: theme, share, install, How to Play, Help & FAQ, legal
-│       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game)
+│       │   ├── Menu.tsx                # Burger menu: theme, share, install, How to Play, What's New, Help & FAQ, legal
+│       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game) — lists the new version's notes
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily
 ├── routes/ChallengeRoute.tsx  # /challenge/:code — decodes a share link into a GameConfig
 └── pages/                     # Standalone routes, not App children (Home = the pager,
-                               # Support, ImageQc, CardReports, …)
+                               # Support, Changelog, ImageQc, CardReports, …)
 ```
 
 Easy to get wrong: `FilterPopup` is mounted by `panels/TimelinePanel`, not `Game`.
@@ -155,9 +155,19 @@ Haptic feedback via `@capacitor/haptics` (see `useHaptics` hook).
 
 Uses conventional commits with `commit-and-tag-version` for semantic versioning.
 
-On release: bumps `package.json` version, updates `CHANGELOG.md`, regenerates `public/feed.xml` (RSS), creates git tag.
+On release: bumps `package.json` version, updates `CHANGELOG.md`, moves the staged human
+notes into `public/release-notes.json`, regenerates `public/feed.xml` (RSS, still from the
+changelog) and `public/version.json` (version + that release's notes), creates git tag.
 
-Key files: `src/version.ts` (auto-generated), `.versionrc.json` (config), `scripts/inject-version.js`, `scripts/generate-rss.js`
+A release **aborts** unless a human note is staged, at the `prerelease` hook and again as a
+workflow step; the `skip-note` dispatch input is the one way past it, and records a
+maintenance entry rather than nothing. See [release-notes.md](release-notes.md) for the
+sync contract between the two histories.
+
+Key files: `src/version.ts` (auto-generated), `.versionrc.json` (config),
+`scripts/inject-version.js`, `scripts/generate-rss.js`, `scripts/release-notes-lib.js`
+(shared format rules + changelog parser), `scripts/release-notes.js`,
+`scripts/check-release-notes.js`, `src/utils/releaseNotes.ts` (what the app reads)
 
 ## Event Editor (`tools/event-editor/`)
 

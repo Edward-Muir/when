@@ -14,6 +14,15 @@ describe('getVignetteColor', () => {
     expect(getVignetteColor(true, 3)).toBe('var(--color-success)');
   });
 
+  it('uses the secondary accent for a close-enough hit, at any streak', () => {
+    expect(getVignetteColor(true, 0, true)).toBe('var(--color-accent-secondary)');
+    expect(getVignetteColor(true, 6, true)).toBe('var(--color-accent-secondary)');
+  });
+
+  it('ignores closeEnough on a miss', () => {
+    expect(getVignetteColor(false, 3, true)).toBe('var(--color-error)');
+  });
+
   it('escalates to accent gold once the streak reaches the golden tier (streak >= 4)', () => {
     expect(getVignetteColor(true, 4)).toBe('var(--color-accent)');
     expect(getVignetteColor(true, 5)).toBe('var(--color-accent)');

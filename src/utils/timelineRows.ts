@@ -1,5 +1,5 @@
 import { FailedPlacement, HistoricalEvent } from '../types';
-import { findCorrectPosition } from './gameLogic';
+import { findCorrectPosition, eventEnd } from './gameLogic';
 
 export type TimelineRow =
   | { kind: 'event'; event: HistoricalEvent; realIndex: number }
@@ -29,7 +29,14 @@ export function buildTimelineRows(
       byGap.set(gap, [failed]);
     }
   }
-  byGap.forEach((group) => group.sort((a, b) => a.event.year - b.event.year || a.seq - b.seq));
+  // End year breaks a tie between two ranged tombstones sharing a start, before falling back
+  // to turn order.
+  byGap.forEach((group) =>
+    group.sort(
+      (a, b) =>
+        a.event.year - b.event.year || eventEnd(a.event) - eventEnd(b.event) || a.seq - b.seq
+    )
+  );
 
   const rows: TimelineRow[] = [];
   for (let i = 0; i <= events.length; i++) {

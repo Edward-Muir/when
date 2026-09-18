@@ -3250,7 +3250,7 @@
   {
     "name": "unification-egypt",
     "friendly_name": "Unification of Egypt",
-    "year": -3100,
+    "year": -3218,
     "category": "empires",
     "description": "Narmer unified Egypt under the First Dynasty, creating one of the world's first nation-states.",
     "difficulty": "easy",
@@ -3261,7 +3261,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Upper_and_Lower_Egypt",
     "color": "#281f18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3035
   },
   {
     "name": "zhou-dynasty-begins",
@@ -3986,7 +3987,7 @@
   {
     "name": "neanderthals-thrive-europe",
     "friendly_name": "Neanderthals Thrive in Europe",
-    "year": -100000,
+    "year": -243000,
     "category": "agriculture",
     "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
     "difficulty": "easy",
@@ -3997,12 +3998,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neanderthal_extinction",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -40000
   },
   {
     "name": "first-irrigation-systems",
     "friendly_name": "First Irrigation Systems",
-    "year": -5000,
+    "year": -6000,
     "category": "agriculture",
     "description": "Ancient Mesopotamians developed canal systems to control water flow, enabling large-scale agriculture and the rise of civilization.",
     "difficulty": "medium",
@@ -4013,7 +4015,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Irrigation",
     "color": "#24201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "minoan-civilization-peak",
@@ -10493,7 +10496,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1287
   },
   {
     "name": "shona-settlement",
@@ -10568,7 +10572,7 @@
   {
     "name": "khwarezm-caravanserai-network",
     "friendly_name": "Khwarezmian Caravanserais",
-    "year": 1100,
+    "year": 1200,
     "category": "trade",
     "description": "The Khwarezmian Empire built networks of caravanserais along Central Asian trade routes to facilitate commerce.",
     "difficulty": "very-hard",
@@ -10577,7 +10581,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1220
   },
   {
     "name": "urbanization-medieval-growth",
@@ -10708,7 +10713,7 @@
   {
     "name": "benin-kingdom-founded",
     "friendly_name": "Benin Kingdom Established",
-    "year": 1300,
+    "year": 1200,
     "category": "architecture",
     "description": "The Kingdom of Benin was established in present-day Nigeria, later famous for its bronze sculptures and powerful obas.",
     "difficulty": "hard",
@@ -10717,7 +10722,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1320
   },
   {
     "name": "kamakura-shogunate-establishment",
@@ -10885,7 +10891,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1450
   },
   {
     "name": "hojo-regency-system",
@@ -10918,7 +10925,7 @@
   {
     "name": "mapungubwe-gold-trade",
     "friendly_name": "Mapungubwe Gold Trade",
-    "year": 1075,
+    "year": 1220,
     "category": "trade",
     "description": "Mapungubwe in southern Africa became the region's first major state, controlling gold trade to the Indian Ocean coast.",
     "difficulty": "very-hard",
@@ -10927,7 +10934,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1290
   },
   {
     "name": "trans-saharan-trade-networks",
@@ -10988,7 +10996,7 @@
   {
     "name": "maori-land-use-customary",
     "friendly_name": "Maori Customary Land Use Practices",
-    "year": 1200,
+    "year": 1250,
     "category": "agriculture",
     "description": "Maori settlers in New Zealand developed customary land use systems based on iwi tribal territories and resource rights.",
     "difficulty": "hard",
@@ -10997,7 +11005,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "tejend-oasis-city",
@@ -11053,7 +11062,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1441
   },
   {
     "name": "banking-italian-emergence",
@@ -11072,7 +11082,7 @@
   {
     "name": "hospital-of-st-lawrence",
     "friendly_name": "Ospedale di Santo Spirito",
-    "year": 1204,
+    "year": 1198,
     "category": "commerce",
     "description": "Pope Innocent III founded the Hospital of Santo Spirito in Rome, a model for organized charitable care in Europe.",
     "difficulty": "very-hard",
@@ -11081,7 +11091,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1204
   },
   {
     "name": "medieval-marriage-reform",
@@ -11669,7 +11680,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1415
   },
   {
     "name": "mapungubwe-empire-decline",
@@ -11949,7 +11961,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1450
   },
   {
     "name": "majapahit-maritime-trade",
@@ -12500,7 +12513,7 @@
   {
     "name": "oyo-confederacy-structure",
     "friendly_name": "Oyo Confederacy Formalized",
-    "year": 1450,
+    "year": 1535,
     "category": "empires",
     "description": "The Oyo Empire formalized its political system with the Alaafin (king) balanced by the Oyo Mesi council.",
     "difficulty": "very-hard",
@@ -12509,7 +12522,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1650
   },
   {
     "name": "rwanda-kingdom-formation",
@@ -12579,7 +12593,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1457
   },
   {
     "name": "antwerp-stock-exchange",
@@ -12598,7 +12613,7 @@
   {
     "name": "inca-quipu-standardized",
     "friendly_name": "Quipu Recording System Standardized",
-    "year": 1460,
+    "year": 1438,
     "category": "writing",
     "description": "The Inca Empire standardized quipu knotted-string records for census, taxation, and administrative data.",
     "difficulty": "hard",
@@ -12607,7 +12622,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1533
   },
   {
     "name": "tahuantinsuyu-administrative",
@@ -12691,7 +12707,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1542
   },
   {
     "name": "nizamshahi-dynasty",
@@ -12738,7 +12755,7 @@
   {
     "name": "deccan-sultanates",
     "friendly_name": "Deccan Sultanates Flourish",
-    "year": 1500,
+    "year": 1490,
     "category": "empires",
     "description": "Five successor states of the Bahmani Sultanate ruled the Deccan plateau, fostering Indo-Islamic culture.",
     "difficulty": "hard",
@@ -12747,7 +12764,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1518
   },
   {
     "name": "aztec-peak",
@@ -12831,7 +12849,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1750
   },
   {
     "name": "zoo-ancient",
@@ -12878,7 +12897,7 @@
   {
     "name": "kuba-kingdom-raffia-currency",
     "friendly_name": "Kuba Raffia Currency",
-    "year": 1600,
+    "year": 1625,
     "category": "writing",
     "description": "The Kuba Kingdom in the Congo basin used woven raffia cloth as a standardized currency for trade.",
     "difficulty": "very-hard",
@@ -12887,7 +12906,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1892
   },
   {
     "name": "burundi-kingdom-establishment",
@@ -13083,7 +13103,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "atlantic-slave-trade-forced",
@@ -13167,7 +13188,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1580
   },
   {
     "name": "mataram-empire",
@@ -13186,7 +13208,7 @@
   {
     "name": "brunei-sultanate-expansion",
     "friendly_name": "Brunei Sultanate Expansion",
-    "year": 1580,
+    "year": 1485,
     "category": "empires",
     "description": "The Brunei Sultanate expanded its influence across northern Borneo and parts of the Philippines.",
     "difficulty": "very-hard",
@@ -13195,7 +13217,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1578
   },
   {
     "name": "abbas-great-reforms",
@@ -13228,7 +13251,7 @@
   {
     "name": "mycenaean-civilization",
     "friendly_name": "Mycenaean Civilization Emerges",
-    "year": -1600,
+    "year": -1750,
     "category": "architecture",
     "description": "Mycenaean civilization emerged in mainland Greece with fortified palaces and Linear B script.",
     "difficulty": "hard",
@@ -13237,7 +13260,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1200
   },
   {
     "name": "benguela-slave-market",
@@ -13265,7 +13289,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1824
   },
   {
     "name": "aceh-sultanate",
@@ -13284,7 +13309,7 @@
   {
     "name": "hawaiian-kingdoms",
     "friendly_name": "Hawaiian Kingdoms Emerge",
-    "year": 1600,
+    "year": 1200,
     "category": "empires",
     "description": "Hawaiian ali'i (chiefs) established competing kingdoms across the islands with complex social hierarchies.",
     "difficulty": "hard",
@@ -13293,7 +13318,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1795
   },
   {
     "name": "oyo-empire-expansion",
@@ -13601,7 +13627,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1645
   },
   {
     "name": "mughal-shah-jahan",
@@ -13704,7 +13731,7 @@
   {
     "name": "futures-market",
     "friendly_name": "Rice Futures",
-    "year": 1730,
+    "year": 1697,
     "category": "agriculture",
     "description": "The Dojima Rice Exchange in Osaka became the world's first organized futures market, standardizing forward contracts for rice trading.",
     "difficulty": "hard",
@@ -13713,7 +13740,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/futures-market_wleg4p?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1730
   },
   {
     "name": "vietnamese-nam-vu",
@@ -13900,7 +13928,7 @@
   {
     "name": "tonga-empire",
     "friendly_name": "Tongan Empire Peak",
-    "year": 1700,
+    "year": 1200,
     "category": "empires",
     "description": "The Tongan maritime empire reached its peak influence, with political and trade networks extending across the western Pacific islands.",
     "difficulty": "very-hard",
@@ -13909,7 +13937,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "zanzibar-sultanate-influence",
@@ -13965,7 +13994,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1817
   },
   {
     "name": "asante-confederation",
@@ -14973,7 +15003,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -9500
   },
   {
     "name": "jomon-maritime-culture",
@@ -14987,7 +15018,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -300
   },
   {
     "name": "treaty-of-giyanti",

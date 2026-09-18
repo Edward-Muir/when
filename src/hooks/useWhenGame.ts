@@ -23,6 +23,7 @@ import {
   sortByYear,
   initializePlayers,
   insertIntoTimeline,
+  settledPosition,
   getNextActivePlayerIndex,
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
@@ -299,14 +300,16 @@ export function useWhenGame(): UseWhenGameReturn {
         const nextPlayerIdx = getNextActivePlayerIndex(state.currentPlayerIndex, state.players);
         const nextPlayer = state.players.at(nextPlayerIdx);
         setPendingPopupState({
-          popup: buildPopupData(result.success ? 'correct' : 'incorrect', activeCard, nextPlayer),
+          popup: buildPopupData(result, nextPlayer),
           pendingStateUpdate: null,
         });
       }
 
       if (result.success) {
-        // 4a. Correct placement: insert into timeline and start animation
-        const newTimeline = insertIntoTimeline(state.timeline, activeCard, result.correctPosition);
+        // 4a. Correct placement. The card settles at its `year`, so the board stays sorted;
+        // a card won on a window slides there from wherever it was dropped. See gameLogic.
+        const settled = settledPosition(state.timeline, activeCard, insertionIndex);
+        const newTimeline = insertIntoTimeline(state.timeline, activeCard, settled);
 
         setState((prev) => ({
           ...prev,

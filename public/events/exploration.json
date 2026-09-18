@@ -2,7 +2,7 @@
   {
     "name": "earth-formation",
     "friendly_name": "Formation of Earth",
-    "year": -4500000000,
+    "year": -4567000000,
     "category": "nature",
     "description": "Our planet formed from cosmic dust and gas around the young Sun.",
     "difficulty": "easy",
@@ -13,12 +13,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Earth",
     "color": "#232020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -4450000000
   },
   {
     "name": "first-life",
     "friendly_name": "First Life on Earth",
-    "year": -3800000000,
+    "year": -4100000000,
     "category": "nature",
     "description": "Single-celled organisms appeared in Earth's primordial oceans.",
     "difficulty": "easy",
@@ -29,12 +30,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Earliest_known_life_forms",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3480000000
   },
   {
     "name": "first-stone-tools",
     "friendly_name": "First Stone Tools",
-    "year": -2600000,
+    "year": -3300000,
     "category": "agriculture",
     "description": "Early hominins created the first stone tools in Africa, marking a major cognitive leap.",
     "difficulty": "easy",
@@ -45,12 +47,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Stone_tool",
     "color": "#24201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2600000
   },
   {
     "name": "homo-erectus-emerges",
     "friendly_name": "Homo Erectus Emerges",
-    "year": -1800000,
+    "year": -2040000,
     "category": "nature",
     "description": "Homo erectus emerged in Africa as the first hominin species to spread beyond the continent, using fire and more advanced tools.",
     "difficulty": "medium",
@@ -61,12 +64,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Homo",
     "color": "#24201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1770000
   },
   {
     "name": "fire-mastery",
     "friendly_name": "Humans Master Fire",
-    "year": -400000,
+    "year": -1790000,
     "category": "agriculture",
     "description": "Early humans learned to control and use fire for warmth, cooking, and protection.",
     "difficulty": "easy",
@@ -77,12 +81,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Avatar:_Fire_and_Ash",
     "color": "#232120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -400000
   },
   {
     "name": "first-humans",
     "friendly_name": "First Homo Sapiens",
-    "year": -300000,
+    "year": -315000,
     "category": "nature",
     "description": "Modern humans emerged in Africa.",
     "difficulty": "easy",
@@ -93,12 +98,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Human",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -233000
   },
   {
     "name": "anatomically-modern-humans",
     "friendly_name": "Anatomically Modern Humans Emerge",
-    "year": -200000,
+    "year": -315000,
     "category": "nature",
     "description": "Homo sapiens with modern anatomy appeared in Africa, distinct from earlier human species.",
     "difficulty": "medium",
@@ -109,12 +115,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Early_modern_human",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -160000
   },
   {
     "name": "pottery-invented",
     "friendly_name": "Pottery Invented",
-    "year": -14000,
+    "year": -18000,
     "category": "invention",
     "description": "The earliest known ceramic vessels were created in Japan, marking the beginning of pottery.",
     "difficulty": "easy",
@@ -123,7 +130,8 @@
     "image_height": 440,
     "color": "#291f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -14500
   },
   {
     "name": "agriculture-begins",
@@ -139,12 +147,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Neolithic_Revolution",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -8000
   },
   {
     "name": "bow-and-arrow-invented",
     "friendly_name": "Bow and Arrow Invented",
-    "year": -10000,
+    "year": -80000,
     "category": "invention",
     "description": "The bow and arrow was developed as a ranged hunting weapon, revolutionizing hunting and warfare.",
     "difficulty": "easy",
@@ -153,12 +162,13 @@
     "image_height": 440,
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -10000
   },
   {
     "name": "domestication-cattle",
     "friendly_name": "Domestication of Cattle",
-    "year": -8000,
+    "year": -8500,
     "category": "agriculture",
     "description": "Cattle were domesticated in the Near East and Africa, transforming human societies.",
     "difficulty": "easy",
@@ -169,12 +179,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Cattle",
     "color": "#291e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "domestication-of-sheep-and-goats",
     "friendly_name": "Domestication of Sheep and Goats",
-    "year": -8000,
+    "year": -8400,
     "category": "agriculture",
     "description": "Sheep and goats became the first livestock animals domesticated in the Fertile Crescent, providing wool, milk, and meat.",
     "difficulty": "easy",
@@ -185,12 +196,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Goat",
     "color": "#291e18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7000
   },
   {
     "name": "domestication-of-pigs",
     "friendly_name": "Domestication of Pigs",
-    "year": -7000,
+    "year": -8500,
     "category": "agriculture",
     "description": "Pigs were domesticated independently in multiple regions including China and Anatolia, becoming a key food source.",
     "difficulty": "medium",
@@ -201,12 +213,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pig",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "domestication-of-donkeys",
     "friendly_name": "Domestication of Donkeys",
-    "year": -4500,
+    "year": -5000,
     "category": "agriculture",
     "description": "Donkeys were domesticated from African wild asses in Northeast Africa, revolutionizing overland transport and trade.",
     "difficulty": "hard",
@@ -217,12 +230,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Donkey",
     "color": "#2a1e1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "domestication-horses",
     "friendly_name": "Domestication of Horses",
-    "year": -4000,
+    "year": -3500,
     "category": "agriculture",
     "description": "Horses were domesticated on the Eurasian steppes, revolutionizing transport and warfare.",
     "difficulty": "easy",
@@ -233,12 +247,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Domestication_of_the_horse",
     "color": "#2d1d12",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2000
   },
   {
     "name": "plow-invented",
     "friendly_name": "Plow Invented",
-    "year": -4000,
+    "year": -5100,
     "category": "invention",
     "description": "The plow was invented in Mesopotamia, revolutionizing agriculture by enabling efficient soil cultivation.",
     "difficulty": "easy",
@@ -247,12 +262,13 @@
     "image_height": 440,
     "color": "#281f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2800
   },
   {
     "name": "wheel-invented",
     "friendly_name": "Wheel Invented",
-    "year": -3500,
+    "year": -3635,
     "category": "invention",
     "description": "The wheel was invented in Mesopotamia, revolutionizing transportation and machinery.",
     "difficulty": "easy",
@@ -263,12 +279,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wheel",
     "color": "#25201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3030
   },
   {
     "name": "invention-sail",
     "friendly_name": "Invention of the Sail",
-    "year": -3500,
+    "year": -4000,
     "category": "migration",
     "description": "Ancient Egyptians invented sails, enabling long-distance sea travel.",
     "difficulty": "medium",
@@ -279,7 +296,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sail",
     "color": "#25201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "invention-glass",
@@ -295,12 +313,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Flexible_glass",
     "color": "#262019",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1600
   },
   {
     "name": "bronze-discovered",
     "friendly_name": "Bronze Metallurgy Developed",
-    "year": -3300,
+    "year": -3700,
     "category": "agriculture",
     "description": "Humans discovered how to alloy copper and tin to create bronze tools and weapons.",
     "difficulty": "easy",
@@ -311,7 +330,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bronze_Age",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "candle-invented",
@@ -395,7 +415,8 @@
     "image_height": 440,
     "color": "#2c1d19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 100
   },
   {
     "name": "iron-smelting",
@@ -764,7 +785,7 @@
   {
     "name": "blast-furnace-invented",
     "friendly_name": "Blast Furnace Invented",
-    "year": 100,
+    "year": -400,
     "category": "invention",
     "description": "Chinese metalworkers developed the blast furnace, reaching temperatures high enough to produce cast iron on an industrial scale.",
     "difficulty": "very-hard",
@@ -773,7 +794,8 @@
     "image_height": 440,
     "color": "#2b1c21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 100
   },
   {
     "name": "paper-invented",
@@ -1007,7 +1029,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Norse_settlement_of_North_America",
     "color": "#737a78",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1021
   },
   {
     "name": "spinning-wheel-invented",
@@ -1058,7 +1081,7 @@
   {
     "name": "trebuchet-invented",
     "friendly_name": "Counterweight Trebuchet Invented",
-    "year": 1120,
+    "year": 1097,
     "category": "invention",
     "description": "Medieval engineers developed the counterweight trebuchet, a devastating siege weapon capable of hurling stones over 250 meters.",
     "difficulty": "easy",
@@ -1067,7 +1090,8 @@
     "image_height": 440,
     "color": "#313435",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1187
   },
   {
     "name": "longbow-developed",
@@ -6317,7 +6341,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -130000
   },
   {
     "name": "bone-tools",
@@ -6331,12 +6356,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -70000
   },
   {
     "name": "boats",
     "friendly_name": "Boats",
-    "year": -900000,
+    "year": -1040000,
     "category": "migration",
     "description": "First watercraft enabling travel across bodies of water, opening new territories to early humans.",
     "difficulty": "medium",
@@ -6345,7 +6371,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -50000
   },
   {
     "name": "hafting",
@@ -6359,7 +6386,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200000
   },
   {
     "name": "woodworking-construction",
@@ -6373,7 +6401,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -300000
   },
   {
     "name": "food-storage-marrow",
@@ -6387,7 +6416,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200000
   },
   {
     "name": "hide-and-leather-clothing-shelter",
@@ -6401,7 +6431,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -300000
   },
   {
     "name": "pigments",
@@ -6415,7 +6446,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -300000
   },
   {
     "name": "simple-glue-birch-tar",
@@ -6429,7 +6461,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -40000
   },
   {
     "name": "beds",
@@ -6443,7 +6476,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -40000
   },
   {
     "name": "clothing",
@@ -6457,7 +6491,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -83000
   },
   {
     "name": "heat-treating-stone-blades",
@@ -6471,12 +6506,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -65000
   },
   {
     "name": "beads-string-thread",
     "friendly_name": "Beads (String/Thread Implied)",
-    "year": -135000,
+    "year": -142000,
     "category": "craft",
     "description": "Shell beads strung together as personal ornaments, implying the concurrent invention of thread.",
     "difficulty": "hard",
@@ -6485,7 +6521,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -73000
   },
   {
     "name": "compound-paints",
@@ -6499,12 +6536,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -49000
   },
   {
     "name": "funerals-burial",
     "friendly_name": "Funerals/Burial",
-    "year": -100000,
+    "year": -120000,
     "category": "craft",
     "description": "Deliberate burial of the dead with ritual significance, reflecting early symbolic thought.",
     "difficulty": "easy",
@@ -6513,7 +6551,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -90000
   },
   {
     "name": "harpoons",
@@ -6527,7 +6566,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -80000
   },
   {
     "name": "compound-adhesives",
@@ -6541,12 +6581,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -61000
   },
   {
     "name": "sewing-needle",
     "friendly_name": "Sewing Needle",
-    "year": -70000,
+    "year": -61000,
     "category": "craft",
     "description": "Bone needles with carved eyes for threading sinew, enabling stitching of fitted hide garments.",
     "difficulty": "medium",
@@ -6555,7 +6596,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -50000
   },
   {
     "name": "ground-stone-tools",
@@ -6569,7 +6611,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -10000
   },
   {
     "name": "mines-hematite-ochre",
@@ -6583,12 +6626,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -41000
   },
   {
     "name": "shoes",
     "friendly_name": "Shoes",
-    "year": -45000,
+    "year": -40000,
     "category": "craft",
     "description": "Foot coverings crafted from animal hide to protect feet from rough terrain and cold.",
     "difficulty": "easy",
@@ -6597,12 +6641,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -10000
   },
   {
     "name": "tally-sticks",
     "friendly_name": "Tally Sticks",
-    "year": -44000,
+    "year": -43000,
     "category": "craft",
     "description": "Notched bones used for counting, possibly the oldest known mathematical records.",
     "difficulty": "medium",
@@ -6611,12 +6656,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -42000
   },
   {
     "name": "flute",
     "friendly_name": "Flute",
-    "year": -42000,
+    "year": -43000,
     "category": "craft",
     "description": "Bone flutes carved from vulture wing bones, the oldest known musical instruments ever discovered.",
     "difficulty": "easy",
@@ -6625,7 +6671,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -35000
   },
   {
     "name": "spear-thrower-atlatl",
@@ -6639,12 +6686,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -15500
   },
   {
     "name": "mortar-and-pestle",
     "friendly_name": "Mortar and Pestle",
-    "year": -37000,
+    "year": -30000,
     "category": "craft",
     "description": "Stone basins and grinding tools for processing food and pigments into fine powders.",
     "difficulty": "medium",
@@ -6653,12 +6701,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -12000
   },
   {
     "name": "rope-and-cords",
     "friendly_name": "Rope and Cords",
-    "year": -32000,
+    "year": -48000,
     "category": "craft",
     "description": "Twisted plant fibers creating strong cordage for binding, carrying, and building.",
     "difficulty": "hard",
@@ -6667,7 +6716,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -25000
   },
   {
     "name": "amputation-and-surgery",
@@ -6686,7 +6736,7 @@
   {
     "name": "ceramics-and-weaving",
     "friendly_name": "Ceramics and Weaving",
-    "year": -28000,
+    "year": -31000,
     "category": "craft",
     "description": "Clay fired into ceramic objects and plant fibers woven into fabric, two transformative crafts.",
     "difficulty": "medium",
@@ -6695,12 +6745,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -25000
   },
   {
     "name": "ceramic-sculpture",
     "friendly_name": "Ceramic Sculpture",
-    "year": -24000,
+    "year": -31000,
     "category": "art",
     "description": "Fired clay figurines including the Venus of Dolni Vestonice, the oldest known ceramic artwork.",
     "difficulty": "hard",
@@ -6709,7 +6760,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -27000
   },
   {
     "name": "bullroarer",
@@ -6737,7 +6789,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -16000
   },
   {
     "name": "star-chart",
@@ -6751,7 +6804,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -18900
   },
   {
     "name": "bread",
@@ -6770,7 +6824,7 @@
   {
     "name": "spindle-whorl",
     "friendly_name": "Spindle Whorl",
-    "year": -12000,
+    "year": -10000,
     "category": "craft",
     "description": "A weighted disk used to spin fibers into thread, one of the earliest wheel-like tools.",
     "difficulty": "hard",
@@ -6779,12 +6833,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "domestication-of-rice",
     "friendly_name": "Domestication of Rice",
-    "year": -9000,
+    "year": -8000,
     "category": "agriculture",
     "description": "Rice first cultivated in the Yangtze River valley of China, now feeding billions worldwide.",
     "difficulty": "medium",
@@ -6793,7 +6848,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "mudbricks-and-clay-mortar",
@@ -6807,7 +6863,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7500
   },
   {
     "name": "water-well",
@@ -6821,7 +6878,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7000
   },
   {
     "name": "pesse-canoe",
@@ -6835,12 +6893,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7510
   },
   {
     "name": "proto-city-large-settlements",
     "friendly_name": "Proto-City (Large Settlements)",
-    "year": -8000,
+    "year": -9500,
     "category": "craft",
     "description": "First large permanent settlements like Jericho emerged, housing hundreds of people.",
     "difficulty": "easy",
@@ -6849,7 +6908,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7000
   },
   {
     "name": "alcohol-fermentation-mead",
@@ -6891,12 +6951,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5700
   },
   {
     "name": "kiln",
     "friendly_name": "Kiln",
-    "year": -6000,
+    "year": -6500,
     "category": "craft",
     "description": "High-temperature ovens developed for firing pottery and bricks at controlled heat levels.",
     "difficulty": "medium",
@@ -6905,7 +6966,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "proto-writing",
@@ -6919,7 +6981,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "cheese",
@@ -6933,12 +6996,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5200
   },
   {
     "name": "seawall",
     "friendly_name": "Seawall",
-    "year": -5000,
+    "year": -5500,
     "category": "craft",
     "description": "Coastal barriers built to protect settlements from flooding and rising sea levels.",
     "difficulty": "hard",
@@ -6947,12 +7011,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5000
   },
   {
     "name": "lacquer",
     "friendly_name": "Lacquer",
-    "year": -5000,
+    "year": -7000,
     "category": "craft",
     "description": "Tree sap refined into a durable, waterproof protective coating originating in East Asia.",
     "difficulty": "hard",
@@ -6961,12 +7026,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -4000
   },
   {
     "name": "cotton-thread",
     "friendly_name": "Cotton Thread",
-    "year": -5000,
+    "year": -6000,
     "category": "craft",
     "description": "Cotton fibers spun into thread for weaving fabric, first developed in South Asia.",
     "difficulty": "hard",
@@ -6975,7 +7041,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2500
   },
   {
     "name": "rowing-oars",
@@ -6989,7 +7056,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2500
   },
   {
     "name": "lost-wax-casting",
@@ -7003,12 +7071,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -4000
   },
   {
     "name": "fired-bricks",
     "friendly_name": "Fired Bricks",
-    "year": -4400,
+    "year": -5000,
     "category": "craft",
     "description": "Clay bricks baked in kilns for stronger, weather-resistant construction material.",
     "difficulty": "medium",
@@ -7017,12 +7086,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3500
   },
   {
     "name": "diamond-mines",
     "friendly_name": "Diamond Mines",
-    "year": -4000,
+    "year": -1000,
     "category": "agriculture",
     "description": "Diamonds first mined in India for use as cutting tools and gemstones.",
     "difficulty": "very-hard",
@@ -7031,7 +7101,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -300
   },
   {
     "name": "paved-roads",
@@ -7045,7 +7116,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2200
   },
   {
     "name": "plumbing-clay-pipes",
@@ -7059,7 +7131,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2500
   },
   {
     "name": "wine-as-anaesthesia",
@@ -7073,7 +7146,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2100
   },
   {
     "name": "seal-emblem",
@@ -7087,7 +7161,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "tattoos",
@@ -7101,7 +7176,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "swords",
@@ -7115,12 +7191,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "city-of-uruk",
     "friendly_name": "City of Uruk",
-    "year": -3300,
+    "year": -4000,
     "category": "architecture",
     "description": "The world's first true city emerged in Mesopotamia with up to 80,000 residents at its peak.",
     "difficulty": "medium",
@@ -7129,7 +7206,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2900
   },
   {
     "name": "dry-latrines-toilets",
@@ -7143,7 +7221,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2200
   },
   {
     "name": "dice",
@@ -8506,7 +8585,7 @@
   {
     "name": "painting-canvas",
     "friendly_name": "Painting Canvas",
-    "year": 1300,
+    "year": 1410,
     "category": "craft",
     "description": "Stretched fabric replacing wood panels as a portable, lightweight surface for painting in medieval Europe.",
     "difficulty": "medium",
@@ -8515,7 +8594,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1600
   },
   {
     "name": "jacobs-staff",
@@ -9117,7 +9197,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1871
   },
   {
     "name": "corrugated-galvanised-iron",
@@ -10517,7 +10598,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2019
   },
   {
     "name": "siri-voice-assistant",
@@ -10578,7 +10660,7 @@
   {
     "name": "aboriginal-firestick-farming",
     "friendly_name": "Aboriginal Firestick Farming",
-    "year": -5000,
+    "year": -8000,
     "category": "agriculture",
     "description": "Aboriginal Australians used controlled burning to manage landscapes, promote new growth, and drive game for hunting.",
     "difficulty": "very-hard",
@@ -10587,7 +10669,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1788
   },
   {
     "name": "potato-domestication-america",
@@ -10601,7 +10684,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5000
   },
   {
     "name": "caral-civilization",
@@ -10620,7 +10704,7 @@
   {
     "name": "pottery-wheel",
     "friendly_name": "Potter's Wheel",
-    "year": -3500,
+    "year": -5200,
     "category": "agriculture",
     "description": "The potter's wheel emerged in Mesopotamia, enabling faster and more uniform ceramic production.",
     "difficulty": "medium",
@@ -10629,7 +10713,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "aboriginal-boomerang-hunting",
@@ -10732,7 +10817,7 @@
   {
     "name": "marquesas-settlement-east-polynesia",
     "friendly_name": "Marquesas Islands Settled",
-    "year": 300,
+    "year": 900,
     "category": "migration",
     "description": "Polynesian voyagers settled the Marquesas Islands, establishing a hub for further expansion across eastern Polynesia.",
     "difficulty": "very-hard",
@@ -10741,7 +10826,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "moche-irrigation-system",
@@ -11208,7 +11294,7 @@
   {
     "name": "african-agricultural-innovation-millet",
     "friendly_name": "Millet and Sorghum Farming",
-    "year": -3000,
+    "year": -2500,
     "category": "agriculture",
     "description": "West African peoples domesticated pearl millet and sorghum, crops well-adapted to the Sahel's semi-arid conditions.",
     "difficulty": "hard",
@@ -11217,7 +11303,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2000
   },
   {
     "name": "polynesian-double-canoe-design",
@@ -11315,7 +11402,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1100
   },
   {
     "name": "moldboard-plow-adoption",
@@ -11413,7 +11501,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "horizontal-water-wheel",
@@ -11446,7 +11535,7 @@
   {
     "name": "horse-collar-technology",
     "friendly_name": "Horse Collar",
-    "year": 800,
+    "year": 477,
     "category": "craft",
     "description": "The padded horse collar spread from China to Europe, allowing horses to pull heavy loads without choking.",
     "difficulty": "hard",
@@ -11455,7 +11544,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "arabic-horse-evolution",
@@ -11544,7 +11634,7 @@
   {
     "name": "chatham-islands-settlement",
     "friendly_name": "Chatham Islands Settled",
-    "year": 1000,
+    "year": 1400,
     "category": "migration",
     "description": "Polynesian voyagers settled the remote Chatham Islands east of New Zealand, becoming the Moriori people.",
     "difficulty": "very-hard",
@@ -11553,7 +11643,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "manorial-system-agricultural",
@@ -11581,12 +11672,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1384
   },
   {
     "name": "goryeo-printing-woodblocks",
     "friendly_name": "Goryeo Woodblock Printing",
-    "year": 950,
+    "year": 1011,
     "category": "writing",
     "description": "Korea's Goryeo Dynasty advanced woodblock printing, producing Buddhist texts including the Tripitaka Koreana.",
     "difficulty": "very-hard",
@@ -11595,7 +11687,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1251
   },
   {
     "name": "compass-invention-china",
@@ -11609,7 +11702,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1117
   },
   {
     "name": "polynesian-settlement",
@@ -11623,7 +11717,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "polynesian-navigation-technology",
@@ -11679,7 +11774,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "crop-rotation-system",
@@ -12225,7 +12321,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1532
   },
   {
     "name": "compass-adoption-navigation",
@@ -12491,7 +12588,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1600
   },
   {
     "name": "manioc-cultivation-caribbean",
@@ -13560,7 +13658,7 @@
   {
     "name": "selective-breeding-animals",
     "friendly_name": "Selective Breeding of Livestock",
-    "year": 1700,
+    "year": 1760,
     "category": "agriculture",
     "description": "British farmers began systematic selective breeding of cattle and sheep, increasing meat and wool yields.",
     "difficulty": "hard",
@@ -13569,12 +13667,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1795
   },
   {
     "name": "hydrochloric-acid-production",
     "friendly_name": "Hydrochloric Acid Production",
-    "year": 1700,
+    "year": 1648,
     "category": "craft",
     "description": "German chemists refined methods for producing hydrochloric acid, advancing chemical industry processes.",
     "difficulty": "very-hard",
@@ -13583,7 +13682,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1791
   },
   {
     "name": "dye-chemistry-advances",
@@ -13602,7 +13702,7 @@
   {
     "name": "long-distance-travel-improvement",
     "friendly_name": "Long-Distance Travel Time Decreases",
-    "year": 1700,
+    "year": 1750,
     "category": "migration",
     "description": "Improvements in road networks, ship design, and navigation reduced journey times across continents and oceans.",
     "difficulty": "very-hard",
@@ -13611,7 +13711,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1800
   },
   {
     "name": "halley-comet-orbital",
@@ -14367,7 +14468,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 9
   },
   {
     "name": "grain-storage-silos",
@@ -14400,7 +14502,7 @@
   {
     "name": "millet-adoption-china",
     "friendly_name": "Millet Cultivation in China",
-    "year": -6000,
+    "year": -6500,
     "category": "agriculture",
     "description": "Foxtail and broomcorn millet became major cultivated crops in northern China's Yellow River valley.",
     "difficulty": "hard",
@@ -14409,7 +14511,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5600
   },
   {
     "name": "domestication-llama-alpaca",
@@ -14423,7 +14526,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3500
   },
   {
     "name": "domestication-maize-americas",
@@ -14437,12 +14541,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2000
   },
   {
     "name": "domestication-wheat-middle-east",
     "friendly_name": "Wheat Domesticated",
-    "year": -9000,
+    "year": -9600,
     "category": "agriculture",
     "description": "Early farmers in the Fertile Crescent domesticated emmer and einkorn wheat, launching the Neolithic agricultural revolution.",
     "difficulty": "easy",
@@ -14451,7 +14556,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -7600
   },
   {
     "name": "archean-eon-begins",
@@ -14484,7 +14590,7 @@
   {
     "name": "great-oxidation-event",
     "friendly_name": "Great Oxidation Event",
-    "year": -2400000000,
+    "year": -2460000000,
     "category": "disasters",
     "description": "Free oxygen from photosynthesis accumulated in the atmosphere, reshaping the planet's chemistry and biology.",
     "difficulty": "medium",
@@ -14493,12 +14599,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-oxidation-event_frpvyw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2060000000
   },
   {
     "name": "first-complex-cells",
     "friendly_name": "First Complex Cells",
-    "year": -1800000000,
+    "year": -1870000000,
     "category": "nature",
     "description": "Eukaryotes, the first cells with a nucleus and internal structures, appeared as a major step in life's evolution.",
     "difficulty": "hard",
@@ -14507,12 +14614,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-complex-cells_ut86pn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1600000000
   },
   {
     "name": "first-animals-sponges",
     "friendly_name": "First Animals (Sponges)",
-    "year": -800000000,
+    "year": -890000000,
     "category": "nature",
     "description": "The earliest animals, simple sponge-like organisms, emerged in the oceans as the first multicellular animal life.",
     "difficulty": "hard",
@@ -14521,7 +14629,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-animals-sponges_pvh6az?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -535000000
   },
   {
     "name": "snowball-earth-cryogenian",
@@ -14535,7 +14644,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/snowball-earth-cryogenian_dsc5yg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -635000000
   },
   {
     "name": "ediacaran-period-begins",
@@ -14563,7 +14673,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-fish_wf1c4p?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -518000000
   },
   {
     "name": "ordovician-period-begins",
@@ -14610,7 +14721,7 @@
   {
     "name": "first-insects",
     "friendly_name": "First Insects",
-    "year": -400000000,
+    "year": -407000000,
     "category": "nature",
     "description": "The earliest insects appeared on land, becoming one of the most successful animal groups in history.",
     "difficulty": "medium",
@@ -14619,7 +14730,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-insects_z9oqrc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -325000000
   },
   {
     "name": "first-amphibians-tiktaalik",
@@ -14633,7 +14745,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-amphibians-tiktaalik_fyxrvk?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -365000000
   },
   {
     "name": "carboniferous-period-begins",
@@ -14652,7 +14765,7 @@
   {
     "name": "first-reptiles",
     "friendly_name": "First Reptiles",
-    "year": -320000000,
+    "year": -340000000,
     "category": "nature",
     "description": "The first reptiles emerged as the earliest vertebrates fully adapted to live on dry land.",
     "difficulty": "medium",
@@ -14661,7 +14774,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-reptiles_wkbvxc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -318000000
   },
   {
     "name": "permian-period-begins",
@@ -14680,7 +14794,7 @@
   {
     "name": "end-permian-mass-extinction",
     "friendly_name": "End-Permian Mass Extinction",
-    "year": -251900000,
+    "year": -251941000,
     "category": "nature",
     "description": "Known as the Great Dying, this was the most severe mass extinction, wiping out most marine and land species.",
     "difficulty": "hard",
@@ -14689,7 +14803,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/end-permian-mass-extinction_duikwc?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -251880000
   },
   {
     "name": "triassic-period-begins",
@@ -14717,12 +14832,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-mammals_f5a9ii?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200000000
   },
   {
     "name": "plateosaurus",
     "friendly_name": "Plateosaurus",
-    "year": -210000000,
+    "year": -214000000,
     "category": "nature",
     "description": "Plateosaurus, one of the earliest large dinosaurs, roamed during the Late Triassic Period.",
     "difficulty": "hard",
@@ -14731,7 +14847,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plateosaurus_glrrif?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -204000000
   },
   {
     "name": "jurassic-period-begins",
@@ -14759,12 +14876,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-birds-archaeopteryx_ge6xwj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -148500000
   },
   {
     "name": "stegosaurus",
     "friendly_name": "Stegosaurus",
-    "year": -150000000,
+    "year": -155000000,
     "category": "nature",
     "description": "Stegosaurus, a plant-eating dinosaur famous for the bony plates along its back, lived in the Jurassic.",
     "difficulty": "easy",
@@ -14773,12 +14891,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stegosaurus_w7gvkr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -150000000
   },
   {
     "name": "brachiosaurus",
     "friendly_name": "Brachiosaurus",
-    "year": -150000000,
+    "year": -154000000,
     "category": "nature",
     "description": "Brachiosaurus, a giant long-necked sauropod, was among the largest land animals of the Jurassic Period.",
     "difficulty": "medium",
@@ -14787,7 +14906,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/brachiosaurus_y7jncb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -150000000
   },
   {
     "name": "cretaceous-period-begins",
@@ -14815,7 +14935,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/velociraptor_a2axuw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -71000000
   },
   {
     "name": "triceratops",
@@ -14829,7 +14950,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/triceratops_bubpoh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -66000000
   },
   {
     "name": "tyrannosaurus-rex",
@@ -14843,7 +14965,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tyrannosaurus-rex_gg9wsh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -66000000
   },
   {
     "name": "paleocene-epoch-begins",
@@ -14932,7 +15055,7 @@
   {
     "name": "homo-habilis",
     "friendly_name": "Homo habilis",
-    "year": -2300000,
+    "year": -2400000,
     "category": "craft",
     "description": "Homo habilis, nicknamed the handy man, was an early human species known for making and using tools.",
     "difficulty": "easy",
@@ -14941,12 +15064,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/homo-habilis_bt8ix9?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1440000
   },
   {
     "name": "neanderthals-appear",
     "friendly_name": "Neanderthals Appear",
-    "year": -400000,
+    "year": -430000,
     "category": "nature",
     "description": "Neanderthals, close relatives of modern humans, emerged and lived across Europe and western Asia.",
     "difficulty": "medium",
@@ -14955,12 +15079,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthals-appear_jylidb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200000
   },
   {
     "name": "last-glacial-maximum",
     "friendly_name": "Last Glacial Maximum",
-    "year": -21000,
+    "year": -26500,
     "category": "nature",
     "description": "The Last Glacial Maximum marked the peak of the most recent Ice Age, when ice sheets reached their largest extent.",
     "difficulty": "medium",
@@ -14969,12 +15094,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/last-glacial-maximum_bvak6m?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -19000
   },
   {
     "name": "humans-reach-the-americas",
     "friendly_name": "Humans Reach the Americas",
-    "year": -15000,
+    "year": -23000,
     "category": "migration",
     "description": "The first people crossed into the Americas, settling continents previously without humans.",
     "difficulty": "easy",
@@ -14983,7 +15109,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/humans-reach-the-americas_uokydt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -15000
   },
   {
     "name": "holocene-epoch-begins",
@@ -15002,7 +15129,7 @@
   {
     "name": "woolly-mammoth-extinction",
     "friendly_name": "Woolly Mammoth Extinction",
-    "year": -4000,
+    "year": -3700,
     "category": "nature",
     "description": "The last woolly mammoths, surviving on isolated islands, finally died out, ending the species.",
     "difficulty": "hard",
@@ -15011,7 +15138,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/woolly-mammoth-extinction_hyhfc0?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1950
   },
   {
     "name": "dong-son-drums-nusantara",

@@ -2,7 +2,7 @@
   {
     "name": "first-dyed-flax-fibers",
     "friendly_name": "First Dyed Fibers",
-    "year": -34000,
+    "year": -32000,
     "category": "craft",
     "description": "Wild flax fibers found in a Georgian cave were twisted and colored, the earliest known dyed textile material.",
     "difficulty": "hard",
@@ -11,12 +11,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-dyed-flax-fibers_v18crp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -26000
   },
   {
     "name": "bone-eyed-needle",
     "friendly_name": "Eyed Bone Needle",
-    "year": -28000,
+    "year": -40000,
     "category": "craft",
     "description": "Ice age hunters carved bone needles with eyes, allowing fitted, sewn clothing that aided survival in cold climates.",
     "difficulty": "easy",
@@ -25,12 +26,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bone-eyed-needle_x7xazh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -26000
   },
   {
     "name": "venus-of-willendorf-attire",
     "friendly_name": "Carved Figures Show Woven Caps",
-    "year": -25000,
+    "year": -29000,
     "category": "art",
     "description": "Paleolithic Venus figurines depict woven caps and string skirts, hinting at early textile craft in ice age Europe.",
     "difficulty": "medium",
@@ -39,12 +41,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/venus-of-willendorf-attire_vbgw1b?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -23000
   },
   {
     "name": "first-woven-linen",
     "friendly_name": "First Woven Linen Cloth",
-    "year": -6000,
+    "year": -7000,
     "category": "agriculture",
     "description": "Neolithic weavers in the Near East spun and wove flax into linen, producing the earliest true woven fabric.",
     "difficulty": "medium",
@@ -53,12 +56,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-woven-linen_nfimyg?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -6000
   },
   {
     "name": "wool-textile-production",
     "friendly_name": "Wool First Spun Into Cloth",
-    "year": -4000,
+    "year": -5000,
     "category": "agriculture",
     "description": "Selective breeding of woolly sheep let early peoples spin and weave wool, a warm and renewable fiber for clothing.",
     "difficulty": "hard",
@@ -67,12 +71,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wool-textile-production_mgrhhy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3000
   },
   {
     "name": "otzi-clothing",
     "friendly_name": "Otzi the Iceman's Outfit",
-    "year": -3300,
+    "year": -3350,
     "category": "craft",
     "description": "The frozen Alpine mummy wore a grass cloak, leather leggings and bearskin cap, preserving Copper Age dress.",
     "difficulty": "easy",
@@ -81,12 +86,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/otzi-clothing_tqtdyj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "egyptian-kohl-eyeliner",
     "friendly_name": "Egyptians Wear Kohl Eyeliner",
-    "year": -3100,
+    "year": -4000,
     "category": "art",
     "description": "Ancient Egyptians lined their eyes with kohl, a lead-based cosmetic believed to protect against sun glare and disease.",
     "difficulty": "easy",
@@ -95,7 +101,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/egyptian-kohl-eyeliner_xcuosq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "egyptian-linen-pleating",

@@ -4,7 +4,7 @@ import { ArrowLeft, Flag, RefreshCw } from 'lucide-react';
 import { HistoricalEvent } from '../types';
 import { loadAllEvents } from '../utils/eventLoader';
 import { getImageUrl } from '../utils/cloudinaryImage';
-import { formatYear } from '../utils/gameLogic';
+import { formatEventYear } from '../utils/gameLogic';
 import { REPORT_REASONS, ReportReasonId } from '../utils/cardReport';
 
 /**
@@ -101,7 +101,7 @@ function ReportedCardsList({
                   {event ? event.friendly_name : eventName}
                 </p>
                 <p className="font-mono text-xs text-text-muted">
-                  {event ? `${formatYear(event.year)} · ${event.category}` : 'unknown card'}
+                  {event ? `${formatEventYear(event)} · ${event.category}` : 'unknown card'}
                 </p>
                 <p className="font-mono text-xs text-text-muted truncate">{eventName}</p>
                 {reasons.length > 0 && (

@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { readNotes } = require('./release-notes-lib');
 
 // Read version from package.json
 const packageJsonPath = path.join(__dirname, '..', 'package.json');
@@ -18,8 +19,29 @@ fs.writeFileSync(versionPath, versionContent);
 
 console.log(`Version ${version} injected into src/version.ts`);
 
-// Generate version.json for runtime version checking
-const versionJsonContent = JSON.stringify({ version }, null, 2);
+// Generate version.json for runtime version checking.
+//
+// It carries this release's human notes as well as the version string. useVersionCheck
+// already polls this file every five minutes with `cache: 'no-store'`, and the service
+// worker already serves it network-first, so the update popup can say what actually
+// changed without a second request or a new cache strategy.
+//
+// The entry is absent whenever this runs outside a release (the `prebuild` hook on any
+// working tree, or a build of a commit made before the notes file existed), so an empty
+// list is a normal outcome, not an error: UpdatePopup falls back to its generic copy.
+const releaseEntry = readNotes().releases.find((entry) => entry.version === version);
+if (!releaseEntry) {
+  console.log(`No release note recorded for ${version}; version.json will carry an empty list`);
+}
+const versionJsonContent = JSON.stringify(
+  {
+    version,
+    date: releaseEntry ? releaseEntry.date : null,
+    notes: releaseEntry ? releaseEntry.notes : [],
+  },
+  null,
+  2
+);
 const versionJsonPath = path.join(__dirname, '..', 'public', 'version.json');
 fs.writeFileSync(versionJsonPath, versionJsonContent);
 

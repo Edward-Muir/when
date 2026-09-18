@@ -36,11 +36,35 @@ Each event is a JSON object with these fields:
 
 ### Optional Fields
 
-| Field          | Type   | Description                                |
-| -------------- | ------ | ------------------------------------------ |
-| `image_url`    | string | Wikimedia Commons URL (prefer 330px width) |
-| `image_width`  | number | Image width in pixels (typically 330)      |
-| `image_height` | number | Image height in pixels                     |
+| Field          | Type   | Description                                                                                |
+| -------------- | ------ | ------------------------------------------------------------------------------------------ |
+| `image_url`    | string | Wikimedia Commons URL (prefer 330px width)                                                 |
+| `image_width`  | number | Image width in pixels (typically 330)                                                      |
+| `image_height` | number | Image height in pixels                                                                     |
+| `year_end`     | number | End of the evidence window, where the record gives a window rather than a year. See below. |
+
+### `year` + `year_end`: the evidence window
+
+Most events are a point in time. Some are a process, a floruit or a reign the record does not
+pin to a year, and placing those against a single date grades a guess. Those carry an optional
+`year_end`, and a placement anywhere inside the window counts as a success with "close enough"
+feedback.
+
+- **The pair is the window, and `year` is its start** — not an anchor to hang a forward-only
+  range off. Where the record puts the window somewhere else, `year` moves with it. A stored
+  year is frequently just a round number somebody picked; it is not a constant to preserve.
+- `year_end` must be a **strictly greater integer** and not in the future. **There is no cap on
+  how wide a window may be.** A prehistoric window of millions of years is correct if that is
+  what the evidence says; an earlier per-era ceiling was removed because it forced windows to
+  lie about genuine uncertainty.
+- **`year_end` alone cannot move a daily deck** (`year` is the sole anchor for difficulty
+  scoring, deck composition, era filtering and recency). **Moving `year` can**, so it needs a
+  `reason` and a re-measured `deckBuilder.test.ts` bound.
+- **Do not add one by hand to a bulk batch.** Use `node scripts/events/year-range-report.js
+--chunks` to get a worklist and `year-range-apply.js` to write it; the corpus test
+  `src/utils/eventYearRange.test.ts` shares the same validator.
+- A precise, well-attested event must **not** get a window. Omitting is usually the right call —
+  a ratified chronostratigraphic boundary has a published age with an error bar, not a window.
 
 ## Categories
 

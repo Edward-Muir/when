@@ -71,7 +71,7 @@ const TopBar: React.FC<TopBarProps> = ({
   onNavClick,
 }) => {
   const navigate = useNavigate();
-  const { updateAvailable } = useVersionCheck();
+  const { updateAvailable, newVersion, notes: updateNotes } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [updateDismissed, setUpdateDismissed] = useState(false);
@@ -326,6 +326,8 @@ const TopBar: React.FC<TopBarProps> = ({
       <UpdatePopup
         isVisible={updateAvailable && !updateDismissed}
         onDismiss={() => setUpdateDismissed(true)}
+        version={newVersion}
+        notes={updateNotes}
       />
     </>
   );
