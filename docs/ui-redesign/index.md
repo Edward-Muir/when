@@ -410,13 +410,20 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
   `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
   reset during a game would silently do nothing until the next one.
-  **`useTabHint` has to listen to that broadcast too, and for a year it did not** (fixed
-  2026-09). Its effect reads storage only when its deps change, so a reset from the home
-  screen — where the menu also lives — cleared the keys while every tab strip stayed away
-  until a reload, which looked exactly like "Reset Hints is broken". It now bumps a nonce in
-  the dep list. `useTabHint.test.ts` pins it. Note the Daily tab's first-play nudge still will
-  not return for a player with a daily behind them: `wantsFirstDailyNudge` gates on
-  `gamesPlayed.daily === 0`, which is deliberate and not this bug.
+  **`useTabHint` has to listen to that broadcast too, and did not until 2026-09.** Its effect
+  reads storage only when its deps change. `active` is one of those deps, so the four strips
+  on tabs you are not standing on re-armed by themselves the moment you navigated to them —
+  which is why this went unnoticed, and why the symptom was so specific: **the only strip that
+  stayed away was the one on the tab the player was already on when they opened the menu.**
+  In practice that is the Daily tab, so the eye hint was the visible casualty. It now bumps a
+  nonce in the dep list and re-arms in place. `useTabHint.test.ts` pins it.
+- **An explicit reset waives the Daily nudge's lifetime gate** (2026-09). `wantsFirstDailyNudge`
+  gates on `gamesPlayed.daily === 0` so an upgrade never tells a regular "your first" — but a
+  reset is not an upgrade, it is the player asking to be shown the explanations again, and this
+  was the one hint that sat that request out. `useDailyTabHints` latches the broadcast for the
+  session and waives the counter. `todayResult` still gates it either way: with today's game
+  done the hero card carries Share and the eye, so the strip would point at a Play button that
+  is not there.
 - **The How-to-Play modal is never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
   (`reveal` layer so it clears the menu drawer), opened from the menu's "How to Play", which
   is now always present, and from nowhere else. Three things were tried and cut: opening it
