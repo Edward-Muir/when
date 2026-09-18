@@ -7,7 +7,8 @@ found while writing the long-form detail prose for all 5,460 events (Phase 3, 20
 records against the record more closely than anything else ever has. What they found was reported
 in ~35 commit messages and in a branch-scoped `HANDOFF.md` that was deleted when the event-detail
 branch merged. This file is where that survives. It is a backlog, not a change log: almost nothing
-here has been acted on.
+here had been acted on until the 2026-09-18 evidence-window pass, which cleared the whole
+"Wrong year" section and most of "Imprecise year" and added a section of its own.
 
 **The `commit` citations below** point at the unsquashed history on
 `claude/event-detail-phase-3-cont-r2jjui`, which is kept for exactly that reason — this work was
@@ -33,14 +34,20 @@ the card does not.
 
 ## Already applied
 
-Thirteen years have been corrected. Three during Phase 3 as the prose was written; eight more in
-the 2026-09-17 verification pass; and two more when date ranges were added, where the record's
-window plainly began after the stored year. Each one was checked against a source before it was
-touched.
+**143 years have now been corrected.** Three during Phase 3 as the prose was written; eight in the
+2026-09-17 verification pass; two when date ranges were first added; and **130 in the 2026-09-18
+evidence-window pass**, when the rule changed from "extend a range forward from the stored year"
+to "the stored year _is_ the window's start, so move it". Each was checked against a source.
 
-Measured after the last two: cross-boundary daily repeats came out at **7** against the bound of
-12 in `deckBuilder.test.ts`, down from the 11 that bound was set for, so nothing needed
-re-baselining.
+The 130 are not listed individually — see the commit `fix(events): move 130 years to the start of
+their evidence window` and the `reason` on each entry. 108 moved earlier and 22 later, which is
+the expected shape: a round number usually understates the earliest evidence.
+
+**Deck impact, measured rather than assumed both times.** Cross-boundary daily repeats read **7**
+after the first two corrections and **6** after the 130, against the bound of 12 in
+`deckBuilder.test.ts` — down from the 11 that bound was set for. It went _down_ both times, which
+is worth knowing because the intuition runs the other way: correcting round-number guesses
+slightly de-clusters the catalogue and the ramp's spacing kernel works better on it.
 
 | Slug                                  | Change                              | Evidence                                                                                                                                                                                                                                                                       |
 | ------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -58,24 +65,36 @@ re-baselining.
 | `marquesas-settlement-east-polynesia` | 300 → **800** (+ `year_end` 1300)   | Sinoto's Ha'atuatua dates are rejected as old-wood and marine-shell samples, so nothing supports 300. Allen (2004) argues an 8th-10th century arrival, the earliest position still defended; Wilmshurst et al. (2011) put the remaining East Polynesian islands at 1190-1290   |
 | `chatham-islands-settlement`          | 1000 → **1400** (+ `year_end` 1500) | The voyage came from mainland New Zealand, itself not settled until c. 1280, so 1000 is impossible for it. A waka excavated on the north coast dates to 1440-1470; the earliest radiocarbon-dated cultural remains are c. 1500                                                 |
 
-## Wrong year: the card's own text describes an event the record dates elsewhere
+## Wrong year: resolved, and why the section existed at all
 
-What is left after the verification pass. Each still looks wrong, and none has a single replacement
-year clean enough to move to — which is why they are here rather than above.
+**This section is empty apart from one row, and the reason is worth keeping.** Every entry here was
+stuck on the same thing: the card was wrong, but no single replacement year was defensible. Four
+were annotated _"Nothing to move it to"_. That was never a research failure — it was the data model
+demanding a point where the record gives a window.
 
-| Slug                               | Stored | The record                                                                                                                                                                                     | Why it was not changed                                                                                                                                     |
-| ---------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `songhai-scholars`                 | 1510   | Names Ahmad Baba, born **1556**, so the card's own subject did not exist at its year. Songhai fell to Morocco in 1591, leaving roughly 1570-1591 for "the Songhai Empire supported Ahmad Baba" | No attested event in that window. The error is the description naming Ahmad Baba, which is out of scope here                                               |
-| `painting-canvas`                  | 1300   | Earliest surviving oil on canvas is a French _Madonna with angels_ of c. **1410**; panel painting stayed more common until the 16th century in Italy and the 17th in Northern Europe           | Two defensible replacements (1410 for the earliest example, 1500s for "replacing wood panels") and the description points at the process, not the artefact |
-| `compound-air-compressor`          | 1829   | No source supports a named first device at this date                                                                                                                                           | Nothing to move it to                                                                                                                                      |
-| `solid-state-lidar`                | 2010   | No company or year marks its invention                                                                                                                                                         | Nothing to move it to                                                                                                                                      |
-| `inca-quipu-standardized`          | 1460   | No standardisation event is attested at all                                                                                                                                                    | Nothing to move it to                                                                                                                                      |
-| `deccan-sultanates`                | 1500   | No single event exists at this date                                                                                                                                                            | Nothing to move it to                                                                                                                                      |
-| `zhouyuan-sogdian-outpost`         | 700    | Unsupported entirely: Zhouyuan is a Western Zhou Bronze Age site, not a Tang-era Sogdian one                                                                                                   | A mislabelled slug, not a fixable date — see **Slug-only mislabels**                                                                                       |
-| `selective-breeding-animals`       | 1700   | Robert Bakewell, the landmark figure, was born 1725                                                                                                                                            | "British farmers began" is a diffuse process; no single year                                                                                               |
-| `hydrochloric-acid-production`     | 1700   | Glauber's method is 1648; the industrial scale comes with Leblanc in 1791                                                                                                                      | Diffuse; 1700 sits between two real milestones                                                                                                             |
-| `long-distance-travel-improvement` | 1700   | The journey-time evidence is 1750-1800                                                                                                                                                         | Diffuse by construction — the card describes a trend                                                                                                       |
-| `winnowing-tray-fan`               | -2000  | The one well-documented device is the Chinese rotary winnowing fan, Han-dynasty models and Wang Zhen's _Nong Shu_ of 1313 CE                                                                   | Winnowing _trays_ are genuinely ancient, so the card is not plainly wrong                                                                                  |
+The 2026-09-18 evidence-window pass cleared all of them:
+
+| Slug                               | Was   | Now        | What the window is                                                               |
+| ---------------------------------- | ----- | ---------- | -------------------------------------------------------------------------------- |
+| `songhai-scholars`                 | 1510  | 1493-1591  | Askia Muhammad's accession and 1496-97 hajj, to Tondibi                          |
+| `painting-canvas`                  | 1300  | 1410-1600  | Both defensible answers at once: the Malouel Madonna, and Venetian normalisation |
+| `compound-air-compressor`          | 1829  | 1829-1871  | Sommeiller's Mont Cenis plant to the tunnel's completion                         |
+| `solid-state-lidar`                | 2010  | 2010-2019  | No single year marks it; the 2010s are the window                                |
+| `inca-quipu-standardized`          | 1460  | 1438-1533  | Pachacuti's accession to the conquest                                            |
+| `deccan-sultanates`                | 1500  | 1490-1518  | The Bahmani breakup: three declarations in 1490, Bidar 1492, Golconda 1518       |
+| `selective-breeding-animals`       | 1700  | 1760-1795  | Bakewell inheriting Dishley to his death                                         |
+| `hydrochloric-acid-production`     | 1700  | 1648-1791  | Glauber's method to Leblanc's industrial by-product                              |
+| `long-distance-travel-improvement` | 1700  | 1750-1800  | The turnpike-era journey-time evidence                                           |
+| `winnowing-tray-fan`               | -2000 | -2000 to 9 | Ancient trays through to the Han rotary fan                                      |
+
+**The lesson, for the next time a row looks unfixable:** check whether the obstacle is the evidence
+or the schema. "No single year is right" is a description of a window, not a dead end.
+
+One row survives, and not because of its date:
+
+| Slug                       | Stored | The record                                                                                   | Why it was not changed                                               |
+| -------------------------- | ------ | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| `zhouyuan-sogdian-outpost` | 700    | Unsupported entirely: Zhouyuan is a Western Zhou Bronze Age site, not a Tang-era Sogdian one | A mislabelled slug, not a fixable date — see **Slug-only mislabels** |
 
 ### Checked in the verification pass and dismissed
 
@@ -103,24 +122,26 @@ in four writer flags land here, which is why every one is checked before anythin
 floruit the record places elsewhere. Changing them is optional and in several cases there is no
 better single year to move to. Listed so nobody re-derives them.
 
-**Many of these now carry a `year_end` instead** (2026-09-17). The optional upper bound added for
-fuzzy placement is the right home for a row whose problem is that no single year is right: the
-card keeps its year as a lower bound and any placement inside the window counts. 41 events were
-given one, seeded largely from this section. See
-[index.md](index.md#year_end-events-that-name-a-period-not-a-moment).
+**Nearly all of these now carry an evidence window** (2026-09-18). 255 events have one, seeded
+largely from this section. See [index.md](index.md#year--year_end-the-evidence-window).
 
-Three kinds of row here are **not** fixable that way, and stay:
+Two of the three obstacles recorded here a day earlier turned out to be self-inflicted, and both
+are gone:
 
-- **The window starts before the stored year.** `blast-furnace-invented` (furnaces from the 1st
-  century BC against a stored 100), `benin-kingdom-founded`, `tonga-empire` (a peak the record
-  puts at 1200-1500 against a stored 1700) and `brunei-sultanate-expansion` (peak 1485-1524
-  against a stored 1580) all point backwards. `year_end` only extends forwards, so these are
-  year errors, not ranges.
-- **The window is too wide to be honest.** `boats` spans roughly 850,000 years of genuine
-  uncertainty and `spear-thrower-atlatl` about 24,000; any window narrow enough to pass the span
-  ceiling would be an arbitrary cut with nothing attesting its upper end.
-- **It is a point with an error bar, not a process.** `star-chart` is a single dated panel whose
-  astronomical reading is itself contested; a range would encode confidence the record lacks.
+- **"The window starts before the stored year."** `blast-furnace-invented` (now -400 to 100),
+  `benin-kingdom-founded` (1200-1320), `tonga-empire` (1200-1500) and `brunei-sultanate-expansion`
+  (1485-1578) were all filed as unfixable because a range only extended forwards. It does not: the
+  stored year is the window's _start_ and moves with the evidence.
+- **"The window is too wide to be honest."** `boats` (-1040000 to -50000) and
+  `spear-thrower-atlatl` were held back by a span ceiling that no longer exists. A window of
+  850,000 years is the correct answer when the uncertainty really is 850,000 years.
+
+The one genuine obstacle stands: **a point with an error bar is not a window.** A ratified
+chronostratigraphic boundary (`jurassic-period-begins`, and anything else whose stored value is
+unrounded like -201400000) carries a published age, and the Chicxulub impact, Toba and Storegga are
+near-instantaneous. Those stayed points deliberately. `lucy-australopithecus-lived` and
+`end-permian-mass-extinction` do carry windows, but so narrow relative to their magnitude that the
+label collapses back to a single value, which is the honest rendering.
 
 **Deep time** (`2b5c48c`, `2e9f546`): `boats` -900000 (earliest datable seafaring is the Sahul
 crossing, c. 50,000 BP) · `hide-and-leather-clothing-shelter` -400000 · `pigments` -400000 (ochre
@@ -179,6 +200,65 @@ thin to establish a replacement) · `salt-monopoly-china` -119 · `fall-of-israe
 `poverty-point-earthworks` -1500 · `insulin-pump-developed` 1976 · `bone-eyed-needle` -28000 ·
 `butterfly-separate-stroke-1953` (stored year is already 1952; only the slug says 1953) ·
 `charlemagne-king-franks` 768 (right for the coronation; "sole king" is the wrong part).
+
+## Raised by the evidence-window pass (2026-09-18), not yet acted on
+
+Reading ~290 records against sources to build their windows turned up problems a window cannot
+fix. Recorded here rather than acted on, in the same spirit as the rest of this file.
+
+### Prose that contradicts its own card
+
+The long-form detail prose was written before the years were corrected, so several entries now
+disagree with the record they sit on. A player reads the prose _after_ placing, so this is visible.
+
+- **`heavy-plow-adoption`** — its prose opens "spread across Europe mainly in the late eighth and
+  early ninth centuries" against a card anchored at 1000-1300. The card is right: Andersen, Jensen
+  and Skovsgaard use 1000 as the breakthrough and study 900-1300. The late-8th-century figure
+  describes the plough's _first appearance_, which is the sibling card. The sentence should say
+  "breakthrough c. 1000".
+- **`futures-market`** — the prose has Dojima licensed in 1697 and sanctioned in 1773. It is the
+  other way round: 1697 was the merchants' own informal market, 1730 the shogunal licence.
+- **`first-cyanobacteria`** — the prose rests on 2.7 Ga hopane biomarkers, which have since been
+  challenged as drilling contamination. The card's window now runs to the ~2.15 Ga microfossils.
+- **`first-multicellular-life`** — the prose's "1.2 billion year old" Bangiomorpha is the pre-2018
+  date; the Re-Os age is 1.047 Ga.
+- **`arthropods-colonize-land`** — the prose leans on Pneumodesmus newmani as the 425 Ma oldest
+  land animal. It was re-dated by U-Pb zircon to 413.7 ± 4.4 Ma, so that "oldest" claim is stale.
+
+### Cards whose name or slug does not describe their content
+
+- **`andean-llama-domestication`** is not about domestication. Its title ("Andean Llama Herding
+  System Peak"), description and prose all describe the Inca-era herding and caravan system, which
+  is why its window is 1200-1532. Actual camelid domestication is 4,000-5,000 years earlier. The
+  slug is the misnomer, not the date.
+- **`horse-plough-agriculture`** is titled "Heavy Plow Invented" but its entire prose is about the
+  horse collar, and it duplicates `horse-collar-technology` — both now 800-1200 and 477-1200. One
+  of the pair is probably redundant.
+
+### Dates still unsupported
+
+- **`compound-air-compressor`** — no corroboration was found for the stored 1829 patent at all. The
+  window 1829-1871 rests on the verified Mont Cenis end (Sommeiller's compressors approved 1857,
+  tunnel complete 1871). The start may be fictitious.
+- **`bullroarer`** — stored -22000 looks too old; the oldest cited examples are Ukrainian Upper
+  Palaeolithic pieces around 18,000 BCE. No defensible upper bound was established, so it was left
+  alone rather than given an invented one.
+- **`yellowstone-supervolcano`** — the Lava Creek Tuff has been re-dated (~640 vs ~631 ka) and the
+  redating could not be verified. Left as a point.
+
+### The BP/BCE conflation, which is systemic
+
+Many prehistoric cards use "years ago" directly as a BCE value — `toba-supereruption` at -74000 for
+an eruption 74,000 years _ago_, `spear-thrower-atlatl` at -42000 for Mungo Man at 42,000 BP. Others
+are properly converted (Lascaux, pottery, Monte Verde). The offset is ~2,000 years, which is noise
+at Palaeolithic scale and real at Holocene scale: **`woolly-mammoth-extinction` was stored at -4000
+for a Wrangel Island population that ends ~4,000 years _ago_, i.e. c. 2000 BCE** — a 2,000-year
+error, now corrected to a -3700..-1950 window.
+
+Window researchers were told to follow whichever convention each card already used, so the
+inconsistency is preserved rather than half-fixed. Fixing it properly means auditing every
+pre-Holocene card, and the payoff is small above ~20,000 years ago. Worth doing for the
+Holocene-adjacent ones if anyone touches that era again.
 
 ## Player-visible `description` and `friendly_name` errors
 
