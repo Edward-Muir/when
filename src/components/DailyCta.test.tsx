@@ -45,9 +45,9 @@ describe('DailyCta review button', () => {
     expect(eye()).toBeInTheDocument();
   });
 
-  it('glows only while the strip naming it is up, so the hint points at something', () => {
+  it('halos only while the strip is up, which is what points at it', () => {
     const { rerender } = renderCta({ canReview: true });
-    expect(eye()).not.toHaveClass('animate-hint-glow');
+    expect(eye()).not.toHaveClass('animate-hint-halo');
 
     rerender(
       <DailyCta
@@ -60,6 +60,6 @@ describe('DailyCta review button', () => {
         reviewNudge
       />
     );
-    expect(eye()).toHaveClass('animate-hint-glow');
+    expect(eye()).toHaveClass('animate-hint-halo');
   });
 });

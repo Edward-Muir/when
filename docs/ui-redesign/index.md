@@ -471,6 +471,23 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   ring was tried first and was invisible on a phone, and a bigger swell-and-fade was tried
   next and read as garish. Under Reduce Motion the bob is off and the glow falls back to a
   motion-free brightness blink, so the strip still points at something.
+- **`animate-hint-halo` is the deliberate exception to that, and the box-shadow verdict does not
+  carry to it** (2026-09). `hintGlow`'s `brightness(1.12)` lifts a near-white `bg-surface`
+  button by almost nothing, which is exactly what the Daily eye is, so the nudge did not land on
+  a real phone. The ring that failed was hint-scale; this app's gold glows that _do_ read are far
+  heavier (`successGlowGolden` at `0 0 30px 15px`, the two-layer `.tl-rail-tip`). The halo is
+  three box-shadow layers restated in every keyframe, because box-shadow interpolates layer for
+  layer: a ring that expands to 9px and fades (the only thing that moves, restarting at spread 0
+  where the button hides it, so the loop has no snap), a steady bloom so the control is gold
+  between pulses, and a steady inset hairline reading as a gold border.
+  **The bloom is capped at the 12px `p-3` gutter between the eye and `DailyDeckPreview`'s
+  `overflow-hidden` edge** — measured at 13px of clearance — so it is saturated rather than wide;
+  anything larger is sliced off on the right and reads as a rendering bug. The inset layer is a
+  shadow rather than `border-color` because the button carries Tailwind's `border-border` and
+  both would land in `@layer utilities` with source order deciding; a shadow does not compete.
+  Under Reduce Motion it holds still but stays gold. Gold is `color-mix` on `--color-accent`,
+  never a literal, so dark mode adapts — which is the whole reason there is no literal gold rgba
+  anywhere in the repo.
 - **The Daily strip waits `DRAG_NUDGE_MS` of inactivity**, like the in-game drag hint, via
   `useTabHint`'s `delayMs`: a player who taps Play straight away never sees it. The other
   tabs keep the short swipe-settle delay.
@@ -484,8 +501,10 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   them explicitly rather than trusting that. **Using the eye marks the hint seen**, so a player
   who taps before the strip appears is not told about it afterwards — the same rule `drag`
   follows, and it is wrapped inside the hook's `openReview` so a call site cannot forget it.
-  The glow gets a fifth home, the eye, which needs no companion `bg-*` change: unlike the
-  transparent counter it already carries `bg-surface border border-border` to swell.
+  The eye wears `animate-hint-halo` rather than the shared glow, which was not visible on it;
+  see the halo bullet above for why that is the one place a box-shadow ring is allowed back.
+  The copy deliberately does not name the icon ("Tap to view your completed timeline.") — the
+  halo is what points.
 - **The two Daily strips live in `useDailyTabHints`, not `ModeSelect`**, which hit ESLint's
   `complexity` ceiling (an error rule) the moment the second one was added inline. Same reason
   the in-game ladder is a hook rather than part of `Game`. `DailyPanel`'s `hint` prop therefore
