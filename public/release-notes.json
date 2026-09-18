@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Swiping left on the Timeline tab now opens the menu drawer."
+  ],
   "releases": [
     {
       "version": "1.25.0",

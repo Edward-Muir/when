@@ -1,4 +1,5 @@
 import React, { useCallback, useImperativeHandle, useLayoutEffect, useRef, useState } from 'react';
+import { useHaptics } from '../hooks/useHaptics';
 
 interface ModePagerProps {
   /** Short labels for each page, shown in the indicator (e.g. ['Daily', 'Custom']). */
@@ -14,7 +15,20 @@ interface ModePagerProps {
   onIndexChange?: (index: number) => void;
   /** Page to open on, instantly, before first paint. Defaults to the first. */
   initialIndex?: number;
+  /**
+   * Fired when the player keeps swiping left on the last page — there is no page beyond it, so
+   * the gesture carries on into the burger menu, which slides in from that same edge.
+   */
+  onSwipePastEnd?: () => void;
 }
+
+/**
+ * Swipe-past-the-end thresholds. The distance is the usual drawer-peel travel; the ratio keeps
+ * a diagonal flick down a vertically-scrolling panel (My Timeline is the last page) from
+ * counting as a horizontal swipe.
+ */
+const PAST_END_DISTANCE_PX = 56;
+const PAST_END_RATIO = 1.5;
 
 /** Imperative handle: lets a parent (the top-nav buttons) scroll the pager to a page. */
 export interface ModePagerHandle {
@@ -29,12 +43,16 @@ export interface ModePagerHandle {
  * The active page is a pure function of the scroll position (reported via `onIndexChange`).
  * Buttons scroll via the imperative `scrollToPage` handle rather than setting the highlight
  * directly, so the highlight only ever tracks the scroll — no instant-then-walk flashing.
+ *
+ * Keep swiping left on the last page and `onSwipePastEnd` fires once (the burger menu, on the
+ * home screen): the pager runs out of pages where the drawer's own edge begins.
  */
 const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function ModePager(
-  { labels, children, activeColors, onIndexChange, initialIndex = 0 },
+  { labels, children, activeColors, onIndexChange, initialIndex = 0, onSwipePastEnd },
   ref
 ) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const { haptics } = useHaptics();
   const [activeIndex, setActiveIndex] = useState(initialIndex);
   const pages = React.Children.toArray(children);
   const colors = activeColors ?? labels.map(() => ({ dot: 'bg-accent', text: 'text-accent' }));
@@ -71,6 +89,58 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
   // highlight, so the active tab only changes as the scroll position crosses each page.
   useImperativeHandle(ref, () => ({ scrollToPage: goToPage }), [goToPage]);
 
+  // Swipe past the last page → `onSwipePastEnd`. Measured from the touch rather than from the
+  // scroll position because the track simply cannot scroll further, so there is no overscroll
+  // to read (iOS rubber-bands, other browsers do nothing).
+  const gestureRef = useRef<{ x: number; y: number; fromEnd: boolean; fired: boolean } | null>(
+    null
+  );
+
+  const isAtLastPage = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return false;
+    return track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
+  }, []);
+
+  const handleTouchStart = useCallback(
+    (e: React.TouchEvent) => {
+      const touch = e.touches[0];
+      if (!onSwipePastEnd || !touch) return;
+      // `fromEnd` is latched at touch-down: without it, the swipe that *arrives* at the last
+      // page would run straight on into the menu, because by mid-gesture the track is at its end.
+      gestureRef.current = {
+        x: touch.clientX,
+        y: touch.clientY,
+        fromEnd: pages.length > 1 && isAtLastPage(),
+        fired: false,
+      };
+    },
+    [onSwipePastEnd, isAtLastPage, pages.length]
+  );
+
+  const handleTouchMove = useCallback(
+    (e: React.TouchEvent) => {
+      const gesture = gestureRef.current;
+      const touch = e.touches[0];
+      if (!onSwipePastEnd || !gesture || !touch || gesture.fired || !gesture.fromEnd) return;
+      const dx = touch.clientX - gesture.x;
+      const dy = touch.clientY - gesture.y;
+      if (dx > -PAST_END_DISTANCE_PX) return;
+      if (Math.abs(dx) < Math.abs(dy) * PAST_END_RATIO) return;
+      if (!isAtLastPage()) return;
+      gesture.fired = true;
+      // A light tap stands in for the drag-follow a scroll-snap track cannot give the gesture:
+      // the finger is still down, and nothing under it has moved.
+      haptics.light();
+      onSwipePastEnd();
+    },
+    [onSwipePastEnd, isAtLastPage, haptics]
+  );
+
+  const handleTouchEnd = useCallback(() => {
+    gestureRef.current = null;
+  }, []);
+
   // Open on the requested page before first paint: a direct scrollLeft write with smooth
   // scrolling switched off for the moment, so a deep link lands on its tab without a slide.
   useLayoutEffect(() => {
@@ -90,7 +160,12 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
       {/* Swipeable track */}
       <div
         ref={trackRef}
+        data-testid="mode-pager-track"
         onScroll={handleScroll}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onTouchCancel={handleTouchEnd}
         className="flex flex-1 min-h-0 overflow-x-auto overflow-y-hidden snap-x snap-mandatory hide-scrollbar"
         style={{ scrollBehavior: 'smooth' }}
       >

@@ -28,6 +28,7 @@ index.tsx                      # BrowserRouter + 13 routes
 │       │   └── LeaderboardSubmit.tsx   # (child of the popup, not of Game)
 │       ├── TopBar.tsx         # Home + nav; scrolls the pager or routes to a tab's path
 │       │   ├── Menu.tsx                # Burger menu: theme, share, install, How to Play, What's New, Help & FAQ, legal
+│       │   │                           #   (opened by the button, or by swiping left past the pager's last page)
 │       │   └── UpdatePopup.tsx         # (child of TopBar, not of Game) — lists the new version's notes
 │       └── PlayerInfo.tsx, GameOverControls.tsx, Toast.tsx
 ├── routes/DailyRoute.tsx      # /daily — auto-starts the daily

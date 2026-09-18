@@ -15,7 +15,7 @@ import {
 import { ALL_ERAS } from '../utils/eras';
 import { filterByDifficulty, filterByCategory, filterByEra } from '../utils/eventLoader';
 import CustomPanel from './panels/CustomPanel';
-import TopBar, { NavDest, navForPath, pathForNav } from './TopBar';
+import TopBar, { NavDest, TopBarHandle, navForPath, pathForNav } from './TopBar';
 import ModePager, { ModePagerHandle } from './ModePager';
 import ArchivePanel from './panels/ArchivePanel';
 import StatsPanel from './panels/StatsPanel';
@@ -33,6 +33,7 @@ import {
   DailyResult,
   getCustomSettings,
   saveCustomSettings,
+  CustomSettings,
 } from '../utils/playerStorage';
 import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
@@ -115,6 +116,17 @@ function useIdlePremount(setVisited: React.Dispatch<React.SetStateAction<Set<num
   }, [setVisited]);
 }
 
+// Persist Custom-game settings on every change so they survive a refresh. A hook beside
+// `useIdlePremount` rather than an inline effect because `ModeSelect` sits on the ESLint
+// max-lines-per-function ceiling. Keyed on the serialized settings, which is exactly what
+// `saveCustomSettings` writes, so a re-rendered object with the same values saves nothing.
+function usePersistCustomSettings(settings: CustomSettings) {
+  const serialized = JSON.stringify(settings);
+  useEffect(() => {
+    saveCustomSettings(JSON.parse(serialized) as CustomSettings);
+  }, [serialized]);
+}
+
 /**
  * Today's score exists and the board came back without it — so it can still be claimed.
  *
@@ -153,6 +165,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // `activePage` is written only by the pager's onIndexChange (scroll position) — buttons
   // scroll via the ref, not by setting it, so the highlight tracks the scroll without flashing.
   const pagerRef = useRef<ModePagerHandle>(null);
+  const topBarRef = useRef<TopBarHandle>(null); // opens the burger drawer (swipe past the end)
   const [activePage, setActivePage] = useState(() => indexForTabKey(initialTab));
   // Daily, Archive and Custom mount immediately, plus whichever tab the page opened on;
   // Stats and Timeline otherwise wait for a visit or idle.
@@ -255,24 +268,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     savedSettings?.suddenDeathHandSize ?? 5
   );
 
-  // Persist Custom-game settings on every change so they survive a refresh.
-  useEffect(() => {
-    saveCustomSettings({
-      selectedDifficulties,
-      selectedCategories,
-      selectedEras,
-      playerCount,
-      cardsPerHand,
-      suddenDeathHandSize,
-    });
-  }, [
+  usePersistCustomSettings({
     selectedDifficulties,
     selectedCategories,
     selectedEras,
     playerCount,
     cardsPerHand,
     suddenDeathHandSize,
-  ]);
+  });
 
   const handlePlayerCountChange = (count: number) => {
     setPlayerCount(count);
@@ -422,6 +425,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       {/* Top Bar — nav buttons drive the same pager as swipe (onNavClick), keeping the
           two navigation methods unified. */}
       <TopBar
+        ref={topBarRef}
         showHome
         showTitle={false}
         showStatsAchievements
@@ -439,6 +443,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
           onIndexChange={setActivePage}
           initialIndex={indexForTabKey(initialTab)}
           activeColors={TABS.map((tab) => tab.color)}
+          onSwipePastEnd={() => topBarRef.current?.openMenu()}
         >
           {/* Daily page */}
           <DailyPanel

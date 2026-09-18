@@ -83,6 +83,23 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
   until the tab has been shown once, and `StatsPanel`'s badge art waits for `active` too.
 - A vertically-scrolling panel nests inside the horizontal pager with **no gesture conflict** —
   this was an upfront concern that turned out to be unfounded. Don't re-litigate it.
+- **Swiping left on the last page opens the burger drawer** (2026-09, `ModePager`'s
+  `onSwipePastEnd`): the pager runs out of pages exactly where the drawer's own edge begins, so
+  the gesture carries on into it rather than dead-ending on Timeline. Three things keep it from
+  firing by accident, and all three earn their place:
+  - **It is read from the touch, not from the scroll position.** The track cannot scroll past its
+    end, so there is no overscroll to measure — iOS rubber-bands and everything else does nothing.
+  - **The gesture must _start_ with the track already at the last page** (latched at touch-down).
+    Without that latch, the swipe that merely _arrives_ at Timeline would run straight on into the
+    menu, because by mid-gesture the track is at its end.
+  - **Horizontal has to dominate** (56px of travel, and |dx| > 1.5 × |dy|), so a diagonal flick
+    down the My Timeline list is a scroll, not a drawer. It fires once per touch.
+
+  The drawer's state stays inside `TopBar`; `ModeSelect` opens it through a `TopBarHandle` ref
+  (`openMenu`), the same imperative-handle shape the nav buttons already use for the pager, rather
+  than lifting menu state into every screen that renders a top bar. `ModePager` fires the light
+  haptic itself, because a scroll-snap track gives the gesture no drag-follow to feel.
+
 - Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
   tab, Archive included, is `accent` (gold).
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell

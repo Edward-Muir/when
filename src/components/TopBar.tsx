@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useImperativeHandle, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import {
@@ -61,20 +61,34 @@ interface TopBarProps {
   onNavClick?: (key: NavDest) => void;
 }
 
-const TopBar: React.FC<TopBarProps> = ({
-  showHome = false,
-  showTitle = true,
-  onHomeClick,
-  dailyTheme,
-  showStatsAchievements = false,
-  activeNav,
-  onNavClick,
-}) => {
+/**
+ * Imperative handle: lets a parent open the burger drawer without owning its state, the way
+ * `ModePagerHandle` lets the nav buttons drive the pager. The home screen uses it for the
+ * swipe-past-the-last-page gesture.
+ */
+export interface TopBarHandle {
+  openMenu: () => void;
+}
+
+const TopBar = React.forwardRef<TopBarHandle, TopBarProps>(function TopBar(
+  {
+    showHome = false,
+    showTitle = true,
+    onHomeClick,
+    dailyTheme,
+    showStatsAchievements = false,
+    activeNav,
+    onNavClick,
+  },
+  ref
+) {
   const navigate = useNavigate();
   const { updateAvailable, newVersion, notes: updateNotes } = useVersionCheck();
   const [showToast, setShowToast] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [updateDismissed, setUpdateDismissed] = useState(false);
+
+  useImperativeHandle(ref, () => ({ openMenu: () => setIsMenuOpen(true) }), []);
 
   // `relative` lets the "new" dot anchor to the top-right of nav buttons.
   const buttonClass = `
@@ -331,6 +345,6 @@ const TopBar: React.FC<TopBarProps> = ({
       />
     </>
   );
-};
+});
 
 export default TopBar;
