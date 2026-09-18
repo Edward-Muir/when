@@ -123,6 +123,9 @@ made this worth having: before it, a finished board was a score.
   membership of `timeline` / `failedPlacements`, which a restored board satisfies by
   construction — and legitimately, since every card on it was placed. See
   [../event-detail/](../event-detail/index.md) for why that gate is load-bearing.
+- **A one-shot strip names it the first time it is on screen** (`reviewEye`), since the eye is
+  an unlabelled icon. See the hints section above for how it is gated and why it shares the
+  Daily strip's slot.
 - `useSaveDailyResult` moved out of `useWhenGame.ts` into its own hook file in the process; that
   file was on the `max-lines` ceiling, the same squeeze `Game.tsx` is under for `complexity`.
 
@@ -390,8 +393,9 @@ and do not improve performance, while single-line contextual hints tied to the m
 need, dismissible and re-findable, do. The fix is that shape; there is no guided tutorial.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
-  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `tapCard`, `stats`,
-  `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based
+  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `closeEnough`, `tapCard`,
+  `stats`, `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
+  `reviewEye`). Switch-based
   accessors, because the `security/detect-object-injection` rule forbids indexing by a
   variable key. Note `stats` (the in-game counter hint), `statsTab` (the home tab's strip) and
   `NavKey`'s `stats` (the nav dot) are three different things that share a word; don't
@@ -470,6 +474,22 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
 - **The Daily strip waits `DRAG_NUDGE_MS` of inactivity**, like the in-game drag hint, via
   `useTabHint`'s `delayMs`: a player who taps Play straight away never sees it. The other
   tabs keep the short swipe-settle delay.
+- **`reviewEye` is the one hint keyed to a control appearing, not to a first visit** (2026-09):
+  it names the Daily card's eye, which the tab only grows once today's game is done. It needed
+  nothing new in `useTabHint` — `active` is a boolean, so "on the Daily tab **and** the eye is
+  on it" says itself — and it keeps the default swipe-settle delay rather than the Daily
+  nudge's idle one, because the player has just walked back from their game. It shares the
+  Daily strip's slot with `dailyTab`; the two cannot both apply (the first-play nudge wants no
+  daily behind the player, this one wants today's board) but `useDailyTabHints` picks between
+  them explicitly rather than trusting that. **Using the eye marks the hint seen**, so a player
+  who taps before the strip appears is not told about it afterwards — the same rule `drag`
+  follows, and it is wrapped inside the hook's `openReview` so a call site cannot forget it.
+  The glow gets a fifth home, the eye, which needs no companion `bg-*` change: unlike the
+  transparent counter it already carries `bg-surface border border-border` to swell.
+- **The two Daily strips live in `useDailyTabHints`, not `ModeSelect`**, which hit ESLint's
+  `complexity` ceiling (an error rule) the moment the second one was added inline. Same reason
+  the in-game ladder is a hook rather than part of `Game`. `DailyPanel`'s `hint` prop therefore
+  carries a `key`, and the panel looks the copy up from it instead of hardcoding `dailyTab`.
 - **The Custom nav icon is sliders, not a cog.** A cog read as app Settings. It now matches
   the My Timeline filter button's icon; the aria-labels differ.
 

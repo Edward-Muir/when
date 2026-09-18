@@ -12,6 +12,8 @@ interface DailyCtaProps {
   /** Today's finished board can be restored, so the review button has somewhere to go. */
   canReview?: boolean;
   onReview?: () => void;
+  /** The strip naming the eye is up: glow it, so the hint points at something. */
+  reviewNudge?: boolean;
   /** The "tap the button above" strip is up: make the Play button the obvious thing. */
   nudge?: boolean;
 }
@@ -34,6 +36,7 @@ const DailyCta: React.FC<DailyCtaProps> = ({
   onSubmit,
   canReview = false,
   onReview,
+  reviewNudge = false,
   nudge = false,
 }) => {
   const buttonClass =
@@ -61,7 +64,9 @@ const DailyCta: React.FC<DailyCtaProps> = ({
             <button
               onClick={onReview}
               aria-label="Review today's timeline"
-              className="shrink-0 w-[52px] flex items-center justify-center rounded-xl bg-surface border border-border text-text hover:bg-border transition-colors active:scale-95"
+              className={`shrink-0 w-[52px] flex items-center justify-center rounded-xl bg-surface border border-border text-text hover:bg-border transition-colors active:scale-95 ${
+                reviewNudge ? 'animate-hint-glow' : ''
+              }`}
             >
               <Eye className="w-5 h-5" />
             </button>

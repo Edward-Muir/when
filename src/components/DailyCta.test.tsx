@@ -44,4 +44,22 @@ describe('DailyCta review button', () => {
     expect(screen.getByRole('button', { name: /submit your score/i })).toBeInTheDocument();
     expect(eye()).toBeInTheDocument();
   });
+
+  it('glows only while the strip naming it is up, so the hint points at something', () => {
+    const { rerender } = renderCta({ canReview: true });
+    expect(eye()).not.toHaveClass('animate-hint-glow');
+
+    rerender(
+      <DailyCta
+        played
+        unclaimed={false}
+        onShare={noop}
+        onPlay={noop}
+        onSubmit={noop}
+        canReview
+        reviewNudge
+      />
+    );
+    expect(eye()).toHaveClass('animate-hint-glow');
+  });
 });

@@ -113,6 +113,11 @@ The app has almost **no `data-testid`s**, so rely on these stable handles:
   on it. The in-game idle nudge appears 4 s after play starts with no drag — note "play
   starts" is when the transition finishes, a second or two after the Play click, so budget
   from the first hand card appearing, not from the click.
+- **A glowing control can never be clicked without `force: true`.** `animate-hint-glow` is an
+  infinite scale transform, so Playwright's actionability check reports the element as "not
+  stable" forever and the click times out after 30 s. This looks like a broken selector and is
+  not: a real tap works fine. It bites the Daily card's eye, the swap button, the Play button
+  and the bottom-left counter, each while its hint is up.
 - **The in-game ladder is one pill per placement**, shown when the placement animation
   settles and replacing whatever is up: `wrong` → `correct` → `tapCard` → `stats` → `swap`.
   Do **not** pause between drags to "let a hint appear" — that is what hid a real bug until
