@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { RefreshCw } from 'lucide-react';
+import { RefreshCw, History } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface UpdatePopupProps {
@@ -49,20 +49,13 @@ export function UpdatePopup({ isVisible, onDismiss, version, notes = [] }: Updat
                 <>
                   {/* Capped and scrollable: a release with a lot to say must not push the
                       buttons off the bottom of a phone screen. */}
-                  <ul className="list-disc pl-5 space-y-2 mb-3 max-h-[40vh] overflow-y-auto">
+                  <ul className="list-disc pl-5 space-y-2 max-h-[40vh] overflow-y-auto">
                     {notes.map((note) => (
                       <li key={note} className="text-sm font-body text-text-muted leading-relaxed">
                         {note}
                       </li>
                     ))}
                   </ul>
-                  <Link
-                    to="/changelog"
-                    onClick={onDismiss}
-                    className="block text-sm font-body text-accent-secondary underline"
-                  >
-                    See all changes
-                  </Link>
                 </>
               ) : (
                 <>
@@ -76,6 +69,23 @@ export function UpdatePopup({ isVisible, onDismiss, version, notes = [] }: Updat
                 </>
               )}
             </div>
+
+            {/* The way out to the full history. Styled as the same quiet full-width row
+                ReportIssueButton uses in the card popup, rather than an underlined text
+                link: it is a tertiary action sitting next to two real buttons, and an
+                underline is the one thing this design language does not use. */}
+            {hasNotes && (
+              <div className="px-4 border-t border-border">
+                <Link
+                  to="/changelog"
+                  onClick={onDismiss}
+                  className="w-full min-h-[44px] flex items-center justify-center gap-1.5 font-body text-xs text-text opacity-60 hover:opacity-100 active:scale-95 transition-all"
+                >
+                  <History className="w-3.5 h-3.5" />
+                  See all changes
+                </Link>
+              </div>
+            )}
 
             {/* Actions */}
             <div className="px-4 py-3 border-t border-border flex gap-2">
