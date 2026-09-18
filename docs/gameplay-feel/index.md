@@ -110,9 +110,15 @@ against your change before trusting a green suite.
 - **`closeEnough` requires something adjacent to be ranged**, not just that the collapsed
   predicate disagreed. Once a board carries ranges it is no longer sorted by `year`, so the
   collapsed predicate can go degenerate and report _every_ placement as close-enough.
-- **The span ceiling is balance, not accuracy** (`scripts/events/year-range.js`). A window wide
-  enough to cover the board makes its card unloseable _and_ slackens the bounds for every
-  placement around it for the rest of the game.
+- **The span ceiling was removed, and re-proposing one would be a regression.** A per-era cap
+  looked like obvious balance: a window wide enough to cover the board makes its card
+  unloseable, and a wide range does genuinely slacken the running bounds for every placement
+  around it. It was still wrong. The uncertainty is real — a prehistoric window is millions of
+  years and `boats` carries ~850,000 of them — and suppressing it to protect the game makes the
+  card lie. The cap also did collateral damage its rationale never anticipated: its flat
+  1,000-year rule for -10000..0 bound hardest on the agriculture and domestication cards, which
+  are the clearest processes in the catalogue. Width is now an editorial judgement, visible
+  through the apply script's widest-ranges and nested-pairs printout, not a validation.
 - **Known cosmetic tension, deliberately not fixed:** a ranged card dropped above its band
   tombstones back to the band's first gap, so the miss-travel animation runs longer than the
   error deserves. Clamping to the nearest valid gap instead makes tombstone position depend on

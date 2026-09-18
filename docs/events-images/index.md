@@ -107,32 +107,42 @@ and got ellipsised. 639 were renamed and the cap became permanent
 uses `line-clamp-3` (~60 chars) and is _not_ the binding constraint — don't re-derive the limit
 from it. 40 and 30 were the alternatives considered.
 
-## `year_end`: events that name a period, not a moment
+## `year` + `year_end`: the evidence window
 
 Some cards describe a process, a floruit or a reign the record does not pin to a year, and
-grading those against a single date grades a guess. Those carry an optional `year_end` upper
-bound and a placement anywhere the window fits counts as a success.
+grading those against a single date grades a guess. Those carry an optional `year_end`, and a
+placement anywhere inside the window counts as a success.
 
-`year` stays the lower bound and the sole anchor for difficulty scoring, deck composition, era
-filtering and recency, so **adding a range cannot move a daily deck**. Correcting a `year`
-very much can — see the `--allow-year-change` note below.
+**The pair is the window. `year` is simply its start** — not an anchor to hang a forward-only
+range off. Where the record puts the window somewhere else, `year` moves with it. Getting this
+backwards was the first pass's main mistake: it kept every stored year fixed and only extended
+forwards, so an event whose evidence began a century before its stored year got a window that
+started in the wrong place.
 
 - Written by `scripts/events/year-range-report.js` / `-apply.js`, never by hand in bulk: the
   same "agents write maps, one pass writes the catalogue" arrangement as the detail prose.
 - `scripts/events/year-range.js` holds both the candidate heuristics and the validator, and
   `src/utils/eventYearRange.test.ts` requires it, so the corpus and the tool that writes it
   cannot disagree about what is valid.
-- **The apply script cannot write `year`** without `--allow-year-change`, which also demands a
-  `reason` per entry and prints every move. That is what keeps a range batch provably unable to
-  perturb `deckBuilder.test.ts`. Land year corrections in their own commit, re-run that test,
-  and re-measure its bound rather than widening it.
+- **`year_end` alone cannot move a daily deck** — `year` is the sole anchor for difficulty
+  scoring, deck composition, era filtering and recency. **Moving `year` very much can**, which
+  is why it needs a `reason` and the apply script prints every move. The working discipline:
+  apply range-only entries first and confirm the deck tests are untouched, then land year moves
+  in their own commit and re-measure `deckBuilder.test.ts`'s bound rather than widening it.
 - **Candidate detection reuses an existing exemption.** The duration phrases `date-clues.js`
   deliberately does _not_ flag as spoilers ("a 27-year war", "800 years of Muslim rule") are
   exactly the cards that name a period, so that carve-out doubles as a pre-built worklist.
-- The per-era span ceiling is game balance, not accuracy: a window wide enough to cover the
-  board makes its card unloseable.
-- **Omitting is usually right.** A precise, well-attested event must not get a range, and
-  roughly three in four flags in this project's history did not survive checking.
+- **There is no cap on how wide a window may be, and the cap that once existed was a mistake.**
+  It was justified as game balance. But a prehistoric window really is millions of years wide,
+  and the cap's flat 1,000-year rule for -10000..0 bound hardest on the agriculture and
+  domestication cards, which are the clearest processes in the catalogue. Honesty about
+  uncertainty wins. What survives is visibility, not a block: the apply script prints the
+  widest ranges and any fully nested pairs after every run, and with nothing rejecting a
+  mis-keyed digit that printout is the only thing between a typo and a card placeable anywhere.
+- **Omitting is still usually right.** A precise, well-attested event must not get a window —
+  a ratified chronostratigraphic boundary (`jurassic-period-begins`, and anything else whose
+  stored value is unrounded like -201400000) carries a published age with an error bar, not a
+  window, and is among the most defensible single years in the catalogue.
 
 The rule that consumes this field, and why the obvious version of it is unsound, is in
 [../gameplay-feel/index.md](../gameplay-feel/index.md).
