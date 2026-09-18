@@ -3,3 +3,7 @@ node_modules/
 public/events/
 *.min.js
 package-lock.json
+# Written by scripts/release-notes-lib.js with its own formatter (JSON.stringify, 2-space).
+# Prettier collapses its single-note arrays onto one line, so every commit that adds a note
+# would otherwise reformat the whole history and the next release would put it back.
+public/release-notes.json

@@ -37,7 +37,9 @@ export function useGameStatsRecorder(
   const [gameMilestones, setGameMilestones] = useState<GameMilestone[]>([]);
 
   useEffect(() => {
-    if (state.phase !== 'gameOver') {
+    // A board restored for review re-enters `gameOver` with a game that was already recorded.
+    // Counting it again would double every lifetime stat and re-fire its achievements.
+    if (state.phase !== 'gameOver' || state.isReview) {
       recordedRef.current = false;
       return;
     }
@@ -69,7 +71,7 @@ export function useGameStatsRecorder(
     setNewlyUnlockedAchievements(unlocked);
     setGameMilestones(detectMilestones(state, prev));
     // eslint-disable-next-line react-hooks/exhaustive-deps -- `state` read once per game, ref-guarded
-  }, [state.phase, eventsByName]);
+  }, [state.phase, state.isReview, eventsByName]);
 
   return { newlyUnlockedAchievements, gameMilestones };
 }

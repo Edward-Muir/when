@@ -8,6 +8,7 @@ import {
   Category,
   Era,
   HistoricalEvent,
+  WhenGameState,
   ALL_CATEGORIES,
   DEFAULT_DIFFICULTIES,
 } from '../types';
@@ -26,6 +27,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
+import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
 import {
   getTodayResult,
   DailyResult,
@@ -45,6 +47,8 @@ import { DRAG_NUDGE_MS } from '../hooks/useOnboardingHints';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
+  /** Reopen today's finished daily board, already restored from storage by this component. */
+  onReviewDaily: (restored: WhenGameState) => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
   /** The tab to open on: the one the URL names (`src/pages/Home.tsx`). */
@@ -140,6 +144,7 @@ const getDefaultHandSize = (count: number): number =>
 
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
+  onReviewDaily,
   isLoading = false,
   allEvents,
   initialTab = 'home',
@@ -331,6 +336,14 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
   const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents, today), [allEvents, today]);
 
+  // Today's finished board, restored here rather than on the tap so the eye never renders as a
+  // button that does nothing: `restoreDailyBoard` returns null when there is no board for today
+  // or its cards have left the catalogue. `today` is the dep that clears it at rollover.
+  const reviewBoard = useMemo(
+    () => restoreDailyBoard(getTodayDailyBoard(today), allEvents),
+    [allEvents, today]
+  );
+
   const handleDailyStart = () => {
     onStart(buildDailyConfig());
   };
@@ -398,6 +411,8 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
+      canReview={!!reviewBoard}
+      onReview={() => reviewBoard && onReviewDaily(reviewBoard)}
       nudge={dailyHint.show}
     />
   );

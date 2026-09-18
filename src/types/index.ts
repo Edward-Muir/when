@@ -189,6 +189,13 @@ export interface WhenGameState {
   isAnimating: boolean;
   animationPhase: AnimationPhase;
   lastConfig: GameConfig | null;
+  /**
+   * This board was restored from storage to be re-read, not played (`utils/dailyBoard.ts`).
+   * Re-entering `gameOver` re-arms every game-over effect, and two of them write: the daily
+   * result save would wipe the leaderboard rank stored after submission, and the stats
+   * recorder would count the game a second time. Both check this flag.
+   */
+  isReview?: boolean;
 
   // Player state (single player = 1 player)
   players: Player[];

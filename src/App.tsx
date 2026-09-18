@@ -129,6 +129,7 @@ function App({
     cycleHand,
     resetGame,
     restartGame,
+    enterReview,
     pendingPopup,
     showDescriptionPopup,
     showGameOverPopup,
@@ -237,6 +238,7 @@ function App({
         <ModeSelect
           key="modeSelect"
           onStart={handleStart}
+          onReviewDaily={enterReview}
           isLoading={state.phase === 'loading'}
           allEvents={allEvents}
           initialTab={initialTab}

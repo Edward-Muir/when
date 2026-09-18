@@ -88,6 +88,44 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## The Daily's eye: reopening today's finished board (2026-09)
+
+Once the daily is played, an eye sits beside **Challenge a Friend** on the hero card and reopens
+the board the player built, so the cards can be turned over and read. The long-form prose is what
+made this worth having: before it, a finished board was a score.
+
+- **It rehydrates the real game screen rather than rendering a review of its own.** `App` already
+  routes `phase === 'gameOver'` to `Game`, `Timeline` already takes `failedPlacements` and draws
+  the tombstones, and `GameOverControls` is already the daily's Share + Home bar. So the work is
+  restoring the state (`utils/dailyBoard.ts` → `useWhenGame`'s `enterReview`), not building a
+  screen. A bespoke overlay would have been a second timeline surface to keep in step with the
+  first.
+- **It opens straight onto the board, with no game-over popup.** That is also what keeps
+  `useEndOfGameSequence` dormant: the milestone → achievement → share queue arms on the
+  transition `popupType === 'gameOver'` → `undefined`, so a popup that never opens is a queue
+  that never replays.
+- **Re-entering `gameOver` re-arms every game-over effect, and two of them write.** This is the
+  trap worth not rediscovering, because both failures are silent and permanent:
+  `useSaveDailyResult` would rewrite `when-daily-result` and wipe the `leaderboardRank` that
+  `updateDailyResultWithLeaderboard` stored after submission, and `useGameStatsRecorder` would
+  count the game a second time — lifetime stats, the cadence streak, the collection, a duplicate
+  `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
+  and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
+  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
+  Home skips the "progress will be lost" confirm.
+- **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
+  events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
+  overwrites it and no history accumulates — the self-invalidating shape `when-daily-result`
+  already uses, with no cleanup pass and no timer. Slugs the catalogue has since dropped are
+  skipped on restore, and a board with nothing left resolves to null, which is what the eye's
+  visibility is gated on: `ModeSelect` restores up front so the button is never a no-op.
+- **The prose gate needed no new insertion point.** `shouldShowYearInPopup` (`Game.tsx`) tests
+  membership of `timeline` / `failedPlacements`, which a restored board satisfies by
+  construction — and legitimately, since every card on it was placed. See
+  [../event-detail/](../event-detail/index.md) for why that gate is load-bearing.
+- `useSaveDailyResult` moved out of `useWhenGame.ts` into its own hook file in the process; that
+  file was on the `max-lines` ceiling, the same squeeze `Game.tsx` is under for `complexity`.
+
 ## Timeline progression: the rail (2026-09)
 
 The board looked identical at 5 cards and at 30, so a long timeline was a bigger number rather
