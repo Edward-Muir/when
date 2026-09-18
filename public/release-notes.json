@@ -1,9 +1,14 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [
-    "The Daily card gains an eye button that reopens today's finished timeline."
-  ],
+  "unreleased": [],
   "releases": [
+    {
+      "version": "1.25.0",
+      "date": "2026-09-18",
+      "notes": [
+        "The Daily card gains an eye button that reopens today's finished timeline."
+      ]
+    },
     {
       "version": "1.24.0",
       "date": "2026-09-18",

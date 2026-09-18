@@ -1,8 +1,7 @@
 {
-  "version": "1.24.0",
+  "version": "1.25.0",
   "date": "2026-09-18",
   "notes": [
-    "Some events now cover a span of years rather than a single date, and a card placed inside that span counts as correct.",
-    "Around 270 event dates were corrected against their sources."
+    "The Daily card gains an eye button that reopens today's finished timeline."
   ]
 }

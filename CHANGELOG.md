@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.25.0](https://github.com/Edward-Muir/when/compare/v1.24.0...v1.25.0) (2026-09-18)
+
+
+### Features
+
+* reopen today's finished daily timeline from the Daily card ([#61](https://github.com/Edward-Muir/when/issues/61)) ([2350a10](https://github.com/Edward-Muir/when/commit/2350a10c5cb3848ec8c22c05afff5177f131ebdc))
+
 ## [1.24.0](https://github.com/Edward-Muir/when/compare/v1.23.0...v1.24.0) (2026-09-18)
 
 
