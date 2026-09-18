@@ -8,6 +8,7 @@ import {
   Category,
   Era,
   HistoricalEvent,
+  WhenGameState,
   ALL_CATEGORIES,
   DEFAULT_DIFFICULTIES,
 } from '../types';
@@ -26,6 +27,7 @@ import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
+import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
 import {
   getTodayResult,
   DailyResult,
@@ -36,15 +38,15 @@ import { shareDailyResult } from '../utils/share';
 import { encodeChallengeCode, generateChallengeSeed } from '../utils/challengeCode';
 
 import { useDailyLeaderboard, DailyLeaderboard } from '../hooks/useDailyLeaderboard';
-import { getLifetimeStats } from '../utils/statsStorage';
 import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
-import { useTabHint } from '../hooks/useTabHint';
-import { DRAG_NUDGE_MS } from '../hooks/useOnboardingHints';
+import { useDailyTabHints } from '../hooks/useDailyTabHints';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
+  /** Reopen today's finished daily board, already restored from storage by this component. */
+  onReviewDaily: (restored: WhenGameState) => void;
   isLoading?: boolean;
   allEvents: HistoricalEvent[];
   /** The tab to open on: the one the URL names (`src/pages/Home.tsx`). */
@@ -127,12 +129,6 @@ function hasUnclaimedScore(result: DailyResult | null, board: DailyLeaderboard):
   return !board.submitted;
 }
 
-// Whether the Daily tab's "play your first daily game" strip applies: on the Daily tab, with
-// no daily game behind the player (an upgrade must not tell a regular "your first").
-function wantsFirstDailyNudge(onDailyTab: boolean, todayResult: DailyResult | null): boolean {
-  return onDailyTab && !todayResult && getLifetimeStats().gamesPlayed.daily === 0;
-}
-
 // Default hand size by player count (1–6 players); anything else falls back to 5.
 const DEFAULT_HAND_SIZES = [7, 6, 5, 4, 3, 3];
 const getDefaultHandSize = (count: number): number =>
@@ -140,6 +136,7 @@ const getDefaultHandSize = (count: number): number =>
 
 const ModeSelect: React.FC<ModeSelectProps> = ({
   onStart,
+  onReviewDaily,
   isLoading = false,
   allEvents,
   initialTab = 'home',
@@ -166,15 +163,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
     setVisited((prev) => (prev.has(activePage) ? prev : new Set(prev).add(activePage)));
   }, [activePage]);
   useIdlePremount(setVisited);
-  // The Daily tab's first-visit strip: "tap the button above to play your first daily game".
-  // Like the in-game drag hint it waits `DRAG_NUDGE_MS` of inactivity, so a player who taps
-  // Play straight away never sees it. It takes the leaderboard's slot while it shows, so the
-  // hero image keeps its height; the leaderboard is the least relevant thing to a new player.
-  const dailyHint = useTabHint(
-    'dailyTab',
-    wantsFirstDailyNudge(activePage === indexForTabKey('home'), todayResult),
-    DRAG_NUDGE_MS
-  );
   // Keep the URL on the active tab, so a refresh or a shared link comes back to it. Replaced,
   // not pushed, so swiping never stacks history. Only while the URL is one of the tab paths:
   // the daily and challenge routes also mount this screen while they load, and must keep
@@ -331,6 +319,24 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
   const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents, today), [allEvents, today]);
 
+  // Today's finished board, restored here rather than on the tap so the eye never renders as a
+  // button that does nothing: `restoreDailyBoard` returns null when there is no board for today
+  // or its cards have left the catalogue. `today` is the dep that clears it at rollover.
+  const reviewBoard = useMemo(
+    () => restoreDailyBoard(getTodayDailyBoard(today), allEvents),
+    [allEvents, today]
+  );
+
+  // The Daily card's two one-shot strips (play your first game, and the eye), and which of
+  // them has the slot. Both take the leaderboard's place while up, so the hero image keeps
+  // its height.
+  const dailyHints = useDailyTabHints({
+    onDailyTab: activePage === indexForTabKey('home'),
+    todayResult,
+    board: reviewBoard,
+    onReview: onReviewDaily,
+  });
+
   const handleDailyStart = () => {
     onStart(buildDailyConfig());
   };
@@ -398,7 +404,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       onShare={handleShareDaily}
       onPlay={handleDailyStart}
       onSubmit={() => setIsLeaderboardOpen(true)}
-      nudge={dailyHint.show}
+      canReview={!!reviewBoard}
+      onReview={dailyHints.openReview}
+      reviewNudge={dailyHints.reviewNudge}
+      nudge={dailyHints.playNudge}
     />
   );
 
@@ -436,7 +445,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
             previewEvent={previewEvent}
             themeName={todayResult ? todayResult.theme : dailyThemeDisplayName}
             cta={dailyCta}
-            hint={dailyHint}
+            hint={dailyHints.strip}
             leaderboard={leaderboard}
             isLeaderboardLoading={isLeaderboardLoading}
             playerEntry={playerEntry}

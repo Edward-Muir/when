@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { HistoricalEvent } from '../../types';
+import { TabHintKey } from '../../utils/playerStorage';
 import { LeaderboardEntry } from '../../hooks/useLeaderboard';
 import DailyDeckPreview from '../DailyDeckPreview';
 import TodaysLongest from '../TodaysLongest';
@@ -12,8 +13,11 @@ interface DailyPanelProps {
   themeName: string;
   /** Play / Share / Submit, built by the caller from today's result. */
   cta: ReactNode;
-  /** The tab's first-visit strip, which takes the leaderboard's slot while it is up. */
-  hint: { show: boolean; dismiss: () => void };
+  /**
+   * The strip in this tab's slot, which takes the leaderboard's place while it is up. The
+   * caller picks which hint it carries: the first-play nudge, or the one naming the eye.
+   */
+  hint: { key: TabHintKey; show: boolean; dismiss: () => void };
   leaderboard: LeaderboardEntry[];
   isLeaderboardLoading: boolean;
   playerEntry: LeaderboardEntry | null;
@@ -55,7 +59,7 @@ const DailyPanel: React.FC<DailyPanelProps> = ({
 
     <div className="mt-3 flex-shrink-0">
       {hint.show ? (
-        <HintStrip text={tabHintText('dailyTab')} onDismiss={hint.dismiss} />
+        <HintStrip text={tabHintText(hint.key)} onDismiss={hint.dismiss} />
       ) : (
         <TodaysLongest
           entries={leaderboard}

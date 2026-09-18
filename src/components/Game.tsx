@@ -182,7 +182,9 @@ const Game: React.FC<GameProps> = ({
   // the board and the submit form, the popup's dismiss gate depends on whether the score is on
   // it, and the share step prints the rank. One instance, read directly — it used to be owned
   // by LeaderboardSubmit and reported upward through callbacks that could fall out of sync.
-  const dailyResult = useMemo(() => buildDailyResult(state), [state]);
+  // A board being re-read has nothing to submit: its score is already on the board (or was
+  // declined), so no result means `useDailyLeaderboard` stays idle.
+  const dailyResult = useMemo(() => (state.isReview ? null : buildDailyResult(state)), [state]);
   const leaderboard = useDailyLeaderboard(dailyResult);
 
   // The end-of-game screens after the game-over popup, in order: milestones (if any),
@@ -291,9 +293,11 @@ const Game: React.FC<GameProps> = ({
     prevPlacementRef.current = state.lastPlacementResult;
   }, [state.lastPlacementResult, state.currentStreak, haptics, vibrate, triggerShake]);
 
-  // Show game over popup when game ends
+  // Show game over popup when game ends. A review opens straight onto the board: the summary
+  // has been seen, and never showing the popup is also what keeps `useEndOfGameSequence`
+  // dormant, since that queue arms on the popup closing.
   useEffect(() => {
-    if (state.phase === 'gameOver' && !gameOverPopupShown) {
+    if (state.phase === 'gameOver' && !state.isReview && !gameOverPopupShown) {
       setGameOverPopupShown(true);
       showGameOverPopup();
     }
@@ -302,7 +306,7 @@ const Game: React.FC<GameProps> = ({
     if (state.phase === 'playing') {
       setGameOverPopupShown(false);
     }
-  }, [state.phase, gameOverPopupShown, showGameOverPopup]);
+  }, [state.phase, state.isReview, gameOverPopupShown, showGameOverPopup]);
 
   // Warm the daily board while the player is still playing. `useDailyLeaderboard` above only
   // starts fetching once the game is over and there is a result to submit; this makes sure the
@@ -313,10 +317,10 @@ const Game: React.FC<GameProps> = ({
   // `limit=1` takes the cheap path in api/leaderboard/[date].ts, which otherwise reads the
   // whole sorted set to locate the caller.
   useEffect(() => {
-    if (state.gameMode === 'daily') {
+    if (state.gameMode === 'daily' && !state.isReview) {
       warmLeaderboard(getLocalDateString());
     }
-  }, [state.gameMode]);
+  }, [state.gameMode, state.isReview]);
 
   const handleActiveCardTap = () => {
     if (activeCard) {
@@ -355,7 +359,9 @@ const Game: React.FC<GameProps> = ({
         >
           <TopBar
             showHome={true}
-            onHomeClick={() => setShowHomeConfirm(true)}
+            // "Your current progress will be lost" is the wrong question for a finished board
+            // being re-read, so a review leaves straight away.
+            onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
             dailyTheme={dailyThemeDisplay}
           />
 

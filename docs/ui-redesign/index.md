@@ -88,6 +88,47 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell
   (inactive ones `invisible`) so its width never shifts as you navigate.
 
+## The Daily's eye: reopening today's finished board (2026-09)
+
+Once the daily is played, an eye sits beside **Challenge a Friend** on the hero card and reopens
+the board the player built, so the cards can be turned over and read. The long-form prose is what
+made this worth having: before it, a finished board was a score.
+
+- **It rehydrates the real game screen rather than rendering a review of its own.** `App` already
+  routes `phase === 'gameOver'` to `Game`, `Timeline` already takes `failedPlacements` and draws
+  the tombstones, and `GameOverControls` is already the daily's Share + Home bar. So the work is
+  restoring the state (`utils/dailyBoard.ts` → `useWhenGame`'s `enterReview`), not building a
+  screen. A bespoke overlay would have been a second timeline surface to keep in step with the
+  first.
+- **It opens straight onto the board, with no game-over popup.** That is also what keeps
+  `useEndOfGameSequence` dormant: the milestone → achievement → share queue arms on the
+  transition `popupType === 'gameOver'` → `undefined`, so a popup that never opens is a queue
+  that never replays.
+- **Re-entering `gameOver` re-arms every game-over effect, and two of them write.** This is the
+  trap worth not rediscovering, because both failures are silent and permanent:
+  `useSaveDailyResult` would rewrite `when-daily-result` and wipe the `leaderboardRank` that
+  `updateDailyResultWithLeaderboard` stored after submission, and `useGameStatsRecorder` would
+  count the game a second time — lifetime stats, the cadence streak, the collection, a duplicate
+  `when-game-history` record, and re-fired achievements. `WhenGameState.isReview` guards both,
+  and `useSaveDailyResult.test.ts` fails without either guard. `Game` carries three more, all
+  cosmetic by comparison: no game-over popup, no leaderboard fetch or warm, and the TopBar's
+  Home skips the "progress will be lost" confirm.
+- **One slot, stamped with the puzzle date** (`when-daily-board`), holding slugs rather than
+  events. `getTodayDailyBoard` returns null unless the stamp is today, so the next daily
+  overwrites it and no history accumulates — the self-invalidating shape `when-daily-result`
+  already uses, with no cleanup pass and no timer. Slugs the catalogue has since dropped are
+  skipped on restore, and a board with nothing left resolves to null, which is what the eye's
+  visibility is gated on: `ModeSelect` restores up front so the button is never a no-op.
+- **The prose gate needed no new insertion point.** `shouldShowYearInPopup` (`Game.tsx`) tests
+  membership of `timeline` / `failedPlacements`, which a restored board satisfies by
+  construction — and legitimately, since every card on it was placed. See
+  [../event-detail/](../event-detail/index.md) for why that gate is load-bearing.
+- **A one-shot strip names it the first time it is on screen** (`reviewEye`), since the eye is
+  an unlabelled icon. See the hints section above for how it is gated and why it shares the
+  Daily strip's slot.
+- `useSaveDailyResult` moved out of `useWhenGame.ts` into its own hook file in the process; that
+  file was on the `max-lines` ceiling, the same squeeze `Game.tsx` is under for `complexity`.
+
 ## Timeline progression: the rail (2026-09)
 
 The board looked identical at 5 cards and at 30, so a long timeline was a bigger number rather
@@ -352,8 +393,9 @@ and do not improve performance, while single-line contextual hints tied to the m
 need, dismissible and re-findable, do. The fix is that shape; there is no guided tutorial.
 
 - **One storage object, `when-hints-seen`** (`playerStorage.ts`: `hasSeenHint` /
-  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `tapCard`, `stats`,
-  `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`). Switch-based
+  `markHintSeen` / `resetHintsSeen`, keys `drag`, `wrong`, `correct`, `closeEnough`, `tapCard`,
+  `stats`, `swap`, `dailyTab`, `archiveTab`, `customTab`, `statsTab`, `timelineTab`,
+  `reviewEye`). Switch-based
   accessors, because the `security/detect-object-injection` rule forbids indexing by a
   variable key. Note `stats` (the in-game counter hint), `statsTab` (the home tab's strip) and
   `NavKey`'s `stats` (the nav dot) are three different things that share a word; don't
@@ -368,6 +410,20 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   a `when-hints-reset` event** (`subscribeHintsReset`): the menu is reachable mid-game via
   `TopBar`, but `useOnboardingHints` reads storage once per mount, so without the broadcast a
   reset during a game would silently do nothing until the next one.
+  **`useTabHint` has to listen to that broadcast too, and did not until 2026-09.** Its effect
+  reads storage only when its deps change. `active` is one of those deps, so the four strips
+  on tabs you are not standing on re-armed by themselves the moment you navigated to them —
+  which is why this went unnoticed, and why the symptom was so specific: **the only strip that
+  stayed away was the one on the tab the player was already on when they opened the menu.**
+  In practice that is the Daily tab, so the eye hint was the visible casualty. It now bumps a
+  nonce in the dep list and re-arms in place. `useTabHint.test.ts` pins it.
+- **An explicit reset waives the Daily nudge's lifetime gate** (2026-09). `wantsFirstDailyNudge`
+  gates on `gamesPlayed.daily === 0` so an upgrade never tells a regular "your first" — but a
+  reset is not an upgrade, it is the player asking to be shown the explanations again, and this
+  was the one hint that sat that request out. `useDailyTabHints` latches the broadcast for the
+  session and waives the counter. `todayResult` still gates it either way: with today's game
+  done the hero card carries Share and the eye, so the strip would point at a Play button that
+  is not there.
 - **The How-to-Play modal is never shown unasked.** It is `HowToPlayModal` on `ui/Modal`
   (`reveal` layer so it clears the menu drawer), opened from the menu's "How to Play", which
   is now always present, and from nowhere else. Three things were tried and cut: opening it
@@ -429,9 +485,44 @@ need, dismissible and re-findable, do. The fix is that shape; there is no guided
   ring was tried first and was invisible on a phone, and a bigger swell-and-fade was tried
   next and read as garish. Under Reduce Motion the bob is off and the glow falls back to a
   motion-free brightness blink, so the strip still points at something.
+- **`animate-hint-halo` is the deliberate exception to that, and the box-shadow verdict does not
+  carry to it** (2026-09). `hintGlow`'s `brightness(1.12)` lifts a near-white `bg-surface`
+  button by almost nothing, which is exactly what the Daily eye is, so the nudge did not land on
+  a real phone. The ring that failed was hint-scale; this app's gold glows that _do_ read are far
+  heavier (`successGlowGolden` at `0 0 30px 15px`, the two-layer `.tl-rail-tip`). The halo is
+  three box-shadow layers restated in every keyframe, because box-shadow interpolates layer for
+  layer: a ring that expands to 9px and fades (the only thing that moves, restarting at spread 0
+  where the button hides it, so the loop has no snap), a steady bloom so the control is gold
+  between pulses, and a steady inset hairline reading as a gold border.
+  **The bloom is capped at the 12px `p-3` gutter between the eye and `DailyDeckPreview`'s
+  `overflow-hidden` edge** — measured at 13px of clearance — so it is saturated rather than wide;
+  anything larger is sliced off on the right and reads as a rendering bug. The inset layer is a
+  shadow rather than `border-color` because the button carries Tailwind's `border-border` and
+  both would land in `@layer utilities` with source order deciding; a shadow does not compete.
+  Under Reduce Motion it holds still but stays gold. Gold is `color-mix` on `--color-accent`,
+  never a literal, so dark mode adapts — which is the whole reason there is no literal gold rgba
+  anywhere in the repo.
 - **The Daily strip waits `DRAG_NUDGE_MS` of inactivity**, like the in-game drag hint, via
   `useTabHint`'s `delayMs`: a player who taps Play straight away never sees it. The other
   tabs keep the short swipe-settle delay.
+- **`reviewEye` is the one hint keyed to a control appearing, not to a first visit** (2026-09):
+  it names the Daily card's eye, which the tab only grows once today's game is done. It needed
+  nothing new in `useTabHint` — `active` is a boolean, so "on the Daily tab **and** the eye is
+  on it" says itself — and it keeps the default swipe-settle delay rather than the Daily
+  nudge's idle one, because the player has just walked back from their game. It shares the
+  Daily strip's slot with `dailyTab`; the two cannot both apply (the first-play nudge wants no
+  daily behind the player, this one wants today's board) but `useDailyTabHints` picks between
+  them explicitly rather than trusting that. **Using the eye marks the hint seen**, so a player
+  who taps before the strip appears is not told about it afterwards — the same rule `drag`
+  follows, and it is wrapped inside the hook's `openReview` so a call site cannot forget it.
+  The eye wears `animate-hint-halo` rather than the shared glow, which was not visible on it;
+  see the halo bullet above for why that is the one place a box-shadow ring is allowed back.
+  The copy deliberately does not name the icon ("Tap to view your completed timeline.") — the
+  halo is what points.
+- **The two Daily strips live in `useDailyTabHints`, not `ModeSelect`**, which hit ESLint's
+  `complexity` ceiling (an error rule) the moment the second one was added inline. Same reason
+  the in-game ladder is a hook rather than part of `Game`. `DailyPanel`'s `hint` prop therefore
+  carries a `key`, and the panel looks the copy up from it instead of hardcoding `dailyTab`.
 - **The Custom nav icon is sliders, not a cog.** A cog read as app Settings. It now matches
   the My Timeline filter button's icon; the aria-labels differ.
 

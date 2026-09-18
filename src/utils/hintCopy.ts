@@ -6,6 +6,11 @@ import { GameHintKey, TabHintKey } from './playerStorage';
  * (its subtitle says the same thing in fewer words). No em dashes (the same register the
  * share copy holds itself to).
  *
+ * `reviewEye` is the exception to "one per tab": it points at the Daily card's eye, which the
+ * tab only grows once today's game is done, so it shares the Daily strip's slot with
+ * `dailyTab` rather than having a tab of its own. It deliberately does not name the icon;
+ * `animate-hint-halo` on the button is what does the pointing.
+ *
  * The in-game strip is a single line that never grows: on a 375px phone it holds about 36
  * characters of 14px text before clipping, so every `HINT_TEXT` entry stays under that.
  * Say less rather than let the pill wrap or scroll; the modal has the long version.
@@ -27,6 +32,7 @@ export const TAB_HINT_TEXT: Record<TabHintKey, string> = {
     'Build a deck from any eras, categories and difficulty. Wrong placements cost a card; the game ends when your hand is empty.',
   statsTab: 'Your records, daily scores and badges. Every finished game counts here.',
   timelineTab: 'Every event you place correctly is collected here. Tap the sliders to filter it.',
+  reviewEye: 'Tap to view your completed timeline.',
 };
 
 /** The in-game strip's text for the active hint, or null when nothing is showing. */

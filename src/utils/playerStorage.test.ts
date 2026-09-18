@@ -18,6 +18,7 @@ const ALL_KEYS: HintKey[] = [
   'customTab',
   'statsTab',
   'timelineTab',
+  'reviewEye',
 ];
 
 beforeEach(() => {

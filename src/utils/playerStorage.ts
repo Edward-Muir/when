@@ -75,11 +75,12 @@ export function hasPlayedToday(): boolean {
 // --- Onboarding Hints Storage ---
 
 /**
- * Every one-shot hint in the app, in one object under `when-hints-seen`: the six game
- * hints are the in-game strips (`useOnboardingHints`); the five tab hints are the
- * first-visit strips on the home pager (`useTabHint`). Switch-based accessors, like
- * `NavSeen` below, because the `security/detect-object-injection` rule forbids indexing by
- * a variable key.
+ * Every one-shot hint in the app, in one object under `when-hints-seen`: the game hints are
+ * the in-game strips (`useOnboardingHints`); the tab hints are the strips a home tab shows in
+ * its own slot (`useTabHint`). Most of those are first-visit hints, one per tab; `reviewEye`
+ * is keyed to a control appearing instead, since the Daily card's eye only exists once today's
+ * game is done. Switch-based accessors, like `NavSeen` below, because the
+ * `security/detect-object-injection` rule forbids indexing by a variable key.
  *
  * `timelineTab` falls back to the key it replaced, `when-timeline-intro-seen`, so an
  * upgrade does not re-show it. That key is read, never written. (`when-modes-played`, which
@@ -97,14 +98,15 @@ export type HintKey =
   | 'archiveTab'
   | 'customTab'
   | 'statsTab'
-  | 'timelineTab';
+  | 'timelineTab'
+  | 'reviewEye';
 export type GameHintKey = Extract<
   HintKey,
   'drag' | 'wrong' | 'correct' | 'closeEnough' | 'tapCard' | 'stats' | 'swap'
 >;
 export type TabHintKey = Extract<
   HintKey,
-  'dailyTab' | 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab'
+  'dailyTab' | 'archiveTab' | 'customTab' | 'statsTab' | 'timelineTab' | 'reviewEye'
 >;
 
 interface HintsSeen {
@@ -120,6 +122,7 @@ interface HintsSeen {
   customTab?: boolean;
   statsTab?: boolean;
   timelineTab?: boolean;
+  reviewEye?: boolean;
 }
 
 const HINTS_SEEN_KEY = 'when-hints-seen';
@@ -155,6 +158,8 @@ function getHintSeen(data: HintsSeen, key: HintKey): boolean {
       return data.statsTab === true;
     case 'timelineTab':
       return data.timelineTab === true;
+    case 'reviewEye':
+      return data.reviewEye === true;
   }
 }
 
@@ -184,6 +189,8 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
       return { ...data, statsTab: true };
     case 'timelineTab':
       return { ...data, timelineTab: true };
+    case 'reviewEye':
+      return { ...data, reviewEye: true };
   }
 }
 

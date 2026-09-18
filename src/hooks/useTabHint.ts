@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { TabHintKey, hasSeenHint, markHintSeen } from '../utils/playerStorage';
+import { TabHintKey, hasSeenHint, markHintSeen, subscribeHintsReset } from '../utils/playerStorage';
 
 /**
  * Wait for the pager's scroll-snap to settle before mounting the strip. `activePage`
@@ -15,6 +15,8 @@ export const TAB_HINT_MOUNT_DELAY_MS = 350;
  * never opened. The default delay only lets the swipe settle; the Daily tab passes an
  * idle-length delay so its nudge, like the in-game drag hint, appears only to a player who
  * has sat there without acting.
+ *
+ * The menu's "Reset Hints" re-arms it in place, without a reload.
  */
 export function useTabHint(
   key: TabHintKey,
@@ -22,6 +24,12 @@ export function useTabHint(
   delayMs: number = TAB_HINT_MOUNT_DELAY_MS
 ): { show: boolean; dismiss: () => void } {
   const [show, setShow] = useState(false);
+  // The menu's "Reset Hints" is reachable from the home screen itself, and the effect below
+  // reads storage only when its deps change — so without this the reset cleared the keys and
+  // nothing re-read them, and the strips stayed away until a reload. Bumping a nonce re-runs
+  // the effect, which is the same job `useOnboardingHints` does for the in-game ladder.
+  const [resetNonce, setResetNonce] = useState(0);
+  useEffect(() => subscribeHintsReset(() => setResetNonce((n) => n + 1)), []);
 
   useEffect(() => {
     if (!active) {
@@ -34,7 +42,7 @@ export function useTabHint(
       setShow(true);
     }, delayMs);
     return () => window.clearTimeout(timer);
-  }, [key, active, delayMs]);
+  }, [key, active, delayMs, resetNonce]);
 
   const dismiss = useCallback(() => setShow(false), []);
 

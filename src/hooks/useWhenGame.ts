@@ -13,12 +13,9 @@ import {
   filterByCategory,
   filterByEra,
 } from '../utils/eventLoader';
-import { saveDailyResult } from '../utils/playerStorage';
 import { GameMilestone } from '../utils/statsStorage';
 import { useGameStatsRecorder } from './useGameStatsRecorder';
-import { generateEmojiGrid } from '../utils/share';
-import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
-import { getThemeOutcome } from '../utils/themeOutcome';
+import { useSaveDailyResult } from './useSaveDailyResult';
 import {
   sortByYear,
   initializePlayers,
@@ -56,6 +53,8 @@ interface UseWhenGameReturn {
   cycleHand: () => void;
   resetGame: () => void;
   restartGame: () => void;
+  /** Reopen a finished board for reading (`utils/dailyBoard.ts`), without replaying it. */
+  enterReview: (restored: WhenGameState) => void;
   modalEvent: HistoricalEvent | null;
   openModal: (event: HistoricalEvent) => void;
   closeModal: () => void;
@@ -100,39 +99,6 @@ const initialState: WhenGameState = {
 interface PendingPopupState {
   popup: GamePopupData | null;
   pendingStateUpdate: (() => void) | null;
-}
-
-function useSaveDailyResult(state: WhenGameState) {
-  // Derived out here rather than inside the effect so the dependency list can stay a list of
-  // the state fields the effect actually reads. Passing `state` wholesale would make the
-  // effect depend on every field of it.
-  const cleared = getThemeOutcome(state).survived;
-
-  useEffect(() => {
-    if (state.phase === 'gameOver' && state.gameMode === 'daily' && state.lastConfig?.dailySeed) {
-      const dailySeed = state.lastConfig.dailySeed;
-      const theme = getDailyTheme(dailySeed);
-
-      saveDailyResult({
-        date: dailySeed,
-        theme: getThemeDisplayName(theme),
-        won: state.winners.length > 0,
-        cleared,
-        correctCount: state.placementHistory.filter((p) => p).length,
-        totalAttempts: state.placementHistory.length,
-        emojiGrid: generateEmojiGrid(state.placementHistory),
-        bestStreak: state.bestStreak > 1 ? state.bestStreak : undefined,
-      });
-    }
-  }, [
-    cleared,
-    state.phase,
-    state.gameMode,
-    state.lastConfig,
-    state.winners,
-    state.placementHistory,
-    state.bestStreak,
-  ]);
 }
 
 /**
@@ -501,6 +467,16 @@ export function useWhenGame(): UseWhenGameReturn {
     if (config) startGame(config.curatedThemeId ? withFreshReplaySeed(config) : config);
   }, [state.lastConfig, startGame]);
 
+  /**
+   * Show a finished board again without replaying it: `restoreDailyBoard` hands back a
+   * `gameOver` state flagged `isReview`, and `App` already routes that phase to `Game`, so the
+   * player lands on the board they built with the same bottom bar. Nothing is dealt and
+   * nothing is written — see the flag's comment in `types/index.ts`.
+   */
+  const enterReview = useCallback((restored: WhenGameState) => {
+    setState(restored);
+  }, []);
+
   const openModal = useCallback((event: HistoricalEvent) => {
     setModalEvent(event);
   }, []);
@@ -550,6 +526,7 @@ export function useWhenGame(): UseWhenGameReturn {
     cycleHand,
     resetGame,
     restartGame,
+    enterReview,
     modalEvent,
     openModal,
     closeModal,

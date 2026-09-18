@@ -635,9 +635,15 @@ input,
 /* Onboarding nudges. The top hand card bobs while the drag hint is up (hintLift). The
    swap button (filled gold) and the Daily Play button share one glow while their strip is
    up (hintGlow: a gentle swell plus brightness, never opacity, so nothing looks disabled).
-   Transform/filter only: a box-shadow ring was tried first and was invisible on a phone.
    Under Reduce Motion the swell and the bob are dropped but the brightness blink stays, so
-   the hint still points at something (a colour change is not vestibular motion). */
+   the hint still points at something (a colour change is not vestibular motion).
+
+   hintGlow is transform/filter only, on the strength of an early box-shadow ring that was
+   invisible on a phone. hintHalo below is the deliberate exception and the earlier verdict
+   does not carry to it: that ring was hint-scale, where this app's gold glows that DO read
+   are far heavier (successGlowGolden at 0 0 30px 15px, the two-layer .tl-rail-tip). The eye
+   needed it because hintGlow's brightness(1.12) lifts a near-white bg-surface button by
+   almost nothing, so the nudge did not land on a real phone. */
 @keyframes hintLift {
   0%,
   100% {
@@ -666,6 +672,43 @@ input,
 
 .animate-hint-glow {
   animation: hintGlow 1.6s ease-in-out infinite;
+}
+
+/* The Daily card's eye while its strip is up. Three layers, restated in every frame because
+   box-shadow interpolates layer for layer: a ring that expands and fades (the only thing that
+   moves; it restarts at spread 0, hidden behind the button, so the loop has no visible snap),
+   a steady bloom so the control is gold between pulses, and a steady inset hairline reading as
+   a gold border.
+
+   The bloom is capped at the 12px `p-3` gutter between the eye and DailyDeckPreview's
+   `overflow-hidden` edge. Anything wider is sliced off on the right and reads as a rendering
+   bug, which is why this is saturated rather than large. The inset layer is the one nothing
+   can clip, and it is a shadow rather than `border-color` because the button carries Tailwind's
+   `border-border`: both would land in @layer utilities with source order deciding, and a shadow
+   does not compete. Gold via color-mix on the token, never a literal, so dark mode adapts. */
+@keyframes hintHalo {
+  0% {
+    box-shadow:
+      0 0 0 0 color-mix(in srgb, var(--color-accent) 70%, transparent),
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 50%, transparent),
+      inset 0 0 0 1px color-mix(in srgb, var(--color-accent) 80%, transparent);
+  }
+  70% {
+    box-shadow:
+      0 0 0 9px transparent,
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 50%, transparent),
+      inset 0 0 0 1px color-mix(in srgb, var(--color-accent) 80%, transparent);
+  }
+  100% {
+    box-shadow:
+      0 0 0 0 transparent,
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 50%, transparent),
+      inset 0 0 0 1px color-mix(in srgb, var(--color-accent) 80%, transparent);
+  }
+}
+
+.animate-hint-halo {
+  animation: hintHalo 1.6s ease-out infinite;
 }
 
 @keyframes hintBrighten {
@@ -699,5 +742,15 @@ input,
      something. */
   .animate-hint-glow {
     animation: hintBrighten 1.6s ease-in-out infinite;
+  }
+
+  /* The halo holds still but stays gold, for the same reason: the strip names no control, so
+     something has to be wearing the colour. */
+  .animate-hint-halo {
+    animation: none;
+    box-shadow:
+      0 0 0 3px color-mix(in srgb, var(--color-accent) 35%, transparent),
+      0 0 10px 2px color-mix(in srgb, var(--color-accent) 50%, transparent),
+      inset 0 0 0 1px color-mix(in srgb, var(--color-accent) 80%, transparent);
   }
 }
