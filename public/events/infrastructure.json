@@ -13,7 +13,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Göbekli_Tepe",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -8000
   },
   {
     "name": "jericho-walls",
@@ -45,7 +46,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Çatalhöyük",
     "color": "#2a1e18",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -5950
   },
   {
     "name": "skara-brae",
@@ -61,7 +63,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Skara_Brae",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2500
   },
   {
     "name": "stonehenge-begins",
@@ -6025,7 +6028,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -2000
   },
   {
     "name": "fiber-preparation-flax",
