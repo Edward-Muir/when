@@ -208,18 +208,45 @@ describe('formatEventYear', () => {
     expect(formatEventYear(event as HistoricalEvent)).toBe(expected);
   });
 
+  it('widens precision until the two deep-time ends are distinguishable', () => {
+    // 3.3-2.6 Ma both round to "3" at zero decimals; a fixed precision would hide the window.
+    expect(formatEventYear(ev('a', -3300000, -2600000))).toBe('3.3-2.6 million BCE');
+    expect(formatEventYear(ev('a', -2040000, -1770000))).toBe('2.0-1.8 million BCE');
+  });
+
+  it('collapses a dating error bar that one decimal cannot separate', () => {
+    // A 30,000-year uncertainty at 3.2 Ma genuinely is a point at this resolution, and so is
+    // the 61,000-year End-Permian bracket at 252 Ma.
+    expect(formatEventYearParts(ev('a', -3200000, -3170000))).toEqual({
+      start: '3.2 million BCE',
+      end: null,
+    });
+    expect(formatEventYearParts(ev('a', -251941000, -251880000))).toEqual({
+      start: '251.9 million BCE',
+      end: null,
+    });
+  });
+
   it('picks the unit once across a deep-time range rather than per end', () => {
     // formatYear rounds millions with toFixed(0), so formatting each end separately would
     // render this as "3-3 million BCE". At that resolution the window *is* a point, so it
     // collapses to a single label instead.
-    expect(formatEventYear(ev('a', -3300000, -2600000))).toBe('3 million BCE');
     expect(formatEventYear(ev('a', -8000000, -2000000))).toBe('8-2 million BCE');
   });
 
-  it('collapses to a single label when both ends round to the same magnitude', () => {
-    const parts = formatEventYearParts(ev('a', -66000000, -65500000));
-    expect(parts.end).toBeNull();
-    expect(parts.start).toBe('66 million BCE');
+  it('falls back to plain years when the window straddles the unit', () => {
+    // -2000000..-9000 in millions would be "2-0 million BCE", rounding the end away entirely.
+    expect(formatEventYearParts(ev('a', -2000000, -9000))).toEqual({
+      start: '2,000,000-',
+      end: '9,000 BCE',
+    });
+    expect(formatEventYear(ev('a', -1040000, -50000))).toBe('1,040,000-50,000 BCE');
+    // Still uses the shared unit while both ends reach a tenth of it.
+    expect(formatEventYear(ev('a', -1790000, -400000))).toBe('1.8-0.4 million BCE');
+  });
+
+  it('separates a half-million-year window at 66 Ma rather than rounding it away', () => {
+    expect(formatEventYear(ev('a', -66000000, -65500000))).toBe('66.0-65.5 million BCE');
   });
 
   it('splits into two lines for the timeline column', () => {

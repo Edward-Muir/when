@@ -215,6 +215,54 @@ export function formatYear(year: number): string {
 }
 
 /**
+ * A deep-time window, in one shared unit at whatever precision separates the two ends.
+ *
+ * Split out of `formatEventYearParts` because that function sits on ESLint's `complexity`
+ * ceiling, which is an error rule here rather than a warning.
+ *
+ * The precision is the design. A fixed zero decimal places for millions renders
+ * `first-stone-tools` (3.3 to 2.6 Ma) as a flat "3 million BCE", silently hiding a
+ * 700,000-year window so the card reads as a point and the player is never shown why a
+ * placement was close enough. Two decimals goes too far the other way and prints spurious
+ * precision: `end-permian-mass-extinction` would read "251.94-251.88 million BCE" for what is,
+ * at this scale, a point. One decimal separates the genuine windows and leaves the dating
+ * error bars collapsed, which is the honest answer for that card and for
+ * `lucy-australopithecus-lived` (a 30,000-year uncertainty at 3.2 Ma).
+ */
+function formatDeepTimeRange(
+  start: number,
+  end: number,
+  magnitude: number
+): { start: string; end: string | null } | null {
+  const billions = magnitude >= 1000000000;
+  const divisor = billions ? 1000000000 : 1000000;
+  const unit = billions ? 'billion' : 'million';
+
+  // A shared unit only works while both ends are representable in it. `giant-ground-sloths-roam`
+  // runs -2000000 to -9000, and forcing that into millions prints "2-0 million BCE" — the
+  // window's own end rounded away to zero. Below a tenth of the unit, hand it back and let the
+  // caller fall through to plain comma-separated years, which stay correct at any magnitude.
+  if (Math.min(Math.abs(start), Math.abs(end)) < divisor / 10) return null;
+
+  const at = (value: number, digits: number) => (Math.abs(value) / divisor).toFixed(digits);
+
+  // Whole numbers only where they actually say something on both ends. They fail two ways:
+  // the ends can collide (`first-stone-tools`, 3.3 and 2.6 Ma both render "3") or one can
+  // round away to nothing (`fire-mastery`, 1.79 and 0.4 Ma render "2" and "0"). Either way a
+  // decimal place rescues it.
+  const startWhole = at(start, 0);
+  const endWhole = at(end, 0);
+  const wholeWorks = !billions && startWhole !== endWhole && startWhole !== '0' && endWhole !== '0';
+
+  const digits = wholeWorks ? 0 : 1;
+  const a = at(start, digits);
+  const b = at(end, digits);
+
+  if (a === b) return { start: `${a} ${unit} BCE`, end: null };
+  return { start: `${a}-`, end: `${b} ${unit} BCE` };
+}
+
+/**
  * A ranged event's label, split so the timeline can stack it over two lines in its fixed
  * 96px column while the popup renders it inline. `end` is null for a point event.
  *
@@ -241,17 +289,10 @@ export function formatEventYearParts(event: Pick<HistoricalEvent, 'year' | 'year
 
   if (end === null) return { start: formatYear(start), end: null };
 
-  // Deep time: one shared unit, or the two ends round to the same number and it is a point.
   const magnitude = Math.max(Math.abs(start), Math.abs(end));
   if (start < 0 && end < 0 && magnitude >= 1000000) {
-    const billions = magnitude >= 1000000000;
-    const divisor = billions ? 1000000000 : 1000000;
-    const digits = billions ? 1 : 0;
-    const unit = billions ? 'billion' : 'million';
-    const a = (Math.abs(start) / divisor).toFixed(digits);
-    const b = (Math.abs(end) / divisor).toFixed(digits);
-    if (a === b) return { start: `${a} ${unit} BCE`, end: null };
-    return { start: `${a}-`, end: `${b} ${unit} BCE` };
+    const deep = formatDeepTimeRange(start, end, magnitude);
+    if (deep) return deep;
   }
 
   // Both BCE: larger magnitude first (which `year` already is), era suffix once. Strictly
