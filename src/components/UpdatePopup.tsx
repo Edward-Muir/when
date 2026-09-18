@@ -1,12 +1,22 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { RefreshCw } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface UpdatePopupProps {
   isVisible: boolean;
   onDismiss: () => void;
+  /** The version being offered, when the check knows it. */
+  version?: string | null;
+  /** One short sentence per notable change, from public/version.json. */
+  notes?: string[];
 }
 
-export function UpdatePopup({ isVisible, onDismiss }: UpdatePopupProps) {
+export function UpdatePopup({ isVisible, onDismiss, version, notes = [] }: UpdatePopupProps) {
+  // A refresh icon says a new build exists; it never says why anyone should want it. When
+  // the release carried notes, they take the icon's place. The icon stays as the fallback
+  // for a build released before the notes existed, or one whose notes failed to load.
+  const hasNotes = notes.length > 0;
+
   return (
     <AnimatePresence>
       {isVisible && (
@@ -28,17 +38,43 @@ export function UpdatePopup({ isVisible, onDismiss }: UpdatePopupProps) {
           >
             {/* Header */}
             <div className="px-4 py-3 border-b border-border">
-              <h2 className="text-lg font-display font-semibold text-text">Update Available</h2>
+              <h2 className="text-lg font-display font-semibold text-text">
+                {hasNotes && version ? `What's new in v${version}` : 'Update Available'}
+              </h2>
             </div>
 
             {/* Content */}
             <div className="px-4 py-4">
-              <div className="flex justify-center mb-4">
-                <RefreshCw className="w-10 h-10 text-accent" />
-              </div>
-              <p className="text-center text-text-muted text-sm">
-                A new version of When? is available. Reload to get the latest features and fixes.
-              </p>
+              {hasNotes ? (
+                <>
+                  {/* Capped and scrollable: a release with a lot to say must not push the
+                      buttons off the bottom of a phone screen. */}
+                  <ul className="list-disc pl-5 space-y-2 mb-3 max-h-[40vh] overflow-y-auto">
+                    {notes.map((note) => (
+                      <li key={note} className="text-sm font-body text-text-muted leading-relaxed">
+                        {note}
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    to="/changelog"
+                    onClick={onDismiss}
+                    className="block text-sm font-body text-accent-secondary underline"
+                  >
+                    See all changes
+                  </Link>
+                </>
+              ) : (
+                <>
+                  <div className="flex justify-center mb-4">
+                    <RefreshCw className="w-10 h-10 text-accent" />
+                  </div>
+                  <p className="text-center text-text-muted text-sm">
+                    A new version of When? is available. Reload to get the latest features and
+                    fixes.
+                  </p>
+                </>
+              )}
             </div>
 
             {/* Actions */}

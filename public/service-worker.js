@@ -74,8 +74,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Network-first for version.json (for update detection)
-  if (url.pathname.endsWith('/version.json')) {
+  // Network-first for version.json (for update detection) and release-notes.json (the
+  // What's New history, which is pointless if it is a release behind).
+  if (url.pathname.endsWith('/version.json') || url.pathname.endsWith('/release-notes.json')) {
     event.respondWith(networkFirst(request, DYNAMIC_CACHE));
     return;
   }

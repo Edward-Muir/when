@@ -11,8 +11,9 @@
     { "type": "chore", "hidden": true }
   ],
   "scripts": {
-    "postchangelog": "node scripts/generate-rss.js && node scripts/inject-version.js",
-    "precommit": "git add public/feed.xml src/version.ts public/version.json public/service-worker.js ios/App/App.xcodeproj/project.pbxproj"
+    "prerelease": "node scripts/check-release-notes.js",
+    "postchangelog": "node scripts/release-notes.js && node scripts/generate-rss.js && node scripts/inject-version.js",
+    "precommit": "git add public/release-notes.json public/feed.xml src/version.ts public/version.json public/service-worker.js ios/App/App.xcodeproj/project.pbxproj"
   },
   "bumpFiles": [{ "filename": "package.json", "type": "json" }]
 }

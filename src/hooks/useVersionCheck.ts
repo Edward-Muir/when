@@ -1,10 +1,19 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { APP_VERSION } from '../version';
+import type { VersionManifest } from '../utils/releaseNotes';
 
 const CHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 
-export function useVersionCheck() {
-  const [updateAvailable, setUpdateAvailable] = useState(false);
+export interface VersionCheck {
+  updateAvailable: boolean;
+  /** The version being offered, once one is. */
+  newVersion: string | null;
+  /** What changed in it, so the popup can say so. Empty when the build carried no notes. */
+  notes: string[];
+}
+
+export function useVersionCheck(): VersionCheck {
+  const [available, setAvailable] = useState<{ version: string; notes: string[] } | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const checkVersion = useCallback(async () => {
@@ -15,9 +24,15 @@ export function useVersionCheck() {
 
       if (!response.ok) return;
 
-      const data = await response.json();
+      const data = (await response.json()) as Partial<VersionManifest>;
       if (data.version && data.version !== APP_VERSION) {
-        setUpdateAvailable(true);
+        // scripts/inject-version.js writes the notes alongside the version, so this is the
+        // whole payload the popup needs. Older builds wrote `{ version }` alone, hence the
+        // fallback: a missing list is a popup without notes, never a broken one.
+        setAvailable({
+          version: data.version,
+          notes: Array.isArray(data.notes) ? data.notes.filter((n) => typeof n === 'string') : [],
+        });
       }
     } catch {
       // Network error - silently ignore
@@ -60,5 +75,9 @@ export function useVersionCheck() {
     };
   }, [startPolling, stopPolling]);
 
-  return { updateAvailable };
+  return {
+    updateAvailable: available !== null,
+    newVersion: available?.version ?? null,
+    notes: available?.notes ?? [],
+  };
 }

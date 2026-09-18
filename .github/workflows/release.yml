@@ -80,6 +80,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+      # Redundant with the `prerelease` hook in .versionrc.json by design: that hook is the
+      # real backstop (it also covers a local ./scripts/release.sh), but failing here gives
+      # a legible job log instead of an abort buried in commit-and-tag-version's output.
+      - name: Require a human release note
+        if: steps.gate.outputs.go == 'true'
+        run: node scripts/check-release-notes.js
+
       # Never tag a broken main.
       - name: Sanity checks
         if: steps.gate.outputs.go == 'true'

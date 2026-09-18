@@ -1,6 +1,6 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Sixteen files, all maintained as **current** —
+Reference docs for the "When" timeline game. Seventeen files, all maintained as **current** —
 if one contradicts the code, the doc is wrong and should be fixed.
 
 These are digests, not a change log. They hold decisions and their rationale, rejected
@@ -58,6 +58,10 @@ original per-session write-ups if you need the blow-by-blow.
   the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
   ship instantly), safe-area utilities, daily reminders
+- [release-notes.md](release-notes.md) — the hand-written history behind the update popup and
+  the What's New page: why it is separate from the generated `CHANGELOG.md`, the version+date
+  sync contract and its `documentedFrom` floor, and the two points where a missing note aborts
+  a release
 - [dev-tooling/](dev-tooling/index.md) — the `vercel dev` `spawn EBADF` root cause and fix, and
   where the 20-category taxonomy came from
 - [sports-events/](sports-events/index.md) — the `sports` category (sub-agent research +

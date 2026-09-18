@@ -11,7 +11,7 @@ RELEASE_TYPE=${1:-""}
 echo "🚀 Starting release process..."
 
 # Ensure working directory is clean (except for generated files)
-if [[ -n $(git status --porcelain | grep -v 'feed.xml\|version.ts\|version.json\|service-worker.js\|CHANGELOG.md') ]]; then
+if [[ -n $(git status --porcelain | grep -v 'feed.xml\|version.ts\|version.json\|release-notes.json\|service-worker.js\|CHANGELOG.md') ]]; then
   echo "❌ Error: Working directory has uncommitted changes"
   echo "   Please commit or stash changes before releasing"
   git status --short
