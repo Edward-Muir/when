@@ -4595,7 +4595,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iranian_Green_Movement",
     "color": "#2a3632",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2010
   },
   {
     "name": "death-steve-jobs",
@@ -4672,7 +4673,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1900
   },
   {
     "name": "aboriginal-rock-art",
@@ -4719,7 +4721,7 @@
   {
     "name": "lapita-culture-expansion",
     "friendly_name": "Lapita Culture Spreads",
-    "year": -1200,
+    "year": -1600,
     "category": "migration",
     "description": "Lapita peoples spread distinctive pottery and seafaring culture across Melanesia and into Polynesia.",
     "difficulty": "very-hard",
@@ -4728,7 +4730,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "aboriginal-didgeridoo-ceremonial",
@@ -4812,7 +4815,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 57
   },
   {
     "name": "council-of-jerusalem",
@@ -4971,7 +4975,7 @@
   {
     "name": "nazca-lines",
     "friendly_name": "Nazca Lines Construction Period",
-    "year": 200,
+    "year": -500,
     "category": "architecture",
     "description": "The Nazca civilization in Peru created massive desert geoglyphs depicting animals and geometric shapes.",
     "difficulty": "medium",
@@ -4980,7 +4984,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "buddhism-spreads-central-asia",
@@ -5699,7 +5704,7 @@
   {
     "name": "maya-classical-period",
     "friendly_name": "Maya Classical Period Flourishes",
-    "year": 600,
+    "year": 250,
     "category": "architecture",
     "description": "Maya city-states like Tikal and Palenque reached their cultural and architectural zenith.",
     "difficulty": "medium",
@@ -5708,7 +5713,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 900
   },
   {
     "name": "moche-civilization-peru",
@@ -6016,7 +6022,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 842
   },
   {
     "name": "bede-ecclesiastical-history",
@@ -6105,7 +6112,7 @@
   {
     "name": "mayan-classic-period",
     "friendly_name": "Mayan Classic Period Peak",
-    "year": 800,
+    "year": 250,
     "category": "architecture",
     "description": "Maya civilization reached its architectural and artistic peak across the Yucatan and Guatemala.",
     "difficulty": "medium",
@@ -6114,7 +6121,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 900
   },
   {
     "name": "adena-culture",
@@ -6352,12 +6360,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 959
   },
   {
     "name": "macedonian-renaissance-byzant",
     "friendly_name": "Macedonian Renaissance",
-    "year": 950,
+    "year": 867,
     "category": "art",
     "description": "The Macedonian dynasty oversaw a revival of classical learning and art in Constantinople spanning the 9th-11th centuries.",
     "difficulty": "hard",
@@ -6366,7 +6375,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1056
   },
   {
     "name": "chinese-landscape-painting",
@@ -6492,7 +6502,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 953
   },
   {
     "name": "murasaki-shikibu-genji",
@@ -6716,7 +6727,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1153
   },
   {
     "name": "scholasticism-development",
@@ -6744,7 +6756,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cathars-heresy_e4mlbm?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1244
   },
   {
     "name": "dom-university-paris",
@@ -6791,7 +6804,7 @@
   {
     "name": "toledo-translation-movement",
     "friendly_name": "Toledo Translation Movement",
-    "year": 1150,
+    "year": 1126,
     "category": "writing",
     "description": "Scholars in Toledo translated Arabic scientific and philosophical texts into Latin, transmitting classical knowledge to Europe.",
     "difficulty": "hard",
@@ -6800,7 +6813,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1284
   },
   {
     "name": "minnesinger-tradition",
@@ -6926,7 +6940,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -400
   },
   {
     "name": "sepik-river-art",
@@ -7108,7 +7123,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -900
   },
   {
     "name": "samarkand-conquerors-city",
@@ -7192,7 +7208,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1251
   },
   {
     "name": "mon-khmer-integration",
@@ -7281,7 +7298,7 @@
   {
     "name": "ancestral-puebloan-migration",
     "friendly_name": "Ancestral Puebloan Great Migration",
-    "year": 1300,
+    "year": 1276,
     "category": "migration",
     "description": "Ancestral Puebloans abandoned cliff dwellings at Mesa Verde and Chaco Canyon, migrating south due to prolonged drought.",
     "difficulty": "hard",
@@ -7290,7 +7307,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "duns-scotus-philosophy",
@@ -7724,12 +7742,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1436
   },
   {
     "name": "timurid-renaissance",
     "friendly_name": "Timurid Renaissance",
-    "year": 1420,
+    "year": 1370,
     "category": "empires",
     "description": "The Timurid dynasty fostered a cultural golden age of Persian miniature painting, architecture, and literature in Central Asia.",
     "difficulty": "hard",
@@ -7738,7 +7757,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1507
   },
   {
     "name": "masaccio-fresco-innovation",
@@ -7808,7 +7828,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "timbuktu-university",
@@ -8004,7 +8025,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1529
   },
   {
     "name": "joseon-confucian-renaissance",
@@ -8957,7 +8979,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/genroku-era-culture_hcw926?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1704
   },
   {
     "name": "tokugawa-edo-period-culture",
@@ -9041,7 +9064,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1730
   },
   {
     "name": "bach-welltempered-clavier",
@@ -9181,7 +9205,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1795
   },
   {
     "name": "maori-european-encounters",
@@ -9321,7 +9346,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1929
   },
   {
     "name": "kutai-yupa-inscriptions",
