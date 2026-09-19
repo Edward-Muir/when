@@ -13,6 +13,11 @@
  * shared 600 KB JSON array corrupt it: sub-agents write maps, one deterministic pass writes
  * the catalogue.
  *
+ * **A window retracts an earlier rejection.** Writing a `year_end` to a slug the ledger calls a
+ * moment deletes that ledger line, because an event cannot be both. Nothing else does this, so
+ * without it a re-review that upgrades a rejection leaves the two disagreeing and
+ * `eventYearRange.test.ts` fails.
+ *
  * **`year_end: null` is a rejection, and it is written too** — to `year-range-decided.json`
  * rather than to the catalogue. Most events are moments and will never carry a window, so
  * "reviewed and left alone" is the commonest outcome of a sweep and needs somewhere durable to
@@ -105,6 +110,7 @@ function applyEntries(merged, locate, decided) {
   let applied = 0;
   let skipped = 0;
   let rejected = 0;
+  let cleared = 0;
 
   for (const [slug, entry] of Object.entries(merged)) {
     const { file, event } = locate.get(slug);
@@ -119,6 +125,15 @@ function applyEntries(merged, locate, decided) {
     if (rejection) {
       decided[slug] = entry.note;
       rejected += 1;
+    } else if (slug in decided) {
+      // A re-review upgrading an earlier rejection to a window. The ledger line is now a lie,
+      // and `eventYearRange.test.ts` ("nothing is both decided a moment and given a window")
+      // fails on exactly that pairing — so writing a window has to retract the rejection.
+      // This sits above the already-current short-circuit deliberately: a batch that merely
+      // re-states a window the catalogue already carries still has a stale ledger line to
+      // clear, and skipping it there is how the contradiction survived a run once.
+      delete decided[slug];
+      cleared += 1;
     }
 
     const movesYear = targetYear !== event.year;
@@ -144,7 +159,7 @@ function applyEntries(merged, locate, decided) {
     applied += 1;
   }
 
-  return { touchedFiles, yearMoves, preimages, applied, skipped, rejected };
+  return { touchedFiles, yearMoves, preimages, applied, skipped, rejected, cleared };
 }
 
 function main() {
@@ -184,7 +199,7 @@ function main() {
   // ---- apply --------------------------------------------------------------
   const decided = readDecided();
   const decidedBefore = JSON.stringify(decided);
-  const { touchedFiles, yearMoves, preimages, applied, skipped, rejected } = applyEntries(
+  const { touchedFiles, yearMoves, preimages, applied, skipped, rejected, cleared } = applyEntries(
     merged,
     locate,
     decided
@@ -210,7 +225,7 @@ function main() {
   if (dryRun) {
     console.log(
       `[dry run] would apply ${applied}, skip ${skipped} already-current, ` +
-        `record ${rejected} rejection(s)`
+        `record ${rejected} rejection(s), clear ${cleared} stale ledger line(s)`
     );
   } else {
     for (const file of touchedFiles) writeEvents(file, byFile.get(file));
@@ -219,7 +234,8 @@ function main() {
       `Applied ${applied} range(s) across ${touchedFiles.size} shard(s); skipped ${skipped}.`
     );
     console.log(
-      `Recorded ${rejected} rejection(s); ${ledgerName} now holds ${Object.keys(decided).length}.`
+      `Recorded ${rejected} rejection(s), cleared ${cleared}; ` +
+        `${ledgerName} now holds ${Object.keys(decided).length}.`
     );
   }
 
