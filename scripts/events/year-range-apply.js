@@ -13,6 +13,13 @@
  * shared 600 KB JSON array corrupt it: sub-agents write maps, one deterministic pass writes
  * the catalogue.
  *
+ * **`year_end: null` is a rejection, and it is written too** — to `year-range-decided.json`
+ * rather than to the catalogue. Most events are moments and will never carry a window, so
+ * "reviewed and left alone" is the commonest outcome of a sweep and needs somewhere durable to
+ * live; without it `year-range-report.js` cannot tell an event nobody has looked at from one
+ * four agents have each looked at and dismissed. The ledger is committed for the same reason:
+ * a gitignored one is lost on the first fresh checkout and the sweep restarts from zero.
+ *
  * Everything is validated before anything is written. A single bad entry aborts the whole run,
  * so a half-applied batch is not a state you can reach.
  *
@@ -37,7 +44,14 @@
 const fs = require('fs');
 const path = require('path');
 const { manifestFiles, readEvents, writeEvents } = require('./detail-catalogue');
-const { entryProblems, rangeOf } = require('./year-range');
+const {
+  entryProblems,
+  isRejection,
+  rangeOf,
+  readDecided,
+  writeDecided,
+  DECIDED_PATH,
+} = require('./year-range');
 
 const MAPS_DIR = path.join(__dirname, '..', '..', 'untracked_data', 'event-ranges');
 
@@ -78,6 +92,61 @@ function loadMaps(argv) {
   return { merged, files };
 }
 
+/**
+ * Mutates the indexed catalogue and the decided ledger in one pass, and reports what it did.
+ * Split out of `main` because the one thing this file must never do is become hard to read:
+ * everything here has already been validated, so a surprise in this loop is a silent wrong
+ * answer rather than an abort.
+ */
+function applyEntries(merged, locate, decided) {
+  const touchedFiles = new Set();
+  const yearMoves = [];
+  const preimages = new Map();
+  let applied = 0;
+  let skipped = 0;
+  let rejected = 0;
+
+  for (const [slug, entry] of Object.entries(merged)) {
+    const { file, event } = locate.get(slug);
+    const before = { ...event };
+    const rejection = isRejection(entry);
+    const targetYear = Object.prototype.hasOwnProperty.call(entry, 'year')
+      ? entry.year
+      : event.year;
+
+    // A rejection touches no catalogue field. Its whole record is the ledger line, which is why
+    // the `note` is mandatory — see the header of `year-range.js`.
+    if (rejection) {
+      decided[slug] = entry.note;
+      rejected += 1;
+    }
+
+    const movesYear = targetYear !== event.year;
+    const movesEnd = !rejection && event.year_end !== entry.year_end;
+    if (!movesYear && !movesEnd) {
+      if (!rejection) skipped += 1;
+      continue;
+    }
+    preimages.set(slug, before);
+
+    if (movesYear) {
+      yearMoves.push({ slug, from: event.year, to: targetYear, reason: entry.reason });
+      // Mutated in place, so JSON.stringify keeps the original key order.
+      event.year = targetYear;
+    }
+    if (movesEnd) {
+      // Appends `year_end` last, after `has_detail` — same as every other apply script. Placing
+      // it beside `year` would mean rebuilding all 5,460 records and burying the real change.
+      event.year_end = entry.year_end;
+    }
+
+    touchedFiles.add(file);
+    applied += 1;
+  }
+
+  return { touchedFiles, yearMoves, preimages, applied, skipped, rejected };
+}
+
 function main() {
   const argv = process.argv.slice(2);
   const dryRun = argv.includes('--dry-run');
@@ -113,37 +182,13 @@ function main() {
   }
 
   // ---- apply --------------------------------------------------------------
-  const touchedFiles = new Set();
-  const yearMoves = [];
-  const preimages = new Map();
-  let applied = 0;
-  let skipped = 0;
-
-  for (const [slug, entry] of Object.entries(merged)) {
-    const { file, event } = locate.get(slug);
-    const before = { ...event };
-    const targetYear = Object.prototype.hasOwnProperty.call(entry, 'year')
-      ? entry.year
-      : event.year;
-
-    if (event.year_end === entry.year_end && event.year === targetYear) {
-      skipped += 1;
-      continue;
-    }
-    preimages.set(slug, before);
-
-    if (targetYear !== event.year) {
-      yearMoves.push({ slug, from: event.year, to: targetYear, reason: entry.reason });
-      // Mutated in place, so JSON.stringify keeps the original key order.
-      event.year = targetYear;
-    }
-    // Appends `year_end` last, after `has_detail` — same as every other apply script. Placing
-    // it beside `year` would mean rebuilding all 5,460 records and burying the real change.
-    event.year_end = entry.year_end;
-
-    touchedFiles.add(file);
-    applied += 1;
-  }
+  const decided = readDecided();
+  const decidedBefore = JSON.stringify(decided);
+  const { touchedFiles, yearMoves, preimages, applied, skipped, rejected } = applyEntries(
+    merged,
+    locate,
+    decided
+  );
 
   // ---- prove nothing else moved -------------------------------------------
   const drift = [];
@@ -159,12 +204,22 @@ function main() {
   }
   if (drift.length) die('unexpected field drift; nothing written', drift);
 
+  const decidedChanged = JSON.stringify(decided) !== decidedBefore;
+  const ledgerName = path.relative(process.cwd(), DECIDED_PATH);
+
   if (dryRun) {
-    console.log(`[dry run] would apply ${applied}, skip ${skipped} already-current`);
+    console.log(
+      `[dry run] would apply ${applied}, skip ${skipped} already-current, ` +
+        `record ${rejected} rejection(s)`
+    );
   } else {
     for (const file of touchedFiles) writeEvents(file, byFile.get(file));
+    if (decidedChanged) writeDecided(decided);
     console.log(
       `Applied ${applied} range(s) across ${touchedFiles.size} shard(s); skipped ${skipped}.`
+    );
+    console.log(
+      `Recorded ${rejected} rejection(s); ${ledgerName} now holds ${Object.keys(decided).length}.`
     );
   }
 
