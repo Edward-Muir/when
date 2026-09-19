@@ -75,11 +75,38 @@ const DailyReminderMenuItem: React.FC<{ itemClass: string; iconClass: string }> 
   );
 };
 
+// Backdrop swipe-to-close: travel, and how far horizontal must beat vertical.
+const SWIPE_CLOSE_PX = 56;
+const SWIPE_CLOSE_RATIO = 1.5;
+
 const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
   const { canInstall, canShowInstallButton, installScenario, promptInstall } = usePWAInstall();
   const { isDark, toggleTheme } = useTheme();
   const [showInstallModal, setShowInstallModal] = React.useState(false);
   const [showRulesModal, setShowRulesModal] = React.useState(false);
+
+  // Swipe right over the dimmed page to close, the same gesture the drawer itself takes. Nothing
+  // follows the finger out here, so it fires at a shorter travel than the drawer's 100px drag, and
+  // only when horizontal clearly beats vertical. No preventDefault: the tap-to-close click below
+  // is still the common way out.
+  const swipeRef = React.useRef<{ x: number; y: number; fired: boolean } | null>(null);
+  const onBackdropTouchStart = (e: React.TouchEvent) => {
+    const touch = e.touches[0];
+    swipeRef.current = touch ? { x: touch.clientX, y: touch.clientY, fired: false } : null;
+  };
+  const onBackdropTouchMove = (e: React.TouchEvent) => {
+    const swipe = swipeRef.current;
+    const touch = e.touches[0];
+    if (!swipe || !touch || swipe.fired) return;
+    const dx = touch.clientX - swipe.x;
+    const dy = touch.clientY - swipe.y;
+    if (dx < SWIPE_CLOSE_PX || Math.abs(dx) < Math.abs(dy) * SWIPE_CLOSE_RATIO) return;
+    swipe.fired = true;
+    onClose();
+  };
+  const onBackdropTouchEnd = () => {
+    swipeRef.current = null;
+  };
 
   // Show the App Store link only to iOS users on the web — not inside the
   // native Capacitor app (redundant) and not on Android/desktop (iOS-only app).
@@ -128,11 +155,16 @@ const Menu: React.FC<MenuProps> = ({ isOpen, onClose, onShowToast }) => {
           <>
             {/* Backdrop */}
             <motion.div
+              data-testid="menu-backdrop"
               className="fixed inset-0 bg-black/25 dark:bg-black/50 z-[55]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={onClose}
+              onTouchStart={onBackdropTouchStart}
+              onTouchMove={onBackdropTouchMove}
+              onTouchEnd={onBackdropTouchEnd}
+              onTouchCancel={onBackdropTouchEnd}
             />
 
             {/* Drawer */}

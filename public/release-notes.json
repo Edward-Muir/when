@@ -1,7 +1,8 @@
 {
   "documentedFrom": "1.24.0",
   "unreleased": [
-    "Swiping left on the Timeline tab now opens the menu drawer."
+    "Swiping left on the Timeline tab now opens the menu drawer.",
+    "The menu drawer now closes with a right swipe anywhere on the screen."
   ],
   "releases": [
     {

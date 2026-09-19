@@ -100,6 +100,14 @@ replaced two competing navigation models (a two-page pager plus TopBar buttons t
   than lifting menu state into every screen that renders a top bar. `ModePager` fires the light
   haptic itself, because a scroll-snap track gives the gesture no drag-follow to feel.
 
+  The track carries **`overscroll-x-none`, not `-contain`**: `contain` only stops the overscroll
+  chaining to the page, leaving the track its own rubber-band, which slid the whole page sideways
+  while the drawer came in. Going the other way, a **right swipe over the dimmed page closes the
+  drawer** (`Menu.tsx`, handlers on the backdrop, which already owns tap-to-close). It fires at the
+  same 56px as the open gesture rather than the drawer's own 100px framer drag, because nothing
+  follows the finger out there. Note the browser's back-navigation edge swipe lives in the same
+  direction near the left edge; that is the browser's gesture, not ours to take.
+
 - Custom's active nav colour is `accent-secondary` (teal) to match that screen; every other
   tab, Archive included, is `accent` (gold).
 - The indicator shows only the active tab's label, with all labels stacked in one grid cell

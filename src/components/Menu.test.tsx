@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
 import Menu from './Menu';
@@ -94,5 +94,22 @@ describe('Menu', () => {
   it('carries no "new" dots', () => {
     renderMenu();
     expect(screen.queryByRole('img', { name: 'New' })).not.toBeInTheDocument();
+  });
+
+  it('closes on a right swipe across the dimmed page', () => {
+    const { onClose } = renderMenu();
+    const backdrop = screen.getByTestId('menu-backdrop');
+
+    fireEvent.touchStart(backdrop, { touches: [{ clientX: 60, clientY: 400 }] });
+    fireEvent.touchMove(backdrop, { touches: [{ clientX: 160, clientY: 410 }] });
+
+    expect(onClose).toHaveBeenCalledTimes(1);
+  });
+
+  it('still closes on a tap, so the swipe handlers have not eaten the click', async () => {
+    const { onClose } = renderMenu();
+    await userEvent.click(screen.getByTestId('menu-backdrop'));
+
+    expect(onClose).toHaveBeenCalled();
   });
 });

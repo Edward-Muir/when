@@ -157,7 +157,10 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
 
   return (
     <div className="flex flex-col flex-1 min-h-0">
-      {/* Swipeable track */}
+      {/* Swipeable track. `overscroll-x-none` rather than `-contain`: at either end the drag has
+          nowhere to scroll, and `contain` still leaves the track its own rubber-band, which slid
+          the whole page sideways while the drawer came in. The x axis only — the pages inside
+          scroll vertically. */}
       <div
         ref={trackRef}
         data-testid="mode-pager-track"
@@ -166,7 +169,7 @@ const ModePager = React.forwardRef<ModePagerHandle, ModePagerProps>(function Mod
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
         onTouchCancel={handleTouchEnd}
-        className="flex flex-1 min-h-0 overflow-x-auto overflow-y-hidden snap-x snap-mandatory hide-scrollbar"
+        className="flex flex-1 min-h-0 overflow-x-auto overflow-y-hidden overscroll-x-none snap-x snap-mandatory hide-scrollbar"
         style={{ scrollBehavior: 'smooth' }}
       >
         {pages.map((page, i) => (
