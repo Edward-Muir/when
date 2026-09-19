@@ -464,7 +464,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenicia",
     "color": "#29201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -597
   },
   {
     "name": "coins-invented",
@@ -1949,7 +1950,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook",
     "color": "#3a2b21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1771
   },
   {
     "name": "cook-australia",
@@ -2205,7 +2207,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
     "color": "#2a1e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1804
   },
   {
     "name": "volta-battery",
@@ -7353,7 +7356,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1900
   },
   {
     "name": "public-sewage-sanitation",
@@ -7367,7 +7371,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1900
   },
   {
     "name": "public-bath",
@@ -7535,7 +7540,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1200
   },
   {
     "name": "rubber-mesoamerican-ballgame",
@@ -7675,7 +7681,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "systematization-of-medicine",
@@ -8543,7 +8550,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1494
   },
   {
     "name": "worm-gear-cotton-gin",
@@ -11365,7 +11373,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 645
   },
   {
     "name": "maya-astronomical-calendar",
@@ -11413,7 +11422,7 @@
   {
     "name": "moldboard-plow-adoption",
     "friendly_name": "Moldboard Plow Adopted",
-    "year": 700,
+    "year": 750,
     "category": "agriculture",
     "description": "The moldboard plow turned heavy northern European soils more effectively, boosting agricultural productivity.",
     "difficulty": "hard",
@@ -11422,7 +11431,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 830
   },
   {
     "name": "manuscript-culture-monks",
@@ -11483,7 +11493,7 @@
   {
     "name": "abbassid-science-translation",
     "friendly_name": "Abbasid Translation Movement",
-    "year": 800,
+    "year": 750,
     "category": "writing",
     "description": "The Abbasid House of Wisdom in Baghdad translated Greek, Persian, and Indian scientific texts into Arabic.",
     "difficulty": "medium",
@@ -11492,7 +11502,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 950
   },
   {
     "name": "horse-plough-agriculture",
@@ -11827,7 +11838,7 @@
   {
     "name": "crossbow-tension-mechanism",
     "friendly_name": "Crossbow Tension Mechanism",
-    "year": -400,
+    "year": -475,
     "category": "craft",
     "description": "Chinese engineers developed bronze crossbow trigger mechanisms during the Warring States period for military use.",
     "difficulty": "medium",
@@ -11836,7 +11847,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -221
   },
   {
     "name": "horse-collar-adoption",
@@ -11883,7 +11895,7 @@
   {
     "name": "khwarezm-al-biruni",
     "friendly_name": "Al-Biruni Studies in Khwarezm",
-    "year": 1000,
+    "year": 973,
     "category": "architecture",
     "description": "Polymath al-Biruni studied astronomy, mathematics, and geography in Khwarezm before traveling to India.",
     "difficulty": "hard",
@@ -11892,7 +11904,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 998
   },
   {
     "name": "cahokia-woodhenge",
@@ -13364,7 +13377,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1611
   },
   {
     "name": "telescope-invention",
@@ -13885,7 +13899,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1769
   },
   {
     "name": "arkwright-water-frame",
