@@ -260,6 +260,119 @@ inconsistency is preserved rather than half-fixed. Fixing it properly means audi
 pre-Holocene card, and the payoff is small above ~20,000 years ago. Worth doing for the
 Holocene-adjacent ones if anyone touches that era again.
 
+## Raised by the catalogue-wide sweep (2026-09-19)
+
+The 2026-09-18 pass worked the shards a heuristic flagged. This one reviewed **every one of the
+5,205 un-ranged events**: 644 now carry a window, 4,807 are recorded in
+`scripts/events/year-range-decided.json` as moments with a reason each, and 9 are genuinely
+unresolved (below). What the readers found that a window cannot fix is recorded here.
+
+### Nine cards left unresolved, deliberately
+
+Each had a year move proposed and rejected. None is a "moment" verdict, so none is in the
+decided ledger and the report script still counts them.
+
+- `lapita-pottery-trade`, `poverty-point-earthworks` — both stored years are on the "checked and
+  judged defensible as stored" list above. A writer re-proposing one is a false positive.
+- `bantu-expansion-africa`, `bantu-expansion`, `silk-road-trade` — each was proposed at the start
+  of the whole phenomenon, but the cards' own descriptions say "carrying iron-working",
+  "completed centuries of migration" and "Flourishes". The card's claim is not the founding.
+- `gupta-golden-age`, `nok-civilization-nigeria`, `tiwanaku-monumental-center`,
+  `swahili-stone-architecture` — each reviewed twice against sources that put the window's start
+  more than fifty years apart (Nok by 600 years). Where two sourced readings disagree that far
+  the record is not settled enough to move an anchor that moves daily decks.
+
+### Records the sources do not support
+
+- `female-ruler-sargon` ("Enmersi of Kish", -2295) claims to be recorded on the Sumerian King
+  List. No ruler of that name or any close variant appears on it. Needs a factual review.
+- `rozwi-stone-fortifications`: the Rozwi are documented as having rarely built in stone and as
+  having occupied existing ruins, which contradicts the card's premise.
+- `damascus-steel-pattern` says pattern welding was "developed in Persia". Pattern welding is
+  attested in Europe by c. 1100 BCE; wootz originated in India and Sri Lanka and reached Persia
+  by trade. Neither tradition is Persian in origin.
+- `kowoj-maya-settlement` stored at 1000, but the Kowoj appear as a distinct group only after the
+  Mayapan collapse (post-1441).
+- `moldboard-plow-improvements` (1400) sits in a documented gap: general adoption was 8th-9th
+  century, the major design improvements 18th.
+- `enclosure-movement` stored 1500 matches no sourced phase of English enclosure.
+- `petra-treasury-carved` stored -100; sources place Al-Khazneh in the late 1st c. BCE to
+  early-mid 1st c. CE, commonly tied to Aretas IV.
+- `legalist-philosophy-qi`: Legalism is attested in Qin, not Qi.
+- `dahomey-rise-power` (1718): the description credits Agaja's predecessors, who reigned entirely
+  before the stored year.
+- `sikh-movement-begins` (1499) describes Guru Nanak's birth; his birth is 1469, and 1499 is the
+  start of his mission.
+- `kabuki-women-actors` conflates the 1629 ban on women with the 1652 ban on wakashu actors.
+
+### Title and description disagree about scope
+
+`global-financial-crisis` (titled for the crisis, described as the Lehman collapse),
+`cambodian-genocide` ("Khmer Rouge Takes Power" against a genocide description),
+`polish-soviet-war` (titled for the war, described as the Battle of Warsaw),
+`inca-tupac-amaru` (slugged for Tupac Amaru, describing Pachacuti's Titicaca conquest),
+`second-french-empire` and `directory-period` (period titles, founding descriptions).
+
+### Duplicate and near-duplicate clusters
+
+`timbuktu-university-development` / `timbuktu-university` / `songhai-university-timbuktu` ·
+`maya-classical-period` / `mayan-classic-period` / `maya-cities-peak` ·
+`heian-aesthetic-culture` / `heian-period-cultural-peak` / `heian-women-literature` ·
+`bantu-expansion` / `bantu-expansion-africa` / `iron-smelting-bantu-expansion` ·
+`kilwa-khilafa-sultanate` / `kilwa-sultanate` / `kilwa-gold-monopoly` ·
+`polynesian-navigation-technology` / `polynesian-double-canoe-design` / `polynesian-star-compass` ·
+`colosseum-architecture-ancient` / `vespasian-colosseum-begun` ·
+`dome-construction-mastery` / `florence-cathedral-dome` / `brunelleschi-dome` ·
+`gothic-cathedral-construction` / `chartres-cathedral-construction` ·
+`nan-madol-city-construction` / `nan-madol-basalt-engineering` ·
+`three-field-rotation` / `crop-rotation-system` · `water-mill` / `water-mill-europe` ·
+`nalanda-university` / `nalanda-university-science` ·
+`mayan-astronomical-calculations` / `mayan-astronomy` · `heavy-plow` / `heavy-plow-adoption` ·
+`terrace-farming-andes` / `inca-terrace-agriculture` ·
+`enclosure-movement` / `enclosure-movement-begins` · `kushana-empire` / `kushan-empire` ·
+`wari-empire-expansion` / `wari-empire` · `samarkand-library-school` / `samarkand-cultural-center` ·
+`benin-edo-kingdom` / `benin-bronze-casting-peak` · `majapahit-administrative-system` /
+`majapahit-expansion` · `kalidasa-drama` / `kalidasa-shakuntala` ·
+`cahokia-moundbuilder` / `mississippian-cahokia-settlement`.
+
+### Categories that look wrong
+
+`blood-bank-established` under `commerce`; `first-european-paper-mill` under `agriculture`;
+`eurotunnel-boring` under `media` beside two `architecture` siblings; `wilhelm-gustloff` and
+`munich-massacre` under `revolution`.
+
+### A schema limit, not an error
+
+A span inside one calendar year cannot be written, because `year_end` is an integer year and
+must exceed `year`. So the 1974 Bengal famine (Mar-Dec), the 1518 dancing plague (Jul-Sep), the
+1931 China floods (Jun-Oct), the 2003 European heat wave, Deepwater Horizon, Fukushima, the
+siege of Masada, the 1886 world chess championship and the 1871 Paris Commune all stay points
+correctly. Worth knowing before someone "fixes" them.
+
+### Rejected for want of a source, not on the merits
+
+The session's WebSearch budget is a single pool shared by every agent in it, and this sweep
+drained it partway through the cultural shard. Until the writers switched to WebFetch, a run of
+genuinely period-shaped cards was rejected because nothing could be checked. These are not
+moment verdicts and deserve a re-run: `king-david-rules`, `trojan-war`,
+`kingdom-kush-flourishes`, `chola-dynasty-expansion`, `timbuktu-learning-center`,
+`peter-great-modernizes`, `akhenaten-religious-revolution`, `picasso-blue-period`,
+`abstract-expressionism`, `moche-civilization`, `chavin-culture`, `fremont-culture`,
+`nazca-pottery`, `goguryeo-tomb-murals`, `tang-poetry-golden-age`, `umayyad-mosaic-art`,
+`islamic-calligraphy`, `adena-culture`, `kushana-buddhism`, `zagwe-rock-churches`,
+`haida-totem-poles`, `bharatanatyam-tradition`, `mycenaean-warrior-art`, `igbo-ukwu-bronzes`,
+`yoruba-ife-kingdom`, `mississippian-culture`, `champa-hindu-culture`, `mixtec-codices`,
+`goryeo-celadon-pottery`, `bukhara-samanid-scholars`, `troubadour-tradition`,
+`baroque-period-peak`, `tokugawa-edo-period-culture`, `ukiyo-e-art-development`,
+`safavid-textile-arts`, `safavid-miniature-painting`, `kathak-classical-dance`,
+`kuba-royal-masks`.
+
+Writers with budget also flagged these as plausible but unbounded on one pass:
+`gin-craze-london`, `vietnamese-nam-vu`, `oyo-empire-expansion`, `kilwa-sultanate`,
+`mali-decline`, `genoese-trade-network`, `pax-mongolica-trade`, `mutapa-empire`,
+`petra-nabataean-trade`, `kuba-kingdom`, `dutch-naval-dominance`, `hoysala-dynasty`,
+`goryeo-dynasty`, `novgorod-republic`.
+
 ## Player-visible `description` and `friendly_name` errors
 
 Not year problems. Every one of these is text a player reads **before** placing the card, so an
