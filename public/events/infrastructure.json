@@ -2866,7 +2866,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "museum-alexandria-founded",
@@ -2992,7 +2993,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1155
   },
   {
     "name": "teotihuacan-pyramid-founded",
@@ -3081,7 +3083,7 @@
   {
     "name": "nabataean-petra-city",
     "friendly_name": "Petra Built as Nabataean Capital",
-    "year": -100,
+    "year": -300,
     "category": "architecture",
     "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
     "difficulty": "medium",
@@ -3090,12 +3092,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 106
   },
   {
     "name": "bactria-silk-road",
     "friendly_name": "Bactria Kingdom Major Silk Road Hub",
-    "year": -150,
+    "year": -250,
     "category": "trade",
     "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
     "difficulty": "hard",
@@ -3104,7 +3107,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -130
   },
   {
     "name": "aqueduct-pont-garros",
@@ -3132,7 +3136,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 128
   },
   {
     "name": "pantheon-rome-built",
@@ -3151,7 +3156,7 @@
   {
     "name": "moche-mound-construction",
     "friendly_name": "Moche Mound Platform Completed",
-    "year": 200,
+    "year": 100,
     "category": "architecture",
     "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
     "difficulty": "hard",
@@ -3160,7 +3165,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "roman-roads-network",
@@ -3179,7 +3185,7 @@
   {
     "name": "hopewell-culture",
     "friendly_name": "Hopewell Culture Trade Networks",
-    "year": 200,
+    "year": -200,
     "category": "trade",
     "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
     "difficulty": "very-hard",
@@ -3188,7 +3194,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "damascus-steel-pattern",
@@ -3258,7 +3265,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 200
   },
   {
     "name": "beacon-fire-chains",
@@ -3356,7 +3364,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 565
   },
   {
     "name": "hanging-gardens-babylon",
@@ -3384,7 +3393,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ellora-caves_uazoqn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1000
   },
   {
     "name": "first-sewer-system",
@@ -3412,7 +3422,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "anglo-saxon-stone-churches",
@@ -3426,7 +3437,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 682
   },
   {
     "name": "palenque-city",
@@ -3524,7 +3536,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 999
   },
   {
     "name": "ghana-gold-trade",
@@ -3538,7 +3551,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "mound-builders",
@@ -3566,7 +3580,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 825
   },
   {
     "name": "jenne-city-foundation",
@@ -3594,7 +3609,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 856
   },
   {
     "name": "chichen-itza-peak",
@@ -3608,7 +3624,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "toltec-teotihuacan-influence",
@@ -3622,7 +3639,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1150
   },
   {
     "name": "pueblo-bonito",
@@ -3636,7 +3654,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1130
   },
   {
     "name": "canal-system",
@@ -3664,7 +3683,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "lapis-lazuli-trade",
@@ -3762,7 +3782,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1100
   },
   {
     "name": "kowoj-maya-settlement",
@@ -3832,7 +3853,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "romanesque-architecture-style",
@@ -3860,7 +3882,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1350
   },
   {
     "name": "shwesandaw-pagoda",
@@ -3958,7 +3981,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1150
   },
   {
     "name": "cahokia-moundbuilder",
@@ -3986,7 +4010,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1450
   },
   {
     "name": "gothic-architecture-emergence",
@@ -4056,7 +4081,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1280
   },
   {
     "name": "mesa-verde-cliff-dwellings",
@@ -4154,7 +4180,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "khwarezm-development-canal",
