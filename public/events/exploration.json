@@ -1317,7 +1317,7 @@
   {
     "name": "magellan-circumnavigation",
     "friendly_name": "First Circumnavigation of Earth",
-    "year": 1522,
+    "year": 1519,
     "category": "media",
     "description": "Magellan's expedition completed the first voyage around the world.",
     "difficulty": "easy",
@@ -1328,7 +1328,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1522
   },
   {
     "name": "pizarro-meets-incas",
@@ -1413,7 +1414,7 @@
   {
     "name": "drake-circumnavigation",
     "friendly_name": "Drake Circumnavigates Globe",
-    "year": 1580,
+    "year": 1577,
     "category": "migration",
     "description": "Francis Drake completed the second circumnavigation of the world.",
     "difficulty": "medium",
@@ -1424,7 +1425,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Circumnavigation",
     "color": "#403f3b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1580
   },
   {
     "name": "knitting-machine",
@@ -1459,7 +1461,7 @@
   {
     "name": "barents-arctic",
     "friendly_name": "Barents Explores Arctic",
-    "year": 1596,
+    "year": 1594,
     "category": "migration",
     "description": "Willem Barents explored the Arctic Ocean seeking a northeast passage.",
     "difficulty": "very-hard",
@@ -1470,7 +1472,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Arctic_expeditions",
     "color": "#202221",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1597
   },
   {
     "name": "dutch-reach-australia",
@@ -1713,7 +1716,7 @@
   {
     "name": "dampier-circumnavigation",
     "friendly_name": "Dampier Circumnavigates",
-    "year": 1691,
+    "year": 1679,
     "category": "migration",
     "description": "William Dampier became the first person to circumnavigate the world three times.",
     "difficulty": "very-hard",
@@ -1724,7 +1727,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier",
     "color": "#251f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1711
   },
   {
     "name": "dampier-new-britain",
@@ -7799,7 +7803,7 @@
   {
     "name": "concept-of-zero",
     "friendly_name": "Concept of Zero",
-    "year": -400,
+    "year": -500,
     "category": "media",
     "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
     "difficulty": "medium",
@@ -7808,7 +7812,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "traction-trebuchet",
@@ -12139,7 +12144,7 @@
   {
     "name": "paper-technology-spreads",
     "friendly_name": "Paper Technology Spreads to Europe",
-    "year": 1150,
+    "year": 1056,
     "category": "writing",
     "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
     "difficulty": "medium",
@@ -12148,7 +12153,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1340
   },
   {
     "name": "first-greenhouse",
@@ -12816,7 +12822,7 @@
   {
     "name": "joseon-scientific-innovation",
     "friendly_name": "Joseon Scientific Advances",
-    "year": 1442,
+    "year": 1433,
     "category": "writing",
     "description": "The Joseon Dynasty under King Sejong produced rain gauges, sundials, and celestial globes advancing Korean science.",
     "difficulty": "very-hard",
@@ -12825,7 +12831,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1442
   },
   {
     "name": "eyeglass-improvements",
@@ -12858,7 +12865,7 @@
   {
     "name": "printing-press-diffusion",
     "friendly_name": "Printing Press Spreads",
-    "year": 1470,
+    "year": 1450,
     "category": "writing",
     "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
     "difficulty": "easy",
@@ -12867,7 +12874,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "inca-terrace-agriculture",
@@ -12900,7 +12908,7 @@
   {
     "name": "polynesian-settlement-expansion",
     "friendly_name": "Last Pacific Islands Settled",
-    "year": 1250,
+    "year": 1200,
     "category": "migration",
     "description": "One rapid push settled the last unpeopled islands on earth, reaching Aotearoa, Hawaii, and Rapa Nui within a century.",
     "difficulty": "hard",
@@ -12909,7 +12917,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "melanesian-settlement",
@@ -12956,7 +12965,7 @@
   {
     "name": "coffee-cultivation-expansion",
     "friendly_name": "Ottoman Coffee Cultivation",
-    "year": 1500,
+    "year": 1454,
     "category": "agriculture",
     "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
     "difficulty": "medium",
@@ -12965,7 +12974,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1554
   },
   {
     "name": "enclosure-movement-begins",

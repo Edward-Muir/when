@@ -5186,7 +5186,7 @@
   {
     "name": "alexander-spreading-hellenism",
     "friendly_name": "Alexander Spreads Hellenism",
-    "year": -330,
+    "year": -336,
     "category": "empires",
     "description": "Alexander's conquests spread Greek language, culture, and philosophy across the Near East and Central Asia.",
     "difficulty": "easy",
@@ -5195,7 +5195,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -323
   },
   {
     "name": "aksumite-christianity",
@@ -5298,7 +5299,7 @@
   {
     "name": "moche-civilization",
     "friendly_name": "Moche Civilization Peak",
-    "year": 400,
+    "year": 300,
     "category": "architecture",
     "description": "The Moche civilization reached its zenith in coastal Peru with monumental pyramids and fine metalwork.",
     "difficulty": "hard",
@@ -5307,7 +5308,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 600
   },
   {
     "name": "gupta-golden-age",
@@ -5496,7 +5498,7 @@
   {
     "name": "aristophanes-comedy",
     "friendly_name": "Aristophanes Pioneers Greek Comedy",
-    "year": -425,
+    "year": -427,
     "category": "writing",
     "description": "Aristophanes dominated Athenian comedy with satirical plays mocking politics, philosophy, and society.",
     "difficulty": "medium",
@@ -5505,7 +5507,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -386
   },
   {
     "name": "bhartrihari-poetry",
@@ -5524,7 +5527,7 @@
   {
     "name": "nasca-settlement-cahuachi",
     "friendly_name": "Cahuachi Ceremonial Center",
-    "year": 200,
+    "year": 1,
     "category": "architecture",
     "description": "Cahuachi served as the major ceremonial center of the Nazca civilization in southern Peru.",
     "difficulty": "very-hard",
@@ -5533,7 +5536,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "aeschylus-tragedy-origins",
@@ -5653,7 +5657,7 @@
   {
     "name": "greek-vase-painting-golden-age",
     "friendly_name": "Greek Vase Painting Golden Age",
-    "year": -530,
+    "year": -620,
     "category": "art",
     "description": "Greek potters perfected black-figure and red-figure vase painting in Athens and Corinth.",
     "difficulty": "medium",
@@ -5662,12 +5666,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -400
   },
   {
     "name": "dunhuang-mogao-caves",
     "friendly_name": "Mogao Caves Expanded",
-    "year": 550,
+    "year": 366,
     "category": "architecture",
     "description": "Buddhist monks expanded the Mogao Caves at Dunhuang with hundreds of painted grottoes along the Silk Road.",
     "difficulty": "hard",
@@ -5676,7 +5681,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1368
   },
   {
     "name": "columba-scotland-monasticism",
@@ -8064,7 +8070,7 @@
   {
     "name": "benin-art-renaissance",
     "friendly_name": "Benin Kingdom Art Renaissance",
-    "year": 1500,
+    "year": 1504,
     "category": "art",
     "description": "The Benin Kingdom produced masterful bronze and ivory sculptures celebrating royal power and spiritual life.",
     "difficulty": "hard",
@@ -8073,7 +8079,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1550
   },
   {
     "name": "joseon-hahoetal-masks",
@@ -8121,7 +8128,7 @@
   {
     "name": "michelangelo-sistine-chapel",
     "friendly_name": "Michelangelo's Sistine Ceiling",
-    "year": 1512,
+    "year": 1508,
     "category": "art",
     "description": "Michelangelo completed the Sistine Chapel ceiling in Rome, featuring the iconic Creation of Adam.",
     "difficulty": "easy",
@@ -8130,7 +8137,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1512
   },
   {
     "name": "printing-reformation-pamphlets",
@@ -8485,7 +8493,7 @@
   {
     "name": "christopher-marlowe",
     "friendly_name": "Marlowe's Major Dramas",
-    "year": 1588,
+    "year": 1587,
     "category": "writing",
     "description": "Marlowe wrote Tamburlaine and Doctor Faustus, pioneering English blank verse tragedy before Shakespeare.",
     "difficulty": "medium",
@@ -8494,7 +8502,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1593
   },
   {
     "name": "spenser-faerie-queene",
@@ -8555,7 +8564,7 @@
   {
     "name": "minoan-frescoes",
     "friendly_name": "Minoan Frescoes and Palace Art",
-    "year": -1600,
+    "year": -1700,
     "category": "art",
     "description": "Minoan artists on Crete created vibrant palace frescoes depicting dolphins, bull-leaping, and court life at Knossos.",
     "difficulty": "medium",
@@ -8564,7 +8573,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1450
   },
   {
     "name": "kabuki-theater-begins",
@@ -9103,7 +9113,7 @@
   {
     "name": "french-enlightenment-peak",
     "friendly_name": "French Enlightenment Flourishes",
-    "year": 1730,
+    "year": 1715,
     "category": "writing",
     "description": "French philosophes led by Voltaire and Montesquieu championed reason, tolerance, and reform across Europe.",
     "difficulty": "medium",
@@ -9112,7 +9122,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1789
   },
   {
     "name": "voltaire-major-works",

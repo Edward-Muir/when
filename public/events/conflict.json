@@ -178,7 +178,7 @@
   {
     "name": "siege-syracuse",
     "friendly_name": "Siege of Syracuse",
-    "year": -212,
+    "year": -213,
     "category": "warfare",
     "description": "Rome besieged Syracuse where Archimedes' war machines defended the city.",
     "difficulty": "hard",
@@ -189,7 +189,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Syracuse_(213–212_BC)",
     "color": "#2d251a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -212
   },
   {
     "name": "battle-zama",
@@ -437,7 +438,7 @@
   {
     "name": "arab-conquest-persia",
     "friendly_name": "Arab Conquest of Persia",
-    "year": 651,
+    "year": 633,
     "category": "empires",
     "description": "Muslim forces conquered the Sasanian Empire, ending 400 years of Persian rule.",
     "difficulty": "medium",
@@ -448,7 +449,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia",
     "color": "#242020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 651
   },
   {
     "name": "battle-tours",
@@ -3090,7 +3092,7 @@
   {
     "name": "iranian-revolution",
     "friendly_name": "Iranian Revolution",
-    "year": 1979,
+    "year": 1978,
     "category": "revolution",
     "description": "Islamic revolutionaries overthrew the Shah and established a theocratic republic.",
     "difficulty": "medium",
@@ -3101,7 +3103,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iranian_Revolution",
     "color": "#333e47",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1979
   },
   {
     "name": "soviet-afghanistan",
@@ -6735,7 +6738,7 @@
   {
     "name": "heraclius-campaigns-persia",
     "friendly_name": "Heraclius Defeats Chosroes II",
-    "year": 627,
+    "year": 624,
     "category": "warfare",
     "description": "Byzantine Emperor Heraclius launched a daring counter-invasion of Persia, winning the decisive Battle of Nineveh.",
     "difficulty": "very-hard",
@@ -6744,7 +6747,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "battle-of-mu-ta",
@@ -7605,7 +7609,7 @@
   {
     "name": "oromo-expansion",
     "friendly_name": "Oromo Expansion in East Africa",
-    "year": 1520,
+    "year": 1522,
     "category": "migration",
     "description": "Oromo pastoralists migrated northward through the Ethiopian highlands, reshaping the region's demographics.",
     "difficulty": "very-hard",
@@ -7614,7 +7618,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "ming-great-wall",
@@ -8256,7 +8261,7 @@
   {
     "name": "qing-xinjiang-conquest",
     "friendly_name": "Qing Conquest of Xinjiang",
-    "year": 1759,
+    "year": 1755,
     "category": "empires",
     "description": "The Qing Dynasty conquered the Dzungar Khanate and incorporated Xinjiang, nearly doubling China's territory.",
     "difficulty": "hard",
@@ -8265,7 +8270,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1759
   },
   {
     "name": "burmese-siamese-wars",

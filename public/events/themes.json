@@ -3820,7 +3820,7 @@
   {
     "name": "manchurian-plague",
     "friendly_name": "Manchurian Plague Epidemic",
-    "year": 1911,
+    "year": 1910,
     "category": "disasters",
     "description": "Pneumonic plague swept Manchuria until Wu Lien-teh's gauze masks and rail cordons broke the chain.",
     "difficulty": "hard",
@@ -3829,7 +3829,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/manchurian-plague_v2ppsy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1911
   },
   {
     "name": "sperry-gyroscopic-autopilot",

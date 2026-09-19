@@ -3477,7 +3477,7 @@
   {
     "name": "sullas-civil-war",
     "friendly_name": "Sulla's Civil War",
-    "year": -82,
+    "year": -83,
     "category": "empires",
     "description": "Sulla marched on Rome and became dictator, setting a precedent for later strongmen.",
     "difficulty": "medium",
@@ -3488,7 +3488,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sulla's_civil_war",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -82
   },
   {
     "name": "second-triumvirate",
@@ -4025,7 +4026,7 @@
   {
     "name": "minoan-civilization-peak",
     "friendly_name": "Minoan Civilization Peak",
-    "year": -2000,
+    "year": -1700,
     "category": "architecture",
     "description": "The Minoan civilization on Crete reached its height, building elaborate palaces like Knossos and dominating Aegean trade.",
     "difficulty": "medium",
@@ -4036,7 +4037,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1450
   },
   {
     "name": "abrahams-journey-traditional",
@@ -4073,7 +4075,7 @@
   {
     "name": "assyrian-empire-expansion",
     "friendly_name": "Assyrian Empire Expansion",
-    "year": -900,
+    "year": -911,
     "category": "empires",
     "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
     "difficulty": "easy",
@@ -4084,7 +4086,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assyria",
     "color": "#2a1e17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -609
   },
   {
     "name": "fall-of-israel-northern-kingdom",
@@ -8629,7 +8632,7 @@
   {
     "name": "bactria-kingdom",
     "friendly_name": "Bactrian Kingdom Flourishes",
-    "year": -200,
+    "year": -230,
     "category": "empires",
     "description": "The Greco-Bactrian Kingdom expanded under Euthydemus I, controlling parts of modern Afghanistan and Central Asia.",
     "difficulty": "hard",
@@ -8638,7 +8641,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200
   },
   {
     "name": "aksumite-coinage",
@@ -8671,7 +8675,7 @@
   {
     "name": "meroitic-kingdom-nubia",
     "friendly_name": "Meroitic Kingdom Rules Nubia",
-    "year": -200,
+    "year": -270,
     "category": "empires",
     "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
     "difficulty": "hard",
@@ -8680,7 +8684,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 350
   },
   {
     "name": "grain-price-controls",
@@ -8769,7 +8774,7 @@
   {
     "name": "gallienus-crisis-empire",
     "friendly_name": "Gallienus Crisis of Third Century",
-    "year": 260,
+    "year": 253,
     "category": "empires",
     "description": "Emperor Gallienus faced the Crisis of the Third Century as the empire fragmented into breakaway states.",
     "difficulty": "hard",
@@ -8778,12 +8783,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 268
   },
   {
     "name": "funan-kingdom",
     "friendly_name": "Funan Kingdom Flourishes",
-    "year": 200,
+    "year": 50,
     "category": "empires",
     "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
     "difficulty": "very-hard",
@@ -8792,12 +8798,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 627
   },
   {
     "name": "lakhmid-kingdom",
     "friendly_name": "Lakhmid Kingdom",
-    "year": 300,
+    "year": 293,
     "category": "empires",
     "description": "The Lakhmid Kingdom served as a Sassanid client state in southern Iraq, buffering Persia from Arabian tribes.",
     "difficulty": "hard",
@@ -8806,7 +8813,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 602
   },
   {
     "name": "first-public-library",
@@ -10102,7 +10110,7 @@
   {
     "name": "goryeo-gwangjong-celadon",
     "friendly_name": "Gwangjong Expands Celadon",
-    "year": 960,
+    "year": 949,
     "category": "art",
     "description": "King Gwangjong of Goryeo promoted celadon pottery production, which became Korea's most celebrated art form.",
     "difficulty": "very-hard",
@@ -10111,12 +10119,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 975
   },
   {
     "name": "karakhanid-dynasty",
     "friendly_name": "Karakhanid Dynasty Rules",
-    "year": 999,
+    "year": 840,
     "category": "empires",
     "description": "The Karakhanid Khanate, the first Turkic dynasty to convert to Islam, controlled Transoxiana and the Tarim Basin.",
     "difficulty": "hard",
@@ -10125,7 +10134,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/karakhanid-dynasty_hugnwt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1212
   },
   {
     "name": "kingdom-israel-established",
@@ -10172,7 +10182,7 @@
   {
     "name": "khorezm-state",
     "friendly_name": "Khorezm Sultanate Flourishes",
-    "year": 1200,
+    "year": 1077,
     "category": "empires",
     "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
     "difficulty": "hard",
@@ -10181,7 +10191,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1231
   },
   {
     "name": "goryeo-dynasty",
@@ -10228,7 +10239,7 @@
   {
     "name": "fujiwara-regency",
     "friendly_name": "Fujiwara Regency at Height of Power",
-    "year": 1000,
+    "year": 995,
     "category": "empires",
     "description": "Fujiwara no Michinaga dominated Japanese court politics, ruling as regent during the peak of Heian culture.",
     "difficulty": "hard",
@@ -10237,12 +10248,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1017
   },
   {
     "name": "ghana-decline",
     "friendly_name": "Ghana Empire Declines",
-    "year": 1076,
+    "year": 1054,
     "category": "empires",
     "description": "The Ghana Empire weakened after Almoravid attacks and internal pressures eroded its control of trans-Saharan gold trade.",
     "difficulty": "hard",
@@ -10251,7 +10263,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1203
   },
   {
     "name": "bantu-expansion",
@@ -10284,7 +10297,7 @@
   {
     "name": "inuit-thule-culture",
     "friendly_name": "Thule Culture Inuit Expansion",
-    "year": 1000,
+    "year": 900,
     "category": "migration",
     "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
     "difficulty": "very-hard",
@@ -10293,7 +10306,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "hoysala-dynasty",
@@ -10382,7 +10396,7 @@
   {
     "name": "population-doubling-medieval",
     "friendly_name": "Medieval Population Doubles",
-    "year": 1200,
+    "year": 1000,
     "category": "agriculture",
     "description": "Europe's population roughly doubled during the High Middle Ages due to agricultural improvements and warmer climate.",
     "difficulty": "hard",
@@ -10391,7 +10405,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "barter-money-transition",
@@ -10452,7 +10467,7 @@
   {
     "name": "pagan-kingdom-flourishes",
     "friendly_name": "Pagan Kingdom Flourishes in Burma",
-    "year": 1050,
+    "year": 1044,
     "category": "empires",
     "description": "King Anawrahta unified Burma under the Pagan Kingdom, adopting Theravada Buddhism and building thousands of temples.",
     "difficulty": "hard",
@@ -10461,12 +10476,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1077
   },
   {
     "name": "song-scholar-official-system",
     "friendly_name": "Song Civil Service Reforms",
-    "year": 1070,
+    "year": 1069,
     "category": "law",
     "description": "Wang Anshi reformed Song China's civil service examinations, expanding meritocratic bureaucratic recruitment.",
     "difficulty": "very-hard",
@@ -10475,7 +10491,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1076
   },
   {
     "name": "domesday-book",
@@ -12530,7 +12547,7 @@
   {
     "name": "bahmani-sultanate",
     "friendly_name": "Bahmani Sultanate Peak",
-    "year": 1450,
+    "year": 1466,
     "category": "empires",
     "description": "The Bahmani Sultanate reached its zenith in the Deccan plateau of India before fragmenting into five states.",
     "difficulty": "hard",
@@ -12539,7 +12556,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1481
   },
   {
     "name": "iroquois-confederacy",
@@ -13243,7 +13261,7 @@
   {
     "name": "mataram-empire",
     "friendly_name": "Mataram Sultanate Rise",
-    "year": 1587,
+    "year": 1586,
     "category": "empires",
     "description": "The Mataram Sultanate rose to dominate most of Java under Senopati's leadership.",
     "difficulty": "hard",
@@ -13252,7 +13270,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1601
   },
   {
     "name": "brunei-sultanate-expansion",
@@ -13287,7 +13306,7 @@
   {
     "name": "toyotomi-hideyoshi-rule",
     "friendly_name": "Toyotomi Hideyoshi's Rule",
-    "year": 1590,
+    "year": 1585,
     "category": "empires",
     "description": "Toyotomi Hideyoshi unified Japan after a century of civil war through military campaigns and diplomacy.",
     "difficulty": "hard",
@@ -13296,7 +13315,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1598
   },
   {
     "name": "mycenaean-civilization",
@@ -13431,7 +13451,7 @@
   {
     "name": "polish-lithuanian-golden-age",
     "friendly_name": "Polish-Lithuanian Golden Age",
-    "year": 1600,
+    "year": 1573,
     "category": "diplomacy",
     "description": "The Polish-Lithuanian Commonwealth entered its golden age as Europe's largest and most tolerant state.",
     "difficulty": "hard",
@@ -14536,7 +14556,7 @@
   {
     "name": "hawaiian-kingdom-unification",
     "friendly_name": "Kamehameha Unifies Hawaii",
-    "year": 1795,
+    "year": 1782,
     "category": "empires",
     "description": "Kamehameha I unified the Hawaiian Islands through military conquest, establishing a centralized Pacific kingdom.",
     "difficulty": "hard",
@@ -14545,7 +14565,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1810
   },
   {
     "name": "kwakwakawakw-potlatch",

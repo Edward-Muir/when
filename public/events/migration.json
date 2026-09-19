@@ -222,7 +222,7 @@
   {
     "name": "phoenician-colonization",
     "friendly_name": "Phoenicians Settle the Sea",
-    "year": -800,
+    "year": -1100,
     "category": "migration",
     "description": "Phoenician traders founded colonies across the Mediterranean, including Carthage in North Africa.",
     "difficulty": "medium",
@@ -231,7 +231,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-colonization_lvasyx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -750
   },
   {
     "name": "bantu-reach-southern-africa",
@@ -250,7 +251,7 @@
   {
     "name": "germanic-migration-period",
     "friendly_name": "Germanic Migration Period",
-    "year": 376,
+    "year": 375,
     "category": "empires",
     "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
     "difficulty": "medium",
@@ -259,7 +260,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/germanic-migration-period_rwkh7b?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 568
   },
   {
     "name": "huns-migrate-into-europe",
@@ -520,7 +522,7 @@
   {
     "name": "indentured-labor-diaspora",
     "friendly_name": "Indian Indentured Diaspora",
-    "year": 1838,
+    "year": 1834,
     "category": "migration",
     "description": "Indian indentured laborers were shipped to colonies worldwide, settling the Caribbean, Fiji, and beyond.",
     "difficulty": "hard",
@@ -529,7 +531,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indentured-labor-diaspora_tsdvtw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1917
   },
   {
     "name": "great-migration-black-americans",

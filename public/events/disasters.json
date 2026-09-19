@@ -2416,7 +2416,7 @@
   {
     "name": "somali-famine",
     "friendly_name": "Somali Famine",
-    "year": 1992,
+    "year": 1991,
     "category": "disasters",
     "description": "Civil war and drought caused a famine killing over 200,000 in Somalia.",
     "difficulty": "hard",
@@ -2427,7 +2427,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Famine_in_Somalia",
     "color": "#202127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1993
   },
   {
     "name": "hurricane-andrew",
@@ -2933,7 +2934,7 @@
   {
     "name": "ebola-outbreak",
     "friendly_name": "West African Ebola Outbreak",
-    "year": 2014,
+    "year": 2013,
     "category": "disasters",
     "description": "The deadliest Ebola outbreak killed over 11,000 people in West Africa.",
     "difficulty": "medium",
@@ -2944,7 +2945,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Western_African_Ebola_epidemic",
     "color": "#1a2b36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2016
   },
   {
     "name": "mh370-disappearance",
