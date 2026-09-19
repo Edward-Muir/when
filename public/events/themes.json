@@ -515,7 +515,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-coinage-empire_rsuftq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -125
   },
   {
     "name": "archimedes-measures-circle",
@@ -1019,7 +1020,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japan-smallpox-epidemic_zkpr9l?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 737
   },
   {
     "name": "lu-yu-classic-of-tea",
@@ -1346,7 +1348,7 @@
   {
     "name": "kaifeng-night-markets",
     "friendly_name": "Kaifeng's Night Markets Glow",
-    "year": 1120,
+    "year": 965,
     "category": "commerce",
     "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
     "difficulty": "very-hard",
@@ -1355,7 +1357,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kaifeng-night-markets_u5fvau?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1127
   },
   {
     "name": "yu-ji-tu-grid-map",
@@ -1598,7 +1601,7 @@
   {
     "name": "mamluk-mosque-lamps",
     "friendly_name": "Enamelled Mosque Lamps",
-    "year": 1330,
+    "year": 1250,
     "category": "craft",
     "description": "Cairo glassmakers gilded and enamelled oil lamps that hung by the dozen in Mamluk mosques, prized far beyond Egypt.",
     "difficulty": "hard",
@@ -1607,7 +1610,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mamluk-mosque-lamps_ntq01h?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1517
   },
   {
     "name": "sandglass-at-sea",
