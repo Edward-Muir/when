@@ -8479,7 +8479,7 @@
   {
     "name": "bantu-expansion-africa",
     "friendly_name": "Bantu Migration Across Africa",
-    "year": 100,
+    "year": -400,
     "category": "migration",
     "description": "Bantu-speaking peoples spread across sub-Saharan Africa, carrying iron-working and farming techniques.",
     "difficulty": "medium",
@@ -8488,7 +8488,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "hopewell-trade-networks",
@@ -10313,7 +10314,7 @@
   {
     "name": "hoysala-dynasty",
     "friendly_name": "Hoysala Temple Architecture",
-    "year": 1120,
+    "year": 1113,
     "category": "architecture",
     "description": "The Hoysala dynasty in southern India produced intricately carved temples at Belur and Halebidu in Karnataka.",
     "difficulty": "very-hard",
@@ -10322,7 +10323,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1268
   },
   {
     "name": "boni-kingdom",
@@ -10882,7 +10884,7 @@
   {
     "name": "novgorod-republic",
     "friendly_name": "Novgorod Republic Golden Age",
-    "year": 1200,
+    "year": 1136,
     "category": "empires",
     "description": "The Novgorod Republic flourished as a major Hanseatic trading partner with a unique democratic veche assembly system.",
     "difficulty": "hard",
@@ -10891,7 +10893,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1478
   },
   {
     "name": "muisca-confederation",
@@ -12197,7 +12200,7 @@
   {
     "name": "mali-decline",
     "friendly_name": "Mali Empire Decline",
-    "year": 1400,
+    "year": 1360,
     "category": "empires",
     "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
     "difficulty": "hard",
@@ -12206,7 +12209,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1599
   },
   {
     "name": "kilwa-sultanate",
@@ -13823,7 +13827,7 @@
   {
     "name": "vietnamese-nam-vu",
     "friendly_name": "Vietnamese March South",
-    "year": 1650,
+    "year": 1611,
     "category": "empires",
     "description": "Vietnamese settlers pushed steadily southward into Cham and Khmer territories, expanding the Nguyen lords' domain toward the Mekong Delta.",
     "difficulty": "very-hard",
@@ -13832,7 +13836,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1755
   },
   {
     "name": "zanzibar-spice-trade",

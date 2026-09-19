@@ -3013,7 +3013,7 @@
   {
     "name": "chola-dynasty-expansion",
     "friendly_name": "Chola Dynasty Naval Expansion",
-    "year": 1000,
+    "year": 985,
     "category": "empires",
     "description": "The Indian Chola Empire built a powerful navy and dominated Southeast Asian trade.",
     "difficulty": "very-hard",
@@ -3024,12 +3024,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chola_Navy",
     "color": "#2e3633",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1070
   },
   {
     "name": "timbuktu-learning-center",
     "friendly_name": "Timbuktu Center of Learning",
-    "year": 1300,
+    "year": 1325,
     "category": "architecture",
     "description": "The Malian city became one of the world's great centers of Islamic scholarship.",
     "difficulty": "medium",
@@ -3040,7 +3041,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mansa_Musa",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1591
   },
   {
     "name": "mansa-musa-pilgrimage",
@@ -3077,7 +3079,7 @@
   {
     "name": "peter-great-modernizes",
     "friendly_name": "Peter the Great Modernizes Russia",
-    "year": 1700,
+    "year": 1697,
     "category": "empires",
     "description": "Tsar Peter I westernized Russia and founded St. Petersburg as its new capital.",
     "difficulty": "easy",
@@ -3088,7 +3090,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Government_reform_of_Peter_the_Great",
     "color": "#281e1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1725
   },
   {
     "name": "british-slave-trade-abolished",
@@ -4906,7 +4909,7 @@
   {
     "name": "kushana-buddhism",
     "friendly_name": "Kushan Empire Spreads Buddhism",
-    "year": 150,
+    "year": 127,
     "category": "empires",
     "description": "Under Kanishka, the Kushan Empire promoted Buddhism and facilitated its spread along the Silk Road.",
     "difficulty": "hard",
@@ -4915,7 +4918,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 150
   },
   {
     "name": "marcus-aurelius-meditations",
@@ -5731,7 +5735,7 @@
   {
     "name": "moche-civilization-peru",
     "friendly_name": "Moche Civilization in Peru",
-    "year": 450,
+    "year": 100,
     "category": "architecture",
     "description": "The Moche built massive adobe pyramids and created elaborate gold and ceramic artworks in coastal Peru.",
     "difficulty": "hard",
@@ -5740,12 +5744,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "fremont-culture",
     "friendly_name": "Fremont Culture of Great Basin",
-    "year": 600,
+    "year": 1,
     "category": "architecture",
     "description": "The Fremont people developed farming and rock art traditions in Utah's Great Basin region.",
     "difficulty": "very-hard",
@@ -5754,7 +5759,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1301
   },
   {
     "name": "byzantine-mosaic-tradition",
@@ -5788,7 +5794,7 @@
   {
     "name": "nazca-pottery-style",
     "friendly_name": "Nazca Polychrome Pottery Flourishes",
-    "year": 400,
+    "year": -100,
     "category": "architecture",
     "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
     "difficulty": "very-hard",
@@ -5797,12 +5803,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 750
   },
   {
     "name": "goguryeo-murals-tombs",
     "friendly_name": "Goguryeo Tomb Murals",
-    "year": 550,
+    "year": 357,
     "category": "art",
     "description": "The Korean Goguryeo kingdom produced elaborate painted tomb murals depicting daily life and mythology.",
     "difficulty": "very-hard",
@@ -5811,7 +5818,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 668
   },
   {
     "name": "spread-of-islam-arabian-peninsula",
@@ -5914,7 +5922,7 @@
   {
     "name": "umayyad-mosaics-art",
     "friendly_name": "Umayyad Mosaic Art and Architecture",
-    "year": 710,
+    "year": 691,
     "category": "art",
     "description": "The Umayyad Caliphate produced magnificent mosaics at the Dome of the Rock and the Great Mosque of Damascus.",
     "difficulty": "hard",
@@ -5923,12 +5931,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 715
   },
   {
     "name": "chavin-culture",
     "friendly_name": "Chavin Culture Peak",
-    "year": -700,
+    "year": -900,
     "category": "architecture",
     "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
     "difficulty": "hard",
@@ -5937,12 +5946,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -250
   },
   {
     "name": "tang-poetry-golden-age",
     "friendly_name": "Tang Dynasty Poetry Golden Age",
-    "year": 720,
+    "year": 713,
     "category": "art",
     "description": "Tang China's golden age of poetry produced masters like Li Bai and Du Fu, still revered today.",
     "difficulty": "medium",
@@ -5951,7 +5961,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 765
   },
   {
     "name": "tang-luoyang-capital",
@@ -6055,7 +6066,7 @@
   {
     "name": "copan-ruler-18-rabbit",
     "friendly_name": "Copan Stelae Under 18 Rabbit",
-    "year": 731,
+    "year": 695,
     "category": "architecture",
     "description": "Maya ruler 18 Rabbit commissioned elaborate stelae at Copan during the city's artistic peak.",
     "difficulty": "hard",
@@ -6064,7 +6075,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 738
   },
   {
     "name": "tang-cosmopolitan-cities",
@@ -6140,7 +6152,7 @@
   {
     "name": "adena-culture",
     "friendly_name": "Adena Culture Eastern North America",
-    "year": -800,
+    "year": -500,
     "category": "architecture",
     "description": "The Adena culture emerged in the Ohio Valley, building earthen mounds and cultivating early crops.",
     "difficulty": "hard",
@@ -6149,7 +6161,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 100
   },
   {
     "name": "mon-buddhism",
@@ -6210,7 +6223,7 @@
   {
     "name": "java-temple-sculpture",
     "friendly_name": "Javanese Temple Sculpture",
-    "year": 800,
+    "year": 780,
     "category": "art",
     "description": "Javanese artisans carved elaborate reliefs at Borobudur and Prambanan, blending Hindu and Buddhist art.",
     "difficulty": "hard",
@@ -6219,7 +6232,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 930
   },
   {
     "name": "la-venta-olmec",
@@ -6308,7 +6322,7 @@
   {
     "name": "yoruba-ife-kingdom",
     "friendly_name": "Yoruba Ife Kingdom Brass Sculpture",
-    "year": 1100,
+    "year": 1200,
     "category": "art",
     "description": "The Ife kingdom in present-day Nigeria produced naturalistic brass and terracotta portrait sculptures of remarkable refinement.",
     "difficulty": "very-hard",
@@ -6317,7 +6331,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1400
   },
   {
     "name": "organum-medieval-polyphony",
@@ -6350,7 +6365,7 @@
   {
     "name": "bukhara-samanid-scholars",
     "friendly_name": "Bukhara Scholarship Peak",
-    "year": 940,
+    "year": 892,
     "category": "empires",
     "description": "Under the Samanid dynasty, Bukhara became a leading center of Persian and Islamic scholarship, nurturing scholars like Ibn Sina.",
     "difficulty": "hard",
@@ -6359,7 +6374,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 999
   },
   {
     "name": "constantine-vii-purple-porphyrogenitus",
@@ -6889,7 +6905,7 @@
   {
     "name": "zagwe-rock-churches",
     "friendly_name": "Lalibela Rock-Hewn Churches",
-    "year": 1200,
+    "year": 1181,
     "category": "architecture",
     "description": "The Zagwe dynasty carved monolithic rock-hewn churches at Lalibela, Ethiopia, creating an extraordinary pilgrimage site.",
     "difficulty": "hard",
@@ -6898,7 +6914,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1221
   },
   {
     "name": "dogon-settlement",
@@ -9005,7 +9022,7 @@
   {
     "name": "tokugawa-edo-period-culture",
     "friendly_name": "Edo Period Cultural Flourishing",
-    "year": 1700,
+    "year": 1603,
     "category": "art",
     "description": "Japan's Edo period produced a vibrant urban culture of theater, literature, and art under Tokugawa stability.",
     "difficulty": "hard",
@@ -9014,7 +9031,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1868
   },
   {
     "name": "ethiopian-gondar-cultural-center",
