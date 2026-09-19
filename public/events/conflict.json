@@ -237,7 +237,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spartacus",
     "color": "#3d2a20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -71
   },
   {
     "name": "crossing-rubicon",
@@ -317,7 +318,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Jewish–Roman_War",
     "color": "#242021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 73
   },
   {
     "name": "siege-masada",
@@ -349,7 +351,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bar_Kokhba_revolt",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 135
   },
   {
     "name": "battle-adrianople",
@@ -589,7 +592,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus'",
     "color": "#353432",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1240
   },
   {
     "name": "mongol-baghdad",
