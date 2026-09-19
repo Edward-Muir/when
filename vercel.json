@@ -12,6 +12,7 @@
     { "source": "/achievements", "destination": "/index.html" },
     { "source": "/timeline", "destination": "/index.html" },
     { "source": "/image-qc", "destination": "/index.html" },
-    { "source": "/card-reports", "destination": "/index.html" }
+    { "source": "/card-reports", "destination": "/index.html" },
+    { "source": "/admin/dedup", "destination": "/index.html" }
   ]
 }
