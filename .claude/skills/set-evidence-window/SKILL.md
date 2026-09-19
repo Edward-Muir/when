@@ -96,6 +96,25 @@ invented one.
 
 **Both ends need a source.** If you cannot source an end, reject.
 
+### When WebSearch is exhausted, fetch instead
+
+A session shares one WebSearch budget across every agent in it, and a large sweep runs it dry.
+When that happens, `WebSearch` returns "this session has used its web search budget" and
+**WebFetch still works** — it draws on no such budget. Fetch the English Wikipedia article
+directly:
+
+```
+https://en.wikipedia.org/wiki/<Article_Title>
+```
+
+**Confirm the article is about this card before you use it.** A guessed title lands on the
+wrong subject often enough to matter, and the failure is silent: `Battle_of_Megiddo` is a
+disambiguation page covering a battle in 1457 BCE and another in 1918. If the page you get is
+not the card's subject, or is a disambiguation page, treat it as no source and reject.
+
+Never write a span from memory because the tooling is short. An unsourced window is worse than
+no window, and that judgement does not change when sourcing gets inconvenient.
+
 ## Rejecting a false positive
 
 The `signals` on a record are a net, not a verdict. Roughly three in four flags do not survive a

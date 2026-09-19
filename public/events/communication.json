@@ -314,7 +314,7 @@
   {
     "name": "codex-replaces-scroll",
     "friendly_name": "Codex Replaces the Scroll",
-    "year": 150,
+    "year": 100,
     "category": "writing",
     "description": "Bound pages of the codex began replacing rolled scrolls, the ancestor of the modern book.",
     "difficulty": "medium",
@@ -323,7 +323,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/codex-replaces-scroll_frfqe5?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 600
   },
   {
     "name": "armenian-alphabet-created",
@@ -356,7 +357,7 @@
   {
     "name": "arabic-numerals-india",
     "friendly_name": "Decimal Numerals Spread",
-    "year": 600,
+    "year": 100,
     "category": "writing",
     "description": "Indian mathematicians developed the decimal place-value numerals later spread by Arab scholars.",
     "difficulty": "medium",
@@ -365,7 +366,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/arabic-numerals-india_frz2pb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 900
   },
   {
     "name": "diamond-sutra-printed",

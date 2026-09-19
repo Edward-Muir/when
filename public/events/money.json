@@ -58,7 +58,7 @@
   {
     "name": "phoenician-trade-network",
     "friendly_name": "Phoenician Trade Network",
-    "year": -1000,
+    "year": -1200,
     "category": "trade",
     "description": "Phoenician merchants built a Mediterranean commercial empire dealing in dyes, metals, and luxury goods.",
     "difficulty": "easy",
@@ -67,7 +67,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-trade-network_oq3suz?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -332
   },
   {
     "name": "athenian-owl-tetradrachm",
@@ -156,7 +157,7 @@
   {
     "name": "roman-currency-debasement",
     "friendly_name": "Roman Coin Debasement",
-    "year": 270,
+    "year": 64,
     "category": "empires",
     "description": "Emperors steadily cut the silver content of coins, triggering inflation that weakened the Roman economy.",
     "difficulty": "hard",
@@ -165,7 +166,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-currency-debasement_iexoxn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 274
   },
   {
     "name": "byzantine-solidus-introduced",
@@ -647,7 +649,7 @@
   {
     "name": "weimar-hyperinflation",
     "friendly_name": "Weimar Hyperinflation",
-    "year": 1923,
+    "year": 1921,
     "category": "disasters",
     "description": "German prices spiraled so fast that banknotes became nearly worthless and people burned cash for heat.",
     "difficulty": "easy",
@@ -656,7 +658,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/weimar-hyperinflation_ylcd0s?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1923
   },
   {
     "name": "glass-steagall-act",
@@ -969,7 +972,7 @@
   {
     "name": "roman-argentarii-banking",
     "friendly_name": "Roman Argentarii Bankers",
-    "year": -100,
+    "year": -400,
     "category": "commerce",
     "description": "Roman argentarii ran private banks that took deposits, made loans, and changed money in the forum.",
     "difficulty": "hard",
@@ -978,7 +981,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/roman-argentarii-banking_pu79vl?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 350
   },
   {
     "name": "voc-dissolved",

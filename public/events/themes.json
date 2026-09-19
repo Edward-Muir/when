@@ -394,7 +394,7 @@
   {
     "name": "punch-marked-coins-india",
     "friendly_name": "India's Punch-Marked Coins",
-    "year": -400,
+    "year": -600,
     "category": "commerce",
     "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
     "difficulty": "hard",
@@ -403,7 +403,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/punch-marked-coins-india_jahz3p?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1
   },
   {
     "name": "helike-earthquake",
