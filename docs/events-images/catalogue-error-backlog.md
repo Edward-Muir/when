@@ -263,24 +263,45 @@ Holocene-adjacent ones if anyone touches that era again.
 ## Raised by the catalogue-wide sweep (2026-09-19)
 
 The 2026-09-18 pass worked the shards a heuristic flagged. This one reviewed **every one of the
-5,205 un-ranged events**: 644 now carry a window, 4,807 are recorded in
-`scripts/events/year-range-decided.json` as moments with a reason each, and 9 are genuinely
-unresolved (below). What the readers found that a window cannot fix is recorded here.
+5,205 un-ranged events**: 644 carried a window, 4,807 were recorded in
+`scripts/events/year-range-decided.json` as moments with a reason each, and 9 were left
+unresolved. A re-run the following day closed the last of it, so **every event in the manifest
+now has a verdict**: 675 with a window, 4,785 in the ledger, nothing remaining. What the readers
+found that a window cannot fix is recorded here.
 
-### Nine cards left unresolved, deliberately
+### The nine unresolved cards, resolved (2026-09-19)
 
-Each had a year move proposed and rejected. None is a "moment" verdict, so none is in the
-decided ledger and the report script still counts them.
+All nine now carry a verdict, so the report script counts none of them. Three took a window and
+six are rejections whose reasoning is in the ledger rather than only here.
 
-- `lapita-pottery-trade`, `poverty-point-earthworks` — both stored years are on the "checked and
-  judged defensible as stored" list above. A writer re-proposing one is a false positive.
-- `bantu-expansion-africa`, `bantu-expansion`, `silk-road-trade` — each was proposed at the start
-  of the whole phenomenon, but the cards' own descriptions say "carrying iron-working",
-  "completed centuries of migration" and "Flourishes". The card's claim is not the founding.
-- `gupta-golden-age`, `nok-civilization-nigeria`, `tiwanaku-monumental-center`,
-  `swahili-stone-architecture` — each reviewed twice against sources that put the window's start
-  more than fifty years apart (Nok by 600 years). Where two sourced readings disagree that far
-  the record is not settled enough to move an anchor that moves daily decks.
+**Windows, with the anchor deliberately left alone.** `lapita-pottery-trade` -1000..-500 and
+`poverty-point-earthworks` -1500..-1200 are both on the "checked and judged defensible as stored"
+list above, so a reviewer re-proposing a year move was a false positive both times. What the
+earlier passes were reaching for was a window, not a different point, and the schema now
+expresses it. `bantu-expansion-africa` is -400..500 with its `year` moved, on which see below.
+
+**Rejections, and what makes each one final.** `gupta-golden-age`, `nok-civilization-nigeria`,
+`tiwanaku-monumental-center` and `swahili-stone-architecture` were each reviewed a third time and
+the disagreement held: sourced readings of the start sit more than fifty years apart (Gupta:
+the 320 empire founding against Samudragupta's c. 335 and Chandragupta II's 375; Nok still spans
+600 years). `silk-road-trade` and `bantu-expansion` have no dateable referent for their own claim
+— "Flourishes" at 1100 and "completed centuries of migration" at 1000 are not events any source
+places there.
+
+**One verdict was overturned in review.** `gupta-golden-age` came back from a reader with `year`
+moved to 335 and a window to 455, on the argument that the spread "resolves" to Samudragupta's
+accession. It does not, and that reader's own reason named the 320/335/375 spread while claiming
+to settle it. This is precisely the case the fifty-year rule exists for, and the anchor is the
+field that moves daily decks. The lesson is narrow and worth keeping: **a third sourced reading
+that picks one of the two earlier readings has not settled anything.** It has made it three.
+
+**`bantu-expansion-africa` is the one where the earlier objection was itself the answer.** It was
+stuck because every proposed move went to the start of the whole expansion, c. 4000 BC, which the
+card's "carrying iron-working" claim does not support. But the iron has its own date: definitive
+archaeological evidence of Bantu iron use from c. 400 BC, running to the Limpopo by AD 500. The
+window is the card's claim, and it is -400..500. The reader who worked it kept the stored 100 as
+the start and sourced only the end, which is the forward-only mistake in miniature; it was
+rewritten on review.
 
 ### Records the sources do not support
 
@@ -349,29 +370,78 @@ must exceed `year`. So the 1974 Bengal famine (Mar-Dec), the 1518 dancing plague
 siege of Masada, the 1886 world chess championship and the 1871 Paris Commune all stay points
 correctly. Worth knowing before someone "fixes" them.
 
-### Rejected for want of a source, not on the merits
+### Rejected for want of a source: re-run, and cleared (2026-09-19)
 
-The session's WebSearch budget is a single pool shared by every agent in it, and this sweep
-drained it partway through the cultural shard. Until the writers switched to WebFetch, a run of
-genuinely period-shaped cards was rejected because nothing could be checked. These are not
-moment verdicts and deserve a re-run: `king-david-rules`, `trojan-war`,
-`kingdom-kush-flourishes`, `chola-dynasty-expansion`, `timbuktu-learning-center`,
-`peter-great-modernizes`, `akhenaten-religious-revolution`, `picasso-blue-period`,
-`abstract-expressionism`, `moche-civilization`, `chavin-culture`, `fremont-culture`,
-`nazca-pottery`, `goguryeo-tomb-murals`, `tang-poetry-golden-age`, `umayyad-mosaic-art`,
-`islamic-calligraphy`, `adena-culture`, `kushana-buddhism`, `zagwe-rock-churches`,
-`haida-totem-poles`, `bharatanatyam-tradition`, `mycenaean-warrior-art`, `igbo-ukwu-bronzes`,
-`yoruba-ife-kingdom`, `mississippian-culture`, `champa-hindu-culture`, `mixtec-codices`,
-`goryeo-celadon-pottery`, `bukhara-samanid-scholars`, `troubadour-tradition`,
-`baroque-period-peak`, `tokugawa-edo-period-culture`, `ukiyo-e-art-development`,
-`safavid-textile-arts`, `safavid-miniature-painting`, `kathak-classical-dance`,
-`kuba-royal-masks`.
+The sweep's WebSearch budget ran out partway through the cultural shard and a run of genuinely
+period-shaped cards was rejected because nothing could be checked. **All of them have now been
+re-reviewed against sources and the section is closed.**
 
-Writers with budget also flagged these as plausible but unbounded on one pass:
-`gin-craze-london`, `vietnamese-nam-vu`, `oyo-empire-expansion`, `kilwa-sultanate`,
-`mali-decline`, `genoese-trade-network`, `pax-mongolica-trade`, `mutapa-empire`,
-`petra-nabataean-trade`, `kuba-kingdom`, `dutch-naval-dominance`, `hoysala-dynasty`,
-`goryeo-dynasty`, `novgorod-republic`.
+Of 58 cards, **28 took a window and 30 were re-rejected on the merits.** A rate that high is not
+a slipped bar: this cohort was pre-selected as period-shaped, so it is the one batch where a
+normal two-or-three-in-forty result would have meant something was wrong.
+
+Three corrections to the list this section used to carry, all worth knowing before trusting a
+slug in this file:
+
+- **Four of its 52 slugs did not exist.** `nazca-pottery` is `nazca-pottery-style`,
+  `goguryeo-tomb-murals` is `goguryeo-murals-tombs`, `umayyad-mosaic-art` is
+  `umayyad-mosaics-art`, `islamic-calligraphy` is `islamic-calligraphy-tradition`. A slug written
+  from memory into a prose list is not checked by anything.
+- **`moche-civilization` was already done**, carrying a 300-600 window before the re-run started.
+- **Seven were missing from the list**, found by grepping the ledger for the wording its own
+  notes used ("not sourced this pass", "no verification available this session") rather than
+  trusting the prose: `anglo-saxon-manuscript-art`, `copan-ruler-18-rabbit`,
+  `irish-monastery-art`, `japanese-calligraphy-art`, `java-temple-sculpture`,
+  `moche-civilization-peru`, `phoenician-alphabet`. **The ledger is the index, not this file.**
+
+Deliberately **not** re-opened: the ~300 other ledger notes reading "no sourced bounds". They
+look similar and are not the same thing — an ongoing practice or a generic invention description
+with no sourceable ends is a correct Test D rejection, and re-opening them would re-litigate the
+sweep rather than repair it.
+
+### Raised by the re-run (2026-09-19)
+
+Reading these 67 records against sources turned up more that a window cannot fix.
+
+**Stored years that are stand-ins with nothing behind them**, found while rejecting the card:
+`baroque-period-peak` (1600), `champa-hindu-culture` (1100), `anglo-saxon-manuscript-art` (700),
+`goryeo-dynasty`, `haida-totem-poles`, `kuba-royal-masks`. Each is a "peak" or "tradition" card
+whose year no source supports and whose ends no source fixes, so the rejection is right and the
+year is still wrong.
+
+**Records the sources contradict:**
+
+- `kingdom-kush-flourishes` is stored -1500, which belongs to the **Kerma** culture. The Kingdom
+  of Kush proper is conventionally c. 780 BCE to 350 CE, and Kushite independence is c. 1070 BCE.
+  The card's year and its named subject are about different polities.
+- `king-david-rules` asserts a united monarchy ruled from Jerusalem that the record presents as
+  disputed in both date and extent.
+- `poverty-point-earthworks` understates its own subject: sourced construction begins c. 1800
+  BCE against a stored -1500. Left alone only because the anchor was ruled out of scope.
+- `yoruba-ife-kingdom` was stored at 1100, a full century before any sourced sculpture. Fixed
+  here by the move to 1200, but the stored value was wrong independently of any window.
+
+**Title, slug or category against content:**
+
+- `chavin-culture` is titled "Chavin Culture Peak" and its description covers the culture's whole
+  pan-Andean influence. No source identifies a distinct peak, so the window is the culture's full
+  -900..-250. The title is the part that is wrong.
+- `hoysala-dynasty` is slugged and filed (`diplomatic.json`) as a dynasty while its
+  `friendly_name`, description and category are all temple architecture.
+- `nazca-pottery-style` is categorised `architecture` and is entirely about pottery.
+- `vietnamese-nam-vu` looks like a typo for Nam tien.
+- `goryeo-dynasty` is titled "Goryeo Dynasty Peak", which names no datable event at all.
+
+**More near-duplicate clusters**, to add to the list below: `moche-civilization` (300-600) /
+`moche-civilization-peru` (100-800), the second being the culture and the first its peak, which
+is coherent but leaves two cards for one subject · `goryeo-dynasty` / `goryeo-celadon-pottery`,
+both resting on celadon · `kuba-kingdom` / `kuba-royal-masks` · `tokugawa-edo-period-culture`
+(1603-1868) / `ukiyo-e-art-development` (1670-1868), sharing an end date and most of a span.
+
+**A good rejection worth recording as calibration:** `igbo-ukwu-bronzes` was re-rejected because
+its 9th-century radiocarbon date is a point with an error bar, not a span of activity. That is
+Test C doing its job on a card whose earlier rejection note had said only that the dating was
+"disputed".
 
 ## Player-visible `description` and `friendly_name` errors
 
