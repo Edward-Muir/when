@@ -10712,7 +10712,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1800
   },
   {
     "name": "pottery-wheel",
@@ -10943,7 +10944,7 @@
   {
     "name": "gupta-mathematics",
     "friendly_name": "Gupta Mathematics Flourishes",
-    "year": 400,
+    "year": 335,
     "category": "empires",
     "description": "The Gupta Empire's golden age produced advances in mathematics including the decimal system and early trigonometry.",
     "difficulty": "hard",
@@ -10952,7 +10953,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 455
   },
   {
     "name": "hypatia-alexandria",
@@ -10971,7 +10973,7 @@
   {
     "name": "warring-states-innovations",
     "friendly_name": "Warring States Innovations",
-    "year": -400,
+    "year": -475,
     "category": "agriculture",
     "description": "China's Warring States period drove innovations in iron casting, crossbows, and large-scale irrigation.",
     "difficulty": "hard",
@@ -10980,7 +10982,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -221
   },
   {
     "name": "polynesian-easter-island-settlement",
@@ -11055,7 +11058,7 @@
   {
     "name": "nalanda-university",
     "friendly_name": "Nalanda University Flourishes",
-    "year": 500,
+    "year": 427,
     "category": "commerce",
     "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
     "difficulty": "hard",
@@ -11064,7 +11067,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "heavy-plow",
@@ -11139,7 +11143,7 @@
   {
     "name": "iron-smelting-bantu-expansion",
     "friendly_name": "Bantu Spread Iron Smelting",
-    "year": 500,
+    "year": -400,
     "category": "agriculture",
     "description": "Bantu-speaking peoples spread iron smelting technology across sub-Saharan Africa during their centuries-long migration.",
     "difficulty": "hard",
@@ -11148,7 +11152,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "polynesian-wayfinding-techniques",
@@ -12424,7 +12429,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1050
   },
   {
     "name": "maori-settlement-new-zealand",
@@ -12466,7 +12472,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1299
   },
   {
     "name": "gunpowder-cannons-develop",
@@ -12635,7 +12642,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1600
   },
   {
     "name": "magnifying-glass-single-lens",
