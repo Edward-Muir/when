@@ -216,12 +216,13 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/greek-colonization-mediterranean_iza9xy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -550
   },
   {
     "name": "phoenician-colonization",
     "friendly_name": "Phoenicians Settle the Sea",
-    "year": -800,
+    "year": -1100,
     "category": "migration",
     "description": "Phoenician traders founded colonies across the Mediterranean, including Carthage in North Africa.",
     "difficulty": "medium",
@@ -230,7 +231,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/phoenician-colonization_lvasyx?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -750
   },
   {
     "name": "bantu-reach-southern-africa",
@@ -249,7 +251,7 @@
   {
     "name": "germanic-migration-period",
     "friendly_name": "Germanic Migration Period",
-    "year": 376,
+    "year": 375,
     "category": "empires",
     "description": "Germanic peoples moved into the Roman Empire, an era of upheaval that reshaped Europe's map.",
     "difficulty": "medium",
@@ -258,7 +260,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/germanic-migration-period_rwkh7b?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 568
   },
   {
     "name": "huns-migrate-into-europe",
@@ -398,7 +401,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/puritan-great-migration_bir5o9?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1640
   },
   {
     "name": "expulsion-of-the-acadians",
@@ -412,7 +416,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/expulsion-of-the-acadians_c2ksv9?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1764
   },
   {
     "name": "scotch-irish-migration",
@@ -440,7 +445,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-trek-south-africa_l81ivf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1846
   },
   {
     "name": "mormon-trek-to-utah",
@@ -468,7 +474,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/oregon-trail-migration_vvuxcn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1869
   },
   {
     "name": "freed-slaves-settle-liberia",
@@ -515,7 +522,7 @@
   {
     "name": "indentured-labor-diaspora",
     "friendly_name": "Indian Indentured Diaspora",
-    "year": 1838,
+    "year": 1834,
     "category": "migration",
     "description": "Indian indentured laborers were shipped to colonies worldwide, settling the Caribbean, Fiji, and beyond.",
     "difficulty": "hard",
@@ -524,7 +531,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/indentured-labor-diaspora_tsdvtw?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1917
   },
   {
     "name": "great-migration-black-americans",
@@ -538,7 +546,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-migration-black-americans_zevllp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1970
   },
   {
     "name": "dust-bowl-migration",
@@ -552,7 +561,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dust-bowl-migration_rdj6dj?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1940
   },
   {
     "name": "partition-of-india-migration",
@@ -608,7 +618,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/post-war-german-expulsions_ybyqwr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1950
   },
   {
     "name": "bracero-program-begins",
@@ -650,7 +661,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vietnamese-boat-people_lqgpu8?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1995
   },
   {
     "name": "soviet-jewish-emigration",
@@ -678,7 +690,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/european-migrant-crisis_wovdel?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2016
   },
   {
     "name": "settlement-of-fiji",
@@ -706,7 +719,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thule-reach-greenland_tkmnun?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "vandals-migrate-to-africa",
@@ -734,7 +748,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/anglo-saxons-settle-britain_n7nsqy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 600
   },
   {
     "name": "cuban-exile-to-miami",
@@ -748,7 +763,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cuban-exile-to-miami_qzogxn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1962
   },
   {
     "name": "gold-rush-to-australia",
@@ -762,6 +778,7 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gold-rush-to-australia_jpufag?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1869
   }
 ]

@@ -1357,7 +1357,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Belgian_Revolution",
     "color": "#202123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1839
   },
   {
     "name": "indian-removal-act",
@@ -3470,12 +3471,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -87
   },
   {
     "name": "sullas-civil-war",
     "friendly_name": "Sulla's Civil War",
-    "year": -82,
+    "year": -83,
     "category": "empires",
     "description": "Sulla marched on Rome and became dictator, setting a precedent for later strongmen.",
     "difficulty": "medium",
@@ -3486,7 +3488,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sulla's_civil_war",
     "color": "#261f1d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -82
   },
   {
     "name": "second-triumvirate",
@@ -3502,7 +3505,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Triumvirate",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -30
   },
   {
     "name": "death-of-augustus",
@@ -3710,7 +3714,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_the_Iberian_Peninsula",
     "color": "#1e2224",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 718
   },
   {
     "name": "charlemagne-king-franks",
@@ -4021,7 +4026,7 @@
   {
     "name": "minoan-civilization-peak",
     "friendly_name": "Minoan Civilization Peak",
-    "year": -2000,
+    "year": -1700,
     "category": "architecture",
     "description": "The Minoan civilization on Crete reached its height, building elaborate palaces like Knossos and dominating Aegean trade.",
     "difficulty": "medium",
@@ -4032,7 +4037,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Minoan_civilization",
     "color": "#26201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1450
   },
   {
     "name": "abrahams-journey-traditional",
@@ -4069,7 +4075,7 @@
   {
     "name": "assyrian-empire-expansion",
     "friendly_name": "Assyrian Empire Expansion",
-    "year": -900,
+    "year": -911,
     "category": "empires",
     "description": "The Neo-Assyrian Empire began aggressive expansion, becoming the first true empire to rule much of the ancient Near East.",
     "difficulty": "easy",
@@ -4080,7 +4086,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assyria",
     "color": "#2a1e17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -609
   },
   {
     "name": "fall-of-israel-northern-kingdom",
@@ -4128,7 +4135,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Julius_Caesar's_invasions_of_Britain",
     "color": "#242021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -54
   },
   {
     "name": "five-good-emperors-era-begins",
@@ -4384,7 +4392,8 @@
     "image_height": 440,
     "color": "#25201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1541
   },
   {
     "name": "servetus-burned-at-stake",
@@ -4864,7 +4873,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/French_invasion_of_Egypt_and_Syria",
     "color": "#26201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1801
   },
   {
     "name": "act-of-union-ireland",
@@ -5136,7 +5146,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Texas_Revolution",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1836
   },
   {
     "name": "first-anesthesia-surgery",
@@ -5232,7 +5243,8 @@
     "image_height": 440,
     "color": "#212122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1855
   },
   {
     "name": "great-exhibition-opens",
@@ -5296,7 +5308,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Florence_Nightingale",
     "color": "#23211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1856
   },
   {
     "name": "dred-scott-decision",
@@ -5568,7 +5581,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Principality_of_Serbia",
     "color": "#24201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1878
   },
   {
     "name": "congress-of-berlin",
@@ -5840,7 +5854,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Panic_of_1893",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1897
   },
   {
     "name": "dreyfus-affair",
@@ -5888,7 +5903,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Klondike_Gold_Rush",
     "color": "#212120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1898
   },
   {
     "name": "plessy-v-ferguson",
@@ -6528,7 +6544,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Internment_of_Japanese_Americans",
     "color": "#24211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1946
   },
   {
     "name": "casablanca-conference",
@@ -7584,7 +7601,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Soviet_withdrawal_from_Afghanistan",
     "color": "#675d4e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1989
   },
   {
     "name": "velvet-revolution",
@@ -7872,7 +7890,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Orange_Revolution",
     "color": "#1b2228",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2005
   },
   {
     "name": "angela-merkel-elected",
@@ -8160,7 +8179,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yellow_vests_protests",
     "color": "#546855",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2020
   },
   {
     "name": "boris-johnson-becomes-pm",
@@ -8208,7 +8228,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/George_Floyd_protests",
     "color": "#1c2227",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2021
   },
   {
     "name": "biden-elected",
@@ -8284,7 +8305,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "pontius-pilate-judea",
@@ -8457,7 +8479,7 @@
   {
     "name": "bantu-expansion-africa",
     "friendly_name": "Bantu Migration Across Africa",
-    "year": 100,
+    "year": -400,
     "category": "migration",
     "description": "Bantu-speaking peoples spread across sub-Saharan Africa, carrying iron-working and farming techniques.",
     "difficulty": "medium",
@@ -8466,7 +8488,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "hopewell-trade-networks",
@@ -8611,7 +8634,7 @@
   {
     "name": "bactria-kingdom",
     "friendly_name": "Bactrian Kingdom Flourishes",
-    "year": -200,
+    "year": -230,
     "category": "empires",
     "description": "The Greco-Bactrian Kingdom expanded under Euthydemus I, controlling parts of modern Afghanistan and Central Asia.",
     "difficulty": "hard",
@@ -8620,7 +8643,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -200
   },
   {
     "name": "aksumite-coinage",
@@ -8653,7 +8677,7 @@
   {
     "name": "meroitic-kingdom-nubia",
     "friendly_name": "Meroitic Kingdom Rules Nubia",
-    "year": -200,
+    "year": -270,
     "category": "empires",
     "description": "The Kingdom of Meroe ruled Nubia from its capital on the Nile, developing its own script and iron industry.",
     "difficulty": "hard",
@@ -8662,7 +8686,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 350
   },
   {
     "name": "grain-price-controls",
@@ -8751,7 +8776,7 @@
   {
     "name": "gallienus-crisis-empire",
     "friendly_name": "Gallienus Crisis of Third Century",
-    "year": 260,
+    "year": 253,
     "category": "empires",
     "description": "Emperor Gallienus faced the Crisis of the Third Century as the empire fragmented into breakaway states.",
     "difficulty": "hard",
@@ -8760,12 +8785,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 268
   },
   {
     "name": "funan-kingdom",
     "friendly_name": "Funan Kingdom Flourishes",
-    "year": 200,
+    "year": 50,
     "category": "empires",
     "description": "The Funan Kingdom in mainland Southeast Asia controlled maritime trade between India and China.",
     "difficulty": "very-hard",
@@ -8774,12 +8800,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 627
   },
   {
     "name": "lakhmid-kingdom",
     "friendly_name": "Lakhmid Kingdom",
-    "year": 300,
+    "year": 293,
     "category": "empires",
     "description": "The Lakhmid Kingdom served as a Sassanid client state in southern Iraq, buffering Persia from Arabian tribes.",
     "difficulty": "hard",
@@ -8788,7 +8815,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 602
   },
   {
     "name": "first-public-library",
@@ -8900,7 +8928,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -350
   },
   {
     "name": "chandragupta-ii-vikramaditya",
@@ -8914,7 +8943,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 415
   },
   {
     "name": "socrates-execution",
@@ -8933,7 +8963,7 @@
   {
     "name": "kingdom-axum",
     "friendly_name": "Aksumite Empire Peak",
-    "year": 350,
+    "year": 320,
     "category": "empires",
     "description": "The Aksumite Empire reached its peak under King Ezana, who converted to Christianity and conquered Meroe.",
     "difficulty": "hard",
@@ -8942,7 +8972,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 360
   },
   {
     "name": "baekje-kingdom",
@@ -8998,7 +9029,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 455
   },
   {
     "name": "alaric-visigoth-kingdom",
@@ -9040,7 +9072,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 589
   },
   {
     "name": "warring-states-period-begins",
@@ -9138,7 +9171,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 579
   },
   {
     "name": "achaemenid-empire-persia",
@@ -9222,7 +9256,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "sogdian-merchants",
@@ -9376,7 +9411,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 647
   },
   {
     "name": "first-civil-service-exam",
@@ -9488,7 +9524,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1025
   },
   {
     "name": "dvaravati-period",
@@ -9502,7 +9539,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1100
   },
   {
     "name": "rajput-kingdoms",
@@ -9544,12 +9582,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 700
   },
   {
     "name": "tiwanaku-city",
     "friendly_name": "Tiwanaku City Flourishes",
-    "year": 700,
+    "year": 375,
     "category": "architecture",
     "description": "The city of Tiwanaku near Lake Titicaca reached its peak with monumental stone architecture and wide trade networks.",
     "difficulty": "hard",
@@ -9558,7 +9597,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1000
   },
   {
     "name": "aksumite-decline",
@@ -9600,7 +9640,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "mon-kingdom",
@@ -9614,7 +9655,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1057
   },
   {
     "name": "silla-bone-rank-system",
@@ -9740,7 +9782,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 900
   },
   {
     "name": "paper-money-china",
@@ -9768,7 +9811,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -656
   },
   {
     "name": "rustamid-tahert-kingdom",
@@ -10062,12 +10106,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1150
   },
   {
     "name": "goryeo-gwangjong-celadon",
     "friendly_name": "Gwangjong Expands Celadon",
-    "year": 960,
+    "year": 949,
     "category": "art",
     "description": "King Gwangjong of Goryeo promoted celadon pottery production, which became Korea's most celebrated art form.",
     "difficulty": "very-hard",
@@ -10076,12 +10121,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 975
   },
   {
     "name": "karakhanid-dynasty",
     "friendly_name": "Karakhanid Dynasty Rules",
-    "year": 999,
+    "year": 840,
     "category": "empires",
     "description": "The Karakhanid Khanate, the first Turkic dynasty to convert to Islam, controlled Transoxiana and the Tarim Basin.",
     "difficulty": "hard",
@@ -10090,7 +10136,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/karakhanid-dynasty_hugnwt?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1212
   },
   {
     "name": "kingdom-israel-established",
@@ -10137,7 +10184,7 @@
   {
     "name": "khorezm-state",
     "friendly_name": "Khorezm Sultanate Flourishes",
-    "year": 1200,
+    "year": 1077,
     "category": "empires",
     "description": "The Khwarezmian Empire expanded across Central Asia and Persia before its destruction by the Mongols.",
     "difficulty": "hard",
@@ -10146,7 +10193,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1231
   },
   {
     "name": "goryeo-dynasty",
@@ -10193,7 +10241,7 @@
   {
     "name": "fujiwara-regency",
     "friendly_name": "Fujiwara Regency at Height of Power",
-    "year": 1000,
+    "year": 995,
     "category": "empires",
     "description": "Fujiwara no Michinaga dominated Japanese court politics, ruling as regent during the peak of Heian culture.",
     "difficulty": "hard",
@@ -10202,12 +10250,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1017
   },
   {
     "name": "ghana-decline",
     "friendly_name": "Ghana Empire Declines",
-    "year": 1076,
+    "year": 1054,
     "category": "empires",
     "description": "The Ghana Empire weakened after Almoravid attacks and internal pressures eroded its control of trans-Saharan gold trade.",
     "difficulty": "hard",
@@ -10216,7 +10265,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1203
   },
   {
     "name": "bantu-expansion",
@@ -10249,7 +10299,7 @@
   {
     "name": "inuit-thule-culture",
     "friendly_name": "Thule Culture Inuit Expansion",
-    "year": 1000,
+    "year": 900,
     "category": "migration",
     "description": "Thule people expanded rapidly eastward from Alaska across Arctic Canada, replacing the earlier Dorset culture.",
     "difficulty": "very-hard",
@@ -10258,12 +10308,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "hoysala-dynasty",
     "friendly_name": "Hoysala Temple Architecture",
-    "year": 1120,
+    "year": 1113,
     "category": "architecture",
     "description": "The Hoysala dynasty in southern India produced intricately carved temples at Belur and Halebidu in Karnataka.",
     "difficulty": "very-hard",
@@ -10272,7 +10323,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1268
   },
   {
     "name": "boni-kingdom",
@@ -10347,7 +10399,7 @@
   {
     "name": "population-doubling-medieval",
     "friendly_name": "Medieval Population Doubles",
-    "year": 1200,
+    "year": 1000,
     "category": "agriculture",
     "description": "Europe's population roughly doubled during the High Middle Ages due to agricultural improvements and warmer climate.",
     "difficulty": "hard",
@@ -10356,7 +10408,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "barter-money-transition",
@@ -10417,7 +10470,7 @@
   {
     "name": "pagan-kingdom-flourishes",
     "friendly_name": "Pagan Kingdom Flourishes in Burma",
-    "year": 1050,
+    "year": 1044,
     "category": "empires",
     "description": "King Anawrahta unified Burma under the Pagan Kingdom, adopting Theravada Buddhism and building thousands of temples.",
     "difficulty": "hard",
@@ -10426,12 +10479,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1077
   },
   {
     "name": "song-scholar-official-system",
     "friendly_name": "Song Civil Service Reforms",
-    "year": 1070,
+    "year": 1069,
     "category": "law",
     "description": "Wang Anshi reformed Song China's civil service examinations, expanding meritocratic bureaucratic recruitment.",
     "difficulty": "very-hard",
@@ -10440,7 +10494,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1076
   },
   {
     "name": "domesday-book",
@@ -10610,7 +10665,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1234
   },
   {
     "name": "almohad-dynasty-formation",
@@ -10638,7 +10694,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1270
   },
   {
     "name": "matilda-england",
@@ -10751,7 +10808,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1471
   },
   {
     "name": "kanem-bornu",
@@ -10826,7 +10884,7 @@
   {
     "name": "novgorod-republic",
     "friendly_name": "Novgorod Republic Golden Age",
-    "year": 1200,
+    "year": 1136,
     "category": "empires",
     "description": "The Novgorod Republic flourished as a major Hanseatic trading partner with a unique democratic veche assembly system.",
     "difficulty": "hard",
@@ -10835,7 +10893,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1478
   },
   {
     "name": "muisca-confederation",
@@ -10906,7 +10965,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1333
   },
   {
     "name": "somali-zeila-trading-port",
@@ -11134,7 +11194,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1400
   },
   {
     "name": "chagatai-khanate-founded",
@@ -11321,7 +11382,7 @@
   {
     "name": "republic-florence-banking",
     "friendly_name": "Florentine Banking Rises",
-    "year": 1260,
+    "year": 1290,
     "category": "commerce",
     "description": "Florentine banking families like the Bardi and Peruzzi pioneered international finance and papal banking.",
     "difficulty": "hard",
@@ -11330,7 +11391,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1345
   },
   {
     "name": "mongol-administrative-reforms",
@@ -11840,7 +11902,7 @@
   {
     "name": "majapahit-expansion",
     "friendly_name": "Majapahit Maritime Expansion",
-    "year": 1350,
+    "year": 1334,
     "category": "empires",
     "description": "Under Prime Minister Gajah Mada, the Majapahit Empire expanded to control most of maritime Southeast Asia.",
     "difficulty": "hard",
@@ -11849,7 +11911,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1364
   },
   {
     "name": "kilwa-khilafa-sultanate",
@@ -11919,7 +11982,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1351
   },
   {
     "name": "black-death-demographic",
@@ -11990,7 +12054,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1473
   },
   {
     "name": "wolof-empire-formation",
@@ -12135,7 +12200,7 @@
   {
     "name": "mali-decline",
     "friendly_name": "Mali Empire Decline",
-    "year": 1400,
+    "year": 1360,
     "category": "empires",
     "description": "The Mali Empire entered decline as provinces broke away and the Songhai Empire rose to challenge its dominance.",
     "difficulty": "hard",
@@ -12144,7 +12209,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1599
   },
   {
     "name": "kilwa-sultanate",
@@ -12172,7 +12238,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1507
   },
   {
     "name": "venetian-republic",
@@ -12485,7 +12552,7 @@
   {
     "name": "bahmani-sultanate",
     "friendly_name": "Bahmani Sultanate Peak",
-    "year": 1450,
+    "year": 1466,
     "category": "empires",
     "description": "The Bahmani Sultanate reached its zenith in the Deccan plateau of India before fragmenting into five states.",
     "difficulty": "hard",
@@ -12494,7 +12561,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1481
   },
   {
     "name": "iroquois-confederacy",
@@ -12693,7 +12761,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1686
   },
   {
     "name": "barid-shahi-dynasty",
@@ -12736,7 +12805,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1528
   },
   {
     "name": "columbian-exchange-disease",
@@ -12779,7 +12849,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1520
   },
   {
     "name": "columbian-exchange",
@@ -13033,7 +13104,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1566
   },
   {
     "name": "mughal-babur-founds",
@@ -13194,7 +13266,7 @@
   {
     "name": "mataram-empire",
     "friendly_name": "Mataram Sultanate Rise",
-    "year": 1587,
+    "year": 1586,
     "category": "empires",
     "description": "The Mataram Sultanate rose to dominate most of Java under Senopati's leadership.",
     "difficulty": "hard",
@@ -13203,7 +13275,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1601
   },
   {
     "name": "brunei-sultanate-expansion",
@@ -13232,12 +13305,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1629
   },
   {
     "name": "toyotomi-hideyoshi-rule",
     "friendly_name": "Toyotomi Hideyoshi's Rule",
-    "year": 1590,
+    "year": 1585,
     "category": "empires",
     "description": "Toyotomi Hideyoshi unified Japan after a century of civil war through military campaigns and diplomacy.",
     "difficulty": "hard",
@@ -13246,7 +13320,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1598
   },
   {
     "name": "mycenaean-civilization",
@@ -13304,7 +13379,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1636
   },
   {
     "name": "hawaiian-kingdoms",
@@ -13380,7 +13456,7 @@
   {
     "name": "polish-lithuanian-golden-age",
     "friendly_name": "Polish-Lithuanian Golden Age",
-    "year": 1600,
+    "year": 1573,
     "category": "diplomacy",
     "description": "The Polish-Lithuanian Commonwealth entered its golden age as Europe's largest and most tolerant state.",
     "difficulty": "hard",
@@ -13389,7 +13465,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1648
   },
   {
     "name": "venetian-trade-decline",
@@ -13529,7 +13606,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1694
   },
   {
     "name": "tongan-kingdom-established",
@@ -13613,7 +13691,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1642
   },
   {
     "name": "dahomey-kingdom-founded",
@@ -13642,7 +13721,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1658
   },
   {
     "name": "alaouite-dynasty-rise",
@@ -13712,7 +13792,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1653
   },
   {
     "name": "mercantilism-doctrine-rise",
@@ -13746,7 +13827,7 @@
   {
     "name": "vietnamese-nam-vu",
     "friendly_name": "Vietnamese March South",
-    "year": 1650,
+    "year": 1611,
     "category": "empires",
     "description": "Vietnamese settlers pushed steadily southward into Cham and Khmer territories, expanding the Nguyen lords' domain toward the Mekong Delta.",
     "difficulty": "very-hard",
@@ -13755,7 +13836,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1755
   },
   {
     "name": "zanzibar-spice-trade",
@@ -13783,7 +13865,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/navigation-acts-england_as8fop?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1696
   },
   {
     "name": "koprululer-reforms",
@@ -13797,7 +13880,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1683
   },
   {
     "name": "mughal-aurengzeb-expansion",
@@ -13811,7 +13895,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1707
   },
   {
     "name": "english-civil-war-aftermath",
@@ -14205,7 +14290,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1761
   },
   {
     "name": "proclamation-1763",
@@ -14476,7 +14562,7 @@
   {
     "name": "hawaiian-kingdom-unification",
     "friendly_name": "Kamehameha Unifies Hawaii",
-    "year": 1795,
+    "year": 1782,
     "category": "empires",
     "description": "Kamehameha I unified the Hawaiian Islands through military conquest, establishing a centralized Pacific kingdom.",
     "difficulty": "hard",
@@ -14485,7 +14571,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1810
   },
   {
     "name": "kwakwakawakw-potlatch",
@@ -14513,7 +14600,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1839
   },
   {
     "name": "abolition-slavery-denmark",
@@ -14709,7 +14797,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1868
   },
   {
     "name": "nursing-school",
@@ -14849,7 +14938,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1600
   },
   {
     "name": "traffic-control",

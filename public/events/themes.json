@@ -394,7 +394,7 @@
   {
     "name": "punch-marked-coins-india",
     "friendly_name": "India's Punch-Marked Coins",
-    "year": -400,
+    "year": -600,
     "category": "commerce",
     "description": "Mahajanapada kingdoms of northern India struck silver punch-marked coins, the subcontinent's first currency.",
     "difficulty": "hard",
@@ -403,7 +403,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/punch-marked-coins-india_jahz3p?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1
   },
   {
     "name": "helike-earthquake",
@@ -515,7 +516,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alexander-coinage-empire_rsuftq?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -125
   },
   {
     "name": "archimedes-measures-circle",
@@ -1019,7 +1021,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japan-smallpox-epidemic_zkpr9l?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 737
   },
   {
     "name": "lu-yu-classic-of-tea",
@@ -1346,7 +1349,7 @@
   {
     "name": "kaifeng-night-markets",
     "friendly_name": "Kaifeng's Night Markets Glow",
-    "year": 1120,
+    "year": 965,
     "category": "commerce",
     "description": "Lamp-lit stalls kept the Song capital trading long past dusk, breaking the curfew that had closed Chinese cities at dark.",
     "difficulty": "very-hard",
@@ -1355,7 +1358,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kaifeng-night-markets_u5fvau?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1127
   },
   {
     "name": "yu-ji-tu-grid-map",
@@ -1598,7 +1602,7 @@
   {
     "name": "mamluk-mosque-lamps",
     "friendly_name": "Enamelled Mosque Lamps",
-    "year": 1330,
+    "year": 1250,
     "category": "craft",
     "description": "Cairo glassmakers gilded and enamelled oil lamps that hung by the dozen in Mamluk mosques, prized far beyond Egypt.",
     "difficulty": "hard",
@@ -1607,7 +1611,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mamluk-mosque-lamps_ntq01h?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1517
   },
   {
     "name": "sandglass-at-sea",
@@ -2125,7 +2130,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-debasement-henry-viii_jhfmkf?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1551
   },
   {
     "name": "cardano-ars-magna",
@@ -2685,7 +2691,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/marseille-plague_kootwd?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1722
   },
   {
     "name": "vaucanson-digesting-duck",
@@ -3091,7 +3098,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-cholera-pandemic_kvbtpm?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1824
   },
   {
     "name": "babbage-difference-engine",
@@ -3567,7 +3575,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/challenger-expedition_jhmfqp?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1876
   },
   {
     "name": "german-gold-mark-adopted",
@@ -3763,7 +3772,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/knossos-palace-excavated_adxmnr?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1905
   },
   {
     "name": "mount-pelee-eruption",
@@ -3810,7 +3820,7 @@
   {
     "name": "manchurian-plague",
     "friendly_name": "Manchurian Plague Epidemic",
-    "year": 1911,
+    "year": 1910,
     "category": "disasters",
     "description": "Pneumonic plague swept Manchuria until Wu Lien-teh's gauze masks and rail cordons broke the chain.",
     "difficulty": "hard",
@@ -3819,7 +3829,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/manchurian-plague_v2ppsy?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1911
   },
   {
     "name": "sperry-gyroscopic-autopilot",
@@ -4379,7 +4390,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/crypto-ag-rigged-machines_ya0sz1?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2018
   },
   {
     "name": "low-loss-optical-fibre",
@@ -4869,7 +4881,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/incandescent-bulb-phase-out_f6fdrm?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2014
   },
   {
     "name": "cameron-challenger-deep",

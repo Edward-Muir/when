@@ -110,7 +110,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
     "color": "#3c3b3c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1150
   },
   {
     "name": "late-bronze-age-drought",
@@ -126,7 +127,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Late_Bronze_Age_collapse",
     "color": "#25303e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -900
   },
   {
     "name": "plague-of-athens",
@@ -142,7 +144,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Athens",
     "color": "#261e26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -426
   },
   {
     "name": "vesuvius-eruption",
@@ -190,7 +193,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 180
   },
   {
     "name": "hatepe-eruption",
@@ -222,7 +226,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Cyprian",
     "color": "#2b1d1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 262
   },
   {
     "name": "365-crete-earthquake",
@@ -270,7 +275,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Volcanic_winter_of_536",
     "color": "#342c24",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 537
   },
   {
     "name": "plague-of-justinian",
@@ -286,7 +292,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Justinian",
     "color": "#2b221a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 549
   },
   {
     "name": "justinian-plague-recurrence",
@@ -302,7 +309,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Plague_of_Sheroe",
     "color": "#26201d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "damghan-earthquake",
@@ -382,7 +390,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Famine_of_1315–1317",
     "color": "#2e342c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1317
   },
   {
     "name": "mongol-black-death-spread",
@@ -510,7 +519,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1601–1603",
     "color": "#29282f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1603
   },
   {
     "name": "vasa-sinking",
@@ -542,7 +552,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1629–1631_Italian_plague",
     "color": "#272017",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1631
   },
   {
     "name": "great-plague-london",
@@ -558,7 +569,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Plague_of_London",
     "color": "#261f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1666
   },
   {
     "name": "great-fire-london",
@@ -622,7 +634,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1741
   },
   {
     "name": "lisbon-earthquake",
@@ -702,7 +715,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chalisa_famine",
     "color": "#2a1e1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1784
   },
   {
     "name": "calabria-earthquake",
@@ -734,7 +748,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Doji_bara_famine",
     "color": "#2b1e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1792
   },
   {
     "name": "unzen-eruption",
@@ -894,7 +909,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1960
   },
   {
     "name": "ansei-earthquake",
@@ -942,7 +958,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Orissa_famine_of_1866",
     "color": "#202124",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1868
   },
   {
     "name": "finnish-famine",
@@ -958,7 +975,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Finnish_famine_of_1866–1868",
     "color": "#abaeac",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1868
   },
   {
     "name": "peshtigo-fire",
@@ -1070,7 +1088,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1889–1890_pandemic",
     "color": "#1f2125",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1890
   },
   {
     "name": "russian-famine-imperial",
@@ -1086,7 +1105,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1891–1892",
     "color": "#585448",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1892
   },
   {
     "name": "galveston-hurricane",
@@ -1278,7 +1298,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Persian_famine_of_1870–1872",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1919
   },
   {
     "name": "halifax-explosion",
@@ -1374,7 +1395,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_famine_of_1921–1922",
     "color": "#2b1e13",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1922
   },
   {
     "name": "knickerbocker-storm",
@@ -1470,7 +1492,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Holodomor",
     "color": "#25201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1933
   },
   {
     "name": "dust-bowl",
@@ -1582,7 +1605,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bengal_famine_of_1943",
     "color": "#4b331f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1944
   },
   {
     "name": "dutch-hunger-winter",
@@ -1598,7 +1622,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Dutch_famine_of_1944–1945",
     "color": "#24211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1945
   },
   {
     "name": "wilhelm-gustloff",
@@ -1726,7 +1751,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1957–1958_influenza_pandemic",
     "color": "#1f202b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1958
   },
   {
     "name": "great-leap-forward-famine",
@@ -1838,7 +1864,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Blockade_of_Biafra",
     "color": "#a5b0b2",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1970
   },
   {
     "name": "hong-kong-flu",
@@ -1854,7 +1881,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Hong_Kong_flu",
     "color": "#384a59",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1970
   },
   {
     "name": "thule-b52-crash",
@@ -2126,7 +2154,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1983–1985_famine_in_Ethiopia",
     "color": "#8296a3",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1985
   },
   {
     "name": "bhopal-gas-disaster",
@@ -2387,7 +2416,7 @@
   {
     "name": "somali-famine",
     "friendly_name": "Somali Famine",
-    "year": 1992,
+    "year": 1991,
     "category": "disasters",
     "description": "Civil war and drought caused a famine killing over 200,000 in Somalia.",
     "difficulty": "hard",
@@ -2398,7 +2427,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Famine_in_Somalia",
     "color": "#202127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1993
   },
   {
     "name": "hurricane-andrew",
@@ -2494,7 +2524,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1990s_North_Korean_famine",
     "color": "#2a2f36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1999
   },
   {
     "name": "tokyo-subway-attack",
@@ -2542,7 +2573,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1997_Asian_financial_crisis",
     "color": "#1f202c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1999
   },
   {
     "name": "el-nino-super",
@@ -2558,7 +2590,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1998
   },
   {
     "name": "hurricane-mitch",
@@ -2622,7 +2655,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2002–2004_SARS_outbreak",
     "color": "#142138",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2004
   },
   {
     "name": "european-heat-wave",
@@ -2750,7 +2784,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2009_swine_flu_pandemic",
     "color": "#2d7e96",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2010
   },
   {
     "name": "haiti-earthquake",
@@ -2899,7 +2934,7 @@
   {
     "name": "ebola-outbreak",
     "friendly_name": "West African Ebola Outbreak",
-    "year": 2014,
+    "year": 2013,
     "category": "disasters",
     "description": "The deadliest Ebola outbreak killed over 11,000 people in West Africa.",
     "difficulty": "medium",
@@ -2910,7 +2945,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Western_African_Ebola_epidemic",
     "color": "#1a2b36",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2016
   },
   {
     "name": "mh370-disappearance",
@@ -3006,7 +3042,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/2015–16_Zika_virus_epidemic",
     "color": "#18222d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2016
   },
   {
     "name": "grenfell-tower-fire",
@@ -3054,7 +3091,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bushfires_in_Australia",
     "color": "#0e223a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 2020
   },
   {
     "name": "covid-19-pandemic",

@@ -72,7 +72,7 @@
   {
     "name": "huangdi-neijing-compiled",
     "friendly_name": "Huangdi Neijing Compiled",
-    "year": -200,
+    "year": -400,
     "category": "medicine",
     "description": "China's foundational medical text outlined theories of the body, disease, and treatment by needling.",
     "difficulty": "very-hard",
@@ -81,7 +81,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/huangdi-neijing-compiled_law6ep?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 260
   },
   {
     "name": "acupuncture-systematized",

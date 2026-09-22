@@ -464,7 +464,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Phoenicia",
     "color": "#29201a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -597
   },
   {
     "name": "coins-invented",
@@ -1316,7 +1317,7 @@
   {
     "name": "magellan-circumnavigation",
     "friendly_name": "First Circumnavigation of Earth",
-    "year": 1522,
+    "year": 1519,
     "category": "media",
     "description": "Magellan's expedition completed the first voyage around the world.",
     "difficulty": "easy",
@@ -1327,7 +1328,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Magellan_expedition",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1522
   },
   {
     "name": "pizarro-meets-incas",
@@ -1412,7 +1414,7 @@
   {
     "name": "drake-circumnavigation",
     "friendly_name": "Drake Circumnavigates Globe",
-    "year": 1580,
+    "year": 1577,
     "category": "migration",
     "description": "Francis Drake completed the second circumnavigation of the world.",
     "difficulty": "medium",
@@ -1423,7 +1425,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Circumnavigation",
     "color": "#403f3b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1580
   },
   {
     "name": "knitting-machine",
@@ -1458,7 +1461,7 @@
   {
     "name": "barents-arctic",
     "friendly_name": "Barents Explores Arctic",
-    "year": 1596,
+    "year": 1594,
     "category": "migration",
     "description": "Willem Barents explored the Arctic Ocean seeking a northeast passage.",
     "difficulty": "very-hard",
@@ -1469,7 +1472,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/List_of_Arctic_expeditions",
     "color": "#202221",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1597
   },
   {
     "name": "dutch-reach-australia",
@@ -1712,7 +1716,7 @@
   {
     "name": "dampier-circumnavigation",
     "friendly_name": "Dampier Circumnavigates",
-    "year": 1691,
+    "year": 1679,
     "category": "migration",
     "description": "William Dampier became the first person to circumnavigate the world three times.",
     "difficulty": "very-hard",
@@ -1723,7 +1727,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/William_Dampier",
     "color": "#251f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1711
   },
   {
     "name": "dampier-new-britain",
@@ -1949,7 +1954,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_voyage_of_James_Cook",
     "color": "#3a2b21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1771
   },
   {
     "name": "cook-australia",
@@ -2205,7 +2211,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Alexander_von_Humboldt",
     "color": "#2a1e19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1804
   },
   {
     "name": "volta-battery",
@@ -2253,7 +2260,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Lewis_and_Clark_Expedition",
     "color": "#212121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1806
   },
   {
     "name": "steam-locomotive",
@@ -2297,7 +2305,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mungo_Park_(explorer)",
     "color": "#222120",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1806
   },
   {
     "name": "arc-lamp",
@@ -2931,7 +2940,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Burke_and_Wills_expedition",
     "color": "#7e807b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1861
   },
   {
     "name": "garibaldis-expedition",
@@ -3447,7 +3457,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Nansen's_Fram_expedition",
     "color": "#3e5a56",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1896
   },
   {
     "name": "zipper-invented",
@@ -3895,7 +3906,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Imperial_Trans-Antarctic_Expedition",
     "color": "#22211b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1917
   },
   {
     "name": "first-scheduled-airline",
@@ -7348,7 +7360,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1900
   },
   {
     "name": "public-sewage-sanitation",
@@ -7362,7 +7375,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1900
   },
   {
     "name": "public-bath",
@@ -7530,7 +7544,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1200
   },
   {
     "name": "rubber-mesoamerican-ballgame",
@@ -7670,7 +7685,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "systematization-of-medicine",
@@ -7787,7 +7803,7 @@
   {
     "name": "concept-of-zero",
     "friendly_name": "Concept of Zero",
-    "year": -400,
+    "year": -500,
     "category": "media",
     "description": "The mathematical concept of zero as a number, developed independently in ancient Mesopotamia and later formalized in India.",
     "difficulty": "medium",
@@ -7796,7 +7812,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "traction-trebuchet",
@@ -8538,7 +8555,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1494
   },
   {
     "name": "worm-gear-cotton-gin",
@@ -10699,7 +10717,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1800
   },
   {
     "name": "pottery-wheel",
@@ -10930,7 +10949,7 @@
   {
     "name": "gupta-mathematics",
     "friendly_name": "Gupta Mathematics Flourishes",
-    "year": 400,
+    "year": 335,
     "category": "empires",
     "description": "The Gupta Empire's golden age produced advances in mathematics including the decimal system and early trigonometry.",
     "difficulty": "hard",
@@ -10939,7 +10958,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 455
   },
   {
     "name": "hypatia-alexandria",
@@ -10958,7 +10978,7 @@
   {
     "name": "warring-states-innovations",
     "friendly_name": "Warring States Innovations",
-    "year": -400,
+    "year": -475,
     "category": "agriculture",
     "description": "China's Warring States period drove innovations in iron casting, crossbows, and large-scale irrigation.",
     "difficulty": "hard",
@@ -10967,7 +10987,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -221
   },
   {
     "name": "polynesian-easter-island-settlement",
@@ -11042,7 +11063,7 @@
   {
     "name": "nalanda-university",
     "friendly_name": "Nalanda University Flourishes",
-    "year": 500,
+    "year": 427,
     "category": "commerce",
     "description": "Nalanda in Bihar, India became one of the world's first residential universities, attracting scholars across Asia.",
     "difficulty": "hard",
@@ -11051,7 +11072,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "heavy-plow",
@@ -11126,7 +11148,7 @@
   {
     "name": "iron-smelting-bantu-expansion",
     "friendly_name": "Bantu Spread Iron Smelting",
-    "year": 500,
+    "year": -400,
     "category": "agriculture",
     "description": "Bantu-speaking peoples spread iron smelting technology across sub-Saharan Africa during their centuries-long migration.",
     "difficulty": "hard",
@@ -11135,7 +11157,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "polynesian-wayfinding-techniques",
@@ -11360,7 +11383,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 645
   },
   {
     "name": "maya-astronomical-calendar",
@@ -11408,7 +11432,7 @@
   {
     "name": "moldboard-plow-adoption",
     "friendly_name": "Moldboard Plow Adopted",
-    "year": 700,
+    "year": 750,
     "category": "agriculture",
     "description": "The moldboard plow turned heavy northern European soils more effectively, boosting agricultural productivity.",
     "difficulty": "hard",
@@ -11417,7 +11441,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 830
   },
   {
     "name": "manuscript-culture-monks",
@@ -11478,7 +11503,7 @@
   {
     "name": "abbassid-science-translation",
     "friendly_name": "Abbasid Translation Movement",
-    "year": 800,
+    "year": 750,
     "category": "writing",
     "description": "The Abbasid House of Wisdom in Baghdad translated Greek, Persian, and Indian scientific texts into Arabic.",
     "difficulty": "medium",
@@ -11487,7 +11512,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 950
   },
   {
     "name": "horse-plough-agriculture",
@@ -11822,7 +11848,7 @@
   {
     "name": "crossbow-tension-mechanism",
     "friendly_name": "Crossbow Tension Mechanism",
-    "year": -400,
+    "year": -475,
     "category": "craft",
     "description": "Chinese engineers developed bronze crossbow trigger mechanisms during the Warring States period for military use.",
     "difficulty": "medium",
@@ -11831,7 +11857,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -221
   },
   {
     "name": "horse-collar-adoption",
@@ -11878,7 +11905,7 @@
   {
     "name": "khwarezm-al-biruni",
     "friendly_name": "Al-Biruni Studies in Khwarezm",
-    "year": 1000,
+    "year": 973,
     "category": "architecture",
     "description": "Polymath al-Biruni studied astronomy, mathematics, and geography in Khwarezm before traveling to India.",
     "difficulty": "hard",
@@ -11887,7 +11914,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 998
   },
   {
     "name": "cahokia-woodhenge",
@@ -12116,7 +12144,7 @@
   {
     "name": "paper-technology-spreads",
     "friendly_name": "Paper Technology Spreads to Europe",
-    "year": 1150,
+    "year": 1056,
     "category": "writing",
     "description": "Papermaking technology, originating in China, spread through the Islamic world to reach Europe via Spain and Italy.",
     "difficulty": "medium",
@@ -12125,7 +12153,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1340
   },
   {
     "name": "first-greenhouse",
@@ -12406,7 +12435,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1050
   },
   {
     "name": "maori-settlement-new-zealand",
@@ -12448,7 +12478,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1299
   },
   {
     "name": "gunpowder-cannons-develop",
@@ -12617,7 +12648,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1600
   },
   {
     "name": "magnifying-glass-single-lens",
@@ -12790,7 +12822,7 @@
   {
     "name": "joseon-scientific-innovation",
     "friendly_name": "Joseon Scientific Advances",
-    "year": 1442,
+    "year": 1433,
     "category": "writing",
     "description": "The Joseon Dynasty under King Sejong produced rain gauges, sundials, and celestial globes advancing Korean science.",
     "difficulty": "very-hard",
@@ -12799,7 +12831,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1442
   },
   {
     "name": "eyeglass-improvements",
@@ -12832,7 +12865,7 @@
   {
     "name": "printing-press-diffusion",
     "friendly_name": "Printing Press Spreads",
-    "year": 1470,
+    "year": 1450,
     "category": "writing",
     "description": "Gutenberg's printing press technology spread rapidly across Europe, with print shops in most major cities within a decade.",
     "difficulty": "easy",
@@ -12841,7 +12874,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1500
   },
   {
     "name": "inca-terrace-agriculture",
@@ -12874,7 +12908,7 @@
   {
     "name": "polynesian-settlement-expansion",
     "friendly_name": "Last Pacific Islands Settled",
-    "year": 1250,
+    "year": 1200,
     "category": "migration",
     "description": "One rapid push settled the last unpeopled islands on earth, reaching Aotearoa, Hawaii, and Rapa Nui within a century.",
     "difficulty": "hard",
@@ -12883,7 +12917,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "melanesian-settlement",
@@ -12930,7 +12965,7 @@
   {
     "name": "coffee-cultivation-expansion",
     "friendly_name": "Ottoman Coffee Cultivation",
-    "year": 1500,
+    "year": 1454,
     "category": "agriculture",
     "description": "Coffee cultivation expanded from Ethiopia and Yemen throughout the Ottoman Empire, with coffeehouses spreading rapidly.",
     "difficulty": "medium",
@@ -12939,7 +12974,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1554
   },
   {
     "name": "enclosure-movement-begins",
@@ -13359,7 +13395,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1611
   },
   {
     "name": "telescope-invention",
@@ -13880,7 +13917,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1769
   },
   {
     "name": "arkwright-water-frame",

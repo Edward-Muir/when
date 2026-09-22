@@ -18,11 +18,36 @@
  * balance concern. The apply script still prints the widest ranges and any fully nested pairs
  * so a mis-keyed digit is visible, but nothing is rejected for width.
  *
- * Plain CommonJS with no dependencies, so `node` runs the report/apply scripts with no build
- * step and the Jest corpus test can `require` it across the tsconfig boundary. Same
+ * Plain CommonJS with no third-party dependencies, so `node` runs the report/apply scripts
+ * with no build step and the Jest corpus test can `require` it across the tsconfig boundary. Same
  * arrangement as `date-clues.js` and `themes/catalogue.js` — and the point of sharing it is
  * that the script and the test cannot drift into disagreeing about what is valid.
  */
+
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * The decided ledger: `slug -> one-clause reason this card is a moment`.
+ *
+ * Committed, unlike the maps under `untracked_data/`, because it is the only durable record
+ * that an event was reviewed and left alone. A gitignored ledger is lost on the first fresh
+ * checkout and the sweep silently restarts from zero. It lives under `scripts/` rather than
+ * `public/` so it never ships to a player or touches the runtime fetch path.
+ */
+const DECIDED_PATH = path.join(__dirname, 'year-range-decided.json');
+
+function readDecided() {
+  if (!fs.existsSync(DECIDED_PATH)) return {};
+  return JSON.parse(fs.readFileSync(DECIDED_PATH, 'utf8'));
+}
+
+/** Keys sorted, so a re-run of the same content produces no diff and waves merge cleanly. */
+function writeDecided(decided) {
+  const sorted = {};
+  for (const slug of Object.keys(decided).sort()) sorted[slug] = decided[slug];
+  fs.writeFileSync(DECIDED_PATH, JSON.stringify(sorted, null, 2) + '\n');
+}
 
 /** Mirrors `eventEnd` in src/utils/gameLogic.ts, which clamps rather than trusts. */
 function rangeOf(event) {
@@ -36,13 +61,44 @@ function isRanged(event) {
   return end > start;
 }
 
-/** Span nouns in a title are the strongest signal that a card names a period, not a moment. */
+/**
+ * Span nouns in a title are the strongest signal that a card names a period, not a moment.
+ *
+ * **Every plural used to miss.** The `\b` wrapped the whole alternation, so `wars`, `empires`,
+ * `kingdoms`, `dynasties` and `reigns` all failed to match and `Hussite Wars` came back with no
+ * signals at all — `crusades?` was the only member carrying its own plural, which is the tell
+ * that this was noticed once and not generalised. The plural-bearing nouns now sit in their own
+ * group with a trailing `s?`.
+ *
+ * `rule` is deliberately left out of that group: "rules" is a false friend that fires on every
+ * card about a rulebook ("set unified rules for soccer"). Same for the nouns that have no
+ * natural plural here.
+ */
 const SPAN_NOUN = new RegExp(
   [
-    '\\b(?:era|age|period|dynasty|empire|kingdom|republic|reign|rule|caliphate',
-    '|renaissance|crusades?|revolution|war|plague|famine|migration|construction',
-    '|reformation|collapse|decline|rise|expansion|settlement|domestication',
-    '|golden age|adoption|spread)\\b',
+    '\\b(?:era|age|period|empire|kingdom|republic|reign|caliphate|crusade|revolution',
+    '|war|plague|famine|migration|collapse|expansion|settlement|reformation)s?\\b',
+    '|\\bdynast(?:y|ies)\\b',
+    '|\\b(?:rule|renaissance|construction|domestication|decline|rise|golden age',
+    '|adoption|spread)\\b',
+  ].join(''),
+  'i'
+);
+
+/**
+ * A weaker second tier, reported under its own signal names so a writer knows how much to trust
+ * the flag. A `process-noun` hit on `Siege of Masada` deserves more suspicion than a `span-noun`
+ * hit on `Hussite Wars`: these words attach to plenty of single dated events, and `culture` and
+ * `tradition` in particular fire on cards that are plainly moments.
+ *
+ * The tiers are kept separate rather than merged for exactly that reason. The signal name is the
+ * only thing carrying this distinction to the writer.
+ */
+const PROCESS_NOUN = new RegExp(
+  [
+    '\\b(?:siege|revolt|uprising|rebellion|conquest|campaign|occupation|movement',
+    '|civilisation|civilization|sultanate|shogunate|khanate|confederation',
+    '|colonisation|colonization|culture|tradition)s?\\b',
   ].join(''),
   'i'
 );
@@ -74,6 +130,8 @@ function eventRangeSignals(event) {
 
   if (SPAN_NOUN.test(name)) signals.push('span-noun-in-name');
   else if (SPAN_NOUN.test(description)) signals.push('span-noun-in-description');
+  else if (PROCESS_NOUN.test(name)) signals.push('process-noun-in-name');
+  else if (PROCESS_NOUN.test(description)) signals.push('process-noun-in-description');
 
   if (DURATION_PHRASE.some((p) => new RegExp(p, 'i').test(description))) {
     signals.push('duration-phrase');
@@ -86,9 +144,51 @@ function eventRangeSignals(event) {
   return signals;
 }
 
+/** The extra demands a `year` move makes. Split out to keep `entryProblems` under the ceiling. */
+function yearMoveProblems(slug, entry) {
+  const problems = [];
+  if (!Number.isInteger(entry.year)) {
+    problems.push(`${slug}: year must be an integer, got ${JSON.stringify(entry.year)}`);
+  }
+  if (!entry.reason || typeof entry.reason !== 'string') {
+    problems.push(
+      `${slug}: moving year needs a "reason" naming the evidence (it re-scores neighbours` +
+        ' through difficultyScore and moves daily decks)'
+    );
+  }
+  return problems;
+}
+
+/** What a `year_end: null` entry — read, judged a moment, no window — must carry. */
+function rejectionProblems(slug, entry, event) {
+  const problems = [];
+  if (isRanged(event)) {
+    problems.push(
+      `${slug}: rejected as a moment, but the catalogue already gives it the window ` +
+        `${event.year}-${event.year_end} — a rejection never removes one`
+    );
+  }
+  if (!entry.note || typeof entry.note !== 'string') {
+    problems.push(
+      `${slug}: a rejection (year_end: null) needs a "note" naming why this is a moment` +
+        ' — a terse clause is enough, but the ledger is a record, not a blacklist'
+    );
+  }
+  return problems;
+}
+
 /**
  * Everything wrong with a proposed `{ year_end, year?, reason?, note? }` entry, as a list of
  * sentences. Empty means it is applicable.
+ *
+ * **`year_end: null` is a first-class outcome, not a malformed entry.** It means "read this
+ * card, judged it a moment, no window" and is recorded in the decided ledger
+ * (`year-range-decided.json`) rather than written to the catalogue. Without it a rejected
+ * candidate is indistinguishable from an unworked one, which is unworkable across a sweep of
+ * the whole catalogue: the report script cannot be a progress meter if reviewing an event
+ * leaves no trace. A rejection carries a mandatory `note` for the same reason the backlog
+ * records why a finding was dismissed — so nobody re-opens it — and it may still carry a
+ * `year` + `reason`, for a card whose stored date is wrong but which is still a moment.
  *
  * **`year` is writable, but only with a `reason`.** The stored year is not a constant to be
  * preserved: where the record puts the window somewhere else, the window start moves. The
@@ -118,21 +218,13 @@ function entryProblems(slug, entry, event) {
 
   const movesYear = Object.prototype.hasOwnProperty.call(entry, 'year');
   const year = movesYear ? entry.year : event.year;
-  if (movesYear) {
-    if (!Number.isInteger(year)) {
-      problems.push(`${slug}: year must be an integer, got ${JSON.stringify(entry.year)}`);
-    }
-    if (!entry.reason || typeof entry.reason !== 'string') {
-      problems.push(
-        `${slug}: moving year needs a "reason" naming the evidence (it re-scores neighbours` +
-          ' through difficultyScore and moves daily decks)'
-      );
-    }
-  }
+  if (movesYear) problems.push(...yearMoveProblems(slug, entry));
 
   const end = entry.year_end;
+  if (end === null) return problems.concat(rejectionProblems(slug, entry, event));
+
   if (!Number.isInteger(end)) {
-    problems.push(`${slug}: year_end must be an integer, got ${JSON.stringify(end)}`);
+    problems.push(`${slug}: year_end must be an integer or null, got ${JSON.stringify(end)}`);
     return problems;
   }
   if (end === year) {
@@ -149,9 +241,18 @@ function entryProblems(slug, entry, event) {
   return problems;
 }
 
+/** A decided-no-window entry. Defined here so the apply script and the test agree on it. */
+function isRejection(entry) {
+  return Boolean(entry) && entry.year_end === null;
+}
+
 module.exports = {
+  DECIDED_PATH,
+  readDecided,
+  writeDecided,
   rangeOf,
   isRanged,
+  isRejection,
   eventRangeSignals,
   entryProblems,
 };

@@ -144,6 +144,54 @@ started in the wrong place.
   stored value is unrounded like -201400000) carries a published age with an error bar, not a
   window, and is among the most defensible single years in the catalogue.
 
+### The catalogue has been swept (2026-09-19)
+
+**Every event in the manifest has now been reviewed and carries a verdict**, so do not re-run
+this from scratch. 675 of 5,460 carry a window (12.4%, up from 255), 4,785 are recorded as
+moments, and **nothing remains** — `year-range-report.js` reads 0.
+
+The sweep took two days. The first pass reviewed all 5,205 un-ranged events and left 644 windows,
+4,807 ledger entries and 9 unresolved cards. It also drained the session's shared WebSearch
+budget partway through, which rejected a run of genuinely period-shaped cards for want of a
+source rather than on the merits. The second day re-ran those 58, plus the 9: 31 more windows,
+and the rest re-rejected with real reasons. See the backlog for what that re-reading turned up.
+
+- **The decided ledger is `scripts/events/year-range-decided.json`**, `slug -> why this card is
+a moment`, written by `year-range-apply.js` from `year_end: null` entries and committed. It
+  exists because "reviewed and left alone" is the commonest outcome of a sweep and had nowhere
+  to live: without it the report script cannot tell an event nobody has looked at from one four
+  readers have each dismissed. `eventYearRange.test.ts` pins it to the catalogue — every ledger
+  slug resolves, carries a reason, and does not also carry a `year_end`.
+- **`eventRangeSignals` is a per-record hint now, not the worklist.** `--all` sweeps everything
+  and an empty `signals` array is itself the hint that nothing flagged this card. The old
+  `SPAN_NOUN` missed every plural, so `Hussite Wars` and `Three Kingdoms` returned nothing at
+  all; that is fixed, and a weaker `process-noun` tier reports under its own names so a writer
+  can tell a `siege` hit from a `dynasty` hit.
+- **The rule that decided the most cards is the title one.** A card whose title says Begins,
+  Founded, Established, Starts or Outbreak names that act, not the span that followed. It is
+  what separates `Jewish Revolt Against Rome` (66-73) from `Peloponnesian War Begins`, and it
+  is why `Pax Romana Begins`, `Delhi Sultanate Established` and `Kangxi Begins Reign` are all
+  single years.
+- **A span inside one calendar year cannot be expressed at all**, since `year_end` is an integer
+  year that must exceed `year`. The 1974 Bengal famine and the 1518 dancing plague are points
+  for that reason, not by oversight.
+- **A session's WebSearch budget is one pool shared by every sub-agent**, and a sweep this size
+  drains it. WebFetch against Wikipedia draws on no such pool and is the documented fallback in
+  the `set-evidence-window` skill. The re-run showed how lopsided that trade is: six readers
+  covering 67 cards spent **3 WebSearch calls between them** and sourced everything else by
+  fetching the article directly. Reach for the fetch first and the budget stops being a
+  constraint at all.
+- **The list of what to re-run belongs in the ledger, not in prose.** The backlog's own list of
+  source-starved rejections had four slugs that did not exist, one already done, and was missing
+  seven. Grepping `year-range-decided.json` for the wording those notes used found the real set
+  in one command.
+- **Where two sourced reviews of one card disagreed about the window's start by more than fifty
+  years, no year moved.** Disagreement that wide is evidence the record is not settled, and the
+  anchor is the field that moves daily decks.
+- **Deck impact, measured either side of each year-move commit on the same day: 3 and 3 on the
+  first day, then 3 and 4 for the re-run's 24 moves.** The bound stays at 12. Note the
+  measurement is date-dependent, so the 6 recorded for the pass before these is not comparable.
+
 The rule that consumes this field, and why the obvious version of it is unsound, is in
 [../gameplay-feel/index.md](../gameplay-feel/index.md).
 

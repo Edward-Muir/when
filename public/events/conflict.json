@@ -178,7 +178,7 @@
   {
     "name": "siege-syracuse",
     "friendly_name": "Siege of Syracuse",
-    "year": -212,
+    "year": -213,
     "category": "warfare",
     "description": "Rome besieged Syracuse where Archimedes' war machines defended the city.",
     "difficulty": "hard",
@@ -189,7 +189,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Syracuse_(213–212_BC)",
     "color": "#2d251a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -212
   },
   {
     "name": "battle-zama",
@@ -237,7 +238,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Spartacus",
     "color": "#3d2a20",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -71
   },
   {
     "name": "crossing-rubicon",
@@ -317,7 +319,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Jewish–Roman_War",
     "color": "#242021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 73
   },
   {
     "name": "siege-masada",
@@ -349,7 +352,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Bar_Kokhba_revolt",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 135
   },
   {
     "name": "battle-adrianople",
@@ -434,7 +438,7 @@
   {
     "name": "arab-conquest-persia",
     "friendly_name": "Arab Conquest of Persia",
-    "year": 651,
+    "year": 633,
     "category": "empires",
     "description": "Muslim forces conquered the Sasanian Empire, ending 400 years of Persian rule.",
     "difficulty": "medium",
@@ -445,7 +449,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Muslim_conquest_of_Persia",
     "color": "#242020",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 651
   },
   {
     "name": "battle-tours",
@@ -589,7 +594,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Kievan_Rus'",
     "color": "#353432",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1240
   },
   {
     "name": "mongol-baghdad",
@@ -830,7 +836,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Imjin_War",
     "color": "#2b2c2e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1598
   },
   {
     "name": "thirty-years-war-begins",
@@ -958,7 +965,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Glorious_Revolution",
     "color": "#7b8790",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1689
   },
   {
     "name": "great-northern-war",
@@ -1022,7 +1030,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Jacobite_rising_of_1745",
     "color": "#271f1c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1746
   },
   {
     "name": "seven-years-war-start",
@@ -1454,7 +1463,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Revolutions_of_1848",
     "color": "#23211e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1849
   },
   {
     "name": "taiping-rebellion",
@@ -1806,7 +1816,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russo-Japanese_War",
     "color": "#372b22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1905
   },
   {
     "name": "first-russian-revolution",
@@ -1822,7 +1833,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Russian_Revolution_of_1905",
     "color": "#2c1d16",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1907
   },
   {
     "name": "battle-tsushima",
@@ -1870,7 +1882,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chinese_Revolution",
     "color": "#5b3c2b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1912
   },
   {
     "name": "wwi-start",
@@ -2222,7 +2235,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
     "color": "#35251c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1945
   },
   {
     "name": "rape-nanking",
@@ -2670,7 +2684,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Suez_Crisis",
     "color": "#a4b0b4",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1957
   },
   {
     "name": "hungarian-revolution",
@@ -2718,7 +2733,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Congo_Crisis",
     "color": "#48464a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1965
   },
   {
     "name": "bay-of-pigs",
@@ -3054,7 +3070,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Khmer_Rouge_insurgency",
     "color": "#38464e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1979
   },
   {
     "name": "angolan-civil-war",
@@ -3075,7 +3092,7 @@
   {
     "name": "iranian-revolution",
     "friendly_name": "Iranian Revolution",
-    "year": 1979,
+    "year": 1978,
     "category": "revolution",
     "description": "Islamic revolutionaries overthrew the Shah and established a theocratic republic.",
     "difficulty": "medium",
@@ -3086,7 +3103,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iranian_Revolution",
     "color": "#333e47",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1979
   },
   {
     "name": "soviet-afghanistan",
@@ -3182,7 +3200,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Intifada",
     "color": "#46545d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1993
   },
   {
     "name": "berlin-wall-fall",
@@ -3966,7 +3985,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Pisistratus",
     "color": "#261f21",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -527
   },
   {
     "name": "battle-leuctra",
@@ -4094,7 +4114,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Yellow_Turban_Rebellion",
     "color": "#532e26",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 205
   },
   {
     "name": "battle-milvian-bridge",
@@ -4142,7 +4163,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Vandal_Kingdom",
     "color": "#232021",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 439
   },
   {
     "name": "vandals-take-carthage",
@@ -4190,7 +4212,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Fitna",
     "color": "#22211c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 661
   },
   {
     "name": "battle-of-guadalete",
@@ -4238,7 +4261,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/An_Lushan_rebellion",
     "color": "#22211f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 763
   },
   {
     "name": "great-heathen-army",
@@ -4254,7 +4278,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Heathen_Army",
     "color": "#2e3131",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 878
   },
   {
     "name": "battle-of-hastings",
@@ -4702,7 +4727,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain",
     "color": "#676a6a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 84
   },
   {
     "name": "battle-of-badr",
@@ -4755,7 +4781,7 @@
   {
     "name": "arab-conquest-of-egypt",
     "friendly_name": "Arab Conquest of Egypt",
-    "year": 641,
+    "year": 639,
     "category": "empires",
     "description": "Amr ibn al-As led Arab forces to conquer Byzantine Egypt, ending over 900 years of Greco-Roman rule and beginning the Islamization of the region.",
     "difficulty": "medium",
@@ -4766,7 +4792,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Arab_conquest_of_Egypt",
     "color": "#352419",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 642
   },
   {
     "name": "battle-of-talas",
@@ -4990,7 +5017,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/King_Philip's_War",
     "color": "#2b1d19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1678
   },
   {
     "name": "siege-of-derry",
@@ -5070,7 +5098,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_Jenkins'_Ear",
     "color": "#281f19",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1748
   },
   {
     "name": "war-of-austrian-succession-begins",
@@ -5214,7 +5243,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857",
     "color": "#1e2223",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1858
   },
   {
     "name": "sand-creek-massacre",
@@ -5262,7 +5292,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_Pacific",
     "color": "#393b3a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1884
   },
   {
     "name": "first-boer-war",
@@ -5278,7 +5309,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Boer_War",
     "color": "#1e2126",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1881
   },
   {
     "name": "assassination-of-alexander-ii",
@@ -5358,7 +5390,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Sino-Japanese_War",
     "color": "#3d3c39",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1895
   },
   {
     "name": "philippine-american-war",
@@ -5374,7 +5407,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Philippine–American_War",
     "color": "#20221e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1902
   },
   {
     "name": "assassination-of-mckinley",
@@ -5438,7 +5472,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Herero_and_Nama_genocide",
     "color": "#492714",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1908
   },
   {
     "name": "potemkin-mutiny",
@@ -5470,7 +5505,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Balkan_War",
     "color": "#382b1e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1913
   },
   {
     "name": "second-balkan-war",
@@ -5614,7 +5650,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Turkish_War_of_Independence",
     "color": "#271f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1923
   },
   {
     "name": "katyn-massacre",
@@ -5710,7 +5747,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/1948_Arab–Israeli_War",
     "color": "#b5ad9b",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1949
   },
   {
     "name": "tibet-invasion",
@@ -5806,7 +5844,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Leap_Forward",
     "color": "#281e22",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1962
   },
   {
     "name": "sharpeville-massacre",
@@ -5934,7 +5973,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Iran_hostage_crisis",
     "color": "#273542",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1981
   },
   {
     "name": "john-lennon-killed",
@@ -6094,7 +6134,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_invasion_of_Panama",
     "color": "#1d2129",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1990
   },
   {
     "name": "siege-of-sarajevo-begins",
@@ -6346,7 +6387,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -50
   },
   {
     "name": "siege-of-jerusalem-70ce",
@@ -6388,7 +6430,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 89
   },
   {
     "name": "battle-of-wei-qiao",
@@ -6416,7 +6459,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -108
   },
   {
     "name": "punic-wars-second",
@@ -6430,7 +6474,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -201
   },
   {
     "name": "aurelian-reunites-empire",
@@ -6500,7 +6545,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 408
   },
   {
     "name": "anglo-saxon-migration",
@@ -6514,7 +6560,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 600
   },
   {
     "name": "attila-hunnic-invasions",
@@ -6528,7 +6575,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 452
   },
   {
     "name": "battle-of-catalaunian-plains",
@@ -6612,7 +6660,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 554
   },
   {
     "name": "belisarius-gothic-war",
@@ -6626,7 +6675,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 540
   },
   {
     "name": "standing-army",
@@ -6654,7 +6704,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/gokturk-empire-expansion_szxl0k?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 581
   },
   {
     "name": "stirrup-adoption-europe",
@@ -6687,7 +6738,7 @@
   {
     "name": "heraclius-campaigns-persia",
     "friendly_name": "Heraclius Defeats Chosroes II",
-    "year": 627,
+    "year": 624,
     "category": "warfare",
     "description": "Byzantine Emperor Heraclius launched a daring counter-invasion of Persia, winning the decisive Battle of Nineveh.",
     "difficulty": "very-hard",
@@ -6696,7 +6747,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 628
   },
   {
     "name": "battle-of-mu-ta",
@@ -6794,7 +6846,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 804
   },
   {
     "name": "viking-raids-begin",
@@ -6864,7 +6917,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1014
   },
   {
     "name": "gunpowder-china-adoption",
@@ -6963,7 +7017,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1149
   },
   {
     "name": "dorian-invasion",
@@ -7033,7 +7088,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1192
   },
   {
     "name": "maya-postclassic-conflicts",
@@ -7047,7 +7103,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1441
   },
   {
     "name": "tonga-tongan-conquest",
@@ -7145,7 +7202,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1221
   },
   {
     "name": "mongol-invasions-europe",
@@ -7187,7 +7245,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1250
   },
   {
     "name": "long-bow-english-development",
@@ -7257,7 +7316,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1316
   },
   {
     "name": "champa-vietnam-conflicts",
@@ -7299,7 +7359,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1311
   },
   {
     "name": "mali-civil-war",
@@ -7398,7 +7459,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1434
   },
   {
     "name": "ottoman-siege-galata",
@@ -7426,7 +7488,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1469
   },
   {
     "name": "gunpowder-military-adoption-europe",
@@ -7483,7 +7546,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1493
   },
   {
     "name": "inca-tupac-amaru",
@@ -7539,12 +7603,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1528
   },
   {
     "name": "oromo-expansion",
     "friendly_name": "Oromo Expansion in East Africa",
-    "year": 1520,
+    "year": 1522,
     "category": "migration",
     "description": "Oromo pastoralists migrated northward through the Ethiopian highlands, reshaping the region's demographics.",
     "difficulty": "very-hard",
@@ -7553,7 +7618,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "ming-great-wall",
@@ -7595,7 +7661,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1532
   },
   {
     "name": "kanem-bornu-gunpowder-adoption",
@@ -7805,7 +7872,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1598
   },
   {
     "name": "oda-nobunaga-unification",
@@ -7819,7 +7887,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1582
   },
   {
     "name": "ottoman-janissary-corps",
@@ -7861,7 +7930,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1598
   },
   {
     "name": "russo-swedish-wars",
@@ -7917,7 +7987,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1672
   },
   {
     "name": "shimabara-rebellion",
@@ -7945,7 +8016,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1668
   },
   {
     "name": "swedish-empire-peak",
@@ -8169,7 +8241,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1739
   },
   {
     "name": "frederick-great-militarism",
@@ -8188,7 +8261,7 @@
   {
     "name": "qing-xinjiang-conquest",
     "friendly_name": "Qing Conquest of Xinjiang",
-    "year": 1759,
+    "year": 1755,
     "category": "empires",
     "description": "The Qing Dynasty conquered the Dzungar Khanate and incorporated Xinjiang, nearly doubling China's territory.",
     "difficulty": "hard",
@@ -8197,7 +8270,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1759
   },
   {
     "name": "burmese-siamese-wars",
@@ -8211,7 +8285,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1767
   },
   {
     "name": "ayutthaya-fall",
@@ -8239,7 +8314,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1789
   },
   {
     "name": "washington-appointed-commander",
@@ -8267,7 +8343,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1778
   },
   {
     "name": "war-declared-austria",
@@ -8365,7 +8442,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1840
   },
   {
     "name": "sotho-moshoeshoe-reforms",
@@ -8393,7 +8471,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1840
   },
   {
     "name": "opium-wars-second",
@@ -8407,7 +8486,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1860
   },
   {
     "name": "american-civil-war",
@@ -8449,7 +8529,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/airlangga-unites-java_gme5wu?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1042
   },
   {
     "name": "demak-sultanate-founded",
@@ -8519,7 +8600,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/japanese-occupation-indies_l7qjmh?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1945
   },
   {
     "name": "suharto-new-order",

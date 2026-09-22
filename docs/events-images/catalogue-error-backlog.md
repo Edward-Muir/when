@@ -260,6 +260,189 @@ inconsistency is preserved rather than half-fixed. Fixing it properly means audi
 pre-Holocene card, and the payoff is small above ~20,000 years ago. Worth doing for the
 Holocene-adjacent ones if anyone touches that era again.
 
+## Raised by the catalogue-wide sweep (2026-09-19)
+
+The 2026-09-18 pass worked the shards a heuristic flagged. This one reviewed **every one of the
+5,205 un-ranged events**: 644 carried a window, 4,807 were recorded in
+`scripts/events/year-range-decided.json` as moments with a reason each, and 9 were left
+unresolved. A re-run the following day closed the last of it, so **every event in the manifest
+now has a verdict**: 675 with a window, 4,785 in the ledger, nothing remaining. What the readers
+found that a window cannot fix is recorded here.
+
+### The nine unresolved cards, resolved (2026-09-19)
+
+All nine now carry a verdict, so the report script counts none of them. Three took a window and
+six are rejections whose reasoning is in the ledger rather than only here.
+
+**Windows, with the anchor deliberately left alone.** `lapita-pottery-trade` -1000..-500 and
+`poverty-point-earthworks` -1500..-1200 are both on the "checked and judged defensible as stored"
+list above, so a reviewer re-proposing a year move was a false positive both times. What the
+earlier passes were reaching for was a window, not a different point, and the schema now
+expresses it. `bantu-expansion-africa` is -400..500 with its `year` moved, on which see below.
+
+**Rejections, and what makes each one final.** `gupta-golden-age`, `nok-civilization-nigeria`,
+`tiwanaku-monumental-center` and `swahili-stone-architecture` were each reviewed a third time and
+the disagreement held: sourced readings of the start sit more than fifty years apart (Gupta:
+the 320 empire founding against Samudragupta's c. 335 and Chandragupta II's 375; Nok still spans
+600 years). `silk-road-trade` and `bantu-expansion` have no dateable referent for their own claim
+— "Flourishes" at 1100 and "completed centuries of migration" at 1000 are not events any source
+places there.
+
+**One verdict was overturned in review.** `gupta-golden-age` came back from a reader with `year`
+moved to 335 and a window to 455, on the argument that the spread "resolves" to Samudragupta's
+accession. It does not, and that reader's own reason named the 320/335/375 spread while claiming
+to settle it. This is precisely the case the fifty-year rule exists for, and the anchor is the
+field that moves daily decks. The lesson is narrow and worth keeping: **a third sourced reading
+that picks one of the two earlier readings has not settled anything.** It has made it three.
+
+**`bantu-expansion-africa` is the one where the earlier objection was itself the answer.** It was
+stuck because every proposed move went to the start of the whole expansion, c. 4000 BC, which the
+card's "carrying iron-working" claim does not support. But the iron has its own date: definitive
+archaeological evidence of Bantu iron use from c. 400 BC, running to the Limpopo by AD 500. The
+window is the card's claim, and it is -400..500. The reader who worked it kept the stored 100 as
+the start and sourced only the end, which is the forward-only mistake in miniature; it was
+rewritten on review.
+
+### Records the sources do not support
+
+- `female-ruler-sargon` ("Enmersi of Kish", -2295) claims to be recorded on the Sumerian King
+  List. No ruler of that name or any close variant appears on it. Needs a factual review.
+- `rozwi-stone-fortifications`: the Rozwi are documented as having rarely built in stone and as
+  having occupied existing ruins, which contradicts the card's premise.
+- `damascus-steel-pattern` says pattern welding was "developed in Persia". Pattern welding is
+  attested in Europe by c. 1100 BCE; wootz originated in India and Sri Lanka and reached Persia
+  by trade. Neither tradition is Persian in origin.
+- `kowoj-maya-settlement` stored at 1000, but the Kowoj appear as a distinct group only after the
+  Mayapan collapse (post-1441).
+- `moldboard-plow-improvements` (1400) sits in a documented gap: general adoption was 8th-9th
+  century, the major design improvements 18th.
+- `enclosure-movement` stored 1500 matches no sourced phase of English enclosure.
+- `petra-treasury-carved` stored -100; sources place Al-Khazneh in the late 1st c. BCE to
+  early-mid 1st c. CE, commonly tied to Aretas IV.
+- `legalist-philosophy-qi`: Legalism is attested in Qin, not Qi.
+- `dahomey-rise-power` (1718): the description credits Agaja's predecessors, who reigned entirely
+  before the stored year.
+- `sikh-movement-begins` (1499) describes Guru Nanak's birth; his birth is 1469, and 1499 is the
+  start of his mission.
+- `kabuki-women-actors` conflates the 1629 ban on women with the 1652 ban on wakashu actors.
+
+### Title and description disagree about scope
+
+`global-financial-crisis` (titled for the crisis, described as the Lehman collapse),
+`cambodian-genocide` ("Khmer Rouge Takes Power" against a genocide description),
+`polish-soviet-war` (titled for the war, described as the Battle of Warsaw),
+`inca-tupac-amaru` (slugged for Tupac Amaru, describing Pachacuti's Titicaca conquest),
+`second-french-empire` and `directory-period` (period titles, founding descriptions).
+
+### Duplicate and near-duplicate clusters
+
+`timbuktu-university-development` / `timbuktu-university` / `songhai-university-timbuktu` ·
+`maya-classical-period` / `mayan-classic-period` / `maya-cities-peak` ·
+`heian-aesthetic-culture` / `heian-period-cultural-peak` / `heian-women-literature` ·
+`bantu-expansion` / `bantu-expansion-africa` / `iron-smelting-bantu-expansion` ·
+`kilwa-khilafa-sultanate` / `kilwa-sultanate` / `kilwa-gold-monopoly` ·
+`polynesian-navigation-technology` / `polynesian-double-canoe-design` / `polynesian-star-compass` ·
+`colosseum-architecture-ancient` / `vespasian-colosseum-begun` ·
+`dome-construction-mastery` / `florence-cathedral-dome` / `brunelleschi-dome` ·
+`gothic-cathedral-construction` / `chartres-cathedral-construction` ·
+`nan-madol-city-construction` / `nan-madol-basalt-engineering` ·
+`three-field-rotation` / `crop-rotation-system` · `water-mill` / `water-mill-europe` ·
+`nalanda-university` / `nalanda-university-science` ·
+`mayan-astronomical-calculations` / `mayan-astronomy` · `heavy-plow` / `heavy-plow-adoption` ·
+`terrace-farming-andes` / `inca-terrace-agriculture` ·
+`enclosure-movement` / `enclosure-movement-begins` · `kushana-empire` / `kushan-empire` ·
+`wari-empire-expansion` / `wari-empire` · `samarkand-library-school` / `samarkand-cultural-center` ·
+`benin-edo-kingdom` / `benin-bronze-casting-peak` · `majapahit-administrative-system` /
+`majapahit-expansion` · `kalidasa-drama` / `kalidasa-shakuntala` ·
+`cahokia-moundbuilder` / `mississippian-cahokia-settlement`.
+
+### Categories that look wrong
+
+`blood-bank-established` under `commerce`; `first-european-paper-mill` under `agriculture`;
+`eurotunnel-boring` under `media` beside two `architecture` siblings; `wilhelm-gustloff` and
+`munich-massacre` under `revolution`.
+
+### A schema limit, not an error
+
+A span inside one calendar year cannot be written, because `year_end` is an integer year and
+must exceed `year`. So the 1974 Bengal famine (Mar-Dec), the 1518 dancing plague (Jul-Sep), the
+1931 China floods (Jun-Oct), the 2003 European heat wave, Deepwater Horizon, Fukushima, the
+siege of Masada, the 1886 world chess championship and the 1871 Paris Commune all stay points
+correctly. Worth knowing before someone "fixes" them.
+
+### Rejected for want of a source: re-run, and cleared (2026-09-19)
+
+The sweep's WebSearch budget ran out partway through the cultural shard and a run of genuinely
+period-shaped cards was rejected because nothing could be checked. **All of them have now been
+re-reviewed against sources and the section is closed.**
+
+Of 58 cards, **28 took a window and 30 were re-rejected on the merits.** A rate that high is not
+a slipped bar: this cohort was pre-selected as period-shaped, so it is the one batch where a
+normal two-or-three-in-forty result would have meant something was wrong.
+
+Three corrections to the list this section used to carry, all worth knowing before trusting a
+slug in this file:
+
+- **Four of its 52 slugs did not exist.** `nazca-pottery` is `nazca-pottery-style`,
+  `goguryeo-tomb-murals` is `goguryeo-murals-tombs`, `umayyad-mosaic-art` is
+  `umayyad-mosaics-art`, `islamic-calligraphy` is `islamic-calligraphy-tradition`. A slug written
+  from memory into a prose list is not checked by anything.
+- **`moche-civilization` was already done**, carrying a 300-600 window before the re-run started.
+- **Seven were missing from the list**, found by grepping the ledger for the wording its own
+  notes used ("not sourced this pass", "no verification available this session") rather than
+  trusting the prose: `anglo-saxon-manuscript-art`, `copan-ruler-18-rabbit`,
+  `irish-monastery-art`, `japanese-calligraphy-art`, `java-temple-sculpture`,
+  `moche-civilization-peru`, `phoenician-alphabet`. **The ledger is the index, not this file.**
+
+Deliberately **not** re-opened: the ~300 other ledger notes reading "no sourced bounds". They
+look similar and are not the same thing — an ongoing practice or a generic invention description
+with no sourceable ends is a correct Test D rejection, and re-opening them would re-litigate the
+sweep rather than repair it.
+
+### Raised by the re-run (2026-09-19)
+
+Reading these 67 records against sources turned up more that a window cannot fix.
+
+**Stored years that are stand-ins with nothing behind them**, found while rejecting the card:
+`baroque-period-peak` (1600), `champa-hindu-culture` (1100), `anglo-saxon-manuscript-art` (700),
+`goryeo-dynasty`, `haida-totem-poles`, `kuba-royal-masks`. Each is a "peak" or "tradition" card
+whose year no source supports and whose ends no source fixes, so the rejection is right and the
+year is still wrong.
+
+**Records the sources contradict:**
+
+- `kingdom-kush-flourishes` is stored -1500, which belongs to the **Kerma** culture. The Kingdom
+  of Kush proper is conventionally c. 780 BCE to 350 CE, and Kushite independence is c. 1070 BCE.
+  The card's year and its named subject are about different polities.
+- `king-david-rules` asserts a united monarchy ruled from Jerusalem that the record presents as
+  disputed in both date and extent.
+- `poverty-point-earthworks` understates its own subject: sourced construction begins c. 1800
+  BCE against a stored -1500. Left alone only because the anchor was ruled out of scope.
+- `yoruba-ife-kingdom` was stored at 1100, a full century before any sourced sculpture. Fixed
+  here by the move to 1200, but the stored value was wrong independently of any window.
+
+**Title, slug or category against content:**
+
+- `chavin-culture` is titled "Chavin Culture Peak" and its description covers the culture's whole
+  pan-Andean influence. No source identifies a distinct peak, so the window is the culture's full
+  -900..-250. The title is the part that is wrong.
+- `hoysala-dynasty` is slugged and filed (`diplomatic.json`) as a dynasty while its
+  `friendly_name`, description and category are all temple architecture.
+- `nazca-pottery-style` is categorised `architecture` and is entirely about pottery.
+- `vietnamese-nam-vu` looks like a typo for Nam tien.
+- `goryeo-dynasty` is titled "Goryeo Dynasty Peak", which names no datable event at all.
+
+**More near-duplicate clusters**, to add to the list below: `moche-civilization` (300-600) /
+`moche-civilization-peru` (100-800), the second being the culture and the first its peak, which
+is coherent but leaves two cards for one subject · `goryeo-dynasty` / `goryeo-celadon-pottery`,
+both resting on celadon · `kuba-kingdom` / `kuba-royal-masks` · `tokugawa-edo-period-culture`
+(1603-1868) / `ukiyo-e-art-development` (1670-1868), sharing an end date and most of a span.
+
+**A good rejection worth recording as calibration:** `igbo-ukwu-bronzes` was re-rejected because
+its 9th-century radiocarbon date is a point with an error bar, not a span of activity. That is
+Test C doing its job on a card whose earlier rejection note had said only that the dating was
+"disputed".
+
 ## Player-visible `description` and `friendly_name` errors
 
 Not year problems. Every one of these is text a player reads **before** placing the card, so an

@@ -209,7 +209,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
     "color": "#5a4231",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1200
   },
   {
     "name": "lion-gate-mycenae",
@@ -513,7 +514,8 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Zimbabwe",
     "color": "#a39d89",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1450
   },
   {
     "name": "leaning-tower-pisa",
@@ -2865,7 +2867,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -3100
   },
   {
     "name": "museum-alexandria-founded",
@@ -2991,7 +2994,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1155
   },
   {
     "name": "teotihuacan-pyramid-founded",
@@ -3080,7 +3084,7 @@
   {
     "name": "nabataean-petra-city",
     "friendly_name": "Petra Built as Nabataean Capital",
-    "year": -100,
+    "year": -300,
     "category": "architecture",
     "description": "Petra's iconic rock-cut architecture was carved as the Nabataean capital in modern-day Jordan.",
     "difficulty": "medium",
@@ -3089,12 +3093,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 106
   },
   {
     "name": "bactria-silk-road",
     "friendly_name": "Bactria Kingdom Major Silk Road Hub",
-    "year": -150,
+    "year": -250,
     "category": "trade",
     "description": "The Greco-Bactrian kingdom served as a crucial crossroads for Silk Road trade in Central Asia.",
     "difficulty": "hard",
@@ -3103,7 +3108,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -130
   },
   {
     "name": "aqueduct-pont-garros",
@@ -3131,7 +3137,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 128
   },
   {
     "name": "pantheon-rome-built",
@@ -3150,7 +3157,7 @@
   {
     "name": "moche-mound-construction",
     "friendly_name": "Moche Mound Platform Completed",
-    "year": 200,
+    "year": 100,
     "category": "architecture",
     "description": "The Moche civilization built massive adobe platform mounds, including the Huaca del Sol in northern Peru.",
     "difficulty": "hard",
@@ -3159,7 +3166,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "roman-roads-network",
@@ -3178,7 +3186,7 @@
   {
     "name": "hopewell-culture",
     "friendly_name": "Hopewell Culture Trade Networks",
-    "year": 200,
+    "year": -200,
     "category": "trade",
     "description": "Hopewell peoples maintained vast trade networks across eastern North America, exchanging obsidian, copper, and mica.",
     "difficulty": "very-hard",
@@ -3187,7 +3195,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 500
   },
   {
     "name": "damascus-steel-pattern",
@@ -3257,7 +3266,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 200
   },
   {
     "name": "beacon-fire-chains",
@@ -3355,7 +3365,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 565
   },
   {
     "name": "hanging-gardens-babylon",
@@ -3383,7 +3394,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ellora-caves_uazoqn?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1000
   },
   {
     "name": "first-sewer-system",
@@ -3411,7 +3423,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 800
   },
   {
     "name": "anglo-saxon-stone-churches",
@@ -3425,7 +3438,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 682
   },
   {
     "name": "palenque-city",
@@ -3523,7 +3537,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 999
   },
   {
     "name": "ghana-gold-trade",
@@ -3537,7 +3552,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "mound-builders",
@@ -3565,7 +3581,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 825
   },
   {
     "name": "jenne-city-foundation",
@@ -3593,7 +3610,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 856
   },
   {
     "name": "chichen-itza-peak",
@@ -3607,7 +3625,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "toltec-teotihuacan-influence",
@@ -3621,7 +3640,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1150
   },
   {
     "name": "pueblo-bonito",
@@ -3635,7 +3655,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1130
   },
   {
     "name": "canal-system",
@@ -3663,7 +3684,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "lapis-lazuli-trade",
@@ -3761,7 +3783,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1100
   },
   {
     "name": "kowoj-maya-settlement",
@@ -3831,12 +3854,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "romanesque-architecture-style",
     "friendly_name": "Romanesque Architecture",
-    "year": 1050,
+    "year": 1000,
     "category": "art",
     "description": "The Romanesque style emerged in Western Europe with massive stone churches and decorative arcading.",
     "difficulty": "medium",
@@ -3845,7 +3869,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1200
   },
   {
     "name": "mississippian-cahokia-settlement",
@@ -3859,7 +3884,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1350
   },
   {
     "name": "shwesandaw-pagoda",
@@ -3878,7 +3904,7 @@
   {
     "name": "chaco-canyon-development",
     "friendly_name": "Chaco Canyon Great Houses",
-    "year": 1075,
+    "year": 900,
     "category": "architecture",
     "description": "Chaco Canyon great houses expanded with multi-story masonry buildings serving as ceremonial centers.",
     "difficulty": "hard",
@@ -3887,7 +3913,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1115
   },
   {
     "name": "angkor-period-peak",
@@ -3934,7 +3961,7 @@
   {
     "name": "khmer-baray-hydraulics",
     "friendly_name": "Khmer Baray Reservoirs",
-    "year": 1100,
+    "year": 900,
     "category": "architecture",
     "description": "The Khmer Empire built massive barays (reservoirs) to manage water for agriculture around Angkor.",
     "difficulty": "hard",
@@ -3943,7 +3970,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1066
   },
   {
     "name": "angkor-wat-temple",
@@ -3957,7 +3985,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1150
   },
   {
     "name": "cahokia-moundbuilder",
@@ -3985,7 +4014,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1450
   },
   {
     "name": "gothic-architecture-emergence",
@@ -4055,7 +4085,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1280
   },
   {
     "name": "mesa-verde-cliff-dwellings",
@@ -4102,7 +4133,7 @@
   {
     "name": "chimor-chan-chan-city",
     "friendly_name": "Chan Chan Capital City Flourishes",
-    "year": 1200,
+    "year": 900,
     "category": "architecture",
     "description": "Chan Chan, the Chimu capital in Peru, became the largest adobe city in the Americas.",
     "difficulty": "hard",
@@ -4111,7 +4142,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1470
   },
   {
     "name": "rapa-nui-moai",
@@ -4153,7 +4185,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -500
   },
   {
     "name": "khwarezm-development-canal",
@@ -4270,7 +4303,7 @@
   {
     "name": "nan-madol-city-construction",
     "friendly_name": "Nan Madol City Built in Micronesia",
-    "year": 1200,
+    "year": 1180,
     "category": "architecture",
     "description": "Nan Madol was built on artificial islands off Pohnpei using massive basalt columns, a unique feat of engineering.",
     "difficulty": "very-hard",
@@ -4279,7 +4312,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1628
   },
   {
     "name": "pacific-northwest-cedar-houses",
@@ -4438,7 +4472,7 @@
   {
     "name": "buttress-flying-buttress",
     "friendly_name": "Flying Buttress Refinement",
-    "year": 1200,
+    "year": 1160,
     "category": "craft",
     "description": "Flying buttresses were refined in Gothic architecture, enabling thinner walls and larger stained glass windows.",
     "difficulty": "easy",
@@ -4447,12 +4481,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1300
   },
   {
     "name": "nan-madol-basalt-engineering",
     "friendly_name": "Nan Madol Basalt City",
-    "year": 1300,
+    "year": 1180,
     "category": "architecture",
     "description": "Nan Madol's basalt log-cabin walls on Pohnpei demonstrate advanced engineering on artificial coral reef islands.",
     "difficulty": "very-hard",
@@ -4461,7 +4496,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1628
   },
   {
     "name": "casa-grande-pueblo",
@@ -4531,7 +4567,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1492
   },
   {
     "name": "chimú-chan-chan-peak",
@@ -4545,7 +4582,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1470
   },
   {
     "name": "genovese-banking-families",
@@ -4606,7 +4644,7 @@
   {
     "name": "mamluk-sultanate-splendor",
     "friendly_name": "Mamluk Cairo Architecture",
-    "year": 1360,
+    "year": 1250,
     "category": "architecture",
     "description": "The Mamluk Sultanate produced elaborate mosque-madrasa complexes and mausoleums in Cairo, peaking under Sultan Hassan.",
     "difficulty": "hard",
@@ -4615,7 +4653,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1517
   },
   {
     "name": "saffron-trade-persia",
@@ -4881,7 +4920,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1532
   },
   {
     "name": "machu-picchu-construction",
@@ -5180,7 +5220,7 @@
   {
     "name": "vijayanagara-architecture",
     "friendly_name": "Vijayanagara Temples Peak",
-    "year": 1520,
+    "year": 1509,
     "category": "architecture",
     "description": "The Vijayanagara Empire produced monumental Dravidian temple complexes at Hampi under Krishna Deva Raya.",
     "difficulty": "hard",
@@ -5189,7 +5229,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1529
   },
   {
     "name": "sher-shah-architecture",
@@ -5245,7 +5286,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1815
   },
   {
     "name": "songhai-djinguereber-mosque",
@@ -5278,7 +5320,7 @@
   {
     "name": "mughal-architecture-akbar",
     "friendly_name": "Akbar Builds Fatehpur Sikri",
-    "year": 1571,
+    "year": 1569,
     "category": "architecture",
     "description": "Emperor Akbar built the planned city of Fatehpur Sikri, blending Hindu and Islamic architectural styles.",
     "difficulty": "hard",
@@ -5287,7 +5329,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1585
   },
   {
     "name": "levant-company-charter",
@@ -5343,7 +5386,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1629
   },
   {
     "name": "beaver-pelt-european-demand",
@@ -5446,7 +5490,7 @@
   {
     "name": "edo-castle-architecture",
     "friendly_name": "Japanese Castle Boom",
-    "year": 1610,
+    "year": 1603,
     "category": "art",
     "description": "Japanese daimyo built massive stone castles across Japan during the early Edo period's castle-building boom.",
     "difficulty": "hard",
@@ -5455,7 +5499,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1615
   },
   {
     "name": "spice-monopoly-nutmeg",
@@ -5502,7 +5547,7 @@
   {
     "name": "gondar-castles-construction",
     "friendly_name": "Gondar Royal Castles Constructed",
-    "year": 1640,
+    "year": 1645,
     "category": "architecture",
     "description": "The Fasil Ghebbi royal enclosure at Gondar grew with successive Ethiopian emperors adding palaces and churches.",
     "difficulty": "very-hard",
@@ -5511,7 +5556,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1700
   },
   {
     "name": "tea-trade-begins",
@@ -5567,7 +5613,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": -1200
   },
   {
     "name": "anchor-escapement",
@@ -5609,7 +5656,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1715
   },
   {
     "name": "bus-service",
@@ -5651,7 +5699,8 @@
     "text_color": "dark",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1710
   },
   {
     "name": "rococo-architecture-style",
@@ -5712,7 +5761,7 @@
   {
     "name": "canal-network-britain",
     "friendly_name": "Brindley's Canal Network",
-    "year": 1761,
+    "year": 1759,
     "category": "invention",
     "description": "James Brindley built the Bridgewater Canal, launching Britain's canal-building era that fueled the Industrial Revolution.",
     "difficulty": "medium",
@@ -5721,7 +5770,8 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1772
   },
   {
     "name": "wrought-iron-puddling",

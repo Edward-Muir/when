@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 /* eslint-disable @typescript-eslint/no-var-requires */
-const { entryProblems } = require('../../scripts/events/year-range.js');
+const { entryProblems, readDecided } = require('../../scripts/events/year-range.js');
 /* eslint-enable @typescript-eslint/no-var-requires */
 
 /**
@@ -18,6 +18,12 @@ const { entryProblems } = require('../../scripts/events/year-range.js');
  *
  * The rules come from `scripts/events/year-range.js`, the same module the maintainer scripts
  * validate against, so the corpus and the tool that writes it cannot drift apart.
+ *
+ * The last two cases cover the other half of the record: `year-range-decided.json`, the ledger
+ * of events read and judged to be moments. Nothing a player sees depends on it, so nothing else
+ * would ever notice it drifting into fiction — and a ledger that disagrees with the catalogue
+ * is worse than no ledger, because the report script trusts it and stops offering those events
+ * for review.
  */
 
 const EVENTS_DIR = path.join(__dirname, '..', '..', 'public', 'events');
@@ -47,11 +53,17 @@ for (const file of ALL_FILES) {
   }
 }
 
+// Manifest only: the ledger covers the live catalogue, not the deprecated pile.
+const bySlug = new Map<string, RangedEvent>();
+for (const file of MANIFEST_FILES) {
+  for (const event of readEvents(file)) bySlug.set(event.name, event);
+}
+
 describe('event year ranges', () => {
   it('every year_end passes the same validator the apply script uses', () => {
     const problems: string[] = [];
     for (const { file, event } of ranged) {
-      const found = entryProblems(event.name, { year_end: event.year_end }, event, {});
+      const found = entryProblems(event.name, { year_end: event.year_end }, event);
       for (const problem of found) problems.push(`${file}: ${problem}`);
     }
     expect(problems).toEqual([]);
@@ -70,5 +82,25 @@ describe('event year ranges', () => {
       .filter(({ event }) => event.year_end! > currentYear)
       .map(({ event }) => `${event.name}: ${event.year_end}`);
     expect(future).toEqual([]);
+  });
+
+  it('every decided slug is an event in the manifest, with a reason', () => {
+    const decided: Record<string, unknown> = readDecided();
+    const bad: string[] = [];
+    for (const [slug, note] of Object.entries(decided)) {
+      if (!bySlug.has(slug)) bad.push(`${slug}: decided a moment but not in the manifest`);
+      else if (typeof note !== 'string' || note.trim() === '') {
+        bad.push(`${slug}: decided a moment with no reason recorded`);
+      }
+    }
+    expect(bad).toEqual([]);
+  });
+
+  it('nothing is both decided a moment and given a window', () => {
+    const decided: Record<string, unknown> = readDecided();
+    const contradictions = Object.keys(decided)
+      .filter((slug) => bySlug.get(slug)?.year_end !== undefined)
+      .map((slug) => `${slug}: in the decided ledger but carries a year_end`);
+    expect(contradictions).toEqual([]);
   });
 });

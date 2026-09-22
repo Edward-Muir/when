@@ -277,7 +277,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/trial-by-ordeal-spreads_jnrvnb?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1219
   },
   {
     "name": "gratian-decretum",
@@ -380,7 +381,7 @@
   {
     "name": "magdeburg-rights-spread",
     "friendly_name": "Magdeburg Rights Spread",
-    "year": 1300,
+    "year": 1200,
     "category": "law",
     "description": "This German town law granting self-governance spread to hundreds of cities across Central Europe.",
     "difficulty": "very-hard",
@@ -389,7 +390,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/magdeburg-rights-spread_q0ffpi?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1400
   },
   {
     "name": "statute-of-laborers",
@@ -450,7 +452,7 @@
   {
     "name": "court-of-star-chamber-peak",
     "friendly_name": "Star Chamber at Its Height",
-    "year": 1620,
+    "year": 1629,
     "category": "law",
     "description": "England's secretive Star Chamber court tried opponents without juries, becoming a symbol of royal abuse.",
     "difficulty": "hard",
@@ -459,7 +461,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/court-of-star-chamber-peak_schkch?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1640
   },
   {
     "name": "petition-of-right",
@@ -501,7 +504,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/blackstone-commentaries_dkdy1z?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1769
   },
   {
     "name": "beccaria-on-crimes",
@@ -739,7 +743,8 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tokyo-war-crimes-trials_z7ulve?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "year_end": 1948
   },
   {
     "name": "universal-declaration-human-rights",
