@@ -374,6 +374,14 @@ export function removeFromHand(hand: HistoricalEvent[], eventName: string): Hist
   return hand.filter((e) => e.name !== eventName);
 }
 
+/**
+ * The smallest deck a game can be dealt from: every hand, the face-up starting card, and two
+ * replacement draws per player so the opening turns cannot run the deck dry.
+ */
+export function minDeckSize(playerCount: number, handSize: number): number {
+  return playerCount * handSize + 1 + playerCount * 2;
+}
+
 // Add a card to a player's hand
 export function addToHand(hand: HistoricalEvent[], event: HistoricalEvent): HistoricalEvent[] {
   return [...hand, event];

@@ -22,6 +22,7 @@ import {
   insertIntoTimeline,
   settledPosition,
   getNextActivePlayerIndex,
+  minDeckSize,
 } from '../utils/gameLogic';
 import { buildRampedDeck } from '../utils/deckBuilder';
 import { buildDailyDeck } from '../utils/dailyConfig';
@@ -37,6 +38,7 @@ import {
   processCorrectPlacement,
   processIncorrectPlacement,
   buildPopupData,
+  PlacementStateUpdate,
 } from '../utils/placementLogic';
 import {
   DEFAULT_TUNING,
@@ -118,6 +120,42 @@ interface PendingPopupState {
  *
  * Custom and challenge games keep the filter chain; they have no date to key a pool on.
  */
+/**
+ * Fold a resolved turn into state, splitting off what multiplayer defers to popup dismissal.
+ *
+ * `deferTurn` holds back the hand-off (whose turn it is, and the turn/round counters), so the
+ * board does not jump to the next player under the popup. `deferPhase` also holds back the
+ * `gameOver` phase: a miss defers it, so the incorrect popup is read before the game ends,
+ * while a correct placement applies it at once. Returns the state to commit now and, when
+ * something was deferred, the patch to apply on dismissal.
+ */
+function applyTurnUpdate(
+  prev: WhenGameState,
+  update: PlacementStateUpdate,
+  { deferTurn, deferPhase }: { deferTurn: boolean; deferPhase: boolean }
+): { next: WhenGameState; deferred: Partial<WhenGameState> | null } {
+  const turn: Partial<WhenGameState> = {
+    currentPlayerIndex: update.currentPlayerIndex,
+    turnNumber: update.turnNumber,
+    roundNumber: update.roundNumber,
+    activePlayersAtRoundStart: update.activePlayersAtRoundStart,
+  };
+  const phase: Partial<WhenGameState> = { phase: update.isGameOver ? 'gameOver' : 'playing' };
+
+  const next: WhenGameState = {
+    ...prev,
+    players: update.players,
+    deck: update.deck,
+    winners: update.winners,
+    isAnimating: false,
+    animationPhase: null,
+    ...(deferTurn ? {} : turn),
+    ...(deferPhase ? {} : phase),
+  };
+  const deferred = deferTurn ? { ...turn, ...(deferPhase ? phase : {}) } : null;
+  return { next, deferred };
+}
+
 function composeDeck(config: GameConfig, allEvents: HistoricalEvent[]): HistoricalEvent[] {
   const {
     mode,
@@ -198,7 +236,7 @@ export function useWhenGame(): UseWhenGameReturn {
       // Checked against the composed deck, not the pre-filter pool: a curated theme's pool is
       // a couple of dozen cards while the unfiltered catalogue is thousands, so testing the
       // wrong one would wave through a deck too short to deal.
-      const minRequired = playerCount * effectiveHandSize + 1 + playerCount * 2;
+      const minRequired = minDeckSize(playerCount, effectiveHandSize);
       if (shuffled.length < minRequired) {
         // Loud, because the old quiet return left the player tapping Play on a screen that
         // never changed, with nothing to explain it.
@@ -247,6 +285,23 @@ export function useWhenGame(): UseWhenGameReturn {
     [allEvents]
   );
 
+  // Commit a resolved turn from inside a setState updater. Whatever multiplayer defers is
+  // stashed on the pending popup, so dismissing it applies the rest.
+  const commitTurn = (
+    prev: WhenGameState,
+    update: PlacementStateUpdate,
+    defer: { deferTurn: boolean; deferPhase: boolean }
+  ): WhenGameState => {
+    const { next, deferred } = applyTurnUpdate(prev, update, defer);
+    if (deferred) {
+      setPendingPopupState((prevPopup) => ({
+        ...prevPopup,
+        pendingStateUpdate: () => setState((s) => ({ ...s, ...deferred })),
+      }));
+    }
+    return next;
+  };
+
   const placeCard = useCallback(
     (insertionIndex: number): PlacementResult | null => {
       // 1. Validate placement attempt
@@ -292,47 +347,10 @@ export function useWhenGame(): UseWhenGameReturn {
         setTimeout(() => {
           setState((prev) => {
             const update = processCorrectPlacement(prev, activeCard);
-            const shouldShowPopup = !isSinglePlayer && !update.isGameOver;
-
-            if (shouldShowPopup) {
-              const pendingUpdate = () => {
-                setState((s) => ({
-                  ...s,
-                  currentPlayerIndex: update.currentPlayerIndex,
-                  turnNumber: update.turnNumber,
-                  roundNumber: update.roundNumber,
-                  activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-                }));
-              };
-              setPendingPopupState((prevPopup) => ({
-                ...prevPopup,
-                pendingStateUpdate: pendingUpdate,
-              }));
-
-              return {
-                ...prev,
-                players: update.players,
-                deck: update.deck,
-                winners: update.winners,
-                phase: update.isGameOver ? 'gameOver' : 'playing',
-                isAnimating: false,
-                animationPhase: null,
-              };
-            }
-
-            return {
-              ...prev,
-              players: update.players,
-              deck: update.deck,
-              currentPlayerIndex: update.currentPlayerIndex,
-              turnNumber: update.turnNumber,
-              roundNumber: update.roundNumber,
-              winners: update.winners,
-              phase: update.isGameOver ? 'gameOver' : 'playing',
-              isAnimating: false,
-              animationPhase: null,
-              activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-            };
+            return commitTurn(prev, update, {
+              deferTurn: !isSinglePlayer && !update.isGameOver,
+              deferPhase: false,
+            });
           });
         }, DEFAULT_TUNING.success.flashMs);
       } else {
@@ -374,48 +392,11 @@ export function useWhenGame(): UseWhenGameReturn {
           () => {
             setState((prev) => {
               const update = processIncorrectPlacement(prev, activeCard);
-
-              // For multiplayer, defer turn advancement to popup dismiss
-              if (!isSinglePlayer) {
-                const pendingUpdate = () => {
-                  setState((s) => ({
-                    ...s,
-                    currentPlayerIndex: update.currentPlayerIndex,
-                    turnNumber: update.turnNumber,
-                    roundNumber: update.roundNumber,
-                    activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-                    phase: update.isGameOver ? 'gameOver' : 'playing',
-                  }));
-                };
-                setPendingPopupState((prevPopup) => ({
-                  ...prevPopup,
-                  pendingStateUpdate: pendingUpdate,
-                }));
-
-                return {
-                  ...prev,
-                  players: update.players,
-                  deck: update.deck,
-                  winners: update.winners,
-                  isAnimating: false,
-                  animationPhase: null,
-                };
-              }
-
-              // For single player, apply all updates immediately
-              return {
-                ...prev,
-                players: update.players,
-                deck: update.deck,
-                currentPlayerIndex: update.currentPlayerIndex,
-                turnNumber: update.turnNumber,
-                roundNumber: update.roundNumber,
-                winners: update.winners,
-                phase: update.isGameOver ? 'gameOver' : 'playing',
-                isAnimating: false,
-                animationPhase: null,
-                activePlayersAtRoundStart: update.activePlayersAtRoundStart,
-              };
+              // Multiplayer defers the hand-off, and the game-over phase, to popup dismissal
+              return commitTurn(prev, update, {
+                deferTurn: !isSinglePlayer,
+                deferPhase: !isSinglePlayer,
+              });
             });
             // Input stays locked through flash + travel + a settle margin for the wake springs
           },

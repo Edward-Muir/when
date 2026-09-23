@@ -42,6 +42,7 @@ import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
 import { useDailyTabHints } from '../hooks/useDailyTabHints';
+import { minDeckSize } from '../utils/gameLogic';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -292,9 +293,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
       selectedEras
     ).length;
-    // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
-    const minRequired = playerCount * suddenDeathHandSize + 1 + playerCount * 2;
-    return count >= minRequired;
+    return count >= minDeckSize(playerCount, suddenDeathHandSize);
   }, [
     allEvents,
     selectedDifficulties,

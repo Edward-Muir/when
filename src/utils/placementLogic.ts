@@ -95,93 +95,54 @@ export interface PlacementStateUpdate {
 }
 
 /**
- * Process a correct placement and return the state updates
+ * Process a correct placement and return the state updates. The card leaves the hand and a
+ * replacement is drawn, so the hand stays the same size until the deck runs out.
  */
 export function processCorrectPlacement(
   state: WhenGameState,
   event: HistoricalEvent
 ): PlacementStateUpdate {
-  const newPlayers = [...state.players];
-  const player = { ...newPlayers[state.currentPlayerIndex] };
-  const isSinglePlayer = newPlayers.length === 1;
-  let newDeck = state.deck;
-
-  // Track per-player placement
-  player.placementHistory = [...player.placementHistory, true];
-
-  // Remove card from hand
-  player.hand = removeFromHand(player.hand, event.name);
-
-  // Correct placement draws a replacement, so the hand stays the same size
-  const { card: newCard, newDeck: updatedDeck } = drawCard(state.deck);
-  if (newCard) {
-    player.hand = addToHand(player.hand, newCard);
-  }
-  newDeck = updatedDeck;
-
-  newPlayers[state.currentPlayerIndex] = player;
-
-  // Advance to next player
-  const nextPlayerIndex = getNextActivePlayerIndex(state.currentPlayerIndex, newPlayers);
-  const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
-  const newRoundNumber = isRoundEnding ? state.roundNumber + 1 : state.roundNumber;
-
-  let isGameOver = false;
-  let finalWinners = state.winners;
-  let finalPlayers = newPlayers;
-  let newActivePlayersAtRoundStart = state.activePlayersAtRoundStart;
-
-  if (isRoundEnding) {
-    const result = processEndOfRound(newPlayers, state.activePlayersAtRoundStart);
-    finalPlayers = result.updatedPlayers;
-    isGameOver = result.gameOver;
-    if (result.winners.length > 0) {
-      finalWinners = result.winners;
-    }
-    // Update active players count for next round
-    if (!isGameOver) {
-      newActivePlayersAtRoundStart = finalPlayers.filter((p) => !p.isEliminated).length;
-    }
-  }
-
-  return {
-    players: finalPlayers,
-    deck: newDeck,
-    currentPlayerIndex: isGameOver ? state.currentPlayerIndex : nextPlayerIndex,
-    turnNumber: state.turnNumber + 1,
-    roundNumber: newRoundNumber,
-    activePlayersAtRoundStart: newActivePlayersAtRoundStart,
-    winners: finalWinners,
-    isGameOver,
-  };
+  const { card, newDeck } = drawCard(state.deck);
+  return resolveTurn(state, event, true, (hand) => (card ? addToHand(hand, card) : hand), newDeck);
 }
 
 /**
- * Process an incorrect placement and return the state updates
+ * Process an incorrect placement and return the state updates. The card is discarded and no
+ * replacement is drawn: the hand shrinks, and the game ends once it empties.
  */
 export function processIncorrectPlacement(
   state: WhenGameState,
   event: HistoricalEvent
 ): PlacementStateUpdate {
+  return resolveTurn(state, event, false, (hand) => hand, state.deck);
+}
+
+/**
+ * The turn tail both placements share: record the placement, take the card out of the hand
+ * (`refill` then adds whatever the outcome draws), pass the turn, and at the end of a round
+ * eliminate empty hands and settle the winners.
+ *
+ * The reprieve draw (every active player gets one card when all of them emptied together) is
+ * applied only after a miss. A correct placement can only empty a hand once the deck is
+ * exhausted, and then there is nothing left to draw anyway.
+ */
+function resolveTurn(
+  state: WhenGameState,
+  event: HistoricalEvent,
+  correct: boolean,
+  refill: (hand: HistoricalEvent[]) => HistoricalEvent[],
+  deck: HistoricalEvent[]
+): PlacementStateUpdate {
   const newPlayers = [...state.players];
   const player = { ...newPlayers[state.currentPlayerIndex] };
-  const isSinglePlayer = newPlayers.length === 1;
-  let newDeck = state.deck;
-
-  // Track per-player placement
-  player.placementHistory = [...player.placementHistory, false];
-
-  // Remove card from hand (discarded). No replacement is drawn — the hand shrinks,
-  // and the game ends once it empties.
-  player.hand = removeFromHand(player.hand, event.name);
-
+  player.placementHistory = [...player.placementHistory, correct];
+  player.hand = refill(removeFromHand(player.hand, event.name));
   newPlayers[state.currentPlayerIndex] = player;
 
-  // Determine if round is ending
   const nextPlayerIndex = getNextActivePlayerIndex(state.currentPlayerIndex, newPlayers);
-  const isRoundEnding = isSinglePlayer || nextPlayerIndex === 0;
-  const newRoundNumber = isRoundEnding ? state.roundNumber + 1 : state.roundNumber;
+  const isRoundEnding = newPlayers.length === 1 || nextPlayerIndex === 0;
 
+  let newDeck = deck;
   let isGameOver = false;
   let finalWinners = state.winners;
   let finalPlayers = newPlayers;
@@ -195,13 +156,12 @@ export function processIncorrectPlacement(
       finalWinners = result.winners;
     }
 
-    // If reprieve granted, draw 1 new card for each active player
-    if (result.grantReprieve) {
+    if (!correct && result.grantReprieve) {
       finalPlayers.forEach((p) => {
         if (!p.isEliminated) {
-          const { card: newCard, newDeck: updatedDeck } = drawCard(newDeck);
-          if (newCard) {
-            p.hand = addToHand(p.hand, newCard);
+          const { card, newDeck: updatedDeck } = drawCard(newDeck);
+          if (card) {
+            p.hand = addToHand(p.hand, card);
           }
           newDeck = updatedDeck;
         }
@@ -219,7 +179,7 @@ export function processIncorrectPlacement(
     deck: newDeck,
     currentPlayerIndex: isGameOver ? state.currentPlayerIndex : nextPlayerIndex,
     turnNumber: state.turnNumber + 1,
-    roundNumber: newRoundNumber,
+    roundNumber: isRoundEnding ? state.roundNumber + 1 : state.roundNumber,
     activePlayersAtRoundStart: newActivePlayersAtRoundStart,
     winners: finalWinners,
     isGameOver,
