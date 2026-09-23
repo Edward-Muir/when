@@ -148,7 +148,6 @@ export function withFreshReplaySeed(config: GameConfig): GameConfig {
 export function buildThemeReplayConfig(theme: CuratedTheme): GameConfig {
   return {
     mode: 'suddenDeath',
-    totalTurns: 7,
     selectedDifficulties: [...DEFAULT_DIFFICULTIES],
     selectedCategories: [...ALL_CATEGORIES],
     selectedEras: [...ALL_ERAS],

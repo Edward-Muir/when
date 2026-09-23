@@ -380,7 +380,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
     onStart({
       mode: 'suddenDeath',
-      totalTurns: cardsPerHand,
       selectedDifficulties,
       selectedCategories,
       selectedEras,

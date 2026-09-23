@@ -1,6 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { Redis } from '@upstash/redis';
-import { COUNTS_KEY, LOG_KEY, authorizeAdminRead } from '../../lib/card-reports/reportSchema';
+import { COUNTS_KEY, LOG_KEY } from '../../lib/card-reports/reportSchema';
+import { authorizeAdmin } from '../../lib/adminAuth';
 
 const redis = Redis.fromEnv();
 
@@ -74,7 +75,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   const suppliedKey = (req.headers['x-admin-key'] as string) || (req.query.key as string);
-  const auth = authorizeAdminRead({
+  const auth = authorizeAdmin({
     supplied: suppliedKey,
     configured: process.env.REPORTS_ADMIN_KEY,
     isProduction: process.env.VERCEL_ENV === 'production',

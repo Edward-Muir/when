@@ -33,7 +33,6 @@ jest.mock('../utils/curatedThemes', () => {
 // Mock playerStorage to prevent auto-starting daily mode in tests
 jest.mock('../utils/playerStorage', () => ({
   saveDailyResult: jest.fn(),
-  saveTimelineHighScore: jest.fn(),
   getTimelineHighScore: jest.fn().mockReturnValue(0),
   getTodayResult: jest.fn().mockReturnValue(null),
   hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
@@ -104,7 +103,6 @@ describe('useWhenGame - Sudden Death Mode', () => {
     act(() => {
       result.current.startGame({
         mode: 'suddenDeath',
-        totalTurns: 10,
         selectedDifficulties: ['easy', 'medium', 'hard'],
         selectedCategories: ['empires'],
         selectedEras: [...ALL_ERAS],

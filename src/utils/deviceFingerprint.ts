@@ -59,10 +59,3 @@ async function generateFingerprint(): Promise<string> {
   // Return first 32 characters of the hash
   return hashHex.slice(0, 32);
 }
-
-/**
- * Clear the stored device fingerprint (for testing purposes).
- */
-export function clearDeviceFingerprint(): void {
-  localStorage.removeItem(DEVICE_ID_KEY);
-}

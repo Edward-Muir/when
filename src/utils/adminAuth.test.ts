@@ -1,17 +1,17 @@
-import { authorizeAdminRead } from '../../lib/card-reports/reportSchema';
+import { authorizeAdmin } from '../../lib/adminAuth';
 
 const KEY = 'a-long-enough-secret-value';
 
-describe('authorizeAdminRead', () => {
+describe('authorizeAdmin', () => {
   it('allows a request carrying the right key', () => {
-    expect(authorizeAdminRead({ supplied: KEY, configured: KEY, isProduction: true })).toEqual({
+    expect(authorizeAdmin({ supplied: KEY, configured: KEY, isProduction: true })).toEqual({
       ok: true,
     });
   });
 
   it('rejects the wrong key', () => {
     expect(
-      authorizeAdminRead({
+      authorizeAdmin({
         supplied: 'wrong-but-same-length!!!!!',
         configured: KEY,
         isProduction: true,
@@ -26,16 +26,16 @@ describe('authorizeAdminRead', () => {
     ['a much shorter guess', 'x'],
   ])('rejects %s without throwing', (_label, supplied) => {
     expect(() =>
-      authorizeAdminRead({ supplied, configured: KEY, isProduction: true })
+      authorizeAdmin({ supplied, configured: KEY, isProduction: true })
     ).not.toThrow();
-    expect(authorizeAdminRead({ supplied, configured: KEY, isProduction: true }).ok).toBe(false);
+    expect(authorizeAdmin({ supplied, configured: KEY, isProduction: true }).ok).toBe(false);
   });
 
   it.each([
     ['no key at all', undefined],
     ['an empty key', ''],
   ])('rejects a request with %s', (_label, supplied) => {
-    expect(authorizeAdminRead({ supplied, configured: KEY, isProduction: true })).toEqual({
+    expect(authorizeAdmin({ supplied, configured: KEY, isProduction: true })).toEqual({
       ok: false,
       status: 401,
       error: 'Unauthorized',
@@ -46,12 +46,12 @@ describe('authorizeAdminRead', () => {
   // anyone who asks. 503 rather than 401 so the cause is obvious.
   it('refuses in production when no key is configured', () => {
     expect(
-      authorizeAdminRead({ supplied: KEY, configured: undefined, isProduction: true })
+      authorizeAdmin({ supplied: KEY, configured: undefined, isProduction: true })
     ).toEqual({ ok: false, status: 503, error: 'Admin key not configured' });
   });
 
   it('refuses in production when the configured key is empty', () => {
-    expect(authorizeAdminRead({ supplied: KEY, configured: '', isProduction: true }).ok).toBe(
+    expect(authorizeAdmin({ supplied: KEY, configured: '', isProduction: true }).ok).toBe(
       false
     );
   });
@@ -59,13 +59,13 @@ describe('authorizeAdminRead', () => {
   // ...but `vercel dev` should work with no setup.
   it('allows an unconfigured non-production environment', () => {
     expect(
-      authorizeAdminRead({ supplied: undefined, configured: undefined, isProduction: false })
+      authorizeAdmin({ supplied: undefined, configured: undefined, isProduction: false })
     ).toEqual({ ok: true });
   });
 
   it('still enforces a configured key outside production', () => {
     expect(
-      authorizeAdminRead({ supplied: undefined, configured: KEY, isProduction: false }).ok
+      authorizeAdmin({ supplied: undefined, configured: KEY, isProduction: false }).ok
     ).toBe(false);
   });
 });

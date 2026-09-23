@@ -370,24 +370,6 @@ export function getTimelineHighScore(): number {
   }
 }
 
-/**
- * Save a new high score if it beats the current record
- * @returns true if a new record was set
- */
-export function saveTimelineHighScore(score: number): boolean {
-  try {
-    const currentBest = getTimelineHighScore();
-    if (score > currentBest) {
-      localStorage.setItem(TIMELINE_HIGH_SCORE_KEY, score.toString());
-      return true;
-    }
-    return false;
-  } catch {
-    console.warn('Failed to save timeline high score to localStorage');
-    return false;
-  }
-}
-
 // --- Display Name Storage ---
 
 const DISPLAY_NAME_KEY = 'when-display-name';

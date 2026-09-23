@@ -35,14 +35,3 @@ export function setQcResult(name: string, verdict: QcVerdict): void {
   }
 }
 
-/** Remove the verdict for one event (used by Undo). Fails silently. */
-export function clearQcResult(name: string): void {
-  try {
-    const results = getQcResults();
-    // eslint-disable-next-line security/detect-object-injection
-    delete results[name];
-    localStorage.setItem(QC_RESULTS_KEY, JSON.stringify(results));
-  } catch {
-    console.warn('Failed to clear image-QC result from localStorage');
-  }
-}

@@ -176,7 +176,6 @@ describe('getThemeSeedEvent', () => {
 describe('getCuratedThemeIdForConfig', () => {
   const base = {
     mode: 'suddenDeath' as const,
-    totalTurns: 7,
     selectedDifficulties: [...difficulties],
     selectedCategories: [...ALL_CATEGORIES],
     selectedEras: [...ALL_ERAS],
