@@ -1,4 +1,5 @@
 import { AnimationTuning, DEFAULT_TUNING } from '../../components/Timeline/animationTuning';
+import { readJson, removeKeys, writeJson } from '../../utils/storage';
 
 /**
  * Declarative slider schema for the /anim-jig control panel. Every tunable
@@ -243,27 +244,13 @@ export function mergeStoredTuning(stored: unknown): AnimationTuning {
 }
 
 export function loadStoredTuning(): AnimationTuning {
-  try {
-    const raw = localStorage.getItem(TUNING_STORAGE_KEY);
-    if (!raw) return DEFAULT_TUNING;
-    return mergeStoredTuning(JSON.parse(raw));
-  } catch {
-    return DEFAULT_TUNING;
-  }
+  return readJson(TUNING_STORAGE_KEY, DEFAULT_TUNING, mergeStoredTuning);
 }
 
 export function saveStoredTuning(tuning: AnimationTuning): void {
-  try {
-    localStorage.setItem(TUNING_STORAGE_KEY, JSON.stringify(tuning));
-  } catch {
-    // storage full/unavailable — jig still works, just doesn't persist
-  }
+  writeJson(TUNING_STORAGE_KEY, tuning, 'animation tuning');
 }
 
 export function clearStoredTuning(): void {
-  try {
-    localStorage.removeItem(TUNING_STORAGE_KEY);
-  } catch {
-    // ignore
-  }
+  removeKeys([TUNING_STORAGE_KEY], 'animation tuning');
 }

@@ -23,6 +23,7 @@ import { getLocalDateString } from '../utils/puzzleDate';
 import Timeline from './Timeline/Timeline';
 import GamePopup from './GamePopup';
 import StatsPopup from './StatsPopup';
+import Modal from './ui/Modal';
 import Card from './Card';
 import { Toast } from './Toast';
 import { GameInfoCompact } from './PlayerInfo';
@@ -46,30 +47,37 @@ import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
+  open: boolean;
   onClose: () => void;
   onConfirm: () => void;
-}> = ({ onClose, onConfirm }) => (
-  <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-    <div className="absolute inset-0 bg-black/50" onClick={onClose} />
-    <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
-      <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
-      <p className="text-text-muted text-sm mb-6 font-body">Your current progress will be lost.</p>
-      <div className="flex gap-3">
-        <button
-          onClick={onClose}
-          className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
-        >
-          Cancel
-        </button>
-        <button
-          onClick={onConfirm}
-          className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
-        >
-          Leave
-        </button>
-      </div>
+}> = ({ open, onClose, onConfirm }) => (
+  <Modal
+    open={open}
+    onDismiss={onClose}
+    backdrop="scrim"
+    widthClass="w-full max-w-sm"
+    rounded="2xl"
+    shadow="xl"
+    bordered={false}
+    cardClassName="p-6"
+  >
+    <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
+    <p className="text-text-muted text-sm mb-6 font-body">Your current progress will be lost.</p>
+    <div className="flex gap-3">
+      <button
+        onClick={onClose}
+        className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
+      >
+        Cancel
+      </button>
+      <button
+        onClick={onConfirm}
+        className="flex-1 py-3 px-4 bg-accent text-white rounded-xl font-medium transition-colors hover:bg-accent/90 active:scale-95 font-body"
+      >
+        Leave
+      </button>
     </div>
-  </div>
+  </Modal>
 );
 
 // Whether the popup should reveal the event's year: cards already on the timeline and
@@ -461,20 +469,18 @@ const Game: React.FC<GameProps> = ({
             document.body
           )}
 
-          {pendingPopup && (
-            <GamePopup
-              type={pendingPopup.type}
-              event={pendingPopup.event}
-              onDismiss={dismissPopup}
-              nextPlayer={pendingPopup.nextPlayer}
-              showYear={showYearInPopup}
-              gameState={pendingPopup.gameState}
-              closeEnough={pendingPopup.closeEnough}
-              tombstone={isTombstonePopup}
-              dailyResult={dailyResult}
-              leaderboard={leaderboard}
-            />
-          )}
+          <GamePopup
+            type={pendingPopup?.type ?? 'correct'}
+            event={pendingPopup?.event ?? null}
+            onDismiss={dismissPopup}
+            nextPlayer={pendingPopup?.nextPlayer}
+            showYear={showYearInPopup}
+            gameState={pendingPopup?.gameState}
+            closeEnough={pendingPopup?.closeEnough}
+            tombstone={isTombstonePopup}
+            dailyResult={dailyResult}
+            leaderboard={leaderboard}
+          />
 
           <StatsPopup
             isOpen={showStatsPopup}
@@ -490,9 +496,11 @@ const Game: React.FC<GameProps> = ({
             onClose={() => setShowToast(false)}
           />
 
-          {showHomeConfirm && (
-            <HomeConfirmModal onClose={() => setShowHomeConfirm(false)} onConfirm={onNewGame} />
-          )}
+          <HomeConfirmModal
+            open={showHomeConfirm}
+            onClose={() => setShowHomeConfirm(false)}
+            onConfirm={onNewGame}
+          />
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always
               ends it, so the finale is the same screen whether or not this game unlocked

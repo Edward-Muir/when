@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.26.0](https://github.com/Edward-Muir/when/compare/v1.25.0...v1.26.0) (2026-09-22)
+
+
+### Features
+
+* evidence windows across the whole catalogue ([#62](https://github.com/Edward-Muir/when/issues/62)) ([eddd870](https://github.com/Edward-Muir/when/commit/eddd87000c602b4ac0c379007ea75495e90e366e))
+
 ## [1.25.0](https://github.com/Edward-Muir/when/compare/v1.24.0...v1.25.0) (2026-09-18)
 
 

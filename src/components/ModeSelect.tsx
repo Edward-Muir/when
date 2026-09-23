@@ -42,6 +42,7 @@ import { useToday } from '../hooks/useToday';
 
 import Leaderboard from './Leaderboard';
 import { useDailyTabHints } from '../hooks/useDailyTabHints';
+import { minDeckSize } from '../utils/gameLogic';
 
 interface ModeSelectProps {
   onStart: (config: GameConfig) => void;
@@ -292,9 +293,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
       filterByCategory(filterByDifficulty(allEvents, selectedDifficulties), selectedCategories),
       selectedEras
     ).length;
-    // Need: (players * cards per hand) + 1 starting + (players * 2 for replacements)
-    const minRequired = playerCount * suddenDeathHandSize + 1 + playerCount * 2;
-    return count >= minRequired;
+    return count >= minDeckSize(playerCount, suddenDeathHandSize);
   }, [
     allEvents,
     selectedDifficulties,
@@ -380,7 +379,6 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
     onStart({
       mode: 'suddenDeath',
-      totalTurns: cardsPerHand,
       selectedDifficulties,
       selectedCategories,
       selectedEras,
@@ -510,14 +508,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
       {/* The Daily hero's read-more. Its event is the deck's starting card, placed face-up with
           its year on turn 1, so the detail card opens on the prose like any other placed card. */}
-      {infoEvent && (
-        <GamePopup
-          type="description"
-          event={infoEvent}
-          onDismiss={() => setInfoEvent(null)}
-          showYear
-        />
-      )}
+      <GamePopup
+        type="description"
+        event={infoEvent}
+        onDismiss={() => setInfoEvent(null)}
+        showYear
+      />
 
       {/* Leaderboard Modal */}
       <Leaderboard

@@ -9,6 +9,8 @@
  * Clusters with no stored decision are pending.
  */
 
+import { readJson, readString, writeJson, writeString } from './storage';
+
 export type DedupDecision = { kind: 'keep'; keep: string[] } | { kind: 'pass' };
 
 export type DedupDecisions = Record<number, DedupDecision>;
@@ -18,40 +20,23 @@ const POSITION_KEY = 'when-dedup-position-v1';
 
 /** The cluster index the reviewer was last viewing, so reload resumes in place. */
 export function getLastPosition(): number {
-  try {
-    const raw = localStorage.getItem(POSITION_KEY);
-    const n = raw ? parseInt(raw, 10) : 0;
-    return Number.isFinite(n) && n >= 0 ? n : 0;
-  } catch {
-    return 0;
-  }
+  const raw = readString(POSITION_KEY);
+  const n = raw ? parseInt(raw, 10) : 0;
+  return Number.isFinite(n) && n >= 0 ? n : 0;
 }
 
 export function setLastPosition(index: number): void {
-  try {
-    localStorage.setItem(POSITION_KEY, String(index));
-  } catch {
-    // Ignore — position resume is best-effort.
-  }
+  writeString(POSITION_KEY, String(index), 'dedup review position');
 }
 
 export function getDecisions(): DedupDecisions {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) return {};
-    const parsed = JSON.parse(raw);
-    return parsed && typeof parsed === 'object' ? (parsed as DedupDecisions) : {};
-  } catch {
-    return {};
-  }
+  return readJson(STORAGE_KEY, {}, (parsed) =>
+    parsed && typeof parsed === 'object' ? (parsed as DedupDecisions) : {}
+  );
 }
 
 function save(decisions: DedupDecisions): void {
-  try {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(decisions));
-  } catch {
-    // Ignore quota / private-mode failures — this is a throwaway dev jig.
-  }
+  writeJson(STORAGE_KEY, decisions, 'dedup decisions');
 }
 
 export function setDecision(index: number, decision: DedupDecision): DedupDecisions {

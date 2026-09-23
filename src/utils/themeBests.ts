@@ -1,4 +1,5 @@
 import { getLocalDateString } from './puzzleDate';
+import { readJson, writeJson } from './storage';
 
 /**
  * Personal bests on curated themes, keyed by theme id — the number the Archive shows beside
@@ -37,28 +38,25 @@ function isThemeBest(value: unknown): value is ThemeBest {
 }
 
 export function getThemeBests(): ThemeBests {
-  try {
-    const stored = localStorage.getItem(THEME_BESTS_KEY);
-    if (!stored) return {};
-    const parsed: unknown = JSON.parse(stored);
-    if (!parsed || typeof parsed !== 'object') return {};
+  return readJson(THEME_BESTS_KEY, {}, normalizeThemeBests);
+}
 
-    const bests: ThemeBests = {};
-    for (const [id, value] of Object.entries(parsed as Record<string, unknown>)) {
-      if (!isThemeBest(value)) continue;
-      // eslint-disable-next-line security/detect-object-injection -- id is a key of our own record
-      bests[id] = {
-        correctCount: value.correctCount,
-        cleared: value.cleared === true,
-        perfect: value.perfect === true,
-        plays: value.plays,
-        lastPlayed: typeof value.lastPlayed === 'string' ? value.lastPlayed : '',
-      };
-    }
-    return bests;
-  } catch {
-    return {};
+function normalizeThemeBests(parsed: unknown): ThemeBests {
+  if (!parsed || typeof parsed !== 'object') return {};
+
+  const bests: ThemeBests = {};
+  for (const [id, value] of Object.entries(parsed as Record<string, unknown>)) {
+    if (!isThemeBest(value)) continue;
+    // eslint-disable-next-line security/detect-object-injection -- id is a key of our own record
+    bests[id] = {
+      correctCount: value.correctCount,
+      cleared: value.cleared === true,
+      perfect: value.perfect === true,
+      plays: value.plays,
+      lastPlayed: typeof value.lastPlayed === 'string' ? value.lastPlayed : '',
+    };
   }
+  return bests;
 }
 
 export function getThemeBest(themeId: string): ThemeBest | undefined {
@@ -69,11 +67,7 @@ export function getThemeBest(themeId: string): ThemeBest | undefined {
 }
 
 function saveThemeBests(bests: ThemeBests): void {
-  try {
-    localStorage.setItem(THEME_BESTS_KEY, JSON.stringify(bests));
-  } catch {
-    console.warn('Failed to save theme bests to localStorage');
-  }
+  writeJson(THEME_BESTS_KEY, bests, 'theme bests');
 }
 
 export interface ThemeRunResult {

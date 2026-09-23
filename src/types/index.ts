@@ -125,9 +125,7 @@ export interface Player {
   name: string;
   hand: HistoricalEvent[];
   hasWon: boolean;
-  winTurn?: number;
   isEliminated?: boolean;
-  eliminatedRound?: number;
   placementHistory: boolean[];
 }
 
@@ -216,7 +214,6 @@ export interface EventManifest {
 
 export interface GameConfig {
   mode: GameMode;
-  totalTurns: number;
   selectedDifficulties: Difficulty[];
   selectedCategories: Category[];
   selectedEras: Era[];

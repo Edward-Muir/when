@@ -2,6 +2,7 @@ import { FailedPlacement, HistoricalEvent, WhenGameState } from '../types';
 import { buildDailyConfig } from './dailyConfig';
 import { getLocalDateString } from './puzzleDate';
 import { buildEventsByName } from './statsStorage';
+import { readJson, writeJson } from './storage';
 
 /**
  * Today's finished daily board, kept so the player can re-open it and read the cards.
@@ -70,12 +71,7 @@ export function buildDailyBoardSnapshot(state: WhenGameState): DailyBoardSnapsho
 
 export function saveDailyBoard(snapshot: DailyBoardSnapshot | null): void {
   if (!snapshot) return;
-  try {
-    localStorage.setItem(DAILY_BOARD_KEY, JSON.stringify(snapshot));
-  } catch {
-    // localStorage may be disabled or full - fail silently
-    console.warn('Failed to save daily board to localStorage');
-  }
+  writeJson(DAILY_BOARD_KEY, snapshot, 'daily board');
 }
 
 /**
@@ -87,11 +83,8 @@ export function saveDailyBoard(snapshot: DailyBoardSnapshot | null): void {
 export function getTodayDailyBoard(
   dateString: string = getLocalDateString()
 ): DailyBoardSnapshot | null {
-  try {
-    const stored = localStorage.getItem(DAILY_BOARD_KEY);
-    if (!stored) return null;
-
-    const snapshot: DailyBoardSnapshot = JSON.parse(stored);
+  return readJson(DAILY_BOARD_KEY, null, (raw) => {
+    const snapshot = raw as DailyBoardSnapshot | null;
     if (snapshot?.date !== dateString) return null;
     if (!Array.isArray(snapshot.timeline)) return null;
 
@@ -101,10 +94,7 @@ export function getTodayDailyBoard(
       placementHistory: Array.isArray(snapshot.placementHistory) ? snapshot.placementHistory : [],
       bestStreak: snapshot.bestStreak ?? 0,
     };
-  } catch {
-    // localStorage may be disabled or data corrupted - fail silently
-    return null;
-  }
+  });
 }
 
 /**

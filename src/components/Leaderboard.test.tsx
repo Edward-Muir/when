@@ -76,7 +76,7 @@ describe('Leaderboard', () => {
   it('still closes when the backdrop behind the sheet is clicked', () => {
     const { onClose } = renderBoard();
 
-    userEvent.click(screen.getByTestId('leaderboard-backdrop'));
+    userEvent.click(screen.getByTestId('modal-backdrop'));
 
     expect(onClose).toHaveBeenCalled();
   });

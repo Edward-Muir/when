@@ -158,7 +158,6 @@ export function generateChallengeSeed(): number {
 export function challengeConfigToGameConfig(config: ChallengeConfig): GameConfig {
   return {
     mode: 'suddenDeath',
-    totalTurns: config.handSize,
     selectedDifficulties: config.difficulties,
     selectedCategories: config.categories,
     selectedEras: config.eras,

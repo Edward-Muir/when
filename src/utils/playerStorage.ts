@@ -6,6 +6,7 @@
 
 import { Difficulty, Category, Era } from '../types';
 import { getLocalDateString } from './puzzleDate';
+import { readJson, readString, removeKeys, writeJson, writeString } from './storage';
 
 // --- Daily Result Storage ---
 
@@ -34,12 +35,7 @@ const DAILY_RESULT_KEY = 'when-daily-result';
  * Save the daily game result to localStorage
  */
 export function saveDailyResult(result: DailyResult): void {
-  try {
-    localStorage.setItem(DAILY_RESULT_KEY, JSON.stringify(result));
-  } catch {
-    // localStorage may be disabled or full - fail silently
-    console.warn('Failed to save daily result to localStorage');
-  }
+  writeJson(DAILY_RESULT_KEY, result, 'daily result');
 }
 
 /**
@@ -47,22 +43,9 @@ export function saveDailyResult(result: DailyResult): void {
  * Returns null if no result for today or if date doesn't match
  */
 export function getTodayResult(): DailyResult | null {
-  try {
-    const stored = localStorage.getItem(DAILY_RESULT_KEY);
-    if (!stored) return null;
-
-    const result: DailyResult = JSON.parse(stored);
-
-    // Only return if the stored result is for today
-    if (result.date === getLocalDateString()) {
-      return result;
-    }
-
-    return null;
-  } catch {
-    // localStorage may be disabled or data corrupted - fail silently
-    return null;
-  }
+  const result = readJson<DailyResult | null>(DAILY_RESULT_KEY, null);
+  // Only return if the stored result is for today
+  return result?.date === getLocalDateString() ? result : null;
 }
 
 /**
@@ -198,7 +181,7 @@ function setHintSeen(data: HintsSeen, key: HintKey): HintsSeen {
 function legacyHintSeen(key: HintKey): boolean {
   switch (key) {
     case 'timelineTab':
-      return localStorage.getItem(LEGACY_TIMELINE_INTRO_KEY) === '1';
+      return readString(LEGACY_TIMELINE_INTRO_KEY) === '1';
     default:
       return false;
   }
@@ -208,26 +191,18 @@ function legacyHintSeen(key: HintKey): boolean {
  * Whether a one-shot hint has already been shown (or its pre-2026-09 equivalent had).
  */
 export function hasSeenHint(key: HintKey): boolean {
-  try {
-    const stored = localStorage.getItem(HINTS_SEEN_KEY);
-    const data: HintsSeen = stored ? JSON.parse(stored) : {};
-    return getHintSeen(data, key) || legacyHintSeen(key);
-  } catch {
-    return false;
-  }
+  return (
+    readJson(HINTS_SEEN_KEY, false, (data) => getHintSeen(data as HintsSeen, key)) ||
+    legacyHintSeen(key)
+  );
 }
 
 /**
  * Mark a one-shot hint as shown so it never auto-shows again.
  */
 export function markHintSeen(key: HintKey): void {
-  try {
-    const stored = localStorage.getItem(HINTS_SEEN_KEY);
-    const data: HintsSeen = stored ? JSON.parse(stored) : {};
-    localStorage.setItem(HINTS_SEEN_KEY, JSON.stringify(setHintSeen(data, key)));
-  } catch {
-    console.warn('Failed to save hints seen state to localStorage');
-  }
+  const data = readJson<HintsSeen>(HINTS_SEEN_KEY, {});
+  writeJson(HINTS_SEEN_KEY, setHintSeen(data, key), 'hints seen state');
 }
 
 /**
@@ -241,13 +216,10 @@ export function markHintSeen(key: HintKey): void {
  * re-reading an empty store is exactly the right outcome.
  */
 export function resetHintsSeen(): void {
-  try {
-    localStorage.removeItem(HINTS_SEEN_KEY);
-    localStorage.removeItem(LEGACY_MODES_PLAYED_KEY);
-    localStorage.removeItem(LEGACY_TIMELINE_INTRO_KEY);
-  } catch {
-    console.warn('Failed to reset hints seen state in localStorage');
-  }
+  removeKeys(
+    [HINTS_SEEN_KEY, LEGACY_MODES_PLAYED_KEY, LEGACY_TIMELINE_INTRO_KEY],
+    'hints seen state'
+  );
   window.dispatchEvent(new Event(HINTS_RESET_EVENT));
 }
 
@@ -316,27 +288,14 @@ function clearNavSeen(data: NavSeen, key: NavKey): NavSeen {
  * (i.e. the user has clicked/visited it before).
  */
 export function hasSeenNav(key: NavKey): boolean {
-  try {
-    const stored = localStorage.getItem(NAV_SEEN_KEY);
-    if (!stored) return false;
-    const data: NavSeen = JSON.parse(stored);
-    return getNavSeen(data, key);
-  } catch {
-    return false;
-  }
+  return readJson(NAV_SEEN_KEY, false, (data) => getNavSeen(data as NavSeen, key));
 }
 
 /**
  * Mark a nav destination as seen so its "new" dot no longer shows.
  */
 export function markNavSeen(key: NavKey): void {
-  try {
-    const stored = localStorage.getItem(NAV_SEEN_KEY);
-    const data: NavSeen = stored ? JSON.parse(stored) : {};
-    localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(setNavSeen(data, key)));
-  } catch {
-    console.warn('Failed to save nav seen state to localStorage');
-  }
+  writeJson(NAV_SEEN_KEY, setNavSeen(readJson<NavSeen>(NAV_SEEN_KEY, {}), key), 'nav seen state');
 }
 
 /**
@@ -344,13 +303,8 @@ export function markNavSeen(key: NavKey): void {
  * so it shows again until the user next visits that page.
  */
 export function markNavUnseen(key: NavKey): void {
-  try {
-    const stored = localStorage.getItem(NAV_SEEN_KEY);
-    const data: NavSeen = stored ? JSON.parse(stored) : {};
-    localStorage.setItem(NAV_SEEN_KEY, JSON.stringify(clearNavSeen(data, key)));
-  } catch {
-    console.warn('Failed to save nav seen state to localStorage');
-  }
+  const data = readJson<NavSeen>(NAV_SEEN_KEY, {});
+  writeJson(NAV_SEEN_KEY, clearNavSeen(data, key), 'nav seen state');
 }
 
 // --- Timeline High Score Storage ---
@@ -361,31 +315,7 @@ const TIMELINE_HIGH_SCORE_KEY = 'when-timeline-high-score';
  * Get the high score for Sudden Death mode (longest timeline)
  */
 export function getTimelineHighScore(): number {
-  try {
-    const stored = localStorage.getItem(TIMELINE_HIGH_SCORE_KEY);
-    if (!stored) return 0;
-    return parseInt(stored, 10) || 0;
-  } catch {
-    return 0;
-  }
-}
-
-/**
- * Save a new high score if it beats the current record
- * @returns true if a new record was set
- */
-export function saveTimelineHighScore(score: number): boolean {
-  try {
-    const currentBest = getTimelineHighScore();
-    if (score > currentBest) {
-      localStorage.setItem(TIMELINE_HIGH_SCORE_KEY, score.toString());
-      return true;
-    }
-    return false;
-  } catch {
-    console.warn('Failed to save timeline high score to localStorage');
-    return false;
-  }
+  return parseInt(readString(TIMELINE_HIGH_SCORE_KEY) ?? '', 10) || 0;
 }
 
 // --- Display Name Storage ---
@@ -396,22 +326,14 @@ const DISPLAY_NAME_KEY = 'when-display-name';
  * Get the saved display name for leaderboard submissions
  */
 export function getDisplayName(): string {
-  try {
-    return localStorage.getItem(DISPLAY_NAME_KEY) || '';
-  } catch {
-    return '';
-  }
+  return readString(DISPLAY_NAME_KEY) || '';
 }
 
 /**
  * Save the display name for future leaderboard submissions
  */
 export function saveDisplayName(name: string): void {
-  try {
-    localStorage.setItem(DISPLAY_NAME_KEY, name);
-  } catch {
-    console.warn('Failed to save display name to localStorage');
-  }
+  writeString(DISPLAY_NAME_KEY, name, 'display name');
 }
 
 // --- Leaderboard Submission Tracking ---
@@ -422,44 +344,24 @@ const LEADERBOARD_SUBMITTED_KEY = 'when-leaderboard-submitted';
  * Check if leaderboard submission was made for today's daily
  */
 export function hasSubmittedToLeaderboard(): boolean {
-  try {
-    const stored = localStorage.getItem(LEADERBOARD_SUBMITTED_KEY);
-    if (!stored) return false;
-    // Only return true if it was submitted for today
-    return stored === getLocalDateString();
-  } catch {
-    return false;
-  }
+  // Only true if it was submitted for today
+  return readString(LEADERBOARD_SUBMITTED_KEY) === getLocalDateString();
 }
 
 /**
  * Mark that leaderboard submission was made for today
  */
 export function markLeaderboardSubmitted(): void {
-  try {
-    localStorage.setItem(LEADERBOARD_SUBMITTED_KEY, getLocalDateString());
-  } catch {
-    console.warn('Failed to save leaderboard submission status');
-  }
+  writeString(LEADERBOARD_SUBMITTED_KEY, getLocalDateString(), 'leaderboard submission status');
 }
 
 /**
  * Update today's daily result with leaderboard ranking data
  */
 export function updateDailyResultWithLeaderboard(rank: number, totalPlayers: number): void {
-  try {
-    const result = getTodayResult();
-    if (result) {
-      const updated: DailyResult = {
-        ...result,
-        leaderboardRank: rank,
-        leaderboardTotalPlayers: totalPlayers,
-      };
-      localStorage.setItem(DAILY_RESULT_KEY, JSON.stringify(updated));
-    }
-  } catch {
-    console.warn('Failed to update daily result with leaderboard data');
-  }
+  const result = getTodayResult();
+  if (!result) return;
+  saveDailyResult({ ...result, leaderboardRank: rank, leaderboardTotalPlayers: totalPlayers });
 }
 
 // --- Daily Reminder Storage ---
@@ -472,19 +374,11 @@ const DAILY_REMINDER_KEY = 'when-daily-reminder';
  * notification permission is a separate gate checked at scheduling time.
  */
 export function isDailyReminderEnabled(): boolean {
-  try {
-    return localStorage.getItem(DAILY_REMINDER_KEY) !== '0';
-  } catch {
-    return true;
-  }
+  return readString(DAILY_REMINDER_KEY) !== '0';
 }
 
 export function setDailyReminderEnabled(enabled: boolean): void {
-  try {
-    localStorage.setItem(DAILY_REMINDER_KEY, enabled ? '1' : '0');
-  } catch {
-    console.warn('Failed to save daily reminder setting to localStorage');
-  }
+  writeString(DAILY_REMINDER_KEY, enabled ? '1' : '0', 'daily reminder setting');
 }
 
 // --- Reminder Priming Storage ---
@@ -500,12 +394,7 @@ interface ReminderPriming {
 }
 
 function getReminderPriming(): ReminderPriming | null {
-  try {
-    const stored = localStorage.getItem(REMINDER_PRIMING_KEY);
-    return stored ? (JSON.parse(stored) as ReminderPriming) : null;
-  } catch {
-    return null;
-  }
+  return readJson<ReminderPriming | null>(REMINDER_PRIMING_KEY, null);
 }
 
 /**
@@ -525,27 +414,18 @@ export function shouldShowReminderPriming(now: Date = new Date()): boolean {
  * Record a "Not now" on the priming card, starting the 7-day cooldown.
  */
 export function recordPrimingDismissed(now: Date = new Date()): void {
-  try {
-    const priming = getReminderPriming();
-    const updated: ReminderPriming = {
-      dismissedAt: now.toISOString(),
-      count: (priming?.count ?? 0) + 1,
-    };
-    localStorage.setItem(REMINDER_PRIMING_KEY, JSON.stringify(updated));
-  } catch {
-    console.warn('Failed to save reminder priming state to localStorage');
-  }
+  const updated: ReminderPriming = {
+    dismissedAt: now.toISOString(),
+    count: (getReminderPriming()?.count ?? 0) + 1,
+  };
+  writeJson(REMINDER_PRIMING_KEY, updated, 'reminder priming state');
 }
 
 /**
  * Clear priming dismissal state (dev/admin use — /reminder-preview).
  */
 export function resetReminderPriming(): void {
-  try {
-    localStorage.removeItem(REMINDER_PRIMING_KEY);
-  } catch {
-    console.warn('Failed to clear reminder priming state from localStorage');
-  }
+  removeKeys([REMINDER_PRIMING_KEY], 'reminder priming state');
 }
 
 // --- Custom Game Settings Storage ---
@@ -570,12 +450,7 @@ const CUSTOM_SETTINGS_KEY = 'when-custom-settings';
  * Save the player's Custom-game settings to localStorage.
  */
 export function saveCustomSettings(settings: CustomSettings): void {
-  try {
-    localStorage.setItem(CUSTOM_SETTINGS_KEY, JSON.stringify(settings));
-  } catch {
-    // localStorage may be disabled or full - fail silently
-    console.warn('Failed to save custom settings to localStorage');
-  }
+  writeJson(CUSTOM_SETTINGS_KEY, settings, 'custom settings');
 }
 
 const isNonEmptyArray = (value: unknown): boolean => Array.isArray(value) && value.length > 0;
@@ -585,29 +460,25 @@ const isNonEmptyArray = (value: unknown): boolean => Array.isArray(value) && val
  * Returns null on any validation failure so callers fall back to defaults.
  */
 export function getCustomSettings(): CustomSettings | null {
-  try {
-    const stored = localStorage.getItem(CUSTOM_SETTINGS_KEY);
-    if (!stored) return null;
+  return readJson(CUSTOM_SETTINGS_KEY, null, normalizeCustomSettings);
+}
 
-    const parsed = JSON.parse(stored) as Partial<CustomSettings>;
+function normalizeCustomSettings(raw: unknown): CustomSettings | null {
+  const parsed = raw as Partial<CustomSettings>;
 
-    // Validate: filters must be non-empty arrays and numbers finite. A retired
-    // `isSuddenDeath` key may still be present in older records; it is simply ignored,
-    // deliberately not validated, so an old record still restores rather than resetting.
-    if (
-      !isNonEmptyArray(parsed.selectedDifficulties) ||
-      !isNonEmptyArray(parsed.selectedCategories) ||
-      !isNonEmptyArray(parsed.selectedEras) ||
-      !Number.isFinite(parsed.playerCount) ||
-      !Number.isFinite(parsed.cardsPerHand) ||
-      !Number.isFinite(parsed.suddenDeathHandSize)
-    ) {
-      return null;
-    }
-
-    return parsed as CustomSettings;
-  } catch {
-    // localStorage may be disabled or data corrupted - fail silently
+  // Validate: filters must be non-empty arrays and numbers finite. A retired
+  // `isSuddenDeath` key may still be present in older records; it is simply ignored,
+  // deliberately not validated, so an old record still restores rather than resetting.
+  if (
+    !isNonEmptyArray(parsed.selectedDifficulties) ||
+    !isNonEmptyArray(parsed.selectedCategories) ||
+    !isNonEmptyArray(parsed.selectedEras) ||
+    !Number.isFinite(parsed.playerCount) ||
+    !Number.isFinite(parsed.cardsPerHand) ||
+    !Number.isFinite(parsed.suddenDeathHandSize)
+  ) {
     return null;
   }
+
+  return parsed as CustomSettings;
 }

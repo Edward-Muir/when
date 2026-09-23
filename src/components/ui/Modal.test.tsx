@@ -136,4 +136,22 @@ describe('Modal shell composition', () => {
     renderModal({ bordered: false });
     expect(card()).not.toHaveClass('border');
   });
+
+  it('widthClass replaces the size preset instead of adding to it', () => {
+    renderModal({ widthClass: 'w-full max-w-md' });
+    expect(card()).toHaveClass('w-full', 'max-w-md');
+    expect(card()).not.toHaveClass('max-w-[340px]');
+  });
+
+  it('shadow="xl" swaps the default shadow', () => {
+    renderModal({ shadow: 'xl' });
+    expect(card()).toHaveClass('shadow-xl');
+    expect(card()).not.toHaveClass('shadow-sm');
+  });
+
+  it('is a labelled modal dialog', () => {
+    renderModal({ labelledBy: 'title-id' });
+    expect(screen.getByRole('dialog')).toHaveAttribute('aria-modal', 'true');
+    expect(screen.getByRole('dialog')).toHaveAttribute('aria-labelledby', 'title-id');
+  });
 });

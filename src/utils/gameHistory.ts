@@ -1,6 +1,7 @@
 import { WhenGameState } from '../types';
 import { getLocalDateString } from './puzzleDate';
 import { DAILY_HAND_SIZE } from './dailyConfig';
+import { readJson, writeJson } from './storage';
 
 /**
  * One compact record per finished game — the history behind the stats page's calendar and,
@@ -110,23 +111,15 @@ function readOptionalFields(raw: Partial<GameRecord>, record: GameRecord): void 
 
 /** Every recorded game, oldest first. Empty on missing, corrupt or disabled storage. */
 export function getGameHistory(): GameRecord[] {
-  try {
-    const stored = localStorage.getItem(GAME_HISTORY_KEY);
-    if (!stored) return [];
-    const parsed: unknown = JSON.parse(stored);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.map(readRecord).filter((record): record is GameRecord => record !== null);
-  } catch {
-    return [];
-  }
+  return readJson(GAME_HISTORY_KEY, [], (parsed) =>
+    Array.isArray(parsed)
+      ? parsed.map(readRecord).filter((record): record is GameRecord => record !== null)
+      : []
+  );
 }
 
 function saveGameHistory(records: GameRecord[]): void {
-  try {
-    localStorage.setItem(GAME_HISTORY_KEY, JSON.stringify(records));
-  } catch {
-    console.warn('Failed to save game history to localStorage');
-  }
+  writeJson(GAME_HISTORY_KEY, records, 'game history');
 }
 
 /** Drop the oldest custom game while over the cap; only once none remain, the oldest daily. */

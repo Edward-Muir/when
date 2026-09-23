@@ -33,7 +33,6 @@ jest.mock('../utils/curatedThemes', () => {
 // Mock playerStorage to prevent auto-starting daily mode in tests
 jest.mock('../utils/playerStorage', () => ({
   saveDailyResult: jest.fn(),
-  saveTimelineHighScore: jest.fn(),
   getTimelineHighScore: jest.fn().mockReturnValue(0),
   getTodayResult: jest.fn().mockReturnValue(null),
   hasPlayedToday: jest.fn().mockReturnValue(true), // Pretend daily was already played
@@ -104,7 +103,6 @@ describe('useWhenGame - Sudden Death Mode', () => {
     act(() => {
       result.current.startGame({
         mode: 'suddenDeath',
-        totalTurns: 10,
         selectedDifficulties: ['easy', 'medium', 'hard'],
         selectedCategories: ['empires'],
         selectedEras: [...ALL_ERAS],
@@ -399,6 +397,77 @@ describe('useWhenGame - Sudden Death Mode', () => {
 
       expect(result.current.state.failedPlacements).toHaveLength(1);
       expect(result.current.state.failedPlacements[0].event.name).toBe('p1-card');
+    });
+
+    // Multiplayer defers the turn hand-off until the popup is dismissed, and the two outcomes
+    // defer different things: a correct placement applies the phase at once, a miss holds it
+    // back with the turn. These pin the state in the gap between the timers and the dismissal.
+    describe('multiplayer hand-off before the popup is dismissed', () => {
+      type Result = Awaited<ReturnType<typeof setupGame>>;
+      const activeCard = (result: Result) =>
+        result.current.state.players[result.current.state.currentPlayerIndex].hand[0];
+      const rightSlot = (result: Result) =>
+        result.current.state.timeline.filter((e) => e.year < activeCard(result).year).length;
+      const wrongSlot = (result: Result) =>
+        rightSlot(result) === 0 ? result.current.state.timeline.length : 0;
+
+      function placeAndSettle(result: Result, index: number) {
+        act(() => {
+          result.current.placeCard(index);
+        });
+        act(() => {
+          jest.runAllTimers();
+        });
+      }
+
+      async function startTwoPlayer(handSize: number) {
+        const result = await setupGame();
+        startSuddenDeathGame(result, {
+          playerCount: 2,
+          playerNames: ['Player 1', 'Player 2'],
+          suddenDeathHandSize: handSize,
+        });
+        return result;
+      }
+
+      it('a correct placement mid-game holds the turn but not the phase', async () => {
+        const result = await startTwoPlayer(2);
+
+        placeAndSettle(result, rightSlot(result));
+        expect(result.current.state).toMatchObject({
+          currentPlayerIndex: 0,
+          turnNumber: 1,
+          phase: 'playing',
+          isAnimating: false,
+        });
+
+        act(() => result.current.dismissPopup());
+        expect(result.current.state).toMatchObject({ currentPlayerIndex: 1, turnNumber: 2 });
+      });
+
+      it('a correct placement that ends the game applies everything at once', async () => {
+        const result = await startTwoPlayer(1);
+        placeAndSettle(result, wrongSlot(result)); // P1 empties their hand
+        act(() => result.current.dismissPopup());
+
+        placeAndSettle(result, rightSlot(result)); // P2 ends the round and wins
+        expect(result.current.state.phase).toBe('gameOver');
+        expect(result.current.state.winners.map((p) => p.id)).toEqual([1]);
+      });
+
+      it('a miss that ends the game holds the phase back until dismissal', async () => {
+        const result = await startTwoPlayer(1);
+        placeAndSettle(result, rightSlot(result)); // P1 keeps a card
+        act(() => result.current.dismissPopup());
+
+        placeAndSettle(result, wrongSlot(result)); // P2 empties and is eliminated
+        expect(result.current.state.phase).toBe('playing');
+        expect(result.current.state.winners.map((p) => p.id)).toEqual([0]);
+        expect(result.current.state.currentPlayerIndex).toBe(1);
+
+        act(() => result.current.dismissPopup());
+        expect(result.current.state.phase).toBe('gameOver');
+      });
     });
 
     it('tombstones survive into gameOver and are cleared on a new game', async () => {

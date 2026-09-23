@@ -45,13 +45,6 @@ export function rateLimitKey(ipHash: string): string {
 }
 
 /**
- * Re-exported so the existing call site and its unit test keep their import path. The
- * implementation moved to api/adminAuth.ts when the themes endpoints needed the same gate.
- */
-export { authorizeAdmin as authorizeAdminRead } from '../adminAuth';
-export type { AdminAuthResult } from '../adminAuth';
-
-/**
  * Event ids in public/events/ are kebab-case, e.g. "wwi-end". Mostly ASCII, but a
  * handful carry accents ("chimú-kingdom", "mining-mercury-potosí"), so this has to
  * be Unicode-aware — an ASCII-only class would make those cards unreportable.
