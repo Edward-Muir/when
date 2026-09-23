@@ -161,7 +161,9 @@ a moment`, written by `year-range-apply.js` from `year_end: null` entries and co
   exists because "reviewed and left alone" is the commonest outcome of a sweep and had nowhere
   to live: without it the report script cannot tell an event nobody has looked at from one four
   readers have each dismissed. `eventYearRange.test.ts` pins it to the catalogue — every ledger
-  slug resolves, carries a reason, and does not also carry a `year_end`.
+  slug resolves, carries a reason, and does not also carry a `year_end`. Re-opening a decided
+  card means deleting its ledger line first; writing a window to one retracts its rejection
+  automatically.
 - **`eventRangeSignals` is a per-record hint now, not the worklist.** `--all` sweeps everything
   and an empty `signals` array is itself the hint that nothing flagged this card. The old
   `SPAN_NOUN` missed every plural, so `Hussite Wars` and `Three Kingdoms` returned nothing at
