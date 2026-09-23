@@ -22,7 +22,12 @@ export interface ModalProps {
       content manages its own scroll region (e.g. Leaderboard's entries div). */
   scroll?: 'card' | 'body';
   maxHeightClass?: string;
+  /** Replaces the `size` preset's width classes, for a popup whose width predates the presets. */
+  widthClass?: string;
   rounded?: 'lg' | '2xl';
+  shadow?: 'sm' | 'xl';
+  /** id of the element naming the dialog, for `aria-labelledby`. */
+  labelledBy?: string;
   bordered?: boolean;
   /** Event-color passthrough (GamePopup getEventColorStyle). */
   cardStyle?: React.CSSProperties;
@@ -58,13 +63,16 @@ const DEFAULT_MAX_HEIGHT: Record<'card' | 'body', string> = {
 
 function buildCardClasses(args: {
   size: ModalSize;
+  widthClass?: string;
   scroll?: 'card' | 'body';
   maxHeightClass?: string;
   rounded: 'lg' | '2xl';
+  shadow: 'sm' | 'xl';
   bordered: boolean;
   cardClassName?: string;
 }): string {
-  const { size, scroll, maxHeightClass, rounded, bordered, cardClassName } = args;
+  const { size, widthClass, scroll, maxHeightClass, rounded, shadow, bordered, cardClassName } =
+    args;
   // eslint-disable-next-line security/detect-object-injection -- union-typed key into const map
   const maxHeight = scroll ? (maxHeightClass ?? DEFAULT_MAX_HEIGHT[scroll]) : undefined;
   const scrollClasses =
@@ -76,10 +84,11 @@ function buildCardClasses(args: {
 
   return [
     // eslint-disable-next-line security/detect-object-injection -- union-typed key into const map
-    SIZE_CLASSES[size],
+    widthClass ?? SIZE_CLASSES[size],
     rounded === '2xl' ? 'rounded-2xl' : 'rounded-lg',
     bordered ? 'border border-border' : '',
-    'bg-surface shadow-sm transition-colors',
+    shadow === 'xl' ? 'shadow-xl' : 'shadow-sm',
+    'bg-surface transition-colors',
     scrollClasses,
     cardClassName ?? '',
   ]
@@ -90,7 +99,7 @@ function buildCardClasses(args: {
 /**
  * The one popup shell: backdrop, centered card, enter/exit animation, ESC, and
  * dismissal semantics. Every fullscreen overlay except the Menu drawer renders
- * its content inside this.
+ * its content inside this; don't hand-roll another backdrop.
  *
  * Contract: callers keep the component ALWAYS MOUNTED and drive `open` —
  * a conditional render (`{show && <Modal/>}`) silently loses the exit animation.
@@ -106,7 +115,10 @@ const Modal: React.FC<ModalProps> = ({
   header,
   scroll,
   maxHeightClass,
+  widthClass,
   rounded = 'lg',
+  shadow = 'sm',
+  labelledBy,
   bordered = true,
   cardStyle,
   cardClassName,
@@ -127,9 +139,11 @@ const Modal: React.FC<ModalProps> = ({
 
   const cardClasses = buildCardClasses({
     size,
+    widthClass,
     scroll,
     maxHeightClass,
     rounded,
+    shadow,
     bordered,
     cardClassName,
   });
@@ -139,7 +153,7 @@ const Modal: React.FC<ModalProps> = ({
       {open && (
         <motion.div
           // Backdrop and card carry test ids because they are unlabelled structural nodes —
-          // there is no accessible query that reaches them (cf. `leaderboard-backdrop`).
+          // there is no accessible query that reaches them.
           data-testid="modal-backdrop"
           // eslint-disable-next-line security/detect-object-injection -- union-typed keys into const maps
           className={`fixed inset-0 ${LAYER_CLASSES[layer]} flex items-center justify-center p-4 ${BACKDROP_CLASSES[backdrop]}`}
@@ -151,6 +165,9 @@ const Modal: React.FC<ModalProps> = ({
         >
           <motion.div
             data-testid="modal-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby={labelledBy}
             className={cardClasses}
             style={cardStyle}
             onClick={dismiss === 'tap-advance' ? undefined : (e) => e.stopPropagation()}

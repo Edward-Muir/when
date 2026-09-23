@@ -509,14 +509,12 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
 
       {/* The Daily hero's read-more. Its event is the deck's starting card, placed face-up with
           its year on turn 1, so the detail card opens on the prose like any other placed card. */}
-      {infoEvent && (
-        <GamePopup
-          type="description"
-          event={infoEvent}
-          onDismiss={() => setInfoEvent(null)}
-          showYear
-        />
-      )}
+      <GamePopup
+        type="description"
+        event={infoEvent}
+        onDismiss={() => setInfoEvent(null)}
+        showYear
+      />
 
       {/* Leaderboard Modal */}
       <Leaderboard
