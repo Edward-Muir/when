@@ -49,6 +49,7 @@
     "test": "TZ=America/Los_Angeles react-scripts test",
     "eject": "react-scripts eject",
     "find-duplicates": "node scripts/find-duplicate-events.js",
+    "build-dedup-clusters": "node scripts/build-dedup-clusters.js",
     "theme:gap": "node scripts/theme-gap.js",
     "theme:verify": "node scripts/verify-themes.js",
     "cloudinary:usage": "node scripts/cloudinary-usage.js",

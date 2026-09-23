@@ -1,6 +1,9 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Hundreds more events now cover a span of years rather than a single date.",
+    "Another 92 event dates were corrected against their sources."
+  ],
   "releases": [
     {
       "version": "1.26.0",

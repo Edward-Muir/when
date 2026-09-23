@@ -17,6 +17,7 @@ import AnimJig from './pages/AnimJig';
 import ReminderPreview from './pages/ReminderPreview';
 import SharePreview from './pages/SharePreview';
 import TimelineLab from './pages/TimelineLab';
+import AdminDedup from './pages/AdminDedup';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -41,6 +42,10 @@ root.render(
         <Route path="/reminder-preview" element={<ReminderPreview />} />
         <Route path="/share-preview" element={<SharePreview />} />
         <Route path="/timeline-lab" element={<TimelineLab />} />
+        {/* Internal duplicate-review jig. Linked from no navigation (dev-only by
+            convention); reachable only by typing the URL, including on the deployed
+            dev preview, which is a production build. Needs a matching vercel.json rewrite. */}
+        <Route path="/admin/dedup" element={<AdminDedup />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
