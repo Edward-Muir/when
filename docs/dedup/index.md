@@ -12,13 +12,12 @@ and the full re-land write-up, is in
 
 ## Nothing is hard-deleted
 
-`scripts/apply-dedup-deletions.js` (retired once the review finished; it is in git history) read
-`dedup-delete-list.json` and, for every id it removed
-from a category file, appended the whole event to `public/events/deprecated.json` with
+`scripts/apply-dedup-deletions.js` reads `dedup-delete-list.json` and, for every id it removes
+from a category file, appends the whole event to `public/events/deprecated.json` with
 `_originalCategory` and `_deprecatedAt` — the same convention as the event editor's
 `deprecateEvent()`. `deprecated.json` is deliberately absent from `manifest.json`, so those events
-stop being served but stay recoverable. It supported `--dry-run`, and `DEPRECATED_AT` was a fixed
-constant so a re-run produced a stable diff instead of churning timestamps.
+stop being served but stay recoverable. Supports `--dry-run`; `DEPRECATED_AT` is a fixed constant
+so a re-run produces a stable diff instead of churning timestamps.
 
 ## What is in this folder
 

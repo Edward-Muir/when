@@ -84,11 +84,12 @@ open it on that tab and the URL follows the swipe; see `src/pages/Home.tsx`), `/
 and redirects to `/stats`, where the badges live now. Anything else redirects to `/`.
 
 Unlinked maintainer tools: `/image-qc`, `/card-reports`, `/cards-preview`, `/unlock-preview`,
-`/anim-jig`, `/reminder-preview`, `/share-preview`, `/timeline-lab`.
+`/anim-jig`, `/reminder-preview`, `/share-preview`, `/timeline-lab`, `/admin/dedup` (the
+duplicate-review tool; see [dedup/](dedup/index.md)).
 
 **A client route needs a rewrite in `vercel.json` or it 404s on a direct load in production.**
 Every tab path has one, and so does `/achievements` so its redirect can run on a hard load.
-Only `/image-qc` and `/card-reports` among the maintainer tools have one; the rest are local-dev
+Only `/image-qc`, `/card-reports` and `/admin/dedup` among the maintainer tools have one; the rest are local-dev
 only. Check `vercel.json` rather than trusting this list.
 
 ## Type Definitions (types/index.ts)
