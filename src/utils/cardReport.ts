@@ -1,5 +1,6 @@
 import { getDeviceFingerprint } from './deviceFingerprint';
 import { APP_VERSION } from '../version';
+import { readJson, writeJson } from './storage';
 
 /**
  * Reporting a problem with a card's data. Submits straight to the API — no mail
@@ -26,15 +27,15 @@ const REPORTED_CARDS_KEY = 'when-reported-cards';
 
 /** Reads the session's reported-card ids, tolerating anything malformed. */
 function getReportedCards(): string[] {
-  try {
-    const raw = sessionStorage.getItem(REPORTED_CARDS_KEY);
-    if (!raw) return [];
-    const parsed = JSON.parse(raw);
-    if (!Array.isArray(parsed)) return [];
-    return parsed.filter((entry): entry is string => typeof entry === 'string');
-  } catch {
-    return [];
-  }
+  return readJson(
+    REPORTED_CARDS_KEY,
+    [],
+    (parsed) =>
+      Array.isArray(parsed)
+        ? parsed.filter((entry): entry is string => typeof entry === 'string')
+        : [],
+    'session'
+  );
 }
 
 export function hasReportedCard(eventName: string): boolean {
@@ -42,14 +43,9 @@ export function hasReportedCard(eventName: string): boolean {
 }
 
 export function markCardReported(eventName: string): void {
-  try {
-    const reported = getReportedCards();
-    if (reported.includes(eventName)) return;
-    reported.push(eventName);
-    sessionStorage.setItem(REPORTED_CARDS_KEY, JSON.stringify(reported));
-  } catch {
-    console.warn('Failed to save reported card to sessionStorage');
-  }
+  const reported = getReportedCards();
+  if (reported.includes(eventName)) return;
+  writeJson(REPORTED_CARDS_KEY, [...reported, eventName], 'reported card', 'session');
 }
 
 /**

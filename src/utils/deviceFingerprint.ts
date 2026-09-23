@@ -3,19 +3,21 @@
  * Generates a stable device ID that persists across sessions.
  */
 
+import { readString, writeString } from './storage';
+
 const DEVICE_ID_KEY = 'when-device-id';
 
 /**
  * Get the device fingerprint, generating one if it doesn't exist.
  */
 export async function getDeviceFingerprint(): Promise<string> {
-  // Check for existing fingerprint
-  const stored = localStorage.getItem(DEVICE_ID_KEY);
+  const stored = readString(DEVICE_ID_KEY);
   if (stored) return stored;
 
-  // Generate new fingerprint
+  // With storage blocked this still returns an id, just a fresh one per call, so a leaderboard
+  // submit works rather than throwing.
   const fingerprint = await generateFingerprint();
-  localStorage.setItem(DEVICE_ID_KEY, fingerprint);
+  writeString(DEVICE_ID_KEY, fingerprint, 'device id');
   return fingerprint;
 }
 

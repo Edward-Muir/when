@@ -25,9 +25,7 @@ describe('authorizeAdmin', () => {
     ['a much longer guess than the configured key', 'x'.repeat(200)],
     ['a much shorter guess', 'x'],
   ])('rejects %s without throwing', (_label, supplied) => {
-    expect(() =>
-      authorizeAdmin({ supplied, configured: KEY, isProduction: true })
-    ).not.toThrow();
+    expect(() => authorizeAdmin({ supplied, configured: KEY, isProduction: true })).not.toThrow();
     expect(authorizeAdmin({ supplied, configured: KEY, isProduction: true }).ok).toBe(false);
   });
 
@@ -45,15 +43,15 @@ describe('authorizeAdmin', () => {
   // Fail closed: an unconfigured production deploy must not serve reports to
   // anyone who asks. 503 rather than 401 so the cause is obvious.
   it('refuses in production when no key is configured', () => {
-    expect(
-      authorizeAdmin({ supplied: KEY, configured: undefined, isProduction: true })
-    ).toEqual({ ok: false, status: 503, error: 'Admin key not configured' });
+    expect(authorizeAdmin({ supplied: KEY, configured: undefined, isProduction: true })).toEqual({
+      ok: false,
+      status: 503,
+      error: 'Admin key not configured',
+    });
   });
 
   it('refuses in production when the configured key is empty', () => {
-    expect(authorizeAdmin({ supplied: KEY, configured: '', isProduction: true }).ok).toBe(
-      false
-    );
+    expect(authorizeAdmin({ supplied: KEY, configured: '', isProduction: true }).ok).toBe(false);
   });
 
   // ...but `vercel dev` should work with no setup.
@@ -64,8 +62,8 @@ describe('authorizeAdmin', () => {
   });
 
   it('still enforces a configured key outside production', () => {
-    expect(
-      authorizeAdmin({ supplied: undefined, configured: KEY, isProduction: false }).ok
-    ).toBe(false);
+    expect(authorizeAdmin({ supplied: undefined, configured: KEY, isProduction: false }).ok).toBe(
+      false
+    );
   });
 });
