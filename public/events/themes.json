@@ -4960,7 +4960,8 @@
     "year": -1900000000,
     "category": "nature",
     "description": "Cells with a nucleus and internal organelles arose, likely when one microbe engulfed another and both survived.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-insects-appear",
@@ -4968,7 +4969,8 @@
     "year": -400000000,
     "category": "nature",
     "description": "Small wingless insects related to modern silverfish became among the first animals to live entirely on land.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "homo-heidelbergensis-emerges",
@@ -4976,7 +4978,8 @@
     "year": -700000,
     "category": "nature",
     "description": "A large brained hominin likely ancestral to both Neanderthals and modern humans appeared in Africa.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "oldest-wooden-hunting-spears",
@@ -4984,7 +4987,8 @@
     "year": -200000,
     "category": "invention",
     "description": "Wooden hunting spears preserved in Germany show early hominins throwing weapons to kill horses.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "wang-mang-usurps-han",
@@ -4992,7 +4996,8 @@
     "year": 9,
     "category": "empires",
     "description": "A Han regent deposed the child emperor and proclaimed his own short-lived dynasty, ending Western Han rule.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "battle-red-cliffs",
@@ -5000,7 +5005,8 @@
     "year": 208,
     "category": "warfare",
     "description": "Allied southern warlords burned a rival fleet on the Yangtze, blocking reunification and setting up rival kingdoms.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "jin-forces-sack-kaifeng",
@@ -5008,7 +5014,8 @@
     "year": 1127,
     "category": "empires",
     "description": "Jurchen Jin armies stormed the Song capital and carried off two emperors, ending Song rule over northern China.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "red-turban-rebellion-begins",
@@ -5016,7 +5023,8 @@
     "year": 1351,
     "category": "revolution",
     "description": "Millenarian rebels rose against Mongol rule across China, starting the uprisings that toppled the Yuan dynasty.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ming-emperor-captured-tumu",
@@ -5024,7 +5032,8 @@
     "year": 1449,
     "category": "warfare",
     "description": "Mongol forces routed a Ming army and seized the reigning emperor at a frontier fortress, a rare blow to imperial prestige.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "macartney-mission-rebuffed",
@@ -5032,7 +5041,8 @@
     "year": 1793,
     "category": "diplomacy",
     "description": "A British envoy sought open trade with the Qing court but was turned away, an assertion of imperial self-sufficiency.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "faroe-islands-settled-monks",
@@ -5040,7 +5050,8 @@
     "year": 625,
     "category": "migration",
     "description": "Irish hermit monks became the first people known to settle the remote, windswept Faroe Islands in the North Atlantic.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "first-ascent-mont-blanc",
@@ -5048,7 +5059,8 @@
     "year": 1786,
     "category": "migration",
     "description": "Jacques Balmat and Michel Paccard became the first climbers to reach the summit of the highest peak in the Alps.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ross-reaches-north-magnetic-pole",
@@ -5056,7 +5068,8 @@
     "year": 1831,
     "category": "migration",
     "description": "James Clark Ross located and reached the North Magnetic Pole on the Boothia Peninsula, a first for any expedition.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-ascent-matterhorn",
@@ -5064,7 +5077,8 @@
     "year": 1865,
     "category": "migration",
     "description": "Edward Whymper led the first successful climb of the Matterhorn, one of the last great Alpine peaks to fall.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "nansen-crosses-greenland-icecap",
@@ -5072,7 +5086,8 @@
     "year": 1888,
     "category": "migration",
     "description": "Fridtjof Nansen led the first crossing of the Greenland ice sheet, skiing coast to coast through its unmapped interior.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-ascent-kilimanjaro",
@@ -5080,7 +5095,8 @@
     "year": 1889,
     "category": "migration",
     "description": "Hans Meyer and Ludwig Purtscheller became the first climbers to reach the summit of Kilimanjaro, Africa's highest peak.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-landing-on-antarctica",
@@ -5088,7 +5104,8 @@
     "year": 1895,
     "category": "migration",
     "description": "A party from a Norwegian whaling ship, including Carsten Borchgrevink, made the first confirmed landing on the Antarctic mainland.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-ascent-aconcagua",
@@ -5096,7 +5113,8 @@
     "year": 1897,
     "category": "migration",
     "description": "Matthias Zurbriggen became the first person to reach the summit of Aconcagua, the highest peak in the Americas.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "belgica-overwinters-antarctica",
@@ -5104,7 +5122,8 @@
     "year": 1898,
     "category": "migration",
     "description": "Trapped in pack ice, the crew of the ship Belgica became the first people to survive a winter in Antarctic waters.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-ascent-denali",
@@ -5112,7 +5131,8 @@
     "year": 1913,
     "category": "migration",
     "description": "An expedition led by Hudson Stuck and guided by Walter Harper made the first confirmed ascent of Denali, North America's tallest peak.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-auto-crossing-sahara",
@@ -5120,7 +5140,8 @@
     "year": 1922,
     "category": "migration",
     "description": "A Citroen half track expedition completed the first crossing of the Sahara Desert to be made entirely by motor vehicle.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "byrd-flies-over-south-pole",
@@ -5128,7 +5149,8 @@
     "year": 1929,
     "category": "migration",
     "description": "Richard Byrd and his crew completed the first flight over the South Pole, a new way of reaching the bottom of the world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-ascent-annapurna",
@@ -5136,7 +5158,8 @@
     "year": 1950,
     "category": "migration",
     "description": "Maurice Herzog and Louis Lachenal reached the summit of Annapurna, the first mountain over eight thousand meters ever climbed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-ascent-k2",
@@ -5144,7 +5167,8 @@
     "year": 1954,
     "category": "migration",
     "description": "Lino Lacedelli and Achille Compagnoni reached the summit of K2, the second highest and among the most dangerous peaks on Earth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-land-crossing-antarctica",
@@ -5152,7 +5176,8 @@
     "year": 1958,
     "category": "migration",
     "description": "The Commonwealth Trans-Antarctic Expedition, led by Vivian Fuchs, completed the first overland crossing of Antarctica.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-ascent-vinson-massif",
@@ -5160,7 +5185,8 @@
     "year": 1966,
     "category": "migration",
     "description": "An American expedition made the first ascent of Vinson Massif, the highest peak on the Antarctic continent.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "plaisted-reaches-north-pole",
@@ -5168,7 +5194,8 @@
     "year": 1968,
     "category": "migration",
     "description": "Ralph Plaisted's snowmobile expedition became the first confirmed surface party to reach the North Pole.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "first-women-reach-south-pole",
@@ -5176,7 +5203,8 @@
     "year": 1969,
     "category": "migration",
     "description": "Six American women scientists stepped off a supply plane together, becoming the first women to reach the South Pole.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "messner-solo-ascent-everest",
@@ -5184,7 +5212,8 @@
     "year": 1980,
     "category": "migration",
     "description": "Reinhold Messner became the first person to climb Everest completely alone and without supplemental oxygen.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "unsupported-trek-to-north-pole",
@@ -5192,7 +5221,8 @@
     "year": 1990,
     "category": "migration",
     "description": "Erling Kagge and Borge Ousland skied to the North Pole without resupply, the first unsupported trek to reach it.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ousland-solo-crossing-antarctica",
@@ -5200,7 +5230,8 @@
     "year": 1997,
     "category": "migration",
     "description": "Borge Ousland completed the first solo, unsupported crossing of Antarctica, hauling his own supplies the entire way.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "akkadian-empire-famine-collapse",
@@ -5209,7 +5240,8 @@
     "category": "disasters",
     "description": "A prolonged megadrought ruined Mesopotamian harvests and helped topple the world's first empire, the Akkadians.",
     "difficulty": "hard",
-    "year_end": -2154
+    "year_end": -2154,
+    "has_detail": true
   },
   {
     "name": "great-famine-cairo",
@@ -5218,7 +5250,8 @@
     "category": "disasters",
     "description": "Two failed floods of the Nile triggered a catastrophic famine and reported cannibalism across Ayyubid Egypt.",
     "difficulty": "very-hard",
-    "year_end": 1202
+    "year_end": 1202,
+    "has_detail": true
   },
   {
     "name": "sweet-potato-reaches-china",
@@ -5226,7 +5259,8 @@
     "year": 1593,
     "category": "agriculture",
     "description": "A merchant smuggled sweet potato vines out of the Philippines into Fujian province, a hardy crop soon credited with easing famine.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "english-poor-law-relief",
@@ -5234,7 +5268,8 @@
     "year": 1601,
     "category": "law",
     "description": "Elizabeth I's government codified parish funded relief for the destitute, a model later used to answer subsistence crises.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "deccan-famine-mughal-india",
@@ -5243,7 +5278,8 @@
     "category": "disasters",
     "description": "Failed monsoons and war devastated the Deccan plateau, killing millions of people under Mughal rule.",
     "difficulty": "very-hard",
-    "year_end": 1632
+    "year_end": 1632,
+    "has_detail": true
   },
   {
     "name": "great-famine-france-louis-xiv",
@@ -5252,7 +5288,8 @@
     "category": "disasters",
     "description": "Two catastrophic harvests late in Louis XIV's reign left roughly two million French subjects to starve.",
     "difficulty": "hard",
-    "year_end": 1694
+    "year_end": 1694,
+    "has_detail": true
   },
   {
     "name": "great-baltic-famine",
@@ -5261,7 +5298,8 @@
     "category": "disasters",
     "description": "A run of cold, wet summers ruined grain harvests across Sweden, Finland and Estonia, killing a fifth of the region's people.",
     "difficulty": "hard",
-    "year_end": 1697
+    "year_end": 1697,
+    "has_detail": true
   },
   {
     "name": "bengal-famine-company-rule",
@@ -5269,7 +5307,8 @@
     "year": 1770,
     "category": "disasters",
     "description": "Drought and East India Company tax policy combined to kill roughly a third of Bengal's population.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "guano-boom-fertilizer-trade",
@@ -5277,7 +5316,8 @@
     "year": 1840,
     "category": "agriculture",
     "description": "Britain began importing nitrogen rich Peruvian guano by the shipload, launching an industrial fertilizer trade that lifted European yields.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "corn-laws-repealed-britain",
@@ -5285,7 +5325,8 @@
     "year": 1846,
     "category": "law",
     "description": "Britain scrapped tariffs on imported grain, a free trade response to famine that reshaped food policy for a century.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "great-famine-british-india",
@@ -5294,7 +5335,8 @@
     "category": "disasters",
     "description": "A severe monsoon failure tied to a harsh El Nino triggered mass starvation across British ruled India, killing millions.",
     "difficulty": "medium",
-    "year_end": 1878
+    "year_end": 1878,
+    "has_detail": true
   },
   {
     "name": "indian-famine-codes-adopted",
@@ -5302,7 +5344,8 @@
     "year": 1880,
     "category": "law",
     "description": "Colonial administrators drafted the first systematic famine code, setting relief work obligations and early triggers for aid.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "world-food-programme-founded",
@@ -5310,7 +5353,8 @@
     "year": 1961,
     "category": "diplomacy",
     "description": "The United Nations created a dedicated agency to deliver emergency food aid, now the world's largest hunger relief operation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "china-ends-collective-farming",
@@ -5319,7 +5363,8 @@
     "category": "agriculture",
     "description": "Reformers dismantled the famine prone commune system and let farming households keep what they grew, lifting grain output.",
     "difficulty": "medium",
-    "year_end": 1983
+    "year_end": 1983,
+    "has_detail": true
   },
   {
     "name": "famine-early-warning-launched",
@@ -5327,7 +5372,8 @@
     "year": 1985,
     "category": "science",
     "description": "Aid agencies launched a network tracking drought and crop data worldwide, pioneering data driven famine forecasting.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "horn-of-africa-famine",
@@ -5336,7 +5382,8 @@
     "category": "disasters",
     "description": "Drought and conflict combined to kill a quarter million people across Somalia and the surrounding Horn of Africa region.",
     "difficulty": "medium",
-    "year_end": 2012
+    "year_end": 2012,
+    "has_detail": true
   },
   {
     "name": "south-sudan-famine-declared",
@@ -5344,7 +5391,8 @@
     "year": 2017,
     "category": "disasters",
     "description": "The United Nations declared its first famine in six years amid civil war, striking parts of Unity state in South Sudan.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "yemen-famine-crisis",
@@ -5352,7 +5400,8 @@
     "year": 2018,
     "category": "disasters",
     "description": "Blockade and civil war pushed parts of Yemen toward famine, in what the United Nations called the worst humanitarian crisis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "enheduanna-first-author-hymns",
@@ -5360,7 +5409,8 @@
     "year": -2285,
     "category": "writing",
     "description": "Akkadian priestess Enheduanna composed temple hymns to the goddess Inanna, becoming history's first author known by name.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "hatshepsut-crowned-pharaoh",
@@ -5368,7 +5418,8 @@
     "year": -1478,
     "category": "empires",
     "description": "Hatshepsut had herself crowned ruler of Egypt with full royal titulary, one of history's earliest women to reign as pharaoh.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "gentileschi-joins-accademia",
@@ -5376,7 +5427,8 @@
     "year": 1616,
     "category": "art",
     "description": "Painter Artemisia Gentileschi was admitted to Florence's Accademia delle Arti del Disegno, the first woman the academy accepted.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "chatelet-fire-essay-published",
@@ -5384,7 +5436,8 @@
     "year": 1738,
     "category": "science",
     "description": "The Paris Academy of Sciences printed Emilie du Chatelet's essay on the nature of fire, the first paper it published by a woman.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "baret-completes-world-circuit",
@@ -5392,7 +5445,8 @@
     "year": 1775,
     "category": "migration",
     "description": "Botanist Jeanne Baret, who had sailed disguised as a man, returned home and became the first woman known to circle the globe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "herschel-discovers-comet",
@@ -5400,7 +5454,8 @@
     "year": 1786,
     "category": "science",
     "description": "Astronomer Caroline Herschel spotted a comet through her telescope, becoming the first woman credited with discovering one.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "lovelace-publishes-algorithm",
@@ -5408,7 +5463,8 @@
     "year": 1843,
     "category": "invention",
     "description": "Ada Lovelace published notes describing steps for Babbage's Analytical Engine, seen as the first published computer program.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "blackwell-earns-medical-degree",
@@ -5416,7 +5472,8 @@
     "year": 1849,
     "category": "medicine",
     "description": "Elizabeth Blackwell graduated from Geneva Medical College, becoming the first woman to earn a medical degree in the country.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "curie-wins-nobel-prize",
@@ -5424,7 +5481,8 @@
     "year": 1903,
     "category": "science",
     "description": "Marie Curie shared the Nobel Prize in Physics for work on radioactivity, becoming the first woman awarded a Nobel Prize.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "rankin-elected-to-congress",
@@ -5432,7 +5490,8 @@
     "year": 1916,
     "category": "law",
     "description": "Jeannette Rankin of Montana won a seat in the House of Representatives, becoming the first woman elected to Congress.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "astor-takes-commons-seat",
@@ -5440,7 +5499,8 @@
     "year": 1919,
     "category": "law",
     "description": "Nancy Astor was sworn in as a member of Parliament, becoming the first woman to sit in the House of Commons.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "coleman-earns-pilot-license",
@@ -5448,7 +5508,8 @@
     "year": 1921,
     "category": "figures",
     "description": "Bessie Coleman earned an international pilot license in France, becoming the first Black woman to hold one anywhere.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hopper-builds-first-compiler",
@@ -5456,7 +5517,8 @@
     "year": 1952,
     "category": "invention",
     "description": "Computer scientist Grace Hopper completed the A-0 System, a program that translated symbolic code, the first working compiler.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "bandaranaike-becomes-worlds-first-pm",
@@ -5464,7 +5526,8 @@
     "year": 1960,
     "category": "diplomacy",
     "description": "Sirimavo Bandaranaike was sworn in as Prime Minister of Ceylon, becoming the world's first woman to lead a national government.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "gandhi-becomes-indias-pm",
@@ -5472,7 +5535,8 @@
     "year": 1966,
     "category": "diplomacy",
     "description": "Indira Gandhi was sworn in as Prime Minister of India, becoming the first woman to hold the office in the country.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "switzer-runs-boston-marathon",
@@ -5480,7 +5544,8 @@
     "year": 1967,
     "category": "figures",
     "description": "Kathrine Switzer became the first woman to run the Boston Marathon with an official race number, despite an official trying to grab her.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "chisholm-elected-to-congress",
@@ -5488,7 +5553,8 @@
     "year": 1968,
     "category": "law",
     "description": "Shirley Chisholm won election to the House of Representatives, becoming the first Black woman elected to Congress.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "meir-becomes-israels-pm",
@@ -5496,7 +5562,8 @@
     "year": 1969,
     "category": "diplomacy",
     "description": "Golda Meir was sworn in as Prime Minister of Israel, becoming the first woman to hold the post in the country.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "peron-becomes-worlds-first-president",
@@ -5504,7 +5571,8 @@
     "year": 1974,
     "category": "diplomacy",
     "description": "Isabel Peron was sworn in as President of Argentina after her husband's death, becoming the first woman anywhere to hold that office.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "tabei-summits-everest",
@@ -5512,7 +5580,8 @@
     "year": 1975,
     "category": "figures",
     "description": "Japanese climber Junko Tabei reached the summit of Mount Everest, becoming the first woman known to stand on top of it.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "oconnor-joins-supreme-court",
@@ -5520,7 +5589,8 @@
     "year": 1981,
     "category": "law",
     "description": "Sandra Day O'Connor was sworn in as a justice, becoming the first woman to serve on the United States Supreme Court.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "ride-flies-into-space",
@@ -5528,7 +5598,8 @@
     "year": 1983,
     "category": "science",
     "description": "Sally Ride launched aboard the Space Shuttle Challenger, becoming the first woman from the country to fly in space.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "jemison-flies-into-space",
@@ -5536,7 +5607,8 @@
     "year": 1992,
     "category": "science",
     "description": "Mae Jemison launched aboard the Space Shuttle Endeavour, becoming the first Black woman to fly in space.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "morrison-wins-nobel-prize",
@@ -5544,7 +5616,8 @@
     "year": 1993,
     "category": "writing",
     "description": "Novelist Toni Morrison won the Nobel Prize in Literature, becoming the first Black woman to receive that honor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "sirleaf-elected-liberias-president",
@@ -5552,7 +5625,8 @@
     "year": 2006,
     "category": "diplomacy",
     "description": "Ellen Johnson Sirleaf was inaugurated President of Liberia, becoming the first woman elected head of state anywhere on the continent.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "lagarde-leads-the-imf",
@@ -5560,7 +5634,8 @@
     "year": 2011,
     "category": "commerce",
     "description": "Christine Lagarde became Managing Director of the International Monetary Fund, the first woman chosen to lead the institution.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "harris-becomes-vice-president",
@@ -5568,7 +5643,8 @@
     "year": 2021,
     "category": "diplomacy",
     "description": "Kamala Harris was inaugurated Vice President of the United States, becoming the first woman elected to hold that office.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "eilmer-flying-monk",
@@ -5576,7 +5652,8 @@
     "year": 1010,
     "category": "invention",
     "description": "An English monk fitted wings to his arms and legs and glided from an abbey tower, breaking both legs on landing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "passarola-balloon-demonstration",
@@ -5584,7 +5661,8 @@
     "year": 1709,
     "category": "invention",
     "description": "A Brazilian-born priest demonstrated a small hot air balloon model before the Portuguese royal court in Lisbon.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "blanchard-jeffries-channel-crossing",
@@ -5592,7 +5670,8 @@
     "year": 1785,
     "category": "migration",
     "description": "Jean-Pierre Blanchard and John Jeffries crossed the English Channel by hydrogen balloon, the first aerial crossing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "garnerin-parachute-descent",
@@ -5600,7 +5679,8 @@
     "year": 1797,
     "category": "invention",
     "description": "Andre-Jacques Garnerin leaped from a hydrogen balloon over Paris and floated safely down under a silk parachute.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "cayley-glider-model",
@@ -5608,7 +5688,8 @@
     "year": 1804,
     "category": "invention",
     "description": "George Cayley flew a small fixed-wing glider, the first device shown to fly on aerodynamic rather than buoyant lift.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "cayley-coachman-flight",
@@ -5616,7 +5697,8 @@
     "year": 1853,
     "category": "invention",
     "description": "George Cayley's coachman was carried across a Yorkshire valley in Cayley's glider, the first adult flown in such a craft.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ader-eole-liftoff",
@@ -5624,7 +5706,8 @@
     "year": 1890,
     "category": "invention",
     "description": "Clement Ader's bat-winged, steam-powered Eole briefly lifted off the ground near Paris under its own power.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "santos-dumont-14-bis",
@@ -5632,7 +5715,8 @@
     "year": 1906,
     "category": "invention",
     "description": "Alberto Santos-Dumont flew his boxy 14-bis before a crowd in Paris, the first publicly witnessed powered flight in Europe.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cornu-helicopter-hop",
@@ -5640,7 +5724,8 @@
     "year": 1907,
     "category": "invention",
     "description": "Paul Cornu's twin-rotor machine lifted him briefly off the ground near Lisieux, the first free flight by a rotorcraft.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "bleriot-channel-crossing",
@@ -5648,7 +5733,8 @@
     "year": 1909,
     "category": "migration",
     "description": "Louis Bleriot flew a monoplane of his own design across the English Channel, a sensation across Europe.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "quimby-channel-flight",
@@ -5656,7 +5742,8 @@
     "year": 1912,
     "category": "migration",
     "description": "Harriet Quimby, the first American woman to hold a pilot's license, flew solo across the English Channel.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "junkers-allmetal-aircraft",
@@ -5664,7 +5751,8 @@
     "year": 1915,
     "category": "invention",
     "description": "The Junkers J1, nicknamed the Tin Donkey, made its debut flight in Germany as the world's first all-metal airplane.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-flight-around-world",
@@ -5672,7 +5760,8 @@
     "year": 1924,
     "category": "migration",
     "description": "US Army aviators completed the first aerial circumnavigation of the globe in a formation of open-cockpit biplanes.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "graf-zeppelin-world-circle",
@@ -5680,7 +5769,8 @@
     "year": 1929,
     "category": "migration",
     "description": "The airship Graf Zeppelin carried passengers on a circumnavigation of the world, stopping in Germany, Japan and the US.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "wiley-post-solo-world-flight",
@@ -5688,7 +5778,8 @@
     "year": 1933,
     "category": "migration",
     "description": "Wiley Post became the first pilot to fly solo around the world, circling the globe in his Lockheed Vega Winnie Mae.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "yeager-sound-barrier",
@@ -5696,7 +5787,8 @@
     "year": 1947,
     "category": "figures",
     "description": "Chuck Yeager piloted the Bell X-1 past the speed of sound over the Mojave Desert, the first confirmed supersonic flight.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "dehavilland-comet-first-flight",
@@ -5704,7 +5796,8 @@
     "year": 1949,
     "category": "invention",
     "description": "The de Havilland Comet made its maiden flight in England, the prototype for the world's first commercial jet airliner.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cochran-sound-barrier",
@@ -5712,7 +5805,8 @@
     "year": 1953,
     "category": "figures",
     "description": "Jacqueline Cochran became the first woman to fly faster than sound, piloting an F-86 Sabre over the Mojave Desert.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "voyager-nonstop-world-flight",
@@ -5720,7 +5814,8 @@
     "year": 1986,
     "category": "migration",
     "description": "Dick Rutan and Jeana Yeager flew the featherweight Voyager nonstop around the world without refuelling.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "piccard-balloon-circumnavigation",
@@ -5728,7 +5823,8 @@
     "year": 1999,
     "category": "migration",
     "description": "Bertrand Piccard and Brian Jones landed their balloon in Egypt, completing the first nonstop flight around the world.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "solar-impulse-2-circles-globe",
@@ -5736,7 +5832,8 @@
     "year": 2015,
     "category": "migration",
     "description": "Bertrand Piccard and Andre Borschberg flew a solar-powered plane around the world on sunlight alone, finishing in Abu Dhabi.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "paris-parisii-settlement",
@@ -5744,7 +5841,8 @@
     "year": -250,
     "category": "migration",
     "description": "A Celtic tribe called the Parisii built a fortified river camp on the Seine that grew into the city of Paris.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "romans-found-londinium",
@@ -5752,7 +5850,8 @@
     "year": 47,
     "category": "migration",
     "description": "Roman settlers established a trading post on the Thames that grew into the city of London.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "muhammad-i-founds-madrid-fortress",
@@ -5760,7 +5859,8 @@
     "year": 865,
     "category": "architecture",
     "description": "Emir Muhammad I of Cordoba ordered a fortress built beside the Manzanares river, the seed of the city of Madrid.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ly-thai-to-founds-thang-long",
@@ -5768,7 +5868,8 @@
     "year": 1010,
     "category": "empires",
     "description": "Emperor Ly Thai To moved the Dai Viet capital to a citadel he named Thang Long, the city that became Hanoi.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "moscow-first-chronicled",
@@ -5776,7 +5877,8 @@
     "year": 1147,
     "category": "empires",
     "description": "Prince Yuri Dolgoruky hosted a banquet at Moscow in the earliest surviving mention of the city by name.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "berthold-v-founds-bern",
@@ -5784,7 +5886,8 @@
     "year": 1191,
     "category": "empires",
     "description": "Duke Berthold V of Zahringen founded a fortified town on a hairpin bend of the Aare river, naming it Bern.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "kublai-khan-builds-dadu",
@@ -5793,7 +5896,8 @@
     "category": "architecture",
     "description": "Kublai Khan ordered a walled capital called Dadu built for his Yuan dynasty on the site of modern Beijing.",
     "difficulty": "medium",
-    "year_end": 1285
+    "year_end": 1285,
+    "has_detail": true
   },
   {
     "name": "taejo-founds-hanseong",
@@ -5801,7 +5905,8 @@
     "year": 1394,
     "category": "empires",
     "description": "King Taejo moved the Joseon capital to a new walled city called Hanseong, laying the ground plan for Seoul.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ota-dokan-builds-edo-castle",
@@ -5809,7 +5914,8 @@
     "year": 1457,
     "category": "architecture",
     "description": "Samurai retainer Ota Dokan built a fortified castle at the fishing village of Edo, later renamed Tokyo.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "pizarro-founds-lima",
@@ -5817,7 +5923,8 @@
     "year": 1535,
     "category": "migration",
     "description": "Francisco Pizarro founded a colonial capital he called the City of Kings on the Rimac river, later named Lima.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "quesada-founds-bogota",
@@ -5825,7 +5932,8 @@
     "year": 1538,
     "category": "migration",
     "description": "Conquistador Gonzalo Jimenez de Quesada founded a highland settlement he named Santa Fe, later renamed Bogota.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "valdivia-founds-santiago",
@@ -5833,7 +5941,8 @@
     "year": 1541,
     "category": "migration",
     "description": "Conquistador Pedro de Valdivia founded Santiago at the foot of a hill called Huelen, sheltered by a river bend.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "gustav-vasa-founds-helsinki",
@@ -5841,7 +5950,8 @@
     "year": 1550,
     "category": "trade",
     "description": "King Gustav Vasa of Sweden ordered a new trading town built at the mouth of a river, founding Helsinki.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "legazpi-founds-manila",
@@ -5849,7 +5959,8 @@
     "year": 1571,
     "category": "migration",
     "description": "Miguel Lopez de Legazpi established a walled Spanish colonial capital on Manila Bay in the Philippines.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "garay-refounds-buenos-aires",
@@ -5857,7 +5968,8 @@
     "year": 1580,
     "category": "migration",
     "description": "Juan de Garay led settlers back to an abandoned river mouth and permanently refounded Buenos Aires.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "rama-i-founds-bangkok",
@@ -5865,7 +5977,8 @@
     "year": 1782,
     "category": "migration",
     "description": "King Rama I moved the Siamese capital across the Chao Phraya river and founded the city of Bangkok.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "john-by-founds-bytown",
@@ -5873,7 +5986,8 @@
     "year": 1826,
     "category": "architecture",
     "description": "Lieutenant Colonel John By founded a canal workers settlement called Bytown, which was later renamed Ottawa.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "settlers-found-wellington",
@@ -5881,7 +5995,8 @@
     "year": 1840,
     "category": "migration",
     "description": "New Zealand Company colonists landed at Port Nicholson and founded a settlement that became Wellington.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "miners-found-kuala-lumpur",
@@ -5889,7 +6004,8 @@
     "year": 1857,
     "category": "trade",
     "description": "Tin prospectors established a trading post at a muddy river confluence they named Kuala Lumpur.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "buda-pest-obuda-unite-budapest",
@@ -5897,7 +6013,8 @@
     "year": 1873,
     "category": "law",
     "description": "Buda, Pest and Obuda formally merged under a single administration to form the city of Budapest.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "menelik-founds-addis-ababa",
@@ -5905,7 +6022,8 @@
     "year": 1886,
     "category": "migration",
     "description": "Emperor Menelik II settled near hot springs he and Empress Taytu named Addis Ababa, meaning new flower.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "railway-depot-becomes-nairobi",
@@ -5913,7 +6031,8 @@
     "year": 1899,
     "category": "trade",
     "description": "Builders of the Uganda Railway established a supply depot at a swampy watering hole that became Nairobi.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "george-v-announces-new-delhi",
@@ -5921,7 +6040,8 @@
     "year": 1911,
     "category": "diplomacy",
     "description": "At a grand ceremony called the Delhi Durbar, King George V announced that the capital would move to a new city.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "foundation-stone-laid-canberra",
@@ -5929,7 +6049,8 @@
     "year": 1913,
     "category": "architecture",
     "description": "Officials laid the foundation stone for a purpose-built federal capital and formally gave it the name Canberra.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "abuja-becomes-nigeria-capital",
@@ -5937,7 +6058,8 @@
     "year": 1991,
     "category": "diplomacy",
     "description": "Nigeria formally transferred its seat of government from Lagos to the newly built city of Abuja.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "burning-of-ugarit",
@@ -5945,7 +6067,8 @@
     "year": -1177,
     "category": "disasters",
     "description": "Invaders overran the Bronze Age port city of Ugarit and burned it down amid a wider collapse of eastern Mediterranean civilizations.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "persians-burn-athens",
@@ -5953,7 +6076,8 @@
     "year": -480,
     "category": "warfare",
     "description": "Xerxes's invading army torched the evacuated city of Athens, destroying the temples atop the Acropolis.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "burning-of-persepolis",
@@ -5961,7 +6085,8 @@
     "year": -330,
     "category": "warfare",
     "description": "Alexander the Great's army set fire to the palace complex of the Persian ceremonial capital after looting it.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "rome-founds-vigiles",
@@ -5969,7 +6094,8 @@
     "year": 6,
     "category": "commerce",
     "description": "Emperor Augustus created the Vigiles, a corps of thousands of night watchmen who doubled as the city's firefighters.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "tatars-burn-moscow",
@@ -5977,7 +6103,8 @@
     "year": 1571,
     "category": "warfare",
     "description": "A Crimean Tatar raid set fire to Moscow, destroying nearly the entire wooden city within a few hours.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "sack-of-magdeburg",
@@ -5985,7 +6112,8 @@
     "year": 1631,
     "category": "warfare",
     "description": "Catholic League troops stormed the German city of Magdeburg and burned it to the ground, killing most of its people.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "great-fire-of-meireki",
@@ -5993,7 +6121,8 @@
     "year": 1657,
     "category": "disasters",
     "description": "A three day blaze destroyed most of Edo, killing well over a hundred thousand people in one of history's deadliest fires.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "franklin-founds-fire-company",
@@ -6001,7 +6130,8 @@
     "year": 1736,
     "category": "commerce",
     "description": "Benjamin Franklin helped organize Philadelphia's Union Fire Company, the American colonies' first volunteer firefighting brigade.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "graff-post-fire-hydrant",
@@ -6009,7 +6139,8 @@
     "year": 1801,
     "category": "invention",
     "description": "Philadelphia engineer Frederick Graff devised the post type fire hydrant, letting brigades tap water mains directly from the street.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "british-burn-washington",
@@ -6017,7 +6148,8 @@
     "year": 1814,
     "category": "warfare",
     "description": "British troops set fire to the Capitol, the President's House and other public buildings during a wartime raid on the capital.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "burning-of-atlanta",
@@ -6025,7 +6157,8 @@
     "year": 1864,
     "category": "warfare",
     "description": "Retreating Confederate forces and then advancing Union troops set fires that destroyed much of Atlanta's rail yards and industry.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "parmelee-automatic-sprinkler",
@@ -6033,7 +6166,8 @@
     "year": 1874,
     "category": "invention",
     "description": "Piano maker Henry Parmelee patented the first practical automatic sprinkler head, designed to protect his own factory.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "great-seattle-fire",
@@ -6041,7 +6175,8 @@
     "year": 1889,
     "category": "disasters",
     "description": "An overturned glue pot in a cabinet shop ignited a blaze that destroyed Seattle's entire business district.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "nfpa-founded",
@@ -6049,7 +6184,8 @@
     "year": 1896,
     "category": "law",
     "description": "American insurers and engineers founded the National Fire Protection Association to standardize sprinklers and fire safety codes.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "iroquois-theatre-fire",
@@ -6057,7 +6193,8 @@
     "year": 1903,
     "category": "disasters",
     "description": "A stage fire killed hundreds of people packed into a Chicago theater, prompting sweeping reforms to fire safety codes nationwide.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "cocoanut-grove-fire",
@@ -6065,7 +6202,8 @@
     "year": 1942,
     "category": "disasters",
     "description": "A Boston nightclub fire killed hundreds of people trapped behind blocked exits, prompting nationwide fire code and occupancy reforms.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hamburg-firestorm",
@@ -6073,7 +6211,8 @@
     "year": 1943,
     "category": "warfare",
     "description": "Allied bombing raids on Hamburg created a self sustaining firestorm that killed tens of thousands of people within days.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "nazis-raze-warsaw",
@@ -6082,7 +6221,8 @@
     "category": "warfare",
     "description": "After crushing an uprising, German demolition squads systematically burned Warsaw street by street, destroying most of its buildings.",
     "difficulty": "hard",
-    "year_end": 1945
+    "year_end": 1945,
+    "has_detail": true
   },
   {
     "name": "great-fire-of-copenhagen",
@@ -6090,7 +6230,8 @@
     "year": 1728,
     "category": "disasters",
     "description": "A blaze burned for three days through the Danish capital, destroying about a quarter of the city and most of the university library.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "edinburgh-municipal-fire-brigade",
@@ -6098,7 +6239,8 @@
     "year": 1824,
     "category": "law",
     "description": "Edinburgh formed a trained, uniformed fire service under James Braidwood, the model for professional city brigades that followed.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "great-fire-of-hamburg",
@@ -6106,7 +6248,8 @@
     "year": 1842,
     "category": "disasters",
     "description": "A fire raged for four days through the old centre of the German port, leaving about 20,000 people homeless and prompting a modern rebuild.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "deir-el-medina-tomb-robberies",
@@ -6114,7 +6257,8 @@
     "year": -1110,
     "category": "law",
     "description": "Necropolis workmen at Thebes confessed under trial to plundering royal and noble tombs of their gold and treasure.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "trial-verres-plunder",
@@ -6122,7 +6266,8 @@
     "year": -70,
     "category": "law",
     "description": "Cicero prosecuted Roman governor Gaius Verres for systematically looting art, statues and treasure from Sicily.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "westminster-crown-jewels-heist",
@@ -6130,7 +6275,8 @@
     "year": 1303,
     "category": "commerce",
     "description": "Merchant Richard Puddlicott tunneled into the royal treasury beneath Westminster Abbey and stole a vast store of the king's gold and jewels.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "blood-crown-jewels-heist",
@@ -6138,7 +6284,8 @@
     "year": 1671,
     "category": "commerce",
     "description": "Colonel Thomas Blood disguised himself as a clergyman and nearly escaped the Tower of London with the Crown Jewels.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "french-crown-jewels-theft",
@@ -6146,7 +6293,8 @@
     "year": 1792,
     "category": "commerce",
     "description": "Thieves looted the royal storehouse in Paris over several nights of revolutionary chaos, stealing thousands of gems.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "great-gold-robbery",
@@ -6154,7 +6302,8 @@
     "year": 1855,
     "category": "commerce",
     "description": "Thieves used copied keys to swap gold bullion for lead shot aboard a cross-Channel mail train running between London and Paris.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "irish-crown-jewels-theft",
@@ -6162,7 +6311,8 @@
     "year": 1907,
     "category": "commerce",
     "description": "The jeweled insignia of the Order of St Patrick vanished from a locked strongroom in Dublin Castle and was never recovered.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "mona-lisa-theft",
@@ -6170,7 +6320,8 @@
     "year": 1911,
     "category": "art",
     "description": "A Louvre employee hid inside the museum overnight and walked out the next morning with Leonardo da Vinci's painting under his coat.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "ponzi-scheme-exposed",
@@ -6178,7 +6329,8 @@
     "year": 1920,
     "category": "disasters",
     "description": "Charles Ponzi's investment scheme promising huge returns on postal reply coupons collapsed, exposed as paying old investors with new money.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "kreuger-empire-collapse",
@@ -6186,7 +6338,8 @@
     "year": 1932,
     "category": "disasters",
     "description": "Swedish financier Ivar Kreuger, known as the Match King, died as investigators found his global empire built on forged bonds.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "just-judges-panel-theft",
@@ -6194,7 +6347,8 @@
     "year": 1934,
     "category": "art",
     "description": "A panel of the Ghent Altarpiece was stolen from a Belgian cathedral overnight and, despite a ransom note, has never been found.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "amber-room-looted",
@@ -6202,7 +6356,8 @@
     "year": 1941,
     "category": "art",
     "description": "Occupying forces dismantled the ornate Amber Room from a Russian imperial palace near Leningrad and shipped it away for good.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "van-meegeren-fake-vermeer-sale",
@@ -6210,7 +6365,8 @@
     "year": 1943,
     "category": "art",
     "description": "Dutch forger Han van Meegeren sold a fabricated Vermeer painting through an intermediary to a senior Nazi official for a vast sum.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "great-train-robbery-buckinghamshire",
@@ -6218,7 +6374,8 @@
     "year": 1963,
     "category": "commerce",
     "description": "A gang ambushed a Royal Mail train in Buckinghamshire and made off with more than two and a half million pounds in banknotes.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "caravaggio-nativity-theft",
@@ -6226,7 +6383,8 @@
     "year": 1969,
     "category": "art",
     "description": "Caravaggio's altarpiece was cut from its frame and stolen from an oratory in Palermo, reportedly taken to order by the Sicilian Mafia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "baker-street-robbery",
@@ -6234,7 +6392,8 @@
     "year": 1971,
     "category": "commerce",
     "description": "Burglars tunneled from a rented leather shop into the vault of a London bank and emptied dozens of safe deposit boxes overnight.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "russborough-house-art-heist",
@@ -6242,7 +6401,8 @@
     "year": 1974,
     "category": "art",
     "description": "An armed raid on an Irish country house saw the owners tied up while nineteen paintings, including a Vermeer, were cut from their frames.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "lufthansa-heist",
@@ -6250,7 +6410,8 @@
     "year": 1978,
     "category": "commerce",
     "description": "A crew of robbers raided a Lufthansa cargo terminal at JFK Airport and stole millions in cash and jewelry, still largely unsolved.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "brinks-mat-robbery",
@@ -6258,7 +6419,8 @@
     "year": 1983,
     "category": "commerce",
     "description": "Robbers who broke into a warehouse near Heathrow Airport expecting cash instead found and stole roughly three tonnes of gold bullion.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "gardner-museum-art-heist",
@@ -6266,7 +6428,8 @@
     "year": 1990,
     "category": "art",
     "description": "Two men disguised as police officers talked their way into a Boston museum overnight and stole thirteen artworks that remain missing.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "theft-of-the-scream",
@@ -6274,7 +6437,8 @@
     "year": 1994,
     "category": "art",
     "description": "Burglars used a ladder to break into an Oslo gallery and steal Edvard Munch's painting on the opening day of the Winter Olympics.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "van-gogh-museum-theft",
@@ -6282,7 +6446,8 @@
     "year": 2002,
     "category": "art",
     "description": "Two thieves climbed to the roof of Amsterdam's Van Gogh Museum and stole two paintings, later recovered from an Italian crime clan.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "antwerp-diamond-heist",
@@ -6290,7 +6455,8 @@
     "year": 2003,
     "category": "commerce",
     "description": "A gang cracked a supposedly impregnable vault beneath Antwerp's diamond district and emptied it of gems, gold and cash.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "northern-bank-robbery",
@@ -6298,7 +6464,8 @@
     "year": 2004,
     "category": "commerce",
     "description": "Armed robbers held bank employees' families hostage overnight to force staff to hand over a record cash haul from a Belfast vault.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "madoff-ponzi-scheme-unravels",
@@ -6306,7 +6473,8 @@
     "year": 2008,
     "category": "disasters",
     "description": "Financier Bernie Madoff confessed to his sons that his investment advisory business was a Ponzi scheme worth an estimated fifty billion dollars.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "paris-modern-art-museum-heist",
@@ -6314,7 +6482,8 @@
     "year": 2010,
     "category": "art",
     "description": "A lone thief cut through a padlocked gate and a window at a Paris museum and stole five paintings, including works by Picasso and Matisse.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "kunsthal-rotterdam-art-heist",
@@ -6322,7 +6491,8 @@
     "year": 2012,
     "category": "art",
     "description": "Thieves broke into a Dutch gallery overnight and stole seven paintings by artists including Picasso, Monet and Matisse in minutes.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hatton-garden-vault-burglary",
@@ -6330,7 +6500,8 @@
     "year": 2015,
     "category": "commerce",
     "description": "A crew of elderly burglars drilled through a wall into a London safe deposit vault over a holiday weekend and cleared out dozens of boxes.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "bangladesh-bank-cyber-heist",
@@ -6338,7 +6509,8 @@
     "year": 2016,
     "category": "commerce",
     "description": "Hackers used fraudulent messages on a global banking network to try to steal nearly a billion dollars from a central bank's reserves.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "dresden-green-vault-heist",
@@ -6346,7 +6518,8 @@
     "year": 2019,
     "category": "art",
     "description": "Thieves broke into a Dresden museum's historic jewel collection overnight and stole eighteenth century treasures worth tens of millions of euros.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "thespis-first-actor",
@@ -6354,7 +6527,8 @@
     "year": -534,
     "category": "art",
     "description": "A performer named Thespis reportedly stepped from the chorus to speak lines alone at a festival in Athens, later credited as the first actor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "oresteia-trilogy-premieres",
@@ -6362,7 +6536,8 @@
     "year": -458,
     "category": "art",
     "description": "Aeschylus's trilogy the Oresteia won first prize at a dramatic festival in Athens, the only complete Greek tragic trilogy to survive.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "lysistrata-premieres",
@@ -6370,7 +6545,8 @@
     "year": -411,
     "category": "art",
     "description": "Aristophanes's comedy about women withholding intimacy to end a war was staged in Athens, establishing satirical stage comedy as a form.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "theatre-of-epidaurus-built",
@@ -6378,7 +6554,8 @@
     "year": -335,
     "category": "architecture",
     "description": "A stone theatre built at Epidaurus in Greece became famed for its acoustics and still hosts performances, a model for later playhouses.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "theatre-of-pompey-opens",
@@ -6386,7 +6563,8 @@
     "year": -55,
     "category": "architecture",
     "description": "A Roman general dedicated Rome's first permanent stone theatre, a vast complex able to seat tens of thousands of spectators.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "san-cassiano-opera-house",
@@ -6394,7 +6572,8 @@
     "year": 1637,
     "category": "architecture",
     "description": "Teatro San Cassiano opened in Venice as the first opera house built for a paying public, turning opera into a commercial art.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "beggars-opera-premieres",
@@ -6402,7 +6581,8 @@
     "year": 1728,
     "category": "art",
     "description": "A London stage show set satirical lyrics to popular tunes instead of composed arias, founding the ballad opera as a new form.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "la-scala-opens",
@@ -6410,7 +6590,8 @@
     "year": 1778,
     "category": "architecture",
     "description": "Teatro alla Scala opened in Milan and grew into one of the world's most influential opera houses.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "magic-flute-premieres",
@@ -6418,7 +6599,8 @@
     "year": 1791,
     "category": "art",
     "description": "Mozart's singspiel about a prince's magical trial by fire and water premiered in Vienna, blending fairy tale and Masonic symbolism.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "barber-of-seville-premieres",
@@ -6426,7 +6608,8 @@
     "year": 1816,
     "category": "art",
     "description": "Rossini's comic opera about a resourceful barber premiered in Rome to a famously disastrous reception before becoming a beloved favorite.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "la-sylphide-premieres",
@@ -6434,7 +6617,8 @@
     "year": 1832,
     "category": "art",
     "description": "A ballet about a doomed love between a man and an ethereal spirit opened in Paris, popularizing dancing en pointe and launching Romantic ballet.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "giselle-premieres",
@@ -6442,7 +6626,8 @@
     "year": 1841,
     "category": "art",
     "description": "A ballet about a peasant girl who dies of heartbreak and returns as a spirit opened at the Paris Opera, becoming a Romantic ballet cornerstone.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "la-traviata-premieres",
@@ -6450,7 +6635,8 @@
     "year": 1853,
     "category": "art",
     "description": "Verdi's opera about a courtesan's doomed love premiered in Venice, an initial flop that grew into one of the most performed operas ever staged.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "dolls-house-premieres",
@@ -6458,7 +6644,8 @@
     "year": 1879,
     "category": "art",
     "description": "Ibsen's play about a wife who walks out on her marriage and children premiered in Copenhagen, launching modern realist stage drama.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "earnest-premieres-london",
@@ -6466,7 +6653,8 @@
     "year": 1895,
     "category": "art",
     "description": "Oscar Wilde's comedy of mistaken identities and double lives opened in London to great acclaim just before his public disgrace began.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "stanislavski-seagull-triumph",
@@ -6474,7 +6662,8 @@
     "year": 1898,
     "category": "art",
     "description": "A Moscow production of Chekhov's play succeeded where an earlier staging had flopped, establishing a naturalistic method of stage acting.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "show-boat-premieres",
@@ -6482,7 +6671,8 @@
     "year": 1927,
     "category": "art",
     "description": "A Broadway show about performers on a Mississippi riverboat fused songs with a serious plot, reshaping the American stage musical.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "oklahoma-premieres",
@@ -6490,7 +6680,8 @@
     "year": 1943,
     "category": "art",
     "description": "A Broadway musical set on the American frontier fully integrated song, dance and story, defining the modern book musical.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hair-opens-broadway",
@@ -6498,7 +6689,8 @@
     "year": 1968,
     "category": "art",
     "description": "A rock musical celebrating countercultural youth and protest against war transferred to Broadway, bringing rock music to the stage musical.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "chorus-line-premieres",
@@ -6506,7 +6698,8 @@
     "year": 1975,
     "category": "art",
     "description": "A Broadway musical built from real dancers auditioning for a chorus line told their own stories, later winning the Pulitzer Prize.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cats-opens-west-end",
@@ -6514,7 +6707,8 @@
     "year": 1981,
     "category": "art",
     "description": "A musical built from poems about a tribe of cats opened in London, becoming one of the longest running musicals in stage history.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "phantom-of-opera-premieres",
@@ -6522,7 +6716,8 @@
     "year": 1986,
     "category": "art",
     "description": "A musical about a disfigured composer haunting a Paris opera house opened in London's West End and became a global stage phenomenon.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "wicked-premieres-broadway",
@@ -6530,7 +6725,8 @@
     "year": 2003,
     "category": "art",
     "description": "A Broadway musical retold the story of Oz from the perspective of its witches, becoming one of the stage's biggest modern hits.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "hamilton-opens-broadway",
@@ -6538,7 +6734,8 @@
     "year": 2015,
     "category": "art",
     "description": "A hip hop musical about an American founding father transferred to Broadway after an earlier off-Broadway run, becoming a cultural phenomenon.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "peace-of-callias",
@@ -6546,7 +6743,8 @@
     "year": -449,
     "category": "diplomacy",
     "description": "Athens and Persia reportedly agreed terms closing decades of fighting, though scholars still dispute whether the treaty existed.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "peace-of-nicias",
@@ -6554,7 +6752,8 @@
     "year": -421,
     "category": "diplomacy",
     "description": "Athens and Sparta signed a fifty year truce meant to close the first stage of their long war, though fighting later resumed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "peace-of-constance",
@@ -6562,7 +6761,8 @@
     "year": 1183,
     "category": "diplomacy",
     "description": "Emperor Frederick Barbarossa recognized the self government of the Lombard League's cities, closing their long revolt.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "peace-of-lodi",
@@ -6570,7 +6770,8 @@
     "year": 1454,
     "category": "diplomacy",
     "description": "Milan, Venice and Naples ended their long fighting over Lombardy, opening decades of relative peace among Italian states.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "treaty-of-picquigny",
@@ -6578,7 +6779,8 @@
     "year": 1475,
     "category": "diplomacy",
     "description": "The kings of England and France agreed a truce that finally closed out their long running conflict over the French crown.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "second-treaty-of-paris",
@@ -6586,7 +6788,8 @@
     "year": 1815,
     "category": "diplomacy",
     "description": "Following the defeat at Waterloo, the allied powers imposed final peace terms on France, closing a long era of continental war.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "treaty-of-guadalupe-hidalgo",
@@ -6594,7 +6797,8 @@
     "year": 1848,
     "category": "diplomacy",
     "description": "Mexico ceded vast northern territories to the United States, closing a war fought over the disputed Texas border.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "treaty-of-paris-crimean-war",
@@ -6602,7 +6806,8 @@
     "year": 1856,
     "category": "diplomacy",
     "description": "Russia and the allied powers signed terms closing their war over the Black Sea, which the treaty declared neutral waters.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "peace-of-prague",
@@ -6610,7 +6815,8 @@
     "year": 1866,
     "category": "diplomacy",
     "description": "Austria and Prussia signed terms closing their brief war, with Prussia absorbing several German states into its orbit.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "geneva-accords-indochina",
@@ -6618,7 +6824,8 @@
     "year": 1954,
     "category": "diplomacy",
     "description": "France and the Viet Minh signed terms closing their colonial war, splitting Vietnam into a northern and southern zone.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "sneferu-red-pyramid",
@@ -6626,7 +6833,8 @@
     "year": -2600,
     "category": "architecture",
     "description": "Pharaoh Sneferu completed the Red Pyramid at Dahshur, the first successful smooth sided true pyramid ever raised.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "menkaure-pyramid-giza",
@@ -6634,7 +6842,8 @@
     "year": -2510,
     "category": "architecture",
     "description": "Pharaoh Menkaure completed the third and smallest pyramid at Giza, finishing the trio beside Khufu and Khafre's monuments.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "mentuhotep-ii-reunification",
@@ -6642,7 +6851,8 @@
     "year": -2050,
     "category": "empires",
     "description": "Pharaoh Mentuhotep II defeated rival dynasties and reunited Upper and Lower Egypt, ending a fractured intermediate period.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "amenemhat-i-founds-dynasty",
@@ -6650,7 +6860,8 @@
     "year": -1991,
     "category": "empires",
     "description": "A former vizier named Amenemhat I seized the Egyptian throne and founded a new dynasty, moving the capital southward.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "hatshepsut-becomes-pharaoh",
@@ -6658,7 +6869,8 @@
     "year": -1473,
     "category": "figures",
     "description": "Hatshepsut assumed full pharaonic titles and regalia, ruling as king rather than merely as regent for her stepson.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "seti-i-recovers-levant",
@@ -6666,7 +6878,8 @@
     "year": -1290,
     "category": "warfare",
     "description": "Pharaoh Seti I took the Egyptian throne and campaigned into the Levant, recovering territory lost during religious upheaval.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "abu-simbel-temples-dedicated",
@@ -6674,7 +6887,8 @@
     "year": -1244,
     "category": "architecture",
     "description": "Pharaoh Ramesses II dedicated his rock cut temples at Abu Simbel, fronted by four colossal seated statues of himself.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "merneptah-victory-stele",
@@ -6682,7 +6896,8 @@
     "year": -1208,
     "category": "warfare",
     "description": "Pharaoh Merneptah repelled a Libyan invasion and commemorated the victory on a stele naming a people called Israel.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ramesses-iii-sea-peoples",
@@ -6690,7 +6905,8 @@
     "year": -1175,
     "category": "warfare",
     "description": "Pharaoh Ramesses III defeated a coalition of seaborne raiders known as the Sea Peoples in major land and naval battles.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ramesses-iii-assassinated",
@@ -6698,7 +6914,8 @@
     "year": -1155,
     "category": "figures",
     "description": "A palace conspiracy led by a secondary wife of Pharaoh Ramesses III ended his life, confirmed later by forensic study.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "piye-conquers-egypt",
@@ -6706,7 +6923,8 @@
     "year": -728,
     "category": "empires",
     "description": "The Nubian king Piye marched north, defeated a coalition of Delta rulers, and became pharaoh over a reunited Egypt.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "taharqa-crowned-pharaoh",
@@ -6714,7 +6932,8 @@
     "year": -690,
     "category": "figures",
     "description": "Taharqa became pharaoh of the Nubian dynasty ruling Egypt, presiding over an empire stretching into the Levant.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "psamtik-i-reunifies-egypt",
@@ -6722,7 +6941,8 @@
     "year": -664,
     "category": "empires",
     "description": "Pharaoh Psamtik I expelled Assyrian backed rivals from the Nile Delta and reunited Egypt under native rule once more.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "necho-ii-defeats-josiah",
@@ -6730,7 +6950,8 @@
     "year": -609,
     "category": "warfare",
     "description": "Pharaoh Necho II's army killed King Josiah of Judah in battle while marching north to reinforce a crumbling Assyrian ally.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cambyses-conquers-egypt",
@@ -6738,7 +6959,8 @@
     "year": -525,
     "category": "warfare",
     "description": "Persian king Cambyses II defeated the Egyptian pharaoh at Pelusium, ending native rule and folding Egypt into his empire.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "nectanebo-i-founds-dynasty",
@@ -6746,7 +6968,8 @@
     "year": -380,
     "category": "empires",
     "description": "Nectanebo I seized the Egyptian throne, founded the country's last native dynasty, and repelled an invading Persian army.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "last-native-pharaoh-flees",
@@ -6754,7 +6977,8 @@
     "year": -343,
     "category": "figures",
     "description": "Pharaoh Nectanebo II, defeated by a renewed Persian invasion, abandoned Egypt and ended native pharaonic rule for good.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "alexander-crowned-pharaoh",
@@ -6762,7 +6986,8 @@
     "year": -332,
     "category": "figures",
     "description": "Alexander the Great entered Egypt without resistance and was crowned pharaoh at Memphis by the local priesthood.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "rome-war-on-queen-teuta",
@@ -6771,7 +6996,8 @@
     "category": "warfare",
     "description": "Rome sent a fleet and army against Illyrian queen Teuta after her state sponsored raiders preyed on Adriatic shipping, forcing her surrender.",
     "difficulty": "hard",
-    "year_end": -228
+    "year_end": -228,
+    "has_detail": true
   },
   {
     "name": "caesar-captured-cilician-pirates",
@@ -6779,7 +7005,8 @@
     "year": -75,
     "category": "warfare",
     "description": "Julius Caesar was seized by Cilician pirates in the Aegean, held for ransom for weeks, and later hunted down and executed his captors as promised.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "pompey-sweeps-mediterranean-pirates",
@@ -6787,7 +7014,8 @@
     "year": -67,
     "category": "warfare",
     "description": "Given sweeping emergency powers, Pompey cleared the Mediterranean of the pirate fleets that had strangled Rome's grain supply in a single season.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "vikings-sack-paris",
@@ -6795,7 +7023,8 @@
     "year": 845,
     "category": "warfare",
     "description": "A Norse fleet under Ragnar sailed up the Seine and besieged Paris, extracting a huge ransom of silver from the Frankish king for withdrawing.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "stortebeker-executed-hamburg",
@@ -6803,7 +7032,8 @@
     "year": 1401,
     "category": "law",
     "description": "Baltic pirate captain Klaus Stortebeker, leader of the Victual Brothers, was captured at sea by Hamburg's fleet and beheaded with dozens of his crew.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "barbarossa-brothers-seize-algiers",
@@ -6811,7 +7041,8 @@
     "year": 1516,
     "category": "warfare",
     "description": "Corsair brothers Aruj and Hayreddin Barbarossa seized control of Algiers, turning it into the base of Ottoman aligned piracy in the western sea.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "battle-of-preveza",
@@ -6819,7 +7050,8 @@
     "year": 1538,
     "category": "warfare",
     "description": "Corsair admiral Barbarossa's Ottoman fleet routed a Holy League armada off western Greece, securing corsair dominance of the sea for decades.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "wokou-raiders-besiege-nanjing",
@@ -6827,7 +7059,8 @@
     "year": 1555,
     "category": "warfare",
     "description": "At the peak of the wokou crisis, Japanese led pirate bands raided deep into China and briefly besieged the great walled city of Nanjing.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "qi-jiguang-crushes-wokou",
@@ -6835,7 +7068,8 @@
     "year": 1559,
     "category": "warfare",
     "description": "Ming general Qi Jiguang's newly trained militia routed wokou pirate bands in a string of battles, breaking the raiders' hold on the Zhejiang coast.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "drake-raids-nombre-de-dios",
@@ -6843,7 +7077,8 @@
     "year": 1572,
     "category": "warfare",
     "description": "English privateer Francis Drake attacked the Spanish treasure port of Nombre de Dios in Panama, opening his campaign against Spain's silver route.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "drake-knighted-golden-hind",
@@ -6851,7 +7086,8 @@
     "year": 1581,
     "category": "figures",
     "description": "Queen Elizabeth I knighted Francis Drake aboard the Golden Hind, publicly rewarding a career of privateering raids against Spanish shipping.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "grace-omalley-meets-elizabeth",
@@ -6859,7 +7095,8 @@
     "year": 1593,
     "category": "diplomacy",
     "description": "Irish pirate chieftain Grace O'Malley sailed to London and negotiated directly with Elizabeth I over her clan's maritime raiding and captured sons.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "piet-heyn-captures-treasure-fleet",
@@ -6867,7 +7104,8 @@
     "year": 1628,
     "category": "warfare",
     "description": "Dutch privateer admiral Piet Heyn captured an entire Spanish silver fleet intact off Cuba, the richest prize ever taken from Spain at sea.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "corsairs-sack-baltimore-ireland",
@@ -6875,7 +7113,8 @@
     "year": 1631,
     "category": "warfare",
     "description": "Barbary corsairs raided the Irish village of Baltimore, capturing most of its inhabitants to sell into slavery in North Africa.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "morgan-sacks-panama-city",
@@ -6883,7 +7122,8 @@
     "year": 1671,
     "category": "warfare",
     "description": "Buccaneer Henry Morgan led a force across the isthmus and burned Panama City, one of the largest raids of the whole buccaneering era.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "every-raids-ganj-i-sawai",
@@ -6891,7 +7131,8 @@
     "year": 1695,
     "category": "warfare",
     "description": "Pirate Henry Every captured the Mughal treasure ship Ganj-i-Sawai in the Indian Ocean, the richest single pirate haul on record.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "captain-kidd-hanged-london",
@@ -6899,7 +7140,8 @@
     "year": 1701,
     "category": "law",
     "description": "William Kidd, commissioned as a privateer but tried as a pirate, was hanged at Execution Dock after a trial that became a public sensation.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "blackbeard-killed-ocracoke",
@@ -6907,7 +7149,8 @@
     "year": 1718,
     "category": "warfare",
     "description": "Royal Navy lieutenant Robert Maynard cornered and killed the pirate Blackbeard off the Carolina coast after a fierce shipboard fight.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "bonny-read-convicted-piracy",
@@ -6915,7 +7158,8 @@
     "year": 1720,
     "category": "law",
     "description": "The two women pirates, captured aboard Calico Jack Rackham's sloop off Jamaica, were tried and convicted of piracy but escaped hanging.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "bartholomew-roberts-killed",
@@ -6923,7 +7167,8 @@
     "year": 1722,
     "category": "warfare",
     "description": "Black Bart Roberts, the most successful pirate of his age with hundreds of ships taken, was killed by cannon fire off West Africa in a naval battle.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "vijaydurg-falls-to-british",
@@ -6931,7 +7176,8 @@
     "year": 1756,
     "category": "warfare",
     "description": "A combined British and Maratha fleet stormed Tulaji Angre's fortress at Vijaydurg, ending the Angre family's decades of raiding on India's coast.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "rachel-wall-hanged-piracy",
@@ -6939,7 +7185,8 @@
     "year": 1789,
     "category": "law",
     "description": "American pirate Rachel Wall, who lured ships with fake distress signals off the New England coast, was hanged in Boston for robbery at sea.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "surcouf-captures-kent",
@@ -6947,7 +7194,8 @@
     "year": 1800,
     "category": "warfare",
     "description": "French corsair Robert Surcouf boarded and captured the much larger British merchant ship Kent in the Bay of Bengal with a small, outgunned crew.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "decatur-burns-philadelphia",
@@ -6955,7 +7203,8 @@
     "year": 1804,
     "category": "warfare",
     "description": "Stephen Decatur led a raid into Tripoli harbor to burn the captured USS Philadelphia, denying Barbary corsairs its use during the war against them.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "zheng-yi-sao-fleet-surrenders",
@@ -6963,7 +7212,8 @@
     "year": 1810,
     "category": "diplomacy",
     "description": "Pirate queen Zheng Yi Sao negotiated a mass amnesty for her tens of thousands of followers, ending the largest pirate confederation in history.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "bombardment-algiers-slaves-freed",
@@ -6971,7 +7221,8 @@
     "year": 1816,
     "category": "warfare",
     "description": "A British and Dutch fleet bombarded Algiers to force the release of Christian slaves and end Barbary corsair attacks on European shipping.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "france-conquers-algiers",
@@ -6979,7 +7230,8 @@
     "year": 1830,
     "category": "empires",
     "description": "A French invasion force captured Algiers, toppling the Ottoman backed regency and ending three centuries of Barbary corsair power in North Africa.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "spain-storms-balanguingui",
@@ -6987,7 +7239,8 @@
     "year": 1848,
     "category": "warfare",
     "description": "A Spanish naval expedition stormed the fortified island of Balanguingui in the Sulu Sea, destroying a stronghold used by raiders to prey on shipping.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "recaap-piracy-pact-signed",
@@ -6995,7 +7248,8 @@
     "year": 2004,
     "category": "diplomacy",
     "description": "Sixteen Asian nations concluded the ReCAAP agreement in Tokyo, the first government to government treaty for sharing intelligence against piracy.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "eu-operation-atalanta-launched",
@@ -7003,7 +7257,8 @@
     "year": 2008,
     "category": "warfare",
     "description": "The European Union deployed its first joint naval mission to protect merchant shipping from Somali pirates off the Horn of Africa.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "maersk-alabama-hijacked",
@@ -7011,7 +7266,8 @@
     "year": 2009,
     "category": "warfare",
     "description": "Somali pirates hijacked the American flagged container ship Maersk Alabama, and Navy SEAL snipers later killed three pirates to free the captain.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "somali-hijackings-fall-to-zero",
@@ -7019,7 +7275,8 @@
     "year": 2017,
     "category": "warfare",
     "description": "For the first time since the surge began, a full year passed with no successful pirate hijacking of a large merchant vessel off the Somali coast.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "gauls-sack-rome",
@@ -7027,7 +7284,8 @@
     "year": -390,
     "category": "empires",
     "description": "Gallic warriors under Brennus routed Roman defenders and occupied much of the city before withdrawing with a ransom in gold.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "pyrrhus-invades-italy",
@@ -7035,7 +7293,8 @@
     "year": -280,
     "category": "warfare",
     "description": "King Pyrrhus of Epirus landed an army with war elephants in southern Italy to defend Tarentum against Roman expansion.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "justinian-becomes-emperor",
@@ -7043,7 +7302,8 @@
     "year": 527,
     "category": "empires",
     "description": "Justinian I ascended the Byzantine throne and launched sweeping legal reform alongside campaigns to reclaim lost Roman territory.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ashurbanipal-library-founded",
@@ -7051,7 +7311,8 @@
     "year": -668,
     "category": "commerce",
     "description": "Assyrian king Ashurbanipal assembled a vast collection of cuneiform tablets at Nineveh, the earliest known systematically organized library.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "alexandria-library-caesar-fire",
@@ -7059,7 +7320,8 @@
     "year": -48,
     "category": "warfare",
     "description": "Fires set during Julius Caesar's siege of Alexandria spread into the harbor district and damaged the great library's collection of scrolls.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "nalanda-destroyed",
@@ -7067,7 +7329,8 @@
     "year": 1193,
     "category": "warfare",
     "description": "A Turkic general's forces sacked and burned the Buddhist university at Nalanda, ending its long run as a center of learning.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "house-of-wisdom-destroyed",
@@ -7075,7 +7338,8 @@
     "year": 1258,
     "category": "warfare",
     "description": "Mongol forces sacked Baghdad and destroyed its great library, throwing so many books into the river that witnesses said the water turned black.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "charles-university-prague",
@@ -7083,7 +7347,8 @@
     "year": 1348,
     "category": "commerce",
     "description": "Holy Roman Emperor Charles IV founded a university at Prague, the oldest degree granting institution in Central Europe.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "eton-college-founded",
@@ -7091,7 +7356,8 @@
     "year": 1440,
     "category": "commerce",
     "description": "King Henry VI founded a school near Windsor meant to educate a set number of poor scholars free of charge.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "leiden-university-founded",
@@ -7099,7 +7365,8 @@
     "year": 1575,
     "category": "commerce",
     "description": "William of Orange founded a university at Leiden as a reward for the city's endurance through a long Spanish siege.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "edinburgh-university-founded",
@@ -7107,7 +7374,8 @@
     "year": 1583,
     "category": "commerce",
     "description": "Edinburgh's town council established a university under royal charter, the first in Britain founded by a municipal government.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "harvard-college-founded",
@@ -7115,7 +7383,8 @@
     "year": 1636,
     "category": "commerce",
     "description": "The Massachusetts Bay colony founded a college that became the first institution of higher learning in what is now the United States.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "yale-founded",
@@ -7123,7 +7392,8 @@
     "year": 1701,
     "category": "commerce",
     "description": "A group of Congregationalist ministers chartered a Collegiate School in Connecticut, later renamed for a generous benefactor.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "princeton-founded",
@@ -7131,7 +7401,8 @@
     "year": 1746,
     "category": "commerce",
     "description": "Evangelical Presbyterians chartered the College of New Jersey, which grew over time into Princeton University.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "west-point-founded",
@@ -7139,7 +7410,8 @@
     "year": 1802,
     "category": "commerce",
     "description": "Congress established a military academy on the Hudson River to train officers for the United States Army.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "university-berlin-founded",
@@ -7147,7 +7419,8 @@
     "year": 1810,
     "category": "commerce",
     "description": "Wilhelm von Humboldt founded a university in Berlin built around a new ideal linking scholarly research with teaching.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "vassar-college-founded",
@@ -7155,7 +7428,8 @@
     "year": 1861,
     "category": "commerce",
     "description": "Brewer Matthew Vassar chartered a college in New York dedicated to educating women to the same standard as men.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cornell-university-founded",
@@ -7163,7 +7437,8 @@
     "year": 1865,
     "category": "commerce",
     "description": "Ezra Cornell and Andrew Dickson White founded a university in Ithaca open to any student regardless of background.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "johns-hopkins-founded",
@@ -7171,7 +7446,8 @@
     "year": 1876,
     "category": "commerce",
     "description": "A bequest from a Baltimore merchant founded a university modeled on German research institutions, reshaping American higher education.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "stanford-university-founded",
@@ -7179,7 +7455,8 @@
     "year": 1885,
     "category": "commerce",
     "description": "A railroad magnate and his wife founded a university in California in memory of their son, who died young.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "louvain-library-burns",
@@ -7187,7 +7464,8 @@
     "year": 1914,
     "category": "warfare",
     "description": "German troops burned the library of a Belgian university, destroying hundreds of thousands of volumes and rare manuscripts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "sarajevo-library-destroyed",
@@ -7195,7 +7473,8 @@
     "year": 1992,
     "category": "warfare",
     "description": "Shelling during the siege of a Bosnian capital set fire to its national library, destroying most of its collection of books.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "mosul-libraries-destroyed",
@@ -7203,7 +7482,8 @@
     "year": 2015,
     "category": "warfare",
     "description": "Fighters occupying an Iraqi city burned its libraries, including a university's collection, as part of a wider campaign of destruction.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "khufu-ship",
@@ -7211,7 +7491,8 @@
     "year": -2560,
     "category": "craft",
     "description": "Egyptian shipwrights buried a huge cedar vessel beside the Great Pyramid, its planks fitted together with mortise and tenon joints rather than nails.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "phoenician-bireme",
@@ -7219,7 +7500,8 @@
     "year": -700,
     "category": "warfare",
     "description": "Phoenician shipwrights stacked a second bank of oars above the first, creating the bireme and roughly doubling a galley's rowing power.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "greek-trireme",
@@ -7227,7 +7509,8 @@
     "year": -525,
     "category": "warfare",
     "description": "Greek and Phoenician navies built the trireme, a fast three tiered oared warship whose bronze ram dominated Mediterranean sea power for centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "lateen-sail-spreads",
@@ -7236,7 +7519,8 @@
     "category": "craft",
     "description": "Mediterranean sailors adopted the triangular lateen sail, letting ships point much closer into the wind than a square rig ever could.",
     "difficulty": "hard",
-    "year_end": 900
+    "year_end": 900,
+    "has_detail": true
   },
   {
     "name": "junk-watertight-bulkheads",
@@ -7245,7 +7529,8 @@
     "category": "craft",
     "description": "Chinese junk builders divided their hulls into sealed compartments with internal bulkheads, so a single breach no longer sank the ship.",
     "difficulty": "hard",
-    "year_end": 1279
+    "year_end": 1279,
+    "has_detail": true
   },
   {
     "name": "venice-founds-arsenal",
@@ -7253,7 +7538,8 @@
     "year": 1104,
     "category": "commerce",
     "description": "The Republic of Venice opened its Arsenal shipyard, where standardized war galleys were assembled from pre made parts on a production line.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "hanseatic-cog",
@@ -7262,7 +7548,8 @@
     "category": "trade",
     "description": "The flat bottomed, single masted cog, fitted with a stern rudder and high sides, became the workhorse cargo ship of North Sea trade.",
     "difficulty": "hard",
-    "year_end": 1400
+    "year_end": 1400,
+    "has_detail": true
   },
   {
     "name": "carrack-emerges",
@@ -7270,7 +7557,8 @@
     "year": 1350,
     "category": "craft",
     "description": "Mediterranean and Atlantic shipwrights combined a high sided hull with several masts of square and lateen sail, producing the carrack.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "dutch-fluyt",
@@ -7278,7 +7566,8 @@
     "year": 1595,
     "category": "trade",
     "description": "Dutch builders launched the fluyt, a cheap, bulky cargo hull needing only a small crew, giving the Dutch Republic an edge in bulk trade.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "hms-sovereign-of-the-seas",
@@ -7286,7 +7575,8 @@
     "year": 1637,
     "category": "warfare",
     "description": "The Royal Navy launched Sovereign of the Seas, the first three decked warship carrying over a hundred guns, setting a pattern for centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "rattler-beats-alecto",
@@ -7294,7 +7584,8 @@
     "year": 1845,
     "category": "invention",
     "description": "The Royal Navy tied screw driven HMS Rattler stern to stern with paddle steamer Alecto, and Rattler towed her rival backward with ease.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "flying-cloud-record-run",
@@ -7302,7 +7593,8 @@
     "year": 1851,
     "category": "craft",
     "description": "The clipper Flying Cloud sailed from New York to San Francisco around Cape Horn in under ninety days, a speed record that stood for a century.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "french-ironclad-gloire",
@@ -7310,7 +7602,8 @@
     "year": 1859,
     "category": "warfare",
     "description": "France launched Gloire, an iron armored wooden warship that instantly made every unarmored wooden battle fleet in the world obsolete.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "hms-warrior-launches",
@@ -7318,7 +7611,8 @@
     "year": 1860,
     "category": "warfare",
     "description": "Britain answered Gloire with Warrior, the first warship built entirely of iron rather than iron clad wood, starting a naval arms race.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "cutty-sark-launches",
@@ -7326,7 +7620,8 @@
     "year": 1869,
     "category": "craft",
     "description": "The tea clipper Cutty Sark launched on the Clyde, one of the fastest sailing ships ever built just as steam was making clippers obsolete.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "hms-havock-first-destroyer",
@@ -7334,7 +7629,8 @@
     "year": 1893,
     "category": "warfare",
     "description": "The Royal Navy commissioned Havock, a fast torpedo boat destroyer built to hunt down the small boats that threatened its capital ships.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "turbinia-storms-spithead",
@@ -7342,7 +7638,8 @@
     "year": 1897,
     "category": "invention",
     "description": "Charles Parsons raced his steam turbine yacht uninvited through a Royal Navy fleet review, outrunning every escort sent to stop him.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "uss-holland-commissioned",
@@ -7350,7 +7647,8 @@
     "year": 1900,
     "category": "warfare",
     "description": "The US Navy commissioned Holland, its first submarine, pairing an electric motor for running underwater with a gasoline engine on the surface.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hms-dreadnought-launches",
@@ -7358,7 +7656,8 @@
     "year": 1906,
     "category": "warfare",
     "description": "Britain launched Dreadnought, an all big gun, turbine powered battleship so advanced it made every earlier battleship obsolete overnight.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "bells-hydrofoil-record",
@@ -7366,7 +7665,8 @@
     "year": 1919,
     "category": "invention",
     "description": "Alexander Graham Bell's hydrofoil boat set a world water speed record on a Nova Scotia lake, riding on foils that lifted it above the waves.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ss-ideal-x-sails",
@@ -7374,7 +7674,8 @@
     "year": 1956,
     "category": "trade",
     "description": "The converted tanker Ideal X carried dozens of truck trailers from Newark to Houston on the first commercial voyage of a container ship.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "ns-lenin-enters-service",
@@ -7382,7 +7683,8 @@
     "year": 1959,
     "category": "invention",
     "description": "The Soviet Union commissioned Lenin, the first nuclear powered surface ship, an icebreaker built to keep Arctic shipping lanes open year round.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "caspian-sea-monster-flies",
@@ -7390,7 +7692,8 @@
     "year": 1966,
     "category": "invention",
     "description": "A huge Soviet craft made its first flight skimming just above the water on a cushion of trapped air, neither floating nor truly flying.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "yara-birkeland-launches",
@@ -7398,7 +7701,8 @@
     "year": 2021,
     "category": "invention",
     "description": "Norway launched Yara Birkeland, the first fully electric, autonomous container ship, designed to sail without fuel or a crew aboard.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "assyrian-siege-lachish",
@@ -7406,7 +7710,8 @@
     "year": -701,
     "category": "warfare",
     "description": "Assyrian forces under Sennacherib stormed the fortified Judean city, an assault later carved in detail on palace relief panels.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "fall-of-babylon-cyrus",
@@ -7414,7 +7719,8 @@
     "year": -539,
     "category": "warfare",
     "description": "Persian forces under Cyrus the Great took the heavily fortified capital, reportedly diverting a river to slip beneath its walls.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "athenian-siege-syracuse",
@@ -7423,7 +7729,8 @@
     "category": "warfare",
     "description": "Athenian forces blockaded the Sicilian city for two years during a war with Sparta, ending in disastrous defeat for the invaders.",
     "difficulty": "medium",
-    "year_end": -413
+    "year_end": -413,
+    "has_detail": true
   },
   {
     "name": "alexanders-siege-tyre",
@@ -7431,7 +7738,8 @@
     "year": -332,
     "category": "warfare",
     "description": "Alexander the Great besieged the island stronghold for seven months, building a stone causeway to bring his army to its walls.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "viking-siege-of-paris",
@@ -7439,7 +7747,8 @@
     "year": 886,
     "category": "warfare",
     "description": "A massive Viking fleet blockaded the fortified island city on the Seine for months, unable to break through its defenses.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "third-crusade-siege-acre",
@@ -7448,7 +7757,8 @@
     "category": "warfare",
     "description": "Crusader forces besieged the fortified port for two years before its garrison finally surrendered during the Third Crusade.",
     "difficulty": "medium",
-    "year_end": 1191
+    "year_end": 1191,
+    "has_detail": true
   },
   {
     "name": "siege-of-orleans",
@@ -7456,7 +7766,8 @@
     "year": 1429,
     "category": "warfare",
     "description": "English forces besieged the city until Joan of Arc's relief army broke through, turning the fortunes of a long war in France.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "ottoman-siege-rhodes",
@@ -7464,7 +7775,8 @@
     "year": 1522,
     "category": "warfare",
     "description": "Ottoman forces besieged the Knights Hospitaller until the defenders surrendered the island's heavily fortified capital.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "great-siege-of-malta",
@@ -7472,7 +7784,8 @@
     "year": 1565,
     "category": "warfare",
     "description": "A massive Ottoman fleet besieged the Knights Hospitaller on the island for months before withdrawing in costly defeat.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "siege-of-sevastopol",
@@ -7480,7 +7793,8 @@
     "year": 1855,
     "category": "warfare",
     "description": "Allied forces besieged the fortified Russian naval base for nearly a year, marked by grinding trench warfare and heavy losses.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "siege-of-vicksburg",
@@ -7488,7 +7802,8 @@
     "year": 1863,
     "category": "warfare",
     "description": "Union forces besieged the fortified river city for weeks, forcing its surrender and giving the North control of the river.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "prussian-siege-of-paris",
@@ -7496,7 +7811,8 @@
     "year": 1871,
     "category": "warfare",
     "description": "Prussian forces encircled and bombarded the French capital for months, starving its residents into surrender during a war with Germany.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "siege-of-khartoum",
@@ -7504,7 +7820,8 @@
     "year": 1885,
     "category": "warfare",
     "description": "Mahdist forces besieged the Sudanese capital for months, storming its defenses and killing the British general just before help arrived.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "siege-of-mafeking",
@@ -7512,7 +7829,8 @@
     "year": 1900,
     "category": "warfare",
     "description": "Boer forces besieged the small British garrison town for over two hundred days until a relief column finally broke through.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "siege-of-bastogne",
@@ -7520,7 +7838,8 @@
     "year": 1944,
     "category": "warfare",
     "description": "German forces surrounded American paratroopers holding a snowbound Belgian town, who famously refused a demand to surrender.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "siege-of-dien-bien-phu",
@@ -7528,7 +7847,8 @@
     "year": 1954,
     "category": "warfare",
     "description": "Viet Minh forces besieged a French fortress in the highlands for weeks, a defeat that ended French colonial rule in the region.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "battle-to-retake-mosul",
@@ -7536,7 +7856,8 @@
     "year": 2016,
     "category": "warfare",
     "description": "Iraqi and coalition forces surrounded an Islamic State stronghold and fought street by street for months to retake the city.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "red-pyramid-sneferu",
@@ -7544,7 +7865,8 @@
     "year": -2590,
     "category": "architecture",
     "description": "Pharaoh Sneferu completed a smooth sided pyramid at Dahshur, briefly the tallest structure on Earth before his son's tomb surpassed it.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "lincoln-cathedral-spire",
@@ -7552,7 +7874,8 @@
     "year": 1311,
     "category": "architecture",
     "description": "The central spire of Lincoln Cathedral in England was finished, ending the Great Pyramid's long reign as the tallest structure on Earth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "lincoln-spire-collapses",
@@ -7560,7 +7883,8 @@
     "year": 1548,
     "category": "architecture",
     "description": "A storm toppled the central spire of Lincoln Cathedral, ending its long run as the tallest structure in the world.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "st-olafs-tallinn-spire",
@@ -7568,7 +7892,8 @@
     "year": 1549,
     "category": "architecture",
     "description": "The newly finished spire of St. Olaf's Church in Tallinn became the tallest structure anywhere in the world.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "beauvais-cathedral-collapse",
@@ -7576,7 +7901,8 @@
     "year": 1573,
     "category": "architecture",
     "description": "The unfinished central tower of Beauvais Cathedral in France, briefly the tallest spire in Europe, collapsed only years after completion.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "st-olafs-spire-burns",
@@ -7584,7 +7910,8 @@
     "year": 1625,
     "category": "architecture",
     "description": "A lightning strike set fire to St. Olaf's Church in Tallinn, destroying the spire that had made it the world's tallest structure.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "strasbourg-cathedral-tallest",
@@ -7592,7 +7919,8 @@
     "year": 1647,
     "category": "architecture",
     "description": "With St. Olaf's spire gone, Strasbourg Cathedral was recognized as the tallest structure on Earth, a title it kept for two centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "st-nicholas-church-hamburg",
@@ -7600,7 +7928,8 @@
     "year": 1874,
     "category": "architecture",
     "description": "A soaring new spire completed on St. Nicholas Church in Hamburg made it the tallest building anywhere in the world.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "rouen-cathedral-iron-spire",
@@ -7608,7 +7937,8 @@
     "year": 1876,
     "category": "architecture",
     "description": "A new cast iron spire completed atop Rouen Cathedral in France briefly made it the tallest building in the world.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "has_detail": true
   },
   {
     "name": "cologne-cathedral-completed",
@@ -7616,7 +7946,8 @@
     "year": 1880,
     "category": "architecture",
     "description": "After more than six centuries of work, Cologne Cathedral was finished and became the tallest building on Earth, the last church to hold the title.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "washington-monument-completed",
@@ -7624,7 +7955,8 @@
     "year": 1884,
     "category": "architecture",
     "description": "The obelisk honoring George Washington was completed in the capital, becoming the tallest structure on Earth and the first secular one to hold it.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "woolworth-building-opens",
@@ -7632,7 +7964,8 @@
     "year": 1913,
     "category": "architecture",
     "description": "Frank Woolworth's ornate Gothic tower opened in New York and became the tallest building on Earth, a title it held for the next seventeen years.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "bank-of-manhattan-trust-tops-out",
@@ -7640,7 +7973,8 @@
     "year": 1929,
     "category": "architecture",
     "description": "The Bank of Manhattan Trust tower at 40 Wall Street topped out in New York, briefly becoming the tallest building in the world.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "kvly-tv-mast-erected",
@@ -7648,7 +7982,8 @@
     "year": 1963,
     "category": "architecture",
     "description": "A guyed television transmission mast rose in rural North Dakota, becoming the tallest human made structure anywhere on Earth.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "ostankino-tower-completed",
@@ -7656,7 +7991,8 @@
     "year": 1967,
     "category": "architecture",
     "description": "The Ostankino Tower opened in Moscow, becoming the tallest freestanding structure that had ever been built.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "world-trade-center-tops-out",
@@ -7664,7 +8000,8 @@
     "year": 1972,
     "category": "architecture",
     "description": "The North Tower of New York's World Trade Center topped out, surpassing the Empire State Building as the tallest building on Earth.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "warsaw-radio-mast-erected",
@@ -7672,7 +8009,8 @@
     "year": 1974,
     "category": "architecture",
     "description": "A guyed radio mast near Konstantynow in Poland was completed, becoming the tallest human made structure ever built.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "warsaw-mast-collapses",
@@ -7680,7 +8018,8 @@
     "year": 1991,
     "category": "architecture",
     "description": "The record setting Warsaw radio mast collapsed during maintenance work, handing the title of tallest structure back to an American tower.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "water-buffalo-domesticated",
@@ -7688,7 +8027,8 @@
     "year": -4000,
     "category": "agriculture",
     "description": "Farmers across South and East Asia tamed wild water buffalo for plowing fields and producing milk.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "hierakonpolis-royal-menagerie",
@@ -7696,7 +8036,8 @@
     "year": -3600,
     "category": "architecture",
     "description": "Elite burials in southern Egypt reveal captive elephants, hippos, baboons and wildcats kept as a show of status.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "dromedary-camel-domesticated",
@@ -7704,7 +8045,8 @@
     "year": -2900,
     "category": "agriculture",
     "description": "Herders on the Arabian Peninsula domesticated the one humped camel for milk, meat and desert transport.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "falconry-emerges-central-asia",
@@ -7712,7 +8054,8 @@
     "year": -2000,
     "category": "agriculture",
     "description": "Hunters on the Asian steppe began training captured raptors to hunt cooperatively alongside people.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "kikkuli-horse-training-text",
@@ -7720,7 +8063,8 @@
     "year": -1400,
     "category": "writing",
     "description": "A Hittite trainer named Kikkuli set down a long conditioning program for chariot horses, the oldest known training text for any animal.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "rome-sacred-geese-alarm",
@@ -7728,7 +8072,8 @@
     "year": -390,
     "category": "warfare",
     "description": "Geese kept on Rome's Capitoline Hill cried out and woke the garrison during a night assault on the city.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hydaspes-war-elephants",
@@ -7736,7 +8081,8 @@
     "year": -326,
     "category": "warfare",
     "description": "Alexander the Great overcame King Porus and his war elephant corps in a hard fought battle in India.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "mutina-pigeon-messengers",
@@ -7744,7 +8090,8 @@
     "year": -43,
     "category": "warfare",
     "description": "Trapped inside besieged Mutina, Decimus Brutus sent messages out by pigeon to reach his allied consuls.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "general-stud-book-published",
@@ -7752,7 +8099,8 @@
     "year": 1791,
     "category": "agriculture",
     "description": "James Weatherby published a registry tracing every listed racehorse back to a handful of founding sires.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "jardin-des-plantes-zoo-opens",
@@ -7760,7 +8108,8 @@
     "year": 1793,
     "category": "architecture",
     "description": "Revolutionary France turned former royal animal collections into the Jardin des Plantes, an early public zoo.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "barry-rescue-dog-legend",
@@ -7768,7 +8117,8 @@
     "year": 1814,
     "category": "craft",
     "description": "The St Bernard credited with saving dozens of Alpine travelers died peacefully in retirement in Bern.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "london-zoo-opens-regents-park",
@@ -7776,7 +8126,8 @@
     "year": 1828,
     "category": "architecture",
     "description": "The Zoological Society of London opened its gardens in Regent's Park to the paying public.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "first-formal-dog-show",
@@ -7784,7 +8135,8 @@
     "year": 1859,
     "category": "sports",
     "description": "Newcastle upon Tyne hosted what is regarded as the first organized conformation show for dogs.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "kennel-club-founded-britain",
@@ -7792,7 +8144,8 @@
     "year": 1873,
     "category": "commerce",
     "description": "Britain formed the world's first kennel club to standardize dog breeds and keep a breed registry.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "old-hemp-border-collie-ancestor",
@@ -7800,7 +8153,8 @@
     "year": 1893,
     "category": "agriculture",
     "description": "A working sheepdog born in Northumberland became the ancestor of nearly every modern Border Collie.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "beersheba-cavalry-charge",
@@ -7808,7 +8162,8 @@
     "year": 1917,
     "category": "warfare",
     "description": "Australian Light Horse troops made a mounted charge that broke Ottoman lines defending a town in Palestine.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "seeing-eye-guide-dog-school",
@@ -7816,7 +8171,8 @@
     "year": 1929,
     "category": "craft",
     "description": "A New Jersey town became home to the first American school training dogs to guide blind handlers.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "izbushensky-cavalry-charge",
@@ -7824,7 +8180,8 @@
     "year": 1942,
     "category": "warfare",
     "description": "Italian cavalry made a mounted saber charge against Soviet lines, remembered as one of the last true cavalry charges.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "przewalski-horses-rewilded",
@@ -7832,7 +8189,8 @@
     "year": 1992,
     "category": "nature",
     "description": "Captive bred Przewalski's horses were released onto the Mongolian steppe, restoring the last truly wild horse.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "trepanation-earliest-known",
@@ -7840,7 +8198,8 @@
     "year": -6500,
     "category": "medicine",
     "description": "Archaeologists found a skull with a hole deliberately cut into it that later healed, the oldest solid evidence of a patient surviving cranial surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hippocratic-surgical-texts",
@@ -7848,7 +8207,8 @@
     "year": -400,
     "category": "medicine",
     "description": "Greek physicians circulated treatises on fractures and head wounds that set out systematic surgical technique, including reducing dislocated joints.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-appendectomy",
@@ -7856,7 +8216,8 @@
     "year": 1735,
     "category": "medicine",
     "description": "A London surgeon removed a boy's perforated appendix in the middle of a routine hernia operation, the earliest recorded case to succeed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "mcdowell-first-ovariotomy",
@@ -7864,7 +8225,8 @@
     "year": 1809,
     "category": "medicine",
     "description": "A Kentucky surgeon removed a massive ovarian tumor from a fully conscious patient on her own kitchen table, the first such operation to succeed.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "rehn-sutures-heart-wound",
@@ -7872,7 +8234,8 @@
     "year": 1896,
     "category": "medicine",
     "description": "A Frankfurt surgeon closed a stab wound to a patient's heart with sutures, the first successful operation performed on the organ itself.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "citrate-blood-storage",
@@ -7880,7 +8243,8 @@
     "year": 1914,
     "category": "medicine",
     "description": "Physicians found that adding sodium citrate stopped donated blood from clotting, letting it be stored ahead of need rather than given directly.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "magill-endotracheal-tube",
@@ -7888,7 +8252,8 @@
     "year": 1920,
     "category": "medicine",
     "description": "Treating disfigured war veterans, a surgeon devised a flexible tube placed in the windpipe to keep patients breathing safely under anesthesia.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "first-blue-baby-operation",
@@ -7896,7 +8261,8 @@
     "year": 1944,
     "category": "medicine",
     "description": "Surgeons rerouted an infant's blood vessels to relieve a heart defect that was starving her body of oxygen, founding pediatric heart surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "heart-lung-machine-first-use",
@@ -7904,7 +8270,8 @@
     "year": 1953,
     "category": "medicine",
     "description": "A surgeon used his own heart-lung machine to keep a patient alive while he repaired a hole in her heart, opening the era of open-heart surgery.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "first-hand-transplant",
@@ -7912,7 +8279,8 @@
     "year": 1998,
     "category": "medicine",
     "description": "Surgeons in Lyon grafted a donor hand onto a recipient's arm, the first hand transplant, though it was later removed at the patient's own request.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "da-vinci-surgical-robot",
@@ -7920,7 +8288,8 @@
     "year": 2000,
     "category": "invention",
     "description": "Regulators cleared a robotic surgical system that lets a surgeon operate through mechanical arms guided from a console across the room.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hammurabi-surgeon-laws",
@@ -7928,7 +8297,8 @@
     "year": -1754,
     "category": "law",
     "description": "Babylon's law code set a surgeon's fee for a successful operation and ordered his hand cut off if a noble patient died under the bronze lancet.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "walls-of-uruk-raised",
@@ -7936,7 +8306,8 @@
     "year": -2700,
     "category": "architecture",
     "description": "Sumerian Uruk was ringed with a great defensive wall, later credited in legend to King Gilgamesh.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "walls-of-babylon-rebuilt",
@@ -7944,7 +8315,8 @@
     "year": -575,
     "category": "architecture",
     "description": "A Babylonian king rebuilt and strengthened the city's massive double walls, later ranked among the ancient wonders.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "long-walls-of-athens-built",
@@ -7953,7 +8325,8 @@
     "category": "architecture",
     "description": "Athens built parallel fortified walls linking the city to its port, securing supply lines against any siege.",
     "difficulty": "hard",
-    "year_end": -457
+    "year_end": -457,
+    "has_detail": true
   },
   {
     "name": "long-walls-of-athens-torn-down",
@@ -7961,7 +8334,8 @@
     "year": -404,
     "category": "architecture",
     "description": "After its defeat in a long war with Sparta, Athens was forced to tear down the Long Walls as a peace condition.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "servian-wall-of-rome-built",
@@ -7969,7 +8343,8 @@
     "year": -378,
     "category": "architecture",
     "description": "Rome raised a defensive stone wall around the city following a Gallic sack, enclosing its seven hills.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "herod-builds-masada-fortress",
@@ -7977,7 +8352,8 @@
     "year": -35,
     "category": "architecture",
     "description": "A Judean king built a lavish mountaintop fortress and palace complex overlooking the Dead Sea.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "antonine-wall-built",
@@ -7985,7 +8361,8 @@
     "year": 142,
     "category": "architecture",
     "description": "Rome pushed its British frontier north and built a turf wall across the narrow waist of Scotland.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "aurelian-walls-encircle-rome",
@@ -7993,7 +8370,8 @@
     "year": 273,
     "category": "architecture",
     "description": "An emperor built a massive brick wall circuit around Rome itself in response to barbarian incursions.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "theodosian-walls-completed",
@@ -8001,7 +8379,8 @@
     "year": 413,
     "category": "architecture",
     "description": "Constantinople's triple land walls were finished, making the city nearly impregnable for many centuries.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "sigiriya-rock-fortress-raised",
@@ -8009,7 +8388,8 @@
     "year": 483,
     "category": "architecture",
     "description": "A king built a palace fortress atop a sheer granite rock in Sri Lanka as a defensible new capital.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "walls-of-benin-city-built",
@@ -8018,7 +8398,8 @@
     "category": "architecture",
     "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
     "difficulty": "hard",
-    "year_end": 1460
+    "year_end": 1460,
+    "has_detail": true
   },
   {
     "name": "krak-des-chevaliers-rebuilt",
@@ -8027,7 +8408,8 @@
     "category": "architecture",
     "description": "A crusading military order rebuilt this Syrian castle into one of the most formidable fortresses of its era.",
     "difficulty": "medium",
-    "year_end": 1170
+    "year_end": 1170,
+    "has_detail": true
   },
   {
     "name": "malbork-castle-built",
@@ -8036,7 +8418,8 @@
     "category": "architecture",
     "description": "A crusading military order raised what became the largest brick castle in the world beside a northern river.",
     "difficulty": "hard",
-    "year_end": 1406
+    "year_end": 1406,
+    "has_detail": true
   },
   {
     "name": "carcassonne-refortified",
@@ -8044,7 +8427,8 @@
     "year": 1355,
     "category": "architecture",
     "description": "The French crown had the double walled fortress city of Carcassonne reinforced against English raids.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "kumbhalgarh-fort-built",
@@ -8052,7 +8436,8 @@
     "year": 1458,
     "category": "architecture",
     "description": "A Rajasthani ruler built this hill fort, ringed by one of the longest continuous walls anywhere in the world.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "suleiman-rebuilds-jerusalem-walls",
@@ -8061,7 +8446,8 @@
     "category": "architecture",
     "description": "An Ottoman sultan had the walls around Jerusalem's Old City torn down and reconstructed during his long reign.",
     "difficulty": "medium",
-    "year_end": 1541
+    "year_end": 1541,
+    "has_detail": true
   },
   {
     "name": "cartagena-walls-begun",
@@ -8069,7 +8455,8 @@
     "year": 1586,
     "category": "architecture",
     "description": "Spain began fortifying its Caribbean port of Cartagena with massive stone walls to guard against pirate raids.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "fort-ticonderoga-built",
@@ -8077,7 +8464,8 @@
     "year": 1755,
     "category": "architecture",
     "description": "France built this star shaped fort at a strategic chokepoint between two lakes in its northern colonies.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "france-builds-maginot-line",
@@ -8085,7 +8473,8 @@
     "year": 1930,
     "category": "architecture",
     "description": "France began constructing a chain of concrete fortifications along its German border to deter another invasion.",
-    "difficulty": "easy"
+    "difficulty": "easy",
+    "has_detail": true
   },
   {
     "name": "warsaw-ghetto-wall-built",
@@ -8093,7 +8482,8 @@
     "year": 1940,
     "category": "architecture",
     "description": "German occupiers walled off a district of Warsaw to seal in the city's Jewish population.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "germany-builds-atlantic-wall",
@@ -8101,7 +8491,8 @@
     "year": 1942,
     "category": "architecture",
     "description": "Germany constructed thousands of bunkers and fortifications along the European coast to repel an Allied invasion.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "korean-dmz-fortified",
@@ -8109,7 +8500,8 @@
     "year": 1953,
     "category": "architecture",
     "description": "After an armistice, both Koreas fortified the buffer zone between them with fences, walls and guard posts.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "israel-builds-west-bank-barrier",
@@ -8117,7 +8509,8 @@
     "year": 2002,
     "category": "architecture",
     "description": "Israel began building a wall and fence system through and around the West Bank during a period of conflict.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "us-secure-fence-act-signed",
@@ -8125,7 +8518,8 @@
     "year": 2006,
     "category": "law",
     "description": "The US president signed a law authorizing hundreds of miles of new fencing along the border with Mexico.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "lagash-girsu-canal-network",
@@ -8133,7 +8527,8 @@
     "year": -2900,
     "category": "agriculture",
     "description": "The Sumerian city of Lagash expanded a web of irrigation canals around Girsu, a network later disputed fiercely with neighboring Umma.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "mohenjo-daro-covered-drains",
@@ -8142,7 +8537,8 @@
     "category": "architecture",
     "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
     "difficulty": "medium",
-    "year_end": -1900
+    "year_end": -1900,
+    "has_detail": true
   },
   {
     "name": "earliest-persian-qanats",
@@ -8150,7 +8546,8 @@
     "year": -800,
     "category": "agriculture",
     "description": "Engineers on the Iranian plateau began tunneling gently sloped qanats, carrying groundwater to farms without pumps or evaporation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "great-dam-of-marib",
@@ -8159,7 +8556,8 @@
     "category": "architecture",
     "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
     "difficulty": "hard",
-    "year_end": -500
+    "year_end": -500,
+    "has_detail": true
   },
   {
     "name": "sennacherib-jerwan-aqueduct",
@@ -8167,7 +8565,8 @@
     "year": -690,
     "category": "architecture",
     "description": "Assyrian king Sennacherib finished a stone aqueduct at Jerwan, among the oldest aqueducts known, to water Nineveh's gardens.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "dujiangyan-irrigation-system",
@@ -8175,7 +8574,8 @@
     "year": -256,
     "category": "agriculture",
     "description": "Engineer Li Bing built Dujiangyan on the Min River, splitting its flow without a dam to irrigate the Sichuan plain below.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "petra-nabataean-water-system",
@@ -8184,7 +8584,8 @@
     "category": "architecture",
     "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
     "difficulty": "medium",
-    "year_end": 106
+    "year_end": 106,
+    "has_detail": true
   },
   {
     "name": "sigiriya-water-gardens",
@@ -8193,7 +8594,8 @@
     "category": "architecture",
     "description": "A Sri Lankan king's builders laid out gravity fed channels, pools and fountains at Sigiriya that still function to this day.",
     "difficulty": "hard",
-    "year_end": 495
+    "year_end": 495,
+    "has_detail": true
   },
   {
     "name": "basilica-cistern-built",
@@ -8201,7 +8603,8 @@
     "year": 532,
     "category": "architecture",
     "description": "Byzantine builders raised a vast underground cistern in Constantinople to store aqueduct water for the imperial capital.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "marib-dam-collapses",
@@ -8209,7 +8612,8 @@
     "year": 570,
     "category": "disasters",
     "description": "Yemen's aging Marib Dam burst after centuries of patched repairs, scattering local tribes and ending its oasis's irrigation.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "hohokam-canal-network",
@@ -8218,7 +8622,8 @@
     "category": "agriculture",
     "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
     "difficulty": "hard",
-    "year_end": 1450
+    "year_end": 1450,
+    "has_detail": true
   },
   {
     "name": "machu-picchu-water-channels",
@@ -8226,7 +8631,8 @@
     "year": 1455,
     "category": "architecture",
     "description": "Inca builders carved a network of stone channels and fountains carrying spring water through the mountaintop citadel.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "chapultepec-aqueduct",
@@ -8234,7 +8640,8 @@
     "year": 1466,
     "category": "architecture",
     "description": "Aztec engineers built a double aqueduct from Chapultepec's springs to carry fresh water across the lake to their capital.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "beemster-polder-drained",
@@ -8242,7 +8649,8 @@
     "year": 1612,
     "category": "agriculture",
     "description": "Dutch investors drained a large lake using windmill pumps and a ring canal, creating the first large reclaimed polder.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "great-level-fens-drained",
@@ -8250,7 +8658,8 @@
     "year": 1652,
     "category": "agriculture",
     "description": "An engineer finished draining a vast stretch of eastern English marshland into new channels, turning fen into farmland.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "has_detail": true
   },
   {
     "name": "croton-aqueduct-opens",
@@ -8258,7 +8667,8 @@
     "year": 1842,
     "category": "architecture",
     "description": "New York City opened a long masonry aqueduct carrying river water dozens of kilometers south into Manhattan.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "chicago-river-reversal",
@@ -8266,7 +8676,8 @@
     "year": 1900,
     "category": "architecture",
     "description": "A new sanitary and ship canal reversed a city river's flow, sending Chicago's sewage away from its drinking water source.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "la-aqueduct-owens-valley",
@@ -8274,7 +8685,8 @@
     "year": 1913,
     "category": "architecture",
     "description": "A civil engineer's aqueduct began carrying distant valley water hundreds of kilometers to fuel a growing desert city.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "afsluitdijk-completed",
@@ -8282,7 +8694,8 @@
     "year": 1932,
     "category": "architecture",
     "description": "The Netherlands completed a long dyke closing off a shallow sea inlet, turning it into a large freshwater lake.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   },
   {
     "name": "thames-barrier-completed",
@@ -8290,6 +8703,7 @@
     "year": 1982,
     "category": "architecture",
     "description": "London finished a row of rotating steel gates across its river that can seal the waterway against storm surges.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "has_detail": true
   }
 ]
