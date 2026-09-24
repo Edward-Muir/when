@@ -5208,7 +5208,8 @@
     "year": -2200,
     "category": "disasters",
     "description": "A prolonged megadrought ruined Mesopotamian harvests and helped topple the world's first empire, the Akkadians.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": -2154
   },
   {
     "name": "great-famine-cairo",
@@ -5216,7 +5217,8 @@
     "year": 1200,
     "category": "disasters",
     "description": "Two failed floods of the Nile triggered a catastrophic famine and reported cannibalism across Ayyubid Egypt.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "year_end": 1202
   },
   {
     "name": "sweet-potato-reaches-china",
@@ -5240,7 +5242,8 @@
     "year": 1630,
     "category": "disasters",
     "description": "Failed monsoons and war devastated the Deccan plateau, killing millions of people under Mughal rule.",
-    "difficulty": "very-hard"
+    "difficulty": "very-hard",
+    "year_end": 1632
   },
   {
     "name": "great-famine-france-louis-xiv",
@@ -5248,7 +5251,8 @@
     "year": 1693,
     "category": "disasters",
     "description": "Two catastrophic harvests late in Louis XIV's reign left roughly two million French subjects to starve.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1694
   },
   {
     "name": "great-baltic-famine",
@@ -5256,7 +5260,8 @@
     "year": 1695,
     "category": "disasters",
     "description": "A run of cold, wet summers ruined grain harvests across Sweden, Finland and Estonia, killing a fifth of the region's people.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1697
   },
   {
     "name": "bengal-famine-company-rule",
@@ -5288,7 +5293,8 @@
     "year": 1876,
     "category": "disasters",
     "description": "A severe monsoon failure tied to a harsh El Nino triggered mass starvation across British ruled India, killing millions.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1878
   },
   {
     "name": "indian-famine-codes-adopted",
@@ -5312,7 +5318,8 @@
     "year": 1978,
     "category": "agriculture",
     "description": "Reformers dismantled the famine prone commune system and let farming households keep what they grew, lifting grain output.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1983
   },
   {
     "name": "famine-early-warning-launched",
@@ -5328,7 +5335,8 @@
     "year": 2011,
     "category": "disasters",
     "description": "Drought and conflict combined to kill a quarter million people across Somalia and the surrounding Horn of Africa region.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 2012
   },
   {
     "name": "south-sudan-famine-declared",
@@ -5784,7 +5792,8 @@
     "year": 1267,
     "category": "architecture",
     "description": "Kublai Khan ordered a walled capital called Dadu built for his Yuan dynasty on the site of modern Beijing.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1285
   },
   {
     "name": "taejo-founds-hanseong",
@@ -6072,7 +6081,8 @@
     "year": 1944,
     "category": "warfare",
     "description": "After crushing an uprising, German demolition squads systematically burned Warsaw street by street, destroying most of its buildings.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1945
   },
   {
     "name": "great-fire-of-copenhagen",
@@ -6760,7 +6770,8 @@
     "year": -229,
     "category": "warfare",
     "description": "Rome sent a fleet and army against Illyrian queen Teuta after her state sponsored raiders preyed on Adriatic shipping, forcing her surrender.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": -228
   },
   {
     "name": "caesar-captured-cilician-pirates",
@@ -7224,7 +7235,8 @@
     "year": 400,
     "category": "craft",
     "description": "Mediterranean sailors adopted the triangular lateen sail, letting ships point much closer into the wind than a square rig ever could.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 900
   },
   {
     "name": "junk-watertight-bulkheads",
@@ -7232,7 +7244,8 @@
     "year": 1000,
     "category": "craft",
     "description": "Chinese junk builders divided their hulls into sealed compartments with internal bulkheads, so a single breach no longer sank the ship.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1279
   },
   {
     "name": "venice-founds-arsenal",
@@ -7248,7 +7261,8 @@
     "year": 1200,
     "category": "trade",
     "description": "The flat bottomed, single masted cog, fitted with a stern rudder and high sides, became the workhorse cargo ship of North Sea trade.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1400
   },
   {
     "name": "carrack-emerges",
@@ -7408,7 +7422,8 @@
     "year": -415,
     "category": "warfare",
     "description": "Athenian forces blockaded the Sicilian city for two years during a war with Sparta, ending in disastrous defeat for the invaders.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": -413
   },
   {
     "name": "alexanders-siege-tyre",
@@ -7432,7 +7447,8 @@
     "year": 1189,
     "category": "warfare",
     "description": "Crusader forces besieged the fortified port for two years before its garrison finally surrendered during the Third Crusade.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1191
   },
   {
     "name": "siege-of-orleans",
@@ -7936,7 +7952,8 @@
     "year": -461,
     "category": "architecture",
     "description": "Athens built parallel fortified walls linking the city to its port, securing supply lines against any siege.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": -457
   },
   {
     "name": "long-walls-of-athens-torn-down",
@@ -8000,7 +8017,8 @@
     "year": 1400,
     "category": "architecture",
     "description": "Over generations the Edo people raised an enormous system of earthen walls and moats around Benin City.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1460
   },
   {
     "name": "krak-des-chevaliers-rebuilt",
@@ -8008,7 +8026,8 @@
     "year": 1142,
     "category": "architecture",
     "description": "A crusading military order rebuilt this Syrian castle into one of the most formidable fortresses of its era.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1170
   },
   {
     "name": "malbork-castle-built",
@@ -8016,7 +8035,8 @@
     "year": 1280,
     "category": "architecture",
     "description": "A crusading military order raised what became the largest brick castle in the world beside a northern river.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1406
   },
   {
     "name": "carcassonne-refortified",
@@ -8040,7 +8060,8 @@
     "year": 1538,
     "category": "architecture",
     "description": "An Ottoman sultan had the walls around Jerusalem's Old City torn down and reconstructed during his long reign.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 1541
   },
   {
     "name": "cartagena-walls-begun",
@@ -8120,7 +8141,8 @@
     "year": -2450,
     "category": "architecture",
     "description": "Builders in the Indus city of Mohenjo-daro laid brick lined covered drains and wells, an early planned sewage and water system.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": -1900
   },
   {
     "name": "earliest-persian-qanats",
@@ -8136,7 +8158,8 @@
     "year": -750,
     "category": "architecture",
     "description": "Sabaean rulers in Yemen raised a great earthen dam across a desert valley, irrigating a vast oasis for many centuries.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": -500
   },
   {
     "name": "sennacherib-jerwan-aqueduct",
@@ -8160,7 +8183,8 @@
     "year": -30,
     "category": "architecture",
     "description": "The Nabataeans carved channels, cisterns and small dams into Petra's cliffs to capture flash floods for their desert city.",
-    "difficulty": "medium"
+    "difficulty": "medium",
+    "year_end": 106
   },
   {
     "name": "sigiriya-water-gardens",
@@ -8168,7 +8192,8 @@
     "year": 480,
     "category": "architecture",
     "description": "A Sri Lankan king's builders laid out gravity fed channels, pools and fountains at Sigiriya that still function to this day.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 495
   },
   {
     "name": "basilica-cistern-built",
@@ -8192,7 +8217,8 @@
     "year": 700,
     "category": "agriculture",
     "description": "The Hohokam people expanded a major canal network off a desert river, irrigating land in the Sonoran Desert near modern Phoenix.",
-    "difficulty": "hard"
+    "difficulty": "hard",
+    "year_end": 1450
   },
   {
     "name": "machu-picchu-water-channels",
