@@ -443,6 +443,51 @@ its 9th-century radiocarbon date is a point with an error bar, not a span of act
 Test C doing its job on a card whose earlier rejection note had said only that the dating was
 "disputed".
 
+## Raised by the second curated-theme bank (2026-09-24)
+
+Reconciling 22 blind theme spines against the catalogue meant reading existing cards against a
+second, independent list of dates. None of these was acted on (the reconcile agents were told
+never to edit an existing event), except where noted. See
+[../curated-themes/index.md](../curated-themes/index.md#bank-2-2026-09).
+
+### Wrong year
+
+- **`rhinoplasty`** (-3000). Its description is the Sushruta Samhita's nose reconstruction,
+  which is dated to roughly 600 BCE: the card is about 2,400 years early. It was the Under the
+  Knife deck's easiest card and was dropped from it for this reason. `susruta-samhita` and
+  `cataract-surgery-ancient` already sit correctly at -600, so the fix may be deprecation
+  rather than a re-date.
+- **`bengal-famine-company-rule`** (1770). Sources date the famine 1769-1773; 1770 reads as a
+  rounded stand-in. A candidate for `year` 1769 + `year_end` 1773 in a pass allowed to move
+  years.
+- **`oldest-wooden-hunting-spears`** (new this bank). Authored at -337000 and **corrected to
+  -200000** before commit, after the 2025 amino-acid re-dating of the Schöningen deposit
+  (Science Advances, May 2025).
+
+### Imprecise year on a card authored this bank
+
+- **`walls-of-benin-city-built`** (1400, window to 1460). Earthworks began about 800 and the
+  first moats were dug c. 1280-1295; 1400 sits mid-process. A fuller window is ~800-1460.
+- **`junk-watertight-bulkheads`** (1000, window to 1279). The technique is Tang (618-907) and
+  the Quanzhou ship confirms it c. 1277; 1000 is a stand-in between the two.
+- **`great-dam-of-marib`** (-750, window to -500). The window covers the Sabaean stonework only;
+  the dam's full history runs from c. 1750 BCE to Himyarite work c. 325 CE.
+
+### Existing cards reused under a slightly different date
+
+Reused as they are, and noted in the theme notes' "catalogue doubts":
+`elevator-invented` (1852; Otis's public demonstration is usually 1853-54),
+`lilienthal-glider` (1894; first glides 1891), `helicopter-modern` (1939, the VS-300's tethered
+hop; free flight 1940), `polynesian-double-canoe-design` (600; the Lapita voyaging canoe is
+c. 1500-1000 BCE), `song-sternpost-rudder` (1150; the Han origin is c. 100 CE), `fire-mastery`
+(-1790000, against ~790,000 for the earliest accepted controlled fire).
+
+### Two existing cards on one beat
+
+`zhou-dynasty-begins` and `establishment-zhou-dynasty` are the same Muye beat;
+`jin-dynasty-reunifies-china` and `sima-yan-jin-unification` are the same 280 CE beat.
+`npm run find-duplicates` lists the first pair too.
+
 ## Player-visible `description` and `friendly_name` errors
 
 Not year problems. Every one of these is text a player reads **before** placing the card, so an

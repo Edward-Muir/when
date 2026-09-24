@@ -113,7 +113,13 @@ check that consumed one would silently re-theme the whole year — the failure m
 Minimum **16** events, enforced by the API — but that is a backstop, not a target. The
 authoring floor is **30**, and the working band is **30-36**; every theme in the bank above
 sits in it. `scripts/theme-gap.js --slugs` reports the 30-36 band as a gate, alongside the
-bins and band-zero checks the publish script enforces.
+band-zero and same-year checks the publish script enforces.
+
+**Timeline spread is advisory, not a gate** (since 2026-09). A theme may deliberately live in one
+stretch of history (a single dynasty, the age of the pharaohs, deep time) and the order within
+it is still a real puzzle. `theme-gap` prints the bins as `INFO` and `publish-theme.js` prints a
+"clustered" note instead of failing. What protects the opening hand is band 0, which stays a
+hard gate at 5; spread was only ever a proxy for it.
 
 No hard maximum, but two soft notes:
 
@@ -202,8 +208,8 @@ loading the real one.
 ## The theme bank
 
 Nineteen themes authored in one parallel pass, one note each. Every deck is 34-36 cards and
-clears all four gates: size 30-36, 6+ of 8 spread bins, 5+ band-zero footholds, no two cards
-sharing a year. Ready-to-paste workflow inputs are in
+clears all four gates as they stood then: size 30-36, 6+ of 8 spread bins (now advisory, see
+Sizing), 5+ band-zero footholds, no two cards sharing a year. Ready-to-paste workflow inputs are in
 [publish-inputs.md](publish-inputs.md); art prompts for the events they needed are in
 [art/all_prompts.csv](art/all_prompts.csv), built by
 `scripts/events/theme-art-prompts.py` from the hand-authored scenes in `art/scenes/`.
@@ -274,6 +280,73 @@ answerable yes/no about a single candidate, then re-probe.
 One tooling note: `npm run find-duplicates` is O(n²) in _pairs_, and at ~5,985 events it
 crashed on V8's maximum Set size until the redundant seen-sets were removed. If it ever dies
 with `RangeError` rather than reporting, that is the shape of the problem.
+
+## Bank 2 (2026-09)
+
+Twenty-two more themes, authored in one pass with Sonnet sub-agents in two strictly separated
+steps, which is the part worth copying:
+
+1. **A blind spine.** One agent per theme got only the name and the scope rule, and was told not
+   to open anything in the repository. It wrote 40-45 dated beats from the subject alone, with a
+   quick search per date. Not seeing the catalogue is the point: a spine written from what the
+   game already holds can only rediscover it, while a blind one is how the missing events are
+   found. The bank added 414 events this way; Pirates & Privateers found 33 of its 34 cards
+   missing.
+2. **A reconcile.** A fresh agent per theme matched every beat against the catalogue **by year,
+   not only by name** (the `english-civil-war-aftermath` trap), reused an existing card wherever
+   one covered the beat, authored the rest, and cut to 30-36 against the gates.
+
+Every deck is 31-36 cards (Stolen! 33, Before Us 32 after review), band 0 at least 5 and no
+same-year pair, measured against the merged catalogue with `--include-pending`. Spread was not a
+gate for this bank (see Sizing): Pharaohs sits in 2 bins and Before Us in 1, by design.
+Ready-to-paste inputs are the second half of [publish-inputs.md](publish-inputs.md); art prompts
+are [art/bank-2_prompts.csv](art/bank-2_prompts.csv), built from `art/scenes-bank-2/` (a separate
+folder because `theme-art-prompts.py` refuses to run while any scene names an illustrated event,
+and the first bank is now fully illustrated).
+
+| Theme                | Note                                         | Scope rule — a card is in only if…                                |
+| -------------------- | -------------------------------------------- | ----------------------------------------------------------------- |
+| Before Us            | [before-us.md](before-us.md)                 | it happened before _Homo sapiens_ existed                         |
+| Capitals Founded     | [founding-cities.md](founding-cities.md)     | it founded a city that is a national capital today                |
+| Cities Ablaze        | [great-fires.md](great-fires.md)             | a city burned, or it is a step in fighting urban fire             |
+| Ends of the Earth    | [ends-of-the-earth.md](ends-of-the-earth.md) | people first reached a pole, a summit or an unvisited extreme     |
+| Famine Years         | [famine.md](famine.md)                       | it is a named famine, or a decisive step in ending one            |
+| Mandate of Heaven    | [chinese-dynasties.md](chinese-dynasties.md) | it is a Chinese dynasty's founding, peak act or fall              |
+| On Stage             | [on-stage.md](on-stage.md)                   | it is a stage form, a landmark premiere or a famous playhouse     |
+| Peace at Last        | [peace.md](peace.md)                         | it is a treaty or armistice that ended a named war                |
+| Pharaohs             | [pharaohs.md](pharaohs.md)                   | it is an act of an Egyptian ruler, Narmer to Cleopatra            |
+| Pirates & Privateers | [pirates.md](pirates.md)                     | it is armed robbery at sea, or the war on it                      |
+| Places of Learning   | [schools.md](schools.md)                     | it founded or destroyed a school, university or great library     |
+| Sail & Steam         | [ships.md](ships.md)                         | it is a new kind of ship, or one vessel that changed seafaring    |
+| Stolen!              | [heists.md](heists.md)                       | it is a famous theft, robbery or fraud carried out for gain       |
+| Taking Flight        | [flight.md](flight.md)                       | a person left the ground in a craft (atmosphere only)             |
+| Tallest in the World | [skyline.md](skyline.md)                     | it became the tallest structure of its day, or let us build up    |
+| Tamed                | [tamed.md](tamed.md)                         | it is an animal brought into human service                        |
+| The First Woman      | [first-women.md](first-women.md)             | it is the first time a woman did or held something                |
+| The Roman Story      | [rome.md](rome.md)                           | it is a defining moment of the Roman state, to 1453               |
+| Under Siege          | [sieges.md](sieges.md)                       | it is the siege of a named city or fortress                       |
+| Under the Knife      | [under-the-knife.md](under-the-knife.md)     | it is a surgical procedure or tool, or a way to survive one       |
+| Walls & Fortresses   | [walls.md](walls.md)                         | it built or brought down a fortification meant to keep people out |
+| Waterworks           | [waterworks.md](waterworks.md)               | it moves or holds back water by design                            |
+
+**Three decks sit exactly on the band-0 floor**: Ends of the Earth, Famine Years and Under the
+Knife. Band 0 depends on how crowded a card's neighbourhood is, so these are the first to
+recheck whenever the catalogue grows; each note says which card to swap in.
+
+### What review changed after the agents finished
+
+Agents follow a scope rule loosely when a keyword fits. Every deck was read by hand afterwards,
+and the edits are recorded in each note's "Review edits" section. The ones worth knowing:
+
+- **Cities Ablaze** had admitted five general sacks (Carthage, Jerusalem in 70, Rome in 410,
+  Constantinople in 1204, Baghdad in 1258) because fire was part of each. Four were already
+  Under Siege cards. The rule admits a wartime burning only when the fire itself is the event.
+- **Under the Knife** leaned on `rhinoplasty` as a foothold, a card dated 2,400 years before the
+  text it describes. A deck should not teach a wrong date because the error makes it easy.
+- **Before Us** carried the Schöningen spears at 337,000 years; a 2025 re-dating puts them at
+  about 200,000, after _Homo sapiens_, so the card moved and left the deck.
+- Two events were written twice by different themes (Ramesses III against the Sea Peoples,
+  Bessie Coleman's licence) and were merged to one record each.
 
 ## Authoring: themes lead, the catalogue follows
 
