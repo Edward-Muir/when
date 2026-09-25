@@ -75,6 +75,37 @@ permission state, a 10-second test fire, resync, and a pending-schedule dump. Un
 `src/utils/dailyReminder.test.ts`. The simulator delivers local notifications; no Info.plist
 or entitlement changes were needed.
 
+## Icons, splash, store art
+
+**The icon is a painting, not vector art.** Four rounds of hand-drawn SVG concepts were
+rejected (a "?", hourglass/slot/clock, a symbol-builder, a wall of 25 flat marks); the one
+that stuck is a Gemini oil painting of a brass hourglass, made the same way as the card art.
+The prompts, tuned so one object reads at 60 px, are in
+[../app-icon/gemini-icon-prompts.md](../app-icon/gemini-icon-prompts.md). Don't redraw it in SVG.
+
+- **Master:** `assets/icon/icon-master.jpg`, the untouched Gemini output. Everything else is
+  derived by `node scripts/generate-icons.js`: the favicons, `logo180/192/512.png`, the iOS
+  `AppIcon.appiconset/logo1024.png`, and `Splash.imageset`.
+- **The icon is a centred 880px crop of the 1024px master** (`CROP` in the script). A card
+  image can breathe; a fingernail-sized icon needs its object bigger. Tighter than 880 pushes
+  the hourglass caps into the iOS corner mask. Check any new master at 60, 40 and 29 px.
+- **No alpha, anywhere.** App Store Connect rejects an icon with an alpha channel; the script
+  flattens every output. One appearance only: a painting already on a near-black ground reads
+  fine in dark mode, and iOS derives the tinted look from it.
+- **Splash:** the `LaunchScreen.storyboard` referenced an image named `Splash` that was never
+  in the asset catalogue, so launch was a blank white screen. It is now the painting feathered
+  into its own corner colour, `#030c1d`, which is also the storyboard background, so no white
+  flash either way. The image is 2732 square and aspect-filled, so only the middle ~1260px
+  shows on a phone; keep the subject small.
+- **Both ship only in a new App Store build.** The web favicons ship on deploy.
+- **Store screenshots:** `node scripts/generate-store-screenshots.js` (needs
+  `npm install --no-save playwright`) captures the live site at 440x956 DPR 3, which is exactly
+  the 6.9" size (1320x2868), and frames each shot with a headline. It plays a Custom game, never
+  the Daily, and never submits a score. Leaderboard nicknames are swapped for stand-in names
+  before capture: a public listing must not show real players' names. Output:
+  `assets/app-store/screenshots/`; `--compose` re-frames the saved raw captures without
+  touching the site.
+
 ## Things that needed no work
 
 Routing, dark mode, `navigator.share`, safe-area env vars, the service worker, localStorage,

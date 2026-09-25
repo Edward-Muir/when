@@ -57,10 +57,12 @@ original per-session write-ups if you need the blow-by-blow.
   one-shot onboarding hints (`when-hints-seen`, `useOnboardingHints`), Custom settings, and
   the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
-  ship instantly), safe-area utilities, daily reminders
+  ship instantly), safe-area utilities, daily reminders, and how the icon, splash and App Store
+  screenshots are generated
 - [app-icon/gemini-icon-prompts.md](app-icon/gemini-icon-prompts.md) — the app icon is
   generated in Gemini in the card-art oil-painting style, not hand-drawn as vector art (four
-  rounds of vector concepts were rejected); the prompts, tuned to still read at 60 px
+  rounds of vector concepts were rejected); the prompts, tuned to still read at 60 px. The
+  hourglass (prompt 1) is the icon
 - [release-notes.md](release-notes.md) — the hand-written history behind the update popup and
   the What's New page: why it is separate from the generated `CHANGELOG.md`, the version+date
   sync contract and its `documentedFrom` floor, and the two points where a missing note aborts
