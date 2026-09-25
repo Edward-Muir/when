@@ -1,6 +1,6 @@
 # Docs Index
 
-Reference docs for the "When" timeline game. Seventeen files, all maintained as **current** —
+Reference docs for the "When" timeline game. Eighteen files, all maintained as **current** —
 if one contradicts the code, the doc is wrong and should be fixed.
 
 These are digests, not a change log. They hold decisions and their rationale, rejected
@@ -58,6 +58,9 @@ original per-session write-ups if you need the blow-by-blow.
   the service-worker dev-loop trap
 - [mobile-ios/](mobile-ios/index.md) — the Capacitor shell loads the live site (so web deploys
   ship instantly), safe-area utilities, daily reminders
+- [app-icon/gemini-icon-prompts.md](app-icon/gemini-icon-prompts.md) — the app icon is
+  generated in Gemini in the card-art oil-painting style, not hand-drawn as vector art (four
+  rounds of vector concepts were rejected); the prompts, tuned to still read at 60 px
 - [release-notes.md](release-notes.md) — the hand-written history behind the update popup and
   the What's New page: why it is separate from the generated `CHANGELOG.md`, the version+date
   sync contract and its `documentedFrom` floor, and the two points where a missing note aborts
