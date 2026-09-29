@@ -4,6 +4,8 @@ import NextDailyCountdown from './NextDailyCountdown';
 
 interface DailyCtaProps {
   played: boolean;
+  /** Today's daily was started and left part-way (`utils/dailyProgress.ts`): Play resumes it. */
+  inProgress?: boolean;
   /** Today's score exists and is not on the board (see `canSubmitScore` in ModeSelect). */
   unclaimed: boolean;
   onShare: () => void;
@@ -19,7 +21,7 @@ interface DailyCtaProps {
 }
 
 /**
- * The Daily hero card's call to action: Play when unplayed; Share plus the next-daily
+ * The Daily hero card's call to action: Play when unplayed (Resume once started); Share plus the next-daily
  * countdown when already completed today, or, when today's score is not on the board, the
  * way to put it there. No "How to play" link here: it cost the hero image 48px for every
  * player forever. The Daily tab's once-only strip (`ModeSelect`) and the menu carry it.
@@ -30,6 +32,7 @@ interface DailyCtaProps {
  */
 const DailyCta: React.FC<DailyCtaProps> = ({
   played,
+  inProgress = false,
   unclaimed,
   onShare,
   onPlay,
@@ -83,7 +86,7 @@ const DailyCta: React.FC<DailyCtaProps> = ({
       className={`${buttonClass} w-full ${nudge ? 'animate-hint-glow' : ''}`}
     >
       <Play className="w-4 h-4" />
-      Play Daily Challenge
+      {inProgress ? 'Resume Daily Challenge' : 'Play Daily Challenge'}
     </button>
   );
 };

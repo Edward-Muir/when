@@ -28,6 +28,7 @@ import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
 import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
 import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
+import { getTodayDailyProgress } from '../utils/dailyProgress';
 import {
   getTodayResult,
   DailyResult,
@@ -400,6 +401,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const dailyCta = (
     <DailyCta
       played={!!todayResult}
+      inProgress={!!getTodayDailyProgress(today)}
       unclaimed={canSubmitScore}
       onShare={handleShareDaily}
       onPlay={handleDailyStart}

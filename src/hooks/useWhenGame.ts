@@ -31,6 +31,7 @@ import {
   loadCuratedThemes,
 } from '../utils/curatedThemes';
 import { buildThemeReplayDeck, withFreshReplaySeed } from '../utils/themeReplay';
+import { resumeDailyProgress, saveDailyPlacement } from '../utils/dailyProgress';
 import {
   validatePlacement,
   calculatePlacementResult,
@@ -195,6 +196,11 @@ export function useWhenGame(): UseWhenGameReturn {
       const isDaily = mode === 'daily' && Boolean(dailySeed);
       const shuffled = composeDeck(config, allEvents);
 
+      // A daily already under way resumes rather than re-dealing, whichever way it was entered
+      // (utils/dailyProgress.ts). A save the rebuilt deck no longer matches is dropped.
+      const resumed = isDaily ? resumeDailyProgress(shuffled, config) : null;
+      if (resumed) return setState(resumed);
+
       // Checked against the composed deck, not the pre-filter pool: a curated theme's pool is
       // a couple of dozen cards while the unfiltered catalogue is thousands, so testing the
       // wrong one would wave through a deck too short to deal.
@@ -259,6 +265,7 @@ export function useWhenGame(): UseWhenGameReturn {
 
       // 2. Calculate placement result
       const result = calculatePlacementResult(state.timeline, activeCard, insertionIndex);
+      saveDailyPlacement(state, activeCard, insertionIndex, result);
 
       // 3. Show popup immediately for multiplayer (turn handoff). Single-player misses get
       // the tombstone reveal + miss banner instead of a blocking popup.

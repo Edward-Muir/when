@@ -46,17 +46,23 @@ import { preloadEventImages } from '../utils/preloadImage';
 
 // Extracted modal components to reduce main function line count
 const HomeConfirmModal: React.FC<{
-  onClose: () => void;
+  setOpen: (open: boolean) => void;
   onConfirm: () => void;
-}> = ({ onClose, onConfirm }) => (
+  state: Pick<WhenGameState, 'gameMode'>;
+}> = ({ setOpen, onConfirm, state }) => (
   <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-    <div className="absolute inset-0 bg-black/50" onClick={onClose} />
+    <div className="absolute inset-0 bg-black/50" onClick={() => setOpen(false)} />
     <div className="relative bg-surface rounded-2xl shadow-xl p-6 max-w-sm w-full">
       <h2 className="text-lg font-display text-text mb-2">Leave game?</h2>
-      <p className="text-text-muted text-sm mb-6 font-body">Your current progress will be lost.</p>
+      <p className="text-text-muted text-sm mb-6 font-body">
+        {/* A daily is saved as it is played (utils/dailyProgress.ts), so leaving loses nothing. */}
+        {state.gameMode === 'daily'
+          ? 'Your progress is saved. Pick up where you left off from the Daily card.'
+          : 'Your current progress will be lost.'}
+      </p>
       <div className="flex gap-3">
         <button
-          onClick={onClose}
+          onClick={() => setOpen(false)}
           className="flex-1 py-3 px-4 bg-border text-text rounded-xl font-medium transition-colors hover:bg-border/80 active:scale-95 font-body"
         >
           Cancel
@@ -359,7 +365,7 @@ const Game: React.FC<GameProps> = ({
         >
           <TopBar
             showHome={true}
-            // "Your current progress will be lost" is the wrong question for a finished board
+            // "Leave game?" is the wrong question for a finished board
             // being re-read, so a review leaves straight away.
             onHomeClick={() => (state.isReview ? onNewGame() : setShowHomeConfirm(true))}
             dailyTheme={dailyThemeDisplay}
@@ -491,7 +497,7 @@ const Game: React.FC<GameProps> = ({
           />
 
           {showHomeConfirm && (
-            <HomeConfirmModal onClose={() => setShowHomeConfirm(false)} onConfirm={onNewGame} />
+            <HomeConfirmModal setOpen={setShowHomeConfirm} onConfirm={onNewGame} state={state} />
           )}
 
           {/* The end-of-game sequence. Each step dismisses to the next; the share always
