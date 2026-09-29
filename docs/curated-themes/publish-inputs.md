@@ -16,35 +16,56 @@ replays the last 28 days to build its exclusion chain, so a retroactive edit mak
 replay decks nobody played. See [index.md](index.md).
 
 **Run `mode: validate` first.** It writes nothing (`dryRun`) and reports what the
-catalogue-aware checks think. A theme carrying un-illustrated events will fail on
-unresolved slugs — that is expected, not a defect, and is the art column below.
+catalogue-aware checks think. A theme carrying un-illustrated events fails on unresolved
+slugs, because `loadAllEvents` hides any event without Cloudinary art.
 
-## Art status
+## Schedule
 
-`loadAllEvents` hides any event without Cloudinary art, so a deck cannot be dealt —
-or validated — until every slug in it is illustrated.
+Every event in both banks is illustrated, so every theme below is publishable. From October
+2026 curated themes run on **Mondays and Fridays**: the unplayed bank-1 themes were moved off
+their Sundays, and bank 2 follows on the same two weekdays. Themes dated 2026-09-27 or earlier
+were left where they ran. The live calendar is the source of truth; this table is the plan it
+was written from.
 
-| Theme               | Cards | Awaiting art | Publishable now |
-| ------------------- | ----: | -----------: | --------------- |
-| `assassinations`    |    36 |           22 | no              |
-| `automata`          |    35 |           21 | no              |
-| `ciphers`           |    36 |           34 | no              |
-| `clockwork`         |    36 |           21 | no              |
-| `cosmic-ideas`      |    36 |           19 | no              |
-| `crossings`         |    36 |           15 | no              |
-| `eureka`            |    36 |           10 | no              |
-| `games`             |    36 |           15 | no              |
-| `kings-of-england`  |    36 |           18 | no              |
-| `light`             |    35 |           22 | no              |
-| `lost-and-found`    |    35 |           25 | no              |
-| `mapmakers`         |    36 |           23 | no              |
-| `money`             |    36 |            7 | no              |
-| `nations-of-europe` |    35 |           23 | no              |
-| `numbers`           |    36 |           19 | no              |
-| `plagues`           |    36 |            9 | no              |
-| `the-deep`          |    34 |           30 | no              |
-| `upheaval`          |    36 |            8 | no              |
-| `what-we-drink`     |    36 |           15 | no              |
+| Date       | Day | Theme               | Bank |
+| ---------- | --- | ------------------- | ---- |
+| 2026-10-02 | Fri | `clockwork`         | 1    |
+| 2026-10-05 | Mon | `cosmic-ideas`      | 1    |
+| 2026-10-09 | Fri | `crossings`         | 1    |
+| 2026-10-12 | Mon | `eureka`            | 1    |
+| 2026-10-16 | Fri | `games`             | 1    |
+| 2026-10-19 | Mon | `light`             | 1    |
+| 2026-10-23 | Fri | `lost-and-found`    | 1    |
+| 2026-10-26 | Mon | `mapmakers`         | 1    |
+| 2026-10-30 | Fri | `money`             | 1    |
+| 2026-11-02 | Mon | `nations-of-europe` | 1    |
+| 2026-11-06 | Fri | `numbers`           | 1    |
+| 2026-11-09 | Mon | `plagues`           | 1    |
+| 2026-11-13 | Fri | `the-deep`          | 1    |
+| 2026-11-16 | Mon | `upheaval`          | 1    |
+| 2026-11-20 | Fri | `what-we-drink`     | 1    |
+| 2026-11-23 | Mon | `before-us`         | 2    |
+| 2026-11-27 | Fri | `founding-cities`   | 2    |
+| 2026-11-30 | Mon | `great-fires`       | 2    |
+| 2026-12-04 | Fri | `ends-of-the-earth` | 2    |
+| 2026-12-07 | Mon | `famine`            | 2    |
+| 2026-12-11 | Fri | `chinese-dynasties` | 2    |
+| 2026-12-14 | Mon | `on-stage`          | 2    |
+| 2026-12-18 | Fri | `peace`             | 2    |
+| 2026-12-21 | Mon | `pharaohs`          | 2    |
+| 2026-12-25 | Fri | `pirates`           | 2    |
+| 2026-12-28 | Mon | `schools`           | 2    |
+| 2027-01-01 | Fri | `ships`             | 2    |
+| 2027-01-04 | Mon | `heists`            | 2    |
+| 2027-01-08 | Fri | `flight`            | 2    |
+| 2027-01-11 | Mon | `skyline`           | 2    |
+| 2027-01-15 | Fri | `tamed`             | 2    |
+| 2027-01-18 | Mon | `first-women`       | 2    |
+| 2027-01-22 | Fri | `rome`              | 2    |
+| 2027-01-25 | Mon | `sieges`            | 2    |
+| 2027-01-29 | Fri | `under-the-knife`   | 2    |
+| 2027-02-01 | Mon | `walls`             | 2    |
+| 2027-02-05 | Fri | `waterworks`        | 2    |
 
 ## The themes
 
@@ -957,33 +978,7 @@ or validated — until every slug in it is illustrated.
 ## Bank 2 (2026-09)
 
 Twenty-two themes authored spine-first in a second pass; see [index.md](index.md#bank-2-2026-09).
-Every one of their new events is un-illustrated, so **none of these can be validated or published
-until the art lands**. Art prompts are in [art/bank-2_prompts.csv](art/bank-2_prompts.csv).
-
-| Theme               | Cards | Awaiting art | Publishable now |
-| ------------------- | ----: | -----------: | --------------- |
-| `before-us`         |    32 |            3 | no              |
-| `founding-cities`   |    35 |           25 | no              |
-| `great-fires`       |    35 |           22 | no              |
-| `ends-of-the-earth` |    36 |           21 | no              |
-| `famine`            |    36 |           18 | no              |
-| `chinese-dynasties` |    36 |            6 | no              |
-| `on-stage`          |    36 |           24 | no              |
-| `peace`             |    35 |           10 | no              |
-| `pharaohs`          |    34 |           18 | no              |
-| `pirates`           |    34 |           33 | no              |
-| `schools`           |    35 |           20 | no              |
-| `ships`             |    35 |           24 | no              |
-| `heists`            |    33 |           30 | no              |
-| `flight`            |    36 |           22 | no              |
-| `skyline`           |    31 |           18 | no              |
-| `tamed`             |    34 |           19 | no              |
-| `first-women`       |    36 |           27 | no              |
-| `rome`              |    36 |            3 | no              |
-| `sieges`            |    36 |           17 | no              |
-| `under-the-knife`   |    36 |           12 | no              |
-| `walls`             |    34 |           24 | no              |
-| `waterworks`        |    36 |           20 | no              |
+Their dates are in the schedule at the top of this file.
 
 ### Before Us — `before-us`
 

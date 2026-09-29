@@ -71,6 +71,14 @@ to `REMINDER_WINDOW_DAYS` (14) ahead and the OS keeps the text as written, so an
 in the body is a promise about a date that may not be decided yet. Generic copy is what buys
 the scheduling freedom.
 
+## Cadence: Mondays and Fridays
+
+Since October 2026 curated themes run twice a week, on Mondays and Fridays; every other day
+stays a seeded category theme. Nothing in the code knows about weekdays: the cadence exists only
+in which dates the calendar holds, so changing it means re-publishing each unplayed theme's
+id with new `dates` (dates that have not opened can be dropped freely). The current plan is the
+schedule table at the top of [publish-inputs.md](publish-inputs.md).
+
 ## Two deck-builder escape hatches, and why they are not optional
 
 Both default to today's values, so nothing outside a curated day changes.
