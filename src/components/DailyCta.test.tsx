@@ -63,3 +63,17 @@ describe('DailyCta review button', () => {
     expect(eye()).toHaveClass('animate-hint-halo');
   });
 });
+
+describe('DailyCta play button', () => {
+  it('offers Resume while today’s daily can be picked up', () => {
+    renderCta({ played: false, inProgress: true });
+
+    expect(screen.getByRole('button', { name: /resume daily challenge/i })).toBeInTheDocument();
+  });
+
+  it('offers Play otherwise', () => {
+    renderCta({ played: false });
+
+    expect(screen.getByRole('button', { name: /play daily challenge/i })).toBeInTheDocument();
+  });
+});

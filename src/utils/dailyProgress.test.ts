@@ -1,6 +1,7 @@
 import { GameConfig, HistoricalEvent, WhenGameState } from '../types';
 import {
   buildDailyProgressSnapshot,
+  canResumeDailyProgress,
   clearDailyProgress,
   getTodayDailyProgress,
   restoreDailyProgress,
@@ -151,6 +152,22 @@ describe('snapshot storage', () => {
     saveDailyProgress(buildDailyProgressSnapshot(dealt()));
     clearDailyProgress();
     expect(localStorage.getItem(KEY)).toBeNull();
+  });
+});
+
+describe('canResumeDailyProgress (the Daily card label)', () => {
+  const snapshot = buildDailyProgressSnapshot(play(dealt(), 0));
+
+  it('is true while the save still fits today’s deck', () => {
+    expect(canResumeDailyProgress(snapshot, DECK)).toBe(true);
+  });
+
+  it('is false once an update has moved a card the player has seen', () => {
+    expect(canResumeDailyProgress(snapshot, [DECK[0], ...DECK.slice(1).reverse()])).toBe(false);
+  });
+
+  it('is false with no save', () => {
+    expect(canResumeDailyProgress(null, DECK)).toBe(false);
   });
 });
 

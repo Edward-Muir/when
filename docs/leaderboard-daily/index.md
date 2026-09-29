@@ -90,7 +90,9 @@ Challenge" while it exists. Three decisions:
   remaining deck is just the rest, so it is never stored. If they don't (a deploy changed the
   catalogue, difficulty index or theme under the game), the save is dropped and the daily is
   dealt fresh. A version stamp would have restarted games on deploys that changed nothing
-  about today's deck.
+  about today's deck. The Daily card runs the same check (`canResumeDailyProgress`, against
+  the deck it already builds for its preview card) so it never says Resume over a save a tap
+  would throw away.
 
 ## Curated themes changed two assumptions here (2026-08-18)
 

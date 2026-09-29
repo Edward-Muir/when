@@ -105,8 +105,8 @@ export function getTodayDailyProgress(
 }
 
 /**
- * Rebuild the saved game on top of the deck `startGame` just composed for the same date, or
- * return null when the deck has changed under it and the daily should be dealt fresh.
+ * The cards the saved game has already dealt, keyed by slug, or null when `composedDeck` has
+ * changed under them and the daily should be dealt fresh.
  *
  * Cards are only ever drawn off the front of the deck, so every card a player has seen (the
  * board, the hand and the misses) is exactly the first N of the composed deck. The check is
@@ -115,6 +115,35 @@ export function getTodayDailyProgress(
  * drawn passes, which is safe because nothing about those cards has been revealed. The rest of
  * the deck is then just the composed deck after N, so it never needs storing.
  */
+function matchDealtCards(
+  snapshot: DailyProgressSnapshot,
+  composedDeck: HistoricalEvent[]
+): Map<string, HistoricalEvent> | null {
+  const seen = [...snapshot.timeline, ...snapshot.hand, ...snapshot.failed.map((f) => f.name)];
+  const dealt = composedDeck.slice(0, seen.length);
+  if (dealt.length !== seen.length || dealt[0]?.name !== snapshot.seedEventName) return null;
+
+  const byName = new Map(dealt.map((event) => [event.name, event]));
+  if (byName.size !== seen.length || !seen.every((name) => byName.has(name))) return null;
+  return byName;
+}
+
+/**
+ * Whether today's save would resume on `dailyDeck` (today's `buildDailyDeck`). The Daily card
+ * asks this so it offers Resume only when a tap will actually resume: a save an update has
+ * invalidated still exists until `startGame` drops it, and would otherwise label a fresh deal.
+ */
+export function canResumeDailyProgress(
+  snapshot: DailyProgressSnapshot | null,
+  dailyDeck: HistoricalEvent[]
+): boolean {
+  return snapshot !== null && matchDealtCards(snapshot, dailyDeck) !== null;
+}
+
+/**
+ * Rebuild the saved game on top of the deck `startGame` just composed for the same date, or
+ * return null when the deck has changed under it (see `matchDealtCards`).
+ */
 export function restoreDailyProgress(
   snapshot: DailyProgressSnapshot | null,
   composedDeck: HistoricalEvent[],
@@ -122,13 +151,10 @@ export function restoreDailyProgress(
 ): WhenGameState | null {
   if (!snapshot || snapshot.date !== config.dailySeed) return null;
 
-  const seen = [...snapshot.timeline, ...snapshot.hand, ...snapshot.failed.map((f) => f.name)];
-  const dealt = composedDeck.slice(0, seen.length);
-  if (dealt.length !== seen.length || dealt[0]?.name !== snapshot.seedEventName) return null;
-
-  const byName = new Map(dealt.map((event) => [event.name, event]));
-  if (byName.size !== seen.length || !seen.every((name) => byName.has(name))) return null;
+  const byName = matchDealtCards(snapshot, composedDeck);
+  if (!byName) return null;
   const resolve = (name: string) => byName.get(name) as HistoricalEvent;
+  const seen = byName.size;
 
   const isGameOver = snapshot.phase === 'gameOver';
   return {
@@ -136,7 +162,7 @@ export function restoreDailyProgress(
     gameMode: 'daily',
     timeline: snapshot.timeline.map(resolve),
     seedEventName: snapshot.seedEventName,
-    deck: composedDeck.slice(seen.length),
+    deck: composedDeck.slice(seen),
     placementHistory: [...snapshot.placementHistory],
     failedPlacements: snapshot.failed.map((failure) => ({
       event: resolve(failure.name),
