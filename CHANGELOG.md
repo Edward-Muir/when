@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.29.0](https://github.com/Edward-Muir/when/compare/v1.28.0...v1.29.0) (2026-09-29)
+
+
+### Features
+
+* resume an unfinished daily instead of dealing it again ([#66](https://github.com/Edward-Muir/when/issues/66)) ([40f1892](https://github.com/Edward-Muir/when/commit/40f18922de7238da2005ef8ec77a5996fdf6d394))
+
 ## [1.28.0](https://github.com/Edward-Muir/when/compare/v1.27.0...v1.28.0) (2026-09-29)
 
 
