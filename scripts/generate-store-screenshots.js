@@ -9,7 +9,9 @@
  *
  * Captures play-when.com at 440x956 CSS px and DPR 3, which is exactly the 6.9" iPhone
  * screenshot size App Store Connect asks for (1320x2868). Raw captures go to
- * assets/app-store/raw/, framed ones to assets/app-store/screenshots/.
+ * assets/app-store/raw/, framed ones to assets/app-store/screenshots/. The same captures are
+ * re-framed at 1080x1920 for Google Play (assets/play-store/screenshots/), which also gets its
+ * 1024x500 feature graphic (assets/play-store/feature-graphic.png).
  *
  * The run plays one Custom game (never the Daily, and it never submits a score), placing cards
  * with the answer key from public/events/ so every placement lands. The proxy/TLS flags and the
@@ -24,6 +26,8 @@ const { chromium } = require('playwright');
 const ROOT = path.join(__dirname, '..');
 const RAW = path.join(ROOT, 'assets/app-store/raw');
 const OUT = path.join(ROOT, 'assets/app-store/screenshots');
+const PLAY_OUT = path.join(ROOT, 'assets/play-store/screenshots');
+const ICON_MASTER = path.join(ROOT, 'assets/icon/icon-master.jpg');
 const SITE = 'https://www.play-when.com';
 const W = 440;
 const H = 956;
@@ -229,41 +233,112 @@ async function capture() {
   await browser.close();
 }
 
+// App Store wants the 6.9" iPhone size; Google Play caps a screenshot at a 2:1 aspect ratio
+// (2868/1320 is 2.17, so it rejects the App Store frames) and 1080x1920 is its common size.
+const LAYOUTS = [
+  {
+    name: 'app-store',
+    out: OUT,
+    w: 1320,
+    h: 2868,
+    headTop: 150,
+    side: 90,
+    h1: 100,
+    sub: 44,
+    subGap: 34,
+    phoneTop: 640,
+    phoneW: 1040,
+    radius: 64,
+    rim: 14,
+  },
+  {
+    name: 'play-store',
+    out: PLAY_OUT,
+    w: 1080,
+    h: 1920,
+    headTop: 90,
+    side: 70,
+    h1: 66,
+    sub: 30,
+    subGap: 20,
+    phoneTop: 380,
+    phoneW: 660,
+    radius: 42,
+    rim: 10,
+  },
+];
+
+const FONTS =
+  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@500&display=swap">';
+const BACKGROUND = 'radial-gradient(1400px 900px at 50% 0%,#12304d 0%,#071a2e 45%,#030c1d 100%)';
+
+async function render(page, html, file) {
+  await page.setContent(html, { waitUntil: 'load' });
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForTimeout(300);
+  await page.screenshot({ path: file, timeout: 30000 });
+}
+
 async function compose() {
-  fs.mkdirSync(OUT, { recursive: true });
   const browser = await launch();
-  const page = await browser.newPage({
-    viewport: { width: 1320, height: 2868 },
-    deviceScaleFactor: 1,
-    ignoreHTTPSErrors: true,
-  });
-  for (const s of SHOTS) {
-    const raw = path.join(RAW, `${s.file}.png`);
-    if (!fs.existsSync(raw)) throw new Error(`missing ${raw}; run without --compose first`);
-    const src = `data:image/png;base64,${fs.readFileSync(raw).toString('base64')}`;
-    await page.setContent(
-      `<!doctype html><html><head>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@500&display=swap">
+  for (const L of LAYOUTS) {
+    fs.mkdirSync(L.out, { recursive: true });
+    const page = await browser.newPage({
+      viewport: { width: L.w, height: L.h },
+      deviceScaleFactor: 1,
+      ignoreHTTPSErrors: true,
+    });
+    for (const s of SHOTS) {
+      const raw = path.join(RAW, `${s.file}.png`);
+      if (!fs.existsSync(raw)) throw new Error(`missing ${raw}; run without --compose first`);
+      const src = `data:image/png;base64,${fs.readFileSync(raw).toString('base64')}`;
+      await render(
+        page,
+        `<!doctype html><html><head>${FONTS}
 <style>
-  html,body{margin:0;width:1320px;height:2868px;overflow:hidden}
-  body{background:radial-gradient(1400px 900px at 50% 0%,#12304d 0%,#071a2e 45%,#030c1d 100%);font-family:Inter,sans-serif}
-  .head{position:absolute;top:150px;left:90px;right:90px;text-align:center}
-  h1{margin:0;font:700 100px/1.08 'Playfair Display',Georgia,serif;color:#f3ead6;letter-spacing:-.01em;text-wrap:balance}
+  html,body{margin:0;width:${L.w}px;height:${L.h}px;overflow:hidden}
+  body{background:${BACKGROUND};font-family:Inter,sans-serif}
+  .head{position:absolute;top:${L.headTop}px;left:${L.side}px;right:${L.side}px;text-align:center}
+  h1{margin:0;font:700 ${L.h1}px/1.08 'Playfair Display',Georgia,serif;color:#f3ead6;letter-spacing:-.01em;text-wrap:balance}
   h1 em{font-style:italic;color:#e9b95a}
-  p{margin:34px 0 0;font:500 44px/1.3 Inter,sans-serif;color:#9fb0c3}
-  .phone{position:absolute;top:640px;left:50%;transform:translateX(-50%);width:1040px;border-radius:64px;overflow:hidden;
-    box-shadow:0 0 0 14px #0b1624,0 0 0 16px #2a3b52,0 60px 140px rgba(0,0,0,.6)}
+  p{margin:${L.subGap}px 0 0;font:500 ${L.sub}px/1.3 Inter,sans-serif;color:#9fb0c3}
+  .phone{position:absolute;top:${L.phoneTop}px;left:50%;transform:translateX(-50%);width:${L.phoneW}px;border-radius:${L.radius}px;overflow:hidden;
+    box-shadow:0 0 0 ${L.rim}px #0b1624,0 0 0 ${L.rim + 2}px #2a3b52,0 40px 100px rgba(0,0,0,.6)}
   .phone img{display:block;width:100%}
 </style></head><body>
 <div class="head"><h1>${s.title}</h1><p>${s.sub}</p></div>
 <div class="phone"><img src="${src}"></div></body></html>`,
-      { waitUntil: 'load' }
-    );
-    await page.evaluate(() => document.fonts.ready);
-    await page.waitForTimeout(300);
-    await page.screenshot({ path: path.join(OUT, `${s.file}.png`), timeout: 30000 });
-    console.log(`  ✓ screenshots/${s.file}.png (1320x2868)`);
+        path.join(L.out, `${s.file}.png`)
+      );
+      console.log(`  ✓ ${L.name}/${s.file}.png (${L.w}x${L.h})`);
+    }
+    await page.close();
   }
+
+  // Google Play's required 1024x500 feature graphic: the wordmark beside the icon painting.
+  const page = await browser.newPage({
+    viewport: { width: 1024, height: 500 },
+    deviceScaleFactor: 1,
+    ignoreHTTPSErrors: true,
+  });
+  const art = `data:image/jpeg;base64,${fs.readFileSync(ICON_MASTER).toString('base64')}`;
+  await render(
+    page,
+    `<!doctype html><html><head>${FONTS}
+<style>
+  html,body{margin:0;width:1024px;height:500px;overflow:hidden;background:#030c1d}
+  .art{position:absolute;right:-10px;top:-12px;width:524px;height:524px;
+    -webkit-mask-image:radial-gradient(circle at 55% 50%,#000 52%,transparent 72%)}
+  .text{position:absolute;left:84px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center}
+  h1{margin:0;font:900 132px/1 'Playfair Display',Georgia,serif;color:#f3ead6;letter-spacing:-.02em}
+  h1 span{color:#e9b95a}
+  p{margin:18px 0 0;font:500 30px/1.3 Inter,sans-serif;color:#9fb0c3}
+</style></head><body>
+<img class="art" src="${art}">
+<div class="text"><h1>When<span>?</span></h1><p>Put history in order</p></div></body></html>`,
+    path.join(PLAY_OUT, '..', 'feature-graphic.png')
+  );
+  console.log('  ✓ play-store/feature-graphic.png (1024x500)');
   await browser.close();
 }
 

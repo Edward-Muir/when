@@ -105,6 +105,11 @@ The prompts, tuned so one object reads at 60 px, are in
   before capture: a public listing must not show real players' names. Output:
   `assets/app-store/screenshots/`; `--compose` re-frames the saved raw captures without
   touching the site.
+- **Google Play assets** come from the same two scripts: `generate-icons.js` also writes the
+  512px Play icon, and `generate-store-screenshots.js` re-frames the same captures at 1080x1920
+  into `assets/play-store/screenshots/` plus the 1024x500 `feature-graphic.png`. Play rejects the
+  App Store frames: a Play screenshot may be at most twice as tall as it is wide (2868/1320 is
+  2.17). There is still no `android/` project; `cap:open:android` has nothing to open.
 
 ## Things that needed no work
 

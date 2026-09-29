@@ -15,7 +15,8 @@
  *   public/favicon.png (64), public/favicon.ico (16/32/48/64), public/logo180.png,
  *   public/logo192.png, public/logo512.png,
  *   ios/App/App/Assets.xcassets/AppIcon.appiconset/logo1024.png,
- *   ios/App/App/Assets.xcassets/Splash.imageset/splash-2732.png
+ *   ios/App/App/Assets.xcassets/Splash.imageset/splash-2732.png,
+ *   assets/play-store/icon-512.png
  *
  * The icon and splash only reach iPhones in a new App Store build; the web copies ship on deploy.
  *
@@ -45,6 +46,8 @@ const PNG_ICONS = [
   { file: path.join(PUBLIC_DIR, 'logo192.png'), size: 192 },
   { file: path.join(PUBLIC_DIR, 'logo512.png'), size: 512 },
   { file: path.join(ASSETS, 'AppIcon.appiconset/logo1024.png'), size: 1024 },
+  // Google Play's store-listing icon (Play applies its own rounded mask).
+  { file: path.join(ROOT, 'assets/play-store/icon-512.png'), size: 512 },
 ];
 const ICO_SIZES = [16, 32, 48, 64];
 
