@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.28.0](https://github.com/Edward-Muir/when/compare/v1.27.0...v1.28.0) (2026-09-29)
+
+
+### Features
+
+* 414 curated theme events with images and colours ([#65](https://github.com/Edward-Muir/when/issues/65)) ([5aaae0d](https://github.com/Edward-Muir/when/commit/5aaae0d00ea1f67dc4f225432193dd6ade7224d8))
+
 ## [1.27.0](https://github.com/Edward-Muir/when/compare/v1.26.0...v1.27.0) (2026-09-25)
 
 
