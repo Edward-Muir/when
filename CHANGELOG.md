@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.27.0](https://github.com/Edward-Muir/when/compare/v1.26.0...v1.27.0) (2026-09-25)
+
+
+### Features
+
+* painted hourglass app icon, iOS launch screen and App Store screenshots ([#64](https://github.com/Edward-Muir/when/issues/64)) ([b06f37e](https://github.com/Edward-Muir/when/commit/b06f37e8b1424303b3dd4055a9a46f03683d0474))
+
 ## [1.26.0](https://github.com/Edward-Muir/when/compare/v1.25.0...v1.26.0) (2026-09-22)
 
 
