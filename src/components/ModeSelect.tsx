@@ -26,8 +26,9 @@ import DailyCta from './DailyCta';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { CuratedTheme, loadCuratedThemes } from '../utils/curatedThemes';
 import { buildThemeReplayConfig } from '../utils/themeReplay';
-import { buildDailyConfig, getDailyPreviewEvent } from '../utils/dailyConfig';
+import { buildDailyConfig, buildDailyDeck } from '../utils/dailyConfig';
 import { getTodayDailyBoard, restoreDailyBoard } from '../utils/dailyBoard';
+import { canResumeDailyProgress, getTodayDailyProgress } from '../utils/dailyProgress';
 import {
   getTodayResult,
   DailyResult,
@@ -317,7 +318,10 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   // Daily theme + preview - keyed on `today` so they recompute when the day rolls over.
   const dailyTheme = useMemo(() => getDailyTheme(today), [today]);
   const dailyThemeDisplayName = getThemeDisplayName(dailyTheme);
-  const previewEvent = useMemo(() => getDailyPreviewEvent(allEvents, today), [allEvents, today]);
+  // Today's whole deck, not just the preview's first card: the Resume check below needs it,
+  // and building it once here costs nothing extra.
+  const dailyDeck = useMemo(() => buildDailyDeck(allEvents, today), [allEvents, today]);
+  const previewEvent = dailyDeck[0] ?? null;
 
   // Today's finished board, restored here rather than on the tap so the eye never renders as a
   // button that does nothing: `restoreDailyBoard` returns null when there is no board for today
@@ -400,6 +404,7 @@ const ModeSelect: React.FC<ModeSelectProps> = ({
   const dailyCta = (
     <DailyCta
       played={!!todayResult}
+      inProgress={canResumeDailyProgress(getTodayDailyProgress(today), dailyDeck)}
       unclaimed={canSubmitScore}
       onShare={handleShareDaily}
       onPlay={handleDailyStart}

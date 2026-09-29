@@ -5,6 +5,7 @@ import { buildDailyBoardSnapshot, saveDailyBoard } from '../utils/dailyBoard';
 import { generateEmojiGrid } from '../utils/share';
 import { getDailyTheme, getThemeDisplayName } from '../utils/dailyTheme';
 import { getThemeOutcome } from '../utils/themeOutcome';
+import { useDailyProgress } from './useDailyProgress';
 
 /**
  * Persist a finished daily: the result the leaderboard and share want, and the board itself so
@@ -56,4 +57,9 @@ export function useSaveDailyResult(state: WhenGameState) {
     state.placementHistory,
     state.bestStreak,
   ]);
+
+  // Declared after the effect above so, at game over, the result is recorded before the
+  // in-progress save is dropped. Called from here rather than from useWhenGame, which sits on
+  // its max-lines-per-function budget.
+  useDailyProgress(state);
 }

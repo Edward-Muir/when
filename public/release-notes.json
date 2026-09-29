@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "A daily challenge left part-way now resumes where it stopped instead of dealing again."
+  ],
   "releases": [
     {
       "version": "1.28.0",

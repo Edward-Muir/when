@@ -63,6 +63,37 @@ no-op transitions: `appResume` (dispatched by `App.tsx` via `@capacitor/app`),
 foregrounded across two nights stopped rolling over — a live bug on iOS, where the WebView
 keeps state alive for days.
 
+## An unfinished daily resumes; it is never re-dealt (2026-09-29)
+
+The daily used to live only in React memory and was marked played only at game over. The deck
+is seeded from the date, so quitting part-way (closing the app, reloading, the in-game Home
+button) and pressing Play again dealt the **identical deck** to a player who now knew where the
+first cards went. The one-submission-per-device key does not stop that; it only stops a second
+submission.
+
+`src/utils/dailyProgress.ts` keeps the game in `when-daily-progress` (one date-stamped slot,
+slugs only, the `dailyBoard.ts` shape), and the Daily card's button reads "Resume Daily
+Challenge" while it exists. Three decisions:
+
+- **A move is saved when the card is dropped, not when its animation settles.** A miss shows
+  the card's true slot about a second before the state settles, so saving on settle let a
+  player see the answer, close the app and take the move back. `placeCard` saves
+  `settleDailyPlacement`'s up-front copy of the settled state; `useDailyProgress` covers the
+  deal and hand cycling. `settleDailyPlacement` mirrors both timer paths in `placeCard`, and a
+  change to one belongs in the other. If the final card was dropped, the save says `gameOver`
+  and resuming lands on a finished game, so the normal game-over writes run then.
+- **Resume lives in `startGame`**, so every door into the daily (the Daily card, `/daily`, a
+  reminder tap, in-game Restart) resumes without its own wiring.
+- **A changed deck is detected by the cards already seen, not by an app or catalogue
+  version.** Draws only ever come off the front, so everything the player has seen is exactly
+  the first N cards of the rebuilt deck. If those N still match, the game resumes, and the
+  remaining deck is just the rest, so it is never stored. If they don't (a deploy changed the
+  catalogue, difficulty index or theme under the game), the save is dropped and the daily is
+  dealt fresh. A version stamp would have restarted games on deploys that changed nothing
+  about today's deck. The Daily card runs the same check (`canResumeDailyProgress`, against
+  the deck it already builds for its preview card) so it never says Resume over a save a tap
+  would throw away.
+
 ## Curated themes changed two assumptions here (2026-08-18)
 
 **Short emoji grids are now routine.** `submit.ts` accepts `redCount <= DAILY_HAND_SIZE` rather
