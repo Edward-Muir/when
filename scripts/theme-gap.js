@@ -40,6 +40,7 @@ const {
 
 /** Mirrors MIN_THEME_EVENTS in lib/themes/schema.ts. */
 const MIN_THEME_EVENTS = 16;
+/** Advisory: a narrow-range theme is allowed, so this is reported but never gates. */
 const MIN_OCCUPIED_BINS = 6;
 const MIN_BAND_ZERO = 5;
 
@@ -132,7 +133,9 @@ function main() {
     : `${events.length} playable`;
   console.log(`Candidates   ${matched.length} (of ${poolLabel})`);
   if (pendingCount) {
-    console.log(`             ${pendingCount} of them still need art before the daily can deal them`);
+    console.log(
+      `             ${pendingCount} of them still need art before the daily can deal them`
+    );
   }
   console.log(`Bands        easiest ${bandCounts.join(' / ')} hardest`);
   console.log(`Spread       ${spread.occupied}/${spread.total} bins  [${spread.bins.join(' ')}]`);
@@ -149,13 +152,18 @@ function main() {
         matched.length >= TARGET_THEME_EVENTS && matched.length <= MAX_THEME_EVENTS,
         `want ${TARGET_THEME_EVENTS}-${MAX_THEME_EVENTS}`,
       ],
-      [`bins ${spread.occupied}/${spread.total}`, spread.occupied >= MIN_OCCUPIED_BINS, `want ${MIN_OCCUPIED_BINS}+`],
+      [
+        `bins ${spread.occupied}/${spread.total}`,
+        null,
+        `advisory, ${MIN_OCCUPIED_BINS}+ is spread`,
+      ],
       [`band 0 ${bandCounts[0]}`, bandCounts[0] >= MIN_BAND_ZERO, `want ${MIN_BAND_ZERO}+`],
       [`same-year pairs ${sameYear.length}`, sameYear.length === 0, 'want 0'],
     ];
     console.log('\nGates:');
     for (const [label, ok, want] of gates) {
-      console.log(`  ${ok ? 'PASS' : 'FAIL'}  ${label.padEnd(22)} (${want})`);
+      const verdict = ok === null ? 'INFO' : ok ? 'PASS' : 'FAIL';
+      console.log(`  ${verdict}  ${label.padEnd(22)} (${want})`);
     }
 
     if (sameYear.length) {
@@ -165,7 +173,9 @@ function main() {
       }
     }
     if (crowded.length) {
-      console.log(`\nWithin ${CROWDING_YEARS} years — placement is mostly luck, consider dropping one:`);
+      console.log(
+        `\nWithin ${CROWDING_YEARS} years — placement is mostly luck, consider dropping one:`
+      );
       for (const [a, b, gap] of crowded) {
         console.log(
           `  ${String(gap).padStart(2)}y  ${formatYear(a.year)} ${a.name}  ->  ${formatYear(b.year)} ${b.name}`
@@ -177,7 +187,9 @@ function main() {
   console.log('\nTo ship this theme:');
   const shortfall = MIN_THEME_EVENTS - matched.length;
   if (shortfall > 0) {
-    console.log(`  • author ${shortfall} more event(s) — the minimum theme size is ${MIN_THEME_EVENTS}`);
+    console.log(
+      `  • author ${shortfall} more event(s) — the minimum theme size is ${MIN_THEME_EVENTS}`
+    );
   } else {
     console.log(`  • hand-pick ${MIN_THEME_EVENTS}+ of these that genuinely belong`);
   }
@@ -186,7 +198,9 @@ function main() {
     .map((count, bin) => (count === 0 ? binLabel(events, index, bin) : null))
     .filter(Boolean);
   if (emptyBins.length) {
-    console.log(`  • cover ${emptyBins.length} empty stretch(es) of the timeline:`);
+    console.log(
+      `  • optional: ${emptyBins.length} empty stretch(es) of the timeline (spread is advisory):`
+    );
     for (const label of emptyBins) console.log(`      ${label}`);
   } else if (spread.occupied < MIN_OCCUPIED_BINS) {
     console.log(`  • spread it wider — ${spread.occupied}/${spread.total} bins is clustered`);
