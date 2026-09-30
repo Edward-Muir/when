@@ -59,9 +59,9 @@ the tagger must name the side, so a Siberian event never lands in Europe. Antarc
 nothing and always needs an actor. Eleven regions including Global fit the 12-bit challenge-code
 word.
 
-**Countries are tagged now, though the first filter shows only regions.** The maintainer chose
-region chips for the first release. Tagging at country level anyway means a later country picker
-("German history") needs no second sweep of 5,800 cards.
+**Countries were tagged from the start, though the first filter showed only regions.** Tagging at
+country level meant the later country picker ("German history") needed no second sweep of 5,800
+cards. It shipped on 2026-09-30; see [The country picker](#the-country-picker-2026-09-30).
 
 **Inline, not a sidecar.** Deck building needs every event's tags at load. That is unlike the
 detail prose, which is needed one card at a time. Measured with worst-case random tags, it adds
@@ -114,6 +114,36 @@ Built 2026-09-30 as designed here:
   shared) decodes as all regions. See [../sharing-challenges/](../sharing-challenges/index.md).
 - **Unaffected.** The daily and curated themes. Region tags do make a "Chinese history week" theme
   trivial to assemble later.
+
+## The country picker (2026-09-30)
+
+189 tagged countries are too many for one chip group. They sit behind a collapsed **Refine by
+country** row under the region chips, listing a sub-group for each selected region.
+
+- **A pick narrows its own region.** A region with any of its countries picked keeps only events
+  tagged with a picked country. A selected region with no pick stays whole, so "Europe + Middle
+  East & North Africa, Germany picked" is all of Germany plus all of the Middle East. Events tagged
+  only with the region ("Europe") drop out once it is refined. That is intended: they are not
+  German. The logic is `filterByRegion(events, regions, countries)`, still inside `filterPool`.
+- **Inclusion, not exclusion.** Country chips start unselected, and the sub-group reads `All`
+  until something is picked. Exclusion ("Europe except the UK") was not wanted, and it would cost
+  the share code more words. There is no double-tap on country chips: `handlePillTap` replaces a
+  whole selection array and would clobber the other sub-groups.
+- **A country is matched on its own tag, whichever side it sits.** Russia, Turkey and the Caucasus
+  states are listed under every region they span and toggle in sync. "Russia" picked under Europe
+  also deals Siberian Russia events. Splitting a country by side would need a region-qualified
+  pick and a wider share word, for 15 Siberian cards.
+- **Deselecting a region drops its countries** (`pruneCountries`, via `useRegionSelection`), so a
+  hidden pick never narrows the deck. A transcontinental country survives while either side is
+  selected. Stored settings are pruned the same way on restore.
+- **Offered countries come from the pool.** `countryOptionsByRegion` lists only countries present,
+  most-tagged first, and shows 8 per region before "+N more". The Custom tab offers the whole
+  catalogue; the Timeline popup offers only countries in the player's collection. Global and
+  Antarctica have no sub-group.
+- **State.** `selectedCountries` on `GameConfig` and `CustomSettings`, missing meaning none.
+  The Timeline tab keeps its own, unpersisted, like its regions.
+- **Share codes** carry picks in words 8 onward, one per country, keyed by ISO code. See
+  [../sharing-challenges/](../sharing-challenges/index.md#words-8-onward-countries-2026-09-30).
 
 ## The sweep (2026-09-30)
 

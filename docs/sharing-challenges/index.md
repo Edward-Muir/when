@@ -322,6 +322,26 @@ words**. The 7th word (bits 72-83) is the region mask in `ALL_REGIONS` order
   appending it, which the taxonomy test's "Global is last" rule would force you to rethink
   first. `challengeCode.test.ts` pins the order so a reorder fails loudly.
 
+### Words 8 onward: countries (2026-09-30)
+
+The country picker (see [../regions/](../regions/index.md#the-country-picker-2026-09-30)) adds
+**one word per picked country** after the regions word.
+
+- **A country word is its ISO 3166-1 alpha-2 code**, packed as `(first letter) * 26 + (second
+letter)` with A = 0, so 0-675. ISO codes are stable, so there is no pinned country order to
+  guard, unlike the regions word. The taxonomy test holds every `iso` to two unique capitals.
+- **The regions word is always written when a country is picked**, even with all 11 regions
+  selected, because country words must start at word 8.
+- **Words are sorted by value**, so one selection always makes one token.
+- **Codes without country picks are unchanged** (6 or 7 words, byte-identical).
+- **The decoder packs only the first 7 words.** Packing the country words too would push their
+  bits into the regions mask and fail its range check.
+- **Rejected:** a value past 675 or not in the taxonomy, a repeated country, or a country in none
+  of the decoded regions.
+- **Builds from before the picker reject these codes**, since they accept only 6 or 7 words. The
+  maintainer accepted that over dropping picks from links, which would break "others play the
+  exact same game".
+
 ### Decisions still in force
 
 - **`WORDLIST` order is immutable.** Reordering or removing a word changes what every

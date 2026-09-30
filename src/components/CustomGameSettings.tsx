@@ -19,6 +19,9 @@ interface CustomGameSettingsProps {
   setSelectedEras: (eras: Era[]) => void;
   selectedRegions: string[];
   setSelectedRegions: (regions: string[]) => void;
+  selectedCountries: string[];
+  setSelectedCountries: (countries: string[]) => void;
+  countryOptions: Map<string, string[]>;
   // Player / hand size — controls hidden, but values + setters feed the deck/share code
   playerCount: number;
   onPlayerCountChange: (count: number) => void;
@@ -48,6 +51,9 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
   setSelectedEras,
   selectedRegions,
   setSelectedRegions,
+  selectedCountries,
+  setSelectedCountries,
+  countryOptions,
   playerCount,
   onPlayerCountChange,
   suddenDeathHandSize,
@@ -71,6 +77,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
         categories: selectedCategories,
         eras: selectedEras,
         regions: selectedRegions,
+        countries: selectedCountries,
         seed: challengeSeed,
       }),
     [
@@ -80,6 +87,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
       selectedCategories,
       selectedEras,
       selectedRegions,
+      selectedCountries,
       challengeSeed,
     ]
   );
@@ -110,6 +118,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
     setSelectedCategories(d.categories);
     setSelectedEras(d.eras);
     setSelectedRegions(d.regions);
+    setSelectedCountries(d.countries);
     setChallengeSeed(d.seed);
   };
 
@@ -137,6 +146,9 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           onErasChange={setSelectedEras}
           selectedRegions={selectedRegions}
           onRegionsChange={setSelectedRegions}
+          selectedCountries={selectedCountries}
+          onCountriesChange={setSelectedCountries}
+          countryOptions={countryOptions}
         />
 
         {/* Share this game — full game-state URL + shuffle + share */}

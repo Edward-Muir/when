@@ -232,6 +232,11 @@ export interface GameConfig {
    * which is what the daily, a theme replay and a 6-word challenge code all get.
    */
   selectedRegions?: string[];
+  /**
+   * Countries narrowing the regions they belong to (`filterByRegion`). Missing or empty means
+   * none, so every selected region is dealt whole.
+   */
+  selectedCountries?: string[];
   dailySeed?: string;
 
   /**

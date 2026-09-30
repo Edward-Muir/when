@@ -99,4 +99,11 @@ describe('custom settings storage', () => {
     saveCustomSettings({ ...saved, selectedRegions: ['East Asia'] });
     expect(getCustomSettings()?.selectedRegions).toEqual(['East Asia']);
   });
+
+  it('round-trips a country selection, absent from older records', () => {
+    localStorage.setItem('when-custom-settings', JSON.stringify(saved));
+    expect(getCustomSettings()?.selectedCountries).toBeUndefined();
+    saveCustomSettings({ ...saved, selectedRegions: ['Europe'], selectedCountries: ['Germany'] });
+    expect(getCustomSettings()?.selectedCountries).toEqual(['Germany']);
+  });
 });

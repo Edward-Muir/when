@@ -47,6 +47,59 @@ describe('filterByRegion', () => {
   });
 });
 
+describe('filterByRegion with countries', () => {
+  const countryPool = [
+    card('berlin', ['Germany']),
+    card('bonn-paris', ['Germany', 'France']),
+    card('paris', ['France']),
+    card('alps', ['Europe']),
+    card('cairo', ['Egypt']),
+    card('moscow', ['Russia', 'Europe']),
+    card('siberia', ['Russia', 'North & Central Asia']),
+    card('untagged'),
+  ];
+
+  it('changes nothing when no country is picked', () => {
+    expect(filterByRegion(countryPool, ['Europe'], [])).toEqual(
+      filterByRegion(countryPool, ['Europe'])
+    );
+  });
+
+  it('narrows a region to its picked countries, dropping cards tagged only with the region', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], ['Germany']))).toEqual([
+      'berlin',
+      'bonn-paris',
+    ]);
+  });
+
+  it('keeps a selected region with no pick whole', () => {
+    expect(
+      names(filterByRegion(countryPool, ['Europe', 'Middle East & North Africa'], ['France']))
+    ).toEqual(['bonn-paris', 'paris', 'cairo']);
+  });
+
+  it('narrows even when every region is selected', () => {
+    const narrowed = names(filterByRegion(countryPool, [...ALL_REGIONS], ['Egypt']));
+    expect(narrowed).toEqual([
+      'berlin',
+      'bonn-paris',
+      'paris',
+      'alps',
+      'cairo',
+      'moscow',
+      'siberia',
+    ]);
+    expect(narrowed).not.toContain('untagged');
+  });
+
+  it('matches a transcontinental country on either side', () => {
+    expect(names(filterByRegion(countryPool, ['Europe'], ['Russia']))).toEqual([
+      'moscow',
+      'siberia',
+    ]);
+  });
+});
+
 describe('filterPool', () => {
   const filters = {
     difficulties: ['medium' as const],

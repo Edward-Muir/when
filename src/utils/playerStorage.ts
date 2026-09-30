@@ -444,6 +444,8 @@ export interface CustomSettings {
    * existed lack it, and they must restore (as every region) rather than reset.
    */
   selectedRegions?: string[];
+  /** Optional for the same reason; stale names are pruned on restore, not here. */
+  selectedCountries?: string[];
   playerCount: number;
   cardsPerHand: number;
   suddenDeathHandSize: number;

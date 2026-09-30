@@ -1,7 +1,7 @@
 import { Difficulty, Category, Era, GameConfig, ALL_DIFFICULTIES, ALL_CATEGORIES } from '../types';
 import { ALL_ERAS } from './eras';
 import { WORDLIST, wordMap } from './wordlists';
-import { ALL_REGIONS } from './regions';
+import { ALL_REGIONS, countryByIso, countryIso, countryMacros } from './regions';
 
 /**
  * Shareable-game encoding for custom games.
@@ -24,12 +24,20 @@ import { ALL_REGIONS } from './regions';
  *
  * Optional 7th word (bits 72-83), added with the region filter once all 72 bits were taken:
  *   offset 72, width 12:  Regions bitmask (`ALL_REGIONS` order, 11 used)
- * It is written only when the regions are narrowed, so an all-regions game still encodes to
- * the same 6 words as before, and every 6-word code ever shared decodes as all regions.
+ * It is written only when the regions are narrowed or a country is picked, so an all-regions
+ * game still encodes to the same 6 words as before, and every 6-word code ever shared decodes
+ * as all regions.
+ *
+ * Optional words 8 onward, added with the country picker: one word per picked country, holding
+ * its ISO 3166-1 alpha-2 code as `(first letter) * 26 + (second letter)`, A = 0 (0-675). ISO
+ * codes are stable, so no pinned country order is needed. The words are sorted, so a selection
+ * always encodes to one token. Builds from before the country picker reject these codes.
  */
 
 const WORD_COUNT = 6;
 const WORD_COUNT_WITH_REGIONS = 7;
+const ISO_LETTERS = 26;
+const A_CODE = 'A'.charCodeAt(0);
 
 // BigInt is used for the 72-bit packed value (exceeds JS's 53-bit safe-integer range).
 // Literals (`12n`) require an ES2020 target, so the sanctioned `BigInt()` form is used.
@@ -64,6 +72,8 @@ export interface ChallengeConfig {
   eras: Era[];
   /** Macro-regions in `ALL_REGIONS`; every one of them when the code has no 7th word. */
   regions: string[];
+  /** Countries narrowing those regions (`filterByRegion`); empty when the code has no 8th word. */
+  countries: string[];
   seed: number; // 0 - 2,097,151
 }
 
@@ -74,6 +84,22 @@ function arrayToBitmask<T>(selected: T[], all: readonly T[]): bigint {
     if (idx >= 0) mask |= ONE << BigInt(idx);
   }
   return mask;
+}
+
+/** A country's word value, or undefined for a name with no two-letter ISO code. */
+function countryWord(name: string): number | undefined {
+  const iso = countryIso(name);
+  if (!iso || !/^[A-Z]{2}$/.test(iso)) return undefined;
+  return (iso.charCodeAt(0) - A_CODE) * ISO_LETTERS + (iso.charCodeAt(1) - A_CODE);
+}
+
+function wordCountry(value: number): string | undefined {
+  if (value >= ISO_LETTERS * ISO_LETTERS) return undefined;
+  const iso = String.fromCharCode(
+    A_CODE + Math.floor(value / ISO_LETTERS),
+    A_CODE + (value % ISO_LETTERS)
+  );
+  return countryByIso(iso);
 }
 
 function bitmaskToArray<T>(mask: bigint, all: readonly T[]): T[] {
@@ -100,10 +126,14 @@ export function encodeChallengeCode(config: ChallengeConfig): string {
   packed |= catBits << OFFSET_CATEGORIES;
   packed |= seedBits << OFFSET_SEED;
 
+  const countryWords = [
+    ...new Set(config.countries.map(countryWord).filter((w): w is number => w !== undefined)),
+  ].sort((a, b) => a - b);
   const allRegions = ALL_REGIONS.every((r) => config.regions.includes(r));
-  if (!allRegions) packed |= arrayToBitmask(config.regions, ALL_REGIONS) << OFFSET_REGIONS;
+  const writeRegions = !allRegions || countryWords.length > 0;
+  if (writeRegions) packed |= arrayToBitmask(config.regions, ALL_REGIONS) << OFFSET_REGIONS;
 
-  const wordCount = allRegions ? WORD_COUNT : WORD_COUNT_WITH_REGIONS;
+  const wordCount = writeRegions ? WORD_COUNT_WITH_REGIONS : WORD_COUNT;
   const words: string[] = [];
   let shift = ZERO;
   for (let i = 0; i < wordCount; i++) {
@@ -111,6 +141,7 @@ export function encodeChallengeCode(config: ChallengeConfig): string {
     words.push(WORDLIST.at(idx) ?? '');
     shift += WORD_BITS;
   }
+  for (const value of countryWords) words.push(WORDLIST.at(value) ?? '');
   return words.join('-');
 }
 
@@ -127,22 +158,52 @@ function decodeRegions(packed: bigint, wordCount: number): string[] | null {
 }
 
 /**
- * Decode a token (or a full share URL containing one) into a config, or null if invalid.
+ * The countries in words 8 onward. A value that is no known ISO code, a repeat, or a country in
+ * none of the decoded regions is not a code this app wrote (null).
  */
-export function decodeChallengeCode(code: string): ChallengeConfig | null {
-  // Accept a pasted full URL (".../challenge/<token>") as well as a bare token.
+function decodeCountries(values: number[], regions: string[]): string[] | null {
+  const countries: string[] = [];
+  for (const value of values) {
+    const country = wordCountry(value);
+    if (!country || countries.includes(country)) return null;
+    if (!countryMacros(country).some((r) => regions.includes(r))) return null;
+    countries.push(country);
+  }
+  return countries;
+}
+
+/**
+ * A token's WORDLIST indices, or null when it is too short or has a word not in the list.
+ * Accepts a pasted full URL (".../challenge/<token>") as well as a bare token.
+ */
+function tokenValues(code: string): number[] | null {
   const afterChallenge = code.includes('/challenge/') ? code.split('/challenge/')[1] : code;
   const token = afterChallenge.split(/[/?#]/)[0].trim().toLowerCase();
 
   const parts = token.split('-');
-  if (parts.length !== WORD_COUNT && parts.length !== WORD_COUNT_WITH_REGIONS) return null;
+  if (parts.length < WORD_COUNT) return null;
 
-  let packed = ZERO;
-  let shift = ZERO;
+  const values: number[] = [];
   for (const part of parts) {
     const idx = wordMap.get(part);
     if (idx === undefined) return null;
-    packed |= BigInt(idx) << shift;
+    values.push(idx);
+  }
+  return values;
+}
+
+/**
+ * Decode a token (or a full share URL containing one) into a config, or null if invalid.
+ */
+export function decodeChallengeCode(code: string): ChallengeConfig | null {
+  const values = tokenValues(code);
+  if (!values) return null;
+
+  // Only the first 7 words are packed: country words must not reach the regions mask.
+  let packed = ZERO;
+  let shift = ZERO;
+  for (const value of values.slice(0, WORD_COUNT_WITH_REGIONS)) {
+    packed |= BigInt(value) << shift;
     shift += WORD_BITS;
   }
 
@@ -160,7 +221,8 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
     ALL_CATEGORIES
   );
   const seed = Number((packed >> OFFSET_SEED) & MASK_SEED);
-  const regions = decodeRegions(packed, parts.length);
+  const regions = decodeRegions(packed, Math.min(values.length, WORD_COUNT_WITH_REGIONS));
+  const countries = regions && decodeCountries(values.slice(WORD_COUNT_WITH_REGIONS), regions);
 
   // Validate
   if (handSize < 1 || handSize > 8) return null;
@@ -168,9 +230,9 @@ export function decodeChallengeCode(code: string): ChallengeConfig | null {
   if (difficulties.length === 0) return null;
   if (categories.length === 0) return null;
   if (eras.length === 0) return null;
-  if (!regions) return null;
+  if (!regions || !countries) return null;
 
-  return { handSize, playerCount, difficulties, categories, eras, regions, seed };
+  return { handSize, playerCount, difficulties, categories, eras, regions, countries, seed };
 }
 
 /**
@@ -190,6 +252,7 @@ export function challengeConfigToGameConfig(config: ChallengeConfig): GameConfig
     selectedCategories: config.categories,
     selectedEras: config.eras,
     selectedRegions: config.regions,
+    selectedCountries: config.countries,
     playerCount: config.playerCount,
     playerNames: Array.from({ length: config.playerCount }, (_, i) => `Player ${i + 1}`),
     cardsPerHand: 5,

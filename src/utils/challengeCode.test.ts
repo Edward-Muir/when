@@ -24,6 +24,7 @@ const baseConfig: ChallengeConfig = {
   categories: ['empires', 'warfare', 'art'],
   eras: [...ALL_ERAS],
   regions: [...ALL_REGIONS],
+  countries: [],
   seed: 12345,
 };
 
@@ -148,9 +149,53 @@ describe('challengeCode encode/decode', () => {
       expect(decodeChallengeCode(`${six}-${WORDLIST[1 << ALL_REGIONS.length]}`)).toBeNull();
       expect(decodeChallengeCode(`${six}-${WORDLIST[1]}`)?.regions).toEqual(['Europe']);
     });
+  });
 
-    it('rejects an 8-word token', () => {
-      expect(decodeChallengeCode(`${encodeChallengeCode(narrowed)}-${WORDLIST[1]}`)).toBeNull();
+  describe('words 8 onward: countries', () => {
+    // A country word is its ISO alpha-2 code as (first letter) * 26 + (second letter).
+    const isoWord = (iso: string) =>
+      WORDLIST[(iso.charCodeAt(0) - 65) * 26 + (iso.charCodeAt(1) - 65)];
+    const europe: ChallengeConfig = {
+      ...baseConfig,
+      regions: ['Europe', 'East Asia'],
+      countries: ['Germany', 'France'],
+    };
+
+    it('appends one word per country, sorted by ISO code, and round-trips', () => {
+      const token = encodeChallengeCode(europe);
+      const parts = token.split('-');
+      expect(parts).toHaveLength(9);
+      expect(parts.slice(7)).toEqual([isoWord('DE'), isoWord('FR')]);
+      expect(decodeChallengeCode(token)).toEqual({ ...europe, countries: ['Germany', 'France'] });
+      // Pick order does not change the token.
+      expect(encodeChallengeCode({ ...europe, countries: ['France', 'Germany'] })).toBe(token);
+      // The first seven words are exactly the regions-only code.
+      expect(parts.slice(0, 7).join('-')).toBe(encodeChallengeCode({ ...europe, countries: [] }));
+    });
+
+    it('writes the regions word even when every region is selected', () => {
+      const all: ChallengeConfig = { ...baseConfig, countries: ['Japan'] };
+      const token = encodeChallengeCode(all);
+      expect(token.split('-')).toHaveLength(8);
+      expect(decodeChallengeCode(token)).toEqual(all);
+    });
+
+    it('keeps a transcontinental country under either side', () => {
+      const turkey: ChallengeConfig = {
+        ...baseConfig,
+        regions: ['Middle East & North Africa'],
+        countries: ['Turkey'],
+      };
+      expect(decodeChallengeCode(encodeChallengeCode(turkey))).toEqual(turkey);
+    });
+
+    it('rejects an unknown code, a repeat, or a country outside the decoded regions', () => {
+      const seven = encodeChallengeCode({ ...europe, countries: [] });
+      expect(decodeChallengeCode(`${seven}-${isoWord('DE')}`)?.countries).toEqual(['Germany']);
+      expect(decodeChallengeCode(`${seven}-${isoWord('ZZ')}`)).toBeNull();
+      expect(decodeChallengeCode(`${seven}-${WORDLIST[26 * 26]}`)).toBeNull();
+      expect(decodeChallengeCode(`${seven}-${isoWord('DE')}-${isoWord('DE')}`)).toBeNull();
+      expect(decodeChallengeCode(`${seven}-${isoWord('BR')}`)).toBeNull();
     });
   });
 });

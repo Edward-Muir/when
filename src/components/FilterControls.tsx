@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
 import { ALL_REGIONS } from '../utils/regions';
+import CountryRefine from './CountryRefine';
+import { pillClass } from './filterPill';
 
 // Max gap (ms) between two taps on the same pill to count as a double-tap.
 // 400ms matches macOS/Windows double-click defaults and sits just above
@@ -25,17 +27,13 @@ export interface FilterControlsProps {
   onErasChange: (eras: Era[]) => void;
   selectedRegions: string[];
   onRegionsChange: (regions: string[]) => void;
+  // The "Refine by country" panel shows only when all three are passed.
+  selectedCountries?: string[];
+  onCountriesChange?: (countries: string[]) => void;
+  countryOptions?: Map<string, string[]>;
   // When true, show an `n/N` (or `All`) selected-count next to each group header.
   showCounts?: boolean;
 }
-
-// Shared pill button shape. Selected = blue (accent-secondary); unselected = white outline.
-const pillClass = (isSelected: boolean): string =>
-  `px-3 py-1.5 rounded-full text-sm font-medium font-body transition-all active:scale-95 border capitalize ${
-    isSelected
-      ? 'bg-accent-secondary text-white border-transparent'
-      : 'bg-surface text-text border-border hover:border-accent-secondary/50'
-  }`;
 
 const GroupHeader: React.FC<{ label: string; count?: { selected: number; total: number } }> = ({
   label,
@@ -62,6 +60,9 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   onErasChange,
   selectedRegions,
   onRegionsChange,
+  selectedCountries,
+  onCountriesChange,
+  countryOptions,
   showCounts = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
@@ -262,6 +263,14 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         </div>
         {selectedRegions.length === 0 && (
           <p className="text-error text-xs mt-1 font-body">Select at least one region</p>
+        )}
+        {selectedCountries && onCountriesChange && countryOptions && (
+          <CountryRefine
+            selectedRegions={selectedRegions}
+            selectedCountries={selectedCountries}
+            onCountriesChange={onCountriesChange}
+            countryOptions={countryOptions}
+          />
         )}
       </div>
     </div>

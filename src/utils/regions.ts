@@ -61,3 +61,69 @@ export function eventRegionSet(event: Pick<HistoricalEvent, 'regions'>): Set<str
   }
   return out;
 }
+
+/**
+ * The macro-regions a country belongs to for the country picker: its rollup region, or every
+ * region a transcontinental country spans. Antarctica, and an unknown name, belong to none.
+ */
+export function countryMacros(name: string): string[] {
+  const entry = COUNTRIES.get(name);
+  if (!entry) return [];
+  return entry.spans ?? (entry.region ? [entry.region] : []);
+}
+
+/** The country tags on an event, ignoring its macro-region tags. */
+export function eventCountrySet(event: Pick<HistoricalEvent, 'regions'>): Set<string> {
+  return new Set((event.regions ?? []).filter((tag) => COUNTRIES.has(tag)));
+}
+
+/**
+ * The countries the picker offers under each macro-region: only those present in `events`,
+ * most-tagged first (then by name), so the long tail sits behind "more". A transcontinental
+ * country is listed under every region it spans.
+ */
+export function countryOptionsByRegion(
+  events: Pick<HistoricalEvent, 'regions'>[]
+): Map<string, string[]> {
+  const counts = new Map<string, number>();
+  for (const event of events) {
+    for (const country of eventCountrySet(event)) {
+      counts.set(country, (counts.get(country) ?? 0) + 1);
+    }
+  }
+  const byRegion = new Map<string, string[]>();
+  for (const country of counts.keys()) {
+    for (const region of countryMacros(country)) {
+      const list = byRegion.get(region) ?? [];
+      list.push(country);
+      byRegion.set(region, list);
+    }
+  }
+  for (const list of byRegion.values()) {
+    list.sort((a, b) => (counts.get(b) ?? 0) - (counts.get(a) ?? 0) || a.localeCompare(b));
+  }
+  return byRegion;
+}
+
+/**
+ * The picked countries still reachable once `regions` is the region selection: known names in
+ * at least one selected region. Deselecting Europe drops Germany; Turkey survives while either
+ * of its sides is selected.
+ */
+export function pruneCountries(countries: readonly string[], regions: readonly string[]): string[] {
+  const selected = new Set(regions);
+  return countries.filter((country) => countryMacros(country).some((r) => selected.has(r)));
+}
+
+/** A country's ISO 3166-1 alpha-2 code, the stable key a challenge code stores it by. */
+export function countryIso(name: string): string | undefined {
+  return COUNTRIES.get(name)?.iso;
+}
+
+const COUNTRY_BY_ISO = new Map<string, string>(
+  Array.from(COUNTRIES, ([name, entry]) => [entry.iso, name])
+);
+
+export function countryByIso(iso: string): string | undefined {
+  return COUNTRY_BY_ISO.get(iso);
+}
