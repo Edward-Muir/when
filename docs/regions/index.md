@@ -95,23 +95,24 @@ deterministic pass writes the catalogue.
 Re-tagging is allowed: an entry for an already-tagged slug replaces its tags, and the run lists
 the change.
 
-## The filter (next session)
+## The filter
 
-Designed here so it is built without re-deciding anything:
+Built 2026-09-30 as designed here:
 
 - **State.** `selectedRegions` on `GameConfig` and `CustomSettings` (`src/utils/playerStorage.ts`).
   Stored settings without it mean all regions.
-- **Filtering.** In `composeDeck` (`src/hooks/useWhenGame.ts`), after the era filter. All regions
-  selected means no filtering. Otherwise keep events whose `eventRegionSet` intersects the
-  selection, where Global matches Global-tagged events.
+- **Filtering.** `filterByRegion` in `src/utils/eventLoader.ts`, applied last by `filterPool`,
+  which is the one filter chain shared by `composeDeck`, the Custom tab's Play count and
+  validity check (`useCustomGameSettings`) and the Timeline tab, so they cannot drift. All
+  regions selected means no filtering. Otherwise keep events whose `eventRegionSet` intersects
+  the selection, where Global matches Global-tagged events.
 - **UI.** A "Regions" chip group in `FilterControls.tsx`, with the same double-tap and empty-group
   behaviour as Categories and Eras. **No explanatory copy**: the maintainer ruled out "by today's
   borders"-style text. `FilterPopup` reuses `FilterControls`, so the Timeline panel gets it too.
   The existing `isPlayValid`/`deckCount` already block a pool that is too small.
-- **Challenge codes.** All 72 bits are taken. Add an optional 7th 12-bit word, the regions in
-  `ALL_REGIONS` order. The decoder must accept 6 or 7 words, and a 6-word code (every link already
-  shared) decodes as all regions. Read [../sharing-challenges/](../sharing-challenges/index.md)
-  first; the encoding is positional.
+- **Challenge codes.** All 72 bits were taken, so an optional 7th 12-bit word holds the regions
+  in `ALL_REGIONS` order, written only when they are narrowed. A 6-word code (every link already
+  shared) decodes as all regions. See [../sharing-challenges/](../sharing-challenges/index.md).
 - **Unaffected.** The daily and curated themes. Region tags do make a "Chinese history week" theme
   trivial to assemble later.
 

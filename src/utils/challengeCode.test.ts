@@ -101,4 +101,56 @@ describe('challengeCode encode/decode', () => {
     const b = encodeChallengeCode({ ...baseConfig, seed: 2 });
     expect(a).not.toEqual(b);
   });
+
+  describe('the optional 7th word: regions', () => {
+    const narrowed: ChallengeConfig = { ...baseConfig, regions: ['East Asia', 'Global'] };
+
+    it('pins the region order, because the word is positional', () => {
+      // Reordering or inserting a region re-maps every region link already shared.
+      expect(ALL_REGIONS).toEqual([
+        'Europe',
+        'Middle East & North Africa',
+        'Sub-Saharan Africa',
+        'North & Central Asia',
+        'South Asia',
+        'East Asia',
+        'Southeast Asia',
+        'North America',
+        'South America',
+        'Oceania',
+        'Global',
+      ]);
+    });
+
+    it('stays 6 words, byte-identical, when every region is selected', () => {
+      // What the encoder produced for this config before the region word existed.
+      expect(encodeChallengeCode(baseConfig)).toBe(
+        'realize-atheism-athlete-abacus-blonde-abstract'
+      );
+    });
+
+    it('adds a 7th word when regions are narrowed, and round-trips it', () => {
+      const token = encodeChallengeCode(narrowed);
+      expect(token.split('-')).toHaveLength(7);
+      expect(decodeChallengeCode(token)).toEqual(narrowed);
+      // The first six words are exactly the all-regions code: no existing field moved.
+      expect(token.split('-').slice(0, 6).join('-')).toBe(encodeChallengeCode(baseConfig));
+    });
+
+    it('decodes every 6-word code already shared as all regions', () => {
+      const decoded = decodeChallengeCode(encodeChallengeCode(baseConfig));
+      expect(decoded?.regions).toEqual([...ALL_REGIONS]);
+    });
+
+    it('rejects a 7th word with no region, or a bit past the last region', () => {
+      const six = encodeChallengeCode(baseConfig);
+      expect(decodeChallengeCode(`${six}-${WORDLIST[0]}`)).toBeNull();
+      expect(decodeChallengeCode(`${six}-${WORDLIST[1 << ALL_REGIONS.length]}`)).toBeNull();
+      expect(decodeChallengeCode(`${six}-${WORDLIST[1]}`)?.regions).toEqual(['Europe']);
+    });
+
+    it('rejects an 8-word token', () => {
+      expect(decodeChallengeCode(`${encodeChallengeCode(narrowed)}-${WORDLIST[1]}`)).toBeNull();
+    });
+  });
 });

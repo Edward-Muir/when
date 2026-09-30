@@ -4,6 +4,8 @@ import {
   resetHintsSeen,
   subscribeHintsReset,
   HintKey,
+  getCustomSettings,
+  saveCustomSettings,
 } from './playerStorage';
 
 const ALL_KEYS: HintKey[] = [
@@ -73,5 +75,28 @@ describe('one-shot hints storage', () => {
     localStorage.setItem('when-timeline-intro-seen', '1');
     resetHintsSeen();
     ALL_KEYS.forEach((key) => expect(hasSeenHint(key)).toBe(false));
+  });
+});
+
+describe('custom settings storage', () => {
+  const saved = {
+    selectedDifficulties: ['easy' as const],
+    selectedCategories: ['empires' as const],
+    selectedEras: ['modern' as const],
+    playerCount: 1,
+    cardsPerHand: 7,
+    suddenDeathHandSize: 5,
+  };
+
+  it('restores a record saved before the region filter, with no regions (read as all)', () => {
+    localStorage.setItem('when-custom-settings', JSON.stringify(saved));
+    const restored = getCustomSettings();
+    expect(restored).not.toBeNull();
+    expect(restored?.selectedRegions).toBeUndefined();
+  });
+
+  it('round-trips a region selection', () => {
+    saveCustomSettings({ ...saved, selectedRegions: ['East Asia'] });
+    expect(getCustomSettings()?.selectedRegions).toEqual(['East Asia']);
   });
 });

@@ -1,6 +1,8 @@
 {
   "documentedFrom": "1.24.0",
-  "unreleased": [],
+  "unreleased": [
+    "Custom games can now be filtered by world region, such as Europe or East Asia."
+  ],
   "releases": [
     {
       "version": "1.29.0",

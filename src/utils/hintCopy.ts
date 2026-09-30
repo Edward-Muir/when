@@ -29,7 +29,7 @@ export const TAB_HINT_TEXT: Record<TabHintKey, string> = {
   dailyTab: 'Tap the button above to play your first daily game.',
   archiveTab: 'Past daily decks, replayable from the day after they run. Beat your best on each.',
   customTab:
-    'Build a deck from any eras, categories and difficulty. Wrong placements cost a card; the game ends when your hand is empty.',
+    'Build a deck from any eras, regions, categories and difficulty. Wrong placements cost a card; the game ends when your hand is empty.',
   statsTab: 'Your records, daily scores and badges. Every finished game counts here.',
   timelineTab: 'Every event you place correctly is collected here. Tap the sliders to filter it.',
   reviewEye: 'Tap to view your completed timeline.',
