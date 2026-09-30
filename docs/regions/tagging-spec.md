@@ -113,7 +113,8 @@ first identified, or was centred.
 **Global alone** is for events with no honest focal place: a geological period boundary, the
 Great Oxidation Event, Snowball Earth, the Spanish flu's second wave (which struck worldwide at
 once). It needs a `note` saying why no place is focal, and the apply script prints every one.
-Expect it on well under 3% of cards.
+There is no quota. A batch of prehistory can hold many Global-only entries and be right; one
+famous event tagged Global alone is wrong. Each note is judged on its own.
 
 **Not Global**, however much it mattered:
 
@@ -152,6 +153,13 @@ court) **at the time of the event**. The rule is mechanical on purpose, so two t
 | Inca Empire                                  | Peru                                                                                                                        |
 | Mughal Empire                                | India                                                                                                                       |
 | Mali Empire                                  | Mali                                                                                                                        |
+| Hittite Empire                               | Turkey (Hattusa), on the Middle East & North Africa side                                                                    |
+| Rashidun Caliphate                           | Saudi Arabia (Medina); Iraq (Kufa) under Ali                                                                                |
+| Umayyad forces from al-Andalus               | Spain, before and after 756: the base they marched from, not Damascus (Tours is France, Spain)                              |
+| Seljuk Empire                                | Iran (Isfahan). The Sultanate of Rum: Turkey (Konya)                                                                        |
+| Venice, Genoa, the Italian city-states       | Italy                                                                                                                       |
+| East India Company, VOC                      | Their home country, as the colonial actor (United Kingdom; Netherlands)                                                     |
+| An alliance (Holy League, Coalition)         | Its members, or their region past two                                                                                       |
 
 The seat rule covers the _actor_ tag. The _place_ is still where the event happened: Hadrian's
 Wall is "United Kingdom" (place) and "Italy" (Rome, the actor).
@@ -204,6 +212,26 @@ Follow borders as the United Nations recognises them, and do not adjudicate:
 - **Species, fossils and prehistory.** Tag where the defining evidence was found (Plateosaurus is
   France, Germany and Switzerland). Planet-wide geology, climate and atmosphere are Global.
 - **Sport.** Tag the host, plus the winner when the card is about the win.
+- **Wars and their outbreak.** A "war begins" card is the outbreak: where the fighting or the
+  declaration happened, plus the principal belligerents (at most two, else their region). Add
+  Global only when the card's own text frames the war as fought worldwide (Seven Years' War
+  Begins is United Kingdom, France, Global; World War II Begins is Germany, Poland).
+- **Colonial protest and repression.** Tag the colonial power beside the place only when its
+  forces or officials acted in the event itself. The Boston Massacre (British troops fired) is
+  United States, United Kingdom; the Boston Tea Party (colonists acted) is United States.
+- **Written works and scholarship.** Where the work was written or the research done, when known;
+  otherwise the author's principal base. Not the birthplace, which belongs to a birth card.
+- **Card and prose disagree on the origin.** Independent-invention cards often credit one place
+  ("Egyptians invented the lock") while the prose gives the earliest evidence elsewhere (Nineveh).
+  Tag both, within the caps, and report the disagreement as a catalogue error.
+
+### Peoples and cultures are not actors
+
+A people without a state (Vikings, Huns, Goths, Scythians) is not an actor: tag the place only.
+The exception is a voyage or migration that is the card's subject and sets out from a known
+homeland, which is tagged like an explorer's home (the Norse at L'Anse aux Meadows sailed from Greenland: Canada, Greenland).
+A culture adjective is not a state either. "Greek engineers" at Syracuse are Italy; "a Greek
+philosopher" at Miletus is Turkey. The audit flags these ethnonyms, and the flag is expected.
 
 ## When unsure
 

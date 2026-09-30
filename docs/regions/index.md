@@ -42,7 +42,9 @@ II would vanish from a Europe game. COVID, the Great Depression and the Chicxulu
 have a real place where they began. So Global is combined with focal places, and appears alone
 only where no place is honest (geology, the atmosphere). The risk runs the other way: Global used
 to mean "important". The spec bans that, the apply script prints every Global-only entry with its
-mandatory note, and it warns when those pass 3% of a batch.
+mandatory note, and a reviewer reads every one. There is deliberately no share threshold: an
+early 3% warning was dropped (2026-09-30) because a chunk of 60 trips it at two entries and a
+geology-heavy chunk legitimately exceeds it. The note is judged, not counted.
 
 **Eleven macro-regions, from UN M49 but adjusted to read the way a player expects:**
 

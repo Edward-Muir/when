@@ -93,6 +93,12 @@ A country already implies its region: ["Germany"] is in Europe. Don't add "Europ
    | Aztec Empire                            | Mexico                                               |
    | Inca Empire                             | Peru                                                 |
    | Mughal Empire                           | India                                                |
+   | Hittites                                | Turkey (with Middle East & North Africa)             |
+   | Rashidun Caliphate                      | Saudi Arabia (Medina)                                |
+   | Umayyad forces from al-Andalus          | Spain                                                |
+   | Seljuks; Sultanate of Rum               | Iran; Turkey                                         |
+   | Venice, Genoa                           | Italy                                                |
+   | East India Company; VOC                 | United Kingdom; Netherlands                          |
 
    The full table is in the spec.
 
@@ -120,6 +126,15 @@ A country already implies its region: ["Germany"] is in Europe. Don't add "Europ
      the event.
 10. **Life events.** Births and deaths are tagged with the place, plus the country the person is
     chiefly associated with (at most one). Marie Curie's birth is Poland and France.
+11. **Peoples and cultures are not actors.** Vikings, Huns and Goths without a state get the
+    place only, unless the card is their own voyage from a known homeland (explorer rule). "Greek
+    engineers" at Syracuse are Italy: a culture adjective is not a state.
+12. **War begins.** Where it broke out plus the principal belligerents. Global only when the
+    card itself frames the war as worldwide.
+13. **Colonial power.** Tag it beside the place only when its forces or officials acted in the
+    event (Boston Massacre), not when colonists acted against it (Boston Tea Party).
+14. **Written works.** Where written or researched, else the author's base; not the birthplace.
+15. **Card and prose disagree on the origin.** Tag both, and report it as a catalogue error.
 
 ## Common mistakes
 

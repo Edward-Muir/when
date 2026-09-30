@@ -32,8 +32,6 @@ const { entryProblems, canonicalRegions, regionSetOf, GLOBAL } = require('./regi
 const { auditEntries } = require('./region-audit');
 
 const MAPS_DIR = path.join(__dirname, '..', '..', 'untracked_data', 'event-regions');
-/** Above this share of Global-only entries, a batch is probably using Global as "important". */
-const GLOBAL_ONLY_WARN_SHARE = 0.03;
 
 const die = (msg, lines) => {
   console.error(`ABORT: ${msg}`);
@@ -133,9 +131,7 @@ function printBatchSummary(merged, fileOf) {
       .slice(0, 4)
       .map(([r, n]) => `${r} ${n}`)
       .join(', ');
-    const warn =
-      row.globalOnly / row.total > GLOBAL_ONLY_WARN_SHARE ? '  <- Global-only share high' : '';
-    console.log(`  ${file}: ${row.total} entries, ${row.globalOnly} Global-only; ${top}${warn}`);
+    console.log(`  ${file}: ${row.total} entries, ${row.globalOnly} Global-only; ${top}`);
   }
 }
 
@@ -160,11 +156,11 @@ function printWarnings(merged, fileOf, locate) {
     ([, e]) => e.regions.length === 1 && e.regions[0] === GLOBAL
   );
   if (globalOnly.length) {
+    // No share threshold: a prehistory batch can rightly be full of these, and one famous event
+    // tagged Global alone is wrong. Every note is read, so every one is printed.
     const share = globalOnly.length / Object.keys(merged).length;
-    const flag =
-      share > GLOBAL_ONLY_WARN_SHARE ? '  <- above 3%, check for Global-as-importance' : '';
     console.log(
-      `\n${globalOnly.length} Global-only entr(ies), ${(share * 100).toFixed(1)}%${flag}:`
+      `\n${globalOnly.length} Global-only entr(ies), ${(share * 100).toFixed(1)}%, each needs its note read:`
     );
     for (const [slug, e] of globalOnly) console.log(`  ${slug}: ${e.note}`);
   }
