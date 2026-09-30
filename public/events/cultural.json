@@ -512,7 +512,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Marco_Polo",
     "color": "#26201c",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Italy"
+    ]
   },
   {
     "name": "divine-comedy",
@@ -2800,7 +2804,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/IPhone",
     "color": "#222121",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "beijing-olympics-2008",
@@ -4149,7 +4156,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Napoleon",
     "color": "#24201f",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France"
+    ]
   },
   {
     "name": "gibbon-decline-fall-published",
@@ -5060,7 +5070,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Italy",
+      "Middle East & North Africa",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "zoroastrianism-state-religion-persia",
@@ -7832,7 +7848,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "sejong-hangul-invention",
@@ -8159,7 +8178,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 1512
+    "year_end": 1512,
+    "regions": [
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "printing-reformation-pamphlets",

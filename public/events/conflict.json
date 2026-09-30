@@ -125,7 +125,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Wars_of_Alexander_the_Great",
     "color": "#322218",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Greece",
+      "Iran",
+      "Iraq"
+    ]
   },
   {
     "name": "first-punic-war",
@@ -303,7 +308,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
     "color": "#20221b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Italy"
+    ]
   },
   {
     "name": "jewish-revolt-begins",
@@ -433,7 +442,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
     "color": "#26201e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "arab-conquest-persia",
@@ -498,7 +510,13 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Charlemagne",
     "color": "#281f17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany",
+      "Italy",
+      "Vatican City"
+    ]
   },
   {
     "name": "battle-lechfeld",
@@ -546,7 +564,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/First_Crusade",
     "color": "#202122",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "third-crusade",
@@ -578,7 +601,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Genghis_Khan",
     "color": "#3e3936",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Mongolia"
+    ]
   },
   {
     "name": "mongol-invasion-rus",
@@ -611,7 +637,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
     "color": "#6f5844",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Iraq",
+      "Mongolia"
+    ]
   },
   {
     "name": "hundred-years-war-start",
@@ -692,7 +722,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo",
     "color": "#332d25",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "battle-agincourt",
@@ -740,7 +774,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
     "color": "#2b1e17",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Turkey",
+      "Europe"
+    ]
   },
   {
     "name": "wars-of-roses",
@@ -2091,7 +2129,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
     "color": "#4b3b29",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Germany"
+    ]
   },
   {
     "name": "irish-independence",
@@ -2300,7 +2342,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_II",
     "color": "#37291d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany",
+      "Poland"
+    ]
   },
   {
     "name": "battle-britain",
@@ -2364,7 +2410,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor",
     "color": "#382820",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "siege-leningrad",
@@ -2412,7 +2462,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Battle_of_Midway",
     "color": "#3d3123",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States"
+    ]
   },
   {
     "name": "stalingrad",
@@ -2588,7 +2642,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/End_of_World_War_II",
     "color": "#403625",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Japan",
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "chinese-communist-victory",
@@ -2620,7 +2679,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/History_of_South_Korea",
     "color": "#232c31",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "North Korea",
+      "South Korea"
+    ]
   },
   {
     "name": "batista-cuba-coup",
@@ -3168,7 +3231,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Falklands_War",
     "color": "#3a4249",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Argentina",
+      "Falkland Islands",
+      "United Kingdom"
+    ]
   },
   {
     "name": "grenada-invasion",
@@ -3217,7 +3285,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
     "color": "#1d2127",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Germany"
+    ]
   },
   {
     "name": "tiananmen-square",
@@ -4327,7 +4398,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
     "color": "#271f1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Israel",
+      "Palestine"
+    ]
   },
   {
     "name": "battle-of-legnano",
@@ -5538,7 +5614,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
     "color": "#23211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Austria",
+      "Bosnia and Herzegovina",
+      "Serbia"
+    ]
   },
   {
     "name": "first-battle-of-the-marne",
@@ -6489,7 +6570,12 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "France",
+      "Italy",
+      "Syria"
+    ]
   },
   {
     "name": "sima-yan-jin-unification",

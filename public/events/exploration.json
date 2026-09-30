@@ -99,7 +99,11 @@
     "color": "#26201c",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -233000
+    "year_end": -233000,
+    "regions": [
+      "Middle East & North Africa",
+      "Sub-Saharan Africa"
+    ]
   },
   {
     "name": "anatomically-modern-humans",
@@ -1216,7 +1220,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Chris_Columbus_(filmmaker)",
     "color": "#1b2322",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Bahamas",
+      "Spain"
+    ]
   },
   {
     "name": "cabot-north-america",
@@ -1329,7 +1337,11 @@
     "color": "#222120",
     "text_color": "light",
     "has_detail": true,
-    "year_end": 1522
+    "year_end": 1522,
+    "regions": [
+      "Spain",
+      "Global"
+    ]
   },
   {
     "name": "pizarro-meets-incas",
@@ -3830,7 +3842,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/South_Pole",
     "color": "#b2ada5",
     "text_color": "dark",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Antarctica",
+      "Norway"
+    ]
   },
   {
     "name": "continental-drift",
@@ -4169,7 +4185,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Penicillin",
     "color": "#22211d",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United Kingdom"
+    ]
   },
   {
     "name": "expanding-universe",
@@ -4799,7 +4818,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Sputnik_1",
     "color": "#19222e",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Kazakhstan",
+      "Russia",
+      "Europe"
+    ]
   },
   {
     "name": "laika-in-space",
@@ -5129,7 +5153,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Apollo_11",
     "color": "#1e2221",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States"
+    ]
   },
   {
     "name": "apollo-11-launch",
@@ -5581,7 +5608,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/World_Wide_Web",
     "color": "#231f28",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Switzerland"
+    ]
   },
   {
     "name": "game-boy-released",
@@ -14638,7 +14668,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/great-oxidation-event_frpvyw?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -2060000000
+    "year_end": -2060000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-complex-cells",
@@ -14683,7 +14716,10 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/snowball-earth-cryogenian_dsc5yg?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -635000000
+    "year_end": -635000000,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "ediacaran-period-begins",
@@ -14856,7 +14892,10 @@
     "image_width": 330,
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/triassic-period-begins_irezgd?_a=BAMAMikS0",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Global"
+    ]
   },
   {
     "name": "first-mammals",
@@ -14886,7 +14925,12 @@
     "image_height": 440,
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/plateosaurus_glrrif?_a=BAMAMikS0",
     "has_detail": true,
-    "year_end": -204000000
+    "year_end": -204000000,
+    "regions": [
+      "France",
+      "Germany",
+      "Switzerland"
+    ]
   },
   {
     "name": "jurassic-period-begins",

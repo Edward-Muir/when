@@ -701,7 +701,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
     "color": "#25201b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Portugal",
+      "Spain"
+    ]
   },
   {
     "name": "league-cambrai",
@@ -1998,7 +2002,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Member_states_of_the_United_Nations",
     "color": "#291f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "yalta-conference",
@@ -2878,7 +2886,12 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong",
     "color": "#162231",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Hong Kong",
+      "United Kingdom"
+    ]
   },
   {
     "name": "good-friday-agreement",
@@ -3554,7 +3567,10 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Trajan",
     "color": "#281f1a",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Italy"
+    ]
   },
   {
     "name": "hadrian-becomes-emperor",
@@ -6048,7 +6064,11 @@
     "wikipedia_url": "https://en.wikipedia.org/wiki/Tunguska_event",
     "color": "#4e2a1b",
     "text_color": "light",
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Russia",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "young-turk-revolution",
@@ -11448,7 +11468,14 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "China",
+      "Mongolia",
+      "Europe",
+      "Middle East & North Africa",
+      "North & Central Asia"
+    ]
   },
   {
     "name": "yuan-khanate-founded",
@@ -11997,7 +12024,10 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe"
+    ]
   },
   {
     "name": "medici-banking",
@@ -14220,7 +14250,13 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "Europe",
+      "Sub-Saharan Africa",
+      "North America",
+      "South America"
+    ]
   },
   {
     "name": "triangular-trade-system",
@@ -15037,7 +15073,11 @@
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
-    "has_detail": true
+    "has_detail": true,
+    "regions": [
+      "United States",
+      "Global"
+    ]
   },
   {
     "name": "child-allowance",

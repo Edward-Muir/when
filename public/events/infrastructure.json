@@ -14,7 +14,11 @@
     "color": "#202122",
     "text_color": "light",
     "has_detail": true,
-    "year_end": -8000
+    "year_end": -8000,
+    "regions": [
+      "Turkey",
+      "Middle East & North Africa"
+    ]
   },
   {
     "name": "jericho-walls",
@@ -3138,7 +3142,11 @@
     "image_width": 330,
     "image_height": 440,
     "has_detail": true,
-    "year_end": 128
+    "year_end": 128,
+    "regions": [
+      "Italy",
+      "United Kingdom"
+    ]
   },
   {
     "name": "pantheon-rome-built",
