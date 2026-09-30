@@ -34,6 +34,15 @@ export const ALL_REGIONS: readonly string[] = taxonomy.regions;
 
 export const GLOBAL_REGION = 'Global';
 
+/**
+ * The order the chips show regions in: alphabetical, with Global last because it is not a place.
+ * Display only. `ALL_REGIONS` keeps the taxonomy order, which is the share code's bit order.
+ */
+export const REGION_DISPLAY_ORDER: readonly string[] = [
+  ...ALL_REGIONS.filter((r) => r !== GLOBAL_REGION).sort((a, b) => a.localeCompare(b)),
+  GLOBAL_REGION,
+];
+
 const REGION_SET = new Set(ALL_REGIONS);
 
 export function isRegionName(tag: string): boolean {
@@ -78,31 +87,60 @@ export function eventCountrySet(event: Pick<HistoricalEvent, 'regions'>): Set<st
 }
 
 /**
- * The countries the picker offers under each macro-region: only those present in `events`,
- * most-tagged first (then by name), so the long tail sits behind "more". A transcontinental
- * country is listed under every region it spans.
+ * The countries the picker offers under each macro-region: only those present in `events`, in
+ * alphabetical order. A transcontinental country is listed under every region it spans.
  */
 export function countryOptionsByRegion(
   events: Pick<HistoricalEvent, 'regions'>[]
 ): Map<string, string[]> {
-  const counts = new Map<string, number>();
-  for (const event of events) {
-    for (const country of eventCountrySet(event)) {
-      counts.set(country, (counts.get(country) ?? 0) + 1);
-    }
-  }
+  const present = new Set<string>();
+  for (const event of events) for (const country of eventCountrySet(event)) present.add(country);
   const byRegion = new Map<string, string[]>();
-  for (const country of counts.keys()) {
+  for (const country of [...present].sort((a, b) => a.localeCompare(b))) {
     for (const region of countryMacros(country)) {
       const list = byRegion.get(region) ?? [];
       list.push(country);
       byRegion.set(region, list);
     }
   }
-  for (const list of byRegion.values()) {
-    list.sort((a, b) => (counts.get(b) ?? 0) - (counts.get(a) ?? 0) || a.localeCompare(b));
-  }
   return byRegion;
+}
+
+export interface CountryGroup {
+  region: string;
+  countries: string[];
+  /** False for a region the player has not selected: picking from it adds the region. */
+  selected: boolean;
+}
+
+/** Whether `query` (already lower-cased) starts any word of `name`: "kor" finds South Korea. */
+function matchesWordStart(name: string, query: string): boolean {
+  const lower = name.toLowerCase();
+  return lower.startsWith(query) || lower.includes(` ${query}`) || lower.includes(`-${query}`);
+}
+
+/**
+ * The picker's groups, in display order. With no query, every country of each selected region.
+ * With one, the matching countries of every region; an unselected region lists only matches not
+ * already reachable through a selected region, so Turkey is not offered twice.
+ */
+export function matchCountries(
+  options: Map<string, string[]>,
+  query: string,
+  selectedRegions: readonly string[]
+): CountryGroup[] {
+  const q = query.trim().toLowerCase();
+  const isSelected = (region: string) => selectedRegions.includes(region);
+  const groups: CountryGroup[] = [];
+  for (const region of REGION_DISPLAY_ORDER) {
+    const selected = isSelected(region);
+    if (!q && !selected) continue;
+    const countries = (options.get(region) ?? []).filter(
+      (c) => !q || (matchesWordStart(c, q) && (selected || !countryMacros(c).some(isSelected)))
+    );
+    if (countries.length > 0) groups.push({ region, countries, selected });
+  }
+  return groups;
 }
 
 /**

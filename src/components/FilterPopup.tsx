@@ -72,6 +72,7 @@ const FilterPopup: React.FC<FilterPopupProps> = ({
         selectedCountries={selectedCountries}
         onCountriesChange={setSelectedCountries}
         countryOptions={countryOptions}
+        matchCount={filteredCount}
       />
 
       {/* Event counter */}

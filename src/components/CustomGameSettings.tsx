@@ -149,6 +149,7 @@ const CustomGameSettings: React.FC<CustomGameSettingsProps> = ({
           selectedCountries={selectedCountries}
           onCountriesChange={setSelectedCountries}
           countryOptions={countryOptions}
+          matchCount={deckCount}
         />
 
         {/* Share this game — full game-state URL + shuffle + share */}

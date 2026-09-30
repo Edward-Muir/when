@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Difficulty, Category, Era, ALL_CATEGORIES, ALL_DIFFICULTIES } from '../types';
 import { ERA_DEFINITIONS } from '../utils/eras';
-import { ALL_REGIONS } from '../utils/regions';
+import { ALL_REGIONS, REGION_DISPLAY_ORDER } from '../utils/regions';
 import CountryRefine from './CountryRefine';
 import { pillClass } from './filterPill';
 
@@ -31,6 +31,8 @@ export interface FilterControlsProps {
   selectedCountries?: string[];
   onCountriesChange?: (countries: string[]) => void;
   countryOptions?: Map<string, string[]>;
+  // Cards the selection deals, shown in the country picker, which hides the Play button.
+  matchCount?: number;
   // When true, show an `n/N` (or `All`) selected-count next to each group header.
   showCounts?: boolean;
 }
@@ -63,6 +65,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
   selectedCountries,
   onCountriesChange,
   countryOptions,
+  matchCount,
   showCounts = false,
 }) => {
   const toggleDifficulty = (difficulty: Difficulty) => {
@@ -242,7 +245,7 @@ const FilterControls: React.FC<FilterControlsProps> = ({
           }
         />
         <div className="flex flex-wrap gap-2">
-          {ALL_REGIONS.map((region) => (
+          {REGION_DISPLAY_ORDER.map((region) => (
             <button
               key={region}
               onClick={() =>
@@ -267,9 +270,11 @@ const FilterControls: React.FC<FilterControlsProps> = ({
         {selectedCountries && onCountriesChange && countryOptions && (
           <CountryRefine
             selectedRegions={selectedRegions}
+            onRegionsChange={onRegionsChange}
             selectedCountries={selectedCountries}
             onCountriesChange={onCountriesChange}
             countryOptions={countryOptions}
+            matchCount={matchCount}
           />
         )}
       </div>

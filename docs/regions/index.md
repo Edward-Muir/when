@@ -117,9 +117,23 @@ Built 2026-09-30 as designed here:
 
 ## The country picker (2026-09-30)
 
-189 tagged countries are too many for one chip group. They sit behind a collapsed **Refine by
-country** row under the region chips, listing a sub-group for each selected region.
+189 tagged countries are too many for one chip group. The Regions group ends in a single
+**Countries** row (`CountryRefine.tsx`) reading `All` or the picked names, which opens a popup
+(`CountryPickerModal.tsx`) with a search box and the selected regions' countries grouped by region.
+The first build was an inline expanding panel; it made the Custom card scroll too far, so the
+card now never grows. The popup's Done button carries the live event count, since it hides the
+Play button.
 
+- **Search reaches every region.** A match in a region not selected shows under that region,
+  marked "adds region", and picking it selects the region too, so "type Germany, tap" works from
+  any starting state. A transcontinental country already reachable through a selected side is
+  not offered again under the other. The grouping and matching (start of any word) are the pure
+  `matchCountries` in `src/utils/regions.ts`.
+- **Alphabetical.** Region chips and popup groups use `REGION_DISPLAY_ORDER`: alphabetical, with
+  Global last because it is not a place. That is display only; `ALL_REGIONS` keeps the taxonomy
+  order because it is the share code's bit order. Countries are alphabetical within each region
+  and every one is listed; the first build sorted by card count and capped each region at 8
+  behind "+N more", which meant nothing once the list was alphabetical and the popup had room.
 - **A pick narrows its own region.** A region with any of its countries picked keeps only events
   tagged with a picked country. A selected region with no pick stays whole, so "Europe + Middle
   East & North Africa, Germany picked" is all of Germany plus all of the Middle East. Events tagged
@@ -136,10 +150,10 @@ country** row under the region chips, listing a sub-group for each selected regi
 - **Deselecting a region drops its countries** (`pruneCountries`, via `useRegionSelection`), so a
   hidden pick never narrows the deck. A transcontinental country survives while either side is
   selected. Stored settings are pruned the same way on restore.
-- **Offered countries come from the pool.** `countryOptionsByRegion` lists only countries present,
-  most-tagged first, and shows 8 per region before "+N more". The Custom tab offers the whole
-  catalogue; the Timeline popup offers only countries in the player's collection. Global and
-  Antarctica have no sub-group.
+- **Offered countries come from the pool.** `countryOptionsByRegion` lists only countries present.
+  The Custom tab offers the whole catalogue; the Timeline popup offers only countries in the
+  player's collection, and its picker stacks above the filter popup (`layer="reveal"`). Global
+  and Antarctica have no group.
 - **State.** `selectedCountries` on `GameConfig` and `CustomSettings`, missing meaning none.
   The Timeline tab keeps its own, unpersisted, like its regions.
 - **Share codes** carry picks in words 8 onward, one per country, keyed by ISO code. See
