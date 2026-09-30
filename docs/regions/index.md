@@ -124,7 +124,7 @@ Built 2026-09-30 as designed here:
 
 189 tagged countries are too many for one chip group. The Regions group ends in a single
 **Countries** row (`CountryRefine.tsx`) summarising what is on, which opens a popup
-(`CountryPickerModal.tsx`) with a search box and the selected regions' countries grouped by region.
+(`CountryPickerModal.tsx`) with a search box and every region's countries grouped by region.
 The card never grows; the popup's Done button carries the live event count, since it hides the
 Play button.
 
@@ -144,11 +144,14 @@ work like the other groups. That is the model below.
   a light blue with the selected border, `aria-pressed="mixed"`) when some of its countries are
   off. Tapping works like a tri-state checkbox: off → whole, whole → off, partial → whole.
   Deselecting a region switches all its countries off; selecting it switches them all back on.
-- **A country chip toggles.** Switching off a region's last listed country turns the region off.
-  Tapping a country found by search in an unselected region ("adds region") selects that region
-  with only that country on, which is the quick way to "only the UK". The region header reads
-  `All`, or `n of m · All` with a button to put the region back; the footer's **Select all**
-  clears every exclusion. Double-tapping a region chip still isolates or restores, and restoring
+- **A country chip toggles.** Switching off a region's last listed country turns the region off,
+  but the region stays listed in the popup, in its place, with its chips white: the maintainer
+  found a region vanishing mid-tap annoying, so **the popup lists every region, selected or not,
+  in a fixed order**. Tapping a chip in a region that is off selects that region with only that
+  country on, which is the quick way to "only the UK". The region header reads `All`,
+  `n of m · All`, or `None · All`, the button putting the whole region back; the footer's
+  **Select all** turns every chip it shows back on: every listed region selected, nothing off.
+  Double-tapping a region chip still isolates or restores, and restoring
   every region also clears every exclusion, so "all" means all.
 - **The filter** (`filterByRegion`): an event stays when some region it resolves to is selected
   and either that region is whole, or the event carries a country of that region whose pair is on.
@@ -167,7 +170,7 @@ work like the other groups. That is the model below.
 - **Summary row.** `All`; the countries still on when every region with countries is partial
   (named up to three: "United Kingdom"); otherwise the countries off ("All but France", or
   "N countries off").
-- **Search reaches every region**, matching the start of any word (`matchCountries`). Regions
+- **Search narrows every region's list**, matching the start of any word (`matchCountries`). Regions
   alphabetical with Global last (display only; `ALL_REGIONS` is the share code's bit order);
   countries most-tagged first, 8 per region before "+N more". In a partial region, a country that
   is still on stays visible in the collapsed tail. An alphabetical country list was tried and

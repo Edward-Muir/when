@@ -40,6 +40,14 @@ const RegionCountries: React.FC<{
   onPick: (country: string) => void;
   onSelectAll: () => void;
 }> = ({ region, countries, status, capped, isOn, onPick, onSelectAll }) => {
+  const selectAll = (label: string) => (
+    <button
+      onClick={onSelectAll}
+      className="text-xs font-medium text-text-muted font-body tabular-nums hover:text-text"
+    >
+      {label}
+    </button>
+  );
   const [showAll, setShowAll] = useState(false);
   const hidden = capped && !showAll ? countries.length - VISIBLE_COUNTRIES : 0;
   // In a partial region the countries still on stay visible even in the collapsed tail, so
@@ -51,17 +59,10 @@ const RegionCountries: React.FC<{
   const canCollapse = capped && showAll && countries.length > VISIBLE_COUNTRIES;
   const onCount = countries.filter(isOn).length;
   const header =
-    status === 'off' ? (
-      <span className="text-xs text-text-muted font-body">adds region</span>
-    ) : status === 'full' ? (
+    status === 'full' ? (
       <span className="text-xs font-medium text-text-muted font-body">All</span>
     ) : (
-      <button
-        onClick={onSelectAll}
-        className="text-xs font-medium text-text-muted font-body tabular-nums hover:text-text"
-      >
-        {onCount} of {countries.length} · All
-      </button>
+      selectAll(status === 'off' ? 'None · All' : `${onCount} of ${countries.length} · All`)
     );
 
   return (
@@ -97,10 +98,11 @@ const RegionCountries: React.FC<{
 };
 
 /**
- * The country picker behind the Regions group's "Countries" row: a search box over the selected
- * regions' countries, grouped by region. Every country starts on, and a chip is blue exactly
- * when its cards are in the deck. A search also reaches regions not selected, and picking from
- * one selects that region with only that country. Rules: `src/utils/countrySelection.ts`.
+ * The country picker behind the Regions group's "Countries" row: a search box over every
+ * region's countries, grouped by region in a fixed order. Every country starts on, and a chip is
+ * blue exactly when its cards are in the deck. A region that is off keeps its place with its
+ * chips white, so switching off its last country never makes it vanish; tapping one of its
+ * chips selects the region with only that country. Rules: `src/utils/countrySelection.ts`.
  */
 const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
   open,
@@ -129,6 +131,19 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
 
   const pick = (region: string, country: string) =>
     apply(toggleCountry(selection, region, country, countryOptions.get(region) ?? []));
+
+  // Every chip the popup shows back on: each listed region selected, nothing switched off.
+  // Regions without countries (Global) keep whatever they were.
+  const listedRegions = [...countryOptions.keys()].filter(
+    (r) => (countryOptions.get(r)?.length ?? 0) > 0
+  );
+  const allOn =
+    excludedCountries.length === 0 && listedRegions.every((r) => selectedRegions.includes(r));
+  const selectAll = () =>
+    apply({
+      regions: [...selectedRegions, ...listedRegions.filter((r) => !selectedRegions.includes(r))],
+      excluded: [],
+    });
 
   return (
     <Modal
@@ -183,8 +198,8 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
       </div>
       <div className="flex shrink-0 items-center gap-3 border-t border-border px-4 py-3">
         <button
-          onClick={() => onExcludedChange([])}
-          disabled={excludedCountries.length === 0}
+          onClick={selectAll}
+          disabled={allOn}
           className="min-h-[44px] px-2 text-sm font-medium text-text-muted font-body hover:text-text disabled:opacity-40"
         >
           Select all

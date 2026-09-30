@@ -87,9 +87,11 @@ describe('matchCountries', () => {
   const view = (query: string, regions: string[]) =>
     matchCountries(options, query, regions).map((g) => [g.region, g.countries, g.selected]);
 
-  it('lists every country of the selected regions when there is no query', () => {
+  it('lists every region with countries, selected or not, in display order', () => {
     expect(view('', ['Europe'])).toEqual([
+      ['East Asia', ['Japan', 'North Korea', 'South Korea'], false],
       ['Europe', ['Germany', 'Ireland', 'Poland', 'Turkey'], true],
+      ['Middle East & North Africa', ['Egypt', 'Turkey'], false],
     ]);
   });
 

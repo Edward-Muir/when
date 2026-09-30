@@ -22,7 +22,8 @@ export interface CountryRefineProps {
 const CountryRefine: React.FC<CountryRefineProps> = (props) => {
   const { selectedRegions, excludedCountries, countryOptions } = props;
   const [open, setOpen] = useState(false);
-  const hasCountries = selectedRegions.some((r) => (countryOptions.get(r)?.length ?? 0) > 0);
+  // Shown whenever any region has countries, selected or not: the picker lists every region.
+  const hasCountries = [...countryOptions.values()].some((countries) => countries.length > 0);
   const summary = countrySummary(
     { regions: selectedRegions, excluded: excludedCountries },
     countryOptions

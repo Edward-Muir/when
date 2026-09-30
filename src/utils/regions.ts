@@ -149,9 +149,10 @@ function matchesWordStart(name: string, query: string): boolean {
 }
 
 /**
- * The picker's groups, in display order. With no query, every country of each selected region.
- * With one, the matching countries of every region; picking from an unselected region adds it.
- * A transcontinental country is listed under each side, and each side is its own switch.
+ * The picker's groups, in display order: every region with countries, selected or not, so a
+ * region never vanishes from under the player when its last country is switched off. A query
+ * keeps only the matching countries. A transcontinental country is listed under each side, and
+ * each side is its own switch.
  */
 export function matchCountries(
   options: Map<string, string[]>,
@@ -162,7 +163,6 @@ export function matchCountries(
   const groups: CountryGroup[] = [];
   for (const region of REGION_DISPLAY_ORDER) {
     const selected = selectedRegions.includes(region);
-    if (!q && !selected) continue;
     const countries = (options.get(region) ?? []).filter((c) => !q || matchesWordStart(c, q));
     if (countries.length > 0) groups.push({ region, countries, selected });
   }
