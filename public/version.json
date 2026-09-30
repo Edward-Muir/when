@@ -1,9 +1,8 @@
 {
-  "version": "1.30.0",
+  "version": "1.31.0",
   "date": "2026-09-30",
   "notes": [
-    "The iPhone app is now ready for iOS 27 and opens normally on it.",
-    "Custom games can now be filtered by world region, such as Europe or East Asia.",
-    "Names, dates and descriptions were corrected on over a hundred cards, and 33 duplicate cards were removed."
+    "Custom games can now include or leave out individual countries within a region.",
+    "Daily themes now include regions, countries and pairings such as Art in Italy."
   ]
 }

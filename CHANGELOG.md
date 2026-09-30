@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.31.0](https://github.com/Edward-Muir/when/compare/v1.30.0...v1.31.0) (2026-09-30)
+
+
+### Features
+
+* country picker and region-based daily themes ([#71](https://github.com/Edward-Muir/when/issues/71)) ([2d5d698](https://github.com/Edward-Muir/when/commit/2d5d6982166991153adf4cfb980ac9308f21b088))
+
 ## [1.30.0](https://github.com/Edward-Muir/when/compare/v1.29.0...v1.30.0) (2026-09-30)
 
 

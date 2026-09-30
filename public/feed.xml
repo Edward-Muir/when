@@ -5,8 +5,15 @@
     <link>https://play-when.com</link>
     <description>Version releases and updates for When? - The Timeline Game</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Sep 2026 16:54:35 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 20:49:21 GMT</lastBuildDate>
     <atom:link href="https://play-when.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>When? v1.31.0</title>
+      <link>https://play-when.com</link>
+      <guid isPermaLink="false">when-v1.31.0</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[<h3>Features</h3><br/><br/><ul><li>country picker and region-based daily themes (<a href="https://github.com/Edward-Muir/when/issues/71">#71</a>) (<a href="https://github.com/Edward-Muir/when/commit/2d5d6982166991153adf4cfb980ac9308f21b088">2d5d698</a>)</li></ul>]]></description>
+    </item>
     <item>
       <title>When? v1.30.0</title>
       <link>https://play-when.com</link>
@@ -69,13 +76,6 @@
       <guid isPermaLink="false">when-v1.22.0</guid>
       <pubDate>Wed, 16 Sep 2026 00:00:00 GMT</pubDate>
       <description><![CDATA[<h3>Features</h3><br/><br/>- **timeline:** a rail that grows with the board, and a marker that lands as its tick (<a href="https://github.com/Edward-Muir/when/issues/58">#58</a>) (<a href="https://github.com/Edward-Muir/when/commit/1b0e202a269cf15e2c5501375a56b8dd950dca66">1b0e202</a>)]]></description>
-    </item>
-    <item>
-      <title>When? v1.21.0</title>
-      <link>https://play-when.com</link>
-      <guid isPermaLink="false">when-v1.21.0</guid>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 GMT</pubDate>
-      <description><![CDATA[<h3>Features</h3><br/><br/>- draw the real number of cards in the hand counter (<a href="https://github.com/Edward-Muir/when/issues/57">#57</a>) (<a href="https://github.com/Edward-Muir/when/commit/315bfc702b95af55d348f67ee73ca69e6ffd7cbb">315bfc7</a>)]]></description>
     </item>
   </channel>
 </rss>
