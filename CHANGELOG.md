@@ -2,6 +2,40 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.30.0](https://github.com/Edward-Muir/when/compare/v1.29.0...v1.30.0) (2026-09-30)
+
+
+### Features
+
+* **dedup:** bring the /admin/dedup review tool onto dev ([de61802](https://github.com/Edward-Muir/when/commit/de61802f804007533f8c541dde0537cdc38f0092))
+* **events:** backlog-apply script and a category corpus test ([6f1239e](https://github.com/Edward-Muir/when/commit/6f1239e06f8658e33de3fb23b02986243300fd83))
+* **events:** evidence windows across the diplomatic shard ([57dcff0](https://github.com/Edward-Muir/when/commit/57dcff04516ff918acd5be499b255900d836650f))
+* **events:** evidence windows across the five smallest shards ([adee466](https://github.com/Edward-Muir/when/commit/adee466b92e805067561b25857f5f0ae9d5d0ea9))
+* **events:** evidence windows for 4 conflict events, 34 decided moments ([89c5c56](https://github.com/Edward-Muir/when/commit/89c5c562546cfd9d3b10f1013674959cce3e2d85))
+* **events:** evidence windows for conflict, infrastructure and cultural ([7f16479](https://github.com/Edward-Muir/when/commit/7f16479e71c1436b9591baca2043d05fb2573f88))
+* **events:** evidence windows for disasters, food, law, money and medicine ([a0e1175](https://github.com/Edward-Muir/when/commit/a0e1175fd1c685f3ca0657cbb106483a52e926dc))
+* **events:** evidence windows for exploration and the first diplomatic chunks ([9346e02](https://github.com/Edward-Muir/when/commit/9346e0254c88373b9ae7efe0fa9204c315a2a258))
+* **events:** evidence windows for sports and the themes shard ([773ff8e](https://github.com/Edward-Muir/when/commit/773ff8eebdfdc1a02a47ecda18bc7386223c6a79))
+* **events:** evidence windows for the cards starved of a source ([3701c21](https://github.com/Edward-Muir/when/commit/3701c2149b85ac5d518c2ae07e61d8852dd78d7a))
+* **events:** evidence windows for the cultural shard ([00e7a2f](https://github.com/Edward-Muir/when/commit/00e7a2fd34f97bc5789df737794fe4639ef5fced))
+* **events:** evidence windows for the shard stragglers, sourced by fetch ([3a224a3](https://github.com/Edward-Muir/when/commit/3a224a37852627e23dd0d532fc165588de03d76f))
+* **events:** evidence windows for themes and the first infrastructure chunks ([4c7af4f](https://github.com/Edward-Muir/when/commit/4c7af4fb49e0c03008336ed0954f02cefc863c07))
+* **events:** finish the range-only sweep of the catalogue ([33909d1](https://github.com/Edward-Muir/when/commit/33909d17c3a35336b1e97b1a0ebac97b41ee3402))
+* filter custom games by world region ([#69](https://github.com/Edward-Muir/when/issues/69)) ([bcfd56d](https://github.com/Edward-Muir/when/commit/bcfd56d3c788836720eb50bc4dfb2376e8cdb96f))
+* region filter for custom games (wip, pending the tag sweep) ([d0846d3](https://github.com/Edward-Muir/when/commit/d0846d323235f323fe6fd990add3bdfe8aae8d2f))
+* region filter, iOS 27 launch fix and the dev integration work ([#70](https://github.com/Edward-Muir/when/issues/70)) ([e4fbe98](https://github.com/Edward-Muir/when/commit/e4fbe980ec9ec3ad5127cbe8402fe8c1b63181c7))
+
+
+### Bug Fixes
+
+* **events:** correct names, descriptions and prose; recategorise misfiles; retire duplicates ([746b362](https://github.com/Edward-Muir/when/commit/746b362f9d1974e9ec001a69944acdce0d621911))
+* **events:** move 24 years to the start of their evidence window ([b53a48e](https://github.com/Edward-Muir/when/commit/b53a48e42887ea811ee73bdda2c0966cf23d5239))
+* **events:** move 68 years to the start of their evidence window ([6aaa7b9](https://github.com/Edward-Muir/when/commit/6aaa7b9d954bb7e3f53c060810a50ef9f5684ceb))
+* **events:** move years the sources do not support ([a8f9a05](https://github.com/Edward-Muir/when/commit/a8f9a053052dcfaffe3d23e16edc4e1f904c4643))
+* **events:** re-tag regions on corrected cards; fix BP ages stored as BCE ([afc0a38](https://github.com/Edward-Muir/when/commit/afc0a38b0f1fd8108264df52e86b54bc913895ac))
+* **ios:** adopt UIScene lifecycle so the app launches on iOS 27 ([#67](https://github.com/Edward-Muir/when/issues/67)) ([afcb9bc](https://github.com/Edward-Muir/when/commit/afcb9bc90607aec53e356d11fbccaa6719cd5261))
+* **scripts:** clear the decided ledger when a re-review writes a window ([847c768](https://github.com/Edward-Muir/when/commit/847c7680a337da785239e0b6a2e634a690c0716d))
+
 ## [1.29.0](https://github.com/Edward-Muir/when/compare/v1.28.0...v1.29.0) (2026-09-29)
 
 ### Features
