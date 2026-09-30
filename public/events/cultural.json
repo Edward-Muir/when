@@ -4,7 +4,7 @@
     "friendly_name": "First Cave Paintings",
     "year": -51200,
     "category": "art",
-    "description": "Early humans created paintings in Lascaux and other caves.",
+    "description": "Early humans painted animals, hands and symbols on the walls of caves.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cave-paintings_cd9oda?_a=BAMAMikS0",
     "image_width": 330,
@@ -949,7 +949,7 @@
     "name": "bach-death",
     "friendly_name": "Death of Johann Sebastian Bach",
     "year": 1750,
-    "category": "revolution",
+    "category": "figures",
     "description": "The composer, organist and harpsichordist Johann Sebastian Bach died on July 28.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bach-death_j1ilq3?_a=BAMAMikS0",
@@ -1065,7 +1065,7 @@
     "name": "mozart-dies",
     "friendly_name": "Mozart Dies",
     "year": 1791,
-    "category": "revolution",
+    "category": "figures",
     "description": "The musical prodigy died at age 35 in Vienna.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mozart-dies_gt7e9r?_a=BAMAMikS0",
@@ -1565,7 +1565,7 @@
     "name": "first-labor-day",
     "friendly_name": "First Labor Day",
     "year": 1882,
-    "category": "media",
+    "category": "commerce",
     "description": "New York held the first Labor Day parade honoring workers.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-labor-day_vw5kvw?_a=BAMAMikS0",
@@ -1833,7 +1833,7 @@
     "name": "rite-of-spring",
     "friendly_name": "Rite of Spring Premiere Riot",
     "year": 1913,
-    "category": "revolution",
+    "category": "art",
     "description": "Stravinsky's revolutionary ballet caused a riot at its Paris premiere.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/rite-of-spring_tmxovu?_a=BAMAMikS0",
@@ -1852,7 +1852,7 @@
     "name": "ford-five-dollar-wage",
     "friendly_name": "Ford 5 Dollar Minimum Wage",
     "year": 1914,
-    "category": "media",
+    "category": "commerce",
     "description": "Ford Motor Company announced an eight-hour workday and 5 dollar minimum daily wage, revolutionizing labor standards.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ford-five-dollar-wage_yqiqmk?_a=BAMAMikS0",
@@ -1947,7 +1947,7 @@
     "name": "first-miss-america",
     "friendly_name": "First Miss America Pageant",
     "year": 1921,
-    "category": "commerce",
+    "category": "media",
     "description": "The first Miss America pageant was held in Atlantic City.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-miss-america_kfktbv?_a=BAMAMikS0",
@@ -2157,7 +2157,7 @@
     "name": "lindbergh-baby-kidnapping",
     "friendly_name": "Lindbergh Baby Kidnapping",
     "year": 1932,
-    "category": "revolution",
+    "category": "law",
     "description": "Charles Lindberghs 20-month-old son was kidnapped and later found dead in a case that gripped America.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lindbergh-baby-kidnapping_wh60sl?_a=BAMAMikS0",
@@ -2176,7 +2176,7 @@
     "name": "alcatraz-federal-prison",
     "friendly_name": "Alcatraz Becomes Federal Prison",
     "year": 1934,
-    "category": "revolution",
+    "category": "law",
     "description": "Alcatraz Island in San Francisco Bay became a United States federal prison.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/alcatraz-federal-prison_pwtobz?_a=BAMAMikS0",
@@ -2254,7 +2254,7 @@
     "friendly_name": "Wizard of Oz Released",
     "year": 1939,
     "category": "media",
-    "description": "The classic Technicolor musical fantasy premiered in Hollywood.",
+    "description": "The classic Technicolor musical fantasy opened in American cinemas after a small-town test screening.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wizard-of-oz_eq6tha?_a=BAMAMikS0",
     "image_width": 330,
@@ -3016,7 +3016,7 @@
     "name": "live-aid",
     "friendly_name": "Live Aid Concert",
     "year": 1985,
-    "category": "disasters",
+    "category": "media",
     "description": "A dual-venue rock concert raised millions for Ethiopian famine relief.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/live-aid_myhdp9?_a=BAMAMikS0",
@@ -3591,7 +3591,7 @@
     "friendly_name": "King David Rules Israel",
     "year": -1000,
     "category": "empires",
-    "description": "David united the tribes of Israel and established Jerusalem as his capital.",
+    "description": "Biblical tradition holds that David united the tribes of Israel and made Jerusalem his capital.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/king-david-rules_bihpaw?_a=BAMAMikS0",
     "image_width": 330,
@@ -4063,7 +4063,7 @@
     "name": "cluny-abbey-founded",
     "friendly_name": "Cluny Abbey Founded",
     "year": 910,
-    "category": "commerce",
+    "category": "architecture",
     "description": "Cluny Abbey was established, becoming the center of monastic reform across Europe.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/cluny-abbey-founded_pgzgs3?_a=BAMAMikS0",
@@ -4488,7 +4488,7 @@
     "name": "ministry-jesus-begins",
     "friendly_name": "Ministry of Jesus Begins",
     "year": 30,
-    "category": "commerce",
+    "category": "figures",
     "description": "Jesus of Nazareth began his public ministry in Roman Judea, teaching and gathering disciples.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ministry-jesus-begins_xxzpft?_a=BAMAMikS0",
@@ -5167,7 +5167,7 @@
     "name": "queen-victoria-dies",
     "friendly_name": "Queen Victoria Dies",
     "year": 1901,
-    "category": "revolution",
+    "category": "figures",
     "description": "Queen Victoria died after 63 years on the throne, ending the Victorian era.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/queen-victoria-dies_pms7v6?_a=BAMAMikS0",
@@ -5342,7 +5342,7 @@
     "name": "stalin-dies",
     "friendly_name": "Stalin Dies",
     "year": 1953,
-    "category": "revolution",
+    "category": "figures",
     "description": "Joseph Stalin died after ruling the Soviet Union for nearly three decades of terror and industrialization.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/stalin-dies_cznvak?_a=BAMAMikS0",
@@ -6052,7 +6052,7 @@
     "name": "mahabharata-complete",
     "friendly_name": "Mahabharata Epic Completed",
     "year": 200,
-    "category": "architecture",
+    "category": "writing",
     "description": "India's great Sanskrit epic reached its final form, becoming the world's longest poem at 200,000 verses.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mahabharata-complete_vep9e1?_a=BAMAMikS0",
@@ -6399,24 +6399,6 @@
     ]
   },
   {
-    "name": "moche-civilization",
-    "friendly_name": "Moche Civilization Peak",
-    "year": 300,
-    "category": "architecture",
-    "description": "The Moche civilization reached its zenith in coastal Peru with monumental pyramids and fine metalwork.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/moche-civilization_ftqksq?_a=BAMAMikS0",
-    "color": "#4f291d",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "year_end": 600,
-    "regions": [
-      "Peru"
-    ]
-  },
-  {
     "name": "gupta-golden-age",
     "friendly_name": "Gupta Golden Age",
     "year": 400,
@@ -6497,23 +6479,6 @@
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kalidasa-shakuntala_t3dwht?_a=BAMAMikS0",
     "color": "#33251e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "India"
-    ]
-  },
-  {
-    "name": "kalidasa-drama",
-    "friendly_name": "Kalidasa Pioneers Sanskrit Drama",
-    "year": 400,
-    "category": "empires",
-    "description": "Kalidasa elevated Sanskrit drama to its peak during the Gupta period with poetic plays and epics.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kalidasa-drama_vqmkhg?_a=BAMAMikS0",
-    "color": "#2a1e1a",
     "text_color": "light",
     "image_width": 330,
     "image_height": 440,
@@ -7008,7 +6973,7 @@
     "name": "nazca-pottery-style",
     "friendly_name": "Nazca Polychrome Pottery Flourishes",
     "year": -100,
-    "category": "architecture",
+    "category": "art",
     "description": "Nazca artisans created vivid polychrome pottery depicting supernatural beings and nature in southern Peru.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/nazca-pottery-style_p3xt8x?_a=BAMAMikS0",
@@ -7183,7 +7148,7 @@
   },
   {
     "name": "chavin-culture",
-    "friendly_name": "Chavin Culture Peak",
+    "friendly_name": "Chavin Culture in the Andes",
     "year": -900,
     "category": "architecture",
     "description": "The Chavin civilization in the Peruvian Andes influenced art and religion across early South America.",
@@ -7213,23 +7178,6 @@
     "image_height": 440,
     "has_detail": true,
     "year_end": 765,
-    "regions": [
-      "China"
-    ]
-  },
-  {
-    "name": "tang-luoyang-capital",
-    "friendly_name": "Chang'an, Tang Capital",
-    "year": 700,
-    "category": "trade",
-    "description": "Tang dynasty Chang'an became the world's largest city and a cosmopolitan hub of Silk Road trade.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/tang-luoyang-capital_d4wqnr?_a=BAMAMikS0",
-    "color": "#553a2a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
     "regions": [
       "China"
     ]
@@ -7413,7 +7361,7 @@
     "name": "archaic-period-greece",
     "friendly_name": "Archaic Period of Greece Begins",
     "year": -800,
-    "category": "nature",
+    "category": "empires",
     "description": "Greece entered the Archaic period with the rise of city-states, colonization, and the Greek alphabet.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/archaic-period-greece_ilpwng?_a=BAMAMikS0",
@@ -7424,26 +7372,6 @@
     "has_detail": true,
     "regions": [
       "Greece"
-    ]
-  },
-  {
-    "name": "mayan-classic-period",
-    "friendly_name": "Mayan Classic Period Peak",
-    "year": 250,
-    "category": "architecture",
-    "description": "Maya civilization reached its architectural and artistic peak across the Yucatan and Guatemala.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mayan-classic-period_kd5ou0?_a=BAMAMikS0",
-    "color": "#3e433a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "year_end": 900,
-    "regions": [
-      "Guatemala",
-      "Honduras",
-      "Mexico"
     ]
   },
   {
@@ -7802,7 +7730,7 @@
     "name": "fatimid-al-azhar-mosque",
     "friendly_name": "Al-Azhar Mosque Founded",
     "year": 970,
-    "category": "commerce",
+    "category": "architecture",
     "description": "The Fatimid dynasty founded Al-Azhar in Cairo, which became one of the world's oldest continuously operating universities.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/fatimid-al-azhar-mosque_llqto4?_a=BAMAMikS0",
@@ -8998,23 +8926,6 @@
     ]
   },
   {
-    "name": "timbuktu-university-development",
-    "friendly_name": "Timbuktu University of Sankore",
-    "year": 1325,
-    "category": "architecture",
-    "description": "The University of Sankore in Timbuktu became a major center of Islamic scholarship in West Africa under Mali Empire patronage.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/timbuktu-university-development_ejljy3?_a=BAMAMikS0",
-    "color": "#c7a96c",
-    "text_color": "dark",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Mali"
-    ]
-  },
-  {
     "name": "william-of-ockham-logic",
     "friendly_name": "William of Ockham's Razor",
     "year": 1320,
@@ -9154,23 +9065,6 @@
     ]
   },
   {
-    "name": "samarkand-library-school",
-    "friendly_name": "Samarkand Library and Schools",
-    "year": 1400,
-    "category": "architecture",
-    "description": "Under Timur's patronage, Samarkand's libraries and schools attracted scholars from across the Islamic world.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/samarkand-library-school_uhfffw?_a=BAMAMikS0",
-    "color": "#271f1f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Uzbekistan"
-    ]
-  },
-  {
     "name": "lollards-wycliffe",
     "friendly_name": "Lollard Movement John Wycliffe",
     "year": 1380,
@@ -9236,23 +9130,6 @@
     "has_detail": true,
     "regions": [
       "Uzbekistan"
-    ]
-  },
-  {
-    "name": "benin-edo-kingdom",
-    "friendly_name": "Edo Kingdom Bronze Plaques Flourish",
-    "year": 1400,
-    "category": "art",
-    "description": "Benin Kingdom artisans cast elaborate bronze plaques depicting court life, warriors, and ceremonies using lost-wax technique.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/benin-edo-kingdom_iipdiz?_a=BAMAMikS0",
-    "color": "#261f1f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Nigeria"
     ]
   },
   {
@@ -9637,23 +9514,6 @@
     ]
   },
   {
-    "name": "songhai-university-timbuktu",
-    "friendly_name": "Timbuktu's Sankore University",
-    "year": 1468,
-    "category": "empires",
-    "description": "Under the Songhai Empire, Timbuktu's Sankore University attracted scholars from across the Islamic world.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/songhai-university-timbuktu_mq7qhy?_a=BAMAMikS0",
-    "color": "#974a1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Mali"
-    ]
-  },
-  {
     "name": "byzantine-scholars-flee",
     "friendly_name": "Byzantine Scholars Flee West",
     "year": 1453,
@@ -9677,7 +9537,7 @@
     "friendly_name": "Sikh Religious Movement Begins",
     "year": 1499,
     "category": "commerce",
-    "description": "Guru Nanak was born in Punjab and founded Sikhism, teaching devotion to one God and equality of all people.",
+    "description": "Guru Nanak began preaching in Punjab, founding Sikhism and teaching devotion to one God and equality of all people.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/sikh-movement-begins_blinu7?_a=BAMAMikS0",
     "color": "#281e1e",
@@ -10182,7 +10042,7 @@
     "name": "scots-reformation-movement",
     "friendly_name": "Scottish Reformation Movement",
     "year": 1560,
-    "category": "commerce",
+    "category": "revolution",
     "description": "John Knox led Scotland's Protestant Reformation, establishing Presbyterianism as the national church.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/scots-reformation-movement_ngqeov?_a=BAMAMikS0",
@@ -10305,7 +10165,7 @@
     "name": "ballet-de-cour-france",
     "friendly_name": "First French Ballet de Cour",
     "year": 1581,
-    "category": "commerce",
+    "category": "art",
     "description": "The Ballet comique de la Reine was performed at the French court, considered the first true ballet production.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/ballet-de-cour-france_d5figs?_a=BAMAMikS0",
@@ -10756,7 +10616,7 @@
     "friendly_name": "Kabuki Becomes All-Male",
     "year": 1652,
     "category": "art",
-    "description": "After women were banned from kabuki, the art matured into a sophisticated all-male theatrical tradition.",
+    "description": "With youths barred from the stage after women, kabuki matured into a sophisticated tradition of adult male actors.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kabuki-women-actors_cupixp?_a=BAMAMikS0",
     "color": "#281f1a",
@@ -10807,7 +10667,7 @@
     "name": "louis-xiv-ballet",
     "friendly_name": "Louis XIV Founds Ballet Academy",
     "year": 1661,
-    "category": "commerce",
+    "category": "art",
     "description": "Louis XIV founded the Académie Royale de Danse, professionalizing ballet and establishing formal technique.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/louis-xiv-ballet_pahdbf?_a=BAMAMikS0",
@@ -11103,7 +10963,7 @@
     "friendly_name": "Vivaldi Composes The Four Seasons",
     "year": 1725,
     "category": "writing",
-    "description": "Antonio Vivaldi published The Four Seasons in Venice, a set of violin concertos that became iconic Baroque works.",
+    "description": "Antonio Vivaldi published The Four Seasons, a set of violin concertos that became iconic Baroque works.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/vivaldi-four-seasons_nlodc1?_a=BAMAMikS0",
     "color": "#232022",

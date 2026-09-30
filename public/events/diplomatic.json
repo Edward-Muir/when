@@ -296,7 +296,7 @@
     "friendly_name": "Edict of Milan",
     "year": 313,
     "category": "empires",
-    "description": "Emperor Constantine legalized Christianity throughout the Roman Empire.",
+    "description": "Constantine and Licinius granted Christians toleration and restored their confiscated property across the Roman Empire.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/edict-milan_oocftk?_a=BAMAMikS0",
     "image_width": 330,
@@ -492,7 +492,7 @@
     "friendly_name": "Treaty of Wedmore",
     "year": 878,
     "category": "diplomacy",
-    "description": "Alfred the Great made peace with Viking leader Guthrum, dividing England.",
+    "description": "Alfred the Great made peace with Viking leader Guthrum, who accepted baptism and left Wessex.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-wedmore_wwyan2?_a=BAMAMikS0",
     "image_width": 330,
@@ -3122,7 +3122,7 @@
     "friendly_name": "PRC Takes UN Seat",
     "year": 1971,
     "category": "diplomacy",
-    "description": "The People's Republic of China replaced Taiwan on the UN Security Council.",
+    "description": "The People's Republic of China replaced Taiwan as China's representative at the UN, taking the Security Council seat too.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/china-un-seat_qg4sku?_a=BAMAMikS0",
     "image_width": 330,
@@ -3644,7 +3644,7 @@
     "name": "african-union",
     "friendly_name": "African Union Founded",
     "year": 2002,
-    "category": "commerce",
+    "category": "diplomacy",
     "description": "African nations formed a continental union for political and economic integration.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/african-union_ce83hy?_a=BAMAMikS0",
@@ -3740,7 +3740,7 @@
     "name": "belt-road-initiative",
     "friendly_name": "Belt and Road Initiative Launched",
     "year": 2013,
-    "category": "architecture",
+    "category": "diplomacy",
     "description": "China announced a massive global infrastructure investment strategy.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/belt-road-initiative_sq8ucw?_a=BAMAMikS0",
@@ -3977,7 +3977,7 @@
     "name": "thatcher-becomes-pm",
     "friendly_name": "Margaret Thatcher Becomes PM",
     "year": 1979,
-    "category": "revolution",
+    "category": "diplomacy",
     "description": "Britain's first female Prime Minister began transforming British politics and economics.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/thatcher-becomes-pm_mwms1w?_a=BAMAMikS0",
@@ -4010,25 +4010,6 @@
     "year_end": -3035,
     "regions": [
       "Egypt"
-    ]
-  },
-  {
-    "name": "zhou-dynasty-begins",
-    "friendly_name": "Zhou Dynasty Begins",
-    "year": -1046,
-    "category": "empires",
-    "description": "The Zhou overthrew the Shang, beginning China's longest-lasting dynasty.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/zhou-dynasty-begins_jcee7x?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 446021,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Zhou_dynasty",
-    "color": "#24201f",
-    "text_color": "light",
-    "has_detail": true,
-    "regions": [
-      "China"
     ]
   },
   {
@@ -4399,25 +4380,6 @@
     "has_detail": true,
     "regions": [
       "Italy"
-    ]
-  },
-  {
-    "name": "jin-dynasty-reunifies-china",
-    "friendly_name": "Jin Dynasty Reunifies China",
-    "year": 280,
-    "category": "empires",
-    "description": "The Jin Dynasty ended the Three Kingdoms period, briefly reunifying China.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/jin-dynasty-reunifies-china_tfjs4u?_a=BAMAMikS0",
-    "image_width": 330,
-    "image_height": 440,
-    "wikipedia_views": 64222,
-    "wikipedia_url": "https://en.wikipedia.org/wiki/Emperor_Wu_of_Jin",
-    "color": "#24201e",
-    "text_color": "light",
-    "has_detail": true,
-    "regions": [
-      "China"
     ]
   },
   {
@@ -4871,7 +4833,7 @@
     "name": "field-of-cloth-of-gold",
     "friendly_name": "Field of the Cloth of Gold",
     "year": 1520,
-    "category": "warfare",
+    "category": "diplomacy",
     "description": "Henry VIII and Francis I met in an extravagant diplomatic summit that failed to secure lasting alliance.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/field-of-cloth-of-gold_lbffz6?_a=BAMAMikS0",
@@ -4891,7 +4853,7 @@
     "name": "neanderthals-thrive-europe",
     "friendly_name": "Neanderthals Thrive in Europe",
     "year": -243000,
-    "category": "agriculture",
+    "category": "nature",
     "description": "Neanderthals dominated Europe for over 200,000 years, developing sophisticated tools and social structures before modern humans arrived.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/neanderthals-thrive-europe_bdzavi?_a=BAMAMikS0",
@@ -5131,7 +5093,7 @@
     "friendly_name": "Treaty of Aachen",
     "year": 812,
     "category": "empires",
-    "description": "The Byzantine Empire recognized Charlemagne as Emperor of the West, acknowledging the permanent division of the Roman legacy.",
+    "description": "Byzantium's Michael I recognized Charlemagne as emperor but withheld the title emperor of the Romans.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/treaty-of-aachen_zoila5?_a=BAMAMikS0",
     "image_width": 330,
@@ -6955,7 +6917,7 @@
     "friendly_name": "Orient Express First Run",
     "year": 1883,
     "category": "media",
-    "description": "The famous luxury train made its first journey from Paris toward Constantinople.",
+    "description": "The famous luxury train made its first journey out of Paris, and its route to Constantinople came later.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/orient-express-first-run_fulteh?_a=BAMAMikS0",
     "image_width": 330,
@@ -10121,10 +10083,10 @@
   },
   {
     "name": "female-ruler-sargon",
-    "friendly_name": "Enmersi of Kish",
+    "friendly_name": "Kubaba of Kish",
     "year": -2295,
     "category": "empires",
-    "description": "Enmersi is recorded on the Sumerian King List as a ruler of Kish, one of the earliest named female sovereigns.",
+    "description": "Kubaba is recorded on the Sumerian King List as a ruler of Kish, and is the only woman named on it.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/female-ruler-sargon_omayy6?_a=BAMAMikS0",
     "color": "#232023",
@@ -10266,24 +10228,6 @@
     ]
   },
   {
-    "name": "silk-trade-begins",
-    "friendly_name": "Silk Trade Begins",
-    "year": -130,
-    "category": "trade",
-    "description": "Zhang Qian's missions west from Han China opened trade routes carrying silk to Central Asia and beyond.",
-    "difficulty": "easy",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/silk-trade-begins_ydkky0?_a=BAMAMikS0",
-    "color": "#2d1c19",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "China",
-      "North & Central Asia"
-    ]
-  },
-  {
     "name": "parthian-empire",
     "friendly_name": "Parthian Empire Peak",
     "year": -95,
@@ -10377,7 +10321,7 @@
     "friendly_name": "Bantu Migration Across Africa",
     "year": -400,
     "category": "migration",
-    "description": "Bantu-speaking peoples spread across sub-Saharan Africa, carrying iron-working and farming techniques.",
+    "description": "Farming communities speaking Bantu languages spread outward from West-Central Africa across much of the continent.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bantu-expansion-africa_awtq9a?_a=BAMAMikS0",
     "color": "#2b1d1b",
@@ -10558,25 +10502,6 @@
       "Israel",
       "Italy",
       "Palestine"
-    ]
-  },
-  {
-    "name": "kushan-empire",
-    "friendly_name": "Kushan Empire Peak",
-    "year": 150,
-    "category": "empires",
-    "description": "The Kushan Empire peaked under Kanishka I, bridging trade between Rome, China, and India along the Silk Road.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kushan-empire_iav8hb?_a=BAMAMikS0",
-    "color": "#37323a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "India",
-      "Pakistan",
-      "North & Central Asia"
     ]
   },
   {
@@ -10815,8 +10740,8 @@
     "name": "first-public-library",
     "friendly_name": "Library of Alexandria",
     "year": -295,
-    "category": "commerce",
-    "description": "The Library of Alexandria was founded under Ptolemy I, becoming the ancient world's greatest center of learning.",
+    "category": "writing",
+    "description": "The Library of Alexandria was founded by the Ptolemaic kings of Egypt, becoming the ancient world's greatest center of learning.",
     "difficulty": "easy",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/first-public-library_hukbzm?_a=BAMAMikS0",
     "color": "#271f17",
@@ -11081,7 +11006,7 @@
   },
   {
     "name": "alaric-visigoth-kingdom",
-    "friendly_name": "Alaric Establishes Visigoth Kingdom",
+    "friendly_name": "Visigoth Kingdom in Aquitaine",
     "year": 418,
     "category": "empires",
     "description": "The Visigoths established a kingdom in Aquitaine, some years after Alaric had led their sack of Rome.",
@@ -11098,10 +11023,10 @@
   },
   {
     "name": "visigothic-spain-establishment",
-    "friendly_name": "Visigothic Kingdom in Spain",
+    "friendly_name": "Visigothic Kingdom Founded",
     "year": 418,
     "category": "empires",
-    "description": "The Visigoths settled in southern Gaul and Iberia as Roman foederati, founding a lasting Germanic kingdom.",
+    "description": "The Visigoths settled in southern Gaul as Roman foederati, founding a Germanic kingdom that later spread across Iberia.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/visigothic-spain-establishment_y4i2qa?_a=BAMAMikS0",
     "color": "#3c2822",
@@ -11784,7 +11709,7 @@
     "friendly_name": "Aksumite Empire Decline Begins",
     "year": 700,
     "category": "empires",
-    "description": "The Aksumite Empire declined as Islamic expansion disrupted its Red Sea trade routes and revenue.",
+    "description": "The Aksumite Empire declined as its coinage ended, Red Sea trade shifted and pressures mounted on its highlands.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/aksumite-decline_quylj7?_a=BAMAMikS0",
     "color": "#202028",
@@ -11870,7 +11795,7 @@
   },
   {
     "name": "zhouyuan-sogdian-outpost",
-    "friendly_name": "Sogdian Outpost at Zhouyuan",
+    "friendly_name": "Sogdian Merchant Colonies in China",
     "year": 700,
     "category": "trade",
     "description": "Sogdian merchants established trading outposts in Chinese cities, forming diaspora communities along the Silk Road.",
@@ -12000,7 +11925,7 @@
     "friendly_name": "Wari Empire Peak",
     "year": 800,
     "category": "empires",
-    "description": "The Wari Empire peaked as the first Andean state to build an extensive road and administrative system.",
+    "description": "The Wari Empire reached its greatest extent, holding highland and coastal Peru from its capital near Ayacucho.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/wari-empire_fmrcqi?_a=BAMAMikS0",
     "color": "#3f2a2e",
@@ -12535,10 +12460,10 @@
   },
   {
     "name": "goryeo-dynasty",
-    "friendly_name": "Goryeo Dynasty Peak",
+    "friendly_name": "Goryeo Prosperity Under Munjong",
     "year": 1000,
     "category": "empires",
-    "description": "Korea's Goryeo dynasty reached cultural and political prominence, producing celadon pottery and the Tripitaka Koreana.",
+    "description": "Under King Munjong, Korea's Goryeo kingdom enjoyed its most settled and prosperous years.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/goryeo-dynasty_nqcvya?_a=BAMAMikS0",
     "color": "#271f1d",
@@ -12626,23 +12551,6 @@
     ]
   },
   {
-    "name": "bantu-expansion",
-    "friendly_name": "Bantu Expansion",
-    "year": 1000,
-    "category": "migration",
-    "description": "Bantu-speaking peoples completed centuries of migration across sub-Saharan Africa, spreading iron-working and agriculture.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/bantu-expansion_vogud3?_a=BAMAMikS0",
-    "color": "#212026",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Sub-Saharan Africa"
-    ]
-  },
-  {
     "name": "athabaskan-migration",
     "friendly_name": "Athabaskan Migration South",
     "year": 1000,
@@ -12700,10 +12608,10 @@
   },
   {
     "name": "boni-kingdom",
-    "friendly_name": "Boni Kingdom Southern Philippines",
+    "friendly_name": "Boni Kingdom of Borneo",
     "year": 1000,
     "category": "empires",
-    "description": "The Boni kingdom emerged in the southern Philippines as a trading polity with links to Southeast Asian maritime networks.",
+    "description": "The Bornean port kingdom that Chinese sources called Boni emerged as a maritime trading power in Southeast Asia.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/boni-kingdom_ltuxwi?_a=BAMAMikS0",
     "color": "#473122",
@@ -13318,7 +13226,7 @@
     "friendly_name": "Swahili City-States Rise",
     "year": 1200,
     "category": "trade",
-    "description": "Swahili city-states like Kilwa and Mombasa prospered through Indian Ocean trade in gold, ivory, and enslaved people.",
+    "description": "Swahili city-states like Kilwa and Mombasa grew rich on Indian Ocean trade in gold, ivory, and timber.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swahili-city-states_uakpam?_a=BAMAMikS0",
     "color": "#50382a",
@@ -13441,7 +13349,7 @@
     "friendly_name": "Song Paper Money",
     "year": 1024,
     "category": "writing",
-    "description": "The Southern Song dynasty expanded paper currency use, creating the world's first government-issued fiat money system.",
+    "description": "The Song government took over merchant paper notes in Sichuan, creating the world's first state-issued paper money.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/song-paper-money-system_lqc7hd?_a=BAMAMikS0",
     "color": "#291c28",
@@ -14272,7 +14180,7 @@
     "name": "womens-guilds",
     "friendly_name": "Women's Craft Guilds Emerge",
     "year": 1300,
-    "category": "art",
+    "category": "craft",
     "description": "Women formed independent craft guilds in Paris and Cologne, working in silk-weaving, brewing, and textile trades.",
     "difficulty": "medium",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/womens-guilds_skfgap?_a=BAMAMikS0",
@@ -14325,7 +14233,7 @@
     "friendly_name": "Mombasa Rise Swahili Coast",
     "year": 1300,
     "category": "trade",
-    "description": "Mombasa grew into a major Swahili port city, rivaling Kilwa as a hub for Indian Ocean trade.",
+    "description": "Mombasa grew into a major Swahili port town, built in coral stone and trading across the Indian Ocean.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/swahili-mombasa-rise_bpwn1r?_a=BAMAMikS0",
     "color": "#483a2f",
@@ -14583,23 +14491,6 @@
     ]
   },
   {
-    "name": "majapahit-administrative-system",
-    "friendly_name": "Majapahit Administration",
-    "year": 1350,
-    "category": "empires",
-    "description": "The Majapahit Empire under Gajah Mada developed a sophisticated administrative system governing much of maritime Southeast Asia.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/majapahit-administrative-system_hipmlk?_a=BAMAMikS0",
-    "color": "#281f1b",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Indonesia"
-    ]
-  },
-  {
     "name": "delhi-sultanate-succession",
     "friendly_name": "Delhi Sultanate Succession Disputes",
     "year": 1320,
@@ -14675,7 +14566,7 @@
     "friendly_name": "Kilwa Sultanate Rises",
     "year": 1330,
     "category": "empires",
-    "description": "The Kilwa Sultanate dominated East African trade, minting its own coins and controlling gold exports from Zimbabwe.",
+    "description": "The Kilwa Sultanate became East Africa's leading trading city-state, minting its own coins and raising grand buildings.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kilwa-khilafa-sultanate_huhlmw?_a=BAMAMikS0",
     "color": "#2b2d2e",
@@ -15007,23 +14898,6 @@
     ]
   },
   {
-    "name": "medici-banking-innovations",
-    "friendly_name": "Medici Banking Innovations",
-    "year": 1397,
-    "category": "commerce",
-    "description": "The Medici Bank pioneered double-entry bookkeeping and branch banking across European cities.",
-    "difficulty": "medium",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/medici-banking-innovations_f1lwmt?_a=BAMAMikS0",
-    "color": "#261f1e",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Italy"
-    ]
-  },
-  {
     "name": "mali-decline",
     "friendly_name": "Mali Empire Decline",
     "year": 1360,
@@ -15039,24 +14913,6 @@
     "year_end": 1599,
     "regions": [
       "Mali"
-    ]
-  },
-  {
-    "name": "kilwa-sultanate",
-    "friendly_name": "Kilwa Sultanate Peak Power",
-    "year": 1350,
-    "category": "empires",
-    "description": "The Kilwa Sultanate reached peak power as East Africa's wealthiest trading state, minting its own coinage.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kilwa-sultanate_idkc3l?_a=BAMAMikS0",
-    "color": "#291f18",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Mozambique",
-      "Tanzania"
     ]
   },
   {
@@ -15137,7 +14993,7 @@
     "friendly_name": "Mombasa Becomes Coastal Power",
     "year": 1400,
     "category": "trade",
-    "description": "Mombasa grew into a major Swahili coast trading city, rivaling Kilwa in Indian Ocean commerce.",
+    "description": "Mombasa became one of the leading trading ports of the Swahili coast, linking the African interior to Indian Ocean markets.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/mombasa-coastal-power_aerwp7?_a=BAMAMikS0",
     "color": "#2a67a6",
@@ -15254,24 +15110,6 @@
     ]
   },
   {
-    "name": "kongo-kingdom-structure",
-    "friendly_name": "Kongo Kingdom Formalized",
-    "year": 1400,
-    "category": "empires",
-    "description": "The Kongo Kingdom formalized provincial governance under a manikongo (king) with appointed regional leaders.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/kongo-kingdom-structure_fga4ym?_a=BAMAMikS0",
-    "color": "#63493a",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Angola",
-      "Democratic Republic of the Congo"
-    ]
-  },
-  {
     "name": "great-lakes-kingdoms-system",
     "friendly_name": "Great Lakes Kingdoms Form",
     "year": 1400,
@@ -15323,23 +15161,6 @@
     "regions": [
       "Micronesia",
       "Palau"
-    ]
-  },
-  {
-    "name": "maori-iwi-tribal-identity",
-    "friendly_name": "Maori Iwi Identities Form",
-    "year": 1400,
-    "category": "migration",
-    "description": "Maori iwi (tribal) identities crystallized in New Zealand with distinct territories and political structures.",
-    "difficulty": "hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/maori-iwi-tribal-identity_l612yw?_a=BAMAMikS0",
-    "color": "#312528",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "New Zealand"
     ]
   },
   {
@@ -15726,7 +15547,7 @@
   },
   {
     "name": "barid-shahi-dynasty",
-    "friendly_name": "Barid Shahi Dynasty Bijapur",
+    "friendly_name": "Barid Shahi Dynasty of Bidar",
     "year": 1487,
     "category": "empires",
     "description": "The Barid Shahi dynasty established the Bidar Sultanate as one of the five Deccan successor states.",
@@ -16640,7 +16461,7 @@
     "friendly_name": "Srivijaya Dissolves",
     "year": 1400,
     "category": "empires",
-    "description": "The Srivijaya maritime empire fully dissolved after centuries of decline, succeeded by Majapahit and Malacca.",
+    "description": "The Srivijaya maritime empire dissolved after centuries of decline, giving way to Melayu, then to Majapahit and Malacca.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/srivijaya-decline_cqdkzt?_a=BAMAMikS0",
     "color": "#1e2222",
@@ -16650,25 +16471,6 @@
     "has_detail": true,
     "regions": [
       "Indonesia"
-    ]
-  },
-  {
-    "name": "lunda-expansion-network",
-    "friendly_name": "Lunda Trade Expansion",
-    "year": 1600,
-    "category": "trade",
-    "description": "The Lunda Empire expanded through long-distance trade in copper, salt, and slaves across Central Africa.",
-    "difficulty": "very-hard",
-    "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/lunda-expansion-network_nxibid?_a=BAMAMikS0",
-    "color": "#24201f",
-    "text_color": "light",
-    "image_width": 330,
-    "image_height": 440,
-    "has_detail": true,
-    "regions": [
-      "Angola",
-      "Democratic Republic of the Congo",
-      "Zambia"
     ]
   },
   {
@@ -16767,7 +16569,7 @@
     "name": "palmares-republic-zumbi",
     "friendly_name": "Palmares Quilombo Resists",
     "year": 1605,
-    "category": "architecture",
+    "category": "revolution",
     "description": "Escaped enslaved Africans established Palmares, the largest quilombo in Brazil, resisting Portuguese colonial rule for nearly a century.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/palmares-republic-zumbi_mdzknd?_a=BAMAMikS0",
@@ -17121,7 +16923,7 @@
   },
   {
     "name": "mughal-aurengzeb-expansion",
-    "friendly_name": "Aurengzeb's Mughal Expansion",
+    "friendly_name": "Aurangzeb's Mughal Expansion",
     "year": 1658,
     "category": "empires",
     "description": "Aurangzeb seized the Mughal throne, expanding the empire to its greatest territorial extent across the Indian subcontinent.",
@@ -17318,7 +17120,7 @@
     "friendly_name": "Rise of Dahomey",
     "year": 1718,
     "category": "empires",
-    "description": "Under King Agaja's predecessors, Dahomey expanded militarily in West Africa, building a centralized state with a powerful army.",
+    "description": "Under King Agaja, Dahomey built a centralized state around a powerful army and began conquering its coastal neighbours.",
     "difficulty": "hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/dahomey-rise-power_sglrbk?_a=BAMAMikS0",
     "color": "#2b1d1d",
@@ -18376,7 +18178,7 @@
     "friendly_name": "School Meal Program",
     "year": 1894,
     "category": "commerce",
-    "description": "Sweden pioneered one of the earliest school lunch programs, providing free meals to ensure children's nutrition and school attendance.",
+    "description": "Sweden began giving meals to poor schoolchildren, an early effort that grew into a free lunch for every pupil.",
     "difficulty": "very-hard",
     "image_url": "https://res.cloudinary.com/dscb8inz1/image/upload/c_fill,dpr_auto,f_auto,g_auto,q_auto:good/school-lunch-program_ewt1qu?_a=BAMAMikS0",
     "color": "#232120",
