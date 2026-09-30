@@ -129,11 +129,12 @@ Play button.
   any starting state. A transcontinental country already reachable through a selected side is
   not offered again under the other. The grouping and matching (start of any word) are the pure
   `matchCountries` in `src/utils/regions.ts`.
-- **Alphabetical.** Region chips and popup groups use `REGION_DISPLAY_ORDER`: alphabetical, with
-  Global last because it is not a place. That is display only; `ALL_REGIONS` keeps the taxonomy
-  order because it is the share code's bit order. Countries are alphabetical within each region
-  and every one is listed; the first build sorted by card count and capped each region at 8
-  behind "+N more", which meant nothing once the list was alphabetical and the popup had room.
+- **Regions alphabetical, countries by card count.** Region chips and popup groups use
+  `REGION_DISPLAY_ORDER`: alphabetical, with Global last because it is not a place. That is
+  display only; `ALL_REGIONS` keeps the taxonomy order because it is the share code's bit order.
+  Countries stay most-tagged first, 8 per region before "+N more" (a picked one always shows),
+  so the United Kingdom, France and Italy lead Europe. An alphabetical country list was tried and
+  reverted: the maintainer preferred the big countries first. A search lists every match.
 - **A pick narrows its own region.** A region with any of its countries picked keeps only events
   tagged with a picked country. A selected region with no pick stays whole, so "Europe + Middle
   East & North Africa, Germany picked" is all of Germany plus all of the Middle East. Events tagged

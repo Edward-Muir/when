@@ -87,16 +87,23 @@ export function eventCountrySet(event: Pick<HistoricalEvent, 'regions'>): Set<st
 }
 
 /**
- * The countries the picker offers under each macro-region: only those present in `events`, in
- * alphabetical order. A transcontinental country is listed under every region it spans.
+ * The countries the picker offers under each macro-region: only those present in `events`,
+ * most-tagged first (then by name), so the few that carry most of the cards lead and the long
+ * tail sits behind "more". A transcontinental country is listed under every region it spans.
  */
 export function countryOptionsByRegion(
   events: Pick<HistoricalEvent, 'regions'>[]
 ): Map<string, string[]> {
-  const present = new Set<string>();
-  for (const event of events) for (const country of eventCountrySet(event)) present.add(country);
+  const counts = new Map<string, number>();
+  for (const event of events) {
+    for (const country of eventCountrySet(event)) {
+      counts.set(country, (counts.get(country) ?? 0) + 1);
+    }
+  }
+  const byCount = (a: string, b: string) =>
+    (counts.get(b) ?? 0) - (counts.get(a) ?? 0) || a.localeCompare(b);
   const byRegion = new Map<string, string[]>();
-  for (const country of [...present].sort((a, b) => a.localeCompare(b))) {
+  for (const country of [...counts.keys()].sort(byCount)) {
     for (const region of countryMacros(country)) {
       const list = byRegion.get(region) ?? [];
       list.push(country);

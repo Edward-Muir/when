@@ -4,6 +4,10 @@ import Modal from './ui/Modal';
 import { matchCountries } from '../utils/regions';
 import { pillClass } from './filterPill';
 
+// Countries shown per region before its "more" toggle, while not searching. The first few
+// carry most of the cards; Europe alone lists 52.
+const VISIBLE_COUNTRIES = 8;
+
 export interface CountryPickerModalProps {
   open: boolean;
   onClose: () => void;
@@ -21,10 +25,20 @@ const RegionCountries: React.FC<{
   region: string;
   countries: string[];
   selected: boolean;
+  /** Cap the list at the most-tagged few behind "+N more"; off while searching. */
+  capped: boolean;
   selectedCountries: string[];
   onPick: (country: string) => void;
   onClear: () => void;
-}> = ({ region, countries, selected, selectedCountries, onPick, onClear }) => {
+}> = ({ region, countries, selected, capped, selectedCountries, onPick, onClear }) => {
+  const [showAll, setShowAll] = useState(false);
+  const hidden = capped && !showAll ? countries.length - VISIBLE_COUNTRIES : 0;
+  // A picked country stays visible even when it sits in the collapsed tail.
+  const visible =
+    hidden > 0
+      ? countries.filter((c, i) => i < VISIBLE_COUNTRIES || selectedCountries.includes(c))
+      : countries;
+  const canCollapse = capped && showAll && countries.length > VISIBLE_COUNTRIES;
   const picked = countries.filter((c) => selectedCountries.includes(c)).length;
   const status = !selected ? (
     <span className="text-xs text-text-muted font-body">adds region</span>
@@ -48,7 +62,7 @@ const RegionCountries: React.FC<{
         {status}
       </div>
       <div className="flex flex-wrap gap-2">
-        {countries.map((country) => (
+        {visible.map((country) => (
           <button
             key={country}
             onClick={() => onPick(country)}
@@ -58,6 +72,14 @@ const RegionCountries: React.FC<{
             {country}
           </button>
         ))}
+        {(hidden > 0 || canCollapse) && (
+          <button
+            onClick={() => setShowAll((v) => !v)}
+            className="px-2.5 py-1 text-xs font-medium font-body text-text-muted hover:text-text"
+          >
+            {canCollapse ? 'Show fewer' : `+${hidden} more`}
+          </button>
+        )}
       </div>
     </div>
   );
@@ -137,6 +159,7 @@ const CountryPickerModal: React.FC<CountryPickerModalProps> = ({
             region={group.region}
             countries={group.countries}
             selected={group.selected}
+            capped={query.trim() === ''}
             selectedCountries={selectedCountries}
             onPick={(country) => pick(country, group.region, group.selected)}
             onClear={() => clearGroup(group.countries)}

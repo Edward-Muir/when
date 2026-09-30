@@ -55,4 +55,21 @@ describe('CountryPickerModal', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Done · 326 events' }));
     expect(props.onClose).toHaveBeenCalledTimes(1);
   });
+
+  it('shows the first eight behind "+N more", but every match while searching', async () => {
+    const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
+    setup({ countryOptions: new Map([['Europe', nine]]), selectedCountries: [] });
+    expect(screen.queryByRole('button', { name: 'Zed' })).toBeNull();
+    await userEvent.click(screen.getByRole('button', { name: '+1 more' }));
+    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
+    await userEvent.click(screen.getByRole('button', { name: 'Show fewer' }));
+    await userEvent.type(screen.getByRole('searchbox', { name: 'Search countries' }), 'z');
+    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
+  });
+
+  it('keeps a picked country visible in the collapsed tail', () => {
+    const nine = ['A1', 'A2', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Zed'];
+    setup({ countryOptions: new Map([['Europe', nine]]), selectedCountries: ['Zed'] });
+    expect(screen.getByRole('button', { name: 'Zed' })).toBeInTheDocument();
+  });
 });

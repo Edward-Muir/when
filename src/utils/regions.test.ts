@@ -40,7 +40,7 @@ describe('country helpers', () => {
     expect(ALL_REGIONS[0]).toBe('Europe');
   });
 
-  it('offers only countries present, alphabetically, under each region they belong to', () => {
+  it('offers only countries present, most-tagged first, under each region they belong to', () => {
     const options = countryOptionsByRegion([
       tags('France'),
       tags('Germany', 'France'),
@@ -49,7 +49,7 @@ describe('country helpers', () => {
       tags('Russia', 'Europe'),
       tags('Global'),
     ]);
-    expect(options.get('Europe')).toEqual(['Austria', 'France', 'Germany', 'Russia']);
+    expect(options.get('Europe')).toEqual(['France', 'Germany', 'Austria', 'Russia']);
     expect(options.get('North & Central Asia')).toEqual(['Russia']);
     expect(options.has('Global')).toBe(false);
     expect(options.has('East Asia')).toBe(false);
