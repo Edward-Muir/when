@@ -154,8 +154,10 @@ failed went back to a tagger with the findings, at most twice. A two-chunk pilot
   misses, all sport winners or a diffusion origin, fixed before applying.
 - **Taxonomy gaps reported, not added**: Cook Islands, Niue, Wallis and Futuna, South Georgia, the
   Isle of Man. Each card was covered by its sovereign or its region, which is the rule.
-- **Catalogue errors** the taggers reported went through triage into
-  [the backlog](../events-images/catalogue-error-backlog.md#raised-by-the-region-sweep-2026-09-30).
+- **Catalogue errors** the taggers reported were triaged, then resolved with the rest of the
+  backlog on 2026-10-01; see
+  [the backlog](../events-images/catalogue-error-backlog.md#resolved-in-the-2026-10-backlog-pass).
+  Cards whose text changed in that pass had their tags re-checked, and 14 were re-tagged.
 
 ## Known, not chased
 
